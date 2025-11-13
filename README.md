@@ -40,3 +40,10 @@ Aşağıdaki ekran görüntülerini `assets/screenshots/` klasörüne ekleyin:
 ## 📝 Deployment
 Bu proje GitHub Pages ile otomatik olarak deploy edilmektedir.
 # Update
+
+## 🔄 GitHub Pages'i Kodla Yeniden Etkinleştirme
+GitHub Pages ayarını GitHub arayüzünden kaldırdıysanız `scripts/enable-pages.sh` betiğiyle aynı işlemi programatik olarak yapabilirsiniz.
+
+1. Repo ve Pages izinleri olan bir GitHub Personal Access Token oluşturup terminalde `export GITHUB_TOKEN=ghp_...` şeklinde tanımlayın. (Gerekirse `REPO_OWNER`, `REPO_NAME`, `CUSTOM_DOMAIN` değişkenleriyle kendi değerlerinizi geçebilirsiniz.)
+2. Proje klasöründe `./scripts/enable-pages.sh` komutunu çalıştırın.
+3. Betik Pages'i `workflow` modunda yeniden açar ve `suuapp.com` domainini HTTPS zorlamasıyla ayarlar. Ardından küçük bir değişiklik push ederek `.github/workflows/deploy.yml` aksiyonunun yeni deploy üretmesini sağlayın.

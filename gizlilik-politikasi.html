@@ -18,10 +18,11 @@
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             padding: 20px;
+            transition: all 0.3s ease;
         }
         
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             background: white;
             border-radius: 20px;
@@ -57,6 +58,40 @@
         .last-updated {
             font-size: 14px;
             opacity: 0.9;
+        }
+        
+        .language-switcher {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            padding: 24px;
+            background: #f8fafc;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .language-btn {
+            border: 1px solid #cbd5f5;
+            background: white;
+            color: #1f2933;
+            padding: 10px 18px;
+            border-radius: 999px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-weight: 600;
+        }
+        
+        .language-btn:hover {
+            border-color: #5b9df6;
+            color: #0f62fe;
+        }
+        
+        .language-btn.active {
+            background: linear-gradient(135deg, #2196F3, #64B5F6);
+            color: white;
+            border-color: transparent;
+            box-shadow: 0 10px 25px rgba(33, 150, 243, 0.3);
         }
         
         .content {
@@ -127,6 +162,37 @@
             font-size: 14px;
         }
         
+        .policy-section {
+            display: none;
+        }
+        
+        .policy-section.active {
+            display: block;
+        }
+        
+        .policy-section[dir="rtl"] {
+            direction: rtl;
+        }
+        
+        .policy-section[dir="rtl"] ul {
+            padding-left: 0;
+            padding-right: 30px;
+        }
+        
+        .policy-section[dir="rtl"] p,
+        .policy-section[dir="rtl"] li {
+            text-align: justify;
+        }
+        
+        .footer-text {
+            display: none;
+            margin-bottom: 6px;
+        }
+        
+        .footer-text.active {
+            display: block;
+        }
+        
         @media (max-width: 600px) {
             .content {
                 padding: 20px;
@@ -149,8 +215,15 @@
             <h1>Suu - Gizlilik Politikası</h1>
             <p class="last-updated">Son Güncelleme: 16 Eylül 2025</p>
         </div>
+
+        <div class="language-switcher" role="group" aria-label="Dil Seçici">
+            <button type="button" class="language-btn active" data-lang="tr" aria-pressed="true">Türkçe</button>
+            <button type="button" class="language-btn" data-lang="en" aria-pressed="false">English</button>
+            <button type="button" class="language-btn" data-lang="ar" aria-pressed="false">العربية</button>
+        </div>
         
-        <div class="content">
+        <!-- Turkish -->
+        <div class="content policy-section active" data-lang="tr">
             <div class="highlight">
                 <strong>Önemli:</strong> Suu uygulaması olarak gizliliğinize önem veriyoruz. Bu politika, kişisel verilerinizin nasıl toplandığını, kullanıldığını ve korunduğunu açıklar.
             </div>
@@ -299,11 +372,352 @@
                 Bu gizlilik politikası, 6698 sayılı Kişisel Verilerin Korunması Kanunu, Avrupa Birliği Genel Veri Koruma Tüzüğü (GDPR) ve ilgili diğer yasal düzenlemeler uyarınca hazırlanmıştır.
             </p>
         </div>
+
+        <!-- English -->
+        <div class="content policy-section" data-lang="en">
+            <div class="highlight">
+                <strong>Important:</strong> We care about your privacy at Suu. This policy explains how your personal data is collected, used, and protected.
+            </div>
+
+            <h2>1. Data Controller</h2>
+            <p>
+                The data controller for the personal data collected by the Suu mobile application ("Application") is the developer and operator of the app. Under the Law on the Protection of Personal Data No. 6698 ("KVKK") and the European Union General Data Protection Regulation ("GDPR"), the security and confidentiality of your data are our top priority.
+            </p>
+
+            <h2>2. Data We Collect</h2>
+            <p>We collect the following data to deliver a better experience:</p>
+
+            <h3>2.1 Personal Information</h3>
+            <ul>
+                <li><strong>Name and Surname:</strong> To personalize your experience</li>
+                <li><strong>Email Address:</strong> For account creation and communication</li>
+                <li><strong>Profile Photo:</strong> Optional, for account personalization</li>
+                <li><strong>Date of Birth/Age:</strong> To calculate your water needs</li>
+            </ul>
+
+            <h3>2.2 Health and Physical Data</h3>
+            <ul>
+                <li><strong>Height and Weight:</strong> To calculate your daily water requirement</li>
+                <li><strong>Gender:</strong> To set a personalized water goal</li>
+                <li><strong>Activity Level:</strong> To provide hydration recommendations</li>
+                <li><strong>Water Intake Data:</strong> For daily, weekly, and monthly tracking</li>
+                <li><strong>Health Integrations:</strong> Apple HealthKit and Google Fit data (with your permission)</li>
+            </ul>
+
+            <h3>2.3 Location Data</h3>
+            <ul>
+                <li><strong>Approximate Location:</strong> Optional, for weather insights and reminders</li>
+            </ul>
+
+            <h3>2.4 Device and Usage Data</h3>
+            <ul>
+                <li>Device model and operating system</li>
+                <li>App usage statistics</li>
+                <li>Error reports and performance data</li>
+                <li>Notification preferences</li>
+            </ul>
+
+            <h2>3. Purposes of Processing</h2>
+            <p>We use your data for the following purposes:</p>
+            <ul>
+                <li>Calculate your daily water needs and set personalized goals</li>
+                <li>Track and report your hydration habits</li>
+                <li>Send reminders and notifications</li>
+                <li>Improve and personalize the in-app experience</li>
+                <li>Provide technical support and resolve bugs</li>
+                <li>Fulfill our legal obligations</li>
+                <li>Conduct statistical analysis and research (with anonymized data)</li>
+            </ul>
+
+            <h2>4. Data Security</h2>
+            <p>We keep your data safe by taking the following measures:</p>
+            <ul>
+                <li><strong>Encryption:</strong> All sensitive data is protected with AES-256 encryption</li>
+                <li><strong>Secure Communication:</strong> Every transfer is made through SSL/TLS protocols</li>
+                <li><strong>Firebase Security:</strong> We rely on Google Firebase infrastructure</li>
+                <li><strong>Access Control:</strong> Access to data is restricted through authentication</li>
+                <li><strong>Regular Updates:</strong> The app and infrastructure are updated frequently</li>
+            </ul>
+
+            <h2>5. Data Sharing</h2>
+            <p>Your personal data is not shared with third parties except in the cases below:</p>
+            <ul>
+                <li><strong>Legal Obligations:</strong> Compliance with laws or official requests</li>
+                <li><strong>Service Providers:</strong> Trusted partners required to deliver the service (Firebase, Google Cloud)</li>
+                <li><strong>User Consent:</strong> With your explicit permission</li>
+            </ul>
+
+            <div class="highlight">
+                <strong>Important Note:</strong> Your data is never sold or shared with third parties for advertising or marketing purposes.
+            </div>
+
+            <h2>6. Children's Privacy</h2>
+            <p>
+                Our application is designed for users aged 13 and above. We do not knowingly collect personal data from children under 13. If you are a parent or guardian and believe your child has provided data without your consent, please contact us.
+            </p>
+
+            <h2>7. Your Rights</h2>
+            <p>Under KVKK and GDPR you have the following rights:</p>
+            <ul>
+                <li><strong>Right to Information:</strong> Learn whether your data is processed</li>
+                <li><strong>Right of Access:</strong> Request access to your processed data</li>
+                <li><strong>Right to Rectification:</strong> Request correction of inaccurate or incomplete data</li>
+                <li><strong>Right to Erasure:</strong> Request deletion of your data</li>
+                <li><strong>Right to Object:</strong> Object to data processing</li>
+                <li><strong>Right to Portability:</strong> Transfer your data to another controller</li>
+                <li><strong>Right to Complain:</strong> File a complaint with the Turkish DPA</li>
+            </ul>
+
+            <h2>8. Data Retention</h2>
+            <p>
+                We store your personal data only for as long as necessary for the purposes outlined or as required by law. When you delete your account, your data is permanently removed from our systems within 30 days. Data retained for legal obligations is deleted after the mandatory periods expire.
+            </p>
+
+            <h2>9. Cookies and Tracking Technologies</h2>
+            <p>
+                We use cookies and similar technologies to enhance your experience:
+            </p>
+            <ul>
+                <li><strong>Session Cookies:</strong> Maintain your logged-in status</li>
+                <li><strong>Preference Cookies:</strong> Remember your language and notification settings</li>
+                <li><strong>Analytics:</strong> Anonymous usage statistics via Firebase Analytics</li>
+            </ul>
+
+            <h2>10. Third-Party Services</h2>
+            <p>We rely on the following third-party services:</p>
+            <ul>
+                <li><strong>Firebase (Google):</strong> Authentication, storage, and analytics</li>
+                <li><strong>Google Sign-In:</strong> Seamless account access</li>
+                <li><strong>Apple Sign-In:</strong> Secure login on iOS devices</li>
+                <li><strong>HealthKit/Google Fit:</strong> Optional health data sync</li>
+            </ul>
+            <p>
+                These services maintain their own privacy policies and may process your data in line with those policies.
+            </p>
+
+            <h2>11. International Data Transfers</h2>
+            <p>
+                Your data may be stored on servers operated by our service providers, some of which are located outside of Turkey. We take every necessary step to safeguard your data during international transfers.
+            </p>
+
+            <h2>12. Policy Changes</h2>
+            <p>
+                We may update this privacy policy from time to time. You will be notified of significant changes via in-app messages or email. We encourage you to review the policy periodically.
+            </p>
+
+            <div class="contact-box">
+                <h3>13. Contact</h3>
+                <p>If you have any questions or requests regarding this privacy policy, please reach out:</p>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:privacy@suuapp.com">privacy@suuapp.com</a></li>
+                    <li><strong>Support:</strong> <a href="mailto:support@suuapp.com">support@suuapp.com</a></li>
+                    <li><strong>Web:</strong> <a href="https://suuapp.com">www.suuapp.com</a></li>
+                </ul>
+                <p style="margin-top: 15px;">
+                    For KVKK-related requests: <a href="mailto:kvkk@suuapp.com">kvkk@suuapp.com</a>
+                </p>
+            </div>
+
+            <h2>14. Legal Basis</h2>
+            <p>
+                This privacy policy has been prepared in accordance with the Law on the Protection of Personal Data No. 6698, the EU GDPR, and other relevant regulations.
+            </p>
+        </div>
+
+        <!-- Arabic -->
+        <div class="content policy-section" data-lang="ar" dir="rtl">
+            <div class="highlight">
+                <strong>مهم:</strong> نهتم في Suu بخصوصيتك. توضح هذه السياسة كيفية جمع بياناتك الشخصية واستخدامها وحمايتها.
+            </div>
+
+            <h2>1. مسؤول البيانات</h2>
+            <p>
+                إن مسؤول البيانات عن المعلومات الشخصية التي يجمعها تطبيق Suu ("التطبيق") هو مطوّر التطبيق ومشغّله. بموجب قانون حماية البيانات الشخصية رقم 6698 (KVKK) واللائحة العامة لحماية البيانات في الاتحاد الأوروبي (GDPR)، تُعد حماية بياناتك وسريتها أولوية قصوى لدينا.
+            </p>
+
+            <h2>2. البيانات التي نجمعها</h2>
+            <p>نجمع البيانات التالية بهدف تقديم تجربة أفضل:</p>
+
+            <h3>2.1 المعلومات الشخصية</h3>
+            <ul>
+                <li><strong>الاسم واللقب:</strong> لتخصيص تجربتك</li>
+                <li><strong>عنوان البريد الإلكتروني:</strong> لإنشاء الحساب والتواصل</li>
+                <li><strong>صورة الملف الشخصي:</strong> اختيارية لتخصيص الحساب</li>
+                <li><strong>تاريخ الميلاد / العمر:</strong> لحساب حاجتك إلى الماء</li>
+            </ul>
+
+            <h3>2.2 بيانات الصحة والبنية الجسدية</h3>
+            <ul>
+                <li><strong>الطول والوزن:</strong> لحساب احتياجك اليومي من الماء</li>
+                <li><strong>الجنس:</strong> لتعيين هدف مائي مخصص</li>
+                <li><strong>مستوى النشاط:</strong> لتقديم توصيات الترطيب</li>
+                <li><strong>بيانات شرب الماء:</strong> للمتابعة اليومية والأسبوعية والشهرية</li>
+                <li><strong>تكاملات صحية:</strong> بيانات Apple HealthKit وGoogle Fit (بعد موافقتك)</li>
+            </ul>
+
+            <h3>2.3 بيانات الموقع</h3>
+            <ul>
+                <li><strong>الموقع التقريبي:</strong> اختياري، لإظهار حالة الطقس والتذكيرات</li>
+            </ul>
+
+            <h3>2.4 بيانات الجهاز والاستخدام</h3>
+            <ul>
+                <li>طراز الجهاز ونظام التشغيل</li>
+                <li>إحصاءات استخدام التطبيق</li>
+                <li>تقارير الأخطاء وبيانات الأداء</li>
+                <li>تفضيلات الإشعارات</li>
+            </ul>
+
+            <h2>3. أغراض معالجة البيانات</h2>
+            <p>نستخدم بياناتك للأغراض التالية:</p>
+            <ul>
+                <li>حساب احتياجك اليومي من الماء وتحديد أهداف مخصصة</li>
+                <li>متابعة عادات شرب الماء لديك وتقديم تقارير</li>
+                <li>إرسال التذكيرات والإشعارات</li>
+                <li>تحسين تجربة التطبيق وتخصيصها</li>
+                <li>تقديم الدعم الفني وحل الأعطال</li>
+                <li>الوفاء بالتزاماتنا القانونية</li>
+                <li>تنفيذ تحليلات وإحصاءات باستخدام بيانات مجهولة الهوية</li>
+            </ul>
+
+            <h2>4. أمن البيانات</h2>
+            <p>نحمي بياناتك من خلال التدابير التالية:</p>
+            <ul>
+                <li><strong>التشفير:</strong> يتم حماية جميع البيانات الحساسة بتشفير AES-256</li>
+                <li><strong>الاتصال الآمن:</strong> تتم كل عمليات نقل البيانات عبر بروتوكولات SSL/TLS</li>
+                <li><strong>أمان Firebase:</strong> نعتمد على بنية Google Firebase الأمنية</li>
+                <li><strong>التحكم في الوصول:</strong> يتم تقييد الوصول إلى البيانات من خلال التحقق من الهوية</li>
+                <li><strong>تحديثات منتظمة:</strong> يتم تحديث التطبيق والبنية التحتية باستمرار</li>
+            </ul>
+
+            <h2>5. مشاركة البيانات</h2>
+            <p>لا نشارك بياناتك الشخصية مع أطراف ثالثة إلا في الحالات التالية:</p>
+            <ul>
+                <li><strong>الالتزامات القانونية:</strong> الامتثال للقوانين أو طلبات الجهات الرسمية</li>
+                <li><strong>مزودو الخدمة:</strong> الشركاء الموثوقون اللازمون لتقديم الخدمة (Firebase وGoogle Cloud)</li>
+                <li><strong>موافقة المستخدم:</strong> بعد الحصول على موافقتك الصريحة</li>
+            </ul>
+
+            <div class="highlight">
+                <strong>ملاحظة مهمة:</strong> لن تتم مشاركة بياناتك مع أطراف ثالثة لأغراض الإعلان أو التسويق أو بيعها على الإطلاق.
+            </div>
+
+            <h2>6. خصوصية الأطفال</h2>
+            <p>
+                تطبيقنا مخصص للمستخدمين بعمر 13 عامًا فأكثر. لا نجمع عن قصد بيانات شخصية من الأطفال دون 13 عامًا. إذا كنت ولي أمر أو وصيًا وتعتقد أن طفلك قد زودنا ببيانات دون إذنك، فيُرجى التواصل معنا.
+            </p>
+
+            <h2>7. حقوقك</h2>
+            <p>بموجب قوانين KVKK وGDPR تملك الحقوق التالية:</p>
+            <ul>
+                <li><strong>حق المعرفة:</strong> التحقق مما إذا كانت بياناتك تُعالج</li>
+                <li><strong>حق الوصول:</strong> طلب الاطلاع على بياناتك التي تتم معالجتها</li>
+                <li><strong>حق التصحيح:</strong> طلب تصحيح البيانات غير الدقيقة أو الناقصة</li>
+                <li><strong>حق الحذف:</strong> طلب حذف بياناتك</li>
+                <li><strong>حق الاعتراض:</strong> الاعتراض على معالجة البيانات</li>
+                <li><strong>حق نقل البيانات:</strong> نقل بياناتك إلى مسؤول بيانات آخر</li>
+                <li><strong>حق الشكوى:</strong> تقديم شكوى إلى هيئة حماية البيانات الشخصية التركية</li>
+            </ul>
+
+            <h2>8. مدة الاحتفاظ بالبيانات</h2>
+            <p>
+                نحتفظ ببياناتك الشخصية فقط للمدة اللازمة للأغراض المذكورة أو للمدة التي تفرضها القوانين. عند حذف حسابك يتم إزالة بياناتك نهائيًا من أنظمتنا خلال 30 يومًا. أما البيانات المحفوظة التزامًا بمتطلبات قانونية فسيتم حذفها بعد انتهاء المدد الإلزامية.
+            </p>
+
+            <h2>9. ملفات تعريف الارتباط وتقنيات التتبع</h2>
+            <p>
+                نستخدم ملفات تعريف الارتباط والتقنيات المشابهة لتحسين تجربتك:
+            </p>
+            <ul>
+                <li><strong>ملفات جلسات العمل:</strong> للحفاظ على حالة تسجيل الدخول</li>
+                <li><strong>ملفات التفضيلات:</strong> لحفظ إعدادات اللغة والإشعارات</li>
+                <li><strong>التحليلات:</strong> إحصاءات استخدام مجهولة عبر Firebase Analytics</li>
+            </ul>
+
+            <h2>10. خدمات الجهات الخارجية</h2>
+            <p>نعتمد على الخدمات التالية:</p>
+            <ul>
+                <li><strong>Firebase (من Google):</strong> للمصادقة وتخزين البيانات والتحليلات</li>
+                <li><strong>تسجيل الدخول عبر Google:</strong> لتسهيل الوصول إلى الحساب</li>
+                <li><strong>تسجيل الدخول عبر Apple:</strong> لتسجيل دخول آمن على أجهزة iOS</li>
+                <li><strong>HealthKit / Google Fit:</strong> مزامنة اختيارية لبيانات الصحة</li>
+            </ul>
+            <p>
+                تمتلك هذه الخدمات سياساتها الخاصة بالخصوصية وقد تعالج بياناتك وفقًا لتلك السياسات.
+            </p>
+
+            <h2>11. نقل البيانات دوليًا</h2>
+            <p>
+                قد يتم تخزين بياناتك على خوادم تابعة لمزودي خدماتنا، وقد تقع بعض هذه الخوادم خارج تركيا. نتخذ جميع الإجراءات اللازمة لحماية بياناتك أثناء عمليات النقل الدولية.
+            </p>
+
+            <h2>12. تغييرات السياسة</h2>
+            <p>
+                قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر. سيتم إخطارك بالتغييرات المهمة عبر إشعارات داخل التطبيق أو البريد الإلكتروني. ننصحك بمراجعة السياسة بشكل دوري.
+            </p>
+
+            <div class="contact-box">
+                <h3>13. التواصل</h3>
+                <p>لأي أسئلة أو طلبات تتعلق بسياسة الخصوصية هذه، تواصل معنا عبر:</p>
+                <ul>
+                    <li><strong>البريد الإلكتروني:</strong> <a href="mailto:privacy@suuapp.com">privacy@suuapp.com</a></li>
+                    <li><strong>الدعم:</strong> <a href="mailto:support@suuapp.com">support@suuapp.com</a></li>
+                    <li><strong>الموقع:</strong> <a href="https://suuapp.com">www.suuapp.com</a></li>
+                </ul>
+                <p style="margin-top: 15px;">
+                    لطلبات KVKK: <a href="mailto:kvkk@suuapp.com">kvkk@suuapp.com</a>
+                </p>
+            </div>
+
+            <h2>14. الأساس القانوني</h2>
+            <p>
+                تم إعداد سياسة الخصوصية هذه وفقًا لقانون حماية البيانات الشخصية رقم 6698، واللائحة العامة لحماية البيانات في الاتحاد الأوروبي، واللوائح ذات الصلة.
+            </p>
+        </div>
         
-        <div class="footer">
-            <p>© 2025 Suu - Tüm hakları saklıdır.</p>
-            <p>Bu gizlilik politikası en son 16 Eylül 2025 tarihinde güncellenmiştir.</p>
+        <div class="footer" id="policyFooter">
+            <p class="footer-text active" data-lang="tr">© 2025 Suu - Tüm hakları saklıdır.</p>
+            <p class="footer-text active" data-lang="tr">Bu gizlilik politikası en son 16 Eylül 2025 tarihinde güncellenmiştir.</p>
+
+            <p class="footer-text" data-lang="en">© 2025 Suu - All rights reserved.</p>
+            <p class="footer-text" data-lang="en">This privacy policy was last updated on 16 September 2025.</p>
+
+            <p class="footer-text" data-lang="ar" dir="rtl">© 2025 Suu - جميع الحقوق محفوظة.</p>
+            <p class="footer-text" data-lang="ar" dir="rtl">تم تحديث سياسة الخصوصية هذه آخر مرة في 16 سبتمبر 2025.</p>
         </div>
     </div>
+
+    <script>
+        const languageButtons = document.querySelectorAll('.language-btn');
+        const sections = document.querySelectorAll('.policy-section');
+        const footerTexts = document.querySelectorAll('.footer-text');
+
+        function setLanguage(lang) {
+            document.documentElement.lang = lang;
+            document.body.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+            sections.forEach(section => {
+                section.classList.toggle('active', section.dataset.lang === lang);
+            });
+
+            footerTexts.forEach(text => {
+                text.classList.toggle('active', text.dataset.lang === lang);
+            });
+
+            languageButtons.forEach(button => {
+                const isActive = button.dataset.lang === lang;
+                button.classList.toggle('active', isActive);
+                button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+            });
+        }
+
+        languageButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                if (!button.classList.contains('active')) {
+                    setLanguage(button.dataset.lang);
+                }
+            });
+        });
+    </script>
 </body>
 </html>
