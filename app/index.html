@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>SuuApp'e yönlendiriliyor...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root {
+      color-scheme: light dark;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background: radial-gradient(circle at 20% 20%, #e0f2fe, #dbeafe 35%, #0f172a 100%);
+      color: #0f172a;
+    }
+
+    main {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.82);
+      border-radius: 16px;
+      padding: 28px 24px;
+      box-shadow: 0 15px 45px rgba(15, 23, 42, 0.25);
+      max-width: 360px;
+      width: 92%;
+      backdrop-filter: blur(6px);
+    }
+
+    p {
+      margin: 0 0 10px;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .links {
+      margin-top: 12px;
+      display: grid;
+      gap: 10px;
+    }
+
+    a {
+      color: #0ea5e9;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p>Seni SuuApp'e yönlendiriyorum...</p>
+    <p>Eğer otomatik yönlenmezse aşağıdaki bağlantıları kullanabilirsin.</p>
+
+    <div class="links">
+      <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro&hl=tr">Android (Play Store)</a>
+      <a href="https://suuapp.com">Web sitesi</a>
+    </div>
+  </main>
+
+  <script>
+    (function () {
+      var ua = navigator.userAgent || navigator.vendor || window.opera || "";
+      var android = /android/i.test(ua);
+
+      var playStoreUrl = "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro&hl=tr";
+      var webUrl = "https://suuapp.com";
+
+      if (android) {
+        window.location.replace(playStoreUrl);
+      } else {
+        window.location.replace(webUrl);
+      }
+    })();
+  </script>
+
+  <noscript>
+    <p>Tarayıcında JavaScript kapalıysa:</p>
+    <p><a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro&hl=tr">Android için tıkla</a></p>
+    <p><a href="https://suuapp.com">Diğer cihazlar için tıkla</a></p>
+  </noscript>
+</body>
+</html>
