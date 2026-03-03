@@ -60,6 +60,7 @@
     <p>Eğer otomatik yönlenmezse aşağıdaki bağlantıları kullanabilirsin.</p>
 
     <div class="links">
+      <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920">iOS (App Store)</a>
       <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro&hl=tr">Android (Play Store)</a>
       <a href="https://suuapp.com">Web sitesi</a>
     </div>
@@ -69,12 +70,16 @@
     (function () {
       var ua = navigator.userAgent || navigator.vendor || window.opera || "";
       var android = /android/i.test(ua);
+      var ios = /iphone|ipad|ipod/i.test(ua);
 
+      var appStoreUrl = "https://apps.apple.com/us/app/suu-su-takip/id6757619920";
       var playStoreUrl = "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro&hl=tr";
       var webUrl = "https://suuapp.com";
 
       if (android) {
         window.location.replace(playStoreUrl);
+      } else if (ios) {
+        window.location.replace(appStoreUrl);
       } else {
         window.location.replace(webUrl);
       }
@@ -83,6 +88,7 @@
 
   <noscript>
     <p>Tarayıcında JavaScript kapalıysa:</p>
+    <p><a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920">iOS için tıkla</a></p>
     <p><a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro&hl=tr">Android için tıkla</a></p>
     <p><a href="https://suuapp.com">Diğer cihazlar için tıkla</a></p>
   </noscript>

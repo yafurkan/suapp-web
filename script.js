@@ -151,19 +151,18 @@ window.addEventListener('load', () => {
 function showIOSPopup() {
     const iosPopup = document.getElementById('ios-popup');
     if (iosPopup) {
-        // Check if user has already seen the popup today
-        const lastShown = localStorage.getItem('ios-popup-last-shown');
-        const today = new Date().toDateString();
-        
-        if (lastShown !== today) {
+        // Show only once (iOS is now live announcement)
+        const alreadySeen = localStorage.getItem('ios-launch-popup-seen');
+
+        if (!alreadySeen) {
             iosPopup.classList.add('show');
             document.body.style.overflow = 'hidden';
-            
+
             // Add celebration animation
             addIOSCelebrationAnimation();
-            
-            // Save that popup was shown today
-            localStorage.setItem('ios-popup-last-shown', today);
+
+            // Save that popup was shown
+            localStorage.setItem('ios-launch-popup-seen', 'true');
         }
     }
 }
@@ -270,35 +269,15 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (notifyMeBtn) {
         notifyMeBtn.addEventListener('click', () => {
-            // Simulate notification signup
-            const originalText = notifyMeBtn.innerHTML;
-            notifyMeBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Kaydediliyor...';
-            notifyMeBtn.disabled = true;
-            
-            setTimeout(() => {
-                notifyMeBtn.innerHTML = '<i class="fas fa-check"></i> Kaydedildi!';
-                notifyMeBtn.style.background = 'linear-gradient(135deg, #4CAF50, #45a049)';
-                
-                // Show success message
-                showNotification('iOS sürümü çıktığında sizi bilgilendireceğiz! 🍎', 'success');
-                
-                // Close popup after success
-                setTimeout(() => {
-                    hideIOSPopup();
-                }, 2000);
-                
-                // Save notification preference
-                localStorage.setItem('ios-notification-signup', 'true');
-            }, 1500);
+            window.open('https://apps.apple.com/us/app/suu-su-takip/id6757619920', '_blank', 'noopener');
+            hideIOSPopup();
         });
     }
     
     // App Store button functionality
     function handleAppStoreClick(e) {
         e.preventDefault();
-        
-        // Show coming soon message with iOS styling
-        showIOSComingSoonMessage();
+        window.open('https://apps.apple.com/us/app/suu-su-takip/id6757619920', '_blank', 'noopener');
     }
     
     if (appStoreBtn) {
