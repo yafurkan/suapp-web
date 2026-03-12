@@ -10,7 +10,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.6;
@@ -18,8 +18,9 @@
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             padding: 20px;
+            transition: all 0.3s ease;
         }
-        
+
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -28,14 +29,14 @@
             box-shadow: 0 20px 60px rgba(0,0,0,0.3);
             overflow: hidden;
         }
-        
+
         .header {
             background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
             color: white;
             padding: 40px 30px;
             text-align: center;
         }
-        
+
         .logo {
             width: 80px;
             height: 80px;
@@ -47,22 +48,56 @@
             justify-content: center;
             font-size: 40px;
         }
-        
+
         h1 {
             font-size: 32px;
             margin-bottom: 10px;
             font-weight: 700;
         }
-        
+
         .last-updated {
             font-size: 14px;
             opacity: 0.9;
         }
-        
+
+        .language-switcher {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            padding: 24px;
+            background: #f8fafc;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .language-btn {
+            border: 1px solid #cbd5e1;
+            background: white;
+            color: #1f2933;
+            padding: 10px 18px;
+            border-radius: 999px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-weight: 600;
+        }
+
+        .language-btn:hover {
+            border-color: #e74c3c;
+            color: #c0392b;
+        }
+
+        .language-btn.active {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+            border-color: transparent;
+            box-shadow: 0 10px 25px rgba(231, 76, 60, 0.3);
+        }
+
         .content {
             padding: 40px 30px;
         }
-        
+
         h2 {
             color: #e74c3c;
             margin: 30px 0 15px;
@@ -70,27 +105,27 @@
             border-bottom: 2px solid #fadbd8;
             padding-bottom: 10px;
         }
-        
+
         h3 {
             color: #c0392b;
             margin: 20px 0 10px;
             font-size: 18px;
         }
-        
+
         p {
             margin-bottom: 15px;
             text-align: justify;
         }
-        
+
         ul {
             margin: 15px 0;
             padding-left: 30px;
         }
-        
+
         li {
             margin-bottom: 8px;
         }
-        
+
         .highlight {
             background: #fadbd8;
             padding: 20px;
@@ -98,27 +133,27 @@
             margin: 20px 0;
             border-radius: 8px;
         }
-        
+
         .contact-box {
             background: #F5F5F5;
             padding: 20px;
             border-radius: 10px;
             margin: 30px 0;
         }
-        
+
         .contact-box h3 {
             margin-top: 0;
         }
-        
+
         a {
             color: #e74c3c;
             text-decoration: none;
         }
-        
+
         a:hover {
             text-decoration: underline;
         }
-        
+
         .footer {
             background: #F5F5F5;
             padding: 20px;
@@ -126,16 +161,52 @@
             color: #666;
             font-size: 14px;
         }
-        
+
+        .terms-section {
+            display: none;
+        }
+
+        .terms-section.active {
+            display: block;
+        }
+
+        .terms-section[dir="rtl"] {
+            direction: rtl;
+        }
+
+        .terms-section[dir="rtl"] ul {
+            padding-left: 0;
+            padding-right: 30px;
+        }
+
+        .terms-section[dir="rtl"] p,
+        .terms-section[dir="rtl"] li {
+            text-align: justify;
+        }
+
+        .terms-section[dir="rtl"] .highlight {
+            border-left: none;
+            border-right: 4px solid #e74c3c;
+        }
+
+        .footer-text {
+            display: none;
+            margin-bottom: 6px;
+        }
+
+        .footer-text.active {
+            display: block;
+        }
+
         @media (max-width: 600px) {
             .content {
                 padding: 20px;
             }
-            
+
             h1 {
                 font-size: 24px;
             }
-            
+
             h2 {
                 font-size: 20px;
             }
@@ -149,8 +220,14 @@
             <h1>Suu - Kullanım Şartları</h1>
             <p class="last-updated">Son Güncelleme: 16 Eylül 2025</p>
         </div>
-        
-        <div class="content">
+
+        <div class="language-switcher" role="group" aria-label="Dil Seçici">
+            <button type="button" class="language-btn active" data-lang="tr" aria-pressed="true">Türkçe</button>
+            <button type="button" class="language-btn" data-lang="ar" aria-pressed="false">العربية</button>
+        </div>
+
+        <!-- Turkish -->
+        <div class="content terms-section active" data-lang="tr">
             <div class="highlight">
                 <strong>Önemli:</strong> Suu uygulamasını kullanarak bu şartları kabul etmiş sayılırsınız. Lütfen dikkatlice okuyunuz.
             </div>
@@ -158,7 +235,7 @@
             <h2>1. Genel Hükümler</h2>
             <h3>1.1 Taraflar</h3>
             <p>Bu sözleşme, Suu mobil uygulamasının ("Uygulama") sağlayıcısı ("Şirket", "Biz") ile uygulamayı kullanan kişi ("Kullanıcı", "Siz") arasında yapılmıştır.</p>
-            
+
             <h3>1.2 Kabul</h3>
             <p>Uygulamayı indirerek, kurarak veya kullanarak bu kullanım şartlarını tamamen okumuş ve kabul etmiş sayılırsınız. Eğer bu şartları kabul etmiyorsanız, uygulamayı kullanmamalısınız.</p>
 
@@ -172,7 +249,7 @@
                 <li>İlerleme takibi ve istatistikler</li>
                 <li>Sağlık entegrasyonu (HealthKit, Google Fit)</li>
             </ul>
-            
+
             <h3>2.2 Hizmet Kapsamı</h3>
             <p>Uygulama ücretsiz temel özellikler sunar. Gelecekte premium özellikler eklenebilir ve bunlar için ücret alınabilir. Herhangi bir ücretli hizmet başlamadan önce kullanıcılar bilgilendirilecektir.</p>
 
@@ -185,7 +262,7 @@
                 <li>Hesap bilgilerinizi güvenli tutmak</li>
                 <li>Su tüketim verilerinizi düzgün kaydetmek</li>
             </ul>
-            
+
             <h3>3.2 Uygun Kullanım</h3>
             <ul>
                 <li>Uygulamayı amacına uygun kullanmak</li>
@@ -196,7 +273,7 @@
 
             <h2>4. Yasak Davranışlar</h2>
             <p>Aşağıdaki davranışlar kesinlikle yasaktır ve hesabınızın kapatılmasına neden olabilir:</p>
-            
+
             <h3>4.1 Teknik Kötüye Kullanım</h3>
             <ul>
                 <li>Sistemi hacklemek veya zarar vermeye çalışmak</li>
@@ -204,7 +281,7 @@
                 <li>Sahte hesaplar oluşturmak</li>
                 <li>Virüs, malware veya zararlı kod yaymak</li>
             </ul>
-            
+
             <h3>4.2 İçerik İhlalleri</h3>
             <ul>
                 <li>Yanıltıcı sağlık bilgileri paylaşmak</li>
@@ -216,7 +293,7 @@
             <h2>5. Fikri Mülkiyet Hakları</h2>
             <h3>5.1 Uygulama Hakları</h3>
             <p>Suu uygulaması, logo, tasarım, kod ve tüm içerik üzerindeki tüm fikri mülkiyet hakları şirkete aittir. Bu haklar ulusal ve uluslararası telif hakkı yasaları ile korunmaktadır.</p>
-            
+
             <h3>5.2 Kullanıcı İçerikleri</h3>
             <p>Uygulamaya girdiğiniz kişisel veriler ve su tüketim bilgileri size aittir. Ancak, uygulamayı geliştirmek ve hizmet sunmak için bu verileri kullanmamıza sınırlı lisans vermiş sayılırsınız.</p>
 
@@ -224,7 +301,7 @@
             <div class="highlight">
                 <strong>Kritik Uyarı:</strong> Suu uygulaması tıbbi tavsiye vermez ve bir sağlık profesyonelinin yerini tutmaz.
             </div>
-            
+
             <h3>6.1 Tıbbi Tavsiye Değildir</h3>
             <ul>
                 <li>Uygulama sadece genel rehberlik sağlar</li>
@@ -232,7 +309,7 @@
                 <li>Özel sağlık durumlarınızı doktorunuzla paylaşın</li>
                 <li>Uygulamanın önerileri tıbbi tavsiye yerine geçmez</li>
             </ul>
-            
+
             <h3>6.2 Kişisel Sorumluluk</h3>
             <ul>
                 <li>Su tüketim miktarını kendi durumunuza göre ayarlayın</li>
@@ -244,14 +321,14 @@
             <h2>7. Hizmet Kesintileri ve Kullanılabilirlik</h2>
             <h3>7.1 Planlı Kesintiler</h3>
             <p>Sistem bakımı, güncelleme ve iyileştirme çalışmaları için hizmet geçici olarak kesilebilir. Bu durumlar mümkün olduğunca önceden duyurulacaktır.</p>
-            
+
             <h3>7.2 Beklenmeyen Kesintiler</h3>
             <p>Teknik arızalar, güvenlik tehditleri veya force majeure durumlarında hizmet kesintisi yaşanabilir. Bu durumlardan dolayı sorumluluk kabul etmiyoruz.</p>
 
             <h2>8. Ücretsiz Hizmet ve Gelecekteki Değişiklikler</h2>
             <h3>8.1 Mevcut Ücretsiz Hizmetler</h3>
             <p>Suu uygulaması şu anda tamamen ücretsiz olarak sunulmaktadır. Temel özellikler her zaman ücretsiz kalacaktır.</p>
-            
+
             <h3>8.2 Gelecekteki Premium Özellikler</h3>
             <p>Gelecekte ek premium özellikler sunulabilir. Bu durumda:</p>
             <ul>
@@ -269,7 +346,7 @@
                 <li>Geri dönüş mümkün olmayabilir</li>
                 <li>Silme işlemi geri alınamaz</li>
             </ul>
-            
+
             <h3>9.2 Şirket Tarafından Fesih</h3>
             <p>Aşağıdaki durumlarda hesabınızı kapatma hakkımız saklıdır:</p>
             <ul>
@@ -288,7 +365,7 @@
                 <li>Tüm cihazlarda mükemmel çalışma</li>
                 <li>Hata ve arızaların olmaması</li>
             </ul>
-            
+
             <h3>10.2 Zarar Sınırlamaları</h3>
             <p>Aşağıdaki durumlardan dolayı sorumlu değiliz:</p>
             <ul>
@@ -304,10 +381,10 @@
             <h2>12. Uygulanacak Hukuk ve Yetki</h2>
             <h3>12.1 Uygulanacak Hukuk</h3>
             <p>Bu sözleşme Türkiye Cumhuriyeti yasalarına tabidir ve bu yasalara uygun olarak yorumlanır.</p>
-            
+
             <h3>12.2 Yetki</h3>
             <p>Bu sözleşmeden doğacak uyuşmazlıklarda İstanbul mahkemeleri ve icra daireleri yetkilidir.</p>
-            
+
             <h3>12.3 Uyuşmazlık Çözümü</h3>
             <p>Uyuşmazlıkları öncelikle dostane görüşmelerle çözmeye çalışırız. Bu mümkün olmazsa arabuluculuk ve sonrasında mahkeme yoluna başvururuz.</p>
 
@@ -320,20 +397,20 @@
                 <li>E-posta ile bilgilendirilirsiniz</li>
                 <li>Web sitesinde duyuru yapılır</li>
             </ul>
-            
+
             <h3>13.2 Kabul ve Red</h3>
             <p>Güncellenmiş şartları kabul etmiyorsanız hesabınızı kapatabilirsiniz. Uygulamayı kullanmaya devam etmeniz yeni şartları kabul ettiğiniz anlamına gelir.</p>
 
             <h2>14. Diğer Hükümler</h2>
             <h3>14.1 Bölünebilirlik</h3>
             <p>Bu sözleşmenin herhangi bir maddesinin geçersiz sayılması diğer maddelerin geçerliliğini etkilemez.</p>
-            
+
             <h3>14.2 Feragat</h3>
             <p>Bir hakkı kullanmamak o haktan feragat ettiğimiz anlamına gelmez.</p>
-            
+
             <h3>14.3 Devir</h3>
             <p>Bu sözleşmeden doğan hak ve yükümlülüklerinizi üçüncü şahıslara devredemezsiniz. Bizim haklarımızı devretme hakkımız saklıdır.</p>
-            
+
             <h3>14.4 Bütünlük</h3>
             <p>Bu kullanım şartları ve gizlilik politikası aramızdaki tam anlaşmayı oluşturur.</p>
 
@@ -350,11 +427,249 @@
                 </p>
             </div>
         </div>
-        
-        <div class="footer">
-            <p>© 2025 Suu - Tüm hakları saklıdır.</p>
-            <p>Bu kullanım şartları en son 16 Eylül 2025 tarihinde güncellenmiştir.</p>
+
+        <!-- Arabic -->
+        <div class="content terms-section" data-lang="ar" dir="rtl">
+            <div class="highlight">
+                <strong>مهم:</strong> باستخدامك تطبيق Suu، يُعدّ ذلك قبولًا منك لهذه الشروط. يُرجى قراءتها بعناية.
+            </div>
+
+            <h2>1. الأحكام العامة</h2>
+            <h3>1.1 الأطراف</h3>
+            <p>تُبرم هذه الاتفاقية بين مزوّد تطبيق Suu ("التطبيق") ("الشركة"، "نحن") والشخص الذي يستخدم التطبيق ("المستخدم"، "أنت").</p>
+
+            <h3>1.2 القبول</h3>
+            <p>بتنزيل التطبيق أو تثبيته أو استخدامه، يُعدّ ذلك دليلًا على أنك قرأت شروط الاستخدام هذه بالكامل وقبلتها. إن لم تقبل هذه الشروط، يجب عليك التوقف عن استخدام التطبيق.</p>
+
+            <h2>2. وصف الخدمة</h2>
+            <h3>2.1 ما هو تطبيق Suu؟</h3>
+            <p>Suu تطبيق جوال يساعد المستخدمين على متابعة استهلاكهم اليومي من الماء. يوفر التطبيق الميزات التالية:</p>
+            <ul>
+                <li>تتبع استهلاك الماء اليومي</li>
+                <li>أهداف شرب ماء مخصصة</li>
+                <li>نظام تذكيرات وإشعارات</li>
+                <li>تتبع التقدم والإحصاءات</li>
+                <li>تكامل صحي (HealthKit، Google Fit)</li>
+            </ul>
+
+            <h3>2.2 نطاق الخدمة</h3>
+            <p>يوفر التطبيق ميزات أساسية مجانية. قد تُضاف ميزات مميزة مدفوعة في المستقبل، وسيتم إبلاغ المستخدمين قبل بدء أي خدمة مدفوعة.</p>
+
+            <h2>3. التزامات المستخدم</h2>
+            <h3>3.1 تقديم معلومات صحيحة</h3>
+            <p>لاستخدام التطبيق بفاعلية، أنت توافق على الالتزامات التالية:</p>
+            <ul>
+                <li>الحفاظ على معلوماتك الشخصية دقيقة ومحدّثة</li>
+                <li>إدخال بيانات مثل العمر والوزن والطول بشكل صحيح</li>
+                <li>الحفاظ على أمان معلومات حسابك</li>
+                <li>تسجيل بيانات استهلاك الماء بشكل سليم</li>
+            </ul>
+
+            <h3>3.2 الاستخدام المناسب</h3>
+            <ul>
+                <li>استخدام التطبيق وفق الغرض المخصص له</li>
+                <li>عدم الإضرار بالمستخدمين الآخرين أو بالنظام</li>
+                <li>عدم القيام بأي أعمال مخالفة للقانون</li>
+                <li>عدم استخدام التطبيق لأغراض تجارية دون إذن</li>
+            </ul>
+
+            <h2>4. السلوكيات المحظورة</h2>
+            <p>السلوكيات التالية محظورة تمامًا وقد تؤدي إلى إغلاق حسابك:</p>
+
+            <h3>4.1 إساءة الاستخدام التقني</h3>
+            <ul>
+                <li>محاولة اختراق النظام أو إلحاق الضرر به</li>
+                <li>استخدام برامج تشغيل تلقائية أو سكريبتات</li>
+                <li>إنشاء حسابات وهمية</li>
+                <li>نشر فيروسات أو برامج ضارة أو أكواد خبيثة</li>
+            </ul>
+
+            <h3>4.2 انتهاكات المحتوى</h3>
+            <ul>
+                <li>مشاركة معلومات صحية مضللة</li>
+                <li>انتهاك حقوق الملكية الفكرية</li>
+                <li>إرسال رسائل غير مرغوب فيها أو محتوى مزعج</li>
+                <li>مضايقة المستخدمين الآخرين</li>
+            </ul>
+
+            <h2>5. حقوق الملكية الفكرية</h2>
+            <h3>5.1 حقوق التطبيق</h3>
+            <p>جميع حقوق الملكية الفكرية للتطبيق Suu، بما في ذلك الشعار والتصميم والكود والمحتوى، تعود للشركة. تحمي هذه الحقوق قوانين حقوق الطبع والنشر المحلية والدولية.</p>
+
+            <h3>5.2 محتوى المستخدم</h3>
+            <p>البيانات الشخصية ومعلومات استهلاك الماء التي تدخلها في التطبيق تخصك. غير أنك بذلك تمنحنا ترخيصًا محدودًا لاستخدام هذه البيانات بهدف تطوير الخدمة وتقديمها.</p>
+
+            <h2>6. تحذير الصحة والسلامة</h2>
+            <div class="highlight">
+                <strong>تحذير مهم:</strong> لا يُقدّم تطبيق Suu استشارات طبية ولا يحل محل المختص الصحي.
+            </div>
+
+            <h3>6.1 ليس استشارة طبية</h3>
+            <ul>
+                <li>يوفر التطبيق إرشادات عامة فقط</li>
+                <li>استشر طبيبك دائمًا للمشكلات الصحية</li>
+                <li>شارك حالاتك الصحية الخاصة مع طبيبك</li>
+                <li>توصيات التطبيق لا تُغني عن الاستشارة الطبية</li>
+            </ul>
+
+            <h3>6.2 المسؤولية الشخصية</h3>
+            <ul>
+                <li>اضبط كمية استهلاك الماء وفق حالتك الشخصية</li>
+                <li>ضع في اعتبارك حالتك الجسدية وتاريخك الصحي</li>
+                <li>كن على دراية بأن الإفراط في شرب الماء قد يكون ضارًا</li>
+                <li>توقف عن استخدام التطبيق إذا شعرت بأي تعب</li>
+            </ul>
+
+            <h2>7. انقطاع الخدمة والتوفر</h2>
+            <h3>7.1 الانقطاعات المخططة</h3>
+            <p>قد تُوقف الخدمة مؤقتًا لأعمال الصيانة والتحديث والتحسين. سيتم الإعلان عن هذه الحالات مسبقًا قدر الإمكان.</p>
+
+            <h3>7.2 الانقطاعات غير المتوقعة</h3>
+            <p>قد يحدث انقطاع في الخدمة بسبب أعطال تقنية أو تهديدات أمنية أو قوة قاهرة. لا نتحمل المسؤولية عن هذه الحالات.</p>
+
+            <h2>8. الخدمة المجانية والتغييرات المستقبلية</h2>
+            <h3>8.1 الخدمات المجانية الحالية</h3>
+            <p>يُقدَّم تطبيق Suu حاليًا مجانًا بالكامل. ستبقى الميزات الأساسية مجانية دائمًا.</p>
+
+            <h3>8.2 الميزات المميزة المستقبلية</h3>
+            <p>قد تُقدَّم ميزات مميزة إضافية في المستقبل. في هذه الحالة:</p>
+            <ul>
+                <li>سيتم الإعلان قبل 30 يومًا</li>
+                <li>ستبقى الميزات الأساسية الحالية مجانية</li>
+                <li>لست مضطرًا لاستخدام الميزات المميزة</li>
+                <li>حقك في الإلغاء محفوظ دائمًا</li>
+            </ul>
+
+            <h2>9. إدارة الحساب وإنهاؤه</h2>
+            <h3>9.1 الإنهاء من قبل المستخدم</h3>
+            <ul>
+                <li>يمكنك حذف حسابك في أي وقت</li>
+                <li>سيتم حذف بياناتك نهائيًا خلال 30 يومًا</li>
+                <li>قد لا يكون الرجوع عن الحذف ممكنًا</li>
+                <li>عملية الحذف لا يمكن التراجع عنها</li>
+            </ul>
+
+            <h3>9.2 الإنهاء من قبل الشركة</h3>
+            <p>نحتفظ بحق إغلاق حسابك في الحالات التالية:</p>
+            <ul>
+                <li>في حال انتهاك هذه الشروط</li>
+                <li>عند اكتشاف أنشطة غير قانونية</li>
+                <li>في حال الإضرار بالنظام</li>
+                <li>مع إشعار مسبق بـ 30 يومًا قدر الإمكان</li>
+            </ul>
+
+            <h2>10. حدود المسؤولية</h2>
+            <h3>10.1 جودة الخدمة</h3>
+            <p>نقدم التطبيق "كما هو" ولا نضمن ما يلي:</p>
+            <ul>
+                <li>خدمة غير منقطعة بنسبة 100%</li>
+                <li>عدم فقدان البيانات</li>
+                <li>الأداء المثالي على جميع الأجهزة</li>
+                <li>الخلو التام من الأخطاء والأعطال</li>
+            </ul>
+
+            <h3>10.2 حدود الضرر</h3>
+            <p>لسنا مسؤولين عن:</p>
+            <ul>
+                <li>الأضرار غير المباشرة أو التبعية</li>
+                <li>خسارة الأرباح أو الأعمال</li>
+                <li>الأضرار الناجمة عن أطراف ثالثة</li>
+                <li>الأضرار الناتجة عن فقدان البيانات</li>
+            </ul>
+
+            <h2>11. الخصوصية وحماية البيانات</h2>
+            <p>للاطلاع على تفاصيل حول كيفية جمع بياناتك الشخصية واستخدامها وحمايتها، يُرجى مراجعة <a href="gizlilik-politikasi.html">سياسة الخصوصية</a>. تُعدّ سياسة الخصوصية جزءًا لا يتجزأ من شروط الاستخدام هذه.</p>
+
+            <h2>12. القانون المطبق والاختصاص القضائي</h2>
+            <h3>12.1 القانون المطبق</h3>
+            <p>تخضع هذه الاتفاقية لقوانين جمهورية تركيا وتُفسَّر وفقًا لها.</p>
+
+            <h3>12.2 الاختصاص القضائي</h3>
+            <p>في حال نشوء أي نزاع عن هذه الاتفاقية، تختص بالفصل فيه محاكم ودوائر التنفيذ في إسطنبول.</p>
+
+            <h3>12.3 تسوية النزاعات</h3>
+            <p>نسعى أولًا إلى تسوية النزاعات وديًا. وإذا تعذّر ذلك، نلجأ إلى الوساطة ثم إلى القضاء.</p>
+
+            <h2>13. التعديلات والتحديثات</h2>
+            <h3>13.1 حق التحديث</h3>
+            <p>نحتفظ بحق تحديث شروط الاستخدام هذه عند الحاجة. وفيما يخص التغييرات الجوهرية:</p>
+            <ul>
+                <li>سيتم الإعلان قبل 30 يومًا</li>
+                <li>سيُرسل إشعار داخل التطبيق</li>
+                <li>ستتلقى إشعارًا عبر البريد الإلكتروني</li>
+                <li>سيُنشر إعلان على الموقع الإلكتروني</li>
+            </ul>
+
+            <h3>13.2 القبول والرفض</h3>
+            <p>إن لم تقبل الشروط المحدّثة، يمكنك إغلاق حسابك. استمرارك في استخدام التطبيق يعني قبولك للشروط الجديدة.</p>
+
+            <h2>14. أحكام متنوعة</h2>
+            <h3>14.1 قابلية الفصل</h3>
+            <p>إذا اعتُبر أي بند من هذه الاتفاقية غير صالح، فلا يؤثر ذلك على صلاحية البنود الأخرى.</p>
+
+            <h3>14.2 التنازل عن الحقوق</h3>
+            <p>عدم ممارسة أي حق لا يعني التنازل عنه.</p>
+
+            <h3>14.3 النقل</h3>
+            <p>لا يحق لك نقل الحقوق والالتزامات الناشئة عن هذه الاتفاقية إلى أطراف ثالثة. ونحن نحتفظ بحقنا في نقل حقوقنا.</p>
+
+            <h3>14.4 الاتفاقية الكاملة</h3>
+            <p>تشكّل شروط الاستخدام هذه وسياسة الخصوصية الاتفاقية الكاملة بيننا.</p>
+
+            <div class="contact-box">
+                <h3>15. معلومات التواصل</h3>
+                <p>لأي أسئلة أو اقتراحات بشأن شروط الاستخدام هذه، تواصل معنا عبر:</p>
+                <ul>
+                    <li><strong>البريد الإلكتروني:</strong> <a href="mailto:support@suuapp.com">support@suuapp.com</a></li>
+                    <li><strong>الشؤون القانونية:</strong> <a href="mailto:legal@suuapp.com">legal@suuapp.com</a></li>
+                    <li><strong>الموقع:</strong> <a href="https://suuapp.com">www.suuapp.com</a></li>
+                </ul>
+                <p style="margin-top: 15px;">
+                    <strong>وقت الرد:</strong> سيتم الرد على طلباتك خلال 7 أيام عمل على أبعد تقدير.
+                </p>
+            </div>
+        </div>
+
+        <div class="footer" id="termsFooter">
+            <p class="footer-text active" data-lang="tr">© 2025 Suu - Tüm hakları saklıdır.</p>
+            <p class="footer-text active" data-lang="tr">Bu kullanım şartları en son 16 Eylül 2025 tarihinde güncellenmiştir.</p>
+
+            <p class="footer-text" data-lang="ar" dir="rtl">© 2025 Suu - جميع الحقوق محفوظة.</p>
+            <p class="footer-text" data-lang="ar" dir="rtl">تم تحديث شروط الاستخدام هذه آخر مرة في 16 سبتمبر 2025.</p>
         </div>
     </div>
+
+    <script>
+        const languageButtons = document.querySelectorAll('.language-btn');
+        const sections = document.querySelectorAll('.terms-section');
+        const footerTexts = document.querySelectorAll('.footer-text');
+
+        function setLanguage(lang) {
+            document.documentElement.lang = lang;
+            document.body.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+            sections.forEach(section => {
+                section.classList.toggle('active', section.dataset.lang === lang);
+            });
+
+            footerTexts.forEach(text => {
+                text.classList.toggle('active', text.dataset.lang === lang);
+            });
+
+            languageButtons.forEach(button => {
+                const isActive = button.dataset.lang === lang;
+                button.classList.toggle('active', isActive);
+                button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+            });
+        }
+
+        languageButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                if (!button.classList.contains('active')) {
+                    setLanguage(button.dataset.lang);
+                }
+            });
+        });
+    </script>
 </body>
 </html>
