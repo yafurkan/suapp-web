@@ -2030,9 +2030,26 @@ document.addEventListener('DOMContentLoaded', function() {
         navLogo.style.cursor = 'pointer';
         navLogo.title = 'Admin erişimi için 10 kere tıklayın';
     }
-    
+
     // Load news from localStorage on page load
     setTimeout(() => {
         loadNewsFromStorage();
     }, 1000);
+
+    // Announcement Ticker
+    const ticker = document.getElementById('announcementTicker');
+    const tickerClose = document.getElementById('tickerClose');
+    if (ticker && tickerClose) {
+        const closed = sessionStorage.getItem('ticker_closed');
+        if (closed) {
+            ticker.classList.add('hidden');
+        } else {
+            document.body.classList.add('ticker-active');
+        }
+        tickerClose.addEventListener('click', function() {
+            ticker.classList.add('hidden');
+            document.body.classList.remove('ticker-active');
+            sessionStorage.setItem('ticker_closed', '1');
+        });
+    }
 });

@@ -592,6 +592,130 @@ body {
     box-shadow: var(--shadow);
 }
 
+/* Announcement Ticker */
+.announcement-ticker {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    color: white;
+    height: 38px;
+    overflow: hidden;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.announcement-ticker.hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.ticker-inner {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+.ticker-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(0,0,0,0.2);
+    padding: 0 14px;
+    height: 100%;
+    white-space: nowrap;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    flex-shrink: 0;
+}
+
+.ticker-label i {
+    font-size: 0.8rem;
+}
+
+.ticker-track-wrapper {
+    flex: 1;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.ticker-track {
+    display: flex;
+    white-space: nowrap;
+    animation: tickerScroll 28s linear infinite;
+}
+
+.ticker-item {
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding-right: 0;
+}
+
+@keyframes tickerScroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.ticker-track:hover {
+    animation-play-state: paused;
+}
+
+.ticker-close {
+    background: rgba(0,0,0,0.15);
+    border: none;
+    color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    flex-shrink: 0;
+    font-size: 0.75rem;
+    transition: background 0.2s ease;
+}
+
+.ticker-close:hover {
+    background: rgba(0,0,0,0.3);
+}
+
+/* Hero padding - ticker açıkken */
+body.ticker-active .hero {
+    padding-top: 38px;
+}
+
+@media (max-width: 768px) {
+    .announcement-ticker {
+        top: 70px;
+        height: 34px;
+    }
+
+    .ticker-label span {
+        display: none;
+    }
+
+    .ticker-label {
+        padding: 0 10px;
+    }
+
+    .ticker-item {
+        font-size: 0.78rem;
+    }
+
+    body.ticker-active .hero {
+        padding-top: 34px;
+    }
+}
+
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
