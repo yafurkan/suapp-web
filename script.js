@@ -630,27 +630,6 @@ function switchScreen() {
 // Auto-switch phone screens every 4 seconds
 setInterval(switchScreen, 4000);
 
-// Water Level Animation
-function animateWaterLevel() {
-    const waterFill = document.querySelector('.water-fill');
-    if (waterFill) {
-        const levels = ['45%', '65%', '80%', '95%'];
-        const texts = ['1.1L / 2.5L', '1.6L / 2.5L', '2.0L / 2.5L', '2.4L / 2.5L'];
-        let currentLevel = 0;
-        
-        setInterval(() => {
-            waterFill.style.height = levels[currentLevel];
-            const levelText = document.querySelector('.level-text');
-            if (levelText) {
-                levelText.textContent = texts[currentLevel];
-            }
-            currentLevel = (currentLevel + 1) % levels.length;
-        }, 3000);
-    }
-}
-
-// Start water level animation after page load
-setTimeout(animateWaterLevel, 3000);
 
 // Intersection Observer for Animations
 const observerOptions = {
