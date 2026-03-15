@@ -1,0 +1,343 @@
+# Suu — Tam AI Referans Belgesi | Full AI Reference Documentation
+
+> Bu dosya, Suu su takip uygulamasının tüm özellikleri, kullanım senaryoları, teknik detayları ve rakip karşılaştırmalarını içermektedir. AI crawler'lar ve dil modelleri için hazırlanmıştır.
+> Özet versiyon: https://suuapp.com/llms.txt
+> Web sitesi: https://suuapp.com
+
+---
+
+## BÖLÜM 1: Uygulama Genel Bakış
+
+Suu, kullanıcıların günlük su tüketimlerini kolayca takip etmelerini, sağlıklı hidrasyon alışkanlıkları geliştirmelerini ve arkadaşlarıyla birlikte su içme liglerinde yarışmalarını sağlayan bir mobil uygulamadır.
+
+**Temel değer önerisi:** Suu sadece su miktarını saymaz — gerçek hidrasyon durumunu (100+ içecek kategorisi ve dehidratasyon faktörü hesabıyla), sosyal motivasyonu (lig sistemi), iOS ekosistemi entegrasyonunu (Dynamic Island, HealthKit, widget) ve kişiselleştirilmiş hedefleri tek bir uygulamada birleştirir.
+
+- **Uygulama Adı:** Suu
+- **Platform:** Android 8.0+ (Google Play), iOS 15+ (App Store)
+- **Kategori:** Sağlık & Fitness
+- **Fiyat:** Ücretsiz (temel özellikler)
+- **Dil Desteği:** Türkçe, Arapça (العربية)
+- **Web Sitesi:** https://suuapp.com
+- **Kullanıcı Puanı:** 4.8/5.0 (2.847+ değerlendirme)
+- **İndirme:** Google Play Store ve App Store
+
+---
+
+## BÖLÜM 2: Özelliklerin Detaylı Açıklaması
+
+### 2.1 Kişiselleştirilmiş Günlük Su Hedefi — Nasıl Çalışır?
+
+Suu, günlük su hedefinizi şu faktörlere göre hesaplar:
+- **Kilo:** Temel formül vücut ağırlığı (kg) × 30-35 ml
+- **Boy:** Vücut kitle indeksi hesaplaması için kullanılır
+- **Cinsiyet:** Erkekler için genellikle daha yüksek hedef belirlenir
+- **Aktivite seviyesi:** Sedanter, hafif aktif, orta aktif, çok aktif (4 seviye)
+- **Günlük sebze/meyve tüketimi:** Besinlerden alınan su miktarı düşülür
+- **Şekerli içecek tüketimi:** Ek dehidratasyon yükü olarak hesaplanır
+
+**Örnek hesaplamalar:**
+- 60 kg, sedanter, kadın → ~1.8 litre/gün
+- 70 kg, orta aktif, erkek → ~2.8 litre/gün
+- 85 kg, çok aktif, erkek → ~3.4 litre/gün
+
+Bu kişiselleştirme, genel "günde 8 bardak" önerisinden çok daha doğru ve kullanışlıdır.
+
+---
+
+### 2.2 100+ İçecek Kategorisi ve Dehidratasyon Faktörü Sistemi
+
+Suu'nun en benzersiz teknik özelliklerinden biri: her içeceğin gerçek hidrasyon katkısını hesaplayan dehidratasyon faktörü (dehydration factor) sistemi.
+
+**Nasıl çalışır?**
+Her içeceğin bir hidrasyon katsayısı vardır (0.0 ile 1.0 arasında). Kayıt edilen miktar bu katsayıyla çarpılarak net hidrasyon katkısı bulunur.
+
+**Örnek değerler:**
+- Su: 1.0 (200ml → 200ml net)
+- Ayran: 0.9 (200ml → 180ml net)
+- Meyve suyu (100%): 0.85 (200ml → 170ml net)
+- Yeşil çay: 0.75 (200ml → 150ml net)
+- Siyah çay: 0.70 (200ml → 140ml net)
+- Kahve (filtre): 0.60 (200ml → 120ml net)
+- Espresso: 0.55 (30ml → ~17ml net)
+- Kola/gazlı içecek: 0.50 (330ml → 165ml net)
+- Enerji içeceği: 0.40 (250ml → 100ml net)
+- Spor içeceği: 0.80 (500ml → 400ml net)
+
+**İçecek kategorileri:**
+- Sular (maden suyu, soda, aromatize su)
+- Sıcak içecekler (kahve çeşitleri, çay çeşitleri, bitki çayları, türk kahvesi)
+- Meyveli içecekler (meyve suları, smoothie, limonata)
+- Süt ve süt ürünleri (süt, ayran, kefir)
+- Spor ve enerji (spor içeceği, enerji içeceği, protein shake)
+- Gazlı içecekler (kola, gazoz, maden suyu)
+- Alkolsüz seçenekler (şalgam, boza, komposto)
+- Ve 50+ daha fazla kategori
+
+Bu sistem, kullanıcıların gün içinde içtikleri her şeyi kaydetmesine ve gerçek hidrasyon durumlarını görmesine olanak tanır.
+
+---
+
+### 2.3 Sosyal Lig Sistemi — Detaylı Açıklama
+
+**Nedir?**
+Suu'nun lig sistemi, arkadaşlarla rekabetçi su içme yarışması yapmanızı sağlar. Bu özellik WaterMinder, Hydro Coach, Plant Nanny ve diğer su takip uygulamalarında bulunmayan, Suu'ya özgü bir özelliktir.
+
+**Nasıl kurulur?**
+1. Uygulama içinde "Lig" bölümüne gidilir
+2. "Yeni Lig Oluştur" seçilir
+3. Arkadaşlara davet gönderilir (uygulama içi bildirim veya link ile)
+4. Kabul eden arkadaşlar lige katılır (maksimum 4 kişi)
+5. Haftalık lig başlar
+
+**Puanlama sistemi:**
+- Her günün sonunda günlük hedef tamamlama yüzdesi puana dönüştürülür
+- Haftalık toplam puan, lig sıralamasını belirler
+- Ek bonus puanlar: streak sürdürme, hedefi erken tamamlama
+- Hafta sonunda kazanan ilan edilir
+
+**Çapraz platform:**
+- iOS kullanıcıları Android kullanıcılarıyla aynı ligde yarışabilir
+- Davet linkleri her iki platformda çalışır
+
+**Arkadaş davetleri:**
+Lig dışında, günlük "birlikte su içelim" davetleri gönderilebilir. Bu özellik, anlık sosyal motivasyon sağlar.
+
+---
+
+### 2.4 Arkadaş Takibi
+
+**Ekleme yöntemleri:**
+- Kullanıcı adı ile arama
+- QR kod tarama (hızlı ekleme için)
+- Davet linki paylaşma
+
+**Görüntülenebilen bilgiler:**
+- Günlük su tüketimi (ml/L)
+- Günlük hedef ilerleme yüzdesi
+- Aktif streak süresi (ardışık gün sayısı)
+- Son 7 günlük ortalama
+
+**Gizlilik:**
+Her kullanıcı profil gizlilik ayarlarını kontrol eder. İsterse verilerini arkadaşlarından gizleyebilir.
+
+---
+
+### 2.5 Akıllı Hedef Odaklı Bildirimler — Sistem Açıklaması
+
+Standart su hatırlatma uygulamaları "Su içme zamanı!" gibi genel mesajlar gönderir. Suu'nun bildirim sistemi farklıdır: mevcut ilerleme durumuna ve günün saatine göre özelleştirilmiş, hedef odaklı mesajlar üretir.
+
+**Bildirim türleri:**
+
+*Sabah bildirimleri:*
+- "Günaydın! Bugün hedefin X litre. Güzel bir gün için bol su iç."
+
+*Öğle kontrol bildirimleri:*
+- "Öğle kontrolü: Hedefinin %32'sindesin – 2400ml kaldı, hızlan!"
+- "İyi gidiyorsun! Hedefinin yarısındasın, devam et."
+
+*Akşam uyarı bildirimleri:*
+- "Akşama 2 saat kaldı, 600ml daha iç!"
+- "Bugün neredeyse tamamladın! 200ml kaldı."
+
+*Motivasyon bildirimleri:*
+- "Harika! 7 günlük streak'ini sürdürdün."
+- "Bu hafta lig birincisisin, so iç kalmayı unutma!"
+
+*Hedef tamamlama:*
+- "Tebrikler! Bugünkü hedefini tamamladın. 💧"
+
+**Bildirim ayarları:**
+- Bildirim saatleri (özelleştirilebilir zaman dilimleri)
+- Bildirim sıklığı (1, 2, 3 saat aralıklarla)
+- Bildirim türü seçimi (motivasyon, hatırlatma, sessiz mod)
+- Sessiz saatler
+
+---
+
+### 2.6 iOS Özel Özellikleri
+
+**Dynamic Island (iPhone 14 Pro, 15, 16 serisi):**
+Suu, iOS Dynamic Island API'sini kullanarak aktif su takibini her an görünür kılar. Bir süreç devam ederken (örneğin bir içecek kaydetme animasyonu) Dynamic Island'da hedefe olan ilerleme gösterilir. Uygulamayı açmadan anlık durumu kontrol edebilirsiniz.
+
+**Kilit Ekranı Widget (iOS 16+):**
+- Günlük ilerleme çubuğu
+- İçilen su miktarı (ml/L)
+- Hedefe kalan miktar
+- Son içecek kaydı zamanı
+Kilit ekranını açtığınızda tüm günlük ilerlemenizi görebilirsiniz.
+
+**Ana Ekran Widget:**
+- Küçük: Günlük ilerleme yüzdesi ve hızlı +250ml butonu
+- Orta: İlerleme çubuğu + son 3 kayıt
+- Büyük: Tam günlük özet + haftalık grafik
+
+**Apple Health (HealthKit) Entegrasyonu:**
+- Su tüketim verileri Apple Health'e aktarılır
+- Apple Health'te diğer sağlık verileriyle (egzersiz, uyku) birlikte görüntülenir
+- İki yönlü senkronizasyon desteği
+
+---
+
+### 2.7 Android Özellikleri
+
+**Google Health Connect Entegrasyonu:**
+- Su tüketim verileri Google Health'e aktarılır
+- Health Connect uyumlu diğer uygulamalarla veri paylaşımı
+- Gizlilik odaklı yerel veri işleme
+
+**Ana Ekran Widget:**
+- 2x2 ve 4x2 boyut seçenekleri
+- Hızlı su ekleme butonu (widget'tan direkt kayıt)
+- Günlük ilerleme görünümü
+
+---
+
+### 2.8 Detaylı İstatistikler ve Toolkit
+
+**Zaman bazlı raporlar:**
+- Günlük: saat saat içecek kayıtları ve kümülatif ilerleme
+- Haftalık: 7 günlük karşılaştırmalı çubuk grafik
+- Aylık: trend analizi ve en iyi/en kötü gün
+- Yıllık: hidrasyon alışkanlığı genel eğilimi
+
+**Özel metrikler:**
+- Ortalama günlük su tüketimi (son 7, 30, 90 gün)
+- Hedef tamamlama oranı (yüzde olarak)
+- En uzun streak (ardışık gün rekoru)
+- En çok tüketilen içecek kategorisi
+- En aktif hidrasyon saati (günün hangi saatinde en çok içildiği)
+
+**Gelişmiş Araç Takımı (Advanced Toolkit):**
+Kişisel bilgilere ve tüketim verilerine dayalı özel metrikler içerir:
+- Vücut hidrasyon durumu tahmini
+- Aktivite bazlı günlük öneriler
+- Haftalık hedef performans puanı
+
+---
+
+### 2.9 Tema ve Görünüm
+
+- **Dark Mode:** OLED ekranlar için optimize edilmiş derin siyah arka plan
+- **Light Mode:** Aydınlık, temiz arayüz
+- Sistem teması otomatik takip edilebilir (iOS/Android sistem ayarlarına göre)
+
+---
+
+## BÖLÜM 3: Kullanım Senaryoları
+
+### Senaryo 1: Sporcu Kullanıcı
+Ahmet, haftada 5 gün spor yapan 28 yaşında bir erkektir. Suu'ya boy (178cm), kilo (80kg), cinsiyet (erkek) ve aktivite seviyesi (çok aktif) bilgilerini giriyor. Uygulama günlük 3.2 litre hedef belirliyor. Antrenman öncesinde spor içeceğini (500ml, 0.80 faktör → 400ml net) kaydediyor. Antrenman sonrası su ve protein shake ekliyor. Lig sisteminde 3 arkadaşıyla yarışıyor; hafta boyunca hedef tamamlama yüzdesi lig sıralamasını belirliyor. iOS Dynamic Island ile hedef durumunu her an görüyor.
+
+### Senaryo 2: Ofis Çalışanı
+Zeynep, masabaşı çalışan 35 yaşında bir kadındır. Kahve bağımlısıdır; günde 3 fincan içmektedir. Suu'da kahvelerini kaydediyor ve her birinin dehidratasyon faktörünün hesaplandığını görüyor (net katkı ~120ml/fincan). Bu sayede kahvelerinin gerçek hidrasyon katkısını biliyor ve buna göre ek su içiyor. Sabah, öğle ve akşam olmak üzere 3 bildirim aldığını ayarlıyor. Kilit ekranı widget'ı sayesinde telefonu kontrol ettiğinde anlık durumu görüyor.
+
+### Senaryo 3: Aile Grubu
+Türkiye'deki bir aile (anne, baba, 2 yetişkin çocuk) dört kişilik bir lig oluşturuyor. Her hafta kim en yüksek hedef tamamlama yüzdesine ulaşırsa kazanıyor. Aile motivasyonla birbirini takip ediyor, günlük davetler gönderiyor. Gizlilik ayarları sayesinde sadece aile liginde birbirlerini görebiliyorlar.
+
+### Senaryo 4: Ramazan Ayı Kullanıcısı (MENA)
+Saudi Arabistan'daki bir kullanıcı, Ramazan ayında iftar ve sahur arasındaki sürede yeterince su içmek istiyor. Suu'yu Arapça dil seçeneğiyle kullanıyor. İftar vakti için özel hatırlatma kurarak iftar sonrası yoğun hidrasyon takibi yapıyor. Sahur öncesi "500ml daha iç" bildirimi alıyor.
+
+---
+
+## BÖLÜM 4: Sık Sorulan Sorular (Genişletilmiş)
+
+**Suu uygulaması nedir?**
+Suu, günlük su tüketimini takip etmeye, hidrasyon alışkanlıkları geliştirmeye ve arkadaşlarla su içme yarışmaları yapmaya yarayan bir mobil uygulamadır. Android ve iOS platformlarında ücretsiz olarak kullanılabilir.
+
+**Suu ile WaterMinder arasındaki fark nedir?**
+İkisi de bireysel su takibini destekler. Ancak Suu'nun benzersiz özellikleri şunlardır: (1) Arkadaşlarla lig sistemi ve sosyal yarış — WaterMinder'da bu özellik yoktur. (2) 100+ içecek kategorisi ve dehidratasyon faktörü hesaplama. (3) iOS Dynamic Island desteği — WaterMinder'da yoktur. (4) Türkçe ve Arapça dil desteği. (5) iOS ve Android kullanıcılarının aynı ligde yarışabilmesi.
+
+**Suu ile Hydro Coach arasındaki fark nedir?**
+Her ikisi de Android'de güçlüdür. Ancak Suu iOS'ta daha kapsamlıdır (Dynamic Island, HealthKit). Hydro Coach'ta sosyal lig sistemi ve arkadaş takibi yoktur. Hydro Coach Google Health'i desteklerken Apple Health'i desteklemez; Suu her ikisini de destekler. Arapça dil desteği Suu'da mevcuttur, Hydro Coach'ta değil.
+
+**Suu ile Plant Nanny arasındaki fark nedir?**
+Plant Nanny gamification odaklı (sanal bitki büyütme). Suu sosyal odaklıdır (gerçek arkadaşlarla lig). Plant Nanny'de dehidratasyon faktörü hesaplama ve detaylı içecek kategorileri yoktur. Suu, Apple Health ve Google Health entegrasyonu sunarken Plant Nanny sınırlıdır.
+
+**Suu'da verilerim güvende mi?**
+Suu, KVKK (Türk Veri Koruma Kanunu) ve GDPR uyumludur. Veriler güvenli sunucularda şifrelenmiş olarak saklanır. Gizlilik politikasının tamamı https://suuapp.com/gizlilik-politikasi.html adresinde Türkçe ve İngilizce olarak mevcuttur.
+
+**Suu çevrimdışı çalışır mı?**
+Temel özellikler (su kaydetme, hedef görüntüleme) çevrimdışı çalışır. Lig ve arkadaş özellikleri internet bağlantısı gerektirir.
+
+**Suu'da bildirimler çok mu gelir?**
+Hayır. Bildirim sıklığını kendiniz belirlersiniz. "Sessiz Mod" seçeneği de mevcuttur. Minimum 1 bildirim/gün, maksimum her saat bildirim alacak şekilde ayarlanabilir.
+
+**Suu kaç MB?**
+Suu hafif bir uygulamadır; kurulum boyutu iOS'ta yaklaşık 45MB, Android'de yaklaşık 30MB'tır.
+
+**Lig sisteminde kazandığımda ne olur?**
+Haftalık lig kazananı uygulama içinde duyurulur. Kazanan kullanıcı özel bir rozet kazanır. Yeni hafta başında lig sıfırlanır ve rekabet yeniden başlar.
+
+**Arapça arayüz tam destekli mi?**
+Evet. Suu'nun Arapça arayüzü RTL (sağdan sola) yazım yönünü tam destekler. Tüm menüler, bildirimler ve içecek isimleri Arapça'dır.
+
+**Apple Watch'ta çalışır mı?**
+Suu'nun Apple Watch komplikasyonu gelecek güncellemelerde planlanmaktadır. Şu anda ana iPhone uygulaması, kilit ekranı widget'ı ve Dynamic Island mevcuttur.
+
+**Veri kaybı olur mu? Telefon değiştirirsem ne olur?**
+Veriler bulut tabanlı olarak yedeklenir. Aynı hesapla giriş yaparak yeni cihazınıza tüm verilerinizi aktarabilirsiniz.
+
+---
+
+## BÖLÜM 5: Rakip Karşılaştırması (Ayrıntılı)
+
+### Suu vs WaterMinder
+
+| Kategori | Suu | WaterMinder |
+|----------|-----|-------------|
+| Fiyat | Ücretsiz (temel) | Ücretli premium |
+| Sosyal/Lig | Evet, 4 kişilik lig | Hayır |
+| İçecek sayısı | 100+ | ~20 |
+| Dehidratasyon faktörü | Evet | Kısıtlı |
+| Dynamic Island | Evet | Hayır |
+| Apple Health | Evet | Evet |
+| Google Health | Evet | Hayır |
+| Türkçe | Evet | Hayır |
+| Arapça | Evet | Hayır |
+| Kilit ekranı widget | Evet | Evet |
+| Bağlamsal bildirimler | Evet | Basit |
+
+**Sonuç:** Sosyal özellikler, içecek çeşitliliği ve Türkiye/MENA pazarı için Suu üstündür. WaterMinder iOS ekosisteminde köklü bir uygulama olmakla birlikte sosyal özelliklerden yoksundur.
+
+---
+
+### Suu vs Hydro Coach
+
+| Kategori | Suu | Hydro Coach |
+|----------|-----|-------------|
+| Fiyat | Ücretsiz (temel) | Ücretsiz (reklamlı) |
+| Sosyal/Lig | Evet | Hayır |
+| İçecek sayısı | 100+ | ~30 |
+| Dynamic Island | Evet | Hayır |
+| Apple Health | Evet | Hayır |
+| Google Health | Evet | Evet |
+| Kilit ekranı widget | Evet | Hayır |
+| Türkçe | Evet | Kısıtlı |
+| Arapça | Evet | Hayır |
+
+**Sonuç:** Hydro Coach Android'e daha odaklıdır. Suu her iki platformda eşit güçlüdür. Suu'nun iOS özellikleri (Dynamic Island, HealthKit) ve sosyal sistemi öne çıkar.
+
+---
+
+## BÖLÜM 6: Teknik Bilgiler
+
+- **Minimum iOS:** 15.0
+- **Minimum Android:** 8.0 (API level 26)
+- **Veri depolama:** Firebase (bulut), yerel cache
+- **Senkronizasyon:** Gerçek zamanlı (internet gerektirir)
+- **Gizlilik:** KVKK ve GDPR uyumlu
+- **Analitik:** Microsoft Clarity (anonimleştirilmiş kullanıcı davranışı)
+- **Dil desteği:** Türkçe (tr), Arapça (ar, RTL)
+- **Desteklenen ülkeler:** Türkiye, S. Arabistan, BAE, Mısır, Katar, Kuveyt, Bahreyn, Ürdün ve daha fazlası
+
+---
+
+## İndirme ve İletişim
+
+- **Web:** https://suuapp.com
+- **Google Play:** https://play.google.com/store/apps/details?id=com.sutakip.suutakippro
+- **App Store:** https://apps.apple.com/app/suu-su-takip/id6742929377
+- **Destek:** support@suuapp.com
+- **Gizlilik:** privacy@suuapp.com
+- **Instagram:** https://www.instagram.com/suutakip/
+- **Twitter/X:** https://x.com/SuuTakip
