@@ -1,0 +1,42 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90D9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#29B6F6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="wave" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.03" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)" />
+
+  <!-- Decorative wave circles -->
+  <ellipse cx="1050" cy="150" rx="280" ry="280" fill="white" opacity="0.06"/>
+  <ellipse cx="1100" cy="200" rx="180" ry="180" fill="white" opacity="0.06"/>
+  <ellipse cx="150" cy="500" rx="220" ry="220" fill="white" opacity="0.06"/>
+
+  <!-- Water drop icon -->
+  <g transform="translate(430, 130)">
+    <path d="M170 0 C170 0 310 160 310 240 C310 323 246 390 163 390 C80 390 16 323 16 240 C16 160 170 0 170 0Z" fill="white" opacity="0.95"/>
+    <path d="M170 60 C170 60 270 185 270 245 C270 307 220 355 165 355 C110 355 70 307 70 245 C70 185 170 60 170 60Z" fill="#4A90D9" opacity="0.3"/>
+  </g>
+
+  <!-- App name -->
+  <text x="600" y="310" font-family="Arial, Helvetica, sans-serif" font-size="120" font-weight="700" fill="white" text-anchor="middle" letter-spacing="-2">Suu</text>
+
+  <!-- Tagline -->
+  <text x="600" y="390" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="400" fill="white" text-anchor="middle" opacity="0.92">Sağlıklı Yaşamın Anahtarı</text>
+
+  <!-- Description -->
+  <text x="600" y="450" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="300" fill="white" text-anchor="middle" opacity="0.80">Günlük su ihtiyacınızı takip edin, sağlıklı kalın</text>
+
+  <!-- URL badge -->
+  <rect x="470" y="495" width="260" height="50" rx="25" fill="white" opacity="0.2"/>
+  <text x="600" y="527" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="500" fill="white" text-anchor="middle">suuapp.com</text>
+
+  <!-- App Store badges text -->
+  <text x="600" y="595" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="white" text-anchor="middle" opacity="0.75">App Store  •  Google Play</text>
+</svg>
