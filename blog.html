@@ -350,10 +350,60 @@
     <div class="container">
         <div class="blog-content">
             <div class="articles-section">
-                <h2>Son Haberler & Yazılar</h2>
+                <h2>Blog Yazıları</h2>
                 <div class="articles-grid" id="articlesGrid">
-                    <!-- Articles will be loaded here -->
+                    <!-- Static blog posts -->
+                    <article class="article-card">
+                        <div class="article-image">
+                            <div class="article-placeholder" style="font-size:2.5rem;">💧</div>
+                            <div class="article-date">15 Mart 2026</div>
+                        </div>
+                        <div class="article-content">
+                            <h3 class="article-title">Su İçmenin 10 Faydası</h3>
+                            <p class="article-excerpt">Su içmenin metabolizma, cilt sağlığı, konsantrasyon ve bağışıklık sistemi üzerindeki 10 kritik faydası. Yeterli su içmek neden bu kadar önemli?</p>
+                            <a href="blog/su-icmenin-faydalari.html" class="read-more">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-image">
+                            <div class="article-placeholder" style="font-size:2.5rem;">🧮</div>
+                            <div class="article-date">15 Mart 2026</div>
+                        </div>
+                        <div class="article-content">
+                            <h3 class="article-title">Günde Kaç Litre Su İçmeliyim?</h3>
+                            <p class="article-excerpt">Kilo, aktivite seviyesi ve iklime göre günlük su ihtiyacınızı hesaplayın. "8 bardak su" efsanesi ve bilimsel gerçekler.</p>
+                            <a href="blog/gunluk-ne-kadar-su-icmeli.html" class="read-more">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-image">
+                            <div class="article-placeholder" style="font-size:2.5rem;">📱</div>
+                            <div class="article-date">15 Mart 2026</div>
+                        </div>
+                        <div class="article-content">
+                            <h3 class="article-title">Su Takip Uygulaması Neden Kullanmalısın?</h3>
+                            <p class="article-excerpt">Su takip uygulamalarının sağlıklı yaşama katkısı ve Suu'nun fark yaratan özellikleri: lig sistemi, 100+ içecek, Dynamic Island.</p>
+                            <a href="blog/su-takip-uygulamasi-neden-kullanmaliyim.html" class="read-more">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-image">
+                            <div class="article-placeholder" style="font-size:2.5rem;">✅</div>
+                            <div class="article-date">15 Mart 2026</div>
+                        </div>
+                        <div class="article-content">
+                            <h3 class="article-title">Su İçmeyi Alışkanlık Haline Getirmenin 7 Yolu</h3>
+                            <p class="article-excerpt">Su içmeyi günlük rutinine katmanın en etkili 7 yöntemi. Bildirimler, streak takibi ve sosyal motivasyon ile hidrasyon alışkanlığı.</p>
+                            <a href="blog/su-icme-aliskanlik.html" class="read-more">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
                 </div>
+
+                <!-- Admin'den eklenen haberler -->
+                <div id="adminArticlesGrid"></div>
             </div>
             
             <div class="sidebar">
@@ -397,51 +447,43 @@
     </div>
     
     <script>
-        // Load articles from localStorage
+        const STATIC_POSTS = 4; // sabit blog yazısı sayısı
+
+        // Load admin articles from localStorage
         function loadArticles() {
             const newsList = JSON.parse(localStorage.getItem('suu_news') || '[]');
-            const articlesGrid = document.getElementById('articlesGrid');
-            
-            if (newsList.length === 0) {
-                articlesGrid.innerHTML = `
-                    <div class="empty-state">
-                        <i class="fas fa-newspaper"></i>
-                        <h3>Henüz Haber Yok</h3>
-                        <p>İlk haberlerin yayınlanması için admin panelinden haber ekleyebilirsiniz.</p>
-                        <a href="admin.html" class="admin-link">Admin Paneli</a>
-                    </div>
-                `;
-                updateSidebarStats(0, 0, null);
-                return;
+            const adminGrid = document.getElementById('adminArticlesGrid');
+
+            if (newsList.length > 0) {
+                adminGrid.innerHTML = '<h2 style="margin:32px 0 16px;">Son Haberler</h2>' + newsList.map(article => `
+                    <article class="article-card" onclick="openFullArticle('${article.id}')" style="cursor:pointer;">
+                        <div class="article-image">
+                            ${article.image ?
+                                `<img src="${article.image}" alt="${article.title}">` :
+                                '<div class="article-placeholder">📰</div>'
+                            }
+                            <div class="article-date">${formatDate(article.date)}</div>
+                        </div>
+                        <div class="article-content">
+                            <h3 class="article-title">${article.title}</h3>
+                            <p class="article-excerpt">${article.description.substring(0, 150)}${article.description.length > 150 ? '...' : ''}</p>
+                            <a href="#" class="read-more" onclick="event.stopPropagation(); openFullArticle('${article.id}')">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                `).join('');
             }
-            
-            articlesGrid.innerHTML = newsList.map(article => `
-                <article class="article-card" onclick="openFullArticle('${article.id}')">
-                    <div class="article-image">
-                        ${article.image ? 
-                            `<img src="${article.image}" alt="${article.title}">` :
-                            '<div class="article-placeholder">📰</div>'
-                        }
-                        <div class="article-date">${formatDate(article.date)}</div>
-                    </div>
-                    <div class="article-content">
-                        <h3 class="article-title">${article.title}</h3>
-                        <p class="article-excerpt">${article.description.substring(0, 150)}${article.description.length > 150 ? '...' : ''}</p>
-                        <a href="#" class="read-more" onclick="event.stopPropagation(); openFullArticle('${article.id}')">Devamını Oku <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-            `).join('');
-            
+
             // Update sidebar stats
+            const total = STATIC_POSTS + newsList.length;
             const thisMonth = newsList.filter(article => {
                 const articleDate = new Date(article.date);
                 const now = new Date();
-                return articleDate.getMonth() === now.getMonth() && 
+                return articleDate.getMonth() === now.getMonth() &&
                        articleDate.getFullYear() === now.getFullYear();
-            }).length;
-            
-            const lastArticle = newsList[0];
-            updateSidebarStats(newsList.length, thisMonth, lastArticle.date);
+            }).length + STATIC_POSTS;
+
+            const lastDate = newsList.length > 0 ? newsList[0].date : '2026-03-15';
+            updateSidebarStats(total, thisMonth, lastDate);
         }
         
         function updateSidebarStats(total, thisMonth, lastUpdate) {
