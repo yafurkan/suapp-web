@@ -595,17 +595,16 @@ navLinks.forEach(link => {
     });
 });
 
-// Smooth Scrolling for Navigation Links
+// Smooth Scrolling for Navigation Links (sadece # ile başlayanlar)
 navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
+        const href = link.getAttribute('href');
+        if (!href || !href.startsWith('#')) return;
         e.preventDefault();
-        const targetId = link.getAttribute('href');
-        const targetSection = document.querySelector(targetId);
-        
+        const targetSection = document.querySelector(href);
         if (targetSection) {
-            const offsetTop = targetSection.offsetTop - 70;
             window.scrollTo({
-                top: offsetTop,
+                top: targetSection.offsetTop - 70,
                 behavior: 'smooth'
             });
         }
