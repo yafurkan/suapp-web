@@ -1539,7 +1539,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
+                <div class="footer-logo" id="footerLogo" style="cursor:default; user-select:none;">
                     <i class="fas fa-tint"></i>
                     <span>Suu</span>
                 </div>
@@ -1572,5 +1572,19 @@
     <!-- Scripts -->
     <script src="script.js"></script>
     <script src="announcements.js"></script>
+    <script>
+        (function() {
+            var clicks = 0, timer = null;
+            document.getElementById('footerLogo').addEventListener('click', function() {
+                clicks++;
+                clearTimeout(timer);
+                timer = setTimeout(function() { clicks = 0; }, 1500);
+                if (clicks >= 5) {
+                    clicks = 0;
+                    window.location.href = 'admin.html';
+                }
+            });
+        })();
+    </script>
 </body>
 </html>
