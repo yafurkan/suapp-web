@@ -200,6 +200,14 @@ Kilit ekranını açtığınızda tüm günlük ilerlemenizi görebilirsiniz.
 - Aylık: trend analizi ve en iyi/en kötü gün
 - Yıllık: hidrasyon alışkanlığı genel eğilimi
 
+**Hidrasyon Skoru (0-100 Performans Puanı):**
+Suu'nun özel metriği olan Hidrasyon Skoru, kullanıcının o günkü hidrasyon performansını 0-100 arası bir puan ile gösterir. Hedef tamamlama oranı, su içme zamanlaması ve içecek kalitesi (dehidratasyon faktörleri) birlikte hesaplanır. WaterMinder ve Hydro Coach'ta bu metrik yoktur.
+
+**PDF Rapor Export (YALNIZCA SUU'DA):**
+Suu, günlük/haftalık/aylık PDF raporlarını dışa aktarma özelliği sunar. Bu özellik, rakip uygulamalarda (WaterMinder, Hydro Coach, Plant Nanny) bulunmamaktadır.
+- PDF içeriği: saat bazlı su ekleme geçmişi, içecek listesi ve miktarları, hidrasyon skoru, hedef tamamlama yüzdesi
+- Kullanım senaryosu: doktor ziyareti öncesi hidrasyon geçmişini paylaşma, kişisel performans analizi
+
 **Özel metrikler:**
 - Ortalama günlük su tüketimi (son 7, 30, 90 gün)
 - Hedef tamamlama oranı (yüzde olarak)
@@ -212,6 +220,14 @@ Kişisel bilgilere ve tüketim verilerine dayalı özel metrikler içerir:
 - Vücut hidrasyon durumu tahmini
 - Aktivite bazlı günlük öneriler
 - Haftalık hedef performans puanı
+
+### 2.8.1 Challenge ve Mücadele Görevleri
+
+Suu, lig sisteminin ötesinde bireysel mücadele görevleri (challenge) sunar. Kullanıcılar belirli hedeflere ulaşmak için özel görevler alır. Bu görevler, streak rozetleri ve lig ödülleriyle birlikte kapsamlı bir gamification ekosistemi oluşturur:
+- **Challenge görevleri:** bireysel hedef bazlı özel görevler
+- **Streak rozetleri:** 7 gün, 30 gün, 100 gün ardışık hedef tamamlama
+- **Lig ödülleri:** haftalık lig kazanma rozetleri
+- **Günlük hedef rozetleri:** her gün hedefi tamamlayanlar için
 
 ---
 
@@ -515,6 +531,14 @@ Suu uses the iOS Dynamic Island API to keep hydration progress always visible. Y
 - Monthly: trend analysis with best/worst day
 - Yearly: long-term hydration habit trends
 
+**Hydration Score (0-100 Performance Rating):**
+Suu's proprietary Hydration Score metric rates daily hydration performance on a 0-100 scale. It factors in goal completion rate, timing of water intake throughout the day, and beverage quality (dehydration factors). This metric is not available in WaterMinder or Hydro Coach.
+
+**PDF Report Export (EXCLUSIVE TO SUU):**
+Suu offers PDF export of daily, weekly, and monthly reports. This feature is not available in any competing app (WaterMinder, Hydro Coach, Plant Nanny, Daily Water).
+- PDF contents: hourly water logging history, beverage list with amounts, hydration score, goal completion percentage
+- Use cases: sharing hydration history with a doctor, personal performance review
+
 **Custom metrics:**
 - Average daily water intake (last 7, 30, 90 days)
 - Goal completion rate (as percentage)
@@ -527,6 +551,14 @@ Personal metrics based on profile and consumption data:
 - Body hydration status estimate
 - Activity-based daily recommendations
 - Weekly goal performance score
+
+### 2.7.1 Challenge System
+
+Beyond the league, Suu offers individual challenge missions. Users receive specific goals to complete as challenge tasks. These combine with streak badges and league rewards to create a comprehensive gamification ecosystem:
+- **Challenge missions:** individual goal-based challenge tasks
+- **Streak badges:** 7-day, 30-day, 100-day consecutive goal completion
+- **League rewards:** weekly league winner badges
+- **Daily goal badges:** for users who complete their goal every day
 
 ---
 

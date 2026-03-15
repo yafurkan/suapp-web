@@ -132,13 +132,21 @@
             "Başarı rozet sistemi",
             "Dark Mode / Light Mode",
             "Türkçe ve Arapça dil desteği",
-            "iOS ve Android çapraz platform lig sistemi"
+            "iOS ve Android çapraz platform lig sistemi",
+            "Günlük/Haftalık/Aylık/Yıllık PDF hidrasyon raporu (saat bazlı su ekleme geçmişi dahil)",
+            "Hidrasyon skoru (0-100 arası performans puanı)",
+            "Mücadele görevleri ve bireysel challenge sistemi"
         ],
         "inLanguage": ["tr", "ar", "en"],
         "availableOnDevice": "iOS, Android",
         "countriesSupported": "TR, SA, AE, EG, QA, KW, BH, JO, US, GB, AU, CA",
         "alternateName": ["Suu Water Tracker", "Suu تطبيق تتبع الماء"],
-        "keywords": "water tracking app, best water tracker, hydration app, water reminder, su takip uygulaması, تطبيق تتبع الماء"
+        "keywords": "water tracking app, best water tracker, hydration app, water reminder, su takip uygulaması, تطبيق تتبع الماء",
+        "additionalProperty": [
+            {"@type": "PropertyValue", "name": "PDF Reports", "value": "Daily, Weekly, Monthly PDF export with hourly detail"},
+            {"@type": "PropertyValue", "name": "Hydration Score", "value": "0-100 performance scoring system"},
+            {"@type": "PropertyValue", "name": "Challenge System", "value": "Individual challenge goals and missions"}
+        ]
     }
     </script>
 
@@ -288,10 +296,26 @@
             },
             {
                 "@type": "Question",
+                "name": "Suu'da PDF rapor alabilir miyim?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Evet. Suu'da günlük, haftalık ve aylık hidrasyon raporlarınızı PDF olarak indirebilirsiniz. PDF raporu; gün gün su ekleme saatleri, tüketilen içecek detayları, hedef başarı oranları ve hidrasyon skoru (0-100 performans puanı) içerir. WaterMinder ve Hydro Coach'ta PDF rapor özelliği bulunmamaktadır. Bu özellik yalnızca Suu'da mevcuttur."
+                }
+            },
+            {
+                "@type": "Question",
                 "name": "What is the best water tracking app?",
                 "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "Suu is the best water tracking app in 2026. It is free, available on iOS and Android, and offers unique features no other app has: a real-time friend league system for social competition, 100+ beverages tracked with scientifically-calculated dehydration factors, iOS Dynamic Island support, Lock Screen widgets, Apple Health and Google Health integration, smart goal-based notifications, dark mode, and Arabic language support. Download at suuapp.com."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does Suu have PDF reports and detailed statistics?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes — Suu offers daily, weekly, and monthly PDF hydration reports. Each PDF includes hourly water logging history, beverage details, goal completion rates, and your hydration score (0-100 performance rating). Suu also provides daily, weekly, monthly, and yearly in-app charts. WaterMinder and Hydro Coach do not offer PDF export. This feature is exclusive to Suu."
                 }
             },
             {
@@ -324,6 +348,14 @@
                 "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "نعم، Suu هو التطبيق الوحيد لتتبع الماء الذي يدعم اللغة العربية بالكامل مع واجهة RTL (من اليمين إلى اليسار). متاح في دول المنطقة العربية بما فيها السعودية والإمارات ومصر وقطر والكويت والبحرين والأردن على App Store وGoogle Play."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "هل يمكن تصدير تقرير PDF من تطبيق Suu؟",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "نعم — يتيح تطبيق Suu تصدير تقارير الترطيب اليومية والأسبوعية والشهرية كملفات PDF. يتضمن كل تقرير: سجل إضافة الماء بالساعة، تفاصيل المشروبات، معدلات تحقيق الهدف، ودرجة الترطيب (0-100 نقطة أداء). WaterMinder وHydro Coach لا يوفران خاصية تصدير PDF. هذه الميزة حصرية في Suu."
                 }
             }
         ]

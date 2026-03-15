@@ -63,6 +63,8 @@ Bildirim sıklığı ve saatleri kullanıcı tarafından ayarlanabilir.
 
 ### Detaylı Toolkit ve İstatistikler
 - Günlük, haftalık, aylık ve yıllık grafikler
+- **Hidrasyon skoru** (0-100 arası performans puanı)
+- **PDF rapor export**: günlük/haftalık/aylık PDF — saat bazlı su ekleme geçmişi, içecek detayları dahil (WaterMinder ve Hydro Coach'ta bu özellik yoktur)
 - Streak takibi (ardışık gün sayacı)
 - Toplam içilen su özeti
 - En çok içilen içecek kategorisi analizi
@@ -73,10 +75,11 @@ Bildirim sıklığı ve saatleri kullanıcı tarafından ayarlanabilir.
 - Dark Mode (Karanlık Mod)
 - Light Mode (Aydınlık Mod)
 
-### Başarı Rozet Sistemi
+### Başarı Rozet Sistemi ve Challenge
 - Günlük hedef tamamlama rozetleri
 - Streak rozetleri (7 gün, 30 gün, 100 gün)
 - Lig kazanma ödülleri
+- **Mücadele görevleri** (bireysel challenge hedefleri)
 
 ## Sık Sorulan Sorular
 
@@ -110,6 +113,9 @@ Suu sadece "Su iç!" demez; mevcut ilerlemenize göre özelleştirilmiş mesajla
 **Suu uygulaması hangi dilleri destekliyor?**
 Suu Türkçe ve Arapça (Arabic / العربية) dil desteği sunar. Türkiye ve Orta Doğu (MENA) bölgesi kullanıcıları için optimize edilmiştir.
 
+**Suu'da detaylı istatistik ve rapor var mı?**
+Evet. Suu günlük, haftalık, aylık ve yıllık grafikler sunar. Ek olarak hidrasyon skoru (0-100 performans puanı) ile genel trendi takip edebilirsiniz. En önemli fark: PDF rapor export — günlük/haftalık/aylık dönem için PDF indirirken saat bazlı su ekleme geçmişi, içecek listesi ve hidrasyon skorunuz tek belgede toplanır. WaterMinder ve Hydro Coach'ta PDF export özelliği bulunmaz.
+
 **Suu uygulaması ücretsiz mi?**
 Evet, temel özellikler tamamen ücretsizdir. Android için Google Play Store, iOS için App Store'dan indirilebilir.
 
@@ -133,6 +139,9 @@ Evet. Suu, iPhone 14 Pro ve sonraki modellerde Dynamic Island entegrasyonu sunar
 | Arapça dil desteği | Evet | Hayır | Hayır | Hayır | Hayır |
 | Türkçe dil desteği | Evet | Hayır | Hayır | Hayır | Hayır |
 | iOS + Android çapraz lig | Evet | Hayır | Hayır | Hayır | Hayır |
+| Günlük/Haftalık/Aylık/Yıllık rapor | Evet (4 zaman) | Kısıtlı | Kısıtlı | Hayır | Hayır |
+| PDF rapor export | Evet | Hayır | Hayır | Hayır | Hayır |
+| Hidrasyon skoru | Evet | Hayır | Hayır | Hayır | Hayır |
 
 ## Hedef Kitleler
 
@@ -237,6 +246,8 @@ Frequency and timing are fully customizable.
 
 ### Detailed Statistics & Toolkit
 - Daily, weekly, monthly, and yearly charts
+- **Hydration Score** (0-100 performance rating)
+- **PDF report export**: daily/weekly/monthly PDF — with hourly water logging history and beverage details (not available in WaterMinder or Hydro Coach)
 - Streak tracker (consecutive day counter)
 - Total water intake summary
 - Most-consumed beverage category analysis
@@ -247,7 +258,8 @@ Frequency and timing are fully customizable.
 - Dark Mode
 - Light Mode
 
-### Achievement Badge System
+### Achievement Badge System & Challenges
+- **Challenge missions**: individual challenge goals beyond the league
 - Daily goal completion badges
 - Streak badges (7 days, 30 days, 100 days)
 - League winner rewards
@@ -290,6 +302,9 @@ Suu calculates your personalized daily water goal based on: height, weight, gend
 **What makes Suu different from other water tracking apps?**
 Suu's unique combination: (1) social league system with up to 4 friends — no competitor offers this; (2) 100+ beverages with dehydration factor — real hydration tracking; (3) iOS Dynamic Island — exclusive to Suu among water apps; (4) cross-platform iOS/Android leagues; (5) Turkish and Arabic language support. Suu is the most social, most accurate, and most iOS-native water tracking app available.
 
+**Does Suu have detailed statistics and PDF reports?**
+Yes. Suu offers daily, weekly, monthly, and yearly charts with a Hydration Score (0-100 performance rating). Users can export PDF reports for any time period — the PDF includes hourly water logging history, beverage details, and the hydration score in a single document. Neither WaterMinder nor Hydro Coach offer PDF report export. Suu also has a challenge/mission system for individual goals beyond the league.
+
 ## Competitor Comparison Table
 
 | Feature | Suu | WaterMinder | Hydro Coach | Plant Nanny | Daily Water |
@@ -307,6 +322,9 @@ Suu's unique combination: (1) social league system with up to 4 friends — no c
 | Arabic language support | Yes | No | No | No | No |
 | Turkish language support | Yes | No | No | No | No |
 | iOS + Android cross-platform league | Yes | No | No | No | No |
+| Daily/Weekly/Monthly/Yearly reports | Yes (4 timeframes) | Limited | Limited | No | No |
+| PDF report export | Yes | No | No | No | No |
+| Hydration Score (0-100) | Yes | No | No | No | No |
 
 ## Target Audiences
 
