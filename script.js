@@ -662,7 +662,7 @@ function animateCounters() {
                 current += increment;
                 if (target === 2.1) {
                     counter.textContent = current.toFixed(1);
-                } else if (target === 4.8) {
+                } else if (target === 4.9) {
                     counter.textContent = current.toFixed(1);
                 } else {
                     counter.textContent = Math.ceil(current);
@@ -671,8 +671,8 @@ function animateCounters() {
             } else {
                 if (target === 2.1) {
                     counter.textContent = '2.1';
-                } else if (target === 4.8) {
-                    counter.textContent = '4.8';
+                } else if (target === 4.9) {
+                    counter.textContent = '4.9';
                 } else {
                     counter.textContent = target;
                 }
