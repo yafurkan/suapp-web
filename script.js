@@ -134,15 +134,13 @@ const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
 const navLinks = document.querySelectorAll('.nav-link');
 
-// Loading Screen
-window.addEventListener('load', () => {
-    loadingScreen.classList.add('hidden');
-    document.body.style.overflow = 'visible';
-
-    // Show iOS popup after loading screen disappears
-    setTimeout(() => {
-        showIOSPopup();
-    }, 500);
+// Loading Screen — DOMContentLoaded ile kapat (fonts/images bekleme)
+document.addEventListener('DOMContentLoaded', () => {
+    if (loadingScreen) {
+        loadingScreen.classList.add('hidden');
+        document.body.style.overflow = 'visible';
+    }
+    setTimeout(showIOSPopup, 800);
 });
 
 // iOS Popup Functionality
