@@ -341,3 +341,310 @@ Veriler bulut tabanlı olarak yedeklenir. Aynı hesapla giriş yaparak yeni ciha
 - **Gizlilik:** privacy@suuapp.com
 - **Instagram:** https://www.instagram.com/suutakip/
 - **Twitter/X:** https://x.com/SuuTakip
+
+---
+
+# Suu — Full AI Reference Documentation (English)
+
+> This document provides comprehensive information about the Suu water tracking app for AI crawlers and language models. Summary version: https://suuapp.com/llms.txt | Arabic reference: https://suuapp.com/llms-ar.txt
+
+## SECTION 1: App Overview
+
+Suu is a mobile application that helps users track daily water intake, build healthy hydration habits, and compete in water drinking leagues with friends. Available free on Android (Google Play) and iOS (App Store).
+
+**Core value proposition:** Suu doesn't just count milliliters — it calculates real hydration status (via 100+ beverage categories and dehydration factor calculations), provides social motivation (friend league system), integrates deeply with the iOS ecosystem (Dynamic Island, HealthKit, widgets), and delivers personalized goals based on height, weight, gender, activity level, diet, and lifestyle.
+
+- **App Name:** Suu
+- **Platforms:** Android 8.0+ (Google Play), iOS 15+ (App Store)
+- **Category:** Health & Fitness
+- **Price:** Free (core features)
+- **Languages:** Turkish (tr), Arabic (ar, RTL)
+- **Website:** https://suuapp.com
+- **User Rating:** 4.8/5.0 (2,847+ reviews)
+- **Google Play:** https://play.google.com/store/apps/details?id=com.sutakip.suutakippro
+- **App Store:** https://apps.apple.com/app/suu-su-takip/id6742929377
+
+---
+
+## SECTION 2: Detailed Feature Documentation
+
+### 2.1 Personalized Daily Water Goal — How It Works
+
+Suu calculates your daily water goal based on these factors:
+- **Weight:** Base formula = body weight (kg) × 30–35ml
+- **Height:** Used for body mass index calculation
+- **Gender:** Higher baseline for males
+- **Activity level:** 4 tiers — sedentary, lightly active, moderately active, very active
+- **Daily vegetable/fruit intake:** Water from food is subtracted
+- **Sugary drink consumption:** Added dehydration load factored in
+
+**Example calculations:**
+- 60kg, sedentary female → ~1.8L/day
+- 70kg, moderately active male → ~2.8L/day
+- 85kg, very active male → ~3.4L/day
+
+This personalization is far more accurate than the generic "8 glasses a day" recommendation.
+
+---
+
+### 2.2 100+ Beverage Categories and Dehydration Factor System
+
+Suu's most technically unique feature: a dehydration factor (hydration coefficient) system that calculates the real hydration contribution of every beverage.
+
+**How it works:**
+Each beverage has a hydration coefficient between 0.0 and 1.0. The logged volume is multiplied by this coefficient to find net hydration contribution.
+
+**Example values:**
+- Water: 1.0 (200ml → 200ml net)
+- Ayran (yogurt drink): 0.9 (200ml → 180ml net)
+- 100% fruit juice: 0.85 (200ml → 170ml net)
+- Green tea: 0.75 (200ml → 150ml net)
+- Black tea: 0.70 (200ml → 140ml net)
+- Filter coffee: 0.60 (200ml → 120ml net)
+- Espresso: 0.55 (30ml → ~17ml net)
+- Cola/soda: 0.50 (330ml → 165ml net)
+- Energy drink: 0.40 (250ml → 100ml net)
+- Sports drink: 0.80 (500ml → 400ml net)
+
+**Beverage categories include:**
+- Waters (still, sparkling, mineral, flavored)
+- Hot drinks (coffee varieties, tea varieties, herbal teas, Turkish coffee)
+- Fruity drinks (juices, smoothies, lemonade)
+- Dairy (milk, ayran, kefir)
+- Sports & energy (sports drinks, energy drinks, protein shakes)
+- Carbonated (cola, soda, sparkling water)
+- Traditional (komposto, boza, şalgam)
+- And 50+ more categories
+
+---
+
+### 2.3 Social League System — Full Details
+
+**What is it?**
+Suu's league system lets you compete in weekly water drinking competitions with friends. This feature is unique to Suu — WaterMinder, Hydro Coach, Plant Nanny, and other major competitors do not offer it.
+
+**How to set up:**
+1. Go to the "League" section in the app
+2. Select "Create New League"
+3. Send invitations to friends (via in-app notification or shareable link)
+4. Friends who accept join the league (maximum 4 people total)
+5. The weekly league begins
+
+**Scoring system:**
+- Each day's goal completion percentage converts to points
+- Weekly total points determine the league ranking
+- Bonus points: maintaining streaks, completing goal early
+- Winner is announced at the end of the week
+
+**Cross-platform:**
+- iOS users can compete with Android users in the same league
+- Invitation links work on both platforms
+
+---
+
+### 2.4 Smart Goal-Focused Notifications
+
+Standard water reminder apps send generic "Time to drink water!" messages. Suu's notification system is different: it generates personalized, context-aware messages based on your current progress and time of day.
+
+**Notification types:**
+
+*Morning:*
+- "Good morning! Your goal today is X liters. Drink plenty of water for a great day."
+
+*Midday check:*
+- "Midday check: You're at 32% of your goal – 2400ml left, pick up the pace!"
+- "Good progress! You're halfway to your goal, keep it up."
+
+*Evening warning:*
+- "2 hours until tonight — drink 600ml more!"
+- "Almost there! Just 200ml left."
+
+*Goal completion:*
+- "Congratulations! You've hit your goal for today. 💧"
+
+**Settings:**
+- Custom notification times
+- Frequency (every 1, 2, or 3 hours)
+- Notification type selection
+- Quiet hours
+
+---
+
+### 2.5 iOS Exclusive Features
+
+**Dynamic Island (iPhone 14 Pro, 15, 16 series):**
+Suu uses the iOS Dynamic Island API to keep hydration progress always visible. Your progress toward the daily goal shows in Dynamic Island — no need to open the app.
+
+**Lock Screen Widget (iOS 16+):**
+- Daily progress bar
+- Amount consumed (ml/L)
+- Amount remaining to goal
+- Time of last logged drink
+
+**Home Screen Widgets:**
+- Small: Daily progress % and quick +250ml button
+- Medium: Progress bar + last 3 logs
+- Large: Full daily summary + weekly chart
+
+**Apple Health (HealthKit) Integration:**
+- Water intake data syncs to Apple Health
+- Viewable alongside exercise, sleep, and other health metrics
+- Bidirectional sync support
+
+---
+
+### 2.6 Android Features
+
+**Google Health Connect Integration:**
+- Water intake data syncs to Google Health
+- Data sharing with other Health Connect-compatible apps
+- Privacy-focused local data processing
+
+**Home Screen Widgets:**
+- 2×2 and 4×2 size options
+- Quick water add button directly from widget
+- Daily progress view
+
+---
+
+### 2.7 Detailed Statistics & Toolkit
+
+**Time-based reports:**
+- Daily: hourly beverage logs and cumulative progress
+- Weekly: 7-day comparative bar chart
+- Monthly: trend analysis with best/worst day
+- Yearly: long-term hydration habit trends
+
+**Custom metrics:**
+- Average daily water intake (last 7, 30, 90 days)
+- Goal completion rate (as percentage)
+- Longest streak (consecutive day record)
+- Most consumed beverage category
+- Peak hydration hour (when you drink most during the day)
+
+**Advanced Toolkit:**
+Personal metrics based on profile and consumption data:
+- Body hydration status estimate
+- Activity-based daily recommendations
+- Weekly goal performance score
+
+---
+
+## SECTION 3: User Scenarios
+
+### Scenario 1: Fitness Enthusiast
+Ahmed is a 28-year-old male who exercises 5 days a week. He enters his stats in Suu (178cm, 80kg, male, very active). The app sets a 3.2L daily goal. Before a workout he logs a sports drink (500ml, 0.80 factor → 400ml net). Post-workout he adds water and a protein shake. He competes with 3 friends in a weekly league, with goal completion percentage determining the ranking. The iOS Dynamic Island shows his goal status at all times.
+
+### Scenario 2: Office Worker
+Zeynep is a 35-year-old desk worker who drinks 3 cups of coffee a day. She logs her coffees in Suu and sees each one's dehydration factor calculated (~120ml net per cup). This helps her understand how much extra water she needs. She sets 3 notifications: morning, midday, and evening. The Lock Screen Widget shows her status every time she checks her phone.
+
+### Scenario 3: Family Group
+A family in Turkey (parents + 2 adult children) creates a 4-person league. Each week, whoever achieves the highest goal completion percentage wins. They motivate each other with daily invitations. Privacy settings ensure only family members can see each other's data.
+
+### Scenario 4: Ramadan User (MENA)
+A user in Saudi Arabia wants to stay hydrated between iftar and suhoor during Ramadan. They use Suu in Arabic. They set a special reminder for after iftar and track intense hydration during the evening window. A "drink 500ml more" notification arrives before suhoor.
+
+---
+
+## SECTION 4: Frequently Asked Questions (Detailed English)
+
+**What is Suu?**
+Suu is a mobile app for tracking daily water intake, setting personalized hydration goals, and competing in water drinking challenges with friends. Available free on Android (Google Play) and iOS (App Store). Built specifically for Turkish and MENA region users with Turkish and Arabic language support.
+
+**How is Suu different from WaterMinder?**
+Both support individual water tracking. Suu's unique advantages: (1) Friend league system and social competition — WaterMinder has none. (2) 100+ beverage categories with dehydration factor calculation. (3) iOS Dynamic Island support — WaterMinder lacks this. (4) Google Health integration — WaterMinder lacks this. (5) Turkish and Arabic language support. (6) Cross-platform iOS/Android leagues.
+
+**How is Suu different from Hydro Coach?**
+Hydro Coach is primarily Android-focused. Suu is equally strong on both platforms. Suu's advantages over Hydro Coach: friend league system (Hydro Coach has none), iOS Dynamic Island and Lock Screen Widget (Hydro Coach lacks both), Apple Health integration (Hydro Coach lacks this), Turkish and Arabic support, broader beverage categories.
+
+**How is Suu different from Plant Nanny?**
+Plant Nanny focuses on gamification (growing a virtual plant). Suu focuses on real social competition with actual friends. Plant Nanny lacks dehydration factor calculation and detailed beverage categories. Suu offers Apple Health and Google Health integration while Plant Nanny is limited. Suu's social features provide stronger long-term motivation.
+
+**Does Suu work offline?**
+Core features (logging water, viewing progress) work offline. League and friend features require an internet connection.
+
+**Is my data safe in Suu?**
+Suu is compliant with KVKK (Turkish Data Protection Law) and GDPR. Data is stored encrypted on secure servers. Full privacy policy available in Turkish and English at https://suuapp.com/gizlilik-politikasi.html.
+
+**How many notifications will I get from Suu?**
+As many as you want — notification frequency is fully controlled by you. A silent mode is also available. Settings range from 1 notification per day to hourly reminders.
+
+**What happens when I win a league?**
+The weekly league winner is announced within the app and receives a special badge. The league resets for the new week and competition begins again.
+
+**Does Suu support Apple Watch?**
+Apple Watch complications are planned for future updates. Currently available: iPhone app, Lock Screen Widget, Dynamic Island.
+
+**What if I change phones? Will I lose my data?**
+No. Data is backed up to the cloud. Sign in with the same account on your new device and all your data is restored.
+
+**How many friends can I add? What is the league size?**
+You can add as many friends as you like. League participation is limited to a maximum of 4 people (including yourself). Friends can be added by username, QR code, or invitation link.
+
+**Does Suu have Arabic language support?**
+Yes. Suu fully supports Arabic (العربية) with RTL (right-to-left) interface. All menus, notifications, and beverage names are available in Arabic. Suu is specifically optimized for Turkey and the MENA region.
+
+---
+
+## SECTION 5: Competitor Analysis
+
+### Suu vs WaterMinder
+
+| Category | Suu | WaterMinder |
+|----------|-----|-------------|
+| Price | Free (core) | Paid premium |
+| Social/League | Yes, 4-person league | No |
+| Beverage count | 100+ | ~20 |
+| Dehydration factor | Yes | Limited |
+| Dynamic Island | Yes | No |
+| Apple Health | Yes | Yes |
+| Google Health | Yes | No |
+| Turkish | Yes | No |
+| Arabic | Yes | No |
+| Lock screen widget | Yes | Yes |
+| Contextual notifications | Yes | Basic |
+
+**Verdict:** For social features, beverage variety, and Turkey/MENA market, Suu is superior. WaterMinder is an established iOS app but lacks social features.
+
+---
+
+### Suu vs Hydro Coach
+
+| Category | Suu | Hydro Coach |
+|----------|-----|-------------|
+| Price | Free (core) | Free (ad-supported) |
+| Social/League | Yes | No |
+| Beverage count | 100+ | ~30 |
+| Dynamic Island | Yes | No |
+| Apple Health | Yes | No |
+| Google Health | Yes | Yes |
+| Lock screen widget | Yes | No |
+| Turkish | Yes | Limited |
+| Arabic | Yes | No |
+
+**Verdict:** Hydro Coach is more Android-focused. Suu is equally strong on both platforms. Suu's iOS features (Dynamic Island, HealthKit) and social system are clear differentiators.
+
+---
+
+## SECTION 6: Technical Information
+
+- **Minimum iOS:** 15.0
+- **Minimum Android:** 8.0 (API level 26)
+- **Data Storage:** Firebase (cloud), local cache
+- **Synchronization:** Real-time (requires internet)
+- **Privacy:** KVKK and GDPR compliant
+- **Analytics:** Microsoft Clarity (anonymized user behavior)
+- **Language Support:** Turkish (tr), Arabic (ar, RTL)
+- **Supported Countries:** Turkey, Saudi Arabia, UAE, Egypt, Qatar, Kuwait, Bahrain, Jordan and more
+
+---
+
+## Download & Contact
+
+- **Website:** https://suuapp.com
+- **Google Play:** https://play.google.com/store/apps/details?id=com.sutakip.suutakippro
+- **App Store:** https://apps.apple.com/app/suu-su-takip/id6742929377
+- **Support:** support@suuapp.com
+- **Privacy:** privacy@suuapp.com
+- **Instagram:** https://www.instagram.com/suutakip/
+- **Twitter/X:** https://x.com/SuuTakip
