@@ -136,15 +136,13 @@ const navLinks = document.querySelectorAll('.nav-link');
 
 // Loading Screen
 window.addEventListener('load', () => {
+    loadingScreen.classList.add('hidden');
+    document.body.style.overflow = 'visible';
+
+    // Show iOS popup after loading screen disappears
     setTimeout(() => {
-        loadingScreen.classList.add('hidden');
-        document.body.style.overflow = 'visible';
-        
-        // Show iOS popup after loading screen disappears
-        setTimeout(() => {
-            showIOSPopup();
-        }, 1000);
-    }, 2000);
+        showIOSPopup();
+    }, 500);
 });
 
 // iOS Popup Functionality
