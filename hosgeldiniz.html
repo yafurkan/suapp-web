@@ -76,21 +76,36 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="announcements.css">
     
-    <!-- Structured Data: MobileApplication -->
+    <!-- Structured Data: SoftwareApplication (MobileApplication) -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "MobileApplication",
+        "@type": ["SoftwareApplication", "MobileApplication"],
         "name": "Suu",
         "description": "Günlük su ihtiyacınızı takip edin, sağlıklı kalın. Suu uygulaması ile kişiselleştirilmiş hedefler, akıllı hatırlatmalar, arkadaş takibi ve lig sistemi.",
         "url": "https://suuapp.com",
         "applicationCategory": "HealthApplication",
+        "applicationSubCategory": "HealthAndFitness",
         "operatingSystem": ["Android", "iOS"],
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "TRY"
-        },
+        "downloadUrl": "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
+        "installUrl": "https://suuapp.com/app/",
+        "releaseNotes": "PDF hidrasyon raporu, hidrasyon skoru ve bireysel challenge sistemi eklendi",
+        "offers": [
+            {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "TRY",
+                "url": "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
+                "seller": { "@type": "Organization", "name": "Google Play" }
+            },
+            {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "TRY",
+                "url": "https://apps.apple.com/app/suu-su-takip/id6742929377",
+                "seller": { "@type": "Organization", "name": "App Store" }
+            }
+        ],
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.9",
