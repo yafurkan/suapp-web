@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suu Blog - Hydration, Health & Water Tips (English)</title>
+    <meta name="description" content="Science-backed articles about hydration, daily water intake, dehydration, and healthy habits. Official blog of the Suu water tracking app.">
+    <meta name="keywords" content="hydration tips, how much water to drink, dehydration signs, water drinking habits, exercise hydration">
+    <link rel="canonical" href="https://suuapp.com/blog-en.html">
+
+    <meta property="og:title" content="Suu Blog - Hydration & Water Tips (English)">
+    <meta property="og:description" content="Science-backed articles about hydration, daily water intake, dehydration, and healthy habits.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://suuapp.com/blog-en.html">
+    <meta property="og:image" content="https://suuapp.com/assets/og-image.svg">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Suu">
+
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="tr" href="https://suuapp.com/blog.html">
+    <link rel="alternate" hreflang="en" href="https://suuapp.com/blog-en.html">
+    <link rel="alternate" hreflang="ar" href="https://suuapp.com/blog-ar.html">
+    <link rel="alternate" hreflang="x-default" href="https://suuapp.com/blog.html">
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data:; img-src 'self' https: data:; font-src 'self' https: data:;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; color: #333; background: #f8f9fa; }
+        .blog-nav { background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+        .nav-content { max-width: 1100px; margin: 0 auto; padding: 0 24px; height: 64px; display: flex; align-items: center; justify-content: space-between; }
+        .blog-logo { display: flex; align-items: center; gap: 8px; font-size: 1.4rem; font-weight: 700; color: #4A90D9; text-decoration: none; }
+        .nav-right { display: flex; align-items: center; gap: 16px; }
+        .back-btn { background: #4A90D9; color: white; padding: 8px 18px; border-radius: 8px; text-decoration: none; font-weight: 500; font-size: 14px; transition: all 0.2s; }
+        .back-btn:hover { background: #3a7bc8; }
+        .hamburger { display: none; }
+
+        .blog-header { background: linear-gradient(135deg, #4A90D9 0%, #29B6F6 100%); color: white; padding: 60px 20px 40px; text-align: center; }
+        .blog-header h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 800; margin-bottom: 10px; }
+        .blog-header p { font-size: 1rem; opacity: 0.9; }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 50px 24px 80px; }
+        .articles-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 28px; }
+        .article-card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: transform 0.2s, box-shadow 0.2s; }
+        .article-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.12); }
+        .article-thumb { height: 160px; display: flex; align-items: center; justify-content: center; font-size: 3rem; }
+        .article-body { padding: 20px 22px; }
+        .article-tag { font-size: 11px; font-weight: 700; color: #4A90D9; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
+        .article-body h3 { font-size: 1rem; font-weight: 700; color: #1a1a2e; margin-bottom: 10px; line-height: 1.5; }
+        .article-body p { font-size: 0.875rem; color: #666; margin-bottom: 16px; line-height: 1.6; }
+        .read-more { display: inline-flex; align-items: center; gap: 6px; color: #4A90D9; font-size: 13px; font-weight: 600; text-decoration: none; }
+        .read-more:hover { text-decoration: underline; }
+
+        .cta-banner { background: linear-gradient(135deg, #4A90D9, #29B6F6); color: white; border-radius: 20px; padding: 40px; text-align: center; margin-top: 60px; }
+        .cta-banner h2 { font-size: 1.6rem; font-weight: 800; margin-bottom: 10px; }
+        .cta-banner p { opacity: 0.9; margin-bottom: 24px; }
+        .cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+        .cta-btn { background: white; color: #4A90D9; padding: 11px 24px; border-radius: 50px; font-weight: 700; text-decoration: none; font-size: 14px; display: inline-flex; align-items: center; gap: 8px; transition: transform 0.2s; }
+        .cta-btn:hover { transform: translateY(-2px); }
+
+        @media (max-width: 600px) { .articles-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<nav class="blog-nav">
+    <div class="nav-content">
+        <a href="hosgeldiniz-en.html" class="blog-logo"><i class="fas fa-tint"></i> Suu</a>
+        <div class="nav-right">
+            <!-- lang-switcher.js injects buttons here -->
+            <a href="hosgeldiniz-en.html" class="back-btn"><i class="fas fa-arrow-left"></i> Home</a>
+            <div class="hamburger"></div>
+        </div>
+    </div>
+</nav>
+
+<div class="blog-header">
+    <h1>💧 Suu Blog</h1>
+    <p>Science-backed articles on hydration, health, and building better water habits.</p>
+</div>
+
+<div class="container">
+    <div class="articles-grid">
+
+        <article class="article-card">
+            <div class="article-thumb" style="background:linear-gradient(135deg,#e3f2fd,#bbdefb);">💧</div>
+            <div class="article-body">
+                <div class="article-tag">Health</div>
+                <h3>10 Science-Backed Benefits of Drinking Water Daily</h3>
+                <p>How water boosts brain function, metabolism, skin health, and immune system — backed by peer-reviewed research.</p>
+                <a href="blog/en/benefits-of-drinking-water.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+
+        <article class="article-card">
+            <div class="article-thumb" style="background:linear-gradient(135deg,#e8f5e9,#c8e6c9);">🧮</div>
+            <div class="article-body">
+                <div class="article-tag">Hydration Guide</div>
+                <h3>How Much Water Should I Drink Per Day?</h3>
+                <p>The science-based formula for calculating your personal daily water goal — based on weight, activity level, and climate.</p>
+                <a href="blog/en/how-much-water-should-i-drink.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+
+        <article class="article-card">
+            <div class="article-thumb" style="background:linear-gradient(135deg,#fff3e0,#ffe0b2);">⚠️</div>
+            <div class="article-body">
+                <div class="article-tag">Health</div>
+                <h3>Signs of Dehydration You Shouldn't Ignore</h3>
+                <p>Headaches, fatigue, dark urine — learn to recognize dehydration before it affects your performance and health.</p>
+                <a href="blog/en/signs-of-dehydration.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+
+        <article class="article-card">
+            <div class="article-thumb" style="background:linear-gradient(135deg,#fce4ec,#f8bbd0);">💪</div>
+            <div class="article-body">
+                <div class="article-tag">Sports</div>
+                <h3>Hydration and Exercise: The Complete Guide</h3>
+                <p>How much water to drink before, during, and after workouts. Sweat loss, electrolytes, and sport-specific hydration.</p>
+                <a href="blog/en/hydration-and-exercise.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+
+        <article class="article-card">
+            <div class="article-thumb" style="background:linear-gradient(135deg,#f3e5f5,#e1bee7);">🌅</div>
+            <div class="article-body">
+                <div class="article-tag">Morning Routine</div>
+                <h3>Why You Should Drink Water First Thing in the Morning</h3>
+                <p>The metabolism boost, hydration window, and cognitive benefits of morning water — and how to build the habit.</p>
+                <a href="blog/en/morning-water-benefits.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+
+        <article class="article-card">
+            <div class="article-thumb" style="background:linear-gradient(135deg,#e0f2f1,#b2dfdb);">✅</div>
+            <div class="article-body">
+                <div class="article-tag">Habits</div>
+                <h3>How to Build a Daily Water Drinking Habit</h3>
+                <p>7 behaviour-science strategies to make drinking water automatic — habit stacking, smart reminders, streaks, and social accountability.</p>
+                <a href="blog/en/water-drinking-habits.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+
+        <article class="article-card">
+            <div class="article-thumb" style="background:linear-gradient(135deg,#fff8e1,#ffecb3);">☕</div>
+            <div class="article-body">
+                <div class="article-tag">Beverages</div>
+                <h3>Best Water Tracking App in 2026: Full Comparison</h3>
+                <p>An honest comparison of the top water tracking apps — features, design, pricing, and what makes Suu stand out.</p>
+                <a href="blog/en/best-water-tracking-app.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+
+    </div>
+
+    <div class="cta-banner">
+        <h2>Start Tracking Your Water Today</h2>
+        <p>Suu turns these tips into daily habits — personalized goals, smart reminders, and friend leagues. Free on iOS and Android.</p>
+        <div class="cta-btns">
+            <a href="https://apps.apple.com/app/suu-su-takip/id6742929377" class="cta-btn" target="_blank" rel="noopener">
+                <i class="fab fa-apple"></i> App Store
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro" class="cta-btn" target="_blank" rel="noopener">
+                <i class="fab fa-google-play"></i> Google Play
+            </a>
+        </div>
+    </div>
+</div>
+
+<script src="lang-switcher.js"></script>
+</body>
+</html>

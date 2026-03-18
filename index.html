@@ -15,10 +15,18 @@
     <title>Suu - Sağlıklı Yaşamın Anahtarı</title>
     <meta name="description" content="Günlük su ihtiyacınızı takip edin, sağlıklı kalın. Suu uygulaması ile kişiselleştirilmiş hedefler ve akıllı hatırlatmalar.">
     
-    <!-- Otomatik yönlendirme -->
+    <!-- Otomatik yönlendirme - dil tespitli -->
     <meta http-equiv="refresh" content="0; url=hosgeldiniz.html">
     <link rel="canonical" href="https://suuapp.com/hosgeldiniz">
-    <script>window.location.replace('hosgeldiniz.html');</script>
+    <script>
+    (function(){
+        var saved = (function(){ try { return localStorage.getItem('suu-lang'); } catch(e){ return null; } })();
+        var lang = saved || ((navigator.languages && navigator.languages[0]) || navigator.language || 'tr').toLowerCase().slice(0, 2);
+        if (lang === 'ar') { window.location.replace('hosgeldiniz-ar.html'); }
+        else if (lang === 'en') { window.location.replace('hosgeldiniz-en.html'); }
+        else { window.location.replace('hosgeldiniz.html'); }
+    })();
+    </script>
     
     <!-- Security Headers -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data:; img-src 'self' https: data:; font-src 'self' https: data:;">
@@ -99,10 +107,7 @@
     </div>
     
     <script>
-        // JavaScript ile de yönlendirme yap (çifte güvence)
-        setTimeout(function() {
-            window.location.href = 'hosgeldiniz.html';
-        }, 1000);
+        setTimeout(function() { window.location.href = 'hosgeldiniz.html'; }, 1500);
     </script>
 </body>
 </html>
