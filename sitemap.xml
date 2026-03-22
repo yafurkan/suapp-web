@@ -138,6 +138,25 @@
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
+    <!-- New Turkish Blog Posts -->
+    <url>
+        <loc>https://suuapp.com/blog/su-ve-cilt-sagligi.html</loc>
+        <lastmod>2026-03-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://suuapp.com/blog/su-ve-uyku-kalitesi.html</loc>
+        <lastmod>2026-03-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://suuapp.com/blog/su-ve-bobrek-sagligi.html</loc>
+        <lastmod>2026-03-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
     <!-- English Blog Posts -->
     <url>
         <loc>https://suuapp.com/blog/en/hydration-and-exercise.html</loc>
@@ -181,6 +200,37 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+    <!-- New English Blog Posts -->
+    <url>
+        <loc>https://suuapp.com/blog/en/coffee-tea-hydration.html</loc>
+        <lastmod>2026-03-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://suuapp.com/blog/en/water-and-weight-loss.html</loc>
+        <lastmod>2026-03-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://suuapp.com/blog/en/water-and-skin-health.html</loc>
+        <lastmod>2026-03-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://suuapp.com/blog/en/water-and-sleep.html</loc>
+        <lastmod>2026-03-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://suuapp.com/blog/en/water-and-kidney-health.html</loc>
+        <lastmod>2026-03-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
     <!-- Arabic Blog Posts -->
     <url>
         <loc>https://suuapp.com/blog/ar/afdal-tatbiq-mae.html</loc>
@@ -205,5 +255,54 @@
         <lastmod>2026-03-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+    </url>
+    <!-- New Arabic Blog Posts -->
+    <url>
+        <loc>https://suuapp.com/blog/ar/arriyada-waltartib.html</loc>
+        <lastmod>2026-03-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://suuapp.com/blog/ar/alqahwa-walshay-walmae.html</loc>
+        <lastmod>2026-03-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://suuapp.com/blog/ar/alamat-aljafaf.html</loc>
+        <lastmod>2026-03-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://suuapp.com/blog/ar/fawaid-shurb-almae-sabahan.html</loc>
+        <lastmod>2026-03-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://suuapp.com/blog/ar/almae-walidara-alwazn.html</loc>
+        <lastmod>2026-03-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://suuapp.com/blog/ar/almae-walsihha-aljildiyya.html</loc>
+        <lastmod>2026-03-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://suuapp.com/blog/ar/almae-wannawm.html</loc>
+        <lastmod>2026-03-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://suuapp.com/blog/ar/almae-wasihhat-alkulaa.html</loc>
+        <lastmod>2026-03-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
     </url>
 </urlset>
