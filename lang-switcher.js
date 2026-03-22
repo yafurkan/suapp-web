@@ -16,6 +16,46 @@
         'hosgeldiniz-ar.html': { tr: 'hosgeldiniz.html', en: 'hosgeldiniz-en.html', ar: 'hosgeldiniz-ar.html' },
         'blog-en.html':     { tr: 'blog.html',          en: 'blog-en.html',        ar: 'blog-ar.html' },
         'blog-ar.html':     { tr: 'blog.html',          en: 'blog-en.html',        ar: 'blog-ar.html' },
+        'hakkimizda.html':  { tr: 'hakkimizda.html',    en: 'about.html',          ar: 'hakkimizda-ar.html' },
+        'about.html':       { tr: 'hakkimizda.html',    en: 'about.html',          ar: 'hakkimizda-ar.html' },
+        'hakkimizda-ar.html': { tr: 'hakkimizda.html',  en: 'about.html',          ar: 'hakkimizda-ar.html' },
+        // Blog post cross-language mappings (TR ↔ EN ↔ AR) — absolute paths from root
+        'su-icmenin-faydalari.html':              { tr: '/blog/su-icmenin-faydalari.html',              en: '/blog/en/benefits-of-drinking-water.html',  ar: '/blog/ar/fawaid-shurb-almae.html' },
+        'benefits-of-drinking-water.html':        { tr: '/blog/su-icmenin-faydalari.html',              en: '/blog/en/benefits-of-drinking-water.html',  ar: '/blog/ar/fawaid-shurb-almae.html' },
+        'fawaid-shurb-almae.html':                { tr: '/blog/su-icmenin-faydalari.html',              en: '/blog/en/benefits-of-drinking-water.html',  ar: '/blog/ar/fawaid-shurb-almae.html' },
+        'gunluk-ne-kadar-su-icmeli.html':         { tr: '/blog/gunluk-ne-kadar-su-icmeli.html',        en: '/blog/en/how-much-water-should-i-drink.html', ar: '/blog/ar/kam-litr-mae-yawmiyan.html' },
+        'how-much-water-should-i-drink.html':     { tr: '/blog/gunluk-ne-kadar-su-icmeli.html',        en: '/blog/en/how-much-water-should-i-drink.html', ar: '/blog/ar/kam-litr-mae-yawmiyan.html' },
+        'kam-litr-mae-yawmiyan.html':             { tr: '/blog/gunluk-ne-kadar-su-icmeli.html',        en: '/blog/en/how-much-water-should-i-drink.html', ar: '/blog/ar/kam-litr-mae-yawmiyan.html' },
+        'su-takip-uygulamasi-neden-kullanmaliyim.html': { tr: '/blog/su-takip-uygulamasi-neden-kullanmaliyim.html', en: '/blog/en/best-water-tracking-app.html', ar: '/blog/ar/afdal-tatbiq-mae.html' },
+        'best-water-tracking-app.html':           { tr: '/blog/su-takip-uygulamasi-neden-kullanmaliyim.html', en: '/blog/en/best-water-tracking-app.html', ar: '/blog/ar/afdal-tatbiq-mae.html' },
+        'afdal-tatbiq-mae.html':                  { tr: '/blog/su-takip-uygulamasi-neden-kullanmaliyim.html', en: '/blog/en/best-water-tracking-app.html', ar: '/blog/ar/afdal-tatbiq-mae.html' },
+        'su-icme-aliskanlik.html':                { tr: '/blog/su-icme-aliskanlik.html',                en: '/blog/en/water-drinking-habits.html',       ar: '/blog/ar/adat-shurb-almae.html' },
+        'water-drinking-habits.html':             { tr: '/blog/su-icme-aliskanlik.html',                en: '/blog/en/water-drinking-habits.html',       ar: '/blog/ar/adat-shurb-almae.html' },
+        'adat-shurb-almae.html':                  { tr: '/blog/su-icme-aliskanlik.html',                en: '/blog/en/water-drinking-habits.html',       ar: '/blog/ar/adat-shurb-almae.html' },
+        'spor-ve-hidrasyon.html':                 { tr: '/blog/spor-ve-hidrasyon.html',                 en: '/blog/en/hydration-and-exercise.html',      ar: '/blog/ar/arriyada-waltartib.html' },
+        'hydration-and-exercise.html':            { tr: '/blog/spor-ve-hidrasyon.html',                 en: '/blog/en/hydration-and-exercise.html',      ar: '/blog/ar/arriyada-waltartib.html' },
+        'arriyada-waltartib.html':                { tr: '/blog/spor-ve-hidrasyon.html',                 en: '/blog/en/hydration-and-exercise.html',      ar: '/blog/ar/arriyada-waltartib.html' },
+        'kahve-cay-su-sayar-mi.html':             { tr: '/blog/kahve-cay-su-sayar-mi.html',             en: '/blog/en/coffee-tea-hydration.html',        ar: '/blog/ar/alqahwa-walshay-walmae.html' },
+        'coffee-tea-hydration.html':              { tr: '/blog/kahve-cay-su-sayar-mi.html',             en: '/blog/en/coffee-tea-hydration.html',        ar: '/blog/ar/alqahwa-walshay-walmae.html' },
+        'alqahwa-walshay-walmae.html':            { tr: '/blog/kahve-cay-su-sayar-mi.html',             en: '/blog/en/coffee-tea-hydration.html',        ar: '/blog/ar/alqahwa-walshay-walmae.html' },
+        'susuzluk-belirtileri.html':              { tr: '/blog/susuzluk-belirtileri.html',              en: '/blog/en/signs-of-dehydration.html',        ar: '/blog/ar/alamat-aljafaf.html' },
+        'signs-of-dehydration.html':              { tr: '/blog/susuzluk-belirtileri.html',              en: '/blog/en/signs-of-dehydration.html',        ar: '/blog/ar/alamat-aljafaf.html' },
+        'alamat-aljafaf.html':                    { tr: '/blog/susuzluk-belirtileri.html',              en: '/blog/en/signs-of-dehydration.html',        ar: '/blog/ar/alamat-aljafaf.html' },
+        'sabah-su-icmenin-faydalari.html':        { tr: '/blog/sabah-su-icmenin-faydalari.html',        en: '/blog/en/morning-water-benefits.html',      ar: '/blog/ar/fawaid-shurb-almae-sabahan.html' },
+        'morning-water-benefits.html':            { tr: '/blog/sabah-su-icmenin-faydalari.html',        en: '/blog/en/morning-water-benefits.html',      ar: '/blog/ar/fawaid-shurb-almae-sabahan.html' },
+        'fawaid-shurb-almae-sabahan.html':        { tr: '/blog/sabah-su-icmenin-faydalari.html',        en: '/blog/en/morning-water-benefits.html',      ar: '/blog/ar/fawaid-shurb-almae-sabahan.html' },
+        'kilo-ve-su.html':                        { tr: '/blog/kilo-ve-su.html',                        en: '/blog/en/water-and-weight-loss.html',        ar: '/blog/ar/almae-walidara-alwazn.html' },
+        'water-and-weight-loss.html':             { tr: '/blog/kilo-ve-su.html',                        en: '/blog/en/water-and-weight-loss.html',        ar: '/blog/ar/almae-walidara-alwazn.html' },
+        'almae-walidara-alwazn.html':             { tr: '/blog/kilo-ve-su.html',                        en: '/blog/en/water-and-weight-loss.html',        ar: '/blog/ar/almae-walidara-alwazn.html' },
+        'su-ve-cilt-sagligi.html':                { tr: '/blog/su-ve-cilt-sagligi.html',                en: '/blog/en/water-and-skin-health.html',       ar: '/blog/ar/almae-walsihha-aljildiyya.html' },
+        'water-and-skin-health.html':             { tr: '/blog/su-ve-cilt-sagligi.html',                en: '/blog/en/water-and-skin-health.html',       ar: '/blog/ar/almae-walsihha-aljildiyya.html' },
+        'almae-walsihha-aljildiyya.html':         { tr: '/blog/su-ve-cilt-sagligi.html',                en: '/blog/en/water-and-skin-health.html',       ar: '/blog/ar/almae-walsihha-aljildiyya.html' },
+        'su-ve-uyku-kalitesi.html':               { tr: '/blog/su-ve-uyku-kalitesi.html',               en: '/blog/en/water-and-sleep.html',              ar: '/blog/ar/almae-wannawm.html' },
+        'water-and-sleep.html':                   { tr: '/blog/su-ve-uyku-kalitesi.html',               en: '/blog/en/water-and-sleep.html',              ar: '/blog/ar/almae-wannawm.html' },
+        'almae-wannawm.html':                     { tr: '/blog/su-ve-uyku-kalitesi.html',               en: '/blog/en/water-and-sleep.html',              ar: '/blog/ar/almae-wannawm.html' },
+        'su-ve-bobrek-sagligi.html':              { tr: '/blog/su-ve-bobrek-sagligi.html',              en: '/blog/en/water-and-kidney-health.html',     ar: '/blog/ar/almae-wasihhat-alkulaa.html' },
+        'water-and-kidney-health.html':           { tr: '/blog/su-ve-bobrek-sagligi.html',              en: '/blog/en/water-and-kidney-health.html',     ar: '/blog/ar/almae-wasihhat-alkulaa.html' },
+        'almae-wasihhat-alkulaa.html':            { tr: '/blog/su-ve-bobrek-sagligi.html',              en: '/blog/en/water-and-kidney-health.html',     ar: '/blog/ar/almae-wasihhat-alkulaa.html' },
     };
 
     function getCurrentPage() {
@@ -57,12 +97,19 @@
         return map[lang] || null;
     }
 
+    function isCurrentUrl(url) {
+        if (!url) return false;
+        var page = getCurrentPage();
+        // Check if the URL ends with the current filename
+        return url === page || url.split('/').pop() === page;
+    }
+
     function setLang(lang) {
         saveLang(lang);
         var url = getTargetUrl(lang);
-        if (url && url !== getCurrentPage()) {
+        if (url && !isCurrentUrl(url)) {
             window.location.href = url;
-        } else if (url === getCurrentPage()) {
+        } else if (url) {
             // Already on the right page, just update the switcher UI
             updateSwitcherUI(lang);
         }
