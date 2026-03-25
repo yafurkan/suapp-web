@@ -134,14 +134,13 @@ const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
 const navLinks = document.querySelectorAll('.nav-link');
 
-// Loading Screen — DOMContentLoaded ile kapat (fonts/images bekleme)
-document.addEventListener('DOMContentLoaded', () => {
-    if (loadingScreen) {
-        loadingScreen.classList.add('hidden');
-        document.body.style.overflow = 'visible';
-    }
-    setTimeout(showIOSPopup, 800);
-});
+// Loading Screen — handled by inline script for instant dismissal
+// Fallback: ensure it's hidden if inline script didn't run
+if (loadingScreen && !loadingScreen.classList.contains('hidden')) {
+    loadingScreen.classList.add('hidden');
+    document.body.style.overflow = 'visible';
+}
+setTimeout(showIOSPopup, 800);
 
 // iOS Popup Functionality
 function showIOSPopup() {
@@ -271,9 +270,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     // App Store button functionality
-    function handleAppStoreClick(e) {
-        e.preventDefault();
-        window.open('https://apps.apple.com/us/app/suu-su-takip/id6757619920', '_blank', 'noopener');
+    function handleAppStoreClick() {
+        // href already points to App Store — this handler kept for analytics/tracking
     }
     
     if (appStoreBtn) {

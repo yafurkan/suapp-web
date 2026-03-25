@@ -16,6 +16,9 @@
     <meta name="description" content="Çoğu insan günlük su ihtiyacının yarısını bile karşılamıyor. Suu ile su takibi yap, arkadaşlarınla yarış, sağlıklı alışkanlıklar edin. 100+ içecek, lig sistemi, Dynamic Island. Ücretsiz indir.">
     <meta name="keywords" content="suu, su takip uygulaması, en iyi su takip uygulaması, android su takip, ios su takip, google play su takip, hidrasyon uygulaması, water tracking app, best water tracking app, water reminder app, hydration tracker, water intake app, su içme uygulaması, arkadaşlarla su yarışması, lig sistemi, iOS widget, android widget, apple health su takip, google health su takip, dynamic island su takip, su takip türkçe, su takip arapça, تطبيق تتبع الماء, أفضل تطبيق شرب الماء">
     
+    <!-- Smart App Banner -->
+    <meta name="apple-itunes-app" content="app-id=6757619920">
+
     <!-- Security Headers -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data:; img-src 'self' https: data:; font-src 'self' https: data:;">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -28,7 +31,7 @@
     <meta property="og:description" content="Çoğu insan günlük su ihtiyacının yarısını bile karşılamıyor. Suu ile su takibi yap, arkadaşlarınla yarış, sağlıklı alışkanlıklar edin. Ücretsiz indir.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://suuapp.com">
-    <meta property="og:image" content="https://suuapp.com/assets/og-image.svg">
+    <meta property="og:image" content="https://suuapp.com/assets/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Suu - Su Takip Uygulaması">
@@ -39,8 +42,8 @@
 
     <!-- Hreflang for multilingual SEO -->
     <link rel="alternate" hreflang="tr" href="https://suuapp.com/hosgeldiniz.html">
-    <link rel="alternate" hreflang="en" href="https://suuapp.com/blog/en/best-water-tracking-app.html">
-    <link rel="alternate" hreflang="ar" href="https://suuapp.com/blog/ar/afdal-tatbiq-mae.html">
+    <link rel="alternate" hreflang="en" href="https://suuapp.com/hosgeldiniz-en.html">
+    <link rel="alternate" hreflang="ar" href="https://suuapp.com/hosgeldiniz-ar.html">
     <link rel="alternate" hreflang="x-default" href="https://suuapp.com/hosgeldiniz.html">
 
     <!-- Twitter Card Tags -->
@@ -49,7 +52,7 @@
     <meta name="twitter:creator" content="@SuuTakip">
     <meta name="twitter:title" content="Günde Kaç Bardak Su İçiyorsun? Muhtemelen Yeterli Değil | Suu">
     <meta name="twitter:description" content="Çoğu insan günlük su ihtiyacının yarısını bile karşılamıyor. Suu ile arkadaşlarınla yarış, sağlıklı alışkanlıklar edin.">
-    <meta name="twitter:image" content="https://suuapp.com/assets/og-image.svg">
+    <meta name="twitter:image" content="https://suuapp.com/assets/og-image.png">
     <meta name="twitter:image:alt" content="Suu Su Takip Uygulaması">
     
     <!-- Favicon -->
@@ -59,19 +62,40 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://suuapp.com/hosgeldiniz.html">
     
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    
-    <!-- Google Analytics -->
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+    <!-- Critical CSS inline for instant first paint -->
+    <style>
+        :root{--gradient-water:linear-gradient(135deg,#667eea 0%,#764ba2 100%);--white:#ffffff}
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;overflow:hidden}
+        #loading-screen{position:fixed;top:0;left:0;width:100%;height:100%;background:var(--gradient-water);display:flex;flex-direction:column;justify-content:center;align-items:center;z-index:9999;transition:opacity .3s ease,visibility .3s ease}
+        #loading-screen.hidden{opacity:0;visibility:hidden;pointer-events:none}
+        .water-drop-loader{display:flex;gap:10px;margin-bottom:20px}
+        .drop{width:20px;height:20px;background:#fff;border-radius:50% 50% 50% 70%/60% 60% 40% 40%;animation:dropAnimation 1.2s infinite ease-in-out}
+        .drop:nth-child(2){animation-delay:.15s}.drop:nth-child(3){animation-delay:.3s}
+        @keyframes dropAnimation{0%,80%,100%{transform:scale(.8) translateY(0);opacity:.7}40%{transform:scale(1.2) translateY(-20px);opacity:1}}
+        #loading-screen p{color:#fff;font-size:18px;font-weight:500}
+    </style>
+
+    <!-- Fonts — non-render-blocking -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"></noscript>
+
+    <!-- Google Analytics — deferred -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'GA_MEASUREMENT_ID'); // Replace with your actual GA ID
+        gtag('config', 'GA_MEASUREMENT_ID');
     </script>
-    
+
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="announcements.css">
@@ -130,10 +154,10 @@
             ]
         },
         "screenshot": [
-            "https://suuapp.com/assets/screenshots/ana-ekran.png",
-            "https://suuapp.com/assets/screenshots/istatikler.png",
-            "https://suuapp.com/assets/screenshots/su-ekleme.png",
-            "https://suuapp.com/assets/screenshots/hedefler.png"
+            "https://suuapp.com/assets/screenshots/ana-ekran.webp",
+            "https://suuapp.com/assets/screenshots/istatikler.webp",
+            "https://suuapp.com/assets/screenshots/su-ekleme.webp",
+            "https://suuapp.com/assets/screenshots/hedefler.webp"
         ],
         "featureList": [
             "Günlük su takibi (ml/L)",
@@ -509,6 +533,15 @@
         </div>
         <p>Suu Yükleniyor...</p>
     </div>
+    <!-- Hide loading screen as soon as first content is painted -->
+    <script>
+    requestAnimationFrame(function(){
+        requestAnimationFrame(function(){
+            var ls=document.getElementById('loading-screen');
+            if(ls){ls.classList.add('hidden');document.body.style.overflow='visible';}
+        });
+    });
+    </script>
 
     <!-- iOS News Popup -->
     <div id="ios-popup" class="ios-popup-overlay">
@@ -615,7 +648,7 @@
                 </h1>
                 <p class="hero-subtitle">Günlük su ihtiyacınızı takip edin, sağlıklı kalın</p>
                 <div class="hero-buttons">
-                    <a href="#" class="btn btn-primary" id="heroAppStoreBtn">
+                    <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" class="btn btn-primary" id="heroAppStoreBtn" target="_blank" rel="noopener">
                         <i class="fab fa-apple"></i>
                         App Store'dan İndir
                     </a>
@@ -629,22 +662,22 @@
                 <div class="phone-mockup">
                     <div class="phone-screen">
                         <div class="app-screen active">
-                            <img src="assets/screenshots/ana-ekran.png" alt="Ana Ekran" class="phone-screenshot">
+                            <img src="assets/screenshots/ana-ekran.webp" alt="Ana Ekran" class="phone-screenshot">
                         </div>
                         <div class="app-screen">
-                            <img src="assets/screenshots/istatikler.png" alt="İstatistikler" class="phone-screenshot">
+                            <img src="assets/screenshots/istatikler.webp" alt="İstatistikler" class="phone-screenshot" loading="lazy">
                         </div>
                         <div class="app-screen">
-                            <img src="assets/screenshots/su-ekleme.png" alt="Su Ekleme" class="phone-screenshot">
+                            <img src="assets/screenshots/su-ekleme.webp" alt="Su Ekleme" class="phone-screenshot" loading="lazy">
                         </div>
                         <div class="app-screen">
-                            <img src="assets/screenshots/hedefler.png" alt="Hedefler" class="phone-screenshot">
+                            <img src="assets/screenshots/hedefler.webp" alt="Hedefler" class="phone-screenshot" loading="lazy">
                         </div>
                         <div class="app-screen">
-                            <img src="assets/screenshots/hatirlama.png" alt="Hatırlatmalar" class="phone-screenshot">
+                            <img src="assets/screenshots/hatirlama.webp" alt="Hatırlatmalar" class="phone-screenshot" loading="lazy">
                         </div>
                         <div class="app-screen">
-                            <img src="assets/screenshots/profil.png" alt="Profil" class="phone-screenshot">
+                            <img src="assets/screenshots/profil.webp" alt="Profil" class="phone-screenshot" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -872,7 +905,7 @@
                 <div class="carousel-container">
                     <div class="screenshot-item active">
                         <div class="screenshot-phone">
-                            <img src="assets/screenshots/login.png" alt="Suu Giriş Ekranı" class="screenshot-image" onerror="this.src='assets/screenshots/anagir.png'">
+                            <img src="assets/screenshots/login.webp" alt="Suu Giriş Ekranı" class="screenshot-image" loading="lazy" onerror="this.src='assets/screenshots/anagir.png'">
                             <div class="screenshot-overlay">
                                 <h4>Giriş Ekranı</h4>
                                 <p>Güvenli giriş ve hızlı kayıt</p>
@@ -881,7 +914,7 @@
                     </div>
                     <div class="screenshot-item">
                         <div class="screenshot-phone">
-                            <img src="assets/screenshots/ana-ekran.png" alt="Suu Ana Ekran" class="screenshot-image" loading="lazy">
+                            <img src="assets/screenshots/ana-ekran.webp" alt="Suu Ana Ekran" class="screenshot-image" loading="lazy">
                             <div class="screenshot-overlay">
                                 <h4>Ana Ekran</h4>
                                 <p>Günlük su takibinizi kolayca yapın</p>
@@ -890,7 +923,7 @@
                     </div>
                     <div class="screenshot-item">
                         <div class="screenshot-phone">
-                            <img src="assets/screenshots/istatikler.png" alt="Suu İstatistikler" class="screenshot-image" loading="lazy">
+                            <img src="assets/screenshots/istatikler.webp" alt="Suu İstatistikler" class="screenshot-image" loading="lazy">
                             <div class="screenshot-overlay">
                                 <h4>İstatistikler</h4>
                                 <p>Detaylı grafikler ve analizler</p>
@@ -899,7 +932,7 @@
                     </div>
                     <div class="screenshot-item">
                         <div class="screenshot-phone">
-                            <img src="assets/screenshots/profil.png" alt="Suu Profil Ayarları" class="screenshot-image" loading="lazy">
+                            <img src="assets/screenshots/profil.webp" alt="Suu Profil Ayarları" class="screenshot-image" loading="lazy">
                             <div class="screenshot-overlay">
                                 <h4>Profil Ayarları</h4>
                                 <p>Kişisel bilgilerinizi yönetin</p>
@@ -908,7 +941,7 @@
                     </div>
                     <div class="screenshot-item">
                         <div class="screenshot-phone">
-                            <img src="assets/screenshots/su-ekleme.png" alt="Suu Su Ekleme" class="screenshot-image" loading="lazy">
+                            <img src="assets/screenshots/su-ekleme.webp" alt="Suu Su Ekleme" class="screenshot-image" loading="lazy">
                             <div class="screenshot-overlay">
                                 <h4>Su Ekleme</h4>
                                 <p>Kolay ve hızlı su kaydı</p>
@@ -917,7 +950,7 @@
                     </div>
                     <div class="screenshot-item">
                         <div class="screenshot-phone">
-                            <img src="assets/screenshots/hedefler.png" alt="Suu Hedefler" class="screenshot-image" loading="lazy">
+                            <img src="assets/screenshots/hedefler.webp" alt="Suu Hedefler" class="screenshot-image" loading="lazy">
                             <div class="screenshot-overlay">
                                 <h4>Hedefler</h4>
                                 <p>Kişisel hedeflerinizi belirleyin</p>
@@ -926,7 +959,7 @@
                     </div>
                     <div class="screenshot-item">
                         <div class="screenshot-phone">
-                            <img src="assets/screenshots/hatirlama.png" alt="Suu Hatırlatmalar" class="screenshot-image" loading="lazy">
+                            <img src="assets/screenshots/hatirlama.webp" alt="Suu Hatırlatmalar" class="screenshot-image" loading="lazy">
                             <div class="screenshot-overlay">
                                 <h4>Hatırlatmalar</h4>
                                 <p>Akıllı su içme hatırlatmaları</p>
@@ -935,7 +968,7 @@
                     </div>
                     <div class="screenshot-item">
                         <div class="screenshot-phone">
-                            <img src="assets/screenshots/gecmis.png" alt="Suu Geçmiş" class="screenshot-image" loading="lazy">
+                            <img src="assets/screenshots/gecmis.webp" alt="Suu Geçmiş" class="screenshot-image" loading="lazy">
                             <div class="screenshot-overlay">
                                 <h4>Geçmiş</h4>
                                 <p>Su içme geçmişinizi görün</p>
@@ -944,7 +977,7 @@
                     </div>
                     <div class="screenshot-item">
                         <div class="screenshot-phone">
-                            <img src="assets/screenshots/basarilar.png" alt="Suu Başarılar" class="screenshot-image" loading="lazy">
+                            <img src="assets/screenshots/basarilar.webp" alt="Suu Başarılar" class="screenshot-image" loading="lazy">
                             <div class="screenshot-overlay">
                                 <h4>Başarılar</h4>
                                 <p>Kazandığınız rozetler ve ödüller</p>
@@ -1110,7 +1143,7 @@
                     
                     <div class="review-card">
                         <div class="review-header">
-                            <img src="https://i.pravatar.cc/60?img=1" alt="Ayşe Yılmaz" class="reviewer-avatar">
+                            <img src="https://i.pravatar.cc/60?img=1" alt="Ayşe Yılmaz" class="reviewer-avatar" loading="lazy">
                             <div class="reviewer-info">
                                 <h4>Ayşe Yılmaz</h4>
                                 <div class="review-stars">
@@ -1128,7 +1161,7 @@
 
                     <div class="review-card">
                         <div class="review-header">
-                            <img src="https://i.pravatar.cc/60?img=2" alt="Mehmet Kaya" class="reviewer-avatar">
+                            <img src="https://i.pravatar.cc/60?img=2" alt="Mehmet Kaya" class="reviewer-avatar" loading="lazy">
                             <div class="reviewer-info">
                                 <h4>Mehmet Kaya</h4>
                                 <div class="review-stars">
@@ -1146,7 +1179,7 @@
 
                     <div class="review-card">
                         <div class="review-header">
-                            <img src="https://i.pravatar.cc/60?img=3" alt="Zeynep Çelik" class="reviewer-avatar">
+                            <img src="https://i.pravatar.cc/60?img=3" alt="Zeynep Çelik" class="reviewer-avatar" loading="lazy">
                             <div class="reviewer-info">
                                 <h4>Zeynep Çelik</h4>
                                 <div class="review-stars">
@@ -1164,7 +1197,7 @@
 
                     <div class="review-card">
                         <div class="review-header">
-                            <img src="https://i.pravatar.cc/60?img=4" alt="Ali Öztürk" class="reviewer-avatar">
+                            <img src="https://i.pravatar.cc/60?img=4" alt="Ali Öztürk" class="reviewer-avatar" loading="lazy">
                             <div class="reviewer-info">
                                 <h4>Ali Öztürk</h4>
                                 <div class="review-stars">
@@ -1182,7 +1215,7 @@
 
                     <div class="review-card">
                         <div class="review-header">
-                            <img src="https://i.pravatar.cc/60?img=5" alt="Fatma Demir" class="reviewer-avatar">
+                            <img src="https://i.pravatar.cc/60?img=5" alt="Fatma Demir" class="reviewer-avatar" loading="lazy">
                             <div class="reviewer-info">
                                 <h4>Fatma Demir</h4>
                                 <div class="review-stars">
@@ -1200,7 +1233,7 @@
 
                     <div class="review-card">
                         <div class="review-header">
-                            <img src="https://i.pravatar.cc/60?img=6" alt="Murat Şahin" class="reviewer-avatar">
+                            <img src="https://i.pravatar.cc/60?img=6" alt="Murat Şahin" class="reviewer-avatar" loading="lazy">
                             <div class="reviewer-info">
                                 <h4>Murat Şahin</h4>
                                 <div class="review-stars">
@@ -1218,7 +1251,7 @@
 
                     <div class="review-card">
                         <div class="review-header">
-                            <img src="https://i.pravatar.cc/60?img=7" alt="Elif Koç" class="reviewer-avatar">
+                            <img src="https://i.pravatar.cc/60?img=7" alt="Elif Koç" class="reviewer-avatar" loading="lazy">
                             <div class="reviewer-info">
                                 <h4>Elif Koç</h4>
                                 <div class="review-stars">
@@ -1236,7 +1269,7 @@
 
                     <div class="review-card">
                         <div class="review-header">
-                            <img src="https://i.pravatar.cc/60?img=8" alt="Can Arslan" class="reviewer-avatar">
+                            <img src="https://i.pravatar.cc/60?img=8" alt="Can Arslan" class="reviewer-avatar" loading="lazy">
                             <div class="reviewer-info">
                                 <h4>Can Arslan</h4>
                                 <div class="review-stars">
@@ -1254,7 +1287,7 @@
 
                     <div class="review-card">
                         <div class="review-header">
-                            <img src="https://i.pravatar.cc/60?img=9" alt="Sema Yıldız" class="reviewer-avatar">
+                            <img src="https://i.pravatar.cc/60?img=9" alt="Sema Yıldız" class="reviewer-avatar" loading="lazy">
                             <div class="reviewer-info">
                                 <h4>Sema Yıldız</h4>
                                 <div class="review-stars">
@@ -1272,7 +1305,7 @@
 
                     <div class="review-card">
                         <div class="review-header">
-                            <img src="https://i.pravatar.cc/60?img=10" alt="Burak Gül" class="reviewer-avatar">
+                            <img src="https://i.pravatar.cc/60?img=10" alt="Burak Gül" class="reviewer-avatar" loading="lazy">
                             <div class="reviewer-info">
                                 <h4>Burak Gül</h4>
                                 <div class="review-stars">
@@ -1290,7 +1323,7 @@
 
                     <div class="review-card">
                         <div class="review-header">
-                            <img src="https://i.pravatar.cc/60?img=11" alt="Deniz Acar" class="reviewer-avatar">
+                            <img src="https://i.pravatar.cc/60?img=11" alt="Deniz Acar" class="reviewer-avatar" loading="lazy">
                             <div class="reviewer-info">
                                 <h4>Deniz Acar</h4>
                                 <div class="review-stars">
@@ -1308,7 +1341,7 @@
 
                     <div class="review-card">
                         <div class="review-header">
-                            <img src="https://i.pravatar.cc/60?img=12" alt="Hakan Özkan" class="reviewer-avatar">
+                            <img src="https://i.pravatar.cc/60?img=12" alt="Hakan Özkan" class="reviewer-avatar" loading="lazy">
                             <div class="reviewer-info">
                                 <h4>Hakan Özkan</h4>
                                 <div class="review-stars">
@@ -1326,7 +1359,7 @@
 
                     <div class="review-card">
                         <div class="review-header">
-                            <img src="https://i.pravatar.cc/60?img=13" alt="Pınar Ateş" class="reviewer-avatar">
+                            <img src="https://i.pravatar.cc/60?img=13" alt="Pınar Ateş" class="reviewer-avatar" loading="lazy">
                             <div class="reviewer-info">
                                 <h4>Pınar Ateş</h4>
                                 <div class="review-stars">
@@ -1344,7 +1377,7 @@
 
                     <div class="review-card">
                         <div class="review-header">
-                            <img src="https://i.pravatar.cc/60?img=14" alt="Emre Doğan" class="reviewer-avatar">
+                            <img src="https://i.pravatar.cc/60?img=14" alt="Emre Doğan" class="reviewer-avatar" loading="lazy">
                             <div class="reviewer-info">
                                 <h4>Emre Doğan</h4>
                                 <div class="review-stars">
@@ -1362,7 +1395,7 @@
 
                     <div class="review-card">
                         <div class="review-header">
-                            <img src="https://i.pravatar.cc/60?img=15" alt="Gülşen Bal" class="reviewer-avatar">
+                            <img src="https://i.pravatar.cc/60?img=15" alt="Gülşen Bal" class="reviewer-avatar" loading="lazy">
                             <div class="reviewer-info">
                                 <h4>Gülşen Bal</h4>
                                 <div class="review-stars">
@@ -1380,7 +1413,7 @@
 
                     <div class="review-card">
                         <div class="review-header">
-                            <img src="https://i.pravatar.cc/60?img=16" alt="Serkan Yaman" class="reviewer-avatar">
+                            <img src="https://i.pravatar.cc/60?img=16" alt="Serkan Yaman" class="reviewer-avatar" loading="lazy">
                             <div class="reviewer-info">
                                 <h4>Serkan Yaman</h4>
                                 <div class="review-stars">
@@ -1398,7 +1431,7 @@
 
                     <div class="review-card">
                         <div class="review-header">
-                            <img src="https://i.pravatar.cc/60?img=17" alt="Aysun Kurt" class="reviewer-avatar">
+                            <img src="https://i.pravatar.cc/60?img=17" alt="Aysun Kurt" class="reviewer-avatar" loading="lazy">
                             <div class="reviewer-info">
                                 <h4>Aysun Kurt</h4>
                                 <div class="review-stars">
@@ -1416,7 +1449,7 @@
 
                     <div class="review-card">
                         <div class="review-header">
-                            <img src="https://i.pravatar.cc/60?img=18" alt="Tuncay Erdem" class="reviewer-avatar">
+                            <img src="https://i.pravatar.cc/60?img=18" alt="Tuncay Erdem" class="reviewer-avatar" loading="lazy">
                             <div class="reviewer-info">
                                 <h4>Tuncay Erdem</h4>
                                 <div class="review-stars">
@@ -1434,7 +1467,7 @@
 
                     <div class="review-card">
                         <div class="review-header">
-                            <img src="https://i.pravatar.cc/60?img=19" alt="Selda Çimen" class="reviewer-avatar">
+                            <img src="https://i.pravatar.cc/60?img=19" alt="Selda Çimen" class="reviewer-avatar" loading="lazy">
                             <div class="reviewer-info">
                                 <h4>Selda Çimen</h4>
                                 <div class="review-stars">
@@ -1452,7 +1485,7 @@
 
                     <div class="review-card">
                         <div class="review-header">
-                            <img src="https://i.pravatar.cc/60?img=20" alt="Kemal Toprak" class="reviewer-avatar">
+                            <img src="https://i.pravatar.cc/60?img=20" alt="Kemal Toprak" class="reviewer-avatar" loading="lazy">
                             <div class="reviewer-info">
                                 <h4>Kemal Toprak</h4>
                                 <div class="review-stars">
@@ -1470,7 +1503,7 @@
 
                     <div class="review-card">
                         <div class="review-header">
-                            <img src="https://i.pravatar.cc/60?img=21" alt="Neslihan Güler" class="reviewer-avatar">
+                            <img src="https://i.pravatar.cc/60?img=21" alt="Neslihan Güler" class="reviewer-avatar" loading="lazy">
                             <div class="reviewer-info">
                                 <h4>Neslihan Güler</h4>
                                 <div class="review-stars">
@@ -1488,7 +1521,7 @@
 
                     <div class="review-card">
                         <div class="review-header">
-                            <img src="https://i.pravatar.cc/60?img=22" alt="Oğuz Kılıç" class="reviewer-avatar">
+                            <img src="https://i.pravatar.cc/60?img=22" alt="Oğuz Kılıç" class="reviewer-avatar" loading="lazy">
                             <div class="reviewer-info">
                                 <h4>Oğuz Kılıç</h4>
                                 <div class="review-stars">
@@ -1506,7 +1539,7 @@
 
                     <div class="review-card">
                         <div class="review-header">
-                            <img src="https://i.pravatar.cc/60?img=23" alt="Sevgi Polat" class="reviewer-avatar">
+                            <img src="https://i.pravatar.cc/60?img=23" alt="Sevgi Polat" class="reviewer-avatar" loading="lazy">
                             <div class="reviewer-info">
                                 <h4>Sevgi Polat</h4>
                                 <div class="review-stars">
@@ -1524,7 +1557,7 @@
 
                     <div class="review-card">
                         <div class="review-header">
-                            <img src="https://i.pravatar.cc/60?img=24" alt="İbrahim Aslan" class="reviewer-avatar">
+                            <img src="https://i.pravatar.cc/60?img=24" alt="İbrahim Aslan" class="reviewer-avatar" loading="lazy">
                             <div class="reviewer-info">
                                 <h4>İbrahim Aslan</h4>
                                 <div class="review-stars">
@@ -1542,7 +1575,7 @@
 
                     <div class="review-card">
                         <div class="review-header">
-                            <img src="https://i.pravatar.cc/60?img=25" alt="Gizem Şen" class="reviewer-avatar">
+                            <img src="https://i.pravatar.cc/60?img=25" alt="Gizem Şen" class="reviewer-avatar" loading="lazy">
                             <div class="reviewer-info">
                                 <h4>Gizem Şen</h4>
                                 <div class="review-stars">
@@ -1560,7 +1593,7 @@
 
                     <div class="review-card">
                         <div class="review-header">
-                            <img src="https://i.pravatar.cc/60?img=26" alt="Ertan Kara" class="reviewer-avatar">
+                            <img src="https://i.pravatar.cc/60?img=26" alt="Ertan Kara" class="reviewer-avatar" loading="lazy">
                             <div class="reviewer-info">
                                 <h4>Ertan Kara</h4>
                                 <div class="review-stars">
@@ -1578,7 +1611,7 @@
 
                     <div class="review-card">
                         <div class="review-header">
-                            <img src="https://i.pravatar.cc/60?img=27" alt="Yasemin Özkan" class="reviewer-avatar">
+                            <img src="https://i.pravatar.cc/60?img=27" alt="Yasemin Özkan" class="reviewer-avatar" loading="lazy">
                             <div class="reviewer-info">
                                 <h4>Yasemin Özkan</h4>
                                 <div class="review-stars">
@@ -1614,7 +1647,7 @@
                 <h2>Hemen İndirin</h2>
                 <p>Sağlıklı yaşama ilk adımı atın</p>
                 <div class="download-buttons">
-                    <a href="#" class="download-btn app-store" id="appStoreBtn">
+                    <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" class="download-btn app-store" id="appStoreBtn" target="_blank" rel="noopener">
                         <i class="fab fa-apple"></i>
                         <div>
                             <span>Download on the</span>
@@ -1791,8 +1824,8 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="script.js"></script>
-    <script src="announcements.js"></script>
+    <script src="script.js" defer></script>
+    <script src="announcements.js" defer></script>
     <script>
         (function() {
             var clicks = 0, timer = null;
@@ -1807,6 +1840,16 @@
             });
         })();
     </script>
-    <script src="lang-switcher.js"></script>
+    <!-- Sticky Mobile Download Bar -->
+    <div class="sticky-download-bar" id="stickyDownloadBar">
+        <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" class="sticky-btn sticky-btn-apple" target="_blank" rel="noopener">
+            <i class="fab fa-apple"></i> App Store
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro" class="sticky-btn sticky-btn-google" target="_blank" rel="noopener">
+            <i class="fab fa-google-play"></i> Google Play
+        </a>
+    </div>
+
+    <script src="lang-switcher.js" defer></script>
 </body>
 </html>

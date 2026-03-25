@@ -45,12 +45,13 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
 }
 
 #loading-screen.hidden {
     opacity: 0;
     visibility: hidden;
+    pointer-events: none;
 }
 
 .water-drop-loader {
@@ -2041,8 +2042,17 @@ body.ticker-active .hero {
     
     .hero-buttons {
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
         gap: 15px;
+        width: 100%;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        justify-content: center;
+        min-height: 52px;
+        font-size: 16px;
+        padding: 16px 24px;
     }
     
     .phone-mockup {
@@ -2149,11 +2159,15 @@ body.ticker-active .hero {
     
     .hero-buttons {
         gap: 12px;
+        width: 100%;
     }
-    
+
     .btn {
-        padding: 12px 24px;
-        font-size: 14px;
+        padding: 16px 24px;
+        font-size: 16px;
+        min-height: 52px;
+        width: 100%;
+        justify-content: center;
     }
     
     .news-content {
@@ -3582,5 +3596,169 @@ body.ticker-active .hero {
     .phone-preview {
         position: relative;
         z-index: 1;
+    }
+}
+
+/* ===== Sticky Mobile Download Bar ===== */
+.sticky-download-bar {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background: rgba(255, 255, 255, 0.97);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 10px 12px;
+    padding-bottom: calc(10px + env(safe-area-inset-bottom, 0px));
+    box-shadow: 0 -2px 16px rgba(0, 0, 0, 0.12);
+    gap: 8px;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .sticky-download-bar {
+        display: flex;
+    }
+
+    body {
+        padding-bottom: 72px;
+    }
+}
+
+.sticky-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 13px 14px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    min-height: 48px;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+    max-width: 200px;
+}
+
+.sticky-btn:active {
+    transform: scale(0.97);
+    opacity: 0.9;
+}
+
+.sticky-btn-apple {
+    background: #000;
+    color: #fff;
+}
+
+.sticky-btn-google {
+    background: #01875f;
+    color: #fff;
+}
+
+/* ===== Touch Target Minimums (Mobile) ===== */
+@media (max-width: 768px) {
+    a, button, [role="button"], input[type="submit"], .nav-link, .footer-link {
+        min-height: 44px;
+        touch-action: manipulation;
+    }
+
+    .download-buttons {
+        align-items: stretch;
+    }
+
+    .download-btn {
+        width: 100%;
+        min-height: 52px;
+        justify-content: center;
+    }
+}
+
+/* ===== Mobile-First UX Enhancements ===== */
+@media (max-width: 768px) {
+    /* Smooth scrolling for mobile */
+    html {
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Prevent horizontal overflow */
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Faster animations on mobile for snappy feel */
+    .hero-title .title-line {
+        animation-duration: 0.6s;
+    }
+    .hero-subtitle {
+        animation-duration: 0.6s;
+        animation-delay: 0.2s;
+    }
+    .hero-buttons {
+        animation-duration: 0.6s;
+        animation-delay: 0.3s;
+    }
+
+    /* Loading screen faster dismiss on mobile */
+    #loading-screen {
+        transition: opacity 0.2s ease, visibility 0.2s ease;
+    }
+
+    /* Better tap feedback */
+    .btn:active,
+    .cta-btn:active,
+    .download-btn:active,
+    .sticky-btn:active {
+        transform: scale(0.97);
+        opacity: 0.9;
+    }
+
+    /* Ensure content doesn't shift under sticky bar */
+    .footer {
+        margin-bottom: 0;
+    }
+
+    /* Optimize images for mobile */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Better spacing on mobile */
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    /* Prevent text selection on buttons for cleaner UX */
+    .btn, .cta-btn, .download-btn, .sticky-btn {
+        -webkit-user-select: none;
+        user-select: none;
+    }
+}
+
+/* ===== Performance: Reduce paint on scroll ===== */
+.hero, .nav, .sticky-download-bar {
+    will-change: auto;
+}
+
+/* GPU-accelerated animations */
+.phone-mockup, .phone-screenshot, .drop {
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    #loading-screen {
+        transition: none;
     }
 }

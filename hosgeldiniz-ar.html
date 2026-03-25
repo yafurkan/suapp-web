@@ -17,6 +17,9 @@
     <meta name="description" content="معظم الناس يشربون نصف ما يحتاجونه فقط. Suu يتتبع شربك، يتيح لك التنافس مع أصدقائك، ويبني عادات حقيقية. 100+ مشروب، تذكيرات ذكية. مجاني لـ Android وiOS.">
     <meta name="keywords" content="تطبيق تتبع الماء, أفضل تطبيق شرب الماء, تذكير شرب الماء, تطبيق الترطيب, كمية الماء اليومية, تتبع السوائل, تطبيق صحة">
 
+    <!-- Smart App Banner -->
+    <meta name="apple-itunes-app" content="app-id=6757619920">
+
     <!-- Security Headers -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data:; img-src 'self' https: data:; font-src 'self' https: data:;">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -27,9 +30,16 @@
     <meta property="og:description" content="معظم الناس يشربون نصف ما يحتاجونه. Suu يتتبع شربك ويبني عادات حقيقية. مجاني لـ Android وiOS.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://suuapp.com/hosgeldiniz-ar.html">
-    <meta property="og:image" content="https://suuapp.com/assets/og-image.svg">
+    <meta property="og:image" content="https://suuapp.com/assets/og-image.png">
     <meta property="og:locale" content="ar_SA">
     <meta property="og:site_name" content="Suu">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SuuTakip">
+    <meta name="twitter:title" content="هل تشرب كمية كافية من الماء؟ غالباً لا — هذا التطبيق سيغيّر عاداتك">
+    <meta name="twitter:description" content="معظم الناس يشربون نصف ما يحتاجونه. Suu يتتبع شربك ويبني عادات حقيقية. مجاني لـ Android وiOS.">
+    <meta name="twitter:image" content="https://suuapp.com/assets/og-image.png">
 
     <!-- Hreflang -->
     <link rel="alternate" hreflang="tr" href="https://suuapp.com/hosgeldiniz.html">
@@ -41,9 +51,16 @@
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 
-    <!-- Fonts & Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+    <!-- Fonts & Icons — non-render-blocking -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"></noscript>
 
     <!-- Schema -->
     <script type="application/ld+json">
@@ -306,11 +323,11 @@
         <h2 class="section-title">تصميم جميل وسهل الاستخدام</h2>
         <p class="section-sub">واجهة نظيفة تركّز على شيء واحد: مساعدتك على شرب ماء أكثر بسهولة.</p>
         <div class="screenshots-row">
-            <div class="screenshot-wrap"><img src="assets/screenshots/ana-ekran.png" alt="الشاشة الرئيسية"></div>
-            <div class="screenshot-wrap"><img src="assets/screenshots/istatikler.png" alt="الإحصائيات"></div>
-            <div class="screenshot-wrap"><img src="assets/screenshots/su-ekleme.png" alt="إضافة مشروب"></div>
-            <div class="screenshot-wrap"><img src="assets/screenshots/hedefler.png" alt="الأهداف"></div>
-            <div class="screenshot-wrap"><img src="assets/screenshots/hatirlama.png" alt="التذكيرات"></div>
+            <div class="screenshot-wrap"><img src="assets/screenshots/ana-ekran.webp" alt="الشاشة الرئيسية"></div>
+            <div class="screenshot-wrap"><img src="assets/screenshots/istatikler.webp" alt="الإحصائيات"></div>
+            <div class="screenshot-wrap"><img src="assets/screenshots/su-ekleme.webp" alt="إضافة مشروب"></div>
+            <div class="screenshot-wrap"><img src="assets/screenshots/hedefler.webp" alt="الأهداف"></div>
+            <div class="screenshot-wrap"><img src="assets/screenshots/hatirlama.webp" alt="التذكيرات"></div>
         </div>
     </div>
 </section>
@@ -393,6 +410,16 @@
     <p style="margin-top:6px; font-size:11px; opacity:0.7;">تطوير <a href="https://www.linkedin.com/in/furkanfindikli/" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.8);">Furkan Mert Fındıklı</a> — إسطنبول، تركيا</p>
 </footer>
 
-<script src="lang-switcher.js"></script>
+<!-- Sticky Mobile Download Bar -->
+<div class="sticky-download-bar" id="stickyDownloadBar">
+    <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" class="sticky-btn sticky-btn-apple" target="_blank" rel="noopener">
+        <i class="fab fa-apple"></i> App Store
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro" class="sticky-btn sticky-btn-google" target="_blank" rel="noopener">
+        <i class="fab fa-google-play"></i> Google Play
+    </a>
+</div>
+
+<script src="lang-switcher.js" defer></script>
 </body>
 </html>
