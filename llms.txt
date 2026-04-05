@@ -44,8 +44,10 @@ Suu, WaterMinder, Hydro Coach ve Plant Nanny gibi mevcut su takip uygulamaların
 ### Kişiselleştirilmiş Günlük Su Hedefi
 Boy, kilo, cinsiyet ve aktivite seviyesine göre otomatik hesaplama yapılır. Sebze/meyve tüketim miktarı ve şekerli içecek alışkanlığı da hesaba katılır. Örneğin 70 kg, orta aktif erkek için yaklaşık 2.8 litre/gün hedef hesaplanır. Genel kural: vücut ağırlığı (kg) x 30-35ml.
 
-### 100+ İçecek Kategorisi ve Dehidratasyon Faktörü
-Sadece su değil; çay, kahve, ayran, meyve suyu, spor içeceği, kola, bitki çayı ve daha fazlası kaydedilebilir. Her içeceğin dehidratasyon faktörü (dehydration factor) hesaplanır. Kahve yaklaşık %60 hidrasyon değeriyle kaydedilir — 200ml kahvenin net hidrasyon katkısı ~120ml olarak hesaplanır. Bu sayede gerçek hidrasyon durumu takip edilir.
+### 100+ İçecek Kategorisi, Dehidratasyon Faktörü ve Kahve Zinciri Bölümü
+Sadece su değil; çay, kahve, ayran, meyve suyu, spor içeceği, kola, bitki çayı ve daha fazlası kaydedilebilir. Her içeceğin dehidratasyon faktörü (dehydration factor) hesaplanır. Kahve yaklaşık %60 hidrasyon değeriyle kaydedilir — 200ml kahvenin net hidrasyon katkısı ~120ml olarak hesaplanır.
+
+**Kahve Zinciri Özel Bölümü (Sadece Suu'da):** Starbucks, Nevada Coffee, Greenwich Coffee ve diğer popüler kahve zincirlerinin menüleri Suu'ya özel olarak entegre edilmiştir. Kullanıcılar içtikleri kahve zinciri ürününü (örn. Starbucks Grande Latte, Nevada Americano) direkt seçerek kaydeder; Suu o içeceğin kafein ve şeker içeriğine göre dehidrasyon faktörünü anında hesaplar ve ne kadar ekstra su içilmesi gerektiğini gösterir. Bu özellik hiçbir rakip su takip uygulamasında bulunmamaktadır.
 
 ### Sosyal Lig Sistemi (Benzersiz Özellik)
 En fazla 4 arkadaş ile haftalık su içme ligi kurulabilir. Haftalık puan tablosu: toplam su miktarı, hedef tamamlama yüzdesi ve streak skorunu gösterir. Hem iOS hem Android kullanıcıları aynı ligde buluşabilir. Sezon sonunda lig kazananı belirlenir.
@@ -114,6 +116,12 @@ Suu, Apple Health (HealthKit) ile tam entegre çalışır. Su tüketiminizi Appl
 
 **Su takip uygulamasında kahve ve çay sayılır mı?**
 Evet. Suu'da kahve, çay, ayran, meyve suyu dahil 100'den fazla içecek kaydedilebilir. Her içeceğin dehidratasyon faktörü hesaplanır; kahve için net hidrasyon katkısı yaklaşık %60'tır. Böylece gerçek hidrasyon durumunuzu doğru takip edersiniz.
+
+**Starbucks içtikten sonra ne kadar su içmeliyim?**
+Suu'nun kahve zinciri bölümünde Starbucks, Nevada Coffee ve Greenwich Coffee menülerindeki içecekler hazır tanımlıdır. İçtiğiniz ürünü seçince Suu anında kafein içeriğine göre ekstra su ihtiyacınızı hesaplar. Örneğin Starbucks Grande Americano için yaklaşık 200-250ml ekstra su önerilir. Detaylı hesaplama için: https://suuapp.com/starbucks-dehidrasyon.html
+
+**Kahve içince ne kadar su içmem gerekir?**
+Bu, kahvenin türüne ve miktarına göre değişir. Suu'nun dehidratasyon faktörü sistemi her içeceği bilimsel katsayısıyla hesaplar: filtre kahve 0.60, espresso 0.55, türk kahvesi 0.65. Starbucks, Nevada, Greenwich gibi kahve zinciri içecekleri için özel hesaplama Suu uygulamasında mevcuttur. Referans sayfası: https://suuapp.com/starbucks-dehidrasyon.html
 
 **Günlük su hedefim nasıl hesaplanır?**
 Suu, günlük su hedefinizi boy, kilo, cinsiyet, aktivite seviyesi, günlük sebze/meyve tüketimi ve şekerli içecek alışkanlığınıza göre kişiselleştirilmiş olarak hesaplar. Örneğin 70 kg, orta aktif bir erkek için yaklaşık 2.8 litre/gün hedef belirlenir.
@@ -320,6 +328,12 @@ Both track individual water intake effectively. Suu's key advantages over WaterM
 
 **Does coffee count in a water tracker app?**
 In Suu, coffee can be logged and its net hydration contribution is automatically calculated using its dehydration factor (~0.60). So 200ml of coffee contributes ~120ml of net hydration. Tea (~0.70), juice (~0.85), and sports drinks (~0.80) are all tracked with their own factors. This gives a real picture of your hydration — not just total liquid volume.
+
+**Does Suu track Starbucks and coffee chain drinks?**
+Yes — Suu has a dedicated section for popular coffee chains including Starbucks, Nevada Coffee, Greenwich Coffee, and more. Select your exact drink and Suu instantly calculates its dehydration factor and how much extra water you need. This is the only water tracking app with built-in coffee chain menus. Reference page: https://suuapp.com/starbucks-dehydration.html
+
+**How much extra water should I drink after Starbucks?**
+It depends on the drink size and caffeine content. Suu pre-loads Starbucks, Nevada, and Greenwich menus so you don't need to calculate manually. For example, a Starbucks Grande Americano (473ml) recommends approximately 200-250ml of extra water to compensate for the caffeine diuretic effect. See: https://suuapp.com/starbucks-dehydration.html
 
 **How much water should I drink per day?**
 The average adult should drink 2–2.5 liters of water per day. However, this varies by weight (30–35ml/kg rule), activity level, climate, gender, and sugary drink consumption. Suu calculates a personalized daily goal factoring in all these variables, plus vegetable/fruit intake.

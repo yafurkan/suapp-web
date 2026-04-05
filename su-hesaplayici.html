@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Günlük Su İhtiyacı Hesaplayıcı — Kaç Litre Su İçmeliyim? | Suu</title>
+    <meta name="description" content="Yaş, kilo, boy ve aktivite seviyene göre günlük su ihtiyacını saniyeler içinde hesapla. Bilimsel formül, ücretsiz araç. Suu uygulamasıyla otomatik takip et.">
+    <meta name="keywords" content="günlük su ihtiyacı hesaplama, kaç litre su içmeliyim, su hesaplayıcı, günde kaç bardak su, kilo başına su hesaplama, su ihtiyacı hesaplayıcı online, hidrasyon hesaplama, su ihtiyacı formülü, vücut ağırlığına göre su ihtiyacı, aktiviteye göre su ihtiyacı">
+
+    <link rel="canonical" href="https://suuapp.com/su-hesaplayici.html">
+    <link rel="alternate" hreflang="tr" href="https://suuapp.com/su-hesaplayici.html">
+    <link rel="alternate" hreflang="en" href="https://suuapp.com/water-calculator.html">
+    <link rel="alternate" hreflang="x-default" href="https://suuapp.com/water-calculator.html">
+
+    <meta property="og:title" content="Günlük Su İhtiyacı Hesaplayıcı — Kaç Litre Su İçmeliyim?">
+    <meta property="og:description" content="Kişisel bilgilerine göre günlük su ihtiyacını hesapla. Ücretsiz online araç. Suu uygulamasıyla otomatik takip et.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://suuapp.com/su-hesaplayici.html">
+    <meta property="og:image" content="https://suuapp.com/assets/og-image.png">
+    <meta property="og:site_name" content="Suu">
+    <meta property="og:locale" content="tr_TR">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Günlük Su İhtiyacı Hesaplayıcı">
+    <meta name="twitter:description" content="Yaş, kilo, boy ve aktivite seviyene göre günlük su ihtiyacını hesapla. Ücretsiz ve bilimsel.">
+    <meta name="twitter:image" content="https://suuapp.com/assets/og-image.png">
+
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Suu Günlük Su İhtiyacı Hesaplayıcı",
+        "description": "Yaş, kilo, boy ve aktivite seviyenize göre günlük su ihtiyacınızı hesaplayan ücretsiz online araç.",
+        "url": "https://suuapp.com/su-hesaplayici.html",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "Web",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "TRY" },
+        "author": { "@type": "Organization", "name": "Suu", "url": "https://suuapp.com" },
+        "inLanguage": "tr"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Günde kaç litre su içmeliyim?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ortalama bir yetişkin günde 2-2.5 litre su içmelidir. Ancak bu miktar; kilo (her kg için 30-35ml), aktivite seviyesi, iklim, cinsiyet ve şekerli içecek tüketimine göre değişir. Yukarıdaki hesaplayıcı tüm bu faktörleri göz önüne alarak kişisel hedefinizi belirler."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Su ihtiyacı nasıl hesaplanır?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Temel formül: vücut ağırlığı (kg) × 30-35ml. Erkekler için %5 artırım uygulanır. Aktivite seviyesine göre ek su eklenir: sedanter = +0ml, orta aktif = +%30, çok aktif = +%50. Suu uygulaması bu hesaplamayı kişisel bilgilerinizle otomatik yaparak günlük hedefinizi belirler."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "70 kg için günlük su ihtiyacı nedir?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "70 kg ağırlığında, orta aktif bir erkek için günlük su ihtiyacı yaklaşık 2.8-3.2 litredir. Aynı kilodaki, orta aktif bir kadın için yaklaşık 2.5-2.9 litredir. Spor yapıyorsanız 0.5-1 litre ekleyin."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Spor yaparken ne kadar su içmeliyim?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Antrenman öncesi 500ml, antrenman sırasında her 15-20 dakikada 200-250ml, antrenman sonrası 500ml su içilmesi önerilir. Suu uygulaması aktivite seviyenize göre günlük hedefi otomatik artırır."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"></noscript>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"></noscript>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; color: #222; background: #f0f7ff; line-height: 1.7; }
+
+        .navbar { background: white; padding: 0 20px; height: 64px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 10px rgba(0,0,0,0.07); position: sticky; top: 0; z-index: 100; }
+        .nav-logo { display: flex; align-items: center; gap: 8px; font-size: 20px; font-weight: 800; color: #4A90D9; text-decoration: none; }
+        .nav-links { display: flex; gap: 20px; }
+        .nav-links a { color: #555; text-decoration: none; font-size: 14px; font-weight: 500; }
+        .nav-links a:hover { color: #4A90D9; }
+
+        .hero { background: linear-gradient(135deg, #4A90D9 0%, #29B6F6 50%, #00ACC1 100%); color: white; padding: 56px 20px 90px; text-align: center; position: relative; overflow: hidden; }
+        .hero::after { content:''; position:absolute; bottom:-1px; left:0; right:0; height:60px; background:#f0f7ff; clip-path:ellipse(55% 100% at 50% 100%); }
+        .hero-badge { display:inline-block; background:rgba(255,255,255,0.18); padding:5px 16px; border-radius:20px; font-size:12px; font-weight:700; margin-bottom:18px; }
+        .hero h1 { font-size:clamp(1.8rem,4vw,2.8rem); font-weight:800; line-height:1.2; max-width:680px; margin:0 auto 14px; }
+        .hero p { font-size:1.05rem; opacity:0.92; max-width:520px; margin:0 auto; }
+
+        .container { max-width:900px; margin:0 auto; padding:0 20px; }
+        .section { padding:52px 20px; }
+        .section-title { font-size:clamp(1.4rem,3vw,2rem); font-weight:800; color:#1a1a2e; margin-bottom:10px; }
+        .section-sub { color:#666; margin-bottom:32px; font-size:1rem; }
+
+        /* Hesaplayıcı kart */
+        .calc-card { background:white; border-radius:24px; box-shadow:0 8px 40px rgba(74,144,217,0.12); padding:36px; margin:-40px 0 40px; position:relative; z-index:10; }
+        .calc-steps { display:flex; gap:8px; margin-bottom:28px; }
+        .step-dot { flex:1; height:4px; border-radius:4px; background:#e5e7eb; transition:background 0.3s; }
+        .step-dot.active { background:#4A90D9; }
+        .step-dot.done { background:#29B6F6; }
+
+        .form-step { display:none; }
+        .form-step.active { display:block; }
+
+        .step-title { font-size:1.1rem; font-weight:700; color:#1a1a2e; margin-bottom:22px; }
+        .form-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px; margin-bottom:20px; }
+        @media(max-width:600px){ .form-grid{ grid-template-columns:1fr; } }
+        .form-group label { display:block; font-size:12px; font-weight:700; color:#888; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:8px; }
+        .form-group input, .form-group select { width:100%; padding:12px 16px; border:2px solid #e5e7eb; border-radius:12px; font-size:1rem; font-family:inherit; color:#222; background:white; transition:border-color 0.2s; }
+        .form-group input:focus, .form-group select:focus { outline:none; border-color:#4A90D9; }
+        .form-group input.error { border-color:#ef4444; }
+
+        .gender-row { display:flex; gap:12px; }
+        .gender-btn { flex:1; padding:12px; border:2px solid #e5e7eb; border-radius:12px; background:white; cursor:pointer; font-family:inherit; font-weight:600; color:#555; font-size:0.9rem; transition:all 0.2s; }
+        .gender-btn.selected { border-color:#4A90D9; background:#e8f4fd; color:#1565C0; }
+
+        .activity-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:10px; margin-bottom:20px; }
+        .activity-btn { padding:12px 10px; border:2px solid #e5e7eb; border-radius:12px; background:white; cursor:pointer; font-family:inherit; text-align:center; transition:all 0.2s; }
+        .activity-btn .act-icon { font-size:1.4rem; display:block; margin-bottom:6px; }
+        .activity-btn .act-label { font-size:12px; font-weight:700; color:#555; }
+        .activity-btn .act-desc { font-size:10px; color:#aaa; }
+        .activity-btn.selected { border-color:#4A90D9; background:#e8f4fd; }
+        .activity-btn.selected .act-label { color:#1565C0; }
+
+        .btn-row { display:flex; gap:12px; margin-top:8px; }
+        .btn-back { padding:14px 24px; border:2px solid #e5e7eb; border-radius:12px; background:white; font-family:inherit; font-weight:700; color:#555; cursor:pointer; transition:all 0.2s; }
+        .btn-back:hover { border-color:#4A90D9; color:#4A90D9; }
+        .btn-next { flex:1; padding:14px; border:none; border-radius:12px; background:linear-gradient(135deg,#4A90D9,#29B6F6); color:white; font-family:inherit; font-weight:700; font-size:1rem; cursor:pointer; transition:opacity 0.2s; }
+        .btn-next:hover { opacity:0.9; }
+
+        .error-msg { background:#fef2f2; border-left:4px solid #ef4444; padding:10px 14px; border-radius:8px; font-size:0.88rem; color:#dc2626; margin-bottom:14px; display:none; }
+        .error-msg.show { display:block; }
+
+        /* Sonuç */
+        .result-box { text-align:center; }
+        .result-ring { width:160px; height:160px; border-radius:50%; background:conic-gradient(#4A90D9 0deg 288deg, #e5e7eb 288deg); display:flex; align-items:center; justify-content:center; margin:0 auto 24px; position:relative; }
+        .result-ring::before { content:''; position:absolute; inset:12px; background:white; border-radius:50%; }
+        .result-inner { position:relative; text-align:center; }
+        .result-num { font-size:2.4rem; font-weight:800; color:#4A90D9; line-height:1; }
+        .result-unit { font-size:0.85rem; color:#888; font-weight:600; }
+        .result-breakdown { display:flex; gap:16px; justify-content:center; margin:20px 0; flex-wrap:wrap; }
+        .breakdown-item { background:#f0f7ff; border-radius:12px; padding:12px 20px; text-align:center; }
+        .breakdown-num { font-size:1.3rem; font-weight:800; color:#1a1a2e; }
+        .breakdown-label { font-size:11px; color:#888; font-weight:600; text-transform:uppercase; }
+        .result-msg { background:#e8f4fd; border-radius:12px; padding:16px; font-size:0.9rem; color:#1565C0; margin:20px 0; line-height:1.6; }
+        .result-tips { text-align:left; margin:20px 0; }
+        .result-tips h4 { font-size:0.95rem; font-weight:700; color:#1a1a2e; margin-bottom:10px; }
+        .tip-item { display:flex; gap:10px; align-items:flex-start; margin-bottom:8px; font-size:0.88rem; color:#555; }
+        .tip-icon { color:#4A90D9; flex-shrink:0; margin-top:2px; }
+        .restart-btn { display:inline-flex; align-items:center; gap:8px; padding:12px 24px; border:2px solid #e5e7eb; border-radius:12px; background:white; font-family:inherit; font-weight:600; color:#555; cursor:pointer; margin-top:8px; }
+
+        /* App CTA */
+        .app-cta { background:linear-gradient(135deg,#4A90D9,#29B6F6); border-radius:20px; padding:32px; text-align:center; color:white; margin:32px 0; }
+        .app-cta h3 { font-size:1.3rem; font-weight:800; margin-bottom:8px; }
+        .app-cta p { opacity:0.9; margin-bottom:20px; font-size:0.9rem; }
+        .store-btns { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+        .btn-store { display:inline-flex; align-items:center; gap:8px; padding:11px 20px; border-radius:50px; font-weight:700; font-size:0.88rem; text-decoration:none; transition:transform 0.2s; }
+        .btn-ios { background:white; color:#1a1a2e; }
+        .btn-android { background:rgba(255,255,255,0.15); color:white; border:2px solid rgba(255,255,255,0.5); }
+        .btn-store:hover { transform:translateY(-2px); }
+
+        /* Bilgi bölümü */
+        .info-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:18px; margin-top:24px; }
+        .info-card { background:white; border-radius:16px; padding:22px; box-shadow:0 2px 12px rgba(0,0,0,0.05); }
+        .info-card .icon { font-size:1.8rem; margin-bottom:10px; }
+        .info-card h3 { font-size:0.95rem; font-weight:700; color:#1a1a2e; margin-bottom:6px; }
+        .info-card p { font-size:0.85rem; color:#666; line-height:1.6; }
+
+        /* Tablo */
+        .ref-table { width:100%; border-collapse:collapse; background:white; border-radius:14px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.05); }
+        .ref-table thead { background:#1a1a2e; color:white; }
+        .ref-table th { padding:12px 16px; text-align:left; font-size:12px; font-weight:700; text-transform:uppercase; }
+        .ref-table td { padding:11px 16px; font-size:0.9rem; border-bottom:1px solid #f0f0f0; }
+        .ref-table tr:last-child td { border-bottom:none; }
+        .ref-table tr:hover td { background:#f0f7ff; }
+
+        /* FAQ */
+        .faq-list { display:flex; flex-direction:column; gap:10px; }
+        .faq-item { background:white; border-radius:14px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.04); }
+        .faq-q { padding:16px 20px; font-weight:700; color:#1a1a2e; cursor:pointer; display:flex; justify-content:space-between; align-items:center; user-select:none; font-size:0.95rem; }
+        .faq-q:hover { background:#f8f9fa; }
+        .faq-a { padding:0 20px; max-height:0; overflow:hidden; transition:max-height 0.3s ease, padding 0.3s; font-size:0.9rem; color:#555; line-height:1.7; }
+        .faq-a.open { max-height:300px; padding:0 20px 16px; }
+        .faq-icon { transition:transform 0.3s; color:#4A90D9; font-size:0.85rem; }
+        .faq-icon.open { transform:rotate(180deg); }
+
+        footer { background:#1a1a2e; color:rgba(255,255,255,0.6); padding:24px 20px; text-align:center; font-size:13px; }
+        footer a { color:rgba(255,255,255,0.7); text-decoration:none; margin:0 8px; }
+        footer a:hover { color:white; }
+
+        @media(max-width:600px){ .nav-links { display:none; } }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="hosgeldiniz.html" class="nav-logo"><i class="fas fa-tint"></i> Suu</a>
+    <div class="nav-links">
+        <a href="hosgeldiniz.html">Ana Sayfa</a>
+        <a href="blog.html">Blog</a>
+        <a href="starbucks-dehidrasyon.html">Kahve Hesabı</a>
+        <a href="faq.html">SSS</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-badge">💧 Ücretsiz Online Araç</div>
+    <h1>Günlük Su İhtiyacı<br>Hesaplayıcı</h1>
+    <p>Yaş, kilo, boy ve aktivite seviyene göre tam olarak ne kadar su içmen gerektiğini öğren.</p>
+</section>
+
+<div class="container">
+
+    <!-- Hesaplayıcı kart -->
+    <div class="calc-card">
+        <div class="calc-steps">
+            <div class="step-dot active" id="dot1"></div>
+            <div class="step-dot" id="dot2"></div>
+            <div class="step-dot" id="dot3"></div>
+        </div>
+
+        <div class="error-msg" id="errorMsg"></div>
+
+        <!-- Adım 1: Kişisel bilgiler -->
+        <div class="form-step active" id="step1">
+            <div class="step-title">1 / 2 &nbsp;— Kişisel Bilgilerin</div>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>Yaş</label>
+                    <input type="number" id="age" placeholder="örn. 28" min="1" max="120">
+                </div>
+                <div class="form-group">
+                    <label>Kilo (kg)</label>
+                    <input type="number" id="weight" placeholder="örn. 70" min="20" max="300">
+                </div>
+                <div class="form-group">
+                    <label>Boy (cm)</label>
+                    <input type="number" id="height" placeholder="örn. 175" min="50" max="250">
+                </div>
+            </div>
+            <div class="form-group" style="margin-bottom:20px;">
+                <label>Cinsiyet</label>
+                <div class="gender-row">
+                    <button class="gender-btn" id="btnMale" onclick="selectGender('male')">♂ Erkek</button>
+                    <button class="gender-btn" id="btnFemale" onclick="selectGender('female')">♀ Kadın</button>
+                </div>
+            </div>
+            <div class="btn-row">
+                <button class="btn-next" onclick="goStep2()">Devam Et &nbsp;<i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+
+        <!-- Adım 2: Aktivite -->
+        <div class="form-step" id="step2">
+            <div class="step-title">2 / 2 &nbsp;— Aktivite Seviyesi</div>
+            <div class="activity-grid">
+                <button class="activity-btn" id="act_sedentary" onclick="selectActivity('sedentary')">
+                    <span class="act-icon">💺</span>
+                    <span class="act-label">Hareketsiz</span>
+                    <span class="act-desc">Masa başı iş</span>
+                </button>
+                <button class="activity-btn" id="act_light" onclick="selectActivity('light')">
+                    <span class="act-icon">🚶</span>
+                    <span class="act-label">Az Aktif</span>
+                    <span class="act-desc">Haftada 1-2 gün</span>
+                </button>
+                <button class="activity-btn" id="act_moderate" onclick="selectActivity('moderate')">
+                    <span class="act-icon">🏃</span>
+                    <span class="act-label">Orta Aktif</span>
+                    <span class="act-desc">Haftada 3-4 gün</span>
+                </button>
+                <button class="activity-btn" id="act_active" onclick="selectActivity('active')">
+                    <span class="act-icon">🏋️</span>
+                    <span class="act-label">Çok Aktif</span>
+                    <span class="act-desc">Haftada 5+ gün</span>
+                </button>
+                <button class="activity-btn" id="act_extra" onclick="selectActivity('extra')">
+                    <span class="act-icon">🏆</span>
+                    <span class="act-label">Profesyonel</span>
+                    <span class="act-desc">Sporcu / Antrenör</span>
+                </button>
+            </div>
+            <div class="btn-row">
+                <button class="btn-back" onclick="goStep1()"><i class="fas fa-arrow-left"></i> &nbsp;Geri</button>
+                <button class="btn-next" onclick="calculate()"><i class="fas fa-calculator"></i> &nbsp;Hesapla</button>
+            </div>
+        </div>
+
+        <!-- Adım 3: Sonuç -->
+        <div class="form-step" id="step3">
+            <div class="result-box">
+                <div class="result-ring" id="resultRing">
+                    <div class="result-inner">
+                        <div class="result-num" id="resultNum">2.5</div>
+                        <div class="result-unit">Litre / Gün</div>
+                    </div>
+                </div>
+                <div class="result-breakdown">
+                    <div class="breakdown-item">
+                        <div class="breakdown-num" id="cupsNum">10</div>
+                        <div class="breakdown-label">Bardak (~250ml)</div>
+                    </div>
+                    <div class="breakdown-item">
+                        <div class="breakdown-num" id="mlNum">2500</div>
+                        <div class="breakdown-label">Mililitre</div>
+                    </div>
+                    <div class="breakdown-item">
+                        <div class="breakdown-num" id="bottlesNum">5</div>
+                        <div class="breakdown-label">Şişe (500ml)</div>
+                    </div>
+                </div>
+                <div class="result-msg" id="resultMsg">Hesaplanıyor...</div>
+                <div class="result-tips">
+                    <h4>💡 Nasıl Ulaşırsın?</h4>
+                    <div class="tip-item"><i class="fas fa-circle tip-icon" style="font-size:6px; margin-top:6px;"></i><span>Sabah uyanır uyanmaz 1 büyük bardak (300ml) su iç</span></div>
+                    <div class="tip-item"><i class="fas fa-circle tip-icon" style="font-size:6px; margin-top:6px;"></i><span>Her öğün öncesi 1 bardak su iç — hem hidrasyon hem de yemek kontrolü sağlar</span></div>
+                    <div class="tip-item"><i class="fas fa-circle tip-icon" style="font-size:6px; margin-top:6px;"></i><span>Telefon başına her gelişinde küçük bir yudum al</span></div>
+                    <div class="tip-item"><i class="fas fa-circle tip-icon" style="font-size:6px; margin-top:6px;"></i><span>Spor sırasında her 20 dakikada 200ml iç</span></div>
+                    <div class="tip-item"><i class="fas fa-circle tip-icon" style="font-size:6px; margin-top:6px;"></i><span>Kahve içtikten sonra ekstra su iç — <a href="starbucks-dehidrasyon.html" style="color:#4A90D9; font-weight:600;">ne kadar? →</a></span></div>
+                </div>
+
+                <div class="app-cta">
+                    <h3>Bu Hedefi Suu ile Takip Et</h3>
+                    <p>Hesapladığın hedefi Suu uygulamasına gir — akıllı hatırlatmalar, lig sistemi ve ayrıntılı istatistiklerle hedefe ulaş.</p>
+                    <div class="store-btns">
+                        <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" class="btn-store btn-ios" target="_blank" rel="noopener">
+                            <i class="fab fa-apple"></i> App Store
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro" class="btn-store btn-android" target="_blank" rel="noopener">
+                            <i class="fab fa-google-play"></i> Google Play
+                        </a>
+                    </div>
+                </div>
+
+                <button class="restart-btn" onclick="restart()"><i class="fas fa-redo"></i> Tekrar Hesapla</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bilgi kartları -->
+    <section class="section" style="padding-top:0">
+        <h2 class="section-title">Su İhtiyacını Etkileyen Faktörler</h2>
+        <div class="info-grid">
+            <div class="info-card">
+                <div class="icon">⚖️</div>
+                <h3>Vücut Ağırlığı</h3>
+                <p>Temel kural: kilogram başına 30-35ml. 70 kg için yaklaşık 2.1-2.45L baz hesabı yapılır. Kas kitlesi yüksek bireyler biraz daha fazlasına ihtiyaç duyar.</p>
+            </div>
+            <div class="info-card">
+                <div class="icon">🏃</div>
+                <h3>Aktivite Seviyesi</h3>
+                <p>Yoğun egzersiz sırasında saatte 0.5-2L ter kaybı yaşanabilir. Çok aktif bireylerin günlük su ihtiyacı sedanter bireylere kıyasla %50-70 daha fazladır.</p>
+            </div>
+            <div class="info-card">
+                <div class="icon">🌡️</div>
+                <h3>İklim & Sıcaklık</h3>
+                <p>Sıcak ve nemli havalarda ter yoluyla su kaybı artar. Yaz aylarında su ihtiyacınız kış aylarına göre 0.5-1L fazla olabilir.</p>
+            </div>
+            <div class="info-card">
+                <div class="icon">☕</div>
+                <h3>Kahve & Çay</h3>
+                <p>Kafeinli içecekler hafif diüretik etki yapar. Günde 3+ fincan kahve içiyorsanız 200-300ml ekstra su ekleyin. <a href="starbucks-dehidrasyon.html" style="color:#4A90D9;">Detaylı hesaplama →</a></p>
+            </div>
+            <div class="info-card">
+                <div class="icon">🥗</div>
+                <h3>Yiyecek Kaynaklı Su</h3>
+                <p>Günlük su ihtiyacının %20-30'u yiyeceklerden karşılanır. Bol sebze-meyve yiyenler içecek yoluyla biraz daha az suya ihtiyaç duyar.</p>
+            </div>
+            <div class="info-card">
+                <div class="icon">🏥</div>
+                <h3>Sağlık Durumu</h3>
+                <p>Hamilelik, emzirme, böbrek taşı veya bazı ilaçlar su ihtiyacını değiştirir. Bu durumlarda doktorunuza danışın.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Referans tablosu -->
+    <section class="section" style="padding-top:0">
+        <h2 class="section-title">Kiloya Göre Su İhtiyacı Tablosu</h2>
+        <p class="section-sub">Ortalama aktif, yetişkin bireyler için referans değerler.</p>
+        <table class="ref-table">
+            <thead>
+                <tr>
+                    <th>Vücut Ağırlığı</th>
+                    <th>Sedanter (Hareketsiz)</th>
+                    <th>Orta Aktif</th>
+                    <th>Çok Aktif</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><strong>50 kg</strong></td><td>1.5 – 1.8 L</td><td>2.0 – 2.2 L</td><td>2.5 – 2.8 L</td></tr>
+                <tr><td><strong>60 kg</strong></td><td>1.8 – 2.1 L</td><td>2.3 – 2.6 L</td><td>2.8 – 3.2 L</td></tr>
+                <tr><td><strong>70 kg</strong></td><td>2.1 – 2.5 L</td><td>2.7 – 3.0 L</td><td>3.2 – 3.7 L</td></tr>
+                <tr><td><strong>80 kg</strong></td><td>2.4 – 2.8 L</td><td>3.1 – 3.4 L</td><td>3.7 – 4.2 L</td></tr>
+                <tr><td><strong>90 kg</strong></td><td>2.7 – 3.2 L</td><td>3.5 – 3.8 L</td><td>4.1 – 4.7 L</td></tr>
+                <tr><td><strong>100 kg</strong></td><td>3.0 – 3.5 L</td><td>3.8 – 4.2 L</td><td>4.5 – 5.0 L</td></tr>
+            </tbody>
+        </table>
+        <p style="font-size:0.82rem; color:#aaa; margin-top:10px;">* Değerler genel bir referanstır. Doktorunuzun önerileri her zaman önceliklidir.</p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" style="padding-top:0">
+        <h2 class="section-title">Sık Sorulan Sorular</h2>
+        <div class="faq-list">
+            <div class="faq-item">
+                <div class="faq-q" onclick="toggleFaq(this)">Günde 2 litre su yeterli mi? <i class="fas fa-chevron-down faq-icon"></i></div>
+                <div class="faq-a">Sedanter, ortalama kilolu bir yetişkin için 2 litre yeterli olabilir. Ancak spor yapıyorsanız, ağır kiloluysanız veya sıcak iklimde yaşıyorsanız daha fazlasına ihtiyaç duyarsınız. Yukarıdaki hesaplayıcı kişisel durumunuza özel değer hesaplar.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q" onclick="toggleFaq(this)">Çok fazla su içmek zararlı mı? <i class="fas fa-chevron-down faq-icon"></i></div>
+                <div class="faq-a">Nadir de olsa aşırı su tüketimi "hiponatremi" (kan sodyumunun düşmesi) riski taşır. Bu genellikle kısa sürede 3-4 litreden fazla içilmesi durumunda görülür. Normal koşullarda sağlıklı böbrekleri olan biri için bu risk minimal düzeydedir. Saatte maksimum 0.8-1L içilmesi önerilir.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q" onclick="toggleFaq(this)">Sabah aç karnına su içmek faydalı mı? <i class="fas fa-chevron-down faq-icon"></i></div>
+                <div class="faq-a">Evet, sabah uyanır uyanmaz 1-2 bardak su içmek metabolizmayı harekete geçirir, gece boyunca oluşan sıvı açığını kapatır ve sindirim sistemini hazırlar. Pek çok sağlık uzmanı bunu önerir. Suu uygulaması sabah hatırlatması kurmanıza olanak tanır.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q" onclick="toggleFaq(this)">Susuzluğun belirtileri nelerdir? <i class="fas fa-chevron-down faq-icon"></i></div>
+                <div class="faq-a">Erken belirtiler: hafif baş ağrısı, konsantrasyon güçlüğü, ağız kuruluğu, koyu sarı idrar. Orta derece: baş dönmesi, yorgunluk, kalp çarpıntısı. Susuzluk hissediyorsanız zaten biraz geç kalmışsınızdır — Suu uygulaması hedefinizin gerisinde kaldığınızda sizi hatırlatır.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q" onclick="toggleFaq(this)">Kahve ve çay su yerine geçer mi? <i class="fas fa-chevron-down faq-icon"></i></div>
+                <div class="faq-a">Kısmen. Çay ve kahve de sıvı içerir ve vücudun sıvı ihtiyacına katkı sağlar, ancak kafeinin hafif diüretik etkisi nedeniyle 100% su gibi sayılmaz. Filtre kahvede hidrasyon katkısı yaklaşık %60, çayda %70'tir. <a href="starbucks-dehidrasyon.html" style="color:#4A90D9;">Kahve dehidrasyon hesaplayıcısı →</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- İlgili linkler -->
+    <section class="section" style="padding-top:0; padding-bottom:48px;">
+        <h2 class="section-title">İlgili Araçlar ve Yazılar</h2>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px; margin-top:20px;">
+            <a href="starbucks-dehidrasyon.html" style="background:white;border-radius:14px;padding:18px;box-shadow:0 2px 10px rgba(0,0,0,0.06);text-decoration:none;color:inherit;display:block;">
+                <div style="font-size:11px;font-weight:700;color:#6F4E37;text-transform:uppercase;margin-bottom:6px;">Araç</div>
+                <div style="font-weight:700;color:#222;font-size:0.9rem;">Kahve Dehidrasyon Hesaplayıcı</div>
+            </a>
+            <a href="blog/gunluk-ne-kadar-su-icmeli.html" style="background:white;border-radius:14px;padding:18px;box-shadow:0 2px 10px rgba(0,0,0,0.06);text-decoration:none;color:inherit;display:block;">
+                <div style="font-size:11px;font-weight:700;color:#4A90D9;text-transform:uppercase;margin-bottom:6px;">Blog</div>
+                <div style="font-weight:700;color:#222;font-size:0.9rem;">Günde Kaç Litre Su İçmeliyim?</div>
+            </a>
+            <a href="blog/su-icmenin-faydalari.html" style="background:white;border-radius:14px;padding:18px;box-shadow:0 2px 10px rgba(0,0,0,0.06);text-decoration:none;color:inherit;display:block;">
+                <div style="font-size:11px;font-weight:700;color:#4A90D9;text-transform:uppercase;margin-bottom:6px;">Blog</div>
+                <div style="font-weight:700;color:#222;font-size:0.9rem;">Su İçmenin 10 Faydası</div>
+            </a>
+            <a href="blog/susuzluk-belirtileri.html" style="background:white;border-radius:14px;padding:18px;box-shadow:0 2px 10px rgba(0,0,0,0.06);text-decoration:none;color:inherit;display:block;">
+                <div style="font-size:11px;font-weight:700;color:#4A90D9;text-transform:uppercase;margin-bottom:6px;">Blog</div>
+                <div style="font-weight:700;color:#222;font-size:0.9rem;">Susuzluğun 10 Gizli Belirtisi</div>
+            </a>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 Suu — Su Takip Uygulaması &nbsp;|&nbsp;
+        <a href="hosgeldiniz.html">Ana Sayfa</a> &nbsp;
+        <a href="water-calculator.html">English</a> &nbsp;
+        <a href="gizlilik-politikasi.html">Gizlilik</a>
+    </p>
+    <p style="margin-top:6px;font-size:11px;opacity:0.6;">Geliştirici: <a href="https://www.linkedin.com/in/furkanfindikli/" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.7)">Furkan Mert Fındıklı</a> — İstanbul, Türkiye</p>
+</footer>
+
+<script>
+let step = 1, gender = null, activity = null;
+
+function showError(msg) {
+    const el = document.getElementById('errorMsg');
+    el.textContent = msg;
+    el.classList.add('show');
+    setTimeout(() => el.classList.remove('show'), 3500);
+}
+
+function selectGender(g) {
+    gender = g;
+    document.getElementById('btnMale').classList.toggle('selected', g === 'male');
+    document.getElementById('btnFemale').classList.toggle('selected', g === 'female');
+}
+
+function selectActivity(a) {
+    activity = a;
+    ['sedentary','light','moderate','active','extra'].forEach(k => {
+        document.getElementById('act_'+k).classList.toggle('selected', k === a);
+    });
+}
+
+function goStep1() {
+    document.getElementById('step2').classList.remove('active');
+    document.getElementById('step1').classList.add('active');
+    document.getElementById('dot2').classList.remove('active','done');
+    document.getElementById('dot1').classList.add('active');
+    step = 1;
+}
+
+function goStep2() {
+    const age = parseInt(document.getElementById('age').value);
+    const weight = parseFloat(document.getElementById('weight').value);
+    const height = parseInt(document.getElementById('height').value);
+    if (!age || age < 1 || age > 120) { showError('Geçerli bir yaş girin (1-120)'); return; }
+    if (!weight || weight < 20 || weight > 300) { showError('Geçerli bir kilo girin (20-300 kg)'); return; }
+    if (!height || height < 50 || height > 250) { showError('Geçerli bir boy girin (50-250 cm)'); return; }
+    if (!gender) { showError('Cinsiyetinizi seçin'); return; }
+
+    document.getElementById('step1').classList.remove('active');
+    document.getElementById('step2').classList.add('active');
+    document.getElementById('dot1').classList.remove('active');
+    document.getElementById('dot1').classList.add('done');
+    document.getElementById('dot2').classList.add('active');
+    step = 2;
+}
+
+function calculate() {
+    if (!activity) { showError('Aktivite seviyenizi seçin'); return; }
+
+    const age = parseInt(document.getElementById('age').value);
+    const weight = parseFloat(document.getElementById('weight').value);
+
+    let base = weight * 35;
+    if (gender === 'male') base *= 1.05;
+    if (age < 18) base *= 1.1;
+    else if (age > 65) base *= 0.95;
+
+    const mult = { sedentary:1.0, light:1.1, moderate:1.3, active:1.5, extra:1.7 };
+    base *= mult[activity] || 1.0;
+
+    const liters = Math.round(Math.max(1.5, Math.min(5.0, base / 1000)) * 10) / 10;
+    const ml = Math.round(liters * 1000);
+    const cups = Math.round(ml / 250);
+    const bottles = Math.round(ml / 500 * 10) / 10;
+
+    document.getElementById('resultNum').textContent = liters;
+    document.getElementById('mlNum').textContent = ml;
+    document.getElementById('cupsNum').textContent = cups;
+    document.getElementById('bottlesNum').textContent = bottles;
+
+    const msgs = {
+        sedentary: `Masa başında çalışıyorsun, bu yüzden düzenli hatırlatmalar kritik. Her saat başı kalktığında bir bardak su iç.`,
+        light: `Az aktif bir yaşam tarzın var. Öğünler arasına su molaları ekle ve telefon başında su şişesi bulundur.`,
+        moderate: `Aktif bir yaşam tarzın için ${liters}L ideal. Antrenman öncesi ve sonrası ekstra 500ml eklemeyi unutma.`,
+        active: `Yoğun antrenman yapıyorsun. ${liters}L günlük bazın — spor günlerinde 500ml-1L daha ekle.`,
+        extra: `Profesyonel aktivite seviyesinde ${liters}L minimum. Terleme miktarına göre günde 5L'ye kadar çıkabilirsin.`
+    };
+    document.getElementById('resultMsg').textContent = msgs[activity] || `Günlük su hedefiniz ${liters} litredir.`;
+
+    // Ring animasyonu
+    const pct = Math.min(100, Math.round((liters / 5) * 100));
+    const deg = Math.round(pct * 3.6);
+    document.getElementById('resultRing').style.background =
+        `conic-gradient(#4A90D9 0deg ${deg}deg, #e5e7eb ${deg}deg)`;
+
+    document.getElementById('step2').classList.remove('active');
+    document.getElementById('step3').classList.add('active');
+    document.getElementById('dot2').classList.remove('active');
+    document.getElementById('dot2').classList.add('done');
+    document.getElementById('dot3').classList.add('active','done');
+    step = 3;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function restart() {
+    gender = null; activity = null;
+    document.getElementById('step3').classList.remove('active');
+    document.getElementById('step1').classList.add('active');
+    document.getElementById('age').value = '';
+    document.getElementById('weight').value = '';
+    document.getElementById('height').value = '';
+    document.getElementById('btnMale').classList.remove('selected');
+    document.getElementById('btnFemale').classList.remove('selected');
+    ['sedentary','light','moderate','active','extra'].forEach(k =>
+        document.getElementById('act_'+k).classList.remove('selected'));
+    document.getElementById('dot1').classList.add('active');
+    document.getElementById('dot1').classList.remove('done');
+    document.getElementById('dot2').classList.remove('active','done');
+    document.getElementById('dot3').classList.remove('active','done');
+    step = 1;
+}
+
+function toggleFaq(el) {
+    const ans = el.nextElementSibling;
+    const icon = el.querySelector('.faq-icon');
+    ans.classList.toggle('open');
+    icon.classList.toggle('open');
+}
+</script>
+
+</body>
+</html>
