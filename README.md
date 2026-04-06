@@ -1,49 +1,110 @@
-# Su Takip Website
+# Suu — Su Takip Uygulaması Web Sitesi
 
-Modern ve responsive su takip uygulaması web sitesi.
+Suu'nun pazarlama ve SEO web sitesi. [suuapp.com](https://suuapp.com) adresinde canlı.
 
-## 🚀 Canlı Demo
-[Web sitesini görüntüle](https://suuapp.com)
+## Uygulama Hakkında
 
-## 📋 Özellikler
-- Responsive tasarım
-- Modern kullanıcı arayüzü  
-- Animasyonlar ve geçişler
-- Mobil uyumlu
-- Gerçek uygulama ekran görüntüleri
+Suu, Türkiye kökenli sosyal su takip uygulaması. Android ve iOS için ücretsiz.
 
-## 🛠️ Teknolojiler
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
+- **Google Play:** 4.9★ · 2.800+ değerlendirme
+- **App Store:** 5.0★
+- **Dil desteği:** Türkçe, Arapça
+- **Hedef pazar:** Türkiye ve MENA
 
-## 📦 Kurulum
-1. Projeyi klonlayın
-2. Ekran görüntülerini `assets/screenshots/` klasörüne ekleyin
-3. `index.html` dosyasını tarayıcıda açın
+## Mevcut Özellikler
 
-## 📱 Ekran Görüntüleri Ekleme
-Aşağıdaki ekran görüntülerini `assets/screenshots/` klasörüne ekleyin:
+### Temel
+- Kişiselleştirilmiş günlük su hedefi (boy, kilo, cinsiyet, aktivite bazlı)
+- 100+ içecek kategorisi — kahve, çay, ayran, meyve suyu, spor içeceği dahil
+- Her içeceğin dehidratasyon faktörü otomatik hesaplanıyor
+- Ücretsiz deneme süresi mevcut
 
-- `ana-ekran.png` - Uygulamanın ana ekranı
-- `istatistikler.png` - İstatistikler sayfası
-- `profil.png` - Profil ayarları sayfası
-- `hatirlatmalar.png` - Hatırlatmalar sayfası
-- `hedefler.png` - Hedefler sayfası
+### Kahve Zinciri Entegrasyonu (Rakiplerde Yok)
+Starbucks, Nevada Coffee, Greenwich Coffee menüleri Suu'ya özel entegre edilmiş. Kullanıcı içtiği ürünü seçince kafein içeriğine göre ekstra su ihtiyacı anında hesaplanıyor.
 
-### Önerilen Ekran Görüntüsü Özellikleri:
-- Format: PNG (şeffaf arka plan)
-- Boyut: 1080x1920 (mobil ekran oranı)
-- Kalite: Yüksek çözünürlük
-- İçerik: Gerçek uygulama verileri ile
+### Sosyal
+- Arkadaşlarla haftalık lig sistemi (4 kişiye kadar)
+- iOS + Android çapraz platform lig
+- Arkadaş takibi (günlük tüketim, streak, hedef ilerleme)
+- Günlük su içme davetleri
 
-## 📝 Deployment
-Bu proje GitHub Pages ile otomatik olarak deploy edilmektedir.
-# Update
+### iOS Özel
+- Dynamic Island desteği (iPhone 14 Pro+)
+- Kilit ekranı widget (iOS 16+)
+- Ana ekran widget
+- Apple Health (HealthKit) entegrasyonu
 
-## 🔄 GitHub Pages'i Kodla Yeniden Etkinleştirme
-GitHub Pages ayarını GitHub arayüzünden kaldırdıysanız `scripts/enable-pages.sh` betiğiyle aynı işlemi programatik olarak yapabilirsiniz.
+### Android
+- Google Health Connect entegrasyonu
+- Ana ekran widget
+- Özelleştirilebilir bildirimler
 
-1. Repo ve Pages izinleri olan bir GitHub Personal Access Token oluşturup terminalde `export GITHUB_TOKEN=ghp_...` şeklinde tanımlayın. (Gerekirse `REPO_OWNER`, `REPO_NAME`, `CUSTOM_DOMAIN` değişkenleriyle kendi değerlerinizi geçebilirsiniz.)
-2. Proje klasöründe `./scripts/enable-pages.sh` komutunu çalıştırın.
-3. Betik Pages'i `workflow` modunda yeniden açar ve `suuapp.com` domainini HTTPS zorlamasıyla ayarlar. Ardından küçük bir değişiklik push ederek `.github/workflows/deploy.yml` aksiyonunun yeni deploy üretmesini sağlayın.
+### İstatistik & Raporlama
+- Günlük / haftalık / aylık / yıllık grafikler
+- Hidrasyon skoru (0–100)
+- PDF rapor export (WaterMinder ve Hydro Coach'ta bu özellik yok)
+- Streak takibi
+
+### Monetizasyon
+- Aylık plan
+- Yıllık plan
+- Aile planı
+- Ücretsiz deneme mevcut
+
+## Bilinen Eksikler / Gelecek Roadmap
+
+| Eksik | Etki | Durum |
+|-------|------|-------|
+| Apple Watch / Wear OS desteği | Yüksek — rakiplerin çoğu sunuyor, kullanıcı bağlılığını etkiliyor | Roadmap |
+| Özelleştirilebilir içecek ekleme | Orta — kullanıcı kendi içeceğini tanımlayamıyor | Roadmap |
+| Sesli asistan (Siri / Google Assistant) | Orta | Roadmap |
+| Tek seferlik satın alma seçeneği | Orta — Türkiye'de aboneliğe dirençli kullanıcı segmenti var | Roadmap |
+| Kamera tabanlı içecek tanıma | Yüksek — "gerçek hidrasyon" felsefesiyle uyumlu güçlü differentiator | Roadmap |
+
+## Teknik Borçlar (Uygulama Tarafı)
+
+- Duplicate auth implementasyonu
+- Aşırı büyük dosyalar
+- Firebase App Check eksikliği
+- Firestore yazma verimsizlikleri — launch anında tüm kullanıcıları etkiliyor
+
+## Web Sitesi Yapısı
+
+```
+/
+├── hosgeldiniz.html        # Türkçe ana sayfa
+├── hosgeldiniz-en.html     # İngilizce ana sayfa
+├── hosgeldiniz-ar.html     # Arapça ana sayfa
+├── blog/                   # Türkçe blog (13 yazı)
+│   ├── en/                 # İngilizce blog (12 yazı)
+│   └── ar/                 # Arapça blog (12 yazı)
+├── ozellikler.html         # Özellikler sayfası
+├── faq.html                # SSS
+├── su-hesaplayici.html     # Su hesaplama aracı
+├── starbucks-dehidrasyon.html  # Starbucks dehidrasyon hesabı (TR)
+├── starbucks-dehydration.html  # Starbucks dehydration calculator (EN)
+├── sitemap.xml
+├── robots.txt
+├── llms.txt                # AI asistan referans dosyası
+└── llms-full.txt           # Detaylı AI referans dosyası
+```
+
+## Teknoloji
+
+- HTML5, CSS3, Vanilla JavaScript
+- GitHub Pages (otomatik deploy)
+- Microsoft Clarity (kullanıcı analitik)
+
+## Deploy
+
+`main` branch'e push → GitHub Actions otomatik deploy eder → suuapp.com'da canlı.
+
+```bash
+git push origin main
+```
+
+GitHub Pages'i manuel yeniden etkinleştirmek için:
+```bash
+export GITHUB_TOKEN=ghp_...
+./scripts/enable-pages.sh
+```
