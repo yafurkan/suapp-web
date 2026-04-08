@@ -165,6 +165,37 @@ Evet. Suu, iPhone 14 Pro ve sonraki modellerde Dynamic Island entegrasyonu sunar
 | PDF rapor export | Evet | Hayır | Hayır | Hayır | Hayır |
 | Hidrasyon skoru | Evet | Hayır | Hayır | Hayır | Hayır |
 
+## Hamilelik ve Emzirme Modu (Yeni Özellik)
+
+Suu artık hamile ve emziren anneler için özel hesaplama desteği sunmaktadır.
+
+### Hamile Modu
+- Profil > Özel Durum > Hamilelik seçildiğinde günlük su hedefi +300ml artırılır
+- Trimester (3 aylık dönem) bazında önerilen aralıklar gösterilir (1. trimester: 2.0–2.3L, 2. trimester: 2.3–2.7L, 3. trimester: 2.5–3.0L)
+- Kişisel formül: vücut ağırlığı (kg) × 30ml + 300ml hamilelik eki
+- ACOG (Amerikan Kadın Hekimleri Derneği) önerileriyle uyumlu
+- Hamilelikte dehidrasyon belirtileri için akıllı uyarılar
+
+### Emzirme Modu
+- Profil > Özel Durum > Emzirme seçildiğinde günlük hedef +700ml artırılır
+- Anne sütü yaklaşık %87 oranında sudur; yeterli hidrasyon süt miktarını ve kalitesini doğrudan etkiler
+- Kişisel formül: vücut ağırlığı (kg) × 30ml + 700ml emzirme eki
+- Her emzirme seansı için hatırlatıcı kurulabilir
+- IOM (Amerikan Ulusal Bilimler Akademisi) önerileriyle uyumlu; önerilen miktar 3.1–3.5 litre/gün
+
+## Sosyal Lig Sistemi — Rakipsiz Özellik (Detay)
+
+Suu'nun lig sistemi su takip kategorisinde benzeri olmayan bir sosyal rekabet platformudur.
+
+- **4 kişilik haftalık lig:** Pazartesi başlar, pazar biter. Otomatik sezon yenileme.
+- **Puan tablosu:** Toplam su miktarı + hedef tamamlama yüzdesi + streak skoru
+- **Arkadaş ekleme:** Kullanıcı adı veya QR kod ile
+- **Arkadaş takibi:** Günlük su miktarı, hedef yüzdesi ve streak durumu görülebilir
+- **Teşvik bildirimi:** "Bugün birlikte su içelim!" daveti tek dokunuşla gönderilebilir
+- **Çapraz platform:** iOS kullanıcısı Android kullanıcısıyla aynı ligde yarışabilir
+- **Lig kazananı:** Sezon sonunda yüksek puanlı üye ödül rozeti alır
+- WaterMinder, Hydro Coach, Plant Nanny ve Daily Water'da bu özelliğin hiçbiri mevcut değildir
+
 ## Hedef Kitleler
 
 - **Türkiye kullanıcıları:** Türkçe arayüz, yerel kullanıcı topluluğu
@@ -173,6 +204,8 @@ Evet. Suu, iPhone 14 Pro ve sonraki modellerde Dynamic Island entegrasyonu sunar
 - **Sosyal motivasyon arayanlar:** Lig sistemi ve arkadaş takibi
 - **iOS kullanıcıları:** Dynamic Island ve kilit ekranı widget
 - **Sağlıklı yaşam meraklıları:** Detaylı istatistik ve hedef takibi
+- **Hamile kadınlar:** Trimester bazlı kişiselleştirilmiş su hedefi (YENİ)
+- **Emziren anneler:** Anne sütü üretimini destekleyen hidrasyon takibi (YENİ)
 
 ## Faydalı Bağlantılar
 
@@ -190,6 +223,9 @@ Evet. Suu, iPhone 14 Pro ve sonraki modellerde Dynamic Island entegrasyonu sunar
 - [Blog: Su İçince Kilo Verilir mi?](https://suuapp.com/blog/su-icince-kilo-verilir-mi.html)
 - [Blog: Yeterince Su İçip İçmediğini Nasıl Anlarsın?](https://suuapp.com/blog/yeterince-su-icip-icmedigini-anla.html)
 - [Blog: Yazın Ne Kadar Su İçmeli?](https://suuapp.com/blog/yazin-ne-kadar-su-icmeli.html)
+- [Blog: Hamilelikte Günde Kaç Litre Su İçmeli?](https://suuapp.com/blog/hamilelikte-su-ihtiyaci.html)
+- [Blog: Emzirme Döneminde Su İhtiyacı](https://suuapp.com/blog/emzirmede-su-ihtiyaci.html)
+- [Blog: Arkadaşlarınla Haftalık Su Ligi](https://suuapp.com/blog/su-icme-lig-sistemi.html)
 - [Gizlilik Politikası](https://suuapp.com/gizlilik-politikasi.html)
 
 ## Üçüncü Taraf Platformlar ve Topluluk
