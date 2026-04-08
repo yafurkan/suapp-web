@@ -640,7 +640,7 @@
     </div>
     
     <script>
-        const STATIC_POSTS = 4; // sabit blog yazısı sayısı
+        const STATIC_POSTS = 19; // sabit blog yazısı sayısı (Nisan 2026 itibarıyla)
 
         // Load admin articles from localStorage
         function loadArticles() {
@@ -675,7 +675,7 @@
                        articleDate.getFullYear() === now.getFullYear();
             }).length + STATIC_POSTS;
 
-            const lastDate = newsList.length > 0 ? newsList[0].date : '2026-03-15';
+            const lastDate = newsList.length > 0 ? newsList[0].date : '2026-04-07';
             updateSidebarStats(total, thisMonth, lastDate);
         }
         
@@ -690,10 +690,11 @@
                 document.getElementById('lastUpdate').textContent = '-';
             }
             
-            // Update category counts (simplified)
-            document.getElementById('appNews').textContent = Math.ceil(total * 0.6);
-            document.getElementById('healthNews').textContent = Math.ceil(total * 0.3);
-            document.getElementById('eventNews').textContent = Math.floor(total * 0.1);
+            // Update category counts
+            const adminTotal = newsList.length;
+            document.getElementById('appNews').textContent = 4 + Math.ceil(adminTotal * 0.3);
+            document.getElementById('healthNews').textContent = 14 + Math.ceil(adminTotal * 0.6);
+            document.getElementById('eventNews').textContent = 1 + Math.floor(adminTotal * 0.1);
         }
         
         function formatDate(dateStr) {
