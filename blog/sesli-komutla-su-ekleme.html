@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-itunes-app" content="app-id=6757619920">
+    <title>Siri ve Sesli Komutla Su Ekleme: Eller Serbest Hidrasyon Rehberi | Suu</title>
+    <meta name="description" content="Suu'da Siri Shortcuts ve uygulama içi sesli komutlarla eller serbest su takibi yapın. iOS + Android için kurulum rehberi. Ücretsiz.">
+    <meta name="keywords" content="siri su ekleme, sesli komutla su takibi, hey siri su ekle, siri shortcuts su takip, sesli su kayıt, eller serbest su ekleme, siri hidrasyon, suu siri entegrasyonu, android sesli su takip, sesli komut su uygulaması">
+    <link rel="canonical" href="https://suuapp.com/blog/sesli-komutla-su-ekleme.html">
+
+    <meta property="og:title" content="Siri ve Sesli Komutla Su Ekleme: Eller Serbest Hidrasyon Rehberi">
+    <meta property="og:description" content="Suu'da Siri Shortcuts ve uygulama içi sesli komutlarla eller serbest su takibi yapın. iPhone ve Android için adım adım kurulum.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://suuapp.com/blog/sesli-komutla-su-ekleme.html">
+    <meta property="og:image" content="https://suuapp.com/assets/og-image.png">
+    <meta property="og:site_name" content="Suu">
+    <meta property="og:locale" content="tr_TR">
+    <meta property="article:published_time" content="2026-04-14">
+    <meta property="article:author" content="Furkan Mert Fındıklı">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SuuTakip">
+    <meta name="twitter:title" content="Siri ile Su Ekle: Suu Sesli Komut Rehberi">
+    <meta name="twitter:description" content="iOS Siri Shortcuts + Android sesli komut sistemi. Tek cümleyle su kaydedin, hiç dokunmanıza gerek yok.">
+    <meta name="twitter:image" content="https://suuapp.com/assets/og-image.png">
+
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Siri ve Sesli Komutla Su Ekleme: Eller Serbest Hidrasyon Rehberi",
+        "description": "iOS Siri Shortcuts ve uygulama içi sesli komut sistemiyle su takibini eller serbest yapın. Adım adım kurulum ve en iyi sesli komut örnekleri.",
+        "image": "https://suuapp.com/assets/og-image.png",
+        "datePublished": "2026-04-14",
+        "dateModified": "2026-04-14",
+        "author": {
+            "@type": "Person",
+            "name": "Furkan Mert Fındıklı",
+            "url": "https://www.linkedin.com/in/furkanfindikli/",
+            "jobTitle": "Kurucu & Geliştirici",
+            "affiliation": {"@type": "Organization", "name": "Suu", "url": "https://suuapp.com"}
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Suu",
+            "url": "https://suuapp.com",
+            "logo": {"@type": "ImageObject", "url": "https://suuapp.com/assets/favicon.svg"}
+        },
+        "mainEntityOfPage": "https://suuapp.com/blog/sesli-komutla-su-ekleme.html",
+        "inLanguage": "tr"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Siri ile su ekleyebilir miyim?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Evet. Suu, iOS Siri Shortcuts entegrasyonu sunar. Suu'yu açıp Ayarlar > Siri Kısayolları bölümünden istediğiniz içecek veya miktar için 'Siri'ye Ekle'ye dokunun, bir komut cümlesi kaydedin. Artık 'Hey Siri [komutunuz]' diyerek telefonunuza dokunmadan su ekleyebilirsiniz."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Android'de sesli komutla su ekleyebilir miyim?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Evet. Suu'nun Android'de de çalışan uygulama içi sesli komut sistemi mevcuttur. Siri'den bağımsız bu sistem, her içeceğe özel tetikleyici kelime atamanıza olanak tanır. Suu'da mikrofon simgesine dokunup tetikleyici kelimenizi söyleyin — uygulama anında kaydeder."
+                }
+            }
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://suuapp.com/hosgeldiniz.html"},
+            {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://suuapp.com/blog.html"},
+            {"@type": "ListItem", "position": 3, "name": "Sesli Komutla Su Ekleme", "item": "https://suuapp.com/blog/sesli-komutla-su-ekleme.html"}
+        ]
+    }
+    </script>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; color: #222; background: #f8f9fa; line-height: 1.7; }
+        .navbar { background: white; padding: 0 20px; height: 64px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 8px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 100; }
+        .nav-logo { font-size: 20px; font-weight: 800; color: #4A90D9; text-decoration: none; display: flex; align-items: center; gap: 6px; }
+        .nav-links { display: flex; gap: 20px; }
+        .nav-links a { color: #555; text-decoration: none; font-size: 14px; font-weight: 500; }
+        .article-hero { background: linear-gradient(135deg, #2d1b69, #11998e); color: white; padding: 60px 20px; text-align: center; }
+        .article-hero .badge { display: inline-block; background: rgba(255,255,255,0.15); padding: 5px 14px; border-radius: 20px; font-size: 12px; font-weight: 600; margin-bottom: 16px; letter-spacing: 0.5px; text-transform: uppercase; }
+        .article-hero h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 800; max-width: 760px; margin: 0 auto 16px; line-height: 1.3; }
+        .article-hero .meta { font-size: 13px; opacity: 0.7; }
+        .article-container { max-width: 780px; margin: 0 auto; padding: 48px 20px 80px; }
+        .article-body h2 { font-size: 1.5rem; font-weight: 700; color: #1a1a2e; margin: 40px 0 14px; }
+        .article-body h3 { font-size: 1.15rem; font-weight: 700; color: #2c3e50; margin: 28px 0 10px; }
+        .article-body p { margin-bottom: 18px; color: #444; }
+        .article-body ul, .article-body ol { margin: 0 0 18px 24px; color: #444; }
+        .article-body li { margin-bottom: 8px; }
+        .article-body strong { color: #1a1a2e; }
+        .step-box { background: white; border-radius: 12px; padding: 18px 22px; margin: 12px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.07); display: flex; gap: 14px; align-items: flex-start; }
+        .step-num { background: #4A90D9; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px; flex-shrink: 0; }
+        .step-content h4 { font-weight: 700; color: #1a1a2e; margin-bottom: 4px; }
+        .step-content p { margin: 0; color: #555; font-size: 0.9rem; }
+        .command-box { background: #1a1a2e; color: #00e676; border-radius: 10px; padding: 14px 18px; font-family: monospace; font-size: 0.95rem; margin: 10px 0; }
+        .highlight-box { background: linear-gradient(135deg, #f3e5f5, #e8eaf6); border-left: 4px solid #7B1FA2; border-radius: 8px; padding: 18px 22px; margin: 24px 0; }
+        .highlight-box p { margin: 0; color: #4A148C; font-weight: 500; }
+        .platform-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0; }
+        .platform-card { background: white; border-radius: 12px; padding: 22px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); }
+        .platform-card h4 { font-size: 1rem; font-weight: 700; color: #1a1a2e; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+        .platform-card ul { margin: 0 0 0 18px; color: #555; font-size: 0.9rem; }
+        .platform-card li { margin-bottom: 6px; }
+        .cta-box { background: linear-gradient(135deg, #4A90D9, #29B6F6); color: white; border-radius: 16px; padding: 36px; text-align: center; margin: 48px 0; }
+        .cta-box h3 { font-size: 1.3rem; font-weight: 800; margin-bottom: 10px; }
+        .cta-box p { opacity: 0.9; margin-bottom: 22px; }
+        .cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+        .cta-btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px; border-radius: 50px; font-weight: 700; text-decoration: none; font-size: 0.9rem; }
+        .cta-ios { background: white; color: #1a1a2e; }
+        .cta-android { background: rgba(255,255,255,0.2); color: white; border: 2px solid rgba(255,255,255,0.5); }
+        footer { background: #1a1a2e; color: rgba(255,255,255,0.6); padding: 24px 20px; text-align: center; font-size: 13px; }
+        footer a { color: rgba(255,255,255,0.7); text-decoration: none; margin: 0 8px; }
+        @media (max-width: 600px) { .nav-links { display: none; } .platform-grid { grid-template-columns: 1fr; } .step-box { flex-direction: column; } }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="../hosgeldiniz.html" class="nav-logo"><i class="fas fa-tint"></i> Suu</a>
+    <div class="nav-links">
+        <a href="../hosgeldiniz.html#features">Özellikler</a>
+        <a href="../blog.html">Blog</a>
+        <a href="../faq.html">SSS</a>
+        <a href="../hakkimizda.html">Hakkında</a>
+    </div>
+</nav>
+
+<header class="article-hero">
+    <div class="badge">🎙️ Sesli Komut Rehberi</div>
+    <h1>Siri ve Sesli Komutla Su Ekleme:<br>Eller Serbest Hidrasyon Rehberi</h1>
+    <div class="meta">14 Nisan 2026 · Furkan Mert Fındıklı · 5 dakika okuma</div>
+</header>
+
+<main class="article-container">
+<article class="article-body">
+
+<p>Toplantıdayken. Yemek pişirirken. Her iki eliniz dolu. Az önce bir şişe su bitirdiniz — ama kaydetmek için telefonu çıkarmanız, kilidi açmanız, uygulamayı bulmanız ve birkaç kez dokunmanız gerekiyor. Çoğu zaman "sonra yaparım" dersiniz ve o kayıt asla yapılmaz.</p>
+
+<p>Sesli komutlar bu sorunu çözer. Suu'da <strong>iOS Siri Shortcuts entegrasyonu</strong> ve <strong>bağımsız uygulama içi sesli komut sistemi</strong> sayesinde tek bir cümleyle su kaydedebilirsiniz — ekrana hiç dokunmadan.</p>
+
+<h2>Suu'daki İki Sesli Sistem</h2>
+
+<div class="platform-grid">
+    <div class="platform-card">
+        <h4><i class="fab fa-apple"></i> iOS — Siri Shortcuts</h4>
+        <ul>
+            <li>Apple'ın native Siri entegrasyonu</li>
+            <li>iPhone, Apple Watch, HomePod, AirPods, CarPlay'de çalışır</li>
+            <li>Siri aktifken tamamen eller serbest</li>
+            <li>Kişisel sesli komut cümleleri kaydedebilirsiniz</li>
+        </ul>
+    </div>
+    <div class="platform-card">
+        <h4><i class="fab fa-android"></i> iOS + Android — Uygulama İçi Sesli Komut</h4>
+        <ul>
+            <li>Siri'den bağımsız çalışır</li>
+            <li>Android'de de tam desteklenir</li>
+            <li>Her içeceğe özel tetikleyici kelime atanır</li>
+            <li>speech_to_text ile gerçek zamanlı dinleme</li>
+        </ul>
+    </div>
+</div>
+
+<h2>Siri Shortcuts Kurulumu (iOS)</h2>
+
+<div class="step-box">
+    <div class="step-num">1</div>
+    <div class="step-content">
+        <h4>Suu'yu açın ve Ayarlar'a gidin</h4>
+        <p>Sağ üstteki profil simgesine dokunun, ardından Ayarlar → Siri Kısayolları.</p>
+    </div>
+</div>
+<div class="step-box">
+    <div class="step-num">2</div>
+    <div class="step-content">
+        <h4>Bir aksiyon seçin</h4>
+        <p>İçecek listesinde sesli komut atamak istediğiniz miktarın veya içeceğin yanındaki "Siri'ye Ekle"ye dokunun.</p>
+    </div>
+</div>
+<div class="step-box">
+    <div class="step-num">3</div>
+    <div class="step-content">
+        <h4>Komut cümlenizi kaydedin</h4>
+        <p>Siri size bir ifade kaydettirmenizi ister. Kısa ve doğal tutun: "bir bardak su", "kahve ekle", "büyük su".</p>
+    </div>
+</div>
+<div class="step-box">
+    <div class="step-num">4</div>
+    <div class="step-content">
+        <h4>Kaydedin ve test edin</h4>
+        <p>"Hey Siri [komutunuz]" diyerek test edin. Suu içeceği anında kaydeder ve kısa bir bildirimle onaylar.</p>
+    </div>
+</div>
+<div class="step-box">
+    <div class="step-num">5</div>
+    <div class="step-content">
+        <h4>Daha fazla kısayol ekleyin</h4>
+        <p>Su, büyük su, kahve, çay gibi en sık kullandığınız içecekler için ayrı kısayollar oluşturun.</p>
+    </div>
+</div>
+
+<h2>Kullanabileceğiniz Siri Komut Örnekleri</h2>
+
+<div class="command-box">Hey Siri, bir bardak su ekle</div>
+<div class="command-box">Hey Siri, kahve içtim</div>
+<div class="command-box">Hey Siri, 500ml su ekle</div>
+<div class="command-box">Hey Siri, su şişesi bitti</div>
+<div class="command-box">Hey Siri, sabah suyu</div>
+
+<div class="highlight-box">
+    <p>💡 <strong>En iyi pratik:</strong> Su (250ml), büyük su (500ml) ve kahve için kısayol kurun. Bu üç komut günlük loglama ihtiyacınızın ~%80'ini karşılar.</p>
+</div>
+
+<h2>Apple Watch ile Siri</h2>
+
+<p>iPhone'unuzda Siri Shortcuts kurduktan sonra Apple Watch'unuzda da otomatik çalışır. Bileğinizi kaldırın, "Hey Siri, bir bardak su ekle" deyin — Watch ekranına dokunmanıza gerek kalmaz.</p>
+
+<p>Suu'nun bağımsız Apple Watch uygulamasıyla birlikte bu size iki ayrı eller serbest seçenek sunar: Siri komutu veya Watch ekranında tek dokunuş.</p>
+
+<h2>Uygulama İçi Sesli Komut Kurulumu (iOS + Android)</h2>
+
+<ol>
+    <li>Suu'da <strong>Ayarlar → Sesli Komutlar</strong> bölümüne gidin.</li>
+    <li>Her içecek için bir <strong>tetikleyici kelime</strong> atayın. Örneğin: "kahve" → 200ml kahve, "büyük su" → 500ml su, "sabah" → 300ml su.</li>
+    <li>Ana ekranda <strong>mikrofon simgesine</strong> dokunun.</li>
+    <li>Tetikleyici kelimenizi söyleyin. Suu anında kayıt yapar.</li>
+</ol>
+
+<p>Kayıtlar istatistiklerinizde <code>kaynak: sesli</code> olarak etiketlenir — kaç kaydı eller serbest yaptığınızı görebilirsiniz.</p>
+
+<h2>Sesli Komutlar Hangi Durumlarda Özellikle İşe Yarar?</h2>
+
+<ul>
+    <li><strong>Egzersiz sırasında:</strong> Telefona dokunmadan koşu veya antrenman sırasında kayıt yapın.</li>
+    <li><strong>Araç kullanırken:</strong> CarPlay veya Siri ile yolda güvenli biçimde kaydedin.</li>
+    <li><strong>Mutfakta:</strong> Eller meşgulken uygulama içi mikrofonu kullanın.</li>
+    <li><strong>Çalışma masasında:</strong> HomePod veya iPhone'un sürekli dinleme modunda sesli komutla kaydedin.</li>
+</ul>
+
+<div class="cta-box">
+    <h3>Bugün İlk Siri Kısayolunuzu Kurun</h3>
+    <p>Suu'yu ücretsiz indirin — kurulum 2 dakikadan az sürer.</p>
+    <div class="cta-btns">
+        <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" class="cta-btn cta-ios" target="_blank" rel="noopener">
+            <i class="fab fa-apple"></i> App Store
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro" class="cta-btn cta-android" target="_blank" rel="noopener">
+            <i class="fab fa-google-play"></i> Google Play
+        </a>
+    </div>
+</div>
+
+<h2>Sonuç</h2>
+
+<p>Su içmeyi kaydetmenin en büyük düşmanı sürtünmedir. Her ekstra adım "sonra yaparım" riskini artırır ve o kayıt asla yapılmaz. Sesli komutlar bu sürtünmeyi sıfıra indirir.</p>
+
+<p>Suu, hem iOS Siri Shortcuts entegrasyonu hem de Siri'den bağımsız Android uyumlu sesli komut sistemiyle su takibini gerçekten eller serbest hale getiriyor. İlk kısayolunuzu kurmak 2 dakika sürer; sonrasında su içme alışkanlığı yaratmanın en az emekli yolu budur.</p>
+
+<p style="margin-top:32px;"><a href="../blog.html" style="color:#4A90D9;font-weight:600;text-decoration:none;">← Bloga Dön</a></p>
+
+</article>
+</main>
+
+<footer>
+    <p>© 2026 Suu — Su Takip Uygulaması &nbsp;|&nbsp;
+        <a href="../hosgeldiniz.html">Ana Sayfa</a> &nbsp;
+        <a href="../gizlilik-politikasi.html">Gizlilik</a> &nbsp;
+        <a href="../kullanim-sartlari.html">Kullanım Şartları</a>
+    </p>
+</footer>
+
+<script src="../lang-switcher.js" defer></script>
+</body>
+</html>
