@@ -8,12 +8,14 @@
 
     // Page map: current filename → language variants
     var PAGE_MAP = {
-        'hosgeldiniz.html': { tr: 'hosgeldiniz.html', en: 'hosgeldiniz-en.html', ar: 'hosgeldiniz-ar.html' },
-        'ozellikler.html':  { tr: 'ozellikler.html',  en: 'hosgeldiniz-en.html', ar: 'hosgeldiniz-ar.html' },
+        'index.html':       { tr: '/',                 en: 'hosgeldiniz-en.html', ar: 'hosgeldiniz-ar.html' },
+        '':                 { tr: '/',                 en: 'hosgeldiniz-en.html', ar: 'hosgeldiniz-ar.html' },
+        'hosgeldiniz.html': { tr: '/',                 en: 'hosgeldiniz-en.html', ar: 'hosgeldiniz-ar.html' },
+        'ozellikler.html':  { tr: 'ozellikler.html',   en: 'hosgeldiniz-en.html', ar: 'hosgeldiniz-ar.html' },
         'faq.html':         { tr: 'faq.html',          en: 'hosgeldiniz-en.html', ar: 'hosgeldiniz-ar.html' },
-        'blog.html':        { tr: 'blog.html',          en: 'blog-en.html',        ar: 'blog-ar.html' },
-        'hosgeldiniz-en.html': { tr: 'hosgeldiniz.html', en: 'hosgeldiniz-en.html', ar: 'hosgeldiniz-ar.html' },
-        'hosgeldiniz-ar.html': { tr: 'hosgeldiniz.html', en: 'hosgeldiniz-en.html', ar: 'hosgeldiniz-ar.html' },
+        'blog.html':        { tr: 'blog.html',         en: 'blog-en.html',        ar: 'blog-ar.html' },
+        'hosgeldiniz-en.html': { tr: '/',              en: 'hosgeldiniz-en.html', ar: 'hosgeldiniz-ar.html' },
+        'hosgeldiniz-ar.html': { tr: '/',              en: 'hosgeldiniz-en.html', ar: 'hosgeldiniz-ar.html' },
         'blog-en.html':     { tr: 'blog.html',          en: 'blog-en.html',        ar: 'blog-ar.html' },
         'blog-ar.html':     { tr: 'blog.html',          en: 'blog-en.html',        ar: 'blog-ar.html' },
         'hakkimizda.html':  { tr: 'hakkimizda.html',    en: 'about.html',          ar: 'hakkimizda-ar.html' },
