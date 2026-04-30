@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://suuapp.com/</loc>
-        <lastmod>2026-04-19</lastmod>
+        <lastmod>2026-04-30</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -26,13 +26,13 @@
     </url>
     <url>
         <loc>https://suuapp.com/hosgeldiniz-en.html</loc>
-        <lastmod>2026-04-05</lastmod>
+        <lastmod>2026-04-30</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://suuapp.com/hosgeldiniz-ar.html</loc>
-        <lastmod>2026-04-05</lastmod>
+        <lastmod>2026-04-30</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -436,6 +436,43 @@
     <url>
         <loc>https://suuapp.com/blog/en/water-tracking-gamification.html</loc>
         <lastmod>2026-04-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <!-- Activity-Based Tracking & Caffeine/Sugar Blog Posts (2026-04-30) -->
+    <url>
+        <loc>https://suuapp.com/blog/aktivite-bazli-su-takibi.html</loc>
+        <lastmod>2026-04-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://suuapp.com/blog/kafein-seker-takibi.html</loc>
+        <lastmod>2026-04-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://suuapp.com/blog/en/activity-based-water-tracking.html</loc>
+        <lastmod>2026-04-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://suuapp.com/blog/en/caffeine-sugar-tracking.html</loc>
+        <lastmod>2026-04-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://suuapp.com/blog/ar/almae-walnashat-aljasadi.html</loc>
+        <lastmod>2026-04-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://suuapp.com/blog/ar/alkafayin-walsukar.html</loc>
+        <lastmod>2026-04-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>

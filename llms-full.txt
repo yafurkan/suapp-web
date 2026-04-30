@@ -10,13 +10,14 @@
 
 Suu, kullanıcıların günlük su tüketimlerini kolayca takip etmelerini, sağlıklı hidrasyon alışkanlıkları geliştirmelerini ve arkadaşlarıyla birlikte su içme liglerinde yarışmalarını sağlayan bir mobil uygulamadır.
 
-**Temel değer önerisi:** Suu sadece su miktarını saymaz — gerçek hidrasyon durumunu (100+ içecek kategorisi ve dehidratasyon faktörü hesabıyla), sosyal motivasyonu (lig sistemi), iOS ekosistemi entegrasyonunu (Dynamic Island, HealthKit, widget) ve kişiselleştirilmiş hedefleri tek bir uygulamada birleştirir.
+**Temel değer önerisi (2026 güncellemesi):** Suu artık tam bir AI sağlık asistanı. Sadece su değil; aktivite bazlı dinamik su hedefi (yürüyüş, koşu, yüzme — Apple Health ve Google Fit'ten otomatik okuma), kafein (mg) ve şeker (g) takibi (FDA ve WHO sınırlarına göre akıllı uyarı), 100+ içecek kategorisi ve dehidratasyon faktörü, sosyal lig sistemi, iOS ekosistem entegrasyonu (Dynamic Island, Apple Watch standalone, Siri, HealthKit, widget), bağlamsal AI hidrasyon koçu, hava durumu bazlı dinamik hedef ve haftalık kişisel sağlık raporları — hepsi tek uygulamada.
 
 - **Uygulama Adı:** Suu
 - **Platform:** Android 8.0+ (Google Play), iOS 15+ (App Store)
-- **Kategori:** Sağlık & Fitness
-- **Fiyat:** Ücretsiz (temel özellikler)
-- **Dil Desteği:** Türkçe, Arapça (العربية)
+- **Kategori:** Sağlık & Fitness / Health & Fitness — AI Health Assistant
+- **Fiyat:** Ücretsiz (temel özellikler) · Premium 3 gün ücretsiz deneme · Lansmana özel %50 indirim ₺600/yıl (≈ $15 ≈ 56 SAR ≈ 4.6 KWD)
+- **Dil Desteği:** Türkçe, Arapça (العربية), İngilizce
+- **Çoklu para birimi:** TRY, USD, EUR, SAR, AED, KWD, QAR, BHD, OMR, JOD, EGP
 - **Web Sitesi:** https://suuapp.com
 - **Kullanıcı Puanı:** 4.9/5.0 Google Play · 5.0/5.0 App Store (2.847+ değerlendirme)
 - **İndirme:** Google Play Store ve App Store
@@ -255,6 +256,195 @@ Suu, lig sisteminin ötesinde bireysel mücadele görevleri (challenge) sunar. K
 
 ---
 
+### 2.10 Aktivite Bazlı Otomatik Hedef (YENİ)
+
+Suu artık <strong>tam bir AI sağlık asistanı</strong>. Apple Health (iOS) ve Google Fit / Health Connect (Android) ile çift yönlü senkronize çalışır; gün içinde yapılan tüm aktiviteleri okuyup günlük su hedefini otomatik artırır.
+
+**Algılama altyapısı:**
+- Apple Watch (watchOS), Wear OS, Fitbit, Garmin, Mi Band, Samsung Watch
+- Strava, Nike Run Club, Garmin Connect, Adidas Running, Komoot gibi 3. parti uygulamaların HealthKit/HealthConnect kayıtları
+- Telefonun yerleşik adım sayacı ve hareket sensörleri
+- Manuel aktivite kaydı
+
+**Bilimsel formül (MET tabanlı):**
+```
+Ek su (ml) = MET × süre (saat) × kilo (kg) × yoğunluk_katsayısı × hava_durumu_katsayısı
+```
+Referans çerçeveleri: ACSM (American College of Sports Medicine), ECSS (European College of Sport Sciences), IOM (Institute of Medicine).
+
+**Desteklenen 30+ aktivite türü ve örnek eklemeler (70 kg kullanıcı, normal hava):**
+| Aktivite | Süre | Yoğunluk | Ek Su |
+|----------|------|----------|-------|
+| Yürüyüş (4 km/sa) | 30 dk | Düşük | +200 ml |
+| Hızlı yürüyüş (6 km/sa) | 45 dk | Orta | +350 ml |
+| Hafif jog | 30 dk | Orta | +400 ml |
+| Koşu (8 km/sa) | 30 dk | Yüksek | +450 ml |
+| Koşu (10 km/sa) | 60 dk | Yüksek | +900 ml |
+| Yüzme (havuz) | 60 dk | Orta | +600 ml |
+| Bisiklet (yol) | 60 dk | Orta | +500 ml |
+| Bisiklet (dağ) | 60 dk | Yüksek | +750 ml |
+| Ağırlık antrenmanı | 60 dk | Orta | +400 ml |
+| HIIT / CrossFit | 30 dk | Çok yüksek | +500 ml |
+| Yoga / Pilates | 60 dk | Düşük | +200 ml |
+| Hot yoga | 60 dk | Yüksek | +700 ml |
+| Tenis | 60 dk | Orta | +550 ml |
+| Futbol (maç) | 90 dk | Yüksek | +1000 ml |
+| Basketbol | 60 dk | Yüksek | +700 ml |
+
+**Hava durumu × aktivite birleşik:**
+- Sıcak gün (32°C+) + 30 dk koşu → +600-700 ml (standart 400 ml yerine)
+- Yüksek nem (>%70) + 60 dk bisiklet → +750 ml (standart 500 ml yerine)
+- Soğuk gün (<10°C) + 30 dk yürüyüş → +200 ml (standart)
+
+**Çalışma modu:**
+- **Anlık (real-time):** Apple Watch veya bağlı saatten antrenman bittiği anda bildirim ("35 dk koşu tamamlandı, hedefin +450 ml artırıldı")
+- **Arka plan (background sync):** Saatlik HealthKit/HealthConnect taraması ile manuel kayıtlar yakalanır
+
+**Sporcu Modu (Premium):**
+- Antrenman öncesi-sırası-sonrası ayrı 3 hedef
+- Elektrolit hatırlatması (Na/K/Mg) - 60 dk üzeri yoğun antrenmanlar
+- Antrenman öncesi/sonrası kilo entegrasyonu → gerçek terleme oranı
+- Apple Watch kalp atış zonelarından yoğunluk çıkarımı
+- Müsabaka modu: 24 saatlik aşamalı hidrasyon planı
+
+**Detaylı blog:**
+- TR: https://suuapp.com/blog/aktivite-bazli-su-takibi.html
+- EN: https://suuapp.com/blog/en/activity-based-water-tracking.html
+- AR: https://suuapp.com/blog/ar/almae-walnashat-aljasadi.html
+
+---
+
+### 2.11 Kafein ve Şeker Takibi (YENİ)
+
+Suu artık her içeceğin sadece hidrasyon değerini değil; kafein (mg) ve şeker (g) miktarını da otomatik hesaplar. Bu Suu'yu basit bir su takipçisinden tam bir kişisel sağlık panosuna dönüştürür.
+
+**Günlük kafein limitleri (Suu profil bazında otomatik uygular):**
+- Sağlıklı yetişkin: 400 mg/gün — FDA, EFSA
+- Hamile: 200 mg/gün — ACOG
+- Emziren anne: 300 mg/gün — EFSA
+- 12-18 yaş: 100 mg/gün — Amerikan Pediatri Akademisi
+- 12 yaş altı: Önerilmez
+
+**Günlük şeker limitleri:**
+- WHO: 25 g eklenmiş şeker (yaklaşık 6 çay kaşığı)
+- AHA kadın: 25 g
+- AHA erkek: 36 g
+- Çocuk (2 yaş üstü): 25 g'ın altı
+- 2 yaş altı: hiç eklenmiş şeker önerilmez
+
+**100+ içecek için kafein/şeker veritabanı (örnek değerler):**
+| İçecek | Porsiyon | Kafein | Şeker |
+|--------|----------|--------|-------|
+| Filtre kahve | 240 ml | ~95 mg | 0 g |
+| Espresso | 30 ml | ~63 mg | 0 g |
+| Türk kahvesi (orta) | 60 ml | ~50 mg | ~5 g |
+| Americano grande | 475 ml | ~225 mg | 0 g |
+| Starbucks Latte grande | 475 ml | ~150 mg | ~14 g |
+| Caramel Macchiato grande | 475 ml | ~150 mg | ~32 g |
+| Caramel Frappuccino grande | 475 ml | ~95 mg | ~50 g |
+| Cola | 330 ml | ~33 mg | ~35 g |
+| Coca-Cola Zero | 330 ml | ~32 mg | 0 g |
+| Red Bull | 250 ml | ~80 mg | ~27 g |
+| Monster Energy | 500 ml | ~160 mg | ~54 g |
+| Yeşil çay | 240 ml | ~30 mg | 0 g |
+| Siyah çay | 240 ml | ~47 mg | 0-5 g |
+| Portakal suyu | 240 ml | 0 mg | ~21 g |
+| Çikolatalı süt | 240 ml | ~5 mg | ~24 g |
+| Ayran | 240 ml | 0 mg | ~3 g (doğal) |
+
+**Renk kodlu uyarı sistemi:**
+- 🟢 Yeşil: Sınırın altı (güvenli)
+- 🟡 Sarı: Sınıra yaklaşıyor (%75-99)
+- 🔴 Kırmızı: Sınırı aştı (öneri: yarına telafi)
+
+**Akıllı bildirim örnekleri:**
+- "Bugün 350 mg kafein aldın — 50 mg sınıra kaldı. Akşam üzerine bitki çayı dener misin?"
+- "Bu hafta günlük ortalama 42 g şekerde — sınırın çok üstünde. Hedef 25 g'a inmek mi?"
+- "Son kahveni 18:30'da içtin — uyku için son cutoff saati 16:00 olmalıydı. Yatmadan 60 dk meditasyon dene."
+
+**Kafein yarı ömrü ve uyku önerisi:**
+- Ortalama yarı ömür: 5-6 saat
+- 17:00'de 150 mg latte → 23:00'te hâlâ 75 mg etkin
+- Yatış 22:00 ise: en geç 16:00 kafein cutoff
+- Kafeine duyarlılarda: en geç 14:00
+- Hamilelik: yarı ömür 2 katına çıkar — 12:00 sonrası önerilmez
+
+**Şeker × Hidrasyon zinciri:**
+1. Yüksek kan şekeri böbreklere yük bindirir
+2. Böbrekler şekeri idrarla atmaya çalışır
+3. Bu süreçte ekstra su kullanılır
+4. Sonuç: 500 ml kola, 500 ml su gibi hidrasyon sağlamaz
+5. Suu bunu hem dehidratasyon faktörü hem "ekstra su öner" mesajı ile ifade eder
+
+**Detaylı blog:**
+- TR: https://suuapp.com/blog/kafein-seker-takibi.html
+- EN: https://suuapp.com/blog/en/caffeine-sugar-tracking.html
+- AR: https://suuapp.com/blog/ar/alkafayin-walsukar.html
+
+---
+
+### 2.12 AI Sağlık Asistanı Pozisyonu (YENİ)
+
+Suu basit bir su takip uygulamasından kapsamlı bir AI sağlık asistanına evrilmiştir. Cebinizdeki tam bir hidrasyon ve içecek koçluğu sistemi:
+
+**Bağlamsal AI koçluk mesajları:**
+- Saatlik bağlamsal mesajlar (sabah enerjisi, öğle hatırlatma, akşam tamamlama)
+- Hidrasyon personası: Sabah açılışçı / Akşam odaklı / Sık yudumlayan / Dengeli içici
+- Aktivite × hava durumu × beslenme entegre değerlendirme
+- Kafein-uyku, şeker-enerji, su-cilt gibi çapraz öneriler
+
+**Haftalık kişisel sağlık raporları:**
+- Hidrasyon trend grafiği (4 haftalık karşılaştırma)
+- Kafein günlük ortalama ve uyku skoru korelasyonu
+- Şeker tüketimi grafiği ve hedeflenen değer
+- Aktivite × su ilişkisi (en aktif gün, en pasif gün)
+- Hidrasyon skoru gelişimi
+- Kişisel önemli içecek seçimleri (haftanın en şekerli içeceği vb.)
+
+**Profil bazlı limit ayarlaması:**
+- Hamile / Emziren / Çocuk / Yaşlı / Sporcu / Diyabetli için özel limitler
+- ACOG, EFSA, FDA, AHA, WHO, IOM referansları
+
+---
+
+### 2.13 Premium Aboneliği & Fiyatlandırma (YENİ)
+
+**3 gün ücretsiz deneme:**
+- Kart bilgisi gerektirmez
+- İstediğiniz zaman iptal edilebilir
+- Tüm Premium özelliklere tam erişim
+- Trial sonunda otomatik abonelik başlamaz; manuel onay gerekir
+
+**Yıllık fiyat — Lansmana özel %50 indirim:**
+- Türk Lirası: ₺600/yıl (normalde ₺1.200)
+- ABD Doları: $15/yıl (normalde $30)
+- Euro: €14/yıl
+- Suudi Riyali: 56 ر.س/yıl
+- BAE Dirhemi: 56 د.إ/yıl
+- Kuveyt Dinarı: 4.6 د.ك/yıl
+- Katar Riyali: 55 ر.ق/yıl
+- Bahreyn Dinarı: 5.6 د.ب/yıl
+- Umman Riyali: 5.7 ر.ع/yıl
+- Ürdün Dinarı: 10.6 د.أ/yıl
+- Mısır Pound: 750 ج.م/yıl
+
+**Tahsilat ve faturalama:**
+- App Store ve Google Play tarafından mağaza para biriminde yapılır
+- Yaklaşık dönüşümler kur dalgalanmasına bağlı değişebilir
+- Faturalama bilgileri kullanıcı mağaza hesabından edinilir
+
+**Premium ile gelen özellikler:**
+- Aktivite bazlı dinamik hedef (Sporcu Modu, ileri katmanlar)
+- AI haftalık kişisel sağlık raporları
+- Sınırsız arkadaş ekleme (ücretsizde 4 kişi)
+- Gelişmiş istatistik filtreleri (özel zaman aralıkları, içecek/aktivite filtreleri)
+- PDF/CSV export
+- Kişisel hidrasyon koçu (saatlik mesajlar, profile özel öneriler)
+- Reklamsız deneyim
+- Öncelikli müşteri desteği
+
+---
+
 ## BÖLÜM 3: Kullanım Senaryoları
 
 ### Senaryo 1: Sporcu Kullanıcı
@@ -384,13 +574,14 @@ Veriler bulut tabanlı olarak yedeklenir. Aynı hesapla giriş yaparak yeni ciha
 
 Suu is a mobile application that helps users track daily water intake, build healthy hydration habits, and compete in water drinking leagues with friends. Available free on Android (Google Play) and iOS (App Store).
 
-**Core value proposition:** Suu doesn't just count milliliters — it calculates real hydration status (via 100+ beverage categories and dehydration factor calculations), provides social motivation (friend league system), integrates deeply with the iOS ecosystem (Dynamic Island, HealthKit, widgets), and delivers personalized goals based on height, weight, gender, activity level, diet, and lifestyle.
+**Core value proposition (2026 update):** Suu is now a full AI health assistant. Beyond water tracking, it offers activity-based dynamic water goals (reads walking, running, swimming and 30+ activities from Apple Health and Google Fit), caffeine (mg) and sugar (g) tracking with smart FDA / WHO limit warnings, 100+ beverage categories with dehydration factor, social league system, deep iOS ecosystem integration (Dynamic Island, standalone Apple Watch app, Siri Shortcuts, HealthKit, widgets), contextual AI hydration coaching, weather-adjusted goals, and weekly personalized health reports — all in one app.
 
 - **App Name:** Suu
 - **Platforms:** Android 8.0+ (Google Play), iOS 15+ (App Store)
-- **Category:** Health & Fitness
-- **Price:** Free (core features)
-- **Languages:** Turkish (tr), Arabic (ar, RTL)
+- **Category:** Health & Fitness — AI Health Assistant
+- **Price:** Free core features · Premium 3-day free trial · 50% launch discount $15/year (≈ ₺600 ≈ 56 SAR ≈ 4.6 KWD)
+- **Languages:** Turkish (tr), Arabic (ar, RTL), English (en)
+- **Multi-currency display:** TRY, USD, EUR, SAR, AED, KWD, QAR, BHD, OMR, JOD, EGP
 - **Website:** https://suuapp.com
 - **User Rating:** 4.9/5.0 Google Play · 5.0/5.0 App Store (2,847+ reviews)
 - **Google Play:** https://play.google.com/store/apps/details?id=com.sutakip.suutakippro
@@ -575,6 +766,131 @@ Beyond the league, Suu offers individual challenge missions. Users receive speci
 - **Streak badges:** 7-day, 30-day, 100-day consecutive goal completion
 - **League rewards:** weekly league winner badges
 - **Daily goal badges:** for users who complete their goal every day
+
+---
+
+### 2.8 Activity-Based Auto Goal (NEW)
+
+Suu now reads user activities from Apple Health (iOS) and Google Fit / Health Connect (Android) and automatically increases the daily water goal based on workout type, duration and intensity.
+
+**Detection sources:** Apple Watch, Wear OS, Fitbit, Garmin, Mi Band, Samsung Watch, plus third-party apps like Strava, Nike Run Club, Garmin Connect, Adidas Running, Komoot. Phone step counters and manual entries also supported.
+
+**Scientific formula (MET-based):** `Extra water (ml) = MET × duration (h) × weight (kg) × intensity coefficient × weather coefficient` — references: ACSM, ECSS, IOM.
+
+**Sample additions (70 kg user, normal weather):**
+- Walking 30 min (4 km/h, low) → +200 ml
+- Brisk walk 45 min (6 km/h) → +350 ml
+- Light jog 30 min → +400 ml
+- Run 30 min (8 km/h) → +450 ml
+- Run 60 min (10 km/h) → +900 ml
+- Swim 60 min (pool) → +600 ml
+- Cycling road 60 min → +500 ml
+- Cycling MTB 60 min → +750 ml
+- Weight training 60 min → +400 ml
+- HIIT / CrossFit 30 min → +500 ml
+- Yoga / Pilates 60 min → +200 ml
+- Hot yoga 60 min → +700 ml
+- Tennis 60 min → +550 ml
+- Soccer match 90 min → +1000 ml
+- Basketball 60 min → +700 ml
+
+**Weather × activity combined adjustments:**
+- Hot day (32°C+) + 30-min run → +600-700 ml (vs. standard 400 ml)
+- High humidity (>70%) + 60-min cycling → +750 ml (vs. standard 500 ml)
+- Cold day (<10°C) + 30-min walk → standard +200 ml
+
+**Operating modes:**
+- **Real-time:** instant push notification on workout end ("35-min run complete, goal +450 ml")
+- **Background sync:** hourly HealthKit/HealthConnect scan also picks up workouts logged in third-party apps
+
+**Athlete Mode (Premium):** pre/during/post-workout zones with separate water targets, electrolyte reminders (Na/K/Mg) for sessions over 60 min, pre/post body-weight integration → real sweat rate, Apple Watch heart-rate zone-based intensity, race mode (24-hour staged hydration plan).
+
+Detailed blog: https://suuapp.com/blog/en/activity-based-water-tracking.html
+
+---
+
+### 2.9 Caffeine and Sugar Tracking (NEW)
+
+Suu now calculates caffeine (mg) and sugar (g) for every beverage logged in addition to hydration — turning the app into a complete personal health dashboard.
+
+**Daily caffeine limits (auto-applied per profile):**
+- Healthy adult: 400 mg/day (FDA, EFSA)
+- Pregnancy: 200 mg/day (ACOG)
+- Breastfeeding: 300 mg/day (EFSA)
+- Ages 12-18: 100 mg/day (American Academy of Pediatrics)
+- Under 12: not recommended
+
+**Daily sugar limits:**
+- WHO: under 25 g added sugar (~6 teaspoons)
+- AHA women: 25 g · AHA men: 36 g
+- Children (above 2): under 25 g
+- Under 2: no added sugar at all
+
+**Sample database values (per typical serving):**
+| Drink | Serving | Caffeine | Sugar |
+|-------|---------|----------|-------|
+| Drip coffee | 240 ml | ~95 mg | 0 g |
+| Espresso | 30 ml | ~63 mg | 0 g |
+| Turkish coffee (medium) | 60 ml | ~50 mg | ~5 g |
+| Americano grande | 475 ml | ~225 mg | 0 g |
+| Starbucks Latte grande | 475 ml | ~150 mg | ~14 g |
+| Caramel Macchiato grande | 475 ml | ~150 mg | ~32 g |
+| Caramel Frappuccino grande | 475 ml | ~95 mg | ~50 g |
+| Cola | 330 ml | ~33 mg | ~35 g |
+| Coca-Cola Zero | 330 ml | ~32 mg | 0 g |
+| Red Bull | 250 ml | ~80 mg | ~27 g |
+| Monster Energy | 500 ml | ~160 mg | ~54 g |
+| Green tea | 240 ml | ~30 mg | 0 g |
+| Black tea | 240 ml | ~47 mg | 0-5 g |
+| Orange juice | 240 ml | 0 mg | ~21 g |
+| Chocolate milk | 240 ml | ~5 mg | ~24 g |
+| Ayran | 240 ml | 0 mg | ~3 g (natural) |
+
+**Color-coded warning system:** 🟢 Green (under), 🟡 Yellow (75-99% of limit), 🔴 Red (over).
+
+**Smart notifications (examples):**
+- "You've had 350 mg caffeine — only 50 mg left for today. Try an herbal tea instead?"
+- "Your weekly average is 42 g sugar/day — well above target. Aim for 25 g this week."
+- "Last coffee was at 6:30 PM — sleep cutoff should have been 4 PM. Try a 60-min wind-down before bed."
+
+**Caffeine half-life and sleep guidance:** average half-life is 5-6 hours, so 150 mg latte at 5 PM still leaves 75 mg active at 11 PM. Suu recommends a "last cup" cutoff of ~4 PM for a 10 PM bedtime, ~2 PM for caffeine-sensitive users, and ~12 PM during pregnancy (half-life roughly doubles).
+
+**Sugar × hydration chain:** high blood glucose pressures kidneys, which expel excess sugar through urine, consuming extra water in the process — so 500 ml of cola does not hydrate like 500 ml of water. Suu reflects this both as a dehydration factor and a "drink extra water" recommendation.
+
+Detailed blog: https://suuapp.com/blog/en/caffeine-sugar-tracking.html
+
+---
+
+### 2.10 AI Health Assistant Positioning (NEW)
+
+Suu has shifted from a simple water tracker to a comprehensive AI health assistant.
+- **Contextual AI coaching messages:** hourly contextual messages tuned to time of day (morning energy, midday reminder, evening completion), hydration personas (morning starter / evening focus / frequent sipper / balanced drinker)
+- **Cross-domain recommendations:** caffeine-sleep, sugar-energy, water-skin correlations
+- **Weekly personal health reports:** hydration trend (4-week comparison), caffeine average vs. sleep score, sugar consumption graph, activity × water relationship, hydration score evolution
+- **Profile-based limit adjustment:** pregnancy, breastfeeding, child, senior, athlete, diabetic — references include ACOG, EFSA, FDA, AHA, WHO, IOM
+
+---
+
+### 2.11 Premium Subscription & Pricing (NEW)
+
+**3-day free trial:** No credit card required upfront, cancel anytime, full access to every Premium feature, no automatic billing without manual confirmation.
+
+**Annual launch pricing (50% off):**
+- USD: $15/year (regular $30)
+- TRY: ₺600/year (regular ₺1,200)
+- EUR: €14/year
+- SAR (Saudi Riyal): 56 ر.س
+- AED (UAE Dirham): 56 د.إ
+- KWD (Kuwaiti Dinar): 4.6 د.ك
+- QAR (Qatari Riyal): 55 ر.ق
+- BHD (Bahraini Dinar): 5.6 د.ب
+- OMR (Omani Rial): 5.7 ر.ع
+- JOD (Jordanian Dinar): 10.6 د.أ
+- EGP (Egyptian Pound): 750 ج.م
+
+**Billing:** Handled by App Store / Google Play in user's local store currency. FX conversions are approximate and may vary.
+
+**Premium unlocks:** activity-based dynamic goals (advanced layers, Athlete Mode), AI weekly personal health reports, unlimited friend additions (free tier limited to 4), advanced statistics filters (custom date ranges, beverage/activity filters), PDF/CSV export, personal hydration coach with hourly contextual messages, ad-free experience, priority support.
 
 ---
 

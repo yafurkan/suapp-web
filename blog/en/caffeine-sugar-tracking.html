@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-itunes-app" content="app-id=6757619920">
+    <title>Caffeine and Sugar Tracking: Stay Within Your Daily Limits | Suu</title>
+    <meta name="description" content="Suu now calculates caffeine (mg) and sugar (g) for 100+ beverages. Stay under the FDA 400 mg caffeine and WHO 25 g sugar daily limits with smart in-app warnings.">
+    <meta name="keywords" content="caffeine tracker app, sugar intake tracker, daily caffeine limit, sugar consumption limit, FDA caffeine, WHO added sugar, coffee caffeine calculator, starbucks caffeine, beverage sugar content, healthy drink tracker, ai health assistant">
+    <link rel="canonical" href="https://suuapp.com/blog/en/caffeine-sugar-tracking.html">
+
+    <link rel="alternate" hreflang="tr" href="https://suuapp.com/blog/kafein-seker-takibi.html">
+    <link rel="alternate" hreflang="en" href="https://suuapp.com/blog/en/caffeine-sugar-tracking.html">
+    <link rel="alternate" hreflang="ar" href="https://suuapp.com/blog/ar/alkafayin-walsukar.html">
+
+    <meta property="og:title" content="Caffeine and Sugar Tracking: The Hidden Limits in Your Drinks">
+    <meta property="og:description" content="Suu calculates not just hydration but caffeine (mg) and sugar (g) for every drink you log. Smart warnings as you approach FDA and WHO daily limits.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://suuapp.com/blog/en/caffeine-sugar-tracking.html">
+    <meta property="og:image" content="https://suuapp.com/assets/og-image.png">
+    <meta property="og:site_name" content="Suu">
+    <meta property="og:locale" content="en_US">
+    <meta property="article:published_time" content="2026-04-30">
+    <meta property="article:author" content="Furkan Mert Fındıklı">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Caffeine and Sugar Tracking — Suu's New Health Dashboard">
+    <meta name="twitter:description" content="Per-drink caffeine (mg) and sugar (g) calculation for 100+ beverages. FDA & WHO referenced smart warnings.">
+    <meta name="twitter:image" content="https://suuapp.com/assets/og-image.png">
+
+    <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Caffeine and Sugar Tracking: Stay Within Your Daily Limits",
+        "description": "Suu calculates caffeine (mg) and sugar (g) for every beverage you log, with smart warnings based on FDA's 400 mg caffeine and WHO's 25 g added-sugar daily limits.",
+        "image": "https://suuapp.com/assets/og-image.png",
+        "datePublished": "2026-04-30",
+        "dateModified": "2026-04-30",
+        "author": {"@type": "Person", "name": "Furkan Mert Fındıklı", "url": "https://www.linkedin.com/in/furkanfindikli/"},
+        "publisher": {"@type": "Organization", "name": "Suu", "url": "https://suuapp.com", "logo": {"@type": "ImageObject", "url": "https://suuapp.com/assets/favicon.svg"}},
+        "mainEntityOfPage": "https://suuapp.com/blog/en/caffeine-sugar-tracking.html",
+        "inLanguage": "en"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How much caffeine is safe per day?",
+                "acceptedAnswer": {"@type": "Answer", "text": "The FDA sets 400 mg/day as a safe upper limit for healthy adults — about 4 cups of brewed coffee or 2 grande Starbucks Lattes. Pregnant women should stay under 200 mg, adolescents under 100 mg. Suu calculates caffeine for every drink automatically."}
+            },
+            {
+                "@type": "Question",
+                "name": "How much sugar should I consume daily?",
+                "acceptedAnswer": {"@type": "Answer", "text": "WHO recommends keeping added sugar under 25 grams (~6 teaspoons) per day. A can of cola has ~39 g sugar, a Starbucks Frappuccino can reach 50 g. Suu shows sugar instantly and warns you when you approach the daily limit."}
+            },
+            {
+                "@type": "Question",
+                "name": "Which beverages does Suu track caffeine and sugar for?",
+                "acceptedAnswer": {"@type": "Answer", "text": "Suu's database covers 100+ beverages: coffee types (drip, espresso, Turkish coffee, americano, latte, cappuccino), black/green/white tea, cola, sodas, energy drinks, sports drinks, fruit juices, milkshakes, and Starbucks/Nevada Coffee/Greenwich Coffee menus. Each beverage shows caffeine (mg), sugar (g), calories (kcal) and dehydration factor."}
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; color: #222; background: #f8f9fa; line-height: 1.7; }
+        .navbar { background: white; padding: 0 20px; height: 64px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 8px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 100; }
+        .nav-logo { font-size: 20px; font-weight: 800; color: #4A90D9; text-decoration: none; display: flex; align-items: center; gap: 6px; }
+        .nav-links { display: flex; gap: 20px; }
+        .nav-links a { color: #555; text-decoration: none; font-size: 14px; font-weight: 500; }
+        .article-hero { background: linear-gradient(135deg, #5D2A1F 0%, #BF360C 100%); color: white; padding: 60px 20px; text-align: center; }
+        .article-hero .badge { display: inline-block; background: rgba(255,255,255,0.15); padding: 5px 14px; border-radius: 20px; font-size: 12px; font-weight: 600; margin-bottom: 16px; letter-spacing: 0.5px; text-transform: uppercase; }
+        .article-hero h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 800; max-width: 760px; margin: 0 auto 16px; line-height: 1.3; }
+        .article-hero .meta { font-size: 13px; opacity: 0.7; }
+        .article-container { max-width: 780px; margin: 0 auto; padding: 48px 20px 80px; }
+        .article-body h2 { font-size: 1.5rem; font-weight: 700; color: #1a1a2e; margin: 40px 0 14px; }
+        .article-body h3 { font-size: 1.15rem; font-weight: 700; color: #2c3e50; margin: 28px 0 10px; }
+        .article-body p { margin-bottom: 18px; color: #444; font-size: 1rem; }
+        .article-body ul, .article-body ol { margin: 0 0 18px 24px; color: #444; }
+        .article-body li { margin-bottom: 8px; }
+        .article-body strong { color: #1a1a2e; }
+        .nut-table { width: 100%; border-collapse: collapse; background: white; border-radius: 12px; overflow: hidden; margin: 24px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.07); font-size: 0.92rem; }
+        .nut-table th { background: #5D2A1F; color: white; padding: 12px; text-align: left; font-weight: 700; }
+        .nut-table td { padding: 11px 12px; border-bottom: 1px solid #eee; }
+        .nut-table tr:last-child td { border-bottom: none; }
+        .nut-table tr:hover { background: #fef7f5; }
+        .warn-bad { color: #c62828; font-weight: 700; }
+        .warn-mid { color: #ef6c00; font-weight: 700; }
+        .warn-ok { color: #2e7d32; font-weight: 700; }
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin: 24px 0; }
+        .feature-item { background: white; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); }
+        .feature-item .icon { font-size: 28px; margin-bottom: 10px; }
+        .feature-item h4 { font-size: 0.95rem; font-weight: 700; color: #1a1a2e; margin-bottom: 6px; }
+        .feature-item p { font-size: 0.85rem; color: #666; margin: 0; }
+        .highlight-box { background: linear-gradient(135deg, #fff3e0, #ffebee); border-left: 4px solid #BF360C; border-radius: 8px; padding: 18px 22px; margin: 24px 0; }
+        .highlight-box p { margin: 0; color: #5D2A1F; font-weight: 500; }
+        .cta-box { background: linear-gradient(135deg, #5D2A1F, #BF360C); color: white; border-radius: 16px; padding: 36px; text-align: center; margin: 48px 0; }
+        .cta-box h3 { font-size: 1.3rem; font-weight: 800; margin-bottom: 10px; }
+        .cta-box p { opacity: 0.9; margin-bottom: 22px; }
+        .cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+        .cta-btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px; border-radius: 50px; font-weight: 700; text-decoration: none; font-size: 0.9rem; }
+        .cta-ios { background: white; color: #1a1a2e; }
+        .cta-android { background: rgba(255,255,255,0.2); color: white; border: 2px solid rgba(255,255,255,0.5); }
+        .trial-banner { background: #FFD600; color: #5D2A1F; padding: 14px 18px; border-radius: 10px; margin: 18px 0; font-weight: 700; font-size: 0.95rem; text-align: center; }
+        footer { background: #1a1a2e; color: rgba(255,255,255,0.6); padding: 24px 20px; text-align: center; font-size: 13px; }
+        footer a { color: rgba(255,255,255,0.7); text-decoration: none; margin: 0 8px; }
+        @media (max-width: 600px) { .nav-links { display: none; } .nut-table { font-size: 0.82rem; } .nut-table th, .nut-table td { padding: 7px 5px; } }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="/" class="nav-logo"><i class="fas fa-tint"></i> Suu</a>
+    <div class="nav-links">
+        <a href="/#features">Features</a>
+        <a href="../../blog-en.html">Blog</a>
+        <a href="../../faq.html">FAQ</a>
+    </div>
+</nav>
+
+<header class="article-hero">
+    <div class="badge">🧪 Caffeine & Sugar</div>
+    <h1>Caffeine and Sugar Tracking:<br>The Hidden Limits in Your Drinks</h1>
+    <div class="meta">April 30, 2026 · Furkan Mert Fındıklı · 6 min read</div>
+</header>
+
+<main class="article-container">
+<article class="article-body">
+
+<p>Four cups of coffee. A can of cola at lunch. A Starbucks Frappuccino in the late afternoon. Looking at fluid alone, you might call this a hydrated day. But you also took in <strong>800 mg of caffeine</strong> and <strong>95 g of sugar</strong>. That's twice the FDA caffeine ceiling and four times the WHO daily added-sugar recommendation.</p>
+
+<p><strong>Suu is now a full AI health assistant.</strong> For every drink you log, it doesn't just calculate hydration — it also tracks caffeine (mg) and sugar (g), and warns you as you approach daily limits.</p>
+
+<div class="trial-banner">
+    🎉 Launch offer: Premium 3-day free trial · 50% off afterwards — $15/year (≈ ₺600 / ≈ 56 SAR)
+</div>
+
+<h2>Caffeine: The Invisible Ceiling</h2>
+
+<h3>Recommended Daily Limits</h3>
+
+<ul>
+    <li><strong>Healthy adult:</strong> 400 mg/day (FDA, EFSA)</li>
+    <li><strong>Pregnant women:</strong> 200 mg/day (ACOG)</li>
+    <li><strong>Breastfeeding mothers:</strong> 300 mg/day (EFSA)</li>
+    <li><strong>Ages 12-18:</strong> 100 mg/day (American Academy of Pediatrics)</li>
+    <li><strong>Under 12:</strong> Not recommended</li>
+</ul>
+
+<h3>Symptoms of Excess Caffeine</h3>
+
+<ul>
+    <li>Heart palpitations, anxiety, tremors</li>
+    <li>Insomnia and reduced sleep quality</li>
+    <li>Digestive discomfort, acid reflux</li>
+    <li>Increased blood pressure</li>
+    <li>Headache (especially during withdrawal)</li>
+    <li>Increased urination (mild diuretic effect)</li>
+</ul>
+
+<h2>Sugar: The Silent Risk</h2>
+
+<h3>WHO and AHA Limits</h3>
+
+<ul>
+    <li><strong>WHO general recommendation:</strong> Under 5% of daily calories — about 25 g (6 teaspoons)</li>
+    <li><strong>AHA (women):</strong> Under 25 g/day</li>
+    <li><strong>AHA (men):</strong> Under 36 g/day</li>
+    <li><strong>Children:</strong> Under 25 g/day; under age 2, no added sugar at all</li>
+</ul>
+
+<h3>Risks of Excess Sugar</h3>
+
+<ul>
+    <li>Type 2 diabetes risk</li>
+    <li>Fatty liver disease</li>
+    <li>Obesity and metabolic syndrome</li>
+    <li>Cardiovascular disease</li>
+    <li>Tooth decay</li>
+    <li>Skin issues (acne, premature aging)</li>
+</ul>
+
+<h2>Caffeine and Sugar in Popular Drinks</h2>
+
+<table class="nut-table">
+    <thead>
+        <tr>
+            <th>Drink (serving)</th>
+            <th>Caffeine</th>
+            <th>Sugar</th>
+            <th>Calories</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Drip coffee (240 ml)</td><td>~95 mg</td><td>0 g</td><td>~5 kcal</td></tr>
+        <tr><td>Espresso (30 ml)</td><td>~63 mg</td><td>0 g</td><td>~5 kcal</td></tr>
+        <tr><td>Turkish coffee (60 ml)</td><td>~50 mg</td><td>~5 g (medium)</td><td>~25 kcal</td></tr>
+        <tr><td>Americano grande (475 ml)</td><td><span class="warn-mid">~225 mg</span></td><td>0 g</td><td>~15 kcal</td></tr>
+        <tr><td>Starbucks Latte grande (475 ml)</td><td>~150 mg</td><td><span class="warn-mid">~14 g</span></td><td>~190 kcal</td></tr>
+        <tr><td>Starbucks Caramel Macchiato grande</td><td>~150 mg</td><td><span class="warn-bad">~32 g</span></td><td>~250 kcal</td></tr>
+        <tr><td>Starbucks Caramel Frappuccino grande</td><td>~95 mg</td><td><span class="warn-bad">~50 g</span></td><td>~380 kcal</td></tr>
+        <tr><td>Cola (330 ml)</td><td>~33 mg</td><td><span class="warn-bad">~35 g</span></td><td>~140 kcal</td></tr>
+        <tr><td>Coca-Cola Zero (330 ml)</td><td>~32 mg</td><td><span class="warn-ok">0 g</span></td><td>~1 kcal</td></tr>
+        <tr><td>Red Bull (250 ml)</td><td><span class="warn-mid">~80 mg</span></td><td><span class="warn-bad">~27 g</span></td><td>~110 kcal</td></tr>
+        <tr><td>Monster Energy (500 ml)</td><td><span class="warn-bad">~160 mg</span></td><td><span class="warn-bad">~54 g</span></td><td>~210 kcal</td></tr>
+        <tr><td>Green tea (240 ml)</td><td>~30 mg</td><td>0 g</td><td>~2 kcal</td></tr>
+        <tr><td>Black tea (240 ml)</td><td>~47 mg</td><td>0-5 g</td><td>~2 kcal</td></tr>
+        <tr><td>Orange juice (240 ml)</td><td>0 mg</td><td><span class="warn-mid">~21 g</span></td><td>~110 kcal</td></tr>
+        <tr><td>Chocolate milk (240 ml)</td><td>~5 mg</td><td><span class="warn-mid">~24 g</span></td><td>~190 kcal</td></tr>
+        <tr><td>Ayran (240 ml)</td><td>0 mg</td><td><span class="warn-ok">~3 g (natural)</span></td><td>~70 kcal</td></tr>
+    </tbody>
+</table>
+
+<div class="highlight-box">
+    <p>⚠️ <strong>Heads up:</strong> A single grande Caramel Macchiato delivers 128% of the WHO daily added-sugar limit. Add a cola later and you're at well over twice the limit before dinner.</p>
+</div>
+
+<h2>How Suu Calculates It</h2>
+
+<div class="feature-grid">
+    <div class="feature-item">
+        <div class="icon">📊</div>
+        <h4>Instant Calculation</h4>
+        <p>Pick a drink and caffeine, sugar, calories, and hydration appear immediately on the log screen.</p>
+    </div>
+    <div class="feature-item">
+        <div class="icon">🚦</div>
+        <h4>Color-Coded Warnings</h4>
+        <p>Green (under), yellow (approaching), red (over) — full daily status at a glance.</p>
+    </div>
+    <div class="feature-item">
+        <div class="icon">🔔</div>
+        <h4>Smart Notifications</h4>
+        <p>"You've had 350 mg caffeine — only 50 mg left for today. Try an herbal tea instead of another coffee?"</p>
+    </div>
+    <div class="feature-item">
+        <div class="icon">📈</div>
+        <h4>Weekly Trends</h4>
+        <p>Which days do you spike? Which beverages contribute most? Visual graphs.</p>
+    </div>
+    <div class="feature-item">
+        <div class="icon">🤰</div>
+        <h4>Profile-Based Limits</h4>
+        <p>Pregnancy, breastfeeding or teen profiles automatically apply their own lower limits.</p>
+    </div>
+    <div class="feature-item">
+        <div class="icon">🧠</div>
+        <h4>AI Coaching</h4>
+        <p>"You averaged 280 mg caffeine this week — your sleep score dropped. Try cutting late-afternoon coffee."</p>
+    </div>
+</div>
+
+<h2>Caffeine Half-Life and Sleep</h2>
+
+<p>Caffeine has an average half-life of 5-6 hours. A latte (150 mg) at 5 PM still leaves 75 mg active in your body at 11 PM. Suu records the time of every caffeine entry and recommends a <strong>"last cup" cutoff</strong> based on your sleep schedule:</p>
+
+<ul>
+    <li>Bedtime 10 PM: stop caffeine after 4 PM</li>
+    <li>Caffeine-sensitive users: cutoff 2 PM</li>
+    <li>Pregnancy: half-life doubles — recommend stopping by noon</li>
+</ul>
+
+<h2>Sugar × Hydration</h2>
+
+<p>Sugary drinks trigger this chain in the body:</p>
+
+<ol>
+    <li>High blood glucose puts pressure on your kidneys</li>
+    <li>Kidneys try to flush excess sugar through urine</li>
+    <li>Extra water is consumed in the process → indirect dehydration</li>
+    <li>Result: 500 ml of cola does not hydrate like 500 ml of water</li>
+</ol>
+
+<p>That's why Suu shows both a dehydration factor and an "extra water recommended" message for sugary beverages. One app, three measurements: <strong>water + caffeine + sugar.</strong></p>
+
+<h2>Use Cases</h2>
+
+<h3>1. Coffee Lover</h3>
+<p>Double espresso in the morning, latte at noon, americano in the afternoon. Suu: "You're at 280 mg caffeine, 120 mg left. A third coffee will push you over." Skip the evening Starbucks plan — body protected.</p>
+
+<h3>2. Pregnancy</h3>
+<p>If your profile is set to pregnant, Suu lowers the caffeine limit to 200 mg automatically. "You had a Turkish coffee (~50 mg) — 150 mg left for today. One more is safe." Clear guidance for fetal health.</p>
+
+<h3>3. Cutting Sugar</h3>
+<p>For users trying to reduce sugar, Suu generates a weekly graph. "Last week you averaged 42 g sugar/day. This week's target: 20 g. Replace juice with whole fruit, soda with sparkling water + lemon." Practical AI advice.</p>
+
+<h3>4. Athlete</h3>
+<p>Caffeine timing matters for performance. Suu surfaces evidence-based tips: "100-200 mg of caffeine 30-60 minutes before training can improve VO2 max performance."</p>
+
+<div class="cta-box">
+    <h3>Try 3 Days Free</h3>
+    <p>Caffeine and sugar tracking, activity-based dynamic goals, AI hydration coach — try every Premium feature free for 3 days. After that: 50% launch discount, $15/year.</p>
+    <div class="cta-btns">
+        <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" class="cta-btn cta-ios" target="_blank" rel="noopener">
+            <i class="fab fa-apple"></i> App Store
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro" class="cta-btn cta-android" target="_blank" rel="noopener">
+            <i class="fab fa-google-play"></i> Google Play
+        </a>
+    </div>
+</div>
+
+<h2>Bottom Line</h2>
+
+<p>Water tracking apps spent a decade answering one question: "How much water did you drink today?" That's an incomplete picture. Modern hydration science treats every drink as a packet of caffeine, sugar and calories too. Tracking those in three different apps isn't realistic.</p>
+
+<p>Suu rolls all three into one. Drink type, amount and content are calculated automatically with each log. The contextual AI coach warns you intelligently as you approach the limits. Start free with the 3-day Premium trial today.</p>
+
+<p style="margin-top:32px;"><a href="../../blog-en.html" style="color:#4A90D9;font-weight:600;text-decoration:none;">← Back to Blog</a></p>
+
+</article>
+</main>
+
+<footer>
+    <p>© 2026 Suu — Water Tracker App &nbsp;|&nbsp;
+        <a href="/">Home</a> &nbsp;
+        <a href="../../gizlilik-politikasi.html">Privacy</a> &nbsp;
+        <a href="../../kullanim-sartlari.html">Terms</a>
+    </p>
+</footer>
+
+<script src="../../lang-switcher.js" defer></script>
+</body>
+</html>
