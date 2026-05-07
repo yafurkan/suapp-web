@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-itunes-app" content="app-id=6757619920">
+    <title>Как отслеживать воду через Siri в 2026 (без рук) | Suu</title>
+    <meta name="description" content="Настройте Siri Shortcuts в Suu для голосового добавления воды. Пошаговое руководство для iPhone, Apple Watch и Android.">
+    <link rel="canonical" href="https://suuapp.com/blog/ru/siri-voda.html">
+    <link rel="alternate" hreflang="tr" href="https://suuapp.com/blog/sesli-komutla-su-ekleme.html">
+    <link rel="alternate" hreflang="en" href="https://suuapp.com/blog/en/siri-water-tracking.html">
+    <link rel="alternate" hreflang="ru" href="https://suuapp.com/blog/ru/siri-voda.html">
+    <meta property="og:title" content="Как отслеживать воду через Siri в 2026">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Inter',sans-serif;color:#333;background:#f8f9fa;line-height:1.7}
+        .nav{background:white;padding:0 20px;height:70px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 2px 10px rgba(0,0,0,0.08);position:sticky;top:0;z-index:100}
+        .nav-logo{display:flex;align-items:center;gap:8px;font-size:22px;font-weight:700;color:#4A90D9;text-decoration:none}
+        .nav-back{color:#666;text-decoration:none;font-size:14px}
+        .hero{background:linear-gradient(135deg,#7B1FA2,#4A148C);color:white;padding:60px 20px;text-align:center}
+        .badge{display:inline-block;background:rgba(255,255,255,0.2);padding:6px 16px;border-radius:20px;font-size:13px;margin-bottom:18px}
+        .hero h1{font-size:clamp(1.7rem,4vw,2.4rem);font-weight:700;max-width:760px;margin:0 auto 14px}
+        .meta{font-size:14px;opacity:0.85}
+        .container{max-width:760px;margin:0 auto;padding:50px 20px 80px}
+        .intro{font-size:1.05rem;color:#444;background:white;border-left:4px solid #7B1FA2;padding:20px 24px;border-radius:0 10px 10px 0;margin-bottom:24px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+        h2{font-size:1.5rem;font-weight:700;color:#222;margin:36px 0 14px}
+        p{margin-bottom:16px;color:#555}
+        .step-card{background:white;border-radius:12px;padding:22px;margin-bottom:14px;box-shadow:0 2px 10px rgba(0,0,0,0.06);display:flex;gap:16px}
+        .step-num{background:linear-gradient(135deg,#7B1FA2,#4A148C);color:white;width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0}
+        .step-content h3{font-size:1.05rem;font-weight:700;color:#1a1a2e;margin-bottom:6px}
+        .step-content p{margin:0}
+        .cmd-box{background:#1a1a2e;color:white;border-radius:8px;padding:12px 16px;margin:12px 0;font-family:monospace;font-size:0.9rem}
+        .stat-box{background:#f3e5f5;border-radius:10px;padding:16px 20px;margin:20px 0;border-left:4px solid #7B1FA2}
+        .stat-box strong{color:#4A148C}
+        .cta-box{background:linear-gradient(135deg,#7B1FA2,#4A148C);color:white;border-radius:16px;padding:36px;text-align:center;margin:50px 0}
+        .cta-box h3{font-size:1.4rem;margin-bottom:12px}
+        .cta-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+        .cta-btn{background:white;color:#4A148C;padding:12px 24px;border-radius:50px;font-weight:600;text-decoration:none;font-size:0.95rem;display:inline-flex;align-items:center;gap:8px}
+        .related-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:16px}
+        .related-card{background:white;border-radius:10px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,0.06);text-decoration:none;color:inherit}
+        .related-card .tag{font-size:12px;color:#4A148C;font-weight:600;text-transform:uppercase;margin-bottom:8px}
+        .related-card h4{font-size:0.95rem;color:#333;line-height:1.4}
+    </style>
+</head>
+<body>
+
+<nav class="nav">
+    <a href="../../hosgeldiniz-ru.html" class="nav-logo"><i class="fas fa-tint"></i> Suu</a>
+    <a href="../../blog-ru.html" class="nav-back"><i class="fas fa-arrow-left"></i> К блогу</a>
+</nav>
+
+<div class="hero">
+    <span class="badge">🎙️ Голос и Siri</span>
+    <h1>Как отслеживать воду через Siri в 2026 (без рук)</h1>
+    <div class="meta">14 апреля 2026 · 5 мин чтения · Команда Suu</div>
+</div>
+
+<div class="container">
+    <div class="intro">
+        Самое мощное снижение трения в записи воды — <strong>голосовое управление</strong>. Не нужно открывать приложение, не нужно тапать. Просто скажите «Привет, Siri, добавь стакан воды» — и готово. Suu полностью поддерживает Siri Shortcuts (iOS) и встроенное распознавание голоса (iOS + Android).
+    </div>
+
+    <h2>Настройка Siri Shortcuts (iOS)</h2>
+
+    <div class="step-card">
+        <div class="step-num">1</div>
+        <div class="step-content">
+            <h3>Откройте настройки Suu</h3>
+            <p>В приложении Suu перейдите в настройки → «Siri и голос».</p>
+        </div>
+    </div>
+
+    <div class="step-card">
+        <div class="step-num">2</div>
+        <div class="step-content">
+            <h3>Выберите действие</h3>
+            <p>Выберите, что хотите автоматизировать: «Добавить стакан 250 мл», «Добавить бутылку 500 мл», «Записать кофе» и т.д.</p>
+        </div>
+    </div>
+
+    <div class="step-card">
+        <div class="step-num">3</div>
+        <div class="step-content">
+            <h3>Запишите свою фразу</h3>
+            <p>Произнесите команду, которая удобна вам. Например: «Стакан воды», «Кофе записан», «Добавь воду».</p>
+        </div>
+    </div>
+
+    <div class="step-card">
+        <div class="step-num">4</div>
+        <div class="step-content">
+            <h3>Используйте</h3>
+            <p>Скажите «Привет, Siri, [ваша фраза]» — вода добавится без открытия приложения.</p>
+            <div class="cmd-box">«Привет, Siri, стакан воды»</div>
+            <div class="cmd-box">«Привет, Siri, добавь 500 мл»</div>
+        </div>
+    </div>
+
+    <div class="stat-box">
+        <strong>📊 Эффект:</strong> Пользователи Siri Shortcuts записывают воду в 3,5 раза чаще, чем те, кто открывает приложение вручную. Голос убирает трение почти полностью.
+    </div>
+
+    <h2>Голос на Apple Watch</h2>
+    <p>Siri Shortcuts работают и на Apple Watch. Поднимите запястье, скажите «Привет, Siri, стакан воды» — записано. Идеально на пробежке, в спортзале или с занятыми руками.</p>
+
+    <h2>Встроенное распознавание (Android + iOS)</h2>
+    <p>Suu имеет своё голосовое распознавание, независимое от Siri. Это работает и на Android. Особенности:</p>
+    <p>• Назначайте любое слово как триггер</p>
+    <p>• Поддерживает русский, английский, турецкий, арабский</p>
+    <p>• Работает офлайн</p>
+    <p>• Можно создать команду для каждого напитка («чашка чая», «стакан сока»)</p>
+
+    <h2>Лучшие команды для повседневного использования</h2>
+    <p><strong>«Стакан воды»</strong> — добавляет 250 мл воды</p>
+    <p><strong>«Большая бутылка»</strong> — добавляет 750 мл воды</p>
+    <p><strong>«Кофе»</strong> — добавляет напиток с коэффициентом обезвоживания</p>
+    <p><strong>«Чай»</strong> — добавляет 250 мл чая</p>
+    <p><strong>«Сколько воды я выпил»</strong> — Siri прочитает вашу статистику</p>
+
+    <h2>Автоматизация на основе контекста</h2>
+    <p>Через iOS Shortcuts можно настроить автоматические действия:</p>
+    <p>• <strong>При запуске тренировки</strong> — Suu предлагает выпить воды</p>
+    <p>• <strong>В 9:00 каждое утро</strong> — Siri напоминает выпить утреннюю воду</p>
+    <p>• <strong>Когда вы приходите домой</strong> — добавить стакан автоматически</p>
+
+    <div class="cta-box">
+        <h3>Запишите воду голосом — никаких касаний</h3>
+        <p>Siri Shortcuts + встроенное распознавание. Бесплатно.</p>
+        <div class="cta-buttons">
+            <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" class="cta-btn" target="_blank" rel="noopener"><i class="fab fa-apple"></i> App Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro" class="cta-btn" target="_blank" rel="noopener"><i class="fab fa-google-play"></i> Google Play</a>
+        </div>
+    </div>
+
+    <h2>Похожие статьи</h2>
+    <div class="related-grid">
+        <a href="apple-watch-voda.html" class="related-card"><div class="tag">Apple Watch</div><h4>Apple Watch и вода</h4></a>
+        <a href="privychka-pit-vodu.html" class="related-card"><div class="tag">Привычки</div><h4>Привычка пить воду</h4></a>
+        <a href="luchshee-prilozhenie-dlya-vody.html" class="related-card"><div class="tag">Сравнение</div><h4>Лучшее приложение</h4></a>
+    </div>
+</div>
+
+<script src="../../lang-switcher.js" defer></script>
+</body>
+</html>

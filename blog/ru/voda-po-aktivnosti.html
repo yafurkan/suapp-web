@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-itunes-app" content="app-id=6757619920">
+    <title>Отслеживание воды по активности: ходьба, бег, плавание | Suu</title>
+    <meta name="description" content="Suu читает вашу активность из Apple Health и Google Fit и автоматически увеличивает дневную цель воды. Научно обоснованная математика для 30+ типов тренировок.">
+    <link rel="canonical" href="https://suuapp.com/blog/ru/voda-po-aktivnosti.html">
+    <link rel="alternate" hreflang="tr" href="https://suuapp.com/blog/aktivite-bazli-su-takibi.html">
+    <link rel="alternate" hreflang="en" href="https://suuapp.com/blog/en/activity-based-water-tracking.html">
+    <link rel="alternate" hreflang="ar" href="https://suuapp.com/blog/ar/almae-walnashat-aljasadi.html">
+    <link rel="alternate" hreflang="ru" href="https://suuapp.com/blog/ru/voda-po-aktivnosti.html">
+    <meta property="og:title" content="Отслеживание воды по активности">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Inter',sans-serif;color:#333;background:#f8f9fa;line-height:1.7}
+        .nav{background:white;padding:0 20px;height:70px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 2px 10px rgba(0,0,0,0.08);position:sticky;top:0;z-index:100}
+        .nav-logo{display:flex;align-items:center;gap:8px;font-size:22px;font-weight:700;color:#4A90D9;text-decoration:none}
+        .nav-back{color:#666;text-decoration:none;font-size:14px}
+        .hero{background:linear-gradient(135deg,#0277BD,#01579B);color:white;padding:60px 20px;text-align:center}
+        .badge{display:inline-block;background:rgba(255,255,255,0.2);padding:6px 16px;border-radius:20px;font-size:13px;margin-bottom:18px}
+        .hero h1{font-size:clamp(1.7rem,4vw,2.4rem);font-weight:700;max-width:760px;margin:0 auto 14px}
+        .meta{font-size:14px;opacity:0.85}
+        .container{max-width:760px;margin:0 auto;padding:50px 20px 80px}
+        .intro{font-size:1.05rem;color:#444;background:white;border-left:4px solid #0277BD;padding:20px 24px;border-radius:0 10px 10px 0;margin-bottom:24px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+        h2{font-size:1.5rem;font-weight:700;color:#222;margin:36px 0 14px}
+        p{margin-bottom:16px;color:#555}
+        .activity-table{width:100%;border-collapse:collapse;margin:20px 0;background:white;border-radius:10px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,0.06)}
+        .activity-table th{background:#0277BD;color:white;padding:12px;text-align:left;font-weight:600}
+        .activity-table td{padding:10px 12px;border-top:1px solid #eee}
+        .stat-box{background:#e1f5fe;border-radius:10px;padding:16px 20px;margin:20px 0;border-left:4px solid #0277BD}
+        .stat-box strong{color:#01579B}
+        .cta-box{background:linear-gradient(135deg,#0277BD,#01579B);color:white;border-radius:16px;padding:36px;text-align:center;margin:50px 0}
+        .cta-box h3{font-size:1.4rem;margin-bottom:12px}
+        .cta-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+        .cta-btn{background:white;color:#01579B;padding:12px 24px;border-radius:50px;font-weight:600;text-decoration:none;font-size:0.95rem;display:inline-flex;align-items:center;gap:8px}
+        .related-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:16px}
+        .related-card{background:white;border-radius:10px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,0.06);text-decoration:none;color:inherit}
+        .related-card .tag{font-size:12px;color:#01579B;font-weight:600;text-transform:uppercase;margin-bottom:8px}
+        .related-card h4{font-size:0.95rem;color:#333;line-height:1.4}
+    </style>
+</head>
+<body>
+
+<nav class="nav">
+    <a href="../../hosgeldiniz-ru.html" class="nav-logo"><i class="fas fa-tint"></i> Suu</a>
+    <a href="../../blog-ru.html" class="nav-back"><i class="fas fa-arrow-left"></i> К блогу</a>
+</nav>
+
+<div class="hero">
+    <span class="badge">🏃 Активность и гидратация</span>
+    <h1>Отслеживание воды по активности: ходьба, бег, плавание</h1>
+    <div class="meta">7 мая 2026 · 7 мин чтения · Команда Suu</div>
+</div>
+
+<div class="container">
+    <div class="intro">
+        Большинство приложений дают вам фиксированную дневную цель воды. <strong>Реальность сложнее</strong> — потребность меняется ежедневно в зависимости от активности. Suu — единственное приложение, которое автоматически читает ваши тренировки из Apple Health/Google Fit и корректирует дневную цель.
+    </div>
+
+    <h2>Почему статичная цель не работает</h2>
+    <p>Ваше тело сегодня разное от вчерашнего. Вчера 8 000 шагов, бег 30 мин, потеряно ~600 мл с потом. Сегодня сидячий день — потеря 0. Если ваша цель на оба дня одинаковая (2,5 л), вчера вы недопиваете, а сегодня — переусердствуете.</p>
+
+    <h2>Как Suu рассчитывает</h2>
+    <p>Suu использует научно обоснованные коэффициенты для каждого типа активности на основе:</p>
+    <p>• <strong>Тип тренировки</strong> (бег vs силовая vs плавание)</p>
+    <p>• <strong>Продолжительность</strong> (15 минут vs 60 минут)</p>
+    <p>• <strong>Интенсивность</strong> (низкая, умеренная, высокая)</p>
+    <p>• <strong>Температура окружающей среды</strong> (через OpenWeatherMap)</p>
+
+    <div class="stat-box">
+        <strong>📊 Формула:</strong> Базовая цель + (минуты × коэффициент активности × модификатор интенсивности) × погодный коэффициент = дневная цель
+    </div>
+
+    <h2>Коэффициенты по видам спорта</h2>
+    <table class="activity-table">
+        <thead>
+            <tr><th>Активность</th><th>+ за 30 мин</th><th>+ за 60 мин</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>🚶 Ходьба (умеренная)</td><td>+150 мл</td><td>+300 мл</td></tr>
+            <tr><td>🏃 Бег</td><td>+400 мл</td><td>+800 мл</td></tr>
+            <tr><td>🏊 Плавание</td><td>+300 мл</td><td>+600 мл</td></tr>
+            <tr><td>🚴 Велосипед</td><td>+350 мл</td><td>+700 мл</td></tr>
+            <tr><td>🏋️ Силовая</td><td>+250 мл</td><td>+500 мл</td></tr>
+            <tr><td>🧘 Йога</td><td>+150 мл</td><td>+300 мл</td></tr>
+            <tr><td>⚽ Командные виды</td><td>+450 мл</td><td>+900 мл</td></tr>
+            <tr><td>🥊 HIIT/Кроссфит</td><td>+500 мл</td><td>+1000 мл</td></tr>
+            <tr><td>🎿 Лыжи</td><td>+350 мл</td><td>+700 мл</td></tr>
+            <tr><td>🧗 Скалолазание</td><td>+300 мл</td><td>+600 мл</td></tr>
+        </tbody>
+    </table>
+
+    <h2>Поддерживаемые активности (30+)</h2>
+    <p>Suu автоматически распознаёт и корректирует цель для:</p>
+    <p>Ходьба, бег, плавание, велосипед, фитнес, йога, силовая, HIIT, кроссфит, бокс, единоборства, теннис, баскетбол, футбол, гольф, лыжи, сноуборд, серфинг, скалолазание, гребля, эллипс, степпер, пилатес, танцы, гимнастика, прыжки на скакалке, бег по лестнице, треккинг, ходьба с отягощением, стретчинг.</p>
+
+    <h2>Реальный пример</h2>
+    <p><strong>Понедельник (сидячий день):</strong> Базовая цель 2 200 мл. Активность: 4 000 шагов = +0. Итог: <strong>2 200 мл</strong>.</p>
+    <p><strong>Вторник (бег + офис):</strong> Базовая 2 200 мл + бег 35 мин (+450 мл) + жара 32°C (+300 мл) = <strong>2 950 мл</strong>.</p>
+    <p><strong>Среда (плавание + силовая):</strong> Базовая 2 200 мл + плавание 45 мин (+450 мл) + силовая 30 мин (+250 мл) = <strong>2 900 мл</strong>.</p>
+    <p>Цель меняется каждый день — реальная гидратация по реальной активности.</p>
+
+    <h2>Как настроить</h2>
+    <p><strong>1.</strong> Suu → Настройки → «Подключения здоровья».</p>
+    <p><strong>2.</strong> Дайте разрешение на чтение Apple Health (iOS) или Google Fit (Android).</p>
+    <p><strong>3.</strong> Включите «Авто-цель по активности».</p>
+    <p><strong>4.</strong> Тренируйтесь — Suu автоматически добавит к цели в течение часа после.</p>
+
+    <h2>Что если не носите фитнес-трекер</h2>
+    <p>Можно вручную добавить тренировку в Suu. Выберите тип, продолжительность и интенсивность — Suu рассчитает дополнение к цели. То же преимущество без устройства.</p>
+
+    <div class="cta-box">
+        <h3>Гидратация, синхронизированная с тренировками</h3>
+        <p>Apple Health + Google Fit интеграция. Бесплатно — iOS и Android.</p>
+        <div class="cta-buttons">
+            <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" class="cta-btn" target="_blank" rel="noopener"><i class="fab fa-apple"></i> App Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro" class="cta-btn" target="_blank" rel="noopener"><i class="fab fa-google-play"></i> Google Play</a>
+        </div>
+    </div>
+
+    <h2>Похожие статьи</h2>
+    <div class="related-grid">
+        <a href="sport-i-gidratatsiya.html" class="related-card"><div class="tag">Спорт</div><h4>Спорт и гидратация</h4></a>
+        <a href="apple-watch-voda.html" class="related-card"><div class="tag">Apple Watch</div><h4>Apple Watch и вода</h4></a>
+        <a href="otsenka-gidratatsii.html" class="related-card"><div class="tag">Аналитика</div><h4>Оценка гидратации</h4></a>
+    </div>
+</div>
+
+<script src="../../lang-switcher.js" defer></script>
+</body>
+</html>

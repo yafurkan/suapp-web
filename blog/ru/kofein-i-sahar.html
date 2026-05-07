@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-itunes-app" content="app-id=6757619920">
+    <title>Отслеживание кофеина и сахара: скрытые лимиты в напитках | Suu</title>
+    <meta name="description" content="Suu рассчитывает кофеин (мг) и сахар (г) для 100+ напитков. Умные предупреждения о лимитах FDA 400 мг и ВОЗ 25 г в день.">
+    <link rel="canonical" href="https://suuapp.com/blog/ru/kofein-i-sahar.html">
+    <link rel="alternate" hreflang="tr" href="https://suuapp.com/blog/kafein-seker-takibi.html">
+    <link rel="alternate" hreflang="en" href="https://suuapp.com/blog/en/caffeine-sugar-tracking.html">
+    <link rel="alternate" hreflang="ar" href="https://suuapp.com/blog/ar/alkafayin-walsukar.html">
+    <link rel="alternate" hreflang="ru" href="https://suuapp.com/blog/ru/kofein-i-sahar.html">
+    <meta property="og:title" content="Отслеживание кофеина и сахара">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Inter',sans-serif;color:#333;background:#f8f9fa;line-height:1.7}
+        .nav{background:white;padding:0 20px;height:70px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 2px 10px rgba(0,0,0,0.08);position:sticky;top:0;z-index:100}
+        .nav-logo{display:flex;align-items:center;gap:8px;font-size:22px;font-weight:700;color:#4A90D9;text-decoration:none}
+        .nav-back{color:#666;text-decoration:none;font-size:14px}
+        .hero{background:linear-gradient(135deg,#BF360C,#5D2A1F);color:white;padding:60px 20px;text-align:center}
+        .badge{display:inline-block;background:rgba(255,255,255,0.2);padding:6px 16px;border-radius:20px;font-size:13px;margin-bottom:18px}
+        .hero h1{font-size:clamp(1.7rem,4vw,2.4rem);font-weight:700;max-width:760px;margin:0 auto 14px}
+        .meta{font-size:14px;opacity:0.85}
+        .container{max-width:760px;margin:0 auto;padding:50px 20px 80px}
+        .intro{font-size:1.05rem;color:#444;background:white;border-left:4px solid #BF360C;padding:20px 24px;border-radius:0 10px 10px 0;margin-bottom:24px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+        h2{font-size:1.5rem;font-weight:700;color:#222;margin:36px 0 14px}
+        p{margin-bottom:16px;color:#555}
+        .limit-card{background:white;border-radius:14px;padding:24px;margin-bottom:18px;box-shadow:0 2px 12px rgba(0,0,0,0.07);border-left:4px solid #BF360C}
+        .limit-card h3{font-size:1.15rem;font-weight:700;color:#1a1a2e;margin-bottom:8px}
+        .limit-card .number{font-size:2rem;font-weight:800;color:#BF360C;margin:8px 0}
+        .drink-table{width:100%;border-collapse:collapse;margin:20px 0;background:white;border-radius:10px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,0.06);font-size:0.9rem}
+        .drink-table th{background:#BF360C;color:white;padding:12px 8px;text-align:left}
+        .drink-table td{padding:10px 8px;border-top:1px solid #eee}
+        .stat-box{background:#fbe9e7;border-radius:10px;padding:16px 20px;margin:20px 0;border-left:4px solid #BF360C}
+        .stat-box strong{color:#5D2A1F}
+        .cta-box{background:linear-gradient(135deg,#BF360C,#5D2A1F);color:white;border-radius:16px;padding:36px;text-align:center;margin:50px 0}
+        .cta-box h3{font-size:1.4rem;margin-bottom:12px}
+        .cta-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+        .cta-btn{background:white;color:#BF360C;padding:12px 24px;border-radius:50px;font-weight:600;text-decoration:none;font-size:0.95rem;display:inline-flex;align-items:center;gap:8px}
+        .related-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:16px}
+        .related-card{background:white;border-radius:10px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,0.06);text-decoration:none;color:inherit}
+        .related-card .tag{font-size:12px;color:#BF360C;font-weight:600;text-transform:uppercase;margin-bottom:8px}
+        .related-card h4{font-size:0.95rem;color:#333;line-height:1.4}
+    </style>
+</head>
+<body>
+
+<nav class="nav">
+    <a href="../../hosgeldiniz-ru.html" class="nav-logo"><i class="fas fa-tint"></i> Suu</a>
+    <a href="../../blog-ru.html" class="nav-back"><i class="fas fa-arrow-left"></i> К блогу</a>
+</nav>
+
+<div class="hero">
+    <span class="badge">🧪 Кофеин и сахар</span>
+    <h1>Отслеживание кофеина и сахара: скрытые лимиты в напитках</h1>
+    <div class="meta">7 мая 2026 · 7 мин чтения · Команда Suu</div>
+</div>
+
+<div class="container">
+    <div class="intro">
+        Большинство людей <strong>неосознанно превышают</strong> дневные лимиты кофеина и сахара через напитки. Один латте, одна газировка, одно энергетическое утром — и вы уже у красной линии. Suu теперь рассчитывает кофеин (мг) и сахар (г) для 100+ напитков и предупреждает заранее.
+    </div>
+
+    <h2>Дневные лимиты — что говорят организации</h2>
+
+    <div class="limit-card">
+        <h3>☕ Кофеин (FDA)</h3>
+        <div class="number">400 мг/день</div>
+        <p>Управление по санитарному надзору США (FDA) рекомендует не более 400 мг кофеина в день для здоровых взрослых. Это примерно 4 чашки фильтр-кофе или 2–3 латте Starbucks Grande. При беременности — макс 200 мг.</p>
+    </div>
+
+    <div class="limit-card">
+        <h3>🍬 Добавленный сахар (ВОЗ)</h3>
+        <div class="number">25 г/день</div>
+        <p>Всемирная организация здравоохранения рекомендует не более 25 г (6 ч.л.) добавленного сахара в день для оптимального здоровья. Один Coca-Cola 330 мл = 35 г — уже превышение.</p>
+    </div>
+
+    <h2>Кофеин в популярных напитках</h2>
+    <table class="drink-table">
+        <thead>
+            <tr><th>Напиток (объём)</th><th>Кофеин</th><th>% от лимита</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Эспрессо (30 мл)</td><td>63 мг</td><td>16%</td></tr>
+            <tr><td>Американо (250 мл)</td><td>120 мг</td><td>30%</td></tr>
+            <tr><td>Латте Grande (470 мл)</td><td>150 мг</td><td>38%</td></tr>
+            <tr><td>Чёрный чай (250 мл)</td><td>47 мг</td><td>12%</td></tr>
+            <tr><td>Зелёный чай (250 мл)</td><td>28 мг</td><td>7%</td></tr>
+            <tr><td>Coca-Cola (330 мл)</td><td>32 мг</td><td>8%</td></tr>
+            <tr><td>Red Bull (250 мл)</td><td>80 мг</td><td>20%</td></tr>
+            <tr><td>Monster (500 мл)</td><td>160 мг</td><td>40%</td></tr>
+            <tr><td>Тёмный шоколад (50 г)</td><td>20 мг</td><td>5%</td></tr>
+        </tbody>
+    </table>
+
+    <h2>Сахар в популярных напитках</h2>
+    <table class="drink-table">
+        <thead>
+            <tr><th>Напиток (объём)</th><th>Сахар</th><th>% от лимита</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Coca-Cola (330 мл)</td><td>35 г</td><td>140%</td></tr>
+            <tr><td>Pepsi (330 мл)</td><td>37 г</td><td>148%</td></tr>
+            <tr><td>Apple Juice (250 мл)</td><td>26 г</td><td>104%</td></tr>
+            <tr><td>Orange Juice (250 мл)</td><td>22 г</td><td>88%</td></tr>
+            <tr><td>Латте Grande (470 мл)</td><td>14 г</td><td>56%</td></tr>
+            <tr><td>Капучино без сахара</td><td>10 г</td><td>40%</td></tr>
+            <tr><td>Frappuccino (470 мл)</td><td>52 г</td><td>208%</td></tr>
+            <tr><td>Energy Drink (250 мл)</td><td>27 г</td><td>108%</td></tr>
+            <tr><td>Молоко (250 мл)</td><td>12 г</td><td>48% (натуральный)</td></tr>
+        </tbody>
+    </table>
+
+    <div class="stat-box">
+        <strong>📊 Реальный пример:</strong> Утренний латте (150 мг + 14 г) + дневная Coca-Cola (32 мг + 35 г) = 182 мг кофеина и 49 г сахара. Сахар — почти 2x лимита, и день только начался.
+    </div>
+
+    <h2>Симптомы превышения</h2>
+    <p><strong>Кофеин > 400 мг:</strong> учащённое сердцебиение, тревога, бессонница, дрожь рук, головная боль, повышенная мочегонная активность.</p>
+    <p><strong>Сахар > 25 г:</strong> энергетические скачки и спады, тяга к сладкому, набор веса, риск диабета 2 типа, воспалительные процессы.</p>
+
+    <h2>Как Suu автоматически считает</h2>
+    <p>Когда вы записываете напиток в Suu, приложение автоматически добавляет кофеин и сахар в дневной счётчик. Прогресс-бар показывает, насколько вы близко к лимитам. При приближении к 80% — умное предупреждение.</p>
+    <p>Например, после латте Grande Suu покажет: «Кофеин: 150/400 мг (38%). Сахар: 14/25 г (56%).» После второго напитка вы увидите риск превышения.</p>
+
+    <h2>Кофейни в Suu</h2>
+    <p>Specifically для популярных кофеен (Starbucks, Nevada, Greenwich) Suu имеет предзагруженные профили каждого напитка с точными цифрами кофеина и сахара. Не нужно гуглить — просто выберите свой напиток.</p>
+
+    <h2>Лучшие альтернативы</h2>
+    <p><strong>Вместо латте</strong> — американо без сахара или с растительным молоком (меньше калорий, такой же вкус)</p>
+    <p><strong>Вместо газировки</strong> — газированная вода с лимоном или ягодами</p>
+    <p><strong>Вместо энергетика</strong> — кофе + правильный сон (бесплатно, эффективнее долгосрочно)</p>
+    <p><strong>Вместо сока</strong> — целый фрукт + вода (клетчатка замедляет всасывание сахара)</p>
+
+    <div class="cta-box">
+        <h3>Полный контроль над напитками</h3>
+        <p>Кофеин и сахар автоматически. Бесплатно — iOS и Android.</p>
+        <div class="cta-buttons">
+            <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" class="cta-btn" target="_blank" rel="noopener"><i class="fab fa-apple"></i> App Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro" class="cta-btn" target="_blank" rel="noopener"><i class="fab fa-google-play"></i> Google Play</a>
+        </div>
+    </div>
+
+    <h2>Похожие статьи</h2>
+    <div class="related-grid">
+        <a href="kofe-chay-i-voda.html" class="related-card"><div class="tag">Напитки</div><h4>Кофе, чай и вода</h4></a>
+        <a href="voda-i-pohudenie.html" class="related-card"><div class="tag">Похудение</div><h4>Вода и похудение</h4></a>
+        <a href="luchshee-prilozhenie-dlya-vody.html" class="related-card"><div class="tag">Сравнение</div><h4>Лучшее приложение</h4></a>
+    </div>
+</div>
+
+<script src="../../lang-switcher.js" defer></script>
+</body>
+</html>
