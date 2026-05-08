@@ -42,6 +42,45 @@ Accessibility: VoiceOver (iOS) and TalkBack (Android) supported throughout
 AI references for crawlers: /llms.txt, /llms-full.txt, /llms-ar.txt, /llms-full-ar.txt, /llms-ru.txt, /llms-full-ru.txt, /.well-known/ai-plugin.json
 
 
+/* WEBMASTER VERIFICATION */
+
+Search engine and webmaster tools — current status and setup notes.
+
+Google Search Console: PENDING
+  Property URL: https://suuapp.com/
+  Setup URL: https://search.google.com/search-console
+  Verification method: HTML meta tag
+  Steps:
+    1. Sign in with the Google account that owns the domain
+    2. Add property → URL prefix → https://suuapp.com/
+    3. Pick "HTML tag" as the verification method
+    4. Google gives a meta tag like <meta name="google-site-verification" content="ABC123…">
+    5. Open these files and replace the placeholder line with the actual tag (remove the surrounding HTML comment):
+       - index.html (TR homepage)
+       - hosgeldiniz-en.html (EN landing)
+       - hosgeldiniz-ar.html (AR landing)
+       - hosgeldiniz-ru.html (RU landing)
+    6. Deploy the change, then click "Verify" in Search Console
+    7. Submit the sitemap once verified: https://suuapp.com/sitemap.xml
+
+Yandex Webmaster: NOT YET CONFIGURED (recommended for RU/CIS reach)
+  Setup URL: https://webmaster.yandex.com
+  Why it matters: Yandex is the dominant search engine in Russia and the CIS region — Suu's RU blog content
+  is targeted at exactly that market. Without Yandex verification, the RU posts can still be indexed but you
+  lose access to query analytics, sitemap submission and crawl diagnostics.
+  Same flow as Google (HTML meta tag method) — meta name is "yandex-verification".
+
+Bing Webmaster Tools: NOT YET CONFIGURED (optional, helpful for EN reach)
+  Setup URL: https://www.bing.com/webmasters
+  Microsoft Edge / DuckDuckGo / partial ChatGPT search use Bing's index, so verification matters for EN traffic.
+  Tip: Bing supports importing properties straight from Google Search Console once Google is verified.
+
+IndexNow API: NOT YET CONFIGURED (optional, fast indexing)
+  Setup URL: https://www.indexnow.org/
+  Single API key works for both Bing and Yandex — when a new blog post is published, ping the IndexNow endpoint
+  and both engines re-crawl within minutes.
+
+
 /* THANKS */
 
 Thanks to every user who hydrates with Suu — and to every friend who shows up in the weekly league.
