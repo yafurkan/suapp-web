@@ -46,22 +46,12 @@ AI references for crawlers: /llms.txt, /llms-full.txt, /llms-ar.txt, /llms-full-
 
 Search engine and webmaster tools — current status and setup notes.
 
-Google Search Console: PENDING
-  Property URL: https://suuapp.com/
-  Setup URL: https://search.google.com/search-console
-  Verification method: HTML meta tag
-  Steps:
-    1. Sign in with the Google account that owns the domain
-    2. Add property → URL prefix → https://suuapp.com/
-    3. Pick "HTML tag" as the verification method
-    4. Google gives a meta tag like <meta name="google-site-verification" content="ABC123…">
-    5. Open these files and replace the placeholder line with the actual tag (remove the surrounding HTML comment):
-       - index.html (TR homepage)
-       - hosgeldiniz-en.html (EN landing)
-       - hosgeldiniz-ar.html (AR landing)
-       - hosgeldiniz-ru.html (RU landing)
-    6. Deploy the change, then click "Verify" in Search Console
-    7. Submit the sitemap once verified: https://suuapp.com/sitemap.xml
+Google Search Console: VERIFIED ✅
+  Property type: Domain property (covers all subdomains + protocols)
+  Verification method: DNS TXT record (auto-detected by Google)
+  Sitemap submitted: https://suuapp.com/sitemap.xml — Status: Success, last read 2026-05-07, 78 pages discovered
+  Console: https://search.google.com/search-console
+  Note: because verification is at the DNS level, no HTML meta tag is required on any page.
 
 Yandex Webmaster: NOT YET CONFIGURED (recommended for RU/CIS reach)
   Setup URL: https://webmaster.yandex.com
