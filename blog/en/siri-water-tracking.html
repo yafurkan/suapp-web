@@ -55,7 +55,11 @@
         "mainEntityOfPage": "https://suuapp.com/blog/en/siri-water-tracking.html",
         "inLanguage": "en",
         "keywords": "siri water tracking, track water with siri, siri shortcut water intake, hey siri log water, hands free water tracker, siri water app, voice water tracking, siri hydration, water intake voice command, suu siri shortcuts",
-        "wordCount": 903
+        "wordCount": 903,
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [".hero h1", ".intro", "h2", ".benefit-content p", ".phase-card p"]
+        }
     }
     </script>
     <script type="application/ld+json">
@@ -99,6 +103,55 @@
             {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://suuapp.com/blog-en.html"},
             {"@type": "ListItem", "position": 3, "name": "Siri Water Tracking", "item": "https://suuapp.com/blog/en/siri-water-tracking.html"}
         ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to set up Siri and voice commands in Suu for water logging",
+        "description": "Hands-free water logging with Siri Shortcuts and the in-app voice command system — set up in a few minutes.",
+        "inLanguage": "en",
+        "totalTime": "PT4M",
+        "tool": [
+            {"@type": "HowToTool", "name": "iPhone (iOS 15+) or Android device"},
+            {"@type": "HowToTool", "name": "Suu app"},
+            {"@type": "HowToTool", "name": "Microphone permission"}
+        ],
+        "step": [
+            {
+                "@type": "HowToStep",
+                "position": 1,
+                "name": "Grant microphone permission to Suu",
+                "text": "Open Suu → Settings → Voice Commands. Tap \"Microphone Permission\" and grant access. The permission is used only for command detection; voice recordings are never sent to a server. On iOS, also enable Suu under Siri & Search settings."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 2,
+                "name": "Try the quick Siri command (iOS only)",
+                "text": "Say \"Hey Siri, add a glass of water\" on iPhone. The first time, Siri may ask permission to open Suu. After confirming, 200 ml will be auto-added each time. The command also works from Apple Watch."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 3,
+                "name": "Define a custom Siri command",
+                "text": "For more control, open the Shortcuts app on iPhone → customize the \"Add Water\" action under Suu. Choose the amount and beverage and write your own trigger phrase (e.g. \"500 ml water\"). Now you can say \"Hey Siri, 500 ml water\"."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 4,
+                "name": "Set up the in-app voice command (Siri-independent, also works on Android)",
+                "text": "Suu → Settings → Voice Commands → New Command. Pick a beverage (e.g. coffee), set the amount (e.g. 200 ml), write the trigger word (e.g. \"coffee\"). Now while the app is open, saying \"coffee\" auto-logs 200 ml of coffee. This system works independently of Siri."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 5,
+                "name": "Test it and integrate into your daily flow",
+                "text": "While in the kitchen, after a run, or at work — try the command without unlocking the app. Entries logged this way are tagged \"source = voice\" and visible in Statistics so you can see how much you logged hands-free during the day."
+            }
+        ],
+        "image": "https://suuapp.com/assets/og-image.png"
     }
     </script>
 

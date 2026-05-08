@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         <loc>https://suuapp.com/</loc>
         <lastmod>2026-05-08</lastmod>
@@ -11,6 +12,31 @@
         <xhtml:link rel="alternate" hreflang="ar" href="https://suuapp.com/hosgeldiniz-ar.html" />
         <xhtml:link rel="alternate" hreflang="ru" href="https://suuapp.com/hosgeldiniz-ru.html" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://suuapp.com/" />
+        <image:image>
+            <image:loc>https://suuapp.com/assets/screenshots/ana-ekran.webp</image:loc>
+            <image:title>Suu Ana Ekran — Günlük Su Takibi</image:title>
+            <image:caption>Suu uygulamasının ana ekranı: günlük hedef, ilerleme halkası ve hızlı su ekleme</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://suuapp.com/assets/screenshots/istatikler.webp</image:loc>
+            <image:title>Suu İstatistikler — Hidrasyon Skoru ve Grafikler</image:title>
+            <image:caption>Günlük, haftalık, aylık grafikler ve 0-100 hidrasyon skoru</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://suuapp.com/assets/screenshots/asistan.webp</image:loc>
+            <image:title>Suu AI Sağlık Asistanı — Bağlamsal Koçluk</image:title>
+            <image:caption>Saatlik bağlamsal mesajlar ve haftalık kişisel sağlık raporları</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://suuapp.com/assets/screenshots/gun-challenge.webp</image:loc>
+            <image:title>Suu Günlük Challenge — 7 ve 30 Gün Meydan Okuma</image:title>
+            <image:caption>Hidrasyon meydan okumalarıyla günlük su içme alışkanlığı kurun</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://suuapp.com/assets/screenshots/hatirlama.webp</image:loc>
+            <image:title>Suu Akıllı Hatırlatmalar — Bağlamsal Bildirimler</image:title>
+            <image:caption>Günün saatine ve mevcut ilerlemenize göre kişiselleştirilmiş hatırlatıcılar</image:caption>
+        </image:image>
     </url>
     <url>
         <loc>https://suuapp.com/su-hesaplayici.html</loc>
@@ -40,6 +66,31 @@
         <xhtml:link rel="alternate" hreflang="ar" href="https://suuapp.com/hosgeldiniz-ar.html" />
         <xhtml:link rel="alternate" hreflang="ru" href="https://suuapp.com/hosgeldiniz-ru.html" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://suuapp.com/" />
+        <image:image>
+            <image:loc>https://suuapp.com/assets/screenshots/ana-ekran-en.webp</image:loc>
+            <image:title>Suu Home Screen — Daily Water Tracking</image:title>
+            <image:caption>Daily goal, progress ring and quick add</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://suuapp.com/assets/screenshots/istatikler-en.webp</image:loc>
+            <image:title>Suu Statistics — Hydration Score and Charts</image:title>
+            <image:caption>Daily, weekly, monthly graphs with 0-100 hydration score</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://suuapp.com/assets/screenshots/asistan-en.webp</image:loc>
+            <image:title>Suu AI Health Assistant — Contextual Coaching</image:title>
+            <image:caption>Hourly contextual messages and weekly personalized health reports</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://suuapp.com/assets/screenshots/gun-challenge-en.webp</image:loc>
+            <image:title>Suu Daily Challenge — 7 and 30 Day Hydration</image:title>
+            <image:caption>Build daily hydration habits through challenges</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://suuapp.com/assets/screenshots/hatirlama-en.webp</image:loc>
+            <image:title>Suu Smart Reminders — Contextual Notifications</image:title>
+            <image:caption>Reminders personalized to time of day and current progress</image:caption>
+        </image:image>
     </url>
     <url>
         <loc>https://suuapp.com/hosgeldiniz-ar.html</loc>
@@ -51,6 +102,31 @@
         <xhtml:link rel="alternate" hreflang="ar" href="https://suuapp.com/hosgeldiniz-ar.html" />
         <xhtml:link rel="alternate" hreflang="ru" href="https://suuapp.com/hosgeldiniz-ru.html" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://suuapp.com/" />
+        <image:image>
+            <image:loc>https://suuapp.com/assets/screenshots/ana-ekran-ar.webp</image:loc>
+            <image:title>Suu الشاشة الرئيسية — تتبع الماء اليومي</image:title>
+            <image:caption>الهدف اليومي وحلقة التقدم والإضافة السريعة</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://suuapp.com/assets/screenshots/istatikler-ar.webp</image:loc>
+            <image:title>Suu الإحصائيات — نقاط الترطيب والرسوم البيانية</image:title>
+            <image:caption>رسوم بيانية يومية وأسبوعية وشهرية مع نقاط ترطيب 0-100</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://suuapp.com/assets/screenshots/asistan-ar.webp</image:loc>
+            <image:title>Suu المساعد الصحي بالذكاء الاصطناعي — تدريب سياقي</image:title>
+            <image:caption>رسائل سياقية بالساعة وتقارير صحية أسبوعية مخصصة</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://suuapp.com/assets/screenshots/gun-challenge-ar.webp</image:loc>
+            <image:title>Suu التحديات اليومية — 7 و 30 يوم</image:title>
+            <image:caption>بناء عادة شرب الماء من خلال التحديات</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://suuapp.com/assets/screenshots/hatirlama-ar.webp</image:loc>
+            <image:title>Suu التذكيرات الذكية — إشعارات سياقية</image:title>
+            <image:caption>تذكيرات مخصصة حسب الوقت والتقدم</image:caption>
+        </image:image>
     </url>
     <url>
         <loc>https://suuapp.com/ozellikler.html</loc>
@@ -503,6 +579,31 @@
         <xhtml:link rel="alternate" hreflang="ar" href="https://suuapp.com/hosgeldiniz-ar.html" />
         <xhtml:link rel="alternate" hreflang="ru" href="https://suuapp.com/hosgeldiniz-ru.html" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://suuapp.com/" />
+        <image:image>
+            <image:loc>https://suuapp.com/assets/screenshots/ana-ekran-ru.webp</image:loc>
+            <image:title>Suu Главный экран — Ежедневный трекинг воды</image:title>
+            <image:caption>Дневная цель, прогресс-кольцо и быстрое добавление</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://suuapp.com/assets/screenshots/istatikler-ru.webp</image:loc>
+            <image:title>Suu Статистика — Оценка гидратации и графики</image:title>
+            <image:caption>Дневные, недельные, месячные графики с оценкой гидратации 0-100</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://suuapp.com/assets/screenshots/asistan-ru.webp</image:loc>
+            <image:title>Suu AI-помощник по здоровью — Контекстный коучинг</image:title>
+            <image:caption>Контекстные сообщения по часам и еженедельные отчёты</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://suuapp.com/assets/screenshots/gun-challenge-ru.webp</image:loc>
+            <image:title>Suu Ежедневный челлендж — 7 и 30 дней</image:title>
+            <image:caption>Формирование привычки пить воду через челленджи</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://suuapp.com/assets/screenshots/hatirlama-ru.webp</image:loc>
+            <image:title>Suu Умные напоминания — Контекстные уведомления</image:title>
+            <image:caption>Напоминания, персонализированные по времени и прогрессу</image:caption>
+        </image:image>
     </url>
     <url>
         <loc>https://suuapp.com/blog-ru.html</loc>

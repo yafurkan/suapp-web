@@ -55,7 +55,11 @@
         "mainEntityOfPage": "https://suuapp.com/blog/sesli-komutla-su-ekleme.html",
         "inLanguage": "tr",
         "keywords": "siri su ekleme, sesli komutla su takibi, hey siri su ekle, siri shortcuts su takip, sesli su kayıt, eller serbest su ekleme, siri hidrasyon, suu siri entegrasyonu, android sesli su takip, sesli komut su uygulaması",
-        "wordCount": 551
+        "wordCount": 551,
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [".hero h1", ".intro", "h2", ".benefit-content p", ".phase-card p"]
+        }
     }
     </script>
     <script type="application/ld+json">
@@ -91,6 +95,55 @@
             {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://suuapp.com/blog.html"},
             {"@type": "ListItem", "position": 3, "name": "Sesli Komutla Su Ekleme", "item": "https://suuapp.com/blog/sesli-komutla-su-ekleme.html"}
         ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Suu'da Siri ve sesli komutla su ekleme nasıl ayarlanır",
+        "description": "Eller serbest su kaydı için Siri Shortcuts ve uygulama içi sesli komut sistemini birkaç dakikada kurun.",
+        "inLanguage": "tr",
+        "totalTime": "PT4M",
+        "tool": [
+            {"@type": "HowToTool", "name": "iPhone (iOS 15+) veya Android cihaz"},
+            {"@type": "HowToTool", "name": "Suu uygulaması"},
+            {"@type": "HowToTool", "name": "Mikrofon erişim izni"}
+        ],
+        "step": [
+            {
+                "@type": "HowToStep",
+                "position": 1,
+                "name": "Mikrofon iznini Suu'ya verin",
+                "text": "Suu'yu açın → Ayarlar → Sesli Komutlar. \"Mikrofon İzni\" seçeneğine dokunarak sistemden izin verin. Bu izin yalnızca komut algılama için kullanılır; ses kaydı sunucuya gönderilmez. iOS'ta ek olarak Siri & Arama ayarlarından da Suu'yu etkinleştirin."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 2,
+                "name": "Hızlı Siri komutunu çalıştırın (sadece iOS)",
+                "text": "iPhone'da \"Hey Siri, bir bardak su ekle\" deyin. İlk seferde Siri sizden Suu'yu açmanıza izin vermenizi isteyebilir. Onayladıktan sonra her seferde 200 ml otomatik eklenecek. Komut Apple Watch'tan da çalışır."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 3,
+                "name": "Özel Siri komutu tanımlayın",
+                "text": "Daha kişisel kontrol için iPhone'da Kısayollar (Shortcuts) uygulamasını açın → Suu altındaki \"Su Ekle\" eylemini özelleştirin. Miktar ve içeceği seçip kendi tetikleyici cümlenizi yazın (örn. \"500 ml su\"). Artık \"Hey Siri, 500 ml su\" diyebilirsiniz."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 4,
+                "name": "Uygulama içi sesli komutu kurun (Siri'den bağımsız, Android'de de çalışır)",
+                "text": "Suu → Ayarlar → Sesli Komutlar → Yeni Komut. Bir içecek seçin (örn. kahve), miktarı belirleyin (örn. 200 ml), tetikleyici kelimeyi yazın (örn. \"kahve\"). Artık uygulama açıkken \"kahve\" dediğinizde 200 ml kahve otomatik kaydedilir. Bu sistem Siri'den bağımsız çalışır."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 5,
+                "name": "Test edin ve günlük ritme oturtun",
+                "text": "Mutfaktayken, koştuktan sonra veya iş yerinde — uygulamayı açmadan komutu deneyin. \"Source = voice\" etiketiyle kaydedilen girişler İstatistikler ekranında görünür; gün içinde sesli komutla ne kadar kaydettiğinizi görebilirsiniz."
+            }
+        ],
+        "image": "https://suuapp.com/assets/og-image.png"
     }
     </script>
 

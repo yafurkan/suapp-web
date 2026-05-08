@@ -61,7 +61,11 @@
         "inLanguage": "en",
         "about": {"@type": "MobileApplication", "name": "Suu", "operatingSystem": "iOS, watchOS, Android"},
         "keywords": "apple watch water tracking, water tracker apple watch, apple watch hydration app, best water app for apple watch, log water apple watch, watchos water intake, suu apple watch, apple health water tracking, hydration apple watch app 2026",
-        "wordCount": 1098
+        "wordCount": 1098,
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [".hero h1", ".intro", "h2", ".benefit-content p", ".phase-card p"]
+        }
     }
     </script>
     <script type="application/ld+json">
@@ -105,6 +109,55 @@
             {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://suuapp.com/blog-en.html"},
             {"@type": "ListItem", "position": 3, "name": "Apple Watch Water Tracking", "item": "https://suuapp.com/blog/en/apple-watch-water-tracking.html"}
         ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to track water on Apple Watch with Suu",
+        "description": "Log water from your wrist without touching your iPhone — step-by-step setup, from install to first log.",
+        "inLanguage": "en",
+        "totalTime": "PT3M",
+        "tool": [
+            {"@type": "HowToTool", "name": "Apple Watch (Series 4 or later)"},
+            {"@type": "HowToTool", "name": "iPhone (iOS 15+)"},
+            {"@type": "HowToTool", "name": "Suu app"}
+        ],
+        "step": [
+            {
+                "@type": "HowToStep",
+                "position": 1,
+                "name": "Install Suu on iPhone and create your account",
+                "text": "Download Suu from the App Store, sign up with username and email. Fill in height, weight, gender and activity level — this is critical so Suu can calculate your daily water goal correctly. Grant Apple Health permission during onboarding."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 2,
+                "name": "Install the watchOS app from your iPhone",
+                "text": "Open the Watch app on your iPhone, tap Install next to Suu. Because Suu is a standalone watchOS app, no extra pairing is needed — it runs independently. After install, the Suu icon appears on your Watch."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 3,
+                "name": "Try logging water from your wrist",
+                "text": "Open Suu on Apple Watch. The progress ring shows your current daily percentage. Tap a favorite-amount button (e.g. 250 ml) to log water. The Watch gives a small haptic and sound. Data syncs to iPhone via App Group within a few seconds."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 4,
+                "name": "Add a complication (optional but recommended)",
+                "text": "Edit your Watch face and add the Suu complication. Now your daily water percentage is always visible on the watch face, and you can launch the app with one tap. Works best with Modular and Infograph faces."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 5,
+                "name": "Verify the Apple Health integration",
+                "text": "On iPhone, open Health → Browse → Water. Confirm that Suu's entries appear there. This two-way sync also lets other apps (e.g. workout apps) read your data."
+            }
+        ],
+        "image": "https://suuapp.com/assets/og-image.png"
     }
     </script>
 
