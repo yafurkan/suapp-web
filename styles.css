@@ -1875,6 +1875,33 @@ body.ticker-active .hero {
     box-shadow: var(--shadow);
 }
 
+.contact-cta {
+    background: var(--white);
+    padding: 48px 40px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.contact-cta h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--text-color);
+}
+
+.contact-cta p {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+.contact-cta .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .form-group {
     margin-bottom: 25px;
 }
