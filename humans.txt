@@ -1,24 +1,47 @@
-/* Suu - Water Tracking App */
+/* Suu — AI Health Assistant & Water Tracking App */
 /* https://suuapp.com */
 
 /* TEAM */
 
 Founder & Developer: Furkan Mert Fındıklı
-Role: Kurucu & Geliştirici (Founder & Developer)
+Title: Indie Developer, Entrepreneur, UGC Content Creator
 Born: February 9, 1999
 Location: Istanbul, Turkey
-Education: Tarsus University - International Trade and Logistics
+Education: Tarsus University — International Trade and Logistics
 LinkedIn: https://www.linkedin.com/in/furkanfindikli/
-Bio: Self-taught developer who spent 4 years teaching himself software development. Built Suu from scratch with tremendous effort and perseverance. Originally a small business owner (esnaf) who turned his passion for technology into a full-featured health app.
+
+Bio:
+Self-taught indie developer who spent 4 years learning software development on his own. Built Suu single-handedly from scratch — every line of code, every screen, every release.
+Suu is not an agency or studio output; it is an indie product. All R&D and technical support are personally handled by the developer.
+Background as a small-business owner (esnaf) shaped a hands-on, customer-first mindset that carries into how Suu is built and supported.
+
+Expertise:
+- Flutter cross-platform mobile development (iOS + Android, single codebase)
+- Apple HealthKit and Google Fit / Health Connect integration (two-way sync)
+- UI/UX design with a focus on accessibility
+- Digital marketing and UGC (user-generated content) creation
+
+Vision:
+Make technology useful and accessible for everyone — including visually impaired users via VoiceOver (iOS) and TalkBack (Android) support. Build apps that meet people in their actual lifestyles (motorcycle culture, physical performance) rather than as abstract products.
+
+Marketing approach:
+UGC-driven personal content from the developer himself — community-first, transparent, and centered on motorcycle and physical-performance lifestyle niches.
+
 
 Head of Growth & Marketing: Nisanur Fındıklı
-Role: Head of Growth & Marketing
-Bio: Responsible for Suu's growth strategies, content marketing, and user acquisition. Plays a critical role in Suu's expansion in Turkey and MENA markets.
+Title: Head of Growth & Marketing
+Bio: Leads Suu's growth strategies, content marketing, and user acquisition. Drives expansion in Turkey, MENA, the CIS region (Russian-speaking markets), and the global English-speaking market.
+
 
 /* SITE */
+
 Standards: HTML5, CSS3, JavaScript
-Software: Flutter (iOS & Android), Firebase
-Languages: Turkish, English, Arabic
+Software: Flutter (iOS & Android), Apple HealthKit, Google Fit / Health Connect, Firebase, SwiftUI (Apple Watch standalone)
+Languages: Turkish, English, Russian (Русский), Arabic (العربية, RTL) — full localization in 4 languages
+Accessibility: VoiceOver (iOS) and TalkBack (Android) supported throughout
+AI references for crawlers: /llms.txt, /llms-full.txt, /llms-ar.txt, /llms-full-ar.txt, /llms-ru.txt, /llms-full-ru.txt, /.well-known/ai-plugin.json
+
 
 /* THANKS */
-Thanks to all Suu users for staying hydrated!
+
+Thanks to every user who hydrates with Suu — and to every friend who shows up in the weekly league.

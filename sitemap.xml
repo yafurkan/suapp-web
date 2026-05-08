@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://suuapp.com/</loc>
-        <lastmod>2026-05-07</lastmod>
+        <lastmod>2026-05-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://suuapp.com/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://suuapp.com/hosgeldiniz-en.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://suuapp.com/hosgeldiniz-ar.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://suuapp.com/hosgeldiniz-ru.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://suuapp.com/" />
     </url>
     <url>
         <loc>https://suuapp.com/su-hesaplayici.html</loc>
@@ -26,15 +32,25 @@
     </url>
     <url>
         <loc>https://suuapp.com/hosgeldiniz-en.html</loc>
-        <lastmod>2026-04-30</lastmod>
+        <lastmod>2026-05-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://suuapp.com/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://suuapp.com/hosgeldiniz-en.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://suuapp.com/hosgeldiniz-ar.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://suuapp.com/hosgeldiniz-ru.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://suuapp.com/" />
     </url>
     <url>
         <loc>https://suuapp.com/hosgeldiniz-ar.html</loc>
-        <lastmod>2026-04-30</lastmod>
+        <lastmod>2026-05-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://suuapp.com/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://suuapp.com/hosgeldiniz-en.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://suuapp.com/hosgeldiniz-ar.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://suuapp.com/hosgeldiniz-ru.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://suuapp.com/" />
     </url>
     <url>
         <loc>https://suuapp.com/ozellikler.html</loc>
@@ -479,9 +495,14 @@
     <!-- Russian Marketing Pages -->
     <url>
         <loc>https://suuapp.com/hosgeldiniz-ru.html</loc>
-        <lastmod>2026-05-07</lastmod>
+        <lastmod>2026-05-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://suuapp.com/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://suuapp.com/hosgeldiniz-en.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://suuapp.com/hosgeldiniz-ar.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://suuapp.com/hosgeldiniz-ru.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://suuapp.com/" />
     </url>
     <url>
         <loc>https://suuapp.com/blog-ru.html</loc>
