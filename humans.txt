@@ -53,24 +53,13 @@ Google Search Console: VERIFIED ✅
   Console: https://search.google.com/search-console
   Note: because verification is at the DNS level, no HTML meta tag is required on any page.
 
-Yandex Webmaster: PENDING (in progress)
-  Setup URL: https://webmaster.yandex.com
-  Why it matters: Yandex is the dominant search engine in Russia and the CIS region — Suu's RU blog content
-  (21 posts + llms-ru.txt + llms-full-ru.txt) is targeted at exactly that market.
-  Steps to complete:
-    1. Sign in at https://webmaster.yandex.com — Google login works (no Yandex account required)
-    2. Add site → https://suuapp.com
-    3. Choose verification method:
-       - RECOMMENDED: DNS TXT record (same flow as the Google verification — covers all subdomains)
-       - ALTERNATIVE: HTML meta tag → Yandex provides <meta name="yandex-verification" content="…">
-         Replace the placeholder line in these 4 files (remove the surrounding HTML comment):
-         · index.html
-         · hosgeldiniz-en.html
-         · hosgeldiniz-ar.html
-         · hosgeldiniz-ru.html
-    4. Click "Verify" in Yandex Webmaster
-    5. Once verified, submit the sitemap: Indexing → Sitemap files → https://suuapp.com/sitemap.xml
-    6. Optional but useful: enable Yandex.Metrica (analytics, like Google Analytics) at https://metrica.yandex.com
+Yandex Webmaster: VERIFIED ✅
+  Verification method: HTML file (yandex_d8f56999642a8d54.html at site root)
+  Owner: furkanmertfurkan@gmail.com
+  Verified date: 2026-05-08
+  Console: https://webmaster.yandex.com
+  Next step (user action): Indexing → Sitemap files → submit https://suuapp.com/sitemap.xml
+  Optional: Yandex.Metrica analytics at https://metrica.yandex.com (separate setup)
 
 Bing Webmaster Tools: NOT YET CONFIGURED (optional, helpful for EN reach)
   Setup URL: https://www.bing.com/webmasters
