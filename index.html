@@ -159,19 +159,22 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": ["SoftwareApplication", "MobileApplication"],
+        "@type": ["SoftwareApplication", "MobileApplication", "HealthAndFitnessApplication"],
         "name": "Suu",
-        "description": "Günlük su ihtiyacınızı takip edin, sağlıklı kalın. Suu uygulaması ile kişiselleştirilmiş hedefler, akıllı hatırlatmalar, arkadaş takibi ve lig sistemi.",
+        "description": "Suu, AI sağlık asistanı ve su takip uygulaması. Aktivite bazlı dinamik su hedefi (Apple Health & Google Fit), kafein ve şeker takibi, hidrasyon skoru, arkadaşlarla haftalık lig, iOS Dynamic Island, Apple Watch (standalone), Siri Shortcuts, hava durumu bazlı hedef ve AI hidrasyon koçu. Flutter ile geliştirilmiş, 4 dilde (TR/EN/RU/AR) tam yerelleştirme. VoiceOver/TalkBack erişilebilirlik desteği.",
         "url": "https://suuapp.com",
         "applicationCategory": "HealthApplication",
         "applicationSubCategory": "HealthAndFitness",
-        "operatingSystem": ["Android", "iOS"],
+        "operatingSystem": ["Android 8.0+", "iOS 15+"],
         "downloadUrl": "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
         "installUrl": "https://suuapp.com/app/",
-        "releaseNotes": "PDF hidrasyon raporu, hidrasyon skoru ve bireysel challenge sistemi eklendi",
+        "softwareVersion": "2026.1",
+        "releaseNotes": "AI sağlık asistanı pozisyonu: aktivite bazlı dinamik su hedefi, kafein (mg) ve şeker (g) takibi, hidrasyon skoru (0-100), Premium 3 gün ücretsiz deneme + lansman %50 indirim",
         "offers": [
             {
                 "@type": "Offer",
+                "name": "Suu Free",
+                "description": "Ücretsiz temel özellikler",
                 "price": "0",
                 "priceCurrency": "TRY",
                 "url": "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
@@ -179,19 +182,63 @@
             },
             {
                 "@type": "Offer",
+                "name": "Suu Free",
+                "description": "Free core features",
                 "price": "0",
                 "priceCurrency": "TRY",
                 "url": "https://apps.apple.com/us/app/suu-su-takip/id6757619920",
                 "seller": { "@type": "Organization", "name": "App Store" }
+            },
+            {
+                "@type": "Offer",
+                "name": "Suu Premium (Annual)",
+                "description": "3 gün ücretsiz deneme · Lansmana özel %50 indirim · Aktivite bazlı dinamik hedef, AI haftalık raporlar, sınırsız arkadaş, PDF/CSV export, kişisel hidrasyon koçu",
+                "price": "600",
+                "priceCurrency": "TRY",
+                "url": "https://suuapp.com/app/",
+                "availability": "https://schema.org/InStock",
+                "seller": { "@type": "Organization", "name": "Suu" },
+                "priceSpecification": {
+                    "@type": "UnitPriceSpecification",
+                    "price": "600",
+                    "priceCurrency": "TRY",
+                    "billingDuration": "P1Y",
+                    "billingIncrement": "1"
+                }
+            },
+            {
+                "@type": "Offer",
+                "name": "Suu Premium (Annual, USD)",
+                "description": "3-day free trial · 50% launch discount · Activity-based dynamic goal, AI weekly reports, unlimited friends, PDF/CSV export, personal hydration coach",
+                "price": "15",
+                "priceCurrency": "USD",
+                "url": "https://suuapp.com/app/",
+                "availability": "https://schema.org/InStock",
+                "priceSpecification": {
+                    "@type": "UnitPriceSpecification",
+                    "price": "15",
+                    "priceCurrency": "USD",
+                    "billingDuration": "P1Y",
+                    "billingIncrement": "1"
+                }
             }
         ],
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.9",
             "bestRating": "5",
-            "ratingCount": "2847"
+            "worstRating": "1",
+            "ratingCount": "2847",
+            "reviewCount": "2847"
         },
         "author": {
+            "@type": "Person",
+            "name": "Furkan Mert Fındıklı",
+            "url": "https://www.linkedin.com/in/furkanfindikli/",
+            "jobTitle": "Indie Developer, Entrepreneur, UGC Content Creator",
+            "birthDate": "1999-02-09"
+        },
+        "publisher": {
             "@type": "Organization",
             "name": "Suu",
             "url": "https://suuapp.com",
@@ -216,37 +263,56 @@
             "https://suuapp.com/assets/screenshots/hatirlama.webp"
         ],
         "featureList": [
-            "Günlük su takibi (ml/L)",
-            "100+ içecek kategorisi ile dehidratasyon faktörü hesaplama",
-            "Kişiselleştirilmiş günlük su hedefi (boy, kilo, cinsiyet, aktivite, sebze/meyve tüketimi)",
-            "Sosyal lig sistemi (4 arkadaşa kadar haftalık su içme yarışması)",
-            "Arkadaş ekleme ve arkadaşların su tüketimini görme",
-            "Günlük arkadaş davetleri ile birlikte su içme",
-            "Akıllı hedef odaklı bildirimler",
-            "iOS Dynamic Island desteği",
-            "iOS Kilit Ekranı Widget (Lock Screen Widget)",
-            "Ana ekran widget'ları",
-            "Apple Health (HealthKit) entegrasyonu",
-            "Google Health (Health Connect) entegrasyonu",
-            "Detaylı istatistikler ve grafikler (günlük, haftalık, aylık, yıllık)",
-            "Streak takibi (ardışık gün sayacı)",
-            "Başarı rozet sistemi",
-            "Dark Mode / Light Mode",
-            "Türkçe ve Arapça dil desteği",
-            "iOS ve Android çapraz platform lig sistemi",
-            "Günlük/Haftalık/Aylık/Yıllık PDF hidrasyon raporu (saat bazlı su ekleme geçmişi dahil)",
-            "Hidrasyon skoru (0-100 arası performans puanı)",
-            "Mücadele görevleri ve bireysel challenge sistemi"
+            "AI Sağlık Asistanı: bağlamsal koçluk mesajları, haftalık kişisel sağlık raporları, hidrasyon personası",
+            "Aktivite Bazlı Dinamik Su Hedefi: Apple Health ve Google Fit'ten 30+ aktivite okuma (yürüyüş, koşu, yüzme, bisiklet, futbol, HIIT, CrossFit)",
+            "Kafein (mg) ve Şeker (g) Takibi: 100+ içecek için FDA (400mg), WHO (25g), ACOG (hamile 200mg) sınırlarına göre akıllı uyarı",
+            "Hidrasyon Skoru (0-100): tamamlama, düzenlilik, zamanlama, aşırı tüketim ağırlıklı performans puanı",
+            "100+ İçecek Kategorisi ve Dehidratasyon Faktörü: Starbucks, Nevada Coffee, Greenwich Coffee menüleri dahil",
+            "Sosyal Lig Sistemi: 4 arkadaşa kadar haftalık su içme yarışması, iOS+Android çapraz platform",
+            "Kişiselleştirilmiş Günlük Su Hedefi: boy, kilo, cinsiyet, aktivite, sebze/meyve tüketimi formülü",
+            "Akıllı Hedef Odaklı Bağlamsal Bildirimler",
+            "iOS Dynamic Island desteği (iPhone 14 Pro+)",
+            "iOS Kilit Ekranı Widget (Lock Screen Widget, iOS 16+)",
+            "Ana Ekran Widget (iOS + Android)",
+            "Apple Watch Standalone (SwiftUI) uygulaması",
+            "Siri Shortcuts entegrasyonu + uygulama içi sesli komut sistemi (iOS+Android)",
+            "Apple Health (HealthKit) çift yönlü entegrasyon",
+            "Google Fit / Health Connect çift yönlü entegrasyon",
+            "Hava Durumu Bazlı Dinamik Hedef (OpenWeatherMap)",
+            "Hamilelik ve Emzirme Modu (trimester bazlı, ACOG/IOM uyumlu)",
+            "Sporcu Modu (Premium): MET formülü, elektrolit hatırlatma, VO2 max, müsabaka modu",
+            "Detaylı İstatistikler: Günlük/Haftalık/Aylık/Yıllık grafikler",
+            "PDF Hidrasyon Raporu Export (saat bazlı detay, hidrasyon skoru dahil)",
+            "Streak Takibi (ardışık gün sayacı)",
+            "Başarı Rozet Sistemi + 7/30 günlük Challenge",
+            "Referral Sistemi (5 başarılı davet → 30 gün bonus Premium)",
+            "Çevrimdışı Destek (offline kayıt + Firebase senkronizasyon)",
+            "Erişilebilirlik: VoiceOver (iOS) ve TalkBack (Android) tam destek",
+            "4 Dil Tam Yerelleştirme: Türkçe, İngilizce, Rusça, Arapça (RTL)",
+            "11 Para Birimi Görüntüleme: TRY, USD, EUR, SAR, AED, KWD, QAR, BHD, OMR, JOD, EGP",
+            "Dark Mode / Light Mode tema desteği"
         ],
-        "inLanguage": ["tr", "ar", "en"],
-        "availableOnDevice": "iOS, Android",
-        "countriesSupported": "TR, SA, AE, EG, QA, KW, BH, JO, US, GB, AU, CA",
-        "alternateName": ["Suu Water Tracker", "Suu تطبيق تتبع الماء"],
-        "keywords": "water tracking app, best water tracker, hydration app, water reminder, su takip uygulaması, تطبيق تتبع الماء",
+        "inLanguage": ["tr", "en", "ru", "ar"],
+        "availableOnDevice": ["iPhone", "iPad", "Apple Watch", "Android phone", "Android tablet", "Wear OS"],
+        "countriesSupported": "TR, SA, AE, EG, QA, KW, BH, JO, OM, US, GB, AU, CA, RU, KZ, BY, UA, DE, FR",
+        "alternateName": ["Suu Water Tracker", "Suu Su Takip", "Suu تطبيق تتبع الماء", "Suu Трекер воды"],
+        "keywords": "water tracking app, best water tracker, AI health assistant, hydration app, caffeine tracker, sugar tracker, water reminder, hydration score, su takip uygulaması, AI sağlık asistanı, kafein takibi, تطبيق تتبع الماء, مساعد صحي بالذكاء الاصطناعي, трекер воды, AI помощник здоровья",
         "additionalProperty": [
-            {"@type": "PropertyValue", "name": "PDF Reports", "value": "Daily, Weekly, Monthly PDF export with hourly detail"},
-            {"@type": "PropertyValue", "name": "Hydration Score", "value": "0-100 performance scoring system"},
-            {"@type": "PropertyValue", "name": "Challenge System", "value": "Individual challenge goals and missions"}
+            {"@type": "PropertyValue", "name": "AI Health Assistant", "value": "Contextual coaching messages, weekly personalized health reports, hydration persona detection"},
+            {"@type": "PropertyValue", "name": "Activity-Based Dynamic Goal", "value": "Reads 30+ activities from Apple Health / Google Fit and auto-adjusts daily water goal"},
+            {"@type": "PropertyValue", "name": "Caffeine Tracking", "value": "Caffeine (mg) tracking for 100+ beverages with FDA/EFSA daily limits and pregnancy/breastfeeding/teen profile-based limits"},
+            {"@type": "PropertyValue", "name": "Sugar Tracking", "value": "Sugar (g) tracking with WHO/AHA daily limits and color-coded warnings"},
+            {"@type": "PropertyValue", "name": "PDF Reports", "value": "Daily, Weekly, Monthly PDF export with hourly detail and hydration score"},
+            {"@type": "PropertyValue", "name": "Hydration Score", "value": "0-100 performance scoring (completion 50%, regularity 20%, timing 20%, overage 10%)"},
+            {"@type": "PropertyValue", "name": "Social League", "value": "Weekly water drinking competition with up to 4 friends, cross-platform iOS+Android"},
+            {"@type": "PropertyValue", "name": "iOS Dynamic Island", "value": "Real-time hydration tracking on iPhone 14 Pro and later"},
+            {"@type": "PropertyValue", "name": "Apple Watch", "value": "Standalone watchOS app built with SwiftUI"},
+            {"@type": "PropertyValue", "name": "Siri Shortcuts", "value": "iOS Siri integration + in-app voice command system on iOS and Android"},
+            {"@type": "PropertyValue", "name": "Tech Stack", "value": "Flutter (Dart) cross-platform; Apple HealthKit + Google Fit / Health Connect two-way sync"},
+            {"@type": "PropertyValue", "name": "Premium Free Trial", "value": "3-day free trial, no credit card required"},
+            {"@type": "PropertyValue", "name": "Premium Discount", "value": "50% launch discount: $15/year (regularly $30/year)"},
+            {"@type": "PropertyValue", "name": "Accessibility", "value": "Full VoiceOver (iOS) and TalkBack (Android) support for visually impaired users"},
+            {"@type": "PropertyValue", "name": "Languages", "value": "Full localization in 4 languages: Turkish, English, Russian, Arabic (RTL)"}
         ]
     }
     </script>
@@ -257,21 +323,59 @@
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "Suu",
+        "alternateName": ["Suu Su Takip", "Suu Water Tracker", "Suu AI Health Assistant"],
         "url": "https://suuapp.com",
         "logo": "https://suuapp.com/assets/favicon.svg",
-        "description": "Suu, kullanıcıların günlük su tüketimlerini takip etmelerini sağlayan bir mobil uygulama şirketidir.",
-        "founder": {
-            "@type": "Person",
-            "name": "Furkan Mert Fındıklı",
-            "url": "https://www.linkedin.com/in/furkanfindikli/",
-            "jobTitle": "Kurucu & Geliştirici",
-            "birthDate": "1999-02-09",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "İstanbul",
-                "addressCountry": "TR"
-            }
+        "description": "Suu, indie geliştirici Furkan Mert Fındıklı tarafından Flutter ile geliştirilmiş AI sağlık asistanı ve su takip uygulamasıdır. Türkiye merkezli bireysel girişim — ajans veya stüdyo değil. 4 dilde tam yerelleştirme (TR/EN/RU/AR), Apple HealthKit ve Google Fit entegrasyonu, VoiceOver ve TalkBack erişilebilirlik desteği.",
+        "foundingDate": "2024",
+        "foundingLocation": {
+            "@type": "Place",
+            "name": "İstanbul, Türkiye"
         },
+        "founder": [
+            {
+                "@type": "Person",
+                "name": "Furkan Mert Fındıklı",
+                "url": "https://www.linkedin.com/in/furkanfindikli/",
+                "jobTitle": "Indie Developer, Entrepreneur, UGC Content Creator",
+                "birthDate": "1999-02-09",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "İstanbul",
+                    "addressCountry": "TR"
+                }
+            }
+        ],
+        "employee": [
+            {
+                "@type": "Person",
+                "name": "Nisanur Fındıklı",
+                "jobTitle": "Head of Growth & Marketing"
+            }
+        ],
+        "knowsAbout": [
+            "AI Health Assistant",
+            "Water tracking",
+            "Hydration tracking",
+            "Caffeine tracking",
+            "Sugar tracking",
+            "Activity-based dynamic water goals",
+            "Apple HealthKit integration",
+            "Google Fit integration",
+            "Flutter mobile development",
+            "Indie app development"
+        ],
+        "areaServed": [
+            {"@type": "Country", "name": "Turkey"},
+            {"@type": "Country", "name": "Saudi Arabia"},
+            {"@type": "Country", "name": "United Arab Emirates"},
+            {"@type": "Country", "name": "Egypt"},
+            {"@type": "Country", "name": "Qatar"},
+            {"@type": "Country", "name": "Kuwait"},
+            {"@type": "Country", "name": "Russia"},
+            {"@type": "Country", "name": "United States"},
+            {"@type": "Country", "name": "United Kingdom"}
+        ],
         "sameAs": [
             "https://www.instagram.com/suutakip/",
             "https://x.com/SuuTakip",
@@ -287,12 +391,16 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Furkan Mert Fındıklı",
-        "alternateName": "Furkan Fındıklı",
+        "alternateName": ["Furkan Fındıklı", "Furkan Findikli"],
         "url": "https://www.linkedin.com/in/furkanfindikli/",
-        "jobTitle": "Mobil Uygulama Geliştiricisi & Girişimci",
+        "jobTitle": "Indie Developer, Entrepreneur, UGC Content Creator",
         "birthDate": "1999-02-09",
         "birthPlace": {
             "@type": "Place",
+            "name": "Türkiye"
+        },
+        "nationality": {
+            "@type": "Country",
             "name": "Türkiye"
         },
         "address": {
@@ -305,8 +413,23 @@
             "name": "Tarsus Üniversitesi",
             "department": "Uluslararası Ticaret ve Lojistik"
         },
-        "knowsAbout": ["Mobil Uygulama Geliştirme", "iOS", "Android", "Flutter", "Yazılım Mühendisliği", "Girişimcilik"],
-        "description": "Furkan Mert Fındıklı, Suu su takip uygulamasının kurucusu ve geliştiricisidir. Tarsus Üniversitesi Uluslararası Ticaret ve Lojistik mezunu olan Fındıklı, esnaflık geçmişinden gelen azim ve kararlılıkla kendini 4 yıl boyunca yazılım alanında yetiştirmiş, büyük bir mücadele vererek Suu uygulamasını sıfırdan tek başına geliştirmiştir. İstanbul'da yaşayan Fındıklı, kendi kendini yetiştirmiş (self-taught) bir yazılımcı olarak ilham verici bir kariyer hikayesine sahiptir.",
+        "knowsAbout": [
+            "Flutter mobile development",
+            "Cross-platform mobile development",
+            "Apple HealthKit integration",
+            "Google Fit / Health Connect integration",
+            "iOS development",
+            "Android development",
+            "UI/UX design",
+            "Digital marketing",
+            "UGC content creation",
+            "Indie app development",
+            "Accessibility (VoiceOver, TalkBack)",
+            "Entrepreneurship",
+            "Self-taught software engineering"
+        ],
+        "knowsLanguage": ["tr", "en"],
+        "description": "Furkan Mert Fındıklı, Suu AI sağlık asistanı ve su takip uygulamasının indie kurucusu ve geliştiricisidir. Tarsus Üniversitesi Uluslararası Ticaret ve Lojistik mezunu olan Fındıklı, esnaflık geçmişinden gelen azim ve kararlılıkla 4 yıl boyunca self-taught olarak yazılım öğrenmiş; Flutter ile cross-platform mobil geliştirme, Apple HealthKit ve Google Fit entegrasyonu, UI/UX tasarım ve dijital pazarlama uzmanlık alanlarıyla Suu'yu sıfırdan tek başına geliştirmiştir. Bireysel geliştirici (Indie Developer), girişimci (Entrepreneur) ve UGC içerik üreticisi (UGC Content Creator) olarak konumlanan Fındıklı, teknolojiyi son kullanıcı için hem faydalı hem de erişilebilir kılmayı (görme engelli kullanıcılar için VoiceOver/TalkBack desteği dahil) vizyon olarak benimser. UGC odaklı pazarlama ekosisteminde motosiklet kültürü ve fiziksel performans nişlerini hidrasyonla birleştiren yaşam tarzı içerikleri üretir. Suu bir ajans veya stüdyo ürünü değildir — bireysel bir indie girişimdir; tüm Ar-Ge ve teknik destek süreçleri bizzat geliştirici tarafından yürütülür.",
         "sameAs": [
             "https://www.linkedin.com/in/furkanfindikli/"
         ],
@@ -317,6 +440,11 @@
                 "name": "Suu",
                 "url": "https://suuapp.com"
             }
+        },
+        "creator": {
+            "@type": "SoftwareApplication",
+            "name": "Suu",
+            "url": "https://suuapp.com"
         }
     }
     </script>
