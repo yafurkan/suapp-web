@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, follow">
+
+    <title>Страница не найдена (404) — Suu</title>
+    <meta name="description" content="Страница не найдена. Вернитесь на главную, посмотрите блог или рассчитайте свою персональную норму воды.">
+
+    <meta property="og:title" content="Страница не найдена (404) — Suu">
+    <meta property="og:description" content="Страница не найдена. Вернитесь на главную и продолжайте знакомство с Suu.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://suuapp.com/404-ru.html">
+    <meta property="og:image" content="https://suuapp.com/assets/og-image.png">
+    <meta property="og:site_name" content="Suu">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SuuTakip">
+    <meta name="twitter:title" content="Страница не найдена (404) — Suu">
+    <meta name="twitter:description" content="Страница не найдена. Вернитесь на главную и продолжайте знакомство с Suu.">
+    <meta name="twitter:image" content="https://suuapp.com/assets/og-image.png">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; color: #222; background: #f8f9fa; line-height: 1.6; min-height: 100vh; display: flex; flex-direction: column; }
+        .lang-bar { background: white; border-bottom: 1px solid #eee; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; font-size: 14px; }
+        .lang-bar .logo { display: flex; align-items: center; gap: 8px; font-weight: 700; color: #4A90D9; text-decoration: none; font-size: 18px; }
+        .lang-bar .lang-links { display: flex; gap: 14px; }
+        .lang-bar .lang-links a { color: #666; text-decoration: none; transition: color 0.2s; }
+        .lang-bar .lang-links a:hover { color: #4A90D9; }
+        .hero-404 { background: linear-gradient(135deg, #4A90D9 0%, #29B6F6 100%); color: white; padding: 80px 20px 60px; text-align: center; position: relative; overflow: hidden; }
+        .hero-404::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.15) 0%, transparent 50%); pointer-events: none; }
+        .drop-icon { font-size: 56px; margin-bottom: 16px; display: inline-block; animation: drip 2.4s ease-in-out infinite; }
+        @keyframes drip { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+        .err-code { font-size: clamp(64px, 14vw, 120px); font-weight: 700; line-height: 1; margin-bottom: 12px; letter-spacing: -2px; text-shadow: 0 4px 16px rgba(0,0,0,0.12); }
+        .err-title { font-size: clamp(20px, 3vw, 28px); font-weight: 600; margin-bottom: 14px; }
+        .err-text { max-width: 540px; margin: 0 auto 32px; font-size: 16px; opacity: 0.95; }
+        .hero-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+        .btn-primary, .btn-ghost { padding: 14px 28px; border-radius: 50px; font-weight: 600; font-size: 15px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: transform 0.15s, box-shadow 0.15s; }
+        .btn-primary { background: white; color: #1565C0; box-shadow: 0 4px 16px rgba(0,0,0,0.12); }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.16); }
+        .btn-ghost { background: rgba(255,255,255,0.15); color: white; border: 1.5px solid rgba(255,255,255,0.4); }
+        .btn-ghost:hover { background: rgba(255,255,255,0.25); }
+        .container { max-width: 960px; margin: 0 auto; padding: 60px 20px; flex: 1; }
+        .section-title { font-size: 18px; font-weight: 700; color: #444; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 1px; }
+        .section-title i { color: #4A90D9; margin-right: 8px; }
+        .quick-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-bottom: 50px; }
+        .quick-card { background: white; border-radius: 14px; padding: 22px; text-decoration: none; color: inherit; box-shadow: 0 2px 12px rgba(0,0,0,0.05); transition: transform 0.15s, box-shadow 0.15s; display: flex; flex-direction: column; gap: 10px; }
+        .quick-card:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
+        .quick-card .icon { width: 44px; height: 44px; border-radius: 10px; background: linear-gradient(135deg, #4A90D9, #29B6F6); color: white; display: flex; align-items: center; justify-content: center; font-size: 18px; }
+        .quick-card h3 { font-size: 16px; font-weight: 700; color: #222; }
+        .quick-card p { font-size: 14px; color: #666; }
+        .popular-list { background: white; border-radius: 14px; padding: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
+        .popular-list a { display: flex; align-items: center; gap: 14px; padding: 14px 18px; text-decoration: none; color: inherit; border-radius: 10px; transition: background 0.15s; }
+        .popular-list a:hover { background: #f3f8ff; }
+        .popular-list a + a { border-top: 1px solid #f0f0f0; }
+        .popular-list .num { background: #e3f2fd; color: #1565C0; min-width: 28px; height: 28px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px; }
+        .popular-list span.title { flex: 1; font-size: 15px; font-weight: 500; }
+        .popular-list i { color: #999; font-size: 13px; }
+        .footer { background: white; border-top: 1px solid #eee; padding: 30px 20px; text-align: center; font-size: 13px; color: #888; }
+        .footer a { color: #4A90D9; text-decoration: none; }
+        .footer .stores { display: flex; gap: 10px; justify-content: center; margin-bottom: 14px; flex-wrap: wrap; }
+        .footer .store-btn { background: #222; color: white; padding: 10px 18px; border-radius: 50px; text-decoration: none; font-size: 13px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; transition: opacity 0.15s; }
+        .footer .store-btn:hover { opacity: 0.85; }
+        @media (max-width: 600px) { .hero-404 { padding: 60px 20px 50px; } .container { padding: 40px 20px; } .lang-bar { flex-direction: column; gap: 8px; } }
+    </style>
+</head>
+<body>
+
+<div class="lang-bar">
+    <a href="/hosgeldiniz-ru.html" class="logo"><i class="fas fa-tint"></i> Suu</a>
+    <div class="lang-links">
+        <a href="/">TR</a>
+        <a href="/404-en.html">EN</a>
+        <a href="/404-ru.html">RU</a>
+        <a href="/404-ar.html">AR</a>
+    </div>
+</div>
+
+<section class="hero-404">
+    <div class="drop-icon"><i class="fas fa-tint"></i></div>
+    <div class="err-code">404</div>
+    <h1 class="err-title">Эта страница не найдена</h1>
+    <p class="err-text">
+        Возможно, страница была перемещена, удалена или никогда не существовала.
+        Не переживайте — в Suu есть много интересного. Продолжите по ссылкам ниже.
+    </p>
+    <div class="hero-actions">
+        <a href="/hosgeldiniz-ru.html" class="btn-primary"><i class="fas fa-home"></i> На главную</a>
+        <a href="javascript:history.back()" class="btn-ghost"><i class="fas fa-arrow-left"></i> Назад</a>
+    </div>
+</section>
+
+<div class="container">
+
+    <h2 class="section-title"><i class="fas fa-compass"></i> Быстрый доступ</h2>
+    <div class="quick-grid">
+        <a href="/hosgeldiniz-ru.html" class="quick-card">
+            <div class="icon"><i class="fas fa-home"></i></div>
+            <h3>Главная</h3>
+            <p>Все возможности Suu</p>
+        </a>
+        <a href="/blog-ru.html" class="quick-card">
+            <div class="icon"><i class="fas fa-book-open"></i></div>
+            <h3>Блог</h3>
+            <p>Статьи о гидратации и здоровье</p>
+        </a>
+        <a href="/su-hesaplayici.html" class="quick-card">
+            <div class="icon"><i class="fas fa-calculator"></i></div>
+            <h3>Калькулятор воды</h3>
+            <p>Узнайте свою норму на день</p>
+        </a>
+        <a href="/faq.html" class="quick-card">
+            <div class="icon"><i class="fas fa-question-circle"></i></div>
+            <h3>FAQ</h3>
+            <p>Часто задаваемые вопросы</p>
+        </a>
+        <a href="/ozellikler.html" class="quick-card">
+            <div class="icon"><i class="fas fa-sparkles"></i></div>
+            <h3>Возможности</h3>
+            <p>AI-помощник по здоровью и больше</p>
+        </a>
+        <a href="/hakkimizda-ru.html" class="quick-card">
+            <div class="icon"><i class="fas fa-user"></i></div>
+            <h3>О нас</h3>
+            <p>О разработчике и нашей истории</p>
+        </a>
+    </div>
+
+    <h2 class="section-title"><i class="fas fa-fire"></i> Популярные статьи</h2>
+    <div class="popular-list">
+        <a href="/blog/ru/skolko-vody-pit-v-den.html">
+            <span class="num">1</span>
+            <span class="title">Сколько воды нужно пить в день? Научный калькулятор</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="/blog/ru/polza-pitia-vody.html">
+            <span class="num">2</span>
+            <span class="title">10 научно доказанных преимуществ ежедневного питья воды</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="/blog/ru/luchshee-prilozhenie-dlya-vody.html">
+            <span class="num">3</span>
+            <span class="title">Лучшее приложение для отслеживания воды в 2026 — сравнение</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="/blog/ru/voda-po-aktivnosti.html">
+            <span class="num">4</span>
+            <span class="title">Динамическая цель по активности — ходьба, бег, плавание</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="/blog/ru/kofein-i-sahar.html">
+            <span class="num">5</span>
+            <span class="title">Кофеин и сахар — дневные лимиты и трекинг</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="stores">
+        <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" class="store-btn">
+            <i class="fab fa-apple"></i> App Store
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro" class="store-btn">
+            <i class="fab fa-google-play"></i> Google Play
+        </a>
+    </div>
+    <div>
+        <a href="/hosgeldiniz-ru.html">Suu</a> · AI-помощник по здоровью и трекер воды ·
+        <a href="/gizlilik-politikasi.html">Конфиденциальность</a>
+    </div>
+</footer>
+
+</body>
+</html>

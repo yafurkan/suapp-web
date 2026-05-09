@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, follow">
 
+    <script>
+        // GitHub Pages serves this 404.html for ANY missing URL. If the missed
+        // URL points to a localized section, redirect to the matching localized
+        // 404 page so the visitor reads their own language. Runs synchronously
+        // before render — no flash of TR content for non-TR URLs.
+        (function () {
+            var p = location.pathname;
+            if (/^\/blog\/en\//.test(p) || /^\/(hosgeldiniz-en|blog-en|about)\.html$/.test(p)) {
+                location.replace('/404-en.html');
+            } else if (/^\/blog\/ru\//.test(p) || /^\/(hosgeldiniz-ru|blog-ru|hakkimizda-ru)\.html$/.test(p)) {
+                location.replace('/404-ru.html');
+            } else if (/^\/blog\/ar\//.test(p) || /^\/(hosgeldiniz-ar|blog-ar|hakkimizda-ar)\.html$/.test(p)) {
+                location.replace('/404-ar.html');
+            }
+        })();
+    </script>
+
     <title>Sayfa Bulunamadı (404) — Suu</title>
     <meta name="description" content="Aradığınız sayfa bulunamadı. Suu ana sayfasına dönebilir, blog yazılarımızı keşfedebilir ya da kişisel su hedefinizi hesaplayabilirsiniz.">
 
@@ -21,7 +38,9 @@
     <meta name="twitter:description" content="Aradığınız sayfa bulunamadı. Ana sayfaya dönüp Suu'yu keşfetmeye devam edin.">
     <meta name="twitter:image" content="https://suuapp.com/assets/og-image.png">
 
+    <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Arabic:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
