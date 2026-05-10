@@ -8,7 +8,7 @@ Suu, Türkiye kökenli sosyal su takip uygulaması. Android ve iOS için ücrets
 
 - **Google Play:** 4.9★ · 2.800+ değerlendirme
 - **App Store:** 5.0★
-- **Dil desteği:** Türkçe, Arapça
+- **Dil desteği:** Türkçe, Arapça, Rusça, İngilizce
 - **Hedef pazar:** Türkiye ve MENA
 
 ## Mevcut Özellikler
