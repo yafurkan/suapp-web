@@ -1,15 +1,8 @@
 # Suu — robots.txt
-# Tüm tarayıcılar (Google, Bing, Yandex ve AI bot'ları dahil) için tek kural seti.
+# Tüm tarayıcılar (Google, Bing, Yandex ve AI bot'ları dahil) izinli.
 
 User-agent: *
-Disallow: /admin.html
-Disallow: /admin.js
-Disallow: /makale.html
 Disallow: /assets/og-image-template.html
-
-# NOT: hosgeldiniz.html (redirect → /) ve yandex_*.html (Yandex doğrulama)
-# bilerek izinli — Google'ın redirect'i takip etmesi ve Yandex'in doğrulama
-# dosyasına erişmesi gerekiyor.
 
 # Sitemap
 Sitemap: https://suuapp.com/sitemap.xml
