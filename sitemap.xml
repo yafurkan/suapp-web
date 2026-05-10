@@ -744,4 +744,90 @@
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
+
+    <!-- Beverage Control Series — May 2026 (TR) -->
+    <url>
+        <loc>https://suuapp.com/blog/kahveyi-azaltmak.html</loc>
+        <lastmod>2026-05-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://suuapp.com/blog/kahveyi-azaltmak.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://suuapp.com/blog/en/quit-coffee-guide.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://suuapp.com/blog/ar/taqlil-alqahwa.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://suuapp.com/blog/ru/kak-sokratit-kofe.html" />
+    </url>
+    <url>
+        <loc>https://suuapp.com/blog/gunde-kac-kahve.html</loc>
+        <lastmod>2026-05-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://suuapp.com/blog/gunde-kac-kahve.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://suuapp.com/blog/en/how-many-cups-coffee.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://suuapp.com/blog/ar/kam-fanjan-qahwa.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://suuapp.com/blog/ru/skolko-kofe-v-den.html" />
+    </url>
+    <url>
+        <loc>https://suuapp.com/blog/alkol-sonrasi-hidrasyon.html</loc>
+        <lastmod>2026-05-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://suuapp.com/blog/alkol-sonrasi-hidrasyon.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://suuapp.com/blog/en/post-alcohol-hydration.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://suuapp.com/blog/ar/tarteeb-baad-alkohol.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://suuapp.com/blog/ru/gidratatsiya-posle-alkogolya.html" />
+    </url>
+    <url>
+        <loc>https://suuapp.com/blog/enerji-icecegi-kontrolu.html</loc>
+        <lastmod>2026-05-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://suuapp.com/blog/enerji-icecegi-kontrolu.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://suuapp.com/blog/en/energy-drink-control.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://suuapp.com/blog/ar/tahakum-mashroob-attaqa.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://suuapp.com/blog/ru/kontrol-energetikov.html" />
+    </url>
+    <url>
+        <loc>https://suuapp.com/blog/meyve-suyu-vs-su.html</loc>
+        <lastmod>2026-05-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://suuapp.com/blog/meyve-suyu-vs-su.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://suuapp.com/blog/en/juice-vs-water.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://suuapp.com/blog/ar/aaseer-am-mae.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://suuapp.com/blog/ru/sok-ili-voda.html" />
+    </url>
+    <url>
+        <loc>https://suuapp.com/blog/cay-hidrasyon.html</loc>
+        <lastmod>2026-05-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://suuapp.com/blog/cay-hidrasyon.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://suuapp.com/blog/en/tea-hydration.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://suuapp.com/blog/ar/tarteeb-asshay.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://suuapp.com/blog/ru/chai-i-gidratatsiya.html" />
+    </url>
+
+    <!-- Beverage Control Series — May 2026 (EN) -->
+    <url><loc>https://suuapp.com/blog/en/quit-coffee-guide.html</loc><lastmod>2026-05-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://suuapp.com/blog/en/how-many-cups-coffee.html</loc><lastmod>2026-05-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://suuapp.com/blog/en/post-alcohol-hydration.html</loc><lastmod>2026-05-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://suuapp.com/blog/en/energy-drink-control.html</loc><lastmod>2026-05-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://suuapp.com/blog/en/juice-vs-water.html</loc><lastmod>2026-05-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://suuapp.com/blog/en/tea-hydration.html</loc><lastmod>2026-05-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+
+    <!-- Beverage Control Series — May 2026 (AR) -->
+    <url><loc>https://suuapp.com/blog/ar/taqlil-alqahwa.html</loc><lastmod>2026-05-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://suuapp.com/blog/ar/kam-fanjan-qahwa.html</loc><lastmod>2026-05-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://suuapp.com/blog/ar/tarteeb-baad-alkohol.html</loc><lastmod>2026-05-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://suuapp.com/blog/ar/tahakum-mashroob-attaqa.html</loc><lastmod>2026-05-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://suuapp.com/blog/ar/aaseer-am-mae.html</loc><lastmod>2026-05-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://suuapp.com/blog/ar/tarteeb-asshay.html</loc><lastmod>2026-05-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+
+    <!-- Beverage Control Series — May 2026 (RU) -->
+    <url><loc>https://suuapp.com/blog/ru/kak-sokratit-kofe.html</loc><lastmod>2026-05-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://suuapp.com/blog/ru/skolko-kofe-v-den.html</loc><lastmod>2026-05-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://suuapp.com/blog/ru/gidratatsiya-posle-alkogolya.html</loc><lastmod>2026-05-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://suuapp.com/blog/ru/kontrol-energetikov.html</loc><lastmod>2026-05-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://suuapp.com/blog/ru/sok-ili-voda.html</loc><lastmod>2026-05-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://suuapp.com/blog/ru/chai-i-gidratatsiya.html</loc><lastmod>2026-05-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
 </urlset>
