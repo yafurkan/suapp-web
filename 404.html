@@ -6,19 +6,27 @@
     <meta name="robots" content="noindex, follow">
 
     <script>
-        // GitHub Pages serves this 404.html for ANY missing URL. If the missed
-        // URL points to a localized section, redirect to the matching localized
-        // 404 page so the visitor reads their own language. Runs synchronously
-        // before render — no flash of TR content for non-TR URLs.
+        // GitHub Pages serves this 404.html for ANY missing URL. Detect language
+        // from URL pathname first (most reliable). If pathname has no language
+        // indicator, fall back to user's saved language preference. Runs
+        // synchronously before render — no flash of TR content for non-TR users.
         (function () {
-            var p = location.pathname;
-            if (/^\/blog\/en\//.test(p) || /^\/(hosgeldiniz-en|blog-en|about)\.html$/.test(p)) {
-                location.replace('/404-en.html');
+            var p = location.pathname.toLowerCase();
+            var lang = null;
+            if (/^\/blog\/en\//.test(p) || /^\/(hosgeldiniz-en|blog-en|about|starbucks-dehydration)\.html$/.test(p)) {
+                lang = 'en';
             } else if (/^\/blog\/ru\//.test(p) || /^\/(hosgeldiniz-ru|blog-ru|hakkimizda-ru)\.html$/.test(p)) {
-                location.replace('/404-ru.html');
+                lang = 'ru';
             } else if (/^\/blog\/ar\//.test(p) || /^\/(hosgeldiniz-ar|blog-ar|hakkimizda-ar)\.html$/.test(p)) {
-                location.replace('/404-ar.html');
+                lang = 'ar';
+            } else {
+                // No URL hint — respect user's previously chosen language
+                try {
+                    var saved = localStorage.getItem('suu-lang');
+                    if (saved === 'en' || saved === 'ru' || saved === 'ar') lang = saved;
+                } catch (e) {}
             }
+            if (lang) location.replace('/404-' + lang + '.html');
         })();
     </script>
 
