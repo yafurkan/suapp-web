@@ -196,6 +196,30 @@
     }
     </script>
 
+    <!-- Structured Data: Donation Transparency (Arabic) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MonetaryGrant",
+        "@id": "https://suuapp.com/hosgeldiniz-ar.html#donation-program",
+        "name": "برنامج التبرعات Suu Premium",
+        "description": "يتم التبرع بنسبة 2% من إيرادات اشتراك Suu Premium لمشاريع بناء آبار المياه النظيفة في أفريقيا. جميع مبالغ التبرع وإيصالات التحويل البنكي علنية وشفافة على suuapp.com.",
+        "url": "https://suuapp.com/gizlilik-politikasi.html",
+        "amount": {"@type": "MonetaryAmount", "currency": "TRY", "value": "1500"},
+        "funder": {
+            "@type": "Organization",
+            "name": "Suu",
+            "url": "https://suuapp.com"
+        },
+        "subjectOf": {
+            "@type": "CreativeWork",
+            "name": "أرشيف إيصالات التبرع",
+            "url": "https://suuapp.com/donations/receipts/",
+            "encodingFormat": "application/pdf"
+        }
+    }
+    </script>
+
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Noto Sans Arabic', sans-serif; color: #333; background: #f8f9fa; line-height: 1.8; direction: rtl; }
