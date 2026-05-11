@@ -339,24 +339,29 @@ html[lang="ar"] .suu-dw-receipt-amount {
   line-height: 1.5;
 }
 
-/* === Mobile ==================================================== */
-@media (max-width: 480px) {
+/* === Mobile ====================================================
+ * NOT: Sitede 768px altında .sticky-download-bar (App Store / Google
+ * Play butonları, ~72px yüksek, bottom:0, z-index:9999) görünüyor.
+ * FAB'i bu barın üstüne çıkarmak için bottom değerini artırıyoruz.
+ */
+@media (max-width: 768px) {
   #suu-donation-fab {
-    bottom: 16px;
-    right: 16px;
+    bottom: calc(88px + env(safe-area-inset-bottom, 0px));
+    right: 14px;
     width: 54px;
     height: 54px;
   }
   html[dir="rtl"] #suu-donation-fab,
   html[lang="ar"] #suu-donation-fab {
-    left: 16px;
+    right: auto;
+    left: 14px;
   }
   #suu-donation-fab .suu-dw-fab-drop {
     width: 24px;
     height: 28px;
   }
   #suu-donation-panel {
-    bottom: 84px;
+    bottom: calc(156px + env(safe-area-inset-bottom, 0px));
     right: 12px;
     width: calc(100vw - 24px);
   }
