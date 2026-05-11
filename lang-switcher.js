@@ -256,8 +256,9 @@ function createSwitcher(currentLang) {
 
     function init() {
         var currentLang = getCurrentLang();
-        // Mark session so we don't loop
-        autoRedirect(currentLang);
+        // NOT: autoRedirect kaldırıldı — Googlebot RU/AR sayfalarına geldiğinde
+        // tarayıcı dili EN olduğu için EN'e yönlendiriliyordu, GSC "Yönlendirmeli
+        // sayfa" hatası veriyordu. Manuel dil switcher butonu yeterli.
         injectStyles();
         injectSwitcher(currentLang);
     }
