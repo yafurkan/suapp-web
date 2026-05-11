@@ -73,6 +73,11 @@
         'water-and-kidney-health.html':           { tr: '/blog/su-ve-bobrek-sagligi.html',              en: '/blog/en/water-and-kidney-health.html',     ar: '/blog/ar/almae-wasihhat-alkulaa.html',     ru: '/blog/ru/voda-i-zdorove-pochek.html' },
         'almae-wasihhat-alkulaa.html':            { tr: '/blog/su-ve-bobrek-sagligi.html',              en: '/blog/en/water-and-kidney-health.html',     ar: '/blog/ar/almae-wasihhat-alkulaa.html',     ru: '/blog/ru/voda-i-zdorove-pochek.html' },
         'voda-i-zdorove-pochek.html':             { tr: '/blog/su-ve-bobrek-sagligi.html',              en: '/blog/en/water-and-kidney-health.html',     ar: '/blog/ar/almae-wasihhat-alkulaa.html',     ru: '/blog/ru/voda-i-zdorove-pochek.html' },
+        // Suu Premium %2 Bağış Programı — sosyal sorumluluk / şeffaflık postu (2026-05-11)
+        'afrika-su-kuyusu-bagis-programi.html':   { tr: '/blog/afrika-su-kuyusu-bagis-programi.html',   en: '/blog/en/africa-water-well-donation-program.html', ar: '/blog/ar/barnamaj-tabarru-abar-almae-afriqia.html', ru: '/blog/ru/programma-pozhertvovanij-kolodtsy-afrika.html' },
+        'africa-water-well-donation-program.html':{ tr: '/blog/afrika-su-kuyusu-bagis-programi.html',   en: '/blog/en/africa-water-well-donation-program.html', ar: '/blog/ar/barnamaj-tabarru-abar-almae-afriqia.html', ru: '/blog/ru/programma-pozhertvovanij-kolodtsy-afrika.html' },
+        'barnamaj-tabarru-abar-almae-afriqia.html':{ tr: '/blog/afrika-su-kuyusu-bagis-programi.html',  en: '/blog/en/africa-water-well-donation-program.html', ar: '/blog/ar/barnamaj-tabarru-abar-almae-afriqia.html', ru: '/blog/ru/programma-pozhertvovanij-kolodtsy-afrika.html' },
+        'programma-pozhertvovanij-kolodtsy-afrika.html':{ tr: '/blog/afrika-su-kuyusu-bagis-programi.html', en: '/blog/en/africa-water-well-donation-program.html', ar: '/blog/ar/barnamaj-tabarru-abar-almae-afriqia.html', ru: '/blog/ru/programma-pozhertvovanij-kolodtsy-afrika.html' },
     };
 
     function getCurrentPage() {
