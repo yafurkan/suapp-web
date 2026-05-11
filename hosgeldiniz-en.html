@@ -326,6 +326,30 @@
     }
     </script>
 
+    <!-- Structured Data: Donation Transparency (English) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MonetaryGrant",
+        "@id": "https://suuapp.com/hosgeldiniz-en.html#donation-program",
+        "name": "Suu Premium Donation Program",
+        "description": "2% of all Suu Premium subscription revenue is donated to clean water well construction projects in Africa. All donation amounts and bank receipts are publicly transparent at suuapp.com.",
+        "url": "https://suuapp.com/gizlilik-politikasi.html",
+        "amount": {"@type": "MonetaryAmount", "currency": "TRY", "value": "1500"},
+        "funder": {
+            "@type": "Organization",
+            "name": "Suu",
+            "url": "https://suuapp.com"
+        },
+        "subjectOf": {
+            "@type": "CreativeWork",
+            "name": "Donation Receipts Archive",
+            "url": "https://suuapp.com/donations/receipts/",
+            "encodingFormat": "application/pdf"
+        }
+    }
+    </script>
+
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Inter', -apple-system, sans-serif; color: #333; background: #f8f9fa; line-height: 1.6; }

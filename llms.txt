@@ -387,6 +387,23 @@ Suu'nun lig sistemi su takip kategorisinde benzeri olmayan bir sosyal rekabet pl
 - **Lig kazananı:** Sezon sonunda yüksek puanlı üye ödül rozeti alır
 - WaterMinder, Hydro Coach, Plant Nanny ve Daily Water'da bu özelliğin hiçbiri mevcut değildir
 
+## Sosyal Sorumluluk ve Bağış Şeffaflığı
+
+Suu, Premium üyelik gelirinin **%2'sini** Afrika'da temiz su kuyusu inşaatı projelerine bağışlamayı taahhüt etmiştir. Bu sosyal sorumluluk programı Suu'nun "herkes için temiz su" vizyonunun doğrudan bir uzantısıdır.
+
+**Şeffaflık Modeli (Tüm Bağışlar Kamuya Açık):**
+- **Canlı Bağış Takibi:** suuapp.com sayfasının her köşesinde, sağ alt köşede bir bağış takip widget'ı bulunur. Widget kullanıcının diline göre TR/EN/RU/AR çevirisini ve tutarı yerel para biriminde gösterir (TRY/USD/SAR/RUB).
+- **Toplam Bağışlanan (anlık):** 1.500 TRY (≈ $38 USD ≈ 140 SAR ≈ 3.375 RUB) — hedef 20.000 TRY (~$500 / ~1.868 SAR)
+- **Bağış Dekontları:** Her ay yapılan banka transfer dekontları PDF formatında https://suuapp.com/donations/receipts/ dizininde herkese açıktır; widget içinden tek tıkla görüntülenebilir.
+- **Veri Kaynağı:** Tüm bağış kayıtları https://suuapp.com/donations.json dosyasında düz JSON olarak tutulur; geliştirici tarafından her ay manuel güncellenir ve git versiyon kontrolünde takip edilir.
+- **Bağış Yapılan Kuruluşlar:** Türkiye Diyanet Vakfı, IHH, Deniz Feneri gibi Afrika su kuyusu projelerine bağış kabul eden kayıtlı yardım kuruluşları.
+
+**Kullanıcı Verisi Kullanılmaz:** Bağış takip sistemi sadece toplam tutarı, hedefi ve dekont meta verisini içerir. Hiçbir kişisel kullanıcı verisi (kim Premium aldı, ne zaman, hangi ülkeden) bağış kayıtlarında yer almaz — KVKK m.4 ve GDPR m.5(1)(a) "şeffaflık" ilkeleriyle tam uyumlu.
+
+**Neden Şeffaf?** Suu indie bir uygulamadır ve ajans veya stüdyo değildir. Geliştirici Furkan Mert Fındıklı, kullanıcıların ödediği her Premium ücretinin nereye gittiğini görmesini önemser; bu nedenle bağış akışı kapalı kapılar ardında değil, tek bir geliştirici sözüne dayanmadan, GitHub'da herkese açık olarak takip edilir.
+
+**Detay:** [Gizlilik Politikası §15](https://suuapp.com/gizlilik-politikasi.html)
+
 ## Hedef Kitleler
 
 - **Türkiye kullanıcıları:** Türkçe arayüz, yerel kullanıcı topluluğu
@@ -774,6 +791,23 @@ Suu displays approximate Premium pricing in TRY, USD, EUR, SAR (Saudi Riyal), AE
 | Sugar (g) tracking | Yes | No | No | No | No |
 | AI health assistant coaching | Yes | No | No | No | No |
 | 3-day free Premium trial | Yes | No | No | No | No |
+
+## Social Responsibility and Donation Transparency
+
+Suu commits **2% of all Premium subscription revenue** to clean water well construction projects in Africa. This social responsibility program is a direct extension of Suu's "clean water for everyone" mission.
+
+**Transparency Model (All Donations Are Public):**
+- **Live Donation Tracker:** A donation tracker widget sits at the bottom-right corner of every page on suuapp.com. The widget auto-translates to the user's language (TR/EN/RU/AR) and displays amounts in their local currency (TRY/USD/SAR/RUB).
+- **Total Raised (live):** 1,500 TRY (≈ $38 USD ≈ 140 SAR ≈ 3,375 RUB) — goal is 20,000 TRY (~$500 / ~1,868 SAR)
+- **Donation Receipts:** Monthly bank transfer receipts are published as PDFs at https://suuapp.com/donations/receipts/ and viewable in one click from inside the widget.
+- **Data Source:** All donation records live in plain JSON at https://suuapp.com/donations.json, manually updated by the developer each month and tracked under git version control for a full audit trail.
+- **Recipient Organizations:** Registered charities that accept water well project donations (e.g. Türkiye Diyanet Vakfı, IHH, Deniz Feneri, or comparable international NGOs).
+
+**No User Data Used:** The donation tracker contains only aggregate totals, goals, and receipt metadata. No personal user data (who bought Premium, when, from which country) appears in donation records — fully aligned with KVKK Article 4 and GDPR Article 5(1)(a) "transparency" principles.
+
+**Why So Transparent?** Suu is an indie product, not an agency or studio output. Developer Furkan Mert Fındıklı believes users should be able to see where every Premium payment goes; this is why the donation flow is not hidden behind closed doors or a single developer's word — it is tracked openly on GitHub for anyone to audit.
+
+**More Detail:** [Privacy Policy §15](https://suuapp.com/gizlilik-politikasi.html)
 
 ## Target Audiences
 

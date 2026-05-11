@@ -396,6 +396,71 @@
     }
     </script>
 
+    <!-- Structured Data: Donation Transparency (AI Search & LLM keşfi için) -->
+    <!-- Suu Premium gelirinin %2'si Afrika su kuyusu bağışına gider. Tüm dekontlar publik. -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MonetaryGrant",
+        "@id": "https://suuapp.com/#donation-program",
+        "name": "Suu Premium Bağış Programı / Suu Premium Donation Program",
+        "description": "Suu Premium üyelik gelirinin %2'si Afrika'da temiz su kuyusu inşaatı projelerine bağışlanır. Tüm bağış tutarları ve banka dekontları kamuya açık olarak suuapp.com üzerinde şeffaf bir şekilde takip edilir. 2% of Suu Premium subscription revenue is donated to clean water well construction projects in Africa. All donation amounts and bank receipts are publicly transparent at suuapp.com.",
+        "url": "https://suuapp.com/gizlilik-politikasi.html",
+        "amount": {
+            "@type": "MonetaryAmount",
+            "currency": "TRY",
+            "value": "1500"
+        },
+        "funder": {
+            "@type": "Organization",
+            "name": "Suu",
+            "url": "https://suuapp.com",
+            "founder": {
+                "@type": "Person",
+                "name": "Furkan Mert Fındıklı",
+                "url": "https://www.linkedin.com/in/furkanfindikli/"
+            }
+        },
+        "sponsor": {
+            "@type": "Organization",
+            "name": "Suu Premium Subscribers"
+        },
+        "subjectOf": {
+            "@type": "CreativeWork",
+            "name": "Donation Receipts Archive",
+            "url": "https://suuapp.com/donations/receipts/",
+            "encodingFormat": "application/pdf"
+        }
+    }
+    </script>
+
+    <!-- Structured Data: WebPage with DonateAction (GEO/AI Search için) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://suuapp.com/#webpage",
+        "url": "https://suuapp.com/",
+        "name": "Suu — AI Sağlık Asistanı & Su Takip Uygulaması",
+        "potentialAction": {
+            "@type": "DonateAction",
+            "name": "Afrika Su Kuyusu Bağışı / Africa Water Well Donation",
+            "description": "Premium üyeliklerin %2'si otomatik olarak Afrika'da temiz su kuyusu projelerine bağışlanır. Şeffaf takip için suuapp.com/donations.json",
+            "recipient": {
+                "@type": "Organization",
+                "name": "Afrika Su Kuyusu Yardım Kuruluşları"
+            },
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://suuapp.com/donations.json",
+                "encodingType": "application/json"
+            },
+            "price": "1500",
+            "priceCurrency": "TRY"
+        }
+    }
+    </script>
+
     <!-- Structured Data: Person (Geliştirici - GEO/AI motorları için) -->
     <script type="application/ld+json">
     {

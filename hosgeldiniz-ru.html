@@ -263,6 +263,30 @@
     }
     </script>
 
+    <!-- Structured Data: Donation Transparency (Russian) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MonetaryGrant",
+        "@id": "https://suuapp.com/hosgeldiniz-ru.html#donation-program",
+        "name": "Программа пожертвований Suu Premium",
+        "description": "2% всех доходов от подписки Suu Premium направляются на проекты строительства колодцев с чистой водой в Африке. Все суммы пожертвований и квитанции банковских переводов открыто и прозрачно публикуются на suuapp.com.",
+        "url": "https://suuapp.com/gizlilik-politikasi.html",
+        "amount": {"@type": "MonetaryAmount", "currency": "TRY", "value": "1500"},
+        "funder": {
+            "@type": "Organization",
+            "name": "Suu",
+            "url": "https://suuapp.com"
+        },
+        "subjectOf": {
+            "@type": "CreativeWork",
+            "name": "Архив квитанций пожертвований",
+            "url": "https://suuapp.com/donations/receipts/",
+            "encodingFormat": "application/pdf"
+        }
+    }
+    </script>
+
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Inter', -apple-system, sans-serif; color: #333; background: #f8f9fa; line-height: 1.6; }
