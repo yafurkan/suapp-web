@@ -1,0 +1,83 @@
+{
+  "totalAmount": 1500,
+  "goalAmount": 20000,
+  "baseCurrency": "TRY",
+  "lastUpdated": "2026-05-11",
+  "rates": {
+    "TRY": 1,
+    "USD": 0.025,
+    "SAR": 0.0934,
+    "RUB": 2.25
+  },
+  "currencyByLang": {
+    "tr": { "code": "TRY", "locale": "tr-TR" },
+    "en": { "code": "USD", "locale": "en-US" },
+    "ar": { "code": "SAR", "locale": "ar-SA" },
+    "ru": { "code": "RUB", "locale": "ru-RU" }
+  },
+  "receipts": [
+    {
+      "date": "2026-05",
+      "charity": "Suu Premium · İlk Bağış",
+      "amount": 1500
+    }
+  ],
+  "translations": {
+    "tr": {
+      "fabLabel": "Bağış Takibi",
+      "title": "Su Kuyusu Bağışı",
+      "subtitle": "Premium üyeliklerin %2'si Afrika'da temiz su kuyularına bağışlanır.",
+      "progressLabel": "Toplam Bağış",
+      "goalLabel": "Hedef",
+      "receiptsBtn": "Bağış Dekontları",
+      "receiptsTitle": "Dekontlar",
+      "noReceipts": "Henüz dekont eklenmedi. İlk bağış toplandığında burada listelenecek.",
+      "view": "Görüntüle",
+      "close": "Kapat",
+      "lastUpdated": "Son güncelleme",
+      "transparencyNote": "Tüm dekontlar şeffaflık için kamuya açıktır."
+    },
+    "en": {
+      "fabLabel": "Donation Tracker",
+      "title": "Water Well Donation",
+      "subtitle": "2% of Premium subscriptions are donated to clean water wells in Africa.",
+      "progressLabel": "Total Raised",
+      "goalLabel": "Goal",
+      "receiptsBtn": "Donation Receipts",
+      "receiptsTitle": "Receipts",
+      "noReceipts": "No receipts yet. The first donation will appear here.",
+      "view": "View",
+      "close": "Close",
+      "lastUpdated": "Last updated",
+      "transparencyNote": "All receipts are public for full transparency."
+    },
+    "ru": {
+      "fabLabel": "Трекер пожертвований",
+      "title": "Пожертвование на колодец",
+      "subtitle": "2% от подписок Premium идут на чистые колодцы в Африке.",
+      "progressLabel": "Собрано",
+      "goalLabel": "Цель",
+      "receiptsBtn": "Квитанции",
+      "receiptsTitle": "Квитанции",
+      "noReceipts": "Пока нет квитанций. Первое пожертвование появится здесь.",
+      "view": "Открыть",
+      "close": "Закрыть",
+      "lastUpdated": "Обновлено",
+      "transparencyNote": "Все квитанции открыты для полной прозрачности."
+    },
+    "ar": {
+      "fabLabel": "تتبع التبرعات",
+      "title": "تبرع لبئر مياه",
+      "subtitle": "يتم التبرع بـ 2% من اشتراكات بريميوم لآبار المياه النظيفة في أفريقيا.",
+      "progressLabel": "إجمالي التبرعات",
+      "goalLabel": "الهدف",
+      "receiptsBtn": "إيصالات التبرع",
+      "receiptsTitle": "الإيصالات",
+      "noReceipts": "لا توجد إيصالات بعد. سيظهر أول تبرع هنا.",
+      "view": "عرض",
+      "close": "إغلاق",
+      "lastUpdated": "آخر تحديث",
+      "transparencyNote": "جميع الإيصالات متاحة للجمهور لضمان الشفافية الكاملة."
+    }
+  }
+}
