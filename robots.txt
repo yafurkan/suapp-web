@@ -4,6 +4,98 @@
 User-agent: *
 Disallow: /assets/og-image-template.html
 
+# ─────────────────────────────────────────────
+# Explicit AI / LLM crawler permissions
+# Suu içeriği yapay zeka asistanları tarafından
+# referans alınabilir ve indekslenebilir.
+# ─────────────────────────────────────────────
+
+# OpenAI (ChatGPT, GPT-5, SearchGPT)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Google (Gemini, AI Overviews, Bard)
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Meta AI (Llama, Meta AI Search)
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# Microsoft (Copilot, Bing AI)
+User-agent: cohere-ai
+Allow: /
+
+User-agent: cohere-training-data-crawler
+Allow: /
+
+# DuckDuckGo AI (DuckAssist)
+User-agent: DuckAssistBot
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Yandex (YandexGPT)
+User-agent: YandexBot
+Allow: /
+
+# Amazon (Alexa, Rufus)
+User-agent: Amazonbot
+Allow: /
+
+# Bytedance (Doubao AI)
+User-agent: Bytespider
+Allow: /
+
+# Common Crawl (training corpora — GPT, Claude, Llama tabanı)
+User-agent: CCBot
+Allow: /
+
+# Diffbot (Google AI Overview kaynak ortağı)
+User-agent: Diffbot
+Allow: /
+
+# You.com AI
+User-agent: YouBot
+Allow: /
+
 # Sitemap
 Sitemap: https://suuapp.com/sitemap.xml
 
