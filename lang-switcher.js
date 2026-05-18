@@ -10,7 +10,6 @@
     var PAGE_MAP = {
         'index.html':       { tr: '/',                 en: 'hosgeldiniz-en.html', ar: 'hosgeldiniz-ar.html', ru: 'hosgeldiniz-ru.html' },
         '':                 { tr: '/',                 en: 'hosgeldiniz-en.html', ar: 'hosgeldiniz-ar.html', ru: 'hosgeldiniz-ru.html' },
-        'hosgeldiniz.html': { tr: '/',                 en: 'hosgeldiniz-en.html', ar: 'hosgeldiniz-ar.html', ru: 'hosgeldiniz-ru.html' },
         'ozellikler.html':  { tr: 'ozellikler.html',   en: 'hosgeldiniz-en.html', ar: 'hosgeldiniz-ar.html', ru: 'hosgeldiniz-ru.html' },
         'faq.html':         { tr: 'faq.html',          en: 'hosgeldiniz-en.html', ar: 'hosgeldiniz-ar.html', ru: 'hosgeldiniz-ru.html' },
         'blog.html':        { tr: 'blog.html',         en: 'blog-en.html',        ar: 'blog-ar.html',        ru: 'blog-ru.html' },
