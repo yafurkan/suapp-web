@@ -873,4 +873,47 @@
         <xhtml:link rel="alternate" hreflang="ar" href="https://suuapp.com/blog/ar/barnamaj-tabarru-abar-almae-afriqia.html" />
         <xhtml:link rel="alternate" hreflang="ru" href="https://suuapp.com/blog/ru/programma-pozhertvovanij-kolodtsy-afrika.html" />
     </url>
+
+    <!-- Suu Evcil Hayvan + 4 Mini Oyun + Giydirme — yeni özellik lansmanı (4 dil, hreflang grup) -->
+    <url>
+        <loc>https://suuapp.com/blog/suu-evcil-hayvan-mini-oyunlar.html</loc>
+        <lastmod>2026-05-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.95</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://suuapp.com/blog/suu-evcil-hayvan-mini-oyunlar.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://suuapp.com/blog/en/pet-companion-mini-games.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://suuapp.com/blog/ar/hayawan-aleef-aleab-mini.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://suuapp.com/blog/ru/domashnij-pitomec-mini-igry.html" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://suuapp.com/blog/suu-evcil-hayvan-mini-oyunlar.html" />
+    </url>
+    <url>
+        <loc>https://suuapp.com/blog/en/pet-companion-mini-games.html</loc>
+        <lastmod>2026-05-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.95</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://suuapp.com/blog/suu-evcil-hayvan-mini-oyunlar.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://suuapp.com/blog/en/pet-companion-mini-games.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://suuapp.com/blog/ar/hayawan-aleef-aleab-mini.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://suuapp.com/blog/ru/domashnij-pitomec-mini-igry.html" />
+    </url>
+    <url>
+        <loc>https://suuapp.com/blog/ar/hayawan-aleef-aleab-mini.html</loc>
+        <lastmod>2026-05-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.95</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://suuapp.com/blog/suu-evcil-hayvan-mini-oyunlar.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://suuapp.com/blog/en/pet-companion-mini-games.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://suuapp.com/blog/ar/hayawan-aleef-aleab-mini.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://suuapp.com/blog/ru/domashnij-pitomec-mini-igry.html" />
+    </url>
+    <url>
+        <loc>https://suuapp.com/blog/ru/domashnij-pitomec-mini-igry.html</loc>
+        <lastmod>2026-05-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.95</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://suuapp.com/blog/suu-evcil-hayvan-mini-oyunlar.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://suuapp.com/blog/en/pet-companion-mini-games.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://suuapp.com/blog/ar/hayawan-aleef-aleab-mini.html" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://suuapp.com/blog/ru/domashnij-pitomec-mini-igry.html" />
+    </url>
 </urlset>
