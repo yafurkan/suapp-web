@@ -5,8 +5,9 @@ User-agent: *
 Disallow: /assets/og-image-template.html
 
 # Not: makale.html ve kanibal blog sayfaları Disallow EDİLMEZ.
-# Onlar zaten HTML içinde <meta name="robots" content="noindex, follow">
-# ve canonical pointer ile primary URL'e işaret ediyor. Google'ın bu
+# Kanibal blog sayfaları canonical pointer + client-side redirect
+# (meta-refresh + JS) ile primary URL'e işaret ediyor; noindex YOK
+# (noindex+canonical çelişkili sinyaldi, kaldırıldı). Google'ın bu
 # sinyalleri okuyabilmesi için sayfaları crawl edebilmesi şart.
 
 # ─────────────────────────────────────────────
