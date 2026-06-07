@@ -1,8 +1,8 @@
 {
-  "totalAmount": 1500,
+  "totalAmount": 1800,
   "goalAmount": 20000,
   "baseCurrency": "TRY",
-  "lastUpdated": "2026-05-11",
+  "lastUpdated": "2026-06-07",
   "rates": {
     "TRY": 1,
     "USD": 0.025,
@@ -16,6 +16,12 @@
     "ru": { "code": "RUB", "locale": "ru-RU" }
   },
   "receipts": [
+    {
+      "date": "2026-06",
+      "charity": "Su Kuyusu · Water Wells",
+      "amount": 300,
+      "url": "/donations/receipts/su-kuyusu-2026-06.webp"
+    },
     {
       "date": "2026-05",
       "charity": "Suu Premium · İlk Bağış",
