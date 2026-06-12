@@ -60,7 +60,22 @@
             "url": "https://suuapp.com/premium-ar.html",
             "availability": "https://schema.org/InStock",
             "priceValidUntil": "2026-12-31",
-            "description": "خطة Premium السنوية، خصم إطلاق 50%، تجربة مجانية 3 أيام."
+            "description": "خطة Premium السنوية، خصم إطلاق 50%، تجربة مجانية 3 أيام.",
+            "shippingDetails": {
+                "@type": "OfferShippingDetails",
+                "shippingRate": { "@type": "MonetaryAmount", "value": "0", "currency": "SAR" },
+                "shippingDestination": { "@type": "DefinedRegion", "addressCountry": "SA" },
+                "deliveryTime": {
+                    "@type": "ShippingDeliveryTime",
+                    "handlingTime": { "@type": "QuantitativeValue", "minValue": "0", "maxValue": "0", "unitCode": "DAY" },
+                    "transitTime": { "@type": "QuantitativeValue", "minValue": "0", "maxValue": "0", "unitCode": "DAY" }
+                }
+            },
+            "hasMerchantReturnPolicy": {
+                "@type": "MerchantReturnPolicy",
+                "applicableCountry": "SA",
+                "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+            }
         },
         "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "bestRating": "5", "ratingCount": "2847" }
     }

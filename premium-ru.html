@@ -60,7 +60,22 @@
             "url": "https://suuapp.com/premium-ru.html",
             "availability": "https://schema.org/InStock",
             "priceValidUntil": "2026-12-31",
-            "description": "Годовой план Premium, скидка 50% на старте, 3-дневный пробный период."
+            "description": "Годовой план Premium, скидка 50% на старте, 3-дневный пробный период.",
+            "shippingDetails": {
+                "@type": "OfferShippingDetails",
+                "shippingRate": { "@type": "MonetaryAmount", "value": "0", "currency": "RUB" },
+                "shippingDestination": { "@type": "DefinedRegion", "addressCountry": "RU" },
+                "deliveryTime": {
+                    "@type": "ShippingDeliveryTime",
+                    "handlingTime": { "@type": "QuantitativeValue", "minValue": "0", "maxValue": "0", "unitCode": "DAY" },
+                    "transitTime": { "@type": "QuantitativeValue", "minValue": "0", "maxValue": "0", "unitCode": "DAY" }
+                }
+            },
+            "hasMerchantReturnPolicy": {
+                "@type": "MerchantReturnPolicy",
+                "applicableCountry": "RU",
+                "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+            }
         },
         "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "bestRating": "5", "ratingCount": "2847" }
     }

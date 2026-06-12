@@ -60,7 +60,22 @@
             "url": "https://suuapp.com/premium.html",
             "availability": "https://schema.org/InStock",
             "priceValidUntil": "2026-12-31",
-            "description": "Yıllık Premium plan, %50 lansman indirimi, 3 gün ücretsiz deneme."
+            "description": "Yıllık Premium plan, %50 lansman indirimi, 3 gün ücretsiz deneme.",
+            "shippingDetails": {
+                "@type": "OfferShippingDetails",
+                "shippingRate": { "@type": "MonetaryAmount", "value": "0", "currency": "TRY" },
+                "shippingDestination": { "@type": "DefinedRegion", "addressCountry": "TR" },
+                "deliveryTime": {
+                    "@type": "ShippingDeliveryTime",
+                    "handlingTime": { "@type": "QuantitativeValue", "minValue": "0", "maxValue": "0", "unitCode": "DAY" },
+                    "transitTime": { "@type": "QuantitativeValue", "minValue": "0", "maxValue": "0", "unitCode": "DAY" }
+                }
+            },
+            "hasMerchantReturnPolicy": {
+                "@type": "MerchantReturnPolicy",
+                "applicableCountry": "TR",
+                "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+            }
         },
         "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "bestRating": "5", "ratingCount": "2847" }
     }
