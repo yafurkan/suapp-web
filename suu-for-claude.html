@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "tabxahhw7s");
+    </script>
+
+    <title>Suu for Claude — Connector Guide</title>
+    <meta
+      name="description"
+      content="Connect your Suu hydration account to Claude and ask about your water intake, goals, history, stats, plan and badges — read-only."
+    />
+    <meta name="keywords" content="suu claude connector, suu mcp server, claude hydration, water tracker claude, suu ai assistant, hydration data claude" />
+
+    <meta property="og:title" content="Suu for Claude — Connector Guide" />
+    <meta property="og:description" content="Ask Claude about your hydration — water intake, goals, trends, plan and badges. Read-only, private, and scoped to your own account." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://suuapp.com/suu-for-claude.html" />
+    <meta property="og:image" content="https://suuapp.com/assets/og-image.png" />
+    <meta property="og:site_name" content="Suu" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Suu for Claude — Connector Guide" />
+    <meta name="twitter:description" content="Ask Claude about your hydration — water intake, goals, trends, plan and badges. Read-only and private." />
+    <meta name="twitter:image" content="https://suuapp.com/assets/og-image.png" />
+
+    <link rel="canonical" href="https://suuapp.com/suu-for-claude.html" />
+    <link rel="alternate" hreflang="en" href="https://suuapp.com/suu-for-claude.html" />
+    <link rel="alternate" hreflang="x-default" href="https://suuapp.com/suu-for-claude.html" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <style>
+      :root { --brand: #0a83e4; --brand-deep: #0768b8; --ink: #0f172a; --muted: #5b6b7f; --line: #e6e9ef; }
+      * { box-sizing: border-box; }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif;
+        margin: 0; color: var(--ink); background: #f7f9fc; line-height: 1.6;
+      }
+      .hero {
+        background: linear-gradient(160deg, var(--brand), var(--brand-deep));
+        color: #fff; padding: 56px 20px 48px; text-align: center;
+      }
+      .logo {
+        width: 72px; height: 72px; border-radius: 18px; background: rgba(255,255,255,.14);
+        display: inline-flex; align-items: center; justify-content: center; font-size: 38px;
+        margin-bottom: 16px; box-shadow: 0 10px 24px rgba(2,32,71,.25);
+      }
+      .hero h1 { margin: 0 0 8px; font-size: 28px; letter-spacing: -0.3px; }
+      .hero p { margin: 0 auto; max-width: 560px; opacity: .92; font-size: 16px; }
+      .wrap { max-width: 760px; margin: -28px auto 64px; padding: 0 20px; }
+      .card {
+        background: #fff; border: 1px solid var(--line); border-radius: 18px;
+        padding: 28px 26px; margin-bottom: 20px; box-shadow: 0 8px 24px rgba(2,32,71,.05);
+      }
+      h2 { font-size: 19px; margin: 0 0 14px; }
+      h2 .num {
+        display: inline-flex; width: 26px; height: 26px; border-radius: 8px; background: var(--brand);
+        color: #fff; font-size: 14px; align-items: center; justify-content: center; margin-right: 8px;
+      }
+      ul { margin: 0; padding-left: 20px; }
+      li { margin-bottom: 8px; }
+      code {
+        background: #eef2f7; padding: 2px 7px; border-radius: 6px; font-size: 14px;
+        word-break: break-all;
+      }
+      .url { display: inline-block; margin-top: 6px; }
+      .muted { color: var(--muted); font-size: 14px; }
+      .pill {
+        display: inline-block; background: #eaf4fe; color: var(--brand-deep);
+        border-radius: 999px; padding: 3px 12px; font-size: 13px; font-weight: 600; margin-bottom: 14px;
+      }
+      a { color: var(--brand-deep); }
+      footer { text-align: center; color: var(--muted); font-size: 13px; padding: 24px; }
+      .grid { display: grid; gap: 10px; }
+      .tool { border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; }
+      .tool b { display: block; font-size: 15px; }
+      .tool span { color: var(--muted); font-size: 14px; }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="logo">💧</div>
+      <h1>Suu for Claude</h1>
+      <p>Ask Claude about your hydration — your water intake, goals, trends, plan, and
+        badges. Read-only, private, and scoped to your own account.</p>
+    </div>
+
+    <div class="wrap">
+      <div class="card">
+        <span class="pill">Read-only connector</span>
+        <p>
+          <strong>Suu</strong> is a water-tracking app for iOS and Android. This connector
+          links your Suu account to Claude so you can chat with your own hydration data in
+          natural language. Claude can <strong>read</strong> your data to answer questions
+          and encourage you — it can never change, delete, or share it.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>What you can do</h2>
+        <div class="grid">
+          <div class="tool"><b>Today's hydration</b><span>Intake so far, daily goal, progress %, and remaining ml.</span></div>
+          <div class="tool"><b>History &amp; trends</b><span>Per-day totals over any range, averages, and goal-met days.</span></div>
+          <div class="tool"><b>Profile &amp; goal</b><span>Your hydration profile and computed daily water goal.</span></div>
+          <div class="tool"><b>Hydration plan</b><span>Your personalized, time-segmented plan and its progress.</span></div>
+          <div class="tool"><b>Stats &amp; streak</b><span>All-time statistics and your login streak.</span></div>
+          <div class="tool"><b>Badges</b><span>The achievement badges you've unlocked.</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2><span class="num">1</span>Set it up in Claude</h2>
+        <ul>
+          <li>In Claude, open <strong>Settings → Connectors → Add custom connector</strong>.</li>
+          <li>Paste the server URL:<br />
+            <code class="url">https://suu-mcp-server-srlnrr42va-ew.a.run.app/mcp</code></li>
+          <li>Leave the optional OAuth Client ID / Secret fields empty and click <strong>Add</strong>.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2><span class="num">2</span>Sign in to Suu</h2>
+        <ul>
+          <li>Click <strong>Connect</strong>. The Suu sign-in page opens.</li>
+          <li>Sign in with <strong>Google</strong>, <strong>Apple</strong>, or your
+            <strong>email &amp; password</strong> — the same account you use in the Suu app.</li>
+          <li>You're returned to Claude and the connector is ready.</li>
+        </ul>
+        <p class="muted">Requires a free Suu account. No premium or special access needed.</p>
+      </div>
+
+      <div class="card">
+        <h2><span class="num">3</span>Try it</h2>
+        <ul>
+          <li>"How much water have I had today and how close am I to my goal?"</li>
+          <li>"How has my hydration been over the last two weeks?"</li>
+          <li>"What's my hydration streak and which badges have I earned?"</li>
+          <li>"What's left on my hydration plan for today?"</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Privacy &amp; security</h2>
+        <ul>
+          <li><strong>Read-only:</strong> the connector never writes, deletes, or shares your data.</li>
+          <li><strong>Your data only:</strong> every request is scoped to your own account; it can't reach anyone else's data.</li>
+          <li><strong>Secure sign-in:</strong> authentication is handled by Firebase (Google/Apple/Email) over OAuth 2.1; the connector never sees your password.</li>
+          <li>Full details: <a href="https://suuapp.com/gizlilik-politikasi.html">Privacy Policy</a>.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Support</h2>
+        <p>Questions or issues? Email <a href="mailto:support@suuapp.com">support@suuapp.com</a>.</p>
+      </div>
+    </div>
+
+    <footer>© Suu · suuapp.com</footer>
+  </body>
+</html>
