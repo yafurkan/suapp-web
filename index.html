@@ -269,12 +269,14 @@
         },
         "screenshot": [
             "https://suuapp.com/assets/screenshots/ana-ekran.webp",
+            "https://suuapp.com/assets/screenshots/basit-ekran.webp",
             "https://suuapp.com/assets/screenshots/istatikler.webp",
             "https://suuapp.com/assets/screenshots/asistan.webp",
             "https://suuapp.com/assets/screenshots/gun-challenge.webp",
             "https://suuapp.com/assets/screenshots/hatirlama.webp"
         ],
         "featureList": [
+            "Basit ve Gelişmiş Mod: kullanıcı tercihine göre sade tek-dokunuş ekranı veya detaylı istatistik + hızlı-ekle paneli; istediğin an geçiş yapılabilir",
             "AI Sağlık Asistanı: bağlamsal koçluk mesajları, haftalık kişisel sağlık raporları, hidrasyon personası",
             "Aktivite Bazlı Dinamik Su Hedefi: Apple Health ve Google Fit'ten 30+ aktivite okuma (yürüyüş, koşu, yüzme, bisiklet, futbol, HIIT, CrossFit)",
             "Kafein (mg) ve Şeker (g) Takibi: 100+ içecek için FDA (400mg), WHO (25g), ACOG (hamile 200mg) sınırlarına göre akıllı uyarı",
@@ -851,6 +853,22 @@
             },
             {
                 "@type": "Question",
+                "name": "Suu'da Basit ve Gelişmiş mod nedir, farkı ne?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Suu ana ekranı iki modda kullanılabilir ve seçim tamamen kullanıcıya bağlıdır. Basit Mod: sade, tek dokunuşla su ekleyebileceğin dairesel ilerleme ekranı — dağınıklık olmadan hızlı kayıt isteyenler için. Gelişmiş Mod: 'Hızlı Ekle' kartları, favori miktar, çoklu içecek seçimi, hidrasyon skoru, giriş ödülleri ve daha fazla istatistik gösterir — verisini detaylı görmek isteyenler için. İstediğin an ekranın altındaki 'Basit / Gelişmiş' anahtarıyla geçiş yapabilirsin; tüm verilerin aynı kalır, sadece arayüz değişir."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does Suu have a simple and an advanced mode?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Suu's home screen works in two modes and the choice is entirely up to you. Simple Mode is a clean, one-tap circular progress screen for fast, distraction-free logging. Advanced Mode adds Quick Add cards, a favorite amount, multi-beverage logging, your hydration score, login rewards and richer statistics for people who want to dig into their data. You can switch any time with the 'Simple / Advanced' toggle at the bottom of the screen — your data stays the same, only the interface changes."
+                }
+            },
+            {
+                "@type": "Question",
                 "name": "Suu Premium ücretsiz denenebilir mi? Fiyatı nedir?",
                 "acceptedAnswer": {
                     "@type": "Answer",
@@ -1008,7 +1026,10 @@
                 <div class="phone-mockup">
                     <div class="phone-screen">
                         <div class="app-screen active">
-                            <img fetchpriority="high" src="assets/screenshots/ana-ekran.webp" width="600" height="1300" alt="Ana Ekran" class="phone-screenshot">
+                            <img fetchpriority="high" src="assets/screenshots/ana-ekran.webp" width="600" height="1300" alt="Gelişmiş Mod Ana Ekran" class="phone-screenshot">
+                        </div>
+                        <div class="app-screen">
+                            <img src="assets/screenshots/basit-ekran.webp" width="600" height="1300" alt="Basit Mod Ana Ekran" class="phone-screenshot" loading="lazy" onerror="this.onerror=null;this.src='assets/screenshots/ana-ekran.webp'">
                         </div>
                         <div class="app-screen">
                             <img src="assets/screenshots/istatikler.webp" width="600" height="1300" alt="İstatistikler" class="phone-screenshot" loading="lazy">
@@ -1351,10 +1372,19 @@
                 <div class="carousel-container">
                     <div class="screenshot-item active">
                         <div class="screenshot-phone">
-                            <img src="assets/screenshots/ana-ekran.webp" width="600" height="1300" alt="Suu Ana Ekran" class="screenshot-image" loading="lazy">
+                            <img src="assets/screenshots/ana-ekran.webp" width="600" height="1300" alt="Suu Gelişmiş Mod Ana Ekran" class="screenshot-image" loading="lazy">
                             <div class="screenshot-overlay">
-                                <h4>Ana Ekran</h4>
-                                <p>Günlük su takibinizi kolayca yapın</p>
+                                <h4>Gelişmiş Mod</h4>
+                                <p>Hızlı ekle kartları ve detaylı kontrol</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="screenshot-phone">
+                            <img src="assets/screenshots/basit-ekran.webp" width="600" height="1300" alt="Suu Basit Mod Ana Ekran" class="screenshot-image" loading="lazy" onerror="this.onerror=null;this.src='assets/screenshots/ana-ekran.webp'">
+                            <div class="screenshot-overlay">
+                                <h4>Basit Mod</h4>
+                                <p>Sade, tek dokunuşla su ekle</p>
                             </div>
                         </div>
                     </div>
@@ -1401,6 +1431,7 @@
                     <span class="dot" data-slide="2"></span>
                     <span class="dot" data-slide="3"></span>
                     <span class="dot" data-slide="4"></span>
+                    <span class="dot" data-slide="5"></span>
                 </div>
             </div>
         </div>
