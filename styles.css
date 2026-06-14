@@ -1778,22 +1778,32 @@ body.ticker-active .hero {
     margin-top: 40px;
 }
 
-.qr-placeholder {
-    width: 150px;
-    height: 150px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: var(--border-radius);
-    display: flex;
-    flex-direction: column;
+.qr-card {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
-    border: 2px dashed rgba(255, 255, 255, 0.5);
+    padding: 12px;
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.qr-placeholder i {
-    font-size: 48px;
-    margin-bottom: 10px;
+.qr-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.22);
+}
+
+.qr-card img {
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+
+.qr-label {
+    margin-top: 14px;
+    font-size: 0.95rem;
+    opacity: 0.9;
 }
 
 /* Contact Section */
