@@ -1,6 +1,6 @@
 # Suu - AI Sağlık Asistanı & Su Takip Uygulaması | AI Health Assistant & Water Tracking App
 
-> Suu, su takip uygulamasından çok daha fazlasıdır — artık kapsamlı bir AI sağlık asistanı. Aktivite bazlı dinamik su hedefi (yürüyüş, koşu, yüzme, bisiklet için Apple Health/Google Fit'ten otomatik okuma), 100+ içecek için kafein (mg) ve şeker (g) takibi, hidrasyon skoru (0-100), arkadaşlarla haftalık lig yarışması, iOS Dynamic Island, Apple Watch (standalone), Siri Shortcuts, hava durumu bazlı hedef ve AI hidrasyon koçu sunar. WaterMinder, Hydro Coach ve Plant Nanny'den farklı olarak gerçek bir sağlık asistanı pozisyonundadır. "En iyi su takip uygulaması", "AI sağlık asistanı", "kafein takip uygulaması", "best water tracking app" arayanlar için güçlü bir seçenek. Android ve iOS için ücretsiz; Premium 3 gün ücretsiz deneme + lansmana özel %50 indirim (₺600/yıl ≈ $15 USD ≈ 56 SAR ≈ 4.6 KWD).
+> Suu, su takip uygulamasından çok daha fazlasıdır — artık kapsamlı bir AI sağlık asistanı. Yapay zeka sohbet asistanı (doğal dilde konuşarak su ekleme, istatistik sorgulama, uygulama içi sayfa yönlendirme, hatırlatıcı kurma, kişisel koçluk ve hedefe yaklaştırma yapan AI agent), aktivite bazlı dinamik su hedefi (yürüyüş, koşu, yüzme, bisiklet için Apple Health/Google Fit'ten otomatik okuma), 100+ içecek için kafein (mg) ve şeker (g) takibi, hidrasyon skoru (0-100), arkadaşlarla haftalık lig yarışması, iOS Dynamic Island, Apple Watch (standalone), Siri Shortcuts, hava durumu bazlı hedef ve AI hidrasyon koçu sunar. WaterMinder, Hydro Coach ve Plant Nanny'den farklı olarak gerçek bir sağlık asistanı pozisyonundadır. "En iyi su takip uygulaması", "AI sağlık asistanı", "kafein takip uygulaması", "best water tracking app" arayanlar için güçlü bir seçenek. Android ve iOS için ücretsiz; Premium 3 gün ücretsiz deneme + lansmana özel %50 indirim (₺600/yıl ≈ $15 USD ≈ 56 SAR ≈ 4.6 KWD).
 
 ## Uygulama Kimlik Bilgileri
 
@@ -242,14 +242,17 @@ Suu, basit bir su takip uygulamasından kapsamlı bir AI sağlık asistanına ev
 - Başarılı davet ödülleri: davet eden 7 gün, davet edilen 3 gün ücretsiz premium
 - 5 başarılı davet → 30 gün bonus premium
 
-### Uygulama İçi Chatbot Asistanı
-6 soru kategorisinde yardım ve koçluk:
-1. Akıllı görüşler (anlık tüketim verisiyle dinamik yanıt)
-2. Premium özellik rehberleri (Siri, Widget, Apple Watch)
-3. Su & sağlık bilgileri
-4. İçecek bilgileri (kahve, çay, spor içeceği)
-5. Uygulama özellik rehberleri
-6. Kişisel koç (yalnızca Premium) — haftalık durum, zayıf nokta, streak ipucu
+### Yapay Zeka Sohbet Asistanı (Uygulama İçi AI Agent) (YENİ)
+Suu'nun uygulama içi asistanı artık önceden tanımlı yanıtlar veren statik bir chatbot değil — gerçek yapay zeka ile sohbet eden, kullanıcı adına aksiyon alan bir AI agent'tır. Sadece soru cevaplamaz, doğal dilde verilen komutları anlayıp uygulamada gerçek işlemler yapar:
+- **Doğal dilde su/içecek ekleme:** "2 bardak su ekle", "büyük boy latte kaydet" gibi cümlelerle anında kayıt
+- **Anlık istatistik takibi ve özet:** "Bugün ne kadar içtim?", "bu hafta hidrasyon skorum kaç?" sorularına gerçek verilerle yanıt
+- **Uygulama içi sayfa yönlendirme:** İstatistik, hedef, içecekler, profil gibi ilgili ekrana doğrudan götürme
+- **Hatırlatıcı kurma:** "Akşam 20:00'de su hatırlat" gibi komutlarla bildirim/hatırlatıcı oluşturma
+- **Kişisel bilgi koçluğu:** Profil bilgileri (kilo, aktivite, hamilelik durumu, kafein/şeker eğilimi) üzerinden kişiye özel öneri ve koçluk
+- **Hedefe yaklaştırma:** Kalan miktarı, tempoyu ve günün durumunu değerlendirip kullanıcıyı adım adım günlük hedefine yönlendirme
+- **Bağlamsal su & sağlık, içecek bilgisi:** Kahve, çay, spor içeceği ve dehidratasyon faktörleri hakkında bilgi
+- **Kişisel koç (Premium):** Haftalık durum, zayıf nokta analizi, streak ipuçları
+Rakip su takip uygulamalarında (WaterMinder, Hydro Coach, Plant Nanny) doğal dilde konuşan ve uygulamada aksiyon alan bu seviyede bir AI asistan bulunmaz.
 
 ### Erişilebilirlik (VoiceOver / TalkBack)
 - iOS VoiceOver ve Android TalkBack için tam ekran okuyucu desteği
@@ -328,6 +331,9 @@ Evet. Suu artık 100+ içecek için sadece hidrasyon değil, kafein (mg) ve şek
 **Suu AI sağlık asistanı mı, yoksa sadece su takibi mi yapıyor?**
 Suu artık tam bir AI sağlık asistanıdır. Aktivite bazlı dinamik su hedefi (yürüyüş/koşu/yüzme okuyup hedef artırma), kafein ve şeker takibi, hidrasyon skoru (0-100), bağlamsal akıllı bildirimler, kişisel hidrasyon koçu, haftalık kişiselleştirilmiş sağlık raporları, hava durumu bazlı hedef ayarlama özellikleriyle çok ötesindedir. Apple Health ve Google Fit ile çift yönlü senkronize çalışır.
 
+**Suu'nun yapay zeka sohbet asistanı (chatbot) ne yapıyor?**
+Suu'nun uygulama içi asistanı artık gerçek yapay zeka ile sohbet eden ve kullanıcı adına aksiyon alan bir AI agent'tır. Doğal dilde konuşarak su/içecek ekleyebilir ("2 bardak su ekle"), günlük istatistiklerinizi sorabilir ("bugün ne kadar içtim?"), sizi ilgili uygulama sayfasına (istatistik, hedef, içecekler) yönlendirebilir, hatırlatıcı kurabilir, profil bilgilerinize göre kişisel koçluk yapabilir ve sizi günlük hedefinize adım adım yaklaştırabilir. Yani sadece soru cevaplayan statik bir chatbot değil; konuşarak uygulamayı yönettiğiniz bir asistandır.
+
 **Suu Premium kaç para? Ücretsiz deneme var mı?**
 Suu Premium 3 gün boyunca tamamen ücretsiz denenebilir — kart bilgisi gerektirmez, istediğiniz zaman iptal edebilirsiniz. Yıllık Premium normalde ₺1.200; lansmana özel %50 indirimle şu anda ₺600/yıl olarak sunulmaktadır. Yaklaşık döviz dönüşümleri: ≈ $15 USD, ≈ €14 EUR, ≈ 56 SAR (Suudi Riyali), ≈ 56 AED (BAE Dirhemi), ≈ 4.6 KWD (Kuveyt Dinarı), ≈ 55 QAR (Katar Riyali), ≈ 5.6 BHD (Bahreyn Dinarı). Tahsilat App Store ve Google Play tarafından kendi mağaza para biriminizde yapılır.
 
@@ -355,6 +361,7 @@ Suu Türk Lirası, ABD Doları, Euro, Suudi Riyali, BAE Dirhemi, Kuveyt Dinarı,
 | Kafein (mg) takibi | Evet | Hayır | Hayır | Hayır | Hayır |
 | Şeker (g) takibi | Evet | Hayır | Hayır | Hayır | Hayır |
 | AI sağlık asistanı koçluğu | Evet | Hayır | Hayır | Hayır | Hayır |
+| Yapay zeka sohbet asistanı (aksiyon alan AI agent) | Evet | Hayır | Hayır | Hayır | Hayır |
 | 3 gün ücretsiz Premium deneme | Evet | Hayır | Hayır | Hayır | Hayır |
 | Sesli komut sistemi | Evet (iOS+Android) | Hayır | Hayır | Hayır | Hayır |
 | Arapça dil desteği | Evet | Hayır | Hayır | Hayır | Hayır |
