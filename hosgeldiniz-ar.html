@@ -272,9 +272,12 @@
 
         /* Screenshots */
         .screenshots-section { background: linear-gradient(135deg, #f0f7ff, #e8f4f8); }
-        .screenshots-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 40px; direction: ltr; }
-        .screenshot-wrap { background: white; border-radius: 20px; padding: 8px; box-shadow: 0 4px 20px rgba(74,144,217,0.15); }
-        .screenshot-wrap img { width: 140px; border-radius: 14px; display: block; }
+        .screenshots-row { margin-top: 40px; overflow-x: auto; -webkit-overflow-scrolling: touch; scroll-snap-type: x proximity; padding-bottom: 14px; scrollbar-width: thin; scrollbar-color: rgba(74,144,217,0.4) transparent; }
+        .screenshots-row::-webkit-scrollbar { height: 8px; }
+        .screenshots-row::-webkit-scrollbar-thumb { background: rgba(74,144,217,0.35); border-radius: 4px; }
+        .screenshots-track { display: flex; gap: 16px; width: max-content; max-width: 100%; margin: 0 auto; padding: 6px 4px; box-sizing: border-box; direction: ltr; }
+        .screenshot-wrap { flex: 0 0 auto; background: white; border-radius: 20px; padding: 8px; box-shadow: 0 4px 20px rgba(74,144,217,0.15); scroll-snap-align: center; }
+        .screenshot-wrap img { width: 140px; height: auto; max-width: 100%; border-radius: 14px; display: block; }
 
         /* Stats */
         .stats-row { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; margin-top: 40px; }
@@ -301,8 +304,8 @@
 
         @media (max-width: 600px) {
             .nav-links { display: none; }
-            .screenshots-row { gap: 10px; }
-            .screenshot-wrap img { width: 110px; }
+            .screenshots-track { gap: 10px; }
+            .screenshot-wrap img { width: 132px; }
         }
     </style>
 </head>
@@ -477,12 +480,14 @@
         <h2 class="section-title">تصميم جميل وسهل الاستخدام</h2>
         <p class="section-sub">واجهة نظيفة تركّز على شيء واحد: مساعدتك على شرب ماء أكثر بسهولة.</p>
         <div class="screenshots-row">
+          <div class="screenshots-track">
             <div class="screenshot-wrap"><img fetchpriority="high" src="assets/screenshots/ana-ekran-ar.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/ana-ekran.webp'" alt="الوضع المتقدم - الشاشة الرئيسية"></div>
             <div class="screenshot-wrap"><img loading="lazy" src="assets/screenshots/basit-ekran-ar.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/basit-ekran.webp'" alt="الوضع البسيط - الشاشة الرئيسية"></div>
             <div class="screenshot-wrap"><img loading="lazy" src="assets/screenshots/istatikler-ar.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/istatikler.webp'" alt="الإحصائيات"></div>
             <div class="screenshot-wrap"><img loading="lazy" src="assets/screenshots/asistan-ar.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/su-ekleme.webp'" alt="مساعد الذكاء الاصطناعي"></div>
             <div class="screenshot-wrap"><img loading="lazy" src="assets/screenshots/gun-challenge-ar.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/hedefler.webp'" alt="تحدي 7 أيام"></div>
             <div class="screenshot-wrap"><img loading="lazy" src="assets/screenshots/hatirlama-ar.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/hatirlama.webp'" alt="التذكيرات"></div>
+          </div>
         </div>
     </div>
 </section>
