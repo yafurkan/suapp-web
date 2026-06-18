@@ -402,9 +402,12 @@
 
         /* Screenshots */
         .screenshots-section { background: linear-gradient(135deg, #f0f7ff, #e8f4f8); }
-        .screenshots-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 40px; }
-        .screenshot-wrap { background: white; border-radius: 20px; padding: 8px; box-shadow: 0 4px 20px rgba(74,144,217,0.15); }
-        .screenshot-wrap img { width: 140px; border-radius: 14px; display: block; }
+        .screenshots-row { margin-top: 40px; overflow-x: auto; -webkit-overflow-scrolling: touch; scroll-snap-type: x proximity; padding-bottom: 14px; scrollbar-width: thin; scrollbar-color: rgba(74,144,217,0.4) transparent; }
+        .screenshots-row::-webkit-scrollbar { height: 8px; }
+        .screenshots-row::-webkit-scrollbar-thumb { background: rgba(74,144,217,0.35); border-radius: 4px; }
+        .screenshots-track { display: flex; gap: 16px; width: max-content; max-width: 100%; margin: 0 auto; padding: 6px 4px; box-sizing: border-box; }
+        .screenshot-wrap { flex: 0 0 auto; background: white; border-radius: 20px; padding: 8px; box-shadow: 0 4px 20px rgba(74,144,217,0.15); scroll-snap-align: center; }
+        .screenshot-wrap img { width: 140px; height: auto; max-width: 100%; border-radius: 14px; display: block; }
 
         /* Stats */
         .stats-row { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; margin-top: 40px; }
@@ -431,8 +434,8 @@
 
         @media (max-width: 600px) {
             .nav-links { display: none; }
-            .screenshots-row { gap: 10px; }
-            .screenshot-wrap img { width: 110px; }
+            .screenshots-track { gap: 10px; }
+            .screenshot-wrap img { width: 132px; }
         }
     </style>
 </head>
@@ -631,12 +634,14 @@
         <h2 class="section-title">Beautiful, Simple Interface</h2>
         <p class="section-sub">Clean design focused on one thing: helping you drink more water, effortlessly.</p>
         <div class="screenshots-row">
+          <div class="screenshots-track">
             <div class="screenshot-wrap"><img fetchpriority="high" src="assets/screenshots/ana-ekran-en.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/ana-ekran.webp'" alt="Advanced mode home screen"></div>
             <div class="screenshot-wrap"><img loading="lazy" src="assets/screenshots/basit-ekran-en.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/basit-ekran.webp'" alt="Simple mode home screen"></div>
             <div class="screenshot-wrap"><img loading="lazy" src="assets/screenshots/istatikler-en.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/istatikler.webp'" alt="Statistics"></div>
             <div class="screenshot-wrap"><img loading="lazy" src="assets/screenshots/asistan-en.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/su-ekleme.webp'" alt="AI assistant"></div>
             <div class="screenshot-wrap"><img loading="lazy" src="assets/screenshots/gun-challenge-en.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/hedefler.webp'" alt="7-day challenge"></div>
             <div class="screenshot-wrap"><img loading="lazy" src="assets/screenshots/hatirlama-en.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/hatirlama.webp'" alt="Reminders"></div>
+          </div>
         </div>
     </div>
 </section>

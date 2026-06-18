@@ -339,9 +339,12 @@
 
         /* Screenshots */
         .screenshots-section { background: linear-gradient(135deg, #f0f7ff, #e8f4f8); }
-        .screenshots-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 40px; }
-        .screenshot-wrap { background: white; border-radius: 20px; padding: 8px; box-shadow: 0 4px 20px rgba(74,144,217,0.15); }
-        .screenshot-wrap img { width: 140px; border-radius: 14px; display: block; }
+        .screenshots-row { margin-top: 40px; overflow-x: auto; -webkit-overflow-scrolling: touch; scroll-snap-type: x proximity; padding-bottom: 14px; scrollbar-width: thin; scrollbar-color: rgba(74,144,217,0.4) transparent; }
+        .screenshots-row::-webkit-scrollbar { height: 8px; }
+        .screenshots-row::-webkit-scrollbar-thumb { background: rgba(74,144,217,0.35); border-radius: 4px; }
+        .screenshots-track { display: flex; gap: 16px; width: max-content; max-width: 100%; margin: 0 auto; padding: 6px 4px; box-sizing: border-box; }
+        .screenshot-wrap { flex: 0 0 auto; background: white; border-radius: 20px; padding: 8px; box-shadow: 0 4px 20px rgba(74,144,217,0.15); scroll-snap-align: center; }
+        .screenshot-wrap img { width: 140px; height: auto; max-width: 100%; border-radius: 14px; display: block; }
 
         /* Stats */
         .stats-row { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; margin-top: 40px; }
@@ -368,8 +371,8 @@
 
         @media (max-width: 600px) {
             .nav-links { display: none; }
-            .screenshots-row { gap: 10px; }
-            .screenshot-wrap img { width: 110px; }
+            .screenshots-track { gap: 10px; }
+            .screenshot-wrap img { width: 132px; }
         }
     </style>
 </head>
@@ -568,12 +571,14 @@
         <h2 class="section-title">Красивый и простой интерфейс</h2>
         <p class="section-sub">Чистый дизайн, ориентированный на одно: помочь вам пить больше воды без усилий.</p>
         <div class="screenshots-row">
+          <div class="screenshots-track">
             <div class="screenshot-wrap"><img fetchpriority="high" src="assets/screenshots/ana-ekran-ru.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/ana-ekran.webp'" alt="Расширенный режим, главный экран"></div>
             <div class="screenshot-wrap"><img loading="lazy" src="assets/screenshots/basit-ekran-ru.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/basit-ekran.webp'" alt="Простой режим, главный экран"></div>
             <div class="screenshot-wrap"><img loading="lazy" src="assets/screenshots/istatikler-ru.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/istatikler.webp'" alt="Статистика"></div>
             <div class="screenshot-wrap"><img loading="lazy" src="assets/screenshots/asistan-ru.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/su-ekleme.webp'" alt="AI ассистент"></div>
             <div class="screenshot-wrap"><img loading="lazy" src="assets/screenshots/gun-challenge-ru.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/hedefler.webp'" alt="Челлендж 7 дней"></div>
             <div class="screenshot-wrap"><img loading="lazy" src="assets/screenshots/hatirlama-ru.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/hatirlama.webp'" alt="Напоминания"></div>
+          </div>
         </div>
     </div>
 </section>
