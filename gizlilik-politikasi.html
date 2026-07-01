@@ -310,12 +310,21 @@
                 Veri toplama faaliyetimiz yalnızca Suu uygulamasının düzgün çalışması ve iyileştirilmesi için gerekli olan kapsamla sınırlıdır.
             </div>
 
+            <h3>2.6 Beslenme, Ses ve Görsel Verileri (Yapay Zeka Özellikleri)</h3>
+            <p>Suu'nun yapay zeka beslenme ve hidrasyon asistanını kullandığınızda aşağıdaki veriler işlenir:</p>
+            <ul>
+                <li><strong>Beslenme ve Sağlık Verileri (Dietary):</strong> İzin vermeniz halinde Apple HealthKit ve Google Health Connect üzerinden kalori, protein, karbonhidrat, yağ ve sodyum gibi beslenme (Dietary) verileri ile hidrasyon verileri <strong>okunur ve yazılır</strong>. Bu veriler yalnızca size kişisel takip ve analiz sunmak için işlenir; <strong>reklam veya pazarlama için kullanılmaz ve hiçbir koşulda üçüncü şahıslara satılmaz</strong>. İzni dilediğiniz an cihazınızın sistem ayarlarından geri çekebilirsiniz.</li>
+                <li><strong>Sesli Girişler:</strong> Sesli öğün/içecek ekleme özelliğini kullandığınızda konuşmanız <strong>cihazınızın işletim sistemi konuşma tanıma sistemi</strong> (iOS Apple Speech / Android SpeechRecognizer) tarafından metne çevrilir. <strong>Ses kaydınız Suu sunucularına hiçbir zaman gönderilmez</strong>; yapay zeka analizine yalnızca metne dönüştürülmüş hâli iletilir.</li>
+                <li><strong>Yemek Fotoğrafları:</strong> Fotoğraflı analiz (Premium) özelliğinde yüklediğiniz görsel, yalnızca analiz anında işlenmek üzere yapay zeka servisine (Google Gemini) iletilir ve <strong>Suu tarafından hiçbir zaman kalıcı olarak kaydedilmez</strong> (sunucu, veritabanı veya depolama dahil). Yalnızca analiz sonucu (besin, kalori, makro değerleri) hesabınıza kaydedilir; görselin kendisi saklanmaz, reklam için kullanılmaz ve satılmaz.</li>
+            </ul>
+
             <h2>3. Verilerin Kullanım Amaçları</h2>
             <p>Topladığımız verileri aşağıdaki amaçlarla kullanıyoruz:</p>
             <ul>
                 <li>Günlük su ihtiyacınızı hesaplamak ve kişiselleştirilmiş hedefler belirlemek</li>
                 <li>Su tüketim alışkanlıklarınızı takip etmek ve raporlamak</li>
                 <li>Hatırlatıcılar ve bildirimler göndermek</li>
+                <li>Sesli, yazılı ve fotoğraflı girdilerinizi yapay zeka ile analiz ederek besin, kalori, makro ve 1–100 beslenme puanı tahminleri üretmek</li>
                 <li>Uygulama deneyimini iyileştirmek ve kişiselleştirmek</li>
                 <li>Teknik destek sağlamak ve hataları gidermek</li>
                 <li>Yasal yükümlülüklerimizi yerine getirmek</li>
@@ -349,6 +358,11 @@
                 Suu hesabınızı üçüncü taraf bir yapay zekâ asistanına (ör. Anthropic'in Claude'u) bağladığınızda, isteklerinizi yanıtlayabilmesi için hidrasyon verileriniz (su tüketimi, hedefler, profil bilgileri, istatistikler, plan ve rozetler) ilgili hizmetle yalnızca okuma amaçlı paylaşılır. Bu hizmetin verilerinizi kullanımı kendi gizlilik politikasına tabidir. Bağlantıyı dilediğiniz zaman kaldırabilirsiniz.
             </p>
 
+            <h3>5.2 Yapay Zeka Analizi ve Veri İşleyiciler</h3>
+            <p>
+                Beslenme analizleri için girdileriniz — yazdığınız ya da sesli girişten cihazınızda metne çevrilen metin ile yemek görselleri — tahmini besin/kalori/makro çıktısı üretmek amacıyla <strong>Google Gemini API</strong> altyapısına işlenmek üzere iletilir. Google bu kapsamda bir <strong>veri işleyici (alt-işleyici)</strong> olarak hareket eder; veriler yalnızca analiz amacıyla işlenir ve Google'ın ücretli (paid) API koşulları uyarınca yapay zeka modellerinin eğitimi için kullanılmaz. <strong>Ses kaydınız hiçbir zaman gönderilmez</strong>; yalnızca metne dönüştürülmüş hâli işlenir. HealthKit / Health Connect üzerinden okunan sağlık ve beslenme verileri, Apple ve Google kuralları gereği açık izniniz olmadan hiçbir üçüncü tarafla paylaşılmaz.
+            </p>
+
             <h2>6. Çocukların Gizliliği</h2>
             <p>
                 Uygulamamız 13 yaş ve üzeri kullanıcılar için tasarlanmıştır. 13 yaşından küçük çocuklardan bilerek kişisel veri toplamayız. Ebeveyn veya vasi iseniz ve çocuğunuzun izniniz olmadan kişisel bilgi sağladığını düşünüyorsanız, lütfen bizimle iletişime geçin.
@@ -370,6 +384,9 @@
             <p>
                 Kişisel verileriniz, kullanım amaçları için gerekli olan süre boyunca veya yasal zorunluluklar gerektirdiği sürece saklanır. Hesabınızı sildiğinizde, verileriniz 30 gün içinde sistemlerimizden kalıcı olarak silinir. Yasal zorunluluklar nedeniyle saklanan veriler, ilgili yasal süre sonunda silinir.
             </p>
+            <p>
+                Sesli girişlerde <strong>ses kaydınız Suu sunucularına hiç gönderilmez</strong>; konuşma cihazınızda metne çevrilir ve yalnızca bu metin işlenir. <strong>Yemek fotoğrafları</strong> yalnızca analiz anında işlenir ve hiçbir zaman kalıcı olarak kaydedilmez; yalnızca analiz sonucu (kalori/makro) hesabınıza yazılır. HealthKit / Health Connect'e yazılan beslenme ve hidrasyon verileri ise cihazınızda ve hesabınızda, siz silene kadar saklanır.
+            </p>
 
             <h2>9. Çerezler ve Takip Teknolojileri</h2>
             <p>
@@ -388,6 +405,7 @@
                 <li><strong>Google Sign-In:</strong> Kolay giriş yapma</li>
                 <li><strong>Apple Sign-In:</strong> iOS cihazlarda güvenli giriş</li>
                 <li><strong>HealthKit/Google Fit:</strong> Sağlık verisi senkronizasyonu (isteğe bağlı)</li>
+                <li><strong>Google Gemini API:</strong> Yazılı (sesli girişten metne çevrilen dahil) ve fotoğraflı beslenme analizlerinin yapay zeka ile işlenmesi</li>
             </ul>
             <p>
                 Bu hizmetlerin kendi gizlilik politikaları bulunmaktadır ve verilerinizi kendi politikalarına göre işleyebilirler.
@@ -532,12 +550,21 @@
                 Our data collection is strictly limited to what is necessary for Suu to function and improve.
             </div>
 
+            <h3>2.6 Nutrition, Voice and Image Data (AI Features)</h3>
+            <p>When you use Suu's AI nutrition and hydration assistant, the following data is processed:</p>
+            <ul>
+                <li><strong>Nutrition &amp; Health Data (Dietary):</strong> With your permission, Dietary data such as calories, protein, carbohydrate, fat and sodium, along with hydration data, are <strong>read and written</strong> via Apple HealthKit and Google Health Connect. This data is processed solely to provide your personal tracking and analysis; it is <strong>never used for advertising or marketing and never sold to third parties</strong>. You can revoke permission anytime in your device's system settings.</li>
+                <li><strong>Voice Input:</strong> When you use voice meal/drink logging, your speech is converted to text by <strong>your device's operating-system speech recognition</strong> (iOS Apple Speech / Android SpeechRecognizer). <strong>Your audio is never sent to Suu's servers</strong>; only the resulting text is passed to AI analysis.</li>
+                <li><strong>Meal Photos:</strong> In the photo analysis (Premium) feature, the image you upload is sent to the AI service (Google Gemini) only to be processed at the moment of analysis and is <strong>never permanently stored by Suu</strong> (including any server, database or storage). Only the analysis result (food, calorie, macro values) is saved to your account; the image itself is not retained, never used for advertising, and never sold.</li>
+            </ul>
+
             <h2>3. Purposes of Processing</h2>
             <p>We use your data for the following purposes:</p>
             <ul>
                 <li>Calculate your daily water needs and set personalized goals</li>
                 <li>Track and report your hydration habits</li>
                 <li>Send reminders and notifications</li>
+                <li>Analyze your voice, text and photo inputs with AI to produce food, calorie, macro and 1–100 nutrition-score estimates</li>
                 <li>Improve and personalize the in-app experience</li>
                 <li>Provide technical support and resolve bugs</li>
                 <li>Fulfill our legal obligations</li>
@@ -571,6 +598,11 @@
                 When you connect your Suu account to a third-party AI assistant (e.g., Claude by Anthropic), your hydration data (water intake, goals, profile details, statistics, plan, and badges) is shared with that service on a read-only basis to fulfill your requests. That service's use of your data is governed by its own privacy policy. You can disconnect at any time.
             </p>
 
+            <h3>5.2 AI Analysis and Data Processors</h3>
+            <p>
+                For nutrition analysis, your inputs — text you type or text converted from voice on your device, together with meal images — are sent for processing to <strong>Google Gemini API</strong> to generate estimated food/calorie/macro outputs. Google acts as a <strong>data processor (sub-processor)</strong>; data is processed solely for analysis and, under Google's paid API terms, is not used to train AI models. <strong>Your audio is never sent</strong>; only the transcribed text is processed. Health and nutrition data read via HealthKit / Health Connect is never shared with any third party without your explicit consent, in line with Apple and Google rules.
+            </p>
+
             <h2>6. Children's Privacy</h2>
             <p>
                 Our application is designed for users aged 13 and above. We do not knowingly collect personal data from children under 13. If you are a parent or guardian and believe your child has provided data without your consent, please contact us.
@@ -592,6 +624,9 @@
             <p>
                 We store your personal data only for as long as necessary for the purposes outlined or as required by law. When you delete your account, your data is permanently removed from our systems within 30 days. Data retained for legal obligations is deleted after the mandatory periods expire.
             </p>
+            <p>
+                For voice input, <strong>your audio is never sent to Suu's servers</strong>; speech is converted to text on your device and only that text is processed. <strong>Meal photos</strong> are processed only at the moment of analysis and are never permanently stored; only the analysis result (calories/macros) is saved to your account. Nutrition and hydration data written to HealthKit / Health Connect remains on your device and account until you delete it.
+            </p>
 
             <h2>9. Cookies and Tracking Technologies</h2>
             <p>
@@ -610,6 +645,7 @@
                 <li><strong>Google Sign-In:</strong> Seamless account access</li>
                 <li><strong>Apple Sign-In:</strong> Secure login on iOS devices</li>
                 <li><strong>HealthKit/Google Fit:</strong> Optional health data sync</li>
+                <li><strong>Google Gemini API:</strong> AI processing of text (including voice converted to text) and photo nutrition analyses</li>
             </ul>
             <p>
                 These services maintain their own privacy policies and may process your data in line with those policies.
@@ -754,12 +790,21 @@
                 نشاط جمع البيانات محصور فقط بما هو ضروري لعمل تطبيق Suu وتحسينه.
             </div>
 
+            <h3>2.6 بيانات التغذية والصوت والصور (ميزات الذكاء الاصطناعي)</h3>
+            <p>عند استخدامك لمساعد التغذية والترطيب بالذكاء الاصطناعي في Suu، تتم معالجة البيانات التالية:</p>
+            <ul>
+                <li><strong>بيانات التغذية والصحة (Dietary):</strong> بعد إذنك، تتم <strong>قراءة وكتابة</strong> بيانات التغذية (Dietary) مثل السعرات والبروتين والكربوهيدرات والدهون والصوديوم، إضافةً إلى بيانات الترطيب، عبر Apple HealthKit وGoogle Health Connect. تُعالَج هذه البيانات فقط لتقديم متابعة وتحليل شخصي لك؛ ولا <strong>تُستخدم للإعلان أو التسويق ولا تُباع لأطراف ثالثة بأي حال</strong>. يمكنك سحب الإذن في أي وقت من إعدادات نظام جهازك.</li>
+                <li><strong>الإدخال الصوتي:</strong> عند استخدام تسجيل الوجبات/المشروبات بالصوت، يُحوَّل كلامك إلى نص بواسطة <strong>نظام التعرّف على الكلام في نظام تشغيل جهازك</strong> (iOS Apple Speech / Android SpeechRecognizer). <strong>لا يُرسَل تسجيلك الصوتي إلى خوادم Suu إطلاقًا</strong>؛ ولا يُمرَّر إلى تحليل الذكاء الاصطناعي سوى النص الناتج.</li>
+                <li><strong>صور الوجبات:</strong> في ميزة التحليل المصوّر (Premium)، تُرسَل الصورة التي ترفعها إلى خدمة الذكاء الاصطناعي (Google Gemini) لمعالجتها لحظة التحليل فقط، و<strong>لا يحفظها Suu بشكل دائم إطلاقًا</strong> (بما في ذلك أي خادم أو قاعدة بيانات أو تخزين). تُحفَظ نتيجة التحليل فقط (قيم الطعام والسعرات والماكروز) في حسابك؛ أما الصورة نفسها فلا يُحتفَظ بها، ولا تُستخدم للإعلان، ولا تُباع.</li>
+            </ul>
+
             <h2>3. أغراض معالجة البيانات</h2>
             <p>نستخدم بياناتك للأغراض التالية:</p>
             <ul>
                 <li>حساب احتياجك اليومي من الماء وتحديد أهداف مخصصة</li>
                 <li>متابعة عادات شرب الماء لديك وتقديم تقارير</li>
                 <li>إرسال التذكيرات والإشعارات</li>
+                <li>تحليل مدخلاتك الصوتية والنصية والمصوّرة بالذكاء الاصطناعي لإنتاج تقديرات للطعام والسعرات والماكروز ونقاط تغذية من ١ إلى ١٠٠</li>
                 <li>تحسين تجربة التطبيق وتخصيصها</li>
                 <li>تقديم الدعم الفني وحل الأعطال</li>
                 <li>الوفاء بالتزاماتنا القانونية</li>
@@ -793,6 +838,11 @@
                 عند ربط حساب Suu الخاص بك بمساعد ذكاء اصطناعي تابع لجهة خارجية (مثل Claude من Anthropic)، تتم مشاركة بيانات الترطيب الخاصة بك (كمية المياه المستهلكة، والأهداف، وتفاصيل الملف الشخصي، والإحصاءات، والخطة، والشارات) مع تلك الخدمة بصلاحية القراءة فقط لتلبية طلباتك. ويخضع استخدام تلك الخدمة لبياناتك لسياسة الخصوصية الخاصة بها. يمكنك إلغاء الاتصال في أي وقت.
             </p>
 
+            <h3>5.2 تحليل الذكاء الاصطناعي ومعالجو البيانات</h3>
+            <p>
+                لإجراء تحليل التغذية، تُرسَل مدخلاتك — النص الذي تكتبه أو النص المحوّل من الصوت على جهازك، إضافةً إلى صور الوجبات — للمعالجة إلى <strong>Google Gemini API</strong> بهدف إنتاج تقديرات للطعام/السعرات/الماكروز. وتعمل Google بصفتها <strong>معالِج بيانات (معالِج فرعي)</strong>؛ إذ تُعالَج البيانات لغرض التحليل فقط، ووفقًا لشروط واجهة Google المدفوعة لا تُستخدم لتدريب نماذج الذكاء الاصطناعي. <strong>ولا يُرسَل تسجيلك الصوتي إطلاقًا</strong>؛ بل يُعالَج النص المحوّل فقط. ولا تتم مشاركة بيانات الصحة والتغذية المقروءة عبر HealthKit / Health Connect مع أي طرف ثالث دون إذنك الصريح، وفقًا لقواعد Apple وGoogle.
+            </p>
+
             <h2>6. خصوصية الأطفال</h2>
             <p>
                 تطبيقنا مخصص للمستخدمين بعمر 13 عامًا فأكثر. لا نجمع عن قصد بيانات شخصية من الأطفال دون 13 عامًا. إذا كنت ولي أمر أو وصيًا وتعتقد أن طفلك قد زودنا ببيانات دون إذنك، فيُرجى التواصل معنا.
@@ -814,6 +864,9 @@
             <p>
                 نحتفظ ببياناتك الشخصية فقط للمدة اللازمة للأغراض المذكورة أو للمدة التي تفرضها القوانين. عند حذف حسابك يتم إزالة بياناتك نهائيًا من أنظمتنا خلال 30 يومًا. أما البيانات المحفوظة التزامًا بمتطلبات قانونية فسيتم حذفها بعد انتهاء المدد الإلزامية.
             </p>
+            <p>
+                في الإدخال الصوتي <strong>لا يُرسَل تسجيلك الصوتي إلى خوادم Suu إطلاقًا</strong>؛ إذ يُحوَّل الكلام إلى نص على جهازك ويُعالَج هذا النص فقط. أما <strong>صور الوجبات</strong> فتُعالَج لحظة التحليل فقط ولا تُحفَظ بشكل دائم إطلاقًا؛ ولا يُحفَظ في حسابك سوى نتيجة التحليل (السعرات/الماكروز). وتبقى بيانات التغذية والترطيب المكتوبة في HealthKit / Health Connect على جهازك وحسابك حتى تحذفها بنفسك.
+            </p>
 
             <h2>9. ملفات تعريف الارتباط وتقنيات التتبع</h2>
             <p>
@@ -832,6 +885,7 @@
                 <li><strong>تسجيل الدخول عبر Google:</strong> لتسهيل الوصول إلى الحساب</li>
                 <li><strong>تسجيل الدخول عبر Apple:</strong> لتسجيل دخول آمن على أجهزة iOS</li>
                 <li><strong>HealthKit / Google Fit:</strong> مزامنة اختيارية لبيانات الصحة</li>
+                <li><strong>Google Gemini API:</strong> معالجة تحليلات التغذية النصية (بما فيها المحوّلة من الصوت) والمصوّرة بالذكاء الاصطناعي</li>
             </ul>
             <p>
                 تمتلك هذه الخدمات سياساتها الخاصة بالخصوصية وقد تعالج بياناتك وفقًا لتلك السياسات.
@@ -976,12 +1030,21 @@
                 Сбор данных строго ограничен тем, что необходимо для работы и улучшения Suu.
             </div>
 
+            <h3>2.6 Данные о питании, голосе и изображениях (функции ИИ)</h3>
+            <p>При использовании ИИ-помощника по питанию и гидратации Suu обрабатываются следующие данные:</p>
+            <ul>
+                <li><strong>Данные о питании и здоровье (Dietary):</strong> с вашего разрешения данные Dietary (калории, белки, углеводы, жиры, натрий) и данные о гидратации <strong>считываются и записываются</strong> через Apple HealthKit и Google Health Connect. Эти данные обрабатываются исключительно для вашего персонального учёта и анализа; они <strong>никогда не используются для рекламы или маркетинга и не продаются третьим лицам</strong>. Вы можете отозвать разрешение в любой момент в системных настройках устройства.</li>
+                <li><strong>Голосовой ввод:</strong> при голосовом добавлении приёма пищи/напитков ваша речь преобразуется в текст <strong>системой распознавания речи операционной системы вашего устройства</strong> (iOS Apple Speech / Android SpeechRecognizer). <strong>Ваша аудиозапись никогда не отправляется на серверы Suu</strong>; для анализа ИИ передаётся только полученный текст.</li>
+                <li><strong>Фотографии еды:</strong> в функции фотоанализа (Premium) загружаемое изображение отправляется ИИ-сервису (Google Gemini) только для обработки в момент анализа и <strong>никогда не сохраняется Suu постоянно</strong> (включая любой сервер, базу данных или хранилище). В вашем аккаунте сохраняется только результат анализа (продукты, калории, макросы); само изображение не хранится, не используется для рекламы и не продаётся.</li>
+            </ul>
+
             <h2>3. Цели обработки</h2>
             <p>Мы используем ваши данные в следующих целях:</p>
             <ul>
                 <li>Рассчитать суточную норму воды и задать персональные цели</li>
                 <li>Отслеживать и отображать ваши привычки гидратации</li>
                 <li>Отправлять напоминания и уведомления</li>
+                <li>Анализировать ваши голосовые, текстовые и фотоданные с помощью ИИ для оценки продуктов, калорий, макросов и формирования оценки питания 1–100</li>
                 <li>Улучшать и персонализировать опыт в приложении</li>
                 <li>Оказывать техническую поддержку и устранять ошибки</li>
                 <li>Выполнять наши юридические обязательства</li>
@@ -1015,6 +1078,11 @@
                 Когда вы подключаете свою учётную запись Suu к стороннему ИИ-ассистенту (например, Claude от Anthropic), ваши данные о гидратации (потребление воды, цели, сведения профиля, статистика, план и значки) передаются этому сервису только для чтения, чтобы выполнять ваши запросы. Использование ваших данных этим сервисом регулируется его собственной политикой конфиденциальности. Вы можете отключить подключение в любое время.
             </p>
 
+            <h3>5.2 Анализ ИИ и обработчики данных</h3>
+            <p>
+                Для анализа питания ваши данные — текст, который вы вводите, или текст, преобразованный из речи на вашем устройстве, вместе с изображениями еды — передаются для обработки в <strong>Google Gemini API</strong> с целью получения оценочных данных о продуктах/калориях/макросах. Google выступает <strong>обработчиком данных (субобработчиком)</strong>; данные обрабатываются только для анализа и, согласно условиям платного API Google, не используются для обучения моделей ИИ. <strong>Ваша аудиозапись никогда не передаётся</strong>; обрабатывается только преобразованный текст. Данные о здоровье и питании, считываемые через HealthKit / Health Connect, никогда не передаются третьим лицам без вашего явного согласия в соответствии с правилами Apple и Google.
+            </p>
+
             <h2>6. Конфиденциальность детей</h2>
             <p>
                 Наше приложение предназначено для пользователей от 13 лет и старше. Мы сознательно не собираем персональные данные детей младше 13 лет. Если вы родитель или опекун и считаете, что ваш ребёнок предоставил данные без вашего согласия, свяжитесь с нами.
@@ -1036,6 +1104,9 @@
             <p>
                 Мы храним ваши персональные данные только столько, сколько необходимо для указанных целей или требуется законом. При удалении аккаунта ваши данные безвозвратно удаляются из наших систем в течение 30 дней. Данные, хранимые в силу юридических обязательств, удаляются после истечения обязательных сроков.
             </p>
+            <p>
+                При голосовом вводе <strong>ваша аудиозапись никогда не отправляется на серверы Suu</strong>; речь преобразуется в текст на устройстве, и обрабатывается только этот текст. <strong>Фотографии еды</strong> обрабатываются только в момент анализа и никогда не сохраняются постоянно; в аккаунте сохраняется только результат анализа (калории/макросы). Данные о питании и гидратации, записанные в HealthKit / Health Connect, остаются на вашем устройстве и в аккаунте, пока вы их не удалите.
+            </p>
 
             <h2>9. Файлы cookie и технологии отслеживания</h2>
             <p>
@@ -1054,6 +1125,7 @@
                 <li><strong>Вход через Google:</strong> удобный доступ к аккаунту</li>
                 <li><strong>Вход через Apple:</strong> безопасный вход на устройствах iOS</li>
                 <li><strong>HealthKit/Google Fit:</strong> по желанию, синхронизация данных о здоровье</li>
+                <li><strong>Google Gemini API:</strong> обработка текстового (включая преобразованный из речи) и фотоанализа питания с помощью ИИ</li>
             </ul>
             <p>
                 Эти сервисы имеют собственные политики конфиденциальности и могут обрабатывать ваши данные в соответствии с ними.
