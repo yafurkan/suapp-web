@@ -22,3 +22,6 @@ node_modules/
 # Temporary files
 *.tmp
 *.temp
+
+# Internal ASO / store-listing doc (not published to the live site)
+aso-store-listing.md
