@@ -1,99 +1,81 @@
-# Suu — Su Takip Uygulaması Web Sitesi
+# Suu — Kalori ve Su Takibi (Web Sitesi)
 
 Suu'nun pazarlama ve SEO web sitesi. [suuapp.com](https://suuapp.com) adresinde canlı.
 
+- **Kanonik ad:** Suu - Kalori ve Su Takibi
+- **Tagline:** Su, Kalori ve Sağlık Rehberi
+
 ## Uygulama Hakkında
 
-Suu, Türkiye kökenli sosyal su takip uygulaması. Android ve iOS için ücretsiz.
+Suu artık sadece bir su takip uygulaması değil — **yapay zeka tabanlı beslenme, kalori ve hidrasyon asistanı**. Furkan Mert Fındıklı tarafından tek başına (indie) Flutter ile geliştirilir; Android ve iOS'ta ücretsiz.
 
-- **Google Play:** 4.9★ · 2.800+ değerlendirme
-- **App Store:** 5.0★
-- **Dil desteği:** Türkçe, Arapça, Rusça, İngilizce
-- **Hedef pazar:** Türkiye ve MENA
+- **Google Play:** 4.9★ · 2.800+ değerlendirme · **App Store:** 5.0★
+- **Dil desteği:** Türkçe, İngilizce, Rusça, Arapça (4 dil, tam yerelleştirme + RTL)
+- **Hedef pazar:** Türkiye, MENA, BDT
 
-## Mevcut Özellikler
+## Özellikler
 
-### Temel
-- Kişiselleştirilmiş günlük su hedefi (boy, kilo, cinsiyet, aktivite bazlı)
-- 100+ içecek kategorisi — kahve, çay, ayran, meyve suyu, spor içeceği dahil
-- Her içeceğin dehidratasyon faktörü otomatik hesaplanıyor
-- Ücretsiz deneme süresi mevcut
+### Yapay Zeka Beslenme (yeni yön)
+- **Sesli kayıt:** konuşarak öğün/içecek ekleme; AI katı-sıvı ayrımını otomatik yapar. Ses, cihazın işletim sistemi (Apple Speech / Android SpeechRecognizer) ile metne çevrilir — ses kaydı Suu backend'ine gönderilmez.
+- **Fotoğraflı kalori analizi (Premium):** Google Gemini API ile yemek tanıma, porsiyon tahmini, kalori + makro çıkarımı. Görsel kalıcı saklanmaz.
+- **Kalori & makro takibi:** kalori, protein, karbonhidrat, yağ, sodyum → Apple HealthKit / Google Health Connect (Dietary oku + yaz).
+- **1–100 beslenme puanı**, günlük denge görünümü.
+- **Limit:** günde 3 ücretsiz AI analizi (sesli/yazılı); sınırsız analiz + fotoğraf = Premium.
 
-### Kahve Zinciri Entegrasyonu (Rakiplerde Yok)
-Starbucks, Nevada Coffee, Greenwich Coffee menüleri Suu'ya özel entegre edilmiş. Kullanıcı içtiği ürünü seçince kafein içeriğine göre ekstra su ihtiyacı anında hesaplanıyor.
+### Hidrasyon
+- Kişiselleştirilmiş günlük su hedefi (boy, kilo, cinsiyet, aktivite, hava durumu bazlı)
+- **91 içecek** + gerçek dehidrasyon faktörü; Starbucks ve kahve zinciri menüleri entegre
+- **Suu Endeksi** (0–100 hidrasyon skoru), **Ana Beyin** (adaptif hedef)
+- Akıllı bildirimler: yemek sonrası sindirim suyu, gece dehidrasyonuna karşı sabah "ilk yudum"
 
-### Sosyal
-- Arkadaşlarla haftalık lig sistemi (4 kişiye kadar)
-- iOS + Android çapraz platform lig
-- Arkadaş takibi (günlük tüketim, streak, hedef ilerleme)
-- Günlük su içme davetleri
+### Platform
+- **Apple Watch** (bağımsız watchOS uygulaması), **Siri** komutları, **Dynamic Island**, kilit/ana ekran widget'ları
+- Apple HealthKit + Google Health Connect (çift yönlü senkron)
 
-### iOS Özel
-- Dynamic Island desteği (iPhone 14 Pro+)
-- Kilit ekranı widget (iOS 16+)
-- Ana ekran widget
-- Apple Health (HealthKit) entegrasyonu
-
-### Android
-- Google Health Connect entegrasyonu
-- Ana ekran widget
-- Özelleştirilebilir bildirimler
+### Sosyal & Oyunlaştırma
+- Arkadaş ligleri (haftalık, 4 kişiye kadar, iOS + Android çapraz platform)
+- Sanal evcil hayvan, rozetler, streak'ler
 
 ### İstatistik & Raporlama
-- Günlük / haftalık / aylık / yıllık grafikler
-- Hidrasyon skoru (0–100)
-- PDF rapor export (WaterMinder ve Hydro Coach'ta bu özellik yok)
-- Streak takibi
+- 7 / 30 / 365 günlük grafikler
+- PDF & CSV rapor dışa aktarımı (Premium)
+- Hidrasyon skoru, Su Yolculuğu hikayesi
 
-### Monetizasyon
-- Aylık plan
-- Yıllık plan
-- Aile planı
-- Ücretsiz deneme mevcut
+## Fiyatlandırma
 
-## Bilinen Eksikler / Gelecek Roadmap
-
-| Eksik | Etki | Durum |
-|-------|------|-------|
-| Apple Watch / Wear OS desteği | Yüksek — rakiplerin çoğu sunuyor, kullanıcı bağlılığını etkiliyor | Roadmap |
-| Özelleştirilebilir içecek ekleme | Orta — kullanıcı kendi içeceğini tanımlayamıyor | Roadmap |
-| Sesli asistan (Siri / Google Assistant) | Orta | Roadmap |
-| Tek seferlik satın alma seçeneği | Orta — Türkiye'de aboneliğe dirençli kullanıcı segmenti var | Roadmap |
-| Kamera tabanlı içecek tanıma | Yüksek — "gerçek hidrasyon" felsefesiyle uyumlu güçlü differentiator | Roadmap |
-
-## Teknik Borçlar (Uygulama Tarafı)
-
-- Duplicate auth implementasyonu
-- Aşırı büyük dosyalar
-- Firebase App Check eksikliği
-- Firestore yazma verimsizlikleri — launch anında tüm kullanıcıları etkiliyor
+- **Ücretsiz:** temel su-hidrasyon takibi + günde 3 AI analizi + Apple Health/Health Connect senkronu — her zaman ücretsiz
+- **Premium:** sınırsız AI analizi, fotoğraflı yemek tanıma, dinamik sindirim suyu bildirimleri, gelişmiş makro/mikro istatistikleri, reklamsız, PDF/CSV rapor
+- **Fiyat:** ₺600/yıl (%50 lansman indirimi, normal ₺1.200) · 3 gün ücretsiz deneme · aylık plan da mevcut · yerel para birimi otomatik
 
 ## Web Sitesi Yapısı
 
+Çok dilli statik site. Ana sayfa dışında EN/AR/RU sayfaları `-en`/`-ar`/`-ru` suffix'i kullanır (ana sayfa istisnası: `hosgeldiniz-*`).
+
 ```
 /
-├── hosgeldiniz.html        # Türkçe ana sayfa
-├── hosgeldiniz-en.html     # İngilizce ana sayfa
-├── hosgeldiniz-ar.html     # Arapça ana sayfa
-├── blog/                   # Türkçe blog (13 yazı)
-│   ├── en/                 # İngilizce blog (12 yazı)
-│   └── ar/                 # Arapça blog (12 yazı)
-├── ozellikler.html         # Özellikler sayfası
-├── faq.html                # SSS
-├── su-hesaplayici.html     # Su hesaplama aracı
-├── starbucks-dehidrasyon.html  # Starbucks dehidrasyon hesabı (TR)
-├── starbucks-dehydration.html  # Starbucks dehydration calculator (EN)
-├── sitemap.xml
-├── robots.txt
-├── llms.txt                # AI asistan referans dosyası
-└── llms-full.txt           # Detaylı AI referans dosyası
+├── index.html                    # Türkçe ana sayfa
+├── hosgeldiniz-en|ar|ru.html     # EN / AR / RU ana sayfa
+├── premium{,-en,-ar,-ru}.html    # Fiyatlandırma (4 dil)
+├── ozellikler{,-en,-ar,-ru}.html # Özellikler (4 dil)
+├── faq{,-en,-ar,-ru}.html        # SSS (4 dil)
+├── kimler-icin / who-is-suu-for* # Kullanım senaryosu hub'ı (4 dil)
+├── gizlilik-politikasi.html      # Gizlilik (tek URL, 4 dil sekmeli)
+├── kullanim-sartlari.html        # Kullanım Şartları (tek URL, 4 dil sekmeli)
+├── su-hesaplayici / water-calculator*  # Su hesaplama aracı (4 dil)
+├── blog/                         # Türkçe blog (33 yazı)
+│   ├── en/                       # İngilizce blog (30 yazı)
+│   ├── ar/                       # Arapça blog (26 yazı)
+│   └── ru/                       # Rusça blog (30 yazı)
+├── sitemap.xml · robots.txt
+├── llms.txt · llms-full.txt      # AI asistan referans dosyaları (4 dil)
+└── aso-store-listing.md          # Dahili ASO/mağaza metinleri (.gitignore — yayınlanmaz)
 ```
 
 ## Teknoloji
 
 - HTML5, CSS3, Vanilla JavaScript
 - GitHub Pages (otomatik deploy)
-- Microsoft Clarity (kullanıcı analitik)
+- Microsoft Clarity (kullanıcı analitiği)
 
 ## Deploy
 
