@@ -1969,6 +1969,7 @@ body.ticker-active .hero {
 
 .footer-links {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
 }
