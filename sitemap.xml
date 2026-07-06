@@ -408,6 +408,12 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+    <url>
+        <loc>https://suuapp.com/delete-account.html</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
     <!-- New Turkish Blog Posts -->
     <url>
         <loc>https://suuapp.com/blog/su-ve-cilt-sagligi.html</loc>
