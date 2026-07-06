@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-itunes-app" content="app-id=6757619920">
+    <title>Suu - Hesap Silme / Delete Account</title>
+    <meta name="description" content="Suu hesabınızı nasıl silersiniz: uygulama içi adımlar, e-posta ile talep, silinen veriler, yasal saklama süreleri ve destek iletişimi. How to delete your Suu account.">
+    <link rel="canonical" href="https://suuapp.com/delete-account.html">
+    <meta name="robots" content="index, follow">
+    <link rel="alternate" hreflang="tr" href="https://suuapp.com/delete-account.html">
+    <link rel="alternate" hreflang="x-default" href="https://suuapp.com/delete-account.html">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: white;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .last-updated {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .language-switcher {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            padding: 24px;
+            background: #f8fafc;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .language-btn {
+            border: 1px solid #cbd5e1;
+            background: white;
+            color: #1f2933;
+            padding: 10px 18px;
+            border-radius: 999px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-weight: 600;
+        }
+
+        .language-btn:hover {
+            border-color: #e74c3c;
+            color: #c0392b;
+        }
+
+        .language-btn.active {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+            border-color: transparent;
+            box-shadow: 0 10px 25px rgba(231, 76, 60, 0.3);
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        h2 {
+            color: #e74c3c;
+            margin: 30px 0 15px;
+            font-size: 24px;
+            border-bottom: 2px solid #fadbd8;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: #c0392b;
+            margin: 20px 0 10px;
+            font-size: 18px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .steps li {
+            margin-bottom: 12px;
+        }
+
+        .highlight {
+            background: #fadbd8;
+            padding: 20px;
+            border-left: 4px solid #e74c3c;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .contact-box {
+            background: #F5F5F5;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+
+        .contact-box h3 {
+            margin-top: 0;
+        }
+
+        a {
+            color: #e74c3c;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            background: #F5F5F5;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .delete-section {
+            display: none;
+        }
+
+        .delete-section.active {
+            display: block;
+        }
+
+        .delete-section[dir="rtl"] {
+            direction: rtl;
+        }
+
+        .delete-section[dir="rtl"] ul,
+        .delete-section[dir="rtl"] ol {
+            padding-left: 0;
+            padding-right: 30px;
+        }
+
+        .delete-section[dir="rtl"] .highlight {
+            border-left: none;
+            border-right: 4px solid #e74c3c;
+        }
+
+        .footer-text {
+            display: none;
+            margin-bottom: 6px;
+        }
+
+        .footer-text.active {
+            display: block;
+        }
+
+        @media (max-width: 600px) {
+            .content {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">💧</div>
+            <h1>Suu — Hesap Silme</h1>
+            <p class="last-updated">Son Güncelleme: 6 Temmuz 2026</p>
+        </div>
+
+        <div class="language-switcher" role="group" aria-label="Dil Seçici / Language">
+            <button type="button" class="language-btn active" data-lang="tr" aria-pressed="true">Türkçe</button>
+            <button type="button" class="language-btn" data-lang="en" aria-pressed="false">English</button>
+            <button type="button" class="language-btn" data-lang="ar" aria-pressed="false">العربية</button>
+            <button type="button" class="language-btn" data-lang="ru" aria-pressed="false">Русский</button>
+        </div>
+
+        <!-- Turkish -->
+        <div class="content delete-section active" data-lang="tr">
+            <div class="highlight">
+                <strong>Özet:</strong> Suu hesabınızı ve tüm kişisel verilerinizi dilediğiniz zaman kalıcı olarak silebilirsiniz. Bu işlem <strong>geri alınamaz</strong>. Aşağıda hem uygulama içinden hem de e-posta ile nasıl silebileceğiniz açıklanmıştır.
+            </div>
+
+            <h2>1. Uygulama İçinden Silme (Önerilen)</h2>
+            <ol class="steps">
+                <li>Suu uygulamasını açın ve hesabınıza giriş yapın.</li>
+                <li><strong>Profil</strong> sekmesine gidin.</li>
+                <li>Sağ üstteki <strong>Ayarlar</strong> (dişli ⚙️) simgesine dokunun.</li>
+                <li><strong>Hesap</strong> bölümüne inin.</li>
+                <li><strong>Hesabı Sil</strong> seçeneğine dokunun.</li>
+                <li>Uyarıyı okuyup işlemi <strong>onaylayın</strong>. Oturumunuz anında kapatılır ve silme işlemi başlar.</li>
+            </ol>
+            <p>Onayladıktan sonra hesabınız devre dışı bırakılır ve verileriniz silinme sürecine alınır.</p>
+
+            <h2>2. E-posta ile Talep (Alternatif)</h2>
+            <p>Uygulamaya erişemiyorsanız (örneğin cihazınızı değiştirdiyseniz), hesabınıza kayıtlı e-posta adresinden <a href="mailto:support@suuapp.com?subject=Hesap%20Silme%20Talebi">support@suuapp.com</a> adresine <strong>“Hesap Silme Talebi”</strong> konu başlığıyla bir e-posta gönderin. Kimliğinizi doğruladıktan sonra talebinizi <strong>en fazla 7 iş günü</strong> içinde işleme alırız.</p>
+
+            <h2>3. Silinen Veriler</h2>
+            <p>Hesabınızı sildiğinizde aşağıdaki veriler sistemlerimizden kaldırılır:</p>
+            <ul>
+                <li>Profil bilgileri (ad, e-posta, profil fotoğrafı)</li>
+                <li>Hidrasyon verileri: su tüketim geçmişi, hedefler, seriler (streak) ve rozetler</li>
+                <li>Beslenme verileri: kalori/makro kayıtları ve fotoğraf analizi sonuçları</li>
+                <li>Sosyal veriler: arkadaşlar ve lig katılımları</li>
+                <li>Uygulamanın Apple Health / Health Connect’e yazdığı su kayıtları (silme sırasında otomatik temizlenir)</li>
+                <li>Uygulama içi ayarlarınız ve tercihleriniz</li>
+            </ul>
+
+            <h2>4. Yasal Nedenlerle Saklanabilecek Veriler</h2>
+            <p>Hesabınızı sildiğinizde kişisel verileriniz <strong>30 gün içinde</strong> sistemlerimizden kalıcı olarak silinir. Yalnızca yasal yükümlülüklerin (örneğin vergi, muhasebe mevzuatı veya olası uyuşmazlıkların çözümü) gerektirdiği durumlarda bazı kayıtlar <strong>ilgili yasal süre boyunca</strong> saklanabilir ve bu sürenin sonunda silinir. Premium satın alımları App Store / Google Play üzerinden gerçekleştiği için ödeme bilgileriniz Suu tarafından tutulmaz.</p>
+
+            <div class="contact-box">
+                <h3>Destek & İletişim</h3>
+                <p>Hesap silme ile ilgili sorularınız için bize ulaşın:</p>
+                <ul>
+                    <li><strong>E-posta:</strong> <a href="mailto:support@suuapp.com">support@suuapp.com</a></li>
+                    <li><strong>Gizlilik:</strong> <a href="mailto:privacy@suuapp.com">privacy@suuapp.com</a></li>
+                    <li><strong>Web:</strong> <a href="https://suuapp.com">suuapp.com</a></li>
+                </ul>
+                <p>Yanıt süresi: en fazla 7 iş günü.</p>
+            </div>
+        </div>
+
+        <!-- English -->
+        <div class="content delete-section" data-lang="en">
+            <div class="highlight">
+                <strong>Summary:</strong> You can permanently delete your Suu account and all your personal data at any time. This action is <strong>irreversible</strong>. Below you'll find how to delete it both from within the app and by email.
+            </div>
+
+            <h2>1. Delete from Within the App (Recommended)</h2>
+            <ol class="steps">
+                <li>Open the Suu app and sign in to your account.</li>
+                <li>Go to the <strong>Profile</strong> tab.</li>
+                <li>Tap the <strong>Settings</strong> (gear ⚙️) icon in the top right.</li>
+                <li>Scroll to the <strong>Account</strong> section.</li>
+                <li>Tap <strong>Delete Account</strong>.</li>
+                <li>Read the warning and <strong>confirm</strong>. You'll be signed out immediately and deletion begins.</li>
+            </ol>
+            <p>Once confirmed, your account is deactivated and your data enters the deletion process.</p>
+
+            <h2>2. Request by Email (Alternative)</h2>
+            <p>If you can't access the app (for example, you've changed your device), send an email from your registered email address to <a href="mailto:support@suuapp.com?subject=Account%20Deletion%20Request">support@suuapp.com</a> with the subject <strong>“Account Deletion Request”</strong>. After verifying your identity, we will process your request within <strong>7 business days at most</strong>.</p>
+
+            <h2>3. Data That Will Be Deleted</h2>
+            <p>When you delete your account, the following data is removed from our systems:</p>
+            <ul>
+                <li>Profile information (name, email, profile photo)</li>
+                <li>Hydration data: water intake history, goals, streaks and badges</li>
+                <li>Nutrition data: calorie/macro logs and photo-analysis results</li>
+                <li>Social data: friends and league participation</li>
+                <li>Water records the app wrote to Apple Health / Health Connect (cleared automatically during deletion)</li>
+                <li>Your in-app settings and preferences</li>
+            </ul>
+
+            <h2>4. Data That May Be Retained for Legal Reasons</h2>
+            <p>When you delete your account, your personal data is permanently removed from our systems <strong>within 30 days</strong>. Only where required by legal obligations (for example, tax or accounting law, or the resolution of potential disputes) may certain records be retained <strong>for the applicable statutory period</strong>, after which they are deleted. Premium purchases are handled through the App Store / Google Play, so your payment details are not stored by Suu.</p>
+
+            <div class="contact-box">
+                <h3>Support & Contact</h3>
+                <p>For any questions about deleting your account, reach out to us:</p>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:support@suuapp.com">support@suuapp.com</a></li>
+                    <li><strong>Privacy:</strong> <a href="mailto:privacy@suuapp.com">privacy@suuapp.com</a></li>
+                    <li><strong>Web:</strong> <a href="https://suuapp.com">suuapp.com</a></li>
+                </ul>
+                <p>Response time: within 7 business days at most.</p>
+            </div>
+        </div>
+
+        <!-- Arabic -->
+        <div class="content delete-section" data-lang="ar" dir="rtl">
+            <div class="highlight">
+                <strong>ملخّص:</strong> يمكنك حذف حساب Suu وجميع بياناتك الشخصية بشكل دائم في أي وقت. هذا الإجراء <strong>لا يمكن التراجع عنه</strong>. تجد أدناه كيفية الحذف من داخل التطبيق وعبر البريد الإلكتروني.
+            </div>
+
+            <h2>1. الحذف من داخل التطبيق (الطريقة الموصى بها)</h2>
+            <ol class="steps">
+                <li>افتح تطبيق Suu وسجّل الدخول إلى حسابك.</li>
+                <li>انتقل إلى تبويب <strong>«الملف الشخصي»</strong>.</li>
+                <li>اضغط على أيقونة <strong>«الإعدادات»</strong> (الترس ⚙️) في الأعلى.</li>
+                <li>مرّر إلى قسم <strong>«الحساب»</strong>.</li>
+                <li>اضغط على <strong>«حذف الحساب»</strong>.</li>
+                <li>اقرأ التنبيه ثم <strong>أكّد</strong> العملية. سيتم تسجيل خروجك فورًا وتبدأ عملية الحذف.</li>
+            </ol>
+            <p>بعد التأكيد، يُعطّل حسابك وتدخل بياناتك في عملية الحذف.</p>
+
+            <h2>2. الطلب عبر البريد الإلكتروني (بديل)</h2>
+            <p>إذا لم تتمكن من الوصول إلى التطبيق (مثلاً بعد تغيير جهازك)، أرسل رسالة من عنوان بريدك المسجّل إلى <a href="mailto:support@suuapp.com?subject=%D8%B7%D9%84%D8%A8%20%D8%AD%D8%B0%D9%81%20%D8%A7%D9%84%D8%AD%D8%B3%D8%A7%D8%A8">support@suuapp.com</a> بعنوان <strong>«طلب حذف الحساب»</strong>. بعد التحقق من هويتك، سننفّذ طلبك خلال <strong>7 أيام عمل كحدٍّ أقصى</strong>.</p>
+
+            <h2>3. البيانات التي سيتم حذفها</h2>
+            <p>عند حذف حسابك، تُزال البيانات التالية من أنظمتنا:</p>
+            <ul>
+                <li>معلومات الملف الشخصي (الاسم، البريد الإلكتروني، الصورة الشخصية)</li>
+                <li>بيانات الترطيب: سجل شرب الماء، الأهداف، السلاسل (Streak) والأوسمة</li>
+                <li>بيانات التغذية: سجلات السعرات والماكرو ونتائج تحليل الصور</li>
+                <li>البيانات الاجتماعية: الأصدقاء والمشاركة في الدوريات</li>
+                <li>سجلات الماء التي كتبها التطبيق في Apple Health / Health Connect (تُحذف تلقائيًا أثناء عملية الحذف)</li>
+                <li>إعداداتك وتفضيلاتك داخل التطبيق</li>
+            </ul>
+
+            <h2>4. البيانات التي قد يتم الاحتفاظ بها لأسباب قانونية</h2>
+            <p>عند حذف حسابك، تُحذف بياناتك الشخصية نهائيًا من أنظمتنا <strong>خلال 30 يومًا</strong>. وفقط عندما يقتضي القانون ذلك (مثل الالتزامات الضريبية والمحاسبية أو تسوية النزاعات المحتملة)، قد نحتفظ ببعض السجلات <strong>طوال المدة القانونية الإلزامية</strong>، ثم تُحذف بعد انتهائها. تتم معالجة مشتريات Premium عبر App Store / Google Play، لذلك لا يحتفظ Suu ببيانات الدفع الخاصة بك.</p>
+
+            <div class="contact-box">
+                <h3>الدعم والتواصل</h3>
+                <p>لأي أسئلة حول حذف الحساب، تواصل معنا:</p>
+                <ul>
+                    <li><strong>البريد الإلكتروني:</strong> <a href="mailto:support@suuapp.com">support@suuapp.com</a></li>
+                    <li><strong>الخصوصية:</strong> <a href="mailto:privacy@suuapp.com">privacy@suuapp.com</a></li>
+                    <li><strong>الويب:</strong> <a href="https://suuapp.com">suuapp.com</a></li>
+                </ul>
+                <p>مدة الرد: خلال 7 أيام عمل كحدٍّ أقصى.</p>
+            </div>
+        </div>
+
+        <!-- Russian -->
+        <div class="content delete-section" data-lang="ru">
+            <div class="highlight">
+                <strong>Кратко:</strong> вы можете в любой момент безвозвратно удалить аккаунт Suu и все свои персональные данные. Это действие <strong>необратимо</strong>. Ниже описано, как удалить аккаунт из приложения и по электронной почте.
+            </div>
+
+            <h2>1. Удаление из приложения (рекомендуется)</h2>
+            <ol class="steps">
+                <li>Откройте приложение Suu и войдите в свой аккаунт.</li>
+                <li>Перейдите на вкладку <strong>«Профиль»</strong>.</li>
+                <li>Нажмите на значок <strong>«Настройки»</strong> (шестерёнка ⚙️) в правом верхнем углу.</li>
+                <li>Прокрутите до раздела <strong>«Аккаунт»</strong>.</li>
+                <li>Нажмите <strong>«Удалить аккаунт»</strong>.</li>
+                <li>Прочитайте предупреждение и <strong>подтвердите</strong>. Вы сразу выйдете из аккаунта, и начнётся удаление.</li>
+            </ol>
+            <p>После подтверждения аккаунт деактивируется, а ваши данные переходят в процесс удаления.</p>
+
+            <h2>2. Запрос по электронной почте (альтернатива)</h2>
+            <p>Если у вас нет доступа к приложению (например, вы сменили устройство), отправьте письмо с зарегистрированного адреса на <a href="mailto:support@suuapp.com?subject=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81%20%D0%BD%D0%B0%20%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%B0">support@suuapp.com</a> с темой <strong>«Запрос на удаление аккаунта»</strong>. После проверки вашей личности мы обработаем запрос <strong>не более чем за 7 рабочих дней</strong>.</p>
+
+            <h2>3. Какие данные будут удалены</h2>
+            <p>При удалении аккаунта из наших систем удаляются следующие данные:</p>
+            <ul>
+                <li>Данные профиля (имя, e-mail, фото профиля)</li>
+                <li>Данные о гидратации: история потребления воды, цели, серии (streak) и награды</li>
+                <li>Данные о питании: записи калорий/макросов и результаты анализа фотографий</li>
+                <li>Социальные данные: друзья и участие в лигах</li>
+                <li>Записи о воде, которые приложение записало в Apple Health / Health Connect (удаляются автоматически при удалении)</li>
+                <li>Ваши настройки и предпочтения в приложении</li>
+            </ul>
+
+            <h2>4. Данные, которые могут храниться по юридическим причинам</h2>
+            <p>При удалении аккаунта ваши персональные данные безвозвратно удаляются из наших систем <strong>в течение 30 дней</strong>. Только там, где этого требуют юридические обязательства (например, налоговое или бухгалтерское законодательство либо разрешение возможных споров), отдельные записи могут храниться <strong>в течение установленного законом срока</strong>, после чего удаляются. Покупки Premium обрабатываются через App Store / Google Play, поэтому платёжные данные не хранятся в Suu.</p>
+
+            <div class="contact-box">
+                <h3>Поддержка и контакты</h3>
+                <p>По любым вопросам об удалении аккаунта свяжитесь с нами:</p>
+                <ul>
+                    <li><strong>E-mail:</strong> <a href="mailto:support@suuapp.com">support@suuapp.com</a></li>
+                    <li><strong>Конфиденциальность:</strong> <a href="mailto:privacy@suuapp.com">privacy@suuapp.com</a></li>
+                    <li><strong>Веб:</strong> <a href="https://suuapp.com">suuapp.com</a></li>
+                </ul>
+                <p>Время ответа: не более 7 рабочих дней.</p>
+            </div>
+        </div>
+
+        <div class="footer" id="deleteFooter">
+            <p class="footer-text active" data-lang="tr">© 2026 Suu - Tüm hakları saklıdır.</p>
+            <p class="footer-text active" data-lang="tr">Bu sayfa en son 6 Temmuz 2026 tarihinde güncellenmiştir.</p>
+
+            <p class="footer-text" data-lang="en">© 2026 Suu - All rights reserved.</p>
+            <p class="footer-text" data-lang="en">This page was last updated on 6 July 2026.</p>
+
+            <p class="footer-text" data-lang="ar" dir="rtl">© 2026 Suu - جميع الحقوق محفوظة.</p>
+            <p class="footer-text" data-lang="ar" dir="rtl">تم تحديث هذه الصفحة آخر مرة في 6 يوليو 2026.</p>
+
+            <p class="footer-text" data-lang="ru">© 2026 Suu — Все права защищены.</p>
+            <p class="footer-text" data-lang="ru">Эта страница последний раз обновлялась 6 июля 2026 года.</p>
+        </div>
+    </div>
+
+    <script>
+        const languageButtons = document.querySelectorAll('.language-btn');
+        const sections = document.querySelectorAll('.delete-section');
+        const footerTexts = document.querySelectorAll('.footer-text');
+
+        function setLanguage(lang) {
+            document.documentElement.lang = lang;
+            document.body.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+            sections.forEach(section => {
+                section.classList.toggle('active', section.dataset.lang === lang);
+            });
+
+            footerTexts.forEach(text => {
+                text.classList.toggle('active', text.dataset.lang === lang);
+            });
+
+            languageButtons.forEach(button => {
+                const isActive = button.dataset.lang === lang;
+                button.classList.toggle('active', isActive);
+                button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+            });
+        }
+
+        languageButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                if (!button.classList.contains('active')) {
+                    setLanguage(button.dataset.lang);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
