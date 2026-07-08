@@ -15,7 +15,7 @@
 
     <title>Как самоучка создал приложение для калорий и воды | История Suu</title>
     <meta name="description" content="Без диплома по информатике, без инвестиций — только страсть. Как Furkan Mert Findikli самостоятельно научился программировать и создал Suu с нуля. Знакомьтесь с командой и миссией.">
-    <meta name="keywords" content="основатель Suu, Furkan Mert Findikli, команда Suu, разработчик трекера воды, Nisanur Buyukbas, о Suu, кто создал приложение Suu">
+    <meta name="keywords" content="основатель Suu, Furkan Mert Findikli, команда Suu, разработчик трекера воды, Mert Oz, Nisanur Buyukbas, о Suu, кто создал приложение Suu">
 
     <!-- Smart App Banner -->
     <meta name="apple-itunes-app" content="app-id=6757619920">
@@ -92,17 +92,17 @@
         .story-text { background: white; border-radius: 16px; padding: 36px; box-shadow: 0 4px 16px rgba(0,0,0,0.07); font-size: 1.05rem; color: #444; line-height: 1.8; max-width: 750px; margin: 0 auto; }
 
         /* Team cards */
-        .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 28px; margin-top: 10px; }
-        .team-card { background: white; border-radius: 20px; padding: 36px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: transform 0.2s, box-shadow 0.2s; }
+        .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px; margin-top: 10px; }
+        .team-card { background: white; border-radius: 20px; padding: 32px 28px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: transform 0.2s, box-shadow 0.2s; text-align: center; }
         .team-card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(0,0,0,0.12); }
-        .team-card-header { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; }
-        .team-avatar { width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 800; color: white; }
-        .team-card-header h3 { font-size: 1.2rem; font-weight: 700; color: #1a1a2e; }
-        .team-card-header .role { font-size: 0.85rem; color: #4A90D9; font-weight: 600; margin-top: 2px; }
-        .team-info { display: flex; flex-direction: column; gap: 10px; margin-bottom: 18px; }
-        .team-info-item { display: flex; align-items: center; gap: 10px; font-size: 0.9rem; color: #555; }
-        .team-info-item i { color: #4A90D9; width: 18px; text-align: center; }
-        .team-bio { font-size: 0.92rem; color: #555; line-height: 1.7; border-top: 1px solid #eee; padding-top: 16px; }
+        .team-photo-ring { display: inline-block; padding: 4px; border-radius: 50%; background: linear-gradient(135deg, #4A90D9, #29B6F6, #00ACC1); margin-bottom: 16px; }
+        .team-photo { width: 128px; height: 128px; border-radius: 50%; object-fit: cover; object-position: center top; border: 4px solid #fff; background: #eaf3fb; display: block; }
+        .team-card h3 { font-size: 1.2rem; font-weight: 700; color: #1a1a2e; }
+        .team-card .role { font-size: 0.85rem; color: #4A90D9; font-weight: 600; margin-top: 3px; }
+        .team-info { display: flex; flex-direction: column; gap: 9px; margin: 18px 0; text-align: start; }
+        .team-info-item { display: flex; align-items: flex-start; gap: 10px; font-size: 0.88rem; color: #555; }
+        .team-info-item i { color: #4A90D9; width: 18px; text-align: center; margin-top: 3px; flex-shrink: 0; }
+        .team-bio { font-size: 0.9rem; color: #555; line-height: 1.7; border-top: 1px solid #eee; padding-top: 16px; text-align: start; }
         .team-link { display: inline-flex; align-items: center; gap: 6px; color: #4A90D9; text-decoration: none; font-weight: 600; font-size: 0.9rem; margin-top: 12px; transition: color 0.2s; }
         .team-link:hover { color: #2979FF; }
 
@@ -162,38 +162,43 @@
         <p class="section-sub">Маленькая, но преданная команда, строящая будущее персонального отслеживания гидратации.</p>
         <div class="team-grid">
             <div class="team-card">
-                <div class="team-card-header">
-                    <div class="team-avatar" style="background: linear-gradient(135deg, #4A90D9, #29B6F6);">FM</div>
-                    <div>
-                        <h3>Furkan Mert Findikli</h3>
-                        <div class="role">Основатель и разработчик</div>
-                    </div>
-                </div>
+                <span class="team-photo-ring"><img class="team-photo" src="assets/team/furkan.jpg" width="128" height="128" loading="lazy" alt="Furkan Mert Findikli — основатель и CEO Suu"></span>
+                <h3>Furkan Mert Findikli</h3>
+                <div class="role">Основатель, CEO и разработчик</div>
                 <div class="team-info">
+                    <div class="team-info-item"><i class="fas fa-graduation-cap"></i> Университет Тарсуса — Логистика (2020)</div>
                     <div class="team-info-item"><i class="fas fa-birthday-cake"></i> Родился 9 февраля 1999 г.</div>
-                    <div class="team-info-item"><i class="fas fa-graduation-cap"></i> Университет Тарсуса — Международная торговля и логистика</div>
                     <div class="team-info-item"><i class="fas fa-map-marker-alt"></i> Стамбул, Турция</div>
                 </div>
                 <div class="team-bio">
-                    <p>Имея за плечами опыт малого бизнеса, Furkan посвятил 4 года самостоятельному изучению разработки программного обеспечения благодаря упорству и тяжёлому труду. Он создал Suu полностью с нуля как сольный разработчик. Его путь от ремесленника до самоучки-разработчика и предпринимателя — вдохновляющая история настойчивости, доказывающая, что с достаточной самоотдачей каждый может превратить свою страсть в реальность.</p>
+                    <p>Имея за плечами опыт малого бизнеса, Furkan посвятил 4 года самостоятельному изучению разработки ПО благодаря упорству и труду. Он создал Suu полностью с нуля как сольный разработчик. Как разработчик-самоучка и предприниматель, он является основателем и CEO Suu — вдохновляющая история настойчивости.</p>
                 </div>
                 <a href="https://www.linkedin.com/in/furkanfindikli/" class="team-link" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> Профиль LinkedIn</a>
             </div>
 
             <div class="team-card">
-                <div class="team-card-header">
-                    <div class="team-avatar" style="background: linear-gradient(135deg, #00ACC1, #26C6DA);">NF</div>
-                    <div>
-                        <h3>Nisanur Buyukbas</h3>
-                        <div class="role">Руководитель роста и маркетинга</div>
-                    </div>
-                </div>
+                <span class="team-photo-ring"><img class="team-photo" src="assets/team/mert.jpg" width="128" height="128" loading="lazy" alt="Mert Oz — разработчик Suu"></span>
+                <h3>Mert Oz</h3>
+                <div class="role">Разработчик</div>
                 <div class="team-info">
-                    <div class="team-info-item"><i class="fas fa-briefcase"></i> Стратегия роста и контент-маркетинг</div>
-                    <div class="team-info-item"><i class="fas fa-globe"></i> Рынки Турции и Ближнего Востока</div>
+                    <div class="team-info-item"><i class="fas fa-graduation-cap"></i> Университет Памуккале — Внешняя торговля, Бекилли (2018)</div>
+                    <div class="team-info-item"><i class="fas fa-code"></i> Мобильная разработка и приложения</div>
                 </div>
                 <div class="team-bio">
-                    <p>Nisanur отвечает за стратегии роста, контент-маркетинг и привлечение пользователей в Suu. Она играет ключевую роль в расширении Suu по Турции и Ближнему Востоку, повышая вовлечённость и формируя сообщество вокруг приложения.</p>
+                    <p>Mert участвует в процессах разработки Suu. Он отвечает за реализацию новых функций и стабильную работу приложения.</p>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <span class="team-photo-ring"><img class="team-photo" src="assets/team/nisanur.jpg" width="128" height="128" loading="lazy" alt="Nisanur Buyukbas — руководитель роста и дизайна Suu"></span>
+                <h3>Nisanur Buyukbas</h3>
+                <div class="role">Рост, реклама и дизайн</div>
+                <div class="team-info">
+                    <div class="team-info-item"><i class="fas fa-graduation-cap"></i> Лицей Velibaba — Красота и уход за волосами (2020)</div>
+                    <div class="team-info-item"><i class="fas fa-bullhorn"></i> Рост, реклама и визуальный дизайн</div>
+                </div>
+                <div class="team-bio">
+                    <p>Nisanur отвечает за стратегии роста, рекламу и визуальный дизайн Suu. Она играет ключевую роль в расширении Suu по Турции и Ближнему Востоку и в коммуникации бренда.</p>
                 </div>
             </div>
         </div>
@@ -215,11 +220,15 @@
             </div>
             <div class="faq-item">
                 <h4><i class="fas fa-question-circle" style="color:#4A90D9;margin-right:8px;"></i>Кто такая Nisanur Buyukbas?</h4>
-                <p>Nisanur Buyukbas — руководитель роста и маркетинга Suu. Отвечает за стратегии роста, контент-маркетинг и привлечение пользователей. Играет ключевую роль в расширении Suu на рынках Турции и Ближнего Востока.</p>
+                <p>Nisanur Buyukbas отвечает за рост, рекламу и дизайн Suu. Занимается стратегиями роста, рекламой и визуальным дизайном. Окончила лицей Velibaba (красота и уход за волосами) и играет ключевую роль в расширении Suu на рынках Турции и Ближнего Востока.</p>
+            </div>
+            <div class="faq-item">
+                <h4><i class="fas fa-question-circle" style="color:#4A90D9;margin-right:8px;"></i>Кто такой Mert Oz?</h4>
+                <p>Mert Oz — разработчик Suu. Окончил Университет Памуккале (Бекилли, внешняя торговля). Участвует в процессах разработки приложения — реализует новые функции и обеспечивает стабильную работу.</p>
             </div>
             <div class="faq-item">
                 <h4><i class="fas fa-question-circle" style="color:#4A90D9;margin-right:8px;"></i>Кто входит в команду Suu?</h4>
-                <p>Команда Suu состоит из Furkan Mert Findikli (основатель и разработчик) и Nisanur Buyukbas (руководитель роста и маркетинга). Furkan создал приложение с нуля как самоучка, Nisanur ведёт стратегию роста и привлечение пользователей по Турции и Ближнему Востоку.</p>
+                <p>Команда Suu состоит из трёх человек: Furkan Mert Findikli (основатель, CEO и разработчик), Mert Oz (разработчик) и Nisanur Buyukbas (рост, реклама и дизайн). Furkan создал приложение с нуля; Mert участвует в разработке; Nisanur ведёт рост, рекламу и дизайн по Турции и Ближнему Востоку.</p>
             </div>
         </div>
     </div>

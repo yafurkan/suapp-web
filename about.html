@@ -15,7 +15,7 @@
 
     <title>How a Self-Taught Developer Built a Calorie & Water Tracking App | Suu's Story</title>
     <meta name="description" content="No CS degree, no funding — just passion. How Furkan Mert Findikli taught himself to code and built Suu from scratch. Meet the team and the mission behind the app.">
-    <meta name="keywords" content="Suu app founder, Furkan Mert Findikli, Suu team, water tracker developer, Nisanur Buyukbas, Suu about, who made Suu app">
+    <meta name="keywords" content="Suu app founder, Furkan Mert Findikli, Suu team, water tracker developer, Mert Oz, Nisanur Buyukbas, Suu about, who made Suu app">
 
     <!-- Smart App Banner -->
     <meta name="apple-itunes-app" content="app-id=6757619920">
@@ -102,13 +102,41 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Nisanur Buyukbas",
-        "jobTitle": "Head of Growth & Marketing",
+        "jobTitle": "Growth Marketing & Advertising / Design Lead",
+        "image": "https://suuapp.com/assets/team/nisanur.jpg",
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Velibaba Anatolian High School"
+        },
         "worksFor": {
             "@type": "Organization",
             "name": "Suu",
             "url": "https://suuapp.com"
         },
-        "description": "Nisanur Buyukbas is the Head of Growth & Marketing at Suu. She is responsible for growth strategies, content marketing, and user acquisition. She plays a critical role in Suu's expansion in Turkey and the Middle East markets."
+        "description": "Nisanur Buyukbas is the Growth Marketing & Advertising / Design Lead at Suu. She is responsible for growth strategies, advertising, and visual design. She plays a critical role in Suu's expansion in Turkey and the Middle East markets and in the brand's communication."
+    }
+    </script>
+
+    <!-- Schema: Person — Mert Oz -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mert Oz",
+        "jobTitle": "Software Developer",
+        "image": "https://suuapp.com/assets/team/mert.jpg",
+        "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "Pamukkale University",
+            "department": "Foreign Trade (Bekilli Vocational School)"
+        },
+        "knowsAbout": ["Mobile App Development", "Software Development", "App Maintenance"],
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Suu",
+            "url": "https://suuapp.com"
+        },
+        "description": "Mert Oz is a software developer at Suu. A graduate of Pamukkale University's Bekilli Vocational School (Foreign Trade), he works on the app's development processes, building new features and keeping the app running reliably."
     }
     </script>
 
@@ -133,7 +161,15 @@
                     "@type": "Person",
                     "name": "Furkan Mert Findikli"
                 },
-                "roleName": "Founder & Developer"
+                "roleName": "Founder, CEO & Software Developer"
+            },
+            {
+                "@type": "OrganizationRole",
+                "member": {
+                    "@type": "Person",
+                    "name": "Mert Oz"
+                },
+                "roleName": "Software Developer"
             },
             {
                 "@type": "OrganizationRole",
@@ -141,7 +177,7 @@
                     "@type": "Person",
                     "name": "Nisanur Buyukbas"
                 },
-                "roleName": "Head of Growth & Marketing"
+                "roleName": "Growth Marketing & Advertising / Design Lead"
             }
         ],
         "address": {
@@ -179,7 +215,15 @@
                 "name": "Who is Nisanur Buyukbas?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Nisanur Buyukbas is the Head of Growth & Marketing at Suu. She is responsible for growth strategies, content marketing, and user acquisition processes. She plays a critical role in Suu's growth in Turkey and the Middle East markets."
+                    "text": "Nisanur Buyukbas is the Growth Marketing & Advertising / Design Lead at Suu. She is responsible for growth strategies, advertising, and visual design. A graduate of Velibaba Anatolian High School (Beauty & Hair Care), she plays a critical role in Suu's growth in Turkey and the Middle East markets."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Who is Mert Oz?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Mert Oz is a software developer at Suu. A graduate of Pamukkale University's Bekilli Vocational School (Foreign Trade), he works on the app's development processes, building new features and keeping the app running reliably."
                 }
             },
             {
@@ -187,7 +231,7 @@
                 "name": "Who is on the Suu team?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "The Suu team consists of Furkan Mert Findikli (Founder & Developer) and Nisanur Buyukbas (Head of Growth & Marketing). Furkan built the app from scratch as a self-taught developer, while Nisanur drives growth strategy, content marketing, and user acquisition across Turkey and the Middle East."
+                    "text": "The Suu team consists of three people: Furkan Mert Findikli (Founder, CEO & Software Developer), Mert Oz (Software Developer), and Nisanur Buyukbas (Growth Marketing & Advertising / Design Lead). Furkan built the app from scratch as a self-taught developer; Mert works on development; and Nisanur drives growth, advertising, and design across Turkey and the Middle East."
                 }
             }
         ]
@@ -224,17 +268,17 @@
         .story-text { background: white; border-radius: 16px; padding: 36px; box-shadow: 0 4px 16px rgba(0,0,0,0.07); font-size: 1.05rem; color: #444; line-height: 1.8; max-width: 750px; margin: 0 auto; }
 
         /* Team cards */
-        .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 28px; margin-top: 10px; }
-        .team-card { background: white; border-radius: 20px; padding: 36px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: transform 0.2s, box-shadow 0.2s; }
+        .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px; margin-top: 10px; }
+        .team-card { background: white; border-radius: 20px; padding: 32px 28px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: transform 0.2s, box-shadow 0.2s; text-align: center; }
         .team-card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(0,0,0,0.12); }
-        .team-card-header { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; }
-        .team-avatar { width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 800; color: white; }
-        .team-card-header h3 { font-size: 1.2rem; font-weight: 700; color: #1a1a2e; }
-        .team-card-header .role { font-size: 0.85rem; color: #4A90D9; font-weight: 600; margin-top: 2px; }
-        .team-info { display: flex; flex-direction: column; gap: 10px; margin-bottom: 18px; }
-        .team-info-item { display: flex; align-items: center; gap: 10px; font-size: 0.9rem; color: #555; }
-        .team-info-item i { color: #4A90D9; width: 18px; text-align: center; }
-        .team-bio { font-size: 0.92rem; color: #555; line-height: 1.7; border-top: 1px solid #eee; padding-top: 16px; }
+        .team-photo-ring { display: inline-block; padding: 4px; border-radius: 50%; background: linear-gradient(135deg, #4A90D9, #29B6F6, #00ACC1); margin-bottom: 16px; }
+        .team-photo { width: 128px; height: 128px; border-radius: 50%; object-fit: cover; object-position: center top; border: 4px solid #fff; background: #eaf3fb; display: block; }
+        .team-card h3 { font-size: 1.2rem; font-weight: 700; color: #1a1a2e; }
+        .team-card .role { font-size: 0.85rem; color: #4A90D9; font-weight: 600; margin-top: 3px; }
+        .team-info { display: flex; flex-direction: column; gap: 9px; margin: 18px 0; text-align: start; }
+        .team-info-item { display: flex; align-items: flex-start; gap: 10px; font-size: 0.88rem; color: #555; }
+        .team-info-item i { color: #4A90D9; width: 18px; text-align: center; margin-top: 3px; flex-shrink: 0; }
+        .team-bio { font-size: 0.9rem; color: #555; line-height: 1.7; border-top: 1px solid #eee; padding-top: 16px; text-align: start; }
         .team-link { display: inline-flex; align-items: center; gap: 6px; color: #4A90D9; text-decoration: none; font-weight: 600; font-size: 0.9rem; margin-top: 12px; transition: color 0.2s; }
         .team-link:hover { color: #2979FF; }
 
@@ -294,38 +338,43 @@
         <p class="section-sub">A small but dedicated team building the future of personal hydration tracking.</p>
         <div class="team-grid">
             <div class="team-card">
-                <div class="team-card-header">
-                    <div class="team-avatar" style="background: linear-gradient(135deg, #4A90D9, #29B6F6);">FM</div>
-                    <div>
-                        <h3>Furkan Mert Findikli</h3>
-                        <div class="role">Founder & Developer</div>
-                    </div>
-                </div>
+                <span class="team-photo-ring"><img class="team-photo" src="assets/team/furkan.jpg" width="128" height="128" loading="lazy" alt="Furkan Mert Findikli — Founder and CEO of Suu"></span>
+                <h3>Furkan Mert Findikli</h3>
+                <div class="role">Founder, CEO &amp; Software Developer</div>
                 <div class="team-info">
+                    <div class="team-info-item"><i class="fas fa-graduation-cap"></i> Tarsus University — Logistics (2020)</div>
                     <div class="team-info-item"><i class="fas fa-birthday-cake"></i> Born February 9, 1999</div>
-                    <div class="team-info-item"><i class="fas fa-graduation-cap"></i> Tarsus University — International Trade & Logistics</div>
                     <div class="team-info-item"><i class="fas fa-map-marker-alt"></i> Istanbul, Turkey</div>
                 </div>
                 <div class="team-bio">
-                    <p>Coming from a small business background, Furkan dedicated 4 years to teaching himself software development through sheer determination and hard work. He built Suu entirely from scratch as a solo developer. His journey from tradesman to self-taught developer and entrepreneur is an inspiring story of perseverance — proving that with enough dedication, anyone can turn their passion into reality.</p>
+                    <p>Coming from a small business background, Furkan dedicated 4 years to teaching himself software development through sheer determination. He built Suu entirely from scratch as a solo developer. As a self-taught developer and entrepreneur, he is the founder and CEO of Suu — an inspiring story of perseverance.</p>
                 </div>
                 <a href="https://www.linkedin.com/in/furkanfindikli/" class="team-link" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn Profile</a>
             </div>
 
             <div class="team-card">
-                <div class="team-card-header">
-                    <div class="team-avatar" style="background: linear-gradient(135deg, #00ACC1, #26C6DA);">NF</div>
-                    <div>
-                        <h3>Nisanur Buyukbas</h3>
-                        <div class="role">Head of Growth & Marketing</div>
-                    </div>
-                </div>
+                <span class="team-photo-ring"><img class="team-photo" src="assets/team/mert.jpg" width="128" height="128" loading="lazy" alt="Mert Oz — Software Developer at Suu"></span>
+                <h3>Mert Oz</h3>
+                <div class="role">Software Developer</div>
                 <div class="team-info">
-                    <div class="team-info-item"><i class="fas fa-briefcase"></i> Growth Strategy & Content Marketing</div>
-                    <div class="team-info-item"><i class="fas fa-globe"></i> Turkey & Middle East Markets</div>
+                    <div class="team-info-item"><i class="fas fa-graduation-cap"></i> Pamukkale University — Foreign Trade, Bekilli Vocational School (2018)</div>
+                    <div class="team-info-item"><i class="fas fa-code"></i> Mobile &amp; App Development</div>
                 </div>
                 <div class="team-bio">
-                    <p>Nisanur is responsible for Suu's growth strategies, content marketing, and user acquisition processes. She plays a critical role in Suu's expansion across Turkey and the Middle East, driving engagement and building the community around the app.</p>
+                    <p>Mert works on Suu's development processes. He is responsible for building new features and keeping the app running smoothly and reliably.</p>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <span class="team-photo-ring"><img class="team-photo" src="assets/team/nisanur.jpg" width="128" height="128" loading="lazy" alt="Nisanur Buyukbas — Growth Marketing and Design Lead at Suu"></span>
+                <h3>Nisanur Buyukbas</h3>
+                <div class="role">Growth Marketing &amp; Advertising / Design Lead</div>
+                <div class="team-info">
+                    <div class="team-info-item"><i class="fas fa-graduation-cap"></i> Velibaba Anatolian High School — Beauty &amp; Hair Care (2020)</div>
+                    <div class="team-info-item"><i class="fas fa-bullhorn"></i> Growth, Advertising &amp; Visual Design</div>
+                </div>
+                <div class="team-bio">
+                    <p>Nisanur is responsible for Suu's growth strategies, advertising, and visual design. She plays a critical role in Suu's expansion across Turkey and the Middle East and in the brand's communication.</p>
                 </div>
             </div>
         </div>
@@ -347,11 +396,15 @@
             </div>
             <div class="faq-item">
                 <h4><i class="fas fa-question-circle" style="color:#4A90D9;margin-right:8px;"></i>Who is Nisanur Buyukbas?</h4>
-                <p>Nisanur Buyukbas is the Head of Growth & Marketing at Suu. She is responsible for growth strategies, content marketing, and user acquisition. She plays a critical role in Suu's expansion in Turkey and the Middle East markets.</p>
+                <p>Nisanur Buyukbas is the Growth Marketing & Advertising / Design Lead at Suu. She is responsible for growth strategies, advertising, and visual design. A graduate of Velibaba Anatolian High School (Beauty & Hair Care), she plays a critical role in Suu's expansion across Turkey and the Middle East markets.</p>
+            </div>
+            <div class="faq-item">
+                <h4><i class="fas fa-question-circle" style="color:#4A90D9;margin-right:8px;"></i>Who is Mert Oz?</h4>
+                <p>Mert Oz is a software developer at Suu. A graduate of Pamukkale University's Bekilli Vocational School (Foreign Trade), he works on the app's development processes — building new features and keeping the app running reliably.</p>
             </div>
             <div class="faq-item">
                 <h4><i class="fas fa-question-circle" style="color:#4A90D9;margin-right:8px;"></i>Who is on the Suu team?</h4>
-                <p>The Suu team consists of Furkan Mert Findikli (Founder & Developer) and Nisanur Buyukbas (Head of Growth & Marketing). Furkan built the app from scratch as a self-taught developer, while Nisanur drives growth strategy and user acquisition across Turkey and the Middle East.</p>
+                <p>The Suu team consists of three people: Furkan Mert Findikli (Founder, CEO & Software Developer), Mert Oz (Software Developer), and Nisanur Buyukbas (Growth Marketing & Advertising / Design Lead). Furkan built the app from scratch; Mert works on development; and Nisanur drives growth, advertising, and design across Turkey and the Middle East.</p>
             </div>
         </div>
     </div>
