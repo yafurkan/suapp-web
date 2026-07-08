@@ -57,6 +57,7 @@
         'about.html':       { tr: 'hakkimizda.html',    en: 'about.html',          ar: 'hakkimizda-ar.html',  ru: 'hakkimizda-ru.html' },
         'hakkimizda-ar.html': { tr: 'hakkimizda.html',  en: 'about.html',          ar: 'hakkimizda-ar.html',  ru: 'hakkimizda-ru.html' },
         'hakkimizda-ru.html': { tr: 'hakkimizda.html',  en: 'about.html',          ar: 'hakkimizda-ar.html',  ru: 'hakkimizda-ru.html' },
+        'ekip.html':        { tr: 'ekip.html',          en: 'about.html',          ar: 'hakkimizda-ar.html',  ru: 'hakkimizda-ru.html' },
         // Blog post cross-language mappings (TR ↔ EN ↔ AR ↔ RU) — absolute paths from root
         'su-icmenin-faydalari.html':              { tr: '/blog/su-icmenin-faydalari.html',              en: '/blog/en/benefits-of-drinking-water.html',  ar: '/blog/ar/fawaid-shurb-almae.html',          ru: '/blog/ru/polza-pitia-vody.html' },
         'benefits-of-drinking-water.html':        { tr: '/blog/su-icmenin-faydalari.html',              en: '/blog/en/benefits-of-drinking-water.html',  ar: '/blog/ar/fawaid-shurb-almae.html',          ru: '/blog/ru/polza-pitia-vody.html' },
