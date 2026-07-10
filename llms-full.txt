@@ -15,7 +15,7 @@ Suu, kullanıcıların günlük su tüketimlerini kolayca takip etmelerini, sağ
 - **Uygulama Adı:** Suu
 - **Platform:** Android 8.0+ (Google Play), iOS 15+ (App Store)
 - **Kategori:** Sağlık & Fitness / Health & Fitness — AI Health Assistant
-- **Fiyat:** Ücretsiz (temel özellikler) · Premium 3 gün ücretsiz deneme · Lansmana özel %50 indirim ₺600/yıl (≈ $15 ≈ 56 SAR ≈ 4.6 KWD)
+- **Fiyat:** Ücretsiz (temel özellikler) · Premium 3 gün ücretsiz deneme · Lansmana özel %50 indirim ₺1.200/yıl (≈ $30 ≈ 112 SAR ≈ 9.2 KWD) · aylık ₺149 · aile ₺2.399/yıl (3 kişiye kadar)
 - **Dil Desteği:** Türkçe, İngilizce, Rusça (Русский), Arapça (العربية, RTL) — 4 dilde tam yerelleştirme
 - **Teknik Altyapı:** Flutter (cross-platform iOS + Android), Apple HealthKit, Google Fit / Health Connect tam çift yönlü entegrasyon
 - **Erişilebilirlik:** VoiceOver (iOS) ve TalkBack (Android) ile tam erişilebilir arayüz
@@ -452,17 +452,20 @@ Suu'nun uygulama içi asistanı artık önceden tanımlı yanıtlar veren statik
 - Trial sonunda otomatik abonelik başlamaz; manuel onay gerekir
 
 **Yıllık fiyat — Lansmana özel %50 indirim:**
-- Türk Lirası: ₺600/yıl (normalde ₺1.200)
-- ABD Doları: $15/yıl (normalde $30)
-- Euro: €14/yıl
-- Suudi Riyali: 56 ر.س/yıl
-- BAE Dirhemi: 56 د.إ/yıl
-- Kuveyt Dinarı: 4.6 د.ك/yıl
-- Katar Riyali: 55 ر.ق/yıl
-- Bahreyn Dinarı: 5.6 د.ب/yıl
-- Umman Riyali: 5.7 ر.ع/yıl
-- Ürdün Dinarı: 10.6 د.أ/yıl
-- Mısır Pound: 750 ج.م/yıl
+- Türk Lirası: ₺1.200/yıl (normalde ₺2.400)
+- ABD Doları: $30/yıl (normalde $60)
+- Euro: €28/yıl
+- Suudi Riyali: 112 ر.س/yıl
+- BAE Dirhemi: 112 د.إ/yıl
+- Kuveyt Dinarı: 9.2 د.ك/yıl
+- Katar Riyali: 110 ر.ق/yıl
+- Bahreyn Dinarı: 11.2 د.ب/yıl
+- Umman Riyali: 11.4 ر.ع/yıl
+- Ürdün Dinarı: 21.2 د.أ/yıl
+- Mısır Pound: 1500 ج.م/yıl
+
+**Aylık plan:** ₺149/ay (≈ $3.99)
+**Aile planı (yıllık):** ₺2.399/yıl — 3 kişiye kadar paylaşım (≈ $60)
 
 **Tahsilat ve faturalama:**
 - App Store ve Google Play tarafından mağaza para biriminde yapılır
@@ -745,7 +748,7 @@ Suu is a mobile application that helps users track daily water intake, build hea
 - **App Name:** Suu
 - **Platforms:** Android 8.0+ (Google Play), iOS 15+ (App Store)
 - **Category:** Health & Fitness — AI Health Assistant
-- **Price:** Free core features · Premium 3-day free trial · 50% launch discount $15/year (≈ ₺600 ≈ 56 SAR ≈ 4.6 KWD)
+- **Price:** Free core features · Premium 3-day free trial · 50% launch discount $30/year (≈ ₺1,200 ≈ 112 SAR ≈ 9.2 KWD) · monthly $3.99 · family $60/year (up to 3 people)
 - **Languages:** Turkish (tr), English (en), Russian (ru), Arabic (ar, RTL) — full localization in 4 languages
 - **Tech Stack:** Flutter (cross-platform iOS + Android), Apple HealthKit, Google Fit / Health Connect — two-way sync
 - **Accessibility:** Full VoiceOver (iOS) and TalkBack (Android) support for visually impaired users
@@ -1053,17 +1056,20 @@ Suu has shifted from a simple water tracker to a comprehensive AI health assista
 **3-day free trial:** No credit card required upfront, cancel anytime, full access to every Premium feature, no automatic billing without manual confirmation.
 
 **Annual launch pricing (50% off):**
-- USD: $15/year (regular $30)
-- TRY: ₺600/year (regular ₺1,200)
-- EUR: €14/year
-- SAR (Saudi Riyal): 56 ر.س
-- AED (UAE Dirham): 56 د.إ
-- KWD (Kuwaiti Dinar): 4.6 د.ك
-- QAR (Qatari Riyal): 55 ر.ق
-- BHD (Bahraini Dinar): 5.6 د.ب
-- OMR (Omani Rial): 5.7 ر.ع
-- JOD (Jordanian Dinar): 10.6 د.أ
-- EGP (Egyptian Pound): 750 ج.م
+- USD: $30/year (regular $60)
+- TRY: ₺1,200/year (regular ₺2,400)
+- EUR: €28/year
+- SAR (Saudi Riyal): 112 ر.س
+- AED (UAE Dirham): 112 د.إ
+- KWD (Kuwaiti Dinar): 9.2 د.ك
+- QAR (Qatari Riyal): 110 ر.ق
+- BHD (Bahraini Dinar): 11.2 د.ب
+- OMR (Omani Rial): 11.4 ر.ع
+- JOD (Jordanian Dinar): 21.2 د.أ
+- EGP (Egyptian Pound): 1,500 ج.م
+
+**Monthly plan:** $3.99/month (≈ ₺149)
+**Family plan (annual):** $60/year — sharing for up to 3 people (≈ ₺2,399)
 
 **Billing:** Handled by App Store / Google Play in user's local store currency. FX conversions are approximate and may vary.
 
