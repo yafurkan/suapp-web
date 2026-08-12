@@ -1,0 +1,240 @@
+{
+  "_note": "Kafa kafaya karşılaştırma — Cal AI fotoğraflı kalori kategorisinin en bilinen adı, Suu'nun amiral özelliğiyle doğrudan rakip.",
+  "published": "2026-08-12",
+
+  "pages": {
+    "tr": {
+      "slug": "suu-vs-cal-ai",
+      "published_display": "12 Ağustos 2026",
+      "read_minutes": 6,
+      "badge": "⚖️ Kafa Kafaya 2026",
+      "h1": "Suu ve Cal AI Karşılaştırması: Hangisi Sana Uygun?",
+
+      "meta": {
+        "title": "Suu vs Cal AI (2026 Karşılaştırması) — Hangisi Daha İyi? | Suu",
+        "description": "Cal AI ve Suu'yu fotoğraflı kalori analizi, ücretsiz plan, hidrasyon ve egzersiz takibi açısından karşılaştırdık. Cal AI hangi durumda daha iyi, Suu hangi durumda?",
+        "keywords": "suu vs cal ai, cal ai alternatifi, cal ai türkçe, cal ai mi suu mu, fotoğraftan kalori uygulaması karşılaştırma, cal ai ücretsiz mi, kalori uygulaması karşılaştırma 2026",
+        "og_title": "Suu ve Cal AI Karşılaştırması: Hangisi Sana Uygun?",
+        "og_description": "Fotoğraflı kalori analizinde iki yaklaşım: sadece kalori mi, yoksa kalori + hidrasyon + egzersiz mi? Dürüst karşılaştırma."
+      },
+
+      "answer": "Cal AI tek işe odaklanır ve o işi sade yapar: fotoğraftan kalori. Yalnızca kalori sayacaksan ve başka hiçbir şeyle uğraşmak istemiyorsan iyi bir seçim. Suu aynı fotoğraflı analizi sunar ama üstüne 91 içecekle hidrasyon ve ~50 aktiviteyle egzersiz takibi ekler — ve bu üçünü birbirine bağlar. Üç ayrı uygulama taşımak istemiyorsan Suu, tek işlevlik sadelik istiyorsan Cal AI.",
+
+      "disclosure": "Bu karşılaştırmayı Suu ekibi yazdı — taraflı bir kaynaktan okuyorsunuz. Bu yüzden Cal AI'nin Suu'dan iyi olduğu noktaları da açıkça belirttik. Cal AI'ye dair bilgiler 2026 Ağustos itibarıyla kamuya açık kaynaklara dayanır ve değişebilir.",
+
+      "intro": [
+        "Cal AI, fotoğraftan kalori hesaplama kategorisini popülerleştiren uygulamalardan biri. Yaklaşımı net: tek bir işi var ve arayüzünde o işi yavaşlatacak hiçbir şey yok.",
+        "Suu ise farklı bir bahis oynuyor — fotoğraftan kalori analizini <strong>üç sütunlu bir sistemin</strong> parçası olarak konumluyor: su, kalori ve egzersiz aynı uygulamada ve birbirini besliyor.",
+        "İkisi de doğru yaklaşımlar; hangisinin sana uygun olduğu ne takip etmek istediğine bağlı."
+      ],
+
+      "table": {
+        "head": "Suu ve Cal AI karşılaştırması",
+        "caption": "Suu ile Cal AI'nin özellik karşılaştırması",
+        "col_feature": "Özellik",
+        "competitors": ["Cal AI"],
+        "rows": [
+          { "label": "Fotoğraftan kalori analizi", "suu": "✓", "suu_class": "yes", "others": [{"text":"✓ Ana özellik","cls":"yes"}] },
+          { "label": "Makro dökümü (protein/karb/yağ)", "suu": "✓", "suu_class": "yes", "others": [{"text":"✓","cls":"yes"}] },
+          { "label": "Sesli öğün girişi", "suu": "✓", "suu_class": "yes", "others": [{"text":"Kısmi","cls":"no"}] },
+          { "label": "Deneyim sadeliği (tek işlev)", "suu": "Daha kapsamlı", "suu_class": "", "others": [{"text":"✓ Daha sade","cls":"yes"}] },
+          { "label": "Hidrasyon takibi", "suu": "✓ 91 içecek", "suu_class": "yes", "others": [{"text":"✗","cls":"no"}] },
+          { "label": "Egzersiz takibi", "suu": "✓ ~50 aktivite", "suu_class": "yes", "others": [{"text":"✗","cls":"no"}] },
+          { "label": "Egzersiz → su hedefi güncellemesi", "suu": "✓", "suu_class": "yes", "others": [{"text":"✗","cls":"no"}] },
+          { "label": "Öğün → sindirim suyu hesabı", "suu": "✓", "suu_class": "yes", "others": [{"text":"✗","cls":"no"}] },
+          { "label": "Hava durumuna göre hedef", "suu": "✓", "suu_class": "yes", "others": [{"text":"✗","cls":"no"}] },
+          { "label": "Sohbetle uygulama kontrolü", "suu": "✓ Suu AI", "suu_class": "yes", "others": [{"text":"✗","cls":"no"}] },
+          { "label": "Ücretsiz planda AI analizi", "suu": "✓ Günde 3", "suu_class": "yes", "others": [{"text":"Sınırlı","cls":"no"}] },
+          { "label": "Apple Health / Health Connect senkronu", "suu": "✓ Çift yönlü", "suu_class": "yes", "others": [{"text":"✓","cls":"yes"}] },
+          { "label": "Türkçe tam yerelleştirme", "suu": "✓", "suu_class": "yes", "others": [{"text":"Kısıtlı","cls":"no"}] },
+          { "label": "Arapça RTL desteği", "suu": "✓", "suu_class": "yes", "others": [{"text":"✗","cls":"no"}] },
+          { "label": "Oyunlaştırma (evcil hayvan, lig)", "suu": "✓", "suu_class": "yes", "others": [{"text":"✗","cls":"no"}] }
+        ]
+      },
+
+      "analysis": [
+        {
+          "head": "Cal AI'nin gerçekten iyi olduğu yer",
+          "body": [
+            "Tek işlevli uygulamaların hafife alınmaması gereken bir avantajı var: <strong>karar yorgunluğu yaratmazlar</strong>. Cal AI'yi açtığında ne yapacağın belli — fotoğrafı çek, kaydı gör, çık. Menü yok, sekme yok, kurulacak hedef yok.",
+            "Amacın yalnızca kalori açığını takip etmekse ve su içmeyi zaten dert etmiyorsan, Suu'nun hidrasyon tarafı sana fazladan gelir. Bu durumda daha sade olan kazanır.",
+            "Cal AI'nin arayüzü de fotoğraf akışı etrafında kurulmuş; Suu'da fotoğraflı analiz güçlü bir özellik ama uygulamanın tamamı değil."
+          ]
+        },
+        {
+          "head": "Suu'nun ayrıştığı yer: üç sütunun birbirini beslemesi",
+          "body": [
+            "Suu'da fotoğraftan çıkan besin verisi bir günlük satırında kalmıyor. Öğünün protein ve sodyum içeriği, sindirim için gereken ek su miktarını belirliyor ve günlük hedefe ekleniyor.",
+            "Aynı şekilde kaydettiğin koşu, yürüyüş veya bisiklet sürüşü terle kaybedilen sıvı üzerinden hedefi yeniden yükseltiyor; hava sıcaklığı da hesaba giriyor. Sonuçta su hedefin sabit bir sayı değil, o günün çıktısı.",
+            "Bunun mümkün olması için üçünün aynı uygulamada olması gerekiyor. Cal AI + ayrı bir su uygulaması + ayrı bir egzersiz uygulaması kombinasyonunda bu bağ hiçbir zaman kurulamaz — her biri diğerinin verisinden habersizdir."
+          ],
+          "callout": "<strong>Somut örnek:</strong> Sıcak bir günde 10 km koştun ve akşam yüksek proteinli bir öğün yedin. Cal AI kaloriyi doğru sayar. Suu ise aynı iki olaydan günlük su hedefini iki kez yukarı çeker — koşunun sıvı kaybı ve proteinin sindirim suyu için."
+        },
+        {
+          "head": "Dil ve pazar farkı",
+          "body": [
+            "Suu 7 dilde tam yerelleştirilmiş: Türkçe, İngilizce, Arapça (sağdan sola tam destek), Almanca, İtalyanca, Rusça ve Hintçe. Arayüzün tamamı, bildirimler ve AI yanıtları o dilde.",
+            "Türkiye veya Orta Doğu'daysan bu pratik bir fark yaratır: içecek veritabanında ayran, Türk kahvesi, çay gibi yerel içecekler ve Starbucks gibi kahve zinciri menüleri yer alır."
+          ]
+        }
+      ],
+
+      "verdict": {
+        "head": "Karar",
+        "body": [
+          "<strong>Cal AI'yi seç</strong> — yalnızca kalori sayacaksan, mümkün olan en sade fotoğraf akışını istiyorsan ve hidrasyon senin için bir mesele değilse.",
+          "<strong>Suu'yu seç</strong> — fotoğraflı kalori analizinin yanında hidrasyon ve egzersizi de takip edeceksen, üç ayrı uygulama taşımak istemiyorsan, ya da Türkçe/Arapça tam yerelleştirme senin için önemliyse.",
+          "Kararsızsan pratik bir yol var: Suu'nun ücretsiz planı günde 3 AI analizi veriyor ve temel su + egzersiz takibi kalıcı olarak ücretsiz. Fotoğraflı analiz için Premium 3 gün ücretsiz denenebiliyor — iki yaklaşımı da kendi rutininde test edip karar verebilirsin."
+        ]
+      },
+
+      "cta": {
+        "head": "Kalori, su ve egzersiz — tek uygulamada dene",
+        "sub": "Ücretsiz indir · Premium 3 gün ücretsiz",
+        "button": "Suu'yu Ücretsiz İndir"
+      },
+
+      "faq": [
+        { "q": "Cal AI mi Suu mu daha iyi?",
+          "a": "Neyi takip ettiğine bağlı. Yalnızca kalori sayacaksan Cal AI daha sade bir deneyim sunar. Fotoğraflı kalori analizinin yanında hidrasyon ve egzersiz takibi de istiyorsan Suu daha uygundur, çünkü üçünü birbirine bağlı çalıştırır: egzersiz su hedefini, öğün de sindirim su ihtiyacını otomatik günceller." },
+        { "q": "Cal AI'nin Türkçe alternatifi var mı?",
+          "a": "Suu 7 dilde tam yerelleştirilmiştir ve Türkçe bunlardan biridir. İçecek veritabanında ayran, Türk kahvesi ve çay gibi yerel içecekler ile kahve zinciri menüleri bulunur." },
+        { "q": "Suu ücretsiz mi?",
+          "a": "Temel su ve hidrasyon takibi, egzersiz takibi, günde 3 AI analizi ve Apple Health / Google Health Connect senkronu kalıcı olarak ücretsizdir. Fotoğrafla kalori analizi ve sınırsız AI kullanımı Premium'a dahildir; Premium 3 gün ücretsiz denenebilir." },
+        { "q": "İki uygulamayı birlikte kullanabilir miyim?",
+          "a": "Teknik olarak evet, ancak ikisi de Apple Health'e kalori yazdığında çift kayıt riski oluşur. Suu, Apple Health / Health Connect'ten okuduğu verileri tanıyıp aynı miktarı ikinci kez saymaz; yine de tek bir uygulamayı birincil kayıt aracı olarak seçmek daha temiz sonuç verir." },
+        { "q": "Fotoğraflı analiz iki uygulamada da aynı doğrulukta mı?",
+          "a": "Her iki uygulamada da model yemeği tanıyıp porsiyonu tahmin eder; hiçbiri fotoğraftan gramaj hassasiyeti veremez. Doğruluğu artırmanın en etkili yolu, önerilen porsiyonu bir kez elle düzeltmektir." }
+      ],
+
+      "references": [
+        { "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/", "label": "Beslenme kaydı tutmanın kilo yönetimindeki etkisi (PMC)" },
+        { "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459", "label": "EFSA — su alımı için diyet referans değerleri" }
+      ],
+
+      "related": [
+        { "href": "/blog/en-iyi-fotografla-kalori-uygulamasi.html", "title": "Fotoğraftan kalori hesaplayan en iyi uygulama", "desc": "Beş uygulamalık geniş karşılaştırma." },
+        { "href": "/blog/suu-vs-myfitnesspal.html", "title": "Suu vs MyFitnessPal", "desc": "Veritabanı genişliği mi, bütünlük mü?" },
+        { "href": "/blog/su-kalori-egzersiz-tek-uygulama.html", "title": "Su + kalori + egzersiz tek uygulamada", "desc": "Üçünün bağlı çalışması ne kazandırıyor?" },
+        { "href": "/blog/fotografla-kalori-sayma.html", "title": "Fotoğrafla kalori sayma nasıl çalışır?", "desc": "Yöntem ve doğruluk ipuçları." }
+      ]
+    },
+
+    "en": {
+      "slug": "suu-vs-cal-ai",
+      "published_display": "12 August 2026",
+      "read_minutes": 6,
+      "badge": "⚖️ Head-to-Head 2026",
+      "h1": "Suu vs Cal AI: Which One Fits You?",
+
+      "meta": {
+        "title": "Suu vs Cal AI (2026 Comparison) — Which Is Better? | Suu",
+        "description": "We compared Cal AI and Suu on photo calorie analysis, free plan limits, hydration and exercise tracking. When Cal AI is the better pick, and when Suu is.",
+        "keywords": "suu vs cal ai, cal ai alternative, cal ai vs, photo calorie app comparison, is cal ai free, best ai calorie app 2026, cal ai competitor",
+        "og_title": "Suu vs Cal AI: Which One Fits You?",
+        "og_description": "Two approaches to photo calorie analysis: calories only, or calories plus hydration and exercise. An honest comparison."
+      },
+
+      "answer": "Cal AI does one job and does it cleanly: calories from a photo. If counting calories is all you want, it's a good pick. Suu offers the same photo analysis but adds hydration across 91 beverages and exercise across ~50 activities — and connects the three. Choose Suu if you'd rather not carry three apps; choose Cal AI if you want single-purpose simplicity.",
+
+      "disclosure": "This comparison was written by the Suu team — you are reading a biased source. That's why we've stated plainly where Cal AI beats Suu. Information about Cal AI reflects publicly available sources as of August 2026 and may change.",
+
+      "intro": [
+        "Cal AI is one of the apps that popularised calorie counting from a photograph. Its approach is clear: one job, and nothing in the interface that slows that job down.",
+        "Suu places a different bet — photo calorie analysis as part of a <strong>three-pillar system</strong>: water, calories and exercise in one app, feeding each other.",
+        "Both are legitimate approaches; which fits you depends on what you actually want to track."
+      ],
+
+      "table": {
+        "head": "Suu vs Cal AI comparison",
+        "caption": "Feature comparison between Suu and Cal AI",
+        "col_feature": "Feature",
+        "competitors": ["Cal AI"],
+        "rows": [
+          { "label": "Photo calorie analysis", "suu": "✓", "suu_class": "yes", "others": [{"text":"✓ Core feature","cls":"yes"}] },
+          { "label": "Macro breakdown (protein/carbs/fat)", "suu": "✓", "suu_class": "yes", "others": [{"text":"✓","cls":"yes"}] },
+          { "label": "Voice meal logging", "suu": "✓", "suu_class": "yes", "others": [{"text":"Partial","cls":"no"}] },
+          { "label": "Single-purpose simplicity", "suu": "Broader scope", "suu_class": "", "others": [{"text":"✓ Simpler","cls":"yes"}] },
+          { "label": "Hydration tracking", "suu": "✓ 91 beverages", "suu_class": "yes", "others": [{"text":"✗","cls":"no"}] },
+          { "label": "Exercise tracking", "suu": "✓ ~50 activities", "suu_class": "yes", "others": [{"text":"✗","cls":"no"}] },
+          { "label": "Workout → water goal update", "suu": "✓", "suu_class": "yes", "others": [{"text":"✗","cls":"no"}] },
+          { "label": "Meal → digestion water calculation", "suu": "✓", "suu_class": "yes", "others": [{"text":"✗","cls":"no"}] },
+          { "label": "Weather-adjusted goal", "suu": "✓", "suu_class": "yes", "others": [{"text":"✗","cls":"no"}] },
+          { "label": "Control the app by chat", "suu": "✓ Suu AI", "suu_class": "yes", "others": [{"text":"✗","cls":"no"}] },
+          { "label": "AI analyses on the free plan", "suu": "✓ 3 per day", "suu_class": "yes", "others": [{"text":"Limited","cls":"no"}] },
+          { "label": "Apple Health / Health Connect sync", "suu": "✓ Two-way", "suu_class": "yes", "others": [{"text":"✓","cls":"yes"}] },
+          { "label": "Full Turkish localisation", "suu": "✓", "suu_class": "yes", "others": [{"text":"Limited","cls":"no"}] },
+          { "label": "Arabic RTL support", "suu": "✓", "suu_class": "yes", "others": [{"text":"✗","cls":"no"}] },
+          { "label": "Gamification (pet, leagues)", "suu": "✓", "suu_class": "yes", "others": [{"text":"✗","cls":"no"}] }
+        ]
+      },
+
+      "analysis": [
+        {
+          "head": "Where Cal AI genuinely wins",
+          "body": [
+            "Single-purpose apps have an advantage worth taking seriously: <strong>they don't create decision fatigue</strong>. When you open Cal AI you know exactly what happens — take the photo, see the entry, leave. No menus, no tabs, no goals to configure.",
+            "If your only aim is tracking a calorie deficit and you already don't worry about drinking enough, Suu's hydration side is overhead. In that case the simpler app wins.",
+            "Cal AI's interface is also built around the photo flow. In Suu, photo analysis is a strong feature but not the whole app."
+          ]
+        },
+        {
+          "head": "Where Suu separates: three pillars feeding each other",
+          "body": [
+            "In Suu the nutrition data from your photo doesn't stop at a log line. The protein and sodium content of the meal determines the extra water digestion requires, and that is added to your daily goal.",
+            "In the same way, a run, walk or ride you record raises the goal again from estimated sweat loss; ambient temperature is folded in too. The result is a water goal that is an output of the day rather than a fixed number.",
+            "Making that possible requires all three in one app. With Cal AI plus a separate water app plus a separate exercise app, the link can never be made — each is blind to the others' data."
+          ],
+          "callout": "<strong>Concrete example:</strong> you run 10 km on a hot day and eat a high-protein dinner. Cal AI counts the calories correctly. Suu raises your daily water goal twice from the same two events — once for sweat loss, once for the digestion water the protein requires."
+        },
+        {
+          "head": "Language and market difference",
+          "body": [
+            "Suu is fully localised in 7 languages: Turkish, English, Arabic (full right-to-left), German, Italian, Russian and Hindi. The entire interface, notifications and AI responses are in that language.",
+            "If you are in Turkey or the Middle East this is a practical difference: the beverage database includes local drinks such as ayran, Turkish coffee and tea, alongside coffee-chain menus."
+          ]
+        }
+      ],
+
+      "verdict": {
+        "head": "Verdict",
+        "body": [
+          "<strong>Pick Cal AI</strong> — if you only count calories, want the simplest possible photo flow, and hydration isn't something you think about.",
+          "<strong>Pick Suu</strong> — if you want hydration and exercise tracked alongside photo calorie analysis, if you'd rather not carry three apps, or if full Turkish/Arabic localisation matters to you.",
+          "If you're undecided there's a practical route: Suu's free plan gives 3 AI analyses per day, and core water plus exercise tracking is permanently free. Photo analysis comes with Premium, which is free for 3 days — enough to test both approaches inside your own routine."
+        ]
+      },
+
+      "cta": {
+        "head": "Try calories, water and exercise in one app",
+        "sub": "Free to download · Premium free for 3 days",
+        "button": "Download Suu Free"
+      },
+
+      "faq": [
+        { "q": "Is Cal AI or Suu better?",
+          "a": "It depends on what you track. If you only count calories, Cal AI offers a simpler experience. If you also want hydration and exercise tracking alongside photo calorie analysis, Suu fits better because it runs the three as a connected system: workouts update the water goal and meals update the digestion-water need automatically." },
+        { "q": "Is there a Cal AI alternative with hydration tracking?",
+          "a": "Yes — Suu offers the same photo-based calorie analysis and adds per-beverage hydration tracking across 91 drinks plus around 50 sport activities, with the three connected rather than parallel." },
+        { "q": "Is Suu free?",
+          "a": "Core water and hydration tracking, exercise tracking, 3 AI analyses per day and Apple Health / Google Health Connect sync are permanently free. Photo calorie analysis and unlimited AI use are part of Premium, which can be tried free for 3 days." },
+        { "q": "Can I use both apps together?",
+          "a": "Technically yes, but if both write calories to Apple Health you risk double entries. Suu recognises records it reads from Apple Health / Health Connect and won't count the same amount twice; still, choosing one app as your primary log gives cleaner results." },
+        { "q": "Is photo analysis equally accurate in both apps?",
+          "a": "In both, the model recognises the food and estimates the portion; neither can produce gram-level accuracy from a photo. The most effective way to improve accuracy is to correct the suggested portion once." }
+      ],
+
+      "references": [
+        { "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/", "label": "Role of dietary self-monitoring in weight management (PMC)" },
+        { "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459", "label": "EFSA — dietary reference values for water" }
+      ],
+
+      "related": [
+        { "href": "/blog/en/best-photo-calorie-app.html", "title": "Best photo calorie app", "desc": "A broader five-app comparison." },
+        { "href": "/blog/en/suu-vs-myfitnesspal.html", "title": "Suu vs MyFitnessPal", "desc": "Database breadth or an integrated system?" },
+        { "href": "/blog/en/water-calorie-exercise-one-app.html", "title": "Water + calories + exercise in one app", "desc": "What connecting the three actually gains you." },
+        { "href": "/blog/en/photo-calorie-counting.html", "title": "How photo calorie counting works", "desc": "The method and accuracy tips." }
+      ]
+    }
+  }
+}

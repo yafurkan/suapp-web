@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 585 1266" role="img" aria-label="Ekran görüntüsü yakında">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E9EDF1"/>
+      <stop offset="1" stop-color="#D6DDE4"/>
+    </linearGradient>
+  </defs>
+  <rect width="585" height="1266" fill="url(#g)"/>
+  <g fill="#8A97A6" opacity="0.5">
+    <rect x="60" y="150" width="465" height="26" rx="13"/>
+    <rect x="60" y="200" width="320" height="26" rx="13"/>
+    <rect x="60" y="290" width="465" height="180" rx="20"/>
+    <rect x="60" y="500" width="220" height="180" rx="20"/>
+    <rect x="305" y="500" width="220" height="180" rx="20"/>
+    <rect x="60" y="710" width="465" height="120" rx="20"/>
+    <rect x="60" y="860" width="465" height="120" rx="20"/>
+  </g>
+  <circle cx="292" cy="1090" r="34" fill="#B4BFCA"/>
+  <text x="292" y="1102" font-family="Inter, sans-serif" font-size="34" font-weight="700"
+        fill="#F4F6F8" text-anchor="middle">?</text>
+</svg>

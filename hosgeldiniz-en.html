@@ -4,857 +4,1230 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Search Console: VERIFIED via Domain property (DNS TXT record) — covers all subdomains + protocols, no HTML meta tag needed. -->
-    <!-- Yandex Webmaster: VERIFIED via HTML file (yandex_d8f56999642a8d54.html at site root) — no meta tag needed. -->
+    <!-- ÜRETİLMİŞ DOSYA — elle düzenlemeyin.
+         Kaynak: content/home/en.json + content/home/_template.html.j2
+         Yeniden üret: python3 scripts/build-homepages.py --apply -->
 
-    <!-- Clarity tracking code -->
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "tabxahhw7s");
-    </script>
+    <!-- Google Search Console: VERIFIED via Domain property (DNS TXT record). -->
+    <!-- Yandex Webmaster: VERIFIED via HTML file (yandex_d8f56999642a8d54.html). -->
 
-    <title>Suu - Calorie & Water Tracker | Water, Calorie & Health Guide · 4.9★ · 3-Day Free Trial</title>
-    <meta name="description" content="Suu is now an AI nutrition, calorie and hydration assistant: log meals by voice, snap a photo for calories, manage macros & water with Apple Health. 3 free AI analyses a day + 50% launch discount ($30/year, monthly $3.99). 4.9★ · 2,800+ reviews. iOS & Android.">
-    <meta name="keywords" content="suu, suu app, suu water tracker, suuapp, water tracker app, best water tracking app, ai nutrition assistant, ai health assistant, calorie tracker app, voice meal logging, photo calorie counter, macro tracker, nutrition score, ai hydration coach, activity based water tracking, walking water intake, swimming hydration, exercise water needs, caffeine tracker app, sugar intake tracker, coffee caffeine calculator, hydration app, water reminder, 3 day free trial, premium water app discount, friend league hydration, dynamic island water tracker, apple watch water tracker, siri water tracker, starbucks dehydration">
+    <title>Suu — Water, Calorie &amp; Exercise Tracking in One App | 4.9★ · 3-Day Free Trial</title>
+    <meta name="description" content="Suu combines water tracking, a calorie counter and exercise tracking with AI. Photograph your meal to get calories and macros in seconds; with 91 beverages and ~50 sport activities your daily water goal updates itself. Free on iOS and Android.">
+    <meta name="keywords" content="water tracking app, calorie counter, calorie tracking app, photo calorie counter, exercise tracking, macro calculator, nutrition tracker, ai calorie app, voice calorie logging, running tracker, cycling tracker, hydration app, suu, suu app, suuapp, best calorie app, water calorie exercise one app">
 
-    <!-- Smart App Banner -->
-    <meta name="apple-itunes-app" content="app-id=6757619920">
-
-    <!-- Security Headers -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data:; img-src 'self' https: data:; font-src 'self' https: data:;">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="DENY">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Suu - Calorie & Water Tracker | Water, Calorie & Health Guide · 4.9★ · 3-Day Free Trial">
-    <meta property="og:description" content="Log meals by voice, snap a photo for calories; AI calculates macros, calories and hydration with Apple Health. 3 free analyses a day + 50% launch discount — $30/year (monthly $3.99). 4.9★ · 2,800+ reviews.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://suuapp.com/hosgeldiniz-en.html">
-    <meta property="og:image" content="https://suuapp.com/assets/og-image.png">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:site_name" content="Suu">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@SuuTakip">
-    <meta name="twitter:title" content="Suu - Calorie & Water Tracker | Water, Calorie & Health Guide · 4.9★">
-    <meta name="twitter:description" content="Voice meal logging, photo calorie analysis, macros & hydration with Apple Health. 3 free analyses a day + 50% launch discount. iOS & Android.">
-    <meta name="twitter:image" content="https://suuapp.com/assets/og-image.png">
-
-    <!-- Hreflang -->
+    <link rel="canonical" href="https://suuapp.com/hosgeldiniz-en.html">
+    <!-- Hreflang cluster (auto-injected) -->
     <link rel="alternate" hreflang="tr" href="https://suuapp.com/">
     <link rel="alternate" hreflang="en" href="https://suuapp.com/hosgeldiniz-en.html">
     <link rel="alternate" hreflang="ar" href="https://suuapp.com/hosgeldiniz-ar.html">
     <link rel="alternate" hreflang="ru" href="https://suuapp.com/hosgeldiniz-ru.html">
-    <link rel="alternate" hreflang="x-default" href="https://suuapp.com/hosgeldiniz-en.html">
+    <link rel="alternate" hreflang="de" href="https://suuapp.com/hosgeldiniz-de.html">
+    <link rel="alternate" hreflang="it" href="https://suuapp.com/hosgeldiniz-it.html">
+    <link rel="alternate" hreflang="hi" href="https://suuapp.com/hosgeldiniz-hi.html">
+    <link rel="alternate" hreflang="x-default" href="https://suuapp.com/">
 
-    <link rel="canonical" href="https://suuapp.com/hosgeldiniz-en.html">
+
+    <meta name="apple-itunes-app" content="app-id=6757619920">
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data:; img-src 'self' https: data:; font-src 'self' https: data:;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Suu — Water, Calorie &amp; Exercise Tracking in One App">
+    <meta property="og:description" content="Photograph your meal, get calories and macros. 91 beverages, ~50 sport activities and a water goal that updates after every workout. Try Premium free for 3 days.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://suuapp.com/hosgeldiniz-en.html">
+    <meta property="og:image" content="https://suuapp.com/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Suu — Water, Calorie and Exercise Tracking">
+    <meta property="og:site_name" content="Suu">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="ar_SA">
+    <meta property="og:locale:alternate" content="ru_RU">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="hi_IN">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SuuTakip">
+    <meta name="twitter:creator" content="@SuuTakip">
+    <meta name="twitter:title" content="Suu — Water, Calorie &amp; Exercise Tracking in One App">
+    <meta name="twitter:description" content="Photo calorie analysis, hydration tracking across 91 beverages and ~50 sport activities. Your workouts update your water goal automatically. 4.9★ · 3 days free.">
+    <meta name="twitter:image" content="https://suuapp.com/assets/og-image.png">
+    <meta name="twitter:image:alt" content="Suu — Water, Calorie and Exercise Tracking">
+
+    <!-- Favicon -->
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon-512.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <!-- Preconnect -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/donation-widget.css">
+    <link rel="stylesheet" href="/assets/css/suu.css">
 
-    <!-- Fonts & Icons — non-render-blocking -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"></noscript>
-
-    <!-- Schema: Organization + WebSite (brand signal) -->
+    <!-- Yapılandırılmış veri — kaynak: content/suu-facts.json -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Suu",
-        "alternateName": ["Suu App", "Suu Water Tracker", "SuuApp", "suuapp"],
-        "url": "https://suuapp.com",
-        "logo": "https://suuapp.com/assets/favicon-512.png",
-        "description": "Suu is an AI calorie & water tracking app for Android and iOS. Personalized hydration goals, friend league competition, 91 beverages, smart reminders.",
-        "foundingDate": "2024",
-        "founder": {
-            "@type": "Person",
-            "name": "Furkan Mert Fındıklı",
-            "url": "https://www.linkedin.com/in/furkanfindikli/"
+      "@type": "Organization",
+      "@id": "https://suuapp.com/#organization",
+      "name": "Suu",
+      "url": "https://suuapp.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://suuapp.com/assets/favicon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "email": "Suutakip@gmail.com",
+      "founder": {
+        "@id": "https://suuapp.com/#furkan"
+      },
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "İstanbul, Türkiye"
+      },
+      "areaServed": [
+        "TR",
+        "SA",
+        "AE",
+        "KW",
+        "QA",
+        "RU",
+        "DE",
+        "IT",
+        "IN",
+        "US",
+        "GB"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/furkanfindikli/",
+        "https://apps.apple.com/us/app/suu-su-takip/id6757619920",
+        "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://suuapp.com/#furkan",
+      "name": "Furkan Mert Fındıklı",
+      "birthDate": "1999-02-09",
+      "jobTitle": "Kurucu \u0026 Geliştirici",
+      "url": "https://suuapp.com/yazarlar/furkan-mert.html",
+      "homeLocation": {
+        "@type": "Place",
+        "name": "İstanbul, Türkiye"
+      },
+      "knowsAbout": [
+        "Flutter",
+        "Apple HealthKit",
+        "Google Health Connect",
+        "UI/UX",
+        "dijital pazarlama"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/furkanfindikli/"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://suuapp.com/#nisanur",
+      "name": "Nisanur Büyükbaş",
+      "jobTitle": "Head of Growth \u0026 Marketing",
+      "worksFor": {
+        "@id": "https://suuapp.com/#organization"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://suuapp.com/#website",
+      "url": "https://suuapp.com",
+      "name": "Suu",
+      "description": "Suu combines water tracking, a calorie counter and exercise tracking with AI. Photograph your meal to get calories and macros in seconds; with 91 beverages and ~50 sport activities your daily water goal updates itself. Free on iOS and Android.",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://suuapp.com/#organization"
+      }
+    },
+    {
+      "@type": [
+        "MobileApplication",
+        "HealthAndFitnessApplication"
+      ],
+      "@id": "https://suuapp.com/#suuapp-ios",
+      "name": "Suu – Water Tracker, Calorie Counter \u0026 Exercise Tracking",
+      "alternateName": "Suu",
+      "operatingSystem": "iOS 15.0+",
+      "applicationCategory": "HealthApplication",
+      "url": "https://suuapp.com/hosgeldiniz-en.html",
+      "downloadUrl": "https://apps.apple.com/us/app/suu-su-takip/id6757619920",
+      "installUrl": "https://apps.apple.com/us/app/suu-su-takip/id6757619920",
+      "inLanguage": [
+        "tr",
+        "en",
+        "ar",
+        "de",
+        "it",
+        "ru",
+        "hi"
+      ],
+      "author": {
+        "@id": "https://suuapp.com/#furkan"
+      },
+      "publisher": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "screenshot": "https://suuapp.com/assets/screenshots/ios/en/ana-ekran.webp",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "bestRating": "5",
+        "ratingCount": "2847"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Free",
+          "price": "0",
+          "priceCurrency": "TRY"
         },
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Istanbul",
-            "addressCountry": "TR"
+        {
+          "@type": "Offer",
+          "name": "Premium Yearly",
+          "price": "1200",
+          "priceCurrency": "TRY"
         },
-        "sameAs": [
-            "https://www.instagram.com/suuwatertracker/",
-            "https://x.com/SuuTakip",
-            "https://www.facebook.com/people/SuuTakip/61580176610557/",
-            "https://linkedin.com/company/suutakip",
-            "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
-            "https://apps.apple.com/us/app/suu-su-takip/id6757619920"
+        {
+          "@type": "Offer",
+          "name": "Premium",
+          "price": "149",
+          "priceCurrency": "TRY"
+        },
+        {
+          "@type": "Offer",
+          "name": "Family",
+          "price": "2399",
+          "priceCurrency": "TRY"
+        }
+      ],
+      "featureList": [
+        "Photo calorie analysis — calories, protein, carbs and fat from a meal photo",
+        "Voice and text meal logging",
+        "Automatic macro calculation and nutrition analysis",
+        "1-100 nutrition score",
+        "91 beverages with real hydration contribution",
+        "Smart water goal based on age, weight and activity",
+        "Automatic goal adjustment by air temperature",
+        "Digestion water calculation from what you eat",
+        "Suu Index — 0-100 hydration score",
+        "Adaptive Hydration Brain — adaptive goal engine",
+        "Around 50 sport activities",
+        "Distance, duration, pace, average speed and calories for running and walking",
+        "Speed, average speed, distance, elevation and duration for cycling",
+        "Workouts automatically update the water goal",
+        "Suu AI chat assistant",
+        "Daily, weekly and monthly charts",
+        "PDF and CSV report export",
+        "Story sharing",
+        "Virtual pet and badges",
+        "Friend leagues — weekly, up to 4 people",
+        "Two-way Apple Health sync",
+        "Siri shortcuts",
+        "Dynamic Island",
+        "Live Activities",
+        "Lock screen and home screen widgets",
+        "VoiceOver accessibility support"
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "beverages",
+          "value": "91"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "sportActivities",
+          "value": "50"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "languages",
+          "value": "7"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "freeAiAnalysesPerDay",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "freeTrialDays",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "appleWatch",
+          "value": "coming soon"
+        }
+      ]
+    },
+    {
+      "@type": [
+        "MobileApplication",
+        "HealthAndFitnessApplication"
+      ],
+      "@id": "https://suuapp.com/#suuapp-android",
+      "name": "Suu – Water Tracker, Calorie Counter \u0026 Exercise Tracking",
+      "alternateName": "Suu",
+      "operatingSystem": "Android 8.0+",
+      "applicationCategory": "HealthApplication",
+      "url": "https://suuapp.com/hosgeldiniz-en.html",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
+      "inLanguage": [
+        "tr",
+        "en",
+        "ar",
+        "de",
+        "it",
+        "ru",
+        "hi"
+      ],
+      "author": {
+        "@id": "https://suuapp.com/#furkan"
+      },
+      "publisher": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "screenshot": "https://suuapp.com/assets/screenshots/android/en/ana-ekran.webp",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "bestRating": "5",
+        "ratingCount": "2847"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Free",
+          "price": "0",
+          "priceCurrency": "TRY"
+        },
+        {
+          "@type": "Offer",
+          "name": "Premium Yearly",
+          "price": "1200",
+          "priceCurrency": "TRY"
+        },
+        {
+          "@type": "Offer",
+          "name": "Premium",
+          "price": "149",
+          "priceCurrency": "TRY"
+        },
+        {
+          "@type": "Offer",
+          "name": "Family",
+          "price": "2399",
+          "priceCurrency": "TRY"
+        }
+      ],
+      "featureList": [
+        "Photo calorie analysis",
+        "Voice and text meal logging",
+        "Automatic macro calculation",
+        "91 beverages",
+        "Around 50 sport activities",
+        "Suu AI chat assistant",
+        "Two-way Google Health Connect sync",
+        "Home screen widgets",
+        "Story sharing",
+        "Virtual pet and friend leagues",
+        "TalkBack accessibility support"
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "beverages",
+          "value": "91"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "sportActivities",
+          "value": "50"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "languages",
+          "value": "7"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "freeAiAnalysesPerDay",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "freeTrialDays",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "appleWatch",
+          "value": "coming soon"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://suuapp.com/hosgeldiniz-en.html#webpage",
+      "url": "https://suuapp.com/hosgeldiniz-en.html",
+      "name": "Suu — Water, Calorie \u0026 Exercise Tracking in One App | 4.9★ · 3-Day Free Trial",
+      "isPartOf": {
+        "@id": "https://suuapp.com/#website"
+      },
+      "about": {
+        "@id": "https://suuapp.com/#suuapp-ios"
+      },
+      "inLanguage": "en",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://suuapp.com/assets/og-image.png"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".hero__title",
+          ".hero__lead",
+          ".answer-box"
         ]
-    }
-    </script>
-    <script type="application/ld+json">
+      }
+    },
     {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Suu",
-        "alternateName": "Suu Water Tracker App",
-        "url": "https://suuapp.com",
-        "inLanguage": ["tr", "en", "ar"],
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": {
-                "@type": "EntryPoint",
-                "urlTemplate": "https://suuapp.com/blog-en.html?q={search_term_string}"
-            },
-            "query-input": "required name=search_term_string"
-        }
-    }
-    </script>
-
-    <!-- Schema: SoftwareApplication -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": ["SoftwareApplication", "MobileApplication"],
-        "name": "Suu - Calorie & Water Tracker",
-        "description": "Smart AI calorie & water tracking app for Android and iOS. Personalized hydration goals, friend league, smart reminders, 91 beverages.",
-        "applicationCategory": "HealthAndFitness",
-        "applicationSubCategory": "HealthAndFitness",
-        "operatingSystem": ["Android", "iOS"],
-        "inLanguage": ["tr", "en", "ar"],
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "ratingCount": "2847",
-            "bestRating": "5",
-            "worstRating": "1"
+      "@type": "FAQPage",
+      "@id": "https://suuapp.com/hosgeldiniz-en.html#faq",
+      "about": {
+        "@id": "https://suuapp.com/#suuapp-ios"
+      },
+      "inLanguage": "en",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does Suu really do water tracking, calorie counting and exercise in one app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Suu runs the three not as separate tabs but as a single system where each feeds the others: the exercise you log raises your daily water goal, the protein and sodium in your meal determine the extra water digestion requires, and every drink is counted with its real hydration contribution from a 91-beverage database."
+          }
         },
-        "offers": [
-            {
-                "@type": "Offer", "price": "0", "priceCurrency": "USD",
-                "url": "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
-                "seller": {"@type": "Organization", "name": "Google Play"}
-            },
-            {
-                "@type": "Offer", "price": "0", "priceCurrency": "USD",
-                "url": "https://apps.apple.com/us/app/suu-su-takip/id6757619920",
-                "seller": {"@type": "Organization", "name": "App Store"}
-            }
-        ],
-        "downloadUrl": "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
-        "installUrl": "https://suuapp.com/app/",
-        "author": {
-            "@type": "Organization",
-            "name": "Suu",
-            "url": "https://suuapp.com",
-            "founder": {
-                "@type": "Person",
-                "name": "Furkan Mert Fındıklı",
-                "url": "https://www.linkedin.com/in/furkanfindikli/"
-            }
-        }
-    }
-    </script>
-
-    <!-- Structured Data: Person (Developer - for AI/GEO engines) -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Furkan Mert Fındıklı",
-        "alternateName": "Furkan Fındıklı",
-        "url": "https://www.linkedin.com/in/furkanfindikli/",
-        "jobTitle": "Mobile App Developer & Entrepreneur",
-        "birthDate": "1999-02-09",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Istanbul",
-            "addressCountry": "TR"
+        {
+          "@type": "Question",
+          "name": "How does photo calorie counting work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You photograph your meal; Suu AI analyses it, extracts calories, protein, carbohydrate and fat, and builds your macros automatically. Your photo is not stored permanently. Photo analysis is a Premium feature; on the free plan you get 3 voice or text AI analyses per day."
+          }
         },
-        "alumniOf": {
-            "@type": "CollegeOrUniversity",
-            "name": "Tarsus University",
-            "department": "International Trade and Logistics"
+        {
+          "@type": "Question",
+          "name": "How many sport activities does Suu support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Around 50 different activities: running, walking, cycling, fitness, swimming, hiking, cardio and more. For running and walking you see distance, duration, pace, average speed and calories burned; for cycling you also get speed and elevation. After every workout your water goal updates automatically."
+          }
         },
-        "knowsAbout": ["Mobile App Development", "iOS", "Android", "Flutter", "Software Engineering", "Entrepreneurship"],
-        "description": "Furkan Mert Fındıklı is the founder and sole developer of Suu, a comprehensive AI calorie & water tracking app for iOS and Android. A graduate of Tarsus University (International Trade and Logistics), Fındıklı came from a small business background and spent 4 years teaching himself software development through sheer determination and hard work. He built Suu entirely from scratch, turning his passion for technology into a full-featured health app used by thousands. Based in Istanbul, Turkey, his journey from tradesman to self-taught developer is an inspiring story of perseverance.",
-        "sameAs": ["https://www.linkedin.com/in/furkanfindikli/"],
-        "makesOffer": {
-            "@type": "Offer",
-            "itemOffered": {
-                "@type": "SoftwareApplication",
-                "name": "Suu",
-                "url": "https://suuapp.com"
-            }
-        }
-    }
-    </script>
-
-    <!-- Structured Data: FAQPage -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "Does Suu have an AI chat assistant?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes — Suu's in-app assistant is now a conversational AI agent powered by real AI. It doesn't just answer questions; it acts for you. You can log water by chatting ('add 2 glasses of water'), ask for your daily statistics, have it navigate you to the right in-app screen (stats, goal, beverages), set reminders, and receive personal coaching based on your profile to get closer to your daily hydration goal — all in natural language. Available free on iOS and Android at suuapp.com."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Does Suu track Starbucks and coffee chain drinks?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes — Suu has a dedicated section for popular coffee chains including Starbucks, Nevada Coffee, Greenwich Coffee, and more. You can select your exact drink (e.g. Starbucks Grande Latte, Nevada Americano) and Suu instantly calculates its dehydration factor and shows you exactly how much extra water you need to drink to compensate. This is the only water tracking app with built-in coffee chain menus. Available free on iOS and Android at suuapp.com."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How does Suu calculate dehydration from coffee?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Suu uses scientifically-calculated dehydration factors for 91 beverages. For coffee, the caffeine content acts as a mild diuretic — so a 250ml Americano contributes roughly 150ml of net hydration (about 60% dehydration factor). For popular coffee chains like Starbucks, Nevada, and Greenwich, Suu has pre-loaded drink profiles so you don't have to calculate anything manually. Just pick your drink and log it."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Which water tracking app works with Starbucks drinks?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Suu is the only water tracking app with a dedicated coffee chain section. It includes Starbucks, Nevada Coffee, Greenwich Coffee, and other popular chains. When you log a Starbucks drink, Suu automatically calculates how much extra water you need based on the caffeine and sugar content of that specific drink. Download free at suuapp.com."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is the best water tracking app?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Suu is the best water tracking app in 2026. It is free, available on iOS and Android, and offers unique features: a real-time friend league system, 91 beverages with dehydration factors, dedicated coffee chain sections (Starbucks, Nevada, Greenwich), iOS Dynamic Island support, Lock Screen widgets, Apple Health and Google Health integration, smart notifications, and PDF hydration reports. Download at suuapp.com."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Who developed the Suu app?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Suu was developed by Furkan Mert Fındıklı, a self-taught Turkish developer and entrepreneur born on February 9, 1999. He graduated from Tarsus University with a degree in International Trade and Logistics. Coming from a small business background, Fındıklı dedicated 4 years to teaching himself software development and built Suu entirely from scratch through tremendous effort and perseverance. He lives in Istanbul, Turkey. LinkedIn: linkedin.com/in/furkanfindikli"
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Who is Furkan Mert Fındıklı?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Furkan Mert Fındıklı (born February 9, 1999) is a Turkish mobile app developer, entrepreneur, and the founder and sole developer of Suu — a comprehensive AI calorie & water tracking app available on Android and iOS. He graduated from Tarsus University (International Trade and Logistics) and was originally a small business owner. Driven by his passion for technology, he spent 4 years self-teaching software development and built the Suu app from the ground up. His journey from tradesman to app developer is an inspiring story of self-taught determination. He is based in Istanbul, Turkey. LinkedIn: linkedin.com/in/furkanfindikli"
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Does Suu have an Apple Watch app?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes — Suu has a standalone Apple Watch app built with SwiftUI. You can log water directly from your wrist without touching your iPhone. A progress ring shows your daily goal completion at a glance, and quick-action buttons let you add your favorite amounts in one tap. Data syncs instantly between your Apple Watch and iPhone via App Group. This is the most complete Apple Watch water-tracking experience available."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Can I use Siri to track water intake?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes. Suu supports iOS Siri Shortcuts so you can add water hands-free with voice commands like 'Hey Siri, log a glass of water.' You can also create custom Siri shortcuts for specific amounts or beverages. Additionally, Suu has a built-in in-app voice recognition system (independent of Siri) that works on both iOS and Android — assign any trigger word to any beverage and log it without touching your screen."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Does Suu integrate with Apple Health?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes — Suu has full two-way integration with Apple HealthKit (iOS) and Google Health Connect (Android). Water you log in Suu is automatically written to Apple Health or Google Fit, so it appears alongside your other health data. Suu also reads your step count and active calories from Health to dynamically adjust your daily hydration goal. This level of health platform integration is unique among water tracking apps."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is a hydration score?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Suu's hydration score is a 0-100 performance rating of your daily water intake habits. It combines four weighted metrics: goal completion rate (50%), drinking regularity throughout the day (20%), time-of-day distribution (20%), and avoiding excessive intake (10%). Scores of 85-100 are 'Excellent,' 70-84 'Good,' 40-69 'Improving,' and 0-39 'Needs Work.' Your score appears in-app and in your PDF hydration report. No other water app offers this kind of personalized performance measurement."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Does Suu adjust my water goal based on weather?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes — Suu integrates with OpenWeatherMap to automatically detect your city's current temperature and humidity. On hot or unusually humid days, Suu increases your daily hydration goal to compensate for increased sweat loss. This real-time weather-based adjustment is a unique feature not found in WaterMinder, Hydro Coach, or any other water tracking app."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Does Suu adjust my water goal when I exercise (walking, running, swimming)?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes. Suu reads your activity data from Apple Health and Google Fit and automatically increases your daily water goal based on the type, duration, and intensity of your workout. For example, a 30-minute moderate run adds approximately +400 ml, an hour of swimming adds +600 ml. Walking, running, swimming, cycling, fitness and 30+ activity types are supported. This activity-based dynamic goal adjustment is part of Suu's new AI health assistant capabilities and is not available in WaterMinder or Hydro Coach."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Can Suu track caffeine and sugar in my drinks?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes — Suu now tracks not only hydration but also caffeine (mg) and sugar (g) for 91 beverages. The app warns you when you approach the FDA daily caffeine limit (400 mg) or the WHO recommended added-sugar limit (25 g). For example, a Starbucks Grande Latte: ~150 mg caffeine and ~14 g sugar. This makes Suu a complete personal health dashboard rather than just a water tracker."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Is Suu Premium free to try? How much does it cost?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes. Suu Premium offers a 3-day free trial with no credit card required upfront — cancel anytime. The annual Premium subscription is normally $60/year, but is currently available at a 50% launch discount of $30/year. There is also a $3.99/month plan and a family plan ($60/year for up to 3 people). Approximate annual prices in other currencies: ≈₺1,200 TRY, ≈€28 EUR, ≈112 SAR, ≈112 AED, ≈9.2 KWD, ≈110 QAR. Actual billing is processed by App Store / Google Play in your local store currency."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Is Suu an AI health assistant?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes. Suu is no longer just a water tracking app. With activity-based dynamic goals, caffeine and sugar tracking, hydration score (0-100), contextual smart notifications, a personal hydration coach, weather-adjusted goals, and weekly personalized reports, Suu functions as a complete AI health assistant in your pocket. It integrates two-way with Apple Health and Google Fit and covers the full Apple ecosystem with Apple Watch, Siri Shortcuts, Dynamic Island and Lock Screen widgets."
-                }
-            }
-        ]
-    }
-    </script>
-
-    <!-- Structured Data: Donation Transparency (English) -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "MonetaryGrant",
-        "@id": "https://suuapp.com/hosgeldiniz-en.html#donation-program",
-        "name": "Suu Premium Donation Program",
-        "description": "2% of all Suu Premium subscription revenue is donated to clean water well construction projects in Africa. All donation amounts and bank receipts are publicly transparent at suuapp.com.",
-        "url": "https://suuapp.com/gizlilik-politikasi.html",
-        "amount": {"@type": "MonetaryAmount", "currency": "TRY", "value": "1500"},
-        "funder": {
-            "@type": "Organization",
-            "name": "Suu",
-            "url": "https://suuapp.com"
+        {
+          "@type": "Question",
+          "name": "Is Suu free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Core water and hydration tracking, 3 AI analyses per day and Apple Health / Google Health Connect sync are always free. Unlimited AI meal analysis, photo calorie counting, advanced nutrition analysis and premium statistics require Premium. Premium can be tried free for 3 days; the yearly plan is ₺1,200 with a 50% launch discount (normally ₺2,400), monthly is ₺149, and the 3-person family plan is ₺2,399 per year."
+          }
         },
-        "subjectOf": {
-            "@type": "CreativeWork",
-            "name": "Donation Receipts Archive",
-            "url": "https://suuapp.com/donations/receipts/",
-            "encodingFormat": "application/pdf"
+        {
+          "@type": "Question",
+          "name": "Which languages does Suu support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The app is available in 7 languages: Türkçe, English, العربية (full right-to-left support), Deutsch, Italiano, Русский and हिन्दी."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Suu have an Apple Watch app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Suu does not have its own Apple Watch app yet — it's coming soon. Today the workouts, steps and active energy your Apple Watch records flow into Suu through Apple Health and raise your water goal automatically. For hands-free logging from your wrist you can use the Siri command."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is my data safe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your data belongs entirely to you. There is no ad tracking and data is not shared with third parties. With voice entry your speech is converted to text by your device's operating system — the audio is never sent to Suu's servers. Meal photos are not stored permanently after analysis."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why use Suu instead of MyFitnessPal or Yazio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MyFitnessPal has a broader food database and Yazio has a stronger recipe library. What sets Suu apart is completeness: water tracking, photo calorie analysis and exercise tracking live in one app and are connected — your workout updates your water goal and your meal updates your digestion-water need. It also offers real hydration maths across 91 beverages and support for 7 languages."
+          }
         }
+      ]
     }
+  ]
+}
     </script>
 
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', -apple-system, sans-serif; color: #333; background: #f8f9fa; line-height: 1.6; }
-
-        /* Navbar */
-        .navbar { background: white; padding: 0 20px; height: 70px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 10px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 100; }
-        .nav-logo { display: flex; align-items: center; gap: 8px; font-size: 22px; font-weight: 800; color: #4A90D9; text-decoration: none; }
-        .nav-links { display: flex; align-items: center; gap: 20px; }
-        .nav-links a { color: #555; text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
-        .nav-links a:hover { color: #4A90D9; }
-        .nav-container { display: flex; align-items: center; gap: 16px; }
-        .hamburger { display: none; }
-
-        /* Hero */
-        .hero { background: linear-gradient(135deg, #4A90D9 0%, #29B6F6 50%, #00ACC1 100%); color: white; padding: 80px 20px 100px; text-align: center; position: relative; overflow: hidden; }
-        .hero::before { content: ''; position: absolute; bottom: -40px; left: 0; right: 0; height: 80px; background: #f8f9fa; clip-path: ellipse(55% 100% at 50% 100%); }
-        .hero-badge { display: inline-block; background: rgba(255,255,255,0.2); padding: 6px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 24px; backdrop-filter: blur(4px); }
-        .hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; margin-bottom: 16px; line-height: 1.2; max-width: 700px; margin-left: auto; margin-right: auto; }
-        .hero p { font-size: 1.15rem; opacity: 0.92; margin-bottom: 40px; max-width: 520px; margin-left: auto; margin-right: auto; }
-        .hero-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 48px; }
-        .btn-store { display: inline-flex; align-items: center; gap: 10px; padding: 14px 28px; border-radius: 50px; font-weight: 700; font-size: 1rem; text-decoration: none; transition: all 0.25s; }
-        .btn-ios { background: white; color: #1a1a2e; }
-        .btn-ios:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
-        .btn-android { background: rgba(255,255,255,0.15); color: white; border: 2px solid rgba(255,255,255,0.5); }
-        .btn-android:hover { background: rgba(255,255,255,0.25); transform: translateY(-2px); }
-        .hero-rating { display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 14px; opacity: 0.9; }
-        .stars { color: #FFD700; letter-spacing: 2px; }
-
-        /* Features */
-        .section { padding: 70px 20px; }
-        .container { max-width: 1000px; margin: 0 auto; }
-        .section-title { text-align: center; font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 800; color: #1a1a2e; margin-bottom: 12px; }
-        .section-sub { text-align: center; color: #666; font-size: 1rem; margin-bottom: 50px; max-width: 540px; margin-left: auto; margin-right: auto; }
-        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
-        .feature-card { background: white; border-radius: 16px; padding: 28px; box-shadow: 0 4px 16px rgba(0,0,0,0.07); transition: transform 0.2s, box-shadow 0.2s; }
-        .feature-card:hover { transform: translateY(-4px); box-shadow: 0 8px 28px rgba(0,0,0,0.11); }
-        .feature-icon { width: 52px; height: 52px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 16px; }
-        .feature-card h3 { font-size: 1.05rem; font-weight: 700; color: #1a1a2e; margin-bottom: 8px; }
-        .feature-card p { font-size: 0.9rem; color: #666; line-height: 1.6; }
-
-        /* Screenshots */
-        .screenshots-section { background: linear-gradient(135deg, #f0f7ff, #e8f4f8); }
-        .screenshots-row { margin-top: 40px; overflow-x: auto; -webkit-overflow-scrolling: touch; scroll-snap-type: x proximity; padding-bottom: 14px; scrollbar-width: thin; scrollbar-color: rgba(74,144,217,0.4) transparent; }
-        .screenshots-row::-webkit-scrollbar { height: 8px; }
-        .screenshots-row::-webkit-scrollbar-thumb { background: rgba(74,144,217,0.35); border-radius: 4px; }
-        .screenshots-track { display: flex; gap: 16px; width: max-content; max-width: 100%; margin: 0 auto; padding: 6px 4px; box-sizing: border-box; }
-        .screenshot-wrap { flex: 0 0 auto; background: white; border-radius: 20px; padding: 8px; box-shadow: 0 4px 20px rgba(74,144,217,0.15); scroll-snap-align: center; }
-        .screenshot-wrap img { width: 140px; height: auto; max-width: 100%; border-radius: 14px; display: block; }
-
-        /* Stats */
-        .stats-row { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; margin-top: 40px; }
-        .stat-card { background: white; border-radius: 14px; padding: 28px 36px; text-align: center; box-shadow: 0 4px 16px rgba(0,0,0,0.07); min-width: 160px; }
-        .stat-num { font-size: 2.2rem; font-weight: 800; color: #4A90D9; line-height: 1; margin-bottom: 8px; }
-        .stat-label { font-size: 0.85rem; color: #888; font-weight: 500; }
-
-        /* Blog links */
-        .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; margin-top: 30px; }
-        .blog-card { background: white; border-radius: 12px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.07); text-decoration: none; color: inherit; transition: transform 0.2s; display: block; }
-        .blog-card:hover { transform: translateY(-3px); }
-        .blog-card .tag { font-size: 11px; font-weight: 700; color: #4A90D9; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
-        .blog-card h4 { font-size: 0.9rem; color: #222; line-height: 1.5; font-weight: 600; }
-
-        /* CTA */
-        .cta-section { background: linear-gradient(135deg, #4A90D9, #29B6F6); color: white; padding: 70px 20px; text-align: center; }
-        .cta-section h2 { font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 800; margin-bottom: 14px; }
-        .cta-section p { font-size: 1.05rem; opacity: 0.9; margin-bottom: 36px; }
-
-        /* Footer */
-        footer { background: #1a1a2e; color: rgba(255,255,255,0.6); padding: 28px 20px; text-align: center; font-size: 13px; }
-        footer a { color: rgba(255,255,255,0.7); text-decoration: none; margin: 0 10px; }
-        footer a:hover { color: white; }
-
-        @media (max-width: 600px) {
-            .nav-links { display: none; }
-            .screenshots-track { gap: 10px; }
-            .screenshot-wrap img { width: 132px; }
-        }
-    </style>
+    <script src="/assets/js/analytics.js" defer></script>
+    <script src="/assets/js/screenshots.js" defer></script>
+    <script src="/assets/js/water-calc.js" defer></script>
+    <script src="/lang-switcher.js?v=3" defer></script>
+    <script src="/donation-widget.js" defer></script>
 </head>
 <body>
 
-<nav class="navbar">
-    <a href="hosgeldiniz-en.html" class="nav-logo"><i class="fas fa-tint"></i> Suu</a>
-    <div class="nav-links">
-        <a href="#features">Features</a>
-        <a href="#stats">Stats</a>
-        <a href="blog-en.html">Blog</a>
-        <a href="faq.html">FAQ</a>
-        <a href="about.html">About</a>
-    </div>
-    <div class="nav-container">
-        <!-- lang-switcher.js injects TR/EN/AR buttons here -->
-        <div class="hamburger"></div>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-water" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5s6.5 7 6.5 11.2A6.5 6.5 0 0 1 12 20.2a6.5 6.5 0 0 1-6.5-6.5C5.5 9.5 12 2.5 12 2.5z"/></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24" fill="currentColor"><path d="M13.4 1.7c.4 3-1.3 4.4-2.6 5.7-1.3 1.3-2.5 2.6-2.5 5A5.7 5.7 0 0 0 12 18a3.1 3.1 0 0 1-.9-2.2c0-1.3.8-2.2 1.7-3.2.7-.8 1.5-1.6 1.9-2.8.9 1 1.5 2.2 1.8 3.2a8 8 0 0 1 .3 2.1c0 1-.4 2-1 2.8a5.9 5.9 0 0 0 3.4-5.3c0-4.6-3.6-8.3-5.8-10.9z"/></symbol>
+    <symbol id="i-run" viewBox="0 0 24 24" fill="currentColor"><path d="M15.5 5.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM12.9 7.2 9.4 9l-1.6 4-2.6-.7L4.6 15l4.6 1.3 1.2-3 2 1.6-1.1 6.1h2.4l1.3-7-2.3-2 .8-3.4 1.6 2.2 3.5.9.5-2.3-2.4-.6-1.9-2.6a2.5 2.5 0 0 0-2-1z"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24" fill="currentColor"><path d="M9.5 3.5 8.2 5.5H4.5A2.5 2.5 0 0 0 2 8v10a2.5 2.5 0 0 0 2.5 2.5h15A2.5 2.5 0 0 0 22 18V8a2.5 2.5 0 0 0-2.5-2.5h-3.7l-1.3-2h-5zM12 17.5a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2.2a2.8 2.8 0 1 0 0-5.6 2.8 2.8 0 0 0 0 5.6z"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5c-5.5 0-10 3.6-10 8 0 2.5 1.4 4.7 3.6 6.2L4.4 21l4.5-2.2c1 .2 2 .4 3.1.4 5.5 0 10-3.6 10-8s-4.5-8.7-10-8.7z"/></symbol>
+    <symbol id="i-apple" viewBox="0 0 24 24" fill="currentColor"><path d="M17.56 12.3c-.03-3.06 2.5-4.53 2.61-4.6-1.42-2.08-3.63-2.37-4.42-2.4-1.88-.19-3.67 1.11-4.63 1.11-.95 0-2.42-1.08-3.98-1.05-2.05.03-3.94 1.19-4.99 3.03-2.13 3.69-.54 9.15 1.53 12.14 1.01 1.46 2.21 3.1 3.79 3.04 1.52-.06 2.09-.98 3.93-.98 1.83 0 2.36.98 3.97.95 1.64-.03 2.68-1.49 3.68-2.96 1.16-1.7 1.64-3.35 1.67-3.43-.04-.02-3.2-1.23-3.23-4.87M14.5 3.7c.84-1.02 1.4-2.43 1.25-3.84-1.21.05-2.67.81-3.53 1.82-.77.9-1.45 2.34-1.27 3.72 1.35.1 2.72-.69 3.55-1.7"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+</svg>
+
+<nav class="nav" id="nav">
+    <div class="container nav__inner">
+        <a href="hosgeldiniz-en.html" class="nav__logo" aria-label="Suu home">
+            <svg width="26" height="26" aria-hidden="true"><use href="#i-water"></use></svg>
+            Suu
+        </a>
+        <ul class="nav__links" id="navLinks">
+            <li><a href="#pillars">Features</a></li>
+            <li><a href="#kalori">Calories</a></li>
+            <li><a href="#egzersiz">Exercise</a></li>
+            <li><a href="#ekranlar">Screens</a></li>
+            <li><a href="#karsilastirma">Compare</a></li>
+            <li><a href="#fiyat">Pricing</a></li>
+            <li><a href="blog-en.html">Blog</a></li>
+            <li><a href="#sss">FAQ</a></li>
+        </ul>
+        <div class="nav__actions">
+            <a href="/app?src=nav" class="btn btn--primary" data-cta="nav" style="min-height:40px;padding:var(--sp-2) var(--sp-5);font-size:var(--fs-sm)">Download Free</a>
+        </div>
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+            <svg width="24" height="24" aria-hidden="true"><use href="#i-menu"></use></svg>
+        </button>
     </div>
 </nav>
 
-<section class="hero">
-    <div class="hero-badge">🤖 AI Nutrition & Hydration Assistant</div>
-    <h1>Not Just Water — Everything Your Body Needs.</h1>
-    <p>Log meals by voice, snap a photo for calories; let AI calculate your macros, calories and hydration in seconds, synced with Apple Health — 3 free analyses a day.</p>
-    <div class="hero-btns">
-        <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" class="btn-store btn-ios" target="_blank" rel="noopener">
-            <i class="fab fa-apple" style="font-size:1.3rem;"></i>
-            <span><small style="display:block;font-size:10px;font-weight:500;opacity:.7;">Download on the</small>App Store</span>
-        </a>
-        <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro" class="btn-store btn-android" target="_blank" rel="noopener">
-            <i class="fab fa-google-play" style="font-size:1.2rem;"></i>
-            <span><small style="display:block;font-size:10px;font-weight:500;opacity:.8;">Get it on</small>Google Play</span>
-        </a>
-        <a href="premium-en.html" class="btn-store" target="_self" rel="noopener" style="background:transparent;border:2px solid rgba(255,255,255,0.7);color:#fff;">
-            <i class="fas fa-crown" style="font-size:1.1rem;"></i>
-            <span><small style="display:block;font-size:10px;font-weight:500;opacity:.8;">Explore</small>Premium Features</span>
-        </a>
-    </div>
-    <div class="hero-rating">
-        <span class="stars">★★★★★</span>
-        <span>4.9 · 2,847 reviews · Free</span>
-    </div>
-</section>
+<main id="main">
 
-<!-- Launch Promotional Banner -->
-<section class="promo-banner" id="promo" aria-label="Launch promotion">
-    <style>
-        .promo-banner{background:linear-gradient(135deg,#0f3a82 0%,#1565C0 50%,#00ACC1 100%);color:#fff;padding:48px 20px;position:relative;overflow:hidden}
-        .promo-banner::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 20% 0%,rgba(255,255,255,0.18) 0%,transparent 45%),radial-gradient(circle at 80% 100%,rgba(0,229,255,0.25) 0%,transparent 50%);pointer-events:none}
-        .promo-inner{position:relative;max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
-        .promo-tag{display:inline-block;background:rgba(255,255,255,0.18);padding:6px 14px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;margin-bottom:14px}
-        .promo-title{font-size:clamp(1.5rem,3.4vw,2.2rem);font-weight:800;line-height:1.25;margin-bottom:14px}
-        .promo-title span{background:linear-gradient(90deg,#FFEB3B,#FFC107);-webkit-background-clip:text;background-clip:text;color:transparent}
-        .promo-desc{font-size:1rem;opacity:.94;margin-bottom:20px;max-width:520px}
-        .promo-perks{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
-        .promo-perk{background:rgba(255,255,255,0.14);padding:8px 14px;border-radius:10px;font-size:13px;font-weight:600}
-        .promo-cta{display:inline-flex;align-items:center;gap:10px;background:#fff;color:#0f3a82;padding:13px 26px;border-radius:50px;font-weight:800;text-decoration:none;font-size:0.98rem;box-shadow:0 8px 22px rgba(0,0,0,0.18)}
-        .promo-card{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.18);border-radius:20px;padding:26px;backdrop-filter:blur(8px)}
-        .promo-card h4{font-size:0.78rem;letter-spacing:1.5px;text-transform:uppercase;font-weight:700;opacity:.78;margin-bottom:8px}
-        .promo-price{display:flex;align-items:baseline;gap:14px;margin-bottom:6px;flex-wrap:wrap}
-        .promo-price .now{font-size:2.6rem;font-weight:900;line-height:1}
-        .promo-price .before{font-size:1.1rem;text-decoration:line-through;opacity:.6}
-        .promo-price .save{background:#FFD600;color:#0f3a82;padding:3px 10px;border-radius:8px;font-size:0.78rem;font-weight:800}
-        .promo-period{font-size:0.92rem;opacity:.85;margin-bottom:16px}
-        .promo-currencies{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,0.18)}
-        .promo-cur{display:flex;justify-content:space-between;font-size:0.82rem;font-weight:600;background:rgba(255,255,255,0.06);padding:7px 11px;border-radius:8px}
-        .promo-cur span:first-child{opacity:.78}
-        .promo-note{font-size:0.74rem;opacity:.7;margin-top:14px;line-height:1.55}
-        .promo-plans{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,0.18)}
-        .promo-plan{display:flex;flex-direction:column;gap:2px;background:rgba(255,255,255,0.07);padding:9px 12px;border-radius:8px}
-        .promo-plan .pp-name{font-size:0.72rem;opacity:.8;font-weight:600}
-        .promo-plan .pp-price{font-size:1.05rem;font-weight:800}
-        .promo-plan .pp-price small{font-size:0.7rem;font-weight:600;opacity:.8}
-        @media(max-width:780px){.promo-inner{grid-template-columns:1fr;gap:24px}}
-    </style>
-    <div class="promo-inner">
+<!-- HERO -->
+<section class="hero" data-cta="hero">
+    <div class="container hero__grid">
         <div>
-            <span class="promo-tag">🎉 Launch Offer · Limited Time</span>
-            <h2 class="promo-title">Suu is now a full <span>AI Health Assistant</span><br>Try 3 Days Free, Then 50% Off</h2>
-            <p class="promo-desc">Activity-based water goals, caffeine & sugar tracking, hydration score, Apple Watch, Siri and more — try every Premium feature free for 3 days. <strong>No payment required upfront.</strong> Cancel anytime.</p>
-            <div class="promo-perks">
-                <span class="promo-perk">✅ No credit card during trial</span>
-                <span class="promo-perk">🔄 Cancel anytime</span>
-                <span class="promo-perk">📱 iOS + Android</span>
-            </div>
-            <a href="/app" class="promo-cta">Start 3-Day Free Trial <i class="fas fa-arrow-right"></i></a>
-        </div>
-        <div class="promo-card" aria-label="Annual Premium price">
-            <h4>Annual Premium · Launch Price</h4>
-            <div class="promo-price">
-                <span class="now">$30</span>
-                <span class="before">$60</span>
-                <span class="save">50% OFF</span>
-            </div>
-            <div class="promo-period">/ year · auto-renews after free trial</div>
-            <div class="promo-plans">
-                <div class="promo-plan"><span class="pp-name">Monthly</span><span class="pp-price">$3.99<small> / mo</small></span></div>
-                <div class="promo-plan"><span class="pp-name">Family · up to 3</span><span class="pp-price">$60<small> / yr</small></span></div>
-            </div>
-            <div class="promo-currencies" id="promoCurrencies">
-                <div class="promo-cur"><span>TRY (Turkish Lira)</span><span>≈ ₺1.200</span></div>
-                <div class="promo-cur"><span>EUR</span><span>≈ €28</span></div>
-                <div class="promo-cur"><span>SAR (Saudi Riyal)</span><span>≈ 112 ر.س</span></div>
-                <div class="promo-cur"><span>AED (UAE Dirham)</span><span>≈ 112 د.إ</span></div>
-                <div class="promo-cur"><span>KWD (Kuwaiti Dinar)</span><span>≈ 9.2 د.ك</span></div>
-                <div class="promo-cur"><span>QAR (Qatari Riyal)</span><span>≈ 110 ر.ق</span></div>
-            </div>
-            <p class="promo-note">* Approximate annual conversions — actual billing happens via App Store / Google Play in your store currency. Rates may vary with FX fluctuations.</p>
-        </div>
-    </div>
-</section>
-
-<!-- AI Nutrition & Hydration Spotlight -->
-<section id="ai-nutrition" class="ai-nutrition" aria-label="AI nutrition and hydration">
-    <style>
-        .ai-nutrition{padding:90px 20px;background:linear-gradient(180deg,#f7fbff 0%,#eef6ff 100%)}
-        .ai-inner{max-width:1140px;margin:0 auto}
-        .ai-head{text-align:center;max-width:760px;margin:0 auto 14px}
-        .ai-kicker{display:inline-block;background:#e3f0ff;color:#1565C0;font-size:12px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;padding:6px 14px;border-radius:999px;margin-bottom:16px}
-        .ai-head h2{font-size:clamp(1.7rem,3.6vw,2.4rem);font-weight:800;color:#0f3a82;line-height:1.25;margin-bottom:14px}
-        .ai-head p{font-size:1.05rem;color:#4a5a72;line-height:1.7}
-        .ai-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:42px 0 56px}
-        .ai-step{background:#fff;border:1px solid #dceaff;border-radius:18px;padding:26px 22px;position:relative;box-shadow:0 6px 20px rgba(21,101,192,0.06)}
-        .ai-step .num{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#2563EB,#00ACC1);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
-        .ai-step h3{font-size:1.15rem;font-weight:700;color:#0f3a82;margin-bottom:8px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
-        .ai-step p{font-size:0.95rem;color:#52607a;line-height:1.6}
-        .ai-spotlights{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-        .ai-card{background:#fff;border:1px solid #e2ecfb;border-radius:20px;padding:30px 26px;transition:transform .18s ease,box-shadow .18s ease}
-        .ai-card:hover{transform:translateY(-6px);box-shadow:0 16px 36px rgba(21,101,192,0.12)}
-        .ai-card.premium{border:2px solid #FFC107;background:linear-gradient(180deg,#fffdf5,#fff)}
-        .ai-card .ai-icon{font-size:32px;margin-bottom:16px}
-        .ai-card h3{font-size:1.25rem;font-weight:700;color:#0f3a82;margin-bottom:10px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-        .ai-card p{font-size:0.97rem;color:#52607a;line-height:1.65}
-        .prem-badge{font-size:0.62rem;background:#FFD600;color:#5a4500;padding:3px 9px;border-radius:6px;font-weight:800;letter-spacing:.4px;text-transform:uppercase;vertical-align:middle}
-        @media(max-width:880px){.ai-steps,.ai-spotlights{grid-template-columns:1fr}}
-    </style>
-    <div class="ai-inner">
-        <div class="ai-head">
-            <span class="ai-kicker">🤖 AI Nutrition Engine</span>
-            <h2>Manage your nutrition by voice — Suu handles the rest</h2>
-            <p>Suu no longer just tracks water. Log meals by voice, snap a photo for calories; let AI calculate your macros, calories and hydration in seconds and write them to Apple Health.</p>
-        </div>
-
-        <div class="ai-steps">
-            <div class="ai-step">
-                <div class="num">1</div>
-                <h3>🎙️ Speak</h3>
-                <p>Say "a bowl of lentil soup and half a glass of ayran." Suu automatically separates solids from liquids — soup goes to hydration, lentils go to macros.</p>
-            </div>
-            <div class="ai-step">
-                <div class="num">2</div>
-                <h3>📷 Snap <span class="prem-badge">Premium</span></h3>
-                <p>Take a photo of your plate. AI recognizes the food, estimates the portion and extracts calories + macros in seconds.</p>
-            </div>
-            <div class="ai-step">
-                <div class="num">3</div>
-                <h3>📊 Track</h3>
-                <p>Calories, protein, carbs, fat and sodium are written automatically to Apple Health / Health Connect. See your 1–100 nutrition score instantly.</p>
-            </div>
-        </div>
-
-        <div class="ai-spotlights">
-            <div class="ai-card">
-                <div class="ai-icon">🎙️</div>
-                <h3>Voice Logging</h3>
-                <p>You don't have to type your meal. Just speak — AI parses every food and drink in your sentence and <strong>automatically separates solids from liquids</strong>. Soup to hydration, rice to macros — in one sentence.</p>
-            </div>
-            <div class="ai-card premium">
-                <div class="ai-icon">📷</div>
-                <h3>Photo Analysis <span class="prem-badge">Premium</span></h3>
-                <p>The future of nutrition tracking. Snap your plate — Suu recognizes the food, estimates the portion and extracts calories + macros. No journaling, no barcode hunting — one photo is enough.</p>
-            </div>
-            <div class="ai-card">
-                <div class="ai-icon">🔔</div>
-                <h3>Smart Notifications</h3>
-                <p>An assistant that listens to your biological rhythm. Based on a 1–100 nutrition score after each meal, it nudges water at the right moment for digestion, and reminds you of that first morning sip against overnight dehydration. Not static alarms — dynamic nudges that follow your rhythm.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section" id="features">
-    <div class="container">
-        <h2 class="section-title">More Than Water Tracking — A Full Health Assistant</h2>
-        <p class="section-sub">Activity-based goals, caffeine & sugar analytics, hydration score, and AI coaching. Suu adapts to your lifestyle — whether you're an athlete, office worker, or just starting out.</p>
-        <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#e3f2fd;color:#1565C0;">🎯</div>
-                <h3>Personalized Daily Goal</h3>
-                <p>Set your water goal based on your weight, activity level, and climate. Suu adjusts as your lifestyle changes.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#e8f5e9;color:#2E7D32;">🔔</div>
-                <h3>Smart % Goal-Based Notifications</h3>
-                <p>Notifications based on real progress: "You're at 32% of your goal — time to drink!" Not a fixed timer. Fewer, smarter nudges that actually work.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#fff3e0;color:#E65100;">🏆</div>
-                <h3>Add Friends & Weekly League</h3>
-                <p>Add friends by username or QR code. View their progress and daily goals. Create a weekly league with up to 4 friends — cross-platform iOS + Android. Send "let's drink together" nudge notifications. No rival app has anything like this.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#fce4ec;color:#880E4F;">☕</div>
-                <h3>100+ Beverages + Starbucks & Coffee Chains</h3>
-                <p>Coffee, tea, juice, soda — each with a scientifically-calculated dehydration factor. Starbucks, Nevada, Greenwich and other popular coffee chains have their own dedicated section: pick your exact drink, log it, and instantly see how much extra water you need to compensate. Caffeine and sugar info included.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#fce4ec;color:#880E4F;">🤰</div>
-                <h3>Pregnancy & Breastfeeding Mode</h3>
-                <p>+300 ml automatically added during pregnancy, +700 ml during breastfeeding. Trimester-based calculation, mother-specific daily targets. The only water tracking app with this feature.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#f3e5f5;color:#4A148C;">📊</div>
-                <h3>PDF & CSV Detailed Reports</h3>
-                <p>Daily hydration score, weekly trends, monthly breakdowns — exportable as PDF or CSV. Share with your doctor or dietitian.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#e0f2f1;color:#004D40;">⌚</div>
-                <h3>iOS Dynamic Island & Widgets</h3>
-                <p>Track progress from your lock screen widget or Dynamic Island — log a drink without even unlocking your phone.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#e8f5e9;color:#1B5E20;">🍎</div>
-                <h3>Apple Health & Google Fit Integration</h3>
-                <p>Full two-way sync with Apple HealthKit and Google Health Connect. Suu reads your step count and active calories to dynamically adjust your daily goal. Water logged in Suu appears in your Apple or Google Health dashboard automatically.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#e3f2fd;color:#0D47A1;">⌚</div>
-                <h3>Apple Watch App</h3>
-                <p>Standalone SwiftUI watchOS app — log water right from your wrist without touching your phone. Progress ring shows your daily goal at a glance. Real-time sync via App Group. No other water tracker has a standalone Apple Watch experience like Suu.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#fff8e1;color:#E65100;">🎙️</div>
-                <h3>Siri Shortcuts & Voice Commands</h3>
-                <p>Add water hands-free with Siri Shortcuts. Set custom commands like "log a coffee" or "add 500ml water." Built-in voice recognition also works on Android — no Siri required. Assign a custom trigger word to any beverage and log it instantly.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#fce4ec;color:#880E4F;">🏅</div>
-                <h3>Badges, Streaks & Challenges</h3>
-                <p>Earn badges for daily goal completions, unlock streak rewards at 7, 30, and 100 days, and take on individual hydration challenges. Science shows gamification increases long-term habit adherence — Suu makes drinking water actually fun.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#e8eaf6;color:#283593;">🌤️</div>
-                <h3>Weather-Based Hydration</h3>
-                <p>Suu connects to OpenWeatherMap to pull your city's real-time temperature and humidity. On hot or humid days it automatically raises your daily goal — the only water tracker smart enough to account for your local weather conditions.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#e1f5fe;color:#01579B;">🏃</div>
-                <h3>Activity-Based Auto Goal <span style="font-size:0.65rem;background:#FFD600;color:#0f3a82;padding:2px 8px;border-radius:6px;margin-left:6px;font-weight:800;vertical-align:middle;">NEW</span></h3>
-                <p>Walking, running, swimming, cycling, fitness — Suu reads your activities from Apple Health and Google Fit and automatically increases your daily water goal based on the type, duration and intensity of your workout. ~+400 ml after a 30-min run, ~+600 ml after an hour of swimming. Real, science-backed adjustments.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#fff3e0;color:#BF360C;">🧪</div>
-                <h3>Caffeine & Sugar Tracking <span style="font-size:0.65rem;background:#FFD600;color:#0f3a82;padding:2px 8px;border-radius:6px;margin-left:6px;font-weight:800;vertical-align:middle;">NEW</span></h3>
-                <p>Suu doesn't just track water — it calculates the caffeine (mg) and sugar (g) in every drink you log. Get smart warnings when you approach the FDA daily caffeine limit (400 mg) or the WHO added-sugar threshold (25 g). A Starbucks Latte? +150 mg caffeine, +14 g sugar. A complete health dashboard.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#ede7f6;color:#311B92;">🤖</div>
-                <h3>AI Health Assistant <span style="font-size:0.65rem;background:#FFD600;color:#0f3a82;padding:2px 8px;border-radius:6px;margin-left:6px;font-weight:800;vertical-align:middle;">NEW</span></h3>
-                <p>Suu is now far more than a water app: a personal hydration coach, activity-aware suggestions, beverage analytics, and caffeine/sugar warnings — a full health assistant in your pocket. Hourly contextual messages and weekly personal reports.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#e0f7fa;color:#006064;">💬</div>
-                <h3>AI Chat Assistant <span style="font-size:0.65rem;background:#FFD600;color:#0f3a82;padding:2px 8px;border-radius:6px;margin-left:6px;font-weight:800;vertical-align:middle;">NEW</span></h3>
-                <p>Suu's in-app assistant now chats with real AI — it doesn't just answer questions, it acts for you. Say "log 2 glasses of water" and it records it instantly. Ask "how much have I had today?" and it summarizes your stats. It navigates you to the right screen (stats, goal, beverages), sets reminders, gives personal coaching from your profile, and nudges you step by step toward your daily goal. Just talk in natural language — Suu handles the rest.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#e8f5e9;color:#1B5E20;">💱</div>
-                <h3>Multi-Currency Pricing <span style="font-size:0.65rem;background:#FFD600;color:#0f3a82;padding:2px 8px;border-radius:6px;margin-left:6px;font-weight:800;vertical-align:middle;">NEW</span></h3>
-                <p>USD, EUR, Turkish Lira, Saudi Riyal, UAE Dirham, Kuwaiti Dinar, Qatari Riyal — view Premium pricing in your local currency. Launch price: $30 / ≈€28 / ≈₺1.200 / ≈112 SAR / ≈9.2 KWD per year.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section screenshots-section">
-    <div class="container">
-        <h2 class="section-title">Beautiful, Simple Interface</h2>
-        <p class="section-sub">Clean design focused on one thing: helping you drink more water, effortlessly.</p>
-        <div class="screenshots-row">
-          <div class="screenshots-track">
-            <div class="screenshot-wrap"><img fetchpriority="high" src="assets/screenshots/ana-ekran-en.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/ana-ekran.webp'" alt="Advanced mode home screen"></div>
-            <div class="screenshot-wrap"><img loading="lazy" src="assets/screenshots/basit-ekran-en.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/basit-ekran.webp'" alt="Simple mode home screen"></div>
-            <div class="screenshot-wrap"><img loading="lazy" src="assets/screenshots/istatikler-en.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/istatikler.webp'" alt="Statistics"></div>
-            <div class="screenshot-wrap"><img loading="lazy" src="assets/screenshots/asistan-en.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/su-ekleme.webp'" alt="AI assistant"></div>
-            <div class="screenshot-wrap"><img loading="lazy" src="assets/screenshots/gun-challenge-en.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/hedefler.webp'" alt="7-day challenge"></div>
-            <div class="screenshot-wrap"><img loading="lazy" src="assets/screenshots/hatirlama-en.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/hatirlama.webp'" alt="Reminders"></div>
-          </div>
-        </div>
-    </div>
-</section>
-
-<section class="section" id="stats">
-    <div class="container">
-        <h2 class="section-title">Trusted by Thousands</h2>
-        <p class="section-sub">Suu users across the world track millions of glasses every day.</p>
-        <div class="stats-row">
-            <div class="stat-card">
-                <div class="stat-num">4.9★</div>
-                <div class="stat-label">App Store Rating</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-num">5.0★</div>
-                <div class="stat-label">Google Play Rating</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-num">2,847+</div>
-                <div class="stat-label">User Reviews</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-num">100+</div>
-                <div class="stat-label">Beverages Tracked</div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container">
-        <h2 class="section-title">Learn About Hydration</h2>
-        <p class="section-sub">Science-backed articles to help you understand why staying hydrated matters.</p>
-        <div class="blog-grid">
-            <a href="blog/en/activity-based-water-tracking.html" class="blog-card">
-                <div class="tag" style="color:#FF6B35;">⚡ NEW</div>
-                <h4>Activity-Based Water Tracking — Walking, Running, Swimming</h4>
-            </a>
-            <a href="blog/en/caffeine-sugar-tracking.html" class="blog-card">
-                <div class="tag" style="color:#FF6B35;">⚡ NEW</div>
-                <h4>Caffeine and Sugar Tracking — Stay Within Your Daily Limits</h4>
-            </a>
-            <a href="blog/en/apple-watch-water-tracking.html" class="blog-card">
-                <div class="tag">Apple Watch</div>
-                <h4>Apple Watch Water Tracking: The Complete Guide</h4>
-            </a>
-            <a href="blog/en/hydration-score-explained.html" class="blog-card">
-                <div class="tag">AI Health</div>
-                <h4>Hydration Score Explained — How Suu Calculates 0-100</h4>
-            </a>
-            <a href="blog/en/benefits-of-drinking-water.html" class="blog-card">
-                <div class="tag">Health</div>
-                <h4>10 Science-Backed Benefits of Drinking Water Daily</h4>
-            </a>
-            <a href="blog/en/how-much-water-should-i-drink.html" class="blog-card">
-                <div class="tag">Hydration Guide</div>
-                <h4>How Much Water Should I Drink Per Day?</h4>
-            </a>
-            <a href="blog/en/signs-of-dehydration.html" class="blog-card">
-                <div class="tag">Health</div>
-                <h4>Signs of Dehydration You Shouldn't Ignore</h4>
-            </a>
-            <a href="blog/en/hydration-and-exercise.html" class="blog-card">
-                <div class="tag">Sports</div>
-                <h4>Hydration and Exercise: The Complete Guide</h4>
-            </a>
-            <a href="blog/en/morning-water-benefits.html" class="blog-card">
-                <div class="tag">Morning Routine</div>
-                <h4>Why You Should Drink Water First Thing in the Morning</h4>
-            </a>
-            <a href="blog/en/water-drinking-habits.html" class="blog-card">
-                <div class="tag">Habits</div>
-                <h4>How to Build a Daily Water Drinking Habit</h4>
-            </a>
-        </div>
-        <p style="text-align:center;margin-top:28px;"><a href="blog-en.html" style="color:#4A90D9;font-weight:600;text-decoration:none;">View all articles →</a></p>
-    </div>
-</section>
-
-<section class="cta-section">
-    <div class="container">
-        <h2>Ready to Start Hydrating Better?</h2>
-        <p>Join thousands of users who track their water intake daily with Suu — free, no ads, no subscription required.</p>
-        <div class="hero-btns">
-            <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" class="btn-store btn-ios" target="_blank" rel="noopener">
-                <i class="fab fa-apple" style="font-size:1.3rem;color:#1a1a2e;"></i>
-                <span style="color:#1a1a2e;"><small style="display:block;font-size:10px;font-weight:500;opacity:.6;">Download on the</small>App Store</span>
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro" class="btn-store btn-android" target="_blank" rel="noopener">
-                <i class="fab fa-google-play" style="font-size:1.2rem;"></i>
-                <span><small style="display:block;font-size:10px;font-weight:500;opacity:.8;">Get it on</small>Google Play</span>
-            </a>
-        </div>
-    </div>
-</section>
-
-<footer>
-    <p style="margin-bottom:10px;line-height:2;">
-        <a href="ozellikler-en.html">Features</a> &nbsp;·&nbsp;
-        <a href="premium-en.html">Premium</a> &nbsp;·&nbsp;
-        <a href="download.html">Download</a> &nbsp;·&nbsp;
-        <a href="water-calculator.html">Water Calculator</a> &nbsp;·&nbsp;
-        <a href="adaptive-hydration-brain.html">Adaptive Hydration Brain</a> &nbsp;·&nbsp;
-        <a href="suu-index.html">Suu Index</a> &nbsp;·&nbsp;
-        <a href="personal-hydration-plan.html">Hydration Plan</a> &nbsp;·&nbsp;
-        <a href="who-is-suu-for.html">Who Is Suu For</a> &nbsp;·&nbsp;
-        <a href="faq-en.html">FAQ</a> &nbsp;·&nbsp;
-        <a href="about.html">About</a> &nbsp;·&nbsp;
-        <a href="blog-en.html">Blog</a>
-    </p>
-    <p>© 2026 Suu - Calorie & Water Tracker &nbsp;|&nbsp;
-        <a href="/">🇹🇷 Türkçe</a> &nbsp;
-        <a href="hosgeldiniz-ar.html">🇸🇦 العربية</a> &nbsp;|&nbsp;
-        <a href="gizlilik-politikasi.html">Privacy Policy</a> &nbsp;
-        <a href="kullanim-sartlari.html">Terms of Use</a>
-    </p>
-    <p style="margin-top:6px; font-size:11px; opacity:0.7;">Developed by <a href="https://www.linkedin.com/in/furkanfindikli/" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.8);">Furkan Mert Fındıklı</a> — Istanbul, Turkey</p>
-</footer>
-
-<!-- Sticky Mobile Download Bar -->
-<div class="sticky-download-bar" id="stickyDownloadBar">
-    <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" class="sticky-btn sticky-btn-apple" target="_blank" rel="noopener">
-        <i class="fab fa-apple"></i> App Store
+            <span class="eyebrow">Water · Calories · Exercise</span>
+            <h1 class="hero__title">Water, Calories and Exercise — <span class="accent">All in One App</span></h1>
+            <p class="hero__lead">Photograph your meal and get its calories and macros in seconds. Track real hydration across 91 beverages, log around 50 sport activities — and let every workout update your daily water goal automatically.</p>
+            
+<div class="btn-row">
+    <a href="/app?src=hero" class="btn-store" aria-label="Download on the App Store">
+        <span class="btn-store__icon"><svg width="22" height="22" aria-hidden="true"><use href="#i-apple"></use></svg></span>
+        <span class="btn-store__label">
+            <span class="btn-store__small">Download on the</span>
+            <span class="btn-store__big">App Store</span>
+        </span>
     </a>
-    <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro" class="sticky-btn sticky-btn-google" target="_blank" rel="noopener">
-        <i class="fab fa-google-play"></i> Google Play
+    <a href="/app?src=hero" class="btn-store" aria-label="Get it on Google Play">
+        <span class="btn-store__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24">
+                <path fill="#00D2FF" d="M3.6 1.8A1.5 1.5 0 0 0 3 3v18c0 .5.2.9.6 1.2l.1.1 10.1-10.1v-.3L3.7 1.7l-.1.1z"/>
+                <path fill="#FFCE00" d="M17.2 15.6l-3.4-3.4v-.3l3.4-3.4.1.1 4 2.3c1.2.6 1.2 1.7 0 2.4l-4 2.3z"/>
+                <path fill="#FF3A44" d="M17.3 15.5 13.8 12 3.6 22.2c.4.4 1 .5 1.8.1l11.9-6.8"/>
+                <path fill="#00E676" d="M17.3 8.5 5.4 1.7c-.8-.4-1.4-.4-1.8.1L13.8 12l3.5-3.5z"/>
+            </svg>
+        </span>
+        <span class="btn-store__label">
+            <span class="btn-store__small">Download on the</span>
+            <span class="btn-store__big">Google Play</span>
+        </span>
     </a>
 </div>
+            <p class="small text-subtle" style="margin-block-start:var(--sp-4)">Free to download · Premium <strong>free for 3 days</strong></p>
+            <div class="trust-row">
+                <span class="trust-row__item">
+                    <span class="trust-row__stars" aria-hidden="true">★★★★★</span>
+                    <span>4.9 Google Play · 5.0 App Store</span>
+                </span>
+                <span class="trust-row__item">2,800+ ratings</span>
+                <span class="trust-row__item">Apple Health &amp; Health Connect</span>
+                <span class="trust-row__item">7 languages</span>
+            </div>
+        </div>
+        <div class="hero__media">
+            <div class="phone phone--lg">
+                <img src="/assets/screenshots/ios/en/ana-ekran.webp"
+                     data-screen="ana-ekran" data-platform="ios"
+                     width="585" height="1266" fetchpriority="high"
+                     alt="Suu home screen: daily water, calorie and exercise summary">
+            </div>
+        </div>
+    </div>
+</section>
 
-<script src="lang-switcher.js?v=2" defer></script>
-<link rel="stylesheet" href="donation-widget.css?v=2">
-<script src="donation-widget.js?v=2" defer></script>
+<!-- ÜÇ SÜTUN -->
+<section class="section section--subtle" id="pillars">
+    <div class="container">
+        <div class="section-head">
+            <h2>Not three separate apps — one system where each part feeds the others</h2>
+            <p>Most apps keep water, calories and exercise in separate tabs. In Suu they update each other.</p>
+        </div>
+        <div class="pillars">
+            <article class="pillar pillar--water">
+                <span class="pillar__icon"><svg width="26" height="26" aria-hidden="true"><use href="#i-water"></use></svg></span>
+                <h3>Water Tracking</h3>
+                <p><strong>91 beverages</strong> — coffee, tea, soda, juice, milk, energy drinks. The real contribution of each to your fluid balance is calculated.</p>
+                <p style="margin-block-start:var(--sp-3)"><a href="#su-hedefi">How the smart water goal works <span class="arrow" aria-hidden="true">→</span></a></p>
+            </article>
+            <article class="pillar pillar--calories">
+                <span class="pillar__icon"><svg width="26" height="26" aria-hidden="true"><use href="#i-flame"></use></svg></span>
+                <h3>Calories &amp; Nutrition</h3>
+                <p><strong>Photograph your meal</strong> — let Suu AI extract calories, protein, carbs and fat, and build your macros automatically.</p>
+                <p style="margin-block-start:var(--sp-3)"><a href="#kalori">Photo calorie analysis <span class="arrow" aria-hidden="true">→</span></a></p>
+            </article>
+            <article class="pillar pillar--exercise">
+                <span class="pillar__icon"><svg width="26" height="26" aria-hidden="true"><use href="#i-run"></use></svg></span>
+                <h3>Exercise Tracking</h3>
+                <p><strong>~50 sport activities</strong> — running, walking, cycling, swimming, fitness. Every workout raises your water goal automatically.</p>
+                <p style="margin-block-start:var(--sp-3)"><a href="#egzersiz">Exercise metrics <span class="arrow" aria-hidden="true">→</span></a></p>
+            </article>
+        </div>
+        <div class="answer-box" style="margin-block-start:var(--sp-10)">
+            <p><strong>Short answer:</strong> Suu is a health app that combines water tracking, photo-based calorie analysis and exercise tracking in a single app. What sets it apart is that the three are connected: the run you log raises your daily water goal, the protein and sodium in your meal determine the extra water digestion requires, and the real hydration contribution of the coffee you drank is accounted for. Free on iOS and Android, available in 7 languages.</p>
+        </div>
+    </div>
+</section>
+
+<!-- KALORİ -->
+<section class="section" id="kalori" data-cta="kalori">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Calories &amp; Nutrition</span>
+            <h2>You don&#39;t need to weigh your plate to count calories</h2>
+            <p>Take the photo — let Suu AI handle the rest.</p>
+        </div>
+        <div class="cards">
+            <article class="card">
+                <div class="card__icon" style="color:var(--pillar-calories)"><svg width="30" height="30" aria-hidden="true"><use href="#i-camera"></use></svg></div>
+                <h3>Photo analysis</h3>
+                <p>Photograph your meal and let calories, protein, carbs and fat be extracted and your macros built automatically. Your photo is not stored permanently.</p>
+            </article>
+            <article class="card">
+                <div class="card__icon" style="color:var(--pillar-calories)">🎙️</div>
+                <h3>Voice or text entry</h3>
+                <p>“Chicken salad and a glass of ayran for lunch” — say it and it&#39;s logged in seconds. Speech is converted to text on your device, never sent to a server.</p>
+            </article>
+            <article class="card">
+                <div class="card__icon" style="color:var(--pillar-calories)">📊</div>
+                <h3>Macros and nutrition score</h3>
+                <p>Daily calorie, protein, carb and fat tracking. A 1–100 nutrition score shows the balance of your day at a glance.</p>
+            </article>
+        </div>
+        <div class="callout" style="margin-block-start:var(--sp-8)">
+            <p><strong>On the free plan</strong> you get 3 AI analyses per day. Photo analysis and unlimited use are part of Premium — <a href="#fiyat">free to try for 3 days</a>.</p>
+        </div>
+    </div>
+</section>
+
+<!-- SUU AI -->
+<section class="section section--subtle" id="suu-ai">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Suu AI</span>
+            <h2>Run the app by talking to it</h2>
+            <p>Instead of navigating menus, just say what you want.</p>
+        </div>
+        <div class="cards">
+            <article class="card">
+                <div class="card__icon" style="color:var(--pillar-water)"><svg width="30" height="30" aria-hidden="true"><use href="#i-chat"></use></svg></div>
+                <h3>“Add two glasses of water”</h3>
+                <p>Logging water and drinks, creating meals, adding workouts — all through chat.</p>
+            </article>
+            <article class="card">
+                <div class="card__icon" style="color:var(--pillar-water)">🧠</div>
+                <h3>“Analyse today&#39;s nutrition”</h3>
+                <p>It interprets the day&#39;s macro balance and points out what&#39;s missing.</p>
+            </article>
+            <article class="card">
+                <div class="card__icon" style="color:var(--pillar-water)">⚙️</div>
+                <h3>“Update my water goal”</h3>
+                <p>Goals and smart reminders can be adjusted from the chat too.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- EGZERSİZ -->
+<section class="section" id="egzersiz">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Exercise Tracking</span>
+            <h2>Around 50 sport activities — and all of them tied to your water goal</h2>
+            <p>Running, walking, cycling, fitness, swimming, hiking, cardio and more.</p>
+        </div>
+        <div class="cards">
+            <article class="card">
+                <div class="card__icon" style="color:var(--pillar-exercise)"><svg width="30" height="30" aria-hidden="true"><use href="#i-run"></use></svg></div>
+                <h3>Running and walking</h3>
+                <p>Every detail on one screen after your session.</p>
+                <div class="metrics">
+                    <span class="metric"><span class="metric__label">Distance</span></span>
+                    <span class="metric"><span class="metric__label">Duration</span></span>
+                    <span class="metric"><span class="metric__label">Pace</span></span>
+                    <span class="metric"><span class="metric__label">Avg. speed</span></span>
+                    <span class="metric"><span class="metric__label">Calories burned</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__icon" style="color:var(--pillar-exercise)">🚴</div>
+                <h3>Cycling</h3>
+                <p>Detailed statistics including the elevation profile of your route.</p>
+                <div class="metrics">
+                    <span class="metric"><span class="metric__label">Speed</span></span>
+                    <span class="metric"><span class="metric__label">Avg. speed</span></span>
+                    <span class="metric"><span class="metric__label">Distance</span></span>
+                    <span class="metric"><span class="metric__label">Elevation</span></span>
+                    <span class="metric"><span class="metric__label">Duration</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__icon" style="color:var(--pillar-exercise)">💧</div>
+                <h3>Exercise → water goal</h3>
+                <p>The fluid you lose through sweat is estimated and your daily water goal rises automatically. No manual adjustment when the workout ends.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- SU HEDEFİ + HESAPLAYICI -->
+<section class="section section--subtle" id="su-hedefi">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Water Tracking</span>
+            <h2>Not a fixed number — a goal that changes through the day</h2>
+            <p>“Two litres a day” isn&#39;t right for everyone. Suu calculates your goal from five separate signals.</p>
+        </div>
+        <div class="cards" style="margin-block-end:var(--sp-10)">
+            <article class="card">
+                <h3>Age, weight, activity</h3>
+                <p>The base goal is calculated from your personal profile.</p>
+            </article>
+            <article class="card">
+                <h3>Air temperature</h3>
+                <p>On hot days the goal rises automatically.</p>
+            </article>
+            <article class="card">
+                <h3>Exercise</h3>
+                <p>Every workout you log adds extra fluid need.</p>
+            </article>
+            <article class="card">
+                <h3>What you eat</h3>
+                <p>The protein and sodium in your meal determine the extra water digestion requires.</p>
+            </article>
+            <article class="card">
+                <h3>91 beverages</h3>
+                <p>The real contribution of coffee, tea and ayran to your fluid balance is calculated separately.</p>
+            </article>
+            <article class="card">
+                <h3>Suu Index</h3>
+                <p>Your 0–100 hydration score updates live through the day. <a href="suu-index.html">How it's calculated →</a></p>
+            </article>
+        </div>
+
+        <div class="card" style="max-width:44rem;margin-inline:auto">
+            <h3>Calculate your daily water need</h3>
+            <p class="small">A starting estimate. In the app the goal is further updated by weather, exercise and what you eat.</p>
+            <form data-water-calc style="margin-block-start:var(--sp-5)">
+                <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(9rem,1fr));gap:var(--sp-4)">
+                    <label style="display:block">
+                        <span class="small" style="display:block;margin-block-end:var(--sp-2);font-weight:600">Age</span>
+                        <input type="number" name="age" min="10" max="110" required placeholder="28"
+                               style="width:100%;min-height:46px;padding:0 var(--sp-3);border:1px solid var(--border);border-radius:var(--r-md);background:var(--bg);color:var(--text);font:inherit">
+                    </label>
+                    <label style="display:block">
+                        <span class="small" style="display:block;margin-block-end:var(--sp-2);font-weight:600">Weight (kg)</span>
+                        <input type="number" name="weight" min="25" max="300" required placeholder="72"
+                               style="width:100%;min-height:46px;padding:0 var(--sp-3);border:1px solid var(--border);border-radius:var(--r-md);background:var(--bg);color:var(--text);font:inherit">
+                    </label>
+                    <label style="display:block">
+                        <span class="small" style="display:block;margin-block-end:var(--sp-2);font-weight:600">Gender</span>
+                        <select name="gender" style="width:100%;min-height:46px;padding:0 var(--sp-3);border:1px solid var(--border);border-radius:var(--r-md);background:var(--bg);color:var(--text);font:inherit">
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                        </select>
+                    </label>
+                    <label style="display:block">
+                        <span class="small" style="display:block;margin-block-end:var(--sp-2);font-weight:600">Activity</span>
+                        <select name="activity" style="width:100%;min-height:46px;padding:0 var(--sp-3);border:1px solid var(--border);border-radius:var(--r-md);background:var(--bg);color:var(--text);font:inherit">
+                            <option value="sedentary">Sedentary</option>
+                            <option value="light">Lightly active</option>
+                            <option value="moderate" selected>Moderately active</option>
+                            <option value="active">Active</option>
+                            <option value="extra">Very active</option>
+                        </select>
+                    </label>
+                </div>
+                <button type="submit" class="btn btn--primary btn--block" style="margin-block-start:var(--sp-5)">Calculate</button>
+                <div data-calc-result hidden style="margin-block-start:var(--sp-6);padding:var(--sp-5);border-radius:var(--r-md);background:var(--pillar-water-soft);text-align:center">
+                    <p style="margin:0;font-size:var(--fs-2xl);font-weight:800;color:var(--text)"><span data-calc-liters>—</span> litres</p>
+                    <p class="small" style="margin-block-start:var(--sp-2)">About <span data-calc-cups>—</span> glasses (250 ml)</p>
+                    <a href="/app?src=calculator" class="btn btn--primary" style="margin-block-start:var(--sp-4)">Start tracking with Suu</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- EKRAN GÖRÜNTÜLERİ -->
+<section class="section" id="ekranlar">
+    <div class="container">
+        <div class="section-head">
+            <h2>Explore the app</h2>
+            <p>Real screens from the app — swipe to see them all.</p>
+        </div>
+        <div class="shots" data-shots>
+            <div style="display:flex;justify-content:center">
+                <div class="shots__tabs" role="tablist" aria-label="Platform selection">
+                    <button class="shots__tab" role="tab" id="tab-ios" aria-controls="shots-ios" aria-selected="true" data-platform="ios">
+                        <svg width="16" height="16" aria-hidden="true"><use href="#i-apple"></use></svg> iOS
+                    </button>
+                    <button class="shots__tab" role="tab" id="tab-android" aria-controls="shots-android" aria-selected="false" data-platform="android">Android</button>
+                </div>
+            </div>
+            <div class="shots__panel" id="shots-ios" role="tabpanel" aria-labelledby="tab-ios">
+                <div class="shots__strip">
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/ios/en/ana-ekran.webp" data-screen="ana-ekran" data-platform="ios" loading="lazy" width="585" height="1266" alt="iOS — Home screen"></div>
+                        <figcaption>Home screen</figcaption>
+                    </figure>
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/ios/en/kalori-foto-analiz.webp" data-screen="kalori-foto-analiz" data-platform="ios" loading="lazy" width="585" height="1266" alt="iOS — Photo calories"></div>
+                        <figcaption>Photo calories</figcaption>
+                    </figure>
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/ios/en/makro-detay.webp" data-screen="makro-detay" data-platform="ios" loading="lazy" width="585" height="1266" alt="iOS — Macro breakdown"></div>
+                        <figcaption>Macro breakdown</figcaption>
+                    </figure>
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/ios/en/suu-ai-sohbet.webp" data-screen="suu-ai-sohbet" data-platform="ios" loading="lazy" width="585" height="1266" alt="iOS — Suu AI"></div>
+                        <figcaption>Suu AI</figcaption>
+                    </figure>
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/ios/en/kosu-detay.webp" data-screen="kosu-detay" data-platform="ios" loading="lazy" width="585" height="1266" alt="iOS — Run detail"></div>
+                        <figcaption>Run detail</figcaption>
+                    </figure>
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/ios/en/istatistik.webp" data-screen="istatistik" data-platform="ios" loading="lazy" width="585" height="1266" alt="iOS — Statistics"></div>
+                        <figcaption>Statistics</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="shots__panel" id="shots-android" role="tabpanel" aria-labelledby="tab-android" hidden>
+                <div class="shots__strip">
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/android/en/ana-ekran.webp" data-screen="ana-ekran" data-platform="android" loading="lazy" width="585" height="1266" alt="Android — Home screen"></div>
+                        <figcaption>Home screen</figcaption>
+                    </figure>
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/android/en/kalori-foto-analiz.webp" data-screen="kalori-foto-analiz" data-platform="android" loading="lazy" width="585" height="1266" alt="Android — Photo calories"></div>
+                        <figcaption>Photo calories</figcaption>
+                    </figure>
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/android/en/makro-detay.webp" data-screen="makro-detay" data-platform="android" loading="lazy" width="585" height="1266" alt="Android — Macro breakdown"></div>
+                        <figcaption>Macro breakdown</figcaption>
+                    </figure>
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/android/en/suu-ai-sohbet.webp" data-screen="suu-ai-sohbet" data-platform="android" loading="lazy" width="585" height="1266" alt="Android — Suu AI"></div>
+                        <figcaption>Suu AI</figcaption>
+                    </figure>
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/android/en/kosu-detay.webp" data-screen="kosu-detay" data-platform="android" loading="lazy" width="585" height="1266" alt="Android — Run detail"></div>
+                        <figcaption>Run detail</figcaption>
+                    </figure>
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/android/en/istatistik.webp" data-screen="istatistik" data-platform="android" loading="lazy" width="585" height="1266" alt="Android — Statistics"></div>
+                        <figcaption>Statistics</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- OYUNLAŞTIRMA -->
+<section class="section section--subtle" id="sosyal">
+    <div class="container">
+        <div class="section-head"><h2>Building a habit alone is hard</h2></div>
+        <div class="cards">
+            <article class="card">
+                <div class="card__icon">🐾</div>
+                <h3>Virtual pet</h3>
+                <p>It grows as you complete your daily goals and earns you rewards.</p>
+            </article>
+            <article class="card">
+                <div class="card__icon">🏆</div>
+                <h3>Friend leagues</h3>
+                <p>Weekly, up to 4 people. Works cross-platform between iOS and Android.</p>
+            </article>
+            <article class="card">
+                <div class="card__icon">📱</div>
+                <h3>Story sharing</h3>
+                <p>Share your water intake, walks, runs and achievements with modern story templates.</p>
+            </article>
+            <article class="card">
+                <div class="card__icon">💙</div>
+                <h3>2% donation programme</h3>
+                <p>2% of Premium revenue goes to clean water wells in Africa. <a href="blog/en/africa-water-well-donation-program.html">Transparent report →</a></p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- PLATFORM MATRİSİ -->
+<section class="section" id="platform">
+    <div class="container">
+        <div class="section-head">
+            <h2>Platform support</h2>
+            <p>We show exactly which feature works where.</p>
+        </div>
+        <div class="table-scroll">
+            <table class="table">
+                <caption class="sr-only">iOS and Android support for Suu features</caption>
+                <thead><tr><th scope="col">Feature</th><th scope="col">iOS</th><th scope="col">Android</th></tr></thead>
+                <tbody>
+                    <tr><td>Photo calorie analysis</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+                    <tr><td>Voice entry</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+                    <tr><td>Exercise tracking (~50 activities)</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+                    <tr><td>Suu AI chat</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+                    <tr><td>Friend leagues · stories · virtual pet</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+                    <tr><td>Widgets</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+                    <tr><td>Apple Health sync</td><td class="yes">✓</td><td class="no">—</td></tr>
+                    <tr><td>Google Health Connect sync</td><td class="no">—</td><td class="yes">✓</td></tr>
+                    <tr><td>Siri shortcuts</td><td class="yes">✓</td><td class="no">—</td></tr>
+                    <tr><td>Dynamic Island</td><td class="yes">✓</td><td class="no">—</td></tr>
+                    <tr><td>Live Activities</td><td class="yes">✓</td><td class="no">—</td></tr>
+                    <tr><td>Apple Watch app</td><td class="soon">Coming soon</td><td class="no">—</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="small text-subtle" style="margin-block-start:var(--sp-4)">Apple Watch data already flows into Suu through Apple Health today and updates your water goal — <a href="blog/en/apple-watch-water-tracking.html">here's how to set it up</a>.</p>
+    </div>
+</section>
+
+<!-- KARŞILAŞTIRMA -->
+<section class="section section--subtle" id="karsilastirma">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Comparison</span>
+            <h2>Where does Suu differ from the other apps?</h2>
+        </div>
+        <div class="disclosure" style="margin-block-end:var(--sp-6)">This table was prepared by the Suu team. Competitor features reflect publicly available information as of 2026 and may change. Every app is strong somewhere — we note that below too.</div>
+        <div class="table-scroll">
+            <table class="table">
+                <caption class="sr-only">Comparison of Suu with popular calorie and water tracking apps</caption>
+                <thead><tr>
+                    <th scope="col">Feature</th>
+                    <th scope="col" class="col-suu">Suu</th>
+                    <th scope="col">MyFitnessPal</th>
+                    <th scope="col">Yazio</th>
+                    <th scope="col">WaterMinder</th>
+                </tr></thead>
+                <tbody>
+                    <tr><td>Photo calorie analysis</td><td class="col-suu yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✗</td></tr>
+                    <tr><td>Real hydration maths (per beverage)</td><td class="col-suu yes">✓ 91 beverages</td><td class="no">Simple counter</td><td class="no">Simple counter</td><td class="yes">✓</td></tr>
+                    <tr><td>Exercise tracking (in-app)</td><td class="col-suu yes">✓ ~50 activities</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✗</td></tr>
+                    <tr><td>Workouts update the water goal</td><td class="col-suu yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+                    <tr><td>Digestion water based on your meal</td><td class="col-suu yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+                    <tr><td>Weather-adjusted goal</td><td class="col-suu yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+                    <tr><td>Control the app by chat</td><td class="col-suu yes">✓ Suu AI</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+                    <tr><td>Food database breadth</td><td class="col-suu ">Good</td><td class="yes">✓ Widest</td><td class="yes">✓ Wide</td><td class="no">—</td></tr>
+                    <tr><td>Recipe library</td><td class="col-suu no">✗</td><td class="yes">✓</td><td class="yes">✓ Strong</td><td class="no">—</td></tr>
+                    <tr><td>Apple Watch app</td><td class="col-suu soon">Coming soon</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+                    <tr><td>Full Turkish localisation</td><td class="col-suu yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✗</td></tr>
+                    <tr><td>Arabic RTL support</td><td class="col-suu yes">✓</td><td class="no">Limited</td><td class="no">Limited</td><td class="no">✗</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="verdict" style="margin-block-start:var(--sp-8)">
+            <h3>Verdict</h3>
+            <p><strong>Where the competitors are stronger:</strong> MyFitnessPal has the widest food database in the category; you&#39;re more likely to find a branded product by barcode there. Yazio&#39;s recipe and diet plan library is strong. WaterMinder ships an Apple Watch app today, while Suu&#39;s is still on the way.</p>
+            <p><strong>Where Suu pulls ahead:</strong> None of these three run water, calories and exercise as a <em>connected</em> system. In Suu the run you log raises your water goal, the meal you eat triggers a digestion-water calculation, and the real hydration contribution of your coffee is subtracted. If you'd rather use one app than three — and hydration genuinely matters to you — Suu is the clear pick.</p>
+            <p style="margin-block-start:var(--sp-4)"><a href="blog/en/best-calorie-counting-app.html">Detailed 5-app comparison →</a> · <a href="blog/en/suu-vs-myfitnesspal.html">Suu vs MyFitnessPal →</a> · <a href="blog/en/water-calorie-exercise-one-app.html">Water + calories + exercise in one app →</a></p>
+        </div>
+    </div>
+</section>
+
+<!-- YORUMLAR -->
+<section class="section" id="yorumlar">
+    <div class="container">
+        <div class="section-head">
+            <h2>User reviews</h2>
+            <p>Google Play 4.9★ · App Store 5.0★ · 2,800+ ratings — reviews below translated from Turkish</p>
+        </div>
+        <div class="cards">
+            <article class="card">
+                <p class="small" style="color:var(--accent-gold);margin-block-end:var(--sp-2)" aria-label="5 out of 5 stars">★★★★★</p>
+                <p>&ldquo;An amazing app! My drinking habit has completely changed. I now manage 2.5 litres a day. The reminders really help.&rdquo;</p>
+                <p class="small text-subtle" style="margin-block-start:var(--sp-3)">— Ayşe Yılmaz</p>
+            </article>
+            <article class="card">
+                <p class="small" style="color:var(--accent-gold);margin-block-end:var(--sp-2)" aria-label="5 out of 5 stars">★★★★★</p>
+                <p>&ldquo;Water tracking mattered a lot to me because I train. My performance improved thanks to this app. I especially liked the charts.&rdquo;</p>
+                <p class="small text-subtle" style="margin-block-start:var(--sp-3)">— Mehmet Kaya</p>
+            </article>
+            <article class="card">
+                <p class="small" style="color:var(--accent-gold);margin-block-end:var(--sp-2)" aria-label="5 out of 5 stars">★★★★★</p>
+                <p>&ldquo;Brilliant! I used to forget to drink while working at the office. Now I drink regularly and feel far more energetic.&rdquo;</p>
+                <p class="small text-subtle" style="margin-block-start:var(--sp-3)">— Ali Öztürk</p>
+            </article>
+            <article class="card">
+                <p class="small" style="color:var(--accent-gold);margin-block-end:var(--sp-2)" aria-label="5 out of 5 stars">★★★★★</p>
+                <p>&ldquo;My doctor told me to drink 2 litres a day. This app makes reaching that goal easy. Thank you!&rdquo;</p>
+                <p class="small text-subtle" style="margin-block-start:var(--sp-3)">— Fatma Demir</p>
+            </article>
+            <article class="card">
+                <p class="small" style="color:var(--accent-gold);margin-block-end:var(--sp-2)" aria-label="4 out of 5 stars">★★★★☆</p>
+                <p>&ldquo;Happy overall, though the notifications come a bit too often sometimes. Other than that it really helped me hit my water goals.&rdquo;</p>
+                <p class="small text-subtle" style="margin-block-start:var(--sp-3)">— Zeynep Çelik</p>
+            </article>
+            <article class="card">
+                <p class="small" style="color:var(--accent-gold);margin-block-end:var(--sp-2)" aria-label="4 out of 5 stars">★★★★☆</p>
+                <p>&ldquo;Good app, but more customisation options would be great. Still, it transformed my drinking routine.&rdquo;</p>
+                <p class="small text-subtle" style="margin-block-start:var(--sp-3)">— Murat Şahin</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- FİYATLANDIRMA -->
+<section class="section section--subtle" id="fiyat" data-cta="fiyat">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Pricing</span>
+            <h2>The core features are always free</h2>
+            <p>Try Premium free for 3 days. Prices are shown automatically in your local currency.</p>
+        </div>
+        <div class="plans">
+            <article class="plan">
+                <h3>Free</h3>
+                <div class="plan__price">₺0</div>
+                <p class="small text-subtle">Free forever</p>
+                <ul class="plan__list">
+                    <li>Core water and hydration tracking</li>
+                    <li>91 beverages</li>
+                    <li>Exercise tracking</li>
+                    <li>3 AI analyses per day (voice/text)</li>
+                    <li>Apple Health / Health Connect sync</li>
+                </ul>
+                <a href="/app?src=fiyat-ucretsiz" class="btn btn--ghost btn--block">Download Free</a>
+            </article>
+            <article class="plan plan--featured">
+                <span class="plan__badge">50% launch discount</span>
+                <h3>Premium Yearly</h3>
+                <div class="plan__price">₺1,200 <span class="plan__was">₺2,400</span></div>
+                <p class="small text-subtle">Yearly · 3-day free trial</p>
+                <ul class="plan__list">
+                    <li>Unlimited AI meal analysis</li>
+                    <li>Photo calorie counting</li>
+                    <li>Advanced nutrition analysis</li>
+                    <li>Premium statistics</li>
+                    <li>Dynamic digestion-water reminders</li>
+                    <li>PDF and CSV report export</li>
+                    <li>Ad-free</li>
+                </ul>
+                <a href="/app?src=fiyat-yillik" class="btn btn--primary btn--block">Start 3-Day Free Trial</a>
+            </article>
+            <article class="plan">
+                <h3>Monthly &amp; Family</h3>
+                <div class="plan__price">₺149 <span class="plan__period">/ month</span></div>
+                <p class="small text-subtle">Family plan: ₺2,399 / year — up to 3 people</p>
+                <ul class="plan__list">
+                    <li>All Premium features</li>
+                    <li>Monthly plan, cancel anytime</li>
+                    <li>3 separate accounts on the family plan</li>
+                    <li>3-day free trial</li>
+                </ul>
+                <a href="premium-en.html" class="btn btn--ghost btn--block">Compare Plans</a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- SSS -->
+<section class="section" id="sss">
+    <div class="container">
+        <div class="section-head"><h2>Frequently asked questions</h2></div>
+        <div class="faq">
+            <details class="faq__item" open>
+                <summary>Does Suu really do water tracking, calorie counting and exercise in one app?</summary>
+                <div><p>Yes. Suu runs the three not as separate tabs but as a single system where each feeds the others: the exercise you log raises your daily water goal, the protein and sodium in your meal determine the extra water digestion requires, and every drink is counted with its real hydration contribution from a 91-beverage database.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>How does photo calorie counting work?</summary>
+                <div><p>You photograph your meal; Suu AI analyses it, extracts calories, protein, carbohydrate and fat, and builds your macros automatically. Your photo is not stored permanently. Photo analysis is a Premium feature; on the free plan you get 3 voice or text AI analyses per day.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>How many sport activities does Suu support?</summary>
+                <div><p>Around 50 different activities: running, walking, cycling, fitness, swimming, hiking, cardio and more. For running and walking you see distance, duration, pace, average speed and calories burned; for cycling you also get speed and elevation. After every workout your water goal updates automatically.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Is Suu free?</summary>
+                <div><p>Core water and hydration tracking, 3 AI analyses per day and Apple Health / Google Health Connect sync are always free. Unlimited AI meal analysis, photo calorie counting, advanced nutrition analysis and premium statistics require Premium. Premium can be tried free for 3 days; the yearly plan is ₺1,200 with a 50% launch discount (normally ₺2,400), monthly is ₺149, and the 3-person family plan is ₺2,399 per year.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Which languages does Suu support?</summary>
+                <div><p>The app is available in 7 languages: Türkçe, English, العربية (full right-to-left support), Deutsch, Italiano, Русский and हिन्दी.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Does Suu have an Apple Watch app?</summary>
+                <div><p>Suu does not have its own Apple Watch app yet — it&#39;s coming soon. Today the workouts, steps and active energy your Apple Watch records flow into Suu through Apple Health and raise your water goal automatically. For hands-free logging from your wrist you can use the Siri command. <a href="blog/en/apple-watch-water-tracking.html">Setup guide <span class="arrow" aria-hidden="true">→</span></a></p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Is my data safe?</summary>
+                <div><p>Your data belongs entirely to you. There is no ad tracking and data is not shared with third parties. With voice entry your speech is converted to text by your device&#39;s operating system — the audio is never sent to Suu&#39;s servers. Meal photos are not stored permanently after analysis. <a href="gizlilik-politikasi.html">Privacy policy <span class="arrow" aria-hidden="true">→</span></a></p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Why use Suu instead of MyFitnessPal or Yazio?</summary>
+                <div><p>MyFitnessPal has a broader food database and Yazio has a stronger recipe library. What sets Suu apart is completeness: water tracking, photo calorie analysis and exercise tracking live in one app and are connected — your workout updates your water goal and your meal updates your digestion-water need. It also offers real hydration maths across 91 beverages and support for 7 languages. <a href="blog/en/suu-vs-myfitnesspal.html">Detailed comparison <span class="arrow" aria-hidden="true">→</span></a></p></div>
+            </details>
+        </div>
+        <p class="small text-subtle text-center" style="margin-block-start:var(--sp-8);max-width:44rem;margin-inline:auto">Suu is not intended for medical diagnosis or treatment. Consult a healthcare professional for health-related decisions.</p>
+    </div>
+</section>
+
+<!-- KAPANIŞ CTA -->
+<section class="cta-band" data-cta="kapanis">
+    <div class="container">
+        <h2>Water, calories and exercise — in one app, starting today</h2>
+        <p class="lead" style="max-width:34rem;margin-inline:auto">Download free, try Premium free for 3 days.</p>
+        <div style="margin-block-start:var(--sp-8)">
+<div class="btn-row btn-row--center">
+    <a href="/app?src=kapanis" class="btn-store" aria-label="Download on the App Store">
+        <span class="btn-store__icon"><svg width="22" height="22" aria-hidden="true"><use href="#i-apple"></use></svg></span>
+        <span class="btn-store__label">
+            <span class="btn-store__small">Download on the</span>
+            <span class="btn-store__big">App Store</span>
+        </span>
+    </a>
+    <a href="/app?src=kapanis" class="btn-store" aria-label="Get it on Google Play">
+        <span class="btn-store__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24">
+                <path fill="#00D2FF" d="M3.6 1.8A1.5 1.5 0 0 0 3 3v18c0 .5.2.9.6 1.2l.1.1 10.1-10.1v-.3L3.7 1.7l-.1.1z"/>
+                <path fill="#FFCE00" d="M17.2 15.6l-3.4-3.4v-.3l3.4-3.4.1.1 4 2.3c1.2.6 1.2 1.7 0 2.4l-4 2.3z"/>
+                <path fill="#FF3A44" d="M17.3 15.5 13.8 12 3.6 22.2c.4.4 1 .5 1.8.1l11.9-6.8"/>
+                <path fill="#00E676" d="M17.3 8.5 5.4 1.7c-.8-.4-1.4-.4-1.8.1L13.8 12l3.5-3.5z"/>
+            </svg>
+        </span>
+        <span class="btn-store__label">
+            <span class="btn-store__small">Download on the</span>
+            <span class="btn-store__big">Google Play</span>
+        </span>
+    </a>
+</div></div>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__grid">
+            <div>
+                <a href="hosgeldiniz-en.html" class="nav__logo" style="margin-block-end:var(--sp-3)">
+                    <svg width="24" height="24" aria-hidden="true"><use href="#i-water"></use></svg> Suu
+                </a>
+                <p class="small">Water tracking, calorie counter and exercise tracking in one app. Built solo in Istanbul.</p>
+            </div>
+            <div>
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="ozellikler-en.html">Features</a></li>
+                    <li><a href="premium-en.html">Premium</a></li>
+                    <li><a href="download.html">Download</a></li>
+                    <li><a href="water-calculator.html">Water Calculator</a></li>
+                    <li><a href="who-is-suu-for.html">Who is it for?</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="blog-en.html">Blog</a></li>
+                    <li><a href="suu-index.html">Suu Index</a></li>
+                    <li><a href="adaptive-hydration-brain.html">Adaptive Hydration Brain</a></li>
+                    <li><a href="personal-hydration-plan.html">Hydration Plan</a></li>
+                    <li><a href="faq-en.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="ekip.html">Team</a></li>
+                    <li><a href="gizlilik-politikasi.html">Privacy Policy</a></li>
+                    <li><a href="kullanim-sartlari.html">Terms of Use</a></li>
+                    <li><a href="delete-account.html">Delete Account</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="small mb-0">© 2026 Suu · Furkan Mert Fındıklı</p>
+            <p class="small mb-0"><a href="mailto:Suutakip@gmail.com">Suutakip@gmail.com</a></p>
+        </div>
+    </div>
+</footer>
+
+<div class="sticky-cta" data-cta="sticky">
+    <a href="/app?src=sticky" class="btn btn--secondary">App Store</a>
+    <a href="/app?src=sticky" class="btn btn--primary">Google Play</a>
+</div>
+
+<script>
+(function () {
+    var nav = document.getElementById('nav');
+    var toggle = document.getElementById('navToggle');
+    if (!nav || !toggle) return;
+    var openLabel = "Open menu", closeLabel = "Close menu";
+    toggle.addEventListener('click', function () {
+        var open = nav.getAttribute('data-open') === 'true';
+        nav.setAttribute('data-open', open ? 'false' : 'true');
+        toggle.setAttribute('aria-expanded', open ? 'false' : 'true');
+        toggle.setAttribute('aria-label', open ? openLabel : closeLabel);
+    });
+    nav.addEventListener('click', function (e) {
+        if (e.target.closest('.nav__links a')) {
+            nav.setAttribute('data-open', 'false');
+            toggle.setAttribute('aria-expanded', 'false');
+        }
+    });
+})();
+</script>
+
 </body>
 </html>

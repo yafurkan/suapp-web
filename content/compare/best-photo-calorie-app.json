@@ -1,0 +1,286 @@
+{
+  "_note": "Kategori cevap sayfası — 'fotoğraftan kalori hesaplayan en iyi uygulama' sorgusu. Mevcut blog/fotografla-kalori-sayma.html bir NASIL yazısıdır; bu ise HANGİ UYGULAMA sorusudur. Kanibalizasyon yok.",
+  "published": "2026-08-12",
+
+  "pages": {
+    "tr": {
+      "slug": "en-iyi-fotografla-kalori-uygulamasi",
+      "published_display": "12 Ağustos 2026",
+      "read_minutes": 7,
+      "badge": "⚖️ Karşılaştırma 2026",
+      "h1": "Fotoğraftan Kalori Hesaplayan En İyi Uygulama: 2026 Karşılaştırması",
+
+      "meta": {
+        "title": "Fotoğraftan Kalori Hesaplayan En İyi Uygulama (2026) | Suu",
+        "description": "Yemeğin fotoğrafını çekip kalori ve makro öğrenen uygulamaları karşılaştırdık: Suu, Cal AI, MyFitnessPal, Yazio, Lifesum. Hangisi kime uygun, hangisi ücretsiz, hangisi hidrasyon ve egzersizi de kapsıyor?",
+        "keywords": "fotoğraftan kalori hesaplama, fotoğrafla kalori sayan uygulama, yemek fotoğrafı kalori, ai kalori uygulaması, en iyi kalori uygulaması 2026, cal ai alternatifi, myfitnesspal fotoğraf, kalori tarama uygulaması",
+        "og_title": "Fotoğraftan Kalori Hesaplayan En İyi Uygulama: 2026 Karşılaştırması",
+        "og_description": "Suu, Cal AI, MyFitnessPal, Yazio ve Lifesum'un fotoğraflı kalori analizi karşılaştırması — doğruluk, ücretsiz limit, ve hangi uygulamanın su ve egzersizi de kapsadığı."
+      },
+
+      "answer": "Yalnızca kalori sayacaksan Cal AI ve MyFitnessPal güçlü seçenekler; MyFitnessPal'in besin veritabanı en geniş olan. Fotoğraftan kalori analizinin yanında hidrasyon ve egzersizi de tek uygulamada istiyorsan Suu ayrışıyor: fotoğrafla makro çıkarımının üstüne, kaydettiğin egzersiz su hedefini ve yediğin öğün sindirim su ihtiyacını otomatik güncelliyor.",
+
+      "disclosure": "Bu karşılaştırma Suu ekibi tarafından hazırlanmıştır — yani taraflı bir kaynaktan okuyorsunuz. Bunu telafi etmek için rakiplerin Suu'dan iyi olduğu noktaları da açıkça yazdık. Rakip özellikleri 2026 Ağustos itibarıyla kamuya açık bilgilere dayanır ve uygulamalar sık güncellendiği için değişebilir.",
+
+      "intro": [
+        "Fotoğraftan kalori hesaplama son iki yılın en hızlı yayılan beslenme özelliği oldu. Mantık basit: tabağın fotoğrafını çekiyorsun, model yemeği tanıyor, porsiyonu tahmin ediyor ve kalori ile makroları çıkarıyor. Barkot okutmaya veya listeden yemek aramaya kıyasla sürtünme neredeyse sıfır.",
+        "Ama uygulamalar arasında ciddi farklar var: bazıları fotoğrafı yalnızca bir arama kısayolu olarak kullanıyor, bazıları porsiyon tahmini yapıyor; bazısı özelliği ücretsiz planda hiç vermiyor. Ve neredeyse hiçbiri fotoğraftan çıkardığı besin bilgisini <strong>başka bir şeyi hesaplamak için</strong> kullanmıyor.",
+        "Aşağıda beş uygulamayı bu gözle karşılaştırdık."
+      ],
+
+      "table": {
+        "head": "Fotoğraflı kalori özelliği karşılaştırması",
+        "caption": "Suu, Cal AI, MyFitnessPal, Yazio ve Lifesum'un fotoğraflı kalori analizi karşılaştırması",
+        "col_feature": "Özellik",
+        "competitors": ["Cal AI", "MyFitnessPal", "Yazio", "Lifesum"],
+        "rows": [
+          { "label": "Fotoğraftan kalori analizi", "suu": "✓", "suu_class": "yes",
+            "others": [{"text":"✓ Ana özellik","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
+          { "label": "Fotoğraftan makro dökümü (P/K/Y)", "suu": "✓", "suu_class": "yes",
+            "others": [{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
+          { "label": "Sesli öğün girişi", "suu": "✓", "suu_class": "yes",
+            "others": [{"text":"Kısmi","cls":"no"},{"text":"✓","cls":"yes"},{"text":"Kısmi","cls":"no"},{"text":"Kısmi","cls":"no"}] },
+          { "label": "Ücretsiz planda AI analizi", "suu": "✓ Günde 3", "suu_class": "yes",
+            "others": [{"text":"Sınırlı","cls":"no"},{"text":"Sınırlı","cls":"no"},{"text":"Sınırlı","cls":"no"},{"text":"Sınırlı","cls":"no"}] },
+          { "label": "Besin veritabanı genişliği", "suu": "İyi", "suu_class": "",
+            "others": [{"text":"Orta","cls":"no"},{"text":"✓ En geniş","cls":"yes"},{"text":"✓ Geniş","cls":"yes"},{"text":"Geniş","cls":"yes"}] },
+          { "label": "Hidrasyon takibi (içecek bazlı)", "suu": "✓ 91 içecek", "suu_class": "yes",
+            "others": [{"text":"✗","cls":"no"},{"text":"Basit sayaç","cls":"no"},{"text":"Basit sayaç","cls":"no"},{"text":"Basit sayaç","cls":"no"}] },
+          { "label": "Uygulama içi egzersiz takibi", "suu": "✓ ~50 aktivite", "suu_class": "yes",
+            "others": [{"text":"✗","cls":"no"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
+          { "label": "Öğün → sindirim suyu hesabı", "suu": "✓", "suu_class": "yes",
+            "others": [{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"}] },
+          { "label": "Egzersiz → su hedefi güncellemesi", "suu": "✓", "suu_class": "yes",
+            "others": [{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"}] },
+          { "label": "Sohbetle uygulama kontrolü", "suu": "✓ Suu AI", "suu_class": "yes",
+            "others": [{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"}] },
+          { "label": "Tarif kütüphanesi", "suu": "✗", "suu_class": "no",
+            "others": [{"text":"✗","cls":"no"},{"text":"✓","cls":"yes"},{"text":"✓ Güçlü","cls":"yes"},{"text":"✓","cls":"yes"}] },
+          { "label": "Türkçe tam yerelleştirme", "suu": "✓", "suu_class": "yes",
+            "others": [{"text":"Kısıtlı","cls":"no"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] }
+        ]
+      },
+
+      "analysis": [
+        {
+          "head": "Fotoğraflı analizde doğruluk beklentisini doğru kurmak",
+          "body": [
+            "Önce dürüst olalım: hiçbir uygulama bir fotoğraftan gramaj hassasiyetinde kalori çıkaramaz. Model tabaktaki yemeği tanır ve porsiyonu <em>tahmin eder</em>. Kapalı bir kâsedeki pilavın derinliğini, salatanın içindeki yağ miktarını veya etin yağ oranını fotoğraf göstermez.",
+            "Bu bir kusur değil, yöntemin sınırı — ve pratikte önemli değil. Kilo takibinde belirleyici olan tek bir öğünün ±%15 hatası değil, <strong>haftalarca kayıt tutmayı sürdürebilmek</strong>. Elle arama yapmanın sürtünmesi yüzünden üçüncü günde bırakılan mükemmel bir kayıt, fotoğrafla tutulan yaklaşık bir kayıttan çok daha kötüdür.",
+            "Doğruluğu artırmak için hepsinde işe yarayan pratik: fotoğrafı yemeğe hafif açıyla ve yanında bilinen bir referans (çatal, bardak) görünecek şekilde çek; ardından uygulamanın verdiği porsiyonu bir kez düzelt."
+          ]
+        },
+        {
+          "head": "Rakiplerin gerçekten iyi olduğu yerler",
+          "body": [
+            "Bunları atlamak bu yazıyı işe yaramaz hâle getirirdi:"
+          ],
+          "list": [
+            "<strong>MyFitnessPal</strong> — sektörün en geniş besin veritabanı. Marketten aldığın marka bir ürünü barkotla bulma ihtimalin burada en yüksek. Uzun süredir kullanan ve geçmiş verisi orada olan biri için taşınmak zahmetli.",
+            "<strong>Cal AI</strong> — fotoğraf-önce deneyimi en sade olan. Tek işi bu ve o işi hızlı yapıyor. Yalnızca kalori sayacaksan gereksiz hiçbir şeyle uğraşmıyorsun.",
+            "<strong>Yazio</strong> — tarif ve diyet planı kütüphanesi güçlü. Ne pişireceğine karar vermekte zorlanıyorsan gerçek bir avantaj.",
+            "<strong>Lifesum</strong> — arayüz ve alışkanlık koçluğu tarafı olgun; beslenme kalitesini puanlayan yaklaşımı yeni başlayan için motive edici."
+          ]
+        },
+        {
+          "head": "Suu'nun ayrıştığı nokta: veriyi bir işe yaratması",
+          "body": [
+            "Yukarıdaki dört uygulamada fotoğraftan çıkan besin bilgisi bir günlük satırına yazılır ve orada kalır. Suu'da aynı veri ikinci bir hesabı besler.",
+            "Yediğin öğünün protein ve sodyum içeriği, sindirim için gereken ek su miktarını belirler ve günlük su hedefine eklenir. Aynı şekilde kaydettiğin koşu veya bisiklet sürüşü, terle kaybedilen sıvı üzerinden hedefi tekrar yükseltir. Hava sıcaklığı da işin içine girer.",
+            "Yani Suu'da su hedefi sabit bir sayı değil — o gün ne yediğine, ne kadar terlediğine ve havanın kaç derece olduğuna göre değişen bir çıktı. Bunu yapabilmesi için kalori, egzersiz ve hidrasyonun aynı uygulamada olması gerekiyor; ayrı üç uygulamada bu bağ hiç kurulamaz."
+          ],
+          "callout": "<strong>Kime uygun değil:</strong> Yalnızca kalori sayacaksan ve hidrasyon senin için bir mesele değilse, Suu'nun bu tarafı sana fazladan gelir — o durumda MyFitnessPal'in veritabanı genişliği daha çok işine yarar."
+        },
+        {
+          "head": "Ücretsiz plan sınırları",
+          "body": [
+            "Fotoğraflı analiz her uygulamada maliyetli bir işlem olduğu için genelde ücretli planda. Suu'da ücretsiz planda günde 3 AI analizi (sesli veya yazılı) hakkın var; fotoğrafla analiz ve sınırsız kullanım Premium'a dahil ve Premium 3 gün ücretsiz denenebiliyor.",
+            "Temel su ve hidrasyon takibi, 91 içecek desteği, egzersiz takibi ve Apple Health / Google Health Connect senkronu ise ücretsiz planda kalıcı olarak açık."
+          ]
+        }
+      ],
+
+      "verdict": {
+        "head": "Karar",
+        "body": [
+          "<strong>Sadece kalori sayacaksan:</strong> MyFitnessPal (en geniş veritabanı) veya Cal AI (en sade fotoğraf akışı).",
+          "<strong>Tarif ve plan istiyorsan:</strong> Yazio.",
+          "<strong>Fotoğrafla kalorinin yanında hidrasyon ve egzersizi de tek uygulamada istiyorsan:</strong> Suu. Karşılaştırdığımız beş uygulama içinde öğünden sindirim suyunu, egzersizden ek sıvı ihtiyacını hesaplayıp günlük hedefi güncelleyen tek uygulama bu — ve 91 içecekle gerçek hidrasyon takibi yapan tek seçenek.",
+          "Üç ayrı uygulama taşımak istemiyorsan seçim netleşiyor."
+        ]
+      },
+
+      "cta": {
+        "head": "Fotoğrafı çek, gerisini Suu AI halletsin",
+        "sub": "Ücretsiz indir · Premium 3 gün ücretsiz denenebilir",
+        "button": "Suu'yu Ücretsiz İndir"
+      },
+
+      "faq": [
+        { "q": "Fotoğraftan kalori hesaplama ne kadar doğru?",
+          "a": "Hiçbir uygulama fotoğraftan gramaj hassasiyetinde sonuç veremez; model yemeği tanır ve porsiyonu tahmin eder. Pratikte belirleyici olan tek öğünün hatası değil, kayıt tutmayı sürdürebilmektir. Porsiyonu bir kez elle düzeltmek doğruluğu belirgin biçimde artırır." },
+        { "q": "Fotoğrafla kalori hesaplayan ücretsiz uygulama var mı?",
+          "a": "Fotoğraflı analiz maliyetli olduğu için çoğu uygulamada ücretli plandadır. Suu'nun ücretsiz planında günde 3 AI analizi (sesli veya yazılı) vardır; fotoğrafla analiz Premium'a dahildir ve Premium 3 gün ücretsiz denenebilir. Temel su takibi, 91 içecek desteği ve egzersiz takibi kalıcı olarak ücretsizdir." },
+        { "q": "Cal AI yerine ne kullanabilirim?",
+          "a": "Cal AI yalnızca kalori odaklıdır. Aynı fotoğraflı analizi isteyip yanında hidrasyon ve egzersiz takibi de istiyorsan Suu doğrudan alternatiftir; sadece daha geniş bir besin veritabanı arıyorsan MyFitnessPal daha uygundur." },
+        { "q": "Fotoğraflarım saklanıyor mu?",
+          "a": "Suu'da yemek fotoğrafları analiz sonrası kalıcı olarak saklanmaz. Sesli girişte konuşma cihazın işletim sistemi tarafından metne çevrilir; ses kaydı Suu sunucularına gönderilmez. Reklam takibi yapılmaz ve veriler üçüncü taraflarla paylaşılmaz." },
+        { "q": "Fotoğraftan çıkan kalori Apple Health'e yazılıyor mu?",
+          "a": "Evet. Suu kalori ve makro verilerini Apple Health (iOS) ve Google Health Connect (Android) ile çift yönlü senkronize eder, böylece diğer sağlık uygulamalarınla tutarlı kalır." }
+      ],
+
+      "references": [
+        { "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/", "label": "Beslenme kaydı tutmanın kilo yönetimindeki etkisi üzerine derleme (PMC)" },
+        { "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5568610/", "label": "Mobil beslenme takibi ve uyum (adherence) araştırması (PMC)" },
+        { "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459", "label": "EFSA — su alımı için diyet referans değerleri" }
+      ],
+
+      "related": [
+        { "href": "/blog/fotografla-kalori-sayma.html", "title": "Fotoğrafla kalori sayma nasıl çalışır?", "desc": "Özelliğin arkasındaki yöntem ve doğruluğu artırma ipuçları." },
+        { "href": "/blog/en-iyi-kalori-uygulamasi.html", "title": "En iyi kalori sayma uygulaması", "desc": "5 uygulamalık ayrıntılı karşılaştırma." },
+        { "href": "/blog/su-kalori-egzersiz-tek-uygulama.html", "title": "Su + kalori + egzersiz tek uygulamada", "desc": "Üçünün birbirine bağlı çalışması ne kazandırıyor?" },
+        { "href": "/blog/makro-hesaplama.html", "title": "Makro hesaplama rehberi", "desc": "Protein, karbonhidrat ve yağ dağılımını kendine göre kurmak." }
+      ]
+    },
+
+    "en": {
+      "slug": "best-photo-calorie-app",
+      "published_display": "12 August 2026",
+      "read_minutes": 7,
+      "badge": "⚖️ Comparison 2026",
+      "h1": "The Best Photo Calorie App: 2026 Comparison",
+
+      "meta": {
+        "title": "Best Photo Calorie Counting App (2026 Comparison) | Suu",
+        "description": "We compared the apps that read calories and macros from a meal photo: Suu, Cal AI, MyFitnessPal, Yazio and Lifesum. Which suits whom, what the free limits are, and which one also covers hydration and exercise.",
+        "keywords": "photo calorie app, calorie counting from photo, ai food photo calories, best calorie app 2026, cal ai alternative, myfitnesspal meal scan, snap calorie app, photo macro tracker",
+        "og_title": "The Best Photo Calorie App: 2026 Comparison",
+        "og_description": "Suu, Cal AI, MyFitnessPal, Yazio and Lifesum compared on photo calorie analysis — accuracy, free limits, and which app also handles water and exercise."
+      },
+
+      "answer": "If you only want to count calories, Cal AI and MyFitnessPal are strong picks, with MyFitnessPal holding the largest food database. If you want photo calorie analysis plus hydration and exercise in one app, Suu is the one that separates: on top of macro extraction it uses the same data to update your water goal from your workouts and your meal's digestion-water need.",
+
+      "disclosure": "This comparison was written by the Suu team — so you are reading a biased source. To offset that we have stated plainly where competitors beat Suu. Competitor features reflect publicly available information as of August 2026 and can change, since these apps ship updates frequently.",
+
+      "intro": [
+        "Photo-based calorie logging has been the fastest-spreading nutrition feature of the last two years. The idea is simple: you photograph your plate, a model recognises the food, estimates the portion and derives calories and macros. Compared with scanning barcodes or searching a database, the friction is close to zero.",
+        "But the apps differ meaningfully. Some use the photo as little more than a search shortcut, others genuinely estimate portions, and several put the feature behind a paywall entirely. And almost none of them use the nutrition data they extract <strong>to compute anything else</strong>.",
+        "Below we compare five apps with that in mind."
+      ],
+
+      "table": {
+        "head": "Photo calorie feature comparison",
+        "caption": "Comparison of Suu, Cal AI, MyFitnessPal, Yazio and Lifesum on photo calorie analysis",
+        "col_feature": "Feature",
+        "competitors": ["Cal AI", "MyFitnessPal", "Yazio", "Lifesum"],
+        "rows": [
+          { "label": "Photo calorie analysis", "suu": "✓", "suu_class": "yes",
+            "others": [{"text":"✓ Core feature","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
+          { "label": "Macro breakdown from photo (P/C/F)", "suu": "✓", "suu_class": "yes",
+            "others": [{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
+          { "label": "Voice meal logging", "suu": "✓", "suu_class": "yes",
+            "others": [{"text":"Partial","cls":"no"},{"text":"✓","cls":"yes"},{"text":"Partial","cls":"no"},{"text":"Partial","cls":"no"}] },
+          { "label": "AI analyses on the free plan", "suu": "✓ 3 per day", "suu_class": "yes",
+            "others": [{"text":"Limited","cls":"no"},{"text":"Limited","cls":"no"},{"text":"Limited","cls":"no"},{"text":"Limited","cls":"no"}] },
+          { "label": "Food database breadth", "suu": "Good", "suu_class": "",
+            "others": [{"text":"Medium","cls":"no"},{"text":"✓ Largest","cls":"yes"},{"text":"✓ Large","cls":"yes"},{"text":"Large","cls":"yes"}] },
+          { "label": "Hydration tracking (per beverage)", "suu": "✓ 91 beverages", "suu_class": "yes",
+            "others": [{"text":"✗","cls":"no"},{"text":"Simple counter","cls":"no"},{"text":"Simple counter","cls":"no"},{"text":"Simple counter","cls":"no"}] },
+          { "label": "In-app exercise tracking", "suu": "✓ ~50 activities", "suu_class": "yes",
+            "others": [{"text":"✗","cls":"no"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
+          { "label": "Meal → digestion water calculation", "suu": "✓", "suu_class": "yes",
+            "others": [{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"}] },
+          { "label": "Workout → water goal update", "suu": "✓", "suu_class": "yes",
+            "others": [{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"}] },
+          { "label": "Control the app by chat", "suu": "✓ Suu AI", "suu_class": "yes",
+            "others": [{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"}] },
+          { "label": "Recipe library", "suu": "✗", "suu_class": "no",
+            "others": [{"text":"✗","cls":"no"},{"text":"✓","cls":"yes"},{"text":"✓ Strong","cls":"yes"},{"text":"✓","cls":"yes"}] },
+          { "label": "Full Arabic RTL support", "suu": "✓", "suu_class": "yes",
+            "others": [{"text":"✗","cls":"no"},{"text":"Limited","cls":"no"},{"text":"Limited","cls":"no"},{"text":"Limited","cls":"no"}] }
+        ]
+      },
+
+      "analysis": [
+        {
+          "head": "Setting the right expectation on accuracy",
+          "body": [
+            "Let's be honest first: no app can derive gram-level calories from a photograph. The model recognises the food and <em>estimates</em> the portion. A photo cannot show the depth of rice in a covered bowl, how much oil is in a salad, or the fat content of a cut of meat.",
+            "That is not a flaw, it is the boundary of the method — and in practice it rarely matters. What determines success in weight management is not a ±15% error on a single meal, it is <strong>still logging weeks later</strong>. A perfect log abandoned on day three because manual search was tedious is far worse than an approximate log you actually keep.",
+            "One habit improves accuracy in every app: shoot at a slight angle with a known reference in frame (a fork, a glass), then correct the suggested portion once."
+          ]
+        },
+        {
+          "head": "Where the competitors genuinely win",
+          "body": [
+            "Skipping this would make the article useless:"
+          ],
+          "list": [
+            "<strong>MyFitnessPal</strong> — the largest food database in the category. Your odds of finding a branded supermarket product by barcode are highest here. If you have years of history there, migrating is a real cost.",
+            "<strong>Cal AI</strong> — the cleanest photo-first experience. It does one job and does it fast. If calories are all you track, there is nothing extra in the way.",
+            "<strong>Yazio</strong> — a strong recipe and diet-plan library. A genuine advantage if deciding what to cook is your bottleneck.",
+            "<strong>Lifesum</strong> — mature interface and habit coaching; its food-quality scoring is motivating for beginners."
+          ]
+        },
+        {
+          "head": "Where Suu separates: putting the data to a second use",
+          "body": [
+            "In the four apps above, the nutrition data extracted from your photo is written to a log line and stays there. In Suu the same data feeds a second calculation.",
+            "The protein and sodium content of the meal you logged determines the extra water digestion requires, and that is added to your daily hydration goal. In the same way, a run or ride you record raises the goal again based on estimated sweat loss. Ambient temperature is folded in as well.",
+            "So in Suu the water goal is not a fixed number — it is an output that moves with what you ate, how hard you trained and how hot the day is. Making that possible requires calories, exercise and hydration to live in one app; across three separate apps the link simply cannot be made."
+          ],
+          "callout": "<strong>Who it is not for:</strong> if you only count calories and hydration is not something you care about, this side of Suu is overhead — MyFitnessPal's database breadth will serve you better."
+        },
+        {
+          "head": "Free plan limits",
+          "body": [
+            "Photo analysis is a costly operation in every app, so it usually sits behind a paywall. On Suu's free plan you get 3 AI analyses per day (voice or text); photo analysis and unlimited use are part of Premium, and Premium can be tried free for 3 days.",
+            "Core water and hydration tracking, the 91-beverage database, exercise tracking and Apple Health / Google Health Connect sync stay free permanently."
+          ]
+        }
+      ],
+
+      "verdict": {
+        "head": "Verdict",
+        "body": [
+          "<strong>If you only count calories:</strong> MyFitnessPal (largest database) or Cal AI (cleanest photo flow).",
+          "<strong>If you want recipes and plans:</strong> Yazio.",
+          "<strong>If you want photo calories plus hydration and exercise in one app:</strong> Suu. Of the five apps compared it is the only one that turns your meal into a digestion-water figure and your workout into extra fluid need, then updates the daily goal — and the only one doing real per-beverage hydration tracking across 91 drinks.",
+          "If you would rather not carry three separate apps, the choice narrows quickly."
+        ]
+      },
+
+      "cta": {
+        "head": "Take the photo, let Suu AI do the rest",
+        "sub": "Free to download · Premium free for 3 days",
+        "button": "Download Suu Free"
+      },
+
+      "faq": [
+        { "q": "How accurate is calorie counting from a photo?",
+          "a": "No app can produce gram-level accuracy from a photograph; the model recognises the food and estimates the portion. What matters in practice is not the error on a single meal but whether you keep logging. Correcting the suggested portion once noticeably improves accuracy." },
+        { "q": "Is there a free app that counts calories from a photo?",
+          "a": "Photo analysis is costly to run, so most apps place it on a paid tier. Suu's free plan includes 3 AI analyses per day (voice or text); photo analysis is part of Premium, which can be tried free for 3 days. Core water tracking, the 91-beverage database and exercise tracking are permanently free." },
+        { "q": "What can I use instead of Cal AI?",
+          "a": "Cal AI is calorie-only. If you want the same photo analysis alongside hydration and exercise tracking, Suu is the direct alternative; if you simply need a broader food database, MyFitnessPal is the better fit." },
+        { "q": "Are my photos stored?",
+          "a": "In Suu, meal photos are not stored permanently after analysis. With voice entry, speech is converted to text by your device's operating system — the audio is never sent to Suu servers. There is no ad tracking and data is not shared with third parties." },
+        { "q": "Do the calories from a photo sync to Apple Health?",
+          "a": "Yes. Suu syncs calorie and macro data two-way with Apple Health (iOS) and Google Health Connect (Android), so it stays consistent with your other health apps." }
+      ],
+
+      "references": [
+        { "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/", "label": "Review on the role of dietary self-monitoring in weight management (PMC)" },
+        { "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5568610/", "label": "Research on mobile dietary tracking and adherence (PMC)" },
+        { "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459", "label": "EFSA — dietary reference values for water" }
+      ],
+
+      "related": [
+        { "href": "/blog/en/photo-calorie-counting.html", "title": "How photo calorie counting works", "desc": "The method behind the feature and tips to improve accuracy." },
+        { "href": "/blog/en/best-calorie-counting-app.html", "title": "Best calorie counting app", "desc": "A detailed five-app comparison." },
+        { "href": "/blog/en/water-calorie-exercise-one-app.html", "title": "Water + calories + exercise in one app", "desc": "What you gain when the three are connected." },
+        { "href": "/blog/en/macro-calculation.html", "title": "Macro calculation guide", "desc": "Setting your protein, carb and fat split for your own goals." }
+      ]
+    }
+  }
+}

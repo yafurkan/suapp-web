@@ -1,0 +1,304 @@
+{
+  "_note": "Kategori cevap sayfası — 'ücretsiz kalori sayacı' çok yüksek hacimli bir sorgu. Suu'nun kalıcı ücretsiz katmanı (su + egzersiz + günde 3 AI analizi) burada dürüst bir güç noktası.",
+  "published": "2026-08-12",
+
+  "pages": {
+    "tr": {
+      "slug": "ucretsiz-kalori-sayaci",
+      "published_display": "12 Ağustos 2026",
+      "read_minutes": 7,
+      "badge": "💸 Ücretsiz Planlar 2026",
+      "h1": "Ücretsiz Kalori Sayacı: Gerçekten Ücretsiz Olan Uygulamalar (2026)",
+
+      "meta": {
+        "title": "Ücretsiz Kalori Sayacı — Gerçekten Ücretsiz Uygulamalar (2026) | Suu",
+        "description": "Hangi kalori uygulaması gerçekten ücretsiz? Suu, MyFitnessPal, Lose It!, Cronometer ve FatSecret'ın ücretsiz planlarını satır satır karşılaştırdık: barkot, makro, egzersiz ve su takibi hangi planda?",
+        "keywords": "ücretsiz kalori sayacı, ücretsiz kalori uygulaması, bedava kalori takip, kalori sayma uygulaması ücretsiz, myfitnesspal ücretsiz mi, ücretsiz makro takip, ücretsiz beslenme uygulaması 2026",
+        "og_title": "Ücretsiz Kalori Sayacı: Gerçekten Ücretsiz Olan Uygulamalar",
+        "og_description": "Ücretsiz planların altındaki ince yazıyı karşılaştırdık — barkot, makro, egzersiz ve su takibi hangi uygulamada gerçekten ücretsiz kalıyor?"
+      },
+
+      "answer": "Hiçbir popüler kalori uygulaması her şeyi ücretsiz vermiyor; fark, neyin ücretsiz kaldığında. Cronometer ücretsiz planda en detaylı mikro besin dökümünü, FatSecret en az kısıtlamayı sunar. Suu'da ise su takibi, 91 içecek, egzersiz takibi ve günde 3 AI analizi kalıcı olarak ücretsizdir — yalnızca fotoğrafla analiz ve sınırsız AI kullanımı Premium'dadır.",
+
+      "disclosure": "Bu karşılaştırmayı Suu ekibi hazırladı — taraflı bir kaynaktan okuyorsunuz. Bu yüzden rakiplerin ücretsiz planının Suu'dan iyi olduğu yerleri de açıkça yazdık. Bilgiler 2026 Ağustos itibarıyla kamuya açık kaynaklara dayanır; uygulamalar plan sınırlarını sık değiştirir, indirmeden önce mağaza sayfasından teyit edin.",
+
+      "intro": [
+        "\"Ücretsiz\" kelimesi bu kategoride çok esnek kullanılıyor. Uygulamaların hepsi ücretsiz indiriliyor, ama gerçekte kullanacağın özelliğin ücretsiz planda olup olmadığı bambaşka bir soru.",
+        "En sık yaşanan hayal kırıklığı barkot okuyucu: MyFitnessPal bu özelliği bir dönem ücretsiz planda sunuyordu, sonra Premium'a taşıdı. Uygulamayı tam da o özellik için indiren çok kişi bunu ödeme ekranında öğrendi.",
+        "Aşağıda beş uygulamanın ücretsiz planında <strong>gerçekte ne kaldığını</strong> karşılaştırdık."
+      ],
+
+      "table": {
+        "head": "Ücretsiz planlarda ne var, ne yok?",
+        "caption": "Suu, MyFitnessPal, Lose It!, Cronometer ve FatSecret'ın ücretsiz plan karşılaştırması",
+        "col_feature": "Ücretsiz planda",
+        "competitors": ["MyFitnessPal", "Lose It!", "Cronometer", "FatSecret"],
+        "rows": [
+          { "label": "Kalori kaydı", "suu": "✓", "suu_class": "yes",
+            "others": [{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
+          { "label": "Makro takibi (protein/karb/yağ)", "suu": "✓", "suu_class": "yes",
+            "others": [{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
+          { "label": "Barkot okuyucu", "suu": "✗", "suu_class": "no",
+            "others": [{"text":"Premium'a taşındı","cls":"no"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
+          { "label": "Mikro besin dökümü (vitamin/mineral)", "suu": "Kısmi", "suu_class": "",
+            "others": [{"text":"Kısıtlı","cls":"no"},{"text":"Kısıtlı","cls":"no"},{"text":"✓ En detaylı","cls":"yes"},{"text":"Kısmi","cls":"no"}] },
+          { "label": "AI analizi (sesli/yazılı)", "suu": "✓ Günde 3", "suu_class": "yes",
+            "others": [{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"}] },
+          { "label": "Fotoğrafla kalori analizi", "suu": "Premium", "suu_class": "no",
+            "others": [{"text":"Premium","cls":"no"},{"text":"Premium","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"}] },
+          { "label": "Egzersiz takibi", "suu": "✓ ~50 aktivite", "suu_class": "yes",
+            "others": [{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
+          { "label": "Su takibi (içecek bazlı)", "suu": "✓ 91 içecek", "suu_class": "yes",
+            "others": [{"text":"Basit sayaç","cls":"no"},{"text":"Basit sayaç","cls":"no"},{"text":"Basit sayaç","cls":"no"},{"text":"Basit sayaç","cls":"no"}] },
+          { "label": "Egzersiz → su hedefi güncellemesi", "suu": "✓", "suu_class": "yes",
+            "others": [{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"}] },
+          { "label": "Apple Health / Health Connect senkronu", "suu": "✓", "suu_class": "yes",
+            "others": [{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
+          { "label": "Reklamsız", "suu": "Premium", "suu_class": "no",
+            "others": [{"text":"Premium","cls":"no"},{"text":"Premium","cls":"no"},{"text":"Premium","cls":"no"},{"text":"Premium","cls":"no"}] },
+          { "label": "Ücretsiz deneme (Premium için)", "suu": "✓ 3 gün", "suu_class": "yes",
+            "others": [{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"Kısmi","cls":"no"}] }
+        ]
+      },
+
+      "analysis": [
+        {
+          "head": "Ücretsiz planlarda rakiplerin kazandığı yerler",
+          "body": [
+            "Bunları atlamak yazıyı işe yaramaz hâle getirirdi:"
+          ],
+          "list": [
+            "<strong>Cronometer</strong> — ücretsiz planda bile vitamin ve mineral dökümü en detaylı olan. Mikro besinleri gerçekten takip etmek istiyorsan başka bir seçenek yok.",
+            "<strong>FatSecret</strong> — ücretsiz katmanı en az kısıtlayan uygulamalardan. Barkot okuyucu ve topluluk tarifleri ücretsiz planda.",
+            "<strong>Lose It!</strong> — barkot okuyucu ücretsiz planda kalmış durumda; MyFitnessPal'den geçenlerin en sık gittiği yer bu.",
+            "<strong>MyFitnessPal</strong> — barkot Premium'a taşınmış olsa da ücretsiz planda erişilen besin veritabanı hâlâ sektörün en genişi."
+          ]
+        },
+        {
+          "head": "Suu'nun ücretsiz planında ne var?",
+          "body": [
+            "Suu'nun ücretsiz katmanı süreli bir deneme değil, kalıcı bir plan. İçindekiler:"
+          ],
+          "list": [
+            "Temel su ve hidrasyon takibi — <strong>91 içeceğin</strong> gerçek hidrasyon katkısıyla",
+            "Egzersiz takibi — <strong>~50 spor aktivitesi</strong>, koşu ve bisiklette ayrıntılı metrikler",
+            "Egzersizin ve yediklerinin su hedefini otomatik güncellemesi",
+            "Günde <strong>3 AI analizi</strong> — sesli veya yazılı öğün girişi",
+            "Apple Health / Google Health Connect çift yönlü senkron",
+            "Suu Endeksi (0–100 hidrasyon skoru), sanal evcil hayvan, arkadaş ligleri"
+          ],
+          "callout": "<strong>Premium'a giren:</strong> fotoğrafla kalori analizi, sınırsız AI kullanımı, gelişmiş beslenme analizi, premium istatistikler, PDF/CSV rapor ve reklamsız kullanım. Premium 3 gün ücretsiz denenebiliyor."
+        },
+        {
+          "head": "Ücretsiz plan seçerken bakılması gereken üç şey",
+          "body": [
+            "Mağaza sayfasındaki \"ücretsiz\" etiketi bir şey söylemiyor. Şu üçüne bak:"
+          ],
+          "list": [
+            "<strong>Senin asıl kullanacağın özellik hangi planda?</strong> Barkot için indiriyorsan barkotun ücretsiz planda olduğundan emin ol. Fotoğrafla analiz için indiriyorsan neredeyse hepsinde bu özellik ücretlidir.",
+            "<strong>Günlük/aylık limit var mı?</strong> Bazı uygulamalarda özellik ücretsiz görünür ama günde birkaç kullanımla sınırlıdır. Suu'da bu limit açıkça belirtilir: günde 3 AI analizi.",
+            "<strong>Veri dışa aktarılabiliyor mu?</strong> Aylar sonra uygulama değiştirmek istersen kayıtlarını çıkarabilmek önemli. Apple Health / Health Connect senkronu olan bir uygulama seçmek bunu büyük ölçüde çözer."
+          ]
+        },
+        {
+          "head": "Ücretsiz planla ne kadar ileri gidilebilir?",
+          "body": [
+            "Dürüst cevap: kilo yönetiminde belirleyici olan özellik zenginliği değil, <strong>kayıt tutmayı sürdürebilmek</strong>. Ücretsiz bir planla aylarca düzenli kayıt tutmak, ücretli bir planla iki hafta sonra bırakmaktan çok daha iyi sonuç verir.",
+            "Bu yüzden ücretsiz planı test ederken sorulacak soru \"kaç özellik var\" değil, \"bu akış benim günlük rutinime oturuyor mu\". Bir hafta deneyip cevabı kendin görebilirsin."
+          ]
+        }
+      ],
+
+      "verdict": {
+        "head": "Karar",
+        "body": [
+          "<strong>Mikro besin takibi istiyorsan:</strong> Cronometer — ücretsiz planda bile bu konuda rakipsiz.",
+          "<strong>Barkot okuyucu şartsa:</strong> Lose It! veya FatSecret; MyFitnessPal'de bu özellik Premium'a taşındı.",
+          "<strong>En geniş besin veritabanı için:</strong> MyFitnessPal, barkot kısıtına rağmen.",
+          "<strong>Kalori yanında su ve egzersizi de ücretsiz takip etmek istiyorsan:</strong> Suu. Karşılaştırdığımız beş uygulama içinde ücretsiz planında 91 içecekle gerçek hidrasyon takibi yapan ve egzersizden su hedefini otomatik güncelleyen tek uygulama bu — ayrıca ücretsiz planda AI analizi (günde 3) veren tek seçenek."
+        ]
+      },
+
+      "cta": {
+        "head": "Ücretsiz planla başla, gerisini sonra düşün",
+        "sub": "Su + egzersiz + günde 3 AI analizi kalıcı ücretsiz · Premium 3 gün denenebilir",
+        "button": "Suu'yu Ücretsiz İndir"
+      },
+
+      "faq": [
+        { "q": "Gerçekten tamamen ücretsiz bir kalori uygulaması var mı?",
+          "a": "Tüm özellikleri sonsuza kadar ücretsiz veren popüler bir uygulama yok; hepsinin bir Premium katmanı var. FatSecret ve Cronometer ücretsiz planda en az kısıtlamayı sunanlar arasında. Suu'da su takibi, 91 içecek, egzersiz takibi ve günde 3 AI analizi kalıcı olarak ücretsizdir." },
+        { "q": "MyFitnessPal ücretsiz mi?",
+          "a": "MyFitnessPal ücretsiz indirilir ve kalori ile makro kaydı ücretsiz plandadır, ancak barkot okuyucu Premium'a taşınmıştır. Besin veritabanının genişliği ücretsiz planda da erişilebilir durumdadır." },
+        { "q": "Fotoğrafla kalori hesaplama ücretsiz olabilir mi?",
+          "a": "Fotoğraflı analiz her çağrıda maliyet ürettiği için neredeyse tüm uygulamalarda ücretli plandadır. Suu'da fotoğraflı analiz Premium'a dahildir; ücretsiz planda günde 3 sesli veya yazılı AI analizi hakkın vardır ve Premium 3 gün ücretsiz denenebilir." },
+        { "q": "Ücretsiz planda su takibi yapan kalori uygulaması hangisi?",
+          "a": "Çoğu kalori uygulamasında su takibi basit bir bardak sayacıdır. Suu'nun ücretsiz planında 91 içeceğin gerçek hidrasyon katkısı hesaplanır ve kaydettiğin egzersiz ile yediğin öğün günlük su hedefini otomatik günceller." },
+        { "q": "Uygulama değiştirirsem verilerim taşınır mı?",
+          "a": "Apple Health (iOS) veya Google Health Connect (Android) ile senkronize olan bir uygulama seçersen kalori, makro ve su verilerin sistemde kalır ve yeni uygulama bunları okuyabilir. Suu bu senkronu çift yönlü yapar ve ücretsiz planda açıktır." }
+      ],
+
+      "references": [
+        { "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/", "label": "Beslenme kaydı tutmanın kilo yönetimindeki etkisi (PMC)" },
+        { "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5568610/", "label": "Mobil beslenme takibi ve kullanıma devam etme (PMC)" },
+        { "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459", "label": "EFSA — su alımı için diyet referans değerleri" }
+      ],
+
+      "related": [
+        { "href": "/blog/en-iyi-kalori-uygulamasi.html", "title": "En iyi kalori sayma uygulaması", "desc": "5 uygulamalık ayrıntılı karşılaştırma." },
+        { "href": "/blog/en-iyi-fotografla-kalori-uygulamasi.html", "title": "Fotoğraftan kalori hesaplayan en iyi uygulama", "desc": "Fotoğraflı analizde hangisi ne yapıyor?" },
+        { "href": "/blog/kalori-acigi.html", "title": "Kalori açığı nasıl hesaplanır?", "desc": "Hedefini kendi verinle kurmak." },
+        { "href": "/blog/makro-hesaplama.html", "title": "Makro hesaplama rehberi", "desc": "Protein, karbonhidrat, yağ dağılımı." }
+      ]
+    },
+
+    "en": {
+      "slug": "free-calorie-counter-app",
+      "published_display": "12 August 2026",
+      "read_minutes": 7,
+      "badge": "💸 Free Plans 2026",
+      "h1": "Free Calorie Counter: The Apps That Are Genuinely Free (2026)",
+
+      "meta": {
+        "title": "Free Calorie Counter Apps — What's Actually Free (2026) | Suu",
+        "description": "Which calorie app is genuinely free? We compared the free tiers of Suu, MyFitnessPal, Lose It!, Cronometer and FatSecret line by line: barcode, macros, exercise and water tracking — what stays free.",
+        "keywords": "free calorie counter, free calorie app, free macro tracker, is myfitnesspal free, best free nutrition app, free calorie tracking app 2026, calorie counter no subscription",
+        "og_title": "Free Calorie Counter: The Apps That Are Genuinely Free",
+        "og_description": "We compared the small print of the free tiers — where barcode, macros, exercise and water tracking actually stay free."
+      },
+
+      "answer": "No popular calorie app gives everything away free; the difference is in what stays free. Cronometer offers the most detailed micronutrient breakdown on its free tier and FatSecret the fewest restrictions. In Suu, water tracking across 91 beverages, exercise tracking and 3 AI analyses per day are permanently free — only photo analysis and unlimited AI use sit behind Premium.",
+
+      "disclosure": "This comparison was written by the Suu team — you are reading a biased source. That is why we have stated plainly where competitors' free tiers beat Suu's. Information reflects publicly available sources as of August 2026; these apps change plan limits often, so verify on the store page before downloading.",
+
+      "intro": [
+        "The word \"free\" is used very loosely in this category. Every app is free to download, but whether the feature you actually came for is on the free tier is a completely different question.",
+        "The most common disappointment is the barcode scanner: MyFitnessPal offered it on the free plan for years, then moved it to Premium. Plenty of people who downloaded the app specifically for that feature found out at the paywall.",
+        "Below we compared what <strong>actually remains</strong> on five apps' free tiers."
+      ],
+
+      "table": {
+        "head": "What's in the free tiers, and what isn't",
+        "caption": "Free tier comparison of Suu, MyFitnessPal, Lose It!, Cronometer and FatSecret",
+        "col_feature": "On the free plan",
+        "competitors": ["MyFitnessPal", "Lose It!", "Cronometer", "FatSecret"],
+        "rows": [
+          { "label": "Calorie logging", "suu": "✓", "suu_class": "yes",
+            "others": [{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
+          { "label": "Macro tracking (protein/carbs/fat)", "suu": "✓", "suu_class": "yes",
+            "others": [{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
+          { "label": "Barcode scanner", "suu": "✗", "suu_class": "no",
+            "others": [{"text":"Moved to Premium","cls":"no"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
+          { "label": "Micronutrient breakdown", "suu": "Partial", "suu_class": "",
+            "others": [{"text":"Limited","cls":"no"},{"text":"Limited","cls":"no"},{"text":"✓ Most detailed","cls":"yes"},{"text":"Partial","cls":"no"}] },
+          { "label": "AI analysis (voice/text)", "suu": "✓ 3 per day", "suu_class": "yes",
+            "others": [{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"}] },
+          { "label": "Photo calorie analysis", "suu": "Premium", "suu_class": "no",
+            "others": [{"text":"Premium","cls":"no"},{"text":"Premium","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"}] },
+          { "label": "Exercise tracking", "suu": "✓ ~50 activities", "suu_class": "yes",
+            "others": [{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
+          { "label": "Water tracking (per beverage)", "suu": "✓ 91 beverages", "suu_class": "yes",
+            "others": [{"text":"Simple counter","cls":"no"},{"text":"Simple counter","cls":"no"},{"text":"Simple counter","cls":"no"},{"text":"Simple counter","cls":"no"}] },
+          { "label": "Workout → water goal update", "suu": "✓", "suu_class": "yes",
+            "others": [{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"}] },
+          { "label": "Apple Health / Health Connect sync", "suu": "✓", "suu_class": "yes",
+            "others": [{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
+          { "label": "Ad-free", "suu": "Premium", "suu_class": "no",
+            "others": [{"text":"Premium","cls":"no"},{"text":"Premium","cls":"no"},{"text":"Premium","cls":"no"},{"text":"Premium","cls":"no"}] },
+          { "label": "Free trial for Premium", "suu": "✓ 3 days", "suu_class": "yes",
+            "others": [{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"Partial","cls":"no"}] }
+        ]
+      },
+
+      "analysis": [
+        {
+          "head": "Where competitors' free tiers win",
+          "body": [
+            "Skipping this would make the article useless:"
+          ],
+          "list": [
+            "<strong>Cronometer</strong> — the most detailed vitamin and mineral breakdown even on the free tier. If you genuinely track micronutrients, nothing else comes close.",
+            "<strong>FatSecret</strong> — one of the least restricted free tiers around. Barcode scanning and community recipes are included.",
+            "<strong>Lose It!</strong> — the barcode scanner is still on the free plan; it's where most people migrating from MyFitnessPal end up.",
+            "<strong>MyFitnessPal</strong> — even with barcode behind Premium, the food database reachable on the free tier is still the largest in the category."
+          ]
+        },
+        {
+          "head": "What's on Suu's free plan",
+          "body": [
+            "Suu's free tier is a permanent plan, not a timed trial. It includes:"
+          ],
+          "list": [
+            "Core water and hydration tracking — with the real hydration contribution of <strong>91 beverages</strong>",
+            "Exercise tracking — <strong>~50 sport activities</strong>, with detailed running and cycling metrics",
+            "Automatic water goal updates from your workouts and your meals",
+            "<strong>3 AI analyses per day</strong> — voice or text meal logging",
+            "Two-way Apple Health / Google Health Connect sync",
+            "Suu Index (0–100 hydration score), virtual pet, friend leagues"
+          ],
+          "callout": "<strong>What Premium adds:</strong> photo calorie analysis, unlimited AI use, advanced nutrition analysis, premium statistics, PDF/CSV export and an ad-free experience. Premium can be tried free for 3 days."
+        },
+        {
+          "head": "Three things to check when picking a free plan",
+          "body": [
+            "The \"free\" badge on a store page tells you nothing. Check these three:"
+          ],
+          "list": [
+            "<strong>Which tier holds the feature you came for?</strong> If you're downloading for barcode scanning, confirm barcode is on the free plan. If you're downloading for photo analysis, expect it to be paid in nearly every app.",
+            "<strong>Is there a daily or monthly cap?</strong> Some apps show a feature as free but limit it to a couple of uses a day. Suu states its cap openly: 3 AI analyses per day.",
+            "<strong>Can you export your data?</strong> If you switch apps months later, getting your history out matters. Picking an app that syncs with Apple Health / Health Connect largely solves this."
+          ]
+        },
+        {
+          "head": "How far can a free plan actually take you?",
+          "body": [
+            "The honest answer: what determines success in weight management is not feature count, it is <strong>continuing to log</strong>. Months of consistent logging on a free plan beats two weeks on a paid one, every time.",
+            "So the question to ask while testing a free tier isn't \"how many features are there\" but \"does this flow fit my daily routine\". A week of use answers it."
+          ]
+        }
+      ],
+
+      "verdict": {
+        "head": "Verdict",
+        "body": [
+          "<strong>If you want micronutrient tracking:</strong> Cronometer — unmatched here even on the free tier.",
+          "<strong>If barcode scanning is essential:</strong> Lose It! or FatSecret; MyFitnessPal moved it to Premium.",
+          "<strong>For the widest food database:</strong> MyFitnessPal, despite the barcode restriction.",
+          "<strong>If you want water and exercise tracked free alongside calories:</strong> Suu. Of the five apps compared it is the only one whose free tier does real per-beverage hydration tracking across 91 drinks and updates the water goal from your workouts — and the only one offering AI analysis (3 per day) for free."
+        ]
+      },
+
+      "cta": {
+        "head": "Start on the free plan, decide later",
+        "sub": "Water + exercise + 3 AI analyses a day, free forever · Premium free for 3 days",
+        "button": "Download Suu Free"
+      },
+
+      "faq": [
+        { "q": "Is there a calorie app that is genuinely completely free?",
+          "a": "No popular app gives every feature away forever; they all have a Premium tier. FatSecret and Cronometer are among the least restrictive on their free plans. In Suu, water tracking across 91 beverages, exercise tracking and 3 AI analyses per day are permanently free." },
+        { "q": "Is MyFitnessPal free?",
+          "a": "MyFitnessPal is free to download and calorie plus macro logging is on the free plan, but the barcode scanner was moved to Premium. The breadth of its food database is still reachable on the free tier." },
+        { "q": "Can photo calorie counting be free?",
+          "a": "Photo analysis costs money on every call, so it sits behind a paywall in nearly every app. In Suu photo analysis is part of Premium; the free plan gives you 3 voice or text AI analyses per day, and Premium can be tried free for 3 days." },
+        { "q": "Which calorie app tracks water on the free plan?",
+          "a": "In most calorie apps water tracking is a simple glass counter. On Suu's free plan the real hydration contribution of 91 beverages is calculated, and the exercise you log plus the meals you eat update your daily water goal automatically." },
+        { "q": "Will my data transfer if I switch apps?",
+          "a": "If you pick an app that syncs with Apple Health (iOS) or Google Health Connect (Android), your calorie, macro and water data stays in the system and a new app can read it. Suu syncs two-way and this is enabled on the free plan." }
+      ],
+
+      "references": [
+        { "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/", "label": "Role of dietary self-monitoring in weight management (PMC)" },
+        { "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5568610/", "label": "Mobile dietary tracking and adherence (PMC)" },
+        { "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459", "label": "EFSA — dietary reference values for water" }
+      ],
+
+      "related": [
+        { "href": "/blog/en/best-calorie-counting-app.html", "title": "Best calorie counting app", "desc": "A detailed five-app comparison." },
+        { "href": "/blog/en/best-photo-calorie-app.html", "title": "Best photo calorie app", "desc": "Who does what in photo-based analysis." },
+        { "href": "/blog/en/calorie-deficit.html", "title": "How to calculate a calorie deficit", "desc": "Setting the target from your own data." },
+        { "href": "/blog/en/macro-calculation.html", "title": "Macro calculation guide", "desc": "Protein, carb and fat split." }
+      ]
+    }
+  }
+}

@@ -4,769 +4,1230 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Search Console: VERIFIED via Domain property (DNS TXT record) — covers all subdomains + protocols, no HTML meta tag needed. -->
-    <!-- Yandex Webmaster: VERIFIED via HTML file (yandex_d8f56999642a8d54.html at site root) — no meta tag needed. -->
+    <!-- ÜRETİLMİŞ DOSYA — elle düzenlemeyin.
+         Kaynak: content/home/ru.json + content/home/_template.html.j2
+         Yeniden üret: python3 scripts/build-homepages.py --apply -->
 
-    <!-- Clarity tracking code -->
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "tabxahhw7s");
-    </script>
+    <!-- Google Search Console: VERIFIED via Domain property (DNS TXT record). -->
+    <!-- Yandex Webmaster: VERIFIED via HTML file (yandex_d8f56999642a8d54.html). -->
 
-    <title>Suu - Калории и вода | Вода, калории и здоровье · 4.9★ · 3 дня бесплатно</title>
-    <meta name="description" content="Suu теперь ИИ-помощник по питанию, калориям и гидратации: добавляйте приём пищи голосом, фотографируйте для подсчёта калорий, управляйте макросами и водой с Apple Health. 3 бесплатных ИИ-анализа в день + скидка 50% при запуске ($30/год, месяц $3.99). 4.9★ · 2 800+ отзывов. iOS и Android.">
-    <meta name="keywords" content="suu, приложение suu, трекер воды suu, suuapp, приложение для отслеживания воды, лучшее приложение для воды, ии-помощник по питанию, ии-помощник здоровья, счётчик калорий, голосовой ввод еды, подсчёт калорий по фото, трекер макросов, оценка питания, ии-тренер по гидратации, отслеживание воды по активности, питьевой режим при ходьбе, гидратация при плавании, потребность в воде при тренировках, трекер кофеина, трекер сахара, калькулятор кофе, приложение гидратация, напоминание о воде, 3 дня бесплатно, скидка premium, лига друзей гидратация, dynamic island трекер воды, apple watch вода, siri вода, starbucks обезвоживание">
+    <title>Suu — вода, калории и тренировки в одном приложении | 4.9★ · 3 дня бесплатно</title>
+    <meta name="description" content="Suu объединяет трекер воды, счётчик калорий и учёт тренировок с помощью ИИ. Сфотографируйте еду — получите калории и БЖУ за секунды; 91 напиток и около 50 видов спорта, а цель по воде обновляется сама. Бесплатно на iOS и Android.">
+    <meta name="keywords" content="трекер воды, счётчик калорий, приложение для подсчёта калорий, калории по фото, учёт тренировок, расчёт БЖУ, дневник питания, калории с ии, голосовой ввод калорий, трекер бега, трекер велосипеда, приложение гидратации, Suu, лучшее приложение для калорий">
 
-    <!-- Smart App Banner -->
-    <meta name="apple-itunes-app" content="app-id=6757619920">
-
-    <!-- Security Headers -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data:; img-src 'self' https: data:; font-src 'self' https: data:;">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="DENY">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Suu - Калории и вода | Вода, калории и здоровье · 4.9★ · 3 дня бесплатно">
-    <meta property="og:description" content="Добавляйте еду голосом, фотографируйте для калорий; ИИ считает макросы, калории и гидратацию с Apple Health. 3 анализа в день бесплатно + скидка 50% — $30/год (месяц $3.99). 4.9★ · 2 800+ отзывов.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://suuapp.com/hosgeldiniz-ru.html">
-    <meta property="og:image" content="https://suuapp.com/assets/og-image.png">
-    <meta property="og:locale" content="ru_RU">
-    <meta property="og:site_name" content="Suu">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@SuuTakip">
-    <meta name="twitter:title" content="Suu - Калории и вода | Вода, калории и здоровье · 4.9★">
-    <meta name="twitter:description" content="Голосовой ввод еды, фотоанализ калорий, макросы и гидратация с Apple Health. 3 анализа в день бесплатно + скидка 50%. iOS и Android.">
-    <meta name="twitter:image" content="https://suuapp.com/assets/og-image.png">
-
-    <!-- Hreflang -->
+    <link rel="canonical" href="https://suuapp.com/hosgeldiniz-ru.html">
+    <!-- Hreflang cluster (auto-injected) -->
     <link rel="alternate" hreflang="tr" href="https://suuapp.com/">
     <link rel="alternate" hreflang="en" href="https://suuapp.com/hosgeldiniz-en.html">
     <link rel="alternate" hreflang="ar" href="https://suuapp.com/hosgeldiniz-ar.html">
     <link rel="alternate" hreflang="ru" href="https://suuapp.com/hosgeldiniz-ru.html">
-    <link rel="alternate" hreflang="x-default" href="https://suuapp.com/hosgeldiniz-en.html">
+    <link rel="alternate" hreflang="de" href="https://suuapp.com/hosgeldiniz-de.html">
+    <link rel="alternate" hreflang="it" href="https://suuapp.com/hosgeldiniz-it.html">
+    <link rel="alternate" hreflang="hi" href="https://suuapp.com/hosgeldiniz-hi.html">
+    <link rel="alternate" hreflang="x-default" href="https://suuapp.com/">
 
-    <link rel="canonical" href="https://suuapp.com/hosgeldiniz-ru.html">
+
+    <meta name="apple-itunes-app" content="app-id=6757619920">
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data:; img-src 'self' https: data:; font-src 'self' https: data:;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Suu — вода, калории и тренировки в одном приложении">
+    <meta property="og:description" content="Сфотографируйте еду и узнайте калории и БЖУ. 91 напиток, около 50 видов спорта и цель по воде, которая обновляется после каждой тренировки. 3 дня Premium бесплатно.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://suuapp.com/hosgeldiniz-ru.html">
+    <meta property="og:image" content="https://suuapp.com/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Suu — вода, калории и тренировки">
+    <meta property="og:site_name" content="Suu">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="ar_SA">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="hi_IN">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SuuTakip">
+    <meta name="twitter:creator" content="@SuuTakip">
+    <meta name="twitter:title" content="Suu — вода, калории и тренировки в одном приложении">
+    <meta name="twitter:description" content="Калории по фото, гидратация по 91 напитку и около 50 видов спорта. Тренировки автоматически обновляют цель по воде. 4.9★ · 3 дня бесплатно.">
+    <meta name="twitter:image" content="https://suuapp.com/assets/og-image.png">
+    <meta name="twitter:image:alt" content="Suu — вода, калории и тренировки">
+
+    <!-- Favicon -->
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon-512.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <!-- Preconnect -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/donation-widget.css">
+    <link rel="stylesheet" href="/assets/css/suu.css">
 
-    <!-- Fonts & Icons — non-render-blocking -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"></noscript>
-
-    <!-- Schema: Organization + WebSite -->
+    <!-- Yapılandırılmış veri — kaynak: content/suu-facts.json -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Suu",
-        "alternateName": ["Suu App", "Suu Water Tracker", "SuuApp", "suuapp"],
-        "url": "https://suuapp.com",
-        "logo": "https://suuapp.com/assets/favicon-512.png",
-        "description": "Suu — приложение для калорий и воды (и гидратации) на Android и iOS. Персональные цели гидратации, лига друзей, 91 напиток, умные напоминания.",
-        "foundingDate": "2024",
-        "founder": {
-            "@type": "Person",
-            "name": "Furkan Mert Fındıklı",
-            "url": "https://www.linkedin.com/in/furkanfindikli/"
+      "@type": "Organization",
+      "@id": "https://suuapp.com/#organization",
+      "name": "Suu",
+      "url": "https://suuapp.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://suuapp.com/assets/favicon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "email": "Suutakip@gmail.com",
+      "founder": {
+        "@id": "https://suuapp.com/#furkan"
+      },
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "İstanbul, Türkiye"
+      },
+      "areaServed": [
+        "TR",
+        "SA",
+        "AE",
+        "KW",
+        "QA",
+        "RU",
+        "DE",
+        "IT",
+        "IN",
+        "US",
+        "GB"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/furkanfindikli/",
+        "https://apps.apple.com/us/app/suu-su-takip/id6757619920",
+        "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://suuapp.com/#furkan",
+      "name": "Furkan Mert Fındıklı",
+      "birthDate": "1999-02-09",
+      "jobTitle": "Kurucu \u0026 Geliştirici",
+      "url": "https://suuapp.com/yazarlar/furkan-mert.html",
+      "homeLocation": {
+        "@type": "Place",
+        "name": "İstanbul, Türkiye"
+      },
+      "knowsAbout": [
+        "Flutter",
+        "Apple HealthKit",
+        "Google Health Connect",
+        "UI/UX",
+        "dijital pazarlama"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/furkanfindikli/"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://suuapp.com/#nisanur",
+      "name": "Nisanur Büyükbaş",
+      "jobTitle": "Head of Growth \u0026 Marketing",
+      "worksFor": {
+        "@id": "https://suuapp.com/#organization"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://suuapp.com/#website",
+      "url": "https://suuapp.com",
+      "name": "Suu",
+      "description": "Suu объединяет трекер воды, счётчик калорий и учёт тренировок с помощью ИИ. Сфотографируйте еду — получите калории и БЖУ за секунды; 91 напиток и около 50 видов спорта, а цель по воде обновляется сама. Бесплатно на iOS и Android.",
+      "inLanguage": "ru",
+      "publisher": {
+        "@id": "https://suuapp.com/#organization"
+      }
+    },
+    {
+      "@type": [
+        "MobileApplication",
+        "HealthAndFitnessApplication"
+      ],
+      "@id": "https://suuapp.com/#suuapp-ios",
+      "name": "Suu – трекер воды, счётчик калорий и тренировки",
+      "alternateName": "Suu",
+      "operatingSystem": "iOS 15.0+",
+      "applicationCategory": "HealthApplication",
+      "url": "https://suuapp.com/hosgeldiniz-ru.html",
+      "downloadUrl": "https://apps.apple.com/us/app/suu-su-takip/id6757619920",
+      "installUrl": "https://apps.apple.com/us/app/suu-su-takip/id6757619920",
+      "inLanguage": [
+        "tr",
+        "en",
+        "ar",
+        "de",
+        "it",
+        "ru",
+        "hi"
+      ],
+      "author": {
+        "@id": "https://suuapp.com/#furkan"
+      },
+      "publisher": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "screenshot": "https://suuapp.com/assets/screenshots/ios/ru/ana-ekran.webp",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "bestRating": "5",
+        "ratingCount": "2847"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Бесплатно",
+          "price": "0",
+          "priceCurrency": "TRY"
         },
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Istanbul",
-            "addressCountry": "TR"
+        {
+          "@type": "Offer",
+          "name": "Premium на год",
+          "price": "1200",
+          "priceCurrency": "TRY"
         },
-        "sameAs": [
-            "https://www.instagram.com/suu.cia/",
-            "https://x.com/SuuTakip",
-            "https://www.facebook.com/people/SuuTakip/61580176610557/",
-            "https://linkedin.com/company/suutakip",
-            "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
-            "https://apps.apple.com/us/app/suu-su-takip/id6757619920"
+        {
+          "@type": "Offer",
+          "name": "Premium",
+          "price": "149",
+          "priceCurrency": "TRY"
+        },
+        {
+          "@type": "Offer",
+          "name": "Family",
+          "price": "2399",
+          "priceCurrency": "TRY"
+        }
+      ],
+      "featureList": [
+        "Анализ калорий по фото — калории, белки, углеводы и жиры по снимку блюда",
+        "Голосовой и текстовый ввод приёмов пищи",
+        "Автоматический расчёт БЖУ и анализ питания",
+        "Оценка питания от 1 до 100",
+        "91 напиток с реальным вкладом в гидратацию",
+        "Умная цель по воде с учётом возраста, веса и активности",
+        "Автоматическая корректировка цели по температуре воздуха",
+        "Расчёт воды для пищеварения по съеденному",
+        "Индекс Suu — показатель гидратации 0-100",
+        "Адаптивный мозг гидратации — адаптивный движок цели",
+        "Около 50 видов спорта",
+        "Дистанция, время, темп, средняя скорость и калории для бега и ходьбы",
+        "Скорость, средняя скорость, дистанция, высота и время для велосипеда",
+        "Тренировки автоматически обновляют цель по воде",
+        "Чат-ассистент Suu AI",
+        "Дневные, недельные и месячные графики",
+        "Экспорт отчётов PDF и CSV",
+        "Публикация историй",
+        "Виртуальный питомец и значки",
+        "Лиги с друзьями — еженедельно, до 4 человек",
+        "Двусторонняя синхронизация с Apple Health",
+        "Команды Siri",
+        "Dynamic Island",
+        "Live Activities",
+        "Виджеты экрана блокировки и главного экрана",
+        "Поддержка доступности VoiceOver"
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "beverages",
+          "value": "91"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "sportActivities",
+          "value": "50"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "languages",
+          "value": "7"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "freeAiAnalysesPerDay",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "freeTrialDays",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "appleWatch",
+          "value": "coming soon"
+        }
+      ]
+    },
+    {
+      "@type": [
+        "MobileApplication",
+        "HealthAndFitnessApplication"
+      ],
+      "@id": "https://suuapp.com/#suuapp-android",
+      "name": "Suu – трекер воды, счётчик калорий и тренировки",
+      "alternateName": "Suu",
+      "operatingSystem": "Android 8.0+",
+      "applicationCategory": "HealthApplication",
+      "url": "https://suuapp.com/hosgeldiniz-ru.html",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
+      "inLanguage": [
+        "tr",
+        "en",
+        "ar",
+        "de",
+        "it",
+        "ru",
+        "hi"
+      ],
+      "author": {
+        "@id": "https://suuapp.com/#furkan"
+      },
+      "publisher": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "screenshot": "https://suuapp.com/assets/screenshots/android/ru/ana-ekran.webp",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "bestRating": "5",
+        "ratingCount": "2847"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Бесплатно",
+          "price": "0",
+          "priceCurrency": "TRY"
+        },
+        {
+          "@type": "Offer",
+          "name": "Premium на год",
+          "price": "1200",
+          "priceCurrency": "TRY"
+        },
+        {
+          "@type": "Offer",
+          "name": "Premium",
+          "price": "149",
+          "priceCurrency": "TRY"
+        },
+        {
+          "@type": "Offer",
+          "name": "Family",
+          "price": "2399",
+          "priceCurrency": "TRY"
+        }
+      ],
+      "featureList": [
+        "Анализ калорий по фото",
+        "Голосовой и текстовый ввод приёмов пищи",
+        "Автоматический расчёт БЖУ",
+        "91 напиток",
+        "Около 50 видов спорта",
+        "Чат-ассистент Suu AI",
+        "Двусторонняя синхронизация с Google Health Connect",
+        "Виджеты главного экрана",
+        "Публикация историй",
+        "Виртуальный питомец и лиги с друзьями",
+        "Поддержка доступности TalkBack"
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "beverages",
+          "value": "91"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "sportActivities",
+          "value": "50"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "languages",
+          "value": "7"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "freeAiAnalysesPerDay",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "freeTrialDays",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "appleWatch",
+          "value": "coming soon"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://suuapp.com/hosgeldiniz-ru.html#webpage",
+      "url": "https://suuapp.com/hosgeldiniz-ru.html",
+      "name": "Suu — вода, калории и тренировки в одном приложении | 4.9★ · 3 дня бесплатно",
+      "isPartOf": {
+        "@id": "https://suuapp.com/#website"
+      },
+      "about": {
+        "@id": "https://suuapp.com/#suuapp-ios"
+      },
+      "inLanguage": "ru",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://suuapp.com/assets/og-image.png"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".hero__title",
+          ".hero__lead",
+          ".answer-box"
         ]
-    }
-    </script>
-    <script type="application/ld+json">
+      }
+    },
     {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Suu",
-        "alternateName": "Suu Water Tracker App",
-        "url": "https://suuapp.com",
-        "inLanguage": ["tr", "en", "ar", "ru"],
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": {
-                "@type": "EntryPoint",
-                "urlTemplate": "https://suuapp.com/blog-ru.html?q={search_term_string}"
-            },
-            "query-input": "required name=search_term_string"
-        }
-    }
-    </script>
-
-    <!-- Schema: SoftwareApplication -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": ["SoftwareApplication", "MobileApplication"],
-        "name": "Suu - Calorie & Water Tracker",
-        "description": "Умное приложение для калорий и воды (и гидратации) на Android и iOS. Персональные цели гидратации, лига друзей, умные напоминания, 91 напиток.",
-        "applicationCategory": "HealthAndFitness",
-        "applicationSubCategory": "HealthAndFitness",
-        "operatingSystem": ["Android", "iOS"],
-        "inLanguage": ["tr", "en", "ar", "ru"],
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "ratingCount": "2847",
-            "bestRating": "5",
-            "worstRating": "1"
+      "@type": "FAQPage",
+      "@id": "https://suuapp.com/hosgeldiniz-ru.html#faq",
+      "about": {
+        "@id": "https://suuapp.com/#suuapp-ios"
+      },
+      "inLanguage": "ru",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Suu действительно совмещает учёт воды, калорий и тренировок в одном приложении?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Suu ведёт все три не как отдельные вкладки, а как единую систему, где всё связано: записанная тренировка повышает дневную цель по воде, белок и натрий в еде определяют дополнительную воду для пищеварения, а каждый напиток учитывается с реальным вкладом в гидратацию из базы на 91 напиток."
+          }
         },
-        "offers": [
-            {
-                "@type": "Offer", "price": "0", "priceCurrency": "USD",
-                "url": "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
-                "seller": {"@type": "Organization", "name": "Google Play"}
-            },
-            {
-                "@type": "Offer", "price": "0", "priceCurrency": "USD",
-                "url": "https://apps.apple.com/us/app/suu-su-takip/id6757619920",
-                "seller": {"@type": "Organization", "name": "App Store"}
-            }
-        ],
-        "downloadUrl": "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
-        "installUrl": "https://suuapp.com/app/",
-        "author": {
-            "@type": "Organization",
-            "name": "Suu",
-            "url": "https://suuapp.com"
-        }
-    }
-    </script>
-
-    <!-- Structured Data: FAQPage -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "Есть ли у Suu ИИ-чат-ассистент?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Да — встроенный ассистент Suu теперь является разговорным ИИ-агентом на основе настоящего ИИ. Он не просто отвечает на вопросы, а действует за вас: вы можете добавлять воду в разговоре («добавь 2 стакана воды»), запрашивать дневную статистику, просить направить вас на нужный экран приложения (статистика, цель, напитки), ставить напоминания и получать персональный коучинг на основе вашего профиля, чтобы приблизиться к дневной цели по гидратации — всё на естественном языке. Доступно бесплатно на iOS и Android на suuapp.com."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Отслеживает ли Suu напитки Starbucks и других кофеен?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Да — у Suu есть отдельный раздел для популярных кофейных сетей, включая Starbucks, Nevada Coffee, Greenwich Coffee и другие. Вы можете выбрать конкретный напиток (например, Starbucks Grande Latte, Nevada Americano), и Suu мгновенно рассчитает его коэффициент обезвоживания и покажет, сколько воды нужно выпить дополнительно. Это единственное приложение для отслеживания воды со встроенным меню кофеен. Доступно бесплатно на iOS и Android на suuapp.com."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Как Suu рассчитывает обезвоживание от кофе?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Suu использует научно рассчитанные коэффициенты обезвоживания для 91 напиток. Для кофе кофеин действует как слабый диуретик — поэтому 250 мл американо дают около 150 мл чистой гидратации (коэффициент обезвоживания около 60%). Для популярных сетей (Starbucks, Nevada, Greenwich) Suu имеет предзагруженные профили напитков, чтобы вам не пришлось ничего считать вручную."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Какое приложение для отслеживания воды лучшее?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Suu — лучшее приложение для отслеживания воды в 2026 году. Оно бесплатное, доступно на iOS и Android и предлагает уникальные функции: лига друзей в реальном времени, 91 напиток с коэффициентами обезвоживания, специальные разделы для кофеен (Starbucks, Nevada, Greenwich), поддержка iOS Dynamic Island, виджеты экрана блокировки, интеграция с Apple Health и Google Health, умные уведомления и PDF-отчёты по гидратации. Скачайте на suuapp.com."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Кто разработал приложение Suu?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Suu разработал Furkan Mert Fındıklı — самоучка из Турции, разработчик и предприниматель, родившийся 9 февраля 1999 года. Он окончил Университет Тарсуса по специальности «Международная торговля и логистика». Имея за плечами опыт малого бизнеса, Fındıklı 4 года самостоятельно изучал разработку программного обеспечения и создал Suu полностью с нуля благодаря огромному труду и упорству. Он живёт в Стамбуле, Турция. LinkedIn: linkedin.com/in/furkanfindikli"
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Есть ли у Suu приложение для Apple Watch?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Да — у Suu есть отдельное приложение для Apple Watch, написанное на SwiftUI. Вы можете записывать воду прямо с запястья, не доставая iPhone. Кольцо прогресса показывает выполнение дневной цели одним взглядом, а кнопки быстрого действия позволяют добавить любимое количество в одно касание. Данные мгновенно синхронизируются между Apple Watch и iPhone через App Group."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Можно ли использовать Siri для отслеживания воды?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Да. Suu поддерживает iOS Siri Shortcuts, поэтому вы можете добавлять воду без рук с помощью голосовых команд вроде «Привет, Siri, добавь стакан воды». Также можно создать собственные ярлыки Siri для конкретных объёмов или напитков. Кроме того, у Suu есть встроенная система распознавания голоса (независимая от Siri), работающая на iOS и Android."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Интегрируется ли Suu с Apple Health?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Да — у Suu полная двусторонняя интеграция с Apple HealthKit (iOS) и Google Health Connect (Android). Вода, записанная в Suu, автоматически отправляется в Apple Health или Google Fit. Suu также читает количество шагов и активные калории, чтобы динамически корректировать дневную цель гидратации."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Что такое оценка гидратации?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Оценка гидратации Suu — это рейтинг 0-100, оценивающий ваши ежедневные привычки потребления воды. Она объединяет четыре взвешенные метрики: процент выполнения цели (50%), регулярность питья в течение дня (20%), распределение по времени (20%) и избежание чрезмерного потребления (10%). 85-100 — «Отлично», 70-84 — «Хорошо», 40-69 — «Развивается», 0-39 — «Требует работы»."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Корректирует ли Suu цель по воде в зависимости от тренировок?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Да. Suu читает данные об активности из Apple Health и Google Fit и автоматически увеличивает дневную цель воды в зависимости от типа, продолжительности и интенсивности тренировки. Например, 30 минут умеренного бега добавляют ~+400 мл, час плавания — +600 мл. Поддерживаются ходьба, бег, плавание, велосипед, фитнес и 30+ типов активности."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Может ли Suu отслеживать кофеин и сахар?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Да — Suu теперь отслеживает не только гидратацию, но и кофеин (мг) и сахар (г) для 91 напиток. Приложение предупреждает, когда вы приближаетесь к дневному лимиту кофеина FDA (400 мг) или рекомендации ВОЗ по добавленному сахару (25 г). Например, Starbucks Grande Latte: ~150 мг кофеина и ~14 г сахара."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Можно ли попробовать Suu Premium бесплатно? Сколько стоит?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Да. Suu Premium предлагает 3 дня бесплатно без указания карты заранее — отмена в любое время. Годовая подписка Premium обычно стоит $60/год, но сейчас доступна со скидкой 50% при запуске — $30/год. Также есть план $3.99/мес и семейный план ($60/год до 3 человек). Примерные годовые цены: ≈₺1 200 TRY, ≈€28 EUR, ≈112 SAR, ≈112 AED, ≈9.2 KWD, ≈110 QAR. Фактические платежи производятся через App Store / Google Play в местной валюте магазина."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Является ли Suu ИИ-помощником по здоровью?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Да. Suu больше не просто приложение для отслеживания воды. С динамическими целями на основе активности, отслеживанием кофеина и сахара, оценкой гидратации (0-100), контекстными умными уведомлениями, личным тренером по гидратации, корректировкой целей по погоде и еженедельными персональными отчётами Suu работает как полноценный ИИ-помощник по здоровью в вашем кармане."
-                }
-            }
-        ]
-    }
-    </script>
-
-    <!-- Structured Data: Donation Transparency (Russian) -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "MonetaryGrant",
-        "@id": "https://suuapp.com/hosgeldiniz-ru.html#donation-program",
-        "name": "Программа пожертвований Suu Premium",
-        "description": "2% всех доходов от подписки Suu Premium направляются на проекты строительства колодцев с чистой водой в Африке. Все суммы пожертвований и квитанции банковских переводов открыто и прозрачно публикуются на suuapp.com.",
-        "url": "https://suuapp.com/gizlilik-politikasi.html",
-        "amount": {"@type": "MonetaryAmount", "currency": "TRY", "value": "1500"},
-        "funder": {
-            "@type": "Organization",
-            "name": "Suu",
-            "url": "https://suuapp.com"
+        {
+          "@type": "Question",
+          "name": "Как работает подсчёт калорий по фото?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Вы фотографируете еду; Suu AI анализирует блюдо, извлекает калории, белки, углеводы и жиры и автоматически строит БЖУ. Фото не хранится постоянно. Анализ по фото — функция Premium; на бесплатном тарифе доступно 3 голосовых или текстовых ИИ-анализа в день."
+          }
         },
-        "subjectOf": {
-            "@type": "CreativeWork",
-            "name": "Архив квитанций пожертвований",
-            "url": "https://suuapp.com/donations/receipts/",
-            "encodingFormat": "application/pdf"
+        {
+          "@type": "Question",
+          "name": "Сколько видов спорта поддерживает Suu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Около 50 разных активностей: бег, ходьба, велосипед, фитнес, плавание, хайкинг, кардио и другие. Для бега и ходьбы видны дистанция, время, темп, средняя скорость и сожжённые калории; для велосипеда дополнительно скорость и набор высоты. После каждой тренировки цель по воде обновляется автоматически."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Suu бесплатное?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Базовый учёт воды и гидратации, 3 ИИ-анализа в день и синхронизация с Apple Health / Google Health Connect всегда бесплатны. Безлимитный ИИ-анализ еды, подсчёт калорий по фото, расширенный анализ питания и Premium-статистика требуют подписки. Premium можно попробовать бесплатно 3 дня; год стоит ₺1 200 со скидкой 50% на старте (обычно ₺2 400), месяц — ₺149, семейный тариф на 3 человек — ₺2 399 в год."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какие языки поддерживает Suu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Приложение доступно на 7 языках: Türkçe, English, العربية (полная поддержка справа налево), Deutsch, Italiano, Русский и हिन्दी."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Есть ли у Suu приложение для Apple Watch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Собственного приложения Suu для Apple Watch пока нет — оно скоро выйдет. Сегодня тренировки, шаги и активная энергия, записанные вашими часами, попадают в Suu через Apple Health и автоматически повышают цель по воде. Для записи с запястья без рук можно использовать команду Siri."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Мои данные в безопасности?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Данные полностью принадлежат вам. Рекламного отслеживания нет, данные не передаются третьим сторонам. При голосовом вводе речь преобразуется в текст операционной системой устройства — аудиозапись не отправляется на серверы Suu. Фотографии еды не хранятся постоянно после анализа."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему Suu вместо MyFitnessPal или Yazio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "У MyFitnessPal шире база продуктов, у Yazio сильнее библиотека рецептов. Suu отличается целостностью: учёт воды, анализ калорий по фото и учёт тренировок живут в одном приложении и связаны — тренировка обновляет цель по воде, а еда обновляет потребность в воде для пищеварения. Плюс настоящий расчёт гидратации по 91 напитку и поддержка 7 языков."
+          }
         }
+      ]
     }
+  ]
+}
     </script>
 
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', -apple-system, sans-serif; color: #333; background: #f8f9fa; line-height: 1.6; }
-
-        /* Navbar */
-        .navbar { background: white; padding: 0 20px; height: 70px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 10px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 100; }
-        .nav-logo { display: flex; align-items: center; gap: 8px; font-size: 22px; font-weight: 800; color: #4A90D9; text-decoration: none; }
-        .nav-links { display: flex; align-items: center; gap: 20px; }
-        .nav-links a { color: #555; text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
-        .nav-links a:hover { color: #4A90D9; }
-        .nav-container { display: flex; align-items: center; gap: 16px; }
-        .hamburger { display: none; }
-
-        /* Hero */
-        .hero { background: linear-gradient(135deg, #4A90D9 0%, #29B6F6 50%, #00ACC1 100%); color: white; padding: 80px 20px 100px; text-align: center; position: relative; overflow: hidden; }
-        .hero::before { content: ''; position: absolute; bottom: -40px; left: 0; right: 0; height: 80px; background: #f8f9fa; clip-path: ellipse(55% 100% at 50% 100%); }
-        .hero-badge { display: inline-block; background: rgba(255,255,255,0.2); padding: 6px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 24px; backdrop-filter: blur(4px); }
-        .hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; margin-bottom: 16px; line-height: 1.2; max-width: 700px; margin-left: auto; margin-right: auto; }
-        .hero p { font-size: 1.15rem; opacity: 0.92; margin-bottom: 40px; max-width: 520px; margin-left: auto; margin-right: auto; }
-        .hero-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 48px; }
-        .btn-store { display: inline-flex; align-items: center; gap: 10px; padding: 14px 28px; border-radius: 50px; font-weight: 700; font-size: 1rem; text-decoration: none; transition: all 0.25s; }
-        .btn-ios { background: white; color: #1a1a2e; }
-        .btn-ios:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
-        .btn-android { background: rgba(255,255,255,0.15); color: white; border: 2px solid rgba(255,255,255,0.5); }
-        .btn-android:hover { background: rgba(255,255,255,0.25); transform: translateY(-2px); }
-        .hero-rating { display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 14px; opacity: 0.9; }
-        .stars { color: #FFD700; letter-spacing: 2px; }
-
-        /* Features */
-        .section { padding: 70px 20px; }
-        .container { max-width: 1000px; margin: 0 auto; }
-        .section-title { text-align: center; font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 800; color: #1a1a2e; margin-bottom: 12px; }
-        .section-sub { text-align: center; color: #666; font-size: 1rem; margin-bottom: 50px; max-width: 540px; margin-left: auto; margin-right: auto; }
-        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
-        .feature-card { background: white; border-radius: 16px; padding: 28px; box-shadow: 0 4px 16px rgba(0,0,0,0.07); transition: transform 0.2s, box-shadow 0.2s; }
-        .feature-card:hover { transform: translateY(-4px); box-shadow: 0 8px 28px rgba(0,0,0,0.11); }
-        .feature-icon { width: 52px; height: 52px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 16px; }
-        .feature-card h3 { font-size: 1.05rem; font-weight: 700; color: #1a1a2e; margin-bottom: 8px; }
-        .feature-card p { font-size: 0.9rem; color: #666; line-height: 1.6; }
-
-        /* Screenshots */
-        .screenshots-section { background: linear-gradient(135deg, #f0f7ff, #e8f4f8); }
-        .screenshots-row { margin-top: 40px; overflow-x: auto; -webkit-overflow-scrolling: touch; scroll-snap-type: x proximity; padding-bottom: 14px; scrollbar-width: thin; scrollbar-color: rgba(74,144,217,0.4) transparent; }
-        .screenshots-row::-webkit-scrollbar { height: 8px; }
-        .screenshots-row::-webkit-scrollbar-thumb { background: rgba(74,144,217,0.35); border-radius: 4px; }
-        .screenshots-track { display: flex; gap: 16px; width: max-content; max-width: 100%; margin: 0 auto; padding: 6px 4px; box-sizing: border-box; }
-        .screenshot-wrap { flex: 0 0 auto; background: white; border-radius: 20px; padding: 8px; box-shadow: 0 4px 20px rgba(74,144,217,0.15); scroll-snap-align: center; }
-        .screenshot-wrap img { width: 140px; height: auto; max-width: 100%; border-radius: 14px; display: block; }
-
-        /* Stats */
-        .stats-row { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; margin-top: 40px; }
-        .stat-card { background: white; border-radius: 14px; padding: 28px 36px; text-align: center; box-shadow: 0 4px 16px rgba(0,0,0,0.07); min-width: 160px; }
-        .stat-num { font-size: 2.2rem; font-weight: 800; color: #4A90D9; line-height: 1; margin-bottom: 8px; }
-        .stat-label { font-size: 0.85rem; color: #888; font-weight: 500; }
-
-        /* Blog links */
-        .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; margin-top: 30px; }
-        .blog-card { background: white; border-radius: 12px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.07); text-decoration: none; color: inherit; transition: transform 0.2s; display: block; }
-        .blog-card:hover { transform: translateY(-3px); }
-        .blog-card .tag { font-size: 11px; font-weight: 700; color: #4A90D9; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
-        .blog-card h4 { font-size: 0.9rem; color: #222; line-height: 1.5; font-weight: 600; }
-
-        /* CTA */
-        .cta-section { background: linear-gradient(135deg, #4A90D9, #29B6F6); color: white; padding: 70px 20px; text-align: center; }
-        .cta-section h2 { font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 800; margin-bottom: 14px; }
-        .cta-section p { font-size: 1.05rem; opacity: 0.9; margin-bottom: 36px; }
-
-        /* Footer */
-        footer { background: #1a1a2e; color: rgba(255,255,255,0.6); padding: 28px 20px; text-align: center; font-size: 13px; }
-        footer a { color: rgba(255,255,255,0.7); text-decoration: none; margin: 0 10px; }
-        footer a:hover { color: white; }
-
-        @media (max-width: 600px) {
-            .nav-links { display: none; }
-            .screenshots-track { gap: 10px; }
-            .screenshot-wrap img { width: 132px; }
-        }
-    </style>
+    <script src="/assets/js/analytics.js" defer></script>
+    <script src="/assets/js/screenshots.js" defer></script>
+    <script src="/assets/js/water-calc.js" defer></script>
+    <script src="/lang-switcher.js?v=3" defer></script>
+    <script src="/donation-widget.js" defer></script>
 </head>
 <body>
 
-<nav class="navbar">
-    <a href="hosgeldiniz-ru.html" class="nav-logo"><i class="fas fa-tint"></i> Suu</a>
-    <div class="nav-links">
-        <a href="#features">Возможности</a>
-        <a href="#stats">Статистика</a>
-        <a href="blog-ru.html">Блог</a>
-        <a href="faq.html">FAQ</a>
-        <a href="hakkimizda-ru.html">О нас</a>
-    </div>
-    <div class="nav-container">
-        <!-- lang-switcher.js injects TR/EN/AR/RU buttons here -->
-        <div class="hamburger"></div>
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-water" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5s6.5 7 6.5 11.2A6.5 6.5 0 0 1 12 20.2a6.5 6.5 0 0 1-6.5-6.5C5.5 9.5 12 2.5 12 2.5z"/></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24" fill="currentColor"><path d="M13.4 1.7c.4 3-1.3 4.4-2.6 5.7-1.3 1.3-2.5 2.6-2.5 5A5.7 5.7 0 0 0 12 18a3.1 3.1 0 0 1-.9-2.2c0-1.3.8-2.2 1.7-3.2.7-.8 1.5-1.6 1.9-2.8.9 1 1.5 2.2 1.8 3.2a8 8 0 0 1 .3 2.1c0 1-.4 2-1 2.8a5.9 5.9 0 0 0 3.4-5.3c0-4.6-3.6-8.3-5.8-10.9z"/></symbol>
+    <symbol id="i-run" viewBox="0 0 24 24" fill="currentColor"><path d="M15.5 5.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM12.9 7.2 9.4 9l-1.6 4-2.6-.7L4.6 15l4.6 1.3 1.2-3 2 1.6-1.1 6.1h2.4l1.3-7-2.3-2 .8-3.4 1.6 2.2 3.5.9.5-2.3-2.4-.6-1.9-2.6a2.5 2.5 0 0 0-2-1z"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24" fill="currentColor"><path d="M9.5 3.5 8.2 5.5H4.5A2.5 2.5 0 0 0 2 8v10a2.5 2.5 0 0 0 2.5 2.5h15A2.5 2.5 0 0 0 22 18V8a2.5 2.5 0 0 0-2.5-2.5h-3.7l-1.3-2h-5zM12 17.5a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2.2a2.8 2.8 0 1 0 0-5.6 2.8 2.8 0 0 0 0 5.6z"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5c-5.5 0-10 3.6-10 8 0 2.5 1.4 4.7 3.6 6.2L4.4 21l4.5-2.2c1 .2 2 .4 3.1.4 5.5 0 10-3.6 10-8s-4.5-8.7-10-8.7z"/></symbol>
+    <symbol id="i-apple" viewBox="0 0 24 24" fill="currentColor"><path d="M17.56 12.3c-.03-3.06 2.5-4.53 2.61-4.6-1.42-2.08-3.63-2.37-4.42-2.4-1.88-.19-3.67 1.11-4.63 1.11-.95 0-2.42-1.08-3.98-1.05-2.05.03-3.94 1.19-4.99 3.03-2.13 3.69-.54 9.15 1.53 12.14 1.01 1.46 2.21 3.1 3.79 3.04 1.52-.06 2.09-.98 3.93-.98 1.83 0 2.36.98 3.97.95 1.64-.03 2.68-1.49 3.68-2.96 1.16-1.7 1.64-3.35 1.67-3.43-.04-.02-3.2-1.23-3.23-4.87M14.5 3.7c.84-1.02 1.4-2.43 1.25-3.84-1.21.05-2.67.81-3.53 1.82-.77.9-1.45 2.34-1.27 3.72 1.35.1 2.72-.69 3.55-1.7"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+</svg>
+
+<nav class="nav" id="nav">
+    <div class="container nav__inner">
+        <a href="hosgeldiniz-ru.html" class="nav__logo" aria-label="Главная страница Suu">
+            <svg width="26" height="26" aria-hidden="true"><use href="#i-water"></use></svg>
+            Suu
+        </a>
+        <ul class="nav__links" id="navLinks">
+            <li><a href="#pillars">Возможности</a></li>
+            <li><a href="#kalori">Калории</a></li>
+            <li><a href="#egzersiz">Тренировки</a></li>
+            <li><a href="#ekranlar">Экраны</a></li>
+            <li><a href="#karsilastirma">Сравнение</a></li>
+            <li><a href="#fiyat">Цены</a></li>
+            <li><a href="blog-ru.html">Блог</a></li>
+            <li><a href="#sss">Вопросы</a></li>
+        </ul>
+        <div class="nav__actions">
+            <a href="/app?src=nav" class="btn btn--primary" data-cta="nav" style="min-height:40px;padding:var(--sp-2) var(--sp-5);font-size:var(--fs-sm)">Скачать бесплатно</a>
+        </div>
+        <button class="nav__toggle" id="navToggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="navLinks">
+            <svg width="24" height="24" aria-hidden="true"><use href="#i-menu"></use></svg>
+        </button>
     </div>
 </nav>
 
-<section class="hero">
-    <div class="hero-badge">🤖 ИИ-помощник по питанию и гидратации</div>
-    <h1>Не только вода — всё, что нужно вашему телу.</h1>
-    <p>Добавляйте приём пищи голосом, фотографируйте для подсчёта калорий; ИИ за секунды считает макросы, калории и гидратацию с синхронизацией Apple Health — 3 анализа в день бесплатно.</p>
-    <div class="hero-btns">
-        <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" class="btn-store btn-ios" target="_blank" rel="noopener">
-            <i class="fab fa-apple" style="font-size:1.3rem;"></i>
-            <span><small style="display:block;font-size:10px;font-weight:500;opacity:.7;">Скачать в</small>App Store</span>
-        </a>
-        <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro" class="btn-store btn-android" target="_blank" rel="noopener">
-            <i class="fab fa-google-play" style="font-size:1.2rem;"></i>
-            <span><small style="display:block;font-size:10px;font-weight:500;opacity:.8;">Доступно в</small>Google Play</span>
-        </a>
-        <a href="premium-ru.html" class="btn-store" target="_self" rel="noopener" style="background:transparent;border:2px solid rgba(255,255,255,0.7);color:#fff;">
-            <i class="fas fa-crown" style="font-size:1.1rem;"></i>
-            <span><small style="display:block;font-size:10px;font-weight:500;opacity:.8;">Откройте</small>Функции Premium</span>
-        </a>
-    </div>
-    <div class="hero-rating">
-        <span class="stars">★★★★★</span>
-        <span>4.9 · 2 847 отзывов · Бесплатно</span>
-    </div>
-</section>
+<main id="main">
 
-<!-- Launch Promotional Banner -->
-<section class="promo-banner" id="promo" aria-label="Launch promotion">
-    <style>
-        .promo-banner{background:linear-gradient(135deg,#0f3a82 0%,#1565C0 50%,#00ACC1 100%);color:#fff;padding:48px 20px;position:relative;overflow:hidden}
-        .promo-banner::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 20% 0%,rgba(255,255,255,0.18) 0%,transparent 45%),radial-gradient(circle at 80% 100%,rgba(0,229,255,0.25) 0%,transparent 50%);pointer-events:none}
-        .promo-inner{position:relative;max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
-        .promo-tag{display:inline-block;background:rgba(255,255,255,0.18);padding:6px 14px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;margin-bottom:14px}
-        .promo-title{font-size:clamp(1.5rem,3.4vw,2.2rem);font-weight:800;line-height:1.25;margin-bottom:14px}
-        .promo-title span{background:linear-gradient(90deg,#FFEB3B,#FFC107);-webkit-background-clip:text;background-clip:text;color:transparent}
-        .promo-desc{font-size:1rem;opacity:.94;margin-bottom:20px;max-width:520px}
-        .promo-perks{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
-        .promo-perk{background:rgba(255,255,255,0.14);padding:8px 14px;border-radius:10px;font-size:13px;font-weight:600}
-        .promo-cta{display:inline-flex;align-items:center;gap:10px;background:#fff;color:#0f3a82;padding:13px 26px;border-radius:50px;font-weight:800;text-decoration:none;font-size:0.98rem;box-shadow:0 8px 22px rgba(0,0,0,0.18)}
-        .promo-card{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.18);border-radius:20px;padding:26px;backdrop-filter:blur(8px)}
-        .promo-card h4{font-size:0.78rem;letter-spacing:1.5px;text-transform:uppercase;font-weight:700;opacity:.78;margin-bottom:8px}
-        .promo-price{display:flex;align-items:baseline;gap:14px;margin-bottom:6px;flex-wrap:wrap}
-        .promo-price .now{font-size:2.6rem;font-weight:900;line-height:1}
-        .promo-price .before{font-size:1.1rem;text-decoration:line-through;opacity:.6}
-        .promo-price .save{background:#FFD600;color:#0f3a82;padding:3px 10px;border-radius:8px;font-size:0.78rem;font-weight:800}
-        .promo-period{font-size:0.92rem;opacity:.85;margin-bottom:16px}
-        .promo-currencies{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,0.18)}
-        .promo-cur{display:flex;justify-content:space-between;font-size:0.82rem;font-weight:600;background:rgba(255,255,255,0.06);padding:7px 11px;border-radius:8px}
-        .promo-cur span:first-child{opacity:.78}
-        .promo-note{font-size:0.74rem;opacity:.7;margin-top:14px;line-height:1.55}
-        .promo-plans{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,0.18)}
-        .promo-plan{display:flex;flex-direction:column;gap:2px;background:rgba(255,255,255,0.07);padding:9px 12px;border-radius:8px}
-        .promo-plan .pp-name{font-size:0.72rem;opacity:.8;font-weight:600}
-        .promo-plan .pp-price{font-size:1.05rem;font-weight:800}
-        .promo-plan .pp-price small{font-size:0.7rem;font-weight:600;opacity:.8}
-        @media(max-width:780px){.promo-inner{grid-template-columns:1fr;gap:24px}}
-    </style>
-    <div class="promo-inner">
+<!-- HERO -->
+<section class="hero" data-cta="hero">
+    <div class="container hero__grid">
         <div>
-            <span class="promo-tag">🎉 Запуск · Ограниченное предложение</span>
-            <h2 class="promo-title">Suu теперь полноценный <span>ИИ-помощник по здоровью</span><br>3 дня бесплатно, затем скидка 50%</h2>
-            <p class="promo-desc">Цели по воде на основе активности, отслеживание кофеина и сахара, оценка гидратации, Apple Watch, Siri и многое другое — попробуйте все Premium-функции бесплатно 3 дня. <strong>Без оплаты заранее.</strong> Отмена в любое время.</p>
-            <div class="promo-perks">
-                <span class="promo-perk">✅ Без карты во время пробного периода</span>
-                <span class="promo-perk">🔄 Отмена в любое время</span>
-                <span class="promo-perk">📱 iOS + Android</span>
-            </div>
-            <a href="/app" class="promo-cta">Начать 3-дневный пробный период <i class="fas fa-arrow-right"></i></a>
-        </div>
-        <div class="promo-card" aria-label="Annual Premium price">
-            <h4>Годовая Premium · Цена при запуске</h4>
-            <div class="promo-price">
-                <span class="now">$30</span>
-                <span class="before">$60</span>
-                <span class="save">-50%</span>
-            </div>
-            <div class="promo-period">/ год · автопродление после пробного периода</div>
-            <div class="promo-plans">
-                <div class="promo-plan"><span class="pp-name">Месячный</span><span class="pp-price">$3.99<small> / мес</small></span></div>
-                <div class="promo-plan"><span class="pp-name">Семейный · до 3</span><span class="pp-price">$60<small> / год</small></span></div>
-            </div>
-            <div class="promo-currencies" id="promoCurrencies">
-                <div class="promo-cur"><span>RUB (Российский рубль)</span><span>≈ ₽2 800</span></div>
-                <div class="promo-cur"><span>EUR</span><span>≈ €28</span></div>
-                <div class="promo-cur"><span>TRY (Турецкая лира)</span><span>≈ ₺1 200</span></div>
-                <div class="promo-cur"><span>SAR (Саудовский риял)</span><span>≈ 112 ر.س</span></div>
-                <div class="promo-cur"><span>AED (Дирхам ОАЭ)</span><span>≈ 112 د.إ</span></div>
-                <div class="promo-cur"><span>KZT (Тенге)</span><span>≈ ₸15 000</span></div>
-            </div>
-            <p class="promo-note">* Курсы примерные (годовая цена) — фактическое списание происходит через App Store / Google Play в валюте вашего магазина. Курс может меняться.</p>
-        </div>
-    </div>
-</section>
-
-<!-- ИИ-питание и гидратация -->
-<section id="ai-nutrition" class="ai-nutrition" aria-label="ИИ-питание и гидратация">
-    <style>
-        .ai-nutrition{padding:90px 20px;background:linear-gradient(180deg,#f7fbff 0%,#eef6ff 100%)}
-        .ai-inner{max-width:1140px;margin:0 auto}
-        .ai-head{text-align:center;max-width:760px;margin:0 auto 14px}
-        .ai-kicker{display:inline-block;background:#e3f0ff;color:#1565C0;font-size:12px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;padding:6px 14px;border-radius:999px;margin-bottom:16px}
-        .ai-head h2{font-size:clamp(1.7rem,3.6vw,2.4rem);font-weight:800;color:#0f3a82;line-height:1.25;margin-bottom:14px}
-        .ai-head p{font-size:1.05rem;color:#4a5a72;line-height:1.7}
-        .ai-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:42px 0 56px}
-        .ai-step{background:#fff;border:1px solid #dceaff;border-radius:18px;padding:26px 22px;position:relative;box-shadow:0 6px 20px rgba(21,101,192,0.06)}
-        .ai-step .num{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#2563EB,#00ACC1);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
-        .ai-step h3{font-size:1.15rem;font-weight:700;color:#0f3a82;margin-bottom:8px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
-        .ai-step p{font-size:0.95rem;color:#52607a;line-height:1.6}
-        .ai-spotlights{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-        .ai-card{background:#fff;border:1px solid #e2ecfb;border-radius:20px;padding:30px 26px;transition:transform .18s ease,box-shadow .18s ease}
-        .ai-card:hover{transform:translateY(-6px);box-shadow:0 16px 36px rgba(21,101,192,0.12)}
-        .ai-card.premium{border:2px solid #FFC107;background:linear-gradient(180deg,#fffdf5,#fff)}
-        .ai-card .ai-icon{font-size:32px;margin-bottom:16px}
-        .ai-card h3{font-size:1.25rem;font-weight:700;color:#0f3a82;margin-bottom:10px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-        .ai-card p{font-size:0.97rem;color:#52607a;line-height:1.65}
-        .prem-badge{font-size:0.62rem;background:#FFD600;color:#5a4500;padding:3px 9px;border-radius:6px;font-weight:800;letter-spacing:.4px;text-transform:uppercase;vertical-align:middle}
-        @media(max-width:880px){.ai-steps,.ai-spotlights{grid-template-columns:1fr}}
-    </style>
-    <div class="ai-inner">
-        <div class="ai-head">
-            <span class="ai-kicker">🤖 ИИ-движок питания</span>
-            <h2>Управляйте питанием голосом — остальное сделает Suu</h2>
-            <p>Suu больше не просто трекер воды. Добавляйте приём пищи голосом, фотографируйте для подсчёта калорий; ИИ за секунды считает макросы, калории и гидратацию и записывает их в Apple Health.</p>
-        </div>
-
-        <div class="ai-steps">
-            <div class="ai-step">
-                <div class="num">1</div>
-                <h3>🎙️ Говорите</h3>
-                <p>Скажите «тарелка чечевичного супа и полстакана айрана». Suu автоматически разделяет твёрдое и жидкое — суп идёт в гидратацию, чечевица в макросы.</p>
-            </div>
-            <div class="ai-step">
-                <div class="num">2</div>
-                <h3>📷 Фотографируйте <span class="prem-badge">Premium</span></h3>
-                <p>Сфотографируйте тарелку. ИИ распознаёт еду, оценивает порцию и за секунды извлекает калории + макросы.</p>
-            </div>
-            <div class="ai-step">
-                <div class="num">3</div>
-                <h3>📊 Отслеживайте</h3>
-                <p>Калории, белки, углеводы, жиры и натрий автоматически записываются в Apple Health / Health Connect. Сразу смотрите оценку питания 1–100.</p>
+            <span class="eyebrow">Вода · Калории · Тренировки</span>
+            <h1 class="hero__title">Вода, калории и тренировки — <span class="accent">в одном приложении</span></h1>
+            <p class="hero__lead">Сфотографируйте еду и узнайте её калории и БЖУ за секунды. Ведите настоящий учёт гидратации по 91 напитку, записывайте около 50 видов спорта — и пусть каждая тренировка сама обновляет вашу дневную цель по воде.</p>
+            
+<div class="btn-row">
+    <a href="/app?src=hero" class="btn-store" aria-label="Загрузить в App Store">
+        <span class="btn-store__icon"><svg width="22" height="22" aria-hidden="true"><use href="#i-apple"></use></svg></span>
+        <span class="btn-store__label">
+            <span class="btn-store__small">Загрузить в</span>
+            <span class="btn-store__big">App Store</span>
+        </span>
+    </a>
+    <a href="/app?src=hero" class="btn-store" aria-label="Скачать в Google Play">
+        <span class="btn-store__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24">
+                <path fill="#00D2FF" d="M3.6 1.8A1.5 1.5 0 0 0 3 3v18c0 .5.2.9.6 1.2l.1.1 10.1-10.1v-.3L3.7 1.7l-.1.1z"/>
+                <path fill="#FFCE00" d="M17.2 15.6l-3.4-3.4v-.3l3.4-3.4.1.1 4 2.3c1.2.6 1.2 1.7 0 2.4l-4 2.3z"/>
+                <path fill="#FF3A44" d="M17.3 15.5 13.8 12 3.6 22.2c.4.4 1 .5 1.8.1l11.9-6.8"/>
+                <path fill="#00E676" d="M17.3 8.5 5.4 1.7c-.8-.4-1.4-.4-1.8.1L13.8 12l3.5-3.5z"/>
+            </svg>
+        </span>
+        <span class="btn-store__label">
+            <span class="btn-store__small">Загрузить в</span>
+            <span class="btn-store__big">Google Play</span>
+        </span>
+    </a>
+</div>
+            <p class="small text-subtle" style="margin-block-start:var(--sp-4)">Скачивание бесплатно · Premium <strong>3 дня бесплатно</strong></p>
+            <div class="trust-row">
+                <span class="trust-row__item">
+                    <span class="trust-row__stars" aria-hidden="true">★★★★★</span>
+                    <span>4.9 в Google Play · 5.0 в App Store</span>
+                </span>
+                <span class="trust-row__item">более 2800 оценок</span>
+                <span class="trust-row__item">Apple Health и Health Connect</span>
+                <span class="trust-row__item">7 языков</span>
             </div>
         </div>
-
-        <div class="ai-spotlights">
-            <div class="ai-card">
-                <div class="ai-icon">🎙️</div>
-                <h3>Голосовой ввод</h3>
-                <p>Не нужно печатать приём пищи. Просто говорите — ИИ разбирает каждый продукт и напиток в вашей фразе и <strong>автоматически разделяет твёрдое и жидкое</strong>. Суп — в гидратацию, рис — в макросы, одной фразой.</p>
-            </div>
-            <div class="ai-card premium">
-                <div class="ai-icon">📷</div>
-                <h3>Фотоанализ <span class="prem-badge">Premium</span></h3>
-                <p>Будущее учёта питания. Сфотографируйте тарелку — Suu распознаёт еду, оценивает порцию и извлекает калории + макросы. Без дневников и поиска штрихкодов — достаточно одного снимка.</p>
-            </div>
-            <div class="ai-card">
-                <div class="ai-icon">🔔</div>
-                <h3>Умные уведомления</h3>
-                <p>Ассистент, который слушает ваш биологический ритм. На основе оценки питания 1–100 после каждого приёма пищи он подсказывает воду в нужный момент для пищеварения и напоминает о первом утреннем глотке против ночного обезвоживания. Не статичные будильники — динамичные подсказки в вашем ритме.</p>
+        <div class="hero__media">
+            <div class="phone phone--lg">
+                <img src="/assets/screenshots/ios/ru/ana-ekran.webp"
+                     data-screen="ana-ekran" data-platform="ios"
+                     width="585" height="1266" fetchpriority="high"
+                     alt="Главный экран Suu: сводка по воде, калориям и тренировкам за день">
             </div>
         </div>
     </div>
 </section>
 
-<section class="section" id="features">
+<!-- ÜÇ SÜTUN -->
+<section class="section section--subtle" id="pillars">
     <div class="container">
-        <h2 class="section-title">Больше, чем трекер воды — полноценный ассистент здоровья</h2>
-        <p class="section-sub">Цели на основе активности, аналитика кофеина и сахара, оценка гидратации и ИИ-коучинг. Suu адаптируется под ваш образ жизни — будь вы спортсмен, офисный работник или новичок.</p>
-        <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#e3f2fd;color:#1565C0;">🎯</div>
-                <h3>Персональная дневная цель</h3>
-                <p>Установите цель по воде на основе вашего веса, уровня активности и климата. Suu подстраивается, когда меняется образ жизни.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#e8f5e9;color:#2E7D32;">🔔</div>
-                <h3>Умные уведомления по % цели</h3>
-                <p>Уведомления на основе реального прогресса: «Вы достигли 32% цели — пора пить!» Не фиксированный таймер. Меньше уведомлений — больше эффекта.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#fff3e0;color:#E65100;">🏆</div>
-                <h3>Друзья и еженедельная лига</h3>
-                <p>Добавляйте друзей по имени пользователя или QR-коду. Смотрите их прогресс и дневные цели. Создайте еженедельную лигу до 4 друзей — кросс-платформенно iOS + Android. Отправляйте уведомления «давай попьём вместе». Ни у одного конкурента нет ничего подобного.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#fce4ec;color:#880E4F;">☕</div>
-                <h3>91 напиток + Starbucks и кофейни</h3>
-                <p>Кофе, чай, сок, газировка — у каждого научно рассчитанный коэффициент обезвоживания. У Starbucks, Nevada, Greenwich и других популярных сетей свой раздел: выберите конкретный напиток, запишите его и сразу узнайте, сколько воды нужно дополнительно. Включена информация о кофеине и сахаре.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#fce4ec;color:#880E4F;">🤰</div>
-                <h3>Режим беременности и грудного вскармливания</h3>
-                <p>+300 мл автоматически добавляется при беременности, +700 мл при грудном вскармливании. Расчёт по триместрам, дневные цели для мам. Единственное приложение для воды с такой функцией.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#f3e5f5;color:#4A148C;">📊</div>
-                <h3>Подробные PDF и CSV отчёты</h3>
-                <p>Дневная оценка гидратации, недельные тренды, месячные сводки — экспорт в PDF или CSV. Поделитесь с врачом или диетологом.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#e0f2f1;color:#004D40;">⌚</div>
-                <h3>iOS Dynamic Island и виджеты</h3>
-                <p>Отслеживайте прогресс с виджета на экране блокировки или Dynamic Island — записывайте напиток, даже не разблокируя телефон.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#e8f5e9;color:#1B5E20;">🍎</div>
-                <h3>Интеграция Apple Health и Google Fit</h3>
-                <p>Полная двусторонняя синхронизация с Apple HealthKit и Google Health Connect. Suu читает шаги и активные калории, чтобы динамически корректировать дневную цель. Записанная вода автоматически появляется в Apple/Google Health.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#e3f2fd;color:#0D47A1;">⌚</div>
-                <h3>Приложение Apple Watch</h3>
-                <p>Отдельное watchOS-приложение на SwiftUI — записывайте воду прямо с запястья, не доставая телефон. Кольцо прогресса показывает дневную цель одним взглядом. Синхронизация в реальном времени через App Group.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#fff8e1;color:#E65100;">🎙️</div>
-                <h3>Siri Shortcuts и голосовые команды</h3>
-                <p>Добавляйте воду без рук с помощью Siri Shortcuts. Создайте свои команды вроде «записать кофе» или «добавить 500 мл воды». Встроенное распознавание голоса работает и на Android — без Siri.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#fce4ec;color:#880E4F;">🏅</div>
-                <h3>Значки, серии и испытания</h3>
-                <p>Получайте значки за выполнение дневных целей, открывайте награды за серии в 7, 30 и 100 дней и принимайте индивидуальные испытания по гидратации. Геймификация повышает приверженность привычкам — Suu делает питьё воды действительно увлекательным.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#e8eaf6;color:#283593;">🌤️</div>
-                <h3>Гидратация по погоде</h3>
-                <p>Suu подключается к OpenWeatherMap, чтобы получать температуру и влажность в вашем городе в реальном времени. В жаркие или влажные дни автоматически повышает дневную цель.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#e1f5fe;color:#01579B;">🏃</div>
-                <h3>Авто-цель по активности <span style="font-size:0.65rem;background:#FFD600;color:#0f3a82;padding:2px 8px;border-radius:6px;margin-left:6px;font-weight:800;vertical-align:middle;">НОВОЕ</span></h3>
-                <p>Ходьба, бег, плавание, велосипед, фитнес — Suu читает активности из Apple Health и Google Fit и автоматически увеличивает дневную цель воды в зависимости от типа, продолжительности и интенсивности тренировки. ~+400 мл после 30-минутного бега, ~+600 мл после часа плавания.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#fff3e0;color:#BF360C;">🧪</div>
-                <h3>Отслеживание кофеина и сахара <span style="font-size:0.65rem;background:#FFD600;color:#0f3a82;padding:2px 8px;border-radius:6px;margin-left:6px;font-weight:800;vertical-align:middle;">НОВОЕ</span></h3>
-                <p>Suu отслеживает не только воду — он рассчитывает кофеин (мг) и сахар (г) в каждом напитке. Получайте умные предупреждения при приближении к лимиту FDA по кофеину (400 мг) или ВОЗ по добавленному сахару (25 г). Starbucks Latte? +150 мг кофеина, +14 г сахара.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#ede7f6;color:#311B92;">🤖</div>
-                <h3>ИИ-помощник по здоровью <span style="font-size:0.65rem;background:#FFD600;color:#0f3a82;padding:2px 8px;border-radius:6px;margin-left:6px;font-weight:800;vertical-align:middle;">НОВОЕ</span></h3>
-                <p>Suu теперь намного больше, чем приложение для воды: личный тренер по гидратации, советы с учётом активности, аналитика напитков и предупреждения о кофеине/сахаре — полноценный ассистент здоровья в кармане. Контекстные сообщения каждый час и еженедельные персональные отчёты.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#e0f7fa;color:#006064;">💬</div>
-                <h3>ИИ-чат-ассистент <span style="font-size:0.65rem;background:#FFD600;color:#0f3a82;padding:2px 8px;border-radius:6px;margin-left:6px;font-weight:800;vertical-align:middle;">НОВОЕ</span></h3>
-                <p>Встроенный ассистент Suu теперь общается с помощью настоящего ИИ — он не просто отвечает на вопросы, а действует за вас. Скажите «добавь 2 стакана воды» — и он сразу запишет. Спросите «сколько я выпил сегодня?» — и он подведёт итог статистики. Он направит вас на нужный экран (статистика, цель, напитки), создаст напоминания, даст персональный коучинг на основе вашего профиля и шаг за шагом приблизит к дневной цели. Просто говорите на естественном языке — остальное Suu сделает сам.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#e8f5e9;color:#1B5E20;">💱</div>
-                <h3>Многовалютные цены <span style="font-size:0.65rem;background:#FFD600;color:#0f3a82;padding:2px 8px;border-radius:6px;margin-left:6px;font-weight:800;vertical-align:middle;">НОВОЕ</span></h3>
-                <p>USD, EUR, российский рубль, тенге, турецкая лира, саудовский риял, дирхам ОАЭ — смотрите цены Premium в местной валюте. Цена при запуске: $30 / ≈€28 / ≈₽2 800 / ≈₸15 000 в год.</p>
-            </div>
+        <div class="section-head">
+            <h2>Не три отдельных приложения, а одна система, где всё связано</h2>
+            <p>Большинство приложений держат воду, калории и тренировки в разных вкладках. В Suu они обновляют друг друга.</p>
+        </div>
+        <div class="pillars">
+            <article class="pillar pillar--water">
+                <span class="pillar__icon"><svg width="26" height="26" aria-hidden="true"><use href="#i-water"></use></svg></span>
+                <h3>Трекер воды</h3>
+                <p><strong>91 напиток</strong> — кофе, чай, газировка, сок, молоко, энергетики. Реальный вклад каждого в водный баланс рассчитывается отдельно.</p>
+                <p style="margin-block-start:var(--sp-3)"><a href="#su-hedefi">Как работает умная цель по воде <span class="arrow" aria-hidden="true">→</span></a></p>
+            </article>
+            <article class="pillar pillar--calories">
+                <span class="pillar__icon"><svg width="26" height="26" aria-hidden="true"><use href="#i-flame"></use></svg></span>
+                <h3>Калории и питание</h3>
+                <p><strong>Сфотографируйте еду</strong> — Suu AI извлечёт калории, белки, углеводы и жиры и построит БЖУ автоматически.</p>
+                <p style="margin-block-start:var(--sp-3)"><a href="#kalori">Анализ калорий по фото <span class="arrow" aria-hidden="true">→</span></a></p>
+            </article>
+            <article class="pillar pillar--exercise">
+                <span class="pillar__icon"><svg width="26" height="26" aria-hidden="true"><use href="#i-run"></use></svg></span>
+                <h3>Учёт тренировок</h3>
+                <p><strong>около 50 видов спорта</strong> — бег, ходьба, велосипед, плавание, фитнес. Каждая тренировка сама повышает цель по воде.</p>
+                <p style="margin-block-start:var(--sp-3)"><a href="#egzersiz">Показатели тренировок <span class="arrow" aria-hidden="true">→</span></a></p>
+            </article>
+        </div>
+        <div class="answer-box" style="margin-block-start:var(--sp-10)">
+            <p><strong>Короткий ответ:</strong> Suu — приложение для здоровья, объединяющее трекер воды, анализ калорий по фото и учёт тренировок. Отличие в том, что все три связаны между собой: записанная пробежка повышает дневную цель по воде, содержание белка и натрия в еде определяет дополнительную воду для пищеварения, а реальный вклад выпитого кофе в гидратацию учитывается. Бесплатно на iOS и Android, доступно на 7 языках.</p>
         </div>
     </div>
 </section>
 
-<section class="section screenshots-section">
+<!-- KALORİ -->
+<section class="section" id="kalori" data-cta="kalori">
     <div class="container">
-        <h2 class="section-title">Красивый и простой интерфейс</h2>
-        <p class="section-sub">Чистый дизайн, ориентированный на одно: помочь вам пить больше воды без усилий.</p>
-        <div class="screenshots-row">
-          <div class="screenshots-track">
-            <div class="screenshot-wrap"><img fetchpriority="high" src="assets/screenshots/ana-ekran-ru.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/ana-ekran.webp'" alt="Расширенный режим, главный экран"></div>
-            <div class="screenshot-wrap"><img loading="lazy" src="assets/screenshots/basit-ekran-ru.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/basit-ekran.webp'" alt="Простой режим, главный экран"></div>
-            <div class="screenshot-wrap"><img loading="lazy" src="assets/screenshots/istatikler-ru.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/istatikler.webp'" alt="Статистика"></div>
-            <div class="screenshot-wrap"><img loading="lazy" src="assets/screenshots/asistan-ru.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/su-ekleme.webp'" alt="AI ассистент"></div>
-            <div class="screenshot-wrap"><img loading="lazy" src="assets/screenshots/gun-challenge-ru.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/hedefler.webp'" alt="Челлендж 7 дней"></div>
-            <div class="screenshot-wrap"><img loading="lazy" src="assets/screenshots/hatirlama-ru.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/hatirlama.webp'" alt="Напоминания"></div>
-          </div>
+        <div class="section-head">
+            <span class="eyebrow">Калории и питание</span>
+            <h2>Чтобы считать калории, не нужно взвешивать тарелку</h2>
+            <p>Сделайте фото — остальное сделает Suu AI.</p>
+        </div>
+        <div class="cards">
+            <article class="card">
+                <div class="card__icon" style="color:var(--pillar-calories)"><svg width="30" height="30" aria-hidden="true"><use href="#i-camera"></use></svg></div>
+                <h3>Анализ по фото</h3>
+                <p>Сфотографируйте блюдо — калории, белки, углеводы и жиры будут извлечены, а БЖУ построится автоматически. Фото не хранится постоянно.</p>
+            </article>
+            <article class="card">
+                <div class="card__icon" style="color:var(--pillar-calories)">🎙️</div>
+                <h3>Голосовой или текстовый ввод</h3>
+                <p>«На обед салат с курицей и стакан айрана» — скажите, и запись создастся за секунды. Речь распознаётся на устройстве и не отправляется на сервер.</p>
+            </article>
+            <article class="card">
+                <div class="card__icon" style="color:var(--pillar-calories)">📊</div>
+                <h3>БЖУ и оценка питания</h3>
+                <p>Ежедневный учёт калорий, белков, углеводов и жиров. Оценка питания от 1 до 100 показывает баланс дня одним взглядом.</p>
+            </article>
+        </div>
+        <div class="callout" style="margin-block-start:var(--sp-8)">
+            <p><strong>На бесплатном тарифе</strong> доступно 3 ИИ-анализа в день. Анализ по фото и безлимит входят в Premium — <a href="#fiyat">3 дня бесплатно</a>.</p>
         </div>
     </div>
 </section>
 
-<section class="section" id="stats">
+<!-- SUU AI -->
+<section class="section section--subtle" id="suu-ai">
     <div class="container">
-        <h2 class="section-title">Тысячи пользователей нам доверяют</h2>
-        <p class="section-sub">Пользователи Suu по всему миру отслеживают миллионы стаканов каждый день.</p>
-        <div class="stats-row">
-            <div class="stat-card">
-                <div class="stat-num">4.9★</div>
-                <div class="stat-label">Рейтинг App Store</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-num">5.0★</div>
-                <div class="stat-label">Рейтинг Google Play</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-num">2 847+</div>
-                <div class="stat-label">Отзывов</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-num">100+</div>
-                <div class="stat-label">Напитков</div>
-            </div>
+        <div class="section-head">
+            <span class="eyebrow">Suu AI</span>
+            <h2>Управляйте приложением голосом</h2>
+            <p>Вместо навигации по меню просто скажите, что нужно.</p>
+        </div>
+        <div class="cards">
+            <article class="card">
+                <div class="card__icon" style="color:var(--pillar-water)"><svg width="30" height="30" aria-hidden="true"><use href="#i-chat"></use></svg></div>
+                <h3>«Добавь два стакана воды»</h3>
+                <p>Запись воды и напитков, создание приёмов пищи, добавление тренировок — всё через чат.</p>
+            </article>
+            <article class="card">
+                <div class="card__icon" style="color:var(--pillar-water)">🧠</div>
+                <h3>«Проанализируй моё питание за день»</h3>
+                <p>Оценивает баланс БЖУ за день и указывает, чего не хватает.</p>
+            </article>
+            <article class="card">
+                <div class="card__icon" style="color:var(--pillar-water)">⚙️</div>
+                <h3>«Обнови цель по воде»</h3>
+                <p>Цели и умные напоминания тоже настраиваются из чата.</p>
+            </article>
         </div>
     </div>
 </section>
 
-<section class="section">
+<!-- EGZERSİZ -->
+<section class="section" id="egzersiz">
     <div class="container">
-        <h2 class="section-title">Узнайте больше о гидратации</h2>
-        <p class="section-sub">Научно обоснованные статьи, чтобы понять, почему гидратация важна.</p>
-        <div class="blog-grid">
-            <a href="blog/ru/polza-pitia-vody.html" class="blog-card">
-                <div class="tag">Здоровье</div>
-                <h4>10 научно доказанных преимуществ ежедневного питья воды</h4>
-            </a>
-            <a href="blog/ru/skolko-vody-pit-v-den.html" class="blog-card">
-                <div class="tag">Руководство</div>
-                <h4>Сколько воды нужно пить в день?</h4>
-            </a>
-            <a href="blog/ru/priznaki-obezvozhivaniya.html" class="blog-card">
-                <div class="tag">Здоровье</div>
-                <h4>Признаки обезвоживания, которые нельзя игнорировать</h4>
-            </a>
-            <a href="blog/ru/sport-i-gidratatsiya.html" class="blog-card">
-                <div class="tag">Спорт</div>
-                <h4>Спорт и гидратация: полное руководство</h4>
-            </a>
-            <a href="blog/ru/voda-utrom.html" class="blog-card">
-                <div class="tag">Утро</div>
-                <h4>Почему стоит пить воду первым делом утром</h4>
-            </a>
-            <a href="blog/ru/privychka-pit-vodu.html" class="blog-card">
-                <div class="tag">Привычки</div>
-                <h4>Как выработать ежедневную привычку пить воду</h4>
-            </a>
+        <div class="section-head">
+            <span class="eyebrow">Учёт тренировок</span>
+            <h2>Около 50 видов спорта — и все связаны с целью по воде</h2>
+            <p>Бег, ходьба, велосипед, фитнес, плавание, хайкинг, кардио и многое другое.</p>
         </div>
-        <p style="text-align:center;margin-top:28px;"><a href="blog-ru.html" style="color:#4A90D9;font-weight:600;text-decoration:none;">Все статьи →</a></p>
+        <div class="cards">
+            <article class="card">
+                <div class="card__icon" style="color:var(--pillar-exercise)"><svg width="30" height="30" aria-hidden="true"><use href="#i-run"></use></svg></div>
+                <h3>Бег и ходьба</h3>
+                <p>Все детали на одном экране после тренировки.</p>
+                <div class="metrics">
+                    <span class="metric"><span class="metric__label">Дистанция</span></span>
+                    <span class="metric"><span class="metric__label">Время</span></span>
+                    <span class="metric"><span class="metric__label">Темп</span></span>
+                    <span class="metric"><span class="metric__label">Средняя скорость</span></span>
+                    <span class="metric"><span class="metric__label">Сожжено калорий</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__icon" style="color:var(--pillar-exercise)">🚴</div>
+                <h3>Велосипед</h3>
+                <p>Подробная статистика, включая профиль высоты маршрута.</p>
+                <div class="metrics">
+                    <span class="metric"><span class="metric__label">Скорость</span></span>
+                    <span class="metric"><span class="metric__label">Средняя скорость</span></span>
+                    <span class="metric"><span class="metric__label">Дистанция</span></span>
+                    <span class="metric"><span class="metric__label">Высота</span></span>
+                    <span class="metric"><span class="metric__label">Время</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__icon" style="color:var(--pillar-exercise)">💧</div>
+                <h3>Тренировка → цель по воде</h3>
+                <p>Потеря жидкости с потом оценивается, и дневная цель по воде повышается автоматически. Менять вручную после тренировки не нужно.</p>
+            </article>
+        </div>
     </div>
 </section>
 
-<section class="cta-section">
+<!-- SU HEDEFİ + HESAPLAYICI -->
+<section class="section section--subtle" id="su-hedefi">
     <div class="container">
-        <h2>Готовы лучше следить за гидратацией?</h2>
-        <p>Присоединяйтесь к тысячам пользователей, которые ежедневно отслеживают потребление воды с Suu — бесплатно, без рекламы.</p>
-        <div class="hero-btns">
-            <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" class="btn-store btn-ios" target="_blank" rel="noopener">
-                <i class="fab fa-apple" style="font-size:1.3rem;color:#1a1a2e;"></i>
-                <span style="color:#1a1a2e;"><small style="display:block;font-size:10px;font-weight:500;opacity:.6;">Скачать в</small>App Store</span>
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro" class="btn-store btn-android" target="_blank" rel="noopener">
-                <i class="fab fa-google-play" style="font-size:1.2rem;"></i>
-                <span><small style="display:block;font-size:10px;font-weight:500;opacity:.8;">Доступно в</small>Google Play</span>
-            </a>
+        <div class="section-head">
+            <span class="eyebrow">Трекер воды</span>
+            <h2>Не фиксированное число, а цель, меняющаяся в течение дня</h2>
+            <p>«Два литра в день» подходит не всем. Suu рассчитывает вашу цель по пяти отдельным сигналам.</p>
+        </div>
+        <div class="cards" style="margin-block-end:var(--sp-10)">
+            <article class="card">
+                <h3>Возраст, вес, активность</h3>
+                <p>Базовая цель рассчитывается по вашему профилю.</p>
+            </article>
+            <article class="card">
+                <h3>Температура воздуха</h3>
+                <p>В жаркие дни цель повышается автоматически.</p>
+            </article>
+            <article class="card">
+                <h3>Тренировки</h3>
+                <p>Каждая записанная тренировка добавляет потребность в жидкости.</p>
+            </article>
+            <article class="card">
+                <h3>Что вы едите</h3>
+                <p>Белок и натрий в еде определяют дополнительную воду для пищеварения.</p>
+            </article>
+            <article class="card">
+                <h3>91 напиток</h3>
+                <p>Реальный вклад кофе, чая и айрана в водный баланс считается отдельно.</p>
+            </article>
+            <article class="card">
+                <h3>Индекс Suu</h3>
+                <p>Ваш показатель гидратации от 0 до 100 обновляется в течение дня. <a href="suu-index-ru.html">Как он считается →</a></p>
+            </article>
+        </div>
+
+        <div class="card" style="max-width:44rem;margin-inline:auto">
+            <h3>Рассчитайте дневную норму воды</h3>
+            <p class="small">Начальная оценка. В приложении цель дополнительно обновляется по погоде, тренировкам и питанию.</p>
+            <form data-water-calc style="margin-block-start:var(--sp-5)">
+                <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(9rem,1fr));gap:var(--sp-4)">
+                    <label style="display:block">
+                        <span class="small" style="display:block;margin-block-end:var(--sp-2);font-weight:600">Возраст</span>
+                        <input type="number" name="age" min="10" max="110" required placeholder="28"
+                               style="width:100%;min-height:46px;padding:0 var(--sp-3);border:1px solid var(--border);border-radius:var(--r-md);background:var(--bg);color:var(--text);font:inherit">
+                    </label>
+                    <label style="display:block">
+                        <span class="small" style="display:block;margin-block-end:var(--sp-2);font-weight:600">Вес (кг)</span>
+                        <input type="number" name="weight" min="25" max="300" required placeholder="72"
+                               style="width:100%;min-height:46px;padding:0 var(--sp-3);border:1px solid var(--border);border-radius:var(--r-md);background:var(--bg);color:var(--text);font:inherit">
+                    </label>
+                    <label style="display:block">
+                        <span class="small" style="display:block;margin-block-end:var(--sp-2);font-weight:600">Пол</span>
+                        <select name="gender" style="width:100%;min-height:46px;padding:0 var(--sp-3);border:1px solid var(--border);border-radius:var(--r-md);background:var(--bg);color:var(--text);font:inherit">
+                            <option value="female">Женский</option>
+                            <option value="male">Мужской</option>
+                        </select>
+                    </label>
+                    <label style="display:block">
+                        <span class="small" style="display:block;margin-block-end:var(--sp-2);font-weight:600">Активность</span>
+                        <select name="activity" style="width:100%;min-height:46px;padding:0 var(--sp-3);border:1px solid var(--border);border-radius:var(--r-md);background:var(--bg);color:var(--text);font:inherit">
+                            <option value="sedentary">Малоподвижный</option>
+                            <option value="light">Лёгкая активность</option>
+                            <option value="moderate" selected>Средняя активность</option>
+                            <option value="active">Активный</option>
+                            <option value="extra">Очень активный</option>
+                        </select>
+                    </label>
+                </div>
+                <button type="submit" class="btn btn--primary btn--block" style="margin-block-start:var(--sp-5)">Рассчитать</button>
+                <div data-calc-result hidden style="margin-block-start:var(--sp-6);padding:var(--sp-5);border-radius:var(--r-md);background:var(--pillar-water-soft);text-align:center">
+                    <p style="margin:0;font-size:var(--fs-2xl);font-weight:800;color:var(--text)"><span data-calc-liters>—</span> литра</p>
+                    <p class="small" style="margin-block-start:var(--sp-2)">Примерно <span data-calc-cups>—</span> стаканов (250 мл)</p>
+                    <a href="/app?src=calculator" class="btn btn--primary" style="margin-block-start:var(--sp-4)">Начать вести учёт в Suu</a>
+                </div>
+            </form>
         </div>
     </div>
 </section>
 
-<footer>
-    <p style="margin-bottom:10px;line-height:2;">
-        <a href="ozellikler-ru.html">Возможности</a> &nbsp;·&nbsp;
-        <a href="premium-ru.html">Premium</a> &nbsp;·&nbsp;
-        <a href="download-ru.html">Скачать</a> &nbsp;·&nbsp;
-        <a href="water-calculator-ru.html">Калькулятор воды</a> &nbsp;·&nbsp;
-        <a href="adaptive-hydration-brain-ru.html">Мозг гидратации</a> &nbsp;·&nbsp;
-        <a href="suu-index-ru.html">Индекс Suu</a> &nbsp;·&nbsp;
-        <a href="personal-hydration-plan-ru.html">План гидратации</a> &nbsp;·&nbsp;
-        <a href="who-is-suu-for-ru.html">Для кого Suu</a> &nbsp;·&nbsp;
-        <a href="faq-ru.html">FAQ</a> &nbsp;·&nbsp;
-        <a href="hakkimizda-ru.html">О нас</a> &nbsp;·&nbsp;
-        <a href="blog-ru.html">Блог</a>
-    </p>
-    <p>© 2026 Suu - Калории и вода &nbsp;|&nbsp;
-        <a href="/">🇹🇷 Türkçe</a> &nbsp;
-        <a href="hosgeldiniz-en.html">🇬🇧 English</a> &nbsp;
-        <a href="hosgeldiniz-ar.html">🇸🇦 العربية</a> &nbsp;|&nbsp;
-        <a href="gizlilik-politikasi.html">Политика конфиденциальности</a> &nbsp;
-        <a href="kullanim-sartlari.html">Условия использования</a>
-    </p>
-    <p style="margin-top:6px; font-size:11px; opacity:0.7;">Разработано <a href="https://www.linkedin.com/in/furkanfindikli/" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.8);">Furkan Mert Fındıklı</a> — Стамбул, Турция</p>
+<!-- EKRAN GÖRÜNTÜLERİ -->
+<section class="section" id="ekranlar">
+    <div class="container">
+        <div class="section-head">
+            <h2>Посмотрите приложение</h2>
+            <p>Настоящие экраны приложения — листайте, чтобы увидеть все.</p>
+        </div>
+        <div class="shots" data-shots>
+            <div style="display:flex;justify-content:center">
+                <div class="shots__tabs" role="tablist" aria-label="Выбор платформы">
+                    <button class="shots__tab" role="tab" id="tab-ios" aria-controls="shots-ios" aria-selected="true" data-platform="ios">
+                        <svg width="16" height="16" aria-hidden="true"><use href="#i-apple"></use></svg> iOS
+                    </button>
+                    <button class="shots__tab" role="tab" id="tab-android" aria-controls="shots-android" aria-selected="false" data-platform="android">Android</button>
+                </div>
+            </div>
+            <div class="shots__panel" id="shots-ios" role="tabpanel" aria-labelledby="tab-ios">
+                <div class="shots__strip">
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/ios/ru/ana-ekran.webp" data-screen="ana-ekran" data-platform="ios" loading="lazy" width="585" height="1266" alt="iOS — Главный экран"></div>
+                        <figcaption>Главный экран</figcaption>
+                    </figure>
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/ios/ru/kalori-foto-analiz.webp" data-screen="kalori-foto-analiz" data-platform="ios" loading="lazy" width="585" height="1266" alt="iOS — Калории по фото"></div>
+                        <figcaption>Калории по фото</figcaption>
+                    </figure>
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/ios/ru/makro-detay.webp" data-screen="makro-detay" data-platform="ios" loading="lazy" width="585" height="1266" alt="iOS — Разбивка БЖУ"></div>
+                        <figcaption>Разбивка БЖУ</figcaption>
+                    </figure>
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/ios/ru/suu-ai-sohbet.webp" data-screen="suu-ai-sohbet" data-platform="ios" loading="lazy" width="585" height="1266" alt="iOS — Suu AI"></div>
+                        <figcaption>Suu AI</figcaption>
+                    </figure>
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/ios/ru/kosu-detay.webp" data-screen="kosu-detay" data-platform="ios" loading="lazy" width="585" height="1266" alt="iOS — Детали пробежки"></div>
+                        <figcaption>Детали пробежки</figcaption>
+                    </figure>
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/ios/ru/istatistik.webp" data-screen="istatistik" data-platform="ios" loading="lazy" width="585" height="1266" alt="iOS — Статистика"></div>
+                        <figcaption>Статистика</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="shots__panel" id="shots-android" role="tabpanel" aria-labelledby="tab-android" hidden>
+                <div class="shots__strip">
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/android/ru/ana-ekran.webp" data-screen="ana-ekran" data-platform="android" loading="lazy" width="585" height="1266" alt="Android — Главный экран"></div>
+                        <figcaption>Главный экран</figcaption>
+                    </figure>
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/android/ru/kalori-foto-analiz.webp" data-screen="kalori-foto-analiz" data-platform="android" loading="lazy" width="585" height="1266" alt="Android — Калории по фото"></div>
+                        <figcaption>Калории по фото</figcaption>
+                    </figure>
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/android/ru/makro-detay.webp" data-screen="makro-detay" data-platform="android" loading="lazy" width="585" height="1266" alt="Android — Разбивка БЖУ"></div>
+                        <figcaption>Разбивка БЖУ</figcaption>
+                    </figure>
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/android/ru/suu-ai-sohbet.webp" data-screen="suu-ai-sohbet" data-platform="android" loading="lazy" width="585" height="1266" alt="Android — Suu AI"></div>
+                        <figcaption>Suu AI</figcaption>
+                    </figure>
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/android/ru/kosu-detay.webp" data-screen="kosu-detay" data-platform="android" loading="lazy" width="585" height="1266" alt="Android — Детали пробежки"></div>
+                        <figcaption>Детали пробежки</figcaption>
+                    </figure>
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/android/ru/istatistik.webp" data-screen="istatistik" data-platform="android" loading="lazy" width="585" height="1266" alt="Android — Статистика"></div>
+                        <figcaption>Статистика</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- OYUNLAŞTIRMA -->
+<section class="section section--subtle" id="sosyal">
+    <div class="container">
+        <div class="section-head"><h2>Формировать привычку в одиночку тяжело</h2></div>
+        <div class="cards">
+            <article class="card">
+                <div class="card__icon">🐾</div>
+                <h3>Виртуальный питомец</h3>
+                <p>Растёт по мере выполнения дневных целей и приносит награды.</p>
+            </article>
+            <article class="card">
+                <div class="card__icon">🏆</div>
+                <h3>Лиги с друзьями</h3>
+                <p>Еженедельные, до 4 человек. Работают между iOS и Android.</p>
+            </article>
+            <article class="card">
+                <div class="card__icon">📱</div>
+                <h3>Публикация историй</h3>
+                <p>Делитесь потреблением воды, прогулками, пробежками и достижениями в современных шаблонах историй.</p>
+            </article>
+            <article class="card">
+                <div class="card__icon">💙</div>
+                <h3>Программа 2% пожертвований</h3>
+                <p>2% дохода Premium идёт на колодцы с чистой водой в Африке. <a href="blog/ru/programma-pozhertvovanij-kolodtsy-afrika.html">Прозрачный отчёт →</a></p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- PLATFORM MATRİSİ -->
+<section class="section" id="platform">
+    <div class="container">
+        <div class="section-head">
+            <h2>Поддержка платформ</h2>
+            <p>Показываем как есть, какая функция где работает.</p>
+        </div>
+        <div class="table-scroll">
+            <table class="table">
+                <caption class="sr-only">Поддержка функций Suu на iOS и Android</caption>
+                <thead><tr><th scope="col">Функция</th><th scope="col">iOS</th><th scope="col">Android</th></tr></thead>
+                <tbody>
+                    <tr><td>Анализ калорий по фото</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+                    <tr><td>Голосовой ввод</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+                    <tr><td>Учёт тренировок (~50 видов)</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+                    <tr><td>Чат Suu AI</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+                    <tr><td>Лиги · истории · питомец</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+                    <tr><td>Виджеты</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+                    <tr><td>Синхронизация Apple Health</td><td class="yes">✓</td><td class="no">—</td></tr>
+                    <tr><td>Синхронизация Google Health Connect</td><td class="no">—</td><td class="yes">✓</td></tr>
+                    <tr><td>Команды Siri</td><td class="yes">✓</td><td class="no">—</td></tr>
+                    <tr><td>Dynamic Island</td><td class="yes">✓</td><td class="no">—</td></tr>
+                    <tr><td>Live Activities</td><td class="yes">✓</td><td class="no">—</td></tr>
+                    <tr><td>Приложение для Apple Watch</td><td class="soon">Скоро</td><td class="no">—</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="small text-subtle" style="margin-block-start:var(--sp-4)">Данные Apple Watch уже сегодня попадают в Suu через Apple Health и обновляют цель по воде — <a href="blog/ru/apple-watch-voda.html">как это настроить</a>.</p>
+    </div>
+</section>
+
+<!-- KARŞILAŞTIRMA -->
+<section class="section section--subtle" id="karsilastirma">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Сравнение</span>
+            <h2>Чем Suu отличается от других приложений?</h2>
+        </div>
+        <div class="disclosure" style="margin-block-end:var(--sp-6)">Таблицу подготовила команда Suu. Функции конкурентов отражают публично доступную информацию на 2026 год и могут меняться. У каждого приложения есть свои сильные стороны — их мы тоже отмечаем ниже.</div>
+        <div class="table-scroll">
+            <table class="table">
+                <caption class="sr-only">Сравнение Suu с популярными приложениями для калорий и воды</caption>
+                <thead><tr>
+                    <th scope="col">Функция</th>
+                    <th scope="col" class="col-suu">Suu</th>
+                    <th scope="col">MyFitnessPal</th>
+                    <th scope="col">Yazio</th>
+                    <th scope="col">WaterMinder</th>
+                </tr></thead>
+                <tbody>
+                    <tr><td>Анализ калорий по фото</td><td class="col-suu yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✗</td></tr>
+                    <tr><td>Настоящий расчёт гидратации (по напиткам)</td><td class="col-suu yes">✓ 91 напиток</td><td class="no">Простой счётчик</td><td class="no">Простой счётчик</td><td class="yes">✓</td></tr>
+                    <tr><td>Учёт тренировок внутри приложения</td><td class="col-suu yes">✓ ~50 видов</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✗</td></tr>
+                    <tr><td>Тренировки обновляют цель по воде</td><td class="col-suu yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+                    <tr><td>Вода для пищеварения по вашей еде</td><td class="col-suu yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+                    <tr><td>Цель с учётом погоды</td><td class="col-suu yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+                    <tr><td>Управление приложением через чат</td><td class="col-suu yes">✓ Suu AI</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+                    <tr><td>Широта базы продуктов</td><td class="col-suu ">Хорошая</td><td class="yes">✓ Самая широкая</td><td class="yes">✓ Широкая</td><td class="no">—</td></tr>
+                    <tr><td>Библиотека рецептов</td><td class="col-suu no">✗</td><td class="yes">✓</td><td class="yes">✓ Сильная</td><td class="no">—</td></tr>
+                    <tr><td>Приложение для Apple Watch</td><td class="col-suu soon">Скоро</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+                    <tr><td>Полная локализация на русский</td><td class="col-suu yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✗</td></tr>
+                    <tr><td>Поддержка арабского RTL</td><td class="col-suu yes">✓</td><td class="no">Ограниченно</td><td class="no">Ограниченно</td><td class="no">✗</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="verdict" style="margin-block-start:var(--sp-8)">
+            <h3>Вывод</h3>
+            <p><strong>В чём конкуренты сильнее:</strong> У MyFitnessPal самая широкая база продуктов в категории; найти брендовый товар по штрихкоду там вероятнее. У Yazio сильная библиотека рецептов и планов питания. У WaterMinder уже есть приложение для Apple Watch, а у Suu оно ещё в разработке.</p>
+            <p><strong>В чём выигрывает Suu:</strong> Ни одно из этих трёх не связывает воду, калории и тренировки в <em>единую</em> систему. В Suu записанная пробежка повышает цель по воде, съеденная еда запускает расчёт воды для пищеварения, а реальный вклад кофе в гидратацию вычитается. Если хотите одно приложение вместо трёх — и гидратация для вас действительно важна — Suu очевидный выбор.</p>
+            <p style="margin-block-start:var(--sp-4)"><a href="blog/ru/luchshee-prilozhenie-podscheta-kalorij.html">Подробное сравнение 5 приложений →</a> · <a href="blog/ru/suu-vs-myfitnesspal.html">Suu против MyFitnessPal →</a> · <a href="blog/ru/voda-kalorii-trenirovki-odno-prilozhenie.html">Вода + калории + тренировки в одном приложении →</a></p>
+        </div>
+    </div>
+</section>
+
+<!-- YORUMLAR -->
+<section class="section" id="yorumlar">
+    <div class="container">
+        <div class="section-head">
+            <h2>Отзывы пользователей</h2>
+            <p>Google Play 4.9★ · App Store 5.0★ · более 2800 оценок — отзывы ниже переведены с турецкого</p>
+        </div>
+        <div class="cards">
+            <article class="card">
+                <p class="small" style="color:var(--accent-gold);margin-block-end:var(--sp-2)" aria-label="5 из 5 звёзд">★★★★★</p>
+                <p>&ldquo;Потрясающее приложение! Моя привычка пить воду полностью изменилась. Теперь выпиваю 2,5 литра в день. Напоминания очень помогают.&rdquo;</p>
+                <p class="small text-subtle" style="margin-block-start:var(--sp-3)">— Ayşe Yılmaz</p>
+            </article>
+            <article class="card">
+                <p class="small" style="color:var(--accent-gold);margin-block-end:var(--sp-2)" aria-label="5 из 5 звёзд">★★★★★</p>
+                <p>&ldquo;Учёт воды был для меня очень важен, потому что я тренируюсь. Благодаря приложению результаты улучшились. Особенно понравились графики.&rdquo;</p>
+                <p class="small text-subtle" style="margin-block-start:var(--sp-3)">— Mehmet Kaya</p>
+            </article>
+            <article class="card">
+                <p class="small" style="color:var(--accent-gold);margin-block-end:var(--sp-2)" aria-label="5 из 5 звёзд">★★★★★</p>
+                <p>&ldquo;Отлично! Работая в офисе, я забывал пить воду. Теперь пью регулярно и чувствую себя гораздо энергичнее.&rdquo;</p>
+                <p class="small text-subtle" style="margin-block-start:var(--sp-3)">— Ali Öztürk</p>
+            </article>
+            <article class="card">
+                <p class="small" style="color:var(--accent-gold);margin-block-end:var(--sp-2)" aria-label="5 из 5 звёзд">★★★★★</p>
+                <p>&ldquo;Врач сказал пить 2 литра в день. С этим приложением достигать цели легко. Спасибо!&rdquo;</p>
+                <p class="small text-subtle" style="margin-block-start:var(--sp-3)">— Fatma Demir</p>
+            </article>
+            <article class="card">
+                <p class="small" style="color:var(--accent-gold);margin-block-end:var(--sp-2)" aria-label="4 из 5 звёзд">★★★★☆</p>
+                <p>&ldquo;В целом довольна, но иногда уведомления приходят слишком часто. В остальном очень помогло достигать целей по воде.&rdquo;</p>
+                <p class="small text-subtle" style="margin-block-start:var(--sp-3)">— Zeynep Çelik</p>
+            </article>
+            <article class="card">
+                <p class="small" style="color:var(--accent-gold);margin-block-end:var(--sp-2)" aria-label="4 из 5 звёзд">★★★★☆</p>
+                <p>&ldquo;Хорошее приложение, но больше настроек было бы здорово. Тем не менее оно изменило мою привычку пить воду.&rdquo;</p>
+                <p class="small text-subtle" style="margin-block-start:var(--sp-3)">— Murat Şahin</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- FİYATLANDIRMA -->
+<section class="section section--subtle" id="fiyat" data-cta="fiyat">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Цены</span>
+            <h2>Базовые возможности всегда бесплатны</h2>
+            <p>Попробуйте Premium бесплатно 3 дня. Цены показываются автоматически в вашей валюте.</p>
+        </div>
+        <div class="plans">
+            <article class="plan">
+                <h3>Бесплатно</h3>
+                <div class="plan__price">₺0</div>
+                <p class="small text-subtle">Бесплатно навсегда</p>
+                <ul class="plan__list">
+                    <li>Базовый учёт воды и гидратации</li>
+                    <li>91 напиток</li>
+                    <li>Учёт тренировок</li>
+                    <li>3 ИИ-анализа в день (голос/текст)</li>
+                    <li>Синхронизация Apple Health / Health Connect</li>
+                </ul>
+                <a href="/app?src=fiyat-ucretsiz" class="btn btn--ghost btn--block">Скачать бесплатно</a>
+            </article>
+            <article class="plan plan--featured">
+                <span class="plan__badge">скидка 50% на старте</span>
+                <h3>Premium на год</h3>
+                <div class="plan__price">₺1 200 <span class="plan__was">₺2 400</span></div>
+                <p class="small text-subtle">Год · 3 дня бесплатно</p>
+                <ul class="plan__list">
+                    <li>Безлимитный ИИ-анализ еды</li>
+                    <li>Подсчёт калорий по фото</li>
+                    <li>Расширенный анализ питания</li>
+                    <li>Premium-статистика</li>
+                    <li>Динамические напоминания о воде для пищеварения</li>
+                    <li>Экспорт отчётов PDF и CSV</li>
+                    <li>Без рекламы</li>
+                </ul>
+                <a href="/app?src=fiyat-yillik" class="btn btn--primary btn--block">3 дня бесплатно</a>
+            </article>
+            <article class="plan">
+                <h3>Месяц и семья</h3>
+                <div class="plan__price">₺149 <span class="plan__period">/ мес.</span></div>
+                <p class="small text-subtle">Семейный тариф: ₺2 399 в год — до 3 человек</p>
+                <ul class="plan__list">
+                    <li>Все возможности Premium</li>
+                    <li>Помесячно, отмена в любой момент</li>
+                    <li>3 отдельных аккаунта в семейном тарифе</li>
+                    <li>3 дня бесплатно</li>
+                </ul>
+                <a href="premium-ru.html" class="btn btn--ghost btn--block">Сравнить тарифы</a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- SSS -->
+<section class="section" id="sss">
+    <div class="container">
+        <div class="section-head"><h2>Частые вопросы</h2></div>
+        <div class="faq">
+            <details class="faq__item" open>
+                <summary>Suu действительно совмещает учёт воды, калорий и тренировок в одном приложении?</summary>
+                <div><p>Да. Suu ведёт все три не как отдельные вкладки, а как единую систему, где всё связано: записанная тренировка повышает дневную цель по воде, белок и натрий в еде определяют дополнительную воду для пищеварения, а каждый напиток учитывается с реальным вкладом в гидратацию из базы на 91 напиток.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Как работает подсчёт калорий по фото?</summary>
+                <div><p>Вы фотографируете еду; Suu AI анализирует блюдо, извлекает калории, белки, углеводы и жиры и автоматически строит БЖУ. Фото не хранится постоянно. Анализ по фото — функция Premium; на бесплатном тарифе доступно 3 голосовых или текстовых ИИ-анализа в день.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Сколько видов спорта поддерживает Suu?</summary>
+                <div><p>Около 50 разных активностей: бег, ходьба, велосипед, фитнес, плавание, хайкинг, кардио и другие. Для бега и ходьбы видны дистанция, время, темп, средняя скорость и сожжённые калории; для велосипеда дополнительно скорость и набор высоты. После каждой тренировки цель по воде обновляется автоматически.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Suu бесплатное?</summary>
+                <div><p>Базовый учёт воды и гидратации, 3 ИИ-анализа в день и синхронизация с Apple Health / Google Health Connect всегда бесплатны. Безлимитный ИИ-анализ еды, подсчёт калорий по фото, расширенный анализ питания и Premium-статистика требуют подписки. Premium можно попробовать бесплатно 3 дня; год стоит ₺1 200 со скидкой 50% на старте (обычно ₺2 400), месяц — ₺149, семейный тариф на 3 человек — ₺2 399 в год.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Какие языки поддерживает Suu?</summary>
+                <div><p>Приложение доступно на 7 языках: Türkçe, English, العربية (полная поддержка справа налево), Deutsch, Italiano, Русский и हिन्दी.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Есть ли у Suu приложение для Apple Watch?</summary>
+                <div><p>Собственного приложения Suu для Apple Watch пока нет — оно скоро выйдет. Сегодня тренировки, шаги и активная энергия, записанные вашими часами, попадают в Suu через Apple Health и автоматически повышают цель по воде. Для записи с запястья без рук можно использовать команду Siri. <a href="blog/ru/apple-watch-voda.html">Руководство по настройке <span class="arrow" aria-hidden="true">→</span></a></p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Мои данные в безопасности?</summary>
+                <div><p>Данные полностью принадлежат вам. Рекламного отслеживания нет, данные не передаются третьим сторонам. При голосовом вводе речь преобразуется в текст операционной системой устройства — аудиозапись не отправляется на серверы Suu. Фотографии еды не хранятся постоянно после анализа. <a href="gizlilik-politikasi.html">Политика конфиденциальности <span class="arrow" aria-hidden="true">→</span></a></p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Почему Suu вместо MyFitnessPal или Yazio?</summary>
+                <div><p>У MyFitnessPal шире база продуктов, у Yazio сильнее библиотека рецептов. Suu отличается целостностью: учёт воды, анализ калорий по фото и учёт тренировок живут в одном приложении и связаны — тренировка обновляет цель по воде, а еда обновляет потребность в воде для пищеварения. Плюс настоящий расчёт гидратации по 91 напитку и поддержка 7 языков. <a href="blog/ru/suu-vs-myfitnesspal.html">Подробное сравнение <span class="arrow" aria-hidden="true">→</span></a></p></div>
+            </details>
+        </div>
+        <p class="small text-subtle text-center" style="margin-block-start:var(--sp-8);max-width:44rem;margin-inline:auto">Suu не предназначено для медицинской диагностики или лечения. По вопросам здоровья консультируйтесь со специалистом.</p>
+    </div>
+</section>
+
+<!-- KAPANIŞ CTA -->
+<section class="cta-band" data-cta="kapanis">
+    <div class="container">
+        <h2>Вода, калории и тренировки — с сегодняшнего дня в одном приложении</h2>
+        <p class="lead" style="max-width:34rem;margin-inline:auto">Скачайте бесплатно, попробуйте Premium 3 дня бесплатно.</p>
+        <div style="margin-block-start:var(--sp-8)">
+<div class="btn-row btn-row--center">
+    <a href="/app?src=kapanis" class="btn-store" aria-label="Загрузить в App Store">
+        <span class="btn-store__icon"><svg width="22" height="22" aria-hidden="true"><use href="#i-apple"></use></svg></span>
+        <span class="btn-store__label">
+            <span class="btn-store__small">Загрузить в</span>
+            <span class="btn-store__big">App Store</span>
+        </span>
+    </a>
+    <a href="/app?src=kapanis" class="btn-store" aria-label="Скачать в Google Play">
+        <span class="btn-store__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24">
+                <path fill="#00D2FF" d="M3.6 1.8A1.5 1.5 0 0 0 3 3v18c0 .5.2.9.6 1.2l.1.1 10.1-10.1v-.3L3.7 1.7l-.1.1z"/>
+                <path fill="#FFCE00" d="M17.2 15.6l-3.4-3.4v-.3l3.4-3.4.1.1 4 2.3c1.2.6 1.2 1.7 0 2.4l-4 2.3z"/>
+                <path fill="#FF3A44" d="M17.3 15.5 13.8 12 3.6 22.2c.4.4 1 .5 1.8.1l11.9-6.8"/>
+                <path fill="#00E676" d="M17.3 8.5 5.4 1.7c-.8-.4-1.4-.4-1.8.1L13.8 12l3.5-3.5z"/>
+            </svg>
+        </span>
+        <span class="btn-store__label">
+            <span class="btn-store__small">Загрузить в</span>
+            <span class="btn-store__big">Google Play</span>
+        </span>
+    </a>
+</div></div>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__grid">
+            <div>
+                <a href="hosgeldiniz-ru.html" class="nav__logo" style="margin-block-end:var(--sp-3)">
+                    <svg width="24" height="24" aria-hidden="true"><use href="#i-water"></use></svg> Suu
+                </a>
+                <p class="small">Трекер воды, счётчик калорий и учёт тренировок в одном приложении. Разрабатывается в одиночку в Стамбуле.</p>
+            </div>
+            <div>
+                <h4>Продукт</h4>
+                <ul>
+                    <li><a href="ozellikler-ru.html">Возможности</a></li>
+                    <li><a href="premium-ru.html">Premium</a></li>
+                    <li><a href="download-ru.html">Скачать</a></li>
+                    <li><a href="water-calculator-ru.html">Калькулятор воды</a></li>
+                    <li><a href="who-is-suu-for-ru.html">Кому подойдёт?</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Изучить</h4>
+                <ul>
+                    <li><a href="blog-ru.html">Блог</a></li>
+                    <li><a href="suu-index-ru.html">Индекс Suu</a></li>
+                    <li><a href="adaptive-hydration-brain-ru.html">Адаптивный мозг гидратации</a></li>
+                    <li><a href="personal-hydration-plan-ru.html">План гидратации</a></li>
+                    <li><a href="faq-ru.html">Вопросы</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Компания</h4>
+                <ul>
+                    <li><a href="hakkimizda-ru.html">О нас</a></li>
+                    <li><a href="ekip.html">Команда</a></li>
+                    <li><a href="gizlilik-politikasi.html">Конфиденциальность</a></li>
+                    <li><a href="kullanim-sartlari.html">Условия использования</a></li>
+                    <li><a href="delete-account.html">Удаление аккаунта</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="small mb-0">© 2026 Suu · Furkan Mert Fındıklı</p>
+            <p class="small mb-0"><a href="mailto:Suutakip@gmail.com">Suutakip@gmail.com</a></p>
+        </div>
+    </div>
 </footer>
 
-<script src="lang-switcher.js?v=2" defer></script>
-<link rel="stylesheet" href="donation-widget.css?v=2">
-<script src="donation-widget.js?v=2" defer></script>
+<div class="sticky-cta" data-cta="sticky">
+    <a href="/app?src=sticky" class="btn btn--secondary">App Store</a>
+    <a href="/app?src=sticky" class="btn btn--primary">Google Play</a>
+</div>
+
+<script>
+(function () {
+    var nav = document.getElementById('nav');
+    var toggle = document.getElementById('navToggle');
+    if (!nav || !toggle) return;
+    var openLabel = "\u041e\u0442\u043a\u0440\u044b\u0442\u044c \u043c\u0435\u043d\u044e", closeLabel = "\u0417\u0430\u043a\u0440\u044b\u0442\u044c \u043c\u0435\u043d\u044e";
+    toggle.addEventListener('click', function () {
+        var open = nav.getAttribute('data-open') === 'true';
+        nav.setAttribute('data-open', open ? 'false' : 'true');
+        toggle.setAttribute('aria-expanded', open ? 'false' : 'true');
+        toggle.setAttribute('aria-label', open ? openLabel : closeLabel);
+    });
+    nav.addEventListener('click', function (e) {
+        if (e.target.closest('.nav__links a')) {
+            nav.setAttribute('data-open', 'false');
+            toggle.setAttribute('aria-expanded', 'false');
+        }
+    });
+})();
+</script>
+
 </body>
 </html>

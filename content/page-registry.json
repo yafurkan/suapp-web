@@ -1,0 +1,352 @@
+{
+  "_comment": "Sayfa ailesi kayıt defteri — dil seçici, hreflang ve sitemap'in TEK kaynağı. Bir sayfa ailesine yeni dil eklendiğinde SADECE burası güncellenir, sonra python3 scripts/build-i18n-map.py --apply çalıştırılır.",
+  "_languages": [
+    "tr",
+    "en",
+    "ar",
+    "ru",
+    "de",
+    "it",
+    "hi"
+  ],
+  "_default": "tr",
+  "_shared_comment": "Tek URL üzerinde sekmeli çok dil sunan sayfalar — dil seçici bunlarda gizlenir.",
+  "shared": [
+    "gizlilik-politikasi.html",
+    "kullanim-sartlari.html",
+    "delete-account.html"
+  ],
+  "root": {
+    "home": {
+      "tr": "/",
+      "en": "hosgeldiniz-en.html",
+      "ar": "hosgeldiniz-ar.html",
+      "ru": "hosgeldiniz-ru.html",
+      "de": "hosgeldiniz-de.html",
+      "it": "hosgeldiniz-it.html",
+      "hi": "hosgeldiniz-hi.html"
+    },
+    "features": {
+      "tr": "ozellikler.html",
+      "en": "ozellikler-en.html",
+      "ar": "ozellikler-ar.html",
+      "ru": "ozellikler-ru.html"
+    },
+    "premium": {
+      "tr": "premium.html",
+      "en": "premium-en.html",
+      "ar": "premium-ar.html",
+      "ru": "premium-ru.html"
+    },
+    "faq": {
+      "tr": "faq.html",
+      "en": "faq-en.html",
+      "ar": "faq-ar.html",
+      "ru": "faq-ru.html"
+    },
+    "blog-index": {
+      "tr": "blog.html",
+      "en": "blog-en.html",
+      "ar": "blog-ar.html",
+      "ru": "blog-ru.html"
+    },
+    "about": {
+      "tr": "hakkimizda.html",
+      "en": "about.html",
+      "ar": "hakkimizda-ar.html",
+      "ru": "hakkimizda-ru.html"
+    },
+    "download": {
+      "tr": "indir.html",
+      "en": "download.html",
+      "ar": "download-ar.html",
+      "ru": "download-ru.html"
+    },
+    "water-calculator": {
+      "tr": "su-hesaplayici.html",
+      "en": "water-calculator.html",
+      "ar": "water-calculator-ar.html",
+      "ru": "water-calculator-ru.html"
+    },
+    "who-is-for": {
+      "tr": "kimler-icin.html",
+      "en": "who-is-suu-for.html",
+      "ar": "who-is-suu-for-ar.html",
+      "ru": "who-is-suu-for-ru.html"
+    },
+    "adaptive-brain": {
+      "tr": "ana-beyin.html",
+      "en": "adaptive-hydration-brain.html",
+      "ar": "adaptive-hydration-brain-ar.html",
+      "ru": "adaptive-hydration-brain-ru.html"
+    },
+    "suu-index": {
+      "tr": "suu-endeksi.html",
+      "en": "suu-index.html",
+      "ar": "suu-index-ar.html",
+      "ru": "suu-index-ru.html"
+    },
+    "hydration-plan": {
+      "tr": "hidrasyon-plani.html",
+      "en": "personal-hydration-plan.html",
+      "ar": "personal-hydration-plan-ar.html",
+      "ru": "personal-hydration-plan-ru.html"
+    },
+    "starbucks": {
+      "tr": "starbucks-dehidrasyon.html",
+      "en": "starbucks-dehydration.html"
+    },
+    "not-found": {
+      "tr": "404.html",
+      "en": "404-en.html",
+      "ar": "404-ar.html",
+      "ru": "404-ru.html"
+    },
+    "team": {
+      "tr": "ekip.html"
+    }
+  },
+  "blog": {
+    "_en_water-tracking-gamification": {
+      "en": "water-tracking-gamification",
+      "ru": "geymifikatsiya-vody"
+    },
+    "afrika-su-kuyusu-bagis-programi": {
+      "tr": "afrika-su-kuyusu-bagis-programi",
+      "en": "africa-water-well-donation-program",
+      "ar": "barnamaj-tabarru-abar-almae-afriqia",
+      "ru": "programma-pozhertvovanij-kolodtsy-afrika"
+    },
+    "aktivite-bazli-su-takibi": {
+      "tr": "aktivite-bazli-su-takibi",
+      "en": "activity-based-water-tracking",
+      "ar": "almae-walnashat-aljasadi",
+      "ru": "voda-po-aktivnosti"
+    },
+    "alkol-sonrasi-hidrasyon": {
+      "tr": "alkol-sonrasi-hidrasyon",
+      "en": "post-alcohol-hydration",
+      "ar": "tarteeb-baad-alkohol",
+      "ru": "gidratatsiya-posle-alkogolya"
+    },
+    "apple-watch-su-takibi": {
+      "tr": "apple-watch-su-takibi",
+      "en": "apple-watch-water-tracking",
+      "ru": "apple-watch-voda"
+    },
+    "basit-gelismis-mod": {
+      "tr": "basit-gelismis-mod",
+      "en": "simple-advanced-mode",
+      "ar": "alwade-albasit-walmutaqaddim",
+      "ru": "prostoy-rasshirennyy-rezhim"
+    },
+    "cay-hidrasyon": {
+      "tr": "cay-hidrasyon",
+      "en": "tea-hydration",
+      "ar": "tarteeb-asshay",
+      "ru": "chai-i-gidratatsiya"
+    },
+    "egzersizde-kalori-yakimi": {
+      "tr": "egzersizde-kalori-yakimi",
+      "en": "calories-burned-exercise",
+      "ar": "hurq-al-suerat",
+      "ru": "raskhod-kalorij"
+    },
+    "emzirmede-su-ihtiyaci": {
+      "tr": "emzirmede-su-ihtiyaci",
+      "en": "hydration-while-breastfeeding",
+      "ar": "almae-walrida",
+      "ru": "voda-i-kormlenie"
+    },
+    "en-iyi-fotografla-kalori-uygulamasi": {
+      "tr": "en-iyi-fotografla-kalori-uygulamasi",
+      "en": "best-photo-calorie-app"
+    },
+    "en-iyi-kalori-uygulamasi": {
+      "tr": "en-iyi-kalori-uygulamasi",
+      "en": "best-calorie-counting-app",
+      "ar": "afdal-tatbiq-hisab-suerat",
+      "ru": "luchshee-prilozhenie-podscheta-kalorij"
+    },
+    "enerji-icecegi-kontrolu": {
+      "tr": "enerji-icecegi-kontrolu",
+      "en": "energy-drink-control",
+      "ar": "tahakum-mashroob-attaqa",
+      "ru": "kontrol-energetikov"
+    },
+    "fotografla-kalori-sayma": {
+      "tr": "fotografla-kalori-sayma",
+      "en": "photo-calorie-counting",
+      "ar": "hisab-al-suerat-bil-sura",
+      "ru": "kalorii-po-foto"
+    },
+    "gunde-kac-kahve": {
+      "tr": "gunde-kac-kahve",
+      "en": "how-many-cups-coffee",
+      "ar": "kam-fanjan-qahwa",
+      "ru": "skolko-kofe-v-den"
+    },
+    "gunluk-ne-kadar-su-icmeli": {
+      "tr": "gunluk-ne-kadar-su-icmeli",
+      "en": "how-much-water-should-i-drink",
+      "ar": "kam-litr-mae-yawmiyan",
+      "ru": "skolko-vody-pit-v-den"
+    },
+    "hamilelikte-su-ihtiyaci": {
+      "tr": "hamilelikte-su-ihtiyaci",
+      "en": "hydration-during-pregnancy",
+      "ar": "almae-walhml",
+      "ru": "voda-i-beremennost"
+    },
+    "hidrasyon-skoru-nedir": {
+      "tr": "hidrasyon-skoru-nedir",
+      "en": "hydration-score-explained",
+      "ru": "otsenka-gidratatsii"
+    },
+    "kafein-seker-takibi": {
+      "tr": "kafein-seker-takibi",
+      "en": "caffeine-sugar-tracking",
+      "ar": "alkafayin-walsukar",
+      "ru": "kofein-i-sahar"
+    },
+    "kahve-cay-su-sayar-mi": {
+      "tr": "kahve-cay-su-sayar-mi",
+      "en": "coffee-tea-hydration",
+      "ar": "alqahwa-walshay-walmae",
+      "ru": "kofe-chay-i-voda"
+    },
+    "kahveyi-azaltmak": {
+      "tr": "kahveyi-azaltmak",
+      "en": "quit-coffee-guide",
+      "ar": "taqlil-alqahwa",
+      "ru": "kak-sokratit-kofe"
+    },
+    "kalori-acigi": {
+      "tr": "kalori-acigi",
+      "en": "calorie-deficit",
+      "ar": "al-ajz-al-harari",
+      "ru": "deficit-kalorij"
+    },
+    "kilo-ve-su": {
+      "tr": "kilo-ve-su",
+      "en": "water-and-weight-loss",
+      "ar": "almae-walidara-alwazn",
+      "ru": "voda-i-pohudenie"
+    },
+    "makro-hesaplama": {
+      "tr": "makro-hesaplama",
+      "en": "macro-calculation",
+      "ar": "hisab-al-macro",
+      "ru": "raschet-makrosov"
+    },
+    "meyve-suyu-vs-su": {
+      "tr": "meyve-suyu-vs-su",
+      "en": "juice-vs-water",
+      "ar": "aaseer-am-mae",
+      "ru": "sok-ili-voda"
+    },
+    "sabah-su-icmenin-faydalari": {
+      "tr": "sabah-su-icmenin-faydalari",
+      "en": "morning-water-benefits",
+      "ar": "fawaid-shurb-almae-sabahan",
+      "ru": "voda-utrom"
+    },
+    "sesli-kalori-girisi": {
+      "tr": "sesli-kalori-girisi",
+      "en": "voice-calorie-logging",
+      "ar": "tasjil-suerat-bil-sawt",
+      "ru": "golosovoj-vvod-kalorij"
+    },
+    "sesli-komutla-su-ekleme": {
+      "tr": "sesli-komutla-su-ekleme",
+      "en": "siri-water-tracking",
+      "ru": "siri-voda"
+    },
+    "spor-ve-hidrasyon": {
+      "tr": "spor-ve-hidrasyon",
+      "en": "hydration-and-exercise",
+      "ar": "arriyada-waltartib",
+      "ru": "sport-i-gidratatsiya"
+    },
+    "su-icme-aliskanlik": {
+      "tr": "su-icme-aliskanlik",
+      "en": "water-drinking-habits",
+      "ar": "adat-shurb-almae",
+      "ru": "privychka-pit-vodu"
+    },
+    "su-icme-lig-sistemi": {
+      "tr": "su-icme-lig-sistemi",
+      "en": "water-challenge-with-friends",
+      "ar": "nadhari-almae-maa-asdiqa",
+      "ru": "vodnyi-challenge-s-druzyami"
+    },
+    "su-icmenin-faydalari": {
+      "tr": "su-icmenin-faydalari",
+      "en": "benefits-of-drinking-water",
+      "ar": "fawaid-shurb-almae",
+      "ru": "polza-pitia-vody"
+    },
+    "su-kalori-egzersiz-tek-uygulama": {
+      "tr": "su-kalori-egzersiz-tek-uygulama",
+      "en": "water-calorie-exercise-one-app",
+      "ar": "tatbiq-wahid-mae-suerat-tamarin",
+      "ru": "voda-kalorii-trenirovki-odno-prilozhenie"
+    },
+    "su-takip-uygulamasi-neden-kullanmaliyim": {
+      "tr": "su-takip-uygulamasi-neden-kullanmaliyim",
+      "en": "best-water-tracking-app",
+      "ar": "afdal-tatbiq-mae",
+      "ru": "luchshee-prilozhenie-dlya-vody"
+    },
+    "su-ve-bobrek-sagligi": {
+      "tr": "su-ve-bobrek-sagligi",
+      "en": "water-and-kidney-health",
+      "ar": "almae-wasihhat-alkulaa",
+      "ru": "voda-i-zdorove-pochek"
+    },
+    "su-ve-cilt-sagligi": {
+      "tr": "su-ve-cilt-sagligi",
+      "en": "water-and-skin-health",
+      "ar": "almae-walsihha-aljildiyya",
+      "ru": "voda-i-zdorove-kozhi"
+    },
+    "su-ve-uyku-kalitesi": {
+      "tr": "su-ve-uyku-kalitesi",
+      "en": "water-and-sleep",
+      "ar": "almae-wannawm",
+      "ru": "voda-i-son"
+    },
+    "susuzluk-belirtileri": {
+      "tr": "susuzluk-belirtileri",
+      "en": "signs-of-dehydration",
+      "ar": "alamat-aljafaf",
+      "ru": "priznaki-obezvozhivaniya"
+    },
+    "suu-evcil-hayvan-mini-oyunlar": {
+      "tr": "suu-evcil-hayvan-mini-oyunlar",
+      "en": "pet-companion-mini-games",
+      "ar": "hayawan-aleef-aleab-mini",
+      "ru": "domashnij-pitomec-mini-igry"
+    },
+    "suu-vs-cal-ai": {
+      "tr": "suu-vs-cal-ai",
+      "en": "suu-vs-cal-ai"
+    },
+    "suu-vs-myfitnesspal": {
+      "tr": "suu-vs-myfitnesspal",
+      "en": "suu-vs-myfitnesspal",
+      "ar": "suu-vs-myfitnesspal",
+      "ru": "suu-vs-myfitnesspal"
+    },
+    "suu-vs-yazio": {
+      "tr": "suu-vs-yazio",
+      "en": "suu-vs-yazio",
+      "ar": "suu-vs-yazio",
+      "ru": "suu-vs-yazio"
+    },
+    "ucretsiz-kalori-sayaci": {
+      "tr": "ucretsiz-kalori-sayaci",
+      "en": "free-calorie-counter-app"
+    }
+  }
+}

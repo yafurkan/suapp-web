@@ -102,13 +102,28 @@ Allow: /
 User-agent: YouBot
 Allow: /
 
+# Yönetim arayüzü ve yönlendirme sayfası indekslenmemeli
+User-agent: *
+Disallow: /admin.html
+Disallow: /app/
+
 # Sitemap
 Sitemap: https://suuapp.com/sitemap.xml
 
-# AI Reference Files (LLM optimizasyonu için)
-# - https://suuapp.com/llms.txt           (TR+EN özet)
-# - https://suuapp.com/llms-full.txt      (TR+EN tam)
-# - https://suuapp.com/llms-ar.txt        (AR özet)
-# - https://suuapp.com/llms-full-ar.txt   (AR tam)
-# - https://suuapp.com/llms-ru.txt        (RU özet)
-# - https://suuapp.com/llms-full-ru.txt   (RU tam)
+# ─────────────────────────────────────────────
+# AI referans dosyaları (7 dil × 2)
+# Üretim: python3 scripts/build-llms.py --apply
+# Kaynak: content/suu-facts.json + content/home/<lang>.json
+#
+# llms-*.txt      → kompakt indeks (<10 KB, tam sindirilebilir)
+# llms-full-*.txt → tam korpus (özellik listesi, karşılaştırma tablosu, SSS)
+# ─────────────────────────────────────────────
+# Türkçe   : https://suuapp.com/llms.txt      · https://suuapp.com/llms-full.txt
+# English  : https://suuapp.com/llms-en.txt   · https://suuapp.com/llms-full-en.txt
+# العربية  : https://suuapp.com/llms-ar.txt   · https://suuapp.com/llms-full-ar.txt
+# Deutsch  : https://suuapp.com/llms-de.txt   · https://suuapp.com/llms-full-de.txt
+# Italiano : https://suuapp.com/llms-it.txt   · https://suuapp.com/llms-full-it.txt
+# Русский  : https://suuapp.com/llms-ru.txt   · https://suuapp.com/llms-full-ru.txt
+# हिन्दी    : https://suuapp.com/llms-hi.txt   · https://suuapp.com/llms-full-hi.txt
+#
+# Yapılandırılmış manifest: https://suuapp.com/.well-known/ai-plugin.json
