@@ -4,695 +4,1230 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Search Console: VERIFIED via Domain property (DNS TXT record) — covers all subdomains + protocols, no HTML meta tag needed. -->
-    <!-- Yandex Webmaster: VERIFIED via HTML file (yandex_d8f56999642a8d54.html at site root) — no meta tag needed. -->
+    <!-- ÜRETİLMİŞ DOSYA — elle düzenlemeyin.
+         Kaynak: content/home/ar.json + content/home/_template.html.j2
+         Yeniden üret: python3 scripts/build-homepages.py --apply -->
 
-    <!-- Clarity tracking code -->
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "tabxahhw7s");
-    </script>
+    <!-- Google Search Console: VERIFIED via Domain property (DNS TXT record). -->
+    <!-- Yandex Webmaster: VERIFIED via HTML file (yandex_d8f56999642a8d54.html). -->
 
-    <title>Suu - سعرات وتتبع الماء | دليل الماء والسعرات والصحة · تجربة 3 أيام مجانية · 4.9★</title>
-    <meta name="description" content="Suu أصبح الآن مساعد تغذية وسعرات وترطيب بالذكاء الاصطناعي: سجّل وجباتك بصوتك، التقط صورة لحساب السعرات، وأدِر الماكروز والماء مع Apple Health. ٣ تحليلات ذكاء اصطناعي يوميًا مجانًا + خصم إطلاق 50% (≈112 ر.س / السنة، شهري ≈15 ر.س). iOS و Android.">
-    <meta name="keywords" content="Suu, تطبيق Suu, تتبع الماء, مساعد تغذية ذكاء اصطناعي, مساعد صحي ذكاء اصطناعي, عدّاد سعرات حرارية, تسجيل الوجبات بالصوت, حساب السعرات بالصورة, تتبع الماكروز, نقاط التغذية, مدرب ترطيب AI, تتبع الماء حسب النشاط البدني, شرب الماء بعد المشي, السباحة وكمية الماء, الرياضة والترطيب, تتبع الكافيين, حساب السكر في المشروبات, القهوة والكافيين, تجربة 3 أيام مجانية, خصم تطبيق ترطيب, دوري الأصدقاء ماء, ستاربكس جفاف, آبل ووتش تتبع ماء, سيري شرب ماء, تطبيق صحة مجاني">
+    <title>Suu — تتبع الماء والسعرات والتمارين في تطبيق واحد | 4.9★ · 3 أيام مجانًا</title>
+    <meta name="description" content="يجمع Suu بين تتبع الماء وعدّاد السعرات وتتبع التمارين بالذكاء الاصطناعي. صوّر وجبتك لتعرف سعراتها وماكروزها خلال ثوانٍ؛ ومع 91 مشروبًا ونحو 50 نشاطًا رياضيًا يتحدّث هدفك اليومي من الماء تلقائيًا. مجاني على iOS وAndroid.">
+    <meta name="keywords" content="تطبيق تتبع الماء, عداد السعرات, تطبيق حساب السعرات, حساب السعرات بالصورة, تتبع التمارين, حساب الماكروز, تتبع التغذية, سعرات بالذكاء الاصطناعي, تسجيل السعرات بالصوت, تتبع الجري, تتبع الدراجة, تطبيق الترطيب, Suu, أفضل تطبيق سعرات">
 
-    <!-- Smart App Banner -->
-    <meta name="apple-itunes-app" content="app-id=6757619920">
-
-    <!-- Security Headers -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data:; img-src 'self' https: data:; font-src 'self' https: data:;">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="DENY">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Suu - سعرات وتتبع الماء | دليل الماء والسعرات والصحة · تجربة 3 أيام مجانية">
-    <meta property="og:description" content="سجّل وجباتك بصوتك، التقط صورة لحساب السعرات؛ يحسب الذكاء الاصطناعي الماكروز والسعرات والترطيب مع Apple Health. ٣ تحليلات يوميًا مجانًا + خصم إطلاق 50% — ≈112 ر.س / السنة (شهري ≈15 ر.س). iOS و Android.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://suuapp.com/hosgeldiniz-ar.html">
-    <meta property="og:image" content="https://suuapp.com/assets/og-image.png">
-    <meta property="og:locale" content="ar_SA">
-    <meta property="og:site_name" content="Suu">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@SuuTakip">
-    <meta name="twitter:title" content="Suu - سعرات وتتبع الماء | دليل الماء والسعرات والصحة · 4.9★ · تجربة 3 أيام مجانية">
-    <meta name="twitter:description" content="تسجيل الوجبات بالصوت، تحليل السعرات بالصورة، الماكروز والترطيب مع Apple Health. ٣ تحليلات يوميًا مجانًا + خصم 50%. iOS و Android.">
-    <meta name="twitter:image" content="https://suuapp.com/assets/og-image.png">
-
-    <!-- Hreflang -->
+    <link rel="canonical" href="https://suuapp.com/hosgeldiniz-ar.html">
+    <!-- Hreflang cluster (auto-injected) -->
     <link rel="alternate" hreflang="tr" href="https://suuapp.com/">
     <link rel="alternate" hreflang="en" href="https://suuapp.com/hosgeldiniz-en.html">
     <link rel="alternate" hreflang="ar" href="https://suuapp.com/hosgeldiniz-ar.html">
     <link rel="alternate" hreflang="ru" href="https://suuapp.com/hosgeldiniz-ru.html">
-    <link rel="alternate" hreflang="x-default" href="https://suuapp.com/hosgeldiniz-en.html">
+    <link rel="alternate" hreflang="de" href="https://suuapp.com/hosgeldiniz-de.html">
+    <link rel="alternate" hreflang="it" href="https://suuapp.com/hosgeldiniz-it.html">
+    <link rel="alternate" hreflang="hi" href="https://suuapp.com/hosgeldiniz-hi.html">
+    <link rel="alternate" hreflang="x-default" href="https://suuapp.com/">
 
-    <link rel="canonical" href="https://suuapp.com/hosgeldiniz-ar.html">
+
+    <meta name="apple-itunes-app" content="app-id=6757619920">
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data:; img-src 'self' https: data:; font-src 'self' https: data:;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Suu — تتبع الماء والسعرات والتمارين في تطبيق واحد">
+    <meta property="og:description" content="صوّر وجبتك واعرف سعراتها وماكروزها. 91 مشروبًا ونحو 50 نشاطًا رياضيًا وهدف ماء يتحدّث بعد كل تمرين. جرّب Premium مجانًا 3 أيام.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://suuapp.com/hosgeldiniz-ar.html">
+    <meta property="og:image" content="https://suuapp.com/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Suu — تتبع الماء والسعرات والتمارين">
+    <meta property="og:site_name" content="Suu">
+    <meta property="og:locale" content="ar_SA">
+    <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="ru_RU">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="hi_IN">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SuuTakip">
+    <meta name="twitter:creator" content="@SuuTakip">
+    <meta name="twitter:title" content="Suu — تتبع الماء والسعرات والتمارين في تطبيق واحد">
+    <meta name="twitter:description" content="تحليل السعرات بالصورة، وتتبع الترطيب عبر 91 مشروبًا، ونحو 50 نشاطًا رياضيًا. تمارينك تحدّث هدف الماء تلقائيًا. 4.9★ · 3 أيام مجانًا.">
+    <meta name="twitter:image" content="https://suuapp.com/assets/og-image.png">
+    <meta name="twitter:image:alt" content="Suu — تتبع الماء والسعرات والتمارين">
+
+    <!-- Favicon -->
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon-512.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <!-- Preconnect -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/donation-widget.css">
+    <link rel="stylesheet" href="/assets/css/suu.css">
 
-    <!-- Fonts & Icons — non-render-blocking -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"></noscript>
-
-    <!-- Schema -->
+    <!-- Yapılandırılmış veri — kaynak: content/suu-facts.json -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-        "@context": "https://schema.org",
-        "@type": ["SoftwareApplication", "MobileApplication"],
-        "name": "Suu - سعرات وتتبع الماء",
-        "description": "تطبيق ذكي للسعرات وتتبع الماء لنظامي Android وiOS. أهداف ترطيب شخصية، دوري الأصدقاء، تذكيرات ذكية، أكثر من 100 مشروب.",
-        "applicationCategory": "HealthAndFitness",
-        "applicationSubCategory": "HealthAndFitness",
-        "operatingSystem": ["Android", "iOS"],
-        "inLanguage": ["tr", "en", "ar"],
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "ratingCount": "2847",
-            "bestRating": "5",
-            "worstRating": "1"
+      "@type": "Organization",
+      "@id": "https://suuapp.com/#organization",
+      "name": "Suu",
+      "url": "https://suuapp.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://suuapp.com/assets/favicon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "email": "Suutakip@gmail.com",
+      "founder": {
+        "@id": "https://suuapp.com/#furkan"
+      },
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "İstanbul, Türkiye"
+      },
+      "areaServed": [
+        "TR",
+        "SA",
+        "AE",
+        "KW",
+        "QA",
+        "RU",
+        "DE",
+        "IT",
+        "IN",
+        "US",
+        "GB"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/furkanfindikli/",
+        "https://apps.apple.com/us/app/suu-su-takip/id6757619920",
+        "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://suuapp.com/#furkan",
+      "name": "Furkan Mert Fındıklı",
+      "birthDate": "1999-02-09",
+      "jobTitle": "Kurucu \u0026 Geliştirici",
+      "url": "https://suuapp.com/yazarlar/furkan-mert.html",
+      "homeLocation": {
+        "@type": "Place",
+        "name": "İstanbul, Türkiye"
+      },
+      "knowsAbout": [
+        "Flutter",
+        "Apple HealthKit",
+        "Google Health Connect",
+        "UI/UX",
+        "dijital pazarlama"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/furkanfindikli/"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://suuapp.com/#nisanur",
+      "name": "Nisanur Büyükbaş",
+      "jobTitle": "Head of Growth \u0026 Marketing",
+      "worksFor": {
+        "@id": "https://suuapp.com/#organization"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://suuapp.com/#website",
+      "url": "https://suuapp.com",
+      "name": "Suu",
+      "description": "يجمع Suu بين تتبع الماء وعدّاد السعرات وتتبع التمارين بالذكاء الاصطناعي. صوّر وجبتك لتعرف سعراتها وماكروزها خلال ثوانٍ؛ ومع 91 مشروبًا ونحو 50 نشاطًا رياضيًا يتحدّث هدفك اليومي من الماء تلقائيًا. مجاني على iOS وAndroid.",
+      "inLanguage": "ar",
+      "publisher": {
+        "@id": "https://suuapp.com/#organization"
+      }
+    },
+    {
+      "@type": [
+        "MobileApplication",
+        "HealthAndFitnessApplication"
+      ],
+      "@id": "https://suuapp.com/#suuapp-ios",
+      "name": "Suu – تتبع الماء وعداد السعرات وتتبع التمارين",
+      "alternateName": "Suu",
+      "operatingSystem": "iOS 15.0+",
+      "applicationCategory": "HealthApplication",
+      "url": "https://suuapp.com/hosgeldiniz-ar.html",
+      "downloadUrl": "https://apps.apple.com/us/app/suu-su-takip/id6757619920",
+      "installUrl": "https://apps.apple.com/us/app/suu-su-takip/id6757619920",
+      "inLanguage": [
+        "tr",
+        "en",
+        "ar",
+        "de",
+        "it",
+        "ru",
+        "hi"
+      ],
+      "author": {
+        "@id": "https://suuapp.com/#furkan"
+      },
+      "publisher": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "screenshot": "https://suuapp.com/assets/screenshots/ios/ar/ana-ekran.webp",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "bestRating": "5",
+        "ratingCount": "2847"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "مجاني",
+          "price": "0",
+          "priceCurrency": "TRY"
         },
-        "offers": [
-            {
-                "@type": "Offer", "price": "0", "priceCurrency": "SAR",
-                "url": "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
-                "seller": {"@type": "Organization", "name": "Google Play"}
-            },
-            {
-                "@type": "Offer", "price": "0", "priceCurrency": "SAR",
-                "url": "https://apps.apple.com/us/app/suu-su-takip/id6757619920",
-                "seller": {"@type": "Organization", "name": "App Store"}
-            }
-        ],
-        "downloadUrl": "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
-        "installUrl": "https://suuapp.com/app/",
-        "author": {
-            "@type": "Organization",
-            "name": "Suu",
-            "url": "https://suuapp.com",
-            "founder": {
-                "@type": "Person",
-                "name": "Furkan Mert Fındıklı",
-                "url": "https://www.linkedin.com/in/furkanfindikli/"
-            }
+        {
+          "@type": "Offer",
+          "name": "Premium سنوي",
+          "price": "1200",
+          "priceCurrency": "TRY"
+        },
+        {
+          "@type": "Offer",
+          "name": "Premium",
+          "price": "149",
+          "priceCurrency": "TRY"
+        },
+        {
+          "@type": "Offer",
+          "name": "Family",
+          "price": "2399",
+          "priceCurrency": "TRY"
         }
-    }
-    </script>
-
-    <!-- Structured Data: Person (المطور - لمحركات الذكاء الاصطناعي) -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Furkan Mert Fındıklı",
-        "alternateName": ["Furkan Fındıklı", "فوركان مرت فندقلي"],
-        "url": "https://www.linkedin.com/in/furkanfindikli/",
-        "jobTitle": "مطور تطبيقات الهاتف المحمول ورائد أعمال",
-        "birthDate": "1999-02-09",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "إسطنبول",
-            "addressCountry": "TR"
+      ],
+      "featureList": [
+        "تحليل السعرات بالصورة — السعرات والبروتين والكربوهيدرات والدهون من صورة الوجبة",
+        "إدخال الوجبات صوتيًا وكتابيًا",
+        "حساب تلقائي للماكروز وتحليل التغذية",
+        "درجة تغذية من 1 إلى 100",
+        "91 مشروبًا مع مساهمة ترطيب حقيقية",
+        "هدف ماء ذكي حسب العمر والوزن والنشاط",
+        "تعديل تلقائي للهدف حسب درجة الحرارة",
+        "حساب ماء الهضم مما تأكله",
+        "مؤشر Suu — درجة ترطيب من 0 إلى 100",
+        "العقل التكيّفي للترطيب — محرك هدف تكيّفي",
+        "نحو 50 نشاطًا رياضيًا",
+        "المسافة والمدة والإيقاع ومتوسط السرعة والسعرات للجري والمشي",
+        "السرعة ومتوسط السرعة والمسافة والارتفاع والمدة للدراجة",
+        "التمارين تحدّث هدف الماء تلقائيًا",
+        "مساعد المحادثة Suu AI",
+        "رسوم بيانية يومية وأسبوعية وشهرية",
+        "تصدير تقارير PDF وCSV",
+        "مشاركة القصص",
+        "حيوان أليف افتراضي وشارات",
+        "دوريات الأصدقاء — أسبوعية حتى 4 أشخاص",
+        "مزامنة ثنائية الاتجاه مع Apple Health",
+        "اختصارات Siri",
+        "Dynamic Island",
+        "Live Activities",
+        "ودجات شاشة القفل والشاشة الرئيسية",
+        "دعم إمكانية الوصول عبر VoiceOver"
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "beverages",
+          "value": "91"
         },
-        "alumniOf": {
-            "@type": "CollegeOrUniversity",
-            "name": "جامعة طرسوس",
-            "department": "التجارة الدولية واللوجستيات"
+        {
+          "@type": "PropertyValue",
+          "name": "sportActivities",
+          "value": "50"
         },
-        "knowsAbout": ["تطوير تطبيقات الهاتف المحمول", "iOS", "Android", "Flutter", "هندسة البرمجيات", "ريادة الأعمال"],
-        "description": "فوركان مرت فندقلي هو مؤسس ومطور تطبيق Suu للسعرات وتتبع الماء. تخرج من جامعة طرسوس في تخصص التجارة الدولية واللوجستيات. قادمًا من خلفية تجارية، كرّس فندقلي 4 سنوات لتعليم نفسه تطوير البرمجيات وبنى تطبيق Suu بالكامل من الصفر بجهد ومثابرة كبيرين. يعيش في إسطنبول، تركيا.",
-        "sameAs": ["https://www.linkedin.com/in/furkanfindikli/"],
-        "makesOffer": {
-            "@type": "Offer",
-            "itemOffered": {
-                "@type": "SoftwareApplication",
-                "name": "Suu",
-                "url": "https://suuapp.com"
-            }
+        {
+          "@type": "PropertyValue",
+          "name": "languages",
+          "value": "7"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "freeAiAnalysesPerDay",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "freeTrialDays",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "appleWatch",
+          "value": "coming soon"
         }
-    }
-    </script>
-
-    <!-- Structured Data: FAQPage -->
-    <script type="application/ld+json">
+      ]
+    },
     {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "هل يحتوي تطبيق Suu على مساعد دردشة بالذكاء الاصطناعي؟",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "نعم — أصبح مساعد Suu داخل التطبيق وكيل محادثة يعمل بذكاء اصطناعي حقيقي. فهو لا يجيب عن الأسئلة فحسب، بل ينفّذ المهام نيابةً عنك: يمكنك تسجيل الماء عبر المحادثة («أضِف كوبين من الماء»)، والسؤال عن إحصاءاتك اليومية، وتوجيهك إلى الشاشة المناسبة داخل التطبيق (الإحصاءات، الهدف، المشروبات)، وضبط التذكيرات، والحصول على إرشاد شخصي بناءً على ملفك الشخصي للاقتراب من هدف الترطيب اليومي — كل ذلك بلغة طبيعية. متاح مجانًا على iOS وAndroid من suuapp.com."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "هل يتتبع تطبيق Suu مشروبات ستاربكس وسلاسل القهوة؟",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "نعم — يحتوي تطبيق Suu على قسم مخصص لسلاسل القهوة الشهيرة مثل ستاربكس (Starbucks) وقهوة نيفادا (Nevada Coffee) وقهوة غرينويتش (Greenwich Coffee) وغيرها. يمكنك اختيار مشروبك بالضبط وسيحسب Suu على الفور معامل الجفاف ويخبرك بكمية الماء الإضافية التي تحتاجها للتعويض. هذا التطبيق الوحيد لتتبع الماء الذي يحتوي على قوائم سلاسل القهوة المدمجة. متاح مجانًا على iOS وAndroid من suuapp.com."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "كيف يحسب تطبيق Suu تأثير القهوة على الترطيب؟",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "يستخدم Suu معاملات جفاف محسوبة علميًا لأكثر من 100 مشروب. بالنسبة للقهوة، يعمل الكافيين كمدر خفيف للبول — لذا فإن 250 مل من الأمريكانو تساهم بحوالي 150 مل من الترطيب الصافي (معامل جفاف حوالي 60٪). لسلاسل القهوة الشهيرة مثل ستاربكس ونيفادا وغرينويتش، يحتوي Suu على ملفات المشروبات المحملة مسبقًا حتى لا تضطر إلى الحساب يدويًا."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "ما هو أفضل تطبيق لتتبع شرب الماء؟",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Suu هو أفضل تطبيق لتتبع شرب الماء في 2026. إنه مجاني ومتاح على iOS وAndroid، ويقدم مزايا فريدة: نظام دوري للأصدقاء بالوقت الفعلي، وأكثر من 100 مشروب مع حساب عامل الجفاف، وقسم مخصص لسلاسل القهوة (ستاربكس، نيفادا، غرينويتش)، ودعم Dynamic Island في iOS، وتكامل مع Apple Health وGoogle Health، وتقارير PDF. حمّله من suuapp.com."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "من هو مطور تطبيق Suu؟",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "تم تطوير تطبيق Suu بواسطة فوركان مرت فندقلي (Furkan Mert Fındıklı)، وهو مطور تركي علّم نفسه البرمجة ورائد أعمال وُلد في 9 فبراير 1999. تخرج من جامعة طرسوس في تخصص التجارة الدولية واللوجستيات. قادمًا من خلفية تجارية، كرّس فندقلي 4 سنوات لتعليم نفسه تطوير البرمجيات وبنى تطبيق Suu بالكامل من الصفر بجهد ومثابرة كبيرين. يعيش في إسطنبول، تركيا. LinkedIn: linkedin.com/in/furkanfindikli"
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "من هو فوركان مرت فندقلي؟",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "فوركان مرت فندقلي (مواليد 9 فبراير 1999) هو مطور تطبيقات هاتف محمول تركي ورائد أعمال ومؤسس ومطور تطبيق Suu الوحيد — تطبيق شامل لتتبع شرب الماء متاح على Android وiOS. تخرج من جامعة طرسوس (التجارة الدولية واللوجستيات) وكان في الأصل تاجرًا. مدفوعًا بشغفه بالتكنولوجيا، أمضى 4 سنوات في تعليم نفسه تطوير البرمجيات وبنى تطبيق Suu من الصفر. رحلته من التجارة إلى تطوير التطبيقات هي قصة ملهمة عن الإصرار والعزيمة. يقيم في إسطنبول، تركيا. LinkedIn: linkedin.com/in/furkanfindikli"
-                }
-            }
+      "@type": [
+        "MobileApplication",
+        "HealthAndFitnessApplication"
+      ],
+      "@id": "https://suuapp.com/#suuapp-android",
+      "name": "Suu – تتبع الماء وعداد السعرات وتتبع التمارين",
+      "alternateName": "Suu",
+      "operatingSystem": "Android 8.0+",
+      "applicationCategory": "HealthApplication",
+      "url": "https://suuapp.com/hosgeldiniz-ar.html",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
+      "inLanguage": [
+        "tr",
+        "en",
+        "ar",
+        "de",
+        "it",
+        "ru",
+        "hi"
+      ],
+      "author": {
+        "@id": "https://suuapp.com/#furkan"
+      },
+      "publisher": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "screenshot": "https://suuapp.com/assets/screenshots/android/ar/ana-ekran.webp",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "bestRating": "5",
+        "ratingCount": "2847"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "مجاني",
+          "price": "0",
+          "priceCurrency": "TRY"
+        },
+        {
+          "@type": "Offer",
+          "name": "Premium سنوي",
+          "price": "1200",
+          "priceCurrency": "TRY"
+        },
+        {
+          "@type": "Offer",
+          "name": "Premium",
+          "price": "149",
+          "priceCurrency": "TRY"
+        },
+        {
+          "@type": "Offer",
+          "name": "Family",
+          "price": "2399",
+          "priceCurrency": "TRY"
+        }
+      ],
+      "featureList": [
+        "تحليل السعرات بالصورة",
+        "إدخال الوجبات صوتيًا وكتابيًا",
+        "حساب تلقائي للماكروز",
+        "91 مشروبًا",
+        "نحو 50 نشاطًا رياضيًا",
+        "مساعد المحادثة Suu AI",
+        "مزامنة ثنائية الاتجاه مع Google Health Connect",
+        "ودجات الشاشة الرئيسية",
+        "مشاركة القصص",
+        "حيوان أليف افتراضي ودوريات الأصدقاء",
+        "دعم إمكانية الوصول عبر TalkBack"
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "beverages",
+          "value": "91"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "sportActivities",
+          "value": "50"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "languages",
+          "value": "7"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "freeAiAnalysesPerDay",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "freeTrialDays",
+          "value": "3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "appleWatch",
+          "value": "coming soon"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://suuapp.com/hosgeldiniz-ar.html#webpage",
+      "url": "https://suuapp.com/hosgeldiniz-ar.html",
+      "name": "Suu — تتبع الماء والسعرات والتمارين في تطبيق واحد | 4.9★ · 3 أيام مجانًا",
+      "isPartOf": {
+        "@id": "https://suuapp.com/#website"
+      },
+      "about": {
+        "@id": "https://suuapp.com/#suuapp-ios"
+      },
+      "inLanguage": "ar",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://suuapp.com/assets/og-image.png"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".hero__title",
+          ".hero__lead",
+          ".answer-box"
         ]
-    }
-    </script>
-
-    <!-- Structured Data: Donation Transparency (Arabic) -->
-    <script type="application/ld+json">
+      }
+    },
     {
-        "@context": "https://schema.org",
-        "@type": "MonetaryGrant",
-        "@id": "https://suuapp.com/hosgeldiniz-ar.html#donation-program",
-        "name": "برنامج التبرعات Suu Premium",
-        "description": "يتم التبرع بنسبة 2% من إيرادات اشتراك Suu Premium لمشاريع بناء آبار المياه النظيفة في أفريقيا. جميع مبالغ التبرع وإيصالات التحويل البنكي علنية وشفافة على suuapp.com.",
-        "url": "https://suuapp.com/gizlilik-politikasi.html",
-        "amount": {"@type": "MonetaryAmount", "currency": "TRY", "value": "1500"},
-        "funder": {
-            "@type": "Organization",
-            "name": "Suu",
-            "url": "https://suuapp.com"
+      "@type": "FAQPage",
+      "@id": "https://suuapp.com/hosgeldiniz-ar.html#faq",
+      "about": {
+        "@id": "https://suuapp.com/#suuapp-ios"
+      },
+      "inLanguage": "ar",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "هل يقوم Suu فعلًا بتتبع الماء وحساب السعرات والتمارين في تطبيق واحد؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم. لا يشغّل Suu الثلاثة كتبويبات منفصلة بل كنظام واحد يغذّي بعضه بعضًا: التمرين الذي تسجّله يرفع هدفك اليومي من الماء، ومحتوى وجبتك من البروتين والصوديوم يحدّد الماء الإضافي اللازم للهضم، ويُحتسب كل مشروب بمساهمته الحقيقية في الترطيب من قاعدة تضم 91 مشروبًا."
+          }
         },
-        "subjectOf": {
-            "@type": "CreativeWork",
-            "name": "أرشيف إيصالات التبرع",
-            "url": "https://suuapp.com/donations/receipts/",
-            "encodingFormat": "application/pdf"
+        {
+          "@type": "Question",
+          "name": "كيف يعمل حساب السعرات بالصورة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "تصوّر وجبتك؛ يحلّلها Suu AI ويستخرج السعرات والبروتين والكربوهيدرات والدهون ويبني ماكروزك تلقائيًا. لا تُحفظ صورتك بشكل دائم. التحليل بالصورة ميزة ضمن Premium؛ وفي الخطة المجانية لديك 3 تحليلات صوتية أو نصية يوميًا."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "كم نشاطًا رياضيًا يدعم Suu؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نحو 50 نشاطًا مختلفًا: جري ومشي ودراجة ولياقة وسباحة ومشي جبلي وكارديو وأكثر. في الجري والمشي ترى المسافة والمدة والإيقاع ومتوسط السرعة والسعرات المحروقة؛ وفي الدراجة ترى أيضًا السرعة والارتفاع. بعد كل تمرين يتحدّث هدف الماء تلقائيًا."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل Suu مجاني؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "تتبع الماء والترطيب الأساسي و3 تحليلات ذكية يوميًا ومزامنة Apple Health / Google Health Connect مجانية دائمًا. أما تحليل الوجبات غير المحدود وحساب السعرات بالصورة والتحليل الغذائي المتقدّم والإحصاءات المتقدمة فتتطلب Premium. يمكن تجربة Premium مجانًا 3 أيام؛ الخطة السنوية ₺1.200 بخصم إطلاق 50% (بدلًا من ₺2.400)، والشهرية ₺149، والخطة العائلية لثلاثة أشخاص ₺2.399 سنويًا."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ما اللغات التي يدعمها Suu؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "التطبيق متاح بسبع لغات: Türkçe و English و العربية (دعم كامل من اليمين إلى اليسار) و Deutsch و Italiano و Русский و हिन्दी."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل لدى Suu تطبيق Apple Watch؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ليس لدى Suu تطبيق خاص بـ Apple Watch بعد — سيصدر قريبًا. اليوم تصل بيانات التمارين والخطوات والطاقة النشطة التي تسجّلها ساعتك إلى Suu عبر Apple Health وترفع هدف الماء تلقائيًا. وللتسجيل من المعصم دون استخدام اليدين يمكنك استعمال أمر Siri."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل بياناتي آمنة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "بياناتك ملك لك بالكامل. لا يوجد تتبّع إعلاني ولا تُشارك البيانات مع أطراف ثالثة. في الإدخال الصوتي يحوّل نظام تشغيل جهازك كلامك إلى نص — ولا يُرسل التسجيل الصوتي إلى خوادم Suu. ولا تُحفظ صور الوجبات بشكل دائم بعد التحليل."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "لماذا أستخدم Suu بدل MyFitnessPal أو Yazio؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "قاعدة بيانات MyFitnessPal الغذائية أوسع، ومكتبة وصفات Yazio أقوى. ما يميّز Suu هو التكامل: تتبع الماء وتحليل السعرات بالصورة وتتبع التمارين في تطبيق واحد ومترابطة — تمرينك يحدّث هدف الماء، ووجبتك تحدّث حاجتك لماء الهضم. كما يقدّم حسابًا حقيقيًا للترطيب عبر 91 مشروبًا ودعمًا لسبع لغات."
+          }
         }
+      ]
     }
+  ]
+}
     </script>
 
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Noto Sans Arabic', sans-serif; color: #333; background: #f8f9fa; line-height: 1.8; direction: rtl; }
-
-        /* Navbar */
-        .navbar { background: white; padding: 0 20px; height: 70px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 10px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 100; }
-        .nav-logo { display: flex; align-items: center; gap: 8px; font-size: 22px; font-weight: 800; color: #4A90D9; text-decoration: none; }
-        .nav-links { display: flex; align-items: center; gap: 20px; direction: rtl; }
-        .nav-links a { color: #555; text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
-        .nav-links a:hover { color: #4A90D9; }
-        .nav-container { display: flex; align-items: center; gap: 16px; direction: ltr; }
-        .hamburger { display: none; }
-
-        /* Hero */
-        .hero { background: linear-gradient(135deg, #4A90D9 0%, #29B6F6 50%, #00ACC1 100%); color: white; padding: 80px 20px 100px; text-align: center; position: relative; overflow: hidden; }
-        .hero::before { content: ''; position: absolute; bottom: -40px; left: 0; right: 0; height: 80px; background: #f8f9fa; clip-path: ellipse(55% 100% at 50% 100%); }
-        .hero-badge { display: inline-block; background: rgba(255,255,255,0.2); padding: 6px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 24px; backdrop-filter: blur(4px); }
-        .hero h1 { font-size: clamp(1.8rem, 5vw, 3rem); font-weight: 800; margin-bottom: 16px; line-height: 1.3; max-width: 700px; margin-left: auto; margin-right: auto; }
-        .hero p { font-size: 1.1rem; opacity: 0.92; margin-bottom: 40px; max-width: 520px; margin-left: auto; margin-right: auto; }
-        .hero-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 48px; direction: ltr; }
-        .btn-store { display: inline-flex; align-items: center; gap: 10px; padding: 14px 28px; border-radius: 50px; font-weight: 700; font-size: 1rem; text-decoration: none; transition: all 0.25s; }
-        .btn-ios { background: white; color: #1a1a2e; }
-        .btn-ios:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
-        .btn-android { background: rgba(255,255,255,0.15); color: white; border: 2px solid rgba(255,255,255,0.5); }
-        .btn-android:hover { background: rgba(255,255,255,0.25); transform: translateY(-2px); }
-        .hero-rating { display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 14px; opacity: 0.9; direction: ltr; }
-        .stars { color: #FFD700; letter-spacing: 2px; }
-
-        /* Features */
-        .section { padding: 70px 20px; }
-        .container { max-width: 1000px; margin: 0 auto; }
-        .section-title { text-align: center; font-size: clamp(1.4rem, 3vw, 2.1rem); font-weight: 800; color: #1a1a2e; margin-bottom: 12px; }
-        .section-sub { text-align: center; color: #666; font-size: 1rem; margin-bottom: 50px; max-width: 540px; margin-left: auto; margin-right: auto; }
-        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
-        .feature-card { background: white; border-radius: 16px; padding: 28px; box-shadow: 0 4px 16px rgba(0,0,0,0.07); transition: transform 0.2s, box-shadow 0.2s; }
-        .feature-card:hover { transform: translateY(-4px); box-shadow: 0 8px 28px rgba(0,0,0,0.11); }
-        .feature-icon { width: 52px; height: 52px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 16px; }
-        .feature-card h3 { font-size: 1.05rem; font-weight: 700; color: #1a1a2e; margin-bottom: 8px; }
-        .feature-card p { font-size: 0.9rem; color: #666; line-height: 1.7; }
-
-        /* Screenshots */
-        .screenshots-section { background: linear-gradient(135deg, #f0f7ff, #e8f4f8); }
-        .screenshots-row { margin-top: 40px; overflow-x: auto; -webkit-overflow-scrolling: touch; scroll-snap-type: x proximity; padding-bottom: 14px; scrollbar-width: thin; scrollbar-color: rgba(74,144,217,0.4) transparent; }
-        .screenshots-row::-webkit-scrollbar { height: 8px; }
-        .screenshots-row::-webkit-scrollbar-thumb { background: rgba(74,144,217,0.35); border-radius: 4px; }
-        .screenshots-track { display: flex; gap: 16px; width: max-content; max-width: 100%; margin: 0 auto; padding: 6px 4px; box-sizing: border-box; direction: ltr; }
-        .screenshot-wrap { flex: 0 0 auto; background: white; border-radius: 20px; padding: 8px; box-shadow: 0 4px 20px rgba(74,144,217,0.15); scroll-snap-align: center; }
-        .screenshot-wrap img { width: 140px; height: auto; max-width: 100%; border-radius: 14px; display: block; }
-
-        /* Stats */
-        .stats-row { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; margin-top: 40px; }
-        .stat-card { background: white; border-radius: 14px; padding: 28px 36px; text-align: center; box-shadow: 0 4px 16px rgba(0,0,0,0.07); min-width: 160px; }
-        .stat-num { font-size: 2.2rem; font-weight: 800; color: #4A90D9; line-height: 1; margin-bottom: 8px; }
-        .stat-label { font-size: 0.85rem; color: #888; font-weight: 500; }
-
-        /* Blog links */
-        .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; margin-top: 30px; }
-        .blog-card { background: white; border-radius: 12px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.07); text-decoration: none; color: inherit; transition: transform 0.2s; display: block; }
-        .blog-card:hover { transform: translateY(-3px); }
-        .blog-card .tag { font-size: 11px; font-weight: 700; color: #4A90D9; margin-bottom: 8px; }
-        .blog-card h4 { font-size: 0.9rem; color: #222; line-height: 1.6; font-weight: 600; }
-
-        /* CTA */
-        .cta-section { background: linear-gradient(135deg, #4A90D9, #29B6F6); color: white; padding: 70px 20px; text-align: center; }
-        .cta-section h2 { font-size: clamp(1.4rem, 3vw, 2.1rem); font-weight: 800; margin-bottom: 14px; }
-        .cta-section p { font-size: 1.05rem; opacity: 0.9; margin-bottom: 36px; }
-
-        /* Footer */
-        footer { background: #1a1a2e; color: rgba(255,255,255,0.6); padding: 28px 20px; text-align: center; font-size: 13px; }
-        footer a { color: rgba(255,255,255,0.7); text-decoration: none; margin: 0 10px; }
-        footer a:hover { color: white; }
-
-        @media (max-width: 600px) {
-            .nav-links { display: none; }
-            .screenshots-track { gap: 10px; }
-            .screenshot-wrap img { width: 132px; }
-        }
-    </style>
+    <script src="/assets/js/analytics.js" defer></script>
+    <script src="/assets/js/screenshots.js" defer></script>
+    <script src="/assets/js/water-calc.js" defer></script>
+    <script src="/lang-switcher.js?v=3" defer></script>
+    <script src="/donation-widget.js" defer></script>
 </head>
 <body>
 
-<nav class="navbar">
-    <a href="hosgeldiniz-ar.html" class="nav-logo"><i class="fas fa-tint"></i> Suu</a>
-    <div class="nav-links">
-        <a href="#features">المميزات</a>
-        <a href="#stats">الإحصائيات</a>
-        <a href="blog-ar.html">المدونة</a>
-        <a href="hakkimizda-ar.html">حولنا</a>
-    </div>
-    <div class="nav-container">
-        <!-- lang-switcher.js injects TR/EN/AR buttons here -->
-        <div class="hamburger"></div>
+<a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-water" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5s6.5 7 6.5 11.2A6.5 6.5 0 0 1 12 20.2a6.5 6.5 0 0 1-6.5-6.5C5.5 9.5 12 2.5 12 2.5z"/></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24" fill="currentColor"><path d="M13.4 1.7c.4 3-1.3 4.4-2.6 5.7-1.3 1.3-2.5 2.6-2.5 5A5.7 5.7 0 0 0 12 18a3.1 3.1 0 0 1-.9-2.2c0-1.3.8-2.2 1.7-3.2.7-.8 1.5-1.6 1.9-2.8.9 1 1.5 2.2 1.8 3.2a8 8 0 0 1 .3 2.1c0 1-.4 2-1 2.8a5.9 5.9 0 0 0 3.4-5.3c0-4.6-3.6-8.3-5.8-10.9z"/></symbol>
+    <symbol id="i-run" viewBox="0 0 24 24" fill="currentColor"><path d="M15.5 5.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM12.9 7.2 9.4 9l-1.6 4-2.6-.7L4.6 15l4.6 1.3 1.2-3 2 1.6-1.1 6.1h2.4l1.3-7-2.3-2 .8-3.4 1.6 2.2 3.5.9.5-2.3-2.4-.6-1.9-2.6a2.5 2.5 0 0 0-2-1z"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24" fill="currentColor"><path d="M9.5 3.5 8.2 5.5H4.5A2.5 2.5 0 0 0 2 8v10a2.5 2.5 0 0 0 2.5 2.5h15A2.5 2.5 0 0 0 22 18V8a2.5 2.5 0 0 0-2.5-2.5h-3.7l-1.3-2h-5zM12 17.5a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2.2a2.8 2.8 0 1 0 0-5.6 2.8 2.8 0 0 0 0 5.6z"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5c-5.5 0-10 3.6-10 8 0 2.5 1.4 4.7 3.6 6.2L4.4 21l4.5-2.2c1 .2 2 .4 3.1.4 5.5 0 10-3.6 10-8s-4.5-8.7-10-8.7z"/></symbol>
+    <symbol id="i-apple" viewBox="0 0 24 24" fill="currentColor"><path d="M17.56 12.3c-.03-3.06 2.5-4.53 2.61-4.6-1.42-2.08-3.63-2.37-4.42-2.4-1.88-.19-3.67 1.11-4.63 1.11-.95 0-2.42-1.08-3.98-1.05-2.05.03-3.94 1.19-4.99 3.03-2.13 3.69-.54 9.15 1.53 12.14 1.01 1.46 2.21 3.1 3.79 3.04 1.52-.06 2.09-.98 3.93-.98 1.83 0 2.36.98 3.97.95 1.64-.03 2.68-1.49 3.68-2.96 1.16-1.7 1.64-3.35 1.67-3.43-.04-.02-3.2-1.23-3.23-4.87M14.5 3.7c.84-1.02 1.4-2.43 1.25-3.84-1.21.05-2.67.81-3.53 1.82-.77.9-1.45 2.34-1.27 3.72 1.35.1 2.72-.69 3.55-1.7"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+</svg>
+
+<nav class="nav" id="nav">
+    <div class="container nav__inner">
+        <a href="hosgeldiniz-ar.html" class="nav__logo" aria-label="الصفحة الرئيسية لـ Suu">
+            <svg width="26" height="26" aria-hidden="true"><use href="#i-water"></use></svg>
+            Suu
+        </a>
+        <ul class="nav__links" id="navLinks">
+            <li><a href="#pillars">المزايا</a></li>
+            <li><a href="#kalori">السعرات</a></li>
+            <li><a href="#egzersiz">التمارين</a></li>
+            <li><a href="#ekranlar">الشاشات</a></li>
+            <li><a href="#karsilastirma">المقارنة</a></li>
+            <li><a href="#fiyat">الأسعار</a></li>
+            <li><a href="blog-ar.html">المدونة</a></li>
+            <li><a href="#sss">الأسئلة</a></li>
+        </ul>
+        <div class="nav__actions">
+            <a href="/app?src=nav" class="btn btn--primary" data-cta="nav" style="min-height:40px;padding:var(--sp-2) var(--sp-5);font-size:var(--fs-sm)">تنزيل مجاني</a>
+        </div>
+        <button class="nav__toggle" id="navToggle" aria-label="فتح القائمة" aria-expanded="false" aria-controls="navLinks">
+            <svg width="24" height="24" aria-hidden="true"><use href="#i-menu"></use></svg>
+        </button>
     </div>
 </nav>
 
-<section class="hero">
-    <div class="hero-badge">🤖 مساعد التغذية والترطيب بالذكاء الاصطناعي</div>
-    <h1>ليس الماء فقط — كل ما يحتاجه جسمك.</h1>
-    <p>سجّل وجباتك بصوتك، والتقط صورة لحساب السعرات؛ ودع الذكاء الاصطناعي يحسب الماكروز والسعرات والترطيب في ثوانٍ مع مزامنة Apple Health — ٣ تحليلات يوميًا مجانًا.</p>
-    <div class="hero-btns">
-        <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" class="btn-store btn-ios" target="_blank" rel="noopener">
-            <i class="fab fa-apple" style="font-size:1.3rem;"></i>
-            <span><small style="display:block;font-size:10px;font-weight:500;opacity:.7;">تحميل من</small><span style="color:#1a1a2e;">App Store</span></span>
-        </a>
-        <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro" class="btn-store btn-android" target="_blank" rel="noopener">
-            <i class="fab fa-google-play" style="font-size:1.2rem;"></i>
-            <span><small style="display:block;font-size:10px;font-weight:500;opacity:.8;">احصل عليه من</small>Google Play</span>
-        </a>
-        <a href="premium-ar.html" class="btn-store" target="_self" rel="noopener" style="background:transparent;border:2px solid rgba(255,255,255,0.7);color:#fff;">
-            <i class="fas fa-crown" style="font-size:1.1rem;"></i>
-            <span><small style="display:block;font-size:10px;font-weight:500;opacity:.8;">اكتشف</small>مزايا Premium</span>
-        </a>
-    </div>
-    <div class="hero-rating">
-        <span class="stars">★★★★★</span>
-        <span>4.9 · 2,847 تقييم · مجاني</span>
-    </div>
-</section>
+<main id="main">
 
-<!-- لافتة عرض الإطلاق -->
-<section class="promo-banner" id="promo" aria-label="عرض الإطلاق">
-    <style>
-        .promo-banner{background:linear-gradient(135deg,#0f3a82 0%,#1565C0 50%,#00ACC1 100%);color:#fff;padding:48px 20px;position:relative;overflow:hidden}
-        .promo-banner::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 20% 0%,rgba(255,255,255,0.18) 0%,transparent 45%),radial-gradient(circle at 80% 100%,rgba(0,229,255,0.25) 0%,transparent 50%);pointer-events:none}
-        .promo-inner{position:relative;max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
-        .promo-tag{display:inline-block;background:rgba(255,255,255,0.18);padding:6px 14px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.5px;margin-bottom:14px}
-        .promo-title{font-size:clamp(1.5rem,3.4vw,2.2rem);font-weight:800;line-height:1.4;margin-bottom:14px}
-        .promo-title span{background:linear-gradient(90deg,#FFEB3B,#FFC107);-webkit-background-clip:text;background-clip:text;color:transparent}
-        .promo-desc{font-size:1rem;opacity:.94;margin-bottom:20px;max-width:520px;line-height:1.7}
-        .promo-perks{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
-        .promo-perk{background:rgba(255,255,255,0.14);padding:8px 14px;border-radius:10px;font-size:13px;font-weight:600}
-        .promo-cta{display:inline-flex;align-items:center;gap:10px;background:#fff;color:#0f3a82;padding:13px 26px;border-radius:50px;font-weight:800;text-decoration:none;font-size:0.98rem;box-shadow:0 8px 22px rgba(0,0,0,0.18)}
-        .promo-card{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.18);border-radius:20px;padding:26px;backdrop-filter:blur(8px)}
-        .promo-card h4{font-size:0.78rem;letter-spacing:1px;font-weight:700;opacity:.78;margin-bottom:8px}
-        .promo-price{display:flex;align-items:baseline;gap:14px;margin-bottom:6px;flex-wrap:wrap;direction:ltr;justify-content:flex-end}
-        .promo-price .now{font-size:2.6rem;font-weight:900;line-height:1}
-        .promo-price .before{font-size:1.1rem;text-decoration:line-through;opacity:.6}
-        .promo-price .save{background:#FFD600;color:#0f3a82;padding:3px 10px;border-radius:8px;font-size:0.78rem;font-weight:800}
-        .promo-period{font-size:0.92rem;opacity:.85;margin-bottom:16px}
-        .promo-currencies{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,0.18)}
-        .promo-cur{display:flex;justify-content:space-between;font-size:0.82rem;font-weight:600;background:rgba(255,255,255,0.06);padding:7px 11px;border-radius:8px}
-        .promo-cur span:first-child{opacity:.78}
-        .promo-note{font-size:0.74rem;opacity:.7;margin-top:14px;line-height:1.65}
-        .promo-plans{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,0.18)}
-        .promo-plan{display:flex;flex-direction:column;gap:2px;background:rgba(255,255,255,0.07);padding:9px 12px;border-radius:8px}
-        .promo-plan .pp-name{font-size:0.72rem;opacity:.8;font-weight:600}
-        .promo-plan .pp-price{font-size:1.05rem;font-weight:800;direction:ltr}
-        .promo-plan .pp-price small{font-size:0.7rem;font-weight:600;opacity:.8}
-        @media(max-width:780px){.promo-inner{grid-template-columns:1fr;gap:24px}}
-    </style>
-    <div class="promo-inner">
+<!-- HERO -->
+<section class="hero" data-cta="hero">
+    <div class="container hero__grid">
         <div>
-            <span class="promo-tag">🎉 عرض الإطلاق · لمدة محدودة</span>
-            <h2 class="promo-title">Suu أصبح الآن <span>مساعداً صحياً بالذكاء الاصطناعي</span><br>جرّب 3 أيام مجاناً، ثم خصم 50%</h2>
-            <p class="promo-desc">هدف ماء حسب النشاط، تتبع الكافيين والسكر، نقاط الترطيب، آبل ووتش، سيري والمزيد — جرّب جميع ميزات Premium مجاناً لمدة 3 أيام. <strong>بدون أي دفع مسبق.</strong> ألغِ في أي وقت.</p>
-            <div class="promo-perks">
-                <span class="promo-perk">✅ بلا بطاقة بنكية أثناء التجربة</span>
-                <span class="promo-perk">🔄 إلغاء في أي وقت</span>
-                <span class="promo-perk">📱 iOS + Android</span>
-            </div>
-            <a href="/app" class="promo-cta">ابدأ تجربة 3 أيام مجاناً <i class="fas fa-arrow-left"></i></a>
-        </div>
-        <div class="promo-card" aria-label="سعر Premium السنوي">
-            <h4>اشتراك Premium السنوي · سعر الإطلاق</h4>
-            <div class="promo-price">
-                <span class="save">خصم 50%</span>
-                <span class="before">$60</span>
-                <span class="now">$30</span>
-            </div>
-            <div class="promo-period">/ سنوياً · يجدّد تلقائياً بعد التجربة المجانية</div>
-            <div class="promo-plans">
-                <div class="promo-plan"><span class="pp-name">شهري</span><span class="pp-price">$3.99<small> / شهر</small></span></div>
-                <div class="promo-plan"><span class="pp-name">عائلي · حتى 3</span><span class="pp-price">$60<small> / سنة</small></span></div>
-            </div>
-            <div class="promo-currencies" id="promoCurrencies">
-                <div class="promo-cur"><span>SAR (الريال السعودي)</span><span>≈ 112 ر.س</span></div>
-                <div class="promo-cur"><span>AED (الدرهم الإماراتي)</span><span>≈ 112 د.إ</span></div>
-                <div class="promo-cur"><span>KWD (الدينار الكويتي)</span><span>≈ 9.2 د.ك</span></div>
-                <div class="promo-cur"><span>QAR (الريال القطري)</span><span>≈ 110 ر.ق</span></div>
-                <div class="promo-cur"><span>BHD (الدينار البحريني)</span><span>≈ 11.2 د.ب</span></div>
-                <div class="promo-cur"><span>OMR (الريال العماني)</span><span>≈ 11.4 ر.ع</span></div>
-                <div class="promo-cur"><span>JOD (الدينار الأردني)</span><span>≈ 21.2 د.أ</span></div>
-                <div class="promo-cur"><span>EGP (الجنيه المصري)</span><span>≈ 1500 ج.م</span></div>
-            </div>
-            <p class="promo-note">* تحويلات تقريبية (السعر السنوي) — تتم الفوترة الفعلية عبر App Store / Google Play بعملة متجرك المحلية. قد تتغيّر الأسعار بسبب تقلبات سعر الصرف.</p>
-        </div>
-    </div>
-</section>
-
-<!-- التغذية والترطيب بالذكاء الاصطناعي -->
-<section id="ai-nutrition" class="ai-nutrition" dir="rtl" aria-label="التغذية والترطيب بالذكاء الاصطناعي">
-    <style>
-        .ai-nutrition{padding:90px 20px;background:linear-gradient(180deg,#f7fbff 0%,#eef6ff 100%)}
-        .ai-inner{max-width:1140px;margin:0 auto}
-        .ai-head{text-align:center;max-width:760px;margin:0 auto 14px}
-        .ai-kicker{display:inline-block;background:#e3f0ff;color:#1565C0;font-size:12px;font-weight:800;letter-spacing:.6px;padding:6px 14px;border-radius:999px;margin-bottom:16px}
-        .ai-head h2{font-size:clamp(1.7rem,3.6vw,2.4rem);font-weight:800;color:#0f3a82;line-height:1.35;margin-bottom:14px}
-        .ai-head p{font-size:1.05rem;color:#4a5a72;line-height:1.9}
-        .ai-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:42px 0 56px}
-        .ai-step{background:#fff;border:1px solid #dceaff;border-radius:18px;padding:26px 22px;position:relative;box-shadow:0 6px 20px rgba(21,101,192,0.06)}
-        .ai-step .num{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#2563EB,#00ACC1);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
-        .ai-step h3{font-size:1.15rem;font-weight:700;color:#0f3a82;margin-bottom:8px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
-        .ai-step p{font-size:0.95rem;color:#52607a;line-height:1.8}
-        .ai-spotlights{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-        .ai-card{background:#fff;border:1px solid #e2ecfb;border-radius:20px;padding:30px 26px;transition:transform .18s ease,box-shadow .18s ease}
-        .ai-card:hover{transform:translateY(-6px);box-shadow:0 16px 36px rgba(21,101,192,0.12)}
-        .ai-card.premium{border:2px solid #FFC107;background:linear-gradient(180deg,#fffdf5,#fff)}
-        .ai-card .ai-icon{font-size:32px;margin-bottom:16px}
-        .ai-card h3{font-size:1.25rem;font-weight:700;color:#0f3a82;margin-bottom:10px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-        .ai-card p{font-size:0.97rem;color:#52607a;line-height:1.85}
-        .prem-badge{font-size:0.62rem;background:#FFD600;color:#5a4500;padding:3px 9px;border-radius:6px;font-weight:800;vertical-align:middle}
-        @media(max-width:880px){.ai-steps,.ai-spotlights{grid-template-columns:1fr}}
-    </style>
-    <div class="ai-inner">
-        <div class="ai-head">
-            <span class="ai-kicker">🤖 محرك التغذية بالذكاء الاصطناعي</span>
-            <h2>أدِر تغذيتك بصوتك — ودع Suu يتولّى الباقي</h2>
-            <p>لم يعد Suu مجرد متتبع للماء. سجّل وجباتك بصوتك، والتقط صورة لحساب السعرات؛ ودع الذكاء الاصطناعي يحسب الماكروز والسعرات والترطيب في ثوانٍ ويكتبها في Apple Health.</p>
-        </div>
-
-        <div class="ai-steps">
-            <div class="ai-step">
-                <div class="num">١</div>
-                <h3>🎙️ تحدّث</h3>
-                <p>قل «طبق شوربة عدس ونصف كوب عيران». يفصل Suu تلقائيًا بين الصلب والسائل — الشوربة للترطيب، والعدس للماكروز.</p>
-            </div>
-            <div class="ai-step">
-                <div class="num">٢</div>
-                <h3>📷 صوّر <span class="prem-badge">Premium</span></h3>
-                <p>التقط صورة لطبقك. يتعرّف الذكاء الاصطناعي على الطعام، ويقدّر الحصة، ويستخرج السعرات + الماكروز في ثوانٍ.</p>
-            </div>
-            <div class="ai-step">
-                <div class="num">٣</div>
-                <h3>📊 تتبّع</h3>
-                <p>تُكتب السعرات والبروتين والكربوهيدرات والدهون والصوديوم تلقائيًا في Apple Health / Health Connect. شاهد نقاط تغذيتك من ١ إلى ١٠٠ فورًا.</p>
-            </div>
-        </div>
-
-        <div class="ai-spotlights">
-            <div class="ai-card">
-                <div class="ai-icon">🎙️</div>
-                <h3>التسجيل الصوتي</h3>
-                <p>لست مضطرًا لكتابة وجبتك. تحدّث فقط — يحلّل الذكاء الاصطناعي كل طعام وشراب في جملتك <strong>ويفصل تلقائيًا بين الصلب والسائل</strong>. الشوربة للترطيب، والأرز للماكروز، بجملة واحدة.</p>
-            </div>
-            <div class="ai-card premium">
-                <div class="ai-icon">📷</div>
-                <h3>التحليل المصوّر <span class="prem-badge">Premium</span></h3>
-                <p>مستقبل تتبّع التغذية. التقط صورة لطبقك — يتعرّف Suu على الطعام، ويقدّر الحصة، ويستخرج السعرات + الماكروز. بلا دفاتر ولا بحث عن باركود — صورة واحدة تكفي.</p>
-            </div>
-            <div class="ai-card">
-                <div class="ai-icon">🔔</div>
-                <h3>الإشعارات الذكية</h3>
-                <p>مساعد ينصت إلى إيقاعك البيولوجي. بناءً على نقاط التغذية من ١ إلى ١٠٠ بعد كل وجبة، يقترح الماء في اللحظة المناسبة للهضم، ويذكّرك بأول رشفة صباحية ضد جفاف الليل. ليست منبهات ثابتة — بل تنبيهات ديناميكية تتبع إيقاعك.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section" id="features">
-    <div class="container">
-        <h2 class="section-title">أكثر من تتبع للماء — مساعد صحي متكامل</h2>
-        <p class="section-sub">هدف حسب النشاط البدني، تحليلات الكافيين والسكر، نقاط الترطيب، ومدرب AI. Suu يتكيّف مع أسلوب حياتك — سواء كنت رياضياً، موظفاً، أو تبدأ رحلة الترطيب للتو.</p>
-        <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#e3f2fd;color:#1565C0;">🎯</div>
-                <h3>هدف يومي شخصي</h3>
-                <p>حدّد هدفك بناءً على وزنك ومستوى نشاطك والمناخ. يتعلّم Suu ويتكيّف مع تغيّرات نمط حياتك.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#e8f5e9;color:#2E7D32;">🔔</div>
-                <h3>إشعارات ذكية بنسب الهدف</h3>
-                <p>إشعارات مبنية على تقدمك الفعلي: "أنت عند 32% من هدفك — حان وقت الشرب!" لا مؤقت ثابت. تذكيرات أقل وأذكى وأكثر فاعلية.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#fff3e0;color:#E65100;">🏆</div>
-                <h3>إضافة أصدقاء ودوري أسبوعي</h3>
-                <p>أضف أصدقاء عبر اسم المستخدم أو رمز QR. تابع تقدمهم وأهدافهم اليومية. أنشئ دوري أسبوعي حتى 4 أصدقاء — يعمل على iOS و Android معاً. أرسل إشعار "لنشرب معاً". لا يوجد تطبيق منافس يمتلك هذه الميزة.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#fce4ec;color:#880E4F;">☕</div>
-                <h3>91 مشروب + ستاربكس وسلاسل القهوة</h3>
-                <p>قهوة، شاي، عصير، مشروبات غازية — لكل منها معامل جفاف علمي. ستاربكس وسلاسل القهوة الشهيرة في قسم خاص: اختر مشروبك، سجّله، واعرف كمية الماء الإضافية فوراً. معلومات الكافيين والسكر مضمّنة.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#fce4ec;color:#880E4F;">🤰</div>
-                <h3>وضع الحمل والرضاعة</h3>
-                <p>+300 مل تُضاف تلقائياً خلال الحمل، +700 مل خلال الرضاعة. حساب مرحلي حسب الثلاثيات، أهداف يومية خاصة بصحة الأم. التطبيق الوحيد الذي يمتلك هذه الميزة.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#f3e5f5;color:#4A148C;">📊</div>
-                <h3>تقارير PDF و CSV مفصّلة</h3>
-                <p>نقاط ترطيب يومية، اتجاهات أسبوعية، وتقارير مفصّلة قابلة للتصدير بصيغة PDF أو CSV. شاركها مع طبيبك أو أخصائي التغذية.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#e0f2f1;color:#004D40;">⌚</div>
-                <h3>iOS Dynamic Island وودجات</h3>
-                <p>تتبّع تقدمك من شاشة القفل أو Dynamic Island — سجّل مشروباً دون فتح هاتفك.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#e1f5fe;color:#01579B;">🏃</div>
-                <h3>هدف تلقائي حسب النشاط البدني <span style="font-size:0.65rem;background:#FFD600;color:#0f3a82;padding:2px 8px;border-radius:6px;margin-right:6px;font-weight:800;">جديد</span></h3>
-                <p>المشي، الجري، السباحة، ركوب الدراجة، اللياقة — يقرأ Suu نشاطاتك من Apple Health و Google Fit ويزيد هدف الماء اليومي تلقائياً حسب نوع التمرين ومدّته وشدته. ~+400 مل بعد جري 30 دقيقة، ~+600 مل بعد سباحة لساعة. تعديلات حقيقية مبنية على العلم.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#fff3e0;color:#BF360C;">🧪</div>
-                <h3>تتبع الكافيين والسكر <span style="font-size:0.65rem;background:#FFD600;color:#0f3a82;padding:2px 8px;border-radius:6px;margin-right:6px;font-weight:800;">جديد</span></h3>
-                <p>لا يتتبع Suu الماء فقط — بل يحسب أيضاً كمية الكافيين (مغ) والسكر (غ) في كل مشروب تسجّله. تنبيهات ذكية عند الاقتراب من حد الكافيين اليومي (FDA: 400 مغ) أو حد السكر اليومي (WHO: 25 غ سكر مضاف). مثلاً ستاربكس لاتيه: ~150 مغ كافيين + ~14 غ سكر. لوحة صحية متكاملة.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#ede7f6;color:#311B92;">🤖</div>
-                <h3>مساعد صحي بالذكاء الاصطناعي <span style="font-size:0.65rem;background:#FFD600;color:#0f3a82;padding:2px 8px;border-radius:6px;margin-right:6px;font-weight:800;">جديد</span></h3>
-                <p>Suu لم يعد مجرد تطبيق ماء: مدرب ترطيب شخصي، اقتراحات مرتبطة بالنشاط، تحليلات المشروبات، وتنبيهات الكافيين/السكر — مساعد صحي متكامل في جيبك. رسائل سياقية كل ساعة وتقارير شخصية أسبوعية.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#e0f7fa;color:#006064;">💬</div>
-                <h3>مساعد الدردشة بالذكاء الاصطناعي <span style="font-size:0.65rem;background:#FFD600;color:#0f3a82;padding:2px 8px;border-radius:6px;margin-right:6px;font-weight:800;">جديد</span></h3>
-                <p>أصبح مساعد Suu داخل التطبيق يتحدث الآن بذكاء اصطناعي حقيقي — لا يجيب عن أسئلتك فحسب، بل ينفّذ المهام نيابةً عنك. قل «أضِف كوبين من الماء» فيسجّلهما فوراً، واسأل «كم شربت اليوم؟» فيلخّص إحصاءاتك. يوجّهك إلى الشاشة المناسبة (الإحصاءات، الهدف، المشروبات)، ويضبط التذكيرات، ويقدّم إرشاداً شخصياً بناءً على ملفك الشخصي، ويقرّبك خطوة بخطوة من هدفك اليومي. تحدّث بلغة طبيعية، ودع Suu يتولّى الباقي.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon" style="background:#e8f5e9;color:#1B5E20;">💱</div>
-                <h3>تسعير بعدة عملات <span style="font-size:0.65rem;background:#FFD600;color:#0f3a82;padding:2px 8px;border-radius:6px;margin-right:6px;font-weight:800;">جديد</span></h3>
-                <p>الريال السعودي، الدرهم الإماراتي، الدينار الكويتي، الريال القطري، الدينار البحريني، الريال العُماني، الدينار الأردني، الجنيه المصري، الليرة التركية، الدولار الأمريكي واليورو — اعرض سعر Premium بعملتك المحلية. سعر الإطلاق: 30$ / ≈112 ر.س / ≈9.2 د.ك / السنة.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section screenshots-section">
-    <div class="container">
-        <h2 class="section-title">تصميم جميل وسهل الاستخدام</h2>
-        <p class="section-sub">واجهة نظيفة تركّز على شيء واحد: مساعدتك على شرب ماء أكثر بسهولة.</p>
-        <div class="screenshots-row">
-          <div class="screenshots-track">
-            <div class="screenshot-wrap"><img fetchpriority="high" src="assets/screenshots/ana-ekran-ar.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/ana-ekran.webp'" alt="الوضع المتقدم - الشاشة الرئيسية"></div>
-            <div class="screenshot-wrap"><img loading="lazy" src="assets/screenshots/basit-ekran-ar.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/basit-ekran.webp'" alt="الوضع البسيط - الشاشة الرئيسية"></div>
-            <div class="screenshot-wrap"><img loading="lazy" src="assets/screenshots/istatikler-ar.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/istatikler.webp'" alt="الإحصائيات"></div>
-            <div class="screenshot-wrap"><img loading="lazy" src="assets/screenshots/asistan-ar.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/su-ekleme.webp'" alt="مساعد الذكاء الاصطناعي"></div>
-            <div class="screenshot-wrap"><img loading="lazy" src="assets/screenshots/gun-challenge-ar.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/hedefler.webp'" alt="تحدي 7 أيام"></div>
-            <div class="screenshot-wrap"><img loading="lazy" src="assets/screenshots/hatirlama-ar.webp" width="600" height="1300" onerror="this.onerror=null;this.src='assets/screenshots/hatirlama.webp'" alt="التذكيرات"></div>
-          </div>
-        </div>
-    </div>
-</section>
-
-<section class="section" id="stats">
-    <div class="container">
-        <h2 class="section-title">يثق به الآلاف</h2>
-        <p class="section-sub">يتتبع مستخدمو Suu حول العالم ملايين الأكواب يومياً.</p>
-        <div class="stats-row">
-            <div class="stat-card">
-                <div class="stat-num">4.9★</div>
-                <div class="stat-label">تقييم App Store</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-num">5.0★</div>
-                <div class="stat-label">تقييم Google Play</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-num">2,847+</div>
-                <div class="stat-label">تقييمات المستخدمين</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-num">100+</div>
-                <div class="stat-label">مشروب في القاعدة</div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container">
-        <h2 class="section-title">تعلّم عن الترطيب</h2>
-        <p class="section-sub">مقالات مبنية على العلم لمساعدتك على فهم أهمية البقاء رطّباً.</p>
-        <div class="blog-grid">
-            <a href="blog/ar/almae-walnashat-aljasadi.html" class="blog-card">
-                <div class="tag" style="color:#FF6B35;">⚡ جديد</div>
-                <h4>تتبع الماء حسب النشاط البدني — المشي، الجري، السباحة</h4>
-            </a>
-            <a href="blog/ar/alkafayin-walsukar.html" class="blog-card">
-                <div class="tag" style="color:#FF6B35;">⚡ جديد</div>
-                <h4>تتبع الكافيين والسكر — ابقَ ضمن حدودك اليومية</h4>
-            </a>
-            <a href="blog/ar/arriyada-waltartib.html" class="blog-card">
-                <div class="tag">الرياضة</div>
-                <h4>الترطيب والتمارين الرياضية — الدليل الكامل</h4>
-            </a>
-            <a href="blog/ar/alamat-aljafaf.html" class="blog-card">
-                <div class="tag">الصحة</div>
-                <h4>علامات الجفاف التي يجب ألا تتجاهلها</h4>
-            </a>
-            <a href="blog/ar/fawaid-shurb-almae.html" class="blog-card">
-                <div class="tag">الصحة</div>
-                <h4>10 فوائد علمية لشرب الماء يومياً</h4>
-            </a>
-            <a href="blog/ar/kam-litr-mae-yawmiyan.html" class="blog-card">
-                <div class="tag">دليل الترطيب</div>
-                <h4>كم لتراً من الماء يجب أن تشرب يومياً؟</h4>
-            </a>
-            <a href="blog/ar/adat-shurb-almae.html" class="blog-card">
-                <div class="tag">العادات</div>
-                <h4>7 طرق علمية لتكوين عادة شرب الماء</h4>
-            </a>
-            <a href="blog/ar/afdal-tatbiq-mae.html" class="blog-card">
-                <div class="tag">مقارنة التطبيقات</div>
-                <h4>أفضل تطبيق لتتبع شرب الماء 2026</h4>
-            </a>
-        </div>
-        <p style="text-align:center;margin-top:28px;"><a href="blog-ar.html" style="color:#4A90D9;font-weight:600;text-decoration:none;">عرض جميع المقالات ←</a></p>
-    </div>
-</section>
-
-<section class="cta-section">
-    <div class="container">
-        <h2>هل أنت مستعد لشرب ماء أكثر؟</h2>
-        <p>انضم لآلاف المستخدمين الذين يتتبعون كميتهم اليومية من الماء مع Suu — مجاناً، بلا إعلانات، بلا اشتراك.</p>
-        <div class="hero-btns">
-            <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" class="btn-store btn-ios" target="_blank" rel="noopener">
-                <i class="fab fa-apple" style="font-size:1.3rem;color:#1a1a2e;"></i>
-                <span style="color:#1a1a2e;"><small style="display:block;font-size:10px;font-weight:500;opacity:.6;">تحميل من</small>App Store</span>
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro" class="btn-store btn-android" target="_blank" rel="noopener">
-                <i class="fab fa-google-play" style="font-size:1.2rem;"></i>
-                <span><small style="display:block;font-size:10px;font-weight:500;opacity:.8;">احصل عليه من</small>Google Play</span>
-            </a>
-        </div>
-    </div>
-</section>
-
-<footer>
-    <p style="margin-bottom:10px;line-height:2;">
-        <a href="ozellikler-ar.html">المميزات</a> &nbsp;·&nbsp;
-        <a href="premium-ar.html">Premium</a> &nbsp;·&nbsp;
-        <a href="download-ar.html">تحميل</a> &nbsp;·&nbsp;
-        <a href="water-calculator-ar.html">حاسبة الماء</a> &nbsp;·&nbsp;
-        <a href="adaptive-hydration-brain-ar.html">الدماغ التكيّفي</a> &nbsp;·&nbsp;
-        <a href="suu-index-ar.html">مؤشر Suu</a> &nbsp;·&nbsp;
-        <a href="personal-hydration-plan-ar.html">خطة الترطيب</a> &nbsp;·&nbsp;
-        <a href="who-is-suu-for-ar.html">لمن Suu</a> &nbsp;·&nbsp;
-        <a href="faq-ar.html">الأسئلة الشائعة</a> &nbsp;·&nbsp;
-        <a href="hakkimizda-ar.html">حولنا</a> &nbsp;·&nbsp;
-        <a href="blog-ar.html">المدونة</a>
-    </p>
-    <p>© 2026 Suu - سعرات وتتبع الماء &nbsp;|&nbsp;
-        <a href="/">🇹🇷 Türkçe</a> &nbsp;
-        <a href="hosgeldiniz-en.html">🇬🇧 English</a> &nbsp;|&nbsp;
-        <a href="gizlilik-politikasi.html">سياسة الخصوصية</a> &nbsp;
-        <a href="kullanim-sartlari.html">شروط الاستخدام</a>
-    </p>
-    <p style="margin-top:6px; font-size:11px; opacity:0.7;">تطوير <a href="https://www.linkedin.com/in/furkanfindikli/" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.8);">Furkan Mert Fındıklı</a> — إسطنبول، تركيا</p>
-</footer>
-
-<!-- Sticky Mobile Download Bar -->
-<div class="sticky-download-bar" id="stickyDownloadBar">
-    <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" class="sticky-btn sticky-btn-apple" target="_blank" rel="noopener">
-        <i class="fab fa-apple"></i> App Store
+            <span class="eyebrow">الماء · السعرات · التمارين</span>
+            <h1 class="hero__title">الماء والسعرات والتمارين — <span class="accent">في تطبيق واحد</span></h1>
+            <p class="hero__lead">صوّر وجبتك لتعرف سعراتها وماكروزها خلال ثوانٍ. تابِع ترطيبك الحقيقي عبر 91 مشروبًا، وسجّل نحو 50 نشاطًا رياضيًا — ودع كل تمرين يحدّث هدفك اليومي من الماء تلقائيًا.</p>
+            
+<div class="btn-row">
+    <a href="/app?src=hero" class="btn-store" aria-label="التنزيل من App Store">
+        <span class="btn-store__icon"><svg width="22" height="22" aria-hidden="true"><use href="#i-apple"></use></svg></span>
+        <span class="btn-store__label">
+            <span class="btn-store__small">نزّله من</span>
+            <span class="btn-store__big">App Store</span>
+        </span>
     </a>
-    <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro" class="sticky-btn sticky-btn-google" target="_blank" rel="noopener">
-        <i class="fab fa-google-play"></i> Google Play
+    <a href="/app?src=hero" class="btn-store" aria-label="التنزيل من Google Play">
+        <span class="btn-store__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24">
+                <path fill="#00D2FF" d="M3.6 1.8A1.5 1.5 0 0 0 3 3v18c0 .5.2.9.6 1.2l.1.1 10.1-10.1v-.3L3.7 1.7l-.1.1z"/>
+                <path fill="#FFCE00" d="M17.2 15.6l-3.4-3.4v-.3l3.4-3.4.1.1 4 2.3c1.2.6 1.2 1.7 0 2.4l-4 2.3z"/>
+                <path fill="#FF3A44" d="M17.3 15.5 13.8 12 3.6 22.2c.4.4 1 .5 1.8.1l11.9-6.8"/>
+                <path fill="#00E676" d="M17.3 8.5 5.4 1.7c-.8-.4-1.4-.4-1.8.1L13.8 12l3.5-3.5z"/>
+            </svg>
+        </span>
+        <span class="btn-store__label">
+            <span class="btn-store__small">نزّله من</span>
+            <span class="btn-store__big">Google Play</span>
+        </span>
     </a>
 </div>
+            <p class="small text-subtle" style="margin-block-start:var(--sp-4)">التنزيل مجاني · Premium <strong>مجانًا 3 أيام</strong></p>
+            <div class="trust-row">
+                <span class="trust-row__item">
+                    <span class="trust-row__stars" aria-hidden="true">★★★★★</span>
+                    <span>4.9 على Google Play · 5.0 على App Store</span>
+                </span>
+                <span class="trust-row__item">أكثر من 2800 تقييم</span>
+                <span class="trust-row__item">Apple Health و Health Connect</span>
+                <span class="trust-row__item">7 لغات</span>
+            </div>
+        </div>
+        <div class="hero__media">
+            <div class="phone phone--lg">
+                <img src="/assets/screenshots/ios/ar/ana-ekran.webp"
+                     data-screen="ana-ekran" data-platform="ios"
+                     width="585" height="1266" fetchpriority="high"
+                     alt="الشاشة الرئيسية في Suu: ملخّص الماء والسعرات والتمارين اليومي">
+            </div>
+        </div>
+    </div>
+</section>
 
-<script src="lang-switcher.js?v=2" defer></script>
-<link rel="stylesheet" href="donation-widget.css?v=2">
-<script src="donation-widget.js?v=2" defer></script>
+<!-- ÜÇ SÜTUN -->
+<section class="section section--subtle" id="pillars">
+    <div class="container">
+        <div class="section-head">
+            <h2>ليست ثلاثة تطبيقات منفصلة، بل نظام واحد يغذّي بعضه بعضًا</h2>
+            <p>معظم التطبيقات تضع الماء والسعرات والتمارين في تبويبات منفصلة. في Suu يحدّث كلٌّ منها الآخر.</p>
+        </div>
+        <div class="pillars">
+            <article class="pillar pillar--water">
+                <span class="pillar__icon"><svg width="26" height="26" aria-hidden="true"><use href="#i-water"></use></svg></span>
+                <h3>تتبع الماء</h3>
+                <p><strong>91 مشروبًا</strong> — قهوة وشاي وصودا وعصير وحليب ومشروبات طاقة. تُحسب مساهمة كلٍّ منها الحقيقية في توازن السوائل لديك.</p>
+                <p style="margin-block-start:var(--sp-3)"><a href="#su-hedefi">كيف يعمل هدف الماء الذكي <span class="arrow" aria-hidden="true">→</span></a></p>
+            </article>
+            <article class="pillar pillar--calories">
+                <span class="pillar__icon"><svg width="26" height="26" aria-hidden="true"><use href="#i-flame"></use></svg></span>
+                <h3>السعرات والتغذية</h3>
+                <p><strong>صوّر وجبتك</strong> — ودع Suu AI يستخرج السعرات والبروتين والكربوهيدرات والدهون ويبني ماكروزك تلقائيًا.</p>
+                <p style="margin-block-start:var(--sp-3)"><a href="#kalori">تحليل السعرات بالصورة <span class="arrow" aria-hidden="true">→</span></a></p>
+            </article>
+            <article class="pillar pillar--exercise">
+                <span class="pillar__icon"><svg width="26" height="26" aria-hidden="true"><use href="#i-run"></use></svg></span>
+                <h3>تتبع التمارين</h3>
+                <p><strong>نحو 50 نشاطًا رياضيًا</strong> — جري ومشي ودراجة وسباحة ولياقة. كل تمرين يرفع هدف الماء تلقائيًا.</p>
+                <p style="margin-block-start:var(--sp-3)"><a href="#egzersiz">مؤشرات التمارين <span class="arrow" aria-hidden="true">→</span></a></p>
+            </article>
+        </div>
+        <div class="answer-box" style="margin-block-start:var(--sp-10)">
+            <p><strong>الإجابة المختصرة:</strong> ‏Suu تطبيق صحي يجمع تتبع الماء وتحليل السعرات بالصورة وتتبع التمارين في تطبيق واحد. ما يميّزه أن الثلاثة مترابطة: الجري الذي تسجّله يرفع هدفك اليومي من الماء، ومحتوى وجبتك من البروتين والصوديوم يحدّد الماء الإضافي اللازم للهضم، وتُحتسب المساهمة الحقيقية للقهوة في ترطيبك. مجاني على iOS وAndroid ومتاح بسبع لغات.</p>
+        </div>
+    </div>
+</section>
+
+<!-- KALORİ -->
+<section class="section" id="kalori" data-cta="kalori">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">السعرات والتغذية</span>
+            <h2>لست بحاجة إلى وزن طبقك لحساب السعرات</h2>
+            <p>التقط الصورة — ودع Suu AI يتكفّل بالباقي.</p>
+        </div>
+        <div class="cards">
+            <article class="card">
+                <div class="card__icon" style="color:var(--pillar-calories)"><svg width="30" height="30" aria-hidden="true"><use href="#i-camera"></use></svg></div>
+                <h3>التحليل بالصورة</h3>
+                <p>صوّر وجبتك لتُستخرج السعرات والبروتين والكربوهيدرات والدهون وتُبنى ماكروزك تلقائيًا. لا تُحفظ صورتك بشكل دائم.</p>
+            </article>
+            <article class="card">
+                <div class="card__icon" style="color:var(--pillar-calories)">🎙️</div>
+                <h3>إدخال صوتي أو كتابي</h3>
+                <p>«سلطة دجاج وكوب لبن على الغداء» — قلها وتُسجَّل خلال ثوانٍ. يُحوَّل الصوت إلى نص على جهازك ولا يُرسل إلى الخادم.</p>
+            </article>
+            <article class="card">
+                <div class="card__icon" style="color:var(--pillar-calories)">📊</div>
+                <h3>الماكروز ودرجة التغذية</h3>
+                <p>تتبع يومي للسعرات والبروتين والكربوهيدرات والدهون. ودرجة تغذية من 1 إلى 100 تُظهر توازن يومك بنظرة واحدة.</p>
+            </article>
+        </div>
+        <div class="callout" style="margin-block-start:var(--sp-8)">
+            <p><strong>في الخطة المجانية</strong> لديك 3 تحليلات ذكية يوميًا. التحليل بالصورة والاستخدام غير المحدود ضمن Premium — <a href="#fiyat">قابل للتجربة مجانًا 3 أيام</a>.</p>
+        </div>
+    </div>
+</section>
+
+<!-- SUU AI -->
+<section class="section section--subtle" id="suu-ai">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Suu AI</span>
+            <h2>أدِر التطبيق بالمحادثة</h2>
+            <p>بدل التنقل بين القوائم، قل ما تريد ببساطة.</p>
+        </div>
+        <div class="cards">
+            <article class="card">
+                <div class="card__icon" style="color:var(--pillar-water)"><svg width="30" height="30" aria-hidden="true"><use href="#i-chat"></use></svg></div>
+                <h3>«أضف كوبين من الماء»</h3>
+                <p>تسجيل الماء والمشروبات، وإنشاء الوجبات، وإضافة التمارين — كلها عبر المحادثة.</p>
+            </article>
+            <article class="card">
+                <div class="card__icon" style="color:var(--pillar-water)">🧠</div>
+                <h3>«حلّل تغذيتي اليوم»</h3>
+                <p>يفسّر توازن الماكروز لليوم ويشير إلى ما ينقصك.</p>
+            </article>
+            <article class="card">
+                <div class="card__icon" style="color:var(--pillar-water)">⚙️</div>
+                <h3>«حدّث هدف الماء»</h3>
+                <p>يمكن ضبط الأهداف والتذكيرات الذكية من المحادثة أيضًا.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- EGZERSİZ -->
+<section class="section" id="egzersiz">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">تتبع التمارين</span>
+            <h2>نحو 50 نشاطًا رياضيًا — وكلها مرتبطة بهدف الماء</h2>
+            <p>جري ومشي ودراجة ولياقة وسباحة ومشي جبلي وكارديو وأكثر.</p>
+        </div>
+        <div class="cards">
+            <article class="card">
+                <div class="card__icon" style="color:var(--pillar-exercise)"><svg width="30" height="30" aria-hidden="true"><use href="#i-run"></use></svg></div>
+                <h3>الجري والمشي</h3>
+                <p>كل التفاصيل في شاشة واحدة بعد التمرين.</p>
+                <div class="metrics">
+                    <span class="metric"><span class="metric__label">المسافة</span></span>
+                    <span class="metric"><span class="metric__label">المدة</span></span>
+                    <span class="metric"><span class="metric__label">الإيقاع</span></span>
+                    <span class="metric"><span class="metric__label">متوسط السرعة</span></span>
+                    <span class="metric"><span class="metric__label">السعرات المحروقة</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__icon" style="color:var(--pillar-exercise)">🚴</div>
+                <h3>الدراجة</h3>
+                <p>إحصاءات مفصّلة تشمل تضاريس المسار.</p>
+                <div class="metrics">
+                    <span class="metric"><span class="metric__label">السرعة</span></span>
+                    <span class="metric"><span class="metric__label">متوسط السرعة</span></span>
+                    <span class="metric"><span class="metric__label">المسافة</span></span>
+                    <span class="metric"><span class="metric__label">الارتفاع</span></span>
+                    <span class="metric"><span class="metric__label">المدة</span></span>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__icon" style="color:var(--pillar-exercise)">💧</div>
+                <h3>التمرين ← هدف الماء</h3>
+                <p>يُقدَّر السائل المفقود بالعرق ويرتفع هدفك اليومي من الماء تلقائيًا. لا حاجة لتعديل يدوي بعد انتهاء التمرين.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- SU HEDEFİ + HESAPLAYICI -->
+<section class="section section--subtle" id="su-hedefi">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">تتبع الماء</span>
+            <h2>ليس رقمًا ثابتًا — بل هدفًا يتغيّر خلال اليوم</h2>
+            <p>«لترّان يوميًا» ليست صحيحة للجميع. يحسب Suu هدفك من خمس إشارات منفصلة.</p>
+        </div>
+        <div class="cards" style="margin-block-end:var(--sp-10)">
+            <article class="card">
+                <h3>العمر والوزن والنشاط</h3>
+                <p>يُحسب الهدف الأساسي من ملفك الشخصي.</p>
+            </article>
+            <article class="card">
+                <h3>درجة حرارة الجو</h3>
+                <p>في الأيام الحارة يرتفع الهدف تلقائيًا.</p>
+            </article>
+            <article class="card">
+                <h3>التمارين</h3>
+                <p>كل تمرين تسجّله يضيف حاجة إضافية من السوائل.</p>
+            </article>
+            <article class="card">
+                <h3>ما تأكله</h3>
+                <p>يحدّد البروتين والصوديوم في وجبتك الماء الإضافي اللازم للهضم.</p>
+            </article>
+            <article class="card">
+                <h3>91 مشروبًا</h3>
+                <p>تُحسب مساهمة القهوة والشاي واللبن في توازن سوائلك كلٌّ على حدة.</p>
+            </article>
+            <article class="card">
+                <h3>مؤشر Suu</h3>
+                <p>درجة ترطيبك من 0 إلى 100 تتحدّث مباشرةً خلال اليوم. <a href="suu-index-ar.html">كيف تُحسب →</a></p>
+            </article>
+        </div>
+
+        <div class="card" style="max-width:44rem;margin-inline:auto">
+            <h3>احسب حاجتك اليومية من الماء</h3>
+            <p class="small">تقدير مبدئي. في التطبيق يتحدّث الهدف أيضًا حسب الطقس والتمارين وما تأكله.</p>
+            <form data-water-calc style="margin-block-start:var(--sp-5)">
+                <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(9rem,1fr));gap:var(--sp-4)">
+                    <label style="display:block">
+                        <span class="small" style="display:block;margin-block-end:var(--sp-2);font-weight:600">العمر</span>
+                        <input type="number" name="age" min="10" max="110" required placeholder="28"
+                               style="width:100%;min-height:46px;padding:0 var(--sp-3);border:1px solid var(--border);border-radius:var(--r-md);background:var(--bg);color:var(--text);font:inherit">
+                    </label>
+                    <label style="display:block">
+                        <span class="small" style="display:block;margin-block-end:var(--sp-2);font-weight:600">الوزن (كغ)</span>
+                        <input type="number" name="weight" min="25" max="300" required placeholder="72"
+                               style="width:100%;min-height:46px;padding:0 var(--sp-3);border:1px solid var(--border);border-radius:var(--r-md);background:var(--bg);color:var(--text);font:inherit">
+                    </label>
+                    <label style="display:block">
+                        <span class="small" style="display:block;margin-block-end:var(--sp-2);font-weight:600">الجنس</span>
+                        <select name="gender" style="width:100%;min-height:46px;padding:0 var(--sp-3);border:1px solid var(--border);border-radius:var(--r-md);background:var(--bg);color:var(--text);font:inherit">
+                            <option value="female">أنثى</option>
+                            <option value="male">ذكر</option>
+                        </select>
+                    </label>
+                    <label style="display:block">
+                        <span class="small" style="display:block;margin-block-end:var(--sp-2);font-weight:600">النشاط</span>
+                        <select name="activity" style="width:100%;min-height:46px;padding:0 var(--sp-3);border:1px solid var(--border);border-radius:var(--r-md);background:var(--bg);color:var(--text);font:inherit">
+                            <option value="sedentary">قليل الحركة</option>
+                            <option value="light">نشاط خفيف</option>
+                            <option value="moderate" selected>نشاط متوسط</option>
+                            <option value="active">نشِط</option>
+                            <option value="extra">نشِط جدًا</option>
+                        </select>
+                    </label>
+                </div>
+                <button type="submit" class="btn btn--primary btn--block" style="margin-block-start:var(--sp-5)">احسب</button>
+                <div data-calc-result hidden style="margin-block-start:var(--sp-6);padding:var(--sp-5);border-radius:var(--r-md);background:var(--pillar-water-soft);text-align:center">
+                    <p style="margin:0;font-size:var(--fs-2xl);font-weight:800;color:var(--text)"><span data-calc-liters>—</span> لتر</p>
+                    <p class="small" style="margin-block-start:var(--sp-2)">نحو <span data-calc-cups>—</span> كوب (250 مل)</p>
+                    <a href="/app?src=calculator" class="btn btn--primary" style="margin-block-start:var(--sp-4)">ابدأ التتبع مع Suu</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- EKRAN GÖRÜNTÜLERİ -->
+<section class="section" id="ekranlar">
+    <div class="container">
+        <div class="section-head">
+            <h2>اكتشف التطبيق</h2>
+            <p>لقطات حقيقية من التطبيق — مرّر لرؤيتها كلها.</p>
+        </div>
+        <div class="shots" data-shots>
+            <div style="display:flex;justify-content:center">
+                <div class="shots__tabs" role="tablist" aria-label="اختيار المنصة">
+                    <button class="shots__tab" role="tab" id="tab-ios" aria-controls="shots-ios" aria-selected="true" data-platform="ios">
+                        <svg width="16" height="16" aria-hidden="true"><use href="#i-apple"></use></svg> iOS
+                    </button>
+                    <button class="shots__tab" role="tab" id="tab-android" aria-controls="shots-android" aria-selected="false" data-platform="android">Android</button>
+                </div>
+            </div>
+            <div class="shots__panel" id="shots-ios" role="tabpanel" aria-labelledby="tab-ios">
+                <div class="shots__strip">
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/ios/ar/ana-ekran.webp" data-screen="ana-ekran" data-platform="ios" loading="lazy" width="585" height="1266" alt="iOS — الشاشة الرئيسية"></div>
+                        <figcaption>الشاشة الرئيسية</figcaption>
+                    </figure>
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/ios/ar/kalori-foto-analiz.webp" data-screen="kalori-foto-analiz" data-platform="ios" loading="lazy" width="585" height="1266" alt="iOS — السعرات بالصورة"></div>
+                        <figcaption>السعرات بالصورة</figcaption>
+                    </figure>
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/ios/ar/makro-detay.webp" data-screen="makro-detay" data-platform="ios" loading="lazy" width="585" height="1266" alt="iOS — تفصيل الماكروز"></div>
+                        <figcaption>تفصيل الماكروز</figcaption>
+                    </figure>
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/ios/ar/suu-ai-sohbet.webp" data-screen="suu-ai-sohbet" data-platform="ios" loading="lazy" width="585" height="1266" alt="iOS — Suu AI"></div>
+                        <figcaption>Suu AI</figcaption>
+                    </figure>
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/ios/ar/kosu-detay.webp" data-screen="kosu-detay" data-platform="ios" loading="lazy" width="585" height="1266" alt="iOS — تفاصيل الجري"></div>
+                        <figcaption>تفاصيل الجري</figcaption>
+                    </figure>
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/ios/ar/istatistik.webp" data-screen="istatistik" data-platform="ios" loading="lazy" width="585" height="1266" alt="iOS — الإحصاءات"></div>
+                        <figcaption>الإحصاءات</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="shots__panel" id="shots-android" role="tabpanel" aria-labelledby="tab-android" hidden>
+                <div class="shots__strip">
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/android/ar/ana-ekran.webp" data-screen="ana-ekran" data-platform="android" loading="lazy" width="585" height="1266" alt="Android — الشاشة الرئيسية"></div>
+                        <figcaption>الشاشة الرئيسية</figcaption>
+                    </figure>
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/android/ar/kalori-foto-analiz.webp" data-screen="kalori-foto-analiz" data-platform="android" loading="lazy" width="585" height="1266" alt="Android — السعرات بالصورة"></div>
+                        <figcaption>السعرات بالصورة</figcaption>
+                    </figure>
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/android/ar/makro-detay.webp" data-screen="makro-detay" data-platform="android" loading="lazy" width="585" height="1266" alt="Android — تفصيل الماكروز"></div>
+                        <figcaption>تفصيل الماكروز</figcaption>
+                    </figure>
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/android/ar/suu-ai-sohbet.webp" data-screen="suu-ai-sohbet" data-platform="android" loading="lazy" width="585" height="1266" alt="Android — Suu AI"></div>
+                        <figcaption>Suu AI</figcaption>
+                    </figure>
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/android/ar/kosu-detay.webp" data-screen="kosu-detay" data-platform="android" loading="lazy" width="585" height="1266" alt="Android — تفاصيل الجري"></div>
+                        <figcaption>تفاصيل الجري</figcaption>
+                    </figure>
+                    <figure class="shots__item">
+                        <div class="phone"><img src="/assets/screenshots/android/ar/istatistik.webp" data-screen="istatistik" data-platform="android" loading="lazy" width="585" height="1266" alt="Android — الإحصاءات"></div>
+                        <figcaption>الإحصاءات</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- OYUNLAŞTIRMA -->
+<section class="section section--subtle" id="sosyal">
+    <div class="container">
+        <div class="section-head"><h2>بناء العادة وحدك أمر صعب</h2></div>
+        <div class="cards">
+            <article class="card">
+                <div class="card__icon">🐾</div>
+                <h3>حيوان أليف افتراضي</h3>
+                <p>ينمو كلما أكملت أهدافك اليومية ويمنحك مكافآت.</p>
+            </article>
+            <article class="card">
+                <div class="card__icon">🏆</div>
+                <h3>دوريات الأصدقاء</h3>
+                <p>أسبوعية، حتى 4 أشخاص. تعمل بين iOS وAndroid معًا.</p>
+            </article>
+            <article class="card">
+                <div class="card__icon">📱</div>
+                <h3>مشاركة القصص</h3>
+                <p>شارك شربك للماء ومشيك وجريك وإنجازاتك بقوالب قصص عصرية.</p>
+            </article>
+            <article class="card">
+                <div class="card__icon">💙</div>
+                <h3>برنامج التبرع 2%</h3>
+                <p>يذهب 2% من إيرادات Premium إلى آبار مياه نظيفة في أفريقيا. <a href="blog/ar/barnamaj-tabarru-abar-almae-afriqia.html">تقرير شفاف →</a></p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- PLATFORM MATRİSİ -->
+<section class="section" id="platform">
+    <div class="container">
+        <div class="section-head">
+            <h2>دعم المنصات</h2>
+            <p>نعرض بالضبط أي ميزة تعمل أين.</p>
+        </div>
+        <div class="table-scroll">
+            <table class="table">
+                <caption class="sr-only">دعم مزايا Suu على iOS وAndroid</caption>
+                <thead><tr><th scope="col">الميزة</th><th scope="col">iOS</th><th scope="col">Android</th></tr></thead>
+                <tbody>
+                    <tr><td>تحليل السعرات بالصورة</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+                    <tr><td>الإدخال الصوتي</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+                    <tr><td>تتبع التمارين (نحو 50 نشاطًا)</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+                    <tr><td>محادثة Suu AI</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+                    <tr><td>دوريات الأصدقاء · القصص · الحيوان الأليف</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+                    <tr><td>الودجات</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+                    <tr><td>مزامنة Apple Health</td><td class="yes">✓</td><td class="no">—</td></tr>
+                    <tr><td>مزامنة Google Health Connect</td><td class="no">—</td><td class="yes">✓</td></tr>
+                    <tr><td>اختصارات Siri</td><td class="yes">✓</td><td class="no">—</td></tr>
+                    <tr><td>Dynamic Island</td><td class="yes">✓</td><td class="no">—</td></tr>
+                    <tr><td>Live Activities</td><td class="yes">✓</td><td class="no">—</td></tr>
+                    <tr><td>تطبيق Apple Watch</td><td class="soon">قريبًا</td><td class="no">—</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="small text-subtle" style="margin-block-start:var(--sp-4)">تصل بيانات Apple Watch إلى Suu اليوم عبر Apple Health وتحدّث هدف الماء لديك، رغم أن تطبيق Suu الخاص بالساعة لم يصدر بعد.</p>
+    </div>
+</section>
+
+<!-- KARŞILAŞTIRMA -->
+<section class="section section--subtle" id="karsilastirma">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">المقارنة</span>
+            <h2>أين يختلف Suu عن التطبيقات الأخرى؟</h2>
+        </div>
+        <div class="disclosure" style="margin-block-end:var(--sp-6)">أعدّ هذا الجدول فريق Suu. تعكس مزايا المنافسين المعلومات المتاحة علنًا حتى 2026 وقد تتغيّر. لكل تطبيق نقاط قوة — ونذكرها أدناه أيضًا.</div>
+        <div class="table-scroll">
+            <table class="table">
+                <caption class="sr-only">مقارنة Suu بتطبيقات السعرات وتتبع الماء الشائعة</caption>
+                <thead><tr>
+                    <th scope="col">الميزة</th>
+                    <th scope="col" class="col-suu">Suu</th>
+                    <th scope="col">MyFitnessPal</th>
+                    <th scope="col">Yazio</th>
+                    <th scope="col">WaterMinder</th>
+                </tr></thead>
+                <tbody>
+                    <tr><td>تحليل السعرات بالصورة</td><td class="col-suu yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✗</td></tr>
+                    <tr><td>حساب ترطيب حقيقي (لكل مشروب)</td><td class="col-suu yes">✓ 91 مشروبًا</td><td class="no">عدّاد بسيط</td><td class="no">عدّاد بسيط</td><td class="yes">✓</td></tr>
+                    <tr><td>تتبع التمارين داخل التطبيق</td><td class="col-suu yes">✓ نحو 50 نشاطًا</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✗</td></tr>
+                    <tr><td>التمارين تحدّث هدف الماء</td><td class="col-suu yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+                    <tr><td>ماء الهضم حسب وجبتك</td><td class="col-suu yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+                    <tr><td>هدف يتأثر بالطقس</td><td class="col-suu yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+                    <tr><td>التحكم بالتطبيق عبر المحادثة</td><td class="col-suu yes">✓ Suu AI</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+                    <tr><td>اتساع قاعدة بيانات الأغذية</td><td class="col-suu ">جيدة</td><td class="yes">✓ الأوسع</td><td class="yes">✓ واسعة</td><td class="no">—</td></tr>
+                    <tr><td>مكتبة الوصفات</td><td class="col-suu no">✗</td><td class="yes">✓</td><td class="yes">✓ قوية</td><td class="no">—</td></tr>
+                    <tr><td>تطبيق Apple Watch</td><td class="col-suu soon">قريبًا</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+                    <tr><td>تعريب كامل</td><td class="col-suu yes">✓</td><td class="no">محدود</td><td class="no">محدود</td><td class="no">✗</td></tr>
+                    <tr><td>دعم RTL للعربية</td><td class="col-suu yes">✓</td><td class="no">محدود</td><td class="no">محدود</td><td class="no">✗</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="verdict" style="margin-block-start:var(--sp-8)">
+            <h3>الخلاصة</h3>
+            <p><strong>أين يتفوّق المنافسون:</strong> يملك MyFitnessPal أوسع قاعدة بيانات غذائية في الفئة؛ واحتمال إيجاد منتج بعلامة تجارية عبر الباركود أعلى هناك. ومكتبة الوصفات وخطط الحمية في Yazio قوية. ولدى WaterMinder تطبيق Apple Watch اليوم بينما تطبيق Suu ما زال في الطريق.</p>
+            <p><strong>أين يتقدّم Suu:</strong> لا يشغّل أيٌّ من هذه الثلاثة الماء والسعرات والتمارين كنظام <em>مترابط</em>. في Suu يرفع الجري الذي تسجّله هدف الماء، وتُحتسب وجبتك لتحديد ماء الهضم، وتُخصم المساهمة الحقيقية للقهوة في ترطيبك. إن كنت تفضّل تطبيقًا واحدًا بدل ثلاثة — والترطيب يهمّك فعلًا — فـ Suu هو الخيار الأوضح.</p>
+            <p style="margin-block-start:var(--sp-4)"><a href="blog/ar/afdal-tatbiq-hisab-suerat.html">مقارنة مفصّلة لخمسة تطبيقات →</a> · <a href="blog/ar/suu-vs-myfitnesspal.html">‏Suu مقابل MyFitnessPal →</a> · <a href="blog/ar/tatbiq-wahid-mae-suerat-tamarin.html">الماء والسعرات والتمارين في تطبيق واحد →</a></p>
+        </div>
+    </div>
+</section>
+
+<!-- YORUMLAR -->
+<section class="section" id="yorumlar">
+    <div class="container">
+        <div class="section-head">
+            <h2>آراء المستخدمين</h2>
+            <p>‏Google Play 4.9★ · App Store 5.0★ · أكثر من 2800 تقييم — الآراء أدناه مترجمة عن التركية</p>
+        </div>
+        <div class="cards">
+            <article class="card">
+                <p class="small" style="color:var(--accent-gold);margin-block-end:var(--sp-2)" aria-label="5 من 5 نجوم">★★★★★</p>
+                <p>&ldquo;تطبيق رائع! تغيّرت عادتي في شرب الماء تمامًا. صرت أشرب 2.5 لتر يوميًا. التذكيرات مفيدة جدًا.&rdquo;</p>
+                <p class="small text-subtle" style="margin-block-start:var(--sp-3)">— Ayşe Yılmaz</p>
+            </article>
+            <article class="card">
+                <p class="small" style="color:var(--accent-gold);margin-block-end:var(--sp-2)" aria-label="5 من 5 نجوم">★★★★★</p>
+                <p>&ldquo;تتبع الماء كان مهمًا جدًا لي لأنني أتمرّن. تحسّن أدائي بفضل هذا التطبيق. أعجبتني الرسوم البيانية خصوصًا.&rdquo;</p>
+                <p class="small text-subtle" style="margin-block-start:var(--sp-3)">— Mehmet Kaya</p>
+            </article>
+            <article class="card">
+                <p class="small" style="color:var(--accent-gold);margin-block-end:var(--sp-2)" aria-label="5 من 5 نجوم">★★★★★</p>
+                <p>&ldquo;ممتاز! كنت أنسى شرب الماء أثناء العمل في المكتب. الآن أشرب بانتظام وأشعر بطاقة أكبر بكثير.&rdquo;</p>
+                <p class="small text-subtle" style="margin-block-start:var(--sp-3)">— Ali Öztürk</p>
+            </article>
+            <article class="card">
+                <p class="small" style="color:var(--accent-gold);margin-block-end:var(--sp-2)" aria-label="5 من 5 نجوم">★★★★★</p>
+                <p>&ldquo;نصحني طبيبي بشرب لترين يوميًا. هذا التطبيق يجعل الوصول إلى الهدف سهلًا. شكرًا!&rdquo;</p>
+                <p class="small text-subtle" style="margin-block-start:var(--sp-3)">— Fatma Demir</p>
+            </article>
+            <article class="card">
+                <p class="small" style="color:var(--accent-gold);margin-block-end:var(--sp-2)" aria-label="4 من 5 نجوم">★★★★☆</p>
+                <p>&ldquo;راضية عمومًا، لكن الإشعارات تأتي أحيانًا بوتيرة عالية. عدا ذلك ساعدني كثيرًا في بلوغ أهدافي.&rdquo;</p>
+                <p class="small text-subtle" style="margin-block-start:var(--sp-3)">— Zeynep Çelik</p>
+            </article>
+            <article class="card">
+                <p class="small" style="color:var(--accent-gold);margin-block-end:var(--sp-2)" aria-label="4 من 5 نجوم">★★★★☆</p>
+                <p>&ldquo;تطبيق جيد، لكن خيارات تخصيص أكثر ستكون رائعة. مع ذلك أحدث نقلة في روتين شربي للماء.&rdquo;</p>
+                <p class="small text-subtle" style="margin-block-start:var(--sp-3)">— Murat Şahin</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- FİYATLANDIRMA -->
+<section class="section section--subtle" id="fiyat" data-cta="fiyat">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">الأسعار</span>
+            <h2>المزايا الأساسية مجانية دائمًا</h2>
+            <p>جرّب Premium مجانًا 3 أيام. تُعرض الأسعار تلقائيًا بعملتك المحلية.</p>
+        </div>
+        <div class="plans">
+            <article class="plan">
+                <h3>مجاني</h3>
+                <div class="plan__price">₺0</div>
+                <p class="small text-subtle">مجاني دائمًا</p>
+                <ul class="plan__list">
+                    <li>تتبع أساسي للماء والترطيب</li>
+                    <li>91 مشروبًا</li>
+                    <li>تتبع التمارين</li>
+                    <li>3 تحليلات ذكية يوميًا (صوت/نص)</li>
+                    <li>مزامنة Apple Health / Health Connect</li>
+                </ul>
+                <a href="/app?src=fiyat-ucretsiz" class="btn btn--ghost btn--block">تنزيل مجاني</a>
+            </article>
+            <article class="plan plan--featured">
+                <span class="plan__badge">خصم إطلاق 50%</span>
+                <h3>Premium سنوي</h3>
+                <div class="plan__price">₺1.200 <span class="plan__was">₺2.400</span></div>
+                <p class="small text-subtle">سنوي · 3 أيام تجربة مجانية</p>
+                <ul class="plan__list">
+                    <li>تحليل وجبات غير محدود بالذكاء الاصطناعي</li>
+                    <li>حساب السعرات بالصورة</li>
+                    <li>تحليل تغذية متقدّم</li>
+                    <li>إحصاءات Premium</li>
+                    <li>تنبيهات ماء الهضم الديناميكية</li>
+                    <li>تصدير تقارير PDF وCSV</li>
+                    <li>بدون إعلانات</li>
+                </ul>
+                <a href="/app?src=fiyat-yillik" class="btn btn--primary btn--block">ابدأ التجربة المجانية</a>
+            </article>
+            <article class="plan">
+                <h3>شهري وعائلي</h3>
+                <div class="plan__price">₺149 <span class="plan__period">/ شهر</span></div>
+                <p class="small text-subtle">الخطة العائلية: ₺2.399 سنويًا — حتى 3 أشخاص</p>
+                <ul class="plan__list">
+                    <li>كل مزايا Premium</li>
+                    <li>خطة شهرية، إلغاء في أي وقت</li>
+                    <li>3 حسابات منفصلة في الخطة العائلية</li>
+                    <li>3 أيام تجربة مجانية</li>
+                </ul>
+                <a href="premium-ar.html" class="btn btn--ghost btn--block">قارن الخطط</a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- SSS -->
+<section class="section" id="sss">
+    <div class="container">
+        <div class="section-head"><h2>الأسئلة الشائعة</h2></div>
+        <div class="faq">
+            <details class="faq__item" open>
+                <summary>هل يقوم Suu فعلًا بتتبع الماء وحساب السعرات والتمارين في تطبيق واحد؟</summary>
+                <div><p>نعم. لا يشغّل Suu الثلاثة كتبويبات منفصلة بل كنظام واحد يغذّي بعضه بعضًا: التمرين الذي تسجّله يرفع هدفك اليومي من الماء، ومحتوى وجبتك من البروتين والصوديوم يحدّد الماء الإضافي اللازم للهضم، ويُحتسب كل مشروب بمساهمته الحقيقية في الترطيب من قاعدة تضم 91 مشروبًا.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>كيف يعمل حساب السعرات بالصورة؟</summary>
+                <div><p>تصوّر وجبتك؛ يحلّلها Suu AI ويستخرج السعرات والبروتين والكربوهيدرات والدهون ويبني ماكروزك تلقائيًا. لا تُحفظ صورتك بشكل دائم. التحليل بالصورة ميزة ضمن Premium؛ وفي الخطة المجانية لديك 3 تحليلات صوتية أو نصية يوميًا.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>كم نشاطًا رياضيًا يدعم Suu؟</summary>
+                <div><p>نحو 50 نشاطًا مختلفًا: جري ومشي ودراجة ولياقة وسباحة ومشي جبلي وكارديو وأكثر. في الجري والمشي ترى المسافة والمدة والإيقاع ومتوسط السرعة والسعرات المحروقة؛ وفي الدراجة ترى أيضًا السرعة والارتفاع. بعد كل تمرين يتحدّث هدف الماء تلقائيًا.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>هل Suu مجاني؟</summary>
+                <div><p>تتبع الماء والترطيب الأساسي و3 تحليلات ذكية يوميًا ومزامنة Apple Health / Google Health Connect مجانية دائمًا. أما تحليل الوجبات غير المحدود وحساب السعرات بالصورة والتحليل الغذائي المتقدّم والإحصاءات المتقدمة فتتطلب Premium. يمكن تجربة Premium مجانًا 3 أيام؛ الخطة السنوية ₺1.200 بخصم إطلاق 50% (بدلًا من ₺2.400)، والشهرية ₺149، والخطة العائلية لثلاثة أشخاص ₺2.399 سنويًا.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>ما اللغات التي يدعمها Suu؟</summary>
+                <div><p>التطبيق متاح بسبع لغات: Türkçe و English و العربية (دعم كامل من اليمين إلى اليسار) و Deutsch و Italiano و Русский و हिन्दी.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>هل لدى Suu تطبيق Apple Watch؟</summary>
+                <div><p>ليس لدى Suu تطبيق خاص بـ Apple Watch بعد — سيصدر قريبًا. اليوم تصل بيانات التمارين والخطوات والطاقة النشطة التي تسجّلها ساعتك إلى Suu عبر Apple Health وترفع هدف الماء تلقائيًا. وللتسجيل من المعصم دون استخدام اليدين يمكنك استعمال أمر Siri.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>هل بياناتي آمنة؟</summary>
+                <div><p>بياناتك ملك لك بالكامل. لا يوجد تتبّع إعلاني ولا تُشارك البيانات مع أطراف ثالثة. في الإدخال الصوتي يحوّل نظام تشغيل جهازك كلامك إلى نص — ولا يُرسل التسجيل الصوتي إلى خوادم Suu. ولا تُحفظ صور الوجبات بشكل دائم بعد التحليل. <a href="gizlilik-politikasi.html">سياسة الخصوصية <span class="arrow" aria-hidden="true">→</span></a></p></div>
+            </details>
+            <details class="faq__item">
+                <summary>لماذا أستخدم Suu بدل MyFitnessPal أو Yazio؟</summary>
+                <div><p>قاعدة بيانات MyFitnessPal الغذائية أوسع، ومكتبة وصفات Yazio أقوى. ما يميّز Suu هو التكامل: تتبع الماء وتحليل السعرات بالصورة وتتبع التمارين في تطبيق واحد ومترابطة — تمرينك يحدّث هدف الماء، ووجبتك تحدّث حاجتك لماء الهضم. كما يقدّم حسابًا حقيقيًا للترطيب عبر 91 مشروبًا ودعمًا لسبع لغات. <a href="blog/ar/suu-vs-myfitnesspal.html">مقارنة مفصّلة <span class="arrow" aria-hidden="true">→</span></a></p></div>
+            </details>
+        </div>
+        <p class="small text-subtle text-center" style="margin-block-start:var(--sp-8);max-width:44rem;margin-inline:auto">لم يُطوَّر Suu لأغراض التشخيص أو العلاج الطبي. استشر مختصًا في الرعاية الصحية بشأن القرارات المتعلقة بصحتك.</p>
+    </div>
+</section>
+
+<!-- KAPANIŞ CTA -->
+<section class="cta-band" data-cta="kapanis">
+    <div class="container">
+        <h2>الماء والسعرات والتمارين — في تطبيق واحد ابتداءً من اليوم</h2>
+        <p class="lead" style="max-width:34rem;margin-inline:auto">نزّله مجانًا، وجرّب Premium مجانًا 3 أيام.</p>
+        <div style="margin-block-start:var(--sp-8)">
+<div class="btn-row btn-row--center">
+    <a href="/app?src=kapanis" class="btn-store" aria-label="التنزيل من App Store">
+        <span class="btn-store__icon"><svg width="22" height="22" aria-hidden="true"><use href="#i-apple"></use></svg></span>
+        <span class="btn-store__label">
+            <span class="btn-store__small">نزّله من</span>
+            <span class="btn-store__big">App Store</span>
+        </span>
+    </a>
+    <a href="/app?src=kapanis" class="btn-store" aria-label="التنزيل من Google Play">
+        <span class="btn-store__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24">
+                <path fill="#00D2FF" d="M3.6 1.8A1.5 1.5 0 0 0 3 3v18c0 .5.2.9.6 1.2l.1.1 10.1-10.1v-.3L3.7 1.7l-.1.1z"/>
+                <path fill="#FFCE00" d="M17.2 15.6l-3.4-3.4v-.3l3.4-3.4.1.1 4 2.3c1.2.6 1.2 1.7 0 2.4l-4 2.3z"/>
+                <path fill="#FF3A44" d="M17.3 15.5 13.8 12 3.6 22.2c.4.4 1 .5 1.8.1l11.9-6.8"/>
+                <path fill="#00E676" d="M17.3 8.5 5.4 1.7c-.8-.4-1.4-.4-1.8.1L13.8 12l3.5-3.5z"/>
+            </svg>
+        </span>
+        <span class="btn-store__label">
+            <span class="btn-store__small">نزّله من</span>
+            <span class="btn-store__big">Google Play</span>
+        </span>
+    </a>
+</div></div>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__grid">
+            <div>
+                <a href="hosgeldiniz-ar.html" class="nav__logo" style="margin-block-end:var(--sp-3)">
+                    <svg width="24" height="24" aria-hidden="true"><use href="#i-water"></use></svg> Suu
+                </a>
+                <p class="small">تتبع الماء وعدّاد السعرات وتتبع التمارين في تطبيق واحد. يُطوَّر فرديًا في إسطنبول.</p>
+            </div>
+            <div>
+                <h4>المنتج</h4>
+                <ul>
+                    <li><a href="ozellikler-ar.html">المزايا</a></li>
+                    <li><a href="premium-ar.html">Premium</a></li>
+                    <li><a href="download-ar.html">التنزيل</a></li>
+                    <li><a href="water-calculator-ar.html">حاسبة الماء</a></li>
+                    <li><a href="who-is-suu-for-ar.html">لمن هذا التطبيق؟</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>استكشف</h4>
+                <ul>
+                    <li><a href="blog-ar.html">المدونة</a></li>
+                    <li><a href="suu-index-ar.html">مؤشر Suu</a></li>
+                    <li><a href="adaptive-hydration-brain-ar.html">العقل التكيّفي للترطيب</a></li>
+                    <li><a href="personal-hydration-plan-ar.html">خطة الترطيب</a></li>
+                    <li><a href="faq-ar.html">الأسئلة الشائعة</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>الشركة</h4>
+                <ul>
+                    <li><a href="hakkimizda-ar.html">من نحن</a></li>
+                    <li><a href="ekip.html">الفريق</a></li>
+                    <li><a href="gizlilik-politikasi.html">سياسة الخصوصية</a></li>
+                    <li><a href="kullanim-sartlari.html">شروط الاستخدام</a></li>
+                    <li><a href="delete-account.html">حذف الحساب</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="small mb-0">© 2026 Suu · Furkan Mert Fındıklı</p>
+            <p class="small mb-0"><a href="mailto:Suutakip@gmail.com">Suutakip@gmail.com</a></p>
+        </div>
+    </div>
+</footer>
+
+<div class="sticky-cta" data-cta="sticky">
+    <a href="/app?src=sticky" class="btn btn--secondary">App Store</a>
+    <a href="/app?src=sticky" class="btn btn--primary">Google Play</a>
+</div>
+
+<script>
+(function () {
+    var nav = document.getElementById('nav');
+    var toggle = document.getElementById('navToggle');
+    if (!nav || !toggle) return;
+    var openLabel = "\u0641\u062a\u062d \u0627\u0644\u0642\u0627\u0626\u0645\u0629", closeLabel = "\u0625\u063a\u0644\u0627\u0642 \u0627\u0644\u0642\u0627\u0626\u0645\u0629";
+    toggle.addEventListener('click', function () {
+        var open = nav.getAttribute('data-open') === 'true';
+        nav.setAttribute('data-open', open ? 'false' : 'true');
+        toggle.setAttribute('aria-expanded', open ? 'false' : 'true');
+        toggle.setAttribute('aria-label', open ? openLabel : closeLabel);
+    });
+    nav.addEventListener('click', function (e) {
+        if (e.target.closest('.nav__links a')) {
+            nav.setAttribute('data-open', 'false');
+            toggle.setAttribute('aria-expanded', 'false');
+        }
+    });
+})();
+</script>
+
 </body>
 </html>

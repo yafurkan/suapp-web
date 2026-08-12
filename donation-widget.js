@@ -2,7 +2,7 @@
  * Suu — Donation Tracker Widget
  * Floating FAB + glassmorphism panel showing live donation progress.
  * Reads data from /donations.json. Manual monthly update by editing JSON.
- * Multilingual (TR/EN/RU/AR) — syncs with lang-switcher.js via localStorage.
+ * Multilingual (TR/EN/AR/DE/IT/RU/HI) — syncs with lang-switcher.js via localStorage.
  */
 (function () {
     'use strict';
@@ -14,16 +14,16 @@
     function detectLang() {
         try {
             var saved = localStorage.getItem(STORAGE_KEY);
-            if (saved && ['tr', 'en', 'ar', 'ru'].indexOf(saved) !== -1) return saved;
+            if (saved && ['tr', 'en', 'ar', 'ru', 'de', 'it', 'hi'].indexOf(saved) !== -1) return saved;
         } catch (e) {}
         // Fallback: <html lang="..."> attribute
         var htmlLang = (document.documentElement.getAttribute('lang') || '').toLowerCase().slice(0, 2);
-        if (['tr', 'en', 'ar', 'ru'].indexOf(htmlLang) !== -1) return htmlLang;
+        if (['tr', 'en', 'ar', 'ru', 'de', 'it', 'hi'].indexOf(htmlLang) !== -1) return htmlLang;
         // Final fallback: browser
         var navs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || 'tr'];
         for (var i = 0; i < navs.length; i++) {
             var code = navs[i].toLowerCase().slice(0, 2);
-            if (['tr', 'en', 'ar', 'ru'].indexOf(code) !== -1) return code;
+            if (['tr', 'en', 'ar', 'ru', 'de', 'it', 'hi'].indexOf(code) !== -1) return code;
         }
         return 'tr';
     }

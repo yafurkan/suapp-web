@@ -7,13 +7,39 @@
     "TRY": 1,
     "USD": 0.025,
     "SAR": 0.0934,
-    "RUB": 2.25
+    "RUB": 2.25,
+    "EUR": 0.022,
+    "INR": 2.16
   },
   "currencyByLang": {
-    "tr": { "code": "TRY", "locale": "tr-TR" },
-    "en": { "code": "USD", "locale": "en-US" },
-    "ar": { "code": "SAR", "locale": "ar-SA" },
-    "ru": { "code": "RUB", "locale": "ru-RU" }
+    "tr": {
+      "code": "TRY",
+      "locale": "tr-TR"
+    },
+    "en": {
+      "code": "USD",
+      "locale": "en-US"
+    },
+    "ar": {
+      "code": "SAR",
+      "locale": "ar-SA"
+    },
+    "ru": {
+      "code": "RUB",
+      "locale": "ru-RU"
+    },
+    "de": {
+      "code": "EUR",
+      "locale": "de-DE"
+    },
+    "it": {
+      "code": "EUR",
+      "locale": "it-IT"
+    },
+    "hi": {
+      "code": "INR",
+      "locale": "hi-IN"
+    }
   },
   "receipts": [
     {
@@ -84,6 +110,48 @@
       "close": "إغلاق",
       "lastUpdated": "آخر تحديث",
       "transparencyNote": "جميع الإيصالات متاحة للجمهور لضمان الشفافية الكاملة."
+    },
+    "de": {
+      "fabLabel": "Spenden-Tracker",
+      "title": "Wasserbrunnen-Spende",
+      "subtitle": "2 % der Premium-Einnahmen fließen in Trinkwasserbrunnen in Afrika.",
+      "progressLabel": "Gesammelt",
+      "goalLabel": "Ziel",
+      "receiptsBtn": "Spendenbelege",
+      "receiptsTitle": "Belege",
+      "noReceipts": "Noch keine Belege. Sobald die erste Spende überwiesen ist, erscheint sie hier.",
+      "view": "Ansehen",
+      "close": "Schließen",
+      "lastUpdated": "Zuletzt aktualisiert",
+      "transparencyNote": "Alle Belege sind aus Transparenzgründen öffentlich."
+    },
+    "it": {
+      "fabLabel": "Tracker donazioni",
+      "title": "Donazione pozzi d'acqua",
+      "subtitle": "Il 2% dei ricavi Premium va a pozzi d'acqua potabile in Africa.",
+      "progressLabel": "Raccolto",
+      "goalLabel": "Obiettivo",
+      "receiptsBtn": "Ricevute delle donazioni",
+      "receiptsTitle": "Ricevute",
+      "noReceipts": "Ancora nessuna ricevuta. Comparirà qui non appena sarà versata la prima donazione.",
+      "view": "Vedi",
+      "close": "Chiudi",
+      "lastUpdated": "Ultimo aggiornamento",
+      "transparencyNote": "Tutte le ricevute sono pubbliche per trasparenza."
+    },
+    "hi": {
+      "fabLabel": "दान ट्रैकर",
+      "title": "जल कुआँ दान",
+      "subtitle": "Premium आय का 2% अफ़्रीका में साफ़ पानी के कुओं पर जाता है।",
+      "progressLabel": "अब तक जुटा",
+      "goalLabel": "लक्ष्य",
+      "receiptsBtn": "दान रसीदें",
+      "receiptsTitle": "रसीदें",
+      "noReceipts": "अभी कोई रसीद नहीं। पहला दान होते ही यहाँ दिखेगी।",
+      "view": "देखें",
+      "close": "बंद करें",
+      "lastUpdated": "अंतिम अपडेट",
+      "transparencyNote": "पारदर्शिता के लिए सभी रसीदें सार्वजनिक हैं।"
     }
   }
 }

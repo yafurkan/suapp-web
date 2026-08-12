@@ -1,0 +1,877 @@
+{
+  "meta": {
+    "title": "Suu — Water, Calorie & Exercise Tracking in One App | 4.9★ · 3-Day Free Trial",
+    "description": "Suu combines water tracking, a calorie counter and exercise tracking with AI. Photograph your meal to get calories and macros in seconds; with 91 beverages and ~50 sport activities your daily water goal updates itself. Free on iOS and Android.",
+    "keywords": "water tracking app, calorie counter, calorie tracking app, photo calorie counter, exercise tracking, macro calculator, nutrition tracker, ai calorie app, voice calorie logging, running tracker, cycling tracker, hydration app, suu, suu app, suuapp, best calorie app, water calorie exercise one app",
+    "og_title": "Suu — Water, Calorie & Exercise Tracking in One App",
+    "og_description": "Photograph your meal, get calories and macros. 91 beverages, ~50 sport activities and a water goal that updates after every workout. Try Premium free for 3 days.",
+    "og_image_alt": "Suu — Water, Calorie and Exercise Tracking",
+    "tw_title": "Suu — Water, Calorie & Exercise Tracking in One App",
+    "tw_description": "Photo calorie analysis, hydration tracking across 91 beverages and ~50 sport activities. Your workouts update your water goal automatically. 4.9★ · 3 days free."
+  },
+  "links": {
+    "home": "hosgeldiniz-en.html"
+  },
+  "nav": {
+    "skip": "Skip to content",
+    "home_aria": "Suu home",
+    "cta": "Download Free",
+    "menu_open": "Open menu",
+    "menu_close": "Close menu",
+    "links": [
+      {
+        "href": "#pillars",
+        "label": "Features"
+      },
+      {
+        "href": "#kalori",
+        "label": "Calories"
+      },
+      {
+        "href": "#egzersiz",
+        "label": "Exercise"
+      },
+      {
+        "href": "#ekranlar",
+        "label": "Screens"
+      },
+      {
+        "href": "#karsilastirma",
+        "label": "Compare"
+      },
+      {
+        "href": "#fiyat",
+        "label": "Pricing"
+      },
+      {
+        "href": "blog-en.html",
+        "label": "Blog"
+      },
+      {
+        "href": "#sss",
+        "label": "FAQ"
+      }
+    ]
+  },
+  "hero": {
+    "eyebrow": "Water · Calories · Exercise",
+    "title_lead": "Water, Calories and Exercise —",
+    "title_accent": "All in One App",
+    "lead": "Photograph your meal and get its calories and macros in seconds. Track real hydration across 91 beverages, log around 50 sport activities — and let every workout update your daily water goal automatically.",
+    "store_small": "Download on the",
+    "aria_app_store": "Download on the App Store",
+    "aria_google_play": "Get it on Google Play",
+    "trial_note": "Free to download · Premium <strong>free for 3 days</strong>",
+    "trust_rating": "4.9 Google Play · 5.0 App Store",
+    "trust_reviews": "2,800+ ratings",
+    "trust_health": "Apple Health & Health Connect",
+    "trust_langs": "7 languages",
+    "shot_alt": "Suu home screen: daily water, calorie and exercise summary"
+  },
+  "pillars": {
+    "head": "Not three separate apps — one system where each part feeds the others",
+    "sub": "Most apps keep water, calories and exercise in separate tabs. In Suu they update each other.",
+    "answer_label": "Short answer:",
+    "answer": "Suu is a health app that combines water tracking, photo-based calorie analysis and exercise tracking in a single app. What sets it apart is that the three are connected: the run you log raises your daily water goal, the protein and sodium in your meal determine the extra water digestion requires, and the real hydration contribution of the coffee you drank is accounted for. Free on iOS and Android, available in 7 languages.",
+    "items": [
+      {
+        "id": "water",
+        "icon": "water",
+        "title": "Water Tracking",
+        "body": "<strong>91 beverages</strong> — coffee, tea, soda, juice, milk, energy drinks. The real contribution of each to your fluid balance is calculated.",
+        "link_href": "#su-hedefi",
+        "link_label": "How the smart water goal works"
+      },
+      {
+        "id": "calories",
+        "icon": "flame",
+        "title": "Calories & Nutrition",
+        "body": "<strong>Photograph your meal</strong> — let Suu AI extract calories, protein, carbs and fat, and build your macros automatically.",
+        "link_href": "#kalori",
+        "link_label": "Photo calorie analysis"
+      },
+      {
+        "id": "exercise",
+        "icon": "run",
+        "title": "Exercise Tracking",
+        "body": "<strong>~50 sport activities</strong> — running, walking, cycling, swimming, fitness. Every workout raises your water goal automatically.",
+        "link_href": "#egzersiz",
+        "link_label": "Exercise metrics"
+      }
+    ]
+  },
+  "calories": {
+    "eyebrow": "Calories & Nutrition",
+    "head": "You don't need to weigh your plate to count calories",
+    "sub": "Take the photo — let Suu AI handle the rest.",
+    "callout": "<strong>On the free plan</strong> you get 3 AI analyses per day. Photo analysis and unlimited use are part of Premium — <a href=\"#fiyat\">free to try for 3 days</a>.",
+    "items": [
+      {
+        "icon": "camera",
+        "title": "Photo analysis",
+        "body": "Photograph your meal and let calories, protein, carbs and fat be extracted and your macros built automatically. Your photo is not stored permanently."
+      },
+      {
+        "emoji": "🎙️",
+        "title": "Voice or text entry",
+        "body": "“Chicken salad and a glass of ayran for lunch” — say it and it's logged in seconds. Speech is converted to text on your device, never sent to a server."
+      },
+      {
+        "emoji": "📊",
+        "title": "Macros and nutrition score",
+        "body": "Daily calorie, protein, carb and fat tracking. A 1–100 nutrition score shows the balance of your day at a glance."
+      }
+    ]
+  },
+  "suu_ai": {
+    "head": "Run the app by talking to it",
+    "sub": "Instead of navigating menus, just say what you want.",
+    "items": [
+      {
+        "icon": "chat",
+        "title": "“Add two glasses of water”",
+        "body": "Logging water and drinks, creating meals, adding workouts — all through chat."
+      },
+      {
+        "emoji": "🧠",
+        "title": "“Analyse today's nutrition”",
+        "body": "It interprets the day's macro balance and points out what's missing."
+      },
+      {
+        "emoji": "⚙️",
+        "title": "“Update my water goal”",
+        "body": "Goals and smart reminders can be adjusted from the chat too."
+      }
+    ]
+  },
+  "exercise": {
+    "eyebrow": "Exercise Tracking",
+    "head": "Around 50 sport activities — and all of them tied to your water goal",
+    "sub": "Running, walking, cycling, fitness, swimming, hiking, cardio and more.",
+    "items": [
+      {
+        "icon": "run",
+        "title": "Running and walking",
+        "body": "Every detail on one screen after your session.",
+        "metrics": [
+          "Distance",
+          "Duration",
+          "Pace",
+          "Avg. speed",
+          "Calories burned"
+        ]
+      },
+      {
+        "emoji": "🚴",
+        "title": "Cycling",
+        "body": "Detailed statistics including the elevation profile of your route.",
+        "metrics": [
+          "Speed",
+          "Avg. speed",
+          "Distance",
+          "Elevation",
+          "Duration"
+        ]
+      },
+      {
+        "emoji": "💧",
+        "title": "Exercise → water goal",
+        "body": "The fluid you lose through sweat is estimated and your daily water goal rises automatically. No manual adjustment when the workout ends."
+      }
+    ]
+  },
+  "water": {
+    "eyebrow": "Water Tracking",
+    "head": "Not a fixed number — a goal that changes through the day",
+    "sub": "“Two litres a day” isn't right for everyone. Suu calculates your goal from five separate signals.",
+    "items": [
+      {
+        "title": "Age, weight, activity",
+        "body": "The base goal is calculated from your personal profile."
+      },
+      {
+        "title": "Air temperature",
+        "body": "On hot days the goal rises automatically."
+      },
+      {
+        "title": "Exercise",
+        "body": "Every workout you log adds extra fluid need."
+      },
+      {
+        "title": "What you eat",
+        "body": "The protein and sodium in your meal determine the extra water digestion requires."
+      },
+      {
+        "title": "91 beverages",
+        "body": "The real contribution of coffee, tea and ayran to your fluid balance is calculated separately."
+      },
+      {
+        "title": "Suu Index",
+        "body": "Your 0–100 hydration score updates live through the day. <a href=\"suu-index.html\">How it's calculated →</a>"
+      }
+    ],
+    "calc": {
+      "head": "Calculate your daily water need",
+      "note": "A starting estimate. In the app the goal is further updated by weather, exercise and what you eat.",
+      "age": "Age",
+      "weight": "Weight (kg)",
+      "gender": "Gender",
+      "activity": "Activity",
+      "female": "Female",
+      "male": "Male",
+      "act_sedentary": "Sedentary",
+      "act_light": "Lightly active",
+      "act_moderate": "Moderately active",
+      "act_active": "Active",
+      "act_extra": "Very active",
+      "submit": "Calculate",
+      "liters": "litres",
+      "cups_prefix": "About",
+      "cups_suffix": "glasses (250 ml)",
+      "cta": "Start tracking with Suu"
+    }
+  },
+  "shots": {
+    "head": "Explore the app",
+    "sub": "Real screens from the app — swipe to see them all.",
+    "tablist_label": "Platform selection",
+    "items": [
+      {
+        "slug": "ana-ekran",
+        "caption": "Home screen"
+      },
+      {
+        "slug": "kalori-foto-analiz",
+        "caption": "Photo calories"
+      },
+      {
+        "slug": "makro-detay",
+        "caption": "Macro breakdown"
+      },
+      {
+        "slug": "suu-ai-sohbet",
+        "caption": "Suu AI"
+      },
+      {
+        "slug": "kosu-detay",
+        "caption": "Run detail"
+      },
+      {
+        "slug": "istatistik",
+        "caption": "Statistics"
+      }
+    ]
+  },
+  "social": {
+    "head": "Building a habit alone is hard",
+    "items": [
+      {
+        "emoji": "🐾",
+        "title": "Virtual pet",
+        "body": "It grows as you complete your daily goals and earns you rewards."
+      },
+      {
+        "emoji": "🏆",
+        "title": "Friend leagues",
+        "body": "Weekly, up to 4 people. Works cross-platform between iOS and Android."
+      },
+      {
+        "emoji": "📱",
+        "title": "Story sharing",
+        "body": "Share your water intake, walks, runs and achievements with modern story templates."
+      },
+      {
+        "emoji": "💙",
+        "title": "2% donation programme",
+        "body": "2% of Premium revenue goes to clean water wells in Africa. <a href=\"blog/en/africa-water-well-donation-program.html\">Transparent report →</a>"
+      }
+    ]
+  },
+  "platform": {
+    "head": "Platform support",
+    "sub": "We show exactly which feature works where.",
+    "caption": "iOS and Android support for Suu features",
+    "col_feature": "Feature",
+    "yes": "✓",
+    "soon": "Coming soon",
+    "watch_note": "Apple Watch data already flows into Suu through Apple Health today and updates your water goal — <a href=\"blog/en/apple-watch-water-tracking.html\">here's how to set it up</a>.",
+    "rows": [
+      {
+        "label": "Photo calorie analysis",
+        "ios": "yes",
+        "android": "yes"
+      },
+      {
+        "label": "Voice entry",
+        "ios": "yes",
+        "android": "yes"
+      },
+      {
+        "label": "Exercise tracking (~50 activities)",
+        "ios": "yes",
+        "android": "yes"
+      },
+      {
+        "label": "Suu AI chat",
+        "ios": "yes",
+        "android": "yes"
+      },
+      {
+        "label": "Friend leagues · stories · virtual pet",
+        "ios": "yes",
+        "android": "yes"
+      },
+      {
+        "label": "Widgets",
+        "ios": "yes",
+        "android": "yes"
+      },
+      {
+        "label": "Apple Health sync",
+        "ios": "yes",
+        "android": "no"
+      },
+      {
+        "label": "Google Health Connect sync",
+        "ios": "no",
+        "android": "yes"
+      },
+      {
+        "label": "Siri shortcuts",
+        "ios": "yes",
+        "android": "no"
+      },
+      {
+        "label": "Dynamic Island",
+        "ios": "yes",
+        "android": "no"
+      },
+      {
+        "label": "Live Activities",
+        "ios": "yes",
+        "android": "no"
+      },
+      {
+        "label": "Apple Watch app",
+        "ios": "soon",
+        "android": "no"
+      }
+    ]
+  },
+  "compare": {
+    "eyebrow": "Comparison",
+    "head": "Where does Suu differ from the other apps?",
+    "caption": "Comparison of Suu with popular calorie and water tracking apps",
+    "col_feature": "Feature",
+    "competitors": [
+      "MyFitnessPal",
+      "Yazio",
+      "WaterMinder"
+    ],
+    "disclosure": "This table was prepared by the Suu team. Competitor features reflect publicly available information as of 2026 and may change. Every app is strong somewhere — we note that below too.",
+    "verdict_head": "Verdict",
+    "rivals_label": "Where the competitors are stronger:",
+    "rivals": "MyFitnessPal has the widest food database in the category; you're more likely to find a branded product by barcode there. Yazio's recipe and diet plan library is strong. WaterMinder ships an Apple Watch app today, while Suu's is still on the way.",
+    "suu_label": "Where Suu pulls ahead:",
+    "suu_edge": "None of these three run water, calories and exercise as a <em>connected</em> system. In Suu the run you log raises your water goal, the meal you eat triggers a digestion-water calculation, and the real hydration contribution of your coffee is subtracted. If you'd rather use one app than three — and hydration genuinely matters to you — Suu is the clear pick.",
+    "links": "<a href=\"blog/en/best-calorie-counting-app.html\">Detailed 5-app comparison →</a> · <a href=\"blog/en/suu-vs-myfitnesspal.html\">Suu vs MyFitnessPal →</a> · <a href=\"blog/en/water-calorie-exercise-one-app.html\">Water + calories + exercise in one app →</a>",
+    "rows": [
+      {
+        "label": "Photo calorie analysis",
+        "suu": "✓",
+        "suu_class": "yes",
+        "others": [
+          {
+            "text": "✓",
+            "cls": "yes"
+          },
+          {
+            "text": "✓",
+            "cls": "yes"
+          },
+          {
+            "text": "✗",
+            "cls": "no"
+          }
+        ]
+      },
+      {
+        "label": "Real hydration maths (per beverage)",
+        "suu": "✓ 91 beverages",
+        "suu_class": "yes",
+        "others": [
+          {
+            "text": "Simple counter",
+            "cls": "no"
+          },
+          {
+            "text": "Simple counter",
+            "cls": "no"
+          },
+          {
+            "text": "✓",
+            "cls": "yes"
+          }
+        ]
+      },
+      {
+        "label": "Exercise tracking (in-app)",
+        "suu": "✓ ~50 activities",
+        "suu_class": "yes",
+        "others": [
+          {
+            "text": "✓",
+            "cls": "yes"
+          },
+          {
+            "text": "✓",
+            "cls": "yes"
+          },
+          {
+            "text": "✗",
+            "cls": "no"
+          }
+        ]
+      },
+      {
+        "label": "Workouts update the water goal",
+        "suu": "✓",
+        "suu_class": "yes",
+        "others": [
+          {
+            "text": "✗",
+            "cls": "no"
+          },
+          {
+            "text": "✗",
+            "cls": "no"
+          },
+          {
+            "text": "✗",
+            "cls": "no"
+          }
+        ]
+      },
+      {
+        "label": "Digestion water based on your meal",
+        "suu": "✓",
+        "suu_class": "yes",
+        "others": [
+          {
+            "text": "✗",
+            "cls": "no"
+          },
+          {
+            "text": "✗",
+            "cls": "no"
+          },
+          {
+            "text": "✗",
+            "cls": "no"
+          }
+        ]
+      },
+      {
+        "label": "Weather-adjusted goal",
+        "suu": "✓",
+        "suu_class": "yes",
+        "others": [
+          {
+            "text": "✗",
+            "cls": "no"
+          },
+          {
+            "text": "✗",
+            "cls": "no"
+          },
+          {
+            "text": "✗",
+            "cls": "no"
+          }
+        ]
+      },
+      {
+        "label": "Control the app by chat",
+        "suu": "✓ Suu AI",
+        "suu_class": "yes",
+        "others": [
+          {
+            "text": "✗",
+            "cls": "no"
+          },
+          {
+            "text": "✗",
+            "cls": "no"
+          },
+          {
+            "text": "✗",
+            "cls": "no"
+          }
+        ]
+      },
+      {
+        "label": "Food database breadth",
+        "suu": "Good",
+        "suu_class": "",
+        "others": [
+          {
+            "text": "✓ Widest",
+            "cls": "yes"
+          },
+          {
+            "text": "✓ Wide",
+            "cls": "yes"
+          },
+          {
+            "text": "—",
+            "cls": "no"
+          }
+        ]
+      },
+      {
+        "label": "Recipe library",
+        "suu": "✗",
+        "suu_class": "no",
+        "others": [
+          {
+            "text": "✓",
+            "cls": "yes"
+          },
+          {
+            "text": "✓ Strong",
+            "cls": "yes"
+          },
+          {
+            "text": "—",
+            "cls": "no"
+          }
+        ]
+      },
+      {
+        "label": "Apple Watch app",
+        "suu": "Coming soon",
+        "suu_class": "soon",
+        "others": [
+          {
+            "text": "✓",
+            "cls": "yes"
+          },
+          {
+            "text": "✓",
+            "cls": "yes"
+          },
+          {
+            "text": "✓",
+            "cls": "yes"
+          }
+        ]
+      },
+      {
+        "label": "Full Turkish localisation",
+        "suu": "✓",
+        "suu_class": "yes",
+        "others": [
+          {
+            "text": "✓",
+            "cls": "yes"
+          },
+          {
+            "text": "✓",
+            "cls": "yes"
+          },
+          {
+            "text": "✗",
+            "cls": "no"
+          }
+        ]
+      },
+      {
+        "label": "Arabic RTL support",
+        "suu": "✓",
+        "suu_class": "yes",
+        "others": [
+          {
+            "text": "Limited",
+            "cls": "no"
+          },
+          {
+            "text": "Limited",
+            "cls": "no"
+          },
+          {
+            "text": "✗",
+            "cls": "no"
+          }
+        ]
+      }
+    ]
+  },
+  "reviews": {
+    "head": "User reviews",
+    "sub": "Google Play 4.9★ · App Store 5.0★ · 2,800+ ratings — reviews below translated from Turkish",
+    "stars_aria": "{n} out of 5 stars",
+    "items": [
+      {
+        "stars": 5,
+        "author": "Ayşe Yılmaz",
+        "text": "An amazing app! My drinking habit has completely changed. I now manage 2.5 litres a day. The reminders really help."
+      },
+      {
+        "stars": 5,
+        "author": "Mehmet Kaya",
+        "text": "Water tracking mattered a lot to me because I train. My performance improved thanks to this app. I especially liked the charts."
+      },
+      {
+        "stars": 5,
+        "author": "Ali Öztürk",
+        "text": "Brilliant! I used to forget to drink while working at the office. Now I drink regularly and feel far more energetic."
+      },
+      {
+        "stars": 5,
+        "author": "Fatma Demir",
+        "text": "My doctor told me to drink 2 litres a day. This app makes reaching that goal easy. Thank you!"
+      },
+      {
+        "stars": 4,
+        "author": "Zeynep Çelik",
+        "text": "Happy overall, though the notifications come a bit too often sometimes. Other than that it really helped me hit my water goals."
+      },
+      {
+        "stars": 4,
+        "author": "Murat Şahin",
+        "text": "Good app, but more customisation options would be great. Still, it transformed my drinking routine."
+      }
+    ]
+  },
+  "pricing": {
+    "eyebrow": "Pricing",
+    "head": "The core features are always free",
+    "sub": "Try Premium free for 3 days. Prices are shown automatically in your local currency.",
+    "plans": [
+      {
+        "name": "Free",
+        "price": "₺0",
+        "note": "Free forever",
+        "features": [
+          "Core water and hydration tracking",
+          "91 beverages",
+          "Exercise tracking",
+          "3 AI analyses per day (voice/text)",
+          "Apple Health / Health Connect sync"
+        ],
+        "href": "/app?src=fiyat-ucretsiz",
+        "cta": "Download Free"
+      },
+      {
+        "name": "Premium Yearly",
+        "price": "₺1,200",
+        "was": "₺2,400",
+        "badge": "50% launch discount",
+        "featured": true,
+        "note": "Yearly · 3-day free trial",
+        "features": [
+          "Unlimited AI meal analysis",
+          "Photo calorie counting",
+          "Advanced nutrition analysis",
+          "Premium statistics",
+          "Dynamic digestion-water reminders",
+          "PDF and CSV report export",
+          "Ad-free"
+        ],
+        "href": "/app?src=fiyat-yillik",
+        "cta": "Start 3-Day Free Trial"
+      },
+      {
+        "name": "Monthly & Family",
+        "price": "₺149",
+        "period": "/ month",
+        "note": "Family plan: ₺2,399 / year — up to 3 people",
+        "features": [
+          "All Premium features",
+          "Monthly plan, cancel anytime",
+          "3 separate accounts on the family plan",
+          "3-day free trial"
+        ],
+        "href": "premium-en.html",
+        "cta": "Compare Plans"
+      }
+    ]
+  },
+  "faq": {
+    "head": "Frequently asked questions",
+    "items": [
+      {
+        "q": "Does Suu really do water tracking, calorie counting and exercise in one app?",
+        "a": "Yes. Suu runs the three not as separate tabs but as a single system where each feeds the others: the exercise you log raises your daily water goal, the protein and sodium in your meal determine the extra water digestion requires, and every drink is counted with its real hydration contribution from a 91-beverage database."
+      },
+      {
+        "q": "How does photo calorie counting work?",
+        "a": "You photograph your meal; Suu AI analyses it, extracts calories, protein, carbohydrate and fat, and builds your macros automatically. Your photo is not stored permanently. Photo analysis is a Premium feature; on the free plan you get 3 voice or text AI analyses per day."
+      },
+      {
+        "q": "How many sport activities does Suu support?",
+        "a": "Around 50 different activities: running, walking, cycling, fitness, swimming, hiking, cardio and more. For running and walking you see distance, duration, pace, average speed and calories burned; for cycling you also get speed and elevation. After every workout your water goal updates automatically."
+      },
+      {
+        "q": "Is Suu free?",
+        "a": "Core water and hydration tracking, 3 AI analyses per day and Apple Health / Google Health Connect sync are always free. Unlimited AI meal analysis, photo calorie counting, advanced nutrition analysis and premium statistics require Premium. Premium can be tried free for 3 days; the yearly plan is ₺1,200 with a 50% launch discount (normally ₺2,400), monthly is ₺149, and the 3-person family plan is ₺2,399 per year."
+      },
+      {
+        "q": "Which languages does Suu support?",
+        "a": "The app is available in 7 languages: Türkçe, English, العربية (full right-to-left support), Deutsch, Italiano, Русский and हिन्दी."
+      },
+      {
+        "q": "Does Suu have an Apple Watch app?",
+        "a": "Suu does not have its own Apple Watch app yet — it's coming soon. Today the workouts, steps and active energy your Apple Watch records flow into Suu through Apple Health and raise your water goal automatically. For hands-free logging from your wrist you can use the Siri command.",
+        "link": {
+          "href": "blog/en/apple-watch-water-tracking.html",
+          "label": "Setup guide"
+        }
+      },
+      {
+        "q": "Is my data safe?",
+        "a": "Your data belongs entirely to you. There is no ad tracking and data is not shared with third parties. With voice entry your speech is converted to text by your device's operating system — the audio is never sent to Suu's servers. Meal photos are not stored permanently after analysis.",
+        "link": {
+          "href": "gizlilik-politikasi.html",
+          "label": "Privacy policy"
+        }
+      },
+      {
+        "q": "Why use Suu instead of MyFitnessPal or Yazio?",
+        "a": "MyFitnessPal has a broader food database and Yazio has a stronger recipe library. What sets Suu apart is completeness: water tracking, photo calorie analysis and exercise tracking live in one app and are connected — your workout updates your water goal and your meal updates your digestion-water need. It also offers real hydration maths across 91 beverages and support for 7 languages.",
+        "link": {
+          "href": "blog/en/suu-vs-myfitnesspal.html",
+          "label": "Detailed comparison"
+        }
+      }
+    ]
+  },
+  "disclaimer": "Suu is not intended for medical diagnosis or treatment. Consult a healthcare professional for health-related decisions.",
+  "cta": {
+    "head": "Water, calories and exercise — in one app, starting today",
+    "sub": "Download free, try Premium free for 3 days."
+  },
+  "footer": {
+    "blurb": "Water tracking, calorie counter and exercise tracking in one app. Built solo in Istanbul.",
+    "columns": [
+      {
+        "title": "Product",
+        "links": [
+          {
+            "href": "ozellikler-en.html",
+            "label": "Features"
+          },
+          {
+            "href": "premium-en.html",
+            "label": "Premium"
+          },
+          {
+            "href": "download.html",
+            "label": "Download"
+          },
+          {
+            "href": "water-calculator.html",
+            "label": "Water Calculator"
+          },
+          {
+            "href": "who-is-suu-for.html",
+            "label": "Who is it for?"
+          }
+        ]
+      },
+      {
+        "title": "Explore",
+        "links": [
+          {
+            "href": "blog-en.html",
+            "label": "Blog"
+          },
+          {
+            "href": "suu-index.html",
+            "label": "Suu Index"
+          },
+          {
+            "href": "adaptive-hydration-brain.html",
+            "label": "Adaptive Hydration Brain"
+          },
+          {
+            "href": "personal-hydration-plan.html",
+            "label": "Hydration Plan"
+          },
+          {
+            "href": "faq-en.html",
+            "label": "FAQ"
+          }
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          {
+            "href": "about.html",
+            "label": "About"
+          },
+          {
+            "href": "ekip.html",
+            "label": "Team"
+          },
+          {
+            "href": "gizlilik-politikasi.html",
+            "label": "Privacy Policy"
+          },
+          {
+            "href": "kullanim-sartlari.html",
+            "label": "Terms of Use"
+          },
+          {
+            "href": "delete-account.html",
+            "label": "Delete Account"
+          }
+        ]
+      }
+    ]
+  },
+  "schema": {
+    "features_ios": [
+      "Photo calorie analysis — calories, protein, carbs and fat from a meal photo",
+      "Voice and text meal logging",
+      "Automatic macro calculation and nutrition analysis",
+      "1-100 nutrition score",
+      "91 beverages with real hydration contribution",
+      "Smart water goal based on age, weight and activity",
+      "Automatic goal adjustment by air temperature",
+      "Digestion water calculation from what you eat",
+      "Suu Index — 0-100 hydration score",
+      "Adaptive Hydration Brain — adaptive goal engine",
+      "Around 50 sport activities",
+      "Distance, duration, pace, average speed and calories for running and walking",
+      "Speed, average speed, distance, elevation and duration for cycling",
+      "Workouts automatically update the water goal",
+      "Suu AI chat assistant",
+      "Daily, weekly and monthly charts",
+      "PDF and CSV report export",
+      "Story sharing",
+      "Virtual pet and badges",
+      "Friend leagues — weekly, up to 4 people",
+      "Two-way Apple Health sync",
+      "Siri shortcuts",
+      "Dynamic Island",
+      "Live Activities",
+      "Lock screen and home screen widgets",
+      "VoiceOver accessibility support"
+    ],
+    "features_android": [
+      "Photo calorie analysis",
+      "Voice and text meal logging",
+      "Automatic macro calculation",
+      "91 beverages",
+      "Around 50 sport activities",
+      "Suu AI chat assistant",
+      "Two-way Google Health Connect sync",
+      "Home screen widgets",
+      "Story sharing",
+      "Virtual pet and friend leagues",
+      "TalkBack accessibility support"
+    ]
+  }
+}

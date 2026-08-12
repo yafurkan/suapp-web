@@ -1,305 +1,175 @@
 /**
- * Suu - Language Switcher
- * Detects browser language, redirects to appropriate page,
- * and injects TR/EN/AR/RU switcher buttons into the navbar.
+ * Suu — Dil seçici   [ÜRETİLMİŞ DOSYA — elle düzenlemeyin]
+ *
+ * Kaynak : content/lang-switcher.template.js + content/page-registry.json
+ * Üretim : python3 scripts/build-i18n-map.py --apply
+ *
+ * Harita dosyaya gömülüdür — ek ağ isteği yoktur, tüm sitede tek önbellek.
+ *
+ * NOT: Otomatik yönlendirme BİLEREK yoktur. Googlebot'un tarayıcı dili EN
+ * olduğu için RU/AR sayfalarına geldiğinde EN'e yönlendiriliyordu ve Search
+ * Console "Yönlendirmeli sayfa" hatası veriyordu. Manuel seçim yeterli.
  */
 (function () {
     'use strict';
 
-    // Page map: current filename → language variants
-    var PAGE_MAP = {
-        'index.html':       { tr: '/',                 en: 'hosgeldiniz-en.html', ar: 'hosgeldiniz-ar.html', ru: 'hosgeldiniz-ru.html' },
-        '':                 { tr: '/',                 en: 'hosgeldiniz-en.html', ar: 'hosgeldiniz-ar.html', ru: 'hosgeldiniz-ru.html' },
-        'ozellikler.html':     { tr: 'ozellikler.html', en: 'ozellikler-en.html', ar: 'ozellikler-ar.html', ru: 'ozellikler-ru.html' },
-        'ozellikler-en.html':  { tr: 'ozellikler.html', en: 'ozellikler-en.html', ar: 'ozellikler-ar.html', ru: 'ozellikler-ru.html' },
-        'ozellikler-ar.html':  { tr: 'ozellikler.html', en: 'ozellikler-en.html', ar: 'ozellikler-ar.html', ru: 'ozellikler-ru.html' },
-        'ozellikler-ru.html':  { tr: 'ozellikler.html', en: 'ozellikler-en.html', ar: 'ozellikler-ar.html', ru: 'ozellikler-ru.html' },
-        'faq.html':            { tr: 'faq.html', en: 'faq-en.html', ar: 'faq-ar.html', ru: 'faq-ru.html' },
-        'faq-en.html':         { tr: 'faq.html', en: 'faq-en.html', ar: 'faq-ar.html', ru: 'faq-ru.html' },
-        'faq-ar.html':         { tr: 'faq.html', en: 'faq-en.html', ar: 'faq-ar.html', ru: 'faq-ru.html' },
-        'faq-ru.html':         { tr: 'faq.html', en: 'faq-en.html', ar: 'faq-ar.html', ru: 'faq-ru.html' },
-        'blog.html':        { tr: 'blog.html',         en: 'blog-en.html',        ar: 'blog-ar.html',        ru: 'blog-ru.html' },
-        'su-hesaplayici.html':    { tr: 'su-hesaplayici.html', en: 'water-calculator.html', ar: 'water-calculator-ar.html', ru: 'water-calculator-ru.html' },
-        'water-calculator.html':  { tr: 'su-hesaplayici.html', en: 'water-calculator.html', ar: 'water-calculator-ar.html', ru: 'water-calculator-ru.html' },
-        'water-calculator-ar.html':{ tr: 'su-hesaplayici.html', en: 'water-calculator.html', ar: 'water-calculator-ar.html', ru: 'water-calculator-ru.html' },
-        'water-calculator-ru.html':{ tr: 'su-hesaplayici.html', en: 'water-calculator.html', ar: 'water-calculator-ar.html', ru: 'water-calculator-ru.html' },
-        'premium.html':     { tr: 'premium.html', en: 'premium-en.html', ar: 'premium-ar.html', ru: 'premium-ru.html' },
-        'premium-en.html':  { tr: 'premium.html', en: 'premium-en.html', ar: 'premium-ar.html', ru: 'premium-ru.html' },
-        'premium-ar.html':  { tr: 'premium.html', en: 'premium-en.html', ar: 'premium-ar.html', ru: 'premium-ru.html' },
-        'premium-ru.html':  { tr: 'premium.html', en: 'premium-en.html', ar: 'premium-ar.html', ru: 'premium-ru.html' },
-        'indir.html':       { tr: 'indir.html', en: 'download.html', ar: 'download-ar.html', ru: 'download-ru.html' },
-        'download.html':    { tr: 'indir.html', en: 'download.html', ar: 'download-ar.html', ru: 'download-ru.html' },
-        'download-ar.html': { tr: 'indir.html', en: 'download.html', ar: 'download-ar.html', ru: 'download-ru.html' },
-        'download-ru.html': { tr: 'indir.html', en: 'download.html', ar: 'download-ar.html', ru: 'download-ru.html' },
-        'ana-beyin.html':                  { tr: 'ana-beyin.html', en: 'adaptive-hydration-brain.html', ar: 'adaptive-hydration-brain-ar.html', ru: 'adaptive-hydration-brain-ru.html' },
-        'adaptive-hydration-brain.html':   { tr: 'ana-beyin.html', en: 'adaptive-hydration-brain.html', ar: 'adaptive-hydration-brain-ar.html', ru: 'adaptive-hydration-brain-ru.html' },
-        'adaptive-hydration-brain-ar.html':{ tr: 'ana-beyin.html', en: 'adaptive-hydration-brain.html', ar: 'adaptive-hydration-brain-ar.html', ru: 'adaptive-hydration-brain-ru.html' },
-        'adaptive-hydration-brain-ru.html':{ tr: 'ana-beyin.html', en: 'adaptive-hydration-brain.html', ar: 'adaptive-hydration-brain-ar.html', ru: 'adaptive-hydration-brain-ru.html' },
-        'suu-endeksi.html':  { tr: 'suu-endeksi.html', en: 'suu-index.html', ar: 'suu-index-ar.html', ru: 'suu-index-ru.html' },
-        'suu-index.html':    { tr: 'suu-endeksi.html', en: 'suu-index.html', ar: 'suu-index-ar.html', ru: 'suu-index-ru.html' },
-        'suu-index-ar.html': { tr: 'suu-endeksi.html', en: 'suu-index.html', ar: 'suu-index-ar.html', ru: 'suu-index-ru.html' },
-        'suu-index-ru.html': { tr: 'suu-endeksi.html', en: 'suu-index.html', ar: 'suu-index-ar.html', ru: 'suu-index-ru.html' },
-        'hidrasyon-plani.html':            { tr: 'hidrasyon-plani.html', en: 'personal-hydration-plan.html', ar: 'personal-hydration-plan-ar.html', ru: 'personal-hydration-plan-ru.html' },
-        'personal-hydration-plan.html':    { tr: 'hidrasyon-plani.html', en: 'personal-hydration-plan.html', ar: 'personal-hydration-plan-ar.html', ru: 'personal-hydration-plan-ru.html' },
-        'personal-hydration-plan-ar.html': { tr: 'hidrasyon-plani.html', en: 'personal-hydration-plan.html', ar: 'personal-hydration-plan-ar.html', ru: 'personal-hydration-plan-ru.html' },
-        'personal-hydration-plan-ru.html': { tr: 'hidrasyon-plani.html', en: 'personal-hydration-plan.html', ar: 'personal-hydration-plan-ar.html', ru: 'personal-hydration-plan-ru.html' },
-        'kimler-icin.html':      { tr: 'kimler-icin.html', en: 'who-is-suu-for.html', ar: 'who-is-suu-for-ar.html', ru: 'who-is-suu-for-ru.html' },
-        'who-is-suu-for.html':   { tr: 'kimler-icin.html', en: 'who-is-suu-for.html', ar: 'who-is-suu-for-ar.html', ru: 'who-is-suu-for-ru.html' },
-        'who-is-suu-for-ar.html':{ tr: 'kimler-icin.html', en: 'who-is-suu-for.html', ar: 'who-is-suu-for-ar.html', ru: 'who-is-suu-for-ru.html' },
-        'who-is-suu-for-ru.html':{ tr: 'kimler-icin.html', en: 'who-is-suu-for.html', ar: 'who-is-suu-for-ar.html', ru: 'who-is-suu-for-ru.html' },
-        'hosgeldiniz-en.html': { tr: '/',              en: 'hosgeldiniz-en.html', ar: 'hosgeldiniz-ar.html', ru: 'hosgeldiniz-ru.html' },
-        'hosgeldiniz-ar.html': { tr: '/',              en: 'hosgeldiniz-en.html', ar: 'hosgeldiniz-ar.html', ru: 'hosgeldiniz-ru.html' },
-        'hosgeldiniz-ru.html': { tr: '/',              en: 'hosgeldiniz-en.html', ar: 'hosgeldiniz-ar.html', ru: 'hosgeldiniz-ru.html' },
-        'blog-en.html':     { tr: 'blog.html',          en: 'blog-en.html',        ar: 'blog-ar.html',        ru: 'blog-ru.html' },
-        'blog-ar.html':     { tr: 'blog.html',          en: 'blog-en.html',        ar: 'blog-ar.html',        ru: 'blog-ru.html' },
-        'blog-ru.html':     { tr: 'blog.html',          en: 'blog-en.html',        ar: 'blog-ar.html',        ru: 'blog-ru.html' },
-        'hakkimizda.html':  { tr: 'hakkimizda.html',    en: 'about.html',          ar: 'hakkimizda-ar.html',  ru: 'hakkimizda-ru.html' },
-        'about.html':       { tr: 'hakkimizda.html',    en: 'about.html',          ar: 'hakkimizda-ar.html',  ru: 'hakkimizda-ru.html' },
-        'hakkimizda-ar.html': { tr: 'hakkimizda.html',  en: 'about.html',          ar: 'hakkimizda-ar.html',  ru: 'hakkimizda-ru.html' },
-        'hakkimizda-ru.html': { tr: 'hakkimizda.html',  en: 'about.html',          ar: 'hakkimizda-ar.html',  ru: 'hakkimizda-ru.html' },
-        'ekip.html':        { tr: 'ekip.html',          en: 'about.html',          ar: 'hakkimizda-ar.html',  ru: 'hakkimizda-ru.html' },
-        // Blog post cross-language mappings (TR ↔ EN ↔ AR ↔ RU) — absolute paths from root
-        'su-icmenin-faydalari.html':              { tr: '/blog/su-icmenin-faydalari.html',              en: '/blog/en/benefits-of-drinking-water.html',  ar: '/blog/ar/fawaid-shurb-almae.html',          ru: '/blog/ru/polza-pitia-vody.html' },
-        'benefits-of-drinking-water.html':        { tr: '/blog/su-icmenin-faydalari.html',              en: '/blog/en/benefits-of-drinking-water.html',  ar: '/blog/ar/fawaid-shurb-almae.html',          ru: '/blog/ru/polza-pitia-vody.html' },
-        'fawaid-shurb-almae.html':                { tr: '/blog/su-icmenin-faydalari.html',              en: '/blog/en/benefits-of-drinking-water.html',  ar: '/blog/ar/fawaid-shurb-almae.html',          ru: '/blog/ru/polza-pitia-vody.html' },
-        'polza-pitia-vody.html':                  { tr: '/blog/su-icmenin-faydalari.html',              en: '/blog/en/benefits-of-drinking-water.html',  ar: '/blog/ar/fawaid-shurb-almae.html',          ru: '/blog/ru/polza-pitia-vody.html' },
-        'gunluk-ne-kadar-su-icmeli.html':         { tr: '/blog/gunluk-ne-kadar-su-icmeli.html',        en: '/blog/en/how-much-water-should-i-drink.html', ar: '/blog/ar/kam-litr-mae-yawmiyan.html',     ru: '/blog/ru/skolko-vody-pit-v-den.html' },
-        'how-much-water-should-i-drink.html':     { tr: '/blog/gunluk-ne-kadar-su-icmeli.html',        en: '/blog/en/how-much-water-should-i-drink.html', ar: '/blog/ar/kam-litr-mae-yawmiyan.html',     ru: '/blog/ru/skolko-vody-pit-v-den.html' },
-        'kam-litr-mae-yawmiyan.html':             { tr: '/blog/gunluk-ne-kadar-su-icmeli.html',        en: '/blog/en/how-much-water-should-i-drink.html', ar: '/blog/ar/kam-litr-mae-yawmiyan.html',     ru: '/blog/ru/skolko-vody-pit-v-den.html' },
-        'skolko-vody-pit-v-den.html':             { tr: '/blog/gunluk-ne-kadar-su-icmeli.html',        en: '/blog/en/how-much-water-should-i-drink.html', ar: '/blog/ar/kam-litr-mae-yawmiyan.html',     ru: '/blog/ru/skolko-vody-pit-v-den.html' },
-        'su-takip-uygulamasi-neden-kullanmaliyim.html': { tr: '/blog/su-takip-uygulamasi-neden-kullanmaliyim.html', en: '/blog/en/best-water-tracking-app.html', ar: '/blog/ar/afdal-tatbiq-mae.html', ru: '/blog/ru/luchshee-prilozhenie-dlya-vody.html' },
-        'best-water-tracking-app.html':           { tr: '/blog/su-takip-uygulamasi-neden-kullanmaliyim.html', en: '/blog/en/best-water-tracking-app.html', ar: '/blog/ar/afdal-tatbiq-mae.html', ru: '/blog/ru/luchshee-prilozhenie-dlya-vody.html' },
-        'afdal-tatbiq-mae.html':                  { tr: '/blog/su-takip-uygulamasi-neden-kullanmaliyim.html', en: '/blog/en/best-water-tracking-app.html', ar: '/blog/ar/afdal-tatbiq-mae.html', ru: '/blog/ru/luchshee-prilozhenie-dlya-vody.html' },
-        'luchshee-prilozhenie-dlya-vody.html':    { tr: '/blog/su-takip-uygulamasi-neden-kullanmaliyim.html', en: '/blog/en/best-water-tracking-app.html', ar: '/blog/ar/afdal-tatbiq-mae.html', ru: '/blog/ru/luchshee-prilozhenie-dlya-vody.html' },
-        'su-icme-aliskanlik.html':                { tr: '/blog/su-icme-aliskanlik.html',                en: '/blog/en/water-drinking-habits.html',       ar: '/blog/ar/adat-shurb-almae.html',            ru: '/blog/ru/privychka-pit-vodu.html' },
-        'water-drinking-habits.html':             { tr: '/blog/su-icme-aliskanlik.html',                en: '/blog/en/water-drinking-habits.html',       ar: '/blog/ar/adat-shurb-almae.html',            ru: '/blog/ru/privychka-pit-vodu.html' },
-        'adat-shurb-almae.html':                  { tr: '/blog/su-icme-aliskanlik.html',                en: '/blog/en/water-drinking-habits.html',       ar: '/blog/ar/adat-shurb-almae.html',            ru: '/blog/ru/privychka-pit-vodu.html' },
-        'privychka-pit-vodu.html':                { tr: '/blog/su-icme-aliskanlik.html',                en: '/blog/en/water-drinking-habits.html',       ar: '/blog/ar/adat-shurb-almae.html',            ru: '/blog/ru/privychka-pit-vodu.html' },
-        'spor-ve-hidrasyon.html':                 { tr: '/blog/spor-ve-hidrasyon.html',                 en: '/blog/en/hydration-and-exercise.html',      ar: '/blog/ar/arriyada-waltartib.html',          ru: '/blog/ru/sport-i-gidratatsiya.html' },
-        'hydration-and-exercise.html':            { tr: '/blog/spor-ve-hidrasyon.html',                 en: '/blog/en/hydration-and-exercise.html',      ar: '/blog/ar/arriyada-waltartib.html',          ru: '/blog/ru/sport-i-gidratatsiya.html' },
-        'arriyada-waltartib.html':                { tr: '/blog/spor-ve-hidrasyon.html',                 en: '/blog/en/hydration-and-exercise.html',      ar: '/blog/ar/arriyada-waltartib.html',          ru: '/blog/ru/sport-i-gidratatsiya.html' },
-        'sport-i-gidratatsiya.html':              { tr: '/blog/spor-ve-hidrasyon.html',                 en: '/blog/en/hydration-and-exercise.html',      ar: '/blog/ar/arriyada-waltartib.html',          ru: '/blog/ru/sport-i-gidratatsiya.html' },
-        'kahve-cay-su-sayar-mi.html':             { tr: '/blog/kahve-cay-su-sayar-mi.html',             en: '/blog/en/coffee-tea-hydration.html',        ar: '/blog/ar/alqahwa-walshay-walmae.html',      ru: '/blog/ru/kofe-chay-i-voda.html' },
-        'coffee-tea-hydration.html':              { tr: '/blog/kahve-cay-su-sayar-mi.html',             en: '/blog/en/coffee-tea-hydration.html',        ar: '/blog/ar/alqahwa-walshay-walmae.html',      ru: '/blog/ru/kofe-chay-i-voda.html' },
-        'alqahwa-walshay-walmae.html':            { tr: '/blog/kahve-cay-su-sayar-mi.html',             en: '/blog/en/coffee-tea-hydration.html',        ar: '/blog/ar/alqahwa-walshay-walmae.html',      ru: '/blog/ru/kofe-chay-i-voda.html' },
-        'kofe-chay-i-voda.html':                  { tr: '/blog/kahve-cay-su-sayar-mi.html',             en: '/blog/en/coffee-tea-hydration.html',        ar: '/blog/ar/alqahwa-walshay-walmae.html',      ru: '/blog/ru/kofe-chay-i-voda.html' },
-        'susuzluk-belirtileri.html':              { tr: '/blog/susuzluk-belirtileri.html',              en: '/blog/en/signs-of-dehydration.html',        ar: '/blog/ar/alamat-aljafaf.html',              ru: '/blog/ru/priznaki-obezvozhivaniya.html' },
-        'signs-of-dehydration.html':              { tr: '/blog/susuzluk-belirtileri.html',              en: '/blog/en/signs-of-dehydration.html',        ar: '/blog/ar/alamat-aljafaf.html',              ru: '/blog/ru/priznaki-obezvozhivaniya.html' },
-        'alamat-aljafaf.html':                    { tr: '/blog/susuzluk-belirtileri.html',              en: '/blog/en/signs-of-dehydration.html',        ar: '/blog/ar/alamat-aljafaf.html',              ru: '/blog/ru/priznaki-obezvozhivaniya.html' },
-        'priznaki-obezvozhivaniya.html':          { tr: '/blog/susuzluk-belirtileri.html',              en: '/blog/en/signs-of-dehydration.html',        ar: '/blog/ar/alamat-aljafaf.html',              ru: '/blog/ru/priznaki-obezvozhivaniya.html' },
-        'sabah-su-icmenin-faydalari.html':        { tr: '/blog/sabah-su-icmenin-faydalari.html',        en: '/blog/en/morning-water-benefits.html',      ar: '/blog/ar/fawaid-shurb-almae-sabahan.html',  ru: '/blog/ru/voda-utrom.html' },
-        'morning-water-benefits.html':            { tr: '/blog/sabah-su-icmenin-faydalari.html',        en: '/blog/en/morning-water-benefits.html',      ar: '/blog/ar/fawaid-shurb-almae-sabahan.html',  ru: '/blog/ru/voda-utrom.html' },
-        'fawaid-shurb-almae-sabahan.html':        { tr: '/blog/sabah-su-icmenin-faydalari.html',        en: '/blog/en/morning-water-benefits.html',      ar: '/blog/ar/fawaid-shurb-almae-sabahan.html',  ru: '/blog/ru/voda-utrom.html' },
-        'voda-utrom.html':                        { tr: '/blog/sabah-su-icmenin-faydalari.html',        en: '/blog/en/morning-water-benefits.html',      ar: '/blog/ar/fawaid-shurb-almae-sabahan.html',  ru: '/blog/ru/voda-utrom.html' },
-        'kilo-ve-su.html':                        { tr: '/blog/kilo-ve-su.html',                        en: '/blog/en/water-and-weight-loss.html',        ar: '/blog/ar/almae-walidara-alwazn.html',      ru: '/blog/ru/voda-i-pohudenie.html' },
-        'water-and-weight-loss.html':             { tr: '/blog/kilo-ve-su.html',                        en: '/blog/en/water-and-weight-loss.html',        ar: '/blog/ar/almae-walidara-alwazn.html',      ru: '/blog/ru/voda-i-pohudenie.html' },
-        'almae-walidara-alwazn.html':             { tr: '/blog/kilo-ve-su.html',                        en: '/blog/en/water-and-weight-loss.html',        ar: '/blog/ar/almae-walidara-alwazn.html',      ru: '/blog/ru/voda-i-pohudenie.html' },
-        'voda-i-pohudenie.html':                  { tr: '/blog/kilo-ve-su.html',                        en: '/blog/en/water-and-weight-loss.html',        ar: '/blog/ar/almae-walidara-alwazn.html',      ru: '/blog/ru/voda-i-pohudenie.html' },
-        'su-ve-cilt-sagligi.html':                { tr: '/blog/su-ve-cilt-sagligi.html',                en: '/blog/en/water-and-skin-health.html',       ar: '/blog/ar/almae-walsihha-aljildiyya.html',   ru: '/blog/ru/voda-i-zdorove-kozhi.html' },
-        'water-and-skin-health.html':             { tr: '/blog/su-ve-cilt-sagligi.html',                en: '/blog/en/water-and-skin-health.html',       ar: '/blog/ar/almae-walsihha-aljildiyya.html',   ru: '/blog/ru/voda-i-zdorove-kozhi.html' },
-        'almae-walsihha-aljildiyya.html':         { tr: '/blog/su-ve-cilt-sagligi.html',                en: '/blog/en/water-and-skin-health.html',       ar: '/blog/ar/almae-walsihha-aljildiyya.html',   ru: '/blog/ru/voda-i-zdorove-kozhi.html' },
-        'voda-i-zdorove-kozhi.html':              { tr: '/blog/su-ve-cilt-sagligi.html',                en: '/blog/en/water-and-skin-health.html',       ar: '/blog/ar/almae-walsihha-aljildiyya.html',   ru: '/blog/ru/voda-i-zdorove-kozhi.html' },
-        'su-ve-uyku-kalitesi.html':               { tr: '/blog/su-ve-uyku-kalitesi.html',               en: '/blog/en/water-and-sleep.html',              ar: '/blog/ar/almae-wannawm.html',              ru: '/blog/ru/voda-i-son.html' },
-        'water-and-sleep.html':                   { tr: '/blog/su-ve-uyku-kalitesi.html',               en: '/blog/en/water-and-sleep.html',              ar: '/blog/ar/almae-wannawm.html',              ru: '/blog/ru/voda-i-son.html' },
-        'almae-wannawm.html':                     { tr: '/blog/su-ve-uyku-kalitesi.html',               en: '/blog/en/water-and-sleep.html',              ar: '/blog/ar/almae-wannawm.html',              ru: '/blog/ru/voda-i-son.html' },
-        'voda-i-son.html':                        { tr: '/blog/su-ve-uyku-kalitesi.html',               en: '/blog/en/water-and-sleep.html',              ar: '/blog/ar/almae-wannawm.html',              ru: '/blog/ru/voda-i-son.html' },
-        'su-ve-bobrek-sagligi.html':              { tr: '/blog/su-ve-bobrek-sagligi.html',              en: '/blog/en/water-and-kidney-health.html',     ar: '/blog/ar/almae-wasihhat-alkulaa.html',     ru: '/blog/ru/voda-i-zdorove-pochek.html' },
-        'water-and-kidney-health.html':           { tr: '/blog/su-ve-bobrek-sagligi.html',              en: '/blog/en/water-and-kidney-health.html',     ar: '/blog/ar/almae-wasihhat-alkulaa.html',     ru: '/blog/ru/voda-i-zdorove-pochek.html' },
-        'almae-wasihhat-alkulaa.html':            { tr: '/blog/su-ve-bobrek-sagligi.html',              en: '/blog/en/water-and-kidney-health.html',     ar: '/blog/ar/almae-wasihhat-alkulaa.html',     ru: '/blog/ru/voda-i-zdorove-pochek.html' },
-        'voda-i-zdorove-pochek.html':             { tr: '/blog/su-ve-bobrek-sagligi.html',              en: '/blog/en/water-and-kidney-health.html',     ar: '/blog/ar/almae-wasihhat-alkulaa.html',     ru: '/blog/ru/voda-i-zdorove-pochek.html' },
-        // Suu Premium %2 Bağış Programı — sosyal sorumluluk / şeffaflık postu (2026-05-11)
-        'afrika-su-kuyusu-bagis-programi.html':   { tr: '/blog/afrika-su-kuyusu-bagis-programi.html',   en: '/blog/en/africa-water-well-donation-program.html', ar: '/blog/ar/barnamaj-tabarru-abar-almae-afriqia.html', ru: '/blog/ru/programma-pozhertvovanij-kolodtsy-afrika.html' },
-        'africa-water-well-donation-program.html':{ tr: '/blog/afrika-su-kuyusu-bagis-programi.html',   en: '/blog/en/africa-water-well-donation-program.html', ar: '/blog/ar/barnamaj-tabarru-abar-almae-afriqia.html', ru: '/blog/ru/programma-pozhertvovanij-kolodtsy-afrika.html' },
-        'barnamaj-tabarru-abar-almae-afriqia.html':{ tr: '/blog/afrika-su-kuyusu-bagis-programi.html',  en: '/blog/en/africa-water-well-donation-program.html', ar: '/blog/ar/barnamaj-tabarru-abar-almae-afriqia.html', ru: '/blog/ru/programma-pozhertvovanij-kolodtsy-afrika.html' },
-        'programma-pozhertvovanij-kolodtsy-afrika.html':{ tr: '/blog/afrika-su-kuyusu-bagis-programi.html', en: '/blog/en/africa-water-well-donation-program.html', ar: '/blog/ar/barnamaj-tabarru-abar-almae-afriqia.html', ru: '/blog/ru/programma-pozhertvovanij-kolodtsy-afrika.html' },
+    var I18N = {"_generated_by":"scripts/build-i18n-map.py","_source":"content/page-registry.json","_langs":["tr","en","ar","ru","de","it","hi"],"_default":"tr","_shared":["gizlilik-politikasi.html","kullanim-sartlari.html","delete-account.html"],"pages":{"404-ar.html":{"tr":"/404.html","en":"/404-en.html","ar":"/404-ar.html","ru":"/404-ru.html"},"404-en.html":{"tr":"/404.html","en":"/404-en.html","ar":"/404-ar.html","ru":"/404-ru.html"},"404-ru.html":{"tr":"/404.html","en":"/404-en.html","ar":"/404-ar.html","ru":"/404-ru.html"},"404.html":{"tr":"/404.html","en":"/404-en.html","ar":"/404-ar.html","ru":"/404-ru.html"},"aaseer-am-mae.html":{"tr":"/blog/meyve-suyu-vs-su.html","en":"/blog/en/juice-vs-water.html","ar":"/blog/ar/aaseer-am-mae.html","ru":"/blog/ru/sok-ili-voda.html"},"about.html":{"tr":"/hakkimizda.html","en":"/about.html","ar":"/hakkimizda-ar.html","ru":"/hakkimizda-ru.html"},"activity-based-water-tracking.html":{"tr":"/blog/aktivite-bazli-su-takibi.html","en":"/blog/en/activity-based-water-tracking.html","ar":"/blog/ar/almae-walnashat-aljasadi.html","ru":"/blog/ru/voda-po-aktivnosti.html"},"adaptive-hydration-brain-ar.html":{"tr":"/ana-beyin.html","en":"/adaptive-hydration-brain.html","ar":"/adaptive-hydration-brain-ar.html","ru":"/adaptive-hydration-brain-ru.html"},"adaptive-hydration-brain-ru.html":{"tr":"/ana-beyin.html","en":"/adaptive-hydration-brain.html","ar":"/adaptive-hydration-brain-ar.html","ru":"/adaptive-hydration-brain-ru.html"},"adaptive-hydration-brain.html":{"tr":"/ana-beyin.html","en":"/adaptive-hydration-brain.html","ar":"/adaptive-hydration-brain-ar.html","ru":"/adaptive-hydration-brain-ru.html"},"adat-shurb-almae.html":{"tr":"/blog/su-icme-aliskanlik.html","en":"/blog/en/water-drinking-habits.html","ar":"/blog/ar/adat-shurb-almae.html","ru":"/blog/ru/privychka-pit-vodu.html"},"afdal-tatbiq-hisab-suerat.html":{"tr":"/blog/en-iyi-kalori-uygulamasi.html","en":"/blog/en/best-calorie-counting-app.html","ar":"/blog/ar/afdal-tatbiq-hisab-suerat.html","ru":"/blog/ru/luchshee-prilozhenie-podscheta-kalorij.html"},"afdal-tatbiq-mae.html":{"tr":"/blog/su-takip-uygulamasi-neden-kullanmaliyim.html","en":"/blog/en/best-water-tracking-app.html","ar":"/blog/ar/afdal-tatbiq-mae.html","ru":"/blog/ru/luchshee-prilozhenie-dlya-vody.html"},"africa-water-well-donation-program.html":{"tr":"/blog/afrika-su-kuyusu-bagis-programi.html","en":"/blog/en/africa-water-well-donation-program.html","ar":"/blog/ar/barnamaj-tabarru-abar-almae-afriqia.html","ru":"/blog/ru/programma-pozhertvovanij-kolodtsy-afrika.html"},"afrika-su-kuyusu-bagis-programi.html":{"tr":"/blog/afrika-su-kuyusu-bagis-programi.html","en":"/blog/en/africa-water-well-donation-program.html","ar":"/blog/ar/barnamaj-tabarru-abar-almae-afriqia.html","ru":"/blog/ru/programma-pozhertvovanij-kolodtsy-afrika.html"},"aktivite-bazli-su-takibi.html":{"tr":"/blog/aktivite-bazli-su-takibi.html","en":"/blog/en/activity-based-water-tracking.html","ar":"/blog/ar/almae-walnashat-aljasadi.html","ru":"/blog/ru/voda-po-aktivnosti.html"},"al-ajz-al-harari.html":{"tr":"/blog/kalori-acigi.html","en":"/blog/en/calorie-deficit.html","ar":"/blog/ar/al-ajz-al-harari.html","ru":"/blog/ru/deficit-kalorij.html"},"alamat-aljafaf.html":{"tr":"/blog/susuzluk-belirtileri.html","en":"/blog/en/signs-of-dehydration.html","ar":"/blog/ar/alamat-aljafaf.html","ru":"/blog/ru/priznaki-obezvozhivaniya.html"},"alkafayin-walsukar.html":{"tr":"/blog/kafein-seker-takibi.html","en":"/blog/en/caffeine-sugar-tracking.html","ar":"/blog/ar/alkafayin-walsukar.html","ru":"/blog/ru/kofein-i-sahar.html"},"alkol-sonrasi-hidrasyon.html":{"tr":"/blog/alkol-sonrasi-hidrasyon.html","en":"/blog/en/post-alcohol-hydration.html","ar":"/blog/ar/tarteeb-baad-alkohol.html","ru":"/blog/ru/gidratatsiya-posle-alkogolya.html"},"almae-walhml.html":{"tr":"/blog/hamilelikte-su-ihtiyaci.html","en":"/blog/en/hydration-during-pregnancy.html","ar":"/blog/ar/almae-walhml.html","ru":"/blog/ru/voda-i-beremennost.html"},"almae-walidara-alwazn.html":{"tr":"/blog/kilo-ve-su.html","en":"/blog/en/water-and-weight-loss.html","ar":"/blog/ar/almae-walidara-alwazn.html","ru":"/blog/ru/voda-i-pohudenie.html"},"almae-walnashat-aljasadi.html":{"tr":"/blog/aktivite-bazli-su-takibi.html","en":"/blog/en/activity-based-water-tracking.html","ar":"/blog/ar/almae-walnashat-aljasadi.html","ru":"/blog/ru/voda-po-aktivnosti.html"},"almae-walrida.html":{"tr":"/blog/emzirmede-su-ihtiyaci.html","en":"/blog/en/hydration-while-breastfeeding.html","ar":"/blog/ar/almae-walrida.html","ru":"/blog/ru/voda-i-kormlenie.html"},"almae-walsihha-aljildiyya.html":{"tr":"/blog/su-ve-cilt-sagligi.html","en":"/blog/en/water-and-skin-health.html","ar":"/blog/ar/almae-walsihha-aljildiyya.html","ru":"/blog/ru/voda-i-zdorove-kozhi.html"},"almae-wannawm.html":{"tr":"/blog/su-ve-uyku-kalitesi.html","en":"/blog/en/water-and-sleep.html","ar":"/blog/ar/almae-wannawm.html","ru":"/blog/ru/voda-i-son.html"},"almae-wasihhat-alkulaa.html":{"tr":"/blog/su-ve-bobrek-sagligi.html","en":"/blog/en/water-and-kidney-health.html","ar":"/blog/ar/almae-wasihhat-alkulaa.html","ru":"/blog/ru/voda-i-zdorove-pochek.html"},"alqahwa-walshay-walmae.html":{"tr":"/blog/kahve-cay-su-sayar-mi.html","en":"/blog/en/coffee-tea-hydration.html","ar":"/blog/ar/alqahwa-walshay-walmae.html","ru":"/blog/ru/kofe-chay-i-voda.html"},"alwade-albasit-walmutaqaddim.html":{"tr":"/blog/basit-gelismis-mod.html","en":"/blog/en/simple-advanced-mode.html","ar":"/blog/ar/alwade-albasit-walmutaqaddim.html","ru":"/blog/ru/prostoy-rasshirennyy-rezhim.html"},"ana-beyin.html":{"tr":"/ana-beyin.html","en":"/adaptive-hydration-brain.html","ar":"/adaptive-hydration-brain-ar.html","ru":"/adaptive-hydration-brain-ru.html"},"apple-watch-su-takibi.html":{"tr":"/blog/apple-watch-su-takibi.html","en":"/blog/en/apple-watch-water-tracking.html","ru":"/blog/ru/apple-watch-voda.html"},"apple-watch-voda.html":{"tr":"/blog/apple-watch-su-takibi.html","en":"/blog/en/apple-watch-water-tracking.html","ru":"/blog/ru/apple-watch-voda.html"},"apple-watch-water-tracking.html":{"tr":"/blog/apple-watch-su-takibi.html","en":"/blog/en/apple-watch-water-tracking.html","ru":"/blog/ru/apple-watch-voda.html"},"arriyada-waltartib.html":{"tr":"/blog/spor-ve-hidrasyon.html","en":"/blog/en/hydration-and-exercise.html","ar":"/blog/ar/arriyada-waltartib.html","ru":"/blog/ru/sport-i-gidratatsiya.html"},"barnamaj-tabarru-abar-almae-afriqia.html":{"tr":"/blog/afrika-su-kuyusu-bagis-programi.html","en":"/blog/en/africa-water-well-donation-program.html","ar":"/blog/ar/barnamaj-tabarru-abar-almae-afriqia.html","ru":"/blog/ru/programma-pozhertvovanij-kolodtsy-afrika.html"},"basit-gelismis-mod.html":{"tr":"/blog/basit-gelismis-mod.html","en":"/blog/en/simple-advanced-mode.html","ar":"/blog/ar/alwade-albasit-walmutaqaddim.html","ru":"/blog/ru/prostoy-rasshirennyy-rezhim.html"},"benefits-of-drinking-water.html":{"tr":"/blog/su-icmenin-faydalari.html","en":"/blog/en/benefits-of-drinking-water.html","ar":"/blog/ar/fawaid-shurb-almae.html","ru":"/blog/ru/polza-pitia-vody.html"},"best-calorie-counting-app.html":{"tr":"/blog/en-iyi-kalori-uygulamasi.html","en":"/blog/en/best-calorie-counting-app.html","ar":"/blog/ar/afdal-tatbiq-hisab-suerat.html","ru":"/blog/ru/luchshee-prilozhenie-podscheta-kalorij.html"},"best-photo-calorie-app.html":{"tr":"/blog/en-iyi-fotografla-kalori-uygulamasi.html","en":"/blog/en/best-photo-calorie-app.html"},"best-water-tracking-app.html":{"tr":"/blog/su-takip-uygulamasi-neden-kullanmaliyim.html","en":"/blog/en/best-water-tracking-app.html","ar":"/blog/ar/afdal-tatbiq-mae.html","ru":"/blog/ru/luchshee-prilozhenie-dlya-vody.html"},"blog-ar.html":{"tr":"/blog.html","en":"/blog-en.html","ar":"/blog-ar.html","ru":"/blog-ru.html"},"blog-en.html":{"tr":"/blog.html","en":"/blog-en.html","ar":"/blog-ar.html","ru":"/blog-ru.html"},"blog-ru.html":{"tr":"/blog.html","en":"/blog-en.html","ar":"/blog-ar.html","ru":"/blog-ru.html"},"blog.html":{"tr":"/blog.html","en":"/blog-en.html","ar":"/blog-ar.html","ru":"/blog-ru.html"},"caffeine-sugar-tracking.html":{"tr":"/blog/kafein-seker-takibi.html","en":"/blog/en/caffeine-sugar-tracking.html","ar":"/blog/ar/alkafayin-walsukar.html","ru":"/blog/ru/kofein-i-sahar.html"},"calorie-deficit.html":{"tr":"/blog/kalori-acigi.html","en":"/blog/en/calorie-deficit.html","ar":"/blog/ar/al-ajz-al-harari.html","ru":"/blog/ru/deficit-kalorij.html"},"calories-burned-exercise.html":{"tr":"/blog/egzersizde-kalori-yakimi.html","en":"/blog/en/calories-burned-exercise.html","ar":"/blog/ar/hurq-al-suerat.html","ru":"/blog/ru/raskhod-kalorij.html"},"cay-hidrasyon.html":{"tr":"/blog/cay-hidrasyon.html","en":"/blog/en/tea-hydration.html","ar":"/blog/ar/tarteeb-asshay.html","ru":"/blog/ru/chai-i-gidratatsiya.html"},"chai-i-gidratatsiya.html":{"tr":"/blog/cay-hidrasyon.html","en":"/blog/en/tea-hydration.html","ar":"/blog/ar/tarteeb-asshay.html","ru":"/blog/ru/chai-i-gidratatsiya.html"},"coffee-tea-hydration.html":{"tr":"/blog/kahve-cay-su-sayar-mi.html","en":"/blog/en/coffee-tea-hydration.html","ar":"/blog/ar/alqahwa-walshay-walmae.html","ru":"/blog/ru/kofe-chay-i-voda.html"},"deficit-kalorij.html":{"tr":"/blog/kalori-acigi.html","en":"/blog/en/calorie-deficit.html","ar":"/blog/ar/al-ajz-al-harari.html","ru":"/blog/ru/deficit-kalorij.html"},"domashnij-pitomec-mini-igry.html":{"tr":"/blog/suu-evcil-hayvan-mini-oyunlar.html","en":"/blog/en/pet-companion-mini-games.html","ar":"/blog/ar/hayawan-aleef-aleab-mini.html","ru":"/blog/ru/domashnij-pitomec-mini-igry.html"},"download-ar.html":{"tr":"/indir.html","en":"/download.html","ar":"/download-ar.html","ru":"/download-ru.html"},"download-ru.html":{"tr":"/indir.html","en":"/download.html","ar":"/download-ar.html","ru":"/download-ru.html"},"download.html":{"tr":"/indir.html","en":"/download.html","ar":"/download-ar.html","ru":"/download-ru.html"},"egzersizde-kalori-yakimi.html":{"tr":"/blog/egzersizde-kalori-yakimi.html","en":"/blog/en/calories-burned-exercise.html","ar":"/blog/ar/hurq-al-suerat.html","ru":"/blog/ru/raskhod-kalorij.html"},"ekip.html":{"tr":"/ekip.html"},"emzirmede-su-ihtiyaci.html":{"tr":"/blog/emzirmede-su-ihtiyaci.html","en":"/blog/en/hydration-while-breastfeeding.html","ar":"/blog/ar/almae-walrida.html","ru":"/blog/ru/voda-i-kormlenie.html"},"en-iyi-fotografla-kalori-uygulamasi.html":{"tr":"/blog/en-iyi-fotografla-kalori-uygulamasi.html","en":"/blog/en/best-photo-calorie-app.html"},"en-iyi-kalori-uygulamasi.html":{"tr":"/blog/en-iyi-kalori-uygulamasi.html","en":"/blog/en/best-calorie-counting-app.html","ar":"/blog/ar/afdal-tatbiq-hisab-suerat.html","ru":"/blog/ru/luchshee-prilozhenie-podscheta-kalorij.html"},"energy-drink-control.html":{"tr":"/blog/enerji-icecegi-kontrolu.html","en":"/blog/en/energy-drink-control.html","ar":"/blog/ar/tahakum-mashroob-attaqa.html","ru":"/blog/ru/kontrol-energetikov.html"},"enerji-icecegi-kontrolu.html":{"tr":"/blog/enerji-icecegi-kontrolu.html","en":"/blog/en/energy-drink-control.html","ar":"/blog/ar/tahakum-mashroob-attaqa.html","ru":"/blog/ru/kontrol-energetikov.html"},"faq-ar.html":{"tr":"/faq.html","en":"/faq-en.html","ar":"/faq-ar.html","ru":"/faq-ru.html"},"faq-en.html":{"tr":"/faq.html","en":"/faq-en.html","ar":"/faq-ar.html","ru":"/faq-ru.html"},"faq-ru.html":{"tr":"/faq.html","en":"/faq-en.html","ar":"/faq-ar.html","ru":"/faq-ru.html"},"faq.html":{"tr":"/faq.html","en":"/faq-en.html","ar":"/faq-ar.html","ru":"/faq-ru.html"},"fawaid-shurb-almae-sabahan.html":{"tr":"/blog/sabah-su-icmenin-faydalari.html","en":"/blog/en/morning-water-benefits.html","ar":"/blog/ar/fawaid-shurb-almae-sabahan.html","ru":"/blog/ru/voda-utrom.html"},"fawaid-shurb-almae.html":{"tr":"/blog/su-icmenin-faydalari.html","en":"/blog/en/benefits-of-drinking-water.html","ar":"/blog/ar/fawaid-shurb-almae.html","ru":"/blog/ru/polza-pitia-vody.html"},"fotografla-kalori-sayma.html":{"tr":"/blog/fotografla-kalori-sayma.html","en":"/blog/en/photo-calorie-counting.html","ar":"/blog/ar/hisab-al-suerat-bil-sura.html","ru":"/blog/ru/kalorii-po-foto.html"},"free-calorie-counter-app.html":{"tr":"/blog/ucretsiz-kalori-sayaci.html","en":"/blog/en/free-calorie-counter-app.html"},"geymifikatsiya-vody.html":{"en":"/blog/en/water-tracking-gamification.html","ru":"/blog/ru/geymifikatsiya-vody.html"},"gidratatsiya-posle-alkogolya.html":{"tr":"/blog/alkol-sonrasi-hidrasyon.html","en":"/blog/en/post-alcohol-hydration.html","ar":"/blog/ar/tarteeb-baad-alkohol.html","ru":"/blog/ru/gidratatsiya-posle-alkogolya.html"},"golosovoj-vvod-kalorij.html":{"tr":"/blog/sesli-kalori-girisi.html","en":"/blog/en/voice-calorie-logging.html","ar":"/blog/ar/tasjil-suerat-bil-sawt.html","ru":"/blog/ru/golosovoj-vvod-kalorij.html"},"gunde-kac-kahve.html":{"tr":"/blog/gunde-kac-kahve.html","en":"/blog/en/how-many-cups-coffee.html","ar":"/blog/ar/kam-fanjan-qahwa.html","ru":"/blog/ru/skolko-kofe-v-den.html"},"gunluk-ne-kadar-su-icmeli.html":{"tr":"/blog/gunluk-ne-kadar-su-icmeli.html","en":"/blog/en/how-much-water-should-i-drink.html","ar":"/blog/ar/kam-litr-mae-yawmiyan.html","ru":"/blog/ru/skolko-vody-pit-v-den.html"},"hakkimizda-ar.html":{"tr":"/hakkimizda.html","en":"/about.html","ar":"/hakkimizda-ar.html","ru":"/hakkimizda-ru.html"},"hakkimizda-ru.html":{"tr":"/hakkimizda.html","en":"/about.html","ar":"/hakkimizda-ar.html","ru":"/hakkimizda-ru.html"},"hakkimizda.html":{"tr":"/hakkimizda.html","en":"/about.html","ar":"/hakkimizda-ar.html","ru":"/hakkimizda-ru.html"},"hamilelikte-su-ihtiyaci.html":{"tr":"/blog/hamilelikte-su-ihtiyaci.html","en":"/blog/en/hydration-during-pregnancy.html","ar":"/blog/ar/almae-walhml.html","ru":"/blog/ru/voda-i-beremennost.html"},"hayawan-aleef-aleab-mini.html":{"tr":"/blog/suu-evcil-hayvan-mini-oyunlar.html","en":"/blog/en/pet-companion-mini-games.html","ar":"/blog/ar/hayawan-aleef-aleab-mini.html","ru":"/blog/ru/domashnij-pitomec-mini-igry.html"},"hidrasyon-plani.html":{"tr":"/hidrasyon-plani.html","en":"/personal-hydration-plan.html","ar":"/personal-hydration-plan-ar.html","ru":"/personal-hydration-plan-ru.html"},"hidrasyon-skoru-nedir.html":{"tr":"/blog/hidrasyon-skoru-nedir.html","en":"/blog/en/hydration-score-explained.html","ru":"/blog/ru/otsenka-gidratatsii.html"},"hisab-al-macro.html":{"tr":"/blog/makro-hesaplama.html","en":"/blog/en/macro-calculation.html","ar":"/blog/ar/hisab-al-macro.html","ru":"/blog/ru/raschet-makrosov.html"},"hisab-al-suerat-bil-sura.html":{"tr":"/blog/fotografla-kalori-sayma.html","en":"/blog/en/photo-calorie-counting.html","ar":"/blog/ar/hisab-al-suerat-bil-sura.html","ru":"/blog/ru/kalorii-po-foto.html"},"hosgeldiniz-ar.html":{"tr":"/","en":"/hosgeldiniz-en.html","ar":"/hosgeldiniz-ar.html","ru":"/hosgeldiniz-ru.html","de":"/hosgeldiniz-de.html","it":"/hosgeldiniz-it.html","hi":"/hosgeldiniz-hi.html"},"hosgeldiniz-de.html":{"tr":"/","en":"/hosgeldiniz-en.html","ar":"/hosgeldiniz-ar.html","ru":"/hosgeldiniz-ru.html","de":"/hosgeldiniz-de.html","it":"/hosgeldiniz-it.html","hi":"/hosgeldiniz-hi.html"},"hosgeldiniz-en.html":{"tr":"/","en":"/hosgeldiniz-en.html","ar":"/hosgeldiniz-ar.html","ru":"/hosgeldiniz-ru.html","de":"/hosgeldiniz-de.html","it":"/hosgeldiniz-it.html","hi":"/hosgeldiniz-hi.html"},"hosgeldiniz-hi.html":{"tr":"/","en":"/hosgeldiniz-en.html","ar":"/hosgeldiniz-ar.html","ru":"/hosgeldiniz-ru.html","de":"/hosgeldiniz-de.html","it":"/hosgeldiniz-it.html","hi":"/hosgeldiniz-hi.html"},"hosgeldiniz-it.html":{"tr":"/","en":"/hosgeldiniz-en.html","ar":"/hosgeldiniz-ar.html","ru":"/hosgeldiniz-ru.html","de":"/hosgeldiniz-de.html","it":"/hosgeldiniz-it.html","hi":"/hosgeldiniz-hi.html"},"hosgeldiniz-ru.html":{"tr":"/","en":"/hosgeldiniz-en.html","ar":"/hosgeldiniz-ar.html","ru":"/hosgeldiniz-ru.html","de":"/hosgeldiniz-de.html","it":"/hosgeldiniz-it.html","hi":"/hosgeldiniz-hi.html"},"how-many-cups-coffee.html":{"tr":"/blog/gunde-kac-kahve.html","en":"/blog/en/how-many-cups-coffee.html","ar":"/blog/ar/kam-fanjan-qahwa.html","ru":"/blog/ru/skolko-kofe-v-den.html"},"how-much-water-should-i-drink.html":{"tr":"/blog/gunluk-ne-kadar-su-icmeli.html","en":"/blog/en/how-much-water-should-i-drink.html","ar":"/blog/ar/kam-litr-mae-yawmiyan.html","ru":"/blog/ru/skolko-vody-pit-v-den.html"},"hurq-al-suerat.html":{"tr":"/blog/egzersizde-kalori-yakimi.html","en":"/blog/en/calories-burned-exercise.html","ar":"/blog/ar/hurq-al-suerat.html","ru":"/blog/ru/raskhod-kalorij.html"},"hydration-and-exercise.html":{"tr":"/blog/spor-ve-hidrasyon.html","en":"/blog/en/hydration-and-exercise.html","ar":"/blog/ar/arriyada-waltartib.html","ru":"/blog/ru/sport-i-gidratatsiya.html"},"hydration-during-pregnancy.html":{"tr":"/blog/hamilelikte-su-ihtiyaci.html","en":"/blog/en/hydration-during-pregnancy.html","ar":"/blog/ar/almae-walhml.html","ru":"/blog/ru/voda-i-beremennost.html"},"hydration-score-explained.html":{"tr":"/blog/hidrasyon-skoru-nedir.html","en":"/blog/en/hydration-score-explained.html","ru":"/blog/ru/otsenka-gidratatsii.html"},"hydration-while-breastfeeding.html":{"tr":"/blog/emzirmede-su-ihtiyaci.html","en":"/blog/en/hydration-while-breastfeeding.html","ar":"/blog/ar/almae-walrida.html","ru":"/blog/ru/voda-i-kormlenie.html"},"index.html":{"tr":"/","en":"/hosgeldiniz-en.html","ar":"/hosgeldiniz-ar.html","ru":"/hosgeldiniz-ru.html","de":"/hosgeldiniz-de.html","it":"/hosgeldiniz-it.html","hi":"/hosgeldiniz-hi.html"},"indir.html":{"tr":"/indir.html","en":"/download.html","ar":"/download-ar.html","ru":"/download-ru.html"},"juice-vs-water.html":{"tr":"/blog/meyve-suyu-vs-su.html","en":"/blog/en/juice-vs-water.html","ar":"/blog/ar/aaseer-am-mae.html","ru":"/blog/ru/sok-ili-voda.html"},"kafein-seker-takibi.html":{"tr":"/blog/kafein-seker-takibi.html","en":"/blog/en/caffeine-sugar-tracking.html","ar":"/blog/ar/alkafayin-walsukar.html","ru":"/blog/ru/kofein-i-sahar.html"},"kahve-cay-su-sayar-mi.html":{"tr":"/blog/kahve-cay-su-sayar-mi.html","en":"/blog/en/coffee-tea-hydration.html","ar":"/blog/ar/alqahwa-walshay-walmae.html","ru":"/blog/ru/kofe-chay-i-voda.html"},"kahveyi-azaltmak.html":{"tr":"/blog/kahveyi-azaltmak.html","en":"/blog/en/quit-coffee-guide.html","ar":"/blog/ar/taqlil-alqahwa.html","ru":"/blog/ru/kak-sokratit-kofe.html"},"kak-sokratit-kofe.html":{"tr":"/blog/kahveyi-azaltmak.html","en":"/blog/en/quit-coffee-guide.html","ar":"/blog/ar/taqlil-alqahwa.html","ru":"/blog/ru/kak-sokratit-kofe.html"},"kalori-acigi.html":{"tr":"/blog/kalori-acigi.html","en":"/blog/en/calorie-deficit.html","ar":"/blog/ar/al-ajz-al-harari.html","ru":"/blog/ru/deficit-kalorij.html"},"kalorii-po-foto.html":{"tr":"/blog/fotografla-kalori-sayma.html","en":"/blog/en/photo-calorie-counting.html","ar":"/blog/ar/hisab-al-suerat-bil-sura.html","ru":"/blog/ru/kalorii-po-foto.html"},"kam-fanjan-qahwa.html":{"tr":"/blog/gunde-kac-kahve.html","en":"/blog/en/how-many-cups-coffee.html","ar":"/blog/ar/kam-fanjan-qahwa.html","ru":"/blog/ru/skolko-kofe-v-den.html"},"kam-litr-mae-yawmiyan.html":{"tr":"/blog/gunluk-ne-kadar-su-icmeli.html","en":"/blog/en/how-much-water-should-i-drink.html","ar":"/blog/ar/kam-litr-mae-yawmiyan.html","ru":"/blog/ru/skolko-vody-pit-v-den.html"},"kilo-ve-su.html":{"tr":"/blog/kilo-ve-su.html","en":"/blog/en/water-and-weight-loss.html","ar":"/blog/ar/almae-walidara-alwazn.html","ru":"/blog/ru/voda-i-pohudenie.html"},"kimler-icin.html":{"tr":"/kimler-icin.html","en":"/who-is-suu-for.html","ar":"/who-is-suu-for-ar.html","ru":"/who-is-suu-for-ru.html"},"kofe-chay-i-voda.html":{"tr":"/blog/kahve-cay-su-sayar-mi.html","en":"/blog/en/coffee-tea-hydration.html","ar":"/blog/ar/alqahwa-walshay-walmae.html","ru":"/blog/ru/kofe-chay-i-voda.html"},"kofein-i-sahar.html":{"tr":"/blog/kafein-seker-takibi.html","en":"/blog/en/caffeine-sugar-tracking.html","ar":"/blog/ar/alkafayin-walsukar.html","ru":"/blog/ru/kofein-i-sahar.html"},"kontrol-energetikov.html":{"tr":"/blog/enerji-icecegi-kontrolu.html","en":"/blog/en/energy-drink-control.html","ar":"/blog/ar/tahakum-mashroob-attaqa.html","ru":"/blog/ru/kontrol-energetikov.html"},"luchshee-prilozhenie-dlya-vody.html":{"tr":"/blog/su-takip-uygulamasi-neden-kullanmaliyim.html","en":"/blog/en/best-water-tracking-app.html","ar":"/blog/ar/afdal-tatbiq-mae.html","ru":"/blog/ru/luchshee-prilozhenie-dlya-vody.html"},"luchshee-prilozhenie-podscheta-kalorij.html":{"tr":"/blog/en-iyi-kalori-uygulamasi.html","en":"/blog/en/best-calorie-counting-app.html","ar":"/blog/ar/afdal-tatbiq-hisab-suerat.html","ru":"/blog/ru/luchshee-prilozhenie-podscheta-kalorij.html"},"macro-calculation.html":{"tr":"/blog/makro-hesaplama.html","en":"/blog/en/macro-calculation.html","ar":"/blog/ar/hisab-al-macro.html","ru":"/blog/ru/raschet-makrosov.html"},"makro-hesaplama.html":{"tr":"/blog/makro-hesaplama.html","en":"/blog/en/macro-calculation.html","ar":"/blog/ar/hisab-al-macro.html","ru":"/blog/ru/raschet-makrosov.html"},"meyve-suyu-vs-su.html":{"tr":"/blog/meyve-suyu-vs-su.html","en":"/blog/en/juice-vs-water.html","ar":"/blog/ar/aaseer-am-mae.html","ru":"/blog/ru/sok-ili-voda.html"},"morning-water-benefits.html":{"tr":"/blog/sabah-su-icmenin-faydalari.html","en":"/blog/en/morning-water-benefits.html","ar":"/blog/ar/fawaid-shurb-almae-sabahan.html","ru":"/blog/ru/voda-utrom.html"},"nadhari-almae-maa-asdiqa.html":{"tr":"/blog/su-icme-lig-sistemi.html","en":"/blog/en/water-challenge-with-friends.html","ar":"/blog/ar/nadhari-almae-maa-asdiqa.html","ru":"/blog/ru/vodnyi-challenge-s-druzyami.html"},"otsenka-gidratatsii.html":{"tr":"/blog/hidrasyon-skoru-nedir.html","en":"/blog/en/hydration-score-explained.html","ru":"/blog/ru/otsenka-gidratatsii.html"},"ozellikler-ar.html":{"tr":"/ozellikler.html","en":"/ozellikler-en.html","ar":"/ozellikler-ar.html","ru":"/ozellikler-ru.html"},"ozellikler-en.html":{"tr":"/ozellikler.html","en":"/ozellikler-en.html","ar":"/ozellikler-ar.html","ru":"/ozellikler-ru.html"},"ozellikler-ru.html":{"tr":"/ozellikler.html","en":"/ozellikler-en.html","ar":"/ozellikler-ar.html","ru":"/ozellikler-ru.html"},"ozellikler.html":{"tr":"/ozellikler.html","en":"/ozellikler-en.html","ar":"/ozellikler-ar.html","ru":"/ozellikler-ru.html"},"personal-hydration-plan-ar.html":{"tr":"/hidrasyon-plani.html","en":"/personal-hydration-plan.html","ar":"/personal-hydration-plan-ar.html","ru":"/personal-hydration-plan-ru.html"},"personal-hydration-plan-ru.html":{"tr":"/hidrasyon-plani.html","en":"/personal-hydration-plan.html","ar":"/personal-hydration-plan-ar.html","ru":"/personal-hydration-plan-ru.html"},"personal-hydration-plan.html":{"tr":"/hidrasyon-plani.html","en":"/personal-hydration-plan.html","ar":"/personal-hydration-plan-ar.html","ru":"/personal-hydration-plan-ru.html"},"pet-companion-mini-games.html":{"tr":"/blog/suu-evcil-hayvan-mini-oyunlar.html","en":"/blog/en/pet-companion-mini-games.html","ar":"/blog/ar/hayawan-aleef-aleab-mini.html","ru":"/blog/ru/domashnij-pitomec-mini-igry.html"},"photo-calorie-counting.html":{"tr":"/blog/fotografla-kalori-sayma.html","en":"/blog/en/photo-calorie-counting.html","ar":"/blog/ar/hisab-al-suerat-bil-sura.html","ru":"/blog/ru/kalorii-po-foto.html"},"polza-pitia-vody.html":{"tr":"/blog/su-icmenin-faydalari.html","en":"/blog/en/benefits-of-drinking-water.html","ar":"/blog/ar/fawaid-shurb-almae.html","ru":"/blog/ru/polza-pitia-vody.html"},"post-alcohol-hydration.html":{"tr":"/blog/alkol-sonrasi-hidrasyon.html","en":"/blog/en/post-alcohol-hydration.html","ar":"/blog/ar/tarteeb-baad-alkohol.html","ru":"/blog/ru/gidratatsiya-posle-alkogolya.html"},"premium-ar.html":{"tr":"/premium.html","en":"/premium-en.html","ar":"/premium-ar.html","ru":"/premium-ru.html"},"premium-en.html":{"tr":"/premium.html","en":"/premium-en.html","ar":"/premium-ar.html","ru":"/premium-ru.html"},"premium-ru.html":{"tr":"/premium.html","en":"/premium-en.html","ar":"/premium-ar.html","ru":"/premium-ru.html"},"premium.html":{"tr":"/premium.html","en":"/premium-en.html","ar":"/premium-ar.html","ru":"/premium-ru.html"},"privychka-pit-vodu.html":{"tr":"/blog/su-icme-aliskanlik.html","en":"/blog/en/water-drinking-habits.html","ar":"/blog/ar/adat-shurb-almae.html","ru":"/blog/ru/privychka-pit-vodu.html"},"priznaki-obezvozhivaniya.html":{"tr":"/blog/susuzluk-belirtileri.html","en":"/blog/en/signs-of-dehydration.html","ar":"/blog/ar/alamat-aljafaf.html","ru":"/blog/ru/priznaki-obezvozhivaniya.html"},"programma-pozhertvovanij-kolodtsy-afrika.html":{"tr":"/blog/afrika-su-kuyusu-bagis-programi.html","en":"/blog/en/africa-water-well-donation-program.html","ar":"/blog/ar/barnamaj-tabarru-abar-almae-afriqia.html","ru":"/blog/ru/programma-pozhertvovanij-kolodtsy-afrika.html"},"prostoy-rasshirennyy-rezhim.html":{"tr":"/blog/basit-gelismis-mod.html","en":"/blog/en/simple-advanced-mode.html","ar":"/blog/ar/alwade-albasit-walmutaqaddim.html","ru":"/blog/ru/prostoy-rasshirennyy-rezhim.html"},"quit-coffee-guide.html":{"tr":"/blog/kahveyi-azaltmak.html","en":"/blog/en/quit-coffee-guide.html","ar":"/blog/ar/taqlil-alqahwa.html","ru":"/blog/ru/kak-sokratit-kofe.html"},"raschet-makrosov.html":{"tr":"/blog/makro-hesaplama.html","en":"/blog/en/macro-calculation.html","ar":"/blog/ar/hisab-al-macro.html","ru":"/blog/ru/raschet-makrosov.html"},"raskhod-kalorij.html":{"tr":"/blog/egzersizde-kalori-yakimi.html","en":"/blog/en/calories-burned-exercise.html","ar":"/blog/ar/hurq-al-suerat.html","ru":"/blog/ru/raskhod-kalorij.html"},"sabah-su-icmenin-faydalari.html":{"tr":"/blog/sabah-su-icmenin-faydalari.html","en":"/blog/en/morning-water-benefits.html","ar":"/blog/ar/fawaid-shurb-almae-sabahan.html","ru":"/blog/ru/voda-utrom.html"},"sesli-kalori-girisi.html":{"tr":"/blog/sesli-kalori-girisi.html","en":"/blog/en/voice-calorie-logging.html","ar":"/blog/ar/tasjil-suerat-bil-sawt.html","ru":"/blog/ru/golosovoj-vvod-kalorij.html"},"sesli-komutla-su-ekleme.html":{"tr":"/blog/sesli-komutla-su-ekleme.html","en":"/blog/en/siri-water-tracking.html","ru":"/blog/ru/siri-voda.html"},"signs-of-dehydration.html":{"tr":"/blog/susuzluk-belirtileri.html","en":"/blog/en/signs-of-dehydration.html","ar":"/blog/ar/alamat-aljafaf.html","ru":"/blog/ru/priznaki-obezvozhivaniya.html"},"simple-advanced-mode.html":{"tr":"/blog/basit-gelismis-mod.html","en":"/blog/en/simple-advanced-mode.html","ar":"/blog/ar/alwade-albasit-walmutaqaddim.html","ru":"/blog/ru/prostoy-rasshirennyy-rezhim.html"},"siri-voda.html":{"tr":"/blog/sesli-komutla-su-ekleme.html","en":"/blog/en/siri-water-tracking.html","ru":"/blog/ru/siri-voda.html"},"siri-water-tracking.html":{"tr":"/blog/sesli-komutla-su-ekleme.html","en":"/blog/en/siri-water-tracking.html","ru":"/blog/ru/siri-voda.html"},"skolko-kofe-v-den.html":{"tr":"/blog/gunde-kac-kahve.html","en":"/blog/en/how-many-cups-coffee.html","ar":"/blog/ar/kam-fanjan-qahwa.html","ru":"/blog/ru/skolko-kofe-v-den.html"},"skolko-vody-pit-v-den.html":{"tr":"/blog/gunluk-ne-kadar-su-icmeli.html","en":"/blog/en/how-much-water-should-i-drink.html","ar":"/blog/ar/kam-litr-mae-yawmiyan.html","ru":"/blog/ru/skolko-vody-pit-v-den.html"},"sok-ili-voda.html":{"tr":"/blog/meyve-suyu-vs-su.html","en":"/blog/en/juice-vs-water.html","ar":"/blog/ar/aaseer-am-mae.html","ru":"/blog/ru/sok-ili-voda.html"},"spor-ve-hidrasyon.html":{"tr":"/blog/spor-ve-hidrasyon.html","en":"/blog/en/hydration-and-exercise.html","ar":"/blog/ar/arriyada-waltartib.html","ru":"/blog/ru/sport-i-gidratatsiya.html"},"sport-i-gidratatsiya.html":{"tr":"/blog/spor-ve-hidrasyon.html","en":"/blog/en/hydration-and-exercise.html","ar":"/blog/ar/arriyada-waltartib.html","ru":"/blog/ru/sport-i-gidratatsiya.html"},"starbucks-dehidrasyon.html":{"tr":"/starbucks-dehidrasyon.html","en":"/starbucks-dehydration.html"},"starbucks-dehydration.html":{"tr":"/starbucks-dehidrasyon.html","en":"/starbucks-dehydration.html"},"su-hesaplayici.html":{"tr":"/su-hesaplayici.html","en":"/water-calculator.html","ar":"/water-calculator-ar.html","ru":"/water-calculator-ru.html"},"su-icme-aliskanlik.html":{"tr":"/blog/su-icme-aliskanlik.html","en":"/blog/en/water-drinking-habits.html","ar":"/blog/ar/adat-shurb-almae.html","ru":"/blog/ru/privychka-pit-vodu.html"},"su-icme-lig-sistemi.html":{"tr":"/blog/su-icme-lig-sistemi.html","en":"/blog/en/water-challenge-with-friends.html","ar":"/blog/ar/nadhari-almae-maa-asdiqa.html","ru":"/blog/ru/vodnyi-challenge-s-druzyami.html"},"su-icmenin-faydalari.html":{"tr":"/blog/su-icmenin-faydalari.html","en":"/blog/en/benefits-of-drinking-water.html","ar":"/blog/ar/fawaid-shurb-almae.html","ru":"/blog/ru/polza-pitia-vody.html"},"su-kalori-egzersiz-tek-uygulama.html":{"tr":"/blog/su-kalori-egzersiz-tek-uygulama.html","en":"/blog/en/water-calorie-exercise-one-app.html","ar":"/blog/ar/tatbiq-wahid-mae-suerat-tamarin.html","ru":"/blog/ru/voda-kalorii-trenirovki-odno-prilozhenie.html"},"su-takip-uygulamasi-neden-kullanmaliyim.html":{"tr":"/blog/su-takip-uygulamasi-neden-kullanmaliyim.html","en":"/blog/en/best-water-tracking-app.html","ar":"/blog/ar/afdal-tatbiq-mae.html","ru":"/blog/ru/luchshee-prilozhenie-dlya-vody.html"},"su-ve-bobrek-sagligi.html":{"tr":"/blog/su-ve-bobrek-sagligi.html","en":"/blog/en/water-and-kidney-health.html","ar":"/blog/ar/almae-wasihhat-alkulaa.html","ru":"/blog/ru/voda-i-zdorove-pochek.html"},"su-ve-cilt-sagligi.html":{"tr":"/blog/su-ve-cilt-sagligi.html","en":"/blog/en/water-and-skin-health.html","ar":"/blog/ar/almae-walsihha-aljildiyya.html","ru":"/blog/ru/voda-i-zdorove-kozhi.html"},"su-ve-uyku-kalitesi.html":{"tr":"/blog/su-ve-uyku-kalitesi.html","en":"/blog/en/water-and-sleep.html","ar":"/blog/ar/almae-wannawm.html","ru":"/blog/ru/voda-i-son.html"},"susuzluk-belirtileri.html":{"tr":"/blog/susuzluk-belirtileri.html","en":"/blog/en/signs-of-dehydration.html","ar":"/blog/ar/alamat-aljafaf.html","ru":"/blog/ru/priznaki-obezvozhivaniya.html"},"suu-endeksi.html":{"tr":"/suu-endeksi.html","en":"/suu-index.html","ar":"/suu-index-ar.html","ru":"/suu-index-ru.html"},"suu-evcil-hayvan-mini-oyunlar.html":{"tr":"/blog/suu-evcil-hayvan-mini-oyunlar.html","en":"/blog/en/pet-companion-mini-games.html","ar":"/blog/ar/hayawan-aleef-aleab-mini.html","ru":"/blog/ru/domashnij-pitomec-mini-igry.html"},"suu-index-ar.html":{"tr":"/suu-endeksi.html","en":"/suu-index.html","ar":"/suu-index-ar.html","ru":"/suu-index-ru.html"},"suu-index-ru.html":{"tr":"/suu-endeksi.html","en":"/suu-index.html","ar":"/suu-index-ar.html","ru":"/suu-index-ru.html"},"suu-index.html":{"tr":"/suu-endeksi.html","en":"/suu-index.html","ar":"/suu-index-ar.html","ru":"/suu-index-ru.html"},"suu-vs-cal-ai.html":{"tr":"/blog/suu-vs-cal-ai.html","en":"/blog/en/suu-vs-cal-ai.html"},"suu-vs-myfitnesspal.html":{"tr":"/blog/suu-vs-myfitnesspal.html","en":"/blog/en/suu-vs-myfitnesspal.html","ar":"/blog/ar/suu-vs-myfitnesspal.html","ru":"/blog/ru/suu-vs-myfitnesspal.html"},"suu-vs-yazio.html":{"tr":"/blog/suu-vs-yazio.html","en":"/blog/en/suu-vs-yazio.html","ar":"/blog/ar/suu-vs-yazio.html","ru":"/blog/ru/suu-vs-yazio.html"},"tahakum-mashroob-attaqa.html":{"tr":"/blog/enerji-icecegi-kontrolu.html","en":"/blog/en/energy-drink-control.html","ar":"/blog/ar/tahakum-mashroob-attaqa.html","ru":"/blog/ru/kontrol-energetikov.html"},"taqlil-alqahwa.html":{"tr":"/blog/kahveyi-azaltmak.html","en":"/blog/en/quit-coffee-guide.html","ar":"/blog/ar/taqlil-alqahwa.html","ru":"/blog/ru/kak-sokratit-kofe.html"},"tarteeb-asshay.html":{"tr":"/blog/cay-hidrasyon.html","en":"/blog/en/tea-hydration.html","ar":"/blog/ar/tarteeb-asshay.html","ru":"/blog/ru/chai-i-gidratatsiya.html"},"tarteeb-baad-alkohol.html":{"tr":"/blog/alkol-sonrasi-hidrasyon.html","en":"/blog/en/post-alcohol-hydration.html","ar":"/blog/ar/tarteeb-baad-alkohol.html","ru":"/blog/ru/gidratatsiya-posle-alkogolya.html"},"tasjil-suerat-bil-sawt.html":{"tr":"/blog/sesli-kalori-girisi.html","en":"/blog/en/voice-calorie-logging.html","ar":"/blog/ar/tasjil-suerat-bil-sawt.html","ru":"/blog/ru/golosovoj-vvod-kalorij.html"},"tatbiq-wahid-mae-suerat-tamarin.html":{"tr":"/blog/su-kalori-egzersiz-tek-uygulama.html","en":"/blog/en/water-calorie-exercise-one-app.html","ar":"/blog/ar/tatbiq-wahid-mae-suerat-tamarin.html","ru":"/blog/ru/voda-kalorii-trenirovki-odno-prilozhenie.html"},"tea-hydration.html":{"tr":"/blog/cay-hidrasyon.html","en":"/blog/en/tea-hydration.html","ar":"/blog/ar/tarteeb-asshay.html","ru":"/blog/ru/chai-i-gidratatsiya.html"},"ucretsiz-kalori-sayaci.html":{"tr":"/blog/ucretsiz-kalori-sayaci.html","en":"/blog/en/free-calorie-counter-app.html"},"voda-i-beremennost.html":{"tr":"/blog/hamilelikte-su-ihtiyaci.html","en":"/blog/en/hydration-during-pregnancy.html","ar":"/blog/ar/almae-walhml.html","ru":"/blog/ru/voda-i-beremennost.html"},"voda-i-kormlenie.html":{"tr":"/blog/emzirmede-su-ihtiyaci.html","en":"/blog/en/hydration-while-breastfeeding.html","ar":"/blog/ar/almae-walrida.html","ru":"/blog/ru/voda-i-kormlenie.html"},"voda-i-pohudenie.html":{"tr":"/blog/kilo-ve-su.html","en":"/blog/en/water-and-weight-loss.html","ar":"/blog/ar/almae-walidara-alwazn.html","ru":"/blog/ru/voda-i-pohudenie.html"},"voda-i-son.html":{"tr":"/blog/su-ve-uyku-kalitesi.html","en":"/blog/en/water-and-sleep.html","ar":"/blog/ar/almae-wannawm.html","ru":"/blog/ru/voda-i-son.html"},"voda-i-zdorove-kozhi.html":{"tr":"/blog/su-ve-cilt-sagligi.html","en":"/blog/en/water-and-skin-health.html","ar":"/blog/ar/almae-walsihha-aljildiyya.html","ru":"/blog/ru/voda-i-zdorove-kozhi.html"},"voda-i-zdorove-pochek.html":{"tr":"/blog/su-ve-bobrek-sagligi.html","en":"/blog/en/water-and-kidney-health.html","ar":"/blog/ar/almae-wasihhat-alkulaa.html","ru":"/blog/ru/voda-i-zdorove-pochek.html"},"voda-kalorii-trenirovki-odno-prilozhenie.html":{"tr":"/blog/su-kalori-egzersiz-tek-uygulama.html","en":"/blog/en/water-calorie-exercise-one-app.html","ar":"/blog/ar/tatbiq-wahid-mae-suerat-tamarin.html","ru":"/blog/ru/voda-kalorii-trenirovki-odno-prilozhenie.html"},"voda-po-aktivnosti.html":{"tr":"/blog/aktivite-bazli-su-takibi.html","en":"/blog/en/activity-based-water-tracking.html","ar":"/blog/ar/almae-walnashat-aljasadi.html","ru":"/blog/ru/voda-po-aktivnosti.html"},"voda-utrom.html":{"tr":"/blog/sabah-su-icmenin-faydalari.html","en":"/blog/en/morning-water-benefits.html","ar":"/blog/ar/fawaid-shurb-almae-sabahan.html","ru":"/blog/ru/voda-utrom.html"},"vodnyi-challenge-s-druzyami.html":{"tr":"/blog/su-icme-lig-sistemi.html","en":"/blog/en/water-challenge-with-friends.html","ar":"/blog/ar/nadhari-almae-maa-asdiqa.html","ru":"/blog/ru/vodnyi-challenge-s-druzyami.html"},"voice-calorie-logging.html":{"tr":"/blog/sesli-kalori-girisi.html","en":"/blog/en/voice-calorie-logging.html","ar":"/blog/ar/tasjil-suerat-bil-sawt.html","ru":"/blog/ru/golosovoj-vvod-kalorij.html"},"water-and-kidney-health.html":{"tr":"/blog/su-ve-bobrek-sagligi.html","en":"/blog/en/water-and-kidney-health.html","ar":"/blog/ar/almae-wasihhat-alkulaa.html","ru":"/blog/ru/voda-i-zdorove-pochek.html"},"water-and-skin-health.html":{"tr":"/blog/su-ve-cilt-sagligi.html","en":"/blog/en/water-and-skin-health.html","ar":"/blog/ar/almae-walsihha-aljildiyya.html","ru":"/blog/ru/voda-i-zdorove-kozhi.html"},"water-and-sleep.html":{"tr":"/blog/su-ve-uyku-kalitesi.html","en":"/blog/en/water-and-sleep.html","ar":"/blog/ar/almae-wannawm.html","ru":"/blog/ru/voda-i-son.html"},"water-and-weight-loss.html":{"tr":"/blog/kilo-ve-su.html","en":"/blog/en/water-and-weight-loss.html","ar":"/blog/ar/almae-walidara-alwazn.html","ru":"/blog/ru/voda-i-pohudenie.html"},"water-calculator-ar.html":{"tr":"/su-hesaplayici.html","en":"/water-calculator.html","ar":"/water-calculator-ar.html","ru":"/water-calculator-ru.html"},"water-calculator-ru.html":{"tr":"/su-hesaplayici.html","en":"/water-calculator.html","ar":"/water-calculator-ar.html","ru":"/water-calculator-ru.html"},"water-calculator.html":{"tr":"/su-hesaplayici.html","en":"/water-calculator.html","ar":"/water-calculator-ar.html","ru":"/water-calculator-ru.html"},"water-calorie-exercise-one-app.html":{"tr":"/blog/su-kalori-egzersiz-tek-uygulama.html","en":"/blog/en/water-calorie-exercise-one-app.html","ar":"/blog/ar/tatbiq-wahid-mae-suerat-tamarin.html","ru":"/blog/ru/voda-kalorii-trenirovki-odno-prilozhenie.html"},"water-challenge-with-friends.html":{"tr":"/blog/su-icme-lig-sistemi.html","en":"/blog/en/water-challenge-with-friends.html","ar":"/blog/ar/nadhari-almae-maa-asdiqa.html","ru":"/blog/ru/vodnyi-challenge-s-druzyami.html"},"water-drinking-habits.html":{"tr":"/blog/su-icme-aliskanlik.html","en":"/blog/en/water-drinking-habits.html","ar":"/blog/ar/adat-shurb-almae.html","ru":"/blog/ru/privychka-pit-vodu.html"},"water-tracking-gamification.html":{"en":"/blog/en/water-tracking-gamification.html","ru":"/blog/ru/geymifikatsiya-vody.html"},"who-is-suu-for-ar.html":{"tr":"/kimler-icin.html","en":"/who-is-suu-for.html","ar":"/who-is-suu-for-ar.html","ru":"/who-is-suu-for-ru.html"},"who-is-suu-for-ru.html":{"tr":"/kimler-icin.html","en":"/who-is-suu-for.html","ar":"/who-is-suu-for-ar.html","ru":"/who-is-suu-for-ru.html"},"who-is-suu-for.html":{"tr":"/kimler-icin.html","en":"/who-is-suu-for.html","ar":"/who-is-suu-for-ar.html","ru":"/who-is-suu-for-ru.html"}}};
+
+    var LABELS = {
+        tr: { code: 'TR', name: 'Türkçe' },
+        en: { code: 'EN', name: 'English' },
+        ar: { code: 'AR', name: 'العربية' },
+        ru: { code: 'RU', name: 'Русский' },
+        de: { code: 'DE', name: 'Deutsch' },
+        it: { code: 'IT', name: 'Italiano' },
+        hi: { code: 'HI', name: 'हिन्दी' }
     };
 
-    function getCurrentPage() {
-        var path = window.location.pathname;
-        var parts = path.split('/');
+    // ── Geçerli sayfa ───────────────────────────────────────
+    function currentFile() {
+        var parts = window.location.pathname.split('/');
         return parts[parts.length - 1] || 'index.html';
     }
 
-    function getSavedLang() {
-        try { return localStorage.getItem('suu-lang'); } catch (e) { return null; }
+    function currentLang() {
+        var attr = (document.documentElement.lang || '').slice(0, 2).toLowerCase();
+        return LABELS[attr] ? attr : I18N._default;
     }
 
     function saveLang(lang) {
         try { localStorage.setItem('suu-lang', lang); } catch (e) {}
     }
 
-function detectBrowserLang() {
-        var langs = (navigator.languages && navigator.languages.length)
-            ? navigator.languages
-            : [navigator.language || 'tr'];
-        for (var i = 0; i < langs.length; i++) {
-            var code = langs[i].toLowerCase().slice(0, 2);
-            if (code === 'ru') return 'ru';
-            if (code === 'ar') return 'ar';
-            if (code === 'en') return 'en';
-            if (code === 'tr') return 'tr';
-        }
-        return 'tr';
-    }
-
-    function getCurrentLang() {
-        var saved = getSavedLang();
-        return saved || detectBrowserLang();
-    }
-
-    function getTargetUrl(lang) {
-        var page = getCurrentPage();
-        var map = PAGE_MAP[page];
-        if (!map) return null;
-        return map[lang] || null;
-    }
-
-    function isCurrentUrl(url) {
-        if (!url) return false;
-        var page = getCurrentPage();
-        // Check if the URL ends with the current filename
-        return url === page || url.split('/').pop() === page;
-    }
-
-    function setLang(lang) {
-        saveLang(lang);
-        var url = getTargetUrl(lang);
-        if (url && !isCurrentUrl(url)) {
-            window.location.href = url;
-        } else if (url) {
-            // Already on the right page, just update the switcher UI
-            updateSwitcherUI(lang);
-        }
-    }
-
-    // Expose setLang globally for onclick handlers
-    window.suuSetLang = setLang;
-
-    function updateSwitcherUI(lang) {
-        var btns = document.querySelectorAll('.suu-lang-btn');
-        for (var i = 0; i < btns.length; i++) {
-            var btn = btns[i];
-            if (btn.getAttribute('data-lang') === lang) {
-                btn.classList.add('active');
-            } else {
-                btn.classList.remove('active');
-            }
-        }
-    }
-
+    // ── Stiller — tasarım sistemi token'ları varsa onları kullanır ──
     function injectStyles() {
         if (document.getElementById('suu-lang-style')) return;
-        var style = document.createElement('style');
-        style.id = 'suu-lang-style';
-        style.textContent = [
-            '#suu-lang-switcher {',
-            '  display: flex;',
-            '  align-items: center;',
-            '  gap: 4px;',
-            '  direction: ltr;',
-            '  margin-left: 12px;',
-            '}',
-            '.suu-lang-btn {',
-            '  background: transparent;',
-            '  border: 1px solid rgba(74,144,217,0.5);',
-            '  color: #4A90D9;',
-            '  border-radius: 5px;',
-            '  padding: 4px 9px;',
-            '  font-size: 11px;',
-            '  font-weight: 700;',
-            '  cursor: pointer;',
-            '  transition: all 0.2s;',
-            '  letter-spacing: 0.5px;',
-            '  font-family: inherit;',
-            '  line-height: 1.4;',
-            '}',
-            '.suu-lang-btn:hover,',
-            '.suu-lang-btn.active {',
-            '  background: #4A90D9;',
-            '  border-color: #4A90D9;',
-            '  color: white;',
-            '}',
-            '@media (max-width: 768px) {',
-            '  #suu-lang-switcher { margin-left: 8px; }',
-            '  .suu-lang-btn { padding: 3px 7px; font-size: 10px; }',
-            '}',
-        ].join('\n');
-        document.head.appendChild(style);
+        var s = document.createElement('style');
+        s.id = 'suu-lang-style';
+        s.textContent = [
+            '#suu-lang{position:relative;direction:ltr;font-family:inherit}',
+            '#suu-lang>summary{display:inline-flex;align-items:center;gap:6px;min-height:34px;',
+            '  padding:0 10px;border:1px solid var(--border,#D6DDE4);border-radius:999px;',
+            '  background:var(--surface,#fff);color:var(--text,#232A33);cursor:pointer;',
+            '  font-size:12px;font-weight:700;letter-spacing:.4px;list-style:none;white-space:nowrap}',
+            '#suu-lang>summary::-webkit-details-marker{display:none}',
+            '#suu-lang>summary::after{content:"";width:0;height:0;margin-inline-start:2px;',
+            '  border-inline:4px solid transparent;border-top:5px solid currentColor;opacity:.6}',
+            '#suu-lang[open]>summary::after{transform:rotate(180deg)}',
+            '#suu-lang>summary:hover{border-color:var(--border-strong,#B4BFCA)}',
+            '#suu-lang-list{position:absolute;inset-inline-end:0;top:calc(100% + 6px);z-index:200;',
+            '  min-width:150px;padding:6px;margin:0;list-style:none;',
+            '  background:var(--surface,#fff);border:1px solid var(--border,#D6DDE4);',
+            '  border-radius:10px;box-shadow:0 8px 24px rgba(11,14,19,.14)}',
+            '#suu-lang-list li{margin:0}',
+            '#suu-lang-list a{display:flex;align-items:center;justify-content:space-between;gap:10px;',
+            '  padding:8px 10px;border-radius:6px;color:var(--text,#232A33);text-decoration:none;',
+            '  font-size:13px;font-weight:500;white-space:nowrap}',
+            '#suu-lang-list a:hover{background:var(--bg-subtle,#F4F6F8)}',
+            '#suu-lang-list a[aria-current="true"]{color:var(--text-brand,#1565C0);font-weight:700}',
+            '#suu-lang-list .c{font-size:11px;font-weight:700;opacity:.55;letter-spacing:.4px}',
+            '@media (max-width:480px){#suu-lang>summary{padding:0 8px;font-size:11px}}'
+        ].join('');
+        document.head.appendChild(s);
     }
 
-function createSwitcher(currentLang) {
-        var div = document.createElement('div');
-        div.id = 'suu-lang-switcher';
-        var langs = [
-            { code: 'tr', label: 'TR' },
-            { code: 'en', label: 'EN' },
-            { code: 'ar', label: 'AR' },
-            { code: 'ru', label: 'RU' },
-        ];
-        langs.forEach(function (l) {
-            var btn = document.createElement('button');
-            btn.className = 'suu-lang-btn' + (l.code === currentLang ? ' active' : '');
-            btn.setAttribute('data-lang', l.code);
-            btn.textContent = l.label;
-            btn.setAttribute('aria-label', l.label);
-            btn.onclick = function () { setLang(l.code); };
-            div.appendChild(btn);
+    // ── Bileşen ─────────────────────────────────────────────
+    function build(variants, active) {
+        var root = document.createElement('details');
+        root.id = 'suu-lang';
+
+        var summary = document.createElement('summary');
+        summary.setAttribute('aria-label', 'Dil / Language');
+        summary.appendChild(document.createTextNode(LABELS[active] ? LABELS[active].code : active.toUpperCase()));
+        root.appendChild(summary);
+
+        var list = document.createElement('ul');
+        list.id = 'suu-lang-list';
+
+        I18N._langs.forEach(function (lang) {
+            var href = variants[lang];
+            if (!href || !LABELS[lang]) return;
+
+            var li = document.createElement('li');
+            var a = document.createElement('a');
+            a.href = href;
+            a.hreflang = lang;
+            a.lang = lang;
+            if (lang === active) a.setAttribute('aria-current', 'true');
+
+            var name = document.createElement('span');
+            name.textContent = LABELS[lang].name;
+            var code = document.createElement('span');
+            code.className = 'c';
+            code.textContent = LABELS[lang].code;
+
+            a.appendChild(name);
+            a.appendChild(code);
+            a.addEventListener('click', function () { saveLang(lang); });
+
+            li.appendChild(a);
+            list.appendChild(li);
         });
-        return div;
+
+        root.appendChild(list);
+
+        // Dışarı tıklayınca kapat
+        document.addEventListener('click', function (e) {
+            if (root.open && !root.contains(e.target)) root.open = false;
+        });
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && root.open) { root.open = false; summary.focus(); }
+        });
+
+        return root;
     }
 
-    function injectSwitcher(currentLang) {
-        if (document.getElementById('suu-lang-switcher')) return;
+    // ── Yerleştirme — yeni tasarım sistemi önce, eski yapılar sonra ──
+    function mount(node) {
+        var slot = document.querySelector('[data-lang-slot]');
+        if (slot) { slot.appendChild(node); return true; }
 
-        // Try main site navbar first (hosgeldiniz, ozellikler, faq)
+        var actions = document.querySelector('.nav__actions');
+        if (actions) { actions.insertBefore(node, actions.firstChild); return true; }
+
         var hamburger = document.querySelector('.hamburger');
         if (hamburger && hamburger.parentNode) {
-            hamburger.parentNode.insertBefore(createSwitcher(currentLang), hamburger);
-            return;
+            hamburger.parentNode.insertBefore(node, hamburger);
+            return true;
         }
 
-        // Try blog.html nav
         var navContent = document.querySelector('.nav-content');
         if (navContent) {
-            var backBtn = navContent.querySelector('.back-btn');
-            if (backBtn) {
-                navContent.insertBefore(createSwitcher(currentLang), backBtn);
-            } else {
-                navContent.appendChild(createSwitcher(currentLang));
-            }
-            return;
+            var back = navContent.querySelector('.back-btn');
+            if (back) navContent.insertBefore(node, back);
+            else navContent.appendChild(node);
+            return true;
         }
 
-        // Fallback: any nav container
         var nav = document.querySelector('nav') || document.querySelector('.nav');
         if (nav) {
-            nav.appendChild(createSwitcher(currentLang));
+            node.style.marginInlineStart = 'auto';
+            nav.appendChild(node);
+            return true;
         }
-    }
-
-    function autoRedirect(currentLang) {
-        // Only redirect once per session to avoid loops
-        if (sessionStorage.getItem('suu-redirected')) return;
-        if (getSavedLang()) return; // User already chose manually — respect their choice
-
-        var page = getCurrentPage();
-        var map = PAGE_MAP[page];
-        if (!map) return;
-
-        var target = map[currentLang];
-        if (target && target !== page) {
-            sessionStorage.setItem('suu-redirected', '1');
-            window.location.replace(target);
-        }
+        return false;
     }
 
     function init() {
-        var currentLang = getCurrentLang();
-        // NOT: autoRedirect kaldırıldı — Googlebot RU/AR sayfalarına geldiğinde
-        // tarayıcı dili EN olduğu için EN'e yönlendiriliyordu, GSC "Yönlendirmeli
-        // sayfa" hatası veriyordu. Manuel dil switcher butonu yeterli.
+        if (document.getElementById('suu-lang')) return;
+
+        var file = currentFile();
+
+        // Tek URL üzerinde sekmeli çok dil sunan sayfalarda seçici gösterilmez
+        if (I18N._shared.indexOf(file) !== -1) return;
+
+        var variants = I18N.pages[file];
+        if (!variants) return;                 // haritada yoksa bozuk buton gösterme
+
+        var available = I18N._langs.filter(function (l) { return variants[l]; });
+        if (available.length < 2) return;      // tek dilli sayfada seçici anlamsız
+
         injectStyles();
-        injectSwitcher(currentLang);
+        mount(build(variants, currentLang()));
     }
 
     if (document.readyState === 'loading') {

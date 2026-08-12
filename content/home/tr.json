@@ -1,0 +1,877 @@
+{
+  "meta": {
+    "title": "Suu — Su, Kalori ve Egzersiz Takibi Tek Uygulamada | 4.9★ · 3 Gün Ücretsiz",
+    "description": "Suu; su takibi, kalori sayacı ve egzersiz takibini yapay zekâ ile birleştirir. Yemeğinin fotoğrafını çek, kalori ve makroları saniyeler içinde öğren; 91 içecek ve ~50 spor aktivitesiyle günlük su hedefin otomatik güncellensin. iOS ve Android'de ücretsiz.",
+    "keywords": "su takip uygulaması, kalori sayacı, kalori takip uygulaması, fotoğrafla kalori hesaplama, egzersiz takibi, makro hesaplama, beslenme takibi, yapay zeka kalori, sesli kalori girişi, koşu takibi, bisiklet takibi, hidrasyon uygulaması, suu, suu uygulaması, suuapp, en iyi kalori uygulaması, su kalori egzersiz tek uygulama",
+    "og_title": "Suu — Su, Kalori ve Egzersiz Takibi Tek Uygulamada",
+    "og_description": "Yemeğinin fotoğrafını çek, kalori ve makroları öğren. 91 içecek, ~50 spor aktivitesi ve egzersize göre otomatik güncellenen su hedefi. 3 gün ücretsiz dene.",
+    "og_image_alt": "Suu — Su, Kalori ve Egzersiz Takibi",
+    "tw_title": "Suu — Su, Kalori ve Egzersiz Takibi Tek Uygulamada",
+    "tw_description": "Fotoğrafla kalori analizi, 91 içecekle hidrasyon takibi ve ~50 spor aktivitesi. Egzersizin su hedefini otomatik güncelliyor. 4.9★ · 3 gün ücretsiz."
+  },
+  "links": {
+    "home": "/"
+  },
+  "nav": {
+    "skip": "İçeriğe geç",
+    "home_aria": "Suu ana sayfa",
+    "cta": "Ücretsiz İndir",
+    "menu_open": "Menüyü aç",
+    "menu_close": "Menüyü kapat",
+    "links": [
+      {
+        "href": "#pillars",
+        "label": "Özellikler"
+      },
+      {
+        "href": "#kalori",
+        "label": "Kalori"
+      },
+      {
+        "href": "#egzersiz",
+        "label": "Egzersiz"
+      },
+      {
+        "href": "#ekranlar",
+        "label": "Ekranlar"
+      },
+      {
+        "href": "#karsilastirma",
+        "label": "Karşılaştırma"
+      },
+      {
+        "href": "#fiyat",
+        "label": "Fiyatlandırma"
+      },
+      {
+        "href": "blog.html",
+        "label": "Blog"
+      },
+      {
+        "href": "#sss",
+        "label": "SSS"
+      }
+    ]
+  },
+  "hero": {
+    "eyebrow": "Su · Kalori · Egzersiz",
+    "title_lead": "Su, Kalori ve Egzersiz —",
+    "title_accent": "Tek Uygulamada",
+    "lead": "Yemeğinin fotoğrafını çek, kalorisini ve makrolarını saniyeler içinde öğren. 91 içecekle gerçek hidrasyon takibi yap, yaklaşık 50 spor aktivitesini kaydet — ve her egzersiz günlük su hedefini otomatik güncellesin.",
+    "store_small": "İndir —",
+    "aria_app_store": "App Store'dan indir",
+    "aria_google_play": "Google Play'den indir",
+    "trial_note": "Ücretsiz indir · Premium <strong>3 gün ücretsiz</strong> denenebilir",
+    "trust_rating": "4.9 Google Play · 5.0 App Store",
+    "trust_reviews": "2.800+ değerlendirme",
+    "trust_health": "Apple Health & Health Connect",
+    "trust_langs": "7 dil",
+    "shot_alt": "Suu ana ekranı: günlük su, kalori ve egzersiz özeti"
+  },
+  "pillars": {
+    "head": "Üç ayrı uygulama değil, birbirini besleyen tek sistem",
+    "sub": "Çoğu uygulama su, kalori ve egzersizi ayrı sekmelerde tutar. Suu'da bunlar birbirini günceller.",
+    "answer_label": "Kısa cevap:",
+    "answer": "Suu, su takibi, fotoğraftan kalori analizi ve egzersiz takibini tek uygulamada birleştiren bir sağlık uygulamasıdır. Farkı, bu üçünün birbirine bağlı çalışması: kaydettiğin koşu günlük su hedefini yükseltir, yediğin öğünün protein ve sodyum içeriği sindirim için gereken ek suyu belirler, içtiğin kahvenin gerçek hidrasyon katkısı hesaba katılır. iOS ve Android'de ücretsiz, 7 dilde kullanılabilir.",
+    "items": [
+      {
+        "id": "water",
+        "icon": "water",
+        "title": "Su Takibi",
+        "body": "<strong>91 içecek</strong> — kahve, çay, soda, meyve suyu, süt, enerji içecekleri. Her birinin sıvı dengene gerçek katkısı hesaplanır.",
+        "link_href": "#su-hedefi",
+        "link_label": "Akıllı su hedefi nasıl çalışıyor"
+      },
+      {
+        "id": "calories",
+        "icon": "flame",
+        "title": "Kalori ve Beslenme",
+        "body": "Yemeğin <strong>fotoğrafını çek</strong> — Suu AI kalori, protein, karbonhidrat ve yağı çıkarsın, makrolarını otomatik oluştursun.",
+        "link_href": "#kalori",
+        "link_label": "Fotoğrafla kalori analizi"
+      },
+      {
+        "id": "exercise",
+        "icon": "run",
+        "title": "Egzersiz Takibi",
+        "body": "<strong>~50 spor aktivitesi</strong> — koşu, yürüyüş, bisiklet, yüzme, fitness. Her egzersiz su hedefini otomatik yükseltir.",
+        "link_href": "#egzersiz",
+        "link_label": "Egzersiz metrikleri"
+      }
+    ]
+  },
+  "calories": {
+    "eyebrow": "Kalori ve Beslenme",
+    "head": "Kalori saymak için tabağını tartmana gerek yok",
+    "sub": "Fotoğrafı çek — gerisini Suu AI halletsin.",
+    "callout": "<strong>Ücretsiz planda</strong> günde 3 AI analizi hakkın var. Fotoğrafla analiz ve sınırsız kullanım Premium'a dahildir — <a href=\"#fiyat\">3 gün ücretsiz denenebilir</a>.",
+    "items": [
+      {
+        "icon": "camera",
+        "title": "Fotoğrafla analiz",
+        "body": "Öğününün fotoğrafını çek; kalori, protein, karbonhidrat ve yağ değerleri çıkarılsın, makroların otomatik oluşsun. Fotoğrafın kalıcı olarak saklanmaz."
+      },
+      {
+        "emoji": "🎙️",
+        "title": "Sesli veya yazılı giriş",
+        "body": "“Öğle yemeğinde tavuklu salata ve bir bardak ayran” — söyle, saniyeler içinde kaydedilsin. Ses cihazında metne çevrilir, sunucuya gönderilmez."
+      },
+      {
+        "emoji": "📊",
+        "title": "Makro ve beslenme puanı",
+        "body": "Günlük kalori, protein, karbonhidrat ve yağ takibi. 1–100 arası beslenme puanıyla günün dengesini tek bakışta gör."
+      }
+    ]
+  },
+  "suu_ai": {
+    "head": "Uygulamayı konuşarak yönet",
+    "sub": "Menülerde gezinmek yerine ne istediğini söyle.",
+    "items": [
+      {
+        "icon": "chat",
+        "title": "“2 bardak su ekle”",
+        "body": "Su ve içecek kaydı, öğün oluşturma, egzersiz ekleme — hepsi sohbet üzerinden."
+      },
+      {
+        "emoji": "🧠",
+        "title": "“Bugünkü beslenmemi analiz et”",
+        "body": "Günün makro dengesini yorumlar, eksik kalan noktaları söyler."
+      },
+      {
+        "emoji": "⚙️",
+        "title": "“Su hedefimi güncelle”",
+        "body": "Hedefler ve akıllı hatırlatıcılar da sohbetten düzenlenir."
+      }
+    ]
+  },
+  "exercise": {
+    "eyebrow": "Egzersiz Takibi",
+    "head": "Yaklaşık 50 spor aktivitesi — ve hepsi su hedefine bağlı",
+    "sub": "Koşu, yürüyüş, bisiklet, fitness, yüzme, doğa yürüyüşü, kardiyo ve daha fazlası.",
+    "items": [
+      {
+        "icon": "run",
+        "title": "Koşu ve yürüyüş",
+        "body": "Antrenman sonrası tüm ayrıntılar tek ekranda.",
+        "metrics": [
+          "Mesafe",
+          "Süre",
+          "Tempo",
+          "Ort. hız",
+          "Yakılan kalori"
+        ]
+      },
+      {
+        "emoji": "🚴",
+        "title": "Bisiklet",
+        "body": "Rota profilini de kapsayan ayrıntılı istatistikler.",
+        "metrics": [
+          "Hız",
+          "Ort. hız",
+          "Mesafe",
+          "İrtifa",
+          "Süre"
+        ]
+      },
+      {
+        "emoji": "💧",
+        "title": "Egzersiz → su hedefi",
+        "body": "Terle kaybettiğin sıvı hesaplanır ve günlük su hedefin otomatik yükselir. Antrenman bittiğinde hedefini elle değiştirmen gerekmez."
+      }
+    ]
+  },
+  "water": {
+    "eyebrow": "Su Takibi",
+    "head": "Sabit bir sayı değil — gün içinde değişen bir hedef",
+    "sub": "“Günde 2 litre” herkes için doğru değil. Suu hedefini beş ayrı sinyalden hesaplar.",
+    "items": [
+      {
+        "title": "Yaş, kilo, aktivite",
+        "body": "Temel hedef kişisel profilinden hesaplanır."
+      },
+      {
+        "title": "Hava sıcaklığı",
+        "body": "Sıcak günlerde hedef otomatik yükselir."
+      },
+      {
+        "title": "Egzersiz",
+        "body": "Kaydettiğin her antrenman ek sıvı ihtiyacı ekler."
+      },
+      {
+        "title": "Yediklerin",
+        "body": "Öğünün protein ve sodyum içeriği, sindirim için gereken ek suyu belirler."
+      },
+      {
+        "title": "91 içecek",
+        "body": "Kahvenin, çayın, ayranın sıvı dengene gerçek katkısı ayrı ayrı hesaplanır."
+      },
+      {
+        "title": "Suu Endeksi",
+        "body": "0–100 arası hidrasyon skorun, gün boyunca canlı güncellenir. <a href=\"suu-endeksi.html\">Nasıl hesaplanıyor →</a>"
+      }
+    ],
+    "calc": {
+      "head": "Günlük su ihtiyacını hesapla",
+      "note": "Başlangıç tahmini. Uygulamada hedef ayrıca hava durumu, egzersiz ve yediklerinle güncellenir.",
+      "age": "Yaş",
+      "weight": "Kilo (kg)",
+      "gender": "Cinsiyet",
+      "activity": "Aktivite",
+      "female": "Kadın",
+      "male": "Erkek",
+      "act_sedentary": "Hareketsiz",
+      "act_light": "Hafif aktif",
+      "act_moderate": "Orta aktif",
+      "act_active": "Aktif",
+      "act_extra": "Çok aktif",
+      "submit": "Hesapla",
+      "liters": "litre",
+      "cups_prefix": "Yaklaşık",
+      "cups_suffix": "bardak (250 ml)",
+      "cta": "Suu ile takip etmeye başla"
+    }
+  },
+  "shots": {
+    "head": "Uygulamayı keşfet",
+    "sub": "Uygulamanın gerçek ekranları — kaydırarak tümünü gör.",
+    "tablist_label": "Platform seçimi",
+    "items": [
+      {
+        "slug": "ana-ekran",
+        "caption": "Ana ekran"
+      },
+      {
+        "slug": "kalori-foto-analiz",
+        "caption": "Fotoğrafla kalori"
+      },
+      {
+        "slug": "makro-detay",
+        "caption": "Makro dökümü"
+      },
+      {
+        "slug": "suu-ai-sohbet",
+        "caption": "Suu AI"
+      },
+      {
+        "slug": "kosu-detay",
+        "caption": "Koşu detayı"
+      },
+      {
+        "slug": "istatistik",
+        "caption": "İstatistikler"
+      }
+    ]
+  },
+  "social": {
+    "head": "Alışkanlık kurmak yalnız yapılınca zor",
+    "items": [
+      {
+        "emoji": "🐾",
+        "title": "Sanal evcil hayvan",
+        "body": "Günlük hedeflerini tamamladıkça büyür, ödüller kazandırır."
+      },
+      {
+        "emoji": "🏆",
+        "title": "Arkadaş ligleri",
+        "body": "Haftalık, 4 kişiye kadar. iOS ve Android arasında çapraz platform çalışır."
+      },
+      {
+        "emoji": "📱",
+        "title": "Hikâye paylaşımı",
+        "body": "Su tüketimini, yürüyüşünü, koşunu ve başarılarını modern hikâye şablonlarıyla paylaş."
+      },
+      {
+        "emoji": "💙",
+        "title": "%2 bağış programı",
+        "body": "Premium gelirinin %2'si Afrika'da temiz su kuyularına aktarılır. <a href=\"blog/afrika-su-kuyusu-bagis-programi.html\">Şeffaf rapor →</a>"
+      }
+    ]
+  },
+  "platform": {
+    "head": "Platform desteği",
+    "sub": "Hangi özelliğin nerede çalıştığını olduğu gibi gösteriyoruz.",
+    "caption": "Suu özelliklerinin iOS ve Android desteği",
+    "col_feature": "Özellik",
+    "yes": "✓",
+    "soon": "Yakında",
+    "watch_note": "Apple Watch verisi bugün de Apple Health üzerinden Suu'ya akıyor ve su hedefini güncelliyor — <a href=\"blog/apple-watch-su-takibi.html\">nasıl kurulacağı burada</a>.",
+    "rows": [
+      {
+        "label": "Fotoğrafla kalori analizi",
+        "ios": "yes",
+        "android": "yes"
+      },
+      {
+        "label": "Sesli giriş",
+        "ios": "yes",
+        "android": "yes"
+      },
+      {
+        "label": "Egzersiz takibi (~50 aktivite)",
+        "ios": "yes",
+        "android": "yes"
+      },
+      {
+        "label": "Suu AI sohbet",
+        "ios": "yes",
+        "android": "yes"
+      },
+      {
+        "label": "Arkadaş ligleri · hikâye · evcil hayvan",
+        "ios": "yes",
+        "android": "yes"
+      },
+      {
+        "label": "Widget'lar",
+        "ios": "yes",
+        "android": "yes"
+      },
+      {
+        "label": "Apple Health senkronu",
+        "ios": "yes",
+        "android": "no"
+      },
+      {
+        "label": "Google Health Connect senkronu",
+        "ios": "no",
+        "android": "yes"
+      },
+      {
+        "label": "Siri komutları",
+        "ios": "yes",
+        "android": "no"
+      },
+      {
+        "label": "Dynamic Island",
+        "ios": "yes",
+        "android": "no"
+      },
+      {
+        "label": "Live Activities",
+        "ios": "yes",
+        "android": "no"
+      },
+      {
+        "label": "Apple Watch uygulaması",
+        "ios": "soon",
+        "android": "no"
+      }
+    ]
+  },
+  "compare": {
+    "eyebrow": "Karşılaştırma",
+    "head": "Suu diğer uygulamalardan nerede ayrılıyor?",
+    "caption": "Suu ile popüler kalori ve su takip uygulamalarının karşılaştırması",
+    "col_feature": "Özellik",
+    "competitors": [
+      "MyFitnessPal",
+      "Yazio",
+      "WaterMinder"
+    ],
+    "disclosure": "Bu tablo Suu ekibi tarafından hazırlanmıştır. Rakip özellikleri 2026 itibarıyla kamuya açık bilgilere dayanır ve zamanla değişebilir. Her uygulamanın güçlü olduğu alanlar farklıdır — aşağıda bunları da belirtiyoruz.",
+    "verdict_head": "Karar",
+    "rivals_label": "Rakiplerin güçlü olduğu yerler:",
+    "rivals": "MyFitnessPal'in besin veritabanı sektörün en genişi; barkot okutup marka ürün bulma ihtimalin orada daha yüksek. Yazio'nun tarif ve diyet planı kütüphanesi güçlü. WaterMinder'ın Apple Watch uygulaması bugün var, Suu'nunki yolda.",
+    "suu_label": "Suu'nun ayrıldığı yer:",
+    "suu_edge": "Bu üç uygulamanın hiçbiri su, kalori ve egzersizi <em>birbirine bağlı</em> çalıştırmıyor. Suu'da kaydettiğin koşu su hedefini yükseltir, yediğin öğün sindirim suyunu hesaplatır, içtiğin kahvenin gerçek hidrasyon katkısı düşülür. Üç ayrı uygulama yerine tek uygulama kullanmak istiyorsan — ve hidrasyonun sende gerçekten önemliyse — Suu net tercih.",
+    "links": "<a href=\"blog/en-iyi-kalori-uygulamasi.html\">Ayrıntılı 5'li karşılaştırma →</a> · <a href=\"blog/suu-vs-myfitnesspal.html\">Suu vs MyFitnessPal →</a> · <a href=\"blog/su-kalori-egzersiz-tek-uygulama.html\">Su + kalori + egzersiz tek uygulamada →</a>",
+    "rows": [
+      {
+        "label": "Fotoğrafla kalori analizi",
+        "suu": "✓",
+        "suu_class": "yes",
+        "others": [
+          {
+            "text": "✓",
+            "cls": "yes"
+          },
+          {
+            "text": "✓",
+            "cls": "yes"
+          },
+          {
+            "text": "✗",
+            "cls": "no"
+          }
+        ]
+      },
+      {
+        "label": "Gerçek hidrasyon hesabı (içecek bazlı)",
+        "suu": "✓ 91 içecek",
+        "suu_class": "yes",
+        "others": [
+          {
+            "text": "Basit sayaç",
+            "cls": "no"
+          },
+          {
+            "text": "Basit sayaç",
+            "cls": "no"
+          },
+          {
+            "text": "✓",
+            "cls": "yes"
+          }
+        ]
+      },
+      {
+        "label": "Egzersiz takibi (uygulama içi)",
+        "suu": "✓ ~50 aktivite",
+        "suu_class": "yes",
+        "others": [
+          {
+            "text": "✓",
+            "cls": "yes"
+          },
+          {
+            "text": "✓",
+            "cls": "yes"
+          },
+          {
+            "text": "✗",
+            "cls": "no"
+          }
+        ]
+      },
+      {
+        "label": "Egzersiz su hedefini otomatik günceller",
+        "suu": "✓",
+        "suu_class": "yes",
+        "others": [
+          {
+            "text": "✗",
+            "cls": "no"
+          },
+          {
+            "text": "✗",
+            "cls": "no"
+          },
+          {
+            "text": "✗",
+            "cls": "no"
+          }
+        ]
+      },
+      {
+        "label": "Öğüne göre sindirim suyu hesabı",
+        "suu": "✓",
+        "suu_class": "yes",
+        "others": [
+          {
+            "text": "✗",
+            "cls": "no"
+          },
+          {
+            "text": "✗",
+            "cls": "no"
+          },
+          {
+            "text": "✗",
+            "cls": "no"
+          }
+        ]
+      },
+      {
+        "label": "Hava durumuna göre hedef",
+        "suu": "✓",
+        "suu_class": "yes",
+        "others": [
+          {
+            "text": "✗",
+            "cls": "no"
+          },
+          {
+            "text": "✗",
+            "cls": "no"
+          },
+          {
+            "text": "✗",
+            "cls": "no"
+          }
+        ]
+      },
+      {
+        "label": "Sohbetle uygulama kontrolü",
+        "suu": "✓ Suu AI",
+        "suu_class": "yes",
+        "others": [
+          {
+            "text": "✗",
+            "cls": "no"
+          },
+          {
+            "text": "✗",
+            "cls": "no"
+          },
+          {
+            "text": "✗",
+            "cls": "no"
+          }
+        ]
+      },
+      {
+        "label": "Besin veritabanı genişliği",
+        "suu": "İyi",
+        "suu_class": "",
+        "others": [
+          {
+            "text": "✓ En geniş",
+            "cls": "yes"
+          },
+          {
+            "text": "✓ Geniş",
+            "cls": "yes"
+          },
+          {
+            "text": "—",
+            "cls": "no"
+          }
+        ]
+      },
+      {
+        "label": "Tarif kütüphanesi",
+        "suu": "✗",
+        "suu_class": "no",
+        "others": [
+          {
+            "text": "✓",
+            "cls": "yes"
+          },
+          {
+            "text": "✓ Güçlü",
+            "cls": "yes"
+          },
+          {
+            "text": "—",
+            "cls": "no"
+          }
+        ]
+      },
+      {
+        "label": "Apple Watch uygulaması",
+        "suu": "Yakında",
+        "suu_class": "soon",
+        "others": [
+          {
+            "text": "✓",
+            "cls": "yes"
+          },
+          {
+            "text": "✓",
+            "cls": "yes"
+          },
+          {
+            "text": "✓",
+            "cls": "yes"
+          }
+        ]
+      },
+      {
+        "label": "Türkçe tam yerelleştirme",
+        "suu": "✓",
+        "suu_class": "yes",
+        "others": [
+          {
+            "text": "✓",
+            "cls": "yes"
+          },
+          {
+            "text": "✓",
+            "cls": "yes"
+          },
+          {
+            "text": "✗",
+            "cls": "no"
+          }
+        ]
+      },
+      {
+        "label": "Arapça RTL desteği",
+        "suu": "✓",
+        "suu_class": "yes",
+        "others": [
+          {
+            "text": "Kısıtlı",
+            "cls": "no"
+          },
+          {
+            "text": "Kısıtlı",
+            "cls": "no"
+          },
+          {
+            "text": "✗",
+            "cls": "no"
+          }
+        ]
+      }
+    ]
+  },
+  "reviews": {
+    "head": "Kullanıcı yorumları",
+    "sub": "Google Play 4.9★ · App Store 5.0★ · 2.800+ değerlendirme",
+    "stars_aria": "5 üzerinden {n} yıldız",
+    "items": [
+      {
+        "stars": 5,
+        "author": "Ayşe Yılmaz",
+        "text": "Muhteşem bir uygulama! Su içme alışkanlığım tamamen değişti. Artık günde 2.5 litre su içebiliyorum. Hatırlatmalar çok işe yarıyor."
+      },
+      {
+        "stars": 5,
+        "author": "Mehmet Kaya",
+        "text": "Spor yaptığım için su takibi çok önemliydi. Bu uygulama sayesinde performansım arttı. Özellikle grafikleri çok beğendim."
+      },
+      {
+        "stars": 5,
+        "author": "Ali Öztürk",
+        "text": "Harika! Ofiste çalışırken su içmeyi unutuyordum. Şimdi düzenli içiyorum ve kendimi çok daha enerjik hissediyorum."
+      },
+      {
+        "stars": 5,
+        "author": "Fatma Demir",
+        "text": "Doktorum günde 2 litre su içmemi söylemişti. Bu uygulama sayesinde hedefime kolayca ulaşıyorum. Teşekkürler!"
+      },
+      {
+        "stars": 4,
+        "author": "Zeynep Çelik",
+        "text": "Genel olarak memnunum ama bazen bildirimler çok sık geliyor. Bu dışında su içme hedeflerime ulaşmamda çok yardımcı oldu."
+      },
+      {
+        "stars": 4,
+        "author": "Murat Şahin",
+        "text": "İyi bir uygulama ama daha fazla özelleştirme seçeneği olsa harika olur. Yine de su içme rutinimde devrim yarattı."
+      }
+    ]
+  },
+  "pricing": {
+    "eyebrow": "Fiyatlandırma",
+    "head": "Temel özellikler her zaman ücretsiz",
+    "sub": "Premium'u 3 gün ücretsiz dene. Fiyatlar yerel para biriminde otomatik gösterilir.",
+    "plans": [
+      {
+        "name": "Ücretsiz",
+        "price": "₺0",
+        "note": "Her zaman ücretsiz",
+        "features": [
+          "Temel su ve hidrasyon takibi",
+          "91 içecek desteği",
+          "Egzersiz takibi",
+          "Günde 3 AI analizi (sesli/yazılı)",
+          "Apple Health / Health Connect senkronu"
+        ],
+        "href": "/app?src=fiyat-ucretsiz",
+        "cta": "Ücretsiz İndir"
+      },
+      {
+        "name": "Premium Yıllık",
+        "price": "₺1.200",
+        "was": "₺2.400",
+        "badge": "%50 lansman indirimi",
+        "featured": true,
+        "note": "Yıllık · 3 gün ücretsiz deneme",
+        "features": [
+          "Sınırsız AI yemek analizi",
+          "Fotoğrafla kalori hesaplama",
+          "Gelişmiş beslenme analizi",
+          "Premium istatistikler",
+          "Dinamik sindirim suyu bildirimleri",
+          "PDF ve CSV rapor dışa aktarımı",
+          "Reklamsız kullanım"
+        ],
+        "href": "/app?src=fiyat-yillik",
+        "cta": "3 Gün Ücretsiz Dene"
+      },
+      {
+        "name": "Aylık & Aile",
+        "price": "₺149",
+        "period": "/ ay",
+        "note": "Aile planı: ₺2.399 / yıl — 3 kişiye kadar",
+        "features": [
+          "Tüm Premium özellikleri",
+          "Aylık plan, istediğin zaman iptal",
+          "Aile planında 3 ayrı hesap",
+          "3 gün ücretsiz deneme"
+        ],
+        "href": "premium.html",
+        "cta": "Planları Karşılaştır"
+      }
+    ]
+  },
+  "faq": {
+    "head": "Sık sorulan sorular",
+    "items": [
+      {
+        "q": "Suu su takibi, kalori sayımı ve egzersizi gerçekten tek uygulamada mı yapıyor?",
+        "a": "Evet. Suu bu üçünü ayrı sekmeler olarak değil, birbirini besleyen tek bir sistem olarak çalıştırır: kaydettiğin egzersiz günlük su hedefini otomatik yükseltir, yediğin öğünün protein ve sodyum içeriği sindirim için gereken ek suyu belirler, içtiğin her içecek 91 içeceklik veritabanındaki gerçek hidrasyon katkısıyla hesaba katılır."
+      },
+      {
+        "q": "Fotoğrafla kalori hesaplama nasıl çalışıyor?",
+        "a": "Yemeğinin fotoğrafını çekersin; Suu AI öğünü analiz ederek kalori, protein, karbonhidrat ve yağ değerlerini çıkarır ve makrolarını otomatik oluşturur. Fotoğrafın kalıcı olarak saklanmaz. Fotoğraflı analiz Premium özelliğidir; ücretsiz planda günde 3 sesli veya yazılı AI analizi hakkın vardır."
+      },
+      {
+        "q": "Suu kaç spor aktivitesini destekliyor?",
+        "a": "Yaklaşık 50 farklı aktivite: koşu, yürüyüş, bisiklet, fitness, yüzme, doğa yürüyüşü, kardiyo ve daha fazlası. Koşu ve yürüyüşte mesafe, süre, tempo, ortalama hız ve yakılan kaloriyi; bisiklette ayrıca hız ve irtifayı görürsün. Her egzersiz sonrası su hedefin otomatik güncellenir."
+      },
+      {
+        "q": "Suu ücretsiz mi?",
+        "a": "Temel su ve hidrasyon takibi, günde 3 AI analizi ve Apple Health / Google Health Connect senkronu her zaman ücretsizdir. Sınırsız AI yemek analizi, fotoğrafla kalori hesaplama, gelişmiş beslenme analizi ve premium istatistikler için Premium gerekir. Premium 3 gün ücretsiz denenebilir; yıllık plan lansmana özel %50 indirimle ₺1.200 (normal ₺2.400), aylık ₺149, 3 kişilik aile planı yıllık ₺2.399."
+      },
+      {
+        "q": "Suu hangi dilleri destekliyor?",
+        "a": "Uygulama 7 dilde kullanılabilir: Türkçe, English, العربية (sağdan sola tam destek), Deutsch, Italiano, Русский ve हिन्दी."
+      },
+      {
+        "q": "Suu'nun Apple Watch uygulaması var mı?",
+        "a": "Suu'nun kendi Apple Watch uygulaması henüz yok — yakında geliyor. Bugün Apple Watch'unuzun kaydettiği antrenman, adım ve aktif kalori verisi Apple Health üzerinden Suu'ya akar ve su hedefinizi otomatik yükseltir. Bilekten eller serbest kayıt için Siri komutu kullanılabilir.",
+        "link": {
+          "href": "blog/apple-watch-su-takibi.html",
+          "label": "Kurulum rehberi"
+        }
+      },
+      {
+        "q": "Verilerim güvende mi?",
+        "a": "Verilerin tamamen sana aittir. Reklam takibi yapılmaz, veriler üçüncü taraflarla paylaşılmaz. Sesli girişte konuşman cihazın işletim sistemi tarafından metne çevrilir — ses kaydı Suu sunucularına gönderilmez. Yemek fotoğrafları analiz sonrası kalıcı olarak saklanmaz.",
+        "link": {
+          "href": "gizlilik-politikasi.html",
+          "label": "Gizlilik politikası"
+        }
+      },
+      {
+        "q": "Suu'yu MyFitnessPal veya Yazio yerine neden kullanayım?",
+        "a": "MyFitnessPal'in besin veritabanı daha geniş, Yazio'nun tarif kütüphanesi güçlüdür. Suu'nun ayrıştığı nokta bütünlüktür: su takibi, fotoğrafla kalori analizi ve egzersiz takibi tek uygulamada ve birbirine bağlı çalışır — egzersizin su hedefini, öğünün sindirim suyunu otomatik günceller. Ayrıca 91 içecekli gerçek hidrasyon hesabı ve 7 dil desteği sunar.",
+        "link": {
+          "href": "blog/suu-vs-myfitnesspal.html",
+          "label": "Ayrıntılı karşılaştırma"
+        }
+      }
+    ]
+  },
+  "disclaimer": "Suu tıbbi teşhis veya tedavi amacıyla geliştirilmemiştir. Sağlıkla ilgili kararlar için bir sağlık profesyoneline danışın.",
+  "cta": {
+    "head": "Su, kalori ve egzersiz — bugün tek uygulamada",
+    "sub": "Ücretsiz indir, Premium'u 3 gün ücretsiz dene."
+  },
+  "footer": {
+    "blurb": "Su takibi, kalori sayacı ve egzersiz takibi tek uygulamada. İstanbul'da bireysel olarak geliştiriliyor.",
+    "columns": [
+      {
+        "title": "Ürün",
+        "links": [
+          {
+            "href": "ozellikler.html",
+            "label": "Özellikler"
+          },
+          {
+            "href": "premium.html",
+            "label": "Premium"
+          },
+          {
+            "href": "indir.html",
+            "label": "İndir"
+          },
+          {
+            "href": "su-hesaplayici.html",
+            "label": "Su Hesaplayıcı"
+          },
+          {
+            "href": "kimler-icin.html",
+            "label": "Kimler İçin?"
+          }
+        ]
+      },
+      {
+        "title": "Keşfet",
+        "links": [
+          {
+            "href": "blog.html",
+            "label": "Blog"
+          },
+          {
+            "href": "suu-endeksi.html",
+            "label": "Suu Endeksi"
+          },
+          {
+            "href": "ana-beyin.html",
+            "label": "Ana Beyin"
+          },
+          {
+            "href": "hidrasyon-plani.html",
+            "label": "Hidrasyon Planı"
+          },
+          {
+            "href": "faq.html",
+            "label": "SSS"
+          }
+        ]
+      },
+      {
+        "title": "Kurumsal",
+        "links": [
+          {
+            "href": "hakkimizda.html",
+            "label": "Hakkımızda"
+          },
+          {
+            "href": "ekip.html",
+            "label": "Ekip"
+          },
+          {
+            "href": "gizlilik-politikasi.html",
+            "label": "Gizlilik Politikası"
+          },
+          {
+            "href": "kullanim-sartlari.html",
+            "label": "Kullanım Şartları"
+          },
+          {
+            "href": "delete-account.html",
+            "label": "Hesap Silme"
+          }
+        ]
+      }
+    ]
+  },
+  "schema": {
+    "features_ios": [
+      "Fotoğrafla kalori analizi — yemeğin fotoğrafından kalori, protein, karbonhidrat ve yağ",
+      "Sesli ve yazılı öğün girişi",
+      "Otomatik makro hesaplama ve beslenme analizi",
+      "1-100 beslenme puanı",
+      "91 içecek desteği ve gerçek hidrasyon katkısı hesabı",
+      "Yaş, kilo ve aktiviteye göre akıllı su hedefi",
+      "Hava sıcaklığına göre otomatik hedef güncellemesi",
+      "Yenen besinlerin sindirim su ihtiyacı hesabı",
+      "Suu Endeksi — 0-100 hidrasyon skoru",
+      "Ana Beyin — adaptif hedef motoru",
+      "Yaklaşık 50 spor aktivitesi takibi",
+      "Koşu ve yürüyüşte mesafe, süre, tempo, ortalama hız, yakılan kalori",
+      "Bisiklette hız, ortalama hız, mesafe, irtifa, süre, yakılan kalori",
+      "Egzersizin su hedefini otomatik güncellemesi",
+      "Suu AI sohbet asistanı",
+      "Günlük, haftalık ve aylık grafikler",
+      "PDF ve CSV rapor dışa aktarımı",
+      "Hikâye paylaşımı",
+      "Sanal evcil hayvan ve rozetler",
+      "Arkadaş ligleri — haftalık, 4 kişiye kadar",
+      "Apple Health çift yönlü senkron",
+      "Siri komutları",
+      "Dynamic Island",
+      "Live Activities",
+      "Kilit ekranı ve ana ekran widget'ları",
+      "VoiceOver erişilebilirlik desteği"
+    ],
+    "features_android": [
+      "Fotoğrafla kalori analizi",
+      "Sesli ve yazılı öğün girişi",
+      "Otomatik makro hesaplama",
+      "91 içecek desteği",
+      "Yaklaşık 50 spor aktivitesi takibi",
+      "Suu AI sohbet asistanı",
+      "Google Health Connect çift yönlü senkron",
+      "Ana ekran widget'ları",
+      "Hikâye paylaşımı",
+      "Sanal evcil hayvan ve arkadaş ligleri",
+      "TalkBack erişilebilirlik desteği"
+    ]
+  }
+}

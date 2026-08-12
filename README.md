@@ -1,36 +1,50 @@
-# Suu — Kalori ve Su Takibi (Web Sitesi)
+# Suu — Su, Kalori ve Egzersiz Takibi (Web Sitesi)
 
 Suu'nun pazarlama ve SEO web sitesi. [suuapp.com](https://suuapp.com) adresinde canlı.
 
-- **Kanonik ad:** Suu - Kalori ve Su Takibi
-- **Tagline:** Su, Kalori ve Sağlık Rehberi
+- **Kanonik ad:** Suu – Su Takibi, Kalori Sayacı ve Egzersiz Takibi
+- **Tagline:** Su, Kalori ve Egzersiz — Tek Uygulamada
+
+> **Tek doğruluk kaynağı:** [content/suu-facts.json](content/suu-facts.json). Uygulamaya dair her sayı, özellik ve platform bilgisi önce orada güncellenir; ardından `python3 scripts/check-facts.py` ile site taranır.
 
 ## Uygulama Hakkında
 
-Suu artık sadece bir su takip uygulaması değil — **yapay zeka tabanlı beslenme, kalori ve hidrasyon asistanı**. Furkan Mert Fındıklı tarafından tek başına (indie) Flutter ile geliştirilir; Android ve iOS'ta ücretsiz.
+Suu artık sadece bir su takip uygulaması değil — **su takibi, kalori sayımı ve egzersiz takibini yapay zekâ ile birleştiren** bir sağlık ve fitness uygulaması. Furkan Mert Fındıklı tarafından tek başına (indie) Flutter ile geliştirilir; Android ve iOS'ta ücretsiz.
 
 - **Google Play:** 4.9★ · 2.800+ değerlendirme · **App Store:** 5.0★
-- **Dil desteği:** Türkçe, İngilizce, Rusça, Arapça (4 dil, tam yerelleştirme + RTL)
-- **Hedef pazar:** Türkiye, MENA, BDT
+- **Uygulama dil desteği:** Türkçe, English, العربية, Deutsch, Italiano, Русский, हिन्दी (7 dil, RTL dahil)
+- **Site dil desteği:** TR / EN / AR / RU canlı — DE / IT / HI yolda
+- **Hedef pazar:** Türkiye, MENA, BDT, DACH, İtalya, Hindistan
 
-## Özellikler
+## Özellikler — Üç Sütun
 
-### Yapay Zeka Beslenme (yeni yön)
-- **Sesli kayıt:** konuşarak öğün/içecek ekleme; AI katı-sıvı ayrımını otomatik yapar. Ses, cihazın işletim sistemi (Apple Speech / Android SpeechRecognizer) ile metne çevrilir — ses kaydı Suu backend'ine gönderilmez.
-- **Fotoğraflı kalori analizi (Premium):** Google Gemini API ile yemek tanıma, porsiyon tahmini, kalori + makro çıkarımı. Görsel kalıcı saklanmaz.
-- **Kalori & makro takibi:** kalori, protein, karbonhidrat, yağ, sodyum → Apple HealthKit / Google Health Connect (Dietary oku + yaz).
-- **1–100 beslenme puanı**, günlük denge görünümü.
-- **Limit:** günde 3 ücretsiz AI analizi (sesli/yazılı); sınırsız analiz + fotoğraf = Premium.
-
-### Hidrasyon
-- Kişiselleştirilmiş günlük su hedefi (boy, kilo, cinsiyet, aktivite, hava durumu bazlı)
+### 1. Su Takibi
+- Kişiselleştirilmiş günlük su hedefi (yaş, kilo, aktivite, hava sıcaklığı bazlı)
 - **91 içecek** + gerçek dehidrasyon faktörü; Starbucks ve kahve zinciri menüleri entegre
+- Yenen besinlerin protein/sodyum değerine göre **sindirim suyu** hesabı
+- Egzersize göre otomatik ek sıvı ihtiyacı; gün boyunca dinamik güncelleme
 - **Suu Endeksi** (0–100 hidrasyon skoru), **Ana Beyin** (adaptif hedef)
-- Akıllı bildirimler: yemek sonrası sindirim suyu, gece dehidrasyonuna karşı sabah "ilk yudum"
+
+### 2. Kalori ve Beslenme
+- **Fotoğrafla kalori analizi (Premium):** yemek tanıma, porsiyon tahmini, kalori + makro çıkarımı. Görsel kalıcı saklanmaz.
+- **Sesli/yazılı kayıt:** konuşarak öğün/içecek ekleme; AI katı-sıvı ayrımını otomatik yapar. Ses, cihazın işletim sistemi (Apple Speech / Android SpeechRecognizer) ile metne çevrilir — ses kaydı Suu backend'ine gönderilmez.
+- Kalori, protein, karbonhidrat, yağ takibi ve otomatik makro hesaplama
+- **1–100 beslenme puanı**, günlük denge görünümü
+- **Limit:** günde 3 ücretsiz AI analizi; sınırsız analiz + fotoğraf = Premium
+
+### 3. Egzersiz Takibi
+- **~50 spor aktivitesi:** koşu, yürüyüş, bisiklet, fitness, yüzme, doğa yürüyüşü, kardiyo…
+- Koşu/yürüyüş: mesafe, süre, tempo, ortalama hız, yakılan kalori
+- Bisiklet: hız, ortalama hız, mesafe, irtifa, süre, yakılan kalori
+- Her egzersiz su hedefini otomatik günceller
+
+### Suu AI
+Sohbet ederek su ekleme, içecek kaydetme, öğün oluşturma, egzersiz ekleme, beslenme analizi, hedef güncelleme, hatırlatıcı düzenleme.
 
 ### Platform
-- **Apple Watch** (bağımsız watchOS uygulaması), **Siri** komutları, **Dynamic Island**, kilit/ana ekran widget'ları
-- Apple HealthKit + Google Health Connect (çift yönlü senkron)
+- **iOS:** Apple Health, **Siri** komutları, **Dynamic Island**, **Live Activities**, widget'lar
+- **Android:** Google Health Connect, widget'lar
+- **Apple Watch:** yakında — bugün Watch verisi Apple Health üzerinden Suu'ya akıyor ve su hedefini güncelliyor
 
 ### Sosyal & Oyunlaştırma
 - Arkadaş ligleri (haftalık, 4 kişiye kadar, iOS + Android çapraz platform)
@@ -49,26 +63,80 @@ Suu artık sadece bir su takip uygulaması değil — **yapay zeka tabanlı besl
 
 ## Web Sitesi Yapısı
 
-Çok dilli statik site. Ana sayfa dışında EN/AR/RU sayfaları `-en`/`-ar`/`-ru` suffix'i kullanır (ana sayfa istisnası: `hosgeldiniz-*`).
+Çok dilli statik site. Ana sayfa dışında diğer dil sayfaları `-en`/`-ar`/`-ru` (ve yolda olan `-de`/`-it`/`-hi`) suffix'ini kullanır. Ana sayfa istisnası: `hosgeldiniz-*`.
+
+**URL kuralı — kritik:** Mevcut URL'ler değiştirilmez. GitHub Pages 301 yönlendirme veremediği için dizin tabanlı (`/en/`, `/de/`) yapıya geçmek yıllık ~40.000 görüntülemenin dayandığı URL'leri kırardı.
 
 ```
 /
 ├── index.html                    # Türkçe ana sayfa
 ├── hosgeldiniz-en|ar|ru.html     # EN / AR / RU ana sayfa
-├── premium{,-en,-ar,-ru}.html    # Fiyatlandırma (4 dil)
-├── ozellikler{,-en,-ar,-ru}.html # Özellikler (4 dil)
-├── faq{,-en,-ar,-ru}.html        # SSS (4 dil)
-├── kimler-icin / who-is-suu-for* # Kullanım senaryosu hub'ı (4 dil)
-├── gizlilik-politikasi.html      # Gizlilik (tek URL, 4 dil sekmeli)
-├── kullanim-sartlari.html        # Kullanım Şartları (tek URL, 4 dil sekmeli)
-├── su-hesaplayici / water-calculator*  # Su hesaplama aracı (4 dil)
+├── premium{,-en,-ar,-ru}.html    # Fiyatlandırma
+├── ozellikler{,-en,-ar,-ru}.html # Özellikler
+├── faq{,-en,-ar,-ru}.html        # SSS
+├── kimler-icin / who-is-suu-for* # Kullanım senaryosu hub'ı
+├── gizlilik-politikasi.html      # Gizlilik (tek URL, sekmeli çok dil)
+├── kullanim-sartlari.html        # Kullanım Şartları (tek URL, sekmeli çok dil)
+├── su-hesaplayici / water-calculator*  # Su hesaplama aracı
 ├── blog/                         # Türkçe blog (42 yazı)
 │   ├── en/                       # İngilizce blog (39 yazı)
 │   ├── ar/                       # Arapça blog (35 yazı)
 │   └── ru/                       # Rusça blog (39 yazı)
+├── content/suu-facts.json        # TEK DOĞRULUK KAYNAĞI
 ├── sitemap.xml · robots.txt
-├── llms.txt · llms-full.txt      # AI asistan referans dosyaları (4 dil)
+├── llms.txt · llms-full.txt      # AI asistan referans dosyaları (dil başına)
 └── aso-store-listing.md          # Dahili ASO/mağaza metinleri (.gitignore — yayınlanmaz)
+```
+
+## Tek Kaynak Mimarisi
+
+Sitenin üç ayrı gerçek kaynağı vardı (lang-switcher'ın `PAGE_MAP`'i, hreflang script'inin `CLUSTERS`'ı, sitemap script'inin kendi kopyası) ve zamanla birbirinden saptı. Artık hepsi iki dosyadan besleniyor:
+
+| Kaynak | Besledikleri |
+|---|---|
+| `content/suu-facts.json` | JSON-LD, `llms.txt` ailesi, `ai-plugin.json`, sayfa metinleri, `check-facts.py` |
+| `content/page-registry.json` | dil seçici, hreflang, sitemap |
+
+Ek olarak `content/home/<lang>.json` (7 dil) ana sayfaların ve `llms.txt` ailesinin metinlerini taşır.
+
+## Bakım Scriptleri
+
+Repo'nun build sistemi `scripts/` altındaki Python dosyalarıdır (CI'da değil, elle çalıştırılır). Hepsi önce **önizleme** yapar; yazmak için `--apply` gerekir ve hepsi idempotenttir.
+
+```bash
+# Doğruluk
+python3 scripts/check-facts.py              # suu-facts.json ile çelişen iddiaları tara
+python3 scripts/fix-stale-facts.py --apply  # mekanik düzeltmeler (sayı, dil listesi)
+
+# Üretim
+python3 scripts/build-homepages.py --apply          # 7 dilde ana sayfa
+python3 scripts/build-i18n-map.py --apply           # i18n-map.json + lang-switcher.js
+python3 scripts/build-llms.py --apply               # llms.txt ailesi (7 dil × 2)
+
+# Enjeksiyon
+python3 scripts/inject-hreflang.py --apply          # hreflang kümesi
+python3 scripts/inject-comparison-schema.py --apply # karşılaştırma sayfalarına ItemList
+python3 scripts/inject-analytics.py --apply         # ölçüm parçacığı
+python3 scripts/update-sitemap.py --apply           # sitemap (image blokları korunur)
+python3 scripts/generate-og.py                      # blog OG görselleri
+
+# Yayın sonrası
+python3 scripts/indexnow-submit.py --changed        # Bing + Yandex'e anında bildirim
+
+# Rapor
+python3 scripts/check-screenshots.py --missing      # eksik ekran görüntüleri
+```
+
+**Tipik yayın akışı:**
+```bash
+python3 scripts/build-homepages.py --apply && \
+python3 scripts/build-i18n-map.py --apply && \
+python3 scripts/build-llms.py --apply && \
+python3 scripts/inject-hreflang.py --apply && \
+python3 scripts/update-sitemap.py --apply && \
+python3 scripts/check-facts.py
+git push origin main
+python3 scripts/indexnow-submit.py --all
 ```
 
 ## Teknoloji
