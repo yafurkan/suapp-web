@@ -111,8 +111,16 @@ def submit(key: str, key_location: str, urls: list[str], dry: bool) -> int:
         headers={"Content-Type": "application/json; charset=utf-8"},
         method="POST",
     )
+    # macOS'ta sistem Python'ı kök sertifikaları görmüyor — certifi varsa onu kullan
+    ctx = None
     try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
+        import ssl, certifi
+        ctx = ssl.create_default_context(cafile=certifi.where())
+    except ImportError:
+        pass
+
+    try:
+        with urllib.request.urlopen(req, timeout=30, context=ctx) as resp:
             code = resp.status
             body = resp.read().decode("utf-8", "replace")[:200]
     except urllib.error.HTTPError as e:
