@@ -14,7 +14,7 @@
     'use strict';
 
     // ── Yapılandırma ────────────────────────────────────────
-    var GA4_ID = '';                 // ← GA4 ölçüm ID'si buraya (G-XXXXXXXXXX)
+    var GA4_ID = 'G-1CEX810NMD';     // Suu Web akışı (sutakip-fcm-app-furkan mülkü)
     var CLARITY_ID = 'tabxahhw7s';   // Microsoft Clarity proje kimliği
 
     var STORE_HOSTS = {
