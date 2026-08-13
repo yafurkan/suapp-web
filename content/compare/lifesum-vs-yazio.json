@@ -1,0 +1,133 @@
+{
+  "_note": "RAKİP-vs-RAKİP. Search Console: 'lifesum vs yazio' 2 tıklama / 42 gösterim — Suu geçmediği hâlde sıralanıyoruz. Bu sorgu sınıfını gerçekten hedefliyoruz. Suu üçüncü seçenek olarak, dürüstçe ve sonda sunuluyor.",
+  "published": "2026-08-13",
+
+  "pages": {
+    "en": {
+      "slug": "lifesum-vs-yazio",
+      "published_display": "13 August 2026",
+      "read_minutes": 7,
+      "badge": "⚖️ Head-to-Head 2026",
+      "h1": "Lifesum vs Yazio: Which Calorie App Should You Pick in 2026?",
+
+      "meta": {
+        "title": "Lifesum vs Yazio (2026): Which Is Better? Honest Comparison | Suu",
+        "description": "Lifesum and Yazio compared on food database, recipes, macro tracking, free plan limits and price. Which suits beginners, which suits meal planners — and what neither of them does.",
+        "keywords": "lifesum vs yazio, yazio vs lifesum, lifesum or yazio, best calorie app comparison, lifesum review 2026, yazio review 2026, calorie counter comparison, diet app comparison",
+        "og_title": "Lifesum vs Yazio: Which Calorie App Should You Pick?",
+        "og_description": "An honest side-by-side of Lifesum and Yazio — database, recipes, macros, free tier and price — plus the gap both leave open."
+      },
+
+      "answer": "Yazio is the better pick if meal planning is your bottleneck: its recipe library and structured diet plans are stronger, and its free tier is more usable. Lifesum wins on interface polish and habit coaching, which makes it friendlier for a first-time tracker. Both handle calories and macros competently; neither does anything meaningful with hydration or with the exercise you log.",
+
+      "disclosure": "This comparison is published by Suu, which makes a competing app. That is a conflict of interest, so we have kept the Lifesum and Yazio sections free of Suu marketing and put our own app in a clearly separated section at the end, where you can skip it. Feature details reflect publicly available information as of August 2026 and change frequently — verify current plan limits on each app's store page.",
+
+      "intro": [
+        "Lifesum and Yazio are the two European calorie apps that most people end up choosing between after deciding MyFitnessPal is too cluttered. They occupy similar ground: cleaner design, macro tracking, diet plans, and a subscription that unlocks the good parts.",
+        "They are genuinely different in emphasis, though, and the right answer depends on which problem you are actually trying to solve — <em>knowing what you ate</em> or <em>deciding what to eat</em>."
+      ],
+
+      "table": {
+        "head": "Lifesum vs Yazio",
+        "caption": "Feature comparison between Lifesum and Yazio",
+        "col_feature": "Feature",
+        "columns": ["Lifesum", "Yazio"],
+        "suu_col": -1,
+        "rows": [
+          { "label": "Calorie and macro logging", "cells": [{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
+          { "label": "Food database breadth", "cells": [{"text":"Large","cls":"yes"},{"text":"Large","cls":"yes"}] },
+          { "label": "Barcode scanner", "cells": [{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
+          { "label": "Photo food recognition", "cells": [{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
+          { "label": "Recipe library", "cells": [{"text":"✓ Good","cls":"yes"},{"text":"✓ Stronger","cls":"yes"}] },
+          { "label": "Structured diet plans", "cells": [{"text":"✓","cls":"yes"},{"text":"✓ More extensive","cls":"yes"}] },
+          { "label": "Food quality scoring", "cells": [{"text":"✓ Life Score","cls":"yes"},{"text":"Partial","cls":"no"}] },
+          { "label": "Interface polish / onboarding", "cells": [{"text":"✓ Stronger","cls":"yes"},{"text":"✓ Good","cls":"yes"}] },
+          { "label": "Free tier usability", "cells": [{"text":"More limited","cls":"no"},{"text":"✓ More usable","cls":"yes"}] },
+          { "label": "Fasting tracker", "cells": [{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
+          { "label": "Exercise tracking in-app", "cells": [{"text":"Basic","cls":"no"},{"text":"Basic","cls":"no"}] },
+          { "label": "Hydration modelling (per beverage)", "cells": [{"text":"Simple counter","cls":"no"},{"text":"Simple counter","cls":"no"}] },
+          { "label": "Workout updates hydration goal", "cells": [{"text":"✗","cls":"no"},{"text":"✗","cls":"no"}] },
+          { "label": "Apple Health / Health Connect sync", "cells": [{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] }
+        ]
+      },
+
+      "analysis": [
+        {
+          "head": "Choose Lifesum if you are starting out",
+          "body": [
+            "Lifesum's strength is the experience around the numbers. Onboarding is gentle, the interface is uncluttered, and the Life Score idea — rating the quality of what you ate, not just the quantity — gives beginners feedback that a bare calorie count does not.",
+            "That matters more than it sounds. The most common failure mode in calorie tracking is not inaccuracy, it is quitting in week two. An app that makes the first fortnight feel encouraging has a real advantage.",
+            "The trade-off is the free tier: several of the features people expect sit behind Premium, and you notice it sooner than in Yazio."
+          ]
+        },
+        {
+          "head": "Choose Yazio if deciding what to cook is the hard part",
+          "body": [
+            "Yazio's recipe and diet-plan library is the deeper of the two. If you open a tracking app and the real problem is \"I don't know what to make that fits my macros\", Yazio answers that question better.",
+            "Its free tier is also the more usable of the two — you can log seriously for months without paying, which is not quite true of Lifesum.",
+            "Where it gives ground is polish. Yazio is perfectly pleasant, but Lifesum's design and coaching layer feel a step ahead."
+          ],
+          "callout": "<strong>Quick rule of thumb:</strong> if your problem is <em>recording</em> what you ate, either works and Lifesum is nicer. If your problem is <em>planning</em> what to eat, Yazio. If your problem is that food is only one part of the picture, keep reading."
+        },
+        {
+          "head": "What both of them leave on the table",
+          "body": [
+            "Lifesum and Yazio are nutrition apps that added a water counter and a light exercise log, rather than apps designed around all three from the start. In practice that means two things go untracked in any meaningful way.",
+            "<strong>Hydration is a tally, not a model.</strong> Both count glasses. Neither distinguishes what you drank — a 250 ml coffee and a 250 ml water are not the same for fluid balance, and neither app reflects that. Neither adjusts your target for a hot day.",
+            "<strong>Exercise does not feed anything.</strong> You can log a workout, and the calories may offset your allowance, but the fluid you lost through sweat is not accounted for anywhere. On a heavy training day the number that changes most is the one nobody is tracking."
+          ]
+        },
+        {
+          "head": "Disclosure: where our own app fits",
+          "body": [
+            "We publish this comparison and we also make a competing app, so treat this section as advertising and skip it if you prefer — the Lifesum and Yazio verdict above stands on its own.",
+            "Suu was built around the gap described above: water, calories and exercise as one connected system rather than three parallel logs. A run you record raises the daily water goal from estimated sweat loss; a meal you photograph is analysed for calories and macros, and its protein and sodium content adds the digestion water on top; each of 91 beverages contributes its real hydration value.",
+            "Where Suu is behind: its food database is smaller than either Lifesum's or Yazio's, and it has no recipe library at all. If recipes or database breadth are your priority, the two apps above remain the better choice and we would rather say so than pretend otherwise."
+          ]
+        }
+      ],
+
+      "verdict": {
+        "head": "Verdict",
+        "body": [
+          "<strong>Lifesum</strong> — better onboarding, nicer interface, food-quality scoring. Best for someone tracking calories for the first time.",
+          "<strong>Yazio</strong> — stronger recipes and diet plans, more usable free tier. Best if planning meals is the actual bottleneck.",
+          "<strong>Neither</strong> — if you want hydration modelled properly and your workouts to change your daily targets, both fall short by design, and that is the gap Suu is built for.",
+          "If you are choosing purely between these two: try Yazio's free tier first, since it lets you get further before asking for money."
+        ]
+      },
+
+      "cta": {
+        "head": "Want water, calories and exercise in one connected app?",
+        "sub": "Free to download · Premium free for 3 days",
+        "button": "See how Suu does it"
+      },
+
+      "faq": [
+        { "q": "Is Lifesum or Yazio better?",
+          "a": "Lifesum is better for beginners thanks to its onboarding, cleaner interface and Life Score food-quality rating. Yazio is better if you want recipes and structured diet plans, and its free tier is more usable long-term. Both track calories and macros competently." },
+        { "q": "Which has the better free plan, Lifesum or Yazio?",
+          "a": "Yazio's free tier is generally the more usable of the two — you can log calories and macros seriously for months before the paywall becomes limiting. Lifesum places more of its distinctive features behind Premium." },
+        { "q": "Do Lifesum and Yazio track water?",
+          "a": "Both include a basic water counter, but neither models hydration properly: they count glasses without distinguishing what you drank, and they do not adjust your target for exercise or hot weather. Coffee and water are counted the same way." },
+        { "q": "Do Lifesum or Yazio track workouts?",
+          "a": "Both offer basic exercise logging and can read workouts from Apple Health or Google Health Connect, but neither is a serious workout tracker, and logged exercise does not affect anything beyond your calorie allowance." },
+        { "q": "What is a good alternative to Lifesum and Yazio?",
+          "a": "For a larger food database, MyFitnessPal. For deep micronutrient detail, Cronometer. If you want calories, exercise and hydration connected in one app — where the workout you log raises your water goal and the meal you eat adds digestion water — Suu is built for that specific gap, though its food database is smaller and it has no recipe library." }
+      ],
+
+      "references": [
+        { "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/", "label": "Dietary self-monitoring and weight management (PMC)" },
+        { "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5568610/", "label": "Mobile dietary tracking and adherence (PMC)" },
+        { "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459", "label": "EFSA — dietary reference values for water" }
+      ],
+
+      "related": [
+        { "href": "/blog/en/best-calorie-counting-app.html", "title": "Best calorie counting app", "desc": "The wider five-app comparison." },
+        { "href": "/blog/en/suu-vs-yazio.html", "title": "Suu vs Yazio", "desc": "If you want the direct head-to-head." },
+        { "href": "/blog/en/free-calorie-counter-app.html", "title": "Free calorie counter apps", "desc": "What actually stays free on each plan." },
+        { "href": "/blog/en/water-calorie-exercise-one-app.html", "title": "Water + calories + exercise in one app", "desc": "The gap both of these leave open." }
+      ]
+    }
+  }
+}

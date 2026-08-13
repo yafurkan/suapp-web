@@ -69,11 +69,13 @@ def build_cluster_map(reg: dict) -> dict[str, dict[str, str]]:
         for variants in reg[kind].values():
             urls = family_urls(variants, kind, default)
             urls = {l: u for l, u in urls.items() if local_exists(u)}
-            if len(urls) < 2:
+            if not urls:
                 continue
             ordered = {l: urls[l] for l in order if l in urls}
+            # Tek dilli sayfa da sitemap'e girmeli; sadece hreflang açıklaması
+            # almaz (kendine tek referans anlamsız olurdu).
             for u in ordered.values():
-                out[u] = ordered
+                out[u] = ordered if len(ordered) > 1 else {}
     return out
 
 
