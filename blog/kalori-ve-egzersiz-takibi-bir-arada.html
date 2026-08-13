@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ÜRETİLMİŞ DOSYA — elle düzenlemeyin.
+         Kaynak: content/compare/calorie-counter-with-exercise-tracker.json + content/compare/_template.html.j2
+         Yeniden üret: python3 scripts/build-compare.py --apply -->
+
+    <title>Kalori ve Egzersiz Takibi Bir Arada — Hangi Uygulama? (2026) | Suu</title>
+    <meta name="description" content="Çoğu uygulama kaloriyi ve antrenmanı ayrı ayrı kaydediyor. Hangileri ikisini gerçekten bağlıyor — yani kaydettiğin koşu ne yiyip ne içmen gerektiğini değiştiriyor? Suu, MyFitnessPal, Yazio, Samsung Health ve Lose It! karşılaştırması.">
+    <meta name="keywords" content="kalori ve egzersiz takibi bir arada, hem kalori hem spor takibi uygulaması, antrenman ve beslenme takip uygulaması, kalori sayacı egzersiz takibi, hepsi bir arada sağlık uygulaması 2026">
+    <meta name="apple-itunes-app" content="app-id=6757619920">
+
+    <link rel="canonical" href="https://suuapp.com/blog/kalori-ve-egzersiz-takibi-bir-arada.html">
+    <!-- Hreflang cluster (auto-injected) -->
+    <link rel="alternate" hreflang="tr" href="https://suuapp.com/blog/kalori-ve-egzersiz-takibi-bir-arada.html">
+    <link rel="alternate" hreflang="en" href="https://suuapp.com/blog/en/calorie-counter-with-exercise-tracker.html">
+    <link rel="alternate" hreflang="x-default" href="https://suuapp.com/blog/kalori-ve-egzersiz-takibi-bir-arada.html">
+
+
+    <meta property="og:title" content="Kalori ve Egzersiz Takibi Bir Arada: Hangi Uygulamalar İkisini Bağlıyor?">
+    <meta property="og:description" content="İkisini aynı uygulamada tutmak yaygın. Birbirine bağlamak değil. Hangi uygulama gerçekten yapıyor?">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://suuapp.com/blog/kalori-ve-egzersiz-takibi-bir-arada.html">
+    <meta property="og:image" content="https://suuapp.com/assets/og-image.png">
+    <meta property="og:site_name" content="Suu">
+    <meta property="og:locale" content="tr_TR">
+    <meta property="article:published_time" content="2026-08-13">
+    <meta property="article:author" content="Furkan Mert Fındıklı">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SuuTakip">
+    <meta name="twitter:title" content="Kalori ve Egzersiz Takibi Bir Arada: Hangi Uygulamalar İkisini Bağlıyor?">
+    <meta name="twitter:description" content="İkisini aynı uygulamada tutmak yaygın. Birbirine bağlamak değil. Hangi uygulama gerçekten yapıyor?">
+    <meta name="twitter:image" content="https://suuapp.com/assets/og-image.png">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/donation-widget.css">
+    <link rel="stylesheet" href="/assets/css/suu.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://suuapp.com/#organization",
+      "name": "Suu",
+      "url": "https://suuapp.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://suuapp.com/assets/favicon-512.png"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://suuapp.com/#furkan",
+      "name": "Furkan Mert Fındıklı",
+      "url": "https://suuapp.com/yazarlar/furkan-mert.html",
+      "jobTitle": "Kurucu \u0026 Geliştirici",
+      "worksFor": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/furkanfindikli/"
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://suuapp.com/blog/kalori-ve-egzersiz-takibi-bir-arada.html#article",
+      "headline": "Kalori ve Egzersiz Takibi Bir Arada: Hangi Uygulamalar İkisini Gerçekten Bağlıyor?",
+      "description": "Çoğu uygulama kaloriyi ve antrenmanı ayrı ayrı kaydediyor. Hangileri ikisini gerçekten bağlıyor — yani kaydettiğin koşu ne yiyip ne içmen gerektiğini değiştiriyor? Suu, MyFitnessPal, Yazio, Samsung Health ve Lose It! karşılaştırması.",
+      "image": "https://suuapp.com/assets/og-image.png",
+      "datePublished": "2026-08-13",
+      "dateModified": "2026-08-13",
+      "inLanguage": "tr",
+      "mainEntityOfPage": "https://suuapp.com/blog/kalori-ve-egzersiz-takibi-bir-arada.html",
+      "author": {
+        "@id": "https://suuapp.com/#furkan"
+      },
+      "publisher": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "about": {
+        "@id": "https://suuapp.com/#suuapp-ios"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".answer-box",
+          "h1",
+          "h2",
+          ".verdict p"
+        ]
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://suuapp.com/blog/kalori-ve-egzersiz-takibi-bir-arada.html#itemlist",
+      "name": "Hangi uygulamalar kalori ve egzersizi bağlıyor?",
+      "inLanguage": "tr",
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "numberOfItems": 5,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "MyFitnessPal",
+            "applicationCategory": "HealthApplication"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Yazio",
+            "applicationCategory": "HealthApplication"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Lose It!",
+            "applicationCategory": "HealthApplication"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Samsung Health",
+            "applicationCategory": "HealthApplication"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "SoftwareApplication",
+            "@id": "https://suuapp.com/#suuapp-ios",
+            "name": "Suu"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://suuapp.com/blog/kalori-ve-egzersiz-takibi-bir-arada.html#faq",
+      "inLanguage": "tr",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Hem kalori hem egzersiz takibi yapan uygulama var mı?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Çoğu yapıyor: MyFitnessPal, Yazio, Lose It! ve Samsung Health ikisini de kaydediyor. Fark, ikisini bağlayıp bağlamadıklarında. Çoğunda antrenman sadece günlük kalori hakkına ekleme yapıyor. Suu ayrıca antrenmanı terle tahmini sıvı kaybı üzerinden su hedefini yükseltmek için kullanıyor ve öğünün protein ile sodyum içeriğinden sindirim için gereken suyu ekliyor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Egzersiz takibi en iyi olan kalori uygulaması hangisi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Samsung Health en geniş aktivite listesine (90+) sahip ama öğün kaydı en zayıf olan. Suu, fotoğrafla kalori kaydının yanında ayrıntılı koşu ve bisiklet metrikleriyle yaklaşık 50 aktivite sunuyor. MyFitnessPal, Yazio ve Lose It!'te yalnızca temel egzersiz kaydı var."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kalori ve egzersiz için iki ayrı uygulama şart mı?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Şart değil, ama alışkanlığın varsa iki uygulama da iş görür. Kusurları şu: kalori verisi en iyi ihtimalle tek yönlü akar ve hidrasyon iki uygulamanın da dışında kalır — yani zorlu bir antrenman gününde en çok değişen değişken takipsiz kalır."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Egzersiz gerçekten su ihtiyacımı değiştiriyor mu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evet, ciddi biçimde. Dayanıklılık egzersizinde ter oranları yoğunluğa, sıcaklığa ve kişisel fizyolojiye göre genelde saatte 0,5 ila 2 litre arasında değişir. Sıcak havada uzun bir seansta sıvı açığı, çoğu uygulamanın varsaydığı sabit günlük hedefi aşabilir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Her şeyi ücretsiz istiyorsam hangisi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kalori odaklı uygulamalar arasında en kullanışlı ücretsiz planlar Lose It! ve Yazio'da; ikisinde de barkot okuyucu dahil. Suu'nun ücretsiz planında 91 içecekle su takibi, egzersiz takibi ve günde 3 AI analizi kalıcı olarak var; ancak fotoğrafla kalori analizi Premium gerektiriyor ve barkot okuyucu yok."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://suuapp.com/blog/kalori-ve-egzersiz-takibi-bir-arada.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Suu",
+          "item": "https://suuapp.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://suuapp.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Kalori ve Egzersiz Takibi Bir Arada: Hangi Uygulamalar İkisini Gerçekten Bağlıyor?",
+          "item": "https://suuapp.com/blog/kalori-ve-egzersiz-takibi-bir-arada.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+
+    <script src="/assets/js/analytics.js" defer></script>
+    <script src="/lang-switcher.js?v=3" defer></script>
+    <script src="/donation-widget.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">İçeriğe geç</a>
+
+<nav class="nav">
+    <div class="container nav__inner">
+        <a href="/" class="nav__logo">💧 Suu</a>
+        <ul class="nav__links">
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/#karsilastirma">Karşılaştırma</a></li>
+            <li><a href="/#fiyat">Fiyatlandırma</a></li>
+        </ul>
+        <div class="nav__actions">
+            <a href="/app?src=compare-nav" class="btn btn--primary" data-cta="nav"
+               style="min-height:40px;padding:var(--sp-2) var(--sp-5);font-size:var(--fs-sm)">Ücretsiz İndir</a>
+        </div>
+    </div>
+</nav>
+
+<main id="main">
+
+<header class="section" style="padding-block-end:var(--sp-8)">
+    <div class="container container--narrow">
+        <span class="badge badge--new">🎯 Kategori Rehberi 2026</span>
+        <h1 style="margin-block-start:var(--sp-4)">Kalori ve Egzersiz Takibi Bir Arada: Hangi Uygulamalar İkisini Gerçekten Bağlıyor?</h1>
+        <p class="small text-subtle">Yayın: 13 Ağustos 2026 · Furkan Mert Fındıklı · 8 dakika okuma</p>
+    </div>
+</header>
+
+<div class="container container--narrow stack--lg" style="padding-block-end:var(--sp-24)">
+
+    <!-- CEVAP-ÖNCE: alıntılanan blok burasıdır -->
+    <div class="answer-box">
+        <p><strong>Kısa cevap:</strong> İkisini birden sunan uygulamaların çoğu onları yan yana koyuyor: antrenman kalorisi günlük hakkına ekleniyor ve başka hiçbir şey değişmiyor. MyFitnessPal, Yazio ve Lose It! böyle çalışıyor. Samsung Health ekosistem verisiyle biraz ileri gidiyor. İkisini gerçekten bağlayan Suu: kaydettiğin antrenman terle tahmini sıvı kaybı üzerinden su hedefini yükseltiyor, öğünündeki protein ve sodyum da sindirim için gereken suyu üstüne ekliyor.</p>
+    </div>
+
+    <div class="disclosure">Bu rehberi karşılaştırılan uygulamalardan biri olan Suu yayınlıyor — yani çıkar çatışması var. Rakip bölümlerini Suu pazarlaması olmadan yazdık, her birinin Suu&#39;yu geçtiği yerleri listeledik ve Suu&#39;nun kendi eksiklerini açıkça belirttik. Rakip özellikleri 2026 Ağustos itibarıyla kamuya açık bilgilere dayanır.</div>
+    <p>"Kalori ve egzersiz takibi bir arada" aradığında teknik olarak bu tanıma uyan onlarca uygulama çıkıyor. Neredeyse hepsi ikisini de kaydediyor. Sorun şu ki ikisini kaydetmek, ikisini bağlamakla aynı şey değil.</p>
+    <p>Standart kurulumda antrenmanın bir sayı üretiyor — diyelim 600 kcal — ve bu günlük kalori hakkına ekleniyor. Entegrasyonun tamamı bu. Gününle ilgili başka hiçbir şey değişmiyor: ne protein hedefin, ne hidrasyonun, ne toparlanman.</p>
+    <p>Tek derdin kaloriyse bu yeterli. Ama zorlu bir antrenmanda üç şey birden değişiyor ve genelde sadece biri takip ediliyor.</p>
+
+    <section>
+        <h2>Hangi uygulamalar kalori ve egzersizi bağlıyor?</h2>
+        <div class="table-scroll">
+            <table class="table">
+                <caption class="sr-only">Hem kalori hem egzersiz takibi sunan uygulamaların karşılaştırması</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Özellik</th>
+                        <th scope="col">MyFitnessPal</th>
+                        <th scope="col">Yazio</th>
+                        <th scope="col">Lose It!</th>
+                        <th scope="col">Samsung Health</th>
+                        <th scope="col" class="col-suu">Suu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Kalori ve makro kaydı</td><td class="yes">✓ En geniş veritabanı</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">Temel</td><td class="col-suu yes">✓ Fotoğraf + ses</td></tr>
+                    <tr><td>Uygulama içi egzersiz takibi</td><td class="no">Temel</td><td class="no">Temel</td><td class="no">Temel</td><td class="yes">✓ 90+ aktivite</td><td class="col-suu yes">✓ ~50 aktivite</td></tr>
+                    <tr><td>Ayrıntılı koşu metrikleri (tempo, split)</td><td class="no">Kısmi</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td><td class="col-suu yes">✓</td></tr>
+                    <tr><td>Bisiklet metrikleri (hız, irtifa)</td><td class="no">Kısmi</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td><td class="col-suu yes">✓</td></tr>
+                    <tr><td>Antrenman kalorisi günlük hakka ekleniyor</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="col-suu yes">✓</td></tr>
+                    <tr><td>Antrenman su hedefini yükseltiyor</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="col-suu yes">✓</td></tr>
+                    <tr><td>Öğün içeriği sindirim suyu ekliyor</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="col-suu yes">✓</td></tr>
+                    <tr><td>İçecek bazlı hidrasyon modeli</td><td class="no">Basit sayaç</td><td class="no">Basit sayaç</td><td class="no">Basit sayaç</td><td class="no">Basit sayaç</td><td class="col-suu yes">✓ 91 içecek</td></tr>
+                    <tr><td>Hava durumuna göre hedef</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="col-suu yes">✓</td></tr>
+                    <tr><td>Ücretsiz planda barkot okuyucu</td><td class="no">✗ Premium</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="col-suu no">✗</td></tr>
+                    <tr><td>Tarif kütüphanesi</td><td class="yes">✓</td><td class="yes">✓ Güçlü</td><td class="yes">✓</td><td class="no">Kısmi</td><td class="col-suu no">✗</td></tr>
+                    <tr><td>iOS ve Android&#39;de tam çalışıyor</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">Android öncelikli</td><td class="col-suu yes">✓</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section>
+        <h2>&#34;Bağlı&#34; ne demek?</h2>
+        <p>Zorlu bir antrenmanda üç şey değişir; gerçekten entegre bir uygulamanın üçüne de tepki vermesi gerekir:</p>
+        <ul>
+            <li><strong>Enerji.</strong> Kalori yaktın, alım hedefin kaydı. Bu listedeki her uygulama bunu yapıyor.</li>
+            <li><strong>Sıvı.</strong> Terle su kaybettin — sıcakta uzun bir seansta çoğu zaman bir litreden fazla. Suu dışında hiçbiri buna göre ayarlama yapmıyor.</li>
+            <li><strong>Sindirim yükü.</strong> Yüksek proteinli, yüksek sodyumlu bir toparlanma öğünü işlenmek için ek su ister. Fizyolojik olarak yerleşik olmasına rağmen bunu da kimse takip etmiyor.</li>
+        </ul>
+        <div class="callout"><p><strong>Somut örnek:</strong> 30 derecede 10 km koşu, ardından yüksek proteinli akşam yemeği. MyFitnessPal hakkına ~600 kcal ekleyip duruyor. Suu aynısını yapıyor, sonra günün su hedefini iki kez yükseltiyor — biri ter kaybı, biri protein için — ve nedenini söylüyor.</p></div>
+    </section>
+    <section>
+        <h2>Her rakibin gerçekten kazandığı yer</h2>
+        <p>Bunları atlamak rehberi işe yaramaz hâle getirirdi ve hepsi gerçek avantaj:</p>
+        <ul>
+            <li><strong>MyFitnessPal</strong> — açık ara en geniş besin veritabanı. Paketli market ürünü kaydediyorsan başka hiçbiri yaklaşamıyor. Barkot okuyucunun artık Premium gerektirdiğini not et.</li>
+            <li><strong>Yazio</strong> — en güçlü tarif ve diyet planı kütüphanesi, ayrıca çoğundan uzun süre kullanılabilir kalan ücretsiz plan.</li>
+            <li><strong>Lose It!</strong> — barkot okuyucu hâlâ ücretsiz planda ve kayıt akışı sade ve hızlı. MyFitnessPal'den ayrılanların sık gittiği yer.</li>
+            <li><strong>Samsung Health</strong> — en geniş aktivite listesi (90+) ve Galaxy Watch'un varsa mükemmel entegrasyon. Öğün kaydı en zayıf tarafı.</li>
+            <li><strong>Suu</strong> — yukarıda anlatılan bağlantılar, artı fotoğraf ve sesle kalori kaydı. Besin veritabanı daha küçük; barkot okuyucusu ve tarif kütüphanesi yok.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Hidrasyon kısmı gerçekten önemli mi?</h2>
+        <p>Nasıl antrenman yaptığına bağlı. Klimalı bir salonda 30 dakikalık seansta sıvı kaybı sınırlı kalır ve sabit bir günlük hedef yeterlidir.</p>
+        <p>Süre uzayıp sıcaklık arttıkça önem kazanır. Dayanıklılık egzersizinde ter oranları yoğunluğa, sıcaklığa ve kişisel fizyolojiye göre genelde saatte 0,5 ila 2 litre arasında değişir. Sıcakta uzun bir koşuda açık, çoğu uygulamanın varsaydığı sabit "günde 2 litre" hedefinin tamamını aşabilir.</p>
+        <p>Ertesi gün kendini nasıl hissettiğini en doğrudan etkileyen sayı da bu. Zorlu bir antrenman gününün ardından baş ağrısı ve ağır bacaklar yaşadıysan, sıvı ve elektrolitin yerine konmaması yaygın bir sebeptir — ve ana akım kalori uygulamalarının hiçbirinin takip etmediği tek değişken.</p>
+    </section>
+    <section>
+        <h2>İki uygulama alternatifi, dürüstçe</h2>
+        <p>Çok kişi Strava + MyFitnessPal ya da Apple Fitness + Cronometer kullanıyor. Çalışıyor ve zaten böyle bir alışkanlığın varsa bozmak için güçlü bir sebep yok.</p>
+        <p>İki kusuru var. Birincisi veri tek yönlü akıyor: Apple Health veya Health Connect antrenman kalorisini beslenme uygulamasına geçirebiliyor ama o uygulama bununla hakkı güncellemenin ötesinde akıllı bir şey yapmıyor. İkincisi hidrasyon iki uygulamanın da tamamen dışında kalıyor; yani zorlu bir günde en çok değişen değişken, takip etme ihtimalinin en düşük olduğu değişken oluyor.</p>
+        <p>Tek uygulama lehine argüman özellik değil sürtünme: iki kayıt yerine bir kayıt ve bağlantıların kafanda değil senin yerine kurulması.</p>
+    </section>
+
+    <section class="verdict">
+        <h2 style="margin-block-end:var(--sp-4)">Karar</h2>
+        <p><strong>En geniş besin veritabanını istiyorsan</strong> ve öncelik kaloriyse: MyFitnessPal, barkot kısıtını kabul ederek.</p>
+        <p><strong>Kaydın yanında tarif ve plan istiyorsan:</strong> Yazio.</p>
+        <p><strong>Galaxy ekosistemindeysen:</strong> aktivite genişliği ve saat entegrasyonu için Samsung Health.</p>
+        <p><strong>Kalori ve egzersizin gerçekten bağlı olmasını istiyorsan</strong> — antrenmanın hidrasyon hedefini, öğünün de onu tekrar değiştirmesini — bu karşılaştırmada bunu yapan tek uygulama Suu. Uzun süre antrenman yapıyorsan, sıcakta çalışıyorsan ya da zorlu günlerin seni kalori matematiğinin öngördüğünden daha kötü hissettirdiğini fark ettiysen bu fark önemli.</p>
+        <p>Dürüst sınır: Suu'nun besin veritabanı daha küçük, barkot okuyucusu ve tarif kütüphanesi yok. Öncelikler bunlarsa diğerlerinden birini seç.</p>
+    </section>
+
+    <section class="cta-band" style="border-radius:var(--r-lg);padding-block:var(--sp-12)" data-cta="compare-body">
+        <div class="container">
+            <h2 style="font-size:var(--fs-2xl)">Üç kayıt yerine bir kayıt</h2>
+            <p>Ücretsiz indir · Premium 3 gün ücretsiz</p>
+            <div class="btn-row btn-row--center" style="margin-block-start:var(--sp-6)">
+                <a href="/app?src=compare-body" class="btn btn--secondary btn--lg">Suu&#39;yu Ücretsiz İndir</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Sık sorulan sorular</h2>
+        <div class="faq">
+            <details class="faq__item" open>
+                <summary>Hem kalori hem egzersiz takibi yapan uygulama var mı?</summary>
+                <div><p>Çoğu yapıyor: MyFitnessPal, Yazio, Lose It! ve Samsung Health ikisini de kaydediyor. Fark, ikisini bağlayıp bağlamadıklarında. Çoğunda antrenman sadece günlük kalori hakkına ekleme yapıyor. Suu ayrıca antrenmanı terle tahmini sıvı kaybı üzerinden su hedefini yükseltmek için kullanıyor ve öğünün protein ile sodyum içeriğinden sindirim için gereken suyu ekliyor.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Egzersiz takibi en iyi olan kalori uygulaması hangisi?</summary>
+                <div><p>Samsung Health en geniş aktivite listesine (90+) sahip ama öğün kaydı en zayıf olan. Suu, fotoğrafla kalori kaydının yanında ayrıntılı koşu ve bisiklet metrikleriyle yaklaşık 50 aktivite sunuyor. MyFitnessPal, Yazio ve Lose It!&#39;te yalnızca temel egzersiz kaydı var.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Kalori ve egzersiz için iki ayrı uygulama şart mı?</summary>
+                <div><p>Şart değil, ama alışkanlığın varsa iki uygulama da iş görür. Kusurları şu: kalori verisi en iyi ihtimalle tek yönlü akar ve hidrasyon iki uygulamanın da dışında kalır — yani zorlu bir antrenman gününde en çok değişen değişken takipsiz kalır.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Egzersiz gerçekten su ihtiyacımı değiştiriyor mu?</summary>
+                <div><p>Evet, ciddi biçimde. Dayanıklılık egzersizinde ter oranları yoğunluğa, sıcaklığa ve kişisel fizyolojiye göre genelde saatte 0,5 ila 2 litre arasında değişir. Sıcak havada uzun bir seansta sıvı açığı, çoğu uygulamanın varsaydığı sabit günlük hedefi aşabilir.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Her şeyi ücretsiz istiyorsam hangisi?</summary>
+                <div><p>Kalori odaklı uygulamalar arasında en kullanışlı ücretsiz planlar Lose It! ve Yazio&#39;da; ikisinde de barkot okuyucu dahil. Suu&#39;nun ücretsiz planında 91 içecekle su takibi, egzersiz takibi ve günde 3 AI analizi kalıcı olarak var; ancak fotoğrafla kalori analizi Premium gerektiriyor ve barkot okuyucu yok.</p></div>
+            </details>
+        </div>
+    </section>
+    <section>
+        <h2>Kaynaklar</h2>
+        <ol class="small">
+            <li id="ref1"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6835337/" rel="nofollow noopener" target="_blank">Egzersizde ter oranı ve sıvı yerine koyma (PMC)</a></li>
+            <li id="ref2"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/" rel="nofollow noopener" target="_blank">Kayıt tutmanın kilo yönetimindeki rolü (PMC)</a></li>
+            <li id="ref3"><a href="https://www.efsa.europa.eu/en/efsajournal/pub/1459" rel="nofollow noopener" target="_blank">EFSA — su alımı için diyet referans değerleri</a></li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>İlgili yazılar</h2>
+        <div class="cards">
+            <a class="card" href="/blog/en-iyi-egzersiz-takip-uygulamasi.html">
+                <h3 style="font-size:var(--fs-md)">En iyi egzersiz takip uygulaması</h3>
+                <p>Egzersiz öncelikli karşılaştırma.</p>
+            </a>
+            <a class="card" href="/blog/en-iyi-kalori-uygulamasi.html">
+                <h3 style="font-size:var(--fs-md)">En iyi kalori sayma uygulaması</h3>
+                <p>Beslenme öncelikli karşılaştırma.</p>
+            </a>
+            <a class="card" href="/blog/su-kalori-egzersiz-tek-uygulama.html">
+                <h3 style="font-size:var(--fs-md)">Su + kalori + egzersiz tek uygulamada</h3>
+                <p>Üçünün pratikte nasıl bağlandığı.</p>
+            </a>
+            <a class="card" href="/blog/egzersizde-kalori-yakimi.html">
+                <h3 style="font-size:var(--fs-md)">Egzersizde kalori yakımı</h3>
+                <p>Aktivite bazlı kalori rehberi.</p>
+            </a>
+        </div>
+    </section>
+
+    <p class="small text-subtle">Suu tıbbi teşhis veya tedavi amacıyla geliştirilmemiştir. Sağlıkla ilgili kararlar için bir sağlık profesyoneline danışın.</p>
+
+    <p><a href="/blog.html">← Bloga dön</a></p>
+</div>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__bottom" style="border:0">
+            <p class="small mb-0">© 2026 Suu · Furkan Mert Fındıklı</p>
+            <p class="small mb-0"><a href="/">suuapp.com</a></p>
+        </div>
+    </div>
+</footer>
+
+<div class="sticky-cta" data-cta="sticky">
+    <a href="/app?src=sticky" class="btn btn--secondary">App Store</a>
+    <a href="/app?src=sticky" class="btn btn--primary">Google Play</a>
+</div>
+
+</body>
+</html>
