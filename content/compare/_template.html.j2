@@ -105,16 +105,29 @@
                 <thead>
                     <tr>
                         <th scope="col">{{ table.col_feature }}</th>
+{%- if table.get('columns') %}
+{#- Genel biçim: rakip-vs-rakip sayfalarında Suu sonda üçüncü seçenek olabilir #}
+{%- for c in table['columns'] %}
+                        <th scope="col"{% if loop.index0 == table.get('suu_col', -1) %} class="col-suu"{% endif %}>{{ c }}</th>
+{%- endfor %}
+{%- else %}
                         <th scope="col" class="col-suu">Suu</th>
 {%- for c in table.competitors %}
                         <th scope="col">{{ c }}</th>
 {%- endfor %}
+{%- endif %}
                     </tr>
                 </thead>
                 <tbody>
+{%- if table.get('columns') %}
+{%- for r in table['rows'] %}
+                    <tr><td>{{ r.label }}</td>{% for v in r['cells'] %}<td class="{% if loop.index0 == table.get('suu_col', -1) %}col-suu {% endif %}{{ v.cls }}">{{ v.text }}</td>{% endfor %}</tr>
+{%- endfor %}
+{%- else %}
 {%- for r in table['rows'] %}
                     <tr><td>{{ r.label }}</td><td class="col-suu {{ r.suu_class }}">{{ r.suu }}</td>{% for v in r.others %}<td class="{{ v.cls }}">{{ v.text }}</td>{% endfor %}</tr>
 {%- endfor %}
+{%- endif %}
                 </tbody>
             </table>
         </div>

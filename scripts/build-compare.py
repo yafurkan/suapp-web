@@ -99,10 +99,19 @@ def abs_url(lang: str, slug: str) -> str:
 
 def build_jsonld(lang: str, topic: str, data: dict, page: dict, facts: dict, url: str) -> str:
     founder = facts["entities"]["founder"]
-    apps = [{"@type": "SoftwareApplication", "@id": f"{BASE}/#suuapp-ios", "name": "Suu"}]
-    for name in page["table"]["competitors"]:
-        apps.append({"@type": "SoftwareApplication", "name": name,
-                     "applicationCategory": "HealthApplication"})
+    # Tablo iki biçimden birinde olabilir:
+    #   klasik  → Suu ilk sütun + competitors listesi
+    #   genel   → columns listesi (rakip-vs-rakip; Suu sonda olabilir)
+    names = page["table"].get("columns")
+    if not names:
+        names = ["Suu"] + page["table"]["competitors"]
+    apps = []
+    for name in names:
+        if name == "Suu":
+            apps.append({"@type": "SoftwareApplication", "@id": f"{BASE}/#suuapp-ios", "name": "Suu"})
+        else:
+            apps.append({"@type": "SoftwareApplication", "name": name,
+                         "applicationCategory": "HealthApplication"})
 
     graph = [
         # Organization ve Person düğümleri sayfada TAM olarak bulunmalı —
