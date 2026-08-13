@@ -1,0 +1,137 @@
+{
+  "_note": "RAKİP-vs-RAKİP — 3. fırsat. Search Console: 'cronometer vs yazio' 51 + 'yazio vs cronometer' 29 = 80 gösterim, 1 tıklama. Her iki yazım hedefleniyor.",
+  "published": "2026-08-13",
+
+  "pages": {
+    "en": {
+      "slug": "cronometer-vs-yazio",
+      "published_display": "13 August 2026",
+      "read_minutes": 7,
+      "badge": "⚖️ Head-to-Head 2026",
+      "h1": "Cronometer vs Yazio: Precision or Practicality?",
+
+      "meta": {
+        "title": "Cronometer vs Yazio (2026) — Which Should You Use? | Suu",
+        "description": "Yazio vs Cronometer compared on micronutrient depth, data accuracy, recipes, free tier and daily usability. Which suits precision trackers, which suits everyday logging.",
+        "keywords": "cronometer vs yazio, yazio vs cronometer, cronometer or yazio, cronometer review 2026, yazio review 2026, micronutrient tracking app, best macro tracker comparison, calorie app comparison",
+        "og_title": "Cronometer vs Yazio: Precision or Practicality?",
+        "og_description": "Cronometer's verified micronutrient data against Yazio's recipes and everyday usability — an honest side-by-side."
+      },
+
+      "answer": "Cronometer is the more accurate app: its database is curated rather than crowd-sourced, and it tracks 80+ micronutrients that Yazio simply does not surface. Yazio is the more practical one for daily use, with stronger recipes, diet plans and a friendlier interface. Choose Cronometer if you track vitamins and minerals deliberately; choose Yazio if you want to log meals consistently without the extra detail slowing you down.",
+
+      "disclosure": "This comparison is published by Suu, which makes a competing app. The Cronometer and Yazio sections below contain no Suu marketing; our own app appears only in a separated section at the end that you can skip. Details reflect publicly available information as of August 2026.",
+
+      "intro": [
+        "These two apps attract very different people, which is why the comparison is more useful than it first looks.",
+        "Cronometer built its reputation on <strong>data quality</strong> — curated entries from verified sources like the USDA and NCCDB rather than crowd-sourced guesses, plus micronutrient tracking that goes far past calories and macros. Yazio built its reputation on <strong>everyday usability</strong> — recipes, plans, and an interface that does not intimidate.",
+        "Neither approach is wrong. They are optimising for different failure modes: inaccurate data versus abandoned tracking."
+      ],
+
+      "table": {
+        "head": "Cronometer vs Yazio",
+        "caption": "Feature comparison between Cronometer and Yazio",
+        "col_feature": "Feature",
+        "columns": ["Cronometer", "Yazio"],
+        "suu_col": -1,
+        "rows": [
+          { "label": "Calorie and macro logging", "cells": [{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
+          { "label": "Micronutrient tracking (vitamins/minerals)", "cells": [{"text":"✓ 80+, best in class","cls":"yes"},{"text":"Limited","cls":"no"}] },
+          { "label": "Database curation / accuracy", "cells": [{"text":"✓ Verified sources","cls":"yes"},{"text":"Mixed","cls":""}] },
+          { "label": "Database breadth (branded products)", "cells": [{"text":"Smaller","cls":"no"},{"text":"✓ Large","cls":"yes"}] },
+          { "label": "Barcode scanner on free plan", "cells": [{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
+          { "label": "Recipe library", "cells": [{"text":"Minimal","cls":"no"},{"text":"✓ Strong","cls":"yes"}] },
+          { "label": "Structured diet plans", "cells": [{"text":"✗","cls":"no"},{"text":"✓","cls":"yes"}] },
+          { "label": "Interface friendliness", "cells": [{"text":"Dense, data-first","cls":"no"},{"text":"✓ Cleaner","cls":"yes"}] },
+          { "label": "Free tier depth", "cells": [{"text":"✓ Very generous","cls":"yes"},{"text":"✓ Usable","cls":"yes"}] },
+          { "label": "Fasting tracker", "cells": [{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
+          { "label": "Biometric / lab data logging", "cells": [{"text":"✓","cls":"yes"},{"text":"✗","cls":"no"}] },
+          { "label": "Exercise tracking in-app", "cells": [{"text":"Basic","cls":"no"},{"text":"Basic","cls":"no"}] },
+          { "label": "Hydration modelling (per beverage)", "cells": [{"text":"Simple counter","cls":"no"},{"text":"Simple counter","cls":"no"}] },
+          { "label": "Workout updates hydration goal", "cells": [{"text":"✗","cls":"no"},{"text":"✗","cls":"no"}] }
+        ]
+      },
+
+      "analysis": [
+        {
+          "head": "Cronometer wins on accuracy, and it is not close",
+          "body": [
+            "Most calorie apps let users submit entries, which is how they reach enormous database sizes — and also how they accumulate wrong numbers. Cronometer curates instead, drawing on verified nutritional databases. When Cronometer tells you a food contains 12 g of protein, that figure is far more likely to be right.",
+            "On top of that it tracks over 80 micronutrients. If you are managing iron, B12, magnesium or sodium deliberately — for a medical reason, a restrictive diet, or serious training — no mainstream competitor comes close.",
+            "It also logs biometrics and lab results, which makes it the natural pick if you are working with a dietitian or physician."
+          ]
+        },
+        {
+          "head": "Yazio wins on the odds you keep using it",
+          "body": [
+            "Cronometer's density is exactly what some people want and exactly what makes others quit. Yazio asks less of you: log the meal, see calories and macros, get a recipe suggestion, move on.",
+            "Its recipe library and diet plans also solve a problem Cronometer does not attempt. Cronometer tells you precisely what you ate; Yazio helps you decide what to eat next.",
+            "For branded and packaged products, Yazio's database is the broader of the two — Cronometer's curation means fewer entries."
+          ],
+          "callout": "<strong>The honest trade-off:</strong> Cronometer optimises for the accuracy of each entry. Yazio optimises for the number of entries you'll actually make. Both matter, and which one matters more depends on whether your risk is bad data or an abandoned log."
+        },
+        {
+          "head": "Who should pick which",
+          "body": [
+            "Some clear cases:"
+          ],
+          "list": [
+            "<strong>Pick Cronometer</strong> if you have a medical reason to watch specific micronutrients, follow a restrictive diet (vegan, keto, low-FODMAP) where deficiencies are a real risk, or are an athlete managing intake precisely.",
+            "<strong>Pick Yazio</strong> if this is your first serious attempt at tracking, if you cook and want meal ideas, or if you know from experience that dense interfaces make you quit.",
+            "<strong>Either works</strong> if you only care about calories and the three macros — at which point pick the interface you prefer, because both do that job well."
+          ]
+        },
+        {
+          "head": "Disclosure: where our own app fits",
+          "body": [
+            "We publish this and we also make a competing app, so treat this section as advertising — the verdict above holds without it.",
+            "Suu does not compete with Cronometer on micronutrient depth and does not try to. It targets a different gap: water, calories and exercise as one connected system. The run you record raises your daily water goal from estimated sweat loss; the meal you photograph is analysed for calories and macros, and its protein and sodium content adds the digestion water on top; 91 beverages each contribute their real hydration value.",
+            "Where Suu is behind: no micronutrient depth comparable to Cronometer, a smaller food database than Yazio, no barcode scanner and no recipe library. If verified micronutrient data is what you need, Cronometer is the right answer and we will not pretend otherwise."
+          ]
+        }
+      ],
+
+      "verdict": {
+        "head": "Verdict",
+        "body": [
+          "<strong>Cronometer</strong> — the more accurate app, and the only one of the two that takes micronutrients seriously. Best for medical, restrictive-diet or precision-athlete use.",
+          "<strong>Yazio</strong> — the more practical app for daily logging, with recipes and plans Cronometer does not attempt. Best for a first serious attempt at tracking.",
+          "<strong>Neither</strong> models hydration beyond a glass counter or lets exercise change your daily targets.",
+          "If you cannot decide: start with Yazio for a month to build the habit, and move to Cronometer later if you find yourself wanting the deeper numbers. Habit first, precision second."
+        ]
+      },
+
+      "cta": {
+        "head": "Want calories, exercise and hydration connected?",
+        "sub": "Free to download · Premium free for 3 days",
+        "button": "See how Suu does it"
+      },
+
+      "faq": [
+        { "q": "Is Cronometer better than Yazio?",
+          "a": "For accuracy, yes — Cronometer's database is curated from verified sources rather than crowd-sourced, and it tracks over 80 micronutrients that Yazio does not surface. For daily practicality, Yazio is better: cleaner interface, stronger recipes and diet plans, and a broader database of branded products." },
+        { "q": "Is Cronometer's free plan good enough?",
+          "a": "Cronometer's free tier is unusually generous, including full micronutrient tracking and barcode scanning. Most users can log seriously for a long time without paying; Gold mainly adds custom charts, more biometrics and an ad-free experience." },
+        { "q": "Which is more accurate, Cronometer or Yazio?",
+          "a": "Cronometer. Its entries come from curated nutritional databases rather than user submissions, which removes the main source of error in crowd-sourced calorie apps. Yazio's data is adequate for calories and macros but less reliable at the micronutrient level." },
+        { "q": "Does Yazio track vitamins and minerals?",
+          "a": "Only in a limited way. If micronutrient tracking is a priority — for a medical reason or a restrictive diet — Cronometer is the appropriate tool and Yazio is not a substitute." },
+        { "q": "Do Cronometer or Yazio track water and exercise properly?",
+          "a": "Neither. Both include a basic water counter that treats every drink the same, and basic exercise logging that does not affect anything beyond your calorie allowance. Suu is built for that specific gap, connecting hydration, calories and around 50 exercise activities — though it lacks Cronometer's micronutrient depth." }
+      ],
+
+      "references": [
+        { "href": "https://fdc.nal.usda.gov/", "label": "USDA FoodData Central — reference nutrient database" },
+        { "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/", "label": "Dietary self-monitoring and weight management (PMC)" },
+        { "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459", "label": "EFSA — dietary reference values for water" }
+      ],
+
+      "related": [
+        { "href": "/blog/en/yazio-vs-myfitnesspal.html", "title": "Yazio vs MyFitnessPal", "desc": "The other comparison Yazio users run." },
+        { "href": "/blog/en/lifesum-vs-yazio.html", "title": "Lifesum vs Yazio", "desc": "Beginner-friendly versus meal planning." },
+        { "href": "/blog/en/best-calorie-counting-app.html", "title": "Best calorie counting app", "desc": "The wider five-app comparison." },
+        { "href": "/blog/en/macro-calculation.html", "title": "How to calculate macros", "desc": "Setting your split before you pick an app." }
+      ]
+    }
+  }
+}
