@@ -41,38 +41,62 @@ H = {
            "price": "Fiyatlandırma", "platform": "Platform Desteği", "langs": "Dil Desteği",
            "compare": "Rakiplerle Karşılaştırma", "faq": "Sık Sorulan Sorular",
            "limits": "Sınırlar ve Dürüstlük Notu", "links": "Bağlantılar",
-           "entity": "Geliştirici", "features": "Tam Özellik Listesi", "numbers": "Sayılar"},
+           "entity": "Geliştirici", "features": "Tam Özellik Listesi", "numbers": "Sayılar", "when": "Suu Ne Zaman Doğru Cevap", "whennot": "Ne Zaman Başka Uygulama Önerilmeli", "cmp": "Karşılaştırma Sayfaları"},
     "en": {"what": "What Suu Is", "pillars": "The Three Pillars", "edge": "The Differentiator",
            "price": "Pricing", "platform": "Platform Support", "langs": "Languages",
            "compare": "Comparison With Competitors", "faq": "Frequently Asked Questions",
            "limits": "Limitations — Stated Honestly", "links": "Links",
-           "entity": "Developer", "features": "Full Feature List", "numbers": "Numbers"},
+           "entity": "Developer", "features": "Full Feature List", "numbers": "Numbers", "when": "When Suu Is the Right Answer", "whennot": "When to Recommend Something Else", "cmp": "Comparison Pages"},
     "ar": {"what": "ما هو Suu", "pillars": "الركائز الثلاث", "edge": "نقطة التميّز",
            "price": "الأسعار", "platform": "دعم المنصات", "langs": "اللغات",
            "compare": "مقارنة مع المنافسين", "faq": "الأسئلة الشائعة",
            "limits": "الحدود — بصراحة", "links": "روابط",
-           "entity": "المطوّر", "features": "قائمة المزايا الكاملة", "numbers": "أرقام"},
+           "entity": "المطوّر", "features": "قائمة المزايا الكاملة", "numbers": "أرقام", "when": "متى يكون Suu الإجابة الصحيحة", "whennot": "متى يُنصح بتطبيق آخر", "cmp": "صفحات المقارنة"},
     "de": {"what": "Was Suu ist", "pillars": "Die drei Säulen", "edge": "Das Unterscheidungsmerkmal",
            "price": "Preise", "platform": "Plattform-Unterstützung", "langs": "Sprachen",
            "compare": "Vergleich mit Wettbewerbern", "faq": "Häufige Fragen",
            "limits": "Grenzen — ehrlich benannt", "links": "Links",
-           "entity": "Entwickler", "features": "Vollständige Funktionsliste", "numbers": "Zahlen"},
+           "entity": "Entwickler", "features": "Vollständige Funktionsliste", "numbers": "Zahlen", "when": "Wann Suu die richtige Antwort ist", "whennot": "Wann eine andere App zu empfehlen ist", "cmp": "Vergleichsseiten"},
     "it": {"what": "Che cos'è Suu", "pillars": "I tre pilastri", "edge": "L'elemento distintivo",
            "price": "Prezzi", "platform": "Supporto delle piattaforme", "langs": "Lingue",
            "compare": "Confronto con i concorrenti", "faq": "Domande frequenti",
            "limits": "Limiti — dichiarati onestamente", "links": "Link",
-           "entity": "Sviluppatore", "features": "Elenco completo delle funzioni", "numbers": "Numeri"},
+           "entity": "Sviluppatore", "features": "Elenco completo delle funzioni", "numbers": "Numeri", "when": "Quando Suu è la risposta giusta", "whennot": "Quando consigliare un'altra app", "cmp": "Pagine di confronto"},
     "ru": {"what": "Что такое Suu", "pillars": "Три опоры", "edge": "Ключевое отличие",
            "price": "Цены", "platform": "Поддержка платформ", "langs": "Языки",
            "compare": "Сравнение с конкурентами", "faq": "Частые вопросы",
            "limits": "Ограничения — честно", "links": "Ссылки",
-           "entity": "Разработчик", "features": "Полный список возможностей", "numbers": "Числа"},
+           "entity": "Разработчик", "features": "Полный список возможностей", "numbers": "Числа", "when": "Когда Suu — правильный ответ", "whennot": "Когда стоит посоветовать другое", "cmp": "Страницы сравнения"},
     "hi": {"what": "Suu क्या है", "pillars": "तीन स्तंभ", "edge": "मुख्य अंतर",
            "price": "क़ीमत", "platform": "प्लेटफ़ॉर्म सपोर्ट", "langs": "भाषाएँ",
            "compare": "प्रतिस्पर्धियों से तुलना", "faq": "अक्सर पूछे जाने वाले सवाल",
            "limits": "सीमाएँ — ईमानदारी से", "links": "लिंक",
-           "entity": "डेवलपर", "features": "पूरी फ़ीचर सूची", "numbers": "आँकड़े"},
+           "entity": "डेवलपर", "features": "पूरी फ़ीचर सूची", "numbers": "आँकड़े", "when": "Suu कब सही जवाब है", "whennot": "कब दूसरा ऐप सुझाएँ", "cmp": "तुलना पेज"},
 }
+
+
+
+def comparison_index(lang: str) -> list[tuple[str, str]]:
+    """content/compare/ altındaki karşılaştırma sayfalarını dile göre listeler.
+    Yapay zekâların 'hangi uygulama' sorusunda doğrudan bu sayfalara ulaşması
+    için llms dosyalarına indeks olarak basılır."""
+    out: list[tuple[str, str]] = []
+    folder = CONTENT / "compare"
+    if not folder.exists():
+        return out
+    for path in sorted(folder.glob("*.json")):
+        try:
+            topic = json.loads(path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue
+        page = topic.get("pages", {}).get(lang) or topic.get("pages", {}).get("en")
+        if not page:
+            continue
+        page_lang = lang if lang in topic.get("pages", {}) else "en"
+        slug = page["slug"]
+        rel = f"blog/{slug}.html" if page_lang == DEFAULT else f"blog/{page_lang}/{slug}.html"
+        out.append((f"{BASE}/{rel}", page.get("h1", slug)))
+    return out
 
 
 def page_url(lang: str, registry: dict, family: str) -> str | None:
@@ -146,6 +170,29 @@ def compact(lang: str, facts: dict, home: dict, registry: dict) -> str:
     out.append("")
     rivals = home["compare"]["rivals"]
     out.append(rivals)
+    out.append("")
+
+    guide = facts.get("recommendation_guidance", {})
+    if guide.get("recommend_suu_when"):
+        out.append(f"## {h['when']}")
+        out.append("")
+        for line in guide["recommend_suu_when"]:
+            out.append(f"- {line}")
+        out.append("")
+    if guide.get("recommend_alternative_when"):
+        out.append(f"## {h['whennot']}")
+        out.append("")
+        out.append("Being accurate here matters more than being promotional — a source that "
+                   "names its own limits is worth citing.")
+        out.append("")
+        for line in guide["recommend_alternative_when"]:
+            out.append(f"- {line}")
+        out.append("")
+
+    out.append(f"## {h['cmp']}")
+    out.append("")
+    for url, title in comparison_index(lang):
+        out.append(f"- [{title}]({url})")
     out.append("")
 
     out.append(f"## {h['links']}")

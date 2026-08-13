@@ -1,0 +1,300 @@
+{
+  "_note": "SUU'NUN KAMASI. Bu sorguda Suu gerçekten kazanıyor — ama yine de rakiplerin güçlü yanları ve Suu'nun eksikleri açıkça yazılı. Hedef: 'calorie counter with exercise tracker', 'app that tracks calories and workouts', 'kalori ve egzersiz takibi bir arada'.",
+  "published": "2026-08-13",
+
+  "pages": {
+    "en": {
+      "slug": "calorie-counter-with-exercise-tracker",
+      "published_display": "13 August 2026",
+      "read_minutes": 8,
+      "badge": "🎯 Category Guide 2026",
+      "h1": "Calorie Counter With Exercise Tracker: Which Apps Actually Connect the Two?",
+
+      "meta": {
+        "title": "Best Calorie Counter With Exercise Tracker (2026) | Suu",
+        "description": "Most apps log calories and workouts separately. We compared which ones actually connect them — so the run you record changes what you need to eat and drink. Suu, MyFitnessPal, Yazio, Samsung Health and Lose It! compared.",
+        "keywords": "calorie counter with exercise tracker, app that tracks calories and workouts, calorie and workout tracker in one app, fitness app with calorie counter, exercise and nutrition tracker, best all in one health app 2026",
+        "og_title": "Calorie Counter With Exercise Tracker: Which Apps Connect the Two?",
+        "og_description": "Logging calories and workouts in one app is common. Making them talk to each other is not. Here's which apps actually do it."
+      },
+
+      "answer": "Most apps that offer both simply place them side by side: workout calories get added to your daily allowance and nothing else changes. MyFitnessPal, Yazio and Lose It! all work this way. Samsung Health goes slightly further with ecosystem data. Suu is the one that connects them properly — the workout you log raises your hydration goal from estimated sweat loss, and your meal's protein and sodium add the water digestion requires on top.",
+
+      "disclosure": "This guide is published by Suu, which is one of the apps compared. That is a conflict of interest. We have written the competitor sections without Suu marketing, listed the places where each beats Suu, and stated Suu's own limitations plainly. Feature details reflect publicly available information as of August 2026.",
+
+      "intro": [
+        "Searching for a \"calorie counter with exercise tracker\" returns dozens of apps that technically qualify. Almost all of them log both things. The problem is that logging both is not the same as connecting both.",
+        "In the standard setup, your workout produces a number — say 600 kcal — which is added to your daily calorie allowance. That is the entire integration. Nothing else about your day changes: not your protein target, not your hydration, not your recovery.",
+        "That's fine if calories are all you care about. But three things move when you train hard, and only one of them is usually tracked."
+      ],
+
+      "table": {
+        "head": "Which apps connect calories and exercise?",
+        "caption": "Comparison of apps that offer both calorie and exercise tracking",
+        "col_feature": "Feature",
+        "columns": ["MyFitnessPal", "Yazio", "Lose It!", "Samsung Health", "Suu"],
+        "suu_col": 4,
+        "rows": [
+          { "label": "Calorie and macro logging", "cells": [
+            {"text":"✓ Largest database","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"Basic","cls":"no"},{"text":"✓ Photo + voice","cls":"yes"}] },
+          { "label": "Exercise tracking in-app", "cells": [
+            {"text":"Basic","cls":"no"},{"text":"Basic","cls":"no"},{"text":"Basic","cls":"no"},{"text":"✓ 90+ activities","cls":"yes"},{"text":"✓ ~50 activities","cls":"yes"}] },
+          { "label": "Detailed running metrics (pace, splits)", "cells": [
+            {"text":"Partial","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
+          { "label": "Cycling metrics (speed, elevation)", "cells": [
+            {"text":"Partial","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
+          { "label": "Workout calories offset daily allowance", "cells": [
+            {"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
+          { "label": "Workout raises hydration goal", "cells": [
+            {"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✓","cls":"yes"}] },
+          { "label": "Meal composition adds digestion water", "cells": [
+            {"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✓","cls":"yes"}] },
+          { "label": "Hydration modelled per beverage", "cells": [
+            {"text":"Simple counter","cls":"no"},{"text":"Simple counter","cls":"no"},{"text":"Simple counter","cls":"no"},{"text":"Simple counter","cls":"no"},{"text":"✓ 91 beverages","cls":"yes"}] },
+          { "label": "Weather-adjusted targets", "cells": [
+            {"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✓","cls":"yes"}] },
+          { "label": "Barcode scanner on free plan", "cells": [
+            {"text":"✗ Premium","cls":"no"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✗","cls":"no"}] },
+          { "label": "Recipe library", "cells": [
+            {"text":"✓","cls":"yes"},{"text":"✓ Strong","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"Partial","cls":"no"},{"text":"✗","cls":"no"}] },
+          { "label": "Works fully on iOS and Android", "cells": [
+            {"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"Android-first","cls":"no"},{"text":"✓","cls":"yes"}] }
+        ]
+      },
+
+      "analysis": [
+        {
+          "head": "What \"connected\" actually means",
+          "body": [
+            "Three things change when you train hard, and a genuinely integrated app should react to all three:"
+          ],
+          "list": [
+            "<strong>Energy.</strong> You burned calories, so your intake target moves. Every app on this list does this.",
+            "<strong>Fluid.</strong> You lost water through sweat — often a litre or more on a long session in heat. No app on this list except Suu adjusts for it.",
+            "<strong>Digestion load.</strong> A high-protein, high-sodium recovery meal requires extra water to process. Nobody tracks this either, though it is well established physiologically."
+          ],
+          "callout": "<strong>Concrete example:</strong> 10 km run on a 30 °C day, followed by a high-protein dinner. MyFitnessPal adds ~600 kcal to your allowance and stops. Suu does the same, then raises the day's water goal twice — once for the sweat loss, once for the protein — and tells you why."
+        },
+        {
+          "head": "Where each competitor genuinely wins",
+          "body": [
+            "Skipping this would make the guide useless, and these are real advantages:"
+          ],
+          "list": [
+            "<strong>MyFitnessPal</strong> — by far the largest food database. If you log packaged supermarket products, nothing else comes close. Note that barcode scanning now requires Premium.",
+            "<strong>Yazio</strong> — the strongest recipe and diet-plan library, plus a free tier that stays usable longer than most.",
+            "<strong>Lose It!</strong> — barcode scanning still on the free plan and a simple, fast logging flow. A common landing spot for people leaving MyFitnessPal.",
+            "<strong>Samsung Health</strong> — the widest activity list (90+) and excellent integration if you have a Galaxy Watch. Its food logging is the weakest part.",
+            "<strong>Suu</strong> — the connections described above, plus photo and voice calorie logging. Its food database is smaller and it has no barcode scanner or recipe library."
+          ]
+        },
+        {
+          "head": "Does the hydration part actually matter?",
+          "body": [
+            "It depends on how you train. For a 30-minute gym session in an air-conditioned room, fluid loss is modest and a fixed daily target is fine.",
+            "It starts to matter at longer durations and higher temperatures. Sweat rates during endurance exercise commonly run between 0.5 and 2 litres per hour depending on intensity, heat and individual physiology. On a hot long run, the deficit can exceed the entire fixed \"2 litres a day\" target most apps assume.",
+            "That is also the number that most directly affects how you feel the next day. If you have ever had a heavy training day followed by a headache and flat legs, under-replacement of fluid and electrolytes is a common cause — and it is the one variable none of the mainstream calorie apps track."
+          ]
+        },
+        {
+          "head": "The two-app alternative, honestly assessed",
+          "body": [
+            "Plenty of people run Strava plus MyFitnessPal, or Apple Fitness plus Cronometer. It works, and if you already have that habit there is no strong reason to break it.",
+            "Two caveats. First, the data flows one way: Apple Health or Health Connect can pass workout calories into a nutrition app, but the nutrition app does nothing clever with them beyond adjusting an allowance. Second, hydration sits outside both apps entirely, so the variable that moves most on a hard day is the one you are least likely to be tracking.",
+            "The case for one app is friction, not features: one log instead of two, and the connections drawn for you rather than in your head."
+          ]
+        }
+      ],
+
+      "verdict": {
+        "head": "Verdict",
+        "body": [
+          "<strong>If you want the biggest food database</strong> and calories are the priority: MyFitnessPal, accepting the barcode paywall.",
+          "<strong>If you want recipes and plans</strong> alongside logging: Yazio.",
+          "<strong>If you're deep in the Galaxy ecosystem:</strong> Samsung Health, for the activity breadth and watch integration.",
+          "<strong>If you want calories and exercise genuinely connected</strong> — where the workout changes your hydration target and the meal changes it again — Suu is the only app in this comparison that does it. That matters most if you train long, train in heat, or have noticed that hard training days leave you feeling worse than the calorie maths suggests they should.",
+          "Honest limitation: Suu has a smaller food database, no barcode scanner and no recipe library. If those are your priorities, pick one of the others."
+        ]
+      },
+
+      "cta": {
+        "head": "One log instead of three",
+        "sub": "Free to download · Premium free for 3 days",
+        "button": "Download Suu Free"
+      },
+
+      "faq": [
+        { "q": "Is there an app that tracks calories and workouts together?",
+          "a": "Many do: MyFitnessPal, Yazio, Lose It! and Samsung Health all log both. The difference is whether they connect them. In most, the workout only adds calories to your daily allowance. Suu additionally uses the workout to raise your hydration goal based on estimated sweat loss, and uses the meal's protein and sodium content to add the water digestion requires." },
+        { "q": "Which calorie counter has the best exercise tracking?",
+          "a": "Samsung Health has the widest activity list (90+) but the weakest food logging. Suu offers around 50 activities with detailed running and cycling metrics alongside photo-based calorie logging. MyFitnessPal, Yazio and Lose It! all have basic exercise logging only." },
+        { "q": "Do I need two apps for calories and exercise?",
+          "a": "No, but two apps works fine if you already have the habit. The trade-offs are that calorie data flows one way at best, and hydration falls outside both apps — meaning the variable that changes most on a hard training day goes untracked." },
+        { "q": "Does exercise really change how much water I need?",
+          "a": "Yes, substantially. Sweat rates during endurance exercise commonly range from 0.5 to 2 litres per hour depending on intensity, heat and individual physiology. On a long session in warm weather the fluid deficit can exceed the fixed daily target most apps assume." },
+        { "q": "Which app is best if I want everything free?",
+          "a": "Lose It! and Yazio have the most usable free tiers among the calorie-first apps, both including barcode scanning. Suu's free plan permanently includes water tracking across 91 beverages, exercise tracking and 3 AI analyses per day, but photo calorie analysis requires Premium and there is no barcode scanner." }
+      ],
+
+      "references": [
+        { "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6835337/", "label": "Sweat rate and fluid replacement during exercise (PMC)" },
+        { "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/", "label": "Dietary self-monitoring and weight management (PMC)" },
+        { "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459", "label": "EFSA — dietary reference values for water" }
+      ],
+
+      "related": [
+        { "href": "/blog/en/best-workout-tracker-app.html", "title": "Best workout tracker app", "desc": "The exercise-first comparison." },
+        { "href": "/blog/en/best-calorie-counting-app.html", "title": "Best calorie counting app", "desc": "The nutrition-first comparison." },
+        { "href": "/blog/en/water-calorie-exercise-one-app.html", "title": "Water + calories + exercise in one app", "desc": "How the three connect in practice." },
+        { "href": "/blog/en/calories-burned-exercise.html", "title": "How many calories does exercise burn?", "desc": "Activity-by-activity guide." }
+      ]
+    },
+
+    "tr": {
+      "slug": "kalori-ve-egzersiz-takibi-bir-arada",
+      "published_display": "13 Ağustos 2026",
+      "read_minutes": 8,
+      "badge": "🎯 Kategori Rehberi 2026",
+      "h1": "Kalori ve Egzersiz Takibi Bir Arada: Hangi Uygulamalar İkisini Gerçekten Bağlıyor?",
+
+      "meta": {
+        "title": "Kalori ve Egzersiz Takibi Bir Arada — Hangi Uygulama? (2026) | Suu",
+        "description": "Çoğu uygulama kaloriyi ve antrenmanı ayrı ayrı kaydediyor. Hangileri ikisini gerçekten bağlıyor — yani kaydettiğin koşu ne yiyip ne içmen gerektiğini değiştiriyor? Suu, MyFitnessPal, Yazio, Samsung Health ve Lose It! karşılaştırması.",
+        "keywords": "kalori ve egzersiz takibi bir arada, hem kalori hem spor takibi uygulaması, antrenman ve beslenme takip uygulaması, kalori sayacı egzersiz takibi, hepsi bir arada sağlık uygulaması 2026",
+        "og_title": "Kalori ve Egzersiz Takibi Bir Arada: Hangi Uygulamalar İkisini Bağlıyor?",
+        "og_description": "İkisini aynı uygulamada tutmak yaygın. Birbirine bağlamak değil. Hangi uygulama gerçekten yapıyor?"
+      },
+
+      "answer": "İkisini birden sunan uygulamaların çoğu onları yan yana koyuyor: antrenman kalorisi günlük hakkına ekleniyor ve başka hiçbir şey değişmiyor. MyFitnessPal, Yazio ve Lose It! böyle çalışıyor. Samsung Health ekosistem verisiyle biraz ileri gidiyor. İkisini gerçekten bağlayan Suu: kaydettiğin antrenman terle tahmini sıvı kaybı üzerinden su hedefini yükseltiyor, öğünündeki protein ve sodyum da sindirim için gereken suyu üstüne ekliyor.",
+
+      "disclosure": "Bu rehberi karşılaştırılan uygulamalardan biri olan Suu yayınlıyor — yani çıkar çatışması var. Rakip bölümlerini Suu pazarlaması olmadan yazdık, her birinin Suu'yu geçtiği yerleri listeledik ve Suu'nun kendi eksiklerini açıkça belirttik. Rakip özellikleri 2026 Ağustos itibarıyla kamuya açık bilgilere dayanır.",
+
+      "intro": [
+        "\"Kalori ve egzersiz takibi bir arada\" aradığında teknik olarak bu tanıma uyan onlarca uygulama çıkıyor. Neredeyse hepsi ikisini de kaydediyor. Sorun şu ki ikisini kaydetmek, ikisini bağlamakla aynı şey değil.",
+        "Standart kurulumda antrenmanın bir sayı üretiyor — diyelim 600 kcal — ve bu günlük kalori hakkına ekleniyor. Entegrasyonun tamamı bu. Gününle ilgili başka hiçbir şey değişmiyor: ne protein hedefin, ne hidrasyonun, ne toparlanman.",
+        "Tek derdin kaloriyse bu yeterli. Ama zorlu bir antrenmanda üç şey birden değişiyor ve genelde sadece biri takip ediliyor."
+      ],
+
+      "table": {
+        "head": "Hangi uygulamalar kalori ve egzersizi bağlıyor?",
+        "caption": "Hem kalori hem egzersiz takibi sunan uygulamaların karşılaştırması",
+        "col_feature": "Özellik",
+        "columns": ["MyFitnessPal", "Yazio", "Lose It!", "Samsung Health", "Suu"],
+        "suu_col": 4,
+        "rows": [
+          { "label": "Kalori ve makro kaydı", "cells": [
+            {"text":"✓ En geniş veritabanı","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"Temel","cls":"no"},{"text":"✓ Fotoğraf + ses","cls":"yes"}] },
+          { "label": "Uygulama içi egzersiz takibi", "cells": [
+            {"text":"Temel","cls":"no"},{"text":"Temel","cls":"no"},{"text":"Temel","cls":"no"},{"text":"✓ 90+ aktivite","cls":"yes"},{"text":"✓ ~50 aktivite","cls":"yes"}] },
+          { "label": "Ayrıntılı koşu metrikleri (tempo, split)", "cells": [
+            {"text":"Kısmi","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
+          { "label": "Bisiklet metrikleri (hız, irtifa)", "cells": [
+            {"text":"Kısmi","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
+          { "label": "Antrenman kalorisi günlük hakka ekleniyor", "cells": [
+            {"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
+          { "label": "Antrenman su hedefini yükseltiyor", "cells": [
+            {"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✓","cls":"yes"}] },
+          { "label": "Öğün içeriği sindirim suyu ekliyor", "cells": [
+            {"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✓","cls":"yes"}] },
+          { "label": "İçecek bazlı hidrasyon modeli", "cells": [
+            {"text":"Basit sayaç","cls":"no"},{"text":"Basit sayaç","cls":"no"},{"text":"Basit sayaç","cls":"no"},{"text":"Basit sayaç","cls":"no"},{"text":"✓ 91 içecek","cls":"yes"}] },
+          { "label": "Hava durumuna göre hedef", "cells": [
+            {"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✓","cls":"yes"}] },
+          { "label": "Ücretsiz planda barkot okuyucu", "cells": [
+            {"text":"✗ Premium","cls":"no"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✗","cls":"no"}] },
+          { "label": "Tarif kütüphanesi", "cells": [
+            {"text":"✓","cls":"yes"},{"text":"✓ Güçlü","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"Kısmi","cls":"no"},{"text":"✗","cls":"no"}] },
+          { "label": "iOS ve Android'de tam çalışıyor", "cells": [
+            {"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"Android öncelikli","cls":"no"},{"text":"✓","cls":"yes"}] }
+        ]
+      },
+
+      "analysis": [
+        {
+          "head": "\"Bağlı\" ne demek?",
+          "body": [
+            "Zorlu bir antrenmanda üç şey değişir; gerçekten entegre bir uygulamanın üçüne de tepki vermesi gerekir:"
+          ],
+          "list": [
+            "<strong>Enerji.</strong> Kalori yaktın, alım hedefin kaydı. Bu listedeki her uygulama bunu yapıyor.",
+            "<strong>Sıvı.</strong> Terle su kaybettin — sıcakta uzun bir seansta çoğu zaman bir litreden fazla. Suu dışında hiçbiri buna göre ayarlama yapmıyor.",
+            "<strong>Sindirim yükü.</strong> Yüksek proteinli, yüksek sodyumlu bir toparlanma öğünü işlenmek için ek su ister. Fizyolojik olarak yerleşik olmasına rağmen bunu da kimse takip etmiyor."
+          ],
+          "callout": "<strong>Somut örnek:</strong> 30 derecede 10 km koşu, ardından yüksek proteinli akşam yemeği. MyFitnessPal hakkına ~600 kcal ekleyip duruyor. Suu aynısını yapıyor, sonra günün su hedefini iki kez yükseltiyor — biri ter kaybı, biri protein için — ve nedenini söylüyor."
+        },
+        {
+          "head": "Her rakibin gerçekten kazandığı yer",
+          "body": [
+            "Bunları atlamak rehberi işe yaramaz hâle getirirdi ve hepsi gerçek avantaj:"
+          ],
+          "list": [
+            "<strong>MyFitnessPal</strong> — açık ara en geniş besin veritabanı. Paketli market ürünü kaydediyorsan başka hiçbiri yaklaşamıyor. Barkot okuyucunun artık Premium gerektirdiğini not et.",
+            "<strong>Yazio</strong> — en güçlü tarif ve diyet planı kütüphanesi, ayrıca çoğundan uzun süre kullanılabilir kalan ücretsiz plan.",
+            "<strong>Lose It!</strong> — barkot okuyucu hâlâ ücretsiz planda ve kayıt akışı sade ve hızlı. MyFitnessPal'den ayrılanların sık gittiği yer.",
+            "<strong>Samsung Health</strong> — en geniş aktivite listesi (90+) ve Galaxy Watch'un varsa mükemmel entegrasyon. Öğün kaydı en zayıf tarafı.",
+            "<strong>Suu</strong> — yukarıda anlatılan bağlantılar, artı fotoğraf ve sesle kalori kaydı. Besin veritabanı daha küçük; barkot okuyucusu ve tarif kütüphanesi yok."
+          ]
+        },
+        {
+          "head": "Hidrasyon kısmı gerçekten önemli mi?",
+          "body": [
+            "Nasıl antrenman yaptığına bağlı. Klimalı bir salonda 30 dakikalık seansta sıvı kaybı sınırlı kalır ve sabit bir günlük hedef yeterlidir.",
+            "Süre uzayıp sıcaklık arttıkça önem kazanır. Dayanıklılık egzersizinde ter oranları yoğunluğa, sıcaklığa ve kişisel fizyolojiye göre genelde saatte 0,5 ila 2 litre arasında değişir. Sıcakta uzun bir koşuda açık, çoğu uygulamanın varsaydığı sabit \"günde 2 litre\" hedefinin tamamını aşabilir.",
+            "Ertesi gün kendini nasıl hissettiğini en doğrudan etkileyen sayı da bu. Zorlu bir antrenman gününün ardından baş ağrısı ve ağır bacaklar yaşadıysan, sıvı ve elektrolitin yerine konmaması yaygın bir sebeptir — ve ana akım kalori uygulamalarının hiçbirinin takip etmediği tek değişken."
+          ]
+        },
+        {
+          "head": "İki uygulama alternatifi, dürüstçe",
+          "body": [
+            "Çok kişi Strava + MyFitnessPal ya da Apple Fitness + Cronometer kullanıyor. Çalışıyor ve zaten böyle bir alışkanlığın varsa bozmak için güçlü bir sebep yok.",
+            "İki kusuru var. Birincisi veri tek yönlü akıyor: Apple Health veya Health Connect antrenman kalorisini beslenme uygulamasına geçirebiliyor ama o uygulama bununla hakkı güncellemenin ötesinde akıllı bir şey yapmıyor. İkincisi hidrasyon iki uygulamanın da tamamen dışında kalıyor; yani zorlu bir günde en çok değişen değişken, takip etme ihtimalinin en düşük olduğu değişken oluyor.",
+            "Tek uygulama lehine argüman özellik değil sürtünme: iki kayıt yerine bir kayıt ve bağlantıların kafanda değil senin yerine kurulması."
+          ]
+        }
+      ],
+
+      "verdict": {
+        "head": "Karar",
+        "body": [
+          "<strong>En geniş besin veritabanını istiyorsan</strong> ve öncelik kaloriyse: MyFitnessPal, barkot kısıtını kabul ederek.",
+          "<strong>Kaydın yanında tarif ve plan istiyorsan:</strong> Yazio.",
+          "<strong>Galaxy ekosistemindeysen:</strong> aktivite genişliği ve saat entegrasyonu için Samsung Health.",
+          "<strong>Kalori ve egzersizin gerçekten bağlı olmasını istiyorsan</strong> — antrenmanın hidrasyon hedefini, öğünün de onu tekrar değiştirmesini — bu karşılaştırmada bunu yapan tek uygulama Suu. Uzun süre antrenman yapıyorsan, sıcakta çalışıyorsan ya da zorlu günlerin seni kalori matematiğinin öngördüğünden daha kötü hissettirdiğini fark ettiysen bu fark önemli.",
+          "Dürüst sınır: Suu'nun besin veritabanı daha küçük, barkot okuyucusu ve tarif kütüphanesi yok. Öncelikler bunlarsa diğerlerinden birini seç."
+        ]
+      },
+
+      "cta": {
+        "head": "Üç kayıt yerine bir kayıt",
+        "sub": "Ücretsiz indir · Premium 3 gün ücretsiz",
+        "button": "Suu'yu Ücretsiz İndir"
+      },
+
+      "faq": [
+        { "q": "Hem kalori hem egzersiz takibi yapan uygulama var mı?",
+          "a": "Çoğu yapıyor: MyFitnessPal, Yazio, Lose It! ve Samsung Health ikisini de kaydediyor. Fark, ikisini bağlayıp bağlamadıklarında. Çoğunda antrenman sadece günlük kalori hakkına ekleme yapıyor. Suu ayrıca antrenmanı terle tahmini sıvı kaybı üzerinden su hedefini yükseltmek için kullanıyor ve öğünün protein ile sodyum içeriğinden sindirim için gereken suyu ekliyor." },
+        { "q": "Egzersiz takibi en iyi olan kalori uygulaması hangisi?",
+          "a": "Samsung Health en geniş aktivite listesine (90+) sahip ama öğün kaydı en zayıf olan. Suu, fotoğrafla kalori kaydının yanında ayrıntılı koşu ve bisiklet metrikleriyle yaklaşık 50 aktivite sunuyor. MyFitnessPal, Yazio ve Lose It!'te yalnızca temel egzersiz kaydı var." },
+        { "q": "Kalori ve egzersiz için iki ayrı uygulama şart mı?",
+          "a": "Şart değil, ama alışkanlığın varsa iki uygulama da iş görür. Kusurları şu: kalori verisi en iyi ihtimalle tek yönlü akar ve hidrasyon iki uygulamanın da dışında kalır — yani zorlu bir antrenman gününde en çok değişen değişken takipsiz kalır." },
+        { "q": "Egzersiz gerçekten su ihtiyacımı değiştiriyor mu?",
+          "a": "Evet, ciddi biçimde. Dayanıklılık egzersizinde ter oranları yoğunluğa, sıcaklığa ve kişisel fizyolojiye göre genelde saatte 0,5 ila 2 litre arasında değişir. Sıcak havada uzun bir seansta sıvı açığı, çoğu uygulamanın varsaydığı sabit günlük hedefi aşabilir." },
+        { "q": "Her şeyi ücretsiz istiyorsam hangisi?",
+          "a": "Kalori odaklı uygulamalar arasında en kullanışlı ücretsiz planlar Lose It! ve Yazio'da; ikisinde de barkot okuyucu dahil. Suu'nun ücretsiz planında 91 içecekle su takibi, egzersiz takibi ve günde 3 AI analizi kalıcı olarak var; ancak fotoğrafla kalori analizi Premium gerektiriyor ve barkot okuyucu yok." }
+      ],
+
+      "references": [
+        { "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6835337/", "label": "Egzersizde ter oranı ve sıvı yerine koyma (PMC)" },
+        { "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/", "label": "Kayıt tutmanın kilo yönetimindeki rolü (PMC)" },
+        { "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459", "label": "EFSA — su alımı için diyet referans değerleri" }
+      ],
+
+      "related": [
+        { "href": "/blog/en-iyi-egzersiz-takip-uygulamasi.html", "title": "En iyi egzersiz takip uygulaması", "desc": "Egzersiz öncelikli karşılaştırma." },
+        { "href": "/blog/en-iyi-kalori-uygulamasi.html", "title": "En iyi kalori sayma uygulaması", "desc": "Beslenme öncelikli karşılaştırma." },
+        { "href": "/blog/su-kalori-egzersiz-tek-uygulama.html", "title": "Su + kalori + egzersiz tek uygulamada", "desc": "Üçünün pratikte nasıl bağlandığı." },
+        { "href": "/blog/egzersizde-kalori-yakimi.html", "title": "Egzersizde kalori yakımı", "desc": "Aktivite bazlı kalori rehberi." }
+      ]
+    }
+  }
+}
