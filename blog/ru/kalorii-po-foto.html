@@ -234,7 +234,33 @@
         <li style="margin-bottom: 10px;">Устойчивое «приблизительно» > редкое «точно». В Suu фото не хранятся.</li>
     </ul>
 
-    <div class="references">
+    
+  <!-- FAQ (auto-rendered from schema: scripts/fix-faq-visibility.py) -->
+  <section class="faq-rendered" style="max-width:760px;margin:40px auto;padding:0 20px">
+    <h2>Частые вопросы</h2>
+    <details style="border-bottom:1px solid rgba(128,128,128,.25)">
+      <summary style="padding:14px 0;font-weight:600;cursor:pointer;list-style:none">Как работает подсчёт калорий по фото?</summary>
+      <div style="padding-bottom:14px;opacity:.85">ИИ (модель распознавания изображений) определяет продукты на фото вашей тарелки, оценивает размер порции по ориентирам и сопоставляет их с базой питания, извлекая калории и макросы (белки, углеводы, жиры). В Suu это происходит за секунды через Google Gemini, а результат можно записать в Apple Health.</div>
+    </details>
+    <details style="border-bottom:1px solid rgba(128,128,128,.25)">
+      <summary style="padding:14px 0;font-weight:600;cursor:pointer;list-style:none">Насколько точен подсчёт калорий по фото?</summary>
+      <div style="padding-bottom:14px;opacity:.85">Он очень полезен для дневного и недельного тренда, а не для лабораторной точности одного приёма пищи. Главный источник неопределённости — размер порции и скрытый жир/соус; хороший свет и съёмка сверху повышают точность. Цель учёта калорий — стабильное направление и осознанность, а не точность лаборатории; здесь фото гораздо устойчивее бумажного дневника.</div>
+    </details>
+    <details style="border-bottom:1px solid rgba(128,128,128,.25)">
+      <summary style="padding:14px 0;font-weight:600;cursor:pointer;list-style:none">Фото или ручной ввод — что лучше?</summary>
+      <div style="padding-bottom:14px;opacity:.85">Лучший метод — тот, которого вы придерживаетесь. Ручной ввод точнее в теории, но большинство бросает за несколько дней. Фото и голос снижают трение и превращают учёт в ежедневную привычку — а стабильные «приблизительные» данные ценнее редких «точных».</div>
+    </details>
+    <details style="border-bottom:1px solid rgba(128,128,128,.25)">
+      <summary style="padding:14px 0;font-weight:600;cursor:pointer;list-style:none">Что сделать для более точного результата?</summary>
+      <div style="padding-bottom:14px;opacity:.85">Снимайте при хорошем свете и по возможности сверху; поместите всю еду в кадр; положите рядом ориентир (вилку, стакан); для сложных блюд назовите главный ингредиент. Отдельное добавление жирных соусов и сладких напитков приближает итог к реальности.</div>
+    </details>
+    <details style="border-bottom:1px solid rgba(128,128,128,.25)">
+      <summary style="padding:14px 0;font-weight:600;cursor:pointer;list-style:none">Хранятся ли мои фото?</summary>
+      <div style="padding-bottom:14px;opacity:.85">В Suu загруженное изображение обрабатывается только в момент анализа и не сохраняется постоянно; в аккаунте сохраняется только результат (калории/макросы). Само изображение не используется для рекламы и не продаётся.</div>
+    </details>
+  </section>
+
+<div class="references">
         <h2>Научные источники</h2>
         <ol class="ref-list">
             <li id="ref1">Lu Y, et al. (2020). goFOODTM: An Artificial Intelligence System for Dietary Assessment. <em>Sensors</em>, 20(15), 4283. <a href="https://pubmed.ncbi.nlm.nih.gov/32752262/" target="_blank" rel="noopener">PubMed: 32752262</a></li>

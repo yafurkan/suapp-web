@@ -88,17 +88,45 @@
 }
     </script>
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "en",
+  "mainEntity": [
     {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "inLanguage": "en",
-        "mainEntity": [
-            {"@type": "Question", "name": "Is there a calorie app where I can log meals by voice?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Suu is one of the few apps that supports logging meals and drinks by speaking. Say 'I had a bowl of lentil soup and a glass of ayran' and the AI automatically separates solids from liquids, derives calories and macros, and adds the drink to hydration tracking. MyFitnessPal, Yazio, Lifesum and Cronometer have no native voice meal logging."}},
-            {"@type": "Question", "name": "How accurate is voice calorie logging?", "acceptedAnswer": {"@type": "Answer", "text": "Voice logging is faster than manual searching as long as your speech is transcribed correctly. Accuracy depends on two steps: transcribing your speech, and estimating the food's portion/calories. Suu shows the recognized meal on screen and lets you correct it; clarifying the portion improves accuracy. As with all automated methods, estimates are approximate."}},
-            {"@type": "Question", "name": "Is voice meal logging private? Is my audio uploaded?", "acceptedAnswer": {"@type": "Answer", "text": "In Suu, speech is transcribed on-device by the operating system (Apple Speech / Android SpeechRecognizer); the audio recording is not sent to Suu's servers. Only the transcribed meal description is processed. This is a deliberate design choice for privacy-conscious users."}},
-            {"@type": "Question", "name": "What languages does voice logging work in?", "acceptedAnswer": {"@type": "Answer", "text": "Suu is fully localized in English, Turkish, Russian and Arabic, and voice logging relies on the device's speech recognition. You can add a meal by saying, for example, 'two slices of whole wheat bread and one egg.'"}}
-        ]
+      "@type": "Question",
+      "name": "Is there an app where I can log meals by voice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Suu supports voice meal/drink logging; it transcribes what you say, separates solids/liquids and derives calories + macros. MyFitnessPal, Yazio and Cronometer have no native voice logging."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How accurate is voice calorie logging?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Faster than manual search; you can review the result and adjust the portion to improve accuracy. As with all automated estimates, it's approximate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my audio uploaded?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Speech is transcribed on-device (Apple Speech / Android SpeechRecognizer); the recording doesn't go to Suu's servers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I log by speaking in other languages?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Suu is localized in English, Turkish, Russian and Arabic, and voice logging uses the device's speech recognition."
+      }
     }
+  ]
+}
     </script>
     <script type="application/ld+json">
     {

@@ -233,7 +233,33 @@
         <li style="margin-bottom: 10px;">'تقريبي' مستدام > 'دقيق' متقطع. وفي Suu لا تُحفَظ الصور.</li>
     </ul>
 
-    <div class="references">
+    
+  <!-- FAQ (auto-rendered from schema: scripts/fix-faq-visibility.py) -->
+  <section class="faq-rendered" style="max-width:760px;margin:40px auto;padding:0 20px">
+    <h2>الأسئلة الشائعة</h2>
+    <details style="border-bottom:1px solid rgba(128,128,128,.25)">
+      <summary style="padding:14px 0;font-weight:600;cursor:pointer;list-style:none">كيف يعمل حساب السعرات بالصورة؟</summary>
+      <div style="padding-bottom:14px;opacity:.85">يتعرّف الذكاء الاصطناعي (نموذج التعرّف على الصور) على الأطعمة في صورة طبقك، ويقدّر حجم الحصة من المراجع، ويطابقها مع قاعدة بيانات غذائية لاستخراج السعرات والماكروز (بروتين، كربوهيدرات، دهون). في Suu يتم ذلك في ثوانٍ عبر Google Gemini، ويمكن كتابة النتيجة في Apple Health.</div>
+    </details>
+    <details style="border-bottom:1px solid rgba(128,128,128,.25)">
+      <summary style="padding:14px 0;font-weight:600;cursor:pointer;list-style:none">ما مدى دقة حساب السعرات بالصورة؟</summary>
+      <div style="padding-bottom:14px;opacity:.85">مفيد جدًا لرؤية الاتجاه اليومي والأسبوعي، لا لقياس وجبة واحدة بدقة مخبرية. أكبر مصدر لعدم اليقين هو حجم الحصة والدهون/الصلصة الخفية؛ الإضاءة الجيدة والتصوير من الأعلى يحسّنان الدقة. هدف تتبع السعرات هو اتجاه ثابت ووعي، لا دقة مختبر — وهنا الصورة أكثر استدامة من الدفتر.</div>
+    </details>
+    <details style="border-bottom:1px solid rgba(128,128,128,.25)">
+      <summary style="padding:14px 0;font-weight:600;cursor:pointer;list-style:none">الصورة أم الإدخال اليدوي، أيهما أفضل؟</summary>
+      <div style="padding-bottom:14px;opacity:.85">الأفضل هو ما تستطيع الاستمرار عليه. الإدخال اليدوي أدق نظريًا، لكن أغلب الناس يتوقفون خلال أيام. الصورة والصوت يقللان العناء ويحوّلان التتبع إلى عادة يومية — والبيانات &#x27;التقريبية&#x27; المستمرة أثمن من &#x27;الدقيقة&#x27; المتقطعة.</div>
+    </details>
+    <details style="border-bottom:1px solid rgba(128,128,128,.25)">
+      <summary style="padding:14px 0;font-weight:600;cursor:pointer;list-style:none">ماذا أفعل لنتائج أدق؟</summary>
+      <div style="padding-bottom:14px;opacity:.85">صوّر بإضاءة جيدة ومن الأعلى إن أمكن؛ أدخِل كل الطعام في الإطار؛ ضع مرجعًا بجانبه (شوكة، كوب)؛ وسمِّ المكوّن الرئيسي للأطباق المختلطة. وإضافة الصلصات الدهنية والمشروبات السكرية بشكل منفصل يقرّب المجموع من الحقيقة.</div>
+    </details>
+    <details style="border-bottom:1px solid rgba(128,128,128,.25)">
+      <summary style="padding:14px 0;font-weight:600;cursor:pointer;list-style:none">هل تُحفَظ صوري؟</summary>
+      <div style="padding-bottom:14px;opacity:.85">في Suu تُعالَج الصورة التي ترفعها لحظة التحليل فقط ولا تُحفَظ بشكل دائم؛ ولا يُحفَظ في حسابك سوى نتيجة التحليل (السعرات/الماكروز). الصورة نفسها لا تُستخدم للإعلان ولا تُباع.</div>
+    </details>
+  </section>
+
+<div class="references">
         <h2>المراجع العلمية</h2>
         <ol class="ref-list">
             <li id="ref1">Lu Y, et al. (2020). goFOODTM: An Artificial Intelligence System for Dietary Assessment. <em>Sensors</em>, 20(15), 4283. <a href="https://pubmed.ncbi.nlm.nih.gov/32752262/" target="_blank" rel="noopener">PubMed: 32752262</a></li>

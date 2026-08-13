@@ -107,36 +107,44 @@
 
     <!-- FAQ Schema -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "How much water should I drink during pregnancy?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "The American College of Obstetricians and Gynecologists (ACOG) recommends that pregnant women drink at least 8–10 cups (approximately 2–2.5 litres) of water per day. This can increase to 2.3–3 litres depending on your trimester, weight, activity level, and climate. Suu's pregnancy mode automatically calculates your personal target."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What happens if I don't drink enough water during pregnancy?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Dehydration during pregnancy can cause fatigue, headaches, increased risk of urinary tract infections, constipation, and in more serious cases, preterm contractions (Braxton Hicks). Adequate amniotic fluid production is directly linked to your water intake."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Can I use Suu during pregnancy?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes. Suu now includes a pregnancy mode. When you select your pregnancy status in the app, it automatically increases your daily water goal based on your trimester and lets you track intake trimester by trimester."
-                }
-            }
-        ]
+      "@type": "Question",
+      "name": "How much water should I drink during pregnancy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ACOG recommends 8–10 cups (2–2.5 litres) daily as a baseline. This rises to 2.3–3 litres depending on your trimester, weight, activity level, and climate. Suu's pregnancy mode calculates your personal target automatically."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does tea or fruit juice count towards my pregnancy water intake?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Partially. Caffeine-free herbal teas and diluted juices contribute to your fluid intake. However, caffeinated drinks (tea, coffee) have reduced net hydration due to their diuretic effect. Suu calculates the net hydration value of 91 drinks — including all common pregnancy-safe beverages."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it possible to drink too much water during pregnancy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hyponatraemia (low blood sodium from drinking too much water too quickly) is extremely rare. Targeting 2.5–3 litres per day spread over waking hours is perfectly safe for a healthy pregnant woman. If you have a specific medical condition, consult your doctor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can dehydration cause early labour?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Moderate dehydration can trigger Braxton Hicks contractions. Severe dehydration may increase the risk of preterm labour in some cases, though this is not fully established by research. Staying well-hydrated is a simple, low-cost way to reduce this risk."
+      }
     }
+  ]
+}
     </script>
 
     <!-- BreadcrumbList -->

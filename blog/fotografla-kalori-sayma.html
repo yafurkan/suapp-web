@@ -235,7 +235,33 @@
         <li style="margin-bottom: 10px;">Sürdürülebilir "yaklaşık" > ara sıra "kesin". Suu'da görsel saklanmaz.</li>
     </ul>
 
-    <div class="references">
+    
+  <!-- FAQ (auto-rendered from schema: scripts/fix-faq-visibility.py) -->
+  <section class="faq-rendered" style="max-width:760px;margin:40px auto;padding:0 20px">
+    <h2>Sık sorulan sorular</h2>
+    <details style="border-bottom:1px solid rgba(128,128,128,.25)">
+      <summary style="padding:14px 0;font-weight:600;cursor:pointer;list-style:none">Fotoğrafla kalori sayma nasıl çalışır?</summary>
+      <div style="padding-bottom:14px;opacity:.85">Yapay zeka (görüntü tanıma modeli), tabağının fotoğrafındaki yiyecekleri tanır, referanslardan porsiyon büyüklüğünü tahmin eder ve besin veritabanıyla eşleştirerek kalori ile makroyu (protein, karbonhidrat, yağ) çıkarır. Suu&#x27;da bu işlem Google Gemini altyapısıyla saniyeler içinde yapılır; sonuç Apple Health&#x27;e yazılabilir.</div>
+    </details>
+    <details style="border-bottom:1px solid rgba(128,128,128,.25)">
+      <summary style="padding:14px 0;font-weight:600;cursor:pointer;list-style:none">Fotoğrafla kalori sayma ne kadar doğru?</summary>
+      <div style="padding-bottom:14px;opacity:.85">Tek bir öğün için değil, günlük ve haftalık eğilimi görmek için oldukça kullanışlıdır. En büyük belirsizlik kaynağı porsiyon ve gizli yağ/sos miktarıdır; iyi ışık ve tepeden çekim doğruluğu artırır. Kalori takibinin amacı laboratuvar hassasiyeti değil, tutarlı bir yön ve farkındalıktır — bu konuda fotoğraf, elle deftere göre çok daha sürdürülebilir.</div>
+    </details>
+    <details style="border-bottom:1px solid rgba(128,128,128,.25)">
+      <summary style="padding:14px 0;font-weight:600;cursor:pointer;list-style:none">Fotoğraf mı yoksa elle giriş mi daha iyi?</summary>
+      <div style="padding-bottom:14px;opacity:.85">En iyi yöntem, sürdürebildiğin yöntemdir. Elle giriş teoride daha kesin olabilir ama çoğu kişi birkaç günde bırakır. Fotoğraf ve sesli giriş, sürtünmeyi azaltıp takibi günlük alışkanlığa dönüştürür — ve tutarlı &#x27;yaklaşık&#x27; veri, ara sıra yapılan &#x27;kesin&#x27; veriden çok daha değerlidir.</div>
+    </details>
+    <details style="border-bottom:1px solid rgba(128,128,128,.25)">
+      <summary style="padding:14px 0;font-weight:600;cursor:pointer;list-style:none">Daha isabetli sonuç için ne yapmalıyım?</summary>
+      <div style="padding-bottom:14px;opacity:.85">Tabağı iyi ışıkta ve mümkünse tepeden çek; kadraja tüm yemeği sığdır; yanına bir referans (çatal, bardak) koy; karışık yemeklerde ana bileşeni belirt. Sos, yağ ve şekerli içecekleri ayrıca eklemek de toplamı gerçeğe yaklaştırır.</div>
+    </details>
+    <details style="border-bottom:1px solid rgba(128,128,128,.25)">
+      <summary style="padding:14px 0;font-weight:600;cursor:pointer;list-style:none">Fotoğraflarım saklanıyor mu?</summary>
+      <div style="padding-bottom:14px;opacity:.85">Suu&#x27;da yüklediğin görsel yalnızca analiz anında işlenir ve kalıcı olarak kaydedilmez; yalnızca analiz sonucu (kalori/makro) hesabına yazılır. Görselin kendisi reklam için kullanılmaz ve satılmaz.</div>
+    </details>
+  </section>
+
+<div class="references">
         <h2>Bilimsel Kaynaklar</h2>
         <ol class="ref-list">
             <li id="ref1">Lu Y, et al. (2020). goFOODTM: An Artificial Intelligence System for Dietary Assessment. <em>Sensors</em>, 20(15), 4283. <a href="https://pubmed.ncbi.nlm.nih.gov/32752262/" target="_blank" rel="noopener">PubMed: 32752262</a></li>

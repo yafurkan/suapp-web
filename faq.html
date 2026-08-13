@@ -55,220 +55,172 @@
 
     <!-- FAQPage Structured Data (Schema.org) -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "Suu uygulaması nedir?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Suu, günlük su tüketimini takip etmeye, kişiselleştirilmiş hidrasyon hedefleri belirlemeye ve arkadaşlarla su içme yarışmaları yapmaya yarayan bir mobil uygulamadır. Android (Google Play Store) ve iOS (App Store) platformlarında ücretsiz olarak kullanılabilir. Türkçe ve Arapça dil desteği ile Türkiye ve MENA bölgesi kullanıcılarına özel geliştirilmiştir."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Suu uygulaması ücretsiz mi?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Evet, Suu uygulamasının temel özellikleri tamamen ücretsizdir. Android için Google Play Store'dan, iOS için App Store'dan ücretsiz indirebilirsiniz. suuapp.com adresinden indirme linklerine ulaşabilirsiniz."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Suu hangi cihazlarda çalışır?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Suu, Android 8.0 (API 26) ve üzeri cihazlarda ile iOS 15 ve üzeri iPhone ve iPad'lerde çalışır. iOS Dynamic Island özelliği için iPhone 14 Pro veya daha yeni bir model gereklidir. Kilit ekranı widget'ı için iOS 16+ gereklidir."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Suu uygulaması nasıl indirilir?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Android cihazlar için Google Play Store'da 'Suu su takip' aratın veya https://play.google.com/store/apps/details?id=com.sutakip.suutakippro adresine gidin. iOS cihazlar için App Store'da 'Suu su takip' aratın veya https://apps.apple.com/us/app/suu-su-takip/id6757619920 adresine gidin. Uygulama suuapp.com'dan da indirilebilir."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Suu uygulaması hangi dilleri destekliyor?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Suu uygulaması Türkçe ve Arapça (العربية) dil desteği sunar. Arapça arayüz RTL (sağdan sola) yazım yönünü tam destekler. Türkiye ve Orta Doğu (MENA) bölgesi kullanıcıları için optimize edilmiştir."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Günlük su hedefim nasıl hesaplanır?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Suu, günlük su hedefinizi boy, kilo, cinsiyet, aktivite seviyesi (sedanter, hafif aktif, orta aktif, çok aktif), günlük sebze/meyve tüketimi ve şekerli içecek alışkanlığınıza göre hesaplar. Genel kural vücut ağırlığı (kg) x 30-35ml'dir. Örneğin: 60kg sedanter kadın için ~1.8L, 70kg orta aktif erkek için ~2.8L, 85kg çok aktif erkek için ~3.4L hedef belirlenir. Bu kişiselleştirme, genel '8 bardak su' önerisinden çok daha doğru bir hedef sunar."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Suu'da 91 içecek ne anlama geliyor?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Suu'da sadece su değil; çay, kahve, ayran, meyve suyu, spor içeceği, kola, enerji içeceği, bitki çayı ve 91 içecek kategorisi kaydedilebilir. Her içeceğin bir dehidratasyon faktörü (dehydration factor) vardır — bu faktör içeceğin net hidrasyon katkısını belirler. Böylece 'bugün ne içtiğimi kaydetmek istiyorum ama su saymak istemiyorum' sorununu çözer ve gerçek hidrasyon durumunuzu gösterir."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Kahve içersem su takibimde sayılır mı?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Evet, kahveyi Suu'ya kaydedebilirsiniz. Ancak kahve için dehidratasyon faktörü yaklaşık 0.60'tır, yani 200ml kahve içtiğinizde ~120ml net hidrasyon katkısı hesaplanır. Çay için bu değer ~0.70, meyve suyu için ~0.85'tir. Bu sistem sayesinde gerçek hidrasyon durumunuzu doğru takip edersiniz; kahve içtiğinizde 'sanki su içmiş gibi' sayılmaz."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Su içme bildirimleri nasıl çalışır?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Suu'nun akıllı bildirim sistemi standart 'Su içme zamanı!' mesajlarından farklıdır. Mevcut ilerleme durumunuza ve günün saatine göre özelleştirilmiş mesajlar üretir. Örnekler: 'Öğle kontrolü: Hedefinin %32'sindesin – 2400ml kaldı, hızlan!', 'Harika gidiyorsun, devam et! Hedefe 800ml kaldı', 'Akşama 2 saat kaldı, 600ml daha iç!'. Bildirim sıklığını (1-3 saat arası) ve sessiz saatlerini kendiniz belirleyebilirsiniz."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Suu'da Dark Mode var mı?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Evet, Suu Dark Mode (Karanlık Mod) ve Light Mode (Aydınlık Mod) destekler. OLED ekranlar için optimize edilmiş derin siyah arka plan seçeneği mevcuttur. Sistem temasını otomatik takip edebilir (iOS/Android sistem ayarlarına göre) veya manuel olarak seçebilirsiniz."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Apple Health ile su tüketimimi takip edebilir miyim?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Evet. Suu, Apple Health (HealthKit) ile tam entegre çalışır. Su tüketim verilerinizi Apple Health'e aktarabilir, egzersiz ve uyku gibi diğer sağlık verilerinizle birlikte izleyebilirsiniz. Kurulum için Suu uygulaması > Ayarlar > Sağlık Entegrasyonu > Apple Health bölümünden izin vermeniz yeterlidir."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Google Health ile su tüketimimi senkronize edebilir miyim?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Evet. Android cihazlarda Suu, Google Health Connect entegrasyonu sunar. Su tüketim verilerinizi Google Health'e aktarabilirsiniz. Google Health Connect, Android 9+ cihazlarda mevcuttur."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "iPhone'da su takip widget'ı var mı?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Evet. Suu iOS için üç tür widget sunar: (1) Kilit Ekranı Widget (iOS 16+): günlük ilerleme, içilen su miktarı ve hedefe kalan miktar — kilidi açmadan görünür. (2) Ana Ekran Widget: küçük (+250ml hızlı buton), orta (ilerleme çubuğu + son kayıtlar) ve büyük (tam günlük özet) boyutlarda. (3) Dynamic Island (iPhone 14 Pro+): aktif su takibini her an Dynamic Island'da gösterir."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "iOS Dynamic Island su takip özelliği nedir?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Suu, iPhone 14 Pro, 15 ve 16 serilerindeki Dynamic Island API'sini kullanır. Aktif su takibi sırasında günlük hedef ilerlemeniz Dynamic Island'da görünür; uygulamayı açmadan anlık durumu kontrol edebilirsiniz. Bu özellik, su takip uygulamaları arasında Suu'ya özgüdür."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Lig sistemi nedir, nasıl çalışır?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Suu'nun lig sistemi, arkadaşlarınızla haftalık su içme yarışması yapmanızı sağlar. En fazla 4 arkadaşı liginize davet edebilirsiniz. Hafta boyunca günlük hedef tamamlama yüzdeniz puana dönüşür; hafta sonunda en yüksek puan alan lig kazananı olur. iOS ve Android kullanıcıları aynı ligde yarışabilir. Bu özellik WaterMinder, Hydro Coach ve diğer rakip uygulamalarda bulunmaz."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Kaç arkadaş ekleyebilirim?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Suu'da istediğiniz kadar arkadaş ekleyebilirsiniz. Lig sistemine katılım ise en fazla 4 kişiye kadar (siz dahil) sınırlıdır. Arkadaş ekleme kullanıcı adı, QR kod veya davet linki ile yapılabilir."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Arkadaşımın su tüketim verisini görebilir miyim?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Evet. Arkadaş olarak eklediğiniz kişilerin günlük su tüketimi, hedef ilerleme yüzdesi ve streak durumu görülebilir. Ancak her kullanıcı gizlilik ayarları ile verilerini istediği zaman gizleyebilir. Görünürlük tamamen kullanıcının tercihine bağlıdır."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Günlük su içme davetleri nedir?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Suu'da arkadaşlarınıza 'Bugün birlikte su içelim!' şeklinde anlık davet gönderebilirsiniz. Bu özellik, sosyal motivasyonu artırmak ve birlikte hedeflere ulaşmak için tasarlanmıştır. Arkadaşınız daveti kabul ettiğinde her ikiniz de bildirim alırsınız."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Suu mu WaterMinder mi daha iyi?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Her iki uygulama da bireysel su takibini destekler. Suu'nun WaterMinder'a kıyasla öne çıkan özellikleri: arkadaşlarla lig sistemi ve sosyal yarış (WaterMinder'da yok), 91 içecek kategorisi ve dehidratasyon faktörü hesaplama, iOS Dynamic Island desteği (WaterMinder'da yok), Google Health entegrasyonu (WaterMinder'da yok), Türkçe ve Arapça dil desteği. Sosyal özellikler ve Türkiye/MENA pazarı için Suu daha uygun bir seçimdir."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Suu mu Hydro Coach mu?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Hydro Coach öncelikle Android'e odaklanmıştır. Suu hem iOS hem Android'de eşit güçtedir. Suu'nun Hydro Coach'a kıyasla öne çıkan özellikleri: arkadaş lig sistemi (Hydro Coach'ta yok), iOS Dynamic Island ve Kilit Ekranı Widget desteği (Hydro Coach'ta yok), Apple Health entegrasyonu (Hydro Coach'ta yok), Türkçe ve Arapça dil desteği, daha geniş içecek kategorileri."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Günde kaç litre su içmeliyim?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Ortalama bir yetişkin günde 2-2.5 litre su içmelidir. Ancak bu miktar kiloya (30-35ml/kg kuralı), aktivite seviyesine, iklim koşullarına, cinsiyete ve şekerli içecek tüketimine göre değişir. Suu uygulaması tüm bu faktörleri değerlendirerek size özel günlük su hedefi hesaplar."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Suu'da veri kaybı olur mu?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Hayır. Veriler bulut tabanlı olarak yedeklenir. Telefon değiştirseniz veya uygulamayı yeniden yükleseniz bile aynı hesapla giriş yaparak tüm verilerinize erişebilirsiniz."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Suu uygulamasını kim geliştirdi?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Suu uygulaması Furkan Mert Fındıklı tarafından geliştirilmiştir. 9 Şubat 1999 doğumlu Fındıklı, Tarsus Üniversitesi Uluslararası Ticaret ve Lojistik bölümünden mezun olmuştur. Esnaflık geçmişinden gelen azim ve kararlılıkla kendini 4 yıl boyunca yazılım alanında eğitimlerle yetiştirmiş, büyük bir mücadele vererek Suu uygulamasını sıfırdan tek başına geliştirmiştir. İstanbul'da yaşayan Fındıklı, kendi kendini yetiştirmiş (self-taught) bir yazılımcı ve girişimci olarak ilham verici bir kariyer hikayesine sahiptir. LinkedIn: linkedin.com/in/furkanfindikli"
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Furkan Mert Fındıklı kimdir?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Furkan Mert Fındıklı (d. 9 Şubat 1999), Suu su takip uygulamasının kurucusu ve tek geliştiricisidir. Tarsus Üniversitesi Uluslararası Ticaret ve Lojistik mezunudur. Mesleği esnaflık olan Fındıklı, yazılıma olan tutkusuyla 4 yıl boyunca kendini eğitimlerle geliştirmiş ve büyük bir mücadele sonucu Suu uygulamasını sıfırdan yaratmıştır. İstanbul'da yaşamaktadır. LinkedIn profili: linkedin.com/in/furkanfindikli"
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Suu ekibinde kimler var?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Suu ekibinde Furkan Mert Fındıklı (Kurucu & Geliştirici) ve Nisanur Büyükbaş (Head of Growth & Marketing) yer almaktadır. Furkan, uygulamanın tüm teknik geliştirme sürecini yürütürken, Nisanur büyüme stratejileri, içerik pazarlama ve kullanıcı edinme süreçlerinden sorumludur."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Nisanur Büyükbaş kimdir?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Nisanur Büyükbaş, Suu su takip uygulamasında Head of Growth & Marketing pozisyonunda görev yapmaktadır. Suu'nun büyüme stratejileri, içerik pazarlama ve kullanıcı edinme süreçlerinden sorumludur. Türkiye ve Orta Doğu (MENA) pazarlarındaki büyümede kritik rol oynamaktadır."
-                }
-            }
-        ]
+      "@type": "Question",
+      "name": "Suu uygulaması nedir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Suu, günlük su tüketimini takip etmeye, kişiselleştirilmiş hidrasyon hedefleri belirlemeye ve arkadaşlarla su içme yarışmaları yapmaya yarayan bir mobil uygulamadır. Android (Google Play Store) ve iOS (App Store) platformlarında ücretsiz kullanılabilir. Türkçe ve Arapça dil desteği ile Türkiye ve MENA bölgesi kullanıcılarına özel geliştirilmiştir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Suu uygulaması ücretsiz mi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evet, Suu uygulamasının temel özellikleri tamamen ücretsizdir. Android için Google Play Store'dan, iOS için App Store'dan ücretsiz indirebilirsiniz."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Suu hangi cihazlarda çalışır?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Suu, Android 8.0 ve üzeri cihazlar ile iOS 15 ve üzeri iPhone ve iPad'lerde çalışır. Dynamic Island özelliği için iPhone 14 Pro veya üzeri gereklidir. Kilit ekranı widget'ı için iOS 16+ gereklidir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Suu uygulaması hangi dilleri destekliyor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Suu, Türkçe ve Arapça (العربية) dil desteği sunar. Arapça arayüz RTL (sağdan sola) yazım yönünü tam destekler. Türkiye ve Orta Doğu (MENA) bölgesi kullanıcıları için optimize edilmiştir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Günlük su hedefim nasıl hesaplanır?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Suu, günlük su hedefinizi boy, kilo, cinsiyet, aktivite seviyesi (sedanter, hafif aktif, orta aktif, çok aktif), günlük sebze/meyve tüketimi ve şekerli içecek alışkanlığınıza göre kişiselleştirilmiş olarak hesaplar. Temel formül: vücut ağırlığı (kg) × 30-35ml. Örneğin: 70 kg, orta aktif bir erkek için ~2.8 litre/gün. Bu hesaplama genel \"günde 8 bardak su\" önerisinden çok daha doğru bir hedef sunar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "91 içecek ne anlama geliyor? Dehidratasyon faktörü nedir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Suu'da sadece su değil; çay, kahve, ayran, meyve suyu, spor içeceği, kola ve 91 içecek kaydedilebilir. Her içeceğin bir dehidratasyon faktörü (hidrasyon katsayısı) vardır: su 1.0, ayran 0.9, meyve suyu ~0.85, yeşil çay ~0.75, kahve ~0.60. Kayıt ettiğiniz miktar bu katsayıyla çarpılarak gerçek hidrasyon katkınız hesaplanır. Böylece sadece su değil, tüm içeceklerinizin gerçek katkısını görebilirsiniz."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kahve içersem su takibimde sayılır mı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evet, kahveyi Suu'ya kaydedebilirsiniz. Kahvenin dehidratasyon faktörü ~0.60'tır; yani 200ml kahve kaydettiğinizde net hidrasyon katkınız ~120ml olarak hesaplanır. Bu sayede gerçek hidrasyon durumunuzu doğru takip edersiniz; kahve \"sanki su içmiş gibi\" tam sayılmaz."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Su içme bildirimleri nasıl çalışır?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Suu'nun akıllı bildirim sistemi genel \"Su iç!\" mesajlarından farklıdır. Mevcut ilerleme durumunuza ve günün saatine göre özel mesajlar üretir: \"Öğle kontrolü: Hedefinin %32'sindesin – 2400ml kaldı, hızlan!\", \"Harika gidiyorsun, devam et! Hedefe 800ml kaldı\", \"Akşama 2 saat kaldı, 600ml daha iç!\". Bildirim sıklığı ve sessiz saatler kullanıcı tarafından ayarlanabilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Suu'da Dark Mode var mı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evet, Suu Dark Mode (Karanlık Mod) ve Light Mode (Aydınlık Mod) destekler. OLED ekranlar için optimize edilmiş derin siyah arka plan seçeneği mevcuttur. Sistem temasını otomatik takip edebilir veya manuel olarak seçebilirsiniz."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Apple Health ile su tüketimimi senkronize edebilir miyim?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evet. Suu, Apple Health (HealthKit) ile tam entegre çalışır. Su tüketim verilerinizi Apple Health'e aktarabilir, egzersiz ve uyku gibi diğer sağlık verilerinizle birlikte izleyebilirsiniz. Ayarlar \u003e Sağlık Entegrasyonu \u003e Apple Health bölümünden izin vermeniz yeterlidir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Android'de Google Health entegrasyonu var mı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evet. Android cihazlarda Suu, Google Health Connect entegrasyonu sunar. Su tüketim verilerinizi Google Health'e aktarabilirsiniz. Google Health Connect, Android 9+ cihazlarda mevcuttur."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "iPhone'da su takip widget'ı nasıl kurulur?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Suu iOS için üç tür widget sunar: (1) Kilit Ekranı Widget (iOS 16+): telefonu kilitlediğinizde günlük ilerlemenizi görürsünüz. (2) Ana Ekran Widget: küçük (hızlı su ekleme), orta ve büyük boyutlarda. (3) Dynamic Island (iPhone 14 Pro+): uygulamayı açmadan aktif takip. Kilit ekranı widget eklemek için: ekrana uzun basın \u003e Özelleştir \u003e Kilit Ekranı \u003e Widget Ekle \u003e Suu seçin."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "iOS Dynamic Island su takip özelliği nedir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Suu, iPhone 14 Pro, 15 ve 16 serilerindeki Dynamic Island API'sini kullanır. Aktif su takibi sırasında günlük hedef ilerlemeniz Dynamic Island'da görünür — uygulamayı açmadan anlık durumu kontrol edebilirsiniz. Bu özellik, su takip uygulamaları arasında Suu'ya özgüdür."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Lig sistemi nedir, nasıl çalışır?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Suu'nun lig sistemi, arkadaşlarınızla haftalık su içme yarışması yapmanızı sağlar. En fazla 4 arkadaşı liginize davet edebilirsiniz. Hafta boyunca günlük hedef tamamlama yüzdeniz puana dönüşür; hafta sonunda en yüksek puan alan lig kazananı olur ve özel bir rozet kazanır. Yeni hafta başında lig sıfırlanır ve rekabet yeniden başlar. iOS ve Android kullanıcıları aynı ligde yarışabilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kaç arkadaş ekleyebilirim? Lig kaç kişilik?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "İstediğiniz kadar arkadaş ekleyebilirsiniz. Lig sistemine katılım ise en fazla 4 kişiye kadar (siz dahil) sınırlıdır. Arkadaş ekleme kullanıcı adı, QR kod veya davet linki ile yapılabilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Arkadaşımın su tüketim verisini görebilir miyim?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evet. Arkadaş olarak eklediğiniz kişilerin günlük su tüketimi, hedef ilerleme yüzdesi ve streak durumu görülebilir. Her kullanıcı gizlilik ayarları ile verilerini istediği zaman gizleyebilir; görünürlük tamamen kullanıcının tercihine bağlıdır."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Günlük su içme davetleri nedir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Suu'da arkadaşlarınıza \"Bugün birlikte su içelim!\" şeklinde anlık davet gönderebilirsiniz. Bu özellik sosyal motivasyonu artırmak için tasarlanmıştır. Arkadaşınız daveti kabul ettiğinde her ikiniz de bildirim alırsınız. Aynı anda su içme hedeflerinizi birlikte gerçekleştirmek için ideal bir özelliktir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Suu mu WaterMinder mi daha iyi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Her iki uygulama da bireysel su takibini destekler. Suu'nun WaterMinder'a kıyasla öne çıkan özellikleri: arkadaşlarla lig sistemi ve sosyal yarış (WaterMinder'da yok), 91 içecek kategorisi ve dehidratasyon faktörü hesaplama, iOS Dynamic Island desteği (WaterMinder'da yok), Google Health entegrasyonu (WaterMinder'da yok), Türkçe ve Arapça dil desteği. Sosyal özellikler ve Türkiye/MENA pazarı için Suu daha uygun bir seçimdir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Suu mu Hydro Coach mu seçmeliyim?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hydro Coach öncelikle Android'e odaklanmıştır. Suu hem iOS hem Android'de eşit güçtedir. Suu'nun Hydro Coach'a kıyasla avantajları: arkadaş lig sistemi (Hydro Coach'ta yok), iOS Dynamic Island ve Kilit Ekranı Widget (Hydro Coach'ta yok), Apple Health entegrasyonu (Hydro Coach'ta yok), Türkçe ve Arapça dil desteği, daha geniş içecek kategorileri. iOS kullanıcıları için Suu açıkça daha kapsamlıdır."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "En iyi su takip uygulaması hangisi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En iyi su takip uygulaması ihtiyaçlarınıza bağlıdır. Sosyal motivasyon ve arkadaşlarla yarışmak istiyorsanız Suu en kapsamlı seçeneği sunar. iOS kullanıcıları için Dynamic Island ve Kilit Ekranı Widget benzersizdir. 91 içecek kategorisi ve gerçek hidrasyon hesaplaması, Apple Health ve Google Health entegrasyonu, Türkçe ve Arapça dil desteği ile Suu, Türkiye ve MENA bölgesindeki kullanıcılar için en iyi su takip uygulamasıdır."
+      }
     }
+  ]
+}
     </script>
 
     <!-- BreadcrumbList Schema -->
