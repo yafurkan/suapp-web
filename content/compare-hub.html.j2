@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}"{% if dir == 'rtl' %} dir="rtl"{% endif %}>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ÜRETİLMİŞ DOSYA — elle düzenlemeyin.
+         Kaynak: content/compare-hub.json + content/compare-hub.html.j2
+         Yeniden üret: python3 scripts/build-compare-hub.py --apply -->
+
+    <title>{{ meta.title }}</title>
+    <meta name="description" content="{{ meta.description }}">
+    <meta name="keywords" content="{{ meta.keywords }}">
+    <meta name="apple-itunes-app" content="app-id={{ facts.links.app_store_id }}">
+
+    <link rel="canonical" href="{{ url }}">
+{%- for h in hreflang %}
+    <link rel="alternate" hreflang="{{ h.code }}" href="{{ h.href }}">
+{%- endfor %}
+    <link rel="alternate" hreflang="x-default" href="{{ hreflang[0].href }}">
+
+    <meta property="og:title" content="{{ meta.og_title }}">
+    <meta property="og:description" content="{{ meta.og_description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url }}">
+    <meta property="og:image" content="https://suuapp.com/assets/og-image.png">
+    <meta property="og:site_name" content="Suu">
+    <meta property="og:locale" content="{{ locale }}">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="{{ facts.links.twitter_handle }}">
+    <meta name="twitter:title" content="{{ meta.og_title }}">
+    <meta name="twitter:description" content="{{ meta.og_description }}">
+    <meta name="twitter:image" content="https://suuapp.com/assets/og-image.png">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/donation-widget.css">
+    <link rel="stylesheet" href="/assets/css/suu.css">
+
+    <script type="application/ld+json">
+{{ jsonld | safe }}
+    </script>
+
+    <script src="/assets/js/analytics.js" defer></script>
+    <script src="/lang-switcher.js?v=3" defer></script>
+    <script src="/donation-widget.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">{{ ui.skip }}</a>
+
+<nav class="nav">
+    <div class="container nav__inner">
+        <a href="{{ ui.home_href }}" class="nav__logo">💧 Suu</a>
+        <ul class="nav__links">
+            <li><a href="{{ ui.blog_href }}">{{ ui.blog }}</a></li>
+            <li><a href="{{ ui.home_href }}#fiyat">{{ ui.pricing }}</a></li>
+        </ul>
+        <div class="nav__actions">
+            <a href="/app?src=hub-nav" class="btn btn--primary" data-cta="nav"
+               style="min-height:40px;padding:var(--sp-2) var(--sp-5);font-size:var(--fs-sm)">{{ ui.cta }}</a>
+        </div>
+    </div>
+</nav>
+
+<main id="main">
+
+<header class="section" style="padding-block-end:var(--sp-8)">
+    <div class="container container--narrow">
+        <span class="badge badge--new">{{ badge }}</span>
+        <h1 style="margin-block-start:var(--sp-4)">{{ h1 }}</h1>
+        <p class="small text-subtle">{{ ui.updated_label }} {{ published_display }} · <a href="/yazarlar/furkan-mert.html" rel="author">{{ facts.entities.founder.name }}</a> · {{ total }} {{ ui.comparisons_word }}</p>
+    </div>
+</header>
+
+<div class="container container--narrow stack--lg" style="padding-block-end:var(--sp-16)">
+
+    <!-- CEVAP-ÖNCE: alıntılanan blok burasıdır -->
+    <div class="answer-box">
+        <p><strong>{{ ui.short_answer }}</strong> {{ answer }}</p>
+    </div>
+
+    <div class="disclosure">{{ disclosure }}</div>
+
+{%- for p in intro %}
+    <p>{{ p | safe }}</p>
+{%- endfor %}
+
+</div>
+
+{%- for group in groups %}
+<section class="section{% if loop.index is even %} section--subtle{% endif %}" id="{{ group.anchor }}">
+    <div class="container">
+        <div class="section-head">
+            <h2>{{ group.title }}</h2>
+            <p>{{ group.blurb }}</p>
+        </div>
+        <div class="cards">
+{%- for item in group.entries %}
+            <article class="card hub-card hub-card--{{ group.accent }}">
+                <h3><a href="{{ item.href }}">{{ item.title }}</a></h3>
+                <p>{{ item.description }}</p>
+            </article>
+{%- endfor %}
+        </div>
+    </div>
+</section>
+{%- endfor %}
+
+<section class="cta-band" data-cta="kapanis">
+    <div class="container">
+        <h2>{{ ui.cta_head }}</h2>
+        <p class="lead" style="max-width:34rem;margin-inline:auto">{{ ui.cta_sub }}</p>
+        <div style="margin-block-start:var(--sp-8);display:flex;gap:var(--sp-3);justify-content:center;flex-wrap:wrap">
+            <a href="/app?src=hub-kapanis" class="btn btn--secondary" data-cta="kapanis">App Store</a>
+            <a href="/app?src=hub-kapanis" class="btn btn--primary" data-cta="kapanis">Google Play</a>
+        </div>
+    </div>
+</section>
+
+<div class="container container--narrow" style="padding-block:var(--sp-8)">
+    <p class="small text-subtle">{{ facts.medical_disclaimer[lang] if lang in facts.medical_disclaimer else facts.medical_disclaimer['en'] }}</p>
+    <p><a href="{{ ui.blog_href }}">← {{ ui.back_to_blog }}</a></p>
+</div>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <nav class="footer__langs" aria-label="{{ ui.langs_label }}">
+{%- for l in footer_langs %}
+            <a href="{{ l.href }}" hreflang="{{ l.code }}" lang="{{ l.code }}"{% if l.code == lang %} aria-current="page"{% endif %}>{{ l.name }}</a>
+{%- endfor %}
+        </nav>
+        <div class="footer__bottom">
+            <p class="small mb-0">© 2026 Suu · {{ facts.entities.founder.name }}</p>
+            <p class="small mb-0"><a href="{{ ui.home_href }}">suuapp.com</a></p>
+        </div>
+    </div>
+</footer>
+
+<div class="sticky-cta" data-cta="sticky">
+    <a href="/app?src=sticky" class="btn btn--secondary">App Store</a>
+    <a href="/app?src=sticky" class="btn btn--primary">Google Play</a>
+</div>
+
+</body>
+</html>

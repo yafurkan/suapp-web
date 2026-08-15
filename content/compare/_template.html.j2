@@ -206,7 +206,12 @@
 
     <p class="small text-subtle">{{ facts.medical_disclaimer[lang] if lang in facts.medical_disclaimer else facts.medical_disclaimer['en'] }}</p>
 
-    <p><a href="{{ ui.blog_href }}">← {{ ui.back_to_blog }}</a></p>
+    <p>
+        <a href="{{ ui.blog_href }}">← {{ ui.back_to_blog }}</a>
+{%- if ui.get('hub_href') %}
+        &nbsp;·&nbsp; <a href="{{ ui.hub_href }}">{{ ui.hub_label }} →</a>
+{%- endif %}
+    </p>
 </div>
 
 </main>
