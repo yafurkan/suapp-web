@@ -892,6 +892,26 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-10) 0; }
 .footer li { margin-block-end: var(--sp-2); }
 .footer a { color: var(--text-muted); }
 .footer a:hover { color: var(--text); }
+/* ─────────────────────────────────────────────────────────
+   14b. KARŞILAŞTIRMA MERKEZİ KARTLARI
+   Üç sütun aksanı kartın kenarında; konu kümesi bir bakışta ayrışsın.
+   ───────────────────────────────────────────────────────── */
+.hub-card {
+    position: relative;
+    border-inline-start: 3px solid var(--hub-accent, var(--border));
+}
+.hub-card h3 { margin-block-end: var(--sp-2); }
+.hub-card h3 a { color: inherit; text-decoration: none; }
+.hub-card h3 a:hover { color: var(--hub-accent, var(--brand)); text-decoration: underline; }
+.hub-card p { color: var(--text-muted); }
+/* Kartın tamamı tıklanabilir görünsün diye başlık bağlantısını genişlet */
+.hub-card h3 a::after { content: ""; position: absolute; inset: 0; }
+
+.hub-card--water    { --hub-accent: var(--pillar-water); }
+.hub-card--calories { --hub-accent: var(--pillar-calories); }
+.hub-card--exercise { --hub-accent: var(--pillar-exercise); }
+.hub-card--neutral  { --hub-accent: var(--text-subtle); }
+
 /* Statik dil satırı — dil seçici JS ile çalışıyor, tarayıcıların ve yapay
    zekâ getiricilerinin çevirileri bulabilmesi için gerçek bağlantı gerekir. */
 .footer__langs {

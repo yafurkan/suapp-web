@@ -1,0 +1,201 @@
+{
+  "_note": "Karşılaştırma hub'ı. Sadece HANGİ sayfanın hangi kümede olduğu burada tutulur; başlık ve açıklama sayfanın kendi meta verisinden okunur (scripts/build-compare-hub.py). Böylece sayfa güncellenince hub kendiliğinden güncellenir.",
+  "published": "2026-08-15",
+
+  "pages": {
+    "tr": {
+      "outfile": "karsilastirmalar.html",
+      "badge": "📊 Karşılaştırma Merkezi",
+      "h1": "Uygulama Karşılaştırmaları: Kalori, Egzersiz ve Su Takibi",
+      "meta": {
+        "title": "Kalori, Egzersiz ve Su Takip Uygulaması Karşılaştırmaları (2026) | Suu",
+        "description": "Kalori sayma, egzersiz takibi ve su takibi uygulamalarının tek tek karşılaştırıldığı 15 inceleme: MyFitnessPal, Yazio, Cal AI, Lifesum, Cronometer, Strava ve Suu. Hangisi kime uygun?",
+        "keywords": "kalori uygulaması karşılaştırma, en iyi kalori sayma uygulaması, egzersiz takip uygulaması, su takip uygulaması, MyFitnessPal alternatifi, Yazio alternatifi, Cal AI alternatifi",
+        "og_title": "Kalori, Egzersiz ve Su Takip Uygulaması Karşılaştırmaları (2026)",
+        "og_description": "15 karşılaştırma tek sayfada: MyFitnessPal, Yazio, Cal AI, Lifesum, Cronometer, Strava ve Suu. Hangisi kime uygun?"
+      },
+      "answer": "Kalori sayacı seçerken üç şey belirleyici: yemek girişinin ne kadar hızlı olduğu, ücretsiz katmanın gerçekten işe yarayıp yaramadığı ve egzersizin günlük hedefini güncelleyip güncellemediği. Aşağıdaki karşılaştırmalar bu üç ölçütü uygulama uygulama inceliyor.",
+      "intro": [
+        "Uygulama karşılaştırmalarının çoğu özellik listesi sayar. Biz bunun yerine tek soruyu soruyoruz: <strong>bu uygulama senin verinle ne yapıyor?</strong> Kalori girdiğinde su hedefin değişiyor mu, koşunu kaydettiğinde günlük ihtiyacın güncelleniyor mu, kahven gerçek hidrasyon katkısıyla mı sayılıyor?",
+        "Her karşılaştırmada rakibin gerçekten iyi olduğu yönü açıkça yazıyoruz — çünkü hiçbir uygulama herkes için en iyisi değil. Hangi durumda Suu'yu, hangi durumda başkasını önerdiğimizi de belirtiyoruz."
+      ],
+      "disclosure": "Bu sayfalar Suu ekibi tarafından yazılıyor. Rakip uygulamaların güçlü olduğu noktaları da açıkça belirtiyoruz; hangi kullanıcı için hangisinin daha uygun olduğunu dürüstçe söylemek uzun vadede daha faydalı.",
+      "groups": [
+        {
+          "title": "Kalori sayma uygulamaları",
+          "blurb": "Fotoğraftan analiz, sesli giriş, ücretsiz katman ve makro takibi karşılaştırmaları.",
+          "accent": "calories",
+          "pages": [
+            "blog/en-iyi-kalori-uygulamasi.html",
+            "blog/en-iyi-fotografla-kalori-uygulamasi.html",
+            "blog/ucretsiz-kalori-sayaci.html",
+            "blog/suu-vs-myfitnesspal.html",
+            "blog/suu-vs-yazio.html",
+            "blog/suu-vs-cal-ai.html"
+          ]
+        },
+        {
+          "title": "Egzersiz ve kalori bir arada",
+          "blurb": "Egzersizin kalori ve su hedefini gerçekten güncelleyen uygulamalar.",
+          "accent": "exercise",
+          "pages": [
+            "blog/en-iyi-egzersiz-takip-uygulamasi.html",
+            "blog/kalori-ve-egzersiz-takibi-bir-arada.html",
+            "blog/su-kalori-egzersiz-tek-uygulama.html"
+          ]
+        },
+        {
+          "title": "Su takibi",
+          "blurb": "Hidrasyon uygulamaları ve günlük su hedefinin nasıl hesaplandığı.",
+          "accent": "water",
+          "pages": [
+            "blog/en-iyi-su-takip-uygulamasi.html",
+            "blog/su-takip-uygulamasi-neden-kullanmaliyim.html"
+          ]
+        }
+      ]
+    },
+
+    "en": {
+      "outfile": "comparisons.html",
+      "badge": "📊 Comparison Hub",
+      "h1": "App Comparisons: Calorie, Exercise and Water Tracking",
+      "meta": {
+        "title": "Calorie, Exercise and Water Tracking App Comparisons (2026) | Suu",
+        "description": "Fifteen head-to-head reviews of calorie counters, workout trackers and hydration apps: MyFitnessPal, Yazio, Cal AI, Lifesum, Cronometer, Strava and Suu. Which one suits whom?",
+        "keywords": "calorie app comparison, best calorie counting app, workout tracker app, water tracking app, MyFitnessPal alternative, Yazio alternative, Cal AI alternative, Lifesum vs Yazio",
+        "og_title": "Calorie, Exercise and Water Tracking App Comparisons (2026)",
+        "og_description": "Fifteen comparisons on one page: MyFitnessPal, Yazio, Cal AI, Lifesum, Cronometer, Strava and Suu. Which one suits whom?"
+      },
+      "answer": "Three things decide which calorie counter fits you: how fast logging a meal actually is, whether the free tier does real work, and whether exercise updates your daily targets. The comparisons below test all three, app by app.",
+      "intro": [
+        "Most app comparisons count features. We ask one question instead: <strong>what does this app do with your data?</strong> When you log a meal, does your water target move? When you record a run, does your daily requirement update? Is your coffee counted at its real hydration contribution?",
+        "Every comparison states plainly where the competitor is genuinely better — no app is best for everyone. We also say which situations call for Suu and which call for something else."
+      ],
+      "disclosure": "These pages are written by the Suu team. We name the areas where competing apps are stronger; saying honestly which app suits which user is more useful in the long run.",
+      "groups": [
+        {
+          "title": "Calorie counting apps",
+          "blurb": "Photo analysis, voice logging, free tiers and macro tracking compared.",
+          "accent": "calories",
+          "pages": [
+            "blog/en/best-calorie-counting-app.html",
+            "blog/en/best-photo-calorie-app.html",
+            "blog/en/free-calorie-counter-app.html",
+            "blog/en/suu-vs-myfitnesspal.html",
+            "blog/en/suu-vs-yazio.html",
+            "blog/en/suu-vs-cal-ai.html"
+          ]
+        },
+        {
+          "title": "Competitor vs competitor",
+          "blurb": "Neutral head-to-heads between other apps, with no dog in the fight.",
+          "accent": "neutral",
+          "pages": [
+            "blog/en/lifesum-vs-yazio.html",
+            "blog/en/yazio-vs-myfitnesspal.html",
+            "blog/en/cronometer-vs-yazio.html"
+          ]
+        },
+        {
+          "title": "Exercise and calories together",
+          "blurb": "Apps where a recorded workout actually changes your calorie and water targets.",
+          "accent": "exercise",
+          "pages": [
+            "blog/en/best-workout-tracker-app.html",
+            "blog/en/calorie-counter-with-exercise-tracker.html",
+            "blog/en/water-calorie-exercise-one-app.html"
+          ]
+        },
+        {
+          "title": "Water tracking",
+          "blurb": "Hydration apps and how a daily water target is actually calculated.",
+          "accent": "water",
+          "pages": [
+            "blog/en/best-water-tracking-app.html"
+          ]
+        }
+      ]
+    },
+
+    "ar": {
+      "outfile": "muqaranat.html",
+      "badge": "📊 مركز المقارنات",
+      "h1": "مقارنات التطبيقات: السعرات والتمارين وتتبع الماء",
+      "meta": {
+        "title": "مقارنات تطبيقات السعرات والتمارين وتتبع الماء (2026) | Suu",
+        "description": "مقارنات مباشرة بين تطبيقات حساب السعرات وتتبع التمارين والترطيب: MyFitnessPal وYazio وSuu. أيها يناسب من؟",
+        "keywords": "مقارنة تطبيقات السعرات, أفضل تطبيق حساب سعرات, تطبيق تتبع الماء, بديل MyFitnessPal, بديل Yazio",
+        "og_title": "مقارنات تطبيقات السعرات والتمارين وتتبع الماء (2026)",
+        "og_description": "مقارنات مباشرة بين تطبيقات حساب السعرات والترطيب. أيها يناسب من؟"
+      },
+      "answer": "ثلاثة أمور تحدد التطبيق المناسب لك: سرعة تسجيل الوجبة فعلياً، وهل الخطة المجانية تؤدي عملاً حقيقياً، وهل تُحدِّث التمارينُ أهدافَك اليومية. المقارنات أدناه تختبر هذه المعايير الثلاثة.",
+      "intro": [
+        "معظم المقارنات تَعُدُّ الميزات. نحن نسأل سؤالاً واحداً بدلاً من ذلك: <strong>ماذا يفعل هذا التطبيق ببياناتك؟</strong> عند تسجيل وجبة، هل يتغيّر هدف الماء؟ وعند تسجيل جري، هل تُحدَّث احتياجاتك اليومية؟",
+        "في كل مقارنة نذكر بوضوح أين يتفوّق المنافس فعلاً — لا يوجد تطبيق أفضل للجميع."
+      ],
+      "disclosure": "هذه الصفحات يكتبها فريق Suu. نذكر بوضوح النقاط التي تتفوّق فيها التطبيقات المنافسة؛ الصدق بشأن ما يناسب كل مستخدم أنفع على المدى الطويل.",
+      "groups": [
+        {
+          "title": "تطبيقات حساب السعرات",
+          "blurb": "التحليل بالصور والإدخال الصوتي والخطط المجانية وتتبع الماكرو.",
+          "accent": "calories",
+          "pages": [
+            "blog/ar/afdal-tatbiq-hisab-suerat.html",
+            "blog/ar/suu-vs-myfitnesspal.html",
+            "blog/ar/suu-vs-yazio.html"
+          ]
+        },
+        {
+          "title": "تتبع الماء",
+          "blurb": "تطبيقات الترطيب وكيفية حساب هدف الماء اليومي.",
+          "accent": "water",
+          "pages": [
+            "blog/ar/afdal-tatbiq-mae.html",
+            "blog/ar/tatbiq-wahid-mae-suerat-tamarin.html"
+          ]
+        }
+      ]
+    },
+
+    "ru": {
+      "outfile": "sravneniya.html",
+      "badge": "📊 Центр сравнений",
+      "h1": "Сравнения приложений: калории, тренировки и вода",
+      "meta": {
+        "title": "Сравнения приложений для калорий, тренировок и воды (2026) | Suu",
+        "description": "Прямые сравнения счётчиков калорий, трекеров тренировок и приложений для воды: MyFitnessPal, Yazio, Suu. Какое кому подходит?",
+        "keywords": "сравнение приложений калорий, лучшее приложение для подсчёта калорий, приложение для воды, альтернатива MyFitnessPal, альтернатива Yazio",
+        "og_title": "Сравнения приложений для калорий, тренировок и воды (2026)",
+        "og_description": "Прямые сравнения счётчиков калорий и приложений для воды. Какое кому подходит?"
+      },
+      "answer": "Выбор счётчика калорий определяют три вещи: насколько быстро вносится приём пищи, делает ли бесплатный тариф реальную работу и обновляют ли тренировки дневные цели. Сравнения ниже проверяют все три критерия.",
+      "intro": [
+        "Большинство сравнений просто перечисляют функции. Мы задаём один вопрос: <strong>что приложение делает с вашими данными?</strong> Меняется ли цель по воде, когда вы записали приём пищи? Обновляется ли дневная норма после пробежки?",
+        "В каждом сравнении мы прямо говорим, в чём конкурент действительно лучше — идеального приложения для всех не существует."
+      ],
+      "disclosure": "Эти страницы пишет команда Suu. Мы честно называем сильные стороны конкурентов; в долгосрочной перспективе это полезнее.",
+      "groups": [
+        {
+          "title": "Приложения для подсчёта калорий",
+          "blurb": "Фотоанализ, голосовой ввод, бесплатные тарифы и макросы.",
+          "accent": "calories",
+          "pages": [
+            "blog/ru/luchshee-prilozhenie-podscheta-kalorij.html",
+            "blog/ru/suu-vs-myfitnesspal.html",
+            "blog/ru/suu-vs-yazio.html"
+          ]
+        },
+        {
+          "title": "Отслеживание воды",
+          "blurb": "Приложения для гидратации и как считается дневная норма воды.",
+          "accent": "water",
+          "pages": [
+            "blog/ru/luchshee-prilozhenie-dlya-vody.html",
+            "blog/ru/voda-kalorii-trenirovki-odno-prilozhenie.html"
+          ]
+        }
+      ]
+    }
+  }
+}
