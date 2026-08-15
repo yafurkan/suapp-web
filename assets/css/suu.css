@@ -902,7 +902,7 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-10) 0; }
 }
 .hub-card h3 { margin-block-end: var(--sp-2); }
 .hub-card h3 a { color: inherit; text-decoration: none; }
-.hub-card h3 a:hover { color: var(--hub-accent, var(--brand)); text-decoration: underline; }
+.hub-card h3 a:hover { color: var(--hub-accent, var(--text-brand)); text-decoration: underline; }
 .hub-card p { color: var(--text-muted); }
 /* Kartın tamamı tıklanabilir görünsün diye başlık bağlantısını genişlet */
 .hub-card h3 a::after { content: ""; position: absolute; inset: 0; }
@@ -911,6 +911,44 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-10) 0; }
 .hub-card--calories { --hub-accent: var(--pillar-calories); }
 .hub-card--exercise { --hub-accent: var(--pillar-exercise); }
 .hub-card--neutral  { --hub-accent: var(--text-subtle); }
+
+/* ─────────────────────────────────────────────────────────
+   14c. SÖZLÜK
+   Tanım listesi (<dl>) — görünür içerik DefinedTerm şemasıyla birebir aynı.
+   ───────────────────────────────────────────────────────── */
+.term-index {
+    display: flex; flex-wrap: wrap; gap: var(--sp-2);
+    padding: var(--sp-4); border-radius: var(--r-lg);
+    background: var(--bg-subtle);
+}
+.term-index a {
+    font-size: var(--fs-sm); color: var(--text-muted);
+    padding: var(--sp-1) var(--sp-3);
+    border: 1px solid var(--border); border-radius: 999px;
+    text-decoration: none;
+}
+.term-index a:hover { color: var(--text-brand); border-color: var(--text-brand); }
+
+.glossary { margin: 0; }
+.glossary__entry {
+    padding-block: var(--sp-6);
+    border-block-start: 1px solid var(--border);
+    scroll-margin-block-start: 80px;   /* sabit nav altında kalmasın */
+}
+.glossary__entry:first-child { border-block-start: 0; }
+.glossary dt {
+    font-size: var(--fs-lg); font-weight: 700;
+    margin-block-end: var(--sp-2);
+}
+.glossary dd { margin: 0; }
+.glossary dd p { margin-block-end: var(--sp-2); }
+.glossary dd p:last-child { margin-block-end: 0; }
+.glossary__formula {
+    font-size: var(--fs-sm); color: var(--text-muted);
+    padding: var(--sp-3); border-radius: var(--r-sm);
+    background: var(--bg-subtle);
+    border-inline-start: 3px solid var(--pillar-calories);
+}
 
 /* Statik dil satırı — dil seçici JS ile çalışıyor, tarayıcıların ve yapay
    zekâ getiricilerinin çevirileri bulabilmesi için gerçek bağlantı gerekir. */

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ÜRETİLMİŞ DOSYA — elle düzenlemeyin.
+         Kaynak: content/glossary.json + content/glossary.html.j2
+         Yeniden üret: python3 scripts/build-glossary.py --apply -->
+
+    <title>Nutrition and Hydration Glossary: What Are TDEE, BMR, Macros, MET? | Suu</title>
+    <meta name="description" content="Short, accurate definitions of calorie deficit, TDEE, BMR, macronutrients, MET values, electrolytes and hydration terms — each with the formula behind it and a link to the full article.">
+    <meta name="keywords" content="what is TDEE, what is BMR, what is a calorie deficit, what are macronutrients, what is a MET value, what are electrolytes, basal metabolic rate, thermic effect of food">
+    <meta name="apple-itunes-app" content="app-id=6757619920">
+
+    <link rel="canonical" href="https://suuapp.com/glossary.html">
+    <!-- Hreflang cluster (auto-injected) -->
+    <link rel="alternate" hreflang="tr" href="https://suuapp.com/sozluk.html">
+    <link rel="alternate" hreflang="en" href="https://suuapp.com/glossary.html">
+    <link rel="alternate" hreflang="x-default" href="https://suuapp.com/sozluk.html">
+
+
+    <meta property="og:title" content="Nutrition, Hydration and Exercise Glossary">
+    <meta property="og:description" content="Short, accurate definitions of TDEE, BMR, calorie deficit, macros, MET and electrolytes.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://suuapp.com/glossary.html">
+    <meta property="og:image" content="https://suuapp.com/assets/og-image.png">
+    <meta property="og:site_name" content="Suu">
+    <meta property="og:locale" content="en_US">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SuuTakip">
+    <meta name="twitter:title" content="Nutrition, Hydration and Exercise Glossary">
+    <meta name="twitter:description" content="Short, accurate definitions of TDEE, BMR, calorie deficit, macros, MET and electrolytes.">
+    <meta name="twitter:image" content="https://suuapp.com/assets/og-image.png">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/donation-widget.css">
+    <link rel="stylesheet" href="/assets/css/suu.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://suuapp.com/#organization",
+      "name": "Suu",
+      "url": "https://suuapp.com"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://suuapp.com/#furkan",
+      "name": "Furkan Mert Fındıklı",
+      "url": "https://suuapp.com/yazarlar/furkan-mert.html",
+      "jobTitle": "Kurucu \u0026 Geliştirici"
+    },
+    {
+      "@type": "DefinedTermSet",
+      "@id": "https://suuapp.com/glossary.html#termset",
+      "name": "Nutrition, Hydration and Exercise Glossary",
+      "description": "Short, accurate definitions of calorie deficit, TDEE, BMR, macronutrients, MET values, electrolytes and hydration terms — each with the formula behind it and a link to the full article.",
+      "inLanguage": "en",
+      "url": "https://suuapp.com/glossary.html",
+      "hasDefinedTerm": [
+        {
+          "@id": "https://suuapp.com/glossary.html#bmr"
+        },
+        {
+          "@id": "https://suuapp.com/glossary.html#tdee"
+        },
+        {
+          "@id": "https://suuapp.com/glossary.html#calorie-deficit"
+        },
+        {
+          "@id": "https://suuapp.com/glossary.html#macronutrients"
+        },
+        {
+          "@id": "https://suuapp.com/glossary.html#protein"
+        },
+        {
+          "@id": "https://suuapp.com/glossary.html#tef"
+        },
+        {
+          "@id": "https://suuapp.com/glossary.html#met-value"
+        },
+        {
+          "@id": "https://suuapp.com/glossary.html#hydration"
+        },
+        {
+          "@id": "https://suuapp.com/glossary.html#dehydration"
+        },
+        {
+          "@id": "https://suuapp.com/glossary.html#electrolytes"
+        },
+        {
+          "@id": "https://suuapp.com/glossary.html#diuretic-effect"
+        },
+        {
+          "@id": "https://suuapp.com/glossary.html#hydration-score"
+        },
+        {
+          "@id": "https://suuapp.com/glossary.html#glycemic-index"
+        },
+        {
+          "@id": "https://suuapp.com/glossary.html#baseline-water-requirement"
+        }
+      ]
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://suuapp.com/glossary.html#bmr",
+      "name": "BMR (Basal Metabolic Rate)",
+      "description": "The energy your body burns in a day at complete rest — for breathing, circulation, cell repair and other baseline functions. In adults it accounts for roughly 60-70% of total daily energy expenditure. It is what you burn even if you never move.",
+      "inDefinedTermSet": {
+        "@id": "https://suuapp.com/glossary.html#termset"
+      },
+      "url": "https://suuapp.com/glossary.html#bmr",
+      "alternateName": "BMR"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://suuapp.com/glossary.html#tdee",
+      "name": "TDEE (Total Daily Energy Expenditure)",
+      "description": "The total calories you burn in a day: basal metabolism plus movement, exercise and digestion. It is the starting point for any weight goal — eat below this number to lose weight, above it to gain.",
+      "inDefinedTermSet": {
+        "@id": "https://suuapp.com/glossary.html#termset"
+      },
+      "url": "https://suuapp.com/glossary.html#tdee",
+      "alternateName": "TDEE"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://suuapp.com/glossary.html#calorie-deficit",
+      "name": "Calorie deficit",
+      "description": "Eating fewer calories than you burn. Your body covers the difference from its stores, which is how weight loss happens. A sustainable deficit is usually 300-500 calories a day; larger deficits raise the risk of muscle loss and metabolic slowdown.",
+      "inDefinedTermSet": {
+        "@id": "https://suuapp.com/glossary.html#termset"
+      },
+      "url": "https://suuapp.com/glossary.html#calorie-deficit"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://suuapp.com/glossary.html#macronutrients",
+      "name": "Macronutrients",
+      "description": "The three nutrient groups your body needs in large amounts for energy: protein, carbohydrate and fat. Calories come from their sum, while the ratio between them shapes satiety, muscle retention and energy balance.",
+      "inDefinedTermSet": {
+        "@id": "https://suuapp.com/glossary.html#termset"
+      },
+      "url": "https://suuapp.com/glossary.html#macronutrients",
+      "alternateName": "macros"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://suuapp.com/glossary.html#protein",
+      "name": "Protein",
+      "description": "The macronutrient used to build muscle, enzymes and hormones. It is the most satiating of the three and limits muscle loss during a calorie deficit. Digesting it also requires more water than the other macronutrients.",
+      "inDefinedTermSet": {
+        "@id": "https://suuapp.com/glossary.html#termset"
+      },
+      "url": "https://suuapp.com/glossary.html#protein"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://suuapp.com/glossary.html#tef",
+      "name": "TEF (Thermic Effect of Food)",
+      "description": "The energy spent digesting, absorbing and processing what you eat. It makes up roughly 10% of total daily expenditure and varies by macronutrient — which is why two meals of identical calories are not identical in net energy.",
+      "inDefinedTermSet": {
+        "@id": "https://suuapp.com/glossary.html#termset"
+      },
+      "url": "https://suuapp.com/glossary.html#tef",
+      "alternateName": "TEF"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://suuapp.com/glossary.html#met-value",
+      "name": "MET value",
+      "description": "A coefficient showing how many times more energy an activity costs than resting. One MET is sitting still; brisk walking is around 4 MET and running falls between 8 and 12. Apps that estimate exercise calories rely on this coefficient.",
+      "inDefinedTermSet": {
+        "@id": "https://suuapp.com/glossary.html#termset"
+      },
+      "url": "https://suuapp.com/glossary.html#met-value",
+      "alternateName": "MET"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://suuapp.com/glossary.html#hydration",
+      "name": "Hydration",
+      "description": "Having enough fluid balance in the body. It is set not by how much water you drink alone, but by fluid lost through sweat, urine and breathing, the electrolytes you take in, and the water contained in food.",
+      "inDefinedTermSet": {
+        "@id": "https://suuapp.com/glossary.html#termset"
+      },
+      "url": "https://suuapp.com/glossary.html#hydration"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://suuapp.com/glossary.html#dehydration",
+      "name": "Dehydration",
+      "description": "Losing more fluid than you take in. A loss of just 2% of body weight measurably reduces concentration, mood and physical performance. Thirst usually appears only after the loss has already begun.",
+      "inDefinedTermSet": {
+        "@id": "https://suuapp.com/glossary.html#termset"
+      },
+      "url": "https://suuapp.com/glossary.html#dehydration"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://suuapp.com/glossary.html#electrolytes",
+      "name": "Electrolytes",
+      "description": "Minerals that carry an electrical charge when dissolved in water — mainly sodium, potassium, magnesium and calcium. They regulate how cells hold water, how nerves transmit signals and how muscles contract. When lost through sweat, drinking water alone does not fully restore the balance.",
+      "inDefinedTermSet": {
+        "@id": "https://suuapp.com/glossary.html#termset"
+      },
+      "url": "https://suuapp.com/glossary.html#electrolytes"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://suuapp.com/glossary.html#diuretic-effect",
+      "name": "Diuretic effect",
+      "description": "A substance's tendency to increase urine production, seen with caffeine and alcohol. In coffee and tea the effect does not cancel out the fluid consumed: at everyday intake both still contribute net hydration, though less than plain water does.",
+      "inDefinedTermSet": {
+        "@id": "https://suuapp.com/glossary.html#termset"
+      },
+      "url": "https://suuapp.com/glossary.html#diuretic-effect"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://suuapp.com/glossary.html#hydration-score",
+      "name": "Hydration score",
+      "description": "A score that measures a drink's real hydration contribution rather than its volume. It rests on the idea that water content, caffeine, sugar and electrolytes make each beverage contribute differently — a glass of water and a glass of energy drink do not count the same.",
+      "inDefinedTermSet": {
+        "@id": "https://suuapp.com/glossary.html#termset"
+      },
+      "url": "https://suuapp.com/glossary.html#hydration-score"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://suuapp.com/glossary.html#glycemic-index",
+      "name": "Glycemic index",
+      "description": "A 0-100 scale showing how quickly a carbohydrate-containing food raises blood sugar. High-index foods spike and drop fast, while low-index foods sustain fullness longer. Portion size matters at least as much as the index itself.",
+      "inDefinedTermSet": {
+        "@id": "https://suuapp.com/glossary.html#termset"
+      },
+      "url": "https://suuapp.com/glossary.html#glycemic-index",
+      "alternateName": "GI"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://suuapp.com/glossary.html#baseline-water-requirement",
+      "name": "Baseline water requirement",
+      "description": "The fluid your body needs each day for basic function, before exercise, temperature and diet are taken into account. It is the starting value for a personal daily target, with activity and heat added on top of it.",
+      "inDefinedTermSet": {
+        "@id": "https://suuapp.com/glossary.html#termset"
+      },
+      "url": "https://suuapp.com/glossary.html#baseline-water-requirement"
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://suuapp.com/glossary.html#page",
+      "url": "https://suuapp.com/glossary.html",
+      "name": "Nutrition and Hydration Glossary: What Are TDEE, BMR, Macros, MET? | Suu",
+      "description": "Short, accurate definitions of calorie deficit, TDEE, BMR, macronutrients, MET values, electrolytes and hydration terms — each with the formula behind it and a link to the full article.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://suuapp.com/#website"
+      },
+      "author": {
+        "@id": "https://suuapp.com/#furkan"
+      },
+      "publisher": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "dateModified": "2026-08-15",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".answer-box"
+        ]
+      },
+      "mainEntity": {
+        "@id": "https://suuapp.com/glossary.html#termset"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://suuapp.com/glossary.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Suu",
+          "item": "https://suuapp.com/hosgeldiniz-en.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Nutrition, Hydration and Exercise Glossary",
+          "item": "https://suuapp.com/glossary.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+
+    <script src="/assets/js/analytics.js" defer></script>
+    <script src="/lang-switcher.js?v=3" defer></script>
+    <script src="/donation-widget.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="nav">
+    <div class="container nav__inner">
+        <a href="/hosgeldiniz-en.html" class="nav__logo">💧 Suu</a>
+        <ul class="nav__links">
+            <li><a href="/blog-en.html">Blog</a></li>
+            <li><a href="/comparisons.html">Comparisons</a></li>
+        </ul>
+        <div class="nav__actions">
+            <a href="/app?src=glossary-nav" class="btn btn--primary" data-cta="nav"
+               style="min-height:40px;padding:var(--sp-2) var(--sp-5);font-size:var(--fs-sm)">Download Free</a>
+        </div>
+    </div>
+</nav>
+
+<main id="main">
+
+<header class="section" style="padding-block-end:var(--sp-8)">
+    <div class="container container--narrow">
+        <span class="badge badge--new">📖 Glossary</span>
+        <h1 style="margin-block-start:var(--sp-4)">Nutrition, Hydration and Exercise Glossary</h1>
+        <p class="small text-subtle">Updated: August 15, 2026 · <a href="/yazarlar/furkan-mert.html" rel="author">Furkan Mert Fındıklı</a> · 14 terms</p>
+    </div>
+</header>
+
+<div class="container container--narrow stack--lg">
+
+    <!-- CEVAP-ÖNCE: alıntılanan blok burasıdır -->
+    <div class="answer-box">
+        <p><strong>Short answer:</strong> The fourteen terms you meet most often in calorie and hydration tracking, defined briefly and accurately: BMR is the energy you burn at rest, TDEE is your total daily expenditure, and a calorie deficit means eating less than you spend. Each definition carries the formula behind it and a link to the full article.</p>
+    </div>
+    <p>Nutrition apps use these terms without explaining them: they ask for your TDEE, set a macro target, and compute exercise calories from a MET coefficient. Below is what each one means, how it is calculated, and what it actually changes in practice.</p>
+    <p>Definitions are deliberately short. Where a term deserves depth, the link underneath takes you to the full article.</p>
+
+    <!-- Terim dizini: uzun sayfada atlama, hem kullanıcı hem tarayıcı için -->
+    <nav class="term-index" aria-label="Term index">
+        <a href="#bmr">BMR (Basal Metabolic Rate)</a>
+        <a href="#tdee">TDEE (Total Daily Energy Expenditure)</a>
+        <a href="#calorie-deficit">Calorie deficit</a>
+        <a href="#macronutrients">Macronutrients</a>
+        <a href="#protein">Protein</a>
+        <a href="#tef">TEF (Thermic Effect of Food)</a>
+        <a href="#met-value">MET value</a>
+        <a href="#hydration">Hydration</a>
+        <a href="#dehydration">Dehydration</a>
+        <a href="#electrolytes">Electrolytes</a>
+        <a href="#diuretic-effect">Diuretic effect</a>
+        <a href="#hydration-score">Hydration score</a>
+        <a href="#glycemic-index">Glycemic index</a>
+        <a href="#baseline-water-requirement">Baseline water requirement</a>
+    </nav>
+
+</div>
+
+<div class="container container--narrow" style="padding-block-end:var(--sp-16)">
+    <dl class="glossary">
+        <div class="glossary__entry" id="bmr">
+            <dt>BMR (Basal Metabolic Rate)</dt>
+            <dd>
+                <p>The energy your body burns in a day at complete rest — for breathing, circulation, cell repair and other baseline functions. In adults it accounts for roughly 60-70% of total daily energy expenditure. It is what you burn even if you never move.</p>
+                <p class="glossary__formula"><strong>Formula:</strong> Mifflin-St Jeor equation: men (10 × kg) + (6.25 × cm) − (5 × age) + 5; women use the same equation ending in −161 instead of +5.</p>
+            </dd>
+        </div>
+        <div class="glossary__entry" id="tdee">
+            <dt>TDEE (Total Daily Energy Expenditure)</dt>
+            <dd>
+                <p>The total calories you burn in a day: basal metabolism plus movement, exercise and digestion. It is the starting point for any weight goal — eat below this number to lose weight, above it to gain.</p>
+                <p class="glossary__formula"><strong>Formula:</strong> TDEE = BMR × activity factor (sedentary 1.2 · lightly active 1.375 · moderate 1.55 · very active 1.725).</p>
+            </dd>
+        </div>
+        <div class="glossary__entry" id="calorie-deficit">
+            <dt>Calorie deficit</dt>
+            <dd>
+                <p>Eating fewer calories than you burn. Your body covers the difference from its stores, which is how weight loss happens. A sustainable deficit is usually 300-500 calories a day; larger deficits raise the risk of muscle loss and metabolic slowdown.</p>
+                <p class="glossary__formula"><strong>Formula:</strong> Deficit = TDEE − calories consumed. A cumulative deficit of roughly 7,700 calories corresponds to about 1 kg of fat lost.</p>
+                <p class="small"><a href="/blog/en/calorie-deficit.html">Full article: What Is a Calorie Deficit and How to Create One</a></p>
+            </dd>
+        </div>
+        <div class="glossary__entry" id="macronutrients">
+            <dt>Macronutrients</dt>
+            <dd>
+                <p>The three nutrient groups your body needs in large amounts for energy: protein, carbohydrate and fat. Calories come from their sum, while the ratio between them shapes satiety, muscle retention and energy balance.</p>
+                <p class="glossary__formula"><strong>Formula:</strong> 1 g protein = 4 kcal · 1 g carbohydrate = 4 kcal · 1 g fat = 9 kcal.</p>
+                <p class="small"><a href="/blog/en/macro-calculation.html">Full article: How to Calculate Macros: Protein, Carbs and Fat Explained</a></p>
+            </dd>
+        </div>
+        <div class="glossary__entry" id="protein">
+            <dt>Protein</dt>
+            <dd>
+                <p>The macronutrient used to build muscle, enzymes and hormones. It is the most satiating of the three and limits muscle loss during a calorie deficit. Digesting it also requires more water than the other macronutrients.</p>
+                <p class="glossary__formula"><strong>Formula:</strong> About 0.8 g/kg per day for sedentary adults; 1.6-2.2 g/kg is commonly recommended for people training regularly.</p>
+            </dd>
+        </div>
+        <div class="glossary__entry" id="tef">
+            <dt>TEF (Thermic Effect of Food)</dt>
+            <dd>
+                <p>The energy spent digesting, absorbing and processing what you eat. It makes up roughly 10% of total daily expenditure and varies by macronutrient — which is why two meals of identical calories are not identical in net energy.</p>
+                <p class="glossary__formula"><strong>Formula:</strong> Protein 20-30% · carbohydrate 5-10% · fat 0-3% thermic effect.</p>
+            </dd>
+        </div>
+        <div class="glossary__entry" id="met-value">
+            <dt>MET value</dt>
+            <dd>
+                <p>A coefficient showing how many times more energy an activity costs than resting. One MET is sitting still; brisk walking is around 4 MET and running falls between 8 and 12. Apps that estimate exercise calories rely on this coefficient.</p>
+                <p class="glossary__formula"><strong>Formula:</strong> Calories/minute = MET × 3.5 × kg ÷ 200.</p>
+                <p class="small"><a href="/blog/en/calories-burned-exercise.html">Full article: How Many Calories Does Exercise Burn?</a></p>
+            </dd>
+        </div>
+        <div class="glossary__entry" id="hydration">
+            <dt>Hydration</dt>
+            <dd>
+                <p>Having enough fluid balance in the body. It is set not by how much water you drink alone, but by fluid lost through sweat, urine and breathing, the electrolytes you take in, and the water contained in food.</p>
+                <p class="small"><a href="/blog/en/how-much-water-should-i-drink.html">Full article: The &#34;8 Glasses a Day&#34; Rule Is Wrong — Here&#39;s What Science Says</a></p>
+            </dd>
+        </div>
+        <div class="glossary__entry" id="dehydration">
+            <dt>Dehydration</dt>
+            <dd>
+                <p>Losing more fluid than you take in. A loss of just 2% of body weight measurably reduces concentration, mood and physical performance. Thirst usually appears only after the loss has already begun.</p>
+                <p class="small"><a href="/blog/en/signs-of-dehydration.html">Full article: 8 Warning Signs You&#39;re Dehydrated — Most People Ignore #3</a></p>
+            </dd>
+        </div>
+        <div class="glossary__entry" id="electrolytes">
+            <dt>Electrolytes</dt>
+            <dd>
+                <p>Minerals that carry an electrical charge when dissolved in water — mainly sodium, potassium, magnesium and calcium. They regulate how cells hold water, how nerves transmit signals and how muscles contract. When lost through sweat, drinking water alone does not fully restore the balance.</p>
+                <p class="small"><a href="/blog/en/hydration-and-exercise.html">Full article: Hydration and Exercise: How Much Water to Drink Before, During &amp; After Workouts</a></p>
+            </dd>
+        </div>
+        <div class="glossary__entry" id="diuretic-effect">
+            <dt>Diuretic effect</dt>
+            <dd>
+                <p>A substance&#39;s tendency to increase urine production, seen with caffeine and alcohol. In coffee and tea the effect does not cancel out the fluid consumed: at everyday intake both still contribute net hydration, though less than plain water does.</p>
+                <p class="small"><a href="/blog/en/coffee-tea-hydration.html">Full article: Does Coffee Dehydrate You? The Answer Isn&#39;t What You Think</a></p>
+            </dd>
+        </div>
+        <div class="glossary__entry" id="hydration-score">
+            <dt>Hydration score</dt>
+            <dd>
+                <p>A score that measures a drink&#39;s real hydration contribution rather than its volume. It rests on the idea that water content, caffeine, sugar and electrolytes make each beverage contribute differently — a glass of water and a glass of energy drink do not count the same.</p>
+                <p class="small"><a href="/blog/en/hydration-score-explained.html">Full article: What Is a Hydration Score? How Suu Rates Your Water Intake (0-100)</a></p>
+            </dd>
+        </div>
+        <div class="glossary__entry" id="glycemic-index">
+            <dt>Glycemic index</dt>
+            <dd>
+                <p>A 0-100 scale showing how quickly a carbohydrate-containing food raises blood sugar. High-index foods spike and drop fast, while low-index foods sustain fullness longer. Portion size matters at least as much as the index itself.</p>
+                <p class="glossary__formula"><strong>Formula:</strong> Low ≤55 · medium 56-69 · high ≥70.</p>
+            </dd>
+        </div>
+        <div class="glossary__entry" id="baseline-water-requirement">
+            <dt>Baseline water requirement</dt>
+            <dd>
+                <p>The fluid your body needs each day for basic function, before exercise, temperature and diet are taken into account. It is the starting value for a personal daily target, with activity and heat added on top of it.</p>
+                <p class="glossary__formula"><strong>Formula:</strong> A common starting approach: body weight (kg) × 30-35 ml.</p>
+                <p class="small"><a href="/blog/en/how-much-water-should-i-drink.html">Full article: The &#34;8 Glasses a Day&#34; Rule Is Wrong — Here&#39;s What Science Says</a></p>
+            </dd>
+        </div>
+    </dl>
+</div>
+
+<section class="cta-band" data-cta="kapanis">
+    <div class="container">
+        <h2>Stop working these numbers out by hand</h2>
+        <p class="lead" style="max-width:34rem;margin-inline:auto">Suu calculates your daily calorie, macro and water targets from your own data. Free on iOS and Android.</p>
+        <div style="margin-block-start:var(--sp-8);display:flex;gap:var(--sp-3);justify-content:center;flex-wrap:wrap">
+            <a href="/app?src=glossary-kapanis" class="btn btn--secondary" data-cta="kapanis">App Store</a>
+            <a href="/app?src=glossary-kapanis" class="btn btn--primary" data-cta="kapanis">Google Play</a>
+        </div>
+    </div>
+</section>
+
+<div class="container container--narrow" style="padding-block:var(--sp-8)">
+    <p class="small text-subtle">Suu is not intended for medical diagnosis or treatment. Consult a healthcare professional for health-related decisions.</p>
+    <p><a href="/blog-en.html">← Back to blog</a> &nbsp;·&nbsp; <a href="/comparisons.html">Comparisons →</a></p>
+</div>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <nav class="footer__langs" aria-label="Choose language">
+            <a href="/" hreflang="tr" lang="tr">Türkçe</a>
+            <a href="/hosgeldiniz-en.html" hreflang="en" lang="en" aria-current="page">English</a>
+            <a href="/hosgeldiniz-ar.html" hreflang="ar" lang="ar">العربية</a>
+            <a href="/hosgeldiniz-ru.html" hreflang="ru" lang="ru">Русский</a>
+            <a href="/hosgeldiniz-de.html" hreflang="de" lang="de">Deutsch</a>
+            <a href="/hosgeldiniz-it.html" hreflang="it" lang="it">Italiano</a>
+            <a href="/hosgeldiniz-hi.html" hreflang="hi" lang="hi">हिन्दी</a>
+        </nav>
+        <div class="footer__bottom">
+            <p class="small mb-0">© 2026 Suu · Furkan Mert Fındıklı</p>
+            <p class="small mb-0"><a href="/hosgeldiniz-en.html">suuapp.com</a></p>
+        </div>
+    </div>
+</footer>
+
+<div class="sticky-cta" data-cta="sticky">
+    <a href="/app?src=sticky" class="btn btn--secondary">App Store</a>
+    <a href="/app?src=sticky" class="btn btn--primary">Google Play</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,229 @@
+{
+  "_note": "Beslenme/hidrasyon/egzersiz sözlüğü. Her terim 40-60 kelimelik KISA kanonik tanım — mevcut uzun yazıların yerine geçmez, onlara bağlanır (see_also). DefinedTerm + DefinedTermSet şeması. 'X nedir' sorguları yapay zekâ asistanlarının en sık yanıtladığı sorgu tipidir ve tanım bloğu doğrudan alıntılanır.",
+  "updated": "2026-08-15",
+  "pages": {
+    "tr": {
+      "outfile": "sozluk.html",
+      "badge": "📖 Sözlük",
+      "h1": "Beslenme, Hidrasyon ve Egzersiz Sözlüğü",
+      "meta": {
+        "title": "Beslenme ve Hidrasyon Sözlüğü: TDEE, BMR, Makro, MET Nedir? | Suu",
+        "description": "Kalori açığı, TDEE, BMR, makro besin, MET değeri, elektrolit ve hidrasyon terimlerinin kısa ve doğru tanımları. Her terim için hesaplama mantığı ve ayrıntılı yazı bağlantısı.",
+        "keywords": "TDEE nedir, BMR nedir, kalori açığı nedir, makro besin nedir, MET değeri nedir, elektrolit nedir, bazal metabolizma hızı, termik etki",
+        "og_title": "Beslenme, Hidrasyon ve Egzersiz Sözlüğü",
+        "og_description": "TDEE, BMR, kalori açığı, makro, MET ve elektrolit terimlerinin kısa ve doğru tanımları."
+      },
+      "answer": "Kalori ve su takibinde en sık karşılaşılan on dört terim burada kısa ve doğru biçimde tanımlanıyor: BMR dinlenirken yakılan enerji, TDEE günlük toplam harcama, kalori açığı ise alınanın harcanandan az olması. Her tanımın altında hesaplama mantığı ve ayrıntılı yazı bağlantısı var.",
+      "intro": [
+        "Beslenme uygulamaları bu terimleri açıklamadan kullanır: TDEE'ni girer, makro hedefi belirler, MET katsayısıyla kalori hesaplar. Aşağıda her birinin ne anlama geldiği, nasıl hesaplandığı ve pratikte neyi değiştirdiği yazıyor.",
+        "Tanımlar kısa tutuldu. Bir terimi derinlemesine okumak isterseniz tanımın altındaki bağlantı ilgili yazıya götürür."
+      ],
+      "see_also_label": "Ayrıntılı yazı:",
+      "formula_label": "Hesaplama:",
+      "terms": [
+        {
+          "term": "BMR (Bazal Metabolik Hız)",
+          "abbr": "BMR",
+          "definition": "Vücudun tamamen dinlenirken — nefes alma, kan dolaşımı, hücre yenilenmesi gibi temel işlevler için — bir günde yaktığı enerji miktarı. Yetişkinlerde günlük toplam enerji harcamasının yaklaşık %60-70'ini oluşturur. Hiç hareket etmeseniz bile harcadığınız kaloridir.",
+          "formula": "Mifflin-St Jeor denklemi: erkeklerde (10 × kg) + (6,25 × cm) − (5 × yaş) + 5; kadınlarda aynı denklemin sonuna +5 yerine −161 gelir."
+        },
+        {
+          "term": "TDEE (Toplam Günlük Enerji Harcaması)",
+          "abbr": "TDEE",
+          "definition": "Bir günde yaktığınız toplam kalori: bazal metabolizma, hareket, egzersiz ve sindirim için harcanan enerjinin toplamı. Kilo hedefinin başlangıç noktasıdır — kilo vermek için bu sayının altında, almak için üstünde kalori alınır.",
+          "formula": "TDEE = BMR × aktivite katsayısı (hareketsiz 1,2 · hafif aktif 1,375 · orta 1,55 · çok aktif 1,725)."
+        },
+        {
+          "term": "Kalori açığı",
+          "abbr": null,
+          "definition": "Harcadığınız kaloriden daha az kalori almanız durumu. Vücut aradaki farkı depolarından karşıladığı için kilo kaybı bu şekilde gerçekleşir. Sürdürülebilir açık genellikle günlük 300-500 kaloridir; daha büyük açıklar kas kaybı ve metabolik yavaşlama riskini artırır.",
+          "formula": "Kalori açığı = TDEE − alınan kalori. Yaklaşık 7.700 kalorilik toplam açık 1 kg yağ kaybına karşılık gelir.",
+          "see_also": "blog/kalori-acigi.html"
+        },
+        {
+          "term": "Makro besinler",
+          "abbr": null,
+          "definition": "Vücudun enerji için büyük miktarda ihtiyaç duyduğu üç besin grubu: protein, karbonhidrat ve yağ. Kalori bunların toplamından gelir; hangi oranda alındıkları ise tokluk, kas korunumu ve enerji dengesini belirler.",
+          "formula": "1 g protein = 4 kcal · 1 g karbonhidrat = 4 kcal · 1 g yağ = 9 kcal.",
+          "see_also": "blog/makro-hesaplama.html"
+        },
+        {
+          "term": "Protein",
+          "abbr": null,
+          "definition": "Kas, enzim ve hormon yapımında kullanılan makro besin. Üç makro içinde tokluk hissi en yüksek olanıdır ve kalori açığında kas kaybını sınırlar. Sindirimi sırasında diğer makrolardan daha fazla su gerektirir.",
+          "formula": "Hareketsiz yetişkinde günde ~0,8 g/kg; düzenli antrenman yapanda 1,6-2,2 g/kg aralığı yaygın önerilir."
+        },
+        {
+          "term": "TEF (Besinlerin termik etkisi)",
+          "abbr": "TEF",
+          "definition": "Yediğiniz besini sindirmek, emmek ve işlemek için harcanan enerji. Günlük toplam harcamanın yaklaşık %10'unu oluşturur ve makrolara göre değişir — bu yüzden aynı kalorideki iki öğün net enerji katkısı bakımından birebir aynı değildir.",
+          "formula": "Protein %20-30 · karbonhidrat %5-10 · yağ %0-3 oranında termik etki yaratır."
+        },
+        {
+          "term": "MET değeri",
+          "abbr": "MET",
+          "definition": "Bir aktivitenin dinlenme haline göre kaç kat enerji harcattığını gösteren katsayı. 1 MET oturur haldeki harcamadır; tempolu yürüyüş yaklaşık 4 MET, koşu 8-12 MET arasıdır. Egzersiz kalorisi hesaplayan uygulamalar bu katsayıyı kullanır.",
+          "formula": "Kalori/dakika = MET × 3,5 × kg ÷ 200.",
+          "see_also": "blog/egzersizde-kalori-yakimi.html"
+        },
+        {
+          "term": "Hidrasyon",
+          "abbr": null,
+          "definition": "Vücuttaki sıvı dengesinin yeterli düzeyde olması. Yalnızca içilen su miktarıyla değil; ter, idrar ve solunumla kaybedilen sıvı, alınan elektrolitler ve besinlerden gelen suyla birlikte belirlenir.",
+          "formula": null,
+          "see_also": "blog/gunluk-ne-kadar-su-icmeli.html"
+        },
+        {
+          "term": "Dehidrasyon",
+          "abbr": null,
+          "definition": "Vücudun aldığından fazla sıvı kaybetmesi. Vücut ağırlığının %2'si kadar sıvı kaybı bile konsantrasyon, ruh hali ve fiziksel performansı ölçülebilir biçimde düşürür. Susuzluk hissi genellikle kayıp başladıktan sonra ortaya çıkar.",
+          "formula": null,
+          "see_also": "blog/susuzluk-belirtileri.html"
+        },
+        {
+          "term": "Elektrolit",
+          "abbr": null,
+          "definition": "Suda çözündüğünde elektrik yükü taşıyan mineraller — başlıcaları sodyum, potasyum, magnezyum ve kalsiyum. Hücrelerin su tutmasını, sinir iletimini ve kas kasılmasını düzenler. Terle kaybedildiklerinde yalnızca su içmek dengeyi tam olarak geri getirmez.",
+          "formula": null,
+          "see_also": "blog/spor-ve-hidrasyon.html"
+        },
+        {
+          "term": "Diüretik etki",
+          "abbr": null,
+          "definition": "Bir maddenin idrar üretimini artırma özelliği. Kafein ve alkolde görülür. Kahve ve çayda bu etki alınan sıvı miktarını tamamen götürmez; günlük tüketimde her ikisi de net olarak hidrasyona katkı sağlar, ancak katkıları saf suyunkinden düşüktür.",
+          "formula": null,
+          "see_also": "blog/kahve-cay-su-sayar-mi.html"
+        },
+        {
+          "term": "Hidrasyon skoru",
+          "abbr": null,
+          "definition": "İçilen sıvının hacmini değil, gerçek hidrasyon katkısını ölçen puan. Her içeceğin su içeriği, kafein, şeker ve elektrolit oranına göre farklı katkı sağladığı fikrine dayanır — bir bardak su ile bir bardak enerji içeceği aynı sayılmaz.",
+          "formula": null,
+          "see_also": "blog/hidrasyon-skoru-nedir.html"
+        },
+        {
+          "term": "Glisemik indeks",
+          "abbr": "GI",
+          "definition": "Karbonhidrat içeren bir besinin kan şekerini ne hızda yükselttiğini 0-100 arasında gösteren ölçek. Yüksek indeksli besinler hızlı yükselip hızlı düşerken, düşük indeksliler daha uzun süreli tokluk sağlar. Porsiyon miktarı da en az indeks kadar belirleyicidir.",
+          "formula": "Düşük ≤55 · orta 56-69 · yüksek ≥70."
+        },
+        {
+          "term": "Bazal su ihtiyacı",
+          "abbr": null,
+          "definition": "Egzersiz, sıcaklık ve beslenme gibi değişkenler hesaba katılmadan, vücudun temel işlevleri için günlük ihtiyaç duyduğu sıvı miktarı. Kişisel günlük hedefin başlangıç değeridir; aktivite ve hava sıcaklığı bu değerin üzerine eklenir.",
+          "formula": "Yaygın başlangıç yaklaşımı: vücut ağırlığı (kg) × 30-35 ml.",
+          "see_also": "blog/gunluk-ne-kadar-su-icmeli.html"
+        }
+      ]
+    },
+    "en": {
+      "outfile": "glossary.html",
+      "badge": "📖 Glossary",
+      "h1": "Nutrition, Hydration and Exercise Glossary",
+      "meta": {
+        "title": "Nutrition and Hydration Glossary: What Are TDEE, BMR, Macros, MET? | Suu",
+        "description": "Short, accurate definitions of calorie deficit, TDEE, BMR, macronutrients, MET values, electrolytes and hydration terms — each with the formula behind it and a link to the full article.",
+        "keywords": "what is TDEE, what is BMR, what is a calorie deficit, what are macronutrients, what is a MET value, what are electrolytes, basal metabolic rate, thermic effect of food",
+        "og_title": "Nutrition, Hydration and Exercise Glossary",
+        "og_description": "Short, accurate definitions of TDEE, BMR, calorie deficit, macros, MET and electrolytes."
+      },
+      "answer": "The fourteen terms you meet most often in calorie and hydration tracking, defined briefly and accurately: BMR is the energy you burn at rest, TDEE is your total daily expenditure, and a calorie deficit means eating less than you spend. Each definition carries the formula behind it and a link to the full article.",
+      "intro": [
+        "Nutrition apps use these terms without explaining them: they ask for your TDEE, set a macro target, and compute exercise calories from a MET coefficient. Below is what each one means, how it is calculated, and what it actually changes in practice.",
+        "Definitions are deliberately short. Where a term deserves depth, the link underneath takes you to the full article."
+      ],
+      "see_also_label": "Full article:",
+      "formula_label": "Formula:",
+      "terms": [
+        {
+          "term": "BMR (Basal Metabolic Rate)",
+          "abbr": "BMR",
+          "definition": "The energy your body burns in a day at complete rest — for breathing, circulation, cell repair and other baseline functions. In adults it accounts for roughly 60-70% of total daily energy expenditure. It is what you burn even if you never move.",
+          "formula": "Mifflin-St Jeor equation: men (10 × kg) + (6.25 × cm) − (5 × age) + 5; women use the same equation ending in −161 instead of +5."
+        },
+        {
+          "term": "TDEE (Total Daily Energy Expenditure)",
+          "abbr": "TDEE",
+          "definition": "The total calories you burn in a day: basal metabolism plus movement, exercise and digestion. It is the starting point for any weight goal — eat below this number to lose weight, above it to gain.",
+          "formula": "TDEE = BMR × activity factor (sedentary 1.2 · lightly active 1.375 · moderate 1.55 · very active 1.725)."
+        },
+        {
+          "term": "Calorie deficit",
+          "abbr": null,
+          "definition": "Eating fewer calories than you burn. Your body covers the difference from its stores, which is how weight loss happens. A sustainable deficit is usually 300-500 calories a day; larger deficits raise the risk of muscle loss and metabolic slowdown.",
+          "formula": "Deficit = TDEE − calories consumed. A cumulative deficit of roughly 7,700 calories corresponds to about 1 kg of fat lost.",
+          "see_also": "blog/en/calorie-deficit.html"
+        },
+        {
+          "term": "Macronutrients",
+          "abbr": "macros",
+          "definition": "The three nutrient groups your body needs in large amounts for energy: protein, carbohydrate and fat. Calories come from their sum, while the ratio between them shapes satiety, muscle retention and energy balance.",
+          "formula": "1 g protein = 4 kcal · 1 g carbohydrate = 4 kcal · 1 g fat = 9 kcal.",
+          "see_also": "blog/en/macro-calculation.html"
+        },
+        {
+          "term": "Protein",
+          "abbr": null,
+          "definition": "The macronutrient used to build muscle, enzymes and hormones. It is the most satiating of the three and limits muscle loss during a calorie deficit. Digesting it also requires more water than the other macronutrients.",
+          "formula": "About 0.8 g/kg per day for sedentary adults; 1.6-2.2 g/kg is commonly recommended for people training regularly."
+        },
+        {
+          "term": "TEF (Thermic Effect of Food)",
+          "abbr": "TEF",
+          "definition": "The energy spent digesting, absorbing and processing what you eat. It makes up roughly 10% of total daily expenditure and varies by macronutrient — which is why two meals of identical calories are not identical in net energy.",
+          "formula": "Protein 20-30% · carbohydrate 5-10% · fat 0-3% thermic effect."
+        },
+        {
+          "term": "MET value",
+          "abbr": "MET",
+          "definition": "A coefficient showing how many times more energy an activity costs than resting. One MET is sitting still; brisk walking is around 4 MET and running falls between 8 and 12. Apps that estimate exercise calories rely on this coefficient.",
+          "see_also": "blog/en/calories-burned-exercise.html",
+          "formula": "Calories/minute = MET × 3.5 × kg ÷ 200."
+        },
+        {
+          "term": "Hydration",
+          "abbr": null,
+          "definition": "Having enough fluid balance in the body. It is set not by how much water you drink alone, but by fluid lost through sweat, urine and breathing, the electrolytes you take in, and the water contained in food.",
+          "see_also": "blog/en/how-much-water-should-i-drink.html"
+        },
+        {
+          "term": "Dehydration",
+          "abbr": null,
+          "definition": "Losing more fluid than you take in. A loss of just 2% of body weight measurably reduces concentration, mood and physical performance. Thirst usually appears only after the loss has already begun.",
+          "see_also": "blog/en/signs-of-dehydration.html"
+        },
+        {
+          "term": "Electrolytes",
+          "abbr": null,
+          "definition": "Minerals that carry an electrical charge when dissolved in water — mainly sodium, potassium, magnesium and calcium. They regulate how cells hold water, how nerves transmit signals and how muscles contract. When lost through sweat, drinking water alone does not fully restore the balance.",
+          "see_also": "blog/en/hydration-and-exercise.html"
+        },
+        {
+          "term": "Diuretic effect",
+          "abbr": null,
+          "definition": "A substance's tendency to increase urine production, seen with caffeine and alcohol. In coffee and tea the effect does not cancel out the fluid consumed: at everyday intake both still contribute net hydration, though less than plain water does.",
+          "see_also": "blog/en/coffee-tea-hydration.html"
+        },
+        {
+          "term": "Hydration score",
+          "abbr": null,
+          "definition": "A score that measures a drink's real hydration contribution rather than its volume. It rests on the idea that water content, caffeine, sugar and electrolytes make each beverage contribute differently — a glass of water and a glass of energy drink do not count the same.",
+          "see_also": "blog/en/hydration-score-explained.html"
+        },
+        {
+          "term": "Glycemic index",
+          "abbr": "GI",
+          "definition": "A 0-100 scale showing how quickly a carbohydrate-containing food raises blood sugar. High-index foods spike and drop fast, while low-index foods sustain fullness longer. Portion size matters at least as much as the index itself.",
+          "formula": "Low ≤55 · medium 56-69 · high ≥70."
+        },
+        {
+          "term": "Baseline water requirement",
+          "abbr": null,
+          "definition": "The fluid your body needs each day for basic function, before exercise, temperature and diet are taken into account. It is the starting value for a personal daily target, with activity and heat added on top of it.",
+          "formula": "A common starting approach: body weight (kg) × 30-35 ml.",
+          "see_also": "blog/en/how-much-water-should-i-drink.html"
+        }
+      ]
+    }
+  }
+}

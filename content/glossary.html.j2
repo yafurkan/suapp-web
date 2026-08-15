@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- ÜRETİLMİŞ DOSYA — elle düzenlemeyin.
-         Kaynak: content/compare-hub.json + content/compare-hub.html.j2
-         Yeniden üret: python3 scripts/build-compare-hub.py --apply -->
+         Kaynak: content/glossary.json + content/glossary.html.j2
+         Yeniden üret: python3 scripts/build-glossary.py --apply -->
 
     <title>{{ meta.title }}</title>
     <meta name="description" content="{{ meta.description }}">
@@ -60,13 +60,10 @@
         <a href="{{ ui.home_href }}" class="nav__logo">💧 Suu</a>
         <ul class="nav__links">
             <li><a href="{{ ui.blog_href }}">{{ ui.blog }}</a></li>
-{%- if ui.get('glossary_href') %}
-            <li><a href="{{ ui.glossary_href }}">{{ ui.glossary_label }}</a></li>
-{%- endif %}
-            <li><a href="{{ ui.home_href }}#fiyat">{{ ui.pricing }}</a></li>
+            <li><a href="{{ ui.hub_href }}">{{ ui.hub_label }}</a></li>
         </ul>
         <div class="nav__actions">
-            <a href="/app?src=hub-nav" class="btn btn--primary" data-cta="nav"
+            <a href="/app?src=glossary-nav" class="btn btn--primary" data-cta="nav"
                style="min-height:40px;padding:var(--sp-2) var(--sp-5);font-size:var(--fs-sm)">{{ ui.cta }}</a>
         </div>
     </div>
@@ -78,58 +75,63 @@
     <div class="container container--narrow">
         <span class="badge badge--new">{{ badge }}</span>
         <h1 style="margin-block-start:var(--sp-4)">{{ h1 }}</h1>
-        <p class="small text-subtle">{{ ui.updated_label }} {{ published_display }} · <a href="/yazarlar/furkan-mert.html" rel="author">{{ facts.entities.founder.name }}</a> · {{ total }} {{ ui.comparisons_word }}</p>
+        <p class="small text-subtle">{{ ui.updated_label }} {{ updated_display }} · <a href="/yazarlar/furkan-mert.html" rel="author">{{ facts.entities.founder.name }}</a> · {{ terms | length }} {{ ui.terms_word }}</p>
     </div>
 </header>
 
-<div class="container container--narrow stack--lg" style="padding-block-end:var(--sp-16)">
+<div class="container container--narrow stack--lg">
 
     <!-- CEVAP-ÖNCE: alıntılanan blok burasıdır -->
     <div class="answer-box">
         <p><strong>{{ ui.short_answer }}</strong> {{ answer }}</p>
     </div>
 
-    <div class="disclosure">{{ disclosure }}</div>
-
 {%- for p in intro %}
     <p>{{ p | safe }}</p>
 {%- endfor %}
 
+    <!-- Terim dizini: uzun sayfada atlama, hem kullanıcı hem tarayıcı için -->
+    <nav class="term-index" aria-label="{{ ui.index_label }}">
+{%- for t in terms %}
+        <a href="#{{ t.anchor }}">{{ t.term }}</a>
+{%- endfor %}
+    </nav>
+
 </div>
 
-{%- for group in groups %}
-<section class="section{% if loop.index is even %} section--subtle{% endif %}" id="{{ group.anchor }}">
-    <div class="container">
-        <div class="section-head">
-            <h2>{{ group.title }}</h2>
-            <p>{{ group.blurb }}</p>
+<div class="container container--narrow" style="padding-block-end:var(--sp-16)">
+    <dl class="glossary">
+{%- for t in terms %}
+        <div class="glossary__entry" id="{{ t.anchor }}">
+            <dt>{{ t.term }}</dt>
+            <dd>
+                <p>{{ t.definition }}</p>
+{%- if t.formula %}
+                <p class="glossary__formula"><strong>{{ formula_label }}</strong> {{ t.formula }}</p>
+{%- endif %}
+{%- if t.see_also %}
+                <p class="small"><a href="/{{ t.see_also }}">{{ see_also_label }} {{ t.see_also_title }}</a></p>
+{%- endif %}
+            </dd>
         </div>
-        <div class="cards">
-{%- for item in group.entries %}
-            <article class="card hub-card hub-card--{{ group.accent }}">
-                <h3><a href="{{ item.href }}">{{ item.title }}</a></h3>
-                <p>{{ item.description }}</p>
-            </article>
 {%- endfor %}
-        </div>
-    </div>
-</section>
-{%- endfor %}
+    </dl>
+</div>
 
 <section class="cta-band" data-cta="kapanis">
     <div class="container">
         <h2>{{ ui.cta_head }}</h2>
         <p class="lead" style="max-width:34rem;margin-inline:auto">{{ ui.cta_sub }}</p>
         <div style="margin-block-start:var(--sp-8);display:flex;gap:var(--sp-3);justify-content:center;flex-wrap:wrap">
-            <a href="/app?src=hub-kapanis" class="btn btn--secondary" data-cta="kapanis">App Store</a>
-            <a href="/app?src=hub-kapanis" class="btn btn--primary" data-cta="kapanis">Google Play</a>
+            <a href="/app?src=glossary-kapanis" class="btn btn--secondary" data-cta="kapanis">App Store</a>
+            <a href="/app?src=glossary-kapanis" class="btn btn--primary" data-cta="kapanis">Google Play</a>
         </div>
     </div>
 </section>
 
 <div class="container container--narrow" style="padding-block:var(--sp-8)">
     <p class="small text-subtle">{{ facts.medical_disclaimer[lang] if lang in facts.medical_disclaimer else facts.medical_disclaimer['en'] }}</p>
-    <p><a href="{{ ui.blog_href }}">← {{ ui.back_to_blog }}</a></p>
+    <p><a href="{{ ui.blog_href }}">← {{ ui.back_to_blog }}</a> &nbsp;·&nbsp; <a href="{{ ui.hub_href }}">{{ ui.hub_label }} →</a></p>
 </div>
 
 </main>
