@@ -801,6 +801,10 @@
           {
             "href": "faq-en.html",
             "label": "FAQ"
+          },
+          {
+            "label": "Suu for Claude",
+            "href": "/suu-for-claude.html"
           }
         ]
       },
@@ -829,7 +833,8 @@
           }
         ]
       }
-    ]
+    ],
+    "langs_label": "Choose language"
   },
   "schema": {
     "features_ios": [

@@ -207,6 +207,8 @@ def compact(lang: str, facts: dict, home: dict, registry: dict) -> str:
             out.append(f"- {label}: {url}")
     out.append(f"- App Store: {facts['links']['app_store']}")
     out.append(f"- Google Play: {facts['links']['google_play']}")
+    out.append(f"- Team & authorship: {BASE}/yazarlar/furkan-mert.html")
+    out.append(f"- Claude connector guide: {BASE}/suu-for-claude.html")
     out.append(f"- Full reference: {BASE}/{full_name(lang)}")
     out.append("")
 

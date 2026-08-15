@@ -15,7 +15,6 @@ sayfa kendi kendine yeter, aynı zamanda tüm kopyalar tek kimlikte birleşir.
 Eşlenen entity'ler:
     Organization "Suu"                → https://suuapp.com/#organization
     Person "Furkan Mert Fındıklı"     → https://suuapp.com/#furkan
-    Person "Nisanur Büyükbaş"         → https://suuapp.com/#nisanur
     MobileApplication/SoftwareApplication "Suu" → https://suuapp.com/#suuapp-ios
 
 Kullanım:
@@ -41,7 +40,6 @@ RE_LD = re.compile(r'(<script type="application/ld\+json">)(.*?)(</script>)', re
 ENTITY_IDS: list[tuple[set[str], str, str]] = [
     ({"Organization", "NewsMediaOrganization"}, "Suu", f"{BASE}/#organization"),
     ({"Person"}, "Furkan Mert Fındıklı", f"{BASE}/#furkan"),
-    ({"Person"}, "Nisanur Büyükbaş", f"{BASE}/#nisanur"),
     ({"MobileApplication", "SoftwareApplication", "HealthAndFitnessApplication"},
      "Suu", f"{BASE}/#suuapp-ios"),
 ]

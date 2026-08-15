@@ -801,6 +801,10 @@
           {
             "href": "faq.html",
             "label": "SSS"
+          },
+          {
+            "label": "Claude için Suu",
+            "href": "/suu-for-claude.html"
           }
         ]
       },
@@ -829,7 +833,8 @@
           }
         ]
       }
-    ]
+    ],
+    "langs_label": "Dil seçimi"
   },
   "schema": {
     "features_ios": [
