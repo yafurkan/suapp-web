@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ÜRETİLMİŞ DOSYA — elle düzenlemeyin.
+         Kaynak: content/glossary.json + content/glossary.html.j2
+         Yeniden üret: python3 scripts/build-glossary.py --apply -->
+
+    <title>Beslenme ve Hidrasyon Sözlüğü: TDEE, BMR, Makro, MET Nedir? | Suu</title>
+    <meta name="description" content="Kalori açığı, TDEE, BMR, makro besin, MET değeri, elektrolit ve hidrasyon terimlerinin kısa ve doğru tanımları. Her terim için hesaplama mantığı ve ayrıntılı yazı bağlantısı.">
+    <meta name="keywords" content="TDEE nedir, BMR nedir, kalori açığı nedir, makro besin nedir, MET değeri nedir, elektrolit nedir, bazal metabolizma hızı, termik etki">
+    <meta name="apple-itunes-app" content="app-id=6757619920">
+
+    <link rel="canonical" href="https://suuapp.com/sozluk.html">
+    <!-- Hreflang cluster (auto-injected) -->
+    <link rel="alternate" hreflang="tr" href="https://suuapp.com/sozluk.html">
+    <link rel="alternate" hreflang="en" href="https://suuapp.com/glossary.html">
+    <link rel="alternate" hreflang="x-default" href="https://suuapp.com/sozluk.html">
+
+
+    <meta property="og:title" content="Beslenme, Hidrasyon ve Egzersiz Sözlüğü">
+    <meta property="og:description" content="TDEE, BMR, kalori açığı, makro, MET ve elektrolit terimlerinin kısa ve doğru tanımları.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://suuapp.com/sozluk.html">
+    <meta property="og:image" content="https://suuapp.com/assets/og-image.png">
+    <meta property="og:site_name" content="Suu">
+    <meta property="og:locale" content="tr_TR">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SuuTakip">
+    <meta name="twitter:title" content="Beslenme, Hidrasyon ve Egzersiz Sözlüğü">
+    <meta name="twitter:description" content="TDEE, BMR, kalori açığı, makro, MET ve elektrolit terimlerinin kısa ve doğru tanımları.">
+    <meta name="twitter:image" content="https://suuapp.com/assets/og-image.png">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/donation-widget.css">
+    <link rel="stylesheet" href="/assets/css/suu.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://suuapp.com/#organization",
+      "name": "Suu",
+      "url": "https://suuapp.com"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://suuapp.com/#furkan",
+      "name": "Furkan Mert Fındıklı",
+      "url": "https://suuapp.com/yazarlar/furkan-mert.html",
+      "jobTitle": "Kurucu \u0026 Geliştirici"
+    },
+    {
+      "@type": "DefinedTermSet",
+      "@id": "https://suuapp.com/sozluk.html#termset",
+      "name": "Beslenme, Hidrasyon ve Egzersiz Sözlüğü",
+      "description": "Kalori açığı, TDEE, BMR, makro besin, MET değeri, elektrolit ve hidrasyon terimlerinin kısa ve doğru tanımları. Her terim için hesaplama mantığı ve ayrıntılı yazı bağlantısı.",
+      "inLanguage": "tr",
+      "url": "https://suuapp.com/sozluk.html",
+      "hasDefinedTerm": [
+        {
+          "@id": "https://suuapp.com/sozluk.html#bmr"
+        },
+        {
+          "@id": "https://suuapp.com/sozluk.html#tdee"
+        },
+        {
+          "@id": "https://suuapp.com/sozluk.html#kalori-acigi"
+        },
+        {
+          "@id": "https://suuapp.com/sozluk.html#makro-besinler"
+        },
+        {
+          "@id": "https://suuapp.com/sozluk.html#protein"
+        },
+        {
+          "@id": "https://suuapp.com/sozluk.html#tef"
+        },
+        {
+          "@id": "https://suuapp.com/sozluk.html#met-degeri"
+        },
+        {
+          "@id": "https://suuapp.com/sozluk.html#hidrasyon"
+        },
+        {
+          "@id": "https://suuapp.com/sozluk.html#dehidrasyon"
+        },
+        {
+          "@id": "https://suuapp.com/sozluk.html#elektrolit"
+        },
+        {
+          "@id": "https://suuapp.com/sozluk.html#diuretik-etki"
+        },
+        {
+          "@id": "https://suuapp.com/sozluk.html#hidrasyon-skoru"
+        },
+        {
+          "@id": "https://suuapp.com/sozluk.html#glisemik-indeks"
+        },
+        {
+          "@id": "https://suuapp.com/sozluk.html#bazal-su-ihtiyaci"
+        }
+      ]
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://suuapp.com/sozluk.html#bmr",
+      "name": "BMR (Bazal Metabolik Hız)",
+      "description": "Vücudun tamamen dinlenirken — nefes alma, kan dolaşımı, hücre yenilenmesi gibi temel işlevler için — bir günde yaktığı enerji miktarı. Yetişkinlerde günlük toplam enerji harcamasının yaklaşık %60-70'ini oluşturur. Hiç hareket etmeseniz bile harcadığınız kaloridir.",
+      "inDefinedTermSet": {
+        "@id": "https://suuapp.com/sozluk.html#termset"
+      },
+      "url": "https://suuapp.com/sozluk.html#bmr",
+      "alternateName": "BMR"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://suuapp.com/sozluk.html#tdee",
+      "name": "TDEE (Toplam Günlük Enerji Harcaması)",
+      "description": "Bir günde yaktığınız toplam kalori: bazal metabolizma, hareket, egzersiz ve sindirim için harcanan enerjinin toplamı. Kilo hedefinin başlangıç noktasıdır — kilo vermek için bu sayının altında, almak için üstünde kalori alınır.",
+      "inDefinedTermSet": {
+        "@id": "https://suuapp.com/sozluk.html#termset"
+      },
+      "url": "https://suuapp.com/sozluk.html#tdee",
+      "alternateName": "TDEE"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://suuapp.com/sozluk.html#kalori-acigi",
+      "name": "Kalori açığı",
+      "description": "Harcadığınız kaloriden daha az kalori almanız durumu. Vücut aradaki farkı depolarından karşıladığı için kilo kaybı bu şekilde gerçekleşir. Sürdürülebilir açık genellikle günlük 300-500 kaloridir; daha büyük açıklar kas kaybı ve metabolik yavaşlama riskini artırır.",
+      "inDefinedTermSet": {
+        "@id": "https://suuapp.com/sozluk.html#termset"
+      },
+      "url": "https://suuapp.com/sozluk.html#kalori-acigi"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://suuapp.com/sozluk.html#makro-besinler",
+      "name": "Makro besinler",
+      "description": "Vücudun enerji için büyük miktarda ihtiyaç duyduğu üç besin grubu: protein, karbonhidrat ve yağ. Kalori bunların toplamından gelir; hangi oranda alındıkları ise tokluk, kas korunumu ve enerji dengesini belirler.",
+      "inDefinedTermSet": {
+        "@id": "https://suuapp.com/sozluk.html#termset"
+      },
+      "url": "https://suuapp.com/sozluk.html#makro-besinler"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://suuapp.com/sozluk.html#protein",
+      "name": "Protein",
+      "description": "Kas, enzim ve hormon yapımında kullanılan makro besin. Üç makro içinde tokluk hissi en yüksek olanıdır ve kalori açığında kas kaybını sınırlar. Sindirimi sırasında diğer makrolardan daha fazla su gerektirir.",
+      "inDefinedTermSet": {
+        "@id": "https://suuapp.com/sozluk.html#termset"
+      },
+      "url": "https://suuapp.com/sozluk.html#protein"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://suuapp.com/sozluk.html#tef",
+      "name": "TEF (Besinlerin termik etkisi)",
+      "description": "Yediğiniz besini sindirmek, emmek ve işlemek için harcanan enerji. Günlük toplam harcamanın yaklaşık %10'unu oluşturur ve makrolara göre değişir — bu yüzden aynı kalorideki iki öğün net enerji katkısı bakımından birebir aynı değildir.",
+      "inDefinedTermSet": {
+        "@id": "https://suuapp.com/sozluk.html#termset"
+      },
+      "url": "https://suuapp.com/sozluk.html#tef",
+      "alternateName": "TEF"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://suuapp.com/sozluk.html#met-degeri",
+      "name": "MET değeri",
+      "description": "Bir aktivitenin dinlenme haline göre kaç kat enerji harcattığını gösteren katsayı. 1 MET oturur haldeki harcamadır; tempolu yürüyüş yaklaşık 4 MET, koşu 8-12 MET arasıdır. Egzersiz kalorisi hesaplayan uygulamalar bu katsayıyı kullanır.",
+      "inDefinedTermSet": {
+        "@id": "https://suuapp.com/sozluk.html#termset"
+      },
+      "url": "https://suuapp.com/sozluk.html#met-degeri",
+      "alternateName": "MET"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://suuapp.com/sozluk.html#hidrasyon",
+      "name": "Hidrasyon",
+      "description": "Vücuttaki sıvı dengesinin yeterli düzeyde olması. Yalnızca içilen su miktarıyla değil; ter, idrar ve solunumla kaybedilen sıvı, alınan elektrolitler ve besinlerden gelen suyla birlikte belirlenir.",
+      "inDefinedTermSet": {
+        "@id": "https://suuapp.com/sozluk.html#termset"
+      },
+      "url": "https://suuapp.com/sozluk.html#hidrasyon"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://suuapp.com/sozluk.html#dehidrasyon",
+      "name": "Dehidrasyon",
+      "description": "Vücudun aldığından fazla sıvı kaybetmesi. Vücut ağırlığının %2'si kadar sıvı kaybı bile konsantrasyon, ruh hali ve fiziksel performansı ölçülebilir biçimde düşürür. Susuzluk hissi genellikle kayıp başladıktan sonra ortaya çıkar.",
+      "inDefinedTermSet": {
+        "@id": "https://suuapp.com/sozluk.html#termset"
+      },
+      "url": "https://suuapp.com/sozluk.html#dehidrasyon"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://suuapp.com/sozluk.html#elektrolit",
+      "name": "Elektrolit",
+      "description": "Suda çözündüğünde elektrik yükü taşıyan mineraller — başlıcaları sodyum, potasyum, magnezyum ve kalsiyum. Hücrelerin su tutmasını, sinir iletimini ve kas kasılmasını düzenler. Terle kaybedildiklerinde yalnızca su içmek dengeyi tam olarak geri getirmez.",
+      "inDefinedTermSet": {
+        "@id": "https://suuapp.com/sozluk.html#termset"
+      },
+      "url": "https://suuapp.com/sozluk.html#elektrolit"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://suuapp.com/sozluk.html#diuretik-etki",
+      "name": "Diüretik etki",
+      "description": "Bir maddenin idrar üretimini artırma özelliği. Kafein ve alkolde görülür. Kahve ve çayda bu etki alınan sıvı miktarını tamamen götürmez; günlük tüketimde her ikisi de net olarak hidrasyona katkı sağlar, ancak katkıları saf suyunkinden düşüktür.",
+      "inDefinedTermSet": {
+        "@id": "https://suuapp.com/sozluk.html#termset"
+      },
+      "url": "https://suuapp.com/sozluk.html#diuretik-etki"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://suuapp.com/sozluk.html#hidrasyon-skoru",
+      "name": "Hidrasyon skoru",
+      "description": "İçilen sıvının hacmini değil, gerçek hidrasyon katkısını ölçen puan. Her içeceğin su içeriği, kafein, şeker ve elektrolit oranına göre farklı katkı sağladığı fikrine dayanır — bir bardak su ile bir bardak enerji içeceği aynı sayılmaz.",
+      "inDefinedTermSet": {
+        "@id": "https://suuapp.com/sozluk.html#termset"
+      },
+      "url": "https://suuapp.com/sozluk.html#hidrasyon-skoru"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://suuapp.com/sozluk.html#glisemik-indeks",
+      "name": "Glisemik indeks",
+      "description": "Karbonhidrat içeren bir besinin kan şekerini ne hızda yükselttiğini 0-100 arasında gösteren ölçek. Yüksek indeksli besinler hızlı yükselip hızlı düşerken, düşük indeksliler daha uzun süreli tokluk sağlar. Porsiyon miktarı da en az indeks kadar belirleyicidir.",
+      "inDefinedTermSet": {
+        "@id": "https://suuapp.com/sozluk.html#termset"
+      },
+      "url": "https://suuapp.com/sozluk.html#glisemik-indeks",
+      "alternateName": "GI"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://suuapp.com/sozluk.html#bazal-su-ihtiyaci",
+      "name": "Bazal su ihtiyacı",
+      "description": "Egzersiz, sıcaklık ve beslenme gibi değişkenler hesaba katılmadan, vücudun temel işlevleri için günlük ihtiyaç duyduğu sıvı miktarı. Kişisel günlük hedefin başlangıç değeridir; aktivite ve hava sıcaklığı bu değerin üzerine eklenir.",
+      "inDefinedTermSet": {
+        "@id": "https://suuapp.com/sozluk.html#termset"
+      },
+      "url": "https://suuapp.com/sozluk.html#bazal-su-ihtiyaci"
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://suuapp.com/sozluk.html#page",
+      "url": "https://suuapp.com/sozluk.html",
+      "name": "Beslenme ve Hidrasyon Sözlüğü: TDEE, BMR, Makro, MET Nedir? | Suu",
+      "description": "Kalori açığı, TDEE, BMR, makro besin, MET değeri, elektrolit ve hidrasyon terimlerinin kısa ve doğru tanımları. Her terim için hesaplama mantığı ve ayrıntılı yazı bağlantısı.",
+      "inLanguage": "tr",
+      "isPartOf": {
+        "@id": "https://suuapp.com/#website"
+      },
+      "author": {
+        "@id": "https://suuapp.com/#furkan"
+      },
+      "publisher": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "dateModified": "2026-08-15",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".answer-box"
+        ]
+      },
+      "mainEntity": {
+        "@id": "https://suuapp.com/sozluk.html#termset"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://suuapp.com/sozluk.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Suu",
+          "item": "https://suuapp.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Beslenme, Hidrasyon ve Egzersiz Sözlüğü",
+          "item": "https://suuapp.com/sozluk.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+
+    <script src="/assets/js/analytics.js" defer></script>
+    <script src="/lang-switcher.js?v=3" defer></script>
+    <script src="/donation-widget.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">İçeriğe geç</a>
+
+<nav class="nav">
+    <div class="container nav__inner">
+        <a href="/" class="nav__logo">💧 Suu</a>
+        <ul class="nav__links">
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/karsilastirmalar.html">Karşılaştırmalar</a></li>
+        </ul>
+        <div class="nav__actions">
+            <a href="/app?src=glossary-nav" class="btn btn--primary" data-cta="nav"
+               style="min-height:40px;padding:var(--sp-2) var(--sp-5);font-size:var(--fs-sm)">Ücretsiz İndir</a>
+        </div>
+    </div>
+</nav>
+
+<main id="main">
+
+<header class="section" style="padding-block-end:var(--sp-8)">
+    <div class="container container--narrow">
+        <span class="badge badge--new">📖 Sözlük</span>
+        <h1 style="margin-block-start:var(--sp-4)">Beslenme, Hidrasyon ve Egzersiz Sözlüğü</h1>
+        <p class="small text-subtle">Güncelleme: 15 Ağustos 2026 · <a href="/yazarlar/furkan-mert.html" rel="author">Furkan Mert Fındıklı</a> · 14 terim</p>
+    </div>
+</header>
+
+<div class="container container--narrow stack--lg">
+
+    <!-- CEVAP-ÖNCE: alıntılanan blok burasıdır -->
+    <div class="answer-box">
+        <p><strong>Kısa cevap:</strong> Kalori ve su takibinde en sık karşılaşılan on dört terim burada kısa ve doğru biçimde tanımlanıyor: BMR dinlenirken yakılan enerji, TDEE günlük toplam harcama, kalori açığı ise alınanın harcanandan az olması. Her tanımın altında hesaplama mantığı ve ayrıntılı yazı bağlantısı var.</p>
+    </div>
+    <p>Beslenme uygulamaları bu terimleri açıklamadan kullanır: TDEE'ni girer, makro hedefi belirler, MET katsayısıyla kalori hesaplar. Aşağıda her birinin ne anlama geldiği, nasıl hesaplandığı ve pratikte neyi değiştirdiği yazıyor.</p>
+    <p>Tanımlar kısa tutuldu. Bir terimi derinlemesine okumak isterseniz tanımın altındaki bağlantı ilgili yazıya götürür.</p>
+
+    <!-- Terim dizini: uzun sayfada atlama, hem kullanıcı hem tarayıcı için -->
+    <nav class="term-index" aria-label="Terim dizini">
+        <a href="#bmr">BMR (Bazal Metabolik Hız)</a>
+        <a href="#tdee">TDEE (Toplam Günlük Enerji Harcaması)</a>
+        <a href="#kalori-acigi">Kalori açığı</a>
+        <a href="#makro-besinler">Makro besinler</a>
+        <a href="#protein">Protein</a>
+        <a href="#tef">TEF (Besinlerin termik etkisi)</a>
+        <a href="#met-degeri">MET değeri</a>
+        <a href="#hidrasyon">Hidrasyon</a>
+        <a href="#dehidrasyon">Dehidrasyon</a>
+        <a href="#elektrolit">Elektrolit</a>
+        <a href="#diuretik-etki">Diüretik etki</a>
+        <a href="#hidrasyon-skoru">Hidrasyon skoru</a>
+        <a href="#glisemik-indeks">Glisemik indeks</a>
+        <a href="#bazal-su-ihtiyaci">Bazal su ihtiyacı</a>
+    </nav>
+
+</div>
+
+<div class="container container--narrow" style="padding-block-end:var(--sp-16)">
+    <dl class="glossary">
+        <div class="glossary__entry" id="bmr">
+            <dt>BMR (Bazal Metabolik Hız)</dt>
+            <dd>
+                <p>Vücudun tamamen dinlenirken — nefes alma, kan dolaşımı, hücre yenilenmesi gibi temel işlevler için — bir günde yaktığı enerji miktarı. Yetişkinlerde günlük toplam enerji harcamasının yaklaşık %60-70&#39;ini oluşturur. Hiç hareket etmeseniz bile harcadığınız kaloridir.</p>
+                <p class="glossary__formula"><strong>Hesaplama:</strong> Mifflin-St Jeor denklemi: erkeklerde (10 × kg) + (6,25 × cm) − (5 × yaş) + 5; kadınlarda aynı denklemin sonuna +5 yerine −161 gelir.</p>
+            </dd>
+        </div>
+        <div class="glossary__entry" id="tdee">
+            <dt>TDEE (Toplam Günlük Enerji Harcaması)</dt>
+            <dd>
+                <p>Bir günde yaktığınız toplam kalori: bazal metabolizma, hareket, egzersiz ve sindirim için harcanan enerjinin toplamı. Kilo hedefinin başlangıç noktasıdır — kilo vermek için bu sayının altında, almak için üstünde kalori alınır.</p>
+                <p class="glossary__formula"><strong>Hesaplama:</strong> TDEE = BMR × aktivite katsayısı (hareketsiz 1,2 · hafif aktif 1,375 · orta 1,55 · çok aktif 1,725).</p>
+            </dd>
+        </div>
+        <div class="glossary__entry" id="kalori-acigi">
+            <dt>Kalori açığı</dt>
+            <dd>
+                <p>Harcadığınız kaloriden daha az kalori almanız durumu. Vücut aradaki farkı depolarından karşıladığı için kilo kaybı bu şekilde gerçekleşir. Sürdürülebilir açık genellikle günlük 300-500 kaloridir; daha büyük açıklar kas kaybı ve metabolik yavaşlama riskini artırır.</p>
+                <p class="glossary__formula"><strong>Hesaplama:</strong> Kalori açığı = TDEE − alınan kalori. Yaklaşık 7.700 kalorilik toplam açık 1 kg yağ kaybına karşılık gelir.</p>
+                <p class="small"><a href="/blog/kalori-acigi.html">Ayrıntılı yazı: Kalori Açığı Nedir ve Nasıl Oluşturulur? Kilo Verme Rehberi</a></p>
+            </dd>
+        </div>
+        <div class="glossary__entry" id="makro-besinler">
+            <dt>Makro besinler</dt>
+            <dd>
+                <p>Vücudun enerji için büyük miktarda ihtiyaç duyduğu üç besin grubu: protein, karbonhidrat ve yağ. Kalori bunların toplamından gelir; hangi oranda alındıkları ise tokluk, kas korunumu ve enerji dengesini belirler.</p>
+                <p class="glossary__formula"><strong>Hesaplama:</strong> 1 g protein = 4 kcal · 1 g karbonhidrat = 4 kcal · 1 g yağ = 9 kcal.</p>
+                <p class="small"><a href="/blog/makro-hesaplama.html">Ayrıntılı yazı: Makro Hesaplama: Protein, Karbonhidrat ve Yağ Nasıl Hesaplanır?</a></p>
+            </dd>
+        </div>
+        <div class="glossary__entry" id="protein">
+            <dt>Protein</dt>
+            <dd>
+                <p>Kas, enzim ve hormon yapımında kullanılan makro besin. Üç makro içinde tokluk hissi en yüksek olanıdır ve kalori açığında kas kaybını sınırlar. Sindirimi sırasında diğer makrolardan daha fazla su gerektirir.</p>
+                <p class="glossary__formula"><strong>Hesaplama:</strong> Hareketsiz yetişkinde günde ~0,8 g/kg; düzenli antrenman yapanda 1,6-2,2 g/kg aralığı yaygın önerilir.</p>
+            </dd>
+        </div>
+        <div class="glossary__entry" id="tef">
+            <dt>TEF (Besinlerin termik etkisi)</dt>
+            <dd>
+                <p>Yediğiniz besini sindirmek, emmek ve işlemek için harcanan enerji. Günlük toplam harcamanın yaklaşık %10&#39;unu oluşturur ve makrolara göre değişir — bu yüzden aynı kalorideki iki öğün net enerji katkısı bakımından birebir aynı değildir.</p>
+                <p class="glossary__formula"><strong>Hesaplama:</strong> Protein %20-30 · karbonhidrat %5-10 · yağ %0-3 oranında termik etki yaratır.</p>
+            </dd>
+        </div>
+        <div class="glossary__entry" id="met-degeri">
+            <dt>MET değeri</dt>
+            <dd>
+                <p>Bir aktivitenin dinlenme haline göre kaç kat enerji harcattığını gösteren katsayı. 1 MET oturur haldeki harcamadır; tempolu yürüyüş yaklaşık 4 MET, koşu 8-12 MET arasıdır. Egzersiz kalorisi hesaplayan uygulamalar bu katsayıyı kullanır.</p>
+                <p class="glossary__formula"><strong>Hesaplama:</strong> Kalori/dakika = MET × 3,5 × kg ÷ 200.</p>
+                <p class="small"><a href="/blog/egzersizde-kalori-yakimi.html">Ayrıntılı yazı: Hangi Egzersiz Kaç Kalori Yakar? Aktivite Bazlı Rehber</a></p>
+            </dd>
+        </div>
+        <div class="glossary__entry" id="hidrasyon">
+            <dt>Hidrasyon</dt>
+            <dd>
+                <p>Vücuttaki sıvı dengesinin yeterli düzeyde olması. Yalnızca içilen su miktarıyla değil; ter, idrar ve solunumla kaybedilen sıvı, alınan elektrolitler ve besinlerden gelen suyla birlikte belirlenir.</p>
+                <p class="small"><a href="/blog/gunluk-ne-kadar-su-icmeli.html">Ayrıntılı yazı: &#34;Günde 2 Litre Su İç&#34; Diyorlar Ama Gerçek Bambaşka</a></p>
+            </dd>
+        </div>
+        <div class="glossary__entry" id="dehidrasyon">
+            <dt>Dehidrasyon</dt>
+            <dd>
+                <p>Vücudun aldığından fazla sıvı kaybetmesi. Vücut ağırlığının %2&#39;si kadar sıvı kaybı bile konsantrasyon, ruh hali ve fiziksel performansı ölçülebilir biçimde düşürür. Susuzluk hissi genellikle kayıp başladıktan sonra ortaya çıkar.</p>
+                <p class="small"><a href="/blog/susuzluk-belirtileri.html">Ayrıntılı yazı: Vücudunuz Susuz Kaldığında Verdiği 8 Gizli Sinyal</a></p>
+            </dd>
+        </div>
+        <div class="glossary__entry" id="elektrolit">
+            <dt>Elektrolit</dt>
+            <dd>
+                <p>Suda çözündüğünde elektrik yükü taşıyan mineraller — başlıcaları sodyum, potasyum, magnezyum ve kalsiyum. Hücrelerin su tutmasını, sinir iletimini ve kas kasılmasını düzenler. Terle kaybedildiklerinde yalnızca su içmek dengeyi tam olarak geri getirmez.</p>
+                <p class="small"><a href="/blog/spor-ve-hidrasyon.html">Ayrıntılı yazı: Sporda En Çok Yapılan Su Hatası — Performansınızı Düşürüyor</a></p>
+            </dd>
+        </div>
+        <div class="glossary__entry" id="diuretik-etki">
+            <dt>Diüretik etki</dt>
+            <dd>
+                <p>Bir maddenin idrar üretimini artırma özelliği. Kafein ve alkolde görülür. Kahve ve çayda bu etki alınan sıvı miktarını tamamen götürmez; günlük tüketimde her ikisi de net olarak hidrasyona katkı sağlar, ancak katkıları saf suyunkinden düşüktür.</p>
+                <p class="small"><a href="/blog/kahve-cay-su-sayar-mi.html">Ayrıntılı yazı: Kahve Su Yerine Geçer mi? Yıllardır Bildiğiniz Yanlışmış</a></p>
+            </dd>
+        </div>
+        <div class="glossary__entry" id="hidrasyon-skoru">
+            <dt>Hidrasyon skoru</dt>
+            <dd>
+                <p>İçilen sıvının hacmini değil, gerçek hidrasyon katkısını ölçen puan. Her içeceğin su içeriği, kafein, şeker ve elektrolit oranına göre farklı katkı sağladığı fikrine dayanır — bir bardak su ile bir bardak enerji içeceği aynı sayılmaz.</p>
+                <p class="small"><a href="/blog/hidrasyon-skoru-nedir.html">Ayrıntılı yazı: Hidrasyon Skoru Nedir? Suu&#39;nun 0-100 Performans Sistemi</a></p>
+            </dd>
+        </div>
+        <div class="glossary__entry" id="glisemik-indeks">
+            <dt>Glisemik indeks</dt>
+            <dd>
+                <p>Karbonhidrat içeren bir besinin kan şekerini ne hızda yükselttiğini 0-100 arasında gösteren ölçek. Yüksek indeksli besinler hızlı yükselip hızlı düşerken, düşük indeksliler daha uzun süreli tokluk sağlar. Porsiyon miktarı da en az indeks kadar belirleyicidir.</p>
+                <p class="glossary__formula"><strong>Hesaplama:</strong> Düşük ≤55 · orta 56-69 · yüksek ≥70.</p>
+            </dd>
+        </div>
+        <div class="glossary__entry" id="bazal-su-ihtiyaci">
+            <dt>Bazal su ihtiyacı</dt>
+            <dd>
+                <p>Egzersiz, sıcaklık ve beslenme gibi değişkenler hesaba katılmadan, vücudun temel işlevleri için günlük ihtiyaç duyduğu sıvı miktarı. Kişisel günlük hedefin başlangıç değeridir; aktivite ve hava sıcaklığı bu değerin üzerine eklenir.</p>
+                <p class="glossary__formula"><strong>Hesaplama:</strong> Yaygın başlangıç yaklaşımı: vücut ağırlığı (kg) × 30-35 ml.</p>
+                <p class="small"><a href="/blog/gunluk-ne-kadar-su-icmeli.html">Ayrıntılı yazı: &#34;Günde 2 Litre Su İç&#34; Diyorlar Ama Gerçek Bambaşka</a></p>
+            </dd>
+        </div>
+    </dl>
+</div>
+
+<section class="cta-band" data-cta="kapanis">
+    <div class="container">
+        <h2>Bu sayıları elle hesaplama</h2>
+        <p class="lead" style="max-width:34rem;margin-inline:auto">Suu; günlük kalori, makro ve su hedefini senin verinden hesaplar. iOS ve Android&#39;de ücretsiz.</p>
+        <div style="margin-block-start:var(--sp-8);display:flex;gap:var(--sp-3);justify-content:center;flex-wrap:wrap">
+            <a href="/app?src=glossary-kapanis" class="btn btn--secondary" data-cta="kapanis">App Store</a>
+            <a href="/app?src=glossary-kapanis" class="btn btn--primary" data-cta="kapanis">Google Play</a>
+        </div>
+    </div>
+</section>
+
+<div class="container container--narrow" style="padding-block:var(--sp-8)">
+    <p class="small text-subtle">Suu tıbbi teşhis veya tedavi amacıyla geliştirilmemiştir. Sağlıkla ilgili kararlar için bir sağlık profesyoneline danışın.</p>
+    <p><a href="/blog.html">← Bloga dön</a> &nbsp;·&nbsp; <a href="/karsilastirmalar.html">Karşılaştırmalar →</a></p>
+</div>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <nav class="footer__langs" aria-label="Dil seçimi">
+            <a href="/" hreflang="tr" lang="tr" aria-current="page">Türkçe</a>
+            <a href="/hosgeldiniz-en.html" hreflang="en" lang="en">English</a>
+            <a href="/hosgeldiniz-ar.html" hreflang="ar" lang="ar">العربية</a>
+            <a href="/hosgeldiniz-ru.html" hreflang="ru" lang="ru">Русский</a>
+            <a href="/hosgeldiniz-de.html" hreflang="de" lang="de">Deutsch</a>
+            <a href="/hosgeldiniz-it.html" hreflang="it" lang="it">Italiano</a>
+            <a href="/hosgeldiniz-hi.html" hreflang="hi" lang="hi">हिन्दी</a>
+        </nav>
+        <div class="footer__bottom">
+            <p class="small mb-0">© 2026 Suu · Furkan Mert Fındıklı</p>
+            <p class="small mb-0"><a href="/">suuapp.com</a></p>
+        </div>
+    </div>
+</footer>
+
+<div class="sticky-cta" data-cta="sticky">
+    <a href="/app?src=sticky" class="btn btn--secondary">App Store</a>
+    <a href="/app?src=sticky" class="btn btn--primary">Google Play</a>
+</div>
+
+</body>
+</html>
