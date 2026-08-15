@@ -49,8 +49,22 @@ TARGETS: dict[str, tuple[str, str, str]] = {
 }
 
 
+# Dilin kendi adıyla — footer'daki statik dil satırı için. Dil seçici JS ile
+# çalışıyor; tarayıcılar ve yapay zekâ getiricileri JS çalıştırmadığından
+# çevirilerin keşfedilebilir olması için gövdede gerçek <a> bağlantısı şart.
+LANG_NAMES: dict[str, str] = {
+    "tr": "Türkçe", "en": "English", "ar": "العربية", "ru": "Русский",
+    "de": "Deutsch", "it": "Italiano", "hi": "हिन्दी",
+}
+
+
 def page_url(lang: str) -> str:
     return f"{BASE}/" if lang == "tr" else f"{BASE}/{TARGETS[lang][0]}"
+
+
+def rel_home(lang: str) -> str:
+    """Footer bağlantıları için köke göre yol."""
+    return "/" if lang == "tr" else f"/{TARGETS[lang][0]}"
 
 
 def build_jsonld(lang: str, data: dict, facts: dict) -> str:
@@ -123,16 +137,6 @@ def build_jsonld(lang: str, data: dict, facts: dict) -> str:
             "knowsAbout": founder["expertise"],
             "sameAs": founder["sameAs"],
         },
-        # Blog yazılarında yazar olarak geçen ikinci kişi — @id'nin çözülebilmesi
-        # için kanonik düğümü burada tanımlı olmalı (inject-entity-ids.py #nisanur
-        # referansı basıyor, karşılığı olmadan entity askıda kalırdı).
-        {
-            "@type": "Person",
-            "@id": f"{BASE}/#nisanur",
-            "name": "Nisanur Büyükbaş",
-            "jobTitle": "Head of Growth & Marketing",
-            "worksFor": {"@id": f"{BASE}/#organization"},
-        },
         {
             "@type": "WebSite",
             "@id": f"{BASE}/#website",
@@ -188,6 +192,11 @@ def hreflang_cluster() -> list[dict]:
     return [{"code": code, "href": page_url(code)} for code in available_langs()]
 
 
+def footer_langs() -> list[dict]:
+    return [{"code": code, "name": LANG_NAMES[code], "href": rel_home(code)}
+            for code in available_langs()]
+
+
 def main() -> int:
     apply = "--apply" in sys.argv
     only = None
@@ -224,6 +233,7 @@ def main() -> int:
             url=page_url(lang),
             og_locale_alternates=[TARGETS[c][1] for c in available_langs() if c != lang],
             hreflang=hreflang_cluster(),
+            footer_langs=footer_langs(),
             facts=facts,
             jsonld=build_jsonld(lang, data, facts),
             **data,

@@ -892,11 +892,22 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-10) 0; }
 .footer li { margin-block-end: var(--sp-2); }
 .footer a { color: var(--text-muted); }
 .footer a:hover { color: var(--text); }
+/* Statik dil satırı — dil seçici JS ile çalışıyor, tarayıcıların ve yapay
+   zekâ getiricilerinin çevirileri bulabilmesi için gerçek bağlantı gerekir. */
+.footer__langs {
+    display: flex; flex-wrap: wrap; gap: var(--sp-2) var(--sp-4);
+    padding-block-start: var(--sp-6);
+    border-block-start: 1px solid var(--border);
+    font-size: var(--fs-sm);
+}
+.footer__langs a { color: var(--text-subtle); }
+.footer__langs a:hover { color: var(--text); }
+.footer__langs a[aria-current="page"] { color: var(--text); font-weight: 600; }
+
 .footer__bottom {
     display: flex; flex-wrap: wrap; gap: var(--sp-4);
     align-items: center; justify-content: space-between;
     padding-block-start: var(--sp-6);
-    border-block-start: 1px solid var(--border);
     color: var(--text-subtle);
 }
 
