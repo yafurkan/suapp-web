@@ -2,13 +2,13 @@
   "_note": "Le pagine core italiane (ozellikler-it.html ecc.) non esistono ancora — i link puntano per ora alle pagine inglesi. Da sostituire nella Fase 4c.",
   "meta": {
     "title": "Suu — acqua, calorie ed esercizio in un'unica app | 4.9★ · 3 giorni gratis",
-    "description": "Suu unisce il monitoraggio dell'acqua, il contacalorie e il tracciamento degli allenamenti con l'IA. Fotografa il pasto e ottieni calorie e macro in pochi secondi; con 91 bevande e circa 50 attività sportive il tuo obiettivo giornaliero di acqua si aggiorna da solo. Gratis su iOS e Android.",
-    "keywords": "app monitoraggio acqua, contacalorie, app conta calorie, calorie dalla foto, tracciamento allenamenti, calcolo macro, diario alimentare, calorie con ia, inserimento vocale calorie, tracker corsa, tracker bici, app idratazione, Suu, migliore app calorie",
+    "description": "Suu unisce il monitoraggio dell'acqua, un contacalorie da foto e il tracciamento GPS degli allenamenti in tempo reale con l'IA. Registra la corsa dal vivo e vedi il percorso sulla mappa; fotografa il pasto per calorie e macro. 91 bevande e circa 50 attività sportive aggiornano da sole il tuo obiettivo idrico. Gratis su iOS e Android.",
+    "keywords": "app monitoraggio acqua, contacalorie, app conta calorie, calorie dalla foto, tracciamento allenamenti, calcolo macro, diario alimentare, calorie con ia, inserimento vocale calorie, tracker corsa, tracker bici, app idratazione, Suu, migliore app calorie, tracker corsa gps, mappa percorso, registrazione allenamento live, alternativa strava, app calorie con gps",
     "og_title": "Suu — acqua, calorie ed esercizio in un'unica app",
-    "og_description": "Fotografa il pasto, ottieni calorie e macro. 91 bevande, circa 50 attività sportive e un obiettivo d'acqua che si aggiorna dopo ogni allenamento. Prova Premium 3 giorni gratis.",
+    "og_description": "Registra la corsa con GPS in tempo reale e vedi il percorso sulla mappa. Fotografa il pasto per calorie e macro. 91 bevande, circa 50 attività sportive.",
     "og_image_alt": "Suu — acqua, calorie ed esercizio",
     "tw_title": "Suu — acqua, calorie ed esercizio in un'unica app",
-    "tw_description": "Analisi calorie dalla foto, idratazione su 91 bevande e circa 50 attività sportive. I tuoi allenamenti aggiornano l'obiettivo d'acqua da soli. 4.9★ · 3 giorni gratis."
+    "tw_description": "Allenamenti con GPS live e mappa del percorso, calorie dalla foto e idratazione su 91 bevande. L'allenamento aggiorna da solo il tuo obiettivo idrico. 4.9★"
   },
   "links": {
     "home": "hosgeldiniz-it.html"
@@ -73,7 +73,7 @@
     "head": "Non tre app separate, ma un sistema unico in cui tutto si tiene",
     "sub": "La maggior parte delle app tiene acqua, calorie ed esercizio in schede separate. In Suu si aggiornano a vicenda.",
     "answer_label": "Risposta breve:",
-    "answer": "Suu è un'app per la salute che unisce monitoraggio dell'acqua, analisi delle calorie dalla foto e tracciamento degli allenamenti in un'unica app. La differenza è che i tre elementi sono collegati: la corsa che registri alza il tuo obiettivo giornaliero di acqua, il contenuto di proteine e sodio del pasto determina l'acqua aggiuntiva per la digestione e il contributo reale del caffè all'idratazione viene calcolato. Gratis su iOS e Android, disponibile in 7 lingue.",
+    "answer": "Suu è un'app per la salute che unisce monitoraggio dell'acqua, analisi delle calorie dalla foto e tracciamento GPS degli allenamenti in tempo reale in un'unica app. La differenza è che i tre elementi sono collegati: la corsa che registri con il GPS e vedi sulla mappa alza il tuo obiettivo giornaliero di acqua, il contenuto di proteine e sodio del pasto determina l'acqua aggiuntiva per la digestione e il contributo reale del caffè all'idratazione viene calcolato. Gratis su iOS e Android, disponibile in 7 lingue.",
     "items": [
       {
         "id": "water",
@@ -95,7 +95,7 @@
         "id": "exercise",
         "icon": "run",
         "title": "Tracciamento esercizio",
-        "body": "<strong>circa 50 attività sportive</strong> — corsa, camminata, bici, nuoto, fitness. Ogni allenamento alza da solo l'obiettivo d'acqua.",
+        "body": "<strong>Registrazione GPS in tempo reale</strong> — corsa, camminata, ciclismo. Il percorso viene disegnato sulla mappa e ogni allenamento alza automaticamente il tuo obiettivo idrico.",
         "link_href": "#egzersiz",
         "link_label": "Metriche dell'allenamento"
       }
@@ -147,13 +147,24 @@
   },
   "exercise": {
     "eyebrow": "Tracciamento esercizio",
-    "head": "Circa 50 attività sportive — e tutte collegate all'obiettivo d'acqua",
-    "sub": "Corsa, camminata, bici, fitness, nuoto, trekking, cardio e altro.",
+    "head": "Tracciamento GPS degli allenamenti in tempo reale — tutto legato al tuo obiettivo idrico",
+    "sub": "Corsa, camminata, ciclismo, fitness, nuoto, escursionismo, cardio e altro — circa 50 attività.",
     "items": [
+      {
+        "emoji": "📍",
+        "title": "Tracciamento GPS in tempo reale",
+        "body": "Avvia, metti in pausa, termina. Distanza, durata e passo si aggiornano dal vivo durante la sessione e il percorso viene disegnato sulla mappa.",
+        "metrics": [
+          "Distanza live",
+          "Passo in tempo reale",
+          "Durata",
+          "Mappa del percorso"
+        ]
+      },
       {
         "icon": "run",
         "title": "Corsa e camminata",
-        "body": "Tutti i dettagli in una schermata dopo la sessione.",
+        "body": "A fine allenamento il percorso è sulla mappa e ogni dettaglio su una sola schermata.",
         "metrics": [
           "Distanza",
           "Durata",
@@ -845,6 +856,8 @@
       "Calcolo dell'acqua per la digestione in base all'alimentazione",
       "Indice Suu — punteggio di idratazione 0-100",
       "Cervello adattivo dell'idratazione — motore adattivo dell'obiettivo",
+      "Registrazione GPS degli allenamenti in tempo reale — avvia, pausa, termina",
+      "Percorso disegnato sulla mappa",
       "Circa 50 attività sportive",
       "Distanza, durata, passo, velocità media e calorie per corsa e camminata",
       "Velocità, velocità media, distanza, dislivello e durata per la bici",
@@ -867,6 +880,8 @@
       "Inserimento pasti vocale e testuale",
       "Calcolo automatico delle macro",
       "91 bevande",
+      "Registrazione GPS degli allenamenti in tempo reale",
+      "Percorso disegnato sulla mappa",
       "Circa 50 attività sportive",
       "Assistente chat Suu AI",
       "Sincronizzazione bidirezionale con Google Health Connect",

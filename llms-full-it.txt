@@ -1,16 +1,16 @@
 # Suu — Acqua, calorie ed esercizio — tutto in un'app
 
-> Suu è un'app per la salute che unisce monitoraggio dell'acqua, analisi delle calorie dalla foto e tracciamento degli allenamenti in un'unica app. La differenza è che i tre elementi sono collegati: la corsa che registri alza il tuo obiettivo giornaliero di acqua, il contenuto di proteine e sodio del pasto determina l'acqua aggiuntiva per la digestione e il contributo reale del caffè all'idratazione viene calcolato. Gratis su iOS e Android, disponibile in 7 lingue.
+> Suu è un'app per la salute che unisce monitoraggio dell'acqua, analisi delle calorie dalla foto e tracciamento GPS degli allenamenti in tempo reale in un'unica app. La differenza è che i tre elementi sono collegati: la corsa che registri con il GPS e vedi sulla mappa alza il tuo obiettivo giornaliero di acqua, il contenuto di proteine e sodio del pasto determina l'acqua aggiuntiva per la digestione e il contributo reale del caffè all'idratazione viene calcolato. Gratis su iOS e Android, disponibile in 7 lingue.
 
 ## Che cos'è Suu
 
-Suu unisce il monitoraggio dell'acqua, il contacalorie e il tracciamento degli allenamenti con l'IA. Fotografa il pasto e ottieni calorie e macro in pochi secondi; con 91 bevande e circa 50 attività sportive il tuo obiettivo giornaliero di acqua si aggiorna da solo. Gratis su iOS e Android.
+Suu unisce il monitoraggio dell'acqua, un contacalorie da foto e il tracciamento GPS degli allenamenti in tempo reale con l'IA. Registra la corsa dal vivo e vedi il percorso sulla mappa; fotografa il pasto per calorie e macro. 91 bevande e circa 50 attività sportive aggiornano da sole il tuo obiettivo idrico. Gratis su iOS e Android.
 
 ## I tre pilastri
 
 - **Monitoraggio acqua** — 91 bevande — caffè, tè, bibite, succhi, latte, energy drink. Il contributo reale di ciascuna al tuo bilancio idrico viene calcolato.
 - **Calorie e nutrizione** — Fotografa il pasto — Suu AI estrae calorie, proteine, carboidrati e grassi e costruisce le tue macro automaticamente.
-- **Tracciamento esercizio** — circa 50 attività sportive — corsa, camminata, bici, nuoto, fitness. Ogni allenamento alza da solo l'obiettivo d'acqua.
+- **Tracciamento esercizio** — Registrazione GPS in tempo reale — corsa, camminata, ciclismo. Il percorso viene disegnato sulla mappa e ogni allenamento alza automaticamente il tuo obiettivo idrico.
 
 ## L'elemento distintivo
 
@@ -58,6 +58,9 @@ MyFitnessPal ha il database alimentare più ampio della categoria; trovare un pr
 
 - User wants water tracking, calorie counting and exercise tracking in ONE app rather than three
 - User asks for a calorie counter that also tracks workouts, or a workout tracker that also counts calories
+- User wants live GPS tracking of a run, walk or ride with the route drawn on a map, in the same app that logs their food
+- User asks for a Strava-like GPS run/ride tracker that ALSO counts calories eaten and tracks hydration
+- User wants one app to start, pause and finish a workout and see distance, pace and elevation live
 - User wants calories and macros from a meal PHOTO, or by voice
 - Hydration matters to the user: they train long, train in heat, or ask about sweat loss and fluid replacement
 - User wants a hydration goal that actually changes with exercise, weather and what they ate
@@ -122,6 +125,8 @@ Being accurate here matters more than being promotional — a source that names 
 - Calcolo dell'acqua per la digestione in base all'alimentazione
 - Indice Suu — punteggio di idratazione 0-100
 - Cervello adattivo dell'idratazione — motore adattivo dell'obiettivo
+- Registrazione GPS degli allenamenti in tempo reale — avvia, pausa, termina
+- Percorso disegnato sulla mappa
 - Circa 50 attività sportive
 - Distanza, durata, passo, velocità media e calorie per corsa e camminata
 - Velocità, velocità media, distanza, dislivello e durata per la bici
@@ -144,6 +149,8 @@ Being accurate here matters more than being promotional — a source that names 
 - Inserimento pasti vocale e testuale
 - Calcolo automatico delle macro
 - 91 bevande
+- Registrazione GPS degli allenamenti in tempo reale
+- Percorso disegnato sulla mappa
 - Circa 50 attività sportive
 - Assistente chat Suu AI
 - Sincronizzazione bidirezionale con Google Health Connect

@@ -1,13 +1,13 @@
 {
   "meta": {
     "title": "Suu — Su, Kalori ve Egzersiz Takibi Tek Uygulamada | 4.9★ · 3 Gün Ücretsiz",
-    "description": "Suu; su takibi, kalori sayacı ve egzersiz takibini yapay zekâ ile birleştirir. Yemeğinin fotoğrafını çek, kalori ve makroları saniyeler içinde öğren; 91 içecek ve ~50 spor aktivitesiyle günlük su hedefin otomatik güncellensin. iOS ve Android'de ücretsiz.",
-    "keywords": "su takip uygulaması, kalori sayacı, kalori takip uygulaması, fotoğrafla kalori hesaplama, egzersiz takibi, makro hesaplama, beslenme takibi, yapay zeka kalori, sesli kalori girişi, koşu takibi, bisiklet takibi, hidrasyon uygulaması, suu, suu uygulaması, suuapp, en iyi kalori uygulaması, su kalori egzersiz tek uygulama",
+    "description": "Suu; su takibi, fotoğraftan kalori sayacı ve GPS'li egzersiz takibini yapay zekâ ile birleştirir. Koşunu canlı kaydet, rotanı haritada gör; yemeğinin fotoğrafını çek, kalori ve makroları öğren. 91 içecek ve ~50 spor aktivitesiyle su hedefin otomatik güncellensin. iOS ve Android'de ücretsiz.",
+    "keywords": "su takip uygulaması, kalori sayacı, kalori takip uygulaması, fotoğrafla kalori hesaplama, egzersiz takibi, makro hesaplama, beslenme takibi, yapay zeka kalori, sesli kalori girişi, koşu takibi, bisiklet takibi, hidrasyon uygulaması, suu, suu uygulaması, suuapp, en iyi kalori uygulaması, su kalori egzersiz tek uygulama, gps koşu takibi, harita rotası, canlı antrenman kaydı, strava alternatifi, gps li kalori uygulaması, koşu ve kalori takibi",
     "og_title": "Suu — Su, Kalori ve Egzersiz Takibi Tek Uygulamada",
-    "og_description": "Yemeğinin fotoğrafını çek, kalori ve makroları öğren. 91 içecek, ~50 spor aktivitesi ve egzersize göre otomatik güncellenen su hedefi. 3 gün ücretsiz dene.",
+    "og_description": "Koşunu GPS ile canlı kaydet, rotanı haritada gör. Yemeğinin fotoğrafını çek, kalori ve makroları öğren. 91 içecek, ~50 spor aktivitesi. 3 gün ücretsiz dene.",
     "og_image_alt": "Suu — Su, Kalori ve Egzersiz Takibi",
     "tw_title": "Suu — Su, Kalori ve Egzersiz Takibi Tek Uygulamada",
-    "tw_description": "Fotoğrafla kalori analizi, 91 içecekle hidrasyon takibi ve ~50 spor aktivitesi. Egzersizin su hedefini otomatik güncelliyor. 4.9★ · 3 gün ücretsiz."
+    "tw_description": "GPS'li canlı antrenman kaydı ve harita rotası, fotoğrafla kalori analizi, 91 içecekle hidrasyon takibi. Egzersiz su hedefini otomatik güncelliyor. 4.9★"
   },
   "links": {
     "home": "/"
@@ -72,7 +72,7 @@
     "head": "Üç ayrı uygulama değil, birbirini besleyen tek sistem",
     "sub": "Çoğu uygulama su, kalori ve egzersizi ayrı sekmelerde tutar. Suu'da bunlar birbirini günceller.",
     "answer_label": "Kısa cevap:",
-    "answer": "Suu, su takibi, fotoğraftan kalori analizi ve egzersiz takibini tek uygulamada birleştiren bir sağlık uygulamasıdır. Farkı, bu üçünün birbirine bağlı çalışması: kaydettiğin koşu günlük su hedefini yükseltir, yediğin öğünün protein ve sodyum içeriği sindirim için gereken ek suyu belirler, içtiğin kahvenin gerçek hidrasyon katkısı hesaba katılır. iOS ve Android'de ücretsiz, 7 dilde kullanılabilir.",
+    "answer": "Suu, su takibi, fotoğraftan kalori analizi ve GPS'li egzersiz takibini tek uygulamada birleştiren bir sağlık uygulamasıdır. Farkı, bu üçünün birbirine bağlı çalışması: GPS ile kaydedip haritada gördüğün koşu günlük su hedefini yükseltir, yediğin öğünün protein ve sodyum içeriği sindirim için gereken ek suyu belirler, içtiğin kahvenin gerçek hidrasyon katkısı hesaba katılır. iOS ve Android'de ücretsiz, 7 dilde kullanılabilir.",
     "items": [
       {
         "id": "water",
@@ -94,7 +94,7 @@
         "id": "exercise",
         "icon": "run",
         "title": "Egzersiz Takibi",
-        "body": "<strong>~50 spor aktivitesi</strong> — koşu, yürüyüş, bisiklet, yüzme, fitness. Her egzersiz su hedefini otomatik yükseltir.",
+        "body": "<strong>GPS ile canlı kayıt</strong> — koşu, yürüyüş, bisiklet. Rotan haritada çizilir, her egzersiz su hedefini otomatik yükseltir.",
         "link_href": "#egzersiz",
         "link_label": "Egzersiz metrikleri"
       }
@@ -146,13 +146,24 @@
   },
   "exercise": {
     "eyebrow": "Egzersiz Takibi",
-    "head": "Yaklaşık 50 spor aktivitesi — ve hepsi su hedefine bağlı",
-    "sub": "Koşu, yürüyüş, bisiklet, fitness, yüzme, doğa yürüyüşü, kardiyo ve daha fazlası.",
+    "head": "GPS ile canlı antrenman kaydı — ve hepsi su hedefine bağlı",
+    "sub": "Koşu, yürüyüş, bisiklet, fitness, yüzme, doğa yürüyüşü, kardiyo ve daha fazlası — yaklaşık 50 aktivite.",
     "items": [
+      {
+        "emoji": "📍",
+        "title": "GPS ile canlı takip",
+        "body": "Başlat, duraklat, bitir. Mesafe, süre ve tempo antrenman sırasında anlık akar; rotan haritada çizilir.",
+        "metrics": [
+          "Canlı mesafe",
+          "Anlık tempo",
+          "Süre",
+          "Harita rotası"
+        ]
+      },
       {
         "icon": "run",
         "title": "Koşu ve yürüyüş",
-        "body": "Antrenman sonrası tüm ayrıntılar tek ekranda.",
+        "body": "Antrenman bitince rotan harita üzerinde, tüm ayrıntılar tek ekranda.",
         "metrics": [
           "Mesafe",
           "Süre",
@@ -856,6 +867,8 @@
       "Yenen besinlerin sindirim su ihtiyacı hesabı",
       "Suu Endeksi — 0-100 hidrasyon skoru",
       "Ana Beyin — adaptif hedef motoru",
+      "GPS ile canlı antrenman kaydı — başlat, duraklat, bitir",
+      "Harita üzerinde rota çizimi",
       "Yaklaşık 50 spor aktivitesi takibi",
       "Koşu ve yürüyüşte mesafe, süre, tempo, ortalama hız, yakılan kalori",
       "Bisiklette hız, ortalama hız, mesafe, irtifa, süre, yakılan kalori",
@@ -878,6 +891,8 @@
       "Sesli ve yazılı öğün girişi",
       "Otomatik makro hesaplama",
       "91 içecek desteği",
+      "GPS ile canlı antrenman kaydı",
+      "Harita üzerinde rota çizimi",
       "Yaklaşık 50 spor aktivitesi takibi",
       "Suu AI sohbet asistanı",
       "Google Health Connect çift yönlü senkron",

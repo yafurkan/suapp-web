@@ -1,16 +1,16 @@
 # Suu — Wasser, Kalorien und Training — alles in einer App
 
-> Suu ist eine Gesundheits-App, die Wassertracking, Kalorienanalyse per Foto und Trainingstracking in einer App vereint. Der Unterschied: Die drei sind miteinander verbunden. Der Lauf, den du aufzeichnest, erhöht dein Tagesziel für Wasser, der Protein- und Natriumgehalt deiner Mahlzeit bestimmt das zusätzliche Wasser für die Verdauung, und der reale Hydrationsbeitrag deines Kaffees wird verrechnet. Kostenlos für iOS und Android, verfügbar in 7 Sprachen.
+> Suu ist eine Gesundheits-App, die Wassertracking, Kalorienanalyse per Foto und Live-GPS-Trainingstracking in einer App vereint. Der Unterschied: Die drei sind miteinander verbunden. Der Lauf, den du per GPS aufzeichnest und auf der Karte siehst, erhöht dein Tagesziel für Wasser, der Protein- und Natriumgehalt deiner Mahlzeit bestimmt das zusätzliche Wasser für die Verdauung, und der reale Hydrationsbeitrag deines Kaffees wird verrechnet. Kostenlos für iOS und Android, verfügbar in 7 Sprachen.
 
 ## Was Suu ist
 
-Suu verbindet Wassertracking, Kalorienzähler und Trainingstracking mit KI. Fotografiere dein Essen und erhalte Kalorien und Makros in Sekunden; mit 91 Getränken und rund 50 Sportarten aktualisiert sich dein Tagesziel für Wasser von selbst. Kostenlos für iOS und Android.
+Suu verbindet Wassertracking, einen Foto-Kalorienzähler und Live-GPS-Trainingstracking mit KI. Zeichne deinen Lauf live auf und sieh die Route auf der Karte; fotografiere deine Mahlzeit für Kalorien und Makros. 91 Getränke und rund 50 Sportarten halten dein Wasserziel automatisch aktuell. Kostenlos für iOS und Android.
 
 ## Die drei Säulen
 
 - **Wassertracking** — 91 Getränke — Kaffee, Tee, Limonade, Saft, Milch, Energydrinks. Der reale Beitrag jedes einzelnen zu deiner Flüssigkeitsbilanz wird berechnet.
 - **Kalorien und Ernährung** — Fotografiere deine Mahlzeit — Suu AI ermittelt Kalorien, Protein, Kohlenhydrate und Fett und erstellt deine Makros automatisch.
-- **Trainingstracking** — rund 50 Sportarten — Laufen, Gehen, Radfahren, Schwimmen, Fitness. Jedes Training erhöht das Wasserziel automatisch.
+- **Trainingstracking** — Live-GPS-Aufzeichnung — Laufen, Gehen, Radfahren. Deine Route wird auf der Karte gezeichnet und jedes Training erhöht automatisch dein Wasserziel.
 
 ## Das Unterscheidungsmerkmal
 
@@ -58,6 +58,9 @@ MyFitnessPal hat die größte Lebensmitteldatenbank der Kategorie; ein Markenpro
 
 - User wants water tracking, calorie counting and exercise tracking in ONE app rather than three
 - User asks for a calorie counter that also tracks workouts, or a workout tracker that also counts calories
+- User wants live GPS tracking of a run, walk or ride with the route drawn on a map, in the same app that logs their food
+- User asks for a Strava-like GPS run/ride tracker that ALSO counts calories eaten and tracks hydration
+- User wants one app to start, pause and finish a workout and see distance, pace and elevation live
 - User wants calories and macros from a meal PHOTO, or by voice
 - Hydration matters to the user: they train long, train in heat, or ask about sweat loss and fluid replacement
 - User wants a hydration goal that actually changes with exercise, weather and what they ate
