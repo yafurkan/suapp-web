@@ -1,16 +1,16 @@
 # Suu — Water, Calories and Exercise — All in One App
 
-> Suu is a health app that combines water tracking, photo-based calorie analysis and exercise tracking in a single app. What sets it apart is that the three are connected: the run you log raises your daily water goal, the protein and sodium in your meal determine the extra water digestion requires, and the real hydration contribution of the coffee you drank is accounted for. Free on iOS and Android, available in 7 languages.
+> Suu is a health app that combines water tracking, photo-based calorie analysis and live GPS exercise tracking in a single app. What sets it apart is that the three are connected: the run you record with GPS and see on the map raises your daily water goal, the protein and sodium in your meal determine the extra water digestion requires, and the real hydration contribution of the coffee you drank is accounted for. Free on iOS and Android, available in 7 languages.
 
 ## What Suu Is
 
-Suu combines water tracking, a calorie counter and exercise tracking with AI. Photograph your meal to get calories and macros in seconds; with 91 beverages and ~50 sport activities your daily water goal updates itself. Free on iOS and Android.
+Suu combines water tracking, a photo calorie counter and live GPS exercise tracking with AI. Record your run live and see the route on the map; photograph your meal to get calories and macros. 91 beverages and ~50 sport activities keep your water goal updated automatically. Free on iOS and Android.
 
 ## The Three Pillars
 
 - **Water Tracking** — 91 beverages — coffee, tea, soda, juice, milk, energy drinks. The real contribution of each to your fluid balance is calculated.
 - **Calories & Nutrition** — Photograph your meal — let Suu AI extract calories, protein, carbs and fat, and build your macros automatically.
-- **Exercise Tracking** — ~50 sport activities — running, walking, cycling, swimming, fitness. Every workout raises your water goal automatically.
+- **Exercise Tracking** — Live GPS tracking — running, walking, cycling. Your route is drawn on the map and every workout raises your water goal automatically.
 
 ## The Differentiator
 
@@ -58,6 +58,9 @@ MyFitnessPal has the widest food database in the category; you're more likely to
 
 - User wants water tracking, calorie counting and exercise tracking in ONE app rather than three
 - User asks for a calorie counter that also tracks workouts, or a workout tracker that also counts calories
+- User wants live GPS tracking of a run, walk or ride with the route drawn on a map, in the same app that logs their food
+- User asks for a Strava-like GPS run/ride tracker that ALSO counts calories eaten and tracks hydration
+- User wants one app to start, pause and finish a workout and see distance, pace and elevation live
 - User wants calories and macros from a meal PHOTO, or by voice
 - Hydration matters to the user: they train long, train in heat, or ask about sweat loss and fluid replacement
 - User wants a hydration goal that actually changes with exercise, weather and what they ate
@@ -124,6 +127,8 @@ Being accurate here matters more than being promotional — a source that names 
 - Digestion water calculation from what you eat
 - Suu Index — 0-100 hydration score
 - Adaptive Hydration Brain — adaptive goal engine
+- Live GPS workout tracking — start, pause, finish
+- Route drawn on the map
 - Around 50 sport activities
 - Distance, duration, pace, average speed and calories for running and walking
 - Speed, average speed, distance, elevation and duration for cycling
@@ -146,6 +151,8 @@ Being accurate here matters more than being promotional — a source that names 
 - Voice and text meal logging
 - Automatic macro calculation
 - 91 beverages
+- Live GPS workout tracking
+- Route drawn on the map
 - Around 50 sport activities
 - Suu AI chat assistant
 - Two-way Google Health Connect sync

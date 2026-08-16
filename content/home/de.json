@@ -2,13 +2,13 @@
   "_note": "Deutsche Kernseiten (ozellikler-de.html usw.) existieren noch nicht — Links zeigen vorerst auf die englischen Seiten. In Phase 4c ersetzen.",
   "meta": {
     "title": "Suu — Wasser, Kalorien und Training in einer App | 4.9★ · 3 Tage gratis",
-    "description": "Suu verbindet Wassertracking, Kalorienzähler und Trainingstracking mit KI. Fotografiere dein Essen und erhalte Kalorien und Makros in Sekunden; mit 91 Getränken und rund 50 Sportarten aktualisiert sich dein Tagesziel für Wasser von selbst. Kostenlos für iOS und Android.",
-    "keywords": "wassertracker app, kalorienzähler, kalorien app, kalorien mit foto zählen, trainingstracking, makro rechner, ernährungstagebuch, ki kalorienzähler, kalorien per sprache, lauftracker, fahrradtracker, hydration app, Suu, beste kalorien app",
+    "description": "Suu verbindet Wassertracking, einen Foto-Kalorienzähler und Live-GPS-Trainingstracking mit KI. Zeichne deinen Lauf live auf und sieh die Route auf der Karte; fotografiere deine Mahlzeit für Kalorien und Makros. 91 Getränke und rund 50 Sportarten halten dein Wasserziel automatisch aktuell. Kostenlos für iOS und Android.",
+    "keywords": "wassertracker app, kalorienzähler, kalorien app, kalorien mit foto zählen, trainingstracking, makro rechner, ernährungstagebuch, ki kalorienzähler, kalorien per sprache, lauftracker, fahrradtracker, hydration app, Suu, beste kalorien app, gps lauf tracker, routenkarte, live trainingsaufzeichnung, strava alternative, kalorien app mit gps",
     "og_title": "Suu — Wasser, Kalorien und Training in einer App",
-    "og_description": "Fotografiere dein Essen, erhalte Kalorien und Makros. 91 Getränke, rund 50 Sportarten und ein Wasserziel, das sich nach jedem Training anpasst. Premium 3 Tage gratis testen.",
+    "og_description": "Zeichne deinen Lauf per Live-GPS auf und sieh die Route auf der Karte. Fotografiere deine Mahlzeit für Kalorien und Makros. 91 Getränke, rund 50 Sportarten.",
     "og_image_alt": "Suu — Wasser, Kalorien und Training",
     "tw_title": "Suu — Wasser, Kalorien und Training in einer App",
-    "tw_description": "Kalorienanalyse per Foto, Hydration über 91 Getränke und rund 50 Sportarten. Dein Training aktualisiert das Wasserziel automatisch. 4.9★ · 3 Tage gratis."
+    "tw_description": "Live-GPS-Training mit Routenkarte, Foto-Kalorienanalyse und Hydration über 91 Getränke. Dein Training aktualisiert dein Wasserziel automatisch. 4.9★"
   },
   "links": {
     "home": "hosgeldiniz-de.html"
@@ -73,7 +73,7 @@
     "head": "Keine drei getrennten Apps — ein System, in dem alles zusammenspielt",
     "sub": "Die meisten Apps halten Wasser, Kalorien und Training in getrennten Tabs. Bei Suu aktualisieren sie sich gegenseitig.",
     "answer_label": "Kurze Antwort:",
-    "answer": "Suu ist eine Gesundheits-App, die Wassertracking, Kalorienanalyse per Foto und Trainingstracking in einer App vereint. Der Unterschied: Die drei sind miteinander verbunden. Der Lauf, den du aufzeichnest, erhöht dein Tagesziel für Wasser, der Protein- und Natriumgehalt deiner Mahlzeit bestimmt das zusätzliche Wasser für die Verdauung, und der reale Hydrationsbeitrag deines Kaffees wird verrechnet. Kostenlos für iOS und Android, verfügbar in 7 Sprachen.",
+    "answer": "Suu ist eine Gesundheits-App, die Wassertracking, Kalorienanalyse per Foto und Live-GPS-Trainingstracking in einer App vereint. Der Unterschied: Die drei sind miteinander verbunden. Der Lauf, den du per GPS aufzeichnest und auf der Karte siehst, erhöht dein Tagesziel für Wasser, der Protein- und Natriumgehalt deiner Mahlzeit bestimmt das zusätzliche Wasser für die Verdauung, und der reale Hydrationsbeitrag deines Kaffees wird verrechnet. Kostenlos für iOS und Android, verfügbar in 7 Sprachen.",
     "items": [
       {
         "id": "water",
@@ -95,7 +95,7 @@
         "id": "exercise",
         "icon": "run",
         "title": "Trainingstracking",
-        "body": "<strong>rund 50 Sportarten</strong> — Laufen, Gehen, Radfahren, Schwimmen, Fitness. Jedes Training erhöht das Wasserziel automatisch.",
+        "body": "<strong>Live-GPS-Aufzeichnung</strong> — Laufen, Gehen, Radfahren. Deine Route wird auf der Karte gezeichnet und jedes Training erhöht automatisch dein Wasserziel.",
         "link_href": "#egzersiz",
         "link_label": "Trainingswerte"
       }
@@ -147,13 +147,24 @@
   },
   "exercise": {
     "eyebrow": "Trainingstracking",
-    "head": "Rund 50 Sportarten — und alle mit dem Wasserziel verknüpft",
-    "sub": "Laufen, Gehen, Radfahren, Fitness, Schwimmen, Wandern, Cardio und mehr.",
+    "head": "Live-GPS-Trainingstracking — und alles hängt an deinem Wasserziel",
+    "sub": "Laufen, Gehen, Radfahren, Fitness, Schwimmen, Wandern, Cardio und mehr — rund 50 Aktivitäten.",
     "items": [
+      {
+        "emoji": "📍",
+        "title": "Live-GPS-Tracking",
+        "body": "Starten, pausieren, beenden. Distanz, Dauer und Pace laufen während des Trainings live mit, deine Route wird auf der Karte gezeichnet.",
+        "metrics": [
+          "Live-Distanz",
+          "Echtzeit-Pace",
+          "Dauer",
+          "Routenkarte"
+        ]
+      },
       {
         "icon": "run",
         "title": "Laufen und Gehen",
-        "body": "Alle Details nach der Einheit auf einem Bildschirm.",
+        "body": "Nach dem Training liegt deine Route auf der Karte, alle Details auf einem Bildschirm.",
         "metrics": [
           "Distanz",
           "Dauer",
@@ -845,6 +856,8 @@
       "Berechnung des Verdauungswassers aus der Ernährung",
       "Suu Index — Hydrationswert 0-100",
       "Adaptives Hydrationsgehirn — adaptive Ziel-Engine",
+      "Live-GPS-Trainingsaufzeichnung — starten, pausieren, beenden",
+      "Route auf der Karte",
       "Rund 50 Sportarten",
       "Distanz, Dauer, Pace, Durchschnittsgeschwindigkeit und Kalorien für Laufen und Gehen",
       "Geschwindigkeit, Durchschnittsgeschwindigkeit, Distanz, Höhenmeter und Dauer für Radfahren",
@@ -867,6 +880,8 @@
       "Sprach- und Texteingabe für Mahlzeiten",
       "Automatische Makroberechnung",
       "91 Getränke",
+      "Live-GPS-Trainingsaufzeichnung",
+      "Route auf der Karte",
       "Rund 50 Sportarten",
       "Suu AI Chat-Assistent",
       "Bidirektionale Google Health Connect Synchronisierung",

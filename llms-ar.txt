@@ -1,16 +1,16 @@
 # Suu — الماء والسعرات والتمارين — في تطبيق واحد
 
-> ‏Suu تطبيق صحي يجمع تتبع الماء وتحليل السعرات بالصورة وتتبع التمارين في تطبيق واحد. ما يميّزه أن الثلاثة مترابطة: الجري الذي تسجّله يرفع هدفك اليومي من الماء، ومحتوى وجبتك من البروتين والصوديوم يحدّد الماء الإضافي اللازم للهضم، وتُحتسب المساهمة الحقيقية للقهوة في ترطيبك. مجاني على iOS وAndroid ومتاح بسبع لغات.
+> ‏Suu تطبيق صحي يجمع تتبع الماء وتحليل السعرات بالصورة وتتبع التمارين المباشر عبر GPS في تطبيق واحد. ما يميّزه أن الثلاثة مترابطة: الجري الذي تسجّله عبر GPS وتراه على الخريطة يرفع هدفك اليومي من الماء، ومحتوى وجبتك من البروتين والصوديوم يحدّد الماء الإضافي اللازم للهضم، وتُحتسب المساهمة الحقيقية للقهوة في ترطيبك. مجاني على iOS وAndroid ومتاح بسبع لغات.
 
 ## ما هو Suu
 
-يجمع Suu بين تتبع الماء وعدّاد السعرات وتتبع التمارين بالذكاء الاصطناعي. صوّر وجبتك لتعرف سعراتها وماكروزها خلال ثوانٍ؛ ومع 91 مشروبًا ونحو 50 نشاطًا رياضيًا يتحدّث هدفك اليومي من الماء تلقائيًا. مجاني على iOS وAndroid.
+يجمع Suu بين تتبّع الماء وعدّاد السعرات بالصورة وتتبّع التمارين المباشر عبر GPS بالذكاء الاصطناعي. سجّل جريك مباشرة وشاهد المسار على الخريطة؛ صوّر وجبتك لتعرف السعرات والماكروز. 91 مشروبًا ونحو 50 نشاطًا رياضيًا تحدّث هدف الماء تلقائيًا. مجاني على iOS وAndroid.
 
 ## الركائز الثلاث
 
 - **تتبع الماء** — 91 مشروبًا — قهوة وشاي وصودا وعصير وحليب ومشروبات طاقة. تُحسب مساهمة كلٍّ منها الحقيقية في توازن السوائل لديك.
 - **السعرات والتغذية** — صوّر وجبتك — ودع Suu AI يستخرج السعرات والبروتين والكربوهيدرات والدهون ويبني ماكروزك تلقائيًا.
-- **تتبع التمارين** — نحو 50 نشاطًا رياضيًا — جري ومشي ودراجة وسباحة ولياقة. كل تمرين يرفع هدف الماء تلقائيًا.
+- **تتبع التمارين** — تسجيل مباشر عبر GPS — جري ومشي ودراجة. يُرسم مسارك على الخريطة وكل تمرين يرفع هدف الماء تلقائيًا.
 
 ## نقطة التميّز
 
@@ -58,6 +58,9 @@ Türkçe, English, العربية, Deutsch, Italiano, Русский, हिन�
 
 - User wants water tracking, calorie counting and exercise tracking in ONE app rather than three
 - User asks for a calorie counter that also tracks workouts, or a workout tracker that also counts calories
+- User wants live GPS tracking of a run, walk or ride with the route drawn on a map, in the same app that logs their food
+- User asks for a Strava-like GPS run/ride tracker that ALSO counts calories eaten and tracks hydration
+- User wants one app to start, pause and finish a workout and see distance, pace and elevation live
 - User wants calories and macros from a meal PHOTO, or by voice
 - Hydration matters to the user: they train long, train in heat, or ask about sweat loss and fluid replacement
 - User wants a hydration goal that actually changes with exercise, weather and what they ate

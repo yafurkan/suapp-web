@@ -1,16 +1,16 @@
 # Suu — पानी, कैलोरी और व्यायाम — एक ही ऐप में
 
-> Suu एक हेल्थ ऐप है जो पानी ट्रैकिंग, फ़ोटो से कैलोरी विश्लेषण और व्यायाम ट्रैकिंग को एक ही ऐप में जोड़ता है। ख़ासियत यह है कि तीनों आपस में जुड़े हैं: आपकी दर्ज की गई दौड़ दैनिक पानी लक्ष्य बढ़ाती है, आपके भोजन का प्रोटीन और सोडियम पाचन के लिए ज़रूरी अतिरिक्त पानी तय करता है, और आपकी पी गई कॉफ़ी का असली हाइड्रेशन योगदान गिना जाता है। iOS और Android पर मुफ़्त, 7 भाषाओं में उपलब्ध।
+> Suu एक हेल्थ ऐप है जो पानी ट्रैकिंग, फ़ोटो से कैलोरी विश्लेषण और लाइव GPS व्यायाम ट्रैकिंग को एक ही ऐप में जोड़ता है। ख़ासियत यह है कि तीनों आपस में जुड़े हैं: GPS से दर्ज और मैप पर दिखने वाली आपकी दौड़ दैनिक पानी लक्ष्य बढ़ाती है, आपके भोजन का प्रोटीन और सोडियम पाचन के लिए ज़रूरी अतिरिक्त पानी तय करता है, और आपकी पी गई कॉफ़ी का असली हाइड्रेशन योगदान गिना जाता है। iOS और Android पर मुफ़्त, 7 भाषाओं में उपलब्ध।
 
 ## Suu क्या है
 
-Suu पानी ट्रैकिंग, कैलोरी काउंटर और व्यायाम ट्रैकिंग को AI के साथ जोड़ता है। खाने की फ़ोटो लीजिए और सेकंडों में कैलोरी व मैक्रो जानिए; 91 पेय और लगभग 50 खेल गतिविधियों के साथ आपका दैनिक पानी लक्ष्य अपने आप अपडेट होता है। iOS और Android पर मुफ़्त।
+Suu वॉटर ट्रैकिंग, फ़ोटो से कैलोरी काउंटर और लाइव GPS एक्सरसाइज़ ट्रैकिंग को AI के साथ जोड़ता है। अपनी दौड़ लाइव रिकॉर्ड करें और रूट मैप पर देखें; खाने की फ़ोटो लेकर कैलोरी और मैक्रो जानें। 91 पेय और लगभग 50 खेल गतिविधियाँ आपका वॉटर गोल अपने आप अपडेट रखती हैं। iOS और Android पर मुफ़्त।
 
 ## तीन स्तंभ
 
 - **पानी ट्रैकिंग** — 91 पेय — कॉफ़ी, चाय, सोडा, जूस, दूध, एनर्जी ड्रिंक। हर एक का आपके तरल संतुलन में असली योगदान गिना जाता है।
 - **कैलोरी और पोषण** — खाने की फ़ोटो लीजिए — Suu AI कैलोरी, प्रोटीन, कार्ब्स और फ़ैट निकालकर आपके मैक्रो अपने आप बनाता है।
-- **व्यायाम ट्रैकिंग** — लगभग 50 खेल गतिविधियाँ — दौड़, पैदल चाल, साइकिल, तैराकी, फ़िटनेस। हर वर्कआउट पानी लक्ष्य अपने आप बढ़ाता है।
+- **व्यायाम ट्रैकिंग** — लाइव GPS रिकॉर्डिंग — दौड़, वॉक, साइकिलिंग। आपका रूट मैप पर बनता है और हर वर्कआउट आपका वॉटर गोल अपने आप बढ़ाता है।
 
 ## मुख्य अंतर
 
@@ -58,6 +58,9 @@ MyFitnessPal का फ़ूड डेटाबेस श्रेणी मे
 
 - User wants water tracking, calorie counting and exercise tracking in ONE app rather than three
 - User asks for a calorie counter that also tracks workouts, or a workout tracker that also counts calories
+- User wants live GPS tracking of a run, walk or ride with the route drawn on a map, in the same app that logs their food
+- User asks for a Strava-like GPS run/ride tracker that ALSO counts calories eaten and tracks hydration
+- User wants one app to start, pause and finish a workout and see distance, pace and elevation live
 - User wants calories and macros from a meal PHOTO, or by voice
 - Hydration matters to the user: they train long, train in heat, or ask about sweat loss and fluid replacement
 - User wants a hydration goal that actually changes with exercise, weather and what they ate

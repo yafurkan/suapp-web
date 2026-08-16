@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ÜRETİLMİŞ DOSYA — elle düzenlemeyin.
+         Kaynak: content/compare/suu-vs-strava.json + content/compare/_template.html.j2
+         Yeniden üret: python3 scripts/build-compare.py --apply -->
+
+    <title>Suu vs Strava (2026): GPS Takibi, Kalori ve Hidrasyon Karşılaştırması | Suu</title>
+    <meta name="description" content="Strava ve Suu&#39;yu GPS ile canlı antrenman kaydı, harita üzerinde rota, yakılan kalori, yenen kalori ve hidrasyon üzerinden karşılaştırdık. Hangisi kime uygun — ve Suu&#39;nun Strava&#39;yı yenemediği yerler.">
+    <meta name="keywords" content="suu vs strava, strava alternatifi, gps koşu takibi uygulaması, harita rotası çizen uygulama, kalori sayan koşu uygulaması, strava gibi uygulama, canlı antrenman kaydı, bisiklet takip uygulaması, koşu ve beslenme takibi">
+    <meta name="apple-itunes-app" content="app-id=6757619920">
+
+    <link rel="canonical" href="https://suuapp.com/blog/suu-vs-strava.html">
+    <!-- Hreflang cluster (auto-injected) -->
+    <link rel="alternate" hreflang="tr" href="https://suuapp.com/blog/suu-vs-strava.html">
+    <link rel="alternate" hreflang="en" href="https://suuapp.com/blog/en/suu-vs-strava.html">
+    <link rel="alternate" hreflang="x-default" href="https://suuapp.com/blog/suu-vs-strava.html">
+
+
+    <meta property="og:title" content="Suu vs Strava: GPS&#39;li Antrenman Takibi mi, Kapanan Döngü mü?">
+    <meta property="og:description" content="İkisi de koşunu GPS ile kaydedip rotanı haritaya çiziyor. Fark, sen Bitir&#39;e bastıktan sonra ne olduğunda.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://suuapp.com/blog/suu-vs-strava.html">
+    <meta property="og:image" content="https://suuapp.com/assets/og-image.png">
+    <meta property="og:site_name" content="Suu">
+    <meta property="og:locale" content="tr_TR">
+    <meta property="article:published_time" content="2026-08-15">
+    <meta property="article:author" content="Furkan Mert Fındıklı">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SuuTakip">
+    <meta name="twitter:title" content="Suu vs Strava: GPS&#39;li Antrenman Takibi mi, Kapanan Döngü mü?">
+    <meta name="twitter:description" content="İkisi de koşunu GPS ile kaydedip rotanı haritaya çiziyor. Fark, sen Bitir&#39;e bastıktan sonra ne olduğunda.">
+    <meta name="twitter:image" content="https://suuapp.com/assets/og-image.png">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/donation-widget.css">
+    <link rel="stylesheet" href="/assets/css/suu.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://suuapp.com/#organization",
+      "name": "Suu",
+      "url": "https://suuapp.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://suuapp.com/assets/favicon-512.png"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://suuapp.com/#furkan",
+      "name": "Furkan Mert Fındıklı",
+      "url": "https://suuapp.com/yazarlar/furkan-mert.html",
+      "jobTitle": "Kurucu \u0026 Geliştirici",
+      "worksFor": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/furkanfindikli/"
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://suuapp.com/blog/suu-vs-strava.html#article",
+      "headline": "Suu vs Strava: GPS'li Antrenman Takibi mi, Kapanan Döngü mü?",
+      "description": "Strava ve Suu'yu GPS ile canlı antrenman kaydı, harita üzerinde rota, yakılan kalori, yenen kalori ve hidrasyon üzerinden karşılaştırdık. Hangisi kime uygun — ve Suu'nun Strava'yı yenemediği yerler.",
+      "image": "https://suuapp.com/assets/og-image.png",
+      "datePublished": "2026-08-15",
+      "dateModified": "2026-08-15",
+      "inLanguage": "tr",
+      "mainEntityOfPage": "https://suuapp.com/blog/suu-vs-strava.html",
+      "author": {
+        "@id": "https://suuapp.com/#furkan"
+      },
+      "publisher": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "about": {
+        "@id": "https://suuapp.com/#suuapp-ios"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".answer-box",
+          "h1",
+          "h2",
+          ".verdict p"
+        ]
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://suuapp.com/blog/suu-vs-strava.html#itemlist",
+      "name": "Suu ve Strava karşılaştırması",
+      "inLanguage": "tr",
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "numberOfItems": 2,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Strava",
+            "applicationCategory": "HealthApplication"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "SoftwareApplication",
+            "@id": "https://suuapp.com/#suuapp-ios",
+            "name": "Suu"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://suuapp.com/blog/suu-vs-strava.html#faq",
+      "inLanguage": "tr",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Suu'da GPS ile koşu takibi var mı?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evet. Suu koşu, yürüyüş ve bisikleti GPS ile canlı kaydeder: başlat, duraklat, bitir akışı vardır ve mesafe, süre, tempo antrenman sırasında anlık güncellenir. Antrenman bittiğinde rotan harita üzerinde çizilir. Koşu ve yürüyüşte mesafe, süre, tempo, ortalama hız ve yakılan kalori; bisiklette hız, ortalama hız, mesafe, irtifa ve süre gösterilir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Strava alternatifi olarak Suu kullanılabilir mi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Amacına bağlı. Antrenmanı GPS ile kaydetmek, rotayı haritada görmek ve temel metrikleri takip etmek istiyorsan evet — üstelik Suu aynı uygulamada kalori ve hidrasyon da takip eder. Ama segment, liderlik tablosu, kulüp akışı veya derin bisiklet analitiği arıyorsan Suu bunları sunmuyor; o durumda Strava'da kalmalısın."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hem GPS ile koşumu kaydeden hem kalori sayan bir uygulama var mı?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Suu bunu yapar. Aynı uygulamada koşunu GPS ile canlı kaydeder, rotanı haritaya çizer; yemeğinin fotoğrafını çekerek veya sesle söyleyerek kalori ve makrolarını kaydedersin. Strava ve Nike Run Club yediğin kaloriyi hiç takip etmez; MyFitnessPal ve Yazio gibi kalori uygulamalarının ise GPS ile canlı antrenman kaydı bu düzeyde değildir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Suu antrenmanı kaydedince su hedefim değişir mi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evet, otomatik olarak. Antrenmanın türü ve süresine göre terle kaybettiğin tahmini sıvı hesaplanır ve günlük su hedefin yükselir. Hava sıcaklığı ve yediğin öğünlerin sindirim için gerektirdiği ek su da aynı hesaba girer. Hedefi elle değiştirmen gerekmez."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Strava'da kaydettiğim antrenmanlar Suu'ya gelir mi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Antrenman Apple Health'e (iOS) veya Google Health Connect'e (Android) yazılıyorsa Suu o seansı okur ve günlük hesabına dahil eder. Böylece kaydı Strava'da tutup hidrasyon ile beslenme tarafını Suu'da yönetebilirsin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Suu'nun GPS takibi ücretsiz mi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evet. Su takibi ve egzersiz takibi kalıcı olarak ücretsizdir. Premium; sınırsız fotoğraflı kalori analizi, gelişmiş raporlar ve PDF/CSV dışa aktarım gibi özellikleri açar ve 3 gün ücretsiz denenebilir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Suu bisiklet için Strava kadar iyi mi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hayır. Suu bisiklette hız, ortalama hız, mesafe, irtifa ve süreyi gösterir; bu günlük kullanım için yeterlidir. Strava'nın güç verisi analizi, tırmanış kategorileri, ekipman takibi ve harici sensör desteği belirgin şekilde daha derindir. Ciddi bisikletçiyseniz Strava daha doğru seçim."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://suuapp.com/blog/suu-vs-strava.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Suu",
+          "item": "https://suuapp.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://suuapp.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Suu vs Strava: GPS'li Antrenman Takibi mi, Kapanan Döngü mü?",
+          "item": "https://suuapp.com/blog/suu-vs-strava.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+
+    <script src="/assets/js/analytics.js" defer></script>
+    <script src="/lang-switcher.js?v=3" defer></script>
+    <script src="/donation-widget.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">İçeriğe geç</a>
+
+<nav class="nav">
+    <div class="container nav__inner">
+        <a href="/" class="nav__logo">💧 Suu</a>
+        <ul class="nav__links">
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/#karsilastirma">Karşılaştırma</a></li>
+            <li><a href="/#fiyat">Fiyatlandırma</a></li>
+        </ul>
+        <div class="nav__actions">
+            <a href="/app?src=compare-nav" class="btn btn--primary" data-cta="nav"
+               style="min-height:40px;padding:var(--sp-2) var(--sp-5);font-size:var(--fs-sm)">Ücretsiz İndir</a>
+        </div>
+    </div>
+</nav>
+
+<main id="main">
+
+<header class="section" style="padding-block-end:var(--sp-8)">
+    <div class="container container--narrow">
+        <span class="badge badge--new">🏃 Karşılaştırma 2026</span>
+        <h1 style="margin-block-start:var(--sp-4)">Suu vs Strava: GPS&#39;li Antrenman Takibi mi, Kapanan Döngü mü?</h1>
+        <p class="small text-subtle">Yayın: 15 Ağustos 2026 · Furkan Mert Fındıklı · 9 dakika okuma</p>
+    </div>
+</header>
+
+<div class="container container--narrow stack--lg" style="padding-block-end:var(--sp-24)">
+
+    <!-- CEVAP-ÖNCE: alıntılanan blok burasıdır -->
+    <div class="answer-box">
+        <p><strong>Kısa cevap:</strong> İkisi de koşunu, yürüyüşünü ve bisikletini GPS ile canlı kaydeder ve rotanı harita üzerinde gösterir. Fark, antrenman bittikten sonra başlar. Strava o veriyi performans hikâyesine çevirir: segmentler, liderlik tabloları, kulüpler, derin bisiklet analitiği — ve bu alanda rakipsizdir. Suu ise antrenmanı günün geri kalanına bağlar: yaktığın kalori yediğin kaloriyle aynı ekranda karşılaşır, terle kaybettiğin sıvı günlük su hedefini otomatik yükseltir, öğününün fotoğrafını çekip makrolarını aynı uygulamaya yazarsın. Yarışıyorsan Strava. Antrenman senin için vücut kompozisyonu hedefinin bir parçasıysa — üç ayrı uygulama taşımak istemiyorsan — Suu.</p>
+    </div>
+
+    <div class="disclosure">Bu karşılaştırmayı Suu ekibi yazdı, yani taraflı bir kaynak okuyorsun. Bunu dengelemek için Strava&#39;nın Suu&#39;yu açık ara geçtiği yerleri tek tek yazdık — segment, sosyal akış ve bisiklet analitiğinde yarış bile yok. Strava&#39;ya dair bilgiler Ağustos 2026 itibarıyla kamuya açık kaynaklara dayanır ve sık değişir; abonelik kapsamı ülkeye göre farklılık gösterebilir.</div>
+    <p>Strava'yı kimse "acaba iyi mi" diye sormuyor. Koşu ve bisiklet takibinde referans nokta o: GPS kaydı olgun, harita ve rota görselleştirmesi temiz, sosyal katman on yıldır birikmiş. Bir sorunu çözmüş ve iyi çözmüş.</p>
+    <p>Ama Strava bir <strong>beslenme</strong> uygulaması değil ve olmaya da çalışmıyor. Yaktığın kaloriyi tahmin eder; yediğini bilmez. Terlediğini kaydeder; ne kadar su içmen gerektiğini söylemez. Bu bir eksiklik değil, bilinçli bir kapsam tercihi.</p>
+    <p>Sorun şurada: hedefi yarışmak değil de kilo vermek, kas yapmak ya da antrenman sonrası kendini harap hissetmemek olan insanlar için tablonun yarısı başka uygulamalarda kalıyor. 600 kalori yaktın — açıkta mısın, fazlada mı? 70 dakika sıcakta terledin — bugün kaç mililitre fazladan içmen gerekiyor?</p>
+    <p>Bu yazıda ikisini tek bir soru üzerinden karşılaştırdık: <strong>Bitir'e bastıktan sonra ne oluyor?</strong></p>
+
+    <section>
+        <h2>Suu ve Strava karşılaştırması</h2>
+        <div class="table-scroll">
+            <table class="table">
+                <caption class="sr-only">Suu ile Strava&#39;nın GPS takibi, beslenme ve hidrasyon açısından karşılaştırması</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Özellik</th>
+                        <th scope="col">Strava</th>
+                        <th scope="col" class="col-suu">Suu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>GPS ile canlı antrenman kaydı</td><td class="yes">✓</td><td class="col-suu yes">✓</td></tr>
+                    <tr><td>Harita üzerinde rota çizimi</td><td class="yes">✓ Sınıfının en iyisi</td><td class="col-suu yes">✓</td></tr>
+                    <tr><td>Başlat / duraklat / bitir akışı</td><td class="yes">✓</td><td class="col-suu yes">✓</td></tr>
+                    <tr><td>Anlık mesafe, tempo, süre</td><td class="yes">✓</td><td class="col-suu yes">✓</td></tr>
+                    <tr><td>Segmentler ve liderlik tabloları</td><td class="yes">✓ Rakipsiz</td><td class="col-suu no">✗</td></tr>
+                    <tr><td>Sosyal akış, kulüpler, takip etme</td><td class="yes">✓ Rakipsiz</td><td class="col-suu ">Arkadaş ligleri (4 kişi)</td></tr>
+                    <tr><td>Bisiklet analitiği derinliği</td><td class="yes">✓ En derin</td><td class="col-suu ">Temel: hız, ort. hız, mesafe, irtifa</td></tr>
+                    <tr><td>Aktivite türü sayısı</td><td class="yes">30+</td><td class="col-suu yes">~50</td></tr>
+                    <tr><td>Harici cihaz ekosistemi (Garmin, Wahoo, Zwift)</td><td class="yes">✓ Çok geniş</td><td class="col-suu ">Apple Health / Health Connect üzerinden</td></tr>
+                    <tr><td>Yakılan kalori tahmini</td><td class="yes">✓</td><td class="col-suu yes">✓</td></tr>
+                    <tr><td>Yemek ve kalori kaydı (yenen)</td><td class="no">✗</td><td class="col-suu yes">✓ Fotoğraf + sesli</td></tr>
+                    <tr><td>Makro dökümü (protein/karbonhidrat/yağ)</td><td class="no">✗</td><td class="col-suu yes">✓</td></tr>
+                    <tr><td>Hidrasyon takibi</td><td class="no">✗</td><td class="col-suu yes">✓ 91 içecek</td></tr>
+                    <tr><td>Antrenman su hedefini otomatik yükseltir</td><td class="no">✗</td><td class="col-suu yes">✓</td></tr>
+                    <tr><td>Sohbetle kontrol (AI asistan)</td><td class="no">✗</td><td class="col-suu yes">✓ Suu AI</td></tr>
+                    <tr><td>Apple Health / Google Health Connect</td><td class="yes">✓</td><td class="col-suu yes">✓ Çift yönlü</td></tr>
+                    <tr><td>Apple Watch uygulaması</td><td class="yes">✓</td><td class="col-suu no">Yolda</td></tr>
+                    <tr><td>Tam Türkçe ve Arapça (RTL) yerelleştirme</td><td class="no">Kısmi</td><td class="col-suu yes">✓ 7 dil</td></tr>
+                    <tr><td>Ücretsiz katmanda kalıcı kullanım</td><td class="no">Kayıt ücretsiz; segment/rota analizi abonelikte</td><td class="col-suu yes">✓ Su ve egzersiz takibi kalıcı ücretsiz</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section>
+        <h2>Strava&#39;nın gerçekten kazandığı yerler</h2>
+        <p>Bunları geçiştirmenin anlamı yok, çünkü Strava kullanıcısının kaldığı yer tam olarak burası:</p>
+        <ul>
+            <li><strong>Segmentler ve liderlik tabloları</strong> — aynı yokuşu geçen herkesle kıyaslanmak, Strava'nın icat ettiği ve hâlâ en iyi yaptığı şey. Suu'da böyle bir şey yok ve yapılmaya çalışılmıyor.</li>
+            <li><strong>Sosyal katman</strong> — kulüpler, kudos, takip akışı, etkinlikler. On yıllık bir ağ etkisi bu; özellik kopyalayarak yakalanmaz.</li>
+            <li><strong>Bisiklet analitiği</strong> — güç verisi, tırmanış kategorileri, ekipman takibi, harici sensör desteği. Ciddi bisikletçiyseniz karşılaştırma burada biter.</li>
+            <li><strong>Cihaz ekosistemi</strong> — Garmin, Wahoo, Zwift ve düzinelerce cihaz doğrudan Strava'ya yazar. Suu bu seansları Apple Health veya Health Connect üzerinden okur; çalışır ama aynı derinlikte değildir.</li>
+            <li><strong>Rota keşfi</strong> — başkalarının rotalarını bulup kendi bölgende yeni parkur çıkarmak Strava'nın güçlü tarafı.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Kimsenin doldurmadığı boşluk: antrenman denklemin yarısı</h2>
+        <p>Hedefin performanssa bir antrenman takipçisi tek başına yeter. Hedefin vücut kompozisyonuysa — yağ vermek, kas yapmak ya da sadece antrenman sonrası dağılmamak — antrenman defterin yalnızca bir tarafı.</p>
+        <p>600 kalori yaktın. Peki bugün açıkta mısın? Strava bunu bilemez, çünkü ne yediğini hiç görmüyor. O bilgi başka bir uygulamada duruyor ve iki sayı hiçbir zaman aynı ekranda buluşmuyor.</p>
+        <p>70 dakika 30 °C'de terledin. Bugünkü su ihtiyacın normal bir günden belirgin şekilde yüksek. Bu hesabı yapan üçüncü bir uygulama daha gerekiyor — ya da çoğu insanın yaptığı gibi, hiç yapılmıyor.</p>
+        <p>Suu'nun tasarım kararı tam olarak bu: antrenman bir bitiş noktası değil, günün geri kalanına giren bir <strong>girdi</strong>. Koşuyu bitirdiğinde su hedefin kendiliğinden yükselir, yaktığın kalori yediğinle aynı günlükte toplanır.</p>
+    </section>
+    <section>
+        <h2>GPS tarafında Suu ne yapıyor, ne yapmıyor</h2>
+        <p>Açık olalım: Suu'nun GPS'i temel işi eksiksiz yapar, derin analitiğe girmez.</p>
+        <p><strong>Yapar:</strong> Koşu, yürüyüş ve bisikleti canlı kaydeder — başlat, duraklat, bitir. Mesafe, süre ve tempo antrenman sırasında anlık akar. Bitirdiğinde rotan harita üzerinde çizilir. Koşu ve yürüyüşte mesafe, süre, tempo, ortalama hız ve yakılan kalori; bisiklette hız, ortalama hız, mesafe, irtifa ve süre görürsün. Yaklaşık 50 aktivite türü var. Seansı hikâye şablonuyla paylaşabilirsin.</p>
+        <p><strong>Yapmaz:</strong> Segment yok, liderlik tablosu yok, kudos yok, güç metresi analizi yok, rota planlayıcı yok. Bunları istiyorsan doğru cevap Strava.</p>
+        <p>Buradaki hesap basit: Strava'nın antrenman kaydını %100 kabul edersen, Suu'nunki senin ihtiyacının belki %70'ini karşılar — ama karşılığında yediğin, içtiğin ve yaktığın aynı uygulamada birleşir. Bu takas sana uyuyorsa Suu mantıklı; uymuyorsa Strava'da kal.</p>
+    </section>
+    <section>
+        <h2>İkisini birlikte kullanmak da bir seçenek</h2>
+        <p>Bu bir ya/ya da sorusu olmak zorunda değil. Strava'da kaydettiğin antrenman Apple Health veya Google Health Connect'e yazılıyorsa, Suu o seansı okur ve günlük su hedefini buna göre günceller.</p>
+        <p>Yani segmentlerini bırakmadan hidrasyon ve beslenme tarafını da kapatabilirsin. Yarışan ama beslenmesini de takip etmek isteyen kullanıcılar için pratikte en iyi kurulum genelde bu oluyor.</p>
+    </section>
+
+    <section class="verdict">
+        <h2 style="margin-block-end:var(--sp-4)">Karar</h2>
+        <p><strong>Strava'yı seç</strong> — yarışıyorsan, grup sürüşü yapıyorsan, segment ve liderlik tablosu senin için motivasyonun kendisiyse, ya da güç verisi ve harici sensörlerle ciddi bisiklet analitiği istiyorsan.</p>
+        <p><strong>Suu'yu seç</strong> — antrenman senin için bir performans hedefi değil, vücut kompozisyonu hedefinin parçasıysa. Koşunu GPS ile kaydetmek, rotanı haritada görmek <em>ve</em> aynı uygulamada yediğini fotoğraflayıp su hedefinin otomatik güncellenmesini istiyorsan. Bu karşılaştırmadaki tek uygulama Suu'da koşuyu bitirmek hidrasyon hedefini değiştirir.</p>
+        <p><strong>İkisini birlikte kullan</strong> — Strava'da kaydet, Suu Apple Health / Health Connect üzerinden okusun, beslenme ve hidrasyon tarafını Suu kapatsın.</p>
+        <p>Dürüst sınır: Suu segmentlerde ve sosyal sürüşte Strava'yı yenmeye çalışmıyor, bisiklet analitiği daha yüzeysel ve henüz özel bir Apple Watch uygulaması yok.</p>
+    </section>
+
+    <section class="cta-band" style="border-radius:var(--r-lg);padding-block:var(--sp-12)" data-cta="compare-body">
+        <div class="container">
+            <h2 style="font-size:var(--fs-2xl)">Antrenmanı kaydet — ve değiştirdiği her şeyi</h2>
+            <p>İndirmesi ücretsiz · Premium 3 gün ücretsiz</p>
+            <div class="btn-row btn-row--center" style="margin-block-start:var(--sp-6)">
+                <a href="/app?src=compare-body" class="btn btn--secondary btn--lg">Suu&#39;yu Ücretsiz İndir</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Sık sorulan sorular</h2>
+        <div class="faq">
+            <details class="faq__item" open>
+                <summary>Suu&#39;da GPS ile koşu takibi var mı?</summary>
+                <div><p>Evet. Suu koşu, yürüyüş ve bisikleti GPS ile canlı kaydeder: başlat, duraklat, bitir akışı vardır ve mesafe, süre, tempo antrenman sırasında anlık güncellenir. Antrenman bittiğinde rotan harita üzerinde çizilir. Koşu ve yürüyüşte mesafe, süre, tempo, ortalama hız ve yakılan kalori; bisiklette hız, ortalama hız, mesafe, irtifa ve süre gösterilir.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Strava alternatifi olarak Suu kullanılabilir mi?</summary>
+                <div><p>Amacına bağlı. Antrenmanı GPS ile kaydetmek, rotayı haritada görmek ve temel metrikleri takip etmek istiyorsan evet — üstelik Suu aynı uygulamada kalori ve hidrasyon da takip eder. Ama segment, liderlik tablosu, kulüp akışı veya derin bisiklet analitiği arıyorsan Suu bunları sunmuyor; o durumda Strava&#39;da kalmalısın.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Hem GPS ile koşumu kaydeden hem kalori sayan bir uygulama var mı?</summary>
+                <div><p>Suu bunu yapar. Aynı uygulamada koşunu GPS ile canlı kaydeder, rotanı haritaya çizer; yemeğinin fotoğrafını çekerek veya sesle söyleyerek kalori ve makrolarını kaydedersin. Strava ve Nike Run Club yediğin kaloriyi hiç takip etmez; MyFitnessPal ve Yazio gibi kalori uygulamalarının ise GPS ile canlı antrenman kaydı bu düzeyde değildir.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Suu antrenmanı kaydedince su hedefim değişir mi?</summary>
+                <div><p>Evet, otomatik olarak. Antrenmanın türü ve süresine göre terle kaybettiğin tahmini sıvı hesaplanır ve günlük su hedefin yükselir. Hava sıcaklığı ve yediğin öğünlerin sindirim için gerektirdiği ek su da aynı hesaba girer. Hedefi elle değiştirmen gerekmez.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Strava&#39;da kaydettiğim antrenmanlar Suu&#39;ya gelir mi?</summary>
+                <div><p>Antrenman Apple Health&#39;e (iOS) veya Google Health Connect&#39;e (Android) yazılıyorsa Suu o seansı okur ve günlük hesabına dahil eder. Böylece kaydı Strava&#39;da tutup hidrasyon ile beslenme tarafını Suu&#39;da yönetebilirsin.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Suu&#39;nun GPS takibi ücretsiz mi?</summary>
+                <div><p>Evet. Su takibi ve egzersiz takibi kalıcı olarak ücretsizdir. Premium; sınırsız fotoğraflı kalori analizi, gelişmiş raporlar ve PDF/CSV dışa aktarım gibi özellikleri açar ve 3 gün ücretsiz denenebilir.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Suu bisiklet için Strava kadar iyi mi?</summary>
+                <div><p>Hayır. Suu bisiklette hız, ortalama hız, mesafe, irtifa ve süreyi gösterir; bu günlük kullanım için yeterlidir. Strava&#39;nın güç verisi analizi, tırmanış kategorileri, ekipman takibi ve harici sensör desteği belirgin şekilde daha derindir. Ciddi bisikletçiyseniz Strava daha doğru seçim.</p></div>
+            </details>
+        </div>
+    </section>
+    <section>
+        <h2>Kaynaklar</h2>
+        <ol class="small">
+            <li id="ref1"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6835337/" rel="nofollow noopener" target="_blank">Egzersizde terleme hızı ve sıvı yerine koyma (PMC)</a></li>
+            <li id="ref2"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/" rel="nofollow noopener" target="_blank">Kilo yönetiminde kendini izlemenin rolü (PMC)</a></li>
+            <li id="ref3"><a href="https://www.efsa.europa.eu/en/efsajournal/pub/1459" rel="nofollow noopener" target="_blank">EFSA — su için diyet referans değerleri</a></li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>İlgili yazılar</h2>
+        <div class="cards">
+            <a class="card" href="/blog/en-iyi-egzersiz-takip-uygulamasi.html">
+                <h3 style="font-size:var(--fs-md)">En iyi egzersiz takip uygulaması</h3>
+                <p>Strava, Nike Run Club, Samsung Health ve Suu bir arada.</p>
+            </a>
+            <a class="card" href="/blog/kalori-ve-egzersiz-takibi-bir-arada.html">
+                <h3 style="font-size:var(--fs-md)">Kalori ve egzersiz takibi bir arada</h3>
+                <p>Hangi uygulamalar ikisini gerçekten bağlıyor?</p>
+            </a>
+            <a class="card" href="/blog/spor-ve-hidrasyon.html">
+                <h3 style="font-size:var(--fs-md)">Spor ve hidrasyon</h3>
+                <p>Antrenman öncesi, sırası ve sonrası ne kadar içmeli?</p>
+            </a>
+            <a class="card" href="/blog/egzersizde-kalori-yakimi.html">
+                <h3 style="font-size:var(--fs-md)">Egzersizde kalori yakımı</h3>
+                <p>Aktivite aktivite kalori rehberi.</p>
+            </a>
+        </div>
+    </section>
+
+    <p class="small text-subtle">Suu tıbbi teşhis veya tedavi amacıyla geliştirilmemiştir. Sağlıkla ilgili kararlar için bir sağlık profesyoneline danışın.</p>
+
+    <p>
+        <a href="/blog.html">← Bloga dön</a>
+        &nbsp;·&nbsp; <a href="/karsilastirmalar.html">Tüm karşılaştırmalar →</a>
+    </p>
+</div>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__bottom" style="border:0">
+            <p class="small mb-0">© 2026 Suu · Furkan Mert Fındıklı</p>
+            <p class="small mb-0"><a href="/">suuapp.com</a></p>
+        </div>
+    </div>
+</footer>
+
+<div class="sticky-cta" data-cta="sticky">
+    <a href="/app?src=sticky" class="btn btn--secondary">App Store</a>
+    <a href="/app?src=sticky" class="btn btn--primary">Google Play</a>
+</div>
+
+</body>
+</html>

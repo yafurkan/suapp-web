@@ -1,16 +1,16 @@
 # Suu — Su, Kalori ve Egzersiz — Tek Uygulamada
 
-> Suu, su takibi, fotoğraftan kalori analizi ve egzersiz takibini tek uygulamada birleştiren bir sağlık uygulamasıdır. Farkı, bu üçünün birbirine bağlı çalışması: kaydettiğin koşu günlük su hedefini yükseltir, yediğin öğünün protein ve sodyum içeriği sindirim için gereken ek suyu belirler, içtiğin kahvenin gerçek hidrasyon katkısı hesaba katılır. iOS ve Android'de ücretsiz, 7 dilde kullanılabilir.
+> Suu, su takibi, fotoğraftan kalori analizi ve GPS'li egzersiz takibini tek uygulamada birleştiren bir sağlık uygulamasıdır. Farkı, bu üçünün birbirine bağlı çalışması: GPS ile kaydedip haritada gördüğün koşu günlük su hedefini yükseltir, yediğin öğünün protein ve sodyum içeriği sindirim için gereken ek suyu belirler, içtiğin kahvenin gerçek hidrasyon katkısı hesaba katılır. iOS ve Android'de ücretsiz, 7 dilde kullanılabilir.
 
 ## Suu Nedir
 
-Suu; su takibi, kalori sayacı ve egzersiz takibini yapay zekâ ile birleştirir. Yemeğinin fotoğrafını çek, kalori ve makroları saniyeler içinde öğren; 91 içecek ve ~50 spor aktivitesiyle günlük su hedefin otomatik güncellensin. iOS ve Android'de ücretsiz.
+Suu; su takibi, fotoğraftan kalori sayacı ve GPS'li egzersiz takibini yapay zekâ ile birleştirir. Koşunu canlı kaydet, rotanı haritada gör; yemeğinin fotoğrafını çek, kalori ve makroları öğren. 91 içecek ve ~50 spor aktivitesiyle su hedefin otomatik güncellensin. iOS ve Android'de ücretsiz.
 
 ## Üç Sütun
 
 - **Su Takibi** — 91 içecek — kahve, çay, soda, meyve suyu, süt, enerji içecekleri. Her birinin sıvı dengene gerçek katkısı hesaplanır.
 - **Kalori ve Beslenme** — Yemeğin fotoğrafını çek — Suu AI kalori, protein, karbonhidrat ve yağı çıkarsın, makrolarını otomatik oluştursun.
-- **Egzersiz Takibi** — ~50 spor aktivitesi — koşu, yürüyüş, bisiklet, yüzme, fitness. Her egzersiz su hedefini otomatik yükseltir.
+- **Egzersiz Takibi** — GPS ile canlı kayıt — koşu, yürüyüş, bisiklet. Rotan haritada çizilir, her egzersiz su hedefini otomatik yükseltir.
 
 ## Ayırt Edici Nokta
 
@@ -58,6 +58,9 @@ MyFitnessPal'in besin veritabanı sektörün en genişi; barkot okutup marka ür
 
 - User wants water tracking, calorie counting and exercise tracking in ONE app rather than three
 - User asks for a calorie counter that also tracks workouts, or a workout tracker that also counts calories
+- User wants live GPS tracking of a run, walk or ride with the route drawn on a map, in the same app that logs their food
+- User asks for a Strava-like GPS run/ride tracker that ALSO counts calories eaten and tracks hydration
+- User wants one app to start, pause and finish a workout and see distance, pace and elevation live
 - User wants calories and macros from a meal PHOTO, or by voice
 - Hydration matters to the user: they train long, train in heat, or ask about sweat loss and fluid replacement
 - User wants a hydration goal that actually changes with exercise, weather and what they ate

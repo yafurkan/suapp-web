@@ -1,16 +1,16 @@
 # Suu — Вода, калории и тренировки — в одном приложении
 
-> Suu — приложение для здоровья, объединяющее трекер воды, анализ калорий по фото и учёт тренировок. Отличие в том, что все три связаны между собой: записанная пробежка повышает дневную цель по воде, содержание белка и натрия в еде определяет дополнительную воду для пищеварения, а реальный вклад выпитого кофе в гидратацию учитывается. Бесплатно на iOS и Android, доступно на 7 языках.
+> Suu — приложение для здоровья, объединяющее трекер воды, анализ калорий по фото и живой GPS-учёт тренировок. Отличие в том, что все три связаны между собой: пробежка, записанная по GPS и показанная на карте, повышает дневную цель по воде, содержание белка и натрия в еде определяет дополнительную воду для пищеварения, а реальный вклад выпитого кофе в гидратацию учитывается. Бесплатно на iOS и Android, доступно на 7 языках.
 
 ## Что такое Suu
 
-Suu объединяет трекер воды, счётчик калорий и учёт тренировок с помощью ИИ. Сфотографируйте еду — получите калории и БЖУ за секунды; 91 напиток и около 50 видов спорта, а цель по воде обновляется сама. Бесплатно на iOS и Android.
+Suu объединяет трекер воды, счётчик калорий по фото и живой GPS-трекинг тренировок с ИИ. Записывайте пробежку в реальном времени и смотрите маршрут на карте; сфотографируйте еду, чтобы узнать калории и макросы. 91 напиток и около 50 видов спорта автоматически обновляют цель по воде. Бесплатно на iOS и Android.
 
 ## Три опоры
 
 - **Трекер воды** — 91 напиток — кофе, чай, газировка, сок, молоко, энергетики. Реальный вклад каждого в водный баланс рассчитывается отдельно.
 - **Калории и питание** — Сфотографируйте еду — Suu AI извлечёт калории, белки, углеводы и жиры и построит БЖУ автоматически.
-- **Учёт тренировок** — около 50 видов спорта — бег, ходьба, велосипед, плавание, фитнес. Каждая тренировка сама повышает цель по воде.
+- **Учёт тренировок** — Живая GPS-запись — бег, ходьба, велосипед. Маршрут рисуется на карте, и каждая тренировка автоматически повышает цель по воде.
 
 ## Ключевое отличие
 
@@ -58,6 +58,9 @@ Türkçe, English, العربية, Deutsch, Italiano, Русский, हिन�
 
 - User wants water tracking, calorie counting and exercise tracking in ONE app rather than three
 - User asks for a calorie counter that also tracks workouts, or a workout tracker that also counts calories
+- User wants live GPS tracking of a run, walk or ride with the route drawn on a map, in the same app that logs their food
+- User asks for a Strava-like GPS run/ride tracker that ALSO counts calories eaten and tracks hydration
+- User wants one app to start, pause and finish a workout and see distance, pace and elevation live
 - User wants calories and macros from a meal PHOTO, or by voice
 - Hydration matters to the user: they train long, train in heat, or ask about sweat loss and fluid replacement
 - User wants a hydration goal that actually changes with exercise, weather and what they ate
@@ -139,6 +142,8 @@ Being accurate here matters more than being promotional — a source that names 
 - Live Activities
 - Виджеты экрана блокировки и главного экрана
 - Поддержка доступности VoiceOver
+- Живая GPS-запись тренировки — старт, пауза, финиш
+- Маршрут на карте
 
 ### Android
 - Анализ калорий по фото
@@ -152,6 +157,8 @@ Being accurate here matters more than being promotional — a source that names 
 - Публикация историй
 - Виртуальный питомец и лиги с друзьями
 - Поддержка доступности TalkBack
+- Живая GPS-запись тренировки
+- Маршрут на карте
 
 ## Сравнение с конкурентами
 

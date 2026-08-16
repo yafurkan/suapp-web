@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ÜRETİLMİŞ DOSYA — elle düzenlemeyin.
+         Kaynak: content/compare/suu-vs-strava.json + content/compare/_template.html.j2
+         Yeniden üret: python3 scripts/build-compare.py --apply -->
+
+    <title>Suu vs Strava (2026): GPS Tracking, Calories and Hydration Compared | Suu</title>
+    <meta name="description" content="We compared Strava and Suu on live GPS workout tracking, route maps, calories burned, calories eaten and hydration. Which suits whom — and where Suu does not beat Strava.">
+    <meta name="keywords" content="suu vs strava, strava alternative, gps run tracking app, app that draws route on map, running app that counts calories, live workout tracking, cycling tracker app, workout and nutrition tracking">
+    <meta name="apple-itunes-app" content="app-id=6757619920">
+
+    <link rel="canonical" href="https://suuapp.com/blog/en/suu-vs-strava.html">
+    <!-- Hreflang cluster (auto-injected) -->
+    <link rel="alternate" hreflang="tr" href="https://suuapp.com/blog/suu-vs-strava.html">
+    <link rel="alternate" hreflang="en" href="https://suuapp.com/blog/en/suu-vs-strava.html">
+    <link rel="alternate" hreflang="x-default" href="https://suuapp.com/blog/suu-vs-strava.html">
+
+
+    <meta property="og:title" content="Suu vs Strava: GPS Workout Tracking, or Closing the Loop?">
+    <meta property="og:description" content="Both record your run with GPS and draw the route on a map. The difference starts after you hit Finish.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://suuapp.com/blog/en/suu-vs-strava.html">
+    <meta property="og:image" content="https://suuapp.com/assets/og-image.png">
+    <meta property="og:site_name" content="Suu">
+    <meta property="og:locale" content="en_US">
+    <meta property="article:published_time" content="2026-08-15">
+    <meta property="article:author" content="Furkan Mert Fındıklı">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SuuTakip">
+    <meta name="twitter:title" content="Suu vs Strava: GPS Workout Tracking, or Closing the Loop?">
+    <meta name="twitter:description" content="Both record your run with GPS and draw the route on a map. The difference starts after you hit Finish.">
+    <meta name="twitter:image" content="https://suuapp.com/assets/og-image.png">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/donation-widget.css">
+    <link rel="stylesheet" href="/assets/css/suu.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://suuapp.com/#organization",
+      "name": "Suu",
+      "url": "https://suuapp.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://suuapp.com/assets/favicon-512.png"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://suuapp.com/#furkan",
+      "name": "Furkan Mert Fındıklı",
+      "url": "https://suuapp.com/yazarlar/furkan-mert.html",
+      "jobTitle": "Kurucu \u0026 Geliştirici",
+      "worksFor": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/furkanfindikli/"
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://suuapp.com/blog/en/suu-vs-strava.html#article",
+      "headline": "Suu vs Strava: GPS Workout Tracking, or Closing the Loop?",
+      "description": "We compared Strava and Suu on live GPS workout tracking, route maps, calories burned, calories eaten and hydration. Which suits whom — and where Suu does not beat Strava.",
+      "image": "https://suuapp.com/assets/og-image.png",
+      "datePublished": "2026-08-15",
+      "dateModified": "2026-08-15",
+      "inLanguage": "en",
+      "mainEntityOfPage": "https://suuapp.com/blog/en/suu-vs-strava.html",
+      "author": {
+        "@id": "https://suuapp.com/#furkan"
+      },
+      "publisher": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "about": {
+        "@id": "https://suuapp.com/#suuapp-ios"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".answer-box",
+          "h1",
+          "h2",
+          ".verdict p"
+        ]
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://suuapp.com/blog/en/suu-vs-strava.html#itemlist",
+      "name": "Suu and Strava compared",
+      "inLanguage": "en",
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "numberOfItems": 2,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Strava",
+            "applicationCategory": "HealthApplication"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "SoftwareApplication",
+            "@id": "https://suuapp.com/#suuapp-ios",
+            "name": "Suu"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://suuapp.com/blog/en/suu-vs-strava.html#faq",
+      "inLanguage": "en",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does Suu have GPS run tracking?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Suu records running, walking and cycling live with GPS: there is a start, pause and finish flow, and distance, duration and pace update in real time during the session. When the workout ends, your route is drawn on the map. Running and walking show distance, duration, pace, average speed and calories burned; cycling shows speed, average speed, distance, elevation and duration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Suu be used as a Strava alternative?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on what you want. If you want to record workouts with GPS, see the route on a map and track core metrics, then yes — and Suu also tracks calories and hydration in the same app. But if you want segments, leaderboards, a club feed or deep cycling analytics, Suu does not offer those and you should stay with Strava."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there an app that tracks my run with GPS and counts calories?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Suu does this. In the same app it records your run live with GPS and draws the route on a map, and you log calories and macros by photographing your meal or saying it out loud. Strava and Nike Run Club do not track calories eaten at all, while calorie apps like MyFitnessPal and Yazio do not offer live GPS workout recording at this level."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does my water goal change when Suu records a workout?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, automatically. Based on the type and duration of the workout, the estimated fluid lost to sweat is calculated and your daily water goal rises. Ambient temperature and the extra water your meals require for digestion feed into the same calculation. You never adjust the goal by hand."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do workouts I record in Strava show up in Suu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If the workout is written to Apple Health (iOS) or Google Health Connect (Android), Suu reads that session and includes it in your daily totals. That lets you keep recording in Strava while managing hydration and nutrition in Suu."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Suu's GPS tracking free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Water tracking and exercise tracking are free forever. Premium unlocks unlimited photo calorie analysis, advanced reports and PDF/CSV export, and can be trialled free for 3 days."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Suu as good as Strava for cycling?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Suu shows speed, average speed, distance, elevation and duration for cycling, which is enough for everyday use. Strava's power data analysis, climb categories, gear tracking and external sensor support are clearly deeper. If you ride seriously, Strava is the better choice."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://suuapp.com/blog/en/suu-vs-strava.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Suu",
+          "item": "https://suuapp.com/hosgeldiniz-en.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://suuapp.com/blog-en.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Suu vs Strava: GPS Workout Tracking, or Closing the Loop?",
+          "item": "https://suuapp.com/blog/en/suu-vs-strava.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+
+    <script src="/assets/js/analytics.js" defer></script>
+    <script src="/lang-switcher.js?v=3" defer></script>
+    <script src="/donation-widget.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="nav">
+    <div class="container nav__inner">
+        <a href="/hosgeldiniz-en.html" class="nav__logo">💧 Suu</a>
+        <ul class="nav__links">
+            <li><a href="/blog-en.html">Blog</a></li>
+            <li><a href="/hosgeldiniz-en.html#karsilastirma">Comparison</a></li>
+            <li><a href="/hosgeldiniz-en.html#fiyat">Pricing</a></li>
+        </ul>
+        <div class="nav__actions">
+            <a href="/app?src=compare-nav" class="btn btn--primary" data-cta="nav"
+               style="min-height:40px;padding:var(--sp-2) var(--sp-5);font-size:var(--fs-sm)">Download Free</a>
+        </div>
+    </div>
+</nav>
+
+<main id="main">
+
+<header class="section" style="padding-block-end:var(--sp-8)">
+    <div class="container container--narrow">
+        <span class="badge badge--new">🏃 Comparison 2026</span>
+        <h1 style="margin-block-start:var(--sp-4)">Suu vs Strava: GPS Workout Tracking, or Closing the Loop?</h1>
+        <p class="small text-subtle">Published: 15 August 2026 · Furkan Mert Fındıklı · 9 min read</p>
+    </div>
+</header>
+
+<div class="container container--narrow stack--lg" style="padding-block-end:var(--sp-24)">
+
+    <!-- CEVAP-ÖNCE: alıntılanan blok burasıdır -->
+    <div class="answer-box">
+        <p><strong>Short answer:</strong> Both record your run, walk or ride live with GPS and show the route on a map. The difference starts after the workout ends. Strava turns that data into a performance story: segments, leaderboards, clubs and deep cycling analytics — and nothing else comes close there. Suu instead connects the workout to the rest of your day: calories burned meet calories eaten on the same screen, the fluid you lost to sweat raises your daily water goal automatically, and you photograph your meal to log macros in the same app. If you race, use Strava. If the workout is part of a body-composition goal — and you would rather not carry three separate apps — use Suu.</p>
+    </div>
+
+    <div class="disclosure">This comparison was written by the Suu team, so you are reading a biased source. To offset that we have listed exactly where Strava beats Suu — on segments, the social feed and cycling analytics it is not even a contest. Strava details reflect publicly available information as of August 2026 and change frequently; subscription scope varies by country.</div>
+    <p>Nobody asks whether Strava is any good. It is the reference point for running and cycling: mature GPS recording, clean route and map visualisation, and a social layer built over a decade. It solved a problem, and solved it well.</p>
+    <p>But Strava is not a <strong>nutrition</strong> app and is not trying to be. It estimates what you burned; it has no idea what you ate. It records that you sweated; it does not tell you how much to drink. That is a deliberate scope choice, not a flaw.</p>
+    <p>The problem is this: for people whose goal is losing fat, building muscle, or simply not feeling wrecked after training, half the ledger lives in other apps. You burned 600 kcal — are you in a deficit or a surplus? You sweated for 70 minutes in 30 °C heat — how many extra millilitres do you need today?</p>
+    <p>So we compared the two on a single question: <strong>what happens after you hit Finish?</strong></p>
+
+    <section>
+        <h2>Suu and Strava compared</h2>
+        <div class="table-scroll">
+            <table class="table">
+                <caption class="sr-only">Comparison of Suu and Strava on GPS tracking, nutrition and hydration</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Feature</th>
+                        <th scope="col">Strava</th>
+                        <th scope="col" class="col-suu">Suu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Live GPS workout recording</td><td class="yes">✓</td><td class="col-suu yes">✓</td></tr>
+                    <tr><td>Route drawn on the map</td><td class="yes">✓ Best in class</td><td class="col-suu yes">✓</td></tr>
+                    <tr><td>Start / pause / finish flow</td><td class="yes">✓</td><td class="col-suu yes">✓</td></tr>
+                    <tr><td>Live distance, pace, duration</td><td class="yes">✓</td><td class="col-suu yes">✓</td></tr>
+                    <tr><td>Segments and leaderboards</td><td class="yes">✓ Unmatched</td><td class="col-suu no">✗</td></tr>
+                    <tr><td>Social feed, clubs, following</td><td class="yes">✓ Unmatched</td><td class="col-suu ">Friend leagues (4 people)</td></tr>
+                    <tr><td>Depth of cycling analytics</td><td class="yes">✓ Deepest</td><td class="col-suu ">Basic: speed, avg speed, distance, elevation</td></tr>
+                    <tr><td>Number of activity types</td><td class="yes">30+</td><td class="col-suu yes">~50</td></tr>
+                    <tr><td>External device ecosystem (Garmin, Wahoo, Zwift)</td><td class="yes">✓ Very broad</td><td class="col-suu ">Via Apple Health / Health Connect</td></tr>
+                    <tr><td>Calories burned estimate</td><td class="yes">✓</td><td class="col-suu yes">✓</td></tr>
+                    <tr><td>Food and calorie logging (eaten)</td><td class="no">✗</td><td class="col-suu yes">✓ Photo + voice</td></tr>
+                    <tr><td>Macro breakdown (protein/carbs/fat)</td><td class="no">✗</td><td class="col-suu yes">✓</td></tr>
+                    <tr><td>Hydration tracking</td><td class="no">✗</td><td class="col-suu yes">✓ 91 beverages</td></tr>
+                    <tr><td>Workout raises your water goal automatically</td><td class="no">✗</td><td class="col-suu yes">✓</td></tr>
+                    <tr><td>Chat control (AI assistant)</td><td class="no">✗</td><td class="col-suu yes">✓ Suu AI</td></tr>
+                    <tr><td>Apple Health / Google Health Connect</td><td class="yes">✓</td><td class="col-suu yes">✓ Two-way</td></tr>
+                    <tr><td>Dedicated Apple Watch app</td><td class="yes">✓</td><td class="col-suu no">In development</td></tr>
+                    <tr><td>Full Turkish and Arabic (RTL) localisation</td><td class="no">Partial</td><td class="col-suu yes">✓ 7 languages</td></tr>
+                    <tr><td>Free tier usable long-term</td><td class="no">Recording is free; segments/route analysis need a subscription</td><td class="col-suu yes">✓ Water and exercise tracking free forever</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section>
+        <h2>Where Strava genuinely wins</h2>
+        <p>There is no point glossing over these, because this is exactly why Strava users stay:</p>
+        <ul>
+            <li><strong>Segments and leaderboards</strong> — being ranked against everyone who ever climbed the same hill is something Strava invented and still does best. Suu has nothing like it and is not attempting it.</li>
+            <li><strong>The social layer</strong> — clubs, kudos, the following feed, events. That is a decade of network effect; you do not catch it by copying features.</li>
+            <li><strong>Cycling analytics</strong> — power data, climb categories, gear tracking, external sensor support. If you ride seriously, the comparison ends here.</li>
+            <li><strong>Device ecosystem</strong> — Garmin, Wahoo, Zwift and dozens of devices write straight into Strava. Suu reads those sessions through Apple Health or Health Connect; it works, but it is not the same depth.</li>
+            <li><strong>Route discovery</strong> — finding other people's routes and building new ones in your area is a real Strava strength.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>The gap nobody fills: the workout is half the equation</h2>
+        <p>If your goal is performance, a workout tracker alone is enough. If your goal is body composition — losing fat, gaining muscle, or simply not being wrecked after training — the workout is only one side of the ledger.</p>
+        <p>You burned 600 kcal. Are you in a deficit today? Strava cannot know, because it never sees what you ate. That number lives in another app, and the two never meet on the same screen.</p>
+        <p>You sweated for 70 minutes at 30 °C. Your fluid need today is meaningfully higher than on a normal day. That calculation needs a third app — or, as with most people, it simply never happens.</p>
+        <p>This is precisely Suu's design decision: the workout is not an endpoint but an <strong>input</strong> to the rest of your day. Finish the run and your water goal rises on its own; the calories you burned land in the same log as the ones you ate.</p>
+    </section>
+    <section>
+        <h2>What Suu&#39;s GPS does and does not do</h2>
+        <p>To be clear: Suu's GPS covers the core job completely, and does not go into deep analytics.</p>
+        <p><strong>It does:</strong> record running, walking and cycling live — start, pause, finish. Distance, duration and pace update in real time during the session. When you finish, your route is drawn on the map. Running and walking show distance, duration, pace, average speed and calories burned; cycling shows speed, average speed, distance, elevation and duration. There are around 50 activity types, and you can share the session with a story template.</p>
+        <p><strong>It does not:</strong> segments, leaderboards, kudos, power meter analysis, route planner. If you want those, the right answer is Strava.</p>
+        <p>The trade is simple: if Strava's workout recording is 100%, Suu's covers perhaps 70% of what you need — and in exchange, what you ate, drank and burned all merge in one app. If that trade suits you, Suu makes sense; if not, stay on Strava.</p>
+    </section>
+    <section>
+        <h2>Using both together is also an option</h2>
+        <p>This does not have to be either/or. If the workout you record in Strava is written to Apple Health or Google Health Connect, Suu reads that session and updates your daily water goal accordingly.</p>
+        <p>So you can keep your segments and still close the hydration and nutrition side. For people who race but also want to track nutrition, this is usually the best setup in practice.</p>
+    </section>
+
+    <section class="verdict">
+        <h2 style="margin-block-end:var(--sp-4)">Verdict</h2>
+        <p><strong>Choose Strava</strong> if you race, ride in groups, treat segments and leaderboards as the motivation itself, or want serious cycling analytics with power data and external sensors.</p>
+        <p><strong>Choose Suu</strong> if the workout is part of a body-composition goal rather than a performance goal — if you want to record your run with GPS and see the route on a map <em>and</em> photograph your food in the same app while your water goal updates itself. Suu is the only app in this comparison where finishing a run changes your hydration target.</p>
+        <p><strong>Use both</strong> — record in Strava, let Suu read it through Apple Health / Health Connect, and let Suu close the nutrition and hydration side.</p>
+        <p>Honest limitation: Suu is not trying to beat Strava at segments or social riding, its cycling analytics are shallower, and it does not have a dedicated Apple Watch app yet.</p>
+    </section>
+
+    <section class="cta-band" style="border-radius:var(--r-lg);padding-block:var(--sp-12)" data-cta="compare-body">
+        <div class="container">
+            <h2 style="font-size:var(--fs-2xl)">Track the workout — and everything it changes</h2>
+            <p>Free to download · Premium free for 3 days</p>
+            <div class="btn-row btn-row--center" style="margin-block-start:var(--sp-6)">
+                <a href="/app?src=compare-body" class="btn btn--secondary btn--lg">Download Suu Free</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Frequently asked questions</h2>
+        <div class="faq">
+            <details class="faq__item" open>
+                <summary>Does Suu have GPS run tracking?</summary>
+                <div><p>Yes. Suu records running, walking and cycling live with GPS: there is a start, pause and finish flow, and distance, duration and pace update in real time during the session. When the workout ends, your route is drawn on the map. Running and walking show distance, duration, pace, average speed and calories burned; cycling shows speed, average speed, distance, elevation and duration.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Can Suu be used as a Strava alternative?</summary>
+                <div><p>It depends on what you want. If you want to record workouts with GPS, see the route on a map and track core metrics, then yes — and Suu also tracks calories and hydration in the same app. But if you want segments, leaderboards, a club feed or deep cycling analytics, Suu does not offer those and you should stay with Strava.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Is there an app that tracks my run with GPS and counts calories?</summary>
+                <div><p>Suu does this. In the same app it records your run live with GPS and draws the route on a map, and you log calories and macros by photographing your meal or saying it out loud. Strava and Nike Run Club do not track calories eaten at all, while calorie apps like MyFitnessPal and Yazio do not offer live GPS workout recording at this level.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Does my water goal change when Suu records a workout?</summary>
+                <div><p>Yes, automatically. Based on the type and duration of the workout, the estimated fluid lost to sweat is calculated and your daily water goal rises. Ambient temperature and the extra water your meals require for digestion feed into the same calculation. You never adjust the goal by hand.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Do workouts I record in Strava show up in Suu?</summary>
+                <div><p>If the workout is written to Apple Health (iOS) or Google Health Connect (Android), Suu reads that session and includes it in your daily totals. That lets you keep recording in Strava while managing hydration and nutrition in Suu.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Is Suu&#39;s GPS tracking free?</summary>
+                <div><p>Yes. Water tracking and exercise tracking are free forever. Premium unlocks unlimited photo calorie analysis, advanced reports and PDF/CSV export, and can be trialled free for 3 days.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Is Suu as good as Strava for cycling?</summary>
+                <div><p>No. Suu shows speed, average speed, distance, elevation and duration for cycling, which is enough for everyday use. Strava&#39;s power data analysis, climb categories, gear tracking and external sensor support are clearly deeper. If you ride seriously, Strava is the better choice.</p></div>
+            </details>
+        </div>
+    </section>
+    <section>
+        <h2>References</h2>
+        <ol class="small">
+            <li id="ref1"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6835337/" rel="nofollow noopener" target="_blank">Sweat rate and fluid replacement during exercise (PMC)</a></li>
+            <li id="ref2"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/" rel="nofollow noopener" target="_blank">Role of self-monitoring in weight management (PMC)</a></li>
+            <li id="ref3"><a href="https://www.efsa.europa.eu/en/efsajournal/pub/1459" rel="nofollow noopener" target="_blank">EFSA — dietary reference values for water</a></li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Related articles</h2>
+        <div class="cards">
+            <a class="card" href="/blog/en/best-workout-tracker-app.html">
+                <h3 style="font-size:var(--fs-md)">Best workout tracker app</h3>
+                <p>Strava, Nike Run Club, Samsung Health and Suu together.</p>
+            </a>
+            <a class="card" href="/blog/en/calorie-counter-with-exercise-tracker.html">
+                <h3 style="font-size:var(--fs-md)">Calorie counter with exercise tracker</h3>
+                <p>Which apps actually connect the two?</p>
+            </a>
+            <a class="card" href="/blog/en/hydration-and-exercise.html">
+                <h3 style="font-size:var(--fs-md)">Hydration and exercise</h3>
+                <p>How much to drink before, during and after training.</p>
+            </a>
+            <a class="card" href="/blog/en/calories-burned-exercise.html">
+                <h3 style="font-size:var(--fs-md)">How many calories does exercise burn?</h3>
+                <p>Activity-by-activity calorie guide.</p>
+            </a>
+        </div>
+    </section>
+
+    <p class="small text-subtle">Suu is not intended for medical diagnosis or treatment. Consult a healthcare professional for health-related decisions.</p>
+
+    <p>
+        <a href="/blog-en.html">← Back to blog</a>
+        &nbsp;·&nbsp; <a href="/comparisons.html">All comparisons →</a>
+    </p>
+</div>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__bottom" style="border:0">
+            <p class="small mb-0">© 2026 Suu · Furkan Mert Fındıklı</p>
+            <p class="small mb-0"><a href="/hosgeldiniz-en.html">suuapp.com</a></p>
+        </div>
+    </div>
+</footer>
+
+<div class="sticky-cta" data-cta="sticky">
+    <a href="/app?src=sticky" class="btn btn--secondary">App Store</a>
+    <a href="/app?src=sticky" class="btn btn--primary">Google Play</a>
+</div>
+
+</body>
+</html>
