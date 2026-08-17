@@ -79,11 +79,12 @@ def build_cluster_map(reg: dict) -> dict[str, dict[str, str]]:
     return out
 
 
-def render_xhtml(cluster: dict[str, str], default: str) -> str:
+def render_xhtml(cluster: dict[str, str], xdefault_lang: str) -> str:
     lines = []
     for lang, href in cluster.items():
         lines.append(f'        <xhtml:link rel="alternate" hreflang="{lang}" href="{href}"/>')
-    xdefault = cluster.get(default) or next(iter(cluster.values()))
+    # x-default hedefi _xdefault'tan gelir (URL yapısını süren _default'tan ayrı).
+    xdefault = cluster.get(xdefault_lang) or next(iter(cluster.values()))
     lines.append(f'        <xhtml:link rel="alternate" hreflang="x-default" href="{xdefault}"/>')
     return "\n".join(lines) + "\n"
 
@@ -93,6 +94,7 @@ def main() -> int:
 
     reg = json.loads(REGISTRY.read_text(encoding="utf-8"))
     default = reg["_default"]
+    xdefault_lang = reg.get("_xdefault", default)
     clusters = build_cluster_map(reg)
 
     xml = SITEMAP.read_text(encoding="utf-8")
@@ -117,7 +119,7 @@ def main() -> int:
         cleaned = RE_XHTML.sub("", inner)
         cluster = clusters.get(loc)
         if cluster:
-            block = render_xhtml(cluster, default)
+            block = render_xhtml(cluster, xdefault_lang)
             # hreflang bloğunu <loc>'un hemen ardına koy
             cleaned = cleaned.replace(loc_m.group(0), loc_m.group(0) + "\n" + block.rstrip("\n"), 1)
         new = f"    <url>{cleaned}</url>\n"
@@ -142,7 +144,7 @@ def main() -> int:
     added_xml = ""
     for url in sorted(set(wanted)):
         cluster = clusters.get(url)
-        hre = ("\n" + render_xhtml(cluster, default).rstrip("\n")) if cluster else ""
+        hre = ("\n" + render_xhtml(cluster, xdefault_lang).rstrip("\n")) if cluster else ""
         prio = "1.0" if url == f"{BASE}/" else ("0.5" if url.endswith(".txt") else "0.8")
         added_xml += (
             f"    <url>\n"

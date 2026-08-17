@@ -1,7 +1,6 @@
 {
   "_note": "Karşılaştırma hub'ı. Sadece HANGİ sayfanın hangi kümede olduğu burada tutulur; başlık ve açıklama sayfanın kendi meta verisinden okunur (scripts/build-compare-hub.py). Böylece sayfa güncellenince hub kendiliğinden güncellenir.",
   "published": "2026-08-15",
-
   "pages": {
     "tr": {
       "outfile": "karsilastirmalar.html",
@@ -55,17 +54,16 @@
         }
       ]
     },
-
     "en": {
       "outfile": "comparisons.html",
       "badge": "📊 Comparison Hub",
       "h1": "App Comparisons: Calorie, Exercise and Water Tracking",
       "meta": {
         "title": "Calorie, Exercise and Water Tracking App Comparisons (2026) | Suu",
-        "description": "Fifteen head-to-head reviews of calorie counters, workout trackers and hydration apps: MyFitnessPal, Yazio, Cal AI, Lifesum, Cronometer, Strava and Suu. Which one suits whom?",
+        "description": "Thirteen head-to-head reviews of calorie counters, workout trackers and hydration apps: MyFitnessPal, Yazio, Cal AI, Lifesum, Cronometer, Strava and Suu. Which one suits whom?",
         "keywords": "calorie app comparison, best calorie counting app, workout tracker app, water tracking app, MyFitnessPal alternative, Yazio alternative, Cal AI alternative, Lifesum vs Yazio",
         "og_title": "Calorie, Exercise and Water Tracking App Comparisons (2026)",
-        "og_description": "Fifteen comparisons on one page: MyFitnessPal, Yazio, Cal AI, Lifesum, Cronometer, Strava and Suu. Which one suits whom?"
+        "og_description": "Thirteen comparisons on one page: MyFitnessPal, Yazio, Cal AI, Lifesum, Cronometer, Strava and Suu. Which one suits whom?"
       },
       "answer": "Three things decide which calorie counter fits you: how fast logging a meal actually is, whether the free tier does real work, and whether exercise updates your daily targets. The comparisons below test all three, app by app.",
       "intro": [
@@ -117,7 +115,6 @@
         }
       ]
     },
-
     "ar": {
       "outfile": "muqaranat.html",
       "badge": "📊 مركز المقارنات",
@@ -157,7 +154,6 @@
         }
       ]
     },
-
     "ru": {
       "outfile": "sravneniya.html",
       "badge": "📊 Центр сравнений",

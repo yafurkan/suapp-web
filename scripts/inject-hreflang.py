@@ -9,7 +9,8 @@ PAGE_MAP'i ve rebuild-sitemap.py bambaşka listeler kullanıyordu. Üç kaynak
 zamanla birbirinden ayrıldı. Artık tek kayıt defteri var — sapma imkânsız.
 
 Yaptığı: her sayfanın <head>'indeki mevcut hreflang etiketlerini silip
-kayıt defterine göre yeniden yazar. x-default varsayılan dile (tr) işaret eder;
+kayıt defterine göre yeniden yazar. x-default, kayıt defterindeki _xdefault diline
+(en) işaret eder — URL yapısını süren _default (tr) ile karıştırılmamalı;
 o dilde karşılığı yoksa kümedeki ilk dile düşer.
 
 Kullanım:
@@ -99,6 +100,8 @@ def main() -> int:
 
     reg = json.loads(REGISTRY.read_text(encoding="utf-8"))
     default_lang = reg["_default"]
+    # x-default hedefi ayrı: URL yapısı TR temelli, varsayılan sunum dili EN.
+    xdefault_lang = reg.get("_xdefault", default_lang)
     order = reg["_languages"]
 
     edited: list[str] = []
@@ -114,7 +117,7 @@ def main() -> int:
             pairs = [(lang, urls[lang]) for lang in order if lang in urls]
             if len(pairs) < 2:
                 continue                      # tek dilli aile — hreflang gereksiz
-            xdefault = urls.get(default_lang) or pairs[0][1]
+            xdefault = urls.get(xdefault_lang) or urls.get(default_lang) or pairs[0][1]
             pairs.append(("x-default", xdefault))
 
             for lang, url in urls.items():
