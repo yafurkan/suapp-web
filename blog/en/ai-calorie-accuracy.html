@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ÜRETİLMİŞ DOSYA — elle düzenlemeyin.
+         Kaynak: content/compare/ai-calorie-accuracy.json + content/compare/_template.html.j2
+         Yeniden üret: python3 scripts/build-compare.py --apply -->
+
+    <title>How Accurate Are AI Calorie Photo Apps? (2026 Research Review)</title>
+    <meta name="description" content="A systematic review of 52 studies puts AI calorie estimation error between 0.10% and 38.3%. But self-reported food logs are off by up to 47%. Here is what that means for photo-based calorie apps, and when the error actually matters.">
+    <meta name="keywords" content="ai calorie app accuracy, are ai calorie counters accurate, photo calorie app accuracy, ai food recognition accuracy, calorie tracking error, cal ai accuracy, food photo calorie estimation">
+    <meta name="apple-itunes-app" content="app-id=6757619920">
+
+    <link rel="canonical" href="https://suuapp.com/blog/en/ai-calorie-accuracy.html">
+    <!-- Hreflang cluster (auto-injected) -->
+    <link rel="alternate" hreflang="tr" href="https://suuapp.com/blog/yapay-zeka-kalori-dogrulugu.html">
+    <link rel="alternate" hreflang="en" href="https://suuapp.com/blog/en/ai-calorie-accuracy.html">
+    <link rel="alternate" hreflang="x-default" href="https://suuapp.com/blog/en/ai-calorie-accuracy.html">
+
+
+    <meta property="og:title" content="How Accurate Are AI Calorie Photo Apps? What the Research Says">
+    <meta property="og:description" content="52 studies reviewed: AI calorie error 0.10–38.3%. Manual self-reports: up to 47% under. Which error hurts your goal more?">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://suuapp.com/blog/en/ai-calorie-accuracy.html">
+    <meta property="og:image" content="https://suuapp.com/assets/og-image.png">
+    <meta property="og:site_name" content="Suu">
+    <meta property="og:locale" content="en_US">
+    <meta property="article:published_time" content="2026-08-17">
+    <meta property="article:author" content="Furkan Mert Fındıklı">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SuuTakip">
+    <meta name="twitter:title" content="How Accurate Are AI Calorie Photo Apps? What the Research Says">
+    <meta name="twitter:description" content="52 studies reviewed: AI calorie error 0.10–38.3%. Manual self-reports: up to 47% under. Which error hurts your goal more?">
+    <meta name="twitter:image" content="https://suuapp.com/assets/og-image.png">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/donation-widget.css">
+    <link rel="stylesheet" href="/assets/css/suu.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://suuapp.com/#organization",
+      "name": "Suu",
+      "url": "https://suuapp.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://suuapp.com/assets/favicon-512.png"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://suuapp.com/#furkan",
+      "name": "Furkan Mert Fındıklı",
+      "url": "https://suuapp.com/yazarlar/furkan-mert.html",
+      "jobTitle": "Kurucu \u0026 Geliştirici",
+      "worksFor": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/furkanfindikli/"
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://suuapp.com/blog/en/ai-calorie-accuracy.html#article",
+      "headline": "How Accurate Are AI Calorie Photo Apps? What the Research Actually Says",
+      "description": "A systematic review of 52 studies puts AI calorie estimation error between 0.10% and 38.3%. But self-reported food logs are off by up to 47%. Here is what that means for photo-based calorie apps, and when the error actually matters.",
+      "image": "https://suuapp.com/assets/og-image.png",
+      "datePublished": "2026-08-17",
+      "dateModified": "2026-08-17",
+      "inLanguage": "en",
+      "mainEntityOfPage": "https://suuapp.com/blog/en/ai-calorie-accuracy.html",
+      "author": {
+        "@id": "https://suuapp.com/#furkan"
+      },
+      "publisher": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "about": {
+        "@id": "https://suuapp.com/#suuapp-ios"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".answer-box",
+          "h1",
+          "h2",
+          ".verdict p"
+        ]
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://suuapp.com/blog/en/ai-calorie-accuracy.html#itemlist",
+      "name": "Error rates by logging method",
+      "inLanguage": "en",
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "numberOfItems": 2,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Reported error",
+            "applicationCategory": "HealthApplication"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Source",
+            "applicationCategory": "HealthApplication"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://suuapp.com/blog/en/ai-calorie-accuracy.html#faq",
+      "inLanguage": "en",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How accurate are AI calorie counting apps?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A 2023 systematic review of 52 studies (Shonkoff et al., Annals of Medicine, PMID 38060823) reported average relative errors of 0.10% to 38.3% for AI calorie estimation from images, with individual estimates ranging up to 79.6% error. Accuracy is best on simple single foods and worst on mixed dishes and anything cooked in fat that is not visible in the photo. The review concluded that AI estimates are in line with, and potentially better than, human estimates of the same images."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are AI photo apps more accurate than logging food manually?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Against a kitchen scale, no. Against typing an estimate from memory, the evidence does not favour the manual method: the 1992 NEJM study by Lichtman and colleagues found that diet-resistant subjects underreported their intake by 47% on average and overreported their exercise by 51%, and a 2024 Nature Food analysis of 6,497 doubly-labelled-water measurements flagged misreporting in 27.4% of dietary records. Both methods carry substantial error; the photo method takes seconds."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do AI calorie apps get portion sizes wrong?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because a photograph is two-dimensional. A single image does not reveal bowl depth, how tightly food is packed, or how much oil was absorbed during cooking. Food identification is largely solved; portion and volume estimation is where nearly all of the error lives. Including a reference object such as a fork or a standard plate in the frame measurably reduces the error."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a consistent error still ruin calorie tracking?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, and this is the key point. If your log reads 15% low every day, the absolute totals are wrong but the day-to-day trend is intact — a heavier day still shows up as heavier. Since a weight goal is driven by direction and rate of change rather than an absolute number, a consistently biased method still works as long as you calibrate against your bodyweight trend over two to three weeks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which foods do AI calorie apps handle worst?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mixed and layered dishes where components are hidden — stews, casseroles, curries, pasta with sauce — and anything cooked in fat you cannot see. Two visually identical plates of pasta can differ by several hundred calories depending on the oil or butter in the sauce, and no photo-based system detects that reliably. Simple, separated foods such as a piece of fruit, a plain chicken breast or a bowl of rice estimate far better."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Suu publish its own accuracy figure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We have not run a validation study against ground truth, so we do not publish a number — quoting one without a study behind it would be inventing it. Suu's photo analysis carries the same portion-estimation limits the literature describes for the category. Suu's food database is also smaller than MyFitnessPal's and there is no barcode scanning."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I improve the accuracy of a photo calorie log?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, and cheaply. Shoot at an angle rather than straight down so depth is visible, include a familiar object for scale, photograph components separately when a dish is mixed, and correct the entry when you know something the photo cannot show — for example that the dish was fried. Correcting the estimate afterwards is much faster than logging from scratch."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://suuapp.com/blog/en/ai-calorie-accuracy.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Suu",
+          "item": "https://suuapp.com/hosgeldiniz-en.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://suuapp.com/blog-en.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "How Accurate Are AI Calorie Photo Apps? What the Research Actually Says",
+          "item": "https://suuapp.com/blog/en/ai-calorie-accuracy.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+
+    <script src="/assets/js/analytics.js" defer></script>
+    <script src="/lang-switcher.js?v=3" defer></script>
+    <script src="/donation-widget.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="nav">
+    <div class="container nav__inner">
+        <a href="/hosgeldiniz-en.html" class="nav__logo">💧 Suu</a>
+        <ul class="nav__links">
+            <li><a href="/blog-en.html">Blog</a></li>
+            <li><a href="/hosgeldiniz-en.html#karsilastirma">Comparison</a></li>
+            <li><a href="/hosgeldiniz-en.html#fiyat">Pricing</a></li>
+        </ul>
+        <div class="nav__actions">
+            <a href="/app?src=compare-nav" class="btn btn--primary" data-cta="nav"
+               style="min-height:40px;padding:var(--sp-2) var(--sp-5);font-size:var(--fs-sm)">Download Free</a>
+        </div>
+    </div>
+</nav>
+
+<main id="main">
+
+<header class="section" style="padding-block-end:var(--sp-8)">
+    <div class="container container--narrow">
+        <nav class="breadcrumb small text-subtle" aria-label="Breadcrumb"
+             style="margin-block-end:var(--sp-4)">
+            <a href="/hosgeldiniz-en.html">Suu</a>
+            <span aria-hidden="true"> › </span>
+            <a href="/blog-en.html">Blog</a>
+            <span aria-hidden="true"> › </span>
+            <span aria-current="page">How Accurate Are AI Calorie Photo Apps? What the Research Actually Says</span>
+        </nav>
+        <span class="badge badge--new">AI &amp; CALORIES</span>
+        <h1 style="margin-block-start:var(--sp-4)">How Accurate Are AI Calorie Photo Apps? What the Research Actually Says</h1>
+        <p class="small text-subtle">Published: August 17, 2026 · Furkan Mert Fındıklı · 9 min read</p>
+    </div>
+</header>
+
+<div class="container container--narrow stack--lg" style="padding-block-end:var(--sp-24)">
+
+    <!-- CEVAP-ÖNCE: alıntılanan blok burasıdır -->
+    <div class="answer-box">
+        <p><strong>Short answer:</strong> Across a systematic review of 52 studies, AI estimates of a meal&#39;s calories from a photo had average relative errors between 0.10% and 38.3%, and the authors concluded these results are in line with — and may exceed — the accuracy of human estimation. That sounds bad until you compare it with the alternative: in the classic NEJM study of diet-resistant subjects, people underreported what they actually ate by 47% on average. For most people the practical question is not whether a photo estimate is exact, but whether they will still be logging in six weeks.</p>
+    </div>
+
+    <div class="disclosure">This article was written by the Suu team, so treat it as a biased source on the product question. The research figures below are cited so you can check them yourself, and they are not about Suu — they are about the category, including our own limits.</div>
+    <p>"Is it accurate?" is the first thing anyone asks about an app that reads calories from a photograph. It is also the wrong first question, because it has no useful answer without a comparison. Accurate <em>compared to what</em> — a food scale, a nutrition label, or the number you would have typed in yourself?</p>
+    <p>The honest answer changes depending on which of those three you had in mind. Here is what the peer-reviewed literature reports, and where photo-based apps — Suu included — genuinely fall short.</p>
+
+    <section>
+        <h2>Error rates by logging method</h2>
+        <div class="table-scroll">
+            <table class="table">
+                <caption class="sr-only">Reported error ranges from peer-reviewed sources. Higher is worse. These are not head-to-head trials of specific apps.</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Logging method</th>
+                        <th scope="col">Reported error</th>
+                        <th scope="col">Source</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>AI photo — calorie estimate</td><td class="partial">0.10–38.3% average relative error</td><td class="">Shonkoff 2023, 52-study review</td></tr>
+                    <tr><td>AI photo — portion volume</td><td class="partial">0.09–33% average relative error</td><td class="">Shonkoff 2023</td></tr>
+                    <tr><td>Humans estimating from the same photos</td><td class="no">5 of 20 estimates within 20% of truth</td><td class="">Crowdsourcing study, JMIR 2018</td></tr>
+                    <tr><td>A crowd of 10 people, averaged</td><td class="partial">7 of 20 within 20%</td><td class="">Same study</td></tr>
+                    <tr><td>Self-reported food diary (diet-resistant subjects)</td><td class="no">47% under-reported</td><td class="">Lichtman 1992, NEJM</td></tr>
+                    <tr><td>Self-reported physical activity (same subjects)</td><td class="no">51% over-reported</td><td class="">Lichtman 1992, NEJM</td></tr>
+                    <tr><td>Misreporting across large dietary datasets</td><td class="no">27.4% of records flagged</td><td class="">6,497 doubly-labelled-water measures, Nature Food 2024</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section>
+        <h2>What the 52-study review actually found</h2>
+        <p>Shonkoff and colleagues reviewed 52 papers published between 2010 and 2023 that tested AI-based image dietary assessment against ground truth. Their headline numbers: average relative errors of <strong>0.10% to 38.3%</strong> for calories and <strong>0.09% to 33%</strong> for volume, with individual errors reaching as high as 79.6% on the worst single estimates.</p>
+        <p>That is an enormous spread, and the spread is the finding. Their conclusion was carefully worded:</p>
+        <ul>
+            <li><em>"Results suggest that AI methods are in line with — and have the potential to exceed — accuracy of human estimations."</em> — Shonkoff et al., Annals of Medicine, 2023 (PMID 38060823)</li>
+            <li>The review also flags a real gap in the evidence: only one of the 52 papers directly compared AI accuracy against humans alone. So "AI beats people" is not yet a settled result — it is a reasonable inference from separate bodies of work.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Where the error comes from: it is the portion, not the food</h2>
+        <p>Identifying <em>what</em> is on the plate is largely a solved problem. Estimating <em>how much</em> is not, and that is where nearly all of the error lives.</p>
+        <p>A photograph flattens a three-dimensional object. Nothing in a single 2D image tells a model whether that is a shallow bowl or a deep one, whether the rice is packed or fluffed, or how much oil went into the pan before the photo was taken. Invisible ingredients are the hardest case of all — two visually identical plates of pasta can differ by 300 kcal depending on how much butter is in the sauce.</p>
+        <ul>
+            <li><strong>Simple, single foods estimate well.</strong> The review found relative errors were lower for images of single or simple foods — an apple, a chicken breast, a bowl of rice.</li>
+            <li><strong>Mixed dishes estimate badly.</strong> Stews, casseroles, layered dishes and anything where components are hidden are where the 30%+ errors cluster.</li>
+            <li><strong>Added fats are close to invisible.</strong> No photo-based system reliably detects the oil, butter or cream already absorbed into a dish.</li>
+            <li><strong>Reference scale helps.</strong> Including a known object — a fork, a standard plate, your hand — in the frame measurably narrows portion error.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>The comparison that actually matters</h2>
+        <p>Photo estimation is usually judged against a food scale, and against a food scale it loses. But almost nobody weighs their food. The real-world alternative is typing an estimate into a database, and that alternative has been measured too — repeatedly, and unflatteringly.</p>
+        <p>In the 1992 New England Journal of Medicine study that reshaped how nutrition researchers read food diaries, ten diet-resistant subjects were tracked for 14 days using doubly labelled water, the gold standard for measuring true energy expenditure. They <strong>underreported their food intake by 47 ± 16%</strong> and <strong>overreported their physical activity by 51 ± 75%</strong> — while sincerely believing their logs were honest.</p>
+        <p>This is not a story about dishonesty. It is a story about memory and portion blindness: people forget the handful of nuts, and they misjudge what 100 g of pasta looks like. A 2024 <em>Nature Food</em> analysis of 6,497 doubly-labelled-water measurements found misreporting in 27.4% of records when the method was applied across large dietary datasets.</p>
+        <p>So the choice is not between a perfect method and a flawed one. It is between two flawed methods with different failure modes — and one of them takes four seconds.</p>
+    </section>
+    <section>
+        <h2>Why consistent error hurts less than you think</h2>
+        <p>If your photo log reads 15% low every single day, your absolute numbers are wrong but your <em>trend</em> is intact. Eat 300 kcal more on Saturday and the log still shows Saturday as higher. Adjust your portions down and the log still moves down.</p>
+        <p>That matters because for a weight goal you are not chasing an absolute number — you are chasing a direction and a rate of change, which you then calibrate against the scale over two to three weeks. A method with consistent bias supports that. A method you abandon after nine days does not, no matter how precise it was while you used it.</p>
+        <p>This is the strongest practical argument for photo logging, and it is worth stating plainly: <strong>the accuracy that matters is the accuracy of the method you actually keep using.</strong></p>
+        <ul>
+            <li>Weigh and log manually if you need absolute precision for a medical or competitive reason. Nothing beats a scale.</li>
+            <li>Photograph if the realistic alternative is not logging at all — which, for most people who have tried manual logging, it is.</li>
+            <li>Either way, calibrate against your own bodyweight trend over 2–3 weeks rather than trusting any daily total.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Where Suu sits — including what it does worse</h2>
+        <p>Suu does photo calorie analysis, returning calories, protein, carbohydrate and fat from a picture of your plate, and it can also take the entry by voice. It carries exactly the same portion-estimation limits described above; we have no reason to claim otherwise and no measured accuracy figure of our own to publish.</p>
+        <p>Two things Suu does differently are worth naming, and neither is about accuracy:</p>
+        <ul>
+            <li><strong>The drink is not lost.</strong> When you log "a bowl of soup and a glass of ayran", Suu separates the solids from the liquids: the soup becomes calories and macros, and the ayran also counts toward your hydration. Calorie-only apps discard the second half of that sentence.</li>
+            <li><strong>The meal changes your water target.</strong> Protein and sodium in a logged meal add a digestion-water requirement to your daily goal, and a recorded workout raises it further.</li>
+            <li><strong>Honest limits:</strong> Suu's food database is smaller than MyFitnessPal's, there is no barcode scanning, and if you deliberately track micronutrients, Cronometer is the better tool. Three AI analyses per day are free; unlimited analysis and photo recognition are Premium.</li>
+        </ul>
+    </section>
+
+    <section class="verdict">
+        <h2 style="margin-block-end:var(--sp-4)">Verdict</h2>
+        <p><strong>AI photo calorie apps are accurate enough to be useful and not accurate enough to be exact.</strong> Expect meaningful error on mixed dishes and on anything cooked in fat you cannot see. Expect good results on simple, separated foods.</p>
+        <p><strong>Judge them against the right baseline.</strong> Compared with a kitchen scale they lose. Compared with typing a remembered estimate into a database — the thing you would actually do otherwise — the published evidence does not favour the manual method.</p>
+        <p><strong>Pick for adherence, then calibrate.</strong> Whatever method you choose, treat the daily number as a relative signal and let your bodyweight trend over 2–3 weeks tell you whether the absolute level is right.</p>
+    </section>
+
+    <section class="cta-band" style="border-radius:var(--r-lg);padding-block:var(--sp-12)" data-cta="compare-body">
+        <div class="container">
+            <h2 style="font-size:var(--fs-2xl)">Photograph the meal, and let it update your water goal too</h2>
+            <p>3 AI analyses a day free, forever · Premium free for 3 days</p>
+            <div class="btn-row btn-row--center" style="margin-block-start:var(--sp-6)">
+                <a href="/app?src=compare-body" class="btn btn--secondary btn--lg">Download Suu Free</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Frequently asked questions</h2>
+        <div class="faq">
+            <details class="faq__item" open>
+                <summary>How accurate are AI calorie counting apps?</summary>
+                <div><p>A 2023 systematic review of 52 studies (Shonkoff et al., Annals of Medicine, PMID 38060823) reported average relative errors of 0.10% to 38.3% for AI calorie estimation from images, with individual estimates ranging up to 79.6% error. Accuracy is best on simple single foods and worst on mixed dishes and anything cooked in fat that is not visible in the photo. The review concluded that AI estimates are in line with, and potentially better than, human estimates of the same images.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Are AI photo apps more accurate than logging food manually?</summary>
+                <div><p>Against a kitchen scale, no. Against typing an estimate from memory, the evidence does not favour the manual method: the 1992 NEJM study by Lichtman and colleagues found that diet-resistant subjects underreported their intake by 47% on average and overreported their exercise by 51%, and a 2024 Nature Food analysis of 6,497 doubly-labelled-water measurements flagged misreporting in 27.4% of dietary records. Both methods carry substantial error; the photo method takes seconds.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Why do AI calorie apps get portion sizes wrong?</summary>
+                <div><p>Because a photograph is two-dimensional. A single image does not reveal bowl depth, how tightly food is packed, or how much oil was absorbed during cooking. Food identification is largely solved; portion and volume estimation is where nearly all of the error lives. Including a reference object such as a fork or a standard plate in the frame measurably reduces the error.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Does a consistent error still ruin calorie tracking?</summary>
+                <div><p>No, and this is the key point. If your log reads 15% low every day, the absolute totals are wrong but the day-to-day trend is intact — a heavier day still shows up as heavier. Since a weight goal is driven by direction and rate of change rather than an absolute number, a consistently biased method still works as long as you calibrate against your bodyweight trend over two to three weeks.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Which foods do AI calorie apps handle worst?</summary>
+                <div><p>Mixed and layered dishes where components are hidden — stews, casseroles, curries, pasta with sauce — and anything cooked in fat you cannot see. Two visually identical plates of pasta can differ by several hundred calories depending on the oil or butter in the sauce, and no photo-based system detects that reliably. Simple, separated foods such as a piece of fruit, a plain chicken breast or a bowl of rice estimate far better.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Does Suu publish its own accuracy figure?</summary>
+                <div><p>No. We have not run a validation study against ground truth, so we do not publish a number — quoting one without a study behind it would be inventing it. Suu&#39;s photo analysis carries the same portion-estimation limits the literature describes for the category. Suu&#39;s food database is also smaller than MyFitnessPal&#39;s and there is no barcode scanning.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Can I improve the accuracy of a photo calorie log?</summary>
+                <div><p>Yes, and cheaply. Shoot at an angle rather than straight down so depth is visible, include a familiar object for scale, photograph components separately when a dish is mixed, and correct the entry when you know something the photo cannot show — for example that the dish was fried. Correcting the estimate afterwards is much faster than logging from scratch.</p></div>
+            </details>
+        </div>
+    </section>
+    <section>
+        <h2>References</h2>
+        <ol class="small">
+            <li id="ref1"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10836267/" rel="nofollow noopener" target="_blank">Shonkoff E. et al. (2023) — AI-based digital image dietary assessment methods compared to humans and ground truth: a systematic review. Annals of Medicine (PMID 38060823)</a></li>
+            <li id="ref2"><a href="https://pubmed.ncbi.nlm.nih.gov/1454084/" rel="nofollow noopener" target="_blank">Lichtman S.W. et al. (1992) — Discrepancy between self-reported and actual caloric intake and exercise in obese subjects. N Engl J Med 327:1893–1898 (PMID 1454084)</a></li>
+            <li id="ref3"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6246963/" rel="nofollow noopener" target="_blank">Calorie estimation from pictures of food: crowdsourcing study. JMIR (PMC6246963)</a></li>
+            <li id="ref4"><a href="https://www.nature.com/articles/s43016-024-01089-5" rel="nofollow noopener" target="_blank">Predictive equation derived from 6,497 doubly-labelled water measurements enables the detection of erroneous self-reported energy intake. Nature Food (2024)</a></li>
+            <li id="ref5"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12229984/" rel="nofollow noopener" target="_blank">Validity and accuracy of artificial intelligence-based dietary intake assessment methods: a systematic review (PMC12229984)</a></li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Related articles</h2>
+        <div class="cards">
+            <a class="card" href="/blog/en/best-photo-calorie-app.html">
+                <h3 style="font-size:var(--fs-md)">Best photo calorie app</h3>
+                <p>Cal AI, Foodvisor, MyFitnessPal and Suu on photo logging.</p>
+            </a>
+            <a class="card" href="/blog/en/photo-calorie-counting.html">
+                <h3 style="font-size:var(--fs-md)">How photo calorie counting works</h3>
+                <p>What happens between the picture and the macro breakdown.</p>
+            </a>
+            <a class="card" href="/blog/en/voice-calorie-logging.html">
+                <h3 style="font-size:var(--fs-md)">Voice calorie logging</h3>
+                <p>When speaking a meal beats photographing it.</p>
+            </a>
+            <a class="card" href="/blog/en/calorie-deficit.html">
+                <h3 style="font-size:var(--fs-md)">What a calorie deficit really is</h3>
+                <p>Why the trend matters more than the daily total.</p>
+            </a>
+        </div>
+    </section>
+
+    <p class="small text-subtle">Suu is not intended for medical diagnosis or treatment. Consult a healthcare professional for health-related decisions.</p>
+
+    <p>
+        <a href="/blog-en.html">← Back to blog</a>
+        &nbsp;·&nbsp; <a href="/comparisons.html">All comparisons →</a>
+    </p>
+</div>
+
+</main>
+
+
+<!-- sütunlar arası bağlantı: scripts/link-pillars.py -->
+<div style="max-width:760px;margin:32px auto;padding:20px;border-radius:10px;background:rgba(30,136,229,.06)">
+  <h3 style="font-size:1rem;margin:0 0 12px">The calorie and exercise side</h3>
+  <ul style="margin:0 0 0 20px;padding:0">
+      <li style="margin-block-end:6px"><a href="water-calorie-exercise-one-app.html" style="color:#1E88E5;font-weight:600;text-decoration:none">Is There an App That Tracks Water, Calories AND Exercise…</a></li>
+      <li style="margin-block-end:6px"><a href="best-calorie-counting-app.html" style="color:#1E88E5;font-weight:600;text-decoration:none">Best Calorie Counting App 2026: Suu vs MyFitnessPal,…</a></li>
+  </ul>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__bottom" style="border:0">
+            <p class="small mb-0">© 2026 Suu · Furkan Mert Fındıklı</p>
+            <p class="small mb-0"><a href="/hosgeldiniz-en.html">suuapp.com</a></p>
+        </div>
+    </div>
+</footer>
+
+<div class="sticky-cta" data-cta="sticky">
+    <a href="/app?src=sticky" class="btn btn--secondary">App Store</a>
+    <a href="/app?src=sticky" class="btn btn--primary">Google Play</a>
+</div>
+
+</body>
+</html>

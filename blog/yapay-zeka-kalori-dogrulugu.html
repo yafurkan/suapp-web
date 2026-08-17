@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ÜRETİLMİŞ DOSYA — elle düzenlemeyin.
+         Kaynak: content/compare/ai-calorie-accuracy.json + content/compare/_template.html.j2
+         Yeniden üret: python3 scripts/build-compare.py --apply -->
+
+    <title>Fotoğraftan Kalori Uygulamaları Ne Kadar Doğru? (2026 Araştırma Derlemesi)</title>
+    <meta name="description" content="52 çalışmalık sistematik derleme, yapay zekânın fotoğraftan kalori tahmininde hatayı %0,10–38,3 aralığında buluyor. Ama elle tutulan beslenme günlüklerinde hata %47&#39;ye çıkıyor. Hangi hata hedefinize daha çok zarar veriyor?">
+    <meta name="keywords" content="yapay zeka kalori doğruluğu, fotoğrafla kalori ne kadar doğru, kalori uygulaması hata payı, yapay zeka yemek tanıma doğruluk, kalori takibi hata">
+    <meta name="apple-itunes-app" content="app-id=6757619920">
+
+    <link rel="canonical" href="https://suuapp.com/blog/yapay-zeka-kalori-dogrulugu.html">
+    <!-- Hreflang cluster (auto-injected) -->
+    <link rel="alternate" hreflang="tr" href="https://suuapp.com/blog/yapay-zeka-kalori-dogrulugu.html">
+    <link rel="alternate" hreflang="en" href="https://suuapp.com/blog/en/ai-calorie-accuracy.html">
+    <link rel="alternate" hreflang="x-default" href="https://suuapp.com/blog/en/ai-calorie-accuracy.html">
+
+
+    <meta property="og:title" content="Fotoğraftan Kalori Uygulamaları Ne Kadar Doğru?">
+    <meta property="og:description" content="52 çalışma derlendi: yapay zekâ hatası %0,10–38,3. Elle beyan: %47&#39;ye kadar eksik. Hangisi hedefinize daha çok zarar verir?">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://suuapp.com/blog/yapay-zeka-kalori-dogrulugu.html">
+    <meta property="og:image" content="https://suuapp.com/assets/og-image.png">
+    <meta property="og:site_name" content="Suu">
+    <meta property="og:locale" content="tr_TR">
+    <meta property="article:published_time" content="2026-08-17">
+    <meta property="article:author" content="Furkan Mert Fındıklı">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SuuTakip">
+    <meta name="twitter:title" content="Fotoğraftan Kalori Uygulamaları Ne Kadar Doğru?">
+    <meta name="twitter:description" content="52 çalışma derlendi: yapay zekâ hatası %0,10–38,3. Elle beyan: %47&#39;ye kadar eksik. Hangisi hedefinize daha çok zarar verir?">
+    <meta name="twitter:image" content="https://suuapp.com/assets/og-image.png">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/donation-widget.css">
+    <link rel="stylesheet" href="/assets/css/suu.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://suuapp.com/#organization",
+      "name": "Suu",
+      "url": "https://suuapp.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://suuapp.com/assets/favicon-512.png"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://suuapp.com/#furkan",
+      "name": "Furkan Mert Fındıklı",
+      "url": "https://suuapp.com/yazarlar/furkan-mert.html",
+      "jobTitle": "Kurucu \u0026 Geliştirici",
+      "worksFor": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/furkanfindikli/"
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://suuapp.com/blog/yapay-zeka-kalori-dogrulugu.html#article",
+      "headline": "Fotoğraftan Kalori Ölçen Uygulamalar Ne Kadar Doğru? Araştırmalar Ne Diyor",
+      "description": "52 çalışmalık sistematik derleme, yapay zekânın fotoğraftan kalori tahmininde hatayı %0,10–38,3 aralığında buluyor. Ama elle tutulan beslenme günlüklerinde hata %47'ye çıkıyor. Hangi hata hedefinize daha çok zarar veriyor?",
+      "image": "https://suuapp.com/assets/og-image.png",
+      "datePublished": "2026-08-17",
+      "dateModified": "2026-08-17",
+      "inLanguage": "tr",
+      "mainEntityOfPage": "https://suuapp.com/blog/yapay-zeka-kalori-dogrulugu.html",
+      "author": {
+        "@id": "https://suuapp.com/#furkan"
+      },
+      "publisher": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "about": {
+        "@id": "https://suuapp.com/#suuapp-ios"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".answer-box",
+          "h1",
+          "h2",
+          ".verdict p"
+        ]
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://suuapp.com/blog/yapay-zeka-kalori-dogrulugu.html#itemlist",
+      "name": "Kayıt yöntemine göre hata oranları",
+      "inLanguage": "tr",
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "numberOfItems": 2,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Bildirilen hata",
+            "applicationCategory": "HealthApplication"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Kaynak",
+            "applicationCategory": "HealthApplication"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://suuapp.com/blog/yapay-zeka-kalori-dogrulugu.html#faq",
+      "inLanguage": "tr",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Yapay zekâ kalori uygulamaları ne kadar doğru?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "2023 tarihli 52 çalışmalık bir sistematik derleme (Shonkoff ve ark., Annals of Medicine, PMID 38060823), görüntüden yapay zekâ kalori tahmininde ortalama bağıl hatayı %0,10 ile %38,3 arasında, tekil tahminlerde %79,6'ya kadar bildirdi. Doğruluk basit tek öğeli yemeklerde en iyi; karışık yemeklerde ve fotoğrafta görünmeyen yağda pişmiş her şeyde en kötü. Derleme, yapay zekâ tahminlerinin aynı görüntülere bakan insanların tahminleriyle aynı düzeyde, hatta potansiyel olarak daha iyi olduğu sonucuna vardı."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Fotoğraflı uygulamalar elle kayıt tutmaktan daha mı doğru?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mutfak terazisine karşı hayır. Hafızadan tahmin yazmaya karşı ise kanıt elle yöntemin lehine değil: Lichtman ve arkadaşlarının 1992 NEJM çalışması, kilo veremeyen deneklerin yediklerini ortalama %47 eksik, egzersizlerini %51 fazla beyan ettiğini buldu; 2024 tarihli Nature Food analizi 6.497 çift etiketli su ölçümüne dayanarak beslenme kayıtlarının %27,4'ünde yanlış beyan işaretledi. İki yöntem de ciddi hata taşıyor; fotoğraf yöntemi saniyeler sürüyor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Yapay zekâ kalori uygulamaları porsiyonu neden yanlış tahmin ediyor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Çünkü fotoğraf iki boyutlu. Tek bir görüntü kâsenin derinliğini, yemeğin ne kadar sıkıştırıldığını veya pişerken ne kadar yağ çekildiğini göstermez. Yemeği tanımak büyük ölçüde çözüldü; hatanın neredeyse tamamı porsiyon ve hacim tahmininde. Kareye çatal ya da standart tabak gibi bir referans nesne koymak hatayı ölçülebilir biçimde azaltıyor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Tutarlı hata kalori takibini yine de bozar mı?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hayır ve asıl mesele bu. Kaydınız her gün %15 düşük okuyorsa mutlak toplamlar yanlıştır ama günden güne eğilim sağlamdır — ağır bir gün yine ağır görünür. Kilo hedefi mutlak bir rakamdan çok yön ve değişim hızıyla ilerlediği için, tutarlı sapmalı bir yöntem iki üç haftalık kilo eğiliminize göre kalibre ettiğiniz sürece işini görür."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Yapay zekâ kalori uygulamaları hangi yemeklerde en çok zorlanıyor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bileşenlerin gizlendiği karışık ve katmanlı yemeklerde — güveçler, sulu yemekler, soslu makarnalar — ve göremediğiniz yağda pişmiş her şeyde. Görsel olarak aynı iki tabak makarna, sosundaki yağa göre birkaç yüz kalori farkedebilir ve hiçbir fotoğraf tabanlı sistem bunu güvenilir biçimde yakalayamaz. Meyve, sade tavuk göğsü veya bir kâse pilav gibi basit, ayrışmış yemekler çok daha iyi tahmin ediliyor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Suu kendi doğruluk oranını yayımlıyor mu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hayır. Gerçek değere karşı bir doğrulama çalışması yürütmedik, dolayısıyla bir rakam yayımlamıyoruz — arkasında çalışma olmayan bir oranı yazmak onu uydurmak olurdu. Suu'nun fotoğraf analizi, literatürün kategori için tarif ettiği porsiyon tahmini sınırlarının aynısını taşıyor. Suu'nun besin veritabanı ayrıca MyFitnessPal'ınkinden küçük ve barkot okuma yok."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Fotoğraflı kalori kaydının doğruluğunu artırabilir miyim?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evet, hem de ucuza. Derinlik görünsün diye tepeden değil açılı çekin, ölçek için tanıdık bir nesne kareye alın, karışık yemeklerde bileşenleri ayrı ayrı fotoğraflayın ve fotoğrafın gösteremeyeceği bir şeyi biliyorsanız — mesela yemeğin kızartma olduğunu — kaydı düzeltin. Tahmini sonradan düzeltmek, sıfırdan kayıt girmekten çok daha hızlı."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://suuapp.com/blog/yapay-zeka-kalori-dogrulugu.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Suu",
+          "item": "https://suuapp.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://suuapp.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Fotoğraftan Kalori Ölçen Uygulamalar Ne Kadar Doğru? Araştırmalar Ne Diyor",
+          "item": "https://suuapp.com/blog/yapay-zeka-kalori-dogrulugu.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+
+    <script src="/assets/js/analytics.js" defer></script>
+    <script src="/lang-switcher.js?v=3" defer></script>
+    <script src="/donation-widget.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">İçeriğe geç</a>
+
+<nav class="nav">
+    <div class="container nav__inner">
+        <a href="/" class="nav__logo">💧 Suu</a>
+        <ul class="nav__links">
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/#karsilastirma">Karşılaştırma</a></li>
+            <li><a href="/#fiyat">Fiyatlandırma</a></li>
+        </ul>
+        <div class="nav__actions">
+            <a href="/app?src=compare-nav" class="btn btn--primary" data-cta="nav"
+               style="min-height:40px;padding:var(--sp-2) var(--sp-5);font-size:var(--fs-sm)">Ücretsiz İndir</a>
+        </div>
+    </div>
+</nav>
+
+<main id="main">
+
+<header class="section" style="padding-block-end:var(--sp-8)">
+    <div class="container container--narrow">
+        <nav class="breadcrumb small text-subtle" aria-label="Breadcrumb"
+             style="margin-block-end:var(--sp-4)">
+            <a href="/">Suu</a>
+            <span aria-hidden="true"> › </span>
+            <a href="/blog.html">Blog</a>
+            <span aria-hidden="true"> › </span>
+            <span aria-current="page">Fotoğraftan Kalori Ölçen Uygulamalar Ne Kadar Doğru? Araştırmalar Ne Diyor</span>
+        </nav>
+        <span class="badge badge--new">YAPAY ZEKÂ VE KALORİ</span>
+        <h1 style="margin-block-start:var(--sp-4)">Fotoğraftan Kalori Ölçen Uygulamalar Ne Kadar Doğru? Araştırmalar Ne Diyor</h1>
+        <p class="small text-subtle">Yayın: 17 Ağustos 2026 · Furkan Mert Fındıklı · 9 dakika okuma</p>
+    </div>
+</header>
+
+<div class="container container--narrow stack--lg" style="padding-block-end:var(--sp-24)">
+
+    <!-- CEVAP-ÖNCE: alıntılanan blok burasıdır -->
+    <div class="answer-box">
+        <p><strong>Kısa cevap:</strong> 52 çalışmalık bir sistematik derlemede, yapay zekânın bir öğünün fotoğrafından yaptığı kalori tahmininin ortalama bağıl hatası %0,10 ile %38,3 arasında çıktı ve yazarlar bu sonuçların insan tahminiyle aynı düzeyde — hatta onu aşma potansiyeli taşıdığı — sonucuna vardı. Kulağa kötü geliyor; ta ki alternatifiyle karşılaştırana kadar: NEJM&#39;in klasik çalışmasında kilo veremeyen denekler yediklerini ortalama %47 eksik beyan etmişti. Çoğu insan için asıl soru tahminin tam olup olmadığı değil, altı hafta sonra hâlâ kayıt tutuyor olup olmayacağıdır.</p>
+    </div>
+
+    <div class="disclosure">Bu yazı Suu ekibi tarafından yazıldı; ürün sorusunda taraflı bir kaynak okuyorsunuz. Aşağıdaki araştırma rakamları kendiniz kontrol edebilesiniz diye kaynağıyla verildi ve Suu hakkında değil — kendi sınırlarımız dahil, kategorinin tamamı hakkında.</div>
+    <p>Fotoğraftan kalori okuyan bir uygulama hakkında herkesin ilk sorduğu şey "doğru mu?" oluyor. Aynı zamanda yanlış ilk soru, çünkü bir karşılaştırma olmadan anlamlı bir cevabı yok. <em>Neye göre</em> doğru — mutfak terazisine mi, besin etiketine mi, yoksa kendinizin gireceği rakama mı?</p>
+    <p>Dürüst cevap bu üçünden hangisini kastettiğinize göre değişiyor. Hakemli literatürün bildirdikleri ve fotoğraf tabanlı uygulamaların — Suu dahil — gerçekten yetersiz kaldığı yerler aşağıda.</p>
+
+    <section>
+        <h2>Kayıt yöntemine göre hata oranları</h2>
+        <div class="table-scroll">
+            <table class="table">
+                <caption class="sr-only">Hakemli kaynaklardan bildirilen hata aralıkları. Yüksek olan kötüdür. Bunlar belirli uygulamaların karşılıklı testleri değildir.</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Kayıt yöntemi</th>
+                        <th scope="col">Bildirilen hata</th>
+                        <th scope="col">Kaynak</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Yapay zekâ fotoğraf — kalori tahmini</td><td class="partial">%0,10–38,3 ortalama bağıl hata</td><td class="">Shonkoff 2023, 52 çalışmalık derleme</td></tr>
+                    <tr><td>Yapay zekâ fotoğraf — porsiyon hacmi</td><td class="partial">%0,09–33 ortalama bağıl hata</td><td class="">Shonkoff 2023</td></tr>
+                    <tr><td>Aynı fotoğraflara bakan insanlar</td><td class="no">20 tahminin 5&#39;i gerçeğin %20&#39;si içinde</td><td class="">Kitle kaynak çalışması, JMIR 2018</td></tr>
+                    <tr><td>10 kişilik kitlenin ortalaması</td><td class="partial">20 tahminin 7&#39;si %20 içinde</td><td class="">Aynı çalışma</td></tr>
+                    <tr><td>Elle tutulan beslenme günlüğü (kilo veremeyen denekler)</td><td class="no">%47 eksik beyan</td><td class="">Lichtman 1992, NEJM</td></tr>
+                    <tr><td>Beyan edilen fiziksel aktivite (aynı denekler)</td><td class="no">%51 fazla beyan</td><td class="">Lichtman 1992, NEJM</td></tr>
+                    <tr><td>Büyük beslenme veri setlerinde yanlış beyan</td><td class="no">kayıtların %27,4&#39;ü</td><td class="">6.497 çift etiketli su ölçümü, Nature Food 2024</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section>
+        <h2>52 çalışmalık derleme aslında ne buldu</h2>
+        <p>Shonkoff ve arkadaşları, 2010–2023 arasında yayımlanmış ve yapay zekâ tabanlı görüntüden beslenme değerlendirmesini gerçek değere karşı test eden 52 makaleyi derledi. Manşet rakamları: kalori için <strong>%0,10 ile %38,3</strong>, hacim için <strong>%0,09 ile %33</strong> ortalama bağıl hata; tekil en kötü tahminlerde hata %79,6'ya kadar çıkıyor.</p>
+        <p>Bu devasa bir yayılım ve asıl bulgu da bu yayılımın kendisi. Sonuç cümlesi dikkatle kurulmuş:</p>
+        <ul>
+            <li><em>"Sonuçlar, yapay zekâ yöntemlerinin insan tahminlerinin doğruluğuyla aynı düzeyde olduğunu — ve onu aşma potansiyeli taşıdığını — düşündürmektedir."</em> — Shonkoff ve ark., Annals of Medicine, 2023 (PMID 38060823)</li>
+            <li>Derleme kanıttaki gerçek bir boşluğa da işaret ediyor: 52 makalenin yalnızca biri yapay zekâ doğruluğunu doğrudan insanla karşılaştırmış. Yani "yapay zekâ insanı geçiyor" henüz yerleşmiş bir sonuç değil — ayrı çalışma gövdelerinden çıkarılan makul bir çıkarım.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Hata nereden geliyor: yemek değil, porsiyon</h2>
+        <p>Tabakta <em>ne</em> olduğunu tanımak büyük ölçüde çözülmüş bir problem. <em>Ne kadar</em> olduğunu tahmin etmek değil ve hatanın neredeyse tamamı orada yaşıyor.</p>
+        <p>Fotoğraf üç boyutlu bir nesneyi düzleştirir. Tek bir 2B görüntüde kâsenin sığ mı derin mi olduğu, pilavın sıkıştırılmış mı kabartılmış mı olduğu ya da tavaya fotoğraftan önce ne kadar yağ girdiği yazmaz. En zor durum görünmeyen malzemeler: görsel olarak birbirinin aynı iki tabak makarna, sosundaki tereyağına göre 300 kcal fark edebilir.</p>
+        <ul>
+            <li><strong>Basit, tek öğeli yemekler iyi tahmin ediliyor.</strong> Derleme, tek veya basit gıda görüntülerinde bağıl hatanın daha düşük olduğunu buldu — bir elma, bir tavuk göğsü, bir kâse pilav.</li>
+            <li><strong>Karışık yemekler kötü tahmin ediliyor.</strong> Güveçler, katmanlı yemekler ve bileşenlerin gizlendiği her şey %30 üzeri hataların kümelendiği yer.</li>
+            <li><strong>Eklenen yağlar neredeyse görünmez.</strong> Hiçbir fotoğraf tabanlı sistem yemeğe çekilmiş yağı, tereyağını veya kremayı güvenilir biçimde tespit edemiyor.</li>
+            <li><strong>Referans ölçek işe yarıyor.</strong> Kareye bilinen bir nesne koymak — çatal, standart tabak, eliniz — porsiyon hatasını ölçülebilir biçimde daraltıyor.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Asıl önemli karşılaştırma</h2>
+        <p>Fotoğraf tahmini genelde mutfak terazisine karşı yargılanıyor ve teraziye karşı kaybediyor. Ama neredeyse kimse yemeğini tartmıyor. Gerçek hayattaki alternatif, bir veritabanına tahminî bir rakam yazmak — ve bu alternatif de defalarca ölçüldü, hem de hiç iç açıcı olmayan sonuçlarla.</p>
+        <p>Beslenme araştırmacılarının günlüklere bakışını değiştiren 1992 tarihli New England Journal of Medicine çalışmasında, kilo veremeyen on denek 14 gün boyunca gerçek enerji harcamasını ölçmenin altın standardı olan çift etiketli su yöntemiyle izlendi. Denekler <strong>yediklerini %47 ± 16 eksik</strong>, <strong>yaptıkları egzersizi %51 ± 75 fazla</strong> beyan etti — üstelik günlüklerinin dürüst olduğuna içtenlikle inanarak.</p>
+        <p>Bu bir dürüstlük hikâyesi değil. Hafıza ve porsiyon körlüğü hikâyesi: insan avuç dolusu kuruyemişi unutuyor ve 100 g makarnanın neye benzediğini yanlış kestiriyor. 2024 tarihli bir <em>Nature Food</em> analizi, 6.497 çift etiketli su ölçümüne dayanan yöntemi büyük beslenme veri setlerine uyguladığında kayıtların %27,4'ünde yanlış beyan buldu.</p>
+        <p>Yani seçim kusursuz bir yöntemle kusurlu bir yöntem arasında değil. Farklı hata biçimlerine sahip iki kusurlu yöntem arasında — ve birisi dört saniye sürüyor.</p>
+    </section>
+    <section>
+        <h2>Tutarlı hata sandığınız kadar zarar vermiyor</h2>
+        <p>Fotoğraf kaydınız her gün %15 düşük okuyorsa, mutlak rakamlarınız yanlış ama <em>eğiliminiz</em> sağlam. Cumartesi 300 kcal fazla yerseniz kayıt yine cumartesiyi yüksek gösterir. Porsiyonlarınızı küçültürseniz kayıt yine aşağı iner.</p>
+        <p>Bu önemli, çünkü kilo hedefinde mutlak bir rakamın peşinde değilsiniz — iki üç hafta boyunca tartıyla kalibre ettiğiniz bir yön ve değişim hızının peşindesiniz. Tutarlı sapmalı bir yöntem bunu destekler. Dokuz gün sonra bıraktığınız bir yöntem, kullandığınız sürece ne kadar hassas olursa olsun, desteklemez.</p>
+        <p>Fotoğrafla kayıt için en güçlü pratik argüman bu ve açıkça söylemeye değer: <strong>asıl önemli doğruluk, gerçekten kullanmaya devam ettiğiniz yöntemin doğruluğudur.</strong></p>
+        <ul>
+            <li>Tıbbi veya sportif bir nedenle mutlak hassasiyet gerekiyorsa tartın ve elle girin. Hiçbir şey teraziyi geçmez.</li>
+            <li>Gerçekçi alternatifiniz hiç kayıt tutmamaksa fotoğraf çekin — elle kayıt denemiş çoğu insan için alternatif tam olarak budur.</li>
+            <li>Her hâlükârda günlük toplama güvenmek yerine 2–3 haftalık kendi kilo eğiliminize göre kalibre edin.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Suu nerede duruyor — daha kötü yaptıkları dahil</h2>
+        <p>Suu fotoğraftan kalori analizi yapıyor; tabağınızın resminden kalori, protein, karbonhidrat ve yağ döndürüyor, kaydı sesle de alabiliyor. Yukarıda anlatılan porsiyon tahmini sınırlarının tamamını taşıyor; aksini iddia etmek için bir nedenimiz ve yayımlayacak kendi ölçülmüş doğruluk rakamımız yok.</p>
+        <p>Suu'nun farklı yaptığı iki şey var ve ikisi de doğrulukla ilgili değil:</p>
+        <ul>
+            <li><strong>İçecek kaybolmuyor.</strong> "Bir kâse çorba ve bir bardak ayran" dediğinizde Suu katıyı sıvıdan ayırıyor: çorba kalori ve makroya, ayran ayrıca hidrasyonunuza yazılıyor. Yalnızca kalori sayan uygulamalar bu cümlenin ikinci yarısını atıyor.</li>
+            <li><strong>Öğün su hedefinizi değiştiriyor.</strong> Kaydedilen öğündeki protein ve sodyum günlük hedefinize sindirim suyu ihtiyacı ekliyor, kaydedilen egzersiz de hedefi ayrıca yükseltiyor.</li>
+            <li><strong>Dürüst sınırlar:</strong> Suu'nun besin veritabanı MyFitnessPal'ınkinden küçük, barkot okuma yok ve mikro besinleri bilinçli takip ediyorsanız Cronometer daha iyi bir araç. Günde 3 yapay zekâ analizi ücretsiz; sınırsız analiz ve fotoğrafla tanıma Premium.</li>
+        </ul>
+    </section>
+
+    <section class="verdict">
+        <h2 style="margin-block-end:var(--sp-4)">Karar</h2>
+        <p><strong>Fotoğraftan kalori uygulamaları işe yarayacak kadar doğru, kesin sayılacak kadar değil.</strong> Karışık yemeklerde ve göremediğiniz yağda pişmiş her şeyde ciddi hata bekleyin. Basit, ayrışmış yemeklerde iyi sonuç bekleyin.</p>
+        <p><strong>Doğru referansa göre yargılayın.</strong> Mutfak terazisiyle kıyaslarsanız kaybederler. Hatırladığınız bir tahmini veritabanına yazmakla — yani aslında yapacağınız şeyle — kıyaslarsanız, yayımlanmış kanıt elle yöntemin lehine değil.</p>
+        <p><strong>Sürdürülebilirliğe göre seçin, sonra kalibre edin.</strong> Hangi yöntemi seçerseniz seçin, günlük rakamı göreli bir sinyal olarak görün ve mutlak düzeyin doğru olup olmadığını 2–3 haftalık kilo eğiliminiz söylesin.</p>
+    </section>
+
+    <section class="cta-band" style="border-radius:var(--r-lg);padding-block:var(--sp-12)" data-cta="compare-body">
+        <div class="container">
+            <h2 style="font-size:var(--fs-2xl)">Öğünün fotoğrafını çek, su hedefini de o güncellesin</h2>
+            <p>Günde 3 yapay zekâ analizi her zaman ücretsiz · Premium 3 gün ücretsiz</p>
+            <div class="btn-row btn-row--center" style="margin-block-start:var(--sp-6)">
+                <a href="/app?src=compare-body" class="btn btn--secondary btn--lg">Suu&#39;yu Ücretsiz İndir</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Sık sorulan sorular</h2>
+        <div class="faq">
+            <details class="faq__item" open>
+                <summary>Yapay zekâ kalori uygulamaları ne kadar doğru?</summary>
+                <div><p>2023 tarihli 52 çalışmalık bir sistematik derleme (Shonkoff ve ark., Annals of Medicine, PMID 38060823), görüntüden yapay zekâ kalori tahmininde ortalama bağıl hatayı %0,10 ile %38,3 arasında, tekil tahminlerde %79,6&#39;ya kadar bildirdi. Doğruluk basit tek öğeli yemeklerde en iyi; karışık yemeklerde ve fotoğrafta görünmeyen yağda pişmiş her şeyde en kötü. Derleme, yapay zekâ tahminlerinin aynı görüntülere bakan insanların tahminleriyle aynı düzeyde, hatta potansiyel olarak daha iyi olduğu sonucuna vardı.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Fotoğraflı uygulamalar elle kayıt tutmaktan daha mı doğru?</summary>
+                <div><p>Mutfak terazisine karşı hayır. Hafızadan tahmin yazmaya karşı ise kanıt elle yöntemin lehine değil: Lichtman ve arkadaşlarının 1992 NEJM çalışması, kilo veremeyen deneklerin yediklerini ortalama %47 eksik, egzersizlerini %51 fazla beyan ettiğini buldu; 2024 tarihli Nature Food analizi 6.497 çift etiketli su ölçümüne dayanarak beslenme kayıtlarının %27,4&#39;ünde yanlış beyan işaretledi. İki yöntem de ciddi hata taşıyor; fotoğraf yöntemi saniyeler sürüyor.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Yapay zekâ kalori uygulamaları porsiyonu neden yanlış tahmin ediyor?</summary>
+                <div><p>Çünkü fotoğraf iki boyutlu. Tek bir görüntü kâsenin derinliğini, yemeğin ne kadar sıkıştırıldığını veya pişerken ne kadar yağ çekildiğini göstermez. Yemeği tanımak büyük ölçüde çözüldü; hatanın neredeyse tamamı porsiyon ve hacim tahmininde. Kareye çatal ya da standart tabak gibi bir referans nesne koymak hatayı ölçülebilir biçimde azaltıyor.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Tutarlı hata kalori takibini yine de bozar mı?</summary>
+                <div><p>Hayır ve asıl mesele bu. Kaydınız her gün %15 düşük okuyorsa mutlak toplamlar yanlıştır ama günden güne eğilim sağlamdır — ağır bir gün yine ağır görünür. Kilo hedefi mutlak bir rakamdan çok yön ve değişim hızıyla ilerlediği için, tutarlı sapmalı bir yöntem iki üç haftalık kilo eğiliminize göre kalibre ettiğiniz sürece işini görür.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Yapay zekâ kalori uygulamaları hangi yemeklerde en çok zorlanıyor?</summary>
+                <div><p>Bileşenlerin gizlendiği karışık ve katmanlı yemeklerde — güveçler, sulu yemekler, soslu makarnalar — ve göremediğiniz yağda pişmiş her şeyde. Görsel olarak aynı iki tabak makarna, sosundaki yağa göre birkaç yüz kalori farkedebilir ve hiçbir fotoğraf tabanlı sistem bunu güvenilir biçimde yakalayamaz. Meyve, sade tavuk göğsü veya bir kâse pilav gibi basit, ayrışmış yemekler çok daha iyi tahmin ediliyor.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Suu kendi doğruluk oranını yayımlıyor mu?</summary>
+                <div><p>Hayır. Gerçek değere karşı bir doğrulama çalışması yürütmedik, dolayısıyla bir rakam yayımlamıyoruz — arkasında çalışma olmayan bir oranı yazmak onu uydurmak olurdu. Suu&#39;nun fotoğraf analizi, literatürün kategori için tarif ettiği porsiyon tahmini sınırlarının aynısını taşıyor. Suu&#39;nun besin veritabanı ayrıca MyFitnessPal&#39;ınkinden küçük ve barkot okuma yok.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Fotoğraflı kalori kaydının doğruluğunu artırabilir miyim?</summary>
+                <div><p>Evet, hem de ucuza. Derinlik görünsün diye tepeden değil açılı çekin, ölçek için tanıdık bir nesne kareye alın, karışık yemeklerde bileşenleri ayrı ayrı fotoğraflayın ve fotoğrafın gösteremeyeceği bir şeyi biliyorsanız — mesela yemeğin kızartma olduğunu — kaydı düzeltin. Tahmini sonradan düzeltmek, sıfırdan kayıt girmekten çok daha hızlı.</p></div>
+            </details>
+        </div>
+    </section>
+    <section>
+        <h2>Kaynaklar</h2>
+        <ol class="small">
+            <li id="ref1"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10836267/" rel="nofollow noopener" target="_blank">Shonkoff E. ve ark. (2023) — AI-based digital image dietary assessment methods compared to humans and ground truth: a systematic review. Annals of Medicine (PMID 38060823)</a></li>
+            <li id="ref2"><a href="https://pubmed.ncbi.nlm.nih.gov/1454084/" rel="nofollow noopener" target="_blank">Lichtman S.W. ve ark. (1992) — Discrepancy between self-reported and actual caloric intake and exercise in obese subjects. N Engl J Med 327:1893–1898 (PMID 1454084)</a></li>
+            <li id="ref3"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6246963/" rel="nofollow noopener" target="_blank">Calorie estimation from pictures of food: crowdsourcing study. JMIR (PMC6246963)</a></li>
+            <li id="ref4"><a href="https://www.nature.com/articles/s43016-024-01089-5" rel="nofollow noopener" target="_blank">Predictive equation derived from 6,497 doubly-labelled water measurements enables the detection of erroneous self-reported energy intake. Nature Food (2024)</a></li>
+            <li id="ref5"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12229984/" rel="nofollow noopener" target="_blank">Validity and accuracy of artificial intelligence-based dietary intake assessment methods: a systematic review (PMC12229984)</a></li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>İlgili yazılar</h2>
+        <div class="cards">
+            <a class="card" href="/blog/en-iyi-fotografla-kalori-uygulamasi.html">
+                <h3 style="font-size:var(--fs-md)">En iyi fotoğrafla kalori uygulaması</h3>
+                <p>Cal AI, Foodvisor, MyFitnessPal ve Suu fotoğraflı kayıtta.</p>
+            </a>
+            <a class="card" href="/blog/fotografla-kalori-sayma.html">
+                <h3 style="font-size:var(--fs-md)">Fotoğrafla kalori hesaplama nasıl çalışır</h3>
+                <p>Resimle makro dökümü arasında ne oluyor.</p>
+            </a>
+            <a class="card" href="/blog/sesli-kalori-girisi.html">
+                <h3 style="font-size:var(--fs-md)">Sesli kalori girişi</h3>
+                <p>Öğünü söylemek fotoğraflamaktan ne zaman iyi.</p>
+            </a>
+            <a class="card" href="/blog/kalori-acigi.html">
+                <h3 style="font-size:var(--fs-md)">Kalori açığı gerçekte nedir</h3>
+                <p>Neden günlük toplamdan çok eğilim önemli.</p>
+            </a>
+        </div>
+    </section>
+
+    <p class="small text-subtle">Suu tıbbi teşhis veya tedavi amacıyla geliştirilmemiştir. Sağlıkla ilgili kararlar için bir sağlık profesyoneline danışın.</p>
+
+    <p>
+        <a href="/blog.html">← Bloga dön</a>
+        &nbsp;·&nbsp; <a href="/karsilastirmalar.html">Tüm karşılaştırmalar →</a>
+    </p>
+</div>
+
+</main>
+
+
+<!-- sütunlar arası bağlantı: scripts/link-pillars.py -->
+<div style="max-width:760px;margin:32px auto;padding:20px;border-radius:10px;background:rgba(30,136,229,.06)">
+  <h3 style="font-size:1rem;margin:0 0 12px">Kalori ve egzersiz tarafı</h3>
+  <ul style="margin:0 0 0 20px;padding:0">
+      <li style="margin-block-end:6px"><a href="su-kalori-egzersiz-tek-uygulama.html" style="color:#1E88E5;font-weight:600;text-decoration:none">Su, Kalori ve Egzersizi Tek Uygulamada Takip Etmek Mümkün mü?</a></li>
+      <li style="margin-block-end:6px"><a href="en-iyi-kalori-uygulamasi.html" style="color:#1E88E5;font-weight:600;text-decoration:none">En İyi Kalori Sayma Uygulaması 2026: Suu vs MyFitnessPal,…</a></li>
+  </ul>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__bottom" style="border:0">
+            <p class="small mb-0">© 2026 Suu · Furkan Mert Fındıklı</p>
+            <p class="small mb-0"><a href="/">suuapp.com</a></p>
+        </div>
+    </div>
+</footer>
+
+<div class="sticky-cta" data-cta="sticky">
+    <a href="/app?src=sticky" class="btn btn--secondary">App Store</a>
+    <a href="/app?src=sticky" class="btn btn--primary">Google Play</a>
+</div>
+
+</body>
+</html>

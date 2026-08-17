@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ÜRETİLMİŞ DOSYA — elle düzenlemeyin.
+         Kaynak: content/compare/gps-run-tracker-with-calorie-counter.json + content/compare/_template.html.j2
+         Yeniden üret: python3 scripts/build-compare.py --apply -->
+
+    <title>GPS Run Tracker That Also Counts Calories Eaten (2026 Guide)</title>
+    <meta name="description" content="Most running apps track the calories you burn but not the ones you eat, and most calorie apps do the reverse. Here is which apps close the loop — Strava, Nike Run Club, MyFitnessPal, Garmin and Suu compared on GPS, food logging and hydration.">
+    <meta name="keywords" content="gps run tracker with calorie counter, running app that tracks food, strava alternative with nutrition, workout and calorie tracking app, app that tracks exercise and diet, gps tracking calorie app">
+    <meta name="apple-itunes-app" content="app-id=6757619920">
+
+    <link rel="canonical" href="https://suuapp.com/blog/en/gps-run-tracker-with-calorie-counter.html">
+    <!-- Hreflang cluster (auto-injected) -->
+    <link rel="alternate" hreflang="tr" href="https://suuapp.com/blog/gps-kosu-takibi-kalori-sayaci.html">
+    <link rel="alternate" hreflang="en" href="https://suuapp.com/blog/en/gps-run-tracker-with-calorie-counter.html">
+    <link rel="alternate" hreflang="x-default" href="https://suuapp.com/blog/en/gps-run-tracker-with-calorie-counter.html">
+
+
+    <meta property="og:title" content="A GPS Run Tracker That Also Counts the Calories You Eat">
+    <meta property="og:description" content="Running apps track calories out. Calorie apps track calories in. Which app does both — and what you give up either way.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://suuapp.com/blog/en/gps-run-tracker-with-calorie-counter.html">
+    <meta property="og:image" content="https://suuapp.com/assets/og-image.png">
+    <meta property="og:site_name" content="Suu">
+    <meta property="og:locale" content="en_US">
+    <meta property="article:published_time" content="2026-08-17">
+    <meta property="article:author" content="Furkan Mert Fındıklı">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SuuTakip">
+    <meta name="twitter:title" content="A GPS Run Tracker That Also Counts the Calories You Eat">
+    <meta name="twitter:description" content="Running apps track calories out. Calorie apps track calories in. Which app does both — and what you give up either way.">
+    <meta name="twitter:image" content="https://suuapp.com/assets/og-image.png">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/donation-widget.css">
+    <link rel="stylesheet" href="/assets/css/suu.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://suuapp.com/#organization",
+      "name": "Suu",
+      "url": "https://suuapp.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://suuapp.com/assets/favicon-512.png"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://suuapp.com/#furkan",
+      "name": "Furkan Mert Fındıklı",
+      "url": "https://suuapp.com/yazarlar/furkan-mert.html",
+      "jobTitle": "Kurucu \u0026 Geliştirici",
+      "worksFor": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/furkanfindikli/"
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://suuapp.com/blog/en/gps-run-tracker-with-calorie-counter.html#article",
+      "headline": "A GPS Run Tracker That Also Counts the Calories You Eat",
+      "description": "Most running apps track the calories you burn but not the ones you eat, and most calorie apps do the reverse. Here is which apps close the loop — Strava, Nike Run Club, MyFitnessPal, Garmin and Suu compared on GPS, food logging and hydration.",
+      "image": "https://suuapp.com/assets/og-image.png",
+      "datePublished": "2026-08-17",
+      "dateModified": "2026-08-17",
+      "inLanguage": "en",
+      "mainEntityOfPage": "https://suuapp.com/blog/en/gps-run-tracker-with-calorie-counter.html",
+      "author": {
+        "@id": "https://suuapp.com/#furkan"
+      },
+      "publisher": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "about": {
+        "@id": "https://suuapp.com/#suuapp-ios"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".answer-box",
+          "h1",
+          "h2",
+          ".verdict p"
+        ]
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://suuapp.com/blog/en/gps-run-tracker-with-calorie-counter.html#itemlist",
+      "name": "Which app does which half",
+      "inLanguage": "en",
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "numberOfItems": 4,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Strava",
+            "applicationCategory": "HealthApplication"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Nike Run Club",
+            "applicationCategory": "HealthApplication"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "MyFitnessPal",
+            "applicationCategory": "HealthApplication"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "SoftwareApplication",
+            "@id": "https://suuapp.com/#suuapp-ios",
+            "name": "Suu"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://suuapp.com/blog/en/gps-run-tracker-with-calorie-counter.html#faq",
+      "inLanguage": "en",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is there a GPS running app that also counts the calories you eat?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, but very few. Strava, Nike Run Club and Garmin record the run well but have no real food logging. MyFitnessPal logs food well but its GPS is basic. Suu does both in one app: live GPS recording with a route map across around 50 sport activities, plus calorie and macro logging from a meal photo or by voice. The trade-off is that Suu has no segments, leaderboards or social feed, and its food database is smaller than MyFitnessPal's."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Suu track running distance, pace and route?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. You start, pause and finish the workout inside Suu and see distance, duration and pace update live; when you finish, your route is drawn on the map. Running and walking also report average speed and calories burned, and cycling adds speed and elevation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use Strava and Suu at the same time?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, and for many people that is the best setup. Suu reads workouts from Apple Health on iOS and Google Health Connect on Android, so a run or ride you record in Strava still appears in Suu, still raises your daily water goal, and still sits alongside the meal you log afterwards. You keep Strava's segments and social feed and add nutrition and hydration on top."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a workout change my calorie or water target automatically?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In Suu, yes on both counts. Every recorded workout — whether tracked live in the app or read from Apple Health / Health Connect — raises your daily water target, and Suu suggests 300–500 ml of calorie-based extra water after training. Meals influence it in the other direction: their protein and sodium content adds a digestion-water requirement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Suu a good Strava alternative?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For recording a run or ride and tying it to what you ate and drank, yes. As a replacement for Strava's competitive and social layer, no — Suu has no segments, no leaderboards, no kudos, no clubs, no power-meter analysis and no route planner, and it is not trying to build them. Its cycling analytics are shallower. If those features are why you open Strava, keep Strava and use Suu for the nutrition and hydration side."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which app is best for tracking gym workouts and food together?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For set-and-rep strength logging, dedicated tools like Hevy or Strong are better than any app in this comparison, including Suu. Suu covers gym sessions as one of around 50 activity types and links the calories burned to your daily targets, but it is not a strength-training log. A common setup is Hevy for the gym plus one app for food, hydration and cardio."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need Premium to use GPS tracking in Suu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Exercise tracking, including live GPS recording and the route map, is part of the free tier, as is core water tracking and 3 AI meal analyses per day. Premium adds unlimited AI analysis, photo meal recognition, advanced macro statistics and PDF/CSV export."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://suuapp.com/blog/en/gps-run-tracker-with-calorie-counter.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Suu",
+          "item": "https://suuapp.com/hosgeldiniz-en.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://suuapp.com/blog-en.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "A GPS Run Tracker That Also Counts the Calories You Eat",
+          "item": "https://suuapp.com/blog/en/gps-run-tracker-with-calorie-counter.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+
+    <script src="/assets/js/analytics.js" defer></script>
+    <script src="/lang-switcher.js?v=3" defer></script>
+    <script src="/donation-widget.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="nav">
+    <div class="container nav__inner">
+        <a href="/hosgeldiniz-en.html" class="nav__logo">💧 Suu</a>
+        <ul class="nav__links">
+            <li><a href="/blog-en.html">Blog</a></li>
+            <li><a href="/hosgeldiniz-en.html#karsilastirma">Comparison</a></li>
+            <li><a href="/hosgeldiniz-en.html#fiyat">Pricing</a></li>
+        </ul>
+        <div class="nav__actions">
+            <a href="/app?src=compare-nav" class="btn btn--primary" data-cta="nav"
+               style="min-height:40px;padding:var(--sp-2) var(--sp-5);font-size:var(--fs-sm)">Download Free</a>
+        </div>
+    </div>
+</nav>
+
+<main id="main">
+
+<header class="section" style="padding-block-end:var(--sp-8)">
+    <div class="container container--narrow">
+        <nav class="breadcrumb small text-subtle" aria-label="Breadcrumb"
+             style="margin-block-end:var(--sp-4)">
+            <a href="/hosgeldiniz-en.html">Suu</a>
+            <span aria-hidden="true"> › </span>
+            <a href="/blog-en.html">Blog</a>
+            <span aria-hidden="true"> › </span>
+            <span aria-current="page">A GPS Run Tracker That Also Counts the Calories You Eat</span>
+        </nav>
+        <span class="badge badge--new">GPS &amp; CALORIES</span>
+        <h1 style="margin-block-start:var(--sp-4)">A GPS Run Tracker That Also Counts the Calories You Eat</h1>
+        <p class="small text-subtle">Published: August 17, 2026 · Furkan Mert Fındıklı · 8 min read</p>
+    </div>
+</header>
+
+<div class="container container--narrow stack--lg" style="padding-block-end:var(--sp-24)">
+
+    <!-- CEVAP-ÖNCE: alıntılanan blok burasıdır -->
+    <div class="answer-box">
+        <p><strong>Short answer:</strong> Almost every app picks a side: Strava, Nike Run Club and Garmin record the run brilliantly but have no real food logging, while MyFitnessPal and Yazio log the food but have weak or no live GPS. If you want one app that records a run on a map and takes the meal afterwards, the realistic options are MyFitnessPal paired with a running app, or Suu — which does live GPS recording with a route map, photo and voice calorie logging, and hydration in the same place. What Suu does not have is segments, leaderboards or a social feed; if those are the reason you open Strava, keep Strava.</p>
+    </div>
+
+    <div class="disclosure">Written by the Suu team. We build one of the apps below, so read the product verdict with that in mind — the feature claims about every app are checkable on their own sites, and we have listed what Suu does worse alongside what it does better.</div>
+    <p>There is a specific frustration that sends people looking for this: you finish a 10 km run, your watch says you burned 620 kcal, and then you have to open a second app to log dinner — where that 620 kcal either does not appear at all, or appears as a number you have to type in yourself.</p>
+    <p>The two halves of the same equation live in different apps. This page is about which apps actually close that loop, and what you trade away when you pick one.</p>
+
+    <section>
+        <h2>Which app does which half</h2>
+        <div class="table-scroll">
+            <table class="table">
+                <caption class="sr-only">GPS recording, food logging and hydration across the main options. Based on each app&#39;s publicly documented features.</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Capability</th>
+                        <th scope="col">Strava</th>
+                        <th scope="col">Nike Run Club</th>
+                        <th scope="col">MyFitnessPal</th>
+                        <th scope="col" class="col-suu">Suu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Live GPS recording</td><td class="yes">✓</td><td class="yes">✓</td><td class="partial">Basic</td><td class="col-suu yes">✓</td></tr>
+                    <tr><td>Route drawn on a map</td><td class="yes">✓</td><td class="yes">✓</td><td class="partial">Limited</td><td class="col-suu yes">✓</td></tr>
+                    <tr><td>Segments &amp; leaderboards</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="col-suu no">✗</td></tr>
+                    <tr><td>Social feed / clubs</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="col-suu no">✗</td></tr>
+                    <tr><td>Log a meal</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td><td class="col-suu yes">✓</td></tr>
+                    <tr><td>Calories from a photo</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="col-suu yes">✓</td></tr>
+                    <tr><td>Log a meal by voice</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="col-suu yes">✓</td></tr>
+                    <tr><td>Barcode scanning</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td><td class="col-suu no">✗</td></tr>
+                    <tr><td>Food database size</td><td class="">—</td><td class="">—</td><td class="yes">Widest</td><td class="col-suu partial">Good</td></tr>
+                    <tr><td>Hydration tracked properly</td><td class="no">✗</td><td class="no">✗</td><td class="partial">Basic counter</td><td class="col-suu yes">91 beverages</td></tr>
+                    <tr><td>Workout raises your water goal</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="col-suu yes">✓</td></tr>
+                    <tr><td>Reads workouts from Apple Health / Health Connect</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="col-suu yes">✓</td></tr>
+                    <tr><td>Free tier does real work</td><td class="partial">Limited</td><td class="yes">✓</td><td class="partial">Limited</td><td class="col-suu yes">✓</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section>
+        <h2>Why the loop is usually broken</h2>
+        <p>Running apps and food apps grew out of different problems. Strava started as a cycling and running social network; the calories-burned figure exists there mostly to give the activity a headline number. MyFitnessPal started as a food database; its exercise entry exists mostly to add calories back to your budget.</p>
+        <p>The result is that the number crosses between them badly. Even when two apps sync through Apple Health or Health Connect, what usually transfers is a bare calorie total — not the workout's intensity, duration or what it means for your fluid needs. And nothing at all flows the other way: your dinner has never once changed how a running app thinks about your day.</p>
+    </section>
+    <section>
+        <h2>Two workable setups</h2>
+        <p>There are only two configurations that genuinely work today, and it is worth being clear about both.</p>
+        <ul>
+            <li><strong>Two apps, joined by Apple Health / Health Connect.</strong> Record in Strava, Nike Run Club or Garmin; log food in MyFitnessPal or Cronometer. This gives you the best of each — Strava's segments, MyFitnessPal's barcode database — at the cost of two apps, two subscriptions and a sync that carries only a calorie number.</li>
+            <li><strong>One app that does both.</strong> Fewer moving parts and the two halves actually inform each other, at the cost of a smaller food database and no social layer. This is where Suu sits.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>What Suu records on a run or ride</h2>
+        <p>You start, pause and finish the session inside the app. Distance, duration and pace update live while you are moving, and when you finish, your route is drawn on the map.</p>
+        <p>Around 50 sport activities are supported — running, walking, cycling, gym, swimming, hiking, cardio and more. Running and walking report distance, pace, average speed and calories burned; cycling adds speed and elevation. Sessions you recorded on a watch or in another app are read from Apple Health and Google Health Connect, so a run logged in Strava still counts inside Suu.</p>
+        <ul>
+            <li><strong>The workout changes your water goal.</strong> Every recorded session raises your daily fluid target, and Suu suggests 300–500 ml of calorie-based extra water after training.</li>
+            <li><strong>The meal changes it too.</strong> Protein and sodium in a logged meal add a digestion-water requirement — the only direction of influence that no other app in this table implements.</li>
+            <li><strong>The drink is not thrown away.</strong> Log "a banana and a glass of milk" after a run and Suu splits it: the banana becomes calories and macros, the milk also counts toward hydration.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>What Suu does not do — and who should not switch</h2>
+        <p>This is the part that decides it for most runners, so it goes before the verdict rather than after it.</p>
+        <ul>
+            <li><strong>No segments or leaderboards.</strong> If being ranked on a climb is the reason you run the route, Strava is the answer and nothing here replaces it.</li>
+            <li><strong>No social feed, clubs or kudos.</strong> Suu has weekly water-drinking leagues with up to 4 friends, which is not the same thing and is not meant to be.</li>
+            <li><strong>Shallower cycling analytics.</strong> No power-meter analysis, no external sensor ecosystem, no route planner.</li>
+            <li><strong>No barcode scanning</strong>, and a food database smaller than MyFitnessPal's. If you eat a lot of packaged or restaurant food, that gap is real.</li>
+            <li><strong>Not a strength-training log.</strong> For set-and-rep tracking in the gym, Hevy or Strong remain better tools.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Using both together is a legitimate answer</h2>
+        <p>Because Suu reads workouts from Apple Health and Health Connect, you do not have to choose. Record the ride in Strava for the segments and the club feed; the session still arrives in Suu, still raises your water goal, and still sits next to the meal you photograph afterwards.</p>
+        <p>That combination costs nothing extra and is what we would honestly recommend to a competitive cyclist who also wants their nutrition in one place.</p>
+    </section>
+
+    <section class="verdict">
+        <h2 style="margin-block-end:var(--sp-4)">Verdict</h2>
+        <p><strong>Choose Strava or Nike Run Club</strong> if the run itself is the point — segments, clubs, race training plans, group riding. Add a separate food app if you need one.</p>
+        <p><strong>Choose MyFitnessPal</strong> if food logging is the priority and you eat a lot of packaged or restaurant meals, where barcode scanning and the largest database do real work. Pair it with a running app for the GPS half.</p>
+        <p><strong>Choose Suu</strong> if the workout is part of a body-composition or hydration goal and you want one app where the run, the meal and the water actually update each other — and you can live without segments and a social feed.</p>
+        <p><strong>Or run both.</strong> Strava for the ride, Suu for everything the ride changes. The workout crosses over through Apple Health or Health Connect automatically.</p>
+    </section>
+
+    <section class="cta-band" style="border-radius:var(--r-lg);padding-block:var(--sp-12)" data-cta="compare-body">
+        <div class="container">
+            <h2 style="font-size:var(--fs-2xl)">Record the run — and everything it changes</h2>
+            <p>Free to download · GPS tracking free forever · Premium free for 3 days</p>
+            <div class="btn-row btn-row--center" style="margin-block-start:var(--sp-6)">
+                <a href="/app?src=compare-body" class="btn btn--secondary btn--lg">Download Suu Free</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Frequently asked questions</h2>
+        <div class="faq">
+            <details class="faq__item" open>
+                <summary>Is there a GPS running app that also counts the calories you eat?</summary>
+                <div><p>Yes, but very few. Strava, Nike Run Club and Garmin record the run well but have no real food logging. MyFitnessPal logs food well but its GPS is basic. Suu does both in one app: live GPS recording with a route map across around 50 sport activities, plus calorie and macro logging from a meal photo or by voice. The trade-off is that Suu has no segments, leaderboards or social feed, and its food database is smaller than MyFitnessPal&#39;s.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Does Suu track running distance, pace and route?</summary>
+                <div><p>Yes. You start, pause and finish the workout inside Suu and see distance, duration and pace update live; when you finish, your route is drawn on the map. Running and walking also report average speed and calories burned, and cycling adds speed and elevation.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Can I use Strava and Suu at the same time?</summary>
+                <div><p>Yes, and for many people that is the best setup. Suu reads workouts from Apple Health on iOS and Google Health Connect on Android, so a run or ride you record in Strava still appears in Suu, still raises your daily water goal, and still sits alongside the meal you log afterwards. You keep Strava&#39;s segments and social feed and add nutrition and hydration on top.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Does a workout change my calorie or water target automatically?</summary>
+                <div><p>In Suu, yes on both counts. Every recorded workout — whether tracked live in the app or read from Apple Health / Health Connect — raises your daily water target, and Suu suggests 300–500 ml of calorie-based extra water after training. Meals influence it in the other direction: their protein and sodium content adds a digestion-water requirement.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Is Suu a good Strava alternative?</summary>
+                <div><p>For recording a run or ride and tying it to what you ate and drank, yes. As a replacement for Strava&#39;s competitive and social layer, no — Suu has no segments, no leaderboards, no kudos, no clubs, no power-meter analysis and no route planner, and it is not trying to build them. Its cycling analytics are shallower. If those features are why you open Strava, keep Strava and use Suu for the nutrition and hydration side.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Which app is best for tracking gym workouts and food together?</summary>
+                <div><p>For set-and-rep strength logging, dedicated tools like Hevy or Strong are better than any app in this comparison, including Suu. Suu covers gym sessions as one of around 50 activity types and links the calories burned to your daily targets, but it is not a strength-training log. A common setup is Hevy for the gym plus one app for food, hydration and cardio.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Do I need Premium to use GPS tracking in Suu?</summary>
+                <div><p>No. Exercise tracking, including live GPS recording and the route map, is part of the free tier, as is core water tracking and 3 AI meal analyses per day. Premium adds unlimited AI analysis, photo meal recognition, advanced macro statistics and PDF/CSV export.</p></div>
+            </details>
+        </div>
+    </section>
+    <section>
+        <h2>References</h2>
+        <ol class="small">
+            <li id="ref1"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6835337/" rel="nofollow noopener" target="_blank">Sweat rate and fluid replacement during exercise (PMC6835337)</a></li>
+            <li id="ref2"><a href="https://pubmed.ncbi.nlm.nih.gov/1454084/" rel="nofollow noopener" target="_blank">Lichtman S.W. et al. (1992) — Self-reported exercise was overreported by 51% in diet-resistant subjects. N Engl J Med (PMID 1454084)</a></li>
+            <li id="ref3"><a href="https://www.efsa.europa.eu/en/efsajournal/pub/1459" rel="nofollow noopener" target="_blank">EFSA — Scientific opinion on dietary reference values for water</a></li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Related articles</h2>
+        <div class="cards">
+            <a class="card" href="/blog/en/suu-vs-strava.html">
+                <h3 style="font-size:var(--fs-md)">Suu vs Strava</h3>
+                <p>The head-to-head, including where Strava clearly wins.</p>
+            </a>
+            <a class="card" href="/blog/en/best-workout-tracker-app.html">
+                <h3 style="font-size:var(--fs-md)">Best workout tracker app</h3>
+                <p>Strava, Nike Run Club, Samsung Health and Suu together.</p>
+            </a>
+            <a class="card" href="/blog/en/calories-burned-exercise.html">
+                <h3 style="font-size:var(--fs-md)">Calories burned by exercise</h3>
+                <p>How the burn figure is estimated, and why it is often wrong.</p>
+            </a>
+            <a class="card" href="/blog/en/hydration-and-exercise.html">
+                <h3 style="font-size:var(--fs-md)">Hydration and exercise</h3>
+                <p>How much extra fluid a session actually costs you.</p>
+            </a>
+        </div>
+    </section>
+
+    <p class="small text-subtle">Suu is not intended for medical diagnosis or treatment. Consult a healthcare professional for health-related decisions.</p>
+
+    <p>
+        <a href="/blog-en.html">← Back to blog</a>
+        &nbsp;·&nbsp; <a href="/comparisons.html">All comparisons →</a>
+    </p>
+</div>
+
+</main>
+
+
+<!-- sütunlar arası bağlantı: scripts/link-pillars.py -->
+<div style="max-width:760px;margin:32px auto;padding:20px;border-radius:10px;background:rgba(30,136,229,.06)">
+  <h3 style="font-size:1rem;margin:0 0 12px">The calorie and exercise side</h3>
+  <ul style="margin:0 0 0 20px;padding:0">
+      <li style="margin-block-end:6px"><a href="water-calorie-exercise-one-app.html" style="color:#1E88E5;font-weight:600;text-decoration:none">Is There an App That Tracks Water, Calories AND Exercise…</a></li>
+      <li style="margin-block-end:6px"><a href="best-calorie-counting-app.html" style="color:#1E88E5;font-weight:600;text-decoration:none">Best Calorie Counting App 2026: Suu vs MyFitnessPal,…</a></li>
+  </ul>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__bottom" style="border:0">
+            <p class="small mb-0">© 2026 Suu · Furkan Mert Fındıklı</p>
+            <p class="small mb-0"><a href="/hosgeldiniz-en.html">suuapp.com</a></p>
+        </div>
+    </div>
+</footer>
+
+<div class="sticky-cta" data-cta="sticky">
+    <a href="/app?src=sticky" class="btn btn--secondary">App Store</a>
+    <a href="/app?src=sticky" class="btn btn--primary">Google Play</a>
+</div>
+
+</body>
+</html>
