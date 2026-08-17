@@ -11,7 +11,7 @@ Suu'nun pazarlama ve SEO web sitesi. [suuapp.com](https://suuapp.com) adresinde 
 
 Suu artık sadece bir su takip uygulaması değil — **su takibi, kalori sayımı ve egzersiz takibini yapay zekâ ile birleştiren** bir sağlık ve fitness uygulaması. Furkan Mert Fındıklı tarafından tek başına (indie) Flutter ile geliştirilir; Android ve iOS'ta ücretsiz.
 
-- **Google Play:** 4.9★ · 2.800+ değerlendirme · **App Store:** 5.0★
+- **Google Play:** 4.9★ · 2.847 değerlendirme · **App Store:** puan/sayım teyit bekliyor (bkz. `suu-facts.json` → `_needs_confirmation`)
 - **Uygulama dil desteği:** Türkçe, English, العربية, Deutsch, Italiano, Русский, हिन्दी (7 dil, RTL dahil)
 - **Site dil desteği:** TR / EN / AR / RU canlı — DE / IT / HI yolda
 - **Hedef pazar:** Türkiye, MENA, BDT, DACH, İtalya, Hindistan
@@ -67,6 +67,15 @@ Sohbet ederek su ekleme, içecek kaydetme, öğün oluşturma, egzersiz ekleme, 
 
 **URL kuralı — kritik:** Mevcut URL'ler değiştirilmez. GitHub Pages 301 yönlendirme veremediği için dizin tabanlı (`/en/`, `/de/`) yapıya geçmek yıllık ~40.000 görüntülemenin dayandığı URL'leri kırardı.
 
+**`_default` ile `_xdefault` ayrımı — kritik:** `content/page-registry.json` iki ayrı anahtar taşır ve karıştırılmamalıdır.
+
+| Anahtar | Değer | Neyi sürer |
+|---|---|---|
+| `_default` | `tr` | **URL yapısı.** Türkçe blog yazıları `blog/<slug>.html`, diğerleri `blog/<lang>/<slug>.html`. Değiştirmek her URL'yi kırar. |
+| `_xdefault` | `en` | **`hreflang="x-default"` hedefi.** Dil tercihi belirsiz kullanıcıya/crawler'a sunulacak sürüm. |
+
+Bu ayrım olmadan 222 kümenin 220'si "varsayılan Suu = Türkçe" sinyali veriyordu. Yeni bir şablon yazarken x-default'u **sabit kodlamayın** — `xdefault_href` değişkenini kullanın, aksi hâlde her build `inject-hreflang.py`'nin işini geri alır.
+
 ```
 /
 ├── index.html                    # Türkçe ana sayfa
@@ -78,8 +87,8 @@ Sohbet ederek su ekleme, içecek kaydetme, öğün oluşturma, egzersiz ekleme, 
 ├── gizlilik-politikasi.html      # Gizlilik (tek URL, sekmeli çok dil)
 ├── kullanim-sartlari.html        # Kullanım Şartları (tek URL, sekmeli çok dil)
 ├── su-hesaplayici / water-calculator*  # Su hesaplama aracı
-├── blog/                         # Türkçe blog (42 yazı)
-│   ├── en/                       # İngilizce blog (39 yazı)
+├── blog/                         # Türkçe blog (50 yazı)
+│   ├── en/                       # İngilizce blog (50 yazı)
 │   ├── ar/                       # Arapça blog (35 yazı)
 │   └── ru/                       # Rusça blog (39 yazı)
 ├── content/suu-facts.json        # TEK DOĞRULUK KAYNAĞI
@@ -112,12 +121,16 @@ python3 scripts/fix-stale-facts.py --apply  # mekanik düzeltmeler (sayı, dil l
 python3 scripts/build-homepages.py --apply          # 7 dilde ana sayfa
 python3 scripts/build-i18n-map.py --apply           # i18n-map.json + lang-switcher.js
 python3 scripts/build-llms.py --apply               # llms.txt ailesi (7 dil × 2)
+python3 scripts/build-compare.py --apply            # karşılaştırma/kategori cevap sayfaları
+python3 scripts/build-feeds.py --apply              # RSS beslemeleri (dil başına, son 40)
 
 # Enjeksiyon
 python3 scripts/inject-hreflang.py --apply          # hreflang kümesi
 python3 scripts/inject-comparison-schema.py --apply # karşılaştırma sayfalarına ItemList
 python3 scripts/inject-analytics.py --apply         # ölçüm parçacığı
 python3 scripts/update-sitemap.py --apply           # sitemap (image blokları korunur)
+python3 scripts/sync-blog-index.py --apply          # blog indeksine eksik KARTLARI ekle
+python3 scripts/sync-blog-schema.py --apply         # blog indeksinin Blog.blogPost ŞEMASINI eşitle
 python3 scripts/generate-og.py                      # blog OG görselleri
 
 # Yayın sonrası
@@ -130,14 +143,21 @@ python3 scripts/check-screenshots.py --missing      # eksik ekran görüntüleri
 **Tipik yayın akışı:**
 ```bash
 python3 scripts/build-homepages.py --apply && \
+python3 scripts/build-compare.py --apply && \
 python3 scripts/build-i18n-map.py --apply && \
 python3 scripts/build-llms.py --apply && \
 python3 scripts/inject-hreflang.py --apply && \
+python3 scripts/sync-blog-index.py --apply && \
+python3 scripts/sync-blog-schema.py --apply && \
 python3 scripts/update-sitemap.py --apply && \
-python3 scripts/check-facts.py
+python3 scripts/build-feeds.py --apply && \
+python3 scripts/check-facts.py && \
+python3 scripts/check-faq-visibility.py
 git push origin main
 python3 scripts/indexnow-submit.py --all
 ```
+
+**Sıra önemli:** `inject-hreflang.py`, sayfa üreten her script'ten SONRA çalışmalı — `build-compare.py` ve `build-compare-hub.py` sayfayı baştan yazdığı için enjekte edilmiş hreflang bloğunu düşürür. `sync-blog-schema.py` de `sync-blog-index.py`'den sonra gelir (biri kart, diğeri `Blog.blogPost` şeması).
 
 ## Teknoloji
 
