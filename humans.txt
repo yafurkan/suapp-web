@@ -60,15 +60,20 @@ Yandex Webmaster: VERIFIED ✅
   Next step (user action): Indexing → Sitemap files → submit https://suuapp.com/sitemap.xml
   Optional: Yandex.Metrica analytics at https://metrica.yandex.com (separate setup)
 
-Bing Webmaster Tools: NOT YET CONFIGURED (optional, helpful for EN reach)
+Bing Webmaster Tools: NOT YET CONFIGURED — HIGHEST-PRIORITY REMAINING STEP
   Setup URL: https://www.bing.com/webmasters
-  Microsoft Edge / DuckDuckGo / partial ChatGPT search use Bing's index, so verification matters for EN traffic.
-  Tip: Bing supports importing properties straight from Google Search Console once Google is verified.
+  ChatGPT Search retrieves from Bing's index: a page Bing has not indexed cannot be cited in a ChatGPT answer,
+  no matter how good the content is. Published analyses put 87%+ of ChatGPT Search citations in Bing's top results.
+  Edge, Copilot and DuckDuckGo draw on the same index.
+  Steps: verify the site (Bing can import the property straight from Google Search Console), submit
+  https://suuapp.com/sitemap.xml, then confirm Bingbot is not blocked (robots.txt allows it).
+  Expected lag once verified: days to two weeks for core pages.
 
-IndexNow API: NOT YET CONFIGURED (optional, fast indexing)
-  Setup URL: https://www.indexnow.org/
-  Single API key works for both Bing and Yandex — when a new blog post is published, ping the IndexNow endpoint
-  and both engines re-crawl within minutes.
+IndexNow API: CONFIGURED ✅
+  Key file: https://suuapp.com/dc6c09b37528d33dfb76c4c4e987b32a.txt
+  Submit with: python3 scripts/indexnow-submit.py --changed   (or --all after a large release)
+  One call reaches Bing, Yandex, Seznam and Naver. Google does not use IndexNow — sitemap + Search Console there.
+  Run it AFTER the deploy lands, not before: pinging a URL whose new content is not live yet wastes the ping.
 
 
 /* THANKS */
