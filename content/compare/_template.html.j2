@@ -78,6 +78,17 @@
 
 <header class="section" style="padding-block-end:var(--sp-8)">
     <div class="container container--narrow">
+        {#- Görünür breadcrumb: BreadcrumbList şeması vardı ama DOM'da karşılığı
+            yoktu. Google yapılandırılmış verinin görünür içerikle eşleşmesini
+            istiyor; ayrıca gezinme bağlantısı iç bağlantı grafiğini besliyor. #}
+        <nav class="breadcrumb small text-subtle" aria-label="Breadcrumb"
+             style="margin-block-end:var(--sp-4)">
+            <a href="{{ ui.home_href }}">Suu</a>
+            <span aria-hidden="true"> › </span>
+            <a href="{{ ui.blog_href }}">{{ ui.blog }}</a>
+            <span aria-hidden="true"> › </span>
+            <span aria-current="page">{{ h1 }}</span>
+        </nav>
         <span class="badge badge--new">{{ badge }}</span>
         <h1 style="margin-block-start:var(--sp-4)">{{ h1 }}</h1>
         <p class="small text-subtle">{{ ui.published_label }} {{ published_display }} · {{ facts.entities.founder.name }} · {{ read_minutes }} {{ ui.read_time }}</p>

@@ -20,7 +20,9 @@
 {%- for h in hreflang %}
     <link rel="alternate" hreflang="{{ h.code }}" href="{{ h.href }}">
 {%- endfor %}
-    <link rel="alternate" hreflang="x-default" href="https://suuapp.com/">
+    {#- x-default hedefi page-registry.json/_xdefault ile aynı olmalı;
+       sabit kodlanınca her build inject-hreflang.py'nin işini geri alıyordu. #}
+    <link rel="alternate" hreflang="x-default" href="{{ xdefault_href }}">
 
 
     <meta name="apple-itunes-app" content="app-id={{ facts.links.app_store_id }}">
@@ -158,6 +160,9 @@
                 <span class="trust-row__item">{{ hero.trust_reviews }}</span>
                 <span class="trust-row__item">{{ hero.trust_health }}</span>
                 <span class="trust-row__item">{{ hero.trust_langs }}</span>
+{%- if hero.trust_track %}
+                <span class="trust-row__item">{{ hero.trust_track }}</span>
+{%- endif %}
             </div>
         </div>
         <div class="hero__media">
