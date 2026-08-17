@@ -10,6 +10,9 @@
     "hi"
   ],
   "_default": "tr",
+  "_default_comment": "URL YAPISININ varsayılanı. Türkçe sayfalar ek almaz (blog/<slug>.html), diğerleri blog/<lang>/<slug>.html olur. DEĞİŞTİRİLEMEZ — her URL'yi kırar.",
+  "_xdefault": "en",
+  "_xdefault_comment": "hreflang=\"x-default\" HEDEFİ — dil tercihi belirsiz kullanıcıya/crawler'a sunulacak sürüm. _default'tan ayrıdır: URL yapısı Türkçe temelli kalırken varsayılan sunum dili İngilizce. Bu ayrım olmadan 220 küme 'varsayılan Suu = Türkçe' sinyali veriyordu.",
   "_shared_comment": "Tek URL üzerinde sekmeli çok dil sunan sayfalar — dil seçici bunlarda gizlenir.",
   "shared": [
     "gizlilik-politikasi.html",
