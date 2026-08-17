@@ -30,6 +30,73 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- Makine-okunabilir referans dosyaları -->
+    <link rel="alternate" type="text/plain" href="/llms-en.txt" title="Suu — compact reference for AI assistants" />
+    <link rel="alternate" type="text/plain" href="/llms-full-en.txt" title="Suu — full reference corpus for AI assistants" />
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://suuapp.com/#organization",
+      "name": "Suu",
+      "url": "https://suuapp.com",
+      "logo": { "@type": "ImageObject", "url": "https://suuapp.com/assets/favicon-512.png", "width": 512, "height": 512 },
+      "founder": { "@id": "https://suuapp.com/#furkan" },
+      "foundingDate": "2024",
+      "sameAs": [
+        "https://www.linkedin.com/in/furkanfindikli/",
+        "https://apps.apple.com/us/app/suu-su-takip/id6757619920",
+        "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
+        "https://x.com/SuuTakip"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://suuapp.com/#furkan",
+      "name": "Furkan Mert Fındıklı",
+      "url": "https://suuapp.com/yazarlar/furkan-mert.html",
+      "sameAs": ["https://www.linkedin.com/in/furkanfindikli/"]
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://suuapp.com/suu-for-claude.html#article",
+      "headline": "Suu for Claude — Connector Guide",
+      "description": "How to connect a Suu account to Claude and ask about water intake, goals, history, stats, plan and badges. The connector is read-only and scoped to the signed-in user's own account.",
+      "url": "https://suuapp.com/suu-for-claude.html",
+      "inLanguage": "en",
+      "isAccessibleForFree": true,
+      "author": { "@id": "https://suuapp.com/#furkan" },
+      "publisher": { "@id": "https://suuapp.com/#organization" },
+      "about": { "@id": "https://suuapp.com/#suuapp-ios" },
+      "proficiencyLevel": "Beginner",
+      "speakable": { "@type": "SpeakableSpecification", "cssSelector": ["h1", ".lede"] }
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://suuapp.com/suu-for-claude.html#howto",
+      "name": "Connect Suu to Claude",
+      "description": "Three steps to connect a Suu account to Claude as a read-only connector.",
+      "totalTime": "PT3M",
+      "step": [
+        { "@type": "HowToStep", "position": 1, "name": "Set it up in Claude", "text": "Add the Suu connector from Claude's connector settings.", "url": "https://suuapp.com/suu-for-claude.html#setup" },
+        { "@type": "HowToStep", "position": 2, "name": "Sign in to Suu", "text": "Authorize with your existing Suu account so the connector is scoped to your own data.", "url": "https://suuapp.com/suu-for-claude.html#signin" },
+        { "@type": "HowToStep", "position": 3, "name": "Ask Claude", "text": "Ask about your water intake, daily goal, history, stats, hydration plan and badges.", "url": "https://suuapp.com/suu-for-claude.html#try" }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://suuapp.com/hosgeldiniz-en.html" },
+        { "@type": "ListItem", "position": 2, "name": "Suu for Claude", "item": "https://suuapp.com/suu-for-claude.html" }
+      ]
+    }
+  ]
+}
+    </script>
     <style>
       :root { --brand: #0a83e4; --brand-deep: #0768b8; --ink: #0f172a; --muted: #5b6b7f; --line: #e6e9ef; }
       * { box-sizing: border-box; }
@@ -112,7 +179,7 @@
       </div>
 
       <div class="card">
-        <h2><span class="num">1</span>Set it up in Claude</h2>
+        <h2 id="setup"><span class="num">1</span>Set it up in Claude</h2>
         <ul>
           <li>In Claude, open <strong>Settings → Connectors → Add custom connector</strong>.</li>
           <li>Paste the server URL:<br />
@@ -122,7 +189,7 @@
       </div>
 
       <div class="card">
-        <h2><span class="num">2</span>Sign in to Suu</h2>
+        <h2 id="signin"><span class="num">2</span>Sign in to Suu</h2>
         <ul>
           <li>Click <strong>Connect</strong>. The Suu sign-in page opens.</li>
           <li>Sign in with <strong>Google</strong>, <strong>Apple</strong>, or your
@@ -133,7 +200,7 @@
       </div>
 
       <div class="card">
-        <h2><span class="num">3</span>Try it</h2>
+        <h2 id="try"><span class="num">3</span>Try it</h2>
         <ul>
           <li>"How much water have I had today and how close am I to my goal?"</li>
           <li>"How has my hydration been over the last two weeks?"</li>

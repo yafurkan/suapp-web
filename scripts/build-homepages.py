@@ -35,7 +35,12 @@ except ImportError:
 ROOT = Path(__file__).resolve().parents[1]
 HOME = ROOT / "content" / "home"
 FACTS = ROOT / "content" / "suu-facts.json"
+REGISTRY = ROOT / "content" / "page-registry.json"
 BASE = "https://suuapp.com"
+
+# x-default hedef dili kayıt defterinden gelir. Şablonda sabit kodluyken
+# her build inject-hreflang.py'nin işini geri alıyordu.
+XDEFAULT_LANG = json.loads(REGISTRY.read_text(encoding="utf-8")).get("_xdefault", "tr")
 
 # lang → (çıktı dosyası, locale, yön)
 TARGETS: dict[str, tuple[str, str, str]] = {
@@ -129,7 +134,15 @@ def build_jsonld(lang: str, data: dict, facts: dict) -> str:
             "founder": {"@id": f"{BASE}/#furkan"},
             "foundingLocation": {"@type": "Place", "name": "İstanbul, Türkiye"},
             "areaServed": ["TR", "SA", "AE", "KW", "QA", "RU", "DE", "IT", "IN", "US", "GB"],
-            "sameAs": founder["sameAs"] + [links["app_store"], links["google_play"]],
+            # Yıl granülerliği bilinçli: kesin gün Play Console'dan teyit edilmeden
+            # gün/ay yazmak doğrulanabilir bir iddiayı uydurmak olur.
+            # suu-facts.json _needs_confirmation'daki madde kapanınca daraltılabilir.
+            **({"foundingDate": facts["identity"]["founded"]} if facts["identity"].get("founded") else {}),
+            "sameAs": founder["sameAs"] + [
+                links["app_store"],
+                links["google_play"],
+                f"https://x.com/{links['twitter_handle'].lstrip('@')}",
+            ],
         },
         {
             "@type": "Person",
@@ -147,9 +160,13 @@ def build_jsonld(lang: str, data: dict, facts: dict) -> str:
             "@id": f"{BASE}/#website",
             "url": BASE,
             "name": "Suu",
+            "alternateName": facts["identity"]["store_title"].get("en"),
             "description": data["meta"]["description"],
             "inLanguage": lang,
             "publisher": {"@id": f"{BASE}/#organization"},
+            # SearchAction (sitelinks searchbox) BİLEREK yok: sitede çalışan bir
+            # arama uç noktası bulunmuyor. Olmayan bir uç noktayı bildirmek
+            # Google'ın yapılandırılmış veri politikasını ihlal eder.
         },
         app_node("iOS 15.0+", "ios", links["app_store"], n.get("rating_app_store"), n.get("rating_count_app_store"), data["schema"]["features_ios"]),
         app_node("Android 8.0+", "android", links["google_play"], n.get("rating_google_play"), n.get("rating_count_google_play"), data["schema"]["features_android"]),
@@ -161,6 +178,10 @@ def build_jsonld(lang: str, data: dict, facts: dict) -> str:
             "isPartOf": {"@id": f"{BASE}/#website"},
             "about": {"@id": f"{BASE}/#suuapp-ios"},
             "inLanguage": lang,
+            # Tazelik sinyali: suu-facts.json'ın kendi _updated tarihinden gelir,
+            # her build'de "bugün" yazmaz — aksi hâlde içerik değişmese de
+            # sayfa her seferinde güncellenmiş gibi görünürdü.
+            "dateModified": facts["_updated"],
             "primaryImageOfPage": {"@type": "ImageObject", "url": f"{BASE}/assets/og-image.png"},
             "speakable": {"@type": "SpeakableSpecification", "cssSelector": [".hero__title", ".hero__lead", ".answer-box"]},
         },
@@ -238,6 +259,8 @@ def main() -> int:
             url=page_url(lang),
             og_locale_alternates=[TARGETS[c][1] for c in available_langs() if c != lang],
             hreflang=hreflang_cluster(),
+            xdefault_href=next((h["href"] for h in hreflang_cluster()
+                                if h["code"] == XDEFAULT_LANG), f"{BASE}/"),
             footer_langs=footer_langs(),
             facts=facts,
             jsonld=build_jsonld(lang, data, facts),

@@ -141,6 +141,13 @@ def main() -> int:
         if u not in present:
             wanted.append(u)
 
+    # Yapılandırılmış AI manifesti — robots.txt yorumundan başka hiçbir yerden
+    # bağlantı almıyordu, dolayısıyla pratikte keşfedilemezdi.
+    if (ROOT / ".well-known" / "ai-plugin.json").exists():
+        u = f"{BASE}/.well-known/ai-plugin.json"
+        if u not in present:
+            wanted.append(u)
+
     added_xml = ""
     for url in sorted(set(wanted)):
         cluster = clusters.get(url)
