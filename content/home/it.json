@@ -63,8 +63,8 @@
     "aria_app_store": "Scarica su App Store",
     "aria_google_play": "Disponibile su Google Play",
     "trial_note": "Download gratuito · Premium <strong>3 giorni gratis</strong>",
-    "trust_rating": "4.9 su Google Play · 5.0 su App Store",
-    "trust_reviews": "oltre 2.800 valutazioni",
+    "trust_rating": "4,9★ su Google Play",
+    "trust_reviews": "2.847 valutazioni",
     "trust_health": "Apple Health e Health Connect",
     "trust_langs": "7 lingue",
     "shot_alt": "Schermata principale di Suu: riepilogo giornaliero di acqua, calorie ed esercizio"
@@ -619,41 +619,12 @@
     ]
   },
   "reviews": {
-    "head": "Recensioni degli utenti",
-    "sub": "Google Play 4.9★ · App Store 5.0★ · oltre 2.800 valutazioni — recensioni tradotte dal turco",
+    "head": "Valutazioni",
+    "sub": "4,9★ su 2.847 valutazioni su Google Play. Non riportiamo qui le recensioni — leggile direttamente sullo store.",
     "stars_aria": "{n} stelle su 5",
-    "items": [
-      {
-        "stars": 5,
-        "author": "Ayşe Yılmaz",
-        "text": "App fantastica! La mia abitudine a bere è cambiata completamente. Ora arrivo a 2,5 litri al giorno. I promemoria aiutano davvero."
-      },
-      {
-        "stars": 5,
-        "author": "Mehmet Kaya",
-        "text": "Il monitoraggio dell'acqua era importante per me perché mi alleno. Grazie a questa app le mie prestazioni sono migliorate. Mi piacciono molto i grafici."
-      },
-      {
-        "stars": 5,
-        "author": "Ali Öztürk",
-        "text": "Ottima! In ufficio dimenticavo di bere. Ora bevo regolarmente e mi sento molto più energico."
-      },
-      {
-        "stars": 5,
-        "author": "Fatma Demir",
-        "text": "Il mio medico mi aveva detto di bere 2 litri al giorno. Con questa app raggiungo l'obiettivo facilmente. Grazie!"
-      },
-      {
-        "stars": 4,
-        "author": "Zeynep Çelik",
-        "text": "Nel complesso soddisfatta, ma a volte le notifiche arrivano troppo spesso. Per il resto mi ha aiutata molto a raggiungere gli obiettivi."
-      },
-      {
-        "stars": 4,
-        "author": "Murat Şahin",
-        "text": "Buona app, ma più opzioni di personalizzazione sarebbero ottime. Comunque ha rivoluzionato la mia routine."
-      }
-    ]
+    "items": [],
+    "cta_play": "Leggi le recensioni su Google Play",
+    "cta_appstore": "Vedi su App Store"
   },
   "pricing": {
     "eyebrow": "Prezzi",

@@ -62,8 +62,8 @@
     "aria_app_store": "App Store'dan indir",
     "aria_google_play": "Google Play'den indir",
     "trial_note": "Ücretsiz indir · Premium <strong>3 gün ücretsiz</strong> denenebilir",
-    "trust_rating": "4.9 Google Play · 5.0 App Store",
-    "trust_reviews": "2.800+ değerlendirme",
+    "trust_rating": "Google Play'de 4.9★",
+    "trust_reviews": "2.847 değerlendirme",
     "trust_health": "Apple Health & Health Connect",
     "trust_langs": "7 dil",
     "shot_alt": "Suu ana ekranı: günlük su, kalori ve egzersiz özeti"
@@ -618,41 +618,12 @@
     ]
   },
   "reviews": {
-    "head": "Kullanıcı yorumları",
-    "sub": "Google Play 4.9★ · App Store 5.0★ · 2.800+ değerlendirme",
+    "head": "Puanlar",
+    "sub": "Google Play'de 4.9★ · 2.847 değerlendirme. Yorumları uydurmuyoruz — mağaza sayfasından kendiniz okuyabilirsiniz.",
     "stars_aria": "5 üzerinden {n} yıldız",
-    "items": [
-      {
-        "stars": 5,
-        "author": "Ayşe Yılmaz",
-        "text": "Muhteşem bir uygulama! Su içme alışkanlığım tamamen değişti. Artık günde 2.5 litre su içebiliyorum. Hatırlatmalar çok işe yarıyor."
-      },
-      {
-        "stars": 5,
-        "author": "Mehmet Kaya",
-        "text": "Spor yaptığım için su takibi çok önemliydi. Bu uygulama sayesinde performansım arttı. Özellikle grafikleri çok beğendim."
-      },
-      {
-        "stars": 5,
-        "author": "Ali Öztürk",
-        "text": "Harika! Ofiste çalışırken su içmeyi unutuyordum. Şimdi düzenli içiyorum ve kendimi çok daha enerjik hissediyorum."
-      },
-      {
-        "stars": 5,
-        "author": "Fatma Demir",
-        "text": "Doktorum günde 2 litre su içmemi söylemişti. Bu uygulama sayesinde hedefime kolayca ulaşıyorum. Teşekkürler!"
-      },
-      {
-        "stars": 4,
-        "author": "Zeynep Çelik",
-        "text": "Genel olarak memnunum ama bazen bildirimler çok sık geliyor. Bu dışında su içme hedeflerime ulaşmamda çok yardımcı oldu."
-      },
-      {
-        "stars": 4,
-        "author": "Murat Şahin",
-        "text": "İyi bir uygulama ama daha fazla özelleştirme seçeneği olsa harika olur. Yine de su içme rutinimde devrim yarattı."
-      }
-    ]
+    "items": [],
+    "cta_play": "Google Play yorumlarını oku",
+    "cta_appstore": "App Store'da görüntüle"
   },
   "pricing": {
     "eyebrow": "Fiyatlandırma",

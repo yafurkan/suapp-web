@@ -62,8 +62,8 @@
     "aria_app_store": "Download on the App Store",
     "aria_google_play": "Get it on Google Play",
     "trial_note": "Free to download · Premium <strong>free for 3 days</strong>",
-    "trust_rating": "4.9 Google Play · 5.0 App Store",
-    "trust_reviews": "2,800+ ratings",
+    "trust_rating": "4.9★ on Google Play",
+    "trust_reviews": "2,847 ratings",
     "trust_health": "Apple Health & Health Connect",
     "trust_langs": "7 languages",
     "shot_alt": "Suu home screen: daily water, calorie and exercise summary"
@@ -618,41 +618,12 @@
     ]
   },
   "reviews": {
-    "head": "User reviews",
-    "sub": "Google Play 4.9★ · App Store 5.0★ · 2,800+ ratings — reviews below translated from Turkish",
+    "head": "Ratings",
+    "sub": "4.9★ from 2,847 ratings on Google Play. We don't reprint reviews here — read them on the store listing yourself.",
     "stars_aria": "{n} out of 5 stars",
-    "items": [
-      {
-        "stars": 5,
-        "author": "Ayşe Yılmaz",
-        "text": "An amazing app! My drinking habit has completely changed. I now manage 2.5 litres a day. The reminders really help."
-      },
-      {
-        "stars": 5,
-        "author": "Mehmet Kaya",
-        "text": "Water tracking mattered a lot to me because I train. My performance improved thanks to this app. I especially liked the charts."
-      },
-      {
-        "stars": 5,
-        "author": "Ali Öztürk",
-        "text": "Brilliant! I used to forget to drink while working at the office. Now I drink regularly and feel far more energetic."
-      },
-      {
-        "stars": 5,
-        "author": "Fatma Demir",
-        "text": "My doctor told me to drink 2 litres a day. This app makes reaching that goal easy. Thank you!"
-      },
-      {
-        "stars": 4,
-        "author": "Zeynep Çelik",
-        "text": "Happy overall, though the notifications come a bit too often sometimes. Other than that it really helped me hit my water goals."
-      },
-      {
-        "stars": 4,
-        "author": "Murat Şahin",
-        "text": "Good app, but more customisation options would be great. Still, it transformed my drinking routine."
-      }
-    ]
+    "items": [],
+    "cta_play": "Read Google Play reviews",
+    "cta_appstore": "View on the App Store"
   },
   "pricing": {
     "eyebrow": "Pricing",
