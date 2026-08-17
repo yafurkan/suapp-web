@@ -36,6 +36,25 @@ EXCLUDE_PARTS = ("/404", "/admin.html", "/app/", "/makale.html",
                  "/yandex_", "og-image-template.html")
 
 RE_URL_BLOCK = re.compile(r"[ \t]*<url>(.*?)</url>\s*\n?", re.DOTALL)
+
+
+def git_last_modified(rel: str) -> str | None:
+    """Dosyaya dokunan son commit'in tarihi (YYYY-MM-DD).
+
+    lastmod önceden dokunulmadan korunuyordu; sonuç olarak bu ay baştan yazılan
+    sayfalar bile Mayıs tarihi ilan ediyordu (250 URL'nin 245'i). Tarayıcıya
+    "burada yeni bir şey yok" demek, yeniden taramayı geciktiriyor ve
+    "Keşfedildi / Tarandı - dizine eklenmemiş" satırlarını besliyor.
+    Her build'de TODAY yazmak da yalan olurdu — git'teki gerçek tarih kullanılır.
+    """
+    import subprocess
+    try:
+        out = subprocess.run(["git", "log", "-1", "--format=%cs", "--", rel],
+                             cwd=ROOT, capture_output=True, text=True, timeout=10)
+        d = out.stdout.strip()
+        return d if re.fullmatch(r"\d{4}-\d{2}-\d{2}", d) else None
+    except Exception:
+        return None
 RE_LOC = re.compile(r"<loc>\s*([^<\s]+)\s*</loc>")
 RE_XHTML = re.compile(r"[ \t]*<xhtml:link[^>]*/?>[ \t]*\n?")
 RE_LASTMOD = re.compile(r"(<lastmod>)([^<]*)(</lastmod>)")
@@ -116,12 +135,26 @@ def main() -> int:
             removed += 1
             return ""
 
+        # İndekslenemez dosya tipleri sitemap'te yer almaz (yukarıdaki nota bakın)
+        if loc.endswith((".txt", ".json")):
+            removed += 1
+            return ""
+
         cleaned = RE_XHTML.sub("", inner)
         cluster = clusters.get(loc)
         if cluster:
             block = render_xhtml(cluster, xdefault_lang)
             # hreflang bloğunu <loc>'un hemen ardına koy
             cleaned = cleaned.replace(loc_m.group(0), loc_m.group(0) + "\n" + block.rstrip("\n"), 1)
+
+        rel = loc[len(BASE) + 1:] or "index.html"
+        real = git_last_modified(rel)
+        if real:
+            def _bump(m: re.Match) -> str:
+                # lastmod yalnızca İLERİ gider — geriye çekmek sinyali bozar
+                return m.group(1) + (real if real > m.group(2) else m.group(2)) + m.group(3)
+            cleaned = RE_LASTMOD.sub(_bump, cleaned, count=1)
+
         new = f"    <url>{cleaned}</url>\n"
         if new != match.group(0):
             refreshed += 1
@@ -135,18 +168,17 @@ def main() -> int:
         if url not in present and not any(x in url for x in EXCLUDE_PARTS):
             wanted.append(url)
 
-    # llms ailesi — keşfedilebilirlik için
-    for p in sorted(ROOT.glob("llms*.txt")):
-        u = f"{BASE}/{p.name}"
-        if u not in present:
-            wanted.append(u)
-
-    # Yapılandırılmış AI manifesti — robots.txt yorumundan başka hiçbir yerden
-    # bağlantı almıyordu, dolayısıyla pratikte keşfedilemezdi.
-    if (ROOT / ".well-known" / "ai-plugin.json").exists():
-        u = f"{BASE}/.well-known/ai-plugin.json"
-        if u not in present:
-            wanted.append(u)
+    # llms*.txt ve ai-plugin.json BİLEREK sitemap'e girmez.
+    #
+    # Sitemap indekslenebilir SAYFALARI bildirir. Düz metin ve JSON dosyaları
+    # indekslenemez, dolayısıyla listelemek Search Console'da garantili
+    # "Tarandı - şu anda dizine eklenmiş değil" satırı üretir ve tarama
+    # bütçesini gerçek sayfalardan çalar. 2026-08-17'de Google'ın bildirdiği
+    # 13 "tarandı, indekslenmedi" URL'sinden biri tam olarak llms-full.txt'ti.
+    #
+    # Keşif doğru mekanizmayla zaten sağlanıyor:
+    #   robots.txt yorum bloğu + sayfa <head>'lerindeki
+    #   <link rel="alternate" type="text/plain" href="/llms-*.txt">
 
     added_xml = ""
     for url in sorted(set(wanted)):
