@@ -63,8 +63,8 @@
     "aria_app_store": "Im App Store laden",
     "aria_google_play": "Bei Google Play laden",
     "trial_note": "Kostenlos laden · Premium <strong>3 Tage gratis</strong>",
-    "trust_rating": "4.9 Google Play · 5.0 App Store",
-    "trust_reviews": "über 2.800 Bewertungen",
+    "trust_rating": "4,9★ bei Google Play",
+    "trust_reviews": "2.847 Bewertungen",
     "trust_health": "Apple Health & Health Connect",
     "trust_langs": "7 Sprachen",
     "shot_alt": "Suu Startbildschirm: Tagesübersicht für Wasser, Kalorien und Training"
@@ -619,41 +619,12 @@
     ]
   },
   "reviews": {
-    "head": "Nutzerbewertungen",
-    "sub": "Google Play 4.9★ · App Store 5.0★ · über 2.800 Bewertungen — Bewertungen unten aus dem Türkischen übersetzt",
+    "head": "Bewertungen",
+    "sub": "4,9★ aus 2.847 Bewertungen bei Google Play. Wir drucken hier keine Rezensionen nach — lies sie direkt im Store.",
     "stars_aria": "{n} von 5 Sternen",
-    "items": [
-      {
-        "stars": 5,
-        "author": "Ayşe Yılmaz",
-        "text": "Eine großartige App! Meine Trinkgewohnheit hat sich komplett verändert. Ich schaffe jetzt 2,5 Liter am Tag. Die Erinnerungen helfen wirklich."
-      },
-      {
-        "stars": 5,
-        "author": "Mehmet Kaya",
-        "text": "Wassertracking war mir wichtig, weil ich trainiere. Dank dieser App hat sich meine Leistung verbessert. Besonders die Diagramme gefallen mir."
-      },
-      {
-        "stars": 5,
-        "author": "Ali Öztürk",
-        "text": "Klasse! Im Büro habe ich das Trinken vergessen. Jetzt trinke ich regelmäßig und fühle mich deutlich energiegeladener."
-      },
-      {
-        "stars": 5,
-        "author": "Fatma Demir",
-        "text": "Meine Ärztin sagte, ich solle 2 Liter am Tag trinken. Mit dieser App erreiche ich das Ziel mühelos. Danke!"
-      },
-      {
-        "stars": 4,
-        "author": "Zeynep Çelik",
-        "text": "Insgesamt zufrieden, aber die Benachrichtigungen kommen manchmal zu häufig. Ansonsten hat es mir sehr geholfen, meine Ziele zu erreichen."
-      },
-      {
-        "stars": 4,
-        "author": "Murat Şahin",
-        "text": "Gute App, mehr Einstellungsmöglichkeiten wären toll. Trotzdem hat sie meine Trinkroutine verändert."
-      }
-    ]
+    "items": [],
+    "cta_play": "Google-Play-Bewertungen lesen",
+    "cta_appstore": "Im App Store ansehen"
   },
   "pricing": {
     "eyebrow": "Preise",

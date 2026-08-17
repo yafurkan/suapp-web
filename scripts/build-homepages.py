@@ -75,8 +75,8 @@ def build_jsonld(lang: str, data: dict, facts: dict) -> str:
     langs = [l["code"] for l in facts["languages"]["supported"]]
     plans = {p["id"]: p for p in facts["pricing"]["plans"]}
 
-    def app_node(os_name: str, platform: str, download: str, rating: str, features: list[str]) -> dict:
-        return {
+    def app_node(os_name: str, platform: str, download: str, rating, rating_count, features: list[str]) -> dict:
+        node = {
             "@type": ["MobileApplication", "HealthAndFitnessApplication"],
             "@id": f"{BASE}/#suuapp-{platform}",
             "name": facts["identity"]["store_title"].get(lang, facts["identity"]["store_title"]["en"]),
@@ -90,12 +90,6 @@ def build_jsonld(lang: str, data: dict, facts: dict) -> str:
             "author": {"@id": f"{BASE}/#furkan"},
             "publisher": {"@id": f"{BASE}/#organization"},
             "screenshot": f"{BASE}/assets/screenshots/{platform}/{lang}/ana-ekran.webp",
-            "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": rating,
-                "bestRating": "5",
-                "ratingCount": str(n["rating_count"]),
-            },
             "offers": [
                 {"@type": "Offer", "name": data["pricing"]["plans"][0]["name"], "price": "0", "priceCurrency": facts["pricing"]["currency"]},
                 {"@type": "Offer", "name": data["pricing"]["plans"][1]["name"], "price": str(plans["yearly"]["price_try"]), "priceCurrency": "TRY"},
@@ -112,6 +106,17 @@ def build_jsonld(lang: str, data: dict, facts: dict) -> str:
                 {"@type": "PropertyValue", "name": "appleWatch", "value": "coming soon"},
             ],
         }
+        # AggregateRating yalnızca O MAĞAZANIN kendi sayımı doğrulanmışsa basılır.
+        # Blended puan / başka mağazanın count'unu ödünç almak Google'ın
+        # yapılandırılmış veri politikasını ihlal eder ve AI kaynaklarında güven kaybettirir.
+        if rating is not None and rating_count:
+            node["aggregateRating"] = {
+                "@type": "AggregateRating",
+                "ratingValue": str(rating),
+                "bestRating": "5",
+                "ratingCount": str(rating_count),
+            }
+        return node
 
     graph = [
         {
@@ -146,8 +151,8 @@ def build_jsonld(lang: str, data: dict, facts: dict) -> str:
             "inLanguage": lang,
             "publisher": {"@id": f"{BASE}/#organization"},
         },
-        app_node("iOS 15.0+", "ios", links["app_store"], str(n["rating_app_store"]), data["schema"]["features_ios"]),
-        app_node("Android 8.0+", "android", links["google_play"], str(n["rating_google_play"]), data["schema"]["features_android"]),
+        app_node("iOS 15.0+", "ios", links["app_store"], n.get("rating_app_store"), n.get("rating_count_app_store"), data["schema"]["features_ios"]),
+        app_node("Android 8.0+", "android", links["google_play"], n.get("rating_google_play"), n.get("rating_count_google_play"), data["schema"]["features_android"]),
         {
             "@type": "WebPage",
             "@id": f"{page_url(lang)}#webpage",

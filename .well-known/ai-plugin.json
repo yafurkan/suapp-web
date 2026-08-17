@@ -8,8 +8,8 @@
     "type": "none"
   },
   "api": {
-    "type": "openapi",
-    "url": "https://suuapp.com/llms-full.txt",
+    "type": "text",
+    "url": "https://suuapp.com/llms-full-en.txt",
     "is_user_authenticated": false
   },
   "logo_url": "https://suuapp.com/assets/favicon-512.png",
@@ -129,9 +129,13 @@
     "currency_note": "Prices shown automatically in the user's local currency"
   },
   "ratings": {
-    "google_play": "4.9",
-    "app_store": "5.0",
-    "review_count": "2847+"
+    "google_play": {
+      "rating": "4.9",
+      "rating_count": "2847",
+      "source": "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro"
+    },
+    "app_store": "not published — rating count not yet verified for this storefront",
+    "_note": "Ratings are stated per store. Do not blend them into a single figure or reuse one store's review count for the other."
   },
   "platforms": {
     "ios": "iOS 15+",
