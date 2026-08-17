@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ÜRETİLMİŞ DOSYA — elle düzenlemeyin.
+         Kaynak: content/compare/gps-run-tracker-with-calorie-counter.json + content/compare/_template.html.j2
+         Yeniden üret: python3 scripts/build-compare.py --apply -->
+
+    <title>GPS&#39;li Koşu Takibi + Kalori Sayacı Tek Uygulamada (2026 Rehberi)</title>
+    <meta name="description" content="Koşu uygulamaları yaktığın kaloriyi sayar ama yediğini saymaz; kalori uygulamaları tam tersini yapar. Strava, Nike Run Club, MyFitnessPal, Garmin ve Suu GPS, öğün kaydı ve hidrasyon üzerinden karşılaştırıldı.">
+    <meta name="keywords" content="gps koşu takibi kalori sayacı, kalori sayan koşu uygulaması, strava alternatifi beslenme, egzersiz ve kalori takip uygulaması, gpsli kalori uygulaması">
+    <meta name="apple-itunes-app" content="app-id=6757619920">
+
+    <link rel="canonical" href="https://suuapp.com/blog/gps-kosu-takibi-kalori-sayaci.html">
+    <!-- Hreflang cluster (auto-injected) -->
+    <link rel="alternate" hreflang="tr" href="https://suuapp.com/blog/gps-kosu-takibi-kalori-sayaci.html">
+    <link rel="alternate" hreflang="en" href="https://suuapp.com/blog/en/gps-run-tracker-with-calorie-counter.html">
+    <link rel="alternate" hreflang="x-default" href="https://suuapp.com/blog/en/gps-run-tracker-with-calorie-counter.html">
+
+
+    <meta property="og:title" content="Koşunu GPS ile Kaydeden, Yediğin Kaloriyi de Sayan Uygulama">
+    <meta property="og:description" content="Koşu uygulamaları giden kaloriyi, kalori uygulamaları geleni sayar. Hangisi ikisini birden yapıyor — ve neyden vazgeçiyorsun?">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://suuapp.com/blog/gps-kosu-takibi-kalori-sayaci.html">
+    <meta property="og:image" content="https://suuapp.com/assets/og-image.png">
+    <meta property="og:site_name" content="Suu">
+    <meta property="og:locale" content="tr_TR">
+    <meta property="article:published_time" content="2026-08-17">
+    <meta property="article:author" content="Furkan Mert Fındıklı">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SuuTakip">
+    <meta name="twitter:title" content="Koşunu GPS ile Kaydeden, Yediğin Kaloriyi de Sayan Uygulama">
+    <meta name="twitter:description" content="Koşu uygulamaları giden kaloriyi, kalori uygulamaları geleni sayar. Hangisi ikisini birden yapıyor — ve neyden vazgeçiyorsun?">
+    <meta name="twitter:image" content="https://suuapp.com/assets/og-image.png">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/donation-widget.css">
+    <link rel="stylesheet" href="/assets/css/suu.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://suuapp.com/#organization",
+      "name": "Suu",
+      "url": "https://suuapp.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://suuapp.com/assets/favicon-512.png"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://suuapp.com/#furkan",
+      "name": "Furkan Mert Fındıklı",
+      "url": "https://suuapp.com/yazarlar/furkan-mert.html",
+      "jobTitle": "Kurucu \u0026 Geliştirici",
+      "worksFor": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/furkanfindikli/"
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://suuapp.com/blog/gps-kosu-takibi-kalori-sayaci.html#article",
+      "headline": "Koşunu GPS ile Kaydeden, Yediğin Kaloriyi de Sayan Uygulama",
+      "description": "Koşu uygulamaları yaktığın kaloriyi sayar ama yediğini saymaz; kalori uygulamaları tam tersini yapar. Strava, Nike Run Club, MyFitnessPal, Garmin ve Suu GPS, öğün kaydı ve hidrasyon üzerinden karşılaştırıldı.",
+      "image": "https://suuapp.com/assets/og-image.png",
+      "datePublished": "2026-08-17",
+      "dateModified": "2026-08-17",
+      "inLanguage": "tr",
+      "mainEntityOfPage": "https://suuapp.com/blog/gps-kosu-takibi-kalori-sayaci.html",
+      "author": {
+        "@id": "https://suuapp.com/#furkan"
+      },
+      "publisher": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "about": {
+        "@id": "https://suuapp.com/#suuapp-ios"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".answer-box",
+          "h1",
+          "h2",
+          ".verdict p"
+        ]
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://suuapp.com/blog/gps-kosu-takibi-kalori-sayaci.html#itemlist",
+      "name": "Hangi uygulama hangi yarıyı yapıyor",
+      "inLanguage": "tr",
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "numberOfItems": 4,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Strava",
+            "applicationCategory": "HealthApplication"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Nike Run Club",
+            "applicationCategory": "HealthApplication"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "MyFitnessPal",
+            "applicationCategory": "HealthApplication"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "SoftwareApplication",
+            "@id": "https://suuapp.com/#suuapp-ios",
+            "name": "Suu"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://suuapp.com/blog/gps-kosu-takibi-kalori-sayaci.html#faq",
+      "inLanguage": "tr",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Yediğin kaloriyi de sayan GPS'li bir koşu uygulaması var mı?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evet ama çok az. Strava, Nike Run Club ve Garmin koşuyu iyi kaydediyor ama gerçek bir öğün kaydı yok. MyFitnessPal öğünü iyi kaydediyor ama GPS'i temel düzeyde. Suu ikisini tek uygulamada yapıyor: yaklaşık 50 spor aktivitesinde rota haritalı canlı GPS kaydı, artı öğün fotoğrafından veya sesle kalori ve makro kaydı. Bedeli, Suu'da segment, liderlik tablosu ve sosyal akış olmaması ve besin veritabanının MyFitnessPal'ınkinden küçük olması."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Suu koşu mesafesini, tempoyu ve rotayı takip ediyor mu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evet. Antrenmanı Suu içinde başlatıp duraklatıp bitiriyorsunuz; mesafe, süre ve tempo canlı akıyor, bitirdiğinizde rotanız harita üzerinde çiziliyor. Koşu ve yürüyüşte ayrıca ortalama hız ve yakılan kalori, bisiklette hız ve irtifa raporlanıyor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Strava ile Suu'yu aynı anda kullanabilir miyim?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evet ve çoğu kişi için en iyi kurulum bu. Suu iOS'ta Apple Health, Android'de Google Health Connect üzerinden antrenman okuyor; yani Strava'da kaydettiğiniz bir koşu veya sürüş Suu'da da görünüyor, günlük su hedefinizi yine yükseltiyor ve ardından girdiğiniz öğünün yanında duruyor. Strava'nın segmentlerini ve sosyal akışını korur, üzerine beslenme ve hidrasyon eklersiniz."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Antrenman kalori veya su hedefimi otomatik değiştiriyor mu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Suu'da her ikisi de evet. Kaydedilen her antrenman — uygulamada canlı takip edilsin ya da Apple Health / Health Connect'ten okunsun — günlük su hedefinizi yükseltiyor ve Suu antrenman sonrası kalori bazlı 300–500 ml ek su öneriyor. Öğünler ters yönde etki ediyor: içerdikleri protein ve sodyum sindirim suyu ihtiyacı ekliyor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Suu iyi bir Strava alternatifi mi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Koşuyu veya sürüşü kaydedip yediğiniz ve içtiğinizle ilişkilendirmek için evet. Strava'nın rekabetçi ve sosyal katmanının yerine geçmek için hayır — Suu'da segment, liderlik tablosu, kudos, kulüp, güç ölçer analizi ve rota planlayıcı yok ve bunları kurmaya da çalışmıyor. Bisiklet analitiği daha sığ. Strava'yı bu özellikler için açıyorsanız Strava'da kalın ve Suu'yu beslenme ile hidrasyon tarafı için kullanın."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Salon antrenmanı ve beslenmeyi birlikte takip için hangi uygulama en iyi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Set-tekrar kuvvet kaydı için Hevy veya Strong gibi özel araçlar bu karşılaştırmadaki her uygulamadan — Suu dahil — daha iyi. Suu salon seanslarını yaklaşık 50 aktivite türünden biri olarak kapsıyor ve yakılan kaloriyi günlük hedeflerinize bağlıyor, ama bir kuvvet antrenmanı defteri değil. Yaygın kurulum: salon için Hevy, artı beslenme, hidrasyon ve kardiyo için tek bir uygulama."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Suu'da GPS takibi için Premium gerekiyor mu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hayır. Canlı GPS kaydı ve rota haritası dahil egzersiz takibi ücretsiz pakete dahil; temel su takibi ve günde 3 yapay zekâ öğün analizi de öyle. Premium sınırsız yapay zekâ analizi, fotoğrafla yemek tanıma, gelişmiş makro istatistikleri ve PDF/CSV dışa aktarım ekliyor."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://suuapp.com/blog/gps-kosu-takibi-kalori-sayaci.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Suu",
+          "item": "https://suuapp.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://suuapp.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Koşunu GPS ile Kaydeden, Yediğin Kaloriyi de Sayan Uygulama",
+          "item": "https://suuapp.com/blog/gps-kosu-takibi-kalori-sayaci.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+
+    <script src="/assets/js/analytics.js" defer></script>
+    <script src="/lang-switcher.js?v=3" defer></script>
+    <script src="/donation-widget.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">İçeriğe geç</a>
+
+<nav class="nav">
+    <div class="container nav__inner">
+        <a href="/" class="nav__logo">💧 Suu</a>
+        <ul class="nav__links">
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/#karsilastirma">Karşılaştırma</a></li>
+            <li><a href="/#fiyat">Fiyatlandırma</a></li>
+        </ul>
+        <div class="nav__actions">
+            <a href="/app?src=compare-nav" class="btn btn--primary" data-cta="nav"
+               style="min-height:40px;padding:var(--sp-2) var(--sp-5);font-size:var(--fs-sm)">Ücretsiz İndir</a>
+        </div>
+    </div>
+</nav>
+
+<main id="main">
+
+<header class="section" style="padding-block-end:var(--sp-8)">
+    <div class="container container--narrow">
+        <nav class="breadcrumb small text-subtle" aria-label="Breadcrumb"
+             style="margin-block-end:var(--sp-4)">
+            <a href="/">Suu</a>
+            <span aria-hidden="true"> › </span>
+            <a href="/blog.html">Blog</a>
+            <span aria-hidden="true"> › </span>
+            <span aria-current="page">Koşunu GPS ile Kaydeden, Yediğin Kaloriyi de Sayan Uygulama</span>
+        </nav>
+        <span class="badge badge--new">GPS VE KALORİ</span>
+        <h1 style="margin-block-start:var(--sp-4)">Koşunu GPS ile Kaydeden, Yediğin Kaloriyi de Sayan Uygulama</h1>
+        <p class="small text-subtle">Yayın: 17 Ağustos 2026 · Furkan Mert Fındıklı · 8 dakika okuma</p>
+    </div>
+</header>
+
+<div class="container container--narrow stack--lg" style="padding-block-end:var(--sp-24)">
+
+    <!-- CEVAP-ÖNCE: alıntılanan blok burasıdır -->
+    <div class="answer-box">
+        <p><strong>Kısa cevap:</strong> Neredeyse her uygulama bir taraf seçiyor: Strava, Nike Run Club ve Garmin koşuyu mükemmel kaydediyor ama gerçek bir öğün kaydı yok; MyFitnessPal ve Yazio öğünü kaydediyor ama canlı GPS&#39;leri zayıf ya da yok. Koşuyu harita üzerinde kaydedip ardından öğünü de alan tek bir uygulama istiyorsanız gerçekçi seçenekler ya MyFitnessPal + bir koşu uygulaması ikilisi ya da Suu — canlı GPS kaydını rota haritasıyla, fotoğraf ve sesle kalori kaydını ve hidrasyonu aynı yerde tutuyor. Suu&#39;da olmayan şey segment, liderlik tablosu ve sosyal akış; Strava&#39;yı bunlar için açıyorsanız Strava&#39;da kalın.</p>
+    </div>
+
+    <div class="disclosure">Suu ekibi tarafından yazıldı. Aşağıdaki uygulamalardan birini biz geliştiriyoruz, ürün kararını buna göre okuyun — her uygulamaya dair özellik iddiaları kendi sitelerinden kontrol edilebilir ve Suu&#39;nun daha iyi yaptıklarının yanına daha kötü yaptıklarını da yazdık.</div>
+    <p>İnsanı bu aramaya iten çok belirli bir sıkıntı var: 10 km koşuyu bitiriyorsunuz, saatiniz 620 kcal yaktığınızı söylüyor ve akşam yemeğini kaydetmek için ikinci bir uygulama açmanız gerekiyor — o 620 kcal orada ya hiç görünmüyor ya da elinizle yazmanız gereken bir rakama dönüşüyor.</p>
+    <p>Aynı denklemin iki yarısı ayrı uygulamalarda yaşıyor. Bu sayfa, bu döngüyü gerçekten kapatan uygulamaların hangileri olduğu ve birini seçince neyden vazgeçtiğiniz hakkında.</p>
+
+    <section>
+        <h2>Hangi uygulama hangi yarıyı yapıyor</h2>
+        <div class="table-scroll">
+            <table class="table">
+                <caption class="sr-only">Ana seçeneklerde GPS kaydı, öğün kaydı ve hidrasyon. Her uygulamanın kamuya açık belgelenmiş özelliklerine dayanmaktadır.</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Yetenek</th>
+                        <th scope="col">Strava</th>
+                        <th scope="col">Nike Run Club</th>
+                        <th scope="col">MyFitnessPal</th>
+                        <th scope="col" class="col-suu">Suu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Canlı GPS kaydı</td><td class="yes">✓</td><td class="yes">✓</td><td class="partial">Temel</td><td class="col-suu yes">✓</td></tr>
+                    <tr><td>Harita üzerinde rota çizimi</td><td class="yes">✓</td><td class="yes">✓</td><td class="partial">Sınırlı</td><td class="col-suu yes">✓</td></tr>
+                    <tr><td>Segment ve liderlik tablosu</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="col-suu no">✗</td></tr>
+                    <tr><td>Sosyal akış / kulüpler</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">✗</td><td class="col-suu no">✗</td></tr>
+                    <tr><td>Öğün kaydı</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td><td class="col-suu yes">✓</td></tr>
+                    <tr><td>Fotoğraftan kalori</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="col-suu yes">✓</td></tr>
+                    <tr><td>Sesle öğün kaydı</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="col-suu yes">✓</td></tr>
+                    <tr><td>Barkot okuma</td><td class="no">✗</td><td class="no">✗</td><td class="yes">✓</td><td class="col-suu no">✗</td></tr>
+                    <tr><td>Besin veritabanı genişliği</td><td class="">—</td><td class="">—</td><td class="yes">En geniş</td><td class="col-suu partial">İyi</td></tr>
+                    <tr><td>Hidrasyonun düzgün takibi</td><td class="no">✗</td><td class="no">✗</td><td class="partial">Basit sayaç</td><td class="col-suu yes">91 içecek</td></tr>
+                    <tr><td>Egzersiz su hedefini yükseltiyor</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="col-suu yes">✓</td></tr>
+                    <tr><td>Apple Health / Health Connect&#39;ten antrenman okuma</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="col-suu yes">✓</td></tr>
+                    <tr><td>Ücretsiz paket gerçekten iş görüyor</td><td class="partial">Sınırlı</td><td class="yes">✓</td><td class="partial">Sınırlı</td><td class="col-suu yes">✓</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section>
+        <h2>Döngü neden kopuk</h2>
+        <p>Koşu uygulamalarıyla beslenme uygulamaları farklı problemlerden doğdu. Strava bir bisiklet ve koşu sosyal ağı olarak başladı; oradaki yakılan kalori rakamı büyük ölçüde aktiviteye manşet bir sayı vermek için var. MyFitnessPal bir besin veritabanı olarak başladı; oradaki egzersiz girişi büyük ölçüde bütçenize kalori geri eklemek için var.</p>
+        <p>Sonuç, rakamın ikisi arasında kötü geçmesi. İki uygulama Apple Health veya Health Connect üzerinden senkronlansa bile aktarılan şey genelde çıplak bir kalori toplamı — antrenmanın şiddeti, süresi ya da sıvı ihtiyacınız için ne anlama geldiği değil. Ters yöne ise hiçbir şey akmıyor: akşam yemeğiniz bir koşu uygulamasının gününüz hakkındaki fikrini bir kez bile değiştirmedi.</p>
+    </section>
+    <section>
+        <h2>İşe yarayan iki kurulum</h2>
+        <p>Bugün gerçekten çalışan yalnızca iki yapılandırma var ve ikisini de açıkça söylemekte fayda var.</p>
+        <ul>
+            <li><strong>Apple Health / Health Connect ile birleşen iki uygulama.</strong> Strava, Nike Run Club veya Garmin'de kaydedin; MyFitnessPal veya Cronometer'da öğün girin. Bu size her ikisinin en iyisini verir — Strava'nın segmentleri, MyFitnessPal'ın barkot veritabanı — bedeli iki uygulama, iki abonelik ve yalnızca bir kalori rakamı taşıyan bir senkron.</li>
+            <li><strong>İkisini birden yapan tek uygulama.</strong> Daha az hareketli parça ve iki yarının birbirini gerçekten beslemesi; bedeli daha küçük bir besin veritabanı ve sosyal katmanın olmaması. Suu burada duruyor.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Suu bir koşuda veya sürüşte ne kaydediyor</h2>
+        <p>Oturumu uygulamanın içinde başlatıyor, duraklatıyor ve bitiriyorsunuz. Siz hareket ederken mesafe, süre ve tempo canlı akıyor; bitirdiğinizde rotanız harita üzerinde çiziliyor.</p>
+        <p>Yaklaşık 50 spor aktivitesi destekleniyor — koşu, yürüyüş, bisiklet, fitness, yüzme, doğa yürüyüşü, kardiyo ve daha fazlası. Koşu ve yürüyüşte mesafe, tempo, ortalama hız ve yakılan kalori; bisiklette ayrıca hız ve irtifa raporlanıyor. Saatinizde veya başka bir uygulamada kaydettiğiniz seanslar Apple Health ve Google Health Connect'ten okunuyor; yani Strava'da kaydedilen bir koşu Suu içinde de sayılıyor.</p>
+        <ul>
+            <li><strong>Antrenman su hedefinizi değiştiriyor.</strong> Kaydedilen her seans günlük sıvı hedefinizi yükseltiyor ve Suu antrenman sonrası kalori bazlı 300–500 ml ek su öneriyor.</li>
+            <li><strong>Öğün de değiştiriyor.</strong> Kaydedilen öğündeki protein ve sodyum sindirim suyu ihtiyacı ekliyor — bu tablodaki başka hiçbir uygulamanın uygulamadığı tek etki yönü.</li>
+            <li><strong>İçecek çöpe gitmiyor.</strong> Koşudan sonra "bir muz ve bir bardak süt" girdiğinizde Suu ayırıyor: muz kalori ve makroya, süt ayrıca hidrasyona yazılıyor.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Suu&#39;nun yapmadıkları — ve kimin geçmemesi gerektiği</h2>
+        <p>Çoğu koşucu için kararı bu kısım verdiriyor, o yüzden karardan sonra değil önce yazıyoruz.</p>
+        <ul>
+            <li><strong>Segment ve liderlik tablosu yok.</strong> Bir rampada sıralanmak o rotayı koşma sebebinizse cevap Strava'dır ve buradaki hiçbir şey onun yerini tutmaz.</li>
+            <li><strong>Sosyal akış, kulüp ve kudos yok.</strong> Suu'da 4 kişiye kadar haftalık su içme ligleri var; bu aynı şey değil ve olmayı da amaçlamıyor.</li>
+            <li><strong>Daha sığ bisiklet analitiği.</strong> Güç ölçer analizi, harici sensör ekosistemi ve rota planlayıcı yok.</li>
+            <li><strong>Barkot okuma yok</strong> ve besin veritabanı MyFitnessPal'ınkinden küçük. Çok paketli ya da dışarıda yemek yiyorsanız bu boşluk gerçek.</li>
+            <li><strong>Bir kuvvet antrenmanı defteri değil.</strong> Salonda set-tekrar takibi için Hevy veya Strong hâlâ daha iyi araçlar.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>İkisini birlikte kullanmak da meşru bir cevap</h2>
+        <p>Suu antrenmanları Apple Health ve Health Connect'ten okuduğu için seçmek zorunda değilsiniz. Sürüşü segmentler ve kulüp akışı için Strava'da kaydedin; seans yine Suu'ya ulaşır, yine su hedefinizi yükseltir ve yine ardından fotoğrafladığınız öğünün yanında durur.</p>
+        <p>Bu kombinasyon fazladan hiçbir şeye mal olmuyor ve beslenmesini de tek yerde isteyen yarışmacı bir bisikletçiye dürüstçe önereceğimiz şey bu.</p>
+    </section>
+
+    <section class="verdict">
+        <h2 style="margin-block-end:var(--sp-4)">Karar</h2>
+        <p><strong>Strava veya Nike Run Club seçin</strong> — koşunun kendisi asıl meseleyse: segmentler, kulüpler, yarış antrenman planları, grup sürüşü. Gerekiyorsa ayrı bir beslenme uygulaması ekleyin.</p>
+        <p><strong>MyFitnessPal seçin</strong> — öncelik öğün kaydıysa ve çok paketli ya da dışarıda yemek yiyorsanız; barkot okuma ve en geniş veritabanı orada gerçekten iş görüyor. GPS yarısı için bir koşu uygulamasıyla eşleyin.</p>
+        <p><strong>Suu seçin</strong> — antrenman bir vücut kompozisyonu veya hidrasyon hedefinin parçasıysa ve koşunun, öğünün ve suyun birbirini gerçekten güncellediği tek bir uygulama istiyorsanız; segmentler ve sosyal akış olmadan yaşayabiliyorsanız.</p>
+        <p><strong>Ya da ikisini birden çalıştırın.</strong> Sürüş için Strava, sürüşün değiştirdiği her şey için Suu. Antrenman Apple Health veya Health Connect üzerinden otomatik geçiyor.</p>
+    </section>
+
+    <section class="cta-band" style="border-radius:var(--r-lg);padding-block:var(--sp-12)" data-cta="compare-body">
+        <div class="container">
+            <h2 style="font-size:var(--fs-2xl)">Koşuyu kaydet — ve değiştirdiği her şeyi</h2>
+            <p>İndirmek ücretsiz · GPS takibi her zaman ücretsiz · Premium 3 gün ücretsiz</p>
+            <div class="btn-row btn-row--center" style="margin-block-start:var(--sp-6)">
+                <a href="/app?src=compare-body" class="btn btn--secondary btn--lg">Suu&#39;yu Ücretsiz İndir</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Sık sorulan sorular</h2>
+        <div class="faq">
+            <details class="faq__item" open>
+                <summary>Yediğin kaloriyi de sayan GPS&#39;li bir koşu uygulaması var mı?</summary>
+                <div><p>Evet ama çok az. Strava, Nike Run Club ve Garmin koşuyu iyi kaydediyor ama gerçek bir öğün kaydı yok. MyFitnessPal öğünü iyi kaydediyor ama GPS&#39;i temel düzeyde. Suu ikisini tek uygulamada yapıyor: yaklaşık 50 spor aktivitesinde rota haritalı canlı GPS kaydı, artı öğün fotoğrafından veya sesle kalori ve makro kaydı. Bedeli, Suu&#39;da segment, liderlik tablosu ve sosyal akış olmaması ve besin veritabanının MyFitnessPal&#39;ınkinden küçük olması.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Suu koşu mesafesini, tempoyu ve rotayı takip ediyor mu?</summary>
+                <div><p>Evet. Antrenmanı Suu içinde başlatıp duraklatıp bitiriyorsunuz; mesafe, süre ve tempo canlı akıyor, bitirdiğinizde rotanız harita üzerinde çiziliyor. Koşu ve yürüyüşte ayrıca ortalama hız ve yakılan kalori, bisiklette hız ve irtifa raporlanıyor.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Strava ile Suu&#39;yu aynı anda kullanabilir miyim?</summary>
+                <div><p>Evet ve çoğu kişi için en iyi kurulum bu. Suu iOS&#39;ta Apple Health, Android&#39;de Google Health Connect üzerinden antrenman okuyor; yani Strava&#39;da kaydettiğiniz bir koşu veya sürüş Suu&#39;da da görünüyor, günlük su hedefinizi yine yükseltiyor ve ardından girdiğiniz öğünün yanında duruyor. Strava&#39;nın segmentlerini ve sosyal akışını korur, üzerine beslenme ve hidrasyon eklersiniz.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Antrenman kalori veya su hedefimi otomatik değiştiriyor mu?</summary>
+                <div><p>Suu&#39;da her ikisi de evet. Kaydedilen her antrenman — uygulamada canlı takip edilsin ya da Apple Health / Health Connect&#39;ten okunsun — günlük su hedefinizi yükseltiyor ve Suu antrenman sonrası kalori bazlı 300–500 ml ek su öneriyor. Öğünler ters yönde etki ediyor: içerdikleri protein ve sodyum sindirim suyu ihtiyacı ekliyor.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Suu iyi bir Strava alternatifi mi?</summary>
+                <div><p>Koşuyu veya sürüşü kaydedip yediğiniz ve içtiğinizle ilişkilendirmek için evet. Strava&#39;nın rekabetçi ve sosyal katmanının yerine geçmek için hayır — Suu&#39;da segment, liderlik tablosu, kudos, kulüp, güç ölçer analizi ve rota planlayıcı yok ve bunları kurmaya da çalışmıyor. Bisiklet analitiği daha sığ. Strava&#39;yı bu özellikler için açıyorsanız Strava&#39;da kalın ve Suu&#39;yu beslenme ile hidrasyon tarafı için kullanın.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Salon antrenmanı ve beslenmeyi birlikte takip için hangi uygulama en iyi?</summary>
+                <div><p>Set-tekrar kuvvet kaydı için Hevy veya Strong gibi özel araçlar bu karşılaştırmadaki her uygulamadan — Suu dahil — daha iyi. Suu salon seanslarını yaklaşık 50 aktivite türünden biri olarak kapsıyor ve yakılan kaloriyi günlük hedeflerinize bağlıyor, ama bir kuvvet antrenmanı defteri değil. Yaygın kurulum: salon için Hevy, artı beslenme, hidrasyon ve kardiyo için tek bir uygulama.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Suu&#39;da GPS takibi için Premium gerekiyor mu?</summary>
+                <div><p>Hayır. Canlı GPS kaydı ve rota haritası dahil egzersiz takibi ücretsiz pakete dahil; temel su takibi ve günde 3 yapay zekâ öğün analizi de öyle. Premium sınırsız yapay zekâ analizi, fotoğrafla yemek tanıma, gelişmiş makro istatistikleri ve PDF/CSV dışa aktarım ekliyor.</p></div>
+            </details>
+        </div>
+    </section>
+    <section>
+        <h2>Kaynaklar</h2>
+        <ol class="small">
+            <li id="ref1"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6835337/" rel="nofollow noopener" target="_blank">Egzersiz sırasında ter kaybı ve sıvı yerine koyma (PMC6835337)</a></li>
+            <li id="ref2"><a href="https://pubmed.ncbi.nlm.nih.gov/1454084/" rel="nofollow noopener" target="_blank">Lichtman S.W. ve ark. (1992) — Kilo veremeyen deneklerde beyan edilen egzersiz %51 fazla bildirildi. N Engl J Med (PMID 1454084)</a></li>
+            <li id="ref3"><a href="https://www.efsa.europa.eu/en/efsajournal/pub/1459" rel="nofollow noopener" target="_blank">EFSA — Su için diyet referans değerleri bilimsel görüşü</a></li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>İlgili yazılar</h2>
+        <div class="cards">
+            <a class="card" href="/blog/suu-vs-strava.html">
+                <h3 style="font-size:var(--fs-md)">Suu vs Strava</h3>
+                <p>Kafa kafaya karşılaştırma, Strava&#39;nın açıkça kazandığı yerler dahil.</p>
+            </a>
+            <a class="card" href="/blog/en-iyi-egzersiz-takip-uygulamasi.html">
+                <h3 style="font-size:var(--fs-md)">En iyi antrenman takip uygulaması</h3>
+                <p>Strava, Nike Run Club, Samsung Health ve Suu bir arada.</p>
+            </a>
+            <a class="card" href="/blog/egzersizde-kalori-yakimi.html">
+                <h3 style="font-size:var(--fs-md)">Egzersizle yakılan kalori</h3>
+                <p>Yakım rakamı nasıl tahmin ediliyor ve neden sık sık yanlış.</p>
+            </a>
+            <a class="card" href="/blog/spor-ve-hidrasyon.html">
+                <h3 style="font-size:var(--fs-md)">Spor ve hidrasyon</h3>
+                <p>Bir seans gerçekte ne kadar ek sıvıya mal oluyor.</p>
+            </a>
+        </div>
+    </section>
+
+    <p class="small text-subtle">Suu tıbbi teşhis veya tedavi amacıyla geliştirilmemiştir. Sağlıkla ilgili kararlar için bir sağlık profesyoneline danışın.</p>
+
+    <p>
+        <a href="/blog.html">← Bloga dön</a>
+        &nbsp;·&nbsp; <a href="/karsilastirmalar.html">Tüm karşılaştırmalar →</a>
+    </p>
+</div>
+
+</main>
+
+
+<!-- sütunlar arası bağlantı: scripts/link-pillars.py -->
+<div style="max-width:760px;margin:32px auto;padding:20px;border-radius:10px;background:rgba(30,136,229,.06)">
+  <h3 style="font-size:1rem;margin:0 0 12px">Kalori ve egzersiz tarafı</h3>
+  <ul style="margin:0 0 0 20px;padding:0">
+      <li style="margin-block-end:6px"><a href="egzersizde-kalori-yakimi.html" style="color:#1E88E5;font-weight:600;text-decoration:none">Hangi Egzersiz Kaç Kalori Yakar? Aktivite Bazlı Rehber</a></li>
+      <li style="margin-block-end:6px"><a href="en-iyi-egzersiz-takip-uygulamasi.html" style="color:#1E88E5;font-weight:600;text-decoration:none">En İyi Egzersiz Takip Uygulaması 2026</a></li>
+  </ul>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__bottom" style="border:0">
+            <p class="small mb-0">© 2026 Suu · Furkan Mert Fındıklı</p>
+            <p class="small mb-0"><a href="/">suuapp.com</a></p>
+        </div>
+    </div>
+</footer>
+
+<div class="sticky-cta" data-cta="sticky">
+    <a href="/app?src=sticky" class="btn btn--secondary">App Store</a>
+    <a href="/app?src=sticky" class="btn btn--primary">Google Play</a>
+</div>
+
+</body>
+</html>
