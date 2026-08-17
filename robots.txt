@@ -6,6 +6,14 @@ Disallow: /assets/og-image-template.html
 Disallow: /admin.html
 Disallow: /app/
 
+# Veri dosyaları — sayfa değil, indekslenemez.
+# donations.json bağış widget'ının fetch ettiği veri; Google onu tarayıp
+# "Tarandı - dizine eklenmiş değil" satırı üretiyordu (Search Console,
+# 2026-08-17). robots.txt yalnızca tarayıcıları bağlar; widget'ın
+# istemci tarafı fetch'i etkilenmez.
+Disallow: /donations.json
+Disallow: /i18n-map.json
+
 # Not: makale.html ve kanibal blog sayfaları Disallow EDİLMEZ.
 # Kanibal blog sayfaları canonical pointer + client-side redirect
 # (meta-refresh + JS) ile primary URL'e işaret ediyor; noindex YOK
