@@ -172,6 +172,17 @@ td.mail{color:var(--text-1);max-width:210px;overflow:hidden;text-overflow:ellips
   </section>
 
   <section class="card">
+    <h2>Sponsorluk kırılımı</h2>
+    <p class="sub">Hangi sayfadan kaç kod alındı. "genel" = suuapp.com/hediye-kod.html</p>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Kaynak</th><th>Alınan kod</th><th>Reklam izni</th><th>İzin oranı</th></tr></thead>
+        <tbody id="partners"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="card">
     <h2>Günlük dağıtım</h2>
     <p class="sub">Son 30 gün. Sütunun üstündeki sayı o günün toplamı.</p>
     <div class="legend">
@@ -187,7 +198,7 @@ td.mail{color:var(--text-1);max-width:210px;overflow:hidden;text-overflow:ellips
     <p class="sub">En yeni 25 kayıt.</p>
     <div class="scroll">
       <table>
-        <thead><tr><th>Tarih</th><th>E-posta</th><th>Platform</th><th>Kod</th><th>Dil</th><th>Ülke</th><th>İzin</th><th>Mail</th></tr></thead>
+        <thead><tr><th>Tarih</th><th>E-posta</th><th>Kaynak</th><th>Platform</th><th>Kod</th><th>Dil</th><th>Ülke</th><th>İzin</th><th>Mail</th></tr></thead>
         <tbody id="recent"></tbody>
       </table>
     </div>
@@ -286,11 +297,27 @@ td.mail{color:var(--text-1);max-width:210px;overflow:hidden;text-overflow:ellips
           "%;background:var(--series-" + row[0] + ')"></i></div></div>';
       }).join("");
 
+    drawPartners(d.byPartner || []);
     drawChart(d.daily.slice().reverse());
     drawRecent(d.recent);
 
     $("dlClaims").href = API + "/admin/claims?key=" + encodeURIComponent(key);
     $("dlSubs").href = API + "/admin/subscribers?key=" + encodeURIComponent(key);
+  }
+
+  function drawPartners(rows) {
+    if (!rows.length) {
+      $("partners").innerHTML = '<tr><td colspan="4" style="color:var(--text-3)">Henüz kayıt yok.</td></tr>';
+      return;
+    }
+    $("partners").innerHTML = rows.map(function (r) {
+      var ad = r.partner || "genel";
+      var izin = r.izinli || 0;
+      return "<tr><td style='color:var(--text-1);font-weight:600'>" + ad + "</td>" +
+        "<td>" + nf.format(r.adet) + "</td>" +
+        "<td>" + nf.format(izin) + "</td>" +
+        "<td>%" + pct(izin, r.adet) + "</td></tr>";
+    }).join("");
   }
 
   function drawChart(days) {
@@ -342,7 +369,7 @@ td.mail{color:var(--text-1);max-width:210px;overflow:hidden;text-overflow:ellips
 
   function drawRecent(rows) {
     if (!rows.length) {
-      $("recent").innerHTML = '<tr><td colspan="8" style="color:var(--text-3)">Henüz kayıt yok.</td></tr>';
+      $("recent").innerHTML = '<tr><td colspan="9" style="color:var(--text-3)">Henüz kayıt yok.</td></tr>';
       return;
     }
     var esc = function (s) {
@@ -355,6 +382,7 @@ td.mail{color:var(--text-1);max-width:210px;overflow:hidden;text-overflow:ellips
       return "<tr><td>" + t.toLocaleDateString("tr-TR") + " " +
         t.toLocaleTimeString("tr-TR", { hour: "2-digit", minute: "2-digit" }) + "</td>" +
         '<td class="mail">' + esc(r.email) + "</td>" +
+        "<td>" + esc(r.partner || "genel") + "</td>" +
         '<td><span class="chip ' + esc(r.platform) + '">' + (r.platform === "ios" ? "iOS" : "Android") + "</span></td>" +
         '<td class="code">' + esc(r.code || "—") + "</td>" +
         "<td>" + esc(r.lang) + "</td><td>" + esc(r.country || "—") + "</td>" +

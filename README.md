@@ -176,6 +176,7 @@ görür ve postasına da düşer. Havuz bitince "tükendi" der.
 | Kod aktarımı | `scripts/gift-codes-import.py` (xlsx + csv → D1 SQL) |
 | API | `worker/` — Cloudflare Worker + D1 · kurulum: [worker/SETUP.md](worker/SETUP.md) |
 | İstatistik paneli | `x9f4c2e7b.html` — bağlantısız, noindex, parolalı |
+| Sponsorluk sayfaları | `content/partners/<slug>.json` → `<slug>/index.html` |
 
 **Kod havuzu:** iOS 465 (elle dağıtılan ilk 35 atlandı) + Android 500.
 Kodlar repoya **girmez** — `worker/seed-codes.sql` `.gitignore`'da, kaynak
@@ -187,6 +188,28 @@ hız sınırı → e-posta normalizasyonu (`a.b+x@gmail.com` = `ab@gmail.com`) �
 tek kullanımlık posta reddi → **DB katmanında UNIQUE indeks** (tek IP / tek
 e-posta = tek kod, platformdan bağımsız). Uygulama kontrolü eşzamanlı iki
 isteği kaçırabilir; UNIQUE indeks kaçırmaz.
+
+**Sponsorluk sayfaları.** Bir iş birliği için ayrı şablon yazılmaz — aynı
+şablonun partner modu kullanılır, yoksa formda veya güvenlik akışında bir
+düzeltme yapılınca iki yerde düzeltmek gerekirdi. Sponsor dosyası yalnızca
+DEĞİŞEN metinleri yazar, gerisi `content/gift/<lang>.json`'dan gelir:
+
+```jsonc
+// content/partners/dahacommunity.json
+{
+  "slug": "dahacommunity",          // → suuapp.com/dahacommunity/
+  "name": "DAHA Community",
+  "logo": "/assets/brand/daha-badge-512.png",
+  "langs": ["tr"],
+  "theme": { "to": "#111418" },     // hero degradesinin bitiş rengi
+  "copy": { "tr": { /* yalnızca değişen anahtarlar */ } }
+}
+```
+
+Yeni sponsor = bu dosyanın bir kopyası + logo + `build-gift-pages.py --apply`.
+Talep kaydına `partner` sütunu yazılır; panel hangi sayfadan kaç kod alındığını
+ve izin oranını kaynak bazında gösterir. Sponsor sayfasında dil menüsü
+gizlidir — kullanıcıyı iş birliği sayfasından markasız sayfaya atmasın diye.
 
 **Sayfalar noindex ve sitemap dışı:** bağlantı elle paylaşılıyor; aramadan gelen
 rastgele trafiğin sınırlı havuzu tüketmesini istemiyoruz. Koruma

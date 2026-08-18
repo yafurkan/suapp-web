@@ -40,6 +40,7 @@
   --gc-blue:#01A5F7; --gc-deep:#0B6FD0; --gc-navy:#063C7A; --gc-ink:#0d2135;
   --gc-muted:#5d7189; --gc-line:#e3ecf5; --gc-ok:#12b76a; --gc-err:#e5484d;
   --gc-card:#ffffff; --gc-bg:#f5f9fd;
+  --gc-g1:{{ theme.from }}; --gc-g2:{{ theme.mid }}; --gc-g3:{{ theme.to }};
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -51,7 +52,7 @@ img{max-width:100%;display:block}
 
 /* ───────── karşılama perdesi ───────── */
 .gc-splash{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;
-  background:linear-gradient(165deg,#01A5F7 0%,#0B6FD0 52%,#063C7A 100%);
+  background:linear-gradient(165deg,var(--gc-g1) 0%,var(--gc-g2) 52%,var(--gc-g3) 100%);
   transition:transform .95s cubic-bezier(.76,0,.24,1),opacity .6s ease .35s;
   will-change:transform}
 .gc-splash.gone{transform:translateY(-105%);opacity:0;pointer-events:none}
@@ -67,6 +68,15 @@ img{max-width:100%;display:block}
 @keyframes gc-drop-in{0%{transform:translateY(-90px) scale(.2);opacity:0}
   60%{opacity:1}100%{transform:translateY(0) scale(1);opacity:1}}
 @keyframes gc-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-11px)}}
+.gc-lockup{display:flex;align-items:center;justify-content:center;gap:clamp(14px,4vw,26px)}
+.gc-lockup img{filter:drop-shadow(0 12px 30px rgba(0,0,0,.26))}
+.gc-lockup .x{font-size:clamp(1.3rem,4vw,1.9rem);font-weight:300;color:rgba(255,255,255,.62);line-height:1}
+.gc-partner-badge{border-radius:50%}
+.gc-greet{margin:16px auto 0;max-width:540px;font-size:clamp(.98rem,2.4vw,1.08rem);line-height:1.65;
+  color:rgba(255,255,255,.95);font-weight:500;animation-delay:.24s}
+.gc-together{display:inline-flex;align-items:center;gap:9px;margin:18px 0 0;padding:9px 18px;border-radius:999px;
+  background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);font-size:.9rem;font-weight:700;
+  letter-spacing:.01em;animation-delay:.16s}
 .gc-splash-word{margin:20px 0 0;font-size:clamp(2.6rem,11vw,4rem);font-weight:900;
   letter-spacing:-.03em;color:#fff;display:flex;justify-content:center;gap:.02em}
 .gc-splash-word span{display:inline-block;opacity:0;transform:translateY(26px);
@@ -87,7 +97,7 @@ img{max-width:100%;display:block}
 /* ───────── hero ───────── */
 .gc-hero{position:relative;min-height:100svh;display:flex;flex-direction:column;
   justify-content:center;align-items:center;text-align:center;padding:96px 20px 130px;
-  background:linear-gradient(165deg,#01A5F7 0%,#0B6FD0 55%,#063C7A 100%);
+  background:linear-gradient(165deg,var(--gc-g1) 0%,var(--gc-g2) 55%,var(--gc-g3) 100%);
   color:#fff;overflow:hidden;isolation:isolate}
 .gc-aurora{position:absolute;inset:-25%;z-index:-2;filter:blur(70px);opacity:.55}
 .gc-aurora b{position:absolute;display:block;border-radius:50%}
@@ -251,8 +261,15 @@ img{max-width:100%;display:block}
 <div class="gc-splash" id="gcSplash" role="presentation">
   <span class="gc-ring"></span><span class="gc-ring"></span><span class="gc-ring"></span>
   <div class="gc-splash-inner">
-    <img class="gc-splash-drop" src="/assets/brand/suu-drop-512.png" alt="Suu" width="118" height="176" fetchpriority="high">
+{% if partner %}    <div class="gc-lockup gc-splash-drop">
+      <img src="/assets/brand/suu-drop-512.png" alt="Suu" width="86" height="128" fetchpriority="high">
+      <span class="x">&times;</span>
+      <img class="gc-partner-badge" src="{{ partner.logo }}" alt="{{ partner.name }}" width="104" height="104" fetchpriority="high">
+    </div>
+    <div class="gc-splash-word" style="font-size:clamp(1.5rem,6vw,2.1rem)"><span>Suu</span><span>&nbsp;×&nbsp;</span><span>{{ partner.short }}</span></div>
+{% else %}    <img class="gc-splash-drop" src="/assets/brand/suu-drop-512.png" alt="Suu" width="118" height="176" fetchpriority="high">
     <div class="gc-splash-word"><span>S</span><span>u</span><span>u</span></div>
+{% endif %}
     <p class="gc-splash-tag">{{ c.splash.tagline }}</p>
   </div>
   <div class="gc-splash-hint">{{ c.splash.skip }}<i></i></div>
@@ -264,9 +281,16 @@ img{max-width:100%;display:block}
 
   <div class="gc-hero-in">
     <span class="gc-badge gc-anim"><b></b>{{ c.hero.badge }}</span>
-    <img class="gc-logo gc-anim" src="/assets/brand/suu-drop-512.png" alt="Suu" width="92" height="137">
-    <h1 class="gc-title gc-anim"><small>{{ c.hero.titleTop }}</small><em>{{ c.hero.titleMain }}</em></h1>
-    <p class="gc-sub gc-anim">{{ c.hero.subtitle }}</p>
+{% if partner %}    <div class="gc-lockup gc-logo gc-anim" style="width:auto">
+      <img src="/assets/brand/suu-drop-512.png" alt="Suu" width="66" height="98">
+      <span class="x">&times;</span>
+      <img class="gc-partner-badge" src="{{ partner.logo }}" alt="{{ partner.name }}" width="80" height="80">
+    </div>
+    <div><span class="gc-together gc-anim">{{ c.hero.together }}</span></div>
+{% else %}    <img class="gc-logo gc-anim" src="/assets/brand/suu-drop-512.png" alt="Suu" width="92" height="137">
+{% endif %}    <h1 class="gc-title gc-anim"><small>{{ c.hero.titleTop }}</small><em>{{ c.hero.titleMain }}</em></h1>
+{% if partner %}    <p class="gc-greet gc-anim">{{ c.hero.greeting }}</p>
+{% endif %}    <p class="gc-sub gc-anim">{{ c.hero.subtitle }}</p>
     <div class="gc-pills gc-anim">
       <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2s6.5 7.2 6.5 11.5A6.5 6.5 0 0 1 12 20a6.5 6.5 0 0 1-6.5-6.5C5.5 9.2 12 2 12 2z"/></svg>{{ c.hero.pills[0] }}</span>
       <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 5H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm-8 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg>{{ c.hero.pills[1] }}</span>
@@ -371,7 +395,9 @@ img{max-width:100%;display:block}
     api: {{ api_base | tojson }},
     lang: {{ lang | tojson }},
     appStore: {{ app_store | tojson }},
-    googlePlay: {{ google_play | tojson }}
+    googlePlay: {{ google_play | tojson }},
+    partner: {{ (partner.slug if partner else None) | tojson }},
+    partnerName: {{ (partner.name if partner else None) | tojson }}
   };
   var T = JSON.parse(document.getElementById("gcCopyData").textContent);
   var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -520,6 +546,8 @@ img{max-width:100%;display:block}
         email: email,
         platform: chosen,
         lang: CFG.lang,
+        partner: CFG.partner,
+        partnerName: CFG.partnerName,
         marketingConsent: consent,
         consentText: consent ? T.form.consent : "",
         website: document.getElementById("gcHp").value,

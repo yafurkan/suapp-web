@@ -31,6 +31,8 @@ const ALLOWED_ORIGINS = new Set([
 ]);
 
 const PLATFORMS = new Set(["ios", "android"]);
+// Sponsorluk sayfası kimliği: yalnızca küçük harf, rakam ve tire.
+const PARTNER_RE = /^[a-z0-9][a-z0-9-]{0,38}[a-z0-9]$/;
 const LANGS = new Set(["tr", "en", "ru", "ar"]);
 
 // Kayıt olmadan kod üreten yaygın geçici posta servisleri.
@@ -271,7 +273,7 @@ const MAIL_COPY = {
   },
 };
 
-function mailHtml(code, platform, lang, env) {
+function mailHtml(code, platform, lang, env, partnerName) {
   const t = MAIL_COPY[lang] || MAIL_COPY.en;
   const store = STORE_NAME[platform] || STORE_NAME.ios;
   const fill = (s) => s.replaceAll("{store}", store);
@@ -289,6 +291,7 @@ function mailHtml(code, platform, lang, env) {
     <div style="font-size:22px;font-weight:700;margin-top:6px">${t.heading}</div>
   </td></tr>
   <tr><td style="padding:28px 32px">
+    ${partnerName ? `<p style="margin:0 0 14px;padding:10px 14px;background:#f5fbff;border-radius:10px;color:#0d47a1;font-size:14px;line-height:1.55">Suu × ${partnerName}</p>` : ""}
     <p style="margin:0 0 18px;color:#2d3748;font-size:16px;line-height:1.6">${fill(t.intro)}</p>
     <div style="border:2px dashed #2196f3;border-radius:12px;padding:18px;text-align:center;background:#f5fbff">
       <div style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:24px;font-weight:700;letter-spacing:.1em;color:#0d47a1;word-break:break-all">${code}</div>
@@ -305,7 +308,7 @@ function mailHtml(code, platform, lang, env) {
 </table></td></tr></table></body></html>`;
 }
 
-async function sendCodeEmail(to, code, platform, lang, env) {
+async function sendCodeEmail(to, code, platform, lang, env, partnerName) {
   if (!env.RESEND_API_KEY) return false;
   const t = MAIL_COPY[lang] || MAIL_COPY.en;
   const store = STORE_NAME[platform] || STORE_NAME.ios;
@@ -320,7 +323,7 @@ async function sendCodeEmail(to, code, platform, lang, env) {
         from: env.MAIL_FROM || "Suu <hediye@suuapp.com>",
         to: [to],
         subject: t.subject,
-        html: mailHtml(code, platform, lang, env),
+        html: mailHtml(code, platform, lang, env, partnerName),
         text: `${t.heading}\n\n${code}\n\n${redeemUrl(code, platform, env)}\n\n${t.note.replaceAll("{store}", store)}`,
       }),
     });
@@ -380,6 +383,8 @@ async function handleClaim(request, db, origin, env) {
 
   const lang = LANGS.has(body.lang) ? body.lang : "en";
   const platform = PLATFORMS.has(body.platform) ? body.platform : null;
+  const partner = PARTNER_RE.test(String(body.partner || "")) ? body.partner : null;
+  const partnerName = String(body.partnerName || "").slice(0, 60) || null;
   if (!platform) return json({ ok: false, error: "platform_required" }, 400, origin, env);
 
   // Bal küpü: gerçek kullanıcı görmediği alanı dolduramaz.
@@ -452,12 +457,12 @@ async function handleClaim(request, db, origin, env) {
     await db.prepare(
       `INSERT INTO claims
          (id, code_id, platform, email, email_hash, ip_hash, ua_hash, country, lang,
-          created_at, marketing_consent, consent_at, consent_text)
-       VALUES (?, NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+          created_at, marketing_consent, consent_at, consent_text, partner)
+       VALUES (?, NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
     ).bind(
       claimId, platform, parsed.email, emailHash, ipHash, uaHash, country, lang,
       nowIso, consent, consent ? nowIso : null,
-      consent ? String(body.consentText || "").slice(0, 500) : null,
+      consent ? String(body.consentText || "").slice(0, 500) : null, partner,
     ).run();
   } catch (err) {
     const msg = String(err?.message || err);
@@ -476,7 +481,7 @@ async function handleClaim(request, db, origin, env) {
 
   await db.prepare("UPDATE claims SET code_id = ? WHERE id = ?").bind(taken.id, claimId).run();
 
-  const emailSent = await sendCodeEmail(parsed.email, taken.code, platform, lang, env);
+  const emailSent = await sendCodeEmail(parsed.email, taken.code, platform, lang, env, partnerName);
   if (emailSent) {
     await db.prepare("UPDATE claims SET email_sent = 1 WHERE id = ?").bind(claimId).run();
   }
@@ -522,6 +527,13 @@ async function handleAdminStats(db, origin, env) {
     "SELECT lang, COUNT(*) AS adet FROM claims GROUP BY lang ORDER BY adet DESC",
   ).all();
 
+  const byPartner = await db.prepare(
+    `SELECT COALESCE(partner, '') AS partner,
+            COUNT(*) AS adet,
+            SUM(marketing_consent) AS izinli
+     FROM claims GROUP BY partner ORDER BY adet DESC`,
+  ).all();
+
   const byCountry = await db.prepare(
     "SELECT country, COUNT(*) AS adet FROM claims GROUP BY country ORDER BY adet DESC LIMIT 15",
   ).all();
@@ -541,6 +553,7 @@ async function handleAdminStats(db, origin, env) {
     mailed: totals?.mailed ?? 0,
     daily: daily.results,
     byLang: byLang.results,
+    byPartner: byPartner.results,
     byCountry: byCountry.results,
     recent: last.results,
     generatedAt: new Date().toISOString(),
@@ -562,15 +575,15 @@ function csv(rows, filename) {
 /** Kimin hangi kodu aldığı — CSV. */
 async function handleAdminClaims(db) {
   const { results } = await db.prepare(
-    `SELECT c.created_at, c.email, c.platform, c.lang, c.country,
+    `SELECT c.created_at, c.email, c.platform, c.lang, c.country, c.partner,
             c.marketing_consent, c.email_sent, k.seq, k.code
      FROM claims c LEFT JOIN codes k ON k.id = c.code_id
      ORDER BY c.created_at`,
   ).all();
 
-  const rows = [["tarih", "eposta", "platform", "dil", "ulke", "reklam_izni", "mail_gitti", "kaynak_sira", "kod"]];
+  const rows = [["tarih", "eposta", "platform", "sponsor", "dil", "ulke", "reklam_izni", "mail_gitti", "kaynak_sira", "kod"]];
   for (const r of results) {
-    rows.push([r.created_at, r.email, r.platform, r.lang, r.country,
+    rows.push([r.created_at, r.email, r.platform, r.partner || "genel", r.lang, r.country,
       r.marketing_consent, r.email_sent, r.seq, r.code]);
   }
   return csv(rows, "suu-hediye-kod-talepleri.csv");
@@ -579,13 +592,13 @@ async function handleAdminClaims(db) {
 /** Duyuru listesi — SADECE açık rıza verenler. */
 async function handleAdminSubscribers(db) {
   const { results } = await db.prepare(
-    `SELECT email, lang, country, platform, consent_at
+    `SELECT email, lang, country, platform, partner, consent_at
      FROM claims WHERE marketing_consent = 1 ORDER BY consent_at`,
   ).all();
 
-  const rows = [["eposta", "dil", "ulke", "platform", "izin_tarihi"]];
+  const rows = [["eposta", "dil", "ulke", "platform", "sponsor", "izin_tarihi"]];
   for (const r of results) {
-    rows.push([r.email, r.lang, r.country, r.platform, r.consent_at]);
+    rows.push([r.email, r.lang, r.country, r.platform, r.partner || "genel", r.consent_at]);
   }
   return csv(rows, "suu-duyuru-listesi.csv");
 }

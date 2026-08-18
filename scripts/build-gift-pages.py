@@ -8,11 +8,18 @@ Girdi:
     content/gift/config.json         Worker adresi, Turnstile anahtarı
     content/suu-facts.json           mağaza bağlantıları
 
+    content/partners/<slug>.json     sponsorluk sayfaları (isteğe bağlı)
+
 Çıktı:
     tr → hediye-kod.html      en → gift-code.html
     ar → gift-code-ar.html    ru → gift-code-ru.html
     de → gift-code-de.html    it → gift-code-it.html
     hi → gift-code-hi.html
+    sponsorluklar → <slug>/index.html   (örn. dahacommunity/index.html)
+
+Sponsorluk sayfaları AYNI şablonu kullanır, ayrı bir kopyasını değil: formda
+veya güvenlik akışında bir düzeltme yapılınca iki yerde düzeltmek gerekmesin.
+Sponsor dosyası yalnızca değişen metinleri yazar, gerisi dil dosyasından gelir.
 
 Sayfalar noindex: kampanya bağlantısı elle paylaşılıyor, arama sonuçlarından
 gelen rastgele trafiğin sınırlı kod havuzunu tüketmesini istemiyoruz.
@@ -38,6 +45,7 @@ except ImportError:
 
 ROOT = Path(__file__).resolve().parents[1]
 GIFT = ROOT / "content" / "gift"
+PARTNERS = ROOT / "content" / "partners"
 FACTS = ROOT / "content" / "suu-facts.json"
 BASE = "https://suuapp.com"
 XDEFAULT = "en"
@@ -52,6 +60,21 @@ TARGETS: dict[str, tuple[str, str, str, str]] = {
     "it": ("gift-code-it.html",  "it_IT", "ltr", "Italiano"),
     "hi": ("gift-code-hi.html",  "hi_IN", "ltr", "हिन्दी"),
 }
+
+
+# Suu'nun kendi hero degradesi. Sponsor kendi rengini getirebilir.
+DEFAULT_THEME = {"from": "#01A5F7", "mid": "#0B6FD0", "to": "#063C7A"}
+
+
+def deep_merge(base: dict, over: dict) -> dict:
+    """Sponsor dosyası yalnızca DEĞİŞEN anahtarları yazsın diye."""
+    out = dict(base)
+    for key, value in over.items():
+        if isinstance(value, dict) and isinstance(out.get(key), dict):
+            out[key] = deep_merge(out[key], value)
+        else:
+            out[key] = value
+    return out
 
 
 def esc(raw: str) -> str:
@@ -80,29 +103,19 @@ def main() -> int:
                       trim_blocks=False, lstrip_blocks=False)
     template = env.get_template("_template.html.j2")
 
-    wanted = [l.strip() for l in args.lang.split(",") if l.strip()] or list(TARGETS)
-    changed = 0
-
-    for lang in wanted:
-        if lang not in TARGETS:
-            print(f"⚠  bilinmeyen dil: {lang}")
-            continue
-        out_name, locale, direction, _ = TARGETS[lang]
-        c = json.loads((GIFT / f"{lang}.json").read_text(encoding="utf-8"))
-
-        # Tarayıcıdaki JS'in ihtiyacı olan metinler — şablonun ikinci kopyası değil,
-        # yalnızca çalışma anında lazım olan bölümler.
+    def render(*, lang, c, out_path, page_url, alternates, lang_links, partner, theme):
         runtime = {"stock": c["stock"], "form": c["form"], "result": c["result"], "errors": c["errors"]}
-
         html = template.render(
             lang=lang,
-            dir=direction,
-            locale=locale,
+            dir=TARGETS[lang][2],
+            locale=TARGETS[lang][1],
             c=c,
-            page_url=f"{BASE}/{out_name}",
-            xdefault_url=f"{BASE}/{TARGETS[XDEFAULT][0]}",
-            alternates=[(code, f"{BASE}/{TARGETS[code][0]}") for code in TARGETS],
-            lang_links=[(code, f"/{TARGETS[code][0]}", TARGETS[code][3]) for code in TARGETS],
+            partner=partner,
+            theme=theme,
+            page_url=page_url,
+            xdefault_url=alternates[0][1] if len(alternates) == 1 else f"{BASE}/{TARGETS[XDEFAULT][0]}",
+            alternates=alternates,
+            lang_links=lang_links,
             api_base=cfg["apiBase"].rstrip("/"),
             turnstile_key=cfg["turnstileSiteKey"],
             app_store=links["app_store"],
@@ -112,15 +125,54 @@ def main() -> int:
         )
         if not html.endswith("\n"):
             html += "\n"
-
-        target = ROOT / out_name
-        old = target.read_text(encoding="utf-8") if target.exists() else ""
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        old = out_path.read_text(encoding="utf-8") if out_path.exists() else ""
         state = "aynı" if old == html else ("yeni" if not old else "güncellendi")
-        if old != html:
-            changed += 1
-            if args.apply:
-                target.write_text(html, encoding="utf-8")
+        if old != html and args.apply:
+            out_path.write_text(html, encoding="utf-8")
+        return html, state, old != html
+
+    wanted = [l.strip() for l in args.lang.split(",") if l.strip()] or list(TARGETS)
+    changed = 0
+
+    for lang in wanted:
+        if lang not in TARGETS:
+            print(f"⚠  bilinmeyen dil: {lang}")
+            continue
+        out_name = TARGETS[lang][0]
+        c = json.loads((GIFT / f"{lang}.json").read_text(encoding="utf-8"))
+        html, state, diff = render(
+            lang=lang, c=c, out_path=ROOT / out_name, page_url=f"{BASE}/{out_name}",
+            alternates=[(code, f"{BASE}/{TARGETS[code][0]}") for code in TARGETS],
+            lang_links=[(code, f"/{TARGETS[code][0]}", TARGETS[code][3]) for code in TARGETS],
+            partner=None, theme=DEFAULT_THEME,
+        )
+        changed += diff
         print(f"{lang:3s} → {out_name:22s} {len(html)//1024:3d} KB  {state}")
+
+    # ── sponsorluk sayfaları ──
+    for pf in sorted(PARTNERS.glob("*.json")):
+        if pf.name.startswith("_"):
+            continue
+        data = json.loads(pf.read_text(encoding="utf-8"))
+        slug = data["slug"]
+        for lang in data.get("langs", ["tr"]):
+            base = json.loads((GIFT / f"{lang}.json").read_text(encoding="utf-8"))
+            c = deep_merge(base, data.get("copy", {}).get(lang, {}))
+            rel = f"{slug}/index.html" if lang == data.get("langs", ["tr"])[0] else f"{slug}/{lang}.html"
+            url = f"{BASE}/{slug}/" if rel.endswith("index.html") else f"{BASE}/{rel}"
+            partner = {"slug": slug, "name": data["name"], "short": data.get("short", data["name"]),
+                       "logo": data["logo"]}
+            html, state, diff = render(
+                lang=lang, c=c, out_path=ROOT / rel, page_url=url,
+                alternates=[(lang, url)],
+                # Sponsor sayfasında genel dil menüsü gösterilmez: kullanıcıyı
+                # iş birliği sayfasından çıkarıp markasız sayfaya atardı.
+                lang_links=[],
+                partner=partner, theme=deep_merge(DEFAULT_THEME, data.get("theme", {})),
+            )
+            changed += diff
+            print(f"{lang:3s} → {rel:22s} {len(html)//1024:3d} KB  {state}   [{data['name']}]")
 
     # Panel de aynı Worker'a bakar — adres iki yerde elle tutulursa kaçınılmaz sapar.
     panel = ROOT / cfg["adminPage"]
