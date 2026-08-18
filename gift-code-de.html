@@ -128,10 +128,6 @@ img{max-width:100%;display:block}
 .gc-pills span{display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border-radius:999px;
   background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.26);font-size:.88rem;font-weight:600}
 .gc-pills svg{width:16px;height:16px;flex:none}
-.gc-stock{margin:26px 0 0;display:inline-flex;align-items:center;gap:12px;padding:10px 18px;
-  border-radius:14px;background:rgba(0,0,0,.16);border:1px solid rgba(255,255,255,.2);
-  font-size:.9rem;font-weight:600;animation-delay:.44s}
-.gc-stock strong{font-size:1.18rem;font-variant-numeric:tabular-nums}
 .gc-cta{display:inline-flex;align-items:center;gap:10px;margin:28px 0 0;padding:16px 34px;border-radius:16px;
   background:#fff;color:var(--gc-deep);font-weight:800;font-size:1.05rem;text-decoration:none;border:0;cursor:pointer;
   box-shadow:0 14px 34px rgba(0,0,0,.24);transition:transform .2s,box-shadow .2s;animation-delay:.52s}
@@ -282,10 +278,6 @@ img{max-width:100%;display:block}
       <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 5H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm-8 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg>Kalorien per Foto</span>
       <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.6 6.3l-1.4-1.4-2.1 2.1-1.4-1.4 2.1-2.1-1.4-1.4-2.1 2.1L7.5 11l5.5 5.5 6.8-6.8 2.1-2.1zM4.8 13.9l-1.4 1.4 2.1 2.1-2.1 2.1 1.4 1.4 2.1-2.1 1.4 1.4 2.1-2.1-5.6-4.2z"/></svg>Training & Schritte</span>
     </div>
-    <div class="gc-stock gc-anim" id="gcStock">
-      <strong id="gcStockNum">…</strong><span>Codes übrig</span>
-    </div>
-    <br>
     <button class="gc-cta gc-anim" type="button" id="gcJump">Code holen
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 16l-6-6h12z"/></svg>
     </button>
@@ -307,12 +299,12 @@ img{max-width:100%;display:block}
         <label class="gc-plat" data-plat="ios">
           <input type="radio" name="platform" value="ios">
           <svg viewBox="0 0 24 24"><path d="M17.05 12.5c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.15-2.8.85-3.5.85s-1.85-.83-3-.8c-1.55.02-3 .9-3.8 2.28-1.62 2.8-.42 6.95 1.16 9.22.77 1.1 1.7 2.35 2.9 2.3 1.16-.05 1.6-.75 3-.75s1.8.75 3.03.72c1.25-.02 2.04-1.12 2.8-2.23.88-1.28 1.25-2.52 1.27-2.58-.03-.02-2.44-.94-2.46-3.72zM14.9 5.1c.63-.77 1.06-1.83.94-2.9-.9.04-2 .6-2.66 1.37-.58.67-1.1 1.76-.96 2.8 1.02.08 2.05-.5 2.68-1.27z"/></svg>
-          <b>iPhone</b><small data-stock="ios">…</small>
+          <b>iPhone</b><small data-stock="ios">App Store</small>
         </label>
         <label class="gc-plat" data-plat="android">
           <input type="radio" name="platform" value="android">
           <svg viewBox="0 0 24 24"><path d="M17.6 9.5c.55 0 1 .45 1 1v4.5c0 .55-.45 1-1 1s-1-.45-1-1V10.5c0-.55.45-1 1-1zm-11.2 0c.55 0 1 .45 1 1v4.5c0 .55-.45 1-1 1s-1-.45-1-1V10.5c0-.55.45-1 1-1zM8.1 9h7.8v7.3c0 .5-.4.9-.9.9h-.8v2.3c0 .55-.45 1-1 1s-1-.45-1-1v-2.3h-1.4v2.3c0 .55-.45 1-1 1s-1-.45-1-1v-2.3H9c-.5 0-.9-.4-.9-.9V9zm6.4-4.7l1-1.7a.2.2 0 0 0-.35-.2l-1 1.75A5.6 5.6 0 0 0 12 3.7c-.77 0-1.5.16-2.15.45l-1-1.75a.2.2 0 0 0-.35.2l1 1.7A4.6 4.6 0 0 0 7.1 8.2h9.8a4.6 4.6 0 0 0-2.4-3.9zM10 6.4a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm4 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1z"/></svg>
-          <b>Android</b><small data-stock="android">…</small>
+          <b>Android</b><small data-stock="android">Google Play</small>
         </label>
       </div>
 
@@ -348,7 +340,7 @@ img{max-width:100%;display:block}
 
     <div class="gc-code">
       <b id="gcCodeText">— — —</b>
-      <button class="gc-copy" type="button" id="gcCopy"><built-in method copy of dict object at 0x1066c7cc0></button>
+      <button class="gc-copy" type="button" id="gcCopy"><built-in method copy of dict object at 0x109d8fcc0></button>
     </div>
 
     <a class="gc-redeem" id="gcRedeem" href="#" target="_blank" rel="noopener">
@@ -369,7 +361,7 @@ img{max-width:100%;display:block}
   </section>
 
   <section class="gc-faq gc-reveal">
-    <details><summary>Wie lange gilt der Code?</summary><p>Einen Monat volles Suu Premium. Danach wird nichts automatisch abgebucht.</p></details>
+    <details><summary>Wie lange gilt der Code?</summary><p>Einen Monat volles Suu Premium. Nach Ablauf verlängert sich das Abo automatisch zum regulären Preis — wenn du nicht zahlen möchtest, kündige es vor Ablauf in den Einstellungen des App Store (bzw. Google Play); die restlichen Tage behältst du trotzdem.</p></details>
     <details><summary>Was ist in Premium enthalten?</summary><p>Unbegrenzte KI-Analysen, Essenserkennung und Kalorien per Foto, erweiterte Makro-Statistiken, adaptive Erinnerungen und keine Werbung.</p></details>
     <details><summary>Warum nur ein Code?</summary><p>Die Menge ist begrenzt. Damit möglichst viele etwas bekommen, gibt es einen Code pro Person — dieselbe E-Mail und dieselbe Verbindung können nicht zweimal.</p></details>
     <details><summary>Der Code kam nicht an — was nun?</summary><p>Schau zuerst im Spam-Ordner. Sende das Formular mit derselben Adresse erneut, dann schicken wir ihn nochmal.</p></details>
@@ -467,27 +459,30 @@ img{max-width:100%;display:block}
     });
   });
 
+  // Sunucu kalan ADEDİ vermiyor, yalnızca "o platformda kod var mı" diyor.
+  // Kaç kod kaldığı kullanıcıyı ilgilendirmiyor ve stok bilgisi rekabete açık.
   function paintStock(data) {
-    var total = 0;
+    var available = (data && data.available) || {};
     ["ios", "android"].forEach(function (p) {
-      var n = data && data.platforms && data.platforms[p] ? data.platforms[p].remaining : 0;
-      stock[p] = n;
-      total += n;
+      var ok = available[p] === true;
+      stock[p] = ok;
+      if (ok) return;
       var cell = document.querySelector('[data-stock="' + p + '"]');
       var card = document.querySelector('.gc-plat[data-plat="' + p + '"]');
-      if (cell) cell.textContent = n > 0 ? (n + " " + T.stock.remaining) : T.stock.out;
-      if (card && n === 0) { card.classList.add("off"); card.querySelector("input").disabled = true; }
+      if (cell) cell.textContent = T.stock.out;
+      if (card) { card.classList.add("off"); card.querySelector("input").disabled = true; }
     });
-    document.getElementById("gcStockNum").textContent = total;
     // Tek platform kaldıysa kullanıcıya seçtirmeye gerek yok.
-    var live = ["ios", "android"].filter(function (p) { return stock[p] > 0; });
+    var live = ["ios", "android"].filter(function (p) { return stock[p]; });
     if (live.length === 1) selectPlat(document.querySelector('.gc-plat[data-plat="' + live[0] + '"]'));
   }
 
+  // Hata durumunda hiçbir kartı kapatmayız: stok sorgusu başarısız diye
+  // kullanıcıya "tükendi" göstermek, aslında kod varken kapıyı kapatmak olur.
   fetch(CFG.api + "/stats", { cache: "no-store" })
     .then(function (r) { return r.json(); })
     .then(paintStock)
-    .catch(function () { document.getElementById("gcStock").style.display = "none"; });
+    .catch(function () {});
 
   /* ── uyarılar ── */
   var alertBox = document.getElementById("gcAlert");
