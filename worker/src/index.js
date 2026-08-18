@@ -352,12 +352,17 @@ async function platformCounts(db) {
   return out;
 }
 
+/**
+ * Herkese açık uç — SAYI DÖNMEZ, yalnızca "o platformda kod var mı".
+ * Kalan adedi sızdırmak istemiyoruz: sayfada göstermesek bile cevabın içinde
+ * dursa geliştirici konsolunu açan herkes stok durumunu okurdu. Kesin sayılar
+ * yalnızca /admin/stats'ta (parolalı).
+ */
 async function handleStats(db, origin, env) {
   const p = await platformCounts(db);
-  const total = p.ios.total + p.android.total;
-  const remaining = p.ios.remaining + p.android.remaining;
   return json({
-    ok: true, total, remaining, claimed: total - remaining, platforms: p,
+    ok: true,
+    available: { ios: p.ios.remaining > 0, android: p.android.remaining > 0 },
   }, 200, origin, env);
 }
 
@@ -476,17 +481,12 @@ async function handleClaim(request, db, origin, env) {
     await db.prepare("UPDATE claims SET email_sent = 1 WHERE id = ?").bind(claimId).run();
   }
 
-  const left = await db.prepare(
-    "SELECT COUNT(*) AS n FROM codes WHERE platform = ? AND status = 'free'",
-  ).bind(platform).first();
-
   return json({
     ok: true,
     code: taken.code,
     platform,
     store: STORE_NAME[platform],
     redeemUrl: redeemUrl(taken.code, platform, env),
-    remaining: left?.n ?? 0,
     emailSent,
   }, 200, origin, env);
 }
