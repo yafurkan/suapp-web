@@ -27,7 +27,15 @@ jobs:
         
       - name: Setup Pages
         uses: actions/configure-pages@v4
-        
+
+      # Build girdileri siteye YAYINLANMAZ. GitHub Pages repo kökünü olduğu gibi
+      # sunuyor; bu klasörler kalırsa worker/SETUP.md, content/gift/config.json
+      # ve scripts/build-gift-pages.py suuapp.com üzerinden okunabilir hale gelir
+      # (panel adresi ve kurulum notları dahil). Hiçbiri çalışma anında
+      # kullanılmıyor — tamamı yerelde çalışan üretim adımlarının girdisi.
+      - name: Yayından build girdilerini çıkar
+        run: rm -rf worker scripts content
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

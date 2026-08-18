@@ -123,6 +123,7 @@ python3 scripts/build-i18n-map.py --apply           # i18n-map.json + lang-switc
 python3 scripts/build-llms.py --apply               # llms.txt ailesi (7 dil × 2)
 python3 scripts/build-compare.py --apply            # karşılaştırma/kategori cevap sayfaları
 python3 scripts/build-feeds.py --apply              # RSS beslemeleri (dil başına, son 40)
+python3 scripts/build-gift-pages.py --apply          # hediye kod sayfaları (7 dil) + panel
 
 # Enjeksiyon
 python3 scripts/inject-hreflang.py --apply          # hreflang kümesi
@@ -158,6 +159,42 @@ python3 scripts/indexnow-submit.py --all
 ```
 
 **Sıra önemli:** `inject-hreflang.py`, sayfa üreten her script'ten SONRA çalışmalı — `build-compare.py` ve `build-compare-hub.py` sayfayı baştan yazdığı için enjekte edilmiş hreflang bloğunu düşürür. `sync-blog-schema.py` de `sync-blog-index.py`'den sonra gelir (biri kart, diğeri `Blog.blogPost` şeması).
+
+## Hediye Kod Dağıtımı
+
+1 aylık Premium kodlarını elle DM'den göndermek yerine sıra takip eden bir
+dağıtıcı: kullanıcı platformunu seçer, e-postasını yazar, kodu anında ekranda
+görür ve postasına da düşer. Havuz bitince "tükendi" der.
+
+| Parça | Yer |
+|---|---|
+| Sayfalar (7 dil) | `hediye-kod.html`, `gift-code.html`, `gift-code-{ar,ru,de,it,hi}.html` |
+| Metinler | `content/gift/<lang>.json` |
+| Şablon | `content/gift/_template.html.j2` |
+| Yapılandırma | `content/gift/config.json` — Worker adresi + Turnstile anahtarı |
+| Üretici | `scripts/build-gift-pages.py` |
+| Kod aktarımı | `scripts/gift-codes-import.py` (xlsx + csv → D1 SQL) |
+| API | `worker/` — Cloudflare Worker + D1 · kurulum: [worker/SETUP.md](worker/SETUP.md) |
+| İstatistik paneli | `x9f4c2e7b.html` — bağlantısız, noindex, parolalı |
+
+**Kod havuzu:** iOS 465 (elle dağıtılan ilk 35 atlandı) + Android 500.
+Kodlar repoya **girmez** — `worker/seed-codes.sql` `.gitignore`'da, kaynak
+dosyalar `~/Downloads` altında.
+
+**Kötüye kullanım savunması** (katman katman, hepsi Worker'da):
+Origin kontrolü → Turnstile → bal küpü + doldurma süresi → IP başına saatlik
+hız sınırı → e-posta normalizasyonu (`a.b+x@gmail.com` = `ab@gmail.com`) →
+tek kullanımlık posta reddi → **DB katmanında UNIQUE indeks** (tek IP / tek
+e-posta = tek kod, platformdan bağımsız). Uygulama kontrolü eşzamanlı iki
+isteği kaçırabilir; UNIQUE indeks kaçırmaz.
+
+**Sayfalar noindex ve sitemap dışı:** bağlantı elle paylaşılıyor; aramadan gelen
+rastgele trafiğin sınırlı havuzu tüketmesini istemiyoruz. Koruma
+`scripts/update-sitemap.py` içindeki `EXCLUDE_PARTS` ile de sabitlendi.
+
+**Reklam izni:** form isteğe bağlı açık rıza kutusu içerir; izin, metniyle ve
+zaman damgasıyla birlikte saklanır (KVKK/İYS ispatı). Panelin "Duyuru listesi
+(CSV)" çıktısında **yalnızca** izin verenler bulunur.
 
 ## Teknoloji
 

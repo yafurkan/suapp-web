@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "title": "Geschenkcode — 1 Monat Suu Premium gratis",
+    "desc": "Hol dir deinen Geschenkcode und nutze Suu Premium einen Monat gratis. Wasser, KI-Kalorien per Foto und Training in einer App. iPhone und Android.",
+    "ogTitle": "Ein Monat Suu Premium — dein Geschenkcode",
+    "ogDesc": "E-Mail eingeben, Code erscheint sofort. Wasser, Ernährung und Training in einer App."
+  },
+  "splash": {
+    "tagline": "Wasser · Ernährung · Training",
+    "skip": "Überspringen"
+  },
+  "hero": {
+    "badge": "Limitiert · 1 Monat gratis",
+    "titleTop": "Ein Geschenkcode",
+    "titleMain": "nur für dich",
+    "subtitle": "Wasser, Ernährung und Training in einer App. Ein Monat Suu Premium geht auf uns — E-Mail eingeben, Code sofort auf dem Bildschirm.",
+    "pills": [
+      "Wassertracking",
+      "Kalorien per Foto",
+      "Training & Schritte"
+    ],
+    "cta": "Code holen",
+    "scroll": "Nach unten"
+  },
+  "stock": {
+    "remaining": "Codes übrig",
+    "of": "/",
+    "loading": "…",
+    "out": "vergriffen",
+    "ios": "iPhone",
+    "android": "Android"
+  },
+  "form": {
+    "heading": "Zwei Schritte zu deinem Code",
+    "platformQ": "1. Welches Handy nutzt du?",
+    "emailQ": "2. Deine E-Mail-Adresse",
+    "emailPh": "du@beispiel.de",
+    "emailHint": "Der Code erscheint auf dem Bildschirm, eine Kopie geht an diese Adresse.",
+    "consent": "Ich möchte über neue Suu-Funktionen und Aktionen informiert werden.",
+    "consentHint": "Optional — den Code bekommst du so oder so. Jederzeit abbestellbar.",
+    "submit": "Meinen Code anzeigen",
+    "sending": "Code wird reserviert…",
+    "privacy": "Deine E-Mail wird nur zum Senden des Codes verwendet. Deine IP wird nie im Klartext gespeichert — nur ein Hash, ausschließlich gegen Missbrauch.",
+    "privacyLink": "Datenschutz"
+  },
+  "result": {
+    "title": "Dein Code ist da 🎉",
+    "sub": "Ein Monat Suu Premium gehört dir.",
+    "copy": "Code kopieren",
+    "copied": "Kopiert",
+    "redeemIos": "Im App Store einlösen",
+    "redeemAndroid": "Bei Google Play einlösen",
+    "mailOk": "Eine Kopie ist auch in deinem Postfach.",
+    "mailFail": "E-Mail konnte nicht zugestellt werden — kopiere den Code jetzt.",
+    "steps": [
+      "Tippe den Button auf dem Handy (oder kopiere den Code).",
+      "Der Store öffnet sich mit eingetragenem Code; mit deinem Konto bestätigen.",
+      "Suu öffnen — Premium ist aktiv."
+    ],
+    "download": "Zuerst die App laden"
+  },
+  "errors": {
+    "already_claimed_email": "Diese E-Mail hat bereits einen Code erhalten. Falls du ihn nicht findest, haben wir ihn erneut geschickt.",
+    "already_claimed_email_resent": "Diese E-Mail hatte schon einen Code — wir haben ihn erneut geschickt.",
+    "already_claimed_ip": "Über diese Verbindung wurde bereits ein Code geholt. Ein Code pro Person.",
+    "exhausted": "Für diese Plattform sind die Codes vergriffen. Die nächste Runde kündigen wir an.",
+    "invalid_email": "Diese E-Mail-Adresse sieht nicht gültig aus.",
+    "disposable_email": "Wegwerf-Adressen werden nicht akzeptiert. Bitte deine echte nutzen.",
+    "captcha_failed": "Verifizierung fehlgeschlagen. Seite neu laden und erneut versuchen.",
+    "rate_limited": "Zu viele Versuche. Bitte in einer Stunde erneut versuchen.",
+    "platform_required": "Wähle zuerst dein Handy.",
+    "bad_origin": "Anfrage konnte nicht verifiziert werden. Bitte neu laden.",
+    "server_error": "Etwas ist schiefgelaufen. Bitte gleich noch einmal versuchen.",
+    "network": "Server nicht erreichbar. Verbindung prüfen und erneut versuchen.",
+    "consent_required": "Gib deine E-Mail-Adresse ein, um fortzufahren."
+  },
+  "faq": [
+    {
+      "q": "Wie lange gilt der Code?",
+      "a": "Einen Monat volles Suu Premium. Danach wird nichts automatisch abgebucht."
+    },
+    {
+      "q": "Was ist in Premium enthalten?",
+      "a": "Unbegrenzte KI-Analysen, Essenserkennung und Kalorien per Foto, erweiterte Makro-Statistiken, adaptive Erinnerungen und keine Werbung."
+    },
+    {
+      "q": "Warum nur ein Code?",
+      "a": "Die Menge ist begrenzt. Damit möglichst viele etwas bekommen, gibt es einen Code pro Person — dieselbe E-Mail und dieselbe Verbindung können nicht zweimal."
+    },
+    {
+      "q": "Der Code kam nicht an — was nun?",
+      "a": "Schau zuerst im Spam-Ordner. Sende das Formular mit derselben Adresse erneut, dann schicken wir ihn nochmal."
+    },
+    {
+      "q": "Funktioniert das auch auf Android?",
+      "a": "Ja. App-Store-Codes fürs iPhone, Google-Play-Codes für Android — wähle einfach dein Handy im Formular."
+    }
+  ],
+  "footerNote": "Codes sind einmalig einlösbar und nur solange der Vorrat reicht."
+}

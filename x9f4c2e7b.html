@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>·</title>
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="data:,">
+<!--
+  Suu — hediye kod paneli (iç kullanım).
+
+  Bu sayfa hiçbir yerden bağlantılı DEĞİL: sitemap dışında, robots.txt'te
+  yasaklı, noindex. Ama asıl koruma bu değil — sayfa yalnızca boş bir kabuk.
+  Bütün veri Worker'ın /admin/* uçlarından geliyor ve her istek parolayla
+  imzalanıyor; parola olmadan bu dosyayı açan hiçbir şey göremez.
+  Worker tarafında IP başına saatte 6 hatalı deneme sınırı var (kilit).
+-->
+<style>
+:root{
+  color-scheme:light;
+  --surface-0:#f4f6f9; --surface-1:#ffffff; --line:#e4e9f0;
+  --text-1:#12181f; --text-2:#4e5a68; --text-3:#8593a3;
+  --series-ios:#2a78d6;       /* kategorik yuva 1 */
+  --series-android:#eb6834;   /* kategorik yuva 2 */
+  --ok:#12813f; --warn:#8a5a00; --bad:#b3261e;
+  --grid:#eef2f6;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--surface-0);color:var(--text-1);
+  font:14px/1.5 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:1000px;margin:0 auto;padding:22px 18px 70px}
+
+/* giriş */
+.gate{min-height:100svh;display:grid;place-items:center;padding:20px}
+.gate form{width:100%;max-width:310px;background:var(--surface-1);border:1px solid var(--line);
+  border-radius:14px;padding:24px}
+.gate input{width:100%;padding:12px 13px;border:1.5px solid var(--line);border-radius:9px;
+  font:inherit;letter-spacing:.12em}
+.gate input:focus{outline:0;border-color:var(--series-ios)}
+.gate button{width:100%;margin-top:11px;padding:12px;border:0;border-radius:9px;cursor:pointer;
+  background:var(--text-1);color:#fff;font:600 14px/1 inherit}
+.gate .msg{margin:11px 0 0;font-size:12.5px;color:var(--bad);min-height:17px}
+
+/* başlık */
+.top{display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:20px}
+.top h1{margin:0;font-size:16px;font-weight:700;letter-spacing:-.01em}
+.top .meta{font-size:12px;color:var(--text-3)}
+.top button{padding:7px 13px;border:1px solid var(--line);border-radius:8px;background:var(--surface-1);
+  color:var(--text-2);font:600 12.5px/1 inherit;cursor:pointer}
+.top button:hover{border-color:var(--text-3);color:var(--text-1)}
+
+/* kahraman sayı + kutucuklar */
+.hero{background:var(--surface-1);border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin-bottom:14px}
+.hero .big{font-size:clamp(42px,9vw,60px);font-weight:800;line-height:1;letter-spacing:-.035em;
+  font-variant-numeric:tabular-nums}
+.hero .cap{margin-top:6px;font-size:13px;color:var(--text-2)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:12px;margin-bottom:14px}
+.tile{background:var(--surface-1);border:1px solid var(--line);border-radius:12px;padding:15px 16px}
+.tile .n{font-size:26px;font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.tile .l{margin-top:3px;font-size:12.5px;color:var(--text-2)}
+.tile .s{margin-top:2px;font-size:11.5px;color:var(--text-3)}
+
+/* kart + grafik */
+.card{background:var(--surface-1);border:1px solid var(--line);border-radius:14px;padding:20px;margin-bottom:14px}
+.card h2{margin:0 0 3px;font-size:14px;font-weight:700}
+.card .sub{margin:0 0 18px;font-size:12.5px;color:var(--text-3)}
+
+.legend{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:14px;font-size:12.5px;color:var(--text-2)}
+.legend b{display:inline-flex;align-items:center;gap:7px;font-weight:500}
+.legend i{width:11px;height:11px;border-radius:3px;flex:none}
+
+/* platform ilerleme çubuğu: dolu = dağıtılmış */
+.pf{margin-bottom:18px}
+.pf:last-child{margin-bottom:0}
+.pf-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:7px}
+.pf-head b{font-size:13px;font-weight:600}
+.pf-head span{font-size:12.5px;color:var(--text-2);font-variant-numeric:tabular-nums}
+.pf-bar{height:11px;border-radius:6px;background:var(--grid);overflow:hidden;display:flex}
+.pf-bar i{display:block;height:100%;border-radius:6px;transition:width .5s cubic-bezier(.2,.8,.2,1)}
+
+/* günlük sütunlar */
+.chart{position:relative;height:190px;display:flex;align-items:flex-end;gap:2px;
+  border-bottom:1px solid var(--line);padding-bottom:1px}
+/* max-width: ilk günlerde tek sütun tüm paneli kaplamasın diye. */
+.col{flex:1 1 0;min-width:0;max-width:40px;display:flex;flex-direction:column;justify-content:flex-end;
+  gap:2px;height:100%;position:relative;cursor:default}
+/* Yalnızca yığının TEPESİ yuvarlanır; ara segmentler düz kalır. */
+.col i{display:block;width:100%;transition:opacity .15s}
+.col i:first-of-type{border-radius:4px 4px 0 0}
+.col:hover i{opacity:.72}
+.col .val{position:absolute;top:-17px;left:50%;transform:translateX(-50%);font-size:11px;
+  font-weight:700;color:var(--text-2);font-variant-numeric:tabular-nums}
+.xaxis{display:flex;gap:2px;margin-top:7px}
+.xaxis span{flex:1 1 0;min-width:0;max-width:40px;text-align:center;font-size:10.5px;color:var(--text-3);
+  overflow:hidden;white-space:nowrap}
+.tip{position:fixed;z-index:50;background:var(--text-1);color:#fff;padding:8px 11px;border-radius:8px;
+  font-size:12px;line-height:1.55;pointer-events:none;opacity:0;transition:opacity .12s;white-space:nowrap;
+  box-shadow:0 6px 20px rgba(0,0,0,.2)}
+.tip.on{opacity:1}
+.tip u{display:block;text-decoration:none;font-weight:700;margin-bottom:3px}
+.tip em{font-style:normal;display:inline-block;width:8px;height:8px;border-radius:2px;margin-inline-end:6px}
+
+/* tablolar */
+.scroll{overflow-x:auto;margin:0 -20px;padding:0 20px}
+table{width:100%;border-collapse:collapse;font-size:12.5px;min-width:560px}
+th{text-align:start;font-weight:600;color:var(--text-3);padding:0 10px 9px 0;
+  border-bottom:1px solid var(--line);white-space:nowrap;font-size:11.5px;text-transform:uppercase;letter-spacing:.04em}
+td{padding:9px 10px 9px 0;border-bottom:1px solid var(--grid);color:var(--text-2);white-space:nowrap}
+td.code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--text-1);font-size:12px}
+td.mail{color:var(--text-1);max-width:210px;overflow:hidden;text-overflow:ellipsis}
+.chip{display:inline-block;padding:2px 7px;border-radius:5px;font-size:11px;font-weight:600}
+.chip.ios{background:#e8f1fc;color:#1b528f}
+.chip.android{background:#fdeee7;color:#a3441c}
+.yes{color:var(--ok);font-weight:600}
+.no{color:var(--text-3)}
+
+.dl{display:flex;gap:10px;flex-wrap:wrap}
+.dl a{padding:10px 15px;border:1px solid var(--line);border-radius:9px;background:var(--surface-1);
+  color:var(--text-1);text-decoration:none;font-size:13px;font-weight:600}
+.dl a:hover{border-color:var(--series-ios);color:var(--series-ios)}
+.err{padding:14px 16px;border-radius:11px;background:#fdecea;border:1px solid #f7c9c4;color:var(--bad);font-size:13px}
+.hidden{display:none}
+@media (max-width:560px){ .chart{height:150px} }
+</style>
+</head>
+<body>
+
+<div class="gate" id="gate">
+  <form id="gateForm" autocomplete="off">
+    <input type="password" id="pw" placeholder="••••••••" autocomplete="current-password" autofocus>
+    <button type="submit">→</button>
+    <p class="msg" id="gateMsg"></p>
+  </form>
+</div>
+
+<div class="wrap hidden" id="app">
+  <div class="top">
+    <div>
+      <h1>Hediye kod dağıtımı</h1>
+      <div class="meta" id="stamp"></div>
+    </div>
+    <div style="display:flex;gap:8px">
+      <button type="button" id="refresh">Yenile</button>
+      <button type="button" id="logout">Çıkış</button>
+    </div>
+  </div>
+
+  <div id="err" class="err hidden"></div>
+
+  <section class="hero">
+    <div class="big" id="heroNum">—</div>
+    <div class="cap" id="heroCap">kalan kod</div>
+  </section>
+
+  <div class="tiles">
+    <div class="tile"><div class="n" id="tClaimed">—</div><div class="l">dağıtılan kod</div><div class="s" id="tClaimedPct"></div></div>
+    <div class="tile"><div class="n" id="tConsent">—</div><div class="l">reklam izni veren</div><div class="s" id="tConsentPct"></div></div>
+    <div class="tile"><div class="n" id="tMail">—</div><div class="l">e-postası ulaşan</div><div class="s" id="tMailPct"></div></div>
+    <div class="tile"><div class="n" id="tToday">—</div><div class="l">bugün</div><div class="s" id="tYesterday"></div></div>
+  </div>
+
+  <section class="card">
+    <h2>Platform havuzu</h2>
+    <p class="sub">Dolu kısım dağıtılan kodlar.</p>
+    <div class="legend">
+      <b><i style="background:var(--series-ios)"></i>iOS · App Store</b>
+      <b><i style="background:var(--series-android)"></i>Android · Google Play</b>
+    </div>
+    <div id="pools"></div>
+  </section>
+
+  <section class="card">
+    <h2>Günlük dağıtım</h2>
+    <p class="sub">Son 30 gün. Sütunun üstündeki sayı o günün toplamı.</p>
+    <div class="legend">
+      <b><i style="background:var(--series-ios)"></i>iOS</b>
+      <b><i style="background:var(--series-android)"></i>Android</b>
+    </div>
+    <div class="chart" id="chart"></div>
+    <div class="xaxis" id="xaxis"></div>
+  </section>
+
+  <section class="card">
+    <h2>Son talepler</h2>
+    <p class="sub">En yeni 25 kayıt.</p>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Tarih</th><th>E-posta</th><th>Platform</th><th>Kod</th><th>Dil</th><th>Ülke</th><th>İzin</th><th>Mail</th></tr></thead>
+        <tbody id="recent"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Dışa aktar</h2>
+    <p class="sub">Duyuru listesinde yalnızca açık rıza verenler bulunur.</p>
+    <div class="dl">
+      <a id="dlClaims" href="#" download>Tüm talepler (CSV)</a>
+      <a id="dlSubs" href="#" download>Duyuru listesi (CSV)</a>
+    </div>
+  </section>
+</div>
+
+<div class="tip" id="tip"></div>
+
+<script>
+(function () {
+  "use strict";
+  // Worker adresi — build-gift-pages.py ile aynı kaynaktan (content/gift/config.json).
+  var API = "https://suu-gift-codes.suuapp.workers.dev";
+  var KEY = "suuGiftAdminKey";
+
+  var $ = function (id) { return document.getElementById(id); };
+  var nf = new Intl.NumberFormat("tr-TR");
+  var gate = $("gate"), app = $("app"), tip = $("tip");
+
+  function pct(a, b) { return b > 0 ? Math.round(a / b * 100) : 0; }
+
+  function load(key, fromGate) {
+    return fetch(API + "/admin/stats?key=" + encodeURIComponent(key), { cache: "no-store" })
+      .then(function (r) { return r.json().then(function (b) { return { s: r.status, b: b }; }); })
+      .then(function (res) {
+        if (res.s === 429) throw new Error("Çok fazla hatalı deneme. Bir saat bekle.");
+        if (!res.b || !res.b.ok) throw new Error("Parola hatalı.");
+        sessionStorage.setItem(KEY, key);
+        gate.classList.add("hidden");
+        app.classList.remove("hidden");
+        render(res.b, key);
+      })
+      .catch(function (e) {
+        if (fromGate) { $("gateMsg").textContent = e.message || "Bağlantı kurulamadı."; }
+        else { $("err").textContent = e.message || "Veri alınamadı."; $("err").classList.remove("hidden"); }
+        throw e;
+      });
+  }
+
+  $("gateForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    $("gateMsg").textContent = "";
+    load($("pw").value, true).catch(function () {});
+  });
+  $("refresh").addEventListener("click", function () {
+    load(sessionStorage.getItem(KEY) || "", false).catch(function () {});
+  });
+  $("logout").addEventListener("click", function () {
+    sessionStorage.removeItem(KEY);
+    location.reload();
+  });
+
+  function render(d, key) {
+    $("err").classList.add("hidden");
+    var ios = d.platforms.ios, and = d.platforms.android;
+    var total = ios.total + and.total;
+    var remaining = ios.remaining + and.remaining;
+    var claimed = total - remaining;
+
+    $("heroNum").textContent = nf.format(remaining);
+    $("heroCap").textContent = "kalan kod · toplam " + nf.format(total) + " kodun " +
+      nf.format(claimed) + " tanesi dağıtıldı";
+    $("stamp").textContent = new Date(d.generatedAt).toLocaleString("tr-TR");
+
+    $("tClaimed").textContent = nf.format(claimed);
+    $("tClaimedPct").textContent = "havuzun %" + pct(claimed, total) + "'i";
+    $("tConsent").textContent = nf.format(d.consented);
+    $("tConsentPct").textContent = "talep edenlerin %" + pct(d.consented, d.claims) + "'i";
+    $("tMail").textContent = nf.format(d.mailed);
+    $("tMailPct").textContent = d.mailed < d.claims
+      ? (d.claims - d.mailed) + " kişiye mail gitmedi"
+      : "hepsi ulaştı";
+
+    var today = new Date().toISOString().slice(0, 10);
+    var yest = new Date(Date.now() - 864e5).toISOString().slice(0, 10);
+    var find = function (g) { var r = d.daily.find(function (x) { return x.gun === g; }); return r ? r.adet : 0; };
+    $("tToday").textContent = nf.format(find(today));
+    $("tYesterday").textContent = "dün " + nf.format(find(yest));
+
+    // platform havuzları
+    $("pools").innerHTML = [["ios", "iOS · App Store", ios], ["android", "Android · Google Play", and]]
+      .map(function (row) {
+        var p = row[2], done = p.total - p.remaining;
+        return '<div class="pf"><div class="pf-head"><b>' + row[1] + '</b><span>' +
+          nf.format(p.remaining) + " / " + nf.format(p.total) + " kaldı</span></div>" +
+          '<div class="pf-bar"><i style="width:' + pct(done, p.total) +
+          "%;background:var(--series-" + row[0] + ')"></i></div></div>';
+      }).join("");
+
+    drawChart(d.daily.slice().reverse());
+    drawRecent(d.recent);
+
+    $("dlClaims").href = API + "/admin/claims?key=" + encodeURIComponent(key);
+    $("dlSubs").href = API + "/admin/subscribers?key=" + encodeURIComponent(key);
+  }
+
+  function drawChart(days) {
+    var chart = $("chart"), xaxis = $("xaxis");
+    if (!days.length) {
+      chart.innerHTML = '<p style="color:var(--text-3);font-size:13px;margin:auto">Henüz kod dağıtılmadı.</p>';
+      xaxis.innerHTML = "";
+      return;
+    }
+    var max = Math.max.apply(null, days.map(function (r) { return r.adet; })) || 1;
+    var peak = days.reduce(function (a, b) { return b.adet > a.adet ? b : a; }, days[0]);
+
+    chart.innerHTML = days.map(function (r) {
+      var h = r.adet / max * 100;
+      var iosH = r.adet ? r.ios / r.adet * h : 0;
+      var andH = r.adet ? r.android / r.adet * h : 0;
+      // Yalnızca zirve günü etiketlenir — her sütuna sayı basmak gürültü olur.
+      var label = r.gun === peak.gun && r.adet > 0 ? '<span class="val">' + r.adet + "</span>" : "";
+      return '<div class="col" data-g="' + r.gun + '" data-i="' + r.ios + '" data-a="' + r.android +
+        '" data-t="' + r.adet + '">' + label +
+        (r.android ? '<i style="height:' + andH + '%;background:var(--series-android)"></i>' : "") +
+        (r.ios ? '<i style="height:' + iosH + '%;background:var(--series-ios)"></i>' : "") +
+        "</div>";
+    }).join("");
+
+    xaxis.innerHTML = days.map(function (r, i) {
+      var show = i === 0 || i === days.length - 1 || i === Math.floor(days.length / 2);
+      return "<span>" + (show ? r.gun.slice(8) + "." + r.gun.slice(5, 7) : "") + "</span>";
+    }).join("");
+
+    chart.querySelectorAll(".col").forEach(function (col) {
+      col.addEventListener("mouseenter", function (e) {
+        tip.innerHTML = "<u>" + col.dataset.g + "</u>" +
+          '<em style="background:var(--series-ios)"></em>iOS ' + col.dataset.i + "<br>" +
+          '<em style="background:var(--series-android)"></em>Android ' + col.dataset.a +
+          '<br><span style="color:#9aa7b4">toplam ' + col.dataset.t + "</span>";
+        tip.classList.add("on");
+        move(e);
+      });
+      col.addEventListener("mousemove", move);
+      col.addEventListener("mouseleave", function () { tip.classList.remove("on"); });
+    });
+    function move(e) {
+      var x = Math.min(e.clientX + 14, window.innerWidth - tip.offsetWidth - 10);
+      tip.style.left = x + "px";
+      tip.style.top = Math.max(8, e.clientY - tip.offsetHeight - 12) + "px";
+    }
+  }
+
+  function drawRecent(rows) {
+    if (!rows.length) {
+      $("recent").innerHTML = '<tr><td colspan="8" style="color:var(--text-3)">Henüz kayıt yok.</td></tr>';
+      return;
+    }
+    var esc = function (s) {
+      return String(s == null ? "" : s).replace(/[&<>"]/g, function (ch) {
+        return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch];
+      });
+    };
+    $("recent").innerHTML = rows.map(function (r) {
+      var t = new Date(r.created_at);
+      return "<tr><td>" + t.toLocaleDateString("tr-TR") + " " +
+        t.toLocaleTimeString("tr-TR", { hour: "2-digit", minute: "2-digit" }) + "</td>" +
+        '<td class="mail">' + esc(r.email) + "</td>" +
+        '<td><span class="chip ' + esc(r.platform) + '">' + (r.platform === "ios" ? "iOS" : "Android") + "</span></td>" +
+        '<td class="code">' + esc(r.code || "—") + "</td>" +
+        "<td>" + esc(r.lang) + "</td><td>" + esc(r.country || "—") + "</td>" +
+        '<td class="' + (r.marketing_consent ? "yes" : "no") + '">' + (r.marketing_consent ? "var" : "yok") + "</td>" +
+        '<td class="' + (r.email_sent ? "yes" : "no") + '">' + (r.email_sent ? "gitti" : "yok") + "</td></tr>";
+    }).join("");
+  }
+
+  var saved = sessionStorage.getItem(KEY);
+  if (saved) load(saved, false).catch(function () { sessionStorage.removeItem(KEY); gate.classList.remove("hidden"); });
+})();
+</script>
+</body>
+</html>

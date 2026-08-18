@@ -1,0 +1,10 @@
+# KODLAR ASLA GIT'E GİRMEZ — repo herkese açık ve GitHub Pages'te yayınlanıyor.
+seed-codes.sql
+codes.txt
+codes*.csv
+*.local.*
+
+node_modules/
+.wrangler/
+.dev.vars
+wrangler.dev.toml
