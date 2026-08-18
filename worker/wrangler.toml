@@ -1,0 +1,40 @@
+# Suu hediye kod dağıtıcı — Cloudflare Worker yapılandırması
+#
+# İlk kurulum sırası (detay: SETUP.md):
+#   npx wrangler login
+#   npx wrangler d1 create suu-gift-codes      → çıkan database_id'yi aşağıya yapıştır
+#   npx wrangler d1 execute suu-gift-codes --remote --file=./schema.sql
+#   npx wrangler secret put HASH_SALT
+#   npx wrangler secret put TURNSTILE_SECRET
+#   npx wrangler secret put RESEND_API_KEY
+#   npx wrangler secret put ADMIN_TOKEN
+#   npx wrangler deploy
+
+name = "suu-gift-codes"
+main = "src/index.js"
+compatibility_date = "2026-08-01"
+# Önizleme URL'leri kapalı: her deploy'da ikinci bir genel adres (…-preview…)
+# açılmasına gerek yok. Tek genel yüzey = tek denetlenecek yüzey.
+preview_urls = false
+
+[observability]
+enabled = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "suu-gift-codes"
+database_id = "b3c03e08-0ba7-4e3f-afe1-7cfb834d0a77"
+
+[vars]
+# App Store uygulama kimliği — kullanım (redeem) bağlantısı bununla kurulur.
+APP_STORE_ID = "6757619920"
+# Gönderen adresi. Resend'de suuapp.com alan adı doğrulanmadan çalışmaz.
+MAIL_FROM = "Suu <hediye@suuapp.com>"
+# Yerel test için "1" yapın; canlıda "0" kalmalı.
+ALLOW_LOCALHOST = "0"
+
+# Gizli değerler wrangler.toml'a YAZILMAZ, `wrangler secret put` ile konur:
+#   HASH_SALT        — IP/e-posta özetlerinin HMAC anahtarı (uzun rastgele dize)
+#   TURNSTILE_SECRET — Cloudflare Turnstile gizli anahtarı
+#   RESEND_API_KEY   — Resend API anahtarı (yoksa mail atlanır, kod ekranda çıkar)
+#   ADMIN_TOKEN      — /admin/claims CSV dışa aktarımının parolası

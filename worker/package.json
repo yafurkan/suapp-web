@@ -1,0 +1,16 @@
+{
+  "name": "suu-gift-codes",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Suu hediye kod dagitici — Cloudflare Worker + D1",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "schema": "wrangler d1 execute suu-gift-codes --remote --file=./schema.sql",
+    "seed": "wrangler d1 execute suu-gift-codes --remote --file=./seed-codes.sql",
+    "stats": "wrangler d1 execute suu-gift-codes --remote --command \"SELECT status, COUNT(*) FROM codes GROUP BY status\""
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

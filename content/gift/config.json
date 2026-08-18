@@ -1,0 +1,7 @@
+{
+  "_comment": "Hediye kod sayfalarının tek yapılandırması. Worker'ı deploy ettikten sonra apiBase'i güncelle ve `python3 scripts/build-gift-pages.py --apply` çalıştır.",
+  "apiBase": "https://suu-gift-codes.suuapp.workers.dev",
+  "turnstileSiteKey": "0x4AAAAAAEUkAD5tUeLuafpH",
+  "adminPage": "x9f4c2e7b.html",
+  "appStoreId": "6757619920"
+}

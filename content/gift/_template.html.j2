@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}"{% if dir == 'rtl' %} dir="rtl"{% endif %}>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>{{ c.meta.title }} | Suu</title>
+<meta name="description" content="{{ c.meta.desc }}">
+<!-- Kampanya sayfası: arama sonuçlarına girmesini istemiyoruz, bağlantı elle paylaşılıyor. -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#01A5F7">
+<meta name="apple-itunes-app" content="app-id={{ app_store_id }}">
+
+<meta property="og:title" content="{{ c.meta.ogTitle }}">
+<meta property="og:description" content="{{ c.meta.ogDesc }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ page_url }}">
+<meta property="og:image" content="https://suuapp.com/assets/og-image.png">
+<meta property="og:site_name" content="Suu">
+<meta property="og:locale" content="{{ locale }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ c.meta.ogTitle }}">
+<meta name="twitter:description" content="{{ c.meta.ogDesc }}">
+<meta name="twitter:image" content="https://suuapp.com/assets/og-image.png">
+
+<link rel="canonical" href="{{ page_url }}">
+{% for code, href in alternates %}<link rel="alternate" hreflang="{{ code }}" href="{{ href }}">
+{% endfor %}<link rel="alternate" hreflang="x-default" href="{{ xdefault_url }}">
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="preload" as="image" href="/assets/brand/suu-drop-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="/assets/js/analytics.js" defer></script>
+
+<style>
+:root{
+  --gc-blue:#01A5F7; --gc-deep:#0B6FD0; --gc-navy:#063C7A; --gc-ink:#0d2135;
+  --gc-muted:#5d7189; --gc-line:#e3ecf5; --gc-ok:#12b76a; --gc-err:#e5484d;
+  --gc-card:#ffffff; --gc-bg:#f5f9fd;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--gc-bg);color:var(--gc-ink);
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+img{max-width:100%;display:block}
+
+/* ───────── karşılama perdesi ───────── */
+.gc-splash{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;
+  background:linear-gradient(165deg,#01A5F7 0%,#0B6FD0 52%,#063C7A 100%);
+  transition:transform .95s cubic-bezier(.76,0,.24,1),opacity .6s ease .35s;
+  will-change:transform}
+.gc-splash.gone{transform:translateY(-105%);opacity:0;pointer-events:none}
+.gc-splash-inner{text-align:center;padding:24px;position:relative;z-index:2}
+.gc-ring{position:absolute;top:50%;left:50%;width:180px;height:180px;margin:-90px 0 0 -90px;
+  border:2px solid rgba(255,255,255,.34);border-radius:50%;
+  animation:gc-ripple 2.6s cubic-bezier(.2,.6,.3,1) infinite;z-index:1}
+.gc-ring:nth-child(2){animation-delay:.55s}
+.gc-ring:nth-child(3){animation-delay:1.1s}
+@keyframes gc-ripple{0%{transform:scale(.35);opacity:.85}100%{transform:scale(3.6);opacity:0}}
+.gc-splash-drop{width:118px;margin:0 auto;filter:drop-shadow(0 18px 40px rgba(0,0,0,.28));
+  animation:gc-drop-in 1.15s cubic-bezier(.18,1.2,.35,1) both, gc-float 3.4s ease-in-out 1.15s infinite}
+@keyframes gc-drop-in{0%{transform:translateY(-90px) scale(.2);opacity:0}
+  60%{opacity:1}100%{transform:translateY(0) scale(1);opacity:1}}
+@keyframes gc-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-11px)}}
+.gc-splash-word{margin:20px 0 0;font-size:clamp(2.6rem,11vw,4rem);font-weight:900;
+  letter-spacing:-.03em;color:#fff;display:flex;justify-content:center;gap:.02em}
+.gc-splash-word span{display:inline-block;opacity:0;transform:translateY(26px);
+  animation:gc-rise .6s cubic-bezier(.2,.8,.2,1) forwards}
+.gc-splash-word span:nth-child(1){animation-delay:.62s}
+.gc-splash-word span:nth-child(2){animation-delay:.72s}
+.gc-splash-word span:nth-child(3){animation-delay:.82s}
+@keyframes gc-rise{to{opacity:1;transform:translateY(0)}}
+.gc-splash-tag{margin:10px 0 0;color:rgba(255,255,255,.9);font-size:1rem;font-weight:500;
+  letter-spacing:.06em;opacity:0;animation:gc-rise .7s ease .98s forwards}
+.gc-splash-hint{position:absolute;left:0;right:0;bottom:34px;text-align:center;
+  color:rgba(255,255,255,.85);font-size:.85rem;opacity:0;animation:gc-rise .6s ease 1.5s forwards}
+.gc-splash-hint i{display:block;width:22px;height:22px;margin:8px auto 0;
+  border-left:2px solid rgba(255,255,255,.85);border-top:2px solid rgba(255,255,255,.85);
+  transform:rotate(45deg);animation:gc-nudge 1.6s ease-in-out infinite}
+@keyframes gc-nudge{0%,100%{transform:rotate(45deg) translate(0,0)}50%{transform:rotate(45deg) translate(5px,5px)}}
+
+/* ───────── hero ───────── */
+.gc-hero{position:relative;min-height:100svh;display:flex;flex-direction:column;
+  justify-content:center;align-items:center;text-align:center;padding:96px 20px 130px;
+  background:linear-gradient(165deg,#01A5F7 0%,#0B6FD0 55%,#063C7A 100%);
+  color:#fff;overflow:hidden;isolation:isolate}
+.gc-aurora{position:absolute;inset:-25%;z-index:-2;filter:blur(70px);opacity:.55}
+.gc-aurora b{position:absolute;display:block;border-radius:50%}
+.gc-aurora b:nth-child(1){width:52vw;height:52vw;left:-8%;top:2%;background:#57d9ff;animation:gc-drift 17s ease-in-out infinite}
+.gc-aurora b:nth-child(2){width:44vw;height:44vw;right:-6%;top:22%;background:#2b6ef5;animation:gc-drift 21s ease-in-out infinite reverse}
+.gc-aurora b:nth-child(3){width:38vw;height:38vw;left:28%;bottom:-8%;background:#8ef0d4;opacity:.5;animation:gc-drift 25s ease-in-out infinite}
+@keyframes gc-drift{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(7%,-6%) scale(1.13)}66%{transform:translate(-6%,6%) scale(.92)}}
+.gc-bubbles{position:absolute;inset:0;z-index:-1;overflow:hidden}
+.gc-bubbles i{position:absolute;bottom:-14vh;border-radius:50%;background:rgba(255,255,255,.16);
+  border:1px solid rgba(255,255,255,.24);animation:gc-bubble linear infinite}
+@keyframes gc-bubble{0%{transform:translateY(0) scale(.7);opacity:0}
+  12%{opacity:.75}100%{transform:translateY(-118vh) scale(1.15);opacity:0}}
+
+.gc-hero-in{position:relative;max-width:760px;width:100%}
+.gc-anim{opacity:0;transform:translateY(24px);animation:gc-rise .85s cubic-bezier(.2,.8,.2,1) forwards}
+.gc-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;
+  background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.32);backdrop-filter:blur(8px);
+  font-size:.84rem;font-weight:600;letter-spacing:.02em;animation-delay:.05s}
+.gc-badge b{width:7px;height:7px;border-radius:50%;background:#7dffb0;box-shadow:0 0 0 0 rgba(125,255,176,.7);
+  animation:gc-pulse 2s infinite}
+@keyframes gc-pulse{70%{box-shadow:0 0 0 9px rgba(125,255,176,0)}100%{box-shadow:0 0 0 0 rgba(125,255,176,0)}}
+.gc-logo{width:92px;margin:26px auto 0;filter:drop-shadow(0 14px 34px rgba(0,0,0,.26));
+  animation-delay:.12s}
+.gc-title{margin:20px 0 0;font-size:clamp(2.1rem,7.2vw,3.9rem);font-weight:900;line-height:1.06;
+  letter-spacing:-.035em;animation-delay:.2s}
+.gc-title small{display:block;font-size:.44em;font-weight:600;letter-spacing:.01em;opacity:.92;margin-bottom:.28em}
+.gc-title em{font-style:normal;background:linear-gradient(100deg,#fff 0%,#c7f0ff 45%,#8ee9ff 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.gc-sub{margin:18px auto 0;max-width:520px;font-size:clamp(1rem,2.5vw,1.14rem);line-height:1.65;
+  color:rgba(255,255,255,.93);animation-delay:.28s}
+.gc-pills{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:26px 0 0;animation-delay:.36s}
+.gc-pills span{display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border-radius:999px;
+  background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.26);font-size:.88rem;font-weight:600}
+.gc-pills svg{width:16px;height:16px;flex:none}
+.gc-stock{margin:26px 0 0;display:inline-flex;align-items:center;gap:12px;padding:10px 18px;
+  border-radius:14px;background:rgba(0,0,0,.16);border:1px solid rgba(255,255,255,.2);
+  font-size:.9rem;font-weight:600;animation-delay:.44s}
+.gc-stock strong{font-size:1.18rem;font-variant-numeric:tabular-nums}
+.gc-cta{display:inline-flex;align-items:center;gap:10px;margin:28px 0 0;padding:16px 34px;border-radius:16px;
+  background:#fff;color:var(--gc-deep);font-weight:800;font-size:1.05rem;text-decoration:none;border:0;cursor:pointer;
+  box-shadow:0 14px 34px rgba(0,0,0,.24);transition:transform .2s,box-shadow .2s;animation-delay:.52s}
+.gc-cta:hover{transform:translateY(-3px);box-shadow:0 20px 44px rgba(0,0,0,.3)}
+.gc-scroll{position:absolute;left:0;right:0;bottom:76px;text-align:center;font-size:.8rem;
+  color:rgba(255,255,255,.82);animation-delay:.7s}
+.gc-scroll i{display:block;width:18px;height:18px;margin:10px auto 0;
+  border-right:2px solid rgba(255,255,255,.8);border-bottom:2px solid rgba(255,255,255,.8);
+  transform:rotate(45deg);animation:gc-bob 1.8s ease-in-out infinite}
+@keyframes gc-bob{0%,100%{transform:rotate(45deg) translate(0,0)}50%{transform:rotate(45deg) translate(4px,4px)}}
+.gc-wave{position:absolute;left:0;right:0;bottom:-1px;z-index:1;line-height:0}
+.gc-wave svg{width:200%;height:70px;animation:gc-slide 14s linear infinite}
+@keyframes gc-slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ───────── form ───────── */
+.gc-main{max-width:660px;margin:0 auto;padding:56px 20px 80px}
+.gc-card{background:var(--gc-card);border:1px solid var(--gc-line);border-radius:22px;
+  padding:30px 26px;box-shadow:0 10px 40px rgba(13,33,53,.07)}
+.gc-h2{margin:0 0 6px;font-size:1.5rem;font-weight:800;letter-spacing:-.02em}
+.gc-label{display:block;margin:24px 0 10px;font-weight:700;font-size:.98rem}
+.gc-plats{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.gc-plat{position:relative;display:flex;flex-direction:column;align-items:center;gap:8px;
+  padding:20px 12px;border:2px solid var(--gc-line);border-radius:16px;background:#fff;cursor:pointer;
+  transition:border-color .18s,transform .18s,box-shadow .18s;text-align:center}
+.gc-plat:hover:not(.off){transform:translateY(-2px);box-shadow:0 8px 22px rgba(1,165,247,.14)}
+.gc-plat svg{width:30px;height:30px;fill:var(--gc-ink);transition:fill .18s}
+.gc-plat b{font-size:.98rem;font-weight:700}
+.gc-plat small{font-size:.78rem;color:var(--gc-muted);font-variant-numeric:tabular-nums}
+.gc-plat.on{border-color:var(--gc-blue);background:#f2faff;box-shadow:0 8px 22px rgba(1,165,247,.16)}
+.gc-plat.on svg{fill:var(--gc-blue)}
+.gc-plat.off{opacity:.45;cursor:not-allowed;filter:grayscale(1)}
+.gc-plat input{position:absolute;opacity:0;pointer-events:none}
+
+.gc-input{width:100%;padding:15px 16px;border:2px solid var(--gc-line);border-radius:14px;
+  font-size:1rem;font-family:inherit;background:#fff;color:var(--gc-ink);transition:border-color .18s,box-shadow .18s}
+.gc-input:focus{outline:0;border-color:var(--gc-blue);box-shadow:0 0 0 4px rgba(1,165,247,.14)}
+.gc-hint{margin:8px 0 0;font-size:.84rem;color:var(--gc-muted);line-height:1.55}
+.gc-hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+
+.gc-consent{display:flex;gap:12px;align-items:flex-start;margin:22px 0 0;padding:15px;
+  border:1px solid var(--gc-line);border-radius:14px;background:#fafcfe;cursor:pointer}
+.gc-consent input{flex:none;width:20px;height:20px;margin:1px 0 0;accent-color:var(--gc-blue);cursor:pointer}
+.gc-consent span{font-size:.92rem;line-height:1.5}
+.gc-consent small{display:block;margin-top:5px;font-size:.8rem;color:var(--gc-muted);line-height:1.5}
+
+.gc-submit{width:100%;margin:24px 0 0;padding:17px;border:0;border-radius:15px;cursor:pointer;
+  background:linear-gradient(120deg,var(--gc-blue),var(--gc-deep));color:#fff;font-size:1.06rem;
+  font-weight:800;font-family:inherit;transition:transform .18s,box-shadow .18s,opacity .18s;
+  box-shadow:0 10px 26px rgba(1,165,247,.34)}
+.gc-submit:hover:not(:disabled){transform:translateY(-2px);box-shadow:0 15px 34px rgba(1,165,247,.42)}
+.gc-submit:disabled{opacity:.6;cursor:not-allowed;transform:none}
+.gc-spin{display:none;width:17px;height:17px;margin-inline-end:9px;vertical-align:-3px;
+  border:2.5px solid rgba(255,255,255,.4);border-top-color:#fff;border-radius:50%;animation:gc-spin .8s linear infinite}
+.gc-submit.busy .gc-spin{display:inline-block}
+@keyframes gc-spin{to{transform:rotate(360deg)}}
+.gc-privacy{margin:16px 0 0;font-size:.78rem;color:var(--gc-muted);line-height:1.6;text-align:center}
+.gc-privacy a{color:var(--gc-deep)}
+.gc-turnstile{margin:20px 0 0;display:flex;justify-content:center;min-height:0}
+
+.gc-alert{display:none;margin:20px 0 0;padding:14px 16px;border-radius:13px;font-size:.93rem;line-height:1.55;
+  border:1px solid;animation:gc-shake .4s}
+.gc-alert.show{display:block}
+.gc-alert.err{background:#fff2f2;border-color:#ffd0d0;color:#a4262c}
+.gc-alert.warn{background:#fff8e8;border-color:#ffe1a8;color:#8a5a00}
+@keyframes gc-shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+
+/* ───────── sonuç ───────── */
+.gc-result{display:none}
+.gc-result.show{display:block;animation:gc-pop .6s cubic-bezier(.2,1.1,.3,1)}
+@keyframes gc-pop{from{opacity:0;transform:scale(.94) translateY(16px)}to{opacity:1;transform:none}}
+.gc-tick{width:66px;height:66px;margin:0 auto 16px;border-radius:50%;display:grid;place-items:center;
+  background:linear-gradient(135deg,#12b76a,#0a8f52);box-shadow:0 10px 26px rgba(18,183,106,.32)}
+.gc-tick svg{width:32px;height:32px;stroke:#fff;stroke-width:3.4;fill:none;stroke-linecap:round;stroke-linejoin:round;
+  stroke-dasharray:40;stroke-dashoffset:40;animation:gc-draw .5s ease .22s forwards}
+@keyframes gc-draw{to{stroke-dashoffset:0}}
+.gc-code{margin:22px 0 0;padding:22px 16px;border:2px dashed var(--gc-blue);border-radius:16px;
+  background:linear-gradient(160deg,#f2faff,#e7f5ff);text-align:center}
+.gc-code b{display:block;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:clamp(1.15rem,4.6vw,1.6rem);
+  font-weight:800;letter-spacing:.09em;color:var(--gc-navy);word-break:break-all;line-height:1.35}
+.gc-copy{margin:14px 0 0;padding:10px 20px;border:1.5px solid var(--gc-blue);border-radius:11px;
+  background:#fff;color:var(--gc-deep);font-weight:700;font-size:.9rem;font-family:inherit;cursor:pointer;transition:.18s}
+.gc-copy:hover{background:var(--gc-blue);color:#fff}
+.gc-copy.done{background:var(--gc-ok);border-color:var(--gc-ok);color:#fff}
+.gc-redeem{display:flex;align-items:center;justify-content:center;gap:10px;margin:20px 0 0;padding:17px;
+  border-radius:15px;background:linear-gradient(120deg,var(--gc-blue),var(--gc-deep));color:#fff;
+  font-weight:800;font-size:1.04rem;text-decoration:none;box-shadow:0 10px 26px rgba(1,165,247,.34);transition:.2s}
+.gc-redeem:hover{transform:translateY(-2px);box-shadow:0 15px 34px rgba(1,165,247,.42)}
+.gc-redeem svg{width:20px;height:20px;fill:currentColor}
+.gc-steps{margin:22px 0 0;padding:0;list-style:none;counter-reset:s}
+.gc-steps li{position:relative;padding-inline-start:38px;margin:0 0 12px;font-size:.94rem;line-height:1.6;color:#3c5064;counter-increment:s}
+.gc-steps li::before{content:counter(s);position:absolute;inset-inline-start:0;top:0;width:25px;height:25px;
+  border-radius:50%;background:#e7f5ff;color:var(--gc-deep);font-weight:800;font-size:.8rem;display:grid;place-items:center}
+.gc-mail{margin:18px 0 0;padding:12px 15px;border-radius:12px;font-size:.88rem;line-height:1.55}
+.gc-mail.ok{background:#eefbf4;color:#0a6b3d;border:1px solid #c7eeda}
+.gc-mail.bad{background:#fff8e8;color:#8a5a00;border:1px solid #ffe1a8}
+.gc-getapp{display:block;margin:18px 0 0;text-align:center;font-size:.9rem;color:var(--gc-deep);font-weight:600}
+
+/* ───────── SSS + alt ───────── */
+.gc-faq{margin:44px 0 0}
+.gc-faq details{background:#fff;border:1px solid var(--gc-line);border-radius:14px;margin:0 0 10px;overflow:hidden}
+.gc-faq summary{padding:16px 18px;font-weight:700;font-size:.98rem;cursor:pointer;list-style:none;
+  display:flex;justify-content:space-between;align-items:center;gap:12px}
+.gc-faq summary::-webkit-details-marker{display:none}
+.gc-faq summary::after{content:'+';font-size:1.4rem;color:var(--gc-blue);font-weight:400;flex:none;transition:transform .2s}
+.gc-faq details[open] summary::after{transform:rotate(45deg)}
+.gc-faq p{margin:0;padding:0 18px 17px;font-size:.93rem;line-height:1.7;color:#4b6076}
+.gc-foot{text-align:center;padding:30px 20px 46px;color:var(--gc-muted);font-size:.83rem;line-height:1.7}
+.gc-foot a{color:var(--gc-deep);text-decoration:none}
+.gc-langs{margin:12px 0 0;display:flex;flex-wrap:wrap;justify-content:center;gap:6px 14px;font-size:.82rem}
+
+.gc-reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
+.gc-reveal.in{opacity:1;transform:none}
+
+@media (max-width:420px){
+  .gc-plats{grid-template-columns:1fr}
+  .gc-card{padding:24px 18px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;
+    transition-duration:.001ms !important;scroll-behavior:auto !important}
+  .gc-anim,.gc-reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<div class="gc-splash" id="gcSplash" role="presentation">
+  <span class="gc-ring"></span><span class="gc-ring"></span><span class="gc-ring"></span>
+  <div class="gc-splash-inner">
+    <img class="gc-splash-drop" src="/assets/brand/suu-drop-512.png" alt="Suu" width="118" height="176" fetchpriority="high">
+    <div class="gc-splash-word"><span>S</span><span>u</span><span>u</span></div>
+    <p class="gc-splash-tag">{{ c.splash.tagline }}</p>
+  </div>
+  <div class="gc-splash-hint">{{ c.splash.skip }}<i></i></div>
+</div>
+
+<header class="gc-hero">
+  <div class="gc-aurora"><b></b><b></b><b></b></div>
+  <div class="gc-bubbles" id="gcBubbles" aria-hidden="true"></div>
+
+  <div class="gc-hero-in">
+    <span class="gc-badge gc-anim"><b></b>{{ c.hero.badge }}</span>
+    <img class="gc-logo gc-anim" src="/assets/brand/suu-drop-512.png" alt="Suu" width="92" height="137">
+    <h1 class="gc-title gc-anim"><small>{{ c.hero.titleTop }}</small><em>{{ c.hero.titleMain }}</em></h1>
+    <p class="gc-sub gc-anim">{{ c.hero.subtitle }}</p>
+    <div class="gc-pills gc-anim">
+      <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2s6.5 7.2 6.5 11.5A6.5 6.5 0 0 1 12 20a6.5 6.5 0 0 1-6.5-6.5C5.5 9.2 12 2 12 2z"/></svg>{{ c.hero.pills[0] }}</span>
+      <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 5H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm-8 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg>{{ c.hero.pills[1] }}</span>
+      <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.6 6.3l-1.4-1.4-2.1 2.1-1.4-1.4 2.1-2.1-1.4-1.4-2.1 2.1L7.5 11l5.5 5.5 6.8-6.8 2.1-2.1zM4.8 13.9l-1.4 1.4 2.1 2.1-2.1 2.1 1.4 1.4 2.1-2.1 1.4 1.4 2.1-2.1-5.6-4.2z"/></svg>{{ c.hero.pills[2] }}</span>
+    </div>
+    <div class="gc-stock gc-anim" id="gcStock">
+      <strong id="gcStockNum">{{ c.stock.loading }}</strong><span>{{ c.stock.remaining }}</span>
+    </div>
+    <br>
+    <button class="gc-cta gc-anim" type="button" id="gcJump">{{ c.hero.cta }}
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 16l-6-6h12z"/></svg>
+    </button>
+  </div>
+
+  <div class="gc-scroll gc-anim">{{ c.hero.scroll }}<i></i></div>
+  <div class="gc-wave" aria-hidden="true">
+    <svg viewBox="0 0 2880 70" preserveAspectRatio="none"><path fill="#f5f9fd" d="M0 40c240-40 480-40 720 0s480 40 720 0 480-40 720 0 480 40 720 0v30H0z"/></svg>
+  </div>
+</header>
+
+<main class="gc-main">
+  <section class="gc-card gc-reveal" id="gcFormCard">
+    <h2 class="gc-h2">{{ c.form.heading }}</h2>
+
+    <form id="gcForm" novalidate>
+      <span class="gc-label">{{ c.form.platformQ }}</span>
+      <div class="gc-plats">
+        <label class="gc-plat" data-plat="ios">
+          <input type="radio" name="platform" value="ios">
+          <svg viewBox="0 0 24 24"><path d="M17.05 12.5c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.15-2.8.85-3.5.85s-1.85-.83-3-.8c-1.55.02-3 .9-3.8 2.28-1.62 2.8-.42 6.95 1.16 9.22.77 1.1 1.7 2.35 2.9 2.3 1.16-.05 1.6-.75 3-.75s1.8.75 3.03.72c1.25-.02 2.04-1.12 2.8-2.23.88-1.28 1.25-2.52 1.27-2.58-.03-.02-2.44-.94-2.46-3.72zM14.9 5.1c.63-.77 1.06-1.83.94-2.9-.9.04-2 .6-2.66 1.37-.58.67-1.1 1.76-.96 2.8 1.02.08 2.05-.5 2.68-1.27z"/></svg>
+          <b>{{ c.stock.ios }}</b><small data-stock="ios">{{ c.stock.loading }}</small>
+        </label>
+        <label class="gc-plat" data-plat="android">
+          <input type="radio" name="platform" value="android">
+          <svg viewBox="0 0 24 24"><path d="M17.6 9.5c.55 0 1 .45 1 1v4.5c0 .55-.45 1-1 1s-1-.45-1-1V10.5c0-.55.45-1 1-1zm-11.2 0c.55 0 1 .45 1 1v4.5c0 .55-.45 1-1 1s-1-.45-1-1V10.5c0-.55.45-1 1-1zM8.1 9h7.8v7.3c0 .5-.4.9-.9.9h-.8v2.3c0 .55-.45 1-1 1s-1-.45-1-1v-2.3h-1.4v2.3c0 .55-.45 1-1 1s-1-.45-1-1v-2.3H9c-.5 0-.9-.4-.9-.9V9zm6.4-4.7l1-1.7a.2.2 0 0 0-.35-.2l-1 1.75A5.6 5.6 0 0 0 12 3.7c-.77 0-1.5.16-2.15.45l-1-1.75a.2.2 0 0 0-.35.2l1 1.7A4.6 4.6 0 0 0 7.1 8.2h9.8a4.6 4.6 0 0 0-2.4-3.9zM10 6.4a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm4 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1z"/></svg>
+          <b>{{ c.stock.android }}</b><small data-stock="android">{{ c.stock.loading }}</small>
+        </label>
+      </div>
+
+      <label class="gc-label" for="gcEmail">{{ c.form.emailQ }}</label>
+      <input class="gc-input" type="email" id="gcEmail" name="email" autocomplete="email"
+             inputmode="email" placeholder="{{ c.form.emailPh }}" required>
+      <p class="gc-hint">{{ c.form.emailHint }}</p>
+
+      <input class="gc-hp" type="text" name="website" id="gcHp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <label class="gc-consent">
+        <input type="checkbox" id="gcConsent">
+        <span>{{ c.form.consent }}<small>{{ c.form.consentHint }}</small></span>
+      </label>
+
+      <div class="gc-turnstile" id="gcTurnstile"></div>
+
+      <button class="gc-submit" type="submit" id="gcSubmit">
+        <span class="gc-spin"></span><span id="gcSubmitText">{{ c.form.submit }}</span>
+      </button>
+
+      <div class="gc-alert" id="gcAlert" role="alert"></div>
+
+      <p class="gc-privacy">{{ c.form.privacy }}
+        <a href="/gizlilik-politikasi.html">{{ c.form.privacyLink }}</a></p>
+    </form>
+  </section>
+
+  <section class="gc-card gc-result" id="gcResult" aria-live="polite">
+    <div class="gc-tick"><svg viewBox="0 0 24 24"><path d="M4 12.5l5.5 5.5L20 7"/></svg></div>
+    <h2 class="gc-h2" style="text-align:center">{{ c.result.title }}</h2>
+    <p class="gc-hint" style="text-align:center;font-size:.95rem">{{ c.result.sub }}</p>
+
+    <div class="gc-code">
+      <b id="gcCodeText">— — —</b>
+      <button class="gc-copy" type="button" id="gcCopy">{{ c.result.copy }}</button>
+    </div>
+
+    <a class="gc-redeem" id="gcRedeem" href="#" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M12 2l2.6 6.6L21 9.3l-4.9 4.3 1.5 6.7L12 16.9 6.4 20.3l1.5-6.7L3 9.3l6.4-.7z"/></svg>
+      <span id="gcRedeemText">{{ c.result.redeemIos }}</span>
+    </a>
+
+    <div class="gc-mail" id="gcMail"></div>
+
+    <ol class="gc-steps">
+      {% for s in c.result.steps %}<li>{{ s }}</li>
+      {% endfor %}
+    </ol>
+
+    <a class="gc-getapp" id="gcGetApp" href="{{ app_store }}" target="_blank" rel="noopener">{{ c.result.download }} →</a>
+  </section>
+
+  <section class="gc-faq gc-reveal">
+    {% for f in c.faq %}<details><summary>{{ f.q }}</summary><p>{{ f.a }}</p></details>
+    {% endfor %}
+  </section>
+</main>
+
+<footer class="gc-foot">
+  <p>{{ c.footerNote }}<br>&copy; 2026 Suu · <a href="/">suuapp.com</a></p>
+  <nav class="gc-langs">{% for code, href, name in lang_links %}<a href="{{ href }}"{% if code == lang %} style="font-weight:700;color:var(--gc-ink)"{% endif %}>{{ name }}</a>{% endfor %}</nav>
+</footer>
+
+<script id="gcCopyData" type="application/json">{{ copy_json }}</script>
+<script>
+(function () {
+  "use strict";
+  var CFG = {
+    api: {{ api_base | tojson }},
+    lang: {{ lang | tojson }},
+    appStore: {{ app_store | tojson }},
+    googlePlay: {{ google_play | tojson }}
+  };
+  var T = JSON.parse(document.getElementById("gcCopyData").textContent);
+  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ── karşılama perdesi ── */
+  var splash = document.getElementById("gcSplash"), closed = false;
+  function closeSplash() {
+    if (closed) return;
+    closed = true;
+    splash.classList.add("gone");
+    document.body.style.overflow = "";
+    setTimeout(function () { splash.remove(); }, 1100);
+  }
+  if (reduced || sessionStorage.getItem("suuGiftSplash") === "1") {
+    splash.remove();
+    closed = true;
+  } else {
+    sessionStorage.setItem("suuGiftSplash", "1");
+    document.body.style.overflow = "hidden";
+    setTimeout(closeSplash, 2400);
+    ["click", "touchstart", "wheel", "keydown"].forEach(function (e) {
+      splash.addEventListener(e, closeSplash, { passive: true });
+    });
+    var y0 = null;
+    splash.addEventListener("touchstart", function (e) { y0 = e.touches[0].clientY; }, { passive: true });
+    splash.addEventListener("touchmove", function (e) {
+      if (y0 !== null && y0 - e.touches[0].clientY > 24) closeSplash();
+    }, { passive: true });
+  }
+
+  /* ── kabarcıklar ── */
+  if (!reduced) {
+    var bub = document.getElementById("gcBubbles"), html = "";
+    for (var i = 0; i < 12; i++) {
+      var size = 8 + Math.random() * 34;
+      html += '<i style="left:' + (Math.random() * 100).toFixed(1) + '%;width:' + size.toFixed(0) +
+        'px;height:' + size.toFixed(0) + 'px;animation-duration:' + (11 + Math.random() * 12).toFixed(1) +
+        's;animation-delay:' + (Math.random() * 10).toFixed(1) + 's"></i>';
+    }
+    bub.innerHTML = html;
+  }
+
+  /* ── kaydırınca beliren bölümler ── */
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll(".gc-reveal").forEach(function (el) { io.observe(el); });
+
+  document.getElementById("gcJump").addEventListener("click", function () {
+    document.getElementById("gcFormCard").scrollIntoView({ behavior: reduced ? "auto" : "smooth", block: "start" });
+    setTimeout(function () { document.getElementById("gcEmail").focus({ preventScroll: true }); }, reduced ? 0 : 520);
+  });
+
+  /* ── platform seçimi ── */
+  var chosen = null, stock = { ios: null, android: null };
+
+  // Seçimi doğrudan uygular. Otomatik seçimde label.click() KULLANILMAZ:
+  // tarayıcı odaklanan alanı görünüre kaydırır ve sayfa daha hero bitmeden
+  // forma zıplar — karşılama animasyonu boşa gider.
+  function selectPlat(el) {
+    if (!el || el.classList.contains("off")) return;
+    document.querySelectorAll(".gc-plat").forEach(function (o) { o.classList.remove("on"); });
+    el.classList.add("on");
+    el.querySelector("input").checked = true;
+    chosen = el.dataset.plat;
+    hideAlert();
+  }
+
+  document.querySelectorAll(".gc-plat").forEach(function (el) {
+    el.addEventListener("click", function (e) {
+      if (el.classList.contains("off")) { e.preventDefault(); return; }
+      selectPlat(el);
+    });
+  });
+
+  function paintStock(data) {
+    var total = 0;
+    ["ios", "android"].forEach(function (p) {
+      var n = data && data.platforms && data.platforms[p] ? data.platforms[p].remaining : 0;
+      stock[p] = n;
+      total += n;
+      var cell = document.querySelector('[data-stock="' + p + '"]');
+      var card = document.querySelector('.gc-plat[data-plat="' + p + '"]');
+      if (cell) cell.textContent = n > 0 ? (n + " " + T.stock.remaining) : T.stock.out;
+      if (card && n === 0) { card.classList.add("off"); card.querySelector("input").disabled = true; }
+    });
+    document.getElementById("gcStockNum").textContent = total;
+    // Tek platform kaldıysa kullanıcıya seçtirmeye gerek yok.
+    var live = ["ios", "android"].filter(function (p) { return stock[p] > 0; });
+    if (live.length === 1) selectPlat(document.querySelector('.gc-plat[data-plat="' + live[0] + '"]'));
+  }
+
+  fetch(CFG.api + "/stats", { cache: "no-store" })
+    .then(function (r) { return r.json(); })
+    .then(paintStock)
+    .catch(function () { document.getElementById("gcStock").style.display = "none"; });
+
+  /* ── uyarılar ── */
+  var alertBox = document.getElementById("gcAlert");
+  function showAlert(msg, kind) {
+    alertBox.textContent = msg;
+    alertBox.className = "gc-alert show " + (kind || "err");
+    alertBox.scrollIntoView({ behavior: reduced ? "auto" : "smooth", block: "center" });
+  }
+  function hideAlert() { alertBox.className = "gc-alert"; }
+
+  /* ── Turnstile ── */
+  var tsToken = "", tsWidget = null;
+  window.gcTurnstileReady = function () {
+    if (!window.turnstile || !{{ turnstile_key | tojson }}) return;
+    tsWidget = window.turnstile.render("#gcTurnstile", {
+      sitekey: {{ turnstile_key | tojson }},
+      language: CFG.lang,
+      callback: function (t) { tsToken = t; },
+      "expired-callback": function () { tsToken = ""; },
+      "error-callback": function () { tsToken = ""; }
+    });
+  };
+
+  /* ── gönderim ── */
+  var openedAt = Date.now();
+  var form = document.getElementById("gcForm");
+  var btn = document.getElementById("gcSubmit");
+  var btnText = document.getElementById("gcSubmitText");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    hideAlert();
+
+    var email = document.getElementById("gcEmail").value.trim();
+    if (!chosen) return showAlert(T.errors.platform_required);
+    if (!email) return showAlert(T.errors.consent_required);
+
+    btn.disabled = true;
+    btn.classList.add("busy");
+    btnText.textContent = T.form.sending;
+
+    var consent = document.getElementById("gcConsent").checked;
+    fetch(CFG.api + "/claim", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        email: email,
+        platform: chosen,
+        lang: CFG.lang,
+        marketingConsent: consent,
+        consentText: consent ? T.form.consent : "",
+        website: document.getElementById("gcHp").value,
+        elapsed: Date.now() - openedAt,
+        turnstileToken: tsToken
+      })
+    })
+      .then(function (r) { return r.json().then(function (b) { return { status: r.status, body: b }; }); })
+      .then(function (res) {
+        if (res.body && res.body.ok) return succeed(res.body);
+        var code = (res.body && res.body.error) || "server_error";
+        if (code === "already_claimed_email" && res.body.resent) code = "already_claimed_email_resent";
+        showAlert(T.errors[code] || T.errors.server_error,
+          code.indexOf("already_claimed") === 0 || code === "exhausted" ? "warn" : "err");
+        if (tsWidget !== null && window.turnstile) { window.turnstile.reset(tsWidget); tsToken = ""; }
+        reset();
+      })
+      .catch(function () { showAlert(T.errors.network); reset(); });
+  });
+
+  function reset() {
+    btn.disabled = false;
+    btn.classList.remove("busy");
+    btnText.textContent = T.form.submit;
+  }
+
+  function succeed(data) {
+    document.getElementById("gcFormCard").style.display = "none";
+    var box = document.getElementById("gcResult");
+    box.classList.add("show");
+    document.getElementById("gcCodeText").textContent = data.code;
+
+    var redeem = document.getElementById("gcRedeem");
+    redeem.href = data.redeemUrl;
+    document.getElementById("gcRedeemText").textContent =
+      data.platform === "android" ? T.result.redeemAndroid : T.result.redeemIos;
+    document.getElementById("gcGetApp").href =
+      data.platform === "android" ? CFG.googlePlay : CFG.appStore;
+
+    var mail = document.getElementById("gcMail");
+    mail.textContent = data.emailSent ? T.result.mailOk : T.result.mailFail;
+    mail.className = "gc-mail " + (data.emailSent ? "ok" : "bad");
+
+    box.scrollIntoView({ behavior: reduced ? "auto" : "smooth", block: "start" });
+
+    var copy = document.getElementById("gcCopy");
+    copy.addEventListener("click", function () {
+      var done = function () {
+        copy.textContent = T.result.copied;
+        copy.classList.add("done");
+        setTimeout(function () { copy.textContent = T.result.copy; copy.classList.remove("done"); }, 2200);
+      };
+      if (navigator.clipboard) navigator.clipboard.writeText(data.code).then(done, fallback);
+      else fallback();
+      function fallback() {
+        var ta = document.createElement("textarea");
+        ta.value = data.code;
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand("copy"); done(); } catch (err) { /* elle kopyalasın */ }
+        document.body.removeChild(ta);
+      }
+    });
+  }
+})();
+</script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=gcTurnstileReady&render=explicit" async defer></script>
+</body>
+</html>

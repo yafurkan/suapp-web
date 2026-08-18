@@ -33,7 +33,10 @@ TODAY = datetime.date.today().isoformat()
 
 # noindex veya indekslenmemesi gereken sayfalar — sitemap'e girmez
 EXCLUDE_PARTS = ("/404", "/admin.html", "/app/", "/makale.html",
-                 "/yandex_", "og-image-template.html")
+                 "/yandex_", "og-image-template.html",
+                 # Hediye kod kampanyası: noindex, bağlantı elle paylaşılıyor.
+                 # Aramadan gelen rastgele trafik sınırlı kod havuzunu tüketmesin.
+                 "/hediye-kod", "/gift-code", "/x9f4c2e7b")
 
 RE_URL_BLOCK = re.compile(r"[ \t]*<url>(.*?)</url>\s*\n?", re.DOTALL)
 

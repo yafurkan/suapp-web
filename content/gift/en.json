@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "title": "Gift Code — 1 Month of Suu Premium, Free",
+    "desc": "Claim your gift code and get one month of Suu Premium free. Water, AI photo calories and exercise in one app. iPhone and Android.",
+    "ogTitle": "One month of Suu Premium — your gift code",
+    "ogDesc": "Enter your email and your code appears instantly. Water, nutrition and exercise in one app."
+  },
+  "splash": {
+    "tagline": "Water · Nutrition · Exercise",
+    "skip": "Skip"
+  },
+  "hero": {
+    "badge": "Limited batch · 1 month free",
+    "titleTop": "A gift code",
+    "titleMain": "just for you",
+    "subtitle": "Water, nutrition and exercise in one app. One month of Suu Premium is on us — enter your email and the code is on screen instantly.",
+    "pills": [
+      "Water tracking",
+      "Calories from a photo",
+      "Exercise & steps"
+    ],
+    "cta": "Get my code",
+    "scroll": "Scroll down"
+  },
+  "stock": {
+    "remaining": "codes left",
+    "of": "/",
+    "loading": "…",
+    "out": "sold out",
+    "ios": "iPhone",
+    "android": "Android"
+  },
+  "form": {
+    "heading": "Two steps to your code",
+    "platformQ": "1. Which phone do you use?",
+    "emailQ": "2. Your email address",
+    "emailPh": "you@example.com",
+    "emailHint": "The code appears on screen, and a copy goes to this address.",
+    "consent": "I'd like to hear about new Suu features and offers.",
+    "consentHint": "Optional — you get the code either way. Unsubscribe anytime.",
+    "submit": "Give me my code",
+    "sending": "Reserving your code…",
+    "privacy": "Your email is used only to send the code. Your IP is never stored in plain text — only a hashed digest, purely to prevent abuse.",
+    "privacyLink": "Privacy Policy"
+  },
+  "result": {
+    "title": "Your code is ready 🎉",
+    "sub": "One month of Suu Premium is yours.",
+    "copy": "Copy code",
+    "copied": "Copied",
+    "redeemIos": "Redeem on the App Store",
+    "redeemAndroid": "Redeem on Google Play",
+    "mailOk": "We also sent a copy to your inbox.",
+    "mailFail": "Email delivery failed — copy the code now, don't close this screen.",
+    "steps": [
+      "Tap the button on your phone (or copy the code).",
+      "The store opens with the code filled in; confirm with your account.",
+      "Open Suu — Premium is active."
+    ],
+    "download": "Get the app first"
+  },
+  "errors": {
+    "already_claimed_email": "This email already claimed a code. If you can't find it, we've re-sent it to your inbox.",
+    "already_claimed_email_resent": "This email already had a code — we've re-sent it to your inbox.",
+    "already_claimed_ip": "A code was already claimed from this connection. One code per person.",
+    "exhausted": "Codes for this platform are gone. We'll announce the next batch.",
+    "invalid_email": "That email address doesn't look valid.",
+    "disposable_email": "Disposable email addresses aren't accepted. Please use your real one.",
+    "captcha_failed": "Verification failed. Refresh the page and try again.",
+    "rate_limited": "Too many attempts. Please try again in an hour.",
+    "platform_required": "Pick your phone first.",
+    "bad_origin": "Request could not be verified. Please refresh.",
+    "server_error": "Something went wrong. Please try again shortly.",
+    "network": "Couldn't reach the server. Check your connection and retry.",
+    "consent_required": "Enter your email address to continue."
+  },
+  "faq": [
+    {
+      "q": "How long does the code last?",
+      "a": "Full Suu Premium for one month. Nothing is charged automatically when it ends."
+    },
+    {
+      "q": "What's in Premium?",
+      "a": "Unlimited AI analysis, food recognition and calories from a photo, advanced macro stats, adaptive reminders and an ad-free experience."
+    },
+    {
+      "q": "Why only one code?",
+      "a": "The batch is limited. To reach as many people as possible we give one code per person — the same email and the same connection can't claim twice."
+    },
+    {
+      "q": "The code didn't arrive — what now?",
+      "a": "Check your spam folder first. Submit the form again with the same address and we'll re-send it."
+    },
+    {
+      "q": "Does it work on Android?",
+      "a": "Yes. App Store codes for iPhone, Google Play codes for Android — just pick your phone in the form."
+    }
+  ],
+  "footerNote": "Codes are single-use and limited to available stock."
+}

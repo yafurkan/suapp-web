@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "title": "Hediye Kod — 1 Ay Suu Premium Ücretsiz",
+    "desc": "Sana özel hediye kodunu al, 1 ay Suu Premium'u ücretsiz kullan. Su takibi, fotoğraftan kalori ve egzersiz tek uygulamada. iPhone ve Android.",
+    "ogTitle": "1 ay Suu Premium — sana özel hediye kod",
+    "ogDesc": "E-postanı yaz, kodun anında ekranda. Su, beslenme ve egzersiz tek uygulamada."
+  },
+  "splash": {
+    "tagline": "Su · Beslenme · Egzersiz",
+    "skip": "Geç"
+  },
+  "hero": {
+    "badge": "Sınırlı sayıda · 1 ay ücretsiz",
+    "titleTop": "Sana özel",
+    "titleMain": "hediye kod",
+    "subtitle": "Su, beslenme ve egzersiz tek uygulamada. 1 ay Suu Premium bizden — e-postanı yaz, kodun anında ekranda.",
+    "pills": [
+      "Su takibi",
+      "Fotoğraftan kalori",
+      "Egzersiz & adım"
+    ],
+    "cta": "Kodumu al",
+    "scroll": "Aşağı kaydır"
+  },
+  "stock": {
+    "remaining": "kod kaldı",
+    "of": "/",
+    "loading": "…",
+    "out": "tükendi",
+    "ios": "iPhone",
+    "android": "Android"
+  },
+  "form": {
+    "heading": "İki adımda kodun hazır",
+    "platformQ": "1. Hangi telefonu kullanıyorsun?",
+    "emailQ": "2. E-posta adresin",
+    "emailPh": "ornek@eposta.com",
+    "emailHint": "Kodun ekranda çıkar; bir kopyası da bu adrese gelir.",
+    "consent": "Suu'dan yeni özellik ve kampanya duyuruları almak istiyorum.",
+    "consentHint": "İsteğe bağlı — işaretlemesen de kodun gelir. İstediğin an çıkabilirsin.",
+    "submit": "Hediye kodumu ver",
+    "sending": "Kodun ayrılıyor…",
+    "privacy": "E-postan yalnızca kodu göndermek için kullanılır. IP adresin düz metin olarak saklanmaz, yalnızca kötüye kullanımı engellemek için şifrelenmiş özeti tutulur.",
+    "privacyLink": "Gizlilik Politikası"
+  },
+  "result": {
+    "title": "Kodun hazır 🎉",
+    "sub": "1 ay Suu Premium senin.",
+    "copy": "Kodu kopyala",
+    "copied": "Kopyalandı",
+    "redeemIos": "App Store'da kullan",
+    "redeemAndroid": "Google Play'de kullan",
+    "mailOk": "Kodun bir kopyasını e-postana da gönderdik.",
+    "mailFail": "E-posta gönderilemedi — kodu şimdi kopyala, bu ekranı kapatma.",
+    "steps": [
+      "Butona telefonundan dokun (ya da kodu kopyala).",
+      "Mağaza açılır, kod otomatik gelir; hesabınla onayla.",
+      "Suu'yu aç — Premium aktif."
+    ],
+    "download": "Önce uygulamayı indir"
+  },
+  "errors": {
+    "already_claimed_email": "Bu e-posta zaten bir kod almış. Kodu bulamıyorsan posta kutuna tekrar gönderdik.",
+    "already_claimed_email_resent": "Bu e-posta zaten kod almıştı — kodu posta kutuna yeniden gönderdik.",
+    "already_claimed_ip": "Bu bağlantıdan daha önce kod alınmış. Kişi başına tek kod veriyoruz.",
+    "exhausted": "Bu platform için kodlar tükendi. Yeni parti gelince duyuracağız.",
+    "invalid_email": "E-posta adresi geçerli görünmüyor.",
+    "disposable_email": "Geçici e-posta adresleri kabul edilmiyor. Gerçek adresini yaz.",
+    "captcha_failed": "Doğrulama geçilemedi. Sayfayı yenileyip tekrar dene.",
+    "rate_limited": "Çok fazla deneme yapıldı. Bir saat sonra tekrar dene.",
+    "platform_required": "Önce telefonunu seç.",
+    "bad_origin": "İstek doğrulanamadı. Sayfayı yenile.",
+    "server_error": "Bir şeyler ters gitti. Birazdan tekrar dene.",
+    "network": "Bağlantı kurulamadı. İnternetini kontrol edip tekrar dene.",
+    "consent_required": "Devam etmek için e-posta adresini yaz."
+  },
+  "faq": [
+    {
+      "q": "Kod ne kadar sürüyor?",
+      "a": "1 ay boyunca Suu Premium'un tamamı açık. Süre bitince otomatik ücret alınmaz."
+    },
+    {
+      "q": "Premium'da ne var?",
+      "a": "Sınırsız yapay zekâ analizi, fotoğraftan yemek tanıma ve kalori, gelişmiş makro istatistikleri, dinamik hatırlatmalar ve reklamsız kullanım."
+    },
+    {
+      "q": "Neden tek kod veriliyor?",
+      "a": "Kod sayısı sınırlı. Herkese ulaşabilmek için kişi başına tek kod veriyoruz; aynı e-posta ve aynı bağlantı ikinci kez kod alamaz."
+    },
+    {
+      "q": "Kod gelmedi, ne yapmalıyım?",
+      "a": "Önce spam klasörüne bak. Aynı adresle formu tekrar gönderirsen kodu yeniden yollarız."
+    },
+    {
+      "q": "Android'de de çalışıyor mu?",
+      "a": "Evet. iPhone için App Store kodu, Android için Google Play kodu veriyoruz — formda telefonunu seçmen yeterli."
+    }
+  ],
+  "footerNote": "Kodlar tek kullanımlıktır ve stoklarla sınırlıdır."
+}
