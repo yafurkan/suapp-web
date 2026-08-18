@@ -35,6 +35,10 @@ CREATE TABLE IF NOT EXISTS claims (
   country     TEXT,
   lang        TEXT,
   created_at  TEXT    NOT NULL,
+  -- Hangi sponsorluk sayfasından geldi (dahacommunity gibi). NULL = genel sayfa.
+  -- Kampanya başına performans ölçmenin tek yolu; sonradan eklenemez çünkü
+  -- geçmiş talepler hangi sayfadan geldiğini artık bilmez.
+  partner     TEXT,
   email_sent  INTEGER NOT NULL DEFAULT 0,
   resend_count INTEGER NOT NULL DEFAULT 0,
   -- Ticari elektronik ileti açık rızası (KVKK/İYS + GDPR).
@@ -52,6 +56,9 @@ CREATE UNIQUE INDEX IF NOT EXISTS ux_claims_ip    ON claims(ip_hash);
 
 -- Duyuru listesi sorgusu: WHERE marketing_consent = 1
 CREATE INDEX IF NOT EXISTS ix_claims_consent ON claims(marketing_consent);
+
+-- Sponsorluk kırılımı
+CREATE INDEX IF NOT EXISTS ix_claims_partner ON claims(partner);
 
 -- Kaba kuvvet / e-posta taraması için sayaç (kayan pencere).
 CREATE TABLE IF NOT EXISTS throttle (

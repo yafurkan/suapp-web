@@ -1,0 +1,71 @@
+{
+  "_comment": "Sponsorluk sayfası. Yalnızca DEĞİŞEN metinler yazılır; gerisi content/gift/<lang>.json'dan gelir. Yeni sponsor = bunun bir kopyası.",
+  "slug": "dahacommunity",
+  "name": "DAHA Community",
+  "short": "DAHA",
+  "logo": "/assets/brand/daha-badge-512.png",
+  "langs": [
+    "tr"
+  ],
+  "theme": {
+    "from": "#01A5F7",
+    "mid": "#0B6FD0",
+    "to": "#111418"
+  },
+  "copy": {
+    "tr": {
+      "meta": {
+        "title": "DAHA Community × Suu — Üyelere Özel 1 Ay Premium",
+        "desc": "DAHA Community üyelerine özel: 1 ay Suu Premium ücretsiz. Su, beslenme ve koşu takibi tek uygulamada. E-postanı yaz, kodun anında ekranda.",
+        "ogTitle": "DAHA Community × Suu — sana özel 1 ay Premium",
+        "ogDesc": "Koştuğun her kilometrenin hakkını ver. Üyelere özel 1 aylık Suu Premium kodu."
+      },
+      "splash": {
+        "tagline": "Koş · Beslen · Takip et",
+        "skip": "Geç"
+      },
+      "hero": {
+        "together": "Beraber güçlüyüz",
+        "badge": "DAHA Community'ye özel · 1 ay ücretsiz",
+        "titleTop": "DAHA Community üyelerine özel",
+        "titleMain": "1 ay Suu Premium",
+        "greeting": "Sevgili DAHA Community üyesi — attığın her adımın ve koştuğun her kilometrenin hakkını verebilmen için, Suu Premium bir ay boyunca bizden.",
+        "subtitle": "Su, beslenme ve koşu tek uygulamada. Aşağıdan e-postanı bırak, kodun anında ekranda çıksın ve hesabına tanımla.",
+        "pills": [
+          "Su takibi",
+          "Fotoğraftan kalori",
+          "Koşu & kalori"
+        ],
+        "cta": "Kodumu al",
+        "scroll": "Aşağı kaydır"
+      },
+      "form": {
+        "heading": "İki adımda kodun hazır",
+        "emailHint": "Kodun ekranda çıkar; bir kopyası da bu adrese gelir. DAHA Community üyeliğinle ilgisi yok, sadece kodu iletmek için."
+      },
+      "faq": [
+        {
+          "q": "Bu iş birliği tam olarak ne?",
+          "a": "DAHA Community üyelerinin antrenman düzenini tek yerden takip edebilmesi için Suu ile yapılan bir iş birliği. Üyelere 1 ay Suu Premium ücretsiz veriliyor; DAHA'ya üyeliğinle ilgili hiçbir bilgi paylaşılmıyor, tek istediğimiz kodu göndereceğimiz e-posta adresi."
+        },
+        {
+          "q": "Kod ne kadar sürüyor?",
+          "a": "1 ay boyunca Suu Premium'un tamamı açık. Süre dolduğunda abonelik normal fiyatından otomatik yenilenir — ücret ödemek istemiyorsan süre bitmeden App Store (Android'de Google Play) ayarlarından aboneliği iptal et; kalan günleri yine sonuna kadar kullanırsın."
+        },
+        {
+          "q": "Koşucuya ne faydası var?",
+          "a": "Koşu ve antrenmanların Apple Health / Health Connect üzerinden otomatik gelir, yaktığın kaloriye göre su hedefin gün içinde kendini günceller. Fotoğrafını çektiğin öğünün kalorisini ve makrolarını yapay zekâ çıkarır — antrenman sonrası ne yediğini kaydetmek saniyeler sürer."
+        },
+        {
+          "q": "Neden kişi başına tek kod?",
+          "a": "Kod sayısı sınırlı; DAHA Community'nin tamamına yetmesi için kişi başına tek kod veriyoruz. Aynı e-posta ve aynı bağlantı ikinci kez kod alamaz."
+        },
+        {
+          "q": "Kod gelmedi, ne yapmalıyım?",
+          "a": "Önce spam klasörüne bak. Aynı adresle formu tekrar gönderirsen kodu yeniden yollarız."
+        }
+      ],
+      "footerNote": "DAHA Community × Suu iş birliği. Kodlar tek kullanımlıktır ve stoklarla sınırlıdır."
+    }
+  }
+}
