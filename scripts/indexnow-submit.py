@@ -46,23 +46,36 @@ def find_key() -> tuple[str, str]:
     raise SystemExit("HATA: IndexNow anahtar dosyası bulunamadı (kökte <32-hex>.txt).")
 
 
-def changed_urls() -> list[str]:
-    """Son commit'ten bu yana değişen/eklenen HTML dosyaları."""
+def _git(*args: str) -> str:
     try:
-        out = subprocess.run(
-            ["git", "status", "--porcelain", "--", "*.html"],
-            cwd=ROOT, capture_output=True, text=True, check=True,
-        ).stdout
+        return subprocess.run(["git", *args], cwd=ROOT, capture_output=True,
+                              text=True, check=True).stdout
     except (subprocess.CalledProcessError, FileNotFoundError):
         raise SystemExit("HATA: git çalıştırılamadı.")
 
-    urls = []
-    for line in out.splitlines():
-        status, _, path = line.partition(" ")
-        path = line[3:].strip().strip('"')
-        if not path.endswith(".html") or line.startswith(" D") or line.startswith("D "):
+
+def changed_urls() -> list[str]:
+    """Değişen/eklenen HTML dosyaları.
+
+    Çalışma ağacına bakar; ağaç temizse SON COMMIT'in diff'ine düşer.
+    Bu düşüş şart: yayın akışı (README) bu script'i push'tan SONRA
+    çağırıyor, o noktada değişiklikler artık commit'lenmiş oluyor ve
+    yalnızca `git status`'a bakan bir sürüm hep "gönderilecek URL yok"
+    diyordu — yani yeni sayfalar hiç bildirilmiyordu.
+    """
+    paths = []
+    for line in _git("status", "--porcelain", "--", "*.html").splitlines():
+        if line.startswith(" D") or line.startswith("D "):
             continue
-        if any(x in path for x in EXCLUDE):
+        paths.append(line[3:].strip().strip('"'))
+
+    if not paths:
+        paths = _git("diff", "--name-only", "--diff-filter=d",
+                     "HEAD~1", "HEAD", "--", "*.html").split()
+
+    urls = []
+    for path in paths:
+        if not path.endswith(".html") or any(x in path for x in EXCLUDE):
             continue
         urls.append(to_url(path))
     return sorted(set(urls))
