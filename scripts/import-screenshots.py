@@ -42,6 +42,8 @@ import sys
 import unicodedata
 from pathlib import Path
 
+from _langs import order
+
 try:
     from PIL import Image
 except ImportError:
@@ -51,7 +53,8 @@ ROOT = Path(__file__).resolve().parents[1]
 SHOTS = ROOT / "assets" / "screenshots"
 INBOX = SHOTS / "_inbox"
 
-LANGS = {"tr", "en", "ar", "ru", "de", "it", "hi"}
+# Dil tablosu: content/languages.json (bkz. scripts/_langs.py)
+LANGS = set(order())
 PLATFORMS = {"ios", "android"}
 SOURCE_EXT = {".png", ".jpg", ".jpeg", ".webp", ".heic"}
 

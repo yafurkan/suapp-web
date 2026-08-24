@@ -14,10 +14,13 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
+from _langs import order
+
 ROOT = Path(__file__).resolve().parents[1]
 SHOTS = ROOT / "assets" / "screenshots"
 
-LANGS = ["tr", "en", "ar", "ru", "de", "it", "hi"]
+# Dil tablosu: content/languages.json (bkz. scripts/_langs.py)
+LANGS = order()
 PLATFORMS = ["ios", "android"]
 
 REQUIRED = [

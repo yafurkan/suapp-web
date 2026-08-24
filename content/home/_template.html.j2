@@ -171,7 +171,7 @@
         </div>
         <div class="hero__media">
             <div class="phone phone--lg">
-                <img src="/assets/screenshots/ios/{{ lang }}/ana-ekran.webp"
+                <img src="{{ shot('ios', lang, 'ana-ekran') }}"
                      data-screen="ana-ekran" data-platform="ios"
                      width="585" height="1266" fetchpriority="high"
                      alt="{{ hero.shot_alt }}">
@@ -355,7 +355,7 @@
                 <div class="shots__strip">
 {%- for s in shots['items'] %}
                     <figure class="shots__item">
-                        <div class="phone"><img src="/assets/screenshots/{{ platform }}/{{ lang }}/{{ s.slug }}.webp" data-screen="{{ s.slug }}" data-platform="{{ platform }}" loading="lazy" width="585" height="1266" alt="{{ platform | replace('ios', 'iOS') | replace('android', 'Android') }} — {{ s.caption }}"></div>
+                        <div class="phone"><img src="{{ shot(platform, lang, s.slug) }}" data-screen="{{ s.slug }}" data-platform="{{ platform }}" loading="lazy" width="585" height="1266" alt="{{ platform | replace('ios', 'iOS') | replace('android', 'Android') }} — {{ s.caption }}"></div>
                         <figcaption>{{ s.caption }}</figcaption>
                     </figure>
 {%- endfor %}
