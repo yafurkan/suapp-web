@@ -35,6 +35,8 @@ import re
 import sys
 from pathlib import Path
 
+from _langs import locales, ui_strings
+
 try:
     from jinja2 import Environment, FileSystemLoader, StrictUndefined
 except ImportError:
@@ -47,52 +49,9 @@ REGISTRY = ROOT / "content" / "page-registry.json"
 BASE = "https://suuapp.com"
 DEFAULT = "tr"
 
-LOCALES = {"tr": ("tr_TR", "ltr"), "en": ("en_US", "ltr"), "ar": ("ar_SA", "rtl"),
-           "de": ("de_DE", "ltr"), "it": ("it_IT", "ltr"), "ru": ("ru_RU", "ltr"),
-           "hi": ("hi_IN", "ltr")}
-
-# Sayfa iskeleti metinleri — konudan bağımsız
-UI = {
-    "tr": {"skip": "İçeriğe geç", "blog": "Blog", "compare": "Karşılaştırma", "pricing": "Fiyatlandırma",
-           "cta": "Ücretsiz İndir", "short_answer": "Kısa cevap:", "faq_head": "Sık sorulan sorular",
-           "references": "Kaynaklar", "related": "İlgili yazılar", "back_to_blog": "Bloga dön",
-           "published_label": "Yayın:", "read_time": "dakika okuma",
-           "home_href": "/", "blog_href": "/blog.html",
-           "hub_href": "/karsilastirmalar.html", "hub_label": "Tüm karşılaştırmalar"},
-    "en": {"skip": "Skip to content", "blog": "Blog", "compare": "Comparison", "pricing": "Pricing",
-           "cta": "Download Free", "short_answer": "Short answer:", "faq_head": "Frequently asked questions",
-           "references": "References", "related": "Related articles", "back_to_blog": "Back to blog",
-           "published_label": "Published:", "read_time": "min read",
-           "home_href": "/hosgeldiniz-en.html", "blog_href": "/blog-en.html",
-           "hub_href": "/comparisons.html", "hub_label": "All comparisons"},
-    "ar": {"skip": "تخطَّ إلى المحتوى", "blog": "المدونة", "compare": "المقارنة", "pricing": "الأسعار",
-           "cta": "تنزيل مجاني", "short_answer": "الإجابة المختصرة:", "faq_head": "الأسئلة الشائعة",
-           "references": "المصادر", "related": "مقالات ذات صلة", "back_to_blog": "العودة إلى المدونة",
-           "published_label": "النشر:", "read_time": "دقيقة قراءة",
-           "home_href": "/hosgeldiniz-ar.html", "blog_href": "/blog-ar.html",
-           "hub_href": "/muqaranat.html", "hub_label": "كل المقارنات"},
-    "ru": {"skip": "Перейти к содержимому", "blog": "Блог", "compare": "Сравнение", "pricing": "Цены",
-           "cta": "Скачать бесплатно", "short_answer": "Короткий ответ:", "faq_head": "Частые вопросы",
-           "references": "Источники", "related": "Похожие статьи", "back_to_blog": "Назад в блог",
-           "published_label": "Опубликовано:", "read_time": "мин чтения",
-           "home_href": "/hosgeldiniz-ru.html", "blog_href": "/blog-ru.html",
-           "hub_href": "/sravneniya.html", "hub_label": "Все сравнения"},
-    "de": {"skip": "Zum Inhalt springen", "blog": "Blog", "compare": "Vergleich", "pricing": "Preise",
-           "cta": "Gratis laden", "short_answer": "Kurze Antwort:", "faq_head": "Häufige Fragen",
-           "references": "Quellen", "related": "Verwandte Artikel", "back_to_blog": "Zurück zum Blog",
-           "published_label": "Veröffentlicht:", "read_time": "Min. Lesezeit",
-           "home_href": "/hosgeldiniz-de.html", "blog_href": "/blog-en.html"},
-    "it": {"skip": "Vai al contenuto", "blog": "Blog", "compare": "Confronto", "pricing": "Prezzi",
-           "cta": "Scarica gratis", "short_answer": "Risposta breve:", "faq_head": "Domande frequenti",
-           "references": "Fonti", "related": "Articoli correlati", "back_to_blog": "Torna al blog",
-           "published_label": "Pubblicato:", "read_time": "min di lettura",
-           "home_href": "/hosgeldiniz-it.html", "blog_href": "/blog-en.html"},
-    "hi": {"skip": "मुख्य सामग्री पर जाएँ", "blog": "ब्लॉग", "compare": "तुलना", "pricing": "क़ीमत",
-           "cta": "मुफ़्त डाउनलोड", "short_answer": "संक्षिप्त उत्तर:", "faq_head": "अक्सर पूछे जाने वाले सवाल",
-           "references": "स्रोत", "related": "संबंधित लेख", "back_to_blog": "ब्लॉग पर वापस",
-           "published_label": "प्रकाशित:", "read_time": "मिनट पढ़ें",
-           "home_href": "/hosgeldiniz-hi.html", "blog_href": "/blog-en.html"},
-}
+# Dil tablosu: content/languages.json (bkz. scripts/_langs.py)
+LOCALES = locales()
+UI = ui_strings()
 
 
 def rel_path(lang: str, slug: str) -> str:
@@ -237,6 +196,11 @@ def main() -> int:
         only = sys.argv[sys.argv.index("--topic") + 1]
 
     facts = json.loads(FACTS.read_text(encoding="utf-8"))
+    # x-default hedefi kayıt defterinden gelir. Şablon bunu eskiden kümenin İLK
+    # diline (tr) sabitliyordu, yani her --apply çalıştırması
+    # inject-hreflang.py'nin yazdığı doğru x-default'u geri alıyordu — README'nin
+    # "x-default'u sabit kodlamayın" kuralının tam olarak ihlali.
+    xdefault_lang = json.loads(REGISTRY.read_text(encoding="utf-8")).get("_xdefault", DEFAULT)
     env = Environment(loader=FileSystemLoader(str(COMPARE)), undefined=StrictUndefined,
                       autoescape=True)
     template = env.get_template("_template.html.j2")
@@ -270,6 +234,8 @@ def main() -> int:
                 "published_display": data["published"],
                 "read_minutes": 6,
                 "hreflang": [{"code": l, "href": abs_url(l, slugs[l])} for l in langs],
+                "xdefault_href": abs_url(xdefault_lang, slugs[xdefault_lang])
+                if xdefault_lang in slugs else abs_url(langs[0], slugs[langs[0]]),
                 "jsonld": build_jsonld(lang, topic, data, page, facts, url),
             }
             ctx.update(page)          # sayfa değerleri varsayılanları ezer

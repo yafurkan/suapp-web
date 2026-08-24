@@ -21,26 +21,16 @@ import sys
 from datetime import datetime, timezone
 from email.utils import format_datetime
 from pathlib import Path
+
+from _langs import feeds
 from xml.sax.saxutils import escape
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = "https://suuapp.com"
 MAX_ITEMS = 40
 
-FEEDS = {
-    "tr": {"dir": "blog", "out": "feed.xml", "index": "blog.html",
-           "title": "Suu Blog", "lang": "tr-TR",
-           "desc": "Su takibi, kalori sayma ve egzersiz üzerine yazılar."},
-    "en": {"dir": "blog/en", "out": "feed-en.xml", "index": "blog-en.html",
-           "title": "Suu Blog (English)", "lang": "en-US",
-           "desc": "Articles on water tracking, calorie counting and exercise."},
-    "ar": {"dir": "blog/ar", "out": "feed-ar.xml", "index": "blog-ar.html",
-           "title": "مدونة Suu", "lang": "ar",
-           "desc": "مقالات عن تتبع الماء وحساب السعرات والتمارين."},
-    "ru": {"dir": "blog/ru", "out": "feed-ru.xml", "index": "blog-ru.html",
-           "title": "Блог Suu", "lang": "ru-RU",
-           "desc": "Статьи о воде, калориях и тренировках."},
-}
+# Dil tablosu: content/languages.json (bkz. scripts/_langs.py)
+FEEDS = feeds()
 
 
 def meta(page: str, *keys: str) -> str:

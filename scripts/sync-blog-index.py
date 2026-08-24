@@ -24,31 +24,16 @@ import sys
 from datetime import date
 from pathlib import Path
 
+from _langs import blog_langs, months, read_more
+
 ROOT = Path(__file__).resolve().parents[1]
 
-# dil → (indeks dosyası, yazı klasörü, bağlantı öneki)
-LANGS = {
-    "tr": ("blog.html", "blog", "blog/"),
-    "en": ("blog-en.html", "blog/en", "blog/en/"),
-    "ar": ("blog-ar.html", "blog/ar", "blog/ar/"),
-    "ru": ("blog-ru.html", "blog/ru", "blog/ru/"),
-}
-
-READ_MORE = {
-    "tr": "Devamını Oku", "en": "Read article",
-    "ar": "اقرأ المقال", "ru": "Читать статью",
-}
-
-MONTHS = {
-    "tr": ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz",
-           "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"],
-    "en": ["January", "February", "March", "April", "May", "June", "July",
-           "August", "September", "October", "November", "December"],
-    "ar": ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو",
-           "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"],
-    "ru": ["января", "февраля", "марта", "апреля", "мая", "июня", "июля",
-           "августа", "сентября", "октября", "ноября", "декабря"],
-}
+# Dil tablosu: content/languages.json (bkz. scripts/_langs.py)
+# blog_langs() yalnızca indeks dosyası VE yazı klasörü diskte olan dilleri
+# döndürür — yeni bir dilin blogunu açmak için burayı düzenlemek gerekmez.
+LANGS = blog_langs()
+READ_MORE = read_more()
+MONTHS = months()
 
 # Konu anahtarı → (emoji, gradyan, etiket) — üç sütun renk sistemine uyar
 TOPICS = [

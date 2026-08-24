@@ -27,16 +27,13 @@ import re
 import sys
 from pathlib import Path
 
+from _langs import blog_langs
+
 ROOT = Path(__file__).resolve().parents[1]
 BASE = "https://suuapp.com"
 
-# dil → (indeks dosyası, yazı klasörü, URL öneki, inLanguage)
-LANGS = {
-    "tr": ("blog.html", "blog", "blog/", "tr-TR"),
-    "en": ("blog-en.html", "blog/en", "blog/en/", "en-US"),
-    "ar": ("blog-ar.html", "blog/ar", "blog/ar/", "ar"),
-    "ru": ("blog-ru.html", "blog/ru", "blog/ru/", "ru-RU"),
-}
+# Dil tablosu: content/languages.json (bkz. scripts/_langs.py)
+LANGS = blog_langs(with_bcp47=True)
 
 RE_LD = re.compile(r'<script type="application/ld\+json">\s*(.*?)\s*</script>', re.S)
 RE_TITLE = re.compile(r"<title>(.*?)</title>", re.S)
