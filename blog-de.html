@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suu Blog — Kalorienzählen, GPS-Training und Trinken</title>
+    <meta name="description" content="Fundierte Ratgeber zu Kalorien und Makros, KI-Fotoerfassung von Mahlzeiten, GPS-Training und Flüssigkeitshaushalt — plus ehrliche Vergleiche mit Yazio und MyFitnessPal.">
+    <meta name="keywords" content="kalorienzähler app, kalorien tracken, makros berechnen, wasser trinken app, trinkerinnerung, gps lauf tracker, yazio alternative, myfitnesspal alternative">
+
+    <!-- Smart App Banner -->
+    <meta name="apple-itunes-app" content="app-id=6757619920">
+
+    <link rel="canonical" href="https://suuapp.com/blog-de.html">
+    <!-- Hreflang cluster (auto-injected) -->
+    <link rel="alternate" hreflang="tr" href="https://suuapp.com/blog.html">
+    <link rel="alternate" hreflang="en" href="https://suuapp.com/blog-en.html">
+    <link rel="alternate" hreflang="ar" href="https://suuapp.com/blog-ar.html">
+    <link rel="alternate" hreflang="ru" href="https://suuapp.com/blog-ru.html">
+    <link rel="alternate" hreflang="de" href="https://suuapp.com/blog-de.html">
+    <link rel="alternate" hreflang="it" href="https://suuapp.com/blog-it.html">
+    <link rel="alternate" hreflang="x-default" href="https://suuapp.com/blog-en.html">
+
+
+    <link rel="alternate" type="text/plain" href="/llms-de.txt" title="Suu — compact reference for AI assistants">
+    <link rel="alternate" type="text/plain" href="/llms-full-de.txt" title="Suu — full reference corpus for AI assistants">
+
+    <link rel="alternate" type="application/rss+xml" title="Suu Blog (Deutsch)" href="/feed-de.xml">
+
+    <meta property="og:title" content="Suu Blog — Kalorienzählen, GPS-Training und Trinken">
+    <meta property="og:description" content="Kalorien und Makros, KI-Fotoerfassung, GPS-Training und Trinken — plus ehrliche App-Vergleiche.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://suuapp.com/blog-de.html">
+    <meta property="og:image" content="https://suuapp.com/assets/og-image.png">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:site_name" content="Suu">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SuuTakip">
+    <meta name="twitter:title" content="Suu Blog — Kalorienzählen, GPS-Training und Trinken">
+    <meta name="twitter:description" content="Kalorien und Makros, KI-Fotoerfassung, GPS-Training und Trinken — plus ehrliche App-Vergleiche.">
+    <meta name="twitter:image" content="https://suuapp.com/assets/og-image.png">
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data:; img-src 'self' https: data:; font-src 'self' https: data:;">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; color: #333; background: #f8f9fa; }
+        .blog-nav { background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+        .nav-content { max-width: 1100px; margin: 0 auto; padding: 0 24px; height: 64px; display: flex; align-items: center; justify-content: space-between; }
+        .blog-logo { display: flex; align-items: center; gap: 8px; font-size: 1.4rem; font-weight: 700; color: #4A90D9; text-decoration: none; }
+        .nav-right { display: flex; align-items: center; gap: 16px; }
+        .back-btn { background: #4A90D9; color: white; padding: 8px 18px; border-radius: 8px; text-decoration: none; font-weight: 500; font-size: 14px; transition: all 0.2s; }
+        .back-btn:hover { background: #3a7bc8; }
+        .hamburger { display: none; }
+
+        .blog-header { background: linear-gradient(135deg, #4A90D9 0%, #29B6F6 100%); color: white; padding: 60px 20px 40px; text-align: center; }
+        .blog-header h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 800; margin-bottom: 10px; }
+        .blog-header p { font-size: 1rem; opacity: 0.9; }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 50px 24px 80px; }
+        .articles-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 28px; }
+        .article-card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: transform 0.2s, box-shadow 0.2s; }
+        .article-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.12); }
+        .article-thumb { height: 160px; display: flex; align-items: center; justify-content: center; font-size: 3rem; }
+        .article-body { padding: 20px 22px; }
+        .article-tag { font-size: 11px; font-weight: 700; color: #4A90D9; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
+        .article-body h3 { font-size: 1rem; font-weight: 700; color: #1a1a2e; margin-bottom: 10px; line-height: 1.5; }
+        .article-body p { font-size: 0.875rem; color: #666; margin-bottom: 16px; line-height: 1.6; }
+        .read-more { display: inline-flex; align-items: center; gap: 6px; color: #4A90D9; font-size: 13px; font-weight: 600; text-decoration: none; }
+        .read-more:hover { text-decoration: underline; }
+
+        .cta-banner { background: linear-gradient(135deg, #4A90D9, #29B6F6); color: white; border-radius: 20px; padding: 40px; text-align: center; margin-top: 60px; }
+        .cta-banner h2 { font-size: 1.6rem; font-weight: 800; margin-bottom: 10px; }
+        .cta-banner p { opacity: 0.9; margin-bottom: 24px; }
+        .cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+        .cta-btn { background: white; color: #4A90D9; padding: 11px 24px; border-radius: 50px; font-weight: 700; text-decoration: none; font-size: 14px; display: inline-flex; align-items: center; gap: 8px; transition: transform 0.2s; }
+        .cta-btn:hover { transform: translateY(-2px); }
+
+        @media (max-width: 600px) { .articles-grid { grid-template-columns: 1fr; } }
+    </style>
+
+    <!-- Schema.org: Blog + BreadcrumbList (GEO / AI search optimization) -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "@id": "https://suuapp.com/blog-de.html#blog",
+  "url": "https://suuapp.com/blog-de.html",
+  "name": "Suu Blog — Kalorienzählen, GPS-Training und Trinken",
+  "description": "Fundierte Ratgeber zu Kalorien und Makros, KI-Fotoerfassung von Mahlzeiten, GPS-Training und Flüssigkeitshaushalt — plus ehrliche Vergleiche mit Yazio und MyFitnessPal.",
+  "inLanguage": "de-DE",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://suuapp.com/#organization",
+    "name": "Suu",
+    "url": "https://suuapp.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://suuapp.com/assets/og-image.png"
+    }
+  },
+  "author": {
+    "@type": "Person",
+    "@id": "https://suuapp.com/#furkan",
+    "name": "Furkan Mert Fındıklı",
+    "url": "https://www.linkedin.com/in/furkanfindikli/"
+  },
+  "blogPost": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Wasser, Kalorien und Sport in einer App (2026) — lohnt sich das?",
+      "url": "https://suuapp.com/blog/de/wasser-kalorien-sport-eine-app.html",
+      "datePublished": "2026-08-24",
+      "dateModified": "2026-08-24",
+      "inLanguage": "de-DE",
+      "image": "https://suuapp.com/assets/og-image.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Beste Sport-Tracking-App 2026 — Strava, Komoot, adidas Running, Suu",
+      "url": "https://suuapp.com/blog/de/beste-workout-tracker-app.html",
+      "datePublished": "2026-08-13",
+      "dateModified": "2026-08-24",
+      "inLanguage": "de-DE",
+      "image": "https://suuapp.com/assets/og-image.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Bester Kalorienzähler 2026 — Yazio, FDDB, MyFitnessPal, Cronometer, Suu",
+      "url": "https://suuapp.com/blog/de/bester-kalorienzaehler-app.html",
+      "datePublished": "2026-07-07",
+      "dateModified": "2026-08-24",
+      "inLanguage": "de-DE",
+      "image": "https://suuapp.com/assets/og-image.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Beste Wasser-App 2026 — Trinkerinnerung im Vergleich (WaterMinder, Hydro Coach, Suu)",
+      "url": "https://suuapp.com/blog/de/beste-wasser-tracking-app.html",
+      "datePublished": "2026-03-15",
+      "dateModified": "2026-08-24",
+      "inLanguage": "de-DE",
+      "image": "https://suuapp.com/assets/og-image.png"
+    }
+  ]
+}
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://suuapp.com/hosgeldiniz-en.html"},
+        {"@type":"ListItem","position":2,"name":"Blog","item":"https://suuapp.com/blog-de.html"}
+      ]
+    }
+    </script>
+    <script src="/assets/js/analytics.js" defer></script>
+</head>
+<body>
+
+<nav class="blog-nav">
+    <div class="nav-content">
+        <a href="hosgeldiniz-de.html" class="blog-logo"><i class="fas fa-tint"></i> Suu</a>
+        <div class="nav-right">
+            <!-- lang-switcher.js injects buttons here -->
+            <a href="vergleiche.html" class="back-btn"><i class="fas fa-scale-balanced"></i> Vergleiche</a>
+            <a href="hosgeldiniz-de.html" class="back-btn"><i class="fas fa-arrow-left"></i> Startseite</a>
+            <div class="hamburger"></div>
+        </div>
+    </div>
+</nav>
+
+<div class="blog-header">
+    <h1>💧 Suu Blog</h1>
+    <p>Fundierte Artikel zu Kalorien und Makros, KI-Fotoerfassung von Mahlzeiten, GPS-Training und Flüssigkeitshaushalt — plus ehrliche App-Vergleiche.</p>
+</div>
+
+<div class="container">
+    <div class="articles-grid">
+        <article class="article-card">
+            <div class="article-thumb" style="background:linear-gradient(135deg,#1E88E5,#42A5F5);color:white;">💧</div>
+            <div class="article-body">
+                <div class="article-tag">Ratgeber</div>
+                <h3>Die beste Wasser-Tracking-App 2026</h3>
+                <p>Welche Trinkerinnerung bringt dich wirklich zum Trinken? Suu, WaterMinder, Waterllama, Hydro Coach und Plant Nanny im Vergleich — Erinnerungsqualität,…</p>
+                <a href="blog/de/beste-wasser-tracking-app.html" class="read-more">Artikel lesen <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+
+        <article class="article-card">
+            <div class="article-thumb" style="background:linear-gradient(135deg,#2E9E4F,#66BB6A);color:white;">🏃</div>
+            <div class="article-body">
+                <div class="article-tag">Sport</div>
+                <h3>Die beste Workout-Tracking-App 2026</h3>
+                <p>Workout-Apps verglichen an dem, was sie mit deinen Daten machen: Strava, Komoot, adidas Running, Nike Run Club und Suu. Welche zählt Kalorien, welche…</p>
+                <a href="blog/de/beste-workout-tracker-app.html" class="read-more">Artikel lesen <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+
+        <article class="article-card">
+            <div class="article-thumb" style="background:linear-gradient(135deg,#F57C00,#FFB74D);color:white;">🔥</div>
+            <div class="article-body">
+                <div class="article-tag">Kalorien</div>
+                <h3>Der beste Kalorienzähler 2026</h3>
+                <p>Kalorien-Apps 2026 verglichen nach Eingabetempo, Datenbank, Genauigkeit und Gratis-Umfang: Yazio, FDDB, MyFitnessPal, Lifesum, Cronometer und Suu. Welche zu wem…</p>
+                <a href="blog/de/bester-kalorienzaehler-app.html" class="read-more">Artikel lesen <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+
+        <article class="article-card">
+            <div class="article-thumb" style="background:linear-gradient(135deg,#2E9E4F,#66BB6A);color:white;">🏃</div>
+            <div class="article-body">
+                <div class="article-tag">Sport</div>
+                <h3>Wasser, Kalorien und Sport in einer App</h3>
+                <p>Drei Apps oder eine? Was es konkret ändert, wenn Trinkmenge, Kalorien und Training miteinander rechnen — und wann drei spezialisierte Apps die bessere Wahl bleiben.</p>
+                <a href="blog/de/wasser-kalorien-sport-eine-app.html" class="read-more">Artikel lesen <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+
+    </div>
+
+    <div class="cta-banner">
+        <h2>Fang heute an zu tracken</h2>
+        <p>Suu macht aus diesen Tipps tägliche Gewohnheiten — persönliche Ziele, smarte Erinnerungen und Freundesligen. Kostenlos für iOS und Android.</p>
+        <div class="cta-btns">
+            <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" class="cta-btn" target="_blank" rel="noopener">
+                <i class="fab fa-apple"></i> App Store
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro" class="cta-btn" target="_blank" rel="noopener">
+                <i class="fab fa-google-play"></i> Google Play
+            </a>
+        </div>
+    </div>
+</div>
+
+<script src="lang-switcher.js?v=3" defer></script>
+<link rel="stylesheet" href="donation-widget.css?v=2">
+<script src="donation-widget.js?v=2" defer></script>
+
+<!-- Sticky Mobile Download Bar -->
+<div class="sticky-download-bar" id="stickyDownloadBar">
+    <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" class="sticky-btn sticky-btn-apple" target="_blank" rel="noopener">
+        <i class="fab fa-apple"></i> App Store
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro" class="sticky-btn sticky-btn-google" target="_blank" rel="noopener">
+        <i class="fab fa-google-play"></i> Google Play
+    </a>
+</div>
+</body>
+</html>

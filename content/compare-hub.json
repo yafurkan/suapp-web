@@ -197,6 +197,96 @@
           ]
         }
       ]
+    },
+    "de": {
+      "outfile": "vergleiche.html",
+      "badge": "📊 Vergleichszentrum",
+      "h1": "App-Vergleiche: Kalorien, Sport und Trinken",
+      "meta": {
+        "title": "Kalorien-, Sport- und Trink-App-Vergleiche (2026) | Suu",
+        "description": "Alle Vergleiche an einem Ort: Yazio, FDDB, MyFitnessPal, Cronometer, Strava, Komoot, WaterMinder und Suu — welche App zu wem passt.",
+        "keywords": "kalorien app vergleich, beste kalorienzähler app, sport tracking app vergleich, wasser app test, yazio alternative, myfitnesspal alternative, strava alternative",
+        "og_title": "Kalorien-, Sport- und Trink-App-Vergleiche (2026)",
+        "og_description": "Yazio, FDDB, MyFitnessPal, Cronometer, Strava, Komoot, WaterMinder und Suu — welche App zu wem passt."
+      },
+      "answer": "Bei der Wahl eines Kalorienzählers entscheiden drei Dinge: wie schnell das Eintragen einer Mahlzeit wirklich geht, ob die Gratis-Version echte Arbeit leistet, und ob Sport das Tagesziel verändert. Die Vergleiche unten prüfen genau diese drei Punkte App für App.",
+      "intro": [
+        "Die meisten App-Vergleiche zählen Funktionen auf. Wir stellen stattdessen eine einzige Frage: <strong>Was macht diese App mit deinen Daten?</strong> Ändert sich das Trinkziel, wenn du Kalorien einträgst? Wird der Tagesbedarf angepasst, wenn du einen Lauf aufzeichnest? Zählt dein Kaffee mit seinem echten Hydrationsbeitrag?",
+        "In jedem Vergleich schreiben wir ausdrücklich, wo die Konkurrenz besser ist — denn keine App ist für alle die beste. Und wir sagen dazu, in welcher Situation wir Suu empfehlen und in welcher etwas anderes."
+      ],
+      "disclosure": "Diese Seiten schreibt das Suu-Team. Wir benennen auch die Bereiche, in denen konkurrierende Apps stärker sind; ehrlich zu sagen, welche App zu wem passt, ist langfristig nützlicher.",
+      "groups": [
+        {
+          "title": "Kalorienzähler-Apps",
+          "blurb": "Foto- und Spracheingabe, Gratis-Umfang, Datenbanken und Makro-Tracking im Vergleich.",
+          "accent": "calories",
+          "pages": [
+            "blog/de/bester-kalorienzaehler-app.html"
+          ]
+        },
+        {
+          "title": "Sport und Kalorien zusammen",
+          "blurb": "Apps, bei denen das Training Kalorien- und Trinkziel wirklich verändert.",
+          "accent": "exercise",
+          "pages": [
+            "blog/de/beste-workout-tracker-app.html",
+            "blog/de/wasser-kalorien-sport-eine-app.html"
+          ]
+        },
+        {
+          "title": "Trinken und Flüssigkeitshaushalt",
+          "blurb": "Trinkerinnerungen und wie das tägliche Trinkziel berechnet wird.",
+          "accent": "water",
+          "pages": [
+            "blog/de/beste-wasser-tracking-app.html"
+          ]
+        }
+      ]
+    },
+    "it": {
+      "outfile": "confronti.html",
+      "badge": "📊 Centro confronti",
+      "h1": "Confronti tra app: calorie, allenamento e idratazione",
+      "meta": {
+        "title": "Confronti app conta calorie, allenamento e acqua (2026) | Suu",
+        "description": "Tutti i confronti in un posto: MyFitnessPal, Yazio, FatSecret, Cronometer, Strava, Nike Run Club, WaterMinder e Suu — quale app va bene per chi.",
+        "keywords": "confronto app conta calorie, migliore app calorie, confronto app allenamento, app acqua recensione, alternativa myfitnesspal, alternativa yazio, alternativa strava",
+        "og_title": "Confronti tra app: calorie, allenamento e idratazione (2026)",
+        "og_description": "MyFitnessPal, Yazio, FatSecret, Cronometer, Strava, Nike Run Club, WaterMinder e Suu — quale app va bene per chi."
+      },
+      "answer": "Nella scelta di un contacalorie contano tre cose: quanto è davvero rapido registrare un pasto, se il piano gratuito fa un lavoro reale e se l'attività fisica aggiorna gli obiettivi giornalieri. I confronti qui sotto esaminano esattamente questi tre punti app per app.",
+      "intro": [
+        "Quasi tutti i confronti tra app elencano funzioni. Noi facciamo invece una sola domanda: <strong>cosa fa questa app dei tuoi dati?</strong> L'obiettivo d'acqua cambia quando registri le calorie? Il fabbisogno giornaliero si aggiorna quando registri una corsa? Il tuo caffè conta per il suo reale contributo di idratazione?",
+        "In ogni confronto scriviamo apertamente dove i concorrenti sono migliori — perché nessuna app è la migliore per tutti. E diciamo in quale situazione consigliamo Suu e in quale qualcos'altro."
+      ],
+      "disclosure": "Queste pagine sono scritte dal team di Suu. Indichiamo anche gli ambiti in cui le app concorrenti sono più forti; dire onestamente quale app va bene per chi è più utile nel lungo periodo.",
+      "groups": [
+        {
+          "title": "App conta calorie",
+          "blurb": "Inserimento con foto e voce, piano gratuito, database e tracciamento dei macro a confronto.",
+          "accent": "calories",
+          "pages": [
+            "blog/it/migliore-app-conta-calorie.html"
+          ]
+        },
+        {
+          "title": "Allenamento e calorie insieme",
+          "blurb": "App in cui l'allenamento cambia davvero gli obiettivi di calorie e acqua.",
+          "accent": "exercise",
+          "pages": [
+            "blog/it/migliore-app-allenamento.html",
+            "blog/it/acqua-calorie-allenamento-una-app.html"
+          ]
+        },
+        {
+          "title": "Idratazione",
+          "blurb": "App per bere di più e come viene calcolato l'obiettivo giornaliero.",
+          "accent": "water",
+          "pages": [
+            "blog/it/migliore-app-per-bere-acqua.html"
+          ]
+        }
+      ]
     }
   }
 }

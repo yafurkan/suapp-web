@@ -53,6 +53,14 @@
    "ar": "/hakkimizda-ar.html",
    "ru": "/hakkimizda-ru.html"
   },
+  "acqua-calorie-allenamento-una-app.html": {
+   "tr": "/blog/su-kalori-egzersiz-tek-uygulama.html",
+   "en": "/blog/en/water-calorie-exercise-one-app.html",
+   "ar": "/blog/ar/tatbiq-wahid-mae-suerat-tamarin.html",
+   "ru": "/blog/ru/voda-kalorii-trenirovki-odno-prilozhenie.html",
+   "de": "/blog/de/wasser-kalorien-sport-eine-app.html",
+   "it": "/blog/it/acqua-calorie-allenamento-una-app.html"
+  },
   "activity-based-water-tracking.html": {
    "tr": "/blog/aktivite-bazli-su-takibi.html",
    "en": "/blog/en/activity-based-water-tracking.html",
@@ -87,13 +95,17 @@
    "tr": "/blog/en-iyi-kalori-uygulamasi.html",
    "en": "/blog/en/best-calorie-counting-app.html",
    "ar": "/blog/ar/afdal-tatbiq-hisab-suerat.html",
-   "ru": "/blog/ru/luchshee-prilozhenie-podscheta-kalorij.html"
+   "ru": "/blog/ru/luchshee-prilozhenie-podscheta-kalorij.html",
+   "de": "/blog/de/bester-kalorienzaehler-app.html",
+   "it": "/blog/it/migliore-app-conta-calorie.html"
   },
   "afdal-tatbiq-mae.html": {
    "tr": "/blog/su-takip-uygulamasi-neden-kullanmaliyim.html",
    "en": "/blog/en/best-water-tracking-app.html",
    "ar": "/blog/ar/afdal-tatbiq-mae.html",
-   "ru": "/blog/ru/luchshee-prilozhenie-dlya-vody.html"
+   "ru": "/blog/ru/luchshee-prilozhenie-dlya-vody.html",
+   "de": "/blog/de/beste-wasser-tracking-app.html",
+   "it": "/blog/it/migliore-app-per-bere-acqua.html"
   },
   "africa-water-well-donation-program.html": {
    "tr": "/blog/afrika-su-kuyusu-bagis-programi.html",
@@ -244,7 +256,9 @@
    "tr": "/blog/en-iyi-kalori-uygulamasi.html",
    "en": "/blog/en/best-calorie-counting-app.html",
    "ar": "/blog/ar/afdal-tatbiq-hisab-suerat.html",
-   "ru": "/blog/ru/luchshee-prilozhenie-podscheta-kalorij.html"
+   "ru": "/blog/ru/luchshee-prilozhenie-podscheta-kalorij.html",
+   "de": "/blog/de/bester-kalorienzaehler-app.html",
+   "it": "/blog/it/migliore-app-conta-calorie.html"
   },
   "best-photo-calorie-app.html": {
    "tr": "/blog/en-iyi-fotografla-kalori-uygulamasi.html",
@@ -254,35 +268,85 @@
    "tr": "/blog/su-takip-uygulamasi-neden-kullanmaliyim.html",
    "en": "/blog/en/best-water-tracking-app.html",
    "ar": "/blog/ar/afdal-tatbiq-mae.html",
-   "ru": "/blog/ru/luchshee-prilozhenie-dlya-vody.html"
+   "ru": "/blog/ru/luchshee-prilozhenie-dlya-vody.html",
+   "de": "/blog/de/beste-wasser-tracking-app.html",
+   "it": "/blog/it/migliore-app-per-bere-acqua.html"
   },
   "best-workout-tracker-app.html": {
    "tr": "/blog/en-iyi-egzersiz-takip-uygulamasi.html",
-   "en": "/blog/en/best-workout-tracker-app.html"
+   "en": "/blog/en/best-workout-tracker-app.html",
+   "de": "/blog/de/beste-workout-tracker-app.html",
+   "it": "/blog/it/migliore-app-allenamento.html"
+  },
+  "beste-wasser-tracking-app.html": {
+   "tr": "/blog/su-takip-uygulamasi-neden-kullanmaliyim.html",
+   "en": "/blog/en/best-water-tracking-app.html",
+   "ar": "/blog/ar/afdal-tatbiq-mae.html",
+   "ru": "/blog/ru/luchshee-prilozhenie-dlya-vody.html",
+   "de": "/blog/de/beste-wasser-tracking-app.html",
+   "it": "/blog/it/migliore-app-per-bere-acqua.html"
+  },
+  "beste-workout-tracker-app.html": {
+   "tr": "/blog/en-iyi-egzersiz-takip-uygulamasi.html",
+   "en": "/blog/en/best-workout-tracker-app.html",
+   "de": "/blog/de/beste-workout-tracker-app.html",
+   "it": "/blog/it/migliore-app-allenamento.html"
+  },
+  "bester-kalorienzaehler-app.html": {
+   "tr": "/blog/en-iyi-kalori-uygulamasi.html",
+   "en": "/blog/en/best-calorie-counting-app.html",
+   "ar": "/blog/ar/afdal-tatbiq-hisab-suerat.html",
+   "ru": "/blog/ru/luchshee-prilozhenie-podscheta-kalorij.html",
+   "de": "/blog/de/bester-kalorienzaehler-app.html",
+   "it": "/blog/it/migliore-app-conta-calorie.html"
   },
   "blog-ar.html": {
    "tr": "/blog.html",
    "en": "/blog-en.html",
    "ar": "/blog-ar.html",
-   "ru": "/blog-ru.html"
+   "ru": "/blog-ru.html",
+   "de": "/blog-de.html",
+   "it": "/blog-it.html"
+  },
+  "blog-de.html": {
+   "tr": "/blog.html",
+   "en": "/blog-en.html",
+   "ar": "/blog-ar.html",
+   "ru": "/blog-ru.html",
+   "de": "/blog-de.html",
+   "it": "/blog-it.html"
   },
   "blog-en.html": {
    "tr": "/blog.html",
    "en": "/blog-en.html",
    "ar": "/blog-ar.html",
-   "ru": "/blog-ru.html"
+   "ru": "/blog-ru.html",
+   "de": "/blog-de.html",
+   "it": "/blog-it.html"
+  },
+  "blog-it.html": {
+   "tr": "/blog.html",
+   "en": "/blog-en.html",
+   "ar": "/blog-ar.html",
+   "ru": "/blog-ru.html",
+   "de": "/blog-de.html",
+   "it": "/blog-it.html"
   },
   "blog-ru.html": {
    "tr": "/blog.html",
    "en": "/blog-en.html",
    "ar": "/blog-ar.html",
-   "ru": "/blog-ru.html"
+   "ru": "/blog-ru.html",
+   "de": "/blog-de.html",
+   "it": "/blog-it.html"
   },
   "blog.html": {
    "tr": "/blog.html",
    "en": "/blog-en.html",
    "ar": "/blog-ar.html",
-   "ru": "/blog-ru.html"
+   "ru": "/blog-ru.html",
+   "de": "/blog-de.html",
+   "it": "/blog-it.html"
   },
   "caffeine-sugar-tracking.html": {
    "tr": "/blog/kafein-seker-takibi.html",
@@ -328,7 +392,17 @@
    "tr": "/karsilastirmalar.html",
    "en": "/comparisons.html",
    "ar": "/muqaranat.html",
-   "ru": "/sravneniya.html"
+   "ru": "/sravneniya.html",
+   "de": "/vergleiche.html",
+   "it": "/confronti.html"
+  },
+  "confronti.html": {
+   "tr": "/karsilastirmalar.html",
+   "en": "/comparisons.html",
+   "ar": "/muqaranat.html",
+   "ru": "/sravneniya.html",
+   "de": "/vergleiche.html",
+   "it": "/confronti.html"
   },
   "cronometer-vs-yazio.html": {
    "en": "/blog/en/cronometer-vs-yazio.html"
@@ -380,7 +454,9 @@
   },
   "en-iyi-egzersiz-takip-uygulamasi.html": {
    "tr": "/blog/en-iyi-egzersiz-takip-uygulamasi.html",
-   "en": "/blog/en/best-workout-tracker-app.html"
+   "en": "/blog/en/best-workout-tracker-app.html",
+   "de": "/blog/de/beste-workout-tracker-app.html",
+   "it": "/blog/it/migliore-app-allenamento.html"
   },
   "en-iyi-fotografla-kalori-uygulamasi.html": {
    "tr": "/blog/en-iyi-fotografla-kalori-uygulamasi.html",
@@ -390,7 +466,9 @@
    "tr": "/blog/en-iyi-kalori-uygulamasi.html",
    "en": "/blog/en/best-calorie-counting-app.html",
    "ar": "/blog/ar/afdal-tatbiq-hisab-suerat.html",
-   "ru": "/blog/ru/luchshee-prilozhenie-podscheta-kalorij.html"
+   "ru": "/blog/ru/luchshee-prilozhenie-podscheta-kalorij.html",
+   "de": "/blog/de/bester-kalorienzaehler-app.html",
+   "it": "/blog/it/migliore-app-conta-calorie.html"
   },
   "energy-drink-control.html": {
    "tr": "/blog/enerji-icecegi-kontrolu.html",
@@ -547,19 +625,41 @@
    "tr": "/",
    "en": "/hosgeldiniz-en.html",
    "ar": "/hosgeldiniz-ar.html",
-   "ru": "/hosgeldiniz-ru.html"
+   "ru": "/hosgeldiniz-ru.html",
+   "de": "/hosgeldiniz-de.html",
+   "it": "/hosgeldiniz-it.html"
+  },
+  "hosgeldiniz-de.html": {
+   "tr": "/",
+   "en": "/hosgeldiniz-en.html",
+   "ar": "/hosgeldiniz-ar.html",
+   "ru": "/hosgeldiniz-ru.html",
+   "de": "/hosgeldiniz-de.html",
+   "it": "/hosgeldiniz-it.html"
   },
   "hosgeldiniz-en.html": {
    "tr": "/",
    "en": "/hosgeldiniz-en.html",
    "ar": "/hosgeldiniz-ar.html",
-   "ru": "/hosgeldiniz-ru.html"
+   "ru": "/hosgeldiniz-ru.html",
+   "de": "/hosgeldiniz-de.html",
+   "it": "/hosgeldiniz-it.html"
+  },
+  "hosgeldiniz-it.html": {
+   "tr": "/",
+   "en": "/hosgeldiniz-en.html",
+   "ar": "/hosgeldiniz-ar.html",
+   "ru": "/hosgeldiniz-ru.html",
+   "de": "/hosgeldiniz-de.html",
+   "it": "/hosgeldiniz-it.html"
   },
   "hosgeldiniz-ru.html": {
    "tr": "/",
    "en": "/hosgeldiniz-en.html",
    "ar": "/hosgeldiniz-ar.html",
-   "ru": "/hosgeldiniz-ru.html"
+   "ru": "/hosgeldiniz-ru.html",
+   "de": "/hosgeldiniz-de.html",
+   "it": "/hosgeldiniz-it.html"
   },
   "how-many-cups-coffee.html": {
    "tr": "/blog/gunde-kac-kahve.html",
@@ -606,7 +706,9 @@
    "tr": "/",
    "en": "/hosgeldiniz-en.html",
    "ar": "/hosgeldiniz-ar.html",
-   "ru": "/hosgeldiniz-ru.html"
+   "ru": "/hosgeldiniz-ru.html",
+   "de": "/hosgeldiniz-de.html",
+   "it": "/hosgeldiniz-it.html"
   },
   "indir.html": {
    "tr": "/indir.html",
@@ -676,7 +778,9 @@
    "tr": "/karsilastirmalar.html",
    "en": "/comparisons.html",
    "ar": "/muqaranat.html",
-   "ru": "/sravneniya.html"
+   "ru": "/sravneniya.html",
+   "de": "/vergleiche.html",
+   "it": "/confronti.html"
   },
   "kilo-ve-su.html": {
    "tr": "/blog/kilo-ve-su.html",
@@ -715,13 +819,17 @@
    "tr": "/blog/su-takip-uygulamasi-neden-kullanmaliyim.html",
    "en": "/blog/en/best-water-tracking-app.html",
    "ar": "/blog/ar/afdal-tatbiq-mae.html",
-   "ru": "/blog/ru/luchshee-prilozhenie-dlya-vody.html"
+   "ru": "/blog/ru/luchshee-prilozhenie-dlya-vody.html",
+   "de": "/blog/de/beste-wasser-tracking-app.html",
+   "it": "/blog/it/migliore-app-per-bere-acqua.html"
   },
   "luchshee-prilozhenie-podscheta-kalorij.html": {
    "tr": "/blog/en-iyi-kalori-uygulamasi.html",
    "en": "/blog/en/best-calorie-counting-app.html",
    "ar": "/blog/ar/afdal-tatbiq-hisab-suerat.html",
-   "ru": "/blog/ru/luchshee-prilozhenie-podscheta-kalorij.html"
+   "ru": "/blog/ru/luchshee-prilozhenie-podscheta-kalorij.html",
+   "de": "/blog/de/bester-kalorienzaehler-app.html",
+   "it": "/blog/it/migliore-app-conta-calorie.html"
   },
   "macro-calculation.html": {
    "tr": "/blog/makro-hesaplama.html",
@@ -741,6 +849,28 @@
    "ar": "/blog/ar/aaseer-am-mae.html",
    "ru": "/blog/ru/sok-ili-voda.html"
   },
+  "migliore-app-allenamento.html": {
+   "tr": "/blog/en-iyi-egzersiz-takip-uygulamasi.html",
+   "en": "/blog/en/best-workout-tracker-app.html",
+   "de": "/blog/de/beste-workout-tracker-app.html",
+   "it": "/blog/it/migliore-app-allenamento.html"
+  },
+  "migliore-app-conta-calorie.html": {
+   "tr": "/blog/en-iyi-kalori-uygulamasi.html",
+   "en": "/blog/en/best-calorie-counting-app.html",
+   "ar": "/blog/ar/afdal-tatbiq-hisab-suerat.html",
+   "ru": "/blog/ru/luchshee-prilozhenie-podscheta-kalorij.html",
+   "de": "/blog/de/bester-kalorienzaehler-app.html",
+   "it": "/blog/it/migliore-app-conta-calorie.html"
+  },
+  "migliore-app-per-bere-acqua.html": {
+   "tr": "/blog/su-takip-uygulamasi-neden-kullanmaliyim.html",
+   "en": "/blog/en/best-water-tracking-app.html",
+   "ar": "/blog/ar/afdal-tatbiq-mae.html",
+   "ru": "/blog/ru/luchshee-prilozhenie-dlya-vody.html",
+   "de": "/blog/de/beste-wasser-tracking-app.html",
+   "it": "/blog/it/migliore-app-per-bere-acqua.html"
+  },
   "morning-water-benefits.html": {
    "tr": "/blog/sabah-su-icmenin-faydalari.html",
    "en": "/blog/en/morning-water-benefits.html",
@@ -751,7 +881,9 @@
    "tr": "/karsilastirmalar.html",
    "en": "/comparisons.html",
    "ar": "/muqaranat.html",
-   "ru": "/sravneniya.html"
+   "ru": "/sravneniya.html",
+   "de": "/vergleiche.html",
+   "it": "/confronti.html"
   },
   "myfitnesspal-vs-lose-it.html": {
    "en": "/blog/en/myfitnesspal-vs-lose-it.html"
@@ -976,7 +1108,9 @@
    "tr": "/karsilastirmalar.html",
    "en": "/comparisons.html",
    "ar": "/muqaranat.html",
-   "ru": "/sravneniya.html"
+   "ru": "/sravneniya.html",
+   "de": "/vergleiche.html",
+   "it": "/confronti.html"
   },
   "starbucks-dehidrasyon.html": {
    "tr": "/starbucks-dehidrasyon.html",
@@ -1017,13 +1151,17 @@
    "tr": "/blog/su-kalori-egzersiz-tek-uygulama.html",
    "en": "/blog/en/water-calorie-exercise-one-app.html",
    "ar": "/blog/ar/tatbiq-wahid-mae-suerat-tamarin.html",
-   "ru": "/blog/ru/voda-kalorii-trenirovki-odno-prilozhenie.html"
+   "ru": "/blog/ru/voda-kalorii-trenirovki-odno-prilozhenie.html",
+   "de": "/blog/de/wasser-kalorien-sport-eine-app.html",
+   "it": "/blog/it/acqua-calorie-allenamento-una-app.html"
   },
   "su-takip-uygulamasi-neden-kullanmaliyim.html": {
    "tr": "/blog/su-takip-uygulamasi-neden-kullanmaliyim.html",
    "en": "/blog/en/best-water-tracking-app.html",
    "ar": "/blog/ar/afdal-tatbiq-mae.html",
-   "ru": "/blog/ru/luchshee-prilozhenie-dlya-vody.html"
+   "ru": "/blog/ru/luchshee-prilozhenie-dlya-vody.html",
+   "de": "/blog/de/beste-wasser-tracking-app.html",
+   "it": "/blog/it/migliore-app-per-bere-acqua.html"
   },
   "su-ve-bobrek-sagligi.html": {
    "tr": "/blog/su-ve-bobrek-sagligi.html",
@@ -1133,7 +1271,9 @@
    "tr": "/blog/su-kalori-egzersiz-tek-uygulama.html",
    "en": "/blog/en/water-calorie-exercise-one-app.html",
    "ar": "/blog/ar/tatbiq-wahid-mae-suerat-tamarin.html",
-   "ru": "/blog/ru/voda-kalorii-trenirovki-odno-prilozhenie.html"
+   "ru": "/blog/ru/voda-kalorii-trenirovki-odno-prilozhenie.html",
+   "de": "/blog/de/wasser-kalorien-sport-eine-app.html",
+   "it": "/blog/it/acqua-calorie-allenamento-una-app.html"
   },
   "tea-hydration.html": {
    "tr": "/blog/cay-hidrasyon.html",
@@ -1144,6 +1284,14 @@
   "ucretsiz-kalori-sayaci.html": {
    "tr": "/blog/ucretsiz-kalori-sayaci.html",
    "en": "/blog/en/free-calorie-counter-app.html"
+  },
+  "vergleiche.html": {
+   "tr": "/karsilastirmalar.html",
+   "en": "/comparisons.html",
+   "ar": "/muqaranat.html",
+   "ru": "/sravneniya.html",
+   "de": "/vergleiche.html",
+   "it": "/confronti.html"
   },
   "voda-i-beremennost.html": {
    "tr": "/blog/hamilelikte-su-ihtiyaci.html",
@@ -1185,7 +1333,9 @@
    "tr": "/blog/su-kalori-egzersiz-tek-uygulama.html",
    "en": "/blog/en/water-calorie-exercise-one-app.html",
    "ar": "/blog/ar/tatbiq-wahid-mae-suerat-tamarin.html",
-   "ru": "/blog/ru/voda-kalorii-trenirovki-odno-prilozhenie.html"
+   "ru": "/blog/ru/voda-kalorii-trenirovki-odno-prilozhenie.html",
+   "de": "/blog/de/wasser-kalorien-sport-eine-app.html",
+   "it": "/blog/it/acqua-calorie-allenamento-una-app.html"
   },
   "voda-po-aktivnosti.html": {
    "tr": "/blog/aktivite-bazli-su-takibi.html",
@@ -1210,6 +1360,14 @@
    "en": "/blog/en/voice-calorie-logging.html",
    "ar": "/blog/ar/tasjil-suerat-bil-sawt.html",
    "ru": "/blog/ru/golosovoj-vvod-kalorij.html"
+  },
+  "wasser-kalorien-sport-eine-app.html": {
+   "tr": "/blog/su-kalori-egzersiz-tek-uygulama.html",
+   "en": "/blog/en/water-calorie-exercise-one-app.html",
+   "ar": "/blog/ar/tatbiq-wahid-mae-suerat-tamarin.html",
+   "ru": "/blog/ru/voda-kalorii-trenirovki-odno-prilozhenie.html",
+   "de": "/blog/de/wasser-kalorien-sport-eine-app.html",
+   "it": "/blog/it/acqua-calorie-allenamento-una-app.html"
   },
   "water-and-kidney-health.html": {
    "tr": "/blog/su-ve-bobrek-sagligi.html",
@@ -1257,7 +1415,9 @@
    "tr": "/blog/su-kalori-egzersiz-tek-uygulama.html",
    "en": "/blog/en/water-calorie-exercise-one-app.html",
    "ar": "/blog/ar/tatbiq-wahid-mae-suerat-tamarin.html",
-   "ru": "/blog/ru/voda-kalorii-trenirovki-odno-prilozhenie.html"
+   "ru": "/blog/ru/voda-kalorii-trenirovki-odno-prilozhenie.html",
+   "de": "/blog/de/wasser-kalorien-sport-eine-app.html",
+   "it": "/blog/it/acqua-calorie-allenamento-una-app.html"
   },
   "water-challenge-with-friends.html": {
    "tr": "/blog/su-icme-lig-sistemi.html",

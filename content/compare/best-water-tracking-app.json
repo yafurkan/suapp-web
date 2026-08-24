@@ -58,85 +58,490 @@
         "head": "Full feature comparison",
         "caption": "Comparison of Suu, WaterMinder, Waterllama, Hydro Coach and Plant Nanny",
         "col_feature": "Feature",
-        "columns": ["Suu", "WaterMinder", "Waterllama", "Hydro Coach", "Plant Nanny"],
+        "columns": [
+          "Suu",
+          "WaterMinder",
+          "Waterllama",
+          "Hydro Coach",
+          "Plant Nanny"
+        ],
         "suu_col": 0,
         "rows": [
-          {"label": "Price", "cells": [
-            {"text": "Free · Premium optional", "cls": "yes"},
-            {"text": "Paid", "cls": "no"},
-            {"text": "Freemium", "cls": "yes"},
-            {"text": "Freemium", "cls": "yes"},
-            {"text": "Freemium", "cls": "yes"}]},
-          {"label": "iOS", "cells": [
-            {"text": "✓", "cls": "yes"}, {"text": "✓", "cls": "yes"},
-            {"text": "✓", "cls": "yes"}, {"text": "✓", "cls": "yes"}, {"text": "✓", "cls": "yes"}]},
-          {"label": "Android", "cells": [
-            {"text": "✓", "cls": "yes"}, {"text": "✓", "cls": "yes"},
-            {"text": "✗ iOS only", "cls": "no"}, {"text": "✓", "cls": "yes"}, {"text": "✓", "cls": "yes"}]},
-          {"label": "Apple Watch app", "cells": [
-            {"text": "Coming soon — Watch data syncs via Apple Health", "cls": "soon"},
-            {"text": "✓ Best in class", "cls": "yes"},
-            {"text": "✓", "cls": "yes"},
-            {"text": "✗ (Wear OS instead)", "cls": "no"},
-            {"text": "✗", "cls": "no"}]},
-          {"label": "Beverages tracked", "cells": [
-            {"text": "91, each with a dehydration factor", "cls": "yes"},
-            {"text": "A short list", "cls": "no"},
-            {"text": "A short list", "cls": "no"},
-            {"text": "A short list", "cls": "no"},
-            {"text": "Water only", "cls": "no"}]},
-          {"label": "Goal reacts to exercise", "cells": [
-            {"text": "✓ Automatic from logged workouts", "cls": "yes"},
-            {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"},
-            {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"}]},
-          {"label": "Goal reacts to food", "cells": [
-            {"text": "✓ Digestion water from protein and sodium", "cls": "yes"},
-            {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"},
-            {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"}]},
-          {"label": "Reminder logic", "cells": [
-            {"text": "Reactive — shifts with what you logged", "cls": "yes"},
-            {"text": "Interval", "cls": "no"}, {"text": "Interval", "cls": "no"},
-            {"text": "Interval", "cls": "no"}, {"text": "Interval", "cls": "no"}]},
-          {"label": "Calorie counting in the same app", "cells": [
-            {"text": "✓ Photo, voice and manual", "cls": "yes"},
-            {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"},
-            {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"}]},
-          {"label": "GPS workout tracking", "cells": [
-            {"text": "✓ ~50 activities", "cls": "yes"},
-            {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"},
-            {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"}]},
-          {"label": "Apple Health sync", "cells": [
-            {"text": "✓", "cls": "yes"}, {"text": "✓", "cls": "yes"},
-            {"text": "✓", "cls": "yes"}, {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"}]},
-          {"label": "Google Health Connect sync", "cells": [
-            {"text": "✓", "cls": "yes"}, {"text": "✗", "cls": "no"},
-            {"text": "✗ iOS only", "cls": "no"}, {"text": "Partial", "cls": "soon"},
-            {"text": "✗", "cls": "no"}]},
-          {"label": "Home and Lock Screen widgets", "cells": [
-            {"text": "✓", "cls": "yes"}, {"text": "✓", "cls": "yes"},
-            {"text": "✓", "cls": "yes"}, {"text": "✓", "cls": "yes"}, {"text": "✗", "cls": "no"}]},
-          {"label": "Live Activity / Dynamic Island", "cells": [
-            {"text": "✓ iOS", "cls": "yes"}, {"text": "✗", "cls": "no"},
-            {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"}]},
-          {"label": "Friend leagues", "cells": [
-            {"text": "✓ Weekly, up to 4 people, cross-platform", "cls": "yes"},
-            {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"},
-            {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"}]},
-          {"label": "Gamification", "cells": [
-            {"text": "✓ Pet, badges, streaks", "cls": "yes"},
-            {"text": "Badges", "cls": "soon"}, {"text": "✓ Strong", "cls": "yes"},
-            {"text": "✗", "cls": "no"}, {"text": "✓ Its whole idea", "cls": "yes"}]},
-          {"label": "Right-to-left Arabic interface", "cells": [
-            {"text": "✓ Full RTL", "cls": "yes"}, {"text": "✗", "cls": "no"},
-            {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"}]},
-          {"label": "Interface languages", "cells": [
-            {"text": "7", "cls": "yes"}, {"text": "Several", "cls": "soon"},
-            {"text": "Several", "cls": "soon"}, {"text": "Several", "cls": "soon"},
-            {"text": "Several", "cls": "soon"}]},
-          {"label": "PDF / CSV export", "cells": [
-            {"text": "✓ Premium", "cls": "yes"}, {"text": "✓", "cls": "yes"},
-            {"text": "✗", "cls": "no"}, {"text": "Premium", "cls": "soon"},
-            {"text": "✗", "cls": "no"}]}
+          {
+            "label": "Price",
+            "cells": [
+              {
+                "text": "Free · Premium optional",
+                "cls": "yes"
+              },
+              {
+                "text": "Paid",
+                "cls": "no"
+              },
+              {
+                "text": "Freemium",
+                "cls": "yes"
+              },
+              {
+                "text": "Freemium",
+                "cls": "yes"
+              },
+              {
+                "text": "Freemium",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "iOS",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Android",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✗ iOS only",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Apple Watch app",
+            "cells": [
+              {
+                "text": "Coming soon — Watch data syncs via Apple Health",
+                "cls": "soon"
+              },
+              {
+                "text": "✓ Best in class",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✗ (Wear OS instead)",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Beverages tracked",
+            "cells": [
+              {
+                "text": "91, each with a dehydration factor",
+                "cls": "yes"
+              },
+              {
+                "text": "A short list",
+                "cls": "no"
+              },
+              {
+                "text": "A short list",
+                "cls": "no"
+              },
+              {
+                "text": "A short list",
+                "cls": "no"
+              },
+              {
+                "text": "Water only",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Goal reacts to exercise",
+            "cells": [
+              {
+                "text": "✓ Automatic from logged workouts",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Goal reacts to food",
+            "cells": [
+              {
+                "text": "✓ Digestion water from protein and sodium",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Reminder logic",
+            "cells": [
+              {
+                "text": "Reactive — shifts with what you logged",
+                "cls": "yes"
+              },
+              {
+                "text": "Interval",
+                "cls": "no"
+              },
+              {
+                "text": "Interval",
+                "cls": "no"
+              },
+              {
+                "text": "Interval",
+                "cls": "no"
+              },
+              {
+                "text": "Interval",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Calorie counting in the same app",
+            "cells": [
+              {
+                "text": "✓ Photo, voice and manual",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "GPS workout tracking",
+            "cells": [
+              {
+                "text": "✓ ~50 activities",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Apple Health sync",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Google Health Connect sync",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗ iOS only",
+                "cls": "no"
+              },
+              {
+                "text": "Partial",
+                "cls": "soon"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Home and Lock Screen widgets",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Live Activity / Dynamic Island",
+            "cells": [
+              {
+                "text": "✓ iOS",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Friend leagues",
+            "cells": [
+              {
+                "text": "✓ Weekly, up to 4 people, cross-platform",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Gamification",
+            "cells": [
+              {
+                "text": "✓ Pet, badges, streaks",
+                "cls": "yes"
+              },
+              {
+                "text": "Badges",
+                "cls": "soon"
+              },
+              {
+                "text": "✓ Strong",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Its whole idea",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Right-to-left Arabic interface",
+            "cells": [
+              {
+                "text": "✓ Full RTL",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Interface languages",
+            "cells": [
+              {
+                "text": "7",
+                "cls": "yes"
+              },
+              {
+                "text": "Several",
+                "cls": "soon"
+              },
+              {
+                "text": "Several",
+                "cls": "soon"
+              },
+              {
+                "text": "Several",
+                "cls": "soon"
+              },
+              {
+                "text": "Several",
+                "cls": "soon"
+              }
+            ]
+          },
+          {
+            "label": "PDF / CSV export",
+            "cells": [
+              {
+                "text": "✓ Premium",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "Premium",
+                "cls": "soon"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          }
         ]
       },
       "analysis": [
@@ -154,7 +559,9 @@
         },
         {
           "head": "Where each app is genuinely the better choice",
-          "body": ["None of these is a bad app. They are built for different people:"],
+          "body": [
+            "None of these is a bad app. They are built for different people:"
+          ],
           "list": [
             "<strong>WaterMinder</strong> — if you log from an Apple Watch more often than from your phone. Suu has no Watch app yet, and that gap is real.",
             "<strong>Waterllama</strong> — if you are on iOS, you want the app to be a pleasure to open, and a fixed daily goal is all you need.",
@@ -214,15 +621,1248 @@
         }
       ],
       "references": [
-        {"href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2908954/", "label": "Popkin et al. — Water, hydration and health (PMC)"},
-        {"href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459", "label": "EFSA — Dietary reference values for water"},
-        {"href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6835337/", "label": "Sweat rate and fluid replacement during exercise (PMC)"}
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2908954/",
+          "label": "Popkin et al. — Water, hydration and health (PMC)"
+        },
+        {
+          "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459",
+          "label": "EFSA — Dietary reference values for water"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6835337/",
+          "label": "Sweat rate and fluid replacement during exercise (PMC)"
+        }
       ],
       "related": [
-        {"href": "/blog/en/water-calorie-exercise-one-app.html", "title": "Water + calories + exercise in one app", "desc": "What connecting the three actually gains you."},
-        {"href": "/blog/en/how-much-water-should-i-drink.html", "title": "How much water should I drink a day?", "desc": "Why the 2-litre rule is the wrong question."},
-        {"href": "/blog/en/hydration-score-explained.html", "title": "What is a hydration score?", "desc": "How the Suu Index turns a day of drinking into 0–100."},
-        {"href": "/blog/en/best-calorie-counting-app.html", "title": "Best calorie counting app 2026", "desc": "The same comparison, for the calorie column."}
+        {
+          "href": "/blog/en/water-calorie-exercise-one-app.html",
+          "title": "Water + calories + exercise in one app",
+          "desc": "What connecting the three actually gains you."
+        },
+        {
+          "href": "/blog/en/how-much-water-should-i-drink.html",
+          "title": "How much water should I drink a day?",
+          "desc": "Why the 2-litre rule is the wrong question."
+        },
+        {
+          "href": "/blog/en/hydration-score-explained.html",
+          "title": "What is a hydration score?",
+          "desc": "How the Suu Index turns a day of drinking into 0–100."
+        },
+        {
+          "href": "/blog/en/best-calorie-counting-app.html",
+          "title": "Best calorie counting app 2026",
+          "desc": "The same comparison, for the calorie column."
+        }
+      ]
+    },
+    "de": {
+      "slug": "beste-wasser-tracking-app",
+      "published_display": "24. August 2026",
+      "read_minutes": 9,
+      "badge": "💧 Vergleich 2026",
+      "h1": "Die beste Wasser-Tracking-App 2026: getestet und verglichen",
+      "meta": {
+        "title": "Beste Wasser-App 2026 — Trinkerinnerung im Vergleich (WaterMinder, Hydro Coach, Suu) | Suu",
+        "description": "Welche Trinkerinnerung bringt dich wirklich zum Trinken? Suu, WaterMinder, Waterllama, Hydro Coach und Plant Nanny im Vergleich — Erinnerungsqualität, Zielberechnung und Gratis-Umfang.",
+        "keywords": "beste wasser app, trinkerinnerung app, wasser tracker app, trink app kostenlos, waterminder alternative, hydro coach test, wie viel wasser trinken app, flüssigkeitshaushalt app",
+        "og_title": "Die beste Wasser-Tracking-App 2026",
+        "og_description": "Suu, WaterMinder, Waterllama, Hydro Coach und Plant Nanny — verglichen an dem, was nach zwei Wochen noch funktioniert."
+      },
+      "answer": "Wer eine Apple Watch trägt, fährt mit WaterMinder am besten — die Watch-App ist die ausgereifteste im Feld. Wer will, dass das Tagesziel selbst mitdenkt — der Lauf von heute Morgen, das salzige Mittagessen, der Kaffee, der eben nicht wie Wasser zählt —, nimmt Suu: die einzige der fünf Apps, die das Ziel selbst nachrechnet, kostenlos für iOS und Android. Waterllama ist die schönste iOS-Lösung, Hydro Coach die stärkste kostenlose Android-App, und Plant Nanny die richtige Wahl, wenn nicht das Vergessen, sondern die Motivation das Problem ist.",
+      "disclosure": "Diesen Vergleich schreibt das Suu-Team, du liest also eine parteiische Quelle. Zum Ausgleich benennen wir klar, wo die Konkurrenz besser ist — WaterMinder schlägt Suu auf der Apple Watch, und das ist der häufigste Grund, sich anders zu entscheiden. Funktionen und Preise entsprechen dem öffentlich einsehbaren Stand von August 2026 und ändern sich häufig.",
+      "ranked": {
+        "head": "Die besten Wasser-Tracking-Apps 2026",
+        "lead": "Sortiert danach, wie viel Arbeit die App dir abnimmt — nicht nach Funktionsumfang. Alle fünf können alle zwei Stunden eine Benachrichtigung schicken; daran unterscheiden sie sich nicht.",
+        "items": [
+          {
+            "name": "Suu",
+            "tag": "wenn das Ziel mitdenken soll",
+            "body": "Kostenlos für iOS und Android. Erfasst 91 Getränke mit echtem Dehydrationsfaktor — Kaffee zählt also nicht wie Wasser. Das Ziel verschiebt sich im Tagesverlauf: Nach einem eingetragenen Lauf steigt es um die geschätzte Schweißmenge, nach einer eiweiß- oder salzreichen Mahlzeit kommt das Wasser dazu, das die Verdauung braucht — mit Begründung. Zählt außerdem Kalorien aus einem Foto und zeichnet Workouts per GPS auf. Noch keine eigene Apple-Watch-App; Watch-Daten kommen über Apple Health an."
+          },
+          {
+            "name": "WaterMinder",
+            "tag": "am besten auf der Apple Watch",
+            "body": "Die etablierteste App im Feld und weiterhin das beste Handgelenk-Erlebnis: echte Watch-App, Komplikationen, saubere Apple-Health-Anbindung. Kostenpflichtig. Die Erinnerungen laufen nach Intervall statt nach Verhalten, und die Getränkeliste ist kurz gegenüber Suu."
+          },
+          {
+            "name": "Waterllama",
+            "tag": "die schönste — nur iOS",
+            "body": "Charmant, schnell und wirklich gut gestaltet, mit starker Widget- und Watch-Unterstützung. Freemium. Nur für iOS, fällt für Android-Haushalte also aus. Die Trinklogik ist einfacher als bei Suu: ein festes Ziel, das du selbst setzt."
+          },
+          {
+            "name": "Hydro Coach",
+            "tag": "beste kostenlose Android-Option",
+            "body": "Solide Zielberechnung aus Gewicht und Aktivität, brauchbare Gratis-Stufe und lange Android-Erfahrung inklusive Wear OS. Die Oberfläche wirkt neben Waterllama altbacken, die Erinnerungen sind reine Timer, und einige nützliche Funktionen liegen hinter der Bezahlschranke."
+          },
+          {
+            "name": "Plant Nanny",
+            "tag": "wenn die Motivation fehlt",
+            "body": "Du gießt eine virtuelle Pflanze und sie wächst. Klingt banal und funktioniert — für Leute, deren Problem nicht das Erinnern ist, sondern das Wollen. Der Preis dafür ist Datentiefe: wenig Auswertung, keine ernsthafte Getränkelogik, keine Health-Anbindung."
+          }
+        ]
+      },
+      "intro": [
+        "Jede App auf dieser Liste kann alle zwei Stunden eine Benachrichtigung schicken. Genau das ist nicht der Unterschied — es ist meistens der Grund, warum die App wieder gelöscht wird. Eine Erinnerung, die mitten im Meeting aufpoppt oder zwanzig Minuten nachdem du ohnehin getrunken hast, bringt dir bei, sie wegzuwischen.",
+        "Deshalb haben wir die Apps an einer einzigen Frage gemessen: <strong>Liest du die Benachrichtigungen nach zehn Tagen noch, oder wischst du sie weg?</strong> Das hängt an drei Eigenschaften — ob die Erinnerung auf das reagiert, was du schon getrunken hast, ob sie zu einem plausiblen Zeitpunkt kommt, und ob sie eine Begründung mitliefert.",
+        "\"Zeit zu trinken\" ist ignorierbar. \"Du hast salzig gegessen — dein Körper braucht rund 200 ml zusätzlich für die Verdauung\" ist es nicht. Genau hier gehen die fünf Apps auseinander, und darauf ist die Tabelle unten aufgebaut."
+      ],
+      "table": {
+        "head": "Vollständiger Funktionsvergleich",
+        "caption": "Vergleich von Suu, WaterMinder, Waterllama, Hydro Coach und Plant Nanny",
+        "col_feature": "Funktion",
+        "columns": [
+          "Suu",
+          "WaterMinder",
+          "Waterllama",
+          "Hydro Coach",
+          "Plant Nanny"
+        ],
+        "suu_col": 0,
+        "rows": [
+          {
+            "label": "Preis",
+            "cells": [
+              {
+                "text": "Kostenlos · Premium optional",
+                "cls": "yes"
+              },
+              {
+                "text": "Kostenpflichtig",
+                "cls": "no"
+              },
+              {
+                "text": "Freemium",
+                "cls": "yes"
+              },
+              {
+                "text": "Freemium",
+                "cls": "yes"
+              },
+              {
+                "text": "Freemium",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "iOS",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Android",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✗ nur iOS",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Apple-Watch-App",
+            "cells": [
+              {
+                "text": "In Arbeit — Watch-Daten über Apple Health",
+                "cls": "soon"
+              },
+              {
+                "text": "✓ Klassenbeste",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✗ (dafür Wear OS)",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Erfasste Getränke",
+            "cells": [
+              {
+                "text": "91, je mit Dehydrationsfaktor",
+                "cls": "yes"
+              },
+              {
+                "text": "Kurze Liste",
+                "cls": "no"
+              },
+              {
+                "text": "Kurze Liste",
+                "cls": "no"
+              },
+              {
+                "text": "Kurze Liste",
+                "cls": "no"
+              },
+              {
+                "text": "Nur Wasser",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Ziel reagiert auf Sport",
+            "cells": [
+              {
+                "text": "✓ automatisch aus dem Workout",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Ziel reagiert auf Mahlzeiten",
+            "cells": [
+              {
+                "text": "✓ Verdauungswasser aus Eiweiß und Natrium",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Erinnerungslogik",
+            "cells": [
+              {
+                "text": "Reaktiv — verschiebt sich mit deinem Tag",
+                "cls": "yes"
+              },
+              {
+                "text": "Intervall",
+                "cls": "no"
+              },
+              {
+                "text": "Intervall",
+                "cls": "no"
+              },
+              {
+                "text": "Intervall",
+                "cls": "no"
+              },
+              {
+                "text": "Intervall",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Kalorienzählen in derselben App",
+            "cells": [
+              {
+                "text": "✓ Foto, Sprache und manuell",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "GPS-Workout-Aufzeichnung",
+            "cells": [
+              {
+                "text": "✓ ~50 Sportarten",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Apple Health",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Google Health Connect",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗ nur iOS",
+                "cls": "no"
+              },
+              {
+                "text": "Teilweise",
+                "cls": "soon"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Widgets (Home- und Sperrbildschirm)",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Live-Aktivität / Dynamic Island",
+            "cells": [
+              {
+                "text": "✓ iOS",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Freundes-Ligen",
+            "cells": [
+              {
+                "text": "✓ wöchentlich, bis 4 Personen",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Oberflächensprachen",
+            "cells": [
+              {
+                "text": "7, inkl. Deutsch",
+                "cls": "yes"
+              },
+              {
+                "text": "Mehrere",
+                "cls": "soon"
+              },
+              {
+                "text": "Mehrere",
+                "cls": "soon"
+              },
+              {
+                "text": "Mehrere, inkl. Deutsch",
+                "cls": "yes"
+              },
+              {
+                "text": "Mehrere",
+                "cls": "soon"
+              }
+            ]
+          },
+          {
+            "label": "PDF-/CSV-Export",
+            "cells": [
+              {
+                "text": "✓ Premium",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "Premium",
+                "cls": "soon"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          }
+        ]
+      },
+      "analysis": [
+        {
+          "head": "Woran man eine brauchbare Trinkerinnerung erkennt",
+          "body": [
+            "Die Erinnerungen, die die zweite Woche überleben, haben drei Eigenschaften. Miss jede App dieser Liste daran, nicht am Funktionsumfang."
+          ],
+          "list": [
+            "<strong>Sie reagieren auf das, was du schon eingetragen hast.</strong> Wenn du gerade 500 ml getrunken hast, sollte sich der nächste Hinweis verschieben — nicht trotzdem nach Plan kommen.",
+            "<strong>Sie kommen zu plausiblen Zeitpunkten.</strong> Nach dem Aufstehen, nach dem Essen, nach dem Sport: Momente, in denen Trinken natürlich ist statt störend.",
+            "<strong>Sie liefern eine Begründung mit.</strong> Eine Zahl allein ist Nörgeln. Eine Zahl mit Ursache — Schweißverlust, Natrium, die Nacht ohne Flüssigkeit — ist Information."
+          ],
+          "callout": "Praxistest: Bewerte jede App nach zehn Tagen an einer einzigen Frage — liest du die Benachrichtigungen noch, oder wischst du sie weg? Wenn Zweiteres, passt die Erinnerungslogik nicht zu dir, und keine Funktionsliste ändert daran etwas."
+        },
+        {
+          "head": "Wo welche App die bessere Wahl ist",
+          "body": [
+            "Keine dieser Apps ist schlecht. Sie sind für unterschiedliche Leute gebaut:"
+          ],
+          "list": [
+            "<strong>WaterMinder</strong> — wenn du öfter von der Apple Watch aus einträgst als vom Telefon. Suu hat dort noch keine App, und diese Lücke ist real.",
+            "<strong>Waterllama</strong> — wenn du auf iOS bist, die App Freude machen soll und ein festes Tagesziel reicht.",
+            "<strong>Hydro Coach</strong> — wenn du auf Android bist und nichts bezahlen willst.",
+            "<strong>Plant Nanny</strong> — wenn du genau weißt, dass du mehr trinken solltest, und es dir schlicht egal ist. Eine wachsende Pflanze löst ein Motivationsproblem, das Daten nicht lösen.",
+            "<strong>Suu</strong> — wenn das Tagesziel berechnet statt geschätzt sein soll, wenn du anderes als Wasser trinkst und das ehrlich gezählt haben willst, oder wenn du für Kalorien und Sport keine zweite und dritte App öffnen möchtest."
+          ]
+        },
+        {
+          "head": "Was reine Trink-Apps strukturell nicht können",
+          "body": [
+            "Eine Trink-App weiß nur, was du getrunken hast. Sie weiß nicht, dass du heute Morgen 8 km gelaufen bist oder dass das Mittagessen 1.200 mg Natrium hatte. Ihr \"persönliches Ziel\" ist deshalb eine Formel, die einmal bei der Anmeldung angewendet wird — Gewicht, vielleicht Aktivitätsniveau, vielleicht Klima — und danach festbleibt.",
+            "Bei Suu bewegt sich das Ziel, weil die App die anderen beiden Teile ebenfalls kennt. Der aufgezeichnete GPS-Lauf hebt es um den geschätzten Schweißverlust. Die fotografierte Mahlzeit hebt es um das Wasser, das die Verdauung braucht. Der eingetragene Kaffee hebt es weniger als Wasser, weil er mit seinem tatsächlichen Hydrationsbeitrag verrechnet wird.",
+            "Ob das für dich zählt, hängt von deinen Tagen ab. Sind sie ähnlich und trinkst du ohnehin genug, ist ein festes Ziel völlig in Ordnung und die einfachere App das bessere Werkzeug. Schwanken deine Tage — Trainingstag und Schreibtischtag, Sommer und Winter —, dann ist eine feste Zahl die meiste Zeit in die eine oder andere Richtung falsch."
+          ]
+        }
+      ],
+      "verdict": {
+        "head": "Fazit",
+        "body": [
+          "<strong>Nimm WaterMinder</strong>, wenn du von der Apple Watch aus einträgst. Die App ist die ausgereifteste im Feld und am Handgelenk unerreicht.",
+          "<strong>Nimm Waterllama</strong>, wenn du auf iOS bist und die schönste App mit einem einfachen festen Ziel willst.",
+          "<strong>Nimm Hydro Coach</strong>, wenn du auf Android bist und eine brauchbare Gratis-Stufe brauchst.",
+          "<strong>Nimm Plant Nanny</strong>, wenn dein Problem Motivation und nicht Gedächtnis ist.",
+          "<strong>Nimm Suu</strong>, wenn das Ziel aus deinem tatsächlichen Tag berechnet werden soll statt einmal festgelegt, wenn 91 Getränke mit ihrem echten Hydrationsbeitrag zählen sollen, oder wenn dir eine App lieber ist als drei. Kostenlos für iOS und Android — mit dem ehrlichen Vorbehalt, dass die Apple-Watch-App noch aussteht."
+        ]
+      },
+      "cta": {
+        "head": "Lass das Ziel ausrechnen, was dein Tag gebraucht hat",
+        "sub": "Kostenlos für iOS und Android · Premium 3 Tage gratis",
+        "button": "Suu kostenlos laden"
+      },
+      "faq": [
+        {
+          "q": "Was ist die beste Wasser-App 2026?",
+          "a": "Das hängt davon ab, wo du einträgst. WaterMinder ist die beste Wahl auf der Apple Watch. Waterllama ist die schönste reine iOS-App. Hydro Coach ist die stärkste kostenlose Android-Option. Suu ist die beste Wahl, wenn sich das Tagesziel an Sport, Mahlzeiten und Getränken ausrichten soll statt festzustehen — und als einzige der fünf zählt sie zusätzlich Kalorien und zeichnet GPS-Workouts auf."
+        },
+        {
+          "q": "Welche Trinkerinnerung ist kostenlos?",
+          "a": "Suu und Hydro Coach haben echte Gratis-Stufen. Bei Suu ist der komplette Trinkbereich kostenlos — 91 Getränke, dynamisches Tagesziel, Apple Health und Google Health Connect, Widgets und Freundes-Ligen — dazu drei KI-Analysen pro Tag. Hydro Coach deckt gratis Zielberechnung und Erinnerungen ab, mit einigen Funktionen hinter der Bezahlschranke. WaterMinder ist kostenpflichtig."
+        },
+        {
+          "q": "Gibt es eine gute WaterMinder-Alternative für Android?",
+          "a": "WaterMinder gibt es zwar für Android, aber die stärkste Eigenschaft — das Apple-Watch-Erlebnis — greift dort nicht. Auf Android sind Hydro Coach mit der reiferen Gratis-Stufe und Suu mit einem Ziel, das auf Workouts und Mahlzeiten reagiert, plus Google Health Connect, die nächstliegenden Alternativen."
+        },
+        {
+          "q": "Zählen Kaffee und Tee zur täglichen Trinkmenge?",
+          "a": "Überwiegend ja. Die harntreibende Wirkung moderater Koffeinmengen ist kleiner als die Flüssigkeit, die das Getränk selbst liefert — eine Tasse Kaffee ist also unterm Strich positiv, nur eben nicht gleichwertig mit derselben Menge Wasser. Suu bildet das explizit ab: Jedes der 91 Getränke trägt einen Dehydrationsfaktor, 250 ml Kaffee werden also mit weniger als 250 ml Wasser verrechnet."
+        },
+        {
+          "q": "Bringt eine Trink-App wirklich mehr Flüssigkeit?",
+          "a": "Nur solange du ihre Erinnerungen noch liest. Das Scheitern läuft in der ganzen Kategorie gleich ab: Intervall-Benachrichtigungen hören nach etwa zwei Wochen auf, Information zu sein, und werden zu etwas, das man reflexhaft wegwischt. Bewerte jede App an Tag zehn genau daran."
+        },
+        {
+          "q": "Welche Wasser-App funktioniert mit Apple Health und Google Health Connect?",
+          "a": "Suu synchronisiert mit beiden — Apple Health auf iOS, Google Health Connect auf Android. WaterMinder und Waterllama synchronisieren mit Apple Health. Hydro Coach unterstützt die Health-Plattform auf Android nur teilweise, und Plant Nanny bindet keine von beiden an."
+        }
+      ],
+      "references": [
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2908954/",
+          "label": "Popkin et al. — Water, hydration and health (PMC)"
+        },
+        {
+          "href": "https://www.efsa.europa.eu/de/efsajournal/pub/1459",
+          "label": "EFSA — Referenzwerte für die Wasseraufnahme"
+        },
+        {
+          "href": "https://www.dge.de/wissenschaft/referenzwerte/wasser/",
+          "label": "DGE — Referenzwerte für die Wasserzufuhr"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/de/wasser-kalorien-sport-eine-app.html",
+          "title": "Wasser, Kalorien und Sport in einer App",
+          "desc": "Was es bringt, die drei zu verbinden."
+        },
+        {
+          "href": "/blog/de/bester-kalorienzaehler-app.html",
+          "title": "Bester Kalorienzähler 2026",
+          "desc": "Derselbe Vergleich für die Kalorien-Säule."
+        },
+        {
+          "href": "/blog/de/beste-workout-tracker-app.html",
+          "title": "Beste Workout-Tracking-App 2026",
+          "desc": "Strava, Komoot, adidas Running und Suu."
+        },
+        {
+          "href": "/blog/en/how-much-water-should-i-drink.html",
+          "title": "Wie viel Wasser am Tag?",
+          "desc": "Warum die 2-Liter-Regel die falsche Frage ist."
+        }
+      ]
+    },
+    "it": {
+      "slug": "migliore-app-per-bere-acqua",
+      "published_display": "24 agosto 2026",
+      "read_minutes": 9,
+      "badge": "💧 Confronto 2026",
+      "h1": "La migliore app per bere acqua nel 2026: provate e confrontate",
+      "meta": {
+        "title": "Migliore app per bere acqua 2026 — a confronto (WaterMinder, Waterllama, Suu) | Suu",
+        "description": "Quale app ti fa davvero bere di più? Confrontiamo Suu, WaterMinder, Waterllama, Hydro Coach e Plant Nanny su promemoria, calcolo dell'obiettivo e limiti del piano gratuito.",
+        "keywords": "migliore app per bere acqua, app promemoria acqua, app idratazione, contatore acqua gratis, alternativa waterminder, hydro coach recensione, quanta acqua bere al giorno app",
+        "og_title": "La migliore app per bere acqua nel 2026",
+        "og_description": "Suu, WaterMinder, Waterllama, Hydro Coach e Plant Nanny a confronto — su ciò che decide se la userai ancora dopo due settimane."
+      },
+      "answer": "Se hai un Apple Watch, WaterMinder resta la scelta migliore: l'app da polso è la più matura del gruppo. Se invece vuoi che l'obiettivo si aggiorni da solo — la corsa di stamattina, il pranzo salato, il caffè che non idrata quanto l'acqua — allora è Suu: l'unica delle cinque che ricalcola l'obiettivo al posto tuo, gratis su iOS e Android. Waterllama è la più bella opzione solo-iOS, Hydro Coach la migliore gratuita su Android, e Plant Nanny quella giusta se il problema non è dimenticarsi ma la motivazione.",
+      "disclosure": "Questo confronto è scritto dal team di Suu, quindi stai leggendo una fonte di parte. Per compensare, diciamo chiaramente dove i concorrenti sono migliori — WaterMinder batte Suu sull'Apple Watch, ed è il motivo più comune per scegliere altro. Funzioni e prezzi riflettono le informazioni pubbliche di agosto 2026 e cambiano spesso.",
+      "ranked": {
+        "head": "Le migliori app per bere acqua nel 2026",
+        "lead": "In ordine di quanto lavoro ti tolgono, non di quante funzioni hanno. Tutte e cinque sanno mandare una notifica ogni due ore: non è lì che si distinguono.",
+        "items": [
+          {
+            "name": "Suu",
+            "tag": "se vuoi che l'obiettivo si aggiorni da solo",
+            "body": "Gratis su iOS e Android. Traccia 91 bevande con un vero fattore di disidratazione, quindi il caffè non vale come l'acqua. L'obiettivo si muove durante la giornata: registri una corsa e sale per i liquidi persi con il sudore, registri un pasto ricco di proteine o sale e si aggiunge l'acqua che serve alla digestione — spiegandoti il perché. Conta anche le calorie da una foto e registra gli allenamenti con GPS. Non ha ancora un'app per Apple Watch: i dati dell'orologio arrivano tramite Apple Salute."
+          },
+          {
+            "name": "WaterMinder",
+            "tag": "la migliore su Apple Watch",
+            "body": "L'app più consolidata della categoria e ancora la migliore esperienza da polso: app Watch vera, complicazioni e sincronizzazione pulita con Apple Salute. A pagamento. I promemoria sono a intervalli anziché reattivi e l'elenco delle bevande è breve rispetto a Suu."
+          },
+          {
+            "name": "Waterllama",
+            "tag": "la più bella, solo iOS",
+            "body": "Simpatica, veloce e disegnata davvero bene, con ottimi widget e supporto Apple Watch. Freemium. Solo iOS, quindi esclusa per chi è su Android. La logica di idratazione è più semplice di quella di Suu: un obiettivo fisso che imposti tu."
+          },
+          {
+            "name": "Hydro Coach",
+            "tag": "la migliore gratuita su Android",
+            "body": "Buon calcolo dell'obiettivo da peso e attività, piano gratuito utilizzabile e lunga esperienza su Android, Wear OS incluso. L'interfaccia sembra datata accanto a Waterllama e i promemoria sono semplici timer. Diverse funzioni utili restano dietro il paywall."
+          },
+          {
+            "name": "Plant Nanny",
+            "tag": "se il problema è la motivazione",
+            "body": "Innaffi una pianta virtuale e cresce. Sembra banale e funziona — per chi non ha un problema di memoria ma di voglia. In cambio rinunci alla profondità dei dati: poche statistiche, nessuna vera scienza delle bevande e nessuna integrazione con le piattaforme salute."
+          }
+        ]
+      },
+      "intro": [
+        "Ogni app di questo elenco sa mandarti una notifica ogni due ore. Non è lì la differenza — di solito è il motivo per cui l'app viene disinstallata. Un promemoria che arriva mentre sei in riunione, o venti minuti dopo che hai già bevuto, ti insegna soltanto a scartarlo.",
+        "Per questo le abbiamo valutate su una sola domanda: <strong>dopo dieci giorni leggi ancora le notifiche o le scarti?</strong> Dipende da tre cose — se il promemoria reagisce a quello che hai già registrato, se arriva in un momento plausibile e se porta con sé una ragione.",
+        "\"È ora di bere\" si ignora. \"Hai registrato un pasto salato: al tuo corpo servono circa 200 ml in più per la digestione\" no. È qui che le cinque app divergono davvero, ed è l'asse su cui è costruita la tabella qui sotto."
+      ],
+      "table": {
+        "head": "Confronto completo delle funzioni",
+        "caption": "Confronto tra Suu, WaterMinder, Waterllama, Hydro Coach e Plant Nanny",
+        "col_feature": "Funzione",
+        "columns": [
+          "Suu",
+          "WaterMinder",
+          "Waterllama",
+          "Hydro Coach",
+          "Plant Nanny"
+        ],
+        "suu_col": 0,
+        "rows": [
+          {
+            "label": "Prezzo",
+            "cells": [
+              {
+                "text": "Gratis · Premium opzionale",
+                "cls": "yes"
+              },
+              {
+                "text": "A pagamento",
+                "cls": "no"
+              },
+              {
+                "text": "Freemium",
+                "cls": "yes"
+              },
+              {
+                "text": "Freemium",
+                "cls": "yes"
+              },
+              {
+                "text": "Freemium",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "iOS",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Android",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✗ solo iOS",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "App per Apple Watch",
+            "cells": [
+              {
+                "text": "In arrivo — i dati Watch passano da Apple Salute",
+                "cls": "soon"
+              },
+              {
+                "text": "✓ La migliore",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✗ (c'è Wear OS)",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Bevande tracciate",
+            "cells": [
+              {
+                "text": "91, ognuna con fattore di disidratazione",
+                "cls": "yes"
+              },
+              {
+                "text": "Elenco breve",
+                "cls": "no"
+              },
+              {
+                "text": "Elenco breve",
+                "cls": "no"
+              },
+              {
+                "text": "Elenco breve",
+                "cls": "no"
+              },
+              {
+                "text": "Solo acqua",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "L'obiettivo reagisce all'attività fisica",
+            "cells": [
+              {
+                "text": "✓ automatico dagli allenamenti",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "L'obiettivo reagisce ai pasti",
+            "cells": [
+              {
+                "text": "✓ acqua per la digestione da proteine e sodio",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Logica dei promemoria",
+            "cells": [
+              {
+                "text": "Reattiva — si sposta con la giornata",
+                "cls": "yes"
+              },
+              {
+                "text": "A intervalli",
+                "cls": "no"
+              },
+              {
+                "text": "A intervalli",
+                "cls": "no"
+              },
+              {
+                "text": "A intervalli",
+                "cls": "no"
+              },
+              {
+                "text": "A intervalli",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Conteggio calorie nella stessa app",
+            "cells": [
+              {
+                "text": "✓ foto, voce e manuale",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Registrazione allenamenti GPS",
+            "cells": [
+              {
+                "text": "✓ ~50 attività",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Apple Salute",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Google Health Connect",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗ solo iOS",
+                "cls": "no"
+              },
+              {
+                "text": "Parziale",
+                "cls": "soon"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Widget schermata Home e Blocco",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Attività Live / Dynamic Island",
+            "cells": [
+              {
+                "text": "✓ iOS",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Leghe con gli amici",
+            "cells": [
+              {
+                "text": "✓ settimanali, fino a 4 persone",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Lingue dell'interfaccia",
+            "cells": [
+              {
+                "text": "7, italiano incluso",
+                "cls": "yes"
+              },
+              {
+                "text": "Diverse",
+                "cls": "soon"
+              },
+              {
+                "text": "Diverse",
+                "cls": "soon"
+              },
+              {
+                "text": "Diverse",
+                "cls": "soon"
+              },
+              {
+                "text": "Diverse",
+                "cls": "soon"
+              }
+            ]
+          },
+          {
+            "label": "Esportazione PDF/CSV",
+            "cells": [
+              {
+                "text": "✓ Premium",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "Premium",
+                "cls": "soon"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          }
+        ]
+      },
+      "analysis": [
+        {
+          "head": "Cosa rende utile un promemoria per bere",
+          "body": [
+            "I promemoria che sopravvivono alla seconda settimana hanno tre caratteristiche. Valuta ogni app di questo elenco su queste, non sul numero di funzioni."
+          ],
+          "list": [
+            "<strong>Reagiscono a quello che hai già registrato.</strong> Se hai appena bevuto 500 ml, la prossima spinta dovrebbe spostarsi, non arrivare comunque secondo programma.",
+            "<strong>Arrivano in momenti plausibili.</strong> Al risveglio, dopo un pasto, dopo l'allenamento: momenti in cui bere è naturale invece che un'interruzione.",
+            "<strong>Portano una ragione.</strong> Un numero da solo è una lagna. Un numero con una causa — sudore, sodio, la notte senza liquidi — è informazione."
+          ],
+          "callout": "Prova pratica: qualunque app tu scelga, giudicala dopo dieci giorni su una sola domanda — leggi ancora le notifiche o le scarti? Se le scarti, la logica dei promemoria non fa per te e nessuna funzione in più lo risolverà."
+        },
+        {
+          "head": "Dove ciascuna app è davvero la scelta migliore",
+          "body": [
+            "Nessuna di queste è una brutta app. Sono pensate per persone diverse:"
+          ],
+          "list": [
+            "<strong>WaterMinder</strong> — se registri più spesso dall'Apple Watch che dal telefono. Suu lì non ha ancora un'app, ed è una lacuna reale.",
+            "<strong>Waterllama</strong> — se sei su iOS, vuoi un'app piacevole da aprire e ti basta un obiettivo fisso.",
+            "<strong>Hydro Coach</strong> — se sei su Android e vuoi un piano gratuito capace senza pagare nulla.",
+            "<strong>Plant Nanny</strong> — se sai benissimo che dovresti bere di più e semplicemente non ti importa abbastanza. Una pianta che cresce risolve un problema di motivazione che i dati non risolvono.",
+            "<strong>Suu</strong> — se vuoi che l'obiettivo sia calcolato e non indovinato, se bevi anche altro oltre all'acqua e vuoi che venga contato onestamente, o se preferisci non tenere app separate per calorie e allenamenti."
+          ]
+        },
+        {
+          "head": "Quello che un'app solo-idratazione non può fare",
+          "body": [
+            "Un'app per l'acqua sa solo cosa hai bevuto. Non sa che stamattina hai corso 8 km, né che il pranzo conteneva 1.200 mg di sodio. Il suo \"obiettivo personale\" è quindi una formula applicata una volta all'iscrizione — peso, forse livello di attività, forse clima — e poi lasciata ferma per sempre.",
+            "In Suu l'obiettivo si muove perché l'app conosce anche gli altri due pezzi. La corsa registrata con il GPS lo alza per il sudore stimato. Il pasto fotografato lo alza per l'acqua che serve alla digestione. Il caffè registrato lo alza meno dell'acqua, perché viene conteggiato con il suo reale contributo di idratazione.",
+            "Se questo conti per te dipende dalle tue giornate. Se sono simili e bevi già abbastanza, un obiettivo fisso va benissimo e un'app più semplice è lo strumento giusto. Se invece variano — giorni di allenamento e giorni alla scrivania, estate e inverno — un numero fisso è sbagliato quasi sempre, in un senso o nell'altro."
+          ]
+        }
+      ],
+      "verdict": {
+        "head": "Verdetto",
+        "body": [
+          "<strong>Scegli WaterMinder</strong> se registri dall'Apple Watch. È l'app più matura della categoria e al polso resta la migliore.",
+          "<strong>Scegli Waterllama</strong> se sei su iOS e vuoi l'app più curata, con un obiettivo fisso e lineare.",
+          "<strong>Scegli Hydro Coach</strong> se sei su Android e vuoi un piano gratuito capace.",
+          "<strong>Scegli Plant Nanny</strong> se il tuo problema è la motivazione e non la memoria.",
+          "<strong>Scegli Suu</strong> se vuoi un obiettivo calcolato sulla tua giornata reale invece che impostato una volta sola, se vuoi 91 bevande contate per il loro reale contributo di idratazione, o se preferisci tracciare acqua, calorie e allenamenti in un'app sola. È gratis su iOS e Android, e l'avvertenza onesta è che l'app per Apple Watch deve ancora arrivare."
+        ]
+      },
+      "cta": {
+        "head": "Lascia che sia l'obiettivo a calcolare la tua giornata",
+        "sub": "Gratis su iOS e Android · Premium gratis per 3 giorni",
+        "button": "Scarica Suu gratis"
+      },
+      "faq": [
+        {
+          "q": "Qual è la migliore app per bere acqua nel 2026?",
+          "a": "Dipende da dove registri. WaterMinder è la scelta migliore se tracci dall'Apple Watch. Waterllama è la migliore opzione solo-iOS per design. Hydro Coach è la più valida gratuita su Android. Suu è la migliore se vuoi che l'obiettivo giornaliero si adatti ad allenamenti, pasti e bevande invece di restare fisso — ed è l'unica delle cinque che conta anche le calorie e registra allenamenti con GPS."
+        },
+        {
+          "q": "Qual è la migliore app gratuita per bere acqua?",
+          "a": "Suu e Hydro Coach hanno veri piani gratuiti. Il piano gratuito di Suu include tutta la parte idratazione — 91 bevande, obiettivo dinamico, sincronizzazione con Apple Salute e Google Health Connect, widget e leghe con gli amici — più tre analisi AI al giorno. Hydro Coach copre gratis calcolo dell'obiettivo e promemoria, con diverse funzioni a pagamento. WaterMinder è a pagamento."
+        },
+        {
+          "q": "Esiste una buona alternativa a WaterMinder per Android?",
+          "a": "WaterMinder ha un'app Android, ma la sua funzione più forte — l'esperienza su Apple Watch — lì non vale. Su Android le alternative più vicine sono Hydro Coach, che ha il piano gratuito più maturo, e Suu, che aggiunge un obiettivo reattivo ad allenamenti e pasti oltre alla sincronizzazione con Google Health Connect."
+        },
+        {
+          "q": "Caffè e tè contano nell'acqua giornaliera?",
+          "a": "Sì, in gran parte. L'effetto diuretico di una quantità moderata di caffeina è inferiore ai liquidi che la bevanda stessa apporta, quindi una tazza di caffè è un contributo netto positivo — semplicemente non equivale allo stesso volume d'acqua. Suu è l'app dell'elenco che modella questo in modo esplicito: ognuna delle 91 bevande ha un fattore di disidratazione, così 250 ml di caffè valgono meno di 250 ml d'acqua."
+        },
+        {
+          "q": "Un'app per l'acqua fa davvero bere di più?",
+          "a": "Solo finché continui a leggerne i promemoria. Il modo in cui si fallisce è identico in tutta la categoria: le notifiche a intervalli smettono di essere informazione dopo circa due settimane e diventano qualcosa che scarti per riflesso. Qualunque app tu scelga, giudicala al decimo giorno solo su questo."
+        },
+        {
+          "q": "Quale app per l'acqua funziona con Apple Salute e Google Health Connect?",
+          "a": "Suu si sincronizza con entrambi — Apple Salute su iOS e Google Health Connect su Android. WaterMinder e Waterllama si sincronizzano con Apple Salute. Il supporto di Hydro Coach alle piattaforme salute su Android è parziale, e Plant Nanny non si integra con nessuna delle due."
+        }
+      ],
+      "references": [
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2908954/",
+          "label": "Popkin et al. — Water, hydration and health (PMC)"
+        },
+        {
+          "href": "https://www.efsa.europa.eu/it/efsajournal/pub/1459",
+          "label": "EFSA — Valori di riferimento per l'acqua"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6835337/",
+          "label": "Sudorazione e reintegro dei liquidi (PMC)"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/it/acqua-calorie-allenamento-una-app.html",
+          "title": "Acqua, calorie e allenamento in un'app",
+          "desc": "Cosa cambia collegare i tre."
+        },
+        {
+          "href": "/blog/it/migliore-app-conta-calorie.html",
+          "title": "Migliore app conta calorie 2026",
+          "desc": "Lo stesso confronto per le calorie."
+        },
+        {
+          "href": "/blog/it/migliore-app-allenamento.html",
+          "title": "Migliore app allenamento 2026",
+          "desc": "Strava, Nike Run Club, adidas Running e Suu."
+        },
+        {
+          "href": "/blog/en/how-much-water-should-i-drink.html",
+          "title": "Quanta acqua bere al giorno?",
+          "desc": "Perché la regola dei 2 litri è la domanda sbagliata."
+        }
       ]
     }
   }

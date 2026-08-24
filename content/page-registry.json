@@ -14,11 +14,9 @@
   "_xdefault": "en",
   "_xdefault_comment": "hreflang=\"x-default\" HEDEFİ — dil tercihi belirsiz kullanıcıya/crawler'a sunulacak sürüm. _default'tan ayrıdır: URL yapısı Türkçe temelli kalırken varsayılan sunum dili İngilizce. Bu ayrım olmadan 220 küme 'varsayılan Suu = Türkçe' sinyali veriyordu.",
   "_shared_comment": "Tek URL üzerinde sekmeli çok dil sunan sayfalar — dil seçici bunlarda gizlenir.",
-  "_parked_comment": "de/it/hi 2026-08-20'de home ailesinden çıkarıldı: bu üç dilde yalnızca karşılama sayfası vardı (diğer 4 dilde 50-69 sayfa), hreflang bir kümeye işaret ediyordu ama arkasında içerik yoktu. Sayfalar yayında ve sitemap'te kalıyor, yalnızca hreflang beyanı kaldırıldı. Geri eklemek için aşağıdaki satırları home'a taşıyıp inject-hreflang.py --apply çalıştırın.",
+  "_parked_comment": "hi 2026-08-20'de home ailesinden çıkarıldı: o dilde yalnızca karşılama sayfası var, hreflang bir kümeye işaret ediyor ama arkasında içerik yok. Sayfa yayında ve sitemap'te kalıyor, yalnızca hreflang beyanı kaldırıldı. de ve it 2026-08-24'te geri alındı: artık ana sayfa + blog indeksi + karşılaştırma merkezi + para sorgusu yazıları var. Geri eklemek için aşağıdaki satırı home'a taşıyıp inject-hreflang.py --apply çalıştırın.",
   "_parked": {
     "home": {
-      "de": "hosgeldiniz-de.html",
-      "it": "hosgeldiniz-it.html",
       "hi": "hosgeldiniz-hi.html"
     }
   },
@@ -32,7 +30,9 @@
       "tr": "/",
       "en": "hosgeldiniz-en.html",
       "ar": "hosgeldiniz-ar.html",
-      "ru": "hosgeldiniz-ru.html"
+      "ru": "hosgeldiniz-ru.html",
+      "de": "hosgeldiniz-de.html",
+      "it": "hosgeldiniz-it.html"
     },
     "features": {
       "tr": "ozellikler.html",
@@ -56,7 +56,9 @@
       "tr": "blog.html",
       "en": "blog-en.html",
       "ar": "blog-ar.html",
-      "ru": "blog-ru.html"
+      "ru": "blog-ru.html",
+      "de": "blog-de.html",
+      "it": "blog-it.html"
     },
     "about": {
       "tr": "hakkimizda.html",
@@ -117,7 +119,9 @@
       "tr": "karsilastirmalar.html",
       "en": "comparisons.html",
       "ar": "muqaranat.html",
-      "ru": "sravneniya.html"
+      "ru": "sravneniya.html",
+      "de": "vergleiche.html",
+      "it": "confronti.html"
     },
     "glossary": {
       "tr": "sozluk.html",
@@ -196,7 +200,9 @@
     },
     "en-iyi-egzersiz-takip-uygulamasi": {
       "tr": "en-iyi-egzersiz-takip-uygulamasi",
-      "en": "best-workout-tracker-app"
+      "en": "best-workout-tracker-app",
+      "de": "beste-workout-tracker-app",
+      "it": "migliore-app-allenamento"
     },
     "en-iyi-fotografla-kalori-uygulamasi": {
       "tr": "en-iyi-fotografla-kalori-uygulamasi",
@@ -206,7 +212,9 @@
       "tr": "en-iyi-kalori-uygulamasi",
       "en": "best-calorie-counting-app",
       "ar": "afdal-tatbiq-hisab-suerat",
-      "ru": "luchshee-prilozhenie-podscheta-kalorij"
+      "ru": "luchshee-prilozhenie-podscheta-kalorij",
+      "de": "bester-kalorienzaehler-app",
+      "it": "migliore-app-conta-calorie"
     },
     "enerji-icecegi-kontrolu": {
       "tr": "enerji-icecegi-kontrolu",
@@ -334,13 +342,17 @@
       "tr": "su-kalori-egzersiz-tek-uygulama",
       "en": "water-calorie-exercise-one-app",
       "ar": "tatbiq-wahid-mae-suerat-tamarin",
-      "ru": "voda-kalorii-trenirovki-odno-prilozhenie"
+      "ru": "voda-kalorii-trenirovki-odno-prilozhenie",
+      "de": "wasser-kalorien-sport-eine-app",
+      "it": "acqua-calorie-allenamento-una-app"
     },
     "su-takip-uygulamasi-neden-kullanmaliyim": {
       "tr": "su-takip-uygulamasi-neden-kullanmaliyim",
       "en": "best-water-tracking-app",
       "ar": "afdal-tatbiq-mae",
-      "ru": "luchshee-prilozhenie-dlya-vody"
+      "ru": "luchshee-prilozhenie-dlya-vody",
+      "de": "beste-wasser-tracking-app",
+      "it": "migliore-app-per-bere-acqua"
     },
     "su-ve-bobrek-sagligi": {
       "tr": "su-ve-bobrek-sagligi",
