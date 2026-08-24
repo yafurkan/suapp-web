@@ -1,0 +1,229 @@
+{
+  "_note": "SU SÜTUNU GİRİŞ SAYFASI — üç para sorgusundan yapay zekâ aramalarında en güçlü olanı (project_geo_en_baseline, 2026-08-17: 'best water tracking app' sorgusunda kendi sayfalarımız alıntılanıyor). 2026-08-24'te elle yazılmış HTML'den boru hattına taşındı. Taşımada düzeltilen canlı yanlış iddialar: '5.0 App Store' (rating_app_store null — teyit edilmemiş), tabloda 'Apple Watch Support ✓' (Watch uygulaması yolda), '100+ içecek' (kanon 91), 'Arabic & Turkish & English' (7 dil). Waterllama eklendi — gerçek rakip, sitede hiç geçmiyordu. Hedef sorgular: best water tracking app, best water reminder app, best hydration app, WaterMinder alternative.",
+  "published": "2026-03-15",
+  "modified": "2026-08-24",
+  "pages": {
+    "en": {
+      "slug": "best-water-tracking-app",
+      "published_display": "15 March 2026",
+      "read_minutes": 9,
+      "badge": "💧 Comparison 2026",
+      "h1": "The Best Water Tracking Apps in 2026: Tested and Compared",
+      "meta": {
+        "title": "Best Water Tracking App 2026 — Tested and Compared (WaterMinder, Waterllama, Suu) | Suu",
+        "description": "Which water tracking app actually gets you drinking? We compared Suu, WaterMinder, Waterllama, Hydro Coach and Plant Nanny on reminder quality, goal accuracy, beverage handling and free plan limits.",
+        "keywords": "best water tracking app, best water reminder app, best hydration app 2026, waterminder alternative, waterllama vs waterminder, hydro coach review, water intake app iphone, water tracker android, free water tracking app",
+        "og_title": "The Best Water Tracking Apps in 2026",
+        "og_description": "Suu, WaterMinder, Waterllama, Hydro Coach and Plant Nanny compared — on the one thing that decides whether you keep using a water app past week two."
+      },
+      "answer": "If you own an Apple Watch and want the most polished wrist experience, WaterMinder is still the pick. If you want the tracking to be free and to react to your day — the run you logged, the salty meal you ate, the coffee that does not hydrate you like water — Suu is the only one of these five that adjusts the goal itself instead of asking you to. Waterllama is the best-looking iOS-only option, Hydro Coach the strongest free Android choice, and Plant Nanny the one to pick if motivation, not memory, is your actual problem.",
+      "disclosure": "This comparison was written by the Suu team, so you are reading a biased source. To offset that we have been explicit about where each competitor beats Suu — and WaterMinder beats it on the Apple Watch, which is the single most common reason to choose something else. Competitor features and prices reflect publicly available information as of August 2026 and change frequently.",
+      "ranked": {
+        "head": "The best water tracking apps in 2026",
+        "lead": "Ranked by how much of the work the app does for you, rather than by feature count. Every app here can send a notification every two hours; that is not what separates them.",
+        "items": [
+          {
+            "name": "Suu",
+            "tag": "best if you want the goal to adjust itself",
+            "body": "Free on iOS and Android. Tracks 91 beverages with a real dehydration factor, so coffee is not counted the same as water. The goal moves during the day: log a run and it rises for the fluid you sweated out, log a high-protein or salty meal and it adds the water digestion needs — and tells you why. Also counts calories from a meal photo and records GPS workouts, which is the reason most people here pick it over a dedicated hydration app. No Apple Watch app yet — Watch data reaches Suu through Apple Health."
+          },
+          {
+            "name": "WaterMinder",
+            "tag": "best on Apple Watch",
+            "body": "The most established app in the category and still the best wrist experience: a real Apple Watch app, complications, and clean Apple Health sync. Paid. Reminders are interval-based rather than reactive, and the beverage list is short compared with Suu's. If you log from your watch more often than your phone, this is the one."
+          },
+          {
+            "name": "Waterllama",
+            "tag": "best-looking, iOS only",
+            "body": "Charming, fast and genuinely well designed, with strong widget and Apple Watch support. Freemium. iOS only, so it is off the table for Android users and for households split across platforms. Hydration logic is simpler than Suu's — a fixed goal you set, not one that reacts to your day."
+          },
+          {
+            "name": "Hydro Coach",
+            "tag": "best free option on Android",
+            "body": "Solid goal calculation from weight and activity, a usable free tier, and long-standing Android support including Wear OS. The interface looks dated next to Waterllama and reminders are timer-based. Several useful features sit behind the paywall."
+          },
+          {
+            "name": "Plant Nanny",
+            "tag": "best if motivation is the problem",
+            "body": "You water a virtual plant and it grows. That sounds trivial and it works — for people whose problem is caring, not remembering. What you give up is data depth: limited analytics, no meaningful beverage science, and no health-platform integration. Freemium."
+          }
+        ]
+      },
+      "intro": [
+        "Every app on this list can send you a notification every two hours. That is not the differentiator — it is usually the reason people uninstall. A reminder that fires while you are in a meeting, or twenty minutes after you already drank, trains you to swipe it away.",
+        "So we judged these apps on a single question: <strong>after ten days, are you still reading the notifications or swiping them away?</strong> That comes down to three properties — whether the reminder reacts to what you already logged, whether it lands at a plausible moment, and whether it carries a reason.",
+        "\"Time to drink\" is ignorable. \"You logged a salty meal — your body needs about 200 ml extra for digestion\" is not. This is where the five apps genuinely diverge, and it is the axis the table below is built on."
+      ],
+      "table": {
+        "head": "Full feature comparison",
+        "caption": "Comparison of Suu, WaterMinder, Waterllama, Hydro Coach and Plant Nanny",
+        "col_feature": "Feature",
+        "columns": ["Suu", "WaterMinder", "Waterllama", "Hydro Coach", "Plant Nanny"],
+        "suu_col": 0,
+        "rows": [
+          {"label": "Price", "cells": [
+            {"text": "Free · Premium optional", "cls": "yes"},
+            {"text": "Paid", "cls": "no"},
+            {"text": "Freemium", "cls": "yes"},
+            {"text": "Freemium", "cls": "yes"},
+            {"text": "Freemium", "cls": "yes"}]},
+          {"label": "iOS", "cells": [
+            {"text": "✓", "cls": "yes"}, {"text": "✓", "cls": "yes"},
+            {"text": "✓", "cls": "yes"}, {"text": "✓", "cls": "yes"}, {"text": "✓", "cls": "yes"}]},
+          {"label": "Android", "cells": [
+            {"text": "✓", "cls": "yes"}, {"text": "✓", "cls": "yes"},
+            {"text": "✗ iOS only", "cls": "no"}, {"text": "✓", "cls": "yes"}, {"text": "✓", "cls": "yes"}]},
+          {"label": "Apple Watch app", "cells": [
+            {"text": "Coming soon — Watch data syncs via Apple Health", "cls": "soon"},
+            {"text": "✓ Best in class", "cls": "yes"},
+            {"text": "✓", "cls": "yes"},
+            {"text": "✗ (Wear OS instead)", "cls": "no"},
+            {"text": "✗", "cls": "no"}]},
+          {"label": "Beverages tracked", "cells": [
+            {"text": "91, each with a dehydration factor", "cls": "yes"},
+            {"text": "A short list", "cls": "no"},
+            {"text": "A short list", "cls": "no"},
+            {"text": "A short list", "cls": "no"},
+            {"text": "Water only", "cls": "no"}]},
+          {"label": "Goal reacts to exercise", "cells": [
+            {"text": "✓ Automatic from logged workouts", "cls": "yes"},
+            {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"},
+            {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"}]},
+          {"label": "Goal reacts to food", "cells": [
+            {"text": "✓ Digestion water from protein and sodium", "cls": "yes"},
+            {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"},
+            {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"}]},
+          {"label": "Reminder logic", "cells": [
+            {"text": "Reactive — shifts with what you logged", "cls": "yes"},
+            {"text": "Interval", "cls": "no"}, {"text": "Interval", "cls": "no"},
+            {"text": "Interval", "cls": "no"}, {"text": "Interval", "cls": "no"}]},
+          {"label": "Calorie counting in the same app", "cells": [
+            {"text": "✓ Photo, voice and manual", "cls": "yes"},
+            {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"},
+            {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"}]},
+          {"label": "GPS workout tracking", "cells": [
+            {"text": "✓ ~50 activities", "cls": "yes"},
+            {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"},
+            {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"}]},
+          {"label": "Apple Health sync", "cells": [
+            {"text": "✓", "cls": "yes"}, {"text": "✓", "cls": "yes"},
+            {"text": "✓", "cls": "yes"}, {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"}]},
+          {"label": "Google Health Connect sync", "cells": [
+            {"text": "✓", "cls": "yes"}, {"text": "✗", "cls": "no"},
+            {"text": "✗ iOS only", "cls": "no"}, {"text": "Partial", "cls": "soon"},
+            {"text": "✗", "cls": "no"}]},
+          {"label": "Home and Lock Screen widgets", "cells": [
+            {"text": "✓", "cls": "yes"}, {"text": "✓", "cls": "yes"},
+            {"text": "✓", "cls": "yes"}, {"text": "✓", "cls": "yes"}, {"text": "✗", "cls": "no"}]},
+          {"label": "Live Activity / Dynamic Island", "cells": [
+            {"text": "✓ iOS", "cls": "yes"}, {"text": "✗", "cls": "no"},
+            {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"}]},
+          {"label": "Friend leagues", "cells": [
+            {"text": "✓ Weekly, up to 4 people, cross-platform", "cls": "yes"},
+            {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"},
+            {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"}]},
+          {"label": "Gamification", "cells": [
+            {"text": "✓ Pet, badges, streaks", "cls": "yes"},
+            {"text": "Badges", "cls": "soon"}, {"text": "✓ Strong", "cls": "yes"},
+            {"text": "✗", "cls": "no"}, {"text": "✓ Its whole idea", "cls": "yes"}]},
+          {"label": "Right-to-left Arabic interface", "cells": [
+            {"text": "✓ Full RTL", "cls": "yes"}, {"text": "✗", "cls": "no"},
+            {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"}]},
+          {"label": "Interface languages", "cells": [
+            {"text": "7", "cls": "yes"}, {"text": "Several", "cls": "soon"},
+            {"text": "Several", "cls": "soon"}, {"text": "Several", "cls": "soon"},
+            {"text": "Several", "cls": "soon"}]},
+          {"label": "PDF / CSV export", "cells": [
+            {"text": "✓ Premium", "cls": "yes"}, {"text": "✓", "cls": "yes"},
+            {"text": "✗", "cls": "no"}, {"text": "Premium", "cls": "soon"},
+            {"text": "✗", "cls": "no"}]}
+        ]
+      },
+      "analysis": [
+        {
+          "head": "What makes a water reminder actually work",
+          "body": [
+            "The reminders that survive past week two share three properties. Judge any app on this list against them rather than on its feature count."
+          ],
+          "list": [
+            "<strong>They react to what you already logged.</strong> If you just drank 500 ml, the next nudge should move — not arrive on schedule anyway.",
+            "<strong>They land at plausible moments.</strong> Waking up, after a meal, after a workout: points where drinking is natural rather than an interruption.",
+            "<strong>They carry a reason.</strong> A number on its own is a nag. A number with a cause attached — sweat loss, sodium, an overnight gap — is information."
+          ],
+          "callout": "Practical test: whichever app you pick, judge it after ten days on one question — are you still reading the notifications, or swiping them away? If it is the second, the reminder logic is wrong for you and no amount of features will fix it."
+        },
+        {
+          "head": "Where each app is genuinely the better choice",
+          "body": ["None of these is a bad app. They are built for different people:"],
+          "list": [
+            "<strong>WaterMinder</strong> — if you log from an Apple Watch more often than from your phone. Suu has no Watch app yet, and that gap is real.",
+            "<strong>Waterllama</strong> — if you are on iOS, you want the app to be a pleasure to open, and a fixed daily goal is all you need.",
+            "<strong>Hydro Coach</strong> — if you are on Android and want a capable free tier without paying anything.",
+            "<strong>Plant Nanny</strong> — if you know perfectly well you should drink more and simply do not care enough. A growing plant solves a motivation problem that data cannot.",
+            "<strong>Suu</strong> — if you want the daily target to be calculated rather than guessed, if you drink things other than water and want that counted honestly, or if you would rather not run a separate app for calories and workouts."
+          ]
+        },
+        {
+          "head": "The thing dedicated hydration apps cannot do",
+          "body": [
+            "A hydration app knows only what you drank. It does not know that you ran 8 km this morning, or that lunch was 1,200 mg of sodium. So its \"personal goal\" is really a formula applied once at signup — weight, maybe activity level, maybe climate — and then held fixed forever.",
+            "Suu's goal moves because the app also holds the other two pieces. The GPS run you recorded raises it for estimated sweat loss. The meal you photographed raises it for the water digestion requires. The coffee you logged raises it by less than water would, because coffee is counted with its actual hydration contribution rather than as an equal volume.",
+            "Whether that matters depends on you. If your days are similar and you already drink enough, a fixed goal is fine and a simpler app is the better tool. If your days vary — training days and desk days, summer and winter — a fixed number is wrong most of the time in one direction or the other."
+          ]
+        }
+      ],
+      "verdict": {
+        "head": "Verdict",
+        "body": [
+          "<strong>Choose WaterMinder</strong> if the Apple Watch is where you log. It is the most mature app in the category and its wrist experience is still the best one here.",
+          "<strong>Choose Waterllama</strong> if you are on iOS and want the nicest-feeling app, with a straightforward fixed goal.",
+          "<strong>Choose Hydro Coach</strong> if you are on Android and want a capable free tier.",
+          "<strong>Choose Plant Nanny</strong> if your problem is motivation rather than memory.",
+          "<strong>Choose Suu</strong> if you want the goal calculated from your actual day rather than set once, if you want 91 beverages counted by their real hydration contribution, or if you would rather track water, calories and workouts in one app than three. It is free on iOS and Android, and the honest caveat is that the Apple Watch app is still on the way."
+        ]
+      },
+      "cta": {
+        "head": "Let the goal work out what your day needed",
+        "sub": "Free on iOS and Android · Premium free for 3 days",
+        "button": "Download Suu Free"
+      },
+      "faq": [
+        {
+          "q": "What is the best water tracking app in 2026?",
+          "a": "It depends on how you log. WaterMinder is the best choice if you track from an Apple Watch. Waterllama is the best-designed iOS-only option. Hydro Coach is the strongest free Android pick. Suu is the best choice if you want the daily goal to adjust itself to your workouts, meals and drinks instead of staying fixed — and it is the only one of the five that also counts calories and records GPS workouts."
+        },
+        {
+          "q": "What is the best free water tracking app?",
+          "a": "Suu and Hydro Coach both have real free tiers. Suu's free tier includes the full hydration side — 91 beverages, dynamic daily goal, Apple Health and Google Health Connect sync, widgets and friend leagues — plus three AI food analyses a day; Premium is for unlimited photo calorie analysis and reports. Hydro Coach's free tier covers goal calculation and reminders, with several features paywalled. WaterMinder is paid."
+        },
+        {
+          "q": "Is there a good WaterMinder alternative for Android?",
+          "a": "WaterMinder does publish an Android app, but its strongest feature — the Apple Watch experience — does not apply there. On Android the closest alternatives are Hydro Coach, which has the most mature free tier, and Suu, which adds a goal that reacts to logged workouts and meals plus Google Health Connect sync."
+        },
+        {
+          "q": "Do coffee and tea count toward daily water intake?",
+          "a": "Yes, mostly. The diuretic effect of moderate caffeine intake is smaller than the fluid the drink itself provides, so a cup of coffee is a net positive for hydration — just not equal to the same volume of water. Suu is the app on this list that models this explicitly: each of its 91 beverages carries a dehydration factor, so 250 ml of coffee is credited with less than 250 ml of water."
+        },
+        {
+          "q": "Does a water tracking app actually make you drink more?",
+          "a": "Only if you keep reading its reminders. The failure mode is uniform across every app in the category: interval notifications stop being information after about two weeks and become something you dismiss reflexively. Whichever app you choose, judge it at day ten on that question alone."
+        },
+        {
+          "q": "Which water app works with Apple Health and Google Health Connect?",
+          "a": "Suu syncs with both — Apple Health on iOS and Google Health Connect on Android. WaterMinder and Waterllama sync with Apple Health. Hydro Coach's health-platform support on Android is partial, and Plant Nanny does not integrate with either."
+        }
+      ],
+      "references": [
+        {"href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2908954/", "label": "Popkin et al. — Water, hydration and health (PMC)"},
+        {"href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459", "label": "EFSA — Dietary reference values for water"},
+        {"href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6835337/", "label": "Sweat rate and fluid replacement during exercise (PMC)"}
+      ],
+      "related": [
+        {"href": "/blog/en/water-calorie-exercise-one-app.html", "title": "Water + calories + exercise in one app", "desc": "What connecting the three actually gains you."},
+        {"href": "/blog/en/how-much-water-should-i-drink.html", "title": "How much water should I drink a day?", "desc": "Why the 2-litre rule is the wrong question."},
+        {"href": "/blog/en/hydration-score-explained.html", "title": "What is a hydration score?", "desc": "How the Suu Index turns a day of drinking into 0–100."},
+        {"href": "/blog/en/best-calorie-counting-app.html", "title": "Best calorie counting app 2026", "desc": "The same comparison, for the calorie column."}
+      ]
+    }
+  }
+}
