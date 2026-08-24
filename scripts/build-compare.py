@@ -29,7 +29,9 @@ Kullanım:
 """
 from __future__ import annotations
 
+import html
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -101,6 +103,14 @@ def abs_url(lang: str, slug: str) -> str:
     return f"{BASE}/{rel_path(lang, slug)}"
 
 
+RE_TAGS = re.compile(r"<[^>]+>")
+
+
+def plain(text: str) -> str:
+    """Şema alanları düz metin ister; gövde metinleri <strong> vb. içerebiliyor."""
+    return html.unescape(RE_TAGS.sub("", text)).strip()
+
+
 def build_jsonld(lang: str, topic: str, data: dict, page: dict, facts: dict, url: str) -> str:
     founder = facts["entities"]["founder"]
     # Tablo iki biçimden birinde olabilir:
@@ -116,6 +126,43 @@ def build_jsonld(lang: str, topic: str, data: dict, page: dict, facts: dict, url
         else:
             apps.append({"@type": "SoftwareApplication", "name": name,
                          "applicationCategory": "HealthApplication"})
+
+    # ItemList iki kaynaktan gelebilir. "ranked" bloğu varsa sayfa gerçek bir
+    # SIRALAMA sunuyor (1. en iyi) ve şema onu yansıtmalı — tablodan üretilen
+    # liste yalnızca sütun sırası, sıralama değil. İkisini birden basmak tek
+    # sayfada çelişen iki ItemList demek olurdu.
+    ranked = page.get("ranked")
+    if ranked:
+        item_list = {
+            "@type": "ItemList",
+            "@id": f"{url}#itemlist",
+            "name": ranked["head"],
+            "inLanguage": lang,
+            "itemListOrder": "https://schema.org/ItemListOrderAscending",
+            "numberOfItems": len(ranked["items"]),
+            "itemListElement": [
+                {"@type": "ListItem", "position": i, "name": it["name"],
+                 "item": ({"@type": "SoftwareApplication", "@id": f"{BASE}/#suuapp-ios",
+                           "name": "Suu", "description": plain(it["body"])}
+                          if it["name"] == "Suu" else
+                          {"@type": "SoftwareApplication", "name": it["name"],
+                           "applicationCategory": "HealthApplication",
+                           "description": plain(it["body"])})}
+                for i, it in enumerate(ranked["items"], 1)
+            ],
+        }
+    else:
+        item_list = {
+            "@type": "ItemList",
+            "@id": f"{url}#itemlist",
+            "name": page["table"]["head"],
+            "inLanguage": lang,
+            "itemListOrder": "https://schema.org/ItemListOrderDescending",
+            "numberOfItems": len(apps),
+            "itemListElement": [
+                {"@type": "ListItem", "position": i, "item": a} for i, a in enumerate(apps, 1)
+            ],
+        }
 
     graph = [
         # Organization ve Person düğümleri sayfada TAM olarak bulunmalı —
@@ -144,7 +191,11 @@ def build_jsonld(lang: str, topic: str, data: dict, page: dict, facts: dict, url
             "description": page["meta"]["description"],
             "image": f"{BASE}/assets/og-image.png",
             "datePublished": data["published"],
-            "dateModified": data["published"],
+            # Tazelik sinyali: elle yazılmış sayfayı boru hattına taşımak veya
+            # rakip tablosunu güncellemek yayın tarihini değiştirmez, ama
+            # dateModified'ı değiştirmelidir. Yoksa "2026 karşılaştırması"
+            # diyen bir sayfa arama motoruna aylar önce donmuş görünür.
+            "dateModified": data.get("modified", data["published"]),
             "inLanguage": lang,
             "mainEntityOfPage": url,
             "author": {"@id": f"{BASE}/#furkan"},
@@ -153,17 +204,7 @@ def build_jsonld(lang: str, topic: str, data: dict, page: dict, facts: dict, url
             "speakable": {"@type": "SpeakableSpecification",
                           "cssSelector": [".answer-box", "h1", "h2", ".verdict p"]},
         },
-        {
-            "@type": "ItemList",
-            "@id": f"{url}#itemlist",
-            "name": page["table"]["head"],
-            "inLanguage": lang,
-            "itemListOrder": "https://schema.org/ItemListOrderDescending",
-            "numberOfItems": len(apps),
-            "itemListElement": [
-                {"@type": "ListItem", "position": i, "item": a} for i, a in enumerate(apps, 1)
-            ],
-        },
+        item_list,
         {
             "@type": "FAQPage",
             "@id": f"{url}#faq",

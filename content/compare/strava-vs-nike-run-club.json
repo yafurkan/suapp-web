@@ -1,0 +1,139 @@
+{
+  "_note": "RAKİP-vs-RAKİP — EGZERSİZ SÜTUNU. Suu tabloda ve kararda HİÇ geçmiyor (suu_col: -1). Egzersiz sütunu üç para sorgusu içinde en zayıfımız (project_geo_en_baseline: 'Strava alternative / GPS run tracker' sorgusunda YOK) — tarafsız bir kaynak olarak girmek satıcı sayfasından daha hızlı alıntı kazandırıyor. Hedef sorgular: strava vs nike run club, best free running app, nike run club alternative.",
+  "published": "2026-08-24",
+  "pages": {
+    "en": {
+      "slug": "strava-vs-nike-run-club",
+      "published_display": "24 August 2026",
+      "read_minutes": 7,
+      "badge": "🏃 Head to head",
+      "h1": "Strava vs Nike Run Club: Which Running App Should You Run With?",
+      "meta": {
+        "title": "Strava vs Nike Run Club (2026) — Free Coaching or Deep Analytics? | Suu",
+        "description": "Nike Run Club is free and coaches you; Strava is social, multi-sport and analytical but paywalls its best features. We compare both on GPS accuracy, training plans, cycling support and price.",
+        "keywords": "strava vs nike run club, nike run club vs strava, best free running app, strava alternative, nike run club review 2026, strava subscription worth it, running app with training plan",
+        "og_title": "Strava vs Nike Run Club",
+        "og_description": "A free running coach or a social multi-sport analytics platform. They are not really competing for the same runner."
+      },
+      "answer": "Nike Run Club is the better app if you are a runner who wants structure and does not want to pay: guided runs, audio coaching and training plans are free, and the running experience is polished. Strava is the better app if you ride as well as run, care about segments and leaderboards, or want your training in a social feed — but its deeper analytics and route tools sit behind a subscription. Many people run both: Nike Run Club to record and coach the run, Strava to share and analyse it.",
+      "disclosure": "This head-to-head is published by the Suu team, and Suu is a competing app in the broader tracking category. Neither app below is compared against Suu — this page is about which of these two fits you better. Features and subscription contents reflect publicly available information as of August 2026 and change frequently.",
+      "intro": [
+        "These two get compared constantly, but they are not really built for the same person. Nike Run Club is a running app with a coach inside it. Strava is a social network and analytics platform that happens to record activities.",
+        "That distinction explains most of the differences below — including the odd fact that a large number of people use both at once, and that doing so is a perfectly sensible answer.",
+        "The question worth asking is not which is better, but which of these two things you are short of: <strong>structure</strong>, or <strong>context</strong>."
+      ],
+      "table": {
+        "head": "Strava vs Nike Run Club",
+        "caption": "Feature comparison of Strava and Nike Run Club",
+        "col_feature": "Feature",
+        "columns": ["Strava", "Nike Run Club"],
+        "suu_col": -1,
+        "rows": [
+          {"label": "Price", "cells": [
+            {"text": "Free tier + subscription", "cls": "soon"}, {"text": "✓ Free", "cls": "yes"}]},
+          {"label": "GPS run recording", "cells": [
+            {"text": "✓", "cls": "yes"}, {"text": "✓", "cls": "yes"}]},
+          {"label": "Cycling support", "cells": [
+            {"text": "✓ Deepest in the category", "cls": "yes"}, {"text": "✗ Running only", "cls": "no"}]},
+          {"label": "Other sports", "cells": [
+            {"text": "✓ 30+ activity types", "cls": "yes"}, {"text": "✗", "cls": "no"}]},
+          {"label": "Guided runs / audio coaching", "cells": [
+            {"text": "✗", "cls": "no"}, {"text": "✓ Its best feature", "cls": "yes"}]},
+          {"label": "Training plans", "cells": [
+            {"text": "Subscription", "cls": "soon"}, {"text": "✓ Free, adaptive", "cls": "yes"}]},
+          {"label": "Segments and leaderboards", "cells": [
+            {"text": "✓ Unique to Strava", "cls": "yes"}, {"text": "✗", "cls": "no"}]},
+          {"label": "Social feed and clubs", "cells": [
+            {"text": "✓ The main draw", "cls": "yes"}, {"text": "Basic challenges", "cls": "soon"}]},
+          {"label": "Route planning", "cells": [
+            {"text": "Subscription", "cls": "soon"}, {"text": "✗", "cls": "no"}]},
+          {"label": "Advanced analytics (fitness, power)", "cells": [
+            {"text": "Subscription", "cls": "soon"}, {"text": "Basic", "cls": "no"}]},
+          {"label": "Heart-rate zones", "cells": [
+            {"text": "Subscription", "cls": "soon"}, {"text": "✓ With a paired device", "cls": "yes"}]},
+          {"label": "Works with Garmin, Coros, Polar", "cells": [
+            {"text": "✓ Widest device support", "cls": "yes"}, {"text": "Limited", "cls": "soon"}]},
+          {"label": "Apple Watch app", "cells": [
+            {"text": "✓", "cls": "yes"}, {"text": "✓", "cls": "yes"}]},
+          {"label": "Calorie intake / nutrition logging", "cells": [
+            {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"}]},
+          {"label": "Hydration tracking", "cells": [
+            {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"}]}
+        ]
+      },
+      "analysis": [
+        {
+          "head": "Nike Run Club is the best free coach in running",
+          "body": [
+            "The guided runs are the reason to install it, and they are genuinely unusual: an actual coach talking you through a specific session, with the pacing and the reasoning explained while you run. For a new runner, or anyone who has never followed a structured plan, this is worth more than any amount of post-run analytics.",
+            "The adaptive training plans are free too, which is remarkable given that comparable plans are a paid feature almost everywhere else. If your problem is that you go out and run the same medium-hard five kilometres every time, Nike Run Club solves it at no cost.",
+            "The limits are equally clear. It is running only — no cycling, no gym, no swimming. Device support beyond Apple Watch is thin. And there is no depth for anyone who wants to interrogate their own data."
+          ]
+        },
+        {
+          "head": "Strava is the best place for a training life to live",
+          "body": [
+            "Strava's core insight was that recording an activity is the boring part and comparing it is the interesting part. Segments turn any stretch of road or trail into a repeatable time trial with a leaderboard; the feed turns solo training into something your friends see; clubs turn it into a group.",
+            "It is also genuinely multi-sport, with far deeper cycling support than anything Nike offers, and it accepts data from essentially every watch and head unit on the market. If you own a Garmin or a Coros, Strava is where those files go.",
+            "The catch is the subscription. Route planning, most of the meaningful analytics, matched-run comparisons and full segment leaderboards have moved behind it over the years. The free tier records activities and shows you a feed; the parts of Strava people describe when they recommend it are largely paid."
+          ],
+          "callout": "The common setup is not a compromise: record and coach with Nike Run Club, then let it sync to Strava for the social feed and segments. Both are free at that level."
+        },
+        {
+          "head": "What neither of them does",
+          "body": [
+            "Both apps stop at the end of the workout. They will tell you that you burned roughly 600 calories, and then that number goes nowhere — it is not set against what you ate, and the extra fluid you lost is not counted anywhere at all.",
+            "For a competitive cyclist with a separate nutrition app and a coach, that separation is fine and even preferable. For someone whose actual goal is weight or general health rather than performance, it means running two or three apps that do not talk to each other, and doing the arithmetic between them by hand.",
+            "This is worth knowing before you build a routine around either one. Neither app is trying to be your whole health picture, and neither pretends to be."
+          ]
+        }
+      ],
+      "verdict": {
+        "head": "Verdict",
+        "body": [
+          "<strong>Choose Nike Run Club</strong> if you are a runner who wants structure and does not want to pay. The guided runs and free adaptive training plans have no real equivalent at that price.",
+          "<strong>Choose Strava</strong> if you cycle as well as run, own a Garmin or similar, care about segments, or want your training to be social. Assume you will end up subscribing, because the free tier is deliberately thin.",
+          "<strong>Use both</strong> if you are a runner who also wants the social side — record with Nike Run Club, sync to Strava. This is what a lot of people actually do and it costs nothing.",
+          "If what you want is for the run to connect to what you eat and drink, neither app does that. That is a nutrition-and-hydration question rather than a running-app question."
+        ]
+      },
+      "cta": {
+        "head": "Want the run to change the rest of your day?",
+        "sub": "Suu records GPS workouts and connects them to calories and hydration — free on iOS and Android",
+        "button": "See how Suu does it"
+      },
+      "faq": [
+        {
+          "q": "Is Strava or Nike Run Club better?",
+          "a": "They are built for different runners. Nike Run Club is better if you want free coaching, guided runs and structured training plans, and you only run. Strava is better if you also cycle, want segments and leaderboards, use a Garmin or similar device, or want a social feed — but its best features require a subscription."
+        },
+        {
+          "q": "Is Nike Run Club completely free?",
+          "a": "Yes. Guided runs, audio coaching and adaptive training plans are all included at no cost, which is unusual — comparable plans are a paid feature in most running apps. The trade-off is that it covers running only and offers limited analytical depth."
+        },
+        {
+          "q": "Is a Strava subscription worth it?",
+          "a": "It depends on what you use. If you plan routes, ride seriously, or care about full segment leaderboards and fitness-trend analytics, the subscription is where those live and it is generally judged worth it. If you only want to record runs and see a feed of friends, the free tier is enough."
+        },
+        {
+          "q": "Can you use Strava and Nike Run Club together?",
+          "a": "Yes, and it is a common setup. Record the run in Nike Run Club for the coaching, and let the activity sync through to Strava so it appears in your feed and counts toward segments and challenges. Both are free at that level of use."
+        },
+        {
+          "q": "Do Strava or Nike Run Club count the calories you eat?",
+          "a": "No. Both estimate calories burned during an activity, but neither tracks food intake or hydration, and neither sets the burn against what you ate. Pairing either with a separate nutrition app — or using one app that does all three — is how people close that gap."
+        }
+      ],
+      "references": [
+        {"href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6835337/", "label": "Sweat rate and fluid replacement during exercise (PMC)"},
+        {"href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7909433/", "label": "Accuracy of wearable energy expenditure estimates (PMC)"}
+      ],
+      "related": [
+        {"href": "/blog/en/best-workout-tracker-app.html", "title": "Best workout tracker app 2026", "desc": "Strava, Nike Run Club, Samsung Health and Apple Fitness compared."},
+        {"href": "/blog/en/suu-vs-strava.html", "title": "Suu vs Strava", "desc": "Where a GPS-first app ends and a health app begins."},
+        {"href": "/blog/en/gps-run-tracker-with-calorie-counter.html", "title": "GPS run tracker with a calorie counter", "desc": "Recording the route and the meal in one place."},
+        {"href": "/blog/en/calories-burned-exercise.html", "title": "How calories burned are calculated", "desc": "Why two apps give you two different numbers."}
+      ]
+    }
+  }
+}

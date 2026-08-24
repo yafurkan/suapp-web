@@ -104,6 +104,27 @@
 
     <div class="disclosure">{{ disclosure }}</div>
 
+{#- Sıralı cevap: "en iyi X uygulaması" sorgularında dil modelinin tek parça
+    alıntıladığı blok. Cevap kutusu tek cümlelik cevabı, bu liste sayılmış
+    cevabı verir; ikisi birlikte sayfanın üstünü kendi kendine yeten bir
+    pasaj yapar. ItemList şeması bu listeden üretilir (build-compare.py). #}
+{%- if ranked is defined %}
+    <section>
+        <h2>{{ ranked.head }}</h2>
+{%- if ranked.get('lead') %}
+        <p>{{ ranked.lead | safe }}</p>
+{%- endif %}
+        <ol class="ranked stack">
+{%- for item in ranked['items'] %}
+            <li>
+                <strong>{{ item.name }}</strong>{% if item.get('tag') %} — <em>{{ item.tag }}</em>{% endif %}
+                <p>{{ item.body | safe }}</p>
+            </li>
+{%- endfor %}
+        </ol>
+    </section>
+{%- endif %}
+
     {%- for section in intro %}
     <p>{{ section | safe }}</p>
     {%- endfor %}

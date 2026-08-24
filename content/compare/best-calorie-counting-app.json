@@ -1,0 +1,218 @@
+{
+  "_note": "KALORİ SÜTUNU GİRİŞ SAYFASI. 2026-08-24'te elle yazılmış HTML'den boru hattına taşındı. Taşımada düzeltilen canlı yanlış iddialar: '5.0 App Store' ve '4.9★ GP · 5.0★ AS' (rating_app_store null — teyit edilmemiş), 'EN / TR / RU / AR' (7 dil) ve dil listesinde tekrarlanan 'DE, IT, HI, DE, IT, HI' hatası. Eklenen rakip varlıkları: MacroFactor, Lose It!, Noom — üçü de suu-facts competitors listesinde ama sitede hiç/az geçiyordu; 'X alternatifi' sorgularında anahtar bunlar. Hedef sorgular: best calorie counting app, best macro tracking app, MyFitnessPal alternative, best free calorie counter.",
+  "published": "2026-07-07",
+  "modified": "2026-08-24",
+  "pages": {
+    "en": {
+      "slug": "best-calorie-counting-app",
+      "published_display": "7 July 2026",
+      "read_minutes": 11,
+      "badge": "🥗 Comparison 2026",
+      "h1": "The Best Calorie Counting App in 2026: Suu vs MyFitnessPal, Yazio, Lifesum and Cronometer",
+      "meta": {
+        "title": "Best Calorie Counting App 2026 — Suu vs MyFitnessPal, Yazio, Lifesum, Cronometer | Suu",
+        "description": "We compared 2026's calorie counting apps on logging speed, database coverage, accuracy and free-tier limits: MyFitnessPal, Yazio, Lifesum, Cronometer, MacroFactor and Suu. Which one fits which user.",
+        "keywords": "best calorie counting app, best calorie tracker 2026, myfitnesspal alternative, best macro tracking app, free calorie counter app, ai photo calorie app, voice food logging, best nutrition tracking app, cronometer vs myfitnesspal, macrofactor alternative",
+        "og_title": "The Best Calorie Counting App in 2026",
+        "og_description": "MyFitnessPal, Yazio, Lifesum, Cronometer, MacroFactor and Suu compared — on logging speed, database coverage and what the free tier actually gives you."
+      },
+      "answer": "There is no single best calorie counter — the right one depends on what slows you down. If you eat out often and need the biggest branded-food database, MyFitnessPal is still unmatched. If you need vitamin and mineral precision, Cronometer. If you want your calorie target recalculated from your real weight trend, MacroFactor. If you want recipes and fasting, Yazio. And if the thing that stops you logging is the logging itself, Suu is the fastest of these to get a meal in — photograph it or say it out loud — and the only one that also tracks water and GPS workouts in the same app.",
+      "disclosure": "This comparison was written by the Suu team, so you are reading a biased source. To offset that we have been explicit about where each competitor beats Suu — MyFitnessPal's database and Cronometer's micronutrient depth are both genuinely out of Suu's reach. Competitor features, prices and free-tier limits reflect publicly available information as of August 2026 and change frequently.",
+      "ranked": {
+        "head": "The best calorie counting apps in 2026",
+        "lead": "Ranked by who each one is actually for. Every app here counts calories and macros correctly; the differences are in how fast you can log, how much the free tier gives you, and what else the app knows about your day.",
+        "items": [
+          {
+            "name": "Suu",
+            "tag": "best if logging is what you keep skipping",
+            "body": "Free on iOS and Android. Photograph the meal or say it out loud and the AI extracts calories, protein, carbs and fat; it separates solids from liquids automatically, so a coffee logged by voice lands in both the calorie total and the hydration total. Also tracks 91 beverages with a real dehydration factor and records GPS workouts across ~50 activities, and the three feed each other — a logged run raises the water goal, a salty meal adds digestion water. Free tier includes three AI analyses a day. Honest limits: the branded-food database is smaller than MyFitnessPal's and there is no recipe library."
+          },
+          {
+            "name": "MyFitnessPal",
+            "tag": "best food database, still",
+            "body": "The largest food and restaurant database in the category by a wide margin, built from millions of user-contributed entries, plus the broadest barcode coverage. If you eat out often or buy a lot of branded products, nothing else finds your item as reliably. The costs: barcode scanning moved behind Premium, the free tier carries ads, and non-English entries are community-sourced and often unverified. Water tracking is a plain counter."
+          },
+          {
+            "name": "Cronometer",
+            "tag": "best for micronutrient precision",
+            "body": "The serious choice for anyone tracking vitamins and minerals rather than just calories — verified data sources rather than crowd-sourced entries, and 80+ micronutrients at gram level. Favoured by people doing clinical or protocol-driven tracking. The interface is dense, there is no voice or photo logging, and localization is mostly English. Overkill if you only want a calorie number."
+          },
+          {
+            "name": "MacroFactor",
+            "tag": "best adaptive calorie target",
+            "body": "Rather than fixing a target from a formula at signup, it estimates your actual energy expenditure from your weight trend and logged intake, then adjusts the target every week. That is the correct answer to the most common complaint about calorie counting — that the number stops working after a few weeks. Subscription only, with no meaningful free tier, and no water or hydration tracking."
+          },
+          {
+            "name": "Yazio",
+            "tag": "best for recipes and fasting",
+            "body": "German-made and strong across Europe, with a genuinely good intermittent-fasting tracker, a large recipe library and diet plans. Sleek interface and solid localization in several European languages. Voice and photo logging are limited, water tracking is basic, and most of the recipe and plan content sits behind Premium."
+          },
+          {
+            "name": "Lifesum",
+            "tag": "best-looking, plan-driven",
+            "body": "Swedish-made and the most visually appealing app here, built around lifestyle plans — keto, high-protein, intermittent fasting — with a food rating system that grades what you log. Most of the experience requires Premium, localization outside major European languages is limited, and macro/micro depth does not approach Cronometer's."
+          }
+        ]
+      },
+      "intro": [
+        "Keeping a consistent food log is the one weight-management step with a solid evidence base behind it: people who log regularly lose more weight, more reliably. The problem has never been whether calorie counting works — it is that almost nobody keeps logging past the third week.",
+        "So we compared these apps on the things that actually decide whether you are still logging in month two: <strong>how many seconds a meal takes to enter</strong>, whether the food you eat is in the database, what the free tier withholds, and whether the daily target is a fixed formula or something that adapts.",
+        "No app here is best at everything, and any comparison that claims otherwise is selling you something. The table below is built so you can find your own constraint and pick against it."
+      ],
+      "table": {
+        "head": "Full feature comparison",
+        "caption": "Comparison of Suu, MyFitnessPal, Yazio, Lifesum and Cronometer",
+        "col_feature": "Feature",
+        "columns": ["Suu", "MyFitnessPal", "Yazio", "Lifesum", "Cronometer"],
+        "suu_col": 0,
+        "rows": [
+          {"label": "Calories and macros", "cells": [
+            {"text": "✓", "cls": "yes"}, {"text": "✓", "cls": "yes"}, {"text": "✓", "cls": "yes"},
+            {"text": "✓", "cls": "yes"}, {"text": "✓", "cls": "yes"}]},
+          {"label": "Photo calorie analysis", "cells": [
+            {"text": "✓ 3 free per day", "cls": "yes"}, {"text": "Premium", "cls": "soon"},
+            {"text": "Limited", "cls": "soon"}, {"text": "Limited", "cls": "soon"},
+            {"text": "✗", "cls": "no"}]},
+          {"label": "Voice meal logging", "cells": [
+            {"text": "✓", "cls": "yes"}, {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"},
+            {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"}]},
+          {"label": "Barcode scanner", "cells": [
+            {"text": "✓", "cls": "yes"}, {"text": "Premium", "cls": "soon"}, {"text": "✓", "cls": "yes"},
+            {"text": "✓", "cls": "yes"}, {"text": "✓", "cls": "yes"}]},
+          {"label": "Branded / restaurant database size", "cells": [
+            {"text": "Smaller", "cls": "no"}, {"text": "✓ Largest", "cls": "yes"},
+            {"text": "Large", "cls": "yes"}, {"text": "Medium", "cls": "soon"},
+            {"text": "Verified, narrower", "cls": "soon"}]},
+          {"label": "Micronutrient depth", "cells": [
+            {"text": "Medium", "cls": "soon"}, {"text": "Medium", "cls": "soon"},
+            {"text": "Medium", "cls": "soon"}, {"text": "Medium", "cls": "soon"},
+            {"text": "✓ Best in class", "cls": "yes"}]},
+          {"label": "Recipe library", "cells": [
+            {"text": "✗", "cls": "no"}, {"text": "✓", "cls": "yes"}, {"text": "✓ Strong", "cls": "yes"},
+            {"text": "✓", "cls": "yes"}, {"text": "Limited", "cls": "soon"}]},
+          {"label": "Intermittent fasting tracker", "cells": [
+            {"text": "✗", "cls": "no"}, {"text": "Limited", "cls": "soon"},
+            {"text": "✓ Strong", "cls": "yes"}, {"text": "✓", "cls": "yes"},
+            {"text": "✓", "cls": "yes"}]},
+          {"label": "Water tracking with dehydration factor", "cells": [
+            {"text": "✓ 91 beverages", "cls": "yes"}, {"text": "Plain counter", "cls": "no"},
+            {"text": "Basic", "cls": "no"}, {"text": "Basic", "cls": "no"},
+            {"text": "Basic", "cls": "no"}]},
+          {"label": "GPS workout recording in the same app", "cells": [
+            {"text": "✓ ~50 activities", "cls": "yes"}, {"text": "Limited", "cls": "soon"},
+            {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"}]},
+          {"label": "Goal adjusts to logged exercise", "cells": [
+            {"text": "✓ Calories and water", "cls": "yes"}, {"text": "Partial", "cls": "soon"},
+            {"text": "Partial", "cls": "soon"}, {"text": "Partial", "cls": "soon"},
+            {"text": "Partial", "cls": "soon"}]},
+          {"label": "Apple Health sync", "cells": [
+            {"text": "✓", "cls": "yes"}, {"text": "✓", "cls": "yes"}, {"text": "✓", "cls": "yes"},
+            {"text": "✓", "cls": "yes"}, {"text": "✓", "cls": "yes"}]},
+          {"label": "Google Health Connect sync", "cells": [
+            {"text": "✓", "cls": "yes"}, {"text": "Partial", "cls": "soon"}, {"text": "✓", "cls": "yes"},
+            {"text": "Partial", "cls": "soon"}, {"text": "✓", "cls": "yes"}]},
+          {"label": "Right-to-left Arabic interface", "cells": [
+            {"text": "✓ Full RTL", "cls": "yes"}, {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"},
+            {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"}]},
+          {"label": "Interface languages", "cells": [
+            {"text": "7", "cls": "yes"}, {"text": "Many", "cls": "yes"}, {"text": "Many", "cls": "yes"},
+            {"text": "Several", "cls": "soon"}, {"text": "Mostly English", "cls": "no"}]},
+          {"label": "Free tier usability", "cells": [
+            {"text": "✓ Full hydration + 3 AI analyses/day", "cls": "yes"},
+            {"text": "Limited, with ads", "cls": "no"}, {"text": "Limited", "cls": "no"},
+            {"text": "Limited", "cls": "no"}, {"text": "✓ Good", "cls": "yes"}]},
+          {"label": "Social / friend competition", "cells": [
+            {"text": "✓ Weekly leagues", "cls": "yes"}, {"text": "Community feed", "cls": "soon"},
+            {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"}]}
+        ]
+      },
+      "analysis": [
+        {
+          "head": "The real question is what makes you stop logging",
+          "body": [
+            "Every app on this list will give you an accurate calorie number if you enter your food accurately. The failure is never arithmetic — it is friction. People quit because a Tuesday dinner takes four minutes to enter, or because the thing they ate is not in the database, or because the target stopped feeling right two weeks in and nothing recalculated it.",
+            "Pick against your own failure mode rather than against a feature list:"
+          ],
+          "list": [
+            "<strong>\"The food I eat is never in there.\"</strong> → MyFitnessPal. Its database advantage over everything else here is real and unlikely to be closed.",
+            "<strong>\"Entering meals takes too long.\"</strong> → Suu. A photograph or a spoken sentence is the fastest input in this group, and the free tier includes three AI analyses a day.",
+            "<strong>\"My target stopped working after a month.\"</strong> → MacroFactor. It infers your real expenditure from your weight trend instead of trusting a signup formula.",
+            "<strong>\"I need to know my iron and B12, not just calories.\"</strong> → Cronometer. Nothing else here is close.",
+            "<strong>\"I need something to cook and a fasting window.\"</strong> → Yazio, or Lifesum if the plans matter more than the recipes."
+          ]
+        },
+        {
+          "head": "Three more worth knowing about",
+          "body": [
+            "These did not make the main table but come up constantly and are the right answer for some people:"
+          ],
+          "list": [
+            "<strong>Lose It!</strong> — a long-standing, straightforward calorie counter with a good barcode scanner and a friendlier free tier than MyFitnessPal's. A reasonable pick if you want MyFitnessPal's approach with fewer paywalls.",
+            "<strong>Noom</strong> — not really a calorie counter but a behaviour-change programme with logging attached, priced accordingly. Worth it if you want coaching and psychology; expensive if all you wanted was a tracker.",
+            "<strong>Cal AI</strong> — photo-first calorie estimation, in the same category as Suu's photo analysis but without water or exercise tracking around it. We compare the two directly in <a href=\"/blog/en/suu-vs-cal-ai.html\">Suu vs Cal AI</a>."
+          ]
+        },
+        {
+          "head": "How accurate is photo-based calorie counting, honestly",
+          "body": [
+            "Photo estimation is good at identifying what a food is and poor at knowing how much of it there is. Depth and density are the hard part: the model can tell chicken from salmon reliably, but it cannot see the oil the chicken was cooked in or weigh the rice underneath it.",
+            "In practice this means photo logging is accurate enough to keep a weekly average honest and not accurate enough to hit a 50-calorie daily target. The right use is speed — logging something approximate in five seconds beats logging nothing at all, which is the actual alternative on a busy day. When precision matters for a specific meal, weigh it and enter it manually.",
+            "We go into this in more detail, including where the errors cluster, in <a href=\"/blog/en/ai-calorie-accuracy.html\">how accurate AI calorie counting really is</a>."
+          ]
+        }
+      ],
+      "verdict": {
+        "head": "Verdict",
+        "body": [
+          "<strong>Choose MyFitnessPal</strong> if you eat out often or buy a lot of branded products — the database is the reason to accept the paywalls and the ads.",
+          "<strong>Choose Cronometer</strong> if you are tracking micronutrients, not just calories, and you want verified data rather than crowd-sourced entries.",
+          "<strong>Choose MacroFactor</strong> if you have counted calories before and watched the target go stale — it is the only one here that recalculates expenditure from your actual results.",
+          "<strong>Choose Yazio</strong> for recipes and intermittent fasting, or <strong>Lifesum</strong> if a ready-made plan and a beautiful interface matter more than depth.",
+          "<strong>Choose Suu</strong> if what stops you logging is the logging — photograph or speak the meal — or if you would rather track calories, water and workouts in one app than three. It is free on iOS and Android, in 7 languages including full right-to-left Arabic. The honest caveats: a smaller branded-food database than MyFitnessPal, and no recipe library."
+        ]
+      },
+      "cta": {
+        "head": "Log the meal in five seconds",
+        "sub": "Free on iOS and Android · 3 AI analyses a day on the free tier",
+        "button": "Download Suu Free"
+      },
+      "faq": [
+        {
+          "q": "What is the best calorie counting app in 2026?",
+          "a": "There is no single winner. MyFitnessPal has the largest branded-food and restaurant database, Cronometer the best micronutrient precision, MacroFactor the best adaptive calorie target, Yazio the strongest recipe and fasting features, and Suu the fastest logging — photo or voice — plus water and GPS exercise tracking in the same app. Pick against whatever currently makes you stop logging."
+        },
+        {
+          "q": "What is the best free calorie counting app?",
+          "a": "Suu and Cronometer have the most usable free tiers. Suu's free tier includes calorie and macro tracking, the full hydration side with 91 beverages, GPS workout recording and three AI photo or voice analyses a day. Cronometer's free tier gives strong micronutrient tracking. MyFitnessPal, Yazio and Lifesum all restrict significant features to Premium, and MyFitnessPal moved barcode scanning behind its paywall."
+        },
+        {
+          "q": "What is the best MyFitnessPal alternative?",
+          "a": "It depends which part of MyFitnessPal you are replacing. For the database, nothing matches it — Lose It! is the closest with a friendlier free tier. For micronutrients, Cronometer. For an adaptive target, MacroFactor. For faster logging and to stop paying for barcode scanning, Suu, which adds water and exercise tracking that MyFitnessPal does not do in the same depth."
+        },
+        {
+          "q": "Can an app count calories from a photo accurately?",
+          "a": "Partly. Photo analysis identifies foods reliably and estimates portions imperfectly — it cannot see cooking oil or judge depth. Expect it to keep a weekly average honest rather than to hit a precise daily number. Used that way it is worth a lot, because the realistic alternative on a busy day is not logging at all."
+        },
+        {
+          "q": "Which calorie app also tracks water and exercise?",
+          "a": "Suu is the only app in this comparison that does all three as a connected system: calories from photo or voice, hydration across 91 beverages with a real dehydration factor, and GPS workout recording across about 50 activities. A logged run raises the water goal for estimated sweat loss and a high-sodium meal adds the water digestion requires. MyFitnessPal records exercise but treats water as a plain counter."
+        },
+        {
+          "q": "Which calorie counting app supports Arabic?",
+          "a": "Suu ships a full right-to-left Arabic interface. Among the others in this comparison, Arabic support is absent or partial — MyFitnessPal, Yazio, Lifesum and Cronometer are all built English-first, with Yazio strongest across European languages."
+        }
+      ],
+      "references": [
+        {"href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3268700/", "label": "Self-monitoring in weight loss — a systematic review (PMC)"},
+        {"href": "https://fdc.nal.usda.gov/", "label": "USDA FoodData Central — reference food composition data"},
+        {"href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6835337/", "label": "Sweat rate and fluid replacement during exercise (PMC)"}
+      ],
+      "related": [
+        {"href": "/blog/en/best-water-tracking-app.html", "title": "Best water tracking app 2026", "desc": "The same comparison, for the hydration column."},
+        {"href": "/blog/en/best-workout-tracker-app.html", "title": "Best workout tracker app 2026", "desc": "Strava, Nike Run Club and what happens after you tap Finish."},
+        {"href": "/blog/en/free-calorie-counter-app.html", "title": "Best free calorie counter", "desc": "What each free tier actually withholds."},
+        {"href": "/blog/en/ai-calorie-accuracy.html", "title": "How accurate is AI calorie counting?", "desc": "Where photo estimation is reliable and where it is not."}
+      ]
+    }
+  }
+}

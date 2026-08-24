@@ -747,6 +747,36 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-10) 0; }
     color: var(--text-subtle);
 }
 
+/* Sıralı cevap listesi — "en iyi X uygulaması" sayfalarının sayılmış cevabı.
+   Sıra numarası görünür kalmalı: dil modelleri de okuyucular da sıralamayı
+   ondan okuyor, süslü madde imi bu bilgiyi siler. */
+.ranked {
+    padding-inline-start: var(--sp-6);
+    counter-reset: ranked;
+    list-style: none;
+}
+.ranked > li {
+    position: relative;
+    padding-inline-start: var(--sp-8);
+    counter-increment: ranked;
+}
+.ranked > li::before {
+    content: counter(ranked);
+    position: absolute;
+    inset-inline-start: 0;
+    inline-size: var(--sp-6);
+    block-size: var(--sp-6);
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--su-500);
+    color: #fff;
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-bold);
+    font-variant-numeric: tabular-nums;
+}
+.ranked > li > p { margin-block: var(--sp-2) 0; }
+
 .verdict {
     padding: var(--sp-6);
     border: 1px solid var(--border);
