@@ -13,8 +13,11 @@ Suu artık sadece bir su takip uygulaması değil — **su takibi, kalori sayım
 
 - **Google Play:** 4.9★ · 2.847 değerlendirme · **App Store:** puan/sayım teyit bekliyor (bkz. `suu-facts.json` → `_needs_confirmation`)
 - **Uygulama dil desteği:** Türkçe, English, العربية, Deutsch, Italiano, Русский, हिन्दी (7 dil, RTL dahil)
-- **Site dil desteği:** TR / EN / AR / RU canlı — DE / IT / HI yolda
-- **Hedef pazar:** Türkiye, MENA, BDT, DACH, İtalya, Hindistan
+- **Site dil desteği:** TR / EN / AR / RU / DE / IT / UK canlı — HI park'ta
+- **Hedef pazar:** Türkiye, MENA, BDT, DACH, İtalya, Ukrayna, Hindistan
+- **Not:** site 8 dilde, uygulama 7 dilde. Ukraynaca yalnızca sitede — bu ayrım
+  `.well-known/ai-plugin.json`'da `languages_supported` (uygulama) ile
+  `knowledge_sources` (site) olarak korunur ve karıştırılmamalıdır.
 
 ## Özellikler — Üç Sütun
 
@@ -63,7 +66,7 @@ Sohbet ederek su ekleme, içecek kaydetme, öğün oluşturma, egzersiz ekleme, 
 
 ## Web Sitesi Yapısı
 
-Çok dilli statik site. Ana sayfa dışında diğer dil sayfaları `-en`/`-ar`/`-ru` (ve yolda olan `-de`/`-it`/`-hi`) suffix'ini kullanır. Ana sayfa istisnası: `hosgeldiniz-*`.
+Çok dilli statik site. Ana sayfa dışında diğer dil sayfaları `-en`/`-ar`/`-ru`/`-de`/`-it`/`-uk` suffix'ini kullanır. Ana sayfa istisnası: `hosgeldiniz-*`. Karşılaştırma merkezi her dilde kendi doğal slug'ını taşır: `karsilastirmalar` · `comparisons` · `muqaranat` · `sravneniya` · `vergleiche` · `confronti` · `porivnyannya`.
 
 **URL kuralı — kritik:** Mevcut URL'ler değiştirilmez. GitHub Pages 301 yönlendirme veremediği için dizin tabanlı (`/en/`, `/de/`) yapıya geçmek yıllık ~40.000 görüntülemenin dayandığı URL'leri kırardı.
 
@@ -79,7 +82,7 @@ Bu ayrım olmadan 222 kümenin 220'si "varsayılan Suu = Türkçe" sinyali veriy
 ```
 /
 ├── index.html                    # Türkçe ana sayfa
-├── hosgeldiniz-en|ar|ru.html     # EN / AR / RU ana sayfa
+├── hosgeldiniz-en|ar|ru|de|it|uk.html  # diğer dillerin ana sayfası
 ├── premium{,-en,-ar,-ru}.html    # Fiyatlandırma
 ├── ozellikler{,-en,-ar,-ru}.html # Özellikler
 ├── faq{,-en,-ar,-ru}.html        # SSS
@@ -88,9 +91,11 @@ Bu ayrım olmadan 222 kümenin 220'si "varsayılan Suu = Türkçe" sinyali veriy
 ├── kullanim-sartlari.html        # Kullanım Şartları (tek URL, sekmeli çok dil)
 ├── su-hesaplayici / water-calculator*  # Su hesaplama aracı
 ├── blog/                         # Türkçe blog (50 yazı)
-│   ├── en/                       # İngilizce blog (50 yazı)
-│   ├── ar/                       # Arapça blog (35 yazı)
-│   └── ru/                       # Rusça blog (39 yazı)
+│   ├── en/                       # İngilizce blog
+│   ├── ar/                       # Arapça blog
+│   ├── ru/                       # Rusça blog
+│   ├── de/ · it/ · uk/           # Almanca · İtalyanca · Ukraynaca
+├── content/languages.json        # DİL TABLOSU
 ├── content/suu-facts.json        # TEK DOĞRULUK KAYNAĞI
 ├── sitemap.xml · robots.txt
 ├── llms.txt · llms-full.txt      # AI asistan referans dosyaları (dil başına)
@@ -105,8 +110,20 @@ Sitenin üç ayrı gerçek kaynağı vardı (lang-switcher'ın `PAGE_MAP`'i, hre
 |---|---|
 | `content/suu-facts.json` | JSON-LD, `llms.txt` ailesi, `ai-plugin.json`, sayfa metinleri, `check-facts.py` |
 | `content/page-registry.json` | dil seçici, hreflang, sitemap |
+| `content/languages.json` | dil bağımlı HER sabit — locale, yön, ay adları, UI dizeleri, blog indeksi/besleme adları, konu rozetleri |
 
-Ek olarak `content/home/<lang>.json` (7 dil) ana sayfaların ve `llms.txt` ailesinin metinlerini taşır.
+**Dil eklemek artık script düzenlemek değil.** `content/languages.json`'dan önce
+aynı bilgi 12'den fazla script'te ayrı ayrı sabitti ve iki kez birbirinden
+saptı. Hepsi `scripts/_langs.py` üzerinden okuyor. `blog_langs()` ve
+`home_hrefs()` diski kontrol ediyor: `blog-<lang>.html` + `blog/<lang>/`
+oluşturmak o dili kendiliğinden etkinleştirir, karşılama sayfası yazılmamış
+bir dil de altbilgi menüsüne 404 koymaz.
+
+`published: false` olan dil hreflang kümesine girmez — tek sayfalık bir dile
+hreflang vermek boş kümeye işaret etmekti (de/it/hi 2026-08-20'de tam bu
+yüzden park edilmişti; de ve it 2026-08-24'te içerik konunca geri alındı).
+
+Ek olarak `content/home/<lang>.json` (8 dil) ana sayfaların ve `llms.txt` ailesinin metinlerini taşır.
 
 ## Bakım Scriptleri
 
@@ -115,6 +132,7 @@ Repo'nun build sistemi `scripts/` altındaki Python dosyalarıdır (CI'da değil
 ```bash
 # Doğruluk
 python3 scripts/check-facts.py              # suu-facts.json ile çelişen iddiaları tara
+python3 scripts/check-geo-coverage.py       # dil başına: ana sayfa/blog/besleme/llms/hub/3 para sorgusu
 python3 scripts/fix-stale-facts.py --apply  # mekanik düzeltmeler (sayı, dil listesi)
 
 # Üretim
@@ -124,6 +142,7 @@ python3 scripts/build-llms.py --apply               # llms.txt ailesi (7 dil × 
 python3 scripts/build-compare.py --apply            # karşılaştırma/kategori cevap sayfaları
 python3 scripts/build-feeds.py --apply              # RSS beslemeleri (dil başına, son 40)
 python3 scripts/build-gift-pages.py --apply          # hediye kod sayfaları (7 dil) + panel
+python3 scripts/new-blog-index.py <dil> --apply       # yeni dil için blog indeksi kabuğu (bir kez)
 
 # Enjeksiyon
 python3 scripts/inject-hreflang.py --apply          # hreflang kümesi
@@ -153,9 +172,10 @@ python3 scripts/sync-blog-schema.py --apply && \
 python3 scripts/update-sitemap.py --apply && \
 python3 scripts/build-feeds.py --apply && \
 python3 scripts/check-facts.py && \
-python3 scripts/check-faq-visibility.py
+python3 scripts/check-faq-visibility.py && \
+python3 scripts/check-geo-coverage.py
 git push origin main
-python3 scripts/indexnow-submit.py --all
+python3 scripts/indexnow-submit.py --changed   # ağaç temizse son commit'in diff'i
 ```
 
 **Sıra önemli:** `inject-hreflang.py`, sayfa üreten her script'ten SONRA çalışmalı — `build-compare.py` ve `build-compare-hub.py` sayfayı baştan yazdığı için enjekte edilmiş hreflang bloğunu düşürür. `sync-blog-schema.py` de `sync-blog-index.py`'den sonra gelir (biri kart, diğeri `Blog.blogPost` şeması).
