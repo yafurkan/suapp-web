@@ -14,6 +14,14 @@
   "_xdefault": "en",
   "_xdefault_comment": "hreflang=\"x-default\" HEDEFİ — dil tercihi belirsiz kullanıcıya/crawler'a sunulacak sürüm. _default'tan ayrıdır: URL yapısı Türkçe temelli kalırken varsayılan sunum dili İngilizce. Bu ayrım olmadan 220 küme 'varsayılan Suu = Türkçe' sinyali veriyordu.",
   "_shared_comment": "Tek URL üzerinde sekmeli çok dil sunan sayfalar — dil seçici bunlarda gizlenir.",
+  "_parked_comment": "de/it/hi 2026-08-20'de home ailesinden çıkarıldı: bu üç dilde yalnızca karşılama sayfası vardı (diğer 4 dilde 50-69 sayfa), hreflang bir kümeye işaret ediyordu ama arkasında içerik yoktu. Sayfalar yayında ve sitemap'te kalıyor, yalnızca hreflang beyanı kaldırıldı. Geri eklemek için aşağıdaki satırları home'a taşıyıp inject-hreflang.py --apply çalıştırın.",
+  "_parked": {
+    "home": {
+      "de": "hosgeldiniz-de.html",
+      "it": "hosgeldiniz-it.html",
+      "hi": "hosgeldiniz-hi.html"
+    }
+  },
   "shared": [
     "gizlilik-politikasi.html",
     "kullanim-sartlari.html",
@@ -24,10 +32,7 @@
       "tr": "/",
       "en": "hosgeldiniz-en.html",
       "ar": "hosgeldiniz-ar.html",
-      "ru": "hosgeldiniz-ru.html",
-      "de": "hosgeldiniz-de.html",
-      "it": "hosgeldiniz-it.html",
-      "hi": "hosgeldiniz-hi.html"
+      "ru": "hosgeldiniz-ru.html"
     },
     "features": {
       "tr": "ozellikler.html",
