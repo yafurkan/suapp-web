@@ -1,3 +1,26 @@
+# ─────────────────────────────────────────────────────────────
+# UYARI: BU DOSYA ŞU AN HİÇBİR ŞEY YAPMIYOR.
+#
+# suuapp.com GitHub Pages üzerinde barındırılıyor (server: GitHub.com,
+# Fastly CDN). .htaccess yalnızca Apache tarafından okunur; GitHub Pages
+# Apache değil, dolayısıyla aşağıdaki başlıkların, sıkıştırma ve önbellek
+# kurallarının HİÇBİRİ uygulanmıyor. Canlı yanıtla doğrulandı (2026-08-20):
+#
+#   cache-control: max-age=600        ← GitHub Pages sabiti, aşağıdaki değil
+#   X-Content-Type-Options            ← YOK
+#   X-Frame-Options                   ← YOK
+#   Referrer-Policy                   ← YOK
+#   Permissions-Policy                ← YOK
+#   strict-transport-security         ← VAR (GitHub Pages kendisi veriyor)
+#
+# Sıkıştırma zaten çalışıyor: 69.035 → 15.570 bayt (Fastly, gzip).
+#
+# Dosya, ileride Apache tabanlı bir barındırmaya geçilirse hazır olsun diye
+# duruyor. Güvenlik başlıkları GERÇEKTEN isteniyorsa GitHub Pages bunu
+# sunamaz — alan adını Cloudflare üzerinden geçirip başlıkları orada
+# (Transform Rules) eklemek gerekir.
+# ─────────────────────────────────────────────────────────────
+
 # Security Headers
 <IfModule mod_headers.c>
     Header always set X-Content-Type-Options nosniff

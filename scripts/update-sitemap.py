@@ -43,15 +43,39 @@ EXCLUDE_PARTS = ("/404", "/admin.html", "/app/", "/makale.html",
 RE_URL_BLOCK = re.compile(r"[ \t]*<url>(.*?)</url>\s*\n?", re.DOTALL)
 
 
-def git_last_modified(rel: str) -> str | None:
-    """Dosyaya dokunan son commit'in tarihi (YYYY-MM-DD).
+RE_DATE_MODIFIED = re.compile(r'"dateModified"\s*:\s*"(\d{4}-\d{2}-\d{2})')
 
-    lastmod önceden dokunulmadan korunuyordu; sonuç olarak bu ay baştan yazılan
-    sayfalar bile Mayıs tarihi ilan ediyordu (250 URL'nin 245'i). Tarayıcıya
-    "burada yeni bir şey yok" demek, yeniden taramayı geciktiriyor ve
-    "Keşfedildi / Tarandı - dizine eklenmemiş" satırlarını besliyor.
-    Her build'de TODAY yazmak da yalan olurdu — git'teki gerçek tarih kullanılır.
+
+def page_last_modified(rel: str) -> str | None:
+    """Sayfanın KENDİ ilan ettiği son güncelleme tarihi (Article.dateModified).
+
+    Neden git değil: git "dosyaya dokunuldu" der, "içerik değişti" demez.
+    Hreflang enjeksiyonu, analytics eklenmesi, şema güncellemesi gibi toplu
+    script çalıştırmaları tek günde 200+ dosyaya dokunuyor ve hepsini birden
+    "yeni" ilan ediyordu; 2026-08-17'de 235 URL'nin 228'i aynı lastmod'u
+    taşıyordu, oysa sayfaların kendi dateModified'ı 2026-03'e kadar uzanıyordu
+    (170 URL'de çelişki — SEO denetimi, 2026-08-20).
+
+    Google, lastmod değerlerini tutarsız bulursa sinyali site genelinde yok
+    sayıyor. Sayfanın kendi dateModified'ından türetince iki sinyal tanım
+    gereği asla çelişmez.
+
+    Article şeması olmayan sayfalarda (indirme, premium, SSS...) git tarihine
+    düşülür — orada karşılaştırılacak bir on-page tarih zaten yok.
     """
+    path = ROOT / rel
+    if path.exists():
+        try:
+            m = RE_DATE_MODIFIED.search(path.read_text(encoding="utf-8", errors="replace"))
+            if m:
+                return m.group(1)
+        except OSError:
+            pass
+    return git_last_modified(rel)
+
+
+def git_last_modified(rel: str) -> str | None:
+    """Dosyaya dokunan son commit'in tarihi (YYYY-MM-DD) — yedek yol."""
     import subprocess
     try:
         out = subprocess.run(["git", "log", "-1", "--format=%cs", "--", rel],
@@ -153,12 +177,15 @@ def main() -> int:
             cleaned = cleaned.replace(loc_m.group(0), loc_m.group(0) + "\n" + block.rstrip("\n"), 1)
 
         rel = loc[len(BASE) + 1:] or "index.html"
-        real = git_last_modified(rel)
+        real = page_last_modified(rel)
         if real:
-            def _bump(m: re.Match) -> str:
-                # lastmod yalnızca İLERİ gider — geriye çekmek sinyali bozar
-                return m.group(1) + (real if real > m.group(2) else m.group(2)) + m.group(3)
-            cleaned = RE_LASTMOD.sub(_bump, cleaned, count=1)
+            def _set(m: re.Match) -> str:
+                # Sayfanın kendi tarihi neyse o yazılır — geri çekmek dâhil.
+                # Eski davranış "yalnızca ileri" idi; şişmiş tarihleri kalıcı
+                # kılıyordu, oysa yanlış tazelik iddiası sinyali bozan şeyin
+                # ta kendisi.
+                return m.group(1) + real + m.group(3)
+            cleaned = RE_LASTMOD.sub(_set, cleaned, count=1)
 
         new = f"    <url>{cleaned}</url>\n"
         if new != match.group(0):

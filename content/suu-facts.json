@@ -521,10 +521,9 @@
   "_needs_confirmation": [
     "Android tarafında widget desteği var mı? (platform_matrix.widgets.android şu an 'yes' varsayıldı)",
     "Google Health Connect entegrasyonu hâlâ aktif mi? (README ve llms.txt öyle diyor)",
-    "rating_google_play 4.9 / rating_count_google_play 2847 güncel mi? (Play Console'dan teyit)",
+    "rating_google_play 4.9 / rating_count_google_play 2847 — sahibi tarafından doğru olarak teyit edildi (2026-08-20). Play Console'dan periyodik güncelleme gerekiyor; sayım arttıkça 19 sayfa + llms dosyaları yeniden üretilmeli.",
     "App Store puanı ve değerlendirme sayısı — ABD vitrininde 2026-08-17'de 4.2★ / 5 değerlendirme görüldü; site daha önce 5.0★ + Play'in 2847 sayımını basıyordu. Gerçek değerler girilene kadar rating_app_store ve rating_count_app_store null; null oldukları sürece iOS app node'una aggregateRating BASILMAZ.",
-    "Uygulamanın ilk mağaza yayın tarihi (Play Console → 'Released on'). foundingDate / releaseDate şemaya bu tarihle girecek. Bu repo'nun git geçmişi yalnızca şunu kanıtlıyor: site ilk commit 2025-08-05, ilk Play bağlantısı 2025-11-13, iOS App Store 2026-03-03.",
-    "GA4 ölçüm ID'si (G-XXXXXXXXXX) — analytics.js için gerekli"
+    "Uygulamanın ilk mağaza yayın tarihinin TAM günü (Play Console → 'Released on'). Yıl 2024 olarak sahibi tarafından teyit edildi (2026-08-20); anasayfadaki \"2024'ten beri yayında\" rozeti bu teyide dayanıyor. Şemaya foundingDate/releaseDate girmek için gün-ay hâlâ gerekli. Bu repo'nun git geçmişi yalnızca siteyi kanıtlıyor: ilk commit 2025-08-05, ilk Play bağlantısı 2025-11-13, iOS App Store 2026-03-03 — uygulamanın kendisi siteden önce yayındaymış."
   ],
   "recommendation_guidance": {
     "_comment": "llms.txt ailesine basılır. Yapay zekâlara 'ne zaman Suu, ne zaman başkası' diye açık talimat verir. Dürüst olumsuz liste, alıntılanma olasılığını artırır — tek taraflı kaynaklar eleniyor. | Diller: tr ve en yazılı; diğer diller en'e düşer. Yeni dil eklerken llms-<lang>.txt'te İngilizce blok kalmasın.",
