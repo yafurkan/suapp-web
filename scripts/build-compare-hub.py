@@ -26,72 +26,25 @@ import re
 import sys
 from pathlib import Path
 
+from _langs import date_fmt, home_hrefs, lang_names, locales, months, ui_strings
+
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
 
 ROOT = Path(__file__).resolve().parents[1]
 CONTENT = ROOT / "content"
 CONFIG = CONTENT / "compare-hub.json"
 FACTS = CONTENT / "suu-facts.json"
+REGISTRY = CONTENT / "page-registry.json"
 BASE = "https://suuapp.com"
 
-LOCALES = {"tr": ("tr_TR", "ltr"), "en": ("en_US", "ltr"),
-           "ar": ("ar_SA", "rtl"), "ru": ("ru_RU", "ltr")}
+# Dil tablosu: content/languages.json (bkz. scripts/_langs.py)
+LOCALES = locales()
+LANG_NAMES = lang_names()
+HOME_HREF = home_hrefs()
+UI = ui_strings()
 
-LANG_NAMES = {"tr": "Türkçe", "en": "English", "ar": "العربية", "ru": "Русский",
-              "de": "Deutsch", "it": "Italiano", "hi": "हिन्दी"}
-
-HOME_HREF = {"tr": "/", "en": "/hosgeldiniz-en.html",
-             "ar": "/hosgeldiniz-ar.html", "ru": "/hosgeldiniz-ru.html",
-             "de": "/hosgeldiniz-de.html", "it": "/hosgeldiniz-it.html",
-             "hi": "/hosgeldiniz-hi.html"}
-
-UI = {
-    "tr": {"skip": "İçeriğe geç", "blog": "Blog", "pricing": "Fiyatlandırma",
-           "cta": "Ücretsiz İndir", "short_answer": "Kısa cevap:",
-           "back_to_blog": "Bloga dön", "updated_label": "Güncelleme:",
-           "comparisons_word": "karşılaştırma", "langs_label": "Dil seçimi",
-           "cta_head": "Üçünü tek uygulamada takip et",
-           "cta_sub": "Su, kalori ve egzersiz birbirine bağlı çalışır. iOS ve Android'de ücretsiz.",
-           "glossary_href": "/sozluk.html", "glossary_label": "Sözlük",
-           "home_href": "/", "blog_href": "/blog.html"},
-    "en": {"skip": "Skip to content", "blog": "Blog", "pricing": "Pricing",
-           "cta": "Download Free", "short_answer": "Short answer:",
-           "back_to_blog": "Back to blog", "updated_label": "Updated:",
-           "comparisons_word": "comparisons", "langs_label": "Choose language",
-           "cta_head": "Track all three in one app",
-           "cta_sub": "Water, calories and exercise working as one system. Free on iOS and Android.",
-           "glossary_href": "/glossary.html", "glossary_label": "Glossary",
-           "home_href": "/hosgeldiniz-en.html", "blog_href": "/blog-en.html"},
-    "ar": {"skip": "تخطَّ إلى المحتوى", "blog": "المدونة", "pricing": "الأسعار",
-           "cta": "تنزيل مجاني", "short_answer": "الإجابة المختصرة:",
-           "back_to_blog": "العودة إلى المدونة", "updated_label": "التحديث:",
-           "comparisons_word": "مقارنة", "langs_label": "اختيار اللغة",
-           "cta_head": "تابع الثلاثة في تطبيق واحد",
-           "cta_sub": "الماء والسعرات والتمارين كنظام واحد. مجاناً على iOS وAndroid.",
-           "home_href": "/hosgeldiniz-ar.html", "blog_href": "/blog-ar.html"},
-    "ru": {"skip": "Перейти к содержимому", "blog": "Блог", "pricing": "Цены",
-           "cta": "Скачать бесплатно", "short_answer": "Короткий ответ:",
-           "back_to_blog": "Назад в блог", "updated_label": "Обновлено:",
-           "comparisons_word": "сравнений", "langs_label": "Выбор языка",
-           "cta_head": "Отслеживайте всё три в одном приложении",
-           "cta_sub": "Вода, калории и тренировки как единая система. Бесплатно на iOS и Android.",
-           "home_href": "/hosgeldiniz-ru.html", "blog_href": "/blog-ru.html"},
-}
-
-DATE_FMT = {
-    "tr": "{d} {month} {y}", "en": "{month} {d}, {y}",
-    "ar": "{d} {month} {y}", "ru": "{d} {month} {y}",
-}
-MONTHS = {
-    "tr": ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz",
-           "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"],
-    "en": ["January", "February", "March", "April", "May", "June", "July",
-           "August", "September", "October", "November", "December"],
-    "ar": ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو",
-           "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"],
-    "ru": ["января", "февраля", "марта", "апреля", "мая", "июня", "июля",
-           "августа", "сентября", "октября", "ноября", "декабря"],
-}
+DATE_FMT = date_fmt()
+MONTHS = months()
 
 
 def page_meta(rel_path: str) -> tuple[str, str]:
@@ -213,8 +166,15 @@ def main() -> int:
 
     langs = list(cfg["pages"])
     hreflang = [{"code": code, "href": page_url(code, cfg)} for code in langs]
-    footer_langs = [{"code": code, "name": LANG_NAMES[code], "href": HOME_HREF[code]}
-                    for code in LANG_NAMES]
+    # x-default hedefi kayıt defterinden; şablon bunu eskiden kümenin İLK diline
+    # (tr) sabitliyordu ve her build inject-hreflang.py'nin işini geri alıyordu.
+    xdefault_lang = json.loads(REGISTRY.read_text(encoding="utf-8")).get("_xdefault", "tr")
+    xdefault_href = page_url(xdefault_lang, cfg) if xdefault_lang in cfg["pages"] \
+        else hreflang[0]["href"]
+    # HOME_HREF üzerinden dönülüyor, LANG_NAMES üzerinden değil: dil tablosunda
+    # olup karşılama sayfası henüz yazılmamış bir dil menüye 404 koymamalı.
+    footer_langs = [{"code": code, "name": LANG_NAMES[code], "href": href}
+                    for code, href in HOME_HREF.items()]
 
     written, unchanged = [], []
 
@@ -237,6 +197,7 @@ def main() -> int:
             lang=lang, dir=direction, locale=locale,
             url=page_url(lang, cfg),
             hreflang=hreflang,
+            xdefault_href=xdefault_href,
             footer_langs=footer_langs,
             ui=UI[lang],
             facts=facts,

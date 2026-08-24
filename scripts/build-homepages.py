@@ -26,6 +26,8 @@ import json
 import sys
 from pathlib import Path
 
+from _langs import home_files, lang_names
+
 try:
     from jinja2 import Environment, FileSystemLoader, StrictUndefined
 except ImportError:
@@ -42,25 +44,13 @@ BASE = "https://suuapp.com"
 # her build inject-hreflang.py'nin işini geri alıyordu.
 XDEFAULT_LANG = json.loads(REGISTRY.read_text(encoding="utf-8")).get("_xdefault", "tr")
 
-# lang → (çıktı dosyası, locale, yön)
-TARGETS: dict[str, tuple[str, str, str]] = {
-    "tr": ("index.html",            "tr_TR", "ltr"),
-    "en": ("hosgeldiniz-en.html",   "en_US", "ltr"),
-    "ar": ("hosgeldiniz-ar.html",   "ar_SA", "rtl"),
-    "ru": ("hosgeldiniz-ru.html",   "ru_RU", "ltr"),
-    "de": ("hosgeldiniz-de.html",   "de_DE", "ltr"),
-    "it": ("hosgeldiniz-it.html",   "it_IT", "ltr"),
-    "hi": ("hosgeldiniz-hi.html",   "hi_IN", "ltr"),
-}
-
+# Dil tablosu: content/languages.json (bkz. scripts/_langs.py)
+TARGETS: dict[str, tuple[str, str, str]] = home_files()
 
 # Dilin kendi adıyla — footer'daki statik dil satırı için. Dil seçici JS ile
 # çalışıyor; tarayıcılar ve yapay zekâ getiricileri JS çalıştırmadığından
 # çevirilerin keşfedilebilir olması için gövdede gerçek <a> bağlantısı şart.
-LANG_NAMES: dict[str, str] = {
-    "tr": "Türkçe", "en": "English", "ar": "العربية", "ru": "Русский",
-    "de": "Deutsch", "it": "Italiano", "hi": "हिन्दी",
-}
+LANG_NAMES: dict[str, str] = lang_names()
 
 
 def page_url(lang: str) -> str:

@@ -66,7 +66,11 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800{% if lang == 'hi' %}&family=Noto+Sans+Devanagari:wght@400;500;600;700;800{% endif %}&display=swap" rel="stylesheet">
+    {#- Değişken eksen biçimi (scripts/normalize-fonts.py'nin kanonu): sayılan
+       ağırlık listesiyle aynı woff2 dosyalarını döndürüyor ama tek istek ve
+       tek önbellek anahtarı oluyor. Şablon kanonu üretmezse her build
+       normalize-fonts.py'nin işini geri alır. #}
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900{% if lang == 'hi' %}&family=Noto+Sans+Devanagari:wght@400..800{% endif %}{% if dir == 'rtl' %}&family=Noto+Sans+Arabic:wght@300..800{% endif %}&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/donation-widget.css">
     <link rel="stylesheet" href="/assets/css/suu.css">
 
