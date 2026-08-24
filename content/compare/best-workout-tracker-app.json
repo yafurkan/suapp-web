@@ -1,7 +1,6 @@
 {
   "_note": "EGZERSİZ SÜTUNU GİRİŞ SAYFASI. Search Console'da egzersiz sorgusundan tek tıklama yok — bu alanda sıfırdan otorite kuruyoruz. Hedef sorgular: best workout tracker app, best exercise tracking app, workout app that tracks calories.",
   "published": "2026-08-13",
-
   "pages": {
     "en": {
       "slug": "best-workout-tracker-app",
@@ -9,7 +8,6 @@
       "read_minutes": 8,
       "badge": "🏃 Comparison 2026",
       "h1": "The Best Workout Tracker App in 2026: Compared by What You Actually Track",
-
       "meta": {
         "title": "Best Workout Tracker App 2026 — Compared (Strava, Nike Run Club, Suu) | Suu",
         "description": "We compared workout tracking apps by what they actually do with your data: Strava, Nike Run Club, Samsung Health, Apple Fitness and Suu. Which logs calories, which logs hydration, and which one connects all three.",
@@ -17,51 +15,328 @@
         "og_title": "The Best Workout Tracker App in 2026",
         "og_description": "Strava, Nike Run Club, Samsung Health, Apple Fitness and Suu compared — by what each one does with your workout data after the session ends."
       },
-
       "answer": "For pure athletic performance and social riding or running, Strava is still the benchmark. For a free, polished running experience, Nike Run Club. But if you want the workout to feed the rest of your day — calories burned counted against what you ate, and your hydration goal adjusted for what you sweated — Suu is the only one of these that closes the loop, tracking around 50 activities alongside photo-based calorie logging.",
-
       "disclosure": "This comparison was written by the Suu team, so you are reading a biased source. To offset that we have been explicit about where each competitor beats Suu — and Strava and Nike Run Club beat it on several axes. Competitor features reflect publicly available information as of August 2026 and change frequently.",
-
       "intro": [
         "Almost every workout tracker does the same core job well: it records your session, draws the route on a map, and shows distance, duration, pace and elevation. That part has been a solved problem for years.",
         "The real difference is <strong>what happens after you tap Finish</strong>. Most apps store the workout and stop there. The 600 calories you burned sit in one app while the 2,400 you ate sit in another, and the extra fluid you lost is not counted anywhere at all.",
         "So we compared these apps on a single question: does the workout you logged change anything else about your day?"
       ],
-
       "table": {
         "head": "Workout tracker comparison",
         "caption": "Comparison of Strava, Nike Run Club, Samsung Health, Apple Fitness and Suu",
         "col_feature": "Feature",
-        "columns": ["Strava", "Nike Run Club", "Samsung Health", "Apple Fitness", "Suu"],
+        "columns": [
+          "Strava",
+          "Nike Run Club",
+          "Samsung Health",
+          "Apple Fitness",
+          "Suu"
+        ],
         "suu_col": 4,
         "rows": [
-          { "label": "GPS route tracking", "cells": [
-            {"text":"✓ Best in class","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
-          { "label": "Running metrics (pace, splits)", "cells": [
-            {"text":"✓ Deepest","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
-          { "label": "Cycling metrics (speed, elevation)", "cells": [
-            {"text":"✓ Deepest","cls":"yes"},{"text":"✗","cls":"no"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
-          { "label": "Number of activity types", "cells": [
-            {"text":"✓ 30+","cls":"yes"},{"text":"Running only","cls":"no"},{"text":"✓ 90+","cls":"yes"},{"text":"✓ 40+","cls":"yes"},{"text":"✓ ~50","cls":"yes"}] },
-          { "label": "Social feed / segments", "cells": [
-            {"text":"✓ Unmatched","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"Partial","cls":"no"},{"text":"Partial","cls":"no"},{"text":"Friend leagues","cls":""}] },
-          { "label": "Calorie/food logging in the same app", "cells": [
-            {"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"Basic","cls":"no"},{"text":"✗","cls":"no"},{"text":"✓ Photo + voice","cls":"yes"}] },
-          { "label": "Macro breakdown (protein/carbs/fat)", "cells": [
-            {"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"Basic","cls":"no"},{"text":"✗","cls":"no"},{"text":"✓","cls":"yes"}] },
-          { "label": "Hydration tracking (per beverage)", "cells": [
-            {"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"Simple counter","cls":"no"},{"text":"✗","cls":"no"},{"text":"✓ 91 beverages","cls":"yes"}] },
-          { "label": "Workout raises your hydration goal", "cells": [
-            {"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✓","cls":"yes"}] },
-          { "label": "Works on both iOS and Android", "cells": [
-            {"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"Android-first","cls":"no"},{"text":"iOS only","cls":"no"},{"text":"✓","cls":"yes"}] },
-          { "label": "Free tier usable long-term", "cells": [
-            {"text":"Limited","cls":"no"},{"text":"✓ Generous","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"Needs subscription","cls":"no"},{"text":"✓","cls":"yes"}] },
-          { "label": "Chat control of the app", "cells": [
-            {"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✓ Suu AI","cls":"yes"}] }
+          {
+            "label": "GPS route tracking",
+            "cells": [
+              {
+                "text": "✓ Best in class",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Running metrics (pace, splits)",
+            "cells": [
+              {
+                "text": "✓ Deepest",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Cycling metrics (speed, elevation)",
+            "cells": [
+              {
+                "text": "✓ Deepest",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Number of activity types",
+            "cells": [
+              {
+                "text": "✓ 30+",
+                "cls": "yes"
+              },
+              {
+                "text": "Running only",
+                "cls": "no"
+              },
+              {
+                "text": "✓ 90+",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ 40+",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ ~50",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Social feed / segments",
+            "cells": [
+              {
+                "text": "✓ Unmatched",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "Partial",
+                "cls": "no"
+              },
+              {
+                "text": "Partial",
+                "cls": "no"
+              },
+              {
+                "text": "Friend leagues",
+                "cls": ""
+              }
+            ]
+          },
+          {
+            "label": "Calorie/food logging in the same app",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "Basic",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Photo + voice",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Macro breakdown (protein/carbs/fat)",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "Basic",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Hydration tracking (per beverage)",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "Simple counter",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓ 91 beverages",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Workout raises your hydration goal",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Works on both iOS and Android",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "Android-first",
+                "cls": "no"
+              },
+              {
+                "text": "iOS only",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Free tier usable long-term",
+            "cells": [
+              {
+                "text": "Limited",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Generous",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "Needs subscription",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Chat control of the app",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Suu AI",
+                "cls": "yes"
+              }
+            ]
+          }
         ]
       },
-
       "analysis": [
         {
           "head": "What each app is genuinely best at",
@@ -106,7 +381,6 @@
           ]
         }
       ],
-
       "verdict": {
         "head": "Verdict",
         "body": [
@@ -117,47 +391,76 @@
           "Honest limitation: Suu is not trying to beat Strava at segments or social riding, and it does not have a dedicated Apple Watch app yet."
         ]
       },
-
       "cta": {
         "head": "Track the workout — and everything it changes",
         "sub": "Free to download · Premium free for 3 days",
         "button": "Download Suu Free"
       },
-
       "faq": [
-        { "q": "What is the best workout tracker app in 2026?",
-          "a": "It depends on the goal. Strava is the benchmark for performance, racing and social riding. Nike Run Club is the best free running coach. Suu is the best choice if you want workouts tracked alongside calories and hydration in one app, because it uses the workout to update your daily water goal and counts burned calories against what you logged eating." },
-        { "q": "Is there a workout app that also tracks calories and food?",
-          "a": "Yes. Suu tracks around 50 activity types with running and cycling detail, and includes photo-based calorie logging with macro breakdown in the same app. Samsung Health offers basic food logging alongside workouts; Strava, Nike Run Club and Apple Fitness do not track food at all." },
-        { "q": "Which workout app tracks hydration?",
-          "a": "Very few. Samsung Health includes a simple glass counter. Suu models hydration properly across 91 beverages and automatically raises the daily water goal based on estimated sweat loss from the workout you logged, ambient temperature, and the digestion water your meals require." },
-        { "q": "Do I need a smartwatch to track workouts?",
-          "a": "No. All of these apps can record a workout from your phone using GPS. A watch improves heart-rate accuracy and convenience but is not required. Suu also reads workouts recorded by your watch through Apple Health or Google Health Connect, so sessions logged elsewhere still count." },
-        { "q": "Is Suu a replacement for Strava?",
-          "a": "Not for competitive athletes. Strava's segments, social feed and cycling analytics are deeper and Suu is not trying to match them. Suu replaces the combination of a basic workout tracker plus a separate calorie app plus a separate water app for people whose goal is body composition rather than race performance." }
+        {
+          "q": "What is the best workout tracker app in 2026?",
+          "a": "It depends on the goal. Strava is the benchmark for performance, racing and social riding. Nike Run Club is the best free running coach. Suu is the best choice if you want workouts tracked alongside calories and hydration in one app, because it uses the workout to update your daily water goal and counts burned calories against what you logged eating."
+        },
+        {
+          "q": "Is there a workout app that also tracks calories and food?",
+          "a": "Yes. Suu tracks around 50 activity types with running and cycling detail, and includes photo-based calorie logging with macro breakdown in the same app. Samsung Health offers basic food logging alongside workouts; Strava, Nike Run Club and Apple Fitness do not track food at all."
+        },
+        {
+          "q": "Which workout app tracks hydration?",
+          "a": "Very few. Samsung Health includes a simple glass counter. Suu models hydration properly across 91 beverages and automatically raises the daily water goal based on estimated sweat loss from the workout you logged, ambient temperature, and the digestion water your meals require."
+        },
+        {
+          "q": "Do I need a smartwatch to track workouts?",
+          "a": "No. All of these apps can record a workout from your phone using GPS. A watch improves heart-rate accuracy and convenience but is not required. Suu also reads workouts recorded by your watch through Apple Health or Google Health Connect, so sessions logged elsewhere still count."
+        },
+        {
+          "q": "Is Suu a replacement for Strava?",
+          "a": "Not for competitive athletes. Strava's segments, social feed and cycling analytics are deeper and Suu is not trying to match them. Suu replaces the combination of a basic workout tracker plus a separate calorie app plus a separate water app for people whose goal is body composition rather than race performance."
+        }
       ],
-
       "references": [
-        { "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6835337/", "label": "Sweat rate and fluid replacement during exercise (PMC)" },
-        { "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/", "label": "Role of self-monitoring in weight management (PMC)" },
-        { "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459", "label": "EFSA — dietary reference values for water" }
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6835337/",
+          "label": "Sweat rate and fluid replacement during exercise (PMC)"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/",
+          "label": "Role of self-monitoring in weight management (PMC)"
+        },
+        {
+          "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459",
+          "label": "EFSA — dietary reference values for water"
+        }
       ],
-
       "related": [
-        { "href": "/blog/en/water-calorie-exercise-one-app.html", "title": "Water + calories + exercise in one app", "desc": "What connecting the three actually gains you." },
-        { "href": "/blog/en/calories-burned-exercise.html", "title": "How many calories does exercise burn?", "desc": "Activity-by-activity calorie guide." },
-        { "href": "/blog/en/hydration-and-exercise.html", "title": "Hydration and exercise", "desc": "How much to drink before, during and after training." },
-        { "href": "/blog/en/best-calorie-counting-app.html", "title": "Best calorie counting app", "desc": "The nutrition side of the comparison." }
+        {
+          "href": "/blog/en/water-calorie-exercise-one-app.html",
+          "title": "Water + calories + exercise in one app",
+          "desc": "What connecting the three actually gains you."
+        },
+        {
+          "href": "/blog/en/calories-burned-exercise.html",
+          "title": "How many calories does exercise burn?",
+          "desc": "Activity-by-activity calorie guide."
+        },
+        {
+          "href": "/blog/en/hydration-and-exercise.html",
+          "title": "Hydration and exercise",
+          "desc": "How much to drink before, during and after training."
+        },
+        {
+          "href": "/blog/en/best-calorie-counting-app.html",
+          "title": "Best calorie counting app",
+          "desc": "The nutrition side of the comparison."
+        }
       ]
     },
-
     "tr": {
       "slug": "en-iyi-egzersiz-takip-uygulamasi",
       "published_display": "13 Ağustos 2026",
       "read_minutes": 8,
       "badge": "🏃 Karşılaştırma 2026",
       "h1": "En İyi Egzersiz Takip Uygulaması 2026: Verinle Ne Yaptığına Göre Karşılaştırdık",
-
       "meta": {
         "title": "En İyi Egzersiz Takip Uygulaması 2026 — Karşılaştırma (Strava, Nike Run Club, Suu) | Suu",
         "description": "Egzersiz takip uygulamalarını verinle ne yaptıklarına göre karşılaştırdık: Strava, Nike Run Club, Samsung Health, Apple Fitness ve Suu. Hangisi kaloriyi, hangisi hidrasyonu sayıyor, hangisi üçünü birden bağlıyor?",
@@ -165,51 +468,328 @@
         "og_title": "En İyi Egzersiz Takip Uygulaması 2026",
         "og_description": "Strava, Nike Run Club, Samsung Health, Apple Fitness ve Suu — antrenman bittikten sonra veriyle ne yaptıklarına göre karşılaştırıldı."
       },
-
       "answer": "Saf atletik performans, yarış ve sosyal bisiklet için Strava hâlâ referans nokta. Ücretsiz ve cilalı bir koşu deneyimi için Nike Run Club. Ama antrenmanın günün geri kalanını beslemesini istiyorsan — yaktığın kalorinin yediğinle hesaplaşması, terlediğin kadarının su hedefine yansıması — bu listede döngüyü kapatan tek uygulama Suu: yaklaşık 50 aktiviteyi fotoğraflı kalori takibiyle aynı yerde tutuyor.",
-
       "disclosure": "Bu karşılaştırmayı Suu ekibi yazdı, yani taraflı bir kaynaktan okuyorsunuz. Bunu telafi etmek için her rakibin Suu'dan iyi olduğu yerleri açıkça yazdık — Strava ve Nike Run Club birkaç eksende Suu'yu geçiyor. Rakip özellikleri 2026 Ağustos itibarıyla kamuya açık bilgilere dayanır ve sık değişir.",
-
       "intro": [
         "Neredeyse her egzersiz uygulaması temel işi iyi yapıyor: seansı kaydediyor, rotayı haritaya çiziyor, mesafe, süre, tempo ve irtifayı gösteriyor. Bu kısım yıllardır çözülmüş bir problem.",
         "Asıl fark <strong>\"Bitir\"e bastıktan sonra ne olduğunda</strong>. Çoğu uygulama antrenmanı kaydedip orada duruyor. Yaktığın 600 kalori bir uygulamada, yediğin 2.400 kalori başka bir uygulamada duruyor; kaybettiğin ekstra sıvı ise hiçbir yerde sayılmıyor.",
         "Bu yüzden uygulamaları tek bir soruyla karşılaştırdık: kaydettiğin antrenman, gününle ilgili başka bir şeyi değiştiriyor mu?"
       ],
-
       "table": {
         "head": "Egzersiz uygulaması karşılaştırması",
         "caption": "Strava, Nike Run Club, Samsung Health, Apple Fitness ve Suu karşılaştırması",
         "col_feature": "Özellik",
-        "columns": ["Strava", "Nike Run Club", "Samsung Health", "Apple Fitness", "Suu"],
+        "columns": [
+          "Strava",
+          "Nike Run Club",
+          "Samsung Health",
+          "Apple Fitness",
+          "Suu"
+        ],
         "suu_col": 4,
         "rows": [
-          { "label": "GPS rota takibi", "cells": [
-            {"text":"✓ Sınıfının en iyisi","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
-          { "label": "Koşu metrikleri (tempo, split)", "cells": [
-            {"text":"✓ En derin","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
-          { "label": "Bisiklet metrikleri (hız, irtifa)", "cells": [
-            {"text":"✓ En derin","cls":"yes"},{"text":"✗","cls":"no"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
-          { "label": "Aktivite türü sayısı", "cells": [
-            {"text":"✓ 30+","cls":"yes"},{"text":"Sadece koşu","cls":"no"},{"text":"✓ 90+","cls":"yes"},{"text":"✓ 40+","cls":"yes"},{"text":"✓ ~50","cls":"yes"}] },
-          { "label": "Sosyal akış / segment", "cells": [
-            {"text":"✓ Rakipsiz","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"Kısmi","cls":"no"},{"text":"Kısmi","cls":"no"},{"text":"Arkadaş ligi","cls":""}] },
-          { "label": "Aynı uygulamada kalori/öğün kaydı", "cells": [
-            {"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"Temel","cls":"no"},{"text":"✗","cls":"no"},{"text":"✓ Fotoğraf + ses","cls":"yes"}] },
-          { "label": "Makro dökümü (protein/karb/yağ)", "cells": [
-            {"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"Temel","cls":"no"},{"text":"✗","cls":"no"},{"text":"✓","cls":"yes"}] },
-          { "label": "Hidrasyon takibi (içecek bazlı)", "cells": [
-            {"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"Basit sayaç","cls":"no"},{"text":"✗","cls":"no"},{"text":"✓ 91 içecek","cls":"yes"}] },
-          { "label": "Antrenman su hedefini yükseltiyor", "cells": [
-            {"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✓","cls":"yes"}] },
-          { "label": "Hem iOS hem Android", "cells": [
-            {"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"Android öncelikli","cls":"no"},{"text":"Sadece iOS","cls":"no"},{"text":"✓","cls":"yes"}] },
-          { "label": "Ücretsiz plan uzun vadede yeterli", "cells": [
-            {"text":"Kısıtlı","cls":"no"},{"text":"✓ Cömert","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"Abonelik gerekir","cls":"no"},{"text":"✓","cls":"yes"}] },
-          { "label": "Sohbetle uygulama kontrolü", "cells": [
-            {"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✓ Suu AI","cls":"yes"}] }
+          {
+            "label": "GPS rota takibi",
+            "cells": [
+              {
+                "text": "✓ Sınıfının en iyisi",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Koşu metrikleri (tempo, split)",
+            "cells": [
+              {
+                "text": "✓ En derin",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Bisiklet metrikleri (hız, irtifa)",
+            "cells": [
+              {
+                "text": "✓ En derin",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Aktivite türü sayısı",
+            "cells": [
+              {
+                "text": "✓ 30+",
+                "cls": "yes"
+              },
+              {
+                "text": "Sadece koşu",
+                "cls": "no"
+              },
+              {
+                "text": "✓ 90+",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ 40+",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ ~50",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Sosyal akış / segment",
+            "cells": [
+              {
+                "text": "✓ Rakipsiz",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "Kısmi",
+                "cls": "no"
+              },
+              {
+                "text": "Kısmi",
+                "cls": "no"
+              },
+              {
+                "text": "Arkadaş ligi",
+                "cls": ""
+              }
+            ]
+          },
+          {
+            "label": "Aynı uygulamada kalori/öğün kaydı",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "Temel",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Fotoğraf + ses",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Makro dökümü (protein/karb/yağ)",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "Temel",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Hidrasyon takibi (içecek bazlı)",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "Basit sayaç",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓ 91 içecek",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Antrenman su hedefini yükseltiyor",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Hem iOS hem Android",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "Android öncelikli",
+                "cls": "no"
+              },
+              {
+                "text": "Sadece iOS",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Ücretsiz plan uzun vadede yeterli",
+            "cells": [
+              {
+                "text": "Kısıtlı",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Cömert",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "Abonelik gerekir",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Sohbetle uygulama kontrolü",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Suu AI",
+                "cls": "yes"
+              }
+            ]
+          }
         ]
       },
-
       "analysis": [
         {
           "head": "Her uygulamanın gerçekten iyi olduğu yer",
@@ -254,7 +834,6 @@
           ]
         }
       ],
-
       "verdict": {
         "head": "Karar",
         "body": [
@@ -265,38 +844,1127 @@
           "Dürüst sınır: Suu segment ve sosyal bisiklette Strava'yı geçmeye çalışmıyor ve henüz adanmış bir Apple Watch uygulaması yok."
         ]
       },
-
       "cta": {
         "head": "Antrenmanı kaydet — değiştirdiği her şeyle birlikte",
         "sub": "Ücretsiz indir · Premium 3 gün ücretsiz",
         "button": "Suu'yu Ücretsiz İndir"
       },
-
       "faq": [
-        { "q": "2026'da en iyi egzersiz takip uygulaması hangisi?",
-          "a": "Hedefe bağlı. Performans, yarış ve sosyal bisiklet için referans nokta Strava. En iyi ücretsiz koşu koçu Nike Run Club. Antrenmanı kalori ve hidrasyonla aynı uygulamada takip etmek istiyorsan Suu doğru seçim, çünkü antrenmanı günlük su hedefini güncellemekte kullanıyor ve yakılan kaloriyi yediklerinle hesaplaşıyor." },
-        { "q": "Hem egzersiz hem kalori takibi yapan uygulama var mı?",
-          "a": "Evet. Suu koşu ve bisiklet ayrıntısıyla yaklaşık 50 aktivite türünü takip eder ve aynı uygulamada fotoğrafla kalori kaydı ile makro dökümü sunar. Samsung Health antrenmanların yanında temel öğün kaydı verir; Strava, Nike Run Club ve Apple Fitness beslenme takibi yapmaz." },
-        { "q": "Hangi egzersiz uygulaması su takibi yapıyor?",
-          "a": "Çok azı. Samsung Health basit bir bardak sayacı içerir. Suu hidrasyonu 91 içecek üzerinden gerçek anlamda modelleyip kaydettiğin antrenmandan tahmini ter kaybı, hava sıcaklığı ve öğünlerinin gerektirdiği sindirim suyuna göre günlük su hedefini otomatik yükseltir." },
-        { "q": "Antrenman takibi için akıllı saat şart mı?",
-          "a": "Hayır. Bu uygulamaların hepsi telefonun GPS'iyle antrenman kaydedebilir. Saat kalp atış doğruluğunu ve kullanım kolaylığını artırır ama zorunlu değildir. Suu ayrıca saatinin kaydettiği antrenmanları Apple Health veya Google Health Connect üzerinden okur." },
-        { "q": "Suu Strava'nın yerini tutar mı?",
-          "a": "Rekabetçi sporcular için tutmaz. Strava'nın segmentleri, sosyal akışı ve bisiklet analitiği daha derindir ve Suu bunlarla yarışmıyor. Suu, hedefi yarış performansı değil vücut kompozisyonu olan kişiler için temel bir egzersiz takipçisi + ayrı bir kalori uygulaması + ayrı bir su uygulaması üçlüsünün yerini alıyor." }
+        {
+          "q": "2026'da en iyi egzersiz takip uygulaması hangisi?",
+          "a": "Hedefe bağlı. Performans, yarış ve sosyal bisiklet için referans nokta Strava. En iyi ücretsiz koşu koçu Nike Run Club. Antrenmanı kalori ve hidrasyonla aynı uygulamada takip etmek istiyorsan Suu doğru seçim, çünkü antrenmanı günlük su hedefini güncellemekte kullanıyor ve yakılan kaloriyi yediklerinle hesaplaşıyor."
+        },
+        {
+          "q": "Hem egzersiz hem kalori takibi yapan uygulama var mı?",
+          "a": "Evet. Suu koşu ve bisiklet ayrıntısıyla yaklaşık 50 aktivite türünü takip eder ve aynı uygulamada fotoğrafla kalori kaydı ile makro dökümü sunar. Samsung Health antrenmanların yanında temel öğün kaydı verir; Strava, Nike Run Club ve Apple Fitness beslenme takibi yapmaz."
+        },
+        {
+          "q": "Hangi egzersiz uygulaması su takibi yapıyor?",
+          "a": "Çok azı. Samsung Health basit bir bardak sayacı içerir. Suu hidrasyonu 91 içecek üzerinden gerçek anlamda modelleyip kaydettiğin antrenmandan tahmini ter kaybı, hava sıcaklığı ve öğünlerinin gerektirdiği sindirim suyuna göre günlük su hedefini otomatik yükseltir."
+        },
+        {
+          "q": "Antrenman takibi için akıllı saat şart mı?",
+          "a": "Hayır. Bu uygulamaların hepsi telefonun GPS'iyle antrenman kaydedebilir. Saat kalp atış doğruluğunu ve kullanım kolaylığını artırır ama zorunlu değildir. Suu ayrıca saatinin kaydettiği antrenmanları Apple Health veya Google Health Connect üzerinden okur."
+        },
+        {
+          "q": "Suu Strava'nın yerini tutar mı?",
+          "a": "Rekabetçi sporcular için tutmaz. Strava'nın segmentleri, sosyal akışı ve bisiklet analitiği daha derindir ve Suu bunlarla yarışmıyor. Suu, hedefi yarış performansı değil vücut kompozisyonu olan kişiler için temel bir egzersiz takipçisi + ayrı bir kalori uygulaması + ayrı bir su uygulaması üçlüsünün yerini alıyor."
+        }
       ],
-
       "references": [
-        { "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6835337/", "label": "Egzersizde ter oranı ve sıvı yerine koyma (PMC)" },
-        { "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/", "label": "Kayıt tutmanın kilo yönetimindeki rolü (PMC)" },
-        { "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459", "label": "EFSA — su alımı için diyet referans değerleri" }
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6835337/",
+          "label": "Egzersizde ter oranı ve sıvı yerine koyma (PMC)"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/",
+          "label": "Kayıt tutmanın kilo yönetimindeki rolü (PMC)"
+        },
+        {
+          "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459",
+          "label": "EFSA — su alımı için diyet referans değerleri"
+        }
       ],
-
       "related": [
-        { "href": "/blog/su-kalori-egzersiz-tek-uygulama.html", "title": "Su + kalori + egzersiz tek uygulamada", "desc": "Üçünün bağlı çalışması ne kazandırıyor?" },
-        { "href": "/blog/egzersizde-kalori-yakimi.html", "title": "Egzersizde kalori yakımı", "desc": "Aktivite bazlı kalori rehberi." },
-        { "href": "/blog/spor-ve-hidrasyon.html", "title": "Spor ve hidrasyon", "desc": "Antrenman öncesi, sırası ve sonrası su." },
-        { "href": "/blog/en-iyi-kalori-uygulamasi.html", "title": "En iyi kalori sayma uygulaması", "desc": "Karşılaştırmanın beslenme tarafı." }
+        {
+          "href": "/blog/su-kalori-egzersiz-tek-uygulama.html",
+          "title": "Su + kalori + egzersiz tek uygulamada",
+          "desc": "Üçünün bağlı çalışması ne kazandırıyor?"
+        },
+        {
+          "href": "/blog/egzersizde-kalori-yakimi.html",
+          "title": "Egzersizde kalori yakımı",
+          "desc": "Aktivite bazlı kalori rehberi."
+        },
+        {
+          "href": "/blog/spor-ve-hidrasyon.html",
+          "title": "Spor ve hidrasyon",
+          "desc": "Antrenman öncesi, sırası ve sonrası su."
+        },
+        {
+          "href": "/blog/en-iyi-kalori-uygulamasi.html",
+          "title": "En iyi kalori sayma uygulaması",
+          "desc": "Karşılaştırmanın beslenme tarafı."
+        }
+      ]
+    },
+    "de": {
+      "slug": "beste-workout-tracker-app",
+      "published_display": "24. August 2026",
+      "read_minutes": 8,
+      "badge": "🏃 Vergleich 2026",
+      "h1": "Die beste Workout-Tracking-App 2026: verglichen an dem, was nach dem Training passiert",
+      "meta": {
+        "title": "Beste Sport-Tracking-App 2026 — Strava, Komoot, adidas Running, Suu | Suu",
+        "description": "Workout-Apps verglichen an dem, was sie mit deinen Daten machen: Strava, Komoot, adidas Running, Nike Run Club und Suu. Welche zählt Kalorien, welche Flüssigkeit, welche verbindet beides.",
+        "keywords": "beste workout app, sport tracking app, laufapp test 2026, strava alternative, komoot alternative, adidas running app, fahrrad tracking app, trainings app kostenlos, kalorienverbrauch app",
+        "og_title": "Die beste Workout-Tracking-App 2026",
+        "og_description": "Strava, Komoot, adidas Running, Nike Run Club und Suu — verglichen an dem, was nach dem Antippen von \"Beenden\" mit deinen Daten passiert."
+      },
+      "answer": "Für sportliche Leistung, Segmente und das soziale Radfahren ist Strava weiter die Referenz. Für Touren, Wandern und Radrouten im deutschsprachigen Raum führt kein Weg an Komoot vorbei. Für kostenloses Lauf-Coaching sind adidas Running und Nike Run Club stark. Wenn das Training aber in den Rest des Tages hineinwirken soll — verbrannte Kalorien gegen das Gegessene gerechnet, Trinkziel um den Schweißverlust angehoben —, dann ist Suu die einzige dieser Apps, die den Kreis schließt: rund 50 Sportarten neben Kalorienerfassung per Foto.",
+      "disclosure": "Diesen Vergleich schreibt das Suu-Team, du liest also eine parteiische Quelle. Zum Ausgleich benennen wir klar, wo die Konkurrenz besser ist — und Strava und Komoot schlagen Suu auf mehreren Achsen deutlich. Funktionen entsprechen dem öffentlich einsehbaren Stand von August 2026 und ändern sich häufig.",
+      "ranked": {
+        "head": "Die besten Workout-Tracking-Apps 2026",
+        "lead": "Sortiert danach, wofür sie gebaut sind. Aufzeichnen, Route zeichnen und Tempo anzeigen können alle — das ist seit Jahren gelöst.",
+        "items": [
+          {
+            "name": "Strava",
+            "tag": "Leistung, Segmente, soziales Training",
+            "body": "Der Maßstab für alle, die Wettkämpfe fahren oder laufen, in der Gruppe unterwegs sind oder ihre Zeiten vergleichen wollen. Segmente machen jede Straße zum wiederholbaren Zeitfahren, der Feed macht Einzeltraining sichtbar, und die Radsport-Analytik ist die tiefste im Feld. Nimmt Daten von praktisch jeder Uhr und jedem Radcomputer an. Der Haken: Routenplanung und die meisten Auswertungen liegen im Abo."
+          },
+          {
+            "name": "Komoot",
+            "tag": "Touren, Wandern und Radrouten im DACH-Raum",
+            "body": "In Potsdam entwickelt und im deutschsprachigen Raum die erste Wahl fürs Planen: Routenplanung mit Wegbeschaffenheit, Höhenprofil und Sprachnavigation, dazu eine große Sammlung von Nutzer-Touren. Wer wandert, Gravel fährt oder eine Mehrtagestour plant, findet hier deutlich mehr als bei Strava. Als reine Trainingsauswertung für Intervalle ist es dagegen schwach, und Ernährung kommt nicht vor."
+          },
+          {
+            "name": "adidas Running",
+            "tag": "solider Allrounder mit Trainingsplänen",
+            "body": "Das frühere Runtastic, in Linz entwickelt und im deutschsprachigen Raum seit Jahren verbreitet. Zeichnet viele Sportarten auf, nicht nur Laufen, hat Trainingspläne und eine brauchbare Gratis-Stufe. Die stärksten Pläne und Auswertungen stecken im Abo, und die Community ist kleiner als bei Strava."
+          },
+          {
+            "name": "Nike Run Club",
+            "tag": "bestes kostenloses Lauf-Coaching",
+            "body": "Geführte Läufe mit echtem Coach im Ohr und adaptive Trainingspläne — beides kostenlos, was sonst fast überall Geld kostet. Für Laufeinsteiger das beste Angebot hier. Dafür: nur Laufen, kein Radfahren, wenig Gerätekompatibilität und kaum analytische Tiefe."
+          },
+          {
+            "name": "Suu",
+            "tag": "wenn das Training den restlichen Tag verändern soll",
+            "body": "Zeichnet rund 50 Sportarten per GPS auf — Laufen, Gehen, Radfahren mit Route, Tempo, Höhenmetern — und ist die einzige App hier, bei der das Training danach weiterwirkt: Der Verbrauch wird gegen die per Foto erfassten Mahlzeiten gerechnet, und das Trinkziel steigt automatisch um den geschätzten Schweißverlust. Kostenlos für iOS und Android. Ehrliche Grenzen: keine Segmente, kein sozialer Feed, keine Wattanalyse und keine Routenplanung — dafür gibt es Strava und Komoot."
+          }
+        ]
+      },
+      "intro": [
+        "Fast jede Sport-App erledigt die Grundaufgabe gut: Sie zeichnet die Einheit auf, malt die Route auf die Karte und zeigt Distanz, Dauer, Tempo und Höhenmeter. Dieser Teil ist seit Jahren gelöst.",
+        "Der eigentliche Unterschied liegt darin, <strong>was passiert, nachdem du auf \"Beenden\" tippst</strong>. Die meisten Apps speichern das Training und hören dort auf. Die 600 verbrannten Kalorien liegen in der einen App, die 2.400 gegessenen in einer anderen, und die zusätzlich verlorene Flüssigkeit wird nirgends gezählt.",
+        "Wir haben diese Apps deshalb an einer Frage gemessen: Verändert das aufgezeichnete Training sonst irgendetwas an deinem Tag?"
+      ],
+      "table": {
+        "head": "Vergleich der Sport-Apps",
+        "caption": "Vergleich von Strava, Komoot, adidas Running, Nike Run Club und Suu",
+        "col_feature": "Funktion",
+        "columns": [
+          "Strava",
+          "Komoot",
+          "adidas Running",
+          "Nike Run Club",
+          "Suu"
+        ],
+        "suu_col": 4,
+        "rows": [
+          {
+            "label": "GPS-Routenaufzeichnung",
+            "cells": [
+              {
+                "text": "✓ Klassenbeste",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Laufwerte (Tempo, Splits)",
+            "cells": [
+              {
+                "text": "✓ Am tiefsten",
+                "cls": "yes"
+              },
+              {
+                "text": "Begrenzt",
+                "cls": "soon"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Radwerte (Geschwindigkeit, Höhe)",
+            "cells": [
+              {
+                "text": "✓ Am tiefsten",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Routenplanung vorab",
+            "cells": [
+              {
+                "text": "Abo",
+                "cls": "soon"
+              },
+              {
+                "text": "✓ Klassenbeste",
+                "cls": "yes"
+              },
+              {
+                "text": "Begrenzt",
+                "cls": "soon"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Wandern und Gravel",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Stärkste",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Anzahl Sportarten",
+            "cells": [
+              {
+                "text": "✓ 30+",
+                "cls": "yes"
+              },
+              {
+                "text": "Wenige",
+                "cls": "no"
+              },
+              {
+                "text": "Viele",
+                "cls": "yes"
+              },
+              {
+                "text": "Nur Laufen",
+                "cls": "no"
+              },
+              {
+                "text": "✓ ~50",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Segmente und Bestenlisten",
+            "cells": [
+              {
+                "text": "✓ Nur bei Strava",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Geführte Läufe / Audio-Coaching",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Beste",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Trainingspläne",
+            "cells": [
+              {
+                "text": "Abo",
+                "cls": "soon"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "Teils Abo",
+                "cls": "soon"
+              },
+              {
+                "text": "✓ Gratis",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Kalorienzufuhr erfassen",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Foto, Sprache, manuell",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Trinkziel steigt nach dem Training",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓ automatisch",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Garmin, Coros, Polar",
+            "cells": [
+              {
+                "text": "✓ Breiteste Unterstützung",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "Teilweise",
+                "cls": "soon"
+              },
+              {
+                "text": "Begrenzt",
+                "cls": "soon"
+              },
+              {
+                "text": "Über Apple Health / Health Connect",
+                "cls": "soon"
+              }
+            ]
+          },
+          {
+            "label": "Apple-Watch-App",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "In Arbeit",
+                "cls": "soon"
+              }
+            ]
+          },
+          {
+            "label": "Brauchbarkeit der Gratis-Version",
+            "cells": [
+              {
+                "text": "Dünn",
+                "cls": "no"
+              },
+              {
+                "text": "Erste Region gratis",
+                "cls": "soon"
+              },
+              {
+                "text": "✓ Gut",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Komplett gratis",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Gut",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Deutsche Oberfläche",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Muttersprachlich",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Muttersprachlich",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          }
+        ]
+      },
+      "analysis": [
+        {
+          "head": "Wofür jede App wirklich gebaut ist",
+          "body": [
+            "Keine davon ist eine schlechte App. Sie lösen unterschiedliche Probleme:"
+          ],
+          "list": [
+            "<strong>Strava</strong> — wenn du Wettkämpfe fährst, in der Gruppe unterwegs bist oder die tiefste Radsport-Analytik und Segmentwertung willst.",
+            "<strong>Komoot</strong> — wenn du <em>planst</em> statt nur aufzeichnest: Wanderungen, Gravel-Runden, Mehrtagestouren, mit Wegbeschaffenheit und Sprachnavigation.",
+            "<strong>adidas Running</strong> — wenn du einen soliden Allrounder mit Trainingsplänen willst und keine Strava-Community brauchst.",
+            "<strong>Nike Run Club</strong> — wenn du Laufeinsteiger bist und kostenloses Coaching den Ausschlag gibt.",
+            "<strong>Suu</strong> — wenn dein Ziel Gewicht oder allgemeine Gesundheit ist statt Leistung, und das Training mit Essen und Trinken zusammenhängen soll."
+          ]
+        },
+        {
+          "head": "Nach dem Antippen von \"Beenden\" hören die meisten Apps auf",
+          "body": [
+            "Strava, Komoot, adidas Running und Nike Run Club sagen dir alle, dass du rund 600 Kalorien verbrannt hast. Danach passiert mit dieser Zahl nichts mehr: Sie wird nicht gegen das gerechnet, was du gegessen hast, und die zusätzlich über den Schweiß verlorene Flüssigkeit taucht nirgends auf.",
+            "Für einen ambitionierten Radsportler mit eigener Ernährungs-App und Trainer ist diese Trennung in Ordnung, teilweise sogar erwünscht. Wer dagegen abnehmen oder einfach gesünder leben will, führt am Ende zwei oder drei Apps, die nicht miteinander reden, und rechnet von Hand dazwischen.",
+            "Genau das ist der Punkt, an dem Suu ansetzt — und zugleich der Grund, warum es Strava für den Wettkampf nicht ersetzt. Es sind unterschiedliche Werkzeuge, keine besseren oder schlechteren."
+          ]
+        },
+        {
+          "head": "Warum Kalorienangaben zwischen Apps abweichen",
+          "body": [
+            "Zwei Apps zeigen für denselben Lauf oft unterschiedliche Werte, und das ist kein Fehler. Der Verbrauch wird geschätzt — aus Gewicht, Tempo, Dauer, Höhenmetern und, wenn vorhanden, Herzfrequenz. Jede App gewichtet diese Größen anders.",
+            "Praktisch heißt das: Vergleiche Verbrauchszahlen nur innerhalb derselben App über die Zeit, nicht zwischen Apps. Und behandle die Zahl als Größenordnung, nicht als Messwert — besonders wenn du sie direkt in zusätzliche Nahrung umrechnest."
+          ]
+        }
+      ],
+      "verdict": {
+        "head": "Fazit",
+        "body": [
+          "<strong>Nimm Strava</strong>, wenn du Wettkämpfe fährst, sozial trainierst oder Segmente und tiefe Radanalytik willst.",
+          "<strong>Nimm Komoot</strong>, wenn Planung zählt: Wandern, Gravel, Mehrtagestouren im deutschsprachigen Raum.",
+          "<strong>Nimm adidas Running</strong> als soliden Allrounder mit Plänen und brauchbarer Gratis-Stufe.",
+          "<strong>Nimm Nike Run Club</strong>, wenn du kostenloses Lauf-Coaching willst und nur läufst.",
+          "<strong>Nimm Suu</strong>, wenn dein Training mit Essen und Trinken zusammenhängen soll: rund 50 Sportarten per GPS, Kalorien per Foto oder Sprache und ein Trinkziel, das nach dem Training automatisch steigt. Kostenlos für iOS und Android — ohne Segmente, ohne Feed, ohne Routenplanung."
+        ]
+      },
+      "cta": {
+        "head": "Zeichne das Training auf — und alles, was es verändert",
+        "sub": "Kostenlos laden · Premium 3 Tage gratis",
+        "button": "Suu kostenlos laden"
+      },
+      "faq": [
+        {
+          "q": "Welche Sport-Tracking-App ist 2026 die beste?",
+          "a": "Das hängt vom Ziel ab. Strava ist der Maßstab für Leistung, Wettkampf und soziales Radfahren. Komoot ist im deutschsprachigen Raum die beste App zum Planen von Wander- und Radtouren. Nike Run Club bietet das beste kostenlose Lauf-Coaching, adidas Running den solidesten Allrounder. Suu ist die beste Wahl, wenn das Training mit Kalorien und Trinkmenge zusammenhängen soll — als einzige dieser Apps rechnet sie den Verbrauch gegen das Gegessene und hebt das Trinkziel um den Schweißverlust."
+        },
+        {
+          "q": "Gibt es eine gute kostenlose Strava-Alternative?",
+          "a": "Für Laufen ist Nike Run Club kostenlos und bietet Coaching, das Strava gar nicht hat. Für Touren und Routenplanung ist Komoot die stärkere Wahl, wobei dort nur die erste Region gratis ist. Für allgemeines Tracking mit Kalorien und Trinkmenge in derselben App ist Suu kostenlos auf iOS und Android. Segmente und Bestenlisten ersetzt allerdings keine davon — das gibt es nur bei Strava."
+        },
+        {
+          "q": "Komoot oder Strava — was ist besser?",
+          "a": "Sie lösen unterschiedliche Aufgaben. Komoot ist zum <em>Planen</em> gebaut: Route vorab zusammenstellen, Wegbeschaffenheit und Höhenprofil sehen, unterwegs navigieren. Strava ist zum <em>Auswerten und Vergleichen</em> gebaut: Segmente, Bestenlisten, Feed und Analytik nach dem Training. Viele nutzen beide — mit Komoot planen, nach Strava hochladen."
+        },
+        {
+          "q": "Welche Workout-App zählt auch die gegessenen Kalorien?",
+          "a": "Von den hier verglichenen nur Suu. Strava, Komoot, adidas Running und Nike Run Club schätzen den Verbrauch während der Einheit, erfassen aber keine Nahrungsaufnahme und rechnen den Verbrauch nicht gegen das Gegessene. Wer beides will, koppelt entweder eine dieser Apps mit einer Ernährungs-App oder nutzt eine App, die beides führt."
+        },
+        {
+          "q": "Warum zeigen zwei Apps für denselben Lauf verschiedene Kalorien?",
+          "a": "Weil der Verbrauch geschätzt und nicht gemessen wird. Jede App gewichtet Gewicht, Tempo, Dauer, Höhenmeter und Herzfrequenz anders. Vergleiche die Zahlen deshalb nur innerhalb derselben App über die Zeit und behandle sie als Größenordnung — nicht als Messwert, aus dem du direkt zusätzliche Nahrung ableitest."
+        }
+      ],
+      "references": [
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6835337/",
+          "label": "Schweißrate und Flüssigkeitsersatz beim Sport (PMC)"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7909433/",
+          "label": "Genauigkeit von Wearables bei der Verbrauchsschätzung (PMC)"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/de/beste-wasser-tracking-app.html",
+          "title": "Beste Wasser-Tracking-App 2026",
+          "desc": "Derselbe Vergleich für die Trink-Säule."
+        },
+        {
+          "href": "/blog/de/bester-kalorienzaehler-app.html",
+          "title": "Bester Kalorienzähler 2026",
+          "desc": "Yazio, FDDB, MyFitnessPal und Cronometer."
+        },
+        {
+          "href": "/blog/de/wasser-kalorien-sport-eine-app.html",
+          "title": "Wasser, Kalorien und Sport in einer App",
+          "desc": "Was es bringt, die drei zu verbinden."
+        },
+        {
+          "href": "/blog/en/suu-vs-strava.html",
+          "title": "Suu vs Strava",
+          "desc": "Wo eine GPS-App endet und eine Gesundheits-App beginnt."
+        }
+      ]
+    },
+    "it": {
+      "slug": "migliore-app-allenamento",
+      "published_display": "24 agosto 2026",
+      "read_minutes": 8,
+      "badge": "🏃 Confronto 2026",
+      "h1": "La migliore app per allenamento del 2026: confrontate su cosa succede dopo la sessione",
+      "meta": {
+        "title": "Migliore app allenamento 2026 — Strava, Nike Run Club, adidas Running, Suu | Suu",
+        "description": "App per allenarsi a confronto su cosa fanno davvero dei tuoi dati: Strava, Nike Run Club, adidas Running, Apple Fitness e Suu. Quale conta le calorie, quale l'idratazione, quale collega tutto.",
+        "keywords": "migliore app allenamento, app corsa gps, app per correre gratis, alternativa strava, nike run club recensione, adidas running app, app ciclismo, app calorie bruciate",
+        "og_title": "La migliore app per allenamento del 2026",
+        "og_description": "Strava, Nike Run Club, adidas Running, Apple Fitness e Suu — confrontate su cosa succede dopo che premi \"Fine\"."
+      },
+      "answer": "Per prestazione, segmenti e ciclismo sociale Strava resta il riferimento. Per un allenamento alla corsa gratuito e curato, Nike Run Club. adidas Running è il tuttofare più solido, Apple Fitness la scelta naturale se vivi nell'ecosistema Apple. Ma se vuoi che l'allenamento incida sul resto della giornata — le calorie bruciate messe contro quelle mangiate e l'obiettivo d'acqua alzato per il sudore — Suu è l'unica di queste che chiude il cerchio, con circa 50 attività accanto al conteggio calorie da foto.",
+      "disclosure": "Questo confronto è scritto dal team di Suu, quindi stai leggendo una fonte di parte. Per compensare, diciamo chiaramente dove i concorrenti sono migliori — e Strava e Nike Run Club battono Suu su più fronti. Le funzioni riflettono le informazioni pubbliche di agosto 2026 e cambiano spesso.",
+      "ranked": {
+        "head": "Le migliori app per allenamento del 2026",
+        "lead": "In ordine di cosa risolvono. Registrare la sessione, disegnare il percorso e mostrare il passo lo fanno tutte: quel problema è risolto da anni.",
+        "items": [
+          {
+            "name": "Strava",
+            "tag": "prestazione, segmenti e community",
+            "body": "Il riferimento per chi gareggia, esce in gruppo o vuole confrontare i tempi. I segmenti trasformano qualunque tratto di strada in una cronometro ripetibile, il feed rende visibile l'allenamento in solitaria e l'analisi del ciclismo è la più profonda del gruppo. Accetta dati praticamente da ogni orologio e ciclocomputer. Il rovescio: pianificazione dei percorsi e gran parte delle analisi sono nell'abbonamento."
+          },
+          {
+            "name": "Nike Run Club",
+            "tag": "il miglior coaching gratuito per la corsa",
+            "body": "Corse guidate con un vero allenatore nell'orecchio e piani di allenamento adattivi, entrambi gratuiti — cosa che quasi ovunque si paga. Per chi inizia a correre è l'offerta migliore qui. In cambio: solo corsa, niente bici, poca compatibilità con i dispositivi e scarsa profondità analitica."
+          },
+          {
+            "name": "adidas Running",
+            "tag": "il tuttofare più solido",
+            "body": "L'ex Runtastic, diffusa da anni anche in Italia. Registra molte attività e non solo la corsa, ha piani di allenamento e un piano gratuito utilizzabile. I piani migliori e le analisi più complete sono in abbonamento, e la community è più piccola di quella di Strava."
+          },
+          {
+            "name": "Apple Fitness",
+            "tag": "se vivi nell'ecosistema Apple",
+            "body": "Integrazione impeccabile con Apple Watch e Apple Salute, anelli di attività e una libreria di allenamenti con Fitness+. Funziona benissimo se hai già l'orologio, ma è chiusa fuori dall'ecosistema Apple e non ha nulla di paragonabile ai segmenti di Strava né al coaching vocale di Nike."
+          },
+          {
+            "name": "Suu",
+            "tag": "se l'allenamento deve cambiare il resto della giornata",
+            "body": "Registra circa 50 attività con GPS — corsa, camminata, bici con percorso, passo e dislivello — ed è l'unica app qui in cui l'allenamento continua a produrre effetti dopo: il consumo viene messo contro i pasti registrati con una foto e l'obiettivo d'acqua sale automaticamente per il sudore stimato. Gratis su iOS e Android. Limiti onesti: niente segmenti, niente feed sociale, niente analisi di potenza e nessuna pianificazione dei percorsi — per quelli c'è Strava."
+          }
+        ]
+      },
+      "intro": [
+        "Quasi tutte le app per allenarsi fanno bene il lavoro di base: registrano la sessione, disegnano il percorso sulla mappa e mostrano distanza, durata, passo e dislivello. Quella parte è risolta da anni.",
+        "La differenza vera sta in <strong>cosa succede dopo che premi \"Fine\"</strong>. Quasi tutte salvano l'allenamento e si fermano lì. Le 600 calorie bruciate stanno in un'app, le 2.400 mangiate in un'altra, e i liquidi persi in più non li conta nessuno.",
+        "Per questo le abbiamo confrontate su una sola domanda: l'allenamento che hai registrato cambia qualcos'altro nella tua giornata?"
+      ],
+      "table": {
+        "head": "Confronto delle app per allenamento",
+        "caption": "Confronto tra Strava, Nike Run Club, adidas Running, Apple Fitness e Suu",
+        "col_feature": "Funzione",
+        "columns": [
+          "Strava",
+          "Nike Run Club",
+          "adidas Running",
+          "Apple Fitness",
+          "Suu"
+        ],
+        "suu_col": 4,
+        "rows": [
+          {
+            "label": "Registrazione percorso GPS",
+            "cells": [
+              {
+                "text": "✓ La migliore",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Metriche di corsa (passo, parziali)",
+            "cells": [
+              {
+                "text": "✓ Le più profonde",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Metriche di ciclismo",
+            "cells": [
+              {
+                "text": "✓ Le più profonde",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Numero di attività",
+            "cells": [
+              {
+                "text": "✓ 30+",
+                "cls": "yes"
+              },
+              {
+                "text": "Solo corsa",
+                "cls": "no"
+              },
+              {
+                "text": "Molte",
+                "cls": "yes"
+              },
+              {
+                "text": "Molte",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ ~50",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Segmenti e classifiche",
+            "cells": [
+              {
+                "text": "✓ Solo Strava",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Corse guidate / coaching vocale",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Il migliore",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "Fitness+",
+                "cls": "soon"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Piani di allenamento",
+            "cells": [
+              {
+                "text": "Abbonamento",
+                "cls": "soon"
+              },
+              {
+                "text": "✓ Gratis",
+                "cls": "yes"
+              },
+              {
+                "text": "In parte a pagamento",
+                "cls": "soon"
+              },
+              {
+                "text": "Fitness+",
+                "cls": "soon"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Pianificazione percorsi",
+            "cells": [
+              {
+                "text": "Abbonamento",
+                "cls": "soon"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "Limitata",
+                "cls": "soon"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Registrazione delle calorie mangiate",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓ foto, voce, manuale",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "L'obiettivo d'acqua sale dopo l'allenamento",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓ automatico",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Garmin, Coros, Polar",
+            "cells": [
+              {
+                "text": "✓ Supporto più ampio",
+                "cls": "yes"
+              },
+              {
+                "text": "Limitato",
+                "cls": "soon"
+              },
+              {
+                "text": "Parziale",
+                "cls": "soon"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "Via Apple Salute / Health Connect",
+                "cls": "soon"
+              }
+            ]
+          },
+          {
+            "label": "App per Apple Watch",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Nativa",
+                "cls": "yes"
+              },
+              {
+                "text": "In arrivo",
+                "cls": "soon"
+              }
+            ]
+          },
+          {
+            "label": "Disponibile su Android",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Utilità del piano gratuito",
+            "cells": [
+              {
+                "text": "Ridotta",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Tutto gratis",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Buona",
+                "cls": "yes"
+              },
+              {
+                "text": "Con l'orologio",
+                "cls": "soon"
+              },
+              {
+                "text": "✓ Buona",
+                "cls": "yes"
+              }
+            ]
+          }
+        ]
+      },
+      "analysis": [
+        {
+          "head": "Per chi è pensata ciascuna",
+          "body": [
+            "Nessuna di queste è una brutta app. Risolvono problemi diversi:"
+          ],
+          "list": [
+            "<strong>Strava</strong> — se gareggi, esci in gruppo o vuoi l'analisi del ciclismo più profonda e la competizione sui segmenti.",
+            "<strong>Nike Run Club</strong> — se inizi a correre e il coaching gratuito fa la differenza.",
+            "<strong>adidas Running</strong> — se vuoi un tuttofare solido con piani di allenamento e non ti serve la community di Strava.",
+            "<strong>Apple Fitness</strong> — se hai già un Apple Watch e vuoi che tutto resti dentro Apple Salute.",
+            "<strong>Suu</strong> — se il tuo obiettivo è il peso o la salute generale più che la prestazione, e vuoi che allenamento, cibo e idratazione si parlino."
+          ]
+        },
+        {
+          "head": "Dopo il \"Fine\" quasi tutte si fermano",
+          "body": [
+            "Strava, Nike Run Club, adidas Running e Apple Fitness ti diranno tutte che hai bruciato circa 600 calorie. Da lì in poi quel numero non fa più niente: non viene messo contro quello che hai mangiato, e i liquidi persi con il sudore non compaiono da nessuna parte.",
+            "Per un ciclista competitivo con un'app di nutrizione separata e un allenatore questa separazione va bene, a volte è persino preferibile. Per chi punta al peso o alla salute generale significa invece tenere due o tre app che non si parlano e fare i conti a mano nel mezzo.",
+            "È esattamente il punto in cui interviene Suu — ed è anche il motivo per cui non sostituisce Strava per la gara. Sono strumenti diversi, non migliori o peggiori."
+          ]
+        },
+        {
+          "head": "Perché due app danno calorie diverse per la stessa corsa",
+          "body": [
+            "Capita spesso e non è un errore. Il consumo è stimato — da peso, passo, durata, dislivello e, se disponibile, frequenza cardiaca — e ogni app pesa questi fattori in modo diverso.",
+            "In pratica: confronta i valori di consumo solo all'interno della stessa app nel tempo, non tra app diverse. E trattali come un ordine di grandezza, non come una misura — soprattutto se li converti direttamente in cibo aggiuntivo."
+          ]
+        }
+      ],
+      "verdict": {
+        "head": "Verdetto",
+        "body": [
+          "<strong>Scegli Strava</strong> se gareggi, pedali in gruppo o vuoi segmenti e analisi ciclistica profonda.",
+          "<strong>Scegli Nike Run Club</strong> se corri e basta e vuoi coaching gratuito di qualità.",
+          "<strong>Scegli adidas Running</strong> come tuttofare solido con piani e un buon piano gratuito.",
+          "<strong>Scegli Apple Fitness</strong> se hai un Apple Watch e vuoi tutto dentro l'ecosistema Apple.",
+          "<strong>Scegli Suu</strong> se vuoi che l'allenamento si colleghi a cibo e idratazione: circa 50 attività con GPS, calorie da foto o voce e un obiettivo d'acqua che sale da solo dopo la sessione. Gratis su iOS e Android — senza segmenti, senza feed, senza pianificazione dei percorsi."
+        ]
+      },
+      "cta": {
+        "head": "Registra l'allenamento — e tutto ciò che cambia",
+        "sub": "Download gratuito · Premium gratis per 3 giorni",
+        "button": "Scarica Suu gratis"
+      },
+      "faq": [
+        {
+          "q": "Qual è la migliore app per allenarsi nel 2026?",
+          "a": "Dipende dall'obiettivo. Strava è il riferimento per prestazione, gara e ciclismo sociale. Nike Run Club offre il miglior coaching gratuito per la corsa. adidas Running è il tuttofare più solido e Apple Fitness la scelta naturale con un Apple Watch. Suu è la migliore se vuoi che l'allenamento si colleghi a calorie e idratazione: è l'unica che mette il consumo contro i pasti e alza l'obiettivo d'acqua per il sudore."
+        },
+        {
+          "q": "Esiste una buona alternativa gratuita a Strava?",
+          "a": "Per la corsa, Nike Run Club è gratuito e offre un coaching che Strava non ha affatto. Per il tracciamento generale con calorie e idratazione nella stessa app, Suu è gratis su iOS e Android. Nessuna delle due però sostituisce segmenti e classifiche: quelli esistono solo su Strava."
+        },
+        {
+          "q": "Vale la pena l'abbonamento a Strava?",
+          "a": "Dipende da cosa usi. Se pianifichi percorsi, pedali seriamente o tieni alle classifiche complete dei segmenti e alle analisi dell'andamento di forma, è lì che vivono quelle funzioni e in genere l'abbonamento viene giudicato utile. Se ti basta registrare le corse e vedere il feed degli amici, il piano gratuito è sufficiente."
+        },
+        {
+          "q": "Quale app per allenarsi conta anche le calorie che mangi?",
+          "a": "Tra quelle confrontate qui, solo Suu. Strava, Nike Run Club, adidas Running e Apple Fitness stimano il consumo durante l'attività, ma non registrano l'alimentazione e non mettono il consumo contro quello che hai mangiato. Chi vuole entrambe le cose abbina una di queste a un'app di nutrizione oppure usa un'app che fa tutto."
+        },
+        {
+          "q": "Perché due app danno calorie diverse per lo stesso allenamento?",
+          "a": "Perché il consumo è stimato, non misurato. Ogni app pesa in modo diverso peso, passo, durata, dislivello e frequenza cardiaca. Confronta quindi i numeri solo all'interno della stessa app nel tempo e trattali come un ordine di grandezza, non come una misura da convertire direttamente in cibo."
+        }
+      ],
+      "references": [
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6835337/",
+          "label": "Sudorazione e reintegro dei liquidi durante l'attività (PMC)"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7909433/",
+          "label": "Precisione dei wearable nella stima del dispendio (PMC)"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/it/migliore-app-per-bere-acqua.html",
+          "title": "Migliore app per bere acqua 2026",
+          "desc": "Lo stesso confronto per l'idratazione."
+        },
+        {
+          "href": "/blog/it/migliore-app-conta-calorie.html",
+          "title": "Migliore app conta calorie 2026",
+          "desc": "MyFitnessPal, Yazio, FatSecret e Cronometer."
+        },
+        {
+          "href": "/blog/it/acqua-calorie-allenamento-una-app.html",
+          "title": "Acqua, calorie e allenamento in un'app",
+          "desc": "Cosa cambia collegare i tre."
+        },
+        {
+          "href": "/blog/en/suu-vs-strava.html",
+          "title": "Suu vs Strava",
+          "desc": "Dove finisce un'app GPS e inizia un'app per la salute."
+        }
       ]
     }
-  }
+  },
+  "modified": "2026-08-24"
 }

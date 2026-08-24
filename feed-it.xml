@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Suu Blog (Italiano)</title>
+    <link>https://suuapp.com/blog-it.html</link>
+    <description>Articoli su idratazione, conteggio delle calorie e allenamento.</description>
+    <language>it-IT</language>
+    <lastBuildDate>Mon, 24 Aug 2026 19:56:19 +0000</lastBuildDate>
+    <atom:link href="https://suuapp.com/feed-it.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Acqua, calorie e allenamento in un'unica app</title>
+      <link>https://suuapp.com/blog/it/acqua-calorie-allenamento-una-app.html</link>
+      <guid isPermaLink="true">https://suuapp.com/blog/it/acqua-calorie-allenamento-una-app.html</guid>
+      <description>Tre app o una sola? Cosa cambia concretamente quando idratazione, calorie e allenamento si parlano — e quando invece tre app specializzate restano la scelta migliore.</description>
+      <dc:creator>Furkan Mert Fındıklı</dc:creator>
+      <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>La migliore app per allenamento del 2026</title>
+      <link>https://suuapp.com/blog/it/migliore-app-allenamento.html</link>
+      <guid isPermaLink="true">https://suuapp.com/blog/it/migliore-app-allenamento.html</guid>
+      <description>App per allenarsi a confronto su cosa fanno davvero dei tuoi dati: Strava, Nike Run Club, adidas Running, Apple Fitness e Suu. Quale conta le calorie, quale l'idratazione, quale collega tutto.</description>
+      <dc:creator>Furkan Mert Fındıklı</dc:creator>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>La migliore app conta calorie del 2026</title>
+      <link>https://suuapp.com/blog/it/migliore-app-conta-calorie.html</link>
+      <guid isPermaLink="true">https://suuapp.com/blog/it/migliore-app-conta-calorie.html</guid>
+      <description>App per contare le calorie a confronto: MyFitnessPal, Yazio, FatSecret, Lifesum, Cronometer e Suu — velocità di registrazione, database, precisione e limiti del piano gratuito.</description>
+      <dc:creator>Furkan Mert Fındıklı</dc:creator>
+      <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>La migliore app per bere acqua nel 2026</title>
+      <link>https://suuapp.com/blog/it/migliore-app-per-bere-acqua.html</link>
+      <guid isPermaLink="true">https://suuapp.com/blog/it/migliore-app-per-bere-acqua.html</guid>
+      <description>Quale app ti fa davvero bere di più? Confrontiamo Suu, WaterMinder, Waterllama, Hydro Coach e Plant Nanny su promemoria, calcolo dell'obiettivo e limiti del piano gratuito.</description>
+      <dc:creator>Furkan Mert Fındıklı</dc:creator>
+      <pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

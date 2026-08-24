@@ -24,7 +24,7 @@ import sys
 from datetime import date
 from pathlib import Path
 
-from _langs import blog_langs, months, read_more
+from _langs import blog_langs, blog_topics, months, read_more
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -35,20 +35,16 @@ LANGS = blog_langs()
 READ_MORE = read_more()
 MONTHS = months()
 
-# Konu anahtarı → (emoji, gradyan, etiket) — üç sütun renk sistemine uyar
+# Konu anahtarı → (regex, emoji, gradyan, dil tablosundaki etiket anahtarı).
+# Kalıplar tüm dillerin slug'larını kapsamalı; etiketler content/languages.json'da.
+TOPIC_LABELS = blog_topics()
 TOPICS = [
-    (r"vs|karsilastir|karşılaştır|versus", "⚖️", "#0072C6,#43A047",
-     {"tr": "Karşılaştırma", "en": "Comparison", "ar": "مقارنة", "ru": "Сравнение"}),
-    (r"egzersiz|workout|exercise|antren", "🏃", "#2E9E4F,#66BB6A",
-     {"tr": "Egzersiz", "en": "Exercise", "ar": "تمارين", "ru": "Тренировки"}),
-    (r"kalori|calorie|makro|macro|beslenme|nutrition", "🔥", "#F57C00,#FFB74D",
-     {"tr": "Kalori", "en": "Calories", "ar": "سعرات", "ru": "Калории"}),
-    (r"foto|photo", "📸", "#7B1FA2,#BA68C8",
-     {"tr": "Fotoğrafla Analiz", "en": "Photo Analysis", "ar": "تحليل بالصور", "ru": "Фотоанализ"}),
-    (r"ucretsiz|ücretsiz|free", "🎁", "#00897B,#4DB6AC",
-     {"tr": "Ücretsiz", "en": "Free", "ar": "مجاني", "ru": "Бесплатно"}),
-    (r"", "💧", "#1E88E5,#42A5F5",
-     {"tr": "Rehber", "en": "Guide", "ar": "دليل", "ru": "Гид"}),
+    (r"vs|karsilastir|karşılaştır|versus|vergleich|confronto|porivn", "⚖️", "#0072C6,#43A047", "comparison"),
+    (r"egzersiz|workout|exercise|antren|allenamento|sport|trenuvan", "🏃", "#2E9E4F,#66BB6A", "exercise"),
+    (r"kalori|calorie|makro|macro|beslenme|nutrition|kalorien", "🔥", "#F57C00,#FFB74D", "calories"),
+    (r"foto|photo", "📸", "#7B1FA2,#BA68C8", "photo"),
+    (r"ucretsiz|ücretsiz|free|gratis|besplatn", "🎁", "#00897B,#4DB6AC", "free"),
+    (r"", "💧", "#1E88E5,#42A5F5", "guide"),
 ]
 
 
@@ -71,10 +67,11 @@ def title_of(page: str) -> str:
 
 
 def topic_of(slug: str, lang: str) -> tuple[str, str, str]:
-    for pattern, emoji, grad, tags in TOPICS:
+    labels = TOPIC_LABELS.get(lang, TOPIC_LABELS["en"])
+    for pattern, emoji, grad, key in TOPICS:
         if not pattern or re.search(pattern, slug, re.IGNORECASE):
-            return emoji, grad, tags.get(lang, tags["en"])
-    return "💧", "#1E88E5,#42A5F5", "Guide"
+            return emoji, grad, labels[key]
+    return "💧", "#1E88E5,#42A5F5", labels["guide"]
 
 
 def pretty_date(iso: str, lang: str) -> str:

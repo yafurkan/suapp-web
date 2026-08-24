@@ -55,7 +55,15 @@
         "references": "Kaynaklar",
         "related": "İlgili yazılar"
       },
-      "published": true
+      "published": true,
+      "blog_topics": {
+        "comparison": "Karşılaştırma",
+        "exercise": "Egzersiz",
+        "calories": "Kalori",
+        "photo": "Fotoğrafla Analiz",
+        "free": "Ücretsiz",
+        "guide": "Rehber"
+      }
     },
     "en": {
       "locale": "en_US",
@@ -109,7 +117,15 @@
         "references": "References",
         "related": "Related articles"
       },
-      "published": true
+      "published": true,
+      "blog_topics": {
+        "comparison": "Comparison",
+        "exercise": "Exercise",
+        "calories": "Calories",
+        "photo": "Photo Analysis",
+        "free": "Free",
+        "guide": "Guide"
+      }
     },
     "ar": {
       "locale": "ar_SA",
@@ -161,7 +177,15 @@
         "references": "المصادر",
         "related": "مقالات ذات صلة"
       },
-      "published": true
+      "published": true,
+      "blog_topics": {
+        "comparison": "مقارنة",
+        "exercise": "تمارين",
+        "calories": "سعرات",
+        "photo": "تحليل بالصور",
+        "free": "مجاني",
+        "guide": "دليل"
+      }
     },
     "ru": {
       "locale": "ru_RU",
@@ -213,7 +237,15 @@
         "references": "Источники",
         "related": "Похожие статьи"
       },
-      "published": true
+      "published": true,
+      "blog_topics": {
+        "comparison": "Сравнение",
+        "exercise": "Тренировки",
+        "calories": "Калории",
+        "photo": "Фотоанализ",
+        "free": "Бесплатно",
+        "guide": "Гид"
+      }
     },
     "de": {
       "locale": "de_DE",
@@ -265,7 +297,27 @@
         "cta_head": "Alle drei in einer App verfolgen",
         "cta_sub": "Wasser, Kalorien und Sport greifen ineinander. Kostenlos für iOS und Android."
       },
-      "published": false
+      "published": true,
+      "blog_index_copy": {
+        "title": "Suu Blog — Kalorienzählen, GPS-Training und Trinken",
+        "description": "Fundierte Ratgeber zu Kalorien und Makros, KI-Fotoerfassung von Mahlzeiten, GPS-Training und Flüssigkeitshaushalt — plus ehrliche Vergleiche mit Yazio und MyFitnessPal.",
+        "keywords": "kalorienzähler app, kalorien tracken, makros berechnen, wasser trinken app, trinkerinnerung, gps lauf tracker, yazio alternative, myfitnesspal alternative",
+        "og_description": "Kalorien und Makros, KI-Fotoerfassung, GPS-Training und Trinken — plus ehrliche App-Vergleiche.",
+        "h1": "💧 Suu Blog",
+        "lead": "Fundierte Artikel zu Kalorien und Makros, KI-Fotoerfassung von Mahlzeiten, GPS-Training und Flüssigkeitshaushalt — plus ehrliche App-Vergleiche.",
+        "nav_comparisons": "Vergleiche",
+        "nav_home": "Startseite",
+        "cta_head": "Fang heute an zu tracken",
+        "cta_sub": "Suu macht aus diesen Tipps tägliche Gewohnheiten — persönliche Ziele, smarte Erinnerungen und Freundesligen. Kostenlos für iOS und Android."
+      },
+      "blog_topics": {
+        "comparison": "Vergleich",
+        "exercise": "Sport",
+        "calories": "Kalorien",
+        "photo": "Fotoanalyse",
+        "free": "Gratis",
+        "guide": "Ratgeber"
+      }
     },
     "it": {
       "locale": "it_IT",
@@ -317,7 +369,27 @@
         "cta_head": "Tieni traccia di tutti e tre in un'unica app",
         "cta_sub": "Acqua, calorie e allenamento si aggiornano a vicenda. Gratis su iOS e Android."
       },
-      "published": false
+      "published": true,
+      "blog_index_copy": {
+        "title": "Suu Blog — Conteggio calorie, allenamento GPS e idratazione",
+        "description": "Guide su calorie e macro, registrazione dei pasti con foto e IA, allenamenti con GPS e idratazione — più confronti onesti con Yazio, MyFitnessPal e Strava.",
+        "keywords": "app conta calorie, contare le calorie, calcolo macro, app per bere acqua, promemoria acqua, tracker corsa gps, alternativa yazio, alternativa myfitnesspal",
+        "og_description": "Calorie e macro, foto dei pasti con IA, allenamenti GPS e idratazione — più confronti onesti tra app.",
+        "h1": "💧 Suu Blog",
+        "lead": "Articoli basati su evidenze su calorie e macro, registrazione dei pasti con foto e IA, allenamenti con GPS e idratazione — più confronti onesti tra app.",
+        "nav_comparisons": "Confronti",
+        "nav_home": "Home",
+        "cta_head": "Inizia a tracciare oggi",
+        "cta_sub": "Suu trasforma questi consigli in abitudini quotidiane: obiettivi personalizzati, promemoria intelligenti e leghe con gli amici. Gratis su iOS e Android."
+      },
+      "blog_topics": {
+        "comparison": "Confronto",
+        "exercise": "Allenamento",
+        "calories": "Calorie",
+        "photo": "Analisi foto",
+        "free": "Gratis",
+        "guide": "Guida"
+      }
     },
     "hi": {
       "locale": "hi_IN",
@@ -369,7 +441,15 @@
         "cta_head": "तीनों को एक ही ऐप में ट्रैक करें",
         "cta_sub": "पानी, कैलोरी और व्यायाम एक-दूसरे को अपडेट करते हैं। iOS और Android पर मुफ़्त।"
       },
-      "published": false
+      "published": false,
+      "blog_topics": {
+        "comparison": "तुलना",
+        "exercise": "व्यायाम",
+        "calories": "कैलोरी",
+        "photo": "फ़ोटो विश्लेषण",
+        "free": "मुफ़्त",
+        "guide": "गाइड"
+      }
     },
     "uk": {
       "locale": "uk_UA",
@@ -421,7 +501,15 @@
         "skip": "Перейти до вмісту",
         "updated_label": "Оновлено:"
       },
-      "published": false
+      "published": false,
+      "blog_topics": {
+        "comparison": "Порівняння",
+        "exercise": "Тренування",
+        "calories": "Калорії",
+        "photo": "Фотоаналіз",
+        "free": "Безкоштовно",
+        "guide": "Гід"
+      }
     }
   }
 }

@@ -1,0 +1,532 @@
+{
+  "_note": "AYIRT EDİCİ SAYFA (üç sütunun birleşimi) — DE/IT. İngilizce ve Türkçe eşleri hâlâ elle yazılmış HTML (blog/en/water-calorie-exercise-one-app.html, blog/su-kalori-egzersiz-tek-uygulama.html); bu JSON yalnızca yeni dilleri üretiyor, mevcut URL'lere dokunmuyor. Kayıt defterinde 'su-kalori-egzersiz-tek-uygulama' kümesine de/it slug'ları eklendi.",
+  "published": "2026-08-24",
+  "pages": {
+    "de": {
+      "slug": "wasser-kalorien-sport-eine-app",
+      "published_display": "24. August 2026",
+      "read_minutes": 7,
+      "badge": "💧🥗🏃 Drei Säulen",
+      "h1": "Wasser, Kalorien und Sport in einer App: was das Verbinden wirklich bringt",
+      "meta": {
+        "title": "Wasser, Kalorien und Sport in einer App (2026) — lohnt sich das? | Suu",
+        "description": "Drei Apps oder eine? Was es konkret ändert, wenn Trinkmenge, Kalorien und Training miteinander rechnen — und wann drei spezialisierte Apps die bessere Wahl bleiben.",
+        "keywords": "wasser kalorien sport app, alles in einer app fitness, gesundheits app kombiniert, kalorien und wasser app, trinken und training app, ernährung und sport eine app",
+        "og_title": "Wasser, Kalorien und Sport in einer App",
+        "og_description": "Was es konkret ändert, wenn die drei miteinander rechnen statt nebeneinander zu laufen."
+      },
+      "answer": "Drei spezialisierte Apps sind jeweils besser in ihrem Fach — MyFitnessPal hat die größere Lebensmitteldatenbank, Strava die tiefere Sportanalytik, WaterMinder die bessere Watch-App. Eine verbundene App gewinnt nicht in der Einzeldisziplin, sondern dort, wo die drei sich gegenseitig beeinflussen: Der Lauf hebt das Trinkziel um den Schweißverlust, die salzige Mahlzeit um das Verdauungswasser, und der Kaffee zählt mit seinem echten Hydrationsbeitrag statt als volles Glas Wasser. Diese Rechnungen macht niemand von Hand zwischen drei Apps.",
+      "disclosure": "Diesen Text schreibt das Suu-Team, du liest also eine parteiische Quelle. Deshalb steht unten ausdrücklich auch, wann drei getrennte Apps die bessere Entscheidung sind — für viele Leute sind sie das.",
+      "intro": [
+        "Die übliche Aufstellung besteht aus drei Apps: eine fürs Essen, eine fürs Training, eine fürs Trinken. Jede ist in ihrem Fach gut, und genau deshalb ist die Kombination so verbreitet.",
+        "Das Problem ist nicht die Qualität der einzelnen App, sondern dass zwischen ihnen niemand rechnet. Die 600 verbrannten Kalorien stehen in der einen, die 2.400 gegessenen in der anderen, und dass du an einem heißen Trainingstag deutlich mehr trinken müsstest, steht nirgends.",
+        "Die Frage ist deshalb nicht \"welche App ist besser\", sondern: <strong>Wie viele dieser Zwischenrechnungen machst du tatsächlich selbst?</strong> Wenn die Antwort \"keine\" lautet, gehen die Verbindungen zwischen deinen Daten schlicht verloren."
+      ],
+      "table": {
+        "head": "Drei getrennte Apps gegenüber einer verbundenen",
+        "caption": "Was drei spezialisierte Apps leisten und was eine verbundene App zusätzlich leistet",
+        "col_feature": "Situation",
+        "columns": [
+          "Drei getrennte Apps",
+          "Suu"
+        ],
+        "suu_col": 1,
+        "rows": [
+          {
+            "label": "Lebensmitteldatenbank",
+            "cells": [
+              {
+                "text": "✓ Größer (MyFitnessPal)",
+                "cls": "yes"
+              },
+              {
+                "text": "Kleiner",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Sportanalytik",
+            "cells": [
+              {
+                "text": "✓ Tiefer (Strava)",
+                "cls": "yes"
+              },
+              {
+                "text": "Grundlegend",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Apple-Watch-App",
+            "cells": [
+              {
+                "text": "✓ Vorhanden (WaterMinder)",
+                "cls": "yes"
+              },
+              {
+                "text": "In Arbeit",
+                "cls": "soon"
+              }
+            ]
+          },
+          {
+            "label": "Trinkziel steigt nach dem Lauf",
+            "cells": [
+              {
+                "text": "✗ von Hand",
+                "cls": "no"
+              },
+              {
+                "text": "✓ automatisch aus dem Schweißverlust",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Salzige Mahlzeit erhöht den Bedarf",
+            "cells": [
+              {
+                "text": "✗ wird nirgends erfasst",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Verdauungswasser aus Eiweiß und Natrium",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Kaffee zählt anders als Wasser",
+            "cells": [
+              {
+                "text": "✗ meist voller Zähler",
+                "cls": "no"
+              },
+              {
+                "text": "✓ 91 Getränke mit Dehydrationsfaktor",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Verbrauch gegen Zufuhr gerechnet",
+            "cells": [
+              {
+                "text": "Nur mit Kopplung",
+                "cls": "soon"
+              },
+              {
+                "text": "✓ in derselben Ansicht",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Anzahl zu pflegender Apps",
+            "cells": [
+              {
+                "text": "3",
+                "cls": "no"
+              },
+              {
+                "text": "1",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Anzahl Abos",
+            "cells": [
+              {
+                "text": "Bis zu 3",
+                "cls": "no"
+              },
+              {
+                "text": "1, Grundfunktionen gratis",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Daten an einem Ort exportierbar",
+            "cells": [
+              {
+                "text": "✗ getrennt",
+                "cls": "no"
+              },
+              {
+                "text": "✓ PDF/CSV (Premium)",
+                "cls": "yes"
+              }
+            ]
+          }
+        ]
+      },
+      "analysis": [
+        {
+          "head": "Die drei Rechnungen, die zwischen Apps verloren gehen",
+          "body": [
+            "Es geht nicht um Bequemlichkeit, sondern um Zahlen, die ohne Verbindung niemand ermittelt:"
+          ],
+          "list": [
+            "<strong>Schweißverlust → Trinkziel.</strong> Eine Stunde Laufen bei Wärme kostet je nach Person deutlich mehr als einen halben Liter. Deine Trink-App weiß nichts davon und lässt das Ziel unverändert.",
+            "<strong>Eiweiß und Natrium → Verdauungswasser.</strong> Eiweißstoffwechsel und eine salzreiche Mahlzeit erhöhen den Flüssigkeitsbedarf messbar. Deine Ernährungs-App kennt diese Werte und meldet sie nirgendwohin.",
+            "<strong>Getränk → tatsächlicher Hydrationsbeitrag.</strong> 250 ml Kaffee sind nicht 250 ml Wasser. Die meisten Trink-Apps zählen trotzdem beides gleich."
+          ],
+          "callout": "Keine dieser drei Rechnungen ist kompliziert. Sie werden nur nie gemacht, weil die dafür nötigen Daten in drei verschiedenen Apps liegen."
+        },
+        {
+          "head": "Wann drei Apps die bessere Wahl bleiben",
+          "body": [
+            "Wenn eine der drei Säulen für dich klar im Vordergrund steht, gewinnt der Spezialist. Wer Rennen fährt, braucht Stravas Segmente und Wattanalyse; das ersetzt keine Allrounder-App. Wer sehr viel auswärts isst, braucht MyFitnessPals Restaurantdatenbank. Wer Vitamine protokolliert, braucht Cronometer.",
+            "Auch die Apple Watch ist ein echtes Argument: Wer dort einträgt, ist mit WaterMinder heute besser bedient, weil Suus Watch-App noch aussteht.",
+            "Die verbundene App lohnt sich dort, wo keine der drei Säulen dominiert — wo du einfach in allen dreien vernünftig unterwegs sein willst, ohne drei Oberflächen zu pflegen und drei Abos zu bezahlen."
+          ]
+        },
+        {
+          "head": "Was das im Alltag konkret heißt",
+          "body": [
+            "Ein normaler Tag: Du läufst morgens 8 km. Das Trinkziel steigt automatisch, weil die App den geschätzten Schweißverlust kennt. Mittags fotografierst du das Essen — Kalorien und Makros werden erfasst, und weil es salzig war, kommt Verdauungswasser dazu. Nachmittags trägst du zwei Kaffee ein, die mit ihrem echten Beitrag zählen statt als zwei volle Gläser.",
+            "Am Abend siehst du eine Zahl, die alle drei Ereignisse berücksichtigt. Bei drei getrennten Apps siehst du drei Zahlen, von denen keine die anderen kennt — und die Verbindung dazwischen müsstest du selbst herstellen, jeden Tag."
+          ]
+        }
+      ],
+      "verdict": {
+        "head": "Fazit",
+        "body": [
+          "<strong>Nimm drei spezialisierte Apps</strong>, wenn eine Säule für dich deutlich wichtiger ist als die anderen beiden — Wettkampfsport, sehr häufiges Auswärtsessen oder Mikronährstoff-Protokolle.",
+          "<strong>Nimm eine verbundene App</strong>, wenn du in allen dreien solide unterwegs sein willst und die Zwischenrechnungen nicht selbst machen möchtest.",
+          "Suu ist die verbundene Variante: 91 Getränke mit Dehydrationsfaktor, Kalorien per Foto oder Sprache, rund 50 Sportarten per GPS — und die drei rechnen miteinander. Kostenlos für iOS und Android, mit den ehrlichen Vorbehalten kleinere Lebensmitteldatenbank, keine Segmente und noch keine Apple-Watch-App."
+        ]
+      },
+      "cta": {
+        "head": "Lass die drei miteinander rechnen",
+        "sub": "Kostenlos für iOS und Android · Premium 3 Tage gratis",
+        "button": "Suu kostenlos laden"
+      },
+      "faq": [
+        {
+          "q": "Gibt es eine App für Wasser, Kalorien und Sport zusammen?",
+          "a": "Ja. Suu führt alle drei in einer App und verbindet sie miteinander: Ein per GPS aufgezeichnetes Training hebt das Trinkziel um den geschätzten Schweißverlust, eine eiweiß- oder salzreiche Mahlzeit fügt das Wasser hinzu, das die Verdauung braucht, und jedes der 91 Getränke zählt mit seinem tatsächlichen Hydrationsbeitrag. Kostenlos für iOS und Android."
+        },
+        {
+          "q": "Ist eine Kombi-App besser als drei spezialisierte Apps?",
+          "a": "Nicht in der Einzeldisziplin. MyFitnessPal hat die größere Lebensmitteldatenbank, Strava die tiefere Sportanalytik, WaterMinder die bessere Apple-Watch-App. Eine verbundene App gewinnt dort, wo die drei sich beeinflussen — bei Rechnungen, die zwischen getrennten Apps niemand anstellt."
+        },
+        {
+          "q": "Wie viel mehr sollte man nach dem Sport trinken?",
+          "a": "Das hängt von Dauer, Intensität, Temperatur und der individuellen Schweißrate ab und reicht von wenigen hundert Millilitern bis über einen Liter pro Stunde. Genau deshalb ist eine feste Tagesmenge an Trainingstagen fast immer falsch — sinnvoller ist ein Ziel, das die tatsächliche Einheit berücksichtigt."
+        },
+        {
+          "q": "Zählt Kaffee zur Trinkmenge?",
+          "a": "Überwiegend ja, aber nicht wie Wasser. Die harntreibende Wirkung moderater Koffeinmengen ist kleiner als die Flüssigkeit, die das Getränk liefert, also ist Kaffee unterm Strich positiv — nur eben nicht gleichwertig. Suu bildet das über einen Dehydrationsfaktor je Getränk ab."
+        },
+        {
+          "q": "Brauche ich für Suu zusätzlich noch Strava oder MyFitnessPal?",
+          "a": "Nur wenn du deren Spezialfunktionen brauchst. Für Segmente, Bestenlisten und Wattanalyse bleibt Strava nötig; für sehr breite Restaurantdaten MyFitnessPal. Für alltägliches Training, Kalorien und Trinkmenge reicht Suu allein — und Trainings aus anderen Apps kommen über Apple Health oder Google Health Connect ohnehin an."
+        }
+      ],
+      "references": [
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6835337/",
+          "label": "Schweißrate und Flüssigkeitsersatz beim Sport (PMC)"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2908954/",
+          "label": "Popkin et al. — Water, hydration and health (PMC)"
+        },
+        {
+          "href": "https://www.dge.de/wissenschaft/referenzwerte/wasser/",
+          "label": "DGE — Referenzwerte für die Wasserzufuhr"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/de/beste-wasser-tracking-app.html",
+          "title": "Beste Wasser-Tracking-App 2026",
+          "desc": "Fünf Trink-Apps im Vergleich."
+        },
+        {
+          "href": "/blog/de/bester-kalorienzaehler-app.html",
+          "title": "Bester Kalorienzähler 2026",
+          "desc": "Yazio, FDDB, MyFitnessPal und Cronometer."
+        },
+        {
+          "href": "/blog/de/beste-workout-tracker-app.html",
+          "title": "Beste Workout-Tracking-App 2026",
+          "desc": "Strava, Komoot, adidas Running und Suu."
+        },
+        {
+          "href": "/blog/en/hydration-score-explained.html",
+          "title": "Was ist ein Hydrations-Score?",
+          "desc": "Wie aus einem Trinktag eine Zahl von 0–100 wird."
+        }
+      ]
+    },
+    "it": {
+      "slug": "acqua-calorie-allenamento-una-app",
+      "published_display": "24 agosto 2026",
+      "read_minutes": 7,
+      "badge": "💧🥗🏃 Tre pilastri",
+      "h1": "Acqua, calorie e allenamento in un'unica app: cosa cambia davvero collegarli",
+      "meta": {
+        "title": "Acqua, calorie e allenamento in un'app (2026) — conviene? | Suu",
+        "description": "Tre app o una sola? Cosa cambia concretamente quando idratazione, calorie e allenamento si parlano — e quando invece tre app specializzate restano la scelta migliore.",
+        "keywords": "app acqua calorie allenamento, app salute tutto in uno, app calorie e idratazione, app allenamento e dieta, un'app invece di tre, app fitness completa",
+        "og_title": "Acqua, calorie e allenamento in un'unica app",
+        "og_description": "Cosa cambia quando i tre si parlano invece di correre in parallelo."
+      },
+      "answer": "Tre app specializzate sono ciascuna migliore nel proprio campo: MyFitnessPal ha il database alimentare più grande, Strava l'analisi sportiva più profonda, WaterMinder l'app da polso migliore. Un'app collegata non vince nella singola disciplina, ma dove i tre si influenzano: la corsa alza l'obiettivo d'acqua per il sudore, il pasto salato aggiunge l'acqua della digestione, e il caffè conta per il suo reale contributo di idratazione invece che come un bicchiere pieno. Sono calcoli che nessuno fa a mano tra tre app.",
+      "disclosure": "Questo testo è scritto dal team di Suu, quindi stai leggendo una fonte di parte. Per questo qui sotto diciamo esplicitamente anche quando tre app separate sono la scelta migliore — per molte persone lo sono.",
+      "intro": [
+        "La configurazione tipica è fatta di tre app: una per il cibo, una per l'allenamento, una per l'acqua. Ciascuna è buona nel suo campo, ed è proprio per questo che la combinazione è così diffusa.",
+        "Il problema non è la qualità delle singole app, ma che tra loro non calcola nessuno. Le 600 calorie bruciate stanno in una, le 2.400 mangiate in un'altra, e il fatto che in una giornata calda di allenamento dovresti bere molto di più non è scritto da nessuna parte.",
+        "La domanda quindi non è \"quale app è migliore\", ma: <strong>quanti di questi calcoli intermedi fai davvero da solo?</strong> Se la risposta è \"nessuno\", i collegamenti tra i tuoi dati semplicemente si perdono."
+      ],
+      "table": {
+        "head": "Tre app separate rispetto a una collegata",
+        "caption": "Cosa danno tre app specializzate e cosa aggiunge un'app collegata",
+        "col_feature": "Situazione",
+        "columns": [
+          "Tre app separate",
+          "Suu"
+        ],
+        "suu_col": 1,
+        "rows": [
+          {
+            "label": "Database alimentare",
+            "cells": [
+              {
+                "text": "✓ Più grande (MyFitnessPal)",
+                "cls": "yes"
+              },
+              {
+                "text": "Più piccolo",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Analisi sportiva",
+            "cells": [
+              {
+                "text": "✓ Più profonda (Strava)",
+                "cls": "yes"
+              },
+              {
+                "text": "Essenziale",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "App per Apple Watch",
+            "cells": [
+              {
+                "text": "✓ Disponibile (WaterMinder)",
+                "cls": "yes"
+              },
+              {
+                "text": "In arrivo",
+                "cls": "soon"
+              }
+            ]
+          },
+          {
+            "label": "L'obiettivo d'acqua sale dopo la corsa",
+            "cells": [
+              {
+                "text": "✗ a mano",
+                "cls": "no"
+              },
+              {
+                "text": "✓ automatico dal sudore stimato",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Il pasto salato aumenta il fabbisogno",
+            "cells": [
+              {
+                "text": "✗ non viene rilevato",
+                "cls": "no"
+              },
+              {
+                "text": "✓ acqua per la digestione da proteine e sodio",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Il caffè conta diversamente dall'acqua",
+            "cells": [
+              {
+                "text": "✗ in genere contato pieno",
+                "cls": "no"
+              },
+              {
+                "text": "✓ 91 bevande con fattore di disidratazione",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Consumo messo contro l'assunzione",
+            "cells": [
+              {
+                "text": "Solo collegando le app",
+                "cls": "soon"
+              },
+              {
+                "text": "✓ nella stessa schermata",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Numero di app da gestire",
+            "cells": [
+              {
+                "text": "3",
+                "cls": "no"
+              },
+              {
+                "text": "1",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Numero di abbonamenti",
+            "cells": [
+              {
+                "text": "Fino a 3",
+                "cls": "no"
+              },
+              {
+                "text": "1, funzioni base gratis",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Esportazione dei dati in un unico posto",
+            "cells": [
+              {
+                "text": "✗ separata",
+                "cls": "no"
+              },
+              {
+                "text": "✓ PDF/CSV (Premium)",
+                "cls": "yes"
+              }
+            ]
+          }
+        ]
+      },
+      "analysis": [
+        {
+          "head": "I tre calcoli che si perdono tra un'app e l'altra",
+          "body": [
+            "Non è una questione di comodità, ma di numeri che senza collegamento nessuno ricava:"
+          ],
+          "list": [
+            "<strong>Sudore → obiettivo d'acqua.</strong> Un'ora di corsa al caldo costa, a seconda della persona, ben più di mezzo litro. La tua app per l'acqua non lo sa e lascia l'obiettivo invariato.",
+            "<strong>Proteine e sodio → acqua per la digestione.</strong> Il metabolismo delle proteine e un pasto ricco di sale aumentano in modo misurabile il fabbisogno di liquidi. La tua app di nutrizione conosce questi valori e non li comunica a nessuno.",
+            "<strong>Bevanda → contributo reale di idratazione.</strong> 250 ml di caffè non sono 250 ml d'acqua. Quasi tutte le app per l'acqua li contano comunque allo stesso modo."
+          ],
+          "callout": "Nessuno di questi tre calcoli è complicato. Semplicemente non viene mai fatto, perché i dati necessari stanno in tre app diverse."
+        },
+        {
+          "head": "Quando tre app restano la scelta migliore",
+          "body": [
+            "Se uno dei tre pilastri conta per te molto più degli altri, vince lo specialista. Chi gareggia ha bisogno dei segmenti e dell'analisi di potenza di Strava, e nessuna app tuttofare li sostituisce. Chi mangia spessissimo fuori ha bisogno del database dei ristoranti di MyFitnessPal. Chi monitora le vitamine ha bisogno di Cronometer.",
+            "Anche l'Apple Watch è un argomento reale: chi registra dal polso oggi è servito meglio da WaterMinder, perché l'app Watch di Suu deve ancora arrivare.",
+            "L'app collegata conviene dove nessuno dei tre pilastri domina — dove vuoi semplicemente cavartela bene in tutti e tre senza gestire tre interfacce e pagare tre abbonamenti."
+          ]
+        },
+        {
+          "head": "Cosa significa in concreto in una giornata",
+          "body": [
+            "Una giornata normale: la mattina corri 8 km. L'obiettivo d'acqua sale da solo, perché l'app conosce il sudore stimato. A pranzo fotografi il piatto — calorie e macro vengono registrate e, poiché era salato, si aggiunge l'acqua per la digestione. Nel pomeriggio registri due caffè, che contano per il loro contributo reale invece che come due bicchieri pieni.",
+            "La sera vedi un numero che tiene conto di tutti e tre gli eventi. Con tre app separate ne vedi tre, nessuno dei quali conosce gli altri — e il collegamento dovresti farlo tu, ogni giorno."
+          ]
+        }
+      ],
+      "verdict": {
+        "head": "Verdetto",
+        "body": [
+          "<strong>Scegli tre app specializzate</strong> se un pilastro conta per te molto più degli altri due: sport agonistico, pasti fuori casa molto frequenti o monitoraggio dei micronutrienti.",
+          "<strong>Scegli un'app collegata</strong> se vuoi cavartela bene in tutti e tre e non hai voglia di fare i calcoli intermedi da solo.",
+          "Suu è la versione collegata: 91 bevande con fattore di disidratazione, calorie da foto o voce, circa 50 attività con GPS — e i tre si parlano. Gratis su iOS e Android, con le avvertenze oneste di un database alimentare più piccolo, nessun segmento e nessuna app per Apple Watch per ora."
+        ]
+      },
+      "cta": {
+        "head": "Lascia che i tre si parlino",
+        "sub": "Gratis su iOS e Android · Premium gratis per 3 giorni",
+        "button": "Scarica Suu gratis"
+      },
+      "faq": [
+        {
+          "q": "Esiste un'app che unisce acqua, calorie e allenamento?",
+          "a": "Sì. Suu tiene tutti e tre in un'unica app e li collega: un allenamento registrato con il GPS alza l'obiettivo d'acqua per il sudore stimato, un pasto ricco di proteine o sale aggiunge l'acqua che serve alla digestione, e ognuna delle 91 bevande conta per il suo reale contributo di idratazione. Gratis su iOS e Android."
+        },
+        {
+          "q": "Un'app tutto-in-uno è meglio di tre app specializzate?",
+          "a": "Non nella singola disciplina. MyFitnessPal ha il database alimentare più grande, Strava l'analisi sportiva più profonda, WaterMinder l'app per Apple Watch migliore. Un'app collegata vince dove i tre si influenzano a vicenda — nei calcoli che tra app separate non fa nessuno."
+        },
+        {
+          "q": "Quanto bisogna bere in più dopo l'attività fisica?",
+          "a": "Dipende da durata, intensità, temperatura e tasso di sudorazione individuale, e va da poche centinaia di millilitri a oltre un litro all'ora. Proprio per questo una quantità giornaliera fissa nei giorni di allenamento è quasi sempre sbagliata: ha più senso un obiettivo che tenga conto della sessione reale."
+        },
+        {
+          "q": "Il caffè conta nell'acqua giornaliera?",
+          "a": "In gran parte sì, ma non come l'acqua. L'effetto diuretico di quantità moderate di caffeina è inferiore ai liquidi che la bevanda apporta, quindi il caffè è un contributo netto positivo — semplicemente non equivalente. Suu lo modella con un fattore di disidratazione per ogni bevanda."
+        },
+        {
+          "q": "Con Suu mi servono ancora Strava o MyFitnessPal?",
+          "a": "Solo se ti servono le loro funzioni specialistiche. Per segmenti, classifiche e analisi di potenza serve ancora Strava; per un database di ristoranti molto ampio, MyFitnessPal. Per allenamento quotidiano, calorie e idratazione Suu basta da sola — e gli allenamenti registrati altrove arrivano comunque tramite Apple Salute o Google Health Connect."
+        }
+      ],
+      "references": [
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6835337/",
+          "label": "Sudorazione e reintegro dei liquidi durante l'attività (PMC)"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2908954/",
+          "label": "Popkin et al. — Water, hydration and health (PMC)"
+        },
+        {
+          "href": "https://www.efsa.europa.eu/it/efsajournal/pub/1459",
+          "label": "EFSA — Valori di riferimento per l'acqua"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/it/migliore-app-per-bere-acqua.html",
+          "title": "Migliore app per bere acqua 2026",
+          "desc": "Cinque app per l'idratazione a confronto."
+        },
+        {
+          "href": "/blog/it/migliore-app-conta-calorie.html",
+          "title": "Migliore app conta calorie 2026",
+          "desc": "MyFitnessPal, Yazio, FatSecret e Cronometer."
+        },
+        {
+          "href": "/blog/it/migliore-app-allenamento.html",
+          "title": "Migliore app allenamento 2026",
+          "desc": "Strava, Nike Run Club, adidas Running e Suu."
+        },
+        {
+          "href": "/blog/en/hydration-score-explained.html",
+          "title": "Cos'è un punteggio di idratazione?",
+          "desc": "Come una giornata di bevute diventa un numero da 0 a 100."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Suu Blog (Deutsch)</title>
+    <link>https://suuapp.com/blog-de.html</link>
+    <description>Artikel über Wasser-Tracking, Kalorienzählen und Sport.</description>
+    <language>de-DE</language>
+    <lastBuildDate>Mon, 24 Aug 2026 19:56:19 +0000</lastBuildDate>
+    <atom:link href="https://suuapp.com/feed-de.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Wasser, Kalorien und Sport in einer App</title>
+      <link>https://suuapp.com/blog/de/wasser-kalorien-sport-eine-app.html</link>
+      <guid isPermaLink="true">https://suuapp.com/blog/de/wasser-kalorien-sport-eine-app.html</guid>
+      <description>Drei Apps oder eine? Was es konkret ändert, wenn Trinkmenge, Kalorien und Training miteinander rechnen — und wann drei spezialisierte Apps die bessere Wahl bleiben.</description>
+      <dc:creator>Furkan Mert Fındıklı</dc:creator>
+      <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Die beste Workout-Tracking-App 2026</title>
+      <link>https://suuapp.com/blog/de/beste-workout-tracker-app.html</link>
+      <guid isPermaLink="true">https://suuapp.com/blog/de/beste-workout-tracker-app.html</guid>
+      <description>Workout-Apps verglichen an dem, was sie mit deinen Daten machen: Strava, Komoot, adidas Running, Nike Run Club und Suu. Welche zählt Kalorien, welche Flüssigkeit, welche verbindet beides.</description>
+      <dc:creator>Furkan Mert Fındıklı</dc:creator>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Der beste Kalorienzähler 2026</title>
+      <link>https://suuapp.com/blog/de/bester-kalorienzaehler-app.html</link>
+      <guid isPermaLink="true">https://suuapp.com/blog/de/bester-kalorienzaehler-app.html</guid>
+      <description>Kalorien-Apps 2026 verglichen nach Eingabetempo, Datenbank, Genauigkeit und Gratis-Umfang: Yazio, FDDB, MyFitnessPal, Lifesum, Cronometer und Suu. Welche zu wem passt.</description>
+      <dc:creator>Furkan Mert Fındıklı</dc:creator>
+      <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Die beste Wasser-Tracking-App 2026</title>
+      <link>https://suuapp.com/blog/de/beste-wasser-tracking-app.html</link>
+      <guid isPermaLink="true">https://suuapp.com/blog/de/beste-wasser-tracking-app.html</guid>
+      <description>Welche Trinkerinnerung bringt dich wirklich zum Trinken? Suu, WaterMinder, Waterllama, Hydro Coach und Plant Nanny im Vergleich — Erinnerungsqualität, Zielberechnung und Gratis-Umfang.</description>
+      <dc:creator>Furkan Mert Fındıklı</dc:creator>
+      <pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

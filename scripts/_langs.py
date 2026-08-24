@@ -109,6 +109,11 @@ def read_more() -> dict[str, str]:
     return field("read_more")  # type: ignore[return-value]
 
 
+def blog_topics() -> dict[str, dict[str, str]]:
+    """dil → blog kartı konu rozeti etiketleri."""
+    return {k: dict(v["blog_topics"]) for k, v in table().items() if v.get("blog_topics")}
+
+
 def blog_langs(with_bcp47: bool = False) -> dict[str, tuple]:
     """dil → (indeks dosyası, yazı klasörü, bağlantı öneki[, inLanguage])
 
