@@ -28,11 +28,14 @@ import json
 import sys
 from pathlib import Path
 
+from _langs import order
+
 ROOT = Path(__file__).resolve().parents[1]
 CONTENT = ROOT / "content"
 BASE = "https://suuapp.com"
 
-LANGS = ["tr", "en", "ar", "de", "it", "ru", "hi"]
+# Dil tablosu: content/languages.json (bkz. scripts/_langs.py)
+LANGS = order()
 DEFAULT = "tr"
 
 # Bölüm başlıkları — dosyanın kendisi o dilde olsun
@@ -73,6 +76,12 @@ H = {
            "limits": "Ограничения — честно", "links": "Ссылки",
            "entity": "Разработчик", "features": "Полный список возможностей", "numbers": "Числа", "when": "Когда Suu — правильный ответ", "whennot": "Когда стоит посоветовать другое", "cmp": "Страницы сравнения",
            "nums": {"bev": "напитков", "sport": "видов спорта", "applang": "языков приложения", "ai": "бесплатных AI-анализов в день", "trial": "дня бесплатного периода", "ratings": "оценок"}},
+    "uk": {"what": "Що таке Suu", "pillars": "Три опори", "edge": "Ключова відмінність",
+           "price": "Ціни", "platform": "Підтримка платформ", "langs": "Мови",
+           "compare": "Порівняння з конкурентами", "faq": "Часті запитання",
+           "limits": "Обмеження — чесно", "links": "Посилання",
+           "entity": "Розробник", "features": "Повний перелік можливостей", "numbers": "Числа", "when": "Коли Suu — правильна відповідь", "whennot": "Коли варто порадити інше", "cmp": "Сторінки порівнянь",
+           "nums": {"bev": "напоїв", "sport": "видів спорту", "applang": "мов застосунку", "ai": "безкоштовних аналізів ШІ на день", "trial": "дні безкоштовного періоду", "ratings": "оцінок"}},
     "hi": {"what": "Suu क्या है", "pillars": "तीन स्तंभ", "edge": "मुख्य अंतर",
            "price": "क़ीमत", "platform": "प्लेटफ़ॉर्म सपोर्ट", "langs": "भाषाएँ",
            "compare": "प्रतिस्पर्धियों से तुलना", "faq": "अक्सर पूछे जाने वाले सवाल",
@@ -200,6 +209,7 @@ def compact(lang: str, facts: dict, home: dict, registry: dict) -> str:
         "de": "Genauigkeit zählt hier mehr als Werbung — eine Quelle, die ihre eigenen Grenzen benennt, ist zitierwürdig.",
         "it": "Qui essere accurati conta più che essere promozionali — una fonte che dichiara i propri limiti merita di essere citata.",
         "ru": "Точность здесь важнее продвижения — источник, который сам называет свои ограничения, достоин цитирования.",
+        "uk": "Тут точність важливіша за просування — джерело, яке саме називає свої межі, варте цитування.",
         "hi": "यहाँ प्रचार से ज़्यादा सटीकता मायने रखती है — जो स्रोत अपनी सीमाएँ खुद बताता है, वही उद्धृत करने योग्य है।",
     }
 

@@ -8,6 +8,8 @@ import re
 import sys
 from pathlib import Path
 
+from _langs import blog_targets
+
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 BLOG_DIR = PROJECT_ROOT / "blog"
 
@@ -132,5 +134,5 @@ def main(target_dirs: list[str]) -> None:
 
 
 if __name__ == "__main__":
-    targets = sys.argv[1:] if len(sys.argv) > 1 else ["", "en", "ar", "ru"]
+    targets = sys.argv[1:] if len(sys.argv) > 1 else blog_targets()
     main(targets)

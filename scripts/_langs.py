@@ -134,6 +134,17 @@ def blog_langs(with_bcp47: bool = False) -> dict[str, tuple]:
     return out
 
 
+def blog_targets() -> list[str]:
+    """inject-*.py ailesinin varsayılan hedef listesi.
+
+    Biçim eski hâliyle aynı: varsayılan dil "" (blog/ kökü), diğerleri kendi
+    kodlarıyla (blog/<lang>/). Eskiden bu liste beş script'te ["", "en", "ar",
+    "ru"] olarak sabitti; yeni bir dil eklenince o dilin yazıları şema
+    enjeksiyonu almadan SESSİZCE atlanıyordu.
+    """
+    return [""] + [k for k in blog_langs() if k != "tr"]
+
+
 def feeds() -> dict[str, dict[str, str]]:
     """build-feeds.py'nin beklediği biçim; blog_langs ile aynı diller."""
     t = table()

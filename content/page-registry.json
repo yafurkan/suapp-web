@@ -7,6 +7,7 @@
     "ru",
     "de",
     "it",
+    "uk",
     "hi"
   ],
   "_default": "tr",
@@ -32,7 +33,8 @@
       "ar": "hosgeldiniz-ar.html",
       "ru": "hosgeldiniz-ru.html",
       "de": "hosgeldiniz-de.html",
-      "it": "hosgeldiniz-it.html"
+      "it": "hosgeldiniz-it.html",
+      "uk": "hosgeldiniz-uk.html"
     },
     "features": {
       "tr": "ozellikler.html",
@@ -58,7 +60,8 @@
       "ar": "blog-ar.html",
       "ru": "blog-ru.html",
       "de": "blog-de.html",
-      "it": "blog-it.html"
+      "it": "blog-it.html",
+      "uk": "blog-uk.html"
     },
     "about": {
       "tr": "hakkimizda.html",
@@ -121,7 +124,8 @@
       "ar": "muqaranat.html",
       "ru": "sravneniya.html",
       "de": "vergleiche.html",
-      "it": "confronti.html"
+      "it": "confronti.html",
+      "uk": "porivnyannya.html"
     },
     "glossary": {
       "tr": "sozluk.html",
@@ -202,7 +206,10 @@
       "tr": "en-iyi-egzersiz-takip-uygulamasi",
       "en": "best-workout-tracker-app",
       "de": "beste-workout-tracker-app",
-      "it": "migliore-app-allenamento"
+      "it": "migliore-app-allenamento",
+      "ru": "luchshee-prilozhenie-dlya-trenirovok",
+      "ar": "afdal-tatbiq-tamarin",
+      "uk": "najkrashchyj-zastosunok-dlya-trenuvan"
     },
     "en-iyi-fotografla-kalori-uygulamasi": {
       "tr": "en-iyi-fotografla-kalori-uygulamasi",
@@ -214,7 +221,8 @@
       "ar": "afdal-tatbiq-hisab-suerat",
       "ru": "luchshee-prilozhenie-podscheta-kalorij",
       "de": "bester-kalorienzaehler-app",
-      "it": "migliore-app-conta-calorie"
+      "it": "migliore-app-conta-calorie",
+      "uk": "najkrashchyj-lichylnyk-kalorij"
     },
     "enerji-icecegi-kontrolu": {
       "tr": "enerji-icecegi-kontrolu",
@@ -344,7 +352,8 @@
       "ar": "tatbiq-wahid-mae-suerat-tamarin",
       "ru": "voda-kalorii-trenirovki-odno-prilozhenie",
       "de": "wasser-kalorien-sport-eine-app",
-      "it": "acqua-calorie-allenamento-una-app"
+      "it": "acqua-calorie-allenamento-una-app",
+      "uk": "voda-kalorii-trenuvannya-odyn-zastosunok"
     },
     "su-takip-uygulamasi-neden-kullanmaliyim": {
       "tr": "su-takip-uygulamasi-neden-kullanmaliyim",
@@ -352,7 +361,8 @@
       "ar": "afdal-tatbiq-mae",
       "ru": "luchshee-prilozhenie-dlya-vody",
       "de": "beste-wasser-tracking-app",
-      "it": "migliore-app-per-bere-acqua"
+      "it": "migliore-app-per-bere-acqua",
+      "uk": "najkrashchyj-zastosunok-dlya-vody"
     },
     "su-ve-bobrek-sagligi": {
       "tr": "su-ve-bobrek-sagligi",

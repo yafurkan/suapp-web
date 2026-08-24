@@ -53,6 +53,22 @@ TARGETS: dict[str, tuple[str, str, str]] = home_files()
 LANG_NAMES: dict[str, str] = lang_names()
 
 
+def shot(platform: str, lang: str, slug: str) -> str:
+    """Ekran görüntüsünün src'sini DERLEME anında çöz.
+
+    assets/js/screenshots.js zaten dil → tr → placeholder zinciri kuruyor, ama
+    o zincir onerror ile çalışıyor: Türkçe olmayan her ana sayfa önce 404 alıp
+    sonra doğru görseli çekiyordu. Hero görseli lazy DEĞİL, yani bu doğrudan
+    LCP'ye biniyor ve tarayıcılara 404 gösteriyordu. Dosya diskte hangi dilde
+    varsa onu basıyoruz; JS zinciri emniyet ağı olarak kalıyor.
+    """
+    base = ROOT / "assets" / "screenshots" / platform
+    for code in (lang, "tr"):
+        if (base / code / f"{slug}.webp").exists():
+            return f"/assets/screenshots/{platform}/{code}/{slug}.webp"
+    return "/assets/screenshots/_placeholder.svg"
+
+
 def page_url(lang: str) -> str:
     return f"{BASE}/" if lang == "tr" else f"{BASE}/{TARGETS[lang][0]}"
 
@@ -227,6 +243,7 @@ def main() -> int:
         lstrip_blocks=False,
         autoescape=True,
     )
+    env.globals["shot"] = shot
     template = env.get_template("_template.html.j2")
 
     built, skipped, changed = [], [], []
