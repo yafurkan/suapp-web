@@ -148,6 +148,7 @@ python3 scripts/new-blog-index.py <dil> --apply       # yeni dil için blog inde
 python3 scripts/inject-hreflang.py --apply          # hreflang kümesi
 python3 scripts/inject-comparison-schema.py --apply # karşılaştırma sayfalarına ItemList
 python3 scripts/inject-analytics.py --apply         # ölçüm parçacığı
+python3 scripts/inject-special-days.py --apply      # özel gün kutlama katmanı
 python3 scripts/update-sitemap.py --apply           # sitemap (image blokları korunur)
 python3 scripts/sync-blog-index.py --apply          # blog indeksine eksik KARTLARI ekle
 python3 scripts/sync-blog-schema.py --apply         # blog indeksinin Blog.blogPost ŞEMASINI eşitle
@@ -238,6 +239,73 @@ rastgele trafiğin sınırlı havuzu tüketmesini istemiyoruz. Koruma
 **Reklam izni:** form isteğe bağlı açık rıza kutusu içerir; izin, metniyle ve
 zaman damgasıyla birlikte saklanır (KVKK/İYS ispatı). Panelin "Duyuru listesi
 (CSV)" çıktısında **yalnızca** izin verenler bulunur.
+
+## Özel Gün Kutlamaları
+
+Belirli tarihlerde, belirli dillerde tam ekran bir kutlama animasyonu ve gün
+boyunca duran kapatılabilir bir köşe rozeti gösterilir. İlk gün **30 Ağustos
+Zafer Bayramı** (30–31 Ağustos, yalnızca Türkçe).
+
+| Dosya | Rolü |
+|---|---|
+| `assets/js/special-days.js` | motor **ve** gün listesi — tek gerçek kaynak |
+| `assets/css/special-days.css` | görünüm; JS tarafından ihtiyaç anında yüklenir |
+| `assets/special/` | anma görselleri (`ataturk.jpg`) |
+| `scripts/inject-special-days.py` | script etiketini 278 sayfaya dağıtır |
+
+**Maliyet:** yılın 363 günü sıfır. Aktif gün yoksa CSS dosyası bile istenmez;
+sayfada duran tek şey `defer` yüklenen script'tir (21 KB ham, gzip 6 KB).
+
+### Açma / kapama
+
+```js
+// assets/js/special-days.js
+var SISTEM_ACIK = true;          // tüm sistemin ana şalteri
+
+var OZEL_GUNLER = [
+    { id: 'zafer-bayrami', acik: true,  ... },   // tek günü kapatmak: acik: false
+    { id: 'cumhuriyet-bayrami', acik: false, ... }
+];
+```
+
+29 Ekim, 19 Mayıs ve 23 Nisan **hazır yazılı, `acik: false`** bekliyor — o gün
+gelince tek kelime değiştirmek yetiyor. Yeni bir gün eklemek de diziye bir nesne
+yazmaktan ibaret; sayfalara dokunulmaz.
+
+### Alanlar
+
+| Alan | Anlamı |
+|---|---|
+| `baslangic` / `bitis` | `"AA-GG"` her yıl tekrar eder, `"YYYY-AA-GG"` tek seferliktir |
+| `diller` | hangi `<html lang>` değerlerinde çıkacağı (`['tr']`) |
+| `ilkYil` | metinlerdeki `{yil}` yer tutucusunu doldurur (2026 − 1922 = 104) |
+| `siklik` | `'gun'` (günde bir), `'oturum'`, `'her'` |
+| `rozet` / `rozetKisa` | köşe rozeti metni; kısa sürüm ≤480px ekranlarda |
+| `gorsel` | anma fotoğrafı yolu — **dosya yoksa kompozisyon bayrakla kurulur** |
+
+**Tarih her zaman Europe/Istanbul'a göre** değerlendirilir; yurt dışındaki bir
+ziyaretçi de bayramı Türkiye takvimiyle görür.
+
+### Denemek
+
+```
+https://suuapp.com/?ozelgun=zafer-bayrami   # tarihi ve "günde bir"i yok sayar
+https://suuapp.com/?ozelgun=kapali          # o sekmede sustur
+```
+
+### Görsel
+
+Bayrak koda gömülü SVG'dir — Türk Bayrağı Kanunu ölçüleriyle (dış çember çapı
+G/2, iç çember 0,4G, yıldızın çevrel çemberi G/4) ve `feTurbulence` tabanlı bir
+kumaş dalgası ile.
+
+`assets/special/ataturk.jpg` varsa **fotoğraf hero olur**: kendi en/boy oranında
+çerçevelenir, çok yavaş yakınlaşır ve bayrak alt kenarına binen küçük bir mühre
+dönüşür. Dosya yoksa bayrak tek başına hero kalır — iki düzen de sınandı.
+
+`prefers-reduced-motion: reduce` altında konfeti ve dalga tamamen kapanır,
+kompozisyon statik kalır. Düzen üç kırılmada sınandı: dar telefon (320px),
+telefon (390px), tablet (768px), masaüstü (1440px) ve yatık telefon (844×420).
 
 ## Teknoloji
 
