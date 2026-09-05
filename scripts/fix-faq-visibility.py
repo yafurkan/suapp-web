@@ -61,6 +61,7 @@ FAQ_HEADINGS = {
     "tr": "Sık sorulan sorular", "en": "Frequently asked questions",
     "ar": "الأسئلة الشائعة", "ru": "Частые вопросы",
     "de": "Häufige Fragen", "it": "Domande frequenti", "hi": "अक्सर पूछे जाने वाले सवाल",
+    "uk": "Часті запитання",
 }
 
 
