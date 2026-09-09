@@ -685,6 +685,65 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-10) 0; }
 }
 .phone img { border-radius: 26px; width: 100%; background: var(--bg-sunken); }
 .phone--lg { max-width: 320px; }
+.phone--punch::after {              /* Android: çentik değil, delik kamera */
+    inset-block-start: 16px;
+    width: 11px; height: 11px;
+}
+
+/* Cihaz değiştirici — platform seçimi telefonu 3B çevirir.
+   İki yüz de DOM'da kalır: hangi platformun ekranı gösterilirse gösterilsin
+   diğeri de kaynakta durur, ekran görüntüsü galerisindeki mantıkla aynı. */
+.devsw { display: flex; flex-direction: column; perspective: 1600px; }
+.devsw__stage {
+    display: grid;
+    max-width: 320px;
+    margin-inline: auto;
+    transform-style: preserve-3d;
+    transition: transform 0.95s cubic-bezier(0.62, 0.02, 0.24, 1);
+}
+.devsw[data-face="android"] .devsw__stage { transform: rotateY(180deg); }
+/* Grid'de iki yüz aynı hücrede: sahne kendiliğinden uzun olana göre boylanır. */
+.devsw__face {
+    grid-area: 1 / 1;
+    align-self: center;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.devsw__face--back { transform: rotateY(180deg); }
+.devsw.is-flipping .devsw__stage { animation: devsw-dip 0.95s cubic-bezier(0.62, 0.02, 0.24, 1); }
+@keyframes devsw-dip { 0%, 100% { scale: 1; } 48% { scale: 0.93; } }
+
+/* Mobilde telefonun altında (hero zaten metnin üstüne alınıyor), masaüstünde
+   üstünde: 320px'lik telefonun altına düşünce dizüstü ekranlarda katlamanın
+   altında kalıyor ve seçim hiç görünmüyordu. */
+.devsw__tabs {
+    display: flex;
+    gap: 3px;
+    width: max-content;
+    margin: var(--sp-5) auto 0;
+    padding: 4px;
+    border-radius: var(--r-full);
+    background: var(--bg-sunken);
+}
+@media (min-width: 901px) {
+    .devsw__tabs { order: -1; margin: 0 auto var(--sp-5); }
+}
+.devsw__tab {
+    display: inline-flex; align-items: center; gap: var(--sp-2);
+    min-height: 38px;
+    padding-inline: var(--sp-5);
+    border: 0; border-radius: var(--r-full);
+    background: transparent;
+    font-family: inherit; font-size: var(--fs-sm); font-weight: var(--fw-semibold);
+    color: var(--text-muted); cursor: pointer;
+    transition: background-color var(--dur-base) var(--ease), color var(--dur-base) var(--ease);
+}
+.devsw__tab:hover { color: var(--text); }
+.devsw__tab.is-on {
+    background: var(--surface);
+    color: var(--text-brand);
+    box-shadow: var(--shadow-sm);
+}
 
 /* ─────────────────────────────────────────────────────────
    9. PLATFORM MATRİSİ + KARŞILAŞTIRMA TABLOSU

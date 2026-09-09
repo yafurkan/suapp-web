@@ -80,6 +80,7 @@
     </script>
 
     <script src="/assets/js/analytics.js" defer></script>
+    <script src="/assets/js/special-days.js" defer></script>
     <script src="/assets/js/screenshots.js" defer></script>
     <script src="/assets/js/water-calc.js" defer></script>
     <script src="/lang-switcher.js?v=3" defer></script>
@@ -128,7 +129,7 @@
 <nav class="nav" id="nav">
     <div class="container nav__inner">
         <a href="{{ links.home }}" class="nav__logo" aria-label="{{ nav.home_aria }}">
-            <svg width="26" height="26" aria-hidden="true"><use href="#i-water"></use></svg>
+            <img src="/assets/logo-drop.png" alt="Suu" style="height:1em;width:auto;vertical-align:-0.15em;">
             Suu
         </a>
         <ul class="nav__links" id="navLinks">
@@ -170,11 +171,33 @@
             </div>
         </div>
         <div class="hero__media">
-            <div class="phone phone--lg">
-                <img src="{{ shot('ios', lang, 'ana-ekran') }}"
-                     data-screen="ana-ekran" data-platform="ios"
-                     width="585" height="1266" fetchpriority="high"
-                     alt="{{ hero.shot_alt }}">
+            <div class="devsw" data-device data-face="ios">
+                <div class="devsw__stage">
+                    <div class="devsw__face">
+                        <div class="phone phone--lg">
+                            <img src="{{ shot('ios', lang, 'ana-ekran') }}"
+                                 data-screen="ana-ekran" data-platform="ios"
+                                 width="585" height="1266" fetchpriority="high"
+                                 alt="iOS — {{ hero.shot_alt }}">
+                        </div>
+                    </div>
+                    <div class="devsw__face devsw__face--back">
+                        {#- Aynı görsel #ekranlar şeridinde de var, yani ek bir dosya inmiyor;
+                            LCP'yi bozmasın diye düşük öncelikle çekiliyor. -#}
+                        <div class="phone phone--lg phone--punch">
+                            <img src="{{ shot('android', lang, 'ana-ekran') }}"
+                                 data-screen="ana-ekran" data-platform="android"
+                                 width="720" height="1640" fetchpriority="low" decoding="async"
+                                 alt="Android — {{ hero.shot_alt }}">
+                        </div>
+                    </div>
+                </div>
+                <div class="devsw__tabs" role="group" aria-label="{{ shots.tablist_label }}">
+                    <button type="button" class="devsw__tab is-on" data-platform="ios" aria-pressed="true">
+                        <svg width="15" height="15" aria-hidden="true"><use href="#i-apple"></use></svg>iOS
+                    </button>
+                    <button type="button" class="devsw__tab" data-platform="android" aria-pressed="false">Android</button>
+                </div>
             </div>
         </div>
     </div>
@@ -528,7 +551,7 @@
         <div class="footer__grid">
             <div>
                 <a href="{{ links.home }}" class="nav__logo" style="margin-block-end:var(--sp-3)">
-                    <svg width="24" height="24" aria-hidden="true"><use href="#i-water"></use></svg> Suu
+                    <img src="/assets/logo-drop.png" alt="Suu" style="height:1em;width:auto;vertical-align:-0.15em;"> Suu
                 </a>
                 <p class="small">{{ footer.blurb }}</p>
             </div>
