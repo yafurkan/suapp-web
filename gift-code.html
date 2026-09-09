@@ -36,10 +36,11 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="preload" as="image" href="/assets/brand/suu-drop-512.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <script src="/assets/js/analytics.js" defer></script>
+<!-- Şablonda duruyor: inject-special-days.py enjekte ediyordu, her build'de düşüyordu. -->
 <script src="/assets/js/special-days.js" defer></script>
 
 <style>
@@ -256,6 +257,7 @@ img{max-width:100%;display:block}
   .gc-plats{grid-template-columns:1fr}
   .gc-card{padding:24px 18px}
 }
+
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;
     transition-duration:.001ms !important;scroll-behavior:auto !important}
@@ -279,6 +281,7 @@ img{max-width:100%;display:block}
 <header class="gc-hero">
   <div class="gc-aurora"><b></b><b></b><b></b></div>
   <div class="gc-bubbles" id="gcBubbles" aria-hidden="true"></div>
+
 
   <div class="gc-hero-in">
     <span class="gc-badge gc-anim"><b></b>Limited batch · 1 month free</span>
@@ -325,6 +328,7 @@ img{max-width:100%;display:block}
              inputmode="email" placeholder="you@example.com" required>
       <p class="gc-hint">The code appears on screen, and a copy goes to this address.</p>
 
+
       <input class="gc-hp" type="text" name="website" id="gcHp" tabindex="-1" autocomplete="off" aria-hidden="true">
 
       <label class="gc-consent">
@@ -352,7 +356,8 @@ img{max-width:100%;display:block}
 
     <div class="gc-code">
       <b id="gcCodeText">— — —</b>
-      <button class="gc-copy" type="button" id="gcCopy"><built-in method copy of dict object at 0x1061cf300></button>
+      <!-- c.result.copy YAZILMAZ: Jinja önce getattr'a bakar ve dict.copy metodunu basar. -->
+      <button class="gc-copy" type="button" id="gcCopy">Copy code</button>
     </div>
 
     <a class="gc-redeem" id="gcRedeem" href="#" target="_blank" rel="noopener">
@@ -429,7 +434,7 @@ img{max-width:100%;display:block}
   }
 
   /* ── kabarcıklar ── */
-  if (!reduced) {
+  if (!reduced && document.getElementById("gcBubbles")) {
     var bub = document.getElementById("gcBubbles"), html = "";
     for (var i = 0; i < 12; i++) {
       var size = 8 + Math.random() * 34;
@@ -514,6 +519,7 @@ img{max-width:100%;display:block}
     tsWidget = window.turnstile.render("#gcTurnstile", {
       sitekey: "0x4AAAAAAEUkAD5tUeLuafpH",
       language: CFG.lang,
+      theme: "light",
       callback: function (t) { tsToken = t; },
       "expired-callback": function () { tsToken = ""; },
       "error-callback": function () { tsToken = ""; }
