@@ -63,7 +63,25 @@ TARGETS: dict[str, tuple[str, str, str, str]] = {
 
 
 # Suu'nun kendi hero degradesi. Sponsor kendi rengini getirebilir.
-DEFAULT_THEME = {"from": "#01A5F7", "mid": "#0B6FD0", "to": "#063C7A"}
+# skin: "light" mavi degrade (standart), "dark" siyah zemin + beyaz ışık ve
+# platform sorusunda dönen telefon mockup'ı. Sponsor dosyasından açılır.
+DEFAULT_THEME = {"from": "#01A5F7", "mid": "#0B6FD0", "to": "#063C7A", "skin": "light"}
+
+# Mockup'ın içine konan gerçek uygulama ekranı. Dilinde yoksa İngilizce,
+# o da yoksa Türkçe: ekranlardaki arayüz metni zaten İngilizce.
+SHOT_FALLBACK = ("en", "tr")
+
+
+def device_shots(lang: str) -> dict[str, str] | None:
+    """Mockup için iki platformun da ekranı varsa yollarını döndürür."""
+    found = {}
+    for plat in ("ios", "android"):
+        for code in (lang, *SHOT_FALLBACK):
+            rel = f"assets/screenshots/{plat}/{code}/ana-ekran.webp"
+            if (ROOT / rel).exists():
+                found[plat] = "/" + rel
+                break
+    return found if len(found) == 2 else None
 
 
 def deep_merge(base: dict, over: dict) -> dict:
@@ -105,6 +123,7 @@ def main() -> int:
 
     def render(*, lang, c, out_path, page_url, alternates, lang_links, partner, theme):
         runtime = {"stock": c["stock"], "form": c["form"], "result": c["result"], "errors": c["errors"]}
+        dark = theme.get("skin") == "dark"
         html = template.render(
             lang=lang,
             dir=TARGETS[lang][2],
@@ -112,6 +131,8 @@ def main() -> int:
             c=c,
             partner=partner,
             theme=theme,
+            dark=dark,
+            device=device_shots(lang) if dark else None,
             page_url=page_url,
             xdefault_url=alternates[0][1] if len(alternates) == 1 else f"{BASE}/{TARGETS[XDEFAULT][0]}",
             alternates=alternates,

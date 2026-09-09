@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ lang }}"{% if dir == 'rtl' %} dir="rtl"{% endif %}>
+<html lang="{{ lang }}"{% if dir == 'rtl' %} dir="rtl"{% endif %}{% if dark %} data-skin="dark"{% endif %}>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
@@ -7,7 +7,7 @@
 <meta name="description" content="{{ c.meta.desc }}">
 <!-- Kampanya sayfası: arama sonuçlarına girmesini istemiyoruz, bağlantı elle paylaşılıyor. -->
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#01A5F7">
+<meta name="theme-color" content="{% if dark %}#000000{% else %}#01A5F7{% endif %}">
 <meta name="apple-itunes-app" content="app-id={{ app_store_id }}">
 
 <meta property="og:title" content="{{ c.meta.ogTitle }}">
@@ -34,6 +34,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <script src="/assets/js/analytics.js" defer></script>
+<!-- Şablonda duruyor: inject-special-days.py enjekte ediyordu, her build'de düşüyordu. -->
+<script src="/assets/js/special-days.js" defer></script>
 
 <style>
 :root{
@@ -249,10 +251,190 @@ img{max-width:100%;display:block}
   .gc-plats{grid-template-columns:1fr}
   .gc-card{padding:24px 18px}
 }
+{% if dark %}
+/* ═══════════════════════════════════════════════════════════════════
+   "Sinema" derisi — siyah zemin, beyaz ışık.
+   theme.skin = "dark" diyen sponsor sayfalarında açılır; mavi gradyanlı
+   standart hediye sayfaları bu bloğu hiç görmez, bu yüzden burada her
+   şey yeniden tanımlanıyor: üstteki kurallar açık zemine göre yazıldı.
+   ═══════════════════════════════════════════════════════════════════ */
+[data-skin=dark]{color-scheme:dark;
+  --k-ink:#f5f5f7;--k-mut:#a1a1a6;--k-dim:#6e6e73;--k-line:rgba(255,255,255,.13)}
+[data-skin=dark] body{background:#000;color:var(--k-ink);
+  font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','Inter',system-ui,sans-serif}
+
+/* ── perde ── */
+[data-skin=dark] .gc-splash{background:#000}
+[data-skin=dark] .gc-splash::before{content:'';position:absolute;inset:0;
+  background:radial-gradient(58% 44% at 50% 44%,rgba(255,255,255,.17),transparent 72%)}
+[data-skin=dark] .gc-ring{border-color:rgba(255,255,255,.16)}
+[data-skin=dark] img.gc-splash-drop,[data-skin=dark] .gc-splash-drop img,
+[data-skin=dark] .gc-logo img{filter:drop-shadow(0 0 34px rgba(255,255,255,.24))}
+[data-skin=dark] .gc-splash-tag{color:var(--k-mut);font-size:.84rem;letter-spacing:.2em}
+[data-skin=dark] .gc-splash-hint{color:rgba(255,255,255,.5)}
+[data-skin=dark] .gc-splash-hint i{border-color:rgba(255,255,255,.5)}
+[data-skin=dark] .gc-lockup .x{color:rgba(255,255,255,.38)}
+/* açılışta lockup'ın üzerinden geçen ışık huzmesi */
+.k-sheen{position:absolute;inset:-40% -35%;z-index:3;pointer-events:none;opacity:0;
+  background:linear-gradient(104deg,transparent 42%,rgba(255,255,255,.5) 50%,transparent 58%);
+  animation:k-sheen 1.6s cubic-bezier(.4,0,.2,1) .5s}
+@keyframes k-sheen{0%{opacity:0;transform:translateX(-62%)}30%{opacity:.85}100%{opacity:0;transform:translateX(62%)}}
+.k-bar{display:block;width:min(420px,62vw);height:1px;margin:24px auto 0;transform:scaleX(0);
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.85),transparent);
+  box-shadow:0 0 20px rgba(255,255,255,.4);animation:k-bar 1s cubic-bezier(.2,.8,.2,1) .5s forwards}
+@keyframes k-bar{to{transform:scaleX(1)}}
+
+/* ── hero: tek bir ışık kaynağı + film grenli siyah ── */
+[data-skin=dark] .gc-hero{background:#000;padding:104px 20px 146px}
+[data-skin=dark] .gc-hero::before{content:'';position:absolute;inset:0;z-index:-1;opacity:.05;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size:180px}
+[data-skin=dark] .gc-hero::after{content:'';position:absolute;left:0;right:0;bottom:0;height:260px;z-index:-1;
+  pointer-events:none;background:linear-gradient(to bottom,rgba(0,0,0,0),#000 92%)}
+[data-skin=dark] .gc-hero-in,[data-skin=dark] .gc-scroll{z-index:2}
+/* Karartmanın ÜSTÜNDE: yoksa alttaki ufuk çizgisi degradenin içinde kayboluyor. */
+.k-light{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none}
+.k-spot{position:absolute;left:50%;top:0;width:min(1180px,158vw);aspect-ratio:1;
+  transform:translate(calc(-50% + var(--px,0px)),calc(-44% + var(--py,0px)));
+  transition:transform .5s cubic-bezier(.2,.8,.2,1);
+  background:radial-gradient(circle at 50% 50%,rgba(255,255,255,.27),rgba(255,255,255,.09) 34%,rgba(255,255,255,0) 66%)}
+.k-beam{position:absolute;left:50%;top:-26%;width:min(720px,94vw);height:118%;filter:blur(30px);opacity:.72;
+  transform:translateX(-50%) rotate(7deg);
+  background:linear-gradient(180deg,rgba(255,255,255,.1),rgba(255,255,255,0) 60%)}
+.k-horizon{position:absolute;left:50%;bottom:112px;width:min(920px,88vw);height:1px;transform:translateX(-50%);
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.3),transparent)}
+
+[data-skin=dark] .gc-badge{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);color:var(--k-ink)}
+[data-skin=dark] .gc-together{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14)}
+/* text-transform:uppercase YOK: tr yerelinde marka adını bozuyor (Community → COMMUNİTY). */
+[data-skin=dark] .gc-title small{margin-bottom:.8em;color:var(--k-mut);font-weight:600;
+  font-size:clamp(.8rem,2.1vw,1rem);letter-spacing:.12em}
+[data-skin=dark] .gc-title em{background:linear-gradient(180deg,#fff 24%,#a6a6ad 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 0 44px rgba(255,255,255,.15))}
+[data-skin=dark] .gc-greet{color:#c9c9ce}
+[data-skin=dark] .gc-sub{color:var(--k-mut)}
+[data-skin=dark] .gc-pills span{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.12);color:#d6d6db}
+[data-skin=dark] .gc-cta{border-radius:999px;padding:15px 32px;background:#fff;color:#000;
+  box-shadow:0 12px 40px rgba(255,255,255,.18)}
+[data-skin=dark] .gc-cta:hover{box-shadow:0 18px 52px rgba(255,255,255,.28)}
+[data-skin=dark] .gc-scroll{color:rgba(255,255,255,.55)}
+[data-skin=dark] .gc-scroll i{border-color:rgba(255,255,255,.55)}
+
+/* ── telefon mockup'ı: seçime göre dönen iki yüz ── */
+.k-picker{display:grid;gap:22px;justify-items:center}
+.k-dev{position:relative;width:min(200px,52vw);perspective:1500px}
+.k-glow{position:absolute;inset:-16% -26%;z-index:-1;border-radius:50%;filter:blur(48px);opacity:.6;
+  background:radial-gradient(circle,rgba(150,195,255,.55),transparent 62%);transition:background .7s ease,opacity .7s ease}
+.k-dev[data-face=android] .k-glow{background:radial-gradient(circle,rgba(61,220,132,.5),transparent 62%)}
+.k-dev-in{position:relative;width:100%;aspect-ratio:720/1640;transform-style:preserve-3d;
+  transition:transform .95s cubic-bezier(.62,.02,.24,1)}
+.k-dev[data-face=android] .k-dev-in{transform:rotateY(180deg)}
+.k-dev.flip .k-dev-in{animation:k-dip .95s cubic-bezier(.62,.02,.24,1)}
+@keyframes k-dip{0%,100%{scale:1}48%{scale:.92}}
+.k-face{position:absolute;inset:0;display:grid;place-items:center;
+  backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.k-face-and{transform:rotateY(180deg)}
+.k-phone{position:relative;width:100%;border-radius:34px;padding:5px;
+  background:linear-gradient(150deg,#55555d,#141416 26%,#0f0f11 62%,#4c4c54);
+  box-shadow:0 28px 60px rgba(0,0,0,.75),0 0 0 1px rgba(255,255,255,.07)}
+.k-phone.k-and{border-radius:27px;padding:4px}
+.k-screen{position:relative;overflow:hidden;border-radius:29px;background:#0b1020;line-height:0}
+.k-and .k-screen{border-radius:23px}
+.k-screen img{width:100%;height:auto;display:block}
+.k-island{position:absolute;top:1.5%;left:50%;transform:translateX(-50%);width:30%;height:2.9%;
+  border-radius:99px;background:#000;box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)}
+.k-punch{position:absolute;top:1.3%;left:50%;transform:translateX(-50%);width:5%;aspect-ratio:1;
+  border-radius:50%;background:#000;box-shadow:inset 0 0 0 1px rgba(255,255,255,.08)}
+.k-home{position:absolute;bottom:.9%;left:50%;transform:translateX(-50%);width:32%;height:.5%;
+  border-radius:99px;background:rgba(255,255,255,.7)}
+.k-side{position:absolute;z-index:1;border-radius:2px;background:linear-gradient(90deg,#5f5f68,#232327)}
+.k-ios .k-s1{inset-inline-start:-2px;top:17%;width:3px;height:3.4%}
+.k-ios .k-s2{inset-inline-start:-2px;top:23%;width:3px;height:7.4%}
+.k-ios .k-s3{inset-inline-end:-2px;top:25%;width:3px;height:10.4%}
+.k-and .k-a1{inset-inline-end:-2px;top:20%;width:3px;height:6%}
+.k-and .k-a2{inset-inline-end:-2px;top:28%;width:3px;height:9%}
+/* dönerken ekranın üstünden geçen parlama */
+.k-sweep{position:absolute;inset:0;opacity:0;pointer-events:none;
+  background:linear-gradient(102deg,transparent 38%,rgba(255,255,255,.55) 50%,transparent 62%)}
+.k-dev.flip .k-sweep{animation:k-sweep .95s ease}
+@keyframes k-sweep{0%{opacity:0;transform:translateX(-75%)}34%{opacity:.9}100%{opacity:0;transform:translateX(75%)}}
+.k-cap{display:grid;margin:18px 0 0;text-align:center;font-size:.82rem;color:var(--k-mut)}
+.k-cap span{grid-area:1/1;transition:opacity .45s ease}
+.k-dev[data-face=ios] [data-cap=android],.k-dev[data-face=android] [data-cap=ios]{opacity:0}
+
+/* ── kartlar, form, sonuç ── */
+[data-skin=dark] .gc-main{max-width:790px}
+[data-skin=dark] .gc-card{padding:34px 30px;border-radius:26px;border-color:var(--k-line);
+  background:linear-gradient(180deg,rgba(255,255,255,.065),rgba(255,255,255,.028));
+  box-shadow:0 40px 90px rgba(0,0,0,.7)}
+[data-skin=dark] .gc-h2{color:#fff}
+[data-skin=dark] .gc-label{color:#e6e6ea}
+/* mockup yanında yer açmak için kartlar yatay: dar ekranda da yan yana kalırlar */
+[data-skin=dark] .gc-plats{grid-template-columns:1fr 1fr;gap:10px}
+[data-skin=dark] .gc-plat{display:grid;grid-template-columns:auto 1fr;grid-template-areas:"i n" "i s";
+  column-gap:11px;row-gap:1px;padding:14px 13px;text-align:start;align-items:center;
+  background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.12)}
+[data-skin=dark] .gc-plat svg{grid-area:i;width:24px;height:24px;fill:#d7d7dc}
+[data-skin=dark] .gc-plat b{grid-area:n;align-self:end;font-size:.94rem}
+[data-skin=dark] .gc-plat small{grid-area:s;align-self:start;color:var(--k-mut);font-size:.74rem}
+[data-skin=dark] .gc-plat:hover:not(.off){box-shadow:0 10px 30px rgba(255,255,255,.08)}
+[data-skin=dark] .gc-plat.on{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.72);
+  box-shadow:0 0 0 1px rgba(255,255,255,.22),0 14px 40px rgba(255,255,255,.12)}
+[data-skin=dark] .gc-plat.on svg{fill:#fff}
+[data-skin=dark] .gc-input{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.14);color:#fff}
+[data-skin=dark] .gc-input::placeholder{color:var(--k-dim)}
+[data-skin=dark] .gc-input:focus{border-color:rgba(255,255,255,.6);box-shadow:0 0 0 4px rgba(255,255,255,.1)}
+[data-skin=dark] .gc-hint{color:var(--k-mut)}
+[data-skin=dark] .gc-consent{background:rgba(255,255,255,.035);border-color:var(--k-line)}
+[data-skin=dark] .gc-consent input{accent-color:#0a84ff}
+[data-skin=dark] .gc-consent small{color:var(--k-mut)}
+[data-skin=dark] .gc-submit{background:#fff;color:#000;box-shadow:0 14px 40px rgba(255,255,255,.16)}
+[data-skin=dark] .gc-submit:hover:not(:disabled){box-shadow:0 20px 52px rgba(255,255,255,.24)}
+[data-skin=dark] .gc-spin{border-color:rgba(0,0,0,.25);border-top-color:#000}
+[data-skin=dark] .gc-privacy{color:var(--k-dim)}
+[data-skin=dark] .gc-privacy a{color:#c9c9ce}
+[data-skin=dark] .gc-alert.err{background:rgba(255,69,58,.12);border-color:rgba(255,69,58,.35);color:#ff9d97}
+[data-skin=dark] .gc-alert.warn{background:rgba(255,190,60,.1);border-color:rgba(255,190,60,.32);color:#ffd68a}
+[data-skin=dark] .gc-tick{background:linear-gradient(135deg,#30d158,#0f9d43);box-shadow:0 10px 30px rgba(48,209,88,.25)}
+[data-skin=dark] .gc-code{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.32)}
+[data-skin=dark] .gc-code b{color:#fff}
+[data-skin=dark] .gc-copy{background:transparent;border-color:rgba(255,255,255,.42);color:#fff}
+[data-skin=dark] .gc-copy:hover{background:#fff;color:#000}
+[data-skin=dark] .gc-copy.done{background:var(--gc-ok);border-color:var(--gc-ok);color:#fff}
+[data-skin=dark] .gc-redeem{background:#fff;color:#000;box-shadow:0 14px 40px rgba(255,255,255,.16)}
+[data-skin=dark] .gc-steps li{color:#c2c2c8}
+[data-skin=dark] .gc-steps li::before{background:rgba(255,255,255,.12);color:#fff}
+[data-skin=dark] .gc-mail.ok{background:rgba(48,209,88,.1);border-color:rgba(48,209,88,.3);color:#7ee2a0}
+[data-skin=dark] .gc-mail.bad{background:rgba(255,190,60,.1);border-color:rgba(255,190,60,.3);color:#ffd68a}
+[data-skin=dark] .gc-getapp{color:#c9c9ce}
+[data-skin=dark] .gc-faq details{border-radius:16px;border-color:var(--k-line);background:rgba(255,255,255,.04)}
+[data-skin=dark] .gc-faq summary{color:#ececf0}
+[data-skin=dark] .gc-faq summary::after{color:rgba(255,255,255,.55)}
+[data-skin=dark] .gc-faq p{color:#a9a9b0}
+[data-skin=dark] .gc-foot{color:var(--k-dim)}
+[data-skin=dark] .gc-foot a{color:#c9c9ce}
+
+@media (min-width:760px){
+  .k-picker{grid-template-columns:172px 1fr;align-items:center;gap:34px;justify-items:stretch}
+  .k-dev{width:100%}
+  .k-fields>.gc-plats{margin-top:0}
+  [data-skin=dark] .gc-card{padding:38px 36px}
+}
+@media (max-width:420px){
+  [data-skin=dark] .gc-card{padding:24px 18px}
+  [data-skin=dark] .gc-plat{padding:12px 10px;column-gap:9px}
+  [data-skin=dark] .gc-plat svg{width:21px;height:21px}
+  [data-skin=dark] .gc-plat b{font-size:.88rem}
+  [data-skin=dark] .gc-plat small{font-size:.68rem}
+}
+{% endif %}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;
     transition-duration:.001ms !important;scroll-behavior:auto !important}
-  .gc-anim,.gc-reveal{opacity:1;transform:none}
+  .gc-anim,.gc-reveal{opacity:1;transform:none}{% if dark %}
+  .k-sheen,.k-sweep{display:none}
+  .k-bar{transform:scaleX(1)}{% endif %}
 }
 </style>
 </head>
@@ -271,13 +453,19 @@ img{max-width:100%;display:block}
     <div class="gc-splash-word"><span>S</span><span>u</span><span>u</span></div>
 {% endif %}
     <p class="gc-splash-tag">{{ c.splash.tagline }}</p>
-  </div>
+{% if dark %}    <i class="k-bar"></i>
+    <span class="k-sheen"></span>
+{% endif %}  </div>
   <div class="gc-splash-hint">{{ c.splash.skip }}<i></i></div>
 </div>
 
 <header class="gc-hero">
-  <div class="gc-aurora"><b></b><b></b><b></b></div>
+{% if dark %}  <div class="k-light" aria-hidden="true">
+    <span class="k-beam"></span><span class="k-spot" id="gcSpot"></span><span class="k-horizon"></span>
+  </div>
+{% else %}  <div class="gc-aurora"><b></b><b></b><b></b></div>
   <div class="gc-bubbles" id="gcBubbles" aria-hidden="true"></div>
+{% endif %}
 
   <div class="gc-hero-in">
     <span class="gc-badge gc-anim"><b></b>{{ c.hero.badge }}</span>
@@ -302,10 +490,10 @@ img{max-width:100%;display:block}
   </div>
 
   <div class="gc-scroll gc-anim">{{ c.hero.scroll }}<i></i></div>
-  <div class="gc-wave" aria-hidden="true">
+{% if not dark %}  <div class="gc-wave" aria-hidden="true">
     <svg viewBox="0 0 2880 70" preserveAspectRatio="none"><path fill="#f5f9fd" d="M0 40c240-40 480-40 720 0s480 40 720 0 480-40 720 0 480 40 720 0v30H0z"/></svg>
   </div>
-</header>
+{% endif %}</header>
 
 <main class="gc-main">
   <section class="gc-card gc-reveal" id="gcFormCard">
@@ -313,7 +501,33 @@ img{max-width:100%;display:block}
 
     <form id="gcForm" novalidate>
       <span class="gc-label">{{ c.form.platformQ }}</span>
-      <div class="gc-plats">
+{% if device %}      <div class="k-picker">
+        <div class="k-dev" id="gcDevice" data-face="ios">
+          <span class="k-glow" aria-hidden="true"></span>
+          <div class="k-dev-in">
+            <div class="k-face">
+              <div class="k-phone k-ios">
+                <span class="k-side k-s1"></span><span class="k-side k-s2"></span><span class="k-side k-s3"></span>
+                <div class="k-screen">
+                  <img src="{{ device.ios }}" alt="Suu — {{ c.stock.ios }}" width="1200" height="2601" loading="lazy" decoding="async">
+                  <span class="k-island"></span><span class="k-home"></span><span class="k-sweep"></span>
+                </div>
+              </div>
+            </div>
+            <div class="k-face k-face-and">
+              <div class="k-phone k-and">
+                <span class="k-side k-a1"></span><span class="k-side k-a2"></span>
+                <div class="k-screen">
+                  <img src="{{ device.android }}" alt="Suu — {{ c.stock.android }}" width="720" height="1640" loading="lazy" decoding="async">
+                  <span class="k-punch"></span><span class="k-sweep"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="k-cap"><span data-cap="ios">{{ c.stock.ios }} · App Store</span><span data-cap="android">{{ c.stock.android }} · Google Play</span></p>
+        </div>
+        <div class="k-fields">
+{% endif %}      <div class="gc-plats">
         <label class="gc-plat" data-plat="ios">
           <input type="radio" name="platform" value="ios">
           <svg viewBox="0 0 24 24"><path d="M17.05 12.5c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.15-2.8.85-3.5.85s-1.85-.83-3-.8c-1.55.02-3 .9-3.8 2.28-1.62 2.8-.42 6.95 1.16 9.22.77 1.1 1.7 2.35 2.9 2.3 1.16-.05 1.6-.75 3-.75s1.8.75 3.03.72c1.25-.02 2.04-1.12 2.8-2.23.88-1.28 1.25-2.52 1.27-2.58-.03-.02-2.44-.94-2.46-3.72zM14.9 5.1c.63-.77 1.06-1.83.94-2.9-.9.04-2 .6-2.66 1.37-.58.67-1.1 1.76-.96 2.8 1.02.08 2.05-.5 2.68-1.27z"/></svg>
@@ -330,6 +544,9 @@ img{max-width:100%;display:block}
       <input class="gc-input" type="email" id="gcEmail" name="email" autocomplete="email"
              inputmode="email" placeholder="{{ c.form.emailPh }}" required>
       <p class="gc-hint">{{ c.form.emailHint }}</p>
+{% if device %}        </div>
+      </div>
+{% endif %}
 
       <input class="gc-hp" type="text" name="website" id="gcHp" tabindex="-1" autocomplete="off" aria-hidden="true">
 
@@ -358,7 +575,8 @@ img{max-width:100%;display:block}
 
     <div class="gc-code">
       <b id="gcCodeText">— — —</b>
-      <button class="gc-copy" type="button" id="gcCopy">{{ c.result.copy }}</button>
+      <!-- c.result.copy YAZILMAZ: Jinja önce getattr'a bakar ve dict.copy metodunu basar. -->
+      <button class="gc-copy" type="button" id="gcCopy">{{ c.result["copy"] }}</button>
     </div>
 
     <a class="gc-redeem" id="gcRedeem" href="#" target="_blank" rel="noopener">
@@ -417,7 +635,7 @@ img{max-width:100%;display:block}
   } else {
     sessionStorage.setItem("suuGiftSplash", "1");
     document.body.style.overflow = "hidden";
-    setTimeout(closeSplash, 2400);
+    setTimeout(closeSplash, {% if dark %}2900{% else %}2400{% endif %});
     ["click", "touchstart", "wheel", "keydown"].forEach(function (e) {
       splash.addEventListener(e, closeSplash, { passive: true });
     });
@@ -429,7 +647,7 @@ img{max-width:100%;display:block}
   }
 
   /* ── kabarcıklar ── */
-  if (!reduced) {
+  if (!reduced && document.getElementById("gcBubbles")) {
     var bub = document.getElementById("gcBubbles"), html = "";
     for (var i = 0; i < 12; i++) {
       var size = 8 + Math.random() * 34;
@@ -440,7 +658,54 @@ img{max-width:100%;display:block}
     bub.innerHTML = html;
   }
 
-  /* ── kaydırınca beliren bölümler ── */
+{% if dark %}  /* ── telefon mockup'ı ──
+     Ziyaretçi kendi telefonunu hazır görsün diye yüz baştan cihaza göre ayarlanır;
+     seçim (mobilde) veya üzerine gelme (masaüstünde) değiştikçe 3B döner. */
+  var dev = document.getElementById("gcDevice");
+  var detected = /android/i.test(navigator.userAgent || "") ? "android" : "ios";
+  var flipTimer = null;
+
+  function setFace(face) {
+    if (!dev || !face || dev.dataset.face === face) return;
+    dev.dataset.face = face;
+    if (reduced) return;
+    dev.classList.remove("flip");
+    void dev.offsetWidth;                       // parlama animasyonunu yeniden tetikler
+    clearTimeout(flipTimer);
+    dev.classList.add("flip");
+    flipTimer = setTimeout(function () { dev.classList.remove("flip"); }, 1000);
+  }
+
+  if (dev) {
+    dev.dataset.face = detected;
+    // Dokunmatikte mouseenter dokunuşla da tetiklenir; önizleme yalnızca imleçli cihazlarda.
+    if (window.matchMedia("(hover:hover)").matches) {
+      document.querySelectorAll(".gc-plat").forEach(function (el) {
+        el.addEventListener("mouseenter", function () {
+          if (!el.classList.contains("off")) setFace(el.dataset.plat);
+        });
+        el.addEventListener("mouseleave", function () { setFace(chosen || detected); });
+      });
+    }
+  }
+
+  /* ── ışık imleci izler ── */
+  var spot = document.getElementById("gcSpot");
+  if (spot && !reduced && window.matchMedia("(hover:hover)").matches) {
+    var raf = 0, mx = 0, my = 0;
+    window.addEventListener("pointermove", function (e) {
+      mx = (e.clientX / window.innerWidth - 0.5) * 80;
+      my = (e.clientY / window.innerHeight - 0.5) * 44;
+      if (raf) return;
+      raf = requestAnimationFrame(function () {
+        raf = 0;
+        spot.style.setProperty("--px", mx.toFixed(1) + "px");
+        spot.style.setProperty("--py", my.toFixed(1) + "px");
+      });
+    }, { passive: true });
+  }
+
+{% endif %}  /* ── kaydırınca beliren bölümler ── */
   var io = new IntersectionObserver(function (entries) {
     entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
   }, { threshold: 0.12 });
@@ -463,7 +728,8 @@ img{max-width:100%;display:block}
     el.classList.add("on");
     el.querySelector("input").checked = true;
     chosen = el.dataset.plat;
-    hideAlert();
+{% if dark %}    setFace(chosen);
+{% endif %}    hideAlert();
   }
 
   document.querySelectorAll(".gc-plat").forEach(function (el) {
@@ -514,6 +780,7 @@ img{max-width:100%;display:block}
     tsWidget = window.turnstile.render("#gcTurnstile", {
       sitekey: {{ turnstile_key | tojson }},
       language: CFG.lang,
+      theme: {% if dark %}"dark"{% else %}"light"{% endif %},
       callback: function (t) { tsToken = t; },
       "expired-callback": function () { tsToken = ""; },
       "error-callback": function () { tsToken = ""; }
