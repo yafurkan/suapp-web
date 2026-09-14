@@ -47,7 +47,7 @@ Sohbet ederek su ekleme, içecek kaydetme, öğün oluşturma, egzersiz ekleme, 
 ### Platform
 - **iOS:** Apple Health, **Siri** komutları, **Dynamic Island**, **Live Activities**, widget'lar
 - **Android:** Google Health Connect, widget'lar
-- **Apple Watch:** yakında — bugün Watch verisi Apple Health üzerinden Suu'ya akıyor ve su hedefini güncelliyor
+- **Apple Watch:** yayında — saatten su ekleme, sesle öğün kaydı (analiz iPhone'da), saatin GPS'i ve canlı nabızla antrenman, Hareket/Beslenme halkaları; Watch antrenmanları Apple Health üzerinden su hedefini de güncelliyor
 
 ### Sosyal & Oyunlaştırma
 - Arkadaş ligleri (haftalık, 4 kişiye kadar, iOS + Android çapraz platform)

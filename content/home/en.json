@@ -306,7 +306,7 @@
     "col_feature": "Feature",
     "yes": "✓",
     "soon": "Coming soon",
-    "watch_note": "Apple Watch data already flows into Suu through Apple Health today and updates your water goal — <a href=\"blog/en/apple-watch-water-tracking.html\">here's how to set it up</a>.",
+    "watch_note": "Suu's Apple Watch app is live: log water and meals by voice from your wrist and record GPS workouts on the watch — <a href=\"blog/en/apple-watch-water-tracking.html\">see how it works</a>.",
     "rows": [
       {
         "label": "Photo calorie analysis",
@@ -365,7 +365,7 @@
       },
       {
         "label": "Apple Watch app",
-        "ios": "soon",
+        "ios": "yes",
         "android": "no"
       }
     ]
@@ -383,7 +383,7 @@
     "disclosure": "This table was prepared by the Suu team. Competitor features reflect publicly available information as of 2026 and may change. Every app is strong somewhere — we note that below too.",
     "verdict_head": "Verdict",
     "rivals_label": "Where the competitors are stronger:",
-    "rivals": "MyFitnessPal has the widest food database in the category; you're more likely to find a branded product by barcode there. Yazio's recipe and diet plan library is strong. WaterMinder ships an Apple Watch app today, while Suu's is still on the way.",
+    "rivals": "MyFitnessPal has the widest food database in the category; you're more likely to find a branded product by barcode there. Yazio's recipe and diet plan library is strong. WaterMinder's Apple Watch experience has had years to mature; Suu's Watch app brings water, voice meal logging and GPS workouts together on the same wrist.",
     "suu_label": "Where Suu pulls ahead:",
     "suu_edge": "None of these three run water, calories and exercise as a <em>connected</em> system. In Suu the run you log raises your water goal, the meal you eat triggers a digestion-water calculation, and the real hydration contribution of your coffee is subtracted. If you'd rather use one app than three — and hydration genuinely matters to you — Suu is the clear pick.",
     "links": "<a href=\"blog/en/best-calorie-counting-app.html\">Detailed 5-app comparison →</a> · <a href=\"blog/en/suu-vs-myfitnesspal.html\">Suu vs MyFitnessPal →</a> · <a href=\"blog/en/water-calorie-exercise-one-app.html\">Water + calories + exercise in one app →</a>",
@@ -561,8 +561,8 @@
       },
       {
         "label": "Apple Watch app",
-        "suu": "Coming soon",
-        "suu_class": "soon",
+        "suu": "✓ Water · meals · GPS workouts",
+        "suu_class": "yes",
         "others": [
           {
             "text": "✓",
@@ -705,7 +705,7 @@
       },
       {
         "q": "Does Suu have an Apple Watch app?",
-        "a": "Suu does not have its own Apple Watch app yet — it's coming soon. Today the workouts, steps and active energy your Apple Watch records flow into Suu through Apple Health and raise your water goal automatically. For hands-free logging from your wrist you can use the Siri command.",
+        "a": "Yes. Suu's Apple Watch app is live: add water from your wrist, log a meal by voice (the analysis is completed in Suu on iPhone), record walks, runs, hikes and rides with the watch's GPS and live heart rate, and check your Move and Nutrition rings. Water and workout logging work on the watch even when your iPhone isn't nearby, and everything syncs back to Suu.",
         "link": {
           "href": "blog/en/apple-watch-water-tracking.html",
           "label": "Setup guide"

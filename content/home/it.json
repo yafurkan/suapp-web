@@ -307,7 +307,7 @@
     "col_feature": "Funzione",
     "yes": "✓",
     "soon": "Presto",
-    "watch_note": "I dati di Apple Watch già oggi arrivano in Suu tramite Apple Health e aggiornano il tuo obiettivo d'acqua — <a href=\"blog/en/apple-watch-water-tracking.html\">ecco come configurarlo</a>.",
+    "watch_note": "L'app Suu per Apple Watch è disponibile: aggiungi acqua e pasti a voce dal polso e registra gli allenamenti GPS sull'orologio — <a href=\"blog/en/apple-watch-water-tracking.html\">ecco come funziona</a>.",
     "rows": [
       {
         "label": "Analisi calorie dalla foto",
@@ -366,7 +366,7 @@
       },
       {
         "label": "App per Apple Watch",
-        "ios": "soon",
+        "ios": "yes",
         "android": "no"
       }
     ]
@@ -384,7 +384,7 @@
     "disclosure": "Questa tabella è stata preparata dal team di Suu. Le funzioni dei concorrenti riflettono informazioni pubblicamente disponibili al 2026 e possono cambiare. Ogni app ha i suoi punti di forza — li indichiamo anche qui sotto.",
     "verdict_head": "Verdetto",
     "rivals_label": "Dove i concorrenti sono più forti:",
-    "rivals": "MyFitnessPal ha il database alimentare più ampio della categoria; trovare un prodotto di marca con il codice a barre è più probabile lì. Yazio ha una libreria di ricette e piani alimentari molto solida. WaterMinder oggi ha un'app per Apple Watch, quella di Suu è ancora in arrivo.",
+    "rivals": "MyFitnessPal ha il database alimentare più ampio della categoria; trovare un prodotto di marca con il codice a barre è più probabile lì. Yazio ha una libreria di ricette e piani alimentari molto solida. L'esperienza di WaterMinder su Apple Watch è matura da anni; l'app Watch di Suu riunisce acqua, pasti a voce e allenamenti GPS sullo stesso polso.",
     "suu_label": "Dove Suu è avanti:",
     "suu_edge": "Nessuna di queste tre app fa funzionare acqua, calorie ed esercizio come un sistema <em>collegato</em>. In Suu la corsa che registri alza l'obiettivo d'acqua, il pasto attiva il calcolo dell'acqua per la digestione e il contributo reale del caffè all'idratazione viene sottratto. Se preferisci un'app sola invece di tre — e l'idratazione per te conta davvero — Suu è la scelta più chiara.",
     "links": "<a href=\"blog/en/best-calorie-counting-app.html\">Confronto dettagliato tra 5 app →</a> · <a href=\"blog/en/suu-vs-myfitnesspal.html\">Suu vs MyFitnessPal →</a> · <a href=\"blog/en/water-calorie-exercise-one-app.html\">Acqua + calorie + esercizio in un'app →</a>",
@@ -562,8 +562,8 @@
       },
       {
         "label": "App per Apple Watch",
-        "suu": "Presto",
-        "suu_class": "soon",
+        "suu": "✓ Acqua · pasti · allenamenti GPS",
+        "suu_class": "yes",
         "others": [
           {
             "text": "✓",
@@ -706,7 +706,7 @@
       },
       {
         "q": "Suu ha un'app per Apple Watch?",
-        "a": "Suu non ha ancora un'app dedicata per Apple Watch — arriverà presto. Oggi allenamenti, passi ed energia attiva registrati dal tuo Apple Watch arrivano in Suu tramite Apple Health e alzano automaticamente il tuo obiettivo d'acqua. Per registrare dal polso senza mani puoi usare il comando Siri.",
+        "a": "Sì. L'app Suu per Apple Watch è disponibile: aggiungi acqua dal polso, registra un pasto a voce (l'analisi si completa in Suu su iPhone), registra camminate, corse, escursioni e pedalate con il GPS dell'orologio e la frequenza cardiaca in tempo reale, e controlla gli anelli Movimento e Nutrizione. La registrazione di acqua e allenamenti funziona sull'orologio anche senza l'iPhone vicino; poi tutto si sincronizza con Suu.",
         "link": {
           "href": "blog/en/apple-watch-water-tracking.html",
           "label": "Guida alla configurazione"

@@ -388,7 +388,7 @@
           "<strong>Choose Nike Run Club</strong> if you run and want free guided coaching.",
           "<strong>Choose Samsung Health or Apple Fitness</strong> if you are locked into a Galaxy Watch or Apple Watch and want native integration above all.",
           "<strong>Choose Suu</strong> if the workout is part of a body-composition goal rather than a performance goal — if you want the same app to count what you burned, what you ate, and what you need to drink. It is the only app in this comparison where finishing a run changes your hydration target automatically, and it tracks around 50 activities alongside photo-based calorie logging.",
-          "Honest limitation: Suu is not trying to beat Strava at segments or social riding, and it does not have a dedicated Apple Watch app yet."
+          "Honest limitation: Suu is not trying to beat Strava at segments or social riding, and its Apple Watch app now records walks, runs, hikes and rides with GPS and live heart rate."
         ]
       },
       "cta": {
@@ -841,7 +841,7 @@
           "<strong>Nike Run Club'ı seç</strong> — koşuyorsan ve ücretsiz rehberli antrenman istiyorsan.",
           "<strong>Samsung Health veya Apple Fitness'ı seç</strong> — Galaxy Watch veya Apple Watch ekosistemine bağlıysan ve her şeyin üstünde yerel entegrasyon istiyorsan.",
           "<strong>Suu'yu seç</strong> — antrenman senin için performans hedefinin değil vücut kompozisyonu hedefinin parçasıysa; yaktığını, yediğini ve içmen gerekeni aynı uygulamanın saymasını istiyorsan. Bu karşılaştırmada koşuyu bitirmenin su hedefini otomatik değiştirdiği tek uygulama bu ve yaklaşık 50 aktiviteyi fotoğraflı kalori takibiyle birlikte tutuyor.",
-          "Dürüst sınır: Suu segment ve sosyal bisiklette Strava'yı geçmeye çalışmıyor ve henüz adanmış bir Apple Watch uygulaması yok."
+          "Dürüst sınır: Suu segment ve sosyal bisiklette Strava'yı geçmeye çalışmıyor; Apple Watch uygulaması ise yürüyüş, koşu, doğa yürüyüşü ve bisikleti GPS ve canlı nabızla kaydediyor."
         ]
       },
       "cta": {
@@ -1808,8 +1808,8 @@
                 "cls": "yes"
               },
               {
-                "text": "In arrivo",
-                "cls": "soon"
+                "text": "✓",
+                "cls": "yes"
               }
             ]
           },
@@ -2324,8 +2324,8 @@
                 "cls": "yes"
               },
               {
-                "text": "В разработке",
-                "cls": "soon"
+                "text": "✓",
+                "cls": "yes"
               }
             ]
           },
@@ -2864,8 +2864,8 @@
                 "cls": "yes"
               },
               {
-                "text": "قيد التطوير",
-                "cls": "soon"
+                "text": "✓",
+                "cls": "yes"
               }
             ]
           },
@@ -3379,8 +3379,8 @@
                 "cls": "yes"
               },
               {
-                "text": "У розробці",
-                "cls": "soon"
+                "text": "✓",
+                "cls": "yes"
               }
             ]
           },
@@ -3537,5 +3537,5 @@
       ]
     }
   },
-  "modified": "2026-08-24"
+  "modified": "2026-09-14"
 }

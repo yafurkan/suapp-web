@@ -107,6 +107,26 @@ def build_rules(facts: dict) -> list[dict]:
                 "fix": "mevcut bir özellikmiş gibi anlatılmadığından emin ol",
             },
         ]
+    elif watch == "yes":
+        # Watch uygulaması yayında: "yakında / geliştiriliyor / henüz yok" iddiaları artık yanlış.
+        rules += [
+            {
+                "id": "apple-watch-stale-soon",
+                "severity": ERROR,
+                "pattern": re.compile(
+                    r"(?i)(?:apple\s*watch|watchos)[^.<\n]{0,90}"
+                    r"(?:coming\s*soon|in\s+development|on\s+the\s+way|not\s+(?:yet\s+)?released|no\s+(?:dedicated\s+)?(?:apple\s*)?watch\s+app\s+yet|"
+                    r"yakında|yolda|geliştiriliyor|henüz\s+(?:yok|adanmış|özel)|"
+                    r"in\s+arbeit|noch\s+aussteht|noch\s+keine|demnächst|in\s+arrivo|deve\s+ancora|non\s+ha\s+ancora|"
+                    r"в\s+разработке|пока\s+нет|скоро\s+выйдет|قيد\s+التطوير|لم\s+يصدر|قريبًا|"
+                    r"у\s+розробці|поки\s+немає|ще\s+попереду|незабаром|जल्द|अभी\s+नहीं)"
+                    r"|(?:coming\s*soon|in\s+development|yakında|in\s+arbeit|in\s+arrivo|в\s+разработке|قيد\s+التطوير|у\s+розробці)"
+                    r"[^.<\n]{0,60}(?:apple\s*watch|watchos)"
+                ),
+                "message": "Apple Watch uygulaması yayında ama metin 'yakında / geliştiriliyor' diyor",
+                "fix": "Apple Watch uygulaması mevcut — su, sesli öğün, GPS'li antrenman",
+            },
+        ]
 
     return rules
 

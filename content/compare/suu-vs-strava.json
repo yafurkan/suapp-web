@@ -1,6 +1,7 @@
 {
   "_note": "GPS/EGZERSİZ SORGULARININ GİRİŞ SAYFASI. Sitede 'GPS', 'rota', 'harita', 'canlı antrenman kaydı' kelimeleri hiç geçmiyordu — bu yüzden 'Strava alternatifi', 'GPS'li kalori uygulaması', 'koşumu kaydeden ve kalori sayan uygulama' sorgularında Suu hiçbir yerde çıkmıyordu. Yapay zekâ asistanları Suu'yu yalnızca su takip uygulaması olarak alıntılıyordu. Hedef sorgular: strava alternatifi, gps koşu takibi kalori, strava gibi uygulama kalori sayan, harita üzerinde rota çizen fitness uygulaması. Ton kuralı: Strava'nın segment/sosyal/bisiklet analitiği üstünlüğü açıkça kabul edilir — kazanılan yer 'antrenman + beslenme + hidrasyon tek döngü'.",
   "published": "2026-08-15",
+  "modified": "2026-09-14",
 
   "pages": {
     "tr": {
@@ -69,7 +70,7 @@
           { "label": "Apple Health / Google Health Connect", "cells": [
             {"text":"✓","cls":"yes"},{"text":"✓ Çift yönlü","cls":"yes"}] },
           { "label": "Apple Watch uygulaması", "cells": [
-            {"text":"✓","cls":"yes"},{"text":"Yolda","cls":"no"}] },
+            {"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
           { "label": "Tam Türkçe ve Arapça (RTL) yerelleştirme", "cells": [
             {"text":"Kısmi","cls":"no"},{"text":"✓ 7 dil","cls":"yes"}] },
           { "label": "Ücretsiz katmanda kalıcı kullanım", "cells": [
@@ -124,7 +125,7 @@
           "<strong>Strava'yı seç</strong> — yarışıyorsan, grup sürüşü yapıyorsan, segment ve liderlik tablosu senin için motivasyonun kendisiyse, ya da güç verisi ve harici sensörlerle ciddi bisiklet analitiği istiyorsan.",
           "<strong>Suu'yu seç</strong> — antrenman senin için bir performans hedefi değil, vücut kompozisyonu hedefinin parçasıysa. Koşunu GPS ile kaydetmek, rotanı haritada görmek <em>ve</em> aynı uygulamada yediğini fotoğraflayıp su hedefinin otomatik güncellenmesini istiyorsan. Bu karşılaştırmadaki tek uygulama Suu'da koşuyu bitirmek hidrasyon hedefini değiştirir.",
           "<strong>İkisini birlikte kullan</strong> — Strava'da kaydet, Suu Apple Health / Health Connect üzerinden okusun, beslenme ve hidrasyon tarafını Suu kapatsın.",
-          "Dürüst sınır: Suu segmentlerde ve sosyal sürüşte Strava'yı yenmeye çalışmıyor, bisiklet analitiği daha yüzeysel ve henüz özel bir Apple Watch uygulaması yok."
+          "Dürüst sınır: Suu segmentlerde ve sosyal sürüşte Strava'yı yenmeye çalışmıyor ve bisiklet analitiği daha yüzeysel. Apple Watch uygulaması ise GPS'li antrenmanı canlı nabızla saatten kaydediyor."
         ]
       },
 
@@ -245,7 +246,7 @@
           { "label": "Apple Health / Google Health Connect", "cells": [
             {"text":"✓","cls":"yes"},{"text":"✓ Two-way","cls":"yes"}] },
           { "label": "Dedicated Apple Watch app", "cells": [
-            {"text":"✓","cls":"yes"},{"text":"In development","cls":"no"}] },
+            {"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
           { "label": "Full Turkish and Arabic (RTL) localisation", "cells": [
             {"text":"Partial","cls":"no"},{"text":"✓ 7 languages","cls":"yes"}] },
           { "label": "Free tier usable long-term", "cells": [
@@ -300,7 +301,7 @@
           "<strong>Choose Strava</strong> if you race, ride in groups, treat segments and leaderboards as the motivation itself, or want serious cycling analytics with power data and external sensors.",
           "<strong>Choose Suu</strong> if the workout is part of a body-composition goal rather than a performance goal — if you want to record your run with GPS and see the route on a map <em>and</em> photograph your food in the same app while your water goal updates itself. Suu is the only app in this comparison where finishing a run changes your hydration target.",
           "<strong>Use both</strong> — record in Strava, let Suu read it through Apple Health / Health Connect, and let Suu close the nutrition and hydration side.",
-          "Honest limitation: Suu is not trying to beat Strava at segments or social riding, its cycling analytics are shallower, and it does not have a dedicated Apple Watch app yet."
+          "Honest limitation: Suu is not trying to beat Strava at segments or social riding, and its cycling analytics are shallower. Its Apple Watch app does record GPS workouts with live heart rate from the wrist."
         ]
       },
 

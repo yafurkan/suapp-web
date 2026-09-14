@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ÜRETİLMİŞ DOSYA — elle düzenlemeyin.
+         Kaynak: content/compare/should-you-build-a-tracking-app.json + content/compare/_template.html.j2
+         Yeniden üret: python3 scripts/build-compare.py --apply -->
+
+    <title>Стоит ли делать приложение для подсчёта калорий или воды в 2026? Реальность рынка | Suu</title>
+    <meta name="description" content="Думаете создать счётчик калорий, трекер воды или приложение для тренировок? Разработчик, который сделал такое, показывает рынок 2026: MyFitnessPal с 200+ млн пользователей, покупка Cal AI, Strava за $2,2 млрд и бесплатные приложения платформ.">
+    <meta name="keywords" content="создать приложение для подсчёта калорий, идея приложения трекер воды, фитнес стартап 2026, рынок приложений калорий перенасыщен, разработка приложения для здоровья, конкуренция приложений калорий, рынок приложений напоминания пить воду, инди разработчик приложение здоровья">
+    <meta name="apple-itunes-app" content="app-id=6757619920">
+
+    <link rel="canonical" href="https://suuapp.com/blog/ru/stoit-li-sozdavat-prilozhenie-treker.html">
+    <!-- Hreflang cluster (auto-injected) -->
+    <link rel="alternate" hreflang="tr" href="https://suuapp.com/blog/takip-uygulamasi-yapmak-mantikli-mi.html">
+    <link rel="alternate" hreflang="en" href="https://suuapp.com/blog/en/should-you-build-a-tracking-app.html">
+    <link rel="alternate" hreflang="ar" href="https://suuapp.com/blog/ar/hal-yastahiq-bina-tatbiq-tatabbu.html">
+    <link rel="alternate" hreflang="ru" href="https://suuapp.com/blog/ru/stoit-li-sozdavat-prilozhenie-treker.html">
+    <link rel="alternate" hreflang="de" href="https://suuapp.com/blog/de/lohnt-sich-eine-tracking-app.html">
+    <link rel="alternate" hreflang="it" href="https://suuapp.com/blog/it/conviene-creare-app-di-tracking.html">
+    <link rel="alternate" hreflang="uk" href="https://suuapp.com/blog/uk/chy-varto-stvoryuvaty-zastosunok-treker.html">
+    <link rel="alternate" hreflang="x-default" href="https://suuapp.com/blog/en/should-you-build-a-tracking-app.html">
+
+
+    <meta property="og:title" content="Стоит ли создавать приложение-трекер в 2026?">
+    <meta property="og:description" content="Честная карта рынка от разработчика, который сделал такое приложение: кто уже владеет трекингом воды, калорий и тренировок.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://suuapp.com/blog/ru/stoit-li-sozdavat-prilozhenie-treker.html">
+    <meta property="og:image" content="https://suuapp.com/assets/og-image.png">
+    <meta property="og:site_name" content="Suu">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="article:published_time" content="2026-09-14">
+    <meta property="article:author" content="Furkan Mert Fındıklı">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SuuTakip">
+    <meta name="twitter:title" content="Стоит ли создавать приложение-трекер в 2026?">
+    <meta name="twitter:description" content="Честная карта рынка от разработчика, который сделал такое приложение: кто уже владеет трекингом воды, калорий и тренировок.">
+    <meta name="twitter:image" content="https://suuapp.com/assets/og-image.png">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/donation-widget.css">
+    <link rel="stylesheet" href="/assets/css/suu.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://suuapp.com/#organization",
+      "name": "Suu",
+      "url": "https://suuapp.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://suuapp.com/assets/favicon-512.png"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://suuapp.com/#furkan",
+      "name": "Furkan Mert Fındıklı",
+      "url": "https://suuapp.com/yazarlar/furkan-mert.html",
+      "jobTitle": "Kurucu \u0026 Geliştirici",
+      "worksFor": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/furkanfindikli/"
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://suuapp.com/blog/ru/stoit-li-sozdavat-prilozhenie-treker.html#article",
+      "headline": "Стоит ли создавать приложение-трекер воды, калорий или тренировок в 2026 году? Честный ответ инди-разработчика",
+      "description": "Думаете создать счётчик калорий, трекер воды или приложение для тренировок? Разработчик, который сделал такое, показывает рынок 2026: MyFitnessPal с 200+ млн пользователей, покупка Cal AI, Strava за $2,2 млрд и бесплатные приложения платформ.",
+      "image": "https://suuapp.com/assets/og-image.png",
+      "datePublished": "2026-09-14",
+      "dateModified": "2026-09-14",
+      "inLanguage": "ru",
+      "mainEntityOfPage": "https://suuapp.com/blog/ru/stoit-li-sozdavat-prilozhenie-treker.html",
+      "author": {
+        "@id": "https://suuapp.com/#furkan"
+      },
+      "publisher": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "about": {
+        "@id": "https://suuapp.com/#suuapp-ios"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".answer-box",
+          "h1",
+          "h2",
+          ".verdict p"
+        ]
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://suuapp.com/blog/ru/stoit-li-sozdavat-prilozhenie-treker.html#itemlist",
+      "name": "Кто уже владеет каждой категорией трекинга",
+      "inLanguage": "ru",
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "numberOfItems": 4,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "MyFitnessPal",
+            "applicationCategory": "HealthApplication"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Strava",
+            "applicationCategory": "HealthApplication"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "WaterMinder",
+            "applicationCategory": "HealthApplication"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "SoftwareApplication",
+            "@id": "https://suuapp.com/#suuapp-ios",
+            "name": "Suu"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://suuapp.com/blog/ru/stoit-li-sozdavat-prilozhenie-treker.html#faq",
+      "inLanguage": "ru",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Перенасыщен ли рынок приложений для подсчёта калорий в 2026 году?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "На уровне универсальных приложений — да. MyFitnessPal обслуживает более 200 миллионов пользователей и купил Cal AI (15+ млн загрузок) в сделке, закрытой в декабре 2025 года. Yazio, Lifesum, Cronometer и Lose It! покрывают большинство остальных потребностей, а в Samsung Health есть бесплатная запись еды. Новому приложению для калорий нужна явно недообслуженная аудитория."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Напоминалка пить воду — всё ещё хорошая идея для приложения?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Как отдельный продукт — редко. WaterMinder, Waterllama, Plant Nanny и Hydro Coach — зрелые приложения, в Samsung Health есть трекинг воды с дневной целью, а приложения «всё в одном» вроде Suu учитывают 91 напиток и цель, которая меняется от тренировок и еды. Пункт 4.3(b) правил Apple тоже предупреждает о приложениях, неотличимых от уже широко доступных."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какие приложения уже объединяют трекинг воды, калорий и тренировок?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Suu объединяет все три в одном приложении, где они обновляют друг друга: запись еды по фото, голосом или текстом, трекинг воды по 91 напитку и живые GPS-тренировки примерно для 50 видов активности, с синхронизацией с Apple Health и Health Connect. MyFitnessPal и Samsung Health тоже записывают еду, воду и тренировки в одном месте, с другими сильными сторонами."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Насколько сложно создать приложение для подсчёта калорий с распознаванием фото на ИИ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Вызвать модель компьютерного зрения — самое простое. Сложное — точность данных о питании, стоимость ИИ за каждый запрос, законы о медицинских данных (GDPR статья 9, KVKK), правила Apple для HealthKit, двусторонняя синхронизация с Apple Health и Health Connect и локализация, а затем — отвоевать пользователей у MyFitnessPal, которому уже принадлежит Cal AI."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Может ли инди-разработчик ещё конкурировать в категории «Здоровье и фитнес»?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, но не с обычным трекером. Suu делает инди-разработчик, и он конкурирует за счёт связки воды, калорий и тренировок, а не пытаясь обойти MyFitnessPal или Strava на их поле. Выручка сильно сконцентрирована: по данным RevenueCat, по итогам первого года топ-5% новых приложений зарабатывают более чем в 400 раз больше нижних 25%."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что создать вместо очередного приложения-трекера?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Начинайте с аудитории, а не с функции: с группы людей с конкретной проблемой, которую универсальные трекеры и приложения платформ решают плохо и до которой вы уже можете дотянуться. Если идея — это MyFitnessPal, Strava или WaterMinder, только проще или с ИИ, такое приложение на рынке уже есть."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://suuapp.com/blog/ru/stoit-li-sozdavat-prilozhenie-treker.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Suu",
+          "item": "https://suuapp.com/hosgeldiniz-ru.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://suuapp.com/blog-ru.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Стоит ли создавать приложение-трекер воды, калорий или тренировок в 2026 году? Честный ответ инди-разработчика",
+          "item": "https://suuapp.com/blog/ru/stoit-li-sozdavat-prilozhenie-treker.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+
+    <script src="/assets/js/analytics.js" defer></script>
+    <script src="/lang-switcher.js?v=3" defer></script>
+    <script src="/donation-widget.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+
+<nav class="nav">
+    <div class="container nav__inner">
+        <a href="/hosgeldiniz-ru.html" class="nav__logo">💧 Suu</a>
+        <ul class="nav__links">
+            <li><a href="/blog-ru.html">Блог</a></li>
+            <li><a href="/hosgeldiniz-ru.html#karsilastirma">Сравнение</a></li>
+            <li><a href="/hosgeldiniz-ru.html#fiyat">Цены</a></li>
+        </ul>
+        <div class="nav__actions">
+            <a href="/app?src=compare-nav" class="btn btn--primary" data-cta="nav"
+               style="min-height:40px;padding:var(--sp-2) var(--sp-5);font-size:var(--fs-sm)">Скачать бесплатно</a>
+        </div>
+    </div>
+</nav>
+
+<main id="main">
+
+<header class="section" style="padding-block-end:var(--sp-8)">
+    <div class="container container--narrow">
+        <nav class="breadcrumb small text-subtle" aria-label="Breadcrumb"
+             style="margin-block-end:var(--sp-4)">
+            <a href="/hosgeldiniz-ru.html">Suu</a>
+            <span aria-hidden="true"> › </span>
+            <a href="/blog-ru.html">Блог</a>
+            <span aria-hidden="true"> › </span>
+            <span aria-current="page">Стоит ли создавать приложение-трекер воды, калорий или тренировок в 2026 году? Честный ответ инди-разработчика</span>
+        </nav>
+        <span class="badge badge--new">🧭 Карта рынка для основателей 2026</span>
+        <h1 style="margin-block-start:var(--sp-4)">Стоит ли создавать приложение-трекер воды, калорий или тренировок в 2026 году? Честный ответ инди-разработчика</h1>
+        <p class="small text-subtle">Опубликовано: 14 сентября 2026 · Furkan Mert Fındıklı · 9 мин чтения</p>
+    </div>
+</header>
+
+<div class="container container--narrow stack--lg" style="padding-block-end:var(--sp-24)">
+
+    <!-- CEVAP-ÖNCE: alıntılanan blok burasıdır -->
+    <div class="answer-box">
+        <p><strong>Короткий ответ:</strong> Для большинства основателей — нет, если речь об универсальном приложении. Подсчёт калорий, трекинг воды и трекинг тренировок — три самых переполненных угла категории «Здоровье и фитнес». MyFitnessPal обслуживает более 200 миллионов пользователей и купил Cal AI — самое быстрорастущее приложение для подсчёта калорий по фото (сделка закрыта в декабре 2025). Strava привлекла инвестиции при оценке $2,2 млрд и более 150 миллионах зарегистрированных пользователей. Samsung Health бесплатно даёт запись еды, воды и тренировок. Даже идея «всё в одном» — вода, калории и GPS-тренировки в одном приложении, где они влияют друг на друга, — уже занята приложениями вроде Suu, который я разрабатываю с 2024 года. Новый трекер имеет смысл только для конкретной аудитории, которую все они обслуживают плохо.</p>
+    </div>
+
+    <div class="disclosure">Я Фуркан Мерт Фындыклы (Furkan Mert Fındıklı), инди-разработчик Suu, — то есть я участник этого рынка, а не нейтральный наблюдатель. Каждая цифра о других компаниях ниже ведёт на публичный источник (объявления компаний, TechCrunch, Crunchbase, RevenueCat, Apple). Там, где крупные приложения сильнее Suu, я говорю об этом прямо.</div>
+    <p>Раз в несколько недель кто-нибудь задаёт мне вариацию одного и того же вопроса: «Хочу сделать приложение-напоминалку пить воду» или «У меня идея ИИ-счётчика калорий — стоит ли?» Вопрос справедливый. Снаружи трекер выглядит просто: счётчик, цель, напоминание, может быть, график.</p>
+    <p>Насколько обманчива эта простота, я понял, когда сделал такое приложение сам. Suu начинался как трекер воды и вырос в приложение, где гидратация, калории и GPS-тренировки обновляют друг друга. По пути я упёрся в каждую стену, в которую упирается новичок в этой категории, — и видел, как крупные игроки становятся больше, а не меньше.</p>
+    <p>Поэтому здесь собрано, как рынок на самом деле выглядит в 2026 году, с источниками — и <strong>вопросы, на которые я хотел бы получить ответ до первой строчки кода</strong>.</p>
+
+    <section>
+        <h2>Кто уже владеет каждой категорией трекинга</h2>
+        <div class="table-scroll">
+            <table class="table">
+                <caption class="sr-only">Что уже предлагают устоявшиеся приложения и с чем придётся сравниться новому трекеру</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">С чем должно сравниться новое приложение</th>
+                        <th scope="col">MyFitnessPal</th>
+                        <th scope="col">Strava</th>
+                        <th scope="col">WaterMinder</th>
+                        <th scope="col" class="col-suu">Suu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Учёт калорий и БЖУ</td><td class="yes">✓ База из 20+ млн продуктов</td><td class="no">✗</td><td class="no">✗</td><td class="col-suu yes">✓ Фото, голос или текст</td></tr>
+                    <tr><td>Запись еды по фото с ИИ</td><td class="yes">✓ Meal Scan (Premium) · владеет Cal AI</td><td class="no">✗</td><td class="no">✗</td><td class="col-suu yes">✓ Premium</td></tr>
+                    <tr><td>Трекинг воды</td><td class="">Простой учёт воды</td><td class="no">✗</td><td class="yes">✓ Специализированное</td><td class="col-suu yes">✓ 91 напиток, адаптивная цель</td></tr>
+                    <tr><td>Живая GPS-тренировка с маршрутом на карте</td><td class="">Через подключённые приложения</td><td class="yes">✓ Лучшее в классе</td><td class="no">✗</td><td class="col-suu yes">✓ Около 50 видов активности</td></tr>
+                    <tr><td>Масштаб</td><td class="yes">200+ млн пользователей</td><td class="yes">150+ млн зарегистрированных</td><td class="">Не раскрывается</td><td class="col-suu yes">4,9★ в Google Play (2 847 оценок)</td></tr>
+                    <tr><td>Деньги за спиной</td><td class="">Покупка за $345 млн (2020)</td><td class="">Оценка $2,2 млрд (2025)</td><td class="">Не раскрывается</td><td class="col-suu ">Инди, в сторах с 2024 года</td></tr>
+                    <tr><td>Языки, на которые нужно локализовать</td><td class="">Много</td><td class="">Много</td><td class="">Несколько</td><td class="col-suu yes">7, включая арабский справа налево</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section>
+        <h2>1. В каждой категории уже есть победитель — и победители продолжают покупать</h2>
+        <p>Подсчёт калорий — самый наглядный пример. Francisco Partners купила MyFitnessPal за $345 млн в 2020 году, когда приложение уже обслуживало более 200 миллионов пользователей.<sup><a href="#ref1">1</a></sup> Когда новичку всё-таки удалось прорваться — Cal AI, созданное двумя школьными друзьями, меньше чем за два года перевалило за 15 миллионов загрузок и около $30 млн годовой выручки, — MyFitnessPal его купил.<sup><a href="#ref2">2</a></sup> Yazio, Lifesum и Cronometer держат свои ниши: планы питания, коучинг привычек, микронутриенты.</p>
+        <p>С тренировками та же история. В 2025 году Strava привлекла новое финансирование при оценке $2,2 млрд и более 150 миллионах зарегистрированных пользователей<sup><a href="#ref3">3</a></sup> и в том же году купила ИИ-приложения для тренировок Runna и The Breakaway. Свои приложения для тренировок есть у Apple, Samsung, Google и Nike.</p>
+        <p>Трекинг воды кажется лёгкой нишей, но именно здесь приложения взаимозаменяемы сильнее всего: WaterMinder, Waterllama, Plant Nanny и Hydro Coach годами шлифуют напоминания, виджеты и приложения для часов.</p>
+        <div class="callout"><p>Капитал тоже концентрируется. По данным Crunchbase, фитнес-стартапы привлекли в 2024 году $1,26 млрд — минимум за пять лет, против $6,27 млрд в 2021-м.<sup><a href="#ref3">3</a></sup> Меньше денег уходит похожим друг на друга приложениям, больше — немногим лидерам.</p></div>
+    </section>
+    <section>
+        <h2>2. «Добавим ИИ» больше не отличие</h2>
+        <p>В 2023 году ИИ-счётчик калорий по фото казался новинкой. В 2026-м у лидера категории есть собственная функция Meal Scan<sup><a href="#ref8">8</a></sup>, и ему же принадлежит самое успешное приложение, построенное вокруг фото. Когда функцией владеет лидер, она перестаёт быть вашим преимуществом. Suu умеет и фото, и голос — можно сфотографировать тарелку или просто сказать «тарелка чечевичного супа и стакан айрана», — но я не утверждаю, что одно это делает приложение особенным.</p>
+        <p>Каждый анализ фото ещё и стоит денег: один вызов облачной модели компьютерного зрения на приём пищи. Бесплатный тариф должен быть достаточно щедрым, чтобы конкурировать с приложениями с огромной бесплатной аудиторией, и достаточно строгим, чтобы не сжечь бюджет. Поэтому в Suu 3 бесплатных ИИ-анализа в день, а распознавание по фото — в Premium.</p>
+    </section>
+    <section>
+        <h2>3. Платформы раздают базовые функции бесплатно</h2>
+        <p>Ещё до того, как пользователь откроет магазин приложений, его телефон уже что-то отслеживает. Samsung Health позволяет владельцам Galaxy записывать, что они съели и сколько калорий получили, отслеживать воду относительно дневной цели и просматривать тренировки.<sup><a href="#ref7">7</a></sup> Apple Health хранит данные о воде и питании, Google Health Connect делает то же на Android. Новый трекер конкурирует не с «ничем», а с «достаточно хорошим и уже установленным».</p>
+        <p>Apple прямо высказывается о переполненных категориях. Пункт 4.3(b) правил проверки App Store гласит: «Не отправляйте приложения, неотличимые от того, что уже широко доступно». Для устоявшихся типов приложений, например фонариков и простых таймеров, Apple пишет, что не будет принимать новые заявки, если они не «предлагают существенно иной или улучшенный опыт».<sup><a href="#ref6">6</a></sup> Трекеров воды в этом списке нет, но обычный счётчик несёт ровно этот риск.</p>
+    </section>
+    <section>
+        <h2>4. Невидимая работа за «простым» трекером</h2>
+        <p>Эту часть я недооценил сильнее всего. Трекеру, которому люди доверяют своё здоровье, нужно гораздо больше, чем счётчик:</p>
+        <ul>
+            <li><strong>Данные о здоровье юридически особые.</strong> По GDPR (статья 9)<sup><a href="#ref9">9</a></sup> и турецкому KVKK данные о здоровье — особая категория с более строгими правилами. Пункт 5.1.3 правил Apple запрещает использовать данные HealthKit для рекламы и хранить персональную медицинскую информацию в iCloud.<sup><a href="#ref6">6</a></sup></li>
+            <li><strong>Двусторонняя синхронизация на двух платформах.</strong> Suu читает и записывает данные и в Apple HealthKit, и в Google Health Connect — две модели данных, два процесса разрешений, два набора крайних случаев.</li>
+            <li><strong>Наука о питании, а не просто цифры.</strong> Кофе увлажняет не так, как вода. Suu учитывает 91 напиток, а блюда с высоким содержанием белка и натрия повышают дневную потребность в воде.</li>
+            <li><strong>GPS-тренировки — отдельный продукт.</strong> Фоновые разрешения на геолокацию, старт/пауза/финиш, маршрут на карте, темп и высота — примерно для 50 видов активности.</li>
+            <li><strong>Локализация — это продукт, а не перевод.</strong> Suu работает на 7 языках, включая арабский с письмом справа налево.</li>
+            <li><strong>Приватность нужно закладывать с самого начала.</strong> В Suu голос превращается в текст на самом устройстве, а фото еды не сохраняются.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>5. Цифры после запуска беспощадны</h2>
+        <p>Запуск — самая лёгкая часть. Отчёт RevenueCat State of Subscription Apps 2025 показал: во всех категориях около 20% приложений достигают $1 000 выручки и лишь 5% — $10 000, а по итогам первого года топ-5% новых приложений зарабатывают более чем в 400 раз больше, чем нижние 25%.<sup><a href="#ref5">5</a></sup></p>
+        <p>«Здоровье и фитнес» хорошо конвертирует пробные периоды — медиана 39,9%<sup><a href="#ref5">5</a></sup>, — но это важно только когда пробные пользователи уже есть. В этой категории вы боретесь за те же установки, что и MyFitnessPal, Strava и Noom, который только в 2021 году привлёк $540 млн в раунде Series F.<sup><a href="#ref4">4</a></sup></p>
+    </section>
+    <section>
+        <h2>Чему меня научила разработка Suu</h2>
+        <p>Suu стал стоящим не потому, что я сделал лучший счётчик воды — отличные счётчики уже существуют. Стоящим его сделало соединение трёх вещей, которые люди обычно ведут в трёх разных приложениях: пробежка, записанная на карте, повышает цель по воде на этот день, солёная еда добавляет воду на пищеварение, а кофе засчитывается по реальному вкладу в гидратацию, а не как полный стакан воды. Эту связку трудно построить и трудно скопировать, потому что она работает, только когда все три опоры уже хороши.</p>
+        <p>Suu по-прежнему не лучший во всём. База продуктов MyFitnessPal намного больше, сегменты и социальные функции Strava вне конкуренции, а Cronometer отслеживает микронутриенты гораздо глубже. В этой честности и суть: если даже у приложения, которое уже объединяет все три, есть пробелы по сравнению с гигантами, новый обычный трекер стартует гораздо дальше позади.</p>
+    </section>
+
+    <section class="verdict">
+        <h2 style="margin-block-end:var(--sp-4)">Мой честный совет</h2>
+        <p><strong>Не создавайте</strong> универсальную напоминалку пить воду, счётчик калорий или дневник тренировок. Каждое такое приложение одновременно конкурирует с профинансированным лидером, бесплатным приложением платформы и приложениями «всё в одном» вроде Suu.</p>
+        <p><strong>Подумайте дважды</strong> над идеей «то же самое, но с ИИ». Лидер категории калорий уже владеет самым успешным ИИ-приложением для фото еды.</p>
+        <p><strong>Создавайте, только</strong> если можете назвать конкретную группу людей, которую MyFitnessPal, Strava, Samsung Health и Suu все обслуживают плохо, — и можете дотянуться до неё, не покупая каждую установку.</p>
+        <p>А если вы пользователь, которому просто нужны вода, калории и тренировки в одном месте, — ничего создавать не нужно. Такое приложение уже есть.</p>
+    </section>
+
+    <section class="cta-band" style="border-radius:var(--r-lg);padding-block:var(--sp-12)" data-cta="compare-body">
+        <div class="container">
+            <h2 style="font-size:var(--fs-2xl)">Посмотрите, как выглядит трекер «всё в одном»</h2>
+            <p>Вода, калории и GPS-тренировки в одном приложении · бесплатно на iOS и Android</p>
+            <div class="btn-row btn-row--center" style="margin-block-start:var(--sp-6)">
+                <a href="/app?src=compare-body" class="btn btn--secondary btn--lg">Скачать Suu бесплатно</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Частые вопросы</h2>
+        <div class="faq">
+            <details class="faq__item" open>
+                <summary>Перенасыщен ли рынок приложений для подсчёта калорий в 2026 году?</summary>
+                <div><p>На уровне универсальных приложений — да. MyFitnessPal обслуживает более 200 миллионов пользователей и купил Cal AI (15+ млн загрузок) в сделке, закрытой в декабре 2025 года. Yazio, Lifesum, Cronometer и Lose It! покрывают большинство остальных потребностей, а в Samsung Health есть бесплатная запись еды. Новому приложению для калорий нужна явно недообслуженная аудитория.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Напоминалка пить воду — всё ещё хорошая идея для приложения?</summary>
+                <div><p>Как отдельный продукт — редко. WaterMinder, Waterllama, Plant Nanny и Hydro Coach — зрелые приложения, в Samsung Health есть трекинг воды с дневной целью, а приложения «всё в одном» вроде Suu учитывают 91 напиток и цель, которая меняется от тренировок и еды. Пункт 4.3(b) правил Apple тоже предупреждает о приложениях, неотличимых от уже широко доступных.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Какие приложения уже объединяют трекинг воды, калорий и тренировок?</summary>
+                <div><p>Suu объединяет все три в одном приложении, где они обновляют друг друга: запись еды по фото, голосом или текстом, трекинг воды по 91 напитку и живые GPS-тренировки примерно для 50 видов активности, с синхронизацией с Apple Health и Health Connect. MyFitnessPal и Samsung Health тоже записывают еду, воду и тренировки в одном месте, с другими сильными сторонами.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Насколько сложно создать приложение для подсчёта калорий с распознаванием фото на ИИ?</summary>
+                <div><p>Вызвать модель компьютерного зрения — самое простое. Сложное — точность данных о питании, стоимость ИИ за каждый запрос, законы о медицинских данных (GDPR статья 9, KVKK), правила Apple для HealthKit, двусторонняя синхронизация с Apple Health и Health Connect и локализация, а затем — отвоевать пользователей у MyFitnessPal, которому уже принадлежит Cal AI.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Может ли инди-разработчик ещё конкурировать в категории «Здоровье и фитнес»?</summary>
+                <div><p>Да, но не с обычным трекером. Suu делает инди-разработчик, и он конкурирует за счёт связки воды, калорий и тренировок, а не пытаясь обойти MyFitnessPal или Strava на их поле. Выручка сильно сконцентрирована: по данным RevenueCat, по итогам первого года топ-5% новых приложений зарабатывают более чем в 400 раз больше нижних 25%.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Что создать вместо очередного приложения-трекера?</summary>
+                <div><p>Начинайте с аудитории, а не с функции: с группы людей с конкретной проблемой, которую универсальные трекеры и приложения платформ решают плохо и до которой вы уже можете дотянуться. Если идея — это MyFitnessPal, Strava или WaterMinder, только проще или с ИИ, такое приложение на рынке уже есть.</p></div>
+            </details>
+        </div>
+    </section>
+    <section>
+        <h2>Источники</h2>
+        <ol class="small">
+            <li id="ref1"><a href="https://www.franciscopartners.com/media/francisco-partners-announces-acquisition-of-myfitnesspal-from-under-armour" rel="nofollow noopener" target="_blank">Francisco Partners — объявление о покупке MyFitnessPal у Under Armour (октябрь 2020)</a></li>
+            <li id="ref2"><a href="https://techcrunch.com/2026/03/02/myfitnesspal-has-acquired-cal-ai-the-viral-calorie-app-built-by-teens/" rel="nofollow noopener" target="_blank">TechCrunch — MyFitnessPal has acquired Cal AI, the viral calorie app built by teens (март 2026)</a></li>
+            <li id="ref3"><a href="https://news.crunchbase.com/venture/fitness-startup-funding-falters-strava-raise/" rel="nofollow noopener" target="_blank">Crunchbase News — Strava valuation powers up to $2.2B as fitness startup funding falters (май 2025)</a></li>
+            <li id="ref4"><a href="https://www.mobihealthnews.com/news/weight-loss-app-noom-scores-540m-series-f-funding" rel="nofollow noopener" target="_blank">MobiHealthNews — Weight loss app Noom scores $540M in Series F funding (2021)</a></li>
+            <li id="ref5"><a href="https://www.revenuecat.com/state-of-subscription-apps-2025" rel="nofollow noopener" target="_blank">RevenueCat — State of Subscription Apps 2025</a></li>
+            <li id="ref6"><a href="https://developer.apple.com/app-store/review/guidelines/" rel="nofollow noopener" target="_blank">Apple — Правила проверки App Store (4.3 Спам; 5.1.3 Здоровье и медицинские исследования)</a></li>
+            <li id="ref7"><a href="https://www.samsung.com/us/support/answer/ANS10001351/" rel="nofollow noopener" target="_blank">Samsung — Использование трекеров в Samsung Health</a></li>
+            <li id="ref8"><a href="https://blog.myfitnesspal.com/meal-scan/" rel="nofollow noopener" target="_blank">MyFitnessPal — Introducing the enhanced Meal Scan feature</a></li>
+            <li id="ref9"><a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" rel="nofollow noopener" target="_blank">EUR-Lex — Регламент (ЕС) 2016/679 (GDPR), статья 9</a></li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Похожие статьи</h2>
+        <div class="cards">
+            <a class="card" href="/blog/ru/voda-kalorii-trenirovki-odno-prilozhenie.html">
+                <h3 style="font-size:var(--fs-md)">Вода, калории и тренировки в одном приложении</h3>
+                <p>Что даёт связка трёх.</p>
+            </a>
+            <a class="card" href="/blog/ru/luchshee-prilozhenie-podscheta-kalorij.html">
+                <h3 style="font-size:var(--fs-md)">Лучшее приложение для подсчёта калорий</h3>
+                <p>MyFitnessPal, Yazio, Lifesum и Cronometer.</p>
+            </a>
+            <a class="card" href="/blog/ru/luchshee-prilozhenie-dlya-trenirovok.html">
+                <h3 style="font-size:var(--fs-md)">Лучшее приложение для тренировок</h3>
+                <p>Strava, Nike Run Club, Samsung Health и Suu.</p>
+            </a>
+            <a class="card" href="/blog/ru/suu-vs-myfitnesspal.html">
+                <h3 style="font-size:var(--fs-md)">Suu против MyFitnessPal</h3>
+                <p>Где каждое честно сильнее.</p>
+            </a>
+        </div>
+    </section>
+
+    <p class="small text-subtle">Suu is not intended for medical diagnosis or treatment. Consult a healthcare professional for health-related decisions.</p>
+
+    <p>
+        <a href="/blog-ru.html">← Назад в блог</a>
+        &nbsp;·&nbsp; <a href="/sravneniya.html">Все сравнения →</a>
+    </p>
+</div>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__bottom" style="border:0">
+            <p class="small mb-0">© 2026 Suu · Furkan Mert Fındıklı</p>
+            <p class="small mb-0"><a href="/hosgeldiniz-ru.html">suuapp.com</a></p>
+        </div>
+    </div>
+</footer>
+
+<div class="sticky-cta" data-cta="sticky">
+    <a href="/app?src=sticky" class="btn btn--secondary">App Store</a>
+    <a href="/app?src=sticky" class="btn btn--primary">Google Play</a>
+</div>
+
+</body>
+</html>

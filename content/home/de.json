@@ -366,7 +366,7 @@
       },
       {
         "label": "Apple Watch App",
-        "ios": "soon",
+        "ios": "yes",
         "android": "no"
       }
     ]
@@ -562,8 +562,8 @@
       },
       {
         "label": "Apple Watch App",
-        "suu": "Demnächst",
-        "suu_class": "soon",
+        "suu": "✓ Wasser · Mahlzeiten · GPS-Training",
+        "suu_class": "yes",
         "others": [
           {
             "text": "✓",
@@ -706,7 +706,7 @@
       },
       {
         "q": "Gibt es eine Apple Watch App von Suu?",
-        "a": "Suu hat noch keine eigene Apple Watch App — sie kommt bald. Heute fließen Trainings, Schritte und aktive Energie, die deine Apple Watch aufzeichnet, über Apple Health in Suu und erhöhen dein Wasserziel automatisch. Für die freihändige Erfassung am Handgelenk kannst du den Siri-Befehl nutzen.",
+        "a": "Ja. Die Apple-Watch-App von Suu ist da: Wasser direkt am Handgelenk eintragen, Mahlzeiten per Sprache erfassen (die Analyse wird in Suu auf dem iPhone abgeschlossen), Gehen, Laufen, Wandern und Radfahren mit dem GPS der Uhr und Live-Herzfrequenz aufzeichnen und die Ringe für Bewegung und Ernährung sehen. Wasser- und Trainingserfassung funktionieren auf der Uhr auch ohne iPhone in der Nähe; danach wird alles mit Suu synchronisiert.",
         "link": {
           "href": "blog/en/apple-watch-water-tracking.html",
           "label": "Einrichtungsanleitung"

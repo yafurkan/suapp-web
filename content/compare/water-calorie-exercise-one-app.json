@@ -1,6 +1,7 @@
 {
   "_note": "AYIRT EDİCİ SAYFA (üç sütunun birleşimi) — DE/IT. İngilizce ve Türkçe eşleri hâlâ elle yazılmış HTML (blog/en/water-calorie-exercise-one-app.html, blog/su-kalori-egzersiz-tek-uygulama.html); bu JSON yalnızca yeni dilleri üretiyor, mevcut URL'lere dokunmuyor. Kayıt defterinde 'su-kalori-egzersiz-tek-uygulama' kümesine de/it slug'ları eklendi.",
   "published": "2026-08-24",
+  "modified": "2026-09-14",
   "pages": {
     "de": {
       "slug": "wasser-kalorien-sport-eine-app",
@@ -66,8 +67,8 @@
                 "cls": "yes"
               },
               {
-                "text": "In Arbeit",
-                "cls": "soon"
+                "text": "✓ Wasser, Mahlzeiten, GPS-Training",
+                "cls": "yes"
               }
             ]
           },
@@ -181,7 +182,7 @@
           "head": "Wann drei Apps die bessere Wahl bleiben",
           "body": [
             "Wenn eine der drei Säulen für dich klar im Vordergrund steht, gewinnt der Spezialist. Wer Rennen fährt, braucht Stravas Segmente und Wattanalyse; das ersetzt keine Allrounder-App. Wer sehr viel auswärts isst, braucht MyFitnessPals Restaurantdatenbank. Wer Vitamine protokolliert, braucht Cronometer.",
-            "Auch die Apple Watch ist ein echtes Argument: Wer dort einträgt, ist mit WaterMinder heute besser bedient, weil Suus Watch-App noch aussteht.",
+            "Auch die Apple Watch spielt eine Rolle: Suus Watch-App erfasst Wasser, Mahlzeiten per Sprache und GPS-Training am Handgelenk — wer vor allem Komplikationen und jahrelange Watch-Reife sucht, ist mit WaterMinder weiterhin gut bedient.",
             "Die verbundene App lohnt sich dort, wo keine der drei Säulen dominiert — wo du einfach in allen dreien vernünftig unterwegs sein willst, ohne drei Oberflächen zu pflegen und drei Abos zu bezahlen."
           ]
         },
@@ -198,7 +199,7 @@
         "body": [
           "<strong>Nimm drei spezialisierte Apps</strong>, wenn eine Säule für dich deutlich wichtiger ist als die anderen beiden — Wettkampfsport, sehr häufiges Auswärtsessen oder Mikronährstoff-Protokolle.",
           "<strong>Nimm eine verbundene App</strong>, wenn du in allen dreien solide unterwegs sein willst und die Zwischenrechnungen nicht selbst machen möchtest.",
-          "Suu ist die verbundene Variante: 91 Getränke mit Dehydrationsfaktor, Kalorien per Foto oder Sprache, rund 50 Sportarten per GPS — und die drei rechnen miteinander. Kostenlos für iOS und Android, mit den ehrlichen Vorbehalten kleinere Lebensmitteldatenbank, keine Segmente und noch keine Apple-Watch-App."
+          "Suu ist die verbundene Variante: 91 Getränke mit Dehydrationsfaktor, Kalorien per Foto oder Sprache, rund 50 Sportarten per GPS — und die drei rechnen miteinander. Kostenlos für iOS und Android, mit den ehrlichen Vorbehalten kleinere Lebensmitteldatenbank und keine Segmente."
         ]
       },
       "cta": {
@@ -329,8 +330,8 @@
                 "cls": "yes"
               },
               {
-                "text": "In arrivo",
-                "cls": "soon"
+                "text": "✓ Acqua, pasti, allenamenti GPS",
+                "cls": "yes"
               }
             ]
           },
@@ -444,7 +445,7 @@
           "head": "Quando tre app restano la scelta migliore",
           "body": [
             "Se uno dei tre pilastri conta per te molto più degli altri, vince lo specialista. Chi gareggia ha bisogno dei segmenti e dell'analisi di potenza di Strava, e nessuna app tuttofare li sostituisce. Chi mangia spessissimo fuori ha bisogno del database dei ristoranti di MyFitnessPal. Chi monitora le vitamine ha bisogno di Cronometer.",
-            "Anche l'Apple Watch è un argomento reale: chi registra dal polso oggi è servito meglio da WaterMinder, perché l'app Watch di Suu deve ancora arrivare.",
+            "Anche l'Apple Watch conta: l'app Watch di Suu registra acqua, pasti a voce e allenamenti GPS dal polso, mentre chi cerca soprattutto complicazioni e anni di rifinitura resta ben servito da WaterMinder.",
             "L'app collegata conviene dove nessuno dei tre pilastri domina — dove vuoi semplicemente cavartela bene in tutti e tre senza gestire tre interfacce e pagare tre abbonamenti."
           ]
         },
@@ -461,7 +462,7 @@
         "body": [
           "<strong>Scegli tre app specializzate</strong> se un pilastro conta per te molto più degli altri due: sport agonistico, pasti fuori casa molto frequenti o monitoraggio dei micronutrienti.",
           "<strong>Scegli un'app collegata</strong> se vuoi cavartela bene in tutti e tre e non hai voglia di fare i calcoli intermedi da solo.",
-          "Suu è la versione collegata: 91 bevande con fattore di disidratazione, calorie da foto o voce, circa 50 attività con GPS — e i tre si parlano. Gratis su iOS e Android, con le avvertenze oneste di un database alimentare più piccolo, nessun segmento e nessuna app per Apple Watch per ora."
+          "Suu è la versione collegata: 91 bevande con fattore di disidratazione, calorie da foto o voce, circa 50 attività con GPS — e i tre si parlano. Gratis su iOS e Android, con le avvertenze oneste di un database alimentare più piccolo e nessun segmento."
         ]
       },
       "cta": {
@@ -592,8 +593,8 @@
                 "cls": "yes"
               },
               {
-                "text": "У розробці",
-                "cls": "soon"
+                "text": "✓ Вода, їжа, GPS-тренування",
+                "cls": "yes"
               }
             ]
           },
@@ -707,7 +708,7 @@
           "head": "Коли три застосунки лишаються кращим вибором",
           "body": [
             "Якщо одна з трьох опор для тебе явно важливіша за інші, виграє спеціаліст. Тому, хто змагається, потрібні сегменти й аналіз потужності Strava; жоден універсал їх не замінить. Тому, хто дуже часто їсть поза домом, потрібна база закладів MyFitnessPal. Тому, хто веде вітаміни, потрібен Cronometer.",
-            "Apple Watch теж реальний аргумент: хто записує з зап'ястя, сьогодні краще забезпечений WaterMinder, бо застосунок Suu для Watch ще попереду.",
+            "Apple Watch теж має значення: застосунок Suu для Watch записує воду, їжу голосом і GPS-тренування із зап'ястя, а тим, хто шукає насамперед ускладнення й роки шліфування, як і раніше добре підійде WaterMinder.",
             "Пов'язаний застосунок виправдовує себе там, де жодна з трьох опор не домінує — де ти просто хочеш триматися на пристойному рівні в усіх трьох, не ведучи три інтерфейси й не оплачуючи три підписки."
           ]
         },
@@ -724,7 +725,7 @@
         "body": [
           "<strong>Обирай три спеціалізовані застосунки</strong>, якщо одна опора для тебе значно важливіша за дві інші — змагальний спорт, дуже часті обіди поза домом або облік мікронутрієнтів.",
           "<strong>Обирай один пов'язаний застосунок</strong>, якщо хочеш триматися на пристойному рівні в усіх трьох і не робити проміжні розрахунки самому.",
-          "Suu — це пов'язаний варіант: 91 напій із коефіцієнтом зневоднення, калорії за фото чи голосом, близько 50 видів активності з GPS — і ці три речі рахують разом. Безкоштовно на iOS та Android, із чесними застереженнями: менша база продуктів, немає сегментів і поки немає застосунку для Apple Watch."
+          "Suu — це пов'язаний варіант: 91 напій із коефіцієнтом зневоднення, калорії за фото чи голосом, близько 50 видів активності з GPS — і ці три речі рахують разом. Безкоштовно на iOS та Android, із чесними застереженнями: менша база продуктів і немає сегментів."
         ]
       },
       "cta": {

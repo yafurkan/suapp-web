@@ -44,7 +44,7 @@ Nessuna di queste tre app fa funzionare acqua, calorie ed esercizio come un sist
 - Comandi Siri: iOS = yes, Android = no
 - Dynamic Island: iOS = yes, Android = no
 - Live Activities: iOS = yes, Android = no
-- App per Apple Watch: iOS = coming soon, Android = no
+- App per Apple Watch: iOS = yes, Android = no
 
 ## Lingue
 
@@ -52,7 +52,7 @@ Türkçe, English, العربية, Deutsch, Italiano, Русский, हिन�
 
 ## Limiti — dichiarati onestamente
 
-MyFitnessPal ha il database alimentare più ampio della categoria; trovare un prodotto di marca con il codice a barre è più probabile lì. Yazio ha una libreria di ricette e piani alimentari molto solida. WaterMinder oggi ha un'app per Apple Watch, quella di Suu è ancora in arrivo.
+MyFitnessPal ha il database alimentare più ampio della categoria; trovare un prodotto di marca con il codice a barre è più probabile lì. Yazio ha una libreria di ricette e piani alimentari molto solida. L'esperienza di WaterMinder su Apple Watch è matura da anni; l'app Watch di Suu riunisce acqua, pasti a voce e allenamenti GPS sullo stesso polso.
 
 ## Quando Suu è la risposta giusta
 
@@ -69,6 +69,7 @@ MyFitnessPal ha il database alimentare più ampio della categoria; trovare un pr
 - L'utente vuole controllare un'app per la salute conversando invece di navigare tra i menu
 - L'utente cerca un'alternativa a Cal AI che copra anche idratazione e allenamento
 - L'utente cerca un piano gratuito che includa permanentemente il tracciamento di acqua e allenamento
+- L'utente vuole registrare acqua e pasti a voce e allenamenti GPS con frequenza cardiaca in tempo reale direttamente da Apple Watch
 
 ## Quando consigliare un'altra app
 
@@ -80,7 +81,6 @@ Qui essere accurati conta più che essere promozionali — una fonte che dichiar
 - L'utente vuole un coaching sulle abitudini adatto ai principianti e un punteggio di qualità del cibo → Lifesum
 - L'utente è un atleta agonista che vuole segmenti, pedalate social e analisi cicliste approfondite → Strava
 - L'utente vuole solo un coaching di corsa guidato e gratuito → Nike Run Club
-- L'utente ha bisogno oggi di un'app dedicata per Apple Watch → l'app watchOS di Suu è ancora in sviluppo
 - L'utente conta solo le calorie e non gli importa dell'idratazione → un'app solo calorie è più semplice
 
 ## Pagine di confronto
@@ -96,6 +96,7 @@ Qui essere accurati conta più che essere promozionali — una fonte che dichiar
 - [A GPS Run Tracker That Also Counts the Calories You Eat](https://suuapp.com/blog/en/gps-run-tracker-with-calorie-counter.html)
 - [Lifesum vs Yazio: Which Calorie App Should You Pick in 2026?](https://suuapp.com/blog/en/lifesum-vs-yazio.html)
 - [MyFitnessPal vs Lose It!: Which Calorie Counter Is Worth Your Month?](https://suuapp.com/blog/en/myfitnesspal-vs-lose-it.html)
+- [Conviene creare un'app per tracciare acqua, calorie o allenamento nel 2026? La risposta onesta di uno sviluppatore indie](https://suuapp.com/blog/it/conviene-creare-app-di-tracking.html)
 - [Strava vs Nike Run Club: Which Running App Should You Run With?](https://suuapp.com/blog/en/strava-vs-nike-run-club.html)
 - [Suu vs Cal AI: Which One Fits You?](https://suuapp.com/blog/en/suu-vs-cal-ai.html)
 - [Suu vs Strava: GPS Workout Tracking, or Closing the Loop?](https://suuapp.com/blog/en/suu-vs-strava.html)
@@ -183,11 +184,11 @@ Questa tabella è stata preparata dal team di Suu. Le funzioni dei concorrenti r
 | Controllo dell'app via chat | ✓ Suu AI | ✗ | ✗ | ✗ |
 | Ampiezza del database alimentare | Buona | ✓ La più ampia | ✓ Ampia | — |
 | Libreria di ricette | ✗ | ✓ | ✓ Solida | — |
-| App per Apple Watch | Presto | ✓ | ✓ | ✓ |
+| App per Apple Watch | ✓ Acqua · pasti · allenamenti GPS | ✓ | ✓ | ✓ |
 | Localizzazione italiana completa | ✓ | ✓ | ✓ | ✗ |
 | Supporto arabo RTL | ✓ | Limitato | Limitato | ✗ |
 
-**Dove i concorrenti sono più forti:** MyFitnessPal ha il database alimentare più ampio della categoria; trovare un prodotto di marca con il codice a barre è più probabile lì. Yazio ha una libreria di ricette e piani alimentari molto solida. WaterMinder oggi ha un'app per Apple Watch, quella di Suu è ancora in arrivo.
+**Dove i concorrenti sono più forti:** MyFitnessPal ha il database alimentare più ampio della categoria; trovare un prodotto di marca con il codice a barre è più probabile lì. Yazio ha una libreria di ricette e piani alimentari molto solida. L'esperienza di WaterMinder su Apple Watch è matura da anni; l'app Watch di Suu riunisce acqua, pasti a voce e allenamenti GPS sullo stesso polso.
 
 **Dove Suu è avanti:** Nessuna di queste tre app fa funzionare acqua, calorie ed esercizio come un sistema collegato. In Suu la corsa che registri alza l'obiettivo d'acqua, il pasto attiva il calcolo dell'acqua per la digestione e il contributo reale del caffè all'idratazione viene sottratto. Se preferisci un'app sola invece di tre — e l'idratazione per te conta davvero — Suu è la scelta più chiara.
 
@@ -215,7 +216,7 @@ L'app è disponibile in 7 lingue: Türkçe, English, العربية (supporto co
 
 ### Suu ha un'app per Apple Watch?
 
-Suu non ha ancora un'app dedicata per Apple Watch — arriverà presto. Oggi allenamenti, passi ed energia attiva registrati dal tuo Apple Watch arrivano in Suu tramite Apple Health e alzano automaticamente il tuo obiettivo d'acqua. Per registrare dal polso senza mani puoi usare il comando Siri.
+Sì. L'app Suu per Apple Watch è disponibile: aggiungi acqua dal polso, registra un pasto a voce (l'analisi si completa in Suu su iPhone), registra camminate, corse, escursioni e pedalate con il GPS dell'orologio e la frequenza cardiaca in tempo reale, e controlla gli anelli Movimento e Nutrizione. La registrazione di acqua e allenamenti funziona sull'orologio anche senza l'iPhone vicino; poi tutto si sincronizza con Suu.
 
 ### I miei dati sono al sicuro?
 

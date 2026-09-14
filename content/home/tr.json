@@ -306,7 +306,7 @@
     "col_feature": "Özellik",
     "yes": "✓",
     "soon": "Yakında",
-    "watch_note": "Apple Watch verisi bugün de Apple Health üzerinden Suu'ya akıyor ve su hedefini güncelliyor — <a href=\"blog/apple-watch-su-takibi.html\">nasıl kurulacağı burada</a>.",
+    "watch_note": "Suu'nun Apple Watch uygulaması yayında: suyu ve öğününü bilekten sesle ekle, GPS'li antrenmanını saatten kaydet — <a href=\"blog/apple-watch-su-takibi.html\">nasıl çalıştığı burada</a>.",
     "rows": [
       {
         "label": "Fotoğrafla kalori analizi",
@@ -365,7 +365,7 @@
       },
       {
         "label": "Apple Watch uygulaması",
-        "ios": "soon",
+        "ios": "yes",
         "android": "no"
       }
     ]
@@ -383,7 +383,7 @@
     "disclosure": "Bu tablo Suu ekibi tarafından hazırlanmıştır. Rakip özellikleri 2026 itibarıyla kamuya açık bilgilere dayanır ve zamanla değişebilir. Her uygulamanın güçlü olduğu alanlar farklıdır — aşağıda bunları da belirtiyoruz.",
     "verdict_head": "Karar",
     "rivals_label": "Rakiplerin güçlü olduğu yerler:",
-    "rivals": "MyFitnessPal'in besin veritabanı sektörün en genişi; barkot okutup marka ürün bulma ihtimalin orada daha yüksek. Yazio'nun tarif ve diyet planı kütüphanesi güçlü. WaterMinder'ın Apple Watch uygulaması bugün var, Suu'nunki yolda.",
+    "rivals": "MyFitnessPal'in besin veritabanı sektörün en genişi; barkot okutup marka ürün bulma ihtimalin orada daha yüksek. Yazio'nun tarif ve diyet planı kütüphanesi güçlü. WaterMinder'ın Apple Watch deneyimi yıllardır olgun; Suu'nun Watch uygulaması ise suyu, sesle öğün kaydını ve GPS'li antrenmanı aynı saatte topluyor.",
     "suu_label": "Suu'nun ayrıldığı yer:",
     "suu_edge": "Bu üç uygulamanın hiçbiri su, kalori ve egzersizi <em>birbirine bağlı</em> çalıştırmıyor. Suu'da kaydettiğin koşu su hedefini yükseltir, yediğin öğün sindirim suyunu hesaplatır, içtiğin kahvenin gerçek hidrasyon katkısı düşülür. Üç ayrı uygulama yerine tek uygulama kullanmak istiyorsan — ve hidrasyonun sende gerçekten önemliyse — Suu net tercih.",
     "links": "<a href=\"blog/en-iyi-kalori-uygulamasi.html\">Ayrıntılı 5'li karşılaştırma →</a> · <a href=\"blog/suu-vs-myfitnesspal.html\">Suu vs MyFitnessPal →</a> · <a href=\"blog/su-kalori-egzersiz-tek-uygulama.html\">Su + kalori + egzersiz tek uygulamada →</a>",
@@ -561,8 +561,8 @@
       },
       {
         "label": "Apple Watch uygulaması",
-        "suu": "Yakında",
-        "suu_class": "soon",
+        "suu": "✓ Su · öğün · GPS antrenman",
+        "suu_class": "yes",
         "others": [
           {
             "text": "✓",
@@ -705,7 +705,7 @@
       },
       {
         "q": "Suu'nun Apple Watch uygulaması var mı?",
-        "a": "Suu'nun kendi Apple Watch uygulaması henüz yok — yakında geliyor. Bugün Apple Watch'unuzun kaydettiği antrenman, adım ve aktif kalori verisi Apple Health üzerinden Suu'ya akar ve su hedefinizi otomatik yükseltir. Bilekten eller serbest kayıt için Siri komutu kullanılabilir.",
+        "a": "Evet. Suu'nun Apple Watch uygulaması yayında: bilekten su ekleyebilir, öğününü sesle söyleyebilir (analiz iPhone'daki Suu'da tamamlanır), yürüyüş, koşu, doğa yürüyüşü ve bisikleti saatin GPS'i ve canlı nabızla kaydedebilir, Hareket ve Beslenme halkalarını görebilirsin. iPhone yanında olmasa da su ve antrenman kaydı saatte çalışır; ardından her şey Suu ile eşitlenir.",
         "link": {
           "href": "blog/apple-watch-su-takibi.html",
           "label": "Kurulum rehberi"
