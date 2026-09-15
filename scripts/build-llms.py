@@ -242,7 +242,8 @@ def compact(lang: str, facts: dict, home: dict, registry: dict) -> str:
     for family, label in [("features", "Features"), ("premium", "Pricing"), ("faq", "FAQ"),
                           ("download", "Download"), ("water-calculator", "Water calculator"),
                           ("blog-index", "Blog"), ("who-is-for", "Who is it for"),
-                          ("suu-index", "Suu Index"), ("adaptive-brain", "Adaptive Hydration Brain")]:
+                          ("suu-index", "Suu Index"), ("adaptive-brain", "Adaptive Hydration Brain"),
+                          ("press", "Press & media kit")]:
         url = page_url(lang, registry, family)
         if url:
             out.append(f"- {label}: {url}")

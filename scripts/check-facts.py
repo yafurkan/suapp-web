@@ -82,6 +82,20 @@ def build_rules(facts: dict) -> list[dict]:
             "message": "Google Analytics placeholder — hiç veri toplamıyor",
             "fix": "gerçek GA4 ölçüm ID'si (G-XXXXXXXXXX) veya bloğu tamamen kaldır",
         },
+        {
+            # 2026-09-14: Suu iki kişilik bağımsız ekip (entities.team). "Tek geliştirici"
+            # iddiası hem ekip sayfalarıyla hem dış kaynaklardaki ekip anlatımıyla çelişir.
+            "id": "solo-developer-claim",
+            "severity": ERROR,
+            "pattern": re.compile(
+                r"(?i)single-handedly|built by one developer|by a single developer|as a solo developer|"
+                r"tek başına geliştir|tek geliştiricisi|bireysel olarak geliştiril|"
+                r"بواسطة مطور واحد|يطوّره مطوّر واحد|одним разработчиком|делает один разработчик|"
+                r"eines einzelnen Entwicklers|da un solo sviluppatore|один розробник"
+            ),
+            "message": "'Tek geliştirici' iddiası — Suu iki kişilik bağımsız ekip",
+            "fix": "küçük bağımsız ekip (Furkan Mert Fındıklı + Mert Öz)",
+        },
     ]
 
     # Apple Watch: mağaza açıklaması "yakında" diyorsa, "var" iddiaları hatadır.

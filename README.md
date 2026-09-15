@@ -9,7 +9,7 @@ Suu'nun pazarlama ve SEO web sitesi. [suuapp.com](https://suuapp.com) adresinde 
 
 ## Uygulama Hakkında
 
-Suu artık sadece bir su takip uygulaması değil — **su takibi, kalori sayımı ve egzersiz takibini yapay zekâ ile birleştiren** bir sağlık ve fitness uygulaması. Furkan Mert Fındıklı tarafından tek başına (indie) Flutter ile geliştirilir; Android ve iOS'ta ücretsiz.
+Suu artık sadece bir su takip uygulaması değil — **su takibi, kalori sayımı ve egzersiz takibini yapay zekâ ile birleştiren** bir sağlık ve fitness uygulaması. İstanbul'da iki kişilik bağımsız bir ekip (Furkan Mert Fındıklı, Mert Öz) tarafından geliştirilir; Android ve iOS'ta ücretsiz.
 
 - **Google Play:** 4.9★ · 2.847 değerlendirme · **App Store:** puan/sayım teyit bekliyor (bkz. `suu-facts.json` → `_needs_confirmation`)
 - **Uygulama dil desteği:** Türkçe, English, العربية, Deutsch, Italiano, Русский, हिन्दी (7 dil, RTL dahil)

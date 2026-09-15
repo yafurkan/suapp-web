@@ -146,7 +146,10 @@
    "tr": "/blog/kalori-acigi.html",
    "en": "/blog/en/calorie-deficit.html",
    "ar": "/blog/ar/al-ajz-al-harari.html",
-   "ru": "/blog/ru/deficit-kalorij.html"
+   "ru": "/blog/ru/deficit-kalorij.html",
+   "de": "/blog/de/kaloriendefizit.html",
+   "it": "/blog/it/deficit-calorico.html",
+   "uk": "/blog/uk/defitsyt-kaloriy.html"
   },
   "alamat-aljafaf.html": {
    "tr": "/blog/susuzluk-belirtileri.html",
@@ -392,6 +395,24 @@
    "ar": "/blog/ar/alkafayin-walsukar.html",
    "ru": "/blog/ru/kofein-i-sahar.html"
   },
+  "calcolo-macro.html": {
+   "tr": "/blog/makro-hesaplama.html",
+   "en": "/blog/en/macro-calculation.html",
+   "ar": "/blog/ar/hisab-al-macro.html",
+   "ru": "/blog/ru/raschet-makrosov.html",
+   "de": "/blog/de/makroberechnung.html",
+   "it": "/blog/it/calcolo-macro.html",
+   "uk": "/blog/uk/rozrakhunok-makrosiv.html"
+  },
+  "calorie-bruciate-allenamento.html": {
+   "tr": "/blog/egzersizde-kalori-yakimi.html",
+   "en": "/blog/en/calories-burned-exercise.html",
+   "ar": "/blog/ar/hurq-al-suerat.html",
+   "ru": "/blog/ru/raskhod-kalorij.html",
+   "de": "/blog/de/kalorienverbrauch-beim-sport.html",
+   "it": "/blog/it/calorie-bruciate-allenamento.html",
+   "uk": "/blog/uk/spalyuvannya-kaloriy-pid-chas-trenuvannya.html"
+  },
   "calorie-counter-with-exercise-tracker.html": {
    "tr": "/blog/kalori-ve-egzersiz-takibi-bir-arada.html",
    "en": "/blog/en/calorie-counter-with-exercise-tracker.html"
@@ -400,13 +421,19 @@
    "tr": "/blog/kalori-acigi.html",
    "en": "/blog/en/calorie-deficit.html",
    "ar": "/blog/ar/al-ajz-al-harari.html",
-   "ru": "/blog/ru/deficit-kalorij.html"
+   "ru": "/blog/ru/deficit-kalorij.html",
+   "de": "/blog/de/kaloriendefizit.html",
+   "it": "/blog/it/deficit-calorico.html",
+   "uk": "/blog/uk/defitsyt-kaloriy.html"
   },
   "calories-burned-exercise.html": {
    "tr": "/blog/egzersizde-kalori-yakimi.html",
    "en": "/blog/en/calories-burned-exercise.html",
    "ar": "/blog/ar/hurq-al-suerat.html",
-   "ru": "/blog/ru/raskhod-kalorij.html"
+   "ru": "/blog/ru/raskhod-kalorij.html",
+   "de": "/blog/de/kalorienverbrauch-beim-sport.html",
+   "it": "/blog/it/calorie-bruciate-allenamento.html",
+   "uk": "/blog/uk/spalyuvannya-kaloriy-pid-chas-trenuvannya.html"
   },
   "cay-hidrasyon.html": {
    "tr": "/blog/cay-hidrasyon.html",
@@ -419,6 +446,15 @@
    "en": "/blog/en/tea-hydration.html",
    "ar": "/blog/ar/tarteeb-asshay.html",
    "ru": "/blog/ru/chai-i-gidratatsiya.html"
+  },
+  "chy-varto-stvoryuvaty-zastosunok-treker.html": {
+   "tr": "/blog/takip-uygulamasi-yapmak-mantikli-mi.html",
+   "en": "/blog/en/should-you-build-a-tracking-app.html",
+   "ar": "/blog/ar/hal-yastahiq-bina-tatbiq-tatabbu.html",
+   "ru": "/blog/ru/stoit-li-sozdavat-prilozhenie-treker.html",
+   "de": "/blog/de/lohnt-sich-eine-tracking-app.html",
+   "it": "/blog/it/conviene-creare-app-di-tracking.html",
+   "uk": "/blog/uk/chy-varto-stvoryuvaty-zastosunok-treker.html"
   },
   "coffee-tea-hydration.html": {
    "tr": "/blog/kahve-cay-su-sayar-mi.html",
@@ -444,14 +480,53 @@
    "it": "/confronti.html",
    "uk": "/porivnyannya.html"
   },
+  "conteggio-calorie-con-foto.html": {
+   "tr": "/blog/fotografla-kalori-sayma.html",
+   "en": "/blog/en/photo-calorie-counting.html",
+   "ar": "/blog/ar/hisab-al-suerat-bil-sura.html",
+   "ru": "/blog/ru/kalorii-po-foto.html",
+   "de": "/blog/de/kalorienzaehlen-per-foto.html",
+   "it": "/blog/it/conteggio-calorie-con-foto.html",
+   "uk": "/blog/uk/pidrakhunok-kaloriy-za-foto.html"
+  },
+  "conviene-creare-app-di-tracking.html": {
+   "tr": "/blog/takip-uygulamasi-yapmak-mantikli-mi.html",
+   "en": "/blog/en/should-you-build-a-tracking-app.html",
+   "ar": "/blog/ar/hal-yastahiq-bina-tatbiq-tatabbu.html",
+   "ru": "/blog/ru/stoit-li-sozdavat-prilozhenie-treker.html",
+   "de": "/blog/de/lohnt-sich-eine-tracking-app.html",
+   "it": "/blog/it/conviene-creare-app-di-tracking.html",
+   "uk": "/blog/uk/chy-varto-stvoryuvaty-zastosunok-treker.html"
+  },
   "cronometer-vs-yazio.html": {
    "en": "/blog/en/cronometer-vs-yazio.html"
+  },
+  "deficit-calorico.html": {
+   "tr": "/blog/kalori-acigi.html",
+   "en": "/blog/en/calorie-deficit.html",
+   "ar": "/blog/ar/al-ajz-al-harari.html",
+   "ru": "/blog/ru/deficit-kalorij.html",
+   "de": "/blog/de/kaloriendefizit.html",
+   "it": "/blog/it/deficit-calorico.html",
+   "uk": "/blog/uk/defitsyt-kaloriy.html"
   },
   "deficit-kalorij.html": {
    "tr": "/blog/kalori-acigi.html",
    "en": "/blog/en/calorie-deficit.html",
    "ar": "/blog/ar/al-ajz-al-harari.html",
-   "ru": "/blog/ru/deficit-kalorij.html"
+   "ru": "/blog/ru/deficit-kalorij.html",
+   "de": "/blog/de/kaloriendefizit.html",
+   "it": "/blog/it/deficit-calorico.html",
+   "uk": "/blog/uk/defitsyt-kaloriy.html"
+  },
+  "defitsyt-kaloriy.html": {
+   "tr": "/blog/kalori-acigi.html",
+   "en": "/blog/en/calorie-deficit.html",
+   "ar": "/blog/ar/al-ajz-al-harari.html",
+   "ru": "/blog/ru/deficit-kalorij.html",
+   "de": "/blog/de/kaloriendefizit.html",
+   "it": "/blog/it/deficit-calorico.html",
+   "uk": "/blog/uk/defitsyt-kaloriy.html"
   },
   "domashnij-pitomec-mini-igry.html": {
    "tr": "/blog/suu-evcil-hayvan-mini-oyunlar.html",
@@ -481,7 +556,10 @@
    "tr": "/blog/egzersizde-kalori-yakimi.html",
    "en": "/blog/en/calories-burned-exercise.html",
    "ar": "/blog/ar/hurq-al-suerat.html",
-   "ru": "/blog/ru/raskhod-kalorij.html"
+   "ru": "/blog/ru/raskhod-kalorij.html",
+   "de": "/blog/de/kalorienverbrauch-beim-sport.html",
+   "it": "/blog/it/calorie-bruciate-allenamento.html",
+   "uk": "/blog/uk/spalyuvannya-kaloriy-pid-chas-trenuvannya.html"
   },
   "ekip.html": {
    "tr": "/ekip.html"
@@ -566,7 +644,10 @@
    "tr": "/blog/fotografla-kalori-sayma.html",
    "en": "/blog/en/photo-calorie-counting.html",
    "ar": "/blog/ar/hisab-al-suerat-bil-sura.html",
-   "ru": "/blog/ru/kalorii-po-foto.html"
+   "ru": "/blog/ru/kalorii-po-foto.html",
+   "de": "/blog/de/kalorienzaehlen-per-foto.html",
+   "it": "/blog/it/conteggio-calorie-con-foto.html",
+   "uk": "/blog/uk/pidrakhunok-kaloriy-za-foto.html"
   },
   "free-calorie-counter-app.html": {
    "tr": "/blog/ucretsiz-kalori-sayaci.html",
@@ -630,6 +711,15 @@
    "ar": "/hakkimizda-ar.html",
    "ru": "/hakkimizda-ru.html"
   },
+  "hal-yastahiq-bina-tatbiq-tatabbu.html": {
+   "tr": "/blog/takip-uygulamasi-yapmak-mantikli-mi.html",
+   "en": "/blog/en/should-you-build-a-tracking-app.html",
+   "ar": "/blog/ar/hal-yastahiq-bina-tatbiq-tatabbu.html",
+   "ru": "/blog/ru/stoit-li-sozdavat-prilozhenie-treker.html",
+   "de": "/blog/de/lohnt-sich-eine-tracking-app.html",
+   "it": "/blog/it/conviene-creare-app-di-tracking.html",
+   "uk": "/blog/uk/chy-varto-stvoryuvaty-zastosunok-treker.html"
+  },
   "hamilelikte-su-ihtiyaci.html": {
    "tr": "/blog/hamilelikte-su-ihtiyaci.html",
    "en": "/blog/en/hydration-during-pregnancy.html",
@@ -657,13 +747,19 @@
    "tr": "/blog/makro-hesaplama.html",
    "en": "/blog/en/macro-calculation.html",
    "ar": "/blog/ar/hisab-al-macro.html",
-   "ru": "/blog/ru/raschet-makrosov.html"
+   "ru": "/blog/ru/raschet-makrosov.html",
+   "de": "/blog/de/makroberechnung.html",
+   "it": "/blog/it/calcolo-macro.html",
+   "uk": "/blog/uk/rozrakhunok-makrosiv.html"
   },
   "hisab-al-suerat-bil-sura.html": {
    "tr": "/blog/fotografla-kalori-sayma.html",
    "en": "/blog/en/photo-calorie-counting.html",
    "ar": "/blog/ar/hisab-al-suerat-bil-sura.html",
-   "ru": "/blog/ru/kalorii-po-foto.html"
+   "ru": "/blog/ru/kalorii-po-foto.html",
+   "de": "/blog/de/kalorienzaehlen-per-foto.html",
+   "it": "/blog/it/conteggio-calorie-con-foto.html",
+   "uk": "/blog/uk/pidrakhunok-kaloriy-za-foto.html"
   },
   "hosgeldiniz-ar.html": {
    "tr": "/",
@@ -735,7 +831,10 @@
    "tr": "/blog/egzersizde-kalori-yakimi.html",
    "en": "/blog/en/calories-burned-exercise.html",
    "ar": "/blog/ar/hurq-al-suerat.html",
-   "ru": "/blog/ru/raskhod-kalorij.html"
+   "ru": "/blog/ru/raskhod-kalorij.html",
+   "de": "/blog/de/kalorienverbrauch-beim-sport.html",
+   "it": "/blog/it/calorie-bruciate-allenamento.html",
+   "uk": "/blog/uk/spalyuvannya-kaloriy-pid-chas-trenuvannya.html"
   },
   "hydration-and-exercise.html": {
    "tr": "/blog/spor-ve-hidrasyon.html",
@@ -809,17 +908,50 @@
    "tr": "/blog/kalori-acigi.html",
    "en": "/blog/en/calorie-deficit.html",
    "ar": "/blog/ar/al-ajz-al-harari.html",
-   "ru": "/blog/ru/deficit-kalorij.html"
+   "ru": "/blog/ru/deficit-kalorij.html",
+   "de": "/blog/de/kaloriendefizit.html",
+   "it": "/blog/it/deficit-calorico.html",
+   "uk": "/blog/uk/defitsyt-kaloriy.html"
   },
   "kalori-ve-egzersiz-takibi-bir-arada.html": {
    "tr": "/blog/kalori-ve-egzersiz-takibi-bir-arada.html",
    "en": "/blog/en/calorie-counter-with-exercise-tracker.html"
   },
+  "kaloriendefizit.html": {
+   "tr": "/blog/kalori-acigi.html",
+   "en": "/blog/en/calorie-deficit.html",
+   "ar": "/blog/ar/al-ajz-al-harari.html",
+   "ru": "/blog/ru/deficit-kalorij.html",
+   "de": "/blog/de/kaloriendefizit.html",
+   "it": "/blog/it/deficit-calorico.html",
+   "uk": "/blog/uk/defitsyt-kaloriy.html"
+  },
+  "kalorienverbrauch-beim-sport.html": {
+   "tr": "/blog/egzersizde-kalori-yakimi.html",
+   "en": "/blog/en/calories-burned-exercise.html",
+   "ar": "/blog/ar/hurq-al-suerat.html",
+   "ru": "/blog/ru/raskhod-kalorij.html",
+   "de": "/blog/de/kalorienverbrauch-beim-sport.html",
+   "it": "/blog/it/calorie-bruciate-allenamento.html",
+   "uk": "/blog/uk/spalyuvannya-kaloriy-pid-chas-trenuvannya.html"
+  },
+  "kalorienzaehlen-per-foto.html": {
+   "tr": "/blog/fotografla-kalori-sayma.html",
+   "en": "/blog/en/photo-calorie-counting.html",
+   "ar": "/blog/ar/hisab-al-suerat-bil-sura.html",
+   "ru": "/blog/ru/kalorii-po-foto.html",
+   "de": "/blog/de/kalorienzaehlen-per-foto.html",
+   "it": "/blog/it/conteggio-calorie-con-foto.html",
+   "uk": "/blog/uk/pidrakhunok-kaloriy-za-foto.html"
+  },
   "kalorii-po-foto.html": {
    "tr": "/blog/fotografla-kalori-sayma.html",
    "en": "/blog/en/photo-calorie-counting.html",
    "ar": "/blog/ar/hisab-al-suerat-bil-sura.html",
-   "ru": "/blog/ru/kalorii-po-foto.html"
+   "ru": "/blog/ru/kalorii-po-foto.html",
+   "de": "/blog/de/kalorienzaehlen-per-foto.html",
+   "it": "/blog/it/conteggio-calorie-con-foto.html",
+   "uk": "/blog/uk/pidrakhunok-kaloriy-za-foto.html"
   },
   "kam-fanjan-qahwa.html": {
    "tr": "/blog/gunde-kac-kahve.html",
@@ -875,6 +1007,15 @@
   "lifesum-vs-yazio.html": {
    "en": "/blog/en/lifesum-vs-yazio.html"
   },
+  "lohnt-sich-eine-tracking-app.html": {
+   "tr": "/blog/takip-uygulamasi-yapmak-mantikli-mi.html",
+   "en": "/blog/en/should-you-build-a-tracking-app.html",
+   "ar": "/blog/ar/hal-yastahiq-bina-tatbiq-tatabbu.html",
+   "ru": "/blog/ru/stoit-li-sozdavat-prilozhenie-treker.html",
+   "de": "/blog/de/lohnt-sich-eine-tracking-app.html",
+   "it": "/blog/it/conviene-creare-app-di-tracking.html",
+   "uk": "/blog/uk/chy-varto-stvoryuvaty-zastosunok-treker.html"
+  },
   "luchshee-prilozhenie-dlya-trenirovok.html": {
    "tr": "/blog/en-iyi-egzersiz-takip-uygulamasi.html",
    "en": "/blog/en/best-workout-tracker-app.html",
@@ -906,13 +1047,28 @@
    "tr": "/blog/makro-hesaplama.html",
    "en": "/blog/en/macro-calculation.html",
    "ar": "/blog/ar/hisab-al-macro.html",
-   "ru": "/blog/ru/raschet-makrosov.html"
+   "ru": "/blog/ru/raschet-makrosov.html",
+   "de": "/blog/de/makroberechnung.html",
+   "it": "/blog/it/calcolo-macro.html",
+   "uk": "/blog/uk/rozrakhunok-makrosiv.html"
   },
   "makro-hesaplama.html": {
    "tr": "/blog/makro-hesaplama.html",
    "en": "/blog/en/macro-calculation.html",
    "ar": "/blog/ar/hisab-al-macro.html",
-   "ru": "/blog/ru/raschet-makrosov.html"
+   "ru": "/blog/ru/raschet-makrosov.html",
+   "de": "/blog/de/makroberechnung.html",
+   "it": "/blog/it/calcolo-macro.html",
+   "uk": "/blog/uk/rozrakhunok-makrosiv.html"
+  },
+  "makroberechnung.html": {
+   "tr": "/blog/makro-hesaplama.html",
+   "en": "/blog/en/macro-calculation.html",
+   "ar": "/blog/ar/hisab-al-macro.html",
+   "ru": "/blog/ru/raschet-makrosov.html",
+   "de": "/blog/de/makroberechnung.html",
+   "it": "/blog/it/calcolo-macro.html",
+   "uk": "/blog/uk/rozrakhunok-makrosiv.html"
   },
   "meyve-suyu-vs-su.html": {
    "tr": "/blog/meyve-suyu-vs-su.html",
@@ -1055,7 +1211,19 @@
    "tr": "/blog/fotografla-kalori-sayma.html",
    "en": "/blog/en/photo-calorie-counting.html",
    "ar": "/blog/ar/hisab-al-suerat-bil-sura.html",
-   "ru": "/blog/ru/kalorii-po-foto.html"
+   "ru": "/blog/ru/kalorii-po-foto.html",
+   "de": "/blog/de/kalorienzaehlen-per-foto.html",
+   "it": "/blog/it/conteggio-calorie-con-foto.html",
+   "uk": "/blog/uk/pidrakhunok-kaloriy-za-foto.html"
+  },
+  "pidrakhunok-kaloriy-za-foto.html": {
+   "tr": "/blog/fotografla-kalori-sayma.html",
+   "en": "/blog/en/photo-calorie-counting.html",
+   "ar": "/blog/ar/hisab-al-suerat-bil-sura.html",
+   "ru": "/blog/ru/kalorii-po-foto.html",
+   "de": "/blog/de/kalorienzaehlen-per-foto.html",
+   "it": "/blog/it/conteggio-calorie-con-foto.html",
+   "uk": "/blog/uk/pidrakhunok-kaloriy-za-foto.html"
   },
   "polza-pitia-vody.html": {
    "tr": "/blog/su-icmenin-faydalari.html",
@@ -1102,6 +1270,9 @@
    "ar": "/premium-ar.html",
    "ru": "/premium-ru.html"
   },
+  "press.html": {
+   "en": "/press.html"
+  },
   "privychka-pit-vodu.html": {
    "tr": "/blog/su-icme-aliskanlik.html",
    "en": "/blog/en/water-drinking-habits.html",
@@ -1136,13 +1307,28 @@
    "tr": "/blog/makro-hesaplama.html",
    "en": "/blog/en/macro-calculation.html",
    "ar": "/blog/ar/hisab-al-macro.html",
-   "ru": "/blog/ru/raschet-makrosov.html"
+   "ru": "/blog/ru/raschet-makrosov.html",
+   "de": "/blog/de/makroberechnung.html",
+   "it": "/blog/it/calcolo-macro.html",
+   "uk": "/blog/uk/rozrakhunok-makrosiv.html"
   },
   "raskhod-kalorij.html": {
    "tr": "/blog/egzersizde-kalori-yakimi.html",
    "en": "/blog/en/calories-burned-exercise.html",
    "ar": "/blog/ar/hurq-al-suerat.html",
-   "ru": "/blog/ru/raskhod-kalorij.html"
+   "ru": "/blog/ru/raskhod-kalorij.html",
+   "de": "/blog/de/kalorienverbrauch-beim-sport.html",
+   "it": "/blog/it/calorie-bruciate-allenamento.html",
+   "uk": "/blog/uk/spalyuvannya-kaloriy-pid-chas-trenuvannya.html"
+  },
+  "rozrakhunok-makrosiv.html": {
+   "tr": "/blog/makro-hesaplama.html",
+   "en": "/blog/en/macro-calculation.html",
+   "ar": "/blog/ar/hisab-al-macro.html",
+   "ru": "/blog/ru/raschet-makrosov.html",
+   "de": "/blog/de/makroberechnung.html",
+   "it": "/blog/it/calcolo-macro.html",
+   "uk": "/blog/uk/rozrakhunok-makrosiv.html"
   },
   "sabah-su-icmenin-faydalari.html": {
    "tr": "/blog/sabah-su-icmenin-faydalari.html",
@@ -1160,6 +1346,15 @@
    "tr": "/blog/sesli-komutla-su-ekleme.html",
    "en": "/blog/en/siri-water-tracking.html",
    "ru": "/blog/ru/siri-voda.html"
+  },
+  "should-you-build-a-tracking-app.html": {
+   "tr": "/blog/takip-uygulamasi-yapmak-mantikli-mi.html",
+   "en": "/blog/en/should-you-build-a-tracking-app.html",
+   "ar": "/blog/ar/hal-yastahiq-bina-tatbiq-tatabbu.html",
+   "ru": "/blog/ru/stoit-li-sozdavat-prilozhenie-treker.html",
+   "de": "/blog/de/lohnt-sich-eine-tracking-app.html",
+   "it": "/blog/it/conviene-creare-app-di-tracking.html",
+   "uk": "/blog/uk/chy-varto-stvoryuvaty-zastosunok-treker.html"
   },
   "signs-of-dehydration.html": {
    "tr": "/blog/susuzluk-belirtileri.html",
@@ -1205,6 +1400,15 @@
    "tr": "/sozluk.html",
    "en": "/glossary.html"
   },
+  "spalyuvannya-kaloriy-pid-chas-trenuvannya.html": {
+   "tr": "/blog/egzersizde-kalori-yakimi.html",
+   "en": "/blog/en/calories-burned-exercise.html",
+   "ar": "/blog/ar/hurq-al-suerat.html",
+   "ru": "/blog/ru/raskhod-kalorij.html",
+   "de": "/blog/de/kalorienverbrauch-beim-sport.html",
+   "it": "/blog/it/calorie-bruciate-allenamento.html",
+   "uk": "/blog/uk/spalyuvannya-kaloriy-pid-chas-trenuvannya.html"
+  },
   "spor-ve-hidrasyon.html": {
    "tr": "/blog/spor-ve-hidrasyon.html",
    "en": "/blog/en/hydration-and-exercise.html",
@@ -1233,6 +1437,15 @@
   "starbucks-dehydration.html": {
    "tr": "/starbucks-dehidrasyon.html",
    "en": "/starbucks-dehydration.html"
+  },
+  "stoit-li-sozdavat-prilozhenie-treker.html": {
+   "tr": "/blog/takip-uygulamasi-yapmak-mantikli-mi.html",
+   "en": "/blog/en/should-you-build-a-tracking-app.html",
+   "ar": "/blog/ar/hal-yastahiq-bina-tatbiq-tatabbu.html",
+   "ru": "/blog/ru/stoit-li-sozdavat-prilozhenie-treker.html",
+   "de": "/blog/de/lohnt-sich-eine-tracking-app.html",
+   "it": "/blog/it/conviene-creare-app-di-tracking.html",
+   "uk": "/blog/uk/chy-varto-stvoryuvaty-zastosunok-treker.html"
   },
   "strava-vs-nike-run-club.html": {
    "en": "/blog/en/strava-vs-nike-run-club.html"
@@ -1358,6 +1571,15 @@
    "en": "/blog/en/energy-drink-control.html",
    "ar": "/blog/ar/tahakum-mashroob-attaqa.html",
    "ru": "/blog/ru/kontrol-energetikov.html"
+  },
+  "takip-uygulamasi-yapmak-mantikli-mi.html": {
+   "tr": "/blog/takip-uygulamasi-yapmak-mantikli-mi.html",
+   "en": "/blog/en/should-you-build-a-tracking-app.html",
+   "ar": "/blog/ar/hal-yastahiq-bina-tatbiq-tatabbu.html",
+   "ru": "/blog/ru/stoit-li-sozdavat-prilozhenie-treker.html",
+   "de": "/blog/de/lohnt-sich-eine-tracking-app.html",
+   "it": "/blog/it/conviene-creare-app-di-tracking.html",
+   "uk": "/blog/uk/chy-varto-stvoryuvaty-zastosunok-treker.html"
   },
   "taqlil-alqahwa.html": {
    "tr": "/blog/kahveyi-azaltmak.html",
