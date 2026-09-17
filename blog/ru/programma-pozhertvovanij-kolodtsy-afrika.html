@@ -157,7 +157,7 @@
         .footer-nav { border-top: 1px solid #eee; padding-top: 30px; margin-top: 50px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
         .footer-nav a { color: #2E6FB8; text-decoration: none; font-size: 14px; display: flex; align-items: center; gap: 6px; }
     </style>
-    <link rel="stylesheet" href="../../donation-widget.css?v=2">
+    <link rel="stylesheet" href="../../donation-widget.css?v=3">
     <script src="/assets/js/analytics.js" defer></script>
     <script src="/assets/js/special-days.js" defer></script>
 </head>
@@ -180,7 +180,7 @@
 
 <div class="container">
 
-    <p class="intro">Suu — это не просто очередное приложение для отслеживания воды. <strong>2%</strong> каждой подписки Premium ежемесячно направляются на проекты строительства колодцев с чистой водой в Африке. Проверить это можно прямо сейчас: нажмите на иконку капли воды в правом нижнем углу этой страницы, чтобы увидеть актуальную сумму пожертвований и скачать каждую квитанцию. Никаких закрытых дверей.</p>
+    <p class="intro">Suu — это не просто очередное приложение для отслеживания воды. <strong>2%</strong> каждой подписки Premium ежемесячно направляются на проекты строительства колодцев с чистой водой в Африке. Проверить это можно прямо сейчас: нажмите на иконку капли воды в правом нижнем углу этой страницы, чтобы увидеть, насколько близка цель по колодцу, и открыть каждую квитанцию. Никаких закрытых дверей.</p>
 
     <h2>Почему 2%? Почему такая прозрачность?</h2>
 
@@ -198,15 +198,15 @@
         <div class="step-num">1</div>
         <div class="step-content">
             <h3>Живой виджет трекера пожертвований</h3>
-            <p>На каждой странице suuapp.com есть кнопка в виде капли воды с эффектом glassmorphism в правом нижнем углу (на арабских страницах автоматически перемещается в левый нижний угол). Нажмите, чтобы открыть анимированное деревянное ведро, которое наполняется водой по мере роста пожертвований.</p>
+            <p>На каждой странице suuapp.com есть кнопка в виде капли воды с эффектом glassmorphism в правом нижнем углу (на арабских страницах автоматически перемещается в левый нижний угол). Нажмите, чтобы открыть анимированное деревянное ведро, которое наполняется водой по мере приближения к цели.</p>
         </div>
     </div>
 
     <div class="step-card">
         <div class="step-num">2</div>
         <div class="step-content">
-            <h3>Автоматическая конвертация валют</h3>
-            <p>Сумма хранится в турецких лирах, но виджет автоматически конвертирует её в USD / SAR / RUB в зависимости от вашего языка. Саудовский пользователь видит —, американский — —, русский — —, турецкий — — — одно и то же пожертвование, отображаемое в местной валюте каждого посетителя.</p>
+            <h3>Прогресс вместо сумм</h3>
+            <p>Виджет не показывает денежных сумм — только то, какая часть цели уже собрана. 100% равны строительному бюджету одного колодца в Африке. Все семь языков видят одно и то же число: ни курсов валют, ни разговоров о размере перевода. Причина проста: сколько именно лир ушло — это история нашего баланса, а читателю важно, насколько близок колодец.</p>
         </div>
     </div>
 
@@ -214,7 +214,7 @@
         <div class="step-num">3</div>
         <div class="step-content">
             <h3>Банковские квитанции публичны</h3>
-            <p>Каждая ежемесячная квитанция банковского перевода загружается в формате PDF на <a href="https://suuapp.com/donations/receipts/">suuapp.com/donations/receipts/</a> и доступна в один клик прямо из виджета. Какая благотворительность, какая дата, какая сумма — всё видно.</p>
+            <p>Каждая ежемесячная квитанция банковского перевода загружается на <a href="https://suuapp.com/donations/receipts/">suuapp.com/donations/receipts/</a> и доступна в один клик прямо из виджета. Какая благотворительность, какая дата — всё видно. Размыто только поле суммы; название организации, дата и сама банковская запись остаются как есть.</p>
         </div>
     </div>
 
@@ -222,7 +222,7 @@
         <div class="step-num">4</div>
         <div class="step-content">
             <h3>Обычные JSON-данные + история git</h3>
-            <p>Все записи о пожертвованиях находятся в <a href="https://suuapp.com/donations.json">donations.json</a> — обычном JSON-файле на GitHub. Дата каждого обновления, причина и diff постоянно фиксируются в журнале git commit. Так что через пять лет на вопрос «что было пожертвовано прошлой весной?» можно ответить из системы контроля версий.</p>
+            <p>Все записи о пожертвованиях находятся в <a href="https://suuapp.com/donations.json">donations.json</a> — обычном JSON-файле на GitHub, где хранятся проценты, а не суммы. Дата каждого обновления, причина и diff постоянно фиксируются в журнале git commit. Так что через пять лет на вопрос «что было пожертвовано прошлой весной?» можно ответить из системы контроля версий.</p>
         </div>
     </div>
 
@@ -230,31 +230,31 @@
         <div class="step-num">5</div>
         <div class="step-content">
             <h3>Персональные данные не используются</h3>
-            <p>Система пожертвований содержит только агрегированные суммы, цели и метаданные квитанций. Никакие персональные данные (кто купил Premium, когда, из какой страны) не появляются в записях о пожертвованиях — полностью соответствует принципу «прозрачности» статьи 4 KVKK и статьи 5(1)(a) GDPR.</p>
+            <p>Система пожертвований содержит только процент выполнения цели, даты пожертвований и метаданные квитанций. Никакие персональные данные (кто купил Premium, когда, из какой страны) не появляются в записях о пожертвованиях — полностью соответствует принципу «прозрачности» статьи 4 KVKK и статьи 5(1)(a) GDPR.</p>
         </div>
     </div>
 
     <div class="live-stats">
-        <h3>📊 Текущая сумма пожертвований (11 мая 2026)</h3>
+        <h3>📊 Прогресс к цели (7 июня 2026)</h3>
         <div class="stat-grid">
             <div class="stat-card">
-                <div class="val">—</div>
-                <div class="lbl">Рубли</div>
+                <div class="val">9%</div>
+                <div class="lbl">цели по колодцу собрано</div>
             </div>
             <div class="stat-card">
-                <div class="val">—</div>
-                <div class="lbl">Доллары</div>
+                <div class="val">+1,5%</div>
+                <div class="lbl">пожертвование июня 2026</div>
             </div>
             <div class="stat-card">
-                <div class="val">—</div>
-                <div class="lbl">Лиры (база)</div>
+                <div class="val">+7,5%</div>
+                <div class="lbl">пожертвование мая 2026</div>
             </div>
             <div class="stat-card">
-                <div class="val">—</div>
-                <div class="lbl">SAR</div>
+                <div class="val">2%</div>
+                <div class="lbl">доля дохода Premium</div>
             </div>
         </div>
-        <p style="margin-top:14px; color:#1e40af; font-size:0.9rem;">Цель: — (≈ —) — бюджет строительства одного общественного колодца. Нажмите на кнопку с каплей в углу для актуальных данных.</p>
+        <p style="margin-top:14px; color:#1e40af; font-size:0.9rem;">100% = бюджет строительства одного общественного колодца. Нажмите на кнопку с каплей в углу, чтобы следить за прогрессом.</p>
     </div>
 
     <h2>Предлагают ли конкуренты такой уровень прозрачности?</h2>
@@ -271,8 +271,8 @@
         </thead>
         <tbody>
             <tr><td>Есть программа пожертвований?</td><td class="yes">✓ 2%</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
-            <tr><td>Видна актуальная сумма пожертвований?</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
-            <tr><td>Банковские квитанции публичны?</td><td class="yes">✓ PDF</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+            <tr><td>Виден прогресс к цели в реальном времени?</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+            <tr><td>Банковские квитанции публичны?</td><td class="yes">✓ изображение</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
             <tr><td>Аудит через git?</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
             <tr><td>Многоязычный трекер пожертвований</td><td class="yes">✓ TR/EN/AR/DE/IT/RU/HI</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
         </tbody>
@@ -323,7 +323,7 @@
 
 </div>
 <script src="../../lang-switcher.js?v=3" defer></script>
-<script src="../../donation-widget.js?v=2" defer></script>
+<script src="../../donation-widget.js?v=3" defer></script>
 <div class="sticky-download-bar" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:rgba(255,255,255,0.97);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);padding:10px 12px;padding-bottom:calc(10px + env(safe-area-inset-bottom,0px));box-shadow:0 -2px 16px rgba(0,0,0,0.12);gap:8px;justify-content:center;">
     <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" style="flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:13px 14px;border-radius:12px;text-decoration:none;font-weight:600;font-size:14px;min-height:48px;background:#000;color:#fff;max-width:200px;" target="_blank" rel="noopener">
         <i class="fab fa-apple"></i> App Store

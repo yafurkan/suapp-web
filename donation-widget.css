@@ -1,5 +1,5 @@
 /* Suu — Donation Tracker Widget
- * Floating glassmorphism FAB + panel with animated water bucket.
+ * Floating glassmorphism FAB + panel with a liquid-glass progress capsule.
  * Vanilla CSS, no libraries. Auto-flips to left in RTL (Arabic) pages.
  */
 
@@ -7,8 +7,6 @@
   --suu-dw-blue: #4A90D9;
   --suu-dw-blue-dark: #2E6FB8;
   --suu-dw-blue-light: #6FB3FF;
-  --suu-dw-water-top: rgba(111, 179, 255, 0.95);
-  --suu-dw-water-bottom: rgba(46, 111, 184, 0.95);
   --suu-dw-glass-bg: rgba(255, 255, 255, 0.85);
   --suu-dw-glass-border: rgba(255, 255, 255, 0.6);
   --suu-dw-shadow: 0 8px 32px rgba(46, 111, 184, 0.18);
@@ -144,59 +142,138 @@ html[lang="ar"] #suu-donation-panel {
 }
 .suu-dw-close:hover { background: rgba(0, 0, 0, 0.1); }
 
-/* === Bucket animation ========================================== */
-.suu-dw-bucket-wrap {
-  padding: 8px 20px 16px;
+/* === Liquid-glass progress ===================================== */
+/* Replaced the wooden bucket (2026-09-18): a frosted capsule whose liquid
+   slides in on open, with a flowing highlight and a specular sweep. */
+.suu-dw-progress-wrap {
+  padding: 6px 20px 18px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.suu-dw-bucket {
-  position: relative;
-  width: 130px;
-  height: 130px;
-  margin: 0 auto 12px;
-}
-.suu-dw-bucket svg {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-/* The mask reveals water inside the bucket shape; height is set via JS */
-.suu-dw-water {
-  fill: url(#suu-dw-water-gradient);
-  transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
-  transform-origin: center bottom;
-}
-.suu-dw-wave {
-  fill: rgba(255, 255, 255, 0.25);
-  animation: suu-dw-wave 4s ease-in-out infinite;
-}
-
-@keyframes suu-dw-wave {
-  0%, 100% { transform: translateX(-4px); }
-  50%      { transform: translateX(4px); }
-}
-
 .suu-dw-percent {
-  font-size: 22px;
+  font-size: 40px;
   font-weight: 800;
-  color: var(--suu-dw-blue-dark);
-  letter-spacing: -0.5px;
-  margin-top: 2px;
+  color: var(--suu-dw-text);
+  letter-spacing: -1.6px;
+  line-height: 1.05;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+  margin-bottom: 12px;
 }
-.suu-dw-amount-row {
+.suu-dw-capsule {
+  position: relative;
+  width: 100%;
+  /* Slim on purpose: a tall capsule turns a small fill into a floating blob
+     instead of the start of a bar. */
+  height: 16px;
+  border-radius: 999px;
+  overflow: hidden;
+  isolation: isolate;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(223, 238, 255, 0.4) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.95),
+    inset 0 -2px 4px rgba(46, 111, 184, 0.10),
+    0 6px 18px rgba(46, 111, 184, 0.14);
+  backdrop-filter: blur(12px) saturate(170%);
+  -webkit-backdrop-filter: blur(12px) saturate(170%);
+}
+.suu-dw-liquid {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  /* Visual floor: below ~5% the capsule would look untouched. The exact
+     figure is always spelled out in the number above, so this only keeps
+     the bar legible — it never stands in for the value. */
+  min-width: 22px;
+  border-radius: 999px;
+  background: linear-gradient(115deg,
+    var(--suu-dw-blue-light) 0%,
+    var(--suu-dw-blue) 55%,
+    var(--suu-dw-blue-dark) 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.45),
+    0 1px 8px rgba(46, 111, 184, 0.35);
+  transition: width 1.4s cubic-bezier(0.22, 1, 0.36, 1);
+  overflow: hidden;
+}
+#suu-donation-panel[dir="rtl"] .suu-dw-liquid {
+  left: auto;
+  right: 0;
+}
+/* Slow highlight drifting through the liquid — reads as flow, not as loading */
+.suu-dw-liquid-flow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 55%;
+  background: linear-gradient(100deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.38) 50%,
+    rgba(255, 255, 255, 0) 100%);
+  animation: suu-dw-flow 3.8s ease-in-out infinite;
+}
+/* Soft glow riding the leading edge, like the meniscus of a real liquid */
+.suu-dw-meniscus {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 8px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 100%);
+  animation: suu-dw-breathe 2.8s ease-in-out infinite;
+}
+#suu-donation-panel[dir="rtl"] .suu-dw-meniscus {
+  right: auto;
+  left: 0;
+  transform: scaleX(-1);
+}
+/* Specular sweep across the whole capsule */
+.suu-dw-sheen {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(105deg,
+    rgba(255, 255, 255, 0) 38%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0) 62%);
+  transform: translateX(-110%);
+  animation: suu-dw-sheen 5.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes suu-dw-flow {
+  0%   { transform: translateX(-70%); }
+  100% { transform: translateX(200%); }
+}
+@keyframes suu-dw-breathe {
+  0%, 100% { opacity: 0.55; }
+  50%      { opacity: 1; }
+}
+@keyframes suu-dw-sheen {
+  0%        { transform: translateX(-110%); }
+  55%, 100% { transform: translateX(110%); }
+}
+/* Percent-only progress: label on top, what 100% means underneath.
+   No money figures anywhere in this widget (2026-09-18). */
+.suu-dw-progress-row {
   display: flex;
-  justify-content: center;
-  align-items: baseline;
-  gap: 6px;
-  font-size: 13px;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  font-size: 11px;
+  line-height: 1.35;
   color: var(--suu-dw-text-muted);
-  margin-top: 2px;
+  margin-top: 12px;
+  text-align: center;
 }
-.suu-dw-amount-row strong {
+.suu-dw-progress-row strong {
   color: var(--suu-dw-text);
   font-weight: 700;
+  font-size: 13px;
 }
 
 /* === Actions =================================================== */
@@ -308,14 +385,15 @@ html[lang="ar"] .suu-dw-back-btn {
   font-size: 11px;
   color: var(--suu-dw-text-muted);
 }
-.suu-dw-receipt-amount {
+.suu-dw-receipt-share {
   font-weight: 700;
   color: var(--suu-dw-blue-dark);
   font-size: 12px;
   margin-right: 4px;
+  font-variant-numeric: tabular-nums;
 }
-html[dir="rtl"] .suu-dw-receipt-amount,
-html[lang="ar"] .suu-dw-receipt-amount {
+html[dir="rtl"] .suu-dw-receipt-share,
+html[lang="ar"] .suu-dw-receipt-share {
   margin-right: 0;
   margin-left: 4px;
 }
@@ -375,8 +453,11 @@ html[lang="ar"] .suu-dw-receipt-amount {
 /* === Reduced motion =========================================== */
 @media (prefers-reduced-motion: reduce) {
   #suu-donation-fab { animation: none; }
-  .suu-dw-wave { animation: none; }
-  .suu-dw-water { transition: none; }
+  .suu-dw-liquid { transition: none; }
+  .suu-dw-liquid-flow,
+  .suu-dw-meniscus,
+  .suu-dw-sheen { animation: none; }
+  .suu-dw-sheen { opacity: 0; }
 }
 
 /* === Dark mode (system preference) ============================ */
@@ -390,9 +471,24 @@ html[lang="ar"] .suu-dw-receipt-amount {
     background: linear-gradient(135deg, #2a3a52 0%, #1a2638 100%);
   }
   .suu-dw-title { color: #e8f2ff; }
-  .suu-dw-subtitle, .suu-dw-amount-row, .suu-dw-receipt-date { color: #9ab4d4; }
-  .suu-dw-amount-row strong, .suu-dw-receipts-title, .suu-dw-receipt-charity { color: #e8f2ff; }
-  .suu-dw-percent { color: var(--suu-dw-blue-light); }
+  .suu-dw-subtitle, .suu-dw-progress-row, .suu-dw-receipt-date { color: #9ab4d4; }
+  .suu-dw-progress-row strong, .suu-dw-receipts-title, .suu-dw-receipt-charity { color: #e8f2ff; }
+  .suu-dw-receipt-share { color: var(--suu-dw-blue-light); }
+  .suu-dw-percent { color: #f2f8ff; }
+  .suu-dw-capsule {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(111, 179, 255, 0.10) 100%);
+    border-color: rgba(255, 255, 255, 0.16);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.22),
+      inset 0 -2px 6px rgba(0, 0, 0, 0.25),
+      0 6px 20px rgba(0, 0, 0, 0.35);
+  }
+  .suu-dw-sheen {
+    background: linear-gradient(105deg,
+      rgba(255, 255, 255, 0) 38%,
+      rgba(255, 255, 255, 0.22) 50%,
+      rgba(255, 255, 255, 0) 62%);
+  }
   .suu-dw-close { background: rgba(255, 255, 255, 0.08); color: #e8f2ff; }
   .suu-dw-close:hover { background: rgba(255, 255, 255, 0.15); }
   .suu-dw-receipt-item { background: rgba(111, 179, 255, 0.1); }

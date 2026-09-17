@@ -1,7 +1,9 @@
 /**
  * Suu — Donation Tracker Widget
  * Floating FAB + glassmorphism panel showing live donation progress.
- * Reads data from /donations.json. Manual monthly update by editing JSON.
+ * Reads data from /donations.json — percentages only, no money figures:
+ * amounts live in the local ledger (donations.private.json) and are turned
+ * into percentages by scripts/build-donations.py.
  * Multilingual (TR/EN/AR/DE/IT/RU/HI) — syncs with lang-switcher.js via localStorage.
  */
 (function () {
@@ -30,28 +32,33 @@
 
     function isRTL(lang) { return lang === 'ar'; }
 
-    // ---------- Currency conversion + formatting ----------
-    // Amounts in donations.json are stored in baseCurrency (TRY).
-    // We convert to the user's language currency via `rates`,
-    // then format with Intl.NumberFormat for proper locale-specific output.
-    function convertAmount(baseAmount, lang, data) {
-        var cfg = (data.currencyByLang && data.currencyByLang[lang]) || (data.currencyByLang && data.currencyByLang.tr) || { code: 'TRY', locale: 'tr-TR' };
-        var rate = (data.rates && data.rates[cfg.code]) || 1;
-        return { value: baseAmount * rate, code: cfg.code, locale: cfg.locale };
+    // ---------- Percent formatting ----------
+    // No money anywhere: donations.json ships percentages only.
+    var LOCALES = {
+        tr: 'tr-TR', en: 'en-US', ru: 'ru-RU',
+        ar: 'ar-SA', de: 'de-DE', it: 'it-IT', hi: 'hi-IN'
+    };
+
+    function formatPercent(value, lang, decimals) {
+        var p = Number(value) || 0;
+        var locale = LOCALES[lang] || 'tr-TR';
+        try {
+            return new Intl.NumberFormat(locale, {
+                style: 'percent',
+                maximumFractionDigits: decimals || 0
+            }).format(p / 100);
+        } catch (e) {
+            return p + '%';
+        }
     }
 
-    function formatAmount(baseAmount, lang, data) {
-        var c = convertAmount(baseAmount, lang, data);
+    // Under 1% a whole number would read as "0%" — show one decimal instead.
+    function percentDecimals(pct) { return (pct > 0 && pct < 1) ? 1 : 0; }
+
+    function prefersReducedMotion() {
         try {
-            return new Intl.NumberFormat(c.locale, {
-                style: 'currency',
-                currency: c.code,
-                maximumFractionDigits: 0,
-                minimumFractionDigits: 0
-            }).format(Math.round(c.value));
-        } catch (e) {
-            return Math.round(c.value) + ' ' + c.code;
-        }
+            return !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+        } catch (e) { return false; }
     }
 
     function formatDate(isoDate, lang) {
@@ -99,13 +106,8 @@
         panel.setAttribute('aria-hidden', 'true');
         if (isRTL(lang)) panel.setAttribute('dir', 'rtl');
 
-        var pct = data.goalAmount > 0 ? Math.min(100, (data.totalAmount / data.goalAmount) * 100) : 0;
-        var raisedStr = formatAmount(data.totalAmount, lang, data);
-        var goalStr = formatAmount(data.goalAmount, lang, data);
-
-        // Bucket SVG: a wooden bucket outline with masked water fill.
-        // Water rect uses CSS transform scaleY based on percent.
-        var waterScale = (pct / 100).toFixed(3);
+        var pct = Math.max(0, Math.min(100, Number(data.progressPercent) || 0));
+        var pctStr = formatPercent(pct, lang, percentDecimals(pct));
 
         panel.innerHTML = (
             '<div class="suu-dw-header">' +
@@ -117,50 +119,21 @@
             '</div>' +
 
             '<div class="suu-dw-main">' +
-              '<div class="suu-dw-bucket-wrap">' +
-                '<div class="suu-dw-bucket">' +
-                  '<svg viewBox="0 0 130 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">' +
-                    '<defs>' +
-                      '<linearGradient id="suu-dw-water-gradient" x1="0" y1="0" x2="0" y2="1">' +
-                        '<stop offset="0%" stop-color="#6FB3FF" stop-opacity="0.95"/>' +
-                        '<stop offset="100%" stop-color="#2E6FB8" stop-opacity="0.98"/>' +
-                      '</linearGradient>' +
-                      '<linearGradient id="suu-dw-bucket-grad" x1="0" y1="0" x2="0" y2="1">' +
-                        '<stop offset="0%" stop-color="#c89968"/>' +
-                        '<stop offset="100%" stop-color="#8b6638"/>' +
-                      '</linearGradient>' +
-                      // Clip path: defines the inner shape of the bucket (where water lives)
-                      '<clipPath id="suu-dw-bucket-clip">' +
-                        '<path d="M28 38 L102 38 L94 110 Q94 116 88 116 L42 116 Q36 116 36 110 Z"/>' +
-                      '</clipPath>' +
-                    '</defs>' +
-
-                    // Bucket handle (behind body)
-                    '<path d="M38 38 Q38 18 65 18 Q92 18 92 38" stroke="#5a3a1c" stroke-width="2.5" fill="none" stroke-linecap="round"/>' +
-
-                    // Bucket body outline (wood-look)
-                    '<path d="M28 38 L102 38 L94 110 Q94 116 88 116 L42 116 Q36 116 36 110 Z" fill="url(#suu-dw-bucket-grad)" stroke="#5a3a1c" stroke-width="1.5"/>' +
-
-                    // Wood plank lines
-                    '<line x1="48" y1="40" x2="46" y2="114" stroke="#6b4626" stroke-width="0.8" opacity="0.5"/>' +
-                    '<line x1="65" y1="40" x2="65" y2="115" stroke="#6b4626" stroke-width="0.8" opacity="0.5"/>' +
-                    '<line x1="82" y1="40" x2="84" y2="114" stroke="#6b4626" stroke-width="0.8" opacity="0.5"/>' +
-
-                    // Water (clipped to bucket interior, scaleY animated)
-                    '<g clip-path="url(#suu-dw-bucket-clip)">' +
-                      '<rect class="suu-dw-water" x="28" y="38" width="74" height="78" style="transform: scaleY(' + waterScale + '); transform-origin: center bottom; transform-box: fill-box;"/>' +
-                      '<ellipse class="suu-dw-wave" cx="65" cy="40" rx="42" ry="3" style="transform: translateY(' + (78 - 78 * pct / 100).toFixed(1) + 'px); transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);"/>' +
-                    '</g>' +
-
-                    // Top metal rim (in front of water for clean edge)
-                    '<rect x="26" y="36" width="78" height="5" rx="2" fill="#5a3a1c"/>' +
-                    '<rect x="26" y="36" width="78" height="1.5" fill="#8b6638"/>' +
-                  '</svg>' +
+              // Liquid-glass capsule: the fill slides in on open, the number
+              // counts up with it. Pure CSS/DOM — no SVG, no library.
+              '<div class="suu-dw-progress-wrap">' +
+                '<div class="suu-dw-percent">' + pctStr + '</div>' +
+                '<div class="suu-dw-capsule" role="img" aria-label="' +
+                    escapeAttr(t.progressLabel + ': ' + pctStr) + '">' +
+                  '<div class="suu-dw-liquid">' +
+                    '<span class="suu-dw-liquid-flow" aria-hidden="true"></span>' +
+                    '<span class="suu-dw-meniscus" aria-hidden="true"></span>' +
+                  '</div>' +
+                  '<span class="suu-dw-sheen" aria-hidden="true"></span>' +
                 '</div>' +
-                '<div class="suu-dw-percent">' + Math.round(pct) + '%</div>' +
-                '<div class="suu-dw-amount-row">' +
-                  '<strong>' + raisedStr + '</strong>' +
-                  '<span>/ ' + goalStr + '</span>' +
+                '<div class="suu-dw-progress-row">' +
+                  '<strong>' + escapeHtml(t.progressLabel) + '</strong>' +
+                  (t.goalNote ? '<span>' + escapeHtml(t.goalNote) + '</span>' : '') +
                 '</div>' +
               '</div>' +
 
@@ -186,14 +159,14 @@
                 '<button class="suu-dw-back-btn" aria-label="' + escapeAttr(t.close) + '" type="button">←</button>' +
                 '<span class="suu-dw-receipts-title">' + escapeHtml(t.receiptsTitle) + '</span>' +
               '</div>' +
-              renderReceiptList(data.receipts, t, lang, data) +
+              renderReceiptList(data.receipts, t, lang) +
             '</div>'
         );
 
         return panel;
     }
 
-    function renderReceiptList(receipts, t, lang, data) {
+    function renderReceiptList(receipts, t, lang) {
         if (!receipts || !receipts.length) {
             return '<div class="suu-dw-no-receipts">' + escapeHtml(t.noReceipts) + '</div>';
         }
@@ -206,14 +179,14 @@
             var r = sorted[i];
             var charity = escapeHtml(r.charity || '');
             var date = escapeHtml(formatDate(r.date, lang));
-            var amount = (r.amount != null) ? formatAmount(r.amount, lang, data) : '';
+            var share = (r.sharePercent != null) ? '+' + formatPercent(r.sharePercent, lang, 1) : '';
             var url = r.url ? escapeAttr(r.url) : '';
             html += '<li class="suu-dw-receipt-item">' +
                       '<div class="suu-dw-receipt-meta">' +
                         '<span class="suu-dw-receipt-charity">' + charity + '</span>' +
                         '<span class="suu-dw-receipt-date">' + date + '</span>' +
                       '</div>' +
-                      (amount ? '<span class="suu-dw-receipt-amount">' + amount + '</span>' : '') +
+                      (share ? '<span class="suu-dw-receipt-share" title="' + escapeAttr(t.shareLabel || '') + '">' + share + '</span>' : '') +
                       (url ? '<a class="suu-dw-receipt-link" href="' + url + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(t.view) + '</a>' : '') +
                     '</li>';
         }
@@ -230,8 +203,48 @@
     }
     function escapeAttr(s) { return escapeHtml(s); }
 
+    // ---------- Progress animation ----------
+    // Runs every time the panel opens: the liquid slides in from empty and the
+    // number counts up on the same easing curve, so they land together.
+    var FILL_DURATION = 1400;
+
+    function playProgress(panel, pct, lang) {
+        var liquid = panel.querySelector('.suu-dw-liquid');
+        var label = panel.querySelector('.suu-dw-percent');
+        var decimals = percentDecimals(pct);
+        var target = formatPercent(pct, lang, decimals);
+
+        if (prefersReducedMotion() || !window.requestAnimationFrame) {
+            if (liquid) liquid.style.width = pct + '%';
+            if (label) label.textContent = target;
+            return;
+        }
+
+        if (liquid) {
+            liquid.style.width = '0%';
+            // Reading a layout property flushes the reset, so the transition
+            // restarts on every open instead of being collapsed into one frame.
+            void liquid.offsetWidth;
+            liquid.style.width = pct + '%';
+        }
+
+        if (!label) return;
+        label.textContent = formatPercent(0, lang, decimals);
+        var started = null;
+        function step(now) {
+            if (started === null) started = now;
+            var p = Math.min(1, (now - started) / FILL_DURATION);
+            // easeOutCubic — the CSS cubic-bezier(0.22, 1, 0.36, 1) twin.
+            var eased = 1 - Math.pow(1 - p, 3);
+            label.textContent = formatPercent(pct * eased, lang, decimals);
+            if (p < 1) window.requestAnimationFrame(step);
+            else label.textContent = target;
+        }
+        window.requestAnimationFrame(step);
+    }
+
     // ---------- Wire up interactions ----------
-    function attachHandlers(fab, panel) {
+    function attachHandlers(fab, panel, pct, lang) {
         var mainView = panel.querySelector('.suu-dw-main');
         var receiptsView = panel.querySelector('.suu-dw-receipts');
         var receiptsToggle = panel.querySelector('.suu-dw-receipts-toggle');
@@ -253,6 +266,7 @@
             panel.setAttribute('aria-hidden', 'false');
             fab.setAttribute('aria-expanded', 'true');
             showReceipts(false);
+            playProgress(panel, pct, lang);
         }
         function closePanel() {
             panel.classList.remove('suu-dw-open');
@@ -296,11 +310,12 @@
             })
             .then(function (data) {
                 var t = (data.translations && data.translations[lang]) || (data.translations && data.translations.tr) || {};
+                var pct = Math.max(0, Math.min(100, Number(data.progressPercent) || 0));
                 var fab = buildFab(t);
                 var panel = buildPanel(t, data, lang);
                 document.body.appendChild(fab);
                 document.body.appendChild(panel);
-                attachHandlers(fab, panel);
+                attachHandlers(fab, panel, pct, lang);
             })
             .catch(function (err) {
                 // Silent failure — widget is non-essential, don't break the page

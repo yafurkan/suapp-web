@@ -4,10 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Bağış Dekontları — Suu Şeffaflık Kaydı</title>
-    <meta name="description" content="Suu Premium gelirinden yapılan bağışların banka dekontları. Hangi kuruma, hangi tarihte, ne kadar gönderildi — tamamı açık kayıt." />
+    <meta name="description" content="Suu Premium gelirinden yapılan bağışların banka dekontları. Hangi kuruma, hangi tarihte gönderildi ve hedefin yüzde kaçı tamamlandı — tamamı açık kayıt." />
 
     <meta property="og:title" content="Bağış Dekontları — Suu Şeffaflık Kaydı" />
-    <meta property="og:description" content="Suu Premium gelirinden yapılan bağışların banka dekontları, tarih ve tutarlarıyla birlikte." />
+    <meta property="og:description" content="Suu Premium gelirinden yapılan bağışların banka dekontları; tarih, kurum ve hedefe ilerleme yüzdesiyle birlikte." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://suuapp.com/donations/receipts/" />
     <meta property="og:image" content="https://suuapp.com/assets/og-image.png" />
@@ -53,12 +53,20 @@
       .lede { color: var(--muted); margin: 0 0 24px; max-width: 34em; }
       .en { font-size: 14px; color: var(--muted); font-style: italic; }
       .total {
-        display: flex; flex-wrap: wrap; gap: 4px 28px; align-items: baseline;
         background: var(--panel); border: 1px solid var(--line);
         border-radius: 8px; padding: 16px 18px; margin: 0 0 32px;
       }
+      .total .row {
+        display: flex; flex-wrap: wrap; gap: 4px 28px; align-items: baseline;
+      }
       .total .big { font-size: 26px; font-weight: 700; }
       .total .lbl { font-size: 14px; color: var(--muted); }
+      .bar {
+        height: 8px; border-radius: 999px; background: var(--line);
+        margin-top: 12px; overflow: hidden;
+      }
+      .bar span { display: block; height: 100%; background: var(--accent); border-radius: 999px; }
+      .goal { font-size: 13px; color: var(--muted); margin: 8px 0 0; }
       .tablewrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; }
       table { border-collapse: collapse; width: 100%; min-width: 480px; }
       th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); }
@@ -91,14 +99,20 @@
         <h1>Bağış dekontları</h1>
         <p class="lede">
           Suu Premium gelirinden yapılan bağışların banka dekontları.
-          Hangi kuruma, hangi tarihte, ne kadar gönderildi — hepsi burada.
+          Hangi kuruma, hangi tarihte gönderildi ve hedefin ne kadarı tamamlandı — hepsi burada.
         </p>
         <p class="en">Bank transfer receipts for donations funded by Suu Premium revenue.</p>
       </header>
 
       <div class="total">
-        <span class="big">—</span>
-        <span class="lbl">bugüne kadar bağışlanan toplam · son güncelleme 2026-06-07</span>
+        <div class="row">
+          <span class="big">%9</span>
+          <span class="lbl">hedefe ilerleme · son güncelleme 2026-06-07</span>
+        </div>
+        <div class="bar" role="img" aria-label="Hedefe ilerleme: %9">
+          <span style="width:9%"></span>
+        </div>
+        <p class="goal">%100 = Afrika'da bir su kuyusu için gereken inşaat bütçesi.</p>
       </div>
 
       <div class="tablewrap">
@@ -107,7 +121,7 @@
             <tr>
               <th scope="col">Tarih</th>
               <th scope="col">Kurum</th>
-              <th scope="col">Tutar</th>
+              <th scope="col">Hedefe katkı</th>
               <th scope="col">Dekont</th>
             </tr>
           </thead>
@@ -115,13 +129,13 @@
         <tr>
           <td>Haziran 2026</td>
           <td>Su Kuyusu · Water Wells</td>
-          <td class="num">—</td>
+          <td class="num">+%1,5</td>
           <td><a href="/donations/receipts/su-kuyusu-2026-06.webp">Dekontu gör<span class="sr">— Su Kuyusu · Water Wells</span></a></td>
         </tr>
         <tr>
           <td>Mayıs 2026</td>
           <td>Suu Premium · İlk Bağış</td>
-          <td class="num">—</td>
+          <td class="num">+%7,5</td>
           <td><span class="pending">Dekont yüklenmedi</span></td>
         </tr>
           </tbody>
@@ -129,8 +143,10 @@
       </div>
 
       <p class="note">
-        Dekontlarda kişisel bilgiler (hesap numarası, adres) karartılmıştır.
-        Bir kayıtla ilgili sorunuz olursa
+        Dekontlarda kişisel bilgiler (hesap numarası, adres) karartılmış,
+        tutar alanları bulanıklaştırılmıştır. Bağışın büyüklüğünü değil,
+        hedefe ne kadar yaklaşıldığını paylaşıyoruz — kurum, tarih ve dekontun
+        kendisi açık kalır. Bir kayıtla ilgili sorunuz olursa
         <a href="mailto:destek@suuapp.com">destek@suuapp.com</a> adresine yazabilirsiniz.
       </p>
 

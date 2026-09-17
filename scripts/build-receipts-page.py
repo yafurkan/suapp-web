@@ -9,6 +9,11 @@ veriyordu ama dizinde index.html yoktu; GitHub Pages 404 döndürüyordu
 (SEO denetimi, 2026-08-20). Bağlantı bir şeffaflık vaadinin parçası —
 tıklayan kullanıcı makbuzu görebilmeli.
 
+2026-09-18'den beri sayfada para tutarı yok: bağış yüzde üzerinden
+anlatılıyor (hedefin %kaçı), dekont görsellerinde tutar alanı
+bulanıklaştırılıyor. Tutarlar yalnızca donations.private.json'da
+(gitignore) durur; yüzdeleri scripts/build-donations.py üretir.
+
 donations.json robots.txt'de Disallow olduğu için veri sayfaya GÖMÜLÜR;
 istemci tarafı fetch kullanılmaz, aksi hâlde tarayıcılar boş sayfa görür.
 
@@ -43,17 +48,22 @@ def pretty_date(ym: str) -> str:
         return ym
 
 
+def fmt_pct(value: float) -> str:
+    """Türkçe yazım: yüzde işareti önde, ondalık virgüllü — %9, %1,5"""
+    text = f"{float(value):g}".replace(".", ",")
+    return f"%{text}"
+
+
 def build(data: dict) -> str:
     receipts = sorted(data["receipts"], key=lambda r: r["date"], reverse=True)
-    total = data["totalAmount"]
-    cur = data["baseCurrency"]
+    progress = float(data["progressPercent"])
     updated = data["lastUpdated"]
 
     rows = []
     for r in receipts:
         date = html.escape(pretty_date(r["date"]))
         charity = html.escape(r["charity"])
-        amount = f"{r['amount']:,}".replace(",", ".")
+        share = fmt_pct(r["sharePercent"])
         if r.get("url"):
             doc = (f'<a href="{html.escape(r["url"])}">Dekontu gör'
                    f'<span class="sr">— {charity}</span></a>')
@@ -63,12 +73,13 @@ def build(data: dict) -> str:
             f'        <tr>\n'
             f'          <td>{date}</td>\n'
             f'          <td>{charity}</td>\n'
-            f'          <td class="num">₺{amount}</td>\n'
+            f'          <td class="num">+{share}</td>\n'
             f'          <td>{doc}</td>\n'
             f'        </tr>'
         )
     tbody = "\n".join(rows)
-    total_fmt = f"{total:,}".replace(",", ".")
+    progress_fmt = fmt_pct(progress)
+    bar_width = f"{max(0.0, min(100.0, progress)):g}"
 
     return f"""<!doctype html>
 <html lang="tr">
@@ -76,10 +87,10 @@ def build(data: dict) -> str:
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Bağış Dekontları — Suu Şeffaflık Kaydı</title>
-    <meta name="description" content="Suu Premium gelirinden yapılan bağışların banka dekontları. Hangi kuruma, hangi tarihte, ne kadar gönderildi — tamamı açık kayıt." />
+    <meta name="description" content="Suu Premium gelirinden yapılan bağışların banka dekontları. Hangi kuruma, hangi tarihte gönderildi ve hedefin yüzde kaçı tamamlandı — tamamı açık kayıt." />
 
     <meta property="og:title" content="Bağış Dekontları — Suu Şeffaflık Kaydı" />
-    <meta property="og:description" content="Suu Premium gelirinden yapılan bağışların banka dekontları, tarih ve tutarlarıyla birlikte." />
+    <meta property="og:description" content="Suu Premium gelirinden yapılan bağışların banka dekontları; tarih, kurum ve hedefe ilerleme yüzdesiyle birlikte." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{URL}" />
     <meta property="og:image" content="https://suuapp.com/assets/og-image.png" />
@@ -125,12 +136,20 @@ def build(data: dict) -> str:
       .lede {{ color: var(--muted); margin: 0 0 24px; max-width: 34em; }}
       .en {{ font-size: 14px; color: var(--muted); font-style: italic; }}
       .total {{
-        display: flex; flex-wrap: wrap; gap: 4px 28px; align-items: baseline;
         background: var(--panel); border: 1px solid var(--line);
         border-radius: 8px; padding: 16px 18px; margin: 0 0 32px;
       }}
+      .total .row {{
+        display: flex; flex-wrap: wrap; gap: 4px 28px; align-items: baseline;
+      }}
       .total .big {{ font-size: 26px; font-weight: 700; }}
       .total .lbl {{ font-size: 14px; color: var(--muted); }}
+      .bar {{
+        height: 8px; border-radius: 999px; background: var(--line);
+        margin-top: 12px; overflow: hidden;
+      }}
+      .bar span {{ display: block; height: 100%; background: var(--accent); border-radius: 999px; }}
+      .goal {{ font-size: 13px; color: var(--muted); margin: 8px 0 0; }}
       .tablewrap {{ overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; }}
       table {{ border-collapse: collapse; width: 100%; min-width: 480px; }}
       th, td {{ text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); }}
@@ -154,6 +173,7 @@ def build(data: dict) -> str:
       a:focus-visible {{ outline: 2px solid var(--accent); outline-offset: 3px; }}
     </style>
     <script src="/assets/js/analytics.js" defer></script>
+    <script src="/assets/js/special-days.js" defer></script>
   </head>
   <body>
     <div class="wrap">
@@ -162,14 +182,20 @@ def build(data: dict) -> str:
         <h1>Bağış dekontları</h1>
         <p class="lede">
           Suu Premium gelirinden yapılan bağışların banka dekontları.
-          Hangi kuruma, hangi tarihte, ne kadar gönderildi — hepsi burada.
+          Hangi kuruma, hangi tarihte gönderildi ve hedefin ne kadarı tamamlandı — hepsi burada.
         </p>
         <p class="en">Bank transfer receipts for donations funded by Suu Premium revenue.</p>
       </header>
 
       <div class="total">
-        <span class="big">₺{total_fmt}</span>
-        <span class="lbl">bugüne kadar bağışlanan toplam · son güncelleme {updated}</span>
+        <div class="row">
+          <span class="big">{progress_fmt}</span>
+          <span class="lbl">hedefe ilerleme · son güncelleme {updated}</span>
+        </div>
+        <div class="bar" role="img" aria-label="Hedefe ilerleme: {progress_fmt}">
+          <span style="width:{bar_width}%"></span>
+        </div>
+        <p class="goal">%100 = Afrika'da bir su kuyusu için gereken inşaat bütçesi.</p>
       </div>
 
       <div class="tablewrap">
@@ -178,7 +204,7 @@ def build(data: dict) -> str:
             <tr>
               <th scope="col">Tarih</th>
               <th scope="col">Kurum</th>
-              <th scope="col">Tutar</th>
+              <th scope="col">Hedefe katkı</th>
               <th scope="col">Dekont</th>
             </tr>
           </thead>
@@ -189,8 +215,10 @@ def build(data: dict) -> str:
       </div>
 
       <p class="note">
-        Dekontlarda kişisel bilgiler (hesap numarası, adres) karartılmıştır.
-        Bir kayıtla ilgili sorunuz olursa
+        Dekontlarda kişisel bilgiler (hesap numarası, adres) karartılmış,
+        tutar alanları bulanıklaştırılmıştır. Bağışın büyüklüğünü değil,
+        hedefe ne kadar yaklaşıldığını paylaşıyoruz — kurum, tarih ve dekontun
+        kendisi açık kalır. Bir kayıtla ilgili sorunuz olursa
         <a href="mailto:destek@suuapp.com">destek@suuapp.com</a> adresine yazabilirsiniz.
       </p>
 

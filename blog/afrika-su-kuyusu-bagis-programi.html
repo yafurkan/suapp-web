@@ -162,7 +162,7 @@
         .footer-nav { border-top: 1px solid #eee; padding-top: 30px; margin-top: 50px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
         .footer-nav a { color: #2E6FB8; text-decoration: none; font-size: 14px; display: flex; align-items: center; gap: 6px; }
     </style>
-    <link rel="stylesheet" href="../donation-widget.css?v=2">
+    <link rel="stylesheet" href="../donation-widget.css?v=3">
     <script src="/assets/js/analytics.js" defer></script>
     <script src="/assets/js/special-days.js" defer></script>
 </head>
@@ -185,7 +185,7 @@
 
 <div class="container">
 
-    <p class="intro">Suu sıradan bir su takip uygulaması değil. Premium aboneliklerinin <strong>%2'si</strong> her ay Afrika'da temiz su kuyusu inşaatı projelerine bağışlanıyor. Bu sayfayı şu an sağ alttaki damla ikonuna tıklayarak canlı bağış toplamını ve dekontları kontrol edebilirsin. Hiçbir kapalı kapı yok.</p>
+    <p class="intro">Suu sıradan bir su takip uygulaması değil. Premium aboneliklerinin <strong>%2'si</strong> her ay Afrika'da temiz su kuyusu inşaatı projelerine bağışlanıyor. Bu sayfayı şu an sağ alttaki damla ikonuna tıklayarak kuyu hedefine ne kadar yaklaşıldığını ve dekontları kontrol edebilirsin. Hiçbir kapalı kapı yok.</p>
 
     <h2>Neden %2? Neden Şeffaflık?</h2>
 
@@ -203,15 +203,15 @@
         <div class="step-num">1</div>
         <div class="step-content">
             <h3>Canlı bağış takip widget'ı</h3>
-            <p>Suuapp.com'un her sayfasında sağ alt köşede yuvarlam mavi bir damla butonu görürsün (Arapça sayfalarda sol alta otomatik geçer). Tıklayınca animasyonlu bir ahşap kova açılır; toplam bağış arttıkça kova suyla dolar.</p>
+            <p>Suuapp.com'un her sayfasında sağ alt köşede yuvarlam mavi bir damla butonu görürsün (Arapça sayfalarda sol alta otomatik geçer). Tıklayınca animasyonlu bir ahşap kova açılır; hedefe yaklaştıkça kova suyla dolar.</p>
         </div>
     </div>
 
     <div class="step-card">
         <div class="step-num">2</div>
         <div class="step-content">
-            <h3>Otomatik para birimi dönüşümü</h3>
-            <p>Toplam tutar baz olarak Türk Lirası tutuluyor; widget kullanıcının diline göre otomatik olarak USD/SAR/RUB'a çeviriyor. Suudi bir kullanıcı — görürken, Amerikalı —, Rus —, Türk — görüyor — aynı bağış, herkesin kendi parasıyla.</p>
+            <h3>Tutar değil, hedefe ilerleme</h3>
+            <p>Widget para tutarı göstermiyor; hedefin yüzde kaçının tamamlandığını gösteriyor. %100, Afrika'da bir su kuyusunun inşaat bütçesine denk geliyor. Yedi dilin hepsinde aynı sayı görünüyor — kur çevirisi yok, tutar tartışması yok. Bunun sebebi basit: bağışın kaç lira olduğu bizim bilançomuzun hikâyesi, okuyanın merak ettiği şeyse kuyunun ne kadar yaklaştığı.</p>
         </div>
     </div>
 
@@ -219,7 +219,7 @@
         <div class="step-num">3</div>
         <div class="step-content">
             <h3>Banka dekontları publik</h3>
-            <p>Her ay yapılan banka transfer dekontu PDF olarak <a href="https://suuapp.com/donations/receipts/">suuapp.com/donations/receipts/</a> dizinine yükleniyor ve widget içinden tek tıkla görüntülenebiliyor. Hangi kuruma, hangi tarihte, ne kadar gönderildi — hepsi açık.</p>
+            <p>Her ay yapılan banka transfer dekontu <a href="https://suuapp.com/donations/receipts/">suuapp.com/donations/receipts/</a> dizinine yükleniyor ve widget içinden tek tıkla görüntülenebiliyor. Hangi kuruma, hangi tarihte gönderildi — hepsi açık. Görselde yalnızca tutar alanı bulanıklaştırılıyor; kurum adı, tarih ve banka kaydının kendisi olduğu gibi duruyor.</p>
         </div>
     </div>
 
@@ -227,7 +227,7 @@
         <div class="step-num">4</div>
         <div class="step-content">
             <h3>Veri kaynağı düz JSON + git</h3>
-            <p>Tüm bağış kayıtları <a href="https://suuapp.com/donations.json">donations.json</a> dosyasında saklanıyor — GitHub'da herkese açık. Her güncellemenin tarihi, neden değiştiği ve farkı git commit geçmişinde sonsuza dek izleniyor. Yani 5 yıl sonra "geçmiş ay neye bağışlandı" sorusunun cevabı kayıt altında.</p>
+            <p>Tüm bağış kayıtları <a href="https://suuapp.com/donations.json">donations.json</a> dosyasında saklanıyor — GitHub'da herkese açık, tutar değil yüzde olarak. Her güncellemenin tarihi, neden değiştiği ve farkı git commit geçmişinde sonsuza dek izleniyor. Yani 5 yıl sonra "geçmiş ay neye bağışlandı" sorusunun cevabı kayıt altında.</p>
         </div>
     </div>
 
@@ -235,31 +235,31 @@
         <div class="step-num">5</div>
         <div class="step-content">
             <h3>Hiçbir kişisel veri kullanılmıyor</h3>
-            <p>Bağış sistemi yalnızca toplam tutarı, hedefi ve dekont bilgisini içeriyor. Kimin Premium aldığı, ne zaman, hangi ülkeden gibi hiçbir veri bağış kayıtlarına yansımıyor — KVKK m.4 ve GDPR m.5(1)(a) şeffaflık ilkesiyle tam uyumlu.</p>
+            <p>Bağış sistemi yalnızca hedefe ilerleme yüzdesini, bağış tarihlerini ve dekont bilgisini içeriyor. Kimin Premium aldığı, ne zaman, hangi ülkeden gibi hiçbir veri bağış kayıtlarına yansımıyor — KVKK m.4 ve GDPR m.5(1)(a) şeffaflık ilkesiyle tam uyumlu.</p>
         </div>
     </div>
 
     <div class="live-stats">
-        <h3>📊 Canlı Bağış Toplamı (11 Mayıs 2026)</h3>
+        <h3>📊 Hedefe İlerleme (7 Haziran 2026)</h3>
         <div class="stat-grid">
             <div class="stat-card">
-                <div class="val">—</div>
-                <div class="lbl">Toplam</div>
+                <div class="val">%9</div>
+                <div class="lbl">Kuyu hedefi tamamlandı</div>
             </div>
             <div class="stat-card">
-                <div class="val">—</div>
-                <div class="lbl">USD karşılığı</div>
+                <div class="val">+%1,5</div>
+                <div class="lbl">Haziran 2026 bağışı</div>
             </div>
             <div class="stat-card">
-                <div class="val">—</div>
-                <div class="lbl">SAR karşılığı</div>
+                <div class="val">+%7,5</div>
+                <div class="lbl">Mayıs 2026 bağışı</div>
             </div>
             <div class="stat-card">
-                <div class="val">—</div>
-                <div class="lbl">RUB karşılığı</div>
+                <div class="val">%2</div>
+                <div class="lbl">Premium gelirinden ayrılan pay</div>
             </div>
         </div>
-        <p style="margin-top:14px; color:#1e40af; font-size:0.9rem;">Hedef: — — bir su kuyusu için yeterli inşaat bütçesi. Sağ alttaki damla butonundan anlık takip et.</p>
+        <p style="margin-top:14px; color:#1e40af; font-size:0.9rem;">%100 = bir su kuyusu için yeterli inşaat bütçesi. Sağ alttaki damla butonundan anlık takip et.</p>
     </div>
 
     <h2>Rakiplerde Bu Şeffaflık Var Mı?</h2>
@@ -276,8 +276,8 @@
         </thead>
         <tbody>
             <tr><td>Bağış programı var mı?</td><td class="yes">✓ %2</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
-            <tr><td>Canlı bağış toplamı görünüyor mu?</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
-            <tr><td>Banka dekontları publik mi?</td><td class="yes">✓ PDF</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+            <tr><td>Hedefe ilerleme canlı görünüyor mu?</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+            <tr><td>Banka dekontları publik mi?</td><td class="yes">✓ görsel</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
             <tr><td>Veri git'de denetlenebilir mi?</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
             <tr><td>Çok dilli bağış göstergesi</td><td class="yes">✓ TR/EN/AR/DE/IT/RU/HI</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
         </tbody>
@@ -338,7 +338,7 @@
 
 </div>
 <script src="../lang-switcher.js?v=3" defer></script>
-<script src="../donation-widget.js?v=2" defer></script>
+<script src="../donation-widget.js?v=3" defer></script>
 <div class="sticky-download-bar" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:rgba(255,255,255,0.97);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);padding:10px 12px;padding-bottom:calc(10px + env(safe-area-inset-bottom,0px));box-shadow:0 -2px 16px rgba(0,0,0,0.12);gap:8px;justify-content:center;">
     <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" style="flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:13px 14px;border-radius:12px;text-decoration:none;font-weight:600;font-size:14px;min-height:48px;background:#000;color:#fff;max-width:200px;" target="_blank" rel="noopener">
         <i class="fab fa-apple"></i> App Store

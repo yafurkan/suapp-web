@@ -450,21 +450,21 @@
                 Tüm bağış işlemleri kamuya açık olarak <a href="https://suuapp.com">suuapp.com</a> üzerindeki bağış takip widget'ında yayımlanır:
             </p>
             <ul>
-                <li><strong>Toplam Bağışlanan Tutar:</strong> Anlık olarak güncellenir (baz para birimi TRY; USD/SAR/RUB olarak otomatik dönüşüm gösterilir).</li>
-                <li><strong>Bağış Dekontları:</strong> Her ay yapılan banka transfer dekontları PDF olarak <a href="https://suuapp.com/donations/receipts/">suuapp.com/donations/receipts/</a> dizininde herkese açıktır.</li>
+                <li><strong>Hedefe İlerleme:</strong> Bağış hedefinin yüzde kaçının tamamlandığı yayımlanır. Para tutarı yayımlanmaz; %100, bir su kuyusunun inşaat bütçesine karşılık gelir.</li>
+                <li><strong>Bağış Dekontları:</strong> Her ay yapılan banka transfer dekontları <a href="https://suuapp.com/donations/receipts/">suuapp.com/donations/receipts/</a> dizininde herkese açıktır. Görsellerde kişisel bilgiler karartılır, tutar alanları bulanıklaştırılır; kurum adı ve tarih açık kalır.</li>
                 <li><strong>Bağış Yapılan Kuruluşlar:</strong> Bağış yapılan dernek/vakıf isimleri ve tarihler widget içerisinde listelenir.</li>
                 <li><strong>Veri Kaynağı:</strong> Tüm veriler <a href="https://suuapp.com/donations.json">donations.json</a> dosyasında düz metin olarak tutulur; geliştirici tarafından manuel güncellenir ve git versiyon kontrolünde takip edilir.</li>
             </ul>
             <h3>15.2 Kullanıcı Verisi Kullanılmaz</h3>
             <p>
-                Bağış takip sistemi <strong>yalnızca agregat finansal veriyi</strong> içerir — hiçbir kişisel kullanıcı verisi (kim Premium aldı, ne zaman, hangi ülkeden vb.) bağış kayıtlarında yer almaz. Bağış miktarı her ay tahsil edilen toplam Premium gelirine göre hesaplanır ve anonim olarak yayımlanır.
+                Bağış takip sistemi <strong>yalnızca agregat ilerleme verisi</strong> içerir — hiçbir kişisel kullanıcı verisi (kim Premium aldı, ne zaman, hangi ülkeden vb.) bağış kayıtlarında yer almaz. Bağış tutarı her ay tahsil edilen toplam Premium gelirine göre hesaplanır; yayımlanan şey tutarın kendisi değil, hedefe ilerleme yüzdesidir.
             </p>
             <h3>15.3 Bağış Akışı</h3>
             <ol>
                 <li>App Store ve Google Play, Premium abonelik tahsilatını yapar ve %30 komisyon sonrası net tutarı geliştiriciye aktarır.</li>
                 <li>Her ay net Premium gelirinin %2'si, geliştirici tarafından seçilen kayıtlı bir yardım kuruluşuna (örn. Türkiye Diyanet Vakfı, IHH, Deniz Feneri vb. su kuyusu projelerine bağış kabul eden kurumlar) transfer edilir.</li>
-                <li>Banka dekontu PDF olarak suuapp.com/donations/receipts/ dizinine yüklenir ve donations.json güncellenir.</li>
-                <li>Bağış takip widget'ı tüm kullanıcılara güncel rakamı ve dekont listesini gösterir.</li>
+                <li>Banka dekontu, tutar alanı bulanıklaştırılarak suuapp.com/donations/receipts/ dizinine yüklenir ve donations.json güncellenir.</li>
+                <li>Bağış takip widget'ı tüm kullanıcılara güncel ilerleme yüzdesini ve dekont listesini gösterir.</li>
             </ol>
             <p>
                 Bu uygulama, KVKK madde 4 "açıklık ve şeffaflık" ile GDPR madde 5(1)(a) "lawfulness, fairness and transparency" ilkeleriyle tam uyumlu çalışır.
@@ -690,21 +690,21 @@
                 All donation transactions are published publicly via the donation tracker widget on <a href="https://suuapp.com">suuapp.com</a>:
             </p>
             <ul>
-                <li><strong>Total Amount Donated:</strong> Updated in real time (base currency TRY; automatically converted to USD/SAR/RUB based on user language).</li>
-                <li><strong>Donation Receipts:</strong> Monthly bank transfer receipts are published as PDFs under <a href="https://suuapp.com/donations/receipts/">suuapp.com/donations/receipts/</a> and accessible to anyone.</li>
+                <li><strong>Progress to Goal:</strong> We publish what percentage of the donation goal is complete. No monetary amounts are published; 100% corresponds to the construction budget of one water well.</li>
+                <li><strong>Donation Receipts:</strong> Monthly bank transfer receipts are published under <a href="https://suuapp.com/donations/receipts/">suuapp.com/donations/receipts/</a> and accessible to anyone. Personal details are redacted and the amount fields are blurred out; the charity name and date remain visible.</li>
                 <li><strong>Recipient Organizations:</strong> The names of charities/foundations receiving each donation and the dates are listed inside the widget.</li>
                 <li><strong>Data Source:</strong> All data is stored as plain text in <a href="https://suuapp.com/donations.json">donations.json</a>, manually updated by the developer and tracked under git version control for full audit history.</li>
             </ul>
             <h3>15.2 No User Data Used</h3>
             <p>
-                The donation tracking system contains <strong>only aggregate financial data</strong> — no personal user information (who purchased Premium, when, from which country, etc.) appears in donation records. The donation amount is calculated from total monthly Premium revenue and published anonymously.
+                The donation tracking system contains <strong>only aggregate progress data</strong> — no personal user information (who purchased Premium, when, from which country, etc.) appears in donation records. The donation amount is calculated from total monthly Premium revenue; what we publish is not the amount itself but the percentage of the goal reached.
             </p>
             <h3>15.3 Donation Workflow</h3>
             <ol>
                 <li>App Store and Google Play process Premium subscription payments and transfer net amounts (after 30% commission) to the developer.</li>
                 <li>Each month, 2% of net Premium revenue is transferred by the developer to a registered charity (e.g. organizations accepting water well project donations such as Türkiye Diyanet Vakfı, IHH, Deniz Feneri, or international NGOs).</li>
-                <li>The bank receipt PDF is uploaded to suuapp.com/donations/receipts/ and donations.json is updated.</li>
-                <li>The donation tracker widget displays the updated total and receipt list to all users.</li>
+                <li>The bank receipt is uploaded to suuapp.com/donations/receipts/ with its amount field blurred out, and donations.json is updated.</li>
+                <li>The donation tracker widget displays the updated progress percentage and receipt list to all users.</li>
             </ol>
             <p>
                 This practice is fully aligned with KVKK Article 4 "openness and transparency" and GDPR Article 5(1)(a) "lawfulness, fairness and transparency" principles.
@@ -930,21 +930,21 @@
                 جميع عمليات التبرع تُنشر علناً عبر أداة تتبع التبرعات على موقع <a href="https://suuapp.com">suuapp.com</a>:
             </p>
             <ul>
-                <li><strong>إجمالي المبلغ المتبرع به:</strong> يُحدّث في الوقت الفعلي (العملة الأساسية ليرة تركية؛ يُحوّل تلقائياً إلى دولار أمريكي/ريال سعودي/روبل روسي حسب لغة المستخدم).</li>
-                <li><strong>إيصالات التبرع:</strong> إيصالات التحويل البنكي الشهرية تُنشر كملفات PDF على <a href="https://suuapp.com/donations/receipts/">suuapp.com/donations/receipts/</a> ومتاحة للجميع.</li>
+                <li><strong>التقدّم نحو الهدف:</strong> نَنشر نسبة ما اكتمل من هدف التبرع. لا تُنشر أي مبالغ مالية؛ 100% تعادل ميزانية بناء بئر مياه واحدة.</li>
+                <li><strong>إيصالات التبرع:</strong> إيصالات التحويل البنكي الشهرية تُنشر على <a href="https://suuapp.com/donations/receipts/">suuapp.com/donations/receipts/</a> ومتاحة للجميع. تُحجب المعلومات الشخصية ويُطمس حقل المبلغ؛ ويبقى اسم الجمعية والتاريخ ظاهرين.</li>
                 <li><strong>الجمعيات المستفيدة:</strong> أسماء الجمعيات/المؤسسات المستفيدة وتواريخ التبرع مذكورة داخل الأداة.</li>
                 <li><strong>مصدر البيانات:</strong> جميع البيانات مخزّنة كنص عادي في <a href="https://suuapp.com/donations.json">donations.json</a>، يُحدّثها المطور يدوياً وتُتبع عبر نظام git لتاريخ تدقيق كامل.</li>
             </ul>
             <h3>15.2 عدم استخدام بيانات المستخدم</h3>
             <p>
-                نظام تتبع التبرعات يحتوي على <strong>بيانات مالية مجمّعة فقط</strong> — لا تظهر أي معلومات شخصية للمستخدمين (من اشترى Premium، متى، من أي دولة، إلخ) في سجلات التبرع. يُحسب مبلغ التبرع من إجمالي إيرادات Premium الشهرية ويُنشر بشكل مجهول الهوية.
+                نظام تتبع التبرعات يحتوي على <strong>بيانات تقدّم مجمّعة فقط</strong> — لا تظهر أي معلومات شخصية للمستخدمين (من اشترى Premium، متى، من أي دولة، إلخ) في سجلات التبرع. يُحسب مبلغ التبرع من إجمالي إيرادات Premium الشهرية، لكن ما يُنشر ليس المبلغ نفسه بل نسبة التقدّم نحو الهدف.
             </p>
             <h3>15.3 آلية التبرع</h3>
             <ol>
                 <li>يعالج App Store و Google Play مدفوعات اشتراك Premium ويحوّلان المبلغ الصافي (بعد عمولة 30%) إلى المطور.</li>
                 <li>كل شهر، يُحوّل المطور 2% من إيرادات Premium الصافية إلى جمعية خيرية مسجّلة (مثل المنظمات التي تقبل تبرعات لمشاريع آبار المياه).</li>
-                <li>يُرفع إيصال التحويل البنكي كملف PDF إلى suuapp.com/donations/receipts/ ويُحدّث donations.json.</li>
-                <li>تعرض أداة تتبع التبرعات الإجمالي المُحدّث وقائمة الإيصالات لجميع المستخدمين.</li>
+                <li>يُرفع إيصال التحويل البنكي إلى suuapp.com/donations/receipts/ بعد طمس حقل المبلغ، ويُحدّث donations.json.</li>
+                <li>تعرض أداة تتبع التبرعات نسبة التقدّم المُحدّثة وقائمة الإيصالات لجميع المستخدمين.</li>
             </ol>
             <p>
                 هذه الممارسة متوافقة تماماً مع المادة 4 من KVKK "العلانية والشفافية" والمادة 5(1)(أ) من GDPR "المشروعية والإنصاف والشفافية".
@@ -1170,21 +1170,21 @@
                 Все операции по пожертвованиям публикуются открыто через виджет трекера пожертвований на <a href="https://suuapp.com">suuapp.com</a>:
             </p>
             <ul>
-                <li><strong>Общая сумма пожертвований:</strong> обновляется в реальном времени (базовая валюта — TRY; автоматически конвертируется в USD/SAR/RUB по языку пользователя).</li>
-                <li><strong>Квитанции о пожертвованиях:</strong> ежемесячные банковские квитанции публикуются в PDF по адресу <a href="https://suuapp.com/donations/receipts/">suuapp.com/donations/receipts/</a> и доступны всем.</li>
+                <li><strong>Прогресс к цели:</strong> мы публикуем, какая часть цели по пожертвованиям выполнена, в процентах. Денежные суммы не публикуются; 100% соответствуют бюджету строительства одного колодца.</li>
+                <li><strong>Квитанции о пожертвованиях:</strong> ежемесячные банковские квитанции публикуются по адресу <a href="https://suuapp.com/donations/receipts/">suuapp.com/donations/receipts/</a> и доступны всем. Личные данные закрашены, поля суммы размыты; название организации и дата остаются видимыми.</li>
                 <li><strong>Организации-получатели:</strong> названия благотворительных организаций/фондов, получивших каждое пожертвование, и даты указаны внутри виджета.</li>
                 <li><strong>Источник данных:</strong> все данные хранятся в виде простого текста в <a href="https://suuapp.com/donations.json">donations.json</a>, обновляются разработчиком вручную и отслеживаются в системе контроля версий git для полной истории аудита.</li>
             </ul>
             <h3>15.2 Пользовательские данные не используются</h3>
             <p>
-                Система учёта пожертвований содержит <strong>только агрегированные финансовые данные</strong> — никакая личная информация пользователей (кто купил Premium, когда, из какой страны и т. д.) в записях о пожертвованиях не появляется. Сумма пожертвования рассчитывается из общей месячной выручки Premium и публикуется анонимно.
+                Система учёта пожертвований содержит <strong>только агрегированные данные о прогрессе</strong> — никакая личная информация пользователей (кто купил Premium, когда, из какой страны и т. д.) в записях о пожертвованиях не появляется. Сумма пожертвования рассчитывается из общей месячной выручки Premium, но публикуется не сама сумма, а процент выполнения цели.
             </p>
             <h3>15.3 Процесс пожертвований</h3>
             <ol>
                 <li>App Store и Google Play обрабатывают платежи по Premium-подпискам и переводят чистые суммы (после комиссии 30%) разработчику.</li>
                 <li>Каждый месяц 2% чистой выручки Premium переводятся разработчиком зарегистрированной благотворительной организации (например, организациям, принимающим пожертвования на проекты колодцев, таким как Türkiye Diyanet Vakfı, IHH, Deniz Feneri, или международным НКО).</li>
-                <li>PDF банковской квитанции загружается на suuapp.com/donations/receipts/, и donations.json обновляется.</li>
-                <li>Виджет трекера пожертвований показывает обновлённую сумму и список квитанций всем пользователям.</li>
+                <li>Банковская квитанция с размытым полем суммы загружается на suuapp.com/donations/receipts/, и donations.json обновляется.</li>
+                <li>Виджет трекера пожертвований показывает обновлённый процент прогресса и список квитанций всем пользователям.</li>
             </ol>
             <p>
                 Эта практика полностью соответствует принципу «открытости и прозрачности» (ст. 4 KVKK) и «законности, справедливости и прозрачности» (ст. 5(1)(a) GDPR).

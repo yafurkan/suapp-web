@@ -157,7 +157,7 @@
         .footer-nav { border-top: 1px solid #eee; padding-top: 30px; margin-top: 50px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
         .footer-nav a { color: #2E6FB8; text-decoration: none; font-size: 14px; display: flex; align-items: center; gap: 6px; }
     </style>
-    <link rel="stylesheet" href="../../donation-widget.css?v=2">
+    <link rel="stylesheet" href="../../donation-widget.css?v=3">
     <script src="/assets/js/analytics.js" defer></script>
     <script src="/assets/js/special-days.js" defer></script>
 </head>
@@ -180,7 +180,7 @@
 
 <div class="container">
 
-    <p class="intro">Suu ليس مجرد تطبيق آخر لتتبع الماء. يتم التبرع بنسبة <strong>2%</strong> من كل اشتراك Premium شهرياً لمشاريع بناء آبار المياه النظيفة في أفريقيا. يمكنك التحقق من ذلك الآن: اضغط على أيقونة قطرة الماء في الزاوية السفلية لهذه الصفحة لرؤية إجمالي التبرعات الحي وتحميل كل إيصال. لا أبواب مغلقة.</p>
+    <p class="intro">Suu ليس مجرد تطبيق آخر لتتبع الماء. يتم التبرع بنسبة <strong>2%</strong> من كل اشتراك Premium شهرياً لمشاريع بناء آبار المياه النظيفة في أفريقيا. يمكنك التحقق من ذلك الآن: اضغط على أيقونة قطرة الماء في الزاوية السفلية لهذه الصفحة لترى كم اقتربنا من هدف البئر ولتفتح كل إيصال. لا أبواب مغلقة.</p>
 
     <h2>لماذا 2%؟ ولماذا هذه الشفافية؟</h2>
 
@@ -198,15 +198,15 @@
         <div class="step-num">1</div>
         <div class="step-content">
             <h3>أداة تتبع التبرعات الحية</h3>
-            <p>كل صفحة على suuapp.com تحتوي على زر قطرة ماء بتأثير glassmorphism في الزاوية السفلية (ينعكس تلقائياً إلى الزاوية السفلية اليسرى في الصفحات العربية). انقر عليه لفتح دلو خشبي متحرك يمتلئ بالماء مع نمو التبرعات.</p>
+            <p>كل صفحة على suuapp.com تحتوي على زر قطرة ماء بتأثير glassmorphism في الزاوية السفلية (ينعكس تلقائياً إلى الزاوية السفلية اليسرى في الصفحات العربية). انقر عليه لفتح دلو خشبي متحرك يمتلئ بالماء كلما اقتربنا من الهدف.</p>
         </div>
     </div>
 
     <div class="step-card">
         <div class="step-num">2</div>
         <div class="step-content">
-            <h3>التحويل التلقائي للعملات</h3>
-            <p>الإجمالي مخزّن بالليرة التركية لكن الأداة تحوّل تلقائياً إلى دولار أمريكي / ريال سعودي / روبل روسي حسب لغتك. المستخدم السعودي يرى — بينما الأمريكي يرى —، الروسي —، التركي — — نفس التبرع، يُعرض بعملة كل زائر المحلية.</p>
+            <h3>نسبة التقدّم بدل المبالغ</h3>
+            <p>الأداة لا تعرض أي مبلغ مالي؛ تعرض فقط نسبة ما اكتمل من الهدف. 100% تساوي ميزانية بناء بئر مياه واحدة في أفريقيا. اللغات السبع كلها ترى الرقم نفسه: لا تحويل عملات ولا نقاش حول حجم المبلغ. السبب بسيط: كم ليرة خرجت هو شأن ميزانيتنا نحن، أما ما يهم القارئ فهو كم اقتربت البئر من الاكتمال.</p>
         </div>
     </div>
 
@@ -214,7 +214,7 @@
         <div class="step-num">3</div>
         <div class="step-content">
             <h3>إيصالات بنكية علنية</h3>
-            <p>كل إيصال تحويل بنكي شهري يُرفع كملف PDF إلى <a href="https://suuapp.com/donations/receipts/">suuapp.com/donations/receipts/</a> ويمكن عرضه بنقرة واحدة من داخل الأداة. أي جمعية، أي تاريخ، أي مبلغ — كل شيء مرئي.</p>
+            <p>كل إيصال تحويل بنكي شهري يُرفع إلى <a href="https://suuapp.com/donations/receipts/">suuapp.com/donations/receipts/</a> ويمكن عرضه بنقرة واحدة من داخل الأداة. أي جمعية وأي تاريخ — كل ذلك مرئي. المبلغ وحده مطموس في الصورة؛ اسم الجمعية والتاريخ والسجل البنكي نفسه تبقى كما هي.</p>
         </div>
     </div>
 
@@ -222,7 +222,7 @@
         <div class="step-num">4</div>
         <div class="step-content">
             <h3>بيانات JSON عادية + سجل git</h3>
-            <p>جميع سجلات التبرع موجودة في <a href="https://suuapp.com/donations.json">donations.json</a> — ملف JSON عادي على GitHub. تاريخ كل تحديث وسبب التغيير والفرق مسجّل بشكل دائم في سجل git commit. بعد خمس سنوات، السؤال "ما الذي تم التبرع به في الربيع الماضي؟" يمكن الإجابة عليه من نظام التحكم بالمصدر.</p>
+            <p>جميع سجلات التبرع موجودة في <a href="https://suuapp.com/donations.json">donations.json</a> — ملف JSON عادي على GitHub، مخزَّن كنِسَب مئوية لا كمبالغ. تاريخ كل تحديث وسبب التغيير والفرق مسجّل بشكل دائم في سجل git commit. بعد خمس سنوات، السؤال "ما الذي تم التبرع به في الربيع الماضي؟" يمكن الإجابة عليه من نظام التحكم بالمصدر.</p>
         </div>
     </div>
 
@@ -230,31 +230,31 @@
         <div class="step-num">5</div>
         <div class="step-content">
             <h3>لا تُستخدم بيانات شخصية</h3>
-            <p>نظام التبرع يحتوي فقط على المبالغ الإجمالية والأهداف والبيانات الوصفية للإيصالات. لا تظهر أي بيانات شخصية (من اشترى Premium، متى، من أي دولة) في أي مكان من سجلات التبرع — متوافق تماماً مع مبدأ "الشفافية" في المادة 4 من KVKK والمادة 5(1)(أ) من GDPR.</p>
+            <p>نظام التبرع يحتوي فقط على نسبة التقدّم نحو الهدف وتواريخ التبرعات والبيانات الوصفية للإيصالات. لا تظهر أي بيانات شخصية (من اشترى Premium، متى، من أي دولة) في أي مكان من سجلات التبرع — متوافق تماماً مع مبدأ "الشفافية" في المادة 4 من KVKK والمادة 5(1)(أ) من GDPR.</p>
         </div>
     </div>
 
     <div class="live-stats">
-        <h3>📊 إجمالي التبرعات الحي (11 مايو 2026)</h3>
+        <h3>📊 التقدّم نحو الهدف (7 يونيو 2026)</h3>
         <div class="stat-grid">
             <div class="stat-card">
-                <div class="val">—</div>
-                <div class="lbl">ريال سعودي</div>
+                <div class="val">9%</div>
+                <div class="lbl">من هدف البئر مكتمل</div>
             </div>
             <div class="stat-card">
-                <div class="val">—</div>
-                <div class="lbl">دولار</div>
+                <div class="val">+1.5%</div>
+                <div class="lbl">تبرع يونيو 2026</div>
             </div>
             <div class="stat-card">
-                <div class="val">—</div>
-                <div class="lbl">ليرة تركية</div>
+                <div class="val">+7.5%</div>
+                <div class="lbl">تبرع مايو 2026</div>
             </div>
             <div class="stat-card">
-                <div class="val">—</div>
-                <div class="lbl">روبل</div>
+                <div class="val">2%</div>
+                <div class="lbl">حصة إيرادات Premium</div>
             </div>
         </div>
-        <p style="margin-top:14px; color:#1e40af; font-size:0.9rem;">الهدف: — (≈ —) — ميزانية بناء بئر مياه مجتمعي واحد. اضغط على زر القطرة في الزاوية للأرقام المباشرة.</p>
+        <p style="margin-top:14px; color:#1e40af; font-size:0.9rem;">100% = ميزانية بناء بئر مياه مجتمعي واحد. اضغط على زر القطرة في الزاوية لمتابعة التقدّم مباشرة.</p>
     </div>
 
     <h2>هل يقدم المنافسون هذا المستوى من الشفافية؟</h2>
@@ -271,8 +271,8 @@
         </thead>
         <tbody>
             <tr><td>لديه برنامج تبرع؟</td><td class="yes">✓ 2%</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
-            <tr><td>إجمالي التبرعات الحي مرئي؟</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
-            <tr><td>الإيصالات البنكية علنية؟</td><td class="yes">✓ PDF</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+            <tr><td>التقدّم نحو الهدف مرئي مباشرة؟</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+            <tr><td>الإيصالات البنكية علنية؟</td><td class="yes">✓ صورة</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
             <tr><td>قابل للتدقيق عبر git؟</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
             <tr><td>تتبع تبرعات متعدد اللغات</td><td class="yes">✓ TR/EN/AR/DE/IT/RU/HI</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
         </tbody>
@@ -323,7 +323,7 @@
 
 </div>
 <script src="../../lang-switcher.js?v=3" defer></script>
-<script src="../../donation-widget.js?v=2" defer></script>
+<script src="../../donation-widget.js?v=3" defer></script>
 <div class="sticky-download-bar" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:rgba(255,255,255,0.97);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);padding:10px 12px;padding-bottom:calc(10px + env(safe-area-inset-bottom,0px));box-shadow:0 -2px 16px rgba(0,0,0,0.12);gap:8px;justify-content:center;">
     <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" style="flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:13px 14px;border-radius:12px;text-decoration:none;font-weight:600;font-size:14px;min-height:48px;background:#000;color:#fff;max-width:200px;" target="_blank" rel="noopener">
         <i class="fab fa-apple"></i> App Store

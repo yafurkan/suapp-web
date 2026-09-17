@@ -163,7 +163,7 @@
         .footer-nav { border-top: 1px solid #eee; padding-top: 30px; margin-top: 50px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
         .footer-nav a { color: #2E6FB8; text-decoration: none; font-size: 14px; display: flex; align-items: center; gap: 6px; }
     </style>
-    <link rel="stylesheet" href="../../donation-widget.css?v=2">
+    <link rel="stylesheet" href="../../donation-widget.css?v=3">
     <script src="/assets/js/analytics.js" defer></script>
     <script src="/assets/js/special-days.js" defer></script>
 </head>
@@ -186,7 +186,7 @@
 
 <div class="container">
 
-    <p class="intro">Suu is not just another water tracking app. <strong>2%</strong> of every Premium subscription is donated each month to clean water well construction projects in Africa. You can verify it right now: click the water drop icon in the bottom-right corner of this page to see the live donation total and download every receipt. No closed doors.</p>
+    <p class="intro">Suu is not just another water tracking app. <strong>2%</strong> of every Premium subscription is donated each month to clean water well construction projects in Africa. You can verify it right now: click the water drop icon in the bottom-right corner of this page to see how close the well goal is and open every receipt. No closed doors.</p>
 
     <h2>Why 2%? Why This Level of Transparency?</h2>
 
@@ -211,8 +211,8 @@
     <div class="step-card">
         <div class="step-num">2</div>
         <div class="step-content">
-            <h3>Automatic currency conversion</h3>
-            <p>The total is stored in Turkish Lira but the widget auto-converts to USD / SAR / RUB based on your language. A Saudi user sees — while an American sees —, a Russian —, and a Turkish user — — same donation, displayed in each visitor's local currency.</p>
+            <h3>Progress, not amounts</h3>
+            <p>The widget shows no money figures — only how much of the goal is complete. 100% equals the construction budget of one water well in Africa. Every one of the seven languages sees the same number: no exchange rates, no debate about the size of the cheque. The reasoning is simple: how many lira went out is our balance sheet's story, while what a reader actually cares about is how close the well is.</p>
         </div>
     </div>
 
@@ -220,7 +220,7 @@
         <div class="step-num">3</div>
         <div class="step-content">
             <h3>Bank receipts are public</h3>
-            <p>Every monthly bank transfer receipt is uploaded as a PDF to <a href="https://suuapp.com/donations/receipts/">suuapp.com/donations/receipts/</a> and viewable in one click from inside the widget. Which charity, which date, what amount — all visible.</p>
+            <p>Every monthly bank transfer receipt is uploaded to <a href="https://suuapp.com/donations/receipts/">suuapp.com/donations/receipts/</a> and viewable in one click from inside the widget. Which charity, which date — all visible. Only the amount field is blurred out; the charity name, the date and the bank record itself stay exactly as they are.</p>
         </div>
     </div>
 
@@ -228,7 +228,7 @@
         <div class="step-num">4</div>
         <div class="step-content">
             <h3>Plain JSON data + git history</h3>
-            <p>All donation records live in <a href="https://suuapp.com/donations.json">donations.json</a> — a plain JSON file on GitHub. Every update's date, reason, and diff is permanently recorded in the git commit log. So five years from now, the question "what was donated last spring?" is answerable from source control.</p>
+            <p>All donation records live in <a href="https://suuapp.com/donations.json">donations.json</a> — a plain JSON file on GitHub, stored as percentages rather than amounts. Every update's date, reason, and diff is permanently recorded in the git commit log. So five years from now, the question "what was donated last spring?" is answerable from source control.</p>
         </div>
     </div>
 
@@ -236,31 +236,31 @@
         <div class="step-num">5</div>
         <div class="step-content">
             <h3>No personal data used</h3>
-            <p>The donation system contains only aggregate totals, goals, and receipt metadata. No personal data (who bought Premium, when, from which country) appears anywhere in donation records — fully aligned with KVKK Article 4 and GDPR Article 5(1)(a) transparency principles.</p>
+            <p>The donation system contains only the progress percentage, donation dates, and receipt metadata. No personal data (who bought Premium, when, from which country) appears anywhere in donation records — fully aligned with KVKK Article 4 and GDPR Article 5(1)(a) transparency principles.</p>
         </div>
     </div>
 
     <div class="live-stats">
-        <h3>📊 Live Donation Total (May 11, 2026)</h3>
+        <h3>📊 Progress to Goal (June 7, 2026)</h3>
         <div class="stat-grid">
             <div class="stat-card">
-                <div class="val">—</div>
-                <div class="lbl">USD</div>
+                <div class="val">9%</div>
+                <div class="lbl">of the well goal complete</div>
             </div>
             <div class="stat-card">
-                <div class="val">—</div>
-                <div class="lbl">TRY (base)</div>
+                <div class="val">+1.5%</div>
+                <div class="lbl">June 2026 donation</div>
             </div>
             <div class="stat-card">
-                <div class="val">—</div>
-                <div class="lbl">SAR</div>
+                <div class="val">+7.5%</div>
+                <div class="lbl">May 2026 donation</div>
             </div>
             <div class="stat-card">
-                <div class="val">—</div>
-                <div class="lbl">RUB</div>
+                <div class="val">2%</div>
+                <div class="lbl">share of Premium revenue</div>
             </div>
         </div>
-        <p style="margin-top:14px; color:#1e40af; font-size:0.9rem;">Goal: — (≈ —) — the construction budget for one community water well. Tap the drop button in the corner for live numbers.</p>
+        <p style="margin-top:14px; color:#1e40af; font-size:0.9rem;">100% = the construction budget for one community water well. Tap the drop button in the corner for live progress.</p>
     </div>
 
     <h2>Do Competitors Offer This Kind of Transparency?</h2>
@@ -277,8 +277,8 @@
         </thead>
         <tbody>
             <tr><td>Has a donation program?</td><td class="yes">✓ 2%</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
-            <tr><td>Live donation total visible?</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
-            <tr><td>Bank receipts public?</td><td class="yes">✓ PDF</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+            <tr><td>Live progress to goal visible?</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+            <tr><td>Bank receipts public?</td><td class="yes">✓ image</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
             <tr><td>Data auditable via git?</td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
             <tr><td>Multi-language donation tracker</td><td class="yes">✓ TR/EN/AR/DE/IT/RU/HI</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
         </tbody>
@@ -339,7 +339,7 @@
 
 </div>
 <script src="../../lang-switcher.js?v=3" defer></script>
-<script src="../../donation-widget.js?v=2" defer></script>
+<script src="../../donation-widget.js?v=3" defer></script>
 <div class="sticky-download-bar" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:rgba(255,255,255,0.97);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);padding:10px 12px;padding-bottom:calc(10px + env(safe-area-inset-bottom,0px));box-shadow:0 -2px 16px rgba(0,0,0,0.12);gap:8px;justify-content:center;">
     <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" style="flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:13px 14px;border-radius:12px;text-decoration:none;font-weight:600;font-size:14px;min-height:48px;background:#000;color:#fff;max-width:200px;" target="_blank" rel="noopener">
         <i class="fab fa-apple"></i> App Store
