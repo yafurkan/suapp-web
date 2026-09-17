@@ -20,9 +20,10 @@
   position: fixed;
   bottom: 24px;
   right: 24px;
-  width: 60px;
+  /* Pill, not circle: the label slides out of it on the first visit. */
+  min-width: 60px;
   height: 60px;
-  border-radius: 50%;
+  border-radius: 999px;
   background: linear-gradient(135deg, #fff 0%, #e8f2ff 100%);
   border: 1.5px solid var(--suu-dw-glass-border);
   box-shadow: var(--suu-dw-shadow), 0 0 0 4px rgba(74, 144, 217, 0.12);
@@ -35,8 +36,11 @@
   -webkit-backdrop-filter: blur(14px);
   transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease;
   animation: suu-dw-pulse 2.8s ease-in-out infinite;
-  padding: 0;
+  padding: 0 14px;
   font-family: inherit;
+  white-space: nowrap;
+  /* No overflow:hidden here — it would clip the heart badge. The label
+     clips itself while collapsed. */
 }
 #suu-donation-fab:hover {
   transform: scale(1.08);
@@ -48,17 +52,71 @@
   outline: 2px solid var(--suu-dw-blue);
   outline-offset: 3px;
 }
+#suu-donation-fab .suu-dw-fab-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
 #suu-donation-fab .suu-dw-fab-drop {
   width: 28px;
   height: 32px;
   filter: drop-shadow(0 2px 4px rgba(46, 111, 184, 0.3));
 }
+/* Heart badge — charity, stated without a currency symbol */
+.suu-dw-fab-badge {
+  position: absolute;
+  top: 0;
+  right: -5px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(46, 111, 184, 0.28);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.suu-dw-fab-badge svg { width: 11px; height: 11px; display: block; }
 
-/* RTL: flip FAB to bottom-left */
+/* Label that slides out of the button and settles back */
+.suu-dw-fab-text {
+  max-width: 0;
+  opacity: 0;
+  margin-left: 0;
+  overflow: hidden;
+  font-size: 13.5px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  color: var(--suu-dw-blue-dark);
+  transition:
+    max-width 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+    margin-left 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.3s ease;
+}
+#suu-donation-fab.suu-dw-fab-wide .suu-dw-fab-text,
+#suu-donation-fab:hover .suu-dw-fab-text,
+#suu-donation-fab:focus-visible .suu-dw-fab-text {
+  max-width: 220px;
+  opacity: 1;
+  margin-left: 10px;
+}
+/* While the label is out, the pulse would fight the width change */
+#suu-donation-fab.suu-dw-fab-wide { animation-play-state: paused; }
+
+/* RTL: flip FAB to bottom-left. The button itself stays LTR so the drop keeps
+   hugging the anchored edge and the label grows inward; only the label's own
+   text runs RTL. */
 html[dir="rtl"] #suu-donation-fab,
 html[lang="ar"] #suu-donation-fab {
   right: auto;
   left: 24px;
+  direction: ltr;
+}
+html[dir="rtl"] .suu-dw-fab-text,
+html[lang="ar"] .suu-dw-fab-text {
+  direction: rtl;
 }
 
 @keyframes suu-dw-pulse {
@@ -453,6 +511,7 @@ html[lang="ar"] .suu-dw-receipt-share {
 /* === Reduced motion =========================================== */
 @media (prefers-reduced-motion: reduce) {
   #suu-donation-fab { animation: none; }
+  .suu-dw-fab-text { transition: none; }
   .suu-dw-liquid { transition: none; }
   .suu-dw-liquid-flow,
   .suu-dw-meniscus,
@@ -470,6 +529,8 @@ html[lang="ar"] .suu-dw-receipt-share {
   #suu-donation-fab {
     background: linear-gradient(135deg, #2a3a52 0%, #1a2638 100%);
   }
+  .suu-dw-fab-text { color: #e8f2ff; }
+  .suu-dw-fab-badge { background: #0f1926; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.45); }
   .suu-dw-title { color: #e8f2ff; }
   .suu-dw-subtitle, .suu-dw-progress-row, .suu-dw-receipt-date { color: #9ab4d4; }
   .suu-dw-progress-row strong, .suu-dw-receipts-title, .suu-dw-receipt-charity { color: #e8f2ff; }

@@ -78,22 +78,32 @@
     }
 
     // ---------- DOM building ----------
-    function buildFab(t) {
+    function buildFab(t, pctStr) {
         var btn = document.createElement('button');
+        var teaser = t.fabLabel + (pctStr ? ' · ' + pctStr : '');
         btn.id = 'suu-donation-fab';
-        btn.setAttribute('aria-label', t.fabLabel);
-        btn.setAttribute('title', t.fabLabel);
+        btn.setAttribute('aria-label', teaser);
+        btn.setAttribute('title', teaser);
         btn.innerHTML = (
-            '<svg class="suu-dw-fab-drop" viewBox="0 0 28 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">' +
-            '<defs>' +
-            '<linearGradient id="suu-fab-grad" x1="0" y1="0" x2="0" y2="1">' +
-            '<stop offset="0%" stop-color="#6FB3FF"/>' +
-            '<stop offset="100%" stop-color="#2E6FB8"/>' +
-            '</linearGradient>' +
-            '</defs>' +
-            '<path d="M14 1 C14 1 2 14 2 22 a12 12 0 0 0 24 0 C26 14 14 1 14 1 Z" fill="url(#suu-fab-grad)"/>' +
-            '<ellipse cx="10" cy="18" rx="2.4" ry="3.4" fill="rgba(255,255,255,0.45)"/>' +
-            '</svg>'
+            '<span class="suu-dw-fab-icon">' +
+              '<svg class="suu-dw-fab-drop" viewBox="0 0 28 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">' +
+                '<defs>' +
+                  '<linearGradient id="suu-fab-grad" x1="0" y1="0" x2="0" y2="1">' +
+                    '<stop offset="0%" stop-color="#6FB3FF"/>' +
+                    '<stop offset="100%" stop-color="#2E6FB8"/>' +
+                  '</linearGradient>' +
+                '</defs>' +
+                '<path d="M14 1 C14 1 2 14 2 22 a12 12 0 0 0 24 0 C26 14 14 1 14 1 Z" fill="url(#suu-fab-grad)"/>' +
+                '<ellipse cx="10" cy="18" rx="2.4" ry="3.4" fill="rgba(255,255,255,0.45)"/>' +
+              '</svg>' +
+              // Heart badge: says "this is charity", without saying "money".
+              '<span class="suu-dw-fab-badge" aria-hidden="true">' +
+                '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">' +
+                  '<path d="M12 21s-7.5-4.7-9.3-9.2C1.4 8.4 3.2 5 6.6 5c2 0 3.4 1.1 4.2 2.3l1.2 1.7 1.2-1.7C14 5.1 15.4 4 17.4 4c3.4 0 5.2 3.4 3.9 6.8C19.5 15.3 12 21 12 21z" fill="#e8536f"/>' +
+                '</svg>' +
+              '</span>' +
+            '</span>' +
+            '<span class="suu-dw-fab-text">' + escapeHtml(teaser) + '</span>'
         );
         return btn;
     }
@@ -243,6 +253,30 @@
         window.requestAnimationFrame(step);
     }
 
+    // ---------- FAB teaser ----------
+    // The drop alone doesn't say what it opens. Once per session the button
+    // widens into a pill ("Bağış Takibi · %9") and settles back, so the offer
+    // is legible without shouting money at anyone.
+    var TEASER_KEY = 'suu-dw-teased';
+    var TEASER_DELAY = 900;
+    var TEASER_HOLD = 4200;
+
+    function playFabTeaser(fab) {
+        if (prefersReducedMotion() || !window.setTimeout) return;
+        try {
+            if (sessionStorage.getItem(TEASER_KEY)) return;
+            sessionStorage.setItem(TEASER_KEY, '1');
+        } catch (e) {
+            // Private mode / blocked storage: tease on this page anyway.
+        }
+        window.setTimeout(function () {
+            fab.classList.add('suu-dw-fab-wide');
+            window.setTimeout(function () {
+                fab.classList.remove('suu-dw-fab-wide');
+            }, TEASER_HOLD);
+        }, TEASER_DELAY);
+    }
+
     // ---------- Wire up interactions ----------
     function attachHandlers(fab, panel, pct, lang) {
         var mainView = panel.querySelector('.suu-dw-main');
@@ -265,6 +299,7 @@
             panel.classList.add('suu-dw-open');
             panel.setAttribute('aria-hidden', 'false');
             fab.setAttribute('aria-expanded', 'true');
+            fab.classList.remove('suu-dw-fab-wide');
             showReceipts(false);
             playProgress(panel, pct, lang);
         }
@@ -311,11 +346,12 @@
             .then(function (data) {
                 var t = (data.translations && data.translations[lang]) || (data.translations && data.translations.tr) || {};
                 var pct = Math.max(0, Math.min(100, Number(data.progressPercent) || 0));
-                var fab = buildFab(t);
+                var fab = buildFab(t, formatPercent(pct, lang, percentDecimals(pct)));
                 var panel = buildPanel(t, data, lang);
                 document.body.appendChild(fab);
                 document.body.appendChild(panel);
                 attachHandlers(fab, panel, pct, lang);
+                playFabTeaser(fab);
             })
             .catch(function (err) {
                 // Silent failure — widget is non-essential, don't break the page
