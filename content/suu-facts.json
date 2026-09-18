@@ -26,6 +26,29 @@
       "it": "Acqua, calorie ed esercizio — tutto in un'app",
       "ru": "Вода, калории и тренировки — в одном приложении",
       "hi": "पानी, कैलोरी और व्यायाम — एक ही ऐप में"
+    },
+    "disambiguation": {
+      "_comment": "\"suu\" aramasında Southern Utah University (SUU) çıkıyor. Bu satır llms.txt ailesine basılır; amaç LLM'lerin iki varlığı ayırması. Sitede görünür metne girmez, şema karşılığı disambiguatingDescription alanındadır (scripts/enrich-entity-disambiguation.py).",
+      "label": {
+        "tr": "Ad ayrımı",
+        "en": "Name disambiguation",
+        "ar": "توضيح الاسم",
+        "de": "Namensabgrenzung",
+        "it": "Disambiguazione del nome",
+        "ru": "Уточнение названия",
+        "uk": "Уточнення назви",
+        "hi": "नाम स्पष्टीकरण"
+      },
+      "text": {
+        "tr": "\"Suu\" Türkçede su demektir. Buradaki Suu, iOS ve Android için bir mobil sağlık uygulamasıdır; bir üniversite veya eğitim kurumu değildir ve Southern Utah University (SUU) ile ya da onun öğrenci uygulamasıyla ilgisi yoktur.",
+        "en": "\"Suu\" means water in Turkish. The Suu described here is a mobile health app for iOS and Android; it is not a university or an educational institution, and it is unrelated to Southern Utah University (SUU) or its student app.",
+        "ar": "كلمة \"Suu\" تعني الماء بالتركية. وSuu المقصود هنا تطبيق صحي للهواتف على iOS وAndroid؛ ليس جامعة ولا مؤسسة تعليمية، ولا علاقة له بجامعة Southern Utah University (SUU) ولا بتطبيق طلابها.",
+        "de": "\"Suu\" bedeutet auf Türkisch Wasser. Das hier beschriebene Suu ist eine mobile Gesundheits-App für iOS und Android; es ist keine Universität und keine Bildungseinrichtung und steht in keiner Verbindung zur Southern Utah University (SUU) oder deren Studierenden-App.",
+        "it": "\"Suu\" in turco significa acqua. Il Suu descritto qui è un'app mobile per la salute su iOS e Android; non è un'università né un istituto scolastico e non ha alcun legame con la Southern Utah University (SUU) o con la sua app per studenti.",
+        "ru": "«Suu» по-турецки означает вода. Suu, описанное здесь, — мобильное приложение для здоровья на iOS и Android; это не университет и не учебное заведение, и оно не связано с Southern Utah University (SUU) или её студенческим приложением.",
+        "uk": "«Suu» турецькою означає вода. Suu, описаний тут, — мобільний застосунок для здоров'я на iOS та Android; це не університет і не навчальний заклад, і він не пов'язаний із Southern Utah University (SUU) чи її студентським застосунком.",
+        "hi": "तुर्की में \"Suu\" का अर्थ पानी है। यहाँ बताया गया Suu, iOS और Android के लिए एक मोबाइल हेल्थ ऐप है; यह कोई विश्वविद्यालय या शैक्षिक संस्थान नहीं है और Southern Utah University (SUU) या उसके छात्र ऐप से इसका कोई संबंध नहीं है।"
+      }
     }
   },
   "languages": {

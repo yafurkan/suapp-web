@@ -133,6 +133,15 @@ def compact(lang: str, facts: dict, home: dict, registry: dict) -> str:
     out.append(f"> {home['pillars']['answer']}")
     out.append("")
 
+    # Ad ayrımı: "suu" araması Southern Utah University'yi getiriyor. Bu satır
+    # LLM'in iki varlığı karıştırmaması için; kaynağı suu-facts.json/identity.
+    disamb = facts["identity"].get("disambiguation")
+    if disamb:
+        label = disamb["label"].get(lang, disamb["label"]["en"])
+        text = disamb["text"].get(lang, disamb["text"]["en"])
+        out.append(f"**{label}:** {text}")
+        out.append("")
+
     out.append(f"## {h['what']}")
     out.append("")
     out.append(home["meta"]["description"])
