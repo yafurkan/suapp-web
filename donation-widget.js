@@ -160,7 +160,12 @@
 
               '<div class="suu-dw-footer">' +
                 escapeHtml(t.transparencyNote) +
-                (data.lastUpdated ? ' · ' + escapeHtml(t.lastUpdated) + ': ' + escapeHtml(data.lastUpdated) : '') +
+                // The separator travels with the date, so a narrow screen never
+                // strands a lone "·" at the end of a line.
+                (data.lastUpdated
+                  ? ' <span class="suu-dw-nowrap">· ' + escapeHtml(t.lastUpdated) + ': ' +
+                    escapeHtml(data.lastUpdated) + '</span>'
+                  : '') +
               '</div>' +
             '</div>' +
 

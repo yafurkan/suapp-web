@@ -373,6 +373,7 @@ html[lang="ar"] #suu-donation-panel {
   padding: 0 20px 14px;
   line-height: 1.4;
 }
+.suu-dw-nowrap { white-space: nowrap; }
 
 /* === Receipts view ============================================= */
 .suu-dw-receipts {
@@ -484,8 +485,12 @@ html[lang="ar"] .suu-dw-receipt-share {
   #suu-donation-fab {
     bottom: calc(88px + env(safe-area-inset-bottom, 0px));
     right: 14px;
-    width: 54px;
+    /* width:auto, not a fixed 54px — on touch there is no hover, so the
+       teaser is the only chance to show what this button opens. */
+    width: auto;
+    min-width: 54px;
     height: 54px;
+    padding: 0 12px;
   }
   html[dir="rtl"] #suu-donation-fab,
   html[lang="ar"] #suu-donation-fab {
@@ -495,6 +500,19 @@ html[lang="ar"] .suu-dw-receipt-share {
   #suu-donation-fab .suu-dw-fab-drop {
     width: 24px;
     height: 28px;
+  }
+  .suu-dw-fab-badge {
+    width: 17px;
+    height: 17px;
+    right: -4px;
+  }
+  .suu-dw-fab-text { font-size: 12.5px; }
+  #suu-donation-fab.suu-dw-fab-wide .suu-dw-fab-text,
+  #suu-donation-fab:hover .suu-dw-fab-text,
+  #suu-donation-fab:focus-visible .suu-dw-fab-text {
+    /* Never let the pill run past the opposite edge of a narrow screen */
+    max-width: calc(100vw - 108px);
+    margin-left: 8px;
   }
   #suu-donation-panel {
     bottom: calc(156px + env(safe-area-inset-bottom, 0px));
