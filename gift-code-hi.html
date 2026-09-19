@@ -179,10 +179,14 @@ img{max-width:100%;display:block}
   padding:30px 26px;box-shadow:0 10px 40px rgba(13,33,53,.07)}
 .gc-h2{margin:0 0 6px;font-size:1.5rem;font-weight:800;letter-spacing:-.02em}
 .gc-label{display:block;margin:24px 0 10px;font-weight:700;font-size:.98rem}
-.gc-plats{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.gc-plat{position:relative;display:flex;flex-direction:column;align-items:center;gap:8px;
+/* Grid değil flex: seçilmeyen kart genişliğini sıfıra indirerek kapanıyor,
+   grid sütunları bunu yumuşak yapamıyordu. */
+.gc-plats{display:flex;gap:12px;transition:gap .34s cubic-bezier(.3,.9,.3,1)}
+.gc-plat{position:relative;flex:1 1 0;min-width:0;display:flex;flex-direction:column;align-items:center;gap:8px;
   padding:20px 12px;border:2px solid var(--gc-line);border-radius:16px;background:#fff;cursor:pointer;
-  transition:border-color .18s,transform .18s,box-shadow .18s;text-align:center}
+  text-align:center;
+  transition:border-color .18s,transform .18s,box-shadow .18s,opacity .26s ease,
+             flex-basis .34s cubic-bezier(.3,.9,.3,1),flex-grow .34s,padding .34s,border-width .34s}
 .gc-plat:hover:not(.off){transform:translateY(-2px);box-shadow:0 8px 22px rgba(1,165,247,.14)}
 .gc-plat svg{width:30px;height:30px;fill:var(--gc-ink);transition:fill .18s}
 .gc-plat b{font-size:.98rem;font-weight:700}
@@ -191,6 +195,27 @@ img{max-width:100%;display:block}
 .gc-plat.on svg{fill:var(--gc-blue)}
 .gc-plat.off{opacity:.45;cursor:not-allowed;filter:grayscale(1)}
 .gc-plat input{position:absolute;opacity:0;pointer-events:none}
+.gc-plat:active:not(.off){transform:scale(.975);transition-duration:.08s}
+/* Seçim belli olsun: köşeye tik rozeti düşer, kart bir yaylanır, diğeri söner. */
+.gc-plat::after{content:'';position:absolute;top:8px;inset-inline-end:8px;width:19px;height:19px;border-radius:50%;
+  background:var(--gc-blue) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='3.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12.5l5.5 5.5L20 7'/%3E%3C/svg%3E") center/11px no-repeat;
+  opacity:0;transform:scale(.3);pointer-events:none;
+  transition:opacity .16s ease,transform .34s cubic-bezier(.3,1.7,.4,1)}
+.gc-plat.on::after{opacity:1;transform:scale(1)}
+.gc-plat.pop{animation:gc-pick .52s cubic-bezier(.3,1.5,.4,1)}
+@keyframes gc-pick{0%{transform:scale(.955)}42%{transform:scale(1.04)}100%{transform:scale(1)}}
+/* Seçimden sonra: diğeri kapanır, seçilen ortaya gelir. */
+.gc-plats.picked{gap:0}
+.gc-plats.picked .gc-plat.on{flex:0 1 min(280px,100%);margin-inline:auto}
+.gc-plats.picked .gc-plat:not(.on){flex:0 0 0;padding-inline:0;border-inline-width:0;
+  opacity:0;overflow:hidden;pointer-events:none}
+.gc-replat{display:none;margin:12px auto 0;padding:8px 15px;border-radius:999px;cursor:pointer;
+  align-items:center;gap:7px;border:1px solid var(--gc-line);background:transparent;color:var(--gc-muted);
+  font-family:inherit;font-size:.83rem;font-weight:600;transition:color .18s,border-color .18s,background .18s}
+.gc-replat svg{width:13px;height:13px;fill:currentColor}
+.gc-replat:hover{color:var(--gc-deep);border-color:var(--gc-blue)}
+.gc-replat.show{display:flex;animation:gc-swap-in .42s cubic-bezier(.2,.8,.2,1) both}
+@keyframes gc-swap-in{from{opacity:0;transform:translateY(-7px) scale(.94)}to{opacity:1;transform:none}}
 
 .gc-input{width:100%;padding:15px 16px;border:2px solid var(--gc-line);border-radius:14px;
   font-size:1rem;font-family:inherit;background:#fff;color:var(--gc-ink);transition:border-color .18s,box-shadow .18s}
@@ -310,7 +335,8 @@ img{max-width:100%;display:block}
   .gc-faq{margin-top:30px}
 }
 @media (max-width:420px){
-  .gc-plats{grid-template-columns:1fr}
+  .gc-plats{flex-direction:column}
+  .gc-plats.picked{flex-direction:row}
   .gc-card{padding:24px 18px}
   .gc-step{margin-inline:-12px;padding-inline:12px}
   .gc-rail{padding:5px;gap:4px}
@@ -451,7 +477,12 @@ img{max-width:100%;display:block}
 [data-skin=dark] .gc-rail li.ok b{background:#30d158;color:#000}
 [data-skin=dark] .gc-step.now{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.2)}
 /* mockup yanında yer açmak için kartlar yatay: dar ekranda da yan yana kalırlar */
-[data-skin=dark] .gc-plats{grid-template-columns:1fr 1fr;gap:10px}
+[data-skin=dark] .gc-plats{gap:10px;flex-direction:row}
+[data-skin=dark] .gc-plats.picked{gap:0}
+[data-skin=dark] .gc-plat::after{background-color:#fff;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='3.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12.5l5.5 5.5L20 7'/%3E%3C/svg%3E")}
+[data-skin=dark] .gc-replat{border-color:rgba(255,255,255,.18);color:var(--k-mut)}
+[data-skin=dark] .gc-replat:hover{color:#fff;border-color:rgba(255,255,255,.5);background:rgba(255,255,255,.06)}
 [data-skin=dark] .gc-plat{display:grid;grid-template-columns:auto 1fr;grid-template-areas:"i n" "i s";
   column-gap:11px;row-gap:1px;padding:14px 13px;text-align:start;align-items:center;
   background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.12)}
@@ -460,6 +491,7 @@ img{max-width:100%;display:block}
 [data-skin=dark] .gc-plat small{grid-area:s;align-self:start;color:var(--k-mut);font-size:.74rem}
 [data-skin=dark] .gc-plat:hover:not(.off){box-shadow:0 10px 30px rgba(255,255,255,.08)}
 [data-skin=dark] .gc-plat.on{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.72);
+  padding-inline-end:30px;
   box-shadow:0 0 0 1px rgba(255,255,255,.22),0 14px 40px rgba(255,255,255,.12)}
 [data-skin=dark] .gc-plat.on svg{fill:#fff}
 [data-skin=dark] .gc-input{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.14);color:#fff}
@@ -618,6 +650,10 @@ img{max-width:100%;display:block}
           <b>Android</b><small data-stock="android">Google Play</small>
         </label>
       </div>
+      <button class="gc-replat" type="button" id="gcRePlat">
+        <svg viewBox="0 0 24 24"><path d="M12 5V2L8 6l4 4V7a5 5 0 1 1-5 5H5a7 7 0 1 0 7-7z"/></svg>
+        चुनाव बदलें
+      </button>
       </div>
 
       <div class="gc-step" data-step="2">
@@ -695,7 +731,7 @@ img{max-width:100%;display:block}
   <nav class="gc-langs"><a href="/hediye-kod.html">Türkçe</a><a href="/gift-code.html">English</a><a href="/gift-code-ar.html">العربية</a><a href="/gift-code-ru.html">Русский</a><a href="/gift-code-de.html">Deutsch</a><a href="/gift-code-it.html">Italiano</a><a href="/gift-code-hi.html" style="font-weight:700;color:var(--gc-ink)">हिन्दी</a></nav>
 </footer>
 
-<script id="gcCopyData" type="application/json">{"stock":{"out":"ख़त्म","ios":"iPhone","android":"Android"},"form":{"heading":"दो कदम में कोड आपका","platformQ":"1. आप कौन-सा फ़ोन इस्तेमाल करते हैं?","emailQ":"2. आपका ईमेल पता","emailPh":"you@example.com","emailHint":"कोड स्क्रीन पर दिखेगा और एक कॉपी इस पते पर जाएगी।","consent":"मैं Suu की नई सुविधाओं और ऑफ़र की जानकारी चाहता/चाहती हूँ।","consentHint":"वैकल्पिक — कोड दोनों हाल में मिलेगा। कभी भी अनसब्सक्राइब करें।","submit":"मेरा कोड दीजिए","sending":"कोड रिज़र्व हो रहा है…","privacy":"आपका ईमेल सिर्फ़ कोड भेजने के लिए इस्तेमाल होता है। IP कभी सादे रूप में संग्रहित नहीं होता — सिर्फ़ हैश, केवल दुरुपयोग रोकने के लिए।","privacyLink":"गोपनीयता नीति"},"result":{"title":"आपका कोड तैयार है 🎉","sub":"एक महीना Suu Premium आपका।","copy":"कोड कॉपी करें","copied":"कॉपी हो गया","redeemIos":"App Store पर रिडीम करें","redeemAndroid":"Google Play पर रिडीम करें","mailOk":"एक कॉपी आपके ईमेल पर भी भेज दी है।","mailFail":"ईमेल नहीं भेजा जा सका — कोड अभी कॉपी कर लें, यह स्क्रीन बंद न करें।","steps":["फ़ोन से बटन दबाएँ (या कोड कॉपी करें)।","स्टोर खुलेगा, कोड अपने आप भरा होगा; अपने अकाउंट से पुष्टि करें।","Suu खोलें — Premium चालू।"],"download":"पहले ऐप डाउनलोड करें"},"errors":{"already_claimed_email":"इस ईमेल को पहले ही कोड मिल चुका है। न मिले तो हमने दोबारा भेज दिया है।","already_claimed_email_resent":"इस ईमेल को पहले कोड मिला था — हमने इनबॉक्स में दोबारा भेज दिया है।","already_claimed_ip":"इस कनेक्शन से पहले ही कोड लिया जा चुका है। एक व्यक्ति, एक कोड।","exhausted":"इस प्लैटफ़ॉर्म के कोड ख़त्म हो गए। अगली खेप की घोषणा करेंगे।","invalid_email":"यह ईमेल पता सही नहीं लगता।","disposable_email":"अस्थायी ईमेल पते स्वीकार नहीं हैं। कृपया असली पता डालें।","captcha_failed":"सत्यापन विफल। पेज रिफ़्रेश करके फिर कोशिश करें।","rate_limited":"बहुत ज़्यादा कोशिशें। एक घंटे बाद फिर प्रयास करें।","platform_required":"पहले अपना फ़ोन चुनें।","bad_origin":"अनुरोध सत्यापित नहीं हुआ। कृपया रिफ़्रेश करें।","server_error":"कुछ ग़लत हो गया। थोड़ी देर में फिर कोशिश करें।","network":"सर्वर से संपर्क नहीं हुआ। इंटरनेट जाँचकर दोबारा करें।","consent_required":"जारी रखने के लिए अपना ईमेल पता डालें।"}}</script>
+<script id="gcCopyData" type="application/json">{"stock":{"out":"ख़त्म","ios":"iPhone","android":"Android"},"form":{"heading":"दो कदम में कोड आपका","platformQ":"1. आप कौन-सा फ़ोन इस्तेमाल करते हैं?","changePlat":"चुनाव बदलें","emailQ":"2. आपका ईमेल पता","emailPh":"you@example.com","emailHint":"कोड स्क्रीन पर दिखेगा और एक कॉपी इस पते पर जाएगी।","consent":"मैं Suu की नई सुविधाओं और ऑफ़र की जानकारी चाहता/चाहती हूँ।","consentHint":"वैकल्पिक — कोड दोनों हाल में मिलेगा। कभी भी अनसब्सक्राइब करें।","submit":"मेरा कोड दीजिए","sending":"कोड रिज़र्व हो रहा है…","privacy":"आपका ईमेल सिर्फ़ कोड भेजने के लिए इस्तेमाल होता है। IP कभी सादे रूप में संग्रहित नहीं होता — सिर्फ़ हैश, केवल दुरुपयोग रोकने के लिए।","privacyLink":"गोपनीयता नीति"},"result":{"title":"आपका कोड तैयार है 🎉","sub":"एक महीना Suu Premium आपका।","copy":"कोड कॉपी करें","copied":"कॉपी हो गया","redeemIos":"App Store पर रिडीम करें","redeemAndroid":"Google Play पर रिडीम करें","mailOk":"एक कॉपी आपके ईमेल पर भी भेज दी है।","mailFail":"ईमेल नहीं भेजा जा सका — कोड अभी कॉपी कर लें, यह स्क्रीन बंद न करें।","steps":["फ़ोन से बटन दबाएँ (या कोड कॉपी करें)।","स्टोर खुलेगा, कोड अपने आप भरा होगा; अपने अकाउंट से पुष्टि करें।","Suu खोलें — Premium चालू।"],"download":"पहले ऐप डाउनलोड करें"},"errors":{"already_claimed_email":"इस ईमेल को पहले ही कोड मिल चुका है। न मिले तो हमने दोबारा भेज दिया है।","already_claimed_email_resent":"इस ईमेल को पहले कोड मिला था — हमने इनबॉक्स में दोबारा भेज दिया है।","already_claimed_ip":"इस कनेक्शन से पहले ही कोड लिया जा चुका है। एक व्यक्ति, एक कोड।","exhausted":"इस प्लैटफ़ॉर्म के कोड ख़त्म हो गए। अगली खेप की घोषणा करेंगे।","invalid_email":"यह ईमेल पता सही नहीं लगता।","disposable_email":"अस्थायी ईमेल पते स्वीकार नहीं हैं। कृपया असली पता डालें।","captcha_failed":"सत्यापन विफल। पेज रिफ़्रेश करके फिर कोशिश करें।","rate_limited":"बहुत ज़्यादा कोशिशें। एक घंटे बाद फिर प्रयास करें।","platform_required":"पहले अपना फ़ोन चुनें।","bad_origin":"अनुरोध सत्यापित नहीं हुआ। कृपया रिफ़्रेश करें।","server_error":"कुछ ग़लत हो गया। थोड़ी देर में फिर कोशिश करें।","network":"सर्वर से संपर्क नहीं हुआ। इंटरनेट जाँचकर दोबारा करें।","consent_required":"जारी रखने के लिए अपना ईमेल पता डालें।"}}</script>
 <script>
 (function () {
   "use strict";
@@ -804,26 +840,63 @@ img{max-width:100%;display:block}
   /* ── platform seçimi ── */
   var chosen = null, stock = { ios: null, android: null };
 
+  var plats = document.querySelector(".gc-plats");
+  var rePlat = document.getElementById("gcRePlat");
+
+  function otherPlat(el) {
+    return document.querySelector('.gc-plat[data-plat="' +
+      (el.dataset.plat === "ios" ? "android" : "ios") + '"]');
+  }
+
   // Seçimi doğrudan uygular. Otomatik seçimde label.click() KULLANILMAZ:
   // tarayıcı odaklanan alanı görünüre kaydırır ve sayfa daha hero bitmeden
   // forma zıplar — karşılama animasyonu boşa gider.
-  function selectPlat(el) {
+  // vurgula: yalnızca ziyaretçi tıkladığında yaylanma oynatılır; stok
+  // sorgusunun tek platform kalınca yaptığı seçim sessiz kalır.
+  function selectPlat(el, vurgula) {
     if (!el || el.classList.contains("off")) return;
     document.querySelectorAll(".gc-plat").forEach(function (o) { o.classList.remove("on"); });
     el.classList.add("on");
     el.querySelector("input").checked = true;
     chosen = el.dataset.plat;
+    // Seçilmeyen kart kapanır, seçilen ortaya gelir; karar ekranda kalır.
+    plats.classList.add("picked");
+    var diger = otherPlat(el);
+    // Diğeri zaten tükendiyse değiştirecek bir şey yok.
+    rePlat.classList.toggle("show", !!diger && !diger.classList.contains("off"));
+    if (vurgula && !reduced) {
+      el.classList.remove("pop");
+      void el.offsetWidth;                        // yaylanmayı yeniden tetikler
+      el.classList.add("pop");
+      setTimeout(function () { el.classList.remove("pop"); }, 560);
+    }
     stepDone("1");
     setFace(chosen);
     hideAlert();
   }
 
+  // "Seçimi değiştir": iki kart geri gelir, akış 1. adıma döner.
+  function clearPlat() {
+    document.querySelectorAll(".gc-plat").forEach(function (o) {
+      o.classList.remove("on");
+      o.classList.remove("pop");
+      o.querySelector("input").checked = false;
+    });
+    plats.classList.remove("picked");
+    rePlat.classList.remove("show");
+    chosen = null;
+    doneStep["1"] = false;
+    goStep(1);
+  }
+
+  rePlat.addEventListener("click", clearPlat);
+
   document.querySelectorAll(".gc-plat").forEach(function (el) {
     el.addEventListener("click", function (e) {
       if (el.classList.contains("off")) { e.preventDefault(); return; }
-      selectPlat(el);
-      // Seçimi görsün diye kısa bir bekleme: mockup dönerken sayfa kaçmasın.
-      advance(2, true, 420);
+      selectPlat(el, true);
+      // Seçimi görsün diye kısa bir bekleme: kart kapanırken sayfa kaçmasın.
+      advance(2, true, 560);
     });
   });
 
