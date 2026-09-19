@@ -247,10 +247,56 @@ img{max-width:100%;display:block}
 .gc-reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
 .gc-reveal.in{opacity:1;transform:none}
 
+/* ───────── adım adım akış ─────────
+   Ziyaretçi alan aramasın: sıradaki adım kendi kendine ekrana gelir,
+   vurgulanır ve yapışkan şeritte işaretlenir. Şerit kartın içinde yapışık
+   durur — kart ekrandan çıkınca o da gider, sayfanın üstünü kaplamaz. */
+.gc-rail{position:sticky;top:calc(8px + env(safe-area-inset-top));z-index:30;
+  display:flex;gap:6px;margin:16px 0 4px;padding:7px;list-style:none;
+  background:rgba(255,255,255,.93);border:1px solid var(--gc-line);border-radius:15px;
+  box-shadow:0 10px 26px rgba(13,33,53,.1);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+.gc-rail.hide{display:none}
+.gc-rail li{flex:1;min-width:0;list-style:none}
+.gc-rail button{display:flex;align-items:center;justify-content:center;gap:7px;width:100%;min-height:42px;
+  padding:6px 8px;border:0;border-radius:11px;background:transparent;cursor:pointer;
+  font-family:inherit;font-size:.83rem;font-weight:700;color:var(--gc-muted);
+  white-space:nowrap;overflow:hidden;transition:background .2s,color .2s}
+.gc-rail b{display:grid;place-items:center;flex:none;width:21px;height:21px;border-radius:50%;
+  background:var(--gc-line);color:var(--gc-muted);font-size:.73rem;transition:background .2s,color .2s}
+.gc-rail span{overflow:hidden;text-overflow:ellipsis}
+.gc-rail li.on button{background:rgba(1,165,247,.1);color:var(--gc-deep)}
+.gc-rail li.on b{background:var(--gc-blue);color:#fff}
+.gc-rail li.ok b{background:var(--gc-ok);color:#fff;font-size:0}
+.gc-rail li.ok b::after{content:'✓';font-size:.78rem}
+
+.gc-step{margin:10px -16px;padding:12px 16px;border:1px solid transparent;border-radius:16px;
+  scroll-margin-top:92px;transition:background .3s,border-color .3s,opacity .3s}
+.gc-step>.gc-label:first-child{margin-top:0}
+.gc-step.wait{opacity:.62}
+.gc-step.now{background:rgba(1,165,247,.05);border-color:rgba(1,165,247,.26)}
+.gc-step[data-step="3"] .gc-consent{margin-top:0}
+
+@media (max-width:560px){
+  .gc-hero{padding:84px 18px 116px}
+  .gc-main{padding:36px 16px 64px}
+  .gc-cta{width:100%;justify-content:center;padding:15px 20px}
+  .gc-scroll{bottom:58px}
+  .gc-faq{margin-top:30px}
+}
 @media (max-width:420px){
   .gc-plats{grid-template-columns:1fr}
   .gc-card{padding:24px 18px}
+  .gc-step{margin-inline:-12px;padding-inline:12px}
+  .gc-rail{padding:5px;gap:4px}
+  .gc-rail button{font-size:.78rem;gap:6px;padding:6px 4px}
 }
+/* Turnstile 300px sabit basıyor; en dar telefonlarda taşmasın. */
+@media (max-width:359px){
+  .gc-rail span{display:none}
+  .gc-turnstile{overflow:hidden}
+  .gc-turnstile>*{transform:scale(.88);transform-origin:top center}
+}
+.gc-foot{padding-bottom:calc(46px + env(safe-area-inset-bottom))}
 {% if dark %}
 /* ═══════════════════════════════════════════════════════════════════
    "Sinema" derisi — siyah zemin, beyaz ışık.
@@ -269,7 +315,7 @@ img{max-width:100%;display:block}
   background:radial-gradient(58% 44% at 50% 44%,rgba(255,255,255,.17),transparent 72%)}
 [data-skin=dark] .gc-ring{border-color:rgba(255,255,255,.16)}
 [data-skin=dark] img.gc-splash-drop,[data-skin=dark] .gc-splash-drop img,
-[data-skin=dark] .gc-logo img{filter:drop-shadow(0 0 34px rgba(255,255,255,.24))}
+[data-skin=dark] img.gc-logo,[data-skin=dark] .gc-logo img{filter:drop-shadow(0 0 34px rgba(255,255,255,.24))}
 [data-skin=dark] .gc-splash-tag{color:var(--k-mut);font-size:.84rem;letter-spacing:.2em}
 [data-skin=dark] .gc-splash-hint{color:rgba(255,255,255,.5)}
 [data-skin=dark] .gc-splash-hint i{border-color:rgba(255,255,255,.5)}
@@ -370,6 +416,14 @@ img{max-width:100%;display:block}
   box-shadow:0 40px 90px rgba(0,0,0,.7)}
 [data-skin=dark] .gc-h2{color:#fff}
 [data-skin=dark] .gc-label{color:#e6e6ea}
+[data-skin=dark] .gc-rail{background:rgba(24,24,26,.86);border-color:rgba(255,255,255,.12);
+  box-shadow:0 14px 34px rgba(0,0,0,.6)}
+[data-skin=dark] .gc-rail button{color:var(--k-mut)}
+[data-skin=dark] .gc-rail b{background:rgba(255,255,255,.13);color:var(--k-mut)}
+[data-skin=dark] .gc-rail li.on button{background:rgba(255,255,255,.12);color:#fff}
+[data-skin=dark] .gc-rail li.on b{background:#fff;color:#000}
+[data-skin=dark] .gc-rail li.ok b{background:#30d158;color:#000}
+[data-skin=dark] .gc-step.now{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.2)}
 /* mockup yanında yer açmak için kartlar yatay: dar ekranda da yan yana kalırlar */
 [data-skin=dark] .gc-plats{grid-template-columns:1fr 1fr;gap:10px}
 [data-skin=dark] .gc-plat{display:grid;grid-template-columns:auto 1fr;grid-template-areas:"i n" "i s";
@@ -420,6 +474,13 @@ img{max-width:100%;display:block}
   .k-dev{width:100%}
   .k-fields>.gc-plats{margin-top:0}
   [data-skin=dark] .gc-card{padding:38px 36px}
+}
+/* Telefonda mockup küçülür: yoksa form katlamanın çok altında kalıyor. */
+@media (max-width:560px){
+  [data-skin=dark] .gc-hero{padding:90px 18px 124px}
+  [data-skin=dark] .k-dev{width:min(150px,40vw)}
+  [data-skin=dark] .k-picker{gap:16px}
+  .k-horizon{bottom:92px}
 }
 @media (max-width:420px){
   [data-skin=dark] .gc-card{padding:24px 18px}
@@ -499,8 +560,13 @@ img{max-width:100%;display:block}
   <section class="gc-card gc-reveal" id="gcFormCard">
     <h2 class="gc-h2">{{ c.form.heading }}</h2>
 
+    <ol class="gc-rail" id="gcRail">
+      <li><button type="button" data-go="1"><b>1</b><span>{{ c.flow.phone }}</span></button></li>
+      <li><button type="button" data-go="2"><b>2</b><span>{{ c.flow.email }}</span></button></li>
+      <li><button type="button" data-go="3"><b>3</b><span>{{ c.flow.code }}</span></button></li>
+    </ol>
+
     <form id="gcForm" novalidate>
-      <span class="gc-label">{{ c.form.platformQ }}</span>
 {% if device %}      <div class="k-picker">
         <div class="k-dev" id="gcDevice" data-face="ios">
           <span class="k-glow" aria-hidden="true"></span>
@@ -527,7 +593,9 @@ img{max-width:100%;display:block}
           <p class="k-cap"><span data-cap="ios">{{ c.stock.ios }} · App Store</span><span data-cap="android">{{ c.stock.android }} · Google Play</span></p>
         </div>
         <div class="k-fields">
-{% endif %}      <div class="gc-plats">
+{% endif %}      <div class="gc-step" data-step="1">
+      <span class="gc-label">{{ c.form.platformQ }}</span>
+      <div class="gc-plats">
         <label class="gc-plat" data-plat="ios">
           <input type="radio" name="platform" value="ios">
           <svg viewBox="0 0 24 24"><path d="M17.05 12.5c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.15-2.8.85-3.5.85s-1.85-.83-3-.8c-1.55.02-3 .9-3.8 2.28-1.62 2.8-.42 6.95 1.16 9.22.77 1.1 1.7 2.35 2.9 2.3 1.16-.05 1.6-.75 3-.75s1.8.75 3.03.72c1.25-.02 2.04-1.12 2.8-2.23.88-1.28 1.25-2.52 1.27-2.58-.03-.02-2.44-.94-2.46-3.72zM14.9 5.1c.63-.77 1.06-1.83.94-2.9-.9.04-2 .6-2.66 1.37-.58.67-1.1 1.76-.96 2.8 1.02.08 2.05-.5 2.68-1.27z"/></svg>
@@ -539,17 +607,21 @@ img{max-width:100%;display:block}
           <b>{{ c.stock.android }}</b><small data-stock="android">Google Play</small>
         </label>
       </div>
+      </div>
 
+      <div class="gc-step" data-step="2">
       <label class="gc-label" for="gcEmail">{{ c.form.emailQ }}</label>
       <input class="gc-input" type="email" id="gcEmail" name="email" autocomplete="email"
-             inputmode="email" placeholder="{{ c.form.emailPh }}" required>
+             inputmode="email" placeholder="{{ c.form.emailPh }}" data-focus required>
       <p class="gc-hint">{{ c.form.emailHint }}</p>
+      </div>
 {% if device %}        </div>
       </div>
 {% endif %}
 
       <input class="gc-hp" type="text" name="website" id="gcHp" tabindex="-1" autocomplete="off" aria-hidden="true">
 
+      <div class="gc-step" data-step="3">
       <label class="gc-consent">
         <input type="checkbox" id="gcConsent">
         <span>{{ c.form.consent }}<small>{{ c.form.consentHint }}</small></span>
@@ -562,6 +634,7 @@ img{max-width:100%;display:block}
       </button>
 
       <div class="gc-alert" id="gcAlert" role="alert"></div>
+      </div>
 
       <p class="gc-privacy">{{ c.form.privacy }}
         <a href="/gizlilik-politikasi.html">{{ c.form.privacyLink }}</a></p>
@@ -711,11 +784,6 @@ img{max-width:100%;display:block}
   }, { threshold: 0.12 });
   document.querySelectorAll(".gc-reveal").forEach(function (el) { io.observe(el); });
 
-  document.getElementById("gcJump").addEventListener("click", function () {
-    document.getElementById("gcFormCard").scrollIntoView({ behavior: reduced ? "auto" : "smooth", block: "start" });
-    setTimeout(function () { document.getElementById("gcEmail").focus({ preventScroll: true }); }, reduced ? 0 : 520);
-  });
-
   /* ── platform seçimi ── */
   var chosen = null, stock = { ios: null, android: null };
 
@@ -728,6 +796,7 @@ img{max-width:100%;display:block}
     el.classList.add("on");
     el.querySelector("input").checked = true;
     chosen = el.dataset.plat;
+    stepDone("1");
 {% if dark %}    setFace(chosen);
 {% endif %}    hideAlert();
   }
@@ -736,8 +805,128 @@ img{max-width:100%;display:block}
     el.addEventListener("click", function (e) {
       if (el.classList.contains("off")) { e.preventDefault(); return; }
       selectPlat(el);
+      // Seçimi görsün diye kısa bir bekleme: mockup dönerken sayfa kaçmasın.
+      advance(2, true, 420);
     });
   });
+
+  /* ── adım adım yönlendirme ──
+     Ziyaretçi alan aramasın, tek tek tıklamasın: bir adım biter bitmez
+     sıradaki alan kendiliğinden ekrana gelir, vurgulanır ve üstteki yapışkan
+     şeritte işaretlenir. Elle kaydırıp başka alana dokunursa akış onu izler. */
+  var rail = document.getElementById("gcRail");
+  var railBtns = rail ? rail.querySelectorAll("button[data-go]") : [];
+  var stepEls = {};
+  document.querySelectorAll(".gc-step").forEach(function (el) { stepEls[el.dataset.step] = el; });
+  var curStep = 0, doneStep = {}, started = false, advTimer = null;
+  var mailRe = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+  // Yapışkan şerit adımın üstünü örtmesin.
+  function railGap() { return (rail && rail.offsetHeight ? rail.offsetHeight : 0) + 22; }
+
+  function inView(el) {
+    var r = el.getBoundingClientRect();
+    var h = window.innerHeight || document.documentElement.clientHeight;
+    return r.top >= railGap() - 12 && r.bottom <= h;
+  }
+
+  function paint() {
+    Object.keys(stepEls).forEach(function (k) {
+      stepEls[k].classList.toggle("now", started && +k === curStep);
+      stepEls[k].classList.toggle("wait", started && +k > curStep && !doneStep[k]);
+    });
+    for (var i = 0; i < railBtns.length; i++) {
+      var n = railBtns[i].getAttribute("data-go");
+      railBtns[i].parentNode.className =
+        (doneStep[n] ? "ok" : "") + (+n === curStep ? " on" : "");
+    }
+  }
+
+  function stepDone(n) { doneStep[n] = true; paint(); }
+
+  // 1. adımda telefon maketi seçeneklerin ÜSTÜNDE duruyor (mobil dizilim).
+  // İkisi birden ekrana sığıyorsa maketten başlarız, sığmıyorsa doğrudan
+  // seçeneklere ineriz — maket uğruna soruyu katlamanın altına itmeyiz.
+  function scrollTarget(el) {
+    var pick = el.dataset.step === "1" ? document.querySelector(".k-picker") : null;
+    if (!pick) return el;
+    var h = (window.innerHeight || document.documentElement.clientHeight);
+    var need = el.getBoundingClientRect().bottom - pick.getBoundingClientRect().top;
+    return need + railGap() + 16 <= h ? pick : el;
+  }
+
+  function goStep(n, focusIt) {
+    var el = stepEls[String(n)];
+    if (!el) return;
+    started = true;
+    curStep = n;
+    paint();
+    // Adım zaten tamamen ekrandaysa kaydırmayız: parmağın altındaki buton kaçar.
+    if (!inView(el)) {
+      var y = window.pageYOffset + scrollTarget(el).getBoundingClientRect().top - railGap();
+      window.scrollTo({ top: Math.max(0, y), behavior: reduced ? "auto" : "smooth" });
+    }
+    if (!focusIt) return;
+    // Kaydırma bitmeden odaklanınca tarayıcı ikinci bir sıçrama yapıyor.
+    setTimeout(function () {
+      var f = el.querySelector("[data-focus]");
+      if (f) f.focus({ preventScroll: true });
+    }, reduced ? 0 : 520);
+  }
+
+  function advance(n, focusIt, ms) {
+    clearTimeout(advTimer);                       // etiket tıklaması iki kez düşebiliyor
+    advTimer = setTimeout(function () { goStep(n, focusIt); }, reduced ? 0 : ms);
+  }
+
+  document.getElementById("gcJump").addEventListener("click", function () {
+    // Tek platform kaldığı için seçim hazırsa doğrudan e-postaya götür.
+    goStep(chosen ? 2 : 1, !!chosen);
+  });
+
+  for (var rb = 0; rb < railBtns.length; rb++) {
+    railBtns[rb].addEventListener("click", function () {
+      var n = +this.getAttribute("data-go");
+      goStep(n, n === 2);
+    });
+  }
+
+  // Ziyaretçi kendi kaydırıp bir alana dokunduysa aktif adım oraya geçsin.
+  document.addEventListener("focusin", function (e) {
+    var el = e.target && e.target.closest ? e.target.closest(".gc-step") : null;
+    if (!el) return;
+    started = true;
+    curStep = +el.dataset.step;
+    paint();
+  });
+
+  var mailBox = document.getElementById("gcEmail");
+  mailBox.addEventListener("input", function () {
+    var ok = mailRe.test(mailBox.value.trim());
+    if (ok !== !!doneStep["2"]) { doneStep["2"] = ok; paint(); }
+  });
+  // change = alandan çıkarken; adres geçerliyse butona götürür.
+  mailBox.addEventListener("change", function () {
+    if (mailRe.test(mailBox.value.trim())) advance(3, false, 140);
+  });
+  mailBox.addEventListener("keydown", function (e) {
+    if (e.key !== "Enter" && e.keyCode !== 13) return;
+    e.preventDefault();                           // Enter formu erkenden göndermesin
+    mailBox.blur();
+    if (mailRe.test(mailBox.value.trim())) goStep(3, false);
+  });
+
+  // Form kendiliğinden görünür olduğunda akış başlar; zorla kaydırmayız.
+  var startIo = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      if (!en.isIntersecting || started) return;
+      started = true;
+      curStep = chosen ? 2 : 1;
+      paint();
+      startIo.disconnect();
+    });
+  }, { threshold: 0.3 });
+  startIo.observe(document.getElementById("gcFormCard"));
 
   // Sunucu kalan ADEDİ vermiyor, yalnızca "o platformda kod var mı" diyor.
   // Kaç kod kaldığı kullanıcıyı ilgilendirmiyor ve stok bilgisi rekabete açık.
@@ -766,10 +955,12 @@ img{max-width:100%;display:block}
 
   /* ── uyarılar ── */
   var alertBox = document.getElementById("gcAlert");
-  function showAlert(msg, kind) {
+  // quiet: eksik adıma geri götürürken uyarı kendi kendine kaydırmasın,
+  // yoksa iki kaydırma birbiriyle yarışıyor.
+  function showAlert(msg, kind, quiet) {
     alertBox.textContent = msg;
     alertBox.className = "gc-alert show " + (kind || "err");
-    alertBox.scrollIntoView({ behavior: reduced ? "auto" : "smooth", block: "center" });
+    if (!quiet) alertBox.scrollIntoView({ behavior: reduced ? "auto" : "smooth", block: "center" });
   }
   function hideAlert() { alertBox.className = "gc-alert"; }
 
@@ -798,8 +989,9 @@ img{max-width:100%;display:block}
     hideAlert();
 
     var email = document.getElementById("gcEmail").value.trim();
-    if (!chosen) return showAlert(T.errors.platform_required);
-    if (!email) return showAlert(T.errors.consent_required);
+    // Eksik adım varsa uyarıyla yetinmeyip ziyaretçiyi o adıma geri götürürüz.
+    if (!chosen) { showAlert(T.errors.platform_required, "err", true); goStep(1); return; }
+    if (!email) { showAlert(T.errors.consent_required, "err", true); goStep(2, true); return; }
 
     btn.disabled = true;
     btn.classList.add("busy");
@@ -842,6 +1034,8 @@ img{max-width:100%;display:block}
   }
 
   function succeed(data) {
+    stepDone("3");
+    if (rail) rail.classList.add("hide");         // akış bitti, şerit yer kaplamasın
     document.getElementById("gcFormCard").style.display = "none";
     var box = document.getElementById("gcResult");
     box.classList.add("show");
@@ -858,7 +1052,12 @@ img{max-width:100%;display:block}
     mail.textContent = data.emailSent ? T.result.mailOk : T.result.mailFail;
     mail.className = "gc-mail " + (data.emailSent ? "ok" : "bad");
 
-    box.scrollIntoView({ behavior: reduced ? "auto" : "smooth", block: "start" });
+    // Konumu offsetTop ile ölçeriz: kart "gc-pop" ile ölçeklenerek açılıyor ve
+    // getBoundingClientRect dönüşümü de sayıyor — kartın tepesi ekranın
+    // üstünde kalıyordu.
+    var y = 0;
+    for (var node = box; node; node = node.offsetParent) y += node.offsetTop;
+    window.scrollTo({ top: Math.max(0, y - 16), behavior: reduced ? "auto" : "smooth" });
 
     var copy = document.getElementById("gcCopy");
     copy.addEventListener("click", function () {

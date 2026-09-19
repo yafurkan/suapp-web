@@ -527,19 +527,26 @@ async function handleAdminStats(db, origin, env) {
     "SELECT lang, COUNT(*) AS adet FROM claims GROUP BY lang ORDER BY adet DESC",
   ).all();
 
+  // Kaynak = sayfa. partner boşsa genel hediye sayfası, hangisi olduğunu dil
+  // söyler (tr → hediye-kod.html, en → gift-code.html …). Sponsor sayfaları da
+  // aynı tabloda: hepsi tek havuzdan besleniyor, panelde de tek yerde dursun.
   const byPartner = await db.prepare(
     `SELECT COALESCE(partner, '') AS partner,
+            lang,
             COUNT(*) AS adet,
-            SUM(marketing_consent) AS izinli
-     FROM claims GROUP BY partner ORDER BY adet DESC`,
+            SUM(marketing_consent) AS izinli,
+            SUM(CASE WHEN platform = 'ios' THEN 1 ELSE 0 END) AS ios,
+            SUM(CASE WHEN platform = 'android' THEN 1 ELSE 0 END) AS android
+     FROM claims GROUP BY partner, lang ORDER BY adet DESC`,
   ).all();
 
   const byCountry = await db.prepare(
     "SELECT country, COUNT(*) AS adet FROM claims GROUP BY country ORDER BY adet DESC LIMIT 15",
   ).all();
 
+  // c.partner de gelir: panelin "Kaynak" sütunu yoksa her satıra "genel" yazıyordu.
   const last = await db.prepare(
-    `SELECT c.created_at, c.email, c.platform, c.lang, c.country,
+    `SELECT c.created_at, c.email, c.platform, c.lang, c.country, c.partner,
             c.marketing_consent, c.email_sent, k.code, k.seq
      FROM claims c LEFT JOIN codes k ON k.id = c.code_id
      ORDER BY c.created_at DESC LIMIT 25`,

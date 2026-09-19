@@ -27,6 +27,11 @@
     "ios": "iPhone",
     "android": "Android"
   },
+  "flow": {
+    "phone": "Telefon",
+    "email": "E-posta",
+    "code": "Kod"
+  },
   "form": {
     "heading": "İki adımda kodun hazır",
     "platformQ": "1. Hangi telefonu kullanıyorsun?",

@@ -113,6 +113,8 @@ td.mail{color:var(--text-1);max-width:210px;overflow:hidden;text-overflow:ellips
 .chip{display:inline-block;padding:2px 7px;border-radius:5px;font-size:11px;font-weight:600}
 .chip.ios{background:#e8f1fc;color:#1b528f}
 .chip.android{background:#fdeee7;color:#a3441c}
+.chip.lang{margin-inline-start:6px;background:var(--grid);color:var(--text-2);text-transform:uppercase;
+  letter-spacing:.04em;font-size:10.5px}
 .yes{color:var(--ok);font-weight:600}
 .no{color:var(--text-3)}
 
@@ -172,11 +174,12 @@ td.mail{color:var(--text-1);max-width:210px;overflow:hidden;text-overflow:ellips
   </section>
 
   <section class="card">
-    <h2>Sponsorluk kırılımı</h2>
-    <p class="sub">Hangi sayfadan kaç kod alındı. "genel" = suuapp.com/hediye-kod.html</p>
+    <h2>Kaynak sayfa kırılımı</h2>
+    <p class="sub">Her satır bir sayfa; hepsi aynı kod havuzundan besleniyor.
+      "genel" = dile göre hediye-kod.html / gift-code-*.html, diğerleri sponsor sayfaları.</p>
     <div class="scroll">
       <table>
-        <thead><tr><th>Kaynak</th><th>Alınan kod</th><th>Reklam izni</th><th>İzin oranı</th></tr></thead>
+        <thead><tr><th>Kaynak</th><th>Sayfa</th><th>Alınan kod</th><th>iOS</th><th>Android</th><th>Reklam izni</th><th>İzin oranı</th></tr></thead>
         <tbody id="partners"></tbody>
       </table>
     </div>
@@ -227,7 +230,20 @@ td.mail{color:var(--text-1);max-width:210px;overflow:hidden;text-overflow:ellips
   var nf = new Intl.NumberFormat("tr-TR");
   var gate = $("gate"), app = $("app"), tip = $("tip");
 
+  // Dil → genel hediye sayfası. scripts/build-gift-pages.py'deki TARGETS ile aynı.
+  var GENEL_SAYFA = {
+    tr: "/hediye-kod.html", en: "/gift-code.html", ar: "/gift-code-ar.html",
+    ru: "/gift-code-ru.html", de: "/gift-code-de.html", it: "/gift-code-it.html",
+    hi: "/gift-code-hi.html",
+  };
+
   function pct(a, b) { return b > 0 ? Math.round(a / b * 100) : 0; }
+
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"]/g, function (ch) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch];
+    });
+  }
 
   function load(key, fromGate) {
     return fetch(API + "/admin/stats?key=" + encodeURIComponent(key), { cache: "no-store" })
@@ -305,16 +321,27 @@ td.mail{color:var(--text-1);max-width:210px;overflow:hidden;text-overflow:ellips
     $("dlSubs").href = API + "/admin/subscribers?key=" + encodeURIComponent(key);
   }
 
+  // Satırlar Worker'dan (partner + dil) kırılımıyla gelir. Worker eski sürümdeyse
+  // dil/platform alanları boş döner; o zaman satır yalnızca kaynak toplamı olur.
   function drawPartners(rows) {
     if (!rows.length) {
-      $("partners").innerHTML = '<tr><td colspan="4" style="color:var(--text-3)">Henüz kayıt yok.</td></tr>';
+      $("partners").innerHTML = '<tr><td colspan="7" style="color:var(--text-3)">Henüz kayıt yok.</td></tr>';
       return;
     }
+    var num = function (v) { return v == null ? "—" : nf.format(v); };
     $("partners").innerHTML = rows.map(function (r) {
-      var ad = r.partner || "genel";
+      var genel = !r.partner;
+      var lang = r.lang || "";
+      var sayfa = genel
+        ? (GENEL_SAYFA[lang] || (lang ? "—" : "tüm diller"))
+        : "/" + r.partner + "/";
       var izin = r.izinli || 0;
-      return "<tr><td style='color:var(--text-1);font-weight:600'>" + ad + "</td>" +
+      return "<tr><td style='color:var(--text-1);font-weight:600'>" + esc(genel ? "genel" : r.partner) +
+        (lang ? ' <span class="chip lang">' + esc(lang) + "</span>" : "") + "</td>" +
+        '<td style="color:var(--text-3)">' + esc(sayfa) + "</td>" +
         "<td>" + nf.format(r.adet) + "</td>" +
+        "<td>" + num(r.ios) + "</td>" +
+        "<td>" + num(r.android) + "</td>" +
         "<td>" + nf.format(izin) + "</td>" +
         "<td>%" + pct(izin, r.adet) + "</td></tr>";
     }).join("");
@@ -372,17 +399,13 @@ td.mail{color:var(--text-1);max-width:210px;overflow:hidden;text-overflow:ellips
       $("recent").innerHTML = '<tr><td colspan="9" style="color:var(--text-3)">Henüz kayıt yok.</td></tr>';
       return;
     }
-    var esc = function (s) {
-      return String(s == null ? "" : s).replace(/[&<>"]/g, function (ch) {
-        return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch];
-      });
-    };
     $("recent").innerHTML = rows.map(function (r) {
       var t = new Date(r.created_at);
       return "<tr><td>" + t.toLocaleDateString("tr-TR") + " " +
         t.toLocaleTimeString("tr-TR", { hour: "2-digit", minute: "2-digit" }) + "</td>" +
         '<td class="mail">' + esc(r.email) + "</td>" +
-        "<td>" + esc(r.partner || "genel") + "</td>" +
+        "<td>" + esc(r.partner || "genel") +
+        (r.partner ? "" : ' <span class="chip lang">' + esc(r.lang) + "</span>") + "</td>" +
         '<td><span class="chip ' + esc(r.platform) + '">' + (r.platform === "ios" ? "iOS" : "Android") + "</span></td>" +
         '<td class="code">' + esc(r.code || "—") + "</td>" +
         "<td>" + esc(r.lang) + "</td><td>" + esc(r.country || "—") + "</td>" +

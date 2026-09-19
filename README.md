@@ -210,6 +210,15 @@ tek kullanımlık posta reddi → **DB katmanında UNIQUE indeks** (tek IP / tek
 e-posta = tek kod, platformdan bağımsız). Uygulama kontrolü eşzamanlı iki
 isteği kaçırabilir; UNIQUE indeks kaçırmaz.
 
+**Biçim ortak (2026-09-19'dan beri).** 7 dilin tamamı ve sponsorluk sayfaları
+aynı "sinema" derisini kullanır: siyah zemin, tek ışık kaynağı, platform
+sorusunda dönen telefon maketi (`DEFAULT_THEME.skin = "dark"`; `"light"` eski
+mavi degradeyi geri getirir, sponsor dosyası kendi derisini yazabilir). Form üç
+adıma bölünmüştür — telefon → e-posta → kod. "Kodumu al"dan sonra bir adım
+biter bitmez sıradaki alan kendiliğinden ekrana gelir, vurgulanır ve üstteki
+yapışkan şeritte işaretlenir; ziyaretçi alan aramak zorunda kalmaz. Adım zaten
+tümüyle ekrandaysa kaydırma yapılmaz — mobilde parmağın altındaki buton kaçar.
+
 **Sponsorluk sayfaları.** Bir iş birliği için ayrı şablon yazılmaz — aynı
 şablonun partner modu kullanılır, yoksa formda veya güvenlik akışında bir
 düzeltme yapılınca iki yerde düzeltmek gerekirdi. Sponsor dosyası yalnızca
@@ -228,8 +237,10 @@ DEĞİŞEN metinleri yazar, gerisi `content/gift/<lang>.json`'dan gelir:
 ```
 
 Yeni sponsor = bu dosyanın bir kopyası + logo + `build-gift-pages.py --apply`.
-Talep kaydına `partner` sütunu yazılır; panel hangi sayfadan kaç kod alındığını
-ve izin oranını kaynak bazında gösterir. Sponsor sayfasında dil menüsü
+Talep kaydına `partner` sütunu yazılır. Panelde tek tablo var: her satır bir
+sayfa (`partner` + dil kırılımı), sponsor sayfaları ve genel hediye sayfaları
+yan yana — genel satırlarda dil hangi dosya olduğunu söyler (tr →
+`hediye-kod.html`). Hepsi aynı D1 havuzundan okunur. Sponsor sayfasında dil menüsü
 gizlidir — kullanıcıyı iş birliği sayfasından markasız sayfaya atmasın diye.
 
 **Sayfalar noindex ve sitemap dışı:** bağlantı elle paylaşılıyor; aramadan gelen

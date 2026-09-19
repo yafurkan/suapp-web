@@ -62,10 +62,11 @@ TARGETS: dict[str, tuple[str, str, str, str]] = {
 }
 
 
-# Suu'nun kendi hero degradesi. Sponsor kendi rengini getirebilir.
-# skin: "light" mavi degrade (standart), "dark" siyah zemin + beyaz ışık ve
-# platform sorusunda dönen telefon mockup'ı. Sponsor dosyasından açılır.
-DEFAULT_THEME = {"from": "#01A5F7", "mid": "#0B6FD0", "to": "#063C7A", "skin": "light"}
+# Suu'nun kendi hero degradesi (yalnızca skin "light" iken görünür).
+# skin: "dark" siyah zemin + beyaz ışık ve platform sorusunda dönen telefon
+# mockup'ı — dahacommunity sayfasının biçimi, 2026-09'dan beri hepsinde ortak.
+# "light" eski mavi degradeyi geri getirir; sponsor dosyası kendi derisini yazabilir.
+DEFAULT_THEME = {"from": "#01A5F7", "mid": "#0B6FD0", "to": "#111418", "skin": "dark"}
 
 # Mockup'ın içine konan gerçek uygulama ekranı. Dilinde yoksa İngilizce,
 # o da yoksa Türkçe: ekranlardaki arayüz metni zaten İngilizce.

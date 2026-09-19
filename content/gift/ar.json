@@ -27,6 +27,11 @@
     "ios": "iPhone",
     "android": "Android"
   },
+  "flow": {
+    "phone": "الهاتف",
+    "email": "البريد",
+    "code": "الرمز"
+  },
   "form": {
     "heading": "خطوتان ويصلك الرمز",
     "platformQ": "١. أي هاتف تستخدم؟",

@@ -27,6 +27,11 @@
     "ios": "iPhone",
     "android": "Android"
   },
+  "flow": {
+    "phone": "फ़ोन",
+    "email": "ईमेल",
+    "code": "कोड"
+  },
   "form": {
     "heading": "दो कदम में कोड आपका",
     "platformQ": "1. आप कौन-सा फ़ोन इस्तेमाल करते हैं?",

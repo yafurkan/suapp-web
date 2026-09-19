@@ -27,6 +27,11 @@
     "ios": "iPhone",
     "android": "Android"
   },
+  "flow": {
+    "phone": "Handy",
+    "email": "E-Mail",
+    "code": "Code"
+  },
   "form": {
     "heading": "Zwei Schritte zu deinem Code",
     "platformQ": "1. Welches Handy nutzt du?",

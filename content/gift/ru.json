@@ -27,6 +27,11 @@
     "ios": "iPhone",
     "android": "Android"
   },
+  "flow": {
+    "phone": "Телефон",
+    "email": "Почта",
+    "code": "Код"
+  },
   "form": {
     "heading": "Два шага до кода",
     "platformQ": "1. Какой у вас телефон?",
