@@ -273,7 +273,30 @@ img{max-width:100%;display:block}
 .gc-mail{margin:18px 0 0;padding:12px 15px;border-radius:12px;font-size:.88rem;line-height:1.55}
 .gc-mail.ok{background:#eefbf4;color:#0a6b3d;border:1px solid #c7eeda}
 .gc-mail.bad{background:#fff8e8;color:#8a5a00;border:1px solid #ffe1a8}
-.gc-getapp{display:block;margin:18px 0 0;text-align:center;font-size:.9rem;color:var(--gc-deep);font-weight:600}
+/* ── mağaza rozeti ──
+   Kodu alan kişinin bir sonraki işi uygulamayı indirmek. Küçük bir metin
+   bağlantısı yerine gerçek mağaza butonu: hangi platformu seçtiyse yalnızca
+   o görünür, seçim zaten formda yapıldı. */
+.gc-getapp{margin:24px 0 0;padding:20px 0 0;border-top:1px solid var(--gc-line);text-align:center}
+.gc-getapp-cap{display:block;margin:0 0 12px;font-size:.88rem;font-weight:600;color:var(--gc-muted)}
+.gc-store{display:none;align-items:center;justify-content:center;gap:12px;position:relative;overflow:hidden;
+  width:min(280px,100%);margin:0 auto;padding:11px 20px;border-radius:14px;text-decoration:none;
+  border:1.5px solid var(--gc-ink);background:#fff;color:var(--gc-ink);
+  transition:transform .2s cubic-bezier(.2,.8,.2,1),box-shadow .2s,background .2s}
+.gc-getapp[data-plat="ios"] .gc-store[data-store="ios"],
+.gc-getapp[data-plat="android"] .gc-store[data-store="android"]{display:inline-flex}
+.gc-store:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(13,33,53,.18)}
+.gc-store:active{transform:scale(.97);transition-duration:.08s}
+.gc-store svg{width:27px;height:27px;flex:none}
+.gc-store .gc-apple{fill:currentColor}
+.gc-store span{display:flex;flex-direction:column;align-items:flex-start;text-align:start;line-height:1.2}
+.gc-store small{font-size:.67rem;font-weight:500;opacity:.72}
+.gc-store b{font-size:1.04rem;font-weight:700;letter-spacing:-.01em}
+/* arada bir geçen ışık: göz butonu bulsun */
+.gc-store::after{content:'';position:absolute;top:0;bottom:0;width:60%;pointer-events:none;
+  background:linear-gradient(104deg,transparent,var(--gc-sheen,rgba(13,33,53,.12)),transparent);
+  animation:gc-shine 4.5s ease-in-out 1.2s infinite}
+@keyframes gc-shine{0%{transform:translateX(-220%)}22%,100%{transform:translateX(320%)}}
 
 /* ───────── SSS + alt ───────── */
 .gc-faq{margin:44px 0 0}
@@ -513,7 +536,12 @@ img{max-width:100%;display:block}
 [data-skin=dark] .gc-steps li::before{background:rgba(255,255,255,.12);color:#fff}
 [data-skin=dark] .gc-mail.ok{background:rgba(48,209,88,.1);border-color:rgba(48,209,88,.3);color:#7ee2a0}
 [data-skin=dark] .gc-mail.bad{background:rgba(255,190,60,.1);border-color:rgba(255,190,60,.3);color:#ffd68a}
-[data-skin=dark] .gc-getapp{color:#c9c9ce}
+[data-skin=dark] .gc-getapp{border-top-color:var(--k-line)}
+[data-skin=dark] .gc-getapp-cap{color:var(--k-mut)}
+[data-skin=dark] .gc-store{--gc-sheen:rgba(255,255,255,.5);
+  background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.4);color:#fff}
+[data-skin=dark] .gc-store:hover{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.7);
+  box-shadow:0 14px 34px rgba(255,255,255,.12)}
 [data-skin=dark] .gc-faq details{border-radius:16px;border-color:var(--k-line);background:rgba(255,255,255,.04)}
 [data-skin=dark] .gc-faq summary{color:#ececf0}
 [data-skin=dark] .gc-faq summary::after{color:rgba(255,255,255,.55)}
@@ -718,12 +746,27 @@ img{max-width:100%;display:block}
 
     <div class="gc-mail" id="gcMail"></div>
 
+    <div class="gc-getapp" id="gcGetApp">
+      <span class="gc-getapp-cap">{{ c.result.download }}</span>
+      <a class="gc-store" data-store="ios" href="{{ app_store }}" target="_blank" rel="noopener">
+        <svg class="gc-apple" viewBox="0 0 24 24"><path d="M17.05 12.5c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.15-2.8.85-3.5.85s-1.85-.83-3-.8c-1.55.02-3 .9-3.8 2.28-1.62 2.8-.42 6.95 1.16 9.22.77 1.1 1.7 2.35 2.9 2.3 1.16-.05 1.6-.75 3-.75s1.8.75 3.03.72c1.25-.02 2.04-1.12 2.8-2.23.88-1.28 1.25-2.52 1.27-2.58-.03-.02-2.44-.94-2.46-3.72zM14.9 5.1c.63-.77 1.06-1.83.94-2.9-.9.04-2 .6-2.66 1.37-.58.67-1.1 1.76-.96 2.8 1.02.08 2.05-.5 2.68-1.27z"/></svg>
+        <span><small>Download on the</small><b>App Store</b></span>
+      </a>
+      <a class="gc-store" data-store="android" href="{{ google_play }}" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24">
+          <path fill="#00A0FF" d="M3.5 1.8 13.8 12 3.5 22.2A1.5 1.5 0 0 1 3 21V3c0-.47.2-.9.5-1.2z"/>
+          <path fill="#00E676" d="M3.5 1.8a1.5 1.5 0 0 1 1.4-.05L17.3 8.5 13.8 12 3.5 1.8z"/>
+          <path fill="#FF3A44" d="M3.5 22.2 13.8 12l3.5 3.5-12.4 6.75a1.5 1.5 0 0 1-1.4-.05z"/>
+          <path fill="#FFCE00" d="m17.3 8.5 3.9 2.12a1.57 1.57 0 0 1 0 2.76L17.3 15.5 13.8 12l3.5-3.5z"/>
+        </svg>
+        <span><small>Get it on</small><b>Google Play</b></span>
+      </a>
+    </div>
+
     <ol class="gc-steps">
       {% for s in c.result.steps %}<li>{{ s }}</li>
       {% endfor %}
     </ol>
-
-    <a class="gc-getapp" id="gcGetApp" href="{{ app_store }}" target="_blank" rel="noopener">{{ c.result.download }} →</a>
   </section>
 
   <section class="gc-faq gc-reveal">
@@ -744,8 +787,6 @@ img{max-width:100%;display:block}
   var CFG = {
     api: {{ api_base | tojson }},
     lang: {{ lang | tojson }},
-    appStore: {{ app_store | tojson }},
-    googlePlay: {{ google_play | tojson }},
     partner: {{ (partner.slug if partner else None) | tojson }},
     partnerName: {{ (partner.name if partner else None) | tojson }}
   };
@@ -1192,8 +1233,9 @@ img{max-width:100%;display:block}
     redeem.href = data.redeemUrl;
     document.getElementById("gcRedeemText").textContent =
       data.platform === "android" ? T.result.redeemAndroid : T.result.redeemIos;
-    document.getElementById("gcGetApp").href =
-      data.platform === "android" ? CFG.googlePlay : CFG.appStore;
+    // İki mağaza rozeti de sayfada duruyor; seçilen platformunki açılır.
+    document.getElementById("gcGetApp").dataset.plat =
+      data.platform === "android" ? "android" : "ios";
 
     var mail = document.getElementById("gcMail");
     mail.textContent = data.emailSent ? T.result.mailOk : T.result.mailFail;
