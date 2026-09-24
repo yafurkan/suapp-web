@@ -169,6 +169,37 @@
         });
     }
 
+    // ── Hero telefonundaki kodlu uygulama turu ──────────────
+    // iOS ekranının üstüne suu-phone-tour.js ile döngüsel bir gezinti
+    // oynatılır. Statik ekran görüntüsü altta kalır: yer tutar (CLS yok),
+    // botlar görür, tur yüklenemezse görünen odur.
+    var TOUR = {
+        camera: '/assets/tour/camera.jpg',
+        map:    '/assets/tour/map.jpg',
+        mascot: '/assets/tour/mascot.png'
+    };
+
+    function mountTour(host) {
+        return window.SuuPhoneTour ? window.SuuPhoneTour.mount(host, TOUR) : null;
+    }
+
+    function initTour(root) {
+        var host = root.querySelector('[data-tour]');
+        if (!host || !mountTour(host)) return;
+        var timer = null;
+
+        // Android seçilince tur gizlenir; display:none olunca turun kendi
+        // IntersectionObserver'ı onu duraklatır. Çevirmenin ortasında (ön yüz
+        // arkaya geçtiğinde) gizlenir ki dönüş sırasında ekran boş kalmasın.
+        if (root.dataset.face === 'android') host.style.display = 'none';
+        painters.push(function (platform) {
+            clearTimeout(timer);
+            if (platform === 'ios') { host.style.display = ''; return; }
+            if (reducedMotion()) { host.style.display = 'none'; return; }
+            timer = setTimeout(function () { host.style.display = 'none'; }, 480);
+        });
+    }
+
     // ── Maketi büyütme ──────────────────────────────────────
     // Küçük telefonlarda hero maketi ekranı kaplamasın diye küçültüldü;
     // detayı görmek isteyen üstüne dokununca maket büyüyerek açılır.
@@ -197,6 +228,16 @@
         img.src = source.currentSrc || source.src;
         img.alt = source.alt;
         frame.appendChild(img);
+
+        // Hero'da tur oynuyorsa büyütülmüş maket de turu gösterir.
+        var tour = null;
+        if (platform === 'ios' && root.querySelector('[data-tour]')) {
+            var host = document.createElement('div');
+            host.className = 'phone__tour';
+            host.setAttribute('aria-hidden', 'true');
+            frame.appendChild(host);
+            tour = mountTour(host);
+        }
 
         lb.appendChild(close);
         lb.appendChild(frame);
@@ -227,14 +268,15 @@
             document.body.classList.remove('lbox-open');
             if (trigger) trigger.focus();
 
+            function remove() { if (tour) tour.destroy(); lb.remove(); }
             var back = origin.getBoundingClientRect();
-            if (!animated || !back.width) { lb.remove(); return; }
+            if (!animated || !back.width) { remove(); return; }
             var out = frame.animate(
                 [{ transform: 'none' }, { transform: shift(back, frame.getBoundingClientRect()) }],
                 { duration: 260, easing: 'cubic-bezier(0.4, 0, 0.6, 1)', fill: 'forwards' }
             );
             lb.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 260, fill: 'forwards' });
-            out.onfinish = function () { lb.remove(); };
+            out.onfinish = remove;
         }
 
         function onKey(e) {
@@ -279,6 +321,17 @@
         document.querySelectorAll('[data-shots]').forEach(initGallery);
         // Kayıtlı tercih → cihaz tahmini → iOS (HTML'in başlangıç durumu)
         apply(preferred() || 'ios');
+        // suu-phone-tour.js sayfanın sonunda defer ile gelir; bu dosya ondan
+        // önce çalıştığı için tur, DOMContentLoaded'da (tüm defer'lar bitince)
+        // kurulur.
+        whenTourLoaded(function () {
+            document.querySelectorAll('[data-device]').forEach(initTour);
+        });
+    }
+
+    function whenTourLoaded(fn) {
+        if (window.SuuPhoneTour || document.readyState === 'complete') fn();
+        else document.addEventListener('DOMContentLoaded', fn, { once: true });
     }
 
     if (document.readyState === 'loading') {

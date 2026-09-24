@@ -748,6 +748,15 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-10) 0; }
 }
 .phone img { border-radius: 26px; width: 100%; background: var(--bg-sunken); }
 .phone--lg { max-width: 320px; }
+/* Kodlu uygulama turu (suu-phone-tour.js) — ekran görüntüsünün tam üstüne
+   oturur; görüntü altta yer tutar. Çentik (::after) sonra boyandığı için
+   turun üstünde kalır. */
+.phone__tour {
+    position: absolute; inset: 10px;
+    border-radius: 26px;
+    overflow: hidden;
+    background: #0e1524;
+}
 .phone--punch::after {              /* Android: çentik değil, delik kamera */
     inset-block-start: 16px;
     width: 11px; height: 11px;
