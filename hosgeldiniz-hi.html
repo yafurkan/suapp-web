@@ -2,6 +2,12 @@
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
+    <!-- Hero intro (assets/js/suu-intro.js): başlık, animasyon oynayana kadar gizli kalır — flash önlenir.
+         Animasyon katmanı sabit #fff çiziyor; açık temada etiket/sayaç/yollar görünsün diye metin rengine bağlanır. -->
+    <style>.suu-pending #hero-title{opacity:0}.hero__copy{position:relative}.hero__copy>div[aria-hidden="true"]{color:var(--text)!important}.hero__copy>div[aria-hidden="true"]>svg>path[stroke-opacity=".16"]{stroke:currentColor}</style>
+    <script>
+      try{ if(!sessionStorage.getItem('suu-hero-intro') && !matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('suu-pending'); }catch(e){}
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- ÜRETİLMİŞ DOSYA — elle düzenlemeyin.
@@ -544,8 +550,8 @@
 <!-- HERO -->
 <section class="hero" data-cta="hero">
     <div class="container hero__grid">
-        <div>
-            <h1 class="hero__title">एक फ़ोटो, पूरी थाली — <span class="accent" data-text="कैलोरी, वर्कआउट और पानी">कैलोरी, वर्कआउट और पानी</span></h1>
+        <div class="hero__copy">
+            <h1 class="hero__title" id="hero-title">एक फ़ोटो, पूरी थाली — <span class="accent" data-text="कैलोरी, वर्कआउट और पानी">कैलोरी, वर्कआउट और पानी</span></h1>
             <p class="hero__lead">थाली की फ़ोटो लीजिए: दाल, चावल और सलाद अलग-अलग पहचाने जाते हैं। लगभग 50 गतिविधियाँ लाइव GPS से रिकॉर्ड कीजिए और स्टोरी में शेयर कीजिए। 91 पेय के साथ असली हाइड्रेशन।</p>
             
 <div class="btn-row">
@@ -1244,5 +1250,13 @@
 </script>
 
 <script src="/assets/js/suu-badge.js?v=2" defer></script>
+<script src="/assets/js/suu-intro.js?v=1"></script>
+<script>
+  (function(){
+    var h = document.getElementById('hero-title');
+    if (window.SuuIntro) SuuIntro.play(h, { logo: '/assets/brand/suu-badge-128.png' });
+    document.documentElement.classList.remove('suu-pending');
+  })();
+</script>
 </body>
 </html>
