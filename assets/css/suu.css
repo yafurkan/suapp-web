@@ -522,10 +522,43 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-10) 0; }
     align-items: center;
 }
 .hero__title { margin-block-end: var(--sp-5); }
+
+/* Vurgu ifadesi — akan degrade + arkasında nabız gibi atan bir ışıma.
+   Işıma, aynı degradeyi bulanıklaştırılmış ikinci bir kopyada çizen
+   ::before ile yapılır (data-text şablondan gelir); metin degradeye
+   kırpıldığı için text-shadow burada iş görmüyor. isolation, z-index:-1
+   olan kopyanın hero'nun arka planının ardına düşmesini engeller.
+   nowrap yok: vurgu ifadeleri artık tek satıra sığmayacak kadar uzun. */
 .hero__title .accent {
-    background: linear-gradient(96deg, var(--pillar-water), var(--accent-cyan) 45%, var(--pillar-exercise));
+    --accent-grad: linear-gradient(96deg,
+        var(--pillar-water), var(--accent-cyan) 32%, var(--pillar-exercise) 58%,
+        var(--accent-cyan) 78%, var(--pillar-water));
+    position: relative;
+    display: inline-block;
+    isolation: isolate;
+    background: var(--accent-grad);
+    background-size: 260% 100%;
     -webkit-background-clip: text; background-clip: text; color: transparent;
-    white-space: nowrap;   /* vurgu ifadesi satır ortasından bölünmesin */
+    animation: accent-flow 9s linear infinite;
+}
+.hero__title .accent::before {
+    content: attr(data-text);
+    position: absolute; inset: 0;
+    z-index: -1;
+    background: var(--accent-grad);
+    background-size: 260% 100%;
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    filter: blur(15px);
+    animation: accent-flow 9s linear infinite, accent-glow 3.6s ease-in-out infinite;
+    pointer-events: none;
+}
+@keyframes accent-flow { to { background-position: -260% 0; } }
+@keyframes accent-glow { 0%, 100% { opacity: 0.35; } 50% { opacity: 0.75; } }
+
+@media (prefers-reduced-motion: reduce) {
+    .hero__title .accent,
+    .hero__title .accent::before { animation: none; }
+    .hero__title .accent::before { opacity: 0.45; }
 }
 .hero__lead {
     max-width: 38rem;
@@ -569,10 +602,6 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-10) 0; }
     .hero__media              { order: 5; margin-block-start: var(--sp-4); }
     .hero__grid .btn-row + p  { order: 6; }   /* "Ücretsiz indir · Premium…" */
     .hero__grid .trust-row    { order: 7; }
-
-    /* Vurgu ifadesi bu genişlikte tek satıra sığmıyor (örn. UK sürümünde
-       "усе в одному застосунку"); bölünmesine izin ver, kırpılmasın. */
-    .hero__title .accent { white-space: normal; }
 
     /* İki mağaza butonu yan yana: alt alta dizilince 124px yer kaplıyordu.
        Alttaki sabit bar zaten aynı iki mağazayı taşıyor. */
