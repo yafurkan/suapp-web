@@ -154,7 +154,7 @@
 <body>
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <div class="nav-logo"><a href="/" style="display:flex;align-items:center;gap:8px;text-decoration:none;color:inherit;"><img src="/assets/logo-drop.png" alt="Suu" style="height:1em;width:auto;vertical-align:-0.15em;"><span>Suu</span></a></div>
+            <div class="nav-logo"><a href="/" style="display:flex;align-items:center;gap:8px;text-decoration:none;color:inherit;"><img src="/assets/brand/suu-badge-128.png" alt="Suu" width="128" height="128" class="suu-logo-badge" style="height:1.6em;width:1.6em;border-radius:50%;vertical-align:-0.4em;box-shadow:0 0 0 1px rgba(255,255,255,.12),0 0 14px rgba(94,170,255,.45);"><span>Suu</span></a></div>
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="/" class="nav-link">Ana Sayfa</a></li>
                 <li><a href="ozellikler.html" class="nav-link">Özellikler</a></li>
@@ -241,11 +241,12 @@
         window.addEventListener('scroll', function() { var n=document.getElementById('navbar'); if(n){ window.scrollY>50?n.classList.add('scrolled'):n.classList.remove('scrolled'); } });
     </script>
     <script src="lang-switcher.js?v=3" defer></script>
-<link rel="stylesheet" href="donation-widget.css?v=5">
-<script src="donation-widget.js?v=5" defer></script>
+<link rel="stylesheet" href="donation-widget.css?v=6">
+<script src="donation-widget.js?v=6" defer></script>
 <div class="sticky-download-bar" id="stickyDownloadBar">
     <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" class="sticky-btn sticky-btn-apple" target="_blank" rel="noopener"><i class="fab fa-apple"></i> App Store</a>
     <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro" class="sticky-btn sticky-btn-google" target="_blank" rel="noopener"><i class="fab fa-google-play"></i> Google Play</a>
 </div>
+<script src="/assets/js/suu-badge.js?v=1" defer></script>
 </body>
 </html>

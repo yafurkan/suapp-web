@@ -549,6 +549,41 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-10) 0; }
     .hero__media { order: -1; }
 }
 
+/* Telefon boyutunda hero — 375×667'lik bir iPhone SE'de 320px'lik maket
+   tek başına katlamanın tamamını yiyordu: ziyaretçi başlığı da açıklamayı
+   da hiç görmeden karşılanıyordu. Bu genişlikte sıra metne verilir, maket
+   küçültülüp açıklamanın altına alınır — ilk ekranda yine görünür, üstüne
+   dokununca büyüyerek açılır (.devsw__zoom + .lbox). */
+@media (max-width: 700px) {
+    .hero { padding-block: var(--sp-5) var(--section-y); }
+
+    /* Metin sarmalayıcısını kaldır: çocukları doğrudan grid öğesi olur,
+       böylece maket açıklamanın ve butonların arasına sıralanabilir. */
+    .hero__grid > :first-child { display: contents; }
+    .hero__grid { gap: 0; }
+
+    .hero__grid .eyebrow      { order: 1; }
+    .hero__title              { order: 2; font-size: clamp(1.75rem, 7.2vw, 2.25rem); }
+    .hero__lead               { order: 3; margin-block-end: var(--sp-5); font-size: var(--fs-base); line-height: 1.55; }
+    .hero__grid .btn-row      { order: 4; }
+    .hero__media              { order: 5; margin-block-start: var(--sp-4); }
+    .hero__grid .btn-row + p  { order: 6; }   /* "Ücretsiz indir · Premium…" */
+    .hero__grid .trust-row    { order: 7; }
+
+    /* Vurgu ifadesi bu genişlikte tek satıra sığmıyor (örn. UK sürümünde
+       "усе в одному застосунку"); bölünmesine izin ver, kırpılmasın. */
+    .hero__title .accent { white-space: normal; }
+
+    /* İki mağaza butonu yan yana: alt alta dizilince 124px yer kaplıyordu.
+       Alttaki sabit bar zaten aynı iki mağazayı taşıyor. */
+    .hero__grid .btn-row .btn-store {
+        flex: 1 1 0; min-width: 0; min-height: 50px;
+        justify-content: center; padding-inline: var(--sp-3);
+    }
+    .hero__grid .btn-row .btn-store__small { display: none; }
+    .hero__grid .btn-row .btn-store__big   { font-size: var(--fs-sm); }
+}
+
 /* ─────────────────────────────────────────────────────────
    7. SÜTUN KARTLARI (su / kalori / egzersiz)
    ───────────────────────────────────────────────────────── */
@@ -693,10 +728,10 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-10) 0; }
 /* Cihaz değiştirici — platform seçimi telefonu 3B çevirir.
    İki yüz de DOM'da kalır: hangi platformun ekranı gösterilirse gösterilsin
    diğeri de kaynakta durur, ekran görüntüsü galerisindeki mantıkla aynı. */
-.devsw { display: flex; flex-direction: column; perspective: 1600px; }
+.devsw { --phone-w: 320px; display: flex; flex-direction: column; perspective: 1600px; }
 .devsw__stage {
     display: grid;
-    max-width: 320px;
+    max-width: var(--phone-w);
     margin-inline: auto;
     transform-style: preserve-3d;
     transition: transform 0.95s cubic-bezier(0.62, 0.02, 0.24, 1);
@@ -744,6 +779,77 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-10) 0; }
     color: var(--text-brand);
     box-shadow: var(--shadow-sm);
 }
+
+/* Telefon boyutunda maket küçülür — genişlik hem ekran genişliğine hem
+   yüksekliğine bakar: kısa ekranda (iPhone SE) daha küçük, uzun telefonda
+   daha büyük. Detay büyütme katmanında görülür. */
+@media (max-width: 700px) {
+    .devsw { --phone-w: min(52vw, 24vh, 200px); }
+    .devsw__tabs { margin-block-start: var(--sp-4); }
+}
+
+/* Maketi büyütme — JS sahneyi bu butonun içine alır, yoksa hiç basılmaz.
+   Perspektif .devsw'den devralınmaz (yalnız doğrudan çocuğa işler), o yüzden
+   burada yeniden tanımlanır; aksi halde platform çevirmesi düzleşir. */
+.devsw__zoom {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0; padding: 0;
+    border: 0; background: none;
+    font: inherit; color: inherit;
+    cursor: zoom-in;
+    perspective: 1600px;
+}
+/* Rozet maketin sağ üst köşesinde durur. Buton maketten geniş olduğu için
+   konum telefon genişliğinden hesaplanır. Sağ ÜST köşe, çünkü küçük ekranda
+   maketin altı katlamanın altında kalıyor — rozet orada görünmezdi.
+   Yalnızca ikon: 160px'lik makette yazılı rozet telefonun yarısını kaplıyor,
+   ekran görüntüsünün içeriğini de gizliyor. */
+.devsw__zoom__hint {
+    position: absolute;
+    inset-block-start: 16px;
+    inset-inline-end: calc(50% - var(--phone-w) / 2 + 16px);
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 28px; height: 28px;
+    border-radius: var(--r-full);
+    background: color-mix(in srgb, var(--n-950) 55%, transparent);
+    backdrop-filter: blur(6px);
+    color: #fff;
+    opacity: 0.85;
+    transition: opacity var(--dur-base) var(--ease), transform var(--dur-base) var(--ease);
+    pointer-events: none;
+}
+.devsw__zoom:hover .devsw__zoom__hint { opacity: 1; transform: scale(1.08); }
+.devsw__zoom:focus-visible { outline: 2px solid var(--su-500); outline-offset: 6px; border-radius: var(--r-lg); }
+
+/* Büyütülmüş maket — hero'daki küçük maketten büyüyerek açılan katman */
+.lbox {
+    /* Bağış widget'ının (9998) üstünde, tam ekran kutlama perdesinin
+       (.sog-perde, 10050) altında kalsın. */
+    position: fixed; inset: 0; z-index: 10000;
+    display: grid; place-items: center;
+    padding: var(--sp-5);
+    background: color-mix(in srgb, var(--n-950) 82%, transparent);
+    backdrop-filter: blur(10px);
+}
+.lbox__phone {
+    width: min(82vw, calc(41vh - 12px), 380px);
+    will-change: transform;
+}
+.lbox__close {
+    position: absolute; inset-block-start: calc(var(--sp-4) + env(safe-area-inset-top, 0px));
+    inset-inline-end: var(--sp-4);
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 44px; height: 44px;
+    border: 0; border-radius: var(--r-full);
+    background: color-mix(in srgb, var(--n-0) 18%, transparent);
+    color: #fff; font-size: 1.5rem; line-height: 1;
+    cursor: pointer;
+}
+.lbox__close:hover { background: color-mix(in srgb, var(--n-0) 30%, transparent); }
+.lbox__close:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+body.lbox-open { overflow: hidden; }
 
 /* ─────────────────────────────────────────────────────────
    9. PLATFORM MATRİSİ + KARŞILAŞTIRMA TABLOSU

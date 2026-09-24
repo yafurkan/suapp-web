@@ -12,6 +12,16 @@
     var DATA_URL = '/donations.json';
     var STORAGE_KEY = 'suu-lang';
 
+    // ---------- Public API ----------
+    // The header logo badge (assets/js/suu-badge.js) opens the panel through
+    // this, often before donations.json has landed — so queue early requests
+    // and flush them once the panel exists.
+    var api = window.SuuDonation = window.SuuDonation || {};
+    var pendingOpen = false;
+    api.ready = false;
+    api.open = function () { pendingOpen = true; };
+    api.close = function () { pendingOpen = false; };
+
     // ---------- Language detection (mirrors lang-switcher.js) ----------
     function detectLang() {
         try {
@@ -318,6 +328,15 @@
             if (panel.classList.contains('suu-dw-open')) closePanel();
             else openPanel();
         });
+
+        // Hand the real controls to anything waiting on the API (logo badge).
+        api.open = openPanel;
+        api.close = closePanel;
+        api.ready = true;
+        if (pendingOpen) {
+            pendingOpen = false;
+            openPanel();
+        }
 
         if (closeBtn) closeBtn.addEventListener('click', closePanel);
         if (receiptsToggle) receiptsToggle.addEventListener('click', function () { showReceipts(true); });

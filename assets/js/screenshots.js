@@ -12,6 +12,10 @@
  * Yükleme sırası (görsel bulunamazsa):
  *     <platform>/<sayfa dili>  →  <platform>/tr  →  _placeholder.svg
  *
+ * Hero maketi küçük telefonlarda küçültüldüğü için (bkz. suu.css, 700px altı)
+ * sahne bir butonun içine alınır: dokunulduğunda ekran görüntüsü tam boy
+ * bir katmanda büyüyerek açılır.
+ *
  * Beklenen HTML:
  *   <div class="shots" data-shots>
  *     <div class="shots__tabs" role="tablist">
@@ -38,6 +42,27 @@
     var BASE = '/assets/screenshots/';
     var PLACEHOLDER = BASE + '_placeholder.svg';
     var PLATFORMS = ['ios', 'android'];
+
+    // Büyütme katmanının metinleri — sayfa dili <html lang> ile gelir.
+    var STR = {
+        tr: { zoom: 'Büyüt',      aria: 'Ekran görüntüsünü büyüt',   close: 'Kapat' },
+        en: { zoom: 'Enlarge',    aria: 'Enlarge the screenshot',    close: 'Close' },
+        de: { zoom: 'Vergrößern', aria: 'Screenshot vergrößern',     close: 'Schließen' },
+        it: { zoom: 'Ingrandisci',aria: 'Ingrandisci lo screenshot', close: 'Chiudi' },
+        ru: { zoom: 'Увеличить',  aria: 'Увеличить скриншот',        close: 'Закрыть' },
+        uk: { zoom: 'Збільшити',  aria: 'Збільшити знімок екрана',   close: 'Закрити' },
+        ar: { zoom: 'تكبير',      aria: 'تكبير لقطة الشاشة',          close: 'إغلاق' },
+        hi: { zoom: 'बड़ा करें',    aria: 'स्क्रीनशॉट बड़ा करें',          close: 'बंद करें' }
+    };
+
+    function strings() {
+        var lang = (document.documentElement.lang || 'tr').slice(0, 2).toLowerCase();
+        return STR[lang] || STR.en;
+    }
+
+    function reducedMotion() {
+        return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    }
 
     // ── Ortak platform durumu ───────────────────────────────
     var painters = [];        // her arayüz kendini boyayan bir fonksiyon bırakır
@@ -144,9 +169,113 @@
         });
     }
 
+    // ── Maketi büyütme ──────────────────────────────────────
+    // Küçük telefonlarda hero maketi ekranı kaplamasın diye küçültüldü;
+    // detayı görmek isteyen üstüne dokununca maket büyüyerek açılır.
+    function openZoom(root, trigger, t) {
+        var platform = root.dataset.face === 'android' ? 'android' : 'ios';
+        var source = root.querySelector('img[data-platform="' + platform + '"]');
+        var origin = source && source.closest('.phone');
+        if (!origin) return;
+
+        var reduced = reducedMotion();
+        var lb = document.createElement('div');
+        lb.className = 'lbox';
+        lb.setAttribute('role', 'dialog');
+        lb.setAttribute('aria-modal', 'true');
+        lb.setAttribute('aria-label', source.alt || t.aria);
+
+        var close = document.createElement('button');
+        close.type = 'button';
+        close.className = 'lbox__close';
+        close.setAttribute('aria-label', t.close);
+        close.innerHTML = '&times;';
+
+        var frame = document.createElement('div');
+        frame.className = 'phone lbox__phone' + (platform === 'android' ? ' phone--punch' : '');
+        var img = document.createElement('img');
+        img.src = source.currentSrc || source.src;
+        img.alt = source.alt;
+        frame.appendChild(img);
+
+        lb.appendChild(close);
+        lb.appendChild(frame);
+        document.body.appendChild(lb);
+        document.body.classList.add('lbox-open');
+        close.focus();
+
+        // Küçük maketten büyüğe doğru açılış (FLIP)
+        function shift(from, to) {
+            return 'translate(' +
+                ((from.left + from.width / 2) - (to.left + to.width / 2)) + 'px,' +
+                ((from.top + from.height / 2) - (to.top + to.height / 2)) + 'px) scale(' +
+                (from.width / to.width) + ')';
+        }
+
+        var animated = !reduced && typeof frame.animate === 'function';
+        if (animated) {
+            frame.animate(
+                [{ transform: shift(origin.getBoundingClientRect(), frame.getBoundingClientRect()) },
+                 { transform: 'none' }],
+                { duration: 360, easing: 'cubic-bezier(0.2, 0.8, 0.2, 1)' }
+            );
+            lb.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 200, easing: 'ease-out' });
+        }
+
+        function dismiss() {
+            document.removeEventListener('keydown', onKey, true);
+            document.body.classList.remove('lbox-open');
+            if (trigger) trigger.focus();
+
+            var back = origin.getBoundingClientRect();
+            if (!animated || !back.width) { lb.remove(); return; }
+            var out = frame.animate(
+                [{ transform: 'none' }, { transform: shift(back, frame.getBoundingClientRect()) }],
+                { duration: 260, easing: 'cubic-bezier(0.4, 0, 0.6, 1)', fill: 'forwards' }
+            );
+            lb.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 260, fill: 'forwards' });
+            out.onfinish = function () { lb.remove(); };
+        }
+
+        function onKey(e) {
+            if (e.key === 'Escape') { e.preventDefault(); dismiss(); return; }
+            // Tek denetimli katman: odak dışarı kaçmasın.
+            if (e.key === 'Tab') { e.preventDefault(); close.focus(); }
+        }
+
+        lb.addEventListener('click', dismiss);
+        document.addEventListener('keydown', onKey, true);
+    }
+
+    function initZoom(root) {
+        var stage = root.querySelector('.devsw__stage');
+        if (!stage || root.querySelector('.devsw__zoom')) return;
+        var t = strings();
+
+        // Sahne butonun içine alınır: maketin tamamı tek bir dokunma hedefi olur.
+        var btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'devsw__zoom';
+        btn.setAttribute('aria-label', t.aria);
+        btn.title = t.zoom;
+        stage.parentNode.insertBefore(btn, stage);
+        btn.appendChild(stage);
+
+        var hint = document.createElement('span');
+        hint.className = 'devsw__zoom__hint';
+        hint.setAttribute('aria-hidden', 'true');
+        hint.innerHTML = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" ' +
+            'stroke="currentColor" stroke-width="2.2" stroke-linecap="round">' +
+            '<circle cx="11" cy="11" r="7"/><path d="M20 20l-3.8-3.8M11 8v6M8 11h6"/></svg>';
+        btn.appendChild(hint);
+
+        btn.addEventListener('click', function () { openZoom(root, btn, t); });
+    }
+
     function init() {
         document.querySelectorAll('img[data-screen]').forEach(attachFallback);
         document.querySelectorAll('[data-device]').forEach(initDevice);
+        document.querySelectorAll('[data-device]').forEach(initZoom);
         document.querySelectorAll('[data-shots]').forEach(initGallery);
         // Kayıtlı tercih → cihaz tahmini → iOS (HTML'in başlangıç durumu)
         apply(preferred() || 'ios');
