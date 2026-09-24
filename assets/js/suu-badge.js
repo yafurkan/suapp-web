@@ -38,6 +38,13 @@
         '.suu-logo-badge-heart svg{width:62%;height:62%;fill:#fff;display:block}',
         '@keyframes suu-badge-breathe{0%,100%{box-shadow:0 0 0 1px rgba(255,255,255,.12),0 0 14px rgba(94,170,255,.42)}',
         '50%{box-shadow:0 0 0 1px rgba(255,255,255,.2),0 0 22px rgba(94,170,255,.72)}}',
+        // Wordmark: white with a halo on dark headers. On light headers white
+        // would be invisible (blog navs are always white), so the brand colour
+        // stays and only gets the halo.
+        'a[data-suu-donate]{transition:color .3s ease,text-shadow .3s ease}',
+        'a[data-suu-donate].suu-wordmark-dark{color:#fff !important;',
+        'text-shadow:0 0 8px rgba(255,255,255,.55),0 0 18px rgba(168,212,255,.7),0 0 34px rgba(86,158,255,.5)}',
+        'a[data-suu-donate].suu-wordmark-light{text-shadow:0 0 12px rgba(86,158,255,.45)}',
         '@media (prefers-reduced-motion:reduce){',
         '.suu-logo-badge{transition:none}[data-suu-donate] .suu-logo-badge{animation:none}',
         '[data-suu-donate]:hover .suu-logo-badge,[data-suu-donate]:focus-visible .suu-logo-badge{transform:none}}'
@@ -54,6 +61,47 @@
         s.id = 'suu-badge-style';
         s.textContent = CSS;
         document.head.appendChild(s);
+    }
+
+    // ---------- Wordmark colour: measured, not guessed ----------
+    // Page families differ (suu.css honours dark mode and a data-theme
+    // override, blog posts are light-only), so read the painted background
+    // behind the logo instead of trusting the OS preference.
+    function parseColor(str) {
+        var m = /^rgba?\(([^)]+)\)/.exec(str || '');
+        if (m) {
+            var p = m[1].split(/[,\s/]+/).filter(Boolean).map(parseFloat);
+            return { r: p[0], g: p[1], b: p[2], a: p.length > 3 ? p[3] : 1 };
+        }
+        m = /^color\(srgb\s+([^)]+)\)/.exec(str || '');
+        if (m) {
+            var q = m[1].split(/[\s/]+/).filter(Boolean).map(parseFloat);
+            return { r: q[0] * 255, g: q[1] * 255, b: q[2] * 255, a: q.length > 3 ? q[3] : 1 };
+        }
+        return null;
+    }
+
+    function onDarkBackground(el) {
+        var node = el;
+        while (node && node.nodeType === 1) {
+            var c = parseColor(window.getComputedStyle(node).backgroundColor);
+            if (c && c.a > 0.3) {
+                return (0.2126 * c.r + 0.7152 * c.g + 0.0722 * c.b) / 255 < 0.45;
+            }
+            node = node.parentElement;
+        }
+        return !!(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    }
+
+    function paintWordmark(link) {
+        var dark = onDarkBackground(link);
+        link.classList.toggle('suu-wordmark-dark', dark);
+        link.classList.toggle('suu-wordmark-light', !dark);
+    }
+
+    function repaintAll() {
+        var links = document.querySelectorAll('a[data-suu-donate]');
+        for (var i = 0; i < links.length; i++) paintWordmark(links[i]);
     }
 
     // ---------- Opening the donation panel ----------
@@ -124,6 +172,8 @@
             e.stopPropagation(); // the widget closes the panel on outside clicks
             openDonation();
         });
+
+        paintWordmark(link);
     }
 
     function init() {
@@ -131,6 +181,18 @@
         if (!badges.length) return;
         injectStyles();
         for (var i = 0; i < badges.length; i++) upgrade(badges[i]);
+
+        // Follow a theme flip (OS switch or the site's own data-theme override).
+        if (window.matchMedia) {
+            var mq = window.matchMedia('(prefers-color-scheme: dark)');
+            if (mq.addEventListener) mq.addEventListener('change', repaintAll);
+            else if (mq.addListener) mq.addListener(repaintAll);
+        }
+        if (window.MutationObserver) {
+            new MutationObserver(repaintAll).observe(document.documentElement, {
+                attributes: true, attributeFilter: ['data-theme', 'class']
+            });
+        }
     }
 
     if (document.readyState === 'loading') {
