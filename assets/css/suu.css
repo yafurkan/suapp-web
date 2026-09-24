@@ -595,13 +595,12 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-10) 0; }
     .hero__grid > :first-child { display: contents; }
     .hero__grid { gap: 0; }
 
-    .hero__grid .eyebrow      { order: 1; }
-    .hero__title              { order: 2; font-size: clamp(1.75rem, 7.2vw, 2.25rem); }
-    .hero__lead               { order: 3; margin-block-end: var(--sp-5); font-size: var(--fs-base); line-height: 1.55; }
-    .hero__grid .btn-row      { order: 4; }
-    .hero__media              { order: 5; margin-block-start: var(--sp-4); }
-    .hero__grid .btn-row + p  { order: 6; }   /* "Ücretsiz indir · Premium…" */
-    .hero__grid .trust-row    { order: 7; }
+    .hero__title              { order: 1; font-size: clamp(1.75rem, 7.2vw, 2.25rem); }
+    .hero__lead               { order: 2; margin-block-end: var(--sp-5); font-size: var(--fs-base); line-height: 1.55; }
+    .hero__grid .btn-row      { order: 3; }
+    .hero__media              { order: 4; margin-block-start: var(--sp-4); }
+    .hero__grid .btn-row + p  { order: 5; }   /* "Ücretsiz indir · Premium…" */
+    .hero__grid .trust-row    { order: 6; }
 
     /* İki mağaza butonu yan yana: alt alta dizilince 124px yer kaplıyordu.
        Alttaki sabit bar zaten aynı iki mağazayı taşıyor. */

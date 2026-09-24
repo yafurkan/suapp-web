@@ -152,7 +152,9 @@
 <section class="hero" data-cta="hero">
     <div class="container hero__grid">
         <div>
-            <span class="eyebrow">{{ hero.eyebrow }}</span>
+            {#- Hero'da eyebrow yok: "Su · Kalori · Egzersiz" üçlüsü zaten
+                başlıkta ve açıklamada geçiyordu, katlamanın üstünde de yer
+                yiyordu. Diğer bölümler eyebrow kullanmaya devam ediyor. #}
             <h1 class="hero__title">{{ hero.title_lead }} <span class="accent" data-text="{{ hero.title_accent }}">{{ hero.title_accent }}</span></h1>
             <p class="hero__lead">{{ hero.lead }}</p>
             {{ store_buttons('hero') }}
