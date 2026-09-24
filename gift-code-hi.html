@@ -254,18 +254,45 @@ img{max-width:100%;display:block}
 .gc-result{display:none}
 .gc-result.show{display:block;animation:gc-pop .6s cubic-bezier(.2,1.1,.3,1)}
 @keyframes gc-pop{from{opacity:0;transform:scale(.94) translateY(16px)}to{opacity:1;transform:none}}
-.gc-tick{width:66px;height:66px;margin:0 auto 16px;border-radius:50%;display:grid;place-items:center;
+/* Kart tek parça açılmaz; parçalar sırayla gelir — ekran "kuruluyor" gibi. */
+.gc-result.show>*{animation:gc-up .55s cubic-bezier(.2,.8,.2,1) both}
+.gc-result.show>*:nth-child(1){animation-delay:.04s}
+.gc-result.show>*:nth-child(2){animation-delay:.1s}
+.gc-result.show>*:nth-child(3){animation-delay:.16s}
+.gc-result.show>*:nth-child(4){animation-delay:.22s}
+.gc-result.show>*:nth-child(5){animation-delay:.28s}
+.gc-result.show>*:nth-child(6){animation-delay:.34s}
+.gc-result.show>*:nth-child(7){animation-delay:.4s}
+.gc-result.show>*:nth-child(8){animation-delay:.46s}
+@keyframes gc-up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.gc-tick{position:relative;width:66px;height:66px;margin:0 auto 16px;border-radius:50%;display:grid;place-items:center;
   background:linear-gradient(135deg,#12b76a,#0a8f52);box-shadow:0 10px 26px rgba(18,183,106,.32)}
+.gc-tick::before{content:'';position:absolute;inset:-5px;border-radius:50%;pointer-events:none;
+  border:2px solid rgba(18,183,106,.5);opacity:0;animation:gc-ring 1.2s cubic-bezier(.2,.8,.2,1) .3s}
+@keyframes gc-ring{0%{opacity:.9;transform:scale(.82)}100%{opacity:0;transform:scale(1.75)}}
 .gc-tick svg{width:32px;height:32px;stroke:#fff;stroke-width:3.4;fill:none;stroke-linecap:round;stroke-linejoin:round;
   stroke-dasharray:40;stroke-dashoffset:40;animation:gc-draw .5s ease .22s forwards}
 @keyframes gc-draw{to{stroke-dashoffset:0}}
-.gc-code{margin:22px 0 0;padding:22px 16px;border:2px dashed var(--gc-blue);border-radius:16px;
-  background:linear-gradient(160deg,#f2faff,#e7f5ff);text-align:center}
-.gc-code b{display:block;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:clamp(1.15rem,4.6vw,1.6rem);
+
+/* Kod kutusu bir kupon gibi dursun: rozet, harf harf beliren kod, geçen ışık. */
+.gc-code{position:relative;overflow:hidden;margin:22px 0 0;padding:20px 16px;border:2px dashed var(--gc-blue);
+  border-radius:18px;background:linear-gradient(160deg,#f2faff,#e7f5ff);text-align:center;cursor:pointer;
+  transition:border-color .3s,box-shadow .3s}
+.gc-codebadge{display:inline-flex;align-items:center;gap:6px;margin:0 0 13px;padding:5px 12px;border-radius:999px;
+  font-size:.72rem;font-weight:800;letter-spacing:.07em;
+  background:rgba(1,165,247,.12);color:var(--gc-deep);border:1px solid rgba(1,165,247,.28)}
+.gc-codebadge svg{width:11px;height:11px;fill:currentColor}
+.gc-code b{display:block;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:clamp(1.2rem,4.8vw,1.68rem);
   font-weight:800;letter-spacing:.09em;color:var(--gc-navy);word-break:break-all;line-height:1.35}
+.gc-code b span{display:inline-block;opacity:0;filter:blur(7px);transform:translateY(9px) scale(.9);
+  animation:gc-char .5s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes gc-char{to{opacity:1;filter:blur(0);transform:none}}
+.gc-code.copied{border-color:var(--gc-ok);box-shadow:0 0 0 4px rgba(18,183,106,.14)}
 .gc-copy{margin:14px 0 0;padding:10px 20px;border:1.5px solid var(--gc-blue);border-radius:11px;
-  background:#fff;color:var(--gc-deep);font-weight:700;font-size:.9rem;font-family:inherit;cursor:pointer;transition:.18s}
+  background:#fff;color:var(--gc-deep);font-weight:700;font-size:.9rem;font-family:inherit;cursor:pointer;
+  -webkit-tap-highlight-color:transparent;transition:background .18s,color .18s,border-color .18s,transform .15s}
 .gc-copy:hover{background:var(--gc-blue);color:#fff}
+.gc-copy:active{transform:scale(.96)}
 .gc-copy.done{background:var(--gc-ok);border-color:var(--gc-ok);color:#fff}
 .gc-redeem{display:flex;align-items:center;justify-content:center;gap:10px;margin:20px 0 0;padding:17px;
   border-radius:15px;background:linear-gradient(120deg,var(--gc-blue),var(--gc-deep));color:#fff;
@@ -532,8 +559,18 @@ img{max-width:100%;display:block}
 [data-skin=dark] .gc-alert.err{background:rgba(255,69,58,.12);border-color:rgba(255,69,58,.35);color:#ff9d97}
 [data-skin=dark] .gc-alert.warn{background:rgba(255,190,60,.1);border-color:rgba(255,190,60,.32);color:#ffd68a}
 [data-skin=dark] .gc-tick{background:linear-gradient(135deg,#30d158,#0f9d43);box-shadow:0 10px 30px rgba(48,209,88,.25)}
-[data-skin=dark] .gc-code{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.32)}
-[data-skin=dark] .gc-code b{color:#fff}
+[data-skin=dark] .gc-tick::before{border-color:rgba(48,209,88,.55)}
+/* Kupon camdan: kesik çizgi yerine ince kenar, içeride üstten ışık. */
+[data-skin=dark] .gc-code{border-style:solid;border-width:1px;border-color:rgba(255,255,255,.18);
+  background:linear-gradient(162deg,rgba(255,255,255,.11),rgba(255,255,255,.03));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 18px 46px rgba(0,0,0,.5)}
+[data-skin=dark] .gc-code::before{content:'';position:absolute;top:0;bottom:0;width:72%;pointer-events:none;
+  background:linear-gradient(104deg,transparent,rgba(255,255,255,.08),transparent);
+  animation:gc-shine 6s ease-in-out 2s infinite}
+[data-skin=dark] .gc-code.copied{border-color:rgba(48,209,88,.7);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 0 0 4px rgba(48,209,88,.16),0 18px 46px rgba(0,0,0,.5)}
+[data-skin=dark] .gc-codebadge{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.22);color:#fff}
+[data-skin=dark] .gc-code b{color:#fff;text-shadow:0 0 30px rgba(255,255,255,.3)}
 [data-skin=dark] .gc-copy{background:transparent;border-color:rgba(255,255,255,.42);color:#fff}
 [data-skin=dark] .gc-copy:hover{background:#fff;color:#000}
 [data-skin=dark] .gc-copy.done{background:var(--gc-ok);border-color:var(--gc-ok);color:#fff}
@@ -721,7 +758,11 @@ img{max-width:100%;display:block}
     <h2 class="gc-h2" style="text-align:center">आपका कोड तैयार है 🎉</h2>
     <p class="gc-hint" style="text-align:center;font-size:.95rem">एक महीना Suu Premium आपका।</p>
 
-    <div class="gc-code">
+    <div class="gc-code" id="gcCodeBox">
+      <span class="gc-codebadge">
+        <svg viewBox="0 0 24 24"><path d="M12 2l2.4 6.1L21 9.2l-4.8 4.2 1.4 6.6L12 16.7 6.4 20l1.4-6.6L3 9.2l6.6-1.1z"/></svg>
+        Premium · 1 महीना
+      </span>
       <b id="gcCodeText">— — —</b>
       <!-- c.result.copy YAZILMAZ: Jinja önce getattr'a bakar ve dict.copy metodunu basar. -->
       <button class="gc-copy" type="button" id="gcCopy">कोड कॉपी करें</button>
@@ -774,7 +815,7 @@ img{max-width:100%;display:block}
   <nav class="gc-langs"><a href="/hediye-kod.html">Türkçe</a><a href="/gift-code.html">English</a><a href="/gift-code-ar.html">العربية</a><a href="/gift-code-ru.html">Русский</a><a href="/gift-code-de.html">Deutsch</a><a href="/gift-code-it.html">Italiano</a><a href="/gift-code-hi.html" style="font-weight:700;color:var(--gc-ink)">हिन्दी</a></nav>
 </footer>
 
-<script id="gcCopyData" type="application/json">{"stock":{"out":"ख़त्म","ios":"iPhone","android":"Android"},"form":{"heading":"दो कदम में कोड आपका","platformQ":"1. आप कौन-सा फ़ोन इस्तेमाल करते हैं?","changePlat":"चुनाव बदलें","emailQ":"2. आपका ईमेल पता","emailPh":"you@example.com","emailHint":"कोड स्क्रीन पर दिखेगा और एक कॉपी इस पते पर जाएगी।","consent":"मैं Suu की नई सुविधाओं और ऑफ़र की जानकारी चाहता/चाहती हूँ।","consentHint":"वैकल्पिक — कोड दोनों हाल में मिलेगा। कभी भी अनसब्सक्राइब करें।","submit":"मेरा कोड दीजिए","sending":"कोड रिज़र्व हो रहा है…","privacy":"आपका ईमेल सिर्फ़ कोड भेजने के लिए इस्तेमाल होता है। IP कभी सादे रूप में संग्रहित नहीं होता — सिर्फ़ हैश, केवल दुरुपयोग रोकने के लिए।","privacyLink":"गोपनीयता नीति"},"result":{"title":"आपका कोड तैयार है 🎉","sub":"एक महीना Suu Premium आपका।","copy":"कोड कॉपी करें","copied":"कॉपी हो गया","redeemIos":"App Store पर रिडीम करें","redeemAndroid":"Google Play पर रिडीम करें","mailOk":"एक कॉपी आपके ईमेल पर भी भेज दी है।","mailFail":"ईमेल नहीं भेजा जा सका — कोड अभी कॉपी कर लें, यह स्क्रीन बंद न करें।","steps":["फ़ोन से बटन दबाएँ (या कोड कॉपी करें)।","स्टोर खुलेगा, कोड अपने आप भरा होगा; अपने अकाउंट से पुष्टि करें।","Suu खोलें — Premium चालू।"],"download":"पहले ऐप डाउनलोड करें"},"errors":{"already_claimed_email":"इस ईमेल को पहले ही कोड मिल चुका है। न मिले तो हमने दोबारा भेज दिया है।","already_claimed_email_resent":"इस ईमेल को पहले कोड मिला था — हमने इनबॉक्स में दोबारा भेज दिया है।","already_claimed_ip":"इस कनेक्शन से पहले ही कोड लिया जा चुका है। एक व्यक्ति, एक कोड।","exhausted":"इस प्लैटफ़ॉर्म के कोड ख़त्म हो गए। अगली खेप की घोषणा करेंगे।","invalid_email":"यह ईमेल पता सही नहीं लगता।","disposable_email":"अस्थायी ईमेल पते स्वीकार नहीं हैं। कृपया असली पता डालें।","captcha_failed":"सत्यापन विफल। पेज रिफ़्रेश करके फिर कोशिश करें।","rate_limited":"बहुत ज़्यादा कोशिशें। एक घंटे बाद फिर प्रयास करें।","platform_required":"पहले अपना फ़ोन चुनें।","bad_origin":"अनुरोध सत्यापित नहीं हुआ। कृपया रिफ़्रेश करें।","server_error":"कुछ ग़लत हो गया। थोड़ी देर में फिर कोशिश करें।","network":"सर्वर से संपर्क नहीं हुआ। इंटरनेट जाँचकर दोबारा करें।","consent_required":"जारी रखने के लिए अपना ईमेल पता डालें।"}}</script>
+<script id="gcCopyData" type="application/json">{"stock":{"out":"ख़त्म","ios":"iPhone","android":"Android"},"form":{"heading":"दो कदम में कोड आपका","platformQ":"1. आप कौन-सा फ़ोन इस्तेमाल करते हैं?","changePlat":"चुनाव बदलें","emailQ":"2. आपका ईमेल पता","emailPh":"you@example.com","emailHint":"कोड स्क्रीन पर दिखेगा और एक कॉपी इस पते पर जाएगी।","consent":"मैं Suu की नई सुविधाओं और ऑफ़र की जानकारी चाहता/चाहती हूँ।","consentHint":"वैकल्पिक — कोड दोनों हाल में मिलेगा। कभी भी अनसब्सक्राइब करें।","submit":"मेरा कोड दीजिए","sending":"कोड रिज़र्व हो रहा है…","privacy":"आपका ईमेल सिर्फ़ कोड भेजने के लिए इस्तेमाल होता है। IP कभी सादे रूप में संग्रहित नहीं होता — सिर्फ़ हैश, केवल दुरुपयोग रोकने के लिए।","privacyLink":"गोपनीयता नीति"},"result":{"title":"आपका कोड तैयार है 🎉","sub":"एक महीना Suu Premium आपका।","badge":"Premium · 1 महीना","copy":"कोड कॉपी करें","copied":"कॉपी हो गया","redeemIos":"App Store पर रिडीम करें","redeemAndroid":"Google Play पर रिडीम करें","mailOk":"एक कॉपी आपके ईमेल पर भी भेज दी है।","mailFail":"ईमेल नहीं भेजा जा सका — कोड अभी कॉपी कर लें, यह स्क्रीन बंद न करें।","steps":["फ़ोन से बटन दबाएँ (या कोड कॉपी करें)।","स्टोर खुलेगा, कोड अपने आप भरा होगा; अपने अकाउंट से पुष्टि करें।","Suu खोलें — Premium चालू।"],"download":"पहले ऐप डाउनलोड करें"},"errors":{"already_claimed_email":"इस ईमेल को पहले ही कोड मिल चुका है। न मिले तो हमने दोबारा भेज दिया है।","already_claimed_email_resent":"इस ईमेल को पहले कोड मिला था — हमने इनबॉक्स में दोबारा भेज दिया है।","already_claimed_ip":"इस कनेक्शन से पहले ही कोड लिया जा चुका है। एक व्यक्ति, एक कोड।","exhausted":"इस प्लैटफ़ॉर्म के कोड ख़त्म हो गए। अगली खेप की घोषणा करेंगे।","invalid_email":"यह ईमेल पता सही नहीं लगता।","disposable_email":"अस्थायी ईमेल पते स्वीकार नहीं हैं। कृपया असली पता डालें।","captcha_failed":"सत्यापन विफल। पेज रिफ़्रेश करके फिर कोशिश करें।","rate_limited":"बहुत ज़्यादा कोशिशें। एक घंटे बाद फिर प्रयास करें।","platform_required":"पहले अपना फ़ोन चुनें।","bad_origin":"अनुरोध सत्यापित नहीं हुआ। कृपया रिफ़्रेश करें।","server_error":"कुछ ग़लत हो गया। थोड़ी देर में फिर कोशिश करें।","network":"सर्वर से संपर्क नहीं हुआ। इंटरनेट जाँचकर दोबारा करें।","consent_required":"जारी रखने के लिए अपना ईमेल पता डालें।"}}</script>
 <script>
 (function () {
   "use strict";
@@ -1215,13 +1256,27 @@ img{max-width:100%;display:block}
     btnText.textContent = T.form.submit;
   }
 
+  // Kod harf harf belirir — tek seferde basılan metin "kupon" hissi vermiyordu.
+  // Boşluk varsa kırılmaz boşluğa çevrilir: inline-block span'de normal boşluk
+  // kayboluyor. Hareket azaltmada düz metin yazılır.
+  function yazKod(el, kod) {
+    if (reduced) { el.textContent = kod; return; }
+    el.textContent = "";
+    for (var i = 0; i < kod.length; i++) {
+      var s = document.createElement("span");
+      s.textContent = kod.charAt(i) === " " ? " " : kod.charAt(i);
+      s.style.animationDelay = (0.42 + i * 0.045).toFixed(3) + "s";
+      el.appendChild(s);
+    }
+  }
+
   function succeed(data) {
     stepDone("3");
     if (rail) rail.classList.add("hide");         // akış bitti, şerit yer kaplamasın
     document.getElementById("gcFormCard").style.display = "none";
     var box = document.getElementById("gcResult");
     box.classList.add("show");
-    document.getElementById("gcCodeText").textContent = data.code;
+    yazKod(document.getElementById("gcCodeText"), data.code);
 
     var redeem = document.getElementById("gcRedeem");
     redeem.href = data.redeemUrl;
@@ -1244,12 +1299,19 @@ img{max-width:100%;display:block}
     // Kod gerçekten ekrana gelince kutlama — kaydırma otursun diye beklenir.
     setTimeout(function () { confettiFrom(box.querySelector(".gc-tick")); }, reduced ? 0 : 700);
 
+    // Kutunun tamamı kopyalar: butona nişan almak zorunda kalmasın.
     var copy = document.getElementById("gcCopy");
-    copy.addEventListener("click", function () {
+    var codeBox = document.getElementById("gcCodeBox");
+    codeBox.addEventListener("click", function () {
       var done = function () {
         copy.textContent = T.result.copied;
         copy.classList.add("done");
-        setTimeout(function () { copy.textContent = T.result.copy; copy.classList.remove("done"); }, 2200);
+        codeBox.classList.add("copied");
+        setTimeout(function () {
+          copy.textContent = T.result.copy;
+          copy.classList.remove("done");
+          codeBox.classList.remove("copied");
+        }, 2200);
       };
       if (navigator.clipboard) navigator.clipboard.writeText(data.code).then(done, fallback);
       else fallback();
