@@ -30,6 +30,9 @@ database_id = "b3c03e08-0ba7-4e3f-afe1-7cfb834d0a77"
 APP_STORE_ID = "6757619920"
 # Gönderen adresi. Resend'de suuapp.com alan adı doğrulanmadan çalışmaz.
 MAIL_FROM = "Suu <hediye@suuapp.com>"
+# Yanıt adresi. hediye@suuapp.com yalnızca gönderim içindir (alan adının MX
+# kaydı yok), bu yüzden yanıtlar okunan bir kutuya gitmeli.
+MAIL_REPLY_TO = "suutakip@gmail.com"
 # Yerel test için "1" yapın; canlıda "0" kalmalı.
 ALLOW_LOCALHOST = "0"
 

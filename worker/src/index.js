@@ -283,12 +283,18 @@ function mailHtml(code, platform, lang, env, partnerName) {
     `<tr><td style="padding:4px 0;color:#4a5568;font-size:15px;line-height:1.6">
        <b style="color:#2196f3">${i + 1}.</b> ${fill(s)}</td></tr>`).join("");
 
+  // Rozetin yanındaki boşluk RTL'de ters tarafa düşmesin diye dir'e bakıyoruz.
+  const gap = dir === "rtl" ? "padding-left:12px" : "padding-right:12px";
+
   return `<!doctype html><html dir="${dir}"><body style="margin:0;padding:24px;background:#f4f7fb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td align="center">
 <table role="presentation" width="100%" style="max-width:520px;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(33,150,243,.12)">
-  <tr><td style="background:linear-gradient(135deg,#2196f3,#0d47a1);padding:28px 32px;color:#fff">
-    <div style="font-size:13px;letter-spacing:.08em;text-transform:uppercase;opacity:.85">Suu</div>
-    <div style="font-size:22px;font-weight:700;margin-top:6px">${t.heading}</div>
+  <tr><td style="background-color:#0d47a1;background-image:linear-gradient(135deg,#2196f3,#0d47a1);padding:28px 32px;color:#fff">
+    <table role="presentation" cellpadding="0" cellspacing="0"><tr>
+      <td style="${gap}"><img src="https://suuapp.com/assets/brand/suu-badge-256.png" alt="Suu" width="44" height="44" style="display:block;width:44px;height:44px;border:0;border-radius:50%;outline:none;text-decoration:none"></td>
+      <td style="font-size:13px;letter-spacing:.08em;text-transform:uppercase;opacity:.85">Suu</td>
+    </tr></table>
+    <div style="font-size:22px;font-weight:700;margin-top:14px">${t.heading}</div>
   </td></tr>
   <tr><td style="padding:28px 32px">
     ${partnerName ? `<p style="margin:0 0 14px;padding:10px 14px;background:#f5fbff;border-radius:10px;color:#0d47a1;font-size:14px;line-height:1.55">Suu × ${partnerName}</p>` : ""}
@@ -321,6 +327,10 @@ async function sendCodeEmail(to, code, platform, lang, env, partnerName) {
       },
       body: JSON.stringify({
         from: env.MAIL_FROM || "Suu <hediye@suuapp.com>",
+        // suuapp.com'un MX kaydı yok; hediye@ adresine gelen yanıt geri döner.
+        // Metin 4 dilde "bu e-postayı yanıtla" dediği için yanıtı çalışan
+        // kutuya yönlendiriyoruz.
+        reply_to: env.MAIL_REPLY_TO || "suutakip@gmail.com",
         to: [to],
         subject: t.subject,
         html: mailHtml(code, platform, lang, env, partnerName),
