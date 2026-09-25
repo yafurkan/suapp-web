@@ -179,8 +179,14 @@
         mascot: '/assets/tour/mascot.png'
     };
 
+    // Tur metinleri yalnız TR ve EN'de var: Türkçe dışındaki her sayfa EN görür.
     function mountTour(host) {
-        return window.SuuPhoneTour ? window.SuuPhoneTour.mount(host, TOUR) : null;
+        if (!window.SuuPhoneTour) return null;
+        var lang = (document.documentElement.lang || 'tr').slice(0, 2).toLowerCase();
+        return window.SuuPhoneTour.mount(host, {
+            lang: lang === 'tr' ? 'tr' : 'en',
+            camera: TOUR.camera, map: TOUR.map, mascot: TOUR.mascot
+        });
     }
 
     function initTour(root) {

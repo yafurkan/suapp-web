@@ -756,6 +756,7 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-10) 0; }
     border-radius: 26px;
     overflow: hidden;
     background: #0e1524;
+    direction: ltr;                 /* tur soldan sağa çizilir; AR sayfasında da */
 }
 .phone--punch::after {              /* Android: çentik değil, delik kamera */
     inset-block-start: 16px;

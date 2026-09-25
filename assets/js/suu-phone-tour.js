@@ -40,7 +40,15 @@
   var PARKS = [[185, 300, 515, 615], [555, 880, 705, 1250], [40, 880, 300, 1140], [360, 1130, 520, 1340]];
   function inPark(x, y, pad) { pad = pad || 0; return PARKS.some(function (p) { return x > p[0] - pad && x < p[2] + pad && y > p[1] - pad && y < p[3] + pad; }); }
   var ROUTE = 'M330 780 L330 660 C 330 620, 300 600, 280 570 C 250 520, 260 450, 320 420 C 380 390, 450 400, 480 360 L 540 290 C 580 250, 650 250, 700 300 L 736 400 C 740 520, 690 640, 690 760 C 690 860, 668 930, 680 1000 C 690 1100, 720 1180, 760 1260 L 700 1310 C 650 1330, 600 1300, 590 1250 L 540 1060 C 530 1000, 540 960, 520 900';
-  function streetMap(p) {
+  var TXT = {
+    tr: { hello: 'Hadi Başlayalım, Furkan! 💪', water: 'Su', nutrition: 'Beslenme', exercise: 'Egzersiz', min: 'dk', tapHint: 'Dokun ekle · Basılı tut daha fazlası', kcalLbl: 'kalori', carbShort: 'Karb', protein: 'Protein', fat: 'Yağ', carbs: 'Karbonhidrat', daily: 'Günlük Özet', cola: 'Kola', home: 'Ana Sayfa', you: 'Sen',
+      menu: ['Besin Ekle', 'Egzersiz Ekle', 'Hızlı İçecek', 'Hedefe Yaklaştır', 'Pet Dostum', 'Story Paylaş'], mealAnalysis: 'ÖĞÜN ANALİZİ', mealName: 'Pepperoni pizza + Kola', pizza: 'Pepperoni pizza', addMeal: 'Öğüne ekle', run: 'Koşu', start: 'Başlat', history: 'Geçmiş', gps: 'GPS aktif', stats: ['MESAFE', 'SÜRE', 'TEMPO'], pause: 'Duraklat', finish: 'Bitir', runDone: 'KOŞU TAMAMLANDI', dist: '4,82', time: 'Süre', pace: 'Tempo', goalUp: 'Su hedefin +500 ml arttı', goalFloat: '+500 ml hedef', dec: ',',
+      parks: ['Maçka Parkı', 'Yıldız Parkı', 'Abbasağa Parkı', 'Ihlamur Bahçesi'], sea: 'BOĞAZİÇİ', road: 'Dolmabahçe Cd.' },
+    en: { hello: "Let's get started, Furkan! 💪", water: 'Water', nutrition: 'Nutrition', exercise: 'Exercise', min: 'min', tapHint: 'Tap to add · Hold for more', kcalLbl: 'kcal', carbShort: 'Carbs', protein: 'Protein', fat: 'Fat', carbs: 'Carbs', daily: 'Daily Summary', cola: 'Cola', home: 'Home', you: 'You',
+      menu: ['Add Food', 'Add Exercise', 'Quick Drink', 'Boost Goal', 'Pet Buddy', 'Share Story'], mealAnalysis: 'MEAL ANALYSIS', mealName: 'Pepperoni pizza + Cola', pizza: 'Pepperoni pizza', addMeal: 'Add to meal', run: 'Run', start: 'Start', history: 'History', gps: 'GPS active', stats: ['DISTANCE', 'TIME', 'PACE'], pause: 'Pause', finish: 'Finish', runDone: 'RUN COMPLETE', dist: '4.82', time: 'Time', pace: 'Pace', goalUp: 'Water goal +500 ml', goalFloat: '+500 ml goal', dec: '.',
+      parks: ['Maçka Park', 'Yıldız Park', 'Abbasağa Park', 'Ihlamur Garden'], sea: 'BOSPHORUS', road: 'Dolmabahçe Ave.', camFix: true }
+  };
+  function streetMap(p, T) {
     var layer = el(p, 'position:absolute;inset:0;overflow:hidden;opacity:0;background:#232937;');
     var world = el(layer, 'position:absolute;left:0;top:0;width:1200px;height:1500px;transform-origin:0 0;will-change:transform;');
     var r = seeded(11), x, y, i, s = '<svg width="1200" height="1500" viewBox="0 0 1200 1500" style="display:block;overflow:visible;font-family:' + F + '">';
@@ -97,9 +105,9 @@
     s += '</g>';
     s += '<g data-ferry style="transform-box:fill-box"><path d="M-8 30 L-4 60 M8 30 L4 60" stroke="#8fb0ff" stroke-opacity=".35" stroke-width="2"/><path d="M-9 -16 L9 -16 L9 22 L0 30 L-9 22 Z" fill="#d9dee8"/><rect x="-5" y="-8" width="10" height="14" rx="2" fill="#9aa6bf"/></g>';
     function lab(x, y, t, c, sz, rot, ls) { return '<text x="' + x + '" y="' + y + '" fill="' + c + '" font-size="' + sz + '" font-weight="700" letter-spacing="' + (ls || 1.5) + '" text-anchor="middle"' + (rot ? ' transform="rotate(' + rot + ' ' + x + ' ' + y + ')"' : '') + '>' + t + '</text>'; }
-    s += lab(345, 478, 'Maçka Parkı', '#7cc49a', 14, 0, .3) + lab(630, 1070, 'Yıldız Parkı', '#7cc49a', 13, -84, .3);
-    s += lab(1010, 720, 'BOĞAZİÇİ', '#5b7fc7', 18, -78, 8) + lab(130, 210, 'NİŞANTAŞI', '#8a93a8', 12, 0, 2.5) + lab(170, 1070, 'Abbasağa Parkı', '#7cc49a', 13, 0, .3) + lab(440, 1240, 'Ihlamur Bahçesi', '#7cc49a', 12, 0, .3) + lab(470, 800, 'BEŞİKTAŞ', '#8a93a8', 13, 0, 3) + lab(560, 1400, 'ORTAKÖY', '#8a93a8', 12, 0, 2.5);
-    s += '<text fill="#8a93a8" font-size="11" font-weight="700" letter-spacing=".5"><textPath href="#suuCoastRd" startOffset="38%">Dolmabahçe Cd.</textPath></text>';
+    s += lab(345, 478, T.parks[0], '#7cc49a', 14, 0, .3) + lab(630, 1070, T.parks[1], '#7cc49a', 13, -84, .3);
+    s += lab(1010, 720, T.sea, '#5b7fc7', 18, -78, 8) + lab(130, 210, 'NİŞANTAŞI', '#8a93a8', 12, 0, 2.5) + lab(170, 1070, T.parks[2], '#7cc49a', 13, 0, .3) + lab(440, 1240, T.parks[3], '#7cc49a', 12, 0, .3) + lab(470, 800, 'BEŞİKTAŞ', '#8a93a8', 13, 0, 3) + lab(560, 1400, 'ORTAKÖY', '#8a93a8', 12, 0, 2.5);
+    s += '<text fill="#8a93a8" font-size="11" font-weight="700" letter-spacing=".5"><textPath href="#suuCoastRd" startOffset="38%">' + T.road + '</textPath></text>';
     s += '<g data-cars>';
     var CARC = ['#e8ebf1', '#f5c65a', '#ff8f7f', '#9fc3ff', '#e8ebf1'];
     for (i = 0; i < 26; i++) {
@@ -160,6 +168,7 @@
 
   function mount(container, o) {
     o = o || {};
+    var T = TXT[o.lang === 'en' ? 'en' : 'tr'];
     var IMG = { camera: o.camera || 'assets/tour/camera.jpg', map: o.map || 'assets/tour/map.jpg', mascot: o.mascot || 'assets/tour/mascot.png' };
     if (getComputedStyle(container).position === 'static') container.style.position = 'relative';
     container.style.overflow = 'hidden';
@@ -201,7 +210,7 @@
       el(hm, abs(18, 58, 44, 44) + 'border-radius:50%;background:linear-gradient(135deg,#40527a,#1a2233);display:grid;place-items:center;font-weight:700;font-size:18px;box-shadow:0 0 0 2px rgba(255,255,255,.08);', 'F');
       el(hm, abs(222, 64, 66, 32) + 'border-radius:16px;background:#13304f;display:flex;align-items:center;justify-content:center;gap:5px;color:#4ea5ff;font-weight:700;font-size:16px;', icon('cloud', 18, '#4ea5ff', true) + '16°');
       el(hm, abs(298, 64, 74, 32) + 'border-radius:16px;background:#2a231d;display:flex;align-items:center;justify-content:center;gap:3px;color:#f5a524;font-weight:700;font-size:16px;', '<span style="font-size:14px">🔥</span>24' + icon('chevR', 12, '#f5a524', false, 3));
-      el(hm, abs(18, 114, 360) + 'font-size:25px;font-weight:800;letter-spacing:-.02em;white-space:nowrap;', 'Hadi Başlayalım, Furkan! 💪');
+      el(hm, abs(18, 114, 360) + 'font-size:25px;font-weight:800;letter-spacing:-.02em;white-space:nowrap;', T.hello);
       var rw = el(hm, abs(120, 158, 150, 150), ringSvg(150, [
         { k: 'su', r: 67, track: '#1b2c50', col: C.blue }, { k: 'kal', r: 54, track: '#12342a', col: C.green }, { k: 'egz', r: 41, track: '#3a2232', col: C.pink }], 11));
       el(rw, 'position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;font-weight:800;font-size:13px;', icon('drop', 22, '#fff', true) + 'Suu');
@@ -211,15 +220,15 @@
         el(hm, abs(x + 15, 318) + 'font-size:12.5px;color:#c6cce0;', label);
         return el(hm, abs(x + 15, 334) + 'font-size:14px;font-weight:800;white-space:nowrap;font-variant-numeric:tabular-nums;', val);
       }
-      u.suVal = leg(24, C.blue, 'Su', '398 / 3150 ml');
-      u.kalVal = leg(142, C.green, 'Beslenme', '140 / 2914 kcal');
-      u.egzVal = leg(290, C.pink, 'Egzersiz', '20 dk');
+      u.suVal = leg(24, C.blue, T.water, '398 / 3150 ml');
+      u.kalVal = leg(142, C.green, T.nutrition, '140 / 2914 kcal');
+      u.egzVal = leg(290, C.pink, T.exercise, '20 ' + T.min);
       u.waterBtn = el(hm, abs(135, 370, 120, 120) + 'border-radius:50%;background:radial-gradient(circle at 50% 35%,#3a78f5,#2459e0);box-shadow:0 0 50px rgba(44,104,239,.45);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;font-size:22px;font-weight:800;', icon('drop', 30, '#fff', true) + '200 ml');
-      el(hm, abs(0, 499, 390) + 'text-align:center;font-size:12.5px;color:#c9cfdf;', 'Dokun ekle · Basılı tut daha fazlası');
+      el(hm, abs(0, 499, 390) + 'text-align:center;font-size:12.5px;color:#c9cfdf;', T.tapHint);
       el(hm, abs(0, 521, 390) + 'display:flex;justify-content:center;gap:6px;', '<i style="width:18px;height:6px;border-radius:3px;background:#2c68ef"></i><i style="width:6px;height:6px;border-radius:3px;background:#3a4256"></i><i style="width:6px;height:6px;border-radius:3px;background:#3a4256"></i><i style="width:6px;height:6px;border-radius:3px;background:#3a4256"></i>');
       var mc = el(hm, abs(18, 540, 354, 98) + 'border-radius:22px;background:#151d2f;box-shadow:inset 0 0 0 1px rgba(255,255,255,.06);');
       u.mac = [];
-      [['kalori', '140', '/2.914', C.green, '#1c3a2c'], ['Karb', '35', '/364g', C.yellow, '#3a3420'], ['Protein', '0', '/146g', '#e0566b', '#3a1f28'], ['Yağ', '0', '/97g', C.purple, '#2a2240']].forEach(function (m, i) {
+      [[T.kcalLbl, '140', '/2.914', C.green, '#1c3a2c'], [T.carbShort, '35', '/364g', C.yellow, '#3a3420'], [T.protein, '0', '/146g', '#e0566b', '#3a1f28'], [T.fat, '0', '/97g', C.purple, '#2a2240']].forEach(function (m, i) {
         var col = el(mc, abs(12 + i * 78, 8, 64) + 'display:flex;flex-direction:column;align-items:center;');
         var rs = el(col, 'position:relative;width:56px;height:56px;', ringSvg(56, [{ k: 'm', r: 24, track: m[4], col: m[3] }], 5));
         var v = el(rs, 'position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:800;font-size:14px;font-variant-numeric:tabular-nums;', '<span>' + m[1] + '</span><span style="font-size:8.5px;font-weight:500;color:#aab2c6">' + m[2] + '</span>');
@@ -230,7 +239,7 @@
       u.fab = el(hm, abs(317, 614, 54, 54) + 'border-radius:50%;background:radial-gradient(circle at 50% 35%,#ff5a4f,#e2382e);box-shadow:0 6px 24px rgba(240,68,58,.5);display:grid;place-items:center;z-index:8;', icon('plus', 26, '#fff', false, 3));
       u.fabIcon = u.fab.firstChild;
       el(hm, abs(317, 683, 54, 54) + 'border-radius:50%;overflow:hidden;box-shadow:0 6px 24px rgba(30,120,240,.45);z-index:8;', '<img src="' + IMG.mascot + '" alt="" style="width:100%;height:100%;display:block">');
-      el(hm, abs(18, 652) + 'font-size:21px;font-weight:800;letter-spacing:-.01em;', 'Günlük Özet');
+      el(hm, abs(18, 652) + 'font-size:21px;font-weight:800;letter-spacing:-.01em;', T.daily);
       u.list = el(hm, abs(18, 686, 354) + 'display:flex;flex-direction:column;');
       u.addItem = function (emo, bg, t, s, animate) {
         var wrap = el(null, 'overflow:hidden;flex:none;');
@@ -239,13 +248,13 @@
         u.list.insertBefore(wrap, u.list.firstChild);
         if (animate) { wrap.animate([{ height: '0px', opacity: 0 }, { height: '68px', opacity: 1 }], { duration: 520, easing: OUT }); wrap.firstChild.animate([{ transform: 'translateY(-10px) scale(.96)' }, { transform: 'none' }], { duration: 520, easing: OUT }); }
       };
-      u.addItem('🥤', '#fff', 'Kola', '330 ml');
+      u.addItem('🥤', '#fff', T.cola, '330 ml');
       var tb = el(hm, abs(110, 770, 170, 56) + 'border-radius:28px;background:rgba(22,30,48,.94);box-shadow:inset 0 0 0 1px rgba(80,110,190,.35);z-index:8;');
       el(tb, abs(4, 4, 82, 48) + 'border-radius:24px;background:rgba(255,255,255,.1);');
-      el(tb, abs(4, 8, 82) + 'display:flex;flex-direction:column;align-items:center;gap:3px;font-size:10.5px;font-weight:600;color:#3d9bff;', icon('home', 22, '#3d9bff', false, 2.2) + 'Ana Sayfa');
-      el(tb, abs(86, 8, 80) + 'display:flex;flex-direction:column;align-items:center;gap:3px;font-size:10.5px;font-weight:600;', icon('user', 22, '#fff', false, 2) + 'Sen');
+      el(tb, abs(4, 8, 82) + 'display:flex;flex-direction:column;align-items:center;gap:3px;font-size:10.5px;font-weight:600;color:#3d9bff;', icon('home', 22, '#3d9bff', false, 2.2) + T.home);
+      el(tb, abs(86, 8, 80) + 'display:flex;flex-direction:column;align-items:center;gap:3px;font-size:10.5px;font-weight:600;', icon('user', 22, '#fff', false, 2) + T.you);
       u.dim = el(hm, 'position:absolute;inset:0;background:rgba(24,28,38,.72);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);opacity:0;z-index:6;');
-      u.menu = [['fork', '#66bb6a', 'Besin Ekle'], ['run', '#ff9800', 'Egzersiz Ekle'], ['cup', '#42a5f5', 'Hızlı İçecek'], ['target', '#7e57c2', 'Hedefe Yaklaştır'], ['paw', '#ec407a', 'Pet Dostum'], ['share', '#8b5cf6', 'Story Paylaş']].map(function (m, i) {
+      u.menu = [['fork', '#66bb6a', T.menu[0]], ['run', '#ff9800', T.menu[1]], ['cup', '#42a5f5', T.menu[2]], ['target', '#7e57c2', T.menu[3]], ['paw', '#ec407a', T.menu[4]], ['share', '#8b5cf6', T.menu[5]]].map(function (m, i) {
         var y = 287 + i * 58;
         var row = el(hm, abs(0, y - 22, 372, 44) + 'z-index:7;pointer-events:none;');
         var pill = el(row, 'position:absolute;right:62px;top:6px;height:32px;padding:0 13px;border-radius:16px;background:#0e131f;display:flex;align-items:center;font-size:16px;font-weight:800;white-space:nowrap;opacity:0;', m[2]);
@@ -265,16 +274,26 @@
         el(g, abs(14, -15) + 'white-space:nowrap;padding:7px 11px;border-radius:14px;background:rgba(10,14,22,.82);font-size:13px;font-weight:700;', t);
         return g;
       }
-      u.chips = [chip(104, 380, 'Kola · <span style="color:#34d399">140 kcal</span>'), chip(150, 612, 'Pepperoni pizza · <span style="color:#34d399">940 kcal</span>')];
+      u.chips = [chip(104, 380, T.cola + ' · <span style="color:#34d399">140 kcal</span>'), chip(150, 612, T.pizza + ' · <span style="color:#34d399">940 kcal</span>')];
+      if (T.camFix) {
+        var top = el(cam, abs(0, 104, 390, 56) + '-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);background:rgba(34,34,30,.3);');
+        el(top, abs(15, 6) + 'font-size:12.5px;font-weight:700;color:rgba(255,255,255,.72);', 'Recent meals');
+        var chipCss = 'height:25px;border-radius:13px;background:rgba(70,70,66,.72);box-shadow:inset 0 0 0 1px rgba(255,255,255,.12);display:flex;align-items:center;gap:6px;padding:0 10px;font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;box-sizing:border-box;';
+        el(top, abs(15, 26, 62) + chipCss, icon('history', 13, '#fff', false, 2.4) + 'Cola');
+        el(top, abs(84, 26, 330) + chipCss, icon('history', 13, '#fff', false, 2.4) + "This meal is one McDonald's Big Mac");
+        [[120, 'Barcode'], [193, 'Search'], [268, 'Describe']].forEach(function (b) {
+          el(cam, abs(b[0] - 32, 681, 64, 18) + 'border-radius:6px;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);background:rgba(62,50,42,.88);display:grid;place-items:center;font-size:12.5px;font-weight:600;', b[1]);
+        });
+      }
       u.flash = el(cam, 'position:absolute;inset:0;background:radial-gradient(circle at 50% 45%,#fff 0%,rgba(255,255,255,.85) 35%,rgba(255,255,255,.4) 75%);opacity:0;');
       var rs2 = el(cam, abs(0, 514, 390, 330) + 'border-radius:28px 28px 0 0;background:#111827;transform:translateY(100%);box-shadow:0 -10px 40px rgba(0,0,0,.5);');
       u.result = rs2;
       el(rs2, abs(175, 8, 40, 5) + 'border-radius:3px;background:#3a4256;');
-      el(rs2, abs(20, 26) + 'font-size:11.5px;font-weight:700;letter-spacing:.14em;color:#9aa3b8;', 'ÖĞÜN ANALİZİ');
-      el(rs2, abs(20, 46) + 'font-size:20px;font-weight:800;', 'Pepperoni pizza + Kola');
+      el(rs2, abs(20, 26) + 'font-size:11.5px;font-weight:700;letter-spacing:.14em;color:#9aa3b8;', T.mealAnalysis);
+      el(rs2, abs(20, 46) + 'font-size:20px;font-weight:800;', T.mealName);
       var kc = el(rs2, abs(20, 78) + 'font-size:42px;font-weight:800;letter-spacing:-.02em;color:' + C.green + ';font-variant-numeric:tabular-nums;', '<span>0</span><span style="font-size:18px;color:#fff;margin-left:6px">kcal</span>');
       u.kcal = kc.firstChild;
-      u.bars = [['Protein', 38, 146, '#f06a7a'], ['Karbonhidrat', 128, 364, C.orange], ['Yağ', 44, 97, C.purple]].map(function (m, i) {
+      u.bars = [[T.protein, 38, 146, '#f06a7a'], [T.carbs, 128, 364, C.orange], [T.fat, 44, 97, C.purple]].map(function (m, i) {
         var y = 142 + i * 36;
         el(rs2, abs(20, y) + 'font-size:13.5px;font-weight:600;', m[0]);
         var v = el(rs2, abs(250, y, 120) + 'text-align:right;font-size:13.5px;font-weight:700;font-variant-numeric:tabular-nums;', '0 / ' + m[2] + ' g');
@@ -282,36 +301,36 @@
         var f = el(tr, 'height:100%;width:100%;border-radius:3px;background:' + m[3] + ';transform-origin:0 0;transform:scaleX(0);');
         return { v: v, f: f, g: m[1], max: m[2] };
       });
-      u.addBtn = el(rs2, abs(20, 256, 350, 50) + 'border-radius:25px;background:' + C.green + ';display:grid;place-items:center;font-size:17px;font-weight:800;', 'Öğüne ekle');
+      u.addBtn = el(rs2, abs(20, 256, 350, 50) + 'border-radius:25px;background:' + C.green + ';display:grid;place-items:center;font-size:17px;font-weight:800;', T.addMeal);
 
       /* MAP */
       var mp = el(R, 'position:absolute;inset:0;z-index:10;background:#0b1a33;transform:translateY(100%);');
       u.map = mp;
       u.zoom = el(mp, 'position:absolute;inset:0;transform-origin:195px 434px;');
       el(u.zoom, 'position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;', null, 'img').src = IMG.map;
-      u.st = streetMap(mp);
-      u.gps = el(mp, abs(130, 62, 130, 30) + 'border-radius:15px;background:rgba(12,18,28,.86);display:flex;align-items:center;justify-content:center;gap:7px;font-size:13px;font-weight:700;opacity:0;', '<i style="width:8px;height:8px;border-radius:50%;background:#34d399;box-shadow:0 0 8px #34d399"></i>GPS aktif');
+      u.st = streetMap(mp, T);
+      u.gps = el(mp, abs(130, 62, 130, 30) + 'border-radius:15px;background:rgba(12,18,28,.86);display:flex;align-items:center;justify-content:center;gap:7px;font-size:13px;font-weight:700;opacity:0;', '<i style="width:8px;height:8px;border-radius:50%;background:#34d399;box-shadow:0 0 8px #34d399"></i>' + T.gps);
       var pn = el(mp, abs(12, 655, 366, 150) + 'border-radius:28px;background:#141a25;box-shadow:0 10px 40px rgba(0,0,0,.4);');
       u.idle = el(pn, 'position:absolute;inset:0;');
-      el(u.idle, abs(14, 14, 338, 54) + 'border-radius:16px;background:#222a38;display:flex;align-items:center;gap:14px;padding:0 18px;box-sizing:border-box;', icon('run', 26, C.cyan, false, 2.2) + '<span style="font-size:19px;font-weight:800;flex:1">Koşu</span>' + icon('chev', 18, '#8a92a6', false, 2.4));
-      u.startBtn = el(u.idle, abs(14, 80, 246, 50) + 'border-radius:16px;background:' + C.cyan + ';display:grid;place-items:center;font-size:19px;font-weight:800;', 'Başlat');
-      el(u.idle, abs(268, 76, 84, 58) + 'border-radius:16px;background:#222a38;box-shadow:inset 0 0 0 1px rgba(255,255,255,.08);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font-size:13px;font-weight:700;', icon('history', 20, '#fff', false, 2.2) + 'Geçmiş');
+      el(u.idle, abs(14, 14, 338, 54) + 'border-radius:16px;background:#222a38;display:flex;align-items:center;gap:14px;padding:0 18px;box-sizing:border-box;', icon('run', 26, C.cyan, false, 2.2) + '<span style="font-size:19px;font-weight:800;flex:1">' + T.run + '</span>' + icon('chev', 18, '#8a92a6', false, 2.4));
+      u.startBtn = el(u.idle, abs(14, 80, 246, 50) + 'border-radius:16px;background:' + C.cyan + ';display:grid;place-items:center;font-size:19px;font-weight:800;', T.start);
+      el(u.idle, abs(268, 76, 84, 58) + 'border-radius:16px;background:#222a38;box-shadow:inset 0 0 0 1px rgba(255,255,255,.08);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font-size:13px;font-weight:700;', icon('history', 20, '#fff', false, 2.2) + T.history);
       u.live = el(pn, 'position:absolute;inset:0;opacity:0;');
       var st = el(u.live, abs(14, 16, 338) + 'display:grid;grid-template-columns:1fr 1fr 1fr;');
-      u.stat = ['MESAFE', 'SÜRE', 'TEMPO'].map(function (l, i) {
+      u.stat = T.stats.map(function (l, i) {
         var c = el(st, 'text-align:' + (i === 0 ? 'left' : i === 1 ? 'center' : 'right') + ';');
         el(c, 'font-size:10.5px;font-weight:700;letter-spacing:.14em;color:#8a92a6;', l);
         return el(c, 'margin-top:6px;font-size:24px;font-weight:800;letter-spacing:-.02em;font-variant-numeric:tabular-nums;white-space:nowrap;', i === 0 ? '0,00<span style="font-size:13px;color:#8a92a6"> km</span>' : i === 1 ? '00:00' : '–');
       });
-      el(u.live, abs(14, 90, 164, 46) + 'border-radius:16px;background:#222a38;display:grid;place-items:center;font-size:16px;font-weight:800;', 'Duraklat');
-      u.stopBtn = el(u.live, abs(188, 90, 164, 46) + 'border-radius:16px;background:' + C.red + ';display:grid;place-items:center;font-size:16px;font-weight:800;', 'Bitir');
+      el(u.live, abs(14, 90, 164, 46) + 'border-radius:16px;background:#222a38;display:grid;place-items:center;font-size:16px;font-weight:800;', T.pause);
+      u.stopBtn = el(u.live, abs(188, 90, 164, 46) + 'border-radius:16px;background:' + C.red + ';display:grid;place-items:center;font-size:16px;font-weight:800;', T.finish);
       u.markers = [];
       u.sum = el(mp, abs(12, 560, 366, 245) + 'border-radius:28px;background:#141a25;box-shadow:inset 0 0 0 1px rgba(255,255,255,.08),0 20px 60px rgba(0,0,0,.5);opacity:0;z-index:4;padding:22px;box-sizing:border-box;',
-        '<div style="font-size:11.5px;font-weight:700;letter-spacing:.14em;color:#8a92a6">KOŞU TAMAMLANDI</div>' +
-        '<div style="margin-top:8px;font-size:46px;font-weight:800;letter-spacing:-.03em">4,82<span style="font-size:20px;color:#8a92a6"> km</span></div>' +
+        '<div style="font-size:11.5px;font-weight:700;letter-spacing:.14em;color:#8a92a6">' + T.runDone + '</div>' +
+        '<div style="margin-top:8px;font-size:46px;font-weight:800;letter-spacing:-.03em">' + T.dist + '<span style="font-size:20px;color:#8a92a6"> km</span></div>' +
         '<div style="margin-top:14px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px">' +
-        ['27:14|Süre', "5'39\"|Tempo", '342|kcal'].map(function (s) { s = s.split('|'); return '<div><div style="font-size:19px;font-weight:800">' + s[0] + '</div><div style="font-size:12px;color:#8a92a6;margin-top:3px">' + s[1] + '</div></div>'; }).join('') + '</div>' +
-        '<div style="margin-top:18px;display:inline-flex;align-items:center;gap:7px;padding:9px 13px;border-radius:14px;background:rgba(59,130,246,.18);color:#6aa8ff;font-size:13.5px;font-weight:700">' + icon('drop', 15, '#6aa8ff', true) + 'Su hedefin +500 ml arttı</div>');
+        ['27:14|' + T.time, "5'39\"|" + T.pace, '342|kcal'].map(function (s) { s = s.split('|'); return '<div><div style="font-size:19px;font-weight:800">' + s[0] + '</div><div style="font-size:12px;color:#8a92a6;margin-top:3px">' + s[1] + '</div></div>'; }).join('') + '</div>' +
+        '<div style="margin-top:18px;display:inline-flex;align-items:center;gap:7px;padding:9px 13px;border-radius:14px;background:rgba(59,130,246,.18);color:#6aa8ff;font-size:13.5px;font-weight:700">' + icon('drop', 15, '#6aa8ff', true) + T.goalUp + '</div>');
 
       /* FINGER */
       u.finger = el(R, abs(0, 0, 0, 0) + 'z-index:50;opacity:0;pointer-events:none;');
@@ -375,7 +394,7 @@
         floatText(195, 350, '+200 ml', '#6aa8ff');
         count(u.suVal, 398, 598, 800, function (v) { return Math.round(v) + ' / 3150 ml'; });
         setRing(u.r.su, 598 / 3150);
-        u.addItem('💧', '#1e3a66', 'Su', '200 ml', true);
+        u.addItem('💧', '#1e3a66', T.water, '200 ml', true);
         await wait(1100);
         /* meal */
         await fingerTo(344, 641, 650); await tap(u.fab);
@@ -409,7 +428,7 @@
         count(u.mac[2].val, 0, 38, 900, function (v) { return String(Math.round(v)); });
         count(u.mac[3].val, 0, 44, 900, function (v) { return String(Math.round(v)); });
         setRing(u.r.kal, 1220 / 2914); setRing(u.mac[0].ring, 1220 / 2914); setRing(u.mac[1].ring, 163 / 364); setRing(u.mac[2].ring, 38 / 146); setRing(u.mac[3].ring, 44 / 97);
-        u.addItem('🍕', '#3a2a1a', 'Pepperoni pizza + Kola', '1080 kcal', true);
+        u.addItem('🍕', '#3a2a1a', T.mealName, '1080 kcal', true);
         await wait(1300);
         /* run */
         await fingerTo(344, 641, 650); await tap(u.fab);
@@ -439,7 +458,7 @@
           var ang = (nx.x === pt.x && nx.y === pt.y) ? 0 : Math.atan2(nx.y - pt.y, nx.x - pt.x) * 180 / Math.PI + 90;
           M.setHead(pt, ang);
           cam.x += (pt.x - cam.x) * .1; cam.y += (pt.y - cam.y) * .1; cam.z += (1 - cam.z) * .03; applyCam();
-          u.stat[0].innerHTML = (4.82 * e).toFixed(2).replace('.', ',') + '<span style="font-size:13px;color:#8a92a6"> km</span>';
+          u.stat[0].innerHTML = (4.82 * e).toFixed(2).replace('.', T.dec) + '<span style="font-size:13px;color:#8a92a6"> km</span>';
           u.stat[1].textContent = mmss(1634 * e);
           u.stat[2].textContent = e > .03 ? pace(348 - 43 * e) : '–';
           while (shown < SPL.length && e >= SPL[shown][0] / 4.82) {
@@ -456,12 +475,12 @@
         showFinger(false);
         await wait(2200);
         await closeScreen(u.map, u.sum);
-        count(u.egzVal, 20, 47, 900, function (v) { return Math.round(v) + ' dk'; });
+        count(u.egzVal, 20, 47, 900, function (v) { return Math.round(v) + ' ' + T.min; });
         setRing(u.r.egz, 1);
         count(u.suVal, 3150, 3650, 900, function (v) { return '598 / ' + Math.round(v) + ' ml'; });
         setRing(u.r.su, 598 / 3650);
-        floatText(80, 300, '+500 ml hedef', '#6aa8ff');
-        u.addItem('🏃', '#3a2232', 'Koşu', '4,82 km · 27:14', true);
+        floatText(80, 300, T.goalFloat, '#6aa8ff');
+        u.addItem('🏃', '#3a2232', T.run, T.dist + ' km · 27:14', true);
         await wait(2600);
       })();
     }
