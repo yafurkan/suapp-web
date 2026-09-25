@@ -615,11 +615,11 @@
 
 <script src="/assets/js/suu-phone-tour.js?v=2" defer></script>
 <script src="/assets/js/suu-badge.js?v=2" defer></script>
-<script src="/assets/js/suu-intro.js?v=1"></script>
+<script src="/assets/js/suu-intro.js?v=2"></script>
 <script>
   (function(){
     var h = document.getElementById('hero-title');
-    if (window.SuuIntro) SuuIntro.play(h, { logo: '/assets/brand/suu-badge-128.png' });
+    if (window.SuuIntro) SuuIntro.play(h, { {% if lang != 'tr' %}lang: 'en', {% endif %}logo: '/assets/brand/suu-badge-128.png' });
     document.documentElement.classList.remove('suu-pending');
   })();
 </script>

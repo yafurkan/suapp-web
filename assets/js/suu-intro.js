@@ -2,26 +2,28 @@
    Usage (after the h1, e.g. end of <body>):
      <script src="/suu-intro.js"></script>
      <script>SuuIntro.play(document.querySelector('.hero h1'), { logo: '/assets/brand/suu-badge-128.png' });</script>
-   Options: once: 'session' (default) | 'visitor' | false · logo · colors {egz,kal,su} · force */
+   Options: lang: 'tr' (default) | 'en' · once: 'session' (default) | 'visitor' | false · logo · colors {egz,kal,su} · force */
 (function () {
   var ICON = {
     egz: '<path d="M36 60 H84"/><rect x="24" y="38" width="12" height="44" rx="3"/><rect x="84" y="38" width="12" height="44" rx="3"/><path d="M14 48 V72 M106 48 V72"/>',
     kal: '<path d="M24 56 C 24 32, 96 32, 96 56 Z"/><path d="M20 68 H100"/><path d="M24 80 Q 42 73 60 80 T 96 80"/><path d="M26 92 H94 V96 C 94 101, 90 104, 85 104 H35 C 30 104, 26 101, 26 96 Z"/>',
     su: '<path d="M60 18 C 60 18, 32 52, 32 73 A 28 28 0 0 0 88 73 C 88 52, 60 18, 60 18 Z"/>'
   };
-  var LABEL = { egz: 'EGZERSİZ', kal: 'KALORİ', su: 'SU' };
+  var LABELS = { tr: { egz: 'EGZERSİZ', kal: 'KALORİ', su: 'SU', dec: ',' }, en: { egz: 'EXERCISE', kal: 'CALORIES', su: 'WATER', dec: '.' } };
   var EASE = 'cubic-bezier(.22,1,.36,1)', SOFT = 'cubic-bezier(.4,0,.2,1)';
   var active = new WeakMap();
   function el(tag, css, html) { var e = document.createElement(tag); if (css) e.style.cssText = css; if (html != null) e.innerHTML = html; return e; }
   function cl(v) { return v < 0 ? 0 : v > 1 ? 1 : v; }
   function travelEase(t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; }
-  function fmt(v) { return v.toFixed(2).replace('.', ',') + ' L'; }
+  var DEC = ',';
+  function fmt(v) { return v.toFixed(2).replace('.', DEC) + ' L'; }
   var SVGNS = 'http://www.w3.org/2000/svg';
   function sv(tag, attrs) { var e = document.createElementNS(SVGNS, tag); for (var k in attrs) e.setAttribute(k, attrs[k]); return e; }
 
   function play(h1, o) {
     o = o || {};
     if (!h1 || !h1.animate) return;
+    var LABEL = LABELS[o.lang === 'en' ? 'en' : 'tr']; DEC = LABEL.dec;
     if (active.get(h1)) active.get(h1).skip(true);
     var key = o.key || 'suu-hero-intro', store = null;
     try { store = o.once === false ? null : (o.once === 'visitor' ? localStorage : sessionStorage); if (store && store.getItem(key)) return; } catch (e) {}
