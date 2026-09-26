@@ -1,5 +1,5 @@
 {#- Scroll bölümü (assets/js/suu-scroll.js + assets/css/suu-scroll.css).
-    Adım metinleri/linkleri pillars.items'tan, çip ve kamera etiketleri pillars.scroll'dan. -#}
+    Adım metinleri/linkleri pillars.items'tan, çip/kamera etiketleri ve ekran görüntüsü dili (shots_lang) pillars.scroll'dan. -#}
 {%- set sc = pillars.scroll -%}
 {%- set pos = [[['-38%','30%'],['62%','62%']], [['-40%','14%'],['62%','40%']], [['-34%','40%'],['60%','70%']]] -%}
 {%- set shots = [('suu-su', 0), ('suu-kalori', 14), ('suu-egzersiz', 0)] %}
@@ -27,7 +27,7 @@
                         <div class="suu-phone">
                             <div class="suu-screen">
 {%- for name, scroll in shots %}
-                                <img class="suu-shot{% if loop.first %} is-active{% endif %}" src="/assets/scroll/{{ name }}.webp" width="800" height="1734" alt="{{ sc.alts[loop.index0] }}" data-scroll="{{ scroll }}"{% if not loop.first %} loading="lazy"{% endif %} decoding="async">
+                                <img class="suu-shot{% if loop.first %} is-active{% endif %}" src="/assets/scroll/{{ sc.shots_lang }}/{{ name }}.webp" width="800" height="1734" alt="{{ sc.alts[loop.index0] }}" data-scroll="{{ scroll }}"{% if not loop.first %} loading="lazy"{% endif %} decoding="async">
 {%- endfor %}
                                 <div class="suu-cam" aria-hidden="true">
                                     <img class="suu-cam-img" src="/assets/scroll/suu-kamera-menu.webp" width="800" height="1640" alt="" loading="lazy" decoding="async">

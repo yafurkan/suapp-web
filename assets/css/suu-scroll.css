@@ -3,12 +3,12 @@
    kamera sahnesi cihaz olduğu için her temada koyu kalır.
    Sadece transform ve opacity anime edilir; layout tetiklenmez. */
 .suu-features *{box-sizing:border-box}
-/* Taşan çip/ışık sayfayı genişletmesin (iOS Safari html'deki overflow-x:clip'e güvenmez).
-   clip kaydırma kabı oluşturmaz → sticky bozulmaz. */
-#pillars{overflow-x:clip}
 
 .suu-scroller{position:relative;height:300vh}
-.suu-sticky{position:sticky;top:var(--nav-h);height:calc(100vh - var(--nav-h));display:flex;align-items:flex-start;justify-content:center;overflow-y:clip;padding-block-start:clamp(16px,4vh,40px)}
+.suu-sticky{position:sticky;top:var(--nav-h);height:calc(100vh - var(--nav-h));display:flex;align-items:flex-start;justify-content:center;overflow:hidden;padding:clamp(16px,4vh,40px) var(--sp-5) 0}
+/* Bölüm .container dışında, tam genişlikte: overflow:hidden taşan ışık/çipi
+   ekran kenarında keser. iOS Safari overflow-x:clip'e güvenilir uymuyor —
+   sayfa genişleyip sağa sola kayıyordu. */
 .suu-row{position:relative;width:100%;max-width:1080px;display:flex;align-items:center;justify-content:space-between;gap:64px}
 .suu-steps{flex:1 1 0;min-width:0;max-width:480px;display:flex;flex-direction:column;gap:12px}
 

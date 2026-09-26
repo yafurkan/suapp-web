@@ -1099,7 +1099,10 @@ body.lbox-open { overflow: hidden; }
     border-block-start: 1px solid var(--border);
 }
 .sticky-cta .btn { flex: 1; min-height: 46px; font-size: var(--fs-sm); }
-.sticky-cta .btn { gap: var(--sp-2); min-width: 0; }
+.sticky-cta .btn { gap: var(--sp-2); min-width: 0; white-space: nowrap; }
+@media (max-width: 360px) {           /* iPhone SE: iki buton tek satırda kalsın */
+    .sticky-cta .btn { padding-inline: var(--sp-2); font-size: var(--fs-xs); }
+}
 .sticky-cta__logo { flex-shrink: 0; }
 /* Play logosu mavi butonda kaybolmasın: beyaz zemin, orijinal renkler */
 .sticky-cta__logo--play {

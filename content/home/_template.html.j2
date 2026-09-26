@@ -78,8 +78,8 @@
        normalize-fonts.py'nin işini geri alır. #}
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900{% if lang == 'hi' %}&family=Noto+Sans+Devanagari:wght@400..800{% endif %}{% if dir == 'rtl' %}&family=Noto+Sans+Arabic:wght@300..800{% endif %}&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/donation-widget.css">
-    <link rel="stylesheet" href="/assets/css/suu.css?v=4">
-    <link rel="stylesheet" href="/assets/css/suu-scroll.css?v=2">
+    <link rel="stylesheet" href="/assets/css/suu.css?v=5">
+    <link rel="stylesheet" href="/assets/css/suu-scroll.css?v=3">
 
     <!-- Yapılandırılmış veri — kaynak: content/suu-facts.json -->
     <script type="application/ld+json">
@@ -221,7 +221,10 @@
             <h2>{{ pillars.head }}</h2>
             <p>{{ pillars.sub }}</p>
         </div>
+    </div>
+{#- Tam genişlik: yapışkan alan overflow:hidden ile kırpar (iOS clip'e uymuyor) #}
 {% include "_pillars-scroll.html.j2" %}
+    <div class="container">
         <div class="answer-box" style="margin-block-start:var(--sp-10)">
             <p><strong>{{ pillars.answer_label }}</strong> {{ pillars.answer }}</p>
         </div>
