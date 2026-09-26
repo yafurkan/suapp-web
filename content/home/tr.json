@@ -98,7 +98,41 @@
         "link_href": "#egzersiz",
         "link_label": "Egzersiz metrikleri"
       }
-    ]
+    ],
+    "scroll": {
+      "chips": [
+        [
+          "+200 ml su",
+          "Günlük hedef 2.800 ml"
+        ],
+        [
+          "📸 Tek fotoğraf",
+          "709 kcal · makrolar hazır"
+        ],
+        [
+          "5,2 km koşu",
+          "Su hedefi +350 ml"
+        ]
+      ],
+      "cam": {
+        "pill": "Suu AI · Kalori tarayıcı",
+        "pizza": "Pepperoni pizza",
+        "cola": "Kola · 330 ml",
+        "pizza_row": "Pepperoni pizza · 2 dilim",
+        "detected": "Tespit edilen öğün",
+        "add": "Öğüne ekle",
+        "macro": [
+          "Protein 24 g",
+          "Karb 86 g",
+          "Yağ 26 g"
+        ]
+      },
+      "alts": [
+        "Suu ana ekranı: günlük su hedefi 2.800 ml, beslenme ve egzersiz halkaları",
+        "Suu kalori ve makro özeti: kalori, karbonhidrat, protein ve yağ hedefleri",
+        "Suu egzersiz ekranı: GPS haritası üzerinde yürüyüş kaydı başlatma"
+      ]
+    }
   },
   "calories": {
     "eyebrow": "Kalori ve Beslenme",

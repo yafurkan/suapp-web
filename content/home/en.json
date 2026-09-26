@@ -98,7 +98,41 @@
         "link_href": "#egzersiz",
         "link_label": "Exercise metrics"
       }
-    ]
+    ],
+    "scroll": {
+      "chips": [
+        [
+          "+200 ml water",
+          "Daily goal 2,800 ml"
+        ],
+        [
+          "📸 One photo",
+          "709 kcal · macros ready"
+        ],
+        [
+          "5.2 km run",
+          "Water goal +350 ml"
+        ]
+      ],
+      "cam": {
+        "pill": "Suu AI · Calorie scanner",
+        "pizza": "Pepperoni pizza",
+        "cola": "Cola · 330 ml",
+        "pizza_row": "Pepperoni pizza · 2 slices",
+        "detected": "Detected meal",
+        "add": "Add to meal",
+        "macro": [
+          "Protein 24 g",
+          "Carbs 86 g",
+          "Fat 26 g"
+        ]
+      },
+      "alts": [
+        "Suu home screen: 2,800 ml daily water goal with nutrition and exercise rings",
+        "Suu calorie and macro summary: calorie, carb, protein and fat targets",
+        "Suu exercise screen: starting a GPS-tracked walk on the map"
+      ]
+    }
   },
   "calories": {
     "eyebrow": "Calories & Nutrition",

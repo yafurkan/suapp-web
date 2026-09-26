@@ -1,0 +1,94 @@
+/* Suu — ana sayfa "tek sistem" scroll bölümü (assets/js/suu-scroll.js).
+   Renkler suu.css token'larından gelir → açık/koyu temaya uyar; telefon ve
+   kamera sahnesi cihaz olduğu için her temada koyu kalır.
+   Sadece transform ve opacity anime edilir; layout tetiklenmez. */
+.suu-features *{box-sizing:border-box}
+
+.suu-scroller{position:relative;height:300vh}
+.suu-sticky{position:sticky;top:var(--nav-h);height:calc(100vh - var(--nav-h));display:flex;align-items:flex-start;justify-content:center;overflow-y:clip;padding-block-start:clamp(16px,4vh,40px)}
+.suu-row{position:relative;width:100%;max-width:1080px;display:flex;align-items:center;justify-content:space-between;gap:64px}
+.suu-steps{flex:1 1 0;min-width:0;max-width:480px;display:flex;flex-direction:column;gap:12px}
+
+.suu-step{position:relative;padding:24px 26px 22px;border-radius:20px;background:transparent;border:1px solid transparent;opacity:.38;transform:translateX(-6px);transition:opacity .45s,transform .45s,background-color .45s,border-color .45s;cursor:pointer;overflow:hidden}
+[dir="rtl"] .suu-step{transform:translateX(6px)}
+.suu-step.is-active{background:var(--surface);border-color:var(--border);box-shadow:var(--shadow-sm);opacity:1;transform:none}
+.suu-bar{position:absolute;inset-inline-start:0;top:0;height:3px;border-radius:3px;background:var(--c);width:0;transition:width .15s linear}
+.suu-step-head{display:flex;align-items:center;gap:14px}
+.suu-icon{width:44px;height:44px;border-radius:12px;background:var(--ib);color:var(--c);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.suu-step h3{margin:0;font-size:clamp(22px,2.2vw,28px);font-weight:var(--fw-bold);color:var(--text);letter-spacing:-.01em}
+.suu-step p{margin:14px 0 0;font-size:16.5px;line-height:1.6;color:var(--text-muted);text-wrap:pretty}
+.suu-step p strong{color:var(--text)}
+.suu-step a{display:inline-block;margin-top:14px;font-size:16px;color:var(--link);text-decoration:none}
+.suu-step a:hover{color:var(--link-hover)}
+.suu-dots{display:none;justify-content:center;gap:8px;margin-top:4px}
+.suu-dots i{height:6px;width:6px;border-radius:3px;background:var(--border-strong);transition:width .35s,background-color .35s}
+.suu-dots i.is-active{width:22px;background:var(--c)}
+
+.suu-phone-wrap{position:relative;flex-shrink:0;width:var(--pw,320px);height:var(--ph,656px)}
+.suu-glow{position:absolute;left:50%;top:50%;width:640px;height:640px;margin:-320px 0 0 -320px;border-radius:50%;background:radial-gradient(closest-side,var(--glow,#1e88e5),transparent);opacity:.3;transition:background .6s;pointer-events:none}
+.suu-phone{position:absolute;inset:0;isolation:isolate;border-radius:calc(var(--k,1)*52px);background:#05070a;box-shadow:0 0 0 1.5px #2c3442,0 40px 80px rgba(0,0,0,.4);transform:rotate(var(--tilt,0deg));transition:transform .15s linear}
+.suu-screen{position:absolute;inset:calc(var(--k,1)*10px);border-radius:calc(var(--k,1)*43px);overflow:hidden;background:#0f1629}
+.suu-shot{position:absolute;left:0;top:0;width:100%;height:auto;display:block;opacity:0;transition:opacity .5s;will-change:transform,opacity}
+.suu-shot.is-active{opacity:1}
+.suu-island{position:absolute;left:50%;top:calc(var(--k,1)*10px);width:calc(var(--k,1)*92px);height:calc(var(--k,1)*27px);transform:translateX(-50%);border-radius:20px;background:#000;z-index:5}
+
+.suu-chip{position:absolute;z-index:3;display:flex;align-items:center;gap:8px;padding:10px 14px;border-radius:14px;background:var(--surface-raised);border:1px solid var(--border);box-shadow:var(--shadow-lg);font-size:14.5px;font-weight:var(--fw-semibold);color:var(--text);white-space:nowrap;opacity:0;transform:translateY(14px) scale(.9);transition:opacity .45s,transform .55s cubic-bezier(.34,1.56,.64,1)}
+.suu-chip.is-on{opacity:1;transform:none}
+.suu-chip b{width:8px;height:8px;border-radius:4px;background:var(--c);flex-shrink:0}
+
+/* Kalori kamerası (300px genişlikte tasarlandı, JS ekran genişliğine ölçekler).
+   Cihaz içi arayüz: her temada sabit renkler. */
+.suu-cam{position:absolute;left:0;top:0;width:300px;transform-origin:0 0;opacity:0;transition:opacity .35s;pointer-events:none;overflow:hidden;background:#000;z-index:4;direction:ltr;font-family:-apple-system,"SF Pro Text",system-ui,sans-serif}
+.suu-cam.is-on{opacity:1}
+.suu-cam-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.12);transition:transform .6s}
+.suu-cam.is-on .suu-cam-img{transform:none}
+.suu-cam-top{position:absolute;left:0;right:0;top:0;height:110px;background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,0))}
+.suu-cam-bar{position:absolute;left:14px;right:14px;top:44px;display:flex;align-items:center;justify-content:space-between}
+.suu-cam-btn{width:30px;height:30px;border-radius:15px;background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center;color:#fff;font-size:14px}
+.suu-cam-pill{display:flex;align-items:center;gap:6px;padding:6px 12px;border-radius:15px;background:rgba(0,0,0,.5);color:#fff;font-size:12.5px;font-weight:700}
+.suu-cam-pill i{width:7px;height:7px;border-radius:4px;background:#f57c00}
+.suu-frame{position:absolute;left:22px;right:22px;top:96px;bottom:150px;opacity:0;transition:opacity .3s}
+.suu-frame.is-on{opacity:1}
+.suu-frame span{position:absolute;width:28px;height:28px;border:0 solid #fff}
+.suu-frame span:nth-child(1){left:0;top:0;border-left-width:3px;border-top-width:3px;border-top-left-radius:12px}
+.suu-frame span:nth-child(2){right:0;top:0;border-right-width:3px;border-top-width:3px;border-top-right-radius:12px}
+.suu-frame span:nth-child(3){left:0;bottom:0;border-left-width:3px;border-bottom-width:3px;border-bottom-left-radius:12px}
+.suu-frame span:nth-child(4){right:0;bottom:0;border-right-width:3px;border-bottom-width:3px;border-bottom-right-radius:12px}
+.suu-scan{position:absolute;left:4px;right:4px;top:0;height:3px;border-radius:2px;background:#ffb14a;box-shadow:0 0 14px 4px rgba(245,124,0,.7);opacity:0;transition:top .15s linear,opacity .25s}
+.suu-scan.is-on{opacity:1}
+.suu-tag{position:absolute;display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:12px;background:rgba(255,255,255,.94);color:#141414;font-size:12px;font-weight:700;white-space:nowrap;box-shadow:0 6px 16px rgba(0,0,0,.35);opacity:0;transform:scale(.6);transition:opacity .3s,transform .45s cubic-bezier(.34,1.56,.64,1)}
+.suu-tag.is-on{opacity:1;transform:none}
+.suu-tag em{font-style:normal;color:#f57c00}
+.suu-shutter{position:absolute;left:0;right:0;bottom:34px;display:flex;justify-content:center;opacity:0;transition:opacity .3s}
+.suu-shutter.is-on{opacity:1}
+.suu-shutter div{width:62px;height:62px;border-radius:31px;border:4px solid #fff;display:flex;align-items:center;justify-content:center}
+.suu-shutter div::after{content:"";width:48px;height:48px;border-radius:24px;background:#fff}
+.suu-sheet{position:absolute;left:8px;right:8px;bottom:10px;padding:14px 14px 12px;border-radius:22px;background:rgba(20,26,36,.96);border:1px solid #2a3442;color:#fff;transform:translateY(130%);transition:transform .55s cubic-bezier(.22,1,.36,1);font-size:13px}
+.suu-sheet.is-on{transform:none}
+.suu-sheet-h{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.suu-sheet-h strong{white-space:nowrap}
+.suu-sheet-h span{color:#b4bcc8;font-weight:600}
+.suu-sheet-h strong{font-size:22px;font-weight:800;color:#ffb14a}
+.suu-rows{display:flex;flex-direction:column;gap:6px;margin-top:10px}
+.suu-rows div{display:flex;justify-content:space-between;gap:8px}
+.suu-macro{display:flex;height:6px;border-radius:3px;overflow:hidden;margin-top:12px;gap:2px}
+.suu-macro-l{display:flex;justify-content:space-between;margin-top:6px;font-size:11.5px;color:#b4bcc8}
+.suu-add{margin-top:10px;padding:9px 0;border-radius:12px;background:#f57c00;text-align:center;font-size:13.5px;font-weight:700}
+
+/* Alçak ekranlar */
+@media (max-height:760px) and (min-width:860px){.suu-step{padding:16px 18px 14px}.suu-step:not(.is-active) .suu-body{display:none}}
+@media (max-height:640px) and (min-width:860px){.suu-step{padding:12px 16px}.suu-step a{display:none}}
+
+/* Mobil */
+@media (max-width:859px){
+  .suu-scroller{height:330vh}
+  .suu-row{flex-direction:column-reverse;gap:22px}
+  .suu-steps{max-width:560px;gap:10px;width:100%}
+  .suu-step{display:none;padding:16px 18px 14px;transform:none}
+  .suu-step.is-active{display:block}
+  .suu-step.is-active .suu-bar{width:100%!important}
+  .suu-dots{display:flex}
+  .suu-chip{font-size:13px}
+  .suu-phone{transform:none}
+}
+@media (prefers-reduced-motion:reduce){.suu-features *{transition:none!important}}

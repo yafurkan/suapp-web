@@ -82,6 +82,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/donation-widget.css?v=6">
     <link rel="stylesheet" href="/assets/css/suu.css?v=2">
+    <link rel="stylesheet" href="/assets/css/suu-scroll.css?v=1">
 
     <!-- Yapılandırılmış veri — kaynak: content/suu-facts.json -->
     <script type="application/ld+json">
@@ -627,25 +628,64 @@
             <h2>Не три окремі застосунки — одна система, де кожна частина живить інші</h2>
             <p>У більшості застосунків вода, калорії та тренування живуть в окремих вкладках. У Suu вони оновлюють одне одного.</p>
         </div>
-        <div class="pillars">
-            <article class="pillar pillar--water">
-                <span class="pillar__icon"><svg width="26" height="26" aria-hidden="true"><use href="#i-water"></use></svg></span>
-                <h3>Облік води</h3>
-                <p><strong>91 напій</strong> — кава, чай, газованка, сік, молоко, енергетики. Для кожного обчислюється реальний внесок у водний баланс.</p>
-                <p style="margin-block-start:var(--sp-3)"><a href="#su-hedefi">Як працює розумна норма води <span class="arrow" aria-hidden="true">→</span></a></p>
-            </article>
-            <article class="pillar pillar--calories">
-                <span class="pillar__icon"><svg width="26" height="26" aria-hidden="true"><use href="#i-flame"></use></svg></span>
-                <h3>Калорії та харчування</h3>
-                <p><strong>Сфотографуй страву</strong> — Suu AI визначить калорії, білки, вуглеводи й жири та сам складе твої макроси.</p>
-                <p style="margin-block-start:var(--sp-3)"><a href="#kalori">Аналіз калорій за фото <span class="arrow" aria-hidden="true">→</span></a></p>
-            </article>
-            <article class="pillar pillar--exercise">
-                <span class="pillar__icon"><svg width="26" height="26" aria-hidden="true"><use href="#i-run"></use></svg></span>
-                <h3>Облік тренувань</h3>
-                <p><strong>Запис із GPS у реальному часі</strong> — біг, ходьба, велосипед. Маршрут малюється на карті, а кожне тренування автоматично піднімає норму води.</p>
-                <p style="margin-block-start:var(--sp-3)"><a href="#egzersiz">Показники тренувань <span class="arrow" aria-hidden="true">→</span></a></p>
-            </article>
+        <div class="suu-features">
+        <div class="suu-scroller">
+            <div class="suu-sticky">
+                <div class="suu-row">
+                    <div class="suu-steps">
+                        <article class="suu-step is-active" style="--c:var(--pillar-water);--ib:var(--pillar-water-soft)">
+                            <div class="suu-bar"></div>
+                            <div class="suu-step-head"><span class="suu-icon"><svg width="24" height="24" aria-hidden="true"><use href="#i-water"></use></svg></span><h3>Облік води</h3></div>
+                            <div class="suu-body"><p><strong>91 напій</strong> — кава, чай, газованка, сік, молоко, енергетики. Для кожного обчислюється реальний внесок у водний баланс.</p><a href="#su-hedefi">Як працює розумна норма води <span class="arrow" aria-hidden="true">→</span></a></div>
+                        </article>
+                        <article class="suu-step" style="--c:var(--pillar-calories);--ib:var(--pillar-calories-soft)">
+                            <div class="suu-bar"></div>
+                            <div class="suu-step-head"><span class="suu-icon"><svg width="24" height="24" aria-hidden="true"><use href="#i-flame"></use></svg></span><h3>Калорії та харчування</h3></div>
+                            <div class="suu-body"><p><strong>Сфотографуй страву</strong> — Suu AI визначить калорії, білки, вуглеводи й жири та сам складе твої макроси.</p><a href="#kalori">Аналіз калорій за фото <span class="arrow" aria-hidden="true">→</span></a></div>
+                        </article>
+                        <article class="suu-step" style="--c:var(--pillar-exercise);--ib:var(--pillar-exercise-soft)">
+                            <div class="suu-bar"></div>
+                            <div class="suu-step-head"><span class="suu-icon"><svg width="24" height="24" aria-hidden="true"><use href="#i-run"></use></svg></span><h3>Облік тренувань</h3></div>
+                            <div class="suu-body"><p><strong>Запис із GPS у реальному часі</strong> — біг, ходьба, велосипед. Маршрут малюється на карті, а кожне тренування автоматично піднімає норму води.</p><a href="#egzersiz">Показники тренувань <span class="arrow" aria-hidden="true">→</span></a></div>
+                        </article>
+                        <div class="suu-dots" aria-hidden="true"><i class="is-active" style="--c:var(--pillar-water)"></i><i style="--c:var(--pillar-calories)"></i><i style="--c:var(--pillar-exercise)"></i></div>
+                    </div>
+                    <div class="suu-phone-wrap">
+                        <div class="suu-glow"></div>
+                        <div class="suu-chip" data-step="0" data-j="0" data-x="-38%" data-y="30%" style="--c:var(--pillar-water)" aria-hidden="true"><b></b>+200 мл води</div>
+                        <div class="suu-chip" data-step="0" data-j="1" data-x="62%" data-y="62%" style="--c:var(--pillar-water)" aria-hidden="true"><b></b>Денна норма 2 800 мл</div>
+                        <div class="suu-chip" data-step="1" data-j="0" data-x="-40%" data-y="14%" style="--c:var(--pillar-calories)" aria-hidden="true"><b></b>📸 Одне фото</div>
+                        <div class="suu-chip" data-step="1" data-j="1" data-x="62%" data-y="40%" style="--c:var(--pillar-calories)" aria-hidden="true"><b></b>709 ккал · макроси готові</div>
+                        <div class="suu-chip" data-step="2" data-j="0" data-x="-34%" data-y="40%" style="--c:var(--pillar-exercise)" aria-hidden="true"><b></b>Біг 5,2 км</div>
+                        <div class="suu-chip" data-step="2" data-j="1" data-x="60%" data-y="70%" style="--c:var(--pillar-exercise)" aria-hidden="true"><b></b>Норма води +350 мл</div>
+                        <div class="suu-phone">
+                            <div class="suu-screen">
+                                <img class="suu-shot is-active" src="/assets/scroll/suu-su.webp" width="800" height="1734" alt="Головний екран Suu: денна норма води 2 800 мл і кільця харчування та тренувань" data-scroll="0" decoding="async">
+                                <img class="suu-shot" src="/assets/scroll/suu-kalori.webp" width="800" height="1734" alt="Зведення калорій і макросів у Suu: цілі за калоріями, вуглеводами, білками й жирами" data-scroll="14" loading="lazy" decoding="async">
+                                <img class="suu-shot" src="/assets/scroll/suu-egzersiz.webp" width="800" height="1734" alt="Екран тренувань Suu: запуск прогулянки з GPS на карті" data-scroll="0" loading="lazy" decoding="async">
+                                <div class="suu-cam" aria-hidden="true">
+                                    <img class="suu-cam-img" src="/assets/scroll/suu-kamera-menu.webp" width="800" height="1640" alt="" loading="lazy" decoding="async">
+                                    <div class="suu-cam-top"></div>
+                                    <div class="suu-cam-bar"><div class="suu-cam-btn">✕</div><div class="suu-cam-pill"><i></i>Suu AI · Сканер калорій</div><div class="suu-cam-btn">⚡</div></div>
+                                    <div class="suu-frame"><span></span><span></span><span></span><span></span><div class="suu-scan"></div></div>
+                                    <div class="suu-tag" data-tag="1" style="left:92px;top:190px">🍕 Піца пепероні <em>%97</em></div>
+                                    <div class="suu-tag" data-tag="2" style="left:62px">🥤 Кола · 330 мл <em>%94</em></div>
+                                    <div class="suu-shutter"><div></div></div>
+                                    <div class="suu-sheet">
+                                        <div class="suu-sheet-h"><span>Розпізнана страва</span><strong>709 kcal</strong></div>
+                                        <div class="suu-rows"><div><span>🍕 Піца пепероні · 2 шматки</span><b>570</b></div><div><span>🥤 Кола · 330 мл</span><b>139</b></div></div>
+                                        <div class="suu-macro"><div style="flex:24;background:#fb7185"></div><div style="flex:86;background:#fbbf24"></div><div style="flex:26;background:#a78bfa"></div></div>
+                                        <div class="suu-macro-l"><span>Білки 24 г</span><span>Вугл. 86 г</span><span>Жири 26 г</span></div>
+                                        <div class="suu-add">Додати до прийому їжі</div>
+                                    </div>
+                                </div>
+                                <div class="suu-island"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
         <div class="answer-box" style="margin-block-start:var(--sp-10)">
             <p><strong>Коротка відповідь:</strong> Suu — застосунок для здоров&#39;я, що поєднує облік води, аналіз калорій за фотографією та запис тренувань із GPS в одному місці. Відрізняє його те, що ці три речі пов&#39;язані: пробіжка, яку ти записав із GPS і бачиш на карті, підвищує денну норму води; білок і натрій у твоїй страві визначають, скільки води потрібно на травлення; а кава зараховується за своїм реальним внеском у гідратацію. Безкоштовно на iOS та Android, доступний 7 мовами.</p>
@@ -1254,6 +1294,7 @@
 </script>
 
 <script src="/assets/js/suu-phone-tour.js?v=2" defer></script>
+<script src="/assets/js/suu-scroll.js?v=1" defer></script>
 <script src="/assets/js/suu-badge.js?v=2" defer></script>
 <script src="/assets/js/suu-intro.js?v=2"></script>
 <script>

@@ -99,7 +99,41 @@
         "link_href": "#egzersiz",
         "link_label": "Trainingswerte"
       }
-    ]
+    ],
+    "scroll": {
+      "chips": [
+        [
+          "+200 ml Wasser",
+          "Tagesziel 2.800 ml"
+        ],
+        [
+          "📸 Ein Foto",
+          "709 kcal · Makros fertig"
+        ],
+        [
+          "5,2 km Lauf",
+          "Wasserziel +350 ml"
+        ]
+      ],
+      "cam": {
+        "pill": "Suu AI · Kalorienscanner",
+        "pizza": "Peperoni-Pizza",
+        "cola": "Cola · 330 ml",
+        "pizza_row": "Peperoni-Pizza · 2 Stück",
+        "detected": "Erkannte Mahlzeit",
+        "add": "Zur Mahlzeit hinzufügen",
+        "macro": [
+          "Protein 24 g",
+          "KH 86 g",
+          "Fett 26 g"
+        ]
+      },
+      "alts": [
+        "Suu-Startbildschirm: Tagesziel 2.800 ml Wasser mit Ernährungs- und Trainingsringen",
+        "Suu-Übersicht für Kalorien und Makros: Ziele für Kalorien, Kohlenhydrate, Protein und Fett",
+        "Suu-Trainingsbildschirm: GPS-Spaziergang auf der Karte starten"
+      ]
+    }
   },
   "calories": {
     "eyebrow": "Kalorien und Ernährung",

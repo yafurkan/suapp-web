@@ -1,0 +1,55 @@
+{#- Scroll bölümü (assets/js/suu-scroll.js + assets/css/suu-scroll.css).
+    Adım metinleri/linkleri pillars.items'tan, çip ve kamera etiketleri pillars.scroll'dan. -#}
+{%- set sc = pillars.scroll -%}
+{%- set pos = [[['-38%','30%'],['62%','62%']], [['-40%','14%'],['62%','40%']], [['-34%','40%'],['60%','70%']]] -%}
+{%- set shots = [('suu-su', 0), ('suu-kalori', 14), ('suu-egzersiz', 0)] %}
+        <div class="suu-features">
+        <div class="suu-scroller">
+            <div class="suu-sticky">
+                <div class="suu-row">
+                    <div class="suu-steps">
+{%- for p in pillars['items'] %}
+                        <article class="suu-step{% if loop.first %} is-active{% endif %}" style="--c:var(--pillar-{{ p.id }});--ib:var(--pillar-{{ p.id }}-soft)">
+                            <div class="suu-bar"></div>
+                            <div class="suu-step-head"><span class="suu-icon"><svg width="24" height="24" aria-hidden="true"><use href="#i-{{ p.icon }}"></use></svg></span><h3>{{ p.title }}</h3></div>
+                            <div class="suu-body"><p>{{ p.body | safe }}</p><a href="{{ p.link_href }}">{{ p.link_label }} <span class="arrow" aria-hidden="true">→</span></a></div>
+                        </article>
+{%- endfor %}
+                        <div class="suu-dots" aria-hidden="true">
+{%- for p in pillars['items'] %}<i{% if loop.first %} class="is-active"{% endif %} style="--c:var(--pillar-{{ p.id }})"></i>{% endfor -%}
+                        </div>
+                    </div>
+                    <div class="suu-phone-wrap">
+                        <div class="suu-glow"></div>
+{%- for p in pillars['items'] %}{% set si = loop.index0 %}{% for label in sc.chips[si] %}
+                        <div class="suu-chip" data-step="{{ si }}" data-j="{{ loop.index0 }}" data-x="{{ pos[si][loop.index0][0] }}" data-y="{{ pos[si][loop.index0][1] }}" style="--c:var(--pillar-{{ p.id }})" aria-hidden="true"><b></b>{{ label }}</div>
+{%- endfor %}{% endfor %}
+                        <div class="suu-phone">
+                            <div class="suu-screen">
+{%- for name, scroll in shots %}
+                                <img class="suu-shot{% if loop.first %} is-active{% endif %}" src="/assets/scroll/{{ name }}.webp" width="800" height="1734" alt="{{ sc.alts[loop.index0] }}" data-scroll="{{ scroll }}"{% if not loop.first %} loading="lazy"{% endif %} decoding="async">
+{%- endfor %}
+                                <div class="suu-cam" aria-hidden="true">
+                                    <img class="suu-cam-img" src="/assets/scroll/suu-kamera-menu.webp" width="800" height="1640" alt="" loading="lazy" decoding="async">
+                                    <div class="suu-cam-top"></div>
+                                    <div class="suu-cam-bar"><div class="suu-cam-btn">✕</div><div class="suu-cam-pill"><i></i>{{ sc.cam.pill }}</div><div class="suu-cam-btn">⚡</div></div>
+                                    <div class="suu-frame"><span></span><span></span><span></span><span></span><div class="suu-scan"></div></div>
+                                    <div class="suu-tag" data-tag="1" style="left:92px;top:190px">🍕 {{ sc.cam.pizza }} <em>%97</em></div>
+                                    <div class="suu-tag" data-tag="2" style="left:62px">🥤 {{ sc.cam.cola }} <em>%94</em></div>
+                                    <div class="suu-shutter"><div></div></div>
+                                    <div class="suu-sheet">
+                                        <div class="suu-sheet-h"><span>{{ sc.cam.detected }}</span><strong>709 kcal</strong></div>
+                                        <div class="suu-rows"><div><span>🍕 {{ sc.cam.pizza_row }}</span><b>570</b></div><div><span>🥤 {{ sc.cam.cola }}</span><b>139</b></div></div>
+                                        <div class="suu-macro"><div style="flex:24;background:#fb7185"></div><div style="flex:86;background:#fbbf24"></div><div style="flex:26;background:#a78bfa"></div></div>
+                                        <div class="suu-macro-l">{% for m in sc.cam.macro %}<span>{{ m }}</span>{% endfor %}</div>
+                                        <div class="suu-add">{{ sc.cam.add }}</div>
+                                    </div>
+                                </div>
+                                <div class="suu-island"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>

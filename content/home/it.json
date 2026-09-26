@@ -99,7 +99,41 @@
         "link_href": "#egzersiz",
         "link_label": "Metriche dell'allenamento"
       }
-    ]
+    ],
+    "scroll": {
+      "chips": [
+        [
+          "+200 ml d'acqua",
+          "Obiettivo giornaliero 2.800 ml"
+        ],
+        [
+          "📸 Una foto",
+          "709 kcal · macro pronte"
+        ],
+        [
+          "Corsa di 5,2 km",
+          "Obiettivo acqua +350 ml"
+        ]
+      ],
+      "cam": {
+        "pill": "Suu AI · Scanner calorie",
+        "pizza": "Pizza al salame",
+        "cola": "Cola · 330 ml",
+        "pizza_row": "Pizza al salame · 2 fette",
+        "detected": "Pasto rilevato",
+        "add": "Aggiungi al pasto",
+        "macro": [
+          "Proteine 24 g",
+          "Carb 86 g",
+          "Grassi 26 g"
+        ]
+      },
+      "alts": [
+        "Schermata principale di Suu: obiettivo giornaliero di 2.800 ml con anelli nutrizione ed esercizio",
+        "Riepilogo calorie e macro di Suu: obiettivi di calorie, carboidrati, proteine e grassi",
+        "Schermata esercizio di Suu: avvio di una camminata con GPS sulla mappa"
+      ]
+    }
   },
   "calories": {
     "eyebrow": "Calorie e nutrizione",

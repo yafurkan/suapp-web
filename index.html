@@ -82,6 +82,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/donation-widget.css?v=6">
     <link rel="stylesheet" href="/assets/css/suu.css?v=2">
+    <link rel="stylesheet" href="/assets/css/suu-scroll.css?v=1">
 
     <!-- Yapılandırılmış veri — kaynak: content/suu-facts.json -->
     <script type="application/ld+json">
@@ -627,25 +628,64 @@
             <h2>Üç ayrı uygulama değil, birbirini besleyen tek sistem</h2>
             <p>Çoğu uygulama su, kalori ve egzersizi ayrı sekmelerde tutar. Suu&#39;da bunlar birbirini günceller.</p>
         </div>
-        <div class="pillars">
-            <article class="pillar pillar--water">
-                <span class="pillar__icon"><svg width="26" height="26" aria-hidden="true"><use href="#i-water"></use></svg></span>
-                <h3>Su Takibi</h3>
-                <p><strong>91 içecek</strong> — kahve, çay, soda, meyve suyu, süt, enerji içecekleri. Her birinin sıvı dengene gerçek katkısı hesaplanır.</p>
-                <p style="margin-block-start:var(--sp-3)"><a href="#su-hedefi">Akıllı su hedefi nasıl çalışıyor <span class="arrow" aria-hidden="true">→</span></a></p>
-            </article>
-            <article class="pillar pillar--calories">
-                <span class="pillar__icon"><svg width="26" height="26" aria-hidden="true"><use href="#i-flame"></use></svg></span>
-                <h3>Kalori ve Beslenme</h3>
-                <p>Yemeğin <strong>fotoğrafını çek</strong> — Suu AI kalori, protein, karbonhidrat ve yağı çıkarsın, makrolarını otomatik oluştursun.</p>
-                <p style="margin-block-start:var(--sp-3)"><a href="#kalori">Fotoğrafla kalori analizi <span class="arrow" aria-hidden="true">→</span></a></p>
-            </article>
-            <article class="pillar pillar--exercise">
-                <span class="pillar__icon"><svg width="26" height="26" aria-hidden="true"><use href="#i-run"></use></svg></span>
-                <h3>Egzersiz Takibi</h3>
-                <p><strong>GPS ile canlı kayıt</strong> — koşu, yürüyüş, bisiklet. Rotan haritada çizilir, her egzersiz su hedefini otomatik yükseltir.</p>
-                <p style="margin-block-start:var(--sp-3)"><a href="#egzersiz">Egzersiz metrikleri <span class="arrow" aria-hidden="true">→</span></a></p>
-            </article>
+        <div class="suu-features">
+        <div class="suu-scroller">
+            <div class="suu-sticky">
+                <div class="suu-row">
+                    <div class="suu-steps">
+                        <article class="suu-step is-active" style="--c:var(--pillar-water);--ib:var(--pillar-water-soft)">
+                            <div class="suu-bar"></div>
+                            <div class="suu-step-head"><span class="suu-icon"><svg width="24" height="24" aria-hidden="true"><use href="#i-water"></use></svg></span><h3>Su Takibi</h3></div>
+                            <div class="suu-body"><p><strong>91 içecek</strong> — kahve, çay, soda, meyve suyu, süt, enerji içecekleri. Her birinin sıvı dengene gerçek katkısı hesaplanır.</p><a href="#su-hedefi">Akıllı su hedefi nasıl çalışıyor <span class="arrow" aria-hidden="true">→</span></a></div>
+                        </article>
+                        <article class="suu-step" style="--c:var(--pillar-calories);--ib:var(--pillar-calories-soft)">
+                            <div class="suu-bar"></div>
+                            <div class="suu-step-head"><span class="suu-icon"><svg width="24" height="24" aria-hidden="true"><use href="#i-flame"></use></svg></span><h3>Kalori ve Beslenme</h3></div>
+                            <div class="suu-body"><p>Yemeğin <strong>fotoğrafını çek</strong> — Suu AI kalori, protein, karbonhidrat ve yağı çıkarsın, makrolarını otomatik oluştursun.</p><a href="#kalori">Fotoğrafla kalori analizi <span class="arrow" aria-hidden="true">→</span></a></div>
+                        </article>
+                        <article class="suu-step" style="--c:var(--pillar-exercise);--ib:var(--pillar-exercise-soft)">
+                            <div class="suu-bar"></div>
+                            <div class="suu-step-head"><span class="suu-icon"><svg width="24" height="24" aria-hidden="true"><use href="#i-run"></use></svg></span><h3>Egzersiz Takibi</h3></div>
+                            <div class="suu-body"><p><strong>GPS ile canlı kayıt</strong> — koşu, yürüyüş, bisiklet. Rotan haritada çizilir, her egzersiz su hedefini otomatik yükseltir.</p><a href="#egzersiz">Egzersiz metrikleri <span class="arrow" aria-hidden="true">→</span></a></div>
+                        </article>
+                        <div class="suu-dots" aria-hidden="true"><i class="is-active" style="--c:var(--pillar-water)"></i><i style="--c:var(--pillar-calories)"></i><i style="--c:var(--pillar-exercise)"></i></div>
+                    </div>
+                    <div class="suu-phone-wrap">
+                        <div class="suu-glow"></div>
+                        <div class="suu-chip" data-step="0" data-j="0" data-x="-38%" data-y="30%" style="--c:var(--pillar-water)" aria-hidden="true"><b></b>+200 ml su</div>
+                        <div class="suu-chip" data-step="0" data-j="1" data-x="62%" data-y="62%" style="--c:var(--pillar-water)" aria-hidden="true"><b></b>Günlük hedef 2.800 ml</div>
+                        <div class="suu-chip" data-step="1" data-j="0" data-x="-40%" data-y="14%" style="--c:var(--pillar-calories)" aria-hidden="true"><b></b>📸 Tek fotoğraf</div>
+                        <div class="suu-chip" data-step="1" data-j="1" data-x="62%" data-y="40%" style="--c:var(--pillar-calories)" aria-hidden="true"><b></b>709 kcal · makrolar hazır</div>
+                        <div class="suu-chip" data-step="2" data-j="0" data-x="-34%" data-y="40%" style="--c:var(--pillar-exercise)" aria-hidden="true"><b></b>5,2 km koşu</div>
+                        <div class="suu-chip" data-step="2" data-j="1" data-x="60%" data-y="70%" style="--c:var(--pillar-exercise)" aria-hidden="true"><b></b>Su hedefi +350 ml</div>
+                        <div class="suu-phone">
+                            <div class="suu-screen">
+                                <img class="suu-shot is-active" src="/assets/scroll/suu-su.webp" width="800" height="1734" alt="Suu ana ekranı: günlük su hedefi 2.800 ml, beslenme ve egzersiz halkaları" data-scroll="0" decoding="async">
+                                <img class="suu-shot" src="/assets/scroll/suu-kalori.webp" width="800" height="1734" alt="Suu kalori ve makro özeti: kalori, karbonhidrat, protein ve yağ hedefleri" data-scroll="14" loading="lazy" decoding="async">
+                                <img class="suu-shot" src="/assets/scroll/suu-egzersiz.webp" width="800" height="1734" alt="Suu egzersiz ekranı: GPS haritası üzerinde yürüyüş kaydı başlatma" data-scroll="0" loading="lazy" decoding="async">
+                                <div class="suu-cam" aria-hidden="true">
+                                    <img class="suu-cam-img" src="/assets/scroll/suu-kamera-menu.webp" width="800" height="1640" alt="" loading="lazy" decoding="async">
+                                    <div class="suu-cam-top"></div>
+                                    <div class="suu-cam-bar"><div class="suu-cam-btn">✕</div><div class="suu-cam-pill"><i></i>Suu AI · Kalori tarayıcı</div><div class="suu-cam-btn">⚡</div></div>
+                                    <div class="suu-frame"><span></span><span></span><span></span><span></span><div class="suu-scan"></div></div>
+                                    <div class="suu-tag" data-tag="1" style="left:92px;top:190px">🍕 Pepperoni pizza <em>%97</em></div>
+                                    <div class="suu-tag" data-tag="2" style="left:62px">🥤 Kola · 330 ml <em>%94</em></div>
+                                    <div class="suu-shutter"><div></div></div>
+                                    <div class="suu-sheet">
+                                        <div class="suu-sheet-h"><span>Tespit edilen öğün</span><strong>709 kcal</strong></div>
+                                        <div class="suu-rows"><div><span>🍕 Pepperoni pizza · 2 dilim</span><b>570</b></div><div><span>🥤 Kola · 330 ml</span><b>139</b></div></div>
+                                        <div class="suu-macro"><div style="flex:24;background:#fb7185"></div><div style="flex:86;background:#fbbf24"></div><div style="flex:26;background:#a78bfa"></div></div>
+                                        <div class="suu-macro-l"><span>Protein 24 g</span><span>Karb 86 g</span><span>Yağ 26 g</span></div>
+                                        <div class="suu-add">Öğüne ekle</div>
+                                    </div>
+                                </div>
+                                <div class="suu-island"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
         <div class="answer-box" style="margin-block-start:var(--sp-10)">
             <p><strong>Kısa cevap:</strong> Suu, su takibi, fotoğraftan kalori analizi ve GPS&#39;li egzersiz takibini tek uygulamada birleştiren bir sağlık uygulamasıdır. Farkı, bu üçünün birbirine bağlı çalışması: GPS ile kaydedip haritada gördüğün koşu günlük su hedefini yükseltir, yediğin öğünün protein ve sodyum içeriği sindirim için gereken ek suyu belirler, içtiğin kahvenin gerçek hidrasyon katkısı hesaba katılır. iOS ve Android&#39;de ücretsiz, 7 dilde kullanılabilir.</p>
@@ -1254,6 +1294,7 @@
 </script>
 
 <script src="/assets/js/suu-phone-tour.js?v=2" defer></script>
+<script src="/assets/js/suu-scroll.js?v=1" defer></script>
 <script src="/assets/js/suu-badge.js?v=2" defer></script>
 <script src="/assets/js/suu-intro.js?v=2"></script>
 <script>

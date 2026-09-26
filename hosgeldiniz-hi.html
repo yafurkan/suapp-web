@@ -82,6 +82,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&family=Noto+Sans+Devanagari:wght@400..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/donation-widget.css?v=6">
     <link rel="stylesheet" href="/assets/css/suu.css?v=2">
+    <link rel="stylesheet" href="/assets/css/suu-scroll.css?v=1">
 
     <!-- Yapılandırılmış veri — kaynak: content/suu-facts.json -->
     <script type="application/ld+json">
@@ -627,25 +628,64 @@
             <h2>तीन अलग ऐप नहीं — एक ही सिस्टम, जहाँ हर हिस्सा दूसरे को अपडेट करता है</h2>
             <p>ज़्यादातर ऐप पानी, कैलोरी और व्यायाम को अलग-अलग टैब में रखते हैं। Suu में ये एक-दूसरे को अपडेट करते हैं।</p>
         </div>
-        <div class="pillars">
-            <article class="pillar pillar--water">
-                <span class="pillar__icon"><svg width="26" height="26" aria-hidden="true"><use href="#i-water"></use></svg></span>
-                <h3>पानी ट्रैकिंग</h3>
-                <p><strong>91 पेय</strong> — कॉफ़ी, चाय, सोडा, जूस, दूध, एनर्जी ड्रिंक। हर एक का आपके तरल संतुलन में असली योगदान गिना जाता है।</p>
-                <p style="margin-block-start:var(--sp-3)"><a href="#su-hedefi">स्मार्ट पानी लक्ष्य कैसे काम करता है <span class="arrow" aria-hidden="true">→</span></a></p>
-            </article>
-            <article class="pillar pillar--calories">
-                <span class="pillar__icon"><svg width="26" height="26" aria-hidden="true"><use href="#i-flame"></use></svg></span>
-                <h3>कैलोरी और पोषण</h3>
-                <p><strong>खाने की फ़ोटो लीजिए</strong> — Suu AI कैलोरी, प्रोटीन, कार्ब्स और फ़ैट निकालकर आपके मैक्रो अपने आप बनाता है।</p>
-                <p style="margin-block-start:var(--sp-3)"><a href="#kalori">फ़ोटो से कैलोरी विश्लेषण <span class="arrow" aria-hidden="true">→</span></a></p>
-            </article>
-            <article class="pillar pillar--exercise">
-                <span class="pillar__icon"><svg width="26" height="26" aria-hidden="true"><use href="#i-run"></use></svg></span>
-                <h3>व्यायाम ट्रैकिंग</h3>
-                <p><strong>लाइव GPS रिकॉर्डिंग</strong> — दौड़, वॉक, साइकिलिंग। आपका रूट मैप पर बनता है और हर वर्कआउट आपका वॉटर गोल अपने आप बढ़ाता है।</p>
-                <p style="margin-block-start:var(--sp-3)"><a href="#egzersiz">व्यायाम के आँकड़े <span class="arrow" aria-hidden="true">→</span></a></p>
-            </article>
+        <div class="suu-features">
+        <div class="suu-scroller">
+            <div class="suu-sticky">
+                <div class="suu-row">
+                    <div class="suu-steps">
+                        <article class="suu-step is-active" style="--c:var(--pillar-water);--ib:var(--pillar-water-soft)">
+                            <div class="suu-bar"></div>
+                            <div class="suu-step-head"><span class="suu-icon"><svg width="24" height="24" aria-hidden="true"><use href="#i-water"></use></svg></span><h3>पानी ट्रैकिंग</h3></div>
+                            <div class="suu-body"><p><strong>91 पेय</strong> — कॉफ़ी, चाय, सोडा, जूस, दूध, एनर्जी ड्रिंक। हर एक का आपके तरल संतुलन में असली योगदान गिना जाता है।</p><a href="#su-hedefi">स्मार्ट पानी लक्ष्य कैसे काम करता है <span class="arrow" aria-hidden="true">→</span></a></div>
+                        </article>
+                        <article class="suu-step" style="--c:var(--pillar-calories);--ib:var(--pillar-calories-soft)">
+                            <div class="suu-bar"></div>
+                            <div class="suu-step-head"><span class="suu-icon"><svg width="24" height="24" aria-hidden="true"><use href="#i-flame"></use></svg></span><h3>कैलोरी और पोषण</h3></div>
+                            <div class="suu-body"><p><strong>खाने की फ़ोटो लीजिए</strong> — Suu AI कैलोरी, प्रोटीन, कार्ब्स और फ़ैट निकालकर आपके मैक्रो अपने आप बनाता है।</p><a href="#kalori">फ़ोटो से कैलोरी विश्लेषण <span class="arrow" aria-hidden="true">→</span></a></div>
+                        </article>
+                        <article class="suu-step" style="--c:var(--pillar-exercise);--ib:var(--pillar-exercise-soft)">
+                            <div class="suu-bar"></div>
+                            <div class="suu-step-head"><span class="suu-icon"><svg width="24" height="24" aria-hidden="true"><use href="#i-run"></use></svg></span><h3>व्यायाम ट्रैकिंग</h3></div>
+                            <div class="suu-body"><p><strong>लाइव GPS रिकॉर्डिंग</strong> — दौड़, वॉक, साइकिलिंग। आपका रूट मैप पर बनता है और हर वर्कआउट आपका वॉटर गोल अपने आप बढ़ाता है।</p><a href="#egzersiz">व्यायाम के आँकड़े <span class="arrow" aria-hidden="true">→</span></a></div>
+                        </article>
+                        <div class="suu-dots" aria-hidden="true"><i class="is-active" style="--c:var(--pillar-water)"></i><i style="--c:var(--pillar-calories)"></i><i style="--c:var(--pillar-exercise)"></i></div>
+                    </div>
+                    <div class="suu-phone-wrap">
+                        <div class="suu-glow"></div>
+                        <div class="suu-chip" data-step="0" data-j="0" data-x="-38%" data-y="30%" style="--c:var(--pillar-water)" aria-hidden="true"><b></b>+200 ml पानी</div>
+                        <div class="suu-chip" data-step="0" data-j="1" data-x="62%" data-y="62%" style="--c:var(--pillar-water)" aria-hidden="true"><b></b>दैनिक लक्ष्य 2,800 ml</div>
+                        <div class="suu-chip" data-step="1" data-j="0" data-x="-40%" data-y="14%" style="--c:var(--pillar-calories)" aria-hidden="true"><b></b>📸 एक फ़ोटो</div>
+                        <div class="suu-chip" data-step="1" data-j="1" data-x="62%" data-y="40%" style="--c:var(--pillar-calories)" aria-hidden="true"><b></b>709 kcal · मैक्रो तैयार</div>
+                        <div class="suu-chip" data-step="2" data-j="0" data-x="-34%" data-y="40%" style="--c:var(--pillar-exercise)" aria-hidden="true"><b></b>5.2 km दौड़</div>
+                        <div class="suu-chip" data-step="2" data-j="1" data-x="60%" data-y="70%" style="--c:var(--pillar-exercise)" aria-hidden="true"><b></b>पानी लक्ष्य +350 ml</div>
+                        <div class="suu-phone">
+                            <div class="suu-screen">
+                                <img class="suu-shot is-active" src="/assets/scroll/suu-su.webp" width="800" height="1734" alt="Suu होम स्क्रीन: 2,800 ml दैनिक पानी लक्ष्य, पोषण और व्यायाम रिंग के साथ" data-scroll="0" decoding="async">
+                                <img class="suu-shot" src="/assets/scroll/suu-kalori.webp" width="800" height="1734" alt="Suu कैलोरी और मैक्रो सारांश: कैलोरी, कार्ब्स, प्रोटीन और फ़ैट लक्ष्य" data-scroll="14" loading="lazy" decoding="async">
+                                <img class="suu-shot" src="/assets/scroll/suu-egzersiz.webp" width="800" height="1734" alt="Suu व्यायाम स्क्रीन: मैप पर GPS वॉक शुरू करना" data-scroll="0" loading="lazy" decoding="async">
+                                <div class="suu-cam" aria-hidden="true">
+                                    <img class="suu-cam-img" src="/assets/scroll/suu-kamera-menu.webp" width="800" height="1640" alt="" loading="lazy" decoding="async">
+                                    <div class="suu-cam-top"></div>
+                                    <div class="suu-cam-bar"><div class="suu-cam-btn">✕</div><div class="suu-cam-pill"><i></i>Suu AI · कैलोरी स्कैनर</div><div class="suu-cam-btn">⚡</div></div>
+                                    <div class="suu-frame"><span></span><span></span><span></span><span></span><div class="suu-scan"></div></div>
+                                    <div class="suu-tag" data-tag="1" style="left:92px;top:190px">🍕 पेपरोनी पिज़्ज़ा <em>%97</em></div>
+                                    <div class="suu-tag" data-tag="2" style="left:62px">🥤 कोला · 330 ml <em>%94</em></div>
+                                    <div class="suu-shutter"><div></div></div>
+                                    <div class="suu-sheet">
+                                        <div class="suu-sheet-h"><span>पहचाना गया भोजन</span><strong>709 kcal</strong></div>
+                                        <div class="suu-rows"><div><span>🍕 पेपरोनी पिज़्ज़ा · 2 स्लाइस</span><b>570</b></div><div><span>🥤 कोला · 330 ml</span><b>139</b></div></div>
+                                        <div class="suu-macro"><div style="flex:24;background:#fb7185"></div><div style="flex:86;background:#fbbf24"></div><div style="flex:26;background:#a78bfa"></div></div>
+                                        <div class="suu-macro-l"><span>प्रोटीन 24 g</span><span>कार्ब्स 86 g</span><span>फ़ैट 26 g</span></div>
+                                        <div class="suu-add">भोजन में जोड़ें</div>
+                                    </div>
+                                </div>
+                                <div class="suu-island"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
         <div class="answer-box" style="margin-block-start:var(--sp-10)">
             <p><strong>संक्षिप्त उत्तर:</strong> Suu एक हेल्थ ऐप है जो पानी ट्रैकिंग, फ़ोटो से कैलोरी विश्लेषण और लाइव GPS व्यायाम ट्रैकिंग को एक ही ऐप में जोड़ता है। ख़ासियत यह है कि तीनों आपस में जुड़े हैं: GPS से दर्ज और मैप पर दिखने वाली आपकी दौड़ दैनिक पानी लक्ष्य बढ़ाती है, आपके भोजन का प्रोटीन और सोडियम पाचन के लिए ज़रूरी अतिरिक्त पानी तय करता है, और आपकी पी गई कॉफ़ी का असली हाइड्रेशन योगदान गिना जाता है। iOS और Android पर मुफ़्त, 7 भाषाओं में उपलब्ध।</p>
@@ -1251,6 +1291,7 @@
 </script>
 
 <script src="/assets/js/suu-phone-tour.js?v=2" defer></script>
+<script src="/assets/js/suu-scroll.js?v=1" defer></script>
 <script src="/assets/js/suu-badge.js?v=2" defer></script>
 <script src="/assets/js/suu-intro.js?v=2"></script>
 <script>
