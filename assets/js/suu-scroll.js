@@ -18,12 +18,35 @@
     var frame = q('.suu-frame'), scan = q('.suu-scan'), t1 = q('[data-tag="1"]'), t2 = q('[data-tag="2"]'), shutter = q('.suu-shutter'), sheet = q('.suu-sheet');
     var rtl = getComputedStyle(root).direction === 'rtl';
     var N = steps.length, raf = 0, navH = 0, stickyH = 0;
+    // Bölüm yapışıkken: kısa ekranda (iPhone SE) alt mağaza çubuğu kayar, yer açar
+    var short = window.matchMedia('(max-width:768px) and (max-height:620px)');
+    var phoneMq = window.matchMedia('(max-width:768px)');
+    function pin(on) {
+      document.body.classList.toggle('suu-pinned', on && short.matches);
+      // Mobilde yüzen bağış rozeti kartın metninin üstüne biniyor; bölümde gizlenir
+      document.body.classList.toggle('suu-in-scroll', on && phoneMq.matches);
+    }
 
     function layout() {
       navH = parseFloat(getComputedStyle(sticky).top) || 0;
       stickyH = sticky.clientHeight;
       var w = document.documentElement.clientWidth, h = stickyH, mobile = w < 860;
-      var ph = mobile ? Math.min(472, w * 0.58 * 2.05, h * 0.5) : Math.min(656, h * 0.86 - 40);
+      var ph;
+      if (mobile) {
+        // Telefon, en uzun kart + noktalar sığdıktan sonra kalan yere göre
+        // boylanır; kısa ekranlarda (14 Pro Max, SE) kart kesilmesin.
+        var cardH = 0;
+        steps.forEach(function (s) {
+          var d = s.style.display; s.style.display = 'block';
+          cardH = Math.max(cardH, s.offsetHeight); s.style.display = d;
+        });
+        var dotsH = dots.length ? dots[0].parentNode.offsetHeight + 10 : 0;
+        var gap = parseFloat(getComputedStyle(root.querySelector('.suu-row')).rowGap) || 22;
+        ph = Math.min(472, w * 0.58 * 2.05, h - cardH - dotsH - gap - 24);
+        ph = Math.max(ph, 200);
+      } else {
+        ph = Math.min(656, h * 0.86 - 40);
+      }
       ph = Math.round(ph); var pw = Math.round(ph / 2.05), k = pw / 320;
       wrap.style.setProperty('--pw', pw + 'px'); wrap.style.setProperty('--ph', ph + 'px'); wrap.style.setProperty('--k', k);
       var bez = 10 * k, iw = pw - 2 * bez, ih = ph - 2 * bez;
@@ -50,6 +73,7 @@
       raf = 0;
       var r = scroller.getBoundingClientRect();
       var p = Math.min(1, Math.max(0, (navH - r.top) / total()));
+      pin(r.top <= navH + 1 && r.bottom >= navH + stickyH - 1);
       var pos = Math.min(N - 0.0001, p * N), a = Math.floor(pos), local = pos - a;
 
       steps.forEach(function (s, i) {
@@ -93,7 +117,7 @@
     new IntersectionObserver(function (en) {
       var v = en[0].isIntersecting;
       if (v && !active) { window.addEventListener('scroll', req, { passive: true }); active = true; req(); }
-      if (!v && active) { window.removeEventListener('scroll', req); active = false; }
+      if (!v && active) { window.removeEventListener('scroll', req); active = false; pin(false); }
     }, { rootMargin: '200px 0px' }).observe(scroller);
     window.addEventListener('resize', function () { mobile = layout(); req(); });
     update();
