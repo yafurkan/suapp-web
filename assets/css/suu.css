@@ -1094,6 +1094,13 @@ body.lbox-open { overflow: hidden; }
     border-block-start: 1px solid var(--border);
 }
 .sticky-cta .btn { flex: 1; min-height: 46px; font-size: var(--fs-sm); }
+.sticky-cta .btn { gap: var(--sp-2); min-width: 0; }
+.sticky-cta__logo { flex-shrink: 0; }
+/* Play logosu mavi butonda kaybolmasın: beyaz zemin, orijinal renkler */
+.sticky-cta__logo--play {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 24px; height: 24px; border-radius: 6px; background: #fff;
+}
 
 @media (max-width: 768px) {
     .sticky-cta { display: flex; }

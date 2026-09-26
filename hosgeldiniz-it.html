@@ -81,8 +81,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/donation-widget.css?v=6">
-    <link rel="stylesheet" href="/assets/css/suu.css?v=2">
-    <link rel="stylesheet" href="/assets/css/suu-scroll.css?v=1">
+    <link rel="stylesheet" href="/assets/css/suu.css?v=3">
+    <link rel="stylesheet" href="/assets/css/suu-scroll.css?v=2">
 
     <!-- Yapılandırılmış veri — kaynak: content/suu-facts.json -->
     <script type="application/ld+json">
@@ -518,6 +518,7 @@
     <symbol id="i-camera" viewBox="0 0 24 24" fill="currentColor"><path d="M9.5 3.5 8.2 5.5H4.5A2.5 2.5 0 0 0 2 8v10a2.5 2.5 0 0 0 2.5 2.5h15A2.5 2.5 0 0 0 22 18V8a2.5 2.5 0 0 0-2.5-2.5h-3.7l-1.3-2h-5zM12 17.5a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2.2a2.8 2.8 0 1 0 0-5.6 2.8 2.8 0 0 0 0 5.6z"/></symbol>
     <symbol id="i-chat" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5c-5.5 0-10 3.6-10 8 0 2.5 1.4 4.7 3.6 6.2L4.4 21l4.5-2.2c1 .2 2 .4 3.1.4 5.5 0 10-3.6 10-8s-4.5-8.7-10-8.7z"/></symbol>
     <symbol id="i-apple" viewBox="0 0 24 24" fill="currentColor"><path d="M17.56 12.3c-.03-3.06 2.5-4.53 2.61-4.6-1.42-2.08-3.63-2.37-4.42-2.4-1.88-.19-3.67 1.11-4.63 1.11-.95 0-2.42-1.08-3.98-1.05-2.05.03-3.94 1.19-4.99 3.03-2.13 3.69-.54 9.15 1.53 12.14 1.01 1.46 2.21 3.1 3.79 3.04 1.52-.06 2.09-.98 3.93-.98 1.83 0 2.36.98 3.97.95 1.64-.03 2.68-1.49 3.68-2.96 1.16-1.7 1.64-3.35 1.67-3.43-.04-.02-3.2-1.23-3.23-4.87M14.5 3.7c.84-1.02 1.4-2.43 1.25-3.84-1.21.05-2.67.81-3.53 1.82-.77.9-1.45 2.34-1.27 3.72 1.35.1 2.72-.69 3.55-1.7"/></symbol>
+    <symbol id="i-gplay" viewBox="0 0 24 24"><path fill="#00A0FF" d="M3.6 1.8 13.8 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1z"/><path fill="#34A853" d="M3.6 1.8c.4-.2.8-.2 1.2 0l12.1 7L13.8 12z"/><path fill="#EA4335" d="M3.6 22.2 13.8 12l3.1 3.2-12.1 7c-.4.2-.8.2-1.2 0z"/><path fill="#FBBC04" d="m16.9 8.8 3.5 2c.9.5.9 1.9 0 2.4l-3.5 2-3.1-3.2z"/></symbol>
     <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
 </svg>
 
@@ -529,8 +530,6 @@
         </a>
         <ul class="nav__links" id="navLinks">
             <li><a href="#pillars">Funzioni</a></li>
-            <li><a href="#kalori">Calorie</a></li>
-            <li><a href="#egzersiz">Esercizio</a></li>
             <li><a href="#ekranlar">Schermate</a></li>
             <li><a href="#karsilastirma">Confronto</a></li>
             <li><a href="#fiyat">Prezzi</a></li>
@@ -641,12 +640,12 @@
                         <article class="suu-step" style="--c:var(--pillar-calories);--ib:var(--pillar-calories-soft)">
                             <div class="suu-bar"></div>
                             <div class="suu-step-head"><span class="suu-icon"><svg width="24" height="24" aria-hidden="true"><use href="#i-flame"></use></svg></span><h3>Calorie e nutrizione</h3></div>
-                            <div class="suu-body"><p><strong>Fotografa il pasto</strong> — Suu AI estrae calorie, proteine, carboidrati e grassi e costruisce le tue macro automaticamente.</p><a href="#kalori">Analisi calorie dalla foto <span class="arrow" aria-hidden="true">→</span></a></div>
+                            <div class="suu-body"><p><strong>Fotografa il pasto</strong> — Suu AI estrae calorie, proteine, carboidrati e grassi e costruisce le tue macro automaticamente.</p></div>
                         </article>
                         <article class="suu-step" style="--c:var(--pillar-exercise);--ib:var(--pillar-exercise-soft)">
                             <div class="suu-bar"></div>
                             <div class="suu-step-head"><span class="suu-icon"><svg width="24" height="24" aria-hidden="true"><use href="#i-run"></use></svg></span><h3>Tracciamento esercizio</h3></div>
-                            <div class="suu-body"><p><strong>Registrazione GPS in tempo reale</strong> — corsa, camminata, ciclismo. Il percorso viene disegnato sulla mappa e ogni allenamento alza automaticamente il tuo obiettivo idrico.</p><a href="#egzersiz">Metriche dell&#39;allenamento <span class="arrow" aria-hidden="true">→</span></a></div>
+                            <div class="suu-body"><p><strong>Registrazione GPS in tempo reale</strong> — corsa, camminata, ciclismo. Il percorso viene disegnato sulla mappa e ogni allenamento alza automaticamente il tuo obiettivo idrico.</p></div>
                         </article>
                         <div class="suu-dots" aria-hidden="true"><i class="is-active" style="--c:var(--pillar-water)"></i><i style="--c:var(--pillar-calories)"></i><i style="--c:var(--pillar-exercise)"></i></div>
                     </div>
@@ -693,37 +692,6 @@
     </div>
 </section>
 
-<!-- KALORİ -->
-<section class="section" id="kalori" data-cta="kalori">
-    <div class="container">
-        <div class="section-head">
-            <span class="eyebrow">Calorie e nutrizione</span>
-            <h2>Per contare le calorie non serve pesare il piatto</h2>
-            <p>Scatta la foto — al resto pensa Suu AI.</p>
-        </div>
-        <div class="cards">
-            <article class="card">
-                <div class="card__icon" style="color:var(--pillar-calories)"><svg width="30" height="30" aria-hidden="true"><use href="#i-camera"></use></svg></div>
-                <h3>Analisi dalla foto</h3>
-                <p>Fotografa il pasto: calorie, proteine, carboidrati e grassi vengono estratti e le macro costruite automaticamente. La tua foto non viene conservata in modo permanente.</p>
-            </article>
-            <article class="card">
-                <div class="card__icon" style="color:var(--pillar-calories)">🎙️</div>
-                <h3>Inserimento vocale o testuale</h3>
-                <p>«A pranzo insalata di pollo e un bicchiere di ayran» — dillo e viene registrato in pochi secondi. Il parlato viene convertito in testo sul dispositivo, non inviato a un server.</p>
-            </article>
-            <article class="card">
-                <div class="card__icon" style="color:var(--pillar-calories)">📊</div>
-                <h3>Macro e punteggio nutrizionale</h3>
-                <p>Monitoraggio quotidiano di calorie, proteine, carboidrati e grassi. Un punteggio nutrizionale da 1 a 100 mostra l&#39;equilibrio della giornata a colpo d&#39;occhio.</p>
-            </article>
-        </div>
-        <div class="callout" style="margin-block-start:var(--sp-8)">
-            <p><strong>Nel piano gratuito</strong> hai 3 analisi IA al giorno. L'analisi dalla foto e l'uso illimitato fanno parte di Premium — <a href="#fiyat">provabile 3 giorni gratis</a>.</p>
-        </div>
-    </div>
-</section>
-
 <!-- SUU AI -->
 <section class="section section--subtle" id="suu-ai">
     <div class="container">
@@ -747,59 +715,6 @@
                 <div class="card__icon" style="color:var(--pillar-water)">⚙️</div>
                 <h3>«Aggiorna il mio obiettivo d&#39;acqua»</h3>
                 <p>Anche obiettivi e promemoria intelligenti si regolano dalla chat.</p>
-            </article>
-        </div>
-    </div>
-</section>
-
-<!-- EGZERSİZ -->
-<section class="section" id="egzersiz">
-    <div class="container">
-        <div class="section-head">
-            <span class="eyebrow">Tracciamento esercizio</span>
-            <h2>Tracciamento GPS degli allenamenti in tempo reale — tutto legato al tuo obiettivo idrico</h2>
-            <p>Corsa, camminata, ciclismo, fitness, nuoto, escursionismo, cardio e altro — circa 50 attività.</p>
-        </div>
-        <div class="cards">
-            <article class="card">
-                <div class="card__icon" style="color:var(--pillar-exercise)">📍</div>
-                <h3>Tracciamento GPS in tempo reale</h3>
-                <p>Avvia, metti in pausa, termina. Distanza, durata e passo si aggiornano dal vivo durante la sessione e il percorso viene disegnato sulla mappa.</p>
-                <div class="metrics">
-                    <span class="metric"><span class="metric__label">Distanza live</span></span>
-                    <span class="metric"><span class="metric__label">Passo in tempo reale</span></span>
-                    <span class="metric"><span class="metric__label">Durata</span></span>
-                    <span class="metric"><span class="metric__label">Mappa del percorso</span></span>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card__icon" style="color:var(--pillar-exercise)"><svg width="30" height="30" aria-hidden="true"><use href="#i-run"></use></svg></div>
-                <h3>Corsa e camminata</h3>
-                <p>A fine allenamento il percorso è sulla mappa e ogni dettaglio su una sola schermata.</p>
-                <div class="metrics">
-                    <span class="metric"><span class="metric__label">Distanza</span></span>
-                    <span class="metric"><span class="metric__label">Durata</span></span>
-                    <span class="metric"><span class="metric__label">Passo</span></span>
-                    <span class="metric"><span class="metric__label">Velocità media</span></span>
-                    <span class="metric"><span class="metric__label">Calorie bruciate</span></span>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card__icon" style="color:var(--pillar-exercise)">🚴</div>
-                <h3>Bici</h3>
-                <p>Statistiche dettagliate incluso il profilo altimetrico del percorso.</p>
-                <div class="metrics">
-                    <span class="metric"><span class="metric__label">Velocità</span></span>
-                    <span class="metric"><span class="metric__label">Velocità media</span></span>
-                    <span class="metric"><span class="metric__label">Distanza</span></span>
-                    <span class="metric"><span class="metric__label">Dislivello</span></span>
-                    <span class="metric"><span class="metric__label">Durata</span></span>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card__icon" style="color:var(--pillar-exercise)">💧</div>
-                <h3>Esercizio → obiettivo d&#39;acqua</h3>
-                <p>Il liquido perso con il sudore viene stimato e l&#39;obiettivo giornaliero sale automaticamente. Finito l&#39;allenamento non devi regolare nulla a mano.</p>
             </article>
         </div>
     </div>
@@ -1265,8 +1180,8 @@
 </footer>
 
 <div class="sticky-cta" data-cta="sticky">
-    <a href="/app?src=sticky" class="btn btn--secondary">App Store</a>
-    <a href="/app?src=sticky" class="btn btn--primary">Google Play</a>
+    <a href="/app?src=sticky" class="btn btn--secondary"><svg class="sticky-cta__logo" width="20" height="20" aria-hidden="true"><use href="#i-apple"></use></svg>App Store</a>
+    <a href="/app?src=sticky" class="btn btn--primary"><span class="sticky-cta__logo sticky-cta__logo--play"><svg width="16" height="16" aria-hidden="true"><use href="#i-gplay"></use></svg></span>Google Play</a>
 </div>
 
 <script>
@@ -1291,7 +1206,7 @@
 </script>
 
 <script src="/assets/js/suu-phone-tour.js?v=2" defer></script>
-<script src="/assets/js/suu-scroll.js?v=1" defer></script>
+<script src="/assets/js/suu-scroll.js?v=2" defer></script>
 <script src="/assets/js/suu-badge.js?v=2" defer></script>
 <script src="/assets/js/suu-intro.js?v=2"></script>
 <script>

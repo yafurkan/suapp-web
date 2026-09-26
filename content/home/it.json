@@ -25,14 +25,6 @@
         "label": "Funzioni"
       },
       {
-        "href": "#kalori",
-        "label": "Calorie"
-      },
-      {
-        "href": "#egzersiz",
-        "label": "Esercizio"
-      },
-      {
         "href": "#ekranlar",
         "label": "Schermate"
       },
@@ -87,17 +79,13 @@
         "id": "calories",
         "icon": "flame",
         "title": "Calorie e nutrizione",
-        "body": "<strong>Fotografa il pasto</strong> — Suu AI estrae calorie, proteine, carboidrati e grassi e costruisce le tue macro automaticamente.",
-        "link_href": "#kalori",
-        "link_label": "Analisi calorie dalla foto"
+        "body": "<strong>Fotografa il pasto</strong> — Suu AI estrae calorie, proteine, carboidrati e grassi e costruisce le tue macro automaticamente."
       },
       {
         "id": "exercise",
         "icon": "run",
         "title": "Tracciamento esercizio",
-        "body": "<strong>Registrazione GPS in tempo reale</strong> — corsa, camminata, ciclismo. Il percorso viene disegnato sulla mappa e ogni allenamento alza automaticamente il tuo obiettivo idrico.",
-        "link_href": "#egzersiz",
-        "link_label": "Metriche dell'allenamento"
+        "body": "<strong>Registrazione GPS in tempo reale</strong> — corsa, camminata, ciclismo. Il percorso viene disegnato sulla mappa e ogni allenamento alza automaticamente il tuo obiettivo idrico."
       }
     ],
     "scroll": {
@@ -135,29 +123,6 @@
       ]
     }
   },
-  "calories": {
-    "eyebrow": "Calorie e nutrizione",
-    "head": "Per contare le calorie non serve pesare il piatto",
-    "sub": "Scatta la foto — al resto pensa Suu AI.",
-    "callout": "<strong>Nel piano gratuito</strong> hai 3 analisi IA al giorno. L'analisi dalla foto e l'uso illimitato fanno parte di Premium — <a href=\"#fiyat\">provabile 3 giorni gratis</a>.",
-    "items": [
-      {
-        "icon": "camera",
-        "title": "Analisi dalla foto",
-        "body": "Fotografa il pasto: calorie, proteine, carboidrati e grassi vengono estratti e le macro costruite automaticamente. La tua foto non viene conservata in modo permanente."
-      },
-      {
-        "emoji": "🎙️",
-        "title": "Inserimento vocale o testuale",
-        "body": "«A pranzo insalata di pollo e un bicchiere di ayran» — dillo e viene registrato in pochi secondi. Il parlato viene convertito in testo sul dispositivo, non inviato a un server."
-      },
-      {
-        "emoji": "📊",
-        "title": "Macro e punteggio nutrizionale",
-        "body": "Monitoraggio quotidiano di calorie, proteine, carboidrati e grassi. Un punteggio nutrizionale da 1 a 100 mostra l'equilibrio della giornata a colpo d'occhio."
-      }
-    ]
-  },
   "suu_ai": {
     "head": "Gestisci l'app parlando",
     "sub": "Invece di navigare tra i menu, di' semplicemente cosa ti serve.",
@@ -176,53 +141,6 @@
         "emoji": "⚙️",
         "title": "«Aggiorna il mio obiettivo d'acqua»",
         "body": "Anche obiettivi e promemoria intelligenti si regolano dalla chat."
-      }
-    ]
-  },
-  "exercise": {
-    "eyebrow": "Tracciamento esercizio",
-    "head": "Tracciamento GPS degli allenamenti in tempo reale — tutto legato al tuo obiettivo idrico",
-    "sub": "Corsa, camminata, ciclismo, fitness, nuoto, escursionismo, cardio e altro — circa 50 attività.",
-    "items": [
-      {
-        "emoji": "📍",
-        "title": "Tracciamento GPS in tempo reale",
-        "body": "Avvia, metti in pausa, termina. Distanza, durata e passo si aggiornano dal vivo durante la sessione e il percorso viene disegnato sulla mappa.",
-        "metrics": [
-          "Distanza live",
-          "Passo in tempo reale",
-          "Durata",
-          "Mappa del percorso"
-        ]
-      },
-      {
-        "icon": "run",
-        "title": "Corsa e camminata",
-        "body": "A fine allenamento il percorso è sulla mappa e ogni dettaglio su una sola schermata.",
-        "metrics": [
-          "Distanza",
-          "Durata",
-          "Passo",
-          "Velocità media",
-          "Calorie bruciate"
-        ]
-      },
-      {
-        "emoji": "🚴",
-        "title": "Bici",
-        "body": "Statistiche dettagliate incluso il profilo altimetrico del percorso.",
-        "metrics": [
-          "Velocità",
-          "Velocità media",
-          "Distanza",
-          "Dislivello",
-          "Durata"
-        ]
-      },
-      {
-        "emoji": "💧",
-        "title": "Esercizio → obiettivo d'acqua",
-        "body": "Il liquido perso con il sudore viene stimato e l'obiettivo giornaliero sale automaticamente. Finito l'allenamento non devi regolare nulla a mano."
       }
     ]
   },

@@ -3,6 +3,9 @@
    kamera sahnesi cihaz olduğu için her temada koyu kalır.
    Sadece transform ve opacity anime edilir; layout tetiklenmez. */
 .suu-features *{box-sizing:border-box}
+/* Taşan çip/ışık sayfayı genişletmesin (iOS Safari html'deki overflow-x:clip'e güvenmez).
+   clip kaydırma kabı oluşturmaz → sticky bozulmaz. */
+#pillars{overflow-x:clip}
 
 .suu-scroller{position:relative;height:300vh}
 .suu-sticky{position:sticky;top:var(--nav-h);height:calc(100vh - var(--nav-h));display:flex;align-items:flex-start;justify-content:center;overflow-y:clip;padding-block-start:clamp(16px,4vh,40px)}
@@ -82,6 +85,8 @@
 /* Mobil */
 @media (max-width:859px){
   .suu-scroller{height:330vh}
+  .suu-sticky{align-items:center;padding-block-start:0}
+  .suu-glow{width:100vw;height:100vw;margin:-50vw 0 0 -50vw}
   .suu-row{flex-direction:column-reverse;gap:22px}
   .suu-steps{max-width:560px;gap:10px;width:100%}
   .suu-step{display:none;padding:16px 18px 14px;transform:none}

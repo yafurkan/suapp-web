@@ -12,7 +12,7 @@
                         <article class="suu-step{% if loop.first %} is-active{% endif %}" style="--c:var(--pillar-{{ p.id }});--ib:var(--pillar-{{ p.id }}-soft)">
                             <div class="suu-bar"></div>
                             <div class="suu-step-head"><span class="suu-icon"><svg width="24" height="24" aria-hidden="true"><use href="#i-{{ p.icon }}"></use></svg></span><h3>{{ p.title }}</h3></div>
-                            <div class="suu-body"><p>{{ p.body | safe }}</p><a href="{{ p.link_href }}">{{ p.link_label }} <span class="arrow" aria-hidden="true">→</span></a></div>
+                            <div class="suu-body"><p>{{ p.body | safe }}</p>{% if p.get('link_href') %}<a href="{{ p.link_href }}">{{ p.link_label }} <span class="arrow" aria-hidden="true">→</span></a>{% endif %}</div>
                         </article>
 {%- endfor %}
                         <div class="suu-dots" aria-hidden="true">

@@ -22,7 +22,7 @@
     function layout() {
       navH = parseFloat(getComputedStyle(sticky).top) || 0;
       stickyH = sticky.clientHeight;
-      var w = window.innerWidth, h = stickyH, mobile = w < 860;
+      var w = document.documentElement.clientWidth, h = stickyH, mobile = w < 860;
       var ph = mobile ? Math.min(472, w * 0.58 * 2.05, h * 0.5) : Math.min(656, h * 0.86 - 40);
       ph = Math.round(ph); var pw = Math.round(ph / 2.05), k = pw / 320;
       wrap.style.setProperty('--pw', pw + 'px'); wrap.style.setProperty('--ph', ph + 'px'); wrap.style.setProperty('--k', k);

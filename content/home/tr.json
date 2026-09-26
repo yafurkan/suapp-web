@@ -24,14 +24,6 @@
         "label": "Özellikler"
       },
       {
-        "href": "#kalori",
-        "label": "Kalori"
-      },
-      {
-        "href": "#egzersiz",
-        "label": "Egzersiz"
-      },
-      {
         "href": "#ekranlar",
         "label": "Ekranlar"
       },
@@ -86,17 +78,13 @@
         "id": "calories",
         "icon": "flame",
         "title": "Kalori ve Beslenme",
-        "body": "Yemeğin <strong>fotoğrafını çek</strong> — Suu AI kalori, protein, karbonhidrat ve yağı çıkarsın, makrolarını otomatik oluştursun.",
-        "link_href": "#kalori",
-        "link_label": "Fotoğrafla kalori analizi"
+        "body": "Yemeğin <strong>fotoğrafını çek</strong> — Suu AI kalori, protein, karbonhidrat ve yağı çıkarsın, makrolarını otomatik oluştursun."
       },
       {
         "id": "exercise",
         "icon": "run",
         "title": "Egzersiz Takibi",
-        "body": "<strong>GPS ile canlı kayıt</strong> — koşu, yürüyüş, bisiklet. Rotan haritada çizilir, her egzersiz su hedefini otomatik yükseltir.",
-        "link_href": "#egzersiz",
-        "link_label": "Egzersiz metrikleri"
+        "body": "<strong>GPS ile canlı kayıt</strong> — koşu, yürüyüş, bisiklet. Rotan haritada çizilir, her egzersiz su hedefini otomatik yükseltir."
       }
     ],
     "scroll": {
@@ -134,29 +122,6 @@
       ]
     }
   },
-  "calories": {
-    "eyebrow": "Kalori ve Beslenme",
-    "head": "Kalori saymak için tabağını tartmana gerek yok",
-    "sub": "Fotoğrafı çek — gerisini Suu AI halletsin.",
-    "callout": "<strong>Ücretsiz planda</strong> günde 3 AI analizi hakkın var. Fotoğrafla analiz ve sınırsız kullanım Premium'a dahildir — <a href=\"#fiyat\">3 gün ücretsiz denenebilir</a>.",
-    "items": [
-      {
-        "icon": "camera",
-        "title": "Fotoğrafla analiz",
-        "body": "Öğününün fotoğrafını çek; kalori, protein, karbonhidrat ve yağ değerleri çıkarılsın, makroların otomatik oluşsun. Fotoğrafın kalıcı olarak saklanmaz."
-      },
-      {
-        "emoji": "🎙️",
-        "title": "Sesli veya yazılı giriş",
-        "body": "“Öğle yemeğinde tavuklu salata ve bir bardak ayran” — söyle, saniyeler içinde kaydedilsin. Ses cihazında metne çevrilir, sunucuya gönderilmez."
-      },
-      {
-        "emoji": "📊",
-        "title": "Makro ve beslenme puanı",
-        "body": "Günlük kalori, protein, karbonhidrat ve yağ takibi. 1–100 arası beslenme puanıyla günün dengesini tek bakışta gör."
-      }
-    ]
-  },
   "suu_ai": {
     "head": "Uygulamayı konuşarak yönet",
     "sub": "Menülerde gezinmek yerine ne istediğini söyle.",
@@ -175,53 +140,6 @@
         "emoji": "⚙️",
         "title": "“Su hedefimi güncelle”",
         "body": "Hedefler ve akıllı hatırlatıcılar da sohbetten düzenlenir."
-      }
-    ]
-  },
-  "exercise": {
-    "eyebrow": "Egzersiz Takibi",
-    "head": "GPS ile canlı antrenman kaydı — ve hepsi su hedefine bağlı",
-    "sub": "Koşu, yürüyüş, bisiklet, fitness, yüzme, doğa yürüyüşü, kardiyo ve daha fazlası — yaklaşık 50 aktivite.",
-    "items": [
-      {
-        "emoji": "📍",
-        "title": "GPS ile canlı takip",
-        "body": "Başlat, duraklat, bitir. Mesafe, süre ve tempo antrenman sırasında anlık akar; rotan haritada çizilir.",
-        "metrics": [
-          "Canlı mesafe",
-          "Anlık tempo",
-          "Süre",
-          "Harita rotası"
-        ]
-      },
-      {
-        "icon": "run",
-        "title": "Koşu ve yürüyüş",
-        "body": "Antrenman bitince rotan harita üzerinde, tüm ayrıntılar tek ekranda.",
-        "metrics": [
-          "Mesafe",
-          "Süre",
-          "Tempo",
-          "Ort. hız",
-          "Yakılan kalori"
-        ]
-      },
-      {
-        "emoji": "🚴",
-        "title": "Bisiklet",
-        "body": "Rota profilini de kapsayan ayrıntılı istatistikler.",
-        "metrics": [
-          "Hız",
-          "Ort. hız",
-          "Mesafe",
-          "İrtifa",
-          "Süre"
-        ]
-      },
-      {
-        "emoji": "💧",
-        "title": "Egzersiz → su hedefi",
-        "body": "Terle kaybettiğin sıvı hesaplanır ve günlük su hedefin otomatik yükselir. Antrenman bittiğinde hedefini elle değiştirmen gerekmez."
       }
     ]
   },

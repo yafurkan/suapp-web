@@ -25,14 +25,6 @@
         "label": "Funktionen"
       },
       {
-        "href": "#kalori",
-        "label": "Kalorien"
-      },
-      {
-        "href": "#egzersiz",
-        "label": "Training"
-      },
-      {
         "href": "#ekranlar",
         "label": "Screens"
       },
@@ -87,17 +79,13 @@
         "id": "calories",
         "icon": "flame",
         "title": "Kalorien und Ernährung",
-        "body": "<strong>Fotografiere deine Mahlzeit</strong> — Suu AI ermittelt Kalorien, Protein, Kohlenhydrate und Fett und erstellt deine Makros automatisch.",
-        "link_href": "#kalori",
-        "link_label": "Kalorienanalyse per Foto"
+        "body": "<strong>Fotografiere deine Mahlzeit</strong> — Suu AI ermittelt Kalorien, Protein, Kohlenhydrate und Fett und erstellt deine Makros automatisch."
       },
       {
         "id": "exercise",
         "icon": "run",
         "title": "Trainingstracking",
-        "body": "<strong>Live-GPS-Aufzeichnung</strong> — Laufen, Gehen, Radfahren. Deine Route wird auf der Karte gezeichnet und jedes Training erhöht automatisch dein Wasserziel.",
-        "link_href": "#egzersiz",
-        "link_label": "Trainingswerte"
+        "body": "<strong>Live-GPS-Aufzeichnung</strong> — Laufen, Gehen, Radfahren. Deine Route wird auf der Karte gezeichnet und jedes Training erhöht automatisch dein Wasserziel."
       }
     ],
     "scroll": {
@@ -135,29 +123,6 @@
       ]
     }
   },
-  "calories": {
-    "eyebrow": "Kalorien und Ernährung",
-    "head": "Zum Kalorienzählen musst du deinen Teller nicht wiegen",
-    "sub": "Foto machen — den Rest übernimmt Suu AI.",
-    "callout": "<strong>Im kostenlosen Plan</strong> hast du 3 KI-Analysen pro Tag. Fotoanalyse und unbegrenzte Nutzung gehören zu Premium — <a href=\"#fiyat\">3 Tage gratis testbar</a>.",
-    "items": [
-      {
-        "icon": "camera",
-        "title": "Analyse per Foto",
-        "body": "Fotografiere deine Mahlzeit; Kalorien, Protein, Kohlenhydrate und Fett werden ermittelt und deine Makros automatisch erstellt. Dein Foto wird nicht dauerhaft gespeichert."
-      },
-      {
-        "emoji": "🎙️",
-        "title": "Sprach- oder Texteingabe",
-        "body": "„Zum Mittagessen Hähnchensalat und ein Glas Ayran“ — sag es, und es ist in Sekunden erfasst. Sprache wird auf dem Gerät in Text umgewandelt, nicht an einen Server geschickt."
-      },
-      {
-        "emoji": "📊",
-        "title": "Makros und Ernährungsscore",
-        "body": "Tägliches Tracking von Kalorien, Protein, Kohlenhydraten und Fett. Ein Ernährungsscore von 1–100 zeigt die Balance deines Tages auf einen Blick."
-      }
-    ]
-  },
   "suu_ai": {
     "head": "Steuere die App im Gespräch",
     "sub": "Statt durch Menüs zu navigieren, sag einfach, was du willst.",
@@ -176,53 +141,6 @@
         "emoji": "⚙️",
         "title": "„Aktualisiere mein Wasserziel“",
         "body": "Ziele und smarte Erinnerungen lassen sich ebenfalls im Chat anpassen."
-      }
-    ]
-  },
-  "exercise": {
-    "eyebrow": "Trainingstracking",
-    "head": "Live-GPS-Trainingstracking — und alles hängt an deinem Wasserziel",
-    "sub": "Laufen, Gehen, Radfahren, Fitness, Schwimmen, Wandern, Cardio und mehr — rund 50 Aktivitäten.",
-    "items": [
-      {
-        "emoji": "📍",
-        "title": "Live-GPS-Tracking",
-        "body": "Starten, pausieren, beenden. Distanz, Dauer und Pace laufen während des Trainings live mit, deine Route wird auf der Karte gezeichnet.",
-        "metrics": [
-          "Live-Distanz",
-          "Echtzeit-Pace",
-          "Dauer",
-          "Routenkarte"
-        ]
-      },
-      {
-        "icon": "run",
-        "title": "Laufen und Gehen",
-        "body": "Nach dem Training liegt deine Route auf der Karte, alle Details auf einem Bildschirm.",
-        "metrics": [
-          "Distanz",
-          "Dauer",
-          "Pace",
-          "Ø Geschwindigkeit",
-          "Verbrannte Kalorien"
-        ]
-      },
-      {
-        "emoji": "🚴",
-        "title": "Radfahren",
-        "body": "Detaillierte Statistiken inklusive Höhenprofil deiner Route.",
-        "metrics": [
-          "Geschwindigkeit",
-          "Ø Geschwindigkeit",
-          "Distanz",
-          "Höhenmeter",
-          "Dauer"
-        ]
-      },
-      {
-        "emoji": "💧",
-        "title": "Training → Wasserziel",
-        "body": "Der über Schweiß verlorene Flüssigkeitsanteil wird geschätzt und dein Tagesziel steigt automatisch. Nach dem Training musst du nichts manuell anpassen."
       }
     ]
   },

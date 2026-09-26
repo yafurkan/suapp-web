@@ -24,14 +24,6 @@
         "label": "Features"
       },
       {
-        "href": "#kalori",
-        "label": "Calories"
-      },
-      {
-        "href": "#egzersiz",
-        "label": "Exercise"
-      },
-      {
         "href": "#ekranlar",
         "label": "Screens"
       },
@@ -86,17 +78,13 @@
         "id": "calories",
         "icon": "flame",
         "title": "Calories & Nutrition",
-        "body": "<strong>Photograph your meal</strong> — let Suu AI extract calories, protein, carbs and fat, and build your macros automatically.",
-        "link_href": "#kalori",
-        "link_label": "Photo calorie analysis"
+        "body": "<strong>Photograph your meal</strong> — let Suu AI extract calories, protein, carbs and fat, and build your macros automatically."
       },
       {
         "id": "exercise",
         "icon": "run",
         "title": "Exercise Tracking",
-        "body": "<strong>Live GPS tracking</strong> — running, walking, cycling. Your route is drawn on the map and every workout raises your water goal automatically.",
-        "link_href": "#egzersiz",
-        "link_label": "Exercise metrics"
+        "body": "<strong>Live GPS tracking</strong> — running, walking, cycling. Your route is drawn on the map and every workout raises your water goal automatically."
       }
     ],
     "scroll": {
@@ -134,29 +122,6 @@
       ]
     }
   },
-  "calories": {
-    "eyebrow": "Calories & Nutrition",
-    "head": "You don't need to weigh your plate to count calories",
-    "sub": "Take the photo — let Suu AI handle the rest.",
-    "callout": "<strong>On the free plan</strong> you get 3 AI analyses per day. Photo analysis and unlimited use are part of Premium — <a href=\"#fiyat\">free to try for 3 days</a>.",
-    "items": [
-      {
-        "icon": "camera",
-        "title": "Photo analysis",
-        "body": "Photograph your meal and let calories, protein, carbs and fat be extracted and your macros built automatically. Your photo is not stored permanently."
-      },
-      {
-        "emoji": "🎙️",
-        "title": "Voice or text entry",
-        "body": "“Chicken salad and a glass of ayran for lunch” — say it and it's logged in seconds. Speech is converted to text on your device, never sent to a server."
-      },
-      {
-        "emoji": "📊",
-        "title": "Macros and nutrition score",
-        "body": "Daily calorie, protein, carb and fat tracking. A 1–100 nutrition score shows the balance of your day at a glance."
-      }
-    ]
-  },
   "suu_ai": {
     "head": "Run the app by talking to it",
     "sub": "Instead of navigating menus, just say what you want.",
@@ -175,53 +140,6 @@
         "emoji": "⚙️",
         "title": "“Update my water goal”",
         "body": "Goals and smart reminders can be adjusted from the chat too."
-      }
-    ]
-  },
-  "exercise": {
-    "eyebrow": "Exercise Tracking",
-    "head": "Live GPS workout tracking — and all of it tied to your water goal",
-    "sub": "Running, walking, cycling, fitness, swimming, hiking, cardio and more — around 50 activities.",
-    "items": [
-      {
-        "emoji": "📍",
-        "title": "Live GPS tracking",
-        "body": "Start, pause, finish. Distance, duration and pace update live during the session, and your route is drawn on the map.",
-        "metrics": [
-          "Live distance",
-          "Real-time pace",
-          "Duration",
-          "Route map"
-        ]
-      },
-      {
-        "icon": "run",
-        "title": "Running and walking",
-        "body": "When you finish, your route is on the map and every detail on one screen.",
-        "metrics": [
-          "Distance",
-          "Duration",
-          "Pace",
-          "Avg. speed",
-          "Calories burned"
-        ]
-      },
-      {
-        "emoji": "🚴",
-        "title": "Cycling",
-        "body": "Detailed statistics including the elevation profile of your route.",
-        "metrics": [
-          "Speed",
-          "Avg. speed",
-          "Distance",
-          "Elevation",
-          "Duration"
-        ]
-      },
-      {
-        "emoji": "💧",
-        "title": "Exercise → water goal",
-        "body": "The fluid you lose through sweat is estimated and your daily water goal rises automatically. No manual adjustment when the workout ends."
       }
     ]
   },
