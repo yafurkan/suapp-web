@@ -238,6 +238,9 @@ html {
 
 body {
     margin: 0;
+    /* iOS Safari html'deki clip'e her zaman uymuyor; sabit alt çubuk
+       (sticky-cta) genişleyen sayfayla birlikte ekrandan taşıyordu. */
+    overflow-x: clip;
     font-family: var(--font-sans);
     font-size: var(--fs-base);
     line-height: var(--lh-base);
@@ -510,6 +513,7 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-10) 0; }
     position: relative;
     padding-block: clamp(3rem, 6vw, 5.5rem) var(--section-y);
     overflow: hidden;
+    isolation: isolate;             /* WebKit: 3B dönen telefonu da kırpsın */
     background:
         radial-gradient(60rem 32rem at 15% -10%, var(--pillar-water-soft) 0%, transparent 60%),
         radial-gradient(48rem 28rem at 92% 8%, var(--pillar-calories-soft) 0%, transparent 58%),
@@ -755,6 +759,7 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-10) 0; }
     position: absolute; inset: 10px;
     border-radius: 26px;
     overflow: hidden;
+    contain: paint;                 /* WebKit: 3B sahnede (devsw) overflow tek başına kırpmıyor */
     background: #0e1524;
     direction: ltr;                 /* tur soldan sağa çizilir; AR sayfasında da */
 }
