@@ -27,7 +27,7 @@ ROOT = Path(__file__).resolve().parents[1]
 FACTS_PATH = ROOT / "content" / "suu-facts.json"
 
 SCAN_SUFFIXES = {".html", ".txt", ".json", ".md"}
-SKIP_DIRS = {".git", ".github", ".claude", "node_modules", ".qodo", "scripts", "content", "donations"}
+SKIP_DIRS = {".git", ".github", ".claude", ".kilo", "node_modules", ".qodo", "scripts", "content", "donations"}
 SKIP_FILES = {"app-readme.md", "aso-store-listing.md", "cache-bust.txt", "donations.json"}
 
 ERROR, WARN = "error", "warn"

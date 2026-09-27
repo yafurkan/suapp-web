@@ -60,6 +60,9 @@
             '  min-width:150px;padding:6px;margin:0;list-style:none;',
             '  background:var(--surface,#fff);border:1px solid var(--border,#D6DDE4);',
             '  border-radius:10px;box-shadow:0 8px 24px rgba(11,14,19,.14)}',
+            // RTL'de seçici ekranın solunda durur; sağ kenara yaslı liste
+            // ekrandan taşıp sayfayı yana kaydırıyordu.
+            '[dir="rtl"] #suu-lang-list{inset-inline-end:auto;left:0}',
             '#suu-lang-list li{margin:0}',
             '#suu-lang-list a{display:flex;align-items:center;justify-content:space-between;gap:10px;',
             '  padding:8px 10px;border-radius:6px;color:var(--text,#232A33);text-decoration:none;',
