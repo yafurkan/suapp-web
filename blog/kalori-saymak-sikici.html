@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ÜRETİLMİŞ DOSYA — elle düzenlemeyin.
+         Kaynak: content/guides/stick-with-calorie-counting.json + content/compare/_template.html.j2
+         Yeniden üret: python3 scripts/build-compare.py --apply -->
+
+    <title>Kalori Saymak Sıkıcı mı? Bırakmamanın 7 Yolu | Suu</title>
+    <meta name="description" content="Kalori saymayı çoğu kişi ilk haftalarda bırakır. Mükemmellik değil süreklilik: yaklaşık kaydet, tek öğünle başla, haftalık ortalamaya bak. Araştırmalarla.">
+    <meta name="keywords" content="kalori saymak sıkıcı, kalori saymayı bırakmak, kalori takibi nasıl yapılır, kalori saymadan kilo verme, kalori saymak zor, yemek günlüğü tutmak, kalori sayma uygulaması, sesle kalori hesaplama">
+    <meta name="apple-itunes-app" content="app-id=6757619920">
+
+    <link rel="canonical" href="https://suuapp.com/blog/kalori-saymak-sikici.html">
+    <!-- Hreflang cluster (auto-injected) -->
+    <link rel="alternate" hreflang="tr" href="https://suuapp.com/blog/kalori-saymak-sikici.html">
+    <link rel="alternate" hreflang="en" href="https://suuapp.com/blog/en/stick-with-calorie-counting.html">
+    <link rel="alternate" hreflang="ar" href="https://suuapp.com/blog/ar/malal-hisab-al-suerat.html">
+    <link rel="alternate" hreflang="ru" href="https://suuapp.com/blog/ru/nadoelo-schitat-kalorii.html">
+    <link rel="alternate" hreflang="de" href="https://suuapp.com/blog/de/kalorienzaehlen-durchhalten.html">
+    <link rel="alternate" hreflang="it" href="https://suuapp.com/blog/it/contare-calorie-senza-stress.html">
+    <link rel="alternate" hreflang="uk" href="https://suuapp.com/blog/uk/nabrydlo-rakhuvaty-kalorii.html">
+    <link rel="alternate" hreflang="x-default" href="https://suuapp.com/blog/en/stick-with-calorie-counting.html">
+
+
+    <meta property="og:title" content="Kalori Saymayı Hep Bırakıyorum: Sıkılmadan Devam Etmenin 7 Yolu">
+    <meta property="og:description" content="Başarılı olanlar kayda daha çok zaman değil, daha sık kısa anlar ayırıyor. Sürdürülebilir kalori takibi, rakamlarla.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://suuapp.com/blog/kalori-saymak-sikici.html">
+    <meta property="og:image" content="https://suuapp.com/assets/og/blog/kalori-saymak-sikici.png">
+    <meta property="og:site_name" content="Suu">
+    <meta property="og:locale" content="tr_TR">
+    <meta property="article:published_time" content="2026-09-27">
+    <meta property="article:modified_time" content="2026-09-27">
+    <meta property="article:author" content="Furkan Mert Fındıklı">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SuuTakip">
+    <meta name="twitter:title" content="Kalori Saymayı Hep Bırakıyorum: Sıkılmadan Devam Etmenin 7 Yolu">
+    <meta name="twitter:description" content="Başarılı olanlar kayda daha çok zaman değil, daha sık kısa anlar ayırıyor. Sürdürülebilir kalori takibi, rakamlarla.">
+    <meta name="twitter:image" content="https://suuapp.com/assets/og/blog/kalori-saymak-sikici.png">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/donation-widget.css?v=6">
+    <link rel="stylesheet" href="/assets/css/suu.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://suuapp.com/#organization",
+      "name": "Suu",
+      "url": "https://suuapp.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://suuapp.com/assets/favicon-512.png"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://suuapp.com/#furkan",
+      "name": "Furkan Mert Fındıklı",
+      "url": "https://suuapp.com/yazarlar/furkan-mert.html",
+      "jobTitle": "Kurucu \u0026 Geliştirici",
+      "worksFor": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/furkanfindikli/"
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://suuapp.com/blog/kalori-saymak-sikici.html#article",
+      "headline": "Kalori Saymayı Hep Bırakıyorum: Sıkılmadan Devam Etmenin 7 Yolu (ve Suu'da Takibi)",
+      "description": "Kalori saymayı çoğu kişi ilk haftalarda bırakır. Mükemmellik değil süreklilik: yaklaşık kaydet, tek öğünle başla, haftalık ortalamaya bak. Araştırmalarla.",
+      "image": "https://suuapp.com/assets/og/blog/kalori-saymak-sikici.png",
+      "datePublished": "2026-09-27",
+      "dateModified": "2026-09-27",
+      "inLanguage": "tr",
+      "mainEntityOfPage": "https://suuapp.com/blog/kalori-saymak-sikici.html",
+      "author": {
+        "@id": "https://suuapp.com/#furkan"
+      },
+      "publisher": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Kalori sayma"
+        },
+        {
+          "@type": "Thing",
+          "name": "Besin günlüğü"
+        },
+        {
+          "@type": "Thing",
+          "name": "Kilo yönetimi"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://suuapp.com/#suuapp-ios"
+        },
+        {
+          "@id": "https://suuapp.com/#suuapp-android"
+        }
+      ],
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "name": "Burke LE ve ark. — Self-monitoring in weight loss: a systematic review of the literature. J Am Diet Assoc, 2011",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21185970/"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Harvey J ve ark. — Log Often, Lose More: Electronic Dietary Self-Monitoring for Weight Loss. Obesity, 2019",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30801989/"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "T.C. Sağlık Bakanlığı — Türkiye Beslenme Rehberi (TÜBER) 2022",
+          "url": "https://hsgm.saglik.gov.tr/tr/web-uygulamalarimiz/357.html"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Simpson CC, Mazzeo SE — Calorie counting and fitness tracking technology: associations with eating disorder symptomatology. Eat Behav, 2017",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28214452/"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Lally P ve ark. — How are habits formed: modelling habit formation in the real world. European Journal of Social Psychology, 2010",
+          "url": "https://doi.org/10.1002/ejsp.674"
+        }
+      ],
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".answer-box",
+          "h1",
+          ".in-app",
+          ".verdict p"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://suuapp.com/blog/kalori-saymak-sikici.html#faq",
+      "inLanguage": "tr",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Kalori saymak neden bu kadar sıkıcı?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Çünkü çoğu kişi her lokmayı tartıp gram gram girmeye çalışıyor. Araştırmalarda kayda ayrılan süre ilk aydaki 23 dakikadan altıncı ayda 15 dakikaya düşüyor. Yaklaşık kayıt, sık yenen öğünleri hazır tutmak ve sesle kayıt bu yükü azaltır."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kalori saymadan kilo verilir mi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evet. Tabak yöntemi, protein ve sebzeye odaklanmak ya da açlık-tokluk sinyallerini izlemek de kalori açığı yaratabilir. Kalori saymak bir araçtır; sana iyi gelmiyorsa zorunlu değildir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kalori takibine günde ne kadar zaman ayırmalıyım?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Başarılı olanlar daha uzun değil, daha sık kayıt yapıyor. Bir çalışmada en çok kilo verenler kayıt sayfasına günde ortalama 2,5 kez girdi; kayda ayrılan süre ise altı ayda günde 23 dakikadan 15 dakikaya indi."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Her şeyi tartmak zorunda mıyım?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hayır. Avuç ve yumruk gibi el ölçüleri çoğu kişi için yeterli; küçük hatalar haftalık ortalamada dengelenir. Tartı, ilerleme durduğunda kontrol amaçlı kısa süre kullanılabilir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Sesle ya da fotoğrafla kalori kaydı ne kadar doğru?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bir tahmindir; en büyük hata porsiyon ve görünmeyen yağdan gelir. Öğünü kısaca tarif edip sonucu gözden geçirmek doğruluğu artırır. İlk haftalarda hız, kusursuz doğruluktan daha değerlidir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Suu'da kalori takibi ücretsiz mi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sesle ya da yazıyla öğün kaydı ücretsiz planda günde 3 AI analiziyle yapılır. Fotoğrafla analiz ve sınırsız AI Premium'dadır."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://suuapp.com/blog/kalori-saymak-sikici.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Suu",
+          "item": "https://suuapp.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://suuapp.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Kalori Saymayı Hep Bırakıyorum: Sıkılmadan Devam Etmenin 7 Yolu (ve Suu'da Takibi)",
+          "item": "https://suuapp.com/blog/kalori-saymak-sikici.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+
+    <script src="/assets/js/analytics.js" defer></script>
+    <script src="/lang-switcher.js?v=3" defer></script>
+    <script src="/donation-widget.js?v=6" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">İçeriğe geç</a>
+
+<nav class="nav">
+    <div class="container nav__inner">
+        <a href="/" class="nav__logo"><img src="/assets/brand/suu-badge-128.png" alt="Suu" width="128" height="128" class="suu-logo-badge" style="height:1.6em;width:1.6em;border-radius:50%;vertical-align:-0.4em;box-shadow:0 0 0 1px rgba(255,255,255,.12),0 0 14px rgba(94,170,255,.45);"> Suu</a>
+        <ul class="nav__links">
+            <li><a href="/blog.html">Blog</a></li>
+            
+            <li><a href="/#fiyat">Fiyatlandırma</a></li>
+        </ul>
+        <div class="nav__actions">
+            <a href="/app?src=guide-nav" class="btn btn--primary" data-cta="nav"
+               style="min-height:40px;padding:var(--sp-2) var(--sp-5);font-size:var(--fs-sm)">Ücretsiz İndir</a>
+        </div>
+    </div>
+</nav>
+
+<main id="main">
+
+<header class="section" style="padding-block-end:var(--sp-8)">
+    <div class="container container--narrow">
+        <nav class="breadcrumb small text-subtle" aria-label="Breadcrumb"
+             style="margin-block-end:var(--sp-4)">
+            <a href="/">Suu</a>
+            <span aria-hidden="true"> › </span>
+            <a href="/blog.html">Blog</a>
+            <span aria-hidden="true"> › </span>
+            <span aria-current="page">Kalori Saymayı Hep Bırakıyorum: Sıkılmadan Devam Etmenin 7 Yolu (ve Suu&#39;da Takibi)</span>
+        </nav>
+        <span class="badge badge--new">🍽️ Rehber · Kalori takibi</span>
+        <h1 style="margin-block-start:var(--sp-4)">Kalori Saymayı Hep Bırakıyorum: Sıkılmadan Devam Etmenin 7 Yolu (ve Suu&#39;da Takibi)</h1>
+        <p class="small text-subtle">Yayın: 27 Eylül 2026 · Furkan Mert Fındıklı · 7 dakika okuma</p>
+    </div>
+</header>
+
+<div class="container container--narrow stack--lg" style="padding-block-end:var(--sp-24)">
+
+    <!-- CEVAP-ÖNCE: alıntılanan blok burasıdır -->
+    <div class="answer-box">
+        <p><strong>Kısa cevap:</strong> Kalori saymayı çoğu kişi ilk haftalarda bırakır, çünkü her lokmayı tartmaya çalışır. Sürdürülebilir olan mükemmellik değil süreklilik: yaklaşık kaydet, önce tek bir öğünle başla, yediğin anda kaydet ve günlük değil haftalık ortalamaya bak. Suu&#39;da bir öğünü tek cümleyle ya da sesle saniyeler içinde kaydedebilirsin.</p>
+    </div>
+    <aside class="callout health-note" role="note">
+        <p><strong>Kalori saymak herkese iyi gelmez.</strong></p>
+        <p>Bu yazı genel bilgi içindir, tıbbi tavsiye değildir. Şu an ya da geçmişte yeme bozukluğun olduysa, rakamlar kaygı yaratıyorsa veya yemekten sonra suçluluk hissediyorsan kalori saymayı bırak ve bir sağlık uzmanıyla konuş. Diyabet, böbrek hastalığı, hamilelik ya da emzirme döneminde kalori hedefini doktorunla veya diyetisyenle belirle.</p>
+        <p>Şu işaretlerde beklemeden bir uzmana başvur:</p>
+        <ul>
+            <li>Yemekten sonra kusma, aşırı egzersizle "telafi" etme ya da öğün atlama isteği</li>
+            <li>Kısa sürede açıklanamayan kilo kaybı</li>
+        </ul>
+    </aside>
+
+    <div class="disclosure">Bu rehberi Suu&#39;yu geliştiren iki kişilik ekip olarak yazdık. Uygulamamızı öneriyoruz, ama önerilerin dayanağı hakemli çalışmalar ve Sağlık Bakanlığı kaynakları; aynı yaklaşımı kâğıt kalemle de uygulayabilirsin.</div>
+    <p>Kalori saymaya başlayan çoğu kişinin hikâyesi aynı: ilk hafta her şeyi tartar, ikinci hafta akşam toplu girer, üçüncü hafta bırakır. Sorun disiplin eksikliği değil; yöntemin kendisi fazla yorucu. Her lokmayı gram gram girmeye çalışan biri, takibi hayatının içine değil, üstüne koymuş oluyor.</p>
+    <p>İyi haber: kalori takibinin faydası kusursuz kayıttan değil, <strong>düzenli</strong> kayıttan geliyor. Aşağıdaki yaklaşım takibi hafifletmek üzerine kurulu.</p>
+
+    
+    <section>
+        <h2>Neden herkes ilk haftalarda bırakıyor?</h2>
+        <p>Ne yediğini kaydetmek kilo yönetimindeki en tutarlı alışkanlıklardan biri: 22 çalışmayı inceleyen bir derleme, düzenli öz-izlemenin kilo kaybıyla tutarlı biçimde ilişkili olduğunu gösterdi.<sup><a href="#ref1">1</a></sup> Ama aynı alışkanlık zamanla yoruyor. 142 kişiyle yapılan bir çalışmada katılımcılar ilk ay günde ortalama 23 dakikayı kayda ayırırken, altıncı ayda bu 15 dakikaya indi.<sup><a href="#ref2">2</a></sup></p>
+        <p>Aynı çalışmanın en önemli bulgusu şuydu: kilo verenleri ayıran şey kayda harcanan <strong>süre</strong> değil, <strong>sıklık</strong>tı. En çok kilo verenler kayıt sayfasına günde ortalama 2,5 kez girdi, diğerleri 1,6 kez.</p>
+        <div class="callout"><p>Sağlık Bakanlığı'nın Türkiye Beslenme Rehberi (TÜBER 2022) enerji ihtiyacının yaşa, cinsiyete, fizyolojik duruma ve fiziksel aktiviteye göre değiştiğini vurguluyor.<sup><a href="#ref3">3</a></sup> Yani internetteki tek bir "günlük kalori" rakamı herkese uymaz; hedefini kendi verinle belirlemek daha doğru.</p></div>
+    </section>
+    <section>
+        <h2>Mükemmel değil, tutarlı: 7 kural</h2>
+        <p>Amaç takibi daha doğru yapmak değil, daha kolay yapmak.</p>
+        <ul>
+            <li><strong>%80 doğruluk yeterli:</strong> Tartı yerine el ölçüsü kullan — avuç içi kadar et, yumruk kadar pilav. Küçük hatalar haftalık ortalamada birbirini dengeler.</li>
+            <li><strong>Önce tek öğün:</strong> Bütün günü değil, en düzensiz öğünü (çoğu kişide akşam yemeği ya da atıştırmalıklar) kaydetmekle başla.</li>
+            <li><strong>Yediğin anda kaydet:</strong> Akşama bıraktığın öğünün yarısını unutursun. Kısa ve sık kayıt, uzun ve toplu kayıttan daha iyi sonuç veriyor.</li>
+            <li><strong>Tekrarlayan öğünleri hazır tut:</strong> Kahvaltın çoğu gün aynıysa her seferinde baştan yazma.</li>
+            <li><strong>İçecekleri unutma:</strong> Şekerli içecekler ve kahve ekstraları günün en çok gözden kaçan kalorileri.</li>
+            <li><strong>Günlük değil haftalık bak:</strong> Tek bir yüksek gün planı bozmaz; haftalık ortalama gerçek resmi gösterir.</li>
+            <li><strong>Kötü günü silme, kaydet:</strong> Düğün, bayram, iş yemeği — kaydetmek bırakmaktan iyidir. Boş gün, takibin bittiği gündür.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Kalori saymak sana göre değilse</h2>
+        <p>Kalori saymak bir araç, zorunluluk değil. 493 üniversite öğrencisiyle yapılan bir çalışmada kalori takip uygulaması kullananlarda yemekle ilgili kaygı ve kısıtlayıcı diyet eğilimi daha yüksekti.<sup><a href="#ref4">4</a></sup> Rakamlar seni yoruyorsa şu alternatifler de işe yarar:</p>
+        <ul>
+            <li><strong>Tabak yöntemi:</strong> Tabağın yarısı sebze, çeyreği protein, çeyreği tahıl.</li>
+            <li><strong>Sadece protein ve sebzeyi takip et:</strong> Her öğünde bir porsiyon protein, günde birkaç porsiyon sebze.</li>
+            <li><strong>Açlık ve tokluk sinyallerine bak:</strong> Yemeğe başlamadan ve bitirdikten sonra 1–10 arası bir açlık puanı ver.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Sesle ya da fotoğrafla kayıt ne kadar doğru?</h2>
+        <p>Yapay zekâ ile kayıt, takibin en sıkıcı kısmını — yazmayı — ortadan kaldırıyor, ama bir tahmin. Porsiyon ve görünmeyen yağ en büyük hata kaynakları. En iyi sonuç için öğünü kısaca tarif et ("bir tabak mercimek çorbası, iki dilim ekmek") ve sonucu bir kez gözden geçir. Yeni bir alışkanlığın oturması ortalama iki ay sürdüğü için<sup><a href="#ref5">5</a></sup> hız, ilk haftalarda doğruluktan daha değerli.</p>
+    </section>
+
+    <section class="in-app" id="in-app">
+        <h2>Bunu Suu&#39;da nereden takip edersin</h2>
+        <p>Amaç kaydı saniyelere indirmek. Menü adları uygulamadaki gibi:</p>
+        <ol class="ranked stack">
+            <li>
+                <strong>Tek cümleyle ya da sesle kaydet</strong>
+                <p class="small text-subtle">Ana ekran → hızlı ekleme → <strong>Besin Ekle</strong> → mikrofon ya da yazı alanı</p>
+                <p>"İki yumurta, bir dilim beyaz peynir, iki bardak çay" demen yeterli; kalori ve makrolar hesaplanır, içecekler ayrı sayılır. Ücretsiz planda günde 3 AI analizi.</p>
+            </li>
+            <li>
+                <strong>Fotoğrafla kaydet</strong> — <em>Premium</em>
+                <p class="small text-subtle"><strong>Besin Ekle</strong> → kamera</p>
+                <p>Tabağın fotoğrafından yemekleri ve porsiyonu tahmin eder; kayıt, günün en uzun işi olmaktan çıkar. Fotoğraf kalıcı olarak saklanmaz.</p>
+            </li>
+            <li>
+                <strong>Suui&#39;ye söyle</strong>
+                <p class="small text-subtle">Ana ekrandaki <strong>Suui</strong> asistanı</p>
+                <p>Öğle yemeğini sohbet ederek kaydedersin; aynı günlük 3 AI hakkından düşer.</p>
+            </li>
+            <li>
+                <strong>Bugünün öğünleri ve son 7 gün</strong>
+                <p class="small text-subtle"><strong>Beslenme</strong> ekranı → <strong>Bugünün öğünleri</strong> · <strong>Son 7 gün (kalori)</strong></p>
+                <p>Her öğün saatiyle ve 1–100 beslenme puanıyla listelenir; 7 günlük grafik "günlük değil haftalık bak" kuralını kendiliğinden uygular.</p>
+            </li>
+            <li>
+                <strong>Öğün hatırlatması</strong>
+                <p class="small text-subtle"><bdi>iPhone</bdi>: Ayarlar → Bildirim Ayarları → <strong>Günlük bildirimler</strong><br><bdi>Android</bdi>: Ayarlar → <strong>Günlük bildirimler</strong></p>
+                <p>"Öğününü kaydet 🍽️" hatırlatması, "yediğin anda kaydet" kuralını senin yerine hatırlar.</p>
+            </li>
+        </ol>
+        <div class="btn-row" style="margin-block-start:var(--sp-4)">
+            <a href="/app?src=guide-inapp-stick-with-calorie-counting" class="btn btn--primary" data-cta="guide-inapp">Suu&#39;yu ücretsiz indir</a>
+        </div>
+    </section>
+
+    <section class="verdict">
+        <h2 style="margin-block-end:var(--sp-4)">Kısacası</h2>
+        <p>Kalori saymayı bırakmamanın yolu daha disiplinli olmak değil, takibi hafifletmek: yaklaşık kaydet, tek öğünle başla, yediğin anda kısa bir kayıt yap ve haftalık ortalamaya bak.</p>
+        <p>Rakamlar seni kaygılandırıyorsa bırakmak da doğru bir karardır; tabak yöntemi ya da açlık sinyalleri gibi alternatifler aynı hedefe daha sakin bir yoldan götürebilir.</p>
+    </section>
+
+    <section class="cta-band" style="border-radius:var(--r-lg);padding-block:var(--sp-12)" data-cta="guide-body">
+        <div class="container">
+            <h2 style="font-size:var(--fs-2xl)">Bir öğünü 10 saniyede kaydet</h2>
+            <p>Sesle ve yazıyla kalori takibi · günde 3 ücretsiz AI analizi · iOS ve Android</p>
+            <div class="btn-row btn-row--center" style="margin-block-start:var(--sp-6)">
+                <a href="/app?src=guide-stick-with-calorie-counting" class="btn btn--secondary btn--lg">Suu&#39;yu Ücretsiz İndir</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Sık sorulan sorular</h2>
+        <div class="faq">
+            <details class="faq__item" open>
+                <summary>Kalori saymak neden bu kadar sıkıcı?</summary>
+                <div><p>Çünkü çoğu kişi her lokmayı tartıp gram gram girmeye çalışıyor. Araştırmalarda kayda ayrılan süre ilk aydaki 23 dakikadan altıncı ayda 15 dakikaya düşüyor. Yaklaşık kayıt, sık yenen öğünleri hazır tutmak ve sesle kayıt bu yükü azaltır.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Kalori saymadan kilo verilir mi?</summary>
+                <div><p>Evet. Tabak yöntemi, protein ve sebzeye odaklanmak ya da açlık-tokluk sinyallerini izlemek de kalori açığı yaratabilir. Kalori saymak bir araçtır; sana iyi gelmiyorsa zorunlu değildir.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Kalori takibine günde ne kadar zaman ayırmalıyım?</summary>
+                <div><p>Başarılı olanlar daha uzun değil, daha sık kayıt yapıyor. Bir çalışmada en çok kilo verenler kayıt sayfasına günde ortalama 2,5 kez girdi; kayda ayrılan süre ise altı ayda günde 23 dakikadan 15 dakikaya indi.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Her şeyi tartmak zorunda mıyım?</summary>
+                <div><p>Hayır. Avuç ve yumruk gibi el ölçüleri çoğu kişi için yeterli; küçük hatalar haftalık ortalamada dengelenir. Tartı, ilerleme durduğunda kontrol amaçlı kısa süre kullanılabilir.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Sesle ya da fotoğrafla kalori kaydı ne kadar doğru?</summary>
+                <div><p>Bir tahmindir; en büyük hata porsiyon ve görünmeyen yağdan gelir. Öğünü kısaca tarif edip sonucu gözden geçirmek doğruluğu artırır. İlk haftalarda hız, kusursuz doğruluktan daha değerlidir.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Suu&#39;da kalori takibi ücretsiz mi?</summary>
+                <div><p>Sesle ya da yazıyla öğün kaydı ücretsiz planda günde 3 AI analiziyle yapılır. Fotoğrafla analiz ve sınırsız AI Premium&#39;dadır.</p></div>
+            </details>
+        </div>
+    </section>
+    <section>
+        <h2>Kaynaklar</h2>
+        <ol class="small">
+            <li id="ref1"><a href="https://pubmed.ncbi.nlm.nih.gov/21185970/" rel="nofollow noopener" target="_blank">Burke LE ve ark. — Self-monitoring in weight loss: a systematic review of the literature. J Am Diet Assoc, 2011</a></li>
+            <li id="ref2"><a href="https://pubmed.ncbi.nlm.nih.gov/30801989/" rel="nofollow noopener" target="_blank">Harvey J ve ark. — Log Often, Lose More: Electronic Dietary Self-Monitoring for Weight Loss. Obesity, 2019</a></li>
+            <li id="ref3"><a href="https://hsgm.saglik.gov.tr/tr/web-uygulamalarimiz/357.html" rel="nofollow noopener" target="_blank">T.C. Sağlık Bakanlığı — Türkiye Beslenme Rehberi (TÜBER) 2022</a></li>
+            <li id="ref4"><a href="https://pubmed.ncbi.nlm.nih.gov/28214452/" rel="nofollow noopener" target="_blank">Simpson CC, Mazzeo SE — Calorie counting and fitness tracking technology: associations with eating disorder symptomatology. Eat Behav, 2017</a></li>
+            <li id="ref5"><a href="https://doi.org/10.1002/ejsp.674" rel="nofollow noopener" target="_blank">Lally P ve ark. — How are habits formed: modelling habit formation in the real world. European Journal of Social Psychology, 2010</a></li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>İlgili yazılar</h2>
+        <div class="cards">
+            <a class="card" href="/blog/sesli-kalori-girisi.html">
+                <h3 style="font-size:var(--fs-md)">Sesle kalori girişi</h3>
+                <p>Konuşarak öğün kaydetmek nasıl çalışır?</p>
+            </a>
+            <a class="card" href="/blog/fotografla-kalori-sayma.html">
+                <h3 style="font-size:var(--fs-md)">Fotoğrafla kalori sayma</h3>
+                <p>Yapay zekâ tabağı nasıl okur?</p>
+            </a>
+            <a class="card" href="/blog/kalori-acigi.html">
+                <h3 style="font-size:var(--fs-md)">Kalori açığı nasıl oluşturulur?</h3>
+                <p>Hedefini gerçekçi belirlemek için.</p>
+            </a>
+            <a class="card" href="/blog/spora-usenmek.html">
+                <h3 style="font-size:var(--fs-md)">Spora üşeniyorum</h3>
+                <p>Motivasyon beklemeden başlamanın 7 yolu.</p>
+            </a>
+        </div>
+    </section>
+
+    <p class="small text-subtle">Suu tıbbi teşhis veya tedavi amacıyla geliştirilmemiştir. Sağlıkla ilgili kararlar için bir sağlık profesyoneline danışın.</p>
+
+    <p>
+        <a href="/blog.html">← Bloga dön</a>
+    </p>
+</div>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__bottom" style="border:0">
+            <p class="small mb-0">© 2026 Suu · Furkan Mert Fındıklı</p>
+            <p class="small mb-0"><a href="/">suuapp.com</a></p>
+        </div>
+    </div>
+</footer>
+
+<div class="sticky-cta" data-cta="sticky">
+    <a href="/app?src=sticky" class="btn btn--secondary">App Store</a>
+    <a href="/app?src=sticky" class="btn btn--primary">Google Play</a>
+</div>
+
+<script src="/assets/js/suu-badge.js?v=2" defer></script>
+</body>
+</html>

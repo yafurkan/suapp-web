@@ -1,0 +1,1437 @@
+{
+  "_note": "Yapay zekâ sorusu rehberi #1 — 'spora üşeniyorum'. Sınır: motivasyon ve alışkanlık; kalori yakımı egzersizde-kalori-yakimi'nde, uygulama karşılaştırması en-iyi-egzersiz-takip-uygulamasi'nda kalır. Ücretsiz: GPS antrenman, Lider Tablosu (Hareket), dürtme, seri, rozet; lig Premium. Kaynaklar 2026-09-27'de doğrulandı.",
+  "kind": "guide",
+  "cluster": "spora-usenmek",
+  "published": "2026-09-27",
+  "modified": "2026-09-27",
+  "pages": {
+    "tr": {
+      "slug": "spora-usenmek",
+      "read_minutes": 7,
+      "badge": "🚶 Rehber · Hareket alışkanlığı",
+      "h1": "Spora Üşeniyorum: Motivasyon Beklemeden Harekete Geçmenin 7 Yolu (ve Suu'da Takibi)",
+      "about": [
+        {
+          "name": "Fiziksel aktivite"
+        },
+        {
+          "name": "Egzersiz motivasyonu"
+        },
+        {
+          "name": "Alışkanlık oluşturma"
+        }
+      ],
+      "meta": {
+        "title": "Spora Üşeniyorum: Motivasyonsuz Başlamanın 7 Yolu | Suu",
+        "description": "Spora üşenmek irade değil başlama eşiği sorunu. 10 dakikalık yürüyüşle başla, eğer–o zaman planı kur, bir arkadaşı işin içine kat. Bilimsel dayanaklarıyla.",
+        "keywords": "spora üşeniyorum, spor yapmaya üşenmek, spor motivasyonu, egzersiz motivasyonu nasıl bulunur, spora nasıl başlanır, günde kaç adım atmalıyım, günde kaç dakika yürümeli, evde spor üşenmek",
+        "og_title": "Spora Üşeniyorum: Motivasyon Beklemeden Başlamanın 7 Yolu",
+        "og_description": "Günde 10 dakikayla başla, zinciri kırma, bir arkadaşı işin içine kat. Az hareketin bile neden bu kadar değerli olduğu, rakamlarla."
+      },
+      "answer": "Spora üşenmek çoğu zaman irade eksikliği değil, başlama eşiğinin yüksek olmasıdır. En işe yarayan yol hedefi küçültmek: günde 10 dakikalık yürüyüşle başla, saatini ve yerini önceden belirle, ilerlemeni görünür kıl ve bir arkadaşı işin içine kat. Suu'da GPS'li yürüyüş, seri ve arkadaşlarla haftalık hareket sıralaması bunu ücretsiz takip eder.",
+      "health_note": {
+        "head": "Bu yazı tıbbi tavsiye değildir.",
+        "body": [
+          "Genel bilgi içindir. Kalp, akciğer ya da eklem rahatsızlığın, yüksek tansiyonun veya diyabetin varsa, hamileysen ya da uzun süredir hareketsizsen yeni bir egzersiz düzenine başlamadan önce doktoruna danış.",
+          "Hareket sırasında şunlardan biri olursa dur ve tıbbi yardım al:"
+        ],
+        "red_flags": [
+          "Göğüste ağrı, baskı veya sıkışma hissi",
+          "Olağandışı nefes darlığı, baş dönmesi ya da bayılacak gibi olmak",
+          "Çarpıntı veya düzensiz kalp atışı"
+        ]
+      },
+      "disclosure": "Bu rehberi Suu'yu geliştiren iki kişilik ekip olarak yazdık. Uygulamamızı öneriyoruz, ama önerilerin dayanağı Dünya Sağlık Örgütü, Sağlık Bakanlığı ve hakemli çalışmalar; aynı adımları Suu olmadan da uygulayabilirsin.",
+      "intro": [
+        "Spora üşenen biri genelde tembel değildir; her seferinde başlamanın bedelini ödüyordur: kıyafet, zaman, yorgunluk ve içerideki \"bugün değil\" pazarlığı. Beyin yakındaki ödülü (kanepe) uzaktaki ödüle (sağlık) tercih eder. O yüzden çözüm daha fazla motivasyon aramak değil, <strong>başlamayı kolaylaştırmak</strong>.",
+        "İyi haber şu: hareketin faydası sandığından çok daha küçük dozlarda başlıyor. Dünya Sağlık Örgütü'ne göre hiç hareket etmemektense biraz hareket etmek her zaman daha iyi; her hareket sayılıyor.<sup><a href=\"#ref1\">1</a></sup>"
+      ],
+      "analysis": [
+        {
+          "head": "Ne kadar hareket yeterli?",
+          "body": [
+            "Dünya Sağlık Örgütü yetişkinler için haftada en az 150 dakika orta yoğunlukta hareket öneriyor; dünyada yetişkinlerin %31'i, yani 1,8 milyar kişi bu seviyenin altında (2022).<sup><a href=\"#ref1\">1</a></sup> Sağlık Bakanlığı da aynı hedefi haftanın 5 günü en az 30 dakika olarak ifade ediyor.<sup><a href=\"#ref2\">2</a></sup>",
+            "150 dakika uzak görünüyorsa hedefi böl: günde 10 dakikalık üç yürüyüş de aynı yere çıkar. Başlangıçta süreden çok <strong>gün sayısı</strong> önemli."
+          ],
+          "callout": "15 kohortu birleştiren bir meta-analizde günde yaklaşık 5.800 adım atanlarda ölüm riski, yaklaşık 3.500 adım atanlara göre %40 daha düşüktü; fayda 60 yaş üstünde 6.000–8.000, altında 8.000–10.000 adım civarında düzleşiyordu.<sup><a href=\"#ref3\">3</a></sup> Sıfırdan başlayan biri için en değerli adımlar ilk birkaç bin adımdır."
+        },
+        {
+          "head": "Üşenenler için 7 taktik",
+          "body": [
+            "Hiçbiri güçlü irade gerektirmiyor; hepsi başlamanın maliyetini düşürmeye yönelik."
+          ],
+          "list": [
+            "<strong>İki dakika kuralı:</strong> Hedefin \"spor yapmak\" değil, \"ayakkabıyı giyip kapıdan çıkmak\" olsun. Çoğu gün çıkınca devam edersin; etmesen de zinciri kırmamış olursun.",
+            "<strong>Eğer–o zaman planı:</strong> \"Öğle yemeğinden sonra iş yerinin kapısından çıkıp 10 dakika yürüyeceğim.\" Saati ve yeri önceden yazmak, kararı o anki ruh haline bırakmaz.",
+            "<strong>Sürtünmeyi azalt:</strong> Kıyafeti akşamdan hazırla, ayakkabıyı kapının önüne koy. Başlamak için gereken her ek adım bir bahane fırsatı.",
+            "<strong>Sevdiğin bir şeyle eşleştir:</strong> En sevdiğin podcast'i ya da diziyi yalnızca yürürken dinle.",
+            "<strong>Tek başına yapma:</strong> Bir arkadaşla buluşmak ya da haftalık küçük bir yarış, \"bugün değil\" demeyi zorlaştırır.",
+            "<strong>Ölç ve gör:</strong> 26 çalışmayı inceleyen bir derlemenin randomize çalışmalarında adım sayar kullananlar, kullanmayanlara göre günde yaklaşık 2.500 adım daha fazla yürüdü.<sup><a href=\"#ref4\">4</a></sup>",
+            "<strong>İki kez üst üste kaçırma:</strong> Bir günü atlamak normal; iki gün, yeni bir alışkanlığın başlangıcı olur. Yeni bir davranışın otomatikleşmesi bir çalışmada ortalama 66 gün sürdü.<sup><a href=\"#ref5\">5</a></sup>"
+          ]
+        },
+        {
+          "head": "Motivasyon mu, alışkanlık mı?",
+          "body": [
+            "Motivasyon dalgalanır, alışkanlık kalır. Çoğu insanda motivasyon hareketten önce değil sonra gelir: ilk 10 dakikanın ardından gelen \"iyi ki çıkmışım\" hissi. Bu yüzden ilk haftalarda süreyi değil günleri say — 7 günde 5 kez 10 dakika, tek seferlik 50 dakikadan daha sağlam bir başlangıç.",
+            "Uzun bir motosiklet yolculuğunda bile molada 5 dakikalık bir yürüyüş hem bacaklara hem dikkate iyi gelir. Hareket spor salonuna sıkışmak zorunda değil."
+          ]
+        },
+        {
+          "head": "Evde, işte, yolda: bahane bırakmayan hareketler",
+          "body": [
+            "Ayrı bir \"spor zamanı\" bulamıyorsan hareketi günün içine göm:"
+          ],
+          "list": [
+            "Asansör yerine merdiven, en azından iki kat",
+            "Telefon görüşmelerini yürüyerek yap",
+            "Toplu taşımadan bir durak önce in",
+            "Akşam yemeğinden sonra 10 dakikalık bir yürüyüş",
+            "Dizi izlerken bölüm aralarında 10 çömelme ya da duvara dayanarak şınav"
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Bunu Suu'da nereden takip edersin",
+        "lead": "Aşağıdakilerin hepsi ücretsiz planda var. Menü adları uygulamadaki gibi:",
+        "steps": [
+          {
+            "feature": "10 dakikalık yürüyüşü GPS ile kaydet",
+            "where": "Ana ekran → hızlı ekleme → <strong>Egzersiz Ekle</strong> → Yürüyüş → başlat",
+            "solves": "Süre, mesafe, tempo ve harita üzerindeki rota canlı kaydedilir; yakılan kalori ve antrenmanın su hedefine etkisi kendiliğinden hesaplanır. Apple Watch'tan da başlatabilirsin."
+          },
+          {
+            "feature": "Arkadaşlarla haftalık Hareket sıralaması",
+            "where": "Ayarlar → <strong>Sıralama · Puan Tablosu</strong> → Arkadaşlar → <strong>Hareket</strong>",
+            "solves": "Arkadaşlarının haftalık aktif dakikaları yan yana görünür. Tablo her hafta sıfırlanır; geçen haftanın kötü başlangıcı bu haftayı etkilemez. Ücretsiz planda 4 arkadaşa kadar."
+          },
+          {
+            "feature": "Dürt: Hareket et",
+            "where": "Ana ekrandaki <strong>Arkadaşlar ve Lig</strong> → arkadaşın → <strong>Dürt</strong> → Hareket et",
+            "solves": "Gün içinde hareket etmeyen arkadaşına — ya da arkadaşın sana — tek dokunuşla \"hareket et\" hatırlatması gider. Tek başına yapmama taktiğinin uygulamadaki karşılığı."
+          },
+          {
+            "feature": "Kilometre Taşları ve Rozetler",
+            "where_ios": "<strong>Sen</strong> sekmesi → Egzersiz → <strong>Kilometre Taşları</strong> · <strong>Rozetler</strong>",
+            "where_android": "<strong>Rozetler</strong> ekranı ve antrenman sonundaki <strong>Kilometre Taşları</strong>",
+            "solves": "Koşu, yürüyüş ve doğa yürüyüşünde biriken mesafe kilometre taşlarına dönüşür, sertifika olarak story'de paylaşılabilir; 50'den fazla rozet küçük ilerlemeleri görünür kılar."
+          },
+          {
+            "feature": "Günlük hareket hatırlatması",
+            "where_ios": "Ayarlar → Bildirim Ayarları → <strong>Günlük bildirimler</strong>",
+            "where_android": "Ayarlar → <strong>Günlük bildirimler</strong>",
+            "solves": "\"Hareketini kaydet 🚶\" hatırlatması, eğer–o zaman planındaki saati telefonuna taşır."
+          }
+        ],
+        "note": "Özel arkadaş ligi kurmak Premium; haftalık sıralama ve dürtme ücretsiz.",
+        "button": "Suu'yu ücretsiz indir"
+      },
+      "verdict": {
+        "head": "Kısacası",
+        "body": [
+          "Spora üşenmeyi yenmenin yolu motivasyon beklemek değil, başlamayı kolaylaştırmak: hedefi 10 dakikaya indir, saatini ve yerini önceden belirle, kıyafetini hazırla ve bir arkadaşı işin içine kat.",
+          "İlk hedefin performans değil süreklilik olsun. Hareketin en büyük faydası sıfırdan biraza geçerken geliyor; o geçişi görünür kılmak, üşendiğin günlerde bile kapıdan çıkmanı kolaylaştırır."
+        ]
+      },
+      "cta": {
+        "head": "İlk 10 dakikayı bugün kaydet",
+        "sub": "GPS'li yürüyüş, seri ve arkadaş sıralaması ücretsiz · iOS ve Android",
+        "button": "Suu'yu Ücretsiz İndir"
+      },
+      "faq": [
+        {
+          "q": "Spora üşeniyorum, kendimi nasıl motive ederim?",
+          "a": "Motivasyonu beklemek yerine başlamayı kolaylaştır: hedefi günde 10 dakikalık yürüyüşe indir, saatini ve yerini önceden belirle, kıyafetini akşamdan hazırla ve bir arkadaşla yap. Motivasyon çoğu zaman hareketten sonra gelir."
+        },
+        {
+          "q": "Günde kaç dakika yürümek yeterli?",
+          "a": "Dünya Sağlık Örgütü haftada en az 150 dakika orta yoğunlukta hareket öneriyor; bu, haftanın 5 günü 30 dakikaya denk geliyor. Hiç hareket etmiyorsan günde 10 dakikayla başlamak bile fark yaratır; her hareket sayılır."
+        },
+        {
+          "q": "Günde kaç adım atmalıyım?",
+          "a": "Büyük bir meta-analize göre ölüm riskindeki düşüş 60 yaş üstünde yaklaşık 6.000–8.000, altında 8.000–10.000 adımda düzleşiyor. Ama en büyük kazanç ilk binlerde: yaklaşık 3.500 adımdan 5.800 adıma çıkmak bile riski belirgin azaltıyor."
+        },
+        {
+          "q": "Evde üşenmeden nasıl spor yapılır?",
+          "a": "Ayrı bir spor zamanı yerine hareketi günün içine yerleştir: dizi arasında çömelme, telefon görüşmesinde yürüme, merdiven. Sürtünmeyi azaltmak için ekipmanı görünür bir yerde tut ve süreyi kısa tut."
+        },
+        {
+          "q": "Bir günü kaçırınca her şey bozulur mu?",
+          "a": "Hayır. Tek bir kaçırılmış gün alışkanlığı bozmaz; asıl risk iki gün üst üste kaçırmak. Yeni bir davranışın otomatikleşmesi ortalama iki ay sürüyor, arada aksamalar normal."
+        },
+        {
+          "q": "Suu'da egzersiz takibi ücretsiz mi?",
+          "a": "Evet. GPS'li yürüyüş, koşu ve bisiklet kaydı, haftalık arkadaş sıralaması, dürtme, seri ve rozetler ücretsiz planda. Özel lig kurmak, fotoğrafla yemek analizi ve sınırsız AI Premium'da."
+        }
+      ],
+      "references": [
+        {
+          "label": "Dünya Sağlık Örgütü — Physical activity (bilgi notu)",
+          "href": "https://www.who.int/news-room/fact-sheets/detail/physical-activity"
+        },
+        {
+          "label": "T.C. Sağlık Bakanlığı Halk Sağlığı Genel Müdürlüğü — Fiziksel Aktivite",
+          "href": "https://hsgm.saglik.gov.tr/tr/fiziksel-aktivite.html"
+        },
+        {
+          "label": "Paluch AE ve ark. — Daily steps and all-cause mortality: a meta-analysis of 15 international cohorts. Lancet Public Health, 2022",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/35247352/"
+        },
+        {
+          "label": "Bravata DM ve ark. — Using pedometers to increase physical activity and improve health: a systematic review. JAMA, 2007",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/18029834/"
+        },
+        {
+          "label": "Lally P ve ark. — How are habits formed: modelling habit formation in the real world. European Journal of Social Psychology, 2010",
+          "href": "https://doi.org/10.1002/ejsp.674"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/egzersizde-kalori-yakimi.html",
+          "title": "Egzersizde kaç kalori yakılır?",
+          "desc": "Yürüyüş, koşu ve bisiklette gerçekçi rakamlar."
+        },
+        {
+          "href": "/blog/en-iyi-egzersiz-takip-uygulamasi.html",
+          "title": "En iyi egzersiz takip uygulaması 2026",
+          "desc": "Strava, Nike Run Club ve Suu karşılaştırması."
+        },
+        {
+          "href": "/blog/su-icme-lig-sistemi.html",
+          "title": "Arkadaşlarla lig sistemi",
+          "desc": "Birlikte yapmak neden daha kolay?"
+        },
+        {
+          "href": "/blog/kalori-saymak-sikici.html",
+          "title": "Kalori saymayı hep bırakıyorum",
+          "desc": "Sıkılmadan devam etmenin 7 yolu."
+        }
+      ]
+    },
+    "en": {
+      "slug": "no-motivation-to-exercise",
+      "read_minutes": 7,
+      "badge": "🚶 Guide · Movement habits",
+      "h1": "Too Lazy to Work Out? 7 Ways to Start Without Waiting for Motivation (and Track It in Suu)",
+      "about": [
+        {
+          "name": "Physical activity"
+        },
+        {
+          "name": "Exercise motivation"
+        },
+        {
+          "name": "Habit formation"
+        }
+      ],
+      "meta": {
+        "title": "Too Lazy to Work Out? 7 Ways to Start Anyway | Suu",
+        "description": "Feeling too lazy to exercise isn't a willpower problem — it's a starting problem. Begin with 10-minute walks, plan when and where, and bring a friend in.",
+        "keywords": "too lazy to work out, no motivation to exercise, how to get motivated to exercise, how to start exercising when lazy, how many steps a day, how many minutes of walking a day, exercise motivation tips, lazy workout",
+        "og_title": "Too Lazy to Work Out? 7 Ways to Start Anyway",
+        "og_description": "Start with 10 minutes, don't break the chain, bring a friend in. Why even a little movement is worth so much — in numbers."
+      },
+      "answer": "Feeling too lazy to work out is usually not a lack of willpower but a high barrier to starting. What works best is shrinking the goal: start with a 10-minute walk a day, decide the time and place in advance, make your progress visible and bring a friend in. In Suu, GPS walks, streaks and a weekly movement leaderboard with friends track this for free.",
+      "health_note": {
+        "head": "This article is not medical advice.",
+        "body": [
+          "It's general information. If you have a heart, lung or joint condition, high blood pressure or diabetes, are pregnant, or have been inactive for a long time, check with your doctor before starting a new exercise routine.",
+          "Stop and get medical help if you notice any of these while moving:"
+        ],
+        "red_flags": [
+          "Chest pain, pressure or tightness",
+          "Unusual shortness of breath, dizziness or feeling faint",
+          "Palpitations or an irregular heartbeat"
+        ]
+      },
+      "disclosure": "We wrote this guide as the two-person team that builds Suu. We recommend our app, but the advice rests on the World Health Organization, the NHS and peer-reviewed studies — you can follow the same steps without Suu.",
+      "intro": [
+        "People who feel too lazy to exercise usually aren't lazy; they pay the cost of starting every single time — the clothes, the time, the tiredness and the internal \"not today\" negotiation. The brain prefers the reward that's close (the couch) over the one that's far away (health). So the fix isn't finding more motivation; it's <strong>making starting easier</strong>.",
+        "The good news: the benefits of movement start at much smaller doses than most people think. According to the World Health Organization, some physical activity is always better than none, and all of it counts.<sup><a href=\"#ref1\">1</a></sup>"
+      ],
+      "analysis": [
+        {
+          "head": "How much movement is enough?",
+          "body": [
+            "The World Health Organization recommends at least 150 minutes of moderate-intensity activity a week for adults; worldwide, 31% of adults — 1.8 billion people — fall short of that (2022).<sup><a href=\"#ref1\">1</a></sup> The NHS gives the same target and adds strength exercises on at least two days a week.<sup><a href=\"#ref2\">2</a></sup>",
+            "If 150 minutes feels far away, split it: three 10-minute walks a day get you to the same place. At the start, the <strong>number of days</strong> matters more than the minutes."
+          ],
+          "callout": "In a meta-analysis of 15 cohorts, people taking about 5,800 steps a day had roughly 40% lower mortality risk than those taking about 3,500; the benefit leveled off around 6,000–8,000 steps for adults over 60 and 8,000–10,000 for younger adults.<sup><a href=\"#ref3\">3</a></sup> If you're starting from zero, your first few thousand steps are the most valuable ones."
+        },
+        {
+          "head": "7 tactics for when you just don't feel like it",
+          "body": [
+            "None of these needs strong willpower; they all lower the cost of starting."
+          ],
+          "list": [
+            "<strong>The two-minute rule:</strong> Your goal isn't \"work out\" — it's \"put on your shoes and walk out the door.\" Most days you'll keep going once you're out; if you don't, you still haven't broken the chain.",
+            "<strong>An if–then plan:</strong> \"After lunch, I'll walk out of the office door and walk for 10 minutes.\" Writing down the time and place takes the decision away from your mood in the moment.",
+            "<strong>Remove friction:</strong> Lay out your clothes the night before and put your shoes by the door. Every extra step before you start is another chance for an excuse.",
+            "<strong>Pair it with something you like:</strong> Save your favorite podcast or show for walks only.",
+            "<strong>Don't go it alone:</strong> Meeting a friend or a small weekly competition makes \"not today\" harder to say.",
+            "<strong>Measure it:</strong> In the randomized trials of a review covering 26 studies, people using a step counter walked about 2,500 more steps a day than those who didn't.<sup><a href=\"#ref4\">4</a></sup>",
+            "<strong>Never miss twice:</strong> Skipping one day is normal; skipping two is how a new habit starts. In one study a new behavior took a median of 66 days to become automatic.<sup><a href=\"#ref5\">5</a></sup>"
+          ]
+        },
+        {
+          "head": "Motivation or habit?",
+          "body": [
+            "Motivation comes and goes; habits stay. For most people, motivation shows up after moving, not before — the \"glad I went\" feeling after the first 10 minutes. So in the first weeks, count days, not minutes: five 10-minute sessions in a week are a sturdier start than a single 50-minute one.",
+            "Even on a long motorcycle ride, a 5-minute walk at every stop does your legs and your focus good. Movement doesn't have to live inside a gym."
+          ]
+        },
+        {
+          "head": "At home, at work, on the road: movement with no excuses",
+          "body": [
+            "If you can't find separate \"workout time,\" build movement into your day:"
+          ],
+          "list": [
+            "Take the stairs instead of the elevator, at least for two floors",
+            "Walk during phone calls",
+            "Get off the bus or train one stop early",
+            "A 10-minute walk after dinner",
+            "10 squats or wall push-ups between episodes"
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Where to track this in Suu",
+        "lead": "Everything below is on the free plan. Menu names are exactly as they appear:",
+        "steps": [
+          {
+            "feature": "Record a 10-minute walk with GPS",
+            "where": "Home → quick add → <strong>Add Exercise</strong> → Walking → start",
+            "solves": "Time, distance, pace and your route on a map are recorded live; calories burned and the workout's effect on your water goal are calculated automatically. You can also start it from Apple Watch."
+          },
+          {
+            "feature": "Weekly Move leaderboard with friends",
+            "where": "Settings → <strong>Leaderboard</strong> → Friends → <strong>Move</strong>",
+            "solves": "Your friends' weekly active minutes sit side by side. The board resets every week, so a bad start last week doesn't count against this one. Up to 4 friends on the free plan."
+          },
+          {
+            "feature": "Nudge: Get moving",
+            "where": "<strong>Friends &amp; League</strong> on the home screen → your friend → <strong>Nudge</strong> → Get moving",
+            "solves": "Send a one-tap \"get moving\" reminder to a friend who hasn't moved today — and they can send you one. The \"don't go it alone\" tactic, built in."
+          },
+          {
+            "feature": "Milestones and Badges",
+            "where_ios": "<strong>You</strong> tab → Exercise → <strong>Distance Milestones</strong> · <strong>Badges</strong>",
+            "where_android": "The <strong>Badges</strong> screen and <strong>Milestones</strong> at the end of a workout",
+            "solves": "Distance from running, walking and hiking adds up to milestones you can share as a certificate in your story; 50+ badges make small progress visible."
+          },
+          {
+            "feature": "Daily movement reminder",
+            "where_ios": "Settings → Notification Settings → <strong>Daily notifications</strong>",
+            "where_android": "Settings → <strong>Daily notifications</strong>",
+            "solves": "The \"Log your movement 🚶\" reminder puts the time from your if–then plan on your phone."
+          }
+        ],
+        "note": "Creating a private friend league is Premium; the weekly leaderboard and nudges are free.",
+        "button": "Get Suu free"
+      },
+      "verdict": {
+        "head": "The short version",
+        "body": [
+          "The way past feeling too lazy to exercise isn't waiting for motivation — it's making starting easier: shrink the goal to 10 minutes, set the time and place in advance, lay out your clothes and bring a friend in.",
+          "Make consistency, not performance, your first goal. The biggest health gain comes from going from nothing to a little; making that shift visible makes it easier to walk out the door even on the lazy days."
+        ]
+      },
+      "cta": {
+        "head": "Log your first 10 minutes today",
+        "sub": "GPS walks, streaks and a friends leaderboard are free · iOS and Android",
+        "button": "Download Suu Free"
+      },
+      "faq": [
+        {
+          "q": "I'm too lazy to work out — how do I get motivated?",
+          "a": "Instead of waiting for motivation, make starting easier: cut the goal to a 10-minute walk a day, decide the time and place in advance, lay out your clothes the night before and do it with a friend. Motivation usually arrives after you start moving."
+        },
+        {
+          "q": "How many minutes of walking a day is enough?",
+          "a": "The World Health Organization recommends at least 150 minutes of moderate activity a week, which works out to 30 minutes on five days. If you're currently inactive, even 10 minutes a day makes a difference — all movement counts."
+        },
+        {
+          "q": "How many steps a day should I take?",
+          "a": "According to a large meta-analysis, the drop in mortality risk levels off around 6,000–8,000 steps for adults over 60 and 8,000–10,000 for younger adults. But the biggest gain comes early: going from about 3,500 to 5,800 steps already lowers risk markedly."
+        },
+        {
+          "q": "How do I work out at home when I'm lazy?",
+          "a": "Instead of carving out workout time, fit movement into your day: squats between episodes, walking during calls, taking the stairs. Keep equipment somewhere visible and keep sessions short to cut the friction."
+        },
+        {
+          "q": "Does missing one day ruin the habit?",
+          "a": "No. A single missed day doesn't break a habit; the real risk is missing two in a row. New behaviors take about two months on average to become automatic, and slips along the way are normal."
+        },
+        {
+          "q": "Is exercise tracking in Suu free?",
+          "a": "Yes. GPS recording of walks, runs and rides, the weekly friends leaderboard, nudges, streaks and badges are on the free plan. Private leagues, photo meal analysis and unlimited AI are Premium."
+        }
+      ],
+      "references": [
+        {
+          "label": "World Health Organization — Physical activity (fact sheet)",
+          "href": "https://www.who.int/news-room/fact-sheets/detail/physical-activity"
+        },
+        {
+          "label": "NHS — Physical activity guidelines for adults aged 19 to 64",
+          "href": "https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-for-adults-aged-19-to-64/"
+        },
+        {
+          "label": "Paluch AE et al. — Daily steps and all-cause mortality: a meta-analysis of 15 international cohorts. Lancet Public Health, 2022",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/35247352/"
+        },
+        {
+          "label": "Bravata DM et al. — Using pedometers to increase physical activity and improve health: a systematic review. JAMA, 2007",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/18029834/"
+        },
+        {
+          "label": "Lally P et al. — How are habits formed: modelling habit formation in the real world. European Journal of Social Psychology, 2010",
+          "href": "https://doi.org/10.1002/ejsp.674"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/en/calories-burned-exercise.html",
+          "title": "How many calories does exercise burn?",
+          "desc": "Realistic numbers for walking, running and cycling."
+        },
+        {
+          "href": "/blog/en/best-workout-tracker-app.html",
+          "title": "Best workout tracker app 2026",
+          "desc": "Strava, Nike Run Club and Suu compared."
+        },
+        {
+          "href": "/blog/en/water-challenge-with-friends.html",
+          "title": "Water challenge with friends",
+          "desc": "Why doing it together is easier."
+        },
+        {
+          "href": "/blog/en/stick-with-calorie-counting.html",
+          "title": "Keep quitting calorie counting?",
+          "desc": "7 ways to stick with it without burning out."
+        }
+      ]
+    },
+    "ar": {
+      "slug": "alkasal-an-arriyada",
+      "read_minutes": 7,
+      "badge": "🚶 دليل · عادة الحركة",
+      "h1": "أشعر بالكسل عن ممارسة الرياضة: 7 طرق لتبدأ دون انتظار الحماس (وكيف تتابعها في Suu)",
+      "about": [
+        {
+          "name": "النشاط البدني"
+        },
+        {
+          "name": "الدافع لممارسة الرياضة"
+        },
+        {
+          "name": "بناء العادات"
+        }
+      ],
+      "meta": {
+        "title": "الكسل عن الرياضة: 7 طرق لتبدأ رغم ذلك | Suu",
+        "description": "الكسل عن الرياضة ليس مشكلة إرادة بل صعوبة في البدء. ابدأ بمشي 10 دقائق، حدّد الوقت والمكان مسبقًا، وأشرك صديقًا. مع الأدلة العلمية.",
+        "keywords": "الكسل عن الرياضة, أشعر بالكسل عن ممارسة الرياضة, كيف أحفز نفسي للرياضة, كيف أبدأ الرياضة, كم خطوة يوميا, كم دقيقة مشي يوميا, تحفيز الرياضة, الرياضة في البيت للكسالى",
+        "og_title": "أشعر بالكسل عن الرياضة: 7 طرق لتبدأ رغم ذلك",
+        "og_description": "ابدأ بـ10 دقائق، لا تقطع السلسلة، وأشرك صديقًا. لماذا تستحق الحركة القليلة كل هذا — بالأرقام."
+      },
+      "answer": "الكسل عن الرياضة غالبًا ليس نقصًا في الإرادة، بل عتبة بدء مرتفعة. أنجح طريقة هي تصغير الهدف: ابدأ بمشي 10 دقائق يوميًا، وحدّد الوقت والمكان مسبقًا، واجعل تقدّمك مرئيًا، وأشرك صديقًا. في Suu يتابع المشي بتحديد المواقع والسلسلة وترتيب الحركة الأسبوعي مع الأصدقاء ذلك مجانًا.",
+      "health_note": {
+        "head": "هذا المقال ليس نصيحة طبية.",
+        "body": [
+          "المعلومات هنا عامة. إذا كنت تعاني من مرض في القلب أو الرئتين أو المفاصل، أو من ارتفاع ضغط الدم أو السكري، أو كنتِ حاملًا، أو لم تتحرك منذ مدة طويلة، فاستشر طبيبك قبل البدء بروتين رياضي جديد.",
+          "توقّف واطلب المساعدة الطبية إذا لاحظت أثناء الحركة أيًّا مما يلي:"
+        ],
+        "red_flags": [
+          "ألم أو ضغط أو انقباض في الصدر",
+          "ضيق تنفّس غير معتاد أو دوخة أو شعور بالإغماء",
+          "خفقان أو ضربات قلب غير منتظمة"
+        ]
+      },
+      "disclosure": "كتبنا هذا الدليل بصفتنا الفريق المكوّن من شخصين الذي يطوّر Suu. نحن نرشّح تطبيقنا، لكن النصائح مبنية على منظمة الصحة العالمية ووزارة الصحة السعودية ودراسات محكّمة، ويمكنك تطبيق الخطوات نفسها دون Suu.",
+      "intro": [
+        "من يشعر بالكسل عن الرياضة ليس كسولًا في الغالب؛ إنه يدفع ثمن البدء في كل مرة: الملابس والوقت والتعب والمساومة الداخلية «ليس اليوم». الدماغ يفضّل المكافأة القريبة (الأريكة) على البعيدة (الصحة). لذلك الحل ليس البحث عن مزيد من الحماس، بل <strong>تسهيل البدء</strong>.",
+        "الخبر الجيد: فوائد الحركة تبدأ بجرعات أصغر بكثير مما يظن معظم الناس. بحسب منظمة الصحة العالمية، أي قدر من النشاط البدني أفضل من لا شيء، وكل حركة تُحتسب.<sup><a href=\"#ref1\">1</a></sup>"
+      ],
+      "analysis": [
+        {
+          "head": "كم من الحركة يكفي؟",
+          "body": [
+            "توصي منظمة الصحة العالمية البالغين بما لا يقل عن 150 دقيقة أسبوعيًا من النشاط متوسط الشدة، وعالميًا لا يبلغ 31% من البالغين — أي 1.8 مليار شخص — هذا المستوى (2022).<sup><a href=\"#ref1\">1</a></sup> وتوصي وزارة الصحة السعودية بالهدف نفسه: 150 دقيقة من التمارين المتوسطة أو 75 دقيقة من النشاط المكثف أسبوعيًا.<sup><a href=\"#ref2\">2</a></sup>",
+            "إذا بدت 150 دقيقة بعيدة فقسّمها: ثلاث مشيات يومية مدة كل منها 10 دقائق توصلك إلى الهدف نفسه. في البداية يهمّ <strong>عدد الأيام</strong> أكثر من عدد الدقائق."
+          ],
+          "callout": "في تحليل تجميعي ضمّ 15 مجموعة سكانية، كان خطر الوفاة لدى من يمشون نحو 5800 خطوة يوميًا أقل بنحو 40% مقارنةً بمن يمشون نحو 3500 خطوة؛ وثبتت الفائدة عند نحو 6000–8000 خطوة لمن تجاوزوا الستين، و8000–10000 خطوة لمن هم أصغر.<sup><a href=\"#ref3\">3</a></sup> إذا كنت تبدأ من الصفر، فأول آلاف الخطوات هي الأثمن."
+        },
+        {
+          "head": "7 أساليب لمن لا يشعر بالرغبة",
+          "body": [
+            "لا يحتاج أيٌّ منها إلى إرادة قوية؛ كلها تخفّض كلفة البدء."
+          ],
+          "list": [
+            "<strong>قاعدة الدقيقتين:</strong> هدفك ليس «ممارسة الرياضة» بل «ارتداء الحذاء والخروج من الباب». في معظم الأيام ستكمل بعد أن تخرج، وإن لم تفعل فلم تقطع السلسلة.",
+            "<strong>خطة «إذا–فإن»:</strong> «بعد الغداء سأخرج من باب العمل وأمشي 10 دقائق». كتابة الوقت والمكان مسبقًا تُخرج القرار من يد مزاجك اللحظي.",
+            "<strong>قلّل العوائق:</strong> جهّز ملابسك من الليلة السابقة وضع الحذاء قرب الباب. كل خطوة إضافية قبل البدء فرصة جديدة للتبرير.",
+            "<strong>اقرنها بما تحب:</strong> احتفظ بالبودكاست أو المسلسل المفضّل لوقت المشي فقط.",
+            "<strong>لا تمشِ وحدك:</strong> موعد مع صديق أو منافسة أسبوعية صغيرة يجعل قول «ليس اليوم» أصعب.",
+            "<strong>قِس وشاهد:</strong> في التجارب العشوائية ضمن مراجعة شملت 26 دراسة، مشى مستخدمو عدّاد الخطوات نحو 2500 خطوة يوميًا أكثر من غيرهم.<sup><a href=\"#ref4\">4</a></sup>",
+            "<strong>لا تفوّت يومين متتاليين:</strong> تفويت يوم أمر طبيعي؛ يومان متتاليان بداية عادة جديدة. في إحدى الدراسات احتاج السلوك الجديد في المتوسط إلى 66 يومًا ليصبح تلقائيًا.<sup><a href=\"#ref5\">5</a></sup>"
+          ]
+        },
+        {
+          "head": "الحماس أم العادة؟",
+          "body": [
+            "الحماس يتقلّب والعادة تبقى. عند معظم الناس يأتي الحماس بعد الحركة لا قبلها: شعور «جيد أنني خرجت» بعد أول 10 دقائق. لذلك احسب الأيام لا الدقائق في الأسابيع الأولى — خمس مرات من 10 دقائق في الأسبوع بداية أمتن من مرة واحدة من 50 دقيقة.",
+            "وفي الأجواء الحارة يمكنك المشي بعد المغرب أو في المراكز التجارية المكيّفة؛ الحركة لا يجب أن تكون في النادي الرياضي."
+          ]
+        },
+        {
+          "head": "في البيت والعمل والطريق: حركة بلا أعذار",
+          "body": [
+            "إذا لم تجد وقتًا منفصلًا للرياضة، فأدخل الحركة في يومك:"
+          ],
+          "list": [
+            "الدرج بدل المصعد، ولو لطابقين",
+            "المشي أثناء المكالمات الهاتفية",
+            "النزول قبل محطتك بمحطة واحدة أو ركن السيارة أبعد قليلًا",
+            "مشي 10 دقائق بعد العشاء",
+            "10 تمارين قرفصاء أو ضغط على الحائط بين حلقات المسلسل"
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "أين تتابع ذلك في Suu",
+        "lead": "كل ما يلي متاح في الخطة المجانية. أسماء القوائم كما تظهر في التطبيق:",
+        "steps": [
+          {
+            "feature": "سجّل مشي 10 دقائق بتحديد المواقع",
+            "where": "الشاشة الرئيسية ← الإضافة السريعة ← <strong>إضافة تمرين</strong> ← المشي ← ابدأ",
+            "solves": "تُسجَّل المدة والمسافة والوتيرة والمسار على الخريطة مباشرة، وتُحسب السعرات المحروقة وأثر التمرين على هدف الماء تلقائيًا. يمكنك البدء من Apple Watch أيضًا."
+          },
+          {
+            "feature": "ترتيب الحركة الأسبوعي مع الأصدقاء",
+            "where": "الإعدادات ← <strong>المتصدرون · لوحة النقاط</strong> ← الأصدقاء ← <strong>الحركة</strong>",
+            "solves": "ترى الدقائق النشطة الأسبوعية لأصدقائك جنبًا إلى جنب. يُعاد ضبط الجدول كل أسبوع، فلا تُحسب عليك بداية الأسبوع الماضي السيئة. حتى 4 أصدقاء في الخطة المجانية."
+          },
+          {
+            "feature": "نكز: تحرّك",
+            "where": "<strong>الأصدقاء والدوري</strong> في الشاشة الرئيسية ← صديقك ← <strong>نكز</strong> ← تحرّك",
+            "solves": "أرسل بلمسة واحدة تذكير «تحرّك» لصديق لم يتحرك اليوم، ويمكنه أن يرسله لك أيضًا. هذا أسلوب «لا تمشِ وحدك» داخل التطبيق."
+          },
+          {
+            "feature": "محطات المسافة والأوسمة",
+            "where_ios": "تبويب <strong>أنت</strong> ← التمارين ← <strong>محطات المسافة</strong> · <strong>الأوسمة</strong>",
+            "where_android": "شاشة <strong>الشارات</strong> و<strong>الإنجازات</strong> في نهاية التمرين",
+            "solves": "المسافة في الجري والمشي والمشي الجبلي تتحوّل إلى محطات يمكن مشاركتها كشهادة في القصة، وأكثر من 50 وسامًا تجعل التقدّم الصغير مرئيًا."
+          },
+          {
+            "feature": "تذكير يومي بالحركة",
+            "where_ios": "الإعدادات ← إعدادات الإشعارات ← <strong>الإشعارات اليومية</strong>",
+            "where_android": "الإعدادات ← <strong>الإشعارات اليومية</strong>",
+            "solves": "تذكير «سجّل نشاطك 🚶» ينقل وقت خطة «إذا–فإن» إلى هاتفك."
+          }
+        ],
+        "note": "إنشاء دوري خاص مع الأصدقاء ضمن Premium؛ الترتيب الأسبوعي والنكز مجانيان.",
+        "button": "حمّل Suu مجانًا"
+      },
+      "verdict": {
+        "head": "باختصار",
+        "body": [
+          "طريق تجاوز الكسل عن الرياضة ليس انتظار الحماس بل تسهيل البدء: صغّر الهدف إلى 10 دقائق، وحدّد الوقت والمكان مسبقًا، وجهّز ملابسك، وأشرك صديقًا.",
+          "اجعل الاستمرارية لا الأداء هدفك الأول. أكبر فائدة صحية تأتي عند الانتقال من لا شيء إلى القليل، وجعل هذا الانتقال مرئيًا يسهّل خروجك من الباب حتى في أيام الكسل."
+        ]
+      },
+      "cta": {
+        "head": "سجّل أول 10 دقائق اليوم",
+        "sub": "المشي بتحديد المواقع والسلسلة وترتيب الأصدقاء مجانية · iOS وAndroid",
+        "button": "حمّل Suu مجانًا"
+      },
+      "faq": [
+        {
+          "q": "أشعر بالكسل عن ممارسة الرياضة، كيف أحفّز نفسي؟",
+          "a": "بدل انتظار الحماس، سهّل البدء: صغّر الهدف إلى مشي 10 دقائق يوميًا، وحدّد الوقت والمكان مسبقًا، وجهّز ملابسك من الليلة السابقة، وتمرّن مع صديق. الحماس يأتي غالبًا بعد أن تبدأ الحركة."
+        },
+        {
+          "q": "كم دقيقة من المشي يوميًا تكفي؟",
+          "a": "توصي منظمة الصحة العالمية بما لا يقل عن 150 دقيقة من النشاط المتوسط أسبوعيًا، أي 30 دقيقة في خمسة أيام. إذا كنت خاملًا حاليًا فحتى 10 دقائق يوميًا تصنع فرقًا — كل حركة تُحتسب."
+        },
+        {
+          "q": "كم خطوة يجب أن أمشي يوميًا؟",
+          "a": "وفق تحليل تجميعي كبير، يثبت انخفاض خطر الوفاة عند نحو 6000–8000 خطوة لمن تجاوزوا الستين و8000–10000 لمن هم أصغر. لكن المكسب الأكبر في البداية: الانتقال من نحو 3500 إلى 5800 خطوة يخفّض الخطر بوضوح."
+        },
+        {
+          "q": "كيف أمارس الرياضة في البيت وأنا كسول؟",
+          "a": "بدل تخصيص وقت منفصل، أدخل الحركة في يومك: قرفصاء بين الحلقات، المشي أثناء المكالمات، الدرج. أبقِ الأدوات في مكان ظاهر واجعل الجلسات قصيرة لتقليل العوائق."
+        },
+        {
+          "q": "هل يفسد تفويت يوم واحد العادة؟",
+          "a": "لا. يوم واحد لا يكسر العادة؛ الخطر الحقيقي في تفويت يومين متتاليين. يحتاج السلوك الجديد في المتوسط نحو شهرين ليصبح تلقائيًا، والتعثّر في الطريق أمر طبيعي."
+        },
+        {
+          "q": "هل تتبّع التمارين في Suu مجاني؟",
+          "a": "نعم. تسجيل المشي والجري وركوب الدراجة بتحديد المواقع، والترتيب الأسبوعي مع الأصدقاء، والنكز، والسلسلة، والأوسمة كلها في الخطة المجانية. الدوري الخاص وتحليل الوجبات بالصورة والذكاء الاصطناعي غير المحدود ضمن Premium."
+        }
+      ],
+      "references": [
+        {
+          "label": "منظمة الصحة العالمية — النشاط البدني (صحيفة وقائع)",
+          "href": "https://www.who.int/ar/news-room/fact-sheets/detail/physical-activity"
+        },
+        {
+          "label": "وزارة الصحة السعودية — منصة التوعية: نمط الحياة الصحي",
+          "href": "https://www.moh.gov.sa/awarenessplateform/HealthyLifestyle/Pages/default.aspx"
+        },
+        {
+          "label": "Paluch AE وآخرون — Daily steps and all-cause mortality: a meta-analysis of 15 international cohorts. Lancet Public Health, 2022",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/35247352/"
+        },
+        {
+          "label": "Bravata DM وآخرون — Using pedometers to increase physical activity and improve health: a systematic review. JAMA, 2007",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/18029834/"
+        },
+        {
+          "label": "Lally P وآخرون — How are habits formed: modelling habit formation in the real world. European Journal of Social Psychology, 2010",
+          "href": "https://doi.org/10.1002/ejsp.674"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/ar/hurq-al-suerat.html",
+          "title": "كم سعرة تحرق التمارين؟",
+          "desc": "أرقام واقعية للمشي والجري والدراجة."
+        },
+        {
+          "href": "/blog/ar/afdal-tatbiq-tamarin.html",
+          "title": "أفضل تطبيق لتتبّع التمارين 2026",
+          "desc": "مقارنة Strava وNike Run Club وSuu."
+        },
+        {
+          "href": "/blog/ar/nadhari-almae-maa-asdiqa.html",
+          "title": "تحدّي الماء مع الأصدقاء",
+          "desc": "لماذا يكون الالتزام أسهل معًا."
+        },
+        {
+          "href": "/blog/ar/malal-hisab-al-suerat.html",
+          "title": "أتوقف دائمًا عن حساب السعرات",
+          "desc": "7 طرق للاستمرار دون ملل."
+        }
+      ]
+    },
+    "ru": {
+      "slug": "len-zanimatsya-sportom",
+      "read_minutes": 7,
+      "badge": "🚶 Руководство · Привычка двигаться",
+      "h1": "Лень заниматься спортом: 7 способов начать, не дожидаясь мотивации (и отслеживать это в Suu)",
+      "about": [
+        {
+          "name": "Физическая активность"
+        },
+        {
+          "name": "Мотивация к тренировкам"
+        },
+        {
+          "name": "Формирование привычек"
+        }
+      ],
+      "meta": {
+        "title": "Лень заниматься спортом: 7 способов начать | Suu",
+        "description": "Лень заниматься спортом — это не про силу воли, а про высокий порог старта. Начните с 10 минут ходьбы, заранее решите когда и где, подключите друга.",
+        "keywords": "лень заниматься спортом, нет мотивации для спорта, как заставить себя заниматься спортом, как начать заниматься спортом, сколько шагов в день нужно, сколько минут ходить в день, мотивация к тренировкам",
+        "og_title": "Лень заниматься спортом: 7 способов начать",
+        "og_description": "Начните с 10 минут, не рвите цепочку, подключите друга. Почему даже немного движения так много значит — в цифрах."
+      },
+      "answer": "Лень заниматься спортом — чаще всего не нехватка силы воли, а высокий порог старта. Лучше всего работает уменьшение цели: начните с 10 минут ходьбы в день, заранее решите время и место, сделайте прогресс видимым и подключите друга. В Suu это бесплатно отслеживают GPS-прогулки, серия дней и еженедельный рейтинг движения с друзьями.",
+      "health_note": {
+        "head": "Эта статья не является медицинской консультацией.",
+        "body": [
+          "Информация носит общий характер. Если у вас заболевания сердца, лёгких или суставов, повышенное давление или диабет, вы беременны или давно не двигались, посоветуйтесь с врачом, прежде чем начинать новые тренировки.",
+          "Остановитесь и обратитесь за медицинской помощью, если во время движения появились:"
+        ],
+        "red_flags": [
+          "боль, давление или сжатие в груди",
+          "необычная одышка, головокружение или ощущение, что вот-вот потеряете сознание",
+          "сердцебиение или неровный пульс"
+        ]
+      },
+      "disclosure": "Это руководство написала команда из двух человек, которая разрабатывает Suu. Мы рекомендуем своё приложение, но советы опираются на Всемирную организацию здравоохранения и рецензируемые исследования — те же шаги можно выполнять и без Suu.",
+      "intro": [
+        "Тому, кому лень заниматься спортом, обычно не лень вообще — он каждый раз платит цену старта: одежда, время, усталость и внутренний торг «не сегодня». Мозг предпочитает близкую награду (диван) далёкой (здоровье). Поэтому решение — не искать больше мотивации, а <strong>упростить начало</strong>.",
+        "Хорошая новость: польза движения начинается с гораздо меньших доз, чем думает большинство. По данным ВОЗ, любая физическая активность лучше, чем никакой, и учитывается вся.<sup><a href=\"#ref1\">1</a></sup>"
+      ],
+      "analysis": [
+        {
+          "head": "Сколько движения достаточно?",
+          "body": [
+            "ВОЗ рекомендует взрослым не менее 150 минут умеренной активности в неделю; в мире до этого уровня не дотягивает 31% взрослых — 1,8 млрд человек (2022).<sup><a href=\"#ref1\">1</a></sup> В рекомендациях ВОЗ 2020 года прямо сказано, что минимальной длительности одного занятия больше нет — короткие отрезки тоже считаются.<sup><a href=\"#ref2\">2</a></sup>",
+            "Если 150 минут кажутся недостижимыми, разделите их: три прогулки по 10 минут в день дают тот же результат. На старте <strong>количество дней</strong> важнее минут."
+          ],
+          "callout": "В метаанализе 15 когорт у людей, проходивших около 5800 шагов в день, риск смерти был примерно на 40% ниже, чем у проходивших около 3500; польза выходила на плато около 6000–8000 шагов у людей старше 60 лет и 8000–10 000 — у тех, кто моложе.<sup><a href=\"#ref3\">3</a></sup> Если вы начинаете с нуля, первые несколько тысяч шагов — самые ценные."
+        },
+        {
+          "head": "7 приёмов, когда совсем не хочется",
+          "body": [
+            "Ни один из них не требует железной воли — все они снижают цену старта."
+          ],
+          "list": [
+            "<strong>Правило двух минут:</strong> цель не «позаниматься», а «надеть кроссовки и выйти за дверь». В большинстве дней, выйдя, вы продолжите; а если нет — цепочка всё равно не порвана.",
+            "<strong>План «если — то»:</strong> «После обеда я выйду из офиса и пройду 10 минут». Когда время и место записаны заранее, решение не зависит от настроения в моменте.",
+            "<strong>Уберите трение:</strong> приготовьте одежду с вечера, поставьте кроссовки у двери. Каждый лишний шаг до старта — ещё один повод передумать.",
+            "<strong>Свяжите с приятным:</strong> любимый подкаст или сериал — только на прогулке.",
+            "<strong>Не в одиночку:</strong> встреча с другом или небольшое еженедельное соревнование делают «не сегодня» сложнее.",
+            "<strong>Измеряйте:</strong> в рандомизированных исследованиях из обзора 26 работ люди с шагомером проходили в день примерно на 2500 шагов больше, чем без него.<sup><a href=\"#ref4\">4</a></sup>",
+            "<strong>Не пропускайте дважды подряд:</strong> пропустить день — нормально; два дня подряд — начало новой привычки. В одном исследовании новому поведению в среднем требовалось 66 дней, чтобы стать автоматическим.<sup><a href=\"#ref5\">5</a></sup>"
+          ]
+        },
+        {
+          "head": "Мотивация или привычка?",
+          "body": [
+            "Мотивация то приходит, то уходит; привычка остаётся. У большинства людей мотивация появляется после движения, а не до него — то самое «хорошо, что вышел» после первых 10 минут. Поэтому в первые недели считайте дни, а не минуты: пять раз по 10 минут за неделю — более надёжный старт, чем один раз 50 минут.",
+            "Зимой, когда темно и скользко, подойдут лестница в подъезде, торговый центр или 10 минут упражнений дома — движение не обязано жить в спортзале."
+          ]
+        },
+        {
+          "head": "Дома, на работе, в дороге: движение без отговорок",
+          "body": [
+            "Если отдельного «времени на спорт» нет, встройте движение в день:"
+          ],
+          "list": [
+            "лестница вместо лифта — хотя бы два этажа",
+            "разговоры по телефону — на ходу",
+            "выйти из автобуса или метро на остановку раньше",
+            "10-минутная прогулка после ужина",
+            "10 приседаний или отжиманий от стены между сериями"
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Где отслеживать это в Suu",
+        "lead": "Всё перечисленное доступно в бесплатном плане. Названия пунктов — как в интерфейсе:",
+        "steps": [
+          {
+            "feature": "Запишите 10-минутную прогулку с GPS",
+            "where": "Главный экран → быстрое добавление → <strong>Добавить тренировку</strong> → Ходьба → старт",
+            "solves": "Время, дистанция, темп и маршрут на карте записываются в реальном времени; сожжённые калории и влияние тренировки на норму воды считаются автоматически. Начать можно и с Apple Watch."
+          },
+          {
+            "feature": "Еженедельный рейтинг «Движение» с друзьями",
+            "where": "Настройки → <strong>Рейтинг · Таблица очков</strong> → Друзья → <strong>Движение</strong>",
+            "solves": "Активные минуты друзей за неделю видны рядом. Таблица обнуляется каждую неделю, так что неудачное начало прошлой недели не тянет эту. В бесплатном плане — до 4 друзей."
+          },
+          {
+            "feature": "Подтолкнуть: «Подвигайся»",
+            "where": "<strong>Друзья и Лига</strong> на главном экране → друг → <strong>Подтолкнуть</strong> → Подвигайся",
+            "solves": "Одним касанием отправьте напоминание «подвигайся» другу, который сегодня не двигался, — и он может отправить его вам. Приём «не в одиночку» прямо в приложении."
+          },
+          {
+            "feature": "Вехи и значки",
+            "where_ios": "Вкладка <strong>Ты</strong> → Тренировки → <strong>Дистанционные вехи</strong> · <strong>Значки</strong>",
+            "where_android": "Экран <strong>Значки</strong> и <strong>Этапы</strong> в конце тренировки",
+            "solves": "Дистанция бега, ходьбы и хайкинга складывается в вехи, которыми можно поделиться сертификатом в истории; более 50 значков делают маленький прогресс заметным."
+          },
+          {
+            "feature": "Ежедневное напоминание о движении",
+            "where_ios": "Настройки → Настройки уведомлений → <strong>Ежедневные уведомления</strong>",
+            "where_android": "Настройки → <strong>Ежедневные уведомления</strong>",
+            "solves": "Напоминание «Запишите активность 🚶» переносит время из плана «если — то» в ваш телефон."
+          }
+        ],
+        "note": "Создание собственной лиги с друзьями — в Premium; еженедельный рейтинг и «Подтолкнуть» бесплатны.",
+        "button": "Скачать Suu бесплатно"
+      },
+      "verdict": {
+        "head": "Коротко",
+        "body": [
+          "Справиться с ленью к спорту помогает не ожидание мотивации, а упрощение старта: уменьшите цель до 10 минут, заранее решите время и место, приготовьте одежду и подключите друга.",
+          "Первая цель — регулярность, а не результат. Самая большая польза для здоровья — при переходе от нуля к «немного»; когда этот переход виден, выйти за дверь легче даже в ленивые дни."
+        ]
+      },
+      "cta": {
+        "head": "Запишите первые 10 минут сегодня",
+        "sub": "GPS-прогулки, серия и рейтинг друзей — бесплатно · iOS и Android",
+        "button": "Скачать Suu бесплатно"
+      },
+      "faq": [
+        {
+          "q": "Лень заниматься спортом — как себя заставить?",
+          "a": "Не ждите мотивации, а упростите старт: сократите цель до 10 минут ходьбы в день, заранее решите время и место, приготовьте одежду с вечера и занимайтесь с другом. Мотивация чаще всего приходит уже после начала движения."
+        },
+        {
+          "q": "Сколько минут в день нужно ходить?",
+          "a": "ВОЗ рекомендует не менее 150 минут умеренной активности в неделю — это 30 минут пять дней в неделю. Если сейчас вы почти не двигаетесь, даже 10 минут в день дают эффект: засчитывается любое движение."
+        },
+        {
+          "q": "Сколько шагов в день нужно проходить?",
+          "a": "По данным крупного метаанализа, снижение риска смерти выходит на плато около 6000–8000 шагов у людей старше 60 лет и 8000–10 000 у более молодых. Но самый большой выигрыш — в начале: переход примерно с 3500 до 5800 шагов уже заметно снижает риск."
+        },
+        {
+          "q": "Как заниматься дома, если лень?",
+          "a": "Вместо отдельного времени на спорт встройте движение в день: приседания между сериями, ходьба во время звонков, лестница. Держите инвентарь на виду и делайте занятия короткими, чтобы убрать трение."
+        },
+        {
+          "q": "Если пропустить один день, привычка сломается?",
+          "a": "Нет. Один пропуск привычку не ломает; настоящий риск — два дня подряд. Новому поведению в среднем нужно около двух месяцев, чтобы стать автоматическим, и сбои по пути — это нормально."
+        },
+        {
+          "q": "Отслеживание тренировок в Suu бесплатное?",
+          "a": "Да. GPS-запись ходьбы, бега и велопоездок, еженедельный рейтинг с друзьями, «Подтолкнуть», серия и значки — в бесплатном плане. Своя лига, анализ еды по фото и безлимитный AI — в Premium."
+        }
+      ],
+      "references": [
+        {
+          "label": "ВОЗ — Физическая активность (информационный бюллетень)",
+          "href": "https://www.who.int/ru/news-room/fact-sheets/detail/physical-activity"
+        },
+        {
+          "label": "Всемирная организация здравоохранения — WHO guidelines on physical activity and sedentary behaviour (2020)",
+          "href": "https://www.who.int/publications/i/item/9789240015128"
+        },
+        {
+          "label": "Paluch AE и соавт. — Daily steps and all-cause mortality: a meta-analysis of 15 international cohorts. Lancet Public Health, 2022",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/35247352/"
+        },
+        {
+          "label": "Bravata DM и соавт. — Using pedometers to increase physical activity and improve health: a systematic review. JAMA, 2007",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/18029834/"
+        },
+        {
+          "label": "Lally P и соавт. — How are habits formed: modelling habit formation in the real world. European Journal of Social Psychology, 2010",
+          "href": "https://doi.org/10.1002/ejsp.674"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/ru/raskhod-kalorij.html",
+          "title": "Сколько калорий сжигает тренировка?",
+          "desc": "Реальные цифры для ходьбы, бега и велосипеда."
+        },
+        {
+          "href": "/blog/ru/luchshee-prilozhenie-dlya-trenirovok.html",
+          "title": "Лучшее приложение для тренировок 2026",
+          "desc": "Strava, Nike Run Club и Suu в сравнении."
+        },
+        {
+          "href": "/blog/ru/vodnyi-challenge-s-druzyami.html",
+          "title": "Водный челлендж с друзьями",
+          "desc": "Почему вместе держаться проще."
+        },
+        {
+          "href": "/blog/ru/nadoelo-schitat-kalorii.html",
+          "title": "Надоело считать калории?",
+          "desc": "7 способов продолжать без выгорания."
+        }
+      ]
+    },
+    "de": {
+      "slug": "keine-lust-auf-sport",
+      "read_minutes": 7,
+      "badge": "🚶 Ratgeber · Bewegungsgewohnheit",
+      "h1": "Keine Lust auf Sport? 7 Wege, ohne Motivation anzufangen (und es in Suu zu verfolgen)",
+      "about": [
+        {
+          "name": "Körperliche Aktivität"
+        },
+        {
+          "name": "Motivation zum Sport"
+        },
+        {
+          "name": "Gewohnheiten aufbauen"
+        }
+      ],
+      "meta": {
+        "title": "Keine Lust auf Sport? 7 Wege, trotzdem anzufangen | Suu",
+        "description": "Keine Lust auf Sport ist selten ein Willensproblem, sondern eine zu hohe Hürde. Starte mit 10 Minuten Gehen, plane Zeit und Ort, hol dir einen Freund dazu.",
+        "keywords": "keine lust auf sport, keine motivation für sport, wie motiviere ich mich zum sport, mit sport anfangen, wie viele schritte am tag, wie lange spazieren am tag, sport motivation tipps, faul sport",
+        "og_title": "Keine Lust auf Sport? 7 Wege, trotzdem anzufangen",
+        "og_description": "Mit 10 Minuten starten, die Kette nicht reißen lassen, Freunde einbinden. Warum schon wenig Bewegung so viel bringt – in Zahlen."
+      },
+      "answer": "Keine Lust auf Sport ist meist kein Mangel an Willenskraft, sondern eine zu hohe Einstiegshürde. Am besten wirkt ein kleineres Ziel: Starte mit 10 Minuten Gehen am Tag, leg Uhrzeit und Ort vorher fest, mach deinen Fortschritt sichtbar und hol dir einen Freund dazu. In Suu verfolgen GPS-Spaziergänge, Serien und eine wöchentliche Bewegungs-Bestenliste mit Freunden das kostenlos.",
+      "health_note": {
+        "head": "Dieser Artikel ist keine medizinische Beratung.",
+        "body": [
+          "Er dient der allgemeinen Information. Wenn du eine Herz-, Lungen- oder Gelenkerkrankung, Bluthochdruck oder Diabetes hast, schwanger bist oder lange inaktiv warst, sprich vor einem neuen Trainingsplan mit deiner Ärztin oder deinem Arzt.",
+          "Hör auf und hol dir medizinische Hilfe, wenn du beim Bewegen Folgendes bemerkst:"
+        ],
+        "red_flags": [
+          "Schmerzen, Druck oder Engegefühl in der Brust",
+          "ungewöhnliche Atemnot, Schwindel oder das Gefühl, ohnmächtig zu werden",
+          "Herzrasen oder unregelmäßiger Herzschlag"
+        ]
+      },
+      "disclosure": "Diesen Ratgeber haben wir als das zweiköpfige Team geschrieben, das Suu entwickelt. Wir empfehlen unsere App, aber die Ratschläge stützen sich auf die Weltgesundheitsorganisation, das Gesundheitsportal des Bundes und begutachtete Studien – dieselben Schritte kannst du auch ohne Suu gehen.",
+      "intro": [
+        "Wer keine Lust auf Sport hat, ist meist nicht faul, sondern zahlt jedes Mal den Preis des Anfangens: Kleidung, Zeit, Müdigkeit und das innere „heute nicht“-Verhandeln. Das Gehirn zieht die nahe Belohnung (Sofa) der fernen (Gesundheit) vor. Die Lösung ist also nicht mehr Motivation, sondern <strong>das Anfangen leichter zu machen</strong>.",
+        "Die gute Nachricht: Der Nutzen von Bewegung beginnt bei viel kleineren Dosen, als die meisten denken. Laut Weltgesundheitsorganisation ist jede körperliche Aktivität besser als keine – und jede zählt.<sup><a href=\"#ref1\">1</a></sup>"
+      ],
+      "analysis": [
+        {
+          "head": "Wie viel Bewegung reicht?",
+          "body": [
+            "Die Weltgesundheitsorganisation empfiehlt Erwachsenen mindestens 150 Minuten moderate Aktivität pro Woche; weltweit schaffen das 31 % der Erwachsenen nicht – 1,8 Milliarden Menschen (2022).<sup><a href=\"#ref1\">1</a></sup> Das Gesundheitsportal des Bundes übersetzt das in etwa 30 Minuten an fünf Tagen plus Kräftigungsübungen an zwei Tagen pro Woche.<sup><a href=\"#ref2\">2</a></sup>",
+            "Wenn 150 Minuten weit weg wirken, teil sie auf: Drei Spaziergänge à 10 Minuten am Tag führen zum selben Ziel. Am Anfang zählt die <strong>Zahl der Tage</strong> mehr als die Minuten."
+          ],
+          "callout": "In einer Metaanalyse von 15 Kohorten hatten Menschen mit rund 5.800 Schritten am Tag ein etwa 40 % niedrigeres Sterberisiko als Menschen mit rund 3.500 Schritten; ab etwa 6.000–8.000 Schritten (über 60 Jahre) bzw. 8.000–10.000 (jünger) flachte der Nutzen ab.<sup><a href=\"#ref3\">3</a></sup> Wer bei null startet, macht mit den ersten paar Tausend Schritten die wertvollsten."
+        },
+        {
+          "head": "7 Tricks für Tage ohne Lust",
+          "body": [
+            "Keiner davon braucht eiserne Disziplin – alle senken die Kosten des Anfangens."
+          ],
+          "list": [
+            "<strong>Die Zwei-Minuten-Regel:</strong> Dein Ziel ist nicht „Sport machen“, sondern „Schuhe an und zur Tür raus“. Meist machst du draußen weiter; wenn nicht, ist die Kette trotzdem nicht gerissen.",
+            "<strong>Ein Wenn-dann-Plan:</strong> „Nach dem Mittagessen gehe ich aus der Bürotür und laufe 10 Minuten.“ Wenn Uhrzeit und Ort feststehen, entscheidet nicht mehr die Laune des Moments.",
+            "<strong>Reibung reduzieren:</strong> Leg die Kleidung am Vorabend raus und stell die Schuhe an die Tür. Jeder zusätzliche Schritt vor dem Start ist eine weitere Ausrede.",
+            "<strong>Mit etwas Schönem koppeln:</strong> Den Lieblingspodcast oder die Serie gibt es nur beim Gehen.",
+            "<strong>Nicht allein:</strong> Eine Verabredung oder ein kleiner Wochenwettbewerb macht „heute nicht“ schwerer.",
+            "<strong>Messen:</strong> In den randomisierten Studien einer Übersicht über 26 Arbeiten gingen Menschen mit Schrittzähler täglich rund 2.500 Schritte mehr als ohne.<sup><a href=\"#ref4\">4</a></sup>",
+            "<strong>Nie zweimal hintereinander auslassen:</strong> Ein ausgelassener Tag ist normal; zwei hintereinander sind der Anfang einer neuen Gewohnheit. In einer Studie brauchte ein neues Verhalten im Median 66 Tage, bis es automatisch lief.<sup><a href=\"#ref5\">5</a></sup>"
+          ]
+        },
+        {
+          "head": "Motivation oder Gewohnheit?",
+          "body": [
+            "Motivation schwankt, Gewohnheiten bleiben. Bei den meisten kommt die Motivation nach der Bewegung, nicht davor – das „gut, dass ich los bin“ nach den ersten 10 Minuten. Zähl in den ersten Wochen deshalb Tage statt Minuten: fünfmal 10 Minuten pro Woche sind ein stabilerer Start als einmal 50.",
+            "Bei Schmuddelwetter tun es auch Treppenhaus, Einkaufszentrum oder 10 Minuten Übungen im Wohnzimmer – Bewegung muss nicht im Fitnessstudio stattfinden."
+          ]
+        },
+        {
+          "head": "Zu Hause, im Büro, unterwegs: Bewegung ohne Ausreden",
+          "body": [
+            "Wenn du keine eigene „Sportzeit“ findest, bau Bewegung in den Tag ein:"
+          ],
+          "list": [
+            "Treppe statt Aufzug, zumindest zwei Stockwerke",
+            "Telefonate im Gehen führen",
+            "Eine Haltestelle früher aus Bus oder Bahn steigen",
+            "10 Minuten Spaziergang nach dem Abendessen",
+            "10 Kniebeugen oder Wand-Liegestütze zwischen zwei Folgen"
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Wo du das in Suu verfolgst",
+        "lead": "Alles Folgende gibt es im kostenlosen Plan. Die Menünamen sind genau so wie in der App:",
+        "steps": [
+          {
+            "feature": "10 Minuten Gehen per GPS aufzeichnen",
+            "where": "Startbildschirm → Schnell hinzufügen → <strong>Übung hinzufügen</strong> → Gehen → Start",
+            "solves": "Dauer, Strecke, Tempo und die Route auf der Karte werden live aufgezeichnet; verbrannte Kalorien und der Effekt des Trainings auf dein Trinkziel werden automatisch berechnet. Starten kannst du auch auf der Apple Watch."
+          },
+          {
+            "feature": "Wöchentliche Bewegungs-Rangliste mit Freunden",
+            "where": "Einstellungen → <strong>Rangliste · Bestenliste</strong> → Freunde → <strong>Bewegung</strong>",
+            "solves": "Die aktiven Minuten deiner Freunde der Woche stehen nebeneinander. Die Liste startet jede Woche neu, ein schlechter Start letzte Woche zählt also nicht gegen diese. Im kostenlosen Plan bis zu 4 Freunde."
+          },
+          {
+            "feature": "Anstupsen: Beweg dich",
+            "where": "<strong>Freunde &amp; Liga</strong> auf dem Startbildschirm → dein Freund → <strong>Anstupsen</strong> → Beweg dich",
+            "solves": "Schick einem Freund, der sich heute noch nicht bewegt hat, mit einem Tipp eine „Beweg dich“-Erinnerung – und er dir auch. Der „Nicht allein“-Trick, direkt eingebaut."
+          },
+          {
+            "feature": "Meilensteine und Abzeichen",
+            "where_ios": "Tab <strong>Du</strong> → <strong>Distanz-Meilensteine</strong> · <strong>Abzeichen</strong>",
+            "where_android": "Der Bildschirm <strong>Abzeichen</strong> und die <strong>Meilensteine</strong> am Ende eines Trainings",
+            "solves": "Strecke aus Laufen, Gehen und Wandern summiert sich zu Meilensteinen, die du als Zertifikat in deiner Story teilen kannst; über 50 Abzeichen machen kleine Fortschritte sichtbar."
+          },
+          {
+            "feature": "Tägliche Bewegungs-Erinnerung",
+            "where_ios": "Einstellungen → Benachrichtigungseinstellungen → <strong>Tägliche Benachrichtigungen</strong>",
+            "where_android": "Einstellungen → <strong>Tägliche Benachrichtigungen</strong>",
+            "solves": "Die Erinnerung „Bewegung eintragen 🚶“ bringt die Uhrzeit aus deinem Wenn-dann-Plan aufs Handy."
+          }
+        ],
+        "note": "Eine eigene Freundesliga anzulegen ist Premium; die wöchentliche Rangliste und das Anstupsen sind kostenlos.",
+        "button": "Suu kostenlos laden"
+      },
+      "verdict": {
+        "head": "Kurz gesagt",
+        "body": [
+          "Gegen die Unlust hilft nicht das Warten auf Motivation, sondern ein leichterer Start: Ziel auf 10 Minuten verkleinern, Uhrzeit und Ort vorher festlegen, Kleidung bereitlegen und einen Freund einbinden.",
+          "Dein erstes Ziel ist Regelmäßigkeit, nicht Leistung. Der größte Gesundheitsgewinn liegt im Schritt von nichts zu ein bisschen; wenn dieser Schritt sichtbar wird, kommst du auch an faulen Tagen leichter aus der Tür."
+        ]
+      },
+      "cta": {
+        "head": "Trag heute deine ersten 10 Minuten ein",
+        "sub": "GPS-Spaziergänge, Serien und Freundes-Rangliste kostenlos · iOS und Android",
+        "button": "Suu kostenlos laden"
+      },
+      "faq": [
+        {
+          "q": "Keine Lust auf Sport – wie motiviere ich mich?",
+          "a": "Warte nicht auf Motivation, sondern mach den Start leichter: Ziel auf 10 Minuten Gehen am Tag verkleinern, Uhrzeit und Ort vorher festlegen, Kleidung am Vorabend bereitlegen und mit einem Freund gehen. Die Motivation kommt meist erst, wenn du dich bewegst."
+        },
+        {
+          "q": "Wie viele Minuten sollte ich am Tag spazieren gehen?",
+          "a": "Die Weltgesundheitsorganisation empfiehlt mindestens 150 Minuten moderate Aktivität pro Woche, also etwa 30 Minuten an fünf Tagen. Wenn du dich bisher kaum bewegst, bringen schon 10 Minuten am Tag etwas – jede Bewegung zählt."
+        },
+        {
+          "q": "Wie viele Schritte am Tag sind sinnvoll?",
+          "a": "Laut einer großen Metaanalyse flacht der Rückgang des Sterberisikos bei etwa 6.000–8.000 Schritten (über 60) bzw. 8.000–10.000 (jünger) ab. Der größte Gewinn liegt aber am Anfang: Schon der Schritt von etwa 3.500 auf 5.800 Schritte senkt das Risiko deutlich."
+        },
+        {
+          "q": "Wie mache ich zu Hause Sport, wenn ich faul bin?",
+          "a": "Statt extra Sportzeit einzuplanen, bau Bewegung in den Alltag ein: Kniebeugen zwischen Folgen, Gehen beim Telefonieren, Treppe. Halte Ausrüstung sichtbar und die Einheiten kurz, damit die Hürde klein bleibt."
+        },
+        {
+          "q": "Macht ein ausgelassener Tag die Gewohnheit kaputt?",
+          "a": "Nein. Ein einzelner ausgelassener Tag bricht keine Gewohnheit; das echte Risiko sind zwei Tage hintereinander. Neue Verhaltensweisen brauchen im Schnitt etwa zwei Monate, bis sie automatisch laufen, und Ausrutscher gehören dazu."
+        },
+        {
+          "q": "Ist das Sport-Tracking in Suu kostenlos?",
+          "a": "Ja. GPS-Aufzeichnung von Spaziergängen, Läufen und Radtouren, die wöchentliche Freundes-Rangliste, Anstupsen, Serien und Abzeichen sind im kostenlosen Plan. Eigene Ligen, Foto-Mahlzeitenanalyse und unbegrenzte KI sind Premium."
+        }
+      ],
+      "references": [
+        {
+          "label": "Weltgesundheitsorganisation — Physical activity (Fact Sheet)",
+          "href": "https://www.who.int/news-room/fact-sheets/detail/physical-activity"
+        },
+        {
+          "label": "gesund.bund.de (Bundesministerium für Gesundheit) — Gesund durch Bewegung",
+          "href": "https://gesund.bund.de/gesund-durch-bewegung"
+        },
+        {
+          "label": "Paluch AE et al. — Daily steps and all-cause mortality: a meta-analysis of 15 international cohorts. Lancet Public Health, 2022",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/35247352/"
+        },
+        {
+          "label": "Bravata DM et al. — Using pedometers to increase physical activity and improve health: a systematic review. JAMA, 2007",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/18029834/"
+        },
+        {
+          "label": "Lally P et al. — How are habits formed: modelling habit formation in the real world. European Journal of Social Psychology, 2010",
+          "href": "https://doi.org/10.1002/ejsp.674"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/de/kalorienverbrauch-beim-sport.html",
+          "title": "Kalorienverbrauch beim Sport",
+          "desc": "Realistische Zahlen für Gehen, Laufen und Radfahren."
+        },
+        {
+          "href": "/blog/de/beste-workout-tracker-app.html",
+          "title": "Die beste Workout-Tracker-App 2026",
+          "desc": "Strava, Nike Run Club und Suu im Vergleich."
+        },
+        {
+          "href": "/blog/de/wasser-kalorien-sport-eine-app.html",
+          "title": "Wasser, Kalorien und Sport in einer App",
+          "desc": "Was die Verbindung der drei bringt."
+        },
+        {
+          "href": "/blog/de/kalorienzaehlen-durchhalten.html",
+          "title": "Kalorienzählen durchhalten",
+          "desc": "7 Wege, dranzubleiben, ohne auszubrennen."
+        }
+      ]
+    },
+    "it": {
+      "slug": "non-ho-voglia-di-allenarmi",
+      "read_minutes": 7,
+      "badge": "🚶 Guida · Abitudine al movimento",
+      "h1": "Non ho voglia di allenarmi: 7 modi per iniziare senza aspettare la motivazione (e seguirlo in Suu)",
+      "about": [
+        {
+          "name": "Attività fisica"
+        },
+        {
+          "name": "Motivazione all'allenamento"
+        },
+        {
+          "name": "Formazione delle abitudini"
+        }
+      ],
+      "meta": {
+        "title": "Non ho voglia di allenarmi: 7 modi per iniziare | Suu",
+        "description": "Non avere voglia di allenarti non è mancanza di forza di volontà, ma una soglia di partenza troppo alta. Inizia con 10 minuti di camminata e coinvolgi un amico.",
+        "keywords": "non ho voglia di allenarmi, non ho voglia di fare sport, come motivarsi a fare sport, come iniziare ad allenarsi, quanti passi al giorno, quanti minuti camminare al giorno, motivazione allenamento, pigrizia sport",
+        "og_title": "Non ho voglia di allenarmi: 7 modi per iniziare",
+        "og_description": "Inizia con 10 minuti, non spezzare la catena, coinvolgi un amico. Perché anche poco movimento vale così tanto — in numeri."
+      },
+      "answer": "Non avere voglia di allenarti di solito non è mancanza di forza di volontà, ma una soglia di partenza troppo alta. Funziona meglio rimpicciolire l'obiettivo: inizia con 10 minuti di camminata al giorno, decidi prima ora e luogo, rendi visibili i progressi e coinvolgi un amico. In Suu camminate GPS, serie e una classifica settimanale del movimento con gli amici lo tracciano gratis.",
+      "health_note": {
+        "head": "Questo articolo non è un consiglio medico.",
+        "body": [
+          "Ha scopo informativo. Se hai problemi di cuore, polmoni o articolazioni, pressione alta o diabete, sei in gravidanza o sei inattivo da molto tempo, parla con il tuo medico prima di iniziare una nuova routine di allenamento.",
+          "Fermati e chiedi aiuto medico se mentre ti muovi noti:"
+        ],
+        "red_flags": [
+          "dolore, pressione o senso di oppressione al petto",
+          "fiato corto insolito, capogiri o sensazione di svenimento",
+          "palpitazioni o battito irregolare"
+        ]
+      },
+      "disclosure": "Abbiamo scritto questa guida come il team di due persone che sviluppa Suu. Consigliamo la nostra app, ma i consigli si basano sull'Organizzazione Mondiale della Sanità, sull'Istituto Superiore di Sanità e su studi sottoposti a revisione: puoi seguire gli stessi passi anche senza Suu.",
+      "intro": [
+        "Chi non ha voglia di allenarsi di solito non è pigro: paga ogni volta il prezzo della partenza — vestiti, tempo, stanchezza e la trattativa interiore del «oggi no». Il cervello preferisce la ricompensa vicina (il divano) a quella lontana (la salute). Quindi la soluzione non è cercare più motivazione, ma <strong>rendere più facile iniziare</strong>.",
+        "La buona notizia: i benefici del movimento iniziano con dosi molto più piccole di quanto pensi. Secondo l'Organizzazione Mondiale della Sanità, qualsiasi attività fisica è meglio di nessuna, e tutta conta.<sup><a href=\"#ref1\">1</a></sup>"
+      ],
+      "analysis": [
+        {
+          "head": "Quanto movimento basta?",
+          "body": [
+            "L'Organizzazione Mondiale della Sanità raccomanda agli adulti almeno 150 minuti a settimana di attività moderata; nel mondo il 31% degli adulti — 1,8 miliardi di persone — non ci arriva (2022).<sup><a href=\"#ref1\">1</a></sup> Come ricorda l'Istituto Superiore di Sanità, le linee guida OMS 2020 indicano 150–300 minuti a settimana e hanno eliminato il vecchio limite minimo di 10 minuti per sessione: anche i brevi tratti contano.<sup><a href=\"#ref2\">2</a></sup>",
+            "Se 150 minuti ti sembrano lontani, dividili: tre camminate da 10 minuti al giorno ti portano allo stesso punto. All'inizio conta più il <strong>numero di giorni</strong> che i minuti."
+          ],
+          "callout": "In una meta-analisi di 15 coorti, chi faceva circa 5.800 passi al giorno aveva un rischio di mortalità circa del 40% più basso di chi ne faceva circa 3.500; il beneficio si stabilizzava intorno ai 6.000–8.000 passi dopo i 60 anni e agli 8.000–10.000 per i più giovani.<sup><a href=\"#ref3\">3</a></sup> Se parti da zero, i primi migliaia di passi sono i più preziosi."
+        },
+        {
+          "head": "7 trucchi per quando proprio non ne hai voglia",
+          "body": [
+            "Nessuno richiede una volontà di ferro: tutti abbassano il costo dell'inizio."
+          ],
+          "list": [
+            "<strong>La regola dei due minuti:</strong> l'obiettivo non è «allenarti», ma «metterti le scarpe e uscire dalla porta». Quasi sempre, una volta fuori, continui; se non lo fai, non hai comunque spezzato la catena.",
+            "<strong>Un piano «se–allora»:</strong> «Dopo pranzo esco dall'ufficio e cammino 10 minuti». Con ora e luogo scritti in anticipo, la decisione non dipende più dall'umore del momento.",
+            "<strong>Riduci l'attrito:</strong> prepara i vestiti la sera prima e metti le scarpe vicino alla porta. Ogni passo in più prima di partire è una scusa in più.",
+            "<strong>Abbinalo a qualcosa che ti piace:</strong> il podcast o la serie preferita solo mentre cammini.",
+            "<strong>Non da solo:</strong> un appuntamento con un amico o una piccola sfida settimanale rendono più difficile dire «oggi no».",
+            "<strong>Misura:</strong> negli studi randomizzati di una revisione su 26 lavori, chi usava un contapassi camminava circa 2.500 passi al giorno in più di chi non lo usava.<sup><a href=\"#ref4\">4</a></sup>",
+            "<strong>Mai saltare due volte di fila:</strong> saltare un giorno è normale; due di fila sono l'inizio di una nuova abitudine. In uno studio un nuovo comportamento ha impiegato in media 66 giorni per diventare automatico.<sup><a href=\"#ref5\">5</a></sup>"
+          ]
+        },
+        {
+          "head": "Motivazione o abitudine?",
+          "body": [
+            "La motivazione va e viene, l'abitudine resta. Per la maggior parte delle persone la motivazione arriva dopo il movimento, non prima: il «meno male che sono uscito» dopo i primi 10 minuti. Nelle prime settimane conta quindi i giorni, non i minuti: cinque volte 10 minuti in una settimana sono un inizio più solido di una volta 50.",
+            "La passeggiata dopo cena, tradizione di tante città italiane, è già un ottimo punto di partenza: il movimento non deve per forza stare in palestra."
+          ]
+        },
+        {
+          "head": "A casa, al lavoro, in viaggio: movimento senza scuse",
+          "body": [
+            "Se non trovi un momento a parte per l'allenamento, inserisci il movimento nella giornata:"
+          ],
+          "list": [
+            "le scale invece dell'ascensore, almeno per due piani",
+            "le telefonate camminando",
+            "scendere dall'autobus o dalla metro una fermata prima",
+            "10 minuti di passeggiata dopo cena",
+            "10 squat o piegamenti al muro tra un episodio e l'altro"
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Dove seguirlo in Suu",
+        "lead": "Tutto quello che segue è nel piano gratuito. I nomi dei menu sono quelli che vedi nell'app:",
+        "steps": [
+          {
+            "feature": "Registra una camminata di 10 minuti con il GPS",
+            "where": "Schermata principale → aggiunta rapida → <strong>Aggiungi esercizio</strong> → Camminata → avvia",
+            "solves": "Durata, distanza, ritmo e percorso sulla mappa vengono registrati in tempo reale; calorie bruciate ed effetto dell'allenamento sull'obiettivo d'acqua si calcolano da soli. Puoi avviarla anche da Apple Watch."
+          },
+          {
+            "feature": "Classifica settimanale Movimento con gli amici",
+            "where": "Impostazioni → <strong>Classifica · Punteggi</strong> → Amici → <strong>Movimento</strong>",
+            "solves": "I minuti attivi settimanali dei tuoi amici uno accanto all'altro. La classifica si azzera ogni settimana, quindi un brutto inizio la settimana scorsa non pesa su questa. Nel piano gratuito fino a 4 amici."
+          },
+          {
+            "feature": "Pungola: Muoviti",
+            "where": "<strong>Amici e lega</strong> nella schermata principale → il tuo amico → <strong>Pungola</strong> → Muoviti",
+            "solves": "Manda con un tocco un promemoria «muoviti» a un amico che oggi non si è mosso — e lui può mandarlo a te. Il trucco «non da solo», già integrato."
+          },
+          {
+            "feature": "Traguardi e distintivi",
+            "where_ios": "Scheda <strong>Tu</strong> → <strong>Traguardi di distanza</strong> · <strong>Distintivi</strong>",
+            "where_android": "La schermata <strong>Distintivi</strong> e i <strong>Traguardi</strong> a fine allenamento",
+            "solves": "La distanza di corsa, camminata ed escursionismo si somma in traguardi che puoi condividere come certificato nelle storie; oltre 50 distintivi rendono visibili i piccoli progressi."
+          },
+          {
+            "feature": "Promemoria giornaliero per il movimento",
+            "where_ios": "Impostazioni → Impostazioni notifiche → <strong>Notifiche giornaliere</strong>",
+            "where_android": "Impostazioni → <strong>Notifiche giornaliere</strong>",
+            "solves": "Il promemoria «Registra il movimento 🚶» porta sul telefono l'orario del tuo piano «se–allora»."
+          }
+        ],
+        "note": "Creare una lega privata con gli amici è Premium; la classifica settimanale e il pungolo sono gratuiti.",
+        "button": "Scarica Suu gratis"
+      },
+      "verdict": {
+        "head": "In breve",
+        "body": [
+          "Per superare la mancanza di voglia non serve aspettare la motivazione, ma rendere più facile iniziare: riduci l'obiettivo a 10 minuti, decidi prima ora e luogo, prepara i vestiti e coinvolgi un amico.",
+          "Il primo obiettivo è la costanza, non la prestazione. Il guadagno di salute più grande sta nel passare da niente a un po'; rendere visibile questo passaggio ti aiuta a uscire dalla porta anche nei giorni pigri."
+        ]
+      },
+      "cta": {
+        "head": "Registra oggi i tuoi primi 10 minuti",
+        "sub": "Camminate GPS, serie e classifica con gli amici gratis · iOS e Android",
+        "button": "Scarica Suu gratis"
+      },
+      "faq": [
+        {
+          "q": "Non ho voglia di allenarmi: come mi motivo?",
+          "a": "Invece di aspettare la motivazione, rendi più facile iniziare: riduci l'obiettivo a 10 minuti di camminata al giorno, decidi prima ora e luogo, prepara i vestiti la sera prima e allenati con un amico. Di solito la motivazione arriva dopo che hai iniziato a muoverti."
+        },
+        {
+          "q": "Quanti minuti al giorno bisogna camminare?",
+          "a": "L'Organizzazione Mondiale della Sanità raccomanda almeno 150 minuti di attività moderata a settimana, cioè circa 30 minuti per cinque giorni. Se ora ti muovi poco, anche 10 minuti al giorno fanno la differenza: ogni movimento conta."
+        },
+        {
+          "q": "Quanti passi al giorno bisogna fare?",
+          "a": "Secondo un'ampia meta-analisi, il calo del rischio di mortalità si stabilizza intorno ai 6.000–8.000 passi dopo i 60 anni e agli 8.000–10.000 per i più giovani. Ma il guadagno maggiore arriva all'inizio: passare da circa 3.500 a 5.800 passi riduce già il rischio in modo netto."
+        },
+        {
+          "q": "Come allenarsi a casa quando si è pigri?",
+          "a": "Invece di ritagliarti un momento apposta, inserisci il movimento nella giornata: squat tra un episodio e l'altro, camminare durante le telefonate, le scale. Tieni l'attrezzatura in vista e le sessioni brevi per ridurre l'attrito."
+        },
+        {
+          "q": "Saltare un giorno rovina l'abitudine?",
+          "a": "No. Un solo giorno saltato non rompe un'abitudine; il vero rischio è saltarne due di fila. In media servono circa due mesi perché un nuovo comportamento diventi automatico, e qualche inciampo lungo la strada è normale."
+        },
+        {
+          "q": "Il monitoraggio dell'allenamento in Suu è gratuito?",
+          "a": "Sì. La registrazione GPS di camminate, corse e giri in bici, la classifica settimanale con gli amici, il pungolo, le serie e i distintivi sono nel piano gratuito. Leghe private, analisi dei pasti da foto e AI illimitata sono Premium."
+        }
+      ],
+      "references": [
+        {
+          "label": "Organizzazione Mondiale della Sanità — Physical activity (scheda informativa)",
+          "href": "https://www.who.int/news-room/fact-sheets/detail/physical-activity"
+        },
+        {
+          "label": "Istituto Superiore di Sanità (EpiCentro) — Every move counts. Le linee guida 2020 OMS su attività fisica e sedentarietà",
+          "href": "https://www.epicentro.iss.it/attivita_fisica/linee-guida-oms-2020"
+        },
+        {
+          "label": "Paluch AE et al. — Daily steps and all-cause mortality: a meta-analysis of 15 international cohorts. Lancet Public Health, 2022",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/35247352/"
+        },
+        {
+          "label": "Bravata DM et al. — Using pedometers to increase physical activity and improve health: a systematic review. JAMA, 2007",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/18029834/"
+        },
+        {
+          "label": "Lally P et al. — How are habits formed: modelling habit formation in the real world. European Journal of Social Psychology, 2010",
+          "href": "https://doi.org/10.1002/ejsp.674"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/it/calorie-bruciate-allenamento.html",
+          "title": "Calorie bruciate con l'allenamento",
+          "desc": "Numeri realistici per camminata, corsa e bici."
+        },
+        {
+          "href": "/blog/it/migliore-app-allenamento.html",
+          "title": "La migliore app per l'allenamento 2026",
+          "desc": "Strava, Nike Run Club e Suu a confronto."
+        },
+        {
+          "href": "/blog/it/acqua-calorie-allenamento-una-app.html",
+          "title": "Acqua, calorie e allenamento in un'unica app",
+          "desc": "Cosa si guadagna collegando le tre cose."
+        },
+        {
+          "href": "/blog/it/contare-calorie-senza-stress.html",
+          "title": "Contare le calorie senza mollare",
+          "desc": "7 modi per andare avanti senza stress."
+        }
+      ]
+    },
+    "uk": {
+      "slug": "motyvatsiya-do-sportu",
+      "read_minutes": 7,
+      "badge": "🚶 Посібник · Звичка рухатися",
+      "h1": "Лінь займатися спортом: 7 способів почати, не чекаючи мотивації (і відстежувати це в Suu)",
+      "about": [
+        {
+          "name": "Фізична активність"
+        },
+        {
+          "name": "Мотивація до тренувань"
+        },
+        {
+          "name": "Формування звичок"
+        }
+      ],
+      "meta": {
+        "title": "Лінь займатися спортом: 7 способів почати | Suu",
+        "description": "Лінь займатися спортом — це не про силу волі, а про високий поріг старту. Почни з 10 хвилин ходьби, заздалегідь визнач час і місце, залучи друга.",
+        "keywords": "лінь займатися спортом, немає мотивації до спорту, як змусити себе займатися спортом, як почати займатися спортом, скільки кроків на день, скільки хвилин ходити на день, мотивація до тренувань",
+        "og_title": "Лінь займатися спортом: 7 способів почати",
+        "og_description": "Почни з 10 хвилин, не рви ланцюжок, залучи друга. Чому навіть трохи руху важить так багато — у цифрах."
+      },
+      "answer": "Лінь займатися спортом — найчастіше не брак сили волі, а високий поріг старту. Найкраще працює зменшення цілі: почни з 10 хвилин ходьби на день, заздалегідь визнач час і місце, зроби прогрес видимим і залучи друга. У Suu це безкоштовно відстежують GPS-прогулянки, серія днів і щотижневий рейтинг руху з друзями.",
+      "health_note": {
+        "head": "Ця стаття не є медичною порадою.",
+        "body": [
+          "Інформація загальна. Якщо в тебе хвороби серця, легень чи суглобів, підвищений тиск або діабет, ти вагітна або давно не рухався, порадься з лікарем, перш ніж починати нові тренування.",
+          "Зупинись і звернися по медичну допомогу, якщо під час руху з'явилися:"
+        ],
+        "red_flags": [
+          "біль, тиск або стискання в грудях",
+          "незвична задишка, запаморочення чи відчуття, що знепритомнієш",
+          "сильне серцебиття або нерівний пульс"
+        ]
+      },
+      "disclosure": "Цей посібник написала команда з двох людей, яка створює Suu. Ми радимо свій застосунок, але поради спираються на Всесвітню організацію охорони здоров'я, Центр громадського здоров'я України та рецензовані дослідження — ті самі кроки можна виконувати й без Suu.",
+      "intro": [
+        "Тому, кому лінь займатися спортом, зазвичай не лінь загалом — він щоразу платить ціну старту: одяг, час, втома і внутрішній торг «не сьогодні». Мозок обирає близьку винагороду (диван) замість далекої (здоров'я). Тож рішення — не шукати більше мотивації, а <strong>спростити початок</strong>.",
+        "Добра новина: користь руху починається з набагато менших доз, ніж думає більшість. За даними ВООЗ, будь-яка фізична активність краща, ніж жодної, і зараховується вся.<sup><a href=\"#ref1\">1</a></sup>"
+      ],
+      "analysis": [
+        {
+          "head": "Скільки руху достатньо?",
+          "body": [
+            "ВООЗ радить дорослим щонайменше 150 хвилин помірної активності на тиждень; у світі до цього рівня не дотягує 31% дорослих — 1,8 млрд людей (2022).<sup><a href=\"#ref1\">1</a></sup> Центр громадського здоров'я України наголошує: навіть 20 хвилин рухової активності на день зміцнюють здоров'я на роки вперед, головне — регулярність.<sup><a href=\"#ref2\">2</a></sup>",
+            "Якщо 150 хвилин здаються недосяжними, розділи їх: три прогулянки по 10 хвилин на день ведуть туди ж. На старті <strong>кількість днів</strong> важливіша за хвилини."
+          ],
+          "callout": "У метааналізі 15 когорт у людей, які проходили близько 5800 кроків на день, ризик смерті був приблизно на 40% нижчим, ніж у тих, хто проходив близько 3500; користь виходила на плато близько 6000–8000 кроків у людей старших за 60 і 8000–10 000 у молодших.<sup><a href=\"#ref3\">3</a></sup> Якщо починаєш з нуля, перші кілька тисяч кроків — найцінніші."
+        },
+        {
+          "head": "7 прийомів, коли зовсім не хочеться",
+          "body": [
+            "Жоден із них не потребує залізної волі — усі знижують ціну старту."
+          ],
+          "list": [
+            "<strong>Правило двох хвилин:</strong> мета не «потренуватися», а «взути кросівки й вийти за двері». Здебільшого, вийшовши, ти продовжиш; а якщо ні — ланцюжок однаково не розірвано.",
+            "<strong>План «якщо — то»:</strong> «Після обіду я вийду з офісу й пройду 10 хвилин». Коли час і місце записані заздалегідь, рішення не залежить від настрою в моменті.",
+            "<strong>Прибери тертя:</strong> приготуй одяг звечора, постав кросівки біля дверей. Кожен зайвий крок до старту — ще одна відмовка.",
+            "<strong>Поєднай із приємним:</strong> улюблений подкаст чи серіал — лише на прогулянці.",
+            "<strong>Не сам:</strong> зустріч із другом чи невеличке щотижневе змагання роблять «не сьогодні» складнішим.",
+            "<strong>Вимірюй:</strong> у рандомізованих дослідженнях з огляду 26 робіт люди з крокоміром проходили на день приблизно на 2500 кроків більше, ніж без нього.<sup><a href=\"#ref4\">4</a></sup>",
+            "<strong>Не пропускай двічі поспіль:</strong> пропустити день — нормально; два дні поспіль — початок нової звички. В одному дослідженні новій поведінці в середньому знадобилося 66 днів, щоб стати автоматичною.<sup><a href=\"#ref5\">5</a></sup>"
+          ]
+        },
+        {
+          "head": "Мотивація чи звичка?",
+          "body": [
+            "Мотивація то приходить, то зникає; звичка залишається. У більшості людей мотивація з'являється після руху, а не до нього — те саме «добре, що вийшов» після перших 10 хвилин. Тож у перші тижні рахуй дні, а не хвилини: п'ять разів по 10 хвилин за тиждень — надійніший старт, ніж один раз 50 хвилин.",
+            "Якщо на вулицю вийти складно, підійдуть сходи в під'їзді або 10 хвилин вправ удома — рух не мусить жити в спортзалі."
+          ]
+        },
+        {
+          "head": "Удома, на роботі, в дорозі: рух без відмовок",
+          "body": [
+            "Якщо окремого «часу на спорт» немає, вбудуй рух у день:"
+          ],
+          "list": [
+            "сходи замість ліфта — хоча б два поверхи",
+            "телефонні розмови — на ходу",
+            "вийти з автобуса чи метро на зупинку раніше",
+            "10-хвилинна прогулянка після вечері",
+            "10 присідань або віджимань від стіни між серіями"
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Де відстежувати це в Suu",
+        "lead": "Усе наведене доступне в безкоштовному плані. Назви пунктів наведено англійською, як в інтерфейсі:",
+        "steps": [
+          {
+            "feature": "Запиши 10-хвилинну прогулянку з GPS",
+            "where": "Home → quick add → <strong>Add Exercise</strong> → Walking → start",
+            "solves": "Час, дистанція, темп і маршрут на карті записуються в реальному часі; спалені калорії та вплив тренування на норму води рахуються автоматично. Почати можна й з Apple Watch."
+          },
+          {
+            "feature": "Щотижневий рейтинг руху з друзями",
+            "where": "Settings → <strong>Leaderboard</strong> → Friends → <strong>Move</strong>",
+            "solves": "Активні хвилини друзів за тиждень видно поруч. Таблиця обнуляється щотижня, тож невдалий початок минулого тижня не тягне цей. У безкоштовному плані — до 4 друзів."
+          },
+          {
+            "feature": "Штурхнути: «Get moving»",
+            "where": "<strong>Friends &amp; League</strong> на головному екрані → друг → <strong>Nudge</strong> → Get moving",
+            "solves": "Одним дотиком надішли нагадування «порухайся» другові, який сьогодні не рухався, — і він може надіслати його тобі. Прийом «не сам» прямо в застосунку."
+          },
+          {
+            "feature": "Віхи та значки",
+            "where_ios": "Вкладка <strong>You</strong> → Exercise → <strong>Distance Milestones</strong> · <strong>Badges</strong>",
+            "where_android": "Екран <strong>Badges</strong> і <strong>Milestones</strong> наприкінці тренування",
+            "solves": "Дистанція бігу, ходьби й походів складається у віхи, якими можна поділитися сертифікатом у сторіз; понад 50 значків роблять маленький прогрес помітним."
+          },
+          {
+            "feature": "Щоденне нагадування про рух",
+            "where_ios": "Settings → Notification Settings → <strong>Daily notifications</strong>",
+            "where_android": "Settings → <strong>Daily notifications</strong>",
+            "solves": "Нагадування «Log your movement 🚶» переносить час із плану «якщо — то» у твій телефон."
+          }
+        ],
+        "note": "Власна ліга з друзями — у Premium; щотижневий рейтинг і «штурхання» безкоштовні. Українська локалізація застосунку в планах; поки що зручно користуватися англійською версією інтерфейсу.",
+        "button": "Завантажити Suu безкоштовно"
+      },
+      "verdict": {
+        "head": "Коротко",
+        "body": [
+          "Упоратися з лінню до спорту допомагає не очікування мотивації, а простіший старт: зменш ціль до 10 хвилин, заздалегідь визнач час і місце, приготуй одяг і залучи друга.",
+          "Перша мета — регулярність, а не результат. Найбільша користь для здоров'я — у переході від нуля до «трохи»; коли цей перехід видно, вийти за двері легше навіть у ліниві дні."
+        ]
+      },
+      "cta": {
+        "head": "Запиши перші 10 хвилин сьогодні",
+        "sub": "GPS-прогулянки, серія й рейтинг друзів — безкоштовно · iOS та Android",
+        "button": "Завантажити Suu безкоштовно"
+      },
+      "faq": [
+        {
+          "q": "Лінь займатися спортом — як себе змусити?",
+          "a": "Не чекай мотивації, а спрости старт: скороти ціль до 10 хвилин ходьби на день, заздалегідь визнач час і місце, приготуй одяг звечора й займайся з другом. Мотивація найчастіше приходить уже після того, як почнеш рухатися."
+        },
+        {
+          "q": "Скільки хвилин на день треба ходити?",
+          "a": "ВООЗ радить щонайменше 150 хвилин помірної активності на тиждень — це 30 хвилин п'ять днів на тиждень. Якщо зараз ти майже не рухаєшся, навіть 10 хвилин на день дають ефект: зараховується будь-який рух."
+        },
+        {
+          "q": "Скільки кроків на день треба проходити?",
+          "a": "За даними великого метааналізу, зниження ризику смерті виходить на плато близько 6000–8000 кроків у людей старших за 60 і 8000–10 000 у молодших. Але найбільший виграш — на початку: перехід приблизно з 3500 до 5800 кроків уже помітно знижує ризик."
+        },
+        {
+          "q": "Як займатися вдома, якщо лінь?",
+          "a": "Замість окремого часу на спорт вбудуй рух у день: присідання між серіями, ходьба під час дзвінків, сходи. Тримай інвентар на виду й роби заняття короткими, щоб прибрати тертя."
+        },
+        {
+          "q": "Якщо пропустити один день, звичка зламається?",
+          "a": "Ні. Один пропуск звичку не ламає; справжній ризик — два дні поспіль. Новій поведінці в середньому потрібно близько двох місяців, щоб стати автоматичною, і збої дорогою — це нормально."
+        },
+        {
+          "q": "Відстеження тренувань у Suu безкоштовне?",
+          "a": "Так. GPS-запис ходьби, бігу й велопоїздок, щотижневий рейтинг з друзями, «штурхання», серія і значки — у безкоштовному плані. Власна ліга, аналіз їжі за фото й безлімітний AI — у Premium."
+        }
+      ],
+      "references": [
+        {
+          "label": "Всесвітня організація охорони здоров'я — Physical activity (інформаційний бюлетень)",
+          "href": "https://www.who.int/news-room/fact-sheets/detail/physical-activity"
+        },
+        {
+          "label": "Центр громадського здоров'я України — Від 20 хв рухової активності на день зміцнять здоров'я на роки вперед. Головне — регулярність",
+          "href": "https://phc.org.ua/news/vid-20-khv-rukhovoi-aktivnosti-na-den-zmicnyat-zdorovya-na-roki-vpered-golovne-regulyarnist"
+        },
+        {
+          "label": "Paluch AE та ін. — Daily steps and all-cause mortality: a meta-analysis of 15 international cohorts. Lancet Public Health, 2022",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/35247352/"
+        },
+        {
+          "label": "Bravata DM та ін. — Using pedometers to increase physical activity and improve health: a systematic review. JAMA, 2007",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/18029834/"
+        },
+        {
+          "label": "Lally P та ін. — How are habits formed: modelling habit formation in the real world. European Journal of Social Psychology, 2010",
+          "href": "https://doi.org/10.1002/ejsp.674"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/uk/spalyuvannya-kaloriy-pid-chas-trenuvannya.html",
+          "title": "Скільки калорій спалює тренування?",
+          "desc": "Реальні цифри для ходьби, бігу й велосипеда."
+        },
+        {
+          "href": "/blog/uk/najkrashchyj-zastosunok-dlya-trenuvan.html",
+          "title": "Найкращий застосунок для тренувань 2026",
+          "desc": "Strava, Nike Run Club і Suu в порівнянні."
+        },
+        {
+          "href": "/blog/uk/voda-kalorii-trenuvannya-odyn-zastosunok.html",
+          "title": "Вода, калорії й тренування в одному застосунку",
+          "desc": "Що дає зв'язок трьох."
+        },
+        {
+          "href": "/blog/uk/nabrydlo-rakhuvaty-kalorii.html",
+          "title": "Набридло рахувати калорії?",
+          "desc": "7 способів продовжувати без вигорання."
+        }
+      ]
+    }
+  }
+}

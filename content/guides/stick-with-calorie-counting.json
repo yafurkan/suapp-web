@@ -1,0 +1,1403 @@
+{
+  "_note": "Yapay zekâ sorusu rehberi #2 — 'kalori saymayı hep bırakıyorum'. Sınır: sürdürülebilirlik; açık hesabı kalori-acigi'nde, teknik anlatım sesli-kalori-girisi / fotografla-kalori-sayma'da kalır. Günde 3 AI (Suui ile ortak), foto Premium. Kaynaklar 2026-09-27'de doğrulandı.",
+  "kind": "guide",
+  "cluster": "kalori-saymak-sikici",
+  "published": "2026-09-27",
+  "modified": "2026-09-27",
+  "pages": {
+    "tr": {
+      "slug": "kalori-saymak-sikici",
+      "read_minutes": 7,
+      "badge": "🍽️ Rehber · Kalori takibi",
+      "h1": "Kalori Saymayı Hep Bırakıyorum: Sıkılmadan Devam Etmenin 7 Yolu (ve Suu'da Takibi)",
+      "about": [
+        {
+          "name": "Kalori sayma"
+        },
+        {
+          "name": "Besin günlüğü"
+        },
+        {
+          "name": "Kilo yönetimi"
+        }
+      ],
+      "meta": {
+        "title": "Kalori Saymak Sıkıcı mı? Bırakmamanın 7 Yolu | Suu",
+        "description": "Kalori saymayı çoğu kişi ilk haftalarda bırakır. Mükemmellik değil süreklilik: yaklaşık kaydet, tek öğünle başla, haftalık ortalamaya bak. Araştırmalarla.",
+        "keywords": "kalori saymak sıkıcı, kalori saymayı bırakmak, kalori takibi nasıl yapılır, kalori saymadan kilo verme, kalori saymak zor, yemek günlüğü tutmak, kalori sayma uygulaması, sesle kalori hesaplama",
+        "og_title": "Kalori Saymayı Hep Bırakıyorum: Sıkılmadan Devam Etmenin 7 Yolu",
+        "og_description": "Başarılı olanlar kayda daha çok zaman değil, daha sık kısa anlar ayırıyor. Sürdürülebilir kalori takibi, rakamlarla."
+      },
+      "answer": "Kalori saymayı çoğu kişi ilk haftalarda bırakır, çünkü her lokmayı tartmaya çalışır. Sürdürülebilir olan mükemmellik değil süreklilik: yaklaşık kaydet, önce tek bir öğünle başla, yediğin anda kaydet ve günlük değil haftalık ortalamaya bak. Suu'da bir öğünü tek cümleyle ya da sesle saniyeler içinde kaydedebilirsin.",
+      "health_note": {
+        "head": "Kalori saymak herkese iyi gelmez.",
+        "body": [
+          "Bu yazı genel bilgi içindir, tıbbi tavsiye değildir. Şu an ya da geçmişte yeme bozukluğun olduysa, rakamlar kaygı yaratıyorsa veya yemekten sonra suçluluk hissediyorsan kalori saymayı bırak ve bir sağlık uzmanıyla konuş. Diyabet, böbrek hastalığı, hamilelik ya da emzirme döneminde kalori hedefini doktorunla veya diyetisyenle belirle.",
+          "Şu işaretlerde beklemeden bir uzmana başvur:"
+        ],
+        "red_flags": [
+          "Yemekten sonra kusma, aşırı egzersizle \"telafi\" etme ya da öğün atlama isteği",
+          "Kısa sürede açıklanamayan kilo kaybı"
+        ]
+      },
+      "disclosure": "Bu rehberi Suu'yu geliştiren iki kişilik ekip olarak yazdık. Uygulamamızı öneriyoruz, ama önerilerin dayanağı hakemli çalışmalar ve Sağlık Bakanlığı kaynakları; aynı yaklaşımı kâğıt kalemle de uygulayabilirsin.",
+      "intro": [
+        "Kalori saymaya başlayan çoğu kişinin hikâyesi aynı: ilk hafta her şeyi tartar, ikinci hafta akşam toplu girer, üçüncü hafta bırakır. Sorun disiplin eksikliği değil; yöntemin kendisi fazla yorucu. Her lokmayı gram gram girmeye çalışan biri, takibi hayatının içine değil, üstüne koymuş oluyor.",
+        "İyi haber: kalori takibinin faydası kusursuz kayıttan değil, <strong>düzenli</strong> kayıttan geliyor. Aşağıdaki yaklaşım takibi hafifletmek üzerine kurulu."
+      ],
+      "analysis": [
+        {
+          "head": "Neden herkes ilk haftalarda bırakıyor?",
+          "body": [
+            "Ne yediğini kaydetmek kilo yönetimindeki en tutarlı alışkanlıklardan biri: 22 çalışmayı inceleyen bir derleme, düzenli öz-izlemenin kilo kaybıyla tutarlı biçimde ilişkili olduğunu gösterdi.<sup><a href=\"#ref1\">1</a></sup> Ama aynı alışkanlık zamanla yoruyor. 142 kişiyle yapılan bir çalışmada katılımcılar ilk ay günde ortalama 23 dakikayı kayda ayırırken, altıncı ayda bu 15 dakikaya indi.<sup><a href=\"#ref2\">2</a></sup>",
+            "Aynı çalışmanın en önemli bulgusu şuydu: kilo verenleri ayıran şey kayda harcanan <strong>süre</strong> değil, <strong>sıklık</strong>tı. En çok kilo verenler kayıt sayfasına günde ortalama 2,5 kez girdi, diğerleri 1,6 kez."
+          ],
+          "callout": "Sağlık Bakanlığı'nın Türkiye Beslenme Rehberi (TÜBER 2022) enerji ihtiyacının yaşa, cinsiyete, fizyolojik duruma ve fiziksel aktiviteye göre değiştiğini vurguluyor.<sup><a href=\"#ref3\">3</a></sup> Yani internetteki tek bir \"günlük kalori\" rakamı herkese uymaz; hedefini kendi verinle belirlemek daha doğru."
+        },
+        {
+          "head": "Mükemmel değil, tutarlı: 7 kural",
+          "body": [
+            "Amaç takibi daha doğru yapmak değil, daha kolay yapmak."
+          ],
+          "list": [
+            "<strong>%80 doğruluk yeterli:</strong> Tartı yerine el ölçüsü kullan — avuç içi kadar et, yumruk kadar pilav. Küçük hatalar haftalık ortalamada birbirini dengeler.",
+            "<strong>Önce tek öğün:</strong> Bütün günü değil, en düzensiz öğünü (çoğu kişide akşam yemeği ya da atıştırmalıklar) kaydetmekle başla.",
+            "<strong>Yediğin anda kaydet:</strong> Akşama bıraktığın öğünün yarısını unutursun. Kısa ve sık kayıt, uzun ve toplu kayıttan daha iyi sonuç veriyor.",
+            "<strong>Tekrarlayan öğünleri hazır tut:</strong> Kahvaltın çoğu gün aynıysa her seferinde baştan yazma.",
+            "<strong>İçecekleri unutma:</strong> Şekerli içecekler ve kahve ekstraları günün en çok gözden kaçan kalorileri.",
+            "<strong>Günlük değil haftalık bak:</strong> Tek bir yüksek gün planı bozmaz; haftalık ortalama gerçek resmi gösterir.",
+            "<strong>Kötü günü silme, kaydet:</strong> Düğün, bayram, iş yemeği — kaydetmek bırakmaktan iyidir. Boş gün, takibin bittiği gündür."
+          ]
+        },
+        {
+          "head": "Kalori saymak sana göre değilse",
+          "body": [
+            "Kalori saymak bir araç, zorunluluk değil. 493 üniversite öğrencisiyle yapılan bir çalışmada kalori takip uygulaması kullananlarda yemekle ilgili kaygı ve kısıtlayıcı diyet eğilimi daha yüksekti.<sup><a href=\"#ref4\">4</a></sup> Rakamlar seni yoruyorsa şu alternatifler de işe yarar:"
+          ],
+          "list": [
+            "<strong>Tabak yöntemi:</strong> Tabağın yarısı sebze, çeyreği protein, çeyreği tahıl.",
+            "<strong>Sadece protein ve sebzeyi takip et:</strong> Her öğünde bir porsiyon protein, günde birkaç porsiyon sebze.",
+            "<strong>Açlık ve tokluk sinyallerine bak:</strong> Yemeğe başlamadan ve bitirdikten sonra 1–10 arası bir açlık puanı ver."
+          ]
+        },
+        {
+          "head": "Sesle ya da fotoğrafla kayıt ne kadar doğru?",
+          "body": [
+            "Yapay zekâ ile kayıt, takibin en sıkıcı kısmını — yazmayı — ortadan kaldırıyor, ama bir tahmin. Porsiyon ve görünmeyen yağ en büyük hata kaynakları. En iyi sonuç için öğünü kısaca tarif et (\"bir tabak mercimek çorbası, iki dilim ekmek\") ve sonucu bir kez gözden geçir. Yeni bir alışkanlığın oturması ortalama iki ay sürdüğü için<sup><a href=\"#ref5\">5</a></sup> hız, ilk haftalarda doğruluktan daha değerli."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Bunu Suu'da nereden takip edersin",
+        "lead": "Amaç kaydı saniyelere indirmek. Menü adları uygulamadaki gibi:",
+        "steps": [
+          {
+            "feature": "Tek cümleyle ya da sesle kaydet",
+            "where": "Ana ekran → hızlı ekleme → <strong>Besin Ekle</strong> → mikrofon ya da yazı alanı",
+            "solves": "\"İki yumurta, bir dilim beyaz peynir, iki bardak çay\" demen yeterli; kalori ve makrolar hesaplanır, içecekler ayrı sayılır. Ücretsiz planda günde 3 AI analizi."
+          },
+          {
+            "feature": "Fotoğrafla kaydet",
+            "premium": true,
+            "where": "<strong>Besin Ekle</strong> → kamera",
+            "solves": "Tabağın fotoğrafından yemekleri ve porsiyonu tahmin eder; kayıt, günün en uzun işi olmaktan çıkar. Fotoğraf kalıcı olarak saklanmaz."
+          },
+          {
+            "feature": "Suui'ye söyle",
+            "where": "Ana ekrandaki <strong>Suui</strong> asistanı",
+            "solves": "Öğle yemeğini sohbet ederek kaydedersin; aynı günlük 3 AI hakkından düşer."
+          },
+          {
+            "feature": "Bugünün öğünleri ve son 7 gün",
+            "where": "<strong>Beslenme</strong> ekranı → <strong>Bugünün öğünleri</strong> · <strong>Son 7 gün (kalori)</strong>",
+            "solves": "Her öğün saatiyle ve 1–100 beslenme puanıyla listelenir; 7 günlük grafik \"günlük değil haftalık bak\" kuralını kendiliğinden uygular."
+          },
+          {
+            "feature": "Öğün hatırlatması",
+            "where_ios": "Ayarlar → Bildirim Ayarları → <strong>Günlük bildirimler</strong>",
+            "where_android": "Ayarlar → <strong>Günlük bildirimler</strong>",
+            "solves": "\"Öğününü kaydet 🍽️\" hatırlatması, \"yediğin anda kaydet\" kuralını senin yerine hatırlar."
+          }
+        ],
+        "button": "Suu'yu ücretsiz indir"
+      },
+      "verdict": {
+        "head": "Kısacası",
+        "body": [
+          "Kalori saymayı bırakmamanın yolu daha disiplinli olmak değil, takibi hafifletmek: yaklaşık kaydet, tek öğünle başla, yediğin anda kısa bir kayıt yap ve haftalık ortalamaya bak.",
+          "Rakamlar seni kaygılandırıyorsa bırakmak da doğru bir karardır; tabak yöntemi ya da açlık sinyalleri gibi alternatifler aynı hedefe daha sakin bir yoldan götürebilir."
+        ]
+      },
+      "cta": {
+        "head": "Bir öğünü 10 saniyede kaydet",
+        "sub": "Sesle ve yazıyla kalori takibi · günde 3 ücretsiz AI analizi · iOS ve Android",
+        "button": "Suu'yu Ücretsiz İndir"
+      },
+      "faq": [
+        {
+          "q": "Kalori saymak neden bu kadar sıkıcı?",
+          "a": "Çünkü çoğu kişi her lokmayı tartıp gram gram girmeye çalışıyor. Araştırmalarda kayda ayrılan süre ilk aydaki 23 dakikadan altıncı ayda 15 dakikaya düşüyor. Yaklaşık kayıt, sık yenen öğünleri hazır tutmak ve sesle kayıt bu yükü azaltır."
+        },
+        {
+          "q": "Kalori saymadan kilo verilir mi?",
+          "a": "Evet. Tabak yöntemi, protein ve sebzeye odaklanmak ya da açlık-tokluk sinyallerini izlemek de kalori açığı yaratabilir. Kalori saymak bir araçtır; sana iyi gelmiyorsa zorunlu değildir."
+        },
+        {
+          "q": "Kalori takibine günde ne kadar zaman ayırmalıyım?",
+          "a": "Başarılı olanlar daha uzun değil, daha sık kayıt yapıyor. Bir çalışmada en çok kilo verenler kayıt sayfasına günde ortalama 2,5 kez girdi; kayda ayrılan süre ise altı ayda günde 23 dakikadan 15 dakikaya indi."
+        },
+        {
+          "q": "Her şeyi tartmak zorunda mıyım?",
+          "a": "Hayır. Avuç ve yumruk gibi el ölçüleri çoğu kişi için yeterli; küçük hatalar haftalık ortalamada dengelenir. Tartı, ilerleme durduğunda kontrol amaçlı kısa süre kullanılabilir."
+        },
+        {
+          "q": "Sesle ya da fotoğrafla kalori kaydı ne kadar doğru?",
+          "a": "Bir tahmindir; en büyük hata porsiyon ve görünmeyen yağdan gelir. Öğünü kısaca tarif edip sonucu gözden geçirmek doğruluğu artırır. İlk haftalarda hız, kusursuz doğruluktan daha değerlidir."
+        },
+        {
+          "q": "Suu'da kalori takibi ücretsiz mi?",
+          "a": "Sesle ya da yazıyla öğün kaydı ücretsiz planda günde 3 AI analiziyle yapılır. Fotoğrafla analiz ve sınırsız AI Premium'dadır."
+        }
+      ],
+      "references": [
+        {
+          "label": "Burke LE ve ark. — Self-monitoring in weight loss: a systematic review of the literature. J Am Diet Assoc, 2011",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/21185970/"
+        },
+        {
+          "label": "Harvey J ve ark. — Log Often, Lose More: Electronic Dietary Self-Monitoring for Weight Loss. Obesity, 2019",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/30801989/"
+        },
+        {
+          "label": "T.C. Sağlık Bakanlığı — Türkiye Beslenme Rehberi (TÜBER) 2022",
+          "href": "https://hsgm.saglik.gov.tr/tr/web-uygulamalarimiz/357.html"
+        },
+        {
+          "label": "Simpson CC, Mazzeo SE — Calorie counting and fitness tracking technology: associations with eating disorder symptomatology. Eat Behav, 2017",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/28214452/"
+        },
+        {
+          "label": "Lally P ve ark. — How are habits formed: modelling habit formation in the real world. European Journal of Social Psychology, 2010",
+          "href": "https://doi.org/10.1002/ejsp.674"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/sesli-kalori-girisi.html",
+          "title": "Sesle kalori girişi",
+          "desc": "Konuşarak öğün kaydetmek nasıl çalışır?"
+        },
+        {
+          "href": "/blog/fotografla-kalori-sayma.html",
+          "title": "Fotoğrafla kalori sayma",
+          "desc": "Yapay zekâ tabağı nasıl okur?"
+        },
+        {
+          "href": "/blog/kalori-acigi.html",
+          "title": "Kalori açığı nasıl oluşturulur?",
+          "desc": "Hedefini gerçekçi belirlemek için."
+        },
+        {
+          "href": "/blog/spora-usenmek.html",
+          "title": "Spora üşeniyorum",
+          "desc": "Motivasyon beklemeden başlamanın 7 yolu."
+        }
+      ]
+    },
+    "en": {
+      "slug": "stick-with-calorie-counting",
+      "read_minutes": 7,
+      "badge": "🍽️ Guide · Calorie tracking",
+      "h1": "Keep Quitting Calorie Counting? 7 Ways to Stick With It Without Burning Out (and Track It in Suu)",
+      "about": [
+        {
+          "name": "Calorie counting"
+        },
+        {
+          "name": "Food diary"
+        },
+        {
+          "name": "Weight management"
+        }
+      ],
+      "meta": {
+        "title": "Calorie Counting Too Tedious? 7 Ways to Stick With It | Suu",
+        "description": "Most people quit calorie counting within weeks. Consistency beats precision: log roughly, start with one meal, look at the weekly average. Backed by research.",
+        "keywords": "calorie counting is tedious, how to stick with calorie counting, keep quitting calorie counting, calorie counting burnout, how to lose weight without counting calories, food diary tips, voice calorie counter, easiest way to count calories",
+        "og_title": "Keep Quitting Calorie Counting? 7 Ways to Stick With It",
+        "og_description": "Successful people don't spend more time logging — they log more often, in shorter bursts. Sustainable calorie tracking, in numbers."
+      },
+      "answer": "Most people quit calorie counting within the first weeks because they try to weigh every bite. What lasts isn't precision but consistency: log roughly, start with just one meal, log right when you eat and look at the weekly average rather than each day. In Suu you can log a meal in seconds with one sentence or by voice.",
+      "health_note": {
+        "head": "Calorie counting isn't right for everyone.",
+        "body": [
+          "This article is general information, not medical advice. If you have or have had an eating disorder, if the numbers make you anxious or you feel guilty after eating, stop counting and talk to a healthcare professional. If you have diabetes or kidney disease, or are pregnant or breastfeeding, set your calorie target with your doctor or a registered dietitian.",
+          "Reach out to a professional promptly if you notice:"
+        ],
+        "red_flags": [
+          "Vomiting after meals, \"compensating\" with excessive exercise, or an urge to skip meals",
+          "Unexplained weight loss over a short period"
+        ]
+      },
+      "disclosure": "We wrote this guide as the two-person team that builds Suu. We recommend our app, but the advice rests on peer-reviewed studies and the NHS — you can apply the same approach with pen and paper.",
+      "intro": [
+        "Most people's calorie-counting story goes the same way: in week one they weigh everything, in week two they log the whole day at night, in week three they stop. It isn't a discipline problem; the method itself is exhausting. Trying to enter every bite to the gram puts tracking on top of your life instead of inside it.",
+        "The good news: the benefit of calorie tracking comes from <strong>regular</strong> logging, not perfect logging. The approach below is built around making tracking lighter."
+      ],
+      "analysis": [
+        {
+          "head": "Why almost everyone quits in the first weeks",
+          "body": [
+            "Recording what you eat is one of the most consistent habits in weight management: a review of 22 studies found self-monitoring was consistently linked to weight loss.<sup><a href=\"#ref1\">1</a></sup> But the same habit wears people down. In a study of 142 participants, people spent an average of 23 minutes a day logging in month one, falling to 15 minutes by month six.<sup><a href=\"#ref2\">2</a></sup>",
+            "That study's key finding: what set the people who lost weight apart wasn't the <strong>time</strong> spent logging but the <strong>frequency</strong>. Those who lost the most logged in about 2.5 times a day, versus 1.6 for the rest."
+          ],
+          "callout": "The NHS puts average needs at around 2,000 kcal a day for women and 2,500 for men, and stresses that individual needs vary with age, size and activity.<sup><a href=\"#ref3\">3</a></sup> A single \"daily calories\" number from the internet won't fit everyone; it's better to set your target from your own data."
+        },
+        {
+          "head": "Consistent, not perfect: 7 rules",
+          "body": [
+            "The goal isn't to track more accurately; it's to track more easily."
+          ],
+          "list": [
+            "<strong>80% accuracy is enough:</strong> Use hand portions instead of a scale — a palm of meat, a fist of rice. Small errors cancel out in the weekly average.",
+            "<strong>Start with one meal:</strong> Don't log the whole day; start with your least predictable meal (for most people, dinner or snacks).",
+            "<strong>Log as you eat:</strong> By evening you'll forget half of lunch. Short, frequent entries work better than one long batch.",
+            "<strong>Keep repeat meals ready:</strong> If breakfast is the same most days, don't type it from scratch every time.",
+            "<strong>Don't forget drinks:</strong> Sugary drinks and coffee add-ons are the most overlooked calories of the day.",
+            "<strong>Look at the week, not the day:</strong> One high day doesn't ruin anything; the weekly average shows the real picture.",
+            "<strong>Log the bad days, don't skip them:</strong> Weddings, holidays, work dinners — logging beats stopping. An empty day is where tracking ends."
+          ]
+        },
+        {
+          "head": "If calorie counting isn't for you",
+          "body": [
+            "Calorie counting is a tool, not an obligation. In a study of 493 college students, those using calorie trackers showed higher eating concern and dietary restraint.<sup><a href=\"#ref4\">4</a></sup> If the numbers wear you out, these alternatives work too:"
+          ],
+          "list": [
+            "<strong>The plate method:</strong> half the plate vegetables, a quarter protein, a quarter grains.",
+            "<strong>Track only protein and vegetables:</strong> a portion of protein at each meal, several portions of vegetables a day.",
+            "<strong>Use hunger and fullness cues:</strong> rate your hunger 1–10 before and after eating."
+          ]
+        },
+        {
+          "head": "How accurate is logging by voice or photo?",
+          "body": [
+            "AI logging removes the most tedious part of tracking — typing — but it's an estimate. Portion size and hidden oil are the biggest sources of error. For the best result, describe the meal briefly (\"a bowl of lentil soup, two slices of bread\") and review the result once. Since a new habit takes about two months on average to settle in,<sup><a href=\"#ref5\">5</a></sup> speed matters more than perfect accuracy in the first weeks."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Where to track this in Suu",
+        "lead": "The goal is to cut logging to seconds. Menu names are exactly as they appear:",
+        "steps": [
+          {
+            "feature": "Log with one sentence or by voice",
+            "where": "Home → quick add → <strong>Add Food</strong> → microphone or text field",
+            "solves": "Just say \"two eggs, a slice of feta, two cups of tea\"; calories and macros are calculated, and drinks are counted separately. The free plan includes 3 AI analyses a day."
+          },
+          {
+            "feature": "Log with a photo",
+            "premium": true,
+            "where": "<strong>Add Food</strong> → camera",
+            "solves": "It estimates the foods and portions from a photo of your plate, so logging stops being the longest job of the day. Photos are never stored permanently."
+          },
+          {
+            "feature": "Tell Suui",
+            "where": "The <strong>Suui</strong> assistant on the home screen",
+            "solves": "Log lunch by chatting; it comes out of the same 3 daily AI uses."
+          },
+          {
+            "feature": "Today's meals and the last 7 days",
+            "where": "<strong>Nutrition</strong> screen → <strong>Today's meals</strong> · <strong>Last 7 days (calories)</strong>",
+            "solves": "Each meal is listed with its time and a 1–100 nutrition score; the 7-day chart applies the \"look at the week\" rule for you."
+          },
+          {
+            "feature": "Meal reminder",
+            "where_ios": "Settings → Notification Settings → <strong>Daily notifications</strong>",
+            "where_android": "Settings → <strong>Daily notifications</strong>",
+            "solves": "The \"Log your meal 🍽️\" reminder remembers the \"log as you eat\" rule for you."
+          }
+        ],
+        "button": "Get Suu free"
+      },
+      "verdict": {
+        "head": "The short version",
+        "body": [
+          "The way to stop quitting calorie counting isn't more discipline — it's lighter tracking: log roughly, start with one meal, make a quick entry right when you eat and judge by the weekly average.",
+          "If the numbers make you anxious, stopping is the right call too; the plate method or hunger cues can get you to the same goal by a calmer route."
+        ]
+      },
+      "cta": {
+        "head": "Log a meal in 10 seconds",
+        "sub": "Voice and text calorie tracking · 3 free AI analyses a day · iOS and Android",
+        "button": "Download Suu Free"
+      },
+      "faq": [
+        {
+          "q": "Why is calorie counting so tedious?",
+          "a": "Because most people try to weigh every bite and enter it to the gram. In research, time spent logging falls from 23 minutes a day in month one to 15 by month six. Rough logging, ready-made repeat meals and voice logging all lighten the load."
+        },
+        {
+          "q": "Can I lose weight without counting calories?",
+          "a": "Yes. The plate method, focusing on protein and vegetables or following hunger and fullness cues can also create a calorie deficit. Calorie counting is a tool; if it doesn't suit you, it isn't mandatory."
+        },
+        {
+          "q": "How much time should calorie tracking take each day?",
+          "a": "Successful people log more often, not longer. In one study, those who lost the most logged in about 2.5 times a day, while time spent logging fell from 23 to 15 minutes a day over six months."
+        },
+        {
+          "q": "Do I have to weigh everything?",
+          "a": "No. Hand portions such as a palm or a fist are enough for most people, and small errors even out in the weekly average. A scale can be used briefly as a check if progress stalls."
+        },
+        {
+          "q": "How accurate is calorie logging by voice or photo?",
+          "a": "It's an estimate; the biggest errors come from portion size and hidden oil. Describing the meal briefly and reviewing the result improves accuracy. In the first weeks, speed is worth more than perfect accuracy."
+        },
+        {
+          "q": "Is calorie tracking in Suu free?",
+          "a": "Voice and text meal logging are on the free plan with 3 AI analyses a day. Photo analysis and unlimited AI are Premium."
+        }
+      ],
+      "references": [
+        {
+          "label": "Burke LE et al. — Self-monitoring in weight loss: a systematic review of the literature. J Am Diet Assoc, 2011",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/21185970/"
+        },
+        {
+          "label": "Harvey J et al. — Log Often, Lose More: Electronic Dietary Self-Monitoring for Weight Loss. Obesity, 2019",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/30801989/"
+        },
+        {
+          "label": "NHS — Understanding calories",
+          "href": "https://www.nhs.uk/live-well/healthy-weight/managing-your-weight/understanding-calories/"
+        },
+        {
+          "label": "Simpson CC, Mazzeo SE — Calorie counting and fitness tracking technology: associations with eating disorder symptomatology. Eat Behav, 2017",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/28214452/"
+        },
+        {
+          "label": "Lally P et al. — How are habits formed: modelling habit formation in the real world. European Journal of Social Psychology, 2010",
+          "href": "https://doi.org/10.1002/ejsp.674"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/en/voice-calorie-logging.html",
+          "title": "Voice calorie logging",
+          "desc": "How logging a meal by talking works."
+        },
+        {
+          "href": "/blog/en/photo-calorie-counting.html",
+          "title": "Photo calorie counting",
+          "desc": "How AI reads your plate."
+        },
+        {
+          "href": "/blog/en/calorie-deficit.html",
+          "title": "How to build a calorie deficit",
+          "desc": "Setting a realistic target."
+        },
+        {
+          "href": "/blog/en/no-motivation-to-exercise.html",
+          "title": "Too lazy to work out?",
+          "desc": "7 ways to start without waiting for motivation."
+        }
+      ]
+    },
+    "ar": {
+      "slug": "malal-hisab-al-suerat",
+      "read_minutes": 7,
+      "badge": "🍽️ دليل · تتبّع السعرات",
+      "h1": "أتوقف دائمًا عن حساب السعرات: 7 طرق للاستمرار دون ملل (وكيف تتابعها في Suu)",
+      "about": [
+        {
+          "name": "حساب السعرات الحرارية"
+        },
+        {
+          "name": "مفكرة الطعام"
+        },
+        {
+          "name": "إدارة الوزن"
+        }
+      ],
+      "meta": {
+        "title": "حساب السعرات ممل؟ 7 طرق للاستمرار دون توقف | Suu",
+        "description": "معظم الناس يتوقفون عن حساب السعرات خلال أسابيع. الاستمرارية أهم من الدقة: سجّل تقريبيًا، ابدأ بوجبة واحدة، وانظر إلى المتوسط الأسبوعي. مع الأدلة.",
+        "keywords": "حساب السعرات ممل, التوقف عن حساب السعرات, كيف أستمر في حساب السعرات, إنقاص الوزن بدون حساب السعرات, مفكرة الطعام, تطبيق حساب السعرات بالصوت, أسهل طريقة لحساب السعرات",
+        "og_title": "أتوقف دائمًا عن حساب السعرات: 7 طرق للاستمرار",
+        "og_description": "الناجحون لا يقضون وقتًا أطول في التسجيل بل يسجّلون أكثر وبسرعة. تتبّع سعرات قابل للاستمرار — بالأرقام."
+      },
+      "answer": "معظم الناس يتوقفون عن حساب السعرات في الأسابيع الأولى لأنهم يحاولون وزن كل لقمة. ما يدوم ليس الدقة بل الاستمرارية: سجّل تقريبيًا، وابدأ بوجبة واحدة فقط، وسجّل فور الأكل، وانظر إلى المتوسط الأسبوعي لا إلى كل يوم. في Suu يمكنك تسجيل وجبة في ثوانٍ بجملة واحدة أو بالصوت.",
+      "health_note": {
+        "head": "حساب السعرات لا يناسب الجميع.",
+        "body": [
+          "هذا المقال معلومات عامة وليس نصيحة طبية. إذا كان لديك اضطراب أكل حاليًا أو سابقًا، أو كانت الأرقام تسبب لك القلق أو تشعر بالذنب بعد الأكل، فتوقف عن الحساب وتحدّث مع مختص صحي. في حالات السكري أو أمراض الكلى أو الحمل أو الرضاعة، حدّد هدف السعرات مع طبيبك أو أخصائي التغذية.",
+          "راجع مختصًّا دون تأخير إذا لاحظت:"
+        ],
+        "red_flags": [
+          "التقيؤ بعد الأكل، أو «التعويض» بالتمارين المفرطة، أو الرغبة في تخطّي الوجبات",
+          "نقص وزن غير مبرَّر خلال فترة قصيرة"
+        ]
+      },
+      "disclosure": "كتبنا هذا الدليل بصفتنا الفريق المكوّن من شخصين الذي يطوّر Suu. نحن نرشّح تطبيقنا، لكن النصائح مبنية على دراسات محكّمة وعلى منظمة الصحة العالمية، ويمكنك تطبيق النهج نفسه بالورقة والقلم.",
+      "intro": [
+        "قصة معظم من يبدؤون حساب السعرات متشابهة: في الأسبوع الأول يزنون كل شيء، وفي الثاني يسجّلون اليوم كله ليلًا، وفي الثالث يتوقفون. المشكلة ليست في الانضباط؛ الطريقة نفسها مرهقة. من يحاول إدخال كل لقمة بالغرام يضع التتبّع فوق حياته لا داخلها.",
+        "الخبر الجيد: فائدة تتبّع السعرات تأتي من التسجيل <strong>المنتظم</strong> لا المثالي. النهج التالي مبني على جعل التتبّع أخف."
+      ],
+      "analysis": [
+        {
+          "head": "لماذا يتوقف الجميع تقريبًا في الأسابيع الأولى؟",
+          "body": [
+            "تسجيل ما تأكله من أكثر العادات ثباتًا في إدارة الوزن: مراجعة لـ22 دراسة وجدت أن المراقبة الذاتية ترتبط باستمرار بإنقاص الوزن.<sup><a href=\"#ref1\">1</a></sup> لكن العادة نفسها مُتعبة مع الوقت. في دراسة شملت 142 مشاركًا، قضى المشاركون في المتوسط 23 دقيقة يوميًا في التسجيل خلال الشهر الأول، وانخفض ذلك إلى 15 دقيقة في الشهر السادس.<sup><a href=\"#ref2\">2</a></sup>",
+            "وأهم ما وجدته الدراسة: ما ميّز من خسروا الوزن ليس <strong>الوقت</strong> المبذول في التسجيل بل <strong>التكرار</strong>. من خسروا أكثر دخلوا إلى صفحة التسجيل نحو 2.5 مرة يوميًا، مقابل 1.6 مرة للبقية."
+          ],
+          "callout": "تؤكد منظمة الصحة العالمية أن مدخول الطاقة (السعرات) يجب أن يكون متوازنًا مع إنفاقها، وأن الاحتياج يختلف من شخص لآخر.<sup><a href=\"#ref3\">3</a></sup> لذلك لا يناسب رقم «السعرات اليومية» المنتشر على الإنترنت الجميع؛ الأفضل أن تحدّد هدفك من بياناتك أنت."
+        },
+        {
+          "head": "الاستمرارية لا الكمال: 7 قواعد",
+          "body": [
+            "الهدف ليس تتبّعًا أدق بل تتبّعًا أسهل."
+          ],
+          "list": [
+            "<strong>دقة 80% تكفي:</strong> استخدم مقاييس اليد بدل الميزان — قطعة لحم بحجم الكف، وأرز بحجم القبضة. الأخطاء الصغيرة يعادل بعضها بعضًا في المتوسط الأسبوعي.",
+            "<strong>ابدأ بوجبة واحدة:</strong> لا تسجّل اليوم كله؛ ابدأ بأقل وجباتك انتظامًا (لدى معظم الناس العشاء أو الوجبات الخفيفة).",
+            "<strong>سجّل فور الأكل:</strong> إذا انتظرت المساء فستنسى نصف الغداء. الإدخالات القصيرة المتكررة أفضل من إدخال طويل واحد.",
+            "<strong>جهّز الوجبات المتكررة:</strong> إذا كان فطورك متشابهًا معظم الأيام فلا تكتبه من جديد كل مرة.",
+            "<strong>لا تنسَ المشروبات:</strong> المشروبات المحلّاة وإضافات القهوة أكثر السعرات التي تغيب عن الحساب.",
+            "<strong>انظر إلى الأسبوع لا إلى اليوم:</strong> يوم مرتفع واحد لا يفسد شيئًا؛ المتوسط الأسبوعي يُظهر الصورة الحقيقية.",
+            "<strong>سجّل الأيام الصعبة ولا تتخطّها:</strong> الأعراس والعزائم وولائم رمضان — التسجيل أفضل من التوقف. اليوم الفارغ هو اليوم الذي ينتهي فيه التتبّع."
+          ]
+        },
+        {
+          "head": "إذا لم يكن حساب السعرات مناسبًا لك",
+          "body": [
+            "حساب السعرات أداة لا واجب. في دراسة شملت 493 طالبًا جامعيًا، ظهر لدى مستخدمي تطبيقات تتبّع السعرات قلق أعلى تجاه الأكل وميل أكبر إلى تقييد الطعام.<sup><a href=\"#ref4\">4</a></sup> إذا أرهقتك الأرقام، فهذه البدائل تنجح أيضًا:"
+          ],
+          "list": [
+            "<strong>طريقة الطبق:</strong> نصف الطبق خضار، وربعه بروتين، وربعه حبوب.",
+            "<strong>تتبّع البروتين والخضار فقط:</strong> حصة بروتين في كل وجبة وعدة حصص خضار يوميًا.",
+            "<strong>استمع لإشارات الجوع والشبع:</strong> قيّم جوعك من 1 إلى 10 قبل الأكل وبعده."
+          ]
+        },
+        {
+          "head": "ما دقة التسجيل بالصوت أو بالصورة؟",
+          "body": [
+            "التسجيل بالذكاء الاصطناعي يُزيل أكثر جزء مملّ في التتبّع — الكتابة — لكنه تقدير. حجم الحصة والزيت غير الظاهر أكبر مصادر الخطأ. للحصول على أفضل نتيجة صف الوجبة باختصار («صحن كبسة دجاج متوسط وسلطة») وراجع النتيجة مرة واحدة. ولأن العادة الجديدة تحتاج في المتوسط نحو شهرين لتستقر،<sup><a href=\"#ref5\">5</a></sup> فالسرعة في الأسابيع الأولى أهم من الدقة الكاملة."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "أين تتابع ذلك في Suu",
+        "lead": "الهدف أن يصبح التسجيل مسألة ثوانٍ. أسماء القوائم كما تظهر في التطبيق:",
+        "steps": [
+          {
+            "feature": "سجّل بجملة واحدة أو بالصوت",
+            "where": "الشاشة الرئيسية ← الإضافة السريعة ← <strong>إضافة طعام</strong> ← الميكروفون أو حقل الكتابة",
+            "solves": "يكفي أن تقول «بيضتان وقطعة جبنة وكوبا شاي»؛ تُحسب السعرات والمغذيات الكبرى وتُحتسب المشروبات على حدة. تتضمن الخطة المجانية 3 تحليلات ذكاء اصطناعي يوميًا."
+          },
+          {
+            "feature": "سجّل بالصورة",
+            "premium": true,
+            "where": "<strong>إضافة طعام</strong> ← الكاميرا",
+            "solves": "يقدّر الأطعمة والحصص من صورة طبقك، فلا يعود التسجيل أطول مهمة في يومك. لا تُحفظ الصورة بشكل دائم."
+          },
+          {
+            "feature": "أخبر Suui",
+            "where": "مساعد <strong>Suui</strong> في الشاشة الرئيسية",
+            "solves": "سجّل غداءك بالمحادثة؛ ويُخصم من الاستخدامات الثلاثة اليومية نفسها."
+          },
+          {
+            "feature": "وجبات اليوم وآخر 7 أيام",
+            "where": "شاشة <strong>التغذية</strong> ← <strong>وجبات اليوم</strong> · <strong>آخر 7 أيام (سعرات)</strong>",
+            "solves": "تظهر كل وجبة بوقتها وبنقاط تغذية من 1 إلى 100، ورسم الأيام السبعة يطبّق قاعدة «انظر إلى الأسبوع» تلقائيًا."
+          },
+          {
+            "feature": "تذكير بالوجبات",
+            "where_ios": "الإعدادات ← إعدادات الإشعارات ← <strong>الإشعارات اليومية</strong>",
+            "where_android": "الإعدادات ← <strong>الإشعارات اليومية</strong>",
+            "solves": "تذكير «سجّل وجبتك 🍽️» يتذكّر قاعدة «سجّل فور الأكل» بدلًا منك."
+          }
+        ],
+        "button": "حمّل Suu مجانًا"
+      },
+      "verdict": {
+        "head": "باختصار",
+        "body": [
+          "طريقة عدم التوقف عن حساب السعرات ليست مزيدًا من الانضباط بل تتبّعًا أخف: سجّل تقريبيًا، وابدأ بوجبة واحدة، وأدخل الوجبة سريعًا فور الأكل، واحكم بالمتوسط الأسبوعي.",
+          "إذا كانت الأرقام تُقلقك فالتوقف قرار صحيح أيضًا؛ طريقة الطبق أو إشارات الجوع قد توصلك إلى الهدف نفسه بطريق أهدأ."
+        ]
+      },
+      "cta": {
+        "head": "سجّل وجبة في 10 ثوانٍ",
+        "sub": "تتبّع السعرات بالصوت والكتابة · 3 تحليلات ذكاء اصطناعي مجانية يوميًا · iOS وAndroid",
+        "button": "حمّل Suu مجانًا"
+      },
+      "faq": [
+        {
+          "q": "لماذا حساب السعرات مملّ إلى هذا الحد؟",
+          "a": "لأن معظم الناس يحاولون وزن كل لقمة وإدخالها بالغرام. في الأبحاث ينخفض وقت التسجيل من 23 دقيقة يوميًا في الشهر الأول إلى 15 دقيقة في الشهر السادس. التسجيل التقريبي وتجهيز الوجبات المتكررة والتسجيل بالصوت تخفّف هذا العبء."
+        },
+        {
+          "q": "هل يمكن إنقاص الوزن دون حساب السعرات؟",
+          "a": "نعم. طريقة الطبق أو التركيز على البروتين والخضار أو اتباع إشارات الجوع والشبع يمكن أن تُحدث عجزًا حراريًا أيضًا. حساب السعرات أداة؛ إن لم تناسبك فليست إلزامية."
+        },
+        {
+          "q": "كم من الوقت يجب أن يأخذ تتبّع السعرات يوميًا؟",
+          "a": "الناجحون يسجّلون أكثر لا أطول. في إحدى الدراسات دخل من خسروا أكثر إلى صفحة التسجيل نحو 2.5 مرة يوميًا، بينما انخفض وقت التسجيل من 23 إلى 15 دقيقة يوميًا خلال ستة أشهر."
+        },
+        {
+          "q": "هل يجب أن أزن كل شيء؟",
+          "a": "لا. مقاييس اليد مثل الكف والقبضة تكفي لمعظم الناس، والأخطاء الصغيرة تتعادل في المتوسط الأسبوعي. يمكن استخدام الميزان لفترة قصيرة للتحقق إذا توقف التقدّم."
+        },
+        {
+          "q": "ما دقة تسجيل السعرات بالصوت أو بالصورة؟",
+          "a": "إنه تقدير؛ أكبر الأخطاء تأتي من حجم الحصة والزيت غير الظاهر. وصف الوجبة باختصار ومراجعة النتيجة يحسّنان الدقة. في الأسابيع الأولى السرعة أثمن من الدقة الكاملة."
+        },
+        {
+          "q": "هل تتبّع السعرات في Suu مجاني؟",
+          "a": "تسجيل الوجبات بالصوت والكتابة متاح في الخطة المجانية مع 3 تحليلات ذكاء اصطناعي يوميًا. التحليل بالصورة والذكاء الاصطناعي غير المحدود ضمن Premium."
+        }
+      ],
+      "references": [
+        {
+          "label": "Burke LE وآخرون — Self-monitoring in weight loss: a systematic review of the literature. J Am Diet Assoc, 2011",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/21185970/"
+        },
+        {
+          "label": "Harvey J وآخرون — Log Often, Lose More: Electronic Dietary Self-Monitoring for Weight Loss. Obesity, 2019",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/30801989/"
+        },
+        {
+          "label": "منظمة الصحة العالمية — النظام الغذائي الصحي (صحيفة وقائع)",
+          "href": "https://www.who.int/ar/news-room/fact-sheets/detail/healthy-diet"
+        },
+        {
+          "label": "Simpson CC, Mazzeo SE — Calorie counting and fitness tracking technology: associations with eating disorder symptomatology. Eat Behav, 2017",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/28214452/"
+        },
+        {
+          "label": "Lally P وآخرون — How are habits formed: modelling habit formation in the real world. European Journal of Social Psychology, 2010",
+          "href": "https://doi.org/10.1002/ejsp.674"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/ar/tasjil-suerat-bil-sawt.html",
+          "title": "تسجيل السعرات بالصوت",
+          "desc": "كيف يعمل تسجيل الوجبة بالكلام."
+        },
+        {
+          "href": "/blog/ar/hisab-al-suerat-bil-sura.html",
+          "title": "حساب السعرات بالصورة",
+          "desc": "كيف يقرأ الذكاء الاصطناعي طبقك."
+        },
+        {
+          "href": "/blog/ar/al-ajz-al-harari.html",
+          "title": "العجز الحراري",
+          "desc": "لتحديد هدف واقعي."
+        },
+        {
+          "href": "/blog/ar/alkasal-an-arriyada.html",
+          "title": "أشعر بالكسل عن الرياضة",
+          "desc": "7 طرق لتبدأ دون انتظار الحماس."
+        }
+      ]
+    },
+    "ru": {
+      "slug": "nadoelo-schitat-kalorii",
+      "read_minutes": 7,
+      "badge": "🍽️ Руководство · Подсчёт калорий",
+      "h1": "Надоело считать калории: 7 способов не бросить и не выгореть (и отслеживать это в Suu)",
+      "about": [
+        {
+          "name": "Подсчёт калорий"
+        },
+        {
+          "name": "Дневник питания"
+        },
+        {
+          "name": "Контроль веса"
+        }
+      ],
+      "meta": {
+        "title": "Надоело считать калории? 7 способов не бросить | Suu",
+        "description": "Большинство бросает считать калории за пару недель. Важна регулярность, а не точность: записывайте примерно, начните с одного приёма пищи, смотрите на неделю.",
+        "keywords": "надоело считать калории, как не бросить считать калории, подсчёт калорий утомляет, как похудеть без подсчёта калорий, дневник питания советы, подсчёт калорий голосом, самый простой способ считать калории",
+        "og_title": "Надоело считать калории: 7 способов не бросить",
+        "og_description": "Успешные тратят на записи не больше времени, а заходят чаще и коротко. Подсчёт калорий, который можно выдержать, — в цифрах."
+      },
+      "answer": "Большинство бросает считать калории в первые недели, потому что пытается взвешивать каждый кусок. Держится не точность, а регулярность: записывайте примерно, начните с одного приёма пищи, фиксируйте сразу после еды и смотрите на среднее за неделю, а не на каждый день. В Suu приём пищи можно записать за секунды одной фразой или голосом.",
+      "health_note": {
+        "head": "Подсчёт калорий подходит не всем.",
+        "body": [
+          "Эта статья — общая информация, а не медицинская консультация. Если у вас есть или было расстройство пищевого поведения, если цифры вызывают тревогу или после еды появляется чувство вины, прекратите подсчёт и поговорите со специалистом. При диабете, болезнях почек, беременности или грудном вскармливании определяйте норму калорий вместе с врачом или диетологом.",
+          "Не откладывайте обращение к специалисту, если замечаете:"
+        ],
+        "red_flags": [
+          "рвоту после еды, «компенсацию» чрезмерными тренировками или желание пропускать приёмы пищи",
+          "необъяснимую потерю веса за короткое время"
+        ]
+      },
+      "disclosure": "Это руководство написала команда из двух человек, которая разрабатывает Suu. Мы рекомендуем своё приложение, но советы опираются на рецензируемые исследования и Всемирную организацию здравоохранения — тот же подход работает и с блокнотом.",
+      "intro": [
+        "История большинства, кто начинает считать калории, одинакова: в первую неделю взвешивают всё, во вторую записывают весь день вечером, на третью бросают. Дело не в дисциплине — сам метод изматывает. Кто пытается внести каждый кусок до грамма, ставит учёт поверх жизни, а не внутрь неё.",
+        "Хорошая новость: польза подсчёта калорий приходит от <strong>регулярных</strong>, а не идеальных записей. Подход ниже построен на том, чтобы сделать учёт легче."
+      ],
+      "analysis": [
+        {
+          "head": "Почему почти все бросают в первые недели",
+          "body": [
+            "Записывать, что вы едите, — одна из самых надёжных привычек в контроле веса: обзор 22 исследований показал, что самоконтроль стабильно связан со снижением веса.<sup><a href=\"#ref1\">1</a></sup> Но та же привычка со временем утомляет. В исследовании со 142 участниками в первый месяц на записи уходило в среднем 23 минуты в день, а к шестому — 15 минут.<sup><a href=\"#ref2\">2</a></sup>",
+            "Главный вывод того же исследования: худеющих отличало не <strong>время</strong> на записи, а <strong>частота</strong>. Те, кто похудел больше всех, заходили в дневник около 2,5 раза в день, остальные — 1,6 раза."
+          ],
+          "callout": "ВОЗ подчёркивает, что поступление энергии (калорий) должно быть сбалансировано с её расходом, а потребности зависят от возраста, пола, образа жизни и уровня активности.<sup><a href=\"#ref3\">3</a></sup> Поэтому одна «суточная норма калорий» из интернета подходит не всем — цель лучше строить на собственных данных."
+        },
+        {
+          "head": "Регулярно, а не идеально: 7 правил",
+          "body": [
+            "Цель — не считать точнее, а считать легче."
+          ],
+          "list": [
+            "<strong>80% точности достаточно:</strong> вместо весов — мерки ладонью: мясо размером с ладонь, гарнир — с кулак. Мелкие ошибки выравниваются в среднем за неделю.",
+            "<strong>Начните с одного приёма пищи:</strong> не записывайте весь день — начните с самого непредсказуемого приёма (у большинства это ужин или перекусы).",
+            "<strong>Записывайте сразу:</strong> к вечеру половина обеда забудется. Короткие частые записи работают лучше одной длинной.",
+            "<strong>Держите повторяющиеся блюда наготове:</strong> если завтрак почти всегда одинаковый, не вводите его каждый раз заново.",
+            "<strong>Не забывайте про напитки:</strong> сладкие напитки и добавки к кофе — самые незаметные калории дня.",
+            "<strong>Смотрите на неделю, а не на день:</strong> один «тяжёлый» день ничего не портит; реальную картину показывает среднее за неделю.",
+            "<strong>Записывайте плохие дни, а не пропускайте их:</strong> праздничное застолье, свадьба, деловой ужин — лучше записать, чем бросить. Пустой день — это день, когда учёт заканчивается."
+          ]
+        },
+        {
+          "head": "Если подсчёт калорий не для вас",
+          "body": [
+            "Подсчёт калорий — инструмент, а не обязанность. В исследовании с участием 493 студентов у пользователей трекеров калорий были выше тревога по поводу еды и склонность к ограничениям.<sup><a href=\"#ref4\">4</a></sup> Если цифры выматывают, работают и альтернативы:"
+          ],
+          "list": [
+            "<strong>Метод тарелки:</strong> половина тарелки — овощи, четверть — белок, четверть — крупы.",
+            "<strong>Следите только за белком и овощами:</strong> порция белка в каждом приёме пищи и несколько порций овощей в день.",
+            "<strong>Ориентируйтесь на голод и сытость:</strong> оценивайте голод по шкале от 1 до 10 до и после еды."
+          ]
+        },
+        {
+          "head": "Насколько точна запись голосом или по фото?",
+          "body": [
+            "Запись с помощью ИИ убирает самую скучную часть учёта — набор текста, — но это оценка. Главные источники ошибок — размер порции и незаметное масло. Для лучшего результата кратко опишите блюдо («тарелка борща, два куска хлеба») и один раз проверьте результат. Поскольку новая привычка в среднем закрепляется около двух месяцев,<sup><a href=\"#ref5\">5</a></sup> в первые недели скорость важнее идеальной точности."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Где отслеживать это в Suu",
+        "lead": "Цель — сократить запись до секунд. Названия пунктов — как в интерфейсе:",
+        "steps": [
+          {
+            "feature": "Запись одной фразой или голосом",
+            "where": "Главный экран → быстрое добавление → <strong>Добавить еду</strong> → микрофон или поле ввода",
+            "solves": "Достаточно сказать «два яйца, кусок сыра, две чашки чая» — калории и макросы посчитаются, напитки учтутся отдельно. В бесплатном плане 3 AI-анализа в день."
+          },
+          {
+            "feature": "Запись по фото",
+            "premium": true,
+            "where": "<strong>Добавить еду</strong> → камера",
+            "solves": "Оценивает блюда и порции по фото тарелки, и запись перестаёт быть самой долгой задачей дня. Фото не хранится постоянно."
+          },
+          {
+            "feature": "Расскажите Suui",
+            "where": "Ассистент <strong>Suui</strong> на главном экране",
+            "solves": "Запишите обед в чате; это расходует те же 3 AI-использования в день."
+          },
+          {
+            "feature": "Сегодняшние приёмы пищи и последние 7 дней",
+            "where": "Экран <strong>Питание</strong> → <strong>Сегодняшние приёмы пищи</strong> · <strong>Последние 7 дней (калории)</strong>",
+            "solves": "Каждый приём пищи виден со временем и оценкой питания от 1 до 100; график за 7 дней сам применяет правило «смотрите на неделю»."
+          },
+          {
+            "feature": "Напоминание о еде",
+            "where_ios": "Настройки → Настройки уведомлений → <strong>Ежедневные уведомления</strong>",
+            "where_android": "Настройки → <strong>Ежедневные уведомления</strong>",
+            "solves": "Напоминание «Запишите приём пищи 🍽️» помнит правило «записывайте сразу» за вас."
+          }
+        ],
+        "button": "Скачать Suu бесплатно"
+      },
+      "verdict": {
+        "head": "Коротко",
+        "body": [
+          "Чтобы не бросить подсчёт калорий, нужна не железная дисциплина, а более лёгкий учёт: записывайте примерно, начните с одного приёма пищи, делайте короткую запись сразу после еды и оценивайте среднее за неделю.",
+          "Если цифры вызывают тревогу, прекратить — тоже правильное решение; метод тарелки или сигналы голода могут привести к той же цели более спокойным путём."
+        ]
+      },
+      "cta": {
+        "head": "Запишите приём пищи за 10 секунд",
+        "sub": "Подсчёт калорий голосом и текстом · 3 бесплатных AI-анализа в день · iOS и Android",
+        "button": "Скачать Suu бесплатно"
+      },
+      "faq": [
+        {
+          "q": "Почему считать калории так утомительно?",
+          "a": "Потому что большинство пытается взвешивать каждый кусок и вносить его до грамма. В исследованиях время на записи падает с 23 минут в день в первый месяц до 15 к шестому. Примерный учёт, готовые повторяющиеся блюда и запись голосом снижают нагрузку."
+        },
+        {
+          "q": "Можно ли похудеть без подсчёта калорий?",
+          "a": "Да. Метод тарелки, упор на белок и овощи или ориентация на голод и сытость тоже могут создать дефицит калорий. Подсчёт калорий — инструмент; если он вам не подходит, он не обязателен."
+        },
+        {
+          "q": "Сколько времени в день должен занимать подсчёт калорий?",
+          "a": "Успешные записывают чаще, а не дольше. В одном исследовании те, кто похудел больше всех, заходили в дневник около 2,5 раза в день, а время на записи за полгода сократилось с 23 до 15 минут в день."
+        },
+        {
+          "q": "Нужно ли всё взвешивать?",
+          "a": "Нет. Большинству хватает мерок ладонью и кулаком, а мелкие ошибки выравниваются в среднем за неделю. Весы можно ненадолго использовать для проверки, если прогресс остановился."
+        },
+        {
+          "q": "Насколько точен подсчёт калорий голосом или по фото?",
+          "a": "Это оценка; главные ошибки дают размер порции и незаметное масло. Короткое описание блюда и проверка результата повышают точность. В первые недели скорость ценнее идеальной точности."
+        },
+        {
+          "q": "Подсчёт калорий в Suu бесплатный?",
+          "a": "Запись еды голосом и текстом доступна в бесплатном плане с 3 AI-анализами в день. Анализ по фото и безлимитный AI — в Premium."
+        }
+      ],
+      "references": [
+        {
+          "label": "Burke LE и соавт. — Self-monitoring in weight loss: a systematic review of the literature. J Am Diet Assoc, 2011",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/21185970/"
+        },
+        {
+          "label": "Harvey J и соавт. — Log Often, Lose More: Electronic Dietary Self-Monitoring for Weight Loss. Obesity, 2019",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/30801989/"
+        },
+        {
+          "label": "ВОЗ — Здоровое питание (информационный бюллетень)",
+          "href": "https://www.who.int/ru/news-room/fact-sheets/detail/healthy-diet"
+        },
+        {
+          "label": "Simpson CC, Mazzeo SE — Calorie counting and fitness tracking technology: associations with eating disorder symptomatology. Eat Behav, 2017",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/28214452/"
+        },
+        {
+          "label": "Lally P и соавт. — How are habits formed: modelling habit formation in the real world. European Journal of Social Psychology, 2010",
+          "href": "https://doi.org/10.1002/ejsp.674"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/ru/golosovoj-vvod-kalorij.html",
+          "title": "Голосовой ввод калорий",
+          "desc": "Как записать еду, просто сказав о ней."
+        },
+        {
+          "href": "/blog/ru/kalorii-po-foto.html",
+          "title": "Калории по фото",
+          "desc": "Как ИИ читает вашу тарелку."
+        },
+        {
+          "href": "/blog/ru/deficit-kalorij.html",
+          "title": "Дефицит калорий",
+          "desc": "Как поставить реалистичную цель."
+        },
+        {
+          "href": "/blog/ru/len-zanimatsya-sportom.html",
+          "title": "Лень заниматься спортом",
+          "desc": "7 способов начать, не дожидаясь мотивации."
+        }
+      ]
+    },
+    "de": {
+      "slug": "kalorienzaehlen-durchhalten",
+      "read_minutes": 7,
+      "badge": "🍽️ Ratgeber · Kalorien tracken",
+      "h1": "Kalorienzählen immer wieder abgebrochen? 7 Wege, dranzubleiben, ohne auszubrennen (und es in Suu zu verfolgen)",
+      "about": [
+        {
+          "name": "Kalorienzählen"
+        },
+        {
+          "name": "Ernährungstagebuch"
+        },
+        {
+          "name": "Gewichtsmanagement"
+        }
+      ],
+      "meta": {
+        "title": "Kalorienzählen durchhalten: 7 Wege gegen das Aufgeben | Suu",
+        "description": "Die meisten hören nach wenigen Wochen mit dem Kalorienzählen auf. Konsequenz schlägt Genauigkeit: grob eintragen, mit einer Mahlzeit starten, Woche ansehen.",
+        "keywords": "kalorienzählen durchhalten, kalorienzählen nervt, kalorienzählen aufgeben, abnehmen ohne kalorienzählen, ernährungstagebuch tipps, kalorien per sprache eintragen, einfachste methode kalorien zählen",
+        "og_title": "Kalorienzählen durchhalten: 7 Wege gegen das Aufgeben",
+        "og_description": "Erfolgreiche verbringen nicht mehr Zeit mit dem Eintragen – sie tragen öfter und kürzer ein. Nachhaltiges Kalorien-Tracking in Zahlen."
+      },
+      "answer": "Die meisten geben das Kalorienzählen in den ersten Wochen auf, weil sie jeden Bissen abwiegen wollen. Was hält, ist nicht Genauigkeit, sondern Regelmäßigkeit: grob eintragen, mit nur einer Mahlzeit starten, direkt beim Essen notieren und auf den Wochenschnitt statt auf jeden Tag schauen. In Suu trägst du eine Mahlzeit in Sekunden mit einem Satz oder per Sprache ein.",
+      "health_note": {
+        "head": "Kalorienzählen ist nicht für alle das Richtige.",
+        "body": [
+          "Dieser Artikel ist eine allgemeine Information, keine medizinische Beratung. Wenn du eine Essstörung hast oder hattest, dich die Zahlen unter Druck setzen oder du dich nach dem Essen schuldig fühlst, hör mit dem Zählen auf und sprich mit einer Fachperson. Bei Diabetes, Nierenerkrankung, Schwangerschaft oder Stillzeit leg dein Kalorienziel mit deiner Ärztin, deinem Arzt oder einer Ernährungsfachkraft fest.",
+          "Hol dir zeitnah fachliche Hilfe, wenn du Folgendes bemerkst:"
+        ],
+        "red_flags": [
+          "Erbrechen nach dem Essen, „Ausgleichen“ durch übermäßigen Sport oder der Drang, Mahlzeiten auszulassen",
+          "ungewollter Gewichtsverlust in kurzer Zeit"
+        ]
+      },
+      "disclosure": "Diesen Ratgeber haben wir als das zweiköpfige Team geschrieben, das Suu entwickelt. Wir empfehlen unsere App, aber die Ratschläge stützen sich auf begutachtete Studien und die Deutsche Gesellschaft für Ernährung – derselbe Ansatz funktioniert auch mit Stift und Papier.",
+      "intro": [
+        "Die Geschichte der meisten, die mit dem Kalorienzählen beginnen, ist dieselbe: In Woche eins wird alles gewogen, in Woche zwei abends der ganze Tag nachgetragen, in Woche drei ist Schluss. Das ist kein Disziplinproblem – die Methode selbst ist anstrengend. Wer jeden Bissen aufs Gramm eintragen will, legt das Tracking über sein Leben statt hinein.",
+        "Die gute Nachricht: Der Nutzen kommt vom <strong>regelmäßigen</strong>, nicht vom perfekten Eintragen. Der folgende Ansatz ist darauf ausgelegt, das Tracking leichter zu machen."
+      ],
+      "analysis": [
+        {
+          "head": "Warum fast alle in den ersten Wochen aufhören",
+          "body": [
+            "Aufzuschreiben, was man isst, gehört zu den verlässlichsten Gewohnheiten beim Gewichtsmanagement: Eine Übersicht über 22 Studien fand einen durchgehenden Zusammenhang zwischen Selbstbeobachtung und Gewichtsabnahme.<sup><a href=\"#ref1\">1</a></sup> Aber genau diese Gewohnheit ermüdet mit der Zeit. In einer Studie mit 142 Teilnehmenden verbrachten diese im ersten Monat durchschnittlich 23 Minuten pro Tag mit dem Eintragen, im sechsten Monat nur noch 15.<sup><a href=\"#ref2\">2</a></sup>",
+            "Der wichtigste Befund derselben Studie: Was die Abnehmenden unterschied, war nicht die <strong>Zeit</strong> fürs Eintragen, sondern die <strong>Häufigkeit</strong>. Wer am meisten abnahm, öffnete das Tagebuch rund 2,5-mal am Tag, die anderen 1,6-mal."
+          ],
+          "callout": "Die Deutsche Gesellschaft für Ernährung betont in ihren Empfehlungen: Ernährung und körperliche Aktivität gehören zusammen.<sup><a href=\"#ref3\">3</a></sup> Eine pauschale „Tageskalorien“-Zahl aus dem Internet passt deshalb nicht für alle – besser, du leitest dein Ziel aus deinen eigenen Daten ab."
+        },
+        {
+          "head": "Konsequent statt perfekt: 7 Regeln",
+          "body": [
+            "Ziel ist nicht, genauer zu tracken, sondern einfacher."
+          ],
+          "list": [
+            "<strong>80 % Genauigkeit reichen:</strong> Hand- statt Küchenwaage – Fleisch so groß wie die Handfläche, Beilage so groß wie die Faust. Kleine Fehler gleichen sich im Wochenschnitt aus.",
+            "<strong>Mit einer Mahlzeit starten:</strong> Trag nicht den ganzen Tag ein, sondern zuerst deine unregelmäßigste Mahlzeit (bei den meisten Abendessen oder Snacks).",
+            "<strong>Direkt beim Essen eintragen:</strong> Bis zum Abend hast du das halbe Mittagessen vergessen. Kurze, häufige Einträge funktionieren besser als ein langer Nachtrag.",
+            "<strong>Wiederkehrende Mahlzeiten bereithalten:</strong> Ist dein Frühstück fast immer gleich, tipp es nicht jedes Mal neu.",
+            "<strong>Getränke nicht vergessen:</strong> Süße Getränke und Kaffee-Extras sind die am häufigsten übersehenen Kalorien des Tages.",
+            "<strong>Auf die Woche schauen, nicht auf den Tag:</strong> Ein hoher Tag macht nichts kaputt; der Wochenschnitt zeigt das echte Bild.",
+            "<strong>Schlechte Tage eintragen, nicht auslassen:</strong> Hochzeit, Grillabend, Geschäftsessen – eintragen ist besser als aufhören. Ein leerer Tag ist der Tag, an dem das Tracking endet."
+          ]
+        },
+        {
+          "head": "Wenn Kalorienzählen nichts für dich ist",
+          "body": [
+            "Kalorienzählen ist ein Werkzeug, keine Pflicht. In einer Studie mit 493 Studierenden zeigten Nutzerinnen und Nutzer von Kalorien-Trackern mehr Sorgen ums Essen und stärkeres restriktives Essverhalten.<sup><a href=\"#ref4\">4</a></sup> Wenn dich die Zahlen zermürben, funktionieren auch diese Alternativen:"
+          ],
+          "list": [
+            "<strong>Die Tellermethode:</strong> halber Teller Gemüse, ein Viertel Eiweiß, ein Viertel Getreide.",
+            "<strong>Nur Eiweiß und Gemüse verfolgen:</strong> eine Portion Eiweiß pro Mahlzeit, mehrere Portionen Gemüse am Tag.",
+            "<strong>Auf Hunger und Sättigung achten:</strong> Bewerte deinen Hunger vor und nach dem Essen auf einer Skala von 1 bis 10."
+          ]
+        },
+        {
+          "head": "Wie genau ist das Eintragen per Sprache oder Foto?",
+          "body": [
+            "KI-Eintragen nimmt dir den lästigsten Teil ab – das Tippen –, bleibt aber eine Schätzung. Portionsgröße und unsichtbares Öl sind die größten Fehlerquellen. Beschreib die Mahlzeit am besten kurz („ein Teller Linseneintopf, zwei Scheiben Brot“) und prüf das Ergebnis einmal. Weil sich eine neue Gewohnheit im Schnitt erst nach etwa zwei Monaten festigt,<sup><a href=\"#ref5\">5</a></sup> ist Tempo in den ersten Wochen wichtiger als perfekte Genauigkeit."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Wo du das in Suu verfolgst",
+        "lead": "Ziel ist, das Eintragen auf Sekunden zu verkürzen. Die Menünamen sind genau so wie in der App:",
+        "steps": [
+          {
+            "feature": "Mit einem Satz oder per Sprache eintragen",
+            "where": "Startbildschirm → Schnell hinzufügen → <strong>Essen hinzufügen</strong> → Mikrofon oder Textfeld",
+            "solves": "Sag einfach „zwei Eier, eine Scheibe Käse, zwei Tassen Tee“ – Kalorien und Makros werden berechnet, Getränke separat gezählt. Im kostenlosen Plan 3 KI-Analysen pro Tag."
+          },
+          {
+            "feature": "Per Foto eintragen",
+            "premium": true,
+            "where": "<strong>Essen hinzufügen</strong> → Kamera",
+            "solves": "Schätzt Gerichte und Portionen anhand eines Fotos deines Tellers – das Eintragen ist nicht mehr die längste Aufgabe des Tages. Fotos werden nicht dauerhaft gespeichert."
+          },
+          {
+            "feature": "Sag es Suui",
+            "where": "Der Assistent <strong>Suui</strong> auf dem Startbildschirm",
+            "solves": "Trag dein Mittagessen im Chat ein; das geht von denselben 3 täglichen KI-Nutzungen ab."
+          },
+          {
+            "feature": "Heutige Mahlzeiten und letzte 7 Tage",
+            "where": "Bildschirm <strong>Ernährung</strong> → <strong>Heutige Mahlzeiten</strong> · <strong>Letzte 7 Tage (Kalorien)</strong>",
+            "solves": "Jede Mahlzeit steht mit Uhrzeit und einem Ernährungs-Score von 1 bis 100 da; die 7-Tage-Grafik setzt die Regel „auf die Woche schauen“ für dich um."
+          },
+          {
+            "feature": "Mahlzeiten-Erinnerung",
+            "where_ios": "Einstellungen → Benachrichtigungseinstellungen → <strong>Tägliche Benachrichtigungen</strong>",
+            "where_android": "Einstellungen → <strong>Tägliche Benachrichtigungen</strong>",
+            "solves": "Die Erinnerung „Mahlzeit eintragen 🍽️“ denkt für dich an die Regel „direkt beim Essen eintragen“."
+          }
+        ],
+        "button": "Suu kostenlos laden"
+      },
+      "verdict": {
+        "head": "Kurz gesagt",
+        "body": [
+          "Wer mit dem Kalorienzählen nicht wieder aufhören will, braucht nicht mehr Disziplin, sondern leichteres Tracking: grob eintragen, mit einer Mahlzeit starten, direkt nach dem Essen kurz notieren und nach dem Wochenschnitt urteilen.",
+          "Wenn dich die Zahlen stressen, ist Aufhören auch eine richtige Entscheidung; Tellermethode oder Hungersignale können dich auf ruhigerem Weg zum selben Ziel bringen."
+        ]
+      },
+      "cta": {
+        "head": "Eine Mahlzeit in 10 Sekunden eintragen",
+        "sub": "Kalorien per Sprache und Text · 3 kostenlose KI-Analysen pro Tag · iOS und Android",
+        "button": "Suu kostenlos laden"
+      },
+      "faq": [
+        {
+          "q": "Warum ist Kalorienzählen so nervig?",
+          "a": "Weil die meisten jeden Bissen abwiegen und aufs Gramm eintragen wollen. In Studien sinkt die Zeit fürs Eintragen von 23 Minuten pro Tag im ersten Monat auf 15 im sechsten. Grobes Eintragen, fertige Standardmahlzeiten und Spracheingabe nehmen viel Last ab."
+        },
+        {
+          "q": "Kann ich abnehmen, ohne Kalorien zu zählen?",
+          "a": "Ja. Die Tellermethode, der Fokus auf Eiweiß und Gemüse oder das Achten auf Hunger und Sättigung können ebenfalls ein Kaloriendefizit schaffen. Kalorienzählen ist ein Werkzeug; wenn es dir nicht guttut, ist es keine Pflicht."
+        },
+        {
+          "q": "Wie viel Zeit sollte Kalorien-Tracking am Tag kosten?",
+          "a": "Erfolgreiche tragen öfter ein, nicht länger. In einer Studie öffneten die, die am meisten abnahmen, ihr Tagebuch rund 2,5-mal am Tag, während die Zeit fürs Eintragen in sechs Monaten von 23 auf 15 Minuten pro Tag sank."
+        },
+        {
+          "q": "Muss ich alles abwiegen?",
+          "a": "Nein. Handmaße wie Handfläche und Faust reichen den meisten, kleine Fehler gleichen sich im Wochenschnitt aus. Eine Waage kannst du kurzzeitig zur Kontrolle nutzen, wenn der Fortschritt stockt."
+        },
+        {
+          "q": "Wie genau ist Kalorien-Tracking per Sprache oder Foto?",
+          "a": "Es ist eine Schätzung; die größten Fehler kommen von der Portionsgröße und unsichtbarem Öl. Eine kurze Beschreibung und ein prüfender Blick aufs Ergebnis verbessern die Genauigkeit. In den ersten Wochen ist Tempo mehr wert als perfekte Genauigkeit."
+        },
+        {
+          "q": "Ist das Kalorien-Tracking in Suu kostenlos?",
+          "a": "Mahlzeiten per Sprache und Text einzutragen ist im kostenlosen Plan mit 3 KI-Analysen pro Tag möglich. Foto-Analyse und unbegrenzte KI sind Premium."
+        }
+      ],
+      "references": [
+        {
+          "label": "Burke LE et al. — Self-monitoring in weight loss: a systematic review of the literature. J Am Diet Assoc, 2011",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/21185970/"
+        },
+        {
+          "label": "Harvey J et al. — Log Often, Lose More: Electronic Dietary Self-Monitoring for Weight Loss. Obesity, 2019",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/30801989/"
+        },
+        {
+          "label": "Deutsche Gesellschaft für Ernährung — Gut essen und trinken: die DGE-Empfehlungen",
+          "href": "https://www.dge.de/gesunde-ernaehrung/gut-essen-und-trinken/dge-empfehlungen/"
+        },
+        {
+          "label": "Simpson CC, Mazzeo SE — Calorie counting and fitness tracking technology: associations with eating disorder symptomatology. Eat Behav, 2017",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/28214452/"
+        },
+        {
+          "label": "Lally P et al. — How are habits formed: modelling habit formation in the real world. European Journal of Social Psychology, 2010",
+          "href": "https://doi.org/10.1002/ejsp.674"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/de/kalorienzaehlen-per-foto.html",
+          "title": "Kalorienzählen per Foto",
+          "desc": "Wie die KI deinen Teller liest."
+        },
+        {
+          "href": "/blog/de/kaloriendefizit.html",
+          "title": "Kaloriendefizit: so geht's",
+          "desc": "Ein realistisches Ziel festlegen."
+        },
+        {
+          "href": "/blog/de/bester-kalorienzaehler-app.html",
+          "title": "Der beste Kalorienzähler 2026",
+          "desc": "MyFitnessPal, Yazio, Lifesum und Suu."
+        },
+        {
+          "href": "/blog/de/keine-lust-auf-sport.html",
+          "title": "Keine Lust auf Sport?",
+          "desc": "7 Wege, ohne Motivation anzufangen."
+        }
+      ]
+    },
+    "it": {
+      "slug": "contare-calorie-senza-stress",
+      "read_minutes": 7,
+      "badge": "🍽️ Guida · Monitorare le calorie",
+      "h1": "Smetti sempre di contare le calorie? 7 modi per andare avanti senza stress (e seguirlo in Suu)",
+      "about": [
+        {
+          "name": "Conteggio delle calorie"
+        },
+        {
+          "name": "Diario alimentare"
+        },
+        {
+          "name": "Gestione del peso"
+        }
+      ],
+      "meta": {
+        "title": "Contare le calorie senza mollare: 7 modi pratici | Suu",
+        "description": "Quasi tutti smettono di contare le calorie dopo poche settimane. Costanza batte precisione: registra a occhio, parti da un pasto, guarda la media settimanale.",
+        "keywords": "contare le calorie è stressante, smettere di contare le calorie, come continuare a contare le calorie, dimagrire senza contare le calorie, diario alimentare consigli, contare calorie con la voce, modo più semplice per contare le calorie",
+        "og_title": "Smetti sempre di contare le calorie? 7 modi per andare avanti",
+        "og_description": "Chi ha successo non passa più tempo a registrare: registra più spesso e più velocemente. Un conteggio sostenibile, in numeri."
+      },
+      "answer": "Quasi tutti smettono di contare le calorie nelle prime settimane perché cercano di pesare ogni boccone. Quello che dura non è la precisione ma la costanza: registra a occhio, inizia da un solo pasto, annota subito quando mangi e guarda la media settimanale invece di ogni giorno. In Suu registri un pasto in pochi secondi con una frase o con la voce.",
+      "health_note": {
+        "head": "Contare le calorie non fa per tutti.",
+        "body": [
+          "Questo articolo è un'informazione generale, non un consiglio medico. Se hai o hai avuto un disturbo alimentare, se i numeri ti mettono ansia o ti senti in colpa dopo aver mangiato, smetti di contare e parlane con un professionista sanitario. In caso di diabete, malattie renali, gravidanza o allattamento, definisci l'obiettivo calorico con il tuo medico o un dietista.",
+          "Rivolgiti subito a un professionista se noti:"
+        ],
+        "red_flags": [
+          "vomito dopo i pasti, «compensare» con esercizio eccessivo o voglia di saltare i pasti",
+          "perdita di peso inspiegabile in poco tempo"
+        ]
+      },
+      "disclosure": "Abbiamo scritto questa guida come il team di due persone che sviluppa Suu. Consigliamo la nostra app, ma i consigli si basano su studi sottoposti a revisione e sulle Linee guida del CREA: lo stesso approccio funziona anche con carta e penna.",
+      "intro": [
+        "La storia di chi inizia a contare le calorie è quasi sempre la stessa: la prima settimana pesa tutto, la seconda registra l'intera giornata la sera, la terza smette. Non è un problema di disciplina: è il metodo in sé a essere estenuante. Chi prova a inserire ogni boccone al grammo mette il monitoraggio sopra la propria vita, non dentro.",
+        "La buona notizia: il beneficio arriva da una registrazione <strong>regolare</strong>, non perfetta. L'approccio qui sotto è pensato per rendere il monitoraggio più leggero."
+      ],
+      "analysis": [
+        {
+          "head": "Perché quasi tutti mollano nelle prime settimane",
+          "body": [
+            "Annotare cosa mangi è una delle abitudini più solide nella gestione del peso: una revisione di 22 studi ha trovato un legame costante tra automonitoraggio e perdita di peso.<sup><a href=\"#ref1\">1</a></sup> Ma la stessa abitudine con il tempo stanca. In uno studio con 142 partecipanti, nel primo mese si dedicavano in media 23 minuti al giorno alla registrazione, scesi a 15 al sesto mese.<sup><a href=\"#ref2\">2</a></sup>",
+            "Il risultato più importante dello stesso studio: a distinguere chi dimagriva non era il <strong>tempo</strong> dedicato, ma la <strong>frequenza</strong>. Chi perdeva più peso apriva il diario circa 2,5 volte al giorno, gli altri 1,6."
+          ],
+          "callout": "Le Linee guida per una sana alimentazione del CREA aprono con la direttiva «Controlla il peso e mantieniti sempre attivo» e ne dedicano un'altra all'attenzione verso le diete senza basi scientifiche.<sup><a href=\"#ref3\">3</a></sup> Un unico numero di «calorie al giorno» trovato online non va bene per tutti: meglio costruire l'obiettivo sui tuoi dati."
+        },
+        {
+          "head": "Costante, non perfetto: 7 regole",
+          "body": [
+            "L'obiettivo non è registrare in modo più preciso, ma più facile."
+          ],
+          "list": [
+            "<strong>L'80% di precisione basta:</strong> usa la mano invece della bilancia — carne grande quanto il palmo, pasta o riso quanto un pugno. I piccoli errori si compensano nella media settimanale.",
+            "<strong>Parti da un solo pasto:</strong> non registrare tutta la giornata; comincia dal pasto più irregolare (per molti la cena o gli spuntini).",
+            "<strong>Registra mentre mangi:</strong> la sera avrai dimenticato metà del pranzo. Voci brevi e frequenti funzionano meglio di un lungo recupero serale.",
+            "<strong>Tieni pronti i pasti che si ripetono:</strong> se la colazione è quasi sempre uguale, non riscriverla ogni volta.",
+            "<strong>Non dimenticare le bevande:</strong> bibite zuccherate, aperitivi e aggiunte al caffè sono le calorie più trascurate della giornata.",
+            "<strong>Guarda la settimana, non il giorno:</strong> un giorno alto non rovina niente; la media settimanale mostra il quadro reale.",
+            "<strong>Registra i giorni difficili, non saltarli:</strong> pranzo della domenica, matrimonio, cena di lavoro — registrare è meglio che smettere. Un giorno vuoto è il giorno in cui il monitoraggio finisce."
+          ]
+        },
+        {
+          "head": "Se contare le calorie non fa per te",
+          "body": [
+            "Contare le calorie è uno strumento, non un obbligo. In uno studio su 493 studenti universitari, chi usava app per contare le calorie mostrava più preoccupazione per il cibo e più tendenza a restringere l'alimentazione.<sup><a href=\"#ref4\">4</a></sup> Se i numeri ti logorano, funzionano anche queste alternative:"
+          ],
+          "list": [
+            "<strong>Il metodo del piatto:</strong> metà piatto verdure, un quarto proteine, un quarto cereali.",
+            "<strong>Segui solo proteine e verdure:</strong> una porzione di proteine a ogni pasto e diverse porzioni di verdura al giorno.",
+            "<strong>Ascolta fame e sazietà:</strong> dai un voto da 1 a 10 alla tua fame prima e dopo aver mangiato."
+          ]
+        },
+        {
+          "head": "Quanto è precisa la registrazione a voce o con foto?",
+          "body": [
+            "La registrazione con l'intelligenza artificiale elimina la parte più noiosa — scrivere — ma resta una stima. Porzioni e olio «nascosto» sono le principali fonti di errore. Per il miglior risultato descrivi il pasto in breve («un piatto di pasta al pomodoro, un'insalata») e controlla una volta il risultato. Poiché una nuova abitudine impiega in media circa due mesi a consolidarsi,<sup><a href=\"#ref5\">5</a></sup> nelle prime settimane la velocità conta più della precisione perfetta."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Dove seguirlo in Suu",
+        "lead": "L'obiettivo è ridurre la registrazione a pochi secondi. I nomi dei menu sono quelli che vedi nell'app:",
+        "steps": [
+          {
+            "feature": "Registra con una frase o con la voce",
+            "where": "Schermata principale → aggiunta rapida → <strong>Aggiungi cibo</strong> → microfono o campo di testo",
+            "solves": "Basta dire «due uova, una fetta di formaggio, un cappuccino»: calorie e macro vengono calcolati e le bevande contate a parte. Il piano gratuito include 3 analisi AI al giorno."
+          },
+          {
+            "feature": "Registra con una foto",
+            "premium": true,
+            "where": "<strong>Aggiungi cibo</strong> → fotocamera",
+            "solves": "Stima piatti e porzioni dalla foto del tuo piatto, così registrare non è più il compito più lungo della giornata. Le foto non vengono conservate in modo permanente."
+          },
+          {
+            "feature": "Dillo a Suui",
+            "where": "L'assistente <strong>Suui</strong> nella schermata principale",
+            "solves": "Registra il pranzo chattando; si scala dagli stessi 3 utilizzi AI giornalieri."
+          },
+          {
+            "feature": "Pasti di oggi e ultimi 7 giorni",
+            "where": "Schermata <strong>Nutrizione</strong> → <strong>Pasti di oggi</strong> · <strong>Ultimi 7 giorni (calorie)</strong>",
+            "solves": "Ogni pasto compare con l'orario e un punteggio nutrizionale da 1 a 100; il grafico a 7 giorni applica da solo la regola «guarda la settimana»."
+          },
+          {
+            "feature": "Promemoria per i pasti",
+            "where_ios": "Impostazioni → Impostazioni notifiche → <strong>Notifiche giornaliere</strong>",
+            "where_android": "Impostazioni → <strong>Notifiche giornaliere</strong>",
+            "solves": "Il promemoria «Registra il pasto 🍽️» ricorda per te la regola «registra mentre mangi»."
+          }
+        ],
+        "button": "Scarica Suu gratis"
+      },
+      "verdict": {
+        "head": "In breve",
+        "body": [
+          "Per non mollare il conteggio delle calorie non serve più disciplina, ma un monitoraggio più leggero: registra a occhio, parti da un pasto, annota subito dopo aver mangiato e giudica sulla media settimanale.",
+          "Se i numeri ti mettono ansia, smettere è anche una scelta giusta: il metodo del piatto o i segnali di fame possono portarti allo stesso obiettivo per una strada più tranquilla."
+        ]
+      },
+      "cta": {
+        "head": "Registra un pasto in 10 secondi",
+        "sub": "Calorie a voce e per iscritto · 3 analisi AI gratuite al giorno · iOS e Android",
+        "button": "Scarica Suu gratis"
+      },
+      "faq": [
+        {
+          "q": "Perché contare le calorie è così stressante?",
+          "a": "Perché quasi tutti cercano di pesare ogni boccone e inserirlo al grammo. Negli studi il tempo dedicato scende da 23 minuti al giorno nel primo mese a 15 al sesto. Registrare a occhio, tenere pronti i pasti ricorrenti e usare la voce alleggeriscono il carico."
+        },
+        {
+          "q": "Si può dimagrire senza contare le calorie?",
+          "a": "Sì. Il metodo del piatto, puntare su proteine e verdure o seguire fame e sazietà possono creare anche loro un deficit calorico. Contare le calorie è uno strumento; se non ti fa bene, non è obbligatorio."
+        },
+        {
+          "q": "Quanto tempo al giorno dovrebbe richiedere contare le calorie?",
+          "a": "Chi ha successo registra più spesso, non più a lungo. In uno studio chi perdeva più peso apriva il diario circa 2,5 volte al giorno, mentre il tempo dedicato scendeva in sei mesi da 23 a 15 minuti al giorno."
+        },
+        {
+          "q": "Devo pesare tutto?",
+          "a": "No. Misure a mano come palmo e pugno bastano alla maggior parte delle persone e i piccoli errori si compensano nella media settimanale. La bilancia si può usare per poco tempo come controllo se i progressi si fermano."
+        },
+        {
+          "q": "Quanto è preciso contare le calorie a voce o con una foto?",
+          "a": "È una stima; gli errori maggiori vengono da porzioni e olio nascosto. Una breve descrizione del pasto e un controllo del risultato migliorano la precisione. Nelle prime settimane la velocità vale più della precisione perfetta."
+        },
+        {
+          "q": "Il conteggio delle calorie in Suu è gratuito?",
+          "a": "Registrare i pasti a voce e per iscritto è nel piano gratuito con 3 analisi AI al giorno. L'analisi da foto e l'AI illimitata sono Premium."
+        }
+      ],
+      "references": [
+        {
+          "label": "Burke LE et al. — Self-monitoring in weight loss: a systematic review of the literature. J Am Diet Assoc, 2011",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/21185970/"
+        },
+        {
+          "label": "Harvey J et al. — Log Often, Lose More: Electronic Dietary Self-Monitoring for Weight Loss. Obesity, 2019",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/30801989/"
+        },
+        {
+          "label": "CREA — Linee guida per una sana alimentazione (revisione 2018)",
+          "href": "https://www.crea.gov.it/web/alimenti-e-nutrizione/-/linee-guida-per-una-sana-alimentazione-2018"
+        },
+        {
+          "label": "Simpson CC, Mazzeo SE — Calorie counting and fitness tracking technology: associations with eating disorder symptomatology. Eat Behav, 2017",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/28214452/"
+        },
+        {
+          "label": "Lally P et al. — How are habits formed: modelling habit formation in the real world. European Journal of Social Psychology, 2010",
+          "href": "https://doi.org/10.1002/ejsp.674"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/it/conteggio-calorie-con-foto.html",
+          "title": "Contare le calorie con una foto",
+          "desc": "Come l'AI legge il tuo piatto."
+        },
+        {
+          "href": "/blog/it/deficit-calorico.html",
+          "title": "Deficit calorico: come funziona",
+          "desc": "Per fissare un obiettivo realistico."
+        },
+        {
+          "href": "/blog/it/migliore-app-conta-calorie.html",
+          "title": "La migliore app conta calorie 2026",
+          "desc": "MyFitnessPal, Yazio, Lifesum e Suu."
+        },
+        {
+          "href": "/blog/it/non-ho-voglia-di-allenarmi.html",
+          "title": "Non ho voglia di allenarmi",
+          "desc": "7 modi per iniziare senza aspettare la motivazione."
+        }
+      ]
+    },
+    "uk": {
+      "slug": "nabrydlo-rakhuvaty-kalorii",
+      "read_minutes": 7,
+      "badge": "🍽️ Посібник · Підрахунок калорій",
+      "h1": "Набридло рахувати калорії: 7 способів не кинути й не вигоріти (і відстежувати це в Suu)",
+      "about": [
+        {
+          "name": "Підрахунок калорій"
+        },
+        {
+          "name": "Щоденник харчування"
+        },
+        {
+          "name": "Контроль ваги"
+        }
+      ],
+      "meta": {
+        "title": "Набридло рахувати калорії? 7 способів не кинути | Suu",
+        "description": "Більшість кидає рахувати калорії за кілька тижнів. Важить регулярність, а не точність: записуй приблизно, почни з одного прийому їжі, дивись на тиждень.",
+        "keywords": "набридло рахувати калорії, як не кинути рахувати калорії, підрахунок калорій втомлює, як схуднути без підрахунку калорій, щоденник харчування поради, підрахунок калорій голосом, найпростіший спосіб рахувати калорії",
+        "og_title": "Набридло рахувати калорії: 7 способів не кинути",
+        "og_description": "Успішні витрачають на записи не більше часу, а заходять частіше й коротко. Підрахунок калорій, який можна витримати, — у цифрах."
+      },
+      "answer": "Більшість кидає рахувати калорії в перші тижні, бо намагається зважувати кожен шматок. Тримається не точність, а регулярність: записуй приблизно, почни з одного прийому їжі, фіксуй одразу після їжі й дивись на середнє за тиждень, а не на кожен день. У Suu прийом їжі можна записати за секунди одним реченням або голосом.",
+      "health_note": {
+        "head": "Підрахунок калорій підходить не всім.",
+        "body": [
+          "Ця стаття — загальна інформація, а не медична порада. Якщо в тебе є чи був розлад харчової поведінки, якщо цифри викликають тривогу або після їжі з'являється почуття провини, припини підрахунок і поговори з фахівцем. При діабеті, хворобах нирок, вагітності чи годуванні груддю визначай норму калорій разом із лікарем або дієтологом.",
+          "Не відкладай звернення до фахівця, якщо помічаєш:"
+        ],
+        "red_flags": [
+          "блювання після їжі, «компенсацію» надмірними тренуваннями чи бажання пропускати прийоми їжі",
+          "незрозуміле схуднення за короткий час"
+        ]
+      },
+      "disclosure": "Цей посібник написала команда з двох людей, яка створює Suu. Ми радимо свій застосунок, але поради спираються на рецензовані дослідження та Центр громадського здоров'я України — той самий підхід працює й із блокнотом.",
+      "intro": [
+        "Історія більшості, хто починає рахувати калорії, однакова: першого тижня зважують усе, другого записують увесь день увечері, третього кидають. Річ не в дисципліні — сам метод виснажує. Хто намагається внести кожен шматок до грама, ставить облік поверх життя, а не всередину нього.",
+        "Добра новина: користь підрахунку калорій дають <strong>регулярні</strong>, а не ідеальні записи. Підхід нижче побудовано на тому, щоб зробити облік легшим."
+      ],
+      "analysis": [
+        {
+          "head": "Чому майже всі кидають у перші тижні",
+          "body": [
+            "Записувати, що ти їси, — одна з найнадійніших звичок у контролі ваги: огляд 22 досліджень показав, що самоконтроль стабільно пов'язаний зі схудненням.<sup><a href=\"#ref1\">1</a></sup> Але та сама звичка з часом втомлює. У дослідженні зі 142 учасниками першого місяця на записи йшло в середньому 23 хвилини на день, а до шостого — 15 хвилин.<sup><a href=\"#ref2\">2</a></sup>",
+            "Головний висновок того ж дослідження: тих, хто худнув, вирізняв не <strong>час</strong> на записи, а <strong>частота</strong>. Ті, хто схуд найбільше, заходили до щоденника близько 2,5 раза на день, решта — 1,6 раза."
+          ],
+          "callout": "Центр громадського здоров'я України у «12 кроках до здорового харчування» радить підтримувати масу тіла в межах ІМТ 18,5–25 завдяки щоденній фізичній активності та обмежувати солодкі напої.<sup><a href=\"#ref3\">3</a></sup> Одна «добова норма калорій» з інтернету підходить не всім — ціль краще будувати на власних даних."
+        },
+        {
+          "head": "Регулярно, а не ідеально: 7 правил",
+          "body": [
+            "Мета — не рахувати точніше, а рахувати легше."
+          ],
+          "list": [
+            "<strong>80% точності досить:</strong> замість ваг — мірки долонею: м'ясо завбільшки з долоню, гарнір — з кулак. Дрібні помилки вирівнюються в середньому за тиждень.",
+            "<strong>Почни з одного прийому їжі:</strong> не записуй увесь день — почни з найнепередбачуванішого (у більшості це вечеря чи перекуси).",
+            "<strong>Записуй одразу:</strong> до вечора половина обіду забудеться. Короткі часті записи працюють краще за один довгий.",
+            "<strong>Тримай повторювані страви напоготові:</strong> якщо сніданок майже завжди однаковий, не вводь його щоразу заново.",
+            "<strong>Не забувай про напої:</strong> солодкі напої й добавки до кави — найнепомітніші калорії дня.",
+            "<strong>Дивись на тиждень, а не на день:</strong> один «важкий» день нічого не псує; реальну картину показує середнє за тиждень.",
+            "<strong>Записуй погані дні, а не пропускай їх:</strong> свято, весілля, діловий обід — краще записати, ніж кинути. Порожній день — це день, коли облік закінчується."
+          ]
+        },
+        {
+          "head": "Якщо підрахунок калорій не для тебе",
+          "body": [
+            "Підрахунок калорій — інструмент, а не обов'язок. У дослідженні за участі 493 студентів у користувачів трекерів калорій були вищі тривога щодо їжі та схильність до обмежень.<sup><a href=\"#ref4\">4</a></sup> Якщо цифри виснажують, працюють і альтернативи:"
+          ],
+          "list": [
+            "<strong>Метод тарілки:</strong> половина тарілки — овочі, чверть — білок, чверть — крупи.",
+            "<strong>Стеж лише за білком і овочами:</strong> порція білка в кожному прийомі їжі й кілька порцій овочів на день.",
+            "<strong>Орієнтуйся на голод і ситість:</strong> оцінюй голод за шкалою від 1 до 10 до й після їжі."
+          ]
+        },
+        {
+          "head": "Наскільки точний запис голосом чи за фото?",
+          "body": [
+            "Запис за допомогою ШІ прибирає найнуднішу частину обліку — набір тексту, — але це оцінка. Головні джерела помилок — розмір порції та непомітна олія. Для кращого результату коротко опиши страву («тарілка борщу, два шматки хліба») і один раз перевір результат. Оскільки нова звичка в середньому закріплюється близько двох місяців,<sup><a href=\"#ref5\">5</a></sup> у перші тижні швидкість важливіша за ідеальну точність."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Де відстежувати це в Suu",
+        "lead": "Мета — скоротити запис до секунд. Назви пунктів наведено англійською, як в інтерфейсі:",
+        "steps": [
+          {
+            "feature": "Запис одним реченням або голосом",
+            "where": "Home → quick add → <strong>Add Food</strong> → мікрофон або текстове поле",
+            "solves": "Досить сказати «два яйця, шматок сиру, дві чашки чаю» — калорії й макроси порахуються, напої врахуються окремо. У безкоштовному плані 3 AI-аналізи на день."
+          },
+          {
+            "feature": "Запис за фото",
+            "premium": true,
+            "where": "<strong>Add Food</strong> → камера",
+            "solves": "Оцінює страви й порції за фото тарілки, і запис перестає бути найдовшою справою дня. Фото не зберігається постійно."
+          },
+          {
+            "feature": "Розкажи Suui",
+            "where": "Асистент <strong>Suui</strong> на головному екрані",
+            "solves": "Запиши обід у чаті; це витрачає ті самі 3 AI-використання на день."
+          },
+          {
+            "feature": "Сьогоднішні прийоми їжі й останні 7 днів",
+            "where": "Екран <strong>Nutrition</strong> → <strong>Today's meals</strong> · <strong>Last 7 days (calories)</strong>",
+            "solves": "Кожен прийом їжі видно з часом і оцінкою харчування від 1 до 100; графік за 7 днів сам застосовує правило «дивись на тиждень»."
+          },
+          {
+            "feature": "Нагадування про їжу",
+            "where_ios": "Settings → Notification Settings → <strong>Daily notifications</strong>",
+            "where_android": "Settings → <strong>Daily notifications</strong>",
+            "solves": "Нагадування «Log your meal 🍽️» пам'ятає правило «записуй одразу» за тебе."
+          }
+        ],
+        "note": "Українська локалізація застосунку в планах; поки що зручно користуватися англійською версією інтерфейсу.",
+        "button": "Завантажити Suu безкоштовно"
+      },
+      "verdict": {
+        "head": "Коротко",
+        "body": [
+          "Щоб не кинути підрахунок калорій, потрібна не залізна дисципліна, а легший облік: записуй приблизно, почни з одного прийому їжі, роби короткий запис одразу після їжі й оцінюй середнє за тиждень.",
+          "Якщо цифри викликають тривогу, припинити — теж правильне рішення; метод тарілки чи сигнали голоду можуть привести до тієї ж мети спокійнішим шляхом."
+        ]
+      },
+      "cta": {
+        "head": "Запиши прийом їжі за 10 секунд",
+        "sub": "Підрахунок калорій голосом і текстом · 3 безкоштовні AI-аналізи на день · iOS та Android",
+        "button": "Завантажити Suu безкоштовно"
+      },
+      "faq": [
+        {
+          "q": "Чому рахувати калорії так виснажливо?",
+          "a": "Бо більшість намагається зважувати кожен шматок і вносити його до грама. У дослідженнях час на записи падає з 23 хвилин на день першого місяця до 15 на шостий. Приблизний облік, готові повторювані страви й запис голосом зменшують навантаження."
+        },
+        {
+          "q": "Чи можна схуднути без підрахунку калорій?",
+          "a": "Так. Метод тарілки, упор на білок і овочі чи орієнтація на голод і ситість теж можуть створити дефіцит калорій. Підрахунок калорій — інструмент; якщо він тобі не підходить, він не обов'язковий."
+        },
+        {
+          "q": "Скільки часу на день має займати підрахунок калорій?",
+          "a": "Успішні записують частіше, а не довше. В одному дослідженні ті, хто схуд найбільше, заходили до щоденника близько 2,5 раза на день, а час на записи за пів року скоротився з 23 до 15 хвилин на день."
+        },
+        {
+          "q": "Чи треба все зважувати?",
+          "a": "Ні. Більшості вистачає мірок долонею й кулаком, а дрібні помилки вирівнюються в середньому за тиждень. Ваги можна ненадовго використати для перевірки, якщо прогрес зупинився."
+        },
+        {
+          "q": "Наскільки точний підрахунок калорій голосом чи за фото?",
+          "a": "Це оцінка; головні помилки дають розмір порції та непомітна олія. Короткий опис страви й перевірка результату підвищують точність. У перші тижні швидкість цінніша за ідеальну точність."
+        },
+        {
+          "q": "Підрахунок калорій у Suu безкоштовний?",
+          "a": "Запис їжі голосом і текстом доступний у безкоштовному плані з 3 AI-аналізами на день. Аналіз за фото й безлімітний AI — у Premium."
+        }
+      ],
+      "references": [
+        {
+          "label": "Burke LE та ін. — Self-monitoring in weight loss: a systematic review of the literature. J Am Diet Assoc, 2011",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/21185970/"
+        },
+        {
+          "label": "Harvey J та ін. — Log Often, Lose More: Electronic Dietary Self-Monitoring for Weight Loss. Obesity, 2019",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/30801989/"
+        },
+        {
+          "label": "Центр громадського здоров'я України — 12 кроків до здорового харчування",
+          "href": "https://phc.org.ua/news/12-krokiv-do-zdorovogo-kharchuvannya"
+        },
+        {
+          "label": "Simpson CC, Mazzeo SE — Calorie counting and fitness tracking technology: associations with eating disorder symptomatology. Eat Behav, 2017",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/28214452/"
+        },
+        {
+          "label": "Lally P та ін. — How are habits formed: modelling habit formation in the real world. European Journal of Social Psychology, 2010",
+          "href": "https://doi.org/10.1002/ejsp.674"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/uk/pidrakhunok-kaloriy-za-foto.html",
+          "title": "Підрахунок калорій за фото",
+          "desc": "Як ШІ читає твою тарілку."
+        },
+        {
+          "href": "/blog/uk/defitsyt-kaloriy.html",
+          "title": "Дефіцит калорій: як це працює",
+          "desc": "Щоб поставити реалістичну ціль."
+        },
+        {
+          "href": "/blog/uk/najkrashchyj-lichylnyk-kalorij.html",
+          "title": "Найкращий лічильник калорій 2026",
+          "desc": "MyFitnessPal, Yazio, Lifesum і Suu."
+        },
+        {
+          "href": "/blog/uk/motyvatsiya-do-sportu.html",
+          "title": "Лінь займатися спортом",
+          "desc": "7 способів почати, не чекаючи мотивації."
+        }
+      ]
+    }
+  }
+}
