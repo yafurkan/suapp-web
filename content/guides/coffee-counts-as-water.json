@@ -1,0 +1,1314 @@
+{
+  "_note": "Yapay zekâ sorusu rehberi #8 — 'kahve su yerine geçer mi'. 2026-09-27'de el yazımı tr/en/ar/ru sayfaları taşındı (eski içerikte kahve 0,60 ve negatif alkol katsayısı vardı; ikisi de yanlış). Katsayılar suu-facts.json → beverage_hydration (filtre 0,8, Türk kahvesi 0,7, espresso 0,5, siyah çay 0,9). Alkol katsayısı YAYINLANMAZ (iOS/Android uyuşmuyor); yalnızca hedef artışı (+250 ml / 10 ml saf alkol). İçecek listesi (su/maden suyu dışı) Premium; ücretsiz yol Suui.",
+  "kind": "guide",
+  "cluster": "kahve-cay-su-sayar-mi",
+  "published": "2026-09-27",
+  "modified": "2026-09-27",
+  "pages": {
+    "tr": {
+      "slug": "kahve-cay-su-sayar-mi",
+      "published": "2026-03-15",
+      "read_minutes": 7,
+      "badge": "☕ Rehber · İçecekler ve su",
+      "h1": "Kahve Su Yerine Geçer mi? Çay, Kahve ve Diğer İçeceklerin Su Hesabı (ve Suu'da Takibi)",
+      "about": [
+        {
+          "name": "Kahve ve hidrasyon"
+        },
+        {
+          "name": "Kafein"
+        },
+        {
+          "name": "İçeceklerin su değeri"
+        }
+      ],
+      "meta": {
+        "title": "Kahve Su Yerine Geçer mi? İçecek Hidrasyon Tablosu | Suu",
+        "description": "Ölçülü kahve ve çay susuz bırakmaz, suya yakın sıvı kazandırır. Filtre kahve, Türk kahvesi, çay ve kolanın su hesabı, kafein sınırı ve Suu'nun katsayıları.",
+        "keywords": "kahve su yerine geçer mi, çay su yerine geçer mi, kahve susuzluk yapar mı, kahve suya sayılır mı, türk kahvesi su, günde kaç fincan kahve, kafein sınırı, içecek hidrasyon katsayısı",
+        "og_title": "Kahve Su Yerine Geçer mi? İçeceklerin Su Hesabı",
+        "og_description": "Kahve susuz bırakmaz ama sade suyun yerini de tamamen tutmaz. Çay, kahve ve kolanın su değeri rakamlarla."
+      },
+      "answer": "Kısmen, ama sanıldığından fazla: ölçülü kahve ve çay vücuda suya yakın sıvı kazandırır; \"kahve susuz bırakır\" inancı çoğu kişi için geçerli değil. Yine de sade suyun yerini tamamen tutmaz. Suu içecekleri temkinli sayar: filtre kahve 0,8, Türk kahvesi 0,7, espresso 0,5, siyah çay 0,9 hidrasyon katsayısıyla.",
+      "health_note": {
+        "head": "Bu yazı tıbbi tavsiye değildir.",
+        "body": [
+          "Sağlık Bakanlığı sağlıklı yetişkinler için günlük kafein üst sınırını 400 mg, hamilelikte 200–300 mg olarak veriyor. Kalp ritim bozukluğun, yüksek tansiyonun, reflün ya da kaygı bozukluğun varsa kafein miktarını doktorunla konuş.",
+          "Şu durumlarda kafeini azalt ve bir doktora danış:"
+        ],
+        "red_flags": [
+          "Kafeinden sonra çarpıntı, göğüs ağrısı ya da titreme",
+          "Uykusuzluğun ve kaygının belirgin biçimde artması"
+        ]
+      },
+      "disclosure": "Bu rehberi Suu'yu geliştiren iki kişilik ekip olarak yazdık. Uygulamamızın katsayılarını açıkça yazıyoruz; bunlar bilimsel bir \"kahve susuz bırakır\" iddiası değil, günlük su hedefini gerçekçi tutan temkinli bir hesap.",
+      "intro": [
+        "\"Kahve içiyorsan bir bardak da su iç, yoksa susuz kalırsın\" — yıllarca tekrarlanan bir öğüt. Kafeinin hafif idrar söktürücü etkisi gerçek, ama ölçülü tüketimde vücuda kazandırdığı sıvıyı silecek kadar güçlü değil.",
+        "Bu yazıda önce araştırmaların ne dediğine, sonra Suu'nun çay, kahve ve diğer içecekleri neden ve nasıl saydığına bakıyoruz — Türk çayı ve Türk kahvesi dahil."
+      ],
+      "analysis": [
+        {
+          "head": "Kahve gerçekten susuz bırakır mı?",
+          "body": [
+            "Ölçülü içildiğinde hayır. Günde 3–6 fincan kahve içen 50 erkekle yapılan bir çalışmada, üç gün boyunca günde 4 × 200 ml kahve içmek ile aynı miktarda su içmek arasında vücut suyu ve hidrasyon göstergeleri açısından fark bulunmadı.<sup><a href=\"#ref1\">1</a></sup> Farklı içecekleri karşılaştıran bir denemede de süt ve oral rehidrasyon sıvısı vücutta sudan daha uzun kaldı; kahve, çay ve kola ise sudan belirgin biçimde farklı değildi.<sup><a href=\"#ref2\">2</a></sup>",
+            "Yani çay ve kahve günlük sıvına katkı yapar. Ama bu, sade suyu tamamen bırakmak için bir gerekçe değil: kafein, eklenen şeker ve süt işin içine girince tablo değişir."
+          ]
+        },
+        {
+          "head": "Suu içecekleri nasıl sayar?",
+          "body": [
+            "Suu her içeceği bir <strong>hidrasyon katsayısıyla</strong> sayar: içtiğin miktarın ne kadarının suya ekleneceğini gösterir. 200 ml filtre kahve × 0,8 = 160 ml su. Katsayılar temkinli seçildi; yoğun ve fazla kahve, kafeine duyarlılık ve eklenen şeker gibi farkları hesaba katarak günlük hedefi gerçekçi tutmak için. Uygulamadaki değerler:"
+          ],
+          "list": [
+            "<strong>1,0:</strong> su, maden suyu",
+            "<strong>0,95–0,98:</strong> bitki çayı (0,98), yeşil çay (0,95), ayran (0,95)",
+            "<strong>0,9:</strong> siyah çay, süt",
+            "<strong>0,8–0,85:</strong> latte (0,85), filtre kahve (0,8), cappuccino (0,8)",
+            "<strong>0,7–0,75:</strong> americano (0,75), Türk kahvesi (0,7)",
+            "<strong>0,5–0,6:</strong> kola (0,6), espresso (0,5)",
+            "<strong>0,3–0,4:</strong> enerji içecekleri"
+          ],
+          "callout": "Şeker ayrıca hesaplanır: içecekteki her 10 g şeker günlük su hedefini 100 ml artırır. Kafein ise hedefi artırmaz. Alkollü içecekler su yerine konmamalı; Suu alkolün etkisini günlük hedefi yükselterek yansıtır (10 ml saf alkol başına +250 ml)."
+        },
+        {
+          "head": "Türk çayı ve Türk kahvesi",
+          "body": [
+            "İnce belli bardakta yaklaşık 100 ml demli çay × 0,9 = 90 ml su sayılır; günde beş bardak çay yaklaşık 450 ml eder. Sağlık Bakanlığı günde 3–5 fincan çayın uygun olduğunu, kahvede ise orta düzeyde tüketimi öneriyor.<sup><a href=\"#ref3\">3</a></sup>",
+            "Bir fincan Türk kahvesi (yaklaşık 65 ml) × 0,7 ≈ 45 ml su. Yanında gelen bir bardak su ise tam 200 ml sayılır — geleneğin hidrasyon açısından da yerinde olduğunu söyleyebiliriz."
+          ]
+        },
+        {
+          "head": "Günde kaç fincan kahve fazla?",
+          "body": [
+            "Avrupa Gıda Güvenliği Otoritesi (EFSA) sağlıklı yetişkinler için günde 400 mg'a kadar kafeinin güvenlik açısından endişe yaratmadığını, tek seferde 200 mg'ı geçmemeyi ve hamilelikte günlük 200 mg'ı aşmamayı öneriyor.<sup><a href=\"#ref4\">4</a></sup> Bu, kabaca günde 3–4 fincan filtre kahveye denk gelir; enerji içecekleri ve kolalar da bu toplama dahildir."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Bunu Suu'da nereden takip edersin",
+        "lead": "Menü adları uygulamadaki gibi:",
+        "steps": [
+          {
+            "feature": "Kahveni Suui'ye söyle",
+            "where": "Ana ekrandaki <strong>Suui</strong> asistanı",
+            "solves": "\"Bir filtre kahve ve iki çay içtim\" demen yeterli; içecekler katsayılarıyla suya eklenir, şekerli olanlar hedefini yükseltir. Ücretsiz planda günde 3 AI mesajı."
+          },
+          {
+            "feature": "İçecek listesinden tek dokunuşla kaydet",
+            "premium": true,
+            "where_ios": "Ana ekran → hızlı ekleme → <strong>Hızlı İçecek</strong>",
+            "where_android": "Ana ekran → <strong>İçecek Ekle</strong>",
+            "solves": "91 içeceğin her biri kendi katsayısı ve şekeriyle listede; Türk kahvesinden ayrana kadar. Ücretsiz planda listeden su ve maden suyu eklenir."
+          },
+          {
+            "feature": "Suu Endeksi",
+            "where_ios": "<strong>Sen</strong> sekmesi → Su → <strong>Suu Endeksi</strong>",
+            "where_android": "<strong>İstatistikler</strong> → <strong>Suu Endeksi</strong>",
+            "solves": "Çay ve kahveyle geçen bir günün gerçek hidrasyonunu 0–100 arası puanlar; \"çok içtim\" hissini rakamla kontrol edersin."
+          },
+          {
+            "feature": "Havaya göre değişen hedef",
+            "where": "Ana ekrandaki <strong>Hava durumu kartı</strong>",
+            "solves": "Sıcak günlerde ve antrenmandan sonra su hedefin kendiliğinden yükselir; kahve bu artışı karşılamaya yetmez, farkı görürsün."
+          }
+        ],
+        "button": "Suu'yu ücretsiz indir"
+      },
+      "verdict": {
+        "head": "Kısacası",
+        "body": [
+          "Kahve ve çay susuz bırakmaz; ölçülü içildiğinde günlük sıvına gerçekten katkı yapar. Ama sade suyun yerini tamamen tutmazlar ve kafeinin bir üst sınırı var.",
+          "En pratik yaklaşım: kahveni ve çayını keyifle iç, günün sıvısını yine ağırlıklı olarak sudan al ve toplam kafeini günde 400 mg'ın altında tut."
+        ]
+      },
+      "cta": {
+        "head": "Çay ve kahveyle geçen gününün gerçek su hesabı",
+        "sub": "91 içecek, hidrasyon katsayıları ve Suu Endeksi · iOS ve Android",
+        "button": "Suu'yu Ücretsiz İndir"
+      },
+      "faq": [
+        {
+          "q": "Kahve su yerine geçer mi?",
+          "a": "Kısmen. Ölçülü kahve vücuda suya yakın sıvı kazandırır ve susuz bırakmaz; ama sade suyun yerini tamamen tutmaz. Suu filtre kahveyi 0,8 katsayısıyla sayar: 200 ml kahve 160 ml su olarak eklenir."
+        },
+        {
+          "q": "Kahve susuzluk yapar mı?",
+          "a": "Ölçülü içildiğinde hayır. Günde dört fincan kahve içilen bir çalışmada hidrasyon göstergeleri su içilen günlerle aynı çıktı. Çok yüksek miktarlar ve kafeine duyarlı kişiler istisna olabilir."
+        },
+        {
+          "q": "Çay su yerine geçer mi?",
+          "a": "Büyük ölçüde evet. Siyah çay 0,9, yeşil çay 0,95, bitki çayı 0,98 katsayısıyla sayılır; ince belli bir bardak çay yaklaşık 90 ml su eder. Sağlık Bakanlığı günde 3–5 fincan çayı uygun buluyor."
+        },
+        {
+          "q": "Günde kaç fincan kahve içilebilir?",
+          "a": "Sağlıklı yetişkinler için günlük kafein üst sınırı 400 mg olarak öneriliyor; bu kabaca 3–4 fincan filtre kahve eder. Hamilelikte sınır 200 mg civarındadır. Enerji içecekleri ve kola da toplama dahildir."
+        },
+        {
+          "q": "Türk kahvesi suya sayılır mı?",
+          "a": "Kısmen: bir fincan Türk kahvesi (yaklaşık 65 ml) Suu'da 0,7 katsayısıyla yaklaşık 45 ml su sayılır. Yanında içilen bir bardak su ise tam 200 ml olarak eklenir."
+        },
+        {
+          "q": "Suu kahveyi neden 0,8 sayıyor, bilim neden farklı diyor?",
+          "a": "Araştırmalar ölçülü kahvenin suya yakın hidrasyon sağladığını gösteriyor. Suu'nun katsayıları temkinli bir hesap: yoğun ve fazla kahve, kafeine duyarlılık ve eklenen şeker gibi farkları hesaba katarak günlük su hedefini gerçekçi tutuyor."
+        }
+      ],
+      "references": [
+        {
+          "label": "Killer SC ve ark. — No evidence of dehydration with moderate daily coffee intake: a counterbalanced cross-over study in a free-living population. PLoS One, 2014",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/24416202/"
+        },
+        {
+          "label": "Maughan RJ ve ark. — A randomized trial to assess the potential of different beverages to affect hydration status: development of a beverage hydration index. Am J Clin Nutr, 2016",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/26702122/"
+        },
+        {
+          "label": "T.C. Sağlık Bakanlığı HSGM — Yaz Aylarında Sağlıklı Su ve Sıvı Tüketimi Nasıl Olmalıdır?",
+          "href": "https://hsgm.saglik.gov.tr/tr/haberler-6/yaz-aylarinda-saglikli-su-ve-sivi-tuketimi-nasil-olmalidir.html"
+        },
+        {
+          "label": "EFSA — Scientific Opinion on the safety of caffeine (2015)",
+          "href": "https://www.efsa.europa.eu/en/efsajournal/pub/4102"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/cay-hidrasyon.html",
+          "title": "Çay susuz bırakır mı?",
+          "desc": "Çayın hidrasyona etkisi."
+        },
+        {
+          "href": "/blog/gunde-kac-kahve.html",
+          "title": "Günde kaç fincan kahve sağlıklı?",
+          "desc": "Kafein sınırları ve öneriler."
+        },
+        {
+          "href": "/blog/kolayi-birakmak.html",
+          "title": "Kolayı nasıl bırakırım?",
+          "desc": "Şekerli içecekleri 4 haftada azalt."
+        },
+        {
+          "href": "/blog/su-icme-aliskanlik.html",
+          "title": "Su içmeyi sürekli unutuyorum",
+          "desc": "Suyu alışkanlığa çevirmenin 7 yolu."
+        }
+      ]
+    },
+    "en": {
+      "slug": "coffee-tea-hydration",
+      "published": "2026-03-22",
+      "read_minutes": 7,
+      "badge": "☕ Guide · Drinks and water",
+      "h1": "Does Coffee Count as Water Intake? How Tea, Coffee and Other Drinks Add Up (and How Suu Tracks Them)",
+      "about": [
+        {
+          "name": "Coffee and hydration"
+        },
+        {
+          "name": "Caffeine"
+        },
+        {
+          "name": "Beverage hydration"
+        }
+      ],
+      "meta": {
+        "title": "Does Coffee Count as Water Intake? Hydration by Drink | Suu",
+        "description": "Moderate coffee and tea don't dehydrate you; they hydrate close to water. How filter coffee, espresso, tea and soda count, the caffeine limit and Suu's factors.",
+        "keywords": "does coffee count as water intake, does coffee dehydrate you, does tea count as water, is coffee a diuretic, how many cups of coffee a day, caffeine limit per day, hydration by drink, does soda count as water",
+        "og_title": "Does Coffee Count as Water Intake? Hydration by Drink",
+        "og_description": "Coffee doesn't dehydrate you, but it doesn't fully replace plain water either. How tea, coffee and soda count — in numbers."
+      },
+      "answer": "Partly — more than most people think: moderate coffee and tea hydrate you close to water, and the idea that \"coffee dehydrates you\" doesn't hold for most people. It still doesn't fully replace plain water. Suu counts drinks conservatively: filter coffee with a hydration factor of 0.8, espresso 0.5, black tea 0.9 and herbal tea 0.98.",
+      "health_note": {
+        "head": "This article is not medical advice.",
+        "body": [
+          "Up to 400 mg of caffeine a day is generally considered safe for healthy adults; the NHS advises no more than 200 mg a day during pregnancy. If you have a heart rhythm problem, high blood pressure, reflux or an anxiety disorder, talk to your doctor about how much caffeine is right for you.",
+          "Cut back and see a doctor if you notice:"
+        ],
+        "red_flags": [
+          "Palpitations, chest pain or shakiness after caffeine",
+          "A marked increase in insomnia or anxiety"
+        ]
+      },
+      "disclosure": "We wrote this guide as the two-person team that builds Suu. We publish our app's factors openly; they aren't a scientific claim that \"coffee dehydrates you\" but a cautious calculation that keeps your daily water goal realistic.",
+      "intro": [
+        "\"If you drink coffee, have a glass of water too, or you'll get dehydrated\" — advice repeated for years. Caffeine's mild diuretic effect is real, but at moderate intakes it isn't strong enough to cancel out the fluid a cup provides.",
+        "Below we look first at what research says, then at why and how Suu counts tea, coffee and other drinks."
+      ],
+      "analysis": [
+        {
+          "head": "Does coffee really dehydrate you?",
+          "body": [
+            "Not in moderation. In a study of 50 men who habitually drank 3–6 cups a day, drinking 4 × 200 ml of coffee a day for three days produced no difference in body water or hydration markers compared with drinking the same amount of water.<sup><a href=\"#ref1\">1</a></sup> In a trial comparing drinks, milk and an oral rehydration solution were retained longer than water, while coffee, tea and cola weren't clearly different from water.<sup><a href=\"#ref2\">2</a></sup>",
+            "So tea and coffee do contribute to your daily fluids. The NHS agrees: water, lower-fat milk and sugar-free drinks, including tea and coffee, all count.<sup><a href=\"#ref3\">3</a></sup> That still isn't a reason to drop plain water: caffeine, added sugar and milk change the picture."
+          ]
+        },
+        {
+          "head": "How Suu counts drinks",
+          "body": [
+            "Suu counts every drink with a <strong>hydration factor</strong>: how much of what you drink is added to your water. 200 ml of filter coffee × 0.8 = 160 ml of water. The factors are deliberately cautious, accounting for strong or large coffees, caffeine sensitivity and added sugar so your daily goal stays realistic. The values in the app:"
+          ],
+          "list": [
+            "<strong>1.0:</strong> water, sparkling water",
+            "<strong>0.95–0.98:</strong> herbal tea (0.98), green tea (0.95), coconut water (0.98)",
+            "<strong>0.9:</strong> black tea, milk",
+            "<strong>0.8–0.85:</strong> latte (0.85), filter coffee (0.8), cappuccino (0.8)",
+            "<strong>0.75:</strong> americano, cold brew",
+            "<strong>0.5–0.6:</strong> cola (0.6), espresso (0.5)",
+            "<strong>0.3–0.4:</strong> energy drinks"
+          ],
+          "callout": "Sugar is counted separately: every 10 g of sugar in a drink raises your daily water goal by 100 ml. Caffeine doesn't raise it. Alcoholic drinks shouldn't be treated as water; Suu reflects alcohol by raising your daily goal (+250 ml per 10 ml of pure alcohol)."
+        },
+        {
+          "head": "Drip coffee, espresso and iced coffee",
+          "body": [
+            "A 12 fl oz (355 ml) mug of drip coffee × 0.8 ≈ 285 ml of water. An espresso is small — about 30 ml × 0.5 = 15 ml — so a double espresso adds almost nothing to your water, even though it adds a lot of caffeine. An iced americano or cold brew counts at 0.75–0.8, but a syrup-sweetened iced drink raises your goal for its sugar."
+          ]
+        },
+        {
+          "head": "How many cups of coffee is too many?",
+          "body": [
+            "The European Food Safety Authority considers up to 400 mg of caffeine a day of no safety concern for healthy adults, advises no more than 200 mg in a single dose and no more than 200 mg a day in pregnancy.<sup><a href=\"#ref4\">4</a></sup> That's roughly 3–4 mugs of drip coffee; energy drinks and colas count toward the same total."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Where to track this in Suu",
+        "lead": "Menu names are exactly as they appear:",
+        "steps": [
+          {
+            "feature": "Tell Suui about your coffee",
+            "where": "The <strong>Suui</strong> assistant on the home screen",
+            "solves": "Just say \"I had a filter coffee and two teas\"; drinks are added to your water with their factors, and sugary ones raise your goal. The free plan includes 3 AI messages a day."
+          },
+          {
+            "feature": "One-tap logging from the drink list",
+            "premium": true,
+            "where_ios": "Home → quick add → <strong>Quick Drink</strong>",
+            "where_android": "Home → <strong>Add Beverage</strong>",
+            "solves": "All 91 drinks with their own factor and sugar, from espresso to kombucha. On the free plan, water and sparkling water can be added from the list."
+          },
+          {
+            "feature": "Suu Index",
+            "where_ios": "<strong>You</strong> tab → Water → <strong>Suu Index</strong>",
+            "where_android": "<strong>Statistics</strong> → <strong>Suu Index</strong>",
+            "solves": "Scores the real hydration of a tea-and-coffee day from 0 to 100, so you can check the \"I drank plenty\" feeling against a number."
+          },
+          {
+            "feature": "A goal that follows the weather",
+            "where": "The <strong>Weather &amp; info</strong> card on the home screen",
+            "solves": "Your water goal rises automatically on hot days and after workouts; coffee alone won't cover the increase, and you'll see the gap."
+          }
+        ],
+        "button": "Get Suu free"
+      },
+      "verdict": {
+        "head": "The short version",
+        "body": [
+          "Coffee and tea don't dehydrate you; in moderation they genuinely add to your daily fluids. But they don't fully replace plain water, and caffeine has an upper limit.",
+          "The practical approach: enjoy your coffee and tea, still get most of your fluid from water, and keep total caffeine under 400 mg a day."
+        ]
+      },
+      "cta": {
+        "head": "The real water math of a coffee-and-tea day",
+        "sub": "91 drinks, hydration factors and the Suu Index · iOS and Android",
+        "button": "Download Suu Free"
+      },
+      "faq": [
+        {
+          "q": "Does coffee count as water intake?",
+          "a": "Partly. Moderate coffee hydrates you close to water and doesn't dehydrate you, but it doesn't fully replace plain water. Suu counts filter coffee with a factor of 0.8: 200 ml of coffee adds 160 ml of water."
+        },
+        {
+          "q": "Does coffee dehydrate you?",
+          "a": "Not in moderation. In a study where people drank four cups a day, hydration markers were the same as on water days. Very high intakes and caffeine-sensitive people may be exceptions."
+        },
+        {
+          "q": "Does tea count as water?",
+          "a": "Largely, yes. Black tea counts at 0.9, green tea at 0.95 and herbal tea at 0.98 in Suu. The NHS lists tea and coffee among the drinks that count toward your daily fluid."
+        },
+        {
+          "q": "How many cups of coffee a day is safe?",
+          "a": "Up to 400 mg of caffeine a day is considered safe for healthy adults — roughly 3–4 mugs of drip coffee. In pregnancy the limit is 200 mg a day. Energy drinks and colas count toward the total."
+        },
+        {
+          "q": "Does soda count as water?",
+          "a": "Partly: cola counts at 0.6 in Suu, and its sugar raises your daily water goal by 100 ml per 10 g. Sparkling water counts fully."
+        },
+        {
+          "q": "Why does Suu count coffee at 0.8 if research says it hydrates like water?",
+          "a": "Research shows moderate coffee hydrates close to water. Suu's factors are a cautious calculation that accounts for strong or large coffees, caffeine sensitivity and added sugar, so your daily water goal stays realistic."
+        }
+      ],
+      "references": [
+        {
+          "label": "Killer SC et al. — No evidence of dehydration with moderate daily coffee intake: a counterbalanced cross-over study in a free-living population. PLoS One, 2014",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/24416202/"
+        },
+        {
+          "label": "Maughan RJ et al. — A randomized trial to assess the potential of different beverages to affect hydration status: development of a beverage hydration index. Am J Clin Nutr, 2016",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/26702122/"
+        },
+        {
+          "label": "NHS — Water, drinks and your health",
+          "href": "https://www.nhs.uk/live-well/eat-well/food-guidelines-and-food-labels/water-drinks-nutrition/"
+        },
+        {
+          "label": "EFSA — Scientific Opinion on the safety of caffeine (2015)",
+          "href": "https://www.efsa.europa.eu/en/efsajournal/pub/4102"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/en/tea-hydration.html",
+          "title": "Does tea hydrate you?",
+          "desc": "How tea affects your hydration."
+        },
+        {
+          "href": "/blog/en/how-many-cups-coffee.html",
+          "title": "How many cups of coffee a day are healthy?",
+          "desc": "Caffeine limits and advice."
+        },
+        {
+          "href": "/blog/en/how-to-quit-soda.html",
+          "title": "How to quit soda",
+          "desc": "Cut sugary drinks in four weeks."
+        },
+        {
+          "href": "/blog/en/water-drinking-habits.html",
+          "title": "Can't remember to drink water?",
+          "desc": "7 ways to make it a habit."
+        }
+      ]
+    },
+    "ar": {
+      "slug": "alqahwa-walshay-walmae",
+      "published": "2026-03-22",
+      "read_minutes": 7,
+      "badge": "☕ دليل · المشروبات والماء",
+      "h1": "هل تُحتسب القهوة من شرب الماء؟ كيف يُحسب الشاي والقهوة والمشروبات الأخرى (وكيف يتابعها Suu)",
+      "about": [
+        {
+          "name": "القهوة والترطيب"
+        },
+        {
+          "name": "الكافيين"
+        },
+        {
+          "name": "قيمة المشروبات المائية"
+        }
+      ],
+      "meta": {
+        "title": "هل تُحتسب القهوة من شرب الماء؟ جدول ترطيب المشروبات | Suu",
+        "description": "القهوة والشاي باعتدال لا يسببان الجفاف بل يرطّبان قريبًا من الماء. كيف تُحسب القهوة المفلترة والإسبريسو والشاي والكولا، وحد الكافيين، ومعاملات Suu.",
+        "keywords": "هل القهوة تحسب من الماء, هل القهوة تسبب الجفاف, هل الشاي يحسب ماء, القهوة مدرة للبول, كم كوب قهوة في اليوم, حد الكافيين اليومي, القهوة العربية والماء, هل الكولا تحسب ماء",
+        "og_title": "هل تُحتسب القهوة من شرب الماء؟ جدول ترطيب المشروبات",
+        "og_description": "القهوة لا تسبب الجفاف، لكنها لا تحلّ محل الماء تمامًا. كيف يُحسب الشاي والقهوة والكولا — بالأرقام."
+      },
+      "answer": "جزئيًا — وأكثر مما يظن كثيرون: القهوة والشاي باعتدال يمنحان الجسم سوائل قريبة من الماء، وفكرة «القهوة تسبب الجفاف» لا تنطبق على معظم الناس. لكنها لا تحلّ محل الماء العادي تمامًا. يحتسب Suu المشروبات بحذر: القهوة المفلترة بمعامل ترطيب 0.8، والإسبريسو 0.5، والشاي الأسود 0.9، وشاي الأعشاب 0.98.",
+      "health_note": {
+        "head": "هذا المقال ليس نصيحة طبية.",
+        "body": [
+          "توصي وزارة الصحة السعودية بألا يتجاوز الكافيين 400 ملغ يوميًا للبالغ، أي نحو 4 أكواب من القهوة، ويُنصح بحد أقل أثناء الحمل. إذا كنت تعاني من اضطراب في نظم القلب أو ارتفاع ضغط الدم أو الارتجاع أو القلق، فتحدّث مع طبيبك عن الكمية المناسبة لك.",
+          "خفّف الكافيين وراجع الطبيب إذا لاحظت:"
+        ],
+        "red_flags": [
+          "خفقانًا أو ألمًا في الصدر أو رعشة بعد الكافيين",
+          "زيادة واضحة في الأرق أو القلق"
+        ]
+      },
+      "disclosure": "كتبنا هذا الدليل بصفتنا الفريق المكوّن من شخصين الذي يطوّر Suu. ننشر معاملات تطبيقنا علنًا؛ وهي ليست ادعاءً علميًا بأن «القهوة تسبب الجفاف»، بل حساب حذر يُبقي هدف الماء اليومي واقعيًا.",
+      "intro": [
+        "«إذا شربت قهوة فاشرب معها كوب ماء وإلا أصابك الجفاف» — نصيحة تتكرر منذ سنوات. التأثير المدرّ الخفيف للكافيين حقيقي، لكنه عند الاعتدال ليس قويًا بما يكفي لإلغاء السوائل التي يقدّمها الفنجان.",
+        "نتناول أدناه أولًا ما تقوله الأبحاث، ثم لماذا وكيف يحتسب Suu الشاي والقهوة وغيرهما — بما في ذلك القهوة العربية والكرك."
+      ],
+      "analysis": [
+        {
+          "head": "هل تسبب القهوة الجفاف فعلًا؟",
+          "body": [
+            "ليس عند الاعتدال. في دراسة على 50 رجلًا يشربون عادةً 3–6 أكواب يوميًا، لم يظهر فرق في ماء الجسم ومؤشرات الترطيب بين شرب 4 × 200 مل من القهوة يوميًا لثلاثة أيام وشرب الكمية نفسها من الماء.<sup><a href=\"#ref1\">1</a></sup> وفي تجربة قارنت مشروبات مختلفة، بقي الحليب ومحلول الإماهة الفموي في الجسم أطول من الماء، بينما لم تختلف القهوة والشاي والكولا عن الماء بوضوح.<sup><a href=\"#ref2\">2</a></sup>",
+            "إذن يساهم الشاي والقهوة في سوائلك اليومية. لكن هذا ليس مبررًا لترك الماء العادي: فالكافيين والسكر المضاف والحليب تغيّر الصورة."
+          ]
+        },
+        {
+          "head": "كيف يحتسب Suu المشروبات؟",
+          "body": [
+            "يحتسب Suu كل مشروب <strong>بمعامل ترطيب</strong>: كم مما تشربه يُضاف إلى ماء يومك. 200 مل قهوة مفلترة × 0.8 = 160 مل ماء. المعاملات حذرة عن قصد؛ تأخذ في الحسبان القهوة القوية أو الكبيرة، والحساسية للكافيين، والسكر المضاف، ليبقى الهدف اليومي واقعيًا. القيم في التطبيق:"
+          ],
+          "list": [
+            "<strong>1.0:</strong> الماء، المياه الغازية",
+            "<strong>0.95–0.98:</strong> شاي الأعشاب (0.98)، الشاي الأخضر (0.95)، اللبن/العيران (0.95)",
+            "<strong>0.9:</strong> الشاي الأسود، الحليب",
+            "<strong>0.8–0.85:</strong> اللاتيه (0.85)، القهوة المفلترة (0.8)، الكابتشينو (0.8)",
+            "<strong>0.7–0.75:</strong> الأمريكانو (0.75)، القهوة التركية (0.7)",
+            "<strong>0.5–0.6:</strong> الكولا (0.6)، الإسبريسو (0.5)",
+            "<strong>0.3–0.4:</strong> مشروبات الطاقة"
+          ],
+          "callout": "يُحتسب السكر منفصلًا: كل 10 غرامات سكر في المشروب ترفع هدف الماء اليومي 100 مل. أما الكافيين فلا يرفعه."
+        },
+        {
+          "head": "القهوة العربية والكرك",
+          "body": [
+            "القهوة العربية ليست بندًا مستقلًا في قائمة التطبيق؛ وأقرب ما يمثّلها القهوة المفلترة. فنجال القهوة العربية الصغير (نحو 50 مل) × 0.8 ≈ 40 مل ماء، لذا فإن عدة فناجيل في المجلس تضيف ماءً قليلًا لكنها تضيف كافيين. والكرك شاي أسود بالحليب والسكر: يُحتسب سائله قريبًا من الشاي الأسود، لكن سكره يرفع هدف الماء.",
+            "وفي رمضان، لا تجعل القهوة والشاي مصدر السوائل الرئيسي بين الإفطار والسحور؛ وزّع الماء على الساعات بينهما."
+          ]
+        },
+        {
+          "head": "كم كوب قهوة يُعدّ كثيرًا؟",
+          "body": [
+            "بحسب وزارة الصحة السعودية، الحد الأقصى للكافيين 400 ملغ يوميًا للبالغ، أي ما يعادل نحو 4 أكواب من القهوة.<sup><a href=\"#ref3\">3</a></sup> وتوصي الهيئة الأوروبية لسلامة الأغذية كذلك بألا تتجاوز الجرعة الواحدة 200 ملغ، وألا يتجاوز الاستهلاك اليومي 200 ملغ أثناء الحمل.<sup><a href=\"#ref4\">4</a></sup> مشروبات الطاقة والكولا تدخل في المجموع نفسه."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "أين تتابع ذلك في Suu",
+        "lead": "أسماء القوائم كما تظهر في التطبيق:",
+        "steps": [
+          {
+            "feature": "أخبر Suui بقهوتك",
+            "where": "مساعد <strong>Suui</strong> في الشاشة الرئيسية",
+            "solves": "يكفي أن تقول «شربت قهوة مفلترة وكوبي شاي»؛ تُضاف المشروبات إلى مائك بمعاملاتها، وترفع المحلّاة منها هدفك. في الخطة المجانية 3 رسائل ذكاء اصطناعي يوميًا."
+          },
+          {
+            "feature": "التسجيل بلمسة من قائمة المشروبات",
+            "premium": true,
+            "where_ios": "الشاشة الرئيسية ← الإضافة السريعة ← <strong>مشروب سريع</strong>",
+            "where_android": "الشاشة الرئيسية ← <strong>أضف مشروباً</strong>",
+            "solves": "كل المشروبات الـ91 بمعاملها وسكرها، من الإسبريسو إلى اللبن. في الخطة المجانية يمكن إضافة الماء والمياه الغازية من القائمة."
+          },
+          {
+            "feature": "مؤشر Suu",
+            "where_ios": "تبويب <strong>أنت</strong> ← الماء ← <strong>مؤشر Suu</strong>",
+            "where_android": "<strong>الإحصائيات</strong> ← <strong>مؤشر Suu</strong>",
+            "solves": "يقيّم الترطيب الحقيقي ليوم مليء بالشاي والقهوة من 0 إلى 100، فتتحقق من شعور «شربت كثيرًا» بالأرقام."
+          },
+          {
+            "feature": "هدف يتبع الطقس",
+            "where": "<strong>بطاقة الطقس والمعلومات</strong> في الشاشة الرئيسية",
+            "solves": "يرتفع هدف الماء تلقائيًا في الأيام الحارة وبعد التمارين؛ والقهوة وحدها لا تغطي هذه الزيادة، وسترى الفرق."
+          }
+        ],
+        "button": "حمّل Suu مجانًا"
+      },
+      "verdict": {
+        "head": "باختصار",
+        "body": [
+          "القهوة والشاي لا يسببان الجفاف؛ وعند الاعتدال يضيفان فعلًا إلى سوائلك اليومية. لكنهما لا يحلّان محل الماء العادي تمامًا، وللكافيين حد أعلى.",
+          "النهج العملي: استمتع بقهوتك وشايك، واحصل على معظم سوائلك من الماء، وأبقِ الكافيين الإجمالي تحت 400 ملغ يوميًا."
+        ]
+      },
+      "cta": {
+        "head": "الحساب الحقيقي للماء في يوم مليء بالقهوة والشاي",
+        "sub": "91 مشروبًا ومعاملات ترطيب ومؤشر Suu · iOS وAndroid",
+        "button": "حمّل Suu مجانًا"
+      },
+      "faq": [
+        {
+          "q": "هل تُحتسب القهوة من شرب الماء؟",
+          "a": "جزئيًا. القهوة باعتدال ترطّب قريبًا من الماء ولا تسبب الجفاف، لكنها لا تحلّ محل الماء العادي تمامًا. يحتسب Suu القهوة المفلترة بمعامل 0.8: 200 مل قهوة تضيف 160 مل ماء."
+        },
+        {
+          "q": "هل القهوة تسبب الجفاف؟",
+          "a": "ليس عند الاعتدال. في دراسة شرب فيها المشاركون أربعة أكواب يوميًا، كانت مؤشرات الترطيب مماثلة لأيام شرب الماء. قد يُستثنى من ذلك الإفراط الكبير والأشخاص الحساسون للكافيين."
+        },
+        {
+          "q": "هل يُحتسب الشاي ماءً؟",
+          "a": "إلى حد كبير نعم. يحتسب Suu الشاي الأسود بمعامل 0.9، والأخضر 0.95، وشاي الأعشاب 0.98. أما سكر الكرك والشاي المحلّى فيرفع هدف الماء."
+        },
+        {
+          "q": "كم كوب قهوة يمكن شربه يوميًا؟",
+          "a": "توصي وزارة الصحة السعودية بألا يتجاوز الكافيين 400 ملغ يوميًا للبالغ، أي نحو 4 أكواب قهوة. ويُنصح بحد أقل أثناء الحمل، وتدخل مشروبات الطاقة والكولا في المجموع."
+        },
+        {
+          "q": "هل تُحتسب القهوة العربية ماءً؟",
+          "a": "جزئيًا؛ وأقرب ما يمثّلها في Suu القهوة المفلترة بمعامل 0.8. فنجال صغير نحو 50 مل يضيف قرابة 40 مل ماء، لذا فإن الفناجيل الكثيرة تضيف ماءً قليلًا وكافيين أكثر."
+        },
+        {
+          "q": "لماذا يحتسب Suu القهوة بـ0.8 والأبحاث تقول إنها ترطّب كالماء؟",
+          "a": "تُظهر الأبحاث أن القهوة المعتدلة ترطّب قريبًا من الماء. معاملات Suu حساب حذر يراعي القهوة القوية أو الكبيرة والحساسية للكافيين والسكر المضاف، ليبقى هدف الماء اليومي واقعيًا."
+        }
+      ],
+      "references": [
+        {
+          "label": "Killer SC وآخرون — No evidence of dehydration with moderate daily coffee intake: a counterbalanced cross-over study in a free-living population. PLoS One, 2014",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/24416202/"
+        },
+        {
+          "label": "Maughan RJ وآخرون — A randomized trial to assess the potential of different beverages to affect hydration status: development of a beverage hydration index. Am J Clin Nutr, 2016",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/26702122/"
+        },
+        {
+          "label": "وزارة الصحة السعودية — (الصحة) تحذر من الإفراط في تناول الكافيين واستهلاكه",
+          "href": "https://www.moh.gov.sa/ministry/mediacenter/news/pages/news-2017-04-05-004.aspx"
+        },
+        {
+          "label": "EFSA — Scientific Opinion on the safety of caffeine (2015)",
+          "href": "https://www.efsa.europa.eu/en/efsajournal/pub/4102"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/ar/taqlil-alqahwa.html",
+          "title": "كيف تقلّل القهوة",
+          "desc": "طرق لتخفيف أعراض انسحاب الكافيين."
+        },
+        {
+          "href": "/blog/ar/alkafayin-walsukar.html",
+          "title": "تتبّع الكافيين والسكر",
+          "desc": "الحدود اليومية ومراقبة المشروبات."
+        },
+        {
+          "href": "/blog/ar/tark-almashroobat-alghaziya.html",
+          "title": "كيف أترك المشروبات الغازية؟",
+          "desc": "خفّف المشروبات المحلّاة في أربعة أسابيع."
+        },
+        {
+          "href": "/blog/ar/adat-shurb-almae.html",
+          "title": "أنسى شرب الماء دائمًا",
+          "desc": "7 طرق لتحويله إلى عادة."
+        }
+      ]
+    },
+    "ru": {
+      "slug": "kofe-chay-i-voda",
+      "published": "2026-05-07",
+      "read_minutes": 7,
+      "badge": "☕ Руководство · Напитки и вода",
+      "h1": "Считается ли кофе в норму воды? Как засчитываются чай, кофе и другие напитки (и как это учитывает Suu)",
+      "about": [
+        {
+          "name": "Кофе и гидратация"
+        },
+        {
+          "name": "Кофеин"
+        },
+        {
+          "name": "Гидратация напитков"
+        }
+      ],
+      "meta": {
+        "title": "Считается ли кофе в норму воды? Таблица напитков | Suu",
+        "description": "Умеренные кофе и чай не обезвоживают — они увлажняют почти как вода. Как считаются фильтр-кофе, эспрессо, чай и газировка, лимит кофеина и коэффициенты Suu.",
+        "keywords": "считается ли кофе в норму воды, обезвоживает ли кофе, считается ли чай водой, кофе мочегонное, сколько чашек кофе в день, норма кофеина в день, растворимый кофе и вода, считается ли газировка водой",
+        "og_title": "Считается ли кофе в норму воды? Таблица напитков",
+        "og_description": "Кофе не обезвоживает, но и не заменяет воду полностью. Как засчитываются чай, кофе и газировка — в цифрах."
+      },
+      "answer": "Частично — и больше, чем многие думают: умеренные кофе и чай дают организму жидкость почти как вода, и мнение «кофе обезвоживает» для большинства людей неверно. Но полностью воду он не заменяет. Suu считает напитки осторожно: фильтр-кофе с коэффициентом гидратации 0,8, эспрессо 0,5, чёрный чай 0,9, травяной 0,98.",
+      "health_note": {
+        "head": "Эта статья не является медицинской консультацией.",
+        "body": [
+          "Для здоровых взрослых безопасным считается до 400 мг кофеина в день, при беременности — не больше 200 мг. Если у вас нарушения ритма сердца, повышенное давление, рефлюкс или тревожное расстройство, обсудите допустимое количество кофеина с врачом.",
+          "Сократите кофеин и обратитесь к врачу, если заметили:"
+        ],
+        "red_flags": [
+          "сердцебиение, боль в груди или дрожь после кофеина",
+          "заметный рост бессонницы или тревоги"
+        ]
+      },
+      "disclosure": "Это руководство написала команда из двух человек, которая разрабатывает Suu. Мы открыто публикуем коэффициенты приложения; это не научное утверждение, что «кофе обезвоживает», а осторожный расчёт, который делает дневную норму воды реалистичной.",
+      "intro": [
+        "«Выпил кофе — запей стаканом воды, иначе обезвоживание» — совет, который повторяют годами. Слабое мочегонное действие кофеина реально, но при умеренных количествах оно не перекрывает жидкость, которую даёт чашка.",
+        "Ниже — сначала что говорят исследования, затем почему и как Suu засчитывает чай, кофе и другие напитки."
+      ],
+      "analysis": [
+        {
+          "head": "Кофе действительно обезвоживает?",
+          "body": [
+            "При умеренном потреблении — нет. В исследовании с 50 мужчинами, которые обычно пили 3–6 чашек в день, три дня по 4 × 200 мл кофе не дали разницы в воде организма и маркерах гидратации по сравнению с таким же количеством воды.<sup><a href=\"#ref1\">1</a></sup> В испытании, где сравнивали разные напитки, молоко и раствор для пероральной регидратации удерживались в организме дольше воды, а кофе, чай и кола от воды явно не отличались.<sup><a href=\"#ref2\">2</a></sup>",
+            "Значит, чай и кофе вносят вклад в дневную жидкость. Но это не повод отказываться от обычной воды: кофеин, добавленный сахар и молоко меняют картину. ВОЗ, кроме того, советует ограничивать сладкие напитки.<sup><a href=\"#ref3\">3</a></sup>"
+          ]
+        },
+        {
+          "head": "Как Suu засчитывает напитки",
+          "body": [
+            "Suu считает каждый напиток с <strong>коэффициентом гидратации</strong>: какая часть выпитого добавляется к воде. 200 мл фильтр-кофе × 0,8 = 160 мл воды. Коэффициенты намеренно осторожные: они учитывают крепкий или большой кофе, чувствительность к кофеину и добавленный сахар, чтобы дневная норма оставалась реалистичной. Значения в приложении:"
+          ],
+          "list": [
+            "<strong>1,0:</strong> вода, газированная минеральная вода",
+            "<strong>0,95–0,98:</strong> травяной чай (0,98), зелёный чай (0,95), айран (0,95)",
+            "<strong>0,9:</strong> чёрный чай, молоко, кефир",
+            "<strong>0,8–0,85:</strong> латте (0,85), фильтр-кофе (0,8), капучино (0,8)",
+            "<strong>0,7–0,75:</strong> американо (0,75), кофе по-турецки (0,7)",
+            "<strong>0,5–0,6:</strong> кола (0,6), эспрессо (0,5)",
+            "<strong>0,3–0,4:</strong> энергетики"
+          ],
+          "callout": "Сахар считается отдельно: каждые 10 г сахара в напитке повышают дневную норму воды на 100 мл. Кофеин её не повышает. Алкоголь не стоит считать водой; Suu отражает его, повышая дневную норму (+250 мл на 10 мл чистого спирта)."
+        },
+        {
+          "head": "Чай с лимоном и растворимый кофе",
+          "body": [
+            "Кружка чёрного чая на 250 мл × 0,9 = 225 мл воды; сахар в чае повышает норму. Растворимого кофе в списке приложения нет отдельной позицией — ближе всего фильтр-кофе (0,8): кружка на 250 мл даёт около 200 мл воды. Эспрессо маленький — около 30 мл × 0,5 = 15 мл, — поэтому двойной эспрессо почти не добавляет воды, но добавляет много кофеина."
+          ]
+        },
+        {
+          "head": "Сколько кофе в день — уже много?",
+          "body": [
+            "Европейское агентство по безопасности продуктов питания (EFSA) считает безопасными для здоровых взрослых до 400 мг кофеина в день, не более 200 мг за раз и не более 200 мг в день при беременности.<sup><a href=\"#ref4\">4</a></sup> Это примерно 3–4 кружки фильтр-кофе; энергетики и кола входят в тот же итог."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Где отслеживать это в Suu",
+        "lead": "Названия пунктов — как в интерфейсе:",
+        "steps": [
+          {
+            "feature": "Расскажите Suui о кофе",
+            "where": "Ассистент <strong>Suui</strong> на главном экране",
+            "solves": "Достаточно сказать «выпил фильтр-кофе и две чашки чая» — напитки добавятся к воде с коэффициентами, а сладкие повысят норму. В бесплатном плане 3 AI-сообщения в день."
+          },
+          {
+            "feature": "Запись в одно касание из списка напитков",
+            "premium": true,
+            "where_ios": "Главный экран → быстрое добавление → <strong>Быстрый напиток</strong>",
+            "where_android": "Главный экран → <strong>Добавить напиток</strong>",
+            "solves": "Все 91 напиток со своим коэффициентом и сахаром — от эспрессо до кефира. В бесплатном плане из списка добавляются вода и минеральная вода."
+          },
+          {
+            "feature": "Индекс Suu",
+            "where_ios": "Вкладка <strong>Ты</strong> → Вода → <strong>Suu Индекс</strong>",
+            "where_android": "<strong>Статистика</strong> → <strong>Suu Индекс</strong>",
+            "solves": "Оценивает реальную гидратацию дня «на чае и кофе» от 0 до 100 — ощущение «я много выпил» можно проверить цифрой."
+          },
+          {
+            "feature": "Норма, которая следует за погодой",
+            "where": "Карточка <strong>Погода и информация</strong> на главном экране",
+            "solves": "В жару и после тренировок норма воды повышается автоматически; одним кофе это не покрыть — разница будет видна."
+          }
+        ],
+        "button": "Скачать Suu бесплатно"
+      },
+      "verdict": {
+        "head": "Коротко",
+        "body": [
+          "Кофе и чай не обезвоживают; в умеренных количествах они действительно добавляют жидкость за день. Но полностью воду они не заменяют, и у кофеина есть верхний предел.",
+          "Практичный подход: пейте кофе и чай с удовольствием, основную жидкость получайте из воды и держите общий кофеин ниже 400 мг в день."
+        ]
+      },
+      "cta": {
+        "head": "Реальный водный баланс дня на чае и кофе",
+        "sub": "91 напиток, коэффициенты гидратации и Индекс Suu · iOS и Android",
+        "button": "Скачать Suu бесплатно"
+      },
+      "faq": [
+        {
+          "q": "Считается ли кофе в норму воды?",
+          "a": "Частично. Умеренный кофе увлажняет почти как вода и не обезвоживает, но полностью её не заменяет. Suu считает фильтр-кофе с коэффициентом 0,8: 200 мл кофе добавляют 160 мл воды."
+        },
+        {
+          "q": "Обезвоживает ли кофе?",
+          "a": "При умеренном потреблении — нет. В исследовании, где пили четыре чашки в день, маркеры гидратации были такими же, как в дни с водой. Исключением могут быть очень большие количества и люди, чувствительные к кофеину."
+        },
+        {
+          "q": "Считается ли чай водой?",
+          "a": "В основном да. Чёрный чай Suu считает с коэффициентом 0,9, зелёный — 0,95, травяной — 0,98. Сахар в чае при этом повышает норму воды."
+        },
+        {
+          "q": "Сколько чашек кофе в день безопасно?",
+          "a": "Для здоровых взрослых безопасным считается до 400 мг кофеина в день — примерно 3–4 кружки фильтр-кофе. При беременности — до 200 мг в день. Энергетики и кола входят в общий итог."
+        },
+        {
+          "q": "Считается ли газировка водой?",
+          "a": "Частично: кола в Suu идёт с коэффициентом 0,6, а её сахар повышает норму воды на 100 мл за каждые 10 г. Газированная минеральная вода засчитывается полностью."
+        },
+        {
+          "q": "Почему Suu считает кофе как 0,8, если исследования говорят, что он увлажняет как вода?",
+          "a": "Исследования показывают, что умеренный кофе увлажняет почти как вода. Коэффициенты Suu — осторожный расчёт с поправкой на крепкий или большой кофе, чувствительность к кофеину и добавленный сахар, чтобы дневная норма оставалась реалистичной."
+        }
+      ],
+      "references": [
+        {
+          "label": "Killer SC и соавт. — No evidence of dehydration with moderate daily coffee intake: a counterbalanced cross-over study in a free-living population. PLoS One, 2014",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/24416202/"
+        },
+        {
+          "label": "Maughan RJ и соавт. — A randomized trial to assess the potential of different beverages to affect hydration status: development of a beverage hydration index. Am J Clin Nutr, 2016",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/26702122/"
+        },
+        {
+          "label": "ВОЗ — Здоровое питание (информационный бюллетень)",
+          "href": "https://www.who.int/ru/news-room/fact-sheets/detail/healthy-diet"
+        },
+        {
+          "label": "EFSA — Scientific Opinion on the safety of caffeine (2015)",
+          "href": "https://www.efsa.europa.eu/en/efsajournal/pub/4102"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/ru/kak-sokratit-kofe.html",
+          "title": "Как сократить кофе",
+          "desc": "Способы смягчить отмену кофеина."
+        },
+        {
+          "href": "/blog/ru/kofein-i-sahar.html",
+          "title": "Кофеин и сахар: как отслеживать",
+          "desc": "Суточные пределы и контроль напитков."
+        },
+        {
+          "href": "/blog/ru/kak-brosit-gazirovku.html",
+          "title": "Как бросить пить газировку",
+          "desc": "Сократить сладкие напитки за четыре недели."
+        },
+        {
+          "href": "/blog/ru/privychka-pit-vodu.html",
+          "title": "Забываю пить воду",
+          "desc": "7 способов сделать это привычкой."
+        }
+      ]
+    },
+    "de": {
+      "slug": "zaehlt-kaffee-zur-trinkmenge",
+      "read_minutes": 7,
+      "badge": "☕ Ratgeber · Getränke und Wasser",
+      "h1": "Zählt Kaffee zur Trinkmenge? Wie Tee, Kaffee und andere Getränke zählen (und wie Suu sie erfasst)",
+      "about": [
+        {
+          "name": "Kaffee und Flüssigkeitszufuhr"
+        },
+        {
+          "name": "Koffein"
+        },
+        {
+          "name": "Hydratation von Getränken"
+        }
+      ],
+      "meta": {
+        "title": "Zählt Kaffee zur Trinkmenge? Getränke-Tabelle | Suu",
+        "description": "Moderater Kaffee und Tee entwässern nicht, sie hydrieren fast wie Wasser. Wie Filterkaffee, Espresso, Tee und Cola zählen und das Koffein-Limit pro Tag.",
+        "keywords": "zählt kaffee zur trinkmenge, entwässert kaffee, zählt tee als wasser, ist kaffee harntreibend, wie viele tassen kaffee am tag, koffein grenzwert pro tag, trinkmenge getränke, zählt cola zur trinkmenge",
+        "og_title": "Zählt Kaffee zur Trinkmenge? Die Getränke-Rechnung",
+        "og_description": "Kaffee entwässert nicht, ersetzt Wasser aber auch nicht ganz. Wie Tee, Kaffee und Cola zählen – in Zahlen."
+      },
+      "answer": "Teilweise – und mehr, als viele denken: Moderater Kaffee und Tee liefern fast so viel Flüssigkeit wie Wasser, und „Kaffee entwässert“ stimmt für die meisten Menschen nicht. Ganz ersetzt er Wasser aber nicht. Suu zählt Getränke vorsichtig: Filterkaffee mit einem Hydratationsfaktor von 0,8, Espresso 0,5, schwarzer Tee 0,9 und Kräutertee 0,98.",
+      "health_note": {
+        "head": "Dieser Artikel ist keine medizinische Beratung.",
+        "body": [
+          "Für gesunde Erwachsene gelten bis zu 400 mg Koffein am Tag als unbedenklich, in der Schwangerschaft höchstens 200 mg. Wenn du Herzrhythmusstörungen, Bluthochdruck, Sodbrennen oder eine Angststörung hast, sprich mit deiner Ärztin oder deinem Arzt über die passende Menge.",
+          "Reduzier Koffein und geh zum Arzt, wenn du Folgendes bemerkst:"
+        ],
+        "red_flags": [
+          "Herzrasen, Brustschmerzen oder Zittern nach Koffein",
+          "deutlich mehr Schlaflosigkeit oder Unruhe"
+        ]
+      },
+      "disclosure": "Diesen Ratgeber haben wir als das zweiköpfige Team geschrieben, das Suu entwickelt. Wir veröffentlichen die Faktoren unserer App offen; sie sind keine wissenschaftliche Behauptung, dass „Kaffee entwässert“, sondern eine vorsichtige Rechnung, die dein Trinkziel realistisch hält.",
+      "intro": [
+        "„Zu jedem Kaffee ein Glas Wasser, sonst trocknest du aus“ – ein Rat, der seit Jahren wiederholt wird. Die leicht harntreibende Wirkung von Koffein gibt es, aber bei moderaten Mengen hebt sie die Flüssigkeit aus der Tasse nicht auf.",
+        "Unten schauen wir zuerst, was die Forschung sagt, dann, warum und wie Suu Tee, Kaffee und andere Getränke zählt."
+      ],
+      "analysis": [
+        {
+          "head": "Entwässert Kaffee wirklich?",
+          "body": [
+            "In Maßen nicht. In einer Studie mit 50 Männern, die gewöhnlich 3–6 Tassen am Tag tranken, machte es bei Körperwasser und Hydratationsmarkern keinen Unterschied, ob sie drei Tage lang täglich 4 × 200 ml Kaffee oder dieselbe Menge Wasser tranken.<sup><a href=\"#ref1\">1</a></sup> In einem Vergleich verschiedener Getränke blieben Milch und eine orale Rehydratationslösung länger im Körper als Wasser, während sich Kaffee, Tee und Cola nicht deutlich von Wasser unterschieden.<sup><a href=\"#ref2\">2</a></sup>",
+            "Auch die Deutsche Gesellschaft für Ernährung zählt Kaffee und schwarzen Tee zu den Getränken, empfiehlt aber moderate Mengen von 3–4 Tassen.<sup><a href=\"#ref3\">3</a></sup> Wasser bleibt trotzdem die Basis: Koffein, Zucker und Milch verändern die Rechnung."
+          ]
+        },
+        {
+          "head": "Wie Suu Getränke zählt",
+          "body": [
+            "Suu rechnet jedes Getränk mit einem <strong>Hydratationsfaktor</strong>: wie viel davon zu deinem Wasser zählt. 200 ml Filterkaffee × 0,8 = 160 ml Wasser. Die Faktoren sind bewusst vorsichtig und berücksichtigen starken oder großen Kaffee, Koffeinempfindlichkeit und Zucker, damit dein Tagesziel realistisch bleibt. Die Werte in der App:"
+          ],
+          "list": [
+            "<strong>1,0:</strong> Wasser, Sprudelwasser",
+            "<strong>0,95–0,98:</strong> Kräutertee (0,98), grüner Tee (0,95)",
+            "<strong>0,9:</strong> schwarzer Tee, Milch, Kefir",
+            "<strong>0,8–0,85:</strong> Latte (0,85), Filterkaffee (0,8), Cappuccino (0,8)",
+            "<strong>0,75:</strong> Americano, Cold Brew",
+            "<strong>0,5–0,6:</strong> Cola (0,6), Espresso (0,5)",
+            "<strong>0,3–0,4:</strong> Energydrinks"
+          ],
+          "callout": "Zucker wird extra gerechnet: Jede 10 g Zucker im Getränk erhöhen dein tägliches Trinkziel um 100 ml. Koffein erhöht es nicht. Alkohol sollte nicht als Wasser zählen; Suu berücksichtigt ihn, indem das Tagesziel steigt (+250 ml pro 10 ml reinem Alkohol)."
+        },
+        {
+          "head": "Filterkaffee, Espresso und Latte macchiato",
+          "body": [
+            "Ein Becher Filterkaffee mit 250 ml × 0,8 = 200 ml Wasser. Ein Espresso ist klein – etwa 30 ml × 0,5 = 15 ml –, ein doppelter Espresso bringt also kaum Wasser, aber viel Koffein. Ein Latte macchiato zählt dank viel Milch mit 0,85; ein gesüßter Sirup-Latte erhöht dafür das Ziel wegen des Zuckers."
+          ]
+        },
+        {
+          "head": "Wie viele Tassen Kaffee sind zu viel?",
+          "body": [
+            "Die Europäische Behörde für Lebensmittelsicherheit (EFSA) hält für gesunde Erwachsene bis zu 400 mg Koffein am Tag für unbedenklich, empfiehlt höchstens 200 mg auf einmal und in der Schwangerschaft höchstens 200 mg am Tag.<sup><a href=\"#ref4\">4</a></sup> Das sind grob 3–4 Becher Filterkaffee; Energydrinks und Cola zählen zur selben Summe."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Wo du das in Suu verfolgst",
+        "lead": "Die Menünamen sind genau so wie in der App:",
+        "steps": [
+          {
+            "feature": "Erzähl Suui von deinem Kaffee",
+            "where": "Der Assistent <strong>Suui</strong> auf dem Startbildschirm",
+            "solves": "Sag einfach „ein Filterkaffee und zwei Tee“ – die Getränke zählen mit ihren Faktoren zu deinem Wasser, gesüßte erhöhen dein Ziel. Im kostenlosen Plan 3 KI-Nachrichten pro Tag."
+          },
+          {
+            "feature": "Mit einem Tipp aus der Getränkeliste",
+            "premium": true,
+            "where_ios": "Startbildschirm → Schnell hinzufügen → <strong>Schnellgetränk</strong>",
+            "where_android": "Startbildschirm → <strong>Getränk hinzufügen</strong>",
+            "solves": "Alle 91 Getränke mit eigenem Faktor und Zucker, vom Espresso bis zum Kefir. Im kostenlosen Plan lassen sich Wasser und Sprudelwasser aus der Liste eintragen."
+          },
+          {
+            "feature": "Suu-Index",
+            "where_ios": "Tab <strong>Du</strong> → Wasser → <strong>Suu-Index</strong>",
+            "where_android": "<strong>Statistiken</strong> → <strong>Suu-Index</strong>",
+            "solves": "Bewertet die echte Flüssigkeitszufuhr eines Kaffee-und-Tee-Tages von 0 bis 100 – das Gefühl „ich habe genug getrunken“ lässt sich an einer Zahl prüfen."
+          },
+          {
+            "feature": "Ein Ziel, das dem Wetter folgt",
+            "where": "Die Karte <strong>Wetter &amp; Info</strong> auf dem Startbildschirm",
+            "solves": "An heißen Tagen und nach dem Training steigt dein Trinkziel automatisch; Kaffee allein deckt das nicht, und du siehst die Lücke."
+          }
+        ],
+        "button": "Suu kostenlos laden"
+      },
+      "verdict": {
+        "head": "Kurz gesagt",
+        "body": [
+          "Kaffee und Tee entwässern nicht; in Maßen tragen sie wirklich zur Trinkmenge bei. Wasser ersetzen sie aber nicht ganz, und Koffein hat eine Obergrenze.",
+          "Praktisch heißt das: Kaffee und Tee genießen, den Großteil der Flüssigkeit trotzdem über Wasser trinken und das Koffein unter 400 mg am Tag halten."
+        ]
+      },
+      "cta": {
+        "head": "Die echte Wasser-Rechnung eines Kaffee-Tages",
+        "sub": "91 Getränke, Hydratationsfaktoren und Suu-Index · iOS und Android",
+        "button": "Suu kostenlos laden"
+      },
+      "faq": [
+        {
+          "q": "Zählt Kaffee zur Trinkmenge?",
+          "a": "Teilweise. Moderater Kaffee hydriert fast wie Wasser und entwässert nicht, ersetzt Wasser aber nicht vollständig. Suu rechnet Filterkaffee mit dem Faktor 0,8: 200 ml Kaffee zählen als 160 ml Wasser."
+        },
+        {
+          "q": "Entwässert Kaffee?",
+          "a": "In Maßen nicht. In einer Studie mit vier Tassen am Tag waren die Hydratationsmarker genauso wie an Wassertagen. Ausnahmen können sehr große Mengen und koffeinempfindliche Menschen sein."
+        },
+        {
+          "q": "Zählt Tee als Wasser?",
+          "a": "Größtenteils ja. Schwarzer Tee zählt in Suu mit 0,9, grüner Tee mit 0,95, Kräutertee mit 0,98. Die DGE rät bei Kaffee und schwarzem Tee zu moderaten Mengen von 3–4 Tassen."
+        },
+        {
+          "q": "Wie viele Tassen Kaffee am Tag sind unbedenklich?",
+          "a": "Für gesunde Erwachsene gelten bis zu 400 mg Koffein am Tag als unbedenklich – etwa 3–4 Becher Filterkaffee. In der Schwangerschaft höchstens 200 mg. Energydrinks und Cola zählen mit."
+        },
+        {
+          "q": "Zählt Cola zur Trinkmenge?",
+          "a": "Teilweise: Cola zählt in Suu mit 0,6, und ihr Zucker erhöht das Trinkziel um 100 ml pro 10 g. Sprudelwasser zählt voll."
+        },
+        {
+          "q": "Warum zählt Suu Kaffee mit 0,8, wenn er laut Forschung wie Wasser hydriert?",
+          "a": "Studien zeigen, dass moderater Kaffee fast wie Wasser hydriert. Die Faktoren von Suu sind eine vorsichtige Rechnung, die starken oder großen Kaffee, Koffeinempfindlichkeit und Zucker berücksichtigt, damit dein Tagesziel realistisch bleibt."
+        }
+      ],
+      "references": [
+        {
+          "label": "Killer SC et al. — No evidence of dehydration with moderate daily coffee intake: a counterbalanced cross-over study in a free-living population. PLoS One, 2014",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/24416202/"
+        },
+        {
+          "label": "Maughan RJ et al. — A randomized trial to assess the potential of different beverages to affect hydration status: development of a beverage hydration index. Am J Clin Nutr, 2016",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/26702122/"
+        },
+        {
+          "label": "Deutsche Gesellschaft für Ernährung — Referenzwerte: Wasser",
+          "href": "https://www.dge.de/wissenschaft/referenzwerte/wasser/"
+        },
+        {
+          "label": "EFSA — Scientific Opinion on the safety of caffeine (2015)",
+          "href": "https://www.efsa.europa.eu/en/efsajournal/pub/4102"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/de/wasser-trinken-vergessen.html",
+          "title": "Ich vergesse, Wasser zu trinken",
+          "desc": "7 Wege zur Trinkgewohnheit."
+        },
+        {
+          "href": "/blog/de/cola-abgewoehnen.html",
+          "title": "Cola abgewöhnen",
+          "desc": "Süße Getränke in vier Wochen reduzieren."
+        },
+        {
+          "href": "/blog/de/beste-wasser-tracking-app.html",
+          "title": "Die beste Wasser-Tracking-App 2026",
+          "desc": "Fünf Trink-Apps im Vergleich."
+        },
+        {
+          "href": "/blog/de/warum-bin-ich-immer-muede.html",
+          "title": "Warum bin ich immer müde?",
+          "desc": "Die 8 häufigsten Ursachen."
+        }
+      ]
+    },
+    "it": {
+      "slug": "il-caffe-conta-come-acqua",
+      "read_minutes": 7,
+      "badge": "☕ Guida · Bevande e acqua",
+      "h1": "Il caffè conta come acqua? Come contano tè, caffè e altre bevande (e come le registra Suu)",
+      "about": [
+        {
+          "name": "Caffè e idratazione"
+        },
+        {
+          "name": "Caffeina"
+        },
+        {
+          "name": "Idratazione delle bevande"
+        }
+      ],
+      "meta": {
+        "title": "Il caffè conta come acqua? Tabella delle bevande | Suu",
+        "description": "Caffè e tè con moderazione non disidratano: idratano quasi come l'acqua. Come contano espresso, cappuccino, tè e cola, il limite di caffeina e i fattori di Suu.",
+        "keywords": "il caffè conta come acqua, il caffè disidrata, il tè conta come acqua, il caffè è diuretico, quanti caffè al giorno, limite caffeina giornaliero, espresso e idratazione, la coca cola conta come acqua",
+        "og_title": "Il caffè conta come acqua? Il conto delle bevande",
+        "og_description": "Il caffè non disidrata, ma non sostituisce del tutto l'acqua. Come contano tè, caffè e cola — in numeri."
+      },
+      "answer": "In parte — e più di quanto molti pensino: caffè e tè con moderazione danno liquidi quasi come l'acqua, e l'idea che «il caffè disidrata» non vale per la maggior parte delle persone. Però non sostituisce del tutto l'acqua. Suu conta le bevande con prudenza: espresso con fattore di idratazione 0,5, cappuccino 0,8, caffè filtro 0,8, tè nero 0,9.",
+      "health_note": {
+        "head": "Questo articolo non è un consiglio medico.",
+        "body": [
+          "Per gli adulti sani si considerano sicuri fino a 400 mg di caffeina al giorno, in gravidanza non più di 200 mg. Se hai aritmie, pressione alta, reflusso o un disturbo d'ansia, parla con il tuo medico della quantità adatta a te.",
+          "Riduci la caffeina e senti il medico se noti:"
+        ],
+        "red_flags": [
+          "palpitazioni, dolore al petto o tremori dopo la caffeina",
+          "un netto aumento di insonnia o ansia"
+        ]
+      },
+      "disclosure": "Abbiamo scritto questa guida come il team di due persone che sviluppa Suu. Pubblichiamo apertamente i fattori della nostra app: non sono un'affermazione scientifica che «il caffè disidrata», ma un calcolo prudente che mantiene realistico l'obiettivo d'acqua giornaliero.",
+      "intro": [
+        "«Con il caffè bevi sempre un bicchiere d'acqua, sennò ti disidrati» — un consiglio ripetuto da anni, e al bar il bicchiere d'acqua accanto all'espresso è quasi un rito. L'effetto lievemente diuretico della caffeina è reale, ma a dosi moderate non annulla il liquido che la tazzina apporta.",
+        "Qui sotto vediamo prima cosa dice la ricerca, poi perché e come Suu conta tè, caffè e altre bevande — espresso compreso."
+      ],
+      "analysis": [
+        {
+          "head": "Il caffè disidrata davvero?",
+          "body": [
+            "Con moderazione, no. In uno studio su 50 uomini che bevevano abitualmente 3–6 tazze al giorno, bere 4 × 200 ml di caffè al giorno per tre giorni non ha dato differenze nell'acqua corporea e negli indicatori di idratazione rispetto alla stessa quantità d'acqua.<sup><a href=\"#ref1\">1</a></sup> In una prova che confrontava diverse bevande, latte e soluzione reidratante orale sono stati trattenuti più a lungo dell'acqua, mentre caffè, tè e cola non erano chiaramente diversi dall'acqua.<sup><a href=\"#ref2\">2</a></sup>",
+            "Quindi tè e caffè contribuiscono ai liquidi della giornata. Non è però un motivo per rinunciare all'acqua: caffeina, zucchero aggiunto e latte cambiano il quadro."
+          ]
+        },
+        {
+          "head": "Come Suu conta le bevande",
+          "body": [
+            "Suu conta ogni bevanda con un <strong>fattore di idratazione</strong>: quanta parte di ciò che bevi si aggiunge alla tua acqua. 200 ml di caffè filtro × 0,8 = 160 ml d'acqua. I fattori sono volutamente prudenti e tengono conto di caffè forti o abbondanti, sensibilità alla caffeina e zucchero aggiunto, così l'obiettivo giornaliero resta realistico. I valori nell'app:"
+          ],
+          "list": [
+            "<strong>1,0:</strong> acqua naturale, acqua frizzante",
+            "<strong>0,95–0,98:</strong> tisane (0,98), tè verde (0,95)",
+            "<strong>0,9:</strong> tè nero, latte",
+            "<strong>0,8–0,85:</strong> latte macchiato/latte (0,85), cappuccino (0,8), caffè filtro (0,8)",
+            "<strong>0,75:</strong> americano, cold brew",
+            "<strong>0,5–0,6:</strong> cola (0,6), espresso (0,5)",
+            "<strong>0,3–0,4:</strong> energy drink"
+          ],
+          "callout": "Lo zucchero si calcola a parte: ogni 10 g di zucchero in una bevanda alzano l'obiettivo d'acqua giornaliero di 100 ml. La caffeina invece non lo alza. Le bevande alcoliche non vanno considerate acqua; Suu ne tiene conto alzando l'obiettivo giornaliero (+250 ml ogni 10 ml di alcol puro)."
+        },
+        {
+          "head": "Espresso, moka e cappuccino",
+          "body": [
+            "Un espresso è piccolo: circa 30 ml × 0,5 = 15 ml d'acqua. Anche tre caffè al giorno aggiungono solo 45 ml alla tua acqua, ma circa 200 mg di caffeina. Il caffè della moka non ha una voce a parte nell'app; per concentrazione e volume la più vicina è l'espresso. Un cappuccino da 150 ml × 0,8 = 120 ml: il latte fa la differenza. Il bicchiere d'acqua che al bar accompagna il caffè, invece, conta tutto."
+          ]
+        },
+        {
+          "head": "Quanti caffè al giorno sono troppi?",
+          "body": [
+            "L'Autorità europea per la sicurezza alimentare (EFSA), con sede a Parma, considera sicuri per gli adulti sani fino a 400 mg di caffeina al giorno, consiglia non più di 200 mg in una sola volta e non più di 200 mg al giorno in gravidanza.<sup><a href=\"#ref3\">3</a></sup> In pratica sono circa 5 espressi o 3–4 tazze di caffè filtro; energy drink e cola rientrano nello stesso totale."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Dove seguirlo in Suu",
+        "lead": "I nomi dei menu sono quelli che vedi nell'app:",
+        "steps": [
+          {
+            "feature": "Racconta il caffè a Suui",
+            "where": "L'assistente <strong>Suui</strong> nella schermata principale",
+            "solves": "Basta dire «ho preso due espressi e un cappuccino»: le bevande si sommano alla tua acqua con i loro fattori, quelle zuccherate alzano l'obiettivo. Il piano gratuito include 3 messaggi AI al giorno."
+          },
+          {
+            "feature": "Registrazione in un tocco dalla lista bevande",
+            "premium": true,
+            "where_ios": "Schermata principale → aggiunta rapida → <strong>Bevanda rapida</strong>",
+            "where_android": "Schermata principale → <strong>Aggiungi bevanda</strong>",
+            "solves": "Tutte le 91 bevande con il proprio fattore e lo zucchero, dall'espresso alla kombucha. Con il piano gratuito dalla lista si aggiungono acqua naturale e frizzante."
+          },
+          {
+            "feature": "Indice Suu",
+            "where_ios": "Scheda <strong>Tu</strong> → Acqua → <strong>Indice Suu</strong>",
+            "where_android": "<strong>Statistiche</strong> → <strong>Indice Suu</strong>",
+            "solves": "Valuta da 0 a 100 l'idratazione reale di una giornata a base di caffè e tè: la sensazione «ho bevuto abbastanza» si controlla con un numero."
+          },
+          {
+            "feature": "Un obiettivo che segue il meteo",
+            "where": "La scheda <strong>Meteo e info</strong> nella schermata principale",
+            "solves": "Nei giorni caldi e dopo l'allenamento l'obiettivo d'acqua sale da solo; il caffè da solo non basta a coprirlo, e vedi la differenza."
+          }
+        ],
+        "button": "Scarica Suu gratis"
+      },
+      "verdict": {
+        "head": "In breve",
+        "body": [
+          "Caffè e tè non disidratano; con moderazione contribuiscono davvero ai liquidi della giornata. Ma non sostituiscono del tutto l'acqua, e la caffeina ha un limite.",
+          "In pratica: goditi il caffè, bevi comunque soprattutto acqua e tieni la caffeina totale sotto i 400 mg al giorno."
+        ]
+      },
+      "cta": {
+        "head": "Il vero conto dell'acqua in una giornata di caffè",
+        "sub": "91 bevande, fattori di idratazione e Indice Suu · iOS e Android",
+        "button": "Scarica Suu gratis"
+      },
+      "faq": [
+        {
+          "q": "Il caffè conta come acqua?",
+          "a": "In parte. Il caffè con moderazione idrata quasi come l'acqua e non disidrata, ma non la sostituisce del tutto. Suu conta l'espresso con fattore 0,5 e il caffè filtro con 0,8: 200 ml di caffè filtro valgono 160 ml d'acqua."
+        },
+        {
+          "q": "Il caffè disidrata?",
+          "a": "Con moderazione no. In uno studio con quattro tazze al giorno gli indicatori di idratazione erano uguali ai giorni con sola acqua. Fanno eccezione quantità molto elevate e persone sensibili alla caffeina."
+        },
+        {
+          "q": "Il tè conta come acqua?",
+          "a": "In gran parte sì. Suu conta il tè nero con 0,9, il tè verde con 0,95 e le tisane con 0,98. Lo zucchero aggiunto, invece, alza l'obiettivo d'acqua."
+        },
+        {
+          "q": "Quanti caffè al giorno si possono bere?",
+          "a": "Per gli adulti sani si considerano sicuri fino a 400 mg di caffeina al giorno: circa 5 espressi o 3–4 tazze di caffè filtro. In gravidanza non più di 200 mg. Energy drink e cola contano nel totale."
+        },
+        {
+          "q": "Un espresso idrata?",
+          "a": "Poco, perché è piccolo: circa 30 ml × 0,5 = 15 ml d'acqua in Suu. Il bicchiere d'acqua che lo accompagna al bar conta invece per intero."
+        },
+        {
+          "q": "Perché Suu conta il caffè meno dell'acqua se la ricerca dice che idrata quasi come l'acqua?",
+          "a": "Gli studi mostrano che il caffè moderato idrata quasi come l'acqua. I fattori di Suu sono un calcolo prudente che tiene conto di caffè forti o abbondanti, sensibilità alla caffeina e zucchero aggiunto, così l'obiettivo giornaliero resta realistico."
+        }
+      ],
+      "references": [
+        {
+          "label": "Killer SC et al. — No evidence of dehydration with moderate daily coffee intake: a counterbalanced cross-over study in a free-living population. PLoS One, 2014",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/24416202/"
+        },
+        {
+          "label": "Maughan RJ et al. — A randomized trial to assess the potential of different beverages to affect hydration status: development of a beverage hydration index. Am J Clin Nutr, 2016",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/26702122/"
+        },
+        {
+          "label": "EFSA — Scientific Opinion on the safety of caffeine (2015)",
+          "href": "https://www.efsa.europa.eu/en/efsajournal/pub/4102"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/it/dimentico-di-bere-acqua.html",
+          "title": "Mi dimentico di bere acqua",
+          "desc": "7 modi per farne un'abitudine."
+        },
+        {
+          "href": "/blog/it/smettere-bibite-gassate.html",
+          "title": "Smettere con le bibite gassate",
+          "desc": "Ridurre le bevande zuccherate in quattro settimane."
+        },
+        {
+          "href": "/blog/it/migliore-app-per-bere-acqua.html",
+          "title": "La migliore app per bere acqua 2026",
+          "desc": "Cinque app di idratazione a confronto."
+        },
+        {
+          "href": "/blog/it/perche-sono-sempre-stanco.html",
+          "title": "Perché sono sempre stanco?",
+          "desc": "Le 8 cause più comuni."
+        }
+      ]
+    },
+    "uk": {
+      "slug": "chy-rakhuyetsya-kava-yak-voda",
+      "read_minutes": 7,
+      "badge": "☕ Посібник · Напої та вода",
+      "h1": "Чи рахується кава як вода? Як зараховуються чай, кава й інші напої (і як їх враховує Suu)",
+      "about": [
+        {
+          "name": "Кава й гідратація"
+        },
+        {
+          "name": "Кофеїн"
+        },
+        {
+          "name": "Гідратація напоїв"
+        }
+      ],
+      "meta": {
+        "title": "Чи рахується кава як вода? Таблиця напоїв | Suu",
+        "description": "Помірні кава й чай не зневоднюють — вони зволожують майже як вода. Як рахуються фільтр-кава, еспресо, чай і кола, ліміт кофеїну й коефіцієнти Suu.",
+        "keywords": "чи рахується кава як вода, чи зневоднює кава, чи рахується чай як вода, кава сечогінна, скільки чашок кави на день, норма кофеїну на день, розчинна кава і вода, чи рахується кола як вода",
+        "og_title": "Чи рахується кава як вода? Таблиця напоїв",
+        "og_description": "Кава не зневоднює, але й не замінює воду повністю. Як зараховуються чай, кава й кола — у цифрах."
+      },
+      "answer": "Частково — і більше, ніж багато хто думає: помірні кава й чай дають організму рідину майже як вода, і думка «кава зневоднює» для більшості людей хибна. Але повністю воду вона не замінює. Suu рахує напої обережно: фільтр-кава з коефіцієнтом гідратації 0,8, еспресо 0,5, чорний чай 0,9, трав'яний 0,98.",
+      "health_note": {
+        "head": "Ця стаття не є медичною порадою.",
+        "body": [
+          "Для здорових дорослих безпечним вважається до 400 мг кофеїну на день, під час вагітності — не більше 200 мг. Якщо в тебе порушення ритму серця, підвищений тиск, рефлюкс чи тривожний розлад, обговори допустиму кількість кофеїну з лікарем.",
+          "Скороти кофеїн і звернися до лікаря, якщо помітив:"
+        ],
+        "red_flags": [
+          "сильне серцебиття, біль у грудях чи тремтіння після кофеїну",
+          "помітне посилення безсоння чи тривоги"
+        ]
+      },
+      "disclosure": "Цей посібник написала команда з двох людей, яка створює Suu. Ми відкрито публікуємо коефіцієнти застосунку; це не наукове твердження, що «кава зневоднює», а обережний розрахунок, який робить денну норму води реалістичною.",
+      "intro": [
+        "«Випив каву — запий склянкою води, бо буде зневоднення» — порада, яку повторюють роками. Легка сечогінна дія кофеїну реальна, але за помірних кількостей вона не перекриває рідину, яку дає чашка.",
+        "Нижче — спершу що кажуть дослідження, потім чому й як Suu зараховує чай, каву та інші напої."
+      ],
+      "analysis": [
+        {
+          "head": "Кава справді зневоднює?",
+          "body": [
+            "За помірного вживання — ні. У дослідженні з 50 чоловіками, які зазвичай пили 3–6 чашок на день, три дні по 4 × 200 мл кави не дали різниці у воді організму й маркерах гідратації порівняно з такою самою кількістю води.<sup><a href=\"#ref1\">1</a></sup> У випробуванні, де порівнювали різні напої, молоко й розчин для пероральної регідратації утримувалися в організмі довше за воду, а кава, чай і кола від води явно не відрізнялися.<sup><a href=\"#ref2\">2</a></sup>",
+            "Тож чай і кава роблять внесок у денну рідину. Але це не привід відмовлятися від звичайної води: кофеїн, доданий цукор і молоко змінюють картину. Центр громадського здоров'я України окремо радить уникати солодких газованих напоїв і алкоголю.<sup><a href=\"#ref3\">3</a></sup>"
+          ]
+        },
+        {
+          "head": "Як Suu зараховує напої",
+          "body": [
+            "Suu рахує кожен напій із <strong>коефіцієнтом гідратації</strong>: яка частина випитого додається до води. 200 мл фільтр-кави × 0,8 = 160 мл води. Коефіцієнти навмисно обережні: вони враховують міцну чи велику каву, чутливість до кофеїну й доданий цукор, щоб денна норма лишалася реалістичною. Значення в застосунку:"
+          ],
+          "list": [
+            "<strong>1,0:</strong> вода, газована вода",
+            "<strong>0,95–0,98:</strong> трав'яний чай (0,98), зелений чай (0,95)",
+            "<strong>0,9:</strong> чорний чай, молоко, кефір",
+            "<strong>0,8–0,85:</strong> лате (0,85), фільтр-кава (0,8), капучино (0,8)",
+            "<strong>0,75:</strong> американо, колд брю",
+            "<strong>0,5–0,6:</strong> кола (0,6), еспресо (0,5)",
+            "<strong>0,3–0,4:</strong> енергетики"
+          ],
+          "callout": "Цукор рахується окремо: кожні 10 г цукру в напої підвищують денну норму води на 100 мл. Кофеїн її не підвищує. Алкоголь не варто вважати водою; Suu враховує його, підвищуючи денну норму (+250 мл на 10 мл чистого спирту)."
+        },
+        {
+          "head": "Чай із лимоном і розчинна кава",
+          "body": [
+            "Горнятко чорного чаю на 250 мл × 0,9 = 225 мл води; цукор у чаї підвищує норму. Розчинної кави в списку застосунку немає окремою позицією — найближча фільтр-кава (0,8): горнятко на 250 мл дає близько 200 мл води. Еспресо маленьке — близько 30 мл × 0,5 = 15 мл, — тож подвійне еспресо майже не додає води, але додає багато кофеїну."
+          ]
+        },
+        {
+          "head": "Скільки кави на день — уже забагато?",
+          "body": [
+            "Європейське агентство з безпечності харчових продуктів (EFSA) вважає безпечними для здорових дорослих до 400 мг кофеїну на день, не більше 200 мг за раз і не більше 200 мг на день під час вагітності.<sup><a href=\"#ref4\">4</a></sup> Це приблизно 3–4 горнятка фільтр-кави; енергетики й кола входять у той самий підсумок."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Де відстежувати це в Suu",
+        "lead": "Назви пунктів наведено англійською, як в інтерфейсі:",
+        "steps": [
+          {
+            "feature": "Розкажи Suui про каву",
+            "where": "Асистент <strong>Suui</strong> на головному екрані",
+            "solves": "Досить сказати «випив фільтр-каву й дві чашки чаю» — напої додадуться до води з коефіцієнтами, а солодкі підвищать норму. У безкоштовному плані 3 AI-повідомлення на день."
+          },
+          {
+            "feature": "Запис одним дотиком зі списку напоїв",
+            "premium": true,
+            "where_ios": "Home → quick add → <strong>Quick Drink</strong>",
+            "where_android": "Home → <strong>Add Beverage</strong>",
+            "solves": "Усі 91 напій зі своїм коефіцієнтом і цукром — від еспресо до кефіру. У безкоштовному плані зі списку додаються вода й газована вода."
+          },
+          {
+            "feature": "Індекс Suu",
+            "where_ios": "Вкладка <strong>You</strong> → Water → <strong>Suu Index</strong>",
+            "where_android": "<strong>Statistics</strong> → <strong>Suu Index</strong>",
+            "solves": "Оцінює реальну гідратацію дня «на чаї й каві» від 0 до 100 — відчуття «я багато випив» можна перевірити цифрою."
+          },
+          {
+            "feature": "Норма, що стежить за погодою",
+            "where": "Картка <strong>Weather &amp; info</strong> на головному екрані",
+            "solves": "У спеку й після тренувань норма води підвищується автоматично; однією кавою це не покрити — різницю буде видно."
+          }
+        ],
+        "note": "Українська локалізація застосунку в планах; поки що зручно користуватися англійською версією інтерфейсу.",
+        "button": "Завантажити Suu безкоштовно"
+      },
+      "verdict": {
+        "head": "Коротко",
+        "body": [
+          "Кава й чай не зневоднюють; у помірних кількостях вони справді додають рідину за день. Але повністю воду вони не замінюють, і в кофеїну є верхня межа.",
+          "Практичний підхід: пий каву й чай із задоволенням, основну рідину отримуй із води й тримай загальний кофеїн нижче 400 мг на день."
+        ]
+      },
+      "cta": {
+        "head": "Реальний водний баланс дня на чаї й каві",
+        "sub": "91 напій, коефіцієнти гідратації та Індекс Suu · iOS та Android",
+        "button": "Завантажити Suu безкоштовно"
+      },
+      "faq": [
+        {
+          "q": "Чи рахується кава як вода?",
+          "a": "Частково. Помірна кава зволожує майже як вода й не зневоднює, але повністю її не замінює. Suu рахує фільтр-каву з коефіцієнтом 0,8: 200 мл кави додають 160 мл води."
+        },
+        {
+          "q": "Чи зневоднює кава?",
+          "a": "За помірного вживання — ні. У дослідженні, де пили чотири чашки на день, маркери гідратації були такими самими, як у дні з водою. Винятком можуть бути дуже великі кількості й люди, чутливі до кофеїну."
+        },
+        {
+          "q": "Чи рахується чай як вода?",
+          "a": "Здебільшого так. Чорний чай Suu рахує з коефіцієнтом 0,9, зелений — 0,95, трав'яний — 0,98. Цукор у чаї при цьому підвищує норму води."
+        },
+        {
+          "q": "Скільки чашок кави на день безпечно?",
+          "a": "Для здорових дорослих безпечним вважається до 400 мг кофеїну на день — приблизно 3–4 горнятка фільтр-кави. Під час вагітності — до 200 мг на день. Енергетики й кола входять у загальний підсумок."
+        },
+        {
+          "q": "Чи рахується кола як вода?",
+          "a": "Частково: кола в Suu йде з коефіцієнтом 0,6, а її цукор підвищує норму води на 100 мл за кожні 10 г. Газована вода зараховується повністю."
+        },
+        {
+          "q": "Чому Suu рахує каву як 0,8, якщо дослідження кажуть, що вона зволожує як вода?",
+          "a": "Дослідження показують, що помірна кава зволожує майже як вода. Коефіцієнти Suu — обережний розрахунок із поправкою на міцну чи велику каву, чутливість до кофеїну й доданий цукор, щоб денна норма лишалася реалістичною."
+        }
+      ],
+      "references": [
+        {
+          "label": "Killer SC та ін. — No evidence of dehydration with moderate daily coffee intake: a counterbalanced cross-over study in a free-living population. PLoS One, 2014",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/24416202/"
+        },
+        {
+          "label": "Maughan RJ та ін. — A randomized trial to assess the potential of different beverages to affect hydration status: development of a beverage hydration index. Am J Clin Nutr, 2016",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/26702122/"
+        },
+        {
+          "label": "Центр громадського здоров'я України — Чому важливо пити достатньо води (і як виробити цю звичку)",
+          "href": "https://phc.org.ua/news/chomu-vazhlivo-piti-dostatno-vodi-i-yak-virobiti-cyu-zvichku"
+        },
+        {
+          "label": "EFSA — Scientific Opinion on the safety of caffeine (2015)",
+          "href": "https://www.efsa.europa.eu/en/efsajournal/pub/4102"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/uk/zabuvayu-pyty-vodu.html",
+          "title": "Забуваю пити воду",
+          "desc": "7 способів зробити це звичкою."
+        },
+        {
+          "href": "/blog/uk/yak-kynuty-hazovani-napoi.html",
+          "title": "Як кинути пити газовані напої",
+          "desc": "Скоротити солодкі напої за чотири тижні."
+        },
+        {
+          "href": "/blog/uk/najkrashchyj-zastosunok-dlya-vody.html",
+          "title": "Найкращий застосунок для води 2026",
+          "desc": "П'ять застосунків для гідратації в порівнянні."
+        },
+        {
+          "href": "/blog/uk/chomu-ya-postiyno-vtomlenyi.html",
+          "title": "Чому я постійно втомлений?",
+          "desc": "8 найчастіших причин."
+        }
+      ]
+    }
+  }
+}

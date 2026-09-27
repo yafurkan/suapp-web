@@ -117,7 +117,7 @@ def build_rules(facts: dict) -> list[dict]:
             # Uygulama kataloğu: filtre kahve 0.8, Türk kahvesi 0.7, espresso 0.5
             # (suu-facts.json → beverage_hydration). Sitenin eski "kahve 0.60 / ~%60" değeri yanlış.
             "id": "coffee-hydration-stale",
-            "severity": WARN,
+            "severity": ERROR,   # 2026-09-27 site temizlendi; geri gelirse yayın durur
             "pattern": re.compile(
                 r"(?i)(?:coffee|kahve|кофе|قهوة|kaffee|caff[èe]|кава)[^<\n]{0,80}?"
                 r"(?:0[.,]60\b|~\s?%\s?60\b|~\s?60\s?%|%60\b)"
@@ -132,7 +132,7 @@ def build_rules(facts: dict) -> list[dict]:
             # Alkol katsayısı iOS (1.0) ve Android (-0.2/-0.4/-0.8) arasında farklı —
             # uygulamada eşitlenene kadar sayı yayınlanmaz (beverage_hydration.alcohol).
             "id": "alcohol-negative-factor",
-            "severity": WARN,
+            "severity": ERROR,   # 2026-09-27 site temizlendi; geri gelirse yayın durur
             "pattern": re.compile(
                 r"(?i)(?:alcohol|alkol|алкогол\w*|الكحول|alkohol|alcol|пиво|beer|bira|wine|şarap|вино)"
                 r"[^<\n]{0,80}?[-−–]\s?0[.,][2-8]\b"

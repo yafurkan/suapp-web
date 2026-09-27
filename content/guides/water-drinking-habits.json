@@ -1,0 +1,1302 @@
+{
+  "_note": "Yapay zekâ sorusu rehberi #7 — 'su içmeyi unutuyorum'. 2026-09-27'de el yazımı tr/en/ar/ru sayfaları bu boru hattına taşındı (URL ve dil bazlı ilk yayın tarihi korunur: sayfa düzeyinde `published`), de/it/uk yeni açıldı. Sınır: alışkanlık kurma; günlük miktar gunluk-ne-kadar-su-icmeli'de kalır. Rakamlar suu-facts.json → beverage_hydration / gamification (seri = su hedefinin %50'si). Kaynak URL'leri 2026-09-27'de doğrulandı.",
+  "kind": "guide",
+  "cluster": "su-icme-aliskanlik",
+  "published": "2026-09-27",
+  "modified": "2026-09-27",
+  "pages": {
+    "tr": {
+      "slug": "su-icme-aliskanlik",
+      "published": "2026-03-15",
+      "read_minutes": 7,
+      "badge": "💧 Rehber · Su alışkanlığı",
+      "h1": "Su İçmeyi Sürekli Unutuyorum: Alışkanlık Haline Getirmenin 7 Bilimsel Yolu (ve Suu'da Takibi)",
+      "about": [
+        {
+          "name": "Su içme alışkanlığı"
+        },
+        {
+          "name": "Hidrasyon"
+        },
+        {
+          "name": "Alışkanlık oluşturma"
+        }
+      ],
+      "meta": {
+        "title": "Su İçmeyi Sürekli Unutuyorsan Bu 7 Yöntemi Dene | Suu",
+        "description": "Su içmeyi unutmak irade değil tetikleyici eksikliği. Sabah bardağı, görünür şişe, yemek öncesi bardak ve küçük hedeflerle suyu alışkanlığa çevirmenin 7 yolu.",
+        "keywords": "su içmeyi unutuyorum, su içme alışkanlığı nasıl kazanılır, daha fazla su içmek için ne yapmalı, su içmeyi hatırlatan uygulama, günde ne kadar su içmeli, su içme hatırlatıcısı, su içmeyi sevmiyorum",
+        "og_title": "Su İçmeyi Sürekli Unutuyorum: 7 Bilimsel Yol",
+        "og_description": "Susama sinyali geç gelir; alışkanlık tetikleyiciyle kurulur. Suyu gününe yerleştirmenin 7 yolu ve ne kadar sürede oturduğu."
+      },
+      "answer": "Su içmeyi unutmak çoğu zaman irade değil tetikleyici eksikliğidir. En işe yarayanlar: sabah uyanınca bir bardak su, şişeyi görünür yerde tutmak, içmeyi var olan bir alışkanlığa bağlamak (her yemekten önce bir bardak) ve küçük bir hedefle başlamak. Suu, akıllı hatırlatıcılar ve günlük seriyle bu tetikleyicileri telefonuna taşır; su takibi ücretsizdir.",
+      "health_note": {
+        "head": "Bu yazı tıbbi tavsiye değildir.",
+        "body": [
+          "Kalp ya da böbrek hastalığın varsa veya doktorun sıvı kısıtlaması önerdiyse o sınıra uy; bu yazıdaki hedefler sağlıklı yetişkinler içindir. Kısa sürede çok fazla su içmek kandaki sodyumu tehlikeli biçimde düşürebilir; suyu gün içine yay.",
+          "Şu durumlarda bir doktora görün:"
+        ],
+        "red_flags": [
+          "Sürekli aşırı susama ve sık idrara çıkma (kan şekerine baktırmak gerekir)",
+          "Bol su içmene rağmen koyu idrar, baş dönmesi ya da bilinç bulanıklığı"
+        ]
+      },
+      "disclosure": "Bu rehberi Suu'yu geliştiren iki kişilik ekip olarak yazdık. Uygulamamızı öneriyoruz, ama yöntemlerin dayanağı alışkanlık araştırmaları ve Sağlık Bakanlığı önerileri; aynı adımları Suu olmadan da uygulayabilirsin.",
+      "intro": [
+        "Sabah kahvesi, öğlen çay, akşam yemeği… ve günün sonunda fark ediyorsun ki toplam iki bardak su içmişsin. Bu tanıdık tablo, su içmeyi sevmemekten değil, gün içinde suyu hatırlatan bir şey olmamasından kaynaklanıyor. Susama sinyali çoğu zaman geç gelir; iş, trafik ya da uzun bir motosiklet yolculuğu sırasında kolayca bastırılır.",
+        "Alışkanlık araştırmaları bu konuda net: davranış bir tetikleyiciye bağlandığında kalıcı olur. Aşağıdaki yedi yöntem, suyu gününe tetikleyicilerle yerleştirmek üzerine kurulu."
+      ],
+      "analysis": [
+        {
+          "head": "7 kanıta dayalı yöntem",
+          "body": [
+            "Hepsini birden deneme; ikisini seç, iki hafta uygula, sonra birini daha ekle."
+          ],
+          "list": [
+            "<strong>Sabah rutinine ekle:</strong> Uyanınca, telefona bakmadan önce bir bardak su. Gece boyunca sıvı almayan vücut için günün en kolay bardağı.",
+            "<strong>Görünür kıl:</strong> Şişeyi masanın, arabanın ya da çantanın görünen yerinde tut. Görünen içilir.",
+            "<strong>Var olan bir alışkanlığa bağla:</strong> \"Her yemekten önce bir bardak su\" gibi bir eğer–o zaman planı kur. Bir çalışmada böyle bir plan yapanlar beş günlük takipte daha fazla su içtiklerini bildirdi.<sup><a href=\"#ref1\">1</a></sup>",
+            "<strong>Küçük başla:</strong> Bugün iki bardak içiyorsan hedefin dört olsun, sekiz değil. Ulaşılabilir hedef, bırakmayı zorlaştırır.",
+            "<strong>Seriyi koru:</strong> Art arda tuttuğun günleri görmek, zinciri kırmamak için güçlü bir motivasyon.",
+            "<strong>Birlikte yap:</strong> Bir arkadaşla karşılıklı hatırlatma ya da küçük bir yarış, tek başına çabadan daha kalıcı.",
+            "<strong>Tadını değiştir:</strong> Nane, limon, tarçın çubuğu ya da meyveli buz. Sağlık Bakanlığı da suyu bu şekilde aromalandırmayı öneriyor.<sup><a href=\"#ref3\">3</a></sup>"
+          ]
+        },
+        {
+          "head": "Günde ne kadar su içmeliyim?",
+          "body": [
+            "Sağlık Bakanlığı toplam günlük sıvı alımını kadınlar için yaklaşık 2.000 ml, erkekler için 2.500 ml olarak veriyor ve kişiye göre basit bir hesap öneriyor: vücut ağırlığı (kg) × 35 ml. Sıcak havada, egzersizde, hamilelikte ve emzirmede ihtiyaç artar.<sup><a href=\"#ref3\">3</a></sup>",
+            "İçeceklerin hepsi su yerine tam sayılmaz ama hepsi de sıfır değildir; çay ve kahvenin hesabı ayrı bir yazının konusu. En pratik gösterge idrar rengi: açık saman rengi iyi, koyu renk su açığı işareti."
+          ],
+          "callout": "Susamayı beklemek iyi bir strateji değil: kadınlarla yapılan bir deneyde vücut ağırlığının yalnızca %1,36'sı kadar sıvı kaybı bile ruh halini, yorgunluk hissini ve konsantrasyonu olumsuz etkiledi.<sup><a href=\"#ref4\">4</a></sup>"
+        },
+        {
+          "head": "Ne kadar sürede alışkanlık olur?",
+          "body": [
+            "Bir çalışmada yeni bir davranışın otomatikleşmesi ortalama 66 gün sürdü; kişiden kişiye 18 ile 254 gün arasında değişti.<sup><a href=\"#ref2\">2</a></sup> İlk haftalarda hatırlatıcılara yaslanmak normal; amaç zamanla onlara ihtiyaç duymamak. Bir günü kaçırmak da alışkanlığı bozmaz — önemli olan ertesi gün devam etmek."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Bunu Suu'da nereden takip edersin",
+        "lead": "Su takibi ücretsiz planda. Menü adları uygulamadaki gibi:",
+        "steps": [
+          {
+            "feature": "Akıllı Bildirimler",
+            "where_ios": "Ayarlar → Bildirim Ayarları → <strong>Akıllı Bildirimler</strong>",
+            "where_android": "Ayarlar → <strong>Akıllı Bildirimler</strong>",
+            "solves": "Sabah ilk yudumu ve yemek sonrası suyu hatırlatır; \"sabah rutini\" ve \"var olan alışkanlığa bağla\" yöntemlerini telefonuna taşır."
+          },
+          {
+            "feature": "Tek dokunuşla su ekle",
+            "where": "Ana ekrandaki su ekleme düğmeleri",
+            "solves": "Bardağı içtiğin anda saniyede kaydedersin. iPhone'da ana ekran widget'ı ve Siri kısayoluyla, Apple Watch'ta doğrudan saatten de eklenir."
+          },
+          {
+            "feature": "Seri ve Streak Koruma",
+            "where": "Ana ekrandaki <strong>Seri</strong> göstergesi",
+            "solves": "Günlük su hedefinin en az yarısına ulaştığın her gün seri uzar; bir günü kaçırırsan <strong>Streak Koruma</strong> hakkın seriyi korur."
+          },
+          {
+            "feature": "Arkadaşlarla Su sıralaması ve dürtme",
+            "where": "Ayarlar → <strong>Sıralama · Puan Tablosu</strong> → Arkadaşlar → <strong>Su</strong> · arkadaşın → <strong>Dürt</strong> → Su iç",
+            "solves": "Haftada kaç gün su hedefine ulaştığınızı yan yana görürsünüz; unutan arkadaşına tek dokunuşla \"su iç\" hatırlatması gider."
+          },
+          {
+            "feature": "Suu Endeksi",
+            "where_ios": "<strong>Sen</strong> sekmesi → Su → <strong>Suu Endeksi</strong>",
+            "where_android": "<strong>İstatistikler</strong> → <strong>Suu Endeksi</strong>",
+            "solves": "Günlük hidrasyonunu 0–100 arası puanlar; hedefin hava durumuna ve egzersize göre kendiliğinden değişir."
+          }
+        ],
+        "button": "Suu'yu ücretsiz indir"
+      },
+      "verdict": {
+        "head": "Kısacası",
+        "body": [
+          "Su içmeyi unutmanın çözümü daha çok irade değil, daha iyi tetikleyiciler: sabah bardağı, görünür şişe, yemek öncesi bardak ve ulaşılabilir bir hedef.",
+          "İlk iki ay hatırlatıcılara ve seriye yaslan; alışkanlık oturdukça onlara daha az ihtiyaç duyduğunu göreceksin."
+        ]
+      },
+      "cta": {
+        "head": "Suyu hatırlamayı telefonuna bırak",
+        "sub": "Akıllı hatırlatıcılar, seri ve arkadaşlarla sıralama · su takibi ücretsiz",
+        "button": "Suu'yu Ücretsiz İndir"
+      },
+      "faq": [
+        {
+          "q": "Su içmeyi sürekli unutuyorum, ne yapmalıyım?",
+          "a": "Suyu var olan alışkanlıklara bağla: uyanınca bir bardak, her yemekten önce bir bardak. Şişeyi görünür yerde tut, küçük bir hedefle başla ve ilk haftalarda hatırlatıcı kullan."
+        },
+        {
+          "q": "Günde ne kadar su içmeliyim?",
+          "a": "Sağlık Bakanlığı toplam sıvı alımını kadınlar için yaklaşık 2.000 ml, erkekler için 2.500 ml olarak veriyor; kişiye göre hesap için vücut ağırlığını 35 ml ile çarpabilirsin. Sıcakta ve egzersizde ihtiyaç artar."
+        },
+        {
+          "q": "Su içme alışkanlığı kaç günde oluşur?",
+          "a": "Bir çalışmada yeni bir davranışın otomatikleşmesi ortalama 66 gün sürdü, kişiden kişiye 18 ile 254 gün arasında değişti. Aradaki kaçırılmış günler alışkanlığı bozmaz."
+        },
+        {
+          "q": "Su içmeyi sevmiyorum, ne yapabilirim?",
+          "a": "Suyu nane, limon, tarçın çubuğu ya da meyveli buzla aromalandır; maden suyu da tam sayılır. Şekerli içecekleri su yerine koymak ise ek şeker ve kalori getirir."
+        },
+        {
+          "q": "Susamayı beklemek yeterli mi?",
+          "a": "Çoğu kişi için değil: susama sinyali geç gelebilir ve yoğun günlerde bastırılır. Deneylerde vücut ağırlığının yaklaşık %1,4'ü kadar sıvı kaybı bile ruh halini ve konsantrasyonu etkiledi."
+        },
+        {
+          "q": "Su içmeyi hatırlatan uygulama ücretsiz mi?",
+          "a": "Suu'da su takibi, akıllı hatırlatıcılar, seri ve arkadaşlarla haftalık sıralama ücretsiz planda. İçecek listesinin tamamı ve sınırsız AI Premium'da."
+        }
+      ],
+      "references": [
+        {
+          "label": "Rodger A ve ark. — Can a simple plan change a complex behavior? Implementation intentions in the context of water drinking. Appetite, 2023",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/36646386/"
+        },
+        {
+          "label": "Lally P ve ark. — How are habits formed: modelling habit formation in the real world. European Journal of Social Psychology, 2010",
+          "href": "https://doi.org/10.1002/ejsp.674"
+        },
+        {
+          "label": "T.C. Sağlık Bakanlığı HSGM — Yaz Aylarında Sağlıklı Su ve Sıvı Tüketimi Nasıl Olmalıdır?",
+          "href": "https://hsgm.saglik.gov.tr/tr/haberler-6/yaz-aylarinda-saglikli-su-ve-sivi-tuketimi-nasil-olmalidir.html"
+        },
+        {
+          "label": "Armstrong LE ve ark. — Mild dehydration affects mood in healthy young women. J Nutr, 2012",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/22190027/"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/gunluk-ne-kadar-su-icmeli.html",
+          "title": "Günde ne kadar su içmeli?",
+          "desc": "Kişiye özel hedef nasıl hesaplanır?"
+        },
+        {
+          "href": "/blog/kahve-cay-su-sayar-mi.html",
+          "title": "Kahve su yerine geçer mi?",
+          "desc": "Çay, kahve ve içeceklerin su hesabı."
+        },
+        {
+          "href": "/blog/susuzluk-belirtileri.html",
+          "title": "Susuzluk belirtileri",
+          "desc": "Vücudun su istediğini gösteren işaretler."
+        },
+        {
+          "href": "/blog/su-icme-lig-sistemi.html",
+          "title": "Arkadaşlarla su ligi",
+          "desc": "Birlikte içmek neden daha kolay?"
+        }
+      ]
+    },
+    "en": {
+      "slug": "water-drinking-habits",
+      "published": "2026-03-15",
+      "read_minutes": 7,
+      "badge": "💧 Guide · Water habits",
+      "h1": "Can't Remember to Drink Water? 7 Science-Backed Ways to Make It a Habit (and Track It in Suu)",
+      "about": [
+        {
+          "name": "Water drinking habit"
+        },
+        {
+          "name": "Hydration"
+        },
+        {
+          "name": "Habit formation"
+        }
+      ],
+      "meta": {
+        "title": "Can't Remember to Drink Water? These 7 Tricks Work | Suu",
+        "description": "Forgetting to drink water isn't about willpower — it's missing cues. A morning glass, a visible bottle, a glass before meals and small goals: 7 ways that stick.",
+        "keywords": "forget to drink water, how to drink more water, how to make drinking water a habit, water reminder app, how much water should i drink a day, i don't like drinking water, drink water reminder",
+        "og_title": "Can't Remember to Drink Water? 7 Science-Backed Ways",
+        "og_description": "Thirst shows up late; habits are built on cues. 7 ways to fit water into your day and how long it takes to stick."
+      },
+      "answer": "Forgetting to drink water usually isn't a willpower problem but a lack of cues. What works best: a glass of water when you wake up, keeping a bottle in sight, tying drinking to an existing habit (a glass before every meal) and starting with a small goal. Suu moves these cues onto your phone with smart reminders and a daily streak; water tracking is free.",
+      "health_note": {
+        "head": "This article is not medical advice.",
+        "body": [
+          "If you have heart or kidney disease, or your doctor has recommended a fluid restriction, follow that limit; the targets here are for healthy adults. Drinking a very large amount of water in a short time can dangerously lower the sodium in your blood, so spread your water across the day.",
+          "See a doctor if you notice:"
+        ],
+        "red_flags": [
+          "Constant extreme thirst and frequent urination (your blood sugar should be checked)",
+          "Dark urine, dizziness or confusion despite drinking plenty"
+        ]
+      },
+      "disclosure": "We wrote this guide as the two-person team that builds Suu. We recommend our app, but the methods rest on habit research and the NHS — you can follow the same steps without Suu.",
+      "intro": [
+        "Morning coffee, afternoon tea, dinner… and at the end of the day you realize you've had two glasses of water in total. That familiar picture isn't about disliking water; it's that nothing in your day reminds you of it. Thirst often shows up late and is easy to ignore during work, a commute or a long ride.",
+        "Habit research is clear here: a behavior sticks when it's tied to a cue. The seven methods below are built on fitting water into your day with cues."
+      ],
+      "analysis": [
+        {
+          "head": "7 evidence-based methods",
+          "body": [
+            "Don't try them all at once: pick two, use them for two weeks, then add another."
+          ],
+          "list": [
+            "<strong>Add it to your morning routine:</strong> A glass of water when you wake up, before you look at your phone. The easiest glass of the day for a body that's gone all night without fluid.",
+            "<strong>Keep it visible:</strong> Keep a bottle in sight on your desk, in the car or in your bag. What's visible gets drunk.",
+            "<strong>Tie it to an existing habit:</strong> Make an if–then plan such as \"a glass of water before every meal.\" In one study, people who made such a plan reported drinking more water over a five-day follow-up.<sup><a href=\"#ref1\">1</a></sup>",
+            "<strong>Start small:</strong> If you drink two glasses today, aim for four, not eight. A reachable goal is harder to abandon.",
+            "<strong>Protect your streak:</strong> Seeing consecutive days is a strong reason not to break the chain.",
+            "<strong>Do it together:</strong> Mutual reminders or a small competition with a friend last longer than going it alone.",
+            "<strong>Change the taste:</strong> Mint, lemon, cucumber or frozen fruit. Sparkling water counts fully too."
+          ]
+        },
+        {
+          "head": "How much water should I drink a day?",
+          "body": [
+            "The NHS suggests aiming for 6 to 8 cups or glasses of fluid a day, and notes that water, lower-fat milk and sugar-free drinks — including tea and coffee — all count.<sup><a href=\"#ref3\">3</a></sup> Needs rise in hot weather, with exercise, during pregnancy and while breastfeeding.",
+            "Not every drink counts fully as water, but none counts as zero either; tea and coffee get their own article. The most practical signal is urine color: pale straw is good, dark means you're behind."
+          ],
+          "callout": "Waiting until you're thirsty isn't a great strategy: in an experiment with women, losing fluid equal to just 1.36% of body weight worsened mood, feelings of fatigue and concentration.<sup><a href=\"#ref4\">4</a></sup>"
+        },
+        {
+          "head": "How long does it take to become a habit?",
+          "body": [
+            "In one study a new behavior took a median of 66 days to become automatic, ranging from 18 to 254 days.<sup><a href=\"#ref2\">2</a></sup> Leaning on reminders in the first weeks is normal; the goal is to need them less over time. Missing one day doesn't undo the habit either — what matters is carrying on the next day."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Where to track this in Suu",
+        "lead": "Water tracking is on the free plan. Menu names are exactly as they appear:",
+        "steps": [
+          {
+            "feature": "Smart Notifications",
+            "where_ios": "Settings → Notification Settings → <strong>Smart Notifications</strong>",
+            "where_android": "Settings → <strong>Smart Notifications</strong>",
+            "solves": "Reminds you of the first sip in the morning and water after meals — the \"morning routine\" and \"tie it to a habit\" methods, on your phone."
+          },
+          {
+            "feature": "Log water in one tap",
+            "where": "The water buttons on the home screen",
+            "solves": "Log a glass the moment you drink it. On iPhone you can also add water from the home-screen widget and a Siri shortcut, and straight from Apple Watch."
+          },
+          {
+            "feature": "Streak and Streak Freeze",
+            "where": "The <strong>Streak</strong> indicator on the home screen",
+            "solves": "Every day you reach at least half of your water goal extends your streak; if you miss a day, a <strong>Streak Freeze</strong> protects it."
+          },
+          {
+            "feature": "Water leaderboard and nudges with friends",
+            "where": "Settings → <strong>Leaderboard</strong> → Friends → <strong>Water</strong> · your friend → <strong>Nudge</strong> → Drink water",
+            "solves": "See how many days each of you hit your water goal this week; send a friend who forgot a one-tap \"drink water\" nudge."
+          },
+          {
+            "feature": "Suu Index",
+            "where_ios": "<strong>You</strong> tab → Water → <strong>Suu Index</strong>",
+            "where_android": "<strong>Statistics</strong> → <strong>Suu Index</strong>",
+            "solves": "Scores your daily hydration from 0 to 100; your goal adjusts automatically to the weather and your workouts."
+          }
+        ],
+        "button": "Get Suu free"
+      },
+      "verdict": {
+        "head": "The short version",
+        "body": [
+          "The fix for forgetting to drink water isn't more willpower but better cues: a morning glass, a visible bottle, a glass before meals and a reachable goal.",
+          "Lean on reminders and your streak for the first two months; as the habit settles, you'll find you need them less."
+        ]
+      },
+      "cta": {
+        "head": "Let your phone remember the water",
+        "sub": "Smart reminders, streaks and a friends leaderboard · water tracking is free",
+        "button": "Download Suu Free"
+      },
+      "faq": [
+        {
+          "q": "I keep forgetting to drink water — what should I do?",
+          "a": "Tie water to habits you already have: a glass when you wake up and a glass before every meal. Keep a bottle in sight, start with a small goal and use reminders for the first few weeks."
+        },
+        {
+          "q": "How much water should I drink a day?",
+          "a": "The NHS suggests 6 to 8 cups or glasses of fluid a day, and water, lower-fat milk and sugar-free drinks including tea and coffee all count. You need more in hot weather and with exercise."
+        },
+        {
+          "q": "How long does it take to build a water-drinking habit?",
+          "a": "In one study a new behavior took a median of 66 days to become automatic, ranging from 18 to 254 days between people. Missed days along the way don't break the habit."
+        },
+        {
+          "q": "I don't like drinking water — what can I do?",
+          "a": "Flavor it with mint, lemon, cucumber or frozen fruit; sparkling water counts fully too. Swapping water for sugary drinks, on the other hand, adds sugar and calories."
+        },
+        {
+          "q": "Is waiting until I'm thirsty enough?",
+          "a": "For most people, no: thirst can show up late and gets ignored on busy days. In experiments, losing fluid equal to about 1.4% of body weight already affected mood and concentration."
+        },
+        {
+          "q": "Is there a free app that reminds you to drink water?",
+          "a": "In Suu, water tracking, smart reminders, streaks and the weekly friends leaderboard are on the free plan. The full drink list and unlimited AI are Premium."
+        }
+      ],
+      "references": [
+        {
+          "label": "Rodger A et al. — Can a simple plan change a complex behavior? Implementation intentions in the context of water drinking. Appetite, 2023",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/36646386/"
+        },
+        {
+          "label": "Lally P et al. — How are habits formed: modelling habit formation in the real world. European Journal of Social Psychology, 2010",
+          "href": "https://doi.org/10.1002/ejsp.674"
+        },
+        {
+          "label": "NHS — Water, drinks and your health",
+          "href": "https://www.nhs.uk/live-well/eat-well/food-guidelines-and-food-labels/water-drinks-nutrition/"
+        },
+        {
+          "label": "Armstrong LE et al. — Mild dehydration affects mood in healthy young women. J Nutr, 2012",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/22190027/"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/en/how-much-water-should-i-drink.html",
+          "title": "How much water should I drink?",
+          "desc": "How a personal target is worked out."
+        },
+        {
+          "href": "/blog/en/coffee-tea-hydration.html",
+          "title": "Does coffee count as water intake?",
+          "desc": "How tea, coffee and other drinks count."
+        },
+        {
+          "href": "/blog/en/signs-of-dehydration.html",
+          "title": "Signs of dehydration",
+          "desc": "Warning signs your body needs water."
+        },
+        {
+          "href": "/blog/en/water-challenge-with-friends.html",
+          "title": "Water challenge with friends",
+          "desc": "Why drinking together is easier."
+        }
+      ]
+    },
+    "ar": {
+      "slug": "adat-shurb-almae",
+      "published": "2026-03-15",
+      "read_minutes": 7,
+      "badge": "💧 دليل · عادة شرب الماء",
+      "h1": "أنسى شرب الماء دائمًا: 7 طرق علمية لتحويله إلى عادة (وكيف تتابعها في Suu)",
+      "about": [
+        {
+          "name": "عادة شرب الماء"
+        },
+        {
+          "name": "الترطيب"
+        },
+        {
+          "name": "بناء العادات"
+        }
+      ],
+      "meta": {
+        "title": "أنسى شرب الماء؟ 7 طرق علمية لتجعله عادة | Suu",
+        "description": "نسيان شرب الماء ليس ضعف إرادة بل غياب المحفّز. كوب الصباح، والقارورة الظاهرة، وكوب قبل الوجبة، وأهداف صغيرة: 7 طرق تجعل الماء عادة.",
+        "keywords": "أنسى شرب الماء, كيف أعتاد على شرب الماء, كيف أشرب ماء أكثر, تطبيق تذكير بشرب الماء, كم كوب ماء في اليوم, لا أحب شرب الماء, تذكير شرب الماء",
+        "og_title": "أنسى شرب الماء دائمًا: 7 طرق علمية",
+        "og_description": "العطش يأتي متأخرًا، والعادة تُبنى على محفّز. 7 طرق لإدخال الماء في يومك وكم تحتاج العادة لتثبت."
+      },
+      "answer": "نسيان شرب الماء غالبًا ليس ضعف إرادة بل غياب المحفّز. أنجح الطرق: كوب ماء عند الاستيقاظ، وإبقاء القارورة في مكان ظاهر، وربط الشرب بعادة قائمة (كوب قبل كل وجبة)، والبدء بهدف صغير. ينقل Suu هذه المحفّزات إلى هاتفك عبر التذكيرات الذكية وسلسلة الأيام؛ وتتبّع الماء مجاني.",
+      "health_note": {
+        "head": "هذا المقال ليس نصيحة طبية.",
+        "body": [
+          "إذا كنت مصابًا بمرض في القلب أو الكلى، أو نصحك طبيبك بتقييد السوائل، فالتزم بهذا الحد؛ الأهداف هنا للبالغين الأصحاء. شرب كمية كبيرة جدًا من الماء في وقت قصير قد يخفّض الصوديوم في الدم بشكل خطير، فوزّع الماء على اليوم.",
+          "راجع الطبيب إذا لاحظت:"
+        ],
+        "red_flags": [
+          "عطشًا شديدًا مستمرًا مع كثرة التبوّل (يجب فحص سكر الدم)",
+          "بولًا داكنًا أو دوخة أو تشوّشًا رغم شرب الكثير"
+        ]
+      },
+      "disclosure": "كتبنا هذا الدليل بصفتنا الفريق المكوّن من شخصين الذي يطوّر Suu. نحن نرشّح تطبيقنا، لكن الطرق مبنية على أبحاث العادات وعلى أداة وزارة الصحة السعودية لحساب احتياج الماء، ويمكنك تطبيق الخطوات نفسها دون Suu.",
+      "intro": [
+        "قهوة الصباح، وشاي العصر، والعشاء… وفي آخر اليوم تكتشف أنك شربت كوبين من الماء فقط. هذه الصورة المألوفة ليست بسبب كره الماء، بل لأن لا شيء في يومك يذكّرك به. فالعطش يأتي متأخرًا غالبًا، ويسهل تجاهله في العمل أو الطريق أو في حرّ الصيف.",
+        "أبحاث العادات واضحة هنا: السلوك يثبت عندما يرتبط بمحفّز. الطرق السبع التالية مبنية على إدخال الماء في يومك عبر المحفّزات."
+      ],
+      "analysis": [
+        {
+          "head": "7 طرق مبنية على الأدلة",
+          "body": [
+            "لا تجرّبها كلها دفعة واحدة: اختر اثنتين، طبّقهما أسبوعين، ثم أضف ثالثة."
+          ],
+          "list": [
+            "<strong>أضفه إلى روتين الصباح:</strong> كوب ماء عند الاستيقاظ قبل النظر إلى الهاتف. أسهل كوب في اليوم لجسم قضى الليل بلا سوائل.",
+            "<strong>اجعله ظاهرًا:</strong> ضع القارورة في مكان ظاهر على المكتب أو في السيارة أو الحقيبة. ما تراه تشربه.",
+            "<strong>اربطه بعادة قائمة:</strong> ضع خطة «إذا–فإن» مثل «كوب ماء قبل كل وجبة». في إحدى الدراسات أفاد من وضعوا خطة كهذه بأنهم شربوا ماءً أكثر خلال متابعة لخمسة أيام.<sup><a href=\"#ref1\">1</a></sup>",
+            "<strong>ابدأ صغيرًا:</strong> إذا كنت تشرب كوبين اليوم فاجعل هدفك أربعة لا ثمانية. الهدف القابل للتحقيق يصعب التخلي عنه.",
+            "<strong>احمِ سلسلتك:</strong> رؤية الأيام المتتالية دافع قوي لعدم قطع السلسلة.",
+            "<strong>افعلها مع غيرك:</strong> التذكير المتبادل أو منافسة صغيرة مع صديق يدوم أكثر من الجهد الفردي.",
+            "<strong>غيّر الطعم:</strong> النعناع أو الليمون أو الخيار أو قطع فاكهة مجمّدة. والماء الفوّار يُحتسب كاملًا أيضًا."
+          ]
+        },
+        {
+          "head": "كم يجب أن أشرب من الماء يوميًا؟",
+          "body": [
+            "لا يوجد رقم واحد يناسب الجميع؛ فالاحتياج يتغيّر بحسب العمر والوزن والطقس والنشاط. وتوفّر وزارة الصحة السعودية أداة لحساب احتياج البالغين للماء بحسب العمر والوزن.<sup><a href=\"#ref3\">3</a></sup> وفي الحرّ الشديد والتمارين والحمل والرضاعة تزداد الحاجة، وفي رمضان وزّع الماء بين الإفطار والسحور بدل شربه دفعة واحدة.",
+            "ليست كل المشروبات ماءً كاملًا، لكن لا يُحتسب أيّ منها صفرًا؛ وللشاي والقهوة مقال خاص. أبسط مؤشر هو لون البول: القشّي الفاتح جيد، والداكن علامة نقص."
+          ],
+          "callout": "انتظار العطش ليس استراتيجية جيدة: في تجربة على نساء، أدى فقدان سوائل يعادل 1.36% فقط من وزن الجسم إلى تراجع المزاج وزيادة الشعور بالتعب وضعف التركيز.<sup><a href=\"#ref4\">4</a></sup>"
+        },
+        {
+          "head": "كم تحتاج العادة لتثبت؟",
+          "body": [
+            "في إحدى الدراسات احتاج السلوك الجديد في المتوسط إلى 66 يومًا ليصبح تلقائيًا، وتراوح ذلك بين 18 و254 يومًا.<sup><a href=\"#ref2\">2</a></sup> الاعتماد على التذكيرات في الأسابيع الأولى أمر طبيعي؛ والهدف أن تحتاجها أقل مع الوقت. وتفويت يوم لا يُفسد العادة — المهم أن تكمل في اليوم التالي."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "أين تتابع ذلك في Suu",
+        "lead": "تتبّع الماء متاح في الخطة المجانية. أسماء القوائم كما تظهر في التطبيق:",
+        "steps": [
+          {
+            "feature": "الإشعارات الذكية",
+            "where_ios": "الإعدادات ← إعدادات الإشعارات ← <strong>الإشعارات الذكية</strong>",
+            "where_android": "الإعدادات ← <strong>إشعارات ذكية</strong>",
+            "solves": "تذكّرك بأول رشفة صباحًا وبالماء بعد الوجبات — طريقتا «روتين الصباح» و«الربط بعادة» على هاتفك."
+          },
+          {
+            "feature": "أضف الماء بلمسة",
+            "where": "أزرار إضافة الماء في الشاشة الرئيسية",
+            "solves": "سجّل الكوب لحظة شربه. وعلى iPhone يمكنك الإضافة من أداة الشاشة الرئيسية واختصار Siri، ومباشرة من Apple Watch."
+          },
+          {
+            "feature": "السلسلة وتجميد السلسلة",
+            "where": "مؤشر <strong>سلسلة</strong> في الشاشة الرئيسية",
+            "solves": "كل يوم تبلغ فيه نصف هدف الماء على الأقل تطول سلسلتك، وإذا فاتك يوم يحميها <strong>تجميد السلسلة</strong>."
+          },
+          {
+            "feature": "ترتيب الماء مع الأصدقاء والنكز",
+            "where": "الإعدادات ← <strong>المتصدرون · لوحة النقاط</strong> ← الأصدقاء ← <strong>الماء</strong> · صديقك ← <strong>نكز</strong>",
+            "solves": "ترون كم يومًا بلغ كلٌّ منكم هدف الماء هذا الأسبوع، وترسل لصديق نسي تذكيرًا بلمسة واحدة."
+          },
+          {
+            "feature": "مؤشر Suu",
+            "where_ios": "تبويب <strong>أنت</strong> ← الماء ← <strong>مؤشر Suu</strong>",
+            "where_android": "<strong>الإحصائيات</strong> ← <strong>مؤشر Suu</strong>",
+            "solves": "يقيّم ترطيبك اليومي من 0 إلى 100، ويتغيّر هدفك تلقائيًا بحسب الطقس والتمارين."
+          }
+        ],
+        "button": "حمّل Suu مجانًا"
+      },
+      "verdict": {
+        "head": "باختصار",
+        "body": [
+          "حل نسيان شرب الماء ليس مزيدًا من الإرادة بل محفّزات أفضل: كوب الصباح، والقارورة الظاهرة، والكوب قبل الوجبة، وهدف قابل للتحقيق.",
+          "اعتمد على التذكيرات والسلسلة في الشهرين الأولين؛ ومع ثبات العادة ستجد أنك تحتاجها أقل."
+        ]
+      },
+      "cta": {
+        "head": "دع هاتفك يتذكّر الماء عنك",
+        "sub": "تذكيرات ذكية وسلسلة أيام وترتيب مع الأصدقاء · تتبّع الماء مجاني",
+        "button": "حمّل Suu مجانًا"
+      },
+      "faq": [
+        {
+          "q": "أنسى شرب الماء دائمًا، ماذا أفعل؟",
+          "a": "اربط الماء بعاداتك القائمة: كوب عند الاستيقاظ وكوب قبل كل وجبة. أبقِ القارورة ظاهرة، وابدأ بهدف صغير، واستخدم التذكيرات في الأسابيع الأولى."
+        },
+        {
+          "q": "كم كوب ماء يجب أن أشرب يوميًا؟",
+          "a": "يختلف الاحتياج بحسب العمر والوزن والطقس والنشاط؛ وتوفر وزارة الصحة السعودية أداة لحسابه بحسب العمر والوزن. وتزداد الحاجة في الحرّ ومع التمارين."
+        },
+        {
+          "q": "كم يومًا تحتاج عادة شرب الماء لتتكوّن؟",
+          "a": "في إحدى الدراسات احتاج السلوك الجديد في المتوسط إلى 66 يومًا ليصبح تلقائيًا، وتراوح بين 18 و254 يومًا بين الأشخاص. والأيام الفائتة لا تكسر العادة."
+        },
+        {
+          "q": "لا أحب طعم الماء، ماذا أفعل؟",
+          "a": "أضف النعناع أو الليمون أو الخيار أو فاكهة مجمّدة؛ والماء الفوّار يُحتسب كاملًا. أما استبدال الماء بالمشروبات المحلّاة فيضيف سكرًا وسعرات."
+        },
+        {
+          "q": "هل يكفي انتظار العطش؟",
+          "a": "لمعظم الناس لا: قد يأتي العطش متأخرًا ويُتجاهل في الأيام المزدحمة. في التجارب أثّر فقدان سوائل يعادل نحو 1.4% من وزن الجسم على المزاج والتركيز."
+        },
+        {
+          "q": "هل يوجد تطبيق مجاني يذكّر بشرب الماء؟",
+          "a": "في Suu، تتبّع الماء والتذكيرات الذكية وسلسلة الأيام والترتيب الأسبوعي مع الأصدقاء ضمن الخطة المجانية. قائمة المشروبات الكاملة والذكاء الاصطناعي غير المحدود ضمن Premium."
+        }
+      ],
+      "references": [
+        {
+          "label": "Rodger A وآخرون — Can a simple plan change a complex behavior? Implementation intentions in the context of water drinking. Appetite, 2023",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/36646386/"
+        },
+        {
+          "label": "Lally P وآخرون — How are habits formed: modelling habit formation in the real world. European Journal of Social Psychology, 2010",
+          "href": "https://doi.org/10.1002/ejsp.674"
+        },
+        {
+          "label": "وزارة الصحة السعودية — أدوات الصحة: حساب احتياج البالغين للماء",
+          "href": "https://www.moh.gov.sa/HealthAwareness/MedicalTools/Pages/hydration-calculator.aspx"
+        },
+        {
+          "label": "Armstrong LE وآخرون — Mild dehydration affects mood in healthy young women. J Nutr, 2012",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/22190027/"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/ar/kam-litr-mae-yawmiyan.html",
+          "title": "كم لترًا من الماء يوميًا؟",
+          "desc": "كيف يُحسب هدفك الشخصي."
+        },
+        {
+          "href": "/blog/ar/alqahwa-walshay-walmae.html",
+          "title": "هل تُحتسب القهوة من شرب الماء؟",
+          "desc": "كيف يُحتسب الشاي والقهوة والمشروبات."
+        },
+        {
+          "href": "/blog/ar/alamat-aljafaf.html",
+          "title": "علامات الجفاف",
+          "desc": "إشارات تدل على حاجة جسمك إلى الماء."
+        },
+        {
+          "href": "/blog/ar/nadhari-almae-maa-asdiqa.html",
+          "title": "تحدّي الماء مع الأصدقاء",
+          "desc": "لماذا يكون الشرب معًا أسهل."
+        }
+      ]
+    },
+    "ru": {
+      "slug": "privychka-pit-vodu",
+      "published": "2026-03-15",
+      "read_minutes": 7,
+      "badge": "💧 Руководство · Привычка пить воду",
+      "h1": "Забываю пить воду: 7 научных способов сделать это привычкой (и отслеживать в Suu)",
+      "about": [
+        {
+          "name": "Привычка пить воду"
+        },
+        {
+          "name": "Гидратация"
+        },
+        {
+          "name": "Формирование привычек"
+        }
+      ],
+      "meta": {
+        "title": "Забываете пить воду? 7 способов, которые работают | Suu",
+        "description": "Забывать пить воду — это не про силу воли, а про отсутствие триггеров. Стакан утром, бутылка на виду, стакан перед едой и маленькие цели: 7 рабочих способов.",
+        "keywords": "забываю пить воду, как привыкнуть пить воду, как пить больше воды, приложение напоминание пить воду, сколько воды пить в день, не люблю пить воду, напоминание о воде",
+        "og_title": "Забываю пить воду: 7 научных способов",
+        "og_description": "Жажда приходит поздно, а привычка строится на триггерах. 7 способов вписать воду в день и сколько времени нужно, чтобы она закрепилась."
+      },
+      "answer": "Забывать пить воду — чаще всего не про силу воли, а про отсутствие триггеров. Лучше всего работают: стакан воды сразу после пробуждения, бутылка на виду, привязка питья к существующей привычке (стакан перед каждым приёмом пищи) и маленькая стартовая цель. Suu переносит эти триггеры в телефон с помощью умных напоминаний и серии дней; учёт воды бесплатный.",
+      "health_note": {
+        "head": "Эта статья не является медицинской консультацией.",
+        "body": [
+          "Если у вас болезни сердца или почек либо врач рекомендовал ограничить жидкость, соблюдайте это ограничение; цели в статье рассчитаны на здоровых взрослых. Очень большой объём воды за короткое время может опасно снизить натрий в крови — распределяйте воду в течение дня.",
+          "Обратитесь к врачу, если заметили:"
+        ],
+        "red_flags": [
+          "постоянную сильную жажду и частое мочеиспускание (нужно проверить сахар крови)",
+          "тёмную мочу, головокружение или спутанность сознания, несмотря на обильное питьё"
+        ]
+      },
+      "disclosure": "Это руководство написала команда из двух человек, которая разрабатывает Suu. Мы рекомендуем своё приложение, но способы опираются на исследования привычек и рекомендации ВОЗ — те же шаги можно выполнять и без Suu.",
+      "intro": [
+        "Утренний кофе, чай днём, ужин… и к концу дня вы понимаете, что выпили всего два стакана воды. Дело не в том, что вы не любите воду, а в том, что в течение дня о ней ничто не напоминает. Жажда часто приходит поздно и легко заглушается работой, дорогой или долгой поездкой.",
+        "Исследования привычек здесь однозначны: поведение закрепляется, когда привязано к триггеру. Семь способов ниже построены на том, чтобы вписать воду в день через триггеры."
+      ],
+      "analysis": [
+        {
+          "head": "7 способов с доказательной базой",
+          "body": [
+            "Не пробуйте все сразу: выберите два, применяйте две недели, затем добавьте третий."
+          ],
+          "list": [
+            "<strong>Добавьте в утренний ритуал:</strong> стакан воды сразу после пробуждения, до телефона. Самый простой стакан дня для организма, который всю ночь был без жидкости.",
+            "<strong>Держите на виду:</strong> бутылка на столе, в машине или в сумке. Что на виду, то и выпивается.",
+            "<strong>Привяжите к существующей привычке:</strong> составьте план «если — то», например «стакан воды перед каждым приёмом пищи». В одном исследовании люди с таким планом сообщали, что пили больше воды за пять дней наблюдения.<sup><a href=\"#ref1\">1</a></sup>",
+            "<strong>Начните с малого:</strong> если сейчас вы пьёте два стакана, цель — четыре, а не восемь. Достижимую цель сложнее бросить.",
+            "<strong>Берегите серию:</strong> видеть дни подряд — сильный повод не рвать цепочку.",
+            "<strong>Вместе:</strong> взаимные напоминания или небольшое соревнование с другом работают дольше, чем усилия в одиночку.",
+            "<strong>Поменяйте вкус:</strong> мята, лимон, огурец или замороженные ягоды. Газированная минеральная вода тоже засчитывается полностью."
+          ]
+        },
+        {
+          "head": "Сколько воды пить в день?",
+          "body": [
+            "Единой цифры для всех нет: потребность зависит от веса, погоды, активности и питания. ВОЗ, в свою очередь, советует ограничивать сладкие напитки — поэтому лучшая жидкость «по умолчанию» — вода.<sup><a href=\"#ref3\">3</a></sup> В жару, при тренировках, беременности и грудном вскармливании нужно больше.",
+            "Не каждый напиток засчитывается как вода полностью, но и нулём ни один не считается; про чай и кофе — отдельная статья. Самый практичный ориентир — цвет мочи: светло-соломенный хорошо, тёмный — признак нехватки."
+          ],
+          "callout": "Ждать жажды — не лучшая стратегия: в эксперименте с женщинами потеря жидкости всего в 1,36% массы тела ухудшала настроение, усиливала ощущение усталости и снижала концентрацию.<sup><a href=\"#ref4\">4</a></sup>"
+        },
+        {
+          "head": "Сколько времени нужно, чтобы появилась привычка?",
+          "body": [
+            "В одном исследовании новому поведению в среднем требовалось 66 дней, чтобы стать автоматическим, — от 18 до 254 дней у разных людей.<sup><a href=\"#ref2\">2</a></sup> Опираться на напоминания в первые недели нормально; цель — со временем нуждаться в них меньше. Один пропущенный день привычку не ломает — важно продолжить на следующий."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Где отслеживать это в Suu",
+        "lead": "Учёт воды — в бесплатном плане. Названия пунктов — как в интерфейсе:",
+        "steps": [
+          {
+            "feature": "Умные уведомления",
+            "where_ios": "Настройки → Настройки уведомлений → <strong>Умные уведомления</strong>",
+            "where_android": "Настройки → <strong>Умные уведомления</strong>",
+            "solves": "Напоминают о первом глотке утром и о воде после еды — способы «утренний ритуал» и «привязка к привычке» прямо в телефоне."
+          },
+          {
+            "feature": "Вода в одно касание",
+            "where": "Кнопки добавления воды на главном экране",
+            "solves": "Записывайте стакан в момент, когда выпили. На iPhone воду можно добавить и с виджета, и через Siri, и прямо с Apple Watch."
+          },
+          {
+            "feature": "Серия и заморозка серии",
+            "where": "Индикатор <strong>Серия</strong> на главном экране",
+            "solves": "Каждый день, когда вы выпиваете хотя бы половину нормы, серия растёт; если день пропущен, её защитит <strong>Заморозка серии</strong>."
+          },
+          {
+            "feature": "Рейтинг воды и «Подтолкнуть» с друзьями",
+            "where": "Настройки → <strong>Рейтинг · Таблица очков</strong> → Друзья → <strong>Вода</strong> · друг → <strong>Подтолкнуть</strong>",
+            "solves": "Видно, сколько дней за неделю каждый выполнил норму воды; другу, который забыл, можно отправить напоминание одним касанием."
+          },
+          {
+            "feature": "Индекс Suu",
+            "where_ios": "Вкладка <strong>Ты</strong> → Вода → <strong>Suu Индекс</strong>",
+            "where_android": "<strong>Статистика</strong> → <strong>Suu Индекс</strong>",
+            "solves": "Оценивает дневную гидратацию от 0 до 100; норма сама подстраивается под погоду и тренировки."
+          }
+        ],
+        "button": "Скачать Suu бесплатно"
+      },
+      "verdict": {
+        "head": "Коротко",
+        "body": [
+          "Решение для тех, кто забывает пить воду, — не больше силы воли, а лучшие триггеры: утренний стакан, бутылка на виду, стакан перед едой и достижимая цель.",
+          "Первые два месяца опирайтесь на напоминания и серию; по мере того как привычка закрепляется, они будут нужны всё меньше."
+        ]
+      },
+      "cta": {
+        "head": "Пусть телефон помнит о воде",
+        "sub": "Умные напоминания, серия и рейтинг с друзьями · учёт воды бесплатный",
+        "button": "Скачать Suu бесплатно"
+      },
+      "faq": [
+        {
+          "q": "Постоянно забываю пить воду — что делать?",
+          "a": "Привяжите воду к уже существующим привычкам: стакан после пробуждения и стакан перед каждым приёмом пищи. Держите бутылку на виду, начните с маленькой цели и в первые недели пользуйтесь напоминаниями."
+        },
+        {
+          "q": "Сколько воды нужно пить в день?",
+          "a": "Единой нормы нет: потребность зависит от веса, погоды, активности и питания. В жару и при тренировках нужно больше; практичный ориентир — светлая моча."
+        },
+        {
+          "q": "За сколько дней формируется привычка пить воду?",
+          "a": "В одном исследовании новому поведению в среднем требовалось 66 дней, чтобы стать автоматическим, — от 18 до 254 дней у разных людей. Пропущенные дни привычку не ломают."
+        },
+        {
+          "q": "Не люблю пить воду — что можно сделать?",
+          "a": "Добавьте мяту, лимон, огурец или замороженные ягоды; газированная минеральная вода засчитывается полностью. А замена воды сладкими напитками добавляет сахар и калории."
+        },
+        {
+          "q": "Достаточно ли ждать жажды?",
+          "a": "Большинству — нет: жажда может приходить поздно и заглушается в загруженные дни. В экспериментах потеря жидкости около 1,4% массы тела уже влияла на настроение и концентрацию."
+        },
+        {
+          "q": "Есть ли бесплатное приложение-напоминание о воде?",
+          "a": "В Suu учёт воды, умные напоминания, серия и еженедельный рейтинг с друзьями — в бесплатном плане. Полный список напитков и безлимитный AI — в Premium."
+        }
+      ],
+      "references": [
+        {
+          "label": "Rodger A и соавт. — Can a simple plan change a complex behavior? Implementation intentions in the context of water drinking. Appetite, 2023",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/36646386/"
+        },
+        {
+          "label": "Lally P и соавт. — How are habits formed: modelling habit formation in the real world. European Journal of Social Psychology, 2010",
+          "href": "https://doi.org/10.1002/ejsp.674"
+        },
+        {
+          "label": "ВОЗ — Здоровое питание (информационный бюллетень)",
+          "href": "https://www.who.int/ru/news-room/fact-sheets/detail/healthy-diet"
+        },
+        {
+          "label": "Armstrong LE и соавт. — Mild dehydration affects mood in healthy young women. J Nutr, 2012",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/22190027/"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/ru/skolko-vody-pit-v-den.html",
+          "title": "Сколько воды пить в день?",
+          "desc": "Как считается личная норма."
+        },
+        {
+          "href": "/blog/ru/kofe-chay-i-voda.html",
+          "title": "Считается ли кофе в норму воды?",
+          "desc": "Как засчитываются чай, кофе и напитки."
+        },
+        {
+          "href": "/blog/ru/priznaki-obezvozhivaniya.html",
+          "title": "Признаки обезвоживания",
+          "desc": "Сигналы, что телу нужна вода."
+        },
+        {
+          "href": "/blog/ru/vodnyi-challenge-s-druzyami.html",
+          "title": "Водный челлендж с друзьями",
+          "desc": "Почему вместе пить проще."
+        }
+      ]
+    },
+    "de": {
+      "slug": "wasser-trinken-vergessen",
+      "read_minutes": 7,
+      "badge": "💧 Ratgeber · Trinkgewohnheit",
+      "h1": "Ich vergesse, Wasser zu trinken: 7 wissenschaftlich gestützte Wege zur Gewohnheit (und wie du es in Suu verfolgst)",
+      "about": [
+        {
+          "name": "Trinkgewohnheit"
+        },
+        {
+          "name": "Flüssigkeitszufuhr"
+        },
+        {
+          "name": "Gewohnheiten aufbauen"
+        }
+      ],
+      "meta": {
+        "title": "Wasser trinken vergessen? 7 Tricks, die helfen | Suu",
+        "description": "Wer das Trinken vergisst, hat kein Willensproblem, sondern keine Auslöser. Glas am Morgen, sichtbare Flasche, Glas vor dem Essen: 7 Wege zur Trinkgewohnheit.",
+        "keywords": "wasser trinken vergessen, mehr wasser trinken tipps, trinken zur gewohnheit machen, trink-erinnerung app, wie viel wasser am tag, ich mag kein wasser, trinkwecker",
+        "og_title": "Ich vergesse, Wasser zu trinken: 7 Wege zur Gewohnheit",
+        "og_description": "Durst kommt spät, Gewohnheiten entstehen durch Auslöser. 7 Wege, Wasser in deinen Tag einzubauen – und wie lange es dauert."
+      },
+      "answer": "Wer vergisst, Wasser zu trinken, hat meist kein Willensproblem, sondern zu wenige Auslöser. Am besten helfen: ein Glas Wasser direkt nach dem Aufstehen, eine Flasche in Sichtweite, das Trinken an eine bestehende Gewohnheit koppeln (ein Glas vor jeder Mahlzeit) und mit einem kleinen Ziel starten. Suu bringt diese Auslöser mit smarten Erinnerungen und einer Tagesserie aufs Handy; das Wasser-Tracking ist kostenlos.",
+      "health_note": {
+        "head": "Dieser Artikel ist keine medizinische Beratung.",
+        "body": [
+          "Wenn du eine Herz- oder Nierenerkrankung hast oder deine Ärztin bzw. dein Arzt eine Trinkmengenbegrenzung empfohlen hat, halte dich daran; die Ziele hier gelten für gesunde Erwachsene. Sehr viel Wasser in kurzer Zeit kann das Natrium im Blut gefährlich senken – verteile das Trinken über den Tag.",
+          "Geh zum Arzt, wenn du Folgendes bemerkst:"
+        ],
+        "red_flags": [
+          "ständiger starker Durst und häufiges Wasserlassen (der Blutzucker sollte geprüft werden)",
+          "dunkler Urin, Schwindel oder Verwirrtheit trotz reichlichem Trinken"
+        ]
+      },
+      "disclosure": "Diesen Ratgeber haben wir als das zweiköpfige Team geschrieben, das Suu entwickelt. Wir empfehlen unsere App, aber die Methoden stützen sich auf Gewohnheitsforschung und die Deutsche Gesellschaft für Ernährung – dieselben Schritte funktionieren auch ohne Suu.",
+      "intro": [
+        "Morgens Kaffee, nachmittags Tee, abends Essen… und am Ende des Tages merkst du, dass es insgesamt zwei Gläser Wasser waren. Das liegt nicht daran, dass du Wasser nicht magst, sondern daran, dass dich im Alltag nichts daran erinnert. Durst meldet sich oft spät und geht bei Arbeit, Pendeln oder einer langen Tour leicht unter.",
+        "Die Gewohnheitsforschung ist hier eindeutig: Ein Verhalten bleibt, wenn es an einen Auslöser gekoppelt ist. Die sieben Methoden unten bauen Wasser über Auslöser in deinen Tag ein."
+      ],
+      "analysis": [
+        {
+          "head": "7 evidenzbasierte Methoden",
+          "body": [
+            "Probier nicht alle auf einmal: Wähl zwei, halte sie zwei Wochen durch, dann nimm eine dritte dazu."
+          ],
+          "list": [
+            "<strong>In die Morgenroutine einbauen:</strong> Ein Glas Wasser nach dem Aufstehen, noch vor dem Handy. Das einfachste Glas des Tages für einen Körper, der die ganze Nacht nichts getrunken hat.",
+            "<strong>Sichtbar machen:</strong> Die Flasche sichtbar auf den Schreibtisch, ins Auto oder in die Tasche. Was man sieht, wird getrunken.",
+            "<strong>An eine bestehende Gewohnheit koppeln:</strong> Mach einen Wenn-dann-Plan wie „vor jeder Mahlzeit ein Glas Wasser“. In einer Studie gaben Menschen mit so einem Plan an, über fünf Tage mehr Wasser getrunken zu haben.<sup><a href=\"#ref1\">1</a></sup>",
+            "<strong>Klein anfangen:</strong> Trinkst du heute zwei Gläser, peil vier an, nicht acht. Ein erreichbares Ziel gibt man schwerer auf.",
+            "<strong>Die Serie schützen:</strong> Aufeinanderfolgende Tage zu sehen, ist ein starker Grund, die Kette nicht reißen zu lassen.",
+            "<strong>Gemeinsam:</strong> Gegenseitige Erinnerungen oder ein kleiner Wettbewerb mit Freunden halten länger als Einzelkämpfe.",
+            "<strong>Geschmack ändern:</strong> Minze, Zitrone, Gurke oder gefrorene Beeren. Sprudelwasser zählt voll."
+          ]
+        },
+        {
+          "head": "Wie viel Wasser am Tag?",
+          "body": [
+            "Laut Deutscher Gesellschaft für Ernährung brauchen Erwachsene zwischen 19 und 51 Jahren insgesamt rund 2,6 Liter Wasser am Tag; etwa ein Drittel kommt über feste Nahrung, mehr als die Hälfte über Getränke. Kaffee und schwarzer Tee sollten dabei in moderaten Mengen von 3–4 Tassen bleiben.<sup><a href=\"#ref3\">3</a></sup> Bei Hitze, Sport, in der Schwangerschaft und Stillzeit ist der Bedarf höher.",
+            "Nicht jedes Getränk zählt voll als Wasser, aber keines zählt null; zu Kaffee und Tee gibt es einen eigenen Ratgeber. Das praktischste Signal ist die Urinfarbe: hell strohgelb ist gut, dunkel bedeutet Nachholbedarf."
+          ],
+          "callout": "Auf Durst zu warten, ist keine gute Strategie: In einem Experiment mit Frauen verschlechterte schon ein Flüssigkeitsverlust von 1,36 % des Körpergewichts Stimmung, Müdigkeitsgefühl und Konzentration.<sup><a href=\"#ref4\">4</a></sup>"
+        },
+        {
+          "head": "Wie lange dauert es, bis es zur Gewohnheit wird?",
+          "body": [
+            "In einer Studie brauchte ein neues Verhalten im Median 66 Tage, bis es automatisch lief – je nach Person 18 bis 254 Tage.<sup><a href=\"#ref2\">2</a></sup> Sich in den ersten Wochen auf Erinnerungen zu stützen, ist normal; Ziel ist, sie mit der Zeit weniger zu brauchen. Ein ausgelassener Tag macht die Gewohnheit auch nicht kaputt – wichtig ist, am nächsten Tag weiterzumachen."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Wo du das in Suu verfolgst",
+        "lead": "Das Wasser-Tracking ist im kostenlosen Plan. Die Menünamen sind genau so wie in der App:",
+        "steps": [
+          {
+            "feature": "Smarte Benachrichtigungen",
+            "where_ios": "Einstellungen → Benachrichtigungseinstellungen → <strong>Intelligente Benachrichtigungen</strong>",
+            "where_android": "Einstellungen → <strong>Smarte Benachrichtigungen</strong>",
+            "solves": "Erinnern an den ersten Schluck am Morgen und an Wasser nach dem Essen – die Methoden „Morgenroutine“ und „an Gewohnheit koppeln“ auf dem Handy."
+          },
+          {
+            "feature": "Wasser mit einem Tipp eintragen",
+            "where": "Die Wasser-Buttons auf dem Startbildschirm",
+            "solves": "Trag das Glas ein, sobald du es getrunken hast. Auf dem iPhone geht es auch per Widget und Siri-Kurzbefehl, und direkt auf der Apple Watch."
+          },
+          {
+            "feature": "Serie und Serien-Freeze",
+            "where": "Die Anzeige <strong>Serie</strong> auf dem Startbildschirm",
+            "solves": "An jedem Tag, an dem du mindestens die Hälfte deines Trinkziels erreichst, wächst deine Serie; verpasst du einen Tag, schützt sie ein <strong>Serien-Freeze</strong>."
+          },
+          {
+            "feature": "Wasser-Rangliste und Anstupsen mit Freunden",
+            "where": "Einstellungen → <strong>Rangliste · Bestenliste</strong> → Freunde → <strong>Wasser</strong> · dein Freund → <strong>Anstupsen</strong> → Trink Wasser",
+            "solves": "Ihr seht, an wie vielen Tagen der Woche jeder sein Trinkziel erreicht hat; wer es vergessen hat, bekommt mit einem Tipp ein „Trink Wasser“."
+          },
+          {
+            "feature": "Suu-Index",
+            "where_ios": "Tab <strong>Du</strong> → Wasser → <strong>Suu-Index</strong>",
+            "where_android": "<strong>Statistiken</strong> → <strong>Suu-Index</strong>",
+            "solves": "Bewertet deine tägliche Flüssigkeitszufuhr von 0 bis 100; dein Ziel passt sich automatisch an Wetter und Training an."
+          }
+        ],
+        "button": "Suu kostenlos laden"
+      },
+      "verdict": {
+        "head": "Kurz gesagt",
+        "body": [
+          "Gegen das Vergessen hilft nicht mehr Willenskraft, sondern bessere Auslöser: das Glas am Morgen, die sichtbare Flasche, das Glas vor dem Essen und ein erreichbares Ziel.",
+          "Stütz dich in den ersten zwei Monaten auf Erinnerungen und deine Serie; wenn die Gewohnheit sitzt, brauchst du sie immer weniger."
+        ]
+      },
+      "cta": {
+        "head": "Lass dein Handy ans Wasser denken",
+        "sub": "Smarte Erinnerungen, Serien und Freundes-Rangliste · Wasser-Tracking kostenlos",
+        "button": "Suu kostenlos laden"
+      },
+      "faq": [
+        {
+          "q": "Ich vergesse ständig, Wasser zu trinken – was hilft?",
+          "a": "Kopple Wasser an bestehende Gewohnheiten: ein Glas nach dem Aufstehen und eines vor jeder Mahlzeit. Halte eine Flasche sichtbar, starte mit einem kleinen Ziel und nutze in den ersten Wochen Erinnerungen."
+        },
+        {
+          "q": "Wie viel Wasser sollte ich am Tag trinken?",
+          "a": "Laut DGE brauchen Erwachsene insgesamt rund 2,6 Liter Wasser täglich, mehr als die Hälfte davon über Getränke. Bei Hitze und Sport ist der Bedarf höher."
+        },
+        {
+          "q": "Wie lange dauert es, bis Trinken zur Gewohnheit wird?",
+          "a": "In einer Studie brauchte ein neues Verhalten im Median 66 Tage, bis es automatisch lief, je nach Person 18 bis 254 Tage. Ausgelassene Tage zerstören die Gewohnheit nicht."
+        },
+        {
+          "q": "Ich mag kein Wasser – was kann ich tun?",
+          "a": "Aromatisiere es mit Minze, Zitrone, Gurke oder gefrorenen Beeren; Sprudelwasser zählt voll. Süße Getränke statt Wasser bringen dagegen zusätzlichen Zucker und Kalorien."
+        },
+        {
+          "q": "Reicht es, auf Durst zu warten?",
+          "a": "Für die meisten nicht: Durst kommt oft spät und geht an vollen Tagen unter. In Experimenten beeinflusste schon ein Flüssigkeitsverlust von etwa 1,4 % des Körpergewichts Stimmung und Konzentration."
+        },
+        {
+          "q": "Gibt es eine kostenlose Trink-Erinnerungs-App?",
+          "a": "In Suu sind Wasser-Tracking, smarte Erinnerungen, Serien und die wöchentliche Freundes-Rangliste im kostenlosen Plan. Die komplette Getränkeliste und unbegrenzte KI sind Premium."
+        }
+      ],
+      "references": [
+        {
+          "label": "Rodger A et al. — Can a simple plan change a complex behavior? Implementation intentions in the context of water drinking. Appetite, 2023",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/36646386/"
+        },
+        {
+          "label": "Lally P et al. — How are habits formed: modelling habit formation in the real world. European Journal of Social Psychology, 2010",
+          "href": "https://doi.org/10.1002/ejsp.674"
+        },
+        {
+          "label": "Deutsche Gesellschaft für Ernährung — Referenzwerte: Wasser",
+          "href": "https://www.dge.de/wissenschaft/referenzwerte/wasser/"
+        },
+        {
+          "label": "Armstrong LE et al. — Mild dehydration affects mood in healthy young women. J Nutr, 2012",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/22190027/"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/de/beste-wasser-tracking-app.html",
+          "title": "Die beste Wasser-Tracking-App 2026",
+          "desc": "Fünf Trink-Apps im Vergleich."
+        },
+        {
+          "href": "/blog/de/zaehlt-kaffee-zur-trinkmenge.html",
+          "title": "Zählt Kaffee zur Trinkmenge?",
+          "desc": "Wie Tee, Kaffee und andere Getränke zählen."
+        },
+        {
+          "href": "/blog/de/warum-bin-ich-immer-muede.html",
+          "title": "Warum bin ich immer müde?",
+          "desc": "Die 8 häufigsten Ursachen."
+        },
+        {
+          "href": "/blog/de/wasser-kalorien-sport-eine-app.html",
+          "title": "Wasser, Kalorien und Sport in einer App",
+          "desc": "Was die Verbindung der drei bringt."
+        }
+      ]
+    },
+    "it": {
+      "slug": "dimentico-di-bere-acqua",
+      "read_minutes": 7,
+      "badge": "💧 Guida · Abitudine a bere",
+      "h1": "Mi dimentico di bere acqua: 7 modi scientifici per farne un'abitudine (e seguirla in Suu)",
+      "about": [
+        {
+          "name": "Abitudine a bere acqua"
+        },
+        {
+          "name": "Idratazione"
+        },
+        {
+          "name": "Formazione delle abitudini"
+        }
+      ],
+      "meta": {
+        "title": "Ti dimentichi di bere acqua? 7 trucchi che funzionano | Suu",
+        "description": "Dimenticarsi di bere non è questione di volontà ma di segnali. Bicchiere al mattino, bottiglia in vista, bicchiere prima dei pasti e piccoli obiettivi: 7 modi.",
+        "keywords": "mi dimentico di bere acqua, come bere più acqua, abitudine a bere acqua, app promemoria bere acqua, quanta acqua bere al giorno, non mi piace bere acqua, promemoria acqua",
+        "og_title": "Mi dimentico di bere acqua: 7 modi scientifici",
+        "og_description": "La sete arriva tardi, le abitudini nascono dai segnali. 7 modi per inserire l'acqua nella giornata e quanto tempo serve perché diventi automatica."
+      },
+      "answer": "Dimenticarsi di bere acqua di solito non è un problema di volontà ma di segnali. Funziona meglio: un bicchiere d'acqua appena sveglio, una bottiglia sempre in vista, legare il bere a un'abitudine esistente (un bicchiere prima di ogni pasto) e partire da un obiettivo piccolo. Suu porta questi segnali sul telefono con promemoria intelligenti e una serie giornaliera; il monitoraggio dell'acqua è gratuito.",
+      "health_note": {
+        "head": "Questo articolo non è un consiglio medico.",
+        "body": [
+          "Se hai malattie cardiache o renali o il medico ti ha indicato una restrizione dei liquidi, rispetta quel limite; gli obiettivi qui sono per adulti sani. Bere moltissima acqua in poco tempo può abbassare pericolosamente il sodio nel sangue: distribuisci l'acqua nella giornata.",
+          "Rivolgiti al medico se noti:"
+        ],
+        "red_flags": [
+          "sete intensa costante e bisogno frequente di urinare (va controllata la glicemia)",
+          "urina scura, capogiri o confusione nonostante tu beva molto"
+        ]
+      },
+      "disclosure": "Abbiamo scritto questa guida come il team di due persone che sviluppa Suu. Consigliamo la nostra app, ma i metodi si basano sulla ricerca sulle abitudini e sui valori di riferimento dell'EFSA: puoi seguire gli stessi passi anche senza Suu.",
+      "intro": [
+        "Caffè al mattino, un tè nel pomeriggio, la cena… e a fine giornata ti accorgi di aver bevuto in tutto due bicchieri d'acqua. Non è che l'acqua non ti piaccia: è che durante la giornata niente te la ricorda. La sete arriva spesso tardi e si ignora facilmente al lavoro, nel traffico o durante un lungo giro in moto.",
+        "La ricerca sulle abitudini è chiara: un comportamento resta quando è legato a un segnale. I sette metodi qui sotto servono a inserire l'acqua nella giornata attraverso i segnali."
+      ],
+      "analysis": [
+        {
+          "head": "7 metodi basati sulle evidenze",
+          "body": [
+            "Non provarli tutti insieme: scegline due, seguili per due settimane, poi aggiungine un terzo."
+          ],
+          "list": [
+            "<strong>Inseriscilo nella routine del mattino:</strong> un bicchiere d'acqua appena sveglio, prima del telefono. Il bicchiere più facile della giornata per un corpo che è rimasto tutta la notte senza liquidi.",
+            "<strong>Tienila in vista:</strong> la bottiglia sulla scrivania, in auto o in borsa. Ciò che si vede si beve.",
+            "<strong>Legalo a un'abitudine esistente:</strong> fai un piano «se–allora» come «un bicchiere d'acqua prima di ogni pasto». In uno studio chi aveva un piano simile ha riferito di aver bevuto più acqua nei cinque giorni successivi.<sup><a href=\"#ref1\">1</a></sup>",
+            "<strong>Parti in piccolo:</strong> se oggi bevi due bicchieri, punta a quattro, non a otto. Un obiettivo raggiungibile si abbandona meno facilmente.",
+            "<strong>Proteggi la serie:</strong> vedere i giorni consecutivi è un forte motivo per non spezzare la catena.",
+            "<strong>Insieme:</strong> promemoria reciproci o una piccola sfida con un amico durano più dello sforzo in solitaria.",
+            "<strong>Cambia gusto:</strong> menta, limone, cetriolo o frutta congelata. Anche l'acqua frizzante conta al 100%."
+          ]
+        },
+        {
+          "head": "Quanta acqua bere al giorno?",
+          "body": [
+            "L'EFSA, l'Autorità europea per la sicurezza alimentare con sede a Parma, indica come assunzione adeguata di acqua totale circa 2,0 litri al giorno per le donne e 2,5 litri per gli uomini, contando anche l'acqua contenuta negli alimenti.<sup><a href=\"#ref3\">3</a></sup> Con il caldo, lo sport, in gravidanza e durante l'allattamento il fabbisogno aumenta.",
+            "Non tutte le bevande contano come acqua al 100%, ma nessuna conta zero; di tè e caffè parliamo in una guida a parte. Il segnale più pratico è il colore dell'urina: giallo paglierino chiaro va bene, scuro significa che sei indietro."
+          ],
+          "callout": "Aspettare la sete non è una buona strategia: in un esperimento con donne, una perdita di liquidi pari ad appena l'1,36% del peso corporeo ha peggiorato umore, senso di stanchezza e concentrazione.<sup><a href=\"#ref4\">4</a></sup>"
+        },
+        {
+          "head": "Quanto tempo ci vuole perché diventi un'abitudine?",
+          "body": [
+            "In uno studio un nuovo comportamento ha impiegato in media 66 giorni per diventare automatico, da 18 a 254 giorni a seconda della persona.<sup><a href=\"#ref2\">2</a></sup> Appoggiarsi ai promemoria nelle prime settimane è normale; l'obiettivo è averne sempre meno bisogno. Saltare un giorno non rovina l'abitudine: conta ricominciare il giorno dopo."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Dove seguirlo in Suu",
+        "lead": "Il monitoraggio dell'acqua è nel piano gratuito. I nomi dei menu sono quelli che vedi nell'app:",
+        "steps": [
+          {
+            "feature": "Notifiche intelligenti",
+            "where_ios": "Impostazioni → Impostazioni notifiche → <strong>Notifiche intelligenti</strong>",
+            "where_android": "Impostazioni → <strong>Notifiche intelligenti</strong>",
+            "solves": "Ti ricordano il primo sorso del mattino e l'acqua dopo i pasti: i metodi «routine del mattino» e «legalo a un'abitudine» sul telefono."
+          },
+          {
+            "feature": "Acqua in un tocco",
+            "where": "I pulsanti dell'acqua nella schermata principale",
+            "solves": "Registra il bicchiere nel momento in cui lo bevi. Su iPhone puoi aggiungerla anche dal widget e con una scorciatoia Siri, e direttamente da Apple Watch."
+          },
+          {
+            "feature": "Serie e Congelamento serie",
+            "where": "L'indicatore <strong>Serie</strong> nella schermata principale",
+            "solves": "Ogni giorno in cui raggiungi almeno metà dell'obiettivo d'acqua la serie cresce; se salti un giorno, la protegge il <strong>Congelamento serie</strong>."
+          },
+          {
+            "feature": "Classifica Acqua e pungolo con gli amici",
+            "where": "Impostazioni → <strong>Classifica · Punteggi</strong> → Amici → <strong>Acqua</strong> · il tuo amico → <strong>Pungola</strong> → Bevi acqua",
+            "solves": "Vedete quanti giorni della settimana ciascuno ha raggiunto l'obiettivo d'acqua; all'amico che se ne dimentica arriva un «bevi acqua» con un tocco."
+          },
+          {
+            "feature": "Indice Suu",
+            "where_ios": "Scheda <strong>Tu</strong> → Acqua → <strong>Indice Suu</strong>",
+            "where_android": "<strong>Statistiche</strong> → <strong>Indice Suu</strong>",
+            "solves": "Valuta la tua idratazione quotidiana da 0 a 100; l'obiettivo si adatta da solo al meteo e all'allenamento."
+          }
+        ],
+        "button": "Scarica Suu gratis"
+      },
+      "verdict": {
+        "head": "In breve",
+        "body": [
+          "Per chi si dimentica di bere non serve più forza di volontà ma segnali migliori: il bicchiere del mattino, la bottiglia in vista, il bicchiere prima dei pasti e un obiettivo raggiungibile.",
+          "Nei primi due mesi appoggiati ai promemoria e alla serie; quando l'abitudine si consolida, ne avrai sempre meno bisogno."
+        ]
+      },
+      "cta": {
+        "head": "Lascia che il telefono si ricordi dell'acqua",
+        "sub": "Promemoria intelligenti, serie e classifica con gli amici · acqua gratis",
+        "button": "Scarica Suu gratis"
+      },
+      "faq": [
+        {
+          "q": "Mi dimentico sempre di bere acqua: cosa faccio?",
+          "a": "Lega l'acqua ad abitudini che hai già: un bicchiere appena sveglio e uno prima di ogni pasto. Tieni la bottiglia in vista, parti da un obiettivo piccolo e usa i promemoria nelle prime settimane."
+        },
+        {
+          "q": "Quanta acqua bere al giorno?",
+          "a": "L'EFSA indica circa 2,0 litri di acqua totale al giorno per le donne e 2,5 per gli uomini, compresa quella degli alimenti. Con caldo e sport serve di più."
+        },
+        {
+          "q": "In quanti giorni si forma l'abitudine a bere acqua?",
+          "a": "In uno studio un nuovo comportamento ha impiegato in media 66 giorni per diventare automatico, da 18 a 254 giorni tra le persone. I giorni saltati non rompono l'abitudine."
+        },
+        {
+          "q": "Non mi piace bere acqua: cosa posso fare?",
+          "a": "Aromatizzala con menta, limone, cetriolo o frutta congelata; l'acqua frizzante conta al 100%. Sostituire l'acqua con bibite zuccherate, invece, aggiunge zucchero e calorie."
+        },
+        {
+          "q": "Basta aspettare di avere sete?",
+          "a": "Per la maggior parte delle persone no: la sete può arrivare tardi e nelle giornate piene si ignora. Negli esperimenti una perdita di liquidi di circa l'1,4% del peso corporeo ha già inciso su umore e concentrazione."
+        },
+        {
+          "q": "Esiste un'app gratuita che ricorda di bere acqua?",
+          "a": "In Suu monitoraggio dell'acqua, promemoria intelligenti, serie e classifica settimanale con gli amici sono nel piano gratuito. La lista completa delle bevande e l'AI illimitata sono Premium."
+        }
+      ],
+      "references": [
+        {
+          "label": "Rodger A et al. — Can a simple plan change a complex behavior? Implementation intentions in the context of water drinking. Appetite, 2023",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/36646386/"
+        },
+        {
+          "label": "Lally P et al. — How are habits formed: modelling habit formation in the real world. European Journal of Social Psychology, 2010",
+          "href": "https://doi.org/10.1002/ejsp.674"
+        },
+        {
+          "label": "EFSA — Scientific Opinion on Dietary Reference Values for water (2010)",
+          "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459"
+        },
+        {
+          "label": "Armstrong LE et al. — Mild dehydration affects mood in healthy young women. J Nutr, 2012",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/22190027/"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/it/migliore-app-per-bere-acqua.html",
+          "title": "La migliore app per bere acqua 2026",
+          "desc": "Cinque app di idratazione a confronto."
+        },
+        {
+          "href": "/blog/it/il-caffe-conta-come-acqua.html",
+          "title": "Il caffè conta come acqua?",
+          "desc": "Come contano tè, caffè e altre bevande."
+        },
+        {
+          "href": "/blog/it/perche-sono-sempre-stanco.html",
+          "title": "Perché sono sempre stanco?",
+          "desc": "Le 8 cause più comuni."
+        },
+        {
+          "href": "/blog/it/acqua-calorie-allenamento-una-app.html",
+          "title": "Acqua, calorie e allenamento in un'unica app",
+          "desc": "Cosa si guadagna collegando le tre cose."
+        }
+      ]
+    },
+    "uk": {
+      "slug": "zabuvayu-pyty-vodu",
+      "read_minutes": 7,
+      "badge": "💧 Посібник · Звичка пити воду",
+      "h1": "Забуваю пити воду: 7 науково обґрунтованих способів зробити це звичкою (і відстежувати в Suu)",
+      "about": [
+        {
+          "name": "Звичка пити воду"
+        },
+        {
+          "name": "Гідратація"
+        },
+        {
+          "name": "Формування звичок"
+        }
+      ],
+      "meta": {
+        "title": "Забуваєш пити воду? 7 способів, які працюють | Suu",
+        "description": "Забувати пити воду — це не про силу волі, а про брак тригерів. Склянка зранку, пляшка на виду, склянка перед їжею й маленькі цілі: 7 способів.",
+        "keywords": "забуваю пити воду, як пити більше води, як привчити себе пити воду, застосунок нагадування пити воду, скільки води пити на день, не люблю пити воду, нагадування про воду",
+        "og_title": "Забуваю пити воду: 7 науково обґрунтованих способів",
+        "og_description": "Спрага приходить пізно, а звичка будується на тригерах. 7 способів вписати воду в день і скільки часу треба, щоб вона закріпилася."
+      },
+      "answer": "Забувати пити воду — найчастіше не про силу волі, а про брак тригерів. Найкраще працюють: склянка води одразу після пробудження, пляшка на виду, прив'язка пиття до наявної звички (склянка перед кожним прийомом їжі) і маленька стартова ціль. Suu переносить ці тригери в телефон за допомогою розумних нагадувань і серії днів; облік води безкоштовний.",
+      "health_note": {
+        "head": "Ця стаття не є медичною порадою.",
+        "body": [
+          "Якщо в тебе хвороби серця чи нирок або лікар порадив обмежити рідину, дотримуйся цього обмеження; цілі в статті розраховані на здорових дорослих. Дуже великий об'єм води за короткий час може небезпечно знизити натрій у крові — розподіляй воду протягом дня.",
+          "Звернися до лікаря, якщо помітив:"
+        ],
+        "red_flags": [
+          "постійну сильну спрагу й часте сечовипускання (треба перевірити цукор крові)",
+          "темну сечу, запаморочення чи сплутаність свідомості попри рясне пиття"
+        ]
+      },
+      "disclosure": "Цей посібник написала команда з двох людей, яка створює Suu. Ми радимо свій застосунок, але способи спираються на дослідження звичок і Центр громадського здоров'я України — ті самі кроки можна виконувати й без Suu.",
+      "intro": [
+        "Ранкова кава, чай по обіді, вечеря… і наприкінці дня ти розумієш, що випив лише дві склянки води. Справа не в тому, що ти не любиш воду, а в тому, що протягом дня ніщо про неї не нагадує. Спрага часто приходить пізно й легко глушиться роботою, дорогою чи довгою поїздкою.",
+        "Дослідження звичок тут однозначні: поведінка закріплюється, коли прив'язана до тригера. Сім способів нижче побудовано на тому, щоб вписати воду в день через тригери."
+      ],
+      "analysis": [
+        {
+          "head": "7 способів із доказовою базою",
+          "body": [
+            "Не пробуй усі одразу: обери два, застосовуй два тижні, потім додай третій."
+          ],
+          "list": [
+            "<strong>Додай у ранковий ритуал:</strong> склянка води одразу після пробудження, до телефону. Найпростіша склянка дня для організму, який усю ніч був без рідини.",
+            "<strong>Тримай на виду:</strong> пляшка на столі, в авто чи в сумці. Що на виду, те й випивається.",
+            "<strong>Прив'яжи до наявної звички:</strong> склади план «якщо — то», наприклад «склянка води перед кожним прийомом їжі». В одному дослідженні люди з таким планом повідомляли, що пили більше води протягом п'яти днів спостереження.<sup><a href=\"#ref1\">1</a></sup>",
+            "<strong>Почни з малого:</strong> якщо зараз ти п'єш дві склянки, ціль — чотири, а не вісім. Досяжну ціль складніше кинути.",
+            "<strong>Бережи серію:</strong> бачити дні поспіль — сильний привід не рвати ланцюжок.",
+            "<strong>Разом:</strong> взаємні нагадування чи невелике змагання з другом працюють довше, ніж зусилля наодинці.",
+            "<strong>Зміни смак:</strong> м'ята, лимон, огірок чи заморожені ягоди. Газована вода теж зараховується повністю."
+          ]
+        },
+        {
+          "head": "Скільки води пити на день?",
+          "body": [
+            "За оцінкою Центру громадського здоров'я України, дорослій людині орієнтовно потрібно від 2,5 до 3,5 л рідини на добу, враховуючи воду з їжі; ЦГЗ також радить починати ранок з води, тримати її на виду, пити невеликими порціями й додавати до неї лимон чи м'яту без цукру.<sup><a href=\"#ref3\">3</a></sup> У спеку, під час тренувань, вагітності й годування груддю потреба зростає.",
+            "Не кожен напій зараховується як вода повністю, але й нулем жоден не вважається; про чай і каву — окремий посібник. Найпрактичніший орієнтир — колір сечі: світло-солом'яний добре, темний — ознака нестачі."
+          ],
+          "callout": "Чекати спраги — не найкраща стратегія: в експерименті з жінками втрата рідини лише в 1,36% маси тіла погіршувала настрій, посилювала відчуття втоми й знижувала концентрацію.<sup><a href=\"#ref4\">4</a></sup>"
+        },
+        {
+          "head": "Скільки часу потрібно, щоб з'явилася звичка?",
+          "body": [
+            "В одному дослідженні новій поведінці в середньому знадобилося 66 днів, щоб стати автоматичною, — від 18 до 254 днів у різних людей.<sup><a href=\"#ref2\">2</a></sup> Спиратися на нагадування в перші тижні нормально; мета — з часом потребувати їх менше. Один пропущений день звичку не ламає — важливо продовжити наступного."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Де відстежувати це в Suu",
+        "lead": "Облік води — у безкоштовному плані. Назви пунктів наведено англійською, як в інтерфейсі:",
+        "steps": [
+          {
+            "feature": "Розумні сповіщення",
+            "where_ios": "Settings → Notification Settings → <strong>Smart Notifications</strong>",
+            "where_android": "Settings → <strong>Smart Notifications</strong>",
+            "solves": "Нагадують про перший ковток уранці й воду після їжі — способи «ранковий ритуал» і «прив'язка до звички» прямо в телефоні."
+          },
+          {
+            "feature": "Вода одним дотиком",
+            "where": "Кнопки додавання води на головному екрані",
+            "solves": "Записуй склянку в момент, коли випив. На iPhone воду можна додати й із віджета, і через Siri, і просто з Apple Watch."
+          },
+          {
+            "feature": "Серія і заморожування серії",
+            "where": "Індикатор <strong>Streak</strong> на головному екрані",
+            "solves": "Щодня, коли ти випиваєш хоча б половину норми, серія зростає; якщо пропустиш день, її захистить <strong>Streak Freeze</strong>."
+          },
+          {
+            "feature": "Рейтинг води й «штурхання» з друзями",
+            "where": "Settings → <strong>Leaderboard</strong> → Friends → <strong>Water</strong> · друг → <strong>Nudge</strong> → Drink water",
+            "solves": "Видно, скільки днів за тиждень кожен виконав норму води; другові, який забув, можна одним дотиком надіслати «пий воду»."
+          },
+          {
+            "feature": "Індекс Suu",
+            "where_ios": "Вкладка <strong>You</strong> → Water → <strong>Suu Index</strong>",
+            "where_android": "<strong>Statistics</strong> → <strong>Suu Index</strong>",
+            "solves": "Оцінює денну гідратацію від 0 до 100; норма сама підлаштовується під погоду й тренування."
+          }
+        ],
+        "note": "Українська локалізація застосунку в планах; поки що зручно користуватися англійською версією інтерфейсу.",
+        "button": "Завантажити Suu безкоштовно"
+      },
+      "verdict": {
+        "head": "Коротко",
+        "body": [
+          "Рішення для тих, хто забуває пити воду, — не більше сили волі, а кращі тригери: ранкова склянка, пляшка на виду, склянка перед їжею й досяжна ціль.",
+          "Перші два місяці спирайся на нагадування й серію; щойно звичка закріпиться, вони будуть потрібні дедалі менше."
+        ]
+      },
+      "cta": {
+        "head": "Нехай телефон пам'ятає про воду",
+        "sub": "Розумні нагадування, серія й рейтинг із друзями · облік води безкоштовний",
+        "button": "Завантажити Suu безкоштовно"
+      },
+      "faq": [
+        {
+          "q": "Постійно забуваю пити воду — що робити?",
+          "a": "Прив'яжи воду до звичок, які вже маєш: склянка після пробудження й склянка перед кожним прийомом їжі. Тримай пляшку на виду, почни з маленької цілі й у перші тижні користуйся нагадуваннями."
+        },
+        {
+          "q": "Скільки води потрібно пити на день?",
+          "a": "За оцінкою Центру громадського здоров'я, дорослому орієнтовно потрібно 2,5–3,5 л рідини на добу, враховуючи воду з їжі. У спеку й під час тренувань потрібно більше."
+        },
+        {
+          "q": "За скільки днів формується звичка пити воду?",
+          "a": "В одному дослідженні новій поведінці в середньому знадобилося 66 днів, щоб стати автоматичною, — від 18 до 254 днів у різних людей. Пропущені дні звичку не ламають."
+        },
+        {
+          "q": "Не люблю пити воду — що можна зробити?",
+          "a": "Додай м'яту, лимон, огірок чи заморожені ягоди; газована вода зараховується повністю. А заміна води солодкими напоями додає цукор і калорії."
+        },
+        {
+          "q": "Чи досить чекати спраги?",
+          "a": "Більшості — ні: спрага може приходити пізно й глушиться в завантажені дні. В експериментах утрата рідини близько 1,4% маси тіла вже впливала на настрій і концентрацію."
+        },
+        {
+          "q": "Чи є безкоштовний застосунок-нагадування про воду?",
+          "a": "У Suu облік води, розумні нагадування, серія й щотижневий рейтинг із друзями — у безкоштовному плані. Повний список напоїв і безлімітний AI — у Premium."
+        }
+      ],
+      "references": [
+        {
+          "label": "Rodger A та ін. — Can a simple plan change a complex behavior? Implementation intentions in the context of water drinking. Appetite, 2023",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/36646386/"
+        },
+        {
+          "label": "Lally P та ін. — How are habits formed: modelling habit formation in the real world. European Journal of Social Psychology, 2010",
+          "href": "https://doi.org/10.1002/ejsp.674"
+        },
+        {
+          "label": "Центр громадського здоров'я України — Чому важливо пити достатньо води (і як виробити цю звичку)",
+          "href": "https://phc.org.ua/news/chomu-vazhlivo-piti-dostatno-vodi-i-yak-virobiti-cyu-zvichku"
+        },
+        {
+          "label": "Armstrong LE та ін. — Mild dehydration affects mood in healthy young women. J Nutr, 2012",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/22190027/"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/uk/najkrashchyj-zastosunok-dlya-vody.html",
+          "title": "Найкращий застосунок для води 2026",
+          "desc": "П'ять застосунків для гідратації в порівнянні."
+        },
+        {
+          "href": "/blog/uk/chy-rakhuyetsya-kava-yak-voda.html",
+          "title": "Чи рахується кава як вода?",
+          "desc": "Як зараховуються чай, кава й інші напої."
+        },
+        {
+          "href": "/blog/uk/chomu-ya-postiyno-vtomlenyi.html",
+          "title": "Чому я постійно втомлений?",
+          "desc": "8 найчастіших причин."
+        },
+        {
+          "href": "/blog/uk/voda-kalorii-trenuvannya-odyn-zastosunok.html",
+          "title": "Вода, калорії й тренування в одному застосунку",
+          "desc": "Що дає зв'язок трьох."
+        }
+      ]
+    }
+  }
+}

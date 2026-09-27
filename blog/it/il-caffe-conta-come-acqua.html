@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ÜRETİLMİŞ DOSYA — elle düzenlemeyin.
+         Kaynak: content/guides/coffee-counts-as-water.json + content/compare/_template.html.j2
+         Yeniden üret: python3 scripts/build-compare.py --apply -->
+
+    <title>Il caffè conta come acqua? Tabella delle bevande | Suu</title>
+    <meta name="description" content="Caffè e tè con moderazione non disidratano: idratano quasi come l&#39;acqua. Come contano espresso, cappuccino, tè e cola, il limite di caffeina e i fattori di Suu.">
+    <meta name="keywords" content="il caffè conta come acqua, il caffè disidrata, il tè conta come acqua, il caffè è diuretico, quanti caffè al giorno, limite caffeina giornaliero, espresso e idratazione, la coca cola conta come acqua">
+    <meta name="apple-itunes-app" content="app-id=6757619920">
+
+    <link rel="canonical" href="https://suuapp.com/blog/it/il-caffe-conta-come-acqua.html">
+    <!-- Hreflang cluster (auto-injected) -->
+    <link rel="alternate" hreflang="tr" href="https://suuapp.com/blog/kahve-cay-su-sayar-mi.html">
+    <link rel="alternate" hreflang="en" href="https://suuapp.com/blog/en/coffee-tea-hydration.html">
+    <link rel="alternate" hreflang="ar" href="https://suuapp.com/blog/ar/alqahwa-walshay-walmae.html">
+    <link rel="alternate" hreflang="ru" href="https://suuapp.com/blog/ru/kofe-chay-i-voda.html">
+    <link rel="alternate" hreflang="de" href="https://suuapp.com/blog/de/zaehlt-kaffee-zur-trinkmenge.html">
+    <link rel="alternate" hreflang="it" href="https://suuapp.com/blog/it/il-caffe-conta-come-acqua.html">
+    <link rel="alternate" hreflang="uk" href="https://suuapp.com/blog/uk/chy-rakhuyetsya-kava-yak-voda.html">
+    <link rel="alternate" hreflang="x-default" href="https://suuapp.com/blog/en/coffee-tea-hydration.html">
+
+
+    <meta property="og:title" content="Il caffè conta come acqua? Il conto delle bevande">
+    <meta property="og:description" content="Il caffè non disidrata, ma non sostituisce del tutto l&#39;acqua. Come contano tè, caffè e cola — in numeri.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://suuapp.com/blog/it/il-caffe-conta-come-acqua.html">
+    <meta property="og:image" content="https://suuapp.com/assets/og/blog/it-il-caffe-conta-come-acqua.png">
+    <meta property="og:site_name" content="Suu">
+    <meta property="og:locale" content="it_IT">
+    <meta property="article:published_time" content="2026-09-27">
+    <meta property="article:modified_time" content="2026-09-27">
+    <meta property="article:author" content="Furkan Mert Fındıklı">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SuuTakip">
+    <meta name="twitter:title" content="Il caffè conta come acqua? Il conto delle bevande">
+    <meta name="twitter:description" content="Il caffè non disidrata, ma non sostituisce del tutto l&#39;acqua. Come contano tè, caffè e cola — in numeri.">
+    <meta name="twitter:image" content="https://suuapp.com/assets/og/blog/it-il-caffe-conta-come-acqua.png">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/donation-widget.css?v=6">
+    <link rel="stylesheet" href="/assets/css/suu.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://suuapp.com/#organization",
+      "name": "Suu",
+      "url": "https://suuapp.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://suuapp.com/assets/favicon-512.png"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://suuapp.com/#furkan",
+      "name": "Furkan Mert Fındıklı",
+      "url": "https://suuapp.com/yazarlar/furkan-mert.html",
+      "jobTitle": "Kurucu \u0026 Geliştirici",
+      "worksFor": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/furkanfindikli/"
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://suuapp.com/blog/it/il-caffe-conta-come-acqua.html#article",
+      "headline": "Il caffè conta come acqua? Come contano tè, caffè e altre bevande (e come le registra Suu)",
+      "description": "Caffè e tè con moderazione non disidratano: idratano quasi come l'acqua. Come contano espresso, cappuccino, tè e cola, il limite di caffeina e i fattori di Suu.",
+      "image": "https://suuapp.com/assets/og/blog/it-il-caffe-conta-come-acqua.png",
+      "datePublished": "2026-09-27",
+      "dateModified": "2026-09-27",
+      "inLanguage": "it",
+      "mainEntityOfPage": "https://suuapp.com/blog/it/il-caffe-conta-come-acqua.html",
+      "author": {
+        "@id": "https://suuapp.com/#furkan"
+      },
+      "publisher": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Caffè e idratazione"
+        },
+        {
+          "@type": "Thing",
+          "name": "Caffeina"
+        },
+        {
+          "@type": "Thing",
+          "name": "Idratazione delle bevande"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://suuapp.com/#suuapp-ios"
+        },
+        {
+          "@id": "https://suuapp.com/#suuapp-android"
+        }
+      ],
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "name": "Killer SC et al. — No evidence of dehydration with moderate daily coffee intake: a counterbalanced cross-over study in a free-living population. PLoS One, 2014",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24416202/"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Maughan RJ et al. — A randomized trial to assess the potential of different beverages to affect hydration status: development of a beverage hydration index. Am J Clin Nutr, 2016",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26702122/"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "EFSA — Scientific Opinion on the safety of caffeine (2015)",
+          "url": "https://www.efsa.europa.eu/en/efsajournal/pub/4102"
+        }
+      ],
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".answer-box",
+          "h1",
+          ".in-app",
+          ".verdict p"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://suuapp.com/blog/it/il-caffe-conta-come-acqua.html#faq",
+      "inLanguage": "it",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Il caffè conta come acqua?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In parte. Il caffè con moderazione idrata quasi come l'acqua e non disidrata, ma non la sostituisce del tutto. Suu conta l'espresso con fattore 0,5 e il caffè filtro con 0,8: 200 ml di caffè filtro valgono 160 ml d'acqua."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Il caffè disidrata?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Con moderazione no. In uno studio con quattro tazze al giorno gli indicatori di idratazione erano uguali ai giorni con sola acqua. Fanno eccezione quantità molto elevate e persone sensibili alla caffeina."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Il tè conta come acqua?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In gran parte sì. Suu conta il tè nero con 0,9, il tè verde con 0,95 e le tisane con 0,98. Lo zucchero aggiunto, invece, alza l'obiettivo d'acqua."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanti caffè al giorno si possono bere?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Per gli adulti sani si considerano sicuri fino a 400 mg di caffeina al giorno: circa 5 espressi o 3–4 tazze di caffè filtro. In gravidanza non più di 200 mg. Energy drink e cola contano nel totale."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Un espresso idrata?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Poco, perché è piccolo: circa 30 ml × 0,5 = 15 ml d'acqua in Suu. Il bicchiere d'acqua che lo accompagna al bar conta invece per intero."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Perché Suu conta il caffè meno dell'acqua se la ricerca dice che idrata quasi come l'acqua?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Gli studi mostrano che il caffè moderato idrata quasi come l'acqua. I fattori di Suu sono un calcolo prudente che tiene conto di caffè forti o abbondanti, sensibilità alla caffeina e zucchero aggiunto, così l'obiettivo giornaliero resta realistico."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://suuapp.com/blog/it/il-caffe-conta-come-acqua.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Suu",
+          "item": "https://suuapp.com/hosgeldiniz-it.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://suuapp.com/blog-it.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Il caffè conta come acqua? Come contano tè, caffè e altre bevande (e come le registra Suu)",
+          "item": "https://suuapp.com/blog/it/il-caffe-conta-come-acqua.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+
+    <script src="/assets/js/analytics.js" defer></script>
+    <script src="/lang-switcher.js?v=3" defer></script>
+    <script src="/donation-widget.js?v=6" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Vai al contenuto</a>
+
+<nav class="nav">
+    <div class="container nav__inner">
+        <a href="/hosgeldiniz-it.html" class="nav__logo"><img src="/assets/brand/suu-badge-128.png" alt="Suu" width="128" height="128" class="suu-logo-badge" style="height:1.6em;width:1.6em;border-radius:50%;vertical-align:-0.4em;box-shadow:0 0 0 1px rgba(255,255,255,.12),0 0 14px rgba(94,170,255,.45);"> Suu</a>
+        <ul class="nav__links">
+            <li><a href="/blog-it.html">Blog</a></li>
+            
+            <li><a href="/hosgeldiniz-it.html#fiyat">Prezzi</a></li>
+        </ul>
+        <div class="nav__actions">
+            <a href="/app?src=guide-nav" class="btn btn--primary" data-cta="nav"
+               style="min-height:40px;padding:var(--sp-2) var(--sp-5);font-size:var(--fs-sm)">Scarica gratis</a>
+        </div>
+    </div>
+</nav>
+
+<main id="main">
+
+<header class="section" style="padding-block-end:var(--sp-8)">
+    <div class="container container--narrow">
+        <nav class="breadcrumb small text-subtle" aria-label="Breadcrumb"
+             style="margin-block-end:var(--sp-4)">
+            <a href="/hosgeldiniz-it.html">Suu</a>
+            <span aria-hidden="true"> › </span>
+            <a href="/blog-it.html">Blog</a>
+            <span aria-hidden="true"> › </span>
+            <span aria-current="page">Il caffè conta come acqua? Come contano tè, caffè e altre bevande (e come le registra Suu)</span>
+        </nav>
+        <span class="badge badge--new">☕ Guida · Bevande e acqua</span>
+        <h1 style="margin-block-start:var(--sp-4)">Il caffè conta come acqua? Come contano tè, caffè e altre bevande (e come le registra Suu)</h1>
+        <p class="small text-subtle">Pubblicato: 27 settembre 2026 · Furkan Mert Fındıklı · 7 min di lettura</p>
+    </div>
+</header>
+
+<div class="container container--narrow stack--lg" style="padding-block-end:var(--sp-24)">
+
+    <!-- CEVAP-ÖNCE: alıntılanan blok burasıdır -->
+    <div class="answer-box">
+        <p><strong>Risposta breve:</strong> In parte — e più di quanto molti pensino: caffè e tè con moderazione danno liquidi quasi come l&#39;acqua, e l&#39;idea che «il caffè disidrata» non vale per la maggior parte delle persone. Però non sostituisce del tutto l&#39;acqua. Suu conta le bevande con prudenza: espresso con fattore di idratazione 0,5, cappuccino 0,8, caffè filtro 0,8, tè nero 0,9.</p>
+    </div>
+    <aside class="callout health-note" role="note">
+        <p><strong>Questo articolo non è un consiglio medico.</strong></p>
+        <p>Per gli adulti sani si considerano sicuri fino a 400 mg di caffeina al giorno, in gravidanza non più di 200 mg. Se hai aritmie, pressione alta, reflusso o un disturbo d'ansia, parla con il tuo medico della quantità adatta a te.</p>
+        <p>Riduci la caffeina e senti il medico se noti:</p>
+        <ul>
+            <li>palpitazioni, dolore al petto o tremori dopo la caffeina</li>
+            <li>un netto aumento di insonnia o ansia</li>
+        </ul>
+    </aside>
+
+    <div class="disclosure">Abbiamo scritto questa guida come il team di due persone che sviluppa Suu. Pubblichiamo apertamente i fattori della nostra app: non sono un&#39;affermazione scientifica che «il caffè disidrata», ma un calcolo prudente che mantiene realistico l&#39;obiettivo d&#39;acqua giornaliero.</div>
+    <p>«Con il caffè bevi sempre un bicchiere d'acqua, sennò ti disidrati» — un consiglio ripetuto da anni, e al bar il bicchiere d'acqua accanto all'espresso è quasi un rito. L'effetto lievemente diuretico della caffeina è reale, ma a dosi moderate non annulla il liquido che la tazzina apporta.</p>
+    <p>Qui sotto vediamo prima cosa dice la ricerca, poi perché e come Suu conta tè, caffè e altre bevande — espresso compreso.</p>
+
+    
+    <section>
+        <h2>Il caffè disidrata davvero?</h2>
+        <p>Con moderazione, no. In uno studio su 50 uomini che bevevano abitualmente 3–6 tazze al giorno, bere 4 × 200 ml di caffè al giorno per tre giorni non ha dato differenze nell'acqua corporea e negli indicatori di idratazione rispetto alla stessa quantità d'acqua.<sup><a href="#ref1">1</a></sup> In una prova che confrontava diverse bevande, latte e soluzione reidratante orale sono stati trattenuti più a lungo dell'acqua, mentre caffè, tè e cola non erano chiaramente diversi dall'acqua.<sup><a href="#ref2">2</a></sup></p>
+        <p>Quindi tè e caffè contribuiscono ai liquidi della giornata. Non è però un motivo per rinunciare all'acqua: caffeina, zucchero aggiunto e latte cambiano il quadro.</p>
+    </section>
+    <section>
+        <h2>Come Suu conta le bevande</h2>
+        <p>Suu conta ogni bevanda con un <strong>fattore di idratazione</strong>: quanta parte di ciò che bevi si aggiunge alla tua acqua. 200 ml di caffè filtro × 0,8 = 160 ml d'acqua. I fattori sono volutamente prudenti e tengono conto di caffè forti o abbondanti, sensibilità alla caffeina e zucchero aggiunto, così l'obiettivo giornaliero resta realistico. I valori nell'app:</p>
+        <ul>
+            <li><strong>1,0:</strong> acqua naturale, acqua frizzante</li>
+            <li><strong>0,95–0,98:</strong> tisane (0,98), tè verde (0,95)</li>
+            <li><strong>0,9:</strong> tè nero, latte</li>
+            <li><strong>0,8–0,85:</strong> latte macchiato/latte (0,85), cappuccino (0,8), caffè filtro (0,8)</li>
+            <li><strong>0,75:</strong> americano, cold brew</li>
+            <li><strong>0,5–0,6:</strong> cola (0,6), espresso (0,5)</li>
+            <li><strong>0,3–0,4:</strong> energy drink</li>
+        </ul>
+        <div class="callout"><p>Lo zucchero si calcola a parte: ogni 10 g di zucchero in una bevanda alzano l'obiettivo d'acqua giornaliero di 100 ml. La caffeina invece non lo alza. Le bevande alcoliche non vanno considerate acqua; Suu ne tiene conto alzando l'obiettivo giornaliero (+250 ml ogni 10 ml di alcol puro).</p></div>
+    </section>
+    <section>
+        <h2>Espresso, moka e cappuccino</h2>
+        <p>Un espresso è piccolo: circa 30 ml × 0,5 = 15 ml d'acqua. Anche tre caffè al giorno aggiungono solo 45 ml alla tua acqua, ma circa 200 mg di caffeina. Il caffè della moka non ha una voce a parte nell'app; per concentrazione e volume la più vicina è l'espresso. Un cappuccino da 150 ml × 0,8 = 120 ml: il latte fa la differenza. Il bicchiere d'acqua che al bar accompagna il caffè, invece, conta tutto.</p>
+    </section>
+    <section>
+        <h2>Quanti caffè al giorno sono troppi?</h2>
+        <p>L'Autorità europea per la sicurezza alimentare (EFSA), con sede a Parma, considera sicuri per gli adulti sani fino a 400 mg di caffeina al giorno, consiglia non più di 200 mg in una sola volta e non più di 200 mg al giorno in gravidanza.<sup><a href="#ref3">3</a></sup> In pratica sono circa 5 espressi o 3–4 tazze di caffè filtro; energy drink e cola rientrano nello stesso totale.</p>
+    </section>
+
+    <section class="in-app" id="in-app">
+        <h2>Dove seguirlo in Suu</h2>
+        <p>I nomi dei menu sono quelli che vedi nell'app:</p>
+        <ol class="ranked stack">
+            <li>
+                <strong>Racconta il caffè a Suui</strong>
+                <p class="small text-subtle">L'assistente <strong>Suui</strong> nella schermata principale</p>
+                <p>Basta dire «ho preso due espressi e un cappuccino»: le bevande si sommano alla tua acqua con i loro fattori, quelle zuccherate alzano l'obiettivo. Il piano gratuito include 3 messaggi AI al giorno.</p>
+            </li>
+            <li>
+                <strong>Registrazione in un tocco dalla lista bevande</strong> — <em>Premium</em>
+                <p class="small text-subtle"><bdi>iPhone</bdi>: Schermata principale → aggiunta rapida → <strong>Bevanda rapida</strong><br><bdi>Android</bdi>: Schermata principale → <strong>Aggiungi bevanda</strong></p>
+                <p>Tutte le 91 bevande con il proprio fattore e lo zucchero, dall'espresso alla kombucha. Con il piano gratuito dalla lista si aggiungono acqua naturale e frizzante.</p>
+            </li>
+            <li>
+                <strong>Indice Suu</strong>
+                <p class="small text-subtle"><bdi>iPhone</bdi>: Scheda <strong>Tu</strong> → Acqua → <strong>Indice Suu</strong><br><bdi>Android</bdi>: <strong>Statistiche</strong> → <strong>Indice Suu</strong></p>
+                <p>Valuta da 0 a 100 l'idratazione reale di una giornata a base di caffè e tè: la sensazione «ho bevuto abbastanza» si controlla con un numero.</p>
+            </li>
+            <li>
+                <strong>Un obiettivo che segue il meteo</strong>
+                <p class="small text-subtle">La scheda <strong>Meteo e info</strong> nella schermata principale</p>
+                <p>Nei giorni caldi e dopo l'allenamento l'obiettivo d'acqua sale da solo; il caffè da solo non basta a coprirlo, e vedi la differenza.</p>
+            </li>
+        </ol>
+        <div class="btn-row" style="margin-block-start:var(--sp-4)">
+            <a href="/app?src=guide-inapp-coffee-counts-as-water" class="btn btn--primary" data-cta="guide-inapp">Scarica Suu gratis</a>
+        </div>
+    </section>
+
+    <section class="verdict">
+        <h2 style="margin-block-end:var(--sp-4)">In breve</h2>
+        <p>Caffè e tè non disidratano; con moderazione contribuiscono davvero ai liquidi della giornata. Ma non sostituiscono del tutto l'acqua, e la caffeina ha un limite.</p>
+        <p>In pratica: goditi il caffè, bevi comunque soprattutto acqua e tieni la caffeina totale sotto i 400 mg al giorno.</p>
+    </section>
+
+    <section class="cta-band" style="border-radius:var(--r-lg);padding-block:var(--sp-12)" data-cta="guide-body">
+        <div class="container">
+            <h2 style="font-size:var(--fs-2xl)">Il vero conto dell&#39;acqua in una giornata di caffè</h2>
+            <p>91 bevande, fattori di idratazione e Indice Suu · iOS e Android</p>
+            <div class="btn-row btn-row--center" style="margin-block-start:var(--sp-6)">
+                <a href="/app?src=guide-coffee-counts-as-water" class="btn btn--secondary btn--lg">Scarica Suu gratis</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Domande frequenti</h2>
+        <div class="faq">
+            <details class="faq__item" open>
+                <summary>Il caffè conta come acqua?</summary>
+                <div><p>In parte. Il caffè con moderazione idrata quasi come l&#39;acqua e non disidrata, ma non la sostituisce del tutto. Suu conta l&#39;espresso con fattore 0,5 e il caffè filtro con 0,8: 200 ml di caffè filtro valgono 160 ml d&#39;acqua.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Il caffè disidrata?</summary>
+                <div><p>Con moderazione no. In uno studio con quattro tazze al giorno gli indicatori di idratazione erano uguali ai giorni con sola acqua. Fanno eccezione quantità molto elevate e persone sensibili alla caffeina.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Il tè conta come acqua?</summary>
+                <div><p>In gran parte sì. Suu conta il tè nero con 0,9, il tè verde con 0,95 e le tisane con 0,98. Lo zucchero aggiunto, invece, alza l&#39;obiettivo d&#39;acqua.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Quanti caffè al giorno si possono bere?</summary>
+                <div><p>Per gli adulti sani si considerano sicuri fino a 400 mg di caffeina al giorno: circa 5 espressi o 3–4 tazze di caffè filtro. In gravidanza non più di 200 mg. Energy drink e cola contano nel totale.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Un espresso idrata?</summary>
+                <div><p>Poco, perché è piccolo: circa 30 ml × 0,5 = 15 ml d&#39;acqua in Suu. Il bicchiere d&#39;acqua che lo accompagna al bar conta invece per intero.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Perché Suu conta il caffè meno dell&#39;acqua se la ricerca dice che idrata quasi come l&#39;acqua?</summary>
+                <div><p>Gli studi mostrano che il caffè moderato idrata quasi come l&#39;acqua. I fattori di Suu sono un calcolo prudente che tiene conto di caffè forti o abbondanti, sensibilità alla caffeina e zucchero aggiunto, così l&#39;obiettivo giornaliero resta realistico.</p></div>
+            </details>
+        </div>
+    </section>
+    <section>
+        <h2>Fonti</h2>
+        <ol class="small">
+            <li id="ref1"><a href="https://pubmed.ncbi.nlm.nih.gov/24416202/" rel="nofollow noopener" target="_blank">Killer SC et al. — No evidence of dehydration with moderate daily coffee intake: a counterbalanced cross-over study in a free-living population. PLoS One, 2014</a></li>
+            <li id="ref2"><a href="https://pubmed.ncbi.nlm.nih.gov/26702122/" rel="nofollow noopener" target="_blank">Maughan RJ et al. — A randomized trial to assess the potential of different beverages to affect hydration status: development of a beverage hydration index. Am J Clin Nutr, 2016</a></li>
+            <li id="ref3"><a href="https://www.efsa.europa.eu/en/efsajournal/pub/4102" rel="nofollow noopener" target="_blank">EFSA — Scientific Opinion on the safety of caffeine (2015)</a></li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Articoli correlati</h2>
+        <div class="cards">
+            <a class="card" href="/blog/it/dimentico-di-bere-acqua.html">
+                <h3 style="font-size:var(--fs-md)">Mi dimentico di bere acqua</h3>
+                <p>7 modi per farne un&#39;abitudine.</p>
+            </a>
+            <a class="card" href="/blog/it/smettere-bibite-gassate.html">
+                <h3 style="font-size:var(--fs-md)">Smettere con le bibite gassate</h3>
+                <p>Ridurre le bevande zuccherate in quattro settimane.</p>
+            </a>
+            <a class="card" href="/blog/it/migliore-app-per-bere-acqua.html">
+                <h3 style="font-size:var(--fs-md)">La migliore app per bere acqua 2026</h3>
+                <p>Cinque app di idratazione a confronto.</p>
+            </a>
+            <a class="card" href="/blog/it/perche-sono-sempre-stanco.html">
+                <h3 style="font-size:var(--fs-md)">Perché sono sempre stanco?</h3>
+                <p>Le 8 cause più comuni.</p>
+            </a>
+        </div>
+    </section>
+
+    <p class="small text-subtle">Suu non è destinato alla diagnosi o al trattamento medico. Per le decisioni sulla tua salute rivolgiti a un medico o a un professionista sanitario.</p>
+
+    <p>
+        <a href="/blog-it.html">← Torna al blog</a>
+    </p>
+</div>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__bottom" style="border:0">
+            <p class="small mb-0">© 2026 Suu · Furkan Mert Fındıklı</p>
+            <p class="small mb-0"><a href="/hosgeldiniz-it.html">suuapp.com</a></p>
+        </div>
+    </div>
+</footer>
+
+<div class="sticky-cta" data-cta="sticky">
+    <a href="/app?src=sticky" class="btn btn--secondary">App Store</a>
+    <a href="/app?src=sticky" class="btn btn--primary">Google Play</a>
+</div>
+
+<script src="/assets/js/suu-badge.js?v=2" defer></script>
+</body>
+</html>

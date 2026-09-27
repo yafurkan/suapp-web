@@ -3,265 +3,456 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ÜRETİLMİŞ DOSYA — elle düzenlemeyin.
+         Kaynak: content/guides/water-drinking-habits.json + content/compare/_template.html.j2
+         Yeniden üret: python3 scripts/build-compare.py --apply -->
+
+    <title>Забываете пить воду? 7 способов, которые работают | Suu</title>
+    <meta name="description" content="Забывать пить воду — это не про силу воли, а про отсутствие триггеров. Стакан утром, бутылка на виду, стакан перед едой и маленькие цели: 7 рабочих способов.">
+    <meta name="keywords" content="забываю пить воду, как привыкнуть пить воду, как пить больше воды, приложение напоминание пить воду, сколько воды пить в день, не люблю пить воду, напоминание о воде">
     <meta name="apple-itunes-app" content="app-id=6757619920">
-    <title>Не можете вспомнить, когда пить воду? 7 рабочих приёмов | Suu</title>
-    <meta name="description" content="Привычка пить воду — это не сила воли, а системы. 7 научно обоснованных стратегий, которые действительно работают: от стека привычек до социальной подотчётности.">
-    <meta name="keywords" content="как пить больше воды, привычка пить воду, напоминание о воде, привычка гидратации, как оставаться гидратированным, советы по воде">
+
     <link rel="canonical" href="https://suuapp.com/blog/ru/privychka-pit-vodu.html">
     <!-- Hreflang cluster (auto-injected) -->
     <link rel="alternate" hreflang="tr" href="https://suuapp.com/blog/su-icme-aliskanlik.html">
     <link rel="alternate" hreflang="en" href="https://suuapp.com/blog/en/water-drinking-habits.html">
     <link rel="alternate" hreflang="ar" href="https://suuapp.com/blog/ar/adat-shurb-almae.html">
     <link rel="alternate" hreflang="ru" href="https://suuapp.com/blog/ru/privychka-pit-vodu.html">
+    <link rel="alternate" hreflang="de" href="https://suuapp.com/blog/de/wasser-trinken-vergessen.html">
+    <link rel="alternate" hreflang="it" href="https://suuapp.com/blog/it/dimentico-di-bere-acqua.html">
+    <link rel="alternate" hreflang="uk" href="https://suuapp.com/blog/uk/zabuvayu-pyty-vodu.html">
     <link rel="alternate" hreflang="x-default" href="https://suuapp.com/blog/en/water-drinking-habits.html">
 
 
-<meta property="og:title" content="Не можете вспомнить, когда пить воду? 7 рабочих приёмов">
-    <meta property="og:description" content="Привычка пить воду — это не сила воли, а системы. 7 научно обоснованных стратегий.">
+    <meta property="og:title" content="Забываю пить воду: 7 научных способов">
+    <meta property="og:description" content="Жажда приходит поздно, а привычка строится на триггерах. 7 способов вписать воду в день и сколько времени нужно, чтобы она закрепилась.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://suuapp.com/blog/ru/privychka-pit-vodu.html">
     <meta property="og:image" content="https://suuapp.com/assets/og/blog/ru-privychka-pit-vodu.png">
+    <meta property="og:site_name" content="Suu">
     <meta property="og:locale" content="ru_RU">
+    <meta property="article:published_time" content="2026-03-15">
+    <meta property="article:modified_time" content="2026-09-27">
+    <meta property="article:author" content="Furkan Mert Fındıklı">
+
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@SuuTakip">
-    <meta name="twitter:title" content="Не можете вспомнить, когда пить воду? 7 рабочих приёмов">
-    <meta name="twitter:description" content="Привычка пить воду — это не сила воли, а системы. 7 научно обоснованных стратегий.">
+    <meta name="twitter:title" content="Забываю пить воду: 7 научных способов">
+    <meta name="twitter:description" content="Жажда приходит поздно, а привычка строится на триггерах. 7 способов вписать воду в день и сколько времени нужно, чтобы она закрепилась.">
     <meta name="twitter:image" content="https://suuapp.com/assets/og/blog/ru-privychka-pit-vodu.png">
 
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/donation-widget.css?v=6">
+    <link rel="stylesheet" href="/assets/css/suu.css">
 
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "7 научно обоснованных способов выработать привычку пить воду",
-  "description": "Семь стратегий поведенческой науки для формирования стойкой привычки гидратации.",
-  "image": "https://suuapp.com/assets/og/blog/ru-privychka-pit-vodu.png",
-  "datePublished": "2026-03-15",
-  "dateModified": "2026-03-15",
-  "author": {
-    "@type": "Person",
-    "@id": "https://suuapp.com/#furkan",
-    "name": "Furkan Mert Fındıklı",
-    "url": "https://www.linkedin.com/in/furkanfindikli/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "@id": "https://suuapp.com/#organization",
-    "name": "Suu",
-    "url": "https://suuapp.com"
-  },
-  "mainEntityOfPage": "https://suuapp.com/blog/ru/privychka-pit-vodu.html",
-  "inLanguage": "ru",
-  "keywords": "как пить больше воды, привычка пить воду, напоминание о воде, привычка гидратации, как оставаться гидратированным, советы по воде",
-  "wordCount": 752,
-        "speakable": {
-            "@type": "SpeakableSpecification",
-            "cssSelector": [".hero h1", ".intro", "h2", ".benefit-content p", ".phase-card p"]
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://suuapp.com/#organization",
+      "name": "Suu",
+      "url": "https://suuapp.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://suuapp.com/assets/favicon-512.png"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://suuapp.com/#furkan",
+      "name": "Furkan Mert Fındıklı",
+      "url": "https://suuapp.com/yazarlar/furkan-mert.html",
+      "jobTitle": "Kurucu \u0026 Geliştirici",
+      "worksFor": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/furkanfindikli/"
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://suuapp.com/blog/ru/privychka-pit-vodu.html#article",
+      "headline": "Забываю пить воду: 7 научных способов сделать это привычкой (и отслеживать в Suu)",
+      "description": "Забывать пить воду — это не про силу воли, а про отсутствие триггеров. Стакан утром, бутылка на виду, стакан перед едой и маленькие цели: 7 рабочих способов.",
+      "image": "https://suuapp.com/assets/og/blog/ru-privychka-pit-vodu.png",
+      "datePublished": "2026-03-15",
+      "dateModified": "2026-09-27",
+      "inLanguage": "ru",
+      "mainEntityOfPage": "https://suuapp.com/blog/ru/privychka-pit-vodu.html",
+      "author": {
+        "@id": "https://suuapp.com/#furkan"
+      },
+      "publisher": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Привычка пить воду"
+        },
+        {
+          "@type": "Thing",
+          "name": "Гидратация"
+        },
+        {
+          "@type": "Thing",
+          "name": "Формирование привычек"
         }
+      ],
+      "mentions": [
+        {
+          "@id": "https://suuapp.com/#suuapp-ios"
+        },
+        {
+          "@id": "https://suuapp.com/#suuapp-android"
+        }
+      ],
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "name": "Rodger A и соавт. — Can a simple plan change a complex behavior? Implementation intentions in the context of water drinking. Appetite, 2023",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36646386/"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Lally P и соавт. — How are habits formed: modelling habit formation in the real world. European Journal of Social Psychology, 2010",
+          "url": "https://doi.org/10.1002/ejsp.674"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "ВОЗ — Здоровое питание (информационный бюллетень)",
+          "url": "https://www.who.int/ru/news-room/fact-sheets/detail/healthy-diet"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Armstrong LE и соавт. — Mild dehydration affects mood in healthy young women. J Nutr, 2012",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22190027/"
+        }
+      ],
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".answer-box",
+          "h1",
+          ".in-app",
+          ".verdict p"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://suuapp.com/blog/ru/privychka-pit-vodu.html#faq",
+      "inLanguage": "ru",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Постоянно забываю пить воду — что делать?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Привяжите воду к уже существующим привычкам: стакан после пробуждения и стакан перед каждым приёмом пищи. Держите бутылку на виду, начните с маленькой цели и в первые недели пользуйтесь напоминаниями."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько воды нужно пить в день?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Единой нормы нет: потребность зависит от веса, погоды, активности и питания. В жару и при тренировках нужно больше; практичный ориентир — светлая моча."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "За сколько дней формируется привычка пить воду?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "В одном исследовании новому поведению в среднем требовалось 66 дней, чтобы стать автоматическим, — от 18 до 254 дней у разных людей. Пропущенные дни привычку не ломают."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Не люблю пить воду — что можно сделать?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Добавьте мяту, лимон, огурец или замороженные ягоды; газированная минеральная вода засчитывается полностью. А замена воды сладкими напитками добавляет сахар и калории."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Достаточно ли ждать жажды?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Большинству — нет: жажда может приходить поздно и заглушается в загруженные дни. В экспериментах потеря жидкости около 1,4% массы тела уже влияла на настроение и концентрацию."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Есть ли бесплатное приложение-напоминание о воде?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "В Suu учёт воды, умные напоминания, серия и еженедельный рейтинг с друзьями — в бесплатном плане. Полный список напитков и безлимитный AI — в Premium."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://suuapp.com/blog/ru/privychka-pit-vodu.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Suu",
+          "item": "https://suuapp.com/hosgeldiniz-ru.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://suuapp.com/blog-ru.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Забываю пить воду: 7 научных способов сделать это привычкой (и отслеживать в Suu)",
+          "item": "https://suuapp.com/blog/ru/privychka-pit-vodu.html"
+        }
+      ]
     }
+  ]
+}
     </script>
 
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', sans-serif; color: #333; background: #f8f9fa; line-height: 1.7; }
-        .nav { background: white; padding: 0 20px; height: 70px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 10px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 100; }
-        .nav-logo { display: flex; align-items: center; gap: 8px; font-size: 22px; font-weight: 700; color: #4A90D9; text-decoration: none; }
-        .nav-back { color: #666; text-decoration: none; font-size: 14px; display: flex; align-items: center; gap: 6px; }
-        .nav-back:hover { color: #4A90D9; }
-        .hero { background: linear-gradient(135deg, #00897B 0%, #4A90D9 100%); color: white; padding: 60px 20px; text-align: center; }
-        .hero .badge { display: inline-block; background: rgba(255,255,255,0.2); padding: 6px 16px; border-radius: 20px; font-size: 13px; font-weight: 500; margin-bottom: 20px; }
-        .hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 700; margin-bottom: 16px; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.3; }
-        .hero .meta { font-size: 14px; opacity: 0.85; display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap; }
-        .hero .meta span { display: flex; align-items: center; gap: 6px; }
-        .container { max-width: 760px; margin: 0 auto; padding: 50px 20px 80px; }
-        .intro { font-size: 1.1rem; color: #444; background: white; border-left: 4px solid #4A90D9; padding: 20px 24px; border-radius: 0 10px 10px 0; margin-bottom: 40px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
-        h2 { font-size: 1.5rem; font-weight: 700; color: #222; margin: 40px 0 16px; }
-        p { margin-bottom: 16px; color: #555; font-size: 1rem; }
-        .habit-card { background: white; border-radius: 14px; padding: 28px; margin-bottom: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.07); }
-        .habit-header { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
-        .habit-number { background: linear-gradient(135deg, #00897B, #4A90D9); color: white; width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.2rem; flex-shrink: 0; }
-        .habit-card h3 { font-size: 1.2rem; font-weight: 700; color: #222; margin: 0; }
-        .habit-card .science-note { background: #e8f5e9; border-radius: 8px; padding: 12px 16px; margin-top: 14px; font-size: 13px; color: #2E7D32; }
-        .habit-card .science-note strong { color: #1B5E20; }
-        .cta-box { background: linear-gradient(135deg, #4A90D9, #29B6F6); color: white; border-radius: 16px; padding: 36px; text-align: center; margin: 50px 0; }
-        .cta-box h3 { font-size: 1.5rem; margin-bottom: 12px; }
-        .cta-box p { opacity: 0.9; margin-bottom: 24px; }
-        .cta-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-        .cta-btn { background: white; color: #4A90D9; padding: 12px 24px; border-radius: 50px; font-weight: 600; text-decoration: none; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 8px; transition: transform 0.2s; }
-        .cta-btn:hover { transform: translateY(-2px); }
-        .footer-nav { border-top: 1px solid #eee; padding-top: 30px; margin-top: 50px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
-        .footer-nav a { color: #4A90D9; text-decoration: none; font-size: 14px; display: flex; align-items: center; gap: 6px; }
-        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 16px; }
-        .related-card { background: white; border-radius: 10px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); text-decoration: none; color: inherit; transition: transform 0.2s; }
-        .related-card:hover { transform: translateY(-3px); }
-        .related-card .tag { font-size: 12px; color: #4A90D9; font-weight: 600; text-transform: uppercase; margin-bottom: 8px; }
-        .related-card h4 { font-size: 0.95rem; color: #333; line-height: 1.4; }
-    </style>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://suuapp.com/hosgeldiniz-ru.html"},
-            {"@type": "ListItem", "position": 2, "name": "Блог", "item": "https://suuapp.com/blog-ru.html"},
-            {"@type": "ListItem", "position": 3, "name": "Не можете вспомнить, когда пить воду? 7 рабочих приёмов", "item": "https://suuapp.com/blog/ru/privychka-pit-vodu.html"}
-        ]
-    }
-    </script>
     <script src="/assets/js/analytics.js" defer></script>
-    <script src="/assets/js/special-days.js" defer></script>
+    <script src="/lang-switcher.js?v=3" defer></script>
+    <script src="/donation-widget.js?v=6" defer></script>
 </head>
 <body>
 
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+
 <nav class="nav">
-    <a href="/hosgeldiniz-ru.html" class="nav-logo"><img src="/assets/brand/suu-badge-128.png" alt="Suu" width="128" height="128" class="suu-logo-badge" style="height:1.6em;width:1.6em;border-radius:50%;vertical-align:-0.4em;box-shadow:0 0 0 1px rgba(255,255,255,.12),0 0 14px rgba(94,170,255,.45);"> Suu</a>
-    <a href="../../blog-ru.html" class="nav-back"><i class="fas fa-arrow-left"></i> К блогу</a>
+    <div class="container nav__inner">
+        <a href="/hosgeldiniz-ru.html" class="nav__logo"><img src="/assets/brand/suu-badge-128.png" alt="Suu" width="128" height="128" class="suu-logo-badge" style="height:1.6em;width:1.6em;border-radius:50%;vertical-align:-0.4em;box-shadow:0 0 0 1px rgba(255,255,255,.12),0 0 14px rgba(94,170,255,.45);"> Suu</a>
+        <ul class="nav__links">
+            <li><a href="/blog-ru.html">Блог</a></li>
+            
+            <li><a href="/hosgeldiniz-ru.html#fiyat">Цены</a></li>
+        </ul>
+        <div class="nav__actions">
+            <a href="/app?src=guide-nav" class="btn btn--primary" data-cta="nav"
+               style="min-height:40px;padding:var(--sp-2) var(--sp-5);font-size:var(--fs-sm)">Скачать бесплатно</a>
+        </div>
+    </div>
 </nav>
 
-<div class="hero">
-    <span class="badge">💡 Наука о привычках</span>
-    <h1>7 научно обоснованных способов выработать привычку пить воду</h1>
-    <div class="meta">
-        <span><i class="fas fa-calendar"></i> 15 марта 2026</span>
-        <span><i class="fas fa-clock"></i> 5 мин чтения</span>
-        <span><i class="fas fa-pen"></i> <a href="/hakkimizda-ru.html" rel="author">Команда Suu</a></span>
-    </div>
-</div>
+<main id="main">
 
-<div class="container">
-    <div class="intro">
-        Знать, что нужно пить больше воды, легко. Делать это последовательно — сложно. Хорошая новость: <strong>привычки гидратации — одни из самых лёгких в формировании</strong>, если использовать правильные поведенческие стратегии. Вот 7 методов, основанных на науке о привычках.
+<header class="section" style="padding-block-end:var(--sp-8)">
+    <div class="container container--narrow">
+        <nav class="breadcrumb small text-subtle" aria-label="Breadcrumb"
+             style="margin-block-end:var(--sp-4)">
+            <a href="/hosgeldiniz-ru.html">Suu</a>
+            <span aria-hidden="true"> › </span>
+            <a href="/blog-ru.html">Блог</a>
+            <span aria-hidden="true"> › </span>
+            <span aria-current="page">Забываю пить воду: 7 научных способов сделать это привычкой (и отслеживать в Suu)</span>
+        </nav>
+        <span class="badge badge--new">💧 Руководство · Привычка пить воду</span>
+        <h1 style="margin-block-start:var(--sp-4)">Забываю пить воду: 7 научных способов сделать это привычкой (и отслеживать в Suu)</h1>
+        <p class="small text-subtle">Опубликовано: 15 марта 2026 · Обновлено: 27 сентября 2026 · Furkan Mert Fındıklı · 7 мин чтения</p>
     </div>
+</header>
 
-    <div class="habit-card">
-        <div class="habit-header">
-            <div class="habit-number">1</div>
-            <h3>Начните с «водного якоря» — пейте сразу после пробуждения</h3>
+<div class="container container--narrow stack--lg" style="padding-block-end:var(--sp-24)">
+
+    <!-- CEVAP-ÖNCE: alıntılanan blok burasıdır -->
+    <div class="answer-box">
+        <p><strong>Короткий ответ:</strong> Забывать пить воду — чаще всего не про силу воли, а про отсутствие триггеров. Лучше всего работают: стакан воды сразу после пробуждения, бутылка на виду, привязка питья к существующей привычке (стакан перед каждым приёмом пищи) и маленькая стартовая цель. Suu переносит эти триггеры в телефон с помощью умных напоминаний и серии дней; учёт воды бесплатный.</p>
+    </div>
+    <aside class="callout health-note" role="note">
+        <p><strong>Эта статья не является медицинской консультацией.</strong></p>
+        <p>Если у вас болезни сердца или почек либо врач рекомендовал ограничить жидкость, соблюдайте это ограничение; цели в статье рассчитаны на здоровых взрослых. Очень большой объём воды за короткое время может опасно снизить натрий в крови — распределяйте воду в течение дня.</p>
+        <p>Обратитесь к врачу, если заметили:</p>
+        <ul>
+            <li>постоянную сильную жажду и частое мочеиспускание (нужно проверить сахар крови)</li>
+            <li>тёмную мочу, головокружение или спутанность сознания, несмотря на обильное питьё</li>
+        </ul>
+    </aside>
+
+    <div class="disclosure">Это руководство написала команда из двух человек, которая разрабатывает Suu. Мы рекомендуем своё приложение, но способы опираются на исследования привычек и рекомендации ВОЗ — те же шаги можно выполнять и без Suu.</div>
+    <p>Утренний кофе, чай днём, ужин… и к концу дня вы понимаете, что выпили всего два стакана воды. Дело не в том, что вы не любите воду, а в том, что в течение дня о ней ничто не напоминает. Жажда часто приходит поздно и легко заглушается работой, дорогой или долгой поездкой.</p>
+    <p>Исследования привычек здесь однозначны: поведение закрепляется, когда привязано к триггеру. Семь способов ниже построены на том, чтобы вписать воду в день через триггеры.</p>
+
+    
+    <section>
+        <h2>7 способов с доказательной базой</h2>
+        <p>Не пробуйте все сразу: выберите два, применяйте две недели, затем добавьте третий.</p>
+        <ul>
+            <li><strong>Добавьте в утренний ритуал:</strong> стакан воды сразу после пробуждения, до телефона. Самый простой стакан дня для организма, который всю ночь был без жидкости.</li>
+            <li><strong>Держите на виду:</strong> бутылка на столе, в машине или в сумке. Что на виду, то и выпивается.</li>
+            <li><strong>Привяжите к существующей привычке:</strong> составьте план «если — то», например «стакан воды перед каждым приёмом пищи». В одном исследовании люди с таким планом сообщали, что пили больше воды за пять дней наблюдения.<sup><a href="#ref1">1</a></sup></li>
+            <li><strong>Начните с малого:</strong> если сейчас вы пьёте два стакана, цель — четыре, а не восемь. Достижимую цель сложнее бросить.</li>
+            <li><strong>Берегите серию:</strong> видеть дни подряд — сильный повод не рвать цепочку.</li>
+            <li><strong>Вместе:</strong> взаимные напоминания или небольшое соревнование с другом работают дольше, чем усилия в одиночку.</li>
+            <li><strong>Поменяйте вкус:</strong> мята, лимон, огурец или замороженные ягоды. Газированная минеральная вода тоже засчитывается полностью.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Сколько воды пить в день?</h2>
+        <p>Единой цифры для всех нет: потребность зависит от веса, погоды, активности и питания. ВОЗ, в свою очередь, советует ограничивать сладкие напитки — поэтому лучшая жидкость «по умолчанию» — вода.<sup><a href="#ref3">3</a></sup> В жару, при тренировках, беременности и грудном вскармливании нужно больше.</p>
+        <p>Не каждый напиток засчитывается как вода полностью, но и нулём ни один не считается; про чай и кофе — отдельная статья. Самый практичный ориентир — цвет мочи: светло-соломенный хорошо, тёмный — признак нехватки.</p>
+        <div class="callout"><p>Ждать жажды — не лучшая стратегия: в эксперименте с женщинами потеря жидкости всего в 1,36% массы тела ухудшала настроение, усиливала ощущение усталости и снижала концентрацию.<sup><a href="#ref4">4</a></sup></p></div>
+    </section>
+    <section>
+        <h2>Сколько времени нужно, чтобы появилась привычка?</h2>
+        <p>В одном исследовании новому поведению в среднем требовалось 66 дней, чтобы стать автоматическим, — от 18 до 254 дней у разных людей.<sup><a href="#ref2">2</a></sup> Опираться на напоминания в первые недели нормально; цель — со временем нуждаться в них меньше. Один пропущенный день привычку не ломает — важно продолжить на следующий.</p>
+    </section>
+
+    <section class="in-app" id="in-app">
+        <h2>Где отслеживать это в Suu</h2>
+        <p>Учёт воды — в бесплатном плане. Названия пунктов — как в интерфейсе:</p>
+        <ol class="ranked stack">
+            <li>
+                <strong>Умные уведомления</strong>
+                <p class="small text-subtle"><bdi>iPhone</bdi>: Настройки → Настройки уведомлений → <strong>Умные уведомления</strong><br><bdi>Android</bdi>: Настройки → <strong>Умные уведомления</strong></p>
+                <p>Напоминают о первом глотке утром и о воде после еды — способы «утренний ритуал» и «привязка к привычке» прямо в телефоне.</p>
+            </li>
+            <li>
+                <strong>Вода в одно касание</strong>
+                <p class="small text-subtle">Кнопки добавления воды на главном экране</p>
+                <p>Записывайте стакан в момент, когда выпили. На iPhone воду можно добавить и с виджета, и через Siri, и прямо с Apple Watch.</p>
+            </li>
+            <li>
+                <strong>Серия и заморозка серии</strong>
+                <p class="small text-subtle">Индикатор <strong>Серия</strong> на главном экране</p>
+                <p>Каждый день, когда вы выпиваете хотя бы половину нормы, серия растёт; если день пропущен, её защитит <strong>Заморозка серии</strong>.</p>
+            </li>
+            <li>
+                <strong>Рейтинг воды и «Подтолкнуть» с друзьями</strong>
+                <p class="small text-subtle">Настройки → <strong>Рейтинг · Таблица очков</strong> → Друзья → <strong>Вода</strong> · друг → <strong>Подтолкнуть</strong></p>
+                <p>Видно, сколько дней за неделю каждый выполнил норму воды; другу, который забыл, можно отправить напоминание одним касанием.</p>
+            </li>
+            <li>
+                <strong>Индекс Suu</strong>
+                <p class="small text-subtle"><bdi>iPhone</bdi>: Вкладка <strong>Ты</strong> → Вода → <strong>Suu Индекс</strong><br><bdi>Android</bdi>: <strong>Статистика</strong> → <strong>Suu Индекс</strong></p>
+                <p>Оценивает дневную гидратацию от 0 до 100; норма сама подстраивается под погоду и тренировки.</p>
+            </li>
+        </ol>
+        <div class="btn-row" style="margin-block-start:var(--sp-4)">
+            <a href="/app?src=guide-inapp-water-drinking-habits" class="btn btn--primary" data-cta="guide-inapp">Скачать Suu бесплатно</a>
         </div>
-        <p>После 6–8 часов сна вы просыпаетесь обезвоженным. Сделать воду первым, что вы потребляете, создаёт ежедневный якорь — необсуждаемый триггер привычки. Поставьте большой стакан воды у кровати с вечера. Цель: 300–500 мл до кофе, до телефона, до всего остального.</p>
-        <p>Эта одна привычка может добавить 10–15% к дневной норме, почти не требуя силы воли, потому что она привязана к действию, которое вы уже делаете (просыпаетесь).</p>
-        <div class="science-note"><strong>🧠 Наука:</strong> Стек привычек — присоединение нового поведения к существующему — одна из самых научно подтверждённых стратегий формирования привычек (Джеймс Клир, «Атомные привычки»; Б. Дж. Фогг, «Tiny Habits»).</div>
-    </div>
+    </section>
 
-    <div class="habit-card">
-        <div class="habit-header">
-            <div class="habit-number">2</div>
-            <h3>Используйте умные напоминания, а не таймер</h3>
-        </div>
-        <p>Большинство приложений шлёт напоминания каждые 2 часа независимо от реального потребления. Это неэффективно — напоминание может прийти сразу после того, как вы выпили 600 мл, или не прийти, когда в полдень вы отстаёте на 800 мл.</p>
-        <p>Подход Suu иной: <strong>умные уведомления на основе цели</strong>, которые срабатывают, когда вы реально отстаёте. Это значит, что напоминания всегда уместны, что резко снижает усталость от уведомлений.</p>
-        <div class="science-note"><strong>🧠 Наука:</strong> Контекстные подсказки эффективнее напоминаний по расписанию. Исследования показывают, что они повышают соблюдение режима до 40%.</div>
-    </div>
+    <section class="verdict">
+        <h2 style="margin-block-end:var(--sp-4)">Коротко</h2>
+        <p>Решение для тех, кто забывает пить воду, — не больше силы воли, а лучшие триггеры: утренний стакан, бутылка на виду, стакан перед едой и достижимая цель.</p>
+        <p>Первые два месяца опирайтесь на напоминания и серию; по мере того как привычка закрепляется, они будут нужны всё меньше.</p>
+    </section>
 
-    <div class="habit-card">
-        <div class="habit-header">
-            <div class="habit-number">3</div>
-            <h3>Уменьшайте трение — записывайте в одно касание</h3>
-        </div>
-        <p>Чем сложнее что-то сделать, тем меньше вы это делаете. Если запись питья требует открыть приложение, листать меню — вы перестанете отслеживать через несколько дней. Решение: минимизировать трение до абсолютного минимума.</p>
-        <p>Suu предлагает виджет на экране блокировки iOS — записывайте воду одним касанием, даже не разблокируя телефон. Dynamic Island показывает прогресс мгновенно. Меньше трения = больше последовательности.</p>
-        <div class="science-note"><strong>🧠 Наука:</strong> Снижение трения — ключевой принцип дизайна поведения (Б. Дж. Фогг). Каждый дополнительный шаг снижает завершаемость на 10–25%.</div>
-    </div>
-
-    <div class="habit-card">
-        <div class="habit-header">
-            <div class="habit-number">4</div>
-            <h3>Социальная подотчётность — соревнуйтесь с друзьями</h3>
-        </div>
-        <p>Знание того, что кто-то видит ваш прогресс, — один из мощнейших мотиваторов. Поэтому партнёры по спорту, диете и фитнес-челленджи работают намного лучше, чем одиночные попытки.</p>
-        <p>Система <strong>лиги друзей</strong> в Suu позволяет соревноваться по дневной гидратации. Вы видите свой прогресс на фоне других в реальном времени. Это превращает сольную привычку в общее дело и резко повышает долгосрочную последовательность.</p>
-        <div class="science-note"><strong>🧠 Наука:</strong> Социальная подотчётность повышает достижение цели в среднем на 65%, а конкретный «партнёр по подотчётности» — на 95% (Association for Talent Development, 2014).</div>
-    </div>
-
-    <div class="habit-card">
-        <div class="habit-header">
-            <div class="habit-number">5</div>
-            <h3>Держите воду на виду</h3>
-        </div>
-        <p>Если воды не видно — вы не пьёте. Поставьте бутылку на стол, кухонную столешницу, везде, где проводите время. Простой вид воды запускает желание выпить — это работает дизайн среды.</p>
-        <p>Исследование Корнелльского университета 2013 года показало, что люди ели в 3 раза больше той еды, которая была наиболее заметна на их кухне. Тот же принцип работает с водой.</p>
-        <div class="science-note"><strong>🧠 Наука:</strong> Средовые подсказки — одни из сильнейших драйверов автоматического поведения. Стратегическое размещение воды — пример «архитектуры выбора».</div>
-    </div>
-
-    <div class="habit-card">
-        <div class="habit-header">
-            <div class="habit-number">6</div>
-            <h3>Учитывайте всё — кофе, чай, сок</h3>
-        </div>
-        <p>Многие недооценивают свою гидратацию, считая только чистую воду. Но кофе, чай, травяные напитки и даже некоторая еда вносят вклад в дневное потребление. Главное — учитывать их точно.</p>
-        <p>В базе Suu 91 напиток, у каждого свой <strong>коэффициент обезвоживания</strong>. 250 мл кофе не гидратирует так же, как 250 мл воды. Точный учёт ведёт к точным привычкам.</p>
-        <div class="science-note"><strong>🧠 Наука:</strong> Что измеряется — тем управляют. Точный самомониторинг — одна из самых эффективных стратегий изменения поведения.</div>
-    </div>
-
-    <div class="habit-card">
-        <div class="habit-header">
-            <div class="habit-number">7</div>
-            <h3>Празднуйте маленькие победы — серии и инерция</h3>
-        </div>
-        <p>Достижение дневной цели стоит отмечать. Серии (последовательные дни выполнения цели) — один из самых эффективных способов удержать долгосрочную привычку. Эффект «не разрывай цепь» означает, что каждый успешный день делает следующий вероятнее.</p>
-        <p>Suu отслеживает серии и прогресс во времени, давая видимое доказательство последовательности. Даже 3-дневная серия создаёт инерцию; 30-дневная — формирует идентичность («Я тот, кто следит за гидратацией»).</p>
-        <div class="science-note"><strong>🧠 Наука:</strong> Поведенческая инерция и привычки на основе идентичности задокументированы в исследованиях формирования привычек.</div>
-    </div>
-
-    <h2>Самый быстрый способ начать</h2>
-    <p>Не нужно внедрять все 7 стратегий сразу. Начните с двух: <strong>утренний якорь</strong> (выпейте 300 мл сразу после пробуждения) и <strong>скачайте Suu</strong>, чтобы отслеживать потребление и получать умные напоминания. Этих двух изменений хватит, чтобы войти в ритм за неделю.</p>
-
-    <div class="cta-box" style="padding: 0; overflow: hidden; border-radius: 16px;">
-    <div style="display: flex; align-items: center; gap: 20px; padding: 24px; flex-wrap: wrap;">
-        <img src="../../assets/screenshots/ana-ekran.webp" width="600" height="1300" alt="Приложение Suu" style="width: 120px; height: auto; border-radius: 16px; flex-shrink: 0;" loading="lazy">
-        <div style="flex: 1; min-width: 200px;">
-            <h3 style="margin: 0 0 12px;">Стройте здоровые привычки с Suu</h3>
-            <ul style="list-style: none; padding: 0; margin: 0 0 20px;">
-                <li style="padding: 4px 0; font-size: 0.95rem;">✓ 100+ категорий напитков</li>
-                <li style="padding: 4px 0; font-size: 0.95rem;">✓ Лиги с друзьями</li>
-                <li style="padding: 4px 0; font-size: 0.95rem;">✓ Умные напоминания</li>
-                <li style="padding: 4px 0; font-size: 0.95rem;">✓ Бесплатно — iOS и Android</li>
-            </ul>
-            <div class="cta-buttons">
-                <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" class="cta-btn" target="_blank" rel="noopener">
-                    <i class="fab fa-apple"></i> App Store
-                </a>
-                <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro" class="cta-btn" target="_blank" rel="noopener">
-                    <i class="fab fa-google-play"></i> Google Play
-                </a>
+    <section class="cta-band" style="border-radius:var(--r-lg);padding-block:var(--sp-12)" data-cta="guide-body">
+        <div class="container">
+            <h2 style="font-size:var(--fs-2xl)">Пусть телефон помнит о воде</h2>
+            <p>Умные напоминания, серия и рейтинг с друзьями · учёт воды бесплатный</p>
+            <div class="btn-row btn-row--center" style="margin-block-start:var(--sp-6)">
+                <a href="/app?src=guide-water-drinking-habits" class="btn btn--secondary btn--lg">Скачать Suu бесплатно</a>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section>
+        <h2>Частые вопросы</h2>
+        <div class="faq">
+            <details class="faq__item" open>
+                <summary>Постоянно забываю пить воду — что делать?</summary>
+                <div><p>Привяжите воду к уже существующим привычкам: стакан после пробуждения и стакан перед каждым приёмом пищи. Держите бутылку на виду, начните с маленькой цели и в первые недели пользуйтесь напоминаниями.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Сколько воды нужно пить в день?</summary>
+                <div><p>Единой нормы нет: потребность зависит от веса, погоды, активности и питания. В жару и при тренировках нужно больше; практичный ориентир — светлая моча.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>За сколько дней формируется привычка пить воду?</summary>
+                <div><p>В одном исследовании новому поведению в среднем требовалось 66 дней, чтобы стать автоматическим, — от 18 до 254 дней у разных людей. Пропущенные дни привычку не ломают.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Не люблю пить воду — что можно сделать?</summary>
+                <div><p>Добавьте мяту, лимон, огурец или замороженные ягоды; газированная минеральная вода засчитывается полностью. А замена воды сладкими напитками добавляет сахар и калории.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Достаточно ли ждать жажды?</summary>
+                <div><p>Большинству — нет: жажда может приходить поздно и заглушается в загруженные дни. В экспериментах потеря жидкости около 1,4% массы тела уже влияла на настроение и концентрацию.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Есть ли бесплатное приложение-напоминание о воде?</summary>
+                <div><p>В Suu учёт воды, умные напоминания, серия и еженедельный рейтинг с друзьями — в бесплатном плане. Полный список напитков и безлимитный AI — в Premium.</p></div>
+            </details>
+        </div>
+    </section>
+    <section>
+        <h2>Источники</h2>
+        <ol class="small">
+            <li id="ref1"><a href="https://pubmed.ncbi.nlm.nih.gov/36646386/" rel="nofollow noopener" target="_blank">Rodger A и соавт. — Can a simple plan change a complex behavior? Implementation intentions in the context of water drinking. Appetite, 2023</a></li>
+            <li id="ref2"><a href="https://doi.org/10.1002/ejsp.674" rel="nofollow noopener" target="_blank">Lally P и соавт. — How are habits formed: modelling habit formation in the real world. European Journal of Social Psychology, 2010</a></li>
+            <li id="ref3"><a href="https://www.who.int/ru/news-room/fact-sheets/detail/healthy-diet" rel="nofollow noopener" target="_blank">ВОЗ — Здоровое питание (информационный бюллетень)</a></li>
+            <li id="ref4"><a href="https://pubmed.ncbi.nlm.nih.gov/22190027/" rel="nofollow noopener" target="_blank">Armstrong LE и соавт. — Mild dehydration affects mood in healthy young women. J Nutr, 2012</a></li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Похожие статьи</h2>
+        <div class="cards">
+            <a class="card" href="/blog/ru/skolko-vody-pit-v-den.html">
+                <h3 style="font-size:var(--fs-md)">Сколько воды пить в день?</h3>
+                <p>Как считается личная норма.</p>
+            </a>
+            <a class="card" href="/blog/ru/kofe-chay-i-voda.html">
+                <h3 style="font-size:var(--fs-md)">Считается ли кофе в норму воды?</h3>
+                <p>Как засчитываются чай, кофе и напитки.</p>
+            </a>
+            <a class="card" href="/blog/ru/priznaki-obezvozhivaniya.html">
+                <h3 style="font-size:var(--fs-md)">Признаки обезвоживания</h3>
+                <p>Сигналы, что телу нужна вода.</p>
+            </a>
+            <a class="card" href="/blog/ru/vodnyi-challenge-s-druzyami.html">
+                <h3 style="font-size:var(--fs-md)">Водный челлендж с друзьями</h3>
+                <p>Почему вместе пить проще.</p>
+            </a>
+        </div>
+    </section>
+
+    <p class="small text-subtle">Suu не предназначен для медицинской диагностики или лечения. По вопросам здоровья консультируйтесь с врачом.</p>
+
+    <p>
+        <a href="/blog-ru.html">← Назад в блог</a>
+    </p>
 </div>
 
-    <h2>Похожие статьи</h2>
-    <div class="related-grid">
-        <a href="polza-pitia-vody.html" class="related-card">
-            <div class="tag">Здоровье</div>
-            <h4>10 научно доказанных преимуществ воды</h4>
-        </a>
-        <a href="skolko-vody-pit-v-den.html" class="related-card">
-            <div class="tag">Руководство</div>
-            <h4>Сколько воды пить в день?</h4>
-        </a>
-        <a href="luchshee-prilozhenie-dlya-vody.html" class="related-card">
-            <div class="tag">Сравнение</div>
-            <h4>Лучшее приложение для воды в 2026</h4>
-        </a>
-    </div>
+</main>
 
-    <div class="footer-nav">
-        <a href="../../blog-ru.html"><i class="fas fa-arrow-left"></i> Все статьи</a>
-        <a href="/hosgeldiniz-ru.html">Главная Suu <i class="fas fa-home"></i></a>
-        <a href="/download-ru.html"><i class="fas fa-download"></i> Скачать бесплатно</a>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__bottom" style="border:0">
+            <p class="small mb-0">© 2026 Suu · Furkan Mert Fındıklı</p>
+            <p class="small mb-0"><a href="/hosgeldiniz-ru.html">suuapp.com</a></p>
+        </div>
     </div>
+</footer>
+
+<div class="sticky-cta" data-cta="sticky">
+    <a href="/app?src=sticky" class="btn btn--secondary">App Store</a>
+    <a href="/app?src=sticky" class="btn btn--primary">Google Play</a>
 </div>
 
-<script src="../../lang-switcher.js?v=3" defer></script>
 <script src="/assets/js/suu-badge.js?v=2" defer></script>
 </body>
 </html>

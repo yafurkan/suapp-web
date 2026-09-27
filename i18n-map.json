@@ -91,7 +91,10 @@
    "tr": "/blog/su-icme-aliskanlik.html",
    "en": "/blog/en/water-drinking-habits.html",
    "ar": "/blog/ar/adat-shurb-almae.html",
-   "ru": "/blog/ru/privychka-pit-vodu.html"
+   "ru": "/blog/ru/privychka-pit-vodu.html",
+   "de": "/blog/de/wasser-trinken-vergessen.html",
+   "it": "/blog/it/dimentico-di-bere-acqua.html",
+   "uk": "/blog/uk/zabuvayu-pyty-vodu.html"
   },
   "afdal-tatbiq-hisab-suerat.html": {
    "tr": "/blog/en-iyi-kalori-uygulamasi.html",
@@ -233,7 +236,10 @@
    "tr": "/blog/kahve-cay-su-sayar-mi.html",
    "en": "/blog/en/coffee-tea-hydration.html",
    "ar": "/blog/ar/alqahwa-walshay-walmae.html",
-   "ru": "/blog/ru/kofe-chay-i-voda.html"
+   "ru": "/blog/ru/kofe-chay-i-voda.html",
+   "de": "/blog/de/zaehlt-kaffee-zur-trinkmenge.html",
+   "it": "/blog/it/il-caffe-conta-come-acqua.html",
+   "uk": "/blog/uk/chy-rakhuyetsya-kava-yak-voda.html"
   },
   "alwade-albasit-walmutaqaddim.html": {
    "tr": "/blog/basit-gelismis-mod.html",
@@ -483,6 +489,15 @@
    "it": "/blog/it/perche-sono-sempre-stanco.html",
    "uk": "/blog/uk/chomu-ya-postiyno-vtomlenyi.html"
   },
+  "chy-rakhuyetsya-kava-yak-voda.html": {
+   "tr": "/blog/kahve-cay-su-sayar-mi.html",
+   "en": "/blog/en/coffee-tea-hydration.html",
+   "ar": "/blog/ar/alqahwa-walshay-walmae.html",
+   "ru": "/blog/ru/kofe-chay-i-voda.html",
+   "de": "/blog/de/zaehlt-kaffee-zur-trinkmenge.html",
+   "it": "/blog/it/il-caffe-conta-come-acqua.html",
+   "uk": "/blog/uk/chy-rakhuyetsya-kava-yak-voda.html"
+  },
   "chy-varto-stvoryuvaty-zastosunok-treker.html": {
    "tr": "/blog/takip-uygulamasi-yapmak-mantikli-mi.html",
    "en": "/blog/en/should-you-build-a-tracking-app.html",
@@ -496,7 +511,10 @@
    "tr": "/blog/kahve-cay-su-sayar-mi.html",
    "en": "/blog/en/coffee-tea-hydration.html",
    "ar": "/blog/ar/alqahwa-walshay-walmae.html",
-   "ru": "/blog/ru/kofe-chay-i-voda.html"
+   "ru": "/blog/ru/kofe-chay-i-voda.html",
+   "de": "/blog/de/zaehlt-kaffee-zur-trinkmenge.html",
+   "it": "/blog/it/il-caffe-conta-come-acqua.html",
+   "uk": "/blog/uk/chy-rakhuyetsya-kava-yak-voda.html"
   },
   "cola-abgewoehnen.html": {
    "tr": "/blog/kolayi-birakmak.html",
@@ -581,6 +599,15 @@
    "de": "/blog/de/kaloriendefizit.html",
    "it": "/blog/it/deficit-calorico.html",
    "uk": "/blog/uk/defitsyt-kaloriy.html"
+  },
+  "dimentico-di-bere-acqua.html": {
+   "tr": "/blog/su-icme-aliskanlik.html",
+   "en": "/blog/en/water-drinking-habits.html",
+   "ar": "/blog/ar/adat-shurb-almae.html",
+   "ru": "/blog/ru/privychka-pit-vodu.html",
+   "de": "/blog/de/wasser-trinken-vergessen.html",
+   "it": "/blog/it/dimentico-di-bere-acqua.html",
+   "uk": "/blog/uk/zabuvayu-pyty-vodu.html"
   },
   "domashnij-pitomec-mini-igry.html": {
    "tr": "/blog/suu-evcil-hayvan-mini-oyunlar.html",
@@ -949,6 +976,15 @@
    "ar": "/blog/ar/almae-walrida.html",
    "ru": "/blog/ru/voda-i-kormlenie.html"
   },
+  "il-caffe-conta-come-acqua.html": {
+   "tr": "/blog/kahve-cay-su-sayar-mi.html",
+   "en": "/blog/en/coffee-tea-hydration.html",
+   "ar": "/blog/ar/alqahwa-walshay-walmae.html",
+   "ru": "/blog/ru/kofe-chay-i-voda.html",
+   "de": "/blog/de/zaehlt-kaffee-zur-trinkmenge.html",
+   "it": "/blog/it/il-caffe-conta-come-acqua.html",
+   "uk": "/blog/uk/chy-rakhuyetsya-kava-yak-voda.html"
+  },
   "index.html": {
    "tr": "/",
    "en": "/hosgeldiniz-en.html",
@@ -980,7 +1016,10 @@
    "tr": "/blog/kahve-cay-su-sayar-mi.html",
    "en": "/blog/en/coffee-tea-hydration.html",
    "ar": "/blog/ar/alqahwa-walshay-walmae.html",
-   "ru": "/blog/ru/kofe-chay-i-voda.html"
+   "ru": "/blog/ru/kofe-chay-i-voda.html",
+   "de": "/blog/de/zaehlt-kaffee-zur-trinkmenge.html",
+   "it": "/blog/it/il-caffe-conta-come-acqua.html",
+   "uk": "/blog/uk/chy-rakhuyetsya-kava-yak-voda.html"
   },
   "kahveyi-azaltmak.html": {
    "tr": "/blog/kahveyi-azaltmak.html",
@@ -1116,7 +1155,10 @@
    "tr": "/blog/kahve-cay-su-sayar-mi.html",
    "en": "/blog/en/coffee-tea-hydration.html",
    "ar": "/blog/ar/alqahwa-walshay-walmae.html",
-   "ru": "/blog/ru/kofe-chay-i-voda.html"
+   "ru": "/blog/ru/kofe-chay-i-voda.html",
+   "de": "/blog/de/zaehlt-kaffee-zur-trinkmenge.html",
+   "it": "/blog/it/il-caffe-conta-come-acqua.html",
+   "uk": "/blog/uk/chy-rakhuyetsya-kava-yak-voda.html"
   },
   "kofein-i-sahar.html": {
    "tr": "/blog/kafein-seker-takibi.html",
@@ -1556,7 +1598,10 @@
    "tr": "/blog/su-icme-aliskanlik.html",
    "en": "/blog/en/water-drinking-habits.html",
    "ar": "/blog/ar/adat-shurb-almae.html",
-   "ru": "/blog/ru/privychka-pit-vodu.html"
+   "ru": "/blog/ru/privychka-pit-vodu.html",
+   "de": "/blog/de/wasser-trinken-vergessen.html",
+   "it": "/blog/it/dimentico-di-bere-acqua.html",
+   "uk": "/blog/uk/zabuvayu-pyty-vodu.html"
   },
   "priznaki-obezvozhivaniya.html": {
    "tr": "/blog/susuzluk-belirtileri.html",
@@ -1775,7 +1820,10 @@
    "tr": "/blog/su-icme-aliskanlik.html",
    "en": "/blog/en/water-drinking-habits.html",
    "ar": "/blog/ar/adat-shurb-almae.html",
-   "ru": "/blog/ru/privychka-pit-vodu.html"
+   "ru": "/blog/ru/privychka-pit-vodu.html",
+   "de": "/blog/de/wasser-trinken-vergessen.html",
+   "it": "/blog/it/dimentico-di-bere-acqua.html",
+   "uk": "/blog/uk/zabuvayu-pyty-vodu.html"
   },
   "su-icme-lig-sistemi.html": {
    "tr": "/blog/su-icme-lig-sistemi.html",
@@ -2062,6 +2110,15 @@
    "it": "/blog/it/acqua-calorie-allenamento-una-app.html",
    "uk": "/blog/uk/voda-kalorii-trenuvannya-odyn-zastosunok.html"
   },
+  "wasser-trinken-vergessen.html": {
+   "tr": "/blog/su-icme-aliskanlik.html",
+   "en": "/blog/en/water-drinking-habits.html",
+   "ar": "/blog/ar/adat-shurb-almae.html",
+   "ru": "/blog/ru/privychka-pit-vodu.html",
+   "de": "/blog/de/wasser-trinken-vergessen.html",
+   "it": "/blog/it/dimentico-di-bere-acqua.html",
+   "uk": "/blog/uk/zabuvayu-pyty-vodu.html"
+  },
   "water-and-kidney-health.html": {
    "tr": "/blog/su-ve-bobrek-sagligi.html",
    "en": "/blog/en/water-and-kidney-health.html",
@@ -2123,7 +2180,10 @@
    "tr": "/blog/su-icme-aliskanlik.html",
    "en": "/blog/en/water-drinking-habits.html",
    "ar": "/blog/ar/adat-shurb-almae.html",
-   "ru": "/blog/ru/privychka-pit-vodu.html"
+   "ru": "/blog/ru/privychka-pit-vodu.html",
+   "de": "/blog/de/wasser-trinken-vergessen.html",
+   "it": "/blog/it/dimentico-di-bere-acqua.html",
+   "uk": "/blog/uk/zabuvayu-pyty-vodu.html"
   },
   "water-tracking-gamification.html": {
    "en": "/blog/en/water-tracking-gamification.html",
@@ -2192,6 +2252,24 @@
   },
   "yazio-vs-myfitnesspal.html": {
    "en": "/blog/en/yazio-vs-myfitnesspal.html"
+  },
+  "zabuvayu-pyty-vodu.html": {
+   "tr": "/blog/su-icme-aliskanlik.html",
+   "en": "/blog/en/water-drinking-habits.html",
+   "ar": "/blog/ar/adat-shurb-almae.html",
+   "ru": "/blog/ru/privychka-pit-vodu.html",
+   "de": "/blog/de/wasser-trinken-vergessen.html",
+   "it": "/blog/it/dimentico-di-bere-acqua.html",
+   "uk": "/blog/uk/zabuvayu-pyty-vodu.html"
+  },
+  "zaehlt-kaffee-zur-trinkmenge.html": {
+   "tr": "/blog/kahve-cay-su-sayar-mi.html",
+   "en": "/blog/en/coffee-tea-hydration.html",
+   "ar": "/blog/ar/alqahwa-walshay-walmae.html",
+   "ru": "/blog/ru/kofe-chay-i-voda.html",
+   "de": "/blog/de/zaehlt-kaffee-zur-trinkmenge.html",
+   "it": "/blog/it/il-caffe-conta-come-acqua.html",
+   "uk": "/blog/uk/chy-rakhuyetsya-kava-yak-voda.html"
   }
  }
 }

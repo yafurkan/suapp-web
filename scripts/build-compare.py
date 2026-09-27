@@ -80,7 +80,8 @@ LOCAL_AUTHORITIES = {
     "ar": ("moh.gov.sa", "sfda.gov.sa", "emro.who.int", "mohap.gov.ae", "who.int"),
     "ru": ("rospotrebnadzor.ru", "minzdrav.gov.ru", "who.int"),
     "de": ("dge.de", "bioeg.de", "bzga.de", "gesund.bund.de", "rki.de", "degam.de"),
-    "it": ("crea.gov.it", "salute.gov.it", "iss.it", "issalute.it", "sinu.it"),   # issalute.it = ISS halk portalı
+    "it": ("crea.gov.it", "salute.gov.it", "iss.it", "issalute.it", "sinu.it",   # issalute.it = ISS halk portalı
+           "efsa.europa.eu"),                                                   # EFSA: AB gıda otoritesi, merkezi Parma
     "uk": ("moz.gov.ua", "phc.org.ua", "who.int"),
 }
 
@@ -338,7 +339,9 @@ def _guide_jsonld(lang: str, data: dict, page: dict, facts: dict, url: str, imag
             "headline": page["h1"],
             "description": page["meta"]["description"],
             "image": image,
-            "datePublished": data["published"],
+            # Sayfa düzeyinde `published`: mevcut bir yazı rehber boru hattına
+            # taşındığında her dilin ASIL yayın tarihi korunur (ör. EN 03-22, RU 05-07).
+            "datePublished": page.get("published", data["published"]),
             "dateModified": data.get("modified", data["published"]),
             "inLanguage": lang,
             "mainEntityOfPage": url,
@@ -462,10 +465,11 @@ def main() -> int:
                 "cta_src": f"guide-{topic}" if kind == "guide" else "compare-body",
             }
             if kind == "guide":
-                ctx["published_display"] = display_date(lang, data["published"])
+                page_published = page.get("published", data["published"])
+                ctx["published_display"] = display_date(lang, page_published)
                 ctx["modified_iso"] = data.get("modified", data["published"])
                 ctx["modified_display"] = (display_date(lang, data["modified"])
-                                           if data.get("modified") and data["modified"] != data["published"]
+                                           if data.get("modified") and data["modified"] != page_published
                                            else "")
             ctx.update(page)          # sayfa değerleri varsayılanları ezer
             ctx["kind"] = kind        # tür klasörden gelir; JSON ezemez

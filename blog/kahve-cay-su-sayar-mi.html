@@ -3,381 +3,456 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kahve Su Yerine Geçer mi? Yıllardır Bildiğiniz Yanlışmış | Suu</title>
-    <meta name="description" content="&quot;Kahve susuzluk yapar&quot; diye biliyordunuz değil mi? Bilim bambaşka bir şey söylüyor. Hangi içecekler gerçekten su sayılır, hangisi saydırmaz? Dehidratasyon faktörü nedir?">
+
+    <!-- ÜRETİLMİŞ DOSYA — elle düzenlemeyin.
+         Kaynak: content/guides/coffee-counts-as-water.json + content/compare/_template.html.j2
+         Yeniden üret: python3 scripts/build-compare.py --apply -->
+
+    <title>Kahve Su Yerine Geçer mi? İçecek Hidrasyon Tablosu | Suu</title>
+    <meta name="description" content="Ölçülü kahve ve çay susuz bırakmaz, suya yakın sıvı kazandırır. Filtre kahve, Türk kahvesi, çay ve kolanın su hesabı, kafein sınırı ve Suu&#39;nun katsayıları.">
+    <meta name="keywords" content="kahve su yerine geçer mi, çay su yerine geçer mi, kahve susuzluk yapar mı, kahve suya sayılır mı, türk kahvesi su, günde kaç fincan kahve, kafein sınırı, içecek hidrasyon katsayısı">
     <meta name="apple-itunes-app" content="app-id=6757619920">
-    <meta name="keywords" content="kahve su yerine geçer mi, çay su sayar mı, dehidratasyon faktörü, içecek hidrasyon, kahve su kaybı">
+
     <link rel="canonical" href="https://suuapp.com/blog/kahve-cay-su-sayar-mi.html">
     <!-- Hreflang cluster (auto-injected) -->
     <link rel="alternate" hreflang="tr" href="https://suuapp.com/blog/kahve-cay-su-sayar-mi.html">
     <link rel="alternate" hreflang="en" href="https://suuapp.com/blog/en/coffee-tea-hydration.html">
     <link rel="alternate" hreflang="ar" href="https://suuapp.com/blog/ar/alqahwa-walshay-walmae.html">
     <link rel="alternate" hreflang="ru" href="https://suuapp.com/blog/ru/kofe-chay-i-voda.html">
+    <link rel="alternate" hreflang="de" href="https://suuapp.com/blog/de/zaehlt-kaffee-zur-trinkmenge.html">
+    <link rel="alternate" hreflang="it" href="https://suuapp.com/blog/it/il-caffe-conta-come-acqua.html">
+    <link rel="alternate" hreflang="uk" href="https://suuapp.com/blog/uk/chy-rakhuyetsya-kava-yak-voda.html">
     <link rel="alternate" hreflang="x-default" href="https://suuapp.com/blog/en/coffee-tea-hydration.html">
 
 
-<!-- Open Graph -->
-    <meta property="og:title" content="Kahve Su Yerine Geçer mi? Yıllardır Bildiğiniz Yanlışmış">
-    <meta property="og:description" content="&quot;Kahve susuzluk yapar&quot; diye biliyordunuz değil mi? Bilim bambaşka bir şey söylüyor. Hangi içecekler gerçekten su sayılır, hangisi saydırmaz? Dehidratasyon faktörü nedir?">
+    <meta property="og:title" content="Kahve Su Yerine Geçer mi? İçeceklerin Su Hesabı">
+    <meta property="og:description" content="Kahve susuz bırakmaz ama sade suyun yerini de tamamen tutmaz. Çay, kahve ve kolanın su değeri rakamlarla.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://suuapp.com/blog/kahve-cay-su-sayar-mi.html">
     <meta property="og:image" content="https://suuapp.com/assets/og/blog/kahve-cay-su-sayar-mi.png">
     <meta property="og:site_name" content="Suu">
     <meta property="og:locale" content="tr_TR">
     <meta property="article:published_time" content="2026-03-15">
+    <meta property="article:modified_time" content="2026-09-27">
     <meta property="article:author" content="Furkan Mert Fındıklı">
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@SuuTakip">
-    <meta name="twitter:title" content="Kahve Su Yerine Geçer mi? Yıllardır Bildiğiniz Yanlışmış">
-    <meta name="twitter:description" content="&quot;Kahve susuzluk yapar&quot; diye biliyordunuz değil mi? Bilim bambaşka bir şey söylüyor. Hangi içecekler gerçekten su sayılır?">
+    <meta name="twitter:title" content="Kahve Su Yerine Geçer mi? İçeceklerin Su Hesabı">
+    <meta name="twitter:description" content="Kahve susuz bırakmaz ama sade suyun yerini de tamamen tutmaz. Çay, kahve ve kolanın su değeri rakamlarla.">
     <meta name="twitter:image" content="https://suuapp.com/assets/og/blog/kahve-cay-su-sayar-mi.png">
 
-    <!-- Favicon -->
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/donation-widget.css?v=6">
+    <link rel="stylesheet" href="/assets/css/suu.css">
 
-    <!-- Structured Data: Article -->
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Kahve ve Çay Su Yerine Geçer mi? Dehidratasyon Faktörü Nedir?",
-  "description": "Kahve, çay, meyve suyu ve diğer içeceklerin vücudu ne kadar nemlendirir? Dehidratasyon faktörü nedir ve Suu nasıl hesaplar?",
-  "image": "https://suuapp.com/assets/og/blog/kahve-cay-su-sayar-mi.png",
-  "datePublished": "2026-03-15",
-  "dateModified": "2026-03-15",
-  "author": {
-    "@type": "Person",
-    "@id": "https://suuapp.com/#furkan",
-    "name": "Furkan Mert Fındıklı",
-    "url": "https://suuapp.com/yazarlar/furkan-mert.html",
-    "jobTitle": "Kurucu & Geliştirici",
-    "affiliation": {
+  "@graph": [
+    {
       "@type": "Organization",
       "@id": "https://suuapp.com/#organization",
       "name": "Suu",
-      "url": "https://suuapp.com"
+      "url": "https://suuapp.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://suuapp.com/assets/favicon-512.png"
+      }
     },
-    "sameAs": [
-      "https://www.linkedin.com/in/furkanfindikli/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "@id": "https://suuapp.com/#organization",
-    "name": "Suu",
-    "url": "https://suuapp.com",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://suuapp.com/assets/favicon-512.png"
+    {
+      "@type": "Person",
+      "@id": "https://suuapp.com/#furkan",
+      "name": "Furkan Mert Fındıklı",
+      "url": "https://suuapp.com/yazarlar/furkan-mert.html",
+      "jobTitle": "Kurucu \u0026 Geliştirici",
+      "worksFor": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/furkanfindikli/"
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://suuapp.com/blog/kahve-cay-su-sayar-mi.html#article",
+      "headline": "Kahve Su Yerine Geçer mi? Çay, Kahve ve Diğer İçeceklerin Su Hesabı (ve Suu'da Takibi)",
+      "description": "Ölçülü kahve ve çay susuz bırakmaz, suya yakın sıvı kazandırır. Filtre kahve, Türk kahvesi, çay ve kolanın su hesabı, kafein sınırı ve Suu'nun katsayıları.",
+      "image": "https://suuapp.com/assets/og/blog/kahve-cay-su-sayar-mi.png",
+      "datePublished": "2026-03-15",
+      "dateModified": "2026-09-27",
+      "inLanguage": "tr",
+      "mainEntityOfPage": "https://suuapp.com/blog/kahve-cay-su-sayar-mi.html",
+      "author": {
+        "@id": "https://suuapp.com/#furkan"
+      },
+      "publisher": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Kahve ve hidrasyon"
+        },
+        {
+          "@type": "Thing",
+          "name": "Kafein"
+        },
+        {
+          "@type": "Thing",
+          "name": "İçeceklerin su değeri"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://suuapp.com/#suuapp-ios"
+        },
+        {
+          "@id": "https://suuapp.com/#suuapp-android"
+        }
+      ],
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "name": "Killer SC ve ark. — No evidence of dehydration with moderate daily coffee intake: a counterbalanced cross-over study in a free-living population. PLoS One, 2014",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24416202/"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Maughan RJ ve ark. — A randomized trial to assess the potential of different beverages to affect hydration status: development of a beverage hydration index. Am J Clin Nutr, 2016",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26702122/"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "T.C. Sağlık Bakanlığı HSGM — Yaz Aylarında Sağlıklı Su ve Sıvı Tüketimi Nasıl Olmalıdır?",
+          "url": "https://hsgm.saglik.gov.tr/tr/haberler-6/yaz-aylarinda-saglikli-su-ve-sivi-tuketimi-nasil-olmalidir.html"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "EFSA — Scientific Opinion on the safety of caffeine (2015)",
+          "url": "https://www.efsa.europa.eu/en/efsajournal/pub/4102"
+        }
+      ],
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".answer-box",
+          "h1",
+          ".in-app",
+          ".verdict p"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://suuapp.com/blog/kahve-cay-su-sayar-mi.html#faq",
+      "inLanguage": "tr",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Kahve su yerine geçer mi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kısmen. Ölçülü kahve vücuda suya yakın sıvı kazandırır ve susuz bırakmaz; ama sade suyun yerini tamamen tutmaz. Suu filtre kahveyi 0,8 katsayısıyla sayar: 200 ml kahve 160 ml su olarak eklenir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kahve susuzluk yapar mı?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ölçülü içildiğinde hayır. Günde dört fincan kahve içilen bir çalışmada hidrasyon göstergeleri su içilen günlerle aynı çıktı. Çok yüksek miktarlar ve kafeine duyarlı kişiler istisna olabilir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Çay su yerine geçer mi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Büyük ölçüde evet. Siyah çay 0,9, yeşil çay 0,95, bitki çayı 0,98 katsayısıyla sayılır; ince belli bir bardak çay yaklaşık 90 ml su eder. Sağlık Bakanlığı günde 3–5 fincan çayı uygun buluyor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Günde kaç fincan kahve içilebilir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sağlıklı yetişkinler için günlük kafein üst sınırı 400 mg olarak öneriliyor; bu kabaca 3–4 fincan filtre kahve eder. Hamilelikte sınır 200 mg civarındadır. Enerji içecekleri ve kola da toplama dahildir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Türk kahvesi suya sayılır mı?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kısmen: bir fincan Türk kahvesi (yaklaşık 65 ml) Suu'da 0,7 katsayısıyla yaklaşık 45 ml su sayılır. Yanında içilen bir bardak su ise tam 200 ml olarak eklenir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Suu kahveyi neden 0,8 sayıyor, bilim neden farklı diyor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Araştırmalar ölçülü kahvenin suya yakın hidrasyon sağladığını gösteriyor. Suu'nun katsayıları temkinli bir hesap: yoğun ve fazla kahve, kafeine duyarlılık ve eklenen şeker gibi farkları hesaba katarak günlük su hedefini gerçekçi tutuyor."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://suuapp.com/blog/kahve-cay-su-sayar-mi.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Suu",
+          "item": "https://suuapp.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://suuapp.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Kahve Su Yerine Geçer mi? Çay, Kahve ve Diğer İçeceklerin Su Hesabı (ve Suu'da Takibi)",
+          "item": "https://suuapp.com/blog/kahve-cay-su-sayar-mi.html"
+        }
+      ]
     }
-  },
-  "mainEntityOfPage": "https://suuapp.com/blog/kahve-cay-su-sayar-mi.html",
-  "keywords": "kahve su yerine geçer mi, çay su sayar mı, dehidratasyon faktörü, içecek hidrasyon, kahve su kaybı",
-  "wordCount": 668,
-  "speakable": {
-    "@type": "SpeakableSpecification",
-    "cssSelector": [
-      ".hero h1",
-      ".intro",
-      "h2",
-      ".benefit-content p",
-      ".phase-card p"
-    ]
-  }
+  ]
 }
     </script>
 
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', sans-serif; color: #333; background: #f8f9fa; line-height: 1.7; }
-
-        .nav { background: white; padding: 0 20px; height: 70px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 10px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 100; }
-        .nav-logo { display: flex; align-items: center; gap: 8px; font-size: 22px; font-weight: 700; color: #4A90D9; text-decoration: none; }
-        .nav-logo i { color: #4A90D9; }
-        .nav-back { color: #666; text-decoration: none; font-size: 14px; display: flex; align-items: center; gap: 6px; transition: color 0.2s; }
-        .nav-back:hover { color: #4A90D9; }
-
-        .hero { background: linear-gradient(135deg, #4A90D9 0%, #29B6F6 100%); color: white; padding: 60px 20px; text-align: center; }
-        .hero .badge { display: inline-block; background: rgba(255,255,255,0.2); padding: 6px 16px; border-radius: 20px; font-size: 13px; font-weight: 500; margin-bottom: 20px; }
-        .hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 700; margin-bottom: 16px; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.3; }
-        .hero .meta { font-size: 14px; opacity: 0.85; display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap; }
-        .hero .meta span { display: flex; align-items: center; gap: 6px; }
-
-        .container { max-width: 760px; margin: 0 auto; padding: 50px 20px 80px; }
-
-        .intro { font-size: 1.15rem; color: #444; background: white; border-left: 4px solid #4A90D9; padding: 20px 24px; border-radius: 0 10px 10px 0; margin-bottom: 40px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
-
-        h2 { font-size: 1.5rem; font-weight: 700; color: #222; margin: 40px 0 16px; }
-        h3 { font-size: 1.15rem; font-weight: 600; color: #333; margin: 28px 0 10px; }
-        p { margin-bottom: 16px; color: #555; font-size: 1rem; }
-
-        .benefit-card { background: white; border-radius: 12px; padding: 24px; margin-bottom: 20px; box-shadow: 0 2px 12px rgba(0,0,0,0.07); display: flex; gap: 20px; align-items: flex-start; }
-        .benefit-number { background: linear-gradient(135deg, #4A90D9, #29B6F6); color: white; width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.1rem; flex-shrink: 0; }
-        .benefit-content h3 { margin: 0 0 8px; }
-        .benefit-content p { margin: 0; }
-
-        .drink-table { width: 100%; border-collapse: collapse; margin: 24px 0; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.07); }
-        .drink-table th { background: linear-gradient(135deg, #4A90D9, #29B6F6); color: white; padding: 14px 16px; text-align: left; font-size: 0.9rem; font-weight: 600; }
-        .drink-table td { padding: 12px 16px; font-size: 0.95rem; color: #444; border-bottom: 1px solid #f0f0f0; }
-        .drink-table tr:last-child td { border-bottom: none; }
-        .drink-table tr:nth-child(even) td { background: #f8f9fa; }
-        .factor-high { color: #27ae60; font-weight: 600; }
-        .factor-mid { color: #e67e22; font-weight: 600; }
-        .factor-low { color: #e74c3c; font-weight: 600; }
-
-        .example-box { background: #e8f4fd; border-radius: 12px; padding: 20px 24px; margin: 24px 0; border-left: 4px solid #4A90D9; }
-        .example-box h4 { color: #2c6fa8; font-size: 1rem; margin-bottom: 10px; }
-        .example-box p { color: #444; margin: 0; font-size: 0.95rem; }
-        .example-box .calc { font-size: 1.1rem; font-weight: 600; color: #2c6fa8; margin-top: 8px; }
-
-        .cta-box { background: linear-gradient(135deg, #4A90D9, #29B6F6); color: white; border-radius: 16px; padding: 36px; text-align: center; margin: 50px 0; }
-        .cta-box h3 { font-size: 1.5rem; margin-bottom: 12px; }
-        .cta-box p { opacity: 0.9; margin-bottom: 24px; font-size: 1rem; }
-        .cta-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-        .cta-btn { background: white; color: #4A90D9; padding: 12px 24px; border-radius: 50px; font-weight: 600; text-decoration: none; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 8px; transition: transform 0.2s; }
-        .cta-btn:hover { transform: translateY(-2px); }
-        .cta-btn.outline { background: rgba(255,255,255,0.15); color: white; border: 2px solid rgba(255,255,255,0.5); }
-        .cta-btn.outline:hover { background: rgba(255,255,255,0.25); }
-
-        .footer-nav { border-top: 1px solid #eee; padding-top: 30px; margin-top: 50px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
-        .footer-nav a { color: #4A90D9; text-decoration: none; font-size: 14px; display: flex; align-items: center; gap: 6px; }
-        .footer-nav a:hover { text-decoration: underline; }
-
-        .related { margin-top: 50px; }
-        .related h2 { margin-bottom: 20px; }
-        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
-        .related-card { background: white; border-radius: 10px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); text-decoration: none; color: inherit; transition: transform 0.2s; }
-        .related-card:hover { transform: translateY(-3px); }
-        .related-card .tag { font-size: 12px; color: #4A90D9; font-weight: 600; text-transform: uppercase; margin-bottom: 8px; }
-        .related-card h4 { font-size: 0.95rem; color: #333; line-height: 1.4; }
-        .references { background: #f8f9fa; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px 28px; margin-top: 40px; }
-        .references h2 { font-size: 1.1rem; color: #374151; margin: 0 0 16px; border-bottom: 1px solid #e5e7eb; padding-bottom: 12px; }
-        .ref-list { margin: 0 0 0 20px; padding: 0; }
-        .ref-list li { font-size: 0.875rem; color: #6b7280; margin-bottom: 10px; line-height: 1.6; }
-        .ref-list li a { color: #4A90D9; text-decoration: none; }
-        .ref-list li a:hover { text-decoration: underline; }
-        sup a { color: #4A90D9; font-size: 0.75em; text-decoration: none; font-weight: 600; }
-        sup a:hover { text-decoration: underline; }
-            @media(max-width:600px){ table{ display:block; overflow-x:auto; -webkit-overflow-scrolling:touch; } }
-    </style>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://suuapp.com/"},
-            {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://suuapp.com/blog.html"},
-            {"@type": "ListItem", "position": 3, "name": "Kahve Su Yerine Geçer mi? Yıllardır Bildiğiniz Yanlışmış", "item": "https://suuapp.com/blog/kahve-cay-su-sayar-mi.html"}
-        ]
-    }
-    </script>
     <script src="/assets/js/analytics.js" defer></script>
-    <script src="/assets/js/special-days.js" defer></script>
+    <script src="/lang-switcher.js?v=3" defer></script>
+    <script src="/donation-widget.js?v=6" defer></script>
 </head>
 <body>
 
+<a class="skip-link" href="#main">İçeriğe geç</a>
+
 <nav class="nav">
-    <a href="/" class="nav-logo"><img src="/assets/brand/suu-badge-128.png" alt="Suu" width="128" height="128" class="suu-logo-badge" style="height:1.6em;width:1.6em;border-radius:50%;vertical-align:-0.4em;box-shadow:0 0 0 1px rgba(255,255,255,.12),0 0 14px rgba(94,170,255,.45);"> Suu</a>
-    <a href="../blog.html" class="nav-back"><i class="fas fa-arrow-left"></i> Blog'a Dön</a>
-</nav>
-
-<div class="hero">
-    <span class="badge">☕ Beslenme & Hidrasyon</span>
-    <h1>Kahve ve Çay Su Yerine Geçer mi? Dehidratasyon Faktörü Nedir?</h1>
-    <div class="meta">
-        <span><i class="fas fa-calendar"></i> 15 Mart 2026</span>
-        <span><i class="fas fa-clock"></i> 5 dakika okuma</span>
-        <span><i class="fas fa-pen"></i> <a href="/ekip.html" rel="author">Suu Ekibi</a></span>
-    </div>
-</div>
-
-<div class="container">
-
-    <p class="intro">"Kahve içince daha çok susarsın" diye kaç kere duydunuz? Bu yaygın inanışın arkasında bir gerçek payı var, ancak tablo sandığımızdan çok daha nüanslı. İçeceklerin her birinin su dengenize net katkısı farklıdır — ve bunu anlamanın en doğru yolu "dehidratasyon faktörü" kavramından geçiyor.</p>
-
-    <h2>Eski İnanış ile Gerçeğin Farkı</h2>
-    <p>Yıllarca "kafein diüretiktir, dolayısıyla kahve vücuttan su atar ve sizi susatır" denildi. Bu bilgi teknik olarak doğrudur; kafein böbreklerin su tutma kapasitesini geçici olarak azaltır. Ancak bu etki, kahvenin içerdiği suyun sağladığı hidrasyonu tamamen sıfırlamaz.</p>
-    <p>Yapılan araştırmalar, ılımlı miktarda tüketilen kahvenin (günde 3-4 fincan) net su kaybına yol açmadığını ortaya koymuştur.<sup><a href="#ref1">[1]</a></sup> Yani kahve saf su kadar etkili olmasa da belirli bir hidrasyon katkısı sağlar. Peki bu katkıyı tam olarak nasıl ölçeriz?</p>
-
-    <h2>Dehidratasyon Faktörü Nedir?</h2>
-    <p>Dehidratasyon faktörü (DF), bir içeceğin ne kadarının vücudunuzda gerçek hidrasyon olarak kaldığını gösteren bir katsayıdır. Saf su için bu değer 1.0'dır; yani içtiğiniz her mililitre su, olduğu gibi hidrasyon sayılır. Kafein veya alkol içeren içeceklerde bu değer düşer çünkü bu maddeler vücuttan daha fazla su atılmasına neden olur.</p>
-    <p>Formül basittir: <strong>Net Hidrasyon = İçilen Miktar × Dehidratasyon Faktörü</strong></p>
-
-    <h2>İçecek Bazlı Dehidratasyon Faktörleri</h2>
-
-    <table class="drink-table">
-        <thead>
-            <tr>
-                <th>İçecek</th>
-                <th>Dehidratasyon Faktörü</th>
-                <th>200 ml Net Hidrasyon</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Su</td>
-                <td class="factor-high">1.00</td>
-                <td>200 ml</td>
-            </tr>
-            <tr>
-                <td>Ayran / Kefir</td>
-                <td class="factor-high">0.90</td>
-                <td>180 ml</td>
-            </tr>
-            <tr>
-                <td>Meyve Suyu (doğal)</td>
-                <td class="factor-high">0.85</td>
-                <td>170 ml</td>
-            </tr>
-            <tr>
-                <td>Spor İçeceği</td>
-                <td class="factor-mid">0.80</td>
-                <td>160 ml</td>
-            </tr>
-            <tr>
-                <td>Çay (siyah / yeşil)</td>
-                <td class="factor-mid">0.70</td>
-                <td>140 ml</td>
-            </tr>
-            <tr>
-                <td>Kahve (filtre / Americano)</td>
-                <td class="factor-mid">0.60</td>
-                <td>120 ml</td>
-            </tr>
-            <tr>
-                <td>Gazlı İçecek</td>
-                <td class="factor-low">0.50</td>
-                <td>100 ml</td>
-            </tr>
-            <tr>
-                <td>Alkollü İçecek</td>
-                <td class="factor-low">-0.40</td>
-                <td>-80 ml (su açar)</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <div class="example-box">
-        <h4>Hesaplama Örneği: Sabah Kahvesi</h4>
-        <p>200 ml filtre kahvenin dehidratasyon faktörü 0.60'dır. Bu durumda:</p>
-        <p class="calc">200 ml × 0.60 = 120 ml net hidrasyon</p>
-        <p>Yani sabah içtiğiniz büyük bir fincan kahve, günlük su hedefine yaklaşık 120 ml katkı sağlar. Bu gerçek bir katkıdır, ancak aynı miktarda su içmek çok daha verimlidir.</p>
-    </div>
-
-    <h2>Alkol Neden Negatif?</h2>
-    <p>Alkol, ADH (antidiüretik hormon) üretimini baskılar. Bu hormon normalde böbreklerin su tutmasını sağlar. ADH bloke edildiğinde böbrekler çok daha fazla idrar üretir; içilen alkolün içerdiği su miktarından daha fazla su kaybedilir. Bu yüzden alkollü içecekler için dehidratasyon faktörü negatiftir: sadece hidrasyon sağlamaz, var olan su rezervinizi de eritir.</p>
-
-    <h2>Peki Ya Türk Çayı?</h2>
-    <p>Türk çayı siyah çayın daha konsantre bir versiyonudur. Kafeini biraz daha yüksek olduğundan dehidratasyon faktörü açık demli çaya kıyasla hafif daha düşük olabilir (yaklaşık 0.65-0.70). Günde 5-10 bardak gibi yüksek miktarlarda tüketildiğinde ise toplam katkı önemli boyutlara ulaşır.</p>
-
-    <h2>Suu ile Gerçek Hidrasyon Takibi</h2>
-    <p>Suu uygulamasında 91 içecek kategorisi mevcuttur ve her birinin dehidratasyon faktörü sistemde tanımlıdır. Kahvenizi, çayınızı, meyve suyunuzu veya ayranınızı kaydettiğinizde Suu otomatik olarak net hidrasyon değerini hesaplar ve günlük su hedefine yansıtır.</p>
-    <p>Artık "bugün çay saydı mı?" diye düşünmenize gerek yok. Sadece ne içtiğinizi seçin; Suu gerisini yapar.</p>
-
-    <h2>Yeni: Kafein ve Şeker Takibi de Birleşik</h2>
-    <p>Suu artık <strong>tam bir AI sağlık asistanı</strong>. Sadece hidrasyon değil, içtiğiniz her içeceğin <strong>kafein (mg)</strong> ve <strong>şeker (g)</strong> miktarını da otomatik hesaplar. Örneğin Starbucks Grande Latte: <strong>~150 mg kafein + ~14 g şeker</strong>. FDA'nın günlük 400 mg kafein ve WHO'nun günlük 25 g eklenmiş şeker sınırlarına yaklaştığınızda akıllı uyarı gönderir. Yapılan her egzersiz (yürüyüş, koşu, yüzme) hedefinizi otomatik artırır. Detaylı rehberler: <a href="kafein-seker-takibi.html" style="color:#4A90D9;font-weight:600;">Kafein ve Şeker Takibi</a> · <a href="aktivite-bazli-su-takibi.html" style="color:#4A90D9;font-weight:600;">Aktivite Bazlı Su Takibi</a>.</p>
-    <p style="background:#FFF3E0;padding:14px 18px;border-radius:10px;border-left:4px solid #FFB300;"><strong>🎉 Lansmana özel:</strong> Premium 3 gün ücretsiz · Sonrası %50 indirimle ₺1.200/yıl (≈ $30 USD ≈ 112 SAR).</p>
-
-    <div class="cta-box" style="padding: 0; overflow: hidden; border-radius: 16px;">
-        <div style="display: flex; align-items: center; gap: 20px; padding: 24px; flex-wrap: wrap;">
-            <img src="../assets/screenshots/ana-ekran.webp" width="600" height="1300" alt="Suu Uygulaması" style="width: 120px; height: auto; border-radius: 16px; flex-shrink: 0;" loading="lazy">
-            <div style="flex: 1; min-width: 200px;">
-                <h3 style="margin: 0 0 12px;">Suu ile Sağlıklı Alışkanlık Edin</h3>
-                <ul style="list-style: none; padding: 0; margin: 0 0 20px;">
-                    <li style="padding: 4px 0; font-size: 0.95rem;">✓ 91 içecek kategorisi</li>
-                    <li style="padding: 4px 0; font-size: 0.95rem;">✓ Arkadaşlarla lig yarışı</li>
-                    <li style="padding: 4px 0; font-size: 0.95rem;">✓ Akıllı hatırlatmalar</li>
-                    <li style="padding: 4px 0; font-size: 0.95rem;">✓ Ücretsiz — iOS & Android</li>
-                </ul>
-                <div class="cta-buttons">
-                    <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" class="cta-btn" target="_blank" rel="noopener">
-                        <i class="fab fa-apple"></i> App Store
-                    </a>
-                    <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro" class="cta-btn" target="_blank" rel="noopener">
-                        <i class="fab fa-google-play"></i> Google Play
-                    </a>
-                </div>
-            </div>
+    <div class="container nav__inner">
+        <a href="/" class="nav__logo"><img src="/assets/brand/suu-badge-128.png" alt="Suu" width="128" height="128" class="suu-logo-badge" style="height:1.6em;width:1.6em;border-radius:50%;vertical-align:-0.4em;box-shadow:0 0 0 1px rgba(255,255,255,.12),0 0 14px rgba(94,170,255,.45);"> Suu</a>
+        <ul class="nav__links">
+            <li><a href="/blog.html">Blog</a></li>
+            
+            <li><a href="/#fiyat">Fiyatlandırma</a></li>
+        </ul>
+        <div class="nav__actions">
+            <a href="/app?src=guide-nav" class="btn btn--primary" data-cta="nav"
+               style="min-height:40px;padding:var(--sp-2) var(--sp-5);font-size:var(--fs-sm)">Ücretsiz İndir</a>
         </div>
     </div>
+</nav>
 
-    <div class="references">
-        <h2>Bilimsel Kaynaklar</h2>
-        <ol class="ref-list">
-            <li id="ref1">Killer SC, Blannin AK, Jeukendrup AE. (2014). No Evidence of Dehydration with Moderate Daily Coffee Intake: A Counterbalanced Cross-Over Study in a Free-Living Population. <em>PLOS ONE</em>, 9(1), e84154. <a href="https://pubmed.ncbi.nlm.nih.gov/24416202/" target="_blank" rel="noopener">PubMed: 24416202</a></li>
-            <li>Popkin BM, D'Anci KE, Rosenberg IH. (2010). Water, Hydration and Health. <em>Nutrition Reviews</em>, 68(8), 439–458. <a href="https://pubmed.ncbi.nlm.nih.gov/20646222/" target="_blank" rel="noopener">PubMed: 20646222</a></li>
+<main id="main">
+
+<header class="section" style="padding-block-end:var(--sp-8)">
+    <div class="container container--narrow">
+        <nav class="breadcrumb small text-subtle" aria-label="Breadcrumb"
+             style="margin-block-end:var(--sp-4)">
+            <a href="/">Suu</a>
+            <span aria-hidden="true"> › </span>
+            <a href="/blog.html">Blog</a>
+            <span aria-hidden="true"> › </span>
+            <span aria-current="page">Kahve Su Yerine Geçer mi? Çay, Kahve ve Diğer İçeceklerin Su Hesabı (ve Suu&#39;da Takibi)</span>
+        </nav>
+        <span class="badge badge--new">☕ Rehber · İçecekler ve su</span>
+        <h1 style="margin-block-start:var(--sp-4)">Kahve Su Yerine Geçer mi? Çay, Kahve ve Diğer İçeceklerin Su Hesabı (ve Suu&#39;da Takibi)</h1>
+        <p class="small text-subtle">Yayın: 15 Mart 2026 · Güncelleme: 27 Eylül 2026 · Furkan Mert Fındıklı · 7 dakika okuma</p>
+    </div>
+</header>
+
+<div class="container container--narrow stack--lg" style="padding-block-end:var(--sp-24)">
+
+    <!-- CEVAP-ÖNCE: alıntılanan blok burasıdır -->
+    <div class="answer-box">
+        <p><strong>Kısa cevap:</strong> Kısmen, ama sanıldığından fazla: ölçülü kahve ve çay vücuda suya yakın sıvı kazandırır; &#34;kahve susuz bırakır&#34; inancı çoğu kişi için geçerli değil. Yine de sade suyun yerini tamamen tutmaz. Suu içecekleri temkinli sayar: filtre kahve 0,8, Türk kahvesi 0,7, espresso 0,5, siyah çay 0,9 hidrasyon katsayısıyla.</p>
+    </div>
+    <aside class="callout health-note" role="note">
+        <p><strong>Bu yazı tıbbi tavsiye değildir.</strong></p>
+        <p>Sağlık Bakanlığı sağlıklı yetişkinler için günlük kafein üst sınırını 400 mg, hamilelikte 200–300 mg olarak veriyor. Kalp ritim bozukluğun, yüksek tansiyonun, reflün ya da kaygı bozukluğun varsa kafein miktarını doktorunla konuş.</p>
+        <p>Şu durumlarda kafeini azalt ve bir doktora danış:</p>
+        <ul>
+            <li>Kafeinden sonra çarpıntı, göğüs ağrısı ya da titreme</li>
+            <li>Uykusuzluğun ve kaygının belirgin biçimde artması</li>
+        </ul>
+    </aside>
+
+    <div class="disclosure">Bu rehberi Suu&#39;yu geliştiren iki kişilik ekip olarak yazdık. Uygulamamızın katsayılarını açıkça yazıyoruz; bunlar bilimsel bir &#34;kahve susuz bırakır&#34; iddiası değil, günlük su hedefini gerçekçi tutan temkinli bir hesap.</div>
+    <p>"Kahve içiyorsan bir bardak da su iç, yoksa susuz kalırsın" — yıllarca tekrarlanan bir öğüt. Kafeinin hafif idrar söktürücü etkisi gerçek, ama ölçülü tüketimde vücuda kazandırdığı sıvıyı silecek kadar güçlü değil.</p>
+    <p>Bu yazıda önce araştırmaların ne dediğine, sonra Suu'nun çay, kahve ve diğer içecekleri neden ve nasıl saydığına bakıyoruz — Türk çayı ve Türk kahvesi dahil.</p>
+
+    
+    <section>
+        <h2>Kahve gerçekten susuz bırakır mı?</h2>
+        <p>Ölçülü içildiğinde hayır. Günde 3–6 fincan kahve içen 50 erkekle yapılan bir çalışmada, üç gün boyunca günde 4 × 200 ml kahve içmek ile aynı miktarda su içmek arasında vücut suyu ve hidrasyon göstergeleri açısından fark bulunmadı.<sup><a href="#ref1">1</a></sup> Farklı içecekleri karşılaştıran bir denemede de süt ve oral rehidrasyon sıvısı vücutta sudan daha uzun kaldı; kahve, çay ve kola ise sudan belirgin biçimde farklı değildi.<sup><a href="#ref2">2</a></sup></p>
+        <p>Yani çay ve kahve günlük sıvına katkı yapar. Ama bu, sade suyu tamamen bırakmak için bir gerekçe değil: kafein, eklenen şeker ve süt işin içine girince tablo değişir.</p>
+    </section>
+    <section>
+        <h2>Suu içecekleri nasıl sayar?</h2>
+        <p>Suu her içeceği bir <strong>hidrasyon katsayısıyla</strong> sayar: içtiğin miktarın ne kadarının suya ekleneceğini gösterir. 200 ml filtre kahve × 0,8 = 160 ml su. Katsayılar temkinli seçildi; yoğun ve fazla kahve, kafeine duyarlılık ve eklenen şeker gibi farkları hesaba katarak günlük hedefi gerçekçi tutmak için. Uygulamadaki değerler:</p>
+        <ul>
+            <li><strong>1,0:</strong> su, maden suyu</li>
+            <li><strong>0,95–0,98:</strong> bitki çayı (0,98), yeşil çay (0,95), ayran (0,95)</li>
+            <li><strong>0,9:</strong> siyah çay, süt</li>
+            <li><strong>0,8–0,85:</strong> latte (0,85), filtre kahve (0,8), cappuccino (0,8)</li>
+            <li><strong>0,7–0,75:</strong> americano (0,75), Türk kahvesi (0,7)</li>
+            <li><strong>0,5–0,6:</strong> kola (0,6), espresso (0,5)</li>
+            <li><strong>0,3–0,4:</strong> enerji içecekleri</li>
+        </ul>
+        <div class="callout"><p>Şeker ayrıca hesaplanır: içecekteki her 10 g şeker günlük su hedefini 100 ml artırır. Kafein ise hedefi artırmaz. Alkollü içecekler su yerine konmamalı; Suu alkolün etkisini günlük hedefi yükselterek yansıtır (10 ml saf alkol başına +250 ml).</p></div>
+    </section>
+    <section>
+        <h2>Türk çayı ve Türk kahvesi</h2>
+        <p>İnce belli bardakta yaklaşık 100 ml demli çay × 0,9 = 90 ml su sayılır; günde beş bardak çay yaklaşık 450 ml eder. Sağlık Bakanlığı günde 3–5 fincan çayın uygun olduğunu, kahvede ise orta düzeyde tüketimi öneriyor.<sup><a href="#ref3">3</a></sup></p>
+        <p>Bir fincan Türk kahvesi (yaklaşık 65 ml) × 0,7 ≈ 45 ml su. Yanında gelen bir bardak su ise tam 200 ml sayılır — geleneğin hidrasyon açısından da yerinde olduğunu söyleyebiliriz.</p>
+    </section>
+    <section>
+        <h2>Günde kaç fincan kahve fazla?</h2>
+        <p>Avrupa Gıda Güvenliği Otoritesi (EFSA) sağlıklı yetişkinler için günde 400 mg'a kadar kafeinin güvenlik açısından endişe yaratmadığını, tek seferde 200 mg'ı geçmemeyi ve hamilelikte günlük 200 mg'ı aşmamayı öneriyor.<sup><a href="#ref4">4</a></sup> Bu, kabaca günde 3–4 fincan filtre kahveye denk gelir; enerji içecekleri ve kolalar da bu toplama dahildir.</p>
+    </section>
+
+    <section class="in-app" id="in-app">
+        <h2>Bunu Suu&#39;da nereden takip edersin</h2>
+        <p>Menü adları uygulamadaki gibi:</p>
+        <ol class="ranked stack">
+            <li>
+                <strong>Kahveni Suui&#39;ye söyle</strong>
+                <p class="small text-subtle">Ana ekrandaki <strong>Suui</strong> asistanı</p>
+                <p>"Bir filtre kahve ve iki çay içtim" demen yeterli; içecekler katsayılarıyla suya eklenir, şekerli olanlar hedefini yükseltir. Ücretsiz planda günde 3 AI mesajı.</p>
+            </li>
+            <li>
+                <strong>İçecek listesinden tek dokunuşla kaydet</strong> — <em>Premium</em>
+                <p class="small text-subtle"><bdi>iPhone</bdi>: Ana ekran → hızlı ekleme → <strong>Hızlı İçecek</strong><br><bdi>Android</bdi>: Ana ekran → <strong>İçecek Ekle</strong></p>
+                <p>91 içeceğin her biri kendi katsayısı ve şekeriyle listede; Türk kahvesinden ayrana kadar. Ücretsiz planda listeden su ve maden suyu eklenir.</p>
+            </li>
+            <li>
+                <strong>Suu Endeksi</strong>
+                <p class="small text-subtle"><bdi>iPhone</bdi>: <strong>Sen</strong> sekmesi → Su → <strong>Suu Endeksi</strong><br><bdi>Android</bdi>: <strong>İstatistikler</strong> → <strong>Suu Endeksi</strong></p>
+                <p>Çay ve kahveyle geçen bir günün gerçek hidrasyonunu 0–100 arası puanlar; "çok içtim" hissini rakamla kontrol edersin.</p>
+            </li>
+            <li>
+                <strong>Havaya göre değişen hedef</strong>
+                <p class="small text-subtle">Ana ekrandaki <strong>Hava durumu kartı</strong></p>
+                <p>Sıcak günlerde ve antrenmandan sonra su hedefin kendiliğinden yükselir; kahve bu artışı karşılamaya yetmez, farkı görürsün.</p>
+            </li>
         </ol>
-    </div>
+        <div class="btn-row" style="margin-block-start:var(--sp-4)">
+            <a href="/app?src=guide-inapp-coffee-counts-as-water" class="btn btn--primary" data-cta="guide-inapp">Suu&#39;yu ücretsiz indir</a>
+        </div>
+    </section>
 
-    <div class="related">
-        <h2>İlgili Yazılar</h2>
-        <div class="related-grid">
-            <a href="su-icmenin-faydalari.html" class="related-card">
-                <div class="tag">Sağlık</div>
-                <h4>Su İçmenin 10 Faydası</h4>
+    <section class="verdict">
+        <h2 style="margin-block-end:var(--sp-4)">Kısacası</h2>
+        <p>Kahve ve çay susuz bırakmaz; ölçülü içildiğinde günlük sıvına gerçekten katkı yapar. Ama sade suyun yerini tamamen tutmazlar ve kafeinin bir üst sınırı var.</p>
+        <p>En pratik yaklaşım: kahveni ve çayını keyifle iç, günün sıvısını yine ağırlıklı olarak sudan al ve toplam kafeini günde 400 mg'ın altında tut.</p>
+    </section>
+
+    <section class="cta-band" style="border-radius:var(--r-lg);padding-block:var(--sp-12)" data-cta="guide-body">
+        <div class="container">
+            <h2 style="font-size:var(--fs-2xl)">Çay ve kahveyle geçen gününün gerçek su hesabı</h2>
+            <p>91 içecek, hidrasyon katsayıları ve Suu Endeksi · iOS ve Android</p>
+            <div class="btn-row btn-row--center" style="margin-block-start:var(--sp-6)">
+                <a href="/app?src=guide-coffee-counts-as-water" class="btn btn--secondary btn--lg">Suu&#39;yu Ücretsiz İndir</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Sık sorulan sorular</h2>
+        <div class="faq">
+            <details class="faq__item" open>
+                <summary>Kahve su yerine geçer mi?</summary>
+                <div><p>Kısmen. Ölçülü kahve vücuda suya yakın sıvı kazandırır ve susuz bırakmaz; ama sade suyun yerini tamamen tutmaz. Suu filtre kahveyi 0,8 katsayısıyla sayar: 200 ml kahve 160 ml su olarak eklenir.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Kahve susuzluk yapar mı?</summary>
+                <div><p>Ölçülü içildiğinde hayır. Günde dört fincan kahve içilen bir çalışmada hidrasyon göstergeleri su içilen günlerle aynı çıktı. Çok yüksek miktarlar ve kafeine duyarlı kişiler istisna olabilir.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Çay su yerine geçer mi?</summary>
+                <div><p>Büyük ölçüde evet. Siyah çay 0,9, yeşil çay 0,95, bitki çayı 0,98 katsayısıyla sayılır; ince belli bir bardak çay yaklaşık 90 ml su eder. Sağlık Bakanlığı günde 3–5 fincan çayı uygun buluyor.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Günde kaç fincan kahve içilebilir?</summary>
+                <div><p>Sağlıklı yetişkinler için günlük kafein üst sınırı 400 mg olarak öneriliyor; bu kabaca 3–4 fincan filtre kahve eder. Hamilelikte sınır 200 mg civarındadır. Enerji içecekleri ve kola da toplama dahildir.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Türk kahvesi suya sayılır mı?</summary>
+                <div><p>Kısmen: bir fincan Türk kahvesi (yaklaşık 65 ml) Suu&#39;da 0,7 katsayısıyla yaklaşık 45 ml su sayılır. Yanında içilen bir bardak su ise tam 200 ml olarak eklenir.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Suu kahveyi neden 0,8 sayıyor, bilim neden farklı diyor?</summary>
+                <div><p>Araştırmalar ölçülü kahvenin suya yakın hidrasyon sağladığını gösteriyor. Suu&#39;nun katsayıları temkinli bir hesap: yoğun ve fazla kahve, kafeine duyarlılık ve eklenen şeker gibi farkları hesaba katarak günlük su hedefini gerçekçi tutuyor.</p></div>
+            </details>
+        </div>
+    </section>
+    <section>
+        <h2>Kaynaklar</h2>
+        <ol class="small">
+            <li id="ref1"><a href="https://pubmed.ncbi.nlm.nih.gov/24416202/" rel="nofollow noopener" target="_blank">Killer SC ve ark. — No evidence of dehydration with moderate daily coffee intake: a counterbalanced cross-over study in a free-living population. PLoS One, 2014</a></li>
+            <li id="ref2"><a href="https://pubmed.ncbi.nlm.nih.gov/26702122/" rel="nofollow noopener" target="_blank">Maughan RJ ve ark. — A randomized trial to assess the potential of different beverages to affect hydration status: development of a beverage hydration index. Am J Clin Nutr, 2016</a></li>
+            <li id="ref3"><a href="https://hsgm.saglik.gov.tr/tr/haberler-6/yaz-aylarinda-saglikli-su-ve-sivi-tuketimi-nasil-olmalidir.html" rel="nofollow noopener" target="_blank">T.C. Sağlık Bakanlığı HSGM — Yaz Aylarında Sağlıklı Su ve Sıvı Tüketimi Nasıl Olmalıdır?</a></li>
+            <li id="ref4"><a href="https://www.efsa.europa.eu/en/efsajournal/pub/4102" rel="nofollow noopener" target="_blank">EFSA — Scientific Opinion on the safety of caffeine (2015)</a></li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>İlgili yazılar</h2>
+        <div class="cards">
+            <a class="card" href="/blog/cay-hidrasyon.html">
+                <h3 style="font-size:var(--fs-md)">Çay susuz bırakır mı?</h3>
+                <p>Çayın hidrasyona etkisi.</p>
             </a>
-            <a href="gunluk-ne-kadar-su-icmeli.html" class="related-card">
-                <div class="tag">Hidrasyon</div>
-                <h4>Günde Kaç Litre Su İçmeli?</h4>
+            <a class="card" href="/blog/gunde-kac-kahve.html">
+                <h3 style="font-size:var(--fs-md)">Günde kaç fincan kahve sağlıklı?</h3>
+                <p>Kafein sınırları ve öneriler.</p>
             </a>
-            <a href="spor-ve-hidrasyon.html" class="related-card">
-                <div class="tag">Spor</div>
-                <h4>Spor Yaparken Ne Kadar Su İçmeli?</h4>
+            <a class="card" href="/blog/kolayi-birakmak.html">
+                <h3 style="font-size:var(--fs-md)">Kolayı nasıl bırakırım?</h3>
+                <p>Şekerli içecekleri 4 haftada azalt.</p>
             </a>
-            <a href="su-takip-uygulamasi-neden-kullanmaliyim.html" class="related-card">
-                <div class="tag">Uygulama</div>
-                <h4>Suu'yu Neden Kullanmalıyım?</h4>
+            <a class="card" href="/blog/su-icme-aliskanlik.html">
+                <h3 style="font-size:var(--fs-md)">Su içmeyi sürekli unutuyorum</h3>
+                <p>Suyu alışkanlığa çevirmenin 7 yolu.</p>
             </a>
-            <a href="en-iyi-su-takip-uygulamasi.html" class="related-card">
-                <div class="tag">Uygulama</div>
-                <h4>En İyi Su Takip Uygulaması 2026</h4>
-            </a>
-        
-<!-- sütunlar arası bağlantı: scripts/link-pillars.py -->
-            <a href="en-iyi-kalori-uygulamasi.html" class="related-card">
-                <div class="tag">Kalori</div>
-                <h4>En İyi Kalori Sayma Uygulaması 2026: Suu vs MyFitnessPal,…</h4>
-            </a>
-            <a href="fotografla-kalori-sayma.html" class="related-card">
-                <div class="tag">Kalori</div>
-                <h4>Fotoğrafla Kalori Sayma: Yapay Zeka ile Beslenme Takibi</h4>
-            </a>
+        </div>
+    </section>
+
+    <p class="small text-subtle">Suu tıbbi teşhis veya tedavi amacıyla geliştirilmemiştir. Sağlıkla ilgili kararlar için bir sağlık profesyoneline danışın.</p>
+
+    <p>
+        <a href="/blog.html">← Bloga dön</a>
+    </p>
 </div>
-    </div>
 
-    <div class="footer-nav">
-        <a href="../blog.html"><i class="fas fa-arrow-left"></i> Tüm Yazılar</a>
-        <a href="/"><i class="fas fa-home"></i> Ana Sayfa</a>
-        <a href="/indir.html"><i class="fas fa-download"></i> Ücretsiz İndir</a>
-    </div>
+</main>
 
+<footer class="footer">
+    <div class="container">
+        <div class="footer__bottom" style="border:0">
+            <p class="small mb-0">© 2026 Suu · Furkan Mert Fındıklı</p>
+            <p class="small mb-0"><a href="/">suuapp.com</a></p>
+        </div>
+    </div>
+</footer>
+
+<div class="sticky-cta" data-cta="sticky">
+    <a href="/app?src=sticky" class="btn btn--secondary">App Store</a>
+    <a href="/app?src=sticky" class="btn btn--primary">Google Play</a>
 </div>
 
-<script src="../lang-switcher.js?v=3" defer></script>
-<!-- Sticky Mobile Download Bar -->
-<div class="sticky-download-bar" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:rgba(255,255,255,0.97);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);padding:10px 12px;padding-bottom:calc(10px + env(safe-area-inset-bottom,0px));box-shadow:0 -2px 16px rgba(0,0,0,0.12);gap:8px;justify-content:center;">
-    <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" style="flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:13px 14px;border-radius:12px;text-decoration:none;font-weight:600;font-size:14px;min-height:48px;background:#000;color:#fff;max-width:200px;" target="_blank" rel="noopener">
-        <i class="fab fa-apple"></i> App Store
-    </a>
-    <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro" style="flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:13px 14px;border-radius:12px;text-decoration:none;font-weight:600;font-size:14px;min-height:48px;background:#01875f;color:#fff;max-width:200px;" target="_blank" rel="noopener">
-        <i class="fab fa-google-play"></i> Google Play
-    </a>
-</div>
-<script>
-(function(){if(window.innerWidth<=768){var b=document.querySelector('.sticky-download-bar');if(b)b.style.display='flex';document.body.style.paddingBottom='72px';}window.addEventListener('resize',function(){var b=document.querySelector('.sticky-download-bar');if(b){if(window.innerWidth<=768){b.style.display='flex';document.body.style.paddingBottom='72px';}else{b.style.display='none';document.body.style.paddingBottom='0';}}});})();
-</script>
 <script src="/assets/js/suu-badge.js?v=2" defer></script>
 </body>
 </html>

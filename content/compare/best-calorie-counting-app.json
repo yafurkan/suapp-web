@@ -25,7 +25,7 @@
           {
             "name": "Suu",
             "tag": "best if logging is what you keep skipping",
-            "body": "Free on iOS and Android. Photograph the meal or say it out loud and the AI extracts calories, protein, carbs and fat; it separates solids from liquids automatically, so a coffee logged by voice lands in both the calorie total and the hydration total. Also tracks 91 beverages with a real dehydration factor and records GPS workouts across ~50 activities, and the three feed each other — a logged run raises the water goal, a salty meal adds digestion water. Free tier includes three AI analyses a day. Honest limits: the branded-food database is smaller than MyFitnessPal's and there is no recipe library."
+            "body": "Free on iOS and Android. Photograph the meal or say it out loud and the AI extracts calories, protein, carbs and fat; it separates solids from liquids automatically, so a coffee logged by voice lands in both the calorie total and the hydration total. Also tracks 91 beverages with its own hydration factor and records GPS workouts across ~50 activities, and the three feed each other — a logged run raises the water goal, a salty meal adds digestion water. Free tier includes three AI analyses a day. Honest limits: the branded-food database is smaller than MyFitnessPal's and there is no recipe library."
           },
           {
             "name": "MyFitnessPal",
@@ -273,7 +273,7 @@
             ]
           },
           {
-            "label": "Water tracking with dehydration factor",
+            "label": "Water tracking with hydration factor",
             "cells": [
               {
                 "text": "✓ 91 beverages",
@@ -568,7 +568,7 @@
         },
         {
           "q": "Which calorie app also tracks water and exercise?",
-          "a": "Suu is the only app in this comparison that does all three as a connected system: calories from photo or voice, hydration across 91 beverages with a real dehydration factor, and GPS workout recording across about 50 activities. A logged run raises the water goal for estimated sweat loss and a high-sodium meal adds the water digestion requires. MyFitnessPal records exercise but treats water as a plain counter."
+          "a": "Suu is the only app in this comparison that does all three as a connected system: calories from photo or voice, hydration across 91 beverages with its own hydration factor, and GPS workout recording across about 50 activities. A logged run raises the water goal for estimated sweat loss and a high-sodium meal adds the water digestion requires. MyFitnessPal records exercise but treats water as a plain counter."
         },
         {
           "q": "Which calorie counting app supports Arabic?",

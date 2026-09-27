@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ÜRETİLMİŞ DOSYA — elle düzenlemeyin.
+         Kaynak: content/guides/coffee-counts-as-water.json + content/compare/_template.html.j2
+         Yeniden üret: python3 scripts/build-compare.py --apply -->
+
+    <title>Zählt Kaffee zur Trinkmenge? Getränke-Tabelle | Suu</title>
+    <meta name="description" content="Moderater Kaffee und Tee entwässern nicht, sie hydrieren fast wie Wasser. Wie Filterkaffee, Espresso, Tee und Cola zählen und das Koffein-Limit pro Tag.">
+    <meta name="keywords" content="zählt kaffee zur trinkmenge, entwässert kaffee, zählt tee als wasser, ist kaffee harntreibend, wie viele tassen kaffee am tag, koffein grenzwert pro tag, trinkmenge getränke, zählt cola zur trinkmenge">
+    <meta name="apple-itunes-app" content="app-id=6757619920">
+
+    <link rel="canonical" href="https://suuapp.com/blog/de/zaehlt-kaffee-zur-trinkmenge.html">
+    <!-- Hreflang cluster (auto-injected) -->
+    <link rel="alternate" hreflang="tr" href="https://suuapp.com/blog/kahve-cay-su-sayar-mi.html">
+    <link rel="alternate" hreflang="en" href="https://suuapp.com/blog/en/coffee-tea-hydration.html">
+    <link rel="alternate" hreflang="ar" href="https://suuapp.com/blog/ar/alqahwa-walshay-walmae.html">
+    <link rel="alternate" hreflang="ru" href="https://suuapp.com/blog/ru/kofe-chay-i-voda.html">
+    <link rel="alternate" hreflang="de" href="https://suuapp.com/blog/de/zaehlt-kaffee-zur-trinkmenge.html">
+    <link rel="alternate" hreflang="it" href="https://suuapp.com/blog/it/il-caffe-conta-come-acqua.html">
+    <link rel="alternate" hreflang="uk" href="https://suuapp.com/blog/uk/chy-rakhuyetsya-kava-yak-voda.html">
+    <link rel="alternate" hreflang="x-default" href="https://suuapp.com/blog/en/coffee-tea-hydration.html">
+
+
+    <meta property="og:title" content="Zählt Kaffee zur Trinkmenge? Die Getränke-Rechnung">
+    <meta property="og:description" content="Kaffee entwässert nicht, ersetzt Wasser aber auch nicht ganz. Wie Tee, Kaffee und Cola zählen – in Zahlen.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://suuapp.com/blog/de/zaehlt-kaffee-zur-trinkmenge.html">
+    <meta property="og:image" content="https://suuapp.com/assets/og/blog/de-zaehlt-kaffee-zur-trinkmenge.png">
+    <meta property="og:site_name" content="Suu">
+    <meta property="og:locale" content="de_DE">
+    <meta property="article:published_time" content="2026-09-27">
+    <meta property="article:modified_time" content="2026-09-27">
+    <meta property="article:author" content="Furkan Mert Fındıklı">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SuuTakip">
+    <meta name="twitter:title" content="Zählt Kaffee zur Trinkmenge? Die Getränke-Rechnung">
+    <meta name="twitter:description" content="Kaffee entwässert nicht, ersetzt Wasser aber auch nicht ganz. Wie Tee, Kaffee und Cola zählen – in Zahlen.">
+    <meta name="twitter:image" content="https://suuapp.com/assets/og/blog/de-zaehlt-kaffee-zur-trinkmenge.png">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/donation-widget.css?v=6">
+    <link rel="stylesheet" href="/assets/css/suu.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://suuapp.com/#organization",
+      "name": "Suu",
+      "url": "https://suuapp.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://suuapp.com/assets/favicon-512.png"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://suuapp.com/#furkan",
+      "name": "Furkan Mert Fındıklı",
+      "url": "https://suuapp.com/yazarlar/furkan-mert.html",
+      "jobTitle": "Kurucu \u0026 Geliştirici",
+      "worksFor": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/furkanfindikli/"
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://suuapp.com/blog/de/zaehlt-kaffee-zur-trinkmenge.html#article",
+      "headline": "Zählt Kaffee zur Trinkmenge? Wie Tee, Kaffee und andere Getränke zählen (und wie Suu sie erfasst)",
+      "description": "Moderater Kaffee und Tee entwässern nicht, sie hydrieren fast wie Wasser. Wie Filterkaffee, Espresso, Tee und Cola zählen und das Koffein-Limit pro Tag.",
+      "image": "https://suuapp.com/assets/og/blog/de-zaehlt-kaffee-zur-trinkmenge.png",
+      "datePublished": "2026-09-27",
+      "dateModified": "2026-09-27",
+      "inLanguage": "de",
+      "mainEntityOfPage": "https://suuapp.com/blog/de/zaehlt-kaffee-zur-trinkmenge.html",
+      "author": {
+        "@id": "https://suuapp.com/#furkan"
+      },
+      "publisher": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Kaffee und Flüssigkeitszufuhr"
+        },
+        {
+          "@type": "Thing",
+          "name": "Koffein"
+        },
+        {
+          "@type": "Thing",
+          "name": "Hydratation von Getränken"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://suuapp.com/#suuapp-ios"
+        },
+        {
+          "@id": "https://suuapp.com/#suuapp-android"
+        }
+      ],
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "name": "Killer SC et al. — No evidence of dehydration with moderate daily coffee intake: a counterbalanced cross-over study in a free-living population. PLoS One, 2014",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24416202/"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Maughan RJ et al. — A randomized trial to assess the potential of different beverages to affect hydration status: development of a beverage hydration index. Am J Clin Nutr, 2016",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26702122/"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Deutsche Gesellschaft für Ernährung — Referenzwerte: Wasser",
+          "url": "https://www.dge.de/wissenschaft/referenzwerte/wasser/"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "EFSA — Scientific Opinion on the safety of caffeine (2015)",
+          "url": "https://www.efsa.europa.eu/en/efsajournal/pub/4102"
+        }
+      ],
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".answer-box",
+          "h1",
+          ".in-app",
+          ".verdict p"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://suuapp.com/blog/de/zaehlt-kaffee-zur-trinkmenge.html#faq",
+      "inLanguage": "de",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Zählt Kaffee zur Trinkmenge?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Teilweise. Moderater Kaffee hydriert fast wie Wasser und entwässert nicht, ersetzt Wasser aber nicht vollständig. Suu rechnet Filterkaffee mit dem Faktor 0,8: 200 ml Kaffee zählen als 160 ml Wasser."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Entwässert Kaffee?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In Maßen nicht. In einer Studie mit vier Tassen am Tag waren die Hydratationsmarker genauso wie an Wassertagen. Ausnahmen können sehr große Mengen und koffeinempfindliche Menschen sein."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Zählt Tee als Wasser?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Größtenteils ja. Schwarzer Tee zählt in Suu mit 0,9, grüner Tee mit 0,95, Kräutertee mit 0,98. Die DGE rät bei Kaffee und schwarzem Tee zu moderaten Mengen von 3–4 Tassen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie viele Tassen Kaffee am Tag sind unbedenklich?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Für gesunde Erwachsene gelten bis zu 400 mg Koffein am Tag als unbedenklich – etwa 3–4 Becher Filterkaffee. In der Schwangerschaft höchstens 200 mg. Energydrinks und Cola zählen mit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Zählt Cola zur Trinkmenge?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Teilweise: Cola zählt in Suu mit 0,6, und ihr Zucker erhöht das Trinkziel um 100 ml pro 10 g. Sprudelwasser zählt voll."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Warum zählt Suu Kaffee mit 0,8, wenn er laut Forschung wie Wasser hydriert?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Studien zeigen, dass moderater Kaffee fast wie Wasser hydriert. Die Faktoren von Suu sind eine vorsichtige Rechnung, die starken oder großen Kaffee, Koffeinempfindlichkeit und Zucker berücksichtigt, damit dein Tagesziel realistisch bleibt."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://suuapp.com/blog/de/zaehlt-kaffee-zur-trinkmenge.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Suu",
+          "item": "https://suuapp.com/hosgeldiniz-de.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://suuapp.com/blog-de.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Zählt Kaffee zur Trinkmenge? Wie Tee, Kaffee und andere Getränke zählen (und wie Suu sie erfasst)",
+          "item": "https://suuapp.com/blog/de/zaehlt-kaffee-zur-trinkmenge.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+
+    <script src="/assets/js/analytics.js" defer></script>
+    <script src="/lang-switcher.js?v=3" defer></script>
+    <script src="/donation-widget.js?v=6" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<nav class="nav">
+    <div class="container nav__inner">
+        <a href="/hosgeldiniz-de.html" class="nav__logo"><img src="/assets/brand/suu-badge-128.png" alt="Suu" width="128" height="128" class="suu-logo-badge" style="height:1.6em;width:1.6em;border-radius:50%;vertical-align:-0.4em;box-shadow:0 0 0 1px rgba(255,255,255,.12),0 0 14px rgba(94,170,255,.45);"> Suu</a>
+        <ul class="nav__links">
+            <li><a href="/blog-de.html">Blog</a></li>
+            
+            <li><a href="/hosgeldiniz-de.html#fiyat">Preise</a></li>
+        </ul>
+        <div class="nav__actions">
+            <a href="/app?src=guide-nav" class="btn btn--primary" data-cta="nav"
+               style="min-height:40px;padding:var(--sp-2) var(--sp-5);font-size:var(--fs-sm)">Gratis laden</a>
+        </div>
+    </div>
+</nav>
+
+<main id="main">
+
+<header class="section" style="padding-block-end:var(--sp-8)">
+    <div class="container container--narrow">
+        <nav class="breadcrumb small text-subtle" aria-label="Breadcrumb"
+             style="margin-block-end:var(--sp-4)">
+            <a href="/hosgeldiniz-de.html">Suu</a>
+            <span aria-hidden="true"> › </span>
+            <a href="/blog-de.html">Blog</a>
+            <span aria-hidden="true"> › </span>
+            <span aria-current="page">Zählt Kaffee zur Trinkmenge? Wie Tee, Kaffee und andere Getränke zählen (und wie Suu sie erfasst)</span>
+        </nav>
+        <span class="badge badge--new">☕ Ratgeber · Getränke und Wasser</span>
+        <h1 style="margin-block-start:var(--sp-4)">Zählt Kaffee zur Trinkmenge? Wie Tee, Kaffee und andere Getränke zählen (und wie Suu sie erfasst)</h1>
+        <p class="small text-subtle">Veröffentlicht: 27. September 2026 · Furkan Mert Fındıklı · 7 Min. Lesezeit</p>
+    </div>
+</header>
+
+<div class="container container--narrow stack--lg" style="padding-block-end:var(--sp-24)">
+
+    <!-- CEVAP-ÖNCE: alıntılanan blok burasıdır -->
+    <div class="answer-box">
+        <p><strong>Kurze Antwort:</strong> Teilweise – und mehr, als viele denken: Moderater Kaffee und Tee liefern fast so viel Flüssigkeit wie Wasser, und „Kaffee entwässert“ stimmt für die meisten Menschen nicht. Ganz ersetzt er Wasser aber nicht. Suu zählt Getränke vorsichtig: Filterkaffee mit einem Hydratationsfaktor von 0,8, Espresso 0,5, schwarzer Tee 0,9 und Kräutertee 0,98.</p>
+    </div>
+    <aside class="callout health-note" role="note">
+        <p><strong>Dieser Artikel ist keine medizinische Beratung.</strong></p>
+        <p>Für gesunde Erwachsene gelten bis zu 400 mg Koffein am Tag als unbedenklich, in der Schwangerschaft höchstens 200 mg. Wenn du Herzrhythmusstörungen, Bluthochdruck, Sodbrennen oder eine Angststörung hast, sprich mit deiner Ärztin oder deinem Arzt über die passende Menge.</p>
+        <p>Reduzier Koffein und geh zum Arzt, wenn du Folgendes bemerkst:</p>
+        <ul>
+            <li>Herzrasen, Brustschmerzen oder Zittern nach Koffein</li>
+            <li>deutlich mehr Schlaflosigkeit oder Unruhe</li>
+        </ul>
+    </aside>
+
+    <div class="disclosure">Diesen Ratgeber haben wir als das zweiköpfige Team geschrieben, das Suu entwickelt. Wir veröffentlichen die Faktoren unserer App offen; sie sind keine wissenschaftliche Behauptung, dass „Kaffee entwässert“, sondern eine vorsichtige Rechnung, die dein Trinkziel realistisch hält.</div>
+    <p>„Zu jedem Kaffee ein Glas Wasser, sonst trocknest du aus“ – ein Rat, der seit Jahren wiederholt wird. Die leicht harntreibende Wirkung von Koffein gibt es, aber bei moderaten Mengen hebt sie die Flüssigkeit aus der Tasse nicht auf.</p>
+    <p>Unten schauen wir zuerst, was die Forschung sagt, dann, warum und wie Suu Tee, Kaffee und andere Getränke zählt.</p>
+
+    
+    <section>
+        <h2>Entwässert Kaffee wirklich?</h2>
+        <p>In Maßen nicht. In einer Studie mit 50 Männern, die gewöhnlich 3–6 Tassen am Tag tranken, machte es bei Körperwasser und Hydratationsmarkern keinen Unterschied, ob sie drei Tage lang täglich 4 × 200 ml Kaffee oder dieselbe Menge Wasser tranken.<sup><a href="#ref1">1</a></sup> In einem Vergleich verschiedener Getränke blieben Milch und eine orale Rehydratationslösung länger im Körper als Wasser, während sich Kaffee, Tee und Cola nicht deutlich von Wasser unterschieden.<sup><a href="#ref2">2</a></sup></p>
+        <p>Auch die Deutsche Gesellschaft für Ernährung zählt Kaffee und schwarzen Tee zu den Getränken, empfiehlt aber moderate Mengen von 3–4 Tassen.<sup><a href="#ref3">3</a></sup> Wasser bleibt trotzdem die Basis: Koffein, Zucker und Milch verändern die Rechnung.</p>
+    </section>
+    <section>
+        <h2>Wie Suu Getränke zählt</h2>
+        <p>Suu rechnet jedes Getränk mit einem <strong>Hydratationsfaktor</strong>: wie viel davon zu deinem Wasser zählt. 200 ml Filterkaffee × 0,8 = 160 ml Wasser. Die Faktoren sind bewusst vorsichtig und berücksichtigen starken oder großen Kaffee, Koffeinempfindlichkeit und Zucker, damit dein Tagesziel realistisch bleibt. Die Werte in der App:</p>
+        <ul>
+            <li><strong>1,0:</strong> Wasser, Sprudelwasser</li>
+            <li><strong>0,95–0,98:</strong> Kräutertee (0,98), grüner Tee (0,95)</li>
+            <li><strong>0,9:</strong> schwarzer Tee, Milch, Kefir</li>
+            <li><strong>0,8–0,85:</strong> Latte (0,85), Filterkaffee (0,8), Cappuccino (0,8)</li>
+            <li><strong>0,75:</strong> Americano, Cold Brew</li>
+            <li><strong>0,5–0,6:</strong> Cola (0,6), Espresso (0,5)</li>
+            <li><strong>0,3–0,4:</strong> Energydrinks</li>
+        </ul>
+        <div class="callout"><p>Zucker wird extra gerechnet: Jede 10 g Zucker im Getränk erhöhen dein tägliches Trinkziel um 100 ml. Koffein erhöht es nicht. Alkohol sollte nicht als Wasser zählen; Suu berücksichtigt ihn, indem das Tagesziel steigt (+250 ml pro 10 ml reinem Alkohol).</p></div>
+    </section>
+    <section>
+        <h2>Filterkaffee, Espresso und Latte macchiato</h2>
+        <p>Ein Becher Filterkaffee mit 250 ml × 0,8 = 200 ml Wasser. Ein Espresso ist klein – etwa 30 ml × 0,5 = 15 ml –, ein doppelter Espresso bringt also kaum Wasser, aber viel Koffein. Ein Latte macchiato zählt dank viel Milch mit 0,85; ein gesüßter Sirup-Latte erhöht dafür das Ziel wegen des Zuckers.</p>
+    </section>
+    <section>
+        <h2>Wie viele Tassen Kaffee sind zu viel?</h2>
+        <p>Die Europäische Behörde für Lebensmittelsicherheit (EFSA) hält für gesunde Erwachsene bis zu 400 mg Koffein am Tag für unbedenklich, empfiehlt höchstens 200 mg auf einmal und in der Schwangerschaft höchstens 200 mg am Tag.<sup><a href="#ref4">4</a></sup> Das sind grob 3–4 Becher Filterkaffee; Energydrinks und Cola zählen zur selben Summe.</p>
+    </section>
+
+    <section class="in-app" id="in-app">
+        <h2>Wo du das in Suu verfolgst</h2>
+        <p>Die Menünamen sind genau so wie in der App:</p>
+        <ol class="ranked stack">
+            <li>
+                <strong>Erzähl Suui von deinem Kaffee</strong>
+                <p class="small text-subtle">Der Assistent <strong>Suui</strong> auf dem Startbildschirm</p>
+                <p>Sag einfach „ein Filterkaffee und zwei Tee“ – die Getränke zählen mit ihren Faktoren zu deinem Wasser, gesüßte erhöhen dein Ziel. Im kostenlosen Plan 3 KI-Nachrichten pro Tag.</p>
+            </li>
+            <li>
+                <strong>Mit einem Tipp aus der Getränkeliste</strong> — <em>Premium</em>
+                <p class="small text-subtle"><bdi>iPhone</bdi>: Startbildschirm → Schnell hinzufügen → <strong>Schnellgetränk</strong><br><bdi>Android</bdi>: Startbildschirm → <strong>Getränk hinzufügen</strong></p>
+                <p>Alle 91 Getränke mit eigenem Faktor und Zucker, vom Espresso bis zum Kefir. Im kostenlosen Plan lassen sich Wasser und Sprudelwasser aus der Liste eintragen.</p>
+            </li>
+            <li>
+                <strong>Suu-Index</strong>
+                <p class="small text-subtle"><bdi>iPhone</bdi>: Tab <strong>Du</strong> → Wasser → <strong>Suu-Index</strong><br><bdi>Android</bdi>: <strong>Statistiken</strong> → <strong>Suu-Index</strong></p>
+                <p>Bewertet die echte Flüssigkeitszufuhr eines Kaffee-und-Tee-Tages von 0 bis 100 – das Gefühl „ich habe genug getrunken“ lässt sich an einer Zahl prüfen.</p>
+            </li>
+            <li>
+                <strong>Ein Ziel, das dem Wetter folgt</strong>
+                <p class="small text-subtle">Die Karte <strong>Wetter &amp; Info</strong> auf dem Startbildschirm</p>
+                <p>An heißen Tagen und nach dem Training steigt dein Trinkziel automatisch; Kaffee allein deckt das nicht, und du siehst die Lücke.</p>
+            </li>
+        </ol>
+        <div class="btn-row" style="margin-block-start:var(--sp-4)">
+            <a href="/app?src=guide-inapp-coffee-counts-as-water" class="btn btn--primary" data-cta="guide-inapp">Suu kostenlos laden</a>
+        </div>
+    </section>
+
+    <section class="verdict">
+        <h2 style="margin-block-end:var(--sp-4)">Kurz gesagt</h2>
+        <p>Kaffee und Tee entwässern nicht; in Maßen tragen sie wirklich zur Trinkmenge bei. Wasser ersetzen sie aber nicht ganz, und Koffein hat eine Obergrenze.</p>
+        <p>Praktisch heißt das: Kaffee und Tee genießen, den Großteil der Flüssigkeit trotzdem über Wasser trinken und das Koffein unter 400 mg am Tag halten.</p>
+    </section>
+
+    <section class="cta-band" style="border-radius:var(--r-lg);padding-block:var(--sp-12)" data-cta="guide-body">
+        <div class="container">
+            <h2 style="font-size:var(--fs-2xl)">Die echte Wasser-Rechnung eines Kaffee-Tages</h2>
+            <p>91 Getränke, Hydratationsfaktoren und Suu-Index · iOS und Android</p>
+            <div class="btn-row btn-row--center" style="margin-block-start:var(--sp-6)">
+                <a href="/app?src=guide-coffee-counts-as-water" class="btn btn--secondary btn--lg">Suu kostenlos laden</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Häufige Fragen</h2>
+        <div class="faq">
+            <details class="faq__item" open>
+                <summary>Zählt Kaffee zur Trinkmenge?</summary>
+                <div><p>Teilweise. Moderater Kaffee hydriert fast wie Wasser und entwässert nicht, ersetzt Wasser aber nicht vollständig. Suu rechnet Filterkaffee mit dem Faktor 0,8: 200 ml Kaffee zählen als 160 ml Wasser.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Entwässert Kaffee?</summary>
+                <div><p>In Maßen nicht. In einer Studie mit vier Tassen am Tag waren die Hydratationsmarker genauso wie an Wassertagen. Ausnahmen können sehr große Mengen und koffeinempfindliche Menschen sein.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Zählt Tee als Wasser?</summary>
+                <div><p>Größtenteils ja. Schwarzer Tee zählt in Suu mit 0,9, grüner Tee mit 0,95, Kräutertee mit 0,98. Die DGE rät bei Kaffee und schwarzem Tee zu moderaten Mengen von 3–4 Tassen.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Wie viele Tassen Kaffee am Tag sind unbedenklich?</summary>
+                <div><p>Für gesunde Erwachsene gelten bis zu 400 mg Koffein am Tag als unbedenklich – etwa 3–4 Becher Filterkaffee. In der Schwangerschaft höchstens 200 mg. Energydrinks und Cola zählen mit.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Zählt Cola zur Trinkmenge?</summary>
+                <div><p>Teilweise: Cola zählt in Suu mit 0,6, und ihr Zucker erhöht das Trinkziel um 100 ml pro 10 g. Sprudelwasser zählt voll.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Warum zählt Suu Kaffee mit 0,8, wenn er laut Forschung wie Wasser hydriert?</summary>
+                <div><p>Studien zeigen, dass moderater Kaffee fast wie Wasser hydriert. Die Faktoren von Suu sind eine vorsichtige Rechnung, die starken oder großen Kaffee, Koffeinempfindlichkeit und Zucker berücksichtigt, damit dein Tagesziel realistisch bleibt.</p></div>
+            </details>
+        </div>
+    </section>
+    <section>
+        <h2>Quellen</h2>
+        <ol class="small">
+            <li id="ref1"><a href="https://pubmed.ncbi.nlm.nih.gov/24416202/" rel="nofollow noopener" target="_blank">Killer SC et al. — No evidence of dehydration with moderate daily coffee intake: a counterbalanced cross-over study in a free-living population. PLoS One, 2014</a></li>
+            <li id="ref2"><a href="https://pubmed.ncbi.nlm.nih.gov/26702122/" rel="nofollow noopener" target="_blank">Maughan RJ et al. — A randomized trial to assess the potential of different beverages to affect hydration status: development of a beverage hydration index. Am J Clin Nutr, 2016</a></li>
+            <li id="ref3"><a href="https://www.dge.de/wissenschaft/referenzwerte/wasser/" rel="nofollow noopener" target="_blank">Deutsche Gesellschaft für Ernährung — Referenzwerte: Wasser</a></li>
+            <li id="ref4"><a href="https://www.efsa.europa.eu/en/efsajournal/pub/4102" rel="nofollow noopener" target="_blank">EFSA — Scientific Opinion on the safety of caffeine (2015)</a></li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Verwandte Artikel</h2>
+        <div class="cards">
+            <a class="card" href="/blog/de/wasser-trinken-vergessen.html">
+                <h3 style="font-size:var(--fs-md)">Ich vergesse, Wasser zu trinken</h3>
+                <p>7 Wege zur Trinkgewohnheit.</p>
+            </a>
+            <a class="card" href="/blog/de/cola-abgewoehnen.html">
+                <h3 style="font-size:var(--fs-md)">Cola abgewöhnen</h3>
+                <p>Süße Getränke in vier Wochen reduzieren.</p>
+            </a>
+            <a class="card" href="/blog/de/beste-wasser-tracking-app.html">
+                <h3 style="font-size:var(--fs-md)">Die beste Wasser-Tracking-App 2026</h3>
+                <p>Fünf Trink-Apps im Vergleich.</p>
+            </a>
+            <a class="card" href="/blog/de/warum-bin-ich-immer-muede.html">
+                <h3 style="font-size:var(--fs-md)">Warum bin ich immer müde?</h3>
+                <p>Die 8 häufigsten Ursachen.</p>
+            </a>
+        </div>
+    </section>
+
+    <p class="small text-subtle">Suu ist nicht zur medizinischen Diagnose oder Behandlung bestimmt. Sprich bei gesundheitlichen Entscheidungen mit einer Ärztin, einem Arzt oder anderem medizinischem Fachpersonal.</p>
+
+    <p>
+        <a href="/blog-de.html">← Zurück zum Blog</a>
+    </p>
+</div>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__bottom" style="border:0">
+            <p class="small mb-0">© 2026 Suu · Furkan Mert Fındıklı</p>
+            <p class="small mb-0"><a href="/hosgeldiniz-de.html">suuapp.com</a></p>
+        </div>
+    </div>
+</footer>
+
+<div class="sticky-cta" data-cta="sticky">
+    <a href="/app?src=sticky" class="btn btn--secondary">App Store</a>
+    <a href="/app?src=sticky" class="btn btn--primary">Google Play</a>
+</div>
+
+<script src="/assets/js/suu-badge.js?v=2" defer></script>
+</body>
+</html>

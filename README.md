@@ -23,7 +23,7 @@ Suu artık sadece bir su takip uygulaması değil — **su takibi, kalori sayım
 
 ### 1. Su Takibi
 - Kişiselleştirilmiş günlük su hedefi (yaş, kilo, aktivite, hava sıcaklığı bazlı)
-- **91 içecek** + gerçek dehidrasyon faktörü; Starbucks ve kahve zinciri menüleri entegre
+- **91 içecek** + içeceğe özel hidrasyon katsayısı; Starbucks ve kahve zinciri menüleri entegre
 - Yenen besinlerin protein/sodyum değerine göre **sindirim suyu** hesabı
 - Egzersize göre otomatik ek sıvı ihtiyacı; gün boyunca dinamik güncelleme
 - **Suu Endeksi** (0–100 hidrasyon skoru), **Ana Beyin** (adaptif hedef)

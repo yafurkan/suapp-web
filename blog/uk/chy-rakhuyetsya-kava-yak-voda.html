@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ÜRETİLMİŞ DOSYA — elle düzenlemeyin.
+         Kaynak: content/guides/coffee-counts-as-water.json + content/compare/_template.html.j2
+         Yeniden üret: python3 scripts/build-compare.py --apply -->
+
+    <title>Чи рахується кава як вода? Таблиця напоїв | Suu</title>
+    <meta name="description" content="Помірні кава й чай не зневоднюють — вони зволожують майже як вода. Як рахуються фільтр-кава, еспресо, чай і кола, ліміт кофеїну й коефіцієнти Suu.">
+    <meta name="keywords" content="чи рахується кава як вода, чи зневоднює кава, чи рахується чай як вода, кава сечогінна, скільки чашок кави на день, норма кофеїну на день, розчинна кава і вода, чи рахується кола як вода">
+    <meta name="apple-itunes-app" content="app-id=6757619920">
+
+    <link rel="canonical" href="https://suuapp.com/blog/uk/chy-rakhuyetsya-kava-yak-voda.html">
+    <!-- Hreflang cluster (auto-injected) -->
+    <link rel="alternate" hreflang="tr" href="https://suuapp.com/blog/kahve-cay-su-sayar-mi.html">
+    <link rel="alternate" hreflang="en" href="https://suuapp.com/blog/en/coffee-tea-hydration.html">
+    <link rel="alternate" hreflang="ar" href="https://suuapp.com/blog/ar/alqahwa-walshay-walmae.html">
+    <link rel="alternate" hreflang="ru" href="https://suuapp.com/blog/ru/kofe-chay-i-voda.html">
+    <link rel="alternate" hreflang="de" href="https://suuapp.com/blog/de/zaehlt-kaffee-zur-trinkmenge.html">
+    <link rel="alternate" hreflang="it" href="https://suuapp.com/blog/it/il-caffe-conta-come-acqua.html">
+    <link rel="alternate" hreflang="uk" href="https://suuapp.com/blog/uk/chy-rakhuyetsya-kava-yak-voda.html">
+    <link rel="alternate" hreflang="x-default" href="https://suuapp.com/blog/en/coffee-tea-hydration.html">
+
+
+    <meta property="og:title" content="Чи рахується кава як вода? Таблиця напоїв">
+    <meta property="og:description" content="Кава не зневоднює, але й не замінює воду повністю. Як зараховуються чай, кава й кола — у цифрах.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://suuapp.com/blog/uk/chy-rakhuyetsya-kava-yak-voda.html">
+    <meta property="og:image" content="https://suuapp.com/assets/og/blog/uk-chy-rakhuyetsya-kava-yak-voda.png">
+    <meta property="og:site_name" content="Suu">
+    <meta property="og:locale" content="uk_UA">
+    <meta property="article:published_time" content="2026-09-27">
+    <meta property="article:modified_time" content="2026-09-27">
+    <meta property="article:author" content="Furkan Mert Fındıklı">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SuuTakip">
+    <meta name="twitter:title" content="Чи рахується кава як вода? Таблиця напоїв">
+    <meta name="twitter:description" content="Кава не зневоднює, але й не замінює воду повністю. Як зараховуються чай, кава й кола — у цифрах.">
+    <meta name="twitter:image" content="https://suuapp.com/assets/og/blog/uk-chy-rakhuyetsya-kava-yak-voda.png">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/donation-widget.css?v=6">
+    <link rel="stylesheet" href="/assets/css/suu.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://suuapp.com/#organization",
+      "name": "Suu",
+      "url": "https://suuapp.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://suuapp.com/assets/favicon-512.png"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://suuapp.com/#furkan",
+      "name": "Furkan Mert Fındıklı",
+      "url": "https://suuapp.com/yazarlar/furkan-mert.html",
+      "jobTitle": "Kurucu \u0026 Geliştirici",
+      "worksFor": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/furkanfindikli/"
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://suuapp.com/blog/uk/chy-rakhuyetsya-kava-yak-voda.html#article",
+      "headline": "Чи рахується кава як вода? Як зараховуються чай, кава й інші напої (і як їх враховує Suu)",
+      "description": "Помірні кава й чай не зневоднюють — вони зволожують майже як вода. Як рахуються фільтр-кава, еспресо, чай і кола, ліміт кофеїну й коефіцієнти Suu.",
+      "image": "https://suuapp.com/assets/og/blog/uk-chy-rakhuyetsya-kava-yak-voda.png",
+      "datePublished": "2026-09-27",
+      "dateModified": "2026-09-27",
+      "inLanguage": "uk",
+      "mainEntityOfPage": "https://suuapp.com/blog/uk/chy-rakhuyetsya-kava-yak-voda.html",
+      "author": {
+        "@id": "https://suuapp.com/#furkan"
+      },
+      "publisher": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Кава й гідратація"
+        },
+        {
+          "@type": "Thing",
+          "name": "Кофеїн"
+        },
+        {
+          "@type": "Thing",
+          "name": "Гідратація напоїв"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://suuapp.com/#suuapp-ios"
+        },
+        {
+          "@id": "https://suuapp.com/#suuapp-android"
+        }
+      ],
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "name": "Killer SC та ін. — No evidence of dehydration with moderate daily coffee intake: a counterbalanced cross-over study in a free-living population. PLoS One, 2014",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24416202/"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Maughan RJ та ін. — A randomized trial to assess the potential of different beverages to affect hydration status: development of a beverage hydration index. Am J Clin Nutr, 2016",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26702122/"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Центр громадського здоров'я України — Чому важливо пити достатньо води (і як виробити цю звичку)",
+          "url": "https://phc.org.ua/news/chomu-vazhlivo-piti-dostatno-vodi-i-yak-virobiti-cyu-zvichku"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "EFSA — Scientific Opinion on the safety of caffeine (2015)",
+          "url": "https://www.efsa.europa.eu/en/efsajournal/pub/4102"
+        }
+      ],
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".answer-box",
+          "h1",
+          ".in-app",
+          ".verdict p"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://suuapp.com/blog/uk/chy-rakhuyetsya-kava-yak-voda.html#faq",
+      "inLanguage": "uk",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Чи рахується кава як вода?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Частково. Помірна кава зволожує майже як вода й не зневоднює, але повністю її не замінює. Suu рахує фільтр-каву з коефіцієнтом 0,8: 200 мл кави додають 160 мл води."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чи зневоднює кава?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "За помірного вживання — ні. У дослідженні, де пили чотири чашки на день, маркери гідратації були такими самими, як у дні з водою. Винятком можуть бути дуже великі кількості й люди, чутливі до кофеїну."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чи рахується чай як вода?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Здебільшого так. Чорний чай Suu рахує з коефіцієнтом 0,9, зелений — 0,95, трав'яний — 0,98. Цукор у чаї при цьому підвищує норму води."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Скільки чашок кави на день безпечно?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для здорових дорослих безпечним вважається до 400 мг кофеїну на день — приблизно 3–4 горнятка фільтр-кави. Під час вагітності — до 200 мг на день. Енергетики й кола входять у загальний підсумок."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чи рахується кола як вода?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Частково: кола в Suu йде з коефіцієнтом 0,6, а її цукор підвищує норму води на 100 мл за кожні 10 г. Газована вода зараховується повністю."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чому Suu рахує каву як 0,8, якщо дослідження кажуть, що вона зволожує як вода?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Дослідження показують, що помірна кава зволожує майже як вода. Коефіцієнти Suu — обережний розрахунок із поправкою на міцну чи велику каву, чутливість до кофеїну й доданий цукор, щоб денна норма лишалася реалістичною."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://suuapp.com/blog/uk/chy-rakhuyetsya-kava-yak-voda.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Suu",
+          "item": "https://suuapp.com/hosgeldiniz-uk.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://suuapp.com/blog-uk.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Чи рахується кава як вода? Як зараховуються чай, кава й інші напої (і як їх враховує Suu)",
+          "item": "https://suuapp.com/blog/uk/chy-rakhuyetsya-kava-yak-voda.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+
+    <script src="/assets/js/analytics.js" defer></script>
+    <script src="/lang-switcher.js?v=3" defer></script>
+    <script src="/donation-widget.js?v=6" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Перейти до вмісту</a>
+
+<nav class="nav">
+    <div class="container nav__inner">
+        <a href="/hosgeldiniz-uk.html" class="nav__logo"><img src="/assets/brand/suu-badge-128.png" alt="Suu" width="128" height="128" class="suu-logo-badge" style="height:1.6em;width:1.6em;border-radius:50%;vertical-align:-0.4em;box-shadow:0 0 0 1px rgba(255,255,255,.12),0 0 14px rgba(94,170,255,.45);"> Suu</a>
+        <ul class="nav__links">
+            <li><a href="/blog-uk.html">Блог</a></li>
+            
+            <li><a href="/hosgeldiniz-uk.html#fiyat">Ціни</a></li>
+        </ul>
+        <div class="nav__actions">
+            <a href="/app?src=guide-nav" class="btn btn--primary" data-cta="nav"
+               style="min-height:40px;padding:var(--sp-2) var(--sp-5);font-size:var(--fs-sm)">Завантажити безкоштовно</a>
+        </div>
+    </div>
+</nav>
+
+<main id="main">
+
+<header class="section" style="padding-block-end:var(--sp-8)">
+    <div class="container container--narrow">
+        <nav class="breadcrumb small text-subtle" aria-label="Breadcrumb"
+             style="margin-block-end:var(--sp-4)">
+            <a href="/hosgeldiniz-uk.html">Suu</a>
+            <span aria-hidden="true"> › </span>
+            <a href="/blog-uk.html">Блог</a>
+            <span aria-hidden="true"> › </span>
+            <span aria-current="page">Чи рахується кава як вода? Як зараховуються чай, кава й інші напої (і як їх враховує Suu)</span>
+        </nav>
+        <span class="badge badge--new">☕ Посібник · Напої та вода</span>
+        <h1 style="margin-block-start:var(--sp-4)">Чи рахується кава як вода? Як зараховуються чай, кава й інші напої (і як їх враховує Suu)</h1>
+        <p class="small text-subtle">Опубліковано: 27 вересня 2026 · Furkan Mert Fındıklı · 7 хв читання</p>
+    </div>
+</header>
+
+<div class="container container--narrow stack--lg" style="padding-block-end:var(--sp-24)">
+
+    <!-- CEVAP-ÖNCE: alıntılanan blok burasıdır -->
+    <div class="answer-box">
+        <p><strong>Коротка відповідь:</strong> Частково — і більше, ніж багато хто думає: помірні кава й чай дають організму рідину майже як вода, і думка «кава зневоднює» для більшості людей хибна. Але повністю воду вона не замінює. Suu рахує напої обережно: фільтр-кава з коефіцієнтом гідратації 0,8, еспресо 0,5, чорний чай 0,9, трав&#39;яний 0,98.</p>
+    </div>
+    <aside class="callout health-note" role="note">
+        <p><strong>Ця стаття не є медичною порадою.</strong></p>
+        <p>Для здорових дорослих безпечним вважається до 400 мг кофеїну на день, під час вагітності — не більше 200 мг. Якщо в тебе порушення ритму серця, підвищений тиск, рефлюкс чи тривожний розлад, обговори допустиму кількість кофеїну з лікарем.</p>
+        <p>Скороти кофеїн і звернися до лікаря, якщо помітив:</p>
+        <ul>
+            <li>сильне серцебиття, біль у грудях чи тремтіння після кофеїну</li>
+            <li>помітне посилення безсоння чи тривоги</li>
+        </ul>
+    </aside>
+
+    <div class="disclosure">Цей посібник написала команда з двох людей, яка створює Suu. Ми відкрито публікуємо коефіцієнти застосунку; це не наукове твердження, що «кава зневоднює», а обережний розрахунок, який робить денну норму води реалістичною.</div>
+    <p>«Випив каву — запий склянкою води, бо буде зневоднення» — порада, яку повторюють роками. Легка сечогінна дія кофеїну реальна, але за помірних кількостей вона не перекриває рідину, яку дає чашка.</p>
+    <p>Нижче — спершу що кажуть дослідження, потім чому й як Suu зараховує чай, каву та інші напої.</p>
+
+    
+    <section>
+        <h2>Кава справді зневоднює?</h2>
+        <p>За помірного вживання — ні. У дослідженні з 50 чоловіками, які зазвичай пили 3–6 чашок на день, три дні по 4 × 200 мл кави не дали різниці у воді організму й маркерах гідратації порівняно з такою самою кількістю води.<sup><a href="#ref1">1</a></sup> У випробуванні, де порівнювали різні напої, молоко й розчин для пероральної регідратації утримувалися в організмі довше за воду, а кава, чай і кола від води явно не відрізнялися.<sup><a href="#ref2">2</a></sup></p>
+        <p>Тож чай і кава роблять внесок у денну рідину. Але це не привід відмовлятися від звичайної води: кофеїн, доданий цукор і молоко змінюють картину. Центр громадського здоров'я України окремо радить уникати солодких газованих напоїв і алкоголю.<sup><a href="#ref3">3</a></sup></p>
+    </section>
+    <section>
+        <h2>Як Suu зараховує напої</h2>
+        <p>Suu рахує кожен напій із <strong>коефіцієнтом гідратації</strong>: яка частина випитого додається до води. 200 мл фільтр-кави × 0,8 = 160 мл води. Коефіцієнти навмисно обережні: вони враховують міцну чи велику каву, чутливість до кофеїну й доданий цукор, щоб денна норма лишалася реалістичною. Значення в застосунку:</p>
+        <ul>
+            <li><strong>1,0:</strong> вода, газована вода</li>
+            <li><strong>0,95–0,98:</strong> трав'яний чай (0,98), зелений чай (0,95)</li>
+            <li><strong>0,9:</strong> чорний чай, молоко, кефір</li>
+            <li><strong>0,8–0,85:</strong> лате (0,85), фільтр-кава (0,8), капучино (0,8)</li>
+            <li><strong>0,75:</strong> американо, колд брю</li>
+            <li><strong>0,5–0,6:</strong> кола (0,6), еспресо (0,5)</li>
+            <li><strong>0,3–0,4:</strong> енергетики</li>
+        </ul>
+        <div class="callout"><p>Цукор рахується окремо: кожні 10 г цукру в напої підвищують денну норму води на 100 мл. Кофеїн її не підвищує. Алкоголь не варто вважати водою; Suu враховує його, підвищуючи денну норму (+250 мл на 10 мл чистого спирту).</p></div>
+    </section>
+    <section>
+        <h2>Чай із лимоном і розчинна кава</h2>
+        <p>Горнятко чорного чаю на 250 мл × 0,9 = 225 мл води; цукор у чаї підвищує норму. Розчинної кави в списку застосунку немає окремою позицією — найближча фільтр-кава (0,8): горнятко на 250 мл дає близько 200 мл води. Еспресо маленьке — близько 30 мл × 0,5 = 15 мл, — тож подвійне еспресо майже не додає води, але додає багато кофеїну.</p>
+    </section>
+    <section>
+        <h2>Скільки кави на день — уже забагато?</h2>
+        <p>Європейське агентство з безпечності харчових продуктів (EFSA) вважає безпечними для здорових дорослих до 400 мг кофеїну на день, не більше 200 мг за раз і не більше 200 мг на день під час вагітності.<sup><a href="#ref4">4</a></sup> Це приблизно 3–4 горнятка фільтр-кави; енергетики й кола входять у той самий підсумок.</p>
+    </section>
+
+    <section class="in-app" id="in-app">
+        <h2>Де відстежувати це в Suu</h2>
+        <p>Назви пунктів наведено англійською, як в інтерфейсі:</p>
+        <ol class="ranked stack">
+            <li>
+                <strong>Розкажи Suui про каву</strong>
+                <p class="small text-subtle">Асистент <strong>Suui</strong> на головному екрані</p>
+                <p>Досить сказати «випив фільтр-каву й дві чашки чаю» — напої додадуться до води з коефіцієнтами, а солодкі підвищать норму. У безкоштовному плані 3 AI-повідомлення на день.</p>
+            </li>
+            <li>
+                <strong>Запис одним дотиком зі списку напоїв</strong> — <em>Premium</em>
+                <p class="small text-subtle"><bdi>iPhone</bdi>: Home → quick add → <strong>Quick Drink</strong><br><bdi>Android</bdi>: Home → <strong>Add Beverage</strong></p>
+                <p>Усі 91 напій зі своїм коефіцієнтом і цукром — від еспресо до кефіру. У безкоштовному плані зі списку додаються вода й газована вода.</p>
+            </li>
+            <li>
+                <strong>Індекс Suu</strong>
+                <p class="small text-subtle"><bdi>iPhone</bdi>: Вкладка <strong>You</strong> → Water → <strong>Suu Index</strong><br><bdi>Android</bdi>: <strong>Statistics</strong> → <strong>Suu Index</strong></p>
+                <p>Оцінює реальну гідратацію дня «на чаї й каві» від 0 до 100 — відчуття «я багато випив» можна перевірити цифрою.</p>
+            </li>
+            <li>
+                <strong>Норма, що стежить за погодою</strong>
+                <p class="small text-subtle">Картка <strong>Weather &amp; info</strong> на головному екрані</p>
+                <p>У спеку й після тренувань норма води підвищується автоматично; однією кавою це не покрити — різницю буде видно.</p>
+            </li>
+        </ol>
+        <p class="small text-subtle">Українська локалізація застосунку в планах; поки що зручно користуватися англійською версією інтерфейсу.</p>
+        <div class="btn-row" style="margin-block-start:var(--sp-4)">
+            <a href="/app?src=guide-inapp-coffee-counts-as-water" class="btn btn--primary" data-cta="guide-inapp">Завантажити Suu безкоштовно</a>
+        </div>
+    </section>
+
+    <section class="verdict">
+        <h2 style="margin-block-end:var(--sp-4)">Коротко</h2>
+        <p>Кава й чай не зневоднюють; у помірних кількостях вони справді додають рідину за день. Але повністю воду вони не замінюють, і в кофеїну є верхня межа.</p>
+        <p>Практичний підхід: пий каву й чай із задоволенням, основну рідину отримуй із води й тримай загальний кофеїн нижче 400 мг на день.</p>
+    </section>
+
+    <section class="cta-band" style="border-radius:var(--r-lg);padding-block:var(--sp-12)" data-cta="guide-body">
+        <div class="container">
+            <h2 style="font-size:var(--fs-2xl)">Реальний водний баланс дня на чаї й каві</h2>
+            <p>91 напій, коефіцієнти гідратації та Індекс Suu · iOS та Android</p>
+            <div class="btn-row btn-row--center" style="margin-block-start:var(--sp-6)">
+                <a href="/app?src=guide-coffee-counts-as-water" class="btn btn--secondary btn--lg">Завантажити Suu безкоштовно</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Часті запитання</h2>
+        <div class="faq">
+            <details class="faq__item" open>
+                <summary>Чи рахується кава як вода?</summary>
+                <div><p>Частково. Помірна кава зволожує майже як вода й не зневоднює, але повністю її не замінює. Suu рахує фільтр-каву з коефіцієнтом 0,8: 200 мл кави додають 160 мл води.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Чи зневоднює кава?</summary>
+                <div><p>За помірного вживання — ні. У дослідженні, де пили чотири чашки на день, маркери гідратації були такими самими, як у дні з водою. Винятком можуть бути дуже великі кількості й люди, чутливі до кофеїну.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Чи рахується чай як вода?</summary>
+                <div><p>Здебільшого так. Чорний чай Suu рахує з коефіцієнтом 0,9, зелений — 0,95, трав&#39;яний — 0,98. Цукор у чаї при цьому підвищує норму води.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Скільки чашок кави на день безпечно?</summary>
+                <div><p>Для здорових дорослих безпечним вважається до 400 мг кофеїну на день — приблизно 3–4 горнятка фільтр-кави. Під час вагітності — до 200 мг на день. Енергетики й кола входять у загальний підсумок.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Чи рахується кола як вода?</summary>
+                <div><p>Частково: кола в Suu йде з коефіцієнтом 0,6, а її цукор підвищує норму води на 100 мл за кожні 10 г. Газована вода зараховується повністю.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Чому Suu рахує каву як 0,8, якщо дослідження кажуть, що вона зволожує як вода?</summary>
+                <div><p>Дослідження показують, що помірна кава зволожує майже як вода. Коефіцієнти Suu — обережний розрахунок із поправкою на міцну чи велику каву, чутливість до кофеїну й доданий цукор, щоб денна норма лишалася реалістичною.</p></div>
+            </details>
+        </div>
+    </section>
+    <section>
+        <h2>Джерела</h2>
+        <ol class="small">
+            <li id="ref1"><a href="https://pubmed.ncbi.nlm.nih.gov/24416202/" rel="nofollow noopener" target="_blank">Killer SC та ін. — No evidence of dehydration with moderate daily coffee intake: a counterbalanced cross-over study in a free-living population. PLoS One, 2014</a></li>
+            <li id="ref2"><a href="https://pubmed.ncbi.nlm.nih.gov/26702122/" rel="nofollow noopener" target="_blank">Maughan RJ та ін. — A randomized trial to assess the potential of different beverages to affect hydration status: development of a beverage hydration index. Am J Clin Nutr, 2016</a></li>
+            <li id="ref3"><a href="https://phc.org.ua/news/chomu-vazhlivo-piti-dostatno-vodi-i-yak-virobiti-cyu-zvichku" rel="nofollow noopener" target="_blank">Центр громадського здоров&#39;я України — Чому важливо пити достатньо води (і як виробити цю звичку)</a></li>
+            <li id="ref4"><a href="https://www.efsa.europa.eu/en/efsajournal/pub/4102" rel="nofollow noopener" target="_blank">EFSA — Scientific Opinion on the safety of caffeine (2015)</a></li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Схожі статті</h2>
+        <div class="cards">
+            <a class="card" href="/blog/uk/zabuvayu-pyty-vodu.html">
+                <h3 style="font-size:var(--fs-md)">Забуваю пити воду</h3>
+                <p>7 способів зробити це звичкою.</p>
+            </a>
+            <a class="card" href="/blog/uk/yak-kynuty-hazovani-napoi.html">
+                <h3 style="font-size:var(--fs-md)">Як кинути пити газовані напої</h3>
+                <p>Скоротити солодкі напої за чотири тижні.</p>
+            </a>
+            <a class="card" href="/blog/uk/najkrashchyj-zastosunok-dlya-vody.html">
+                <h3 style="font-size:var(--fs-md)">Найкращий застосунок для води 2026</h3>
+                <p>П&#39;ять застосунків для гідратації в порівнянні.</p>
+            </a>
+            <a class="card" href="/blog/uk/chomu-ya-postiyno-vtomlenyi.html">
+                <h3 style="font-size:var(--fs-md)">Чому я постійно втомлений?</h3>
+                <p>8 найчастіших причин.</p>
+            </a>
+        </div>
+    </section>
+
+    <p class="small text-subtle">Suu не призначений для медичної діагностики чи лікування. У питаннях здоров&#39;я звертайся до лікаря або іншого медичного фахівця.</p>
+
+    <p>
+        <a href="/blog-uk.html">← Назад до блогу</a>
+    </p>
+</div>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__bottom" style="border:0">
+            <p class="small mb-0">© 2026 Suu · Furkan Mert Fındıklı</p>
+            <p class="small mb-0"><a href="/hosgeldiniz-uk.html">suuapp.com</a></p>
+        </div>
+    </div>
+</footer>
+
+<div class="sticky-cta" data-cta="sticky">
+    <a href="/app?src=sticky" class="btn btn--secondary">App Store</a>
+    <a href="/app?src=sticky" class="btn btn--primary">Google Play</a>
+</div>
+
+<script src="/assets/js/suu-badge.js?v=2" defer></script>
+</body>
+</html>

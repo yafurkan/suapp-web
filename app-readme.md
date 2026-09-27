@@ -73,28 +73,32 @@ actualHydration = miktar (ml) × hydrationFactor
 ```
 | İçecek | hydrationFactor |
 |--------|----------------|
-| Su | 1.0 |
-| Bitki çayı | 0.9 |
-| Kahve | 0.8 |
-| Enerji içeceği | 0.5 |
-| Alkollü içecek | −0.5 (dehidrasyon) |
+| Su, maden suyu | 1.0 |
+| Bitki çayı | 0.98 |
+| Yeşil çay, ayran | 0.95 |
+| Siyah çay, süt, kefir | 0.9 |
+| Filtre kahve, cappuccino | 0.8 |
+| Türk kahvesi | 0.7 |
+| Kola | 0.6 |
+| Espresso | 0.5 |
+| Enerji içeceği (Red Bull / Monster) | 0.4 / 0.3 |
+
+Alkollü içecekler hidrasyon katsayısıyla değil, aşağıdaki hedef artışıyla yansıtılır.
 
 **2. Ekstra su ihtiyacı (`extraWaterNeed`)**
 
-İçecekteki şeker, kafein ve alkol vücudun ek su tüketmesine neden olur. Bu miktar otomatik hesaplanır ve günlük hedefe eklenir:
+İçecekteki şeker ve alkol günlük su hedefini artırır. Kafein hedefi artırmaz; kahvenin payı yalnızca katsayısıyla sınırlanır. Bu miktar otomatik hesaplanır ve günlük hedefe eklenir:
 
 ```
 Şeker etkisi:  her 10g şeker       → +100ml ekstra su
-Kafein etkisi: içecek hacminin %20  → ekstra su
 Alkol etkisi:  her 10ml saf alkol   → +250ml ekstra su
 ```
 
-**Örnek — 350ml Enerji İçeceği (12g şeker/100ml, 32mg kafein/100ml):**
+**Örnek — 250ml Red Bull (11g şeker/100ml):**
 ```
-actualHydration = 350 × 0.5  = 175ml  (hidrasyon katkısı)
-şeker etkisi    = (350/100 × 12) / 10 × 100  = 420ml
-kafein etkisi   = 350 × 0.2             = 70ml
-extraWaterNeed  = 490ml  → günlük hedefe eklenir
+actualHydration = 250 × 0.4  = 100ml  (hidrasyon katkısı)
+şeker etkisi    = (250/100 × 11) / 10 × 100  = 275ml
+extraWaterNeed  = 275ml  → günlük hedefe eklenir
 ```
 
 Kullanıcıya içecek seçme diyaloğunda:

@@ -3,357 +3,455 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ÜRETİLMİŞ DOSYA — elle düzenlemeyin.
+         Kaynak: content/guides/coffee-counts-as-water.json + content/compare/_template.html.j2
+         Yeniden üret: python3 scripts/build-compare.py --apply -->
+
+    <title>Does Coffee Count as Water Intake? Hydration by Drink | Suu</title>
+    <meta name="description" content="Moderate coffee and tea don&#39;t dehydrate you; they hydrate close to water. How filter coffee, espresso, tea and soda count, the caffeine limit and Suu&#39;s factors.">
+    <meta name="keywords" content="does coffee count as water intake, does coffee dehydrate you, does tea count as water, is coffee a diuretic, how many cups of coffee a day, caffeine limit per day, hydration by drink, does soda count as water">
     <meta name="apple-itunes-app" content="app-id=6757619920">
-    <title>Does Coffee Dehydrate You? The Answer Isn't What You Think | Suu</title>
-    <meta name="description" content="You've been told coffee makes you dehydrated. Science disagrees. Which drinks actually count toward your daily water intake? The dehydration factor explained.">
-    <meta name="keywords" content="does coffee count as water, does tea count as water intake, dehydration factor, coffee hydration, tea hydration, beverage hydration comparison, caffeine dehydration myth">
+
     <link rel="canonical" href="https://suuapp.com/blog/en/coffee-tea-hydration.html">
     <!-- Hreflang cluster (auto-injected) -->
     <link rel="alternate" hreflang="tr" href="https://suuapp.com/blog/kahve-cay-su-sayar-mi.html">
     <link rel="alternate" hreflang="en" href="https://suuapp.com/blog/en/coffee-tea-hydration.html">
     <link rel="alternate" hreflang="ar" href="https://suuapp.com/blog/ar/alqahwa-walshay-walmae.html">
     <link rel="alternate" hreflang="ru" href="https://suuapp.com/blog/ru/kofe-chay-i-voda.html">
+    <link rel="alternate" hreflang="de" href="https://suuapp.com/blog/de/zaehlt-kaffee-zur-trinkmenge.html">
+    <link rel="alternate" hreflang="it" href="https://suuapp.com/blog/it/il-caffe-conta-come-acqua.html">
+    <link rel="alternate" hreflang="uk" href="https://suuapp.com/blog/uk/chy-rakhuyetsya-kava-yak-voda.html">
     <link rel="alternate" hreflang="x-default" href="https://suuapp.com/blog/en/coffee-tea-hydration.html">
 
 
-<!-- Open Graph -->
-    <meta property="og:title" content="Does Coffee Dehydrate You? The Answer Isn't What You Think">
-    <meta property="og:description" content="You've been told coffee makes you dehydrated. Science disagrees. Which drinks actually count toward your daily water intake? The dehydration factor explained.">
+    <meta property="og:title" content="Does Coffee Count as Water Intake? Hydration by Drink">
+    <meta property="og:description" content="Coffee doesn&#39;t dehydrate you, but it doesn&#39;t fully replace plain water either. How tea, coffee and soda count — in numbers.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://suuapp.com/blog/en/coffee-tea-hydration.html">
     <meta property="og:image" content="https://suuapp.com/assets/og/blog/en-coffee-tea-hydration.png">
     <meta property="og:site_name" content="Suu">
     <meta property="og:locale" content="en_US">
     <meta property="article:published_time" content="2026-03-22">
+    <meta property="article:modified_time" content="2026-09-27">
     <meta property="article:author" content="Furkan Mert Fındıklı">
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@SuuTakip">
-    <meta name="twitter:title" content="Does Coffee Dehydrate You? The Answer Isn't What You Think">
-    <meta name="twitter:description" content="You've been told coffee makes you dehydrated. Science disagrees. Which drinks actually count toward your daily water intake? The dehydration factor explained.">
+    <meta name="twitter:title" content="Does Coffee Count as Water Intake? Hydration by Drink">
+    <meta name="twitter:description" content="Coffee doesn&#39;t dehydrate you, but it doesn&#39;t fully replace plain water either. How tea, coffee and soda count — in numbers.">
     <meta name="twitter:image" content="https://suuapp.com/assets/og/blog/en-coffee-tea-hydration.png">
 
-    <!-- Favicon -->
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/donation-widget.css?v=6">
+    <link rel="stylesheet" href="/assets/css/suu.css">
 
-    <!-- Structured Data: Article -->
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Does Coffee and Tea Count as Water? Understanding the Dehydration Factor",
-  "description": "Learn about the dehydration factor concept, how different beverages contribute to hydration, and how Suu tracks it all automatically.",
-  "image": "https://suuapp.com/assets/og/blog/en-coffee-tea-hydration.png",
-  "datePublished": "2026-03-22",
-  "dateModified": "2026-03-22",
-  "author": {
-    "@type": "Person",
-    "@id": "https://suuapp.com/#furkan",
-    "name": "Furkan Mert Fındıklı",
-    "url": "https://suuapp.com/yazarlar/furkan-mert.html",
-    "jobTitle": "Kurucu & Geliştirici",
-    "affiliation": {
+  "@graph": [
+    {
       "@type": "Organization",
       "@id": "https://suuapp.com/#organization",
       "name": "Suu",
-      "url": "https://suuapp.com"
+      "url": "https://suuapp.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://suuapp.com/assets/favicon-512.png"
+      }
     },
-    "sameAs": [
-      "https://www.linkedin.com/in/furkanfindikli/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "@id": "https://suuapp.com/#organization",
-    "name": "Suu",
-    "url": "https://suuapp.com",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://suuapp.com/assets/favicon-512.png"
+    {
+      "@type": "Person",
+      "@id": "https://suuapp.com/#furkan",
+      "name": "Furkan Mert Fındıklı",
+      "url": "https://suuapp.com/yazarlar/furkan-mert.html",
+      "jobTitle": "Kurucu \u0026 Geliştirici",
+      "worksFor": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/furkanfindikli/"
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://suuapp.com/blog/en/coffee-tea-hydration.html#article",
+      "headline": "Does Coffee Count as Water Intake? How Tea, Coffee and Other Drinks Add Up (and How Suu Tracks Them)",
+      "description": "Moderate coffee and tea don't dehydrate you; they hydrate close to water. How filter coffee, espresso, tea and soda count, the caffeine limit and Suu's factors.",
+      "image": "https://suuapp.com/assets/og/blog/en-coffee-tea-hydration.png",
+      "datePublished": "2026-03-22",
+      "dateModified": "2026-09-27",
+      "inLanguage": "en",
+      "mainEntityOfPage": "https://suuapp.com/blog/en/coffee-tea-hydration.html",
+      "author": {
+        "@id": "https://suuapp.com/#furkan"
+      },
+      "publisher": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Coffee and hydration"
+        },
+        {
+          "@type": "Thing",
+          "name": "Caffeine"
+        },
+        {
+          "@type": "Thing",
+          "name": "Beverage hydration"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://suuapp.com/#suuapp-ios"
+        },
+        {
+          "@id": "https://suuapp.com/#suuapp-android"
+        }
+      ],
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "name": "Killer SC et al. — No evidence of dehydration with moderate daily coffee intake: a counterbalanced cross-over study in a free-living population. PLoS One, 2014",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24416202/"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Maughan RJ et al. — A randomized trial to assess the potential of different beverages to affect hydration status: development of a beverage hydration index. Am J Clin Nutr, 2016",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26702122/"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "NHS — Water, drinks and your health",
+          "url": "https://www.nhs.uk/live-well/eat-well/food-guidelines-and-food-labels/water-drinks-nutrition/"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "EFSA — Scientific Opinion on the safety of caffeine (2015)",
+          "url": "https://www.efsa.europa.eu/en/efsajournal/pub/4102"
+        }
+      ],
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".answer-box",
+          "h1",
+          ".in-app",
+          ".verdict p"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://suuapp.com/blog/en/coffee-tea-hydration.html#faq",
+      "inLanguage": "en",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does coffee count as water intake?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Partly. Moderate coffee hydrates you close to water and doesn't dehydrate you, but it doesn't fully replace plain water. Suu counts filter coffee with a factor of 0.8: 200 ml of coffee adds 160 ml of water."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does coffee dehydrate you?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not in moderation. In a study where people drank four cups a day, hydration markers were the same as on water days. Very high intakes and caffeine-sensitive people may be exceptions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does tea count as water?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Largely, yes. Black tea counts at 0.9, green tea at 0.95 and herbal tea at 0.98 in Suu. The NHS lists tea and coffee among the drinks that count toward your daily fluid."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many cups of coffee a day is safe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Up to 400 mg of caffeine a day is considered safe for healthy adults — roughly 3–4 mugs of drip coffee. In pregnancy the limit is 200 mg a day. Energy drinks and colas count toward the total."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does soda count as water?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Partly: cola counts at 0.6 in Suu, and its sugar raises your daily water goal by 100 ml per 10 g. Sparkling water counts fully."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does Suu count coffee at 0.8 if research says it hydrates like water?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Research shows moderate coffee hydrates close to water. Suu's factors are a cautious calculation that accounts for strong or large coffees, caffeine sensitivity and added sugar, so your daily water goal stays realistic."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://suuapp.com/blog/en/coffee-tea-hydration.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Suu",
+          "item": "https://suuapp.com/hosgeldiniz-en.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://suuapp.com/blog-en.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Does Coffee Count as Water Intake? How Tea, Coffee and Other Drinks Add Up (and How Suu Tracks Them)",
+          "item": "https://suuapp.com/blog/en/coffee-tea-hydration.html"
+        }
+      ]
     }
-  },
-  "mainEntityOfPage": "https://suuapp.com/blog/en/coffee-tea-hydration.html",
-  "inLanguage": "en",
-  "keywords": "does coffee count as water, does tea count as water intake, dehydration factor, coffee hydration, tea hydration, beverage hydration comparison, caffeine dehydration myth",
-  "wordCount": 840,
-  "speakable": {
-    "@type": "SpeakableSpecification",
-    "cssSelector": [
-      ".hero h1",
-      ".intro",
-      "h2",
-      ".benefit-content p",
-      ".phase-card p"
-    ]
-  }
+  ]
 }
     </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://suuapp.com/"},
-            {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://suuapp.com/blog.html"},
-            {"@type": "ListItem", "position": 3, "name": "Coffee Tea Hydration", "item": "https://suuapp.com/blog/en/coffee-tea-hydration.html"}
-        ]
-    }
-    </script>
 
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', sans-serif; color: #333; background: #f8f9fa; line-height: 1.7; }
-        .nav { background: white; padding: 0 20px; height: 70px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 10px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 100; }
-        .nav-logo { display: flex; align-items: center; gap: 8px; font-size: 22px; font-weight: 700; color: #4A90D9; text-decoration: none; }
-        .nav-logo i { color: #4A90D9; }
-        .nav-back { color: #666; text-decoration: none; font-size: 14px; display: flex; align-items: center; gap: 6px; transition: color 0.2s; }
-        .nav-back:hover { color: #4A90D9; }
-        .hero { background: linear-gradient(135deg, #4A90D9 0%, #29B6F6 100%); color: white; padding: 60px 20px; text-align: center; }
-        .hero .badge { display: inline-block; background: rgba(255,255,255,0.2); padding: 6px 16px; border-radius: 20px; font-size: 13px; font-weight: 500; margin-bottom: 20px; }
-        .hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 700; margin-bottom: 16px; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.3; }
-        .hero .meta { font-size: 14px; opacity: 0.85; display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap; }
-        .hero .meta span { display: flex; align-items: center; gap: 6px; }
-        .container { max-width: 760px; margin: 0 auto; padding: 50px 20px 80px; }
-        .intro { font-size: 1.15rem; color: #444; background: white; border-left: 4px solid #4A90D9; padding: 20px 24px; border-radius: 0 10px 10px 0; margin-bottom: 40px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
-        h2 { font-size: 1.5rem; font-weight: 700; color: #222; margin: 40px 0 16px; }
-        h3 { font-size: 1.15rem; font-weight: 600; color: #333; margin: 28px 0 10px; }
-        p { margin-bottom: 16px; color: #555; font-size: 1rem; }
-        .benefit-card { background: white; border-radius: 12px; padding: 24px; margin-bottom: 20px; box-shadow: 0 2px 12px rgba(0,0,0,0.07); display: flex; gap: 20px; align-items: flex-start; }
-        .benefit-number { background: linear-gradient(135deg, #4A90D9, #29B6F6); color: white; width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.1rem; flex-shrink: 0; }
-        .benefit-content h3 { margin: 0 0 8px; }
-        .benefit-content p { margin: 0; }
-        .stat-box { background: #e3f2fd; border-radius: 10px; padding: 16px 20px; margin: 20px 0; border-left: 4px solid #4A90D9; }
-        .stat-box strong { color: #1565C0; }
-        .drink-table { width: 100%; border-collapse: collapse; margin: 24px 0; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.07); }
-        .drink-table th { background: linear-gradient(135deg, #4A90D9, #29B6F6); color: white; padding: 14px 16px; text-align: left; font-size: 0.9rem; font-weight: 600; }
-        .drink-table td { padding: 12px 16px; font-size: 0.95rem; color: #444; border-bottom: 1px solid #f0f0f0; }
-        .drink-table tr:last-child td { border-bottom: none; }
-        .drink-table tr:nth-child(even) td { background: #f8f9fa; }
-        .factor-high { color: #27ae60; font-weight: 600; }
-        .factor-mid { color: #e67e22; font-weight: 600; }
-        .factor-low { color: #e74c3c; font-weight: 600; }
-        .example-box { background: #e8f4fd; border-radius: 12px; padding: 20px 24px; margin: 24px 0; border-left: 4px solid #4A90D9; }
-        .example-box h4 { color: #2c6fa8; font-size: 1rem; margin-bottom: 10px; }
-        .example-box p { color: #444; margin: 0; font-size: 0.95rem; }
-        .example-box .calc { font-size: 1.1rem; font-weight: 600; color: #2c6fa8; margin-top: 8px; }
-        .cta-box { background: linear-gradient(135deg, #4A90D9, #29B6F6); color: white; border-radius: 16px; padding: 36px; text-align: center; margin: 50px 0; }
-        .cta-box h3 { font-size: 1.5rem; margin-bottom: 12px; }
-        .cta-box p { opacity: 0.9; margin-bottom: 24px; font-size: 1rem; }
-        .cta-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-        .cta-btn { background: white; color: #4A90D9; padding: 12px 24px; border-radius: 50px; font-weight: 600; text-decoration: none; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 8px; transition: transform 0.2s; }
-        .cta-btn:hover { transform: translateY(-2px); }
-        .footer-nav { border-top: 1px solid #eee; padding-top: 30px; margin-top: 50px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
-        .footer-nav a { color: #4A90D9; text-decoration: none; font-size: 14px; display: flex; align-items: center; gap: 6px; }
-        .footer-nav a:hover { text-decoration: underline; }
-        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 16px; }
-        .related-card { background: white; border-radius: 10px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); text-decoration: none; color: inherit; transition: transform 0.2s; }
-        .related-card:hover { transform: translateY(-3px); }
-        .related-card .tag { font-size: 12px; color: #4A90D9; font-weight: 600; text-transform: uppercase; margin-bottom: 8px; }
-        .related-card h4 { font-size: 0.95rem; color: #333; line-height: 1.4; }
-        .references { background: #f8f9fa; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px 28px; margin-top: 40px; }
-        .references h2 { font-size: 1.1rem; color: #374151; margin: 0 0 16px; border-bottom: 1px solid #e5e7eb; padding-bottom: 12px; }
-        .ref-list { margin: 0 0 0 20px; padding: 0; }
-        .ref-list li { font-size: 0.875rem; color: #6b7280; margin-bottom: 10px; line-height: 1.6; }
-        .ref-list li a { color: #4A90D9; text-decoration: none; }
-        .ref-list li a:hover { text-decoration: underline; }
-        sup a { color: #4A90D9; font-size: 0.75em; text-decoration: none; font-weight: 600; }
-        sup a:hover { text-decoration: underline; }
-    </style>
     <script src="/assets/js/analytics.js" defer></script>
-    <script src="/assets/js/special-days.js" defer></script>
+    <script src="/lang-switcher.js?v=3" defer></script>
+    <script src="/donation-widget.js?v=6" defer></script>
 </head>
 <body>
 
+<a class="skip-link" href="#main">Skip to content</a>
+
 <nav class="nav">
-    <a href="/" class="nav-logo"><img src="/assets/brand/suu-badge-128.png" alt="Suu" width="128" height="128" class="suu-logo-badge" style="height:1.6em;width:1.6em;border-radius:50%;vertical-align:-0.4em;box-shadow:0 0 0 1px rgba(255,255,255,.12),0 0 14px rgba(94,170,255,.45);"> Suu</a>
-    <a href="../../blog.html" class="nav-back"><i class="fas fa-arrow-left"></i> Back to Blog</a>
-</nav>
-
-<div class="hero">
-    <span class="badge">☕ Nutrition & Hydration</span>
-    <h1>Does Coffee and Tea Count as Water? Understanding the Dehydration Factor</h1>
-    <div class="meta">
-        <span><i class="fas fa-calendar"></i> March 22, 2026</span>
-        <span><i class="fas fa-clock"></i> 5 min read</span>
-        <span><i class="fas fa-pen"></i> <a href="/about.html" rel="author">Suu Team</a></span>
-    </div>
-</div>
-
-<div class="container">
-
-    <p class="intro">"Coffee dehydrates you." How many times have you heard this? There is a grain of truth behind this widespread belief, but the full picture is far more nuanced than a simple yes or no. Each beverage you drink contributes differently to your body's water balance, and understanding this is the key to accurate hydration tracking.</p>
-
-    <h2>The Old Belief vs. Reality</h2>
-    <p>For decades, the prevailing wisdom was that caffeine is a diuretic and therefore coffee and tea cause net water loss. This is technically half-true: caffeine does temporarily reduce the kidneys' ability to retain water. However, this diuretic effect does not completely negate the hydration provided by the water in the beverage itself.</p>
-    <p>Research has conclusively demonstrated that moderate coffee consumption (3 to 4 cups per day) does not cause net dehydration in habitual drinkers.<sup><a href="#ref1">[1]</a></sup> In other words, coffee does not hydrate as effectively as plain water, but it still provides a meaningful net hydration contribution. So how do we quantify this difference?</p>
-
-    <h2>What Is the Dehydration Factor?</h2>
-    <p>The dehydration factor (DF) is a coefficient that represents how much of a beverage actually remains in your body as usable hydration. For pure water, this value is 1.0 — every milliliter you drink counts fully toward hydration. For beverages containing caffeine or alcohol, the factor is lower because these substances cause the body to excrete more water than it would otherwise.</p>
-    <p>The formula is straightforward: <strong>Net Hydration = Volume Consumed x Dehydration Factor</strong></p>
-
-    <h2>Beverage Hydration Table</h2>
-
-    <table class="drink-table">
-        <thead>
-            <tr>
-                <th>Beverage</th>
-                <th>Dehydration Factor</th>
-                <th>Net Hydration per 200 ml</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Water</td>
-                <td class="factor-high">1.00</td>
-                <td>200 ml</td>
-            </tr>
-            <tr>
-                <td>Milk / Buttermilk</td>
-                <td class="factor-high">0.90</td>
-                <td>180 ml</td>
-            </tr>
-            <tr>
-                <td>Fruit Juice (natural)</td>
-                <td class="factor-high">0.85</td>
-                <td>170 ml</td>
-            </tr>
-            <tr>
-                <td>Sports Drink</td>
-                <td class="factor-mid">0.80</td>
-                <td>160 ml</td>
-            </tr>
-            <tr>
-                <td>Tea (black / green)</td>
-                <td class="factor-mid">0.70</td>
-                <td>140 ml</td>
-            </tr>
-            <tr>
-                <td>Coffee (filter / Americano)</td>
-                <td class="factor-mid">0.60</td>
-                <td>120 ml</td>
-            </tr>
-            <tr>
-                <td>Soda / Soft Drink</td>
-                <td class="factor-low">0.50</td>
-                <td>100 ml</td>
-            </tr>
-            <tr>
-                <td>Alcoholic Beverage</td>
-                <td class="factor-low">-0.40</td>
-                <td>-80 ml (causes water loss)</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <div class="example-box">
-        <h4>Calculation Example: Morning Coffee</h4>
-        <p>A 200 ml filter coffee has a dehydration factor of 0.60. This means:</p>
-        <p class="calc">200 ml x 0.60 = 120 ml net hydration</p>
-        <p>So your morning cup of coffee contributes approximately 120 ml toward your daily water goal. This is a real contribution, but drinking the same volume of plain water would be nearly twice as effective for hydration.</p>
-    </div>
-
-    <h2>Why Is Tea Better Than Coffee for Hydration?</h2>
-    <p>Tea typically has a higher dehydration factor (0.70) than coffee (0.60) because it contains significantly less caffeine per cup. A typical cup of black tea contains 40 to 70 mg of caffeine, while a cup of brewed coffee contains 80 to 120 mg. Less caffeine means less diuretic effect, which means more of the water stays in your body.</p>
-    <p>Green tea is an even better option from a hydration perspective, with caffeine levels of 20 to 45 mg per cup. Herbal teas that contain no caffeine, such as chamomile or peppermint, have a dehydration factor close to 1.0 and are effectively equivalent to water for hydration purposes.<sup><a href="#ref2">[2]</a></sup></p>
-
-    <h2>Why Is Alcohol Negative?</h2>
-    <p>Alcohol suppresses the production of ADH (antidiuretic hormone), the hormone that signals the kidneys to retain water. When ADH is blocked, the kidneys produce significantly more urine. The result is that you lose more water than the alcoholic beverage contained. This is why the dehydration factor for alcohol is negative: it does not merely fail to hydrate, it actively depletes your existing water reserves.</p>
-    <p>This explains why a night of drinking often results in a headache, dry mouth, and fatigue the next morning. These are all symptoms of dehydration caused by alcohol's interference with the body's water conservation mechanisms.</p>
-
-    <h2>How Suu Tracks Real Hydration</h2>
-    <p>Most water tracking apps count every beverage equally: 200 ml of coffee equals 200 ml of water. This is scientifically inaccurate and can lead to a false sense of adequate hydration. Suu is different.</p>
-    <p>Suu includes 91 beverage categories, each with a scientifically assigned dehydration factor. When you log a coffee, tea, juice, or any other drink, Suu automatically calculates the net hydration value and applies it to your daily goal. No more guessing whether your third cup of coffee "counts."</p>
-    <p>Simply select what you drank, and Suu does the math. Your daily hydration dashboard reflects your true hydration status, not just the total volume of liquid consumed.</p>
-
-    <div class="cta-box" style="padding: 0; overflow: hidden; border-radius: 16px;">
-    <div style="display: flex; align-items: center; gap: 20px; padding: 24px; flex-wrap: wrap;">
-        <img src="../../assets/screenshots/ana-ekran.webp" width="600" height="1300" alt="Suu App" style="width: 120px; height: auto; border-radius: 16px; flex-shrink: 0;" loading="lazy">
-        <div style="flex: 1; min-width: 200px;">
-            <h3 style="margin: 0 0 12px;">Build Healthy Habits with Suu</h3>
-            <ul style="list-style: none; padding: 0; margin: 0 0 20px;">
-                <li style="padding: 4px 0; font-size: 0.95rem;">✓ 91 beverage categories</li>
-                <li style="padding: 4px 0; font-size: 0.95rem;">✓ Compete with friends in leagues</li>
-                <li style="padding: 4px 0; font-size: 0.95rem;">✓ Smart reminders</li>
-                <li style="padding: 4px 0; font-size: 0.95rem;">✓ Free — iOS & Android</li>
-            </ul>
-            <div class="cta-buttons">
-                <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" class="cta-btn" target="_blank" rel="noopener">
-                    <i class="fab fa-apple"></i> App Store
-                </a>
-                <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro" class="cta-btn" target="_blank" rel="noopener">
-                    <i class="fab fa-google-play"></i> Google Play
-                </a>
-            </div>
+    <div class="container nav__inner">
+        <a href="/hosgeldiniz-en.html" class="nav__logo"><img src="/assets/brand/suu-badge-128.png" alt="Suu" width="128" height="128" class="suu-logo-badge" style="height:1.6em;width:1.6em;border-radius:50%;vertical-align:-0.4em;box-shadow:0 0 0 1px rgba(255,255,255,.12),0 0 14px rgba(94,170,255,.45);"> Suu</a>
+        <ul class="nav__links">
+            <li><a href="/blog-en.html">Blog</a></li>
+            
+            <li><a href="/hosgeldiniz-en.html#fiyat">Pricing</a></li>
+        </ul>
+        <div class="nav__actions">
+            <a href="/app?src=guide-nav" class="btn btn--primary" data-cta="nav"
+               style="min-height:40px;padding:var(--sp-2) var(--sp-5);font-size:var(--fs-sm)">Download Free</a>
         </div>
     </div>
-</div>
+</nav>
 
-    <div class="references">
-        <h2>Scientific References</h2>
-        <ol class="ref-list">
-            <li id="ref1">Killer SC, Blannin AK, Jeukendrup AE. (2014). No Evidence of Dehydration with Moderate Daily Coffee Intake: A Counterbalanced Cross-Over Study in a Free-Living Population. <em>PLOS ONE</em>, 9(1), e84154. <a href="https://pubmed.ncbi.nlm.nih.gov/24416202/" target="_blank" rel="noopener">PubMed: 24416202</a></li>
-            <li id="ref2">Popkin BM, D'Anci KE, Rosenberg IH. (2010). Water, Hydration and Health. <em>Nutrition Reviews</em>, 68(8), 439–458. <a href="https://pubmed.ncbi.nlm.nih.gov/20646222/" target="_blank" rel="noopener">PubMed: 20646222</a></li>
-        </ol>
+<main id="main">
+
+<header class="section" style="padding-block-end:var(--sp-8)">
+    <div class="container container--narrow">
+        <nav class="breadcrumb small text-subtle" aria-label="Breadcrumb"
+             style="margin-block-end:var(--sp-4)">
+            <a href="/hosgeldiniz-en.html">Suu</a>
+            <span aria-hidden="true"> › </span>
+            <a href="/blog-en.html">Blog</a>
+            <span aria-hidden="true"> › </span>
+            <span aria-current="page">Does Coffee Count as Water Intake? How Tea, Coffee and Other Drinks Add Up (and How Suu Tracks Them)</span>
+        </nav>
+        <span class="badge badge--new">☕ Guide · Drinks and water</span>
+        <h1 style="margin-block-start:var(--sp-4)">Does Coffee Count as Water Intake? How Tea, Coffee and Other Drinks Add Up (and How Suu Tracks Them)</h1>
+        <p class="small text-subtle">Published: March 22, 2026 · Updated: September 27, 2026 · Furkan Mert Fındıklı · 7 min read</p>
     </div>
+</header>
 
-    <h2>Related Articles</h2>
-    <div class="related-grid">
-        <a href="benefits-of-drinking-water.html" class="related-card">
-            <div class="tag">Health</div>
-            <h4>10 Science-Backed Benefits of Drinking Water</h4>
-        </a>
-        <a href="how-much-water-should-i-drink.html" class="related-card">
-            <div class="tag">Hydration Guide</div>
-            <h4>How Much Water Should I Drink Per Day?</h4>
-        </a>
-        <a href="hydration-and-exercise.html" class="related-card">
-            <div class="tag">Fitness</div>
-            <h4>How Much Water Should You Drink During Exercise?</h4>
-        </a>
+<div class="container container--narrow stack--lg" style="padding-block-end:var(--sp-24)">
+
+    <!-- CEVAP-ÖNCE: alıntılanan blok burasıdır -->
+    <div class="answer-box">
+        <p><strong>Short answer:</strong> Partly — more than most people think: moderate coffee and tea hydrate you close to water, and the idea that &#34;coffee dehydrates you&#34; doesn&#39;t hold for most people. It still doesn&#39;t fully replace plain water. Suu counts drinks conservatively: filter coffee with a hydration factor of 0.8, espresso 0.5, black tea 0.9 and herbal tea 0.98.</p>
     </div>
+    <aside class="callout health-note" role="note">
+        <p><strong>This article is not medical advice.</strong></p>
+        <p>Up to 400 mg of caffeine a day is generally considered safe for healthy adults; the NHS advises no more than 200 mg a day during pregnancy. If you have a heart rhythm problem, high blood pressure, reflux or an anxiety disorder, talk to your doctor about how much caffeine is right for you.</p>
+        <p>Cut back and see a doctor if you notice:</p>
+        <ul>
+            <li>Palpitations, chest pain or shakiness after caffeine</li>
+            <li>A marked increase in insomnia or anxiety</li>
+        </ul>
+    </aside>
 
-    <div class="footer-nav">
-        <a href="../../blog.html"><i class="fas fa-arrow-left"></i> All Articles</a>
-        <a href="/">Suu Homepage <i class="fas fa-home"></i></a>
+    <div class="disclosure">We wrote this guide as the two-person team that builds Suu. We publish our app&#39;s factors openly; they aren&#39;t a scientific claim that &#34;coffee dehydrates you&#34; but a cautious calculation that keeps your daily water goal realistic.</div>
+    <p>"If you drink coffee, have a glass of water too, or you'll get dehydrated" — advice repeated for years. Caffeine's mild diuretic effect is real, but at moderate intakes it isn't strong enough to cancel out the fluid a cup provides.</p>
+    <p>Below we look first at what research says, then at why and how Suu counts tea, coffee and other drinks.</p>
+
     
-<!-- sütunlar arası bağlantı: scripts/link-pillars.py -->
-            <a href="best-calorie-counting-app.html" class="related-card">
-                <div class="tag">Calories
-        <a href="/download.html"><i class="fas fa-download"></i> Download Free</a></div>
-                <h4>Best Calorie Counting App 2026: Suu vs MyFitnessPal,…</h4>
+    <section>
+        <h2>Does coffee really dehydrate you?</h2>
+        <p>Not in moderation. In a study of 50 men who habitually drank 3–6 cups a day, drinking 4 × 200 ml of coffee a day for three days produced no difference in body water or hydration markers compared with drinking the same amount of water.<sup><a href="#ref1">1</a></sup> In a trial comparing drinks, milk and an oral rehydration solution were retained longer than water, while coffee, tea and cola weren't clearly different from water.<sup><a href="#ref2">2</a></sup></p>
+        <p>So tea and coffee do contribute to your daily fluids. The NHS agrees: water, lower-fat milk and sugar-free drinks, including tea and coffee, all count.<sup><a href="#ref3">3</a></sup> That still isn't a reason to drop plain water: caffeine, added sugar and milk change the picture.</p>
+    </section>
+    <section>
+        <h2>How Suu counts drinks</h2>
+        <p>Suu counts every drink with a <strong>hydration factor</strong>: how much of what you drink is added to your water. 200 ml of filter coffee × 0.8 = 160 ml of water. The factors are deliberately cautious, accounting for strong or large coffees, caffeine sensitivity and added sugar so your daily goal stays realistic. The values in the app:</p>
+        <ul>
+            <li><strong>1.0:</strong> water, sparkling water</li>
+            <li><strong>0.95–0.98:</strong> herbal tea (0.98), green tea (0.95), coconut water (0.98)</li>
+            <li><strong>0.9:</strong> black tea, milk</li>
+            <li><strong>0.8–0.85:</strong> latte (0.85), filter coffee (0.8), cappuccino (0.8)</li>
+            <li><strong>0.75:</strong> americano, cold brew</li>
+            <li><strong>0.5–0.6:</strong> cola (0.6), espresso (0.5)</li>
+            <li><strong>0.3–0.4:</strong> energy drinks</li>
+        </ul>
+        <div class="callout"><p>Sugar is counted separately: every 10 g of sugar in a drink raises your daily water goal by 100 ml. Caffeine doesn't raise it. Alcoholic drinks shouldn't be treated as water; Suu reflects alcohol by raising your daily goal (+250 ml per 10 ml of pure alcohol).</p></div>
+    </section>
+    <section>
+        <h2>Drip coffee, espresso and iced coffee</h2>
+        <p>A 12 fl oz (355 ml) mug of drip coffee × 0.8 ≈ 285 ml of water. An espresso is small — about 30 ml × 0.5 = 15 ml — so a double espresso adds almost nothing to your water, even though it adds a lot of caffeine. An iced americano or cold brew counts at 0.75–0.8, but a syrup-sweetened iced drink raises your goal for its sugar.</p>
+    </section>
+    <section>
+        <h2>How many cups of coffee is too many?</h2>
+        <p>The European Food Safety Authority considers up to 400 mg of caffeine a day of no safety concern for healthy adults, advises no more than 200 mg in a single dose and no more than 200 mg a day in pregnancy.<sup><a href="#ref4">4</a></sup> That's roughly 3–4 mugs of drip coffee; energy drinks and colas count toward the same total.</p>
+    </section>
+
+    <section class="in-app" id="in-app">
+        <h2>Where to track this in Suu</h2>
+        <p>Menu names are exactly as they appear:</p>
+        <ol class="ranked stack">
+            <li>
+                <strong>Tell Suui about your coffee</strong>
+                <p class="small text-subtle">The <strong>Suui</strong> assistant on the home screen</p>
+                <p>Just say "I had a filter coffee and two teas"; drinks are added to your water with their factors, and sugary ones raise your goal. The free plan includes 3 AI messages a day.</p>
+            </li>
+            <li>
+                <strong>One-tap logging from the drink list</strong> — <em>Premium</em>
+                <p class="small text-subtle"><bdi>iPhone</bdi>: Home → quick add → <strong>Quick Drink</strong><br><bdi>Android</bdi>: Home → <strong>Add Beverage</strong></p>
+                <p>All 91 drinks with their own factor and sugar, from espresso to kombucha. On the free plan, water and sparkling water can be added from the list.</p>
+            </li>
+            <li>
+                <strong>Suu Index</strong>
+                <p class="small text-subtle"><bdi>iPhone</bdi>: <strong>You</strong> tab → Water → <strong>Suu Index</strong><br><bdi>Android</bdi>: <strong>Statistics</strong> → <strong>Suu Index</strong></p>
+                <p>Scores the real hydration of a tea-and-coffee day from 0 to 100, so you can check the "I drank plenty" feeling against a number.</p>
+            </li>
+            <li>
+                <strong>A goal that follows the weather</strong>
+                <p class="small text-subtle">The <strong>Weather &amp; info</strong> card on the home screen</p>
+                <p>Your water goal rises automatically on hot days and after workouts; coffee alone won't cover the increase, and you'll see the gap.</p>
+            </li>
+        </ol>
+        <div class="btn-row" style="margin-block-start:var(--sp-4)">
+            <a href="/app?src=guide-inapp-coffee-counts-as-water" class="btn btn--primary" data-cta="guide-inapp">Get Suu free</a>
+        </div>
+    </section>
+
+    <section class="verdict">
+        <h2 style="margin-block-end:var(--sp-4)">The short version</h2>
+        <p>Coffee and tea don't dehydrate you; in moderation they genuinely add to your daily fluids. But they don't fully replace plain water, and caffeine has an upper limit.</p>
+        <p>The practical approach: enjoy your coffee and tea, still get most of your fluid from water, and keep total caffeine under 400 mg a day.</p>
+    </section>
+
+    <section class="cta-band" style="border-radius:var(--r-lg);padding-block:var(--sp-12)" data-cta="guide-body">
+        <div class="container">
+            <h2 style="font-size:var(--fs-2xl)">The real water math of a coffee-and-tea day</h2>
+            <p>91 drinks, hydration factors and the Suu Index · iOS and Android</p>
+            <div class="btn-row btn-row--center" style="margin-block-start:var(--sp-6)">
+                <a href="/app?src=guide-coffee-counts-as-water" class="btn btn--secondary btn--lg">Download Suu Free</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Frequently asked questions</h2>
+        <div class="faq">
+            <details class="faq__item" open>
+                <summary>Does coffee count as water intake?</summary>
+                <div><p>Partly. Moderate coffee hydrates you close to water and doesn&#39;t dehydrate you, but it doesn&#39;t fully replace plain water. Suu counts filter coffee with a factor of 0.8: 200 ml of coffee adds 160 ml of water.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Does coffee dehydrate you?</summary>
+                <div><p>Not in moderation. In a study where people drank four cups a day, hydration markers were the same as on water days. Very high intakes and caffeine-sensitive people may be exceptions.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Does tea count as water?</summary>
+                <div><p>Largely, yes. Black tea counts at 0.9, green tea at 0.95 and herbal tea at 0.98 in Suu. The NHS lists tea and coffee among the drinks that count toward your daily fluid.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>How many cups of coffee a day is safe?</summary>
+                <div><p>Up to 400 mg of caffeine a day is considered safe for healthy adults — roughly 3–4 mugs of drip coffee. In pregnancy the limit is 200 mg a day. Energy drinks and colas count toward the total.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Does soda count as water?</summary>
+                <div><p>Partly: cola counts at 0.6 in Suu, and its sugar raises your daily water goal by 100 ml per 10 g. Sparkling water counts fully.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Why does Suu count coffee at 0.8 if research says it hydrates like water?</summary>
+                <div><p>Research shows moderate coffee hydrates close to water. Suu&#39;s factors are a cautious calculation that accounts for strong or large coffees, caffeine sensitivity and added sugar, so your daily water goal stays realistic.</p></div>
+            </details>
+        </div>
+    </section>
+    <section>
+        <h2>References</h2>
+        <ol class="small">
+            <li id="ref1"><a href="https://pubmed.ncbi.nlm.nih.gov/24416202/" rel="nofollow noopener" target="_blank">Killer SC et al. — No evidence of dehydration with moderate daily coffee intake: a counterbalanced cross-over study in a free-living population. PLoS One, 2014</a></li>
+            <li id="ref2"><a href="https://pubmed.ncbi.nlm.nih.gov/26702122/" rel="nofollow noopener" target="_blank">Maughan RJ et al. — A randomized trial to assess the potential of different beverages to affect hydration status: development of a beverage hydration index. Am J Clin Nutr, 2016</a></li>
+            <li id="ref3"><a href="https://www.nhs.uk/live-well/eat-well/food-guidelines-and-food-labels/water-drinks-nutrition/" rel="nofollow noopener" target="_blank">NHS — Water, drinks and your health</a></li>
+            <li id="ref4"><a href="https://www.efsa.europa.eu/en/efsajournal/pub/4102" rel="nofollow noopener" target="_blank">EFSA — Scientific Opinion on the safety of caffeine (2015)</a></li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Related articles</h2>
+        <div class="cards">
+            <a class="card" href="/blog/en/tea-hydration.html">
+                <h3 style="font-size:var(--fs-md)">Does tea hydrate you?</h3>
+                <p>How tea affects your hydration.</p>
             </a>
-            <a href="macro-calculation.html" class="related-card">
-                <div class="tag">Calories</div>
-                <h4>How to Calculate Macros: Protein, Carbs and Fat Explained</h4>
+            <a class="card" href="/blog/en/how-many-cups-coffee.html">
+                <h3 style="font-size:var(--fs-md)">How many cups of coffee a day are healthy?</h3>
+                <p>Caffeine limits and advice.</p>
             </a>
-</div>
+            <a class="card" href="/blog/en/how-to-quit-soda.html">
+                <h3 style="font-size:var(--fs-md)">How to quit soda</h3>
+                <p>Cut sugary drinks in four weeks.</p>
+            </a>
+            <a class="card" href="/blog/en/water-drinking-habits.html">
+                <h3 style="font-size:var(--fs-md)">Can&#39;t remember to drink water?</h3>
+                <p>7 ways to make it a habit.</p>
+            </a>
+        </div>
+    </section>
+
+    <p class="small text-subtle">Suu is not intended for medical diagnosis or treatment. Consult a healthcare professional for health-related decisions.</p>
+
+    <p>
+        <a href="/blog-en.html">← Back to blog</a>
+    </p>
 </div>
 
-<script src="../../lang-switcher.js?v=3" defer></script>
+</main>
 
-<!-- Sticky Mobile Download Bar -->
-<div class="sticky-download-bar" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:rgba(255,255,255,0.97);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);padding:10px 12px;padding-bottom:calc(10px + env(safe-area-inset-bottom,0px));box-shadow:0 -2px 16px rgba(0,0,0,0.12);gap:8px;justify-content:center;">
-    <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" style="flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:13px 14px;border-radius:12px;text-decoration:none;font-weight:600;font-size:14px;min-height:48px;background:#000;color:#fff;max-width:200px;" target="_blank" rel="noopener">
-        <i class="fab fa-apple"></i> App Store
-    </a>
-    <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro" style="flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:13px 14px;border-radius:12px;text-decoration:none;font-weight:600;font-size:14px;min-height:48px;background:#01875f;color:#fff;max-width:200px;" target="_blank" rel="noopener">
-        <i class="fab fa-google-play"></i> Google Play
-    </a>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__bottom" style="border:0">
+            <p class="small mb-0">© 2026 Suu · Furkan Mert Fındıklı</p>
+            <p class="small mb-0"><a href="/hosgeldiniz-en.html">suuapp.com</a></p>
+        </div>
+    </div>
+</footer>
+
+<div class="sticky-cta" data-cta="sticky">
+    <a href="/app?src=sticky" class="btn btn--secondary">App Store</a>
+    <a href="/app?src=sticky" class="btn btn--primary">Google Play</a>
 </div>
-<script>
-(function(){if(window.innerWidth<=768){var b=document.querySelector('.sticky-download-bar');if(b)b.style.display='flex';document.body.style.paddingBottom='72px';}window.addEventListener('resize',function(){var b=document.querySelector('.sticky-download-bar');if(b){if(window.innerWidth<=768){b.style.display='flex';document.body.style.paddingBottom='72px';}else{b.style.display='none';document.body.style.paddingBottom='0';}}});})();
-</script>
+
 <script src="/assets/js/suu-badge.js?v=2" defer></script>
 </body>
 </html>
