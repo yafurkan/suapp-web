@@ -20,10 +20,15 @@ Bağımlılıklar:
     pip3 install Pillow arabic_reshaper python-bidi
 
 Notlar:
-    - Dil yazı yolundan tespit edilir (/blog/en/, /blog/ar/, /blog/ru/, diğerleri TR).
+    - Dil yazının klasöründen tespit edilir (blog/<lang>/; kökteki blog/ TR).
+      Eskiden yalnızca en/ar/ru biliniyordu — de/it/uk yazıları TR sayılıp
+      TR tagline'ı ve öneksiz dosya adıyla üretiliyordu.
     - Başlık <h1>'den çekilir.
     - Çıktı: assets/og/blog/{slug}.png  (TR)
-              assets/og/blog/{lang}-{slug}.png (EN/AR/RU)
+              assets/og/blog/{lang}-{slug}.png (diğer diller)
+    - Üretilmiş sayfalarda (build-compare.py) --update-meta REDDEDİLİR: bir
+      sonraki build meta'yı geri yazar. Builder görseli kendisi bulur
+      (assets/og/blog/ altında dosya varsa og:image/Article.image ona döner).
 """
 from __future__ import annotations
 
@@ -59,11 +64,16 @@ W, H = 1200, 630
 
 # Tagline (her dil için)
 TAGLINES = {
-    "tr": "Su Takip · AI Sağlık Asistanı",
-    "en": "Water Tracker · AI Health Assistant",
-    "ar": "تتبع الماء · مساعد صحي بالذكاء الاصطناعي",
-    "ru": "Трекер воды · ИИ-помощник по здоровью",
+    "tr": "Su · Kalori · Egzersiz",
+    "en": "Water · Calories · Workouts",
+    "ar": "الماء · السعرات · التمارين",
+    "ru": "Вода · Калории · Тренировки",
+    "de": "Wasser · Kalorien · Training",
+    "it": "Acqua · Calorie · Allenamento",
+    "uk": "Вода · Калорії · Тренування",
 }
+BLOG_LANGS = {"en", "ar", "ru", "de", "it", "uk"}
+GENERATED_MARK = "ÜRETİLMİŞ DOSYA"
 
 
 # === Görsel üretimi =======================================================
@@ -250,13 +260,10 @@ def make_og_image(title: str, output_path: Path, lang: str = "tr") -> None:
 # === Yardımcılar ==========================================================
 
 def detect_lang(path: Path) -> str:
-    p = str(path)
-    if "/blog/en/" in p:
-        return "en"
-    if "/blog/ar/" in p:
-        return "ar"
-    if "/blog/ru/" in p:
-        return "ru"
+    """blog/<lang>/yazi.html → lang; blog/yazi.html → tr."""
+    parent = path.resolve().parent
+    if parent.parent == BLOG_DIR and parent.name in BLOG_LANGS:
+        return parent.name
     return "tr"
 
 
@@ -357,7 +364,9 @@ def main() -> int:
                 stats["errors"].append(f"{rel}: {e}")
                 continue
 
-        if args.update_meta:
+        if args.update_meta and GENERATED_MARK in html.read_text(encoding="utf-8"):
+            print(f"    meta atlandı (üretilmiş sayfa — build-compare.py görseli kendisi bulur): {rel}")
+        elif args.update_meta:
             try:
                 ch = update_meta_tags(html)
                 if any(ch.values()):

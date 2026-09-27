@@ -89,7 +89,30 @@ CLUSTER = {
            "cronometer-vs-yazio"},
 }
 
-RE_GRID = re.compile(r'(<div class="related-grid">)(.*?)(</div>\s*</div>)', re.DOTALL)
+# Izgaranın KENDİ kapanış </div>'ı iç içe div'ler sayılarak bulunur. Eski kalıp
+# (<div class="related-grid">)(.*?)(</div>\s*</div>) ilk "</div></div>" çiftinde
+# duruyordu; kart içinde <div class="tag"> olan sayfalarda bloğu ızgaranın
+# dışına — 8 EN yazıda footer'ın içine — yazdı.
+RE_DIV = re.compile(r"<div\b|</div>", re.IGNORECASE)
+GRID_OPEN = '<div class="related-grid">'
+GENERATED_MARK = "ÜRETİLMİŞ DOSYA"   # build-compare.py çıktısı — sonraki build silerdi
+
+
+def grid_close(page: str) -> int | None:
+    """related-grid'in kapanış </div>'ının indeksi; yoksa None."""
+    start = page.find(GRID_OPEN)
+    if start == -1:
+        return None
+    depth = 0
+    for m in RE_DIV.finditer(page, start):
+        if m.group(0).lower().startswith("<div"):
+            depth += 1
+        else:
+            depth -= 1
+            if depth == 0:
+                return m.start()
+    return None
+
 # İkinci kalıp: <div class="related"><h3>…</h3><ul><li>…</li></ul></div>
 RE_LIST = re.compile(r'(<div class="related">.*?<ul>)(.*?)(</ul>)', re.DOTALL)
 
@@ -131,7 +154,7 @@ def main() -> int:
                 continue
 
             page = original = path.read_text(encoding="utf-8")
-            if MARKER in page:
+            if MARKER in page or GENERATED_MARK in page:
                 continue
             # Yönlendirme kabuğu — içeriği yok, bağlantı eklenmez
             if 'http-equiv="refresh"' in page:
@@ -154,8 +177,8 @@ def main() -> int:
                 continue
 
             # 1) Kart ızgarası varsa kart olarak ekle
-            m = RE_GRID.search(page)
-            if m:
+            close = grid_close(page)
+            if close is not None:
                 block = MARKER + "\n"
                 for target, tag, title in chosen:
                     block += (
@@ -164,7 +187,10 @@ def main() -> int:
                         f'                <h4>{html.escape(title)}</h4>\n'
                         f"            </a>\n"
                     )
-                page = page[:m.end(2)] + "\n" + block + page[m.end(2):]
+                cut = close
+                while cut > 0 and page[cut - 1] in " \t\n":
+                    cut -= 1
+                page = page[:cut] + "\n" + block.rstrip("\n") + page[cut:]
 
             else:
                 # 2) Madde listesi varsa <li> olarak ekle

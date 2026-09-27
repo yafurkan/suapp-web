@@ -15,6 +15,8 @@ Ayrıca kontrol edilenler:
     · yetim yazı        — blog indeksinde kartı olmayan dosya
     · kırık iç bağlantı — var olmayan .html'e işaret eden href
     · hreflang bütünlüğü — kayıt defterindeki küme ile sayfadaki etiketler
+    · rehber kapsaması  — content/guides/ kümeleri her yayın dilinde var mı
+    · UK → RU bağlantısı — Ukraynaca sayfa Rusça sayfaya link vermemeli
 
 Kullanım:
     python3 scripts/check-geo-coverage.py
@@ -157,6 +159,40 @@ def main() -> int:
     print("  sorun yok" if not mismatched else f"  TOPLAM {mismatched} "
           "(inject-hreflang.py --apply çalıştırın)")
     problems += mismatched
+
+    # ── Rehber kapsaması: content/guides/ kümeleri her yayın dilinde ────
+    # Kümeler JSON'dan otomatik okunur; rehber eklemek için script düzenlenmez.
+    guides_dir = ROOT / "content" / "guides"
+    guide_clusters = []
+    if guides_dir.exists():
+        for g in sorted(guides_dir.glob("*.json")):
+            c = json.loads(g.read_text(encoding="utf-8")).get("cluster")
+            if c and c not in guide_clusters:
+                guide_clusters.append(c)
+    if guide_clusters:
+        print("\nRehber kapsaması (content/guides/ → yayın dilleri)")
+        gaps = 0
+        for c in guide_clusters:
+            variants = reg["blog"].get(c, {})
+            missing = [code for code in live if not (only and code != only)
+                       and not (variants.get(code)
+                                and rel_path(code, variants[code], default).exists())]
+            if missing:
+                gaps += len(missing)
+                print(f"  {c}: eksik {', '.join(missing)}")
+        print("  tam" if not gaps else f"  TOPLAM {gaps}")
+        problems += gaps
+
+    # ── UK → RU: Ukraynaca okur Rusça sayfaya gönderilmez ────────────
+    uk_dir = ROOT / "blog" / "uk"
+    if uk_dir.is_dir() and not (only and only != "uk"):
+        # Yalnızca gövde bağlantıları — hreflang <link> etiketleri doğal olarak ru'yu içerir
+        re_ru = re.compile(r'<a\s[^>]*href="[^"]*/blog/ru/')
+        uk_ru = [f.name for f in sorted(uk_dir.glob("*.html"))
+                 if re_ru.search(f.read_text(encoding="utf-8"))]
+        print("\nUkraynaca → Rusça bağlantı")
+        print("  yok" if not uk_ru else f"  {', '.join(uk_ru)}  (TOPLAM {len(uk_ru)})")
+        problems += len(uk_ru)
 
     print(f"\nToplam sorun: {problems}")
     return 1 if problems else 0

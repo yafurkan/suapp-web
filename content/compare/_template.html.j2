@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- ÜRETİLMİŞ DOSYA — elle düzenlemeyin.
-         Kaynak: content/compare/{{ topic }}.json + content/compare/_template.html.j2
+         Kaynak: {{ source_rel }} + content/compare/_template.html.j2
          Yeniden üret: python3 scripts/build-compare.py --apply -->
 
     <title>{{ meta.title }}</title>
@@ -25,17 +25,18 @@
     <meta property="og:description" content="{{ meta.og_description }}">
     <meta property="og:type" content="article">
     <meta property="og:url" content="{{ url }}">
-    <meta property="og:image" content="https://suuapp.com/assets/og-image.png">
+    <meta property="og:image" content="{{ og_image_url }}">
     <meta property="og:site_name" content="Suu">
     <meta property="og:locale" content="{{ locale }}">
-    <meta property="article:published_time" content="{{ published }}">
+    <meta property="article:published_time" content="{{ published }}">{% if kind == 'guide' %}
+    <meta property="article:modified_time" content="{{ modified_iso }}">{% endif %}
     <meta property="article:author" content="{{ facts.entities.founder.name }}">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="{{ facts.links.twitter_handle }}">
     <meta name="twitter:title" content="{{ meta.og_title }}">
     <meta name="twitter:description" content="{{ meta.og_description }}">
-    <meta name="twitter:image" content="https://suuapp.com/assets/og-image.png">
+    <meta name="twitter:image" content="{{ og_image_url }}">
 
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -64,11 +65,11 @@
         <a href="{{ ui.home_href }}" class="nav__logo"><img src="/assets/brand/suu-badge-128.png" alt="Suu" width="128" height="128" class="suu-logo-badge" style="height:1.6em;width:1.6em;border-radius:50%;vertical-align:-0.4em;box-shadow:0 0 0 1px rgba(255,255,255,.12),0 0 14px rgba(94,170,255,.45);"> Suu</a>
         <ul class="nav__links">
             <li><a href="{{ ui.blog_href }}">{{ ui.blog }}</a></li>
-            <li><a href="{{ ui.home_href }}#karsilastirma">{{ ui.compare }}</a></li>
+            {% if kind != 'guide' %}<li><a href="{{ ui.home_href }}#karsilastirma">{{ ui.compare }}</a></li>{% endif %}
             <li><a href="{{ ui.home_href }}#fiyat">{{ ui.pricing }}</a></li>
         </ul>
         <div class="nav__actions">
-            <a href="/app?src=compare-nav" class="btn btn--primary" data-cta="nav"
+            <a href="/app?src={{ 'guide-nav' if kind == 'guide' else 'compare-nav' }}" class="btn btn--primary" data-cta="nav"
                style="min-height:40px;padding:var(--sp-2) var(--sp-5);font-size:var(--fs-sm)">{{ ui.cta }}</a>
         </div>
     </div>
@@ -91,7 +92,7 @@
         </nav>
         <span class="badge badge--new">{{ badge }}</span>
         <h1 style="margin-block-start:var(--sp-4)">{{ h1 }}</h1>
-        <p class="small text-subtle">{{ ui.published_label }} {{ published_display }} · {{ facts.entities.founder.name }} · {{ read_minutes }} {{ ui.read_time }}</p>
+        <p class="small text-subtle">{{ ui.published_label }} {{ published_display }}{% if kind == 'guide' and modified_display %} · {{ ui.updated_label }} {{ modified_display }}{% endif %} · {{ facts.entities.founder.name }} · {{ read_minutes }} {{ ui.read_time }}</p>
     </div>
 </header>
 
@@ -100,7 +101,25 @@
     <!-- CEVAP-ÖNCE: alıntılanan blok burasıdır -->
     <div class="answer-box">
         <p><strong>{{ ui.short_answer }}</strong> {{ answer }}</p>
-    </div>
+    </div>{% if health_note is defined %}
+
+    {#- Sağlık notu: rehberler sağlık sorusu cevaplıyor. "Tıbbi tavsiye değildir,
+        bir sağlık uzmanına danış" + konuya özel "hemen doktora" durumları.
+        Cevabın hemen altında — okur ilk ekranda görsün (Play Sağlık İçerikleri
+        politikasıyla aynı ilke; check-facts → guide-health-note). #}
+    <aside class="callout health-note" role="note">
+        <p><strong>{{ health_note.head }}</strong></p>
+{%- for p in health_note.body %}
+        <p>{{ p | safe }}</p>
+{%- endfor %}
+{%- if health_note.get('red_flags') %}
+        <ul>
+{%- for li in health_note['red_flags'] %}
+            <li>{{ li | safe }}</li>
+{%- endfor %}
+        </ul>
+{%- endif %}
+    </aside>{% endif %}
 
     <div class="disclosure">{{ disclosure }}</div>
 
@@ -129,7 +148,7 @@
     <p>{{ section | safe }}</p>
     {%- endfor %}
 
-    <section>
+    {% if table is defined %}<section>
         <h2>{{ table.head }}</h2>
         <div class="table-scroll">
             <table class="table">
@@ -163,7 +182,7 @@
                 </tbody>
             </table>
         </div>
-    </section>
+    </section>{% endif %}
 
 {%- for block in analysis %}
     <section>
@@ -183,6 +202,36 @@
 {%- endif %}
     </section>
 {%- endfor %}
+{#- "Bunu Suu'da nereden takip edersin": rehberin dönüşüm bölümü. Her adım
+    gerçek menü etiketiyle (iOS/Android ayrı olabilir) ve neyi çözdüğüyle. #}
+{%- if in_app is defined %}
+
+    <section class="in-app" id="in-app">
+        <h2>{{ in_app.head }}</h2>
+{%- if in_app.get('lead') %}
+        <p>{{ in_app.lead | safe }}</p>
+{%- endif %}
+        <ol class="ranked stack">
+{%- for step in in_app.steps %}
+            <li>
+                <strong>{{ step.feature }}</strong>{% if step.get('premium') %} — <em>Premium</em>{% endif %}
+{%- if step.get('where') %}
+                <p class="small text-subtle">{{ step.where | safe }}</p>
+{%- else %}
+                <p class="small text-subtle">iPhone: {{ step.where_ios | safe }} · Android: {{ step.where_android | safe }}</p>
+{%- endif %}
+                <p>{{ step.solves | safe }}</p>
+            </li>
+{%- endfor %}
+        </ol>
+{%- if in_app.get('note') %}
+        <p class="small text-subtle">{{ in_app.note | safe }}</p>
+{%- endif %}
+        <div class="btn-row" style="margin-block-start:var(--sp-4)">
+            <a href="/app?src=guide-inapp-{{ topic }}" class="btn btn--primary" data-cta="guide-inapp">{{ in_app.button }}</a>
+        </div>
+    </section>
+{%- endif %}
 
     <section class="verdict">
         <h2 style="margin-block-end:var(--sp-4)">{{ verdict.head }}</h2>
@@ -191,12 +240,12 @@
 {%- endfor %}
     </section>
 
-    <section class="cta-band" style="border-radius:var(--r-lg);padding-block:var(--sp-12)" data-cta="compare-body">
+    <section class="cta-band" style="border-radius:var(--r-lg);padding-block:var(--sp-12)" data-cta="{{ 'guide-body' if kind == 'guide' else 'compare-body' }}">
         <div class="container">
             <h2 style="font-size:var(--fs-2xl)">{{ cta.head }}</h2>
             <p>{{ cta.sub }}</p>
             <div class="btn-row btn-row--center" style="margin-block-start:var(--sp-6)">
-                <a href="/app?src=compare-body" class="btn btn--secondary btn--lg">{{ cta.button }}</a>
+                <a href="/app?src={{ cta_src }}" class="btn btn--secondary btn--lg">{{ cta.button }}</a>
             </div>
         </div>
     </section>
@@ -240,7 +289,7 @@
 
     <p>
         <a href="{{ ui.blog_href }}">← {{ ui.back_to_blog }}</a>
-{%- if ui.get('hub_href') %}
+{%- if ui.get('hub_href') and kind != 'guide' %}
         &nbsp;·&nbsp; <a href="{{ ui.hub_href }}">{{ ui.hub_label }} →</a>
 {%- endif %}
     </p>
