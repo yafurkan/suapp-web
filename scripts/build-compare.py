@@ -80,7 +80,7 @@ LOCAL_AUTHORITIES = {
     "ar": ("moh.gov.sa", "sfda.gov.sa", "emro.who.int", "mohap.gov.ae", "who.int"),
     "ru": ("rospotrebnadzor.ru", "minzdrav.gov.ru", "who.int"),
     "de": ("dge.de", "bioeg.de", "bzga.de", "gesund.bund.de", "rki.de", "degam.de"),
-    "it": ("crea.gov.it", "salute.gov.it", "iss.it", "sinu.it"),
+    "it": ("crea.gov.it", "salute.gov.it", "iss.it", "issalute.it", "sinu.it"),   # issalute.it = ISS halk portalı
     "uk": ("moz.gov.ua", "phc.org.ua", "who.int"),
 }
 
