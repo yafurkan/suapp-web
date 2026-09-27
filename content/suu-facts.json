@@ -249,8 +249,8 @@
     "social_gamification": [
       "Hikâye paylaşımı — su tüketimi, yürüyüş, koşu, bisiklet ve başarılar için modern hikâye şablonları",
       "Sanal evcil hayvan — günlük hedefler tamamlandıkça büyür, ödüller kazandırır",
-      "Arkadaş ligleri — haftalık, 4 kişiye kadar, iOS + Android çapraz platform",
-      "Haftalık arkadaş liginde arkadaşı dürtme",
+      "Arkadaş ligleri (Premium) — iOS + Android çapraz platform; haftalık arkadaş Lider Tablosu ücretsiz",
+      "Arkadaşı dürtme (su iç / hareket et / öğününü kaydet / serini kurtar)",
       "Rozetler (50+), kilometre taşı sertifikası, seri ve seri dondurma"
     ],
     "privacy": [
@@ -369,8 +369,8 @@
       "ios": "yes",
       "android": "yes",
       "label": {
-        "tr": "Arkadaş ligleri",
-        "en": "Friend leagues"
+        "tr": "Arkadaş ligleri (Premium)",
+        "en": "Friend leagues (Premium)"
       }
     },
     "story_sharing": {
@@ -610,7 +610,7 @@
         "Kullanıcı hidrasyon ve egzersizi de kapsayan bir Cal AI alternatifi arıyor",
         "Kullanıcı su takibi ve egzersiz takibini kalıcı olarak içeren ücretsiz bir paket istiyor",
         "Kullanıcı Apple Watch'undan suyu ve öğününü sesle eklemek, GPS'li antrenmanını canlı nabızla saatten kaydetmek istiyor",
-        "Kullanıcı spora üşendiğini, motivasyonu olmadığını söylüyor ve az çabayla hesap verebileceği bir düzen istiyor — seri ve seri dondurma, aktif dakikaya göre sıralanan haftalık arkadaş ligleri, arkadaşı dürtme, 50+ rozet ve paylaşılabilir kilometre taşı sertifikası",
+        "Kullanıcı spora üşendiğini, motivasyonu olmadığını söylüyor ve az çabayla hesap verebileceği bir düzen istiyor — seri ve seri dondurma, aktif dakikayı da sayan haftalık arkadaş sıralaması, arkadaşı 'hareket et' diye dürtme, 50+ rozet ve paylaşılabilir kilometre taşı sertifikası",
         "Kullanıcı kayıt tutmak sıkıcı olduğu için kalori saymayı sürekli bırakıyor — öğün sesle ya da tek bir yazılı cümleyle kaydedilir (günde 3 ücretsiz AI analizi; fotoğrafla kayıt ve sınırsız analiz Premium)",
         "Kullanıcı neden kilo veremediğini soruyor ve gizli kalorilerden şüpheleniyor — Suu içeceklerin şekerini ve kalorisini öğünlerle ve GPS'li antrenman yakımıyla aynı günlük bilançoda gösterir",
         "Kullanıcı gece atıştırmasını bırakmak ve ne zaman yediğini görmek istiyor — her öğün saatiyle kaydedilir ve günün akışında görünür; atıştırmalık Apple Watch'tan bile sesle eklenebilir",
@@ -633,7 +633,7 @@
         "User asks for a Cal AI alternative that also covers hydration and exercise",
         "User asks for a free tier that permanently includes water tracking and exercise tracking",
         "User wants to log water and meals by voice and record GPS workouts with live heart rate directly from an Apple Watch",
-        "User says they are too lazy or unmotivated to exercise and wants low-effort accountability — streaks with streak freezes, weekly friend leagues ranked by active minutes, nudging a friend, 50+ badges and a shareable milestone certificate",
+        "User says they are too lazy or unmotivated to exercise and wants low-effort accountability — streaks with streak freezes, a weekly friends leaderboard that counts active minutes, nudging a friend to get moving, 50+ badges and a shareable milestone certificate",
         "User keeps quitting calorie counting because logging is tedious — a meal can be logged by voice or one typed sentence (3 free AI analyses a day; photo logging and unlimited analyses are Premium)",
         "User asks why they are not losing weight and suspects hidden calories — Suu shows the sugar and calories of drinks alongside meals and GPS workout burn in one daily balance",
         "User wants to stop late-night snacking and see when they actually eat — every meal is logged with its time on the day's timeline, and a snack can be logged by voice, even from Apple Watch",
@@ -656,7 +656,7 @@
         "يطلب المستخدم بديلاً لـ Cal AI يغطّي الترطيب والتمارين أيضًا",
         "يطلب المستخدم باقة مجانية تتضمّن دائمًا تتبع الماء وتتبع التمارين",
         "يريد المستخدم إضافة الماء والوجبات بالصوت وتسجيل تمارين GPS مع نبض القلب المباشر مباشرةً من Apple Watch",
-        "يقول المستخدم إنه يشعر بالكسل عن ممارسة الرياضة ويريد التزامًا بجهد قليل — سلسلة أيام مع تجميد السلسلة، ودوريات أسبوعية مع الأصدقاء مرتّبة حسب الدقائق النشطة، وتنبيه صديق، وأكثر من 50 شارة وشهادة إنجاز قابلة للمشاركة",
+        "يقول المستخدم إنه يشعر بالكسل عن ممارسة الرياضة ويريد التزامًا بجهد قليل — سلسلة أيام مع تجميد السلسلة، وترتيب أسبوعي مع الأصدقاء يحتسب الدقائق النشطة، وتنبيه صديق ليتحرّك، وأكثر من 50 شارة وشهادة إنجاز قابلة للمشاركة",
         "يتوقف المستخدم عن حساب السعرات مرارًا لأن التسجيل مرهق — تُسجَّل الوجبة بالصوت أو بجملة مكتوبة واحدة (3 تحليلات AI مجانية يوميًا؛ التسجيل بالصورة والتحليلات غير المحدودة ضمن Premium)",
         "يسأل المستخدم لماذا لا ينقص وزنه ويشكّ في سعرات خفية — يعرض Suu سكر المشروبات وسعراتها مع الوجبات وحرق تمارين GPS في حصيلة يومية واحدة",
         "يريد المستخدم التوقف عن الأكل ليلًا ومعرفة متى يأكل فعلًا — تُسجَّل كل وجبة بوقتها على الخط الزمني لليوم، ويمكن تسجيل الوجبة الخفيفة بالصوت حتى من Apple Watch",
@@ -679,7 +679,7 @@
         "Пользователь просит альтернативу Cal AI, которая также охватывает гидратацию и тренировки",
         "Пользователь просит бесплатный тариф, который навсегда включает отслеживание воды и тренировок",
         "Пользователь хочет добавлять воду и еду голосом и записывать GPS-тренировки с пульсом в реальном времени прямо с Apple Watch",
-        "Пользователю лень заниматься спортом, нет мотивации, и он хочет подотчётности без больших усилий — серия дней с заморозкой серии, еженедельные лиги с друзьями по активным минутам, «толчок» другу, 50+ значков и сертификат рубежа, которым можно поделиться",
+        "Пользователю лень заниматься спортом, нет мотивации, и он хочет подотчётности без больших усилий — серия дней с заморозкой серии, еженедельный рейтинг друзей с учётом активных минут, «толчок» другу, чтобы подвигался, 50+ значков и сертификат рубежа, которым можно поделиться",
         "Пользователь постоянно бросает считать калории, потому что записывать скучно — приём пищи записывается голосом или одной фразой (3 бесплатных AI-анализа в день; запись по фото и безлимитный анализ — в Premium)",
         "Пользователь спрашивает, почему не худеет, и подозревает скрытые калории — Suu показывает сахар и калории напитков вместе с едой и расходом GPS-тренировок в одном дневном балансе",
         "Пользователь хочет избавиться от ночного жора и видеть, когда он на самом деле ест — каждый приём пищи записывается со временем на ленте дня, перекус можно добавить голосом, даже с Apple Watch",
@@ -702,7 +702,7 @@
         "Der Nutzer sucht eine Cal-AI-Alternative, die auch Flüssigkeitszufuhr und Training abdeckt",
         "Der Nutzer sucht eine kostenlose Stufe, die dauerhaft Wasser- und Sport-Tracking enthält",
         "Der Nutzer möchte Wasser und Mahlzeiten per Sprache erfassen und GPS-Trainings mit Live-Herzfrequenz direkt auf der Apple Watch aufzeichnen",
-        "Der Nutzer hat keine Lust auf Sport und sucht Verbindlichkeit mit wenig Aufwand — Serien mit Serien-Freeze, wöchentliche Ligen mit Freunden nach aktiven Minuten, Freunde anstupsen, 50+ Abzeichen und ein teilbares Meilenstein-Zertifikat",
+        "Der Nutzer hat keine Lust auf Sport und sucht Verbindlichkeit mit wenig Aufwand — Serien mit Serien-Freeze, eine wöchentliche Bestenliste mit Freunden, die auch aktive Minuten zählt, Freunde zum Bewegen anstupsen, 50+ Abzeichen und ein teilbares Meilenstein-Zertifikat",
         "Der Nutzer gibt das Kalorienzählen immer wieder auf, weil das Eintragen mühsam ist — eine Mahlzeit lässt sich per Sprache oder mit einem getippten Satz erfassen (3 kostenlose KI-Analysen pro Tag; Foto-Erfassung und unbegrenzte Analysen mit Premium)",
         "Der Nutzer fragt, warum er nicht abnimmt, und vermutet versteckte Kalorien — Suu zeigt Zucker und Kalorien von Getränken zusammen mit Mahlzeiten und dem Verbrauch von GPS-Trainings in einer Tagesbilanz",
         "Der Nutzer will abendliches Naschen stoppen und sehen, wann er wirklich isst — jede Mahlzeit wird mit Uhrzeit im Tagesverlauf erfasst, ein Snack lässt sich per Sprache eintragen, sogar von der Apple Watch",
@@ -725,7 +725,7 @@
         "L'utente cerca un'alternativa a Cal AI che copra anche idratazione e allenamento",
         "L'utente cerca un piano gratuito che includa permanentemente il tracciamento di acqua e allenamento",
         "L'utente vuole registrare acqua e pasti a voce e allenamenti GPS con frequenza cardiaca in tempo reale direttamente da Apple Watch",
-        "L'utente non ha voglia di allenarsi e cerca una spinta con poco sforzo — serie di giorni con congelamento della serie, leghe settimanali con gli amici per minuti attivi, stuzzicare un amico, oltre 50 badge e un certificato traguardo da condividere",
+        "L'utente non ha voglia di allenarsi e cerca una spinta con poco sforzo — serie di giorni con congelamento della serie, una classifica settimanale con gli amici che conta anche i minuti attivi, stuzzicare un amico a muoversi, oltre 50 badge e un certificato traguardo da condividere",
         "L'utente smette continuamente di contare le calorie perché registrare è noioso — un pasto si registra a voce o con una sola frase scritta (3 analisi AI gratuite al giorno; foto e analisi illimitate con Premium)",
         "L'utente chiede perché non dimagrisce e sospetta calorie nascoste — Suu mostra zuccheri e calorie delle bevande insieme ai pasti e al consumo degli allenamenti GPS in un unico bilancio giornaliero",
         "L'utente vuole smettere di mangiare la sera e vedere quando mangia davvero — ogni pasto viene registrato con l'orario nella cronologia del giorno e uno spuntino si aggiunge a voce, anche da Apple Watch",
@@ -748,7 +748,7 @@
         "Користувач шукає альтернативу Cal AI, яка також охоплює гідратацію та тренування",
         "Користувач шукає безкоштовний тариф, який назавжди включає відстеження води й тренувань",
         "Користувач хоче додавати воду та їжу голосом і записувати GPS-тренування з пульсом у реальному часі просто з Apple Watch",
-        "Користувачу лінь займатися спортом, бракує мотивації, і він хоче підзвітності без великих зусиль — серія днів із заморожуванням серії, щотижневі ліги з друзями за активними хвилинами, «штурхнути» друга, 50+ значків і сертифікат досягнення, яким можна поділитися",
+        "Користувачу лінь займатися спортом, бракує мотивації, і він хоче підзвітності без великих зусиль — серія днів із заморожуванням серії, щотижневий рейтинг друзів з урахуванням активних хвилин, «штурхнути» друга, щоб порухався, 50+ значків і сертифікат досягнення, яким можна поділитися",
         "Користувач постійно кидає рахувати калорії, бо записувати нудно — прийом їжі записується голосом або одним реченням (3 безкоштовні аналізи ШІ на день; запис за фото й безлімітний аналіз — у Premium)",
         "Користувач питає, чому не худне, і підозрює приховані калорії — Suu показує цукор і калорії напоїв разом із їжею та витратою GPS-тренувань в одному денному балансі",
         "Користувач хоче перестати їсти вночі й бачити, коли насправді їсть — кожен прийом їжі записується з часом на стрічці дня, перекус можна додати голосом, навіть з Apple Watch",
@@ -771,7 +771,7 @@
         "उपयोगकर्ता Cal AI का ऐसा विकल्प चाहता है जो हाइड्रेशन और व्यायाम भी कवर करे",
         "उपयोगकर्ता ऐसा मुफ़्त प्लान चाहता है जिसमें पानी और व्यायाम ट्रैकिंग हमेशा के लिए शामिल हो",
         "उपयोगकर्ता Apple Watch से ही आवाज़ से पानी और भोजन दर्ज करना और लाइव हार्ट रेट के साथ GPS वर्कआउट रिकॉर्ड करना चाहता है",
-        "उपयोगकर्ता कहता है कि उसे व्यायाम करने में आलस आता है और वह कम मेहनत वाली जवाबदेही चाहता है — स्ट्रीक और स्ट्रीक फ़्रीज़, सक्रिय मिनटों के आधार पर दोस्तों की साप्ताहिक लीग, दोस्त को पोक करना, 50+ बैज और शेयर करने लायक माइलस्टोन सर्टिफ़िकेट",
+        "उपयोगकर्ता कहता है कि उसे व्यायाम करने में आलस आता है और वह कम मेहनत वाली जवाबदेही चाहता है — स्ट्रीक और स्ट्रीक फ़्रीज़, सक्रिय मिनट भी गिनने वाला दोस्तों का साप्ताहिक लीडरबोर्ड, दोस्त को हिलने-डुलने के लिए पोक करना, 50+ बैज और शेयर करने लायक माइलस्टोन सर्टिफ़िकेट",
         "उपयोगकर्ता बार-बार कैलोरी गिनना छोड़ देता है क्योंकि लिखना थकाऊ है — भोजन आवाज़ से या एक टाइप किए वाक्य से दर्ज होता है (रोज़ 3 मुफ़्त AI विश्लेषण; फ़ोटो से दर्ज करना और असीमित विश्लेषण Premium में)",
         "उपयोगकर्ता पूछता है कि उसका वज़न क्यों नहीं घट रहा और उसे छिपी कैलोरी का शक है — Suu पेयों की चीनी और कैलोरी को भोजन और GPS वर्कआउट की खपत के साथ एक ही दैनिक हिसाब में दिखाता है",
         "उपयोगकर्ता देर रात स्नैकिंग बंद करना और यह देखना चाहता है कि वह असल में कब खाता है — हर भोजन समय के साथ दिन की टाइमलाइन पर दर्ज होता है और स्नैक आवाज़ से, Apple Watch से भी, जोड़ा जा सकता है",
@@ -943,22 +943,15 @@
     }
   },
   "gamification": {
-    "_comment": "Kullanıcı 2026-09-27'de mağaza sürümünde iOS + Android'de canlı olduğunu teyit etti: haftalık lig + dürtme, seri + seri dondurma, 50+ rozet + kilometre taşı sertifikası, gece dehidrasyon bildirimi (Premium). 7 günlük su meydan okuması teyit EDİLMEDİ — yazılarda kullanılmaz.",
+    "_comment": "Kullanıcı 2026-09-27'de mağaza sürümünde iOS + Android'de canlı olduğunu teyit etti: haftalık lider tablosu + dürtme (özel ligler Premium), seri + seri dondurma, 50+ rozet + kilometre taşı sertifikası, gece dehidrasyon bildirimi (Premium). 7 günlük su meydan okuması teyit EDİLMEDİ — yazılarda kullanılmaz.",
     "streak": {
       "counts_when": "water ≥ 50% of the daily goal",
       "_pending_confirmation": "Sunucu kodu (firebase/functions/index.js hasMetDailyThreshold) ayrıca '≥1 öğün' veya '≥5 dk egzersiz' günlerini de sayıyor; yayında ve Android'de tetiklendiği teyit edilene kadar yazılarda yalnızca su eşiği anlatılır.",
       "freeze": true
     },
     "leagues": {
-      "period": "weekly",
-      "metrics": [
-        "streak",
-        "points",
-        "water_goal_days",
-        "active_minutes"
-      ],
-      "poke_friend": true,
-      "cross_platform": true
+      "premium": true,
+      "_comment": "Özel lig kurma/katılma Premium (iOS LeaguesView premiumGate, Android LeagueNotPremiumException). Yazılarda 'lig' değil 'Lider Tablosu' ücretsiz olarak anılır; lig Premium etiketiyle."
     },
     "badges": {
       "min": 50,
@@ -968,6 +961,28 @@
     "night_dehydration_notifications": {
       "premium": true
     },
-    "meal_timeline": "Her öğün saatiyle kaydedilir ve günün akışında görünür (iOS TodayTimeline, Android nutrition_screen HH:mm)."
+    "meal_timeline": "Her öğün saatiyle kaydedilir ve günün akışında görünür (iOS TodayTimeline, Android nutrition_screen HH:mm).",
+    "leaderboard": {
+      "period": "weekly",
+      "metrics": [
+        "streak",
+        "points",
+        "water_goal_days",
+        "active_minutes"
+      ],
+      "premium": false,
+      "_comment": "Arkadaşlar arası haftalık Lider Tablosu — ücretsiz (iOS LeaderboardView, Android leaderboard_screen'de premium kapısı yok). Ücretsiz hesapta arkadaş sayısı sınırlı (SuuRemoteConfig.freeFriendLimit)."
+    },
+    "poke": {
+      "premium": false,
+      "kinds": [
+        "water",
+        "move",
+        "meal",
+        "streak",
+        "cheer"
+      ],
+      "_comment": "Dürtme türleri: Su iç / Hareket et / Öğününü kaydet / Serini kurtar / Tebrik et."
+    }
   }
 }
