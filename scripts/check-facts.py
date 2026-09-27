@@ -37,8 +37,12 @@ ERROR, WARN = "error", "warn"
 # Kurallar
 #
 # pattern  : aranan (eski/çelişkili) ifade
+# unless   : (isteğe bağlı) aynı satırda geçerse bulgu sayılmaz — dürüst
+#            "henüz yok / planlanıyor" cümlelerini yanlış alarmdan ayırır
 # message  : neyin yanlış olduğu
 # fix      : ne yazması gerektiği
+#
+# FILE_RULES satır değil dosya düzeyinde çalışır: "şu dosyada şu OLMALI".
 # ───────────────────────────────────────────────────────────
 def build_rules(facts: dict) -> list[dict]:
     beverages = facts["numbers"]["beverages"]
@@ -96,6 +100,46 @@ def build_rules(facts: dict) -> list[dict]:
             "message": "'Tek geliştirici' iddiası — Suu iki kişilik bağımsız ekip",
             "fix": "küçük bağımsız ekip (Furkan Mert Fındıklı + Mert Öz)",
         },
+        {
+            # Uygulama arayüzü 7 dil: tr en ar de it ru hi. Ukraynaca YALNIZCA sitede.
+            # Dürüst "henüz yok / planlanıyor / İngilizce arayüz" cümleleri serbest.
+            "id": "ukrainian-ui-claim",
+            "severity": ERROR,
+            "pattern": re.compile(
+                r"(?i)(?:застосун\w*|додат\w*|інтерфейс\w*|\bapp\b|\bUI\b)[^.<\n]{0,60}(?:українськ\w*|in Ukrainian)"
+                r"|(?:українськ\w*|\bUkrainian\b)[^.<\n]{0,40}(?:інтерфейс\w*|локалізац\w*|interface|locali[sz]ation)"
+            ),
+            "unless": re.compile(r"(?i)в планах|поки що|ще не|наразі не|незабаром|немає|planned|not yet|coming"),
+            "message": "Uygulamanın Ukraynaca arayüzü var gibi anlatılıyor — arayüz Ukraynaca DEĞİL",
+            "fix": "Українська локалізація в планах; поки що зручно користуватися англійською версією інтерфейсу",
+        },
+        {
+            # Uygulama kataloğu: filtre kahve 0.8, Türk kahvesi 0.7, espresso 0.5
+            # (suu-facts.json → beverage_hydration). Sitenin eski "kahve 0.60 / ~%60" değeri yanlış.
+            "id": "coffee-hydration-stale",
+            "severity": WARN,
+            "pattern": re.compile(
+                r"(?i)(?:coffee|kahve|кофе|قهوة|kaffee|caff[èe]|кава)[^<\n]{0,80}?"
+                r"(?:0[.,]60\b|~\s?%\s?60\b|~\s?60\s?%|%60\b)"
+                r"|factor:\s?0\.60"
+            ),
+            "message": "Eski kahve hidrasyon katsayısı (0.60 / ~%60)",
+            "fix": f"filtre kahve {facts['beverage_hydration']['factors']['filter_coffee']}, "
+                   f"Türk kahvesi {facts['beverage_hydration']['factors']['turkish_coffee']}, "
+                   f"espresso {facts['beverage_hydration']['factors']['espresso']}",
+        },
+        {
+            # Alkol katsayısı iOS (1.0) ve Android (-0.2/-0.4/-0.8) arasında farklı —
+            # uygulamada eşitlenene kadar sayı yayınlanmaz (beverage_hydration.alcohol).
+            "id": "alcohol-negative-factor",
+            "severity": WARN,
+            "pattern": re.compile(
+                r"(?i)(?:alcohol|alkol|алкогол\w*|الكحول|alkohol|alcol|пиво|beer|bira|wine|şarap|вино)"
+                r"[^<\n]{0,80}?[-−–]\s?0[.,][2-8]\b"
+            ),
+            "message": "Alkol için negatif hidrasyon katsayısı yazılmış — platformlar arasında farklı, yayınlanmamalı",
+            "fix": "niteliksel anlatım: alkol su hedefini 10 ml saf alkol başına +250 ml artırır",
+        },
     ]
 
     # Apple Watch: mağaza açıklaması "yakında" diyorsa, "var" iddiaları hatadır.
@@ -145,6 +189,22 @@ def build_rules(facts: dict) -> list[dict]:
     return rules
 
 
+# Dosya düzeyi kurallar: seçilen dosyalarda bir işaretin BULUNMASI gerekir.
+FILE_RULES: list[dict] = [
+    {
+        # content/guides/ rehberleri sağlık sorusu cevaplıyor: her biri görünür bir
+        # "tıbbi tavsiye değildir / sağlık uzmanına danış" bloğu taşımalı (Play Sağlık
+        # İçerikleri politikasıyla aynı ilke).
+        "id": "guide-health-note",
+        "severity": ERROR,
+        "applies": re.compile(r"Kaynak: content/guides/"),
+        "requires": re.compile(r'class="[^"]*\bhealth-note\b'),
+        "message": "Rehber sayfasında sağlık notu (health-note) yok",
+        "fix": "content/guides/<konu>.json → pages.<lang>.health_note",
+    },
+]
+
+
 def iter_files(explicit: list[str]) -> list[Path]:
     if explicit:
         return [ROOT / p for p in explicit]
@@ -168,9 +228,14 @@ def scan(path: Path, rules: list[dict]) -> list[tuple[dict, int, str]]:
         return []
 
     hits: list[tuple[dict, int, str]] = []
+    for rule in FILE_RULES:
+        if rule["applies"].search(text) and not rule["requires"].search(text):
+            hits.append((rule, 1, "(dosya düzeyi)"))
     for lineno, line in enumerate(text.splitlines(), start=1):
         for rule in rules:
             match = rule["pattern"].search(line)
+            if match and rule.get("unless") and rule["unless"].search(line):
+                continue
             if match:
                 snippet = line.strip()
                 if len(snippet) > 110:
@@ -197,14 +262,14 @@ def main() -> int:
         for rule, lineno, snippet in scan(path, rules):
             findings.setdefault(rule["id"], []).append((path, lineno, snippet))
 
-    by_id = {r["id"]: r for r in rules}
+    by_id = {r["id"]: r for r in rules + FILE_RULES}
     errors = sum(
         len(v) for k, v in findings.items() if by_id[k]["severity"] == ERROR
     )
     warns = sum(len(v) for k, v in findings.items() if by_id[k]["severity"] == WARN)
 
     if not quiet:
-        for rule in rules:
+        for rule in rules + FILE_RULES:
             hits = findings.get(rule["id"])
             if not hits:
                 continue

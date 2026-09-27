@@ -24,7 +24,9 @@ Kullanım:
 """
 from __future__ import annotations
 
+import html
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -44,49 +46,49 @@ H = {
            "price": "Fiyatlandırma", "platform": "Platform Desteği", "langs": "Dil Desteği",
            "compare": "Rakiplerle Karşılaştırma", "faq": "Sık Sorulan Sorular",
            "limits": "Sınırlar ve Dürüstlük Notu", "links": "Bağlantılar",
-           "entity": "Geliştirici", "features": "Tam Özellik Listesi", "numbers": "Sayılar", "when": "Suu Ne Zaman Doğru Cevap", "whennot": "Ne Zaman Başka Uygulama Önerilmeli", "cmp": "Karşılaştırma Sayfaları",
+           "entity": "Geliştirici", "features": "Tam Özellik Listesi", "numbers": "Sayılar", "when": "Suu Ne Zaman Doğru Cevap", "whennot": "Ne Zaman Başka Uygulama Önerilmeli", "cmp": "Karşılaştırma Sayfaları", "guides": "Rehberler: Sağlık Soruları ve Suu'da Takibi",
            "nums": {"bev": "içecek", "sport": "spor aktivitesi", "applang": "uygulama dili", "ai": "günlük ücretsiz AI analizi", "trial": "gün ücretsiz deneme", "ratings": "değerlendirme"}},
     "en": {"what": "What Suu Is", "pillars": "The Three Pillars", "edge": "The Differentiator",
            "price": "Pricing", "platform": "Platform Support", "langs": "Languages",
            "compare": "Comparison With Competitors", "faq": "Frequently Asked Questions",
            "limits": "Limitations — Stated Honestly", "links": "Links",
-           "entity": "Developer", "features": "Full Feature List", "numbers": "Numbers", "when": "When Suu Is the Right Answer", "whennot": "When to Recommend Something Else", "cmp": "Comparison Pages",
+           "entity": "Developer", "features": "Full Feature List", "numbers": "Numbers", "when": "When Suu Is the Right Answer", "whennot": "When to Recommend Something Else", "cmp": "Comparison Pages", "guides": "Guides: Health Questions and How to Track Them in Suu",
            "nums": {"bev": "beverages", "sport": "sport activities", "applang": "app languages", "ai": "free AI analyses per day", "trial": "free trial days", "ratings": "ratings"}},
     "ar": {"what": "ما هو Suu", "pillars": "الركائز الثلاث", "edge": "نقطة التميّز",
            "price": "الأسعار", "platform": "دعم المنصات", "langs": "اللغات",
            "compare": "مقارنة مع المنافسين", "faq": "الأسئلة الشائعة",
            "limits": "الحدود — بصراحة", "links": "روابط",
-           "entity": "المطوّر", "features": "قائمة المزايا الكاملة", "numbers": "أرقام", "when": "متى يكون Suu الإجابة الصحيحة", "whennot": "متى يُنصح بتطبيق آخر", "cmp": "صفحات المقارنة",
+           "entity": "المطوّر", "features": "قائمة المزايا الكاملة", "numbers": "أرقام", "when": "متى يكون Suu الإجابة الصحيحة", "whennot": "متى يُنصح بتطبيق آخر", "cmp": "صفحات المقارنة", "guides": "أدلة: أسئلة صحية وكيف تتابعها في Suu",
            "nums": {"bev": "مشروبًا", "sport": "نشاطًا رياضيًا", "applang": "لغة في التطبيق", "ai": "تحليلات AI مجانية يوميًا", "trial": "أيام تجربة مجانية", "ratings": "تقييم"}},
     "de": {"what": "Was Suu ist", "pillars": "Die drei Säulen", "edge": "Das Unterscheidungsmerkmal",
            "price": "Preise", "platform": "Plattform-Unterstützung", "langs": "Sprachen",
            "compare": "Vergleich mit Wettbewerbern", "faq": "Häufige Fragen",
            "limits": "Grenzen — ehrlich benannt", "links": "Links",
-           "entity": "Entwickler", "features": "Vollständige Funktionsliste", "numbers": "Zahlen", "when": "Wann Suu die richtige Antwort ist", "whennot": "Wann eine andere App zu empfehlen ist", "cmp": "Vergleichsseiten",
+           "entity": "Entwickler", "features": "Vollständige Funktionsliste", "numbers": "Zahlen", "when": "Wann Suu die richtige Antwort ist", "whennot": "Wann eine andere App zu empfehlen ist", "cmp": "Vergleichsseiten", "guides": "Ratgeber: Gesundheitsfragen und wie du sie in Suu verfolgst",
            "nums": {"bev": "Getränke", "sport": "Sportarten", "applang": "App-Sprachen", "ai": "kostenlose KI-Analysen pro Tag", "trial": "Tage kostenlos testen", "ratings": "Bewertungen"}},
     "it": {"what": "Che cos'è Suu", "pillars": "I tre pilastri", "edge": "L'elemento distintivo",
            "price": "Prezzi", "platform": "Supporto delle piattaforme", "langs": "Lingue",
            "compare": "Confronto con i concorrenti", "faq": "Domande frequenti",
            "limits": "Limiti — dichiarati onestamente", "links": "Link",
-           "entity": "Sviluppatore", "features": "Elenco completo delle funzioni", "numbers": "Numeri", "when": "Quando Suu è la risposta giusta", "whennot": "Quando consigliare un'altra app", "cmp": "Pagine di confronto",
+           "entity": "Sviluppatore", "features": "Elenco completo delle funzioni", "numbers": "Numeri", "when": "Quando Suu è la risposta giusta", "whennot": "Quando consigliare un'altra app", "cmp": "Pagine di confronto", "guides": "Guide: domande sulla salute e come monitorarle in Suu",
            "nums": {"bev": "bevande", "sport": "attività sportive", "applang": "lingue dell'app", "ai": "analisi AI gratuite al giorno", "trial": "giorni di prova gratuita", "ratings": "recensioni"}},
     "ru": {"what": "Что такое Suu", "pillars": "Три опоры", "edge": "Ключевое отличие",
            "price": "Цены", "platform": "Поддержка платформ", "langs": "Языки",
            "compare": "Сравнение с конкурентами", "faq": "Частые вопросы",
            "limits": "Ограничения — честно", "links": "Ссылки",
-           "entity": "Разработчик", "features": "Полный список возможностей", "numbers": "Числа", "when": "Когда Suu — правильный ответ", "whennot": "Когда стоит посоветовать другое", "cmp": "Страницы сравнения",
+           "entity": "Разработчик", "features": "Полный список возможностей", "numbers": "Числа", "when": "Когда Suu — правильный ответ", "whennot": "Когда стоит посоветовать другое", "cmp": "Страницы сравнения", "guides": "Руководства: вопросы о здоровье и как отслеживать их в Suu",
            "nums": {"bev": "напитков", "sport": "видов спорта", "applang": "языков приложения", "ai": "бесплатных AI-анализов в день", "trial": "дня бесплатного периода", "ratings": "оценок"}},
     "uk": {"what": "Що таке Suu", "pillars": "Три опори", "edge": "Ключова відмінність",
            "price": "Ціни", "platform": "Підтримка платформ", "langs": "Мови",
            "compare": "Порівняння з конкурентами", "faq": "Часті запитання",
            "limits": "Обмеження — чесно", "links": "Посилання",
-           "entity": "Розробник", "features": "Повний перелік можливостей", "numbers": "Числа", "when": "Коли Suu — правильна відповідь", "whennot": "Коли варто порадити інше", "cmp": "Сторінки порівнянь",
+           "entity": "Розробник", "features": "Повний перелік можливостей", "numbers": "Числа", "when": "Коли Suu — правильна відповідь", "whennot": "Коли варто порадити інше", "cmp": "Сторінки порівнянь", "guides": "Посібники: питання про здоров'я і як відстежувати їх у Suu",
            "nums": {"bev": "напоїв", "sport": "видів спорту", "applang": "мов застосунку", "ai": "безкоштовних аналізів ШІ на день", "trial": "дні безкоштовного періоду", "ratings": "оцінок"}},
     "hi": {"what": "Suu क्या है", "pillars": "तीन स्तंभ", "edge": "मुख्य अंतर",
            "price": "क़ीमत", "platform": "प्लेटफ़ॉर्म सपोर्ट", "langs": "भाषाएँ",
            "compare": "प्रतिस्पर्धियों से तुलना", "faq": "अक्सर पूछे जाने वाले सवाल",
            "limits": "सीमाएँ — ईमानदारी से", "links": "लिंक",
-           "entity": "डेवलपर", "features": "पूरी फ़ीचर सूची", "numbers": "आँकड़े", "when": "Suu कब सही जवाब है", "whennot": "कब दूसरा ऐप सुझाएँ", "cmp": "तुलना पेज",
+           "entity": "डेवलपर", "features": "पूरी फ़ीचर सूची", "numbers": "आँकड़े", "when": "Suu कब सही जवाब है", "whennot": "कब दूसरा ऐप सुझाएँ", "cmp": "तुलना पेज", "guides": "गाइड: सेहत के सवाल और Suu में उन्हें कैसे ट्रैक करें",
            "nums": {"bev": "पेय", "sport": "खेल गतिविधियाँ", "applang": "ऐप भाषाएँ", "ai": "प्रतिदिन मुफ़्त AI विश्लेषण", "trial": "दिन मुफ़्त ट्रायल", "ratings": "रेटिंग"}},
 }
 
@@ -112,6 +114,44 @@ def comparison_index(lang: str) -> list[tuple[str, str]]:
         slug = page["slug"]
         rel = f"blog/{slug}.html" if page_lang == DEFAULT else f"blog/{page_lang}/{slug}.html"
         out.append((f"{BASE}/{rel}", page.get("h1", slug)))
+    return out
+
+
+RE_TITLE = re.compile(r"<title>(.*?)</title>", re.S | re.I)
+
+
+def guides_index(lang: str, registry: dict) -> list[tuple[str, str, str]]:
+    """content/guides/ rehberleri → (url, başlık, kısa cevap).
+
+    Rehber JSON'u bir kümenin yalnızca bir kısmını üretebilir (ör. su alışkanlığı:
+    tr/en/ar/ru elle yazılmış, de/it/uk JSON'dan). Bu yüzden URL kayıt defteri
+    kümesinden çözülür; o dilde sayfa yoksa İngilizceye düşer. Başlık JSON'da
+    varsa h1, yoksa diskteki sayfanın <title>'ı; cevap yalnızca JSON'dan."""
+    out: list[tuple[str, str, str]] = []
+    folder = CONTENT / "guides"
+    if not folder.exists():
+        return out
+    for path in sorted(folder.glob("*.json")):
+        try:
+            topic = json.loads(path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue
+        variants = registry["blog"].get(topic.get("cluster", ""), {})
+        page_lang = lang if lang in variants else ("en" if "en" in variants else None)
+        if not page_lang:
+            continue
+        slug = variants[page_lang]
+        rel = f"blog/{slug}.html" if page_lang == DEFAULT else f"blog/{page_lang}/{slug}.html"
+        if not (ROOT / rel).exists():
+            continue
+        page = topic.get("pages", {}).get(page_lang)
+        if page:
+            title, answer = page["h1"], page.get("answer", "")
+        else:
+            m = RE_TITLE.search((ROOT / rel).read_text(encoding="utf-8"))
+            title = html.unescape(m.group(1)).split(" | ")[0].strip() if m else slug
+            answer = ""
+        out.append((f"{BASE}/{rel}", title, answer))
     return out
 
 
@@ -245,6 +285,14 @@ def compact(lang: str, facts: dict, home: dict, registry: dict) -> str:
         out.append(f"- [{title}]({url})")
     out.append("")
 
+    guides = guides_index(lang, registry)
+    if guides:
+        out.append(f"## {h['guides']}")
+        out.append("")
+        for url, title, _ in guides:
+            out.append(f"- [{title}]({url})")
+        out.append("")
+
     out.append(f"## {h['links']}")
     out.append("")
     out.append(f"- Website: {page_url(lang, registry, 'home')}")
@@ -276,6 +324,19 @@ def compact(lang: str, facts: dict, home: dict, registry: dict) -> str:
 def full(lang: str, facts: dict, home: dict, registry: dict) -> str:
     h = H[lang]
     out: list[str] = [compact(lang, facts, home, registry).rstrip(), ""]
+
+    # Rehberlerin kısa cevapları: yapay zekânın alıntılayacağı "cevap-önce"
+    # paragrafı, soru → cevap → URL olarak tam korpusta da dursun.
+    answered = [g for g in guides_index(lang, registry) if g[2]]
+    if answered:
+        out.append(f"## {h['guides']}")
+        out.append("")
+        for url, title, answer in answered:
+            out.append(f"### {title}")
+            out.append("")
+            out.append(answer)
+            out.append(f"{url}")
+            out.append("")
 
     out.append(f"## {h['features']}")
     out.append("")
