@@ -1,0 +1,1438 @@
+{
+  "_note": "Yapay zekâ sorusu rehberi #5 — 'kolayı nasıl bırakırım'. Sınır: davranış değişikliği planı; limitler ve takip kafein-seker-takibi'nde kalır. Rakamlar suu-facts.json → beverage_hydration (kola 0.6, zero 0.85, maden suyu 1.0, 10 g şeker → +100 ml). Kaynak URL'leri 2026-09-27'de doğrulandı.",
+  "kind": "guide",
+  "cluster": "kolayi-birakmak",
+  "published": "2026-09-27",
+  "modified": "2026-09-27",
+  "pages": {
+    "tr": {
+      "slug": "kolayi-birakmak",
+      "read_minutes": 7,
+      "badge": "🥤 Rehber · İçecek alışkanlığı",
+      "h1": "Kolayı Nasıl Bırakırım? 4 Haftalık Kademeli Plan ve Suu'da Takibi",
+      "about": [
+        {
+          "name": "Şekerli içecekler"
+        },
+        {
+          "name": "Kafein yoksunluğu"
+        },
+        {
+          "name": "Alışkanlık değişikliği"
+        }
+      ],
+      "meta": {
+        "title": "Kolayı Nasıl Bırakırım? 4 Haftalık Plan | Suu",
+        "description": "Kolayı bir anda kesmek yerine 4 haftada azalt: tetikleyiciler, kafein baş ağrısı, zero ve maden suyu geçişi. Bir kutunun gerçek şeker ve su etkisi.",
+        "keywords": "kolayı nasıl bırakırım, kola bırakmak, gazlı içecek bırakma, kola bağımlılığı, kola yerine ne içilir, zero kola su yerine geçer mi, kola kaç gram şeker, kafein baş ağrısı kola",
+        "og_title": "Kolayı Nasıl Bırakırım? 4 Haftalık Kademeli Plan",
+        "og_description": "Bir kutu kola ~35 g şeker ve su hedefine beklenmedik bir etki. Yasaklamadan, dört haftada azaltmanın yolu."
+      },
+      "answer": "Kolayı bırakmanın en çok işe yarayan yolu bir anda kesmek değil, 3–4 haftada azaltmaktır: her hafta günde bir kutuyu maden suyu ya da şekersiz bir içecekle değiştir, kolayı içtiğin anları önceden planla ve ilk günlerdeki kafein baş ağrısına hazırlıklı ol. Suu, her kutunun şekerini ve su hedefine etkisini rakamla gösterir.",
+      "health_note": {
+        "head": "Bu yazı tıbbi tavsiye değildir.",
+        "body": [
+          "Genel bilgi içindir; teşhis ya da tedavinin yerini tutmaz. Diyabetin, kalp veya böbrek hastalığın varsa, hamileysen ya da düzenli ilaç kullanıyorsan içecek düzenini değiştirmeden önce doktoruna veya diyetisyenine danış.",
+          "Şu durumlarda beklemeden bir sağlık uzmanına görün:"
+        ],
+        "red_flags": [
+          "Aşırı susama, sık idrara çıkma ve açıklanamayan kilo kaybı bir arada ise (kan şekerine baktırmak gerekir)",
+          "Kafeini azalttıktan sonraki baş ağrısı bir haftadan uzun sürüyorsa ya da çok şiddetliyse"
+        ]
+      },
+      "disclosure": "Bu rehberi Suu'yu geliştiren iki kişilik ekip olarak yazdık. Uygulamamızı öneriyoruz, ama rakamlar kutu etiketinden ve Dünya Sağlık Örgütü ile Sağlık Bakanlığı kaynaklarından geliyor; aynı planı Suu olmadan da uygulayabilirsin.",
+      "intro": [
+        "Kolayı bırakmak isteyen çoğu kişi aynı döngüyü yaşar: pazartesi tamamen keser, çarşamba öğleden sonra baş ağrısı ve tatlı isteğiyle geri döner. Sorun irade değil. Kola aynı anda üç şey veriyor: <strong>şeker</strong>, <strong>kafein</strong> ve bir <strong>alışkanlık anı</strong> — yemek yanında, öğleden sonraki düşüşte, uzun yolda benzinlik molasında. Üçünü birden bir günde kesmek zor.",
+        "Bu yüzden aşağıdaki plan kolayı yasaklamıyor; dört haftada azaltıyor ve her adımı ölçülebilir kılıyor. Önce bir kutunun gerçekte ne olduğuna bakalım."
+      ],
+      "analysis": [
+        {
+          "head": "Bir kutu kola gerçekte ne kadar?",
+          "body": [
+            "330 ml'lik standart bir kutuda yaklaşık <strong>35 g şeker</strong> (yaklaşık 9 küp) ve 140 kcal var. Dünya Sağlık Örgütü serbest şekerin günlük enerjinin %10'unun altında, ideal olarak %5'in — yaklaşık 25 g — altında kalmasını öneriyor.<sup><a href=\"#ref1\">1</a></sup> Yani tek bir kutu bu ideal sınırı tek başına aşıyor. Sağlık Bakanlığı'nın Türkiye Beslenme Rehberi (TÜBER 2022) de şekerli besinleri, azaltılması gereken alışkanlıklar arasında besin piramidinin en üstüne koyuyor.<sup><a href=\"#ref2\">2</a></sup>",
+            "Günde bir litre kola içen biri yalnızca içecekten yaklaşık 106 g şeker alıyor — ideal sınırın dört katı."
+          ],
+          "callout": "Şekerli içecekleri düzenli içmek tip 2 diyabet riskindeki artışla ilişkili: sekiz kohort çalışmasını birleştiren bir meta-analizde günde 1–2 porsiyon içenlerde risk, ayda 1 porsiyondan az içenlere göre yaklaşık %26 daha yüksek bulundu.<sup><a href=\"#ref3\">3</a></sup>"
+        },
+        {
+          "head": "Neden bir anda bırakamıyorsun: kafein ve alışkanlık",
+          "body": [
+            "Bir kutu kolada yaklaşık 30–35 mg kafein var; günde üç kutu, bir fincan filtre kahveye yaklaşıyor. Kafeini aniden kesenlerde baş ağrısı, yorgunluk ve dikkat dağınıklığı genellikle son dozdan 12–24 saat sonra başlar, 1–2. günde zirve yapar ve 2–9 gün sürebilir.<sup><a href=\"#ref4\">4</a></sup> Pazartesi bırakıp çarşamba geri dönmenin sebebi çoğu zaman budur.",
+            "Alışkanlık tarafı da yavaş değişir: yeni bir davranışın otomatikleşmesi bir çalışmada ortalama 66 gün sürdü, kişiden kişiye 18 ile 254 gün arasında değişti.<sup><a href=\"#ref5\">5</a></sup> Dört hafta bir başlangıçtır, bitiş değil — ve tek bir kaçamak günü planı bozmaz."
+          ]
+        },
+        {
+          "head": "4 haftalık azaltma planı",
+          "body": [
+            "Her hafta tek bir değişiklik yap. Günde bir kutudan az içiyorsan planı iki haftaya sıkıştırabilirsin."
+          ],
+          "list": [
+            "<strong>1. hafta — ölç:</strong> Hiçbir şeyi değiştirme, sadece her kutuyu kaydet. Çoğu kişi ne kadar içtiğini az tahmin ediyor; gerçek sayı başlangıç çizgin olur.",
+            "<strong>2. hafta — bir kutuyu değiştir:</strong> Günün en otomatik kutusunu (genelde yemek yanındaki) buzlu maden suyu + limonla değiştir. Gaz ve soğukluk kalınca eksiklik daha az hissedilir.",
+            "<strong>3. hafta — kafeini yumuşat:</strong> Öğleden sonraki kutuyu şekersiz versiyona ya da demli çaya çevir. Kafeini bir anda sıfırlamadığın için baş ağrısı riski düşer.",
+            "<strong>4. hafta — evde bulundurma:</strong> Kolayı dolaptan çıkar. Dışarıda içmek serbest, ama varsayılan değil, bir karar olsun.",
+            "<strong>Her gün:</strong> Kolayı en çok istediğin saatten önce bir bardak su iç; susadığında elinin altındaki ilk seçenek su olsun."
+          ]
+        },
+        {
+          "head": "Zero kola bir çözüm mü?",
+          "body": [
+            "Geçiş için işe yarar: şekeri ve kaloriyi sıfırlar, tadı ve gazı korur. Ama Dünya Sağlık Örgütü 2023'te şekersiz tatlandırıcıları kilo kontrolü için önermediğini açıkladı.<sup><a href=\"#ref6\">6</a></sup> Zero kola hâlâ kafein ve asit içeriyor. Uzun vadedeki hedef, tatlı içecek alışkanlığının kendisini küçültmek; zero'yu köprü olarak kullan, varış noktası olarak değil."
+          ]
+        },
+        {
+          "head": "Kola su yerine geçer mi?",
+          "body": [
+            "Kısmen. Kolanın içindeki sıvı sayılır ama tamamı değil. Suu'nun hesabında kola yaklaşık <strong>0.6 hidrasyon katsayısıyla</strong> girer; şekeri de günlük su ihtiyacını artırır (her 10 g şeker için +100 ml). Üç seçeneği yan yana koyunca fark netleşiyor:"
+          ],
+          "list": [
+            "<strong>Kola, 330 ml:</strong> ~35 g şeker · ~200 ml su sayılır · günlük hedef +350 ml",
+            "<strong>Kola Zero, 330 ml:</strong> 0 g şeker · ~280 ml su sayılır · hedef değişmez",
+            "<strong>Maden suyu, 330 ml:</strong> 0 g şeker · 330 ml su sayılır · hedef değişmez"
+          ],
+          "callout": "Bu katsayılar Suu'nun içecek kataloğundan geliyor. Bilimsel bir \"kola vücudu kurutur\" iddiası değil; şekerli içeceğin gün sonundaki etkisini gerçekçi tutmak için kullanılan bir hesap."
+        }
+      ],
+      "in_app": {
+        "head": "Bunu Suu'da nereden takip edersin",
+        "lead": "Planın her haftası uygulamada bir karşılık buluyor. Menü adları uygulamadaki gibi:",
+        "steps": [
+          {
+            "feature": "Kolayı kaydet, gerçek etkisini gör",
+            "where_ios": "Ana ekran → hızlı ekleme → <strong>Hızlı İçecek</strong> → Kola",
+            "where_android": "Ana ekran → <strong>İçecek Ekle</strong> → Kola",
+            "solves": "Kutu, şekeri ve su hedefine etkisiyle birlikte kaydedilir. Planın 1. haftasındaki \"ölç\" adımı budur."
+          },
+          {
+            "feature": "Değişimi karşılaştır",
+            "where": "Aynı listede <strong>Kola Zero</strong> ve <strong>Maden Suyu</strong>",
+            "solves": "2. ve 3. haftadaki değişimin etkisini aynı yerde görürsün: şeker düşer, suya sayılan miktar artar, hedef yükselmez."
+          },
+          {
+            "feature": "Seri ve Streak Koruma",
+            "where": "Ana ekrandaki <strong>Seri</strong> göstergesi",
+            "solves": "Günlük su hedefinin en az yarısına ulaştığın her gün seri uzar. Kolanın yerine koyduğun her bardak su bu seriyi besler; bir günü kaçırırsan <strong>Streak Koruma</strong> hakkın seriyi korur."
+          },
+          {
+            "feature": "Akıllı Bildirimler",
+            "where_ios": "Ayarlar → Bildirim Ayarları → <strong>Akıllı Bildirimler</strong>",
+            "where_android": "Ayarlar → <strong>Akıllı Bildirimler</strong>",
+            "solves": "Kolayı en çok istediğin saatlerden önce su hatırlatması al; planın \"her gün\" adımını uygulama hatırlatır."
+          }
+        ],
+        "button": "Suu'yu ücretsiz indir"
+      },
+      "verdict": {
+        "head": "Kısacası",
+        "body": [
+          "Kolayı bir günde bırakmaya çalışma; dört haftada, her hafta tek bir kutuyu değiştirerek azalt. Kafein baş ağrısını beklenen, geçici bir yan etki olarak gör, şekersiz versiyonları köprü olarak kullan ve ilerlemeni ölç.",
+          "Rakamı görmek kararı kolaylaştırıyor: bir kutu kola suya ~200 ml eklerken günlük hedefi ~350 ml yükseltiyor. Bu farkı her gün görmek, \"bir tanecikten bir şey olmaz\" düşüncesini sessizce değiştiriyor."
+        ]
+      },
+      "cta": {
+        "head": "İçtiğin her kutuyu rakamla gör",
+        "sub": "Su, kalori ve egzersiz tek uygulamada · iOS ve Android'de ücretsiz",
+        "button": "Suu'yu Ücretsiz İndir"
+      },
+      "faq": [
+        {
+          "q": "Kolayı bir anda bırakmak mı daha iyi, azaltarak mı?",
+          "a": "Çoğu kişi için kademeli azaltma daha sürdürülebilir, çünkü kafein yoksunluğu (baş ağrısı, yorgunluk) ile alışkanlık anları aynı güne yığılmaz. Günde birden fazla kutu içiyorsan haftada bir kutu azaltmak iyi bir tempodur."
+        },
+        {
+          "q": "Kolayı bırakınca baş ağrısı neden olur, ne kadar sürer?",
+          "a": "Kafein yoksunluğundandır. Belirtiler genellikle son kafeinden 12–24 saat sonra başlar, 1–2. günde en yoğun olur ve 2–9 gün içinde geçer. Kafeini kademeli azaltmak belirtileri hafifletir; bir haftadan uzun süren ya da çok şiddetli baş ağrısında doktora danış."
+        },
+        {
+          "q": "Zero kola su yerine geçer mi?",
+          "a": "Kısmen. Sıvısının çoğu sayılır — Suu zero kolayı 0.85 hidrasyon katsayısıyla hesaplar — ama kafein ve asit içerir. Sade suyun ya da maden suyunun yerini tutmaz; kolayı bırakırken geçiş içeceği olarak kullanmak daha doğru."
+        },
+        {
+          "q": "Kolanın yerine ne içilir?",
+          "a": "Buzlu maden suyu + limon ya da nane, soğuk demlenmiş şekersiz çay, yemek yanında ayran ve sade su. Gazı ve soğukluğu seviyorsan maden suyu en kolay geçiştir."
+        },
+        {
+          "q": "Bir kutu kolada kaç gram şeker var?",
+          "a": "Standart 330 ml'lik kutuda yaklaşık 35 g şeker, yani yaklaşık 9 küp şeker var. Bu, Dünya Sağlık Örgütü'nün önerdiği ideal günlük sınır olan yaklaşık 25 g'ı tek başına aşıyor."
+        },
+        {
+          "q": "Suu kolayı nasıl hesaplıyor?",
+          "a": "Kola 0.6 hidrasyon katsayısıyla sayılır ve her 10 g şeker günlük su hedefini 100 ml artırır. 330 ml'lik bir kutu yaklaşık 200 ml su olarak sayılır ama hedefi yaklaşık 350 ml yükseltir."
+        }
+      ],
+      "references": [
+        {
+          "label": "Dünya Sağlık Örgütü — Guideline: Sugars intake for adults and children (2015)",
+          "href": "https://www.who.int/publications/i/item/9789241549028"
+        },
+        {
+          "label": "T.C. Sağlık Bakanlığı — Türkiye Beslenme Rehberi (TÜBER) 2022",
+          "href": "https://hsgm.saglik.gov.tr/tr/web-uygulamalarimiz/357.html"
+        },
+        {
+          "label": "Malik VS ve ark. — Sugar-sweetened beverages and risk of metabolic syndrome and type 2 diabetes: a meta-analysis. Diabetes Care, 2010",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/20693348/"
+        },
+        {
+          "label": "Juliano LM, Griffiths RR — A critical review of caffeine withdrawal. Psychopharmacology, 2004",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/15448977/"
+        },
+        {
+          "label": "Lally P ve ark. — How are habits formed: modelling habit formation in the real world. European Journal of Social Psychology, 2010",
+          "href": "https://doi.org/10.1002/ejsp.674"
+        },
+        {
+          "label": "Dünya Sağlık Örgütü — Use of non-sugar sweeteners: WHO guideline (2023)",
+          "href": "https://www.who.int/publications/i/item/9789240073616"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/kafein-seker-takibi.html",
+          "title": "Kafein ve şeker takibi",
+          "desc": "Günlük limitler ve içecekleri gerçekten izlemek."
+        },
+        {
+          "href": "/blog/kahveyi-azaltmak.html",
+          "title": "Kahveyi azaltmanın 7 yolu",
+          "desc": "Kafein yoksunluğunu hafif atlatmak için."
+        },
+        {
+          "href": "/blog/enerji-icecegi-kontrolu.html",
+          "title": "Enerji içeceğini kontrol altına almak",
+          "desc": "4 haftalık azaltma planıyla."
+        },
+        {
+          "href": "/blog/kalori-acigi.html",
+          "title": "Kalori açığı nasıl oluşturulur?",
+          "desc": "İçeceklerden gelen kalori bu hesabın parçası."
+        }
+      ]
+    },
+    "en": {
+      "slug": "how-to-quit-soda",
+      "read_minutes": 7,
+      "badge": "🥤 Guide · Drink habits",
+      "h1": "How to Quit Soda: A 4-Week Step-Down Plan (and How to Track It in Suu)",
+      "about": [
+        {
+          "name": "Sugar-sweetened beverages"
+        },
+        {
+          "name": "Caffeine withdrawal"
+        },
+        {
+          "name": "Habit change"
+        }
+      ],
+      "meta": {
+        "title": "How to Quit Soda: A 4-Week Step-Down Plan | Suu",
+        "description": "Stop drinking soda without white-knuckling it: a 4-week plan for triggers, caffeine headaches and the switch to sparkling water, plus what one can really does.",
+        "keywords": "how to quit soda, how to stop drinking soda, quit coke, soda addiction, what to drink instead of soda, does diet soda count as water, how much sugar in a can of coke, caffeine withdrawal soda headache",
+        "og_title": "How to Quit Soda: A 4-Week Step-Down Plan",
+        "og_description": "One can is ~38 g of sugar and a surprising hit to your water goal. How to cut back in four weeks without banning it overnight."
+      },
+      "answer": "The most reliable way to quit soda is to taper over 3–4 weeks rather than stop cold turkey: each week swap one daily can for sparkling water or a sugar-free drink, plan for the moments you usually reach for one, and expect a few days of caffeine headaches. Suu shows each can's sugar and its effect on your water goal in numbers.",
+      "health_note": {
+        "head": "This article is not medical advice.",
+        "body": [
+          "It is general information and does not replace diagnosis or treatment. If you have diabetes, heart or kidney disease, are pregnant or take regular medication, talk to your doctor or a registered dietitian before changing what you drink.",
+          "See a healthcare professional promptly if:"
+        ],
+        "red_flags": [
+          "Extreme thirst, frequent urination and unexplained weight loss show up together (your blood sugar should be checked)",
+          "A headache after cutting caffeine lasts longer than a week or is severe"
+        ]
+      },
+      "disclosure": "We wrote this guide as the two-person team that builds Suu. We recommend our app, but the numbers come from the can label, the World Health Organization and the NHS — you can follow the same plan without Suu.",
+      "intro": [
+        "Most people who try to quit soda go through the same loop: stop completely on Monday, cave on Wednesday afternoon with a headache and a sugar craving. It isn't a willpower problem. Soda delivers three things at once — <strong>sugar</strong>, <strong>caffeine</strong> and a <strong>habit moment</strong> (with lunch, during the afternoon slump, at the gas station on a long ride). Dropping all three in a single day is hard.",
+        "So the plan below doesn't ban soda. It tapers it over four weeks and makes every step measurable. First, a look at what one can actually is."
+      ],
+      "analysis": [
+        {
+          "head": "What's really in one can of soda?",
+          "body": [
+            "A standard 12 fl oz (355 ml) can of cola has about <strong>38 g of sugar</strong> — roughly 9½ teaspoons — and about 150 kcal. The World Health Organization recommends keeping free sugars below 10% of daily energy, and ideally below 5%, which is about 25 g.<sup><a href=\"#ref1\">1</a></sup> One can on its own is over that ideal limit. The NHS puts the adult maximum at 30 g of free sugars a day.<sup><a href=\"#ref2\">2</a></sup>",
+            "Someone drinking a liter of soda a day gets around 106 g of sugar from drinks alone — four times the ideal limit."
+          ],
+          "callout": "Regular sugary drinks are linked to a higher risk of type 2 diabetes: a meta-analysis pooling eight cohort studies found that people drinking 1–2 servings a day had about a 26% higher risk than those drinking less than one a month.<sup><a href=\"#ref3\">3</a></sup>"
+        },
+        {
+          "head": "Why cold turkey fails: caffeine and habit",
+          "body": [
+            "A can of cola has roughly 35 mg of caffeine; three cans come close to a cup of brewed coffee. When caffeine stops abruptly, headache, fatigue and poor concentration usually begin 12–24 hours after the last dose, peak on day one or two and can last 2–9 days.<sup><a href=\"#ref4\">4</a></sup> That's often why a Monday quit turns into a Wednesday relapse.",
+            "Habits change slowly too: in one study a new behavior took a median of 66 days to feel automatic, ranging from 18 to 254 days.<sup><a href=\"#ref5\">5</a></sup> Four weeks is a start, not the finish line — and one slip doesn't undo the plan."
+          ]
+        },
+        {
+          "head": "The 4-week step-down plan",
+          "body": [
+            "Make one change per week. If you drink less than a can a day, you can compress this into two weeks."
+          ],
+          "list": [
+            "<strong>Week 1 — measure:</strong> Change nothing; just log every can. Most people underestimate how much they drink, and the real number becomes your baseline.",
+            "<strong>Week 2 — swap one can:</strong> Replace your most automatic can of the day (usually the one with a meal) with ice-cold sparkling water and a squeeze of lime. Keeping the fizz and the cold makes the swap feel smaller.",
+            "<strong>Week 3 — ease off caffeine:</strong> Turn the afternoon can into the zero-sugar version or iced tea. Because caffeine doesn't drop to zero overnight, headaches are less likely.",
+            "<strong>Week 4 — stop stocking it:</strong> Take soda out of the fridge. Having one when you're out is fine, but make it a decision, not the default.",
+            "<strong>Every day:</strong> Drink a glass of water before the time you usually crave a soda, so the first thing within reach when you're thirsty is water."
+          ]
+        },
+        {
+          "head": "Is diet soda a good replacement?",
+          "body": [
+            "As a bridge, yes: it removes the sugar and calories while keeping the taste and fizz. But in 2023 the World Health Organization advised against using non-sugar sweeteners for weight control,<sup><a href=\"#ref6\">6</a></sup> and diet soda still contains caffeine and acid. The long-term goal is to shrink the sweet-drink habit itself — use diet soda as a bridge, not the destination."
+          ]
+        },
+        {
+          "head": "Does soda count as water?",
+          "body": [
+            "Partly. The fluid in soda counts, but not all of it. In Suu's calculation, cola enters with a <strong>hydration factor of 0.6</strong>, and its sugar raises your daily water need (+100 ml for every 10 g of sugar). Side by side, the difference is clear:"
+          ],
+          "list": [
+            "<strong>Cola, 12 fl oz (355 ml):</strong> ~38 g sugar · ~210 ml counted as water · daily goal +375 ml",
+            "<strong>Cola Zero, 12 fl oz:</strong> 0 g sugar · ~300 ml counted as water · goal unchanged",
+            "<strong>Sparkling water, 12 fl oz:</strong> 0 g sugar · 355 ml counted as water · goal unchanged"
+          ],
+          "callout": "These factors come from Suu's beverage catalog. They're not a scientific claim that \"soda dehydrates you\" — they're a calculation that keeps the end-of-day effect of a sugary drink realistic."
+        }
+      ],
+      "in_app": {
+        "head": "Where to track this in Suu",
+        "lead": "Every week of the plan has a place in the app. Menu names are exactly as they appear:",
+        "steps": [
+          {
+            "feature": "Log the soda and see its real effect",
+            "where_ios": "Home → quick add → <strong>Quick Drink</strong> → Cola",
+            "where_android": "Home → <strong>Add Beverage</strong> → Cola",
+            "solves": "The can is logged together with its sugar and its effect on your water goal. This is the \"measure\" step of week 1."
+          },
+          {
+            "feature": "Compare the swap",
+            "where": "The same list: <strong>Cola Zero</strong> and <strong>Sparkling Water</strong>",
+            "solves": "See what the week 2 and week 3 swaps do in one place: sugar goes down, the amount counted as water goes up, and your goal stays put."
+          },
+          {
+            "feature": "Streak and Streak Freeze",
+            "where": "The <strong>Streak</strong> indicator on the home screen",
+            "solves": "Every day you reach at least half of your water goal extends your streak. Each glass of water that replaces a soda feeds it, and if you miss a day, a <strong>Streak Freeze</strong> protects it."
+          },
+          {
+            "feature": "Smart Notifications",
+            "where_ios": "Settings → Notification Settings → <strong>Smart Notifications</strong>",
+            "where_android": "Settings → <strong>Smart Notifications</strong>",
+            "solves": "Get a water reminder before the hours you usually crave soda, so the app handles the plan's \"every day\" step."
+          }
+        ],
+        "button": "Get Suu free"
+      },
+      "verdict": {
+        "head": "The short version",
+        "body": [
+          "Don't try to quit soda in a day. Taper it over four weeks, swapping one can per week. Treat caffeine headaches as an expected, temporary side effect, use zero-sugar drinks as a bridge, and measure your progress.",
+          "Seeing the number makes the decision easier: one can of cola adds ~210 ml to your water while raising your daily goal by ~375 ml. Watching that gap every day quietly changes the \"one can won't hurt\" reflex."
+        ]
+      },
+      "cta": {
+        "head": "See every can in numbers",
+        "sub": "Water, calories and workouts in one app · free on iOS and Android",
+        "button": "Download Suu Free"
+      },
+      "faq": [
+        {
+          "q": "Is it better to quit soda cold turkey or gradually?",
+          "a": "For most people a gradual taper is more sustainable, because caffeine withdrawal (headache, fatigue) and habit triggers don't all land on the same day. If you drink more than one can a day, cutting one can per week is a good pace."
+        },
+        {
+          "q": "Why do I get headaches when I stop drinking soda, and how long do they last?",
+          "a": "It's caffeine withdrawal. Symptoms usually start 12–24 hours after your last caffeine, peak on day one or two and fade within 2–9 days. Tapering caffeine makes them milder; see a doctor if a headache lasts longer than a week or is severe."
+        },
+        {
+          "q": "Does diet soda count as water?",
+          "a": "Partly. Most of its fluid counts — Suu uses a hydration factor of 0.85 for zero-sugar cola — but it contains caffeine and acid. It doesn't replace plain or sparkling water; it works best as a transition drink while you quit regular soda."
+        },
+        {
+          "q": "What can I drink instead of soda?",
+          "a": "Ice-cold sparkling water with lime or mint, unsweetened iced tea, and plain water. If you mainly miss the fizz and the cold, sparkling water is the easiest switch."
+        },
+        {
+          "q": "How much sugar is in a can of Coke?",
+          "a": "A standard 12 fl oz (355 ml) can of cola contains about 38 g of sugar, roughly 9½ teaspoons. That alone is above the World Health Organization's ideal daily limit of about 25 g."
+        },
+        {
+          "q": "How does Suu count soda?",
+          "a": "Cola counts with a hydration factor of 0.6, and every 10 g of sugar raises your daily water goal by 100 ml. A 12 fl oz can counts as about 210 ml of water but raises your goal by about 375 ml."
+        }
+      ],
+      "references": [
+        {
+          "label": "World Health Organization — Guideline: Sugars intake for adults and children (2015)",
+          "href": "https://www.who.int/publications/i/item/9789241549028"
+        },
+        {
+          "label": "NHS — Sugar: the facts",
+          "href": "https://www.nhs.uk/live-well/eat-well/food-types/how-does-sugar-in-our-diet-affect-our-health/"
+        },
+        {
+          "label": "Malik VS et al. — Sugar-sweetened beverages and risk of metabolic syndrome and type 2 diabetes: a meta-analysis. Diabetes Care, 2010",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/20693348/"
+        },
+        {
+          "label": "Juliano LM, Griffiths RR — A critical review of caffeine withdrawal. Psychopharmacology, 2004",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/15448977/"
+        },
+        {
+          "label": "Lally P et al. — How are habits formed: modelling habit formation in the real world. European Journal of Social Psychology, 2010",
+          "href": "https://doi.org/10.1002/ejsp.674"
+        },
+        {
+          "label": "World Health Organization — Use of non-sugar sweeteners: WHO guideline (2023)",
+          "href": "https://www.who.int/publications/i/item/9789240073616"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/en/caffeine-sugar-tracking.html",
+          "title": "Caffeine and sugar tracking",
+          "desc": "Daily limits and how to actually watch your drinks."
+        },
+        {
+          "href": "/blog/en/quit-coffee-guide.html",
+          "title": "How to cut down on coffee",
+          "desc": "Seven ways to soften caffeine withdrawal."
+        },
+        {
+          "href": "/blog/en/energy-drink-control.html",
+          "title": "How to control energy drink intake",
+          "desc": "Including a 4-week reduction plan."
+        },
+        {
+          "href": "/blog/en/calorie-deficit.html",
+          "title": "How to build a calorie deficit",
+          "desc": "Liquid calories are part of the math."
+        }
+      ]
+    },
+    "ar": {
+      "slug": "tark-almashroobat-alghaziya",
+      "read_minutes": 7,
+      "badge": "🥤 دليل · عادات الشرب",
+      "h1": "كيف أترك المشروبات الغازية؟ خطة تدريجية لأربعة أسابيع وكيف تتابعها في Suu",
+      "about": [
+        {
+          "name": "المشروبات المحلّاة بالسكر"
+        },
+        {
+          "name": "انسحاب الكافيين"
+        },
+        {
+          "name": "تغيير العادات"
+        }
+      ],
+      "meta": {
+        "title": "كيف أترك المشروبات الغازية؟ خطة 4 أسابيع | Suu",
+        "description": "بدل التوقف المفاجئ، خفّف المشروبات الغازية خلال 4 أسابيع: المحفّزات، صداع الكافيين، والانتقال إلى الماء الفوّار، مع الأثر الحقيقي لعلبة واحدة.",
+        "keywords": "كيف أترك المشروبات الغازية, ترك البيبسي, ترك الكولا, إدمان المشروبات الغازية, بديل المشروبات الغازية, كم غرام سكر في علبة كولا, صداع ترك الكافيين, هل الكولا زيرو تحسب ماء",
+        "og_title": "كيف أترك المشروبات الغازية؟ خطة تدريجية لأربعة أسابيع",
+        "og_description": "علبة واحدة فيها نحو 35 غرامًا من السكر وأثر غير متوقع على هدف الماء. هكذا تخفّفها خلال أربعة أسابيع دون منع مفاجئ."
+      },
+      "answer": "أنجح طريقة لترك المشروبات الغازية ليست التوقف المفاجئ بل التخفيف خلال 3–4 أسابيع: استبدل كل أسبوع علبة يومية واحدة بماء فوّار أو مشروب بلا سكر، وخطّط مسبقًا للحظات التي تشربها فيها عادةً، وتوقّع صداع الكافيين في الأيام الأولى. يعرض Suu سكر كل علبة وأثرها على هدف الماء بالأرقام.",
+      "health_note": {
+        "head": "هذا المقال ليس نصيحة طبية.",
+        "body": [
+          "المعلومات هنا عامة ولا تغني عن التشخيص أو العلاج. إذا كنت مصابًا بالسكري أو بأمراض القلب أو الكلى، أو كنتِ حاملًا، أو تتناول أدوية بانتظام، فاستشر طبيبك أو أخصائي التغذية قبل تغيير ما تشربه.",
+          "راجع مختصًّا صحيًّا دون تأخير في الحالات التالية:"
+        ],
+        "red_flags": [
+          "عطش شديد مع كثرة التبوّل ونقص وزن غير مبرَّر في الوقت نفسه (يجب فحص سكر الدم)",
+          "صداع بعد تقليل الكافيين يستمر أكثر من أسبوع أو يكون شديدًا"
+        ]
+      },
+      "disclosure": "كتبنا هذا الدليل بصفتنا الفريق المكوّن من شخصين الذي يطوّر Suu. نحن نرشّح تطبيقنا، لكن الأرقام مأخوذة من ملصق العلبة ومن منظمة الصحة العالمية ووزارة الصحة السعودية، ويمكنك تطبيق الخطة نفسها دون Suu.",
+      "intro": [
+        "يمرّ معظم من يحاولون ترك المشروبات الغازية بالدائرة نفسها: يتوقفون تمامًا يوم الأحد، ثم يعودون يوم الثلاثاء بعد الظهر مع صداع ورغبة في السكر. المشكلة ليست في الإرادة. العلبة تقدّم ثلاثة أشياء معًا: <strong>السكر</strong> و<strong>الكافيين</strong> و<strong>لحظة معتادة</strong> — مع الغداء، أو في هبوط الطاقة بعد الظهر، أو على مائدة الإفطار في رمضان. قطع الثلاثة في يوم واحد صعب.",
+        "لذلك لا تمنع الخطة التالية المشروبات الغازية، بل تخفّفها خلال أربعة أسابيع وتجعل كل خطوة قابلة للقياس. لنبدأ بما تحتويه العلبة فعلًا."
+      ],
+      "analysis": [
+        {
+          "head": "ماذا تحتوي علبة واحدة فعلًا؟",
+          "body": [
+            "في علبة كولا قياسية سعتها 330 مل نحو <strong>35 غرامًا من السكر</strong> (قرابة 9 مكعبات) ونحو 140 سعرة حرارية. توصي منظمة الصحة العالمية بأن تبقى السكريات الحرة أقل من 10% من الطاقة اليومية، والأفضل أقل من 5% أي نحو 25 غرامًا.<sup><a href=\"#ref1\">1</a></sup> أي أن علبة واحدة تتجاوز هذا الحد المثالي وحدها. وتنصح وزارة الصحة السعودية ضمن محتوى نمط الحياة الصحي بالابتعاد عن الأغذية المصنّعة الغنية بالسكريات، وتخصّص قسمًا للتوعية بالمشروبات الغازية.<sup><a href=\"#ref2\">2</a></sup>",
+            "من يشرب لترًا من المشروبات الغازية يوميًا يحصل من الشراب وحده على نحو 106 غرامات من السكر — أربعة أضعاف الحد المثالي."
+          ],
+          "callout": "يرتبط الشرب المنتظم للمشروبات المحلّاة بزيادة خطر السكري من النوع الثاني: في تحليل تجميعي ضمّ ثماني دراسات أترابية، كان الخطر لدى من يشربون 1–2 حصة يوميًا أعلى بنحو 26% مقارنةً بمن يشربون أقل من حصة واحدة شهريًا.<sup><a href=\"#ref3\">3</a></sup>"
+        },
+        {
+          "head": "لماذا يفشل التوقف المفاجئ: الكافيين والعادة",
+          "body": [
+            "في علبة الكولا نحو 30–35 ملغ من الكافيين؛ ثلاث علب تقترب من فنجان قهوة مفلترة. عند قطع الكافيين فجأة يبدأ الصداع والتعب وضعف التركيز عادةً بعد 12–24 ساعة من آخر جرعة، ويبلغ ذروته في اليوم الأول أو الثاني، وقد يستمر من يومين إلى تسعة أيام.<sup><a href=\"#ref4\">4</a></sup> وهذا غالبًا سبب العودة بعد يومين.",
+            "والعادة أيضًا تتغيّر ببطء: في إحدى الدراسات احتاج السلوك الجديد في المتوسط إلى 66 يومًا ليصبح تلقائيًا، وتراوح ذلك بين 18 و254 يومًا.<sup><a href=\"#ref5\">5</a></sup> الأسابيع الأربعة بداية وليست نهاية — وزلّة يوم واحد لا تُفسد الخطة."
+          ]
+        },
+        {
+          "head": "خطة التخفيف في أربعة أسابيع",
+          "body": [
+            "غيّر شيئًا واحدًا كل أسبوع. إذا كنت تشرب أقل من علبة يوميًا يمكنك اختصار الخطة إلى أسبوعين."
+          ],
+          "list": [
+            "<strong>الأسبوع الأول — قِس:</strong> لا تغيّر شيئًا، فقط سجّل كل علبة. معظم الناس يقلّلون تقدير ما يشربونه، والرقم الحقيقي يصبح نقطة البداية.",
+            "<strong>الأسبوع الثاني — استبدل علبة واحدة:</strong> استبدل أكثر علبة «تلقائية» في يومك (غالبًا تلك التي مع الغداء) بماء فوّار مثلّج مع الليمون. بقاء الفقاعات والبرودة يجعل الفرق أقل إحساسًا.",
+            "<strong>الأسبوع الثالث — خفّف الكافيين:</strong> حوّل علبة العصر إلى النسخة الخالية من السكر أو إلى شاي بارد غير محلّى. لأن الكافيين لا ينخفض إلى الصفر دفعة واحدة، يقلّ احتمال الصداع.",
+            "<strong>الأسبوع الرابع — لا تخزّنها:</strong> أخرج المشروبات الغازية من الثلاجة. شربها خارج البيت مسموح، لكن ليكن قرارًا لا خيارًا افتراضيًا.",
+            "<strong>كل يوم:</strong> اشرب كوب ماء قبل الوقت الذي تشتهي فيه المشروب عادةً، وفي رمضان ابدأ الإفطار بالماء والتمر قبل أي مشروب محلّى."
+          ]
+        },
+        {
+          "head": "هل الكولا الخالية من السكر بديل جيد؟",
+          "body": [
+            "كجسر للانتقال نعم: تُلغي السكر والسعرات وتحافظ على الطعم والفقاعات. لكن منظمة الصحة العالمية نصحت عام 2023 بعدم استخدام المحلّيات غير السكرية للتحكم في الوزن،<sup><a href=\"#ref6\">6</a></sup> كما أن النسخة الخالية من السكر ما زالت تحتوي على الكافيين والحمض. الهدف على المدى البعيد تقليص عادة المشروب الحلو نفسها؛ استخدمها جسرًا لا وجهة نهائية."
+          ]
+        },
+        {
+          "head": "هل تُحتسب المشروبات الغازية من شرب الماء؟",
+          "body": [
+            "جزئيًا. السائل الموجود فيها يُحتسب، لكن ليس كله. في حساب Suu تدخل الكولا <strong>بمعامل ترطيب 0.6</strong>، ويرفع سكرها احتياجك اليومي من الماء (100 مل إضافية لكل 10 غرامات سكر). عند وضع الخيارات الثلاثة جنبًا إلى جنب يتّضح الفرق:"
+          ],
+          "list": [
+            "<strong>كولا، 330 مل:</strong> ~35 غرام سكر · ~200 مل تُحتسب ماءً · الهدف اليومي +350 مل",
+            "<strong>كولا زيرو، 330 مل:</strong> 0 غرام سكر · ~280 مل تُحتسب ماءً · الهدف لا يتغيّر",
+            "<strong>مياه غازية، 330 مل:</strong> 0 غرام سكر · 330 مل تُحتسب ماءً · الهدف لا يتغيّر"
+          ],
+          "callout": "هذه المعاملات مأخوذة من قائمة المشروبات في Suu. ليست ادعاءً علميًا بأن «الكولا تسبب الجفاف»، بل حساب يُبقي أثر المشروب المحلّى في نهاية اليوم واقعيًا."
+        }
+      ],
+      "in_app": {
+        "head": "أين تتابع ذلك في Suu",
+        "lead": "لكل أسبوع من الخطة مكان في التطبيق. أسماء القوائم كما تظهر فيه:",
+        "steps": [
+          {
+            "feature": "سجّل المشروب وشاهد أثره الحقيقي",
+            "where_ios": "الشاشة الرئيسية ← الإضافة السريعة ← <strong>مشروب سريع</strong> ← كولا",
+            "where_android": "الشاشة الرئيسية ← <strong>أضف مشروباً</strong> ← كولا",
+            "solves": "تُسجَّل العلبة مع سكرها وأثرها على هدف الماء. هذه هي خطوة «قِس» في الأسبوع الأول."
+          },
+          {
+            "feature": "قارن الاستبدال",
+            "where": "في القائمة نفسها: <strong>كولا زيرو</strong> و<strong>مياه غازية</strong>",
+            "solves": "ترى أثر استبدالات الأسبوعين الثاني والثالث في مكان واحد: ينخفض السكر، وتزيد الكمية المحتسبة ماءً، ولا يرتفع الهدف."
+          },
+          {
+            "feature": "السلسلة وتجميد السلسلة",
+            "where": "مؤشر <strong>سلسلة</strong> في الشاشة الرئيسية",
+            "solves": "كل يوم تبلغ فيه نصف هدف الماء على الأقل تطول سلسلتك. كل كوب ماء يحلّ محلّ علبة يغذّيها، وإذا فاتك يوم يحميها <strong>تجميد السلسلة</strong>."
+          },
+          {
+            "feature": "الإشعارات الذكية",
+            "where_ios": "الإعدادات ← إعدادات الإشعارات ← <strong>الإشعارات الذكية</strong>",
+            "where_android": "الإعدادات ← <strong>إشعارات ذكية</strong>",
+            "solves": "احصل على تذكير بالماء قبل الساعات التي تشتهي فيها المشروب عادةً، فيتولّى التطبيق خطوة «كل يوم»."
+          }
+        ],
+        "button": "حمّل Suu مجانًا"
+      },
+      "verdict": {
+        "head": "باختصار",
+        "body": [
+          "لا تحاول ترك المشروبات الغازية في يوم واحد. خفّفها خلال أربعة أسابيع باستبدال علبة واحدة كل أسبوع. اعتبر صداع الكافيين أثرًا متوقّعًا ومؤقتًا، واستخدم النسخ الخالية من السكر جسرًا، وقِس تقدّمك.",
+          "رؤية الرقم تسهّل القرار: علبة الكولا تضيف نحو 200 مل إلى ماء يومك بينما ترفع الهدف نحو 350 مل. مشاهدة هذا الفرق كل يوم تغيّر بهدوء فكرة «علبة واحدة لا تضر»."
+        ]
+      },
+      "cta": {
+        "head": "شاهد كل علبة بالأرقام",
+        "sub": "الماء والسعرات والتمارين في تطبيق واحد · مجاني على iOS وAndroid",
+        "button": "حمّل Suu مجانًا"
+      },
+      "faq": [
+        {
+          "q": "هل الأفضل ترك المشروبات الغازية فجأة أم تدريجيًا؟",
+          "a": "لمعظم الناس يكون التخفيف التدريجي أكثر استدامة، لأن أعراض انسحاب الكافيين (الصداع والتعب) ولحظات العادة لا تتجمّع في يوم واحد. إذا كنت تشرب أكثر من علبة يوميًا، فتقليل علبة واحدة كل أسبوع وتيرة مناسبة."
+        },
+        {
+          "q": "لماذا يحدث الصداع عند ترك المشروبات الغازية وكم يستمر؟",
+          "a": "بسبب انسحاب الكافيين. تبدأ الأعراض عادةً بعد 12–24 ساعة من آخر جرعة، وتبلغ ذروتها في اليوم الأول أو الثاني، وتزول خلال 2–9 أيام. تقليل الكافيين تدريجيًا يخفّفها؛ راجع طبيبًا إذا استمر الصداع أكثر من أسبوع أو كان شديدًا."
+        },
+        {
+          "q": "هل تُحتسب الكولا زيرو من شرب الماء؟",
+          "a": "جزئيًا. يُحتسب معظم سائلها — يستخدم Suu معامل ترطيب 0.85 للكولا الخالية من السكر — لكنها تحتوي على الكافيين والحمض. لا تحلّ محل الماء العادي أو الفوّار؛ الأفضل استخدامها مشروبًا انتقاليًا أثناء ترك الكولا العادية."
+        },
+        {
+          "q": "ماذا أشرب بدل المشروبات الغازية؟",
+          "a": "ماء فوّار مثلّج مع الليمون أو النعناع، وشاي بارد غير محلّى، واللبن مع الوجبات، والماء العادي. إذا كان ما تفتقده هو الفقاعات والبرودة، فالماء الفوّار أسهل بديل."
+        },
+        {
+          "q": "كم غرامًا من السكر في علبة الكولا؟",
+          "a": "في علبة قياسية سعتها 330 مل نحو 35 غرامًا من السكر، أي قرابة 9 مكعبات. وهذا وحده يتجاوز الحد اليومي المثالي الذي توصي به منظمة الصحة العالمية وهو نحو 25 غرامًا."
+        },
+        {
+          "q": "كيف يحسب Suu المشروبات الغازية؟",
+          "a": "تُحتسب الكولا بمعامل ترطيب 0.6، وكل 10 غرامات سكر ترفع هدف الماء اليومي 100 مل. علبة 330 مل تُحتسب نحو 200 مل ماءً لكنها ترفع الهدف نحو 350 مل."
+        }
+      ],
+      "references": [
+        {
+          "label": "منظمة الصحة العالمية — Guideline: Sugars intake for adults and children (2015)",
+          "href": "https://www.who.int/publications/i/item/9789241549028"
+        },
+        {
+          "label": "وزارة الصحة السعودية — منصة التوعية: نمط الحياة الصحي",
+          "href": "https://www.moh.gov.sa/awarenessplateform/HealthyLifestyle/Pages/default.aspx"
+        },
+        {
+          "label": "Malik VS وآخرون — Sugar-sweetened beverages and risk of metabolic syndrome and type 2 diabetes: a meta-analysis. Diabetes Care, 2010",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/20693348/"
+        },
+        {
+          "label": "Juliano LM, Griffiths RR — A critical review of caffeine withdrawal. Psychopharmacology, 2004",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/15448977/"
+        },
+        {
+          "label": "Lally P وآخرون — How are habits formed: modelling habit formation in the real world. European Journal of Social Psychology, 2010",
+          "href": "https://doi.org/10.1002/ejsp.674"
+        },
+        {
+          "label": "منظمة الصحة العالمية — Use of non-sugar sweeteners: WHO guideline (2023)",
+          "href": "https://www.who.int/publications/i/item/9789240073616"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/ar/alkafayin-walsukar.html",
+          "title": "تتبّع الكافيين والسكر",
+          "desc": "الحدود اليومية وكيف تراقب مشروباتك فعلًا."
+        },
+        {
+          "href": "/blog/ar/taqlil-alqahwa.html",
+          "title": "كيف تقلّل القهوة",
+          "desc": "طرق لتخفيف أعراض انسحاب الكافيين."
+        },
+        {
+          "href": "/blog/ar/tahakum-mashroob-attaqa.html",
+          "title": "التحكّم في مشروبات الطاقة",
+          "desc": "مع خطة تخفيف لأربعة أسابيع."
+        },
+        {
+          "href": "/blog/ar/al-ajz-al-harari.html",
+          "title": "العجز الحراري",
+          "desc": "سعرات المشروبات جزء من الحساب."
+        }
+      ]
+    },
+    "ru": {
+      "slug": "kak-brosit-gazirovku",
+      "read_minutes": 7,
+      "badge": "🥤 Руководство · Привычки в напитках",
+      "h1": "Как бросить пить газировку: план постепенного отказа на 4 недели и отслеживание в Suu",
+      "about": [
+        {
+          "name": "Сладкие газированные напитки"
+        },
+        {
+          "name": "Отмена кофеина"
+        },
+        {
+          "name": "Смена привычек"
+        }
+      ],
+      "meta": {
+        "title": "Как бросить пить газировку: план на 4 недели | Suu",
+        "description": "Не бросайте резко — сокращайте газировку 4 недели: триггеры, кофеиновая головная боль, переход на минералку и реальный эффект одной банки в цифрах.",
+        "keywords": "как бросить пить газировку, как отказаться от колы, зависимость от газировки, чем заменить газировку, сколько сахара в банке колы, кола зеро считается водой, головная боль после отказа от колы",
+        "og_title": "Как бросить пить газировку: план на 4 недели",
+        "og_description": "В одной банке около 35 г сахара и неожиданный эффект на норму воды. Как сократить газировку за четыре недели без резкого запрета."
+      },
+      "answer": "Надёжнее всего бросить газировку не резко, а постепенно за 3–4 недели: каждую неделю заменяйте одну ежедневную банку газированной минеральной водой или напитком без сахара, заранее продумайте моменты, когда вы обычно её пьёте, и будьте готовы к нескольким дням кофеиновой головной боли. Suu показывает сахар каждой банки и её влияние на норму воды в цифрах.",
+      "health_note": {
+        "head": "Эта статья не является медицинской консультацией.",
+        "body": [
+          "Информация носит общий характер и не заменяет диагностику или лечение. Если у вас диабет, болезни сердца или почек, вы беременны или регулярно принимаете лекарства, посоветуйтесь с врачом или диетологом, прежде чем менять питьевой режим.",
+          "Не откладывайте визит к врачу, если:"
+        ],
+        "red_flags": [
+          "сильная жажда, частое мочеиспускание и необъяснимая потеря веса появляются одновременно (нужно проверить сахар крови)",
+          "головная боль после сокращения кофеина длится дольше недели или очень сильная"
+        ]
+      },
+      "disclosure": "Это руководство написала команда из двух человек, которая разрабатывает Suu. Мы рекомендуем своё приложение, но цифры взяты с этикетки банки и из материалов Всемирной организации здравоохранения — тот же план можно выполнять и без Suu.",
+      "intro": [
+        "Большинство тех, кто пытается бросить газировку, проходят один и тот же круг: в понедельник отказываются полностью, в среду днём срываются с головной болью и тягой к сладкому. Дело не в силе воли. Газировка даёт сразу три вещи: <strong>сахар</strong>, <strong>кофеин</strong> и <strong>привычный момент</strong> — к обеду, в дневной спад, на заправке в долгой дороге. Убрать всё это за один день трудно.",
+        "Поэтому план ниже не запрещает газировку, а сокращает её за четыре недели и делает каждый шаг измеримым. Сначала посмотрим, что на самом деле в одной банке."
+      ],
+      "analysis": [
+        {
+          "head": "Что на самом деле в одной банке?",
+          "body": [
+            "В стандартной банке колы 0,33 л примерно <strong>35 г сахара</strong> (около 9 кусочков) и около 140 ккал. Всемирная организация здравоохранения рекомендует, чтобы свободные сахара давали меньше 10% суточной энергии, а в идеале меньше 5%, то есть около 25 г.<sup><a href=\"#ref1\">1</a></sup> Одна банка в одиночку превышает этот идеальный предел. В справке ВОЗ о здоровом питании отдельно сказано, что для снижения сахара стоит ограничить сладкие напитки — газированные и негазированные.<sup><a href=\"#ref2\">2</a></sup>",
+            "Тот, кто выпивает литр газировки в день, получает только из напитка около 106 г сахара — в четыре раза больше идеального предела."
+          ],
+          "callout": "Регулярные сладкие напитки связаны с более высоким риском диабета 2 типа: в метаанализе восьми когортных исследований у тех, кто пил 1–2 порции в день, риск был примерно на 26% выше, чем у пьющих меньше одной порции в месяц.<sup><a href=\"#ref3\">3</a></sup>"
+        },
+        {
+          "head": "Почему резкий отказ не работает: кофеин и привычка",
+          "body": [
+            "В банке колы около 30–35 мг кофеина; три банки — почти чашка фильтр-кофе. При резкой отмене кофеина головная боль, усталость и рассеянность обычно начинаются через 12–24 часа после последней дозы, сильнее всего ощущаются на первый-второй день и могут длиться от 2 до 9 дней.<sup><a href=\"#ref4\">4</a></sup> Именно поэтому отказ в понедельник часто превращается в срыв в среду.",
+            "Привычка тоже меняется медленно: в одном исследовании новому поведению в среднем требовалось 66 дней, чтобы стать автоматическим, — от 18 до 254 дней у разных людей.<sup><a href=\"#ref5\">5</a></sup> Четыре недели — это начало, а не финиш, и один срыв не отменяет план."
+          ]
+        },
+        {
+          "head": "План сокращения на 4 недели",
+          "body": [
+            "Меняйте одну вещь в неделю. Если вы пьёте меньше банки в день, план можно сжать до двух недель."
+          ],
+          "list": [
+            "<strong>Неделя 1 — измерьте:</strong> ничего не меняйте, просто записывайте каждую банку. Большинство людей недооценивают, сколько пьют; реальная цифра станет точкой отсчёта.",
+            "<strong>Неделя 2 — замените одну банку:</strong> самую «автоматическую» банку дня (обычно к обеду) замените ледяной газированной минеральной водой с лимоном. Когда остаются пузырьки и холод, замена ощущается меньше.",
+            "<strong>Неделя 3 — смягчите кофеин:</strong> дневную банку замените версией без сахара или холодным чаем без сахара. Кофеин не падает до нуля за один день, поэтому головная боль менее вероятна.",
+            "<strong>Неделя 4 — не держите дома:</strong> уберите газировку из холодильника. Выпить её вне дома можно, но пусть это будет решение, а не привычка по умолчанию.",
+            "<strong>Каждый день:</strong> выпивайте стакан воды до того времени, когда обычно тянет на газировку, чтобы при жажде первой под рукой была вода."
+          ]
+        },
+        {
+          "head": "Кола без сахара — хорошая замена?",
+          "body": [
+            "Как переходный вариант — да: она убирает сахар и калории, сохраняя вкус и пузырьки. Но в 2023 году ВОЗ не рекомендовала использовать некалорийные подсластители для контроля веса,<sup><a href=\"#ref6\">6</a></sup> а кола без сахара по-прежнему содержит кофеин и кислоту. Долгосрочная цель — уменьшить саму привычку к сладким напиткам; используйте «зеро» как мост, а не конечную точку."
+          ]
+        },
+        {
+          "head": "Считается ли газировка в норму воды?",
+          "body": [
+            "Частично. Жидкость в газировке засчитывается, но не вся. В расчёте Suu кола идёт с <strong>коэффициентом гидратации 0,6</strong>, а её сахар повышает суточную потребность в воде (+100 мл на каждые 10 г сахара). Если сравнить три варианта, разница очевидна:"
+          ],
+          "list": [
+            "<strong>Кола, 0,33 л:</strong> ~35 г сахара · ~200 мл засчитывается как вода · суточная норма +350 мл",
+            "<strong>Кола Зеро, 0,33 л:</strong> 0 г сахара · ~280 мл засчитывается как вода · норма не меняется",
+            "<strong>Газированная минеральная вода, 0,33 л:</strong> 0 г сахара · 330 мл засчитывается как вода · норма не меняется"
+          ],
+          "callout": "Эти коэффициенты взяты из каталога напитков Suu. Это не научное утверждение, что «кола обезвоживает», а расчёт, который делает влияние сладкого напитка на итог дня реалистичным."
+        }
+      ],
+      "in_app": {
+        "head": "Где отслеживать это в Suu",
+        "lead": "У каждой недели плана есть место в приложении. Названия пунктов — как в интерфейсе:",
+        "steps": [
+          {
+            "feature": "Запишите газировку и увидьте её реальный эффект",
+            "where_ios": "Главный экран → быстрое добавление → <strong>Быстрый напиток</strong> → Кола",
+            "where_android": "Главный экран → <strong>Добавить напиток</strong> → Кола",
+            "solves": "Банка записывается вместе с сахаром и влиянием на норму воды. Это шаг «измерьте» из первой недели."
+          },
+          {
+            "feature": "Сравните замену",
+            "where": "В том же списке: <strong>Кола Зеро</strong> и <strong>Минеральная вода</strong>",
+            "solves": "Эффект замен второй и третьей недели виден в одном месте: сахара меньше, засчитанной воды больше, норма не растёт."
+          },
+          {
+            "feature": "Серия и заморозка серии",
+            "where": "Индикатор <strong>Серия</strong> на главном экране",
+            "solves": "Каждый день, когда вы выпиваете хотя бы половину нормы воды, серия растёт. Каждый стакан воды вместо банки её поддерживает, а если день пропущен, её защитит <strong>Заморозка серии</strong>."
+          },
+          {
+            "feature": "Умные уведомления",
+            "where_ios": "Настройки → Настройки уведомлений → <strong>Умные уведомления</strong>",
+            "where_android": "Настройки → <strong>Умные уведомления</strong>",
+            "solves": "Получайте напоминание о воде перед часами, когда обычно тянет на газировку, — шаг «каждый день» приложение возьмёт на себя."
+          }
+        ],
+        "button": "Скачать Suu бесплатно"
+      },
+      "verdict": {
+        "head": "Коротко",
+        "body": [
+          "Не пытайтесь бросить газировку за один день. Сокращайте её четыре недели, заменяя по одной банке в неделю. Считайте кофеиновую головную боль ожидаемым и временным эффектом, используйте напитки без сахара как мост и измеряйте прогресс.",
+          "Цифра облегчает решение: банка колы добавляет к воде около 200 мл, но поднимает суточную норму примерно на 350 мл. Видеть эту разницу каждый день — и мысль «от одной банки ничего не будет» тихо меняется."
+        ]
+      },
+      "cta": {
+        "head": "Видеть каждую банку в цифрах",
+        "sub": "Вода, калории и тренировки в одном приложении · бесплатно на iOS и Android",
+        "button": "Скачать Suu бесплатно"
+      },
+      "faq": [
+        {
+          "q": "Лучше бросить газировку резко или постепенно?",
+          "a": "Большинству людей постепенное сокращение даётся легче: отмена кофеина (головная боль, усталость) и привычные триггеры не наваливаются в один день. Если вы пьёте больше банки в день, минус одна банка в неделю — хороший темп."
+        },
+        {
+          "q": "Почему болит голова, когда бросаешь газировку, и сколько это длится?",
+          "a": "Это отмена кофеина. Симптомы обычно начинаются через 12–24 часа после последнего кофеина, сильнее всего ощущаются на первый-второй день и проходят за 2–9 дней. Постепенное сокращение смягчает их; если головная боль длится дольше недели или очень сильная, обратитесь к врачу."
+        },
+        {
+          "q": "Считается ли кола зеро водой?",
+          "a": "Частично. Большая часть её жидкости засчитывается — Suu использует для колы без сахара коэффициент гидратации 0,85, — но в ней есть кофеин и кислота. Она не заменяет обычную или минеральную воду; лучше использовать её как переходный напиток, пока вы бросаете обычную колу."
+        },
+        {
+          "q": "Чем заменить газировку?",
+          "a": "Ледяной газированной минеральной водой с лимоном или мятой, холодным чаем без сахара, кефиром к еде и обычной водой. Если больше всего не хватает пузырьков и холода, проще всего перейти на газированную воду."
+        },
+        {
+          "q": "Сколько сахара в банке колы?",
+          "a": "В стандартной банке 0,33 л около 35 г сахара — примерно 9 кусочков. Это уже больше идеального суточного предела ВОЗ, около 25 г."
+        },
+        {
+          "q": "Как Suu считает газировку?",
+          "a": "Кола засчитывается с коэффициентом гидратации 0,6, а каждые 10 г сахара повышают суточную норму воды на 100 мл. Банка 0,33 л засчитывается примерно как 200 мл воды, но поднимает норму примерно на 350 мл."
+        }
+      ],
+      "references": [
+        {
+          "label": "Всемирная организация здравоохранения — Guideline: Sugars intake for adults and children (2015)",
+          "href": "https://www.who.int/publications/i/item/9789241549028"
+        },
+        {
+          "label": "ВОЗ — Здоровое питание (информационный бюллетень)",
+          "href": "https://www.who.int/ru/news-room/fact-sheets/detail/healthy-diet"
+        },
+        {
+          "label": "Malik VS и соавт. — Sugar-sweetened beverages and risk of metabolic syndrome and type 2 diabetes: a meta-analysis. Diabetes Care, 2010",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/20693348/"
+        },
+        {
+          "label": "Juliano LM, Griffiths RR — A critical review of caffeine withdrawal. Psychopharmacology, 2004",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/15448977/"
+        },
+        {
+          "label": "Lally P и соавт. — How are habits formed: modelling habit formation in the real world. European Journal of Social Psychology, 2010",
+          "href": "https://doi.org/10.1002/ejsp.674"
+        },
+        {
+          "label": "Всемирная организация здравоохранения — Use of non-sugar sweeteners: WHO guideline (2023)",
+          "href": "https://www.who.int/publications/i/item/9789240073616"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/ru/kofein-i-sahar.html",
+          "title": "Кофеин и сахар: как отслеживать",
+          "desc": "Суточные пределы и контроль напитков."
+        },
+        {
+          "href": "/blog/ru/kak-sokratit-kofe.html",
+          "title": "Как сократить кофе",
+          "desc": "Способы смягчить отмену кофеина."
+        },
+        {
+          "href": "/blog/ru/kontrol-energetikov.html",
+          "title": "Как контролировать энергетики",
+          "desc": "С планом сокращения на 4 недели."
+        },
+        {
+          "href": "/blog/ru/deficit-kalorij.html",
+          "title": "Дефицит калорий",
+          "desc": "Калории из напитков — часть расчёта."
+        }
+      ]
+    },
+    "de": {
+      "slug": "cola-abgewoehnen",
+      "read_minutes": 7,
+      "badge": "🥤 Ratgeber · Trinkgewohnheiten",
+      "h1": "Cola abgewöhnen: Ein 4-Wochen-Plan zum Ausschleichen – und wie du ihn in Suu verfolgst",
+      "about": [
+        {
+          "name": "Zuckergesüßte Getränke"
+        },
+        {
+          "name": "Koffeinentzug"
+        },
+        {
+          "name": "Gewohnheitsänderung"
+        }
+      ],
+      "meta": {
+        "title": "Cola abgewöhnen: 4-Wochen-Plan zum Ausschleichen | Suu",
+        "description": "Cola in 4 Wochen reduzieren statt von heute auf morgen: Auslöser, Koffein-Kopfschmerz, Umstieg auf Sprudel – und was eine Dose wirklich bewirkt.",
+        "keywords": "cola abgewöhnen, wie höre ich auf cola zu trinken, softdrinks abgewöhnen, cola sucht, was statt cola trinken, wie viel zucker in einer dose cola, cola zero trinkmenge, koffeinentzug kopfschmerzen cola",
+        "og_title": "Cola abgewöhnen: Ein 4-Wochen-Plan",
+        "og_description": "Eine Dose hat rund 35 g Zucker und einen überraschenden Effekt auf dein Trinkziel. So reduzierst du Cola in vier Wochen – ohne Verbot über Nacht."
+      },
+      "answer": "Am zuverlässigsten gewöhnst du dir Cola ab, wenn du sie über 3–4 Wochen ausschleichst statt schlagartig aufzuhören: Ersetze jede Woche eine tägliche Dose durch Sprudelwasser oder ein zuckerfreies Getränk, plane die Momente, in denen du sonst zur Dose greifst, und rechne mit ein paar Tagen Koffein-Kopfschmerz. Suu zeigt den Zucker jeder Dose und ihren Effekt auf dein Trinkziel in Zahlen.",
+      "health_note": {
+        "head": "Dieser Artikel ist keine medizinische Beratung.",
+        "body": [
+          "Er dient der allgemeinen Information und ersetzt keine Diagnose oder Behandlung. Wenn du Diabetes, eine Herz- oder Nierenerkrankung hast, schwanger bist oder regelmäßig Medikamente nimmst, sprich mit deiner Ärztin, deinem Arzt oder einer Ernährungsfachkraft, bevor du deine Trinkgewohnheiten änderst.",
+          "Lass dich zeitnah ärztlich untersuchen, wenn:"
+        ],
+        "red_flags": [
+          "starker Durst, häufiges Wasserlassen und ungewollter Gewichtsverlust gleichzeitig auftreten (der Blutzucker sollte geprüft werden)",
+          "Kopfschmerzen nach dem Koffein-Reduzieren länger als eine Woche anhalten oder sehr stark sind"
+        ]
+      },
+      "disclosure": "Diesen Ratgeber haben wir als das zweiköpfige Team geschrieben, das Suu entwickelt. Wir empfehlen unsere App, aber die Zahlen stammen vom Dosenetikett, von der Weltgesundheitsorganisation und der Deutschen Gesellschaft für Ernährung – denselben Plan kannst du auch ohne Suu umsetzen.",
+      "intro": [
+        "Wer sich Cola abgewöhnen will, landet oft im selben Kreislauf: Montag komplett aufhören, Mittwochnachmittag mit Kopfschmerzen und Lust auf Süßes rückfällig werden. Das ist keine Frage der Willenskraft. Cola liefert drei Dinge auf einmal – <strong>Zucker</strong>, <strong>Koffein</strong> und einen <strong>Gewohnheitsmoment</strong>: zum Mittagessen, im Nachmittagstief, an der Tankstelle auf einer langen Fahrt. Alle drei an einem Tag zu streichen, ist schwer.",
+        "Deshalb verbietet der folgende Plan Cola nicht, sondern reduziert sie über vier Wochen und macht jeden Schritt messbar. Zuerst ein Blick darauf, was in einer Dose wirklich steckt."
+      ],
+      "analysis": [
+        {
+          "head": "Was steckt wirklich in einer Dose Cola?",
+          "body": [
+            "Eine normale 0,33-Liter-Dose Cola enthält rund <strong>35 g Zucker</strong> (etwa 12 Würfelzucker) und rund 140 kcal. Die Weltgesundheitsorganisation empfiehlt, freie Zucker unter 10 % der täglichen Energie zu halten, idealerweise unter 5 % – das sind etwa 25 g.<sup><a href=\"#ref1\">1</a></sup> Eine Dose liegt damit schon allein über dieser Idealgrenze. Die Deutsche Gesellschaft für Ernährung (DGE) formuliert es klar: Trink rund 1,5 Liter am Tag, am besten Wasser oder ungesüßten Tee – zuckergesüßte Getränke sind nicht empfehlenswert.<sup><a href=\"#ref2\">2</a></sup>",
+            "Wer täglich einen Liter Cola trinkt, nimmt allein darüber rund 106 g Zucker auf – das Vierfache der Idealgrenze."
+          ],
+          "callout": "Regelmäßig zuckergesüßte Getränke sind mit einem höheren Risiko für Typ-2-Diabetes verbunden: In einer Metaanalyse von acht Kohortenstudien lag das Risiko bei 1–2 Portionen pro Tag rund 26 % höher als bei weniger als einer Portion pro Monat.<sup><a href=\"#ref3\">3</a></sup>"
+        },
+        {
+          "head": "Warum der kalte Entzug scheitert: Koffein und Gewohnheit",
+          "body": [
+            "Eine Dose Cola enthält etwa 30–35 mg Koffein; drei Dosen kommen einer Tasse Filterkaffee nahe. Wer Koffein abrupt weglässt, bekommt Kopfschmerzen, Müdigkeit und Konzentrationsprobleme meist 12–24 Stunden nach der letzten Dosis; am stärksten sind sie am ersten oder zweiten Tag, und sie können 2–9 Tage dauern.<sup><a href=\"#ref4\">4</a></sup> Genau deshalb wird aus dem Montags-Stopp oft ein Mittwochs-Rückfall.",
+            "Auch Gewohnheiten ändern sich langsam: In einer Studie brauchte ein neues Verhalten im Median 66 Tage, bis es automatisch lief – je nach Person 18 bis 254 Tage.<sup><a href=\"#ref5\">5</a></sup> Vier Wochen sind ein Anfang, kein Ziel, und ein Ausrutscher macht den Plan nicht kaputt."
+          ]
+        },
+        {
+          "head": "Der 4-Wochen-Plan zum Ausschleichen",
+          "body": [
+            "Ändere pro Woche nur eine Sache. Trinkst du weniger als eine Dose am Tag, kannst du den Plan auf zwei Wochen verkürzen."
+          ],
+          "list": [
+            "<strong>Woche 1 – messen:</strong> Nichts ändern, nur jede Dose eintragen. Die meisten unterschätzen, wie viel sie trinken; die echte Zahl wird deine Ausgangsbasis.",
+            "<strong>Woche 2 – eine Dose ersetzen:</strong> Tausche die automatischste Dose des Tages (meist die zum Essen) gegen eiskaltes Sprudelwasser mit Zitrone. Wenn Kohlensäure und Kälte bleiben, fällt der Tausch weniger auf.",
+            "<strong>Woche 3 – Koffein abfedern:</strong> Mach aus der Nachmittagsdose die zuckerfreie Variante oder ungesüßten Eistee. Weil das Koffein nicht über Nacht auf null fällt, sind Kopfschmerzen unwahrscheinlicher.",
+            "<strong>Woche 4 – nicht mehr vorrätig haben:</strong> Nimm Cola aus dem Kühlschrank. Unterwegs mal eine zu trinken ist okay – aber als Entscheidung, nicht als Standard.",
+            "<strong>Jeden Tag:</strong> Trink ein Glas Wasser vor der Uhrzeit, zu der du sonst Lust auf Cola bekommst, damit bei Durst Wasser das Erste ist, was griffbereit steht."
+          ]
+        },
+        {
+          "head": "Ist Cola Zero ein guter Ersatz?",
+          "body": [
+            "Als Brücke ja: Sie streicht Zucker und Kalorien und behält Geschmack und Kohlensäure. Die Weltgesundheitsorganisation hat 2023 aber davon abgeraten, Süßstoffe zur Gewichtskontrolle einzusetzen,<sup><a href=\"#ref6\">6</a></sup> und Cola Zero enthält weiterhin Koffein und Säure. Langfristig geht es darum, die Gewohnheit süßer Getränke selbst kleiner zu machen – nutze Zero als Brücke, nicht als Ziel."
+          ]
+        },
+        {
+          "head": "Zählt Cola zur Trinkmenge?",
+          "body": [
+            "Teilweise. Die Flüssigkeit in Cola zählt, aber nicht vollständig. In der Berechnung von Suu geht Cola mit einem <strong>Hydratationsfaktor von 0,6</strong> ein, und ihr Zucker erhöht deinen täglichen Wasserbedarf (+100 ml pro 10 g Zucker). Nebeneinander wird der Unterschied deutlich:"
+          ],
+          "list": [
+            "<strong>Cola, 0,33 l:</strong> ~35 g Zucker · ~200 ml zählen als Wasser · Tagesziel +350 ml",
+            "<strong>Cola Zero, 0,33 l:</strong> 0 g Zucker · ~280 ml zählen als Wasser · Ziel unverändert",
+            "<strong>Sprudelwasser, 0,33 l:</strong> 0 g Zucker · 330 ml zählen als Wasser · Ziel unverändert"
+          ],
+          "callout": "Diese Faktoren stammen aus dem Getränkekatalog von Suu. Sie sind keine wissenschaftliche Behauptung, dass „Cola austrocknet“, sondern eine Rechnung, die den Effekt eines süßen Getränks am Tagesende realistisch hält."
+        }
+      ],
+      "in_app": {
+        "head": "Wo du das in Suu verfolgst",
+        "lead": "Jede Woche des Plans hat ihren Platz in der App. Die Menünamen sind genau so wie in der App:",
+        "steps": [
+          {
+            "feature": "Cola eintragen und den echten Effekt sehen",
+            "where_ios": "Startbildschirm → Schnell hinzufügen → <strong>Schnellgetränk</strong> → Cola",
+            "where_android": "Startbildschirm → <strong>Getränk hinzufügen</strong> → Cola",
+            "solves": "Die Dose wird mit ihrem Zucker und ihrem Effekt auf dein Trinkziel eingetragen. Das ist der Schritt „messen“ aus Woche 1."
+          },
+          {
+            "feature": "Den Tausch vergleichen",
+            "where": "In derselben Liste: <strong>Cola Zero</strong> und <strong>Sprudelwasser</strong>",
+            "solves": "Du siehst an einer Stelle, was der Tausch in Woche 2 und 3 bewirkt: weniger Zucker, mehr angerechnetes Wasser, kein höheres Ziel."
+          },
+          {
+            "feature": "Serie und Serien-Freeze",
+            "where": "Die Anzeige <strong>Serie</strong> auf dem Startbildschirm",
+            "solves": "An jedem Tag, an dem du mindestens die Hälfte deines Trinkziels erreichst, wächst deine Serie. Jedes Glas Wasser statt einer Dose zahlt darauf ein, und wenn du einen Tag verpasst, schützt sie ein <strong>Serien-Freeze</strong>."
+          },
+          {
+            "feature": "Intelligente Benachrichtigungen",
+            "where_ios": "Einstellungen → Benachrichtigungseinstellungen → <strong>Intelligente Benachrichtigungen</strong>",
+            "where_android": "Einstellungen → <strong>Smarte Benachrichtigungen</strong>",
+            "solves": "Lass dich vor den Uhrzeiten, zu denen du sonst Cola willst, ans Wasser erinnern – den Schritt „jeden Tag“ übernimmt die App."
+          }
+        ],
+        "button": "Suu kostenlos laden"
+      },
+      "verdict": {
+        "head": "Kurz gesagt",
+        "body": [
+          "Versuch nicht, Cola an einem Tag aufzugeben. Schleich sie über vier Wochen aus und tausche pro Woche eine Dose. Sieh Koffein-Kopfschmerzen als erwartbare, vorübergehende Nebenwirkung, nutze zuckerfreie Varianten als Brücke und miss deinen Fortschritt.",
+          "Die Zahl macht die Entscheidung leichter: Eine Dose Cola bringt rund 200 ml auf dein Wasserkonto, hebt dein Tagesziel aber um rund 350 ml. Diesen Unterschied jeden Tag zu sehen, verändert leise den Gedanken „eine Dose schadet doch nicht“."
+        ]
+      },
+      "cta": {
+        "head": "Jede Dose in Zahlen sehen",
+        "sub": "Wasser, Kalorien und Training in einer App · kostenlos für iOS und Android",
+        "button": "Suu kostenlos laden"
+      },
+      "faq": [
+        {
+          "q": "Cola lieber abrupt oder schrittweise abgewöhnen?",
+          "a": "Für die meisten ist schrittweises Reduzieren nachhaltiger, weil Koffeinentzug (Kopfschmerzen, Müdigkeit) und Gewohnheitsauslöser nicht alle auf denselben Tag fallen. Wer mehr als eine Dose am Tag trinkt, fährt mit einer Dose weniger pro Woche gut."
+        },
+        {
+          "q": "Warum bekomme ich Kopfschmerzen, wenn ich keine Cola mehr trinke, und wie lange dauern sie?",
+          "a": "Das ist Koffeinentzug. Die Beschwerden beginnen meist 12–24 Stunden nach dem letzten Koffein, sind am ersten oder zweiten Tag am stärksten und klingen innerhalb von 2–9 Tagen ab. Schrittweises Reduzieren mildert sie; halten Kopfschmerzen länger als eine Woche an oder sind sie sehr stark, geh zum Arzt."
+        },
+        {
+          "q": "Zählt Cola Zero zur Trinkmenge?",
+          "a": "Teilweise. Der Großteil der Flüssigkeit zählt – Suu rechnet zuckerfreie Cola mit einem Hydratationsfaktor von 0,85 –, aber sie enthält Koffein und Säure. Sie ersetzt kein Leitungs- oder Sprudelwasser; am besten dient sie als Übergangsgetränk, während du normale Cola weglässt."
+        },
+        {
+          "q": "Was kann ich statt Cola trinken?",
+          "a": "Eiskaltes Sprudelwasser mit Zitrone oder Minze, ungesüßten Eistee, Kräutertee und Leitungswasser. Wenn dir vor allem Kohlensäure und Kälte fehlen, ist Sprudelwasser der einfachste Umstieg."
+        },
+        {
+          "q": "Wie viel Zucker ist in einer Dose Cola?",
+          "a": "Eine 0,33-Liter-Dose enthält rund 35 g Zucker, etwa 12 Würfelzucker. Das liegt allein schon über der idealen Tagesgrenze der Weltgesundheitsorganisation von etwa 25 g."
+        },
+        {
+          "q": "Wie rechnet Suu Cola an?",
+          "a": "Cola zählt mit einem Hydratationsfaktor von 0,6, und je 10 g Zucker erhöhen das tägliche Trinkziel um 100 ml. Eine 0,33-Liter-Dose zählt als rund 200 ml Wasser, hebt das Ziel aber um rund 350 ml."
+        }
+      ],
+      "references": [
+        {
+          "label": "Weltgesundheitsorganisation — Guideline: Sugars intake for adults and children (2015)",
+          "href": "https://www.who.int/publications/i/item/9789241549028"
+        },
+        {
+          "label": "Deutsche Gesellschaft für Ernährung — Gut essen und trinken: die DGE-Empfehlungen",
+          "href": "https://www.dge.de/gesunde-ernaehrung/gut-essen-und-trinken/dge-empfehlungen/"
+        },
+        {
+          "label": "Malik VS et al. — Sugar-sweetened beverages and risk of metabolic syndrome and type 2 diabetes: a meta-analysis. Diabetes Care, 2010",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/20693348/"
+        },
+        {
+          "label": "Juliano LM, Griffiths RR — A critical review of caffeine withdrawal. Psychopharmacology, 2004",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/15448977/"
+        },
+        {
+          "label": "Lally P et al. — How are habits formed: modelling habit formation in the real world. European Journal of Social Psychology, 2010",
+          "href": "https://doi.org/10.1002/ejsp.674"
+        },
+        {
+          "label": "Weltgesundheitsorganisation — Use of non-sugar sweeteners: WHO guideline (2023)",
+          "href": "https://www.who.int/publications/i/item/9789240073616"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/de/kaloriendefizit.html",
+          "title": "Kaloriendefizit: so geht's",
+          "desc": "Kalorien aus Getränken gehören in die Rechnung."
+        },
+        {
+          "href": "/blog/de/beste-wasser-tracking-app.html",
+          "title": "Die beste Wasser-Tracking-App 2026",
+          "desc": "Fünf Trink-Apps im Vergleich."
+        },
+        {
+          "href": "/blog/de/bester-kalorienzaehler-app.html",
+          "title": "Der beste Kalorienzähler 2026",
+          "desc": "MyFitnessPal, Yazio, Lifesum und Suu."
+        },
+        {
+          "href": "/blog/de/wasser-kalorien-sport-eine-app.html",
+          "title": "Wasser, Kalorien und Sport in einer App",
+          "desc": "Was die Verbindung der drei bringt."
+        }
+      ]
+    },
+    "it": {
+      "slug": "smettere-bibite-gassate",
+      "read_minutes": 7,
+      "badge": "🥤 Guida · Abitudini nel bere",
+      "h1": "Come smettere di bere bibite gassate: un piano graduale di 4 settimane (e come seguirlo in Suu)",
+      "about": [
+        {
+          "name": "Bevande zuccherate"
+        },
+        {
+          "name": "Astinenza da caffeina"
+        },
+        {
+          "name": "Cambiare abitudini"
+        }
+      ],
+      "meta": {
+        "title": "Smettere di bere bibite gassate: piano di 4 settimane | Suu",
+        "description": "Riduci le bibite gassate in 4 settimane invece di smettere di colpo: momenti a rischio, mal di testa da caffeina, acqua frizzante e l'effetto di una lattina.",
+        "keywords": "come smettere di bere bibite gassate, smettere coca cola, dipendenza da bibite, cosa bere al posto della coca cola, quanto zucchero in una lattina di cola, cola zero conta come acqua, mal di testa smettere caffeina",
+        "og_title": "Come smettere di bere bibite gassate: piano di 4 settimane",
+        "og_description": "Una lattina ha circa 35 g di zucchero e un effetto inatteso sul tuo obiettivo d'acqua. Come ridurre in quattro settimane senza divieti dall'oggi al domani."
+      },
+      "answer": "Il modo più affidabile per smettere con le bibite gassate è ridurle in 3–4 settimane invece di smettere di colpo: ogni settimana sostituisci una lattina al giorno con acqua frizzante o una bibita senza zucchero, pianifica i momenti in cui di solito la prendi e mettiti in conto qualche giorno di mal di testa da caffeina. Suu ti mostra lo zucchero di ogni lattina e il suo effetto sull'obiettivo d'acqua in numeri.",
+      "health_note": {
+        "head": "Questo articolo non è un consiglio medico.",
+        "body": [
+          "Ha scopo informativo e non sostituisce diagnosi o terapie. Se hai il diabete, malattie cardiache o renali, sei in gravidanza o prendi farmaci regolarmente, parla con il tuo medico o con un dietista prima di cambiare quello che bevi.",
+          "Rivolgiti subito a un medico se:"
+        ],
+        "red_flags": [
+          "sete intensa, bisogno frequente di urinare e perdita di peso inspiegabile compaiono insieme (va controllata la glicemia)",
+          "il mal di testa dopo aver ridotto la caffeina dura più di una settimana o è molto forte"
+        ]
+      },
+      "disclosure": "Abbiamo scritto questa guida come il team di due persone che sviluppa Suu. Consigliamo la nostra app, ma i numeri vengono dall'etichetta della lattina, dall'Organizzazione Mondiale della Sanità e dalle Linee guida del CREA: puoi seguire lo stesso piano anche senza Suu.",
+      "intro": [
+        "Chi prova a smettere con le bibite gassate finisce spesso nello stesso giro: lunedì smette del tutto, mercoledì pomeriggio ci ricasca con mal di testa e voglia di dolce. Non è questione di forza di volontà. Una bibita ti dà tre cose insieme: <strong>zucchero</strong>, <strong>caffeina</strong> e un <strong>momento abituale</strong> — a pranzo, nel calo del pomeriggio, all'autogrill durante un viaggio lungo. Toglierle tutte e tre in un giorno è difficile.",
+        "Per questo il piano qui sotto non vieta le bibite: le riduce in quattro settimane e rende ogni passo misurabile. Prima, guardiamo cosa c'è davvero in una lattina."
+      ],
+      "analysis": [
+        {
+          "head": "Cosa c'è davvero in una lattina?",
+          "body": [
+            "Una lattina standard di cola da 33 cl contiene circa <strong>35 g di zucchero</strong> (circa 7 cucchiaini) e circa 140 kcal. L'Organizzazione Mondiale della Sanità raccomanda di tenere gli zuccheri liberi sotto il 10% dell'energia giornaliera, idealmente sotto il 5%, cioè circa 25 g.<sup><a href=\"#ref1\">1</a></sup> Una sola lattina supera da sola questo limite ideale. Le Linee guida per una sana alimentazione del CREA dedicano all'argomento un capitolo dal titolo eloquente: «Zuccheri, dolci e bevande zuccherate: meno è meglio».<sup><a href=\"#ref2\">2</a></sup>",
+            "Chi beve un litro di bibita al giorno assume solo da lì circa 106 g di zucchero: quattro volte il limite ideale."
+          ],
+          "callout": "Bere spesso bevande zuccherate è associato a un rischio più alto di diabete di tipo 2: in una meta-analisi di otto studi di coorte, chi ne beveva 1–2 porzioni al giorno aveva un rischio circa del 26% più alto rispetto a chi ne beveva meno di una al mese.<sup><a href=\"#ref3\">3</a></sup>"
+        },
+        {
+          "head": "Perché smettere di colpo non funziona: caffeina e abitudine",
+          "body": [
+            "Una lattina di cola contiene circa 30–35 mg di caffeina: tre lattine si avvicinano a un espresso doppio. Quando la caffeina si interrompe di colpo, mal di testa, stanchezza e difficoltà di concentrazione di solito iniziano 12–24 ore dopo l'ultima dose, sono più forti il primo o il secondo giorno e possono durare da 2 a 9 giorni.<sup><a href=\"#ref4\">4</a></sup> È spesso per questo che lo stop del lunedì diventa la ricaduta del mercoledì.",
+            "Anche le abitudini cambiano lentamente: in uno studio un nuovo comportamento ha impiegato in media 66 giorni per diventare automatico, da 18 a 254 giorni a seconda della persona.<sup><a href=\"#ref5\">5</a></sup> Quattro settimane sono un inizio, non un traguardo, e uno sgarro non manda all'aria il piano."
+          ]
+        },
+        {
+          "head": "Il piano di riduzione in 4 settimane",
+          "body": [
+            "Cambia una sola cosa a settimana. Se bevi meno di una lattina al giorno, puoi comprimere il piano in due settimane."
+          ],
+          "list": [
+            "<strong>Settimana 1 — misura:</strong> non cambiare nulla, registra solo ogni lattina. Quasi tutti sottostimano quanto bevono; il numero reale diventa il tuo punto di partenza.",
+            "<strong>Settimana 2 — sostituisci una lattina:</strong> cambia la lattina più automatica della giornata (di solito quella a pranzo) con acqua frizzante ghiacciata e limone. Se restano le bollicine e il freddo, il cambio pesa meno.",
+            "<strong>Settimana 3 — ammorbidisci la caffeina:</strong> trasforma la lattina del pomeriggio nella versione senza zucchero o in un tè freddo non zuccherato. Dato che la caffeina non scende a zero dall'oggi al domani, il mal di testa è meno probabile.",
+            "<strong>Settimana 4 — non tenerle in casa:</strong> togli le bibite dal frigo. Berne una fuori va bene, ma che sia una scelta, non l'abitudine di default.",
+            "<strong>Ogni giorno:</strong> bevi un bicchiere d'acqua prima dell'ora in cui di solito ti viene voglia di una bibita, così quando hai sete la prima cosa a portata di mano è l'acqua."
+          ]
+        },
+        {
+          "head": "La cola zero è una buona alternativa?",
+          "body": [
+            "Come ponte sì: toglie zucchero e calorie mantenendo gusto e bollicine. Ma nel 2023 l'Organizzazione Mondiale della Sanità ha sconsigliato di usare i dolcificanti non zuccherini per controllare il peso,<sup><a href=\"#ref6\">6</a></sup> e la cola zero contiene comunque caffeina e acidi. L'obiettivo a lungo termine è ridurre l'abitudine alle bevande dolci in sé: usa la zero come ponte, non come destinazione."
+          ]
+        },
+        {
+          "head": "Le bibite gassate contano come acqua?",
+          "body": [
+            "In parte. Il liquido della bibita conta, ma non tutto. Nel calcolo di Suu la cola entra con un <strong>fattore di idratazione di 0,6</strong>, e il suo zucchero aumenta il fabbisogno d'acqua giornaliero (+100 ml ogni 10 g di zucchero). Messe a confronto, le tre scelte parlano chiaro:"
+          ],
+          "list": [
+            "<strong>Cola, 33 cl:</strong> ~35 g di zucchero · ~200 ml contati come acqua · obiettivo giornaliero +350 ml",
+            "<strong>Cola Zero, 33 cl:</strong> 0 g di zucchero · ~280 ml contati come acqua · obiettivo invariato",
+            "<strong>Acqua frizzante, 33 cl:</strong> 0 g di zucchero · 330 ml contati come acqua · obiettivo invariato"
+          ],
+          "callout": "Questi fattori vengono dal catalogo delle bevande di Suu. Non sono un'affermazione scientifica che «la cola disidrata», ma un calcolo che mantiene realistico l'effetto di una bevanda zuccherata a fine giornata."
+        }
+      ],
+      "in_app": {
+        "head": "Dove seguirlo in Suu",
+        "lead": "Ogni settimana del piano ha il suo posto nell'app. I nomi dei menu sono quelli che vedi nell'app:",
+        "steps": [
+          {
+            "feature": "Registra la bibita e vedi l'effetto reale",
+            "where_ios": "Schermata principale → aggiunta rapida → <strong>Bevanda rapida</strong> → Cola",
+            "where_android": "Schermata principale → <strong>Aggiungi bevanda</strong> → Cola",
+            "solves": "La lattina viene registrata con il suo zucchero e l'effetto sull'obiettivo d'acqua. È il passo «misura» della settimana 1."
+          },
+          {
+            "feature": "Confronta la sostituzione",
+            "where": "Nella stessa lista: <strong>Cola Zero</strong> e <strong>Acqua frizzante</strong>",
+            "solves": "Vedi in un unico posto cosa cambiano le sostituzioni delle settimane 2 e 3: meno zucchero, più acqua conteggiata, obiettivo che non sale."
+          },
+          {
+            "feature": "Serie e Congelamento serie",
+            "where": "L'indicatore <strong>Serie</strong> nella schermata principale",
+            "solves": "Ogni giorno in cui raggiungi almeno metà del tuo obiettivo d'acqua la serie cresce. Ogni bicchiere d'acqua al posto di una lattina la alimenta, e se salti un giorno la protegge il <strong>Congelamento serie</strong>."
+          },
+          {
+            "feature": "Notifiche intelligenti",
+            "where_ios": "Impostazioni → Impostazioni notifiche → <strong>Notifiche intelligenti</strong>",
+            "where_android": "Impostazioni → <strong>Notifiche intelligenti</strong>",
+            "solves": "Ricevi un promemoria per l'acqua prima delle ore in cui di solito vuoi una bibita: il passo «ogni giorno» lo gestisce l'app."
+          }
+        ],
+        "button": "Scarica Suu gratis"
+      },
+      "verdict": {
+        "head": "In breve",
+        "body": [
+          "Non provare a smettere con le bibite in un giorno. Riducile in quattro settimane, cambiando una lattina a settimana. Considera il mal di testa da caffeina un effetto previsto e passeggero, usa le versioni senza zucchero come ponte e misura i progressi.",
+          "Vedere il numero rende la decisione più facile: una lattina di cola aggiunge circa 200 ml alla tua acqua ma alza l'obiettivo giornaliero di circa 350 ml. Vedere questa differenza ogni giorno cambia in silenzio il pensiero «una lattina non fa niente»."
+        ]
+      },
+      "cta": {
+        "head": "Vedi ogni lattina in numeri",
+        "sub": "Acqua, calorie e allenamento in un'unica app · gratis su iOS e Android",
+        "button": "Scarica Suu gratis"
+      },
+      "faq": [
+        {
+          "q": "Meglio smettere con le bibite gassate di colpo o gradualmente?",
+          "a": "Per la maggior parte delle persone la riduzione graduale è più sostenibile, perché astinenza da caffeina (mal di testa, stanchezza) e momenti abituali non si concentrano nello stesso giorno. Se bevi più di una lattina al giorno, una lattina in meno a settimana è un buon ritmo."
+        },
+        {
+          "q": "Perché viene mal di testa quando smetti con la cola e quanto dura?",
+          "a": "È astinenza da caffeina. I sintomi di solito iniziano 12–24 ore dopo l'ultima caffeina, sono più forti il primo o il secondo giorno e passano in 2–9 giorni. Ridurre gradualmente li attenua; se il mal di testa dura più di una settimana o è molto forte, senti il medico."
+        },
+        {
+          "q": "La cola zero conta come acqua?",
+          "a": "In parte. La maggior parte del liquido conta — Suu usa per la cola senza zucchero un fattore di idratazione di 0,85 — ma contiene caffeina e acidi. Non sostituisce l'acqua naturale o frizzante; è meglio usarla come bevanda di passaggio mentre lasci la cola normale."
+        },
+        {
+          "q": "Cosa bere al posto delle bibite gassate?",
+          "a": "Acqua frizzante ghiacciata con limone o menta, tè freddo non zuccherato, tisane fredde e acqua naturale. Se ti mancano soprattutto le bollicine e il freddo, l'acqua frizzante è il passaggio più facile."
+        },
+        {
+          "q": "Quanto zucchero c'è in una lattina di cola?",
+          "a": "Una lattina da 33 cl contiene circa 35 g di zucchero, circa 7 cucchiaini. Già da sola supera il limite giornaliero ideale dell'Organizzazione Mondiale della Sanità, circa 25 g."
+        },
+        {
+          "q": "Come conta Suu le bibite gassate?",
+          "a": "La cola conta con un fattore di idratazione di 0,6 e ogni 10 g di zucchero alzano l'obiettivo d'acqua giornaliero di 100 ml. Una lattina da 33 cl conta come circa 200 ml d'acqua ma alza l'obiettivo di circa 350 ml."
+        }
+      ],
+      "references": [
+        {
+          "label": "Organizzazione Mondiale della Sanità — Guideline: Sugars intake for adults and children (2015)",
+          "href": "https://www.who.int/publications/i/item/9789241549028"
+        },
+        {
+          "label": "CREA — Linee guida per una sana alimentazione (revisione 2018)",
+          "href": "https://www.crea.gov.it/web/alimenti-e-nutrizione/-/linee-guida-per-una-sana-alimentazione-2018"
+        },
+        {
+          "label": "Malik VS et al. — Sugar-sweetened beverages and risk of metabolic syndrome and type 2 diabetes: a meta-analysis. Diabetes Care, 2010",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/20693348/"
+        },
+        {
+          "label": "Juliano LM, Griffiths RR — A critical review of caffeine withdrawal. Psychopharmacology, 2004",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/15448977/"
+        },
+        {
+          "label": "Lally P et al. — How are habits formed: modelling habit formation in the real world. European Journal of Social Psychology, 2010",
+          "href": "https://doi.org/10.1002/ejsp.674"
+        },
+        {
+          "label": "Organizzazione Mondiale della Sanità — Use of non-sugar sweeteners: WHO guideline (2023)",
+          "href": "https://www.who.int/publications/i/item/9789240073616"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/it/deficit-calorico.html",
+          "title": "Deficit calorico: come funziona",
+          "desc": "Anche le calorie delle bevande contano."
+        },
+        {
+          "href": "/blog/it/migliore-app-per-bere-acqua.html",
+          "title": "La migliore app per bere acqua 2026",
+          "desc": "Cinque app di idratazione a confronto."
+        },
+        {
+          "href": "/blog/it/migliore-app-conta-calorie.html",
+          "title": "La migliore app conta calorie 2026",
+          "desc": "MyFitnessPal, Yazio, Lifesum e Suu."
+        },
+        {
+          "href": "/blog/it/acqua-calorie-allenamento-una-app.html",
+          "title": "Acqua, calorie e allenamento in un'unica app",
+          "desc": "Cosa si guadagna collegando le tre cose."
+        }
+      ]
+    },
+    "uk": {
+      "slug": "yak-kynuty-hazovani-napoi",
+      "read_minutes": 7,
+      "badge": "🥤 Посібник · Звички в напоях",
+      "h1": "Як кинути пити газовані напої: поступовий план на 4 тижні та відстеження в Suu",
+      "about": [
+        {
+          "name": "Солодкі напої"
+        },
+        {
+          "name": "Відміна кофеїну"
+        },
+        {
+          "name": "Зміна звичок"
+        }
+      ],
+      "meta": {
+        "title": "Як кинути пити газовані напої: план на 4 тижні | Suu",
+        "description": "Не кидай різко — скорочуй газовані напої 4 тижні: тригери, кофеїновий головний біль, перехід на газовану воду і реальний ефект однієї банки в цифрах.",
+        "keywords": "як кинути пити газовані напої, як відмовитися від коли, залежність від газованих напоїв, чим замінити газовані напої, скільки цукру в банці коли, чи кола зеро рахується як вода, головний біль після відмови від коли",
+        "og_title": "Як кинути пити газовані напої: план на 4 тижні",
+        "og_description": "В одній банці близько 35 г цукру і несподіваний вплив на норму води. Як скоротити газовані напої за чотири тижні без різкої заборони."
+      },
+      "answer": "Найнадійніше кинути газовані напої не різко, а поступово за 3–4 тижні: щотижня заміняй одну щоденну банку газованою водою або напоєм без цукру, заздалегідь сплануй моменти, коли зазвичай тягнешся до банки, і будь готовий до кількох днів кофеїнового головного болю. Suu показує цукор кожної банки та її вплив на норму води в цифрах.",
+      "health_note": {
+        "head": "Ця стаття не є медичною порадою.",
+        "body": [
+          "Інформація загальна й не замінює діагностику чи лікування. Якщо в тебе діабет, хвороби серця чи нирок, ти вагітна або регулярно приймаєш ліки, порадься з лікарем чи дієтологом, перш ніж змінювати те, що п'єш.",
+          "Не відкладай звернення до лікаря, якщо:"
+        ],
+        "red_flags": [
+          "сильна спрага, часте сечовипускання й незрозуміле схуднення з'являються одночасно (варто перевірити цукор крові)",
+          "головний біль після скорочення кофеїну триває понад тиждень або дуже сильний"
+        ]
+      },
+      "disclosure": "Цей посібник написала команда з двох людей, яка створює Suu. Ми радимо свій застосунок, але цифри взято з етикетки банки, з матеріалів Всесвітньої організації охорони здоров'я та Центру громадського здоров'я України — той самий план можна виконувати й без Suu.",
+      "intro": [
+        "Більшість тих, хто пробує кинути газовані напої, проходить одне й те саме коло: у понеділок відмовляється повністю, у середу по обіді зривається з головним болем і тягою до солодкого. Справа не в силі волі. Банка дає три речі одразу: <strong>цукор</strong>, <strong>кофеїн</strong> і <strong>звичний момент</strong> — до обіду, під час денного спаду, на заправці в довгій дорозі. Прибрати все це за один день важко.",
+        "Тому план нижче не забороняє газовані напої, а скорочує їх за чотири тижні й робить кожен крок вимірюваним. Спершу подивімося, що насправді в одній банці."
+      ],
+      "analysis": [
+        {
+          "head": "Що насправді в одній банці?",
+          "body": [
+            "У стандартній банці коли 0,33 л приблизно <strong>35 г цукру</strong> (близько 9 шматочків) і близько 140 ккал. Всесвітня організація охорони здоров'я радить, щоб вільні цукри давали менше 10% добової енергії, а в ідеалі менше 5%, тобто близько 25 г.<sup><a href=\"#ref1\">1</a></sup> Одна банка сама по собі перевищує цю ідеальну межу. Центр громадського здоров'я України радить майже те саме, що й цей план: пити більше води, додавати до звичайної чи газованої води скибочку лимона або лайма і не тримати солодкі напої вдома.<sup><a href=\"#ref2\">2</a></sup>",
+            "Хто випиває літр газованого напою на день, отримує лише з нього близько 106 г цукру — вчетверо більше за ідеальну межу."
+          ],
+          "callout": "Регулярні солодкі напої пов'язані з вищим ризиком діабету 2 типу: у метааналізі восьми когортних досліджень у тих, хто пив 1–2 порції на день, ризик був приблизно на 26% вищим, ніж у тих, хто пив менше однієї порції на місяць.<sup><a href=\"#ref3\">3</a></sup>"
+        },
+        {
+          "head": "Чому різка відмова не спрацьовує: кофеїн і звичка",
+          "body": [
+            "У банці коли приблизно 30–35 мг кофеїну; три банки — майже чашка фільтр-кави. Коли кофеїн різко зникає, головний біль, втома й розсіяність зазвичай починаються через 12–24 години після останньої дози, найсильніші на перший-другий день і можуть тривати від 2 до 9 днів.<sup><a href=\"#ref4\">4</a></sup> Саме тому відмова в понеділок часто стає зривом у середу.",
+            "Звичка теж змінюється повільно: в одному дослідженні новій поведінці в середньому знадобилося 66 днів, щоб стати автоматичною, — від 18 до 254 днів у різних людей.<sup><a href=\"#ref5\">5</a></sup> Чотири тижні — це початок, а не фініш, і один зрив не скасовує план."
+          ]
+        },
+        {
+          "head": "План скорочення на 4 тижні",
+          "body": [
+            "Змінюй одну річ на тиждень. Якщо п'єш менше банки на день, план можна стиснути до двох тижнів."
+          ],
+          "list": [
+            "<strong>Тиждень 1 — виміряй:</strong> нічого не змінюй, просто записуй кожну банку. Більшість людей недооцінює, скільки п'є; реальна цифра стане точкою відліку.",
+            "<strong>Тиждень 2 — заміни одну банку:</strong> найавтоматичнішу банку дня (зазвичай до обіду) заміни крижаною газованою водою з лимоном. Коли лишаються бульбашки й холод, заміна відчувається менше.",
+            "<strong>Тиждень 3 — пом'як кофеїн:</strong> пообідню банку заміни версією без цукру або холодним чаєм без цукру. Кофеїн не падає до нуля за один день, тож головний біль менш імовірний.",
+            "<strong>Тиждень 4 — не тримай удома:</strong> прибери газовані напої з холодильника. Випити банку поза домом можна, але нехай це буде рішення, а не звичка за замовчуванням.",
+            "<strong>Щодня:</strong> випивай склянку води перед часом, коли зазвичай тягне на газоване, щоб при спразі першою під рукою була вода. Пляшка води з собою теж допомагає."
+          ]
+        },
+        {
+          "head": "Кола без цукру — добра заміна?",
+          "body": [
+            "Як міст — так: вона прибирає цукор і калорії, зберігаючи смак і бульбашки. Але 2023 року ВООЗ не рекомендувала використовувати некалорійні підсолоджувачі для контролю ваги,<sup><a href=\"#ref6\">6</a></sup> а кола без цукру й далі містить кофеїн і кислоту. Довгострокова мета — зменшити саму звичку до солодких напоїв; використовуй «зеро» як міст, а не кінцеву точку."
+          ]
+        },
+        {
+          "head": "Чи рахуються газовані напої як вода?",
+          "body": [
+            "Частково. Рідина в газованому напої зараховується, але не вся. У розрахунку Suu кола йде з <strong>коефіцієнтом гідратації 0,6</strong>, а її цукор підвищує добову потребу у воді (+100 мл на кожні 10 г цукру). Якщо порівняти три варіанти, різниця очевидна:"
+          ],
+          "list": [
+            "<strong>Кола, 0,33 л:</strong> ~35 г цукру · ~200 мл зараховується як вода · добова норма +350 мл",
+            "<strong>Кола без цукру, 0,33 л:</strong> 0 г цукру · ~280 мл зараховується як вода · норма не змінюється",
+            "<strong>Газована вода, 0,33 л:</strong> 0 г цукру · 330 мл зараховується як вода · норма не змінюється"
+          ],
+          "callout": "Ці коефіцієнти взято з каталогу напоїв Suu. Це не наукове твердження, що «кола зневоднює», а розрахунок, який робить вплив солодкого напою на підсумок дня реалістичним."
+        }
+      ],
+      "in_app": {
+        "head": "Де відстежувати це в Suu",
+        "lead": "Кожен тиждень плану має своє місце в застосунку. Назви пунктів наведено англійською, як в інтерфейсі:",
+        "steps": [
+          {
+            "feature": "Запиши газований напій і побач його реальний ефект",
+            "where_ios": "Home → quick add → <strong>Quick Drink</strong> → Cola",
+            "where_android": "Home → <strong>Add Beverage</strong> → Cola",
+            "solves": "Банка записується разом із цукром і впливом на норму води. Це крок «виміряй» з першого тижня."
+          },
+          {
+            "feature": "Порівняй заміну",
+            "where": "У тому ж списку: <strong>Cola Zero</strong> і <strong>Sparkling Water</strong>",
+            "solves": "Ефект замін другого й третього тижня видно в одному місці: цукру менше, зарахованої води більше, норма не зростає."
+          },
+          {
+            "feature": "Серія і заморожування серії",
+            "where": "Індикатор <strong>Streak</strong> на головному екрані",
+            "solves": "Щодня, коли ти випиваєш хоча б половину норми води, серія зростає. Кожна склянка води замість банки її підтримує, а якщо пропустиш день, її захистить <strong>Streak Freeze</strong>."
+          },
+          {
+            "feature": "Розумні сповіщення",
+            "where_ios": "Settings → Notification Settings → <strong>Smart Notifications</strong>",
+            "where_android": "Settings → <strong>Smart Notifications</strong>",
+            "solves": "Отримуй нагадування про воду перед годинами, коли зазвичай тягне на газоване, — крок «щодня» застосунок візьме на себе."
+          }
+        ],
+        "note": "Українська локалізація застосунку в планах; поки що зручно користуватися англійською версією інтерфейсу.",
+        "button": "Завантажити Suu безкоштовно"
+      },
+      "verdict": {
+        "head": "Коротко",
+        "body": [
+          "Не намагайся кинути газовані напої за один день. Скорочуй їх чотири тижні, заміняючи по одній банці на тиждень. Сприймай кофеїновий головний біль як очікуваний і тимчасовий ефект, використовуй напої без цукру як міст і вимірюй прогрес.",
+          "Цифра полегшує рішення: банка коли додає до води близько 200 мл, але піднімає добову норму приблизно на 350 мл. Бачити цю різницю щодня — і думка «від однієї банки нічого не буде» тихо змінюється."
+        ]
+      },
+      "cta": {
+        "head": "Бачити кожну банку в цифрах",
+        "sub": "Вода, калорії й тренування в одному застосунку · безкоштовно на iOS та Android",
+        "button": "Завантажити Suu безкоштовно"
+      },
+      "faq": [
+        {
+          "q": "Краще кинути газовані напої різко чи поступово?",
+          "a": "Більшості людей поступове скорочення дається легше: відміна кофеїну (головний біль, втома) і звичні тригери не звалюються на один день. Якщо п'єш більше банки на день, мінус одна банка на тиждень — добрий темп."
+        },
+        {
+          "q": "Чому болить голова, коли кидаєш колу, і скільки це триває?",
+          "a": "Це відміна кофеїну. Симптоми зазвичай починаються через 12–24 години після останнього кофеїну, найсильніші на перший-другий день і минають за 2–9 днів. Поступове скорочення їх пом'якшує; якщо головний біль триває понад тиждень або дуже сильний, звернися до лікаря."
+        },
+        {
+          "q": "Чи рахується кола без цукру як вода?",
+          "a": "Частково. Більша частина її рідини зараховується — Suu використовує для коли без цукру коефіцієнт гідратації 0,85, — але в ній є кофеїн і кислота. Вона не замінює звичайну чи газовану воду; краще використовувати її як перехідний напій, поки кидаєш звичайну колу."
+        },
+        {
+          "q": "Чим замінити газовані напої?",
+          "a": "Крижаною газованою водою з лимоном, лаймом чи м'ятою, холодним чаєм без цукру, кефіром до їжі та звичайною водою. Якщо найбільше бракує бульбашок і холоду, найпростіше перейти на газовану воду."
+        },
+        {
+          "q": "Скільки цукру в банці коли?",
+          "a": "У стандартній банці 0,33 л близько 35 г цукру — приблизно 9 шматочків. Це вже більше за ідеальну добову межу ВООЗ, близько 25 г."
+        },
+        {
+          "q": "Як Suu рахує газовані напої?",
+          "a": "Кола зараховується з коефіцієнтом гідратації 0,6, а кожні 10 г цукру підвищують добову норму води на 100 мл. Банка 0,33 л зараховується приблизно як 200 мл води, але піднімає норму приблизно на 350 мл."
+        }
+      ],
+      "references": [
+        {
+          "label": "Всесвітня організація охорони здоров'я — Guideline: Sugars intake for adults and children (2015)",
+          "href": "https://www.who.int/publications/i/item/9789241549028"
+        },
+        {
+          "label": "Центр громадського здоров'я України — Як зменшити кількість споживання солодких напоїв?",
+          "href": "https://phc.org.ua/news/yak-zmenshiti-kilkist-spozhivannya-solodkikh-napoiv"
+        },
+        {
+          "label": "Malik VS та ін. — Sugar-sweetened beverages and risk of metabolic syndrome and type 2 diabetes: a meta-analysis. Diabetes Care, 2010",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/20693348/"
+        },
+        {
+          "label": "Juliano LM, Griffiths RR — A critical review of caffeine withdrawal. Psychopharmacology, 2004",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/15448977/"
+        },
+        {
+          "label": "Lally P та ін. — How are habits formed: modelling habit formation in the real world. European Journal of Social Psychology, 2010",
+          "href": "https://doi.org/10.1002/ejsp.674"
+        },
+        {
+          "label": "Всесвітня організація охорони здоров'я — Use of non-sugar sweeteners: WHO guideline (2023)",
+          "href": "https://www.who.int/publications/i/item/9789240073616"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/uk/defitsyt-kaloriy.html",
+          "title": "Дефіцит калорій: як це працює",
+          "desc": "Калорії з напоїв — частина розрахунку."
+        },
+        {
+          "href": "/blog/uk/najkrashchyj-zastosunok-dlya-vody.html",
+          "title": "Найкращий застосунок для води 2026",
+          "desc": "П'ять застосунків для гідратації в порівнянні."
+        },
+        {
+          "href": "/blog/uk/najkrashchyj-lichylnyk-kalorij.html",
+          "title": "Найкращий лічильник калорій 2026",
+          "desc": "MyFitnessPal, Yazio, Lifesum і Suu."
+        },
+        {
+          "href": "/blog/uk/voda-kalorii-trenuvannya-odyn-zastosunok.html",
+          "title": "Вода, калорії й тренування в одному застосунку",
+          "desc": "Що дає зв'язок трьох."
+        }
+      ]
+    }
+  }
+}

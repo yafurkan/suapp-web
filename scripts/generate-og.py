@@ -148,6 +148,30 @@ def _wrap_mixed(text, draw, ar_font, latin_font, max_w):
     return lines
 
 
+def _visual_ar(text: str) -> str:
+    return get_display(arabic_reshaper.reshape(text))
+
+
+def _wrap_ar(text, draw, ar_font, latin_font, max_w):
+    """Arapça başlığı MANTIKSAL sırada satırlara böler, sonra her satırı ayrı
+    ayrı görsel sıraya çevirir. Eskiden bidi dönüşümü önce tüm başlığa
+    uygulanıyor, ardından bölünüyordu — görsel dizgenin başı mantıksal sonu
+    olduğu için satırlar ters sırada çıkıyordu (son kelimeler en üstte)."""
+    words = text.split(" ")
+    lines, cur = [], []
+    for w in words:
+        test = " ".join(cur + [w])
+        if _measure_mixed(draw, _visual_ar(test), ar_font, latin_font) <= max_w:
+            cur.append(w)
+        else:
+            if cur:
+                lines.append(" ".join(cur))
+            cur = [w]
+    if cur:
+        lines.append(" ".join(cur))
+    return [_visual_ar(ln) for ln in lines]
+
+
 def _wrap_latin(text, draw, font, max_w):
     words = text.split()
     lines, cur = [], []
@@ -167,8 +191,6 @@ def _wrap_latin(text, draw, font, max_w):
 
 def make_og_image(title: str, output_path: Path, lang: str = "tr") -> None:
     """Bir blog yazısı için 1200x630 OG görseli üretir."""
-    if lang == "ar":
-        title = get_display(arabic_reshaper.reshape(title))
 
     # Background gradient + overlay highlights
     img = _gradient((74, 144, 217), (41, 182, 246))
@@ -203,12 +225,12 @@ def make_og_image(title: str, output_path: Path, lang: str = "tr") -> None:
         size = 64
         ar_f = ImageFont.truetype(AR_FONT, size)
         latin_f = ImageFont.truetype(LATIN_BOLD, size)
-        lines = _wrap_mixed(title, draw, ar_f, latin_f, W - 160)
+        lines = _wrap_ar(title, draw, ar_f, latin_f, W - 160)
         while len(lines) > 4 and size > 36:
             size -= 4
             ar_f = ImageFont.truetype(AR_FONT, size)
             latin_f = ImageFont.truetype(LATIN_BOLD, size)
-            lines = _wrap_mixed(title, draw, ar_f, latin_f, W - 160)
+            lines = _wrap_ar(title, draw, ar_f, latin_f, W - 160)
         line_h = size + 12
         total_h = len(lines) * line_h
         start_y = (H - total_h) // 2

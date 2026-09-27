@@ -218,7 +218,7 @@
 {%- if step.get('where') %}
                 <p class="small text-subtle">{{ step.where | safe }}</p>
 {%- else %}
-                <p class="small text-subtle">iPhone: {{ step.where_ios | safe }} · Android: {{ step.where_android | safe }}</p>
+                <p class="small text-subtle"><bdi>iPhone</bdi>: {{ step.where_ios | safe }}<br><bdi>Android</bdi>: {{ step.where_android | safe }}</p>
 {%- endif %}
                 <p>{{ step.solves | safe }}</p>
             </li>
