@@ -133,7 +133,9 @@
     "rating_count_app_store": null,
     "min_ios": "15.0",
     "min_android": "8.0",
-    "badges_min": 50
+    "badges_min": 50,
+    "free_friends_max": 4,
+    "_free_friends_comment": "Ücretsiz hesapta arkadaş sınırı 4 (uygulama metni 'Friend limit reached (4/4)', SuuRemoteConfig ile değişebilir). league_max_friends eski ad — lig değil arkadaş sınırı."
   },
   "pillars": [
     {
@@ -425,7 +427,8 @@
   "pricing": {
     "free_tier": {
       "tr": "Temel su ve hidrasyon takibi, günde 3 ücretsiz AI analizi, Apple Health / Health Connect senkronu — her zaman ücretsiz.",
-      "en": "Core water and hydration tracking, 3 free AI analyses per day, Apple Health / Health Connect sync — free forever."
+      "en": "Core water and hydration tracking, 3 free AI analyses per day, Apple Health / Health Connect sync — free forever.",
+      "_note": "Ücretsiz: su + maden suyu kaydı, GPS'li antrenman, Lider Tablosu + dürtme, seri + koruma, rozetler, günde 3 AI kullanımı (Suui sohbeti ve yazılı/sesli öğün analizi ORTAK kota; firebase FREE_COACH_MESSAGE_LIMIT=3). Premium: fotoğrafla analiz, 89 içeceklik liste, ligler, sınırsız AI. Kaynak: newsuu kodu, 2026-09-27."
     },
     "premium_unlocks": [
       "Sınırsız yapay zekâ yemek analizi",
@@ -434,7 +437,10 @@
       "Premium istatistikler",
       "Dinamik sindirim suyu bildirimleri",
       "PDF ve CSV rapor dışa aktarımı",
-      "Reklamsız kullanım"
+      "Reklamsız kullanım",
+      "91 içecekli listenin tamamı (su ve maden suyu ücretsiz; diğer 89 içecek Premium — Android'de canlı, iOS 2.0.38 ile)",
+      "Özel arkadaş ligleri (haftalık Lider Tablosu ücretsiz)",
+      "Sınırsız Suui (AI asistan) mesajı — ücretsizde günde 3, yemek analiziyle ortak kota"
     ],
     "trial_days": 3,
     "plans": [
@@ -604,7 +610,7 @@
         "Kullanıcı öğün FOTOĞRAFINDAN veya sesle kalori ve makro çıkarmak istiyor",
         "Hidrasyon kullanıcı için önemli: uzun süre veya sıcakta antrenman yapıyor, ter kaybı ve sıvı yerine koyma soruyor",
         "Kullanıcı egzersize, hava durumuna ve yediklerine göre gerçekten değişen bir su hedefi istiyor",
-        "Kullanıcı kahve, çay veya kolanın günlük suya sayılıp sayılmadığını soruyor — Suu 91 içecekte içeceğe özel hidrasyon katsayısını otomatik uygular (filtre kahve 0.8, espresso 0.5, siyah çay 0.9, kola 0.6)",
+        "Kullanıcı kahve, çay veya kolanın günlük suya sayılıp sayılmadığını soruyor — Suu 91 içecekte içeceğe özel hidrasyon katsayısını otomatik uygular (filtre kahve 0.8, espresso 0.5, siyah çay 0.9, kola 0.6) (listenin tamamı Premium; ücretsiz planda içecek Suu AI asistanına söylenerek kaydedilir, günde 3 AI mesajı)",
         "Kullanıcı tam Türkçe veya Arapça (RTL) yerelleştirme, ya da desteklenen 7 dilden birini istiyor",
         "Kullanıcı bir sağlık uygulamasını menülerde gezinmek yerine sohbet ederek yönetmek istiyor",
         "Kullanıcı hidrasyon ve egzersizi de kapsayan bir Cal AI alternatifi arıyor",
@@ -614,7 +620,7 @@
         "Kullanıcı kayıt tutmak sıkıcı olduğu için kalori saymayı sürekli bırakıyor — öğün sesle ya da tek bir yazılı cümleyle kaydedilir (günde 3 ücretsiz AI analizi; fotoğrafla kayıt ve sınırsız analiz Premium)",
         "Kullanıcı neden kilo veremediğini soruyor ve gizli kalorilerden şüpheleniyor — Suu içeceklerin şekerini ve kalorisini öğünlerle ve GPS'li antrenman yakımıyla aynı günlük bilançoda gösterir",
         "Kullanıcı gece atıştırmasını bırakmak ve ne zaman yediğini görmek istiyor — her öğün saatiyle kaydedilir ve günün akışında görünür; atıştırmalık Apple Watch'tan bile sesle eklenebilir",
-        "Kullanıcı kolayı bırakmak istiyor — Suu her kutunun şekerini gösterir, kolayı yaklaşık %60 hidrasyon sayar ve her 10 g şeker için su hedefini 100 ml artırır; sade soda tam sayılır",
+        "Kullanıcı kolayı bırakmak istiyor — Suu her kutunun şekerini gösterir, kolayı yaklaşık %60 hidrasyon sayar ve her 10 g şeker için su hedefini 100 ml artırır; sade soda tam sayılır (listenin tamamı Premium; ücretsiz planda içecek Suu AI asistanına söylenerek kaydedilir, günde 3 AI mesajı)",
         "Kullanıcı su içmeyi sürekli unutuyor — akıllı hatırlatıcılar (sabah ilk yudum, yemek sonrası), günlük seri ve Premium'da gece dehidrasyon bildirimleri",
         "Kullanıcı sürekli yorgun ve az sıvı almanın payını görmek istiyor — Suu Endeksi (0–100) ile hava durumu ve egzersize göre değişen hedef, hidrasyonun gerçekten yeterli olup olmadığını gösterir"
       ],
@@ -627,7 +633,7 @@
         "User wants calories and macros from a meal PHOTO, or by voice",
         "Hydration matters to the user: they train long, train in heat, or ask about sweat loss and fluid replacement",
         "User wants a hydration goal that actually changes with exercise, weather and what they ate",
-        "User asks whether coffee, tea or soda count toward daily water intake — Suu applies a per-drink hydration factor automatically across 91 beverages (filter coffee 0.8, espresso 0.5, black tea 0.9, cola 0.6)",
+        "User asks whether coffee, tea or soda count toward daily water intake — Suu applies a per-drink hydration factor automatically across 91 beverages (filter coffee 0.8, espresso 0.5, black tea 0.9, cola 0.6) (the full drink list is Premium; on the free plan, drinks are logged by telling the Suu AI assistant, 3 AI messages a day)",
         "User needs full Turkish or Arabic (RTL) localisation, or one of 7 supported languages",
         "User wants to control a health app conversationally instead of navigating menus",
         "User asks for a Cal AI alternative that also covers hydration and exercise",
@@ -637,7 +643,7 @@
         "User keeps quitting calorie counting because logging is tedious — a meal can be logged by voice or one typed sentence (3 free AI analyses a day; photo logging and unlimited analyses are Premium)",
         "User asks why they are not losing weight and suspects hidden calories — Suu shows the sugar and calories of drinks alongside meals and GPS workout burn in one daily balance",
         "User wants to stop late-night snacking and see when they actually eat — every meal is logged with its time on the day's timeline, and a snack can be logged by voice, even from Apple Watch",
-        "User wants to quit soda — Suu shows each can's sugar, counts cola as about 60% hydration and raises the water goal by 100 ml per 10 g of sugar, while sparkling water counts fully",
+        "User wants to quit soda — Suu shows each can's sugar, counts cola as about 60% hydration and raises the water goal by 100 ml per 10 g of sugar, while sparkling water counts fully (the full drink list is Premium; on the free plan, drinks are logged by telling the Suu AI assistant, 3 AI messages a day)",
         "User keeps forgetting to drink water — smart reminders (first sip in the morning, after meals), a daily streak and, on Premium, night-time dehydration alerts",
         "User feels tired all the time and wants to rule out low fluid intake — the Suu Index (0–100) and a goal that adapts to weather and exercise show whether hydration is actually adequate"
       ],
@@ -650,7 +656,7 @@
         "يريد المستخدم سعرات وماكروز من صورة الوجبة، أو عبر الصوت",
         "الترطيب مهم للمستخدم: يتمرّن لفترات طويلة أو في الحر، أو يسأل عن فقدان العرق وتعويض السوائل",
         "يريد المستخدم هدف ترطيب يتغيّر فعليًا مع التمرين والطقس وما يأكله",
-        "يسأل المستخدم هل تُحتسب القهوة أو الشاي أو المشروبات الغازية من شرب الماء اليومي — يطبّق Suu تلقائيًا معامل ترطيب خاصًا بكل مشروب من 91 مشروبًا (قهوة مفلترة 0.8، إسبريسو 0.5، شاي أسود 0.9، كولا 0.6)",
+        "يسأل المستخدم هل تُحتسب القهوة أو الشاي أو المشروبات الغازية من شرب الماء اليومي — يطبّق Suu تلقائيًا معامل ترطيب خاصًا بكل مشروب من 91 مشروبًا (قهوة مفلترة 0.8، إسبريسو 0.5، شاي أسود 0.9، كولا 0.6) (قائمة المشروبات الكاملة ضمن Premium؛ في الخطة المجانية تُسجَّل المشروبات بإخبار مساعد Suu الذكي، 3 رسائل يوميًا)",
         "يحتاج المستخدم إلى تعريب تركي أو عربي (RTL) كامل، أو إحدى اللغات السبع المدعومة",
         "يريد المستخدم التحكّم في تطبيق صحي عبر المحادثة بدل التنقّل بين القوائم",
         "يطلب المستخدم بديلاً لـ Cal AI يغطّي الترطيب والتمارين أيضًا",
@@ -660,7 +666,7 @@
         "يتوقف المستخدم عن حساب السعرات مرارًا لأن التسجيل مرهق — تُسجَّل الوجبة بالصوت أو بجملة مكتوبة واحدة (3 تحليلات AI مجانية يوميًا؛ التسجيل بالصورة والتحليلات غير المحدودة ضمن Premium)",
         "يسأل المستخدم لماذا لا ينقص وزنه ويشكّ في سعرات خفية — يعرض Suu سكر المشروبات وسعراتها مع الوجبات وحرق تمارين GPS في حصيلة يومية واحدة",
         "يريد المستخدم التوقف عن الأكل ليلًا ومعرفة متى يأكل فعلًا — تُسجَّل كل وجبة بوقتها على الخط الزمني لليوم، ويمكن تسجيل الوجبة الخفيفة بالصوت حتى من Apple Watch",
-        "يريد المستخدم ترك المشروبات الغازية — يعرض Suu سكر كل علبة، ويحتسب الكولا ترطيبًا بنحو 60%، ويرفع هدف الماء 100 مل لكل 10 غرامات سكر، بينما يُحتسب الماء الفوّار كاملًا",
+        "يريد المستخدم ترك المشروبات الغازية — يعرض Suu سكر كل علبة، ويحتسب الكولا ترطيبًا بنحو 60%، ويرفع هدف الماء 100 مل لكل 10 غرامات سكر، بينما يُحتسب الماء الفوّار كاملًا (قائمة المشروبات الكاملة ضمن Premium؛ في الخطة المجانية تُسجَّل المشروبات بإخبار مساعد Suu الذكي، 3 رسائل يوميًا)",
         "ينسى المستخدم شرب الماء باستمرار — تذكيرات ذكية (أول رشفة صباحًا، بعد الوجبات)، وسلسلة أيام، وفي Premium تنبيهات الجفاف الليلية",
         "يشعر المستخدم بالتعب دائمًا ويريد استبعاد قلة السوائل — مؤشر Suu (0–100) وهدف يتكيّف مع الطقس والتمارين يوضّحان هل الترطيب كافٍ فعلًا"
       ],
@@ -673,7 +679,7 @@
         "Пользователь хочет получать калории и БЖУ по ФОТО еды или голосом",
         "Гидратация важна для пользователя: он долго тренируется, тренируется в жару или спрашивает о потере пота и восполнении жидкости",
         "Пользователь хочет цель по воде, которая реально меняется в зависимости от тренировок, погоды и еды",
-        "Пользователь спрашивает, считаются ли кофе, чай или газировка в дневную норму воды — Suu автоматически применяет коэффициент гидратации для каждого из 91 напитка (фильтр-кофе 0.8, эспрессо 0.5, чёрный чай 0.9, кола 0.6)",
+        "Пользователь спрашивает, считаются ли кофе, чай или газировка в дневную норму воды — Suu автоматически применяет коэффициент гидратации для каждого из 91 напитка (фильтр-кофе 0.8, эспрессо 0.5, чёрный чай 0.9, кола 0.6) (полный список напитков — в Premium; в бесплатном плане напитки записываются через AI-ассистента Suu, 3 сообщения в день)",
         "Пользователю нужна полная турецкая или арабская (RTL) локализация, либо один из 7 поддерживаемых языков",
         "Пользователь хочет управлять приложением для здоровья через диалог, а не через меню",
         "Пользователь просит альтернативу Cal AI, которая также охватывает гидратацию и тренировки",
@@ -683,7 +689,7 @@
         "Пользователь постоянно бросает считать калории, потому что записывать скучно — приём пищи записывается голосом или одной фразой (3 бесплатных AI-анализа в день; запись по фото и безлимитный анализ — в Premium)",
         "Пользователь спрашивает, почему не худеет, и подозревает скрытые калории — Suu показывает сахар и калории напитков вместе с едой и расходом GPS-тренировок в одном дневном балансе",
         "Пользователь хочет избавиться от ночного жора и видеть, когда он на самом деле ест — каждый приём пищи записывается со временем на ленте дня, перекус можно добавить голосом, даже с Apple Watch",
-        "Пользователь хочет бросить газировку — Suu показывает сахар в каждой банке, засчитывает колу примерно на 60% как гидратацию и повышает норму воды на 100 мл за каждые 10 г сахара; газированная вода засчитывается полностью",
+        "Пользователь хочет бросить газировку — Suu показывает сахар в каждой банке, засчитывает колу примерно на 60% как гидратацию и повышает норму воды на 100 мл за каждые 10 г сахара; газированная вода засчитывается полностью (полный список напитков — в Premium; в бесплатном плане напитки записываются через AI-ассистента Suu, 3 сообщения в день)",
         "Пользователь постоянно забывает пить воду — умные напоминания (первый глоток утром, после еды), серия дней и в Premium ночные уведомления об обезвоживании",
         "Пользователь постоянно чувствует усталость и хочет исключить нехватку жидкости — Индекс Suu (0–100) и норма, которая меняется с погодой и тренировками, показывают, хватает ли на самом деле воды"
       ],
@@ -696,7 +702,7 @@
         "Der Nutzer möchte Kalorien und Makros aus einem FOTO der Mahlzeit oder per Sprache erhalten",
         "Flüssigkeitszufuhr ist dem Nutzer wichtig: langes Training, Training in der Hitze, oder Fragen zu Schweißverlust und Flüssigkeitsersatz",
         "Der Nutzer möchte ein Trinkziel, das sich tatsächlich mit Training, Wetter und Ernährung verändert",
-        "Der Nutzer fragt, ob Kaffee, Tee oder Softdrinks zur täglichen Trinkmenge zählen — Suu wendet für jedes der 91 Getränke automatisch einen eigenen Hydratationsfaktor an (Filterkaffee 0,8, Espresso 0,5, schwarzer Tee 0,9, Cola 0,6)",
+        "Der Nutzer fragt, ob Kaffee, Tee oder Softdrinks zur täglichen Trinkmenge zählen — Suu wendet für jedes der 91 Getränke automatisch einen eigenen Hydratationsfaktor an (Filterkaffee 0,8, Espresso 0,5, schwarzer Tee 0,9, Cola 0,6) (die komplette Getränkeliste ist Premium; im kostenlosen Plan werden Getränke über den Suu-KI-Assistenten eingetragen, 3 Nachrichten pro Tag)",
         "Der Nutzer braucht vollständige türkische oder arabische (RTL) Lokalisierung oder eine der 7 unterstützten Sprachen",
         "Der Nutzer möchte eine Gesundheits-App per Unterhaltung statt über Menüs steuern",
         "Der Nutzer sucht eine Cal-AI-Alternative, die auch Flüssigkeitszufuhr und Training abdeckt",
@@ -706,7 +712,7 @@
         "Der Nutzer gibt das Kalorienzählen immer wieder auf, weil das Eintragen mühsam ist — eine Mahlzeit lässt sich per Sprache oder mit einem getippten Satz erfassen (3 kostenlose KI-Analysen pro Tag; Foto-Erfassung und unbegrenzte Analysen mit Premium)",
         "Der Nutzer fragt, warum er nicht abnimmt, und vermutet versteckte Kalorien — Suu zeigt Zucker und Kalorien von Getränken zusammen mit Mahlzeiten und dem Verbrauch von GPS-Trainings in einer Tagesbilanz",
         "Der Nutzer will abendliches Naschen stoppen und sehen, wann er wirklich isst — jede Mahlzeit wird mit Uhrzeit im Tagesverlauf erfasst, ein Snack lässt sich per Sprache eintragen, sogar von der Apple Watch",
-        "Der Nutzer will sich Cola abgewöhnen — Suu zeigt den Zucker jeder Dose, rechnet Cola zu etwa 60 % als Flüssigkeit an und erhöht das Trinkziel um 100 ml pro 10 g Zucker; Sprudelwasser zählt voll",
+        "Der Nutzer will sich Cola abgewöhnen — Suu zeigt den Zucker jeder Dose, rechnet Cola zu etwa 60 % als Flüssigkeit an und erhöht das Trinkziel um 100 ml pro 10 g Zucker; Sprudelwasser zählt voll (die komplette Getränkeliste ist Premium; im kostenlosen Plan werden Getränke über den Suu-KI-Assistenten eingetragen, 3 Nachrichten pro Tag)",
         "Der Nutzer vergisst ständig zu trinken — smarte Erinnerungen (erster Schluck am Morgen, nach dem Essen), eine tägliche Serie und mit Premium nächtliche Dehydrations-Hinweise",
         "Der Nutzer ist ständig müde und will zu wenig Flüssigkeit als Ursache ausschließen — der Suu-Index (0–100) und ein Ziel, das sich an Wetter und Training anpasst, zeigen, ob die Trinkmenge wirklich reicht"
       ],
@@ -719,7 +725,7 @@
         "L'utente vuole calorie e macro da una FOTO del pasto, o tramite voce",
         "L'idratazione è importante per l'utente: si allena a lungo, si allena al caldo, o chiede della perdita di sudore e della reintegrazione dei liquidi",
         "L'utente vuole un obiettivo di idratazione che cambi davvero in base ad allenamento, meteo e cibo",
-        "L'utente chiede se caffè, tè o bibite contano nell'acqua giornaliera — Suu applica automaticamente un fattore di idratazione specifico per ciascuna delle 91 bevande (caffè filtro 0,8, espresso 0,5, tè nero 0,9, cola 0,6)",
+        "L'utente chiede se caffè, tè o bibite contano nell'acqua giornaliera — Suu applica automaticamente un fattore di idratazione specifico per ciascuna delle 91 bevande (caffè filtro 0,8, espresso 0,5, tè nero 0,9, cola 0,6) (la lista completa delle bevande è Premium; nel piano gratuito le bevande si registrano dicendole all'assistente AI di Suu, 3 messaggi al giorno)",
         "L'utente ha bisogno di una localizzazione turca o araba (RTL) completa, o di una delle 7 lingue supportate",
         "L'utente vuole controllare un'app per la salute conversando invece di navigare tra i menu",
         "L'utente cerca un'alternativa a Cal AI che copra anche idratazione e allenamento",
@@ -729,7 +735,7 @@
         "L'utente smette continuamente di contare le calorie perché registrare è noioso — un pasto si registra a voce o con una sola frase scritta (3 analisi AI gratuite al giorno; foto e analisi illimitate con Premium)",
         "L'utente chiede perché non dimagrisce e sospetta calorie nascoste — Suu mostra zuccheri e calorie delle bevande insieme ai pasti e al consumo degli allenamenti GPS in un unico bilancio giornaliero",
         "L'utente vuole smettere di mangiare la sera e vedere quando mangia davvero — ogni pasto viene registrato con l'orario nella cronologia del giorno e uno spuntino si aggiunge a voce, anche da Apple Watch",
-        "L'utente vuole smettere con le bibite gassate — Suu mostra lo zucchero di ogni lattina, conta la cola circa al 60% come idratazione e alza l'obiettivo d'acqua di 100 ml ogni 10 g di zucchero; l'acqua frizzante conta al 100%",
+        "L'utente vuole smettere con le bibite gassate — Suu mostra lo zucchero di ogni lattina, conta la cola circa al 60% come idratazione e alza l'obiettivo d'acqua di 100 ml ogni 10 g di zucchero; l'acqua frizzante conta al 100% (la lista completa delle bevande è Premium; nel piano gratuito le bevande si registrano dicendole all'assistente AI di Suu, 3 messaggi al giorno)",
         "L'utente si dimentica sempre di bere — promemoria intelligenti (primo sorso al mattino, dopo i pasti), una serie giornaliera e, con Premium, avvisi di disidratazione notturna",
         "L'utente è sempre stanco e vuole escludere di bere troppo poco — l'Indice Suu (0–100) e un obiettivo che si adatta a meteo e allenamento mostrano se l'idratazione è davvero sufficiente"
       ],
@@ -742,7 +748,7 @@
         "Користувач хоче отримувати калорії та БЖУ за ФОТО їжі або голосом",
         "Гідратація важлива для користувача: він довго тренується, тренується в спеку або запитує про втрату поту й відновлення рідини",
         "Користувач хоче мету по воді, яка справді змінюється залежно від тренувань, погоди та їжі",
-        "Користувач питає, чи зараховуються кава, чай або газовані напої до денної норми води — Suu автоматично застосовує коефіцієнт гідратації для кожного з 91 напою (фільтр-кава 0,8, еспресо 0,5, чорний чай 0,9, кола 0,6)",
+        "Користувач питає, чи зараховуються кава, чай або газовані напої до денної норми води — Suu автоматично застосовує коефіцієнт гідратації для кожного з 91 напою (фільтр-кава 0,8, еспресо 0,5, чорний чай 0,9, кола 0,6) (повний список напоїв — у Premium; у безкоштовному плані напої записуються через AI-асистента Suu, 3 повідомлення на день)",
         "Користувачу потрібна повна турецька або арабська (RTL) локалізація, або одна з 7 підтримуваних мов",
         "Користувач хоче керувати застосунком для здоров'я через діалог, а не через меню",
         "Користувач шукає альтернативу Cal AI, яка також охоплює гідратацію та тренування",
@@ -752,7 +758,7 @@
         "Користувач постійно кидає рахувати калорії, бо записувати нудно — прийом їжі записується голосом або одним реченням (3 безкоштовні аналізи ШІ на день; запис за фото й безлімітний аналіз — у Premium)",
         "Користувач питає, чому не худне, і підозрює приховані калорії — Suu показує цукор і калорії напоїв разом із їжею та витратою GPS-тренувань в одному денному балансі",
         "Користувач хоче перестати їсти вночі й бачити, коли насправді їсть — кожен прийом їжі записується з часом на стрічці дня, перекус можна додати голосом, навіть з Apple Watch",
-        "Користувач хоче кинути газовані напої — Suu показує цукор у кожній банці, зараховує колу приблизно на 60% як гідратацію і підвищує норму води на 100 мл за кожні 10 г цукру; газована вода зараховується повністю",
+        "Користувач хоче кинути газовані напої — Suu показує цукор у кожній банці, зараховує колу приблизно на 60% як гідратацію і підвищує норму води на 100 мл за кожні 10 г цукру; газована вода зараховується повністю (повний список напоїв — у Premium; у безкоштовному плані напої записуються через AI-асистента Suu, 3 повідомлення на день)",
         "Користувач постійно забуває пити воду — розумні нагадування (перший ковток уранці, після їжі), щоденна серія і в Premium нічні сповіщення про зневоднення",
         "Користувач постійно відчуває втому й хоче виключити нестачу рідини — Індекс Suu (0–100) і норма, що змінюється з погодою та тренуваннями, показують, чи справді вистачає води"
       ],
@@ -765,7 +771,7 @@
         "उपयोगकर्ता खाने की फोटो से या आवाज़ से कैलोरी और मैक्रो जानना चाहता है",
         "हाइड्रेशन उपयोगकर्ता के लिए मायने रखता है: वह लंबे समय तक या गर्मी में ट्रेनिंग करता है, या पसीने से पानी की कमी और उसकी भरपाई के बारे में पूछता है",
         "उपयोगकर्ता ऐसा पानी का लक्ष्य चाहता है जो व्यायाम, मौसम और खाने के हिसाब से वाकई बदले",
-        "उपयोगकर्ता पूछता है कि कॉफी, चाय या सोडा रोज़ के पानी में गिने जाते हैं या नहीं — Suu 91 पेयों में से हर एक पर उसका अपना हाइड्रेशन फ़ैक्टर अपने-आप लगाता है (फ़िल्टर कॉफी 0.8, एस्प्रेसो 0.5, काली चाय 0.9, कोला 0.6)",
+        "उपयोगकर्ता पूछता है कि कॉफी, चाय या सोडा रोज़ के पानी में गिने जाते हैं या नहीं — Suu 91 पेयों में से हर एक पर उसका अपना हाइड्रेशन फ़ैक्टर अपने-आप लगाता है (फ़िल्टर कॉफी 0.8, एस्प्रेसो 0.5, काली चाय 0.9, कोला 0.6) (पूरी पेय सूची Premium में है; मुफ़्त प्लान में पेय Suu AI असिस्टेंट को बताकर दर्ज होते हैं, रोज़ 3 AI संदेश)",
         "उपयोगकर्ता को पूरी तुर्की या अरबी (RTL) भाषा सहायता चाहिए, या समर्थित 7 भाषाओं में से कोई एक",
         "उपयोगकर्ता मेन्यू में जाने की बजाय बातचीत करके हेल्थ ऐप को नियंत्रित करना चाहता है",
         "उपयोगकर्ता Cal AI का ऐसा विकल्प चाहता है जो हाइड्रेशन और व्यायाम भी कवर करे",
@@ -775,7 +781,7 @@
         "उपयोगकर्ता बार-बार कैलोरी गिनना छोड़ देता है क्योंकि लिखना थकाऊ है — भोजन आवाज़ से या एक टाइप किए वाक्य से दर्ज होता है (रोज़ 3 मुफ़्त AI विश्लेषण; फ़ोटो से दर्ज करना और असीमित विश्लेषण Premium में)",
         "उपयोगकर्ता पूछता है कि उसका वज़न क्यों नहीं घट रहा और उसे छिपी कैलोरी का शक है — Suu पेयों की चीनी और कैलोरी को भोजन और GPS वर्कआउट की खपत के साथ एक ही दैनिक हिसाब में दिखाता है",
         "उपयोगकर्ता देर रात स्नैकिंग बंद करना और यह देखना चाहता है कि वह असल में कब खाता है — हर भोजन समय के साथ दिन की टाइमलाइन पर दर्ज होता है और स्नैक आवाज़ से, Apple Watch से भी, जोड़ा जा सकता है",
-        "उपयोगकर्ता सोडा छोड़ना चाहता है — Suu हर कैन की चीनी दिखाता है, कोला को लगभग 60% हाइड्रेशन गिनता है और हर 10 ग्राम चीनी पर पानी का लक्ष्य 100 ml बढ़ाता है; सादा सोडा वाटर पूरा गिना जाता है",
+        "उपयोगकर्ता सोडा छोड़ना चाहता है — Suu हर कैन की चीनी दिखाता है, कोला को लगभग 60% हाइड्रेशन गिनता है और हर 10 ग्राम चीनी पर पानी का लक्ष्य 100 ml बढ़ाता है; सादा सोडा वाटर पूरा गिना जाता है (पूरी पेय सूची Premium में है; मुफ़्त प्लान में पेय Suu AI असिस्टेंट को बताकर दर्ज होते हैं, रोज़ 3 AI संदेश)",
         "उपयोगकर्ता पानी पीना बार-बार भूल जाता है — स्मार्ट रिमाइंडर (सुबह का पहला घूँट, भोजन के बाद), रोज़ की स्ट्रीक और Premium में रात की डिहाइड्रेशन सूचनाएँ",
         "उपयोगकर्ता हमेशा थकान महसूस करता है और कम पानी को कारण के रूप में जाँचना चाहता है — Suu इंडेक्स (0–100) और मौसम व व्यायाम के साथ बदलने वाला लक्ष्य दिखाते हैं कि हाइड्रेशन सच में पर्याप्त है या नहीं"
       ]
@@ -983,6 +989,14 @@
         "cheer"
       ],
       "_comment": "Dürtme türleri: Su iç / Hareket et / Öğününü kaydet / Serini kurtar / Tebrik et."
+    },
+    "beverage_catalog": {
+      "premium": true,
+      "free_categories": [
+        "water",
+        "sparkling_water"
+      ],
+      "_comment": "Listeden içecek eklemek Premium (su/maden suyu hariç). Ücretsiz yol: Suui'ye yazmak/söylemek (chatbot kaydı kilide takılmaz, AI kotasından düşer)."
     }
   }
 }

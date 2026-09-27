@@ -1,5 +1,5 @@
 {
-  "_note": "Yapay zekâ sorusu rehberi #5 — 'kolayı nasıl bırakırım'. Sınır: davranış değişikliği planı; limitler ve takip kafein-seker-takibi'nde kalır. Rakamlar suu-facts.json → beverage_hydration (kola 0.6, zero 0.85, maden suyu 1.0, 10 g şeker → +100 ml). Kaynak URL'leri 2026-09-27'de doğrulandı.",
+  "_note": "Yapay zekâ sorusu rehberi #5 — 'kolayı nasıl bırakırım'. Sınır: davranış değişikliği planı; limitler ve takip kafein-seker-takibi'nde kalır. Rakamlar suu-facts.json → beverage_hydration (kola 0.6, zero 0.85, maden suyu 1.0, 10 g şeker → +100 ml). Kaynak URL'leri 2026-09-27'de doğrulandı. 2026-09-27 düzeltme: içecek listesi (su/maden suyu dışı) Premium — Android'de canlı, iOS 2.0.38'de; ücretsiz yol Suui sohbeti (günde 3 AI mesajı, analyzeNutrition ile ortak kota).",
   "kind": "guide",
   "cluster": "kolayi-birakmak",
   "published": "2026-09-27",
@@ -98,20 +98,26 @@
         "lead": "Planın her haftası uygulamada bir karşılık buluyor. Menü adları uygulamadaki gibi:",
         "steps": [
           {
-            "feature": "Kolayı kaydet, gerçek etkisini gör",
-            "where_ios": "Ana ekran → hızlı ekleme → <strong>Hızlı İçecek</strong> → Kola",
-            "where_android": "Ana ekran → <strong>İçecek Ekle</strong> → Kola",
-            "solves": "Kutu, şekeri ve su hedefine etkisiyle birlikte kaydedilir. Planın 1. haftasındaki \"ölç\" adımı budur."
+            "feature": "Kolayı Suui'ye söyle",
+            "where": "Ana ekrandaki <strong>Suui</strong> asistanı",
+            "solves": "\"Bir kutu kola içtim\" yazman ya da söylemen yeterli; kola, şekeri ve su hedefine etkisiyle birlikte kaydedilir. Ücretsiz planda günde 3 AI mesajı var — 1. haftanın \"ölç\" adımı için yeter."
           },
           {
-            "feature": "Değişimi karşılaştır",
-            "where": "Aynı listede <strong>Kola Zero</strong> ve <strong>Maden Suyu</strong>",
-            "solves": "2. ve 3. haftadaki değişimin etkisini aynı yerde görürsün: şeker düşer, suya sayılan miktar artar, hedef yükselmez."
+            "feature": "İçecek listesinden tek dokunuşla kaydet",
+            "premium": true,
+            "where_ios": "Ana ekran → hızlı ekleme → <strong>Hızlı İçecek</strong> → Kola, Kola Zero, Maden Suyu",
+            "where_android": "Ana ekran → <strong>İçecek Ekle</strong> → Kola, Kola Zero, Maden Suyu",
+            "solves": "91 içeceğin tamamı şekeri ve su hedefine etkisiyle listede; 2. ve 3. haftadaki değişimi yan yana görürsün. Ücretsiz planda listeden su ve maden suyu eklenir."
+          },
+          {
+            "feature": "Yerine içtiğin suyu kaydet",
+            "where": "Ana ekrandaki su ekleme düğmeleri",
+            "solves": "Kolanın yerine koyduğun her bardak su, günlük hedefine tam olarak sayılır."
           },
           {
             "feature": "Seri ve Streak Koruma",
             "where": "Ana ekrandaki <strong>Seri</strong> göstergesi",
-            "solves": "Günlük su hedefinin en az yarısına ulaştığın her gün seri uzar. Kolanın yerine koyduğun her bardak su bu seriyi besler; bir günü kaçırırsan <strong>Streak Koruma</strong> hakkın seriyi korur."
+            "solves": "Günlük su hedefinin en az yarısına ulaştığın her gün seri uzar; bir günü kaçırırsan <strong>Streak Koruma</strong> hakkın seriyi korur."
           },
           {
             "feature": "Akıllı Bildirimler",
@@ -302,20 +308,26 @@
         "lead": "Every week of the plan has a place in the app. Menu names are exactly as they appear:",
         "steps": [
           {
-            "feature": "Log the soda and see its real effect",
-            "where_ios": "Home → quick add → <strong>Quick Drink</strong> → Cola",
-            "where_android": "Home → <strong>Add Beverage</strong> → Cola",
-            "solves": "The can is logged together with its sugar and its effect on your water goal. This is the \"measure\" step of week 1."
+            "feature": "Tell Suui about the soda",
+            "where": "The <strong>Suui</strong> assistant on the home screen",
+            "solves": "Just type or say \"I had a can of Coke\"; it's logged with its sugar and its effect on your water goal. The free plan includes 3 AI messages a day — enough for week 1's \"measure\" step."
           },
           {
-            "feature": "Compare the swap",
-            "where": "The same list: <strong>Cola Zero</strong> and <strong>Sparkling Water</strong>",
-            "solves": "See what the week 2 and week 3 swaps do in one place: sugar goes down, the amount counted as water goes up, and your goal stays put."
+            "feature": "One-tap logging from the drink list",
+            "premium": true,
+            "where_ios": "Home → quick add → <strong>Quick Drink</strong> → Cola, Cola Zero, Sparkling Water",
+            "where_android": "Home → <strong>Add Beverage</strong> → Cola, Cola Zero, Sparkling Water",
+            "solves": "All 91 drinks come with their sugar and their effect on your water goal, so the week 2 and 3 swaps sit side by side. On the free plan, water and sparkling water can be added from the list."
+          },
+          {
+            "feature": "Log the water you drink instead",
+            "where": "The water buttons on the home screen",
+            "solves": "Every glass of water that replaces a soda counts fully toward your daily goal."
           },
           {
             "feature": "Streak and Streak Freeze",
             "where": "The <strong>Streak</strong> indicator on the home screen",
-            "solves": "Every day you reach at least half of your water goal extends your streak. Each glass of water that replaces a soda feeds it, and if you miss a day, a <strong>Streak Freeze</strong> protects it."
+            "solves": "Every day you reach at least half of your water goal extends your streak; if you miss a day, a <strong>Streak Freeze</strong> protects it."
           },
           {
             "feature": "Smart Notifications",
@@ -506,20 +518,26 @@
         "lead": "لكل أسبوع من الخطة مكان في التطبيق. أسماء القوائم كما تظهر فيه:",
         "steps": [
           {
-            "feature": "سجّل المشروب وشاهد أثره الحقيقي",
-            "where_ios": "الشاشة الرئيسية ← الإضافة السريعة ← <strong>مشروب سريع</strong> ← كولا",
-            "where_android": "الشاشة الرئيسية ← <strong>أضف مشروباً</strong> ← كولا",
-            "solves": "تُسجَّل العلبة مع سكرها وأثرها على هدف الماء. هذه هي خطوة «قِس» في الأسبوع الأول."
+            "feature": "أخبر Suui بما شربت",
+            "where": "مساعد <strong>Suui</strong> في الشاشة الرئيسية",
+            "solves": "يكفي أن تكتب أو تقول «شربت علبة كولا»؛ تُسجَّل مع سكرها وأثرها على هدف الماء. تتضمن الخطة المجانية 3 رسائل ذكاء اصطناعي يوميًا، وهذا يكفي لخطوة «قِس» في الأسبوع الأول."
           },
           {
-            "feature": "قارن الاستبدال",
-            "where": "في القائمة نفسها: <strong>كولا زيرو</strong> و<strong>مياه غازية</strong>",
-            "solves": "ترى أثر استبدالات الأسبوعين الثاني والثالث في مكان واحد: ينخفض السكر، وتزيد الكمية المحتسبة ماءً، ولا يرتفع الهدف."
+            "feature": "التسجيل بلمسة من قائمة المشروبات",
+            "premium": true,
+            "where_ios": "الشاشة الرئيسية ← الإضافة السريعة ← <strong>مشروب سريع</strong> ← كولا، كولا زيرو، مياه غازية",
+            "where_android": "الشاشة الرئيسية ← <strong>أضف مشروباً</strong> ← كولا، كولا زيرو، مياه غازية",
+            "solves": "كل المشروبات الـ91 مع سكرها وأثرها على هدف الماء، فترى استبدالات الأسبوعين الثاني والثالث جنبًا إلى جنب. في الخطة المجانية يمكن إضافة الماء والمياه الغازية من القائمة."
+          },
+          {
+            "feature": "سجّل الماء الذي تشربه بدلًا منها",
+            "where": "أزرار إضافة الماء في الشاشة الرئيسية",
+            "solves": "كل كوب ماء يحلّ محلّ علبة يُحتسب كاملًا في هدفك اليومي."
           },
           {
             "feature": "السلسلة وتجميد السلسلة",
             "where": "مؤشر <strong>سلسلة</strong> في الشاشة الرئيسية",
-            "solves": "كل يوم تبلغ فيه نصف هدف الماء على الأقل تطول سلسلتك. كل كوب ماء يحلّ محلّ علبة يغذّيها، وإذا فاتك يوم يحميها <strong>تجميد السلسلة</strong>."
+            "solves": "كل يوم تبلغ فيه نصف هدف الماء على الأقل تطول سلسلتك، وإذا فاتك يوم يحميها <strong>تجميد السلسلة</strong>."
           },
           {
             "feature": "الإشعارات الذكية",
@@ -710,20 +728,26 @@
         "lead": "У каждой недели плана есть место в приложении. Названия пунктов — как в интерфейсе:",
         "steps": [
           {
-            "feature": "Запишите газировку и увидьте её реальный эффект",
-            "where_ios": "Главный экран → быстрое добавление → <strong>Быстрый напиток</strong> → Кола",
-            "where_android": "Главный экран → <strong>Добавить напиток</strong> → Кола",
-            "solves": "Банка записывается вместе с сахаром и влиянием на норму воды. Это шаг «измерьте» из первой недели."
+            "feature": "Расскажите о газировке Suui",
+            "where": "Ассистент <strong>Suui</strong> на главном экране",
+            "solves": "Достаточно написать или сказать «выпил банку колы» — напиток запишется вместе с сахаром и влиянием на норму воды. В бесплатном плане 3 AI-сообщения в день — этого хватит для шага «измерьте» первой недели."
           },
           {
-            "feature": "Сравните замену",
-            "where": "В том же списке: <strong>Кола Зеро</strong> и <strong>Минеральная вода</strong>",
-            "solves": "Эффект замен второй и третьей недели виден в одном месте: сахара меньше, засчитанной воды больше, норма не растёт."
+            "feature": "Запись в одно касание из списка напитков",
+            "premium": true,
+            "where_ios": "Главный экран → быстрое добавление → <strong>Быстрый напиток</strong> → Кола, Кола Зеро, Минеральная вода",
+            "where_android": "Главный экран → <strong>Добавить напиток</strong> → Кола, Кола Зеро, Минеральная вода",
+            "solves": "Все 91 напиток с сахаром и влиянием на норму воды — замены второй и третьей недели видны рядом. В бесплатном плане из списка добавляются вода и минеральная вода."
+          },
+          {
+            "feature": "Записывайте воду, которую пьёте вместо неё",
+            "where": "Кнопки добавления воды на главном экране",
+            "solves": "Каждый стакан воды вместо банки полностью засчитывается в суточную норму."
           },
           {
             "feature": "Серия и заморозка серии",
             "where": "Индикатор <strong>Серия</strong> на главном экране",
-            "solves": "Каждый день, когда вы выпиваете хотя бы половину нормы воды, серия растёт. Каждый стакан воды вместо банки её поддерживает, а если день пропущен, её защитит <strong>Заморозка серии</strong>."
+            "solves": "Каждый день, когда вы выпиваете хотя бы половину нормы воды, серия растёт; если день пропущен, её защитит <strong>Заморозка серии</strong>."
           },
           {
             "feature": "Умные уведомления",
@@ -914,20 +938,26 @@
         "lead": "Jede Woche des Plans hat ihren Platz in der App. Die Menünamen sind genau so wie in der App:",
         "steps": [
           {
-            "feature": "Cola eintragen und den echten Effekt sehen",
-            "where_ios": "Startbildschirm → Schnell hinzufügen → <strong>Schnellgetränk</strong> → Cola",
-            "where_android": "Startbildschirm → <strong>Getränk hinzufügen</strong> → Cola",
-            "solves": "Die Dose wird mit ihrem Zucker und ihrem Effekt auf dein Trinkziel eingetragen. Das ist der Schritt „messen“ aus Woche 1."
+            "feature": "Erzähl Suui von der Cola",
+            "where": "Der Assistent <strong>Suui</strong> auf dem Startbildschirm",
+            "solves": "Schreib oder sag einfach „Ich hatte eine Dose Cola“ – sie wird mit Zucker und Effekt auf dein Trinkziel eingetragen. Im kostenlosen Plan hast du 3 KI-Nachrichten pro Tag, genug für den Schritt „messen“ in Woche 1."
           },
           {
-            "feature": "Den Tausch vergleichen",
-            "where": "In derselben Liste: <strong>Cola Zero</strong> und <strong>Sprudelwasser</strong>",
-            "solves": "Du siehst an einer Stelle, was der Tausch in Woche 2 und 3 bewirkt: weniger Zucker, mehr angerechnetes Wasser, kein höheres Ziel."
+            "feature": "Mit einem Tipp aus der Getränkeliste eintragen",
+            "premium": true,
+            "where_ios": "Startbildschirm → Schnell hinzufügen → <strong>Schnellgetränk</strong> → Cola, Cola Zero, Sprudelwasser",
+            "where_android": "Startbildschirm → <strong>Getränk hinzufügen</strong> → Cola, Cola Zero, Sprudelwasser",
+            "solves": "Alle 91 Getränke mit Zucker und Effekt auf dein Trinkziel – der Tausch aus Woche 2 und 3 steht direkt nebeneinander. Im kostenlosen Plan lassen sich Wasser und Sprudelwasser aus der Liste eintragen."
+          },
+          {
+            "feature": "Das Wasser eintragen, das du stattdessen trinkst",
+            "where": "Die Wasser-Buttons auf dem Startbildschirm",
+            "solves": "Jedes Glas Wasser statt einer Dose zählt voll auf dein Tagesziel."
           },
           {
             "feature": "Serie und Serien-Freeze",
             "where": "Die Anzeige <strong>Serie</strong> auf dem Startbildschirm",
-            "solves": "An jedem Tag, an dem du mindestens die Hälfte deines Trinkziels erreichst, wächst deine Serie. Jedes Glas Wasser statt einer Dose zahlt darauf ein, und wenn du einen Tag verpasst, schützt sie ein <strong>Serien-Freeze</strong>."
+            "solves": "An jedem Tag, an dem du mindestens die Hälfte deines Trinkziels erreichst, wächst deine Serie; verpasst du einen Tag, schützt sie ein <strong>Serien-Freeze</strong>."
           },
           {
             "feature": "Intelligente Benachrichtigungen",
@@ -1118,20 +1148,26 @@
         "lead": "Ogni settimana del piano ha il suo posto nell'app. I nomi dei menu sono quelli che vedi nell'app:",
         "steps": [
           {
-            "feature": "Registra la bibita e vedi l'effetto reale",
-            "where_ios": "Schermata principale → aggiunta rapida → <strong>Bevanda rapida</strong> → Cola",
-            "where_android": "Schermata principale → <strong>Aggiungi bevanda</strong> → Cola",
-            "solves": "La lattina viene registrata con il suo zucchero e l'effetto sull'obiettivo d'acqua. È il passo «misura» della settimana 1."
+            "feature": "Racconta la bibita a Suui",
+            "where": "L'assistente <strong>Suui</strong> nella schermata principale",
+            "solves": "Basta scrivere o dire «ho bevuto una lattina di cola»: viene registrata con lo zucchero e l'effetto sull'obiettivo d'acqua. Il piano gratuito include 3 messaggi AI al giorno, abbastanza per il passo «misura» della settimana 1."
           },
           {
-            "feature": "Confronta la sostituzione",
-            "where": "Nella stessa lista: <strong>Cola Zero</strong> e <strong>Acqua frizzante</strong>",
-            "solves": "Vedi in un unico posto cosa cambiano le sostituzioni delle settimane 2 e 3: meno zucchero, più acqua conteggiata, obiettivo che non sale."
+            "feature": "Registrazione in un tocco dalla lista bevande",
+            "premium": true,
+            "where_ios": "Schermata principale → aggiunta rapida → <strong>Bevanda rapida</strong> → Cola, Cola Zero, Acqua frizzante",
+            "where_android": "Schermata principale → <strong>Aggiungi bevanda</strong> → Cola, Cola Zero, Acqua frizzante",
+            "solves": "Tutte le 91 bevande con zucchero ed effetto sull'obiettivo d'acqua: le sostituzioni delle settimane 2 e 3 sono una accanto all'altra. Con il piano gratuito dalla lista si aggiungono acqua e acqua frizzante."
+          },
+          {
+            "feature": "Registra l'acqua che bevi al suo posto",
+            "where": "I pulsanti dell'acqua nella schermata principale",
+            "solves": "Ogni bicchiere d'acqua al posto di una lattina conta per intero sull'obiettivo giornaliero."
           },
           {
             "feature": "Serie e Congelamento serie",
             "where": "L'indicatore <strong>Serie</strong> nella schermata principale",
-            "solves": "Ogni giorno in cui raggiungi almeno metà del tuo obiettivo d'acqua la serie cresce. Ogni bicchiere d'acqua al posto di una lattina la alimenta, e se salti un giorno la protegge il <strong>Congelamento serie</strong>."
+            "solves": "Ogni giorno in cui raggiungi almeno metà del tuo obiettivo d'acqua la serie cresce; se salti un giorno, la protegge il <strong>Congelamento serie</strong>."
           },
           {
             "feature": "Notifiche intelligenti",
@@ -1322,20 +1358,26 @@
         "lead": "Кожен тиждень плану має своє місце в застосунку. Назви пунктів наведено англійською, як в інтерфейсі:",
         "steps": [
           {
-            "feature": "Запиши газований напій і побач його реальний ефект",
-            "where_ios": "Home → quick add → <strong>Quick Drink</strong> → Cola",
-            "where_android": "Home → <strong>Add Beverage</strong> → Cola",
-            "solves": "Банка записується разом із цукром і впливом на норму води. Це крок «виміряй» з першого тижня."
+            "feature": "Розкажи Suui про газований напій",
+            "where": "Асистент <strong>Suui</strong> на головному екрані",
+            "solves": "Досить написати чи сказати «випив банку коли» — напій запишеться разом із цукром і впливом на норму води. У безкоштовному плані 3 AI-повідомлення на день — цього вистачить для кроку «виміряй» першого тижня."
           },
           {
-            "feature": "Порівняй заміну",
-            "where": "У тому ж списку: <strong>Cola Zero</strong> і <strong>Sparkling Water</strong>",
-            "solves": "Ефект замін другого й третього тижня видно в одному місці: цукру менше, зарахованої води більше, норма не зростає."
+            "feature": "Запис одним дотиком зі списку напоїв",
+            "premium": true,
+            "where_ios": "Home → quick add → <strong>Quick Drink</strong> → Cola, Cola Zero, Sparkling Water",
+            "where_android": "Home → <strong>Add Beverage</strong> → Cola, Cola Zero, Sparkling Water",
+            "solves": "Усі 91 напій із цукром і впливом на норму води — заміни другого й третього тижня видно поруч. У безкоштовному плані зі списку додаються вода й газована вода."
+          },
+          {
+            "feature": "Записуй воду, яку п'єш замість неї",
+            "where": "Кнопки додавання води на головному екрані",
+            "solves": "Кожна склянка води замість банки повністю зараховується до добової норми."
           },
           {
             "feature": "Серія і заморожування серії",
             "where": "Індикатор <strong>Streak</strong> на головному екрані",
-            "solves": "Щодня, коли ти випиваєш хоча б половину норми води, серія зростає. Кожна склянка води замість банки її підтримує, а якщо пропустиш день, її захистить <strong>Streak Freeze</strong>."
+            "solves": "Щодня, коли ти випиваєш хоча б половину норми води, серія зростає; якщо пропустиш день, її захистить <strong>Streak Freeze</strong>."
           },
           {
             "feature": "Розумні сповіщення",
