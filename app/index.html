@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>SuuApp'e yönlendiriliyor...</title>
+  <title>Suu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
   <style>
     :root {
       color-scheme: light dark;
@@ -58,25 +59,87 @@
 </head>
 <body>
   <main>
-    <p>Seni SuuApp'e yönlendiriyorum...</p>
-    <p>Eğer otomatik yönlenmezse aşağıdaki bağlantıları kullanabilirsin.</p>
+    <p id="t1">Taking you to Suu…</p>
+    <p id="t2">If nothing happens, use one of the links below.</p>
 
     <div class="links">
-      <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920">iOS (App Store)</a>
-      <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro&hl=tr">Android (Play Store)</a>
-      <a href="https://suuapp.com">Web sitesi</a>
+      <a id="l-ios" href="https://apps.apple.com/app/id6757619920">iPhone (App Store)</a>
+      <a id="l-android" href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro">Android (Google Play)</a>
+      <a id="l-web" href="/hosgeldiniz-en.html">suuapp.com</a>
     </div>
   </main>
 
   <script>
+    // Tüm site CTA'ları buraya gelir (/app?src=...). Dünya trafiği için:
+    // dil = ?lang= → gelinen suuapp.com sayfasının dili → tarayıcı dili → en.
+    // Play: hl=<dil> + src kurulum yönlendiricisi (utm_campaign). App Store: bölgesiz bağlantı,
+    // Apple kullanıcının kendi mağazasına çevirir. Masaüstü: o dilin ana sayfası.
     (function () {
+      var LANGS = ["tr", "en", "ar", "ru", "de", "it", "uk"];
+      var HOME = {
+        tr: "/", en: "/hosgeldiniz-en.html", ar: "/hosgeldiniz-ar.html", ru: "/hosgeldiniz-ru.html",
+        de: "/hosgeldiniz-de.html", it: "/hosgeldiniz-it.html", uk: "/hosgeldiniz-uk.html"
+      };
+      // Dil eki taşımayan İngilizce kök sayfalar
+      var EN_ROOT = /^\/(starbucks-dehydration|water-calculator|about|download)\.html$/;
+      var T = {
+        tr: ["Seni Suu'ya yönlendiriyorum…", "Otomatik yönlenmezse aşağıdaki bağlantıları kullan."],
+        en: ["Taking you to Suu…", "If nothing happens, use one of the links below."],
+        ar: ["جارٍ نقلك إلى Suu…", "إذا لم يحدث شيء، استخدم أحد الروابط أدناه."],
+        ru: ["Переходим в Suu…", "Если ничего не произошло, воспользуйтесь ссылками ниже."],
+        de: ["Du wirst zu Suu weitergeleitet …", "Falls nichts passiert, nutze einen der Links unten."],
+        it: ["Ti stiamo portando su Suu…", "Se non succede nulla, usa uno dei link qui sotto."],
+        uk: ["Переходимо до Suu…", "Якщо нічого не сталося, скористайся посиланнями нижче."]
+      };
+
+      var params = new URLSearchParams(location.search);
+      var src = (params.get("src") || "").replace(/[^a-z0-9_-]/gi, "").slice(0, 60);
+
+      function ok(l) { return l && LANGS.indexOf(l) !== -1 ? l : null; }
+
+      function fromReferrer() {
+        try {
+          var r = new URL(document.referrer);
+          if (!/(^|\.)suuapp\.com$/.test(r.hostname) && r.hostname !== location.hostname) return null;
+          var p = r.pathname;
+          var m = p.match(/^\/blog\/([a-z]{2})\//);
+          if (m) return ok(m[1]);
+          m = p.match(/-([a-z]{2})\.html$/);
+          if (m && ok(m[1])) return m[1];
+          if (EN_ROOT.test(p)) return "en";
+          if (/^\/blog\/[^/]+\.html$/.test(p) || p === "/" || p === "/index.html") return "tr";
+        } catch (e) {}
+        return null;
+      }
+
+      function fromBrowser() {
+        var list = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""];
+        for (var i = 0; i < list.length; i++) {
+          var l = ok(String(list[i]).toLowerCase().slice(0, 2));
+          if (l) return l;
+        }
+        return null;
+      }
+
+      var lang = ok((params.get("lang") || "").toLowerCase()) || fromReferrer() || fromBrowser() || "en";
+
+      var appStoreUrl = "https://apps.apple.com/app/id6757619920";
+      var playStoreUrl = "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro&hl=" + lang +
+        "&referrer=" + encodeURIComponent("utm_source=suuapp.com&utm_medium=web&utm_campaign=" + (src || "app"));
+      var webUrl = HOME[lang];
+
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+      document.getElementById("t1").textContent = T[lang][0];
+      document.getElementById("t2").textContent = T[lang][1];
+      document.getElementById("l-ios").href = appStoreUrl;
+      document.getElementById("l-android").href = playStoreUrl;
+      document.getElementById("l-web").href = webUrl;
+
       var ua = navigator.userAgent || navigator.vendor || window.opera || "";
       var android = /android/i.test(ua);
-      var ios = /iphone|ipad|ipod/i.test(ua);
-
-      var appStoreUrl = "https://apps.apple.com/us/app/suu-su-takip/id6757619920";
-      var playStoreUrl = "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro&hl=tr";
-      var webUrl = "https://suuapp.com";
+      // iPadOS 13+ kendini Mac olarak tanıtır
+      var ios = /iphone|ipad|ipod/i.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
 
       if (android) {
         window.location.replace(playStoreUrl);
@@ -89,10 +152,9 @@
   </script>
 
   <noscript>
-    <p>Tarayıcında JavaScript kapalıysa:</p>
-    <p><a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920">iOS için tıkla</a></p>
-    <p><a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro&hl=tr">Android için tıkla</a></p>
-    <p><a href="https://suuapp.com">Diğer cihazlar için tıkla</a></p>
+    <p><a href="https://apps.apple.com/app/id6757619920">iPhone (App Store)</a></p>
+    <p><a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro">Android (Google Play)</a></p>
+    <p><a href="/hosgeldiniz-en.html">suuapp.com</a></p>
   </noscript>
 </body>
 </html>
