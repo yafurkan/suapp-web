@@ -198,9 +198,10 @@ def build_rules(facts: dict) -> list[dict]:
             },
         ]
 
-    # Kilit ekranı widget'ı yok: yalnızca ana ekran widget'ı (küçük/orta/büyük) +
-    # kilit ekranında Live Activity. 2026-09-29'da 7 dilde "Home and Lock Screen
-    # widgets" iddiası bulunup düzeltildi. Olumsuz cümleler ve rakip hücreleri hariç.
+    # Yalnızca platform_matrix.lock_screen_widgets.ios == "no" iken çalışır.
+    # 2026-09-29: kodda accessory ailesi bulunamadığı için "no" yazılmıştı; sahibi
+    # kilit ekranı widget'ını cihazda teyit etti → "yes", kural şu an devre dışı.
+    # Olumsuz cümleler ve rakip hücreleri hariç.
     if facts["platform_matrix"].get("lock_screen_widgets", {}).get("ios") == "no":
         rules.append({
             "id": "lock-screen-widget-claim",

@@ -368,10 +368,10 @@
             ]
           },
           {
-            "label": "Home Screen widgets",
+            "label": "Home and Lock Screen widgets",
             "cells": [
               {
-                "text": "✓ one-tap add",
+                "text": "✓",
                 "cls": "yes"
               },
               {
@@ -1022,10 +1022,10 @@
             ]
           },
           {
-            "label": "Homescreen-Widgets",
+            "label": "Widgets (Home- und Sperrbildschirm)",
             "cells": [
               {
-                "text": "✓ Wasser mit einem Tipp",
+                "text": "✓",
                 "cls": "yes"
               },
               {
@@ -1626,10 +1626,10 @@
             ]
           },
           {
-            "label": "Widget nella schermata Home",
+            "label": "Widget schermata Home e Blocco",
             "cells": [
               {
-                "text": "✓ acqua con un tocco",
+                "text": "✓",
                 "cls": "yes"
               },
               {
@@ -2230,10 +2230,10 @@
             ]
           },
           {
-            "label": "Віджети на головному екрані",
+            "label": "Віджети на екрані блокування й домашньому",
             "cells": [
               {
-                "text": "✓ вода одним дотиком",
+                "text": "✓",
                 "cls": "yes"
               },
               {
