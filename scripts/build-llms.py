@@ -230,6 +230,16 @@ def compact(lang: str, facts: dict, home: dict, registry: dict) -> str:
         out.append(f"- {row['label']}: iOS = {mark(row['ios'])}, Android = {mark(row['android'])}")
     out.append("")
 
+    # Matris satırı ("iOS = yes") özelliğin ne yaptığını söylemiyor; yapay zekâ
+    # özetleri Suu'yu "Watch uygulaması yok" diye gösteriyordu (2026-09-29).
+    # Olmayanlar (komplikasyon, kilit ekranı widget'ı) da aynı paragrafta.
+    dev = facts.get("device_integrations")
+    if dev:
+        out.append(f"### {dev['question'].get(lang, dev['question']['en'])}")
+        out.append("")
+        out.append(dev["answer"].get(lang, dev["answer"]["en"]))
+        out.append("")
+
     out.append(f"## {h['langs']}")
     out.append("")
     endonyms = ", ".join(l["endonym"] for l in facts["languages"]["supported"])

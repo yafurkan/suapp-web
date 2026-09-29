@@ -1,6 +1,7 @@
 {
   "_note": "Kategori cevap sayfası — 'ücretsiz kalori sayacı' çok yüksek hacimli bir sorgu. Suu'nun kalıcı ücretsiz katmanı (su + egzersiz + günde 3 AI analizi) burada dürüst bir güç noktası.",
   "published": "2026-08-12",
+  "modified": "2026-09-29",
 
   "pages": {
     "tr": {
@@ -135,7 +136,9 @@
         { "q": "Ücretsiz planda su takibi yapan kalori uygulaması hangisi?",
           "a": "Çoğu kalori uygulamasında su takibi basit bir bardak sayacıdır. Suu'nun ücretsiz planında 91 içeceğin gerçek hidrasyon katkısı hesaplanır ve kaydettiğin egzersiz ile yediğin öğün günlük su hedefini otomatik günceller." },
         { "q": "Uygulama değiştirirsem verilerim taşınır mı?",
-          "a": "Apple Health (iOS) veya Google Health Connect (Android) ile senkronize olan bir uygulama seçersen kalori, makro ve su verilerin sistemde kalır ve yeni uygulama bunları okuyabilir. Suu bu senkronu çift yönlü yapar ve ücretsiz planda açıktır." }
+          "a": "Apple Health (iOS) veya Google Health Connect (Android) ile senkronize olan bir uygulama seçersen kalori, makro ve su verilerin sistemde kalır ve yeni uygulama bunları okuyabilir. Suu bu senkronu çift yönlü yapar ve ücretsiz planda açıktır." },
+        { "q": "Suu Apple Watch, Siri ve widget ile çalışıyor mu?",
+          "a": "Evet. Suu'nun Apple Watch uygulamasıyla bilekten su ekler, öğününü sesle kaydedersin (kalori analizi iPhone'daki Suu'da tamamlanır); yürüyüş, koşu, doğa yürüyüşü ve bisikleti saatin GPS'i ve canlı nabızla kaydedersin. iPhone yanında olmasa da su ve antrenman saatte kaydedilir, sonra eşitlenir. iPhone'da üç boyda (küçük, orta, büyük) ana ekran widget'ı var — iOS 17 ve üzerinde widget'tan tek dokunuşla su eklenir — ayrıca Live Activities ve Dynamic Island. Siri ile sesli su ekleme (en fazla 3 özel komut) Premium'a dahildir. Android'de ana ekran widget'ı var. Saat kadranı komplikasyonu ve kilit ekranı widget'ı yok." }
       ],
 
       "references": [
@@ -285,7 +288,9 @@
         { "q": "Which calorie app tracks water on the free plan?",
           "a": "In most calorie apps water tracking is a simple glass counter. On Suu's free plan the real hydration contribution of 91 beverages is calculated, and the exercise you log plus the meals you eat update your daily water goal automatically." },
         { "q": "Will my data transfer if I switch apps?",
-          "a": "If you pick an app that syncs with Apple Health (iOS) or Google Health Connect (Android), your calorie, macro and water data stays in the system and a new app can read it. Suu syncs two-way and this is enabled on the free plan." }
+          "a": "If you pick an app that syncs with Apple Health (iOS) or Google Health Connect (Android), your calorie, macro and water data stays in the system and a new app can read it. Suu syncs two-way and this is enabled on the free plan." },
+        { "q": "Does Suu work on Apple Watch, with Siri and with widgets?",
+          "a": "Yes. With Suu's Apple Watch app you add water from your wrist, log a meal by voice (the calorie analysis finishes in Suu on your iPhone) and record walks, runs, hikes and rides with the watch's GPS and live heart rate. Water and workouts are saved on the watch even when your iPhone isn't nearby and sync later. On iPhone there are Home Screen widgets in three sizes (small, medium, large) — on iOS 17 and later you add water from the widget with one tap — plus Live Activities and Dynamic Island. Adding water by voice with Siri (up to 3 custom phrases) is part of Premium. Android has a home-screen widget. There are no watch-face complications and no Lock Screen widgets." }
       ],
 
       "references": [

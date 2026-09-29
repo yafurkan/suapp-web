@@ -184,7 +184,42 @@ def build_rules(facts: dict) -> list[dict]:
                 "message": "Apple Watch uygulaması yayında ama metin 'yakında / geliştiriliyor' diyor",
                 "fix": "Apple Watch uygulaması mevcut — su, sesli öğün, GPS'li antrenman",
             },
+            {
+                # Sesli öğün analizi iPhone'da tamamlanır; su/antrenman kuyruğa alınıp
+                # eşitlenir. "Bağımsız / standalone" abartı (bkz. suu-facts device_integrations).
+                "id": "apple-watch-standalone-claim",
+                "severity": WARN,
+                "pattern": re.compile(
+                    r"(?i)(?:standalone|автономн\w*|eigenständig\w*|bağımsız)[^.<\n]{0,40}(?:apple\s*watch|watchos)"
+                    r"|(?:apple\s*watch|watchos)[^.<\n]{0,20}(?:standalone|автономн\w*)"
+                ),
+                "message": "Apple Watch uygulaması 'bağımsız/standalone' diye anlatılıyor",
+                "fix": "su ve antrenman iPhone yanında olmasa da saatte kaydedilir, sonra eşitlenir; sesli öğün analizi iPhone'da tamamlanır",
+            },
         ]
+
+    # Kilit ekranı widget'ı yok: yalnızca ana ekran widget'ı (küçük/orta/büyük) +
+    # kilit ekranında Live Activity. 2026-09-29'da 7 dilde "Home and Lock Screen
+    # widgets" iddiası bulunup düzeltildi. Olumsuz cümleler ve rakip hücreleri hariç.
+    if facts["platform_matrix"].get("lock_screen_widgets", {}).get("ios") == "no":
+        rules.append({
+            "id": "lock-screen-widget-claim",
+            "severity": ERROR,
+            "pattern": re.compile(
+                r"(?i)lock[- ]?screen\s+widget|home\s*(?:/|and)\s*lock[- ]?screen\s+widget"
+                r"|kilit\s+ekran[ıi]\s+(?:ve\s+ana\s+ekran\s+)?widget"
+                r"|виджет\w*\s+(?:на\s+)?(?:главн\w*\s+)?экран\w*\s+блокировки|экран\w*\s+блокировки\s+трёх"
+                r"|ودجات\s+شاشة\s+القفل|وشاشة\s+القفل\s+بثلاثة"
+                r"|Sperrbildschirm-?\s*(?:und\s+Homescreen-)?Widgets|widget\s+(?:della\s+)?schermata\s+di\s+blocco"
+                r"|віджет\w*\s+на\s+(?:заблокованому|екрані\s+блокування)|लॉक\s+स्क्रीन\s+(?:और\s+होम\s+स्क्रीन\s+)?विजेट"
+            ),
+            "unless": re.compile(
+                r"(?i)\bno\b|isn't|\byok|нет\b|немає|لا\s+توجد|gibt\s+es\s+nicht|non\s+ci\s+sono|नहीं"
+                r"|WaterMinder|Waterllama|Hydro\s+Coach"
+            ),
+            "message": "Suu'da kilit ekranı widget'ı yok (yalnızca ana ekran widget'ı + Live Activity)",
+            "fix": "ana ekran widget'ı (küçük/orta/büyük; iOS 17+ tek dokunuşla su) — kilit ekranında Live Activity",
+        })
 
     return rules
 

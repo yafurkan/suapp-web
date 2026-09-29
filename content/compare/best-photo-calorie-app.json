@@ -1,6 +1,7 @@
 {
   "_note": "Kategori cevap sayfası — 'fotoğraftan kalori hesaplayan en iyi uygulama' sorgusu. Mevcut blog/fotografla-kalori-sayma.html bir NASIL yazısıdır; bu ise HANGİ UYGULAMA sorusudur. Kanibalizasyon yok.",
   "published": "2026-08-12",
+  "modified": "2026-09-29",
 
   "pages": {
     "tr": {
@@ -126,7 +127,9 @@
         { "q": "Fotoğraflarım saklanıyor mu?",
           "a": "Suu'da yemek fotoğrafları analiz sonrası kalıcı olarak saklanmaz. Sesli girişte konuşma cihazın işletim sistemi tarafından metne çevrilir; ses kaydı Suu sunucularına gönderilmez. Reklam takibi yapılmaz ve veriler üçüncü taraflarla paylaşılmaz." },
         { "q": "Fotoğraftan çıkan kalori Apple Health'e yazılıyor mu?",
-          "a": "Evet. Suu kalori ve makro verilerini Apple Health (iOS) ve Google Health Connect (Android) ile çift yönlü senkronize eder, böylece diğer sağlık uygulamalarınla tutarlı kalır." }
+          "a": "Evet. Suu kalori ve makro verilerini Apple Health (iOS) ve Google Health Connect (Android) ile çift yönlü senkronize eder, böylece diğer sağlık uygulamalarınla tutarlı kalır." },
+        { "q": "Suu Apple Watch, Siri ve widget ile çalışıyor mu?",
+          "a": "Evet. Suu'nun Apple Watch uygulamasıyla bilekten su ekler, öğününü sesle kaydedersin (kalori analizi iPhone'daki Suu'da tamamlanır); yürüyüş, koşu, doğa yürüyüşü ve bisikleti saatin GPS'i ve canlı nabızla kaydedersin. iPhone yanında olmasa da su ve antrenman saatte kaydedilir, sonra eşitlenir. iPhone'da üç boyda (küçük, orta, büyük) ana ekran widget'ı var — iOS 17 ve üzerinde widget'tan tek dokunuşla su eklenir — ayrıca Live Activities ve Dynamic Island. Siri ile sesli su ekleme (en fazla 3 özel komut) Premium'a dahildir. Android'de ana ekran widget'ı var. Saat kadranı komplikasyonu ve kilit ekranı widget'ı yok." }
       ],
 
       "references": [
@@ -266,7 +269,9 @@
         { "q": "Are my photos stored?",
           "a": "In Suu, meal photos are not stored permanently after analysis. With voice entry, speech is converted to text by your device's operating system — the audio is never sent to Suu servers. There is no ad tracking and data is not shared with third parties." },
         { "q": "Do the calories from a photo sync to Apple Health?",
-          "a": "Yes. Suu syncs calorie and macro data two-way with Apple Health (iOS) and Google Health Connect (Android), so it stays consistent with your other health apps." }
+          "a": "Yes. Suu syncs calorie and macro data two-way with Apple Health (iOS) and Google Health Connect (Android), so it stays consistent with your other health apps." },
+        { "q": "Does Suu work on Apple Watch, with Siri and with widgets?",
+          "a": "Yes. With Suu's Apple Watch app you add water from your wrist, log a meal by voice (the calorie analysis finishes in Suu on your iPhone) and record walks, runs, hikes and rides with the watch's GPS and live heart rate. Water and workouts are saved on the watch even when your iPhone isn't nearby and sync later. On iPhone there are Home Screen widgets in three sizes (small, medium, large) — on iOS 17 and later you add water from the widget with one tap — plus Live Activities and Dynamic Island. Adding water by voice with Siri (up to 3 custom phrases) is part of Premium. Android has a home-screen widget. There are no watch-face complications and no Lock Screen widgets." }
       ],
 
       "references": [

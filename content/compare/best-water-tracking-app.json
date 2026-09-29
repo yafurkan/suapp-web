@@ -1,7 +1,7 @@
 {
   "_note": "SU SÜTUNU GİRİŞ SAYFASI — üç para sorgusundan yapay zekâ aramalarında en güçlü olanı (project_geo_en_baseline, 2026-08-17: 'best water tracking app' sorgusunda kendi sayfalarımız alıntılanıyor). 2026-08-24'te elle yazılmış HTML'den boru hattına taşındı. Taşımada düzeltilen canlı yanlış iddialar: '5.0 App Store' (rating_app_store null — teyit edilmemiş), tabloda 'Apple Watch Support ✓' (Watch uygulaması yolda), '100+ içecek' (kanon 91), 'Arabic & Turkish & English' (7 dil). Waterllama eklendi — gerçek rakip, sitede hiç geçmiyordu. Hedef sorgular: best water tracking app, best water reminder app, best hydration app, WaterMinder alternative.",
   "published": "2026-03-15",
-  "modified": "2026-09-14",
+  "modified": "2026-09-29",
   "pages": {
     "en": {
       "slug": "best-water-tracking-app",
@@ -368,10 +368,10 @@
             ]
           },
           {
-            "label": "Home and Lock Screen widgets",
+            "label": "Home Screen widgets",
             "cells": [
               {
-                "text": "✓",
+                "text": "✓ one-tap add",
                 "cls": "yes"
               },
               {
@@ -1022,10 +1022,10 @@
             ]
           },
           {
-            "label": "Widgets (Home- und Sperrbildschirm)",
+            "label": "Homescreen-Widgets",
             "cells": [
               {
-                "text": "✓",
+                "text": "✓ Wasser mit einem Tipp",
                 "cls": "yes"
               },
               {
@@ -1626,10 +1626,10 @@
             ]
           },
           {
-            "label": "Widget schermata Home e Blocco",
+            "label": "Widget nella schermata Home",
             "cells": [
               {
-                "text": "✓",
+                "text": "✓ acqua con un tocco",
                 "cls": "yes"
               },
               {
@@ -2230,10 +2230,10 @@
             ]
           },
           {
-            "label": "Віджети на екрані блокування й домашньому",
+            "label": "Віджети на головному екрані",
             "cells": [
               {
-                "text": "✓",
+                "text": "✓ вода одним дотиком",
                 "cls": "yes"
               },
               {

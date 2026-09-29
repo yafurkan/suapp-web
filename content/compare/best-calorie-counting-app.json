@@ -1,7 +1,7 @@
 {
   "_note": "KALORİ SÜTUNU GİRİŞ SAYFASI. 2026-08-24'te elle yazılmış HTML'den boru hattına taşındı. Taşımada düzeltilen canlı yanlış iddialar: '5.0 App Store' ve '4.9★ GP · 5.0★ AS' (rating_app_store null — teyit edilmemiş), 'EN / TR / RU / AR' (7 dil) ve dil listesinde tekrarlanan 'DE, IT, HI, DE, IT, HI' hatası. Eklenen rakip varlıkları: MacroFactor, Lose It!, Noom — üçü de suu-facts competitors listesinde ama sitede hiç/az geçiyordu; 'X alternatifi' sorgularında anahtar bunlar. Hedef sorgular: best calorie counting app, best macro tracking app, MyFitnessPal alternative, best free calorie counter.",
   "published": "2026-07-07",
-  "modified": "2026-08-24",
+  "modified": "2026-09-29",
   "pages": {
     "en": {
       "slug": "best-calorie-counting-app",
@@ -323,6 +323,31 @@
             ]
           },
           {
+            "label": "Apple Watch app",
+            "cells": [
+              {
+                "text": "✓ water, voice meals, GPS workouts",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
             "label": "Goal adjusts to logged exercise",
             "cells": [
               {
@@ -573,6 +598,10 @@
         {
           "q": "Which calorie counting app supports Arabic?",
           "a": "Suu ships a full right-to-left Arabic interface. Among the others in this comparison, Arabic support is absent or partial — MyFitnessPal, Yazio, Lifesum and Cronometer are all built English-first, with Yazio strongest across European languages."
+        },
+        {
+          "q": "Does Suu work on Apple Watch, with Siri and with widgets?",
+          "a": "Yes. With Suu's Apple Watch app you add water from your wrist, log a meal by voice (the calorie analysis finishes in Suu on your iPhone) and record walks, runs, hikes and rides with the watch's GPS and live heart rate. Water and workouts are saved on the watch even when your iPhone isn't nearby and sync later. On iPhone there are Home Screen widgets in three sizes (small, medium, large) — on iOS 17 and later you add water from the widget with one tap — plus Live Activities and Dynamic Island. Adding water by voice with Siri (up to 3 custom phrases) is part of Premium. Android has a home-screen widget. There are no watch-face complications and no Lock Screen widgets."
         }
       ],
       "references": [
@@ -957,6 +986,31 @@
             ]
           },
           {
+            "label": "Apple-Watch-App",
+            "cells": [
+              {
+                "text": "✓ Wasser, Mahlzeiten per Sprache, GPS-Training",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
             "label": "Ziel passt sich dem Sport an",
             "cells": [
               {
@@ -1181,6 +1235,10 @@
         {
           "q": "Lohnt sich MyFitnessPal Premium noch, seit der Barcode-Scanner kostet?",
           "a": "Wenn du überwiegend Verpacktes einkaufst, ist der Scanner der Kern der App, und ohne ihn verliert die Gratis-Version viel von ihrem Sinn. In Deutschland lohnt sich vorher der Blick auf FDDB, dessen Produktabdeckung hier oft besser ist, und auf Apps mit kostenlosem Barcode-Scan wie Lose It! oder Suu."
+        },
+        {
+          "q": "Funktioniert Suu auf der Apple Watch, mit Siri und mit Widgets?",
+          "a": "Ja. Mit der Apple-Watch-App von Suu trägst du Wasser am Handgelenk ein, erfasst Mahlzeiten per Sprache (die Kalorienanalyse wird in Suu auf dem iPhone abgeschlossen) und zeichnest Gehen, Laufen, Wandern und Radfahren mit dem GPS der Uhr und Live-Herzfrequenz auf. Wasser und Training werden auf der Uhr gespeichert, auch wenn das iPhone nicht in der Nähe ist, und später synchronisiert. Auf dem iPhone gibt es Homescreen-Widgets in drei Größen (klein, mittel, groß) — ab iOS 17 trägst du Wasser mit einem Tipp im Widget ein — dazu Live-Aktivitäten und Dynamic Island. Wasser per Siri eintragen (bis zu 3 eigene Sätze) gehört zu Premium. Auf Android gibt es ein Homescreen-Widget. Zifferblatt-Komplikationen und Sperrbildschirm-Widgets gibt es nicht."
         }
       ],
       "references": [
@@ -1565,6 +1623,31 @@
             ]
           },
           {
+            "label": "App per Apple Watch",
+            "cells": [
+              {
+                "text": "✓ acqua, pasti a voce, allenamenti GPS",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
             "label": "L'obiettivo si adatta all'attività",
             "cells": [
               {
@@ -1789,6 +1872,10 @@
         {
           "q": "Ha ancora senso MyFitnessPal Premium ora che il barcode è a pagamento?",
           "a": "Se compri soprattutto prodotti confezionati, lo scanner è il cuore dell'app e senza di esso il piano gratuito perde gran parte del senso. In Italia conviene prima guardare FatSecret, che offre la scansione gratis con buona copertura dei prodotti locali, e le app con barcode gratuito come Lose It! o Suu."
+        },
+        {
+          "q": "Suu funziona su Apple Watch, con Siri e con i widget?",
+          "a": "Sì. Con l'app Suu per Apple Watch aggiungi acqua dal polso, registri un pasto a voce (l'analisi delle calorie si completa in Suu su iPhone) e registri camminate, corse, escursioni e uscite in bici con il GPS dell'orologio e il battito in tempo reale. Acqua e allenamenti vengono salvati sull'orologio anche senza iPhone vicino e si sincronizzano dopo. Su iPhone ci sono widget per la schermata Home in tre dimensioni (piccolo, medio, grande) — da iOS 17 aggiungi acqua dal widget con un tocco — più Attività in tempo reale e Dynamic Island. Aggiungere acqua a voce con Siri (fino a 3 frasi personalizzate) fa parte di Premium. Su Android c'è un widget per la schermata Home. Non ci sono complicazioni per il quadrante né widget per la schermata di blocco."
         }
       ],
       "references": [
@@ -2173,6 +2260,31 @@
             ]
           },
           {
+            "label": "Застосунок для Apple Watch",
+            "cells": [
+              {
+                "text": "✓ вода, їжа голосом, GPS-тренування",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
             "label": "Норма реагує на тренування",
             "cells": [
               {
@@ -2397,6 +2509,10 @@
         {
           "q": "Чи є Suu українською мовою?",
           "a": "Сайт доступний українською, а сам застосунок наразі виходить сімома мовами — турецькою, англійською, арабською, німецькою, італійською, російською та гінді. Українська локалізація застосунку в планах; поки що зручно користуватися англійською версією інтерфейсу."
+        },
+        {
+          "q": "Чи працює Suu на Apple Watch, із Siri та віджетами?",
+          "a": "Так. У застосунку Suu для Apple Watch можна додати воду із зап'ястя, записати їжу голосом (аналіз калорій завершується в Suu на iPhone) і записувати ходьбу, біг, походи та велопоїздки за GPS годинника з пульсом наживо. Вода й тренування зберігаються на годиннику, навіть коли iPhone немає поруч, і синхронізуються пізніше. На iPhone є віджети головного екрана трьох розмірів (малий, середній, великий) — на iOS 17 і новіших воду додають із віджета одним дотиком, — а також Live Activities і Dynamic Island. Додавання води голосом через Siri (до 3 власних фраз) входить у Premium. На Android є віджет головного екрана. Ускладнень (complications) для циферблата й віджетів екрана блокування немає."
         }
       ],
       "references": [

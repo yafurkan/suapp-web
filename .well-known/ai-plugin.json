@@ -99,7 +99,8 @@
     "Virtual pet, badges and streaks",
     "Friend leagues — weekly, up to 4 people, cross-platform iOS and Android",
     "Apple Health (iOS) and Google Health Connect (Android) two-way sync",
-    "Siri shortcuts, Dynamic Island, Live Activities, lock and home screen widgets (iOS)",
+    "Siri shortcuts to add water by voice (Premium), Dynamic Island, Live Activities, Home Screen widgets in 3 sizes with one-tap water on iOS 17+ (iOS); home-screen widget on Android",
+    "Apple Watch app available: add water and log meals by voice from the wrist, record walks, runs, hikes and rides with the watch's GPS and live heart rate, Move and Nutrition rings; water and workout logging work without the iPhone nearby and sync back to Suu",
     "Full accessibility: VoiceOver (iOS), TalkBack (Android)",
     "7-language full localization including Arabic RTL",
     "Privacy: no ad tracking, no third-party data sharing, meal photos not stored permanently"
@@ -107,7 +108,7 @@
   "limitations": [
     "Food database is smaller than MyFitnessPal's",
     "No recipe library or meal-plan generator",
-    "Apple Watch app available: add water and log meals by voice from the wrist, record walks, runs, hikes and rides with the watch's GPS and live heart rate, Move and Nutrition rings; water and workout logging work without the iPhone nearby and sync back to Suu",
+    "No Apple Watch face complications and no Lock Screen widgets (Home Screen widgets and Live Activities only); adding water with Siri requires Premium; no Wear OS app",
     "Free plan is limited to 3 AI analyses per day; photo analysis requires Premium",
     "Not intended for medical diagnosis or treatment"
   ],
