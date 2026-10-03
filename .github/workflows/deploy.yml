@@ -11,12 +11,13 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
 jobs:
   deploy:
+    # Kilit yalnızca yayın işinde: iş akışı düzeyinde olsaydı IndexNow işinin
+    # 60 sn beklemesi sıradaki yayını da bekletirdi.
+    concurrency:
+      group: "pages"
+      cancel-in-progress: false
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -36,8 +37,9 @@ jobs:
       # README.md ve app-readme.md de geliştirici notu, site sayfası değil:
       # app-readme.md eski iddialar taşıyordu ve suuapp.com/app-readme.md
       # adresinden okunabiliyordu (yapay zekâ tarayıcıları dahil).
+      # assets altındaki README'ler de yalnızca dosya yerleşimi notu.
       - name: Yayından build girdilerini çıkar
-        run: rm -rf worker scripts content README.md app-readme.md
+        run: rm -rf worker scripts content README.md app-readme.md assets/screenshots/README.md assets/special/README.md
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

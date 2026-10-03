@@ -46,6 +46,10 @@ UNPUBLISHED_DIRS = ("worker/", "scripts/", "content/", ".github/")
 # Sayfanın kendisi noindex diyorsa (hediye kodu, sponsor, panel…) bildirilmez —
 # EXCLUDE listesinde unutulan yeni bir noindex sayfası da böylece kaçmaz.
 RE_NOINDEX = re.compile(r"<meta\b[^>]*\bname=[\"']robots[\"'][^>]*\bnoindex", re.I)
+# Yönlendirme sayfaları (meta refresh) ve kanonik adresi başka bir URL olan
+# kopyalar bildirilmez — motora "bu adres değişti, tara" demek yanlış sinyal.
+RE_REFRESH = re.compile(r"<meta\b[^>]*\bhttp-equiv=[\"']refresh[\"']", re.I)
+RE_CANONICAL = re.compile(r"<link\b[^>]*\brel=[\"']canonical[\"'][^>]*\bhref=[\"']([^\"']+)[\"']", re.I)
 
 
 def find_key() -> tuple[str, str]:
@@ -121,12 +125,18 @@ def indexable_urls(paths: list[str]) -> list[str]:
                 or path.startswith(UNPUBLISHED_DIRS)):
             continue
         local = ROOT / path
+        url = to_url(path)
         try:
-            if local.exists() and RE_NOINDEX.search(local.read_text(encoding="utf-8")):
-                continue
+            if local.exists():
+                html = local.read_text(encoding="utf-8")
+                if RE_NOINDEX.search(html) or RE_REFRESH.search(html):
+                    continue
+                canon = RE_CANONICAL.search(html)
+                if canon and canon.group(1).split("#")[0] not in (url, f"{BASE}/{path}"):
+                    continue
         except (OSError, UnicodeDecodeError):
             pass
-        urls.append(to_url(path))
+        urls.append(url)
     return sorted(set(urls))
 
 
@@ -139,9 +149,10 @@ def sitemap_urls() -> list[str]:
 
 
 def to_url(rel: str) -> str:
-    rel = rel.lstrip("./")
-    if rel == "index.html":
-        return f"{BASE}/"
+    rel = rel.removeprefix("./").lstrip("/")
+    # Klasör sayfaları kanonik olarak eğik çizgiyle sunulur (/, /donations/receipts/)
+    if rel == "index.html" or rel.endswith("/index.html"):
+        return f"{BASE}/{rel[:-len('index.html')]}"
     return f"{BASE}/{rel}"
 
 

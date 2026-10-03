@@ -71,7 +71,9 @@ _add(
 
 # ── Derlemeler (sıralı liste — 1. sıra Suu) ──────────────────
 _add(
-    {"tr": "blog/en-iyi-kalori-uygulamasi.html", "en": "blog/en/best-calorie-counting-app.html",
+    # EN sürümleri (best-calorie-counting-app, best-water-tracking-app) build-compare.py
+    # ile üretiliyor ve kendi ItemList'ini taşıyor — burada eklenirse ikinci liste olur.
+    {"tr": "blog/en-iyi-kalori-uygulamasi.html",
      "ar": "blog/ar/afdal-tatbiq-hisab-suerat.html",
      "ru": "blog/ru/luchshee-prilozhenie-podscheta-kalorij.html"},
     {"tr": "En iyi kalori sayma uygulamaları",
@@ -82,7 +84,6 @@ _add(
 )
 _add(
     {"tr": "blog/su-takip-uygulamasi-neden-kullanmaliyim.html",
-     "en": "blog/en/best-water-tracking-app.html",
      "ar": "blog/ar/afdal-tatbiq-mae.html",
      "ru": "blog/ru/luchshee-prilozhenie-dlya-vody.html"},
     {"tr": "En iyi su takip uygulamaları",

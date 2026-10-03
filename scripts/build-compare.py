@@ -536,7 +536,14 @@ def main() -> int:
             page_published, modified_iso = page_dates(data, page)
             shown = page.get("published_display") or display_date(lang, page_published)
             published_iso = page_published if display_shows(lang, shown, page_published) else ""
-            if not published_iso:
+            if published_iso:
+                # Elle yazılmış metin aynı tarihi gösteriyorsa languages.json
+                # biçimine normalize et: "Yayın" ve "Güncelleme" aynı biçimde
+                # ve aynı rakamlarla görünsün ("7 July 2026 · September 29, 2026" değil).
+                shown = display_date(lang, page_published)
+            else:
+                # Tarih uyuşmasa da rakamlar "Güncelleme" satırıyla aynı olsun (٢٤ → 24)
+                shown = shown.translate(_DIGITS)
                 notes.append(f"{topic}[{lang}]: published_display '{shown}' ≠ {page_published} — "
                              f"<time> basılmadı; pages.{lang}.published ekleyin")
 
@@ -560,6 +567,7 @@ def main() -> int:
             }
             ctx.update(page)          # sayfa değerleri varsayılanları ezer
             ctx["kind"] = kind        # tür klasörden gelir; JSON ezemez
+            ctx["published_display"] = shown   # normalize edilmiş biçim JSON'dakini ezer
             html = template.render(**ctx)
 
             target = ROOT / rel_path(lang, page["slug"])

@@ -156,7 +156,7 @@ def build_rules(facts: dict) -> list[dict]:
             "severity": ERROR,
             "pattern": re.compile(
                 r"(?i)(?<![\d.,])\b1\s?M\+"
-                r"|\b(?:1|bir)\s*milyon\s*\+?\s+(?:indirme|kullanıc)"
+                r"|(?<![\d.,]\s)(?<![\d.,])\b(?:1|bir)\s*milyon\s*\+?\s+(?:indirme|kullanıc)"
                 r"|(?<![\d.,]\s)(?<![\d.,])\b(?:1|one)\s*million\s+(?:users|downloads)"
                 r"|(?<![\d.,]\s)(?<![\d.,])\b(?:1|один|одного)\s*(?:млн|миллион)\w*\s+(?:пользовател|скачиван|загруз)"
                 r"|(?<![\d٠-٩]\s)(?<![\d٠-٩])مليون\s+(?:مستخدم|تحميل|تنزيل)"
@@ -197,6 +197,14 @@ def build_rules(facts: dict) -> list[dict]:
                 r"|(?:ال)?(?:عربية|تركية|روسية|إنجليزية)(?:\s*/\s*(?:ال)?(?:عربية|تركية|روسية|إنجليزية)){3}(?!\s*/)"
                 r"|(?:لل|بال|ال)(?:عربية|تركية|روسية|إنجليزية)"
                 r"(?:\s+(?:أو\s+)?و?(?:ال)?(?:عربية|تركية|روسية|إنجليزية)){3}(?!\s+(?:و|أو))"
+                # TR/EN kelime listeleri: "Türkçe, İngilizce, Arapça ve Rusça" / "English, Arabic, Turkish and Russian"
+                # — liste 7 dile devam ediyorsa (Almanca/German…) eşleşmez
+                r"|(?:T[üu]rk[çc]e|[İI]ngilizce|Rus[çc]a|Arap[çc]a)(?:\s*\(RTL\))?"
+                r"(?:(?:\s*,\s*|\s+(?:ve|veya)\s+)(?:T[üu]rk[çc]e|[İI]ngilizce|Rus[çc]a|Arap[çc]a)(?:\s*\(RTL\))?){3}"
+                r"(?!\s*(?:,|ve)\s*(?:Almanca|[İI]talyanca|Hint[çc]e))"
+                r"|(?:Turkish|English|Russian|Arabic)(?:\s*\(RTL\))?"
+                r"(?:(?:\s*,\s*|,?\s+(?:and|or)\s+)(?:Turkish|English|Russian|Arabic)(?:\s*\(RTL\))?){3}"
+                r"(?!\s*(?:,|and)\s*(?:German|Italian|Hindi))"
             ),
             "message": "Eski 4'lü dil listesi (TR / EN / RU / AR)",
             "fix": f"{lang_count} dil: Türkçe, English, العربية, Deutsch, Italiano, Русский, हिन्दी",
@@ -219,8 +227,9 @@ def build_rules(facts: dict) -> list[dict]:
             "id": "app-store-rating-claim",
             "severity": ERROR,
             "pattern": re.compile(
-                r"(?i)(?<![\d.,])5[.,]0\s*★?\s*(?:App\s*Store|AS\b)"
-                r"|App\s*Store[^<\n\d]{0,12}5[.,]0\s*★"
+                # "AS" büyük harfe duyarlı: İngilizce "as" kelimesi eşleşmesin
+                r"(?<![\d.,])5[.,]0\s*★?\s*(?:(?i:App\s*Store)|AS\b)"
+                r"|(?i:App\s*Store)[^<\n\d]{0,12}5[.,]0\s*★"
             ),
             "message": "Doğrulanmamış App Store puanı (rating_app_store null)",
             "fix": f"yalnızca Google Play puanı: {facts['numbers']['rating_google_play']}★ "
