@@ -55,7 +55,12 @@ def build_rules(facts: dict) -> list[dict]:
             "severity": ERROR,
             "pattern": re.compile(
                 r"(?i)\b100\s*\+?\s*(?:farkl[ıi]\s+)?"
-                r"(?:i[çc]ecek|beverage|drink|напитк|مشروب)",
+                r"(?:i[çc]ecek|beverage|drink|напитк|مشروب)"
+                # 2026-10-03: araya kelime giren varyantlar ("100+ other drinks",
+                # "أكثر من 100 فئة مشروبات", ASCII "100'den fazla icecek") kaçıyordu.
+                r"|\b100\s*\+\s*other\s+(?:drinks|beverages)"
+                r"|\b100'?(?:den|ün)?\s+fazla\s+i[çc]ecek"
+                r"|أكثر\s+من\s+100\s+(?:فئة|نوع)",
             ),
             "message": "Eski içecek sayısı ('100+')",
             "fix": f"{beverages} içecek",
@@ -95,7 +100,9 @@ def build_rules(facts: dict) -> list[dict]:
                 r"(?i)single-handedly|built by one developer|by a single developer|as a solo developer|"
                 r"tek başına geliştir|tek geliştiricisi|bireysel olarak geliştiril|"
                 r"بواسطة مطور واحد|يطوّره مطوّر واحد|одним разработчиком|делает один разработчик|"
-                r"eines einzelnen Entwicklers|da un solo sviluppatore|один розробник"
+                r"eines einzelnen Entwicklers|da un solo sviluppatore|один розробник|"
+                # 2026-10-03: hakkımızda sayfalarında kaçan varyantlar (ASCII Türkçe dahil)
+                r"\bsole developer|tek gelistiricisi|tek basina gelistir|единственн\w*\s+разработчик|من الصفر بمفرده"
             ),
             "message": "'Tek geliştirici' iddiası — Suu iki kişilik bağımsız ekip",
             "fix": "küçük bağımsız ekip (Furkan Mert Fındıklı + Mert Öz)",
@@ -140,7 +147,85 @@ def build_rules(facts: dict) -> list[dict]:
             "message": "Alkol için negatif hidrasyon katsayısı yazılmış — platformlar arasında farklı, yayınlanmamalı",
             "fix": "niteliksel anlatım: alkol su hedefini 10 ml saf alkol başına +250 ml artırır",
         },
+        {
+            # 2026-10-03: Suu'nun kullanıcı/indirme sayısı hiçbir yerde doğrulanmadı
+            # (".github/workflows/index.html"deki "1 Milyon Kullanıcı" ve blogdaki "1M+ İndirme"
+            # kaldırıldı). Yalnızca Suu'ya ait olabilecek "1 milyon / 1M+" kalıpları yakalanır;
+            # "200 million users" gibi kaynaklı rakip sayıları (önünde başka rakam var) serbest.
+            "id": "user-count-claim",
+            "severity": ERROR,
+            "pattern": re.compile(
+                r"(?i)(?<![\d.,])\b1\s?M\+"
+                r"|\b(?:1|bir)\s*milyon\s*\+?\s+(?:indirme|kullanıc)"
+                r"|(?<![\d.,]\s)(?<![\d.,])\b(?:1|one)\s*million\s+(?:users|downloads)"
+                r"|(?<![\d.,]\s)(?<![\d.,])\b(?:1|один|одного)\s*(?:млн|миллион)\w*\s+(?:пользовател|скачиван|загруз)"
+                r"|(?<![\d٠-٩]\s)(?<![\d٠-٩])مليون\s+(?:مستخدم|تحميل|تنزيل)"
+                r"|\b1\s*(?:Million|Mio\.?)\s+(?:Nutzer|Downloads)"
+                r"|\b(?:1|un)\s*milione\s+di\s+(?:utenti|download)"
+                r"|(?<![\d.,]\s)(?<![\d.,])\b(?:1|один)\s*(?:млн|мільйон)\w*\s+(?:користувач|завантаж)"
+            ),
+            "message": "Doğrulanmamış kullanıcı/indirme sayısı ('1M+', '1 milyon kullanıcı')",
+            "fix": "kullanıcı sayısı yazma; doğrulanmış tek sayı: Google Play 4.9★ (2.847 değerlendirme)",
+        },
+        {
+            # 2026-10-03: "used by thousands / binlerce kişinin güvendiği" — sayım yok.
+            # "binlerce kişi her ay ... arıyor" gibi arama hacmi cümleleri serbest.
+            "id": "thousands-users-claim",
+            "severity": ERROR,
+            "pattern": re.compile(
+                r"(?i)(?:used|trusted)\s+by\s+thousands|thousands\s+of\s+(?:users|expectant\s+mothers)"
+                r"|binlerce\s+(?:kullanıc|ki[şs]inin\s+(?:g[üu]vendi|kullandı)|anne)"
+                r"|тысяч\w*\s+пользовател|(?:доверяют|пользуются)\s+тысячи"
+                r"|(?:يثق\s+به|يستخدمه)\s+الآلاف|آلاف\s+(?:المستخدمين|الأمهات)"
+            ),
+            "message": "Doğrulanmamış 'binlerce kullanıcı' iddiası",
+            "fix": "nötr anlatım (kullanıcı sayısı olmadan): 'su, kalori ve egzersiz takip uygulaması Suu'",
+        },
+        {
+            # 2026-10-03: uygulama 7 dilde; "TR / EN / RU / AR", "русский/турецкий/арабский/английский",
+            # "للتركية والإنجليزية والروسية والعربية" gibi 4'lü listeler eski. Dört dilden
+            # sonra liste devam ediyorsa ("… / DE / IT / HI") bulgu sayılmaz.
+            "id": "stale-4-language-list",
+            "severity": ERROR,
+            "pattern": re.compile(
+                r"(?<![/\w])(?<!/\s)(?:TR|EN|RU|AR)(?:\s*/\s*(?:TR|EN|RU|AR)){3}\b(?!\s*/)"
+                r"|(?:T[üu]rk[çc]e|[İI]ngilizce|Rus[çc]a|Arap[çc]a)"
+                r"(?:\s*/\s*(?:T[üu]rk[çc]e|[İI]ngilizce|Rus[çc]a|Arap[çc]a)){3}(?!\s*/)"
+                r"|(?:русск|турецк|арабск|английск)\w*(?:\s*/\s*(?:русск|турецк|арабск|английск)\w*){3}(?!\s*/)"
+                r"|(?:русск|турецк|арабск|английск)\w*,\s*(?:русск|турецк|арабск|английск)\w*,\s*"
+                r"(?:русск|турецк|арабск|английск)\w*,?\s+(?:и|или)\s+(?:русск|турецк|арабск|английск)\w*"
+                r"|(?:ال)?(?:عربية|تركية|روسية|إنجليزية)(?:\s*/\s*(?:ال)?(?:عربية|تركية|روسية|إنجليزية)){3}(?!\s*/)"
+                r"|(?:لل|بال|ال)(?:عربية|تركية|روسية|إنجليزية)"
+                r"(?:\s+(?:أو\s+)?و?(?:ال)?(?:عربية|تركية|روسية|إنجليزية)){3}(?!\s+(?:و|أو))"
+            ),
+            "message": "Eski 4'lü dil listesi (TR / EN / RU / AR)",
+            "fix": f"{lang_count} dil: Türkçe, English, العربية, Deutsch, Italiano, Русский, हिन्दी",
+        },
+        {
+            # Karşılaştırma yazılarında mutlak hüküm yerine "X için en iyisi" dili kullanılır
+            # (competitors.wedge). Yalnızca açık kalıplar — "en iyi" tek başına serbest.
+            "id": "superlative-claim",
+            "severity": WARN,
+            "pattern": re.compile(r"(?i)clearly the best|الأفضل بوضوح|bariz en iyi|açık ara en iyi"),
+            "message": "Mutlak üstünlük iddiası ('bariz en iyi / clearly the best')",
+            "fix": "'… istiyorsan en uygun seçenek' gibi koşullu ifade",
+        },
     ]
+
+    # App Store puanı: suu-facts'te null iken sitede "5.0 App Store / 5.0★ AS" yazılamaz.
+    # Gerçek puan girilince kural kendiliğinden kapanır.
+    if facts["numbers"].get("rating_app_store") is None:
+        rules.append({
+            "id": "app-store-rating-claim",
+            "severity": ERROR,
+            "pattern": re.compile(
+                r"(?i)(?<![\d.,])5[.,]0\s*★?\s*(?:App\s*Store|AS\b)"
+                r"|App\s*Store[^<\n\d]{0,12}5[.,]0\s*★"
+            ),
+            "message": "Doğrulanmamış App Store puanı (rating_app_store null)",
+            "fix": f"yalnızca Google Play puanı: {facts['numbers']['rating_google_play']}★ "
+                   f"({facts['numbers']['rating_count_google_play']} değerlendirme)",
+        })
 
     # Apple Watch: mağaza açıklaması "yakında" diyorsa, "var" iddiaları hatadır.
     if watch == "coming_soon":
