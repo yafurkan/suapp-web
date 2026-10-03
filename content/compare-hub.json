@@ -8,10 +8,10 @@
       "h1": "Uygulama Karşılaştırmaları: Kalori, Egzersiz ve Su Takibi",
       "meta": {
         "title": "Kalori, Egzersiz ve Su Takip Uygulaması Karşılaştırmaları (2026) | Suu",
-        "description": "Kalori sayma, egzersiz takibi ve su takibi uygulamalarının tek tek karşılaştırıldığı 15 inceleme: MyFitnessPal, Yazio, Cal AI, Lifesum, Cronometer, Strava ve Suu. Hangisi kime uygun?",
+        "description": "Kalori sayma, egzersiz takibi ve su takibi uygulamalarının tek tek karşılaştırıldığı 12 inceleme: MyFitnessPal, Yazio, Cal AI, Lifesum, Cronometer, Strava ve Suu. Hangisi kime uygun?",
         "keywords": "kalori uygulaması karşılaştırma, en iyi kalori sayma uygulaması, egzersiz takip uygulaması, su takip uygulaması, MyFitnessPal alternatifi, Yazio alternatifi, Cal AI alternatifi",
         "og_title": "Kalori, Egzersiz ve Su Takip Uygulaması Karşılaştırmaları (2026)",
-        "og_description": "15 karşılaştırma tek sayfada: MyFitnessPal, Yazio, Cal AI, Lifesum, Cronometer, Strava ve Suu. Hangisi kime uygun?"
+        "og_description": "12 karşılaştırma tek sayfada: MyFitnessPal, Yazio, Cal AI, Lifesum, Cronometer, Strava ve Suu. Hangisi kime uygun?"
       },
       "answer": "Kalori sayacı seçerken üç şey belirleyici: yemek girişinin ne kadar hızlı olduğu, ücretsiz katmanın gerçekten işe yarayıp yaramadığı ve egzersizin günlük hedefini güncelleyip güncellemediği. Aşağıdaki karşılaştırmalar bu üç ölçütü uygulama uygulama inceliyor.",
       "intro": [
@@ -26,6 +26,7 @@
           "accent": "calories",
           "pages": [
             "blog/en-iyi-kalori-uygulamasi.html",
+            "blog/yazio-alternatifleri.html",
             "blog/en-iyi-fotografla-kalori-uygulamasi.html",
             "blog/ucretsiz-kalori-sayaci.html",
             "blog/suu-vs-myfitnesspal.html",
@@ -78,6 +79,7 @@
           "accent": "calories",
           "pages": [
             "blog/en/best-calorie-counting-app.html",
+            "blog/en/yazio-alternatives.html",
             "blog/en/best-photo-calorie-app.html",
             "blog/en/free-calorie-counter-app.html",
             "blog/en/suu-vs-myfitnesspal.html",
@@ -144,6 +146,7 @@
           "accent": "calories",
           "pages": [
             "blog/ar/afdal-tatbiq-hisab-suerat.html",
+            "blog/ar/badail-yazio.html",
             "blog/ar/suu-vs-myfitnesspal.html",
             "blog/ar/suu-vs-yazio.html"
           ]
@@ -191,6 +194,7 @@
           "accent": "calories",
           "pages": [
             "blog/ru/luchshee-prilozhenie-podscheta-kalorij.html",
+            "blog/ru/alternativy-yazio.html",
             "blog/ru/suu-vs-myfitnesspal.html",
             "blog/ru/suu-vs-yazio.html"
           ]
@@ -237,7 +241,8 @@
           "blurb": "Foto- und Spracheingabe, Gratis-Umfang, Datenbanken und Makro-Tracking im Vergleich.",
           "accent": "calories",
           "pages": [
-            "blog/de/bester-kalorienzaehler-app.html"
+            "blog/de/bester-kalorienzaehler-app.html",
+            "blog/de/yazio-alternativen.html"
           ]
         },
         {
@@ -282,7 +287,8 @@
           "blurb": "Inserimento con foto e voce, piano gratuito, database e tracciamento dei macro a confronto.",
           "accent": "calories",
           "pages": [
-            "blog/it/migliore-app-conta-calorie.html"
+            "blog/it/migliore-app-conta-calorie.html",
+            "blog/it/alternative-a-yazio.html"
           ]
         },
         {
@@ -327,7 +333,8 @@
           "blurb": "Запис фото й голосом, безкоштовний тариф, бази продуктів і облік макросів.",
           "accent": "calories",
           "pages": [
-            "blog/uk/najkrashchyj-lichylnyk-kalorij.html"
+            "blog/uk/najkrashchyj-lichylnyk-kalorij.html",
+            "blog/uk/alternatyvy-yazio.html"
           ]
         },
         {

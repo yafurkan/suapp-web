@@ -39,7 +39,7 @@ MONTHS = months()
 # Kalıplar tüm dillerin slug'larını kapsamalı; etiketler content/languages.json'da.
 TOPIC_LABELS = blog_topics()
 TOPICS = [
-    (r"vs|karsilastir|karşılaştır|versus|vergleich|confronto|porivn", "⚖️", "#0072C6,#43A047", "comparison"),
+    (r"vs|karsilastir|karşılaştır|versus|vergleich|confronto|porivn|alternati|alternaty|badail", "⚖️", "#0072C6,#43A047", "comparison"),
     (r"egzersiz|workout|exercise|antren|allenamento|sport|trenuvan", "🏃", "#2E9E4F,#66BB6A", "exercise"),
     (r"kalori|calorie|makro|macro|beslenme|nutrition|kalorien", "🔥", "#F57C00,#FFB74D", "calories"),
     (r"foto|photo", "📸", "#7B1FA2,#BA68C8", "photo"),
