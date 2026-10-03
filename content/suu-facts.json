@@ -109,11 +109,12 @@
       "tr",
       "en",
       "ar",
-      "ru"
-    ],
-    "site_planned": [
+      "ru",
       "de",
       "it",
+      "uk"
+    ],
+    "site_planned": [
       "hi"
     ]
   },
@@ -164,7 +165,8 @@
         "Suu Endeksi — 0-100 hidrasyon skoru",
         "Ana Beyin — adaptif hedef motoru",
         "Akıllı bildirimler: yemek sonrası sindirim suyu, sabah ilk yudum",
-        "Apple Watch'tan su ekleme — iPhone yanında olmasa da kaydedilir, sonra Suu ile eşitlenir"
+        "Apple Watch'tan su ekleme — iPhone yanında olmasa da kaydedilir, sonra Suu ile eşitlenir",
+        "Ramazan'da iftar ve sahur saatlerine göre su hatırlatıcısı gönderebilir"
       ]
     },
     {
@@ -627,12 +629,14 @@
       {
         "name": "Furkan Mert Fındıklı",
         "role": "Kurucu & Geliştirici",
-        "photo": "assets/team/furkan.jpg"
+        "photo": "assets/team/furkan.jpg",
+        "id": "https://suuapp.com/#furkan"
       },
       {
         "name": "Mert Öz",
         "role": "Yazılım Geliştirici",
-        "photo": "assets/team/mert.jpg"
+        "photo": "assets/team/mert.jpg",
+        "id": "https://suuapp.com/#mert"
       }
     ],
     "indie_note": {
@@ -644,7 +648,20 @@
       "ru": "Suu — не продукт агентства или студии: его разрабатывает небольшая независимая команда из двух человек в Стамбуле — основатель Furkan Mert Fındıklı и разработчик Mert Öz.",
       "uk": "Suu — не продукт агентства чи студії: його розробляє невелика незалежна команда з двох людей у Стамбулі — засновник Furkan Mert Fındıklı та розробник Mert Öz.",
       "hi": "Suu किसी एजेंसी या स्टूडियो का उत्पाद नहीं है — इसे इस्तांबुल की दो लोगों की एक छोटी स्वतंत्र टीम बनाती है: संस्थापक Furkan Mert Fındıklı और डेवलपर Mert Öz।"
-    }
+    },
+    "contributors": [
+      {
+        "name": "Emre Uzer",
+        "role": "İçerik Yazarı",
+        "id": "https://suuapp.com/#emre"
+      },
+      {
+        "name": "Doğukan Öztürk",
+        "role": "İçerik Yazarı",
+        "id": "https://suuapp.com/#dogukan"
+      }
+    ],
+    "_contributors_comment": "Sahibi 2026-10-03'te 'Suu Ekibi' imzalı yazıların yazarları olarak Mert Öz, Emre Uzer ve Doğukan Öztürk'ü verdi; yazılar kümeler hâlinde üçüne dağıtıldı. Emre ve Doğukan blog yazarıdır — 'iki kişilik geliştirme ekibi' anlatımı (indie_note) değişmez. Biyografi/LinkedIn gelince yazar sayfaları açılabilir."
   },
   "tech": {
     "framework": "Flutter",
@@ -667,7 +684,11 @@
       "Cronometer",
       "Cal AI",
       "Lose It!",
-      "Noom"
+      "Noom",
+      "FatSecret",
+      "FDDB",
+      "Melarossa",
+      "MacroFactor"
     ],
     "water": [
       "WaterMinder",
@@ -684,7 +705,8 @@
     "wedge": {
       "tr": "Rakiplerin hiçbiri su takibi, fotoğraftan kalori analizi ve GPS'li egzersiz takibini tek uygulamada, birbirini besleyecek şekilde sunmuyor — Suu'da harita üzerinde kaydettiğin koşu su hedefini, yemek de sindirim suyu ihtiyacını otomatik günceller.",
       "en": "No competitor combines water tracking, photo-based calorie analysis and live GPS exercise tracking in one app where they feed each other — in Suu, the run you record on the map updates your water goal and meals update your digestion water need automatically."
-    }
+    },
+    "_markets_comment": "Pazara göre öne çıkan yerel rakipler: DE → FDDB; IT → FatSecret, Melarossa; RU/UK → FatSecret; EN → Lose It!, MacroFactor. FatSecret'ın TR'deki ağırlığı teyit edilmedi (sahibi 2026-10-03: 'duymadım, önemli olabilir')."
   },
   "medical_disclaimer": {
     "tr": "Suu tıbbi teşhis veya tedavi amacıyla geliştirilmemiştir. Sağlıkla ilgili kararlar için bir sağlık profesyoneline danışın.",
@@ -726,7 +748,8 @@
         "Kullanıcı gece atıştırmasını bırakmak ve ne zaman yediğini görmek istiyor — her öğün saatiyle kaydedilir ve günün akışında görünür; atıştırmalık Apple Watch'tan bile sesle eklenebilir",
         "Kullanıcı kolayı bırakmak istiyor — Suu her kutunun şekerini gösterir, kolayı yaklaşık %60 hidrasyon sayar ve her 10 g şeker için su hedefini 100 ml artırır; sade soda tam sayılır (listenin tamamı Premium; ücretsiz planda içecek Suu AI asistanına söylenerek kaydedilir, günde 3 AI mesajı)",
         "Kullanıcı su içmeyi sürekli unutuyor — akıllı hatırlatıcılar (sabah ilk yudum, yemek sonrası), günlük seri ve Premium'da gece dehidrasyon bildirimleri",
-        "Kullanıcı sürekli yorgun ve az sıvı almanın payını görmek istiyor — Suu Endeksi (0–100) ile hava durumu ve egzersize göre değişen hedef, hidrasyonun gerçekten yeterli olup olmadığını gösterir"
+        "Kullanıcı sürekli yorgun ve az sıvı almanın payını görmek istiyor — Suu Endeksi (0–100) ile hava durumu ve egzersize göre değişen hedef, hidrasyonun gerçekten yeterli olup olmadığını gösterir",
+        "Kullanıcı Ramazan'da oruç tutuyor ve susuz kalmak istemiyor — Suu iftar ve sahur saatlerine göre su hatırlatıcısı gönderebilir ve iki öğün arasındaki suyu takip eder (ayrı bir oruç zamanlayıcısı yok)"
       ],
       "en": [
         "User wants water tracking, calorie counting and exercise tracking in ONE app rather than three",
@@ -749,7 +772,8 @@
         "User wants to stop late-night snacking and see when they actually eat — every meal is logged with its time on the day's timeline, and a snack can be logged by voice, even from Apple Watch",
         "User wants to quit soda — Suu shows each can's sugar, counts cola as about 60% hydration and raises the water goal by 100 ml per 10 g of sugar, while sparkling water counts fully (the full drink list is Premium; on the free plan, drinks are logged by telling the Suu AI assistant, 3 AI messages a day)",
         "User keeps forgetting to drink water — smart reminders (first sip in the morning, after meals), a daily streak and, on Premium, night-time dehydration alerts",
-        "User feels tired all the time and wants to rule out low fluid intake — the Suu Index (0–100) and a goal that adapts to weather and exercise show whether hydration is actually adequate"
+        "User feels tired all the time and wants to rule out low fluid intake — the Suu Index (0–100) and a goal that adapts to weather and exercise show whether hydration is actually adequate",
+        "User fasts during Ramadan and wants to stay hydrated — Suu can send water reminders timed to iftar and suhoor and tracks intake between them (there is no separate fasting timer)"
       ],
       "ar": [
         "يريد المستخدم تتبع الماء وحساب السعرات وتتبع التمارين في تطبيق واحد بدل ثلاثة تطبيقات منفصلة",
@@ -772,7 +796,8 @@
         "يريد المستخدم التوقف عن الأكل ليلًا ومعرفة متى يأكل فعلًا — تُسجَّل كل وجبة بوقتها على الخط الزمني لليوم، ويمكن تسجيل الوجبة الخفيفة بالصوت حتى من Apple Watch",
         "يريد المستخدم ترك المشروبات الغازية — يعرض Suu سكر كل علبة، ويحتسب الكولا ترطيبًا بنحو 60%، ويرفع هدف الماء 100 مل لكل 10 غرامات سكر، بينما يُحتسب الماء الفوّار كاملًا (قائمة المشروبات الكاملة ضمن Premium؛ في الخطة المجانية تُسجَّل المشروبات بإخبار مساعد Suu الذكي، 3 رسائل يوميًا)",
         "ينسى المستخدم شرب الماء باستمرار — تذكيرات ذكية (أول رشفة صباحًا، بعد الوجبات)، وسلسلة أيام، وفي Premium تنبيهات الجفاف الليلية",
-        "يشعر المستخدم بالتعب دائمًا ويريد استبعاد قلة السوائل — مؤشر Suu (0–100) وهدف يتكيّف مع الطقس والتمارين يوضّحان هل الترطيب كافٍ فعلًا"
+        "يشعر المستخدم بالتعب دائمًا ويريد استبعاد قلة السوائل — مؤشر Suu (0–100) وهدف يتكيّف مع الطقس والتمارين يوضّحان هل الترطيب كافٍ فعلًا",
+        "يصوم المستخدم في رمضان ويريد الحفاظ على الترطيب — يستطيع Suu إرسال تذكيرات بشرب الماء وفق موعدي الإفطار والسحور وتتبّع ما يشربه بينهما (لا يوجد مؤقّت منفصل للصيام)"
       ],
       "ru": [
         "Пользователь хочет отслеживать воду, калории и тренировки в ОДНОМ приложении, а не в трёх",
@@ -795,7 +820,8 @@
         "Пользователь хочет избавиться от ночного жора и видеть, когда он на самом деле ест — каждый приём пищи записывается со временем на ленте дня, перекус можно добавить голосом, даже с Apple Watch",
         "Пользователь хочет бросить газировку — Suu показывает сахар в каждой банке, засчитывает колу примерно на 60% как гидратацию и повышает норму воды на 100 мл за каждые 10 г сахара; газированная вода засчитывается полностью (полный список напитков — в Premium; в бесплатном плане напитки записываются через AI-ассистента Suu, 3 сообщения в день)",
         "Пользователь постоянно забывает пить воду — умные напоминания (первый глоток утром, после еды), серия дней и в Premium ночные уведомления об обезвоживании",
-        "Пользователь постоянно чувствует усталость и хочет исключить нехватку жидкости — Индекс Suu (0–100) и норма, которая меняется с погодой и тренировками, показывают, хватает ли на самом деле воды"
+        "Пользователь постоянно чувствует усталость и хочет исключить нехватку жидкости — Индекс Suu (0–100) и норма, которая меняется с погодой и тренировками, показывают, хватает ли на самом деле воды",
+        "Пользователь постится в Рамадан и хочет избежать обезвоживания — Suu может присылать напоминания о воде по времени ифтара и сухура и учитывает выпитое между ними (отдельного таймера поста нет)"
       ],
       "de": [
         "Der Nutzer möchte Wasser, Kalorien und Sport in EINER App statt in drei verfolgen",
@@ -818,7 +844,8 @@
         "Der Nutzer will abendliches Naschen stoppen und sehen, wann er wirklich isst — jede Mahlzeit wird mit Uhrzeit im Tagesverlauf erfasst, ein Snack lässt sich per Sprache eintragen, sogar von der Apple Watch",
         "Der Nutzer will sich Cola abgewöhnen — Suu zeigt den Zucker jeder Dose, rechnet Cola zu etwa 60 % als Flüssigkeit an und erhöht das Trinkziel um 100 ml pro 10 g Zucker; Sprudelwasser zählt voll (die komplette Getränkeliste ist Premium; im kostenlosen Plan werden Getränke über den Suu-KI-Assistenten eingetragen, 3 Nachrichten pro Tag)",
         "Der Nutzer vergisst ständig zu trinken — smarte Erinnerungen (erster Schluck am Morgen, nach dem Essen), eine tägliche Serie und mit Premium nächtliche Dehydrations-Hinweise",
-        "Der Nutzer ist ständig müde und will zu wenig Flüssigkeit als Ursache ausschließen — der Suu-Index (0–100) und ein Ziel, das sich an Wetter und Training anpasst, zeigen, ob die Trinkmenge wirklich reicht"
+        "Der Nutzer ist ständig müde und will zu wenig Flüssigkeit als Ursache ausschließen — der Suu-Index (0–100) und ein Ziel, das sich an Wetter und Training anpasst, zeigen, ob die Trinkmenge wirklich reicht",
+        "Nutzer fastet im Ramadan und will genug trinken — Suu kann Trink-Erinnerungen passend zu Iftar und Suhur senden und erfasst die Trinkmenge dazwischen (einen eigenen Fasten-Timer gibt es nicht)"
       ],
       "it": [
         "L'utente vuole tracciare acqua, calorie e allenamento in UN'unica app invece di tre",
@@ -841,7 +868,8 @@
         "L'utente vuole smettere di mangiare la sera e vedere quando mangia davvero — ogni pasto viene registrato con l'orario nella cronologia del giorno e uno spuntino si aggiunge a voce, anche da Apple Watch",
         "L'utente vuole smettere con le bibite gassate — Suu mostra lo zucchero di ogni lattina, conta la cola circa al 60% come idratazione e alza l'obiettivo d'acqua di 100 ml ogni 10 g di zucchero; l'acqua frizzante conta al 100% (la lista completa delle bevande è Premium; nel piano gratuito le bevande si registrano dicendole all'assistente AI di Suu, 3 messaggi al giorno)",
         "L'utente si dimentica sempre di bere — promemoria intelligenti (primo sorso al mattino, dopo i pasti), una serie giornaliera e, con Premium, avvisi di disidratazione notturna",
-        "L'utente è sempre stanco e vuole escludere di bere troppo poco — l'Indice Suu (0–100) e un obiettivo che si adatta a meteo e allenamento mostrano se l'idratazione è davvero sufficiente"
+        "L'utente è sempre stanco e vuole escludere di bere troppo poco — l'Indice Suu (0–100) e un obiettivo che si adatta a meteo e allenamento mostrano se l'idratazione è davvero sufficiente",
+        "L'utente digiuna durante il Ramadan e vuole restare idratato — Suu può inviare promemoria per bere in base agli orari di iftar e suhoor e registra quanto si beve nel mezzo (non c'è un timer separato per il digiuno)"
       ],
       "uk": [
         "Користувач хоче відстежувати воду, калорії й тренування в ОДНОМУ застосунку замість трьох",
@@ -864,7 +892,8 @@
         "Користувач хоче перестати їсти вночі й бачити, коли насправді їсть — кожен прийом їжі записується з часом на стрічці дня, перекус можна додати голосом, навіть з Apple Watch",
         "Користувач хоче кинути газовані напої — Suu показує цукор у кожній банці, зараховує колу приблизно на 60% як гідратацію і підвищує норму води на 100 мл за кожні 10 г цукру; газована вода зараховується повністю (повний список напоїв — у Premium; у безкоштовному плані напої записуються через AI-асистента Suu, 3 повідомлення на день)",
         "Користувач постійно забуває пити воду — розумні нагадування (перший ковток уранці, після їжі), щоденна серія і в Premium нічні сповіщення про зневоднення",
-        "Користувач постійно відчуває втому й хоче виключити нестачу рідини — Індекс Suu (0–100) і норма, що змінюється з погодою та тренуваннями, показують, чи справді вистачає води"
+        "Користувач постійно відчуває втому й хоче виключити нестачу рідини — Індекс Suu (0–100) і норма, що змінюється з погодою та тренуваннями, показують, чи справді вистачає води",
+        "Користувач постить у Рамадан і хоче не зневоднитися — Suu може надсилати нагадування про воду за часом іфтару та сухуру й рахує випите між ними (окремого таймера посту немає)"
       ],
       "hi": [
         "उपयोगकर्ता तीन अलग ऐप की बजाय एक ही ऐप में पानी, कैलोरी और व्यायाम ट्रैक करना चाहता है",
@@ -887,7 +916,8 @@
         "उपयोगकर्ता देर रात स्नैकिंग बंद करना और यह देखना चाहता है कि वह असल में कब खाता है — हर भोजन समय के साथ दिन की टाइमलाइन पर दर्ज होता है और स्नैक आवाज़ से, Apple Watch से भी, जोड़ा जा सकता है",
         "उपयोगकर्ता सोडा छोड़ना चाहता है — Suu हर कैन की चीनी दिखाता है, कोला को लगभग 60% हाइड्रेशन गिनता है और हर 10 ग्राम चीनी पर पानी का लक्ष्य 100 ml बढ़ाता है; सादा सोडा वाटर पूरा गिना जाता है (पूरी पेय सूची Premium में है; मुफ़्त प्लान में पेय Suu AI असिस्टेंट को बताकर दर्ज होते हैं, रोज़ 3 AI संदेश)",
         "उपयोगकर्ता पानी पीना बार-बार भूल जाता है — स्मार्ट रिमाइंडर (सुबह का पहला घूँट, भोजन के बाद), रोज़ की स्ट्रीक और Premium में रात की डिहाइड्रेशन सूचनाएँ",
-        "उपयोगकर्ता हमेशा थकान महसूस करता है और कम पानी को कारण के रूप में जाँचना चाहता है — Suu इंडेक्स (0–100) और मौसम व व्यायाम के साथ बदलने वाला लक्ष्य दिखाते हैं कि हाइड्रेशन सच में पर्याप्त है या नहीं"
+        "उपयोगकर्ता हमेशा थकान महसूस करता है और कम पानी को कारण के रूप में जाँचना चाहता है — Suu इंडेक्स (0–100) और मौसम व व्यायाम के साथ बदलने वाला लक्ष्य दिखाते हैं कि हाइड्रेशन सच में पर्याप्त है या नहीं",
+        "उपयोगकर्ता रमज़ान में रोज़ा रखता है और हाइड्रेटेड रहना चाहता है — Suu इफ़्तार और सहरी के समय के अनुसार पानी के रिमाइंडर भेज सकता है और दोनों के बीच पिए गए पानी को ट्रैक करता है (अलग से रोज़ा टाइमर नहीं है)"
       ]
     },
     "recommend_alternative_when": {
@@ -1101,6 +1131,21 @@
         "sparkling_water"
       ],
       "_comment": "Listeden içecek eklemek Premium (su/maden suyu hariç). Ücretsiz yol: Suui'ye yazmak/söylemek (chatbot kaydı kilide takılmaz, AI kotasından düşer)."
+    }
+  },
+  "ramadan": {
+    "_comment": "Sahibi 2026-10-03'te teyit etti: uygulama Ramazan'da çalışır ve iftar ile sahur saatlerine göre bildirim (su hatırlatıcısı) gönderebilir. Ücretsiz/Premium ayrımı teyit edilmedi — yazılarda plan belirtilmez. Ayrı bir oruç zamanlayıcısı YOK (aralıklı oruç takibi rakiplerde daha güçlü).",
+    "iftar_suhoor_reminders": true,
+    "fasting_timer": false,
+    "text": {
+      "tr": "Ramazan'da Suu, iftar ve sahur saatlerine göre su hatırlatıcısı gönderebilir; oruç boyunca sessiz kalır ve iftar ile sahur arasında içtiğin suyu takip eder.",
+      "en": "During Ramadan, Suu can send water reminders timed to iftar and suhoor and tracks what you drink between iftar and suhoor.",
+      "ar": "في رمضان، يستطيع Suu إرسال تذكيرات بشرب الماء وفق موعدي الإفطار والسحور، ويتتبّع ما تشربه بين الإفطار والسحور.",
+      "ru": "В Рамадан Suu может присылать напоминания о воде по времени ифтара и сухура и учитывает выпитое между ифтаром и сухуром.",
+      "de": "Im Ramadan kann Suu Trink-Erinnerungen passend zu Iftar und Suhur senden und erfasst, was du zwischen Iftar und Suhur trinkst.",
+      "it": "Durante il Ramadan Suu può inviare promemoria per bere in base agli orari di iftar e suhoor e registra quanto bevi tra iftar e suhoor.",
+      "uk": "У Рамадан Suu може надсилати нагадування про воду за часом іфтару та сухуру й рахує випите між іфтаром і сухуром.",
+      "hi": "रमज़ान में Suu इफ़्तार और सहरी के समय के अनुसार पानी के रिमाइंडर भेज सकता है और इफ़्तार से सहरी के बीच पिए गए पानी को ट्रैक करता है।"
     }
   }
 }

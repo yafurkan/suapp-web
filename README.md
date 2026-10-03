@@ -62,7 +62,7 @@ Sohbet ederek su ekleme, içecek kaydetme, öğün oluşturma, egzersiz ekleme, 
 
 - **Ücretsiz:** temel su-hidrasyon takibi + günde 3 AI analizi + Apple Health/Health Connect senkronu — her zaman ücretsiz
 - **Premium:** sınırsız AI analizi, fotoğraflı yemek tanıma, dinamik sindirim suyu bildirimleri, gelişmiş makro/mikro istatistikleri, reklamsız, PDF/CSV rapor
-- **Fiyat:** ₺1.200/yıl (%50 lansman indirimi, normal ₺2.400) · aylık ₺149 · aile planı ₺2.399/yıl (3 kişiye kadar) · 3 gün ücretsiz deneme · yerel para birimi otomatik
+- **Fiyat:** ₺1.199,99/yıl (%50 lansman indirimi, normal ₺2.400) · aylık ₺149,99 · aile planı ₺2.399,99/yıl (3 kişiye kadar) · 3 gün ücretsiz deneme · yerel para birimi otomatik
 
 ## Web Sitesi Yapısı
 
