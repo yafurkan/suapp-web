@@ -149,6 +149,7 @@ python3 scripts/inject-hreflang.py --apply          # hreflang kümesi
 python3 scripts/inject-comparison-schema.py --apply # karşılaştırma sayfalarına ItemList
 python3 scripts/inject-analytics.py --apply         # ölçüm parçacığı
 python3 scripts/inject-special-days.py --apply      # özel gün kutlama katmanı
+python3 scripts/inject-theme-toggle.py --apply      # açık/koyu tema düğmesi (suu.css sayfaları; şablonlarda da var)
 python3 scripts/update-sitemap.py --apply           # sitemap (image blokları korunur)
 python3 scripts/sync-blog-index.py --apply          # blog indeksine eksik KARTLARI ekle
 python3 scripts/sync-blog-schema.py --apply         # blog indeksinin Blog.blogPost ŞEMASINI eşitle
