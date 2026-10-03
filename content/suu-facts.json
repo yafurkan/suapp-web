@@ -1,6 +1,6 @@
 {
   "_comment": "Suu'nun TEK DOĞRULUK KAYNAĞI. Sitedeki her sayfa, llms.txt ailesi, JSON-LD ve ai-plugin.json bu dosyadan beslenir. Bir bilgi değişince ÖNCE burası güncellenir, sonra scripts/check-facts.py çalıştırılır.",
-  "_updated": "2026-09-29",
+  "_updated": "2026-10-03",
   "_schema_version": 1,
   "identity": {
     "name": "Suu",
@@ -324,6 +324,8 @@
     "apple_watch": {
       "ios": "yes",
       "android": "no",
+      "free": true,
+      "_note": "Sahibi 2026-10-03'te teyit etti: Apple Watch uygulamasının özelliklerinin tamamı (su ekleme, sesli öğün kaydı, GPS'li antrenman) çalışıyor ve ücretsiz kullanıcılar da kullanabiliyor. Sesli öğün analizi iPhone'daki Suu'da tamamlanır.",
       "label": {
         "tr": "Apple Watch uygulaması",
         "en": "Apple Watch app"

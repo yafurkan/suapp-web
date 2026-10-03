@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>(function(){try{var t=localStorage.getItem('suu-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
 
     <!-- ÜRETİLMİŞ DOSYA — elle düzenlemeyin.
          Kaynak: content/compare-hub.json + content/compare-hub.html.j2
@@ -46,7 +47,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/donation-widget.css?v=6">
+    <link rel="stylesheet" href="/donation-widget.css">
     <link rel="stylesheet" href="/assets/css/suu.css">
 
     <script type="application/ld+json">
@@ -98,7 +99,7 @@
       "@id": "https://suuapp.com/sravneniya.html#list",
       "name": "Сравнения приложений: калории, тренировки и вода",
       "description": "Выбор счётчика калорий определяют три вещи: насколько быстро вносится приём пищи, делает ли бесплатный тариф реальную работу и обновляют ли тренировки дневные цели. Сравнения ниже проверяют все три критерия.",
-      "numberOfItems": 6,
+      "numberOfItems": 7,
       "itemListOrder": "https://schema.org/ItemListOrderAscending",
       "itemListElement": [
         {
@@ -110,30 +111,36 @@
         {
           "@type": "ListItem",
           "position": 2,
+          "url": "https://suuapp.com/blog/ru/alternativy-yazio.html",
+          "name": "Альтернативы Yazio: какое приложение выбрать в 2026 году"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
           "url": "https://suuapp.com/blog/ru/suu-vs-myfitnesspal.html",
           "name": "Suu против MyFitnessPal: что лучше? (2026)"
         },
         {
           "@type": "ListItem",
-          "position": 3,
+          "position": 4,
           "url": "https://suuapp.com/blog/ru/suu-vs-yazio.html",
           "name": "Suu против Yazio: что лучше? (2026)"
         },
         {
           "@type": "ListItem",
-          "position": 4,
+          "position": 5,
           "url": "https://suuapp.com/blog/ru/luchshee-prilozhenie-dlya-trenirovok.html",
           "name": "Лучшее приложение для тренировок в 2026"
         },
         {
           "@type": "ListItem",
-          "position": 5,
+          "position": 6,
           "url": "https://suuapp.com/blog/ru/luchshee-prilozhenie-dlya-vody.html",
           "name": "Лучшее приложение для отслеживания воды в 2026"
         },
         {
           "@type": "ListItem",
-          "position": 6,
+          "position": 7,
           "url": "https://suuapp.com/blog/ru/voda-kalorii-trenirovki-odno-prilozhenie.html",
           "name": "Есть ли приложение, которое считает воду, калории И тренировки вместе?"
         }
@@ -162,9 +169,9 @@
     </script>
 
     <script src="/assets/js/analytics.js" defer></script>
-    <script src="/assets/js/special-days.js" defer></script>
     <script src="/lang-switcher.js?v=3" defer></script>
-    <script src="/donation-widget.js?v=6" defer></script>
+    <script src="/assets/js/theme.js?v=1" defer></script>
+    <script src="/donation-widget.js" defer></script>
 </head>
 <body>
 
@@ -190,7 +197,7 @@
     <div class="container container--narrow">
         <span class="badge badge--new">📊 Центр сравнений</span>
         <h1 style="margin-block-start:var(--sp-4)">Сравнения приложений: калории, тренировки и вода</h1>
-        <p class="small text-subtle">Обновлено: 15 августа 2026 · <a href="/yazarlar/furkan-mert.html" rel="author">Furkan Mert Fındıklı</a> · 6 сравнений</p>
+        <p class="small text-subtle">Обновлено: 15 августа 2026 · <a href="/yazarlar/furkan-mert.html" rel="author">Furkan Mert Fındıklı</a> · 7 сравнений</p>
     </div>
 </header>
 
@@ -216,6 +223,10 @@
             <article class="card hub-card hub-card--calories">
                 <h3><a href="/blog/ru/luchshee-prilozhenie-podscheta-kalorij.html">Лучшее приложение для подсчёта калорий 2026: Suu против MyFitnessPal, Yazio, Lifesum, Cronometer</a></h3>
                 <p>Сравнили лучшие приложения для подсчёта калорий и питания 2026: Suu против MyFitnessPal, Yazio, Lifesum, Cronometer — голосовой ввод, подсчёт калорий по фото, вода + калории + тренировки…</p>
+            </article>
+            <article class="card hub-card hub-card--calories">
+                <h3><a href="/blog/ru/alternativy-yazio.html">Альтернативы Yazio: какое приложение выбрать в 2026 году</a></h3>
+                <p>Ищете аналог Yazio? Сравнили Suu, FatSecret, MyFitnessPal, Lifesum и Cronometer: запись еды, бесплатный тариф, голодание, вода и GPS-тренировки.</p>
             </article>
             <article class="card hub-card hub-card--calories">
                 <h3><a href="/blog/ru/suu-vs-myfitnesspal.html">Suu против MyFitnessPal: что лучше? (2026)</a></h3>

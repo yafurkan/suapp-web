@@ -9,6 +9,7 @@
       try{ if(!sessionStorage.getItem('suu-hero-intro') && !matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('suu-pending'); }catch(e){}
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>(function(){try{var t=localStorage.getItem('suu-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
 
     <!-- ÜRETİLMİŞ DOSYA — elle düzenlemeyin.
          Kaynak: content/home/it.json + content/home/_template.html.j2
@@ -29,7 +30,6 @@
     <link rel="alternate" hreflang="ru" href="https://suuapp.com/hosgeldiniz-ru.html">
     <link rel="alternate" hreflang="de" href="https://suuapp.com/hosgeldiniz-de.html">
     <link rel="alternate" hreflang="it" href="https://suuapp.com/hosgeldiniz-it.html">
-    <link rel="alternate" hreflang="hi" href="https://suuapp.com/hosgeldiniz-hi.html">
     <link rel="alternate" hreflang="uk" href="https://suuapp.com/hosgeldiniz-uk.html">
     <link rel="alternate" hreflang="x-default" href="https://suuapp.com/hosgeldiniz-en.html">
 
@@ -506,6 +506,7 @@
     <script src="/assets/js/screenshots.js?v=3" defer></script>
     <script src="/assets/js/water-calc.js" defer></script>
     <script src="/lang-switcher.js?v=3" defer></script>
+    <script src="/assets/js/theme.js?v=1" defer></script>
     <script src="/donation-widget.js?v=6" defer></script>
 </head>
 <body>

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>(function(){try{var t=localStorage.getItem('suu-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
 
     <!-- ÜRETİLMİŞ DOSYA — elle düzenlemeyin.
          Kaynak: content/compare-hub.json + content/compare-hub.html.j2
@@ -46,7 +47,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/donation-widget.css?v=6">
+    <link rel="stylesheet" href="/donation-widget.css">
     <link rel="stylesheet" href="/assets/css/suu.css">
 
     <script type="application/ld+json">
@@ -98,7 +99,7 @@
       "@id": "https://suuapp.com/confronti.html#list",
       "name": "Confronti tra app: calorie, allenamento e idratazione",
       "description": "Nella scelta di un contacalorie contano tre cose: quanto è davvero rapido registrare un pasto, se il piano gratuito fa un lavoro reale e se l'attività fisica aggiorna gli obiettivi giornalieri. I confronti qui sotto esaminano esattamente questi tre punti app per app.",
-      "numberOfItems": 4,
+      "numberOfItems": 5,
       "itemListOrder": "https://schema.org/ItemListOrderAscending",
       "itemListElement": [
         {
@@ -110,18 +111,24 @@
         {
           "@type": "ListItem",
           "position": 2,
+          "url": "https://suuapp.com/blog/it/alternative-a-yazio.html",
+          "name": "Alternative a Yazio: quale app fa per te? (2026)"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
           "url": "https://suuapp.com/blog/it/migliore-app-allenamento.html",
           "name": "La migliore app per allenamento del 2026"
         },
         {
           "@type": "ListItem",
-          "position": 3,
+          "position": 4,
           "url": "https://suuapp.com/blog/it/acqua-calorie-allenamento-una-app.html",
           "name": "Acqua, calorie e allenamento in un'unica app"
         },
         {
           "@type": "ListItem",
-          "position": 4,
+          "position": 5,
           "url": "https://suuapp.com/blog/it/migliore-app-per-bere-acqua.html",
           "name": "La migliore app per bere acqua nel 2026"
         }
@@ -150,9 +157,9 @@
     </script>
 
     <script src="/assets/js/analytics.js" defer></script>
-    <script src="/assets/js/special-days.js" defer></script>
     <script src="/lang-switcher.js?v=3" defer></script>
-    <script src="/donation-widget.js?v=6" defer></script>
+    <script src="/assets/js/theme.js?v=1" defer></script>
+    <script src="/donation-widget.js" defer></script>
 </head>
 <body>
 
@@ -178,7 +185,7 @@
     <div class="container container--narrow">
         <span class="badge badge--new">📊 Centro confronti</span>
         <h1 style="margin-block-start:var(--sp-4)">Confronti tra app: calorie, allenamento e idratazione</h1>
-        <p class="small text-subtle">Aggiornato: 15 agosto 2026 · <a href="/yazarlar/furkan-mert.html" rel="author">Furkan Mert Fındıklı</a> · 4 confronti</p>
+        <p class="small text-subtle">Aggiornato: 15 agosto 2026 · <a href="/yazarlar/furkan-mert.html" rel="author">Furkan Mert Fındıklı</a> · 5 confronti</p>
     </div>
 </header>
 
@@ -204,6 +211,10 @@
             <article class="card hub-card hub-card--calories">
                 <h3><a href="/blog/it/migliore-app-conta-calorie.html">La migliore app conta calorie del 2026</a></h3>
                 <p>App per contare le calorie a confronto: MyFitnessPal, Yazio, FatSecret, Lifesum, Cronometer e Suu — velocità di registrazione, database, precisione e limiti del piano gratuito.</p>
+            </article>
+            <article class="card hub-card hub-card--calories">
+                <h3><a href="/blog/it/alternative-a-yazio.html">Alternative a Yazio: quale app fa per te? (2026)</a></h3>
+                <p>Cerchi un&#39;alternativa a Yazio? Suu, FatSecret, MyFitnessPal, Lifesum e Cronometer a confronto: registrazione, piano gratuito, digiuno, acqua e allenamenti GPS.</p>
             </article>
         </div>
     </div>

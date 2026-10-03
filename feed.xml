@@ -5,13 +5,37 @@
     <link>https://suuapp.com/blog.html</link>
     <description>Su takibi, kalori sayma ve egzersiz üzerine yazılar.</description>
     <language>tr-TR</language>
-    <lastBuildDate>Sun, 27 Sep 2026 15:52:40 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 03 Oct 2026 07:21:50 +0000</lastBuildDate>
     <atom:link href="https://suuapp.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Yazio Alternatifleri: Hangisi Sana Uygun? (2026)</title>
+      <link>https://suuapp.com/blog/yazio-alternatifleri.html</link>
+      <guid isPermaLink="true">https://suuapp.com/blog/yazio-alternatifleri.html</guid>
+      <description>Yazio'ya alternatif mi arıyorsun? Suu, MyFitnessPal, Lifesum, Cronometer ve Cal AI'ı oruç, tarif, su ve GPS'li egzersiz açısından karşılaştırdık.</description>
+      <dc:creator>Furkan Mert Fındıklı</dc:creator>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Neden Hep Yorgunum? En Sık 8 Neden</title>
+      <link>https://suuapp.com/blog/neden-hep-yorgunum.html</link>
+      <guid isPermaLink="true">https://suuapp.com/blog/neden-hep-yorgunum.html</guid>
+      <description>Sürekli yorgunluğun en sık nedenleri: uyku, stres, hareketsizlik, beslenme, susuzluk, kafein, demir eksikliği ve tıbbi sorunlar. Ne zaman doktora gitmeli?</description>
+      <dc:creator>Furkan Mert Fındıklı</dc:creator>
+      <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Gece Atıştırmasını Nasıl Bırakırım? 7 Pratik Çözüm</title>
       <link>https://suuapp.com/blog/gece-atistirmasini-birakmak.html</link>
       <guid isPermaLink="true">https://suuapp.com/blog/gece-atistirmasini-birakmak.html</guid>
       <description>Gece atıştırması çoğu zaman açlıktan değil; kahvaltıyı atlamaktan, uykusuzluktan ve alışkanlıktan gelir. Nedenleri ve işe yarayan 7 çözüm, araştırmalarla.</description>
+      <dc:creator>Furkan Mert Fındıklı</dc:creator>
+      <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Kolayı Nasıl Bırakırım? 4 Haftalık Kademeli Plan</title>
+      <link>https://suuapp.com/blog/kolayi-birakmak.html</link>
+      <guid isPermaLink="true">https://suuapp.com/blog/kolayi-birakmak.html</guid>
+      <description>Kolayı bir anda kesmek yerine 4 haftada azalt: tetikleyiciler, kafein baş ağrısı, zero ve maden suyu geçişi. Bir kutunun gerçek şeker ve su etkisi.</description>
       <dc:creator>Furkan Mert Fındıklı</dc:creator>
       <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
     </item>
@@ -40,22 +64,6 @@
       <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Kolayı Nasıl Bırakırım? 4 Haftalık Kademeli Plan</title>
-      <link>https://suuapp.com/blog/kolayi-birakmak.html</link>
-      <guid isPermaLink="true">https://suuapp.com/blog/kolayi-birakmak.html</guid>
-      <description>Kolayı bir anda kesmek yerine 4 haftada azalt: tetikleyiciler, kafein baş ağrısı, zero ve maden suyu geçişi. Bir kutunun gerçek şeker ve su etkisi.</description>
-      <dc:creator>Furkan Mert Fındıklı</dc:creator>
-      <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Neden Hep Yorgunum? En Sık 8 Neden</title>
-      <link>https://suuapp.com/blog/neden-hep-yorgunum.html</link>
-      <guid isPermaLink="true">https://suuapp.com/blog/neden-hep-yorgunum.html</guid>
-      <description>Sürekli yorgunluğun en sık nedenleri: uyku, stres, hareketsizlik, beslenme, susuzluk, kafein, demir eksikliği ve tıbbi sorunlar. Ne zaman doktora gitmeli?</description>
-      <dc:creator>Furkan Mert Fındıklı</dc:creator>
-      <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
       <title>2026'da Takip Uygulaması Yapmak Mantıklı mı?</title>
       <link>https://suuapp.com/blog/takip-uygulamasi-yapmak-mantikli-mi.html</link>
       <guid isPermaLink="true">https://suuapp.com/blog/takip-uygulamasi-yapmak-mantikli-mi.html</guid>
@@ -64,18 +72,18 @@
       <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Fotoğraftan Kalori Uygulamaları Ne Kadar Doğru?</title>
-      <link>https://suuapp.com/blog/yapay-zeka-kalori-dogrulugu.html</link>
-      <guid isPermaLink="true">https://suuapp.com/blog/yapay-zeka-kalori-dogrulugu.html</guid>
-      <description>52 çalışmalık sistematik derleme, yapay zekânın fotoğraftan kalori tahmininde hatayı %0,10–38,3 aralığında buluyor. Ama elle tutulan beslenme günlüklerinde hata %47'ye çıkıyor. Hangi hata hedefinize daha çok zarar veriyor?</description>
-      <dc:creator>Furkan Mert Fındıklı</dc:creator>
-      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
       <title>Koşunu GPS ile Kaydeden, Yediğin Kaloriyi de Sayan Uygulama</title>
       <link>https://suuapp.com/blog/gps-kosu-takibi-kalori-sayaci.html</link>
       <guid isPermaLink="true">https://suuapp.com/blog/gps-kosu-takibi-kalori-sayaci.html</guid>
       <description>Koşu uygulamaları yaktığın kaloriyi sayar ama yediğini saymaz; kalori uygulamaları tam tersini yapar. Strava, Nike Run Club, MyFitnessPal, Garmin ve Suu GPS, öğün kaydı ve hidrasyon üzerinden karşılaştırıldı.</description>
+      <dc:creator>Furkan Mert Fındıklı</dc:creator>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Fotoğraftan Kalori Uygulamaları Ne Kadar Doğru?</title>
+      <link>https://suuapp.com/blog/yapay-zeka-kalori-dogrulugu.html</link>
+      <guid isPermaLink="true">https://suuapp.com/blog/yapay-zeka-kalori-dogrulugu.html</guid>
+      <description>52 çalışmalık sistematik derleme, yapay zekânın fotoğraftan kalori tahmininde hatayı %0,10–38,3 aralığında buluyor. Ama elle tutulan beslenme günlüklerinde hata %47'ye çıkıyor. Hangi hata hedefinize daha çok zarar veriyor?</description>
       <dc:creator>Furkan Mert Fındıklı</dc:creator>
       <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
     </item>
@@ -88,14 +96,6 @@
       <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Kalori ve Egzersiz Takibi Bir Arada: Hangi Uygulamalar İkisini Bağlıyor?</title>
-      <link>https://suuapp.com/blog/kalori-ve-egzersiz-takibi-bir-arada.html</link>
-      <guid isPermaLink="true">https://suuapp.com/blog/kalori-ve-egzersiz-takibi-bir-arada.html</guid>
-      <description>Çoğu uygulama kaloriyi ve antrenmanı ayrı ayrı kaydediyor. Hangileri ikisini gerçekten bağlıyor — yani kaydettiğin koşu ne yiyip ne içmen gerektiğini değiştiriyor? Suu, MyFitnessPal, Yazio, Samsung Health ve Lose It! karşılaştırması.</description>
-      <dc:creator>Furkan Mert Fındıklı</dc:creator>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
       <title>En İyi Egzersiz Takip Uygulaması 2026</title>
       <link>https://suuapp.com/blog/en-iyi-egzersiz-takip-uygulamasi.html</link>
       <guid isPermaLink="true">https://suuapp.com/blog/en-iyi-egzersiz-takip-uygulamasi.html</guid>
@@ -104,12 +104,12 @@
       <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Ücretsiz Kalori Sayacı: Gerçekten Ücretsiz Olan Uygulamalar</title>
-      <link>https://suuapp.com/blog/ucretsiz-kalori-sayaci.html</link>
-      <guid isPermaLink="true">https://suuapp.com/blog/ucretsiz-kalori-sayaci.html</guid>
-      <description>Hangi kalori uygulaması gerçekten ücretsiz? Suu, MyFitnessPal, Lose It!, Cronometer ve FatSecret'ın ücretsiz planlarını satır satır karşılaştırdık: barkot, makro, egzersiz ve su takibi hangi planda?</description>
+      <title>Kalori ve Egzersiz Takibi Bir Arada: Hangi Uygulamalar İkisini Bağlıyor?</title>
+      <link>https://suuapp.com/blog/kalori-ve-egzersiz-takibi-bir-arada.html</link>
+      <guid isPermaLink="true">https://suuapp.com/blog/kalori-ve-egzersiz-takibi-bir-arada.html</guid>
+      <description>Çoğu uygulama kaloriyi ve antrenmanı ayrı ayrı kaydediyor. Hangileri ikisini gerçekten bağlıyor — yani kaydettiğin koşu ne yiyip ne içmen gerektiğini değiştiriyor? Suu, MyFitnessPal, Yazio, Samsung Health ve Lose It! karşılaştırması.</description>
       <dc:creator>Furkan Mert Fındıklı</dc:creator>
-      <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Suu ve Cal AI Karşılaştırması: Hangisi Sana Uygun?</title>
@@ -128,10 +128,26 @@
       <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
+      <title>Ücretsiz Kalori Sayacı: Gerçekten Ücretsiz Olan Uygulamalar</title>
+      <link>https://suuapp.com/blog/ucretsiz-kalori-sayaci.html</link>
+      <guid isPermaLink="true">https://suuapp.com/blog/ucretsiz-kalori-sayaci.html</guid>
+      <description>Hangi kalori uygulaması gerçekten ücretsiz? Suu, MyFitnessPal, Lose It!, Cronometer ve FatSecret'ın ücretsiz planlarını satır satır karşılaştırdık: barkot, makro, egzersiz ve su takibi hangi planda?</description>
+      <dc:creator>Furkan Mert Fındıklı</dc:creator>
+      <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Suu vs MyFitnessPal: Hangisi Daha İyi? (2026)</title>
       <link>https://suuapp.com/blog/suu-vs-myfitnesspal.html</link>
       <guid isPermaLink="true">https://suuapp.com/blog/suu-vs-myfitnesspal.html</guid>
       <description>Suu ve MyFitnessPal karşılaştırması 2026. Sesli giriş, fotoğrafla kalori, su+kalori+egzersiz tek uygulamada, tam Türkçe ve uygun fiyat — MyFitnessPal'a ücretsiz alternatif arayanlar için detaylı rehber.</description>
+      <dc:creator>Furkan Mert Fındıklı</dc:creator>
+      <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Konuşarak Kalori Girişi: Sesli Öğün Ekleme Nasıl Çalışır?</title>
+      <link>https://suuapp.com/blog/sesli-kalori-girisi.html</link>
+      <guid isPermaLink="true">https://suuapp.com/blog/sesli-kalori-girisi.html</guid>
+      <description>Konuşarak kalori ve öğün eklemek mümkün mü? Sesli öğün girişi nasıl çalışır, hangi uygulama yapıyor, ne kadar doğru ve gizlilik nasıl korunuyor?</description>
       <dc:creator>Furkan Mert Fındıklı</dc:creator>
       <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
     </item>
@@ -160,12 +176,12 @@
       <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Konuşarak Kalori Girişi: Sesli Öğün Ekleme Nasıl Çalışır?</title>
-      <link>https://suuapp.com/blog/sesli-kalori-girisi.html</link>
-      <guid isPermaLink="true">https://suuapp.com/blog/sesli-kalori-girisi.html</guid>
-      <description>Konuşarak kalori ve öğün eklemek mümkün mü? Sesli öğün girişi nasıl çalışır, hangi uygulama yapıyor, ne kadar doğru ve gizlilik nasıl korunuyor?</description>
+      <title>Kalori Açığı Nedir ve Nasıl Oluşturulur? Kilo Verme Rehberi</title>
+      <link>https://suuapp.com/blog/kalori-acigi.html</link>
+      <guid isPermaLink="true">https://suuapp.com/blog/kalori-acigi.html</guid>
+      <description>Kalori açığı nedir, nasıl hesaplanır ve kilo vermek için ne kadar açık gerekir? Güvenli hız, en sık yapılan hatalar ve yapay zeka ile kolay kalori takibi.</description>
       <dc:creator>Furkan Mert Fındıklı</dc:creator>
-      <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Fotoğrafla Kalori Sayma: Yapay Zeka ile Beslenme Takibi</title>
@@ -176,26 +192,18 @@
       <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Makro Hesaplama: Protein, Karbonhidrat ve Yağ Nasıl Hesaplanır?</title>
-      <link>https://suuapp.com/blog/makro-hesaplama.html</link>
-      <guid isPermaLink="true">https://suuapp.com/blog/makro-hesaplama.html</guid>
-      <description>Makrolar nedir, günlük protein/karbonhidrat/yağ ihtiyacın nasıl hesaplanır? Kaloriden makroya adım adım formül, örnek hesaplama ve yapay zeka ile pratik takip.</description>
-      <dc:creator>Furkan Mert Fındıklı</dc:creator>
-      <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Kalori Açığı Nedir ve Nasıl Oluşturulur? Kilo Verme Rehberi</title>
-      <link>https://suuapp.com/blog/kalori-acigi.html</link>
-      <guid isPermaLink="true">https://suuapp.com/blog/kalori-acigi.html</guid>
-      <description>Kalori açığı nedir, nasıl hesaplanır ve kilo vermek için ne kadar açık gerekir? Güvenli hız, en sık yapılan hatalar ve yapay zeka ile kolay kalori takibi.</description>
-      <dc:creator>Furkan Mert Fındıklı</dc:creator>
-      <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
       <title>Hangi Egzersiz Kaç Kalori Yakar? Aktivite Bazlı Rehber</title>
       <link>https://suuapp.com/blog/egzersizde-kalori-yakimi.html</link>
       <guid isPermaLink="true">https://suuapp.com/blog/egzersizde-kalori-yakimi.html</guid>
       <description>Yürüyüş, koşu, bisiklet, yüzme ve HIIT kaç kalori yakar? MET formülüyle kişisel hesaplama, aktivite tablosu ve Apple Health ile otomatik kalori takibi.</description>
+      <dc:creator>Furkan Mert Fındıklı</dc:creator>
+      <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Makro Hesaplama: Protein, Karbonhidrat ve Yağ Nasıl Hesaplanır?</title>
+      <link>https://suuapp.com/blog/makro-hesaplama.html</link>
+      <guid isPermaLink="true">https://suuapp.com/blog/makro-hesaplama.html</guid>
+      <description>Makrolar nedir, günlük protein/karbonhidrat/yağ ihtiyacın nasıl hesaplanır? Kaloriden makroya adım adım formül, örnek hesaplama ve yapay zeka ile pratik takip.</description>
       <dc:creator>Furkan Mert Fındıklı</dc:creator>
       <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
     </item>
@@ -224,6 +232,30 @@
       <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
+      <title>Enerji İçeceği Tüketimini Nasıl Kontrol Edersiniz?</title>
+      <link>https://suuapp.com/blog/enerji-icecegi-kontrolu.html</link>
+      <guid isPermaLink="true">https://suuapp.com/blog/enerji-icecegi-kontrolu.html</guid>
+      <description>Red Bull, Monster, Burn enerji içeceği tüketimini nasıl azaltırsınız? Kafein/şeker içeriği, FDA limit, gençlerde risk ve Suu ile takip rehberi.</description>
+      <dc:creator>Furkan Mert Fındıklı</dc:creator>
+      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Alkol Sonrası Hidrasyon: Hangover Önlemenin Bilimsel Yolu</title>
+      <link>https://suuapp.com/blog/alkol-sonrasi-hidrasyon.html</link>
+      <guid isPermaLink="true">https://suuapp.com/blog/alkol-sonrasi-hidrasyon.html</guid>
+      <description>Bira, şarap, viski içtiğinizde vücudunuz su kaybediyor. Alkol türüne göre telafi suyu, ertesi gün rehidrasyon planı ve Suu ile akıllı takip rehberi.</description>
+      <dc:creator>Furkan Mert Fındıklı</dc:creator>
+      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Kahveyi Azaltmak İçin 7 Bilimsel Strateji</title>
+      <link>https://suuapp.com/blog/kahveyi-azaltmak.html</link>
+      <guid isPermaLink="true">https://suuapp.com/blog/kahveyi-azaltmak.html</guid>
+      <description>Çok kahve içiyorsunuz ve azaltmak istiyorsunuz ama yapamıyor musunuz? Bu rehberde kafein bağımlılığının bilimsel arka planı + 7 günlük azaltma planı + Suu ile takip stratejisi.</description>
+      <dc:creator>Furkan Mert Fındıklı</dc:creator>
+      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Çay Susuzluk Giderir mi? Hidrasyon Rehberi</title>
       <link>https://suuapp.com/blog/cay-hidrasyon.html</link>
       <guid isPermaLink="true">https://suuapp.com/blog/cay-hidrasyon.html</guid>
@@ -240,34 +272,10 @@
       <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Kahveyi Azaltmak İçin 7 Bilimsel Strateji</title>
-      <link>https://suuapp.com/blog/kahveyi-azaltmak.html</link>
-      <guid isPermaLink="true">https://suuapp.com/blog/kahveyi-azaltmak.html</guid>
-      <description>Çok kahve içiyorsunuz ve azaltmak istiyorsunuz ama yapamıyor musunuz? Bu rehberde kafein bağımlılığının bilimsel arka planı + 7 günlük azaltma planı + Suu ile takip stratejisi.</description>
-      <dc:creator>Furkan Mert Fındıklı</dc:creator>
-      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
       <title>Meyve Suyu mu Su mu? Sağlık Karşılaştırması</title>
       <link>https://suuapp.com/blog/meyve-suyu-vs-su.html</link>
       <guid isPermaLink="true">https://suuapp.com/blog/meyve-suyu-vs-su.html</guid>
       <description>Taze sıkılmış meyve suyu mu paketli mi? Su yerine geçer mi? Şeker içeriği, vitamin değeri, çocukta meyve suyu ve diyabet riski rehberi.</description>
-      <dc:creator>Furkan Mert Fındıklı</dc:creator>
-      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Enerji İçeceği Tüketimini Nasıl Kontrol Edersiniz?</title>
-      <link>https://suuapp.com/blog/enerji-icecegi-kontrolu.html</link>
-      <guid isPermaLink="true">https://suuapp.com/blog/enerji-icecegi-kontrolu.html</guid>
-      <description>Red Bull, Monster, Burn enerji içeceği tüketimini nasıl azaltırsınız? Kafein/şeker içeriği, FDA limit, gençlerde risk ve Suu ile takip rehberi.</description>
-      <dc:creator>Furkan Mert Fındıklı</dc:creator>
-      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Alkol Sonrası Hidrasyon: Hangover Önlemenin Bilimsel Yolu</title>
-      <link>https://suuapp.com/blog/alkol-sonrasi-hidrasyon.html</link>
-      <guid isPermaLink="true">https://suuapp.com/blog/alkol-sonrasi-hidrasyon.html</guid>
-      <description>Bira, şarap, viski içtiğinizde vücudunuz su kaybediyor. Alkol türüne göre telafi suyu, ertesi gün rehidrasyon planı ve Suu ile akıllı takip rehberi.</description>
       <dc:creator>Furkan Mert Fındıklı</dc:creator>
       <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
     </item>
@@ -288,14 +296,6 @@
       <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Siri ve Sesli Komutla Su Ekleme: Eller Serbest Hidrasyon Rehberi</title>
-      <link>https://suuapp.com/blog/sesli-komutla-su-ekleme.html</link>
-      <guid isPermaLink="true">https://suuapp.com/blog/sesli-komutla-su-ekleme.html</guid>
-      <description>Suu'da Siri Shortcuts ve uygulama içi sesli komutlarla eller serbest su takibi yapın. iOS + Android için kurulum rehberi. Ücretsiz.</description>
-      <dc:creator>Furkan Mert Fındıklı</dc:creator>
-      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
       <title>Apple Watch ile Su Takibi: Otomatik Hidrasyon Rehberi 2026</title>
       <link>https://suuapp.com/blog/apple-watch-su-takibi.html</link>
       <guid isPermaLink="true">https://suuapp.com/blog/apple-watch-su-takibi.html</guid>
@@ -312,12 +312,12 @@
       <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Arkadaşlarınla Su Yarışması: Suu'nun Lig Sistemi Nasıl Çalışır?</title>
-      <link>https://suuapp.com/blog/su-icme-lig-sistemi.html</link>
-      <guid isPermaLink="true">https://suuapp.com/blog/su-icme-lig-sistemi.html</guid>
-      <description>Hiçbir su takip uygulamasında olmayan özellik: 4 arkadaşa kadar haftalık lig. Arkadaşlarının su içme hedeflerini gör, onlara bildirim gönder, ligin zirvesine çık.</description>
+      <title>Siri ve Sesli Komutla Su Ekleme: Eller Serbest Hidrasyon Rehberi</title>
+      <link>https://suuapp.com/blog/sesli-komutla-su-ekleme.html</link>
+      <guid isPermaLink="true">https://suuapp.com/blog/sesli-komutla-su-ekleme.html</guid>
+      <description>Suu'da Siri Shortcuts ve uygulama içi sesli komutlarla eller serbest su takibi yapın. iOS + Android için kurulum rehberi. Ücretsiz.</description>
       <dc:creator>Furkan Mert Fındıklı</dc:creator>
-      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Hamilelikte Günde Kaç Litre Su İçmeli? Trimester Rehberi</title>
