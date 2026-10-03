@@ -33,14 +33,43 @@ jobs:
       # ve scripts/build-gift-pages.py suuapp.com üzerinden okunabilir hale gelir
       # (panel adresi ve kurulum notları dahil). Hiçbiri çalışma anında
       # kullanılmıyor — tamamı yerelde çalışan üretim adımlarının girdisi.
+      # README.md ve app-readme.md de geliştirici notu, site sayfası değil:
+      # app-readme.md eski iddialar taşıyordu ve suuapp.com/app-readme.md
+      # adresinden okunabiliyordu (yapay zekâ tarayıcıları dahil).
       - name: Yayından build girdilerini çıkar
-        run: rm -rf worker scripts content
+        run: rm -rf worker scripts content README.md app-readme.md
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
-          
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  # Yayından sonra push'taki TÜM değişen HTML'leri IndexNow'a bildir (Bing,
+  # Yandex, Seznam, Naver). Elle `--changed` çalıştırmak unutuluyordu ve o mod
+  # yalnızca son commit'e bakıyordu. Gizli anahtar gerekmez — IndexNow anahtar
+  # dosyası zaten kökte herkese açık. Ping başarısız olsa da yayın kırmızıya
+  # dönmez (continue-on-error).
+  indexnow:
+    needs: deploy
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0          # github.event.before ile diff için tam geçmiş
+
+      # Pages dağıtımı CDN'e yayılırken motor sayfayı hemen çekerse eski
+      # sürümü görür — kısa bir bekleme.
+      - name: Pages yayılımını bekle
+        run: sleep 60
+
+      - name: IndexNow'a bildir
+        run: python3 scripts/indexnow-submit.py --range "${{ github.event.before }}..${{ github.sha }}"

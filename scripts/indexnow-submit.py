@@ -11,13 +11,21 @@ geçerlidir.
 
 Kullanım:
     python3 scripts/indexnow-submit.py --changed        # git'te değişen HTML'ler
+    python3 scripts/indexnow-submit.py --range <önce>..<sonra>   # bir push'un tamamı
     python3 scripts/indexnow-submit.py --all            # sitemap'teki her URL
     python3 scripts/indexnow-submit.py --url /premium.html /index.html
     python3 scripts/indexnow-submit.py --changed --dry  # göndermeden listele
+
+--range: CI'daki "indexnow" işi (.github/workflows/deploy.yml) bunu
+`github.event.before..github.sha` ile çağırır — push birden çok commit
+taşısa da hepsinde değişen HTML'ler bildirilir (--changed yalnızca son
+commit'e bakıyordu). <önce> boş ya da sıfırlarsa (dalın ilk push'u) veya
+klonda yoksa (force-push) <sonra>~1..<sonra>'ya düşer; <sonra> boşsa HEAD.
 """
 from __future__ import annotations
 
 import json
+import re
 import subprocess
 import sys
 import urllib.request
@@ -32,6 +40,12 @@ MAX_URLS = 10000          # IndexNow tek istek sınırı
 # İndekslenmemesi gereken sayfalar — robots.txt ile tutarlı
 EXCLUDE = ("admin.html", "app/index.html", "404", "makale.html",
            "yandex_", "og-image-template.html")
+# Yayınlanmayan klasörler: deploy.yml build girdilerini siler,
+# upload-pages-artifact .github'ı zaten almaz. Buradaki bir HTML canlıda 404'tür.
+UNPUBLISHED_DIRS = ("worker/", "scripts/", "content/", ".github/")
+# Sayfanın kendisi noindex diyorsa (hediye kodu, sponsor, panel…) bildirilmez —
+# EXCLUDE listesinde unutulan yeni bir noindex sayfası da böylece kaçmaz.
+RE_NOINDEX = re.compile(r"<meta\b[^>]*\bname=[\"']robots[\"'][^>]*\bnoindex", re.I)
 
 
 def find_key() -> tuple[str, str]:
@@ -73,10 +87,45 @@ def changed_urls() -> list[str]:
         paths = _git("diff", "--name-only", "--diff-filter=d",
                      "HEAD~1", "HEAD", "--", "*.html").split()
 
+    return indexable_urls(paths)
+
+
+def _commit_exists(rev: str) -> bool:
+    return subprocess.run(["git", "cat-file", "-e", f"{rev}^{{commit}}"], cwd=ROOT,
+                          capture_output=True).returncode == 0
+
+
+def range_urls(spec: str) -> list[str]:
+    """`<önce>..<sonra>` aralığında değişen/eklenen HTML'ler (silinenler hariç)."""
+    before, _, after = spec.partition("..")
+    after = after.strip() or "HEAD"
+    before = before.strip()
+    if not before or set(before) == {"0"} or not _commit_exists(before):
+        # İlk push (önce = 000…0), force-push (eski commit klonda yok) ya da boş
+        print(f"önce='{before or '(boş)'}' kullanılamıyor — son commit'e düşülüyor")
+        before = f"{after}~1"
+    print(f"aralık: {before}..{after}\n")
+    # core.quotePath=false: Türkçe/Kiril karakterli bir yol "\303\274" diye
+    # kaçışlı gelmesin, olduğu gibi URL'ye dönsün.
+    paths = _git("-c", "core.quotePath=false", "diff", "--name-only", "--diff-filter=d",
+                 before, after, "--", "*.html").splitlines()
+    return indexable_urls(paths)
+
+
+def indexable_urls(paths: list[str]) -> list[str]:
+    """Git yollarını URL'ye çevir; indekslenmemesi gerekenleri ele."""
     urls = []
     for path in paths:
-        if not path.endswith(".html") or any(x in path for x in EXCLUDE):
+        path = path.strip().strip('"')
+        if (not path.endswith(".html") or any(x in path for x in EXCLUDE)
+                or path.startswith(UNPUBLISHED_DIRS)):
             continue
+        local = ROOT / path
+        try:
+            if local.exists() and RE_NOINDEX.search(local.read_text(encoding="utf-8")):
+                continue
+        except (OSError, UnicodeDecodeError):
+            pass
         urls.append(to_url(path))
     return sorted(set(urls))
 
@@ -160,6 +209,10 @@ def main() -> int:
 
     if "--all" in args:
         urls = sitemap_urls()
+    elif "--range" in args:
+        i = args.index("--range")
+        spec = args[i + 1] if i + 1 < len(args) and not args[i + 1].startswith("--") else ""
+        urls = range_urls(spec)
     elif "--url" in args:
         i = args.index("--url")
         urls = [to_url(a) if not a.startswith("http") else a

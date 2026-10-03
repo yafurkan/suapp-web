@@ -85,6 +85,31 @@ LOCAL_AUTHORITIES = {
     "uk": ("moz.gov.ua", "phc.org.ua", "who.int"),
 }
 
+# Tablodan üretilen ItemList'e yalnızca GERÇEK uygulamalar girer. Bazı
+# tabloların sütunları uygulama değil ("Reported error" / "Kaynak" gibi veri
+# sütunları ya da "Drei getrennte Apps" gibi soyut bir seçenek); bunları
+# SoftwareApplication diye işaretlemek yanıltıcı yapılandırılmış veriydi.
+# Kaynak: "Suu" + suu-facts.json → competitors (calorie/water/fitness) + bu
+# liste (sitede geçen, rakip evreninde olmayan gerçek uygulamalar). Yeni bir
+# uygulama tabloya sütun olarak girerse buraya eklenmeli — eklenmezse yalnızca
+# şemadan düşer, sayfa yine üretilir. Tablo bazında `non_app_columns: [...]`
+# ile ayrıca dışlama yapılabilir.
+KNOWN_APPS = (
+    "FDDB", "FatSecret", "Melarossa", "MacroFactor", "Nike Run Club", "Komoot",
+    "adidas Running", "Lose It!", "Hydro Coach", "Plant Nanny", "Waterllama",
+    "WaterMinder", "Samsung Health", "Google Fit", "Apple Fitness", "Cal AI", "Noom",
+    "Cronometer", "Lifesum", "Yazio", "MyFitnessPal", "Strava",
+)
+
+
+def known_apps(facts: dict) -> set[str]:
+    """Şemada SoftwareApplication olabilecek adlar (büyük/küçük harf duyarsız)."""
+    comp = facts.get("competitors", {})
+    names = {"Suu", *KNOWN_APPS}
+    for group in ("calorie", "water", "fitness"):
+        names.update(comp.get(group, []))
+    return {n.casefold() for n in names}
+
 
 def rel_path(lang: str, slug: str) -> str:
     return f"blog/{slug}.html" if lang == DEFAULT else f"blog/{lang}/{slug}.html"
@@ -97,6 +122,34 @@ def abs_url(lang: str, slug: str) -> str:
 def display_date(lang: str, iso: str) -> str:
     y, m, d = iso.split("-")
     return DATE_FMT[lang].format(d=int(d), month=MONTHS[lang][int(m) - 1], y=y)
+
+
+def page_dates(data: dict, page: dict) -> tuple[str, str]:
+    """(yayın, güncelleme) ISO tarihleri — iki tür için ortak.
+
+    Sayfa düzeyinde `published`: boru hattına taşınan ya da sonradan çevrilen
+    bir sayfa kendi ASIL yayın tarihini korur (ör. EN 03-22, DE 08-24).
+    Güncelleme tarihi yayından önce olamaz; `modified` yoksa yayın tarihidir."""
+    published = page.get("published", data["published"])
+    modified = max(data.get("modified", data["published"]), published)
+    return published, modified
+
+
+_DIGITS = str.maketrans("٠١٢٣٤٥٦٧٨٩۰۱۲۳۴۵۶۷۸۹", "01234567890123456789")
+
+
+def display_shows(lang: str, text: str, iso: str) -> bool:
+    """Elle yazılmış `published_display` gerçekten bu tarihi mi gösteriyor?
+
+    Karşılaştırma JSON'larında görünür tarih elle yazılır ("13 August 2026",
+    "٢٤ أغسطس ٢٠٢٦") ve bazı dillerde JSON'daki `published` ile uyuşmuyor
+    (sayfa sonradan çevrilmiş). O durumda <time datetime> basmak görünür
+    metinle çelişen bir makine tarihi eklemek olurdu — çağıran taraf
+    <time>'ı atlar ve uyarır."""
+    y, m, d = iso.split("-")
+    t = text.translate(_DIGITS).casefold()
+    nums = {int(n) for n in re.findall(r"\d+", t)}
+    return int(y) in nums and int(d) in nums and MONTHS[lang][int(m) - 1].casefold() in t
 
 
 def og_image_url(lang: str, page: dict, kind: str) -> str:
@@ -184,17 +237,35 @@ def plain(text: str) -> str:
     return html.unescape(RE_TAGS.sub("", text)).strip()
 
 
+# İndirme CTA'sı (/app, /app?src=…, /app/…): sayfada buton, şemada çöp.
+# "Get Suu free →" bir uygulama açıklaması değil. Diğer bağlantıların METNİ
+# korunur (cümlenin parçası).
+RE_APP_LINK = re.compile(
+    r"\s*<a\b[^>]*\bhref\s*=\s*([\"'])/app(?:[/?#][^\"']*)?\1[^>]*>.*?</a\s*>",
+    re.I | re.S)
+
+
+def plain_description(body: str) -> str:
+    return plain(RE_APP_LINK.sub("", body))
+
+
 def build_jsonld(lang: str, topic: str, data: dict, page: dict, facts: dict, url: str,
                  kind: str = "compare", image: str = DEFAULT_OG) -> str:
     founder = facts["entities"]["founder"]
     if kind == "guide":
         return _guide_jsonld(lang, data, page, facts, url, image)
+    published, modified = page_dates(data, page)
     # Tablo iki biçimden birinde olabilir:
     #   klasik  → Suu ilk sütun + competitors listesi
     #   genel   → columns listesi (rakip-vs-rakip; Suu sonda olabilir)
     names = page["table"].get("columns")
     if not names:
         names = ["Suu"] + page["table"]["competitors"]
+    # Yalnızca gerçek uygulamalar (bkz. KNOWN_APPS); tablo `non_app_columns`
+    # ile ayrıca dışlayabilir.
+    real = known_apps(facts)
+    non_app = {n.casefold() for n in page["table"].get("non_app_columns", [])}
+    names = [n for n in names if n.casefold() in real and n.casefold() not in non_app]
     apps = []
     for name in names:
         if name == "Suu":
@@ -219,15 +290,15 @@ def build_jsonld(lang: str, topic: str, data: dict, page: dict, facts: dict, url
             "itemListElement": [
                 {"@type": "ListItem", "position": i, "name": it["name"],
                  "item": ({"@type": "SoftwareApplication", "@id": f"{BASE}/#suuapp-ios",
-                           "name": "Suu", "description": plain(it["body"])}
+                           "name": "Suu", "description": plain_description(it["body"])}
                           if it["name"] == "Suu" else
                           {"@type": "SoftwareApplication", "name": it["name"],
                            "applicationCategory": "HealthApplication",
-                           "description": plain(it["body"])})}
+                           "description": plain_description(it["body"])})}
                 for i, it in enumerate(ranked["items"], 1)
             ],
         }
-    else:
+    elif len(apps) >= 2:
         item_list = {
             "@type": "ItemList",
             "@id": f"{url}#itemlist",
@@ -239,6 +310,10 @@ def build_jsonld(lang: str, topic: str, data: dict, page: dict, facts: dict, url
                 {"@type": "ListItem", "position": i, "item": a} for i, a in enumerate(apps, 1)
             ],
         }
+    else:
+        # Tablo uygulama karşılaştırmıyor (ör. hata oranı/kaynak sütunları ya da
+        # "üç ayrı uygulama vs Suu"): tek öğelik ya da boş bir liste ItemList değil.
+        item_list = None
 
     graph = [
         # Organization ve Person düğümleri sayfada TAM olarak bulunmalı —
@@ -266,12 +341,13 @@ def build_jsonld(lang: str, topic: str, data: dict, page: dict, facts: dict, url
             "headline": page["h1"],
             "description": page["meta"]["description"],
             "image": f"{BASE}/assets/og-image.png",
-            "datePublished": data["published"],
+            # Sayfa düzeyinde `published` (varsa) o dilin asıl yayın tarihidir.
+            "datePublished": published,
             # Tazelik sinyali: elle yazılmış sayfayı boru hattına taşımak veya
             # rakip tablosunu güncellemek yayın tarihini değiştirmez, ama
             # dateModified'ı değiştirmelidir. Yoksa "2026 karşılaştırması"
             # diyen bir sayfa arama motoruna aylar önce donmuş görünür.
-            "dateModified": data.get("modified", data["published"]),
+            "dateModified": modified,
             "inLanguage": lang,
             "mainEntityOfPage": url,
             "author": {"@id": f"{BASE}/#furkan"},
@@ -280,7 +356,7 @@ def build_jsonld(lang: str, topic: str, data: dict, page: dict, facts: dict, url
             "speakable": {"@type": "SpeakableSpecification",
                           "cssSelector": [".answer-box", "h1", "h2", ".verdict p"]},
         },
-        item_list,
+        *([item_list] if item_list else []),
         {
             "@type": "FAQPage",
             "@id": f"{url}#faq",
@@ -316,6 +392,7 @@ def _guide_jsonld(lang: str, data: dict, page: dict, facts: dict, url: str, imag
     işaretlemek yanıltıcı yapılandırılmış veri olurdu. Uygulama, `mentions`
     ile iki mağaza düğümüne bağlanır (asıl tanımları ana sayfada)."""
     founder = facts["entities"]["founder"]
+    published, modified = page_dates(data, page)
     graph = [
         {
             "@type": "Organization",
@@ -341,8 +418,8 @@ def _guide_jsonld(lang: str, data: dict, page: dict, facts: dict, url: str, imag
             "image": image,
             # Sayfa düzeyinde `published`: mevcut bir yazı rehber boru hattına
             # taşındığında her dilin ASIL yayın tarihi korunur (ör. EN 03-22, RU 05-07).
-            "datePublished": page.get("published", data["published"]),
-            "dateModified": data.get("modified", data["published"]),
+            "datePublished": published,
+            "dateModified": modified,
             "inLanguage": lang,
             "mainEntityOfPage": url,
             "author": {"@id": f"{BASE}/#furkan"},
@@ -451,11 +528,28 @@ def main() -> int:
                     continue
             og_url = og_image_url(lang, page, kind)
 
+            # Tarihler iki tür için aynı kuralla: görünür "Yayın" + (varsa)
+            # "Güncelleme" satırı, <time datetime>, article:*_time ve JSON-LD
+            # aynı kaynaktan. Karşılaştırma sayfaları görünür yayın tarihini
+            # `published_display` ile elle yazabilir; o metin tarihi
+            # göstermiyorsa <time> basılmaz (çelişen makine tarihi olmasın).
+            page_published, modified_iso = page_dates(data, page)
+            shown = page.get("published_display") or display_date(lang, page_published)
+            published_iso = page_published if display_shows(lang, shown, page_published) else ""
+            if not published_iso:
+                notes.append(f"{topic}[{lang}]: published_display '{shown}' ≠ {page_published} — "
+                             f"<time> basılmadı; pages.{lang}.published ekleyin")
+
             ctx = {
                 "lang": lang, "dir": direction, "locale": locale, "url": url, "topic": topic,
                 "facts": facts, "ui": UI[lang],
-                "published": data["published"],
-                "published_display": data["published"],
+                "published": page_published,
+                "published_display": shown,
+                "published_iso": published_iso,
+                "modified_iso": modified_iso,
+                "modified_display": (display_date(lang, modified_iso)
+                                     if data.get("modified") and modified_iso != page_published
+                                     else ""),
                 "read_minutes": 6,
                 "hreflang": hreflang,
                 "xdefault_href": xdefault_href,
@@ -464,13 +558,6 @@ def main() -> int:
                 "og_image_url": og_url,
                 "cta_src": f"guide-{topic}" if kind == "guide" else "compare-body",
             }
-            if kind == "guide":
-                page_published = page.get("published", data["published"])
-                ctx["published_display"] = display_date(lang, page_published)
-                ctx["modified_iso"] = data.get("modified", data["published"])
-                ctx["modified_display"] = (display_date(lang, data["modified"])
-                                           if data.get("modified") and data["modified"] != page_published
-                                           else "")
             ctx.update(page)          # sayfa değerleri varsayılanları ezer
             ctx["kind"] = kind        # tür klasörden gelir; JSON ezemez
             html = template.render(**ctx)

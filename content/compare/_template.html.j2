@@ -29,8 +29,8 @@
     <meta property="og:image" content="{{ og_image_url }}">
     <meta property="og:site_name" content="Suu">
     <meta property="og:locale" content="{{ locale }}">
-    <meta property="article:published_time" content="{{ published }}">{% if kind == 'guide' %}
-    <meta property="article:modified_time" content="{{ modified_iso }}">{% endif %}
+    <meta property="article:published_time" content="{{ published }}">
+    <meta property="article:modified_time" content="{{ modified_iso }}">
     <meta property="article:author" content="{{ facts.entities.founder.name }}">
 
     <meta name="twitter:card" content="summary_large_image">
@@ -94,7 +94,11 @@
         </nav>
         <span class="badge badge--new">{{ badge }}</span>
         <h1 style="margin-block-start:var(--sp-4)">{{ h1 }}</h1>
-        <p class="small text-subtle">{{ ui.published_label }} {{ published_display }}{% if kind == 'guide' and modified_display %} · {{ ui.updated_label }} {{ modified_display }}{% endif %} · {{ facts.entities.founder.name }} · {{ read_minutes }} {{ ui.read_time }}</p>
+        {#- Görünür tazelik sinyali: güncelleme tarihi yayın tarihinden farklıysa
+            iki tarih de <time datetime> ile (JSON-LD ve article:*_time ile aynı
+            kaynak — build-compare.py → page_dates). published_iso boşsa elle
+            yazılmış published_display tarihle uyuşmuyor; <time> basılmaz. #}
+        <p class="small text-subtle">{{ ui.published_label }} {% if published_iso %}<time datetime="{{ published_iso }}">{{ published_display }}</time>{% else %}{{ published_display }}{% endif %}{% if modified_display %} · {{ ui.updated_label }} <time datetime="{{ modified_iso }}">{{ modified_display }}</time>{% endif %} · {{ facts.entities.founder.name }} · {{ read_minutes }} {{ ui.read_time }}</p>
     </div>
 </header>
 
