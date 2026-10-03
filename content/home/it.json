@@ -582,7 +582,7 @@
   "pricing": {
     "eyebrow": "Prezzi",
     "head": "Le funzioni di base sono sempre gratuite",
-    "sub": "Prova Premium gratis per 3 giorni. I prezzi sono mostrati automaticamente nella tua valuta locale.",
+    "sub": "Prova Premium gratis per 3 giorni. I prezzi indicati sono quelli per la Turchia; negli altri paesi App Store e Google Play mostrano il prezzo nella tua valuta locale.",
     "plans": [
       {
         "name": "Gratis",
@@ -600,7 +600,7 @@
       },
       {
         "name": "Premium annuale",
-        "price": "₺1.200",
+        "price": "₺1.199,99",
         "was": "₺2.400",
         "badge": "sconto lancio 50%",
         "featured": true,
@@ -619,9 +619,9 @@
       },
       {
         "name": "Mensile e famiglia",
-        "price": "₺149",
+        "price": "₺149,99",
         "period": "/ mese",
-        "note": "Piano famiglia: ₺2.399 / anno — fino a 3 persone",
+        "note": "Piano famiglia: ₺2.399,99 / anno — fino a 3 persone",
         "features": [
           "Tutte le funzioni Premium",
           "Piano mensile, disdici quando vuoi",
@@ -650,7 +650,7 @@
       },
       {
         "q": "Suu è gratis?",
-        "a": "Il monitoraggio di base di acqua e idratazione, 3 analisi IA al giorno e la sincronizzazione con Apple Health / Google Health Connect sono sempre gratuiti. Analisi IA dei pasti illimitata, conteggio calorie dalla foto, analisi nutrizionale avanzata e statistiche Premium richiedono l'abbonamento. Premium è provabile gratis per 3 giorni; il piano annuale costa ₺1.200 con sconto lancio del 50% (normalmente ₺2.400), il mensile ₺149 e il piano famiglia per 3 persone ₺2.399 all'anno."
+        "a": "Il monitoraggio di base di acqua e idratazione, 3 analisi IA al giorno e la sincronizzazione con Apple Health / Google Health Connect sono sempre gratuiti. Analisi IA dei pasti illimitata, conteggio calorie dalla foto, analisi nutrizionale avanzata e statistiche Premium richiedono l'abbonamento. Premium è provabile gratis per 3 giorni; in Turchia il piano annuale costa ₺1.199,99 con sconto lancio del 50% (normalmente ₺2.400), il mensile ₺149,99 e il piano famiglia per 3 persone ₺2.399,99 all'anno. Negli altri paesi lo store mostra il prezzo nella tua valuta locale."
       },
       {
         "q": "Quali lingue supporta Suu?",

@@ -17,31 +17,54 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": ["SoftwareApplication", "MobileApplication"],
-      "name": "Suu – Kalori, Su ve Fitness",
-      "alternateName": ["Suu — Calorie, Water & Fitness", "Suu"],
-      "identifier": "com.sutakip.suutakippro",
-      "applicationCategory": "HealthApplication",
-      "operatingSystem": ["Android", "iOS"],
-      "downloadUrl": "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
-      "author": {
-        "@type": "Person",
-        "@id": "https://suuapp.com/#furkan",
-        "name": "Furkan Mert Fındıklı",
-        "alternateName": "Furkan Mert Findikli"
-      },
-      "publisher": {
-        "@type": "Person",
-        "@id": "https://suuapp.com/#furkan",
-        "name": "Furkan Mert Fındıklı",
-        "alternateName": "Furkan Mert Findikli"
-      },
-      "subjectOf": {
-        "@type": "WebPage",
-        "name": "Hesap Silme / Delete Account",
-        "url": "https://suuapp.com/delete-account.html",
-        "description": "Suu – Kalori, Su ve Fitness uygulamasında hesap ve veri silme talimatları."
-      }
+      "@graph": [
+        {
+          "@type": ["SoftwareApplication", "MobileApplication"],
+          "@id": "https://suuapp.com/#suuapp-android",
+          "name": "Suu – Kalori, Su ve Fitness",
+          "alternateName": ["Suu — Calorie, Water & Fitness", "Suu"],
+          "identifier": "com.sutakip.suutakippro",
+          "applicationCategory": "HealthApplication",
+          "operatingSystem": "Android 8.0+",
+          "downloadUrl": "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
+          "installUrl": "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
+          "author": { "@id": "https://suuapp.com/#furkan" },
+          "publisher": { "@id": "https://suuapp.com/#furkan" },
+          "subjectOf": { "@id": "https://suuapp.com/delete-account.html#webpage" }
+        },
+        {
+          "@type": ["SoftwareApplication", "MobileApplication"],
+          "@id": "https://suuapp.com/#suuapp-ios",
+          "name": "Suu – Kalori, Su ve Fitness",
+          "alternateName": ["Suu — Calorie, Water & Fitness", "Suu"],
+          "identifier": "6757619920",
+          "applicationCategory": "HealthApplication",
+          "operatingSystem": "iOS 15.0+",
+          "downloadUrl": "https://apps.apple.com/us/app/suu-su-takip/id6757619920",
+          "installUrl": "https://apps.apple.com/us/app/suu-su-takip/id6757619920",
+          "author": { "@id": "https://suuapp.com/#furkan" },
+          "publisher": { "@id": "https://suuapp.com/#furkan" },
+          "subjectOf": { "@id": "https://suuapp.com/delete-account.html#webpage" }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://suuapp.com/#furkan",
+          "name": "Furkan Mert Fındıklı",
+          "alternateName": "Furkan Mert Findikli"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://suuapp.com/delete-account.html#webpage",
+          "name": "Hesap Silme / Delete Account",
+          "url": "https://suuapp.com/delete-account.html",
+          "description": "Suu – Kalori, Su ve Fitness uygulamasında hesap ve veri silme talimatları.",
+          "about": [
+            { "@id": "https://suuapp.com/#suuapp-android" },
+            { "@id": "https://suuapp.com/#suuapp-ios" }
+          ],
+          "dateModified": "2026-10-03"
+        }
+      ]
     }
     </script>
     <style>

@@ -526,10 +526,12 @@
       "Siri ile sesli su ekleme (iOS)"
     ],
     "trial_days": 3,
+    "_updated_prices": "Sahibi 2026-10-03'te teyit etti: Türkiye fiyatları aylık ₺149,99, yıllık ₺1.199,99, aile (3 kişiye kadar) yıllık ₺2.399,99. Normal yıllık fiyat (₺2.400) ve %50 lansman indirimi değişmedi.",
+    "_price_scope": "price_try değerleri YALNIZCA Türkiye mağaza fiyatıdır. Diğer ülkelerin fiyatı bilinmiyor: TRY başka para birimine ÇEVRİLMEZ, USD/EUR/SAR/RUB tutarı yazılmaz; TRY fiyatın yanına region_note, genel anlatımda currency_note kullanılır (mağaza fiyatı yerel para biriminde gösterir). Sayı biçimi dile göre: tr/de/it ₺1.199,99 · ru/uk ₺1 199,99 · en/ar/hi ₺1,199.99.",
     "plans": [
       {
         "id": "yearly",
-        "price_try": 1200,
+        "price_try": 1199.99,
         "regular_price_try": 2400,
         "discount_percent": 50,
         "period": "P1Y",
@@ -544,7 +546,7 @@
       },
       {
         "id": "monthly",
-        "price_try": 149,
+        "price_try": 149.99,
         "period": "P1M",
         "label": {
           "tr": "Aylık",
@@ -553,7 +555,7 @@
       },
       {
         "id": "family",
-        "price_try": 2399,
+        "price_try": 2399.99,
         "period": "P1Y",
         "seats": 3,
         "label": {
@@ -565,7 +567,20 @@
     "currency": "TRY",
     "currency_note": {
       "tr": "Fiyatlar yerel para biriminde otomatik gösterilir.",
-      "en": "Prices are shown automatically in your local currency."
+      "en": "Prices are shown automatically in your local currency.",
+      "ar": "تُعرض الأسعار تلقائيًا بعملتك المحلية.",
+      "ru": "Цены показываются автоматически в вашей валюте.",
+      "de": "Preise werden automatisch in deiner Landeswährung angezeigt.",
+      "it": "I prezzi sono mostrati automaticamente nella tua valuta locale.",
+      "uk": "Ціни показуються автоматично у твоїй валюті.",
+      "hi": "क़ीमतें आपकी स्थानीय मुद्रा में अपने आप दिखती हैं।"
+    },
+    "region_note": {
+      "_comment": "TRY fiyatın yanında, Türkiye dışındaki okura ne göreceğini söyleyen cümle.",
+      "tr": "Gösterilen fiyatlar Türkiye fiyatlarıdır; diğer ülkelerde App Store ve Google Play fiyatı yerel para biriminde gösterir.",
+      "en": "Prices shown are for Türkiye; in other countries the App Store and Google Play show the price in your local currency.",
+      "ar": "الأسعار المعروضة هي أسعار تركيا؛ وفي الدول الأخرى يعرض App Store وGoogle Play السعر بعملتك المحلية.",
+      "ru": "Указаны цены для Турции; в других странах App Store и Google Play показывают цену в вашей местной валюте."
     }
   },
   "links": {
@@ -576,11 +591,18 @@
     "google_play": "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
     "android_package": "com.sutakip.suutakippro",
     "support_email": "Suutakip@gmail.com",
-    "twitter_handle": "@SuuTakip"
+    "twitter_handle": "@SuuTakip",
+    "official_profiles": {
+      "x": "https://x.com/SuuTakip"
+    }
   },
   "entities": {
     "organization_id": "https://suuapp.com/#organization",
-    "app_id": "https://suuapp.com/#suuapp",
+    "app_ids": {
+      "ios": "https://suuapp.com/#suuapp-ios",
+      "android": "https://suuapp.com/#suuapp-android"
+    },
+    "_app_ids_comment": "Her mağaza kendi MobileApplication düğümü: iOS (App Store) → #suuapp-ios, Android (Google Play) → #suuapp-android. Tek/karma bir '#suuapp' düğümü YOK; ikisini birden anan bir sayfa iki düğümü de tam tanımlar. aggregateRating yalnızca sayımı doğrulanmış mağazanın düğümüne basılır (bkz. numbers._rating_comment).",
     "founder": {
       "id": "https://suuapp.com/#furkan",
       "name": "Furkan Mert Fındıklı",

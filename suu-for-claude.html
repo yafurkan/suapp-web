@@ -43,6 +43,7 @@
       "@type": "Organization",
       "@id": "https://suuapp.com/#organization",
       "name": "Suu",
+      "description": "Suu is an independent mobile app developer. Its app combines water tracking, photo-based calorie counting and GPS exercise tracking with AI in a single app.",
       "alternateName": ["Suu App", "Suu Takip", "suuapp.com"],
       "disambiguatingDescription": "Suu is a mobile health app for iOS and Android; the name means \"water\" in Turkish. It is not a university or an educational institution and is not affiliated with Southern Utah University (SUU).",
       "url": "https://suuapp.com",
@@ -50,11 +51,9 @@
       "founder": { "@id": "https://suuapp.com/#furkan" },
       "foundingDate": "2024",
       "sameAs": [
-        "https://www.linkedin.com/in/furkanfindikli/",
         "https://apps.apple.com/us/app/suu-su-takip/id6757619920",
         "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
-        "https://x.com/SuuTakip",
-        "https://com-sutakip-suutakippro.en.uptodown.com/android"
+        "https://x.com/SuuTakip"
       ]
     },
     {
@@ -63,6 +62,34 @@
       "name": "Furkan Mert Fındıklı",
       "url": "https://suuapp.com/yazarlar/furkan-mert.html",
       "sameAs": ["https://www.linkedin.com/in/furkanfindikli/"]
+    },
+    {
+      "@type": ["SoftwareApplication", "MobileApplication"],
+      "@id": "https://suuapp.com/#suuapp-ios",
+      "name": "Suu – Water Tracker, Calorie Counter & Exercise Tracking",
+      "alternateName": "Suu",
+      "disambiguatingDescription": "A mobile health app for water, calorie and exercise tracking. It is a different, independent app from the SUU student app published by Southern Utah University.",
+      "operatingSystem": "iOS 15.0+",
+      "applicationCategory": "HealthApplication",
+      "url": "https://suuapp.com/hosgeldiniz-en.html",
+      "downloadUrl": "https://apps.apple.com/us/app/suu-su-takip/id6757619920",
+      "installUrl": "https://apps.apple.com/us/app/suu-su-takip/id6757619920",
+      "author": { "@id": "https://suuapp.com/#furkan" },
+      "publisher": { "@id": "https://suuapp.com/#organization" }
+    },
+    {
+      "@type": ["SoftwareApplication", "MobileApplication"],
+      "@id": "https://suuapp.com/#suuapp-android",
+      "name": "Suu – Water Tracker, Calorie Counter & Exercise Tracking",
+      "alternateName": "Suu",
+      "disambiguatingDescription": "A mobile health app for water, calorie and exercise tracking. It is a different, independent app from the SUU student app published by Southern Utah University.",
+      "operatingSystem": "Android 8.0+",
+      "applicationCategory": "HealthApplication",
+      "url": "https://suuapp.com/hosgeldiniz-en.html",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
+      "author": { "@id": "https://suuapp.com/#furkan" },
+      "publisher": { "@id": "https://suuapp.com/#organization" }
     },
     {
       "@type": "TechArticle",
@@ -74,7 +101,8 @@
       "isAccessibleForFree": true,
       "author": { "@id": "https://suuapp.com/#furkan" },
       "publisher": { "@id": "https://suuapp.com/#organization" },
-      "about": { "@id": "https://suuapp.com/#suuapp-ios" },
+      "about": [{ "@id": "https://suuapp.com/#suuapp-ios" }, { "@id": "https://suuapp.com/#suuapp-android" }],
+      "dateModified": "2026-10-03",
       "proficiencyLevel": "Beginner",
       "speakable": { "@type": "SpeakableSpecification", "cssSelector": ["h1", ".lede"] }
     },

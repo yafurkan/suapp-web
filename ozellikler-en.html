@@ -65,6 +65,11 @@
         "name": "Suu Features — Photo Calories, GPS Exercise and Water Tracking",
         "description": "Every feature of Suu across its three pillars — photo and voice calorie logging, live GPS workout recording with a route map, and hydration across 91 beverages — plus how it compares to other apps.",
         "url": "https://suuapp.com/ozellikler-en.html",
+        "dateModified": "2026-10-03",
+        "about": [
+            { "@id": "https://suuapp.com/#suuapp-ios" },
+            { "@id": "https://suuapp.com/#suuapp-android" }
+        ],
         "inLanguage": "en",
         "mainEntity": {
             "@type": "ItemList",
@@ -93,63 +98,118 @@
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": [
-    "SoftwareApplication",
-    "MobileApplication"
-  ],
-  "@id": "https://suuapp.com/#suuapp-ios",
-  "name": "Suu",
-  "description": "AI-powered health app for iOS and Android combining photo and voice calorie logging with macros, live GPS workout tracking with a route map across ~50 sports, and hydration across 91 beverages — where each pillar updates the others.",
-  "url": "https://suuapp.com/ozellikler-en.html",
-  "inLanguage": "en",
-  "applicationCategory": "HealthApplication",
-  "applicationSubCategory": "HealthAndFitness",
-  "operatingSystem": [
-    "Android",
-    "iOS"
-  ],
-  "downloadUrl": "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
-  "installUrl": "https://suuapp.com/app/",
-  "offers": [
+  "@graph": [
     {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD",
-      "url": "https://apps.apple.com/us/app/suu-su-takip/id6757619920",
-      "seller": {
-        "@type": "Organization",
-        "name": "App Store"
+      "@type": [
+        "SoftwareApplication",
+        "MobileApplication"
+      ],
+      "@id": "https://suuapp.com/#suuapp-ios",
+      "name": "Suu – Water Tracker, Calorie Counter & Exercise Tracking",
+      "alternateName": "Suu",
+      "description": "AI-powered health app for iOS and Android combining photo and voice calorie logging with macros, live GPS workout tracking with a route map across ~50 sports, and hydration across 91 beverages — where each pillar updates the others.",
+      "operatingSystem": "iOS 15.0+",
+      "applicationCategory": "HealthApplication",
+      "applicationSubCategory": "HealthAndFitness",
+      "url": "https://suuapp.com/ozellikler-en.html",
+      "downloadUrl": "https://apps.apple.com/us/app/suu-su-takip/id6757619920",
+      "installUrl": "https://apps.apple.com/us/app/suu-su-takip/id6757619920",
+      "inLanguage": [
+        "tr",
+        "en",
+        "ar",
+        "de",
+        "it",
+        "ru",
+        "hi"
+      ],
+      "author": {
+        "@id": "https://suuapp.com/#furkan"
+      },
+      "publisher": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "TRY",
+          "url": "https://apps.apple.com/us/app/suu-su-takip/id6757619920",
+          "seller": {
+            "@type": "Organization",
+            "name": "App Store"
+          }
+        }
+      ]
+    },
+    {
+      "@type": [
+        "SoftwareApplication",
+        "MobileApplication"
+      ],
+      "@id": "https://suuapp.com/#suuapp-android",
+      "name": "Suu – Water Tracker, Calorie Counter & Exercise Tracking",
+      "alternateName": "Suu",
+      "description": "AI-powered health app for iOS and Android combining photo and voice calorie logging with macros, live GPS workout tracking with a route map across ~50 sports, and hydration across 91 beverages — where each pillar updates the others.",
+      "operatingSystem": "Android 8.0+",
+      "applicationCategory": "HealthApplication",
+      "applicationSubCategory": "HealthAndFitness",
+      "url": "https://suuapp.com/ozellikler-en.html",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
+      "inLanguage": [
+        "tr",
+        "en",
+        "ar",
+        "de",
+        "it",
+        "ru",
+        "hi"
+      ],
+      "author": {
+        "@id": "https://suuapp.com/#furkan"
+      },
+      "publisher": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "TRY",
+          "url": "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
+          "seller": {
+            "@type": "Organization",
+            "name": "Google Play"
+          }
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "bestRating": "5",
+        "ratingCount": "2847"
       }
     },
     {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD",
-      "url": "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
-      "seller": {
-        "@type": "Organization",
-        "name": "Google Play"
+      "@type": "Organization",
+      "@id": "https://suuapp.com/#organization",
+      "name": "Suu",
+      "url": "https://suuapp.com",
+      "founder": {
+        "@id": "https://suuapp.com/#furkan"
       }
-    }
-  ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "bestRating": "5",
-    "ratingCount": "2847"
-  },
-  "author": {
-    "@type": "Organization",
-    "@id": "https://suuapp.com/#organization",
-    "name": "Suu",
-    "url": "https://suuapp.com",
-    "founder": {
+    },
+    {
       "@type": "Person",
       "@id": "https://suuapp.com/#furkan",
       "name": "Furkan Mert Fındıklı",
-      "url": "https://www.linkedin.com/in/furkanfindikli/"
+      "url": "https://suuapp.com/yazarlar/furkan-mert.html",
+      "sameAs": [
+        "https://www.linkedin.com/in/furkanfindikli/"
+      ]
     }
-  }
+  ]
 }
     </script>
 

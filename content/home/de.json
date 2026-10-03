@@ -582,7 +582,7 @@
   "pricing": {
     "eyebrow": "Preise",
     "head": "Die Kernfunktionen sind immer kostenlos",
-    "sub": "Teste Premium 3 Tage gratis. Preise werden automatisch in deiner Landeswährung angezeigt.",
+    "sub": "Teste Premium 3 Tage gratis. Die angezeigten Preise gelten für die Türkei; in anderen Ländern zeigen App Store und Google Play den Preis in deiner Landeswährung.",
     "plans": [
       {
         "name": "Kostenlos",
@@ -600,7 +600,7 @@
       },
       {
         "name": "Premium jährlich",
-        "price": "₺1.200",
+        "price": "₺1.199,99",
         "was": "₺2.400",
         "badge": "50 % Launch-Rabatt",
         "featured": true,
@@ -619,9 +619,9 @@
       },
       {
         "name": "Monatlich & Familie",
-        "price": "₺149",
+        "price": "₺149,99",
         "period": "/ Monat",
-        "note": "Familientarif: ₺2.399 / Jahr — bis zu 3 Personen",
+        "note": "Familientarif: ₺2.399,99 / Jahr — bis zu 3 Personen",
         "features": [
           "Alle Premium-Funktionen",
           "Monatlich, jederzeit kündbar",
@@ -650,7 +650,7 @@
       },
       {
         "q": "Ist Suu kostenlos?",
-        "a": "Wasser- und Hydrationstracking, 3 KI-Analysen pro Tag sowie die Synchronisierung mit Apple Health / Google Health Connect sind dauerhaft kostenlos. Unbegrenzte KI-Mahlzeitenanalyse, Kalorienzählen per Foto, erweiterte Ernährungsanalyse und Premium-Statistiken erfordern Premium. Premium lässt sich 3 Tage gratis testen; der Jahrestarif kostet ₺1.200 mit 50 % Launch-Rabatt (regulär ₺2.400), monatlich ₺149, der Familientarif für 3 Personen ₺2.399 pro Jahr."
+        "a": "Wasser- und Hydrationstracking, 3 KI-Analysen pro Tag sowie die Synchronisierung mit Apple Health / Google Health Connect sind dauerhaft kostenlos. Unbegrenzte KI-Mahlzeitenanalyse, Kalorienzählen per Foto, erweiterte Ernährungsanalyse und Premium-Statistiken erfordern Premium. Premium lässt sich 3 Tage gratis testen; in der Türkei kostet der Jahrestarif ₺1.199,99 mit 50 % Launch-Rabatt (regulär ₺2.400), monatlich ₺149,99, der Familientarif für 3 Personen ₺2.399,99 pro Jahr. In anderen Ländern zeigt der Store den Preis in deiner Landeswährung."
       },
       {
         "q": "Welche Sprachen unterstützt Suu?",
