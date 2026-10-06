@@ -62,6 +62,9 @@ APP_IDS = {
     "android": f"{BASE}/#suuapp-android",
 }
 AMBIGUOUS = "(dokunulmadı) platformu belirsiz/karma Suu uygulama düğümü"
+# Zaten bir platform kimliği taşıyan ama sinyalleri o platformla çelişen düğüm
+# (ör. @id #suuapp-ios + operatingSystem "iOS, Android"). Elle iki düğüme bölünmeli.
+MISBOUND = "(dokunulmadı) @id'si platform sinyalleriyle çelişen Suu uygulama düğümü"
 
 IOS_HOSTS = ("apps.apple.com", "itunes.apple.com")
 ANDROID_HOSTS = ("play.google.com",)
@@ -86,14 +89,8 @@ def _strings(value) -> list[str]:
     return []
 
 
-def app_platform(node: dict) -> str | None:
-    """Uygulama düğümünün platformu: "ios", "android" ya da None (belirsiz/karma).
-
-    Sinyaller: mağaza URL'leri (url, downloadUrl, installUrl, sameAs ve
-    offers[].url) ile operatingSystem. İki platformun sinyali birden varsa
-    — örneğin operatingSystem ["Android", "iOS"] ya da hem App Store hem Play
-    teklifi — düğüm karmadır ve None döner: tek bir kimliğe bağlanamaz.
-    """
+def platform_signals(node: dict) -> tuple[bool, bool]:
+    """(iOS sinyali var mı, Android sinyali var mı) — bkz. app_platform."""
     urls: list[str] = []
     for key in ("url", "downloadUrl", "installUrl", "sameAs"):
         urls += _strings(node.get(key))
@@ -105,6 +102,18 @@ def app_platform(node: dict) -> str | None:
 
     ios = any(h in u for u in urls for h in IOS_HOSTS) or bool(RE_IOS_OS.search(os_text))
     android = any(h in u for u in urls for h in ANDROID_HOSTS) or bool(RE_ANDROID_OS.search(os_text))
+    return ios, android
+
+
+def app_platform(node: dict) -> str | None:
+    """Uygulama düğümünün platformu: "ios", "android" ya da None (belirsiz/karma).
+
+    Sinyaller: mağaza URL'leri (url, downloadUrl, installUrl, sameAs ve
+    offers[].url) ile operatingSystem. İki platformun sinyali birden varsa
+    — örneğin operatingSystem ["Android", "iOS"] ya da hem App Store hem Play
+    teklifi — düğüm karmadır ve None döner: tek bir kimliğe bağlanamaz.
+    """
+    ios, android = platform_signals(node)
     if ios and not android:
         return "ios"
     if android and not ios:
@@ -145,8 +154,13 @@ def walk(obj, stats: dict, skipped: dict | None = None) -> object:
 
     node = {k: walk(v, stats, skipped) for k, v in obj.items()}
 
-    if "@id" not in node and is_app_node(node) and app_platform(node) is None:
-        skipped[AMBIGUOUS] = skipped.get(AMBIGUOUS, 0) + 1
+    if is_app_node(node):
+        ios, android = platform_signals(node)
+        cur = node.get("@id")
+        if cur is None and ios == android:          # karma ya da sinyalsiz
+            skipped[AMBIGUOUS] = skipped.get(AMBIGUOUS, 0) + 1
+        elif cur == APP_IDS["ios"] and android or cur == APP_IDS["android"] and ios:
+            skipped[MISBOUND] = skipped.get(MISBOUND, 0) + 1
 
     entity_id = match_id(node)
     if entity_id and "@id" not in node:

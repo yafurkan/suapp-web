@@ -639,6 +639,7 @@
       {
         "name": "Mert Öz",
         "role": "Yazılım Geliştirici",
+        "role_i18n": {"tr": "Yazılım Geliştirici", "en": "Software Developer", "ar": "مطوّر برمجيات", "ru": "Разработчик ПО", "de": "Softwareentwickler", "it": "Sviluppatore software", "uk": "Розробник ПЗ", "hi": "सॉफ़्टवेयर डेवलपर"},
         "photo": "assets/team/mert.jpg",
         "id": "https://suuapp.com/#mert"
       }
@@ -657,11 +658,13 @@
       {
         "name": "Emre Uzer",
         "role": "İçerik Yazarı",
+        "role_i18n": {"tr": "İçerik Yazarı", "en": "Content Writer", "ar": "كاتب محتوى", "ru": "Автор контента", "de": "Content-Autor", "it": "Autore di contenuti", "uk": "Автор контенту", "hi": "कंटेंट लेखक"},
         "id": "https://suuapp.com/#emre"
       },
       {
         "name": "Doğukan Öztürk",
         "role": "İçerik Yazarı",
+        "role_i18n": {"tr": "İçerik Yazarı", "en": "Content Writer", "ar": "كاتب محتوى", "ru": "Автор контента", "de": "Content-Autor", "it": "Autore di contenuti", "uk": "Автор контенту", "hi": "कंटेंट लेखक"},
         "id": "https://suuapp.com/#dogukan"
       }
     ],
@@ -1142,7 +1145,7 @@
     "iftar_suhoor_reminders": true,
     "fasting_timer": false,
     "text": {
-      "tr": "Ramazan'da Suu, iftar ve sahur saatlerine göre su hatırlatıcısı gönderebilir; oruç boyunca sessiz kalır ve iftar ile sahur arasında içtiğin suyu takip eder.",
+      "tr": "Ramazan'da Suu, iftar ve sahur saatlerine göre su hatırlatıcısı gönderebilir ve iftar ile sahur arasında içtiğin suyu takip eder.",
       "en": "During Ramadan, Suu can send water reminders timed to iftar and suhoor and tracks what you drink between iftar and suhoor.",
       "ar": "في رمضان، يستطيع Suu إرسال تذكيرات بشرب الماء وفق موعدي الإفطار والسحور، ويتتبّع ما تشربه بين الإفطار والسحور.",
       "ru": "В Рамадан Suu может присылать напоминания о воде по времени ифтара и сухура и учитывает выпитое между ифтаром и сухуром.",

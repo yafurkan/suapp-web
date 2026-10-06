@@ -41,6 +41,35 @@ def meta(page: str, *keys: str) -> str:
     return ""
 
 
+RE_LD = re.compile(r'<script type="application/ld\+json">(.*?)</script>', re.S)
+
+
+def ld_author(page: str) -> str:
+    """Article JSON-LD'deki yazar adı. Görünen imza ve şema buradan beslendiği için
+    beslemenin dc:creator'ı da aynı kaynaktan gelir; article:author meta'sı
+    olmayan (ör. RU) ya da eski kalan sayfalarda yanlış yazar basılmaz."""
+    import json
+    for block in RE_LD.findall(page):
+        try:
+            data = json.loads(block)
+        except ValueError:
+            continue
+        nodes = data.get("@graph", [data]) if isinstance(data, dict) else data
+        for node in nodes if isinstance(nodes, list) else [nodes]:
+            if not isinstance(node, dict):
+                continue
+            types = node.get("@type")
+            types = types if isinstance(types, list) else [types]
+            if not any(t in ("Article", "BlogPosting", "NewsArticle") for t in types):
+                continue
+            author = node.get("author")
+            if isinstance(author, list) and author:
+                author = author[0]
+            if isinstance(author, dict) and author.get("name"):
+                return author["name"].strip()
+    return ""
+
+
 def title_of(page: str) -> str:
     t = meta(page, "og:title")
     if not t:
@@ -81,7 +110,7 @@ def main() -> int:
                 "url": f"{BASE}/{cfg['dir']}/{path.name}",
                 "desc": meta(page, "description", "og:description"),
                 "date": published_of(page),
-                "author": meta(page, "article:author") or "Furkan Mert Fındıklı",
+                "author": ld_author(page) or meta(page, "article:author") or "Suu",
             })
 
         entries.sort(key=lambda e: e["date"], reverse=True)

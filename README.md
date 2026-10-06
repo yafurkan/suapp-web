@@ -359,15 +359,20 @@ git push origin main
 `.github/workflows/deploy.yml` iki iş çalıştırır:
 
 1. **deploy** — yayından önce build girdilerini (`worker/`, `scripts/`,
-   `content/`) ve geliştirici notlarını (`README.md`, `app-readme.md`) siler;
+   `content/`) ve geliştirici notlarını (`README.md`, `app-readme.md`,
+   `assets/*/README.md`) siler;
    bunlar suuapp.com'da okunamaz.
 2. **indexnow** — yalnızca push'ta, deploy bittikten sonra: ~60 sn Pages
    yayılımını bekler, ardından
-   `python3 scripts/indexnow-submit.py --range "<before>..<sha>"` ile push'taki
-   bütün commit'lerde değişen HTML'leri bildirir ve HTTP durumunu yazar.
-   noindex sayfalar, `EXCLUDE` listesi ve yayınlanmayan klasörler elenir;
-   sitemap ve beslemeler gönderilmez. `before` sıfırsa (ilk push) ya da klonda
-   yoksa (force-push) son commit'e düşer. Gizli anahtar gerekmez (anahtar
+   `python3 scripts/indexnow-submit.py --range "<son başarılı yayın>..<sha>"`
+   ile o yayından bu yana bütün commit'lerde değişen HTML'leri bildirir ve
+   HTTP durumunu yazar. Başlangıç `github.event.before` değil son başarılı
+   deploy çalıştırmasının commit'i (`gh run list`): art arda iki push'ta
+   bekleyen yayın iptal edilirse o push'un sayfaları da sonrakiyle bildirilir.
+   noindex, meta refresh (yönlendirme) ve kanoniği başka adres olan sayfalar,
+   `EXCLUDE` listesi ve yayınlanmayan klasörler elenir; sitemap ve beslemeler
+   gönderilmez. Başlangıç bulunamazsa `before`'a, o da sıfırsa (ilk push) ya da
+   klonda yoksa (force-push) son commit'e düşer. Gizli anahtar gerekmez (anahtar
    dosyası kökte); `continue-on-error` sayesinde başarısız bir ping yayını
    kırmızıya çevirmez.
 

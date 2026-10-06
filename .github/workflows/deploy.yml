@@ -62,11 +62,26 @@ jobs:
     continue-on-error: true
     permissions:
       contents: read
+      actions: read           # son başarılı yayının commit'ini sorgulamak için
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0          # github.event.before ile diff için tam geçmiş
+          fetch-depth: 0          # aralık diff'i için tam geçmiş
+
+      # Aralığın başı github.event.before DEĞİL, son BAŞARILI yayın: art arda
+      # iki push'ta bekleyen yayın iptal edilirse (concurrency) o push'un
+      # IndexNow işi hiç çalışmaz; bir sonraki push yalnızca kendi commit'lerini
+      # bildirseydi iptal edilen push'un sayfaları hiç bildirilmezdi. Bu
+      # çalıştırma henüz bitmediği için listede kendisi yer almaz.
+      - name: Son başarılı yayın
+        id: prev
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          sha=$(gh run list -R "$GITHUB_REPOSITORY" --workflow deploy.yml --branch main \
+                --event push --status success --limit 1 --json headSha -q '.[0].headSha' || true)
+          echo "sha=${sha:-${{ github.event.before }}}" >> "$GITHUB_OUTPUT"
 
       # Pages dağıtımı CDN'e yayılırken motor sayfayı hemen çekerse eski
       # sürümü görür — kısa bir bekleme.
@@ -74,4 +89,4 @@ jobs:
         run: sleep 60
 
       - name: IndexNow'a bildir
-        run: python3 scripts/indexnow-submit.py --range "${{ github.event.before }}..${{ github.sha }}"
+        run: python3 scripts/indexnow-submit.py --range "${{ steps.prev.outputs.sha }}..${{ github.sha }}"

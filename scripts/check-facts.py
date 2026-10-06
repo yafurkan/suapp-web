@@ -266,17 +266,29 @@ def build_rules(facts: dict) -> list[dict]:
                 "id": "apple-watch-stale-soon",
                 "severity": ERROR,
                 "pattern": re.compile(
-                    r"(?i)(?:apple\s*watch|watchos)[^.<\n]{0,90}"
+                    r"(?i)(?:apple[\s-]*watch|watchos)[^.<\n]{0,90}"
                     r"(?:coming\s*soon|in\s+development|on\s+the\s+way|not\s+(?:yet\s+)?released|no\s+(?:dedicated\s+)?(?:apple\s*)?watch\s+app\s+yet|"
                     r"yakında|yolda|geliştiriliyor|henüz\s+(?:yok|adanmış|özel)|"
                     r"in\s+arbeit|noch\s+aussteht|noch\s+keine|demnächst|in\s+arrivo|deve\s+ancora|non\s+ha\s+ancora|"
                     r"в\s+разработке|пока\s+нет|скоро\s+выйдет|قيد\s+التطوير|لم\s+يصدر|قريبًا|"
                     r"у\s+розробці|поки\s+немає|ще\s+попереду|незабаром|जल्द|अभी\s+नहीं)"
                     r"|(?:coming\s*soon|in\s+development|yakında|in\s+arbeit|in\s+arrivo|в\s+разработке|قيد\s+التطوير|у\s+розробці)"
-                    r"[^.<\n]{0,60}(?:apple\s*watch|watchos)"
+                    r"[^.<\n]{0,60}(?:apple[\s-]*watch|watchos)"
                 ),
                 "message": "Apple Watch uygulaması yayında ama metin 'yakında / geliştiriliyor' diyor",
                 "fix": "Apple Watch uygulaması mevcut — su, sesli öğün, GPS'li antrenman",
+            },
+            {
+                # Karşılaştırma tablosu: satır etiketi Apple Watch, Suu sütunu ✓ değil
+                # (ör. DE "In Arbeit"). Hücreler etiketle ayrı <td>'lerde olduğundan
+                # yukarıdaki cümle kuralı bunu göremiyor.
+                "id": "apple-watch-table-not-yes",
+                "severity": ERROR,
+                "pattern": re.compile(
+                    r'(?i)<tr><td>[^<]*(?:apple[\s-]*watch|watchos)[^<]*</td>.*?<td class="col-suu (?:soon|no)"'
+                ),
+                "message": "Karşılaştırma tablosunda Suu'nun Apple Watch hücresi ✓ değil",
+                "fix": "content/compare|guides/*.json → hücreyi {\"text\": \"✓\", \"cls\": \"yes\"} yap, build-compare.py --apply",
             },
             {
                 # Sesli öğün analizi iPhone'da tamamlanır; su/antrenman kuyruğa alınıp
@@ -351,6 +363,40 @@ def iter_files(explicit: list[str]) -> list[Path]:
     return sorted(files)
 
 
+# Yapısal kurallar (satır regex'i değil): sayfanın kendi içindeki iki sinyalin
+# tutarlılığı. article:author meta'sı Article JSON-LD yazarından ayrı
+# güncelleniyordu; yazar dağıtımında 36 sayfada eski ad kaldı (2026-10-06).
+AUTHOR_RULE = {
+    "id": "article-author-mismatch",
+    "severity": ERROR,
+    "message": "<meta property=\"article:author\"> Article JSON-LD yazarıyla aynı değil",
+    "fix": "meta içeriğini JSON-LD author.name ile eşitle (görünen imza da aynı olmalı)",
+}
+RE_META_AUTHOR = re.compile(r'<meta property="article:author" content="([^"]*)"')
+RE_LD_BLOCK = re.compile(r'<script type="application/ld\+json">(.*?)</script>', re.S)
+
+
+def ld_article_author(text: str) -> str | None:
+    for block in RE_LD_BLOCK.findall(text):
+        try:
+            data = json.loads(block)
+        except ValueError:
+            continue
+        nodes = data.get("@graph", [data]) if isinstance(data, dict) else data
+        for node in nodes if isinstance(nodes, list) else [nodes]:
+            if not isinstance(node, dict):
+                continue
+            types = node.get("@type")
+            types = types if isinstance(types, list) else [types]
+            if any(t in ("Article", "BlogPosting", "NewsArticle") for t in types):
+                author = node.get("author")
+                if isinstance(author, list) and author:
+                    author = author[0]
+                if isinstance(author, dict) and author.get("name"):
+                    return author["name"]
+    return None
+
+
 def scan(path: Path, rules: list[dict]) -> list[tuple[dict, int, str]]:
     try:
         text = path.read_text(encoding="utf-8", errors="replace")
@@ -358,6 +404,13 @@ def scan(path: Path, rules: list[dict]) -> list[tuple[dict, int, str]]:
         return []
 
     hits: list[tuple[dict, int, str]] = []
+    if path.suffix.lower() == ".html":
+        meta = RE_META_AUTHOR.search(text)
+        if meta:
+            ld_name = ld_article_author(text)
+            if ld_name and ld_name != meta.group(1):
+                lineno = text.count("\n", 0, meta.start()) + 1
+                hits.append((AUTHOR_RULE, lineno, f"meta '{meta.group(1)}' ≠ JSON-LD '{ld_name}'"))
     for rule in FILE_RULES:
         if rule["applies"].search(text) and not rule["requires"].search(text):
             hits.append((rule, 1, "(dosya düzeyi)"))
@@ -392,14 +445,14 @@ def main() -> int:
         for rule, lineno, snippet in scan(path, rules):
             findings.setdefault(rule["id"], []).append((path, lineno, snippet))
 
-    by_id = {r["id"]: r for r in rules + FILE_RULES}
+    by_id = {r["id"]: r for r in rules + FILE_RULES + [AUTHOR_RULE]}
     errors = sum(
         len(v) for k, v in findings.items() if by_id[k]["severity"] == ERROR
     )
     warns = sum(len(v) for k, v in findings.items() if by_id[k]["severity"] == WARN)
 
     if not quiet:
-        for rule in rules + FILE_RULES:
+        for rule in rules + FILE_RULES + [AUTHOR_RULE]:
             hits = findings.get(rule["id"])
             if not hits:
                 continue
