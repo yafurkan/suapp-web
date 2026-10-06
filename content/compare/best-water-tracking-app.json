@@ -25,7 +25,7 @@
           {
             "name": "Suu",
             "tag": "best if you want the goal to adjust itself",
-            "body": "Free on iOS and Android. Tracks 91 beverages with its own hydration factor, so coffee is not counted the same as water. The goal moves during the day: log a run and it rises for the fluid you sweated out, log a high-protein or salty meal and it adds the water digestion needs — and tells you why. Also counts calories from a meal photo and records GPS workouts, which is the reason most people here pick it over a dedicated hydration app. Its Apple Watch app logs water and meals by voice and records GPS workouts from the wrist."
+            "body": "Free on iOS and Android. Tracks 91 beverages, each with its own hydration factor, so coffee is not counted the same as water. The full drink list is part of Premium; on the free plan, water and sparkling water are logged directly and other drinks by telling Suu AI. The goal moves during the day: log a run and it rises for the fluid you sweated out, log a high-protein or salty meal and it adds the water digestion needs — and tells you why. Also counts calories from a meal photo and records GPS workouts, which is the reason most people here pick it over a dedicated hydration app. Its Apple Watch app logs water and meals by voice and records GPS workouts from the wrist."
           },
           {
             "name": "WaterMinder",
@@ -171,7 +171,7 @@
             "label": "Beverages tracked",
             "cells": [
               {
-                "text": "91, each with a hydration factor",
+                "text": "91, each with a hydration factor · full list with Premium",
                 "cls": "yes"
               },
               {
@@ -418,10 +418,10 @@
             ]
           },
           {
-            "label": "Friend leagues",
+            "label": "Friend leaderboard and leagues",
             "cells": [
               {
-                "text": "✓ Weekly, up to 4 people, cross-platform",
+                "text": "✓ Weekly leaderboard free (up to 4 friends), cross-platform · private leagues Premium",
                 "cls": "yes"
               },
               {
@@ -586,7 +586,7 @@
           "<strong>Choose Waterllama</strong> if you are on iOS and want the nicest-feeling app, with a straightforward fixed goal.",
           "<strong>Choose Hydro Coach</strong> if you are on Android and want a capable free tier.",
           "<strong>Choose Plant Nanny</strong> if your problem is motivation rather than memory.",
-          "<strong>Choose Suu</strong> if you want the goal calculated from your actual day rather than set once, if you want 91 beverages counted by their real hydration contribution, or if you would rather track water, calories and workouts in one app than three. It is free on iOS and Android, and its Apple Watch app logs water, meals and GPS workouts from the wrist."
+          "<strong>Choose Suu</strong> if you want the goal calculated from your actual day rather than set once, if you want 91 beverages counted by their real hydration contribution, or if you would rather track water, calories and workouts in one app than three. It is free on iOS and Android, and its Apple Watch app logs water, meals and GPS workouts from the wrist; the full 91-drink list is part of Premium."
         ]
       },
       "cta": {
@@ -601,7 +601,7 @@
         },
         {
           "q": "What is the best free water tracking app?",
-          "a": "Suu and Hydro Coach both have real free tiers. Suu's free tier includes the full hydration side — 91 beverages, dynamic daily goal, Apple Health and Google Health Connect sync, widgets and friend leagues — plus three AI food analyses a day; Premium is for unlimited photo calorie analysis and reports. Hydro Coach's free tier covers goal calculation and reminders, with several features paywalled. WaterMinder is paid."
+          "a": "Suu and Hydro Coach both have real free tiers. Suu's free tier covers the core hydration side — water and sparkling water logging (other drinks are logged by telling Suu AI), dynamic daily goal, Apple Health and Google Health Connect sync, widgets and the weekly friends leaderboard — plus three AI analyses a day; Premium adds the full 91-drink list, private friend leagues, photo calorie analysis, unlimited AI and reports. Hydro Coach's free tier covers goal calculation and reminders, with several features paywalled. WaterMinder is paid."
         },
         {
           "q": "Is there a good WaterMinder alternative for Android?",
@@ -680,7 +680,7 @@
           {
             "name": "Suu",
             "tag": "wenn das Ziel mitdenken soll",
-            "body": "Kostenlos für iOS und Android. Erfasst 91 Getränke mit echtem Dehydrationsfaktor — Kaffee zählt also nicht wie Wasser. Das Ziel verschiebt sich im Tagesverlauf: Nach einem eingetragenen Lauf steigt es um die geschätzte Schweißmenge, nach einer eiweiß- oder salzreichen Mahlzeit kommt das Wasser dazu, das die Verdauung braucht — mit Begründung. Zählt außerdem Kalorien aus einem Foto und zeichnet Workouts per GPS auf. Die Apple-Watch-App erfasst Wasser und Mahlzeiten per Sprache und zeichnet GPS-Workouts direkt am Handgelenk auf."
+            "body": "Kostenlos für iOS und Android. Erfasst 91 Getränke mit echtem Dehydrationsfaktor — Kaffee zählt also nicht wie Wasser. Die vollständige Getränkeliste gehört zu Premium; gratis trägst du Wasser und Mineralwasser direkt ein, andere Getränke, indem du sie Suu AI sagst. Das Ziel verschiebt sich im Tagesverlauf: Nach einem eingetragenen Lauf steigt es um die geschätzte Schweißmenge, nach einer eiweiß- oder salzreichen Mahlzeit kommt das Wasser dazu, das die Verdauung braucht — mit Begründung. Zählt außerdem Kalorien aus einem Foto und zeichnet Workouts per GPS auf. Die Apple-Watch-App erfasst Wasser und Mahlzeiten per Sprache und zeichnet GPS-Workouts direkt am Handgelenk auf."
           },
           {
             "name": "WaterMinder",
@@ -826,7 +826,7 @@
             "label": "Erfasste Getränke",
             "cells": [
               {
-                "text": "91, je mit Dehydrationsfaktor",
+                "text": "91, je mit Dehydrationsfaktor · vollständige Liste mit Premium",
                 "cls": "yes"
               },
               {
@@ -1073,10 +1073,10 @@
             ]
           },
           {
-            "label": "Freundes-Ligen",
+            "label": "Freundes-Rangliste und Ligen",
             "cells": [
               {
-                "text": "✓ wöchentlich, bis 4 Personen",
+                "text": "✓ Wochen-Rangliste gratis (bis zu 4 Freunde) · eigene Ligen Premium",
                 "cls": "yes"
               },
               {
@@ -1191,7 +1191,7 @@
           "<strong>Nimm Waterllama</strong>, wenn du auf iOS bist und die schönste App mit einem einfachen festen Ziel willst.",
           "<strong>Nimm Hydro Coach</strong>, wenn du auf Android bist und eine brauchbare Gratis-Stufe brauchst.",
           "<strong>Nimm Plant Nanny</strong>, wenn dein Problem Motivation und nicht Gedächtnis ist.",
-          "<strong>Nimm Suu</strong>, wenn das Ziel aus deinem tatsächlichen Tag berechnet werden soll statt einmal festgelegt, wenn 91 Getränke mit ihrem echten Hydrationsbeitrag zählen sollen, oder wenn dir eine App lieber ist als drei. Kostenlos für iOS und Android, inklusive Apple-Watch-App für Wasser, Mahlzeiten und GPS-Workouts."
+          "<strong>Nimm Suu</strong>, wenn das Ziel aus deinem tatsächlichen Tag berechnet werden soll statt einmal festgelegt, wenn 91 Getränke mit ihrem echten Hydrationsbeitrag zählen sollen, oder wenn dir eine App lieber ist als drei. Kostenlos für iOS und Android, inklusive Apple-Watch-App für Wasser, Mahlzeiten und GPS-Workouts; die vollständige Liste mit 91 Getränken gehört zu Premium."
         ]
       },
       "cta": {
@@ -1206,7 +1206,7 @@
         },
         {
           "q": "Welche Trinkerinnerung ist kostenlos?",
-          "a": "Suu und Hydro Coach haben echte Gratis-Stufen. Bei Suu ist der komplette Trinkbereich kostenlos — 91 Getränke, dynamisches Tagesziel, Apple Health und Google Health Connect, Widgets und Freundes-Ligen — dazu drei KI-Analysen pro Tag. Hydro Coach deckt gratis Zielberechnung und Erinnerungen ab, mit einigen Funktionen hinter der Bezahlschranke. WaterMinder ist kostenpflichtig."
+          "a": "Suu und Hydro Coach haben echte Gratis-Stufen. Bei Suu ist der Kern des Trinkbereichs kostenlos — Wasser und Mineralwasser (andere Getränke trägst du ein, indem du sie Suu AI sagst), dynamisches Tagesziel, Apple Health und Google Health Connect, Widgets und die wöchentliche Freundes-Rangliste — dazu drei KI-Analysen pro Tag; die vollständige Liste mit 91 Getränken und eigene Ligen gehören zu Premium. Hydro Coach deckt gratis Zielberechnung und Erinnerungen ab, mit einigen Funktionen hinter der Bezahlschranke. WaterMinder ist kostenpflichtig."
         },
         {
           "q": "Gibt es eine gute WaterMinder-Alternative für Android?",
@@ -1285,7 +1285,7 @@
           {
             "name": "Suu",
             "tag": "se vuoi che l'obiettivo si aggiorni da solo",
-            "body": "Gratis su iOS e Android. Traccia 91 bevande con un vero fattore di disidratazione, quindi il caffè non vale come l'acqua. L'obiettivo si muove durante la giornata: registri una corsa e sale per i liquidi persi con il sudore, registri un pasto ricco di proteine o sale e si aggiunge l'acqua che serve alla digestione — spiegandoti il perché. Conta anche le calorie da una foto e registra gli allenamenti con GPS. La sua app per Apple Watch registra acqua e pasti a voce e allenamenti GPS direttamente dal polso."
+            "body": "Gratis su iOS e Android. Traccia 91 bevande con un vero fattore di disidratazione, quindi il caffè non vale come l'acqua. L'elenco completo delle bevande fa parte di Premium; nel piano gratuito registri acqua e acqua frizzante direttamente e le altre bevande dicendole a Suu AI. L'obiettivo si muove durante la giornata: registri una corsa e sale per i liquidi persi con il sudore, registri un pasto ricco di proteine o sale e si aggiunge l'acqua che serve alla digestione — spiegandoti il perché. Conta anche le calorie da una foto e registra gli allenamenti con GPS. La sua app per Apple Watch registra acqua e pasti a voce e allenamenti GPS direttamente dal polso."
           },
           {
             "name": "WaterMinder",
@@ -1431,7 +1431,7 @@
             "label": "Bevande tracciate",
             "cells": [
               {
-                "text": "91, ognuna con fattore di disidratazione",
+                "text": "91, ognuna con fattore di disidratazione · elenco completo con Premium",
                 "cls": "yes"
               },
               {
@@ -1678,10 +1678,10 @@
             ]
           },
           {
-            "label": "Leghe con gli amici",
+            "label": "Classifica e leghe con gli amici",
             "cells": [
               {
-                "text": "✓ settimanali, fino a 4 persone",
+                "text": "✓ classifica settimanale gratis (fino a 4 amici) · leghe private Premium",
                 "cls": "yes"
               },
               {
@@ -1796,7 +1796,7 @@
           "<strong>Scegli Waterllama</strong> se sei su iOS e vuoi l'app più curata, con un obiettivo fisso e lineare.",
           "<strong>Scegli Hydro Coach</strong> se sei su Android e vuoi un piano gratuito capace.",
           "<strong>Scegli Plant Nanny</strong> se il tuo problema è la motivazione e non la memoria.",
-          "<strong>Scegli Suu</strong> se vuoi un obiettivo calcolato sulla tua giornata reale invece che impostato una volta sola, se vuoi 91 bevande contate per il loro reale contributo di idratazione, o se preferisci tracciare acqua, calorie e allenamenti in un'app sola. È gratis su iOS e Android e ha un'app per Apple Watch per acqua, pasti e allenamenti GPS."
+          "<strong>Scegli Suu</strong> se vuoi un obiettivo calcolato sulla tua giornata reale invece che impostato una volta sola, se vuoi 91 bevande contate per il loro reale contributo di idratazione, o se preferisci tracciare acqua, calorie e allenamenti in un'app sola. È gratis su iOS e Android e ha un'app per Apple Watch per acqua, pasti e allenamenti GPS; l'elenco completo di 91 bevande fa parte di Premium."
         ]
       },
       "cta": {
@@ -1811,7 +1811,7 @@
         },
         {
           "q": "Qual è la migliore app gratuita per bere acqua?",
-          "a": "Suu e Hydro Coach hanno veri piani gratuiti. Il piano gratuito di Suu include tutta la parte idratazione — 91 bevande, obiettivo dinamico, sincronizzazione con Apple Salute e Google Health Connect, widget e leghe con gli amici — più tre analisi AI al giorno. Hydro Coach copre gratis calcolo dell'obiettivo e promemoria, con diverse funzioni a pagamento. WaterMinder è a pagamento."
+          "a": "Suu e Hydro Coach hanno veri piani gratuiti. Il piano gratuito di Suu include il cuore della parte idratazione — registrazione di acqua e acqua frizzante (le altre bevande si registrano dicendole a Suu AI), obiettivo dinamico, sincronizzazione con Apple Salute e Google Health Connect, widget e classifica settimanale con gli amici — più tre analisi AI al giorno; l'elenco completo di 91 bevande e le leghe private sono Premium. Hydro Coach copre gratis calcolo dell'obiettivo e promemoria, con diverse funzioni a pagamento. WaterMinder è a pagamento."
         },
         {
           "q": "Esiste una buona alternativa a WaterMinder per Android?",
@@ -1890,7 +1890,7 @@
           {
             "name": "Suu",
             "tag": "якщо хочеш, щоб норма рахувалася сама",
-            "body": "Безкоштовно на iOS та Android. Веде 91 напій зі справжнім коефіцієнтом зневоднення, тож кава не рахується як вода. Норма змінюється протягом дня: записав пробіжку — вона зростає на втрачену з потом рідину; записав страву з високим вмістом білка чи солі — додається вода на травлення, і застосунок пояснює чому. Ще й рахує калорії за фотографією та записує тренування з GPS. Його застосунок для Apple Watch записує воду та їжу голосом і GPS-тренування просто із зап'ястя."
+            "body": "Безкоштовно на iOS та Android. Веде 91 напій зі справжнім коефіцієнтом зневоднення, тож кава не рахується як вода. Повний список напоїв входить у Premium; у безкоштовному тарифі воду й мінеральну воду записуєш напряму, решту напоїв — сказавши їх Suu AI. Норма змінюється протягом дня: записав пробіжку — вона зростає на втрачену з потом рідину; записав страву з високим вмістом білка чи солі — додається вода на травлення, і застосунок пояснює чому. Ще й рахує калорії за фотографією та записує тренування з GPS. Його застосунок для Apple Watch записує воду та їжу голосом і GPS-тренування просто із зап'ястя."
           },
           {
             "name": "WaterMinder",
@@ -2036,7 +2036,7 @@
             "label": "Кількість напоїв",
             "cells": [
               {
-                "text": "91, кожен із коефіцієнтом зневоднення",
+                "text": "91, кожен із коефіцієнтом зневоднення · повний список у Premium",
                 "cls": "yes"
               },
               {
@@ -2283,10 +2283,10 @@
             ]
           },
           {
-            "label": "Ліги з друзями",
+            "label": "Рейтинг і ліги з друзями",
             "cells": [
               {
-                "text": "✓ щотижневі, до 4 осіб",
+                "text": "✓ щотижневий рейтинг безкоштовно (до 4 друзів) · власні ліги в Premium",
                 "cls": "yes"
               },
               {
@@ -2401,7 +2401,7 @@
           "<strong>Обирай Waterllama</strong>, якщо ти на iOS і хочеш найдоглянутіший застосунок із простою фіксованою нормою.",
           "<strong>Обирай Hydro Coach</strong>, якщо ти на Android і потрібен придатний безкоштовний тариф.",
           "<strong>Обирай Plant Nanny</strong>, якщо проблема в мотивації, а не в пам'яті.",
-          "<strong>Обирай Suu</strong>, якщо хочеш норму, обчислену за твоїм реальним днем, а не задану раз назавжди; якщо хочеш, щоб 91 напій рахувався за справжнім внеском у гідратацію; або якщо волієш один застосунок замість трьох. Безкоштовно на iOS та Android, із застосунком для Apple Watch для води, їжі та GPS-тренувань."
+          "<strong>Обирай Suu</strong>, якщо хочеш норму, обчислену за твоїм реальним днем, а не задану раз назавжди; якщо хочеш, щоб 91 напій рахувався за справжнім внеском у гідратацію; або якщо волієш один застосунок замість трьох. Безкоштовно на iOS та Android, із застосунком для Apple Watch для води, їжі та GPS-тренувань; повний список із 91 напою входить у Premium."
         ]
       },
       "cta": {
@@ -2416,7 +2416,7 @@
         },
         {
           "q": "Який безкоштовний застосунок для води найкращий?",
-          "a": "Справжні безкоштовні тарифи мають Suu і Hydro Coach. У Suu безкоштовна вся частина гідратації — 91 напій, динамічна денна норма, синхронізація з Apple Health і Google Health Connect, віджети й ліги з друзями — плюс три аналізи ШІ на день. Hydro Coach безкоштовно дає розрахунок норми й нагадування, частина функцій за платною стіною. WaterMinder платний."
+          "a": "Справжні безкоштовні тарифи мають Suu і Hydro Coach. У Suu безкоштовна основа гідратації — запис води й мінеральної води (інші напої записуєш, сказавши їх Suu AI), динамічна денна норма, синхронізація з Apple Health і Google Health Connect, віджети й щотижневий рейтинг із друзями — плюс три аналізи ШІ на день; повний список із 91 напою та власні ліги — у Premium. Hydro Coach безкоштовно дає розрахунок норми й нагадування, частина функцій за платною стіною. WaterMinder платний."
         },
         {
           "q": "Чи є хороша альтернатива WaterMinder для Android?",

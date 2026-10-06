@@ -19,7 +19,7 @@
         "og_description": "Ücretsiz planların altındaki ince yazıyı karşılaştırdık — barkot, makro, egzersiz ve su takibi hangi uygulamada gerçekten ücretsiz kalıyor?"
       },
 
-      "answer": "Hiçbir popüler kalori uygulaması her şeyi ücretsiz vermiyor; fark, neyin ücretsiz kaldığında. Cronometer ücretsiz planda en detaylı mikro besin dökümünü, FatSecret en az kısıtlamayı sunar. Suu'da ise su takibi, 91 içecek, egzersiz takibi ve günde 3 AI analizi kalıcı olarak ücretsizdir — yalnızca fotoğrafla analiz ve sınırsız AI kullanımı Premium'dadır.",
+      "answer": "Hiçbir popüler kalori uygulaması her şeyi ücretsiz vermiyor; fark, neyin ücretsiz kaldığında. Cronometer ücretsiz planda en detaylı mikro besin dökümünü, FatSecret en az kısıtlamayı sunar. Suu'da ise su ve maden suyu takibi, egzersiz takibi ve günde 3 AI analizi kalıcı olarak ücretsizdir — fotoğrafla analiz, sınırsız AI kullanımı ve 91 içeceklik listenin tamamı Premium'dadır.",
 
       "disclosure": "Bu karşılaştırmayı Suu ekibi hazırladı — taraflı bir kaynaktan okuyorsunuz. Bu yüzden rakiplerin ücretsiz planının Suu'dan iyi olduğu yerleri de açıkça yazdık. Bilgiler 2026 Ağustos itibarıyla kamuya açık kaynaklara dayanır; uygulamalar plan sınırlarını sık değiştirir, indirmeden önce mağaza sayfasından teyit edin.",
 
@@ -49,7 +49,7 @@
             "others": [{"text":"Premium","cls":"no"},{"text":"Premium","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"}] },
           { "label": "Egzersiz takibi", "suu": "✓ ~50 aktivite", "suu_class": "yes",
             "others": [{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
-          { "label": "Su takibi (içecek bazlı)", "suu": "✓ 91 içecek", "suu_class": "yes",
+          { "label": "Su takibi (içecek bazlı)", "suu": "✓ Su + maden suyu (91 içecek Premium'da)", "suu_class": "yes",
             "others": [{"text":"Basit sayaç","cls":"no"},{"text":"Basit sayaç","cls":"no"},{"text":"Basit sayaç","cls":"no"},{"text":"Basit sayaç","cls":"no"}] },
           { "label": "Egzersiz → su hedefi güncellemesi", "suu": "✓", "suu_class": "yes",
             "others": [{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"},{"text":"✗","cls":"no"}] },
@@ -81,12 +81,12 @@
             "Suu'nun ücretsiz katmanı süreli bir deneme değil, kalıcı bir plan. İçindekiler:"
           ],
           "list": [
-            "Temel su ve hidrasyon takibi — <strong>91 içeceğin</strong> gerçek hidrasyon katkısıyla",
+            "Temel su ve hidrasyon takibi — <strong>su ve maden suyu</strong> doğrudan, diğer içecekler Suu AI'ya söylenerek kaydedilir",
             "Egzersiz takibi — <strong>~50 spor aktivitesi</strong>, koşu ve bisiklette ayrıntılı metrikler",
             "Egzersizin ve yediklerinin su hedefini otomatik güncellemesi",
             "Günde <strong>3 AI analizi</strong> — sesli veya yazılı öğün girişi",
             "Apple Health / Google Health Connect çift yönlü senkron",
-            "Suu Endeksi (0–100 hidrasyon skoru), sanal evcil hayvan, arkadaş ligleri"
+            "Suu Endeksi (0–100 hidrasyon skoru), sanal evcil hayvan, arkadaşlarla haftalık Lider Tablosu"
           ],
           "callout": "<strong>Premium'a giren:</strong> fotoğrafla kalori analizi, sınırsız AI kullanımı, gelişmiş beslenme analizi, premium istatistikler, PDF/CSV rapor ve reklamsız kullanım. Premium 3 gün ücretsiz denenebiliyor."
         },
