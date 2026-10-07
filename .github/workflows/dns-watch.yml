@@ -60,19 +60,13 @@ jobs:
           check davet.suuapp.com CNAME suu-invite.web.app.
           check _dmarc.suuapp.com TXT "v=DMARC1"
 
-          # Resend (hediye kod e-postaları). Eksikse site çalışır, yalnızca
-          # e-posta gitmez — bu yüzden uyarı. Girildikten sonra check'e taşı.
-          while read -r name type want; do
-            if has "$name" "$type" "$want" 1; then
-              echo "ok    $name $type"
-            else
-              echo "::warning::$name $type eksik — hediye kod e-postaları gönderilemez"
-            fi
-          done <<'EOF'
-          resend._domainkey.suuapp.com TXT p=
-          send.suuapp.com MX amazonses.com
-          send.suuapp.com TXT v=spf1
-          EOF
+          # Resend (hediye kod e-postaları). 10-01'de silindi, panel yine de
+          # "Verified" gösterdi; 10-07'de geri girildi. Eksikse site çalışır ama
+          # e-postalar DKIM'siz gider (spam/ret). DKIM'de anahtarın kendine özgü
+          # kısmı aranır ki yanlış anahtar da yakalansın.
+          check resend._domainkey.suuapp.com TXT "p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDkXRIeJJkpxX9P"
+          check send.suuapp.com MX feedback-smtp.ap-northeast-1.amazonses.com.
+          check send.suuapp.com TXT "v=spf1 include:amazonses.com"
 
           for url in https://suuapp.com/ \
                      https://mcp.suuapp.com/.well-known/oauth-protected-resource \

@@ -356,16 +356,30 @@ Claude bağlantısı birlikte düştü. Kayıtlar kaybolursa panele girilecek li
 | mcp | CNAME | ghs.googlehosted.com | Suu for Claude (Cloud Run `suu-mcp-server`, europe-west1) |
 | davet | CNAME | suu-invite.web.app | Arkadaş davet linki — Firebase Hosting `suu-invite` (newsuu `firebase/hosting-invite/`) |
 | _dmarc | TXT | `v=DMARC1; p=none;` | E-posta politikası |
-| resend._domainkey | TXT | Resend paneli → Domains → suuapp.com | Hediye kod e-postası (DKIM) |
-| send | MX (öncelik 10) | Resend paneli | Resend geri dönüş |
-| send | TXT | Resend paneli (`v=spf1 include:amazonses.com ~all`) | Resend SPF |
+| resend._domainkey | TXT | aşağıdaki DKIM değeri | Hediye kod e-postası (DKIM) |
+| send | MX (öncelik 10) | feedback-smtp.ap-northeast-1.amazonses.com | Resend geri dönüş (Tokyo bölgesi) |
+| send | TXT | `v=spf1 include:amazonses.com ~all` | Resend SPF |
 
-MX kaydı bilerek yok: suuapp.com gelen e-posta almıyor.
+DKIM değeri (tek satır, Resend → Domains → suuapp.com ile aynı; herkese açık
+anahtar, sır değil):
 
-**Bekçi:** `.github/workflows/dns-watch.yml` 30 dakikada bir bu kayıtları
+```
+p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDkXRIeJJkpxX9PuCzSpvMsMoW/oJMLHAxdklOh9kUx+vwSUNR80uM0zE/YLUo4Awz4MScRSBd4CcZPs/bgVpnQC2w/F0lci2Wykv5D7vBgxYLNnQpTj/dfM+AXL23jVHVZaYa/akn/CtwzYOSAohHYmAi1X3qLBGkhM3MuIIGZLwIDAQAB
+```
+
+⚠️ Resend panelindeki **"Verified" yazısı kayıtların DNS'te olduğunu
+göstermez** — 10-01'den 10-07'ye kadar DKIM ve MX silikken panel "Verified"
+gösterdi. Gerçeği `dig resend._domainkey.suuapp.com TXT @ns3.inetmar.net`
+söyler. Resend alan adı silinip yeniden eklenirse DKIM anahtarı değişir;
+bu tabloyu ve bekçiyi güncelle.
+
+Apex'te MX kaydı bilerek yok: suuapp.com gelen e-posta almıyor.
+
+**Bekçi:** `.github/workflows/dns-watch.yml` bu tablodaki her kaydı
 8.8.8.8 ve 1.1.1.1'e sorar, suuapp.com'u, mcp'yi ve davet linkinin AASA
-dosyasını açar; eksik varsa iş
-kırmızıya döner ve GitHub e-posta atar. Elle çalıştırmak için:
+dosyasını açar; eksik varsa iş kırmızıya döner ve GitHub e-posta atar.
+Zamanlama 30 dakikada bir yazılı ama GitHub pratikte birkaç saatte bir
+koşturuyor. Elle çalıştırmak için:
 `gh workflow run dns-watch.yml`. Tablo değişirse workflow'daki beklenen
 değerler de değişmeli.
 
