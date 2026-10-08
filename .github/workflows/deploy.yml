@@ -13,6 +13,9 @@ permissions:
 
 jobs:
   deploy:
+    # github-pages ortamı yalnızca main'den yayına izin veriyor; PR'da bu iş
+    # her seferinde ortam korumasına takılıp kırmızı oluyordu. PR'da atlanır.
+    if: github.event_name == 'push'
     # Kilit yalnızca yayın işinde: iş akışı düzeyinde olsaydı IndexNow işinin
     # 60 sn beklemesi sıradaki yayını da bekletirdi.
     concurrency:
