@@ -97,8 +97,12 @@ def build_jsonld(lang: str, data: dict, facts: dict) -> str:
         node = {
             "@type": ["MobileApplication", "HealthAndFitnessApplication"],
             "@id": app_ids[platform],
-            "name": facts["identity"]["store_title"].get(lang, facts["identity"]["store_title"]["en"]),
-            "alternateName": "Suu",
+            # iOS: App Store adı (dile göre) · Android: Google Play adı (sahibi teyitli,
+            # tek ad; mağazanın TR yerelleştirmesi alternateName'de).
+            "name": (facts["identity"]["store_title_play"] if platform == "android"
+                     else facts["identity"]["store_title"].get(lang, facts["identity"]["store_title"]["en"])),
+            "alternateName": (facts["identity"].get("store_title_play_alternates", []) + ["Suu"]
+                              if platform == "android" else "Suu"),
             "operatingSystem": os_name,
             "applicationCategory": "HealthApplication",
             "url": page_url(lang),

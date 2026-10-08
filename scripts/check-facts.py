@@ -49,7 +49,18 @@ def build_rules(facts: dict) -> list[dict]:
     lang_count = facts["languages"]["count"]
     watch = facts["platform_matrix"]["apple_watch"]["ios"]
 
+    support_email = facts.get("identity", {}).get("support_email") or facts.get("links", {}).get("support_email")
+
     rules: list[dict] = [
+        {
+            # Sahibi 2026-10-08'de destek adresini teyit etti; eski support@suuapp.com
+            # hiç kurulmamış bir posta kutusuydu (SSS, gizlilik, şartlar, hesap silme).
+            "id": "stale-support-email",
+            "severity": ERROR,
+            "pattern": re.compile(r"(?i)\bsupport@suuapp\.com\b"),
+            "message": "Eski destek adresi (support@suuapp.com) kullanılıyor",
+            "fix": f"destek e-postası: {support_email}",
+        },
         {
             "id": "beverages-count",
             "severity": ERROR,

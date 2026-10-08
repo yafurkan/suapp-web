@@ -18,6 +18,8 @@ Kullanım:
 
 Bağımlılıklar:
     pip3 install Pillow arabic_reshaper python-bidi
+    Fontlar: macOS'ta Arial + SF Arabic; Linux'ta Liberation Sans (Arial ile
+    metrik uyumlu) + DejaVu Sans (fonts-liberation, fonts-dejavu paketleri).
 
 Notlar:
     - Dil yazının klasöründen tespit edilir (blog/<lang>/; kökteki blog/ TR).
@@ -54,10 +56,27 @@ BASE_URL = "https://suuapp.com"
 OG_DIR = ROOT / "assets" / "og" / "blog"
 BLOG_DIR = ROOT / "blog"
 
-# Fontlar
-LATIN_BOLD = "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
-LATIN_REG = "/System/Library/Fonts/Supplemental/Arial.ttf"
-AR_FONT = "/System/Library/Fonts/SFArabic.ttf"
+# Fontlar — önce macOS (asıl görseller bunlarla üretildi), yoksa Linux
+# karşılıkları: Liberation Sans, Arial ile metrik uyumludur (satır kırılımları
+# aynı kalır); Arapça için DejaVu Sans Bold.
+def _first_font(*paths: str) -> str:
+    for path in paths:
+        if os.path.exists(path):
+            return path
+    sys.exit("Font bulunamadı: " + " | ".join(paths))
+
+
+LATIN_BOLD = _first_font("/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+                         "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
+                         "/usr/share/fonts/truetype/liberation2/LiberationSans-Bold.ttf")
+LATIN_REG = _first_font("/System/Library/Fonts/Supplemental/Arial.ttf",
+                        "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
+                        "/usr/share/fonts/truetype/liberation2/LiberationSans-Regular.ttf")
+AR_FONT = _first_font("/System/Library/Fonts/SFArabic.ttf",
+                      "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf")
+# Alt satır (tagline) normal ağırlıkta — macOS'ta SF Arabic ikisini de karşılıyor.
+AR_FONT_REG = _first_font("/System/Library/Fonts/SFArabic.ttf",
+                          "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf")
 
 # Görsel boyutları (FB/Twitter/LinkedIn standardı)
 W, H = 1200, 630
@@ -260,7 +279,7 @@ def make_og_image(title: str, output_path: Path, lang: str = "tr") -> None:
     tagline = TAGLINES[lang]
     if lang == "ar":
         tagline = get_display(arabic_reshaper.reshape(tagline))
-        ar_tag = ImageFont.truetype(AR_FONT, 28)
+        ar_tag = ImageFont.truetype(AR_FONT_REG, 28)
         latin_tag = ImageFont.truetype(LATIN_REG, 28)
         tw = _measure_mixed(draw, tagline, ar_tag, latin_tag)
         _draw_mixed(draw, W - 80 - tw, H - 90, tagline, ar_tag, latin_tag,
