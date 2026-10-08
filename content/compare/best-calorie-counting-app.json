@@ -25,7 +25,7 @@
           {
             "name": "Suu",
             "tag": "best if logging is what you keep skipping",
-            "body": "Free on iOS and Android. Photograph the meal or say it out loud and the AI extracts calories, protein, carbs and fat; it separates solids from liquids automatically, so a coffee logged by voice lands in both the calorie total and the hydration total. Also tracks 91 beverages with its own hydration factor and records GPS workouts across ~50 activities, and the three feed each other — a logged run raises the water goal, a salty meal adds digestion water. Free tier includes three AI analyses a day plus water and sparkling water logging; the full 91-drink list is Premium. Honest limits: the branded-food database is smaller than MyFitnessPal's and there is no recipe library."
+            "body": "Free on iOS and Android. Photograph the meal or say it out loud and the AI extracts calories, protein, carbs and fat; it separates solids from liquids automatically, so a coffee logged by voice lands in both the calorie total and the hydration total. Also tracks 91 beverages with its own hydration factor and records GPS workouts across ~50 activities, and the three feed each other — a logged run raises the water goal, a salty meal adds digestion water. Free tier includes three voice or text AI analyses a day plus water and sparkling water logging; photo analysis and the full 91-drink list are Premium. Honest limits: the branded-food database is smaller than MyFitnessPal's and there is no recipe library."
           },
           {
             "name": "MyFitnessPal",
@@ -101,7 +101,7 @@
             "label": "Photo calorie analysis",
             "cells": [
               {
-                "text": "✓ 3 free per day",
+                "text": "✓ Premium",
                 "cls": "yes"
               },
               {
@@ -533,7 +533,7 @@
           ],
           "list": [
             "<strong>\"The food I eat is never in there.\"</strong> → MyFitnessPal. Its database advantage over everything else here is real and unlikely to be closed.",
-            "<strong>\"Entering meals takes too long.\"</strong> → Suu. A photograph or a spoken sentence is the fastest input in this group, and the free tier includes three AI analyses a day.",
+            "<strong>\"Entering meals takes too long.\"</strong> → Suu. A photograph or a spoken sentence is the fastest input in this group; the free tier includes three voice or text AI analyses a day, and photo logging is Premium.",
             "<strong>\"My target stopped working after a month.\"</strong> → MacroFactor. It infers your real expenditure from your weight trend instead of trusting a signup formula.",
             "<strong>\"I need to know my iron and B12, not just calories.\"</strong> → Cronometer. Nothing else here is close.",
             "<strong>\"I need something to cook and a fasting window.\"</strong> → Yazio, or Lifesum if the plans matter more than the recipes."
@@ -581,7 +581,7 @@
         },
         {
           "q": "What is the best free calorie counting app?",
-          "a": "Suu and Cronometer have the most usable free tiers. Suu's free tier includes calorie and macro tracking, water and sparkling water logging (other drinks by telling Suu AI; the full 91-drink list is Premium), GPS workout recording and three AI photo or voice analyses a day. Cronometer's free tier gives strong micronutrient tracking. MyFitnessPal, Yazio and Lifesum all restrict significant features to Premium, and MyFitnessPal moved barcode scanning behind its paywall."
+          "a": "Suu and Cronometer have the most usable free tiers. Suu's free tier includes calorie and macro tracking, water and sparkling water logging (other drinks by telling Suu AI), GPS workout recording and three voice or text AI analyses a day; photo analysis and the full 91-drink list are Premium. Cronometer's free tier gives strong micronutrient tracking. MyFitnessPal, Yazio and Lifesum all restrict significant features to Premium, and MyFitnessPal moved barcode scanning behind its paywall."
         },
         {
           "q": "What is the best MyFitnessPal alternative?",
@@ -664,7 +664,7 @@
           {
             "name": "Suu",
             "tag": "wenn das Eintragen das Problem ist",
-            "body": "Kostenlos für iOS und Android. Mahlzeit fotografieren oder einsprechen — die KI zieht Kalorien, Eiweiß, Kohlenhydrate und Fett heraus und trennt Festes von Flüssigem automatisch, sodass ein per Sprache erfasster Kaffee zugleich in der Kalorien- und in der Trinkbilanz landet. Dazu 91 Getränke mit echtem Dehydrationsfaktor und GPS-Aufzeichnung für rund 50 Sportarten, und die drei greifen ineinander. Drei KI-Analysen pro Tag sowie Wasser und Mineralwasser sind gratis; die vollständige Liste mit 91 Getränken gehört zu Premium. Ehrliche Grenzen: kleinere Markendatenbank als MyFitnessPal oder FDDB, keine Rezeptbibliothek."
+            "body": "Kostenlos für iOS und Android. Mahlzeit fotografieren oder einsprechen — die KI zieht Kalorien, Eiweiß, Kohlenhydrate und Fett heraus und trennt Festes von Flüssigem automatisch, sodass ein per Sprache erfasster Kaffee zugleich in der Kalorien- und in der Trinkbilanz landet. Dazu 91 Getränke mit echtem Dehydrationsfaktor und GPS-Aufzeichnung für rund 50 Sportarten, und die drei greifen ineinander. Gratis sind drei KI-Analysen pro Tag per Sprache oder Text sowie das Eintragen von Wasser und Mineralwasser; Fotoanalyse und die vollständige Liste mit 91 Getränken gehören zu Premium. Ehrliche Grenzen: kleinere Markendatenbank als MyFitnessPal oder FDDB, keine Rezeptbibliothek."
           },
           {
             "name": "FDDB",
@@ -740,7 +740,7 @@
             "label": "Kalorien aus dem Foto",
             "cells": [
               {
-                "text": "✓ 3× täglich gratis",
+                "text": "✓ Premium",
                 "cls": "yes"
               },
               {
@@ -1172,7 +1172,7 @@
           ],
           "list": [
             "<strong>\"Was ich esse, ist nie drin.\"</strong> → FDDB für deutsche Supermarktprodukte, MyFitnessPal für internationale Marken und Restaurants.",
-            "<strong>\"Eintragen dauert zu lang.\"</strong> → Suu. Ein Foto oder ein gesprochener Satz ist die schnellste Eingabe in dieser Gruppe, drei KI-Analysen pro Tag sind gratis.",
+            "<strong>\"Eintragen dauert zu lang.\"</strong> → Suu. Ein Foto oder ein gesprochener Satz ist die schnellste Eingabe in dieser Gruppe; drei KI-Analysen pro Tag per Sprache oder Text sind gratis, die Fotoerfassung gehört zu Premium.",
             "<strong>\"Mein Ziel hat nach einem Monat nicht mehr funktioniert.\"</strong> → MacroFactor, das die tatsächliche Energieverbrennung aus deinem Gewichtsverlauf ableitet statt aus einer Anmeldeformel.",
             "<strong>\"Ich brauche Eisen und B12, nicht nur Kalorien.\"</strong> → Cronometer. Nichts hier kommt nahe heran.",
             "<strong>\"Ich brauche Rezepte und ein Fastenfenster.\"</strong> → Yazio, oder Lifesum, wenn dir die Pläne wichtiger sind als die Rezepte."
@@ -1219,11 +1219,11 @@
         },
         {
           "q": "Welche Kalorien-App ist wirklich kostenlos?",
-          "a": "Suu, FDDB und Cronometer haben brauchbare Gratis-Stufen. Bei Suu sind Kalorien- und Makroerfassung, Wasser und Mineralwasser (andere Getränke per Suu AI; die vollständige Liste mit 91 Getränken ist Premium), GPS-Workouts und drei KI-Analysen pro Tag kostenlos. FDDB lässt sich gratis als Datenbank nutzen, Cronometer bietet gratis starke Mikronährstoffe. Yazio, Lifesum und MyFitnessPal halten wesentliche Funktionen zurück — bei MyFitnessPal inzwischen auch den Barcode-Scanner."
+          "a": "Suu, FDDB und Cronometer haben brauchbare Gratis-Stufen. Bei Suu sind Kalorien- und Makroerfassung, das Eintragen von Wasser und Mineralwasser (andere Getränke sagst du Suu AI), GPS-Workouts und drei KI-Analysen pro Tag per Sprache oder Text kostenlos; Fotoanalyse und die vollständige Liste mit 91 Getränken gehören zu Premium. FDDB lässt sich gratis als Datenbank nutzen, Cronometer bietet gratis starke Mikronährstoffe. Yazio, Lifesum und MyFitnessPal halten wesentliche Funktionen zurück — bei MyFitnessPal inzwischen auch den Barcode-Scanner."
         },
         {
           "q": "Was ist die beste Yazio-Alternative?",
-          "a": "Das hängt davon ab, was du an Yazio ersetzt. Für deutsche Produktdaten FDDB, für internationale Restaurants MyFitnessPal, für Mikronährstoffe Cronometer, für ein sich anpassendes Kalorienziel MacroFactor. Wenn dich am meisten stört, dass Rezepte und Pläne hinter PRO liegen und die Eingabe langsam ist, ist Suu die nächstliegende Alternative — mit Foto- und Spracheingabe und ohne Bezahlschranke für Wasser und Mineralwasser."
+          "a": "Das hängt davon ab, was du an Yazio ersetzt. Für deutsche Produktdaten FDDB, für internationale Restaurants MyFitnessPal, für Mikronährstoffe Cronometer, für ein sich anpassendes Kalorienziel MacroFactor. Wenn dich am meisten stört, dass Rezepte und Pläne hinter PRO liegen und die Eingabe langsam ist, ist Suu die nächstliegende Alternative — Mahlzeiten trägst du per Sprache ein, mit Premium auch per Foto, und Wasser und Mineralwasser erfasst du ohne Bezahlschranke."
         },
         {
           "q": "Kann eine App Kalorien zuverlässig aus einem Foto erkennen?",
@@ -1302,7 +1302,7 @@
           {
             "name": "Suu",
             "tag": "se è la registrazione che salti sempre",
-            "body": "Gratis su iOS e Android. Fotografi il pasto o lo detti e l'IA estrae calorie, proteine, carboidrati e grassi; separa da sola i solidi dai liquidi, così un caffè registrato a voce finisce sia nel totale calorico sia in quello dell'idratazione. Traccia anche 91 bevande con un vero fattore di disidratazione e registra allenamenti GPS su circa 50 attività, e i tre si alimentano a vicenda. Il piano gratuito include tre analisi AI al giorno e la registrazione di acqua e acqua frizzante; l'elenco completo di 91 bevande fa parte di Premium. Limiti onesti: database dei prodotti di marca più piccolo di MyFitnessPal e nessuna libreria di ricette."
+            "body": "Gratis su iOS e Android. Fotografi il pasto o lo detti e l'IA estrae calorie, proteine, carboidrati e grassi; separa da sola i solidi dai liquidi, così un caffè registrato a voce finisce sia nel totale calorico sia in quello dell'idratazione. Traccia anche 91 bevande con un vero fattore di disidratazione e registra allenamenti GPS su circa 50 attività, e i tre si alimentano a vicenda. Il piano gratuito include tre analisi AI al giorno a voce o per iscritto e la registrazione di acqua e acqua frizzante; l'analisi da foto e l'elenco completo di 91 bevande fanno parte di Premium. Limiti onesti: database dei prodotti di marca più piccolo di MyFitnessPal e nessuna libreria di ricette."
           },
           {
             "name": "MyFitnessPal",
@@ -1378,7 +1378,7 @@
             "label": "Calorie da foto",
             "cells": [
               {
-                "text": "✓ 3 gratis al giorno",
+                "text": "✓ Premium",
                 "cls": "yes"
               },
               {
@@ -1810,7 +1810,7 @@
           ],
           "list": [
             "<strong>\"Quello che mangio non c'è mai.\"</strong> → FatSecret per i prodotti italiani, MyFitnessPal per marche internazionali e ristoranti.",
-            "<strong>\"Inserire i pasti richiede troppo tempo.\"</strong> → Suu. Una foto o una frase detta a voce è l'inserimento più rapido del gruppo, con tre analisi AI gratis al giorno.",
+            "<strong>\"Inserire i pasti richiede troppo tempo.\"</strong> → Suu. Una foto o una frase detta a voce è l'inserimento più rapido del gruppo; il piano gratuito include tre analisi AI al giorno a voce o per iscritto, mentre la foto fa parte di Premium.",
             "<strong>\"Dopo un mese l'obiettivo non funzionava più.\"</strong> → MacroFactor, che deduce il dispendio reale dall'andamento del peso invece che da una formula iniziale.",
             "<strong>\"Mi servono ferro e B12, non solo le calorie.\"</strong> → Cronometer. Qui non c'è niente che le si avvicini.",
             "<strong>\"Mi serve qualcosa da cucinare e una finestra di digiuno.\"</strong> → Yazio, o Melarossa se preferisci un piano mediterraneo già pronto."
@@ -1857,7 +1857,7 @@
         },
         {
           "q": "Qual è la migliore app conta calorie gratis?",
-          "a": "FatSecret, Suu e Cronometer hanno i piani gratuiti più utilizzabili. FatSecret include barcode, diario e macro senza paywall. Il piano gratuito di Suu comprende calorie e macro, acqua e acqua frizzante (le altre bevande dicendole a Suu AI; l'elenco completo di 91 bevande è Premium), gli allenamenti GPS e tre analisi AI al giorno. Cronometer offre gratis un ottimo tracciamento dei micronutrienti. MyFitnessPal, Yazio e Lifesum riservano funzioni importanti al Premium."
+          "a": "FatSecret, Suu e Cronometer hanno i piani gratuiti più utilizzabili. FatSecret include barcode, diario e macro senza paywall. Il piano gratuito di Suu comprende calorie e macro, la registrazione di acqua e acqua frizzante (le altre bevande si registrano dicendole a Suu AI), gli allenamenti GPS e tre analisi AI al giorno a voce o per iscritto; l'analisi da foto e l'elenco completo di 91 bevande fanno parte di Premium. Cronometer offre gratis un ottimo tracciamento dei micronutrienti. MyFitnessPal, Yazio e Lifesum riservano funzioni importanti al Premium."
         },
         {
           "q": "Qual è la migliore alternativa a MyFitnessPal?",
@@ -1940,7 +1940,7 @@
           {
             "name": "Suu",
             "tag": "якщо ти постійно пропускаєш записування",
-            "body": "Безкоштовно на iOS та Android. Сфотографуй страву або продиктуй її — ШІ визначить калорії, білки, вуглеводи й жири; він сам відділяє тверде від рідкого, тож продиктована кава потрапляє і в калорії, і в гідратацію. Ще веде 91 напій зі справжнім коефіцієнтом зневоднення й записує тренування з GPS на близько 50 видів активності, і ці три речі живлять одна одну. Безкоштовний тариф включає три аналізи ШІ на день і запис води та мінеральної води; повний список із 91 напою входить у Premium. Чесні межі: база брендових продуктів менша, ніж у MyFitnessPal, і немає бібліотеки рецептів."
+            "body": "Безкоштовно на iOS та Android. Сфотографуй страву або продиктуй її — ШІ визначить калорії, білки, вуглеводи й жири; він сам відділяє тверде від рідкого, тож продиктована кава потрапляє і в калорії, і в гідратацію. Ще веде 91 напій зі справжнім коефіцієнтом зневоднення й записує тренування з GPS на близько 50 видів активності, і ці три речі живлять одна одну. Безкоштовний тариф включає три аналізи ШІ на день голосом або текстом і запис води та мінеральної води; аналіз за фото й повний список із 91 напою входять у Premium. Чесні межі: база брендових продуктів менша, ніж у MyFitnessPal, і немає бібліотеки рецептів."
           },
           {
             "name": "MyFitnessPal",
@@ -2016,7 +2016,7 @@
             "label": "Калорії за фотографією",
             "cells": [
               {
-                "text": "✓ 3 безкоштовно на день",
+                "text": "✓ Premium",
                 "cls": "yes"
               },
               {
@@ -2448,7 +2448,7 @@
           ],
           "list": [
             "<strong>«Того, що я їм, там ніколи немає.»</strong> → MyFitnessPal для брендів і закладів, FatSecret для щоденного асортименту без платної стіни.",
-            "<strong>«Вносити страви надто довго.»</strong> → Suu. Фотографія або сказана вголос фраза — найшвидше введення в цій групі, три аналізи ШІ на день безкоштовно.",
+            "<strong>«Вносити страви надто довго.»</strong> → Suu. Фотографія або сказана вголос фраза — найшвидше введення в цій групі; безкоштовно доступні три аналізи ШІ на день голосом або текстом, а запис за фото входить у Premium.",
             "<strong>«Через місяць норма перестала працювати.»</strong> → MacroFactor, який виводить реальні витрати з динаміки ваги, а не з формули при реєстрації.",
             "<strong>«Мені потрібне залізо і B12, а не лише калорії.»</strong> → Cronometer. Тут ніщо не наближається.",
             "<strong>«Потрібні рецепти й вікно голодування.»</strong> → Yazio, або Lifesum, якщо готовий план важливіший за рецепти."
@@ -2495,7 +2495,7 @@
         },
         {
           "q": "Який безкоштовний застосунок для підрахунку калорій найкращий?",
-          "a": "Найпридатніші безкоштовні тарифи в FatSecret, Suu і Cronometer. FatSecret безкоштовно дає штрихкоди, щоденник і макроси. Безкоштовний тариф Suu включає калорії та макроси, запис води й мінеральної води (інші напої — сказавши їх Suu AI; повний список із 91 напою входить у Premium), тренування з GPS і три аналізи ШІ на день. Cronometer безкоштовно дає сильне відстеження мікронутрієнтів. MyFitnessPal, Yazio і Lifesum тримають важливі функції в Premium."
+          "a": "Найпридатніші безкоштовні тарифи в FatSecret, Suu і Cronometer. FatSecret безкоштовно дає штрихкоди, щоденник і макроси. Безкоштовний тариф Suu включає калорії та макроси, запис води й мінеральної води (решту напоїв — сказавши їх Suu AI), тренування з GPS і три аналізи ШІ на день голосом або текстом; аналіз за фото й повний список із 91 напою входять у Premium. Cronometer безкоштовно дає сильне відстеження мікронутрієнтів. MyFitnessPal, Yazio і Lifesum тримають важливі функції в Premium."
         },
         {
           "q": "Яка найкраща альтернатива MyFitnessPal?",
