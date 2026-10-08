@@ -62,7 +62,7 @@ Sohbet ederek su ekleme, içecek kaydetme, öğün oluşturma, egzersiz ekleme, 
 
 - **Ücretsiz:** temel su-hidrasyon takibi + günde 3 AI analizi + Apple Health/Health Connect senkronu — her zaman ücretsiz
 - **Premium:** sınırsız AI analizi, fotoğraflı yemek tanıma, dinamik sindirim suyu bildirimleri, gelişmiş makro/mikro istatistikleri, reklamsız, PDF/CSV rapor
-- **Fiyat:** ₺1.200/yıl (%50 lansman indirimi, normal ₺2.400) · aylık ₺149 · aile planı ₺2.399/yıl (3 kişiye kadar) · 3 gün ücretsiz deneme · yerel para birimi otomatik
+- **Fiyat:** ₺1.199,99/yıl (%50 lansman indirimi, normal ₺2.400) · aylık ₺149,99 · aile planı ₺2.399,99/yıl (3 kişiye kadar) · 3 gün ücretsiz deneme · yerel para birimi otomatik
 
 ## Web Sitesi Yapısı
 
@@ -155,8 +155,9 @@ python3 scripts/sync-blog-index.py --apply          # blog indeksine eksik KARTL
 python3 scripts/sync-blog-schema.py --apply         # blog indeksinin Blog.blogPost ŞEMASINI eşitle
 python3 scripts/generate-og.py                      # blog OG görselleri
 
-# Yayın sonrası
-python3 scripts/indexnow-submit.py --changed        # Bing + Yandex'e anında bildirim
+# Yayın sonrası (CI bunu her push'ta kendisi yapar — bkz. Deploy)
+python3 scripts/indexnow-submit.py --changed        # Bing + Yandex'e anında bildirim (son commit)
+python3 scripts/indexnow-submit.py --range <önce>..<sonra> --dry  # bir push'un tamamı
 
 # Rapor
 python3 scripts/check-screenshots.py --missing      # eksik ekran görüntüleri
@@ -177,10 +178,32 @@ python3 scripts/check-facts.py && \
 python3 scripts/check-faq-visibility.py && \
 python3 scripts/check-geo-coverage.py
 git push origin main
-python3 scripts/indexnow-submit.py --changed   # ağaç temizse son commit'in diff'i
+# IndexNow bildirimi artık otomatik (deploy.yml → indexnow işi); elle gerekmez.
 ```
 
 **Sıra önemli:** `inject-hreflang.py`, sayfa üreten her script'ten SONRA çalışmalı — `build-compare.py` ve `build-compare-hub.py` sayfayı baştan yazdığı için enjekte edilmiş hreflang bloğunu düşürür. `sync-blog-schema.py` de `sync-blog-index.py`'den sonra gelir (biri kart, diğeri `Blog.blogPost` şeması).
+
+**Karşılaştırma sayfalarında tarih ve şema (`build-compare.py`):**
+
+- **Görünür güncelleme tarihi.** Rehberlerde olduğu gibi karşılaştırma
+  sayfaları da JSON'daki `modified` yayın tarihinden farklıysa başlıkta
+  "Yayın: … · Güncelleme: …" gösterir; iki tarih de `<time datetime>` ile
+  sarılır ve `article:modified_time` artık her sayfada basılır. Görünür satır,
+  `article:*_time` ve JSON-LD `datePublished`/`dateModified` aynı kaynaktan
+  (`page_dates`) gelir. Rakip tablosunu güncellediğinizde JSON'da `modified`'ı
+  da güncelleyin.
+- **Sayfa düzeyinde `published`.** `pages.<dil>.published` varsa o dilin yayın
+  tarihi odur (JSON-LD, meta ve görünür tarih) — sonradan çevrilen ya da boru
+  hattına taşınan bir sayfa kendi asıl tarihini korur. Elle yazılmış
+  `published_display` bu tarihi göstermiyorsa build uyarı verir ve `<time>`
+  basmaz; düzeltmek için o dile `published` ekleyin.
+- **ItemList yalnızca gerçek uygulamalar.** Tablodan üretilen ItemList'e
+  yalnızca "Suu", `suu-facts.json → competitors` ve script'teki `KNOWN_APPS`
+  listesindeki adlar girer; "Kaynak", "Reported error", "Drei getrennte Apps"
+  gibi sütunlar düşer. Tablo bazında `"non_app_columns": [...]` ile ek
+  dışlama yapılabilir; 2'den az uygulama kalırsa ItemList hiç basılmaz. Yeni
+  bir rakip sütun eklerken adını `KNOWN_APPS`'e de ekleyin. `ranked`
+  açıklamalarından `/app` CTA bağlantıları ("Get Suu free →") çıkarılır.
 
 ## Hediye Kod Dağıtımı
 
@@ -332,6 +355,26 @@ telefon (390px), tablet (768px), masaüstü (1440px) ve yatık telefon (844×420
 ```bash
 git push origin main
 ```
+
+`.github/workflows/deploy.yml` iki iş çalıştırır:
+
+1. **deploy** — yayından önce build girdilerini (`worker/`, `scripts/`,
+   `content/`) ve geliştirici notlarını (`README.md`, `app-readme.md`,
+   `assets/*/README.md`) siler;
+   bunlar suuapp.com'da okunamaz.
+2. **indexnow** — yalnızca push'ta, deploy bittikten sonra: ~60 sn Pages
+   yayılımını bekler, ardından
+   `python3 scripts/indexnow-submit.py --range "<son başarılı yayın>..<sha>"`
+   ile o yayından bu yana bütün commit'lerde değişen HTML'leri bildirir ve
+   HTTP durumunu yazar. Başlangıç `github.event.before` değil son başarılı
+   deploy çalıştırmasının commit'i (`gh run list`): art arda iki push'ta
+   bekleyen yayın iptal edilirse o push'un sayfaları da sonrakiyle bildirilir.
+   noindex, meta refresh (yönlendirme) ve kanoniği başka adres olan sayfalar,
+   `EXCLUDE` listesi ve yayınlanmayan klasörler elenir; sitemap ve beslemeler
+   gönderilmez. Başlangıç bulunamazsa `before`'a, o da sıfırsa (ilk push) ya da
+   klonda yoksa (force-push) son commit'e düşer. Gizli anahtar gerekmez (anahtar
+   dosyası kökte); `continue-on-error` sayesinde başarısız bir ping yayını
+   kırmızıya çevirmez.
 
 GitHub Pages'i manuel yeniden etkinleştirmek için:
 ```bash

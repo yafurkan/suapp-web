@@ -85,11 +85,18 @@ def build_jsonld(lang: str, data: dict, facts: dict) -> str:
     founder = facts["entities"]["founder"]
     langs = [l["code"] for l in facts["languages"]["supported"]]
     plans = {p["id"]: p for p in facts["pricing"]["plans"]}
+    # Her mağazanın kendi düğümü: iOS → #suuapp-ios, Android → #suuapp-android
+    # (suu-facts.json → entities.app_ids). Karma tek bir uygulama düğümü yok.
+    app_ids = facts["entities"]["app_ids"]
+    watch = facts["platform_matrix"]["apple_watch"]
 
     def app_node(os_name: str, platform: str, download: str, rating, rating_count, features: list[str]) -> dict:
+        # Apple Watch yalnızca iOS düğümünün özelliği; değer platform_matrix'ten
+        # gelir (eskiden iki düğümde de sabit "coming soon" yazıyordu).
+        watch_value = {"yes": "available", "coming_soon": "coming soon"}.get(watch.get(platform))
         node = {
             "@type": ["MobileApplication", "HealthAndFitnessApplication"],
-            "@id": f"{BASE}/#suuapp-{platform}",
+            "@id": app_ids[platform],
             "name": facts["identity"]["store_title"].get(lang, facts["identity"]["store_title"]["en"]),
             "alternateName": "Suu",
             "operatingSystem": os_name,
@@ -114,8 +121,7 @@ def build_jsonld(lang: str, data: dict, facts: dict) -> str:
                 {"@type": "PropertyValue", "name": "languages", "value": str(facts["languages"]["count"])},
                 {"@type": "PropertyValue", "name": "freeAiAnalysesPerDay", "value": str(n["free_ai_analyses_per_day"])},
                 {"@type": "PropertyValue", "name": "freeTrialDays", "value": str(n["free_trial_days"])},
-                {"@type": "PropertyValue", "name": "appleWatch", "value": "coming soon"},
-            ],
+            ] + ([{"@type": "PropertyValue", "name": "appleWatch", "value": watch_value}] if watch_value else []),
         }
         # AggregateRating yalnızca O MAĞAZANIN kendi sayımı doğrulanmışsa basılır.
         # Blended puan / başka mağazanın count'unu ödünç almak Google'ın
@@ -144,10 +150,14 @@ def build_jsonld(lang: str, data: dict, facts: dict) -> str:
             # gün/ay yazmak doğrulanabilir bir iddiayı uydurmak olur.
             # suu-facts.json _needs_confirmation'daki madde kapanınca daraltılabilir.
             **({"foundingDate": facts["identity"]["founded"]} if facts["identity"].get("founded") else {}),
-            "sameAs": founder["sameAs"] + [
+            # Yalnızca KURULUŞUN kendi resmî profilleri: iki mağaza kaydı + resmî
+            # sosyal hesaplar (links.official_profiles). Kurucunun kişisel LinkedIn'i
+            # Person düğümünde kalır; kuruluşa eklemek iki varlığı birbirine karıştırır.
+            # Üçüncü taraf APK aynaları (Uptodown vb.) resmî profil değildir.
+            "sameAs": [
                 links["app_store"],
                 links["google_play"],
-                f"https://x.com/{links['twitter_handle'].lstrip('@')}",
+                *links.get("official_profiles", {}).values(),
             ],
         },
         {
@@ -182,7 +192,7 @@ def build_jsonld(lang: str, data: dict, facts: dict) -> str:
             "url": page_url(lang),
             "name": data["meta"]["title"],
             "isPartOf": {"@id": f"{BASE}/#website"},
-            "about": {"@id": f"{BASE}/#suuapp-ios"},
+            "about": [{"@id": app_ids["ios"]}, {"@id": app_ids["android"]}],
             "inLanguage": lang,
             # Tazelik sinyali: suu-facts.json'ın kendi _updated tarihinden gelir,
             # her build'de "bugün" yazmaz — aksi hâlde içerik değişmese de
@@ -194,7 +204,7 @@ def build_jsonld(lang: str, data: dict, facts: dict) -> str:
         {
             "@type": "FAQPage",
             "@id": f"{page_url(lang)}#faq",
-            "about": {"@id": f"{BASE}/#suuapp-ios"},
+            "about": [{"@id": app_ids["ios"]}, {"@id": app_ids["android"]}],
             "inLanguage": lang,
             "mainEntity": [
                 {

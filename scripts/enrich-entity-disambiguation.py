@@ -12,6 +12,13 @@ Nereye yazar: yalnızca varlığın ASIL tanımlandığı sayfalar — Organizat
 düğümünde sameAs taşıyan 9 sayfa. Blog yazılarındaki publisher kısayolları
 aynı @id'yi işaret ettiği için oralara kopyalamak gürültüden ibaret olurdu.
 
+Organization.sameAs temizliği: kuruluşun sameAs'ında yalnızca KENDİ resmî
+profilleri (mağaza kayıtları, resmî sosyal hesaplar) durur. Kurucunun kişisel
+profilleri (suu-facts.json → entities.founder.sameAs, ör. LinkedIn) Person
+düğümünde kalır; üçüncü taraf APK aynaları (Uptodown) resmî profil değildir.
+Script bunları Organization.sameAs'tan ÇIKARIR, asla eklemez (2026-10-03'e
+kadar Uptodown'ı ekliyordu).
+
 Kullanım:
     python3 scripts/enrich-entity-disambiguation.py            # önizleme
     python3 scripts/enrich-entity-disambiguation.py --apply
@@ -37,10 +44,15 @@ PAGES = {
     "suu-for-claude.html": "en",
 }
 
-ORG_ID = "https://suuapp.com/#organization"
-APP_IDS = ("https://suuapp.com/#suuapp-ios", "https://suuapp.com/#suuapp-android")
+FACTS = json.loads((ROOT / "content" / "suu-facts.json").read_text(encoding="utf-8"))
 
+ORG_ID = FACTS["entities"]["organization_id"]
+APP_IDS = (FACTS["entities"]["app_ids"]["ios"], FACTS["entities"]["app_ids"]["android"])
+
+# Organization.sameAs'ta DURMAMASI gerekenler: üçüncü taraf APK aynası ve
+# kurucunun kişisel profilleri (bunlar Person düğümünün sameAs'ında kalır).
 UPTODOWN = "https://com-sutakip-suutakippro.en.uptodown.com/android"
+NOT_ORG_PROFILES = {UPTODOWN, *FACTS["entities"]["founder"]["sameAs"]}
 
 ORG_ALT = ["Suu App", "Suu Takip", "suuapp.com"]
 APP_ALT = ["Suu App", "Suu Water Tracker", "Suu Calorie Counter", "Suu Su Takibi"]
@@ -158,25 +170,114 @@ def insert_after_name(text: str, node_id: str, additions: dict) -> tuple[str, in
     return "\n".join(lines), added
 
 
-def add_sameas(text: str) -> tuple[str, int]:
-    """Organization düğümündeki sameAs listesine Uptodown kaydını ekler."""
-    if UPTODOWN in text:
-        return text, 0
-    org_idx = text.find(f'"@id": "{ORG_ID}"')
-    if org_idx == -1:
-        return text, 0
-    m = re.compile(r'"sameAs":\s*\[(.*?)\]', re.S).search(text, org_idx)
-    if not m:
-        return text, 0
-    body = m.group(1)
-    last = re.search(r'^(\s*)"[^"]+"\s*$', body.rstrip().split("\n")[-1])
-    indent = last.group(1) if last else "        "
-    new_body = body.rstrip().rstrip(",") + f',\n{indent}"{UPTODOWN}"\n' + indent[:-2]
-    text = text[:m.start(1)] + new_body + text[m.end(1):]
-    return text, 1
+RE_ID_DEF = re.compile(r'"@id"\s*:\s*"' + re.escape(ORG_ID) + r'"')
+RE_SAMEAS = re.compile(r'"sameAs"\s*:\s*\[(.*?)\]', re.S)
 
 
-def process(path: Path, lang: str) -> tuple[str, int]:
+def _scan(text: str, start: int, stop: int) -> list[int]:
+    """start..stop arasını JSON dizgilerini atlayarak tarar; stop'ta hâlâ açık
+    olan nesnelerin '{' konumlarını (dıştan içe) döndürür."""
+    stack: list[int] = []
+    in_str = esc = False
+    for i in range(start, stop):
+        c = text[i]
+        if in_str:
+            if esc:
+                esc = False
+            elif c == "\\":
+                esc = True
+            elif c == '"':
+                in_str = False
+        elif c == '"':
+            in_str = True
+        elif c == "{":
+            stack.append(i)
+        elif c == "}" and stack:
+            stack.pop()
+    return stack
+
+
+def _object_end(text: str, open_at: int) -> int:
+    """open_at'teki '{' nesnesinin kapanış '}' konumu (dizgi farkında)."""
+    depth = 0
+    in_str = esc = False
+    for i in range(open_at, len(text)):
+        c = text[i]
+        if in_str:
+            if esc:
+                esc = False
+            elif c == "\\":
+                esc = True
+            elif c == '"':
+                in_str = False
+        elif c == '"':
+            in_str = True
+        elif c == "{":
+            depth += 1
+        elif c == "}":
+            depth -= 1
+            if depth == 0:
+                return i
+    return -1
+
+
+def _rebuild_array(body: str, items: list[str]) -> str:
+    """Dizinin gövdesini, mevcut biçimini (tek satır / çok satır) koruyarak yeniden yazar."""
+    if "\n" not in body:
+        return ", ".join(json.dumps(x, ensure_ascii=False) for x in items)
+    lines = [ln for ln in body.split("\n") if ln.strip()]
+    item_indent = re.match(r"\s*", lines[0]).group(0) if lines else "        "
+    close_indent = body.rsplit("\n", 1)[1]          # "]" öncesindeki girinti
+    inner = ",\n".join(item_indent + json.dumps(x, ensure_ascii=False) for x in items)
+    return "\n" + inner + "\n" + close_indent
+
+
+def clean_org_sameas(text: str) -> tuple[str, int]:
+    """Organization TANIM düğümünün sameAs'ından resmî olmayan profilleri çıkarır.
+
+    Arama yalnızca Organization düğümünün kendi sınırları içinde ve düğümün
+    doğrudan alanlarında yapılır: Person düğümündeki LinkedIn'e dokunulmaz.
+    """
+    removed = 0
+    pos = 0
+    while True:
+        m_id = RE_ID_DEF.search(text, pos)
+        if not m_id:
+            break
+        pos = m_id.end()
+        tag_at = text.rfind("<script", 0, m_id.start())
+        block_start = text.find(">", tag_at) + 1 if tag_at != -1 else 0
+        stack = _scan(text, block_start, m_id.start())
+        if not stack:
+            continue
+        open_at = stack[-1]
+        close_at = _object_end(text, open_at)
+        if close_at == -1:
+            continue
+        node_text = text[open_at:close_at]
+        if '"@type"' not in node_text:      # {"@id": ...} referansı, tanım değil
+            continue
+        for m in RE_SAMEAS.finditer(text, open_at, close_at):
+            # Yalnızca düğümün kendi alanı (iç içe nesnelerin sameAs'ı değil)
+            if len(_scan(text, open_at, m.start())) != 1:
+                continue
+            body = m.group(1)
+            try:
+                items = json.loads("[" + body + "]")
+            except json.JSONDecodeError:
+                continue
+            kept = [x for x in items if x not in NOT_ORG_PROFILES]
+            if len(kept) == len(items):
+                continue
+            removed += len(items) - len(kept)
+            text = text[:m.start(1)] + _rebuild_array(body, kept) + text[m.end(1):]
+            pos = m.start(1)
+            break
+    return text, removed
+
+
+def process(path: Path, lang: str) -> tuple[str, int, int]:
+    """(yeni metin, eklenen alan sayısı, sameAs'tan çıkarılan profil sayısı)"""
     text = original = path.read_text(encoding="utf-8")
     t = TEXT[lang]
     total = 0
@@ -195,9 +296,8 @@ def process(path: Path, lang: str) -> tuple[str, int]:
         })
         total += n
 
-    text, n = add_sameas(text)
-    total += n
-    return (text if text != original else original), total
+    text, removed = clean_org_sameas(text)
+    return (text if text != original else original), total, removed
 
 
 def validate(text: str, path: Path) -> None:
@@ -217,12 +317,12 @@ def main() -> int:
         if not path.exists():
             print(f"atlandı (yok): {name}")
             continue
-        new_text, n = process(path, lang)
-        if n == 0:
+        new_text, n, removed = process(path, lang)
+        if n == 0 and removed == 0:
             print(f"{name}: değişiklik yok (alanlar zaten var)")
             continue
         validate(new_text, path)
-        print(f"{name} [{lang}]: +{n} alan")
+        print(f"{name} [{lang}]: +{n} alan, Organization.sameAs'tan -{removed} resmî olmayan profil")
         if apply:
             path.write_text(new_text, encoding="utf-8")
         changed += 1

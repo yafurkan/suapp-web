@@ -15,7 +15,19 @@ sayfa kendi kendine yeter, aynı zamanda tüm kopyalar tek kimlikte birleşir.
 Eşlenen entity'ler:
     Organization "Suu"                → https://suuapp.com/#organization
     Person "Furkan Mert Fındıklı"     → https://suuapp.com/#furkan
-    MobileApplication/SoftwareApplication "Suu" → https://suuapp.com/#suuapp-ios
+    MobileApplication/SoftwareApplication "Suu" → PLATFORMA GÖRE:
+        yalnız iOS sinyali (App Store URL'si / operatingSystem iOS)
+                                      → https://suuapp.com/#suuapp-ios
+        yalnız Android sinyali (Google Play URL'si / operatingSystem Android)
+                                      → https://suuapp.com/#suuapp-android
+        iki platform birden ya da hiç sinyal yok → DOKUNULMAZ (raporlanır)
+
+NEDEN PLATFORMA GÖRE: eskiden her "Suu" uygulama düğümü #suuapp-ios'a
+bağlanıyordu. Play bağlantılı, "Android + iOS" diyen ve Play puanını taşıyan
+karma bir düğüm böylece iOS kimliğine yapışıyor; Google Play'in 4.9 / 2847
+puanı App Store uygulamasınınmış gibi görünüyordu (bkz. suu-facts.json →
+numbers._rating_comment). Karma düğüm iki kimliğe birden bölünemez; elle iki
+platform düğümüne ayrılması gerekir — script tahmin yürütmez.
 
 Kullanım:
     python3 scripts/inject-entity-ids.py            # önizleme
@@ -40,9 +52,24 @@ RE_LD = re.compile(r'(<script type="application/ld\+json">)(.*?)(</script>)', re
 ENTITY_IDS: list[tuple[set[str], str, str]] = [
     ({"Organization", "NewsMediaOrganization"}, "Suu", f"{BASE}/#organization"),
     ({"Person"}, "Furkan Mert Fındıklı", f"{BASE}/#furkan"),
-    ({"MobileApplication", "SoftwareApplication", "HealthAndFitnessApplication"},
-     "Suu", f"{BASE}/#suuapp-ios"),
 ]
+
+# Uygulama düğümleri adla değil PLATFORMLA eşlenir (bkz. app_platform).
+APP_TYPES = {"MobileApplication", "SoftwareApplication", "HealthAndFitnessApplication"}
+APP_NAME = "Suu"
+APP_IDS = {
+    "ios": f"{BASE}/#suuapp-ios",
+    "android": f"{BASE}/#suuapp-android",
+}
+AMBIGUOUS = "(dokunulmadı) platformu belirsiz/karma Suu uygulama düğümü"
+# Zaten bir platform kimliği taşıyan ama sinyalleri o platformla çelişen düğüm
+# (ör. @id #suuapp-ios + operatingSystem "iOS, Android"). Elle iki düğüme bölünmeli.
+MISBOUND = "(dokunulmadı) @id'si platform sinyalleriyle çelişen Suu uygulama düğümü"
+
+IOS_HOSTS = ("apps.apple.com", "itunes.apple.com")
+ANDROID_HOSTS = ("play.google.com",)
+RE_IOS_OS = re.compile(r"(?i)\b(?:ios|ipados|watchos)\b")
+RE_ANDROID_OS = re.compile(r"(?i)\bandroid\b")
 
 
 def types_of(node: dict) -> set[str]:
@@ -54,6 +81,50 @@ def types_of(node: dict) -> set[str]:
     return set()
 
 
+def _strings(value) -> list[str]:
+    if isinstance(value, str):
+        return [value]
+    if isinstance(value, list):
+        return [v for v in value if isinstance(v, str)]
+    return []
+
+
+def platform_signals(node: dict) -> tuple[bool, bool]:
+    """(iOS sinyali var mı, Android sinyali var mı) — bkz. app_platform."""
+    urls: list[str] = []
+    for key in ("url", "downloadUrl", "installUrl", "sameAs"):
+        urls += _strings(node.get(key))
+    offers = node.get("offers")
+    for offer in offers if isinstance(offers, list) else [offers]:
+        if isinstance(offer, dict):
+            urls += _strings(offer.get("url"))
+    os_text = " ".join(_strings(node.get("operatingSystem")))
+
+    ios = any(h in u for u in urls for h in IOS_HOSTS) or bool(RE_IOS_OS.search(os_text))
+    android = any(h in u for u in urls for h in ANDROID_HOSTS) or bool(RE_ANDROID_OS.search(os_text))
+    return ios, android
+
+
+def app_platform(node: dict) -> str | None:
+    """Uygulama düğümünün platformu: "ios", "android" ya da None (belirsiz/karma).
+
+    Sinyaller: mağaza URL'leri (url, downloadUrl, installUrl, sameAs ve
+    offers[].url) ile operatingSystem. İki platformun sinyali birden varsa
+    — örneğin operatingSystem ["Android", "iOS"] ya da hem App Store hem Play
+    teklifi — düğüm karmadır ve None döner: tek bir kimliğe bağlanamaz.
+    """
+    ios, android = platform_signals(node)
+    if ios and not android:
+        return "ios"
+    if android and not ios:
+        return "android"
+    return None
+
+
+def is_app_node(node: dict) -> bool:
+    return node.get("name") == APP_NAME and bool(types_of(node) & APP_TYPES)
+
+
 def match_id(node: dict) -> str | None:
     name = node.get("name")
     if not isinstance(name, str):
@@ -62,17 +133,34 @@ def match_id(node: dict) -> str | None:
     for types, expected, entity_id in ENTITY_IDS:
         if name == expected and tset & types:
             return entity_id
+    if is_app_node(node):
+        platform = app_platform(node)
+        return APP_IDS[platform] if platform else None
     return None
 
 
-def walk(obj, stats: dict) -> object:
-    """Ağacı gez, eşleşen düğümlere @id ekle (varsa dokunma)."""
+def walk(obj, stats: dict, skipped: dict | None = None) -> object:
+    """Ağacı gez, eşleşen düğümlere @id ekle (varsa dokunma).
+
+    skipped: platformu belirlenemediği için BİLEREK atlanan uygulama
+    düğümlerinin sayacı — yalnızca rapor içindir, dosyayı değiştirmez.
+    """
+    if skipped is None:
+        skipped = {}
     if isinstance(obj, list):
-        return [walk(x, stats) for x in obj]
+        return [walk(x, stats, skipped) for x in obj]
     if not isinstance(obj, dict):
         return obj
 
-    node = {k: walk(v, stats) for k, v in obj.items()}
+    node = {k: walk(v, stats, skipped) for k, v in obj.items()}
+
+    if is_app_node(node):
+        ios, android = platform_signals(node)
+        cur = node.get("@id")
+        if cur is None and ios == android:          # karma ya da sinyalsiz
+            skipped[AMBIGUOUS] = skipped.get(AMBIGUOUS, 0) + 1
+        elif cur == APP_IDS["ios"] and android or cur == APP_IDS["android"] and ios:
+            skipped[MISBOUND] = skipped.get(MISBOUND, 0) + 1
 
     entity_id = match_id(node)
     if entity_id and "@id" not in node:
@@ -90,8 +178,10 @@ def walk(obj, stats: dict) -> object:
     return node
 
 
-def process(html: str, stats: dict) -> tuple[str, bool]:
+def process(html: str, stats: dict, skipped: dict | None = None) -> tuple[str, bool]:
     changed = False
+    if skipped is None:
+        skipped = {}
 
     def repl(m: re.Match) -> str:
         nonlocal changed
@@ -102,7 +192,7 @@ def process(html: str, stats: dict) -> tuple[str, bool]:
             return m.group(0)          # ayrıştırılamayanı ellemeyiz
 
         local: dict = {}
-        new_data = walk(data, local)
+        new_data = walk(data, local, skipped)
         if not local:
             return m.group(0)
 
@@ -133,13 +223,17 @@ def main() -> int:
     apply = "--apply" in sys.argv
     stats: dict[str, int] = {}
     touched: list[str] = []
+    ambiguous_pages: list[str] = []
 
     for path in iter_html():
         try:
             html = path.read_text(encoding="utf-8")
         except (OSError, UnicodeDecodeError):
             continue
-        new, changed = process(html, stats)
+        skipped: dict[str, int] = {}
+        new, changed = process(html, stats, skipped)
+        if skipped:
+            ambiguous_pages.append(str(path.relative_to(ROOT)))
         if changed and new != html:
             touched.append(str(path.relative_to(ROOT)))
             if apply:
@@ -148,6 +242,12 @@ def main() -> int:
     print(f"{len(touched)} sayfada @id eklenecek\n")
     for entity_id, count in sorted(stats.items(), key=lambda kv: -kv[1]):
         print(f"  {count:>4} × {entity_id}")
+
+    if ambiguous_pages:
+        print(f"\n{len(ambiguous_pages)} sayfada {AMBIGUOUS} — elle iOS/Android "
+              f"düğümlerine ayrılmalı:")
+        for page in ambiguous_pages:
+            print(f"    {page}")
 
     mode = "uygulandı" if apply else "ÖNİZLEME (yazılmadı)"
     print(f"\n{mode}")

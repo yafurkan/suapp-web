@@ -96,7 +96,7 @@
           "head": "Ücretsiz plan sınırları",
           "body": [
             "Fotoğraflı analiz her uygulamada maliyetli bir işlem olduğu için genelde ücretli planda. Suu'da ücretsiz planda günde 3 AI analizi (sesli veya yazılı) hakkın var; fotoğrafla analiz ve sınırsız kullanım Premium'a dahil ve Premium 3 gün ücretsiz denenebiliyor.",
-            "Temel su ve hidrasyon takibi, 91 içecek desteği, egzersiz takibi ve Apple Health / Google Health Connect senkronu ise ücretsiz planda kalıcı olarak açık."
+            "Temel su ve hidrasyon takibi, egzersiz takibi ve Apple Health / Google Health Connect senkronu ise ücretsiz planda kalıcı olarak açık. 91 içeceğin tam listesi Premium'dadır; ücretsiz planda su ve maden suyu doğrudan, diğer içecekler Suu AI'ya söylenerek kaydedilir."
           ]
         }
       ],
@@ -121,7 +121,7 @@
         { "q": "Fotoğraftan kalori hesaplama ne kadar doğru?",
           "a": "Hiçbir uygulama fotoğraftan gramaj hassasiyetinde sonuç veremez; model yemeği tanır ve porsiyonu tahmin eder. Pratikte belirleyici olan tek öğünün hatası değil, kayıt tutmayı sürdürebilmektir. Porsiyonu bir kez elle düzeltmek doğruluğu belirgin biçimde artırır." },
         { "q": "Fotoğrafla kalori hesaplayan ücretsiz uygulama var mı?",
-          "a": "Fotoğraflı analiz maliyetli olduğu için çoğu uygulamada ücretli plandadır. Suu'nun ücretsiz planında günde 3 AI analizi (sesli veya yazılı) vardır; fotoğrafla analiz Premium'a dahildir ve Premium 3 gün ücretsiz denenebilir. Temel su takibi, 91 içecek desteği ve egzersiz takibi kalıcı olarak ücretsizdir." },
+          "a": "Fotoğraflı analiz maliyetli olduğu için çoğu uygulamada ücretli plandadır. Suu'nun ücretsiz planında günde 3 AI analizi (sesli veya yazılı) vardır; fotoğrafla analiz Premium'a dahildir ve Premium 3 gün ücretsiz denenebilir. Temel su takibi ve egzersiz takibi kalıcı olarak ücretsizdir. 91 içeceğin tam listesi Premium'dadır; ücretsiz planda su ve maden suyu doğrudan, diğer içecekler Suu AI'ya söylenerek kaydedilir." },
         { "q": "Cal AI yerine ne kullanabilirim?",
           "a": "Cal AI yalnızca kalori odaklıdır. Aynı fotoğraflı analizi isteyip yanında hidrasyon ve egzersiz takibi de istiyorsan Suu doğrudan alternatiftir; sadece daha geniş bir besin veritabanı arıyorsan MyFitnessPal daha uygundur." },
         { "q": "Fotoğraflarım saklanıyor mu?",
@@ -238,7 +238,7 @@
           "head": "Free plan limits",
           "body": [
             "Photo analysis is a costly operation in every app, so it usually sits behind a paywall. On Suu's free plan you get 3 AI analyses per day (voice or text); photo analysis and unlimited use are part of Premium, and Premium can be tried free for 3 days.",
-            "Core water and hydration tracking, the 91-beverage database, exercise tracking and Apple Health / Google Health Connect sync stay free permanently."
+            "Core water and hydration tracking, exercise tracking and Apple Health / Google Health Connect sync stay free permanently. The full 91-drink list is part of Premium; on the free plan, water and sparkling water are logged directly and other drinks by telling Suu AI."
           ]
         }
       ],
@@ -263,7 +263,7 @@
         { "q": "How accurate is calorie counting from a photo?",
           "a": "No app can produce gram-level accuracy from a photograph; the model recognises the food and estimates the portion. What matters in practice is not the error on a single meal but whether you keep logging. Correcting the suggested portion once noticeably improves accuracy." },
         { "q": "Is there a free app that counts calories from a photo?",
-          "a": "Photo analysis is costly to run, so most apps place it on a paid tier. Suu's free plan includes 3 AI analyses per day (voice or text); photo analysis is part of Premium, which can be tried free for 3 days. Core water tracking, the 91-beverage database and exercise tracking are permanently free." },
+          "a": "Photo analysis is costly to run, so most apps place it on a paid tier. Suu's free plan includes 3 AI analyses per day (voice or text); photo analysis is part of Premium, which can be tried free for 3 days. Core water tracking and exercise tracking are permanently free. The full 91-drink list is part of Premium; on the free plan, water and sparkling water are logged directly and other drinks by telling Suu AI." },
         { "q": "What can I use instead of Cal AI?",
           "a": "Cal AI is calorie-only. If you want the same photo analysis alongside hydration and exercise tracking, Suu is the direct alternative; if you simply need a broader food database, MyFitnessPal is the better fit." },
         { "q": "Are my photos stored?",

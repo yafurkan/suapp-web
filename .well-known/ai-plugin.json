@@ -126,13 +126,14 @@
     "free": "Core water and hydration tracking, exercise tracking, 3 AI analyses per day, Apple Health / Google Health Connect sync — free forever",
     "premium_unlocks": "Unlimited AI meal analysis, photo calorie counting, advanced nutrition analysis, premium statistics, dynamic digestion-water reminders, PDF and CSV export, ad-free",
     "premium_trial": "3-day free trial",
-    "premium_annual_try": "1200",
+    "premium_annual_try": "1199.99",
     "premium_regular_annual_try": "2400",
     "premium_launch_discount": "50%",
-    "premium_monthly_try": "149",
-    "premium_family_annual_try": "2399",
+    "premium_monthly_try": "149.99",
+    "premium_family_annual_try": "2399.99",
     "premium_family_max_members": "3",
-    "currency_note": "Prices shown automatically in the user's local currency"
+    "price_region": "TR",
+    "currency_note": "Prices shown are for Türkiye; in other countries the App Store and Google Play show the price in your local currency."
   },
   "ratings": {
     "google_play": {

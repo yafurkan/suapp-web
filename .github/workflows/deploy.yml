@@ -11,12 +11,16 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
 jobs:
   deploy:
+    # github-pages ortamı yalnızca main'den yayına izin veriyor; PR'da bu iş
+    # her seferinde ortam korumasına takılıp kırmızı oluyordu. PR'da atlanır.
+    if: github.event_name == 'push'
+    # Kilit yalnızca yayın işinde: iş akışı düzeyinde olsaydı IndexNow işinin
+    # 60 sn beklemesi sıradaki yayını da bekletirdi.
+    concurrency:
+      group: "pages"
+      cancel-in-progress: false
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -33,14 +37,59 @@ jobs:
       # ve scripts/build-gift-pages.py suuapp.com üzerinden okunabilir hale gelir
       # (panel adresi ve kurulum notları dahil). Hiçbiri çalışma anında
       # kullanılmıyor — tamamı yerelde çalışan üretim adımlarının girdisi.
+      # README.md ve app-readme.md de geliştirici notu, site sayfası değil:
+      # app-readme.md eski iddialar taşıyordu ve suuapp.com/app-readme.md
+      # adresinden okunabiliyordu (yapay zekâ tarayıcıları dahil).
+      # assets altındaki README'ler de yalnızca dosya yerleşimi notu.
       - name: Yayından build girdilerini çıkar
-        run: rm -rf worker scripts content
+        run: rm -rf worker scripts content README.md app-readme.md assets/screenshots/README.md assets/special/README.md
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
-          
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  # Yayından sonra push'taki TÜM değişen HTML'leri IndexNow'a bildir (Bing,
+  # Yandex, Seznam, Naver). Elle `--changed` çalıştırmak unutuluyordu ve o mod
+  # yalnızca son commit'e bakıyordu. Gizli anahtar gerekmez — IndexNow anahtar
+  # dosyası zaten kökte herkese açık. Ping başarısız olsa da yayın kırmızıya
+  # dönmez (continue-on-error).
+  indexnow:
+    needs: deploy
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    permissions:
+      contents: read
+      actions: read           # son başarılı yayının commit'ini sorgulamak için
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0          # aralık diff'i için tam geçmiş
+
+      # Aralığın başı github.event.before DEĞİL, son BAŞARILI yayın: art arda
+      # iki push'ta bekleyen yayın iptal edilirse (concurrency) o push'un
+      # IndexNow işi hiç çalışmaz; bir sonraki push yalnızca kendi commit'lerini
+      # bildirseydi iptal edilen push'un sayfaları hiç bildirilmezdi. Bu
+      # çalıştırma henüz bitmediği için listede kendisi yer almaz.
+      - name: Son başarılı yayın
+        id: prev
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          sha=$(gh run list -R "$GITHUB_REPOSITORY" --workflow deploy.yml --branch main \
+                --event push --status success --limit 1 --json headSha -q '.[0].headSha' || true)
+          echo "sha=${sha:-${{ github.event.before }}}" >> "$GITHUB_OUTPUT"
+
+      # Pages dağıtımı CDN'e yayılırken motor sayfayı hemen çekerse eski
+      # sürümü görür — kısa bir bekleme.
+      - name: Pages yayılımını bekle
+        run: sleep 60
+
+      - name: IndexNow'a bildir
+        run: python3 scripts/indexnow-submit.py --range "${{ steps.prev.outputs.sha }}..${{ github.sha }}"

@@ -581,7 +581,7 @@
   "pricing": {
     "eyebrow": "Pricing",
     "head": "The core features are always free",
-    "sub": "Try Premium free for 3 days. Prices are shown automatically in your local currency.",
+    "sub": "Try Premium free for 3 days. Prices shown are for Türkiye; in other countries the App Store and Google Play show the price in your local currency.",
     "plans": [
       {
         "name": "Free",
@@ -589,7 +589,7 @@
         "note": "Free forever",
         "features": [
           "Core water and hydration tracking",
-          "91 beverages",
+          "Weekly friend leaderboard",
           "Exercise tracking",
           "3 AI analyses per day (voice/text)",
           "Apple Health / Health Connect sync"
@@ -599,7 +599,7 @@
       },
       {
         "name": "Premium Yearly",
-        "price": "₺1,200",
+        "price": "₺1,199.99",
         "was": "₺2,400",
         "badge": "50% launch discount",
         "featured": true,
@@ -618,9 +618,9 @@
       },
       {
         "name": "Monthly & Family",
-        "price": "₺149",
+        "price": "₺149.99",
         "period": "/ month",
-        "note": "Family plan: ₺2,399 / year — up to 3 people",
+        "note": "Family plan: ₺2,399.99 / year — up to 3 people",
         "features": [
           "All Premium features",
           "Monthly plan, cancel anytime",
@@ -649,7 +649,7 @@
       },
       {
         "q": "Is Suu free?",
-        "a": "Core water and hydration tracking, 3 AI analyses per day and Apple Health / Google Health Connect sync are always free. Unlimited AI meal analysis, photo calorie counting, advanced nutrition analysis and premium statistics require Premium. Premium can be tried free for 3 days; the yearly plan is ₺1,200 with a 50% launch discount (normally ₺2,400), monthly is ₺149, and the 3-person family plan is ₺2,399 per year."
+        "a": "Core water and hydration tracking, 3 AI analyses per day and Apple Health / Google Health Connect sync are always free. Unlimited AI meal analysis, photo calorie counting, advanced nutrition analysis and premium statistics require Premium. Premium can be tried free for 3 days; in Türkiye the yearly plan is ₺1,199.99 with a 50% launch discount (normally ₺2,400), monthly is ₺149.99, and the 3-person family plan is ₺2,399.99 per year. In other countries the store shows the price in your local currency."
       },
       {
         "q": "Which languages does Suu support?",

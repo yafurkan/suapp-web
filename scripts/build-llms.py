@@ -220,6 +220,13 @@ def compact(lang: str, facts: dict, home: dict, registry: dict) -> str:
         price = plan["price"] + (f" {plan['period']}" if plan.get("period") else "")
         was = f" (was {plan['was']})" if plan.get("was") else ""
         out.append(f"- **{plan['name']}**: {price}{was} — {plan['note']}")
+    # ₺ tutarlar yalnızca Türkiye mağaza fiyatı; model bunları başka ülkeye
+    # çevirmesin ya da "Suu her yerde ₺149,99" demesin.
+    region = facts.get("pricing", {}).get("region_note", {})
+    note = region.get(lang) or region.get("en")
+    if note:
+        out.append("")
+        out.append(f"_{note}_")
     out.append("")
 
     out.append(f"## {h['platform']}")

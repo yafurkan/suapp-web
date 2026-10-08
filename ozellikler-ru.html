@@ -65,6 +65,11 @@
         "name": "Возможности Suu — ИИ-приложение для питья воды",
         "description": "Все возможности приложения для отслеживания воды Suu и сравнение с другими трекерами гидратации.",
         "url": "https://suuapp.com/ozellikler-ru.html",
+        "dateModified": "2026-10-03",
+        "about": [
+            { "@id": "https://suuapp.com/#suuapp-ios" },
+            { "@id": "https://suuapp.com/#suuapp-android" }
+        ],
         "inLanguage": "ru",
         "mainEntity": {
             "@type": "ItemList",
@@ -87,63 +92,118 @@
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": [
-    "SoftwareApplication",
-    "MobileApplication"
-  ],
-  "@id": "https://suuapp.com/#suuapp-ios",
-  "name": "Suu",
-  "description": "ИИ-приложение для отслеживания воды и гидратации на iOS и Android с адаптивным мозгом гидратации, индексом Suu, персональным планом, лигами с друзьями и 91 напитком.",
-  "url": "https://suuapp.com/ozellikler-ru.html",
-  "inLanguage": "ru",
-  "applicationCategory": "HealthApplication",
-  "applicationSubCategory": "HealthAndFitness",
-  "operatingSystem": [
-    "Android",
-    "iOS"
-  ],
-  "downloadUrl": "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
-  "installUrl": "https://suuapp.com/app/",
-  "offers": [
+  "@graph": [
     {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD",
-      "url": "https://apps.apple.com/us/app/suu-su-takip/id6757619920",
-      "seller": {
-        "@type": "Organization",
-        "name": "App Store"
+      "@type": [
+        "SoftwareApplication",
+        "MobileApplication"
+      ],
+      "@id": "https://suuapp.com/#suuapp-ios",
+      "name": "Suu – трекер воды, счётчик калорий и тренировки",
+      "alternateName": "Suu",
+      "description": "ИИ-приложение для отслеживания воды и гидратации на iOS и Android с адаптивным мозгом гидратации, индексом Suu, персональным планом, лигами с друзьями и 91 напитком.",
+      "operatingSystem": "iOS 15.0+",
+      "applicationCategory": "HealthApplication",
+      "applicationSubCategory": "HealthAndFitness",
+      "url": "https://suuapp.com/",
+      "downloadUrl": "https://apps.apple.com/us/app/suu-su-takip/id6757619920",
+      "installUrl": "https://apps.apple.com/us/app/suu-su-takip/id6757619920",
+      "inLanguage": [
+        "tr",
+        "en",
+        "ar",
+        "de",
+        "it",
+        "ru",
+        "hi"
+      ],
+      "author": {
+        "@id": "https://suuapp.com/#furkan"
+      },
+      "publisher": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "TRY",
+          "url": "https://apps.apple.com/us/app/suu-su-takip/id6757619920",
+          "seller": {
+            "@type": "Organization",
+            "name": "App Store"
+          }
+        }
+      ]
+    },
+    {
+      "@type": [
+        "SoftwareApplication",
+        "MobileApplication"
+      ],
+      "@id": "https://suuapp.com/#suuapp-android",
+      "name": "Suu – трекер воды, счётчик калорий и тренировки",
+      "alternateName": "Suu",
+      "description": "ИИ-приложение для отслеживания воды и гидратации на iOS и Android с адаптивным мозгом гидратации, индексом Suu, персональным планом, лигами с друзьями и 91 напитком.",
+      "operatingSystem": "Android 8.0+",
+      "applicationCategory": "HealthApplication",
+      "applicationSubCategory": "HealthAndFitness",
+      "url": "https://suuapp.com/",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
+      "inLanguage": [
+        "tr",
+        "en",
+        "ar",
+        "de",
+        "it",
+        "ru",
+        "hi"
+      ],
+      "author": {
+        "@id": "https://suuapp.com/#furkan"
+      },
+      "publisher": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "TRY",
+          "url": "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
+          "seller": {
+            "@type": "Organization",
+            "name": "Google Play"
+          }
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "bestRating": "5",
+        "ratingCount": "2847"
       }
     },
     {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD",
-      "url": "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro",
-      "seller": {
-        "@type": "Organization",
-        "name": "Google Play"
+      "@type": "Organization",
+      "@id": "https://suuapp.com/#organization",
+      "name": "Suu",
+      "url": "https://suuapp.com",
+      "founder": {
+        "@id": "https://suuapp.com/#furkan"
       }
-    }
-  ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "bestRating": "5",
-    "ratingCount": "2847"
-  },
-  "author": {
-    "@type": "Organization",
-    "@id": "https://suuapp.com/#organization",
-    "name": "Suu",
-    "url": "https://suuapp.com",
-    "founder": {
+    },
+    {
       "@type": "Person",
       "@id": "https://suuapp.com/#furkan",
       "name": "Furkan Mert Fındıklı",
-      "url": "https://www.linkedin.com/in/furkanfindikli/"
+      "url": "https://suuapp.com/yazarlar/furkan-mert.html",
+      "sameAs": [
+        "https://www.linkedin.com/in/furkanfindikli/"
+      ]
     }
-  }
+  ]
 }
     </script>
 
@@ -398,7 +458,7 @@
                 <article class="feature-card">
                     <div class="feature-icon"><i class="fas fa-language"></i></div>
                     <h3>7 языков и полная доступность</h3>
-                    <p>Русский, английский, арабский (RTL) и турецкий — с нативными названиями напитков и умным поиском. Создано для VoiceOver и TalkBack, с гостевым режимом, открывающим все функции без регистрации.</p>
+                    <p>Русский, английский, турецкий, арабский (RTL), немецкий, итальянский и хинди — с нативными названиями напитков и умным поиском. Создано для VoiceOver и TalkBack, с гостевым режимом, открывающим все функции без регистрации.</p>
                 </article>
 
             </div>
@@ -434,7 +494,7 @@
                         <tr><td>Siri и голосовые команды</td><td><span class="check">✓</span></td><td><span class="partial">Ограничено</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td></tr>
                         <tr><td>Виртуальный питомец</td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td></tr>
                         <tr><td>Поддержка арабского (RTL)</td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td></tr>
-                        <tr><td>Языки</td><td><span class="check">4 (RU/EN/AR/TR)</span></td><td><span class="partial">EN +</span></td><td><span class="partial">EN +</span></td><td><span class="partial">EN +</span></td></tr>
+                        <tr><td>Языки</td><td><span class="check">7 (RU/EN/TR/AR/DE/IT/HI)</span></td><td><span class="partial">EN +</span></td><td><span class="partial">EN +</span></td><td><span class="partial">EN +</span></td></tr>
                         <tr><td>Экспорт PDF / CSV</td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td></tr>
                     </tbody>
                 </table>

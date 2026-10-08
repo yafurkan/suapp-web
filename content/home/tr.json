@@ -581,7 +581,7 @@
   "pricing": {
     "eyebrow": "Fiyatlandırma",
     "head": "Temel özellikler her zaman ücretsiz",
-    "sub": "Premium'u 3 gün ücretsiz dene. Fiyatlar yerel para biriminde otomatik gösterilir.",
+    "sub": "Premium'u 3 gün ücretsiz dene. Gösterilen fiyatlar Türkiye fiyatlarıdır; diğer ülkelerde App Store ve Google Play fiyatı yerel para biriminde gösterir.",
     "plans": [
       {
         "name": "Ücretsiz",
@@ -589,7 +589,7 @@
         "note": "Her zaman ücretsiz",
         "features": [
           "Temel su ve hidrasyon takibi",
-          "91 içecek desteği",
+          "Haftalık arkadaş Lider Tablosu",
           "Egzersiz takibi",
           "Günde 3 AI analizi (sesli/yazılı)",
           "Apple Health / Health Connect senkronu"
@@ -599,7 +599,7 @@
       },
       {
         "name": "Premium Yıllık",
-        "price": "₺1.200",
+        "price": "₺1.199,99",
         "was": "₺2.400",
         "badge": "%50 lansman indirimi",
         "featured": true,
@@ -618,9 +618,9 @@
       },
       {
         "name": "Aylık & Aile",
-        "price": "₺149",
+        "price": "₺149,99",
         "period": "/ ay",
-        "note": "Aile planı: ₺2.399 / yıl — 3 kişiye kadar",
+        "note": "Aile planı: ₺2.399,99 / yıl — 3 kişiye kadar",
         "features": [
           "Tüm Premium özellikleri",
           "Aylık plan, istediğin zaman iptal",
@@ -649,7 +649,7 @@
       },
       {
         "q": "Suu ücretsiz mi?",
-        "a": "Temel su ve hidrasyon takibi, günde 3 AI analizi ve Apple Health / Google Health Connect senkronu her zaman ücretsizdir. Sınırsız AI yemek analizi, fotoğrafla kalori hesaplama, gelişmiş beslenme analizi ve premium istatistikler için Premium gerekir. Premium 3 gün ücretsiz denenebilir; yıllık plan lansmana özel %50 indirimle ₺1.200 (normal ₺2.400), aylık ₺149, 3 kişilik aile planı yıllık ₺2.399."
+        "a": "Temel su ve hidrasyon takibi, günde 3 AI analizi ve Apple Health / Google Health Connect senkronu her zaman ücretsizdir. Sınırsız AI yemek analizi, fotoğrafla kalori hesaplama, gelişmiş beslenme analizi ve premium istatistikler için Premium gerekir. Premium 3 gün ücretsiz denenebilir; Türkiye'de yıllık plan lansmana özel %50 indirimle ₺1.199,99 (normal ₺2.400), aylık ₺149,99, 3 kişilik aile planı yıllık ₺2.399,99. Diğer ülkelerde mağaza fiyatı yerel para biriminde gösterir."
       },
       {
         "q": "Suu hangi dilleri destekliyor?",

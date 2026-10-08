@@ -55,7 +55,12 @@ def build_rules(facts: dict) -> list[dict]:
             "severity": ERROR,
             "pattern": re.compile(
                 r"(?i)\b100\s*\+?\s*(?:farkl[ıi]\s+)?"
-                r"(?:i[çc]ecek|beverage|drink|напитк|مشروب)",
+                r"(?:i[çc]ecek|beverage|drink|напитк|مشروب)"
+                # 2026-10-03: araya kelime giren varyantlar ("100+ other drinks",
+                # "أكثر من 100 فئة مشروبات", ASCII "100'den fazla icecek") kaçıyordu.
+                r"|\b100\s*\+\s*other\s+(?:drinks|beverages)"
+                r"|\b100'?(?:den|ün)?\s+fazla\s+i[çc]ecek"
+                r"|أكثر\s+من\s+100\s+(?:فئة|نوع)",
             ),
             "message": "Eski içecek sayısı ('100+')",
             "fix": f"{beverages} içecek",
@@ -95,7 +100,9 @@ def build_rules(facts: dict) -> list[dict]:
                 r"(?i)single-handedly|built by one developer|by a single developer|as a solo developer|"
                 r"tek başına geliştir|tek geliştiricisi|bireysel olarak geliştiril|"
                 r"بواسطة مطور واحد|يطوّره مطوّر واحد|одним разработчиком|делает один разработчик|"
-                r"eines einzelnen Entwicklers|da un solo sviluppatore|один розробник"
+                r"eines einzelnen Entwicklers|da un solo sviluppatore|один розробник|"
+                # 2026-10-03: hakkımızda sayfalarında kaçan varyantlar (ASCII Türkçe dahil)
+                r"\bsole developer|tek gelistiricisi|tek basina gelistir|единственн\w*\s+разработчик|من الصفر بمفرده"
             ),
             "message": "'Tek geliştirici' iddiası — Suu iki kişilik bağımsız ekip",
             "fix": "küçük bağımsız ekip (Furkan Mert Fındıklı + Mert Öz)",
@@ -140,7 +147,94 @@ def build_rules(facts: dict) -> list[dict]:
             "message": "Alkol için negatif hidrasyon katsayısı yazılmış — platformlar arasında farklı, yayınlanmamalı",
             "fix": "niteliksel anlatım: alkol su hedefini 10 ml saf alkol başına +250 ml artırır",
         },
+        {
+            # 2026-10-03: Suu'nun kullanıcı/indirme sayısı hiçbir yerde doğrulanmadı
+            # (".github/workflows/index.html"deki "1 Milyon Kullanıcı" ve blogdaki "1M+ İndirme"
+            # kaldırıldı). Yalnızca Suu'ya ait olabilecek "1 milyon / 1M+" kalıpları yakalanır;
+            # "200 million users" gibi kaynaklı rakip sayıları (önünde başka rakam var) serbest.
+            "id": "user-count-claim",
+            "severity": ERROR,
+            "pattern": re.compile(
+                r"(?i)(?<![\d.,])\b1\s?M\+"
+                r"|(?<![\d.,]\s)(?<![\d.,])\b(?:1|bir)\s*milyon\s*\+?\s+(?:indirme|kullanıc)"
+                r"|(?<![\d.,]\s)(?<![\d.,])\b(?:1|one)\s*million\s+(?:users|downloads)"
+                r"|(?<![\d.,]\s)(?<![\d.,])\b(?:1|один|одного)\s*(?:млн|миллион)\w*\s+(?:пользовател|скачиван|загруз)"
+                r"|(?<![\d٠-٩]\s)(?<![\d٠-٩])مليون\s+(?:مستخدم|تحميل|تنزيل)"
+                r"|\b1\s*(?:Million|Mio\.?)\s+(?:Nutzer|Downloads)"
+                r"|\b(?:1|un)\s*milione\s+di\s+(?:utenti|download)"
+                r"|(?<![\d.,]\s)(?<![\d.,])\b(?:1|один)\s*(?:млн|мільйон)\w*\s+(?:користувач|завантаж)"
+            ),
+            "message": "Doğrulanmamış kullanıcı/indirme sayısı ('1M+', '1 milyon kullanıcı')",
+            "fix": "kullanıcı sayısı yazma; doğrulanmış tek sayı: Google Play 4.9★ (2.847 değerlendirme)",
+        },
+        {
+            # 2026-10-03: "used by thousands / binlerce kişinin güvendiği" — sayım yok.
+            # "binlerce kişi her ay ... arıyor" gibi arama hacmi cümleleri serbest.
+            "id": "thousands-users-claim",
+            "severity": ERROR,
+            "pattern": re.compile(
+                r"(?i)(?:used|trusted)\s+by\s+thousands|thousands\s+of\s+(?:users|expectant\s+mothers)"
+                r"|binlerce\s+(?:kullanıc|ki[şs]inin\s+(?:g[üu]vendi|kullandı)|anne)"
+                r"|тысяч\w*\s+пользовател|(?:доверяют|пользуются)\s+тысячи"
+                r"|(?:يثق\s+به|يستخدمه)\s+الآلاف|آلاف\s+(?:المستخدمين|الأمهات)"
+            ),
+            "message": "Doğrulanmamış 'binlerce kullanıcı' iddiası",
+            "fix": "nötr anlatım (kullanıcı sayısı olmadan): 'su, kalori ve egzersiz takip uygulaması Suu'",
+        },
+        {
+            # 2026-10-03: uygulama 7 dilde; "TR / EN / RU / AR", "русский/турецкий/арабский/английский",
+            # "للتركية والإنجليزية والروسية والعربية" gibi 4'lü listeler eski. Dört dilden
+            # sonra liste devam ediyorsa ("… / DE / IT / HI") bulgu sayılmaz.
+            "id": "stale-4-language-list",
+            "severity": ERROR,
+            "pattern": re.compile(
+                r"(?<![/\w])(?<!/\s)(?:TR|EN|RU|AR)(?:\s*/\s*(?:TR|EN|RU|AR)){3}\b(?!\s*/)"
+                r"|(?:T[üu]rk[çc]e|[İI]ngilizce|Rus[çc]a|Arap[çc]a)"
+                r"(?:\s*/\s*(?:T[üu]rk[çc]e|[İI]ngilizce|Rus[çc]a|Arap[çc]a)){3}(?!\s*/)"
+                r"|(?:русск|турецк|арабск|английск)\w*(?:\s*/\s*(?:русск|турецк|арабск|английск)\w*){3}(?!\s*/)"
+                r"|(?:русск|турецк|арабск|английск)\w*,\s*(?:русск|турецк|арабск|английск)\w*,\s*"
+                r"(?:русск|турецк|арабск|английск)\w*,?\s+(?:и|или)\s+(?:русск|турецк|арабск|английск)\w*"
+                r"|(?:ال)?(?:عربية|تركية|روسية|إنجليزية)(?:\s*/\s*(?:ال)?(?:عربية|تركية|روسية|إنجليزية)){3}(?!\s*/)"
+                r"|(?:لل|بال|ال)(?:عربية|تركية|روسية|إنجليزية)"
+                r"(?:\s+(?:أو\s+)?و?(?:ال)?(?:عربية|تركية|روسية|إنجليزية)){3}(?!\s+(?:و|أو))"
+                # TR/EN kelime listeleri: "Türkçe, İngilizce, Arapça ve Rusça" / "English, Arabic, Turkish and Russian"
+                # — liste 7 dile devam ediyorsa (Almanca/German…) eşleşmez
+                r"|(?:T[üu]rk[çc]e|[İI]ngilizce|Rus[çc]a|Arap[çc]a)(?:\s*\(RTL\))?"
+                r"(?:(?:\s*,\s*|\s+(?:ve|veya)\s+)(?:T[üu]rk[çc]e|[İI]ngilizce|Rus[çc]a|Arap[çc]a)(?:\s*\(RTL\))?){3}"
+                r"(?!\s*(?:,|ve)\s*(?:Almanca|[İI]talyanca|Hint[çc]e))"
+                r"|(?:Turkish|English|Russian|Arabic)(?:\s*\(RTL\))?"
+                r"(?:(?:\s*,\s*|,?\s+(?:and|or)\s+)(?:Turkish|English|Russian|Arabic)(?:\s*\(RTL\))?){3}"
+                r"(?!\s*(?:,|and)\s*(?:German|Italian|Hindi))"
+            ),
+            "message": "Eski 4'lü dil listesi (TR / EN / RU / AR)",
+            "fix": f"{lang_count} dil: Türkçe, English, العربية, Deutsch, Italiano, Русский, हिन्दी",
+        },
+        {
+            # Karşılaştırma yazılarında mutlak hüküm yerine "X için en iyisi" dili kullanılır
+            # (competitors.wedge). Yalnızca açık kalıplar — "en iyi" tek başına serbest.
+            "id": "superlative-claim",
+            "severity": WARN,
+            "pattern": re.compile(r"(?i)clearly the best|الأفضل بوضوح|bariz en iyi|açık ara en iyi"),
+            "message": "Mutlak üstünlük iddiası ('bariz en iyi / clearly the best')",
+            "fix": "'… istiyorsan en uygun seçenek' gibi koşullu ifade",
+        },
     ]
+
+    # App Store puanı: suu-facts'te null iken sitede "5.0 App Store / 5.0★ AS" yazılamaz.
+    # Gerçek puan girilince kural kendiliğinden kapanır.
+    if facts["numbers"].get("rating_app_store") is None:
+        rules.append({
+            "id": "app-store-rating-claim",
+            "severity": ERROR,
+            "pattern": re.compile(
+                # "AS" büyük harfe duyarlı: İngilizce "as" kelimesi eşleşmesin
+                r"(?<![\d.,])5[.,]0\s*★?\s*(?:(?i:App\s*Store)|AS\b)"
+                r"|(?i:App\s*Store)[^<\n\d]{0,12}5[.,]0\s*★"
+            ),
+            "message": "Doğrulanmamış App Store puanı (rating_app_store null)",
+            "fix": f"yalnızca Google Play puanı: {facts['numbers']['rating_google_play']}★ "
+                   f"({facts['numbers']['rating_count_google_play']} değerlendirme)",
+        })
 
     # Apple Watch: mağaza açıklaması "yakında" diyorsa, "var" iddiaları hatadır.
     if watch == "coming_soon":
@@ -172,17 +266,29 @@ def build_rules(facts: dict) -> list[dict]:
                 "id": "apple-watch-stale-soon",
                 "severity": ERROR,
                 "pattern": re.compile(
-                    r"(?i)(?:apple\s*watch|watchos)[^.<\n]{0,90}"
+                    r"(?i)(?:apple[\s-]*watch|watchos)[^.<\n]{0,90}"
                     r"(?:coming\s*soon|in\s+development|on\s+the\s+way|not\s+(?:yet\s+)?released|no\s+(?:dedicated\s+)?(?:apple\s*)?watch\s+app\s+yet|"
                     r"yakında|yolda|geliştiriliyor|henüz\s+(?:yok|adanmış|özel)|"
                     r"in\s+arbeit|noch\s+aussteht|noch\s+keine|demnächst|in\s+arrivo|deve\s+ancora|non\s+ha\s+ancora|"
                     r"в\s+разработке|пока\s+нет|скоро\s+выйдет|قيد\s+التطوير|لم\s+يصدر|قريبًا|"
                     r"у\s+розробці|поки\s+немає|ще\s+попереду|незабаром|जल्द|अभी\s+नहीं)"
                     r"|(?:coming\s*soon|in\s+development|yakında|in\s+arbeit|in\s+arrivo|в\s+разработке|قيد\s+التطوير|у\s+розробці)"
-                    r"[^.<\n]{0,60}(?:apple\s*watch|watchos)"
+                    r"[^.<\n]{0,60}(?:apple[\s-]*watch|watchos)"
                 ),
                 "message": "Apple Watch uygulaması yayında ama metin 'yakında / geliştiriliyor' diyor",
                 "fix": "Apple Watch uygulaması mevcut — su, sesli öğün, GPS'li antrenman",
+            },
+            {
+                # Karşılaştırma tablosu: satır etiketi Apple Watch, Suu sütunu ✓ değil
+                # (ör. DE "In Arbeit"). Hücreler etiketle ayrı <td>'lerde olduğundan
+                # yukarıdaki cümle kuralı bunu göremiyor.
+                "id": "apple-watch-table-not-yes",
+                "severity": ERROR,
+                "pattern": re.compile(
+                    r'(?i)<tr><td>[^<]*(?:apple[\s-]*watch|watchos)[^<]*</td>.*?<td class="col-suu (?:soon|no)"'
+                ),
+                "message": "Karşılaştırma tablosunda Suu'nun Apple Watch hücresi ✓ değil",
+                "fix": "content/compare|guides/*.json → hücreyi {\"text\": \"✓\", \"cls\": \"yes\"} yap, build-compare.py --apply",
             },
             {
                 # Sesli öğün analizi iPhone'da tamamlanır; su/antrenman kuyruğa alınıp
@@ -257,6 +363,40 @@ def iter_files(explicit: list[str]) -> list[Path]:
     return sorted(files)
 
 
+# Yapısal kurallar (satır regex'i değil): sayfanın kendi içindeki iki sinyalin
+# tutarlılığı. article:author meta'sı Article JSON-LD yazarından ayrı
+# güncelleniyordu; yazar dağıtımında 36 sayfada eski ad kaldı (2026-10-06).
+AUTHOR_RULE = {
+    "id": "article-author-mismatch",
+    "severity": ERROR,
+    "message": "<meta property=\"article:author\"> Article JSON-LD yazarıyla aynı değil",
+    "fix": "meta içeriğini JSON-LD author.name ile eşitle (görünen imza da aynı olmalı)",
+}
+RE_META_AUTHOR = re.compile(r'<meta property="article:author" content="([^"]*)"')
+RE_LD_BLOCK = re.compile(r'<script type="application/ld\+json">(.*?)</script>', re.S)
+
+
+def ld_article_author(text: str) -> str | None:
+    for block in RE_LD_BLOCK.findall(text):
+        try:
+            data = json.loads(block)
+        except ValueError:
+            continue
+        nodes = data.get("@graph", [data]) if isinstance(data, dict) else data
+        for node in nodes if isinstance(nodes, list) else [nodes]:
+            if not isinstance(node, dict):
+                continue
+            types = node.get("@type")
+            types = types if isinstance(types, list) else [types]
+            if any(t in ("Article", "BlogPosting", "NewsArticle") for t in types):
+                author = node.get("author")
+                if isinstance(author, list) and author:
+                    author = author[0]
+                if isinstance(author, dict) and author.get("name"):
+                    return author["name"]
+    return None
+
+
 def scan(path: Path, rules: list[dict]) -> list[tuple[dict, int, str]]:
     try:
         text = path.read_text(encoding="utf-8", errors="replace")
@@ -264,6 +404,13 @@ def scan(path: Path, rules: list[dict]) -> list[tuple[dict, int, str]]:
         return []
 
     hits: list[tuple[dict, int, str]] = []
+    if path.suffix.lower() == ".html":
+        meta = RE_META_AUTHOR.search(text)
+        if meta:
+            ld_name = ld_article_author(text)
+            if ld_name and ld_name != meta.group(1):
+                lineno = text.count("\n", 0, meta.start()) + 1
+                hits.append((AUTHOR_RULE, lineno, f"meta '{meta.group(1)}' ≠ JSON-LD '{ld_name}'"))
     for rule in FILE_RULES:
         if rule["applies"].search(text) and not rule["requires"].search(text):
             hits.append((rule, 1, "(dosya düzeyi)"))
@@ -298,14 +445,14 @@ def main() -> int:
         for rule, lineno, snippet in scan(path, rules):
             findings.setdefault(rule["id"], []).append((path, lineno, snippet))
 
-    by_id = {r["id"]: r for r in rules + FILE_RULES}
+    by_id = {r["id"]: r for r in rules + FILE_RULES + [AUTHOR_RULE]}
     errors = sum(
         len(v) for k, v in findings.items() if by_id[k]["severity"] == ERROR
     )
     warns = sum(len(v) for k, v in findings.items() if by_id[k]["severity"] == WARN)
 
     if not quiet:
-        for rule in rules + FILE_RULES:
+        for rule in rules + FILE_RULES + [AUTHOR_RULE]:
             hits = findings.get(rule["id"])
             if not hits:
                 continue
