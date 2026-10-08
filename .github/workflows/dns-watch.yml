@@ -1,0 +1,82 @@
+name: DNS bekçisi
+
+# suuapp.com'un DNS kayıtları repoda değil, yalnızca inetmar panelinde duruyor
+# (NS: ns3/ns4.inetmar.net). 2026-10-01'de zone boşaldı; site, www ve Claude
+# bağlantısı (mcp) "bu siteye ulaşılamıyor" verdi ve kimse fark etmedi. Davet
+# linki (davet) o gün geri girilmedi, listede de yoktu → 10-04'e kadar ölü. Bu iş
+# 30 dakikada bir kayıtları public DNS'e sorar ve siteyi açar; bir şey eksikse
+# iş kırmızıya döner, GitHub e-posta atar. Kayıtlar kaybolursa panele girilecek
+# değerler README → "DNS Kayıtları" bölümünde — ikisi birlikte güncellenmeli.
+
+on:
+  schedule:
+    - cron: "7,37 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: DNS kayıtları ve site
+        shell: bash
+        run: |
+          set -u
+          command -v dig >/dev/null || sudo apt-get install -y -qq dnsutils
+          RESOLVERS="8.8.8.8 1.1.1.1"
+          fail=0
+
+          # Beklenen değer resolver'lardan herhangi birinde görünürse geçer.
+          # Tek resolver'ın önbellek gecikmesi alarm üretmesin; zone gerçekten
+          # boşaldığında ikisi de kaybeder.
+          has() {  # has <ad> <tip> <beklenen> [deneme]
+            local n=${4:-3} i r
+            for ((i = 1; i <= n; i++)); do
+              for r in $RESOLVERS; do
+                dig +short +time=3 +tries=1 "$1" "$2" @"$r" | grep -qF -- "$3" && return 0
+              done
+              ((i < n)) && sleep 20
+            done
+            return 1
+          }
+
+          check() {  # check <ad> <tip> <beklenen>
+            if has "$1" "$2" "$3"; then
+              echo "ok    $1 $2 $3"
+            else
+              echo "::error::$1 $2 kaydında '$3' yok"
+              fail=1
+            fi
+          }
+
+          for ip in 185.199.108.153 185.199.109.153 185.199.110.153 185.199.111.153; do
+            check suuapp.com A "$ip"
+          done
+          check www.suuapp.com CNAME yafurkan.github.io.
+          check mcp.suuapp.com CNAME ghs.googlehosted.com.
+          check davet.suuapp.com CNAME suu-invite.web.app.
+          check _dmarc.suuapp.com TXT "v=DMARC1"
+
+          # Resend (hediye kod e-postaları). 10-01'de silindi, panel yine de
+          # "Verified" gösterdi; 10-07'de geri girildi. Eksikse site çalışır ama
+          # e-postalar DKIM'siz gider (spam/ret). DKIM'de anahtarın kendine özgü
+          # kısmı aranır ki yanlış anahtar da yakalansın.
+          check resend._domainkey.suuapp.com TXT "p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDkXRIeJJkpxX9P"
+          check send.suuapp.com MX feedback-smtp.ap-northeast-1.amazonses.com.
+          check send.suuapp.com TXT "v=spf1 include:amazonses.com"
+
+          for url in https://suuapp.com/ \
+                     https://mcp.suuapp.com/.well-known/oauth-protected-resource \
+                     https://davet.suuapp.com/.well-known/apple-app-site-association; do
+            if curl -fsS -o /dev/null --retry 3 --retry-delay 20 --retry-all-errors --max-time 30 "$url"; then
+              echo "ok    $url"
+            else
+              echo "::error::$url açılmıyor"
+              fail=1
+            fi
+          done
+
+          exit $fail

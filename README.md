@@ -381,3 +381,53 @@ GitHub Pages'i manuel yeniden etkinleştirmek için:
 export GITHUB_TOKEN=ghp_...
 ./scripts/enable-pages.sh
 ```
+
+## DNS Kayıtları
+
+Alan adı Nics Telekom'da, DNS **inetmar** panelinde (`ns3/ns4.inetmar.net`).
+Kayıtlar yalnızca orada duruyor. 2026-10-01'de zone boşaldı ve site, www ve
+Claude bağlantısı birlikte düştü. Kayıtlar kaybolursa panele girilecek liste
+(isim alanına yalnızca alt kısım yazılır, `@` = boş):
+
+| İsim | Tip | İçerik | Ne için |
+|---|---|---|---|
+| @ | A | 185.199.108.153 | GitHub Pages |
+| @ | A | 185.199.109.153 | GitHub Pages |
+| @ | A | 185.199.110.153 | GitHub Pages |
+| @ | A | 185.199.111.153 | GitHub Pages |
+| www | CNAME | yafurkan.github.io | www → suuapp.com |
+| mcp | CNAME | ghs.googlehosted.com | Suu for Claude (Cloud Run `suu-mcp-server`, europe-west1) |
+| davet | CNAME | suu-invite.web.app | Arkadaş davet linki — Firebase Hosting `suu-invite` (newsuu `firebase/hosting-invite/`) |
+| _dmarc | TXT | `v=DMARC1; p=none;` | E-posta politikası |
+| resend._domainkey | TXT | aşağıdaki DKIM değeri | Hediye kod e-postası (DKIM) |
+| send | MX (öncelik 10) | feedback-smtp.ap-northeast-1.amazonses.com | Resend geri dönüş (Tokyo bölgesi) |
+| send | TXT | `v=spf1 include:amazonses.com ~all` | Resend SPF |
+
+DKIM değeri (tek satır, Resend → Domains → suuapp.com ile aynı; herkese açık
+anahtar, sır değil):
+
+```
+p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDkXRIeJJkpxX9PuCzSpvMsMoW/oJMLHAxdklOh9kUx+vwSUNR80uM0zE/YLUo4Awz4MScRSBd4CcZPs/bgVpnQC2w/F0lci2Wykv5D7vBgxYLNnQpTj/dfM+AXL23jVHVZaYa/akn/CtwzYOSAohHYmAi1X3qLBGkhM3MuIIGZLwIDAQAB
+```
+
+⚠️ Resend panelindeki **"Verified" yazısı kayıtların DNS'te olduğunu
+göstermez** — 10-01'den 10-07'ye kadar DKIM ve MX silikken panel "Verified"
+gösterdi. Gerçeği `dig resend._domainkey.suuapp.com TXT @ns3.inetmar.net`
+söyler. Resend alan adı silinip yeniden eklenirse DKIM anahtarı değişir;
+bu tabloyu ve bekçiyi güncelle.
+
+Apex'te MX kaydı bilerek yok: suuapp.com gelen e-posta almıyor.
+
+**Bekçi:** `.github/workflows/dns-watch.yml` bu tablodaki her kaydı
+8.8.8.8 ve 1.1.1.1'e sorar, suuapp.com'u, mcp'yi ve davet linkinin AASA
+dosyasını açar; eksik varsa iş kırmızıya döner ve GitHub e-posta atar.
+Zamanlama 30 dakikada bir yazılı ama GitHub pratikte birkaç saatte bir
+koşturuyor. Elle çalıştırmak için:
+`gh workflow run dns-watch.yml`. Tablo değişirse workflow'daki beklenen
+değerler de değişmeli.
+
+**Kayıtları geri girdikten sonra** resolver'lar "kayıt yok" cevabını 1 saate
+kadar önbellekte tutar (SOA minimum 3600). Kaynağı doğrudan sorarak kontrol
+et: `dig suuapp.com A @ns3.inetmar.net`. inetmar art arda gelen sorgulara
+REFUSED döner — bu zone'un yok olduğu anlamına gelmez, birkaç saniye
+arayla tekrar sor.
