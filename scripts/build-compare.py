@@ -153,15 +153,14 @@ def display_shows(lang: str, text: str, iso: str) -> bool:
 
 
 def og_image_url(lang: str, page: dict, kind: str) -> str:
-    """Açık `og_image` > (rehberde) diskte üretilmiş görsel > genel görsel.
-    Karşılaştırma sayfaları açık alan verilmedikçe genel görselde kalır —
-    mevcut 45 sayfanın çıktısı değişmesin."""
+    """Açık `og_image` > diskte üretilmiş görsel (generate-og.py) > genel görsel.
+    2026-10-08'den beri karşılaştırma sayfaları da kendi görselini kullanıyor;
+    görsel yoksa genel görsele düşülür."""
     if page.get("og_image"):
         return BASE + page["og_image"]
-    if kind == "guide":
-        name = (page["slug"] if lang == DEFAULT else f"{lang}-{page['slug']}") + ".png"
-        if (OG_DIR / name).exists():
-            return f"{BASE}/assets/og/blog/{name}"
+    name = (page["slug"] if lang == DEFAULT else f"{lang}-{page['slug']}") + ".png"
+    if (OG_DIR / name).exists():
+        return f"{BASE}/assets/og/blog/{name}"
     return DEFAULT_OG
 
 

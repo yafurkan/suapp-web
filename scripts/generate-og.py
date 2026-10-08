@@ -35,6 +35,7 @@ Notlar:
 from __future__ import annotations
 
 import argparse
+import html
 import os
 import re
 import sys
@@ -313,7 +314,12 @@ def extract_title(html_path: Path) -> str | None:
     m = re.search(r"<h1[^>]*>(.*?)</h1>", content, re.DOTALL)
     if not m:
         return None
-    return re.sub(r"<[^>]+>", "", m.group(1)).strip()
+    # <br> satır sonu → boşluk ("Mode:<br>Track" → "Mode: Track"); diğer
+    # etiketler sessizce silinir. Varlıklar (&#39; &amp;) çözülür — üretilmiş
+    # sayfalarda Jinja autoescape başlığı kaçışlı basıyor.
+    text = re.sub(r"<br\s*/?>", " ", m.group(1), flags=re.I)
+    text = html.unescape(re.sub(r"<[^>]+>", "", text))
+    return re.sub(r"\s+", " ", text).strip()
 
 
 def og_path_for(html_path: Path) -> Path:
