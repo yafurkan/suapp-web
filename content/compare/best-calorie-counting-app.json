@@ -1,7 +1,7 @@
 {
   "_note": "KALORİ SÜTUNU GİRİŞ SAYFASI. 2026-08-24'te elle yazılmış HTML'den boru hattına taşındı. Taşımada düzeltilen canlı yanlış iddialar: '5.0 App Store' ve '4.9★ GP · 5.0★ AS' (rating_app_store null — teyit edilmemiş), 'EN / TR / RU / AR' (7 dil) ve dil listesinde tekrarlanan 'DE, IT, HI, DE, IT, HI' hatası. Eklenen rakip varlıkları: MacroFactor, Lose It!, Noom — üçü de suu-facts competitors listesinde ama sitede hiç/az geçiyordu; 'X alternatifi' sorgularında anahtar bunlar. Hedef sorgular: best calorie counting app, best macro tracking app, MyFitnessPal alternative, best free calorie counter.",
   "published": "2026-07-07",
-  "modified": "2026-09-29",
+  "modified": "2026-10-06",
   "pages": {
     "en": {
       "slug": "best-calorie-counting-app",
@@ -16,7 +16,7 @@
         "og_title": "The Best Calorie Counting App in 2026",
         "og_description": "MyFitnessPal, Yazio, Lifesum, Cronometer, MacroFactor and Suu compared — on logging speed, database coverage and what the free tier actually gives you."
       },
-      "answer": "There is no single best calorie counter — the right one depends on what slows you down. If you eat out often and need the biggest branded-food database, MyFitnessPal is still unmatched. If you need vitamin and mineral precision, Cronometer. If you want your calorie target recalculated from your real weight trend, MacroFactor. If you want recipes and fasting, Yazio. And if the thing that stops you logging is the logging itself, Suu is the fastest of these to get a meal in — photograph it or say it out loud — and the only one that also tracks water and GPS workouts in the same app.",
+      "answer": "There is no single best calorie counter — the right one depends on what slows you down. If you eat out often and need the biggest branded-food database, MyFitnessPal is still unmatched. If you need vitamin and mineral precision, Cronometer. If you want your calorie target recalculated from your real weight trend, MacroFactor. If you want recipes and fasting, Yazio. And if the thing that stops you logging is the logging itself, Suu is the fastest of these to get a meal in — photograph it or say it out loud — and it also tracks water and GPS workouts in the same app.",
       "disclosure": "This comparison was written by the Suu team, so you are reading a biased source. To offset that we have been explicit about where each competitor beats Suu — MyFitnessPal's database and Cronometer's micronutrient depth are both genuinely out of Suu's reach. Competitor features, prices and free-tier limits reflect publicly available information as of August 2026 and change frequently.",
       "ranked": {
         "head": "The best calorie counting apps in 2026",
@@ -101,8 +101,8 @@
             "label": "Photo calorie analysis",
             "cells": [
               {
-                "text": "✓ Premium",
-                "cls": "yes"
+                "text": "Premium",
+                "cls": "soon"
               },
               {
                 "text": "Premium",
@@ -151,8 +151,8 @@
             "label": "Barcode scanner",
             "cells": [
               {
-                "text": "✓",
-                "cls": "yes"
+                "text": "✗",
+                "cls": "no"
               },
               {
                 "text": "Premium",
@@ -581,11 +581,11 @@
         },
         {
           "q": "What is the best free calorie counting app?",
-          "a": "Suu and Cronometer have the most usable free tiers. Suu's free tier includes calorie and macro tracking, water and sparkling water logging (other drinks by telling Suu AI), GPS workout recording and three voice or text AI analyses a day; photo analysis and the full 91-drink list are Premium. Cronometer's free tier gives strong micronutrient tracking. MyFitnessPal, Yazio and Lifesum all restrict significant features to Premium, and MyFitnessPal moved barcode scanning behind its paywall."
+          "a": "Suu and Cronometer have the most usable free tiers. Suu's free tier includes calorie and macro tracking, water and sparkling water logging, GPS workout recording and three voice or text AI analyses a day (other drinks can be logged by telling Suu AI, within the same daily quota); photo analysis and the full 91-drink list are Premium. Cronometer's free tier gives strong micronutrient tracking. MyFitnessPal, Yazio and Lifesum all restrict significant features to Premium, and MyFitnessPal moved barcode scanning behind its paywall."
         },
         {
           "q": "What is the best MyFitnessPal alternative?",
-          "a": "It depends which part of MyFitnessPal you are replacing. For the database, nothing matches it — Lose It! is the closest with a friendlier free tier. For micronutrients, Cronometer. For an adaptive target, MacroFactor. For faster logging and to stop paying for barcode scanning, Suu, which adds water and exercise tracking that MyFitnessPal does not do in the same depth."
+          "a": "It depends which part of MyFitnessPal you are replacing. For the database, nothing matches it — Lose It! is the closest with a friendlier free tier. For micronutrients, Cronometer. For an adaptive target, MacroFactor. For faster logging, Suu, which adds water and exercise tracking that MyFitnessPal does not do in the same depth — though it has no barcode scanner."
         },
         {
           "q": "Can an app count calories from a photo accurately?",
@@ -593,7 +593,7 @@
         },
         {
           "q": "Which calorie app also tracks water and exercise?",
-          "a": "Suu is the only app in this comparison that does all three as a connected system: calories from photo or voice, hydration across 91 beverages with its own hydration factor, and GPS workout recording across about 50 activities. A logged run raises the water goal for estimated sweat loss and a high-sodium meal adds the water digestion requires. MyFitnessPal records exercise but treats water as a plain counter."
+          "a": "Suu does all three as one connected system: calories from photo or voice, hydration across 91 beverages with its own hydration factor, and GPS workout recording across about 50 activities; photo analysis and the full 91-drink list are Premium. A logged run raises the water goal for estimated sweat loss and a high-sodium meal adds the water digestion requires. MyFitnessPal records exercise but treats water as a plain counter."
         },
         {
           "q": "Which calorie counting app supports Arabic?",
@@ -655,7 +655,7 @@
         "og_title": "Der beste Kalorienzähler 2026",
         "og_description": "Yazio, FDDB, MyFitnessPal, Lifesum, Cronometer und Suu — verglichen nach Eingabetempo, Datenbank und dem, was die Gratis-Version wirklich kann."
       },
-      "answer": "Es gibt keinen einzelnen besten Kalorienzähler — entscheidend ist, woran du bisher gescheitert bist. Für deutsche Produkte und Markenartikel ist FDDB die genaueste Datenbank, für Rezepte und Intervallfasten Yazio, für internationale Restaurantketten MyFitnessPal, für Vitamine und Mineralstoffe Cronometer. Wenn das Problem aber das Eintragen selbst ist, ist Suu die schnellste dieser Apps — Mahlzeit fotografieren oder einsprechen — und die einzige, die zusätzlich Trinkmenge und GPS-Workouts in derselben App führt.",
+      "answer": "Es gibt keinen einzelnen besten Kalorienzähler — entscheidend ist, woran du bisher gescheitert bist. Für deutsche Produkte und Markenartikel ist FDDB die genaueste Datenbank, für Rezepte und Intervallfasten Yazio, für internationale Restaurantketten MyFitnessPal, für Vitamine und Mineralstoffe Cronometer. Wenn das Problem aber das Eintragen selbst ist, ist Suu die schnellste dieser Apps — Mahlzeit fotografieren oder einsprechen — und führt zusätzlich Trinkmenge und GPS-Workouts in derselben App.",
       "disclosure": "Diesen Vergleich schreibt das Suu-Team, du liest also eine parteiische Quelle. Zum Ausgleich benennen wir klar, wo die Konkurrenz besser ist: FDDBs deutsche Produktdatenbank und Cronometers Mikronährstoff-Tiefe liegen beide außerhalb dessen, was Suu leistet. Funktionen, Preise und Gratis-Grenzen entsprechen dem öffentlich einsehbaren Stand von August 2026.",
       "ranked": {
         "head": "Die besten Kalorienzähler-Apps 2026",
@@ -740,8 +740,8 @@
             "label": "Kalorien aus dem Foto",
             "cells": [
               {
-                "text": "✓ Premium",
-                "cls": "yes"
+                "text": "Premium",
+                "cls": "soon"
               },
               {
                 "text": "Begrenzt",
@@ -790,8 +790,8 @@
             "label": "Barcode-Scanner",
             "cells": [
               {
-                "text": "✓",
-                "cls": "yes"
+                "text": "✗",
+                "cls": "no"
               },
               {
                 "text": "✓",
@@ -1219,7 +1219,7 @@
         },
         {
           "q": "Welche Kalorien-App ist wirklich kostenlos?",
-          "a": "Suu, FDDB und Cronometer haben brauchbare Gratis-Stufen. Bei Suu sind Kalorien- und Makroerfassung, das Eintragen von Wasser und Mineralwasser (andere Getränke sagst du Suu AI), GPS-Workouts und drei KI-Analysen pro Tag per Sprache oder Text kostenlos; Fotoanalyse und die vollständige Liste mit 91 Getränken gehören zu Premium. FDDB lässt sich gratis als Datenbank nutzen, Cronometer bietet gratis starke Mikronährstoffe. Yazio, Lifesum und MyFitnessPal halten wesentliche Funktionen zurück — bei MyFitnessPal inzwischen auch den Barcode-Scanner."
+          "a": "Suu, FDDB und Cronometer haben brauchbare Gratis-Stufen. Bei Suu sind Kalorien- und Makroerfassung, das Eintragen von Wasser und Mineralwasser, GPS-Workouts und drei KI-Analysen pro Tag per Sprache oder Text kostenlos (andere Getränke trägst du ein, indem du sie Suu AI sagst – im selben Tageskontingent); Fotoanalyse und die vollständige Liste mit 91 Getränken gehören zu Premium. FDDB lässt sich gratis als Datenbank nutzen, Cronometer bietet gratis starke Mikronährstoffe. Yazio, Lifesum und MyFitnessPal halten wesentliche Funktionen zurück — bei MyFitnessPal inzwischen auch den Barcode-Scanner."
         },
         {
           "q": "Was ist die beste Yazio-Alternative?",
@@ -1231,11 +1231,11 @@
         },
         {
           "q": "Welche Kalorien-App erfasst auch Trinken und Sport?",
-          "a": "Suu ist die einzige App in diesem Vergleich, die alle drei als verbundenes System führt: Kalorien per Foto oder Sprache, Trinkmenge über 91 Getränke mit echtem Dehydrationsfaktor und GPS-Aufzeichnung für rund 50 Sportarten. Ein eingetragener Lauf hebt das Trinkziel um den geschätzten Schweißverlust, eine salzreiche Mahlzeit um das Wasser, das die Verdauung braucht. MyFitnessPal erfasst Sport, behandelt Trinken aber als reinen Zähler."
+          "a": "Suu führt alle drei als verbundenes System: Kalorien per Foto oder Sprache, Trinkmenge über 91 Getränke mit echtem Dehydrationsfaktor und GPS-Aufzeichnung für rund 50 Sportarten; Fotoanalyse und die vollständige Liste mit 91 Getränken gehören zu Premium. Ein eingetragener Lauf hebt das Trinkziel um den geschätzten Schweißverlust, eine salzreiche Mahlzeit um das Wasser, das die Verdauung braucht. MyFitnessPal erfasst Sport, behandelt Trinken aber als reinen Zähler."
         },
         {
           "q": "Lohnt sich MyFitnessPal Premium noch, seit der Barcode-Scanner kostet?",
-          "a": "Wenn du überwiegend Verpacktes einkaufst, ist der Scanner der Kern der App, und ohne ihn verliert die Gratis-Version viel von ihrem Sinn. In Deutschland lohnt sich vorher der Blick auf FDDB, dessen Produktabdeckung hier oft besser ist, und auf Apps mit kostenlosem Barcode-Scan wie Lose It! oder Suu."
+          "a": "Wenn du überwiegend Verpacktes einkaufst, ist der Scanner der Kern der App, und ohne ihn verliert die Gratis-Version viel von ihrem Sinn. In Deutschland lohnt sich vorher der Blick auf FDDB, dessen Produktabdeckung hier oft besser ist, und auf Lose It!, wo der Barcode-Scan kostenlos ist."
         },
         {
           "q": "Funktioniert Suu auf der Apple Watch, mit Siri und mit Widgets?",
@@ -1293,7 +1293,7 @@
         "og_title": "La migliore app conta calorie del 2026",
         "og_description": "MyFitnessPal, Yazio, FatSecret, Lifesum, Cronometer e Suu — su velocità di inserimento, copertura del database e cosa dà davvero il piano gratuito."
       },
-      "answer": "Non esiste una sola migliore app conta calorie: dipende da cosa ti fa smettere. Se mangi spesso fuori e ti serve il database più grande di prodotti di marca, MyFitnessPal resta imbattuto. Se cerchi copertura dei prodotti italiani e un piano gratuito generoso, FatSecret. Se vuoi ricette e digiuno intermittente, Yazio. Se ti servono vitamine e minerali, Cronometer. E se il problema è proprio registrare i pasti, Suu è la più veloce del gruppo — fotografi o detti — ed è l'unica che traccia anche acqua e allenamenti GPS nella stessa app.",
+      "answer": "Non esiste una sola migliore app conta calorie: dipende da cosa ti fa smettere. Se mangi spesso fuori e ti serve il database più grande di prodotti di marca, MyFitnessPal resta imbattuto. Se cerchi copertura dei prodotti italiani e un piano gratuito generoso, FatSecret. Se vuoi ricette e digiuno intermittente, Yazio. Se ti servono vitamine e minerali, Cronometer. E se il problema è proprio registrare i pasti, Suu è la più veloce del gruppo — fotografi o detti — e traccia anche acqua e allenamenti GPS nella stessa app.",
       "disclosure": "Questo confronto è scritto dal team di Suu, quindi stai leggendo una fonte di parte. Per compensare, diciamo chiaramente dove i concorrenti sono migliori: il database di MyFitnessPal e la profondità sui micronutrienti di Cronometer sono entrambi fuori dalla portata di Suu. Funzioni, prezzi e limiti gratuiti riflettono le informazioni pubbliche di agosto 2026 e cambiano spesso.",
       "ranked": {
         "head": "Le migliori app conta calorie del 2026",
@@ -1378,8 +1378,8 @@
             "label": "Calorie da foto",
             "cells": [
               {
-                "text": "✓ Premium",
-                "cls": "yes"
+                "text": "Premium",
+                "cls": "soon"
               },
               {
                 "text": "Premium",
@@ -1428,8 +1428,8 @@
             "label": "Scanner codice a barre",
             "cells": [
               {
-                "text": "✓",
-                "cls": "yes"
+                "text": "✗",
+                "cls": "no"
               },
               {
                 "text": "Premium",
@@ -1810,7 +1810,7 @@
           ],
           "list": [
             "<strong>\"Quello che mangio non c'è mai.\"</strong> → FatSecret per i prodotti italiani, MyFitnessPal per marche internazionali e ristoranti.",
-            "<strong>\"Inserire i pasti richiede troppo tempo.\"</strong> → Suu. Una foto o una frase detta a voce è l'inserimento più rapido del gruppo; il piano gratuito include tre analisi AI al giorno a voce o per iscritto, mentre la foto fa parte di Premium.",
+            "<strong>\"Inserire i pasti richiede troppo tempo.\"</strong> → Suu. Una foto o una frase detta a voce è l'inserimento più rapido del gruppo; il piano gratuito include tre analisi AI al giorno a voce o per iscritto, mentre l'analisi da foto fa parte di Premium.",
             "<strong>\"Dopo un mese l'obiettivo non funzionava più.\"</strong> → MacroFactor, che deduce il dispendio reale dall'andamento del peso invece che da una formula iniziale.",
             "<strong>\"Mi servono ferro e B12, non solo le calorie.\"</strong> → Cronometer. Qui non c'è niente che le si avvicini.",
             "<strong>\"Mi serve qualcosa da cucinare e una finestra di digiuno.\"</strong> → Yazio, o Melarossa se preferisci un piano mediterraneo già pronto."
@@ -1857,11 +1857,11 @@
         },
         {
           "q": "Qual è la migliore app conta calorie gratis?",
-          "a": "FatSecret, Suu e Cronometer hanno i piani gratuiti più utilizzabili. FatSecret include barcode, diario e macro senza paywall. Il piano gratuito di Suu comprende calorie e macro, la registrazione di acqua e acqua frizzante (le altre bevande si registrano dicendole a Suu AI), gli allenamenti GPS e tre analisi AI al giorno a voce o per iscritto; l'analisi da foto e l'elenco completo di 91 bevande fanno parte di Premium. Cronometer offre gratis un ottimo tracciamento dei micronutrienti. MyFitnessPal, Yazio e Lifesum riservano funzioni importanti al Premium."
+          "a": "FatSecret, Suu e Cronometer hanno i piani gratuiti più utilizzabili. FatSecret include barcode, diario e macro senza paywall. Il piano gratuito di Suu comprende calorie e macro, la registrazione di acqua e acqua frizzante, gli allenamenti GPS e tre analisi AI al giorno a voce o per iscritto (le altre bevande si registrano dicendole a Suu AI, entro la stessa quota giornaliera); l'analisi da foto e l'elenco completo di 91 bevande fanno parte di Premium. Cronometer offre gratis un ottimo tracciamento dei micronutrienti. MyFitnessPal, Yazio e Lifesum riservano funzioni importanti al Premium."
         },
         {
           "q": "Qual è la migliore alternativa a MyFitnessPal?",
-          "a": "Dipende da quale parte di MyFitnessPal stai sostituendo. Per il database italiano, FatSecret. Per i micronutrienti, Cronometer. Per un obiettivo che si adatta, MacroFactor. Per smettere di pagare la scansione del codice a barre e velocizzare l'inserimento, Suu, che aggiunge idratazione e allenamenti che MyFitnessPal non copre con la stessa profondità."
+          "a": "Dipende da quale parte di MyFitnessPal stai sostituendo. Per il database italiano, FatSecret. Per i micronutrienti, Cronometer. Per un obiettivo che si adatta, MacroFactor. Per velocizzare l'inserimento, Suu, che aggiunge idratazione e allenamenti che MyFitnessPal non copre con la stessa profondità, ma non ha uno scanner per codici a barre."
         },
         {
           "q": "Un'app può contare le calorie da una foto in modo affidabile?",
@@ -1869,11 +1869,11 @@
         },
         {
           "q": "Quale app conta calorie traccia anche acqua e allenamento?",
-          "a": "Suu è l'unica app di questo confronto che fa tutti e tre come sistema collegato: calorie da foto o voce, idratazione su 91 bevande con un vero fattore di disidratazione e registrazione GPS su circa 50 attività. Una corsa registrata alza l'obiettivo d'acqua per il sudore stimato e un pasto salato aggiunge l'acqua che serve alla digestione. MyFitnessPal registra l'attività fisica ma tratta l'acqua come un semplice contatore."
+          "a": "Suu gestisce tutti e tre come un sistema collegato: calorie da foto o voce, idratazione su 91 bevande con un vero fattore di disidratazione e registrazione GPS su circa 50 attività; l'analisi da foto e l'elenco completo di 91 bevande fanno parte di Premium. Una corsa registrata alza l'obiettivo d'acqua per il sudore stimato e un pasto salato aggiunge l'acqua che serve alla digestione. MyFitnessPal registra l'attività fisica ma tratta l'acqua come un semplice contatore."
         },
         {
           "q": "Ha ancora senso MyFitnessPal Premium ora che il barcode è a pagamento?",
-          "a": "Se compri soprattutto prodotti confezionati, lo scanner è il cuore dell'app e senza di esso il piano gratuito perde gran parte del senso. In Italia conviene prima guardare FatSecret, che offre la scansione gratis con buona copertura dei prodotti locali, e le app con barcode gratuito come Lose It! o Suu."
+          "a": "Se compri soprattutto prodotti confezionati, lo scanner è il cuore dell'app e senza di esso il piano gratuito perde gran parte del senso. In Italia conviene prima guardare FatSecret, che offre la scansione gratis con buona copertura dei prodotti locali, e Lose It!, anch'essa con barcode gratuito."
         },
         {
           "q": "Suu funziona su Apple Watch, con Siri e con i widget?",
@@ -1931,8 +1931,8 @@
         "og_title": "Найкращий лічильник калорій у 2026",
         "og_description": "MyFitnessPal, Yazio, FatSecret, Lifesum, Cronometer і Suu — за швидкістю запису, охопленням бази й тим, що справді дає безкоштовний тариф."
       },
-      "answer": "Єдиного найкращого лічильника калорій немає — усе залежить від того, що саме тебе зупиняє. Якщо часто їси поза домом і потрібна найбільша база брендових продуктів, MyFitnessPal досі поза конкуренцією. Якщо хочеш найщедріший безкоштовний тариф — FatSecret. Якщо потрібні рецепти й інтервальне голодування — Yazio. Якщо вітаміни й мінерали — Cronometer. А якщо проблема саме в записуванні страв, Suu найшвидший із цих: сфотографуй або продиктуй — і це єдиний, що також веде воду й тренування з GPS у тому ж застосунку.",
-      "disclosure": "Це порівняння написала команда Suu, тож ти читаєш небезсторонній джерело. Щоб це врівноважити, ми прямо називаємо, де конкуренти кращі: база MyFitnessPal і глибина Cronometer щодо мікронутрієнтів обидві поза межами того, що дає Suu. Функції, ціни й обмеження безкоштовних тарифів відповідають загальнодоступним даним на серпень 2026 року.",
+      "answer": "Єдиного найкращого лічильника калорій немає — усе залежить від того, що саме тебе зупиняє. Якщо часто їси поза домом і потрібна найбільша база брендових продуктів, MyFitnessPal досі поза конкуренцією. Якщо хочеш найщедріший безкоштовний тариф — FatSecret. Якщо потрібні рецепти й інтервальне голодування — Yazio. Якщо вітаміни й мінерали — Cronometer. А якщо проблема саме в записуванні страв, Suu найшвидший із цих: сфотографуй або продиктуй — і він також веде воду й тренування з GPS у тому ж застосунку.",
+      "disclosure": "Це порівняння написала команда Suu, тож ти читаєш небезстороннє джерело. Щоб це врівноважити, ми прямо називаємо, де конкуренти кращі: база MyFitnessPal і глибина Cronometer щодо мікронутрієнтів обидві поза межами того, що дає Suu. Функції, ціни й обмеження безкоштовних тарифів відповідають загальнодоступним даним на серпень 2026 року.",
       "ranked": {
         "head": "Найкращі застосунки для підрахунку калорій у 2026",
         "lead": "За тим, для кого вони насправді зроблені. Калорії та макроси правильно рахують усі; різниця — у швидкості запису, у щедрості безкоштовного тарифу і в тому, що ще застосунок знає про твій день.",
@@ -2016,8 +2016,8 @@
             "label": "Калорії за фотографією",
             "cells": [
               {
-                "text": "✓ Premium",
-                "cls": "yes"
+                "text": "Premium",
+                "cls": "soon"
               },
               {
                 "text": "Premium",
@@ -2066,8 +2066,8 @@
             "label": "Сканер штрихкодів",
             "cells": [
               {
-                "text": "✓",
-                "cls": "yes"
+                "text": "✗",
+                "cls": "no"
               },
               {
                 "text": "Premium",
@@ -2443,7 +2443,7 @@
         {
           "head": "Справжнє питання — що змушує тебе кинути",
           "body": [
-            "Будь-який застосунок зі списку дасть тобі правильне число калорій, якщо ти правильно внесеш їжу. Провал ніколи не в арифметиці — він у тертi. Люди кидають, бо вечеря у вівторок займає чотири хвилини на введення, бо з'їденого немає в базі, або бо через два тижні норма перестала збігатися й ніщо її не перерахувало.",
+            "Будь-який застосунок зі списку дасть тобі правильне число калорій, якщо ти правильно внесеш їжу. Провал ніколи не в арифметиці — він у терті. Люди кидають, бо вечеря у вівторок займає чотири хвилини на введення, бо з'їденого немає в базі, або бо через два тижні норма перестала збігатися й ніщо її не перерахувало.",
             "Обирай за власним вузьким місцем, а не за переліком функцій:"
           ],
           "list": [
@@ -2495,11 +2495,11 @@
         },
         {
           "q": "Який безкоштовний застосунок для підрахунку калорій найкращий?",
-          "a": "Найпридатніші безкоштовні тарифи в FatSecret, Suu і Cronometer. FatSecret безкоштовно дає штрихкоди, щоденник і макроси. Безкоштовний тариф Suu включає калорії та макроси, запис води й мінеральної води (решту напоїв — сказавши їх Suu AI), тренування з GPS і три аналізи ШІ на день голосом або текстом; аналіз за фото й повний список із 91 напою входять у Premium. Cronometer безкоштовно дає сильне відстеження мікронутрієнтів. MyFitnessPal, Yazio і Lifesum тримають важливі функції в Premium."
+          "a": "Найпридатніші безкоштовні тарифи в FatSecret, Suu і Cronometer. FatSecret безкоштовно дає штрихкоди, щоденник і макроси. Безкоштовний тариф Suu включає калорії та макроси, запис води й мінеральної води, тренування з GPS і три аналізи ШІ на день голосом або текстом (інші напої можна записати, сказавши про них Suu AI, у межах того самого денного ліміту); аналіз за фото й повний список із 91 напою входять у Premium. Cronometer безкоштовно дає сильне відстеження мікронутрієнтів. MyFitnessPal, Yazio і Lifesum тримають важливі функції в Premium."
         },
         {
           "q": "Яка найкраща альтернатива MyFitnessPal?",
-          "a": "Залежить від того, яку саме частину MyFitnessPal ти заміняєш. Для бази — FatSecret або Lose It!. Для мікронутрієнтів — Cronometer. Для норми, що підлаштовується, — MacroFactor. Щоб не платити за сканування штрихкоду й пришвидшити запис — Suu, який додає воду й тренування, чого MyFitnessPal з такою глибиною не робить."
+          "a": "Залежить від того, яку саме частину MyFitnessPal ти заміняєш. Для бази — FatSecret або Lose It!. Для мікронутрієнтів — Cronometer. Для норми, що підлаштовується, — MacroFactor. Щоб пришвидшити запис — Suu, який додає воду й тренування, чого MyFitnessPal з такою глибиною не робить; щоправда, сканера штрихкодів у Suu немає."
         },
         {
           "q": "Чи може застосунок надійно порахувати калорії за фотографією?",
@@ -2507,7 +2507,7 @@
         },
         {
           "q": "Який лічильник калорій веде ще й воду та тренування?",
-          "a": "Suu — єдиний застосунок у цьому порівнянні, що робить усі три як пов'язану систему: калорії з фото або голосом, гідратація по 91 напою зі справжнім коефіцієнтом зневоднення й запис із GPS на близько 50 видів активності. Записана пробіжка піднімає норму води на оцінену втрату з потом, а солона страва додає воду на травлення. MyFitnessPal фіксує фізичну активність, але воду веде як простий лічильник."
+          "a": "Suu поєднує всі три в одну пов'язану систему: калорії з фото або голосом, гідратація по 91 напою зі справжнім коефіцієнтом зневоднення й запис із GPS на близько 50 видів активності; аналіз за фото й повний список із 91 напою входять у Premium. Записана пробіжка піднімає норму води на оцінену втрату з потом, а солона страва додає воду на травлення. MyFitnessPal фіксує фізичну активність, але воду веде як простий лічильник."
         },
         {
           "q": "Чи є Suu українською мовою?",
