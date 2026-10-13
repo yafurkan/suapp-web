@@ -108,8 +108,11 @@ def main() -> int:
         if only and code != only:
             continue
         index = (ROOT / index_name).read_text(encoding="utf-8")
+        # Yönlendirme sayfaları (redirect-cannibals.py) yazı değil — kartları
+        # olmamalı; olursa site kendi yönlendirmesine bağlantı verir.
         missing = [p.name for p in sorted((ROOT / folder).glob("*.html"))
-                   if p.name not in index]
+                   if p.name not in index
+                   and 'http-equiv="refresh"' not in p.read_text(encoding="utf-8")]
         if missing:
             orphans += len(missing)
             print(f"  {index_name}: {', '.join(missing[:5])}"

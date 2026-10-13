@@ -50,6 +50,11 @@ MONTHS = months()
 def page_meta(rel_path: str) -> tuple[str, str]:
     """Girişin başlığını ve açıklamasını sayfanın KENDİSİNDEN oku."""
     page = (ROOT / rel_path).read_text(encoding="utf-8")
+    if 'http-equiv="refresh"' in page:
+        # Yönlendirme sayfasını merkeze koymak "Yönlendiriliyor — …" başlıklı
+        # kart üretiyordu (karsilastirmalar.html, 2026-10-13'te düzeltildi).
+        sys.exit(f"✗ {rel_path} bir yönlendirme sayfası — content/compare-hub.json'da "
+                 "kanonik hedefini kullanın")
 
     m = re.search(r'<meta property="og:title" content="([^"]+)"', page)
     if m:

@@ -132,6 +132,9 @@ def main() -> int:
             url = f"{BASE}/{prefix}{f.name}"
             if url in existing:
                 continue
+            # Yönlendirme sayfası (redirect-cannibals.py) yazı değildir
+            if 'http-equiv="refresh"' in f.read_text(encoding="utf-8"):
+                continue
             meta = article_meta(f)
             if not meta:
                 print(f"      ! {f.name} — meta okunamadı, atlandı")

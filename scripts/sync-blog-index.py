@@ -66,6 +66,16 @@ def title_of(page: str) -> str:
     return re.sub(r"\s*[|—–]\s*Suu.*$", "", t).strip()
 
 
+def is_redirect_stub(path: Path) -> bool:
+    """redirect-cannibals.py'nin yazdığı yönlendirme sayfası mı?
+
+    Bu sayfalar kanonik hedefe meta-refresh ile yönlenir. İndekste kart
+    olurlarsa site kendi yönlendirmesine iç bağlantı verir; Search Console
+    bunu "Yönlendirmeli sayfa" diye raporlar (2026-10-13).
+    """
+    return 'http-equiv="refresh"' in path.read_text(encoding="utf-8")
+
+
 def topic_of(slug: str, lang: str) -> tuple[str, str, str]:
     labels = TOPIC_LABELS.get(lang, TOPIC_LABELS["en"])
     for pattern, emoji, grad, key in TOPICS:
@@ -132,7 +142,8 @@ def main() -> int:
         index = index_path.read_text(encoding="utf-8")
 
         posts = sorted((ROOT / post_dir).glob("*.html"))
-        missing = [p for p in posts if p.name not in index]
+        missing = [p for p in posts
+                   if p.name not in index and not is_redirect_stub(p)]
         if not missing:
             print(f"  {index_name:14s} ✓ eksik yok")
             continue
