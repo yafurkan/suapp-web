@@ -38,9 +38,9 @@ GENERATED_MARK = "ÜRETİLMİŞ DOSYA"
 # Kaynak küme (elle yazılmış yazı) → bağlanacak rehber kümeleri
 LINKS: dict[str, list[str]] = {
     # zorunlu: yamyamlık sınırları — eski yazı derin cevaba yönlendirir
-    "kalori-acigi": ["neden-kilo-veremiyorum"],
-    "kilo-ve-su": ["neden-kilo-veremiyorum", "gece-atistirmasini-birakmak"],
-    "susuzluk-belirtileri": ["neden-hep-yorgunum"],
+    "kalori-acigi": ["neden-kilo-veremiyorum", "spora-baslayinca-kilo-artisi"],
+    "kilo-ve-su": ["neden-kilo-veremiyorum", "gece-atistirmasini-birakmak", "spora-baslayinca-kilo-artisi"],
+    "susuzluk-belirtileri": ["neden-hep-yorgunum", "ramazanda-spor"],
     # konu komşuları
     "su-ve-uyku-kalitesi": ["neden-hep-yorgunum", "gece-atistirmasini-birakmak"],
     "kahveyi-azaltmak": ["kolayi-birakmak"],
@@ -49,8 +49,11 @@ LINKS: dict[str, list[str]] = {
     "meyve-suyu-vs-su": ["kolayi-birakmak"],
     "su-icme-lig-sistemi": ["spora-usenmek"],
     "_en_water-tracking-gamification": ["spora-usenmek"],
-    "egzersizde-kalori-yakimi": ["spora-usenmek"],
-    "spor-ve-hidrasyon": ["spora-usenmek"],
+    "egzersizde-kalori-yakimi": ["spora-usenmek", "yuruyus-mu-kosu-mu"],
+    "spor-ve-hidrasyon": ["spora-usenmek", "ramazanda-spor"],
+    # 2026-10-13 spor rehberleri: koşu/aktivite yazıları → yürüyüş mü koşu mu
+    "gps-kosu-takibi-kalori-sayaci": ["yuruyus-mu-kosu-mu"],
+    "aktivite-bazli-su-takibi": ["yuruyus-mu-kosu-mu"],
     "fotografla-kalori-sayma": ["kalori-saymak-sikici"],
     "sesli-kalori-girisi": ["kalori-saymak-sikici"],
     "makro-hesaplama": ["kalori-saymak-sikici"],

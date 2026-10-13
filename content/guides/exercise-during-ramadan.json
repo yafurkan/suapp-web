@@ -1,0 +1,1416 @@
+{
+  "_note": "Yapay zekâ sorusu rehberi #9 — 'Ramazan'da spor ne zaman yapılır'. Sınır: oruçluyken antrenman zamanlaması, sıvı ve uyku; genel spor hidrasyonu spor-ve-hidrasyon'da, kalori yakımı egzersizde-kalori-yakimi'nde kalır. Uygulama gerçekleri: suu-facts ramadan (iftar/sahur hatırlatıcısı VAR, plan ayrımı teyitsiz → plan yazılmaz); Akıllı Bildirimler'de Sabah/Akşam saatleri ayarlanır, Aralıklı hatırlatıcılar en sık 2 saatte bir ve gece yarısını geçmez (newsuu reminder_scheduler). Kaynaklar 2026-10-13'te E-utilities ve Aspetar sayfasından doğrulandı.",
+  "kind": "guide",
+  "cluster": "ramazanda-spor",
+  "published": "2026-10-13",
+  "modified": "2026-10-13",
+  "pages": {
+    "tr": {
+      "slug": "ramazanda-spor",
+      "read_minutes": 7,
+      "badge": "🌙 Rehber · Oruçluyken hareket",
+      "h1": "Ramazan'da Spor Ne Zaman Yapılır? İftardan Önce mi, Sonra mı (ve Suu'da Takibi)",
+      "about": [
+        {
+          "name": "Ramazan orucu"
+        },
+        {
+          "name": "Egzersiz zamanlaması"
+        },
+        {
+          "name": "Hidrasyon"
+        }
+      ],
+      "meta": {
+        "title": "Ramazan'da Spor: İftardan Önce mi Sonra mı? | Suu",
+        "description": "Oruçluyken hafif antrenman iftardan hemen önce, ağırlık ve yoğun antrenman iftardan 1–3 saat sonra. İftar–sahur arası su planı, sahur ve uyku önerileri.",
+        "keywords": "ramazanda spor, oruçluyken spor, iftardan önce spor, iftardan sonra spor, oruçluyken koşu, oruçluyken ağırlık antrenmanı, sahurdan sonra spor, teravihten sonra spor, ramazanda spor yapınca kilo verilir mi",
+        "og_title": "Ramazan'da Spor: İftardan Önce mi, Sonra mı?",
+        "og_description": "Hangi antrenman hangi saatte, iftar ile sahur arasında ne kadar su, ilk hafta ne kadar yük? Aspetar'ın Ramazan kılavuzu ve araştırmalarla."
+      },
+      "answer": "Oruçluyken hafif ve orta tempolu antrenmanı (yürüyüş, hafif koşu, esneme) iftardan hemen önceye koy; ısınma dahil 60–75 dakikayı geçme ve ezana yakın bitir ki hemen su içip yiyebilesin. Ağırlık ve yüksek yoğunluklu antrenmanı iftardan 1–3 saat sonraya bırak. Suu'da antrenmanı GPS ile kaydeder, iftar–sahur arasındaki suyunu takip edersin.",
+      "health_note": {
+        "head": "Bu yazı tıbbi tavsiye değildir.",
+        "body": [
+          "Genel bilgi içindir ve sağlıklı yetişkinler için yazıldı. Diyabetin (özellikle insülin ya da kan şekerini düşüren ilaç kullanıyorsan), böbrek veya kalp hastalığın, yüksek tansiyonun varsa, hamileysen ya da emziriyorsan oruç ve egzersiz planını önce doktorunla konuş.",
+          "Oruçluyken antrenman sırasında şunlardan biri olursa egzersizi hemen bırak; gerekirse orucunu aç ve tıbbi yardım al:"
+        ],
+        "red_flags": [
+          "Baş dönmesi, bayılacak gibi olmak ya da bulanık görme",
+          "Titreme, soğuk terleme, kafa karışıklığı (düşük kan şekeri belirtileri)",
+          "Göğüs ağrısı, çarpıntı ya da olağandışı nefes darlığı",
+          "Saatlerce idrara çıkamamak veya çok koyu renkli idrar"
+        ]
+      },
+      "disclosure": "Bu rehberi Suu'yu geliştiren iki kişilik ekip olarak yazdık. Uygulamamızı öneriyoruz, ama önerilerin dayanağı Aspetar'ın Ramazan kılavuzu, Sağlık Bakanlığı ve hakemli çalışmalar; aynı adımları Suu olmadan da uygulayabilirsin.",
+      "intro": [
+        "Ramazan'da spor sorusunun cevabı “yapılır mı” değil, <strong>ne zaman ve ne kadar</strong>. Oruç, hareketsiz yaşayan çoğu insanda beslenmeyi ve vücut ağırlığını pek değiştirmiyor; asıl etkilenen antrenman yapan kişi. Gün ilerledikçe kas glikojeni ve vücut sıvısı azalıyor, uyku kısalıyor; bu da dayanıklılığı, kuvveti ve kısa süreli patlayıcı gücü düşürebiliyor.<sup><a href=\"#ref1\">1</a></sup>",
+        "Bu yüzden çözüm bir ay boyunca antrenmanı bırakmak değil, saatini ve dozunu oruca göre ayarlamak. Katar'daki spor hekimliği hastanesi Aspetar'ın sağlıklı yetişkinler için hazırladığı Ramazan kılavuzu tam olarak bunu öneriyor: antrenman ne kadar zorsa iftara o kadar yakın, hatta iftardan sonra.<sup><a href=\"#ref2\">2</a>,<a href=\"#ref3\">3</a></sup>"
+      ],
+      "analysis": [
+        {
+          "head": "Hangi antrenman, hangi saatte?",
+          "body": [
+            "Kural basit: antrenmanın şiddeti arttıkça su ve yemeğe erişimin de o kadar yakın olmalı.<sup><a href=\"#ref2\">2</a></sup>"
+          ],
+          "list": [
+            "<strong>İftardan hemen önce (son 30–75 dakika):</strong> Yürüyüş, hafif koşu, hafif bisiklet, esneme ve mobilite. Antrenmanı ezana yakın bitir; ilk su ve yemek kayıpları hemen kapatmaya başlar. Isınma dahil 60–75 dakikayı geçme.",
+            "<strong>İftardan 1–3 saat sonra:</strong> Ağırlık antrenmanı, interval, halı saha ve tempolu koşu. Ağır bir iftar yaptıysan sindirim için 2–3 saat, hafif başladıysan 1 saat yeterli. Antrenman sırasında su içebildiğin için yoğun çalışmanın en rahat penceresi burası.",
+            "<strong>Teravihten sonra, gece:</strong> İftar sonrası antrenmanın bir çeşidi. Tek şartı uykudan çalmaması; yatma saatini geciktiriyorsa süreyi kısa tut.",
+            "<strong>Sahurdan sonra:</strong> Mümkün ama zor. Önünde uzun bir oruç günü var ve kaybettiğin sıvıyı akşama kadar yerine koyamazsın; bu saati kısa ve hafif hareket için düşün.",
+            "<strong>Öğle sıcağında:</strong> Kaçın. Hem susuz hem sıcakta terlemek, kaybı saatlerce telafi edememek demek."
+          ],
+          "callout": "Shephard'ın derlemesine göre oruç hareketsiz yaşayan çoğu insanda vücut ağırlığını ve toplam enerji alımını pek değiştirmiyor; performans kaybı daha çok sıcak aylarda, uzun günlerde antrenman yapan sporcularda görülüyor.<sup><a href=\"#ref1\">1</a></sup> Ramazan her yıl yaklaşık 11 gün öne kaydığı için oruç süresi ve hava sıcaklığı yıldan yıla değişir; yaz Ramazanlarında yükü daha çok azaltman gerekir."
+        },
+        {
+          "head": "İlk hafta yükü azalt, sonra geri çık",
+          "body": [
+            "Vücudun yeni öğün ve uyku düzenine alışması birkaç gün sürüyor. Aspetar kılavuzu ilk hafta haftalık hacmi (set sayısı ve toplam dakika) azaltmayı, gerekirse setler arası dinlenmeyi uzatmayı ve antrenmanın ne kadar zor geldiğini her gün not etmeyi öneriyor.<sup><a href=\"#ref2\">2</a></sup>",
+            "Örneğin Ramazan'dan önce haftada 4 gün 45 dakika koşuyorsan ilk hafta 3 gün 30 dakikayla başla; zorlanmıyorsan ikinci haftadan itibaren eski düzenine dön. Bu ayın hedefi rekor değil, kazandığın formu korumak.",
+            "Hareketi tamamen bırakmak da çözüm değil: Sağlık Bakanlığı yetişkinlere haftanın 5 günü en az 30 dakika orta yoğunlukta hareket öneriyor ve bu hedef Ramazan'da da geçerli.<sup><a href=\"#ref5\">5</a></sup> İftardan sonra 20–30 dakikalık sakin bir yürüyüş bile sayılır."
+          ]
+        },
+        {
+          "head": "İftar ile sahur arasında su: tek seferde değil, parça parça",
+          "body": [
+            "Gün içinde kaybettiğin sıvıyı yalnızca iftar ile sahur arasında yerine koyabilirsin. Aspetar'ın pratik rehberi egzersiz yapan yetişkinler için bu aralıkta en az 3–4 litre sıvıyı, iftardan yatana kadar yaklaşık her 30 dakikada 200 ml'yi öneriyor; sahurda bir anda çok su içmeyi ise çoğu kişinin iyi tolere etmediğini belirtiyor.<sup><a href=\"#ref2\">2</a></sup>"
+          ],
+          "list": [
+            "İftarı su ve 1–3 hurma ya da bir kâse çorbayla aç, kısa bir ara ver, sonra ana yemeğe geç.",
+            "İftardan yatana kadar suyu saatlere yay; telefonundaki hatırlatıcı bu işi senin yerine hatırlar.",
+            "Terlediğin antrenmandan sonra çorba, karpuz, salatalık, ayran gibi sulu yiyecekler ekle; çok terlediysen elektrolitli içecek düşünebilirsin.",
+            "Çay ve kahveyi sınırla, özellikle yatmadan önce; uykunu böler.",
+            "Sahurda çok tuzlu ve kızartma ağırlıklı yiyecekler gün içinde susuzluğu artırabilir."
+          ],
+          "callout": "En pratik ölçü idrar rengi: açık saman sarısı iyiye işaret; koyu sarıysa iftardan sonra daha fazla iç.<sup><a href=\"#ref2\">2</a></sup>"
+        },
+        {
+          "head": "Sahur, iftar ve uyku: antrenmanın görünmeyen yarısı",
+          "body": [
+            "Gün içinde antrenman yapacaksan sahuru atlama: lifli karbonhidrat (yulaf, tam tahıllı ekmek), protein (yumurta, peynir, yoğurt) ve sulu yiyecekler günü daha dengeli geçirtir. Sahuru imsak vaktine olabildiğince yakın yap.<sup><a href=\"#ref2\">2</a></sup>",
+            "Ramazan'da en çok kısalan şey uyku.<sup><a href=\"#ref1\">1</a></sup> Kılavuzun önerisi bölünmüş uyku: gece ana uykunu koru, öğleden sonra 20–45 dakikalık bir şekerleme ekle. Antrenman günlerinde proteini iftar, antrenman sonrası ve sahur arasında böl; akşam antrenman yaptıysan yatmadan önce süt ya da yoğurt iyi bir seçenek.<sup><a href=\"#ref2\">2</a></sup>",
+            "Diyabetin varsa bu bölümü doktorunla birlikte uyarla: oruçlu diyabetliler için hazırlanan IDF-DAR kılavuzu egzersiz, ilaç ve öğün saatlerinin kişiye göre planlanmasını öneriyor.<sup><a href=\"#ref4\">4</a></sup>"
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Bunu Suu'da nereden takip edersin",
+        "lead": "Menü adları uygulamadaki gibi:",
+        "steps": [
+          {
+            "feature": "Hatırlatıcıları iftar ve sahura göre ayarla",
+            "where_ios": "Ayarlar → Bildirim Ayarları → <strong>Akıllı Bildirimler</strong>",
+            "where_android": "Ayarlar → <strong>Akıllı Bildirimler</strong>",
+            "solves": "<strong>🌅 Sabah Hatırlatmaları</strong>'nın saatini sahura, <strong>🌆 Akşam Hatırlatmaları</strong>'nı iftara çek. <strong>Aralıklı hatırlatıcılar</strong>'da Başlangıç'ı iftar, Bitiş'i yatma saatin yap (en sık 2 saatte bir; aralık gece yarısından önce bitmeli). Böylece Suu su hatırlatıcılarını iftar ve sahur saatlerine göre gönderir."
+          },
+          {
+            "feature": "İftar öncesi yürüyüşü ya da koşuyu GPS ile kaydet",
+            "where": "Ana ekran → hızlı ekleme → <strong>Egzersiz Ekle</strong> → Yürüyüş ya da Koşu → başlat",
+            "solves": "Süre, mesafe, tempo ve rota canlı kaydedilir; yakılan kalori ve antrenmanın su hedefine etkisi kendiliğinden hesaplanır. Apple Watch'tan başlatırsan nabzını da canlı görürsün; oruçluyken tempoyu düşük tutmanın en kolay yolu."
+          },
+          {
+            "feature": "İftar sofrasını tek cümleyle kaydet",
+            "where": "Ana ekran → hızlı ekleme → <strong>Besin Ekle</strong> → mikrofon ya da yazı alanı",
+            "solves": "“İki bardak su, bir kâse mercimek çorbası, üç hurma, bir bardak ayran” demen yeterli; kalori ve makrolar hesaplanır, su ve ayran sıvı dengene sayılır. Ücretsiz planda günde 3 AI analizi."
+          },
+          {
+            "feature": "Suu Endeksi",
+            "where_ios": "<strong>Sen</strong> sekmesi → Su → <strong>Suu Endeksi</strong>",
+            "where_android": "<strong>İstatistikler</strong> → <strong>Suu Endeksi</strong>",
+            "solves": "Günlük hidrasyonunu 0–100 arası puanlar; iftar ile sahur arasında içtiklerinin günü kurtarıp kurtarmadığını tahmin etmek yerine görürsün."
+          }
+        ],
+        "note": "GPS'li antrenman ücretsiz; yazılı ve sesli öğün analizi ücretsiz planda günde 3 kez. Hatırlatıcı saatlerini her Ramazan kendi iftar ve sahur saatine göre sen ayarlarsın.",
+        "button": "Suu'yu ücretsiz indir"
+      },
+      "verdict": {
+        "head": "Kısacası",
+        "body": [
+          "Ramazan'da spor yapılır; önemli olan saat ve doz. Hafif antrenmanı iftardan hemen önceye, ağırlık ve yoğun antrenmanı iftardan 1–3 saat sonraya koy, ilk hafta yükü azalt.",
+          "Asıl işi iftar ile sahur arası görür: suyu saatlere yay, sahuru atlama, uykunu koru. Bayramdan sonra sıfırdan başlamak yerine formunu koruyarak çıkarsın."
+        ]
+      },
+      "cta": {
+        "head": "İftar öncesi yürüyüşünü bugün kaydet",
+        "sub": "GPS'li antrenman ücretsiz · iOS ve Android",
+        "button": "Suu'yu Ücretsiz İndir"
+      },
+      "faq": [
+        {
+          "q": "Oruçluyken spor yapılır mı?",
+          "a": "Sağlıklı yetişkinler için evet; önemli olan saat ve yoğunluk. Hafif ve orta tempolu antrenmanı iftardan hemen önce, ağırlık ve yüksek yoğunluklu antrenmanı iftardan sonra yap. Kronik hastalığın varsa önce doktoruna danış."
+        },
+        {
+          "q": "Ramazan'da spor iftardan önce mi sonra mı yapılmalı?",
+          "a": "İkisi de olur, antrenmanın türüne bağlı. Yürüyüş, hafif koşu ve esneme gibi hafif antrenmanlar iftardan hemen önce, ısınma dahil 60–75 dakikayı geçmeden; ağırlık, interval ve maç gibi yoğun antrenmanlar iftardan 1–3 saat sonra."
+        },
+        {
+          "q": "İftardan ne kadar sonra spor yapılır?",
+          "a": "Yemeğin büyüklüğüne bağlı: ağır bir iftardan sonra 2–3 saat, hafif başladıysan yaklaşık 1 saat bekle. Teravihten sonraki antrenman da olur; yeter ki yatma saatini çok geciktirmesin."
+        },
+        {
+          "q": "Oruçluyken ağırlık antrenmanı yapılır mı?",
+          "a": "Yapılır, ama en iyi zamanı iftardan sonradır; antrenman sırasında su içebilir, sonrasında protein alabilirsin. İlk hafta set sayısını azalt, setler arası dinlenmeyi uzat."
+        },
+        {
+          "q": "Sahurdan sonra spor yapmak doğru mu?",
+          "a": "Mümkün ama zor: önünde uzun bir oruç günü var ve kaybettiğin sıvıyı akşama kadar yerine koyamazsın. Bu saati kısa ve hafif hareketle sınırlı tut."
+        },
+        {
+          "q": "Ramazan'da spor yapınca kilo verilir mi?",
+          "a": "Oruç tek başına çoğu insanda kiloyu pek değiştirmiyor; kilo vermek istiyorsan iftar sofrasındaki porsiyon ve tatlı belirleyici. Hareketi sürdürmek, Ramazan boyunca formunu korumana yardım eder."
+        }
+      ],
+      "references": [
+        {
+          "label": "Shephard RJ — The impact of Ramadan observance upon athletic performance. Nutrients, 2012",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/22822448/"
+        },
+        {
+          "label": "Aspetar — Evidence-Informed Ramadan Nutrition, Hydration, Sleep and Training Strategies for Physically Active Adults: A Practical Guide (Tabben M; bilimsel inceleme: Chamari K, Aziz AR, Ben Saad H)",
+          "href": "https://www.aspetar.com/en/professionals/ramadan-evidence-informed-guide"
+        },
+        {
+          "label": "Chamari K ve ark. — Aspetar clinical guidelines: Ramadan fasting and exercise for healthy individuals. Tunis Med, 2023",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/37682254/"
+        },
+        {
+          "label": "Hassanein M ve ark. — Diabetes and Ramadan: Practical guidelines 2021 (IDF-DAR). Diabetes Res Clin Pract, 2022",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/35016991/"
+        },
+        {
+          "label": "T.C. Sağlık Bakanlığı Halk Sağlığı Genel Müdürlüğü — Fiziksel Aktivite",
+          "href": "https://hsgm.saglik.gov.tr/tr/fiziksel-aktivite.html"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/spor-ve-hidrasyon.html",
+          "title": "Spor yaparken ne kadar su içmeli?",
+          "desc": "Antrenman öncesi, sırası ve sonrası."
+        },
+        {
+          "href": "/blog/susuzluk-belirtileri.html",
+          "title": "Susuzluğun gizli sinyalleri",
+          "desc": "Vücudun su istediğini nasıl anlarsın?"
+        },
+        {
+          "href": "/blog/yuruyus-mu-kosu-mu.html",
+          "title": "Kilo vermek için yürüyüş mü koşu mu?",
+          "desc": "Kalori, süre ve sakatlık açısından."
+        },
+        {
+          "href": "/blog/spora-usenmek.html",
+          "title": "Spora üşeniyorum",
+          "desc": "Motivasyon beklemeden başlamanın 7 yolu."
+        }
+      ]
+    },
+    "en": {
+      "slug": "exercise-during-ramadan",
+      "read_minutes": 7,
+      "badge": "🌙 Guide · Training while fasting",
+      "h1": "When to Work Out During Ramadan: Before or After Iftar? (and How to Track It in Suu)",
+      "about": [
+        {
+          "name": "Ramadan fasting"
+        },
+        {
+          "name": "Exercise timing"
+        },
+        {
+          "name": "Hydration"
+        }
+      ],
+      "meta": {
+        "title": "Exercise During Ramadan: Before or After Iftar? | Suu",
+        "description": "Train light just before iftar and hard 1–3 hours after it. A fluid plan for iftar to suhoor, plus suhoor and sleep tips, based on the Aspetar guideline.",
+        "keywords": "exercise during ramadan, workout while fasting, best time to work out in ramadan, train before or after iftar, running while fasting, weight training during ramadan, gym during ramadan, ramadan workout schedule",
+        "og_title": "Exercise During Ramadan: Before or After Iftar?",
+        "og_description": "Which session at which hour, how much to drink between iftar and suhoor, and how to adjust the first week. Based on the Aspetar Ramadan guideline and research."
+      },
+      "answer": "If you're fasting, do light to moderate sessions — walking, easy running, mobility — in the hour before iftar, keep them under 60–75 minutes including the warm-up, and finish close to sunset so you can drink and eat straight away. Save weights and high-intensity work for 1–3 hours after iftar. Suu records the workout with GPS and tracks what you drink between iftar and suhoor.",
+      "health_note": {
+        "head": "This article is not medical advice.",
+        "body": [
+          "It is general information written for healthy adults. If you have diabetes (especially if you use insulin or other glucose-lowering medication), kidney or heart disease or high blood pressure, or if you are pregnant or breastfeeding, plan fasting and exercise with your doctor first.",
+          "If any of these happen during a fasted workout, stop straight away — break your fast if needed — and get medical help:"
+        ],
+        "red_flags": [
+          "Dizziness, feeling faint or blurred vision",
+          "Shaking, cold sweats or confusion (signs of low blood sugar)",
+          "Chest pain, palpitations or unusual breathlessness",
+          "Not passing urine for many hours, or very dark urine"
+        ]
+      },
+      "disclosure": "We wrote this guide as the two-person team that builds Suu. We recommend our app, but the advice rests on the Aspetar Ramadan guideline, the NHS and peer-reviewed studies — you can follow the same steps without Suu.",
+      "intro": [
+        "The real question about exercise in Ramadan isn't <em>whether</em> but <strong>when and how much</strong>. For most sedentary people the fast barely changes nutrition or body weight; the people it affects are the ones who train. As the day goes on, muscle glycogen and body fluid fall and sleep gets shorter, which can blunt endurance, strength and short bursts of power.<sup><a href=\"#ref1\">1</a></sup>",
+        "So the answer isn't to stop training for a month — it's to move the session and adjust the dose. That is exactly what the Ramadan guideline for healthy adults from Aspetar, the sports medicine hospital in Qatar, recommends: the harder the session, the closer to iftar, or after it.<sup><a href=\"#ref2\">2</a>,<a href=\"#ref3\">3</a></sup>"
+      ],
+      "analysis": [
+        {
+          "head": "Which session, at which hour?",
+          "body": [
+            "The rule is simple: the harder the workout, the closer you should be to water and food.<sup><a href=\"#ref2\">2</a></sup>"
+          ],
+          "list": [
+            "<strong>Just before iftar (the last 30–75 minutes):</strong> walking, easy running, easy cycling, stretching and mobility. Finish close to sunset so your first drink and meal start replacing losses straight away. Keep it to 60–75 minutes including the warm-up.",
+            "<strong>1–3 hours after iftar:</strong> weights, intervals, five-a-side and tempo runs. After a heavy iftar wait 2–3 hours; after a light start about an hour is enough. You can drink during the session, which makes this the most comfortable window for hard work.",
+            "<strong>After taraweeh, at night:</strong> a variation of post-iftar training. The only condition is that it doesn't eat into your sleep — if it pushes bedtime back, keep it short.",
+            "<strong>After suhoor:</strong> possible but tough. A long fasting day lies ahead and you can't replace what you sweat out until sunset; keep this slot for short, light movement.",
+            "<strong>In the midday heat:</strong> avoid it. Sweating while fasting and hot means losses you can't make up for hours."
+          ],
+          "callout": "Shephard's review found that for most sedentary people the fast hardly changes body weight or total energy intake; performance losses show up mainly in athletes training through hot months with long days.<sup><a href=\"#ref1\">1</a></sup> Ramadan moves about 11 days earlier each year, so fasting hours and heat change from year to year — in summer Ramadans, cut the load more."
+        },
+        {
+          "head": "Lighten the first week, then build back",
+          "body": [
+            "Your body needs a few days to adapt to the new meal and sleep pattern. The Aspetar guide suggests cutting weekly volume (sets and total minutes) in the first week, taking longer rests between sets if needed, and noting how hard each session feels.<sup><a href=\"#ref2\">2</a></sup>",
+            "For example, if you ran 45 minutes four times a week before Ramadan, start the first week with three 30-minute runs; if that feels easy, go back to your usual plan from week two. The goal this month isn't a personal best — it's keeping the fitness you've built.",
+            "Stopping altogether isn't the answer either: the NHS recommends adults get at least 150 minutes of moderate activity a week, and that still applies in Ramadan.<sup><a href=\"#ref5\">5</a></sup> Even a relaxed 20–30-minute walk after iftar counts."
+          ]
+        },
+        {
+          "head": "Water between iftar and suhoor: little and often",
+          "body": [
+            "You can only replace the day's fluid losses between iftar and suhoor. Aspetar's practical guide suggests at least 3–4 litres in that window for active adults, roughly 200 ml every 30 minutes from iftar until bedtime, and notes that large, rapid 'water loading' at suhoor is poorly tolerated by many people.<sup><a href=\"#ref2\">2</a></sup>"
+          ],
+          "list": [
+            "Break the fast with water and 1–3 dates or a bowl of soup, pause briefly, then have your main meal.",
+            "Spread your water across the evening; a reminder on your phone does the remembering for you.",
+            "After a sweaty session add water-rich foods — soup, watermelon, cucumber, yoghurt drinks — and consider an electrolyte drink if you sweated heavily.",
+            "Limit tea and coffee, especially close to bedtime; they break up your sleep.",
+            "Very salty or fried food at suhoor can make you thirstier during the day."
+          ],
+          "callout": "The easiest check is urine colour: pale straw is a good sign; if it's dark yellow, drink more after iftar.<sup><a href=\"#ref2\">2</a></sup>"
+        },
+        {
+          "head": "Suhoor, iftar and sleep: the invisible half of training",
+          "body": [
+            "If you train during the day, don't skip suhoor: fibre-rich carbohydrates (oats, wholegrain bread), protein (eggs, cheese, yoghurt) and water-rich foods help the day run more evenly. Eat suhoor as close to dawn as practical.<sup><a href=\"#ref2\">2</a></sup>",
+            "Sleep is what shrinks most in Ramadan.<sup><a href=\"#ref1\">1</a></sup> The guide recommends split sleep: protect your core night sleep and add a 20–45-minute nap in the early afternoon. On training days spread protein across iftar, after training and suhoor; after an evening session, milk or yoghurt before bed is a good option.<sup><a href=\"#ref2\">2</a></sup>",
+            "If you have diabetes, adapt this section with your doctor: the IDF-DAR guidelines for people with diabetes who fast recommend planning exercise, medication and meal times individually.<sup><a href=\"#ref4\">4</a></sup>"
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Where to track this in Suu",
+        "lead": "Menu names are exactly as they appear in the app:",
+        "steps": [
+          {
+            "feature": "Time your reminders to iftar and suhoor",
+            "where_ios": "Settings → Notification Settings → <strong>Smart Notifications</strong>",
+            "where_android": "Settings → <strong>Smart Notifications</strong>",
+            "solves": "Move <strong>🌅 Morning Reminders</strong> to your suhoor time and <strong>🌆 Evening Reminders</strong> to iftar. Under <strong>Interval reminders</strong>, set Start to iftar and End to your bedtime (every 2 hours at most; the window has to end before midnight). That way Suu sends your water reminders around iftar and suhoor."
+          },
+          {
+            "feature": "Record your pre-iftar walk or run with GPS",
+            "where": "Home → quick add → <strong>Add Exercise</strong> → Walking or Running → start",
+            "solves": "Time, distance, pace and route are recorded live; calories burned and the workout's effect on your water goal are calculated automatically. Start it from Apple Watch and you'll also see your heart rate live — the easiest way to keep the pace low while fasting."
+          },
+          {
+            "feature": "Log your iftar in one sentence",
+            "where": "Home → quick add → <strong>Add Food</strong> → microphone or text field",
+            "solves": "“Two glasses of water, a bowl of lentil soup, three dates and a glass of ayran” is enough; calories and macros are calculated and the water and drinks count towards your fluid balance. 3 AI analyses a day on the free plan."
+          },
+          {
+            "feature": "Suu Index",
+            "where_ios": "<strong>You</strong> tab → Water → <strong>Suu Index</strong>",
+            "where_android": "<strong>Statistics</strong> → <strong>Suu Index</strong>",
+            "solves": "Scores your daily hydration from 0 to 100, so you can see — rather than guess — whether what you drank between iftar and suhoor was enough."
+          }
+        ],
+        "note": "GPS workouts are free; text and voice meal analysis is 3 times a day on the free plan. You set the reminder times yourself each Ramadan to match your local iftar and suhoor.",
+        "button": "Download Suu free"
+      },
+      "verdict": {
+        "head": "In short",
+        "body": [
+          "You can train in Ramadan — what matters is the hour and the dose. Put light sessions just before iftar, weights and hard sessions 1–3 hours after it, and lighten the first week.",
+          "The real work happens between iftar and suhoor: spread your water, don't skip suhoor, protect your sleep. You'll come out of Eid with your fitness intact instead of starting from zero."
+        ]
+      },
+      "cta": {
+        "head": "Record your pre-iftar walk today",
+        "sub": "GPS workouts are free · iOS and Android",
+        "button": "Download Suu Free"
+      },
+      "faq": [
+        {
+          "q": "Is it OK to work out while fasting in Ramadan?",
+          "a": "For healthy adults, yes — timing and intensity are what matter. Do light to moderate sessions just before iftar and weights or high-intensity work after iftar. If you have a long-term condition, check with your doctor first."
+        },
+        {
+          "q": "Should I work out before or after iftar?",
+          "a": "Both work; it depends on the session. Light training such as walking, easy running and stretching goes just before iftar, under 60–75 minutes including the warm-up. Hard training such as weights, intervals and matches goes 1–3 hours after iftar."
+        },
+        {
+          "q": "How long after iftar should I wait before training?",
+          "a": "It depends on the size of the meal: 2–3 hours after a heavy iftar, about an hour if you started light. Training after taraweeh is fine too, as long as it doesn't push your bedtime back too far."
+        },
+        {
+          "q": "Can I lift weights while fasting?",
+          "a": "Yes, but the best time is after iftar, when you can drink during the session and have protein afterwards. In the first week do fewer sets and take longer rests between them."
+        },
+        {
+          "q": "Is it good to exercise after suhoor?",
+          "a": "It's possible but tough: a long fasting day lies ahead and you can't replace what you sweat out until sunset. Keep this slot for short, light movement."
+        },
+        {
+          "q": "Will I lose weight if I exercise during Ramadan?",
+          "a": "The fast itself barely changes weight for most people; if you want to lose weight, portion sizes and desserts at iftar decide it. Staying active mainly helps you keep your fitness through the month."
+        }
+      ],
+      "references": [
+        {
+          "label": "Shephard RJ — The impact of Ramadan observance upon athletic performance. Nutrients, 2012",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/22822448/"
+        },
+        {
+          "label": "Aspetar — Evidence-Informed Ramadan Nutrition, Hydration, Sleep and Training Strategies for Physically Active Adults: A Practical Guide (Tabben M; expert review: Chamari K, Aziz AR, Ben Saad H)",
+          "href": "https://www.aspetar.com/en/professionals/ramadan-evidence-informed-guide"
+        },
+        {
+          "label": "Chamari K et al. — Aspetar clinical guidelines: Ramadan fasting and exercise for healthy individuals. Tunis Med, 2023",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/37682254/"
+        },
+        {
+          "label": "Hassanein M et al. — Diabetes and Ramadan: Practical guidelines 2021 (IDF-DAR). Diabetes Res Clin Pract, 2022",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/35016991/"
+        },
+        {
+          "label": "NHS — Physical activity guidelines for adults aged 19 to 64",
+          "href": "https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-for-adults-aged-19-to-64/"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/en/hydration-and-exercise.html",
+          "title": "How much water should you drink when exercising?",
+          "desc": "Before, during and after a workout."
+        },
+        {
+          "href": "/blog/en/signs-of-dehydration.html",
+          "title": "Signs of dehydration",
+          "desc": "How your body tells you it needs water."
+        },
+        {
+          "href": "/blog/en/walking-vs-running-for-weight-loss.html",
+          "title": "Walking vs running for weight loss",
+          "desc": "Calories, time and injury risk compared."
+        },
+        {
+          "href": "/blog/en/no-motivation-to-exercise.html",
+          "title": "No motivation to exercise?",
+          "desc": "7 ways to start anyway."
+        }
+      ]
+    },
+    "ar": {
+      "slug": "arriyada-fi-ramadan",
+      "read_minutes": 7,
+      "badge": "🌙 دليل · الحركة أثناء الصيام",
+      "h1": "متى تمارس الرياضة في رمضان؟ قبل الإفطار أم بعد الإفطار (وكيف تتابع ذلك في Suu)",
+      "about": [
+        {
+          "name": "صيام رمضان"
+        },
+        {
+          "name": "توقيت التمرين"
+        },
+        {
+          "name": "الترطيب"
+        }
+      ],
+      "meta": {
+        "title": "الرياضة في رمضان: قبل الإفطار أم بعده؟ | Suu",
+        "description": "التمرين الخفيف قبيل الإفطار، والتمرين الشاق بعد الإفطار بساعة إلى ثلاث ساعات. خطة شرب الماء بين الإفطار والسحور ونصائح السحور والنوم وفق دليل أسبيتار.",
+        "keywords": "الرياضة في رمضان, التمرين أثناء الصيام, أفضل وقت للرياضة في رمضان, الرياضة قبل الإفطار, الرياضة بعد الإفطار, الجري وأنا صائم, تمارين الحديد في رمضان, الجيم في رمضان, الرياضة بعد التراويح",
+        "og_title": "الرياضة في رمضان: قبل الإفطار أم بعده؟",
+        "og_description": "أي تمرين في أي ساعة، وكم تشرب بين الإفطار والسحور، وكيف تخفف الحمل في الأسبوع الأول؟ وفق دليل أسبيتار لرمضان والأبحاث."
+      },
+      "answer": "إذا كنت صائمًا فاجعل التمرين الخفيف والمتوسط — المشي والجري الخفيف وتمارين الإطالة — قبيل الإفطار، بمدة لا تتجاوز 60–75 دقيقة مع الإحماء، وأنهِه قرب أذان المغرب لتشرب وتأكل فورًا. وأجّل تمارين الأثقال والتمارين عالية الشدة إلى ما بعد الإفطار بساعة إلى ثلاث ساعات. في Suu تسجّل التمرين عبر GPS وتتابع ما تشربه بين الإفطار والسحور.",
+      "health_note": {
+        "head": "هذا المقال ليس نصيحة طبية.",
+        "body": [
+          "المعلومات عامة ومكتوبة للبالغين الأصحاء. إذا كنت مصابًا بالسكري (خصوصًا إن كنت تستخدم الإنسولين أو أدوية خافضة للسكر)، أو بأمراض الكلى أو القلب أو ارتفاع ضغط الدم، أو كنتِ حاملًا أو مرضعًا، فخطّط للصيام والتمرين مع طبيبك أولًا.",
+          "إذا ظهر أيٌّ مما يلي أثناء التمرين وأنت صائم فتوقف فورًا، وأفطر إن لزم الأمر، واطلب المساعدة الطبية:"
+        ],
+        "red_flags": [
+          "دوخة أو شعور بالإغماء أو تشوش في الرؤية",
+          "رعشة أو عرق بارد أو تشوش ذهني (علامات انخفاض سكر الدم)",
+          "ألم في الصدر أو خفقان أو ضيق تنفس غير معتاد",
+          "عدم التبول لساعات طويلة أو بول داكن جدًا"
+        ]
+      },
+      "disclosure": "كتبنا هذا الدليل بصفتنا الفريق المكوّن من شخصين الذي يطوّر Suu. نحن نرشّح تطبيقنا، لكن النصائح مبنية على دليل أسبيتار لرمضان ومنظمة الصحة العالمية ودراسات محكّمة، ويمكنك تطبيق الخطوات نفسها دون Suu.",
+      "intro": [
+        "السؤال الحقيقي عن الرياضة في رمضان ليس «هل أمارسها؟» بل <strong>متى وبأي قدر</strong>. فالصيام لا يغيّر كثيرًا من تغذية معظم الأشخاص قليلي الحركة ولا من أوزانهم؛ المتأثر الحقيقي هو من يتمرن. فمع تقدّم النهار ينخفض مخزون الجليكوجين في العضلات وسوائل الجسم ويقصر النوم، وهذا قد يضعف التحمّل والقوة العضلية والجهد السريع القصير.<sup><a href=\"#ref1\">1</a></sup>",
+        "لذلك ليس الحل أن تتوقف عن التمرين شهرًا كاملًا، بل أن تعدّل توقيته وجرعته. وهذا تحديدًا ما يوصي به دليل رمضان للبالغين الأصحاء الصادر عن أسبيتار، مستشفى جراحة العظام والطب الرياضي في قطر: كلما كان التمرين أشق كان أقرب إلى الإفطار، أو بعده.<sup><a href=\"#ref2\">2</a>,<a href=\"#ref3\">3</a></sup>"
+      ],
+      "analysis": [
+        {
+          "head": "أي تمرين، وفي أي ساعة؟",
+          "body": [
+            "القاعدة بسيطة: كلما زادت شدة التمرين وجب أن تكون أقرب إلى الماء والطعام.<sup><a href=\"#ref2\">2</a></sup>"
+          ],
+          "list": [
+            "<strong>قبيل الإفطار (آخر 30–75 دقيقة):</strong> المشي والجري الخفيف وركوب الدراجة بهدوء والإطالة وتمارين المرونة. أنهِ التمرين قرب أذان المغرب حتى يبدأ أول شراب وطعام في تعويض ما فقدته فورًا، ولا تتجاوز 60–75 دقيقة مع الإحماء.",
+            "<strong>بعد الإفطار بساعة إلى ثلاث ساعات:</strong> تمارين الأثقال والتمارين المتقطعة وكرة القدم والجري السريع. بعد إفطار ثقيل انتظر ساعتين إلى ثلاث، وبعد بداية خفيفة تكفي ساعة تقريبًا. يمكنك الشرب أثناء التمرين، لذا فهذه أنسب نافذة للجهد الشاق.",
+            "<strong>بعد التراويح ليلًا:</strong> صورة أخرى من تمرين ما بعد الإفطار، بشرط ألا يقتطع من نومك؛ وإن أخّر موعد نومك فاجعله قصيرًا.",
+            "<strong>بعد السحور:</strong> ممكن لكنه صعب؛ أمامك يوم صيام طويل ولا تستطيع تعويض ما تفقده بالعرق قبل المغرب. خصّص هذا الوقت لحركة قصيرة وخفيفة فقط.",
+            "<strong>في حرّ الظهيرة:</strong> تجنّبه؛ فالتعرّق وأنت صائم في الحر يعني فقدًا لا تعوّضه لساعات."
+          ],
+          "callout": "وجدت مراجعة شيبرد أن الصيام لا يغيّر كثيرًا وزن معظم الأشخاص قليلي الحركة ولا مجموع ما يتناولونه من طاقة؛ ويظهر تراجع الأداء أساسًا لدى الرياضيين الذين يتدربون في الأشهر الحارة ذات النهار الطويل.<sup><a href=\"#ref1\">1</a></sup> ولأن رمضان يتقدم نحو 11 يومًا كل عام، تتغير ساعات الصيام والحرارة من سنة إلى أخرى؛ ففي رمضان الصيفي خفّف الحمل أكثر."
+        },
+        {
+          "head": "خفّف الأسبوع الأول ثم عُد تدريجيًا",
+          "body": [
+            "يحتاج جسمك بضعة أيام ليعتاد مواعيد الوجبات والنوم الجديدة. ويقترح دليل أسبيتار خفض الحجم الأسبوعي (عدد المجموعات ومجموع الدقائق) في الأسبوع الأول، وإطالة الراحة بين المجموعات عند الحاجة، وتدوين مدى صعوبة كل تمرين يوميًا.<sup><a href=\"#ref2\">2</a></sup>",
+            "مثلًا: إن كنت تجري 45 دقيقة أربع مرات أسبوعيًا قبل رمضان، فابدأ الأسبوع الأول بثلاث مرات مدة كل منها 30 دقيقة، وإن لم تجد صعوبة فعُد إلى برنامجك المعتاد من الأسبوع الثاني. الهدف في هذا الشهر ليس رقمًا قياسيًا، بل الحفاظ على لياقتك.",
+            "والتوقف التام ليس حلًا أيضًا: توصي منظمة الصحة العالمية البالغين بما لا يقل عن 150 دقيقة من النشاط المعتدل أسبوعيًا، وهذا الهدف قائم في رمضان أيضًا.<sup><a href=\"#ref5\">5</a></sup> حتى مشي هادئ لمدة 20–30 دقيقة بعد الإفطار يُحتسب."
+          ]
+        },
+        {
+          "head": "الماء بين الإفطار والسحور: قليلًا وعلى دفعات",
+          "body": [
+            "لا يمكنك تعويض ما يفقده جسمك خلال النهار إلا بين الإفطار والسحور. ويقترح الدليل العملي لأسبيتار للبالغين النشطين ما لا يقل عن 3–4 لترات من السوائل في هذه الفترة، أي نحو 200 مل كل 30 دقيقة من الإفطار حتى النوم، وينبّه إلى أن شرب كمية كبيرة دفعة واحدة عند السحور لا يتحمله كثيرون.<sup><a href=\"#ref2\">2</a></sup>"
+          ],
+          "list": [
+            "افطر على الماء و1–3 تمرات أو صحن شوربة، ثم توقف قليلًا قبل الطبق الرئيسي.",
+            "وزّع الماء على ساعات المساء؛ ويتكفل تذكير الهاتف بتذكيرك بدلًا منك.",
+            "بعد تمرين تعرّقت فيه أضف أطعمة غنية بالماء مثل الشوربة والبطيخ والخيار واللبن، وقد تحتاج مشروبًا بالأملاح إن كان التعرّق غزيرًا.",
+            "قلّل الشاي والقهوة، خصوصًا قرب النوم؛ فهما يقطّعان نومك.",
+            "الأطعمة شديدة الملوحة أو المقلية في السحور قد تزيد عطشك خلال النهار."
+          ],
+          "callout": "أسهل مقياس هو لون البول: الأصفر الفاتح علامة جيدة، وإن كان أصفر داكنًا فاشرب أكثر بعد الإفطار.<sup><a href=\"#ref2\">2</a></sup>"
+        },
+        {
+          "head": "السحور والإفطار والنوم: النصف الخفي من التمرين",
+          "body": [
+            "إن كنت ستتمرن خلال النهار فلا تترك السحور: الكربوهيدرات الغنية بالألياف (الشوفان والخبز الأسمر) والبروتين (البيض والجبن واللبن) والأطعمة الغنية بالماء تجعل يومك أكثر توازنًا. وأخّر السحور قدر الإمكان قرب الفجر.<sup><a href=\"#ref2\">2</a></sup>",
+            "النوم هو أكثر ما يقصر في رمضان.<sup><a href=\"#ref1\">1</a></sup> ويوصي الدليل بنوم مقسّم: احمِ نومك الأساسي ليلًا وأضف قيلولة من 20–45 دقيقة بعد الظهر. وفي أيام التمرين وزّع البروتين بين الإفطار وما بعد التمرين والسحور؛ وبعد تمرين المساء يكون الحليب أو اللبن قبل النوم خيارًا جيدًا.<sup><a href=\"#ref2\">2</a></sup>",
+            "إن كنت مصابًا بالسكري فعدّل هذا القسم مع طبيبك: توصي إرشادات IDF-DAR للصائمين المصابين بالسكري بتخطيط التمرين والدواء ومواعيد الوجبات لكل شخص على حدة.<sup><a href=\"#ref4\">4</a></sup>"
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "أين تتابع ذلك في Suu",
+        "lead": "أسماء القوائم كما تظهر في التطبيق:",
+        "steps": [
+          {
+            "feature": "اضبط التذكيرات على الإفطار والسحور",
+            "where_ios": "الإعدادات ← إعدادات الإشعارات ← <strong>الإشعارات الذكية</strong>",
+            "where_android": "الإعدادات ← <strong>إشعارات ذكية</strong>",
+            "solves": "انقل موعد <strong>🌅 تذكيرات الصباح</strong> إلى وقت السحور و<strong>🌆 تذكيرات المساء</strong> إلى وقت الإفطار. وفي <strong>تذكيرات المياه المتكررة</strong> اجعل البداية عند الإفطار والنهاية عند موعد نومك (كل ساعتين على الأكثر، ويجب أن تنتهي الفترة قبل منتصف الليل). هكذا يرسل Suu تذكيرات الماء وفق موعدي الإفطار والسحور."
+          },
+          {
+            "feature": "سجّل مشي أو جري ما قبل الإفطار عبر GPS",
+            "where": "الشاشة الرئيسية ← الإضافة السريعة ← <strong>إضافة تمرين</strong> ← المشي أو الجري ← ابدأ",
+            "solves": "تُسجَّل المدة والمسافة والسرعة والمسار مباشرة، وتُحسب السعرات المحروقة وأثر التمرين على هدف الماء تلقائيًا. وإن بدأته من Apple Watch ترى نبضك مباشرة أيضًا، وهي أسهل طريقة لإبقاء الشدة منخفضة وأنت صائم."
+          },
+          {
+            "feature": "سجّل مائدة الإفطار بجملة واحدة",
+            "where": "الشاشة الرئيسية ← الإضافة السريعة ← <strong>إضافة طعام</strong> ← الميكروفون أو حقل الكتابة",
+            "solves": "يكفي أن تقول «كوبان من الماء وصحن شوربة عدس وثلاث تمرات وكوب لبن»؛ تُحسب السعرات والعناصر الكبرى، ويُحتسب الماء واللبن في توازن السوائل. 3 تحليلات بالذكاء الاصطناعي يوميًا في الخطة المجانية."
+          },
+          {
+            "feature": "مؤشر Suu",
+            "where_ios": "تبويب <strong>أنت</strong> ← الماء ← <strong>مؤشر Suu</strong>",
+            "where_android": "<strong>الإحصائيات</strong> ← <strong>مؤشر Suu</strong>",
+            "solves": "يقيّم ترطيبك اليومي من 0 إلى 100، فترى بدل أن تخمّن هل كان ما شربته بين الإفطار والسحور كافيًا."
+          }
+        ],
+        "note": "التمرين عبر GPS مجاني، وتحليل الوجبات بالكتابة أو الصوت 3 مرات يوميًا في الخطة المجانية. تضبط مواعيد التذكير بنفسك في كل رمضان حسب موعدي الإفطار والسحور في مدينتك.",
+        "button": "حمّل Suu مجانًا"
+      },
+      "verdict": {
+        "head": "باختصار",
+        "body": [
+          "يمكنك ممارسة الرياضة في رمضان، والمهم هو التوقيت والجرعة: التمرين الخفيف قبيل الإفطار، والأثقال والتمارين الشاقة بعد الإفطار بساعة إلى ثلاث، مع تخفيف الأسبوع الأول.",
+          "العمل الحقيقي يجري بين الإفطار والسحور: وزّع الماء، ولا تترك السحور، واحمِ نومك. هكذا تخرج من العيد محافظًا على لياقتك بدل أن تبدأ من الصفر."
+        ]
+      },
+      "cta": {
+        "head": "سجّل مشي ما قبل الإفطار اليوم",
+        "sub": "التمرين عبر GPS مجاني · iOS وAndroid",
+        "button": "حمّل Suu مجانًا"
+      },
+      "faq": [
+        {
+          "q": "هل يجوز ممارسة الرياضة وأنا صائم؟",
+          "a": "للبالغين الأصحاء نعم، والمهم هو التوقيت والشدة: التمرين الخفيف والمتوسط قبيل الإفطار، والأثقال والتمارين عالية الشدة بعد الإفطار. إن كان لديك مرض مزمن فاستشر طبيبك أولًا."
+        },
+        {
+          "q": "هل الأفضل التمرين قبل الإفطار أم بعده؟",
+          "a": "كلاهما مناسب بحسب نوع التمرين: المشي والجري الخفيف والإطالة قبيل الإفطار بمدة لا تتجاوز 60–75 دقيقة مع الإحماء، والأثقال والتمارين المتقطعة والمباريات بعد الإفطار بساعة إلى ثلاث ساعات."
+        },
+        {
+          "q": "كم أنتظر بعد الإفطار قبل التمرين؟",
+          "a": "حسب حجم الوجبة: ساعتان إلى ثلاث بعد إفطار ثقيل، ونحو ساعة إن بدأت بوجبة خفيفة. والتمرين بعد التراويح مناسب أيضًا ما دام لا يؤخر نومك كثيرًا."
+        },
+        {
+          "q": "هل يمكن رفع الأثقال وأنا صائم؟",
+          "a": "نعم، لكن أفضل وقت له بعد الإفطار حين يمكنك الشرب أثناء التمرين وتناول البروتين بعده. في الأسبوع الأول قلّل عدد المجموعات وأطل الراحة بينها."
+        },
+        {
+          "q": "هل التمرين بعد السحور فكرة جيدة؟",
+          "a": "ممكن لكنه صعب، فأمامك يوم صيام طويل ولا يمكنك تعويض ما تفقده بالعرق قبل المغرب. اجعله حركة قصيرة وخفيفة."
+        },
+        {
+          "q": "هل أنقص وزني إذا تمرنت في رمضان؟",
+          "a": "الصيام وحده لا يغيّر وزن معظم الناس كثيرًا؛ إن أردت إنقاص وزنك فحجم الحصص والحلويات على مائدة الإفطار هما الحاسمان. أما الاستمرار في الحركة فيساعدك أساسًا على الحفاظ على لياقتك طوال الشهر."
+        }
+      ],
+      "references": [
+        {
+          "label": "Shephard RJ — The impact of Ramadan observance upon athletic performance. Nutrients, 2012",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/22822448/"
+        },
+        {
+          "label": "Aspetar (أسبيتار) — Evidence-Informed Ramadan Nutrition, Hydration, Sleep and Training Strategies for Physically Active Adults: A Practical Guide (Tabben M؛ مراجعة علمية: Chamari K وAziz AR وBen Saad H)",
+          "href": "https://www.aspetar.com/en/professionals/ramadan-evidence-informed-guide"
+        },
+        {
+          "label": "Chamari K وآخرون — Aspetar clinical guidelines: Ramadan fasting and exercise for healthy individuals. Tunis Med, 2023",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/37682254/"
+        },
+        {
+          "label": "Hassanein M وآخرون — Diabetes and Ramadan: Practical guidelines 2021 (IDF-DAR). Diabetes Res Clin Pract, 2022",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/35016991/"
+        },
+        {
+          "label": "منظمة الصحة العالمية — النشاط البدني (صحيفة وقائع)",
+          "href": "https://www.who.int/ar/news-room/fact-sheets/detail/physical-activity"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/ar/arriyada-waltartib.html",
+          "title": "الرياضة والترطيب",
+          "desc": "كم تشرب قبل التمرين وأثناءه وبعده؟"
+        },
+        {
+          "href": "/blog/ar/alamat-aljafaf.html",
+          "title": "علامات الجفاف",
+          "desc": "كيف يخبرك جسمك أنه يحتاج إلى الماء؟"
+        },
+        {
+          "href": "/blog/ar/almashi-am-aljary.html",
+          "title": "المشي أم الجري لإنقاص الوزن؟",
+          "desc": "السعرات والوقت وخطر الإصابة."
+        },
+        {
+          "href": "/blog/ar/alkasal-an-arriyada.html",
+          "title": "أشعر بالكسل عن الرياضة",
+          "desc": "7 طرق لتبدأ رغم ذلك."
+        }
+      ]
+    },
+    "ru": {
+      "slug": "sport-v-ramadan",
+      "read_minutes": 7,
+      "badge": "🌙 Руководство · Тренировки во время поста",
+      "h1": "Когда заниматься спортом в Рамадан: до ифтара или после (и как отслеживать это в Suu)",
+      "about": [
+        {
+          "name": "Пост в Рамадан"
+        },
+        {
+          "name": "Время тренировок"
+        },
+        {
+          "name": "Гидратация"
+        }
+      ],
+      "meta": {
+        "title": "Спорт в Рамадан: до ифтара или после? | Suu",
+        "description": "Лёгкая тренировка — прямо перед ифтаром, силовая и интенсивная — через 1–3 часа после него. План питья от ифтара до сухура, советы по сухуру и сну.",
+        "keywords": "спорт в рамадан, тренировки во время поста, когда тренироваться в рамадан, тренировка до ифтара, тренировка после ифтара, бег во время поста, силовые в рамадан, зал в рамадан, тренировка после таравиха",
+        "og_title": "Спорт в Рамадан: до ифтара или после?",
+        "og_description": "Какая тренировка в какой час, сколько пить между ифтаром и сухуром и как облегчить первую неделю. По руководству Aspetar и исследованиям."
+      },
+      "answer": "Во время поста лёгкие и умеренные тренировки — ходьбу, лёгкий бег, растяжку — проводите в последний час перед ифтаром: не дольше 60–75 минут вместе с разминкой и с окончанием ближе к закату, чтобы сразу попить и поесть. Силовые и высокоинтенсивные тренировки переносите на 1–3 часа после ифтара. В Suu тренировка записывается по GPS, а выпитое между ифтаром и сухуром — учитывается.",
+      "health_note": {
+        "head": "Эта статья не является медицинской консультацией.",
+        "body": [
+          "Информация носит общий характер и написана для здоровых взрослых. Если у вас диабет (особенно если вы принимаете инсулин или другие сахароснижающие препараты), болезни почек или сердца, повышенное давление, если вы беременны или кормите грудью, сначала обсудите пост и тренировки с врачом.",
+          "Если во время тренировки натощак появилось что-то из перечисленного, сразу остановитесь, при необходимости прервите пост и обратитесь за медицинской помощью:"
+        ],
+        "red_flags": [
+          "Головокружение, предобморочное состояние, затуманенное зрение",
+          "Дрожь, холодный пот, спутанность сознания (признаки низкого сахара в крови)",
+          "Боль в груди, сердцебиение или необычная одышка",
+          "Отсутствие мочеиспускания много часов или очень тёмная моча"
+        ]
+      },
+      "disclosure": "Это руководство написала команда из двух человек, которая создаёт Suu. Мы рекомендуем своё приложение, но советы опираются на руководство Aspetar по Рамадану, ВОЗ и рецензируемые исследования — те же шаги можно выполнять и без Suu.",
+      "intro": [
+        "Главный вопрос о спорте в Рамадан — не «можно ли», а <strong>когда и сколько</strong>. У большинства малоподвижных людей пост почти не меняет питание и вес; затрагивает он прежде всего тех, кто тренируется. К вечеру в мышцах становится меньше гликогена, в организме — жидкости, сон укорачивается, а это может снижать выносливость, силу и короткие взрывные усилия.<sup><a href=\"#ref1\">1</a></sup>",
+        "Поэтому выход — не бросать тренировки на месяц, а сдвинуть их по времени и изменить дозу. Именно это рекомендует руководство по Рамадану для здоровых взрослых от Aspetar — больницы ортопедии и спортивной медицины в Катаре: чем тяжелее тренировка, тем ближе к ифтару или после него.<sup><a href=\"#ref2\">2</a>,<a href=\"#ref3\">3</a></sup>"
+      ],
+      "analysis": [
+        {
+          "head": "Какая тренировка в какое время?",
+          "body": [
+            "Правило простое: чем выше интенсивность, тем ближе должны быть вода и еда.<sup><a href=\"#ref2\">2</a></sup>"
+          ],
+          "list": [
+            "<strong>Прямо перед ифтаром (последние 30–75 минут):</strong> ходьба, лёгкий бег, спокойный велосипед, растяжка и мобильность. Заканчивайте ближе к закату, чтобы первая вода и еда сразу начали восполнять потери. Не дольше 60–75 минут вместе с разминкой.",
+            "<strong>Через 1–3 часа после ифтара:</strong> силовые, интервалы, футбол и темповый бег. После обильного ифтара подождите 2–3 часа, после лёгкого — около часа. Пить можно прямо во время тренировки, поэтому это самое удобное окно для тяжёлой работы.",
+            "<strong>После таравиха, ночью:</strong> вариант тренировки после ифтара. Единственное условие — она не должна съедать сон; если отодвигает отбой, сделайте её короче.",
+            "<strong>После сухура:</strong> возможно, но тяжело. Впереди долгий день поста, и восполнить потери с потом до заката не получится; оставьте это время для короткой лёгкой активности.",
+            "<strong>В полуденную жару:</strong> избегайте. Потеть натощак и в жару — значит терять жидкость, которую не восполнить часами."
+          ],
+          "callout": "По данным обзора Шепарда, у большинства малоподвижных людей пост почти не меняет вес и общую калорийность рациона; снижение результатов заметно прежде всего у спортсменов, которые тренируются в жаркие месяцы с длинным световым днём.<sup><a href=\"#ref1\">1</a></sup> Рамадан каждый год сдвигается примерно на 11 дней раньше, поэтому длительность поста и жара меняются от года к году; летом нагрузку стоит снижать сильнее."
+        },
+        {
+          "head": "Облегчите первую неделю, потом возвращайтесь",
+          "body": [
+            "Организму нужно несколько дней, чтобы привыкнуть к новому режиму еды и сна. Руководство Aspetar предлагает в первую неделю уменьшить недельный объём (число подходов и общие минуты), при необходимости удлинить отдых между подходами и каждый день отмечать, насколько тяжёлой ощущалась тренировка.<sup><a href=\"#ref2\">2</a></sup>",
+            "Например, если до Рамадана вы бегали по 45 минут четыре раза в неделю, начните первую неделю с трёх пробежек по 30 минут; если легко — со второй недели возвращайтесь к обычному плану. Цель этого месяца — не рекорд, а сохранить набранную форму.",
+            "Полностью бросать движение тоже не выход: ВОЗ рекомендует взрослым не менее 150 минут умеренной активности в неделю, и в Рамадан эта цель остаётся.<sup><a href=\"#ref5\">5</a></sup> Даже спокойная прогулка на 20–30 минут после ифтара засчитывается."
+          ]
+        },
+        {
+          "head": "Вода между ифтаром и сухуром: понемногу и часто",
+          "body": [
+            "Дневные потери жидкости можно восполнить только между ифтаром и сухуром. Практическое руководство Aspetar предлагает активным взрослым не менее 3–4 литров жидкости за это время — примерно по 200 мл каждые 30 минут от ифтара до сна — и отмечает, что выпить много воды разом на сухуре многим тяжело.<sup><a href=\"#ref2\">2</a></sup>"
+          ],
+          "list": [
+            "Разговляйтесь водой и 1–3 финиками или тарелкой супа, сделайте короткую паузу и только потом переходите к основному блюду.",
+            "Распределите воду по вечеру; напоминание в телефоне вспомнит за вас.",
+            "После тренировки с потом добавьте продукты с большим содержанием воды — суп, арбуз, огурцы, кефир; при сильном потоотделении можно выпить напиток с электролитами.",
+            "Ограничьте чай и кофе, особенно перед сном: они дробят сон.",
+            "Очень солёная или жареная еда на сухуре может усилить жажду днём."
+          ],
+          "callout": "Самый простой ориентир — цвет мочи: светло-соломенный — хороший знак; если тёмно-жёлтый, пейте больше после ифтара.<sup><a href=\"#ref2\">2</a></sup>"
+        },
+        {
+          "head": "Сухур, ифтар и сон: невидимая половина тренировки",
+          "body": [
+            "Если тренируетесь днём, не пропускайте сухур: углеводы с клетчаткой (овсянка, цельнозерновой хлеб), белок (яйца, сыр, йогурт) и продукты с высоким содержанием воды помогают пройти день ровнее. Сухур лучше делать как можно ближе к рассвету.<sup><a href=\"#ref2\">2</a></sup>",
+            "Сильнее всего в Рамадан сокращается сон.<sup><a href=\"#ref1\">1</a></sup> Руководство советует дробный сон: сохраните основной ночной сон и добавьте дневной отдых на 20–45 минут после обеда. В дни тренировок распределяйте белок между ифтаром, приёмом после тренировки и сухуром; после вечерней тренировки хороший вариант перед сном — молоко или йогурт.<sup><a href=\"#ref2\">2</a></sup>",
+            "Если у вас диабет, адаптируйте этот раздел вместе с врачом: рекомендации IDF-DAR для людей с диабетом, соблюдающих пост, предлагают планировать нагрузки, лекарства и время еды индивидуально.<sup><a href=\"#ref4\">4</a></sup>"
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Где отслеживать это в Suu",
+        "lead": "Названия пунктов — как в приложении:",
+        "steps": [
+          {
+            "feature": "Настройте напоминания под ифтар и сухур",
+            "where_ios": "Настройки → Настройки уведомлений → <strong>Умные уведомления</strong>",
+            "where_android": "Настройки → <strong>Умные уведомления</strong>",
+            "solves": "Перенесите <strong>🌅 Утренние напоминания</strong> на время сухура, а <strong>🌆 Вечерние напоминания</strong> — на ифтар. В разделе <strong>Интервальные напоминания</strong> поставьте Начало на ифтар, а Конец — на время отбоя (не чаще раза в 2 часа; интервал должен заканчиваться до полуночи). Так Suu присылает напоминания о воде по времени ифтара и сухура."
+          },
+          {
+            "feature": "Запишите прогулку или пробежку перед ифтаром с GPS",
+            "where": "Главный экран → быстрое добавление → <strong>Добавить тренировку</strong> → Ходьба или Бег → старт",
+            "solves": "Время, дистанция, темп и маршрут записываются в реальном времени, расход калорий и влияние тренировки на норму воды считаются автоматически. Если начать с Apple Watch, будет виден и пульс — самый простой способ держать темп низким во время поста."
+          },
+          {
+            "feature": "Запишите ифтар одной фразой",
+            "where": "Главный экран → быстрое добавление → <strong>Добавить еду</strong> → микрофон или поле ввода",
+            "solves": "Достаточно сказать «два стакана воды, тарелка чечевичного супа, три финика и стакан айрана»: калории и макронутриенты посчитаются, а вода и айран пойдут в водный баланс. В бесплатном плане 3 анализа ИИ в день."
+          },
+          {
+            "feature": "Индекс Suu",
+            "where_ios": "Вкладка <strong>Ты</strong> → Вода → <strong>Suu Индекс</strong>",
+            "where_android": "<strong>Статистика</strong> → <strong>Suu Индекс</strong>",
+            "solves": "Оценивает дневную гидратацию от 0 до 100: вы видите, а не угадываете, хватило ли выпитого между ифтаром и сухуром."
+          }
+        ],
+        "note": "Тренировки с GPS бесплатны; анализ еды текстом или голосом — 3 раза в день в бесплатном плане. Время напоминаний вы каждый Рамадан выставляете сами под ифтар и сухур в вашем городе.",
+        "button": "Скачать Suu бесплатно"
+      },
+      "verdict": {
+        "head": "Коротко",
+        "body": [
+          "Тренироваться в Рамадан можно — важны время и доза. Лёгкие тренировки ставьте прямо перед ифтаром, силовые и тяжёлые — через 1–3 часа после него, а первую неделю облегчите.",
+          "Главное происходит между ифтаром и сухуром: распределяйте воду, не пропускайте сухур, берегите сон. Тогда после праздника вы сохраните форму, а не начнёте с нуля."
+        ]
+      },
+      "cta": {
+        "head": "Запишите прогулку перед ифтаром уже сегодня",
+        "sub": "Тренировки с GPS бесплатны · iOS и Android",
+        "button": "Скачать Suu бесплатно"
+      },
+      "faq": [
+        {
+          "q": "Можно ли заниматься спортом во время поста?",
+          "a": "Здоровым взрослым — да, важны время и интенсивность. Лёгкие и умеренные тренировки — прямо перед ифтаром, силовые и высокоинтенсивные — после ифтара. При хронических заболеваниях сначала посоветуйтесь с врачом."
+        },
+        {
+          "q": "Когда лучше тренироваться в Рамадан — до ифтара или после?",
+          "a": "Подходят оба варианта, всё зависит от тренировки. Ходьба, лёгкий бег и растяжка — прямо перед ифтаром, не дольше 60–75 минут с разминкой. Силовые, интервалы и игры — через 1–3 часа после ифтара."
+        },
+        {
+          "q": "Через сколько после ифтара можно тренироваться?",
+          "a": "Зависит от объёма еды: после обильного ифтара — через 2–3 часа, после лёгкого — примерно через час. Тренировка после таравиха тоже подходит, если не сдвигает сон слишком поздно."
+        },
+        {
+          "q": "Можно ли делать силовые во время поста?",
+          "a": "Можно, но лучшее время — после ифтара: можно пить во время тренировки и получить белок после неё. В первую неделю сократите число подходов и удлините отдых между ними."
+        },
+        {
+          "q": "Стоит ли тренироваться после сухура?",
+          "a": "Возможно, но тяжело: впереди долгий день поста, и восполнить потери с потом до заката не получится. Ограничьтесь короткой лёгкой активностью."
+        },
+        {
+          "q": "Можно ли похудеть, если тренироваться в Рамадан?",
+          "a": "Сам пост у большинства людей почти не меняет вес; если хотите похудеть, решают порции и сладкое на ифтаре. Движение в основном помогает сохранить форму на весь месяц."
+        }
+      ],
+      "references": [
+        {
+          "label": "Shephard RJ — The impact of Ramadan observance upon athletic performance. Nutrients, 2012",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/22822448/"
+        },
+        {
+          "label": "Aspetar — Evidence-Informed Ramadan Nutrition, Hydration, Sleep and Training Strategies for Physically Active Adults: A Practical Guide (Tabben M; научная редакция: Chamari K, Aziz AR, Ben Saad H)",
+          "href": "https://www.aspetar.com/en/professionals/ramadan-evidence-informed-guide"
+        },
+        {
+          "label": "Chamari K и соавт. — Aspetar clinical guidelines: Ramadan fasting and exercise for healthy individuals. Tunis Med, 2023",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/37682254/"
+        },
+        {
+          "label": "Hassanein M и соавт. — Diabetes and Ramadan: Practical guidelines 2021 (IDF-DAR). Diabetes Res Clin Pract, 2022",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/35016991/"
+        },
+        {
+          "label": "ВОЗ — Физическая активность (информационный бюллетень)",
+          "href": "https://www.who.int/ru/news-room/fact-sheets/detail/physical-activity"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/ru/sport-i-gidratatsiya.html",
+          "title": "Спорт и гидратация",
+          "desc": "Сколько пить до, во время и после тренировки."
+        },
+        {
+          "href": "/blog/ru/priznaki-obezvozhivaniya.html",
+          "title": "Признаки обезвоживания",
+          "desc": "Как тело сообщает, что ему нужна вода."
+        },
+        {
+          "href": "/blog/ru/hodba-ili-beg.html",
+          "title": "Ходьба или бег для похудения?",
+          "desc": "Калории, время и риск травм."
+        },
+        {
+          "href": "/blog/ru/len-zanimatsya-sportom.html",
+          "title": "Лень заниматься спортом",
+          "desc": "7 способов начать без мотивации."
+        }
+      ]
+    },
+    "de": {
+      "slug": "sport-im-ramadan",
+      "read_minutes": 7,
+      "badge": "🌙 Ratgeber · Training beim Fasten",
+      "h1": "Sport im Ramadan: vor oder nach dem Iftar? (und wie du es in Suu verfolgst)",
+      "about": [
+        {
+          "name": "Ramadan-Fasten"
+        },
+        {
+          "name": "Trainingszeitpunkt"
+        },
+        {
+          "name": "Flüssigkeitszufuhr"
+        }
+      ],
+      "meta": {
+        "title": "Sport im Ramadan: vor oder nach dem Iftar? | Suu",
+        "description": "Leichtes Training kurz vor dem Iftar, Krafttraining und harte Einheiten 1–3 Stunden danach. Trinkplan zwischen Iftar und Suhur, Tipps zu Suhur und Schlaf.",
+        "keywords": "sport im ramadan, training beim fasten, wann trainieren im ramadan, training vor dem iftar, training nach dem iftar, joggen beim fasten, krafttraining ramadan, fitnessstudio ramadan, training nach tarawih",
+        "og_title": "Sport im Ramadan: vor oder nach dem Iftar?",
+        "og_description": "Welche Einheit zu welcher Uhrzeit, wie viel du zwischen Iftar und Suhur trinkst und wie du die erste Woche anpasst – nach der Aspetar-Leitlinie und Studien."
+      },
+      "answer": "Wenn du fastest, leg leichtes bis moderates Training – Gehen, lockeres Laufen, Mobility – in die letzte Stunde vor dem Iftar: höchstens 60–75 Minuten inklusive Aufwärmen und so, dass du kurz vor Sonnenuntergang fertig bist und gleich trinken und essen kannst. Krafttraining und hochintensive Einheiten verschiebst du auf 1–3 Stunden nach dem Iftar. Suu zeichnet das Training per GPS auf und erfasst, was du zwischen Iftar und Suhur trinkst.",
+      "health_note": {
+        "head": "Dieser Artikel ist keine medizinische Beratung.",
+        "body": [
+          "Er bietet allgemeine Informationen für gesunde Erwachsene. Wenn du Diabetes hast (besonders mit Insulin oder anderen blutzuckersenkenden Medikamenten), eine Nieren- oder Herzerkrankung oder Bluthochdruck, schwanger bist oder stillst, plane Fasten und Training zuerst mit deiner Ärztin oder deinem Arzt.",
+          "Wenn beim Training im Fastenzustand eines davon auftritt, hör sofort auf – brich das Fasten bei Bedarf – und hol dir medizinische Hilfe:"
+        ],
+        "red_flags": [
+          "Schwindel, Schwächegefühl oder verschwommenes Sehen",
+          "Zittern, kalter Schweiß oder Verwirrtheit (Zeichen von Unterzucker)",
+          "Brustschmerzen, Herzrasen oder ungewöhnliche Atemnot",
+          "Über viele Stunden kein Wasserlassen oder sehr dunkler Urin"
+        ]
+      },
+      "disclosure": "Diesen Ratgeber haben wir als das zweiköpfige Team geschrieben, das Suu entwickelt. Wir empfehlen unsere App, aber die Tipps stützen sich auf die Ramadan-Leitlinie von Aspetar, das Bundesgesundheitsministerium und begutachtete Studien – du kannst die Schritte auch ohne Suu umsetzen.",
+      "intro": [
+        "Die eigentliche Frage beim Sport im Ramadan ist nicht <em>ob</em>, sondern <strong>wann und wie viel</strong>. Bei den meisten wenig aktiven Menschen verändert das Fasten Ernährung und Körpergewicht kaum; betroffen sind vor allem die, die trainieren. Im Lauf des Tages sinken Muskelglykogen und Körperflüssigkeit, der Schlaf wird kürzer – das kann Ausdauer, Kraft und kurze explosive Belastungen dämpfen.<sup><a href=\"#ref1\">1</a></sup>",
+        "Die Lösung ist also nicht, einen Monat lang zu pausieren, sondern Uhrzeit und Dosis anzupassen. Genau das empfiehlt die Ramadan-Leitlinie für gesunde Erwachsene von Aspetar, der Klinik für Orthopädie und Sportmedizin in Katar: Je härter die Einheit, desto näher am Iftar – oder danach.<sup><a href=\"#ref2\">2</a>,<a href=\"#ref3\">3</a></sup>"
+      ],
+      "analysis": [
+        {
+          "head": "Welches Training zu welcher Uhrzeit?",
+          "body": [
+            "Die Regel ist einfach: Je intensiver das Training, desto näher solltest du an Wasser und Essen sein.<sup><a href=\"#ref2\">2</a></sup>"
+          ],
+          "list": [
+            "<strong>Kurz vor dem Iftar (die letzten 30–75 Minuten):</strong> Gehen, lockeres Laufen, entspanntes Radfahren, Dehnen und Mobility. Hör nah am Sonnenuntergang auf, damit das erste Getränk und Essen die Verluste sofort ausgleichen. Höchstens 60–75 Minuten inklusive Aufwärmen.",
+            "<strong>1–3 Stunden nach dem Iftar:</strong> Krafttraining, Intervalle, Fußball und Tempoläufe. Nach einem üppigen Iftar 2–3 Stunden warten, nach einem leichten Start reicht etwa eine Stunde. Du kannst während des Trainings trinken – das ist das bequemste Fenster für harte Einheiten.",
+            "<strong>Nach dem Tarawih, nachts:</strong> eine Variante des Trainings nach dem Iftar. Einzige Bedingung: Es darf dir nicht den Schlaf rauben; verschiebt es die Schlafenszeit, halte es kurz.",
+            "<strong>Nach dem Suhur:</strong> möglich, aber hart. Vor dir liegt ein langer Fastentag, und was du ausschwitzt, kannst du bis Sonnenuntergang nicht ersetzen; nutze diese Zeit nur für kurze, leichte Bewegung.",
+            "<strong>In der Mittagshitze:</strong> vermeiden. Schwitzen im Fastenzustand und bei Hitze heißt Verluste, die du stundenlang nicht ausgleichen kannst."
+          ],
+          "callout": "Laut der Übersichtsarbeit von Shephard verändert das Fasten bei den meisten wenig aktiven Menschen weder das Körpergewicht noch die gesamte Energieaufnahme nennenswert; Leistungseinbußen zeigen sich vor allem bei Sportlerinnen und Sportlern, die in heißen Monaten mit langen Tagen trainieren.<sup><a href=\"#ref1\">1</a></sup> Der Ramadan rückt jedes Jahr etwa 11 Tage nach vorn, Fastendauer und Hitze ändern sich also – im Sommer-Ramadan solltest du die Belastung stärker senken."
+        },
+        {
+          "head": "Erste Woche leichter, dann zurück zum Plan",
+          "body": [
+            "Dein Körper braucht ein paar Tage, um sich an den neuen Essens- und Schlafrhythmus zu gewöhnen. Die Aspetar-Leitlinie rät, in der ersten Woche das Wochenvolumen (Sätze und Gesamtminuten) zu senken, bei Bedarf längere Satzpausen einzulegen und täglich zu notieren, wie anstrengend sich das Training anfühlt.<sup><a href=\"#ref2\">2</a></sup>",
+            "Beispiel: Bist du vor dem Ramadan viermal pro Woche 45 Minuten gelaufen, starte die erste Woche mit dreimal 30 Minuten; fühlt sich das leicht an, kehr ab der zweiten Woche zu deinem gewohnten Plan zurück. Ziel in diesem Monat ist keine Bestzeit, sondern deine Form zu halten.",
+            "Ganz aufzuhören ist auch keine Lösung: Erwachsenen werden mindestens 150 Minuten moderate Bewegung pro Woche empfohlen, und das gilt auch im Ramadan.<sup><a href=\"#ref5\">5</a></sup> Schon ein ruhiger Spaziergang von 20–30 Minuten nach dem Iftar zählt."
+          ]
+        },
+        {
+          "head": "Wasser zwischen Iftar und Suhur: wenig und oft",
+          "body": [
+            "Die Flüssigkeitsverluste des Tages kannst du nur zwischen Iftar und Suhur ausgleichen. Der Praxisleitfaden von Aspetar nennt für aktive Erwachsene mindestens 3–4 Liter in diesem Zeitraum, etwa 200 ml alle 30 Minuten vom Iftar bis zum Schlafengehen, und weist darauf hin, dass große Mengen auf einmal beim Suhur von vielen schlecht vertragen werden.<sup><a href=\"#ref2\">2</a></sup>"
+          ],
+          "list": [
+            "Brich das Fasten mit Wasser und 1–3 Datteln oder einer Schale Suppe, mach eine kurze Pause und iss dann die Hauptmahlzeit.",
+            "Verteile das Wasser über den Abend; eine Erinnerung auf dem Handy denkt für dich mit.",
+            "Nach einem schweißtreibenden Training helfen wasserreiche Lebensmittel wie Suppe, Wassermelone, Gurke oder Ayran; bei starkem Schwitzen kann ein Elektrolytgetränk sinnvoll sein.",
+            "Tee und Kaffee begrenzen, besonders vor dem Schlafen – sie stören den Schlaf.",
+            "Sehr salziges oder frittiertes Essen zum Suhur kann tagsüber durstiger machen."
+          ],
+          "callout": "Der einfachste Check ist die Urinfarbe: hellgelb ist ein gutes Zeichen; ist sie dunkelgelb, trink nach dem Iftar mehr.<sup><a href=\"#ref2\">2</a></sup>"
+        },
+        {
+          "head": "Suhur, Iftar und Schlaf: die unsichtbare Hälfte des Trainings",
+          "body": [
+            "Wenn du tagsüber trainierst, lass den Suhur nicht aus: ballaststoffreiche Kohlenhydrate (Haferflocken, Vollkornbrot), Eiweiß (Eier, Käse, Joghurt) und wasserreiche Lebensmittel bringen dich gleichmäßiger durch den Tag. Iss den Suhur möglichst kurz vor der Morgendämmerung.<sup><a href=\"#ref2\">2</a></sup>",
+            "Am stärksten schrumpft im Ramadan der Schlaf.<sup><a href=\"#ref1\">1</a></sup> Die Leitlinie empfiehlt geteilten Schlaf: Schütze deinen Kernschlaf in der Nacht und ergänze ein Nickerchen von 20–45 Minuten am frühen Nachmittag. An Trainingstagen verteile Eiweiß auf Iftar, die Mahlzeit nach dem Training und Suhur; nach einem Abendtraining sind Milch oder Joghurt vor dem Schlafen eine gute Wahl.<sup><a href=\"#ref2\">2</a></sup>",
+            "Wenn du Diabetes hast, pass diesen Teil mit deiner Ärztin oder deinem Arzt an: Die IDF-DAR-Leitlinien für fastende Menschen mit Diabetes empfehlen, Bewegung, Medikamente und Essenszeiten individuell zu planen.<sup><a href=\"#ref4\">4</a></sup>"
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "So verfolgst du das in Suu",
+        "lead": "Menünamen genau wie in der App:",
+        "steps": [
+          {
+            "feature": "Erinnerungen auf Iftar und Suhur legen",
+            "where_ios": "Einstellungen → Benachrichtigungseinstellungen → <strong>Intelligente Benachrichtigungen</strong>",
+            "where_android": "Einstellungen → <strong>Smarte Benachrichtigungen</strong>",
+            "solves": "Verlege die <strong>🌅 Morgen-Erinnerungen</strong> auf deine Suhur-Zeit und die <strong>🌆 Abend-Erinnerungen</strong> auf den Iftar. Unter <strong>Intervall-Erinnerungen</strong> setzt du Start auf den Iftar und Ende auf deine Schlafenszeit (höchstens alle 2 Stunden; das Fenster muss vor Mitternacht enden). So schickt Suu deine Trink-Erinnerungen passend zu Iftar und Suhur."
+          },
+          {
+            "feature": "Spaziergang oder Lauf vor dem Iftar per GPS aufzeichnen",
+            "where": "Startbildschirm → Schnell hinzufügen → <strong>Übung hinzufügen</strong> → Gehen oder Laufen → Start",
+            "solves": "Zeit, Distanz, Tempo und Route werden live aufgezeichnet; verbrannte Kalorien und der Einfluss des Trainings auf dein Trinkziel werden automatisch berechnet. Startest du auf der Apple Watch, siehst du auch deinen Puls live – der einfachste Weg, beim Fasten locker zu bleiben."
+          },
+          {
+            "feature": "Den Iftar in einem Satz eintragen",
+            "where": "Startbildschirm → Schnell hinzufügen → <strong>Essen hinzufügen</strong> → Mikrofon oder Textfeld",
+            "solves": "„Zwei Gläser Wasser, eine Schale Linsensuppe, drei Datteln und ein Glas Ayran“ reicht: Kalorien und Makros werden berechnet, Wasser und Ayran zählen zu deiner Flüssigkeitsbilanz. Im kostenlosen Plan 3 KI-Analysen pro Tag."
+          },
+          {
+            "feature": "Suu-Index",
+            "where_ios": "Tab <strong>Du</strong> → Wasser → <strong>Suu-Index</strong>",
+            "where_android": "<strong>Statistiken</strong> → <strong>Suu-Index</strong>",
+            "solves": "Bewertet deine tägliche Flüssigkeitsversorgung von 0 bis 100 – du siehst, statt zu raten, ob das, was du zwischen Iftar und Suhur getrunken hast, gereicht hat."
+          }
+        ],
+        "note": "GPS-Training ist kostenlos; Mahlzeiten-Analyse per Text oder Sprache im kostenlosen Plan 3-mal pro Tag. Die Erinnerungszeiten stellst du in jedem Ramadan selbst auf Iftar und Suhur in deiner Stadt ein.",
+        "button": "Suu kostenlos laden"
+      },
+      "verdict": {
+        "head": "Kurz gesagt",
+        "body": [
+          "Sport im Ramadan geht – entscheidend sind Uhrzeit und Dosis. Leichtes Training kurz vor dem Iftar, Kraft und harte Einheiten 1–3 Stunden danach, und die erste Woche etwas leichter.",
+          "Die eigentliche Arbeit passiert zwischen Iftar und Suhur: Wasser verteilen, Suhur nicht auslassen, Schlaf schützen. So gehst du mit deiner Form ins Fest, statt danach bei null anzufangen."
+        ]
+      },
+      "cta": {
+        "head": "Zeichne deinen Spaziergang vor dem Iftar heute auf",
+        "sub": "GPS-Training ist kostenlos · iOS und Android",
+        "button": "Suu kostenlos laden"
+      },
+      "faq": [
+        {
+          "q": "Darf man beim Fasten im Ramadan Sport machen?",
+          "a": "Gesunde Erwachsene ja – entscheidend sind Uhrzeit und Intensität. Leichtes bis moderates Training kurz vor dem Iftar, Krafttraining und hochintensive Einheiten nach dem Iftar. Bei chronischen Erkrankungen vorher ärztlich abklären."
+        },
+        {
+          "q": "Besser vor oder nach dem Iftar trainieren?",
+          "a": "Beides funktioniert, es hängt vom Training ab. Gehen, lockeres Laufen und Dehnen kurz vor dem Iftar, höchstens 60–75 Minuten inklusive Aufwärmen. Krafttraining, Intervalle und Spiele 1–3 Stunden nach dem Iftar."
+        },
+        {
+          "q": "Wie lange nach dem Iftar sollte ich warten?",
+          "a": "Das hängt von der Mahlzeit ab: nach einem üppigen Iftar 2–3 Stunden, nach einem leichten Start etwa eine Stunde. Training nach dem Tarawih passt auch, solange es die Schlafenszeit nicht zu weit nach hinten schiebt."
+        },
+        {
+          "q": "Kann ich beim Fasten Krafttraining machen?",
+          "a": "Ja, am besten nach dem Iftar: Dann kannst du während des Trainings trinken und danach Eiweiß essen. In der ersten Woche weniger Sätze und längere Pausen."
+        },
+        {
+          "q": "Ist Training nach dem Suhur sinnvoll?",
+          "a": "Möglich, aber hart: Vor dir liegt ein langer Fastentag, und was du ausschwitzt, kannst du bis Sonnenuntergang nicht ersetzen. Beschränk dich auf kurze, leichte Bewegung."
+        },
+        {
+          "q": "Nehme ich ab, wenn ich im Ramadan Sport mache?",
+          "a": "Das Fasten selbst verändert das Gewicht bei den meisten kaum; wer abnehmen will, entscheidet das über Portionen und Süßes beim Iftar. Bewegung hilft vor allem, die Form durch den Monat zu halten."
+        }
+      ],
+      "references": [
+        {
+          "label": "Shephard RJ — The impact of Ramadan observance upon athletic performance. Nutrients, 2012",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/22822448/"
+        },
+        {
+          "label": "Aspetar — Evidence-Informed Ramadan Nutrition, Hydration, Sleep and Training Strategies for Physically Active Adults: A Practical Guide (Tabben M; fachliche Prüfung: Chamari K, Aziz AR, Ben Saad H)",
+          "href": "https://www.aspetar.com/en/professionals/ramadan-evidence-informed-guide"
+        },
+        {
+          "label": "Chamari K et al. — Aspetar clinical guidelines: Ramadan fasting and exercise for healthy individuals. Tunis Med, 2023",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/37682254/"
+        },
+        {
+          "label": "Hassanein M et al. — Diabetes and Ramadan: Practical guidelines 2021 (IDF-DAR). Diabetes Res Clin Pract, 2022",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/35016991/"
+        },
+        {
+          "label": "gesund.bund.de (Bundesministerium für Gesundheit) — Gesund durch Bewegung",
+          "href": "https://gesund.bund.de/gesund-durch-bewegung"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/de/gehen-oder-laufen-abnehmen.html",
+          "title": "Gehen oder Laufen zum Abnehmen?",
+          "desc": "Kalorien, Zeit und Verletzungsrisiko."
+        },
+        {
+          "href": "/blog/de/kalorienverbrauch-beim-sport.html",
+          "title": "Kalorienverbrauch beim Sport",
+          "desc": "Realistische Werte für Gehen, Laufen und Rad."
+        },
+        {
+          "href": "/blog/de/wasser-trinken-vergessen.html",
+          "title": "Wasser trinken vergessen?",
+          "desc": "So wird Trinken zur Gewohnheit."
+        },
+        {
+          "href": "/blog/de/keine-lust-auf-sport.html",
+          "title": "Keine Lust auf Sport?",
+          "desc": "7 Wege, trotzdem anzufangen."
+        }
+      ]
+    },
+    "it": {
+      "slug": "sport-durante-il-ramadan",
+      "read_minutes": 7,
+      "badge": "🌙 Guida · Allenarsi durante il digiuno",
+      "h1": "Sport durante il Ramadan: prima o dopo l'iftar? (e come monitorarlo in Suu)",
+      "about": [
+        {
+          "name": "Digiuno del Ramadan"
+        },
+        {
+          "name": "Orario dell'allenamento"
+        },
+        {
+          "name": "Idratazione"
+        }
+      ],
+      "meta": {
+        "title": "Sport durante il Ramadan: prima o dopo l'iftar? | Suu",
+        "description": "Allenamento leggero subito prima dell'iftar, pesi e sedute intense 1–3 ore dopo. Piano per bere tra iftar e suhur, consigli su suhur e sonno.",
+        "keywords": "sport durante il ramadan, allenarsi durante il digiuno, quando allenarsi nel ramadan, allenamento prima dell'iftar, allenamento dopo l'iftar, correre a digiuno ramadan, pesi durante il ramadan, palestra ramadan",
+        "og_title": "Sport durante il Ramadan: prima o dopo l'iftar?",
+        "og_description": "Quale seduta a che ora, quanto bere tra iftar e suhur e come alleggerire la prima settimana. Secondo le linee guida Aspetar e la ricerca."
+      },
+      "answer": "Se digiuni, fai le sedute leggere e moderate – camminata, corsa lenta, mobilità – nell'ultima ora prima dell'iftar: al massimo 60–75 minuti riscaldamento compreso, finendo vicino al tramonto così puoi bere e mangiare subito. Sposta pesi e lavori ad alta intensità a 1–3 ore dopo l'iftar. Suu registra l'allenamento con il GPS e tiene il conto di quanto bevi tra iftar e suhur.",
+      "health_note": {
+        "head": "Questo articolo non è un consiglio medico.",
+        "body": [
+          "Contiene informazioni generali pensate per adulti sani. Se hai il diabete (soprattutto se usi insulina o altri farmaci che abbassano la glicemia), malattie renali o cardiache, pressione alta, o se sei in gravidanza o allatti, pianifica digiuno e allenamento prima con il tuo medico.",
+          "Se durante un allenamento a digiuno compare uno di questi segnali, fermati subito – interrompi il digiuno se necessario – e chiedi aiuto medico:"
+        ],
+        "red_flags": [
+          "Capogiri, sensazione di svenimento o vista offuscata",
+          "Tremori, sudore freddo o confusione (segni di glicemia bassa)",
+          "Dolore al petto, palpitazioni o affanno insolito",
+          "Nessuna minzione per molte ore oppure urina molto scura"
+        ]
+      },
+      "disclosure": "Abbiamo scritto questa guida come il team di due persone che sviluppa Suu. Consigliamo la nostra app, ma i consigli si basano sulle linee guida Aspetar per il Ramadan, sull'Istituto Superiore di Sanità e su studi sottoposti a revisione: puoi seguire gli stessi passi anche senza Suu.",
+      "intro": [
+        "La vera domanda sullo sport nel Ramadan non è <em>se</em>, ma <strong>quando e quanto</strong>. Per la maggior parte delle persone sedentarie il digiuno cambia poco l'alimentazione e il peso; a risentirne è soprattutto chi si allena. Con il passare delle ore calano glicogeno muscolare e liquidi corporei e il sonno si accorcia: questo può ridurre resistenza, forza e sforzi brevi ed esplosivi.<sup><a href=\"#ref1\">1</a></sup>",
+        "Per questo la soluzione non è smettere per un mese, ma spostare l'allenamento e regolarne la dose. È proprio ciò che raccomanda la linea guida sul Ramadan per adulti sani di Aspetar, l'ospedale di ortopedia e medicina dello sport del Qatar: più la seduta è dura, più va vicina all'iftar, o dopo.<sup><a href=\"#ref2\">2</a>,<a href=\"#ref3\">3</a></sup>"
+      ],
+      "analysis": [
+        {
+          "head": "Quale allenamento, a che ora?",
+          "body": [
+            "La regola è semplice: più l'allenamento è intenso, più acqua e cibo devono essere vicini.<sup><a href=\"#ref2\">2</a></sup>"
+          ],
+          "list": [
+            "<strong>Subito prima dell'iftar (gli ultimi 30–75 minuti):</strong> camminata, corsa lenta, bici tranquilla, stretching e mobilità. Finisci vicino al tramonto, così la prima acqua e il primo pasto iniziano subito a recuperare le perdite. Al massimo 60–75 minuti riscaldamento compreso.",
+            "<strong>1–3 ore dopo l'iftar:</strong> pesi, ripetute, calcetto e corsa a ritmo sostenuto. Dopo un iftar abbondante aspetta 2–3 ore, dopo un inizio leggero basta circa un'ora. Puoi bere durante la seduta: è la finestra più comoda per il lavoro duro.",
+            "<strong>Dopo il tarawih, la sera tardi:</strong> una variante dell'allenamento dopo l'iftar. L'unica condizione è che non tolga sonno; se sposta troppo l'ora di andare a letto, accorcialo.",
+            "<strong>Dopo il suhur:</strong> possibile ma faticoso. Ti aspetta una lunga giornata di digiuno e non potrai reintegrare il sudore fino al tramonto; usa questa fascia solo per movimento breve e leggero.",
+            "<strong>Nel caldo di mezzogiorno:</strong> evitalo. Sudare a digiuno e al caldo significa perdite che non recuperi per ore."
+          ],
+          "callout": "Secondo la revisione di Shephard, nella maggior parte delle persone sedentarie il digiuno cambia poco il peso e l'apporto energetico totale; i cali di prestazione si vedono soprattutto negli atleti che si allenano nei mesi caldi con giornate lunghe.<sup><a href=\"#ref1\">1</a></sup> Il Ramadan anticipa di circa 11 giorni ogni anno, quindi durata del digiuno e caldo cambiano da un anno all'altro: nei Ramadan estivi riduci di più il carico."
+        },
+        {
+          "head": "Prima settimana più leggera, poi si riparte",
+          "body": [
+            "Il corpo ha bisogno di qualche giorno per abituarsi ai nuovi orari di pasti e sonno. La guida Aspetar suggerisce di ridurre nella prima settimana il volume settimanale (serie e minuti totali), allungare i recuperi tra le serie se serve e annotare ogni giorno quanto pesa l'allenamento.<sup><a href=\"#ref2\">2</a></sup>",
+            "Per esempio, se prima del Ramadan correvi 45 minuti quattro volte a settimana, inizia la prima settimana con tre uscite da 30 minuti; se ti senti bene, dalla seconda settimana torna al tuo piano abituale. L'obiettivo di questo mese non è il record, ma mantenere la forma.",
+            "Fermarsi del tutto non è la soluzione: le linee guida OMS riprese dall'Istituto Superiore di Sanità indicano per gli adulti 150–300 minuti di attività moderata a settimana, e valgono anche nel Ramadan.<sup><a href=\"#ref5\">5</a></sup> Anche una camminata tranquilla di 20–30 minuti dopo l'iftar conta."
+          ]
+        },
+        {
+          "head": "Acqua tra iftar e suhur: poca e spesso",
+          "body": [
+            "Le perdite di liquidi della giornata si possono recuperare solo tra iftar e suhur. La guida pratica di Aspetar indica per gli adulti attivi almeno 3–4 litri in questa finestra, circa 200 ml ogni 30 minuti dall'iftar fino a dormire, e ricorda che bere grandi quantità tutte insieme al suhur è mal tollerato da molti.<sup><a href=\"#ref2\">2</a></sup>"
+          ],
+          "list": [
+            "Rompi il digiuno con acqua e 1–3 datteri o una scodella di zuppa, fai una breve pausa e poi passa al pasto principale.",
+            "Distribuisci l'acqua lungo la serata: un promemoria sul telefono si ricorda al posto tuo.",
+            "Dopo un allenamento sudato aggiungi cibi ricchi d'acqua come zuppa, anguria, cetriolo o yogurt; se hai sudato molto valuta una bevanda con elettroliti.",
+            "Limita tè e caffè, soprattutto prima di dormire: frammentano il sonno.",
+            "Cibi molto salati o fritti al suhur possono aumentare la sete durante il giorno."
+          ],
+          "callout": "Il controllo più semplice è il colore delle urine: giallo paglierino chiaro è un buon segno; se è giallo scuro, bevi di più dopo l'iftar.<sup><a href=\"#ref2\">2</a></sup>"
+        },
+        {
+          "head": "Suhur, iftar e sonno: la metà invisibile dell'allenamento",
+          "body": [
+            "Se ti alleni di giorno non saltare il suhur: carboidrati ricchi di fibre (avena, pane integrale), proteine (uova, formaggio, yogurt) e cibi ricchi d'acqua rendono la giornata più regolare. Fai il suhur il più vicino possibile all'alba.<sup><a href=\"#ref2\">2</a></sup>",
+            "Nel Ramadan la cosa che si accorcia di più è il sonno.<sup><a href=\"#ref1\">1</a></sup> La guida consiglia il sonno frazionato: proteggi il sonno principale della notte e aggiungi un pisolino di 20–45 minuti nel primo pomeriggio. Nei giorni di allenamento distribuisci le proteine tra iftar, dopo l'allenamento e suhur; dopo una seduta serale latte o yogurt prima di dormire sono una buona scelta.<sup><a href=\"#ref2\">2</a></sup>",
+            "Se hai il diabete, adatta questa parte con il tuo medico: le linee guida IDF-DAR per chi ha il diabete e digiuna raccomandano di pianificare esercizio, farmaci e orari dei pasti in modo individuale.<sup><a href=\"#ref4\">4</a></sup>"
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Dove monitorarlo in Suu",
+        "lead": "I nomi dei menu sono quelli dell'app:",
+        "steps": [
+          {
+            "feature": "Imposta i promemoria su iftar e suhur",
+            "where_ios": "Impostazioni → Impostazioni notifiche → <strong>Notifiche intelligenti</strong>",
+            "where_android": "Impostazioni → <strong>Notifiche intelligenti</strong>",
+            "solves": "Sposta i <strong>🌅 Promemoria del mattino</strong> all'ora del suhur e i <strong>🌆 Promemoria della sera</strong> all'iftar. In <strong>Promemoria a intervalli</strong> imposta Inizio all'iftar e Fine all'ora in cui vai a dormire (al massimo ogni 2 ore; la finestra deve finire prima di mezzanotte). Così Suu ti manda i promemoria per bere in base agli orari di iftar e suhur."
+          },
+          {
+            "feature": "Registra la camminata o la corsa prima dell'iftar con il GPS",
+            "where": "Schermata principale → aggiunta rapida → <strong>Aggiungi esercizio</strong> → Camminata o Corsa → avvia",
+            "solves": "Tempo, distanza, ritmo e percorso vengono registrati in diretta; calorie bruciate ed effetto dell'allenamento sull'obiettivo d'acqua si calcolano da soli. Se parti da Apple Watch vedi anche il battito in tempo reale: il modo più semplice per restare tranquillo a digiuno."
+          },
+          {
+            "feature": "Registra l'iftar con una frase",
+            "where": "Schermata principale → aggiunta rapida → <strong>Aggiungi cibo</strong> → microfono o campo di testo",
+            "solves": "Basta dire «due bicchieri d'acqua, una scodella di zuppa di lenticchie, tre datteri e un bicchiere di ayran»: calorie e macro vengono calcolati e acqua e ayran entrano nel bilancio dei liquidi. Nel piano gratuito 3 analisi IA al giorno."
+          },
+          {
+            "feature": "Indice Suu",
+            "where_ios": "Scheda <strong>Tu</strong> → Acqua → <strong>Indice Suu</strong>",
+            "where_android": "<strong>Statistiche</strong> → <strong>Indice Suu</strong>",
+            "solves": "Valuta la tua idratazione giornaliera da 0 a 100: vedi, invece di indovinare, se quello che hai bevuto tra iftar e suhur è bastato."
+          }
+        ],
+        "note": "Gli allenamenti con GPS sono gratuiti; l'analisi dei pasti a testo o a voce è 3 volte al giorno nel piano gratuito. Gli orari dei promemoria li imposti tu ogni Ramadan in base a iftar e suhur della tua città.",
+        "button": "Scarica Suu gratis"
+      },
+      "verdict": {
+        "head": "In breve",
+        "body": [
+          "Nel Ramadan ci si può allenare: contano l'orario e la dose. Sedute leggere subito prima dell'iftar, pesi e lavori duri 1–3 ore dopo, e una prima settimana più leggera.",
+          "Il lavoro vero si fa tra iftar e suhur: distribuisci l'acqua, non saltare il suhur, proteggi il sonno. Così arrivi alla festa in forma invece di ripartire da zero."
+        ]
+      },
+      "cta": {
+        "head": "Registra oggi la camminata prima dell'iftar",
+        "sub": "Allenamenti con GPS gratuiti · iOS e Android",
+        "button": "Scarica Suu gratis"
+      },
+      "faq": [
+        {
+          "q": "Si può fare sport durante il digiuno del Ramadan?",
+          "a": "Per gli adulti sani sì: contano orario e intensità. Sedute leggere e moderate subito prima dell'iftar, pesi e alta intensità dopo l'iftar. Se hai una malattia cronica, parlane prima con il medico."
+        },
+        {
+          "q": "Meglio allenarsi prima o dopo l'iftar?",
+          "a": "Vanno bene entrambi, dipende dalla seduta. Camminata, corsa lenta e stretching subito prima dell'iftar, al massimo 60–75 minuti riscaldamento compreso; pesi, ripetute e partite 1–3 ore dopo l'iftar."
+        },
+        {
+          "q": "Quanto aspettare dopo l'iftar prima di allenarsi?",
+          "a": "Dipende dal pasto: 2–3 ore dopo un iftar abbondante, circa un'ora se hai iniziato leggero. Anche l'allenamento dopo il tarawih va bene, purché non sposti troppo l'ora del sonno."
+        },
+        {
+          "q": "Posso fare pesi a digiuno?",
+          "a": "Sì, ma il momento migliore è dopo l'iftar, quando puoi bere durante la seduta e assumere proteine dopo. Nella prima settimana fai meno serie e recuperi più lunghi."
+        },
+        {
+          "q": "Ha senso allenarsi dopo il suhur?",
+          "a": "È possibile ma faticoso: ti aspetta una lunga giornata di digiuno e non potrai reintegrare il sudore fino al tramonto. Limitati a movimento breve e leggero."
+        },
+        {
+          "q": "Si dimagrisce facendo sport durante il Ramadan?",
+          "a": "Il digiuno da solo cambia poco il peso nella maggior parte delle persone; se vuoi dimagrire, decidono porzioni e dolci all'iftar. Restare attivo aiuta soprattutto a mantenere la forma per tutto il mese."
+        }
+      ],
+      "references": [
+        {
+          "label": "Shephard RJ — The impact of Ramadan observance upon athletic performance. Nutrients, 2012",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/22822448/"
+        },
+        {
+          "label": "Aspetar — Evidence-Informed Ramadan Nutrition, Hydration, Sleep and Training Strategies for Physically Active Adults: A Practical Guide (Tabben M; revisione scientifica: Chamari K, Aziz AR, Ben Saad H)",
+          "href": "https://www.aspetar.com/en/professionals/ramadan-evidence-informed-guide"
+        },
+        {
+          "label": "Chamari K et al. — Aspetar clinical guidelines: Ramadan fasting and exercise for healthy individuals. Tunis Med, 2023",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/37682254/"
+        },
+        {
+          "label": "Hassanein M et al. — Diabetes and Ramadan: Practical guidelines 2021 (IDF-DAR). Diabetes Res Clin Pract, 2022",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/35016991/"
+        },
+        {
+          "label": "Istituto Superiore di Sanità (EpiCentro) — Every move counts. Le linee guida 2020 OMS su attività fisica e comportamenti sedentari",
+          "href": "https://www.epicentro.iss.it/attivita_fisica/linee-guida-oms-2020"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/it/camminare-o-correre-per-dimagrire.html",
+          "title": "Camminare o correre per dimagrire?",
+          "desc": "Calorie, tempo e rischio di infortuni."
+        },
+        {
+          "href": "/blog/it/calorie-bruciate-allenamento.html",
+          "title": "Calorie bruciate in allenamento",
+          "desc": "Numeri realistici per camminata, corsa e bici."
+        },
+        {
+          "href": "/blog/it/dimentico-di-bere-acqua.html",
+          "title": "Dimentico di bere acqua",
+          "desc": "Come farlo diventare un'abitudine."
+        },
+        {
+          "href": "/blog/it/non-ho-voglia-di-allenarmi.html",
+          "title": "Non ho voglia di allenarmi",
+          "desc": "7 modi per iniziare comunque."
+        }
+      ]
+    },
+    "uk": {
+      "slug": "sport-u-ramadan",
+      "read_minutes": 7,
+      "badge": "🌙 Посібник · Тренування під час посту",
+      "h1": "Коли займатися спортом у Рамадан: до іфтару чи після (і як відстежувати це в Suu)",
+      "about": [
+        {
+          "name": "Піст у Рамадан"
+        },
+        {
+          "name": "Час тренувань"
+        },
+        {
+          "name": "Гідратація"
+        }
+      ],
+      "meta": {
+        "title": "Спорт у Рамадан: до іфтару чи після? | Suu",
+        "description": "Легке тренування — просто перед іфтаром, силове й інтенсивне — через 1–3 години після нього. План пиття від іфтару до сухуру, поради щодо сухуру та сну.",
+        "keywords": "спорт у рамадан, тренування під час посту, коли тренуватися в рамадан, тренування до іфтару, тренування після іфтару, біг під час посту, силові в рамадан, спортзал у рамадан",
+        "og_title": "Спорт у Рамадан: до іфтару чи після?",
+        "og_description": "Яке тренування о котрій годині, скільки пити між іфтаром і сухуром і як полегшити перший тиждень. За настановами Aspetar і дослідженнями."
+      },
+      "answer": "Якщо постиш, легкі й помірні тренування — ходьбу, легкий біг, мобільність — став на останню годину перед іфтаром: не довше 60–75 хвилин разом із розминкою і з завершенням ближче до заходу сонця, щоб одразу попити й поїсти. Силові та високоінтенсивні тренування переноси на 1–3 години після іфтару. У Suu тренування записується з GPS, а випите між іфтаром і сухуром — враховується.",
+      "health_note": {
+        "head": "Ця стаття не є медичною порадою.",
+        "body": [
+          "Це загальна інформація для здорових дорослих. Якщо в тебе діабет (особливо якщо приймаєш інсулін чи інші цукрознижувальні препарати), хвороби нирок або серця, підвищений тиск, якщо ти вагітна або годуєш груддю, спершу сплануй піст і тренування з лікарем.",
+          "Якщо під час тренування натщесерце з'явилося щось із переліченого, одразу зупинись, за потреби перерви піст і звернися по медичну допомогу:"
+        ],
+        "red_flags": [
+          "Запаморочення, переднепритомний стан або розмитий зір",
+          "Тремтіння, холодний піт, сплутаність свідомості (ознаки низького цукру в крові)",
+          "Біль у грудях, серцебиття або незвична задишка",
+          "Відсутність сечовипускання багато годин або дуже темна сеча"
+        ]
+      },
+      "disclosure": "Цей посібник написала команда з двох людей, яка створює Suu. Ми радимо свій застосунок, але поради спираються на настанови Aspetar щодо Рамадану, Центр громадського здоров'я України та рецензовані дослідження — ті самі кроки можна виконувати й без Suu.",
+      "intro": [
+        "Головне питання про спорт у Рамадан — не «чи можна», а <strong>коли і скільки</strong>. У більшості малорухливих людей піст майже не змінює харчування й вагу; найбільше він зачіпає тих, хто тренується. Під вечір у м'язах меншає глікогену, в організмі — рідини, сон коротшає, а це може знижувати витривалість, силу та короткі вибухові зусилля.<sup><a href=\"#ref1\">1</a></sup>",
+        "Тому вихід — не кидати тренування на місяць, а змістити їх у часі й змінити дозу. Саме це радять настанови щодо Рамадану для здорових дорослих від Aspetar — лікарні ортопедії та спортивної медицини в Катарі: що важче тренування, то ближче до іфтару або після нього.<sup><a href=\"#ref2\">2</a>,<a href=\"#ref3\">3</a></sup>"
+      ],
+      "analysis": [
+        {
+          "head": "Яке тренування в який час?",
+          "body": [
+            "Правило просте: що вища інтенсивність, то ближче мають бути вода й їжа.<sup><a href=\"#ref2\">2</a></sup>"
+          ],
+          "list": [
+            "<strong>Просто перед іфтаром (останні 30–75 хвилин):</strong> ходьба, легкий біг, спокійний велосипед, розтяжка та мобільність. Закінчуй ближче до заходу сонця, щоб перша вода й їжа одразу почали відновлювати втрати. Не довше 60–75 хвилин разом із розминкою.",
+            "<strong>Через 1–3 години після іфтару:</strong> силові, інтервали, футбол і темповий біг. Після рясного іфтару зачекай 2–3 години, після легкого — близько години. Пити можна просто під час тренування, тож це найзручніше вікно для важкої роботи.",
+            "<strong>Після таравіху, вночі:</strong> варіант тренування після іфтару. Єдина умова — не красти сон; якщо воно відсуває відбій, зроби його коротшим.",
+            "<strong>Після сухуру:</strong> можливо, але важко. Попереду довгий день посту, і відновити втрати з потом до заходу сонця не вийде; залиш цей час для короткої легкої активності.",
+            "<strong>У полуденну спеку:</strong> уникай. Пітніти натщесерце й у спеку — означає втрачати рідину, яку годинами не відновиш."
+          ],
+          "callout": "За оглядом Шепарда, у більшості малорухливих людей піст майже не змінює вагу та загальну калорійність раціону; зниження результатів помітне передусім у спортсменів, які тренуються в спекотні місяці з довгим світловим днем.<sup><a href=\"#ref1\">1</a></sup> Рамадан щороку зсувається приблизно на 11 днів раніше, тож тривалість посту й спека змінюються з року в рік; улітку навантаження варто знижувати сильніше."
+        },
+        {
+          "head": "Полегши перший тиждень, потім повертайся",
+          "body": [
+            "Організму потрібно кілька днів, щоб звикнути до нового режиму їжі та сну. Настанови Aspetar радять у перший тиждень зменшити тижневий обсяг (кількість підходів і загальні хвилини), за потреби подовжити відпочинок між підходами й щодня занотовувати, наскільки важким здавалося тренування.<sup><a href=\"#ref2\">2</a></sup>",
+            "Наприклад, якщо до Рамадану ти бігав по 45 хвилин чотири рази на тиждень, почни перший тиждень із трьох пробіжок по 30 хвилин; якщо легко — з другого тижня повертайся до звичного плану. Мета цього місяця — не рекорд, а зберегти набуту форму.",
+            "Повністю кидати рух теж не вихід: Центр громадського здоров'я наголошує, що навіть 20 хвилин рухової активності на день зміцнюють здоров'я, і в Рамадан це не змінюється.<sup><a href=\"#ref5\">5</a></sup> Навіть спокійна прогулянка на 20–30 хвилин після іфтару зараховується."
+          ]
+        },
+        {
+          "head": "Вода між іфтаром і сухуром: потроху й часто",
+          "body": [
+            "Денні втрати рідини можна відновити лише між іфтаром і сухуром. Практичний посібник Aspetar радить активним дорослим щонайменше 3–4 літри рідини за цей час — приблизно по 200 мл кожні 30 хвилин від іфтару до сну — і зазначає, що випити багато води за раз на сухурі багатьом важко.<sup><a href=\"#ref2\">2</a></sup>"
+          ],
+          "list": [
+            "Розговляйся водою та 1–3 фініками або тарілкою супу, зроби коротку паузу й лише потім переходь до основної страви.",
+            "Розподіли воду на весь вечір; нагадування в телефоні пам'ятатиме замість тебе.",
+            "Після тренування з потом додай продукти з великим вмістом води — суп, кавун, огірки, кефір; при сильному потовиділенні можна випити напій з електролітами.",
+            "Обмеж чай і каву, особливо перед сном: вони дроблять сон.",
+            "Дуже солона або смажена їжа на сухурі може посилити спрагу вдень."
+          ],
+          "callout": "Найпростіший орієнтир — колір сечі: світло-солом'яний — добрий знак; якщо темно-жовтий, пий більше після іфтару.<sup><a href=\"#ref2\">2</a></sup>"
+        },
+        {
+          "head": "Сухур, іфтар і сон: невидима половина тренування",
+          "body": [
+            "Якщо тренуєшся вдень, не пропускай сухур: вуглеводи з клітковиною (вівсянка, цільнозерновий хліб), білок (яйця, сир, йогурт) і продукти з великим вмістом води допомагають пройти день рівніше. Сухур краще робити якомога ближче до світанку.<sup><a href=\"#ref2\">2</a></sup>",
+            "Найбільше в Рамадан скорочується сон.<sup><a href=\"#ref1\">1</a></sup> Настанови радять поділений сон: збережи основний нічний сон і додай денний відпочинок на 20–45 хвилин після обіду. У дні тренувань розподіляй білок між іфтаром, прийомом після тренування й сухуром; після вечірнього тренування добрий варіант перед сном — молоко чи йогурт.<sup><a href=\"#ref2\">2</a></sup>",
+            "Якщо в тебе діабет, адаптуй цей розділ разом із лікарем: настанови IDF-DAR для людей із діабетом, які постять, радять планувати навантаження, ліки й час їжі індивідуально.<sup><a href=\"#ref4\">4</a></sup>"
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Де відстежувати це в Suu",
+        "lead": "Назви пунктів наведено англійською, як в інтерфейсі:",
+        "steps": [
+          {
+            "feature": "Налаштуй нагадування під іфтар і сухур",
+            "where_ios": "Settings → Notification Settings → <strong>Smart Notifications</strong>",
+            "where_android": "Settings → <strong>Smart Notifications</strong>",
+            "solves": "Перенеси <strong>🌅 Morning Reminders</strong> на час сухуру, а <strong>🌆 Evening Reminders</strong> — на іфтар. У розділі <strong>Interval reminders</strong> постав Start на іфтар, а End — на час відбою (не частіше ніж раз на 2 години; інтервал має закінчуватися до півночі). Так Suu надсилає нагадування про воду за часом іфтару та сухуру."
+          },
+          {
+            "feature": "Запиши прогулянку чи пробіжку перед іфтаром з GPS",
+            "where": "Home → quick add → <strong>Add Exercise</strong> → Walking або Running → start",
+            "solves": "Час, дистанція, темп і маршрут записуються наживо, а спалені калорії й вплив тренування на норму води рахуються автоматично. Якщо почати з Apple Watch, видно й пульс — найпростіший спосіб тримати темп низьким під час посту."
+          },
+          {
+            "feature": "Запиши іфтар одним реченням",
+            "where": "Home → quick add → <strong>Add Food</strong> → мікрофон або текстове поле",
+            "solves": "Досить сказати «дві склянки води, тарілка сочевичного супу, три фініки й склянка айрану»: калорії та макронутрієнти порахуються, а вода й айран підуть у водний баланс. У безкоштовному плані 3 аналізи ШІ на день."
+          },
+          {
+            "feature": "Індекс Suu",
+            "where_ios": "Вкладка <strong>You</strong> → Water → <strong>Suu Index</strong>",
+            "where_android": "<strong>Statistics</strong> → <strong>Suu Index</strong>",
+            "solves": "Оцінює денну гідратацію від 0 до 100: ти бачиш, а не вгадуєш, чи вистачило випитого між іфтаром і сухуром."
+          }
+        ],
+        "note": "Тренування з GPS безкоштовні; аналіз їжі текстом чи голосом — 3 рази на день у безкоштовному плані. Час нагадувань ти щороку виставляєш сам під іфтар і сухур у своєму місті. Українська локалізація застосунку в планах; поки що зручно користуватися англійською версією інтерфейсу.",
+        "button": "Завантажити Suu безкоштовно"
+      },
+      "verdict": {
+        "head": "Коротко",
+        "body": [
+          "Тренуватися в Рамадан можна — важать час і доза. Легкі тренування став просто перед іфтаром, силові й важкі — через 1–3 години після нього, а перший тиждень полегши.",
+          "Головне відбувається між іфтаром і сухуром: розподіляй воду, не пропускай сухур, бережи сон. Тоді після свята ти збережеш форму, а не почнеш із нуля."
+        ]
+      },
+      "cta": {
+        "head": "Запиши прогулянку перед іфтаром уже сьогодні",
+        "sub": "Тренування з GPS безкоштовні · iOS та Android",
+        "button": "Завантажити Suu безкоштовно"
+      },
+      "faq": [
+        {
+          "q": "Чи можна займатися спортом під час посту?",
+          "a": "Здоровим дорослим — так, важать час та інтенсивність. Легкі й помірні тренування — просто перед іфтаром, силові та високоінтенсивні — після іфтару. За хронічних хвороб спершу порадься з лікарем."
+        },
+        {
+          "q": "Коли краще тренуватися в Рамадан — до іфтару чи після?",
+          "a": "Підходять обидва варіанти, усе залежить від тренування. Ходьба, легкий біг і розтяжка — просто перед іфтаром, не довше 60–75 хвилин із розминкою. Силові, інтервали й ігри — через 1–3 години після іфтару."
+        },
+        {
+          "q": "Через скільки після іфтару можна тренуватися?",
+          "a": "Залежить від обсягу їжі: після рясного іфтару — через 2–3 години, після легкого — приблизно через годину. Тренування після таравіху теж підходить, якщо не відсуває сон надто пізно."
+        },
+        {
+          "q": "Чи можна робити силові під час посту?",
+          "a": "Можна, але найкращий час — після іфтару: можна пити під час тренування й отримати білок після нього. У перший тиждень зменш кількість підходів і подовж відпочинок між ними."
+        },
+        {
+          "q": "Чи варто тренуватися після сухуру?",
+          "a": "Можливо, але важко: попереду довгий день посту, і відновити втрати з потом до заходу сонця не вийде. Обмежся короткою легкою активністю."
+        },
+        {
+          "q": "Чи можна схуднути, якщо тренуватися в Рамадан?",
+          "a": "Сам піст у більшості людей майже не змінює вагу; якщо хочеш схуднути, вирішують порції та солодке на іфтарі. Рух насамперед допомагає зберегти форму протягом місяця."
+        }
+      ],
+      "references": [
+        {
+          "label": "Shephard RJ — The impact of Ramadan observance upon athletic performance. Nutrients, 2012",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/22822448/"
+        },
+        {
+          "label": "Aspetar — Evidence-Informed Ramadan Nutrition, Hydration, Sleep and Training Strategies for Physically Active Adults: A Practical Guide (Tabben M; наукова редакція: Chamari K, Aziz AR, Ben Saad H)",
+          "href": "https://www.aspetar.com/en/professionals/ramadan-evidence-informed-guide"
+        },
+        {
+          "label": "Chamari K та ін. — Aspetar clinical guidelines: Ramadan fasting and exercise for healthy individuals. Tunis Med, 2023",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/37682254/"
+        },
+        {
+          "label": "Hassanein M та ін. — Diabetes and Ramadan: Practical guidelines 2021 (IDF-DAR). Diabetes Res Clin Pract, 2022",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/35016991/"
+        },
+        {
+          "label": "Центр громадського здоров'я України — Від 20 хв рухової активності на день зміцнять здоров'я на роки вперед: головне — регулярність",
+          "href": "https://phc.org.ua/news/vid-20-khv-rukhovoi-aktivnosti-na-den-zmicnyat-zdorovya-na-roki-vpered-golovne-regulyarnist"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/uk/khodba-chy-bih.html",
+          "title": "Ходьба чи біг для схуднення?",
+          "desc": "Калорії, час і ризик травм."
+        },
+        {
+          "href": "/blog/uk/spalyuvannya-kaloriy-pid-chas-trenuvannya.html",
+          "title": "Спалювання калорій під час тренування",
+          "desc": "Реалістичні цифри для ходьби, бігу й велосипеда."
+        },
+        {
+          "href": "/blog/uk/zabuvayu-pyty-vodu.html",
+          "title": "Забуваю пити воду",
+          "desc": "Як зробити це звичкою."
+        },
+        {
+          "href": "/blog/uk/motyvatsiya-do-sportu.html",
+          "title": "Немає мотивації до спорту",
+          "desc": "7 способів почати попри все."
+        }
+      ]
+    }
+  }
+}

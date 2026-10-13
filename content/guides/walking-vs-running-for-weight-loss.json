@@ -1,0 +1,1429 @@
+{
+  "_note": "Yapay zekâ sorusu rehberi #11 — 'kilo vermek için yürüyüş mü koşu mu'. Sınır: karar rehberi (süre/mesafe başına kalori, afterburn, iştah, sakatlık, başlangıç planı); aktivite başına kalori tabloları egzersizde-kalori-yakimi'nde, uygulama karşılaştırması en-iyi-egzersiz-takip-uygulamasi'nda kalır. 30 dk tahminleri Hall 2004 ortalamalarından türetildi (yürüyüş 1,41 m/s · 81 kcal/1600 m; koşu 2,82 m/s · 115 kcal/1600 m). Kaynaklar 2026-10-13'te E-utilities ile doğrulandı.",
+  "kind": "guide",
+  "cluster": "yuruyus-mu-kosu-mu",
+  "published": "2026-10-13",
+  "modified": "2026-10-13",
+  "pages": {
+    "tr": {
+      "slug": "yuruyus-mu-kosu-mu",
+      "read_minutes": 7,
+      "badge": "🏃 Rehber · Yürüyüş ve koşu",
+      "h1": "Kilo Vermek İçin Yürüyüş mü Koşu mu? Kalori, Süre ve Sakatlık Açısından (ve Suu'da Takibi)",
+      "about": [
+        {
+          "name": "Yürüyüş"
+        },
+        {
+          "name": "Koşu"
+        },
+        {
+          "name": "Kilo verme"
+        }
+      ],
+      "meta": {
+        "title": "Kilo Vermek İçin Yürüyüş mü Koşu mu? | Suu",
+        "description": "Aynı sürede koşu yürüyüşün kabaca 2,5–3 katı kalori yakar, aynı mesafede ise %40 fazlası. Kalori, süre, iştah ve sakatlık açısından hangisi sana uygun?",
+        "keywords": "kilo vermek için yürüyüş mü koşu mu, yürüyüş mü koşu mu, 30 dakika yürüyüş kaç kalori, 30 dakika koşu kaç kalori, yürüyüşle kilo verilir mi, koşu mu yürüyüş mü daha çok yağ yakar, kilolu biri koşabilir mi, koşudan sonra yağ yakımı",
+        "og_title": "Kilo Vermek İçin Yürüyüş mü Koşu mu?",
+        "og_description": "Aynı süre ve aynı mesafede kaç kalori, “afterburn” gerçek mi, iştah ve sakatlık riski nasıl değişiyor? Rakamlar ve başlangıç planı, araştırmalarla."
+      },
+      "answer": "Kilo vermek için ikisi de işe yarar; fark süre ve sürdürülebilirlikte. Aynı sürede koşu yürüyüşün kabaca 2,5–3 katı kalori yakar, aynı mesafede ise yaklaşık %40 fazlasını. Vaktin azsa ve eklemlerin elveriyorsa koşu daha verimli; yeni başlıyorsan ya da fazla kilon varsa yürüyüşle başla, koşu aralıklarını yavaş yavaş ekle. Suu ikisini de GPS ile kaydeder.",
+      "health_note": {
+        "head": "Bu yazı tıbbi tavsiye değildir.",
+        "body": [
+          "Genel bilgi içindir. Kalp, akciğer ya da eklem rahatsızlığın, yüksek tansiyonun veya diyabetin varsa, belirgin fazla kilon varsa ya da uzun süredir hareketsizsen koşuya başlamadan önce doktoruna danış.",
+          "Yürürken ya da koşarken şunlardan biri olursa dur ve tıbbi yardım al:"
+        ],
+        "red_flags": [
+          "Göğüste ağrı, baskı veya sıkışma hissi",
+          "Olağandışı nefes darlığı, baş dönmesi ya da bayılacak gibi olmak",
+          "Çarpıntı veya düzensiz kalp atışı",
+          "Birkaç günlük dinlenmeyle geçmeyen, giderek artan diz, kaval kemiği ya da ayak ağrısı"
+        ]
+      },
+      "disclosure": "Bu rehberi Suu'yu geliştiren iki kişilik ekip olarak yazdık. Uygulamamızı öneriyoruz, ama önerilerin dayanağı Dünya Sağlık Örgütü, Sağlık Bakanlığı ve hakemli çalışmalar; aynı adımları Suu olmadan da uygulayabilirsin.",
+      "intro": [
+        "Bu soru genelde şöyle sorulur: “Günde 1 saat yürüyüş mü, 30 dakika koşu mu?” Kısa cevap, ikisinin de kilo verdirdiği; ama aynı şekilde değil. Koşu birim zamanda çok daha fazla enerji harcatır, yürüyüş ise daha uzun sürdürülür ve sakatlık riski daha düşüktür.",
+        "Aşağıda rakamları yan yana koyuyoruz: aynı sürede ve aynı mesafede kaç kalori yakılıyor, koşudan sonraki “yağ yakımı” gerçek mi, iştah nasıl etkileniyor ve kimin hangisiyle başlaması mantıklı."
+      ],
+      "analysis": [
+        {
+          "head": "Aynı mesafe mi, aynı süre mi? Fark buradan çıkıyor",
+          "body": [
+            "Yaygın bir inanış, 1 kilometreyi yürüsen de koşsan da aynı kaloriyi yaktığın. Ölçümler bunu doğrulamıyor: 24 kişide yapılan bir çalışmada 1.600 metre koşu yaklaşık 115 kcal, aynı mesafeyi yürümek yaklaşık 81 kcal harcattı; koşu aynı mesafede yaklaşık %40 daha fazla.<sup><a href=\"#ref2\">2</a></sup>",
+            "Asıl fark sürede. Aynı çalışmada koşu hızı (yaklaşık 10 km/s) yürüyüşün (yaklaşık 5 km/s) iki katıydı. Bu ortalamalarla kabaca hesaplarsak 30 dakikada tempolu yürüyüş yaklaşık 130 kcal, koşu yaklaşık 360 kcal eder. Senin rakamın kilona ve hızına göre değişir, ama oran benzer kalır."
+          ],
+          "callout": "Koşudan sonra saatlerce süren bir “yağ yakımı” yok. Ortalama 71 kilo olan 30 kişide metabolizma yürüyüşten 10, koşudan 15 dakika sonra dinlenme düzeyine döndü; toparlanma dahil toplam harcama 1.600 metrede yürüyüşte yaklaşık 111, koşuda yaklaşık 159 kcal'di.<sup><a href=\"#ref3\">3</a></sup>"
+        },
+        {
+          "head": "Kilo verme ve sağlık açısından ne biliyoruz?",
+          "body": [
+            "15.237 yürüyüşçü ve 32.216 koşucuyu 6,2 yıl izleyen geniş bir çalışmada, harcanan enerji birimi başına koşu yürüyüşten daha fazla kilo kaybıyla ilişkiliydi; en kilolu grupta fark yaklaşık %90'dı.<sup><a href=\"#ref4\">4</a></sup> Gözlemsel bir çalışma olduğu için koşmayı seçenlerin başka alışkanlıklarının da payı olabilir.",
+            "Sağlık açısından tablo eşit: aynı enerji harcandığında yürüyüş ve koşu yüksek tansiyon, yüksek kolesterol ve diyabet riskini benzer oranda düşürdü.<sup><a href=\"#ref5\">5</a></sup> Dünya Sağlık Örgütü'nün önerisi de bunu yansıtıyor: haftada 150–300 dakika orta yoğunlukta ya da 75–150 dakika yüksek yoğunlukta hareket.<sup><a href=\"#ref1\">1</a></sup> Kabaca, koşunun bir dakikası yürüyüşün iki dakikası yerine geçiyor."
+          ]
+        },
+        {
+          "head": "İştah ve sakatlık: hesaba katılmayan iki şey",
+          "body": [
+            "Küçük bir çalışmada 60 dakikalık koşunun ardından kadınlar sonraki öğünde harcadıklarından yaklaşık 194 kcal daha az yedi; aynı sürede yürüyenler ise harcadıklarından 41 kcal fazla yedi.<sup><a href=\"#ref7\">7</a></sup> Tek bir çalışma kural koymaz, ama yürüyüş sonrası “hak ettim” atıştırmasının yakılanı kolayca geri getirebileceğini hatırlatır.",
+            "Öbür tarafta sakatlık var: yeni başlayan koşucularda 1.000 saat koşu başına yaklaşık 17,8 sakatlık görülürken düzenli koşan amatörlerde bu sayı 7,7'ye iniyor.<sup><a href=\"#ref6\">6</a></sup> Koşunun riski en çok ilk aylarda; sakatlanıp üç hafta ara vermek, her gün yürümekten çok daha fazla kaloriye mal olur."
+          ]
+        },
+        {
+          "head": "Hangisiyle başlamalı? Pratik plan",
+          "body": [
+            "Vaktin, eklemlerin ve formun elveriyorsa koşu birim zamanda daha verimli. Yeni başlıyorsan, belirgin fazla kilon ya da diz sorunun varsa yürüyüş daha güvenli bir başlangıç. Çoğu zaman en iyi seçenek ikisinin karışımı:"
+          ],
+          "list": [
+            "<strong>1–2. hafta:</strong> haftanın 3–5 günü 30 dakika tempolu yürüyüş; konuşabilirsin ama şarkı söyleyemezsin. Sağlık Bakanlığı'nın yetişkinlere önerdiği haftanın 5 günü en az 30 dakika hedefi buradan başlıyor.<sup><a href=\"#ref8\">8</a></sup>",
+            "<strong>3–6. hafta:</strong> yürüyüşün içine 1 dakika hafif koşu ve 2 dakika yürüyüş aralıkları ekle; koşu dakikalarını haftadan haftaya azar azar artır.",
+            "<strong>Sonrasında:</strong> kesintisiz 20–30 dakika koşabiliyorsan haftada 2–3 gün koşu, diğer günler yürüyüş.",
+            "<strong>Ağrı kuralı:</strong> ertesi gün geçmeyen bir ağrı varsa bir adım geri dön.",
+            "<strong>Tabağı unutma:</strong> kilo vermeyi asıl belirleyen yediğin; hareketle yaktığının tamamını değil yarısını “geri yenebilir” say."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Bunu Suu'da nereden takip edersin",
+        "lead": "Menü adları uygulamadaki gibi:",
+        "steps": [
+          {
+            "feature": "Yürüyüşünü ya da koşunu GPS ile kaydet",
+            "where": "Ana ekran → hızlı ekleme → <strong>Egzersiz Ekle</strong> → Yürüyüş ya da Koşu → başlat",
+            "solves": "Süre, mesafe, tempo, rota ve yakılan kalori canlı kaydedilir; aynı rotayı yürüyerek ve koşarak kaydedip farkı kendin görürsün. Apple Watch'tan başlatırsan nabzını da canlı görürsün."
+          },
+          {
+            "feature": "Günün tamamını tek ekranda gör",
+            "where": "<strong>Beslenme</strong> ekranı → Bugün",
+            "solves": "Günün kalorisi hedefinle yan yana görünür; yürüyüş sonrası atıştırmalar da burada saatiyle listelenir."
+          },
+          {
+            "feature": "Kilometre Taşları ve Rozetler",
+            "where_ios": "<strong>Sen</strong> sekmesi → Egzersiz → <strong>Kilometre Taşları</strong> · <strong>Rozetler</strong>",
+            "where_android": "<strong>Rozetler</strong> ekranı ve antrenman sonundaki <strong>Kilometre Taşları</strong>",
+            "solves": "Koşu, yürüyüş ve doğa yürüyüşünde biriken mesafe kilometre taşlarına dönüşür, sertifika olarak paylaşılabilir; yürüyüşten koşuya geçişi adım adım görürsün."
+          },
+          {
+            "feature": "Günlük hareket hatırlatması",
+            "where_ios": "Ayarlar → Bildirim Ayarları → <strong>Günlük bildirimler</strong>",
+            "where_android": "Ayarlar → <strong>Günlük bildirimler</strong>",
+            "solves": "“Hareketini kaydet 🚶” hatırlatması, yürüyüş saatini telefonuna taşır."
+          }
+        ],
+        "note": "GPS'li yürüyüş ve koşu, kilometre taşları ve rozetler ücretsiz.",
+        "button": "Suu'yu ücretsiz indir"
+      },
+      "verdict": {
+        "head": "Kısacası",
+        "body": [
+          "Kilo vermek için ikisi de işe yarar. Koşu birim zamanda yaklaşık 2,5–3 kat daha fazla yakar; yürüyüş daha uzun sürdürülür, sakatlık riski daha düşüktür ve sağlık faydası aynı enerji harcamasında benzerdir.",
+          "Vaktin azsa koşu, yeni başlıyorsan yürüyüş; çoğu insan için en iyisi yürüyüşle başlayıp koşu aralıklarını yavaş yavaş eklemek. Hangisini seçersen seç, belirleyici olan haftalar boyunca sürdürmek ve tabağına dikkat etmek."
+        ]
+      },
+      "cta": {
+        "head": "İlk yürüyüşünü ya da koşunu bugün kaydet",
+        "sub": "GPS'li yürüyüş ve koşu ücretsiz · iOS ve Android",
+        "button": "Suu'yu Ücretsiz İndir"
+      },
+      "faq": [
+        {
+          "q": "Kilo vermek için yürüyüş mü koşu mu daha iyi?",
+          "a": "İkisi de işe yarar. Koşu aynı sürede kabaca 2,5–3 kat fazla kalori yakar; yürüyüş daha uzun sürdürülür ve sakatlık riski düşüktür. Vaktin azsa koşu, yeni başlıyorsan yürüyüş; çoğu kişi için en iyisi ikisini karıştırmak."
+        },
+        {
+          "q": "30 dakika yürüyüş kaç kalori yakar?",
+          "a": "Ölçüm ortalamalarıyla kabaca: yaklaşık 5 km/s tempolu yürüyüş 30 dakikada 130 kcal civarı, yaklaşık 10 km/s koşu 360 kcal civarı yakar. Senin rakamın kilona ve hızına göre değişir."
+        },
+        {
+          "q": "Aynı mesafeyi yürümek ve koşmak aynı kaloriyi mi yakar?",
+          "a": "Hayır. Ölçümlerde 1.600 metre koşu yaklaşık 115 kcal, aynı mesafe yürüyüş yaklaşık 81 kcal harcattı; koşu aynı mesafede yaklaşık %40 fazla yakıyor. Asıl fark ise koşunun mesafeyi yarı sürede bitirmesinden geliyor."
+        },
+        {
+          "q": "Fazla kilolu biri koşuya başlayabilir mi?",
+          "a": "Başlayabilir, ama yürüyüşle başlamak daha güvenli: yeni koşucularda sakatlık riski düzenli koşanların iki katından fazla. Birkaç hafta tempolu yürüyüşten sonra kısa koşu aralıkları ekle; sağlık sorunun varsa önce doktoruna danış."
+        },
+        {
+          "q": "Sadece yürüyerek kilo verilir mi?",
+          "a": "Evet, beslenmeye de dikkat edersen. Yürüyüş birim zamanda daha az yaksa da uzun süre sürdürülebilir; aynı enerji harcandığında tansiyon, kolesterol ve diyabet riskini koşuyla benzer oranda düşürüyor."
+        },
+        {
+          "q": "Koşudan sonra yağ yakımı devam eder mi?",
+          "a": "Çok kısa süre. Ölçümlerde metabolizma koşudan 15, yürüyüşten 10 dakika sonra dinlenme düzeyine döndü; ek harcama onlarca kalori düzeyinde. Asıl fark antrenmanın kendisinde."
+        }
+      ],
+      "references": [
+        {
+          "label": "Dünya Sağlık Örgütü — Physical activity (bilgi notu)",
+          "href": "https://www.who.int/news-room/fact-sheets/detail/physical-activity"
+        },
+        {
+          "label": "Hall C ve ark. — Energy expenditure of walking and running: comparison with prediction equations. Med Sci Sports Exerc, 2004",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/15570150/"
+        },
+        {
+          "label": "Wilkin LD ve ark. — Energy expenditure comparison between walking and running in average fitness individuals. J Strength Cond Res, 2012",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/22446673/"
+        },
+        {
+          "label": "Williams PT — Greater weight loss from running than walking during a 6.2-yr prospective follow-up. Med Sci Sports Exerc, 2013",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/23190592/"
+        },
+        {
+          "label": "Williams PT, Thompson PD — Walking versus running for hypertension, cholesterol, and diabetes mellitus risk reduction. Arterioscler Thromb Vasc Biol, 2013",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/23559628/"
+        },
+        {
+          "label": "Videbæk S ve ark. — Incidence of running-related injuries per 1000 h of running in different types of runners: a systematic review and meta-analysis. Sports Med, 2015",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/25951917/"
+        },
+        {
+          "label": "Larson-Meyer DE ve ark. — Influence of running and walking on hormonal regulators of appetite in women. J Obes, 2012",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/22619704/"
+        },
+        {
+          "label": "T.C. Sağlık Bakanlığı Halk Sağlığı Genel Müdürlüğü — Fiziksel Aktivite",
+          "href": "https://hsgm.saglik.gov.tr/tr/fiziksel-aktivite.html"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/egzersizde-kalori-yakimi.html",
+          "title": "Egzersizde kaç kalori yakılır?",
+          "desc": "Yürüyüş, koşu ve bisiklette gerçekçi rakamlar."
+        },
+        {
+          "href": "/blog/gps-kosu-takibi-kalori-sayaci.html",
+          "title": "GPS'li koşu takibi ve kalori sayacı",
+          "desc": "Koşuyu ve yediğini tek uygulamada izlemek."
+        },
+        {
+          "href": "/blog/spora-baslayinca-kilo-artisi.html",
+          "title": "Spora başladım, kilom neden arttı?",
+          "desc": "İlk haftalardaki artışın 4 sebebi."
+        },
+        {
+          "href": "/blog/spora-usenmek.html",
+          "title": "Spora üşeniyorum",
+          "desc": "Motivasyon beklemeden başlamanın 7 yolu."
+        }
+      ]
+    },
+    "en": {
+      "slug": "walking-vs-running-for-weight-loss",
+      "read_minutes": 7,
+      "badge": "🏃 Guide · Walking and running",
+      "h1": "Walking vs Running for Weight Loss: Calories, Time and Injury Risk (and How to Track It in Suu)",
+      "about": [
+        {
+          "name": "Walking"
+        },
+        {
+          "name": "Running"
+        },
+        {
+          "name": "Weight loss"
+        }
+      ],
+      "meta": {
+        "title": "Walking vs Running for Weight Loss: Which Is Better? | Suu",
+        "description": "Minute for minute, running burns roughly 2.5–3 times what walking does; over the same distance only about 40% more. Calories, appetite and injury risk compared.",
+        "keywords": "walking vs running for weight loss, is walking or running better for weight loss, calories burned walking 30 minutes, calories burned running 30 minutes, can you lose weight walking, does running burn more fat, can overweight people run, afterburn after running",
+        "og_title": "Walking vs Running for Weight Loss",
+        "og_description": "Calories over the same time and distance, whether the 'afterburn' is real, appetite and injury risk — the numbers and a starter plan, based on research."
+      },
+      "answer": "Both work for weight loss; the difference is time and how long you can keep it up. Minute for minute, running burns roughly 2.5–3 times what walking does, but over the same distance only about 40% more. Short on time and your joints are fine? Running is more efficient. New to exercise or carrying extra weight? Start by walking and add running intervals gradually. Suu records both with GPS.",
+      "health_note": {
+        "head": "This article is not medical advice.",
+        "body": [
+          "It is general information. If you have a heart, lung or joint condition, high blood pressure or diabetes, are carrying significant extra weight or have been inactive for a long time, talk to your doctor before you start running.",
+          "Stop and get medical help if any of these happen while walking or running:"
+        ],
+        "red_flags": [
+          "Chest pain, pressure or tightness",
+          "Unusual breathlessness, dizziness or feeling faint",
+          "Palpitations or an irregular heartbeat",
+          "Knee, shin or foot pain that gets worse and doesn't settle with a few days' rest"
+        ]
+      },
+      "disclosure": "We wrote this guide as the two-person team that builds Suu. We recommend our app, but the advice rests on the World Health Organization, the NHS and peer-reviewed studies — you can follow the same steps without Suu.",
+      "intro": [
+        "The question usually comes as: “An hour's walk or a 30-minute run?” The short answer is that both help you lose weight — just not in the same way. Running burns far more energy per minute; walking is easier to keep up for longer and carries a lower injury risk.",
+        "Below we put the numbers side by side: calories over the same time and the same distance, whether the post-run 'afterburn' is real, what happens to appetite, and who should start with which."
+      ],
+      "analysis": [
+        {
+          "head": "Same distance or same time? That's where the difference is",
+          "body": [
+            "A common belief is that a kilometre costs the same calories whether you walk or run it. Measurements don't back that up: in a study of 24 people, running 1,600 metres used about 115 kcal and walking the same distance about 81 kcal — roughly 40% more for running over the same distance.<sup><a href=\"#ref2\">2</a></sup>",
+            "The real gap is time. In the same study the running speed (about 10 km/h) was double the walking speed (about 5 km/h). Using those averages, 30 minutes of brisk walking comes to roughly 130 kcal and 30 minutes of running to roughly 360 kcal. Your numbers depend on your weight and pace, but the ratio stays similar."
+          ],
+          "callout": "There's no hours-long 'fat burn' after a run. In 30 people averaging 71 kg, metabolism was back to resting 10 minutes after walking and 15 minutes after running; total energy for 1,600 metres including recovery was about 111 kcal walking and about 159 kcal running.<sup><a href=\"#ref3\">3</a></sup>"
+        },
+        {
+          "head": "What we know about weight loss and health",
+          "body": [
+            "A large study that followed 15,237 walkers and 32,216 runners for 6.2 years found that, per unit of energy spent, running was linked with more weight loss than walking — about 90% more in the heaviest group.<sup><a href=\"#ref4\">4</a></sup> Because it's observational, other habits of people who choose to run may play a part.",
+            "For health the picture is even: for the same energy spent, walking and running cut the risk of high blood pressure, high cholesterol and diabetes by similar amounts.<sup><a href=\"#ref5\">5</a></sup> The World Health Organization's advice reflects this: 150–300 minutes of moderate or 75–150 minutes of vigorous activity a week.<sup><a href=\"#ref1\">1</a></sup> Roughly, one minute of running stands in for two minutes of walking."
+          ]
+        },
+        {
+          "head": "Appetite and injuries: two things people forget",
+          "body": [
+            "In a small study, women ate about 194 kcal less than they had burned at the meal after a 60-minute run, while those who walked for the same time ate 41 kcal more than they had burned.<sup><a href=\"#ref7\">7</a></sup> One study doesn't make a rule, but it's a reminder that an 'I earned it' snack after a walk can easily cancel what you burned.",
+            "Then there's injury: novice runners have about 17.8 injuries per 1,000 hours of running, compared with 7.7 in recreational runners who run regularly.<sup><a href=\"#ref6\">6</a></sup> Running's risk is highest in the first months — and three weeks off with an injury costs far more calories than walking every day."
+          ]
+        },
+        {
+          "head": "Which to start with? A practical plan",
+          "body": [
+            "If your time, joints and fitness allow, running is more efficient per minute. If you're new, carrying significant extra weight or have knee problems, walking is the safer start. For most people the best option is a mix:"
+          ],
+          "list": [
+            "<strong>Weeks 1–2:</strong> brisk 30-minute walks 3–5 days a week — you can talk but not sing. That's the start of the NHS goal of at least 150 minutes of moderate activity a week.<sup><a href=\"#ref8\">8</a></sup>",
+            "<strong>Weeks 3–6:</strong> add intervals of 1 minute easy running and 2 minutes walking; increase the running minutes a little each week.",
+            "<strong>After that:</strong> once you can run 20–30 minutes non-stop, run 2–3 days a week and walk on the others.",
+            "<strong>Pain rule:</strong> if pain hasn't gone by the next day, take a step back.",
+            "<strong>Don't forget your plate:</strong> what you eat still decides weight loss; count only half of what you burn as 'available to eat back'."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Where to track this in Suu",
+        "lead": "Menu names are exactly as they appear in the app:",
+        "steps": [
+          {
+            "feature": "Record your walk or run with GPS",
+            "where": "Home → quick add → <strong>Add Exercise</strong> → Walking or Running → start",
+            "solves": "Time, distance, pace, route and calories burned are recorded live; record the same route walking and running and see the difference yourself. Start it from Apple Watch and you'll see your heart rate live too."
+          },
+          {
+            "feature": "See your whole day on one screen",
+            "where": "<strong>Nutrition</strong> screen → Today",
+            "solves": "Your calories for the day appear next to your target, and post-walk snacks are listed here with their times."
+          },
+          {
+            "feature": "Milestones and Badges",
+            "where_ios": "<strong>You</strong> tab → Exercise → <strong>Distance Milestones</strong> · <strong>Badges</strong>",
+            "where_android": "The <strong>Badges</strong> screen and <strong>Milestones</strong> at the end of a workout",
+            "solves": "Distance from runs, walks and hikes adds up into milestones you can share as certificates, so you see the move from walking to running step by step."
+          },
+          {
+            "feature": "Daily movement reminder",
+            "where_ios": "Settings → Notification Settings → <strong>Daily notifications</strong>",
+            "where_android": "Settings → <strong>Daily notifications</strong>",
+            "solves": "The “Log your movement 🚶” reminder puts your walking time on your phone."
+          }
+        ],
+        "note": "GPS walks and runs, milestones and badges are free.",
+        "button": "Download Suu free"
+      },
+      "verdict": {
+        "head": "In short",
+        "body": [
+          "Both work for weight loss. Running burns about 2.5–3 times more per minute; walking is easier to sustain, carries less injury risk and gives similar health benefits for the same energy spent.",
+          "Short on time, run; new to it, walk — and for most people the best plan is to start walking and gradually add running intervals. Whichever you choose, what decides the result is keeping it up for weeks and watching your plate."
+        ]
+      },
+      "cta": {
+        "head": "Record your first walk or run today",
+        "sub": "GPS walks and runs are free · iOS and Android",
+        "button": "Download Suu Free"
+      },
+      "faq": [
+        {
+          "q": "Is walking or running better for weight loss?",
+          "a": "Both work. Running burns roughly 2.5–3 times more calories in the same time; walking is easier to keep up and has a lower injury risk. Short on time, run; new to exercise, walk — for most people a mix is best."
+        },
+        {
+          "q": "How many calories does 30 minutes of walking burn?",
+          "a": "Using measured averages, roughly: a brisk walk at about 5 km/h burns around 130 kcal in 30 minutes, and a run at about 10 km/h around 360 kcal. Your numbers depend on your weight and pace."
+        },
+        {
+          "q": "Do walking and running the same distance burn the same calories?",
+          "a": "No. In measurements, running 1,600 metres used about 115 kcal and walking it about 81 kcal — roughly 40% more for running. The bigger difference comes from running covering the distance in half the time."
+        },
+        {
+          "q": "Can overweight people start running?",
+          "a": "Yes, but starting with walking is safer: novice runners have more than twice the injury rate of regular runners. After a few weeks of brisk walking add short running intervals, and check with your doctor first if you have health conditions."
+        },
+        {
+          "q": "Can you lose weight just by walking?",
+          "a": "Yes, if you watch what you eat as well. Walking burns less per minute but is easy to sustain, and for the same energy spent it lowers blood pressure, cholesterol and diabetes risk about as much as running."
+        },
+        {
+          "q": "Do you keep burning fat after a run?",
+          "a": "Only briefly. In measurements, metabolism returned to resting 15 minutes after running and 10 minutes after walking; the extra is tens of calories. The real difference is in the workout itself."
+        }
+      ],
+      "references": [
+        {
+          "label": "World Health Organization — Physical activity (fact sheet)",
+          "href": "https://www.who.int/news-room/fact-sheets/detail/physical-activity"
+        },
+        {
+          "label": "Hall C et al. — Energy expenditure of walking and running: comparison with prediction equations. Med Sci Sports Exerc, 2004",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/15570150/"
+        },
+        {
+          "label": "Wilkin LD et al. — Energy expenditure comparison between walking and running in average fitness individuals. J Strength Cond Res, 2012",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/22446673/"
+        },
+        {
+          "label": "Williams PT — Greater weight loss from running than walking during a 6.2-yr prospective follow-up. Med Sci Sports Exerc, 2013",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/23190592/"
+        },
+        {
+          "label": "Williams PT, Thompson PD — Walking versus running for hypertension, cholesterol, and diabetes mellitus risk reduction. Arterioscler Thromb Vasc Biol, 2013",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/23559628/"
+        },
+        {
+          "label": "Videbæk S et al. — Incidence of running-related injuries per 1000 h of running in different types of runners: a systematic review and meta-analysis. Sports Med, 2015",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/25951917/"
+        },
+        {
+          "label": "Larson-Meyer DE et al. — Influence of running and walking on hormonal regulators of appetite in women. J Obes, 2012",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/22619704/"
+        },
+        {
+          "label": "NHS — Physical activity guidelines for adults aged 19 to 64",
+          "href": "https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-for-adults-aged-19-to-64/"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/en/calories-burned-exercise.html",
+          "title": "How many calories does exercise burn?",
+          "desc": "Realistic numbers for walking, running and cycling."
+        },
+        {
+          "href": "/blog/en/gps-run-tracker-with-calorie-counter.html",
+          "title": "GPS run tracker with a calorie counter",
+          "desc": "Track your run and your food in one app."
+        },
+        {
+          "href": "/blog/en/weight-gain-after-starting-exercise.html",
+          "title": "Gained weight after starting exercise?",
+          "desc": "The 4 reasons behind early weight gain."
+        },
+        {
+          "href": "/blog/en/no-motivation-to-exercise.html",
+          "title": "No motivation to exercise?",
+          "desc": "7 ways to start anyway."
+        }
+      ]
+    },
+    "ar": {
+      "slug": "almashi-am-aljary",
+      "read_minutes": 7,
+      "badge": "🏃 دليل · المشي والجري",
+      "h1": "المشي أم الجري لإنقاص الوزن؟ من حيث السعرات والوقت وخطر الإصابة (وكيف تتابع ذلك في Suu)",
+      "about": [
+        {
+          "name": "المشي"
+        },
+        {
+          "name": "الجري"
+        },
+        {
+          "name": "إنقاص الوزن"
+        }
+      ],
+      "meta": {
+        "title": "المشي أم الجري لإنقاص الوزن؟ أيهما أفضل | Suu",
+        "description": "في الوقت نفسه يحرق الجري نحو 2.5–3 أضعاف ما يحرقه المشي، وفي المسافة نفسها نحو 40% أكثر فقط. مقارنة السعرات والشهية وخطر الإصابة.",
+        "keywords": "المشي أم الجري لإنقاص الوزن, أيهما أفضل المشي أم الجري, كم سعرة يحرق المشي 30 دقيقة, كم سعرة يحرق الجري 30 دقيقة, هل المشي ينقص الوزن, هل الجري يحرق دهونًا أكثر, هل يمكن لصاحب الوزن الزائد الجري, حرق الدهون بعد الجري",
+        "og_title": "المشي أم الجري لإنقاص الوزن؟",
+        "og_description": "السعرات في الوقت نفسه والمسافة نفسها، وهل «الحرق اللاحق» حقيقي، وأثر كل منهما في الشهية وخطر الإصابة — بالأرقام مع خطة للبدء."
+      },
+      "answer": "كلاهما يفيد في إنقاص الوزن، والفرق في الوقت والقدرة على الاستمرار. ففي الوقت نفسه يحرق الجري نحو 2.5–3 أضعاف ما يحرقه المشي، أما في المسافة نفسها فنحو 40% أكثر فقط. إن كان وقتك ضيقًا ومفاصلك سليمة فالجري أكثر كفاءة، وإن كنت مبتدئًا أو وزنك زائد فابدأ بالمشي وأضف فترات جري تدريجيًا. يسجّل Suu الاثنين عبر GPS.",
+      "health_note": {
+        "head": "هذا المقال ليس نصيحة طبية.",
+        "body": [
+          "المعلومات عامة. إذا كانت لديك مشكلة في القلب أو الرئة أو المفاصل، أو ارتفاع ضغط الدم أو السكري، أو كان وزنك زائدًا بشكل ملحوظ، أو كنت قليل الحركة منذ مدة طويلة، فاستشر طبيبك قبل البدء بالجري.",
+          "توقف واطلب المساعدة الطبية إذا حدث أيٌّ مما يلي أثناء المشي أو الجري:"
+        ],
+        "red_flags": [
+          "ألم أو ضغط أو انقباض في الصدر",
+          "ضيق تنفس غير معتاد أو دوخة أو شعور بالإغماء",
+          "خفقان أو ضربات قلب غير منتظمة",
+          "ألم في الركبة أو الساق أو القدم يزداد ولا يهدأ بعد بضعة أيام من الراحة"
+        ]
+      },
+      "disclosure": "كتبنا هذا الدليل بصفتنا الفريق المكوّن من شخصين الذي يطوّر Suu. نحن نرشّح تطبيقنا، لكن النصائح مبنية على منظمة الصحة العالمية ودراسات محكّمة، ويمكنك تطبيق الخطوات نفسها دون Suu.",
+      "intro": [
+        "يُطرح السؤال عادة هكذا: «مشي ساعة أم جري نصف ساعة؟» والجواب المختصر أن كليهما يساعد على إنقاص الوزن، لكن ليس بالطريقة نفسها. فالجري يحرق طاقة أكبر بكثير في الدقيقة، أما المشي فيسهل الاستمرار فيه مدة أطول وخطر الإصابة فيه أقل.",
+        "نضع أدناه الأرقام جنبًا إلى جنب: كم سعرة تُحرق في الوقت نفسه وفي المسافة نفسها، وهل «الحرق اللاحق» بعد الجري حقيقي، وما الذي يحدث للشهية، ومن الأنسب أن يبدأ بأيهما."
+      ],
+      "analysis": [
+        {
+          "head": "المسافة نفسها أم الوقت نفسه؟ هنا يكمن الفرق",
+          "body": [
+            "من الشائع الاعتقاد أن الكيلومتر يكلّف السعرات نفسها سواء مشيته أو جريته. لكن القياسات لا تؤيد ذلك: ففي دراسة على 24 شخصًا استهلك جري 1,600 متر نحو 115 سعرة، ومشي المسافة نفسها نحو 81 سعرة، أي إن الجري يحرق نحو 40% أكثر في المسافة نفسها.<sup><a href=\"#ref2\">2</a></sup>",
+            "أما الفرق الحقيقي ففي الوقت. ففي الدراسة نفسها كانت سرعة الجري (نحو 10 كم/س) ضعف سرعة المشي (نحو 5 كم/س). وبهذه المتوسطات يكون حساب تقريبي لـ30 دقيقة: نحو 130 سعرة للمشي السريع ونحو 360 سعرة للجري. تختلف أرقامك بحسب وزنك وسرعتك، لكن النسبة تبقى متقاربة."
+          ],
+          "callout": "لا يوجد «حرق دهون» يستمر ساعات بعد الجري. فلدى 30 شخصًا متوسط وزنهم 71 كيلوغرامًا عاد الأيض إلى مستوى الراحة بعد 10 دقائق من المشي و15 دقيقة من الجري، وكان مجموع الاستهلاك لمسافة 1,600 متر مع فترة التعافي نحو 111 سعرة للمشي ونحو 159 سعرة للجري.<sup><a href=\"#ref3\">3</a></sup>"
+        },
+        {
+          "head": "ماذا نعرف عن إنقاص الوزن والصحة؟",
+          "body": [
+            "في دراسة كبيرة تابعت 15,237 ممارسًا للمشي و32,216 عدّاءً مدة 6.2 سنوات، ارتبط الجري بنقص وزن أكبر من المشي لكل وحدة طاقة مبذولة، وبلغ الفرق نحو 90% في المجموعة الأثقل وزنًا.<sup><a href=\"#ref4\">4</a></sup> ولأنها دراسة رصدية فقد يكون لعادات أخرى لدى من يختارون الجري دور أيضًا.",
+            "أما صحيًا فالصورة متكافئة: عند بذل الطاقة نفسها خفّض المشي والجري خطر ارتفاع ضغط الدم وارتفاع الكوليسترول والسكري بنسب متقاربة.<sup><a href=\"#ref5\">5</a></sup> وتعكس توصية منظمة الصحة العالمية ذلك: 150–300 دقيقة من النشاط المعتدل أو 75–150 دقيقة من النشاط الشديد أسبوعيًا.<sup><a href=\"#ref1\">1</a></sup> أي إن دقيقة الجري تعادل تقريبًا دقيقتين من المشي."
+          ]
+        },
+        {
+          "head": "الشهية والإصابات: أمران يغفل عنهما كثيرون",
+          "body": [
+            "في دراسة صغيرة تناولت النساء بعد جري 60 دقيقة في الوجبة التالية نحو 194 سعرة أقل مما أحرقنه، بينما تناولت من مشين المدة نفسها 41 سعرة أكثر مما أحرقنه.<sup><a href=\"#ref7\">7</a></sup> دراسة واحدة لا تصنع قاعدة، لكنها تذكّر بأن وجبة خفيفة «مستحقة» بعد المشي قد تعيد ما أحرقته بسهولة.",
+            "وفي الجهة الأخرى الإصابات: يتعرض العدّاؤون المبتدئون لنحو 17.8 إصابة لكل 1,000 ساعة جري، مقابل 7.7 لدى الهواة المنتظمين.<sup><a href=\"#ref6\">6</a></sup> فخطر الجري أعلى ما يكون في الأشهر الأولى، والتوقف ثلاثة أسابيع بسبب إصابة يكلّفك سعرات أكثر بكثير من المشي يوميًا."
+          ]
+        },
+        {
+          "head": "بأيهما تبدأ؟ خطة عملية",
+          "body": [
+            "إن سمح وقتك ومفاصلك ولياقتك فالجري أكثر كفاءة في الدقيقة. وإن كنت مبتدئًا أو وزنك زائد بشكل ملحوظ أو لديك مشكلة في الركبة فالمشي بداية أكثر أمانًا. وغالبًا ما يكون الخيار الأفضل مزيجًا من الاثنين:"
+          ],
+          "list": [
+            "<strong>الأسبوعان 1–2:</strong> مشي سريع 30 دقيقة في 3–5 أيام أسبوعيًا؛ تستطيع الكلام لكن لا تستطيع الغناء. وهذه بداية الطريق إلى 150 دقيقة أسبوعيًا التي توصي بها منظمة الصحة العالمية.<sup><a href=\"#ref1\">1</a></sup>",
+            "<strong>الأسابيع 3–6:</strong> أضف إلى المشي فترات من دقيقة جري خفيف ودقيقتين مشي، وزد دقائق الجري قليلًا كل أسبوع.",
+            "<strong>بعد ذلك:</strong> حين تستطيع الجري 20–30 دقيقة دون توقف، اجرِ 2–3 أيام أسبوعيًا وامشِ في الأيام الأخرى.",
+            "<strong>قاعدة الألم:</strong> إن لم يزل الألم في اليوم التالي فتراجع خطوة.",
+            "<strong>لا تنسَ طبقك:</strong> ما تأكله هو الحاسم في إنقاص الوزن؛ احسب نصف ما تحرقه فقط على أنه «متاح للأكل»."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "أين تتابع ذلك في Suu",
+        "lead": "أسماء القوائم كما تظهر في التطبيق:",
+        "steps": [
+          {
+            "feature": "سجّل مشيك أو جريك عبر GPS",
+            "where": "الشاشة الرئيسية ← الإضافة السريعة ← <strong>إضافة تمرين</strong> ← المشي أو الجري ← ابدأ",
+            "solves": "تُسجَّل المدة والمسافة والسرعة والمسار والسعرات المحروقة مباشرة؛ سجّل المسار نفسه مشيًا ثم جريًا وشاهد الفرق بنفسك. وإن بدأته من Apple Watch ترى نبضك مباشرة أيضًا."
+          },
+          {
+            "feature": "شاهد يومك كله في شاشة واحدة",
+            "where": "شاشة <strong>التغذية</strong> ← اليوم",
+            "solves": "تظهر سعرات يومك بجانب هدفك، وتُدرج هنا الوجبات الخفيفة بعد المشي مع أوقاتها."
+          },
+          {
+            "feature": "محطات المسافة والأوسمة",
+            "where_ios": "تبويب <strong>أنت</strong> ← التمارين ← <strong>محطات المسافة</strong> · <strong>الأوسمة</strong>",
+            "where_android": "شاشة <strong>الشارات</strong> و<strong>الإنجازات</strong> في نهاية التمرين",
+            "solves": "تتحول مسافات الجري والمشي والمشي الجبلي إلى محطات يمكن مشاركتها كشهادات، فترى انتقالك من المشي إلى الجري خطوة بخطوة."
+          },
+          {
+            "feature": "تذكير يومي بالحركة",
+            "where_ios": "الإعدادات ← إعدادات الإشعارات ← <strong>الإشعارات اليومية</strong>",
+            "where_android": "الإعدادات ← <strong>الإشعارات اليومية</strong>",
+            "solves": "تذكير «سجّل نشاطك 🚶» ينقل موعد مشيك إلى هاتفك."
+          }
+        ],
+        "note": "المشي والجري عبر GPS والمحطات والأوسمة مجانية.",
+        "button": "حمّل Suu مجانًا"
+      },
+      "verdict": {
+        "head": "باختصار",
+        "body": [
+          "كلاهما يفيد في إنقاص الوزن. يحرق الجري في الدقيقة نحو 2.5–3 أضعاف المشي، بينما يسهل الاستمرار في المشي وخطر إصابته أقل وفائدته الصحية متقاربة عند بذل الطاقة نفسها.",
+          "إن كان وقتك ضيقًا فاجرِ، وإن كنت مبتدئًا فامشِ؛ والأفضل لمعظم الناس أن يبدأ بالمشي ثم يضيف فترات جري تدريجيًا. وأيًّا كان اختيارك، فالحاسم هو الاستمرار أسابيع والانتباه إلى طبقك."
+        ]
+      },
+      "cta": {
+        "head": "سجّل أول مشي أو جري لك اليوم",
+        "sub": "المشي والجري عبر GPS مجانيان · iOS وAndroid",
+        "button": "حمّل Suu مجانًا"
+      },
+      "faq": [
+        {
+          "q": "أيهما أفضل لإنقاص الوزن: المشي أم الجري؟",
+          "a": "كلاهما يفيد. يحرق الجري في الوقت نفسه نحو 2.5–3 أضعاف السعرات، بينما يسهل الاستمرار في المشي وخطر إصابته أقل. إن كان وقتك ضيقًا فاجرِ، وإن كنت مبتدئًا فامشِ؛ والمزج بينهما أفضل لمعظم الناس."
+        },
+        {
+          "q": "كم سعرة يحرق المشي 30 دقيقة؟",
+          "a": "بمتوسطات القياس تقريبًا: المشي السريع بنحو 5 كم/س يحرق قرابة 130 سعرة في 30 دقيقة، والجري بنحو 10 كم/س قرابة 360 سعرة. تختلف أرقامك بحسب وزنك وسرعتك."
+        },
+        {
+          "q": "هل يحرق المشي والجري للمسافة نفسها السعرات نفسها؟",
+          "a": "لا. في القياسات استهلك جري 1,600 متر نحو 115 سعرة ومشيها نحو 81 سعرة، أي نحو 40% أكثر للجري. والفرق الأكبر يأتي من أن الجري يقطع المسافة في نصف الوقت."
+        },
+        {
+          "q": "هل يمكن لصاحب الوزن الزائد أن يبدأ الجري؟",
+          "a": "يمكنه ذلك، لكن البدء بالمشي أكثر أمانًا: فخطر الإصابة لدى العدّائين المبتدئين أكثر من ضعفه لدى المنتظمين. بعد بضعة أسابيع من المشي السريع أضف فترات جري قصيرة، واستشر طبيبك أولًا إن كانت لديك مشكلات صحية."
+        },
+        {
+          "q": "هل يمكن إنقاص الوزن بالمشي وحده؟",
+          "a": "نعم، إن انتبهت لما تأكله أيضًا. يحرق المشي أقل في الدقيقة لكن يسهل الاستمرار فيه، وعند بذل الطاقة نفسها يخفّض خطر ارتفاع الضغط والكوليسترول والسكري بقدر مقارب للجري."
+        },
+        {
+          "q": "هل يستمر حرق الدهون بعد الجري؟",
+          "a": "لفترة قصيرة فقط. في القياسات عاد الأيض إلى مستوى الراحة بعد 15 دقيقة من الجري و10 دقائق من المشي، والزيادة بعشرات السعرات. الفرق الحقيقي في التمرين نفسه."
+        }
+      ],
+      "references": [
+        {
+          "label": "منظمة الصحة العالمية — النشاط البدني (صحيفة وقائع)",
+          "href": "https://www.who.int/ar/news-room/fact-sheets/detail/physical-activity"
+        },
+        {
+          "label": "Hall C وآخرون — Energy expenditure of walking and running: comparison with prediction equations. Med Sci Sports Exerc, 2004",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/15570150/"
+        },
+        {
+          "label": "Wilkin LD وآخرون — Energy expenditure comparison between walking and running in average fitness individuals. J Strength Cond Res, 2012",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/22446673/"
+        },
+        {
+          "label": "Williams PT — Greater weight loss from running than walking during a 6.2-yr prospective follow-up. Med Sci Sports Exerc, 2013",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/23190592/"
+        },
+        {
+          "label": "Williams PT, Thompson PD — Walking versus running for hypertension, cholesterol, and diabetes mellitus risk reduction. Arterioscler Thromb Vasc Biol, 2013",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/23559628/"
+        },
+        {
+          "label": "Videbæk S وآخرون — Incidence of running-related injuries per 1000 h of running in different types of runners: a systematic review and meta-analysis. Sports Med, 2015",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/25951917/"
+        },
+        {
+          "label": "Larson-Meyer DE وآخرون — Influence of running and walking on hormonal regulators of appetite in women. J Obes, 2012",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/22619704/"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/ar/hurq-al-suerat.html",
+          "title": "كم سعرة يحرق التمرين؟",
+          "desc": "أرقام واقعية للمشي والجري والدراجة."
+        },
+        {
+          "href": "/blog/ar/ziyadat-alwazn-baad-arriyada.html",
+          "title": "بدأت الرياضة فلماذا زاد وزني؟",
+          "desc": "أسباب الزيادة في الأسابيع الأولى."
+        },
+        {
+          "href": "/blog/ar/alkasal-an-arriyada.html",
+          "title": "أشعر بالكسل عن الرياضة",
+          "desc": "7 طرق لتبدأ رغم ذلك."
+        },
+        {
+          "href": "/blog/ar/afdal-tatbiq-tamarin.html",
+          "title": "أفضل تطبيق لتتبع التمارين",
+          "desc": "مقارنة التطبيقات وأيها يناسبك."
+        }
+      ]
+    },
+    "ru": {
+      "slug": "hodba-ili-beg",
+      "read_minutes": 7,
+      "badge": "🏃 Руководство · Ходьба и бег",
+      "h1": "Ходьба или бег для похудения: калории, время и риск травм (и как отслеживать это в Suu)",
+      "about": [
+        {
+          "name": "Ходьба"
+        },
+        {
+          "name": "Бег"
+        },
+        {
+          "name": "Похудение"
+        }
+      ],
+      "meta": {
+        "title": "Ходьба или бег для похудения: что лучше? | Suu",
+        "description": "За одно и то же время бег сжигает примерно в 2,5–3 раза больше ходьбы, а на ту же дистанцию — лишь на 40% больше. Калории, аппетит и риск травм.",
+        "keywords": "ходьба или бег для похудения, что лучше ходьба или бег, сколько калорий сжигает ходьба 30 минут, сколько калорий сжигает бег 30 минут, можно ли похудеть ходьбой, бег сжигает больше жира, можно ли бегать с лишним весом, сжигание жира после бега",
+        "og_title": "Ходьба или бег для похудения?",
+        "og_description": "Калории за одно время и на одну дистанцию, реален ли «дожиг» после бега, аппетит и риск травм — цифры и план для старта по данным исследований."
+      },
+      "answer": "Для похудения подходит и то и другое; разница — во времени и в том, сколько вы сможете поддерживать нагрузку. За одно и то же время бег сжигает примерно в 2,5–3 раза больше калорий, а на ту же дистанцию — лишь примерно на 40% больше. Мало времени и здоровые суставы — бег эффективнее. Новичок или лишний вес — начните с ходьбы и постепенно добавляйте беговые отрезки. Suu записывает и то и другое по GPS.",
+      "health_note": {
+        "head": "Эта статья не является медицинской консультацией.",
+        "body": [
+          "Информация носит общий характер. Если у вас заболевания сердца, лёгких или суставов, повышенное давление или диабет, заметный лишний вес или вы давно не двигались, посоветуйтесь с врачом, прежде чем начинать бегать.",
+          "Остановитесь и обратитесь за медицинской помощью, если во время ходьбы или бега появилось что-то из этого:"
+        ],
+        "red_flags": [
+          "Боль, давление или сжатие в груди",
+          "Необычная одышка, головокружение или предобморочное состояние",
+          "Сердцебиение или неровный пульс",
+          "Боль в колене, голени или стопе, которая усиливается и не проходит за несколько дней отдыха"
+        ]
+      },
+      "disclosure": "Это руководство написала команда из двух человек, которая создаёт Suu. Мы рекомендуем своё приложение, но советы опираются на данные ВОЗ и рецензируемые исследования — те же шаги можно выполнять и без Suu.",
+      "intro": [
+        "Обычно вопрос звучит так: «Час ходьбы или 30 минут бега?» Короткий ответ: худеть помогает и то и другое, но по-разному. Бег сжигает гораздо больше энергии за минуту, а ходьбу легче поддерживать дольше, и риск травм у неё ниже.",
+        "Ниже мы сравниваем цифры: сколько калорий уходит за одно время и на одну дистанцию, реален ли «дожиг» после бега, что происходит с аппетитом и кому с чего лучше начинать."
+      ],
+      "analysis": [
+        {
+          "head": "Одна дистанция или одно время? Вот где разница",
+          "body": [
+            "Распространено убеждение, что километр стоит одинаковых калорий, пройдёте вы его или пробежите. Измерения этого не подтверждают: в исследовании на 24 людях бег на 1600 м потребовал около 115 ккал, а ходьба на ту же дистанцию — около 81 ккал, то есть на одной дистанции бег примерно на 40% затратнее.<sup><a href=\"#ref2\">2</a></sup>",
+            "Главная разница — во времени. В том же исследовании скорость бега (около 10 км/ч) была вдвое выше скорости ходьбы (около 5 км/ч). По этим средним за 30 минут быстрая ходьба даёт примерно 130 ккал, а бег — примерно 360 ккал. Ваши цифры зависят от веса и темпа, но соотношение остаётся похожим."
+          ],
+          "callout": "Многочасового «дожига жира» после бега нет. У 30 человек со средним весом 71 кг обмен веществ вернулся к уровню покоя через 10 минут после ходьбы и через 15 минут после бега; общие затраты на 1600 м с учётом восстановления составили около 111 ккал при ходьбе и около 159 ккал при беге.<sup><a href=\"#ref3\">3</a></sup>"
+        },
+        {
+          "head": "Что известно о похудении и здоровье",
+          "body": [
+            "В большом исследовании, где 6,2 года наблюдали 15 237 любителей ходьбы и 32 216 бегунов, на единицу затраченной энергии бег был связан с большей потерей веса, чем ходьба, — в самой тяжёлой группе примерно на 90%.<sup><a href=\"#ref4\">4</a></sup> Поскольку исследование наблюдательное, свою роль могут играть и другие привычки тех, кто выбирает бег.",
+            "Для здоровья картина равная: при одинаковых затратах энергии ходьба и бег снижали риск гипертонии, высокого холестерина и диабета примерно одинаково.<sup><a href=\"#ref5\">5</a></sup> Это отражено и в рекомендации ВОЗ: 150–300 минут умеренной или 75–150 минут интенсивной активности в неделю.<sup><a href=\"#ref1\">1</a></sup> Грубо говоря, минута бега заменяет две минуты ходьбы."
+          ]
+        },
+        {
+          "head": "Аппетит и травмы: о чём забывают",
+          "body": [
+            "В небольшом исследовании женщины после 60 минут бега съели за следующим приёмом пищи примерно на 194 ккал меньше, чем потратили, а те, кто столько же шёл, — на 41 ккал больше потраченного.<sup><a href=\"#ref7\">7</a></sup> Одно исследование — не правило, но оно напоминает: перекус «я заслужил» после прогулки легко возвращает сожжённое.",
+            "С другой стороны — травмы: у начинающих бегунов около 17,8 травмы на 1000 часов бега, а у регулярно бегающих любителей — 7,7.<sup><a href=\"#ref6\">6</a></sup> Риск бега выше всего в первые месяцы, а три недели перерыва из-за травмы обходятся куда дороже по калориям, чем ежедневная ходьба."
+          ]
+        },
+        {
+          "head": "С чего начать? Практический план",
+          "body": [
+            "Если позволяют время, суставы и форма, бег эффективнее в пересчёте на минуту. Если вы новичок, у вас заметный лишний вес или проблемы с коленями, ходьба — более безопасный старт. Чаще всего лучший вариант — сочетание:"
+          ],
+          "list": [
+            "<strong>Недели 1–2:</strong> быстрая ходьба по 30 минут 3–5 дней в неделю — говорить можно, петь уже нет. Это начало пути к 150 минутам в неделю, которые рекомендует ВОЗ.<sup><a href=\"#ref1\">1</a></sup>",
+            "<strong>Недели 3–6:</strong> добавьте в прогулку отрезки «1 минута лёгкого бега + 2 минуты ходьбы» и понемногу увеличивайте минуты бега каждую неделю.",
+            "<strong>Дальше:</strong> когда сможете бежать 20–30 минут без остановки — бег 2–3 дня в неделю, в остальные дни ходьба.",
+            "<strong>Правило боли:</strong> если боль не прошла к следующему дню, сделайте шаг назад.",
+            "<strong>Не забывайте о тарелке:</strong> вес решает прежде всего питание; считайте «доступной для еды» только половину сожжённого."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Где отслеживать это в Suu",
+        "lead": "Названия пунктов — как в приложении:",
+        "steps": [
+          {
+            "feature": "Записывайте ходьбу или бег с GPS",
+            "where": "Главный экран → быстрое добавление → <strong>Добавить тренировку</strong> → Ходьба или Бег → старт",
+            "solves": "Время, дистанция, темп, маршрут и сожжённые калории записываются в реальном времени; пройдите и пробегите один и тот же маршрут и сравните сами. Если начать с Apple Watch, будет виден и пульс."
+          },
+          {
+            "feature": "Весь день на одном экране",
+            "where": "Экран <strong>Питание</strong> → Сегодня",
+            "solves": "Калории за день видны рядом с целью, а перекусы после прогулки показаны здесь со временем."
+          },
+          {
+            "feature": "Вехи и значки",
+            "where_ios": "Вкладка <strong>Ты</strong> → Тренировки → <strong>Дистанционные вехи</strong> · <strong>Значки</strong>",
+            "where_android": "Экран <strong>Значки</strong> и <strong>Этапы</strong> в конце тренировки",
+            "solves": "Дистанция пробежек, прогулок и походов складывается в вехи, которыми можно поделиться как сертификатом, — переход от ходьбы к бегу виден шаг за шагом."
+          },
+          {
+            "feature": "Ежедневное напоминание о движении",
+            "where_ios": "Настройки → Настройки уведомлений → <strong>Ежедневные уведомления</strong>",
+            "where_android": "Настройки → <strong>Ежедневные уведомления</strong>",
+            "solves": "Напоминание «Запишите активность 🚶» переносит время прогулки в ваш телефон."
+          }
+        ],
+        "note": "Ходьба и бег с GPS, вехи и значки бесплатны.",
+        "button": "Скачать Suu бесплатно"
+      },
+      "verdict": {
+        "head": "Коротко",
+        "body": [
+          "Для похудения подходит и то и другое. Бег сжигает примерно в 2,5–3 раза больше за минуту; ходьбу легче поддерживать, риск травм ниже, а польза для здоровья при равных затратах энергии сопоставима.",
+          "Мало времени — бегайте, только начинаете — ходите; большинству лучше начать с ходьбы и постепенно добавлять беговые отрезки. Что бы вы ни выбрали, результат решают недели регулярности и внимание к тарелке."
+        ]
+      },
+      "cta": {
+        "head": "Запишите первую прогулку или пробежку сегодня",
+        "sub": "Ходьба и бег с GPS бесплатны · iOS и Android",
+        "button": "Скачать Suu бесплатно"
+      },
+      "faq": [
+        {
+          "q": "Что лучше для похудения — ходьба или бег?",
+          "a": "Подходит и то и другое. Бег за то же время сжигает примерно в 2,5–3 раза больше калорий; ходьбу проще поддерживать, и риск травм ниже. Мало времени — бег, новичок — ходьба; большинству лучше их сочетать."
+        },
+        {
+          "q": "Сколько калорий сжигает ходьба за 30 минут?",
+          "a": "По средним данным измерений примерно так: быстрая ходьба около 5 км/ч — около 130 ккал за 30 минут, бег около 10 км/ч — около 360 ккал. Ваши цифры зависят от веса и темпа."
+        },
+        {
+          "q": "Одинаково ли калорий тратится, если пройти и пробежать одну дистанцию?",
+          "a": "Нет. В измерениях бег на 1600 м потребовал около 115 ккал, ходьба — около 81 ккал, то есть бег примерно на 40% затратнее. Бо́льшая разница возникает из-за того, что бег покрывает дистанцию вдвое быстрее."
+        },
+        {
+          "q": "Можно ли начинать бегать с лишним весом?",
+          "a": "Можно, но безопаснее начать с ходьбы: у начинающих бегунов травм более чем вдвое больше, чем у регулярно бегающих. После нескольких недель быстрой ходьбы добавляйте короткие беговые отрезки, а при проблемах со здоровьем сначала посоветуйтесь с врачом."
+        },
+        {
+          "q": "Можно ли похудеть одной ходьбой?",
+          "a": "Да, если следить и за питанием. Ходьба сжигает меньше за минуту, но её легко поддерживать, а при равных затратах энергии она снижает риск гипертонии, высокого холестерина и диабета почти так же, как бег."
+        },
+        {
+          "q": "Продолжается ли сжигание жира после бега?",
+          "a": "Совсем недолго. В измерениях обмен веществ возвращался к покою через 15 минут после бега и через 10 минут после ходьбы; прибавка — десятки калорий. Главная разница — в самой тренировке."
+        }
+      ],
+      "references": [
+        {
+          "label": "ВОЗ — Физическая активность (информационный бюллетень)",
+          "href": "https://www.who.int/ru/news-room/fact-sheets/detail/physical-activity"
+        },
+        {
+          "label": "Hall C и соавт. — Energy expenditure of walking and running: comparison with prediction equations. Med Sci Sports Exerc, 2004",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/15570150/"
+        },
+        {
+          "label": "Wilkin LD и соавт. — Energy expenditure comparison between walking and running in average fitness individuals. J Strength Cond Res, 2012",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/22446673/"
+        },
+        {
+          "label": "Williams PT — Greater weight loss from running than walking during a 6.2-yr prospective follow-up. Med Sci Sports Exerc, 2013",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/23190592/"
+        },
+        {
+          "label": "Williams PT, Thompson PD — Walking versus running for hypertension, cholesterol, and diabetes mellitus risk reduction. Arterioscler Thromb Vasc Biol, 2013",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/23559628/"
+        },
+        {
+          "label": "Videbæk S и соавт. — Incidence of running-related injuries per 1000 h of running in different types of runners: a systematic review and meta-analysis. Sports Med, 2015",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/25951917/"
+        },
+        {
+          "label": "Larson-Meyer DE и соавт. — Influence of running and walking on hormonal regulators of appetite in women. J Obes, 2012",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/22619704/"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/ru/raskhod-kalorij.html",
+          "title": "Сколько калорий сжигает тренировка?",
+          "desc": "Реалистичные цифры для ходьбы, бега и велосипеда."
+        },
+        {
+          "href": "/blog/ru/ves-vyros-posle-trenirovok.html",
+          "title": "Начали тренироваться, а вес вырос?",
+          "desc": "4 причины прибавки в первые недели."
+        },
+        {
+          "href": "/blog/ru/len-zanimatsya-sportom.html",
+          "title": "Лень заниматься спортом",
+          "desc": "7 способов начать без мотивации."
+        },
+        {
+          "href": "/blog/ru/luchshee-prilozhenie-dlya-trenirovok.html",
+          "title": "Лучшее приложение для тренировок",
+          "desc": "Сравнение приложений: какое подойдёт вам."
+        }
+      ]
+    },
+    "de": {
+      "slug": "gehen-oder-laufen-abnehmen",
+      "read_minutes": 7,
+      "badge": "🏃 Ratgeber · Gehen und Laufen",
+      "h1": "Gehen oder Laufen zum Abnehmen? Kalorien, Zeit und Verletzungsrisiko (und wie du es in Suu verfolgst)",
+      "about": [
+        {
+          "name": "Gehen"
+        },
+        {
+          "name": "Laufen"
+        },
+        {
+          "name": "Abnehmen"
+        }
+      ],
+      "meta": {
+        "title": "Gehen oder Laufen zum Abnehmen: Was ist besser? | Suu",
+        "description": "In derselben Zeit verbrennt Laufen etwa 2,5- bis 3-mal so viel wie Gehen, auf derselben Strecke nur rund 40 % mehr. Kalorien, Appetit und Verletzungsrisiko.",
+        "keywords": "gehen oder laufen zum abnehmen, walken oder joggen abnehmen, wie viele kalorien 30 minuten spazieren, wie viele kalorien 30 minuten joggen, mit spazieren gehen abnehmen, verbrennt laufen mehr fett, joggen mit übergewicht, nachbrenneffekt joggen",
+        "og_title": "Gehen oder Laufen zum Abnehmen?",
+        "og_description": "Kalorien in gleicher Zeit und auf gleicher Strecke, ob der Nachbrenneffekt echt ist, Appetit und Verletzungsrisiko – Zahlen und ein Einstiegsplan, gestützt auf Studien."
+      },
+      "answer": "Zum Abnehmen funktioniert beides; der Unterschied liegt in der Zeit und darin, wie lange du dranbleibst. In derselben Zeit verbrennt Laufen etwa 2,5- bis 3-mal so viel wie Gehen, auf derselben Strecke aber nur rund 40 % mehr. Wenig Zeit und gesunde Gelenke? Dann ist Laufen effizienter. Einsteiger oder mit Übergewicht? Fang mit Gehen an und bau Laufintervalle langsam ein. Suu zeichnet beides per GPS auf.",
+      "health_note": {
+        "head": "Dieser Artikel ist keine medizinische Beratung.",
+        "body": [
+          "Er bietet allgemeine Informationen. Wenn du eine Herz-, Lungen- oder Gelenkerkrankung, Bluthochdruck oder Diabetes hast, deutlich übergewichtig bist oder lange inaktiv warst, sprich vor dem Laufeinstieg mit deiner Ärztin oder deinem Arzt.",
+          "Hör auf und hol dir medizinische Hilfe, wenn beim Gehen oder Laufen eines davon auftritt:"
+        ],
+        "red_flags": [
+          "Schmerzen, Druck oder Engegefühl in der Brust",
+          "Ungewöhnliche Atemnot, Schwindel oder Schwächegefühl",
+          "Herzrasen oder unregelmäßiger Herzschlag",
+          "Knie-, Schienbein- oder Fußschmerzen, die zunehmen und nach ein paar Tagen Pause nicht abklingen"
+        ]
+      },
+      "disclosure": "Diesen Ratgeber haben wir als das zweiköpfige Team geschrieben, das Suu entwickelt. Wir empfehlen unsere App, aber die Tipps stützen sich auf die Weltgesundheitsorganisation, das Bundesgesundheitsministerium und begutachtete Studien – du kannst die Schritte auch ohne Suu umsetzen.",
+      "intro": [
+        "Meist lautet die Frage: „Eine Stunde gehen oder 30 Minuten joggen?“ Kurz gesagt hilft beides beim Abnehmen – nur nicht auf dieselbe Weise. Laufen verbraucht pro Minute deutlich mehr Energie, Gehen lässt sich länger durchhalten und ist mit weniger Verletzungen verbunden.",
+        "Unten stellen wir die Zahlen nebeneinander: Kalorien in derselben Zeit und auf derselben Strecke, ob der Nachbrenneffekt nach dem Laufen echt ist, was mit dem Appetit passiert und wer womit anfangen sollte."
+      ],
+      "analysis": [
+        {
+          "head": "Gleiche Strecke oder gleiche Zeit? Da liegt der Unterschied",
+          "body": [
+            "Verbreitet ist die Annahme, ein Kilometer koste gleich viele Kalorien, egal ob gegangen oder gelaufen. Messungen bestätigen das nicht: In einer Studie mit 24 Personen kosteten 1.600 Meter Laufen etwa 115 kcal und dieselbe Strecke zu Fuß etwa 81 kcal – auf derselben Strecke also rund 40 % mehr beim Laufen.<sup><a href=\"#ref2\">2</a></sup>",
+            "Der eigentliche Unterschied ist die Zeit. In derselben Studie war das Lauftempo (etwa 10 km/h) doppelt so hoch wie das Gehtempo (etwa 5 km/h). Mit diesen Mittelwerten grob gerechnet ergeben 30 Minuten zügiges Gehen etwa 130 kcal, 30 Minuten Laufen etwa 360 kcal. Deine Werte hängen von Gewicht und Tempo ab, das Verhältnis bleibt ähnlich."
+          ],
+          "callout": "Einen stundenlangen „Fettverbrennungs-Nachbrenneffekt“ gibt es nicht. Bei 30 Personen mit durchschnittlich 71 kg war der Stoffwechsel 10 Minuten nach dem Gehen und 15 Minuten nach dem Laufen wieder auf Ruheniveau; der Gesamtverbrauch für 1.600 Meter inklusive Erholung lag bei etwa 111 kcal (Gehen) und etwa 159 kcal (Laufen).<sup><a href=\"#ref3\">3</a></sup>"
+        },
+        {
+          "head": "Was wir über Abnehmen und Gesundheit wissen",
+          "body": [
+            "Eine große Studie, die 15.237 Geherinnen und Geher sowie 32.216 Läuferinnen und Läufer 6,2 Jahre begleitete, fand pro eingesetzter Energie beim Laufen eine stärkere Gewichtsabnahme als beim Gehen – in der schwersten Gruppe rund 90 % mehr.<sup><a href=\"#ref4\">4</a></sup> Da es eine Beobachtungsstudie ist, können auch andere Gewohnheiten der Laufenden eine Rolle spielen.",
+            "Für die Gesundheit ist das Bild ausgeglichen: Bei gleichem Energieverbrauch senkten Gehen und Laufen das Risiko für Bluthochdruck, hohes Cholesterin und Diabetes in ähnlichem Maß.<sup><a href=\"#ref5\">5</a></sup> Das spiegelt auch die Empfehlung der WHO: 150–300 Minuten moderate oder 75–150 Minuten intensive Bewegung pro Woche.<sup><a href=\"#ref1\">1</a></sup> Grob ersetzt eine Minute Laufen zwei Minuten Gehen."
+          ]
+        },
+        {
+          "head": "Appetit und Verletzungen: zwei oft vergessene Punkte",
+          "body": [
+            "In einer kleinen Studie aßen Frauen nach 60 Minuten Laufen bei der nächsten Mahlzeit etwa 194 kcal weniger, als sie verbraucht hatten; wer genauso lange ging, aß 41 kcal mehr als verbraucht.<sup><a href=\"#ref7\">7</a></sup> Eine einzelne Studie ist keine Regel, erinnert aber daran, dass der „Hab ich mir verdient“-Snack nach dem Spaziergang das Verbrannte leicht wieder ausgleicht.",
+            "Auf der anderen Seite stehen Verletzungen: Laufeinsteiger kommen auf etwa 17,8 Verletzungen pro 1.000 Laufstunden, regelmäßig laufende Freizeitläufer auf 7,7.<sup><a href=\"#ref6\">6</a></sup> Das Risiko ist in den ersten Monaten am höchsten – und drei Wochen Verletzungspause kosten weit mehr Kalorien als tägliches Gehen."
+          ]
+        },
+        {
+          "head": "Womit anfangen? Ein praktischer Plan",
+          "body": [
+            "Erlauben Zeit, Gelenke und Fitness es, ist Laufen pro Minute effizienter. Bist du Einsteiger, deutlich übergewichtig oder hast Knieprobleme, ist Gehen der sicherere Start. Meist ist eine Mischung am besten:"
+          ],
+          "list": [
+            "<strong>Woche 1–2:</strong> an 3–5 Tagen pro Woche 30 Minuten zügig gehen – reden geht, singen nicht mehr. Damit startest du in Richtung der mindestens 150 Minuten pro Woche, die Erwachsenen empfohlen werden.<sup><a href=\"#ref8\">8</a></sup>",
+            "<strong>Woche 3–6:</strong> bau Intervalle aus 1 Minute lockerem Laufen und 2 Minuten Gehen ein und steigere die Laufminuten jede Woche ein wenig.",
+            "<strong>Danach:</strong> Schaffst du 20–30 Minuten am Stück, lauf an 2–3 Tagen pro Woche und geh an den anderen.",
+            "<strong>Schmerzregel:</strong> Sind Schmerzen am nächsten Tag nicht weg, geh einen Schritt zurück.",
+            "<strong>Vergiss den Teller nicht:</strong> Über das Abnehmen entscheidet vor allem das Essen; zähl nur die Hälfte des Verbrannten als „zum Nachessen verfügbar“."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "So verfolgst du das in Suu",
+        "lead": "Menünamen genau wie in der App:",
+        "steps": [
+          {
+            "feature": "Geh- oder Laufeinheit per GPS aufzeichnen",
+            "where": "Startbildschirm → Schnell hinzufügen → <strong>Übung hinzufügen</strong> → Gehen oder Laufen → Start",
+            "solves": "Zeit, Distanz, Tempo, Route und verbrannte Kalorien werden live aufgezeichnet; geh und lauf dieselbe Strecke und vergleiche selbst. Startest du auf der Apple Watch, siehst du auch deinen Puls live."
+          },
+          {
+            "feature": "Den ganzen Tag auf einem Bildschirm sehen",
+            "where": "Bildschirm <strong>Ernährung</strong> → Heute",
+            "solves": "Die Kalorien des Tages stehen neben deinem Ziel, Snacks nach dem Spaziergang sind hier mit Uhrzeit gelistet."
+          },
+          {
+            "feature": "Meilensteine und Abzeichen",
+            "where_ios": "Tab <strong>Du</strong> → <strong>Distanz-Meilensteine</strong> · <strong>Abzeichen</strong>",
+            "where_android": "Der Bildschirm <strong>Abzeichen</strong> und die <strong>Meilensteine</strong> am Ende eines Trainings",
+            "solves": "Die Distanz aus Läufen, Spaziergängen und Wanderungen summiert sich zu Meilensteinen, die du als Zertifikat teilen kannst – der Weg vom Gehen zum Laufen wird Schritt für Schritt sichtbar."
+          },
+          {
+            "feature": "Tägliche Bewegungs-Erinnerung",
+            "where_ios": "Einstellungen → Benachrichtigungseinstellungen → <strong>Tägliche Benachrichtigungen</strong>",
+            "where_android": "Einstellungen → <strong>Tägliche Benachrichtigungen</strong>",
+            "solves": "Die Erinnerung „Bewegung eintragen 🚶“ bringt deine Gehzeit aufs Handy."
+          }
+        ],
+        "note": "Gehen und Laufen per GPS, Meilensteine und Abzeichen sind kostenlos.",
+        "button": "Suu kostenlos laden"
+      },
+      "verdict": {
+        "head": "Kurz gesagt",
+        "body": [
+          "Zum Abnehmen funktioniert beides. Laufen verbrennt pro Minute etwa 2,5- bis 3-mal so viel; Gehen ist leichter durchzuhalten, verletzungsärmer und bei gleichem Energieverbrauch gesundheitlich ähnlich wirksam.",
+          "Wenig Zeit: laufen. Einsteiger: gehen. Für die meisten ist es am besten, mit Gehen zu starten und Laufintervalle langsam einzubauen. Egal was du wählst – entscheidend sind Wochen mit Regelmäßigkeit und ein Blick auf den Teller."
+        ]
+      },
+      "cta": {
+        "head": "Zeichne heute deinen ersten Spaziergang oder Lauf auf",
+        "sub": "Gehen und Laufen per GPS kostenlos · iOS und Android",
+        "button": "Suu kostenlos laden"
+      },
+      "faq": [
+        {
+          "q": "Ist Gehen oder Laufen besser zum Abnehmen?",
+          "a": "Beides funktioniert. Laufen verbrennt in derselben Zeit etwa 2,5- bis 3-mal so viele Kalorien; Gehen ist leichter durchzuhalten und verletzungsärmer. Wenig Zeit: laufen, Einsteiger: gehen – für die meisten ist eine Mischung am besten."
+        },
+        {
+          "q": "Wie viele Kalorien verbrennen 30 Minuten Gehen?",
+          "a": "Mit gemessenen Mittelwerten grob: zügiges Gehen mit etwa 5 km/h rund 130 kcal in 30 Minuten, Laufen mit etwa 10 km/h rund 360 kcal. Deine Werte hängen von Gewicht und Tempo ab."
+        },
+        {
+          "q": "Verbrennt man auf derselben Strecke gehend und laufend gleich viel?",
+          "a": "Nein. In Messungen kosteten 1.600 Meter Laufen etwa 115 kcal und Gehen etwa 81 kcal – rund 40 % mehr beim Laufen. Der größere Unterschied entsteht, weil Laufen die Strecke in der halben Zeit schafft."
+        },
+        {
+          "q": "Kann man mit Übergewicht mit dem Laufen anfangen?",
+          "a": "Ja, sicherer ist aber der Start mit Gehen: Laufeinsteiger verletzen sich mehr als doppelt so oft wie regelmäßige Läufer. Nach einigen Wochen zügigen Gehens kurze Laufintervalle einbauen und bei gesundheitlichen Problemen vorher ärztlich abklären."
+        },
+        {
+          "q": "Kann man nur durch Gehen abnehmen?",
+          "a": "Ja, wenn du auch aufs Essen achtest. Gehen verbrennt pro Minute weniger, ist aber leicht durchzuhalten und senkt bei gleichem Energieverbrauch Blutdruck-, Cholesterin- und Diabetesrisiko ähnlich wie Laufen."
+        },
+        {
+          "q": "Gibt es einen Nachbrenneffekt nach dem Joggen?",
+          "a": "Nur kurz. In Messungen war der Stoffwechsel 15 Minuten nach dem Laufen und 10 Minuten nach dem Gehen wieder in Ruhe; das Plus liegt bei einigen Dutzend Kalorien. Der eigentliche Unterschied steckt im Training selbst."
+        }
+      ],
+      "references": [
+        {
+          "label": "Weltgesundheitsorganisation — Physical activity (Fact Sheet)",
+          "href": "https://www.who.int/news-room/fact-sheets/detail/physical-activity"
+        },
+        {
+          "label": "Hall C et al. — Energy expenditure of walking and running: comparison with prediction equations. Med Sci Sports Exerc, 2004",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/15570150/"
+        },
+        {
+          "label": "Wilkin LD et al. — Energy expenditure comparison between walking and running in average fitness individuals. J Strength Cond Res, 2012",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/22446673/"
+        },
+        {
+          "label": "Williams PT — Greater weight loss from running than walking during a 6.2-yr prospective follow-up. Med Sci Sports Exerc, 2013",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/23190592/"
+        },
+        {
+          "label": "Williams PT, Thompson PD — Walking versus running for hypertension, cholesterol, and diabetes mellitus risk reduction. Arterioscler Thromb Vasc Biol, 2013",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/23559628/"
+        },
+        {
+          "label": "Videbæk S et al. — Incidence of running-related injuries per 1000 h of running in different types of runners: a systematic review and meta-analysis. Sports Med, 2015",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/25951917/"
+        },
+        {
+          "label": "Larson-Meyer DE et al. — Influence of running and walking on hormonal regulators of appetite in women. J Obes, 2012",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/22619704/"
+        },
+        {
+          "label": "gesund.bund.de (Bundesministerium für Gesundheit) — Gesund durch Bewegung",
+          "href": "https://gesund.bund.de/gesund-durch-bewegung"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/de/kalorienverbrauch-beim-sport.html",
+          "title": "Kalorienverbrauch beim Sport",
+          "desc": "Realistische Werte für Gehen, Laufen und Rad."
+        },
+        {
+          "href": "/blog/de/zunehmen-trotz-sport.html",
+          "title": "Zunehmen trotz Sport?",
+          "desc": "Die 4 Gründe in den ersten Wochen."
+        },
+        {
+          "href": "/blog/de/keine-lust-auf-sport.html",
+          "title": "Keine Lust auf Sport?",
+          "desc": "7 Wege, trotzdem anzufangen."
+        },
+        {
+          "href": "/blog/de/beste-workout-tracker-app.html",
+          "title": "Die beste Workout-Tracker-App",
+          "desc": "Apps im Vergleich: welche zu dir passt."
+        }
+      ]
+    },
+    "it": {
+      "slug": "camminare-o-correre-per-dimagrire",
+      "read_minutes": 7,
+      "badge": "🏃 Guida · Camminata e corsa",
+      "h1": "Camminare o correre per dimagrire? Calorie, tempo e rischio di infortuni (e come monitorarlo in Suu)",
+      "about": [
+        {
+          "name": "Camminata"
+        },
+        {
+          "name": "Corsa"
+        },
+        {
+          "name": "Dimagrimento"
+        }
+      ],
+      "meta": {
+        "title": "Camminare o correre per dimagrire: cosa è meglio? | Suu",
+        "description": "A parità di tempo la corsa brucia circa 2,5–3 volte la camminata; a parità di distanza solo il 40% in più. Calorie, appetito e rischio di infortuni a confronto.",
+        "keywords": "camminare o correre per dimagrire, meglio camminare o correre, quante calorie brucia camminare 30 minuti, quante calorie brucia correre 30 minuti, si dimagrisce camminando, la corsa brucia più grassi, correre se sei in sovrappeso, afterburn corsa",
+        "og_title": "Camminare o correre per dimagrire?",
+        "og_description": "Calorie a parità di tempo e di distanza, se l'«afterburn» esiste davvero, appetito e rischio di infortuni: i numeri e un piano per iniziare, secondo la ricerca."
+      },
+      "answer": "Per dimagrire funzionano entrambi; la differenza sta nel tempo e in quanto riesci a mantenerli. A parità di tempo la corsa brucia circa 2,5–3 volte la camminata, ma a parità di distanza solo il 40% in più. Hai poco tempo e articolazioni in salute? La corsa è più efficiente. Sei agli inizi o in sovrappeso? Parti camminando e aggiungi gradualmente tratti di corsa. Suu registra entrambe con il GPS.",
+      "health_note": {
+        "head": "Questo articolo non è un consiglio medico.",
+        "body": [
+          "Contiene informazioni generali. Se hai problemi cardiaci, polmonari o articolari, pressione alta o diabete, sei in forte sovrappeso o sei stato inattivo a lungo, parla con il tuo medico prima di iniziare a correre.",
+          "Fermati e chiedi aiuto medico se mentre cammini o corri compare uno di questi segnali:"
+        ],
+        "red_flags": [
+          "Dolore, pressione o senso di oppressione al petto",
+          "Affanno insolito, capogiri o sensazione di svenimento",
+          "Palpitazioni o battito irregolare",
+          "Dolore a ginocchio, tibia o piede che peggiora e non passa dopo qualche giorno di riposo"
+        ]
+      },
+      "disclosure": "Abbiamo scritto questa guida come il team di due persone che sviluppa Suu. Consigliamo la nostra app, ma i consigli si basano sull'Organizzazione Mondiale della Sanità, sull'Istituto Superiore di Sanità e su studi sottoposti a revisione: puoi seguire gli stessi passi anche senza Suu.",
+      "intro": [
+        "Di solito la domanda è: «Un'ora di camminata o mezz'ora di corsa?» La risposta breve è che entrambe aiutano a dimagrire, ma non allo stesso modo. La corsa consuma molta più energia al minuto; la camminata si mantiene più a lungo e comporta meno infortuni.",
+        "Qui sotto mettiamo i numeri uno accanto all'altro: le calorie a parità di tempo e di distanza, se l'«afterburn» dopo la corsa è reale, cosa succede all'appetito e chi dovrebbe iniziare con cosa."
+      ],
+      "analysis": [
+        {
+          "head": "Stessa distanza o stesso tempo? Ecco dove sta la differenza",
+          "body": [
+            "Molti credono che un chilometro costi le stesse calorie che tu lo percorra camminando o correndo. Le misure non lo confermano: in uno studio su 24 persone, correre 1.600 metri ha richiesto circa 115 kcal e camminare la stessa distanza circa 81 kcal, cioè circa il 40% in più per la corsa a parità di distanza.<sup><a href=\"#ref2\">2</a></sup>",
+            "La vera differenza è il tempo. Nello stesso studio la velocità di corsa (circa 10 km/h) era doppia rispetto a quella della camminata (circa 5 km/h). Con queste medie, a grandi linee, 30 minuti di camminata veloce valgono circa 130 kcal e 30 minuti di corsa circa 360 kcal. I tuoi numeri dipendono da peso e ritmo, ma il rapporto resta simile."
+          ],
+          "callout": "Non esiste un «brucia-grassi» che dura ore dopo la corsa. In 30 persone con un peso medio di 71 kg il metabolismo è tornato a riposo 10 minuti dopo la camminata e 15 minuti dopo la corsa; il consumo totale per 1.600 metri, recupero compreso, è stato di circa 111 kcal camminando e circa 159 kcal correndo.<sup><a href=\"#ref3\">3</a></sup>"
+        },
+        {
+          "head": "Cosa sappiamo su dimagrimento e salute",
+          "body": [
+            "Un grande studio che ha seguito 15.237 camminatori e 32.216 runner per 6,2 anni ha osservato che, a parità di energia spesa, la corsa era associata a una perdita di peso maggiore rispetto alla camminata, circa il 90% in più nel gruppo più pesante.<sup><a href=\"#ref4\">4</a></sup> Trattandosi di uno studio osservazionale, possono contare anche altre abitudini di chi sceglie di correre.",
+            "Per la salute il quadro è alla pari: a parità di energia spesa, camminata e corsa hanno ridotto in misura simile il rischio di ipertensione, colesterolo alto e diabete.<sup><a href=\"#ref5\">5</a></sup> Lo riflette anche l'indicazione dell'OMS: 150–300 minuti di attività moderata o 75–150 minuti di attività intensa a settimana.<sup><a href=\"#ref1\">1</a></sup> In pratica, un minuto di corsa vale circa due minuti di camminata."
+          ]
+        },
+        {
+          "head": "Appetito e infortuni: due cose che si dimenticano",
+          "body": [
+            "In un piccolo studio, dopo 60 minuti di corsa le donne hanno mangiato al pasto successivo circa 194 kcal in meno di quanto avevano consumato, mentre chi aveva camminato per lo stesso tempo ne ha mangiate 41 in più.<sup><a href=\"#ref7\">7</a></sup> Uno studio non fa una regola, ma ricorda che lo spuntino «me lo sono meritato» dopo una camminata può annullare facilmente quanto bruciato.",
+            "Dall'altra parte ci sono gli infortuni: i runner principianti hanno circa 17,8 infortuni ogni 1.000 ore di corsa, contro 7,7 di chi corre con regolarità.<sup><a href=\"#ref6\">6</a></sup> Il rischio della corsa è più alto nei primi mesi, e tre settimane ferme per un infortunio costano molte più calorie di una camminata quotidiana."
+          ]
+        },
+        {
+          "head": "Da cosa iniziare? Un piano pratico",
+          "body": [
+            "Se tempo, articolazioni e forma lo permettono, la corsa è più efficiente al minuto. Se sei agli inizi, in forte sovrappeso o hai problemi alle ginocchia, la camminata è un inizio più sicuro. Spesso la scelta migliore è un mix:"
+          ],
+          "list": [
+            "<strong>Settimane 1–2:</strong> camminata veloce di 30 minuti per 3–5 giorni a settimana: riesci a parlare ma non a cantare. È il primo passo verso i 150–300 minuti settimanali indicati dalle linee guida OMS riprese dall'ISS.<sup><a href=\"#ref8\">8</a></sup>",
+            "<strong>Settimane 3–6:</strong> inserisci intervalli di 1 minuto di corsa leggera e 2 minuti di camminata, aumentando di poco i minuti di corsa ogni settimana.",
+            "<strong>Dopo:</strong> quando riesci a correre 20–30 minuti senza fermarti, corri 2–3 giorni a settimana e cammina negli altri.",
+            "<strong>Regola del dolore:</strong> se il dolore non passa entro il giorno dopo, fai un passo indietro.",
+            "<strong>Non dimenticare il piatto:</strong> a decidere il dimagrimento è soprattutto ciò che mangi; considera «da poter rimangiare» solo metà di ciò che bruci."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Dove monitorarlo in Suu",
+        "lead": "I nomi dei menu sono quelli dell'app:",
+        "steps": [
+          {
+            "feature": "Registra camminata o corsa con il GPS",
+            "where": "Schermata principale → aggiunta rapida → <strong>Aggiungi esercizio</strong> → Camminata o Corsa → avvia",
+            "solves": "Tempo, distanza, ritmo, percorso e calorie bruciate vengono registrati in diretta; percorri lo stesso tragitto camminando e correndo e confronta da solo. Se parti da Apple Watch vedi anche il battito in tempo reale."
+          },
+          {
+            "feature": "Tutta la giornata in una schermata",
+            "where": "Schermata <strong>Nutrizione</strong> → Oggi",
+            "solves": "Le calorie del giorno compaiono accanto al tuo obiettivo, e gli spuntini dopo la camminata sono elencati qui con l'orario."
+          },
+          {
+            "feature": "Traguardi e distintivi",
+            "where_ios": "Scheda <strong>Tu</strong> → <strong>Traguardi di distanza</strong> · <strong>Distintivi</strong>",
+            "where_android": "La schermata <strong>Distintivi</strong> e i <strong>Traguardi</strong> a fine allenamento",
+            "solves": "La distanza di corse, camminate ed escursioni si somma in traguardi condivisibili come certificati: vedi il passaggio dalla camminata alla corsa passo dopo passo."
+          },
+          {
+            "feature": "Promemoria giornaliero per il movimento",
+            "where_ios": "Impostazioni → Impostazioni notifiche → <strong>Notifiche giornaliere</strong>",
+            "where_android": "Impostazioni → <strong>Notifiche giornaliere</strong>",
+            "solves": "Il promemoria «Registra il movimento 🚶» porta l'orario della camminata sul telefono."
+          }
+        ],
+        "note": "Camminata e corsa con GPS, traguardi e distintivi sono gratuiti.",
+        "button": "Scarica Suu gratis"
+      },
+      "verdict": {
+        "head": "In breve",
+        "body": [
+          "Per dimagrire funzionano entrambe. La corsa brucia circa 2,5–3 volte di più al minuto; la camminata è più facile da mantenere, espone a meno infortuni e, a parità di energia spesa, dà benefici simili per la salute.",
+          "Poco tempo: corri. Agli inizi: cammina. Per la maggior parte delle persone il meglio è partire camminando e aggiungere gradualmente tratti di corsa. Qualunque cosa scegli, a decidere il risultato sono settimane di costanza e attenzione al piatto."
+        ]
+      },
+      "cta": {
+        "head": "Registra oggi la tua prima camminata o corsa",
+        "sub": "Camminata e corsa con GPS gratuite · iOS e Android",
+        "button": "Scarica Suu gratis"
+      },
+      "faq": [
+        {
+          "q": "Per dimagrire è meglio camminare o correre?",
+          "a": "Funzionano entrambi. La corsa brucia circa 2,5–3 volte più calorie nello stesso tempo; la camminata è più facile da mantenere e comporta meno infortuni. Poco tempo: corsa; agli inizi: camminata. Per la maggior parte delle persone il mix è la scelta migliore."
+        },
+        {
+          "q": "Quante calorie si bruciano camminando 30 minuti?",
+          "a": "Con le medie misurate, a grandi linee: camminata veloce a circa 5 km/h intorno a 130 kcal in 30 minuti, corsa a circa 10 km/h intorno a 360 kcal. I tuoi numeri dipendono da peso e ritmo."
+        },
+        {
+          "q": "Camminare e correre la stessa distanza bruciano le stesse calorie?",
+          "a": "No. Nelle misure, correre 1.600 metri ha richiesto circa 115 kcal e camminarli circa 81 kcal, cioè circa il 40% in più per la corsa. La differenza maggiore nasce dal fatto che la corsa copre la distanza in metà tempo."
+        },
+        {
+          "q": "Chi è in sovrappeso può iniziare a correre?",
+          "a": "Sì, ma partire dalla camminata è più sicuro: i runner principianti si infortunano più del doppio di chi corre con regolarità. Dopo qualche settimana di camminata veloce aggiungi brevi tratti di corsa e, se hai problemi di salute, parlane prima con il medico."
+        },
+        {
+          "q": "Si può dimagrire solo camminando?",
+          "a": "Sì, se curi anche l'alimentazione. La camminata brucia meno al minuto ma si mantiene facilmente e, a parità di energia spesa, riduce il rischio di ipertensione, colesterolo alto e diabete in modo simile alla corsa."
+        },
+        {
+          "q": "Dopo la corsa si continua a bruciare grassi?",
+          "a": "Solo per poco. Nelle misure il metabolismo è tornato a riposo 15 minuti dopo la corsa e 10 dopo la camminata; il guadagno è di qualche decina di calorie. La vera differenza sta nell'allenamento stesso."
+        }
+      ],
+      "references": [
+        {
+          "label": "Organizzazione Mondiale della Sanità — Physical activity (scheda informativa)",
+          "href": "https://www.who.int/news-room/fact-sheets/detail/physical-activity"
+        },
+        {
+          "label": "Hall C et al. — Energy expenditure of walking and running: comparison with prediction equations. Med Sci Sports Exerc, 2004",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/15570150/"
+        },
+        {
+          "label": "Wilkin LD et al. — Energy expenditure comparison between walking and running in average fitness individuals. J Strength Cond Res, 2012",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/22446673/"
+        },
+        {
+          "label": "Williams PT — Greater weight loss from running than walking during a 6.2-yr prospective follow-up. Med Sci Sports Exerc, 2013",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/23190592/"
+        },
+        {
+          "label": "Williams PT, Thompson PD — Walking versus running for hypertension, cholesterol, and diabetes mellitus risk reduction. Arterioscler Thromb Vasc Biol, 2013",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/23559628/"
+        },
+        {
+          "label": "Videbæk S et al. — Incidence of running-related injuries per 1000 h of running in different types of runners: a systematic review and meta-analysis. Sports Med, 2015",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/25951917/"
+        },
+        {
+          "label": "Larson-Meyer DE et al. — Influence of running and walking on hormonal regulators of appetite in women. J Obes, 2012",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/22619704/"
+        },
+        {
+          "label": "Istituto Superiore di Sanità (EpiCentro) — Every move counts. Le linee guida 2020 OMS su attività fisica e comportamenti sedentari",
+          "href": "https://www.epicentro.iss.it/attivita_fisica/linee-guida-oms-2020"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/it/calorie-bruciate-allenamento.html",
+          "title": "Calorie bruciate in allenamento",
+          "desc": "Numeri realistici per camminata, corsa e bici."
+        },
+        {
+          "href": "/blog/it/peso-aumentato-con-allenamento.html",
+          "title": "Peso aumentato da quando ti alleni?",
+          "desc": "I 4 motivi delle prime settimane."
+        },
+        {
+          "href": "/blog/it/non-ho-voglia-di-allenarmi.html",
+          "title": "Non ho voglia di allenarmi",
+          "desc": "7 modi per iniziare comunque."
+        },
+        {
+          "href": "/blog/it/migliore-app-allenamento.html",
+          "title": "La migliore app per l'allenamento",
+          "desc": "App a confronto: quale fa per te."
+        }
+      ]
+    },
+    "uk": {
+      "slug": "khodba-chy-bih",
+      "read_minutes": 7,
+      "badge": "🏃 Посібник · Ходьба й біг",
+      "h1": "Ходьба чи біг для схуднення: калорії, час і ризик травм (і як відстежувати це в Suu)",
+      "about": [
+        {
+          "name": "Ходьба"
+        },
+        {
+          "name": "Біг"
+        },
+        {
+          "name": "Схуднення"
+        }
+      ],
+      "meta": {
+        "title": "Ходьба чи біг для схуднення: що краще? | Suu",
+        "description": "За той самий час біг спалює приблизно в 2,5–3 рази більше за ходьбу, а на ту саму дистанцію — лише на 40% більше. Калорії, апетит і ризик травм.",
+        "keywords": "ходьба чи біг для схуднення, що краще ходьба чи біг, скільки калорій спалює ходьба 30 хвилин, скільки калорій спалює біг 30 хвилин, чи можна схуднути ходьбою, біг спалює більше жиру, чи можна бігати із зайвою вагою, спалювання жиру після бігу",
+        "og_title": "Ходьба чи біг для схуднення?",
+        "og_description": "Калорії за той самий час і на ту саму дистанцію, чи реальний «допал» після бігу, апетит і ризик травм — цифри та план для старту за дослідженнями."
+      },
+      "answer": "Для схуднення підходить і те, і те; різниця — у часі та в тому, скільки ти зможеш підтримувати навантаження. За той самий час біг спалює приблизно в 2,5–3 рази більше калорій, а на ту саму дистанцію — лише приблизно на 40% більше. Мало часу й здорові суглоби — біг ефективніший. Новачок або зайва вага — почни з ходьби й поступово додавай бігові відрізки. Suu записує і те, і те з GPS.",
+      "health_note": {
+        "head": "Ця стаття не є медичною порадою.",
+        "body": [
+          "Це загальна інформація. Якщо в тебе хвороби серця, легень чи суглобів, підвищений тиск або діабет, помітна зайва вага або ти давно не рухався, порадься з лікарем, перш ніж починати бігати.",
+          "Зупинись і звернися по медичну допомогу, якщо під час ходьби чи бігу з'явилося щось із цього:"
+        ],
+        "red_flags": [
+          "Біль, тиск або стискання в грудях",
+          "Незвична задишка, запаморочення або переднепритомний стан",
+          "Серцебиття або нерівний пульс",
+          "Біль у коліні, гомілці чи стопі, що посилюється й не минає за кілька днів відпочинку"
+        ]
+      },
+      "disclosure": "Цей посібник написала команда з двох людей, яка створює Suu. Ми радимо свій застосунок, але поради спираються на Всесвітню організацію охорони здоров'я, Центр громадського здоров'я України та рецензовані дослідження — ті самі кроки можна виконувати й без Suu.",
+      "intro": [
+        "Зазвичай питання звучить так: «Година ходьби чи 30 хвилин бігу?» Коротка відповідь: схуднути допомагає і те, і те, але по-різному. Біг спалює значно більше енергії за хвилину, а ходьбу легше підтримувати довше, і ризик травм у неї нижчий.",
+        "Нижче ми порівнюємо цифри: скільки калорій іде за той самий час і на ту саму дистанцію, чи реальний «допал» після бігу, що відбувається з апетитом і кому з чого краще починати."
+      ],
+      "analysis": [
+        {
+          "head": "Та сама дистанція чи той самий час? Ось де різниця",
+          "body": [
+            "Поширене переконання, що кілометр коштує однакових калорій, пройдеш ти його чи пробіжиш. Вимірювання цього не підтверджують: у дослідженні на 24 людях біг на 1600 м потребував близько 115 ккал, а ходьба на ту саму дистанцію — близько 81 ккал, тобто на однаковій дистанції біг приблизно на 40% затратніший.<sup><a href=\"#ref2\">2</a></sup>",
+            "Головна різниця — у часі. У тому самому дослідженні швидкість бігу (близько 10 км/год) була вдвічі вищою за швидкість ходьби (близько 5 км/год). За цими середніми за 30 хвилин швидка ходьба дає приблизно 130 ккал, а біг — приблизно 360 ккал. Твої цифри залежать від ваги й темпу, але співвідношення лишається схожим."
+          ],
+          "callout": "Багатогодинного «допалу жиру» після бігу немає. У 30 людей із середньою вагою 71 кг обмін речовин повернувся до рівня спокою через 10 хвилин після ходьби й через 15 хвилин після бігу; загальні витрати на 1600 м разом із відновленням становили близько 111 ккал при ходьбі й близько 159 ккал при бігу.<sup><a href=\"#ref3\">3</a></sup>"
+        },
+        {
+          "head": "Що відомо про схуднення та здоров'я",
+          "body": [
+            "У великому дослідженні, де 6,2 року спостерігали 15 237 любителів ходьби та 32 216 бігунів, на одиницю витраченої енергії біг був пов'язаний із більшою втратою ваги, ніж ходьба, — у найважчій групі приблизно на 90%.<sup><a href=\"#ref4\">4</a></sup> Оскільки дослідження спостережне, свою роль можуть відігравати й інші звички тих, хто обирає біг.",
+            "Для здоров'я картина рівна: за однакових витрат енергії ходьба й біг знижували ризик гіпертонії, високого холестерину та діабету приблизно однаково.<sup><a href=\"#ref5\">5</a></sup> Це відображено й у рекомендації ВООЗ: 150–300 хвилин помірної або 75–150 хвилин інтенсивної активності на тиждень.<sup><a href=\"#ref1\">1</a></sup> Грубо кажучи, хвилина бігу замінює дві хвилини ходьби."
+          ]
+        },
+        {
+          "head": "Апетит і травми: про що забувають",
+          "body": [
+            "У невеликому дослідженні жінки після 60 хвилин бігу з'їли за наступним прийомом їжі приблизно на 194 ккал менше, ніж витратили, а ті, хто стільки ж ішов, — на 41 ккал більше витраченого.<sup><a href=\"#ref7\">7</a></sup> Одне дослідження — не правило, але воно нагадує: перекус «я заслужив» після прогулянки легко повертає спалене.",
+            "З іншого боку — травми: у бігунів-початківців близько 17,8 травми на 1000 годин бігу, а в регулярних бігунів-аматорів — 7,7.<sup><a href=\"#ref6\">6</a></sup> Ризик бігу найвищий у перші місяці, а три тижні перерви через травму коштують значно більше калорій, ніж щоденна ходьба."
+          ]
+        },
+        {
+          "head": "З чого почати? Практичний план",
+          "body": [
+            "Якщо дозволяють час, суглоби й форма, біг ефективніший у перерахунку на хвилину. Якщо ти новачок, маєш помітну зайву вагу або проблеми з колінами, ходьба — безпечніший старт. Найчастіше найкращий варіант — поєднання:"
+          ],
+          "list": [
+            "<strong>Тижні 1–2:</strong> швидка ходьба по 30 хвилин 3–5 днів на тиждень — говорити можна, співати вже ні. Центр громадського здоров'я наголошує: навіть 20 хвилин руху на день зміцнюють здоров'я.<sup><a href=\"#ref8\">8</a></sup>",
+            "<strong>Тижні 3–6:</strong> додай у прогулянку відрізки «1 хвилина легкого бігу + 2 хвилини ходьби» й потроху збільшуй хвилини бігу щотижня.",
+            "<strong>Далі:</strong> коли зможеш бігти 20–30 хвилин без зупинки — біг 2–3 дні на тиждень, в інші дні ходьба.",
+            "<strong>Правило болю:</strong> якщо біль не минув до наступного дня, зроби крок назад.",
+            "<strong>Не забувай про тарілку:</strong> вагу вирішує насамперед харчування; вважай «доступною для їжі» лише половину спаленого."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Де відстежувати це в Suu",
+        "lead": "Назви пунктів наведено англійською, як в інтерфейсі:",
+        "steps": [
+          {
+            "feature": "Записуй ходьбу чи біг з GPS",
+            "where": "Home → quick add → <strong>Add Exercise</strong> → Walking або Running → start",
+            "solves": "Час, дистанція, темп, маршрут і спалені калорії записуються наживо; пройди й пробіжи той самий маршрут і порівняй сам. Якщо почати з Apple Watch, видно й пульс."
+          },
+          {
+            "feature": "Весь день на одному екрані",
+            "where": "Екран <strong>Nutrition</strong> → Today",
+            "solves": "Калорії за день видно поруч із ціллю, а перекуси після прогулянки показано тут із часом."
+          },
+          {
+            "feature": "Віхи та значки",
+            "where_ios": "Вкладка <strong>You</strong> → Exercise → <strong>Distance Milestones</strong> · <strong>Badges</strong>",
+            "where_android": "Екран <strong>Badges</strong> і <strong>Milestones</strong> наприкінці тренування",
+            "solves": "Дистанція пробіжок, прогулянок і походів складається у віхи, якими можна поділитися як сертифікатом, — перехід від ходьби до бігу видно крок за кроком."
+          },
+          {
+            "feature": "Щоденне нагадування про рух",
+            "where_ios": "Settings → Notification Settings → <strong>Daily notifications</strong>",
+            "where_android": "Settings → <strong>Daily notifications</strong>",
+            "solves": "Нагадування «Log your movement 🚶» переносить час прогулянки у твій телефон."
+          }
+        ],
+        "note": "Ходьба й біг з GPS, віхи й значки безкоштовні. Українська локалізація застосунку в планах; поки що зручно користуватися англійською версією інтерфейсу.",
+        "button": "Завантажити Suu безкоштовно"
+      },
+      "verdict": {
+        "head": "Коротко",
+        "body": [
+          "Для схуднення підходить і те, і те. Біг спалює приблизно в 2,5–3 рази більше за хвилину; ходьбу легше підтримувати, ризик травм нижчий, а користь для здоров'я за однакових витрат енергії порівнянна.",
+          "Мало часу — бігай, лише починаєш — ходи; більшості краще почати з ходьби й поступово додавати бігові відрізки. Хоч би що ти обрав, результат вирішують тижні регулярності й увага до тарілки."
+        ]
+      },
+      "cta": {
+        "head": "Запиши першу прогулянку чи пробіжку сьогодні",
+        "sub": "Ходьба й біг з GPS безкоштовні · iOS та Android",
+        "button": "Завантажити Suu безкоштовно"
+      },
+      "faq": [
+        {
+          "q": "Що краще для схуднення — ходьба чи біг?",
+          "a": "Підходить і те, і те. Біг за той самий час спалює приблизно в 2,5–3 рази більше калорій; ходьбу легше підтримувати, і ризик травм нижчий. Мало часу — біг, новачок — ходьба; більшості краще їх поєднувати."
+        },
+        {
+          "q": "Скільки калорій спалює ходьба за 30 хвилин?",
+          "a": "За середніми даними вимірювань приблизно так: швидка ходьба близько 5 км/год — близько 130 ккал за 30 хвилин, біг близько 10 км/год — близько 360 ккал. Твої цифри залежать від ваги й темпу."
+        },
+        {
+          "q": "Чи однаково калорій витрачається, якщо пройти й пробігти ту саму дистанцію?",
+          "a": "Ні. У вимірюваннях біг на 1600 м потребував близько 115 ккал, ходьба — близько 81 ккал, тобто біг приблизно на 40% затратніший. Більша різниця виникає через те, що біг долає дистанцію вдвічі швидше."
+        },
+        {
+          "q": "Чи можна починати бігати із зайвою вагою?",
+          "a": "Можна, але безпечніше почати з ходьби: у бігунів-початківців травм більш ніж удвічі більше, ніж у регулярних бігунів. Після кількох тижнів швидкої ходьби додавай короткі бігові відрізки, а за проблем зі здоров'ям спершу порадься з лікарем."
+        },
+        {
+          "q": "Чи можна схуднути лише ходьбою?",
+          "a": "Так, якщо стежити й за харчуванням. Ходьба спалює менше за хвилину, але її легко підтримувати, а за однакових витрат енергії вона знижує ризик гіпертонії, високого холестерину й діабету майже так само, як біг."
+        },
+        {
+          "q": "Чи триває спалювання жиру після бігу?",
+          "a": "Зовсім недовго. У вимірюваннях обмін речовин повертався до спокою через 15 хвилин після бігу й через 10 хвилин після ходьби; прибавка — десятки калорій. Головна різниця — у самому тренуванні."
+        }
+      ],
+      "references": [
+        {
+          "label": "Всесвітня організація охорони здоров'я — Physical activity (інформаційний бюлетень)",
+          "href": "https://www.who.int/news-room/fact-sheets/detail/physical-activity"
+        },
+        {
+          "label": "Hall C та ін. — Energy expenditure of walking and running: comparison with prediction equations. Med Sci Sports Exerc, 2004",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/15570150/"
+        },
+        {
+          "label": "Wilkin LD та ін. — Energy expenditure comparison between walking and running in average fitness individuals. J Strength Cond Res, 2012",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/22446673/"
+        },
+        {
+          "label": "Williams PT — Greater weight loss from running than walking during a 6.2-yr prospective follow-up. Med Sci Sports Exerc, 2013",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/23190592/"
+        },
+        {
+          "label": "Williams PT, Thompson PD — Walking versus running for hypertension, cholesterol, and diabetes mellitus risk reduction. Arterioscler Thromb Vasc Biol, 2013",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/23559628/"
+        },
+        {
+          "label": "Videbæk S та ін. — Incidence of running-related injuries per 1000 h of running in different types of runners: a systematic review and meta-analysis. Sports Med, 2015",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/25951917/"
+        },
+        {
+          "label": "Larson-Meyer DE та ін. — Influence of running and walking on hormonal regulators of appetite in women. J Obes, 2012",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/22619704/"
+        },
+        {
+          "label": "Центр громадського здоров'я України — Від 20 хв рухової активності на день зміцнять здоров'я на роки вперед: головне — регулярність",
+          "href": "https://phc.org.ua/news/vid-20-khv-rukhovoi-aktivnosti-na-den-zmicnyat-zdorovya-na-roki-vpered-golovne-regulyarnist"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/uk/spalyuvannya-kaloriy-pid-chas-trenuvannya.html",
+          "title": "Спалювання калорій під час тренування",
+          "desc": "Реалістичні цифри для ходьби, бігу й велосипеда."
+        },
+        {
+          "href": "/blog/uk/vaha-zrosla-pislya-trenuvan.html",
+          "title": "Почав тренуватися, а вага зросла?",
+          "desc": "4 причини прибавки в перші тижні."
+        },
+        {
+          "href": "/blog/uk/motyvatsiya-do-sportu.html",
+          "title": "Немає мотивації до спорту",
+          "desc": "7 способів почати попри все."
+        },
+        {
+          "href": "/blog/uk/najkrashchyj-zastosunok-dlya-trenuvan.html",
+          "title": "Найкращий застосунок для тренувань",
+          "desc": "Порівняння застосунків: який підійде тобі."
+        }
+      ]
+    }
+  }
+}

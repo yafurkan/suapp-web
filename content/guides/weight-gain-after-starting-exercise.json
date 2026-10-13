@@ -1,0 +1,1395 @@
+{
+  "_note": "Yapay zekâ sorusu rehberi #10 — 'spora başladım kilom arttı'. Sınır: antrenmanın ilk haftalarında tartı artışı (glikojen-su, kas onarımı, iştah telafisi, günlük dalgalanma); uzun süreli plato neden-kilo-veremiyorum'da, açık hesabı kalori-acigi'nde kalır. Uygulamada kilo geçmişi takibi iddia EDİLMEZ (profil kilosu yalnızca su hedefi girdisi). Kaynaklar 2026-10-13'te E-utilities ile doğrulandı.",
+  "kind": "guide",
+  "cluster": "spora-baslayinca-kilo-artisi",
+  "published": "2026-10-13",
+  "modified": "2026-10-13",
+  "pages": {
+    "tr": {
+      "slug": "spora-baslayinca-kilo-artisi",
+      "read_minutes": 7,
+      "badge": "⚖️ Rehber · Tartı ve antrenman",
+      "h1": "Spora Başladım, Kilom Neden Arttı? 4 Sebep ve Tartıya Ne Zaman Güvenmeli (ve Suu'da Takibi)",
+      "about": [
+        {
+          "name": "Vücut ağırlığı"
+        },
+        {
+          "name": "Egzersiz"
+        },
+        {
+          "name": "Glikojen ve su dengesi"
+        }
+      ],
+      "meta": {
+        "title": "Spora Başladım Kilom Arttı: 4 Sebep ve Ne Yapmalı | Suu",
+        "description": "Spora başlayınca tartının yükselmesi çoğu zaman yağ değil: kaslarda glikojenle depolanan su, kas onarımı ve artan iştah. Tartıya ne zaman güvenmeli?",
+        "keywords": "spora başladım kilo aldım, spor yapınca kilo artışı, spordan sonra kilo neden artar, spora başlayınca su tutma, spor yapıyorum ama kilo vermiyorum, kas mı yağ mı, spora başlayınca iştah artışı, spordan sonra ne zaman tartılmalı",
+        "og_title": "Spora Başladım, Kilom Neden Arttı?",
+        "og_description": "Glikojen ve su, kas onarımı, artan iştah ve günlük dalgalanma: ilk haftalardaki artışın 4 sebebi ve doğru tartılma planı, araştırmalarla."
+      },
+      "answer": "Spora başladıktan sonraki ilk haftalarda tartının yükselmesi çoğu zaman yağ değil sudur: kaslar her gram glikojeni en az 3 gram suyla birlikte depolar, alışık olmadığın egzersizden sonra onarılan kaslar da geçici olarak sıvı tutar. Kimi insanda iştah sessizce artar. Karar vermeden önce 3–4 haftalık ortalamaya bak. Suu'da yediğini ve yaktığını aynı günde görürsün.",
+      "health_note": {
+        "head": "Bu yazı tıbbi tavsiye değildir.",
+        "body": [
+          "Genel bilgi içindir. Kalp, böbrek ya da tiroid rahatsızlığın varsa, kiloyu etkileyebilecek bir ilaç kullanıyorsan veya hamileysen kilo değişimini doktorunla değerlendir.",
+          "Şunlardan biri varsa beklemeden doktora başvur:"
+        ],
+        "red_flags": [
+          "Birkaç günde hızlı kilo artışıyla birlikte ayak bileğinde, bacaklarda ya da yüzde şişlik",
+          "Nefes darlığı ya da yatınca artan öksürük",
+          "Antrenmandan sonra çok şiddetli kas ağrısı, belirgin kas şişliği ve çay ya da kola renginde idrar",
+          "Aşırı susama, sık idrara çıkma ve açıklanamayan halsizlik"
+        ]
+      },
+      "disclosure": "Bu rehberi Suu'yu geliştiren iki kişilik ekip olarak yazdık. Uygulamamızı öneriyoruz, ama önerilerin dayanağı Sağlık Bakanlığı'nın Türkiye Beslenme Rehberi ve hakemli çalışmalar; aynı adımları Suu olmadan da uygulayabilirsin.",
+      "intro": [
+        "Haftada üç gün spora gidiyorsun, yediğine de dikkat ediyorsun; ama ikinci haftanın sonunda tartı bir kilo fazla gösteriyor. Bu, yeni başlayanların en sık yaşadığı hayal kırıklıklarından biri ve çoğu zaman bıraktıran da o an oluyor.",
+        "İyi haber: ilk haftalardaki artış çoğu zaman eklenmiş yağ değil. Tartı vücudundaki her şeyi tartar — su, glikojen, bağırsak içeriği — ve egzersize başlamak bunların hepsini değiştirir. Aşağıda dört sebebi, hangisinin sende olduğunu nasıl anlayacağını ve tartıya ne zaman güvenebileceğini anlatıyoruz."
+      ],
+      "analysis": [
+        {
+          "head": "Sebep 1: Kasların glikojenle birlikte su depoluyor",
+          "body": [
+            "Kaslar enerjiyi glikojen olarak saklar ve her gram glikojen en az 3 gram suyla birlikte depolanır.<sup><a href=\"#ref1\">1</a></sup> Düzenli antrenmana başlayınca kasların bu depoyu kullanıp yeniden doldurmaya alışır; antrenmandan sonra yediğin karbonhidratla depo dolar, beraberinde su gelir.",
+            "Örneğin kaslarına 300 gram fazladan glikojen eklenirse bu, tartıda yaklaşık 1,2 kilo demektir: 300 gram glikojen ve en az 900 gram su. Bu kilo yağ değil; antrenmana uyum sağlayan kasların işareti."
+          ],
+          "callout": "Su içmeyi kısmak bu kiloyu önlemez. Sıvının bilerek eksik verildiği bir deneyde bile kaslar her gram glikojenle 3 gram suyu depolamaya devam etti; yeterli su içilince oran daha da yükseldi.<sup><a href=\"#ref1\">1</a></sup> Suyu kısarsan tartı değil, sen susuz kalırsın."
+        },
+        {
+          "head": "Sebep 2: Onarılan kaslar geçici olarak sıvı tutar",
+          "body": [
+            "Alışık olmadığın egzersiz — özellikle yokuş aşağı koşu, çömelme, ağırlığı yavaşça indirme gibi kası uzarken zorlayan hareketler — kas liflerinde mikro hasar oluşturur. Ardından gelen onarım sürecinde kasta iltihabi yanıt ve şişlik görülür; birkaç gün süren kas ağrısı da bunun parçası.<sup><a href=\"#ref2\">2</a></sup>",
+            "Aynı egzersizi tekrarladığında kas daha az hasar görür; buna tekrarlanan yüklenme etkisi deniyor.<sup><a href=\"#ref2\">2</a></sup> Bu yüzden bu sebep en çok ilk 1–2 haftada ya da programını değiştirdiğin haftalarda hissedilir."
+          ]
+        },
+        {
+          "head": "Sebep 3: İştah sessizce artıyor",
+          "body": [
+            "12 haftalık denetimli bir çalışmada 35 fazla kilolu katılımcı haftada 5 gün antrenman yaptı. Ortalama kilo kaybı beklendiği gibi 3,7 kiloydu, ama kişiler arasında fark büyüktü: kimi 14,7 kilo verdi, kimi 1,7 kilo aldı. Beklenenden az verenlerin günlük enerji alımı yaklaşık 268 kcal artmış, açlık hissi de yükselmişti.<sup><a href=\"#ref3\">3</a></sup>",
+            "Bu çoğu zaman bilinçli değil: antrenman sonrası “hak ettim” atıştırması, smoothie, sporcu içeceği. Yağ ancak yaktığından fazla enerji aldığında artar; Sağlık Bakanlığı'nın beslenme rehberi de kilo kontrolünde beslenme ile fiziksel aktivitenin birlikte ele alınmasını öneriyor.<sup><a href=\"#ref5\">5</a></sup> Pratik kural: antrenmanla yaktığın kalorinin tamamını değil, yarısını “geri yenebilir” say."
+          ]
+        },
+        {
+          "head": "Sebep 4: Tartı her gün oynar, kas kazanımı ise yavaştır",
+          "body": [
+            "Günlük tartı su, tuz, bağırsak içeriği ve haftanın günüyle oynar. 80 yetişkinin 4.600'den fazla tartımını inceleyen bir çalışmada kilo hafta sonu artıyor, hafta içi azalıyordu; araştırmacılar bu dalgalanmayı kilo alımı değil, normal ritim olarak değerlendirdi.<sup><a href=\"#ref4\">4</a></sup>",
+            "Kas kazanımı ise haftalar ve aylar süren yavaş bir süreç; ilk birkaç haftadaki ani artışın kaynağı genelde kas değil, su ve glikojen. Doğru okumak için:"
+          ],
+          "list": [
+            "<strong>Aynı koşullarda tartıl:</strong> sabah, tuvaletten sonra, yemeden içmeden, aynı tartıda.",
+            "<strong>Haftalık ortalamaya bak:</strong> haftada birkaç kez tartıl, ortalamasını al; tek günlük sıçramaya karar verme.",
+            "<strong>Kararı 3–4 haftaya bırak:</strong> su ve glikojen dengesinin oturması birkaç hafta sürer.",
+            "<strong>Bel ölçüsünü de yaz:</strong> ayda bir, göbek hizasından mezurayla. Kıyafetlerin ve antrenmanda kaldırdığın ağırlık da iyi göstergeler.",
+            "<strong>Yediklerini kaydet:</strong> antrenman sonrası atıştırmalar ve içecekler dahil."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Bunu Suu'da nereden takip edersin",
+        "lead": "Menü adları uygulamadaki gibi:",
+        "steps": [
+          {
+            "feature": "Antrenman sonrası atıştırmaları da kaydet",
+            "where": "Ana ekran → hızlı ekleme → <strong>Besin Ekle</strong> → mikrofon ya da yazı alanı",
+            "solves": "“Bir muz, bir protein bar ve yarım litre sporcu içeceği” demen yeterli; kalori ve makrolar hesaplanır, içecekler sıvı dengene de sayılır. Ücretsiz planda günde 3 AI analizi."
+          },
+          {
+            "feature": "İştahın arttı mı, gör",
+            "where": "<strong>Beslenme</strong> ekranı → <strong>Son 7 gün (kalori)</strong>",
+            "solves": "Spora başlamadan önceki haftayla sonrakini yan yana koyarsın; günlük kalori sessizce yükseldiyse burada görünür."
+          },
+          {
+            "feature": "Antrenman kalorisini gerçekçi say",
+            "where": "Ana ekran → hızlı ekleme → <strong>Egzersiz Ekle</strong>",
+            "solves": "GPS'li antrenmanda yakılan kalori tahmini gösterilir; telafi yemeğini planlarken tamamını değil yarısını hesaba kat."
+          },
+          {
+            "feature": "Suyu kısma, takip et",
+            "where_ios": "<strong>Sen</strong> sekmesi → Su → <strong>Suu Endeksi</strong>",
+            "where_android": "<strong>İstatistikler</strong> → <strong>Suu Endeksi</strong>",
+            "solves": "Antrenmanlı günlerde su hedefin kendiliğinden yükselir; Suu Endeksi günlük hidrasyonunu 0–100 arası puanlar."
+          },
+          {
+            "feature": "Tartı yerine ilerlemeye bak",
+            "where_ios": "<strong>Sen</strong> sekmesi → Egzersiz → <strong>Kilometre Taşları</strong> · <strong>Rozetler</strong>",
+            "where_android": "<strong>Rozetler</strong> ekranı ve antrenman sonundaki <strong>Kilometre Taşları</strong>",
+            "solves": "Koşu, yürüyüş ve doğa yürüyüşünde biriken mesafe kilometre taşlarına dönüşür; tartının oynadığı haftalarda ilerlemeni görünür tutar."
+          }
+        ],
+        "note": "GPS'li antrenman, kilometre taşları ve rozetler ücretsiz; yazılı ve sesli öğün analizi ücretsiz planda günde 3 kez.",
+        "button": "Suu'yu ücretsiz indir"
+      },
+      "verdict": {
+        "head": "Kısacası",
+        "body": [
+          "Spora başladıktan sonraki ilk haftalarda tartının yükselmesi çoğu zaman su ve glikojendir; antrenmana uyum sağlayan kasların işareti, bırakma sebebi değil.",
+          "Aynı koşullarda tartıl, haftalık ortalamaya bak, kararı 3–4 haftaya bırak ve antrenman sonrası yediklerini de kaydet. Ortalaman bir ay sonra hâlâ yükseliyorsa sebep büyük olasılıkla tabağında."
+        ]
+      },
+      "cta": {
+        "head": "Yediğini ve yaktığını aynı günde gör",
+        "sub": "GPS'li antrenman ücretsiz · iOS ve Android",
+        "button": "Suu'yu Ücretsiz İndir"
+      },
+      "faq": [
+        {
+          "q": "Spora başladım, neden kilo aldım?",
+          "a": "İlk haftalardaki artış çoğu zaman sudur: kaslar her gram glikojenle en az 3 gram su depolar, onarılan kaslar geçici olarak sıvı tutar. Kimi insanda iştah da artar. Karar vermeden önce 3–4 haftalık ortalamaya bak."
+        },
+        {
+          "q": "Spora başlayınca kilo artışı ne kadar sürer?",
+          "a": "Kişiden kişiye değişir; su ve glikojen kaynaklı artış genelde birkaç hafta içinde dengelenir. 3–4 haftalık ortalaman hâlâ yükseliyorsa sebep büyük olasılıkla yediklerin; antrenman sonrası atıştırmaları da kaydet."
+        },
+        {
+          "q": "Spor yapınca artan kilo kas mı, yağ mı?",
+          "a": "İlk haftalarda büyük kısmı su ve glikojen. Kas kazanımı yavaş bir süreç; yağ ise ancak yaktığından fazla enerji aldığında artar. Bel ölçüsü ve kıyafetlerin, tartıdan daha iyi bir gösterge."
+        },
+        {
+          "q": "Spordan sonra ne zaman tartılmalıyım?",
+          "a": "Antrenmandan hemen sonra değil; sabah, tuvaletten sonra, yemeden içmeden ve her seferinde aynı tartıda. Haftada birkaç tartımın ortalamasını al."
+        },
+        {
+          "q": "Spor yapınca iştahım arttı, normal mi?",
+          "a": "Normal ve yaygın. 12 haftalık bir çalışmada beklenenden az kilo verenlerin günlük alımı yaklaşık 268 kcal artmıştı. Antrenman sonrası atıştırma ve içecekleri kaydetmek, artışı fark etmenin en kolay yolu."
+        },
+        {
+          "q": "Kilo artmasın diye daha az su mu içmeliyim?",
+          "a": "Hayır. Su kısıtlandığında bile kaslar glikojenle birlikte su depolamaya devam ediyor; suyu kısarsan yalnızca susuz kalırsın ve antrenmanın zorlaşır."
+        }
+      ],
+      "references": [
+        {
+          "label": "Fernández-Elías VE ve ark. — Relationship between muscle water and glycogen recovery after prolonged exercise in the heat in humans. Eur J Appl Physiol, 2015",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/25911631/"
+        },
+        {
+          "label": "Clarkson PM, Hubal MJ — Exercise-induced muscle damage in humans. Am J Phys Med Rehabil, 2002",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/12409811/"
+        },
+        {
+          "label": "King NA ve ark. — Individual variability following 12 weeks of supervised exercise: identification and characterization of compensation for exercise-induced weight loss. Int J Obes, 2008",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/17848941/"
+        },
+        {
+          "label": "Orsama AL ve ark. — Weight rhythms: weight increases during weekends and decreases during weekdays. Obes Facts, 2014",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/24504358/"
+        },
+        {
+          "label": "T.C. Sağlık Bakanlığı — Türkiye Beslenme Rehberi (TÜBER) 2022",
+          "href": "https://hsgm.saglik.gov.tr/tr/web-uygulamalarimiz/357.html"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/neden-kilo-veremiyorum.html",
+          "title": "Neden kilo veremiyorum?",
+          "desc": "7 neden ve kontrol listesi."
+        },
+        {
+          "href": "/blog/kalori-acigi.html",
+          "title": "Kalori açığı nedir?",
+          "desc": "Hedefini hesapla, güvenli açık."
+        },
+        {
+          "href": "/blog/yuruyus-mu-kosu-mu.html",
+          "title": "Kilo vermek için yürüyüş mü koşu mu?",
+          "desc": "Kalori, süre ve sakatlık açısından."
+        },
+        {
+          "href": "/blog/egzersizde-kalori-yakimi.html",
+          "title": "Egzersizde kaç kalori yakılır?",
+          "desc": "Yürüyüş, koşu ve bisiklette gerçekçi rakamlar."
+        }
+      ]
+    },
+    "en": {
+      "slug": "weight-gain-after-starting-exercise",
+      "read_minutes": 7,
+      "badge": "⚖️ Guide · The scale and training",
+      "h1": "Why Did I Gain Weight After Starting to Exercise? 4 Reasons and When to Trust the Scale (and How to Track It in Suu)",
+      "about": [
+        {
+          "name": "Body weight"
+        },
+        {
+          "name": "Exercise"
+        },
+        {
+          "name": "Glycogen and water balance"
+        }
+      ],
+      "meta": {
+        "title": "Gained Weight After Starting Exercise? 4 Reasons | Suu",
+        "description": "The scale rising after you start exercising is usually not fat: water stored with glycogen, muscle repair and a quieter appetite boost. When to trust the scale.",
+        "keywords": "gained weight after starting exercise, weight gain after working out, why do i weigh more after exercising, water retention after exercise, exercising but not losing weight, muscle or fat, increased appetite after exercise, when to weigh yourself",
+        "og_title": "Why Did I Gain Weight After Starting to Exercise?",
+        "og_description": "Glycogen and water, muscle repair, a bigger appetite and day-to-day swings: the 4 reasons behind early weight gain and how to weigh yourself properly."
+      },
+      "answer": "Weight gain in the first weeks after you start exercising is usually water, not fat: muscles store every gram of glycogen with at least 3 grams of water, and muscles repairing after unfamiliar exercise hold extra fluid for a while. Some people's appetite also creeps up. Look at a 3–4-week average before deciding anything. In Suu you see what you eat and what you burn on the same day.",
+      "health_note": {
+        "head": "This article is not medical advice.",
+        "body": [
+          "It is general information. If you have a heart, kidney or thyroid condition, take medication that can affect your weight, or are pregnant, review weight changes with your doctor.",
+          "See a doctor without waiting if you notice any of these:"
+        ],
+        "red_flags": [
+          "Rapid weight gain over a few days with swelling in the ankles, legs or face",
+          "Shortness of breath, or a cough that gets worse when lying down",
+          "Severe muscle pain after a workout with obvious muscle swelling and tea- or cola-coloured urine",
+          "Excessive thirst, frequent urination and unexplained tiredness"
+        ]
+      },
+      "disclosure": "We wrote this guide as the two-person team that builds Suu. We recommend our app, but the advice rests on the NHS and peer-reviewed studies — you can follow the same steps without Suu.",
+      "intro": [
+        "You're training three times a week and watching what you eat, yet at the end of week two the scale shows a kilo more. It's one of the most common frustrations for beginners — and often the moment people quit.",
+        "The good news: early gain is rarely added fat. The scale weighs everything in your body — water, glycogen, gut contents — and starting to exercise changes all of them. Below are the four reasons, how to tell which one applies to you, and when you can trust the scale again."
+      ],
+      "analysis": [
+        {
+          "head": "Reason 1: your muscles store water along with glycogen",
+          "body": [
+            "Muscles store energy as glycogen, and every gram of glycogen is stored with at least 3 grams of water.<sup><a href=\"#ref1\">1</a></sup> Once you train regularly, your muscles get used to using and refilling that store; the carbohydrate you eat after training refills it, and water comes along.",
+            "For example, if your muscles add 300 g of glycogen, that's roughly 1.2 kg on the scale: 300 g of glycogen plus at least 900 g of water. That weight isn't fat — it's a sign your muscles are adapting to training."
+          ],
+          "callout": "Drinking less won't prevent it. Even in an experiment where fluid was deliberately limited, muscles kept storing 3 grams of water per gram of glycogen; with enough water the ratio was higher still.<sup><a href=\"#ref1\">1</a></sup> Cut your water and it's you that goes short, not the scale."
+        },
+        {
+          "head": "Reason 2: repairing muscles hold fluid for a while",
+          "body": [
+            "Unfamiliar exercise — especially movements that load the muscle while it lengthens, like downhill running, squats or slowly lowering a weight — causes micro-damage in muscle fibres. The repair that follows brings inflammation and swelling in the muscle; the soreness that lasts a few days is part of it.<sup><a href=\"#ref2\">2</a></sup>",
+            "Repeat the same exercise and the muscle is damaged less — the repeated bout effect.<sup><a href=\"#ref2\">2</a></sup> That's why this reason is felt most in the first 1–2 weeks, or in weeks when you change your programme."
+          ]
+        },
+        {
+          "head": "Reason 3: your appetite quietly goes up",
+          "body": [
+            "In a 12-week supervised study, 35 overweight participants exercised five days a week. Average weight loss was, as predicted, 3.7 kg — but individuals varied widely: one lost 14.7 kg, another gained 1.7 kg. Those who lost less than predicted were eating about 268 kcal more per day and felt hungrier.<sup><a href=\"#ref3\">3</a></sup>",
+            "Often this isn't deliberate: the post-workout “I earned it” snack, a smoothie, a sports drink. You only gain fat when you take in more energy than you use, as the NHS puts it.<sup><a href=\"#ref5\">5</a></sup> A practical rule: count only half of the calories a workout burns as “available to eat back”."
+          ]
+        },
+        {
+          "head": "Reason 4: the scale moves every day, and muscle comes slowly",
+          "body": [
+            "Daily weight shifts with water, salt, gut contents and the day of the week. A study of more than 4,600 weigh-ins from 80 adults found weight rising at the weekend and falling during the week; the researchers treated this as a normal rhythm, not weight gain.<sup><a href=\"#ref4\">4</a></sup>",
+            "Building muscle is a slow process over weeks and months; a sudden jump in the first few weeks is usually water and glycogen rather than muscle. To read the scale properly:"
+          ],
+          "list": [
+            "<strong>Weigh yourself under the same conditions:</strong> in the morning, after the toilet, before eating or drinking, on the same scale.",
+            "<strong>Use a weekly average:</strong> weigh in a few times a week and average them; don't react to a single day's jump.",
+            "<strong>Give it 3–4 weeks:</strong> it takes a few weeks for water and glycogen to settle.",
+            "<strong>Write down your waist measurement too:</strong> once a month, at navel height. How your clothes fit and the weights you lift are good signals as well.",
+            "<strong>Log what you eat:</strong> post-workout snacks and drinks included."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Where to track this in Suu",
+        "lead": "Menu names are exactly as they appear in the app:",
+        "steps": [
+          {
+            "feature": "Log post-workout snacks too",
+            "where": "Home → quick add → <strong>Add Food</strong> → microphone or text field",
+            "solves": "“A banana, a protein bar and half a litre of sports drink” is enough; calories and macros are calculated and the drinks count towards your fluid balance. 3 AI analyses a day on the free plan."
+          },
+          {
+            "feature": "See whether your appetite went up",
+            "where": "<strong>Nutrition</strong> screen → <strong>Last 7 days (calories)</strong>",
+            "solves": "Put the week before you started training next to the weeks after; if your daily calories crept up, it shows here."
+          },
+          {
+            "feature": "Count workout calories realistically",
+            "where": "Home → quick add → <strong>Add Exercise</strong>",
+            "solves": "GPS workouts show an estimate of calories burned; when you plan to eat some back, count half of it, not all."
+          },
+          {
+            "feature": "Don't cut water — track it",
+            "where_ios": "<strong>You</strong> tab → Water → <strong>Suu Index</strong>",
+            "where_android": "<strong>Statistics</strong> → <strong>Suu Index</strong>",
+            "solves": "On training days your water goal rises automatically; the Suu Index scores your daily hydration from 0 to 100."
+          },
+          {
+            "feature": "Watch progress, not just the scale",
+            "where_ios": "<strong>You</strong> tab → Exercise → <strong>Distance Milestones</strong> · <strong>Badges</strong>",
+            "where_android": "The <strong>Badges</strong> screen and <strong>Milestones</strong> at the end of a workout",
+            "solves": "Distance from runs, walks and hikes adds up into milestones, so your progress stays visible in the weeks the scale is noisy."
+          }
+        ],
+        "note": "GPS workouts, milestones and badges are free; text and voice meal analysis is 3 times a day on the free plan.",
+        "button": "Download Suu free"
+      },
+      "verdict": {
+        "head": "In short",
+        "body": [
+          "Weight gain in the first weeks of training is usually water and glycogen — a sign your muscles are adapting, not a reason to stop.",
+          "Weigh yourself under the same conditions, use a weekly average, give it 3–4 weeks and log what you eat after workouts too. If your average is still rising after a month, the answer is most likely on your plate."
+        ]
+      },
+      "cta": {
+        "head": "See what you eat and burn on the same day",
+        "sub": "GPS workouts are free · iOS and Android",
+        "button": "Download Suu Free"
+      },
+      "faq": [
+        {
+          "q": "Why did I gain weight after I started working out?",
+          "a": "Early gain is usually water: muscles store at least 3 grams of water with every gram of glycogen, and repairing muscles hold extra fluid for a while. Some people also eat more. Look at a 3–4-week average before deciding anything."
+        },
+        {
+          "q": "How long does weight gain from starting exercise last?",
+          "a": "It varies, but gain from water and glycogen usually settles within a few weeks. If your 3–4-week average is still climbing, the cause is most likely what you eat — log post-workout snacks too."
+        },
+        {
+          "q": "Is the weight I gained from exercise muscle or fat?",
+          "a": "In the first weeks it's mostly water and glycogen. Muscle builds slowly, and fat only increases when you take in more energy than you use. Your waist measurement and how your clothes fit are better guides than the scale."
+        },
+        {
+          "q": "When should I weigh myself after exercising?",
+          "a": "Not straight after a workout. Weigh yourself in the morning, after the toilet, before eating or drinking and on the same scale each time, then average a few weigh-ins per week."
+        },
+        {
+          "q": "Is it normal to be hungrier after I started exercising?",
+          "a": "Normal and common. In one 12-week study, people who lost less weight than predicted were eating about 268 kcal more per day. Logging post-workout snacks and drinks is the easiest way to spot it."
+        },
+        {
+          "q": "Should I drink less water so the scale doesn't go up?",
+          "a": "No. Even when water is restricted, muscles keep storing water with glycogen; cutting back only leaves you dehydrated and makes training harder."
+        }
+      ],
+      "references": [
+        {
+          "label": "Fernández-Elías VE et al. — Relationship between muscle water and glycogen recovery after prolonged exercise in the heat in humans. Eur J Appl Physiol, 2015",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/25911631/"
+        },
+        {
+          "label": "Clarkson PM, Hubal MJ — Exercise-induced muscle damage in humans. Am J Phys Med Rehabil, 2002",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/12409811/"
+        },
+        {
+          "label": "King NA et al. — Individual variability following 12 weeks of supervised exercise: identification and characterization of compensation for exercise-induced weight loss. Int J Obes, 2008",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/17848941/"
+        },
+        {
+          "label": "Orsama AL et al. — Weight rhythms: weight increases during weekends and decreases during weekdays. Obes Facts, 2014",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/24504358/"
+        },
+        {
+          "label": "NHS — Understanding calories",
+          "href": "https://www.nhs.uk/live-well/healthy-weight/managing-your-weight/understanding-calories/"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/en/why-am-i-not-losing-weight.html",
+          "title": "Why am I not losing weight?",
+          "desc": "7 reasons and a checklist."
+        },
+        {
+          "href": "/blog/en/calorie-deficit.html",
+          "title": "What is a calorie deficit?",
+          "desc": "Work out your target and a safe deficit."
+        },
+        {
+          "href": "/blog/en/walking-vs-running-for-weight-loss.html",
+          "title": "Walking vs running for weight loss",
+          "desc": "Calories, time and injury risk compared."
+        },
+        {
+          "href": "/blog/en/calories-burned-exercise.html",
+          "title": "How many calories does exercise burn?",
+          "desc": "Realistic numbers for walking, running and cycling."
+        }
+      ]
+    },
+    "ar": {
+      "slug": "ziyadat-alwazn-baad-arriyada",
+      "read_minutes": 7,
+      "badge": "⚖️ دليل · الميزان والتمرين",
+      "h1": "بدأت الرياضة فلماذا زاد وزني؟ 4 أسباب ومتى تثق بالميزان (وكيف تتابع ذلك في Suu)",
+      "about": [
+        {
+          "name": "وزن الجسم"
+        },
+        {
+          "name": "التمارين الرياضية"
+        },
+        {
+          "name": "توازن الجليكوجين والماء"
+        }
+      ],
+      "meta": {
+        "title": "زاد وزني بعد بدء الرياضة: 4 أسباب وماذا أفعل | Suu",
+        "description": "ارتفاع الميزان بعد بدء الرياضة ليس دهونًا في الغالب: ماء يُخزَّن مع الجليكوجين في العضلات، وإصلاح العضلات، وشهية تزداد بهدوء. متى تثق بالميزان؟",
+        "keywords": "زاد وزني بعد الرياضة, زيادة الوزن بعد التمرين, لماذا يزيد وزني بعد الجيم, احتباس الماء بعد الرياضة, أتمرن ولا ينقص وزني, عضلات أم دهون, زيادة الشهية بعد الرياضة, متى أقيس وزني",
+        "og_title": "بدأت الرياضة فلماذا زاد وزني؟",
+        "og_description": "الجليكوجين والماء، وإصلاح العضلات، وزيادة الشهية، وتقلّب الوزن اليومي: أسباب الزيادة في الأسابيع الأولى وخطة القياس الصحيحة، بالأبحاث."
+      },
+      "answer": "ارتفاع الوزن في الأسابيع الأولى بعد بدء الرياضة ماء في الغالب لا دهون: فالعضلات تخزّن كل غرام من الجليكوجين مع 3 غرامات من الماء على الأقل، والعضلات التي تتعافى بعد تمرين غير معتاد تحتفظ بسوائل لفترة. وقد تزداد الشهية بهدوء لدى بعض الناس. انظر إلى متوسط 3–4 أسابيع قبل أي قرار. في Suu ترى ما تأكله وما تحرقه في اليوم نفسه.",
+      "health_note": {
+        "head": "هذا المقال ليس نصيحة طبية.",
+        "body": [
+          "المعلومات عامة. إذا كانت لديك مشكلة في القلب أو الكلى أو الغدة الدرقية، أو تتناول دواءً قد يؤثر في الوزن، أو كنتِ حاملًا، فناقش تغيّر وزنك مع طبيبك.",
+          "راجع الطبيب دون تأخير إذا لاحظت أيًّا مما يلي:"
+        ],
+        "red_flags": [
+          "زيادة سريعة في الوزن خلال أيام مع تورّم في الكاحلين أو الساقين أو الوجه",
+          "ضيق في التنفس أو سعال يزداد عند الاستلقاء",
+          "ألم عضلي شديد جدًا بعد التمرين مع تورّم واضح في العضلات وبول بلون الشاي أو الكولا",
+          "عطش شديد وكثرة التبول وتعب غير مفسَّر"
+        ]
+      },
+      "disclosure": "كتبنا هذا الدليل بصفتنا الفريق المكوّن من شخصين الذي يطوّر Suu. نحن نرشّح تطبيقنا، لكن النصائح مبنية على منظمة الصحة العالمية ودراسات محكّمة، ويمكنك تطبيق الخطوات نفسها دون Suu.",
+      "intro": [
+        "تتمرن ثلاث مرات أسبوعيًا وتنتبه لطعامك، ثم يُظهر الميزان في نهاية الأسبوع الثاني كيلوغرامًا زائدًا. هذه من أكثر خيبات الأمل شيوعًا لدى المبتدئين، وغالبًا ما تكون اللحظة التي يتوقف فيها الناس.",
+        "الخبر الجيد: الزيادة في الأسابيع الأولى نادرًا ما تكون دهونًا مضافة. فالميزان يزن كل شيء في جسمك — الماء والجليكوجين ومحتوى الأمعاء — وبدء الرياضة يغيّرها كلها. نعرض أدناه الأسباب الأربعة، وكيف تعرف أيها ينطبق عليك، ومتى يمكنك أن تثق بالميزان."
+      ],
+      "analysis": [
+        {
+          "head": "السبب 1: عضلاتك تخزّن الماء مع الجليكوجين",
+          "body": [
+            "تخزّن العضلات الطاقة على شكل جليكوجين، ويُخزَّن كل غرام منه مع 3 غرامات من الماء على الأقل.<sup><a href=\"#ref1\">1</a></sup> وحين تبدأ التمرين بانتظام تعتاد عضلاتك استخدام هذا المخزون وإعادة ملئه؛ فالكربوهيدرات التي تأكلها بعد التمرين تملؤه، ويأتي الماء معها.",
+            "مثلًا: إذا أضافت عضلاتك 300 غرام من الجليكوجين فهذا يعني نحو 1.2 كيلوغرام على الميزان: 300 غرام جليكوجين و900 غرام ماء على الأقل. هذا الوزن ليس دهونًا، بل علامة على تكيّف عضلاتك مع التمرين."
+          ],
+          "callout": "تقليل شرب الماء لا يمنع هذه الزيادة. فحتى في تجربة قُيّدت فيها السوائل عمدًا ظلت العضلات تخزّن 3 غرامات من الماء مع كل غرام جليكوجين، ومع الماء الكافي كانت النسبة أعلى.<sup><a href=\"#ref1\">1</a></sup> إن قلّلت الماء فأنت من يعاني الجفاف لا الميزان."
+        },
+        {
+          "head": "السبب 2: العضلات التي تتعافى تحتفظ بالسوائل لفترة",
+          "body": [
+            "التمرين غير المعتاد — خصوصًا الحركات التي تُجهد العضلة وهي تستطيل، مثل الجري نزولًا والقرفصاء وإنزال الثقل ببطء — يُحدث تلفًا دقيقًا في الألياف العضلية. وفي مرحلة الإصلاح التي تليه يظهر التهاب وتورّم في العضلة، وألم العضلات الذي يستمر أيامًا جزء من ذلك.<sup><a href=\"#ref2\">2</a></sup>",
+            "وعندما تكرر التمرين نفسه يقل تلف العضلة، وهو ما يُعرف بأثر التكرار.<sup><a href=\"#ref2\">2</a></sup> لذلك يُلاحظ هذا السبب أكثر في الأسبوعين الأولين، أو في الأسابيع التي تغيّر فيها برنامجك."
+          ]
+        },
+        {
+          "head": "السبب 3: الشهية تزداد بهدوء",
+          "body": [
+            "في دراسة خاضعة للإشراف مدتها 12 أسبوعًا تمرّن 35 مشاركًا من ذوي الوزن الزائد خمسة أيام أسبوعيًا. كان متوسط نقص الوزن 3.7 كيلوغرام كما هو متوقع، لكن الفروق بين الأفراد كانت كبيرة: أحدهم أنقص 14.7 كيلوغرام وآخر زاد 1.7 كيلوغرام. ومن أنقصوا أقل من المتوقع زاد ما يتناولونه يوميًا بنحو 268 سعرة وارتفع شعورهم بالجوع.<sup><a href=\"#ref3\">3</a></sup>",
+            "وغالبًا لا يكون ذلك مقصودًا: وجبة خفيفة بعد التمرين «لأنني استحققتها»، أو عصير مخفوق، أو مشروب رياضي. ولا تزيد الدهون إلا حين تتناول طاقة أكثر مما تحرق؛ فبحسب منظمة الصحة العالمية تنتج زيادة الوزن أساسًا عن عدم التوازن بين الطاقة المتناولة والطاقة المستهلكة.<sup><a href=\"#ref5\">5</a></sup> قاعدة عملية: احسب نصف السعرات التي يحرقها التمرين فقط على أنها «متاحة للأكل»."
+          ]
+        },
+        {
+          "head": "السبب 4: الميزان يتقلب يوميًا، وبناء العضلات بطيء",
+          "body": [
+            "يتغير الوزن اليومي مع الماء والملح ومحتوى الأمعاء ويوم الأسبوع. ووجدت دراسة شملت أكثر من 4,600 قياس لـ80 بالغًا أن الوزن يرتفع في عطلة نهاية الأسبوع وينخفض خلال الأسبوع، وعدّ الباحثون ذلك إيقاعًا طبيعيًا لا زيادة في الوزن.<sup><a href=\"#ref4\">4</a></sup>",
+            "أما بناء العضلات فعملية بطيئة تمتد أسابيع وشهورًا، والقفزة المفاجئة في الأسابيع الأولى مصدرها غالبًا الماء والجليكوجين لا العضلات. لقراءة الميزان بشكل صحيح:"
+          ],
+          "list": [
+            "<strong>قِس وزنك في الظروف نفسها:</strong> صباحًا، بعد دخول الحمّام، قبل الأكل والشرب، وعلى الميزان نفسه.",
+            "<strong>اعتمد المتوسط الأسبوعي:</strong> قِس عدة مرات في الأسبوع وخذ المتوسط، ولا تتخذ قرارًا بسبب قفزة يوم واحد.",
+            "<strong>أمهل نفسك 3–4 أسابيع:</strong> يحتاج توازن الماء والجليكوجين بضعة أسابيع ليستقر.",
+            "<strong>سجّل محيط خصرك أيضًا:</strong> مرة في الشهر عند مستوى السرة. ومقاس ملابسك والأوزان التي ترفعها مؤشرات جيدة كذلك.",
+            "<strong>سجّل ما تأكله:</strong> بما في ذلك الوجبات الخفيفة والمشروبات بعد التمرين."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "أين تتابع ذلك في Suu",
+        "lead": "أسماء القوائم كما تظهر في التطبيق:",
+        "steps": [
+          {
+            "feature": "سجّل وجبات ما بعد التمرين أيضًا",
+            "where": "الشاشة الرئيسية ← الإضافة السريعة ← <strong>إضافة طعام</strong> ← الميكروفون أو حقل الكتابة",
+            "solves": "يكفي أن تقول «موزة ولوح بروتين ونصف لتر مشروب رياضي»؛ تُحسب السعرات والعناصر الكبرى، وتُحتسب المشروبات في توازن السوائل. 3 تحليلات بالذكاء الاصطناعي يوميًا في الخطة المجانية."
+          },
+          {
+            "feature": "هل زادت شهيتك؟ شاهد بنفسك",
+            "where": "شاشة <strong>التغذية</strong> ← <strong>آخر 7 أيام (سعرات)</strong>",
+            "solves": "تضع الأسبوع الذي سبق بدء التمرين بجانب الأسابيع التالية؛ إن ارتفعت سعراتك اليومية بهدوء فستظهر هنا."
+          },
+          {
+            "feature": "احسب سعرات التمرين بواقعية",
+            "where": "الشاشة الرئيسية ← الإضافة السريعة ← <strong>إضافة تمرين</strong>",
+            "solves": "يعرض التمرين عبر GPS تقديرًا للسعرات المحروقة؛ وحين تخطط لتعويض جزء منها بالأكل فاحسب نصفها لا كلها."
+          },
+          {
+            "feature": "لا تقلّل الماء بل تابعه",
+            "where_ios": "تبويب <strong>أنت</strong> ← الماء ← <strong>مؤشر Suu</strong>",
+            "where_android": "<strong>الإحصائيات</strong> ← <strong>مؤشر Suu</strong>",
+            "solves": "يرتفع هدف الماء تلقائيًا في أيام التمرين، ويقيّم مؤشر Suu ترطيبك اليومي من 0 إلى 100."
+          },
+          {
+            "feature": "تابع تقدّمك لا الميزان وحده",
+            "where_ios": "تبويب <strong>أنت</strong> ← التمارين ← <strong>محطات المسافة</strong> · <strong>الأوسمة</strong>",
+            "where_android": "شاشة <strong>الشارات</strong> و<strong>الإنجازات</strong> في نهاية التمرين",
+            "solves": "تتحول مسافات الجري والمشي والمشي الجبلي إلى محطات، فيبقى تقدّمك واضحًا في الأسابيع التي يتقلب فيها الميزان."
+          }
+        ],
+        "note": "التمرين عبر GPS والمحطات والأوسمة مجانية، وتحليل الوجبات بالكتابة أو الصوت 3 مرات يوميًا في الخطة المجانية.",
+        "button": "حمّل Suu مجانًا"
+      },
+      "verdict": {
+        "head": "باختصار",
+        "body": [
+          "ارتفاع الوزن في الأسابيع الأولى من التمرين ماء وجليكوجين في الغالب؛ إنه علامة على تكيّف عضلاتك، لا سبب للتوقف.",
+          "قِس وزنك في الظروف نفسها، واعتمد المتوسط الأسبوعي، وأمهل نفسك 3–4 أسابيع، وسجّل ما تأكله بعد التمرين أيضًا. وإن ظل متوسطك يرتفع بعد شهر فالسبب على الأرجح في طبقك."
+        ]
+      },
+      "cta": {
+        "head": "شاهد ما تأكله وما تحرقه في اليوم نفسه",
+        "sub": "التمرين عبر GPS مجاني · iOS وAndroid",
+        "button": "حمّل Suu مجانًا"
+      },
+      "faq": [
+        {
+          "q": "بدأت الرياضة فلماذا زاد وزني؟",
+          "a": "الزيادة في الأسابيع الأولى ماء في الغالب: فالعضلات تخزّن 3 غرامات من الماء على الأقل مع كل غرام جليكوجين، والعضلات التي تتعافى تحتفظ بسوائل لفترة. وقد تزداد الشهية أيضًا. انظر إلى متوسط 3–4 أسابيع قبل أي قرار."
+        },
+        {
+          "q": "كم تستمر زيادة الوزن بعد بدء الرياضة؟",
+          "a": "يختلف ذلك من شخص لآخر، لكن الزيادة الناتجة عن الماء والجليكوجين تستقر عادة خلال بضعة أسابيع. وإن ظل متوسط 3–4 أسابيع يرتفع فالسبب على الأرجح ما تأكله؛ سجّل وجبات ما بعد التمرين أيضًا."
+        },
+        {
+          "q": "هل الوزن الزائد بعد الرياضة عضلات أم دهون؟",
+          "a": "في الأسابيع الأولى معظمه ماء وجليكوجين. أما العضلات فتُبنى ببطء، ولا تزيد الدهون إلا حين تتناول طاقة أكثر مما تحرق. ومحيط الخصر ومقاس الملابس دليل أفضل من الميزان."
+        },
+        {
+          "q": "متى أقيس وزني بعد التمرين؟",
+          "a": "ليس مباشرة بعد التمرين. قِس وزنك صباحًا بعد دخول الحمّام وقبل الأكل والشرب وعلى الميزان نفسه في كل مرة، ثم خذ متوسط عدة قياسات في الأسبوع."
+        },
+        {
+          "q": "هل من الطبيعي أن تزيد شهيتي بعد بدء الرياضة؟",
+          "a": "طبيعي وشائع. ففي دراسة مدتها 12 أسبوعًا كان من أنقصوا وزنًا أقل من المتوقع يتناولون نحو 268 سعرة إضافية يوميًا. وتسجيل الوجبات الخفيفة والمشروبات بعد التمرين أسهل طريقة لملاحظة ذلك."
+        },
+        {
+          "q": "هل أشرب ماءً أقل حتى لا يرتفع الميزان؟",
+          "a": "لا. فحتى مع تقييد الماء تواصل العضلات تخزين الماء مع الجليكوجين؛ وتقليل الماء لا يؤدي إلا إلى الجفاف ويجعل التمرين أصعب."
+        }
+      ],
+      "references": [
+        {
+          "label": "Fernández-Elías VE وآخرون — Relationship between muscle water and glycogen recovery after prolonged exercise in the heat in humans. Eur J Appl Physiol, 2015",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/25911631/"
+        },
+        {
+          "label": "Clarkson PM, Hubal MJ — Exercise-induced muscle damage in humans. Am J Phys Med Rehabil, 2002",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/12409811/"
+        },
+        {
+          "label": "King NA وآخرون — Individual variability following 12 weeks of supervised exercise: identification and characterization of compensation for exercise-induced weight loss. Int J Obes, 2008",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/17848941/"
+        },
+        {
+          "label": "Orsama AL وآخرون — Weight rhythms: weight increases during weekends and decreases during weekdays. Obes Facts, 2014",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/24504358/"
+        },
+        {
+          "label": "منظمة الصحة العالمية — السمنة وزيادة الوزن (صحيفة وقائع)",
+          "href": "https://www.who.int/ar/news-room/fact-sheets/detail/obesity-and-overweight"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/ar/limadha-la-yanqus-wazni.html",
+          "title": "لماذا لا ينقص وزني؟",
+          "desc": "7 أسباب وقائمة تحقق."
+        },
+        {
+          "href": "/blog/ar/al-ajz-al-harari.html",
+          "title": "العجز الحراري",
+          "desc": "حساب هدفك وعجز آمن."
+        },
+        {
+          "href": "/blog/ar/almashi-am-aljary.html",
+          "title": "المشي أم الجري لإنقاص الوزن؟",
+          "desc": "السعرات والوقت وخطر الإصابة."
+        },
+        {
+          "href": "/blog/ar/hurq-al-suerat.html",
+          "title": "كم سعرة يحرق التمرين؟",
+          "desc": "أرقام واقعية للمشي والجري والدراجة."
+        }
+      ]
+    },
+    "ru": {
+      "slug": "ves-vyros-posle-trenirovok",
+      "read_minutes": 7,
+      "badge": "⚖️ Руководство · Весы и тренировки",
+      "h1": "Начал тренироваться, а вес вырос: 4 причины и когда верить весам (и как отслеживать это в Suu)",
+      "about": [
+        {
+          "name": "Масса тела"
+        },
+        {
+          "name": "Физические упражнения"
+        },
+        {
+          "name": "Баланс гликогена и воды"
+        }
+      ],
+      "meta": {
+        "title": "Вес вырос после начала тренировок: 4 причины | Suu",
+        "description": "Рост веса после начала тренировок — чаще всего не жир: вода, запасённая вместе с гликогеном, восстановление мышц и тихо растущий аппетит. Когда верить весам.",
+        "keywords": "начала тренироваться вес вырос, вес увеличился после тренировок, почему вес растёт после спорта, задержка воды после тренировки, тренируюсь но не худею, мышцы или жир, аппетит после тренировок, когда взвешиваться",
+        "og_title": "Начали тренироваться, а вес вырос — почему?",
+        "og_description": "Гликоген и вода, восстановление мышц, аппетит и ежедневные колебания: 4 причины роста веса в первые недели и как правильно взвешиваться."
+      },
+      "answer": "Рост веса в первые недели тренировок — чаще всего вода, а не жир: мышцы запасают каждый грамм гликогена вместе как минимум с 3 граммами воды, а мышцы, восстанавливающиеся после непривычной нагрузки, временно задерживают жидкость. У некоторых незаметно растёт аппетит. Прежде чем делать выводы, смотрите на среднее за 3–4 недели. В Suu съеденное и потраченное видно в один день.",
+      "health_note": {
+        "head": "Эта статья не является медицинской консультацией.",
+        "body": [
+          "Информация носит общий характер. Если у вас заболевания сердца, почек или щитовидной железы, вы принимаете препараты, влияющие на вес, или беременны, обсудите изменение веса с врачом.",
+          "Обратитесь к врачу без промедления, если заметили что-то из этого:"
+        ],
+        "red_flags": [
+          "Быстрый набор веса за несколько дней вместе с отёками лодыжек, ног или лица",
+          "Одышка или кашель, усиливающийся в положении лёжа",
+          "Очень сильная боль в мышцах после тренировки с заметным отёком и мочой цвета чая или колы",
+          "Сильная жажда, частое мочеиспускание и необъяснимая слабость"
+        ]
+      },
+      "disclosure": "Это руководство написала команда из двух человек, которая создаёт Suu. Мы рекомендуем своё приложение, но советы опираются на данные ВОЗ и рецензируемые исследования — те же шаги можно выполнять и без Suu.",
+      "intro": [
+        "Вы тренируетесь три раза в неделю и следите за питанием, а в конце второй недели весы показывают на килограмм больше. Это одно из самых частых разочарований новичков — и нередко именно в этот момент бросают.",
+        "Хорошая новость: прибавка в первые недели редко бывает новым жиром. Весы взвешивают всё — воду, гликоген, содержимое кишечника, — а начало тренировок меняет всё это сразу. Ниже — четыре причины, как понять, какая из них ваша, и когда весам снова можно верить."
+      ],
+      "analysis": [
+        {
+          "head": "Причина 1: мышцы запасают воду вместе с гликогеном",
+          "body": [
+            "Мышцы хранят энергию в виде гликогена, и каждый его грамм запасается вместе как минимум с 3 граммами воды.<sup><a href=\"#ref1\">1</a></sup> Когда вы начинаете тренироваться регулярно, мышцы привыкают расходовать и пополнять этот запас: углеводы после тренировки заполняют его, а вместе с ними приходит вода.",
+            "Например, если мышцы добавят 300 г гликогена, на весах это около 1,2 кг: 300 г гликогена и не меньше 900 г воды. Это не жир, а признак того, что мышцы адаптируются к нагрузке."
+          ],
+          "callout": "Меньше пить — не выход. Даже в эксперименте, где жидкость намеренно ограничивали, мышцы продолжали запасать 3 г воды на каждый грамм гликогена, а при достаточном питье соотношение было ещё выше.<sup><a href=\"#ref1\">1</a></sup> Урезая воду, вы обезвоживаете себя, а не весы."
+        },
+        {
+          "head": "Причина 2: восстанавливающиеся мышцы временно задерживают жидкость",
+          "body": [
+            "Непривычная нагрузка — особенно движения, где мышца работает на растяжение: бег под гору, приседания, медленное опускание веса — вызывает микроповреждения мышечных волокон. Во время восстановления в мышце возникают воспаление и отёк; боль, которая держится несколько дней, — часть этого процесса.<sup><a href=\"#ref2\">2</a></sup>",
+            "Если повторять то же упражнение, мышца повреждается меньше — это эффект повторной нагрузки.<sup><a href=\"#ref2\">2</a></sup> Поэтому сильнее всего эта причина ощущается в первые 1–2 недели или когда вы меняете программу."
+          ]
+        },
+        {
+          "head": "Причина 3: аппетит тихо растёт",
+          "body": [
+            "В 12-недельном исследовании под наблюдением 35 участников с лишним весом тренировались пять дней в неделю. В среднем они, как и ожидалось, похудели на 3,7 кг, но разброс был огромным: кто-то сбросил 14,7 кг, а кто-то прибавил 1,7 кг. Те, кто похудел меньше ожидаемого, стали съедать примерно на 268 ккал в день больше и чувствовали больше голода.<sup><a href=\"#ref3\">3</a></sup>",
+            "Чаще всего это происходит незаметно: перекус «я заслужил» после тренировки, смузи, спортивный напиток. Жир растёт, только когда энергии поступает больше, чем тратится: по данным ВОЗ, избыточный вес в основном возникает из-за дисбаланса между потреблением и расходом энергии.<sup><a href=\"#ref5\">5</a></sup> Практическое правило: считайте «доступной для еды» только половину калорий, сожжённых на тренировке."
+          ]
+        },
+        {
+          "head": "Причина 4: весы колеблются каждый день, а мышцы растут медленно",
+          "body": [
+            "Ежедневный вес меняется из-за воды, соли, содержимого кишечника и даже дня недели. В исследовании более 4600 взвешиваний 80 взрослых вес рос в выходные и снижался в будни; авторы расценили это как нормальный ритм, а не набор веса.<sup><a href=\"#ref4\">4</a></sup>",
+            "Рост мышц — медленный процесс на недели и месяцы; резкий скачок в первые недели обычно объясняется водой и гликогеном, а не мышцами. Чтобы правильно читать весы:"
+          ],
+          "list": [
+            "<strong>Взвешивайтесь в одинаковых условиях:</strong> утром, после туалета, до еды и питья, на одних и тех же весах.",
+            "<strong>Смотрите на среднее за неделю:</strong> взвешивайтесь несколько раз в неделю и берите среднее; не реагируйте на скачок одного дня.",
+            "<strong>Дайте себе 3–4 недели:</strong> балансу воды и гликогена нужно несколько недель, чтобы устояться.",
+            "<strong>Записывайте и обхват талии:</strong> раз в месяц, на уровне пупка. Посадка одежды и рабочие веса на тренировке — тоже хорошие ориентиры.",
+            "<strong>Записывайте, что едите:</strong> включая перекусы и напитки после тренировки."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Где отслеживать это в Suu",
+        "lead": "Названия пунктов — как в приложении:",
+        "steps": [
+          {
+            "feature": "Записывайте и перекусы после тренировки",
+            "where": "Главный экран → быстрое добавление → <strong>Добавить еду</strong> → микрофон или поле ввода",
+            "solves": "Достаточно сказать «банан, протеиновый батончик и пол-литра спортивного напитка»: калории и макронутриенты посчитаются, а напитки пойдут в водный баланс. В бесплатном плане 3 анализа ИИ в день."
+          },
+          {
+            "feature": "Проверьте, вырос ли аппетит",
+            "where": "Экран <strong>Питание</strong> → <strong>Последние 7 дней (калории)</strong>",
+            "solves": "Сравните неделю до начала тренировок с последующими; если суточные калории незаметно выросли, это будет видно здесь."
+          },
+          {
+            "feature": "Считайте калории тренировок реалистично",
+            "where": "Главный экран → быстрое добавление → <strong>Добавить тренировку</strong>",
+            "solves": "Тренировка с GPS показывает оценку сожжённых калорий; планируя «отъесть» часть, учитывайте половину, а не всё."
+          },
+          {
+            "feature": "Не урезайте воду — отслеживайте её",
+            "where_ios": "Вкладка <strong>Ты</strong> → Вода → <strong>Suu Индекс</strong>",
+            "where_android": "<strong>Статистика</strong> → <strong>Suu Индекс</strong>",
+            "solves": "В дни тренировок норма воды растёт автоматически, а Индекс Suu оценивает дневную гидратацию от 0 до 100."
+          },
+          {
+            "feature": "Следите за прогрессом, а не только за весами",
+            "where_ios": "Вкладка <strong>Ты</strong> → Тренировки → <strong>Дистанционные вехи</strong> · <strong>Значки</strong>",
+            "where_android": "Экран <strong>Значки</strong> и <strong>Этапы</strong> в конце тренировки",
+            "solves": "Дистанция пробежек, прогулок и походов складывается в вехи, и прогресс остаётся заметным в недели, когда весы «скачут»."
+          }
+        ],
+        "note": "Тренировки с GPS, вехи и значки бесплатны; анализ еды текстом или голосом — 3 раза в день в бесплатном плане.",
+        "button": "Скачать Suu бесплатно"
+      },
+      "verdict": {
+        "head": "Коротко",
+        "body": [
+          "Рост веса в первые недели тренировок — чаще всего вода и гликоген: признак того, что мышцы адаптируются, а не повод бросать.",
+          "Взвешивайтесь в одинаковых условиях, смотрите на среднее за неделю, дайте себе 3–4 недели и записывайте, что едите после тренировок. Если через месяц среднее всё ещё растёт, ответ, скорее всего, в тарелке."
+        ]
+      },
+      "cta": {
+        "head": "Видьте съеденное и потраченное в один день",
+        "sub": "Тренировки с GPS бесплатны · iOS и Android",
+        "button": "Скачать Suu бесплатно"
+      },
+      "faq": [
+        {
+          "q": "Почему вырос вес, когда я начал тренироваться?",
+          "a": "Прибавка в первые недели — чаще всего вода: мышцы запасают не меньше 3 г воды на каждый грамм гликогена, а восстанавливающиеся мышцы временно задерживают жидкость. У некоторых ещё и растёт аппетит. Смотрите на среднее за 3–4 недели."
+        },
+        {
+          "q": "Сколько держится прибавка веса после начала тренировок?",
+          "a": "У всех по-разному, но прибавка за счёт воды и гликогена обычно стабилизируется за несколько недель. Если среднее за 3–4 недели всё ещё растёт, причина скорее в питании — записывайте и перекусы после тренировок."
+        },
+        {
+          "q": "Набранный после тренировок вес — это мышцы или жир?",
+          "a": "В первые недели — в основном вода и гликоген. Мышцы растут медленно, а жир прибавляется, только если энергии поступает больше, чем тратится. Обхват талии и посадка одежды показательнее весов."
+        },
+        {
+          "q": "Когда взвешиваться после тренировки?",
+          "a": "Не сразу после тренировки. Утром, после туалета, до еды и питья и всегда на одних и тех же весах; затем берите среднее нескольких взвешиваний за неделю."
+        },
+        {
+          "q": "Нормально ли, что после начала тренировок вырос аппетит?",
+          "a": "Нормально и часто. В 12-недельном исследовании те, кто похудел меньше ожидаемого, съедали примерно на 268 ккал в день больше. Запись перекусов и напитков после тренировок — самый простой способ это заметить."
+        },
+        {
+          "q": "Пить меньше воды, чтобы вес не рос?",
+          "a": "Нет. Даже при ограничении воды мышцы продолжают запасать её вместе с гликогеном; урезая воду, вы только обезвоживаетесь, и тренироваться становится тяжелее."
+        }
+      ],
+      "references": [
+        {
+          "label": "Fernández-Elías VE и соавт. — Relationship between muscle water and glycogen recovery after prolonged exercise in the heat in humans. Eur J Appl Physiol, 2015",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/25911631/"
+        },
+        {
+          "label": "Clarkson PM, Hubal MJ — Exercise-induced muscle damage in humans. Am J Phys Med Rehabil, 2002",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/12409811/"
+        },
+        {
+          "label": "King NA и соавт. — Individual variability following 12 weeks of supervised exercise: identification and characterization of compensation for exercise-induced weight loss. Int J Obes, 2008",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/17848941/"
+        },
+        {
+          "label": "Orsama AL и соавт. — Weight rhythms: weight increases during weekends and decreases during weekdays. Obes Facts, 2014",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/24504358/"
+        },
+        {
+          "label": "ВОЗ — Ожирение и избыточный вес (информационный бюллетень)",
+          "href": "https://www.who.int/ru/news-room/fact-sheets/detail/obesity-and-overweight"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/ru/pochemu-ne-hudeyu.html",
+          "title": "Почему я не худею?",
+          "desc": "7 причин и чек-лист."
+        },
+        {
+          "href": "/blog/ru/deficit-kalorij.html",
+          "title": "Что такое дефицит калорий?",
+          "desc": "Как рассчитать цель и безопасный дефицит."
+        },
+        {
+          "href": "/blog/ru/hodba-ili-beg.html",
+          "title": "Ходьба или бег для похудения?",
+          "desc": "Калории, время и риск травм."
+        },
+        {
+          "href": "/blog/ru/raskhod-kalorij.html",
+          "title": "Сколько калорий сжигает тренировка?",
+          "desc": "Реалистичные цифры для ходьбы, бега и велосипеда."
+        }
+      ]
+    },
+    "de": {
+      "slug": "zunehmen-trotz-sport",
+      "read_minutes": 7,
+      "badge": "⚖️ Ratgeber · Waage und Training",
+      "h1": "Seit ich Sport mache, nehme ich zu – warum? 4 Gründe und wann du der Waage trauen kannst (und wie du es in Suu verfolgst)",
+      "about": [
+        {
+          "name": "Körpergewicht"
+        },
+        {
+          "name": "Sport"
+        },
+        {
+          "name": "Glykogen- und Wasserhaushalt"
+        }
+      ],
+      "meta": {
+        "title": "Zunehmen trotz Sport: 4 Gründe und was hilft | Suu",
+        "description": "Steigt die Waage, seit du trainierst, ist das meist kein Fett: Wasser mit Glykogen, Muskelreparatur und mehr Appetit. Wann du der Waage trauen kannst.",
+        "keywords": "zunehmen trotz sport, gewichtszunahme nach sport, seit ich sport mache nehme ich zu, wassereinlagerung nach training, sport aber nicht abnehmen, muskeln oder fett, mehr hunger durch sport, wann wiegen",
+        "og_title": "Seit ich Sport mache, nehme ich zu – warum?",
+        "og_description": "Glykogen und Wasser, Muskelreparatur, mehr Appetit und tägliche Schwankungen: die 4 Gründe für die Zunahme in den ersten Wochen und wie du dich richtig wiegst."
+      },
+      "answer": "Steigt die Waage in den ersten Wochen nach dem Trainingsstart, ist das meist Wasser und kein Fett: Muskeln speichern jedes Gramm Glykogen mit mindestens 3 Gramm Wasser, und Muskeln, die sich nach ungewohnter Belastung reparieren, halten eine Zeit lang Flüssigkeit. Bei manchen steigt zudem leise der Appetit. Schau dir den Schnitt über 3–4 Wochen an, bevor du etwas änderst. In Suu siehst du Gegessenes und Verbranntes am selben Tag.",
+      "health_note": {
+        "head": "Dieser Artikel ist keine medizinische Beratung.",
+        "body": [
+          "Er bietet allgemeine Informationen. Wenn du eine Herz-, Nieren- oder Schilddrüsenerkrankung hast, Medikamente nimmst, die das Gewicht beeinflussen können, oder schwanger bist, besprich Gewichtsveränderungen mit deiner Ärztin oder deinem Arzt.",
+          "Geh ohne Abwarten zum Arzt, wenn dir eines davon auffällt:"
+        ],
+        "red_flags": [
+          "Schnelle Gewichtszunahme innerhalb weniger Tage mit Schwellungen an Knöcheln, Beinen oder im Gesicht",
+          "Atemnot oder Husten, der im Liegen schlimmer wird",
+          "Sehr starke Muskelschmerzen nach dem Training mit deutlicher Schwellung und tee- oder colafarbenem Urin",
+          "Starker Durst, häufiges Wasserlassen und unerklärliche Erschöpfung"
+        ]
+      },
+      "disclosure": "Diesen Ratgeber haben wir als das zweiköpfige Team geschrieben, das Suu entwickelt. Wir empfehlen unsere App, aber die Tipps stützen sich auf die Deutsche Gesellschaft für Ernährung und begutachtete Studien – du kannst die Schritte auch ohne Suu umsetzen.",
+      "intro": [
+        "Du trainierst dreimal pro Woche und achtest aufs Essen, doch am Ende der zweiten Woche zeigt die Waage ein Kilo mehr. Das ist eine der häufigsten Enttäuschungen für Einsteigerinnen und Einsteiger – und oft der Moment, in dem man aufgibt.",
+        "Die gute Nachricht: Die Zunahme in den ersten Wochen ist selten neues Fett. Die Waage wiegt alles in deinem Körper – Wasser, Glykogen, Darminhalt –, und Trainingsbeginn verändert all das. Hier sind die vier Gründe, wie du erkennst, welcher bei dir zutrifft, und wann du der Waage wieder trauen kannst."
+      ],
+      "analysis": [
+        {
+          "head": "Grund 1: Deine Muskeln speichern Wasser zusammen mit Glykogen",
+          "body": [
+            "Muskeln speichern Energie als Glykogen, und jedes Gramm davon wird mit mindestens 3 Gramm Wasser eingelagert.<sup><a href=\"#ref1\">1</a></sup> Trainierst du regelmäßig, gewöhnen sich deine Muskeln daran, diesen Speicher zu nutzen und wieder aufzufüllen: Die Kohlenhydrate nach dem Training füllen ihn, und das Wasser kommt mit.",
+            "Ein Beispiel: Legen deine Muskeln 300 g Glykogen zu, sind das auf der Waage etwa 1,2 kg – 300 g Glykogen plus mindestens 900 g Wasser. Das ist kein Fett, sondern ein Zeichen, dass sich deine Muskeln ans Training anpassen."
+          ],
+          "callout": "Weniger trinken verhindert das nicht. Selbst in einem Versuch, in dem Flüssigkeit bewusst knapp gehalten wurde, speicherten die Muskeln weiter 3 g Wasser pro Gramm Glykogen; mit genug Wasser lag das Verhältnis noch höher.<sup><a href=\"#ref1\">1</a></sup> Sparst du am Wasser, trocknest du aus – nicht die Waage."
+        },
+        {
+          "head": "Grund 2: Muskeln in Reparatur halten eine Zeit lang Flüssigkeit",
+          "body": [
+            "Ungewohnte Belastung – vor allem Bewegungen, bei denen der Muskel unter Last länger wird, etwa Bergablaufen, Kniebeugen oder langsames Absenken eines Gewichts – verursacht Mikroschäden in den Muskelfasern. In der anschließenden Reparatur kommt es zu Entzündung und Schwellung im Muskel; der Muskelkater, der ein paar Tage anhält, gehört dazu.<sup><a href=\"#ref2\">2</a></sup>",
+            "Wiederholst du dieselbe Übung, wird der Muskel weniger geschädigt – der sogenannte Repeated-Bout-Effekt.<sup><a href=\"#ref2\">2</a></sup> Deshalb spürst du diesen Grund vor allem in den ersten 1–2 Wochen oder wenn du dein Programm änderst."
+          ]
+        },
+        {
+          "head": "Grund 3: Der Appetit steigt leise",
+          "body": [
+            "In einer 12-wöchigen, betreuten Studie trainierten 35 übergewichtige Teilnehmende an fünf Tagen pro Woche. Im Schnitt nahmen sie wie erwartet 3,7 kg ab, doch die Unterschiede waren riesig: Eine Person verlor 14,7 kg, eine andere nahm 1,7 kg zu. Wer weniger abnahm als erwartet, aß rund 268 kcal pro Tag mehr und hatte mehr Hunger.<sup><a href=\"#ref3\">3</a></sup>",
+            "Meist passiert das unbewusst: der „Hab ich mir verdient“-Snack nach dem Training, ein Smoothie, ein Sportgetränk. Fett nimmst du nur zu, wenn du mehr Energie aufnimmst, als du verbrauchst; auch die DGE empfiehlt, in Bewegung zu bleiben und dabei aufs Gewicht zu achten.<sup><a href=\"#ref5\">5</a></sup> Eine praktische Regel: Zähl nur die Hälfte der beim Training verbrannten Kalorien als „zum Nachessen verfügbar“."
+          ]
+        },
+        {
+          "head": "Grund 4: Die Waage schwankt täglich, Muskeln wachsen langsam",
+          "body": [
+            "Das Tagesgewicht schwankt mit Wasser, Salz, Darminhalt und sogar dem Wochentag. In einer Studie mit über 4.600 Wiegungen von 80 Erwachsenen stieg das Gewicht am Wochenende und sank unter der Woche; die Forschenden werteten das als normalen Rhythmus, nicht als Zunahme.<sup><a href=\"#ref4\">4</a></sup>",
+            "Muskelaufbau ist ein langsamer Prozess über Wochen und Monate; ein plötzlicher Sprung in den ersten Wochen ist meist Wasser und Glykogen, nicht Muskel. So liest du die Waage richtig:"
+          ],
+          "list": [
+            "<strong>Wieg dich unter gleichen Bedingungen:</strong> morgens, nach dem Toilettengang, vor dem Essen und Trinken, auf derselben Waage.",
+            "<strong>Nutze den Wochenschnitt:</strong> wieg dich mehrmals pro Woche und bilde den Mittelwert; reagier nicht auf den Sprung eines einzelnen Tages.",
+            "<strong>Gib dir 3–4 Wochen:</strong> Wasser- und Glykogenhaushalt brauchen ein paar Wochen, um sich einzupendeln.",
+            "<strong>Notier auch deinen Taillenumfang:</strong> einmal im Monat auf Nabelhöhe. Wie die Kleidung sitzt und welche Gewichte du bewegst, sind ebenfalls gute Signale.",
+            "<strong>Trag ein, was du isst:</strong> inklusive Snacks und Getränken nach dem Training."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "So verfolgst du das in Suu",
+        "lead": "Menünamen genau wie in der App:",
+        "steps": [
+          {
+            "feature": "Auch Snacks nach dem Training eintragen",
+            "where": "Startbildschirm → Schnell hinzufügen → <strong>Essen hinzufügen</strong> → Mikrofon oder Textfeld",
+            "solves": "„Eine Banane, ein Proteinriegel und ein halber Liter Sportgetränk“ reicht: Kalorien und Makros werden berechnet, die Getränke zählen zu deiner Flüssigkeitsbilanz. Im kostenlosen Plan 3 KI-Analysen pro Tag."
+          },
+          {
+            "feature": "Sehen, ob dein Appetit gestiegen ist",
+            "where": "Bildschirm <strong>Ernährung</strong> → <strong>Letzte 7 Tage (Kalorien)</strong>",
+            "solves": "Leg die Woche vor dem Trainingsstart neben die Wochen danach; sind deine täglichen Kalorien leise gestiegen, siehst du es hier."
+          },
+          {
+            "feature": "Trainingskalorien realistisch zählen",
+            "where": "Startbildschirm → Schnell hinzufügen → <strong>Übung hinzufügen</strong>",
+            "solves": "GPS-Training zeigt eine Schätzung der verbrannten Kalorien; willst du davon etwas nachessen, rechne mit der Hälfte, nicht mit allem."
+          },
+          {
+            "feature": "Nicht am Wasser sparen – verfolgen",
+            "where_ios": "Tab <strong>Du</strong> → Wasser → <strong>Suu-Index</strong>",
+            "where_android": "<strong>Statistiken</strong> → <strong>Suu-Index</strong>",
+            "solves": "An Trainingstagen steigt dein Trinkziel automatisch; der Suu-Index bewertet deine tägliche Flüssigkeitsversorgung von 0 bis 100."
+          },
+          {
+            "feature": "Fortschritt sehen, nicht nur die Waage",
+            "where_ios": "Tab <strong>Du</strong> → <strong>Distanz-Meilensteine</strong> · <strong>Abzeichen</strong>",
+            "where_android": "Der Bildschirm <strong>Abzeichen</strong> und die <strong>Meilensteine</strong> am Ende eines Trainings",
+            "solves": "Die Distanz aus Läufen, Spaziergängen und Wanderungen summiert sich zu Meilensteinen – so bleibt dein Fortschritt sichtbar, auch wenn die Waage schwankt."
+          }
+        ],
+        "note": "GPS-Training, Meilensteine und Abzeichen sind kostenlos; Mahlzeiten-Analyse per Text oder Sprache im kostenlosen Plan 3-mal pro Tag.",
+        "button": "Suu kostenlos laden"
+      },
+      "verdict": {
+        "head": "Kurz gesagt",
+        "body": [
+          "Eine Zunahme in den ersten Trainingswochen ist meist Wasser und Glykogen – ein Zeichen, dass sich deine Muskeln anpassen, kein Grund aufzuhören.",
+          "Wieg dich unter gleichen Bedingungen, nutze den Wochenschnitt, gib dir 3–4 Wochen und trag auch ein, was du nach dem Training isst. Steigt dein Schnitt nach einem Monat noch, liegt die Antwort wahrscheinlich auf dem Teller."
+        ]
+      },
+      "cta": {
+        "head": "Gegessenes und Verbranntes am selben Tag sehen",
+        "sub": "GPS-Training ist kostenlos · iOS und Android",
+        "button": "Suu kostenlos laden"
+      },
+      "faq": [
+        {
+          "q": "Warum nehme ich zu, seit ich Sport mache?",
+          "a": "Die Zunahme in den ersten Wochen ist meist Wasser: Muskeln speichern mit jedem Gramm Glykogen mindestens 3 Gramm Wasser, und Muskeln in Reparatur halten eine Zeit lang Flüssigkeit. Manche essen zudem mehr. Schau auf den Schnitt über 3–4 Wochen."
+        },
+        {
+          "q": "Wie lange dauert die Gewichtszunahme nach Trainingsbeginn?",
+          "a": "Das ist individuell, aber die Zunahme durch Wasser und Glykogen pendelt sich meist innerhalb weniger Wochen ein. Steigt dein Schnitt über 3–4 Wochen weiter, liegt es wahrscheinlich am Essen – trag auch Snacks nach dem Training ein."
+        },
+        {
+          "q": "Ist das zugenommene Gewicht durch Sport Muskel oder Fett?",
+          "a": "In den ersten Wochen vor allem Wasser und Glykogen. Muskeln wachsen langsam, und Fett nimmt nur zu, wenn du mehr Energie aufnimmst, als du verbrauchst. Taillenumfang und Passform der Kleidung sind bessere Anzeiger als die Waage."
+        },
+        {
+          "q": "Wann sollte ich mich nach dem Sport wiegen?",
+          "a": "Nicht direkt nach dem Training. Morgens nach dem Toilettengang, vor dem Essen und Trinken und immer auf derselben Waage – dann den Schnitt aus mehreren Wiegungen pro Woche bilden."
+        },
+        {
+          "q": "Ist es normal, dass ich durch Sport mehr Hunger habe?",
+          "a": "Normal und häufig. In einer 12-wöchigen Studie aßen diejenigen, die weniger abnahmen als erwartet, rund 268 kcal pro Tag mehr. Snacks und Getränke nach dem Training einzutragen ist der einfachste Weg, das zu bemerken."
+        },
+        {
+          "q": "Soll ich weniger trinken, damit die Waage nicht steigt?",
+          "a": "Nein. Selbst bei knappem Wasser speichern die Muskeln weiter Wasser mit dem Glykogen; Sparen am Wasser macht dich nur durstig und das Training schwerer."
+        }
+      ],
+      "references": [
+        {
+          "label": "Fernández-Elías VE et al. — Relationship between muscle water and glycogen recovery after prolonged exercise in the heat in humans. Eur J Appl Physiol, 2015",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/25911631/"
+        },
+        {
+          "label": "Clarkson PM, Hubal MJ — Exercise-induced muscle damage in humans. Am J Phys Med Rehabil, 2002",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/12409811/"
+        },
+        {
+          "label": "King NA et al. — Individual variability following 12 weeks of supervised exercise: identification and characterization of compensation for exercise-induced weight loss. Int J Obes, 2008",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/17848941/"
+        },
+        {
+          "label": "Orsama AL et al. — Weight rhythms: weight increases during weekends and decreases during weekdays. Obes Facts, 2014",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/24504358/"
+        },
+        {
+          "label": "Deutsche Gesellschaft für Ernährung — Gut essen und trinken: die DGE-Empfehlungen",
+          "href": "https://www.dge.de/gesunde-ernaehrung/gut-essen-und-trinken/dge-empfehlungen/"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/de/warum-nehme-ich-nicht-ab.html",
+          "title": "Warum nehme ich nicht ab?",
+          "desc": "7 Gründe und eine Checkliste."
+        },
+        {
+          "href": "/blog/de/kaloriendefizit.html",
+          "title": "Was ist ein Kaloriendefizit?",
+          "desc": "Ziel berechnen und sicheres Defizit."
+        },
+        {
+          "href": "/blog/de/gehen-oder-laufen-abnehmen.html",
+          "title": "Gehen oder Laufen zum Abnehmen?",
+          "desc": "Kalorien, Zeit und Verletzungsrisiko."
+        },
+        {
+          "href": "/blog/de/kalorienverbrauch-beim-sport.html",
+          "title": "Kalorienverbrauch beim Sport",
+          "desc": "Realistische Werte für Gehen, Laufen und Rad."
+        }
+      ]
+    },
+    "it": {
+      "slug": "peso-aumentato-con-allenamento",
+      "read_minutes": 7,
+      "badge": "⚖️ Guida · Bilancia e allenamento",
+      "h1": "Ho iniziato ad allenarmi e il peso è aumentato: perché? 4 motivi e quando fidarsi della bilancia (e come monitorarlo in Suu)",
+      "about": [
+        {
+          "name": "Peso corporeo"
+        },
+        {
+          "name": "Esercizio fisico"
+        },
+        {
+          "name": "Equilibrio tra glicogeno e acqua"
+        }
+      ],
+      "meta": {
+        "title": "Peso aumentato da quando mi alleno: 4 motivi | Suu",
+        "description": "Se la bilancia sale da quando ti alleni, di solito non è grasso: acqua con il glicogeno, muscoli in riparazione, più appetito. Quando fidarsi della bilancia.",
+        "keywords": "peso aumentato con allenamento, da quando mi alleno peso di più, aumento di peso dopo palestra, ritenzione idrica dopo allenamento, mi alleno ma non dimagrisco, muscoli o grasso, più fame dopo allenamento, quando pesarsi",
+        "og_title": "Ho iniziato ad allenarmi e il peso è aumentato: perché?",
+        "og_description": "Glicogeno e acqua, riparazione muscolare, più appetito e oscillazioni quotidiane: i 4 motivi dell'aumento nelle prime settimane e come pesarsi bene."
+      },
+      "answer": "Se nelle prime settimane di allenamento la bilancia sale, di solito è acqua e non grasso: i muscoli immagazzinano ogni grammo di glicogeno con almeno 3 grammi d'acqua, e i muscoli che si riparano dopo uno sforzo insolito trattengono liquidi per un po'. In alcune persone cresce anche l'appetito. Guarda la media di 3–4 settimane prima di decidere. In Suu vedi cosa mangi e cosa bruci nello stesso giorno.",
+      "health_note": {
+        "head": "Questo articolo non è un consiglio medico.",
+        "body": [
+          "Contiene informazioni generali. Se hai problemi cardiaci, renali o alla tiroide, assumi farmaci che possono influire sul peso o sei in gravidanza, valuta le variazioni di peso con il tuo medico.",
+          "Rivolgiti al medico senza aspettare se noti uno di questi segnali:"
+        ],
+        "red_flags": [
+          "Aumento di peso rapido in pochi giorni con gonfiore a caviglie, gambe o viso",
+          "Fiato corto o tosse che peggiora da sdraiato",
+          "Dolore muscolare molto forte dopo l'allenamento con gonfiore evidente e urina color tè o cola",
+          "Sete eccessiva, minzione frequente e stanchezza inspiegabile"
+        ]
+      },
+      "disclosure": "Abbiamo scritto questa guida come il team di due persone che sviluppa Suu. Consigliamo la nostra app, ma i consigli si basano sulle linee guida CREA per una sana alimentazione e su studi sottoposti a revisione: puoi seguire gli stessi passi anche senza Suu.",
+      "intro": [
+        "Ti alleni tre volte a settimana e stai attento a cosa mangi, ma alla fine della seconda settimana la bilancia segna un chilo in più. È una delle delusioni più comuni per chi inizia, e spesso il momento in cui si molla.",
+        "La buona notizia: l'aumento delle prime settimane raramente è grasso nuovo. La bilancia pesa tutto ciò che c'è nel corpo – acqua, glicogeno, contenuto intestinale – e iniziare ad allenarsi cambia tutto questo. Ecco i quattro motivi, come capire quale riguarda te e quando puoi tornare a fidarti della bilancia."
+      ],
+      "analysis": [
+        {
+          "head": "Motivo 1: i muscoli immagazzinano acqua insieme al glicogeno",
+          "body": [
+            "I muscoli conservano energia sotto forma di glicogeno, e ogni grammo viene immagazzinato con almeno 3 grammi d'acqua.<sup><a href=\"#ref1\">1</a></sup> Quando ti alleni con regolarità, i muscoli si abituano a usare e ricaricare questa riserva: i carboidrati dopo l'allenamento la riempiono e l'acqua arriva insieme.",
+            "Per esempio, se i muscoli aggiungono 300 g di glicogeno, sulla bilancia sono circa 1,2 kg: 300 g di glicogeno più almeno 900 g d'acqua. Non è grasso, è il segno che i muscoli si stanno adattando all'allenamento."
+          ],
+          "callout": "Bere meno non lo evita. Anche in un esperimento in cui i liquidi erano volutamente scarsi, i muscoli hanno continuato a immagazzinare 3 g d'acqua per ogni grammo di glicogeno; con acqua sufficiente il rapporto era ancora più alto.<sup><a href=\"#ref1\">1</a></sup> Se tagli l'acqua ti disidrati tu, non la bilancia."
+        },
+        {
+          "head": "Motivo 2: i muscoli in riparazione trattengono liquidi per un po'",
+          "body": [
+            "Uno sforzo insolito – soprattutto i movimenti in cui il muscolo lavora mentre si allunga, come la corsa in discesa, gli squat o abbassare lentamente un peso – provoca microlesioni nelle fibre muscolari. Nella riparazione che segue compaiono infiammazione e gonfiore nel muscolo; i dolori che durano qualche giorno ne fanno parte.<sup><a href=\"#ref2\">2</a></sup>",
+            "Ripetendo lo stesso esercizio il muscolo si danneggia meno: è l'effetto della ripetizione dello sforzo.<sup><a href=\"#ref2\">2</a></sup> Per questo il motivo si fa sentire soprattutto nelle prime 1–2 settimane o quando cambi programma."
+          ]
+        },
+        {
+          "head": "Motivo 3: l'appetito sale in silenzio",
+          "body": [
+            "In uno studio supervisionato di 12 settimane, 35 partecipanti in sovrappeso si sono allenati cinque giorni a settimana. In media hanno perso, come previsto, 3,7 kg, ma le differenze individuali erano enormi: c'è chi ha perso 14,7 kg e chi ne ha presi 1,7. Chi ha perso meno del previsto mangiava circa 268 kcal in più al giorno e aveva più fame.<sup><a href=\"#ref3\">3</a></sup>",
+            "Spesso succede senza accorgersene: lo spuntino «me lo sono meritato» dopo l'allenamento, uno smoothie, una bevanda sportiva. Il grasso aumenta solo se assumi più energia di quella che consumi; non a caso le linee guida CREA chiedono di controllare il peso e mantenersi attivi.<sup><a href=\"#ref5\">5</a></sup> Una regola pratica: considera «da poter rimangiare» solo metà delle calorie bruciate in allenamento."
+          ]
+        },
+        {
+          "head": "Motivo 4: la bilancia oscilla ogni giorno e i muscoli crescono piano",
+          "body": [
+            "Il peso quotidiano varia con acqua, sale, contenuto intestinale e perfino il giorno della settimana. In uno studio su oltre 4.600 pesate di 80 adulti, il peso saliva nel fine settimana e scendeva nei giorni feriali; i ricercatori lo hanno considerato un ritmo normale, non un aumento.<sup><a href=\"#ref4\">4</a></sup>",
+            "Aumentare i muscoli è un processo lento di settimane e mesi; un salto improvviso nelle prime settimane di solito è acqua e glicogeno, non muscolo. Per leggere bene la bilancia:"
+          ],
+          "list": [
+            "<strong>Pesati sempre nelle stesse condizioni:</strong> al mattino, dopo il bagno, prima di mangiare e bere, sulla stessa bilancia.",
+            "<strong>Usa la media settimanale:</strong> pesati più volte a settimana e fai la media; non reagire al salto di un solo giorno.",
+            "<strong>Concediti 3–4 settimane:</strong> l'equilibrio di acqua e glicogeno ha bisogno di qualche settimana per assestarsi.",
+            "<strong>Annota anche la circonferenza vita:</strong> una volta al mese, all'altezza dell'ombelico. Come ti stanno i vestiti e i pesi che sollevi sono buoni segnali.",
+            "<strong>Registra cosa mangi:</strong> compresi spuntini e bevande dopo l'allenamento."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Dove monitorarlo in Suu",
+        "lead": "I nomi dei menu sono quelli dell'app:",
+        "steps": [
+          {
+            "feature": "Registra anche gli spuntini dopo l'allenamento",
+            "where": "Schermata principale → aggiunta rapida → <strong>Aggiungi cibo</strong> → microfono o campo di testo",
+            "solves": "Basta dire «una banana, una barretta proteica e mezzo litro di bevanda sportiva»: calorie e macro vengono calcolati e le bevande entrano nel bilancio dei liquidi. Nel piano gratuito 3 analisi IA al giorno."
+          },
+          {
+            "feature": "Verifica se l'appetito è aumentato",
+            "where": "Schermata <strong>Nutrizione</strong> → <strong>Ultimi 7 giorni (calorie)</strong>",
+            "solves": "Metti la settimana prima di iniziare ad allenarti accanto a quelle successive; se le calorie giornaliere sono salite in silenzio, lo vedi qui."
+          },
+          {
+            "feature": "Conta le calorie dell'allenamento in modo realistico",
+            "where": "Schermata principale → aggiunta rapida → <strong>Aggiungi esercizio</strong>",
+            "solves": "L'allenamento con GPS mostra una stima delle calorie bruciate; se vuoi rimangiarne una parte, conta la metà, non tutte."
+          },
+          {
+            "feature": "Non tagliare l'acqua: monitorala",
+            "where_ios": "Scheda <strong>Tu</strong> → Acqua → <strong>Indice Suu</strong>",
+            "where_android": "<strong>Statistiche</strong> → <strong>Indice Suu</strong>",
+            "solves": "Nei giorni di allenamento l'obiettivo d'acqua sale da solo; l'Indice Suu valuta la tua idratazione giornaliera da 0 a 100."
+          },
+          {
+            "feature": "Guarda i progressi, non solo la bilancia",
+            "where_ios": "Scheda <strong>Tu</strong> → <strong>Traguardi di distanza</strong> · <strong>Distintivi</strong>",
+            "where_android": "La schermata <strong>Distintivi</strong> e i <strong>Traguardi</strong> a fine allenamento",
+            "solves": "La distanza di corse, camminate ed escursioni si somma in traguardi, così i progressi restano visibili anche nelle settimane in cui la bilancia oscilla."
+          }
+        ],
+        "note": "Allenamenti con GPS, traguardi e distintivi sono gratuiti; l'analisi dei pasti a testo o a voce è 3 volte al giorno nel piano gratuito.",
+        "button": "Scarica Suu gratis"
+      },
+      "verdict": {
+        "head": "In breve",
+        "body": [
+          "L'aumento di peso nelle prime settimane di allenamento è di solito acqua e glicogeno: un segno che i muscoli si adattano, non un motivo per smettere.",
+          "Pesati nelle stesse condizioni, usa la media settimanale, concediti 3–4 settimane e registra anche cosa mangi dopo l'allenamento. Se dopo un mese la media sale ancora, la risposta è probabilmente nel piatto."
+        ]
+      },
+      "cta": {
+        "head": "Vedi cosa mangi e cosa bruci nello stesso giorno",
+        "sub": "Allenamenti con GPS gratuiti · iOS e Android",
+        "button": "Scarica Suu gratis"
+      },
+      "faq": [
+        {
+          "q": "Perché sono aumentato di peso da quando mi alleno?",
+          "a": "L'aumento delle prime settimane di solito è acqua: i muscoli immagazzinano almeno 3 grammi d'acqua per ogni grammo di glicogeno e i muscoli in riparazione trattengono liquidi per un po'. Alcuni mangiano anche di più. Guarda la media di 3–4 settimane."
+        },
+        {
+          "q": "Quanto dura l'aumento di peso quando si inizia ad allenarsi?",
+          "a": "Varia da persona a persona, ma l'aumento dovuto ad acqua e glicogeno di solito si assesta in poche settimane. Se la media di 3–4 settimane continua a salire, la causa è probabilmente l'alimentazione: registra anche gli spuntini dopo l'allenamento."
+        },
+        {
+          "q": "Il peso preso allenandomi è muscolo o grasso?",
+          "a": "Nelle prime settimane è soprattutto acqua e glicogeno. Il muscolo cresce lentamente e il grasso aumenta solo se assumi più energia di quella che consumi. Circonferenza vita e vestibilità sono indicatori migliori della bilancia."
+        },
+        {
+          "q": "Quando pesarsi dopo l'allenamento?",
+          "a": "Non subito dopo. Al mattino, dopo il bagno, prima di mangiare e bere e sempre sulla stessa bilancia; poi fai la media di più pesate a settimana."
+        },
+        {
+          "q": "È normale avere più fame da quando mi alleno?",
+          "a": "Normale e frequente. In uno studio di 12 settimane chi perdeva meno peso del previsto mangiava circa 268 kcal in più al giorno. Registrare spuntini e bevande dopo l'allenamento è il modo più semplice per accorgersene."
+        },
+        {
+          "q": "Devo bere meno acqua per non far salire la bilancia?",
+          "a": "No. Anche con poca acqua i muscoli continuano a immagazzinarla insieme al glicogeno; ridurla ti lascia solo disidratato e rende l'allenamento più duro."
+        }
+      ],
+      "references": [
+        {
+          "label": "Fernández-Elías VE et al. — Relationship between muscle water and glycogen recovery after prolonged exercise in the heat in humans. Eur J Appl Physiol, 2015",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/25911631/"
+        },
+        {
+          "label": "Clarkson PM, Hubal MJ — Exercise-induced muscle damage in humans. Am J Phys Med Rehabil, 2002",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/12409811/"
+        },
+        {
+          "label": "King NA et al. — Individual variability following 12 weeks of supervised exercise: identification and characterization of compensation for exercise-induced weight loss. Int J Obes, 2008",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/17848941/"
+        },
+        {
+          "label": "Orsama AL et al. — Weight rhythms: weight increases during weekends and decreases during weekdays. Obes Facts, 2014",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/24504358/"
+        },
+        {
+          "label": "CREA — Linee guida per una sana alimentazione (revisione 2018)",
+          "href": "https://www.crea.gov.it/web/alimenti-e-nutrizione/-/linee-guida-per-una-sana-alimentazione-2018"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/it/perche-non-dimagrisco.html",
+          "title": "Perché non dimagrisco?",
+          "desc": "7 motivi e una checklist."
+        },
+        {
+          "href": "/blog/it/deficit-calorico.html",
+          "title": "Che cos'è il deficit calorico?",
+          "desc": "Calcola l'obiettivo e un deficit sicuro."
+        },
+        {
+          "href": "/blog/it/camminare-o-correre-per-dimagrire.html",
+          "title": "Camminare o correre per dimagrire?",
+          "desc": "Calorie, tempo e rischio di infortuni."
+        },
+        {
+          "href": "/blog/it/calorie-bruciate-allenamento.html",
+          "title": "Calorie bruciate in allenamento",
+          "desc": "Numeri realistici per camminata, corsa e bici."
+        }
+      ]
+    },
+    "uk": {
+      "slug": "vaha-zrosla-pislya-trenuvan",
+      "read_minutes": 7,
+      "badge": "⚖️ Посібник · Ваги й тренування",
+      "h1": "Почав тренуватися, а вага зросла: 4 причини і коли вірити вагам (і як відстежувати це в Suu)",
+      "about": [
+        {
+          "name": "Маса тіла"
+        },
+        {
+          "name": "Фізичні вправи"
+        },
+        {
+          "name": "Баланс глікогену й води"
+        }
+      ],
+      "meta": {
+        "title": "Вага зросла після початку тренувань: 4 причини | Suu",
+        "description": "Якщо вага росте відтоді, як ти тренуєшся, це здебільшого не жир: вода, що запасається з глікогеном, відновлення м'язів і апетит. Коли вірити вагам.",
+        "keywords": "почала тренуватися вага зросла, вага збільшилася після тренувань, чому росте вага після спорту, затримка води після тренування, тренуюся але не худну, м'язи чи жир, апетит після тренувань, коли зважуватися",
+        "og_title": "Почав тренуватися, а вага зросла — чому?",
+        "og_description": "Глікоген і вода, відновлення м'язів, апетит і щоденні коливання: 4 причини зростання ваги в перші тижні та як правильно зважуватися."
+      },
+      "answer": "Зростання ваги в перші тижні тренувань — здебільшого вода, а не жир: м'язи запасають кожен грам глікогену разом щонайменше з 3 грамами води, а м'язи, що відновлюються після незвичного навантаження, тимчасово затримують рідину. У декого непомітно росте апетит. Перш ніж робити висновки, дивись на середнє за 3–4 тижні. У Suu з'їдене й витрачене видно в один день.",
+      "health_note": {
+        "head": "Ця стаття не є медичною порадою.",
+        "body": [
+          "Це загальна інформація. Якщо в тебе хвороби серця, нирок чи щитоподібної залози, ти приймаєш ліки, що впливають на вагу, або вагітна, обговори зміни ваги з лікарем.",
+          "Звернися до лікаря не зволікаючи, якщо помітиш щось із цього:"
+        ],
+        "red_flags": [
+          "Швидке зростання ваги за кілька днів разом із набряками щиколоток, ніг чи обличчя",
+          "Задишка або кашель, що посилюється лежачи",
+          "Дуже сильний біль у м'язах після тренування з помітним набряком і сечею кольору чаю чи коли",
+          "Сильна спрага, часте сечовипускання й незрозуміла слабкість"
+        ]
+      },
+      "disclosure": "Цей посібник написала команда з двох людей, яка створює Suu. Ми радимо свій застосунок, але поради спираються на рекомендації Центру громадського здоров'я України та рецензовані дослідження — ті самі кроки можна виконувати й без Suu.",
+      "intro": [
+        "Ти тренуєшся тричі на тиждень і стежиш за харчуванням, а наприкінці другого тижня ваги показують на кілограм більше. Це одне з найчастіших розчарувань новачків — і нерідко саме тоді кидають.",
+        "Добра новина: прибавка в перші тижні рідко буває новим жиром. Ваги зважують усе — воду, глікоген, вміст кишківника, — а початок тренувань змінює все це водночас. Нижче — чотири причини, як зрозуміти, яка з них твоя, і коли вагам знову можна вірити."
+      ],
+      "analysis": [
+        {
+          "head": "Причина 1: м'язи запасають воду разом із глікогеном",
+          "body": [
+            "М'язи зберігають енергію у вигляді глікогену, і кожен його грам запасається разом щонайменше з 3 грамами води.<sup><a href=\"#ref1\">1</a></sup> Коли ти починаєш тренуватися регулярно, м'язи звикають витрачати й поповнювати цей запас: вуглеводи після тренування його наповнюють, а разом із ними приходить вода.",
+            "Наприклад, якщо м'язи додадуть 300 г глікогену, на вагах це близько 1,2 кг: 300 г глікогену й не менше ніж 900 г води. Це не жир, а ознака того, що м'язи адаптуються до навантаження."
+          ],
+          "callout": "Пити менше — не вихід. Навіть в експерименті, де рідину навмисно обмежували, м'язи й далі запасали 3 г води на кожен грам глікогену, а за достатнього пиття співвідношення було ще вищим.<sup><a href=\"#ref1\">1</a></sup> Урізаючи воду, ти зневоднюєш себе, а не ваги."
+        },
+        {
+          "head": "Причина 2: м'язи, що відновлюються, тимчасово затримують рідину",
+          "body": [
+            "Незвичне навантаження — особливо рухи, де м'яз працює на розтягнення: біг униз схилом, присідання, повільне опускання ваги — спричиняє мікропошкодження м'язових волокон. Під час відновлення в м'язі виникають запалення й набряк; біль, що тримається кілька днів, — частина цього процесу.<sup><a href=\"#ref2\">2</a></sup>",
+            "Якщо повторювати ту саму вправу, м'яз пошкоджується менше — це ефект повторного навантаження.<sup><a href=\"#ref2\">2</a></sup> Тому найсильніше ця причина відчувається в перші 1–2 тижні або коли змінюєш програму."
+          ]
+        },
+        {
+          "head": "Причина 3: апетит тихо росте",
+          "body": [
+            "У 12-тижневому дослідженні під наглядом 35 учасників із зайвою вагою тренувалися п'ять днів на тиждень. У середньому вони, як і очікувалося, схудли на 3,7 кг, але розкид був величезним: хтось скинув 14,7 кг, а хтось додав 1,7 кг. Ті, хто схуд менше за очікуване, почали з'їдати приблизно на 268 ккал на день більше й відчували більший голод.<sup><a href=\"#ref3\">3</a></sup>",
+            "Найчастіше це відбувається непомітно: перекус «я заслужив» після тренування, смузі, спортивний напій. Жир росте, лише коли енергії надходить більше, ніж витрачається; тож Центр громадського здоров'я радить підтримувати масу тіла завдяки щоденній фізичній активності.<sup><a href=\"#ref5\">5</a></sup> Практичне правило: вважай «доступною для їжі» лише половину калорій, спалених на тренуванні."
+          ]
+        },
+        {
+          "head": "Причина 4: ваги коливаються щодня, а м'язи ростуть повільно",
+          "body": [
+            "Щоденна вага змінюється через воду, сіль, вміст кишківника й навіть день тижня. У дослідженні понад 4600 зважувань 80 дорослих вага росла у вихідні й знижувалася в будні; автори розцінили це як нормальний ритм, а не набір ваги.<sup><a href=\"#ref4\">4</a></sup>",
+            "Ріст м'язів — повільний процес на тижні й місяці; різкий стрибок у перші тижні зазвичай пояснюється водою й глікогеном, а не м'язами. Щоб правильно читати ваги:"
+          ],
+          "list": [
+            "<strong>Зважуйся в однакових умовах:</strong> зранку, після туалету, до їжі й пиття, на тих самих вагах.",
+            "<strong>Дивись на середнє за тиждень:</strong> зважуйся кілька разів на тиждень і бери середнє; не реагуй на стрибок одного дня.",
+            "<strong>Дай собі 3–4 тижні:</strong> балансу води й глікогену потрібно кілька тижнів, щоб усталитися.",
+            "<strong>Записуй і обхват талії:</strong> раз на місяць, на рівні пупка. Посадка одягу й робочі ваги на тренуванні — теж добрі орієнтири.",
+            "<strong>Записуй, що їси:</strong> разом із перекусами й напоями після тренування."
+          ]
+        }
+      ],
+      "in_app": {
+        "head": "Де відстежувати це в Suu",
+        "lead": "Назви пунктів наведено англійською, як в інтерфейсі:",
+        "steps": [
+          {
+            "feature": "Записуй і перекуси після тренування",
+            "where": "Home → quick add → <strong>Add Food</strong> → мікрофон або текстове поле",
+            "solves": "Досить сказати «банан, протеїновий батончик і пів літра спортивного напою»: калорії та макронутрієнти порахуються, а напої підуть у водний баланс. У безкоштовному плані 3 аналізи ШІ на день."
+          },
+          {
+            "feature": "Перевір, чи зріс апетит",
+            "where": "Екран <strong>Nutrition</strong> → <strong>Last 7 days (calories)</strong>",
+            "solves": "Порівняй тиждень до початку тренувань із наступними; якщо добові калорії непомітно зросли, це буде видно тут."
+          },
+          {
+            "feature": "Рахуй калорії тренувань реалістично",
+            "where": "Home → quick add → <strong>Add Exercise</strong>",
+            "solves": "Тренування з GPS показує оцінку спалених калорій; плануючи «доїсти» частину, враховуй половину, а не все."
+          },
+          {
+            "feature": "Не урізай воду — відстежуй її",
+            "where_ios": "Вкладка <strong>You</strong> → Water → <strong>Suu Index</strong>",
+            "where_android": "<strong>Statistics</strong> → <strong>Suu Index</strong>",
+            "solves": "У дні тренувань норма води росте автоматично, а Індекс Suu оцінює денну гідратацію від 0 до 100."
+          },
+          {
+            "feature": "Стеж за прогресом, а не лише за вагами",
+            "where_ios": "Вкладка <strong>You</strong> → Exercise → <strong>Distance Milestones</strong> · <strong>Badges</strong>",
+            "where_android": "Екран <strong>Badges</strong> і <strong>Milestones</strong> наприкінці тренування",
+            "solves": "Дистанція пробіжок, прогулянок і походів складається у віхи, тож прогрес лишається помітним у тижні, коли ваги «скачуть»."
+          }
+        ],
+        "note": "Тренування з GPS, віхи й значки безкоштовні; аналіз їжі текстом чи голосом — 3 рази на день у безкоштовному плані. Українська локалізація застосунку в планах; поки що зручно користуватися англійською версією інтерфейсу.",
+        "button": "Завантажити Suu безкоштовно"
+      },
+      "verdict": {
+        "head": "Коротко",
+        "body": [
+          "Зростання ваги в перші тижні тренувань — здебільшого вода й глікоген: ознака того, що м'язи адаптуються, а не привід кидати.",
+          "Зважуйся в однакових умовах, дивись на середнє за тиждень, дай собі 3–4 тижні й записуй, що їси після тренувань. Якщо за місяць середнє досі росте, відповідь, найімовірніше, у тарілці."
+        ]
+      },
+      "cta": {
+        "head": "Бач з'їдене й витрачене в один день",
+        "sub": "Тренування з GPS безкоштовні · iOS та Android",
+        "button": "Завантажити Suu безкоштовно"
+      },
+      "faq": [
+        {
+          "q": "Чому зросла вага, коли я почав тренуватися?",
+          "a": "Прибавка в перші тижні — здебільшого вода: м'язи запасають щонайменше 3 г води на кожен грам глікогену, а м'язи, що відновлюються, тимчасово затримують рідину. У декого ще й росте апетит. Дивись на середнє за 3–4 тижні."
+        },
+        {
+          "q": "Скільки триває прибавка ваги після початку тренувань?",
+          "a": "У всіх по-різному, але прибавка за рахунок води й глікогену зазвичай стабілізується за кілька тижнів. Якщо середнє за 3–4 тижні досі росте, причина швидше в харчуванні — записуй і перекуси після тренувань."
+        },
+        {
+          "q": "Набрана після тренувань вага — це м'язи чи жир?",
+          "a": "У перші тижні — переважно вода й глікоген. М'язи ростуть повільно, а жир додається, лише якщо енергії надходить більше, ніж витрачається. Обхват талії й посадка одягу показовіші за ваги."
+        },
+        {
+          "q": "Коли зважуватися після тренування?",
+          "a": "Не одразу після тренування. Зранку, після туалету, до їжі й пиття й завжди на тих самих вагах; потім бери середнє кількох зважувань за тиждень."
+        },
+        {
+          "q": "Чи нормально, що після початку тренувань зріс апетит?",
+          "a": "Нормально й часто. У 12-тижневому дослідженні ті, хто схуд менше за очікуване, з'їдали приблизно на 268 ккал на день більше. Записувати перекуси й напої після тренувань — найпростіший спосіб це помітити."
+        },
+        {
+          "q": "Пити менше води, щоб вага не росла?",
+          "a": "Ні. Навіть за обмеження води м'язи й далі запасають її разом із глікогеном; урізаючи воду, ти лише зневоднюєшся, і тренуватися стає важче."
+        }
+      ],
+      "references": [
+        {
+          "label": "Fernández-Elías VE та ін. — Relationship between muscle water and glycogen recovery after prolonged exercise in the heat in humans. Eur J Appl Physiol, 2015",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/25911631/"
+        },
+        {
+          "label": "Clarkson PM, Hubal MJ — Exercise-induced muscle damage in humans. Am J Phys Med Rehabil, 2002",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/12409811/"
+        },
+        {
+          "label": "King NA та ін. — Individual variability following 12 weeks of supervised exercise: identification and characterization of compensation for exercise-induced weight loss. Int J Obes, 2008",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/17848941/"
+        },
+        {
+          "label": "Orsama AL та ін. — Weight rhythms: weight increases during weekends and decreases during weekdays. Obes Facts, 2014",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/24504358/"
+        },
+        {
+          "label": "Центр громадського здоров'я України — 12 кроків до здорового харчування",
+          "href": "https://phc.org.ua/news/12-krokiv-do-zdorovogo-kharchuvannya"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/uk/chomu-ya-ne-khudnu.html",
+          "title": "Чому я не худну?",
+          "desc": "7 причин і чек-лист."
+        },
+        {
+          "href": "/blog/uk/defitsyt-kaloriy.html",
+          "title": "Що таке дефіцит калорій?",
+          "desc": "Як розрахувати ціль і безпечний дефіцит."
+        },
+        {
+          "href": "/blog/uk/khodba-chy-bih.html",
+          "title": "Ходьба чи біг для схуднення?",
+          "desc": "Калорії, час і ризик травм."
+        },
+        {
+          "href": "/blog/uk/spalyuvannya-kaloriy-pid-chas-trenuvannya.html",
+          "title": "Спалювання калорій під час тренування",
+          "desc": "Реалістичні цифри для ходьби, бігу й велосипеда."
+        }
+      ]
+    }
+  }
+}
