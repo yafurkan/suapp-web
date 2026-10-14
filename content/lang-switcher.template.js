@@ -22,6 +22,8 @@
         ru: { code: 'RU', name: 'Русский' },
         de: { code: 'DE', name: 'Deutsch' },
         it: { code: 'IT', name: 'Italiano' },
+        // Görünen kısa kod 'UA': 'UK' İngiltere/İngilizce sanılıyor; dil kodu yine 'uk'.
+        uk: { code: 'UA', name: 'Українська' },
         hi: { code: 'HI', name: 'हिन्दी' }
     };
 
