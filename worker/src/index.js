@@ -326,11 +326,10 @@ async function sendCodeEmail(to, code, platform, lang, env, partnerName) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: env.MAIL_FROM || "Suu <hediye@suuapp.com>",
-        // suuapp.com'un MX kaydı yok; hediye@ adresine gelen yanıt geri döner.
-        // Metin 4 dilde "bu e-postayı yanıtla" dediği için yanıtı çalışan
-        // kutuya yönlendiriyoruz.
-        reply_to: env.MAIL_REPLY_TO || "suutakip@gmail.com",
+        from: env.MAIL_FROM || "Suu <info@suuapp.com>",
+        // Metin 4 dilde "bu e-postayı yanıtla" diyor; yanıt tek şirket
+        // kutusuna (info@suuapp.com, MX: ImprovMX) gitmeli.
+        reply_to: env.MAIL_REPLY_TO || "info@suuapp.com",
         to: [to],
         subject: t.subject,
         html: mailHtml(code, platform, lang, env, partnerName),

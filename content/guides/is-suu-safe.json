@@ -1,5 +1,5 @@
 {
-  "_note": "Güven/kimlik rehberi — 'Suu güvenli mi / Suu kimin / verilerim güvende mi'. Kimlik iddiaları SAHİBİNDEN (2026-10-14): İTO BTM bünyesinde gelişti ve programı TAMAMLADI; Türkiye'de vergi kaydı olan ŞAHIS ŞİRKETİ; yerel belediyeden resmi izin/belge — belediye adı, unvan ve vergi/MERSİS no YAZILMAZ (sahibinin tercihi). 'Devlet kontrolünde' ifadesi kullanılmaz. Veri iddiaları gizlilik-politikasi.html ve delete-account.html'den birebir (AES-256, SSL/TLS, Firebase, satış yok, ses cihazda, fotoğraf Gemini'de anlık ve saklanmaz, 30 gün silme, 13+). İletişim için yalnızca Suutakip@gmail.com (suuapp.com posta kutuları MX'siz).",
+  "_note": "Güven/kimlik rehberi — 'Suu güvenli mi / Suu kimin / verilerim güvende mi'. Kimlik iddiaları SAHİBİNDEN (2026-10-14): İTO BTM bünyesinde gelişti ve programı TAMAMLADI; Türkiye'de vergi kaydı olan ŞAHIS ŞİRKETİ; yerel belediyeden resmi izin/belge — belediye adı, unvan ve vergi/MERSİS no YAZILMAZ (sahibinin tercihi). 'Devlet kontrolünde' ifadesi kullanılmaz. Veri iddiaları gizlilik-politikasi.html ve delete-account.html'den birebir (AES-256, SSL/TLS, Firebase, satış yok, ses cihazda, fotoğraf Gemini'de anlık ve saklanmaz, 30 gün silme, 13+). İletişim için yalnızca info@suuapp.com (2026-10-14'ten beri suuapp.com'da MX var: ImprovMX; tek şirket adresi bu).",
   "kind": "guide",
   "cluster": "suu-guvenli-mi",
   "published": "2026-10-14",
@@ -76,7 +76,7 @@
           "head": "Verilerin üzerinde söz hakkı sende",
           "body": [
             "KVKK ve GDPR sana verilerine erişme, düzeltme, silme, taşıma ve itiraz etme hakkı tanır; Kişisel Verileri Koruma Kurumu'na şikâyet hakkın da vardır.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref4\">4</a></sup>",
-            "Hesabını uygulama içinden silebilirsin; silinen hesabın verileri 30 gün içinde sistemlerden kalıcı olarak kaldırılır. Uygulamaya erişemiyorsan kayıtlı e-posta adresinden Suutakip@gmail.com adresine “Hesap Silme Talebi” konulu bir e-posta yeterli; talep en geç 7 iş gününde işleme alınır.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref2\">2</a></sup>"
+            "Hesabını uygulama içinden silebilirsin; silinen hesabın verileri 30 gün içinde sistemlerden kalıcı olarak kaldırılır. Uygulamaya erişemiyorsan kayıtlı e-posta adresinden info@suuapp.com adresine “Hesap Silme Talebi” konulu bir e-posta yeterli; talep en geç 7 iş gününde işleme alınır.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref2\">2</a></sup>"
           ],
           "callout": "<strong>Kendin doğrula:</strong> Google Play'deki uygulama sayfasının “Veri güvenliği” bölümü ve App Store'daki “Uygulama Gizliliği” etiketi, bir uygulamanın hangi verileri topladığını mağazanın kendi formatında gösterir.<sup><a href=\"#ref5\">5</a>,<a href=\"#ref6\">6</a></sup>"
         }
@@ -137,7 +137,7 @@
         },
         {
           "q": "Suu hesabımı nasıl silerim?",
-          "a": "Uygulamada Ayarlar → Hesap → Hesabı Sil yolunu izle; verilerin 30 gün içinde kalıcı olarak silinir. Uygulamaya erişemiyorsan kayıtlı e-postandan Suutakip@gmail.com adresine yazabilirsin; talep en geç 7 iş gününde işleme alınır."
+          "a": "Uygulamada Ayarlar → Hesap → Hesabı Sil yolunu izle; verilerin 30 gün içinde kalıcı olarak silinir. Uygulamaya erişemiyorsan kayıtlı e-postandan info@suuapp.com adresine yazabilirsin; talep en geç 7 iş gününde işleme alınır."
         },
         {
           "q": "Suu ücretli mi, habersiz ücret alır mı?",
@@ -264,7 +264,7 @@
           "head": "You stay in control of your data",
           "body": [
             "GDPR and KVKK give you the right to access, correct, delete and port your data and to object to its processing.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref4\">4</a></sup>",
-            "You can delete your account inside the app; the data of a deleted account is permanently removed from our systems within 30 days. If you can't access the app, an email from your registered address to Suutakip@gmail.com with the subject “Account Deletion Request” is enough; requests are processed within 7 business days.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref2\">2</a></sup>"
+            "You can delete your account inside the app; the data of a deleted account is permanently removed from our systems within 30 days. If you can't access the app, an email from your registered address to info@suuapp.com with the subject “Account Deletion Request” is enough; requests are processed within 7 business days.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref2\">2</a></sup>"
           ],
           "callout": "<strong>Check it yourself:</strong> the “Data safety” section on Google Play and the “App Privacy” label on the App Store show what an app collects, in the store's own format.<sup><a href=\"#ref5\">5</a>,<a href=\"#ref6\">6</a></sup>"
         }
@@ -325,7 +325,7 @@
         },
         {
           "q": "How do I delete my Suu account?",
-          "a": "In the app go to Settings → Account → Delete Account; your data is permanently deleted within 30 days. If you can't access the app, email Suutakip@gmail.com from your registered address; requests are processed within 7 business days."
+          "a": "In the app go to Settings → Account → Delete Account; your data is permanently deleted within 30 days. If you can't access the app, email info@suuapp.com from your registered address; requests are processed within 7 business days."
         },
         {
           "q": "Will Suu charge me without asking?",
@@ -452,7 +452,7 @@
           "head": "أنت المتحكم في بياناتك",
           "body": [
             "يمنحك GDPR وKVKK حق الوصول إلى بياناتك وتصحيحها وحذفها ونقلها والاعتراض على معالجتها.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref4\">4</a></sup>",
-            "يمكنك حذف حسابك من داخل التطبيق، وتُزال بيانات الحساب المحذوف نهائيًا من أنظمتنا خلال 30 يومًا. وإن لم تتمكن من دخول التطبيق، تكفي رسالة من بريدك المسجّل إلى Suutakip@gmail.com بعنوان «طلب حذف الحساب»، وتُعالَج الطلبات خلال 7 أيام عمل.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref2\">2</a></sup>"
+            "يمكنك حذف حسابك من داخل التطبيق، وتُزال بيانات الحساب المحذوف نهائيًا من أنظمتنا خلال 30 يومًا. وإن لم تتمكن من دخول التطبيق، تكفي رسالة من بريدك المسجّل إلى info@suuapp.com بعنوان «طلب حذف الحساب»، وتُعالَج الطلبات خلال 7 أيام عمل.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref2\">2</a></sup>"
           ],
           "callout": "<strong>تحقق بنفسك:</strong> قسم «أمان البيانات» في Google Play وملصق «خصوصية التطبيق» في App Store يوضحان ما يجمعه التطبيق بصيغة المتجر نفسه.<sup><a href=\"#ref5\">5</a>,<a href=\"#ref6\">6</a></sup>"
         }
@@ -513,7 +513,7 @@
         },
         {
           "q": "كيف أحذف حسابي في Suu؟",
-          "a": "اذهب في التطبيق إلى الإعدادات ← الحساب ← حذف الحساب، وتُحذف بياناتك نهائيًا خلال 30 يومًا. وإن لم تتمكن من دخول التطبيق، راسل Suutakip@gmail.com من بريدك المسجّل، وتُعالَج الطلبات خلال 7 أيام عمل."
+          "a": "اذهب في التطبيق إلى الإعدادات ← الحساب ← حذف الحساب، وتُحذف بياناتك نهائيًا خلال 30 يومًا. وإن لم تتمكن من دخول التطبيق، راسل info@suuapp.com من بريدك المسجّل، وتُعالَج الطلبات خلال 7 أيام عمل."
         },
         {
           "q": "هل يقتطع Suu مبالغ دون علمي؟",
@@ -640,7 +640,7 @@
           "head": "Контроль над данными — у вас",
           "body": [
             "GDPR и KVKK дают право получить доступ к своим данным, исправить, удалить и перенести их, а также возразить против обработки.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref4\">4</a></sup>",
-            "Аккаунт можно удалить прямо в приложении; данные удалённого аккаунта безвозвратно стираются из наших систем в течение 30 дней. Если доступа к приложению нет, достаточно письма с зарегистрированного адреса на Suutakip@gmail.com с темой «Запрос на удаление аккаунта»; запросы обрабатываются в течение 7 рабочих дней.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref2\">2</a></sup>"
+            "Аккаунт можно удалить прямо в приложении; данные удалённого аккаунта безвозвратно стираются из наших систем в течение 30 дней. Если доступа к приложению нет, достаточно письма с зарегистрированного адреса на info@suuapp.com с темой «Запрос на удаление аккаунта»; запросы обрабатываются в течение 7 рабочих дней.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref2\">2</a></sup>"
           ],
           "callout": "<strong>Проверьте сами:</strong> раздел «Безопасность данных» в Google Play и метка «Конфиденциальность приложения» в App Store показывают, какие данные собирает приложение, в формате самого магазина.<sup><a href=\"#ref5\">5</a>,<a href=\"#ref6\">6</a></sup>"
         }
@@ -701,7 +701,7 @@
         },
         {
           "q": "Как удалить аккаунт Suu?",
-          "a": "В приложении откройте Настройки → Аккаунт → Удалить аккаунт; данные безвозвратно удалятся в течение 30 дней. Если доступа к приложению нет, напишите на Suutakip@gmail.com с зарегистрированного адреса; запросы обрабатываются в течение 7 рабочих дней."
+          "a": "В приложении откройте Настройки → Аккаунт → Удалить аккаунт; данные безвозвратно удалятся в течение 30 дней. Если доступа к приложению нет, напишите на info@suuapp.com с зарегистрированного адреса; запросы обрабатываются в течение 7 рабочих дней."
         },
         {
           "q": "Может ли Suu списать деньги без моего ведома?",
@@ -828,7 +828,7 @@
           "head": "Du behältst die Kontrolle über deine Daten",
           "body": [
             "DSGVO und KVKK geben dir das Recht auf Auskunft, Berichtigung, Löschung und Übertragbarkeit deiner Daten sowie auf Widerspruch gegen die Verarbeitung.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref4\">4</a></sup>",
-            "Du kannst dein Konto direkt in der App löschen; die Daten eines gelöschten Kontos werden innerhalb von 30 Tagen dauerhaft aus unseren Systemen entfernt. Kommst du nicht mehr in die App, genügt eine E-Mail von deiner registrierten Adresse an Suutakip@gmail.com mit dem Betreff „Antrag auf Kontolöschung“; Anfragen werden innerhalb von 7 Werktagen bearbeitet.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref2\">2</a></sup>"
+            "Du kannst dein Konto direkt in der App löschen; die Daten eines gelöschten Kontos werden innerhalb von 30 Tagen dauerhaft aus unseren Systemen entfernt. Kommst du nicht mehr in die App, genügt eine E-Mail von deiner registrierten Adresse an info@suuapp.com mit dem Betreff „Antrag auf Kontolöschung“; Anfragen werden innerhalb von 7 Werktagen bearbeitet.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref2\">2</a></sup>"
           ],
           "callout": "<strong>Prüf es selbst:</strong> Der Abschnitt „Datensicherheit“ bei Google Play und das Label „App-Datenschutz“ im App Store zeigen im Format des Stores, welche Daten eine App erhebt.<sup><a href=\"#ref5\">5</a>,<a href=\"#ref6\">6</a></sup>"
         }
@@ -889,7 +889,7 @@
         },
         {
           "q": "Wie lösche ich mein Suu-Konto?",
-          "a": "In der App unter Einstellungen → Konto → Konto löschen; deine Daten werden innerhalb von 30 Tagen dauerhaft gelöscht. Kommst du nicht in die App, schreib von deiner registrierten Adresse an Suutakip@gmail.com; Anfragen werden innerhalb von 7 Werktagen bearbeitet."
+          "a": "In der App unter Einstellungen → Konto → Konto löschen; deine Daten werden innerhalb von 30 Tagen dauerhaft gelöscht. Kommst du nicht in die App, schreib von deiner registrierten Adresse an info@suuapp.com; Anfragen werden innerhalb von 7 Werktagen bearbeitet."
         },
         {
           "q": "Kann Suu mir ungefragt Geld abbuchen?",
@@ -1016,7 +1016,7 @@
           "head": "Il controllo dei dati resta a te",
           "body": [
             "GDPR e KVKK ti danno il diritto di accedere ai tuoi dati, rettificarli, cancellarli, portarli altrove e opporti al trattamento.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref4\">4</a></sup>",
-            "Puoi eliminare l'account direttamente nell'app; i dati di un account eliminato vengono rimossi definitivamente dai nostri sistemi entro 30 giorni. Se non riesci ad accedere all'app basta un'email dal tuo indirizzo registrato a Suutakip@gmail.com con oggetto «Richiesta di eliminazione account»; le richieste vengono gestite entro 7 giorni lavorativi.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref2\">2</a></sup>"
+            "Puoi eliminare l'account direttamente nell'app; i dati di un account eliminato vengono rimossi definitivamente dai nostri sistemi entro 30 giorni. Se non riesci ad accedere all'app basta un'email dal tuo indirizzo registrato a info@suuapp.com con oggetto «Richiesta di eliminazione account»; le richieste vengono gestite entro 7 giorni lavorativi.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref2\">2</a></sup>"
           ],
           "callout": "<strong>Verifica da solo:</strong> la sezione «Sicurezza dei dati» su Google Play e l'etichetta «Privacy dell'app» sull'App Store mostrano, nel formato dello store, quali dati raccoglie un'app.<sup><a href=\"#ref5\">5</a>,<a href=\"#ref6\">6</a></sup>"
         }
@@ -1077,7 +1077,7 @@
         },
         {
           "q": "Come elimino il mio account Suu?",
-          "a": "Nell'app vai su Impostazioni → Account → Elimina account; i dati vengono cancellati definitivamente entro 30 giorni. Se non riesci ad accedere all'app, scrivi a Suutakip@gmail.com dal tuo indirizzo registrato; le richieste sono gestite entro 7 giorni lavorativi."
+          "a": "Nell'app vai su Impostazioni → Account → Elimina account; i dati vengono cancellati definitivamente entro 30 giorni. Se non riesci ad accedere all'app, scrivi a info@suuapp.com dal tuo indirizzo registrato; le richieste sono gestite entro 7 giorni lavorativi."
         },
         {
           "q": "Suu può addebitarmi soldi senza chiedere?",
@@ -1204,7 +1204,7 @@
           "head": "Контроль над даними — у тебе",
           "body": [
             "GDPR і KVKK дають право отримати доступ до своїх даних, виправити, видалити й перенести їх, а також заперечити проти обробки.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref4\">4</a></sup>",
-            "Акаунт можна видалити просто в застосунку; дані видаленого акаунта безповоротно стираються з наших систем протягом 30 днів. Якщо доступу до застосунку немає, достатньо листа із зареєстрованої адреси на Suutakip@gmail.com з темою «Запит на видалення акаунта»; запити обробляються протягом 7 робочих днів.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref2\">2</a></sup>"
+            "Акаунт можна видалити просто в застосунку; дані видаленого акаунта безповоротно стираються з наших систем протягом 30 днів. Якщо доступу до застосунку немає, достатньо листа із зареєстрованої адреси на info@suuapp.com з темою «Запит на видалення акаунта»; запити обробляються протягом 7 робочих днів.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref2\">2</a></sup>"
           ],
           "callout": "<strong>Перевір сам:</strong> розділ «Безпека даних» у Google Play і мітка «Конфіденційність застосунку» в App Store показують, які дані збирає застосунок, у форматі самого магазину.<sup><a href=\"#ref5\">5</a>,<a href=\"#ref6\">6</a></sup>"
         }
@@ -1265,7 +1265,7 @@
         },
         {
           "q": "Як видалити акаунт Suu?",
-          "a": "У застосунку відкрий Settings → Account → Delete Account; дані безповоротно видаляться протягом 30 днів. Якщо доступу до застосунку немає, напиши на Suutakip@gmail.com із зареєстрованої адреси; запити обробляються протягом 7 робочих днів."
+          "a": "У застосунку відкрий Settings → Account → Delete Account; дані безповоротно видаляться протягом 30 днів. Якщо доступу до застосунку немає, напиши на info@suuapp.com із зареєстрованої адреси; запити обробляються протягом 7 робочих днів."
         },
         {
           "q": "Чи може Suu списати гроші без мого відома?",

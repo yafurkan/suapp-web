@@ -53,13 +53,17 @@ def build_rules(facts: dict) -> list[dict]:
 
     rules: list[dict] = [
         {
-            # Sahibi 2026-10-08'de destek adresini teyit etti; eski support@suuapp.com
-            # hiç kurulmamış bir posta kutusuydu (SSS, gizlilik, şartlar, hesap silme).
+            # 2026-10-14: sahibi tek şirket adresine geçti (info@suuapp.com, MX =
+            # ImprovMX). Eski adreslerin hiçbiri artık iletişim için yazılmaz:
+            # gmail destek kutusu, kişisel gmail ve hiç kurulmamış privacy@ /
+            # legal@ / kvkk@ / destek@ / support@suuapp.com kutuları.
             "id": "stale-support-email",
             "severity": ERROR,
-            "pattern": re.compile(r"(?i)\bsupport@suuapp\.com\b"),
-            "message": "Eski destek adresi (support@suuapp.com) kullanılıyor",
-            "fix": f"destek e-postası: {support_email}",
+            "pattern": re.compile(
+                r"(?i)\bsuutakip@gmail\.com\b|\bfurkanmertfurkan@gmail\.com\b"
+                r"|\b(?:support|privacy|legal|kvkk|destek)@suuapp\.com\b"),
+            "message": "Eski iletişim adresi kullanılıyor",
+            "fix": f"tek iletişim adresi: {support_email}",
         },
         {
             "id": "beverages-count",

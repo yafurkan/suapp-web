@@ -29,10 +29,10 @@ database_id = "b3c03e08-0ba7-4e3f-afe1-7cfb834d0a77"
 # App Store uygulama kimliği — kullanım (redeem) bağlantısı bununla kurulur.
 APP_STORE_ID = "6757619920"
 # Gönderen adresi. Resend'de suuapp.com alan adı doğrulanmadan çalışmaz.
-MAIL_FROM = "Suu <hediye@suuapp.com>"
-# Yanıt adresi. hediye@suuapp.com yalnızca gönderim içindir (alan adının MX
-# kaydı yok), bu yüzden yanıtlar okunan bir kutuya gitmeli.
-MAIL_REPLY_TO = "suutakip@gmail.com"
+MAIL_FROM = "Suu <info@suuapp.com>"
+# Yanıt adresi. 2026-10-14'ten beri tek şirket adresi info@suuapp.com
+# (MX: ImprovMX yönlendirmesi); hem gönderen hem yanıt bu kutu.
+MAIL_REPLY_TO = "info@suuapp.com"
 # Yerel test için "1" yapın; canlıda "0" kalmalı.
 ALLOW_LOCALHOST = "0"
 
