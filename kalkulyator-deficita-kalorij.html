@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<!-- ÜRETİLMİŞ DOSYA — kaynak: scripts/build-calorie-calculator.py -->
+<html lang="ru" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Калькулятор дефицита калорий — сколько калорий мне нужно? | Suu</title>
+    <meta name="description" content="Рассчитайте суточную норму калорий и безопасный дефицит по возрасту, весу, росту и активности за секунды. Формула Миффлина — Сан Жеора, бесплатно.">
+    <meta name="keywords" content="калькулятор дефицита калорий, как рассчитать дефицит калорий, как создать дефицит калорий, суточная норма калорий, сколько калорий нужно чтобы похудеть, калькулятор основного обмена">
+
+    <link rel="canonical" href="https://suuapp.com/kalkulyator-deficita-kalorij.html">
+    <!-- Hreflang cluster (auto-injected) -->
+    <link rel="alternate" hreflang="tr" href="https://suuapp.com/kalori-acigi-hesaplayici.html">
+    <link rel="alternate" hreflang="en" href="https://suuapp.com/calorie-deficit-calculator.html">
+    <link rel="alternate" hreflang="ar" href="https://suuapp.com/hasibat-al-ajz-al-harari.html">
+    <link rel="alternate" hreflang="ru" href="https://suuapp.com/kalkulyator-deficita-kalorij.html">
+    <link rel="alternate" hreflang="de" href="https://suuapp.com/kaloriendefizit-rechner.html">
+    <link rel="alternate" hreflang="it" href="https://suuapp.com/calcolatore-deficit-calorico.html">
+    <link rel="alternate" hreflang="uk" href="https://suuapp.com/kalkulyator-defitsytu-kaloriy.html">
+    <link rel="alternate" hreflang="x-default" href="https://suuapp.com/calorie-deficit-calculator.html">
+
+
+    <link rel="alternate" type="text/plain" href="/llms-ru.txt" title="Suu — compact reference for AI assistants">
+    <link rel="alternate" type="text/plain" href="/llms-full-ru.txt" title="Suu — full reference corpus for AI assistants">
+
+    <meta property="og:title" content="Калькулятор дефицита калорий — сколько калорий мне нужно?">
+    <meta property="og:description" content="Узнайте суточную норму калорий и безопасную цель для похудения. Бесплатно и на научной основе.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://suuapp.com/kalkulyator-deficita-kalorij.html">
+    <meta property="og:image" content="https://suuapp.com/assets/og-image.png">
+    <meta property="og:site_name" content="Suu">
+    <meta property="og:locale" content="ru_RU">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Калькулятор дефицита калорий — сколько калорий мне нужно?">
+    <meta name="twitter:description" content="Узнайте суточную норму калорий и безопасную цель для похудения. Бесплатно и на научной основе.">
+    <meta name="twitter:image" content="https://suuapp.com/assets/og-image.png">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Калькулятор дефицита калорий Suu",
+  "description": "Бесплатный онлайн-инструмент, который рассчитывает суточную потребность в калориях и безопасные цели дефицита по возрасту, весу, росту, полу и активности.",
+  "url": "https://suuapp.com/kalkulyator-deficita-kalorij.html",
+  "applicationCategory": "HealthApplication",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "author": {
+    "@type": "Organization",
+    "@id": "https://suuapp.com/#organization",
+    "name": "Suu",
+    "url": "https://suuapp.com"
+  },
+  "inLanguage": "ru"
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "ru",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Как рассчитать дефицит калорий?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Сначала найдите суточную норму: умножьте основной обмен (формула Миффлина — Сан Жеора) на коэффициент активности. Для похудения ешьте на 250–750 ккал меньше. Если норма 2200 ккал, цель 1700 ккал — это дефицит 500 ккал."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Сколько калорий есть, чтобы похудеть?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Примерно на 500 ккал меньше суточной нормы — для большинства это около 0,5 кг в неделю. Без наблюдения специалиста не опускайтесь ниже 1200 ккал для женщин и 1500 для мужчин."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Сколько кг в неделю уходит при дефиците калорий?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Грубо, дефицит 500 ккал в день — около 0,45 кг в неделю. Но это оценка для первых недель: по мере похудения расход снижается и потеря замедляется, а часть быстрого снижения в начале — вода."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Основной обмен и суточная норма — одно и то же?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Нет. Основной обмен — энергия в полном покое; суточная норма добавляет к нему повседневное движение и тренировки. Цель для похудения стройте от суточной нормы, а не от основного обмена."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Подходит ли калькулятор всем?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Это общая оценка для здоровых взрослых старше 18 лет. Если вы беременны или кормите грудью, есть хроническое заболевание, расстройство пищевого поведения в анамнезе или вы принимаете лекарства, определите цель с диетологом или врачом."
+      }
+    }
+  ]
+}
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { overflow-x: hidden; }
+        body { font-family: 'Inter', -apple-system, sans-serif; color: #222; background: #fff8f0; line-height: 1.7; }
+        .navbar { background: white; padding: 0 20px; height: 64px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 10px rgba(0,0,0,0.07); position: sticky; top: 0; z-index: 100; }
+        .nav-logo { display: flex; align-items: center; gap: 8px; font-size: 20px; font-weight: 800; color: #FB8C00; text-decoration: none; }
+        .nav-links { display: flex; gap: 20px; }
+        .nav-links a { color: #555; text-decoration: none; font-size: 14px; font-weight: 500; }
+        .nav-links a:hover { color: #FB8C00; }
+        .hero { background: linear-gradient(135deg, #F57C00 0%, #FB8C00 50%, #FFB74D 100%); color: white; padding: 56px 20px 90px; text-align: center; position: relative; overflow: hidden; }
+        .hero::after { content:''; position:absolute; bottom:-1px; left:0; right:0; height:60px; background:#fff8f0; clip-path:ellipse(55% 100% at 50% 100%); }
+        .hero-badge { display:inline-block; background:rgba(255,255,255,0.2); padding:5px 16px; border-radius:20px; font-size:12px; font-weight:700; margin-bottom:18px; }
+        .hero h1 { font-size:clamp(1.8rem,4vw,2.8rem); font-weight:800; line-height:1.2; max-width:680px; margin:0 auto 14px; }
+        .hero p { font-size:1.05rem; opacity:0.95; max-width:540px; margin:0 auto; }
+        .container { max-width:900px; margin:0 auto; padding:0 20px; }
+        .section { padding:44px 0; }
+        .section-title { font-size:clamp(1.3rem,3vw,1.8rem); font-weight:800; color:#1a1a2e; margin-bottom:14px; }
+        .section p, .section li { color:#444; margin-bottom:12px; }
+        .section ul { padding-left:22px; }
+        sup a { color:#F57C00; text-decoration:none; font-weight:700; }
+        .calc-card { background:white; border-radius:24px; box-shadow:0 8px 40px rgba(245,124,0,0.12); padding:32px; margin:-40px 0 30px; position:relative; z-index:10; }
+        @media(max-width:600px){ .calc-card{ padding:22px; } }
+        .calc-steps { display:flex; gap:8px; margin-bottom:26px; }
+        .step-dot { flex:1; height:4px; border-radius:4px; background:#e5e7eb; transition:background 0.3s; }
+        .step-dot.active { background:#FB8C00; }
+        .step-dot.done { background:#FFB74D; }
+        .form-step { display:none; }
+        .form-step.active { display:block; }
+        .step-title { font-size:1.1rem; font-weight:700; color:#1a1a2e; margin-bottom:20px; }
+        .form-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px; margin-bottom:18px; }
+        @media(max-width:600px){ .form-grid{ grid-template-columns:1fr; } }
+        .form-group label { display:block; font-size:12px; font-weight:700; color:#888; text-transform:uppercase; letter-spacing:0.4px; margin-bottom:8px; }
+        .form-group input { width:100%; padding:12px 16px; border:2px solid #e5e7eb; border-radius:12px; font-size:1rem; font-family:inherit; color:#222; background:white; }
+        .form-group input:focus { outline:none; border-color:#FB8C00; }
+        .gender-row { display:flex; gap:12px; }
+        .gender-btn { flex:1; padding:12px; border:2px solid #e5e7eb; border-radius:12px; background:white; cursor:pointer; font-family:inherit; font-weight:600; color:#555; font-size:0.9rem; }
+        .gender-btn.selected { border-color:#FB8C00; background:#fff3e0; color:#E65100; }
+        .activity-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:10px; margin-bottom:18px; }
+        .activity-btn { padding:12px 10px; border:2px solid #e5e7eb; border-radius:12px; background:white; cursor:pointer; font-family:inherit; text-align:center; }
+        .activity-btn .act-icon { font-size:1.4rem; display:block; margin-bottom:6px; }
+        .activity-btn .act-label { display:block; font-size:12px; font-weight:700; color:#555; }
+        .activity-btn .act-desc { display:block; font-size:10px; color:#999; }
+        .activity-btn.selected { border-color:#FB8C00; background:#fff3e0; }
+        .btn-row { display:flex; gap:12px; margin-top:8px; }
+        .btn-back { padding:14px 22px; border:2px solid #e5e7eb; border-radius:12px; background:white; font-family:inherit; font-weight:700; color:#555; cursor:pointer; }
+        .btn-next { flex:1; padding:14px; border:none; border-radius:12px; background:linear-gradient(135deg,#F57C00,#FFB74D); color:white; font-family:inherit; font-weight:700; font-size:1rem; cursor:pointer; }
+        .error-msg { background:#fef2f2; border-left:4px solid #ef4444; padding:10px 14px; border-radius:8px; font-size:0.88rem; color:#dc2626; margin-bottom:14px; display:none; }
+        .error-msg.show { display:block; }
+        .result-top { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:22px; }
+        @media(max-width:600px){ .result-top{ grid-template-columns:1fr; } }
+        .stat { background:#fff3e0; border-radius:14px; padding:16px; text-align:center; }
+        .stat-num { font-size:1.9rem; font-weight:800; color:#E65100; line-height:1.1; }
+        .stat-label { font-size:12px; color:#8a6d55; font-weight:600; }
+        .targets-title { font-weight:800; color:#1a1a2e; margin:6px 0 12px; }
+        .plans { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+        @media(max-width:700px){ .plans{ grid-template-columns:1fr; } }
+        .plan { border:2px solid #f0e2d0; border-radius:14px; padding:14px; }
+        .plan#plan1 { border-color:#FB8C00; background:#fffaf3; }
+        .plan-head { display:flex; justify-content:space-between; gap:8px; font-size:12px; font-weight:700; color:#8a6d55; }
+        .plan-kcal { font-size:1.5rem; font-weight:800; color:#1a1a2e; margin:6px 0 2px; }
+        .plan-kcal small { font-size:0.75rem; color:#888; font-weight:600; }
+        .plan-week { font-size:0.85rem; color:#E65100; font-weight:700; }
+        .plan-note { font-size:0.75rem; color:#999; margin-top:6px; }
+        .result-msg { background:#fff3e0; border-radius:12px; padding:14px 16px; font-size:0.88rem; color:#8a4b00; margin:18px 0; }
+        .low-msg { background:#fef2f2; color:#b91c1c; }
+        .app-cta { background:linear-gradient(135deg,#F57C00,#FFB74D); border-radius:20px; padding:26px; text-align:center; color:white; margin:18px 0; }
+        .app-cta h3 { font-size:1.2rem; font-weight:800; margin-bottom:8px; }
+        .app-cta p { opacity:0.95; margin-bottom:16px; font-size:0.9rem; }
+        .store-btns { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+        .btn-store { display:inline-flex; align-items:center; gap:8px; padding:11px 20px; border-radius:50px; font-weight:700; font-size:0.88rem; text-decoration:none; }
+        .btn-ios { background:white; color:#1a1a2e; }
+        .btn-android { background:rgba(255,255,255,0.18); color:white; border:2px solid rgba(255,255,255,0.6); }
+        .restart-btn { display:inline-flex; align-items:center; gap:8px; padding:12px 22px; border:2px solid #e5e7eb; border-radius:12px; background:white; font-family:inherit; font-weight:600; color:#555; cursor:pointer; }
+        .ref-table { width:100%; border-collapse:collapse; background:white; border-radius:14px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.05); margin-top:6px; }
+        .ref-table th { background:#1a1a2e; color:white; padding:12px 16px; text-align:start; font-size:12px; font-weight:700; text-transform:uppercase; }
+        .ref-table td { padding:11px 16px; font-size:0.9rem; border-bottom:1px solid #f0f0f0; }
+        .faq-list { display:flex; flex-direction:column; gap:10px; }
+        .faq-item { background:white; border-radius:14px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.04); }
+        .faq-q { padding:16px 20px; font-weight:700; color:#1a1a2e; cursor:pointer; display:flex; justify-content:space-between; gap:12px; align-items:center; font-size:0.95rem; }
+        .faq-a { padding:0 20px; max-height:0; overflow:hidden; transition:max-height 0.3s ease, padding 0.3s; font-size:0.9rem; color:#555; }
+        .faq-a.open { max-height:400px; padding:0 20px 16px; }
+        .faq-icon { transition:transform 0.3s; color:#FB8C00; font-size:0.85rem; }
+        .faq-icon.open { transform:rotate(180deg); }
+        .refs { font-size:0.85rem; padding-left:20px; }
+        .refs a { color:#8a4b00; word-break:break-word; }
+        .rel-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px; }
+        .rel-card { background:white; border-radius:14px; padding:18px; box-shadow:0 2px 10px rgba(0,0,0,0.06); text-decoration:none; color:inherit; display:block; }
+        .rel-tag { font-size:11px; font-weight:700; color:#F57C00; text-transform:uppercase; margin-bottom:6px; }
+        .rel-title { font-weight:700; color:#222; font-size:0.9rem; }
+        .disclaimer { font-size:0.82rem; color:#999; margin-top:14px; }
+        footer { background:#1a1a2e; color:rgba(255,255,255,0.6); padding:24px 20px; text-align:center; font-size:13px; }
+        footer a { color:rgba(255,255,255,0.75); text-decoration:none; margin:0 8px; }
+        @media(max-width:600px){ .nav-links { display:none; } }
+    </style>
+    <script src="/assets/js/analytics.js" defer></script>
+    <script src="/assets/js/special-days.js" defer></script>
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="/hosgeldiniz-ru.html" class="nav-logo"><img src="/assets/brand/suu-badge-128.png" alt="Suu" width="128" height="128" class="suu-logo-badge" style="height:1.6em;width:1.6em;border-radius:50%;vertical-align:-0.4em;box-shadow:0 0 0 1px rgba(255,255,255,.12),0 0 14px rgba(94,170,255,.45);"> Suu</a>
+    <div class="nav-links">
+        <a href="/hosgeldiniz-ru.html">Главная</a>
+        <a href="/blog-ru.html">Блог</a>
+        <a href="/faq-ru.html">FAQ</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-badge">🔥 Бесплатный онлайн-инструмент</div>
+    <h1>Калькулятор<br>дефицита калорий</h1>
+    <p>Узнайте суточную норму калорий и безопасную цель для похудения за несколько секунд.</p>
+</section>
+
+<div class="container">
+    <div class="calc-card">
+        <div class="calc-steps">
+            <div class="step-dot active" id="dot1"></div>
+            <div class="step-dot" id="dot2"></div>
+            <div class="step-dot" id="dot3"></div>
+        </div>
+        <div class="error-msg" id="errorMsg" role="alert"></div>
+
+        <div class="form-step active" id="step1">
+            <div class="step-title">Ваши данные</div>
+            <div class="form-grid">
+                <div class="form-group"><label for="age">Возраст</label><input type="number" id="age" inputmode="numeric" placeholder="напр. 30" min="18" max="80"></div>
+                <div class="form-group"><label for="weight">Вес (кг)</label><input type="number" id="weight" inputmode="decimal" placeholder="напр. 75" min="35" max="250"></div>
+                <div class="form-group"><label for="height">Рост (см)</label><input type="number" id="height" inputmode="numeric" placeholder="напр. 170" min="130" max="220"></div>
+            </div>
+            <div class="form-group" style="margin-bottom:18px;">
+                <label>Пол (для формулы)</label>
+                <div class="gender-row">
+                    <button class="gender-btn" id="btnMale" onclick="selectSex('male')">♂ Мужской</button>
+                    <button class="gender-btn" id="btnFemale" onclick="selectSex('female')">♀ Женский</button>
+                </div>
+            </div>
+            <div class="btn-row"><button class="btn-next" onclick="goStep2()">Далее</button></div>
+        </div>
+
+        <div class="form-step" id="step2">
+            <div class="step-title">Уровень активности</div>
+            <div class="activity-grid">
+                <button class="activity-btn" id="act_sedentary" onclick="selectActivity('sedentary')"><span class="act-icon">🪑</span><span class="act-label">Сидячий</span><span class="act-desc">Офис, без тренировок</span></button>
+                <button class="activity-btn" id="act_light" onclick="selectActivity('light')"><span class="act-icon">🚶</span><span class="act-label">Лёгкий</span><span class="act-desc">1–3 дня в неделю</span></button>
+                <button class="activity-btn" id="act_moderate" onclick="selectActivity('moderate')"><span class="act-icon">🏃</span><span class="act-label">Умеренный</span><span class="act-desc">3–5 дней в неделю</span></button>
+                <button class="activity-btn" id="act_active" onclick="selectActivity('active')"><span class="act-icon">🏋️</span><span class="act-label">Активный</span><span class="act-desc">6–7 дней в неделю</span></button>
+                <button class="activity-btn" id="act_extra" onclick="selectActivity('extra')"><span class="act-icon">🔥</span><span class="act-label">Очень активный</span><span class="act-desc">Физический труд + спорт</span></button>
+            </div>
+            <div class="btn-row">
+                <button class="btn-back" onclick="goStep1()">Назад</button>
+                <button class="btn-next" onclick="calculate()"><i class="fas fa-calculator"></i> &nbsp;Рассчитать</button>
+            </div>
+        </div>
+
+        <div class="form-step" id="step3">
+            <div class="result-top">
+                <div class="stat"><div class="stat-num" id="tdeeNum">—</div><div class="stat-label">Суточная норма (чтобы сохранить вес) · ккал/день</div></div>
+                <div class="stat"><div class="stat-num" id="bmrNum">—</div><div class="stat-label">Основной обмен · ккал/день</div></div>
+            </div>
+            <div class="targets-title">Ваша дневная цель для похудения</div>
+            <div class="plans">
+                    <div class="plan" id="plan0"><div class="plan-head"><span class="plan-name">Мягкий</span><span class="plan-def">−250 ккал</span></div><div class="plan-kcal"><span id="t0">—</span> <small>ккал/день</small></div><div class="plan-week" id="w0"></div><div class="plan-note" id="n0"></div></div>
+                    <div class="plan" id="plan1"><div class="plan-head"><span class="plan-name">Умеренный · рекомендуем</span><span class="plan-def">−500 ккал</span></div><div class="plan-kcal"><span id="t1">—</span> <small>ккал/день</small></div><div class="plan-week" id="w1"></div><div class="plan-note" id="n1"></div></div>
+                    <div class="plan" id="plan2"><div class="plan-head"><span class="plan-name">Сильный</span><span class="plan-def">−750 ккал</span></div><div class="plan-kcal"><span id="t2">—</span> <small>ккал/день</small></div><div class="plan-week" id="w2"></div><div class="plan-note" id="n2"></div></div>
+            </div>
+            <div class="result-msg" id="resultMsg">Недельная оценка грубая и относится к первым неделям: по мере похудения расход снижается, и потеря веса замедляется. Ориентируйтесь на среднее за 3–4 недели, а не на одно взвешивание.</div>
+            <div class="app-cta">
+                <h3>Следите за целью в Suu</h3>
+                <p>Внесите цель в Suu, записывайте еду голосом или по фото и смотрите расход GPS-тренировки в тот же день.</p>
+                <div class="store-btns">
+                    <a href="/app?src=calc-deficit" class="btn-store btn-ios" data-cta="calc-deficit"><i class="fab fa-apple"></i> App Store</a>
+                    <a href="/app?src=calc-deficit" class="btn-store btn-android" data-cta="calc-deficit"><i class="fab fa-google-play"></i> Google Play</a>
+                </div>
+            </div>
+            <button class="restart-btn" onclick="restart()"><i class="fas fa-redo"></i> Пересчитать</button>
+        </div>
+    </div>
+
+    <section class="section">
+        <h2 class="section-title">Как мы считаем</h2>
+        <p>Сначала оцениваем основной обмен (энергию в покое) по формуле Миффлина — Сан Жеора: для мужчин 10 × вес + 6,25 × рост − 5 × возраст + 5, для женщин та же сумма − 161.<sup><a href="#ref1">1</a></sup> В систематическом обзоре она оказалась самой надёжной из распространённых формул — у большинства людей в пределах ±10% от измеренного значения, хотя индивидуальная ошибка возможна.<sup><a href="#ref2">2</a></sup></p>
+        <p>Затем умножаем на коэффициент активности и получаем суточную норму (калории, при которых вес стабилен). Для похудения опускаемся на 250–750 ккал ниже.</p>
+        <table class="ref-table">
+            <thead><tr><th>Уровень активности</th><th>Коэффициент</th></tr></thead>
+            <tbody>
+                <tr><td><strong>Сидячий</strong> — Офис, без тренировок</td><td>1,2</td></tr>
+                <tr><td><strong>Лёгкий</strong> — 1–3 дня в неделю</td><td>1,375</td></tr>
+                <tr><td><strong>Умеренный</strong> — 3–5 дней в неделю</td><td>1,55</td></tr>
+                <tr><td><strong>Активный</strong> — 6–7 дней в неделю</td><td>1,725</td></tr>
+                <tr><td><strong>Очень активный</strong> — Физический труд + спорт</td><td>1,9</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="section" style="padding-top:0">
+        <h2 class="section-title">Какой дефицит безопасен?</h2>
+        <ul>
+            <li>По данным CDC, люди, которые теряют около 0,5–1 кг в неделю, чаще удерживают результат; для большинства это примерно 500 ккал дефицита в день.<sup><a href="#ref4">4</a></sup></li>
+            <li>Harvard Health советует без наблюдения специалиста не опускаться ниже 1200 ккал в день для женщин и 1500 для мужчин; калькулятор не ставит цель ниже этого порога.<sup><a href="#ref5">5</a></sup></li>
+            <li>Похудение идёт не по прямой: вес медленно реагирует на изменение энергии, а по мере похудения расход снижается.<sup><a href="#ref3">3</a></sup> Пересчитывайте норму с новым весом каждые несколько недель.</li>
+        </ul>
+    </section>
+
+    <section class="section" style="padding-top:0">
+        <h2 class="section-title">Частые вопросы</h2>
+        <div class="faq-list">
+            <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Как рассчитать дефицит калорий? <i class="fas fa-chevron-down faq-icon"></i></div><div class="faq-a">Сначала найдите суточную норму: умножьте основной обмен (формула Миффлина — Сан Жеора) на коэффициент активности. Для похудения ешьте на 250–750 ккал меньше. Если норма 2200 ккал, цель 1700 ккал — это дефицит 500 ккал.</div></div>
+            <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Сколько калорий есть, чтобы похудеть? <i class="fas fa-chevron-down faq-icon"></i></div><div class="faq-a">Примерно на 500 ккал меньше суточной нормы — для большинства это около 0,5 кг в неделю. Без наблюдения специалиста не опускайтесь ниже 1200 ккал для женщин и 1500 для мужчин.</div></div>
+            <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Сколько кг в неделю уходит при дефиците калорий? <i class="fas fa-chevron-down faq-icon"></i></div><div class="faq-a">Грубо, дефицит 500 ккал в день — около 0,45 кг в неделю. Но это оценка для первых недель: по мере похудения расход снижается и потеря замедляется, а часть быстрого снижения в начале — вода.</div></div>
+            <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Основной обмен и суточная норма — одно и то же? <i class="fas fa-chevron-down faq-icon"></i></div><div class="faq-a">Нет. Основной обмен — энергия в полном покое; суточная норма добавляет к нему повседневное движение и тренировки. Цель для похудения стройте от суточной нормы, а не от основного обмена.</div></div>
+            <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Подходит ли калькулятор всем? <i class="fas fa-chevron-down faq-icon"></i></div><div class="faq-a">Это общая оценка для здоровых взрослых старше 18 лет. Если вы беременны или кормите грудью, есть хроническое заболевание, расстройство пищевого поведения в анамнезе или вы принимаете лекарства, определите цель с диетологом или врачом.</div></div>
+        </div>
+        <p class="disclaimer">Инструмент даёт общую информацию и не является медицинской консультацией. По индивидуальным вопросам обратитесь к специалисту.</p>
+    </section>
+
+    <section class="section" style="padding-top:0">
+        <h2 class="section-title">Источники</h2>
+        <ol class="refs">
+            <li id="ref1"><a href="https://pubmed.ncbi.nlm.nih.gov/2305711/" target="_blank" rel="noopener">Mifflin MD et al. — A new predictive equation for resting energy expenditure in healthy individuals. Am J Clin Nutr, 1990</a></li>
+            <li id="ref2"><a href="https://pubmed.ncbi.nlm.nih.gov/15883556/" target="_blank" rel="noopener">Frankenfield D et al. — Comparison of predictive equations for resting metabolic rate in healthy nonobese and obese adults: a systematic review. J Am Diet Assoc, 2005</a></li>
+            <li id="ref3"><a href="https://pubmed.ncbi.nlm.nih.gov/21872751/" target="_blank" rel="noopener">Hall KD et al. — Quantification of the effect of energy imbalance on bodyweight. Lancet, 2011</a></li>
+            <li id="ref4"><a href="https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html" target="_blank" rel="noopener">CDC — Losing Weight</a></li>
+            <li id="ref5"><a href="https://www.health.harvard.edu/staying-healthy/calorie-counting-made-easy" target="_blank" rel="noopener">Harvard Health Publishing — Calorie counting made easy</a></li>
+            <li id="ref6"><a href="https://www.who.int/ru/news-room/fact-sheets/detail/obesity-and-overweight" target="_blank" rel="noopener">ВОЗ — Ожирение и избыточный вес (информационный бюллетень)</a></li>
+        </ol>
+    </section>
+
+    <section class="section" style="padding-top:0; padding-bottom:48px;">
+        <h2 class="section-title">Связанные инструменты и статьи</h2>
+        <div class="rel-grid">
+            <a class="rel-card" href="/blog/ru/deficit-kalorij.html"><div class="rel-tag">Блог</div><div class="rel-title">Что такое дефицит калорий</div></a>
+            <a class="rel-card" href="/blog/ru/raschet-makrosov.html"><div class="rel-tag">Блог</div><div class="rel-title">Расчёт макросов</div></a>
+            <a class="rel-card" href="/blog/ru/pochemu-ne-hudeyu.html"><div class="rel-tag">Руководство</div><div class="rel-title">Почему я не худею?</div></a>
+            <a class="rel-card" href="/water-calculator-ru.html"><div class="rel-tag">Инструмент</div><div class="rel-title">Калькулятор нормы воды</div></a>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>© 2026 Suu &nbsp;|&nbsp;
+        <a href="/hosgeldiniz-ru.html">Главная</a>
+        <a href="/gizlilik-politikasi.html">Конфиденциальность</a>
+    </p>
+    <p style="margin-top:6px;font-size:11px;opacity:0.6;">Разработчик <a href="https://www.linkedin.com/in/furkanfindikli/" target="_blank" rel="noopener">Furkan Mert Fındıklı</a> — Стамбул, Турция</p>
+</footer>
+
+<script>
+const S = {"err_age": "Введите корректный возраст (18–80)", "err_weight": "Введите корректный вес (35–250 кг)", "err_height": "Введите корректный рост (130–220 см)", "err_sex": "Выберите пол", "err_act": "Выберите уровень активности", "week": "≈ {v} кг/неделю", "floor": "Цель поднята до рекомендуемого минимума без наблюдения специалиста ({f} ккал).", "low": "Ваша расчётная норма ниже рекомендуемого минимума без наблюдения специалиста ({f} ккал). Вместо дефицита составьте план с диетологом или врачом.", "num": "ru-RU"};
+const MULT = {"sedentary": 1.2, "light": 1.375, "moderate": 1.55, "active": 1.725, "extra": 1.9};
+let sex = null, activity = null;
+function fmt(n) { return Math.round(n).toLocaleString(S.num); }
+function fmt1(n) { return (Math.round(n * 100) / 100).toLocaleString(S.num, { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
+function showError(msg) {
+    const el = document.getElementById('errorMsg');
+    el.textContent = msg; el.classList.add('show');
+    setTimeout(() => el.classList.remove('show'), 3500);
+}
+function selectSex(s) {
+    sex = s;
+    document.getElementById('btnMale').classList.toggle('selected', s === 'male');
+    document.getElementById('btnFemale').classList.toggle('selected', s === 'female');
+}
+function selectActivity(a) {
+    activity = a;
+    Object.keys(MULT).forEach(k => document.getElementById('act_' + k).classList.toggle('selected', k === a));
+}
+function val(id) { return parseFloat(String(document.getElementById(id).value).replace(',', '.')); }
+function goStep1() {
+    document.getElementById('step2').classList.remove('active');
+    document.getElementById('step1').classList.add('active');
+    document.getElementById('dot2').classList.remove('active', 'done');
+    document.getElementById('dot1').classList.add('active');
+}
+function goStep2() {
+    const age = val('age'), weight = val('weight'), height = val('height');
+    if (!age || age < 18 || age > 80) { showError(S.err_age); return; }
+    if (!weight || weight < 35 || weight > 250) { showError(S.err_weight); return; }
+    if (!height || height < 130 || height > 220) { showError(S.err_height); return; }
+    if (!sex) { showError(S.err_sex); return; }
+    document.getElementById('step1').classList.remove('active');
+    document.getElementById('step2').classList.add('active');
+    document.getElementById('dot1').classList.remove('active');
+    document.getElementById('dot1').classList.add('done');
+    document.getElementById('dot2').classList.add('active');
+}
+function calculate() {
+    if (!activity) { showError(S.err_act); return; }
+    const age = val('age'), weight = val('weight'), height = val('height');
+    // Mifflin-St Jeor (1990)
+    const bmr = 10 * weight + 6.25 * height - 5 * age + (sex === 'male' ? 5 : -161);
+    const tdee = bmr * MULT[activity];
+    const floor = sex === 'male' ? 1500 : 1200;   // Harvard Health: uzman gözetimi olmadan alt sınır
+    document.getElementById('bmrNum').textContent = fmt(bmr);
+    document.getElementById('tdeeNum').textContent = fmt(tdee);
+    const msg = document.getElementById('resultMsg');
+    const low = tdee <= floor;
+    [250, 500, 750].forEach((d, i) => {
+        let target = tdee - d, note = '';
+        if (target < floor) { target = Math.min(floor, tdee); note = S.floor.replace('{f}', fmt(floor)); }
+        const eff = Math.max(0, tdee - target);
+        document.getElementById('t' + i).textContent = fmt(target);
+        document.getElementById('w' + i).textContent = eff > 0 ? S.week.replace('{v}', fmt1(eff * 7 / 7700)) : '';
+        document.getElementById('n' + i).textContent = note;
+    });
+    if (low) { msg.textContent = S.low.replace('{f}', fmt(floor)); msg.classList.add('low-msg'); }
+    else { msg.classList.remove('low-msg'); }
+    document.getElementById('step2').classList.remove('active');
+    document.getElementById('step3').classList.add('active');
+    document.getElementById('dot2').classList.remove('active');
+    document.getElementById('dot2').classList.add('done');
+    document.getElementById('dot3').classList.add('active', 'done');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+function restart() {
+    sex = null; activity = null;
+    ['age', 'weight', 'height'].forEach(id => document.getElementById(id).value = '');
+    ['btnMale', 'btnFemale'].forEach(id => document.getElementById(id).classList.remove('selected'));
+    Object.keys(MULT).forEach(k => document.getElementById('act_' + k).classList.remove('selected'));
+    document.getElementById('step3').classList.remove('active');
+    document.getElementById('step1').classList.add('active');
+    document.getElementById('dot1').classList.add('active');
+    document.getElementById('dot1').classList.remove('done');
+    ['dot2', 'dot3'].forEach(id => document.getElementById(id).classList.remove('active', 'done'));
+    document.getElementById('resultMsg').classList.remove('low-msg');
+}
+function toggleFaq(el) {
+    el.nextElementSibling.classList.toggle('open');
+    el.querySelector('.faq-icon').classList.toggle('open');
+}
+</script>
+<script src="/lang-switcher.js?v=3" defer></script>
+<script src="/assets/js/suu-badge.js?v=2" defer></script>
+</body>
+</html>

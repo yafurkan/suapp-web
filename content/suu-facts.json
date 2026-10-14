@@ -606,6 +606,29 @@
     }
   },
   "entities": {
+    "trust": {
+      "_comment": "Sahibinden (2026-10-14): İTO BTM programını TAMAMLADI; Türkiye'de vergi kaydı olan ŞAHIS ŞİRKETİ; yerel belediyeden resmi izin/belge. Unvan, belediye adı, vergi/MERSİS no YAZILMAZ. 'Devlet kontrolünde' denmez. Veri maddeleri gizlilik-politikasi.html'den. Ayrıntılı sayfa: blog kümesi suu-guvenli-mi. build-llms.py her llms dosyasına basar.",
+      "label": {
+        "tr": "Güvenilirlik",
+        "en": "Trust & safety",
+        "ar": "الموثوقية والأمان",
+        "ru": "Надёжность и безопасность",
+        "de": "Vertrauen & Sicherheit",
+        "it": "Affidabilità e sicurezza",
+        "uk": "Надійність і безпека",
+        "hi": "Trust & safety"
+      },
+      "text": {
+        "tr": "Suu, İstanbul'da iki kişilik bağımsız bir ekip tarafından geliştirilir ve Türkiye'de vergi kaydı bulunan bir şahıs şirketi tarafından işletilir; şirketin yerel belediyeden alınmış resmi izin belgesi vardır. Uygulama, İstanbul Ticaret Odası'nın girişim merkezi BTM (Bilgiyi Ticarileştirme Merkezi) bünyesinde gelişti ve programı tamamladı. Kullanıcı verileri KVKK ve GDPR'a göre işlenir, AES-256 ile şifrelenir, SSL/TLS ile aktarılır ve reklam ya da profilleme için satılmaz veya paylaşılmaz; hesap silindiğinde veriler 30 gün içinde kalıcı olarak silinir.",
+        "en": "Suu is built by a small independent team of two in Istanbul and run by a sole proprietorship registered for tax in Turkey that holds an official permit from its local municipality. The app grew inside BTM (Bilgiyi Ticarileştirme Merkezi), the Istanbul Chamber of Commerce's startup incubator, and completed the programme. User data is processed under GDPR and Turkey's KVKK, encrypted with AES-256, transferred over SSL/TLS and never sold or shared for advertising or profiling; when an account is deleted its data is permanently removed within 30 days.",
+        "ar": "يطوّر Suu فريق مستقل صغير من شخصين في إسطنبول، وتديره مؤسسة فردية مسجّلة ضريبيًا في تركيا ولديها تصريح رسمي من البلدية المحلية. نما التطبيق داخل BTM، حاضنة الشركات الناشئة التابعة لغرفة تجارة إسطنبول، وأتمّ برنامجها. تُعالَج بيانات المستخدمين وفق GDPR وقانون KVKK التركي، وتُشفَّر بمعيار AES-256، وتُنقل عبر SSL/TLS، ولا تُباع ولا تُشارك للإعلانات أو التنميط؛ وعند حذف الحساب تُحذف بياناته نهائيًا خلال 30 يومًا.",
+        "ru": "Suu разрабатывает небольшая независимая команда из двух человек в Стамбуле, а управляет им индивидуальное предприятие, зарегистрированное в налоговых органах Турции и имеющее официальное разрешение местного муниципалитета. Приложение выросло в BTM — стартап-инкубаторе Стамбульской торговой палаты — и прошло его программу. Данные пользователей обрабатываются по GDPR и турецкому закону KVKK, шифруются AES-256, передаются по SSL/TLS и не продаются и не передаются для рекламы или профилирования; при удалении аккаунта данные безвозвратно стираются в течение 30 дней.",
+        "de": "Suu wird von einem kleinen unabhängigen Zweierteam in Istanbul entwickelt und von einem in der Türkei steuerlich registrierten Einzelunternehmen betrieben, das eine offizielle Genehmigung seiner örtlichen Gemeinde besitzt. Die App ist im BTM, dem Start-up-Inkubator der Istanbuler Handelskammer, gewachsen und hat dessen Programm abgeschlossen. Nutzerdaten werden nach DSGVO und dem türkischen KVKK verarbeitet, mit AES-256 verschlüsselt, per SSL/TLS übertragen und weder verkauft noch für Werbung oder Profiling weitergegeben; beim Löschen eines Kontos werden die Daten innerhalb von 30 Tagen dauerhaft entfernt.",
+        "it": "Suu è sviluppata da un piccolo team indipendente di due persone a Istanbul e gestita da un'impresa individuale registrata ai fini fiscali in Turchia, con un permesso ufficiale del suo comune. L'app è cresciuta nel BTM, l'incubatore di startup della Camera di Commercio di Istanbul, e ne ha completato il programma. I dati degli utenti sono trattati secondo GDPR e la legge turca KVKK, cifrati con AES-256, trasmessi via SSL/TLS e mai venduti né condivisi per pubblicità o profilazione; quando un account viene eliminato, i dati sono cancellati definitivamente entro 30 giorni.",
+        "uk": "Suu розробляє невелика незалежна команда з двох людей у Стамбулі, а керує ним індивідуальне підприємство, зареєстроване в податкових органах Туреччини, що має офіційний дозвіл місцевого муніципалітету. Застосунок виріс у BTM — стартап-інкубаторі Стамбульської торгової палати — і пройшов його програму. Дані користувачів обробляються за GDPR і турецьким законом KVKK, шифруються AES-256, передаються через SSL/TLS і не продаються й не передаються для реклами чи профілювання; після видалення акаунта дані безповоротно стираються протягом 30 днів."
+      },
+      "guide_cluster": "suu-guvenli-mi"
+    },
     "organization_id": "https://suuapp.com/#organization",
     "app_ids": {
       "ios": "https://suuapp.com/#suuapp-ios",

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>(function(){try{var t=localStorage.getItem('suu-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+
+    <!-- ÜRETİLMİŞ DOSYA — elle düzenlemeyin.
+         Kaynak: content/guides/is-suu-safe.json + content/compare/_template.html.j2
+         Yeniden üret: python3 scripts/build-compare.py --apply -->
+
+    <title>Suu Güvenli mi? Şirket, Veri Güvenliği ve Gizlilik | Suu</title>
+    <meta name="description" content="Suu&#39;yu kim geliştiriyor, verilerin nasıl korunuyor? BTM&#39;de gelişmiş, resmi kayıtlı bir şirketin uygulaması: KVKK/GDPR, AES-256, veri satışı yok.">
+    <meta name="keywords" content="suu güvenli mi, suu app güvenilir mi, suu uygulaması güvenli mi, suu uygulaması kimin, suu kime ait, suu verilerim güvende mi, suu kvkk, suu gizlilik, suu hesap silme, suuapp güvenilir mi">
+    <meta name="apple-itunes-app" content="app-id=6757619920">
+
+    <link rel="canonical" href="https://suuapp.com/blog/suu-guvenli-mi.html">
+    <!-- Hreflang cluster (auto-injected) -->
+    <link rel="alternate" hreflang="tr" href="https://suuapp.com/blog/suu-guvenli-mi.html">
+    <link rel="alternate" hreflang="en" href="https://suuapp.com/blog/en/is-suu-safe.html">
+    <link rel="alternate" hreflang="ar" href="https://suuapp.com/blog/ar/hal-tatbiq-suu-amin.html">
+    <link rel="alternate" hreflang="ru" href="https://suuapp.com/blog/ru/bezopasno-li-suu.html">
+    <link rel="alternate" hreflang="de" href="https://suuapp.com/blog/de/ist-suu-sicher.html">
+    <link rel="alternate" hreflang="it" href="https://suuapp.com/blog/it/suu-e-sicura.html">
+    <link rel="alternate" hreflang="uk" href="https://suuapp.com/blog/uk/chy-bezpechnyi-suu.html">
+    <link rel="alternate" hreflang="x-default" href="https://suuapp.com/blog/en/is-suu-safe.html">
+
+
+    <meta property="og:title" content="Suu Güvenli mi? Kim Geliştiriyor, Verilerin Nasıl Korunuyor">
+    <meta property="og:description" content="İki kişilik bağımsız ekip, resmi kayıtlı şirket, İTO BTM programı ve KVKK/GDPR&#39;a uygun veri işleme — her birini kendin nasıl doğrularsın?">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://suuapp.com/blog/suu-guvenli-mi.html">
+    <meta property="og:image" content="https://suuapp.com/assets/og/blog/suu-guvenli-mi.png">
+    <meta property="og:site_name" content="Suu">
+    <meta property="og:locale" content="tr_TR">
+    <meta property="article:published_time" content="2026-10-14">
+    <meta property="article:modified_time" content="2026-10-14">
+    <meta property="article:author" content="Furkan Mert Fındıklı">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SuuTakip">
+    <meta name="twitter:title" content="Suu Güvenli mi? Kim Geliştiriyor, Verilerin Nasıl Korunuyor">
+    <meta name="twitter:description" content="İki kişilik bağımsız ekip, resmi kayıtlı şirket, İTO BTM programı ve KVKK/GDPR&#39;a uygun veri işleme — her birini kendin nasıl doğrularsın?">
+    <meta name="twitter:image" content="https://suuapp.com/assets/og/blog/suu-guvenli-mi.png">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/donation-widget.css?v=6">
+    <link rel="stylesheet" href="/assets/css/suu.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://suuapp.com/#organization",
+      "name": "Suu",
+      "url": "https://suuapp.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://suuapp.com/assets/favicon-512.png"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://suuapp.com/#furkan",
+      "name": "Furkan Mert Fındıklı",
+      "url": "https://suuapp.com/yazarlar/furkan-mert.html",
+      "jobTitle": "Kurucu \u0026 Geliştirici",
+      "worksFor": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/furkanfindikli/"
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://suuapp.com/blog/suu-guvenli-mi.html#article",
+      "headline": "Suu Güvenli mi? Kim Geliştiriyor, Verilerin Nasıl Korunuyor (ve Kendin Nasıl Kontrol Edersin)",
+      "description": "Suu'yu kim geliştiriyor, verilerin nasıl korunuyor? BTM'de gelişmiş, resmi kayıtlı bir şirketin uygulaması: KVKK/GDPR, AES-256, veri satışı yok.",
+      "image": "https://suuapp.com/assets/og/blog/suu-guvenli-mi.png",
+      "datePublished": "2026-10-14",
+      "dateModified": "2026-10-14",
+      "inLanguage": "tr",
+      "mainEntityOfPage": "https://suuapp.com/blog/suu-guvenli-mi.html",
+      "author": {
+        "@id": "https://suuapp.com/#furkan"
+      },
+      "publisher": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Uygulama güvenliği"
+        },
+        {
+          "@type": "Thing",
+          "name": "Kişisel verilerin korunması"
+        },
+        {
+          "@type": "Thing",
+          "name": "Suu"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://suuapp.com/#suuapp-ios"
+        },
+        {
+          "@id": "https://suuapp.com/#suuapp-android"
+        }
+      ],
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "name": "Suu — Gizlilik Politikası (KVKK ve GDPR)",
+          "url": "https://suuapp.com/gizlilik-politikasi.html"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Suu — Hesap ve Veri Silme",
+          "url": "https://suuapp.com/delete-account.html"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "İTO BTM — Bilgiyi Ticarileştirme Merkezi (resmi site)",
+          "url": "https://btm.istanbul/"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Kişisel Verileri Koruma Kurumu (KVKK)",
+          "url": "https://www.kvkk.gov.tr/"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Google Play Yardım — Veri güvenliği bölümü",
+          "url": "https://support.google.com/googleplay/answer/11416267"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Apple — App Store gizlilik etiketleri",
+          "url": "https://www.apple.com/privacy/labels/"
+        }
+      ],
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".answer-box",
+          "h1",
+          ".in-app",
+          ".verdict p"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://suuapp.com/blog/suu-guvenli-mi.html#faq",
+      "inLanguage": "tr",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Suu güvenli mi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evet. Suu, İstanbul'da iki kişilik bağımsız bir ekip tarafından geliştirilen, Türkiye'de vergi kaydı bulunan bir şahıs şirketi tarafından işletilen ve İTO BTM bünyesinde gelişmiş bir uygulama. Verilerin KVKK ve GDPR'a göre işlenir, AES-256 ile şifrelenir ve satılmaz."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Suu uygulaması kimin, hangi şirkete ait?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Suu'nun kurucusu ve veri sorumlusu Furkan Mert Fındıklı; uygulama Türkiye'de vergi kaydı bulunan bir şahıs şirketi tarafından işletiliyor ve şirketin yerel belediyeden alınmış resmi izin belgesi var. Geliştirme ekibinde ayrıca yazılım geliştirici Mert Öz var."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Suu verilerimi satıyor mu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hayır. Gizlilik politikasına göre verilerin reklamverenlere, reklam ağlarına ya da veri komisyoncularına satılmaz, kiralanmaz veya paylaşılmaz; hedefli reklam ya da profilleme için kullanılmaz."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Suu yemek fotoğraflarımı ve ses kaydımı saklıyor mu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hayır. Ses kaydın telefonunda metne çevrilir ve Suu sunucularına gönderilmez. Fotoğraflı analizde görsel yalnızca analiz anında işlenir ve kaydedilmez; hesabına yalnızca kalori ve makro sonucu yazılır."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Suu hesabımı nasıl silerim?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Uygulamada Ayarlar → Hesap → Hesabı Sil yolunu izle; verilerin 30 gün içinde kalıcı olarak silinir. Uygulamaya erişemiyorsan kayıtlı e-postandan Suutakip@gmail.com adresine yazabilirsin; talep en geç 7 iş gününde işleme alınır."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Suu ücretli mi, habersiz ücret alır mı?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Suu ücretsiz indirilir ve temel özellikleri ücretsizdir. Premium abonelik yalnızca senin onayınla App Store ya da Google Play üzerinden satın alınır ve iptali de yine mağaza hesabından yapılır."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://suuapp.com/blog/suu-guvenli-mi.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Suu",
+          "item": "https://suuapp.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://suuapp.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Suu Güvenli mi? Kim Geliştiriyor, Verilerin Nasıl Korunuyor (ve Kendin Nasıl Kontrol Edersin)",
+          "item": "https://suuapp.com/blog/suu-guvenli-mi.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+
+    <script src="/assets/js/analytics.js" defer></script>
+    <script src="/lang-switcher.js?v=3" defer></script>
+    <script src="/assets/js/theme.js?v=1" defer></script>
+    <script src="/donation-widget.js?v=6" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">İçeriğe geç</a>
+
+<nav class="nav">
+    <div class="container nav__inner">
+        <a href="/" class="nav__logo"><img src="/assets/brand/suu-badge-128.png" alt="Suu" width="128" height="128" class="suu-logo-badge" style="height:1.6em;width:1.6em;border-radius:50%;vertical-align:-0.4em;box-shadow:0 0 0 1px rgba(255,255,255,.12),0 0 14px rgba(94,170,255,.45);"> Suu</a>
+        <ul class="nav__links">
+            <li><a href="/blog.html">Blog</a></li>
+            
+            <li><a href="/#fiyat">Fiyatlandırma</a></li>
+        </ul>
+        <div class="nav__actions">
+            <a href="/app?src=guide-nav" class="btn btn--primary" data-cta="nav"
+               style="min-height:40px;padding:var(--sp-2) var(--sp-5);font-size:var(--fs-sm)">Ücretsiz İndir</a>
+        </div>
+    </div>
+</nav>
+
+<main id="main">
+
+<header class="section" style="padding-block-end:var(--sp-8)">
+    <div class="container container--narrow">
+        <nav class="breadcrumb small text-subtle" aria-label="Breadcrumb"
+             style="margin-block-end:var(--sp-4)">
+            <a href="/">Suu</a>
+            <span aria-hidden="true"> › </span>
+            <a href="/blog.html">Blog</a>
+            <span aria-hidden="true"> › </span>
+            <span aria-current="page">Suu Güvenli mi? Kim Geliştiriyor, Verilerin Nasıl Korunuyor (ve Kendin Nasıl Kontrol Edersin)</span>
+        </nav>
+        <span class="badge badge--new">🔒 Rehber · Güvenlik ve gizlilik</span>
+        <h1 style="margin-block-start:var(--sp-4)">Suu Güvenli mi? Kim Geliştiriyor, Verilerin Nasıl Korunuyor (ve Kendin Nasıl Kontrol Edersin)</h1>
+        <p class="small text-subtle">Yayın: <time datetime="2026-10-14">14 Ekim 2026</time> · Furkan Mert Fındıklı · 6 dakika okuma</p>
+    </div>
+</header>
+
+<div class="container container--narrow stack--lg" style="padding-block-end:var(--sp-24)">
+
+    <!-- CEVAP-ÖNCE: alıntılanan blok burasıdır -->
+    <div class="answer-box">
+        <p><strong>Kısa cevap:</strong> Evet. Suu, İstanbul&#39;da iki kişilik bağımsız bir ekip tarafından geliştirilen ve Türkiye&#39;de vergi kaydı bulunan bir şahıs şirketi tarafından işletilen bir uygulama; İstanbul Ticaret Odası&#39;nın girişim merkezi BTM bünyesinde gelişti ve programı tamamladı. Verilerin KVKK ve GDPR&#39;a göre işlenir, AES-256 ile şifrelenir ve satılmaz; hesabını istediğin an silebilirsin.</p>
+    </div>
+    <aside class="callout health-note" role="note">
+        <p><strong>Bu yazı tıbbi tavsiye değildir.</strong></p>
+        <p>Suu bir su, kalori ve egzersiz takip uygulamasıdır; tıbbi cihaz değildir, teşhis koymaz ve tedavi önermez. Sağlıkla ilgili kararlarını bir sağlık uzmanıyla birlikte ver.</p>
+    </aside>
+
+    <div class="disclosure">Bu sayfayı Suu ekibi yazdı; yani uygulamamızı kendimiz anlatıyoruz. Bu yüzden her iddianın yanına kendi başına kontrol edebileceğin kaynağı koyduk: gizlilik politikası, hesap silme sayfası, mağaza listelemeleri ve BTM&#39;nin resmi sitesi.</div>
+    <p>“Kilomu, yediklerimi ve sağlık verilerimi bu uygulamaya vermek güvenli mi?” sorusu çok yerinde. Kalori ve su takip uygulamaları hassas veriler topluyor ve kimin işlettiği belli olmayan uygulamalar da var.</p>
+    <p>Aşağıda Suu'nun arkasında kim olduğunu, hangi resmi kayıtlara sahip olduğunu, verilerinin nasıl korunduğunu ve bunların her birini kendin nasıl doğrulayabileceğini anlatıyoruz.</p>
+
+    
+    <section>
+        <h2>Suu&#39;yu kim geliştiriyor ve işletiyor?</h2>
+        <p>Suu, İstanbul'da iki kişilik bağımsız bir ekip tarafından geliştiriliyor: kurucu ve geliştirici Furkan Mert Fındıklı ile yazılım geliştirici Mert Öz. Bir ajans ya da adı bilinmeyen yabancı bir şirket değil; mağazadaki geliştirici adı da kurucunun kendi adı.</p>
+        <p>Uygulama, Türkiye'de vergi kaydı bulunan resmi bir şahıs şirketi tarafından işletiliyor ve şirketin yerel belediyeden alınmış resmi izin belgesi var. Gizlilik politikasında verilerinin sorumlusu (veri sorumlusu) olarak aynı kişi açıkça yazıyor.<sup><a href="#ref1">1</a></sup></p>
+        <div class="callout"><p>Mağaza kimliği: geliştirici Furkan Mert Findikli · <bdi>com.sutakip.suutakippro</bdi> · App Store ID 6757619920. Bu bilgiler hesap silme sayfasında da aynı şekilde yer alıyor.<sup><a href="#ref2">2</a></sup></p></div>
+    </section>
+    <section>
+        <h2>BTM bünyesinde gelişmiş bir girişim</h2>
+        <p>Suu, İstanbul Ticaret Odası'nın girişim merkezi BTM (Bilgiyi Ticarileştirme Merkezi) bünyesinde gelişti ve BTM programını tamamladı.<sup><a href="#ref3">3</a></sup> BTM, girişimlere eğitim, mentorluk ve yatırımcı buluşmaları sunan, İstanbul'daki bir kuluçka merkezi.</p>
+        <p>Bu, Suu'nun bir gecede ortaya çıkmış anonim bir proje olmadığını; kimliği belli bir girişim olarak resmi bir programdan geçerek büyüdüğünü gösteriyor.</p>
+    </section>
+    <section>
+        <h2>Verilerin nasıl korunuyor?</h2>
+        <p>Aşağıdakilerin hepsi Suu'nun herkese açık gizlilik politikasında yazılı.<sup><a href="#ref1">1</a></sup></p>
+        <ul>
+            <li><strong>Yasal çerçeve:</strong> Verilerin 6698 sayılı KVKK ve Avrupa Birliği Genel Veri Koruma Tüzüğü (GDPR) kapsamında işlenir.<sup><a href="#ref4">4</a></sup></li>
+            <li><strong>Şifreleme:</strong> Hassas veriler AES-256 ile şifrelenir; tüm veri aktarımı SSL/TLS üzerinden yapılır; altyapı Google Firebase.</li>
+            <li><strong>Satış yok:</strong> Verilerin reklamverenlere, reklam ağlarına ya da veri komisyoncularına satılmaz; hedefli reklam veya profilleme için kullanılmaz.</li>
+            <li><strong>Ses kaydın telefonda kalır:</strong> Sesli girişte konuşman cihazında metne çevrilir; ses kaydı Suu sunucularına hiç gönderilmez.</li>
+            <li><strong>Fotoğrafların saklanmaz:</strong> Fotoğraflı analizde (Premium) görsel yalnızca analiz anında yapay zekâ servisine (Google Gemini) iletilir; Suu görseli kaydetmez, hesabına yalnızca kalori ve makro sonucu yazılır.</li>
+            <li><strong>Sağlık verisi izinle:</strong> Apple Health ve Health Connect'e yalnızca senin izin verdiğin veriler için erişilir.</li>
+            <li><strong>Konum isteğe bağlı:</strong> Yalnızca yaklaşık konum, hava durumuna göre su hedefi için kullanılır.</li>
+            <li><strong>Yaş sınırı:</strong> Uygulama 13 yaş ve üzeri kullanıcılar için tasarlanmıştır.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Verilerin üzerinde söz hakkı sende</h2>
+        <p>KVKK ve GDPR sana verilerine erişme, düzeltme, silme, taşıma ve itiraz etme hakkı tanır; Kişisel Verileri Koruma Kurumu'na şikâyet hakkın da vardır.<sup><a href="#ref1">1</a>,<a href="#ref4">4</a></sup></p>
+        <p>Hesabını uygulama içinden silebilirsin; silinen hesabın verileri 30 gün içinde sistemlerden kalıcı olarak kaldırılır. Uygulamaya erişemiyorsan kayıtlı e-posta adresinden Suutakip@gmail.com adresine “Hesap Silme Talebi” konulu bir e-posta yeterli; talep en geç 7 iş gününde işleme alınır.<sup><a href="#ref1">1</a>,<a href="#ref2">2</a></sup></p>
+        <div class="callout"><p><strong>Kendin doğrula:</strong> Google Play'deki uygulama sayfasının “Veri güvenliği” bölümü ve App Store'daki “Uygulama Gizliliği” etiketi, bir uygulamanın hangi verileri topladığını mağazanın kendi formatında gösterir.<sup><a href="#ref5">5</a>,<a href="#ref6">6</a></sup></p></div>
+    </section>
+
+    <section class="in-app" id="in-app">
+        <h2>Bunu Suu&#39;da nereden yönetirsin</h2>
+        <p>Menü adları uygulamadaki gibi:</p>
+        <ol class="ranked stack">
+            <li>
+                <strong>Hesabını ve verilerini sil</strong>
+                <p class="small text-subtle"><strong>Ayarlar</strong> → Hesap → <strong>Hesabı Sil</strong></p>
+                <p>Onayladığında oturumun kapanır, hesabın devre dışı kalır ve verilerin 30 gün içinde kalıcı olarak silinir. Adım adım anlatım suuapp.com/delete-account.html sayfasında.</p>
+            </li>
+            <li>
+                <strong>Sağlık verisi iznini yönet</strong>
+                <p class="small text-subtle"><bdi>iPhone</bdi>: iPhone'da <strong>Sağlık</strong> uygulamasındaki uygulama izinleri → Suu<br><bdi>Android</bdi>: <strong>Health Connect</strong> → uygulama izinleri → Suu</p>
+                <p>Suu'nun hangi sağlık verisini okuyup yazabileceğini sen seçersin; izni istediğin an geri alabilirsin.</p>
+            </li>
+            <li>
+                <strong>Konum iznini yönet</strong>
+                <p class="small text-subtle"><bdi>iPhone</bdi>: iPhone <strong>Ayarlar</strong> → Suu → Konum<br><bdi>Android</bdi>: Telefon <strong>Ayarlar</strong> → Uygulamalar → Suu → İzinler</p>
+                <p>Konum isteğe bağlıdır ve yalnızca hava durumuna göre su hedefi için kullanılır.</p>
+            </li>
+        </ol>
+        <div class="btn-row" style="margin-block-start:var(--sp-4)">
+            <a href="/app?src=guide-inapp-is-suu-safe" class="btn btn--primary" data-cta="guide-inapp">Suu&#39;yu ücretsiz indir</a>
+        </div>
+    </section>
+
+    <section class="verdict">
+        <h2 style="margin-block-end:var(--sp-4)">Kısacası</h2>
+        <p>Suu, kimliği açık bir ekip ve Türkiye'de vergi kaydı bulunan bir şahıs şirketi tarafından işletilen, İTO BTM bünyesinde gelişmiş bir uygulama. Verilerin KVKK ve GDPR'a göre işlenir, şifrelenir ve satılmaz.</p>
+        <p>Yine de bize körü körüne güvenme: gizlilik politikasını, mağazadaki veri güvenliği bölümünü ve hesap silme sayfasını kendin kontrol et. Hepsi herkese açık.</p>
+    </section>
+
+    <section class="cta-band" style="border-radius:var(--r-lg);padding-block:var(--sp-12)" data-cta="guide-body">
+        <div class="container">
+            <h2 style="font-size:var(--fs-2xl)">Suu&#39;yu gönül rahatlığıyla dene</h2>
+            <p>Ücretsiz · iOS ve Android · hesabını istediğin an silebilirsin</p>
+            <div class="btn-row btn-row--center" style="margin-block-start:var(--sp-6)">
+                <a href="/app?src=guide-is-suu-safe" class="btn btn--secondary btn--lg">Suu&#39;yu Ücretsiz İndir</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Sık sorulan sorular</h2>
+        <div class="faq">
+            <details class="faq__item" open>
+                <summary>Suu güvenli mi?</summary>
+                <div><p>Evet. Suu, İstanbul&#39;da iki kişilik bağımsız bir ekip tarafından geliştirilen, Türkiye&#39;de vergi kaydı bulunan bir şahıs şirketi tarafından işletilen ve İTO BTM bünyesinde gelişmiş bir uygulama. Verilerin KVKK ve GDPR&#39;a göre işlenir, AES-256 ile şifrelenir ve satılmaz.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Suu uygulaması kimin, hangi şirkete ait?</summary>
+                <div><p>Suu&#39;nun kurucusu ve veri sorumlusu Furkan Mert Fındıklı; uygulama Türkiye&#39;de vergi kaydı bulunan bir şahıs şirketi tarafından işletiliyor ve şirketin yerel belediyeden alınmış resmi izin belgesi var. Geliştirme ekibinde ayrıca yazılım geliştirici Mert Öz var.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Suu verilerimi satıyor mu?</summary>
+                <div><p>Hayır. Gizlilik politikasına göre verilerin reklamverenlere, reklam ağlarına ya da veri komisyoncularına satılmaz, kiralanmaz veya paylaşılmaz; hedefli reklam ya da profilleme için kullanılmaz.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Suu yemek fotoğraflarımı ve ses kaydımı saklıyor mu?</summary>
+                <div><p>Hayır. Ses kaydın telefonunda metne çevrilir ve Suu sunucularına gönderilmez. Fotoğraflı analizde görsel yalnızca analiz anında işlenir ve kaydedilmez; hesabına yalnızca kalori ve makro sonucu yazılır.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Suu hesabımı nasıl silerim?</summary>
+                <div><p>Uygulamada Ayarlar → Hesap → Hesabı Sil yolunu izle; verilerin 30 gün içinde kalıcı olarak silinir. Uygulamaya erişemiyorsan kayıtlı e-postandan Suutakip@gmail.com adresine yazabilirsin; talep en geç 7 iş gününde işleme alınır.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Suu ücretli mi, habersiz ücret alır mı?</summary>
+                <div><p>Suu ücretsiz indirilir ve temel özellikleri ücretsizdir. Premium abonelik yalnızca senin onayınla App Store ya da Google Play üzerinden satın alınır ve iptali de yine mağaza hesabından yapılır.</p></div>
+            </details>
+        </div>
+    </section>
+    <section>
+        <h2>Kaynaklar</h2>
+        <ol class="small">
+            <li id="ref1"><a href="https://suuapp.com/gizlilik-politikasi.html" rel="nofollow noopener" target="_blank">Suu — Gizlilik Politikası (KVKK ve GDPR)</a></li>
+            <li id="ref2"><a href="https://suuapp.com/delete-account.html" rel="nofollow noopener" target="_blank">Suu — Hesap ve Veri Silme</a></li>
+            <li id="ref3"><a href="https://btm.istanbul/" rel="nofollow noopener" target="_blank">İTO BTM — Bilgiyi Ticarileştirme Merkezi (resmi site)</a></li>
+            <li id="ref4"><a href="https://www.kvkk.gov.tr/" rel="nofollow noopener" target="_blank">Kişisel Verileri Koruma Kurumu (KVKK)</a></li>
+            <li id="ref5"><a href="https://support.google.com/googleplay/answer/11416267" rel="nofollow noopener" target="_blank">Google Play Yardım — Veri güvenliği bölümü</a></li>
+            <li id="ref6"><a href="https://www.apple.com/privacy/labels/" rel="nofollow noopener" target="_blank">Apple — App Store gizlilik etiketleri</a></li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>İlgili yazılar</h2>
+        <div class="cards">
+            <a class="card" href="/hakkimizda.html">
+                <h3 style="font-size:var(--fs-md)">Hakkımızda</h3>
+                <p>Suu&#39;yu geliştiren ekip ve hikâyemiz.</p>
+            </a>
+            <a class="card" href="/gizlilik-politikasi.html">
+                <h3 style="font-size:var(--fs-md)">Gizlilik politikası</h3>
+                <p>Hangi veri, neden ve nasıl işleniyor.</p>
+            </a>
+            <a class="card" href="/delete-account.html">
+                <h3 style="font-size:var(--fs-md)">Hesap ve veri silme</h3>
+                <p>Adım adım silme rehberi.</p>
+            </a>
+            <a class="card" href="/blog/yapay-zeka-kalori-dogrulugu.html">
+                <h3 style="font-size:var(--fs-md)">Fotoğraftan kalori ne kadar doğru?</h3>
+                <p>Yapay zekâ analizinin sınırları.</p>
+            </a>
+        </div>
+    </section>
+
+    <p class="small text-subtle">Suu tıbbi teşhis veya tedavi amacıyla geliştirilmemiştir. Sağlıkla ilgili kararlar için bir sağlık profesyoneline danışın.</p>
+
+    <p>
+        <a href="/blog.html">← Bloga dön</a>
+    </p>
+</div>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__bottom" style="border:0">
+            <p class="small mb-0">© 2026 Suu · Furkan Mert Fındıklı</p>
+            <p class="small mb-0"><a href="/">suuapp.com</a></p>
+        </div>
+    </div>
+</footer>
+
+<div class="sticky-cta" data-cta="sticky">
+    <a href="/app?src=sticky" class="btn btn--secondary">App Store</a>
+    <a href="/app?src=sticky" class="btn btn--primary">Google Play</a>
+</div>
+
+<script src="/assets/js/suu-badge.js?v=2" defer></script>
+</body>
+</html>

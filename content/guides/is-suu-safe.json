@@ -1,0 +1,1325 @@
+{
+  "_note": "Güven/kimlik rehberi — 'Suu güvenli mi / Suu kimin / verilerim güvende mi'. Kimlik iddiaları SAHİBİNDEN (2026-10-14): İTO BTM bünyesinde gelişti ve programı TAMAMLADI; Türkiye'de vergi kaydı olan ŞAHIS ŞİRKETİ; yerel belediyeden resmi izin/belge — belediye adı, unvan ve vergi/MERSİS no YAZILMAZ (sahibinin tercihi). 'Devlet kontrolünde' ifadesi kullanılmaz. Veri iddiaları gizlilik-politikasi.html ve delete-account.html'den birebir (AES-256, SSL/TLS, Firebase, satış yok, ses cihazda, fotoğraf Gemini'de anlık ve saklanmaz, 30 gün silme, 13+). İletişim için yalnızca Suutakip@gmail.com (suuapp.com posta kutuları MX'siz).",
+  "kind": "guide",
+  "cluster": "suu-guvenli-mi",
+  "published": "2026-10-14",
+  "modified": "2026-10-14",
+  "pages": {
+    "tr": {
+      "slug": "suu-guvenli-mi",
+      "read_minutes": 6,
+      "badge": "🔒 Rehber · Güvenlik ve gizlilik",
+      "h1": "Suu Güvenli mi? Kim Geliştiriyor, Verilerin Nasıl Korunuyor (ve Kendin Nasıl Kontrol Edersin)",
+      "about": [
+        {
+          "name": "Uygulama güvenliği"
+        },
+        {
+          "name": "Kişisel verilerin korunması"
+        },
+        {
+          "name": "Suu"
+        }
+      ],
+      "meta": {
+        "title": "Suu Güvenli mi? Şirket, Veri Güvenliği ve Gizlilik | Suu",
+        "description": "Suu'yu kim geliştiriyor, verilerin nasıl korunuyor? BTM'de gelişmiş, resmi kayıtlı bir şirketin uygulaması: KVKK/GDPR, AES-256, veri satışı yok.",
+        "keywords": "suu güvenli mi, suu app güvenilir mi, suu uygulaması güvenli mi, suu uygulaması kimin, suu kime ait, suu verilerim güvende mi, suu kvkk, suu gizlilik, suu hesap silme, suuapp güvenilir mi",
+        "og_title": "Suu Güvenli mi? Kim Geliştiriyor, Verilerin Nasıl Korunuyor",
+        "og_description": "İki kişilik bağımsız ekip, resmi kayıtlı şirket, İTO BTM programı ve KVKK/GDPR'a uygun veri işleme — her birini kendin nasıl doğrularsın?"
+      },
+      "answer": "Evet. Suu, İstanbul'da iki kişilik bağımsız bir ekip tarafından geliştirilen ve Türkiye'de vergi kaydı bulunan bir şahıs şirketi tarafından işletilen bir uygulama; İstanbul Ticaret Odası'nın girişim merkezi BTM bünyesinde gelişti ve programı tamamladı. Verilerin KVKK ve GDPR'a göre işlenir, AES-256 ile şifrelenir ve satılmaz; hesabını istediğin an silebilirsin.",
+      "health_note": {
+        "head": "Bu yazı tıbbi tavsiye değildir.",
+        "body": [
+          "Suu bir su, kalori ve egzersiz takip uygulamasıdır; tıbbi cihaz değildir, teşhis koymaz ve tedavi önermez. Sağlıkla ilgili kararlarını bir sağlık uzmanıyla birlikte ver."
+        ]
+      },
+      "disclosure": "Bu sayfayı Suu ekibi yazdı; yani uygulamamızı kendimiz anlatıyoruz. Bu yüzden her iddianın yanına kendi başına kontrol edebileceğin kaynağı koyduk: gizlilik politikası, hesap silme sayfası, mağaza listelemeleri ve BTM'nin resmi sitesi.",
+      "intro": [
+        "“Kilomu, yediklerimi ve sağlık verilerimi bu uygulamaya vermek güvenli mi?” sorusu çok yerinde. Kalori ve su takip uygulamaları hassas veriler topluyor ve kimin işlettiği belli olmayan uygulamalar da var.",
+        "Aşağıda Suu'nun arkasında kim olduğunu, hangi resmi kayıtlara sahip olduğunu, verilerinin nasıl korunduğunu ve bunların her birini kendin nasıl doğrulayabileceğini anlatıyoruz."
+      ],
+      "analysis": [
+        {
+          "head": "Suu'yu kim geliştiriyor ve işletiyor?",
+          "body": [
+            "Suu, İstanbul'da iki kişilik bağımsız bir ekip tarafından geliştiriliyor: kurucu ve geliştirici Furkan Mert Fındıklı ile yazılım geliştirici Mert Öz. Bir ajans ya da adı bilinmeyen yabancı bir şirket değil; mağazadaki geliştirici adı da kurucunun kendi adı.",
+            "Uygulama, Türkiye'de vergi kaydı bulunan resmi bir şahıs şirketi tarafından işletiliyor ve şirketin yerel belediyeden alınmış resmi izin belgesi var. Gizlilik politikasında verilerinin sorumlusu (veri sorumlusu) olarak aynı kişi açıkça yazıyor.<sup><a href=\"#ref1\">1</a></sup>"
+          ],
+          "callout": "Mağaza kimliği: geliştirici Furkan Mert Findikli · <bdi>com.sutakip.suutakippro</bdi> · App Store ID 6757619920. Bu bilgiler hesap silme sayfasında da aynı şekilde yer alıyor.<sup><a href=\"#ref2\">2</a></sup>"
+        },
+        {
+          "head": "BTM bünyesinde gelişmiş bir girişim",
+          "body": [
+            "Suu, İstanbul Ticaret Odası'nın girişim merkezi BTM (Bilgiyi Ticarileştirme Merkezi) bünyesinde gelişti ve BTM programını tamamladı.<sup><a href=\"#ref3\">3</a></sup> BTM, girişimlere eğitim, mentorluk ve yatırımcı buluşmaları sunan, İstanbul'daki bir kuluçka merkezi.",
+            "Bu, Suu'nun bir gecede ortaya çıkmış anonim bir proje olmadığını; kimliği belli bir girişim olarak resmi bir programdan geçerek büyüdüğünü gösteriyor."
+          ]
+        },
+        {
+          "head": "Verilerin nasıl korunuyor?",
+          "body": [
+            "Aşağıdakilerin hepsi Suu'nun herkese açık gizlilik politikasında yazılı.<sup><a href=\"#ref1\">1</a></sup>"
+          ],
+          "list": [
+            "<strong>Yasal çerçeve:</strong> Verilerin 6698 sayılı KVKK ve Avrupa Birliği Genel Veri Koruma Tüzüğü (GDPR) kapsamında işlenir.<sup><a href=\"#ref4\">4</a></sup>",
+            "<strong>Şifreleme:</strong> Hassas veriler AES-256 ile şifrelenir; tüm veri aktarımı SSL/TLS üzerinden yapılır; altyapı Google Firebase.",
+            "<strong>Satış yok:</strong> Verilerin reklamverenlere, reklam ağlarına ya da veri komisyoncularına satılmaz; hedefli reklam veya profilleme için kullanılmaz.",
+            "<strong>Ses kaydın telefonda kalır:</strong> Sesli girişte konuşman cihazında metne çevrilir; ses kaydı Suu sunucularına hiç gönderilmez.",
+            "<strong>Fotoğrafların saklanmaz:</strong> Fotoğraflı analizde (Premium) görsel yalnızca analiz anında yapay zekâ servisine (Google Gemini) iletilir; Suu görseli kaydetmez, hesabına yalnızca kalori ve makro sonucu yazılır.",
+            "<strong>Sağlık verisi izinle:</strong> Apple Health ve Health Connect'e yalnızca senin izin verdiğin veriler için erişilir.",
+            "<strong>Konum isteğe bağlı:</strong> Yalnızca yaklaşık konum, hava durumuna göre su hedefi için kullanılır.",
+            "<strong>Yaş sınırı:</strong> Uygulama 13 yaş ve üzeri kullanıcılar için tasarlanmıştır."
+          ]
+        },
+        {
+          "head": "Verilerin üzerinde söz hakkı sende",
+          "body": [
+            "KVKK ve GDPR sana verilerine erişme, düzeltme, silme, taşıma ve itiraz etme hakkı tanır; Kişisel Verileri Koruma Kurumu'na şikâyet hakkın da vardır.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref4\">4</a></sup>",
+            "Hesabını uygulama içinden silebilirsin; silinen hesabın verileri 30 gün içinde sistemlerden kalıcı olarak kaldırılır. Uygulamaya erişemiyorsan kayıtlı e-posta adresinden Suutakip@gmail.com adresine “Hesap Silme Talebi” konulu bir e-posta yeterli; talep en geç 7 iş gününde işleme alınır.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref2\">2</a></sup>"
+          ],
+          "callout": "<strong>Kendin doğrula:</strong> Google Play'deki uygulama sayfasının “Veri güvenliği” bölümü ve App Store'daki “Uygulama Gizliliği” etiketi, bir uygulamanın hangi verileri topladığını mağazanın kendi formatında gösterir.<sup><a href=\"#ref5\">5</a>,<a href=\"#ref6\">6</a></sup>"
+        }
+      ],
+      "in_app": {
+        "head": "Bunu Suu'da nereden yönetirsin",
+        "lead": "Menü adları uygulamadaki gibi:",
+        "steps": [
+          {
+            "feature": "Hesabını ve verilerini sil",
+            "where": "<strong>Ayarlar</strong> → Hesap → <strong>Hesabı Sil</strong>",
+            "solves": "Onayladığında oturumun kapanır, hesabın devre dışı kalır ve verilerin 30 gün içinde kalıcı olarak silinir. Adım adım anlatım suuapp.com/delete-account.html sayfasında."
+          },
+          {
+            "feature": "Sağlık verisi iznini yönet",
+            "where_ios": "iPhone'da <strong>Sağlık</strong> uygulamasındaki uygulama izinleri → Suu",
+            "where_android": "<strong>Health Connect</strong> → uygulama izinleri → Suu",
+            "solves": "Suu'nun hangi sağlık verisini okuyup yazabileceğini sen seçersin; izni istediğin an geri alabilirsin."
+          },
+          {
+            "feature": "Konum iznini yönet",
+            "where_ios": "iPhone <strong>Ayarlar</strong> → Suu → Konum",
+            "where_android": "Telefon <strong>Ayarlar</strong> → Uygulamalar → Suu → İzinler",
+            "solves": "Konum isteğe bağlıdır ve yalnızca hava durumuna göre su hedefi için kullanılır."
+          }
+        ],
+        "note": "",
+        "button": "Suu'yu ücretsiz indir"
+      },
+      "verdict": {
+        "head": "Kısacası",
+        "body": [
+          "Suu, kimliği açık bir ekip ve Türkiye'de vergi kaydı bulunan bir şahıs şirketi tarafından işletilen, İTO BTM bünyesinde gelişmiş bir uygulama. Verilerin KVKK ve GDPR'a göre işlenir, şifrelenir ve satılmaz.",
+          "Yine de bize körü körüne güvenme: gizlilik politikasını, mağazadaki veri güvenliği bölümünü ve hesap silme sayfasını kendin kontrol et. Hepsi herkese açık."
+        ]
+      },
+      "cta": {
+        "head": "Suu'yu gönül rahatlığıyla dene",
+        "sub": "Ücretsiz · iOS ve Android · hesabını istediğin an silebilirsin",
+        "button": "Suu'yu Ücretsiz İndir"
+      },
+      "faq": [
+        {
+          "q": "Suu güvenli mi?",
+          "a": "Evet. Suu, İstanbul'da iki kişilik bağımsız bir ekip tarafından geliştirilen, Türkiye'de vergi kaydı bulunan bir şahıs şirketi tarafından işletilen ve İTO BTM bünyesinde gelişmiş bir uygulama. Verilerin KVKK ve GDPR'a göre işlenir, AES-256 ile şifrelenir ve satılmaz."
+        },
+        {
+          "q": "Suu uygulaması kimin, hangi şirkete ait?",
+          "a": "Suu'nun kurucusu ve veri sorumlusu Furkan Mert Fındıklı; uygulama Türkiye'de vergi kaydı bulunan bir şahıs şirketi tarafından işletiliyor ve şirketin yerel belediyeden alınmış resmi izin belgesi var. Geliştirme ekibinde ayrıca yazılım geliştirici Mert Öz var."
+        },
+        {
+          "q": "Suu verilerimi satıyor mu?",
+          "a": "Hayır. Gizlilik politikasına göre verilerin reklamverenlere, reklam ağlarına ya da veri komisyoncularına satılmaz, kiralanmaz veya paylaşılmaz; hedefli reklam ya da profilleme için kullanılmaz."
+        },
+        {
+          "q": "Suu yemek fotoğraflarımı ve ses kaydımı saklıyor mu?",
+          "a": "Hayır. Ses kaydın telefonunda metne çevrilir ve Suu sunucularına gönderilmez. Fotoğraflı analizde görsel yalnızca analiz anında işlenir ve kaydedilmez; hesabına yalnızca kalori ve makro sonucu yazılır."
+        },
+        {
+          "q": "Suu hesabımı nasıl silerim?",
+          "a": "Uygulamada Ayarlar → Hesap → Hesabı Sil yolunu izle; verilerin 30 gün içinde kalıcı olarak silinir. Uygulamaya erişemiyorsan kayıtlı e-postandan Suutakip@gmail.com adresine yazabilirsin; talep en geç 7 iş gününde işleme alınır."
+        },
+        {
+          "q": "Suu ücretli mi, habersiz ücret alır mı?",
+          "a": "Suu ücretsiz indirilir ve temel özellikleri ücretsizdir. Premium abonelik yalnızca senin onayınla App Store ya da Google Play üzerinden satın alınır ve iptali de yine mağaza hesabından yapılır."
+        }
+      ],
+      "references": [
+        {
+          "label": "Suu — Gizlilik Politikası (KVKK ve GDPR)",
+          "href": "https://suuapp.com/gizlilik-politikasi.html"
+        },
+        {
+          "label": "Suu — Hesap ve Veri Silme",
+          "href": "https://suuapp.com/delete-account.html"
+        },
+        {
+          "label": "İTO BTM — Bilgiyi Ticarileştirme Merkezi (resmi site)",
+          "href": "https://btm.istanbul/"
+        },
+        {
+          "label": "Kişisel Verileri Koruma Kurumu (KVKK)",
+          "href": "https://www.kvkk.gov.tr/"
+        },
+        {
+          "label": "Google Play Yardım — Veri güvenliği bölümü",
+          "href": "https://support.google.com/googleplay/answer/11416267"
+        },
+        {
+          "label": "Apple — App Store gizlilik etiketleri",
+          "href": "https://www.apple.com/privacy/labels/"
+        }
+      ],
+      "related": [
+        {
+          "href": "/hakkimizda.html",
+          "title": "Hakkımızda",
+          "desc": "Suu'yu geliştiren ekip ve hikâyemiz."
+        },
+        {
+          "href": "/gizlilik-politikasi.html",
+          "title": "Gizlilik politikası",
+          "desc": "Hangi veri, neden ve nasıl işleniyor."
+        },
+        {
+          "href": "/delete-account.html",
+          "title": "Hesap ve veri silme",
+          "desc": "Adım adım silme rehberi."
+        },
+        {
+          "href": "/blog/yapay-zeka-kalori-dogrulugu.html",
+          "title": "Fotoğraftan kalori ne kadar doğru?",
+          "desc": "Yapay zekâ analizinin sınırları."
+        }
+      ]
+    },
+    "en": {
+      "slug": "is-suu-safe",
+      "read_minutes": 6,
+      "badge": "🔒 Guide · Security and privacy",
+      "h1": "Is Suu Safe? Who Is Behind It, How Your Data Is Protected (and How to Check for Yourself)",
+      "about": [
+        {
+          "name": "App security"
+        },
+        {
+          "name": "Personal data protection"
+        },
+        {
+          "name": "Suu"
+        }
+      ],
+      "meta": {
+        "title": "Is Suu Safe? Company, Data Security and Privacy | Suu",
+        "description": "Who builds Suu and how is your data protected? An app from a registered company that grew inside Istanbul's BTM incubator: GDPR/KVKK, AES-256, no data sales.",
+        "keywords": "is suu safe, is suu app legit, is suuapp safe, who makes suu app, suu app company, suu app privacy, suu data security, suu gdpr, suu delete account, is suu trustworthy",
+        "og_title": "Is Suu Safe? Who Is Behind It and How Your Data Is Protected",
+        "og_description": "A small independent team, a registered company, the Istanbul Chamber of Commerce's BTM programme and GDPR/KVKK-compliant data handling — and how to verify each one."
+      },
+      "answer": "Yes. Suu is built by a small independent team of two in Istanbul and run by a sole proprietorship registered for tax in Turkey; it grew inside BTM, the Istanbul Chamber of Commerce's startup incubator, and completed the programme. Your data is processed under GDPR and Turkey's KVKK, encrypted with AES-256 and never sold, and you can delete your account at any time.",
+      "health_note": {
+        "head": "This article is not medical advice.",
+        "body": [
+          "Suu is a water, calorie and exercise tracking app; it is not a medical device and does not diagnose or treat anything. Make health decisions together with a healthcare professional."
+        ]
+      },
+      "disclosure": "This page was written by the Suu team, so we are describing our own app. That's why every claim comes with a source you can check yourself: the privacy policy, the account deletion page, the store listings and BTM's official website.",
+      "intro": [
+        "“Is it safe to give this app my weight, my meals and my health data?” is exactly the right question. Calorie and water trackers collect sensitive data, and some apps don't make it clear who is behind them.",
+        "Below we explain who is behind Suu, which official registrations it has, how your data is protected — and how you can verify each point yourself."
+      ],
+      "analysis": [
+        {
+          "head": "Who builds and runs Suu?",
+          "body": [
+            "Suu is built by a small independent team of two in Istanbul: founder and developer Furkan Mert Fındıklı and software developer Mert Öz. It isn't an agency product or an anonymous overseas company; the developer name in the app stores is the founder's own name.",
+            "The app is run by a sole proprietorship registered for tax in Turkey, and the business holds an official permit issued by its local municipality. The privacy policy names the same person as the data controller.<sup><a href=\"#ref1\">1</a></sup>"
+          ],
+          "callout": "Store identity: developer Furkan Mert Findikli · <bdi>com.sutakip.suutakippro</bdi> · App Store ID 6757619920. The account deletion page lists the same details.<sup><a href=\"#ref2\">2</a></sup>"
+        },
+        {
+          "head": "A startup that grew inside BTM",
+          "body": [
+            "Suu grew inside BTM (Bilgiyi Ticarileştirme Merkezi), the startup incubator of the Istanbul Chamber of Commerce, and completed the BTM programme.<sup><a href=\"#ref3\">3</a></sup> BTM gives startups training, mentoring and investor meetings.",
+            "In other words, Suu isn't an anonymous project that appeared overnight; it developed as an identifiable startup through an official programme."
+          ]
+        },
+        {
+          "head": "How is your data protected?",
+          "body": [
+            "Everything below is stated in Suu's public privacy policy.<sup><a href=\"#ref1\">1</a></sup>"
+          ],
+          "list": [
+            "<strong>Legal framework:</strong> Your data is processed under the EU General Data Protection Regulation (GDPR) and Turkey's personal data protection law (KVKK).<sup><a href=\"#ref4\">4</a></sup>",
+            "<strong>Encryption:</strong> Sensitive data is encrypted with AES-256; all data transfers use SSL/TLS; the infrastructure is Google Firebase.",
+            "<strong>No sale of data:</strong> Your data is not sold to advertisers, ad networks or data brokers, and is not used for targeted advertising or profiling.",
+            "<strong>Your voice stays on your phone:</strong> Voice input is converted to text on your device; the audio is never sent to Suu's servers.",
+            "<strong>Your photos are not stored:</strong> In photo analysis (Premium) the image is sent to the AI service (Google Gemini) only for the moment of analysis; Suu doesn't save it — only the calorie and macro result is written to your account.",
+            "<strong>Health data only with permission:</strong> Apple Health and Health Connect are accessed only for the data types you allow.",
+            "<strong>Location is optional:</strong> Only approximate location is used, to adjust your water goal for the weather.",
+            "<strong>Age:</strong> The app is designed for users aged 13 and over."
+          ]
+        },
+        {
+          "head": "You stay in control of your data",
+          "body": [
+            "GDPR and KVKK give you the right to access, correct, delete and port your data and to object to its processing.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref4\">4</a></sup>",
+            "You can delete your account inside the app; the data of a deleted account is permanently removed from our systems within 30 days. If you can't access the app, an email from your registered address to Suutakip@gmail.com with the subject “Account Deletion Request” is enough; requests are processed within 7 business days.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref2\">2</a></sup>"
+          ],
+          "callout": "<strong>Check it yourself:</strong> the “Data safety” section on Google Play and the “App Privacy” label on the App Store show what an app collects, in the store's own format.<sup><a href=\"#ref5\">5</a>,<a href=\"#ref6\">6</a></sup>"
+        }
+      ],
+      "in_app": {
+        "head": "Where to manage this in Suu",
+        "lead": "Menu names are exactly as they appear in the app:",
+        "steps": [
+          {
+            "feature": "Delete your account and data",
+            "where": "<strong>Settings</strong> → Account → <strong>Delete Account</strong>",
+            "solves": "Once you confirm, you are signed out, the account is deactivated and your data is permanently deleted within 30 days. Step-by-step instructions are on suuapp.com/delete-account.html."
+          },
+          {
+            "feature": "Manage health data permissions",
+            "where_ios": "App permissions in the iPhone <strong>Health</strong> app → Suu",
+            "where_android": "<strong>Health Connect</strong> → app permissions → Suu",
+            "solves": "You choose which health data Suu can read and write, and you can revoke access at any time."
+          },
+          {
+            "feature": "Manage location permission",
+            "where_ios": "iPhone <strong>Settings</strong> → Suu → Location",
+            "where_android": "Phone <strong>Settings</strong> → Apps → Suu → Permissions",
+            "solves": "Location is optional and is only used to adjust your water goal for the weather."
+          }
+        ],
+        "note": "",
+        "button": "Download Suu free"
+      },
+      "verdict": {
+        "head": "In short",
+        "body": [
+          "Suu is run by an identifiable team and a sole proprietorship registered for tax in Turkey, and it grew inside the Istanbul Chamber of Commerce's BTM incubator. Your data is processed under GDPR and KVKK, encrypted and never sold.",
+          "Still, don't take our word for it: read the privacy policy, the store's data safety section and the account deletion page yourself. All of them are public."
+        ]
+      },
+      "cta": {
+        "head": "Try Suu with peace of mind",
+        "sub": "Free · iOS and Android · delete your account any time",
+        "button": "Download Suu Free"
+      },
+      "faq": [
+        {
+          "q": "Is Suu safe?",
+          "a": "Yes. Suu is built by a small independent team of two in Istanbul, run by a sole proprietorship registered for tax in Turkey, and grew inside the Istanbul Chamber of Commerce's BTM incubator. Your data is processed under GDPR and KVKK, encrypted with AES-256 and never sold."
+        },
+        {
+          "q": "Who owns the Suu app?",
+          "a": "Suu's founder and data controller is Furkan Mert Fındıklı. The app is run by a sole proprietorship registered for tax in Turkey that holds an official permit from its local municipality. Software developer Mert Öz is the other member of the team."
+        },
+        {
+          "q": "Does Suu sell my data?",
+          "a": "No. According to the privacy policy, your data is not sold, rented or shared with advertisers, ad networks or data brokers, and is not used for targeted advertising or profiling."
+        },
+        {
+          "q": "Does Suu store my food photos or voice recordings?",
+          "a": "No. Your voice is converted to text on your phone and never sent to Suu's servers. In photo analysis the image is processed only at the moment of analysis and isn't saved; only the calorie and macro result is written to your account."
+        },
+        {
+          "q": "How do I delete my Suu account?",
+          "a": "In the app go to Settings → Account → Delete Account; your data is permanently deleted within 30 days. If you can't access the app, email Suutakip@gmail.com from your registered address; requests are processed within 7 business days."
+        },
+        {
+          "q": "Will Suu charge me without asking?",
+          "a": "No. Suu is free to download and its core features are free. Premium is bought only with your confirmation through the App Store or Google Play, and you cancel it from your store account."
+        }
+      ],
+      "references": [
+        {
+          "label": "Suu — Privacy Policy (GDPR and KVKK)",
+          "href": "https://suuapp.com/gizlilik-politikasi.html"
+        },
+        {
+          "label": "Suu — Account and data deletion",
+          "href": "https://suuapp.com/delete-account.html"
+        },
+        {
+          "label": "Istanbul Chamber of Commerce BTM — official website",
+          "href": "https://btm.istanbul/"
+        },
+        {
+          "label": "Regulation (EU) 2016/679 — General Data Protection Regulation (GDPR)",
+          "href": "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
+        },
+        {
+          "label": "Google Play Help — the Data safety section",
+          "href": "https://support.google.com/googleplay/answer/11416267"
+        },
+        {
+          "label": "Apple — App Store privacy labels",
+          "href": "https://www.apple.com/privacy/labels/"
+        }
+      ],
+      "related": [
+        {
+          "href": "/about.html",
+          "title": "About Suu",
+          "desc": "The team behind the app and our story."
+        },
+        {
+          "href": "/gizlilik-politikasi.html",
+          "title": "Privacy policy",
+          "desc": "What data is processed, why and how."
+        },
+        {
+          "href": "/delete-account.html",
+          "title": "Account and data deletion",
+          "desc": "Step-by-step deletion guide."
+        },
+        {
+          "href": "/blog/en/ai-calorie-accuracy.html",
+          "title": "How accurate is photo calorie counting?",
+          "desc": "The limits of AI food analysis."
+        }
+      ]
+    },
+    "ar": {
+      "slug": "hal-tatbiq-suu-amin",
+      "read_minutes": 6,
+      "badge": "🔒 دليل · الأمان والخصوصية",
+      "h1": "هل تطبيق Suu آمن؟ من يقف خلف التطبيق وكيف تُحمى بياناتك (وكيف تتحقق بنفسك)",
+      "about": [
+        {
+          "name": "أمان التطبيقات"
+        },
+        {
+          "name": "حماية البيانات الشخصية"
+        },
+        {
+          "name": "Suu"
+        }
+      ],
+      "meta": {
+        "title": "هل تطبيق Suu آمن؟ الشركة وأمان البيانات والخصوصية | Suu",
+        "description": "من يطوّر Suu وكيف تُحمى بياناتك؟ تطبيق شركة مسجّلة رسميًا نما داخل حاضنة BTM في إسطنبول: GDPR وKVKK وتشفير AES-256 ولا بيع للبيانات.",
+        "keywords": "هل تطبيق suu آمن, هل suu موثوق, من يملك تطبيق suu, شركة تطبيق suu, خصوصية تطبيق suu, حماية بيانات suu, حذف حساب suu, suuapp آمن",
+        "og_title": "هل تطبيق Suu آمن؟ من يقف وراءه وكيف تُحمى بياناتك",
+        "og_description": "فريق مستقل صغير، وشركة مسجّلة رسميًا، وبرنامج BTM التابع لغرفة تجارة إسطنبول، ومعالجة بيانات وفق GDPR وKVKK — وكيف تتحقق من كل ذلك."
+      },
+      "answer": "نعم. يطوّر Suu فريق مستقل صغير من شخصين في إسطنبول، وتديره مؤسسة فردية مسجّلة ضريبيًا في تركيا؛ وقد نما داخل BTM، حاضنة الشركات الناشئة التابعة لغرفة تجارة إسطنبول، وأتمّ برنامجها. تُعالَج بياناتك وفق اللائحة الأوروبية GDPR وقانون حماية البيانات التركي KVKK، وتُشفَّر بمعيار AES-256 ولا تُباع أبدًا، ويمكنك حذف حسابك متى شئت.",
+      "health_note": {
+        "head": "هذا المقال ليس نصيحة طبية.",
+        "body": [
+          "Suu تطبيق لتتبع الماء والسعرات والتمارين، وليس جهازًا طبيًا، ولا يشخّص ولا يعالج. اتخذ قراراتك الصحية بالتشاور مع مختص صحي."
+        ]
+      },
+      "disclosure": "كتب فريق Suu هذه الصفحة، أي أننا نتحدث عن تطبيقنا. لذلك وضعنا بجانب كل معلومة مصدرًا يمكنك التحقق منه بنفسك: سياسة الخصوصية، وصفحة حذف الحساب، وصفحات المتاجر، والموقع الرسمي لـBTM.",
+      "intro": [
+        "سؤال «هل من الآمن أن أعطي هذا التطبيق وزني وطعامي وبياناتي الصحية؟» في محله تمامًا. فتطبيقات تتبع السعرات والماء تجمع بيانات حساسة، وبعض التطبيقات لا يتضح من يقف وراءها.",
+        "نوضح أدناه من يقف وراء Suu، وما تسجيلاته الرسمية، وكيف تُحمى بياناتك، وكيف تتحقق من كل نقطة بنفسك."
+      ],
+      "analysis": [
+        {
+          "head": "من يطوّر Suu ومن يديره؟",
+          "body": [
+            "يطوّر Suu فريق مستقل صغير من شخصين في إسطنبول: المؤسس والمطوّر Furkan Mert Fındıklı والمطوّر Mert Öz. ليس منتج وكالة ولا شركة أجنبية مجهولة، واسم المطوّر في المتاجر هو اسم المؤسس نفسه.",
+            "تدير التطبيق مؤسسة فردية مسجّلة ضريبيًا في تركيا، ولديها تصريح رسمي صادر عن البلدية المحلية. وتذكر سياسة الخصوصية الشخص نفسه بوصفه المسؤول عن البيانات.<sup><a href=\"#ref1\">1</a></sup>"
+          ],
+          "callout": "هوية المتجر: المطوّر Furkan Mert Findikli · <bdi>com.sutakip.suutakippro</bdi> · App Store ID 6757619920. وتذكر صفحة حذف الحساب البيانات نفسها.<sup><a href=\"#ref2\">2</a></sup>"
+        },
+        {
+          "head": "شركة ناشئة نمت داخل BTM",
+          "body": [
+            "نما Suu داخل BTM (مركز تسويق المعرفة)، حاضنة الشركات الناشئة التابعة لغرفة تجارة إسطنبول، وأتمّ برنامج BTM.<sup><a href=\"#ref3\">3</a></sup> تقدم BTM للشركات الناشئة التدريب والإرشاد ولقاءات المستثمرين.",
+            "أي إن Suu ليس مشروعًا مجهولًا ظهر بين ليلة وضحاها، بل شركة ناشئة معروفة الهوية تطورت عبر برنامج رسمي."
+          ]
+        },
+        {
+          "head": "كيف تُحمى بياناتك؟",
+          "body": [
+            "كل ما يلي منصوص عليه في سياسة الخصوصية العلنية لـSuu.<sup><a href=\"#ref1\">1</a></sup>"
+          ],
+          "list": [
+            "<strong>الإطار القانوني:</strong> تُعالَج بياناتك وفق اللائحة العامة لحماية البيانات في الاتحاد الأوروبي (GDPR) وقانون حماية البيانات الشخصية التركي (KVKK).<sup><a href=\"#ref4\">4</a></sup>",
+            "<strong>التشفير:</strong> تُشفَّر البيانات الحساسة بمعيار AES-256، وتتم كل عمليات نقل البيانات عبر SSL/TLS، والبنية التحتية هي Google Firebase.",
+            "<strong>لا بيع للبيانات:</strong> لا تُباع بياناتك للمعلنين أو شبكات الإعلانات أو وسطاء البيانات، ولا تُستخدم للإعلانات الموجّهة أو التنميط.",
+            "<strong>صوتك يبقى على هاتفك:</strong> يُحوَّل الإدخال الصوتي إلى نص على جهازك، ولا يُرسل التسجيل الصوتي إلى خوادم Suu أبدًا.",
+            "<strong>صورك لا تُحفظ:</strong> في تحليل الصور (Premium) تُرسل الصورة إلى خدمة الذكاء الاصطناعي (Google Gemini) لحظة التحليل فقط، ولا يحفظها Suu؛ يُكتب في حسابك ناتج السعرات والعناصر الكبرى فقط.",
+            "<strong>البيانات الصحية بإذنك فقط:</strong> يصل التطبيق إلى Apple Health وHealth Connect للبيانات التي تسمح بها فقط.",
+            "<strong>الموقع اختياري:</strong> يُستخدم الموقع التقريبي فقط لتعديل هدف الماء حسب الطقس.",
+            "<strong>العمر:</strong> التطبيق مصمم للمستخدمين من عمر 13 عامًا فما فوق."
+          ]
+        },
+        {
+          "head": "أنت المتحكم في بياناتك",
+          "body": [
+            "يمنحك GDPR وKVKK حق الوصول إلى بياناتك وتصحيحها وحذفها ونقلها والاعتراض على معالجتها.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref4\">4</a></sup>",
+            "يمكنك حذف حسابك من داخل التطبيق، وتُزال بيانات الحساب المحذوف نهائيًا من أنظمتنا خلال 30 يومًا. وإن لم تتمكن من دخول التطبيق، تكفي رسالة من بريدك المسجّل إلى Suutakip@gmail.com بعنوان «طلب حذف الحساب»، وتُعالَج الطلبات خلال 7 أيام عمل.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref2\">2</a></sup>"
+          ],
+          "callout": "<strong>تحقق بنفسك:</strong> قسم «أمان البيانات» في Google Play وملصق «خصوصية التطبيق» في App Store يوضحان ما يجمعه التطبيق بصيغة المتجر نفسه.<sup><a href=\"#ref5\">5</a>,<a href=\"#ref6\">6</a></sup>"
+        }
+      ],
+      "in_app": {
+        "head": "أين تدير ذلك في Suu",
+        "lead": "أسماء القوائم كما تظهر في التطبيق:",
+        "steps": [
+          {
+            "feature": "احذف حسابك وبياناتك",
+            "where": "<strong>الإعدادات</strong> ← الحساب ← <strong>حذف الحساب</strong>",
+            "solves": "بعد التأكيد يُسجَّل خروجك ويُعطَّل الحساب وتُحذف بياناتك نهائيًا خلال 30 يومًا. الخطوات بالتفصيل في صفحة suuapp.com/delete-account.html."
+          },
+          {
+            "feature": "أدِر أذونات البيانات الصحية",
+            "where_ios": "أذونات التطبيقات في تطبيق <strong>صحتي</strong> على iPhone ← Suu",
+            "where_android": "<strong>Health Connect</strong> ← أذونات التطبيقات ← Suu",
+            "solves": "أنت تختار البيانات الصحية التي يقرؤها Suu ويكتبها، ويمكنك سحب الإذن في أي وقت."
+          },
+          {
+            "feature": "أدِر إذن الموقع",
+            "where_ios": "<strong>الإعدادات</strong> في iPhone ← Suu ← الموقع",
+            "where_android": "<strong>إعدادات</strong> الهاتف ← التطبيقات ← Suu ← الأذونات",
+            "solves": "الموقع اختياري ويُستخدم فقط لتعديل هدف الماء حسب الطقس."
+          }
+        ],
+        "note": "",
+        "button": "حمّل Suu مجانًا"
+      },
+      "verdict": {
+        "head": "باختصار",
+        "body": [
+          "تدير Suu فريق معروف الهوية ومؤسسة فردية مسجّلة ضريبيًا في تركيا، وقد نما داخل حاضنة BTM التابعة لغرفة تجارة إسطنبول. تُعالَج بياناتك وفق GDPR وKVKK، وتُشفَّر ولا تُباع.",
+          "ومع ذلك لا تكتفِ بكلامنا: اقرأ سياسة الخصوصية وقسم أمان البيانات في المتجر وصفحة حذف الحساب بنفسك، فكلها متاحة للجميع."
+        ]
+      },
+      "cta": {
+        "head": "جرّب Suu وأنت مطمئن",
+        "sub": "مجاني · iOS وAndroid · احذف حسابك متى شئت",
+        "button": "حمّل Suu مجانًا"
+      },
+      "faq": [
+        {
+          "q": "هل تطبيق Suu آمن؟",
+          "a": "نعم. يطوّره فريق مستقل صغير من شخصين في إسطنبول، وتديره مؤسسة فردية مسجّلة ضريبيًا في تركيا، وقد نما داخل حاضنة BTM التابعة لغرفة تجارة إسطنبول. تُعالَج بياناتك وفق GDPR وKVKK وتُشفَّر بمعيار AES-256 ولا تُباع."
+        },
+        {
+          "q": "من يملك تطبيق Suu؟",
+          "a": "مؤسس Suu والمسؤول عن البيانات هو Furkan Mert Fındıklı. وتدير التطبيق مؤسسة فردية مسجّلة ضريبيًا في تركيا ولديها تصريح رسمي من البلدية المحلية. والعضو الآخر في الفريق هو المطوّر Mert Öz."
+        },
+        {
+          "q": "هل يبيع Suu بياناتي؟",
+          "a": "لا. وفق سياسة الخصوصية لا تُباع بياناتك ولا تُؤجَّر ولا تُشارك مع المعلنين أو شبكات الإعلانات أو وسطاء البيانات، ولا تُستخدم للإعلانات الموجّهة أو التنميط."
+        },
+        {
+          "q": "هل يحفظ Suu صور طعامي أو تسجيلاتي الصوتية؟",
+          "a": "لا. يُحوَّل صوتك إلى نص على هاتفك ولا يُرسل إلى خوادم Suu. وفي تحليل الصور تُعالَج الصورة لحظة التحليل فقط ولا تُحفظ؛ يُكتب في حسابك ناتج السعرات والعناصر الكبرى فقط."
+        },
+        {
+          "q": "كيف أحذف حسابي في Suu؟",
+          "a": "اذهب في التطبيق إلى الإعدادات ← الحساب ← حذف الحساب، وتُحذف بياناتك نهائيًا خلال 30 يومًا. وإن لم تتمكن من دخول التطبيق، راسل Suutakip@gmail.com من بريدك المسجّل، وتُعالَج الطلبات خلال 7 أيام عمل."
+        },
+        {
+          "q": "هل يقتطع Suu مبالغ دون علمي؟",
+          "a": "لا. تحميل Suu مجاني وميزاته الأساسية مجانية. يُشترى اشتراك Premium بتأكيدك فقط عبر App Store أو Google Play، ويُلغى من حسابك في المتجر."
+        }
+      ],
+      "references": [
+        {
+          "label": "Suu — سياسة الخصوصية (GDPR وKVKK)",
+          "href": "https://suuapp.com/gizlilik-politikasi.html"
+        },
+        {
+          "label": "Suu — حذف الحساب والبيانات",
+          "href": "https://suuapp.com/delete-account.html"
+        },
+        {
+          "label": "BTM التابعة لغرفة تجارة إسطنبول — الموقع الرسمي",
+          "href": "https://btm.istanbul/"
+        },
+        {
+          "label": "اللائحة الأوروبية 2016/679 — اللائحة العامة لحماية البيانات (GDPR)",
+          "href": "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
+        },
+        {
+          "label": "مساعدة Google Play — قسم أمان البيانات",
+          "href": "https://support.google.com/googleplay/answer/11416267"
+        },
+        {
+          "label": "Apple — ملصقات الخصوصية في App Store",
+          "href": "https://www.apple.com/privacy/labels/"
+        }
+      ],
+      "related": [
+        {
+          "href": "/hakkimizda-ar.html",
+          "title": "من نحن",
+          "desc": "الفريق الذي يطوّر Suu وقصتنا."
+        },
+        {
+          "href": "/gizlilik-politikasi.html",
+          "title": "سياسة الخصوصية",
+          "desc": "ما البيانات التي تُعالَج ولماذا وكيف."
+        },
+        {
+          "href": "/delete-account.html",
+          "title": "حذف الحساب والبيانات",
+          "desc": "دليل الحذف خطوة بخطوة."
+        },
+        {
+          "href": "/blog/ar/hisab-al-suerat-bil-sura.html",
+          "title": "حساب السعرات بالصورة",
+          "desc": "كيف يعمل وما حدوده."
+        }
+      ]
+    },
+    "ru": {
+      "slug": "bezopasno-li-suu",
+      "read_minutes": 6,
+      "badge": "🔒 Руководство · Безопасность и конфиденциальность",
+      "h1": "Безопасно ли приложение Suu? Кто за ним стоит, как защищены данные (и как проверить самому)",
+      "about": [
+        {
+          "name": "Безопасность приложений"
+        },
+        {
+          "name": "Защита персональных данных"
+        },
+        {
+          "name": "Suu"
+        }
+      ],
+      "meta": {
+        "title": "Безопасно ли Suu? Компания, защита данных, приватность | Suu",
+        "description": "Кто разрабатывает Suu и как защищены данные? Приложение зарегистрированной компании из стамбульского инкубатора BTM: GDPR, AES-256, без продажи данных.",
+        "keywords": "безопасно ли приложение suu, suu надежное приложение, кто разработчик suu, компания suu, конфиденциальность suu, защита данных suu, удалить аккаунт suu, suuapp безопасно",
+        "og_title": "Безопасно ли Suu? Кто за ним стоит и как защищены данные",
+        "og_description": "Небольшая независимая команда, зарегистрированная компания, программа BTM Стамбульской торговой палаты и обработка данных по GDPR и KVKK — и как всё это проверить."
+      },
+      "answer": "Да. Suu разрабатывает небольшая независимая команда из двух человек в Стамбуле, а управляет им индивидуальное предприятие, зарегистрированное в налоговых органах Турции; приложение выросло в BTM — стартап-инкубаторе Стамбульской торговой палаты — и прошло его программу. Данные обрабатываются по GDPR и турецкому закону KVKK, шифруются AES-256 и не продаются, а аккаунт можно удалить в любой момент.",
+      "health_note": {
+        "head": "Эта статья не является медицинской консультацией.",
+        "body": [
+          "Suu — приложение для отслеживания воды, калорий и тренировок; это не медицинское изделие, оно не ставит диагнозы и не лечит. Решения о здоровье принимайте вместе со специалистом."
+        ]
+      },
+      "disclosure": "Эту страницу написала команда Suu, то есть мы рассказываем о своём приложении. Поэтому рядом с каждым утверждением есть источник, который можно проверить самостоятельно: политика конфиденциальности, страница удаления аккаунта, страницы в магазинах и официальный сайт BTM.",
+      "intro": [
+        "Вопрос «безопасно ли доверять этому приложению свой вес, питание и данные о здоровье?» совершенно уместен. Трекеры калорий и воды собирают чувствительные данные, и у некоторых приложений непонятно, кто за ними стоит.",
+        "Ниже рассказываем, кто стоит за Suu, какие у него официальные регистрации, как защищены ваши данные — и как проверить каждый пункт самостоятельно."
+      ],
+      "analysis": [
+        {
+          "head": "Кто разрабатывает Suu и управляет им?",
+          "body": [
+            "Suu разрабатывает небольшая независимая команда из двух человек в Стамбуле: основатель и разработчик Furkan Mert Fındıklı и разработчик ПО Mert Öz. Это не продукт агентства и не анонимная зарубежная компания; имя разработчика в магазинах — имя самого основателя.",
+            "Приложением управляет индивидуальное предприятие, зарегистрированное в налоговых органах Турции, и у бизнеса есть официальное разрешение местного муниципалитета. В политике конфиденциальности тот же человек прямо указан как оператор персональных данных.<sup><a href=\"#ref1\">1</a></sup>"
+          ],
+          "callout": "Данные в магазинах: разработчик Furkan Mert Findikli · <bdi>com.sutakip.suutakippro</bdi> · App Store ID 6757619920. На странице удаления аккаунта указаны те же сведения.<sup><a href=\"#ref2\">2</a></sup>"
+        },
+        {
+          "head": "Стартап, выросший в BTM",
+          "body": [
+            "Suu вырос в BTM (Bilgiyi Ticarileştirme Merkezi) — стартап-инкубаторе Стамбульской торговой палаты — и прошёл программу BTM.<sup><a href=\"#ref3\">3</a></sup> BTM даёт стартапам обучение, менторство и встречи с инвесторами.",
+            "То есть Suu — не анонимный проект, появившийся за одну ночь, а стартап с понятной идентичностью, развивавшийся в рамках официальной программы."
+          ]
+        },
+        {
+          "head": "Как защищены ваши данные?",
+          "body": [
+            "Всё перечисленное ниже указано в публичной политике конфиденциальности Suu.<sup><a href=\"#ref1\">1</a></sup>"
+          ],
+          "list": [
+            "<strong>Правовая основа:</strong> данные обрабатываются по Общему регламенту ЕС по защите данных (GDPR) и турецкому закону о защите персональных данных (KVKK).<sup><a href=\"#ref4\">4</a></sup>",
+            "<strong>Шифрование:</strong> чувствительные данные шифруются AES-256, все передачи идут по SSL/TLS, инфраструктура — Google Firebase.",
+            "<strong>Без продажи данных:</strong> данные не продаются рекламодателям, рекламным сетям и брокерам данных и не используются для таргетированной рекламы или профилирования.",
+            "<strong>Голос остаётся в телефоне:</strong> голосовой ввод превращается в текст на вашем устройстве; аудиозапись никогда не отправляется на серверы Suu.",
+            "<strong>Фото не хранятся:</strong> при анализе по фото (Premium) изображение отправляется в сервис ИИ (Google Gemini) только на момент анализа; Suu его не сохраняет — в аккаунт записывается лишь результат по калориям и макронутриентам.",
+            "<strong>Данные о здоровье — только с разрешения:</strong> доступ к Apple Health и Health Connect есть только к тем типам данных, которые вы разрешили.",
+            "<strong>Геолокация по желанию:</strong> используется только приблизительное местоположение, чтобы учитывать погоду в норме воды.",
+            "<strong>Возраст:</strong> приложение рассчитано на пользователей от 13 лет."
+          ]
+        },
+        {
+          "head": "Контроль над данными — у вас",
+          "body": [
+            "GDPR и KVKK дают право получить доступ к своим данным, исправить, удалить и перенести их, а также возразить против обработки.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref4\">4</a></sup>",
+            "Аккаунт можно удалить прямо в приложении; данные удалённого аккаунта безвозвратно стираются из наших систем в течение 30 дней. Если доступа к приложению нет, достаточно письма с зарегистрированного адреса на Suutakip@gmail.com с темой «Запрос на удаление аккаунта»; запросы обрабатываются в течение 7 рабочих дней.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref2\">2</a></sup>"
+          ],
+          "callout": "<strong>Проверьте сами:</strong> раздел «Безопасность данных» в Google Play и метка «Конфиденциальность приложения» в App Store показывают, какие данные собирает приложение, в формате самого магазина.<sup><a href=\"#ref5\">5</a>,<a href=\"#ref6\">6</a></sup>"
+        }
+      ],
+      "in_app": {
+        "head": "Где управлять этим в Suu",
+        "lead": "Названия пунктов — как в приложении:",
+        "steps": [
+          {
+            "feature": "Удалите аккаунт и данные",
+            "where": "<strong>Настройки</strong> → Аккаунт → <strong>Удалить аккаунт</strong>",
+            "solves": "После подтверждения вы выйдете из аккаунта, он будет деактивирован, а данные безвозвратно удалятся в течение 30 дней. Пошаговая инструкция — на suuapp.com/delete-account.html."
+          },
+          {
+            "feature": "Управляйте доступом к данным о здоровье",
+            "where_ios": "Разрешения приложений в приложении <strong>Здоровье</strong> на iPhone → Suu",
+            "where_android": "<strong>Health Connect</strong> → разрешения приложений → Suu",
+            "solves": "Вы сами выбираете, какие данные о здоровье Suu может читать и записывать, и можете отозвать доступ в любой момент."
+          },
+          {
+            "feature": "Управляйте доступом к геолокации",
+            "where_ios": "<strong>Настройки</strong> iPhone → Suu → Геопозиция",
+            "where_android": "<strong>Настройки</strong> телефона → Приложения → Suu → Разрешения",
+            "solves": "Геолокация необязательна и нужна только для учёта погоды в норме воды."
+          }
+        ],
+        "note": "",
+        "button": "Скачать Suu бесплатно"
+      },
+      "verdict": {
+        "head": "Коротко",
+        "body": [
+          "Suu управляют команда с открытой идентичностью и индивидуальное предприятие, зарегистрированное в налоговых органах Турции; приложение выросло в инкубаторе BTM Стамбульской торговой палаты. Данные обрабатываются по GDPR и KVKK, шифруются и не продаются.",
+          "И всё же не верьте нам на слово: прочитайте политику конфиденциальности, раздел о безопасности данных в магазине и страницу удаления аккаунта. Всё это в открытом доступе."
+        ]
+      },
+      "cta": {
+        "head": "Попробуйте Suu спокойно",
+        "sub": "Бесплатно · iOS и Android · аккаунт можно удалить в любой момент",
+        "button": "Скачать Suu бесплатно"
+      },
+      "faq": [
+        {
+          "q": "Безопасно ли приложение Suu?",
+          "a": "Да. Его разрабатывает небольшая независимая команда из двух человек в Стамбуле, управляет им индивидуальное предприятие, зарегистрированное в налоговых органах Турции, а выросло приложение в инкубаторе BTM Стамбульской торговой палаты. Данные обрабатываются по GDPR и KVKK, шифруются AES-256 и не продаются."
+        },
+        {
+          "q": "Кому принадлежит приложение Suu?",
+          "a": "Основатель Suu и оператор персональных данных — Furkan Mert Fındıklı. Приложением управляет индивидуальное предприятие, зарегистрированное в налоговых органах Турции и имеющее официальное разрешение местного муниципалитета. Второй участник команды — разработчик Mert Öz."
+        },
+        {
+          "q": "Продаёт ли Suu мои данные?",
+          "a": "Нет. Согласно политике конфиденциальности, данные не продаются, не сдаются в аренду и не передаются рекламодателям, рекламным сетям и брокерам данных и не используются для таргетированной рекламы или профилирования."
+        },
+        {
+          "q": "Хранит ли Suu мои фото еды и голосовые записи?",
+          "a": "Нет. Голос превращается в текст на телефоне и не отправляется на серверы Suu. При анализе по фото изображение обрабатывается только в момент анализа и не сохраняется; в аккаунт записывается лишь результат по калориям и макронутриентам."
+        },
+        {
+          "q": "Как удалить аккаунт Suu?",
+          "a": "В приложении откройте Настройки → Аккаунт → Удалить аккаунт; данные безвозвратно удалятся в течение 30 дней. Если доступа к приложению нет, напишите на Suutakip@gmail.com с зарегистрированного адреса; запросы обрабатываются в течение 7 рабочих дней."
+        },
+        {
+          "q": "Может ли Suu списать деньги без моего ведома?",
+          "a": "Нет. Suu скачивается бесплатно, и основные функции бесплатны. Premium покупается только с вашего подтверждения через App Store или Google Play и отменяется в аккаунте магазина."
+        }
+      ],
+      "references": [
+        {
+          "label": "Suu — Политика конфиденциальности (GDPR и KVKK)",
+          "href": "https://suuapp.com/gizlilik-politikasi.html"
+        },
+        {
+          "label": "Suu — Удаление аккаунта и данных",
+          "href": "https://suuapp.com/delete-account.html"
+        },
+        {
+          "label": "BTM Стамбульской торговой палаты — официальный сайт",
+          "href": "https://btm.istanbul/"
+        },
+        {
+          "label": "Регламент (ЕС) 2016/679 — Общий регламент по защите данных (GDPR)",
+          "href": "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
+        },
+        {
+          "label": "Справка Google Play — раздел «Безопасность данных»",
+          "href": "https://support.google.com/googleplay/answer/11416267"
+        },
+        {
+          "label": "Apple — метки конфиденциальности в App Store",
+          "href": "https://www.apple.com/privacy/labels/"
+        }
+      ],
+      "related": [
+        {
+          "href": "/hakkimizda-ru.html",
+          "title": "О нас",
+          "desc": "Команда, которая создаёт Suu, и наша история."
+        },
+        {
+          "href": "/gizlilik-politikasi.html",
+          "title": "Политика конфиденциальности",
+          "desc": "Какие данные обрабатываются, зачем и как."
+        },
+        {
+          "href": "/delete-account.html",
+          "title": "Удаление аккаунта и данных",
+          "desc": "Пошаговая инструкция."
+        },
+        {
+          "href": "/blog/ru/kalorii-po-foto.html",
+          "title": "Подсчёт калорий по фото",
+          "desc": "Как это работает и где его пределы."
+        }
+      ]
+    },
+    "de": {
+      "slug": "ist-suu-sicher",
+      "read_minutes": 6,
+      "badge": "🔒 Ratgeber · Sicherheit und Datenschutz",
+      "h1": "Ist Suu sicher? Wer dahintersteht, wie deine Daten geschützt sind (und wie du es selbst prüfst)",
+      "about": [
+        {
+          "name": "App-Sicherheit"
+        },
+        {
+          "name": "Datenschutz"
+        },
+        {
+          "name": "Suu"
+        }
+      ],
+      "meta": {
+        "title": "Ist Suu sicher? Unternehmen, Daten und Datenschutz | Suu",
+        "description": "Wer entwickelt Suu, wie sind deine Daten geschützt? App eines eingetragenen Unternehmens aus dem Istanbuler BTM-Inkubator: DSGVO, AES-256, kein Datenverkauf.",
+        "keywords": "ist suu sicher, suu app seriös, suu app datenschutz, wer steckt hinter suu, suu app unternehmen, suu dsgvo, suu konto löschen, suuapp sicher",
+        "og_title": "Ist Suu sicher? Wer dahintersteht und wie deine Daten geschützt sind",
+        "og_description": "Ein kleines unabhängiges Team, ein eingetragenes Unternehmen, das BTM-Programm der Istanbuler Handelskammer und DSGVO-konforme Datenverarbeitung — und wie du alles überprüfst."
+      },
+      "answer": "Ja. Suu wird von einem kleinen unabhängigen Zweierteam in Istanbul entwickelt und von einem in der Türkei steuerlich registrierten Einzelunternehmen betrieben; die App ist im BTM, dem Start-up-Inkubator der Istanbuler Handelskammer, gewachsen und hat dessen Programm abgeschlossen. Deine Daten werden nach DSGVO und dem türkischen Datenschutzgesetz KVKK verarbeitet, mit AES-256 verschlüsselt und nie verkauft; dein Konto kannst du jederzeit löschen.",
+      "health_note": {
+        "head": "Dieser Artikel ist keine medizinische Beratung.",
+        "body": [
+          "Suu ist eine App zum Verfolgen von Wasser, Kalorien und Training; sie ist kein Medizinprodukt und stellt weder Diagnosen noch Therapien. Triff Gesundheitsentscheidungen gemeinsam mit medizinischem Fachpersonal."
+        ]
+      },
+      "disclosure": "Diese Seite hat das Suu-Team geschrieben — wir beschreiben also unsere eigene App. Deshalb steht neben jeder Aussage eine Quelle, die du selbst prüfen kannst: die Datenschutzerklärung, die Seite zur Kontolöschung, die Store-Einträge und die offizielle Website des BTM.",
+      "intro": [
+        "„Ist es sicher, dieser App mein Gewicht, mein Essen und meine Gesundheitsdaten zu geben?“ ist genau die richtige Frage. Kalorien- und Trink-Tracker sammeln sensible Daten, und bei manchen Apps ist unklar, wer dahintersteht.",
+        "Hier erklären wir, wer hinter Suu steht, welche offiziellen Registrierungen es gibt, wie deine Daten geschützt sind — und wie du jeden Punkt selbst überprüfen kannst."
+      ],
+      "analysis": [
+        {
+          "head": "Wer entwickelt und betreibt Suu?",
+          "body": [
+            "Suu wird von einem kleinen unabhängigen Zweierteam in Istanbul entwickelt: Gründer und Entwickler Furkan Mert Fındıklı und Softwareentwickler Mert Öz. Es ist kein Agenturprodukt und kein anonymes Unternehmen im Ausland; der Entwicklername in den Stores ist der Name des Gründers selbst.",
+            "Betrieben wird die App von einem in der Türkei steuerlich registrierten Einzelunternehmen, das eine offizielle Genehmigung seiner örtlichen Gemeinde besitzt. In der Datenschutzerklärung ist dieselbe Person ausdrücklich als Verantwortlicher genannt.<sup><a href=\"#ref1\">1</a></sup>"
+          ],
+          "callout": "Store-Angaben: Entwickler Furkan Mert Findikli · <bdi>com.sutakip.suutakippro</bdi> · App Store ID 6757619920. Die Seite zur Kontolöschung nennt dieselben Daten.<sup><a href=\"#ref2\">2</a></sup>"
+        },
+        {
+          "head": "Ein Start-up aus dem BTM",
+          "body": [
+            "Suu ist im BTM (Bilgiyi Ticarileştirme Merkezi), dem Start-up-Inkubator der Istanbuler Handelskammer, gewachsen und hat das BTM-Programm abgeschlossen.<sup><a href=\"#ref3\">3</a></sup> Das BTM bietet Start-ups Schulungen, Mentoring und Investorentreffen.",
+            "Suu ist also kein anonymes Projekt, das über Nacht aufgetaucht ist, sondern ein identifizierbares Start-up, das sich in einem offiziellen Programm entwickelt hat."
+          ]
+        },
+        {
+          "head": "Wie sind deine Daten geschützt?",
+          "body": [
+            "Alles Folgende steht in der öffentlichen Datenschutzerklärung von Suu.<sup><a href=\"#ref1\">1</a></sup>"
+          ],
+          "list": [
+            "<strong>Rechtlicher Rahmen:</strong> Deine Daten werden nach der EU-Datenschutz-Grundverordnung (DSGVO) und dem türkischen Datenschutzgesetz (KVKK) verarbeitet.<sup><a href=\"#ref4\">4</a></sup>",
+            "<strong>Verschlüsselung:</strong> Sensible Daten werden mit AES-256 verschlüsselt, alle Übertragungen laufen über SSL/TLS, die Infrastruktur ist Google Firebase.",
+            "<strong>Kein Datenverkauf:</strong> Deine Daten werden nicht an Werbetreibende, Werbenetzwerke oder Datenhändler verkauft und nicht für gezielte Werbung oder Profiling genutzt.",
+            "<strong>Deine Stimme bleibt auf dem Handy:</strong> Spracheingaben werden auf deinem Gerät in Text umgewandelt; die Audioaufnahme wird nie an Suus Server gesendet.",
+            "<strong>Fotos werden nicht gespeichert:</strong> Bei der Fotoanalyse (Premium) geht das Bild nur für den Moment der Analyse an den KI-Dienst (Google Gemini); Suu speichert es nicht — in dein Konto wird nur das Ergebnis zu Kalorien und Makros geschrieben.",
+            "<strong>Gesundheitsdaten nur mit Erlaubnis:</strong> Auf Apple Health und Health Connect wird nur für die Datentypen zugegriffen, die du erlaubst.",
+            "<strong>Standort optional:</strong> Genutzt wird nur der ungefähre Standort, um dein Trinkziel ans Wetter anzupassen.",
+            "<strong>Alter:</strong> Die App ist für Nutzerinnen und Nutzer ab 13 Jahren gedacht."
+          ]
+        },
+        {
+          "head": "Du behältst die Kontrolle über deine Daten",
+          "body": [
+            "DSGVO und KVKK geben dir das Recht auf Auskunft, Berichtigung, Löschung und Übertragbarkeit deiner Daten sowie auf Widerspruch gegen die Verarbeitung.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref4\">4</a></sup>",
+            "Du kannst dein Konto direkt in der App löschen; die Daten eines gelöschten Kontos werden innerhalb von 30 Tagen dauerhaft aus unseren Systemen entfernt. Kommst du nicht mehr in die App, genügt eine E-Mail von deiner registrierten Adresse an Suutakip@gmail.com mit dem Betreff „Antrag auf Kontolöschung“; Anfragen werden innerhalb von 7 Werktagen bearbeitet.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref2\">2</a></sup>"
+          ],
+          "callout": "<strong>Prüf es selbst:</strong> Der Abschnitt „Datensicherheit“ bei Google Play und das Label „App-Datenschutz“ im App Store zeigen im Format des Stores, welche Daten eine App erhebt.<sup><a href=\"#ref5\">5</a>,<a href=\"#ref6\">6</a></sup>"
+        }
+      ],
+      "in_app": {
+        "head": "So verwaltest du das in Suu",
+        "lead": "Menünamen genau wie in der App:",
+        "steps": [
+          {
+            "feature": "Konto und Daten löschen",
+            "where": "<strong>Einstellungen</strong> → Konto → <strong>Konto löschen</strong>",
+            "solves": "Nach der Bestätigung wirst du abgemeldet, das Konto wird deaktiviert und deine Daten werden innerhalb von 30 Tagen dauerhaft gelöscht. Eine Schritt-für-Schritt-Anleitung findest du auf suuapp.com/delete-account.html."
+          },
+          {
+            "feature": "Zugriff auf Gesundheitsdaten verwalten",
+            "where_ios": "App-Berechtigungen in der iPhone-App <strong>Health</strong> → Suu",
+            "where_android": "<strong>Health Connect</strong> → App-Berechtigungen → Suu",
+            "solves": "Du bestimmst, welche Gesundheitsdaten Suu lesen und schreiben darf, und kannst den Zugriff jederzeit widerrufen."
+          },
+          {
+            "feature": "Standortzugriff verwalten",
+            "where_ios": "iPhone-<strong>Einstellungen</strong> → Suu → Standort",
+            "where_android": "Handy-<strong>Einstellungen</strong> → Apps → Suu → Berechtigungen",
+            "solves": "Der Standort ist optional und dient nur dazu, dein Trinkziel ans Wetter anzupassen."
+          }
+        ],
+        "note": "",
+        "button": "Suu kostenlos laden"
+      },
+      "verdict": {
+        "head": "Kurz gesagt",
+        "body": [
+          "Suu wird von einem identifizierbaren Team und einem in der Türkei steuerlich registrierten Einzelunternehmen betrieben und ist im BTM-Inkubator der Istanbuler Handelskammer gewachsen. Deine Daten werden nach DSGVO und KVKK verarbeitet, verschlüsselt und nicht verkauft.",
+          "Verlass dich trotzdem nicht nur auf uns: Lies die Datenschutzerklärung, den Abschnitt zur Datensicherheit im Store und die Seite zur Kontolöschung selbst. Alles ist öffentlich."
+        ]
+      },
+      "cta": {
+        "head": "Probier Suu mit gutem Gefühl",
+        "sub": "Kostenlos · iOS und Android · Konto jederzeit löschbar",
+        "button": "Suu kostenlos laden"
+      },
+      "faq": [
+        {
+          "q": "Ist Suu sicher?",
+          "a": "Ja. Suu wird von einem kleinen unabhängigen Zweierteam in Istanbul entwickelt, von einem in der Türkei steuerlich registrierten Einzelunternehmen betrieben und ist im BTM-Inkubator der Istanbuler Handelskammer gewachsen. Deine Daten werden nach DSGVO und KVKK verarbeitet, mit AES-256 verschlüsselt und nicht verkauft."
+        },
+        {
+          "q": "Wem gehört die Suu-App?",
+          "a": "Gründer und datenschutzrechtlich Verantwortlicher ist Furkan Mert Fındıklı. Betrieben wird die App von einem in der Türkei steuerlich registrierten Einzelunternehmen mit offizieller Genehmigung seiner örtlichen Gemeinde. Zweites Teammitglied ist Softwareentwickler Mert Öz."
+        },
+        {
+          "q": "Verkauft Suu meine Daten?",
+          "a": "Nein. Laut Datenschutzerklärung werden deine Daten weder an Werbetreibende, Werbenetzwerke noch Datenhändler verkauft, vermietet oder weitergegeben und nicht für gezielte Werbung oder Profiling genutzt."
+        },
+        {
+          "q": "Speichert Suu meine Essensfotos oder Sprachaufnahmen?",
+          "a": "Nein. Deine Stimme wird auf dem Handy in Text umgewandelt und nicht an Suus Server gesendet. Bei der Fotoanalyse wird das Bild nur im Moment der Analyse verarbeitet und nicht gespeichert; in dein Konto kommt nur das Ergebnis zu Kalorien und Makros."
+        },
+        {
+          "q": "Wie lösche ich mein Suu-Konto?",
+          "a": "In der App unter Einstellungen → Konto → Konto löschen; deine Daten werden innerhalb von 30 Tagen dauerhaft gelöscht. Kommst du nicht in die App, schreib von deiner registrierten Adresse an Suutakip@gmail.com; Anfragen werden innerhalb von 7 Werktagen bearbeitet."
+        },
+        {
+          "q": "Kann Suu mir ungefragt Geld abbuchen?",
+          "a": "Nein. Suu ist kostenlos herunterladbar, die Grundfunktionen sind gratis. Premium kaufst du nur mit deiner Bestätigung über den App Store oder Google Play und kündigst es auch dort in deinem Store-Konto."
+        }
+      ],
+      "references": [
+        {
+          "label": "Suu — Datenschutzerklärung (DSGVO und KVKK)",
+          "href": "https://suuapp.com/gizlilik-politikasi.html"
+        },
+        {
+          "label": "Suu — Konto- und Datenlöschung",
+          "href": "https://suuapp.com/delete-account.html"
+        },
+        {
+          "label": "BTM der Istanbuler Handelskammer — offizielle Website",
+          "href": "https://btm.istanbul/"
+        },
+        {
+          "label": "Verordnung (EU) 2016/679 — Datenschutz-Grundverordnung (DSGVO)",
+          "href": "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
+        },
+        {
+          "label": "Google Play-Hilfe — der Abschnitt „Datensicherheit“",
+          "href": "https://support.google.com/googleplay/answer/11416267"
+        },
+        {
+          "label": "Apple — Datenschutzlabels im App Store",
+          "href": "https://www.apple.com/privacy/labels/"
+        }
+      ],
+      "related": [
+        {
+          "href": "/gizlilik-politikasi.html",
+          "title": "Datenschutzerklärung",
+          "desc": "Welche Daten verarbeitet werden, warum und wie."
+        },
+        {
+          "href": "/delete-account.html",
+          "title": "Konto- und Datenlöschung",
+          "desc": "Schritt-für-Schritt-Anleitung."
+        },
+        {
+          "href": "/blog/de/kalorienzaehlen-per-foto.html",
+          "title": "Kalorienzählen per Foto",
+          "desc": "Wie es funktioniert und wo die Grenzen liegen."
+        },
+        {
+          "href": "/blog/de/yazio-alternativen.html",
+          "title": "Yazio-Alternativen 2026",
+          "desc": "Die 5 besten Apps im Vergleich."
+        }
+      ]
+    },
+    "it": {
+      "slug": "suu-e-sicura",
+      "read_minutes": 6,
+      "badge": "🔒 Guida · Sicurezza e privacy",
+      "h1": "Suu è sicura? Chi c'è dietro, come sono protetti i tuoi dati (e come verificarlo da solo)",
+      "about": [
+        {
+          "name": "Sicurezza delle app"
+        },
+        {
+          "name": "Protezione dei dati personali"
+        },
+        {
+          "name": "Suu"
+        }
+      ],
+      "meta": {
+        "title": "Suu è sicura? Azienda, sicurezza dei dati e privacy | Suu",
+        "description": "Chi sviluppa Suu e come sono protetti i tuoi dati? L'app di un'impresa registrata nata nell'incubatore BTM di Istanbul: GDPR, AES-256, nessuna vendita di dati.",
+        "keywords": "suu è sicura, app suu affidabile, chi c'è dietro suu, azienda app suu, privacy app suu, suu gdpr, eliminare account suu, suuapp sicura",
+        "og_title": "Suu è sicura? Chi c'è dietro e come sono protetti i tuoi dati",
+        "og_description": "Un piccolo team indipendente, un'impresa registrata, il programma BTM della Camera di Commercio di Istanbul e un trattamento dei dati conforme al GDPR — e come verificare tutto."
+      },
+      "answer": "Sì. Suu è sviluppata da un piccolo team indipendente di due persone a Istanbul e gestita da un'impresa individuale registrata ai fini fiscali in Turchia; è cresciuta nel BTM, l'incubatore di startup della Camera di Commercio di Istanbul, e ne ha completato il programma. I tuoi dati sono trattati secondo il GDPR e la legge turca KVKK, cifrati con AES-256 e mai venduti, e puoi eliminare l'account quando vuoi.",
+      "health_note": {
+        "head": "Questo articolo non è un consiglio medico.",
+        "body": [
+          "Suu è un'app per monitorare acqua, calorie e allenamento; non è un dispositivo medico e non fa diagnosi né cure. Prendi le decisioni sulla salute insieme a un professionista sanitario."
+        ]
+      },
+      "disclosure": "Questa pagina l'ha scritta il team di Suu: stiamo descrivendo la nostra app. Per questo accanto a ogni affermazione c'è una fonte che puoi verificare da solo: l'informativa privacy, la pagina di eliminazione dell'account, le schede negli store e il sito ufficiale del BTM.",
+      "intro": [
+        "«È sicuro dare a quest'app il mio peso, i miei pasti e i miei dati sanitari?» è proprio la domanda giusta. Le app per calorie e acqua raccolgono dati sensibili, e di alcune non è chiaro chi ci sia dietro.",
+        "Qui spieghiamo chi c'è dietro Suu, quali registrazioni ufficiali ha, come sono protetti i tuoi dati — e come puoi verificare ogni punto da solo."
+      ],
+      "analysis": [
+        {
+          "head": "Chi sviluppa e gestisce Suu?",
+          "body": [
+            "Suu è sviluppata da un piccolo team indipendente di due persone a Istanbul: il fondatore e sviluppatore Furkan Mert Fındıklı e lo sviluppatore software Mert Öz. Non è il prodotto di un'agenzia né di un'azienda estera anonima; il nome dello sviluppatore negli store è quello del fondatore stesso.",
+            "L'app è gestita da un'impresa individuale registrata ai fini fiscali in Turchia, che possiede un permesso ufficiale rilasciato dal suo comune. Nell'informativa privacy la stessa persona è indicata espressamente come titolare del trattamento.<sup><a href=\"#ref1\">1</a></sup>"
+          ],
+          "callout": "Dati negli store: sviluppatore Furkan Mert Findikli · <bdi>com.sutakip.suutakippro</bdi> · App Store ID 6757619920. La pagina di eliminazione dell'account riporta gli stessi dati.<sup><a href=\"#ref2\">2</a></sup>"
+        },
+        {
+          "head": "Una startup cresciuta nel BTM",
+          "body": [
+            "Suu è cresciuta nel BTM (Bilgiyi Ticarileştirme Merkezi), l'incubatore di startup della Camera di Commercio di Istanbul, e ha completato il programma BTM.<sup><a href=\"#ref3\">3</a></sup> Il BTM offre alle startup formazione, mentoring e incontri con investitori.",
+            "Suu non è quindi un progetto anonimo nato dall'oggi al domani, ma una startup identificabile che si è sviluppata all'interno di un programma ufficiale."
+          ]
+        },
+        {
+          "head": "Come sono protetti i tuoi dati?",
+          "body": [
+            "Tutto quanto segue è scritto nell'informativa privacy pubblica di Suu.<sup><a href=\"#ref1\">1</a></sup>"
+          ],
+          "list": [
+            "<strong>Quadro giuridico:</strong> i tuoi dati sono trattati secondo il Regolamento generale UE sulla protezione dei dati (GDPR) e la legge turca sulla protezione dei dati personali (KVKK).<sup><a href=\"#ref4\">4</a></sup>",
+            "<strong>Cifratura:</strong> i dati sensibili sono cifrati con AES-256, tutti i trasferimenti avvengono via SSL/TLS, l'infrastruttura è Google Firebase.",
+            "<strong>Nessuna vendita di dati:</strong> i tuoi dati non sono venduti a inserzionisti, reti pubblicitarie o data broker e non sono usati per pubblicità mirata o profilazione.",
+            "<strong>La voce resta sul telefono:</strong> l'input vocale viene convertito in testo sul dispositivo; la registrazione audio non viene mai inviata ai server di Suu.",
+            "<strong>Le foto non vengono salvate:</strong> nell'analisi delle foto (Premium) l'immagine va al servizio di IA (Google Gemini) solo per il momento dell'analisi; Suu non la salva — nell'account viene scritto solo il risultato su calorie e macro.",
+            "<strong>Dati sanitari solo con il tuo permesso:</strong> l'accesso ad Apple Health e Health Connect riguarda solo i tipi di dati che autorizzi.",
+            "<strong>Posizione facoltativa:</strong> si usa solo la posizione approssimativa, per adattare l'obiettivo d'acqua al meteo.",
+            "<strong>Età:</strong> l'app è pensata per utenti dai 13 anni in su."
+          ]
+        },
+        {
+          "head": "Il controllo dei dati resta a te",
+          "body": [
+            "GDPR e KVKK ti danno il diritto di accedere ai tuoi dati, rettificarli, cancellarli, portarli altrove e opporti al trattamento.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref4\">4</a></sup>",
+            "Puoi eliminare l'account direttamente nell'app; i dati di un account eliminato vengono rimossi definitivamente dai nostri sistemi entro 30 giorni. Se non riesci ad accedere all'app basta un'email dal tuo indirizzo registrato a Suutakip@gmail.com con oggetto «Richiesta di eliminazione account»; le richieste vengono gestite entro 7 giorni lavorativi.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref2\">2</a></sup>"
+          ],
+          "callout": "<strong>Verifica da solo:</strong> la sezione «Sicurezza dei dati» su Google Play e l'etichetta «Privacy dell'app» sull'App Store mostrano, nel formato dello store, quali dati raccoglie un'app.<sup><a href=\"#ref5\">5</a>,<a href=\"#ref6\">6</a></sup>"
+        }
+      ],
+      "in_app": {
+        "head": "Dove gestirlo in Suu",
+        "lead": "I nomi dei menu sono quelli dell'app:",
+        "steps": [
+          {
+            "feature": "Elimina account e dati",
+            "where": "<strong>Impostazioni</strong> → Account → <strong>Elimina account</strong>",
+            "solves": "Dopo la conferma esci dall'account, che viene disattivato, e i tuoi dati vengono cancellati definitivamente entro 30 giorni. Le istruzioni passo passo sono su suuapp.com/delete-account.html."
+          },
+          {
+            "feature": "Gestisci l'accesso ai dati sanitari",
+            "where_ios": "Autorizzazioni delle app nell'app <strong>Salute</strong> dell'iPhone → Suu",
+            "where_android": "<strong>Health Connect</strong> → autorizzazioni app → Suu",
+            "solves": "Sei tu a scegliere quali dati sanitari Suu può leggere e scrivere, e puoi revocare l'accesso quando vuoi."
+          },
+          {
+            "feature": "Gestisci l'accesso alla posizione",
+            "where_ios": "<strong>Impostazioni</strong> dell'iPhone → Suu → Posizione",
+            "where_android": "<strong>Impostazioni</strong> del telefono → App → Suu → Autorizzazioni",
+            "solves": "La posizione è facoltativa e serve solo ad adattare l'obiettivo d'acqua al meteo."
+          }
+        ],
+        "note": "",
+        "button": "Scarica Suu gratis"
+      },
+      "verdict": {
+        "head": "In breve",
+        "body": [
+          "Suu è gestita da un team identificabile e da un'impresa individuale registrata ai fini fiscali in Turchia, ed è cresciuta nell'incubatore BTM della Camera di Commercio di Istanbul. I tuoi dati sono trattati secondo GDPR e KVKK, cifrati e mai venduti.",
+          "Non fidarti però solo di noi: leggi l'informativa privacy, la sezione sulla sicurezza dei dati nello store e la pagina di eliminazione dell'account. Sono tutte pubbliche."
+        ]
+      },
+      "cta": {
+        "head": "Prova Suu in tranquillità",
+        "sub": "Gratis · iOS e Android · elimini l'account quando vuoi",
+        "button": "Scarica Suu gratis"
+      },
+      "faq": [
+        {
+          "q": "Suu è sicura?",
+          "a": "Sì. È sviluppata da un piccolo team indipendente di due persone a Istanbul, gestita da un'impresa individuale registrata ai fini fiscali in Turchia ed è cresciuta nell'incubatore BTM della Camera di Commercio di Istanbul. I tuoi dati sono trattati secondo GDPR e KVKK, cifrati con AES-256 e mai venduti."
+        },
+        {
+          "q": "A chi appartiene l'app Suu?",
+          "a": "Il fondatore e titolare del trattamento è Furkan Mert Fındıklı. L'app è gestita da un'impresa individuale registrata ai fini fiscali in Turchia, con un permesso ufficiale del suo comune. L'altro membro del team è lo sviluppatore Mert Öz."
+        },
+        {
+          "q": "Suu vende i miei dati?",
+          "a": "No. Secondo l'informativa privacy i tuoi dati non sono venduti, affittati o condivisi con inserzionisti, reti pubblicitarie o data broker e non sono usati per pubblicità mirata o profilazione."
+        },
+        {
+          "q": "Suu salva le foto dei miei pasti o le registrazioni vocali?",
+          "a": "No. La voce viene trasformata in testo sul telefono e non va ai server di Suu. Nell'analisi delle foto l'immagine è elaborata solo al momento dell'analisi e non viene salvata; nell'account finisce solo il risultato su calorie e macro."
+        },
+        {
+          "q": "Come elimino il mio account Suu?",
+          "a": "Nell'app vai su Impostazioni → Account → Elimina account; i dati vengono cancellati definitivamente entro 30 giorni. Se non riesci ad accedere all'app, scrivi a Suutakip@gmail.com dal tuo indirizzo registrato; le richieste sono gestite entro 7 giorni lavorativi."
+        },
+        {
+          "q": "Suu può addebitarmi soldi senza chiedere?",
+          "a": "No. Suu si scarica gratis e le funzioni di base sono gratuite. Premium si acquista solo con la tua conferma tramite App Store o Google Play e si disdice dal tuo account dello store."
+        }
+      ],
+      "references": [
+        {
+          "label": "Suu — Informativa sulla privacy (GDPR e KVKK)",
+          "href": "https://suuapp.com/gizlilik-politikasi.html"
+        },
+        {
+          "label": "Suu — Eliminazione di account e dati",
+          "href": "https://suuapp.com/delete-account.html"
+        },
+        {
+          "label": "BTM della Camera di Commercio di Istanbul — sito ufficiale",
+          "href": "https://btm.istanbul/"
+        },
+        {
+          "label": "Regolamento (UE) 2016/679 — Regolamento generale sulla protezione dei dati (GDPR)",
+          "href": "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
+        },
+        {
+          "label": "Guida di Google Play — la sezione «Sicurezza dei dati»",
+          "href": "https://support.google.com/googleplay/answer/11416267"
+        },
+        {
+          "label": "Apple — etichette sulla privacy nell'App Store",
+          "href": "https://www.apple.com/privacy/labels/"
+        }
+      ],
+      "related": [
+        {
+          "href": "/gizlilik-politikasi.html",
+          "title": "Informativa sulla privacy",
+          "desc": "Quali dati vengono trattati, perché e come."
+        },
+        {
+          "href": "/delete-account.html",
+          "title": "Eliminazione di account e dati",
+          "desc": "Istruzioni passo passo."
+        },
+        {
+          "href": "/blog/it/conteggio-calorie-con-foto.html",
+          "title": "Contare le calorie con una foto",
+          "desc": "Come funziona e dove sono i limiti."
+        },
+        {
+          "href": "/blog/it/alternative-a-yazio.html",
+          "title": "Alternative a Yazio 2026",
+          "desc": "Le 5 migliori app a confronto."
+        }
+      ]
+    },
+    "uk": {
+      "slug": "chy-bezpechnyi-suu",
+      "read_minutes": 6,
+      "badge": "🔒 Посібник · Безпека та приватність",
+      "h1": "Чи безпечний Suu? Хто за ним стоїть, як захищені дані (і як перевірити самому)",
+      "about": [
+        {
+          "name": "Безпека застосунків"
+        },
+        {
+          "name": "Захист персональних даних"
+        },
+        {
+          "name": "Suu"
+        }
+      ],
+      "meta": {
+        "title": "Чи безпечний Suu? Компанія, захист даних і приватність | Suu",
+        "description": "Хто розробляє Suu і як захищені твої дані? Застосунок зареєстрованої компанії зі стамбульського інкубатора BTM: GDPR, AES-256, без продажу даних.",
+        "keywords": "чи безпечний suu, suu надійний застосунок, хто розробник suu, компанія suu, приватність suu, захист даних suu, видалити акаунт suu, suuapp безпечний",
+        "og_title": "Чи безпечний Suu? Хто за ним стоїть і як захищені дані",
+        "og_description": "Невелика незалежна команда, зареєстрована компанія, програма BTM Стамбульської торгової палати й обробка даних за GDPR — і як усе це перевірити."
+      },
+      "answer": "Так. Suu розробляє невелика незалежна команда з двох людей у Стамбулі, а керує ним індивідуальне підприємство, зареєстроване в податкових органах Туреччини; застосунок виріс у BTM — стартап-інкубаторі Стамбульської торгової палати — і пройшов його програму. Дані обробляються за GDPR і турецьким законом KVKK, шифруються AES-256 і не продаються, а акаунт можна видалити будь-коли.",
+      "health_note": {
+        "head": "Ця стаття не є медичною порадою.",
+        "body": [
+          "Suu — застосунок для відстеження води, калорій і тренувань; це не медичний виріб, він не ставить діагнозів і не лікує. Рішення щодо здоров'я ухвалюй разом із фахівцем."
+        ]
+      },
+      "disclosure": "Цю сторінку написала команда Suu, тобто ми розповідаємо про свій застосунок. Тому біля кожного твердження є джерело, яке можна перевірити самостійно: політика конфіденційності, сторінка видалення акаунта, сторінки в магазинах і офіційний сайт BTM.",
+      "intro": [
+        "Питання «чи безпечно довіряти цьому застосунку свою вагу, харчування й дані про здоров'я?» цілком доречне. Трекери калорій і води збирають чутливі дані, і в деяких застосунків незрозуміло, хто за ними стоїть.",
+        "Нижче розповідаємо, хто стоїть за Suu, які в нього офіційні реєстрації, як захищені твої дані — і як перевірити кожен пункт самостійно."
+      ],
+      "analysis": [
+        {
+          "head": "Хто розробляє Suu і керує ним?",
+          "body": [
+            "Suu розробляє невелика незалежна команда з двох людей у Стамбулі: засновник і розробник Furkan Mert Fındıklı та розробник ПЗ Mert Öz. Це не продукт агенції й не анонімна закордонна компанія; ім'я розробника в магазинах — ім'я самого засновника.",
+            "Застосунком керує індивідуальне підприємство, зареєстроване в податкових органах Туреччини, і бізнес має офіційний дозвіл місцевого муніципалітету. У політиці конфіденційності ця сама людина прямо вказана як володілець персональних даних.<sup><a href=\"#ref1\">1</a></sup>"
+          ],
+          "callout": "Дані в магазинах: розробник Furkan Mert Findikli · <bdi>com.sutakip.suutakippro</bdi> · App Store ID 6757619920. Сторінка видалення акаунта містить ті самі відомості.<sup><a href=\"#ref2\">2</a></sup>"
+        },
+        {
+          "head": "Стартап, що виріс у BTM",
+          "body": [
+            "Suu виріс у BTM (Bilgiyi Ticarileştirme Merkezi) — стартап-інкубаторі Стамбульської торгової палати — і пройшов програму BTM.<sup><a href=\"#ref3\">3</a></sup> BTM дає стартапам навчання, менторство й зустрічі з інвесторами.",
+            "Тобто Suu — не анонімний проєкт, що з'явився за одну ніч, а стартап зі зрозумілою ідентичністю, який розвивався в межах офіційної програми."
+          ]
+        },
+        {
+          "head": "Як захищені твої дані?",
+          "body": [
+            "Усе наведене нижче зазначено в публічній політиці конфіденційності Suu.<sup><a href=\"#ref1\">1</a></sup>"
+          ],
+          "list": [
+            "<strong>Правова основа:</strong> дані обробляються за Загальним регламентом ЄС про захист даних (GDPR) і турецьким законом про захист персональних даних (KVKK).<sup><a href=\"#ref4\">4</a></sup>",
+            "<strong>Шифрування:</strong> чутливі дані шифруються AES-256, усі передачі йдуть через SSL/TLS, інфраструктура — Google Firebase.",
+            "<strong>Без продажу даних:</strong> дані не продаються рекламодавцям, рекламним мережам і брокерам даних і не використовуються для таргетованої реклами чи профілювання.",
+            "<strong>Голос лишається в телефоні:</strong> голосове введення перетворюється на текст на твоєму пристрої; аудіозапис ніколи не надсилається на сервери Suu.",
+            "<strong>Фото не зберігаються:</strong> під час аналізу за фото (Premium) зображення надсилається до сервісу ШІ (Google Gemini) лише на момент аналізу; Suu його не зберігає — в акаунт записується тільки результат щодо калорій і макронутрієнтів.",
+            "<strong>Дані про здоров'я — лише з дозволу:</strong> доступ до Apple Health і Health Connect є тільки до тих типів даних, які ти дозволив.",
+            "<strong>Геолокація за бажанням:</strong> використовується лише приблизне місцезнаходження, щоб враховувати погоду в нормі води.",
+            "<strong>Вік:</strong> застосунок розрахований на користувачів від 13 років."
+          ]
+        },
+        {
+          "head": "Контроль над даними — у тебе",
+          "body": [
+            "GDPR і KVKK дають право отримати доступ до своїх даних, виправити, видалити й перенести їх, а також заперечити проти обробки.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref4\">4</a></sup>",
+            "Акаунт можна видалити просто в застосунку; дані видаленого акаунта безповоротно стираються з наших систем протягом 30 днів. Якщо доступу до застосунку немає, достатньо листа із зареєстрованої адреси на Suutakip@gmail.com з темою «Запит на видалення акаунта»; запити обробляються протягом 7 робочих днів.<sup><a href=\"#ref1\">1</a>,<a href=\"#ref2\">2</a></sup>"
+          ],
+          "callout": "<strong>Перевір сам:</strong> розділ «Безпека даних» у Google Play і мітка «Конфіденційність застосунку» в App Store показують, які дані збирає застосунок, у форматі самого магазину.<sup><a href=\"#ref5\">5</a>,<a href=\"#ref6\">6</a></sup>"
+        }
+      ],
+      "in_app": {
+        "head": "Де керувати цим у Suu",
+        "lead": "Назви пунктів наведено англійською, як в інтерфейсі:",
+        "steps": [
+          {
+            "feature": "Видали акаунт і дані",
+            "where": "<strong>Settings</strong> → Account → <strong>Delete Account</strong>",
+            "solves": "Після підтвердження ти вийдеш з акаунта, його буде деактивовано, а дані безповоротно видаляться протягом 30 днів. Покрокова інструкція — на suuapp.com/delete-account.html."
+          },
+          {
+            "feature": "Керуй доступом до даних про здоров'я",
+            "where_ios": "Дозволи застосунків у застосунку <strong>Здоров'я</strong> на iPhone → Suu",
+            "where_android": "<strong>Health Connect</strong> → дозволи застосунків → Suu",
+            "solves": "Ти сам вибираєш, які дані про здоров'я Suu може читати й записувати, і можеш відкликати доступ будь-коли."
+          },
+          {
+            "feature": "Керуй доступом до геолокації",
+            "where_ios": "<strong>Параметри</strong> iPhone → Suu → Локація",
+            "where_android": "<strong>Налаштування</strong> телефона → Застосунки → Suu → Дозволи",
+            "solves": "Геолокація необов'язкова й потрібна лише для врахування погоди в нормі води."
+          }
+        ],
+        "note": "Українська локалізація застосунку в планах; поки що зручно користуватися англійською версією інтерфейсу.",
+        "button": "Завантажити Suu безкоштовно"
+      },
+      "verdict": {
+        "head": "Коротко",
+        "body": [
+          "Suu керують команда з відкритою ідентичністю та індивідуальне підприємство, зареєстроване в податкових органах Туреччини; застосунок виріс в інкубаторі BTM Стамбульської торгової палати. Дані обробляються за GDPR і KVKK, шифруються й не продаються.",
+          "Та все ж не вір нам на слово: прочитай політику конфіденційності, розділ про безпеку даних у магазині й сторінку видалення акаунта. Усе це у відкритому доступі."
+        ]
+      },
+      "cta": {
+        "head": "Спробуй Suu спокійно",
+        "sub": "Безкоштовно · iOS та Android · акаунт можна видалити будь-коли",
+        "button": "Завантажити Suu безкоштовно"
+      },
+      "faq": [
+        {
+          "q": "Чи безпечний застосунок Suu?",
+          "a": "Так. Його розробляє невелика незалежна команда з двох людей у Стамбулі, керує ним індивідуальне підприємство, зареєстроване в податкових органах Туреччини, а виріс застосунок в інкубаторі BTM Стамбульської торгової палати. Дані обробляються за GDPR і KVKK, шифруються AES-256 і не продаються."
+        },
+        {
+          "q": "Кому належить застосунок Suu?",
+          "a": "Засновник Suu й володілець персональних даних — Furkan Mert Fındıklı. Застосунком керує індивідуальне підприємство, зареєстроване в податкових органах Туреччини, що має офіційний дозвіл місцевого муніципалітету. Другий учасник команди — розробник Mert Öz."
+        },
+        {
+          "q": "Чи продає Suu мої дані?",
+          "a": "Ні. Згідно з політикою конфіденційності, дані не продаються, не здаються в оренду й не передаються рекламодавцям, рекламним мережам і брокерам даних та не використовуються для таргетованої реклами чи профілювання."
+        },
+        {
+          "q": "Чи зберігає Suu мої фото їжі та голосові записи?",
+          "a": "Ні. Голос перетворюється на текст у телефоні й не надсилається на сервери Suu. Під час аналізу за фото зображення обробляється лише в момент аналізу й не зберігається; в акаунт записується тільки результат щодо калорій і макронутрієнтів."
+        },
+        {
+          "q": "Як видалити акаунт Suu?",
+          "a": "У застосунку відкрий Settings → Account → Delete Account; дані безповоротно видаляться протягом 30 днів. Якщо доступу до застосунку немає, напиши на Suutakip@gmail.com із зареєстрованої адреси; запити обробляються протягом 7 робочих днів."
+        },
+        {
+          "q": "Чи може Suu списати гроші без мого відома?",
+          "a": "Ні. Suu завантажується безкоштовно, і основні функції безкоштовні. Premium купується лише з твого підтвердження через App Store або Google Play і скасовується в акаунті магазину."
+        }
+      ],
+      "references": [
+        {
+          "label": "Suu — Політика конфіденційності (GDPR і KVKK)",
+          "href": "https://suuapp.com/gizlilik-politikasi.html"
+        },
+        {
+          "label": "Suu — Видалення акаунта й даних",
+          "href": "https://suuapp.com/delete-account.html"
+        },
+        {
+          "label": "BTM Стамбульської торгової палати — офіційний сайт",
+          "href": "https://btm.istanbul/"
+        },
+        {
+          "label": "Регламент (ЄС) 2016/679 — Загальний регламент про захист даних (GDPR)",
+          "href": "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
+        },
+        {
+          "label": "Довідка Google Play — розділ «Безпека даних»",
+          "href": "https://support.google.com/googleplay/answer/11416267"
+        },
+        {
+          "label": "Apple — мітки конфіденційності в App Store",
+          "href": "https://www.apple.com/privacy/labels/"
+        }
+      ],
+      "related": [
+        {
+          "href": "/gizlilik-politikasi.html",
+          "title": "Політика конфіденційності",
+          "desc": "Які дані обробляються, навіщо й як."
+        },
+        {
+          "href": "/delete-account.html",
+          "title": "Видалення акаунта й даних",
+          "desc": "Покрокова інструкція."
+        },
+        {
+          "href": "/blog/uk/pidrakhunok-kaloriy-za-foto.html",
+          "title": "Підрахунок калорій за фото",
+          "desc": "Як це працює і де межі."
+        },
+        {
+          "href": "/blog/uk/alternatyvy-yazio.html",
+          "title": "Альтернативи Yazio 2026",
+          "desc": "5 найкращих застосунків у порівнянні."
+        }
+      ]
+    }
+  }
+}

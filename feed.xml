@@ -5,8 +5,32 @@
     <link>https://suuapp.com/blog.html</link>
     <description>Su takibi, kalori sayma ve egzersiz üzerine yazılar.</description>
     <language>tr-TR</language>
-    <lastBuildDate>Tue, 13 Oct 2026 19:39:06 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 05:59:08 +0000</lastBuildDate>
     <atom:link href="https://suuapp.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Suu Güvenli mi? Kim Geliştiriyor, Verilerin Nasıl Korunuyor</title>
+      <link>https://suuapp.com/blog/suu-guvenli-mi.html</link>
+      <guid isPermaLink="true">https://suuapp.com/blog/suu-guvenli-mi.html</guid>
+      <description>Suu'yu kim geliştiriyor, verilerin nasıl korunuyor? BTM'de gelişmiş, resmi kayıtlı bir şirketin uygulaması: KVKK/GDPR, AES-256, veri satışı yok.</description>
+      <dc:creator>Furkan Mert Fındıklı</dc:creator>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Lifesum vs MyFitnessPal: Hangi Kalori Uygulaması?</title>
+      <link>https://suuapp.com/blog/lifesum-vs-myfitnesspal.html</link>
+      <guid isPermaLink="true">https://suuapp.com/blog/lifesum-vs-myfitnesspal.html</guid>
+      <description>Lifesum ve MyFitnessPal'ı veritabanı, barkod okuyucu, diyet planları, ücretsiz sürüm ve reklamlar açısından karşılaştırdık. Hangisi kime uygun?</description>
+      <dc:creator>Furkan Mert Fındıklı</dc:creator>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Cronometer vs Lifesum: Hangi Kalori Uygulaması?</title>
+      <link>https://suuapp.com/blog/cronometer-vs-lifesum.html</link>
+      <guid isPermaLink="true">https://suuapp.com/blog/cronometer-vs-lifesum.html</guid>
+      <description>Cronometer ve Lifesum'u besin veritabanı, vitamin-mineral takibi, diyet planları, ücretsiz sürüm ve arayüz açısından karşılaştırdık. Hangisi kime uygun?</description>
+      <dc:creator>Furkan Mert Fındıklı</dc:creator>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Kilo Vermek İçin Yürüyüş mü Koşu mu?</title>
       <link>https://suuapp.com/blog/yuruyus-mu-kosu-mu.html</link>
@@ -302,30 +326,6 @@
       <description>Bira, şarap, viski içtiğinizde vücudunuz su kaybediyor. Alkol türüne göre telafi suyu, ertesi gün rehidrasyon planı ve Suu ile akıllı takip rehberi.</description>
       <dc:creator>Furkan Mert Fındıklı</dc:creator>
       <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Kafein ve Şeker Takibi: İçeceklerinizdeki Görünmez Limit</title>
-      <link>https://suuapp.com/blog/kafein-seker-takibi.html</link>
-      <guid isPermaLink="true">https://suuapp.com/blog/kafein-seker-takibi.html</guid>
-      <description>Suu artık 91 içecek için kafein (mg) ve şeker (g) miktarını da hesaplar. FDA'nın 400 mg kafein ve WHO'nun 25 g şeker limitlerini aşmadan sağlıklı kalın.</description>
-      <dc:creator>Furkan Mert Fındıklı</dc:creator>
-      <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Aktivite Bazlı Su Takibi: Egzersiz Türüne Göre Otomatik Hidrasyon Hedefi</title>
-      <link>https://suuapp.com/blog/aktivite-bazli-su-takibi.html</link>
-      <guid isPermaLink="true">https://suuapp.com/blog/aktivite-bazli-su-takibi.html</guid>
-      <description>Suu artık Apple Health ve Google Health Connect'ten aktivitenizi okuyup günlük su hedefinizi otomatik artırıyor. Yürüyüş, koşu, yüzme, bisiklet için bilimsel hidrasyon hesaplaması.</description>
-      <dc:creator>Furkan Mert Fındıklı</dc:creator>
-      <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Siri ve Sesli Komutla Su Ekleme: Eller Serbest Hidrasyon Rehberi</title>
-      <link>https://suuapp.com/blog/sesli-komutla-su-ekleme.html</link>
-      <guid isPermaLink="true">https://suuapp.com/blog/sesli-komutla-su-ekleme.html</guid>
-      <description>Suu'da Siri Shortcuts ve uygulama içi sesli komutlarla eller serbest su takibi yapın. iOS + Android için kurulum rehberi. Ücretsiz.</description>
-      <dc:creator>Furkan Mert Fındıklı</dc:creator>
-      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>

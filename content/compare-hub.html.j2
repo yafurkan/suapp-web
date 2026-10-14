@@ -15,10 +15,14 @@
     <meta name="apple-itunes-app" content="app-id={{ facts.links.app_store_id }}">
 
     <link rel="canonical" href="{{ url }}">
+    {#- inject-hreflang.py'nin yazdığı biçimle birebir aynı (yorum + sondaki boş
+        satır); aksi halde iki betik her çalıştırmada birbirinin çıktısını ezer. #}
+    <!-- Hreflang cluster (auto-injected) -->
 {%- for h in hreflang %}
     <link rel="alternate" hreflang="{{ h.code }}" href="{{ h.href }}">
 {%- endfor %}
     <link rel="alternate" hreflang="x-default" href="{{ xdefault_href }}">
+
 
     <meta property="og:title" content="{{ meta.og_title }}">
     <meta property="og:description" content="{{ meta.og_description }}">

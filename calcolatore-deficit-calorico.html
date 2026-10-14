@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<!-- ÜRETİLMİŞ DOSYA — kaynak: scripts/build-calorie-calculator.py -->
+<html lang="it" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calcolatore deficit calorico — quante calorie mi servono? | Suu</title>
+    <meta name="description" content="Calcola il fabbisogno calorico giornaliero e un deficit calorico sicuro da età, peso, altezza e attività in pochi secondi. Formula di Mifflin-St Jeor, gratis.">
+    <meta name="keywords" content="calcolatore deficit calorico, come calcolare il deficit calorico, come andare in deficit calorico, fabbisogno calorico giornaliero, quante calorie per dimagrire, calcolo metabolismo basale">
+
+    <link rel="canonical" href="https://suuapp.com/calcolatore-deficit-calorico.html">
+    <!-- Hreflang cluster (auto-injected) -->
+    <link rel="alternate" hreflang="tr" href="https://suuapp.com/kalori-acigi-hesaplayici.html">
+    <link rel="alternate" hreflang="en" href="https://suuapp.com/calorie-deficit-calculator.html">
+    <link rel="alternate" hreflang="ar" href="https://suuapp.com/hasibat-al-ajz-al-harari.html">
+    <link rel="alternate" hreflang="ru" href="https://suuapp.com/kalkulyator-deficita-kalorij.html">
+    <link rel="alternate" hreflang="de" href="https://suuapp.com/kaloriendefizit-rechner.html">
+    <link rel="alternate" hreflang="it" href="https://suuapp.com/calcolatore-deficit-calorico.html">
+    <link rel="alternate" hreflang="uk" href="https://suuapp.com/kalkulyator-defitsytu-kaloriy.html">
+    <link rel="alternate" hreflang="x-default" href="https://suuapp.com/calorie-deficit-calculator.html">
+
+
+    <link rel="alternate" type="text/plain" href="/llms-it.txt" title="Suu — compact reference for AI assistants">
+    <link rel="alternate" type="text/plain" href="/llms-full-it.txt" title="Suu — full reference corpus for AI assistants">
+
+    <meta property="og:title" content="Calcolatore deficit calorico — quante calorie mi servono?">
+    <meta property="og:description" content="Scopri il tuo fabbisogno calorico giornaliero e un obiettivo sicuro per dimagrire. Gratis e su base scientifica.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://suuapp.com/calcolatore-deficit-calorico.html">
+    <meta property="og:image" content="https://suuapp.com/assets/og-image.png">
+    <meta property="og:site_name" content="Suu">
+    <meta property="og:locale" content="it_IT">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Calcolatore deficit calorico — quante calorie mi servono?">
+    <meta name="twitter:description" content="Scopri il tuo fabbisogno calorico giornaliero e un obiettivo sicuro per dimagrire. Gratis e su base scientifica.">
+    <meta name="twitter:image" content="https://suuapp.com/assets/og-image.png">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Calcolatore del deficit calorico di Suu",
+  "description": "Strumento online gratuito che calcola il fabbisogno calorico giornaliero e obiettivi di deficit sicuri da età, peso, altezza, sesso e livello di attività.",
+  "url": "https://suuapp.com/calcolatore-deficit-calorico.html",
+  "applicationCategory": "HealthApplication",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "author": {
+    "@type": "Organization",
+    "@id": "https://suuapp.com/#organization",
+    "name": "Suu",
+    "url": "https://suuapp.com"
+  },
+  "inLanguage": "it"
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "it",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Come si calcola il deficit calorico?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Prima trova il fabbisogno giornaliero: metabolismo basale (formula di Mifflin-St Jeor) per il fattore di attività. Per dimagrire mangia 250–750 kcal in meno. Se il fabbisogno è 2.200 kcal, un obiettivo di 1.700 kcal è un deficit di 500 kcal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quante calorie mangiare per dimagrire?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Circa 500 kcal in meno del fabbisogno giornaliero: per la maggior parte delle persone vuol dire circa 0,5 kg a settimana. Senza supervisione professionale non scendere sotto 1.200 kcal (donne) o 1.500 (uomini)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quanto si perde a settimana con il deficit calorico?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In modo approssimativo, un deficit di 500 kcal al giorno vale circa 0,45 kg a settimana. È una stima per le prime settimane: man mano che dimagrisci consumi meno e il calo rallenta, e parte della discesa rapida iniziale è acqua."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Metabolismo basale e fabbisogno giornaliero sono la stessa cosa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Il metabolismo basale è l'energia consumata a riposo completo; il fabbisogno giornaliero aggiunge il movimento quotidiano e l'allenamento. Basa l'obiettivo per dimagrire sul fabbisogno giornaliero, non sul basale."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Il calcolatore va bene per tutti?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "È una stima generale per adulti sani sopra i 18 anni. Se sei in gravidanza o allatti, hai una malattia cronica o una storia di disturbi alimentari o assumi farmaci, stabilisci l'obiettivo con un dietista o un medico."
+      }
+    }
+  ]
+}
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { overflow-x: hidden; }
+        body { font-family: 'Inter', -apple-system, sans-serif; color: #222; background: #fff8f0; line-height: 1.7; }
+        .navbar { background: white; padding: 0 20px; height: 64px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 10px rgba(0,0,0,0.07); position: sticky; top: 0; z-index: 100; }
+        .nav-logo { display: flex; align-items: center; gap: 8px; font-size: 20px; font-weight: 800; color: #FB8C00; text-decoration: none; }
+        .nav-links { display: flex; gap: 20px; }
+        .nav-links a { color: #555; text-decoration: none; font-size: 14px; font-weight: 500; }
+        .nav-links a:hover { color: #FB8C00; }
+        .hero { background: linear-gradient(135deg, #F57C00 0%, #FB8C00 50%, #FFB74D 100%); color: white; padding: 56px 20px 90px; text-align: center; position: relative; overflow: hidden; }
+        .hero::after { content:''; position:absolute; bottom:-1px; left:0; right:0; height:60px; background:#fff8f0; clip-path:ellipse(55% 100% at 50% 100%); }
+        .hero-badge { display:inline-block; background:rgba(255,255,255,0.2); padding:5px 16px; border-radius:20px; font-size:12px; font-weight:700; margin-bottom:18px; }
+        .hero h1 { font-size:clamp(1.8rem,4vw,2.8rem); font-weight:800; line-height:1.2; max-width:680px; margin:0 auto 14px; }
+        .hero p { font-size:1.05rem; opacity:0.95; max-width:540px; margin:0 auto; }
+        .container { max-width:900px; margin:0 auto; padding:0 20px; }
+        .section { padding:44px 0; }
+        .section-title { font-size:clamp(1.3rem,3vw,1.8rem); font-weight:800; color:#1a1a2e; margin-bottom:14px; }
+        .section p, .section li { color:#444; margin-bottom:12px; }
+        .section ul { padding-left:22px; }
+        sup a { color:#F57C00; text-decoration:none; font-weight:700; }
+        .calc-card { background:white; border-radius:24px; box-shadow:0 8px 40px rgba(245,124,0,0.12); padding:32px; margin:-40px 0 30px; position:relative; z-index:10; }
+        @media(max-width:600px){ .calc-card{ padding:22px; } }
+        .calc-steps { display:flex; gap:8px; margin-bottom:26px; }
+        .step-dot { flex:1; height:4px; border-radius:4px; background:#e5e7eb; transition:background 0.3s; }
+        .step-dot.active { background:#FB8C00; }
+        .step-dot.done { background:#FFB74D; }
+        .form-step { display:none; }
+        .form-step.active { display:block; }
+        .step-title { font-size:1.1rem; font-weight:700; color:#1a1a2e; margin-bottom:20px; }
+        .form-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px; margin-bottom:18px; }
+        @media(max-width:600px){ .form-grid{ grid-template-columns:1fr; } }
+        .form-group label { display:block; font-size:12px; font-weight:700; color:#888; text-transform:uppercase; letter-spacing:0.4px; margin-bottom:8px; }
+        .form-group input { width:100%; padding:12px 16px; border:2px solid #e5e7eb; border-radius:12px; font-size:1rem; font-family:inherit; color:#222; background:white; }
+        .form-group input:focus { outline:none; border-color:#FB8C00; }
+        .gender-row { display:flex; gap:12px; }
+        .gender-btn { flex:1; padding:12px; border:2px solid #e5e7eb; border-radius:12px; background:white; cursor:pointer; font-family:inherit; font-weight:600; color:#555; font-size:0.9rem; }
+        .gender-btn.selected { border-color:#FB8C00; background:#fff3e0; color:#E65100; }
+        .activity-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:10px; margin-bottom:18px; }
+        .activity-btn { padding:12px 10px; border:2px solid #e5e7eb; border-radius:12px; background:white; cursor:pointer; font-family:inherit; text-align:center; }
+        .activity-btn .act-icon { font-size:1.4rem; display:block; margin-bottom:6px; }
+        .activity-btn .act-label { display:block; font-size:12px; font-weight:700; color:#555; }
+        .activity-btn .act-desc { display:block; font-size:10px; color:#999; }
+        .activity-btn.selected { border-color:#FB8C00; background:#fff3e0; }
+        .btn-row { display:flex; gap:12px; margin-top:8px; }
+        .btn-back { padding:14px 22px; border:2px solid #e5e7eb; border-radius:12px; background:white; font-family:inherit; font-weight:700; color:#555; cursor:pointer; }
+        .btn-next { flex:1; padding:14px; border:none; border-radius:12px; background:linear-gradient(135deg,#F57C00,#FFB74D); color:white; font-family:inherit; font-weight:700; font-size:1rem; cursor:pointer; }
+        .error-msg { background:#fef2f2; border-left:4px solid #ef4444; padding:10px 14px; border-radius:8px; font-size:0.88rem; color:#dc2626; margin-bottom:14px; display:none; }
+        .error-msg.show { display:block; }
+        .result-top { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:22px; }
+        @media(max-width:600px){ .result-top{ grid-template-columns:1fr; } }
+        .stat { background:#fff3e0; border-radius:14px; padding:16px; text-align:center; }
+        .stat-num { font-size:1.9rem; font-weight:800; color:#E65100; line-height:1.1; }
+        .stat-label { font-size:12px; color:#8a6d55; font-weight:600; }
+        .targets-title { font-weight:800; color:#1a1a2e; margin:6px 0 12px; }
+        .plans { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+        @media(max-width:700px){ .plans{ grid-template-columns:1fr; } }
+        .plan { border:2px solid #f0e2d0; border-radius:14px; padding:14px; }
+        .plan#plan1 { border-color:#FB8C00; background:#fffaf3; }
+        .plan-head { display:flex; justify-content:space-between; gap:8px; font-size:12px; font-weight:700; color:#8a6d55; }
+        .plan-kcal { font-size:1.5rem; font-weight:800; color:#1a1a2e; margin:6px 0 2px; }
+        .plan-kcal small { font-size:0.75rem; color:#888; font-weight:600; }
+        .plan-week { font-size:0.85rem; color:#E65100; font-weight:700; }
+        .plan-note { font-size:0.75rem; color:#999; margin-top:6px; }
+        .result-msg { background:#fff3e0; border-radius:12px; padding:14px 16px; font-size:0.88rem; color:#8a4b00; margin:18px 0; }
+        .low-msg { background:#fef2f2; color:#b91c1c; }
+        .app-cta { background:linear-gradient(135deg,#F57C00,#FFB74D); border-radius:20px; padding:26px; text-align:center; color:white; margin:18px 0; }
+        .app-cta h3 { font-size:1.2rem; font-weight:800; margin-bottom:8px; }
+        .app-cta p { opacity:0.95; margin-bottom:16px; font-size:0.9rem; }
+        .store-btns { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+        .btn-store { display:inline-flex; align-items:center; gap:8px; padding:11px 20px; border-radius:50px; font-weight:700; font-size:0.88rem; text-decoration:none; }
+        .btn-ios { background:white; color:#1a1a2e; }
+        .btn-android { background:rgba(255,255,255,0.18); color:white; border:2px solid rgba(255,255,255,0.6); }
+        .restart-btn { display:inline-flex; align-items:center; gap:8px; padding:12px 22px; border:2px solid #e5e7eb; border-radius:12px; background:white; font-family:inherit; font-weight:600; color:#555; cursor:pointer; }
+        .ref-table { width:100%; border-collapse:collapse; background:white; border-radius:14px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.05); margin-top:6px; }
+        .ref-table th { background:#1a1a2e; color:white; padding:12px 16px; text-align:start; font-size:12px; font-weight:700; text-transform:uppercase; }
+        .ref-table td { padding:11px 16px; font-size:0.9rem; border-bottom:1px solid #f0f0f0; }
+        .faq-list { display:flex; flex-direction:column; gap:10px; }
+        .faq-item { background:white; border-radius:14px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.04); }
+        .faq-q { padding:16px 20px; font-weight:700; color:#1a1a2e; cursor:pointer; display:flex; justify-content:space-between; gap:12px; align-items:center; font-size:0.95rem; }
+        .faq-a { padding:0 20px; max-height:0; overflow:hidden; transition:max-height 0.3s ease, padding 0.3s; font-size:0.9rem; color:#555; }
+        .faq-a.open { max-height:400px; padding:0 20px 16px; }
+        .faq-icon { transition:transform 0.3s; color:#FB8C00; font-size:0.85rem; }
+        .faq-icon.open { transform:rotate(180deg); }
+        .refs { font-size:0.85rem; padding-left:20px; }
+        .refs a { color:#8a4b00; word-break:break-word; }
+        .rel-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px; }
+        .rel-card { background:white; border-radius:14px; padding:18px; box-shadow:0 2px 10px rgba(0,0,0,0.06); text-decoration:none; color:inherit; display:block; }
+        .rel-tag { font-size:11px; font-weight:700; color:#F57C00; text-transform:uppercase; margin-bottom:6px; }
+        .rel-title { font-weight:700; color:#222; font-size:0.9rem; }
+        .disclaimer { font-size:0.82rem; color:#999; margin-top:14px; }
+        footer { background:#1a1a2e; color:rgba(255,255,255,0.6); padding:24px 20px; text-align:center; font-size:13px; }
+        footer a { color:rgba(255,255,255,0.75); text-decoration:none; margin:0 8px; }
+        @media(max-width:600px){ .nav-links { display:none; } }
+    </style>
+    <script src="/assets/js/analytics.js" defer></script>
+    <script src="/assets/js/special-days.js" defer></script>
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="/hosgeldiniz-it.html" class="nav-logo"><img src="/assets/brand/suu-badge-128.png" alt="Suu" width="128" height="128" class="suu-logo-badge" style="height:1.6em;width:1.6em;border-radius:50%;vertical-align:-0.4em;box-shadow:0 0 0 1px rgba(255,255,255,.12),0 0 14px rgba(94,170,255,.45);"> Suu</a>
+    <div class="nav-links">
+        <a href="/hosgeldiniz-it.html">Home</a>
+        <a href="/blog-it.html">Blog</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-badge">🔥 Strumento online gratuito</div>
+    <h1>Calcolatore<br>deficit calorico</h1>
+    <p>Scopri in pochi secondi il tuo fabbisogno calorico giornaliero e un obiettivo sicuro per dimagrire.</p>
+</section>
+
+<div class="container">
+    <div class="calc-card">
+        <div class="calc-steps">
+            <div class="step-dot active" id="dot1"></div>
+            <div class="step-dot" id="dot2"></div>
+            <div class="step-dot" id="dot3"></div>
+        </div>
+        <div class="error-msg" id="errorMsg" role="alert"></div>
+
+        <div class="form-step active" id="step1">
+            <div class="step-title">I tuoi dati</div>
+            <div class="form-grid">
+                <div class="form-group"><label for="age">Età</label><input type="number" id="age" inputmode="numeric" placeholder="es. 30" min="18" max="80"></div>
+                <div class="form-group"><label for="weight">Peso (kg)</label><input type="number" id="weight" inputmode="decimal" placeholder="es. 75" min="35" max="250"></div>
+                <div class="form-group"><label for="height">Altezza (cm)</label><input type="number" id="height" inputmode="numeric" placeholder="es. 170" min="130" max="220"></div>
+            </div>
+            <div class="form-group" style="margin-bottom:18px;">
+                <label>Sesso (per la formula)</label>
+                <div class="gender-row">
+                    <button class="gender-btn" id="btnMale" onclick="selectSex('male')">♂ Uomo</button>
+                    <button class="gender-btn" id="btnFemale" onclick="selectSex('female')">♀ Donna</button>
+                </div>
+            </div>
+            <div class="btn-row"><button class="btn-next" onclick="goStep2()">Avanti</button></div>
+        </div>
+
+        <div class="form-step" id="step2">
+            <div class="step-title">Il tuo livello di attività</div>
+            <div class="activity-grid">
+                <button class="activity-btn" id="act_sedentary" onclick="selectActivity('sedentary')"><span class="act-icon">🪑</span><span class="act-label">Sedentario</span><span class="act-desc">Lavoro d&#x27;ufficio, niente sport</span></button>
+                <button class="activity-btn" id="act_light" onclick="selectActivity('light')"><span class="act-icon">🚶</span><span class="act-label">Leggero</span><span class="act-desc">1–3 giorni a settimana</span></button>
+                <button class="activity-btn" id="act_moderate" onclick="selectActivity('moderate')"><span class="act-icon">🏃</span><span class="act-label">Moderato</span><span class="act-desc">3–5 giorni a settimana</span></button>
+                <button class="activity-btn" id="act_active" onclick="selectActivity('active')"><span class="act-icon">🏋️</span><span class="act-label">Attivo</span><span class="act-desc">6–7 giorni a settimana</span></button>
+                <button class="activity-btn" id="act_extra" onclick="selectActivity('extra')"><span class="act-icon">🔥</span><span class="act-label">Molto attivo</span><span class="act-desc">Lavoro fisico + allenamento</span></button>
+            </div>
+            <div class="btn-row">
+                <button class="btn-back" onclick="goStep1()">Indietro</button>
+                <button class="btn-next" onclick="calculate()"><i class="fas fa-calculator"></i> &nbsp;Calcola</button>
+            </div>
+        </div>
+
+        <div class="form-step" id="step3">
+            <div class="result-top">
+                <div class="stat"><div class="stat-num" id="tdeeNum">—</div><div class="stat-label">Il tuo fabbisogno giornaliero (per mantenere il peso) · kcal/giorno</div></div>
+                <div class="stat"><div class="stat-num" id="bmrNum">—</div><div class="stat-label">Metabolismo basale · kcal/giorno</div></div>
+            </div>
+            <div class="targets-title">Il tuo obiettivo giornaliero per dimagrire</div>
+            <div class="plans">
+                    <div class="plan" id="plan0"><div class="plan-head"><span class="plan-name">Lieve</span><span class="plan-def">−250 kcal</span></div><div class="plan-kcal"><span id="t0">—</span> <small>kcal/giorno</small></div><div class="plan-week" id="w0"></div><div class="plan-note" id="n0"></div></div>
+                    <div class="plan" id="plan1"><div class="plan-head"><span class="plan-name">Moderato · consigliato</span><span class="plan-def">−500 kcal</span></div><div class="plan-kcal"><span id="t1">—</span> <small>kcal/giorno</small></div><div class="plan-week" id="w1"></div><div class="plan-note" id="n1"></div></div>
+                    <div class="plan" id="plan2"><div class="plan-head"><span class="plan-name">Deciso</span><span class="plan-def">−750 kcal</span></div><div class="plan-kcal"><span id="t2">—</span> <small>kcal/giorno</small></div><div class="plan-week" id="w2"></div><div class="plan-note" id="n2"></div></div>
+            </div>
+            <div class="result-msg" id="resultMsg">La stima settimanale è approssimativa e vale per le prime settimane: man mano che dimagrisci consumi meno e il calo rallenta. Guarda la media di 3–4 settimane, non una singola pesata.</div>
+            <div class="app-cta">
+                <h3>Segui il tuo obiettivo con Suu</h3>
+                <p>Inserisci il tuo obiettivo in Suu, registra i pasti a voce o con una foto e guarda nello stesso giorno cosa ha bruciato il tuo allenamento GPS.</p>
+                <div class="store-btns">
+                    <a href="/app?src=calc-deficit" class="btn-store btn-ios" data-cta="calc-deficit"><i class="fab fa-apple"></i> App Store</a>
+                    <a href="/app?src=calc-deficit" class="btn-store btn-android" data-cta="calc-deficit"><i class="fab fa-google-play"></i> Google Play</a>
+                </div>
+            </div>
+            <button class="restart-btn" onclick="restart()"><i class="fas fa-redo"></i> Ricalcola</button>
+        </div>
+    </div>
+
+    <section class="section">
+        <h2 class="section-title">Come lo calcoliamo</h2>
+        <p>Prima stimiamo il metabolismo basale (l'energia a riposo) con la formula di Mifflin-St Jeor: uomini 10 × peso + 6,25 × altezza − 5 × età + 5, donne la stessa somma − 161.<sup><a href="#ref1">1</a></sup> In una revisione sistematica è risultata la più affidabile tra le formule comuni, entro il ±10% del valore misurato nella maggior parte delle persone — un errore individuale resta possibile.<sup><a href="#ref2">2</a></sup></p>
+        <p>Poi la moltiplichiamo per un fattore di attività e otteniamo il fabbisogno giornaliero (le calorie che mantengono stabile il peso). Per dimagrire scendiamo di 250–750 kcal.</p>
+        <table class="ref-table">
+            <thead><tr><th>Livello di attività</th><th>Fattore</th></tr></thead>
+            <tbody>
+                <tr><td><strong>Sedentario</strong> — Lavoro d&#x27;ufficio, niente sport</td><td>1,2</td></tr>
+                <tr><td><strong>Leggero</strong> — 1–3 giorni a settimana</td><td>1,375</td></tr>
+                <tr><td><strong>Moderato</strong> — 3–5 giorni a settimana</td><td>1,55</td></tr>
+                <tr><td><strong>Attivo</strong> — 6–7 giorni a settimana</td><td>1,725</td></tr>
+                <tr><td><strong>Molto attivo</strong> — Lavoro fisico + allenamento</td><td>1,9</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="section" style="padding-top:0">
+        <h2 class="section-title">Quanto deficit è sicuro?</h2>
+        <ul>
+            <li>Secondo i CDC, chi perde circa 0,5–1 kg a settimana mantiene più facilmente il risultato; per la maggior parte delle persone equivale a circa 500 kcal di deficit al giorno.<sup><a href="#ref4">4</a></sup></li>
+            <li>Harvard Health consiglia, senza supervisione professionale, di non scendere sotto 1.200 kcal al giorno per le donne e 1.500 per gli uomini; il calcolatore non imposta mai un obiettivo inferiore.<sup><a href="#ref5">5</a></sup></li>
+            <li>Dimagrire non è lineare: il peso risponde lentamente a un cambiamento di energia e, man mano che dimagrisci, consumi meno.<sup><a href="#ref3">3</a></sup> Ripeti il calcolo con il nuovo peso ogni qualche settimana.</li>
+        </ul>
+    </section>
+
+    <section class="section" style="padding-top:0">
+        <h2 class="section-title">Domande frequenti</h2>
+        <div class="faq-list">
+            <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Come si calcola il deficit calorico? <i class="fas fa-chevron-down faq-icon"></i></div><div class="faq-a">Prima trova il fabbisogno giornaliero: metabolismo basale (formula di Mifflin-St Jeor) per il fattore di attività. Per dimagrire mangia 250–750 kcal in meno. Se il fabbisogno è 2.200 kcal, un obiettivo di 1.700 kcal è un deficit di 500 kcal.</div></div>
+            <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Quante calorie mangiare per dimagrire? <i class="fas fa-chevron-down faq-icon"></i></div><div class="faq-a">Circa 500 kcal in meno del fabbisogno giornaliero: per la maggior parte delle persone vuol dire circa 0,5 kg a settimana. Senza supervisione professionale non scendere sotto 1.200 kcal (donne) o 1.500 (uomini).</div></div>
+            <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Quanto si perde a settimana con il deficit calorico? <i class="fas fa-chevron-down faq-icon"></i></div><div class="faq-a">In modo approssimativo, un deficit di 500 kcal al giorno vale circa 0,45 kg a settimana. È una stima per le prime settimane: man mano che dimagrisci consumi meno e il calo rallenta, e parte della discesa rapida iniziale è acqua.</div></div>
+            <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Metabolismo basale e fabbisogno giornaliero sono la stessa cosa? <i class="fas fa-chevron-down faq-icon"></i></div><div class="faq-a">No. Il metabolismo basale è l&#x27;energia consumata a riposo completo; il fabbisogno giornaliero aggiunge il movimento quotidiano e l&#x27;allenamento. Basa l&#x27;obiettivo per dimagrire sul fabbisogno giornaliero, non sul basale.</div></div>
+            <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Il calcolatore va bene per tutti? <i class="fas fa-chevron-down faq-icon"></i></div><div class="faq-a">È una stima generale per adulti sani sopra i 18 anni. Se sei in gravidanza o allatti, hai una malattia cronica o una storia di disturbi alimentari o assumi farmaci, stabilisci l&#x27;obiettivo con un dietista o un medico.</div></div>
+        </div>
+        <p class="disclaimer">Questo strumento fornisce informazioni generali e non è un consiglio medico. Per le tue esigenze personali rivolgiti a un professionista sanitario.</p>
+    </section>
+
+    <section class="section" style="padding-top:0">
+        <h2 class="section-title">Fonti</h2>
+        <ol class="refs">
+            <li id="ref1"><a href="https://pubmed.ncbi.nlm.nih.gov/2305711/" target="_blank" rel="noopener">Mifflin MD et al. — A new predictive equation for resting energy expenditure in healthy individuals. Am J Clin Nutr, 1990</a></li>
+            <li id="ref2"><a href="https://pubmed.ncbi.nlm.nih.gov/15883556/" target="_blank" rel="noopener">Frankenfield D et al. — Comparison of predictive equations for resting metabolic rate in healthy nonobese and obese adults: a systematic review. J Am Diet Assoc, 2005</a></li>
+            <li id="ref3"><a href="https://pubmed.ncbi.nlm.nih.gov/21872751/" target="_blank" rel="noopener">Hall KD et al. — Quantification of the effect of energy imbalance on bodyweight. Lancet, 2011</a></li>
+            <li id="ref4"><a href="https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html" target="_blank" rel="noopener">CDC — Losing Weight</a></li>
+            <li id="ref5"><a href="https://www.health.harvard.edu/staying-healthy/calorie-counting-made-easy" target="_blank" rel="noopener">Harvard Health Publishing — Calorie counting made easy</a></li>
+            <li id="ref6"><a href="https://www.crea.gov.it/web/alimenti-e-nutrizione/-/linee-guida-per-una-sana-alimentazione-2018" target="_blank" rel="noopener">CREA — Linee guida per una sana alimentazione (revisione 2018)</a></li>
+        </ol>
+    </section>
+
+    <section class="section" style="padding-top:0; padding-bottom:48px;">
+        <h2 class="section-title">Strumenti e articoli correlati</h2>
+        <div class="rel-grid">
+            <a class="rel-card" href="/blog/it/deficit-calorico.html"><div class="rel-tag">Blog</div><div class="rel-title">Che cos&#x27;è il deficit calorico?</div></a>
+            <a class="rel-card" href="/blog/it/calcolo-macro.html"><div class="rel-tag">Blog</div><div class="rel-title">Calcolo dei macro</div></a>
+            <a class="rel-card" href="/blog/it/perche-non-dimagrisco.html"><div class="rel-tag">Guida</div><div class="rel-title">Perché non dimagrisco?</div></a>
+            <a class="rel-card" href="/blog/it/camminare-o-correre-per-dimagrire.html"><div class="rel-tag">Guida</div><div class="rel-title">Camminare o correre per dimagrire?</div></a>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>© 2026 Suu &nbsp;|&nbsp;
+        <a href="/hosgeldiniz-it.html">Home</a>
+        <a href="/gizlilik-politikasi.html">Privacy</a>
+    </p>
+    <p style="margin-top:6px;font-size:11px;opacity:0.6;">Sviluppato da <a href="https://www.linkedin.com/in/furkanfindikli/" target="_blank" rel="noopener">Furkan Mert Fındıklı</a> — Istanbul, Turchia</p>
+</footer>
+
+<script>
+const S = {"err_age": "Inserisci un'età valida (18–80)", "err_weight": "Inserisci un peso valido (35–250 kg)", "err_height": "Inserisci un'altezza valida (130–220 cm)", "err_sex": "Seleziona il sesso", "err_act": "Seleziona il livello di attività", "week": "≈ {v} kg/settimana", "floor": "Questo obiettivo è stato alzato al minimo consigliato senza supervisione professionale ({f} kcal).", "low": "Il tuo fabbisogno stimato è sotto il minimo consigliato senza supervisione professionale ({f} kcal). Invece di un deficit, pianifica con un dietista o un medico.", "num": "it-IT"};
+const MULT = {"sedentary": 1.2, "light": 1.375, "moderate": 1.55, "active": 1.725, "extra": 1.9};
+let sex = null, activity = null;
+function fmt(n) { return Math.round(n).toLocaleString(S.num); }
+function fmt1(n) { return (Math.round(n * 100) / 100).toLocaleString(S.num, { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
+function showError(msg) {
+    const el = document.getElementById('errorMsg');
+    el.textContent = msg; el.classList.add('show');
+    setTimeout(() => el.classList.remove('show'), 3500);
+}
+function selectSex(s) {
+    sex = s;
+    document.getElementById('btnMale').classList.toggle('selected', s === 'male');
+    document.getElementById('btnFemale').classList.toggle('selected', s === 'female');
+}
+function selectActivity(a) {
+    activity = a;
+    Object.keys(MULT).forEach(k => document.getElementById('act_' + k).classList.toggle('selected', k === a));
+}
+function val(id) { return parseFloat(String(document.getElementById(id).value).replace(',', '.')); }
+function goStep1() {
+    document.getElementById('step2').classList.remove('active');
+    document.getElementById('step1').classList.add('active');
+    document.getElementById('dot2').classList.remove('active', 'done');
+    document.getElementById('dot1').classList.add('active');
+}
+function goStep2() {
+    const age = val('age'), weight = val('weight'), height = val('height');
+    if (!age || age < 18 || age > 80) { showError(S.err_age); return; }
+    if (!weight || weight < 35 || weight > 250) { showError(S.err_weight); return; }
+    if (!height || height < 130 || height > 220) { showError(S.err_height); return; }
+    if (!sex) { showError(S.err_sex); return; }
+    document.getElementById('step1').classList.remove('active');
+    document.getElementById('step2').classList.add('active');
+    document.getElementById('dot1').classList.remove('active');
+    document.getElementById('dot1').classList.add('done');
+    document.getElementById('dot2').classList.add('active');
+}
+function calculate() {
+    if (!activity) { showError(S.err_act); return; }
+    const age = val('age'), weight = val('weight'), height = val('height');
+    // Mifflin-St Jeor (1990)
+    const bmr = 10 * weight + 6.25 * height - 5 * age + (sex === 'male' ? 5 : -161);
+    const tdee = bmr * MULT[activity];
+    const floor = sex === 'male' ? 1500 : 1200;   // Harvard Health: uzman gözetimi olmadan alt sınır
+    document.getElementById('bmrNum').textContent = fmt(bmr);
+    document.getElementById('tdeeNum').textContent = fmt(tdee);
+    const msg = document.getElementById('resultMsg');
+    const low = tdee <= floor;
+    [250, 500, 750].forEach((d, i) => {
+        let target = tdee - d, note = '';
+        if (target < floor) { target = Math.min(floor, tdee); note = S.floor.replace('{f}', fmt(floor)); }
+        const eff = Math.max(0, tdee - target);
+        document.getElementById('t' + i).textContent = fmt(target);
+        document.getElementById('w' + i).textContent = eff > 0 ? S.week.replace('{v}', fmt1(eff * 7 / 7700)) : '';
+        document.getElementById('n' + i).textContent = note;
+    });
+    if (low) { msg.textContent = S.low.replace('{f}', fmt(floor)); msg.classList.add('low-msg'); }
+    else { msg.classList.remove('low-msg'); }
+    document.getElementById('step2').classList.remove('active');
+    document.getElementById('step3').classList.add('active');
+    document.getElementById('dot2').classList.remove('active');
+    document.getElementById('dot2').classList.add('done');
+    document.getElementById('dot3').classList.add('active', 'done');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+function restart() {
+    sex = null; activity = null;
+    ['age', 'weight', 'height'].forEach(id => document.getElementById(id).value = '');
+    ['btnMale', 'btnFemale'].forEach(id => document.getElementById(id).classList.remove('selected'));
+    Object.keys(MULT).forEach(k => document.getElementById('act_' + k).classList.remove('selected'));
+    document.getElementById('step3').classList.remove('active');
+    document.getElementById('step1').classList.add('active');
+    document.getElementById('dot1').classList.add('active');
+    document.getElementById('dot1').classList.remove('done');
+    ['dot2', 'dot3'].forEach(id => document.getElementById(id).classList.remove('active', 'done'));
+    document.getElementById('resultMsg').classList.remove('low-msg');
+}
+function toggleFaq(el) {
+    el.nextElementSibling.classList.toggle('open');
+    el.querySelector('.faq-icon').classList.toggle('open');
+}
+</script>
+<script src="/lang-switcher.js?v=3" defer></script>
+<script src="/assets/js/suu-badge.js?v=2" defer></script>
+</body>
+</html>

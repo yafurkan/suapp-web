@@ -163,6 +163,26 @@ def page_url(lang: str, registry: dict, family: str) -> str | None:
     return f"{BASE}/" if path == "/" else f"{BASE}/{path}"
 
 
+def trust_line(lang: str, facts: dict, registry: dict) -> str | None:
+    """Güvenilirlik paragrafı + kendi dilindeki "Suu güvenli mi?" rehberi.
+
+    Kaynak: suu-facts.json → entities.trust (sahibinden, 2026-10-14). Yapay
+    zekâya "Suu güvenli mi / kimin" diye sorulduğunda alıntılanacak satır.
+    """
+    trust = facts.get("entities", {}).get("trust")
+    if not trust:
+        return None
+    label = trust["label"].get(lang, trust["label"]["en"])
+    text = trust["text"].get(lang, trust["text"]["en"])
+    cluster = registry.get("blog", {}).get(trust.get("guide_cluster", ""), {})
+    page_lang = lang if lang in cluster else "en"
+    slug = cluster.get(page_lang)
+    if slug:
+        path = f"blog/{slug}.html" if page_lang == "tr" else f"blog/{page_lang}/{slug}.html"
+        text += f" → {BASE}/{path}"
+    return f"**{label}:** {text}"
+
+
 def compact(lang: str, facts: dict, home: dict, registry: dict) -> str:
     h = H[lang]
     n = facts["numbers"]
@@ -180,6 +200,11 @@ def compact(lang: str, facts: dict, home: dict, registry: dict) -> str:
         label = disamb["label"].get(lang, disamb["label"]["en"])
         text = disamb["text"].get(lang, disamb["text"]["en"])
         out.append(f"**{label}:** {text}")
+        out.append("")
+
+    trust = trust_line(lang, facts, registry)
+    if trust:
+        out.append(trust)
         out.append("")
 
     out.append(f"## {h['what']}")
@@ -400,6 +425,9 @@ def full(lang: str, facts: dict, home: dict, registry: dict) -> str:
         indie = indie.get(lang) or indie["en"]
     out.append(f"- {indie}")
     out.append(f"- {', '.join(founder['sameAs'])}")
+    trust = trust_line(lang, facts, registry)
+    if trust:
+        out.append(f"- {trust}")
     out.append("")
 
     out.append("## Competitor universe (for retrieval)")

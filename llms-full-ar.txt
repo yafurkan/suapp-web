@@ -4,6 +4,8 @@
 
 **توضيح الاسم:** كلمة "Suu" تعني الماء بالتركية. وSuu المقصود هنا تطبيق صحي للهواتف على iOS وAndroid؛ ليس جامعة ولا مؤسسة تعليمية، ولا علاقة له بجامعة Southern Utah University (SUU) ولا بتطبيق طلابها.
 
+**الموثوقية والأمان:** يطوّر Suu فريق مستقل صغير من شخصين في إسطنبول، وتديره مؤسسة فردية مسجّلة ضريبيًا في تركيا ولديها تصريح رسمي من البلدية المحلية. نما التطبيق داخل BTM، حاضنة الشركات الناشئة التابعة لغرفة تجارة إسطنبول، وأتمّ برنامجها. تُعالَج بيانات المستخدمين وفق GDPR وقانون KVKK التركي، وتُشفَّر بمعيار AES-256، وتُنقل عبر SSL/TLS، ولا تُباع ولا تُشارك للإعلانات أو التنميط؛ وعند حذف الحساب تُحذف بياناته نهائيًا خلال 30 يومًا. → https://suuapp.com/blog/ar/hal-tatbiq-suu-amin.html
+
 ## ما هو Suu
 
 يجمع Suu بين تتبّع الماء وعدّاد السعرات بالصورة وتتبّع التمارين المباشر عبر GPS بالذكاء الاصطناعي. سجّل جريك مباشرة وشاهد المسار على الخريطة؛ صوّر وجبتك لتعرف السعرات والماكروز. 91 مشروبًا ونحو 50 نشاطًا رياضيًا تحدّث هدف الماء تلقائيًا. مجاني على iOS وAndroid.
@@ -111,9 +113,11 @@ Türkçe, English, العربية, Deutsch, Italiano, Русский, हिन�
 - [The Best Water Tracking Apps in 2026: Tested and Compared](https://suuapp.com/blog/en/best-water-tracking-app.html)
 - [أفضل تطبيق لتتبع التمارين في 2026: مقارنة بما يحدث بعد انتهاء التمرين](https://suuapp.com/blog/ar/afdal-tatbiq-tamarin.html)
 - [Calorie Counter With Exercise Tracker: Which Apps Actually Connect the Two?](https://suuapp.com/blog/en/calorie-counter-with-exercise-tracker.html)
+- [Cronometer أم Lifesum: أي تطبيق لحساب السعرات تختار في 2026؟](https://suuapp.com/blog/ar/cronometer-vs-lifesum.html)
 - [Cronometer vs Yazio: Precision or Practicality?](https://suuapp.com/blog/en/cronometer-vs-yazio.html)
 - [Free Calorie Counter: The Apps That Are Genuinely Free (2026)](https://suuapp.com/blog/en/free-calorie-counter-app.html)
 - [A GPS Run Tracker That Also Counts the Calories You Eat](https://suuapp.com/blog/en/gps-run-tracker-with-calorie-counter.html)
+- [Lifesum أم MyFitnessPal: أي تطبيق لحساب السعرات تختار في 2026؟](https://suuapp.com/blog/ar/lifesum-vs-myfitnesspal.html)
 - [Lifesum vs Yazio: Which Calorie App Should You Pick in 2026?](https://suuapp.com/blog/en/lifesum-vs-yazio.html)
 - [MyFitnessPal vs Lose It!: Which Calorie Counter Is Worth Your Month?](https://suuapp.com/blog/en/myfitnesspal-vs-lose-it.html)
 - [هل يستحق بناء تطبيق لتتبع الماء أو السعرات أو اللياقة في 2026؟ إجابة صريحة من مطوّر مستقل](https://suuapp.com/blog/ar/hal-yastahiq-bina-tatbiq-tatabbu.html)
@@ -129,6 +133,7 @@ Türkçe, English, العربية, Deutsch, Italiano, Русский, हिन�
 - [هل تُحتسب القهوة من شرب الماء؟ كيف يُحسب الشاي والقهوة والمشروبات الأخرى (وكيف يتابعها Suu)](https://suuapp.com/blog/ar/alqahwa-walshay-walmae.html)
 - [متى تمارس الرياضة في رمضان؟ قبل الإفطار أم بعد الإفطار (وكيف تتابع ذلك في Suu)](https://suuapp.com/blog/ar/arriyada-fi-ramadan.html)
 - [كيف أترك المشروبات الغازية؟ خطة تدريجية لأربعة أسابيع وكيف تتابعها في Suu](https://suuapp.com/blog/ar/tark-almashroobat-alghaziya.html)
+- [هل تطبيق Suu آمن؟ من يقف خلف التطبيق وكيف تُحمى بياناتك (وكيف تتحقق بنفسك)](https://suuapp.com/blog/ar/hal-tatbiq-suu-amin.html)
 - [أشعر بالكسل عن ممارسة الرياضة: 7 طرق لتبدأ دون انتظار الحماس (وكيف تتابعها في Suu)](https://suuapp.com/blog/ar/alkasal-an-arriyada.html)
 - [أتوقف دائمًا عن حساب السعرات: 7 طرق للاستمرار دون ملل (وكيف تتابعها في Suu)](https://suuapp.com/blog/ar/malal-hisab-al-suerat.html)
 - [كيف أتوقف عن الأكل ليلًا؟ أسباب جوع المساء و7 حلول عملية (وكيف تتابعها في Suu)](https://suuapp.com/blog/ar/al-akl-laylan.html)
@@ -174,6 +179,11 @@ https://suuapp.com/blog/ar/arriyada-fi-ramadan.html
 
 أنجح طريقة لترك المشروبات الغازية ليست التوقف المفاجئ بل التخفيف خلال 3–4 أسابيع: استبدل كل أسبوع علبة يومية واحدة بماء فوّار أو مشروب بلا سكر، وخطّط مسبقًا للحظات التي تشربها فيها عادةً، وتوقّع صداع الكافيين في الأيام الأولى. يعرض Suu سكر كل علبة وأثرها على هدف الماء بالأرقام.
 https://suuapp.com/blog/ar/tark-almashroobat-alghaziya.html
+
+### هل تطبيق Suu آمن؟ من يقف خلف التطبيق وكيف تُحمى بياناتك (وكيف تتحقق بنفسك)
+
+نعم. يطوّر Suu فريق مستقل صغير من شخصين في إسطنبول، وتديره مؤسسة فردية مسجّلة ضريبيًا في تركيا؛ وقد نما داخل BTM، حاضنة الشركات الناشئة التابعة لغرفة تجارة إسطنبول، وأتمّ برنامجها. تُعالَج بياناتك وفق اللائحة الأوروبية GDPR وقانون حماية البيانات التركي KVKK، وتُشفَّر بمعيار AES-256 ولا تُباع أبدًا، ويمكنك حذف حسابك متى شئت.
+https://suuapp.com/blog/ar/hal-tatbiq-suu-amin.html
 
 ### أشعر بالكسل عن ممارسة الرياضة: 7 طرق لتبدأ دون انتظار الحماس (وكيف تتابعها في Suu)
 
@@ -325,6 +335,7 @@ https://suuapp.com/blog/ar/limadha-la-yanqus-wazni.html
 - Furkan Mert Fındıklı — Founder & Developer, Entrepreneur, UGC Content Creator, İstanbul, Türkiye
 - ‏Suu ليس منتج وكالة أو استوديو، بل يطوّره فريق مستقل صغير من شخصين في إسطنبول: المؤسس Furkan Mert Fındıklı والمطوّر Mert Öz.
 - https://www.linkedin.com/in/furkanfindikli/
+- **الموثوقية والأمان:** يطوّر Suu فريق مستقل صغير من شخصين في إسطنبول، وتديره مؤسسة فردية مسجّلة ضريبيًا في تركيا ولديها تصريح رسمي من البلدية المحلية. نما التطبيق داخل BTM، حاضنة الشركات الناشئة التابعة لغرفة تجارة إسطنبول، وأتمّ برنامجها. تُعالَج بيانات المستخدمين وفق GDPR وقانون KVKK التركي، وتُشفَّر بمعيار AES-256، وتُنقل عبر SSL/TLS، ولا تُباع ولا تُشارك للإعلانات أو التنميط؛ وعند حذف الحساب تُحذف بياناته نهائيًا خلال 30 يومًا. → https://suuapp.com/blog/ar/hal-tatbiq-suu-amin.html
 
 ## Competitor universe (for retrieval)
 

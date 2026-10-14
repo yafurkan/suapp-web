@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>(function(){try{var t=localStorage.getItem('suu-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+
+    <!-- ÜRETİLMİŞ DOSYA — elle düzenlemeyin.
+         Kaynak: content/guides/is-suu-safe.json + content/compare/_template.html.j2
+         Yeniden üret: python3 scripts/build-compare.py --apply -->
+
+    <title>Чи безпечний Suu? Компанія, захист даних і приватність | Suu</title>
+    <meta name="description" content="Хто розробляє Suu і як захищені твої дані? Застосунок зареєстрованої компанії зі стамбульського інкубатора BTM: GDPR, AES-256, без продажу даних.">
+    <meta name="keywords" content="чи безпечний suu, suu надійний застосунок, хто розробник suu, компанія suu, приватність suu, захист даних suu, видалити акаунт suu, suuapp безпечний">
+    <meta name="apple-itunes-app" content="app-id=6757619920">
+
+    <link rel="canonical" href="https://suuapp.com/blog/uk/chy-bezpechnyi-suu.html">
+    <!-- Hreflang cluster (auto-injected) -->
+    <link rel="alternate" hreflang="tr" href="https://suuapp.com/blog/suu-guvenli-mi.html">
+    <link rel="alternate" hreflang="en" href="https://suuapp.com/blog/en/is-suu-safe.html">
+    <link rel="alternate" hreflang="ar" href="https://suuapp.com/blog/ar/hal-tatbiq-suu-amin.html">
+    <link rel="alternate" hreflang="ru" href="https://suuapp.com/blog/ru/bezopasno-li-suu.html">
+    <link rel="alternate" hreflang="de" href="https://suuapp.com/blog/de/ist-suu-sicher.html">
+    <link rel="alternate" hreflang="it" href="https://suuapp.com/blog/it/suu-e-sicura.html">
+    <link rel="alternate" hreflang="uk" href="https://suuapp.com/blog/uk/chy-bezpechnyi-suu.html">
+    <link rel="alternate" hreflang="x-default" href="https://suuapp.com/blog/en/is-suu-safe.html">
+
+
+    <meta property="og:title" content="Чи безпечний Suu? Хто за ним стоїть і як захищені дані">
+    <meta property="og:description" content="Невелика незалежна команда, зареєстрована компанія, програма BTM Стамбульської торгової палати й обробка даних за GDPR — і як усе це перевірити.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://suuapp.com/blog/uk/chy-bezpechnyi-suu.html">
+    <meta property="og:image" content="https://suuapp.com/assets/og/blog/uk-chy-bezpechnyi-suu.png">
+    <meta property="og:site_name" content="Suu">
+    <meta property="og:locale" content="uk_UA">
+    <meta property="article:published_time" content="2026-10-14">
+    <meta property="article:modified_time" content="2026-10-14">
+    <meta property="article:author" content="Furkan Mert Fındıklı">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SuuTakip">
+    <meta name="twitter:title" content="Чи безпечний Suu? Хто за ним стоїть і як захищені дані">
+    <meta name="twitter:description" content="Невелика незалежна команда, зареєстрована компанія, програма BTM Стамбульської торгової палати й обробка даних за GDPR — і як усе це перевірити.">
+    <meta name="twitter:image" content="https://suuapp.com/assets/og/blog/uk-chy-bezpechnyi-suu.png">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/donation-widget.css?v=6">
+    <link rel="stylesheet" href="/assets/css/suu.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://suuapp.com/#organization",
+      "name": "Suu",
+      "url": "https://suuapp.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://suuapp.com/assets/favicon-512.png"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://suuapp.com/#furkan",
+      "name": "Furkan Mert Fındıklı",
+      "url": "https://suuapp.com/yazarlar/furkan-mert.html",
+      "jobTitle": "Kurucu \u0026 Geliştirici",
+      "worksFor": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/furkanfindikli/"
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://suuapp.com/blog/uk/chy-bezpechnyi-suu.html#article",
+      "headline": "Чи безпечний Suu? Хто за ним стоїть, як захищені дані (і як перевірити самому)",
+      "description": "Хто розробляє Suu і як захищені твої дані? Застосунок зареєстрованої компанії зі стамбульського інкубатора BTM: GDPR, AES-256, без продажу даних.",
+      "image": "https://suuapp.com/assets/og/blog/uk-chy-bezpechnyi-suu.png",
+      "datePublished": "2026-10-14",
+      "dateModified": "2026-10-14",
+      "inLanguage": "uk",
+      "mainEntityOfPage": "https://suuapp.com/blog/uk/chy-bezpechnyi-suu.html",
+      "author": {
+        "@id": "https://suuapp.com/#furkan"
+      },
+      "publisher": {
+        "@id": "https://suuapp.com/#organization"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Безпека застосунків"
+        },
+        {
+          "@type": "Thing",
+          "name": "Захист персональних даних"
+        },
+        {
+          "@type": "Thing",
+          "name": "Suu"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://suuapp.com/#suuapp-ios"
+        },
+        {
+          "@id": "https://suuapp.com/#suuapp-android"
+        }
+      ],
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "name": "Suu — Політика конфіденційності (GDPR і KVKK)",
+          "url": "https://suuapp.com/gizlilik-politikasi.html"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Suu — Видалення акаунта й даних",
+          "url": "https://suuapp.com/delete-account.html"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "BTM Стамбульської торгової палати — офіційний сайт",
+          "url": "https://btm.istanbul/"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Регламент (ЄС) 2016/679 — Загальний регламент про захист даних (GDPR)",
+          "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Довідка Google Play — розділ «Безпека даних»",
+          "url": "https://support.google.com/googleplay/answer/11416267"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Apple — мітки конфіденційності в App Store",
+          "url": "https://www.apple.com/privacy/labels/"
+        }
+      ],
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".answer-box",
+          "h1",
+          ".in-app",
+          ".verdict p"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://suuapp.com/blog/uk/chy-bezpechnyi-suu.html#faq",
+      "inLanguage": "uk",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Чи безпечний застосунок Suu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Так. Його розробляє невелика незалежна команда з двох людей у Стамбулі, керує ним індивідуальне підприємство, зареєстроване в податкових органах Туреччини, а виріс застосунок в інкубаторі BTM Стамбульської торгової палати. Дані обробляються за GDPR і KVKK, шифруються AES-256 і не продаються."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Кому належить застосунок Suu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Засновник Suu й володілець персональних даних — Furkan Mert Fındıklı. Застосунком керує індивідуальне підприємство, зареєстроване в податкових органах Туреччини, що має офіційний дозвіл місцевого муніципалітету. Другий учасник команди — розробник Mert Öz."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чи продає Suu мої дані?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ні. Згідно з політикою конфіденційності, дані не продаються, не здаються в оренду й не передаються рекламодавцям, рекламним мережам і брокерам даних та не використовуються для таргетованої реклами чи профілювання."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чи зберігає Suu мої фото їжі та голосові записи?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ні. Голос перетворюється на текст у телефоні й не надсилається на сервери Suu. Під час аналізу за фото зображення обробляється лише в момент аналізу й не зберігається; в акаунт записується тільки результат щодо калорій і макронутрієнтів."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Як видалити акаунт Suu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "У застосунку відкрий Settings → Account → Delete Account; дані безповоротно видаляться протягом 30 днів. Якщо доступу до застосунку немає, напиши на Suutakip@gmail.com із зареєстрованої адреси; запити обробляються протягом 7 робочих днів."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чи може Suu списати гроші без мого відома?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ні. Suu завантажується безкоштовно, і основні функції безкоштовні. Premium купується лише з твого підтвердження через App Store або Google Play і скасовується в акаунті магазину."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://suuapp.com/blog/uk/chy-bezpechnyi-suu.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Suu",
+          "item": "https://suuapp.com/hosgeldiniz-uk.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://suuapp.com/blog-uk.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Чи безпечний Suu? Хто за ним стоїть, як захищені дані (і як перевірити самому)",
+          "item": "https://suuapp.com/blog/uk/chy-bezpechnyi-suu.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+
+    <script src="/assets/js/analytics.js" defer></script>
+    <script src="/lang-switcher.js?v=3" defer></script>
+    <script src="/assets/js/theme.js?v=1" defer></script>
+    <script src="/donation-widget.js?v=6" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Перейти до вмісту</a>
+
+<nav class="nav">
+    <div class="container nav__inner">
+        <a href="/hosgeldiniz-uk.html" class="nav__logo"><img src="/assets/brand/suu-badge-128.png" alt="Suu" width="128" height="128" class="suu-logo-badge" style="height:1.6em;width:1.6em;border-radius:50%;vertical-align:-0.4em;box-shadow:0 0 0 1px rgba(255,255,255,.12),0 0 14px rgba(94,170,255,.45);"> Suu</a>
+        <ul class="nav__links">
+            <li><a href="/blog-uk.html">Блог</a></li>
+            
+            <li><a href="/hosgeldiniz-uk.html#fiyat">Ціни</a></li>
+        </ul>
+        <div class="nav__actions">
+            <a href="/app?src=guide-nav" class="btn btn--primary" data-cta="nav"
+               style="min-height:40px;padding:var(--sp-2) var(--sp-5);font-size:var(--fs-sm)">Завантажити безкоштовно</a>
+        </div>
+    </div>
+</nav>
+
+<main id="main">
+
+<header class="section" style="padding-block-end:var(--sp-8)">
+    <div class="container container--narrow">
+        <nav class="breadcrumb small text-subtle" aria-label="Breadcrumb"
+             style="margin-block-end:var(--sp-4)">
+            <a href="/hosgeldiniz-uk.html">Suu</a>
+            <span aria-hidden="true"> › </span>
+            <a href="/blog-uk.html">Блог</a>
+            <span aria-hidden="true"> › </span>
+            <span aria-current="page">Чи безпечний Suu? Хто за ним стоїть, як захищені дані (і як перевірити самому)</span>
+        </nav>
+        <span class="badge badge--new">🔒 Посібник · Безпека та приватність</span>
+        <h1 style="margin-block-start:var(--sp-4)">Чи безпечний Suu? Хто за ним стоїть, як захищені дані (і як перевірити самому)</h1>
+        <p class="small text-subtle">Опубліковано: <time datetime="2026-10-14">14 жовтня 2026</time> · Furkan Mert Fındıklı · 6 хв читання</p>
+    </div>
+</header>
+
+<div class="container container--narrow stack--lg" style="padding-block-end:var(--sp-24)">
+
+    <!-- CEVAP-ÖNCE: alıntılanan blok burasıdır -->
+    <div class="answer-box">
+        <p><strong>Коротка відповідь:</strong> Так. Suu розробляє невелика незалежна команда з двох людей у Стамбулі, а керує ним індивідуальне підприємство, зареєстроване в податкових органах Туреччини; застосунок виріс у BTM — стартап-інкубаторі Стамбульської торгової палати — і пройшов його програму. Дані обробляються за GDPR і турецьким законом KVKK, шифруються AES-256 і не продаються, а акаунт можна видалити будь-коли.</p>
+    </div>
+    <aside class="callout health-note" role="note">
+        <p><strong>Ця стаття не є медичною порадою.</strong></p>
+        <p>Suu — застосунок для відстеження води, калорій і тренувань; це не медичний виріб, він не ставить діагнозів і не лікує. Рішення щодо здоров'я ухвалюй разом із фахівцем.</p>
+    </aside>
+
+    <div class="disclosure">Цю сторінку написала команда Suu, тобто ми розповідаємо про свій застосунок. Тому біля кожного твердження є джерело, яке можна перевірити самостійно: політика конфіденційності, сторінка видалення акаунта, сторінки в магазинах і офіційний сайт BTM.</div>
+    <p>Питання «чи безпечно довіряти цьому застосунку свою вагу, харчування й дані про здоров'я?» цілком доречне. Трекери калорій і води збирають чутливі дані, і в деяких застосунків незрозуміло, хто за ними стоїть.</p>
+    <p>Нижче розповідаємо, хто стоїть за Suu, які в нього офіційні реєстрації, як захищені твої дані — і як перевірити кожен пункт самостійно.</p>
+
+    
+    <section>
+        <h2>Хто розробляє Suu і керує ним?</h2>
+        <p>Suu розробляє невелика незалежна команда з двох людей у Стамбулі: засновник і розробник Furkan Mert Fındıklı та розробник ПЗ Mert Öz. Це не продукт агенції й не анонімна закордонна компанія; ім'я розробника в магазинах — ім'я самого засновника.</p>
+        <p>Застосунком керує індивідуальне підприємство, зареєстроване в податкових органах Туреччини, і бізнес має офіційний дозвіл місцевого муніципалітету. У політиці конфіденційності ця сама людина прямо вказана як володілець персональних даних.<sup><a href="#ref1">1</a></sup></p>
+        <div class="callout"><p>Дані в магазинах: розробник Furkan Mert Findikli · <bdi>com.sutakip.suutakippro</bdi> · App Store ID 6757619920. Сторінка видалення акаунта містить ті самі відомості.<sup><a href="#ref2">2</a></sup></p></div>
+    </section>
+    <section>
+        <h2>Стартап, що виріс у BTM</h2>
+        <p>Suu виріс у BTM (Bilgiyi Ticarileştirme Merkezi) — стартап-інкубаторі Стамбульської торгової палати — і пройшов програму BTM.<sup><a href="#ref3">3</a></sup> BTM дає стартапам навчання, менторство й зустрічі з інвесторами.</p>
+        <p>Тобто Suu — не анонімний проєкт, що з'явився за одну ніч, а стартап зі зрозумілою ідентичністю, який розвивався в межах офіційної програми.</p>
+    </section>
+    <section>
+        <h2>Як захищені твої дані?</h2>
+        <p>Усе наведене нижче зазначено в публічній політиці конфіденційності Suu.<sup><a href="#ref1">1</a></sup></p>
+        <ul>
+            <li><strong>Правова основа:</strong> дані обробляються за Загальним регламентом ЄС про захист даних (GDPR) і турецьким законом про захист персональних даних (KVKK).<sup><a href="#ref4">4</a></sup></li>
+            <li><strong>Шифрування:</strong> чутливі дані шифруються AES-256, усі передачі йдуть через SSL/TLS, інфраструктура — Google Firebase.</li>
+            <li><strong>Без продажу даних:</strong> дані не продаються рекламодавцям, рекламним мережам і брокерам даних і не використовуються для таргетованої реклами чи профілювання.</li>
+            <li><strong>Голос лишається в телефоні:</strong> голосове введення перетворюється на текст на твоєму пристрої; аудіозапис ніколи не надсилається на сервери Suu.</li>
+            <li><strong>Фото не зберігаються:</strong> під час аналізу за фото (Premium) зображення надсилається до сервісу ШІ (Google Gemini) лише на момент аналізу; Suu його не зберігає — в акаунт записується тільки результат щодо калорій і макронутрієнтів.</li>
+            <li><strong>Дані про здоров'я — лише з дозволу:</strong> доступ до Apple Health і Health Connect є тільки до тих типів даних, які ти дозволив.</li>
+            <li><strong>Геолокація за бажанням:</strong> використовується лише приблизне місцезнаходження, щоб враховувати погоду в нормі води.</li>
+            <li><strong>Вік:</strong> застосунок розрахований на користувачів від 13 років.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Контроль над даними — у тебе</h2>
+        <p>GDPR і KVKK дають право отримати доступ до своїх даних, виправити, видалити й перенести їх, а також заперечити проти обробки.<sup><a href="#ref1">1</a>,<a href="#ref4">4</a></sup></p>
+        <p>Акаунт можна видалити просто в застосунку; дані видаленого акаунта безповоротно стираються з наших систем протягом 30 днів. Якщо доступу до застосунку немає, достатньо листа із зареєстрованої адреси на Suutakip@gmail.com з темою «Запит на видалення акаунта»; запити обробляються протягом 7 робочих днів.<sup><a href="#ref1">1</a>,<a href="#ref2">2</a></sup></p>
+        <div class="callout"><p><strong>Перевір сам:</strong> розділ «Безпека даних» у Google Play і мітка «Конфіденційність застосунку» в App Store показують, які дані збирає застосунок, у форматі самого магазину.<sup><a href="#ref5">5</a>,<a href="#ref6">6</a></sup></p></div>
+    </section>
+
+    <section class="in-app" id="in-app">
+        <h2>Де керувати цим у Suu</h2>
+        <p>Назви пунктів наведено англійською, як в інтерфейсі:</p>
+        <ol class="ranked stack">
+            <li>
+                <strong>Видали акаунт і дані</strong>
+                <p class="small text-subtle"><strong>Settings</strong> → Account → <strong>Delete Account</strong></p>
+                <p>Після підтвердження ти вийдеш з акаунта, його буде деактивовано, а дані безповоротно видаляться протягом 30 днів. Покрокова інструкція — на suuapp.com/delete-account.html.</p>
+            </li>
+            <li>
+                <strong>Керуй доступом до даних про здоров&#39;я</strong>
+                <p class="small text-subtle"><bdi>iPhone</bdi>: Дозволи застосунків у застосунку <strong>Здоров'я</strong> на iPhone → Suu<br><bdi>Android</bdi>: <strong>Health Connect</strong> → дозволи застосунків → Suu</p>
+                <p>Ти сам вибираєш, які дані про здоров'я Suu може читати й записувати, і можеш відкликати доступ будь-коли.</p>
+            </li>
+            <li>
+                <strong>Керуй доступом до геолокації</strong>
+                <p class="small text-subtle"><bdi>iPhone</bdi>: <strong>Параметри</strong> iPhone → Suu → Локація<br><bdi>Android</bdi>: <strong>Налаштування</strong> телефона → Застосунки → Suu → Дозволи</p>
+                <p>Геолокація необов'язкова й потрібна лише для врахування погоди в нормі води.</p>
+            </li>
+        </ol>
+        <p class="small text-subtle">Українська локалізація застосунку в планах; поки що зручно користуватися англійською версією інтерфейсу.</p>
+        <div class="btn-row" style="margin-block-start:var(--sp-4)">
+            <a href="/app?src=guide-inapp-is-suu-safe" class="btn btn--primary" data-cta="guide-inapp">Завантажити Suu безкоштовно</a>
+        </div>
+    </section>
+
+    <section class="verdict">
+        <h2 style="margin-block-end:var(--sp-4)">Коротко</h2>
+        <p>Suu керують команда з відкритою ідентичністю та індивідуальне підприємство, зареєстроване в податкових органах Туреччини; застосунок виріс в інкубаторі BTM Стамбульської торгової палати. Дані обробляються за GDPR і KVKK, шифруються й не продаються.</p>
+        <p>Та все ж не вір нам на слово: прочитай політику конфіденційності, розділ про безпеку даних у магазині й сторінку видалення акаунта. Усе це у відкритому доступі.</p>
+    </section>
+
+    <section class="cta-band" style="border-radius:var(--r-lg);padding-block:var(--sp-12)" data-cta="guide-body">
+        <div class="container">
+            <h2 style="font-size:var(--fs-2xl)">Спробуй Suu спокійно</h2>
+            <p>Безкоштовно · iOS та Android · акаунт можна видалити будь-коли</p>
+            <div class="btn-row btn-row--center" style="margin-block-start:var(--sp-6)">
+                <a href="/app?src=guide-is-suu-safe" class="btn btn--secondary btn--lg">Завантажити Suu безкоштовно</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Часті запитання</h2>
+        <div class="faq">
+            <details class="faq__item" open>
+                <summary>Чи безпечний застосунок Suu?</summary>
+                <div><p>Так. Його розробляє невелика незалежна команда з двох людей у Стамбулі, керує ним індивідуальне підприємство, зареєстроване в податкових органах Туреччини, а виріс застосунок в інкубаторі BTM Стамбульської торгової палати. Дані обробляються за GDPR і KVKK, шифруються AES-256 і не продаються.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Кому належить застосунок Suu?</summary>
+                <div><p>Засновник Suu й володілець персональних даних — Furkan Mert Fındıklı. Застосунком керує індивідуальне підприємство, зареєстроване в податкових органах Туреччини, що має офіційний дозвіл місцевого муніципалітету. Другий учасник команди — розробник Mert Öz.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Чи продає Suu мої дані?</summary>
+                <div><p>Ні. Згідно з політикою конфіденційності, дані не продаються, не здаються в оренду й не передаються рекламодавцям, рекламним мережам і брокерам даних та не використовуються для таргетованої реклами чи профілювання.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Чи зберігає Suu мої фото їжі та голосові записи?</summary>
+                <div><p>Ні. Голос перетворюється на текст у телефоні й не надсилається на сервери Suu. Під час аналізу за фото зображення обробляється лише в момент аналізу й не зберігається; в акаунт записується тільки результат щодо калорій і макронутрієнтів.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Як видалити акаунт Suu?</summary>
+                <div><p>У застосунку відкрий Settings → Account → Delete Account; дані безповоротно видаляться протягом 30 днів. Якщо доступу до застосунку немає, напиши на Suutakip@gmail.com із зареєстрованої адреси; запити обробляються протягом 7 робочих днів.</p></div>
+            </details>
+            <details class="faq__item">
+                <summary>Чи може Suu списати гроші без мого відома?</summary>
+                <div><p>Ні. Suu завантажується безкоштовно, і основні функції безкоштовні. Premium купується лише з твого підтвердження через App Store або Google Play і скасовується в акаунті магазину.</p></div>
+            </details>
+        </div>
+    </section>
+    <section>
+        <h2>Джерела</h2>
+        <ol class="small">
+            <li id="ref1"><a href="https://suuapp.com/gizlilik-politikasi.html" rel="nofollow noopener" target="_blank">Suu — Політика конфіденційності (GDPR і KVKK)</a></li>
+            <li id="ref2"><a href="https://suuapp.com/delete-account.html" rel="nofollow noopener" target="_blank">Suu — Видалення акаунта й даних</a></li>
+            <li id="ref3"><a href="https://btm.istanbul/" rel="nofollow noopener" target="_blank">BTM Стамбульської торгової палати — офіційний сайт</a></li>
+            <li id="ref4"><a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" rel="nofollow noopener" target="_blank">Регламент (ЄС) 2016/679 — Загальний регламент про захист даних (GDPR)</a></li>
+            <li id="ref5"><a href="https://support.google.com/googleplay/answer/11416267" rel="nofollow noopener" target="_blank">Довідка Google Play — розділ «Безпека даних»</a></li>
+            <li id="ref6"><a href="https://www.apple.com/privacy/labels/" rel="nofollow noopener" target="_blank">Apple — мітки конфіденційності в App Store</a></li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Схожі статті</h2>
+        <div class="cards">
+            <a class="card" href="/gizlilik-politikasi.html">
+                <h3 style="font-size:var(--fs-md)">Політика конфіденційності</h3>
+                <p>Які дані обробляються, навіщо й як.</p>
+            </a>
+            <a class="card" href="/delete-account.html">
+                <h3 style="font-size:var(--fs-md)">Видалення акаунта й даних</h3>
+                <p>Покрокова інструкція.</p>
+            </a>
+            <a class="card" href="/blog/uk/pidrakhunok-kaloriy-za-foto.html">
+                <h3 style="font-size:var(--fs-md)">Підрахунок калорій за фото</h3>
+                <p>Як це працює і де межі.</p>
+            </a>
+            <a class="card" href="/blog/uk/alternatyvy-yazio.html">
+                <h3 style="font-size:var(--fs-md)">Альтернативи Yazio 2026</h3>
+                <p>5 найкращих застосунків у порівнянні.</p>
+            </a>
+        </div>
+    </section>
+
+    <p class="small text-subtle">Suu не призначений для медичної діагностики чи лікування. У питаннях здоров&#39;я звертайся до лікаря або іншого медичного фахівця.</p>
+
+    <p>
+        <a href="/blog-uk.html">← Назад до блогу</a>
+    </p>
+</div>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__bottom" style="border:0">
+            <p class="small mb-0">© 2026 Suu · Furkan Mert Fındıklı</p>
+            <p class="small mb-0"><a href="/hosgeldiniz-uk.html">suuapp.com</a></p>
+        </div>
+    </div>
+</footer>
+
+<div class="sticky-cta" data-cta="sticky">
+    <a href="/app?src=sticky" class="btn btn--secondary">App Store</a>
+    <a href="/app?src=sticky" class="btn btn--primary">Google Play</a>
+</div>
+
+<script src="/assets/js/suu-badge.js?v=2" defer></script>
+</body>
+</html>
