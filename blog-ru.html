@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <!-- ÜRETİLMİŞ DOSYA — kaynak: scripts/build-blog-index.py + content/blog-index.json + content/blog-index.html.j2. Elle düzenlemeyin. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Что происходит с телом, когда не пьёшь достаточно воды | Блог Suu</title>
-    <meta name="description" content="Скрытые последствия обезвоживания, удивительная польза воды и научно подтверждённые факты, которые изменят ваш взгляд на гидратацию.">
-    <meta name="keywords" content="советы по гидратации, сколько пить воды, признаки обезвоживания, привычки питья воды, гидратация при тренировках">
+    <title>Блог Suu — гайды о калориях, тренировках и воде</title>
+    <meta name="description" content="Гайды с научными источниками о дефиците калорий, макросах, тренировках, питьевом режиме, кофе и чае — плюс честные сравнения приложений. Ищите по категориям или через поиск.">
 
     <!-- Smart App Banner -->
     <meta name="apple-itunes-app" content="app-id=6757619920">
@@ -22,13 +22,12 @@
     <link rel="alternate" hreflang="x-default" href="https://suuapp.com/blog-en.html">
 
 
-    <link rel="alternate" type="text/plain" href="/llms-ru.txt" title="Suu — краткий справочник для ИИ-ассистентов">
-    <link rel="alternate" type="text/plain" href="/llms-full-ru.txt" title="Suu — полный справочник для ИИ-ассистентов">
-
+    <link rel="alternate" type="text/plain" href="/llms-ru.txt" title="Suu — compact reference for AI assistants">
+    <link rel="alternate" type="text/plain" href="/llms-full-ru.txt" title="Suu — full reference corpus for AI assistants">
     <link rel="alternate" type="application/rss+xml" title="Блог Suu" href="/feed-ru.xml">
 
-    <meta property="og:title" content="Что происходит с телом, когда не пьёшь достаточно воды">
-    <meta property="og:description" content="Скрытые последствия обезвоживания, удивительная польза воды и научно подтверждённые факты.">
+    <meta property="og:title" content="Блог Suu — гайды о калориях, тренировках и воде">
+    <meta property="og:description" content="Гайды о калориях, тренировках и воде и честные сравнения приложений — по категориям.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://suuapp.com/blog-ru.html">
     <meta property="og:image" content="https://suuapp.com/assets/og-image.png">
@@ -38,8 +37,8 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@SuuTakip">
-    <meta name="twitter:title" content="Что происходит с телом, когда не пьёшь достаточно воды">
-    <meta name="twitter:description" content="Скрытые последствия обезвоживания, удивительная польза воды и научно подтверждённые факты.">
+    <meta name="twitter:title" content="Блог Suu — гайды о калориях, тренировках и воде">
+    <meta name="twitter:description" content="Гайды о калориях, тренировках и воде и честные сравнения приложений — по категориям.">
     <meta name="twitter:image" content="https://suuapp.com/assets/og-image.png">
 
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data:; img-src 'self' https: data:; font-src 'self' https: data:;">
@@ -48,58 +47,144 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', -apple-system, sans-serif; color: #333; background: #f8f9fa; }
-        .blog-nav { background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
-        .nav-content { max-width: 1100px; margin: 0 auto; padding: 0 24px; height: 64px; display: flex; align-items: center; justify-content: space-between; }
-        .blog-logo { display: flex; align-items: center; gap: 8px; font-size: 1.4rem; font-weight: 700; color: #4A90D9; text-decoration: none; }
-        .nav-right { display: flex; align-items: center; gap: 16px; }
-        .back-btn { background: #4A90D9; color: white; padding: 8px 18px; border-radius: 8px; text-decoration: none; font-weight: 500; font-size: 14px; transition: all 0.2s; }
-        .back-btn:hover { background: #3a7bc8; }
-        .hamburger { display: none; }
+        :root { --ink:#111827; --ink-2:#374151; --muted:#6b7280; --line:#e5e9f0; --bg:#f5f7fb; --card:#fff; --brand:#4A90D9; --brand-2:#29B6F6; --nav-h:64px; }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        [hidden] { display:none !important; }
+        html { scroll-behavior:smooth; }
+        body { font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; color:var(--ink-2); background:var(--bg); line-height:1.55; -webkit-font-smoothing:antialiased; }
+        a { color:inherit; }
 
-        .blog-header { background: linear-gradient(135deg, #4A90D9 0%, #29B6F6 100%); color: white; padding: 60px 20px 40px; text-align: center; }
-        .blog-header h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 800; margin-bottom: 10px; }
-        .blog-header p { font-size: 1rem; opacity: 0.9; }
+        /* Nav */
+        .blog-nav { background:#fff; border-bottom:1px solid var(--line); position:sticky; top:0; z-index:100; }
+        .nav-content { max-width:1180px; margin:0 auto; padding:0 20px; height:var(--nav-h); display:flex; align-items:center; justify-content:space-between; gap:12px; }
+        .blog-logo { display:flex; align-items:center; gap:8px; font-size:1.35rem; font-weight:800; color:var(--brand); text-decoration:none; flex:none; }
+        .nav-right { display:flex; align-items:center; gap:8px; min-width:0; }
+        .nav-btn { display:inline-flex; align-items:center; gap:7px; padding:8px 12px; border-radius:10px; text-decoration:none; font-size:14px; font-weight:600; color:var(--ink-2); white-space:nowrap; transition:background .15s, color .15s; }
+        .nav-btn:hover { background:#eef4fc; color:var(--brand); }
+        .nav-btn i { color:var(--brand); font-size:13px; }
 
-        .container { max-width: 1100px; margin: 0 auto; padding: 50px 24px 80px; }
-        .articles-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 28px; }
-        .article-card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: transform 0.2s, box-shadow 0.2s; }
-        .article-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.12); }
-        .article-thumb { height: 160px; display: flex; align-items: center; justify-content: center; font-size: 3rem; }
-        .article-body { padding: 20px 22px; }
-        .article-tag { font-size: 11px; font-weight: 700; color: #4A90D9; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
-        .article-body h3 { font-size: 1rem; font-weight: 700; color: #1a1a2e; margin-bottom: 10px; line-height: 1.5; }
-        .article-body p { font-size: 0.875rem; color: #666; margin-bottom: 16px; line-height: 1.6; }
-        .read-more { display: inline-flex; align-items: center; gap: 6px; color: #4A90D9; font-size: 13px; font-weight: 600; text-decoration: none; }
-        .read-more:hover { text-decoration: underline; }
+        /* Hero */
+        .bi-hero { background:radial-gradient(1200px 400px at 85% -10%, rgba(255,255,255,.18), transparent 60%), linear-gradient(135deg,#2f6fd0 0%,var(--brand) 45%,var(--brand-2) 100%); color:#fff; padding:52px 20px 40px; }
+        .bi-hero-in { max-width:820px; margin:0 auto; text-align:center; }
+        .bi-hero h1 { font-size:clamp(2rem,5vw,2.9rem); font-weight:800; letter-spacing:-.02em; line-height:1.1; }
+        .bi-lead { margin:12px auto 0; max-width:640px; font-size:clamp(1rem,2.2vw,1.12rem); opacity:.95; }
+        .bi-search { position:relative; margin:26px auto 0; max-width:620px; }
+        .bi-search input { width:100%; height:56px; border:0; border-radius:16px; padding:0 52px; font:inherit; font-size:16px; color:var(--ink); background:#fff; box-shadow:0 12px 32px rgba(10,40,90,.22); }
+        .bi-search input:focus { outline:3px solid rgba(255,255,255,.75); outline-offset:3px; }
+        .bi-search .bi-ico { position:absolute; inset-inline-start:19px; top:50%; transform:translateY(-50%); color:#9aa6b8; font-size:17px; pointer-events:none; }
+        .bi-search button { position:absolute; inset-inline-end:10px; top:50%; transform:translateY(-50%); width:36px; height:36px; border:0; border-radius:10px; background:#f1f4f9; color:var(--muted); cursor:pointer; font-size:15px; }
+        .bi-stats { list-style:none; display:flex; flex-wrap:wrap; justify-content:center; gap:8px 22px; margin-top:20px; font-size:14px; opacity:.95; }
+        .bi-stats strong { font-weight:800; }
+        .bi-stats li { display:inline-flex; align-items:center; gap:6px; }
 
-        .cta-banner { background: linear-gradient(135deg, #4A90D9, #29B6F6); color: white; border-radius: 20px; padding: 40px; text-align: center; margin-top: 60px; }
-        .cta-banner h2 { font-size: 1.6rem; font-weight: 800; margin-bottom: 10px; }
-        .cta-banner p { opacity: 0.9; margin-bottom: 24px; }
-        .cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-        .cta-btn { background: white; color: #4A90D9; padding: 11px 24px; border-radius: 50px; font-weight: 700; text-decoration: none; font-size: 14px; display: inline-flex; align-items: center; gap: 8px; transition: transform 0.2s; }
-        .cta-btn:hover { transform: translateY(-2px); }
+        /* Category bar */
+        .bi-chips { position:sticky; top:var(--nav-h); z-index:90; background:rgba(255,255,255,.96); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
+        .bi-chips-in { max-width:1180px; margin:0 auto; padding:10px 20px; display:flex; gap:8px; overflow-x:auto; scrollbar-width:none; }
+        .bi-chips-in::-webkit-scrollbar { display:none; }
+        .bi-chip { --c:var(--ink); flex:none; display:inline-flex; align-items:center; gap:7px; padding:8px 14px; border-radius:999px; border:1px solid var(--line); background:#fff; color:var(--ink-2); text-decoration:none; font-size:14px; font-weight:600; white-space:nowrap; transition:background .15s, border-color .15s, color .15s; }
+        .bi-chip:hover { border-color:var(--c); color:var(--c); }
+        .bi-chip .n { font-size:12px; font-weight:700; color:var(--muted); background:#f1f4f9; border-radius:999px; padding:1px 8px; }
+        .bi-chip[aria-current="true"] { background:var(--c); border-color:var(--c); color:#fff; }
+        .bi-chip[aria-current="true"] .n { background:rgba(255,255,255,.22); color:#fff; }
 
-        @media (max-width: 600px) { .articles-grid { grid-template-columns: 1fr; } }
+        /* Layout */
+        .bi-main { max-width:1180px; margin:0 auto; padding:30px 20px 72px; }
+        .bi-status { font-size:14px; font-weight:600; color:var(--muted); margin-bottom:6px; }
+        .bi-status:empty { display:none; }
+        .bi-sec { margin-top:34px; scroll-margin-top:calc(var(--nav-h) + 70px); }
+        .bi-main > .bi-sec:first-of-type, .bi-status + .bi-sec:not([hidden]) { margin-top:0; }
+        .bi-sec-head { display:flex; align-items:flex-start; gap:14px; margin-bottom:18px; }
+        .bi-sec-ico { flex:none; width:46px; height:46px; border-radius:14px; display:grid; place-items:center; font-size:22px; background:var(--bg-c,#eef4fc); }
+        .bi-sec-head h2 { font-size:clamp(1.25rem,2.6vw,1.5rem); font-weight:800; color:var(--ink); letter-spacing:-.01em; display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+        .bi-sec-head h2 .n { font-size:13px; font-weight:700; color:var(--c,#4A90D9); background:var(--bg-c,#eef4fc); border-radius:999px; padding:2px 10px; }
+        .bi-sec-head p { color:var(--muted); font-size:.95rem; margin-top:3px; }
+        .bi-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(270px,1fr)); gap:22px; }
+        .bi-latest .bi-grid { grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); }
+
+        /* Card */
+        .bi-card { background:var(--card); border:1px solid var(--line); border-radius:18px; overflow:hidden; transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
+        .bi-card:hover { transform:translateY(-3px); box-shadow:0 14px 34px rgba(17,24,39,.10); border-color:#d6deea; }
+        .bi-card a { display:flex; flex-direction:column; height:100%; text-decoration:none; color:inherit; }
+        .bi-card a:focus-visible { outline:3px solid var(--brand); outline-offset:-3px; border-radius:18px; }
+        .bi-thumb { aspect-ratio:1200/630; background:var(--bg-c,#eef4fc); overflow:hidden; }
+        .bi-thumb img { width:100%; height:100%; object-fit:cover; display:block; }
+        .bi-body { padding:15px 18px 18px; display:flex; flex-direction:column; gap:7px; flex:1; }
+        .bi-tag { align-self:flex-start; font-size:11.5px; font-weight:700; color:var(--c,#4A90D9); background:var(--bg-c,#eef4fc); border-radius:999px; padding:3px 10px; }
+        .bi-card h3 { font-size:1.02rem; line-height:1.4; font-weight:700; color:var(--ink); display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
+        .bi-card p { font-size:.9rem; color:var(--muted); display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
+        .bi-meta { margin-top:auto; padding-top:6px; font-size:.8rem; color:#8a94a6; display:flex; flex-wrap:wrap; gap:4px 10px; }
+
+        /* Empty + CTA + footer */
+        .bi-empty { text-align:center; padding:56px 20px; color:var(--muted); }
+        .bi-empty p { font-size:1.05rem; margin-bottom:14px; }
+        .bi-empty button { border:1px solid var(--line); background:#fff; border-radius:12px; padding:10px 18px; font:inherit; font-weight:600; color:var(--brand); cursor:pointer; }
+        .cta-banner { background:linear-gradient(135deg,var(--brand),var(--brand-2)); color:#fff; border-radius:22px; padding:38px 24px; text-align:center; margin-top:64px; }
+        .cta-banner h2 { font-size:clamp(1.3rem,3vw,1.6rem); font-weight:800; margin-bottom:8px; }
+        .cta-banner p { opacity:.95; margin-bottom:22px; }
+        .cta-btns { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+        .cta-btn { background:#fff; color:var(--brand); padding:11px 24px; border-radius:50px; font-weight:700; text-decoration:none; font-size:14px; display:inline-flex; align-items:center; gap:8px; transition:transform .15s; }
+        .cta-btn:hover { transform:translateY(-2px); }
+        .bi-foot { border-top:1px solid var(--line); background:#fff; }
+        .bi-foot-in { max-width:1180px; margin:0 auto; padding:24px 20px; display:flex; flex-wrap:wrap; justify-content:space-between; gap:10px 20px; font-size:14px; color:var(--muted); }
+        .bi-foot nav { display:flex; flex-wrap:wrap; gap:8px 18px; }
+        .bi-foot a { text-decoration:none; color:var(--ink-2); }
+        .bi-foot a:hover { color:var(--brand); }
+
+        /* Sticky mobile download bar (styles.css is not loaded on blog pages) */
+        .sticky-download-bar { display:none; position:fixed; bottom:0; left:0; right:0; z-index:9999; background:rgba(255,255,255,.97); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); padding:10px 12px; padding-bottom:calc(10px + env(safe-area-inset-bottom,0px)); box-shadow:0 -2px 16px rgba(0,0,0,.12); gap:8px; justify-content:center; }
+        .sticky-btn { flex:1; display:flex; align-items:center; justify-content:center; gap:8px; padding:13px 14px; border-radius:12px; text-decoration:none; font-weight:600; font-size:14px; min-height:48px; max-width:200px; }
+        .sticky-btn-apple { background:#000; color:#fff; }
+        .sticky-btn-google { background:#01875f; color:#fff; }
+
+        @media (max-width:768px) {
+            .sticky-download-bar { display:flex; }
+            body { padding-bottom:72px; }
+        }
+        @media (max-width:720px) {
+            .nav-btn span { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+            .nav-btn { padding:9px; }
+            .bi-hero { padding:38px 16px 30px; }
+            .bi-main { padding:22px 16px 60px; }
+            .bi-chips-in { padding:10px 16px; }
+            .bi-grid, .bi-latest .bi-grid { grid-template-columns:1fr; gap:12px; }
+            /* Compact list rows on phones: 60 full-width cover images would be an endless scroll */
+            .bi-card { border-radius:14px; }
+            .bi-card a { flex-direction:row; align-items:flex-start; gap:12px; padding:12px; }
+            .bi-thumb { flex:none; width:112px; border-radius:10px; }
+            .bi-body { padding:0; gap:5px; min-width:0; }
+            .bi-card h3 { font-size:.95rem; }
+            .bi-card p { font-size:.84rem; -webkit-line-clamp:2; }
+            .bi-meta { padding-top:2px; font-size:.76rem; }
+            .bi-latest .bi-card:first-child a { flex-direction:column; padding:0; gap:0; }
+            .bi-latest .bi-card:first-child .bi-thumb { width:100%; border-radius:0; }
+            .bi-latest .bi-card:first-child .bi-body { padding:14px 16px 16px; gap:7px; }
+            .bi-latest .bi-card:first-child h3 { font-size:1.05rem; }
+            .bi-sec { margin-top:28px; }
+            .bi-sec-head { gap:12px; margin-bottom:14px; }
+            .bi-sec-ico { width:40px; height:40px; font-size:19px; border-radius:12px; }
+        }
+        @media (prefers-reduced-motion:reduce) {
+            html { scroll-behavior:auto; }
+            .bi-card, .bi-card:hover { transition:none; transform:none; }
+        }
     </style>
 
-    <!-- Schema.org: Blog + BreadcrumbList (GEO / AI search optimization) -->
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Blog",
   "@id": "https://suuapp.com/blog-ru.html#blog",
   "url": "https://suuapp.com/blog-ru.html",
-  "name": "Блог Suu — Гидратация, кофеин и здоровый образ жизни",
-  "description": "Научно обоснованные статьи о гидратации, обезвоживании, отслеживании кофеина, воде по активности, Apple Watch и оценке гидратации.",
+  "name": "Блог Suu — калории, тренировки и вода",
+  "description": "Гайды с научными источниками о дефиците калорий, макросах, тренировках, питьевом режиме, кофе и чае — плюс честные сравнения приложений. Ищите по категориям или через поиск.",
   "inLanguage": "ru-RU",
   "publisher": {
     "@type": "Organization",
@@ -111,16 +196,10 @@
       "url": "https://suuapp.com/assets/og-image.png"
     }
   },
-  "author": {
-    "@type": "Person",
-    "@id": "https://suuapp.com/#furkan",
-    "name": "Furkan Mert Fındıklı",
-    "url": "https://www.linkedin.com/in/furkanfindikli/"
-  },
   "blogPost": [
     {
       "@type": "BlogPosting",
-      "headline": "Безопасно ли Suu? Компания, защита данных, приватность",
+      "headline": "Безопасно ли Suu? Кто за ним стоит и как защищены данные",
       "url": "https://suuapp.com/blog/ru/bezopasno-li-suu.html",
       "datePublished": "2026-10-14",
       "dateModified": "2026-10-14",
@@ -129,16 +208,7 @@
     },
     {
       "@type": "BlogPosting",
-      "headline": "Cronometer или Lifesum (2026): что лучше?",
-      "url": "https://suuapp.com/blog/ru/cronometer-vs-lifesum.html",
-      "datePublished": "2026-10-14",
-      "dateModified": "2026-10-14",
-      "inLanguage": "ru-RU",
-      "image": "https://suuapp.com/assets/og/blog/ru-cronometer-vs-lifesum.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Lifesum или MyFitnessPal (2026): что лучше?",
+      "headline": "Lifesum или MyFitnessPal: какой счётчик калорий выбрать?",
       "url": "https://suuapp.com/blog/ru/lifesum-vs-myfitnesspal.html",
       "datePublished": "2026-10-14",
       "dateModified": "2026-10-14",
@@ -147,7 +217,16 @@
     },
     {
       "@type": "BlogPosting",
-      "headline": "Ходьба или бег для похудения: что лучше?",
+      "headline": "Cronometer или Lifesum: какой счётчик калорий выбрать?",
+      "url": "https://suuapp.com/blog/ru/cronometer-vs-lifesum.html",
+      "datePublished": "2026-10-14",
+      "dateModified": "2026-10-14",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-cronometer-vs-lifesum.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Ходьба или бег для похудения?",
       "url": "https://suuapp.com/blog/ru/hodba-ili-beg.html",
       "datePublished": "2026-10-13",
       "dateModified": "2026-10-13",
@@ -165,7 +244,7 @@
     },
     {
       "@type": "BlogPosting",
-      "headline": "Вес вырос после начала тренировок: 4 причины",
+      "headline": "Начали тренироваться, а вес вырос — почему?",
       "url": "https://suuapp.com/blog/ru/ves-vyros-posle-trenirovok.html",
       "datePublished": "2026-10-13",
       "dateModified": "2026-10-13",
@@ -174,48 +253,21 @@
     },
     {
       "@type": "BlogPosting",
-      "headline": "Альтернативы Yazio: 5 лучших приложений (2026)",
+      "headline": "Альтернативы Yazio: какое приложение выбрать в 2026 году",
       "url": "https://suuapp.com/blog/ru/alternativy-yazio.html",
       "datePublished": "2026-10-03",
       "dateModified": "2026-10-03",
       "inLanguage": "ru-RU",
-      "image": "https://suuapp.com/assets/og-image.png"
+      "image": "https://suuapp.com/assets/og/blog/ru-alternativy-yazio.png"
     },
     {
       "@type": "BlogPosting",
-      "headline": "Как бросить пить газировку: план на 4 недели",
-      "url": "https://suuapp.com/blog/ru/kak-brosit-gazirovku.html",
+      "headline": "Почему я постоянно устаю? 8 частых причин",
+      "url": "https://suuapp.com/blog/ru/postoyannaya-ustalost.html",
       "datePublished": "2026-09-27",
       "dateModified": "2026-09-27",
       "inLanguage": "ru-RU",
-      "image": "https://suuapp.com/assets/og/blog/ru-kak-brosit-gazirovku.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Лень заниматься спортом: 7 способов начать",
-      "url": "https://suuapp.com/blog/ru/len-zanimatsya-sportom.html",
-      "datePublished": "2026-09-27",
-      "dateModified": "2026-09-27",
-      "inLanguage": "ru-RU",
-      "image": "https://suuapp.com/assets/og/blog/ru-len-zanimatsya-sportom.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Надоело считать калории? 7 способов не бросить",
-      "url": "https://suuapp.com/blog/ru/nadoelo-schitat-kalorii.html",
-      "datePublished": "2026-09-27",
-      "dateModified": "2026-09-27",
-      "inLanguage": "ru-RU",
-      "image": "https://suuapp.com/assets/og/blog/ru-nadoelo-schitat-kalorii.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Как избавиться от ночного жора: 7 решений",
-      "url": "https://suuapp.com/blog/ru/nochnoj-zhor.html",
-      "datePublished": "2026-09-27",
-      "dateModified": "2026-09-27",
-      "inLanguage": "ru-RU",
-      "image": "https://suuapp.com/assets/og/blog/ru-nochnoj-zhor.png"
+      "image": "https://suuapp.com/assets/og/blog/ru-postoyannaya-ustalost.png"
     },
     {
       "@type": "BlogPosting",
@@ -228,84 +280,120 @@
     },
     {
       "@type": "BlogPosting",
-      "headline": "Постоянная усталость: 8 причин и когда к врачу",
-      "url": "https://suuapp.com/blog/ru/postoyannaya-ustalost.html",
+      "headline": "Надоело считать калории: 7 способов не бросить",
+      "url": "https://suuapp.com/blog/ru/nadoelo-schitat-kalorii.html",
       "datePublished": "2026-09-27",
       "dateModified": "2026-09-27",
       "inLanguage": "ru-RU",
-      "image": "https://suuapp.com/assets/og/blog/ru-postoyannaya-ustalost.png"
+      "image": "https://suuapp.com/assets/og/blog/ru-nadoelo-schitat-kalorii.png"
     },
     {
       "@type": "BlogPosting",
-      "headline": "Стоит ли делать приложение для подсчёта калорий или воды в 2026? Реальность рынка",
+      "headline": "Лень заниматься спортом: 7 способов начать",
+      "url": "https://suuapp.com/blog/ru/len-zanimatsya-sportom.html",
+      "datePublished": "2026-09-27",
+      "dateModified": "2026-09-27",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-len-zanimatsya-sportom.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Как избавиться от ночного жора: 7 решений",
+      "url": "https://suuapp.com/blog/ru/nochnoj-zhor.html",
+      "datePublished": "2026-09-27",
+      "dateModified": "2026-09-27",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-nochnoj-zhor.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Как бросить пить газировку: план на 4 недели",
+      "url": "https://suuapp.com/blog/ru/kak-brosit-gazirovku.html",
+      "datePublished": "2026-09-27",
+      "dateModified": "2026-09-27",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-kak-brosit-gazirovku.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Стоит ли создавать приложение-трекер в 2026?",
       "url": "https://suuapp.com/blog/ru/stoit-li-sozdavat-prilozhenie-treker.html",
       "datePublished": "2026-09-14",
       "dateModified": "2026-09-14",
       "inLanguage": "ru-RU",
-      "image": "https://suuapp.com/assets/og-image.png"
+      "image": "https://suuapp.com/assets/og/blog/ru-stoit-li-sozdavat-prilozhenie-treker.png"
     },
     {
       "@type": "BlogPosting",
-      "headline": "Лучшее приложение для тренировок 2026 — Strava, Nike Run Club, Suu",
+      "headline": "Лучшее приложение для тренировок в 2026",
       "url": "https://suuapp.com/blog/ru/luchshee-prilozhenie-dlya-trenirovok.html",
-      "datePublished": "2026-08-13",
-      "dateModified": "2026-08-24",
+      "datePublished": "2026-08-24",
+      "dateModified": "2026-09-14",
       "inLanguage": "ru-RU",
-      "image": "https://suuapp.com/assets/og-image.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Голосовой ввод калорий: как работает запись еды голосом",
-      "url": "https://suuapp.com/blog/ru/golosovoj-vvod-kalorij.html",
-      "datePublished": "2026-07-07",
-      "dateModified": "2026-07-07",
-      "inLanguage": "ru-RU",
-      "image": "https://suuapp.com/assets/og/blog/ru-golosovoj-vvod-kalorij.png"
+      "image": "https://suuapp.com/assets/og/blog/ru-luchshee-prilozhenie-dlya-trenirovok.png"
     },
     {
       "@type": "BlogPosting",
       "headline": "Лучшее приложение для подсчёта калорий 2026: Suu против MyFitnessPal, Yazio, Lifesum, Cronometer",
       "url": "https://suuapp.com/blog/ru/luchshee-prilozhenie-podscheta-kalorij.html",
       "datePublished": "2026-07-07",
-      "dateModified": "2026-07-07",
+      "dateModified": "2026-10-03",
       "inLanguage": "ru-RU",
       "image": "https://suuapp.com/assets/og/blog/ru-luchshee-prilozhenie-podscheta-kalorij.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Suu против MyFitnessPal: что лучше? (Сравнение 2026)",
-      "url": "https://suuapp.com/blog/ru/suu-vs-myfitnesspal.html",
-      "datePublished": "2026-07-07",
-      "dateModified": "2026-07-07",
-      "inLanguage": "ru-RU",
-      "image": "https://suuapp.com/assets/og/blog/ru-suu-vs-myfitnesspal.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Suu против Yazio: что лучше? (Сравнение 2026)",
-      "url": "https://suuapp.com/blog/ru/suu-vs-yazio.html",
-      "datePublished": "2026-07-07",
-      "dateModified": "2026-07-07",
-      "inLanguage": "ru-RU",
-      "image": "https://suuapp.com/assets/og/blog/ru-suu-vs-yazio.png"
     },
     {
       "@type": "BlogPosting",
       "headline": "Есть ли приложение, которое считает воду, калории И тренировки вместе?",
       "url": "https://suuapp.com/blog/ru/voda-kalorii-trenirovki-odno-prilozhenie.html",
       "datePublished": "2026-07-07",
-      "dateModified": "2026-07-07",
+      "dateModified": "2026-09-29",
       "inLanguage": "ru-RU",
       "image": "https://suuapp.com/assets/og/blog/ru-voda-kalorii-trenirovki-odno-prilozhenie.png"
     },
     {
       "@type": "BlogPosting",
-      "headline": "Что такое дефицит калорий и как его создать (руководство)",
+      "headline": "Голосовой ввод калорий: как работает запись еды голосом",
+      "url": "https://suuapp.com/blog/ru/golosovoj-vvod-kalorij.html",
+      "datePublished": "2026-07-07",
+      "dateModified": "2026-09-29",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-golosovoj-vvod-kalorij.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Suu против Yazio: что лучше? (2026)",
+      "url": "https://suuapp.com/blog/ru/suu-vs-yazio.html",
+      "datePublished": "2026-07-07",
+      "dateModified": "2026-10-03",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-suu-vs-yazio.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Suu против MyFitnessPal: что лучше? (2026)",
+      "url": "https://suuapp.com/blog/ru/suu-vs-myfitnesspal.html",
+      "datePublished": "2026-07-07",
+      "dateModified": "2026-09-29",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-suu-vs-myfitnesspal.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Что такое дефицит калорий и как его создать",
       "url": "https://suuapp.com/blog/ru/deficit-kalorij.html",
       "datePublished": "2026-07-03",
       "dateModified": "2026-07-03",
       "inLanguage": "ru-RU",
-      "image": "https://suuapp.com/assets/og-image.png"
+      "image": "https://suuapp.com/assets/og/blog/ru-deficit-kalorij.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Сколько калорий сжигает тренировка?",
+      "url": "https://suuapp.com/blog/ru/raskhod-kalorij.html",
+      "datePublished": "2026-07-03",
+      "dateModified": "2026-07-03",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-raskhod-kalorij.png"
     },
     {
       "@type": "BlogPosting",
@@ -314,7 +402,7 @@
       "datePublished": "2026-07-03",
       "dateModified": "2026-07-03",
       "inLanguage": "ru-RU",
-      "image": "https://suuapp.com/assets/og-image.png"
+      "image": "https://suuapp.com/assets/og/blog/ru-kalorii-po-foto.png"
     },
     {
       "@type": "BlogPosting",
@@ -323,16 +411,7 @@
       "datePublished": "2026-07-03",
       "dateModified": "2026-07-03",
       "inLanguage": "ru-RU",
-      "image": "https://suuapp.com/assets/og-image.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Сколько калорий сжигает тренировка? Расход по активности",
-      "url": "https://suuapp.com/blog/ru/raskhod-kalorij.html",
-      "datePublished": "2026-07-03",
-      "dateModified": "2026-07-03",
-      "inLanguage": "ru-RU",
-      "image": "https://suuapp.com/assets/og-image.png"
+      "image": "https://suuapp.com/assets/og/blog/ru-raschet-makrosov.png"
     },
     {
       "@type": "BlogPosting",
@@ -341,224 +420,292 @@
       "datePublished": "2026-06-14",
       "dateModified": "2026-06-14",
       "inLanguage": "ru-RU",
-      "image": "https://suuapp.com/assets/og-image.png"
+      "image": "https://suuapp.com/assets/og/blog/ru-prostoy-rasshirennyy-rezhim.png"
     },
     {
       "@type": "BlogPosting",
       "headline": "Питомец в Suu: кошка/собака + 4 мини-игры + одевалка",
       "url": "https://suuapp.com/blog/ru/domashnij-pitomec-mini-igry.html",
       "datePublished": "2026-05-22",
-      "inLanguage": "ru-RU"
+      "dateModified": "2026-05-22",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-domashnij-pitomec-mini-igry.png"
     },
     {
       "@type": "BlogPosting",
       "headline": "Программа пожертвований Suu Premium 2%: прозрачные колодцы в Африке",
       "url": "https://suuapp.com/blog/ru/programma-pozhertvovanij-kolodtsy-afrika.html",
       "datePublished": "2026-05-11",
-      "inLanguage": "ru-RU"
+      "dateModified": "2026-10-03",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-programma-pozhertvovanij-kolodtsy-afrika.png"
     },
     {
       "@type": "BlogPosting",
-      "headline": "10 научно доказанных преимуществ ежедневного питья воды",
-      "url": "https://suuapp.com/blog/ru/polza-pitia-vody.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ru-RU"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Сколько воды нужно пить в день?",
-      "url": "https://suuapp.com/blog/ru/skolko-vody-pit-v-den.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ru-RU"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Признаки обезвоживания, которые нельзя игнорировать",
-      "url": "https://suuapp.com/blog/ru/priznaki-obezvozhivaniya.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ru-RU"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Спорт и гидратация: полное руководство",
-      "url": "https://suuapp.com/blog/ru/sport-i-gidratatsiya.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ru-RU"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Почему стоит пить воду первым делом утром",
-      "url": "https://suuapp.com/blog/ru/voda-utrom.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ru-RU"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Как выработать ежедневную привычку пить воду",
-      "url": "https://suuapp.com/blog/ru/privychka-pit-vodu.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ru-RU"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Лучшее приложение для отслеживания воды в 2026: полное сравнение",
-      "url": "https://suuapp.com/blog/ru/luchshee-prilozhenie-dlya-vody.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ru-RU"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Считаются ли кофе и чай за воду?",
-      "url": "https://suuapp.com/blog/ru/kofe-chay-i-voda.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ru-RU"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Помогает ли вода похудеть?",
-      "url": "https://suuapp.com/blog/ru/voda-i-pohudenie.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ru-RU"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Улучшает ли вода состояние кожи?",
-      "url": "https://suuapp.com/blog/ru/voda-i-zdorove-kozhi.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ru-RU"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Как обезвоживание влияет на сон",
-      "url": "https://suuapp.com/blog/ru/voda-i-son.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ru-RU"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Как вода защищает ваши почки",
-      "url": "https://suuapp.com/blog/ru/voda-i-zdorove-pochek.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ru-RU"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Гидратация при беременности: руководство по триместрам",
-      "url": "https://suuapp.com/blog/ru/voda-i-beremennost.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ru-RU"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Гидратация при грудном вскармливании: сколько воды нужно молоку?",
-      "url": "https://suuapp.com/blog/ru/voda-i-kormlenie.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ru-RU"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Водный челлендж с друзьями: как работает недельная лига Suu",
-      "url": "https://suuapp.com/blog/ru/vodnyi-challenge-s-druzyami.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ru-RU"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Apple Watch и отслеживание воды: полное руководство 2026",
-      "url": "https://suuapp.com/blog/ru/apple-watch-voda.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ru-RU"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Как отслеживать воду через Siri в 2026 (без рук)",
-      "url": "https://suuapp.com/blog/ru/siri-voda.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ru-RU"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Что такое оценка гидратации? Как Suu оценивает потребление воды (0-100)",
-      "url": "https://suuapp.com/blog/ru/otsenka-gidratatsii.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ru-RU"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Почему геймификация заставляет вас пить больше воды",
-      "url": "https://suuapp.com/blog/ru/geymifikatsiya-vody.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ru-RU"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Отслеживание воды по активности: ходьба, бег, плавание",
-      "url": "https://suuapp.com/blog/ru/voda-po-aktivnosti.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ru-RU"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Отслеживание кофеина и сахара: скрытые лимиты в напитках",
-      "url": "https://suuapp.com/blog/ru/kofein-i-sahar.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ru-RU"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Как сократить потребление кофе: 7 научных стратегий",
-      "url": "https://suuapp.com/blog/ru/kak-sokratit-kofe.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ru-RU"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Сколько чашек кофе в день безопасно? Лимиты FDA",
-      "url": "https://suuapp.com/blog/ru/skolko-kofe-v-den.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ru-RU"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Гидратация после алкоголя: научный путь предотвращения похмелья",
-      "url": "https://suuapp.com/blog/ru/gidratatsiya-posle-alkogolya.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ru-RU"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Как контролировать потребление энергетиков? Red Bull, Monster",
-      "url": "https://suuapp.com/blog/ru/kontrol-energetikov.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ru-RU"
+      "headline": "Чай гидратирует?",
+      "url": "https://suuapp.com/blog/ru/chai-i-gidratatsiya.html",
+      "datePublished": "2026-05-10",
+      "dateModified": "2026-05-10",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-chai-i-gidratatsiya.png"
     },
     {
       "@type": "BlogPosting",
       "headline": "Сок или вода? Что полезнее?",
       "url": "https://suuapp.com/blog/ru/sok-ili-voda.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ru-RU"
+      "datePublished": "2026-05-10",
+      "dateModified": "2026-05-10",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-sok-ili-voda.png"
     },
     {
       "@type": "BlogPosting",
-      "headline": "Чай гидратирует? Коэффициент гидратации по типам",
-      "url": "https://suuapp.com/blog/ru/chai-i-gidratatsiya.html",
+      "headline": "Сколько чашек кофе в день безопасно?",
+      "url": "https://suuapp.com/blog/ru/skolko-kofe-v-den.html",
+      "datePublished": "2026-05-10",
+      "dateModified": "2026-10-03",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-skolko-kofe-v-den.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Как сократить потребление кофе: 7 научно обоснованных стратегий",
+      "url": "https://suuapp.com/blog/ru/kak-sokratit-kofe.html",
+      "datePublished": "2026-05-10",
+      "dateModified": "2026-10-03",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-kak-sokratit-kofe.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Как контролировать потребление энергетиков?",
+      "url": "https://suuapp.com/blog/ru/kontrol-energetikov.html",
+      "datePublished": "2026-05-10",
+      "dateModified": "2026-05-10",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-kontrol-energetikov.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Гидратация после алкоголя: научный путь предотвращения похмелья",
+      "url": "https://suuapp.com/blog/ru/gidratatsiya-posle-alkogolya.html",
+      "datePublished": "2026-05-10",
+      "dateModified": "2026-05-10",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-gidratatsiya-posle-alkogolya.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Что такое оценка гидратации?",
+      "url": "https://suuapp.com/blog/ru/otsenka-gidratatsii.html",
+      "datePublished": "2026-05-07",
+      "dateModified": "2026-05-07",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-otsenka-gidratatsii.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Улучшает ли вода состояние кожи? Наука и факты",
+      "url": "https://suuapp.com/blog/ru/voda-i-zdorove-kozhi.html",
+      "datePublished": "2026-05-07",
+      "dateModified": "2026-05-07",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-voda-i-zdorove-kozhi.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Считается ли кофе в норму воды? Таблица напитков",
+      "url": "https://suuapp.com/blog/ru/kofe-chay-i-voda.html",
+      "datePublished": "2026-05-07",
+      "dateModified": "2026-09-27",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-kofe-chay-i-voda.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Спорт и гидратация: полное руководство",
+      "url": "https://suuapp.com/blog/ru/sport-i-gidratatsiya.html",
+      "datePublished": "2026-05-07",
+      "dateModified": "2026-10-03",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-sport-i-gidratatsiya.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Сколько воды нужно пить в день?",
+      "url": "https://suuapp.com/blog/ru/skolko-vody-pit-v-den.html",
+      "datePublished": "2026-05-07",
+      "dateModified": "2026-10-03",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-skolko-vody-pit-v-den.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Признаки обезвоживания, которые нельзя игнорировать",
+      "url": "https://suuapp.com/blog/ru/priznaki-obezvozhivaniya.html",
+      "datePublished": "2026-05-07",
+      "dateModified": "2026-05-07",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-priznaki-obezvozhivaniya.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Почему стоит пить воду первым делом утром",
+      "url": "https://suuapp.com/blog/ru/voda-utrom.html",
+      "datePublished": "2026-05-07",
+      "dateModified": "2026-05-07",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-voda-utrom.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Помогает ли вода похудеть?",
+      "url": "https://suuapp.com/blog/ru/voda-i-pohudenie.html",
+      "datePublished": "2026-05-07",
+      "dateModified": "2026-05-07",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-voda-i-pohudenie.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Отслеживание кофеина и сахара",
+      "url": "https://suuapp.com/blog/ru/kofein-i-sahar.html",
+      "datePublished": "2026-05-07",
+      "dateModified": "2026-05-07",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-kofein-i-sahar.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Отслеживание воды по активности",
+      "url": "https://suuapp.com/blog/ru/voda-po-aktivnosti.html",
+      "datePublished": "2026-05-07",
+      "dateModified": "2026-10-03",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-voda-po-aktivnosti.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Лучшее приложение для отслеживания воды в 2026",
+      "url": "https://suuapp.com/blog/ru/luchshee-prilozhenie-dlya-vody.html",
+      "datePublished": "2026-05-07",
+      "dateModified": "2026-10-03",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-luchshee-prilozhenie-dlya-vody.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Как отслеживать воду через Siri в 2026",
+      "url": "https://suuapp.com/blog/ru/siri-voda.html",
+      "datePublished": "2026-05-07",
+      "dateModified": "2026-09-29",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-siri-voda.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Как обезвоживание влияет на сон",
+      "url": "https://suuapp.com/blog/ru/voda-i-son.html",
+      "datePublished": "2026-05-07",
+      "dateModified": "2026-05-07",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-voda-i-son.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Как вода защищает почки: гидратация и здоровье почек",
+      "url": "https://suuapp.com/blog/ru/voda-i-zdorove-pochek.html",
+      "datePublished": "2026-05-07",
+      "dateModified": "2026-05-07",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-voda-i-zdorove-pochek.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Гидратация при грудном вскармливании",
+      "url": "https://suuapp.com/blog/ru/voda-i-kormlenie.html",
+      "datePublished": "2026-05-07",
+      "dateModified": "2026-05-07",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-voda-i-kormlenie.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Гидратация при беременности: руководство по триместрам",
+      "url": "https://suuapp.com/blog/ru/voda-i-beremennost.html",
+      "datePublished": "2026-05-07",
+      "dateModified": "2026-05-07",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-voda-i-beremennost.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Apple Watch и отслеживание воды: полное руководство 2026",
+      "url": "https://suuapp.com/blog/ru/apple-watch-voda.html",
+      "datePublished": "2026-05-07",
+      "dateModified": "2026-09-29",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-apple-watch-voda.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "10 научно доказанных преимуществ ежедневного питья воды",
+      "url": "https://suuapp.com/blog/ru/polza-pitia-vody.html",
+      "datePublished": "2026-05-07",
+      "dateModified": "2026-05-07",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-polza-pitia-vody.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Почему геймификация заставляет вас пить больше воды",
+      "url": "https://suuapp.com/blog/ru/geymifikatsiya-vody.html",
+      "datePublished": "2026-04-14",
+      "dateModified": "2026-04-14",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-geymifikatsiya-vody.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Водный челлендж с друзьями",
+      "url": "https://suuapp.com/blog/ru/vodnyi-challenge-s-druzyami.html",
+      "datePublished": "2026-04-07",
+      "dateModified": "2026-10-06",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-vodnyi-challenge-s-druzyami.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Забываю пить воду: 7 научных способов",
+      "url": "https://suuapp.com/blog/ru/privychka-pit-vodu.html",
       "datePublished": "2026-03-15",
-      "inLanguage": "ru-RU"
+      "dateModified": "2026-09-27",
+      "inLanguage": "ru-RU",
+      "image": "https://suuapp.com/assets/og/blog/ru-privychka-pit-vodu.png"
     }
   ]
 }
     </script>
 
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
     {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {"@type":"ListItem","position":1,"name":"Главная","item":"https://suuapp.com/hosgeldiniz-ru.html"},
-        {"@type":"ListItem","position":2,"name":"Блог","item":"https://suuapp.com/blog-ru.html"}
-      ]
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Главная",
+      "item": "https://suuapp.com/hosgeldiniz-ru.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Блог",
+      "item": "https://suuapp.com/blog-ru.html"
     }
+  ]
+}
     </script>
     <script src="/assets/js/analytics.js" defer></script>
     <script src="/assets/js/special-days.js" defer></script>
@@ -567,578 +714,872 @@
 
 <nav class="blog-nav">
     <div class="nav-content">
-        <a href="hosgeldiniz-ru.html" class="blog-logo"><img src="/assets/brand/suu-badge-128.png" alt="Suu" width="128" height="128" class="suu-logo-badge" style="height:1.6em;width:1.6em;border-radius:50%;vertical-align:-0.4em;box-shadow:0 0 0 1px rgba(255,255,255,.12),0 0 14px rgba(94,170,255,.45);"> Suu</a>
+        <a href="/hosgeldiniz-ru.html" class="blog-logo"><img src="/assets/brand/suu-badge-128.png" alt="Suu" width="128" height="128" class="suu-logo-badge" style="height:1.6em;width:1.6em;border-radius:50%;display:block;"> Suu</a>
         <div class="nav-right">
-            <!-- lang-switcher.js injects buttons here -->
-            <a href="sravneniya.html" class="back-btn"><i class="fas fa-scale-balanced"></i> Сравнения</a>
-            <a href="hosgeldiniz-ru.html" class="back-btn"><i class="fas fa-arrow-left"></i> На главную</a>
-            <div class="hamburger"></div>
+            <span data-lang-slot></span>
+            <a href="sravneniya.html" class="nav-btn" title="Сравнения"><i class="fas fa-scale-balanced" aria-hidden="true"></i><span>Сравнения</span></a>
+            <a href="faq-ru.html" class="nav-btn" title="Вопросы"><i class="fas fa-circle-question" aria-hidden="true"></i><span>Вопросы</span></a>
+            <a href="/hosgeldiniz-ru.html" class="nav-btn" title="Главная"><i class="fas fa-house" aria-hidden="true"></i><span>Главная</span></a>
         </div>
     </div>
 </nav>
 
-<div class="blog-header">
-    <h1>💧 Блог Suu</h1>
-    <p>Научно обоснованные статьи о гидратации, здоровье и формировании полезных привычек.</p>
-</div>
+<header class="bi-hero">
+    <div class="bi-hero-in">
+        <h1>Блог Suu</h1>
+        <p class="bi-lead">Гайды с научными источниками о калориях, тренировках и воде — и честные сравнения приложений.</p>
+        <form class="bi-search" role="search" action="#" onsubmit="return false">
+            <i class="fas fa-magnifying-glass bi-ico" aria-hidden="true"></i>
+            <input type="search" id="bi-q" placeholder="Поиск: дефицит калорий, кофе, Рамадан…" aria-label="Поиск по статьям блога" autocomplete="off" enterkeyhint="search">
+            <button type="button" id="bi-clear" aria-label="Сбросить поиск" hidden><i class="fas fa-xmark" aria-hidden="true"></i></button>
+        </form>
+        <ul class="bi-stats">
+            <li><strong>54</strong> статьи</li>
+            <li><strong>7</strong> категорий</li>
+            <li><i class="far fa-clock" aria-hidden="true"></i> Обновлено: <time datetime="2026-10-14">14 октября 2026</time></li>
+        </ul>
+    </div>
+</header>
 
-<div class="container">
-    <div class="articles-grid">
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1E88E5,#42A5F5);color:white;">💧</div>
-            <div class="article-body">
-                <div class="article-tag">Гид</div>
-                <h3>Безопасно ли Suu? Кто за ним стоит и как защищены данные</h3>
-                <p>Кто разрабатывает Suu и как защищены данные? Приложение зарегистрированной компании из стамбульского инкубатора BTM: GDPR, AES-256, без продажи данных.</p>
-                <a href="blog/ru/bezopasno-li-suu.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
+<nav class="bi-chips" aria-label="Категории">
+    <div class="bi-chips-in">
+        <a href="#top" class="bi-chip" data-cat="all" aria-current="true">Все <span class="n">54</span></a>
+        <a href="#cat-calories" class="bi-chip" data-cat="calories" style="--c:#E65100">🔥 Калории и питание <span class="n">7</span></a>
+        <a href="#cat-exercise" class="bi-chip" data-cat="exercise" style="--c:#2E7D32">🏃 Спорт и тренировки <span class="n">6</span></a>
+        <a href="#cat-water" class="bi-chip" data-cat="water" style="--c:#0277BD">💧 Вода и гидратация <span class="n">8</span></a>
+        <a href="#cat-drinks" class="bi-chip" data-cat="drinks" style="--c:#6D4C41">☕ Кофе, чай и напитки <span class="n">9</span></a>
+        <a href="#cat-health" class="bi-chip" data-cat="health" style="--c:#AD1457">🩺 Здоровье и особые периоды <span class="n">6</span></a>
+        <a href="#cat-compare" class="bi-chip" data-cat="compare" style="--c:#00796B">⚖️ Сравнения приложений <span class="n">8</span></a>
+        <a href="#cat-suu" class="bi-chip" data-cat="suu" style="--c:#5E35B1">📱 Suu: функции и новости <span class="n">10</span></a>
+    </div>
+</nav>
+
+<main class="bi-main" id="top">
+    <p class="bi-status" id="bi-status" role="status" aria-live="polite"></p>
+
+    <section class="bi-sec bi-latest" id="latest" aria-labelledby="latest-h">
+        <div class="bi-sec-head">
+            <div class="bi-sec-ico" aria-hidden="true">✨</div>
+            <div><h2 id="latest-h">Новые статьи</h2></div>
+        </div>
+        <div class="bi-grid">
+<article class="bi-card" style="--c:#5E35B1;--bg-c:#EDE7F6">
+                <a href="/blog/ru/bezopasno-li-suu.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-bezopasno-li-suu.webp" alt="" width="600" height="315" fetchpriority="high" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">📱 Suu: функции и новости</span>
+                        <h3>Безопасно ли Suu? Кто за ним стоит и как защищены данные</h3>
+                        <p>Кто разрабатывает Suu и как защищены данные? Приложение зарегистрированной компании из стамбульского инкубатора BTM: GDPR, AES-256, без продажи данных.</p>
+                        <div class="bi-meta"><time datetime="2026-10-14">14 октября 2026</time><span aria-hidden="true">·</span><span>5 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/ru/lifesum-vs-myfitnesspal.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-lifesum-vs-myfitnesspal.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ Сравнения приложений</span>
+                        <h3>Lifesum или MyFitnessPal: какой счётчик калорий выбрать?</h3>
+                        <p>Сравнили Lifesum и MyFitnessPal по базе продуктов, сканеру штрихкодов, планам питания, бесплатной версии и рекламе. Что подойдёт вам?</p>
+                        <div class="bi-meta"><time datetime="2026-10-14">14 октября 2026</time><span aria-hidden="true">·</span><span>5 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/ru/cronometer-vs-lifesum.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-cronometer-vs-lifesum.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ Сравнения приложений</span>
+                        <h3>Cronometer или Lifesum: какой счётчик калорий выбрать?</h3>
+                        <p>Сравнили Cronometer и Lifesum по точности базы, учёту витаминов и минералов, планам питания, бесплатной версии и интерфейсу. Кому что подойдёт?</p>
+                        <div class="bi-meta"><time datetime="2026-10-14">14 октября 2026</time><span aria-hidden="true">·</span><span>5 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <section class="bi-sec" id="cat-calories" data-cat="calories" aria-labelledby="cat-calories-h" style="--c:#E65100;--bg-c:#FFF3E0">
+        <div class="bi-sec-head">
+            <div class="bi-sec-ico" aria-hidden="true">🔥</div>
+            <div>
+                <h2 id="cat-calories-h">Калории и питание <span class="n">7</span></h2>
+                <p>Дефицит калорий, макросы, подсчёт калорий по фото и почему вес стоит на месте.</p>
             </div>
-        </article>
+        </div>
+        <div class="bi-grid">
+<article class="bi-card" style="--c:#E65100;--bg-c:#FFF3E0">
+                <a href="/blog/ru/pochemu-ne-hudeyu.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-pochemu-ne-hudeyu.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🔥 Калории и питание</span>
+                        <h3>Почему я не худею? 7 причин и чек-лист</h3>
+                        <p>Почему весы стоят при дефиците калорий? Неполные записи, напитки, выходные, калории тренировок, колебания воды и снижение потребности. Чек-лист на 4 недели.</p>
+                        <div class="bi-meta"><time datetime="2026-09-27">27 сентября 2026</time><span aria-hidden="true">·</span><span>6 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#E65100;--bg-c:#FFF3E0">
+                <a href="/blog/ru/nadoelo-schitat-kalorii.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-nadoelo-schitat-kalorii.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🔥 Калории и питание</span>
+                        <h3>Надоело считать калории: 7 способов не бросить</h3>
+                        <p>Большинство бросает считать калории за пару недель. Важна регулярность, а не точность: записывайте примерно, начните с одного приёма пищи, смотрите на неделю.</p>
+                        <div class="bi-meta"><time datetime="2026-09-27">27 сентября 2026</time><span aria-hidden="true">·</span><span>6 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#E65100;--bg-c:#FFF3E0">
+                <a href="/blog/ru/nochnoj-zhor.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-nochnoj-zhor.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🔥 Калории и питание</span>
+                        <h3>Как избавиться от ночного жора: 7 решений</h3>
+                        <p>Ночной жор редко идёт от голода — чаще от пропущенного завтрака, недосыпа и привычки. Причины и 7 решений, которые работают, с опорой на исследования.</p>
+                        <div class="bi-meta"><time datetime="2026-09-27">27 сентября 2026</time><span aria-hidden="true">·</span><span>5 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#E65100;--bg-c:#FFF3E0">
+                <a href="/blog/ru/deficit-kalorij.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-deficit-kalorij.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🔥 Калории и питание</span>
+                        <h3>Что такое дефицит калорий и как его создать</h3>
+                        <p>Что такое дефицит калорий, как его рассчитать и каким он должен быть для похудения? Безопасный темп, частые ошибки и лёгкий трекинг калорий с ИИ.</p>
+                        <div class="bi-meta"><time datetime="2026-07-03">3 июля 2026</time><span aria-hidden="true">·</span><span>4 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#E65100;--bg-c:#FFF3E0">
+                <a href="/blog/ru/kalorii-po-foto.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-kalorii-po-foto.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🔥 Калории и питание</span>
+                        <h3>Подсчёт калорий по фото: ИИ-трекинг питания</h3>
+                        <p>Как работает подсчёт калорий по фото еды и насколько это точно? Плюсы ИИ-трекинга питания, советы по точности и фотоанализ в Suu.</p>
+                        <div class="bi-meta"><time datetime="2026-07-03">3 июля 2026</time><span aria-hidden="true">·</span><span>3 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#E65100;--bg-c:#FFF3E0">
+                <a href="/blog/ru/raschet-makrosov.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-raschet-makrosov.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🔥 Калории и питание</span>
+                        <h3>Как рассчитать макросы: белки, углеводы и жиры</h3>
+                        <p>Что такое макросы и как рассчитать суточную норму белков, углеводов и жиров? Формула от калорий к макросам шаг за шагом, пример и лёгкий трекинг с ИИ.</p>
+                        <div class="bi-meta"><time datetime="2026-07-03">3 июля 2026</time><span aria-hidden="true">·</span><span>5 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#E65100;--bg-c:#FFF3E0">
+                <a href="/blog/ru/voda-i-pohudenie.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-voda-i-pohudenie.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🔥 Калории и питание</span>
+                        <h3>Помогает ли вода похудеть?</h3>
+                        <p>Предзагрузка водой, термогенез и путаница голода и жажды — наука о воде и контроле веса.</p>
+                        <div class="bi-meta"><time datetime="2026-05-07">7 мая 2026</time><span aria-hidden="true">·</span><span>2 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
 
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#0072C6,#43A047);color:white;">⚖️</div>
-            <div class="article-body">
-                <div class="article-tag">Сравнение</div>
-                <h3>Cronometer или Lifesum: какой счётчик калорий выбрать?</h3>
-                <p>Сравнили Cronometer и Lifesum по точности базы, учёту витаминов и минералов, планам питания, бесплатной версии и интерфейсу. Кому что подойдёт?</p>
-                <a href="blog/ru/cronometer-vs-lifesum.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
+    <section class="bi-sec" id="cat-exercise" data-cat="exercise" aria-labelledby="cat-exercise-h" style="--c:#2E7D32;--bg-c:#E8F5E9">
+        <div class="bi-sec-head">
+            <div class="bi-sec-ico" aria-hidden="true">🏃</div>
+            <div>
+                <h2 id="cat-exercise-h">Спорт и тренировки <span class="n">6</span></h2>
+                <p>Сколько калорий сжигают тренировки, мотивация, спорт во время поста и выбор нагрузки.</p>
             </div>
-        </article>
+        </div>
+        <div class="bi-grid">
+<article class="bi-card" style="--c:#2E7D32;--bg-c:#E8F5E9">
+                <a href="/blog/ru/hodba-ili-beg.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-hodba-ili-beg.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🏃 Спорт и тренировки</span>
+                        <h3>Ходьба или бег для похудения?</h3>
+                        <p>За одно и то же время бег сжигает примерно в 2,5–3 раза больше ходьбы, а на ту же дистанцию — лишь на 40% больше. Калории, аппетит и риск травм.</p>
+                        <div class="bi-meta"><time datetime="2026-10-13">13 октября 2026</time><span aria-hidden="true">·</span><span>7 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#2E7D32;--bg-c:#E8F5E9">
+                <a href="/blog/ru/sport-v-ramadan.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-sport-v-ramadan.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🏃 Спорт и тренировки</span>
+                        <h3>Спорт в Рамадан: до ифтара или после?</h3>
+                        <p>Лёгкая тренировка — прямо перед ифтаром, силовая и интенсивная — через 1–3 часа после него. План питья от ифтара до сухура, советы по сухуру и сну.</p>
+                        <div class="bi-meta"><time datetime="2026-10-13">13 октября 2026</time><span aria-hidden="true">·</span><span>7 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#2E7D32;--bg-c:#E8F5E9">
+                <a href="/blog/ru/ves-vyros-posle-trenirovok.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-ves-vyros-posle-trenirovok.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🏃 Спорт и тренировки</span>
+                        <h3>Начали тренироваться, а вес вырос — почему?</h3>
+                        <p>Рост веса после начала тренировок — чаще всего не жир: вода, запасённая вместе с гликогеном, восстановление мышц и тихо растущий аппетит. Когда верить весам.</p>
+                        <div class="bi-meta"><time datetime="2026-10-13">13 октября 2026</time><span aria-hidden="true">·</span><span>7 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#2E7D32;--bg-c:#E8F5E9">
+                <a href="/blog/ru/len-zanimatsya-sportom.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-len-zanimatsya-sportom.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🏃 Спорт и тренировки</span>
+                        <h3>Лень заниматься спортом: 7 способов начать</h3>
+                        <p>Лень заниматься спортом — это не про силу воли, а про высокий порог старта. Начните с 10 минут ходьбы, заранее решите когда и где, подключите друга.</p>
+                        <div class="bi-meta"><time datetime="2026-09-27">27 сентября 2026</time><span aria-hidden="true">·</span><span>6 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#2E7D32;--bg-c:#E8F5E9">
+                <a href="/blog/ru/raskhod-kalorij.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-raskhod-kalorij.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🏃 Спорт и тренировки</span>
+                        <h3>Сколько калорий сжигает тренировка?</h3>
+                        <p>Сколько калорий сжигают ходьба, бег, велосипед, плавание и HIIT? Персональный расчёт по формуле MET, таблица активностей и автоматический трекинг с Apple Health.</p>
+                        <div class="bi-meta"><time datetime="2026-07-03">3 июля 2026</time><span aria-hidden="true">·</span><span>3 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#2E7D32;--bg-c:#E8F5E9">
+                <a href="/blog/ru/sport-i-gidratatsiya.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-sport-i-gidratatsiya.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🏃 Спорт и тренировки</span>
+                        <h3>Спорт и гидратация: полное руководство</h3>
+                        <p>Сколько воды пить до, во время и после тренировки. Потери с потом, электролиты и гидратация по видам спорта.</p>
+                        <div class="bi-meta"><time datetime="2026-05-07">7 мая 2026</time><span aria-hidden="true">·</span><span>4 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
 
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#0072C6,#43A047);color:white;">⚖️</div>
-            <div class="article-body">
-                <div class="article-tag">Сравнение</div>
-                <h3>Lifesum или MyFitnessPal: какой счётчик калорий выбрать?</h3>
-                <p>Сравнили Lifesum и MyFitnessPal по базе продуктов, сканеру штрихкодов, планам питания, бесплатной версии и рекламе. Что подойдёт вам?</p>
-                <a href="blog/ru/lifesum-vs-myfitnesspal.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
+    <section class="bi-sec" id="cat-water" data-cat="water" aria-labelledby="cat-water-h" style="--c:#0277BD;--bg-c:#E1F5FE">
+        <div class="bi-sec-head">
+            <div class="bi-sec-ico" aria-hidden="true">💧</div>
+            <div>
+                <h2 id="cat-water-h">Вода и гидратация <span class="n">8</span></h2>
+                <p>Сколько воды нужно, признаки обезвоживания, привычка пить воду и её отслеживание.</p>
             </div>
-        </article>
+        </div>
+        <div class="bi-grid">
+<article class="bi-card" style="--c:#0277BD;--bg-c:#E1F5FE">
+                <a href="/blog/ru/skolko-vody-pit-v-den.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-skolko-vody-pit-v-den.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">💧 Вода и гидратация</span>
+                        <h3>Сколько воды нужно пить в день?</h3>
+                        <p>Научно обоснованная формула расчёта вашей дневной нормы воды на основе веса, активности и климата. Реалистичный ответ вместо мифа «8 стаканов».</p>
+                        <div class="bi-meta"><time datetime="2026-05-07">7 мая 2026</time><span aria-hidden="true">·</span><span>4 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#0277BD;--bg-c:#E1F5FE">
+                <a href="/blog/ru/priznaki-obezvozhivaniya.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-priznaki-obezvozhivaniya.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">💧 Вода и гидратация</span>
+                        <h3>Признаки обезвоживания, которые нельзя игнорировать</h3>
+                        <p>Головные боли, усталость, тёмная моча — научитесь распознавать обезвоживание до того, как оно повлияет на ваше здоровье и продуктивность.</p>
+                        <div class="bi-meta"><time datetime="2026-05-07">7 мая 2026</time><span aria-hidden="true">·</span><span>2 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#0277BD;--bg-c:#E1F5FE">
+                <a href="/blog/ru/voda-utrom.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-voda-utrom.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">💧 Вода и гидратация</span>
+                        <h3>Почему стоит пить воду первым делом утром</h3>
+                        <p>Запуск метаболизма, окно гидратации и когнитивная польза утренней воды — и как закрепить эту привычку.</p>
+                        <div class="bi-meta"><time datetime="2026-05-07">7 мая 2026</time><span aria-hidden="true">·</span><span>2 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#0277BD;--bg-c:#E1F5FE">
+                <a href="/blog/ru/voda-po-aktivnosti.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-voda-po-aktivnosti.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">💧 Вода и гидратация</span>
+                        <h3>Отслеживание воды по активности</h3>
+                        <p>Suu читает вашу активность из Apple Health и Google Health Connect и автоматически увеличивает дневную цель воды. Научно обоснованная математика для 30+ типов тренировок.</p>
+                        <div class="bi-meta"><time datetime="2026-05-07">7 мая 2026</time><span aria-hidden="true">·</span><span>2 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#0277BD;--bg-c:#E1F5FE">
+                <a href="/blog/ru/luchshee-prilozhenie-dlya-vody.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-luchshee-prilozhenie-dlya-vody.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">💧 Вода и гидратация</span>
+                        <h3>Лучшее приложение для отслеживания воды в 2026</h3>
+                        <p>Честное сравнение топовых приложений для воды — функции, дизайн, цена и чем выделяется Suu в 2026 году.</p>
+                        <div class="bi-meta"><time datetime="2026-05-07">7 мая 2026</time><span aria-hidden="true">·</span><span>4 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#0277BD;--bg-c:#E1F5FE">
+                <a href="/blog/ru/polza-pitia-vody.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-polza-pitia-vody.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">💧 Вода и гидратация</span>
+                        <h3>10 научно доказанных преимуществ ежедневного питья воды</h3>
+                        <p>Как вода улучшает работу мозга, метаболизм, кожу и иммунитет — 10 преимуществ на основе рецензируемых исследований.</p>
+                        <div class="bi-meta"><time datetime="2026-05-07">7 мая 2026</time><span aria-hidden="true">·</span><span>4 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#0277BD;--bg-c:#E1F5FE">
+                <a href="/blog/ru/geymifikatsiya-vody.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-geymifikatsiya-vody.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">💧 Вода и гидратация</span>
+                        <h3>Почему геймификация заставляет вас пить больше воды</h3>
+                        <p>Значки, серии, лиги друзей, испытания — система геймификации Suu построена на поведенческой науке. Вот почему это действительно работает.</p>
+                        <div class="bi-meta"><time datetime="2026-04-14">14 апреля 2026</time><span aria-hidden="true">·</span><span>3 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#0277BD;--bg-c:#E1F5FE">
+                <a href="/blog/ru/privychka-pit-vodu.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-privychka-pit-vodu.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">💧 Вода и гидратация</span>
+                        <h3>Забываю пить воду: 7 научных способов</h3>
+                        <p>Забывать пить воду — это не про силу воли, а про отсутствие триггеров. Стакан утром, бутылка на виду, стакан перед едой и маленькие цели: 7 рабочих способов.</p>
+                        <div class="bi-meta"><time datetime="2026-03-15">15 марта 2026</time><span aria-hidden="true">·</span><span>5 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
 
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1E88E5,#42A5F5);color:white;">💧</div>
-            <div class="article-body">
-                <div class="article-tag">Гид</div>
-                <h3>Ходьба или бег для похудения?</h3>
-                <p>За одно и то же время бег сжигает примерно в 2,5–3 раза больше ходьбы, а на ту же дистанцию — лишь на 40% больше. Калории, аппетит и риск травм.</p>
-                <a href="blog/ru/hodba-ili-beg.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
+    <section class="bi-sec" id="cat-drinks" data-cat="drinks" aria-labelledby="cat-drinks-h" style="--c:#6D4C41;--bg-c:#EFEBE9">
+        <div class="bi-sec-head">
+            <div class="bi-sec-ico" aria-hidden="true">☕</div>
+            <div>
+                <h2 id="cat-drinks-h">Кофе, чай и напитки <span class="n">9</span></h2>
+                <p>Нормы кофеина, считаются ли чай и кофе водой, сладкие и алкогольные напитки.</p>
             </div>
-        </article>
+        </div>
+        <div class="bi-grid">
+<article class="bi-card" style="--c:#6D4C41;--bg-c:#EFEBE9">
+                <a href="/blog/ru/kak-brosit-gazirovku.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-kak-brosit-gazirovku.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">☕ Кофе, чай и напитки</span>
+                        <h3>Как бросить пить газировку: план на 4 недели</h3>
+                        <p>Не бросайте резко — сокращайте газировку 4 недели: триггеры, кофеиновая головная боль, переход на минералку и реальный эффект одной банки в цифрах.</p>
+                        <div class="bi-meta"><time datetime="2026-09-27">27 сентября 2026</time><span aria-hidden="true">·</span><span>7 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#6D4C41;--bg-c:#EFEBE9">
+                <a href="/blog/ru/chai-i-gidratatsiya.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-chai-i-gidratatsiya.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">☕ Кофе, чай и напитки</span>
+                        <h3>Чай гидратирует?</h3>
+                        <p>Зелёный, чёрный, травяной чай — гидратируют? Заменяют ли воду? Коэффициент гидратации для 12+ видов чая, кофеин и здоровье.</p>
+                        <div class="bi-meta"><time datetime="2026-05-10">10 мая 2026</time><span aria-hidden="true">·</span><span>6 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#6D4C41;--bg-c:#EFEBE9">
+                <a href="/blog/ru/sok-ili-voda.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-sok-ili-voda.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">☕ Кофе, чай и напитки</span>
+                        <h3>Сок или вода? Что полезнее?</h3>
+                        <p>Свежевыжатый сок или пакетированный? Заменяет ли воду? Содержание сахара, витаминов, сок для детей и риск диабета.</p>
+                        <div class="bi-meta"><time datetime="2026-05-10">10 мая 2026</time><span aria-hidden="true">·</span><span>4 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#6D4C41;--bg-c:#EFEBE9">
+                <a href="/blog/ru/skolko-kofe-v-den.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-skolko-kofe-v-den.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">☕ Кофе, чай и напитки</span>
+                        <h3>Сколько чашек кофе в день безопасно?</h3>
+                        <p>2 кофе в день полезно или 4? Лимиты FDA, EFSA и ACOG, скорость метаболизма кофеина, особые лимиты для беременных/спортсменов и трекинг с Suu.</p>
+                        <div class="bi-meta"><time datetime="2026-05-10">10 мая 2026</time><span aria-hidden="true">·</span><span>6 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#6D4C41;--bg-c:#EFEBE9">
+                <a href="/blog/ru/kak-sokratit-kofe.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-kak-sokratit-kofe.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">☕ Кофе, чай и напитки</span>
+                        <h3>Как сократить потребление кофе: 7 научно обоснованных стратегий</h3>
+                        <p>Пьёте слишком много кофе и хотите сократить, но не можете? В этом руководстве — наука о кофеиновой зависимости, 7 стратегий и 7-дневный план с приложением Suu.</p>
+                        <div class="bi-meta"><time datetime="2026-05-10">10 мая 2026</time><span aria-hidden="true">·</span><span>8 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#6D4C41;--bg-c:#EFEBE9">
+                <a href="/blog/ru/kontrol-energetikov.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-kontrol-energetikov.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">☕ Кофе, чай и напитки</span>
+                        <h3>Как контролировать потребление энергетиков?</h3>
+                        <p>Как сократить Red Bull, Monster, Burn? Содержание кофеина/сахара, лимит FDA, риски для молодёжи и трекинг с Suu.</p>
+                        <div class="bi-meta"><time datetime="2026-05-10">10 мая 2026</time><span aria-hidden="true">·</span><span>5 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#6D4C41;--bg-c:#EFEBE9">
+                <a href="/blog/ru/gidratatsiya-posle-alkogolya.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-gidratatsiya-posle-alkogolya.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">☕ Кофе, чай и напитки</span>
+                        <h3>Гидратация после алкоголя: научный путь предотвращения похмелья</h3>
+                        <p>Пиво, вино, виски обезвоживают тело. Компенсирующая вода по типу алкоголя, план регидратации на следующий день и трекинг с Suu.</p>
+                        <div class="bi-meta"><time datetime="2026-05-10">10 мая 2026</time><span aria-hidden="true">·</span><span>5 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#6D4C41;--bg-c:#EFEBE9">
+                <a href="/blog/ru/kofe-chay-i-voda.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-kofe-chay-i-voda.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">☕ Кофе, чай и напитки</span>
+                        <h3>Считается ли кофе в норму воды? Таблица напитков</h3>
+                        <p>Умеренные кофе и чай не обезвоживают — они увлажняют почти как вода. Как считаются фильтр-кофе, эспрессо, чай и газировка, лимит кофеина и коэффициенты Suu.</p>
+                        <div class="bi-meta"><time datetime="2026-05-07">7 мая 2026</time><span aria-hidden="true">·</span><span>6 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#6D4C41;--bg-c:#EFEBE9">
+                <a href="/blog/ru/kofein-i-sahar.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-kofein-i-sahar.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">☕ Кофе, чай и напитки</span>
+                        <h3>Отслеживание кофеина и сахара</h3>
+                        <p>Suu рассчитывает кофеин (мг) и сахар (г) для 91 напиток. Умные предупреждения о лимитах FDA 400 мг и ВОЗ 25 г в день.</p>
+                        <div class="bi-meta"><time datetime="2026-05-07">7 мая 2026</time><span aria-hidden="true">·</span><span>3 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
 
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#2E9E4F,#66BB6A);color:white;">🏃</div>
-            <div class="article-body">
-                <div class="article-tag">Тренировки</div>
-                <h3>Спорт в Рамадан: до ифтара или после?</h3>
-                <p>Лёгкая тренировка — прямо перед ифтаром, силовая и интенсивная — через 1–3 часа после него. План питья от ифтара до сухура, советы по сухуру и сну.</p>
-                <a href="blog/ru/sport-v-ramadan.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
+    <section class="bi-sec" id="cat-health" data-cat="health" aria-labelledby="cat-health-h" style="--c:#AD1457;--bg-c:#FCE4EC">
+        <div class="bi-sec-head">
+            <div class="bi-sec-ico" aria-hidden="true">🩺</div>
+            <div>
+                <h2 id="cat-health-h">Здоровье и особые периоды <span class="n">6</span></h2>
+                <p>Беременность и кормление грудью, постоянная усталость, вода и почки, кожа и сон.</p>
             </div>
-        </article>
+        </div>
+        <div class="bi-grid">
+<article class="bi-card" style="--c:#AD1457;--bg-c:#FCE4EC">
+                <a href="/blog/ru/postoyannaya-ustalost.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-postoyannaya-ustalost.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🩺 Здоровье и особые периоды</span>
+                        <h3>Почему я постоянно устаю? 8 частых причин</h3>
+                        <p>Самые частые причины постоянной усталости: сон, стресс, малоподвижность, питание, недостаток воды, кофеин, дефицит железа и болезни. Когда идти к врачу.</p>
+                        <div class="bi-meta"><time datetime="2026-09-27">27 сентября 2026</time><span aria-hidden="true">·</span><span>6 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#AD1457;--bg-c:#FCE4EC">
+                <a href="/blog/ru/voda-i-zdorove-kozhi.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-voda-i-zdorove-kozhi.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🩺 Здоровье и особые периоды</span>
+                        <h3>Улучшает ли вода состояние кожи? Наука и факты</h3>
+                        <p>Наука о гидратации и здоровье кожи — упругость, старение, выработка коллагена и что вода действительно может сделать для вашей кожи.</p>
+                        <div class="bi-meta"><time datetime="2026-05-07">7 мая 2026</time><span aria-hidden="true">·</span><span>2 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#AD1457;--bg-c:#FCE4EC">
+                <a href="/blog/ru/voda-i-son.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-voda-i-son.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🩺 Здоровье и особые периоды</span>
+                        <h3>Как обезвоживание влияет на сон</h3>
+                        <p>Обезвоживание ухудшает качество сна — узнайте оптимальное время питья, сколько пить перед сном и стратегии утренней регидратации.</p>
+                        <div class="bi-meta"><time datetime="2026-05-07">7 мая 2026</time><span aria-hidden="true">·</span><span>2 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#AD1457;--bg-c:#FCE4EC">
+                <a href="/blog/ru/voda-i-zdorove-pochek.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-voda-i-zdorove-pochek.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🩺 Здоровье и особые периоды</span>
+                        <h3>Как вода защищает почки: гидратация и здоровье почек</h3>
+                        <p>Камни в почках, профилактика инфекций мочевых путей и хроническая болезнь почек — как стабильная гидратация поддерживает функцию почек.</p>
+                        <div class="bi-meta"><time datetime="2026-05-07">7 мая 2026</time><span aria-hidden="true">·</span><span>4 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#AD1457;--bg-c:#FCE4EC">
+                <a href="/blog/ru/voda-i-kormlenie.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-voda-i-kormlenie.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🩺 Здоровье и особые периоды</span>
+                        <h3>Гидратация при грудном вскармливании</h3>
+                        <p>Грудное молоко на 87% состоит из воды. Кормящие мамы нуждаются в ~700 мл больше в день. Научное руководство + режим кормления Suu.</p>
+                        <div class="bi-meta"><time datetime="2026-05-07">7 мая 2026</time><span aria-hidden="true">·</span><span>2 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#AD1457;--bg-c:#FCE4EC">
+                <a href="/blog/ru/voda-i-beremennost.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-voda-i-beremennost.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🩺 Здоровье и особые периоды</span>
+                        <h3>Гидратация при беременности: руководство по триместрам</h3>
+                        <p>Объём крови растёт на 50% при беременности. Сколько именно пить воды по триместрам — и режим беременности Suu автоматически подстраивает цель.</p>
+                        <div class="bi-meta"><time datetime="2026-05-07">7 мая 2026</time><span aria-hidden="true">·</span><span>2 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
 
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1E88E5,#42A5F5);color:white;">💧</div>
-            <div class="article-body">
-                <div class="article-tag">Гид</div>
-                <h3>Начали тренироваться, а вес вырос — почему?</h3>
-                <p>Рост веса после начала тренировок — чаще всего не жир: вода, запасённая вместе с гликогеном, восстановление мышц и тихо растущий аппетит. Когда верить весам.</p>
-                <a href="blog/ru/ves-vyros-posle-trenirovok.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
+    <section class="bi-sec" id="cat-compare" data-cat="compare" aria-labelledby="cat-compare-h" style="--c:#00796B;--bg-c:#E0F2F1">
+        <div class="bi-sec-head">
+            <div class="bi-sec-ico" aria-hidden="true">⚖️</div>
+            <div>
+                <h2 id="cat-compare-h">Сравнения приложений <span class="n">8</span></h2>
+                <p>MyFitnessPal, Yazio, Lifesum, Cronometer, Strava и Suu: что кому подходит?</p>
             </div>
-        </article>
+        </div>
+        <div class="bi-grid">
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/ru/lifesum-vs-myfitnesspal.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-lifesum-vs-myfitnesspal.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ Сравнения приложений</span>
+                        <h3>Lifesum или MyFitnessPal: какой счётчик калорий выбрать?</h3>
+                        <p>Сравнили Lifesum и MyFitnessPal по базе продуктов, сканеру штрихкодов, планам питания, бесплатной версии и рекламе. Что подойдёт вам?</p>
+                        <div class="bi-meta"><time datetime="2026-10-14">14 октября 2026</time><span aria-hidden="true">·</span><span>5 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/ru/cronometer-vs-lifesum.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-cronometer-vs-lifesum.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ Сравнения приложений</span>
+                        <h3>Cronometer или Lifesum: какой счётчик калорий выбрать?</h3>
+                        <p>Сравнили Cronometer и Lifesum по точности базы, учёту витаминов и минералов, планам питания, бесплатной версии и интерфейсу. Кому что подойдёт?</p>
+                        <div class="bi-meta"><time datetime="2026-10-14">14 октября 2026</time><span aria-hidden="true">·</span><span>5 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/ru/alternativy-yazio.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-alternativy-yazio.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ Сравнения приложений</span>
+                        <h3>Альтернативы Yazio: какое приложение выбрать в 2026 году</h3>
+                        <p>Ищете аналог Yazio? Сравнили Suu, FatSecret, MyFitnessPal, Lifesum и Cronometer: запись еды, бесплатный тариф, голодание, вода и GPS-тренировки.</p>
+                        <div class="bi-meta"><time datetime="2026-10-03">3 октября 2026</time><span aria-hidden="true">·</span><span>11 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/ru/luchshee-prilozhenie-dlya-trenirovok.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-luchshee-prilozhenie-dlya-trenirovok.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ Сравнения приложений</span>
+                        <h3>Лучшее приложение для тренировок в 2026</h3>
+                        <p>Сравнили приложения для тренировок по тому, что они делают с вашими данными: Strava, Nike Run Club, Samsung Health, Apple Fitness и Suu. Какое считает калории…</p>
+                        <div class="bi-meta"><time datetime="2026-08-24">24 августа 2026</time><span aria-hidden="true">·</span><span>7 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/ru/luchshee-prilozhenie-podscheta-kalorij.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-luchshee-prilozhenie-podscheta-kalorij.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ Сравнения приложений</span>
+                        <h3>Лучшее приложение для подсчёта калорий 2026: Suu против MyFitnessPal, Yazio, Lifesum, Cronometer</h3>
+                        <p>Сравнили лучшие приложения для подсчёта калорий и питания 2026: Suu против MyFitnessPal, Yazio, Lifesum, Cronometer — голосовой ввод, подсчёт калорий по фото, вода…</p>
+                        <div class="bi-meta"><time datetime="2026-07-07">7 июля 2026</time><span aria-hidden="true">·</span><span>7 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/ru/voda-kalorii-trenirovki-odno-prilozhenie.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-voda-kalorii-trenirovki-odno-prilozhenie.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ Сравнения приложений</span>
+                        <h3>Есть ли приложение, которое считает воду, калории И тренировки вместе?</h3>
+                        <p>Ищете одно приложение для учёта воды, калорий и тренировок вместе? Почему важен совмещённый учёт, какие приложения это делают и как Suu решает это голосовым вводом…</p>
+                        <div class="bi-meta"><time datetime="2026-07-07">7 июля 2026</time><span aria-hidden="true">·</span><span>3 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/ru/suu-vs-yazio.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-suu-vs-yazio.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ Сравнения приложений</span>
+                        <h3>Suu против Yazio: что лучше? (2026)</h3>
+                        <p>Сравнение Suu и Yazio на 2026: голосовой ввод, калории по фото, вода + калории + тренировки в одном приложении и настоящая наука о гидратации — против таймера…</p>
+                        <div class="bi-meta"><time datetime="2026-07-07">7 июля 2026</time><span aria-hidden="true">·</span><span>3 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/ru/suu-vs-myfitnesspal.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-suu-vs-myfitnesspal.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ Сравнения приложений</span>
+                        <h3>Suu против MyFitnessPal: что лучше? (2026)</h3>
+                        <p>Сравнение Suu и MyFitnessPal на 2026: голосовой ввод, калории по фото, вода + калории + тренировки в одном приложении, полная русская локализация — лучший аналог…</p>
+                        <div class="bi-meta"><time datetime="2026-07-07">7 июля 2026</time><span aria-hidden="true">·</span><span>4 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
 
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#0072C6,#43A047);color:white;">⚖️</div>
-            <div class="article-body">
-                <div class="article-tag">Сравнение</div>
-                <h3>Альтернативы Yazio: какое приложение выбрать в 2026 году</h3>
-                <p>Ищете аналог Yazio? Сравнили Suu, FatSecret, MyFitnessPal, Lifesum и Cronometer: запись еды, бесплатный тариф, голодание, вода и GPS-тренировки.</p>
-                <a href="blog/ru/alternativy-yazio.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
+    <section class="bi-sec" id="cat-suu" data-cat="suu" aria-labelledby="cat-suu-h" style="--c:#5E35B1;--bg-c:#EDE7F6">
+        <div class="bi-sec-head">
+            <div class="bi-sec-ico" aria-hidden="true">📱</div>
+            <div>
+                <h2 id="cat-suu-h">Suu: функции и новости <span class="n">10</span></h2>
+                <p>Функции и обновления Suu, программа пожертвований и как защищены ваши данные.</p>
             </div>
-        </article>
+        </div>
+        <div class="bi-grid">
+<article class="bi-card" style="--c:#5E35B1;--bg-c:#EDE7F6">
+                <a href="/blog/ru/bezopasno-li-suu.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-bezopasno-li-suu.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">📱 Suu: функции и новости</span>
+                        <h3>Безопасно ли Suu? Кто за ним стоит и как защищены данные</h3>
+                        <p>Кто разрабатывает Suu и как защищены данные? Приложение зарегистрированной компании из стамбульского инкубатора BTM: GDPR, AES-256, без продажи данных.</p>
+                        <div class="bi-meta"><time datetime="2026-10-14">14 октября 2026</time><span aria-hidden="true">·</span><span>5 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#5E35B1;--bg-c:#EDE7F6">
+                <a href="/blog/ru/stoit-li-sozdavat-prilozhenie-treker.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-stoit-li-sozdavat-prilozhenie-treker.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">📱 Suu: функции и новости</span>
+                        <h3>Стоит ли создавать приложение-трекер в 2026?</h3>
+                        <p>Думаете создать счётчик калорий, трекер воды или приложение для тренировок? Разработчик, который сделал такое, показывает рынок 2026: MyFitnessPal с 200+ млн…</p>
+                        <div class="bi-meta"><time datetime="2026-09-14">14 сентября 2026</time><span aria-hidden="true">·</span><span>10 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#5E35B1;--bg-c:#EDE7F6">
+                <a href="/blog/ru/golosovoj-vvod-kalorij.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-golosovoj-vvod-kalorij.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">📱 Suu: функции и новости</span>
+                        <h3>Голосовой ввод калорий: как работает запись еды голосом</h3>
+                        <p>Можно ли записывать калории и еду голосом? Как работает голосовой ввод еды, какое приложение это делает, насколько это точно и как защищена приватность. Учёт…</p>
+                        <div class="bi-meta"><time datetime="2026-07-07">7 июля 2026</time><span aria-hidden="true">·</span><span>3 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#5E35B1;--bg-c:#EDE7F6">
+                <a href="/blog/ru/prostoy-rasshirennyy-rezhim.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-prostoy-rasshirennyy-rezhim.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">📱 Suu: функции и новости</span>
+                        <h3>Простой и расширенный режим в Suu: отслеживайте воду по-своему</h3>
+                        <p>Suu теперь работает в двух режимах: чистый Простой режим с добавлением в одно касание и Расширенный режим с подробной статистикой и быстрым добавлением.</p>
+                        <div class="bi-meta"><time datetime="2026-06-14">14 июня 2026</time><span aria-hidden="true">·</span><span>3 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#5E35B1;--bg-c:#EDE7F6">
+                <a href="/blog/ru/domashnij-pitomec-mini-igry.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-domashnij-pitomec-mini-igry.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">📱 Suu: функции и новости</span>
+                        <h3>Питомец в Suu: кошка/собака + 4 мини-игры + одевалка</h3>
+                        <p>В Suu появился виртуальный питомец! Выберите кошку или собаку — стрик теперь ведёт он. Играйте в 4 мини-игры (лопни каплю, сложение, вычитание, найди пару)…</p>
+                        <div class="bi-meta"><time datetime="2026-05-22">22 мая 2026</time><span aria-hidden="true">·</span><span>5 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#5E35B1;--bg-c:#EDE7F6">
+                <a href="/blog/ru/programma-pozhertvovanij-kolodtsy-afrika.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-programma-pozhertvovanij-kolodtsy-afrika.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">📱 Suu: функции и новости</span>
+                        <h3>Программа пожертвований Suu Premium 2%: прозрачные колодцы в Африке</h3>
+                        <p>2% от каждой подписки Suu Premium направляется на проекты строительства колодцев с чистой водой в Африке. Все квитанции публичны, JSON открыт, отслеживается через git.</p>
+                        <div class="bi-meta"><time datetime="2026-05-11">11 мая 2026</time><span aria-hidden="true">·</span><span>3 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#5E35B1;--bg-c:#EDE7F6">
+                <a href="/blog/ru/otsenka-gidratatsii.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-otsenka-gidratatsii.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">📱 Suu: функции и новости</span>
+                        <h3>Что такое оценка гидратации?</h3>
+                        <p>Оценка гидратации Suu измеряет четыре компонента — выполнение, регулярность, тайминг и избежание чрезмерного. Как она рассчитывается и как улучшить.</p>
+                        <div class="bi-meta"><time datetime="2026-05-07">7 мая 2026</time><span aria-hidden="true">·</span><span>2 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#5E35B1;--bg-c:#EDE7F6">
+                <a href="/blog/ru/siri-voda.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-siri-voda.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">📱 Suu: функции и новости</span>
+                        <h3>Как отслеживать воду через Siri в 2026</h3>
+                        <p>Настройте Siri Shortcuts в Suu для голосового добавления воды. Пошаговое руководство для iPhone, Apple Watch и Android.</p>
+                        <div class="bi-meta"><time datetime="2026-05-07">7 мая 2026</time><span aria-hidden="true">·</span><span>2 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#5E35B1;--bg-c:#EDE7F6">
+                <a href="/blog/ru/apple-watch-voda.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-apple-watch-voda.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">📱 Suu: функции и новости</span>
+                        <h3>Apple Watch и отслеживание воды: полное руководство 2026</h3>
+                        <p>Приложение Suu для Apple Watch уже доступно: вода и еда голосом с запястья, GPS-тренировки с пульсом, кольца «Движение» и «Питание». Плюс как тренировки через Apple…</p>
+                        <div class="bi-meta"><time datetime="2026-05-07">7 мая 2026</time><span aria-hidden="true">·</span><span>3 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#5E35B1;--bg-c:#EDE7F6">
+                <a href="/blog/ru/vodnyi-challenge-s-druzyami.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ru-vodnyi-challenge-s-druzyami.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">📱 Suu: функции и новости</span>
+                        <h3>Водный челлендж с друзьями</h3>
+                        <p>Добавьте до 4 друзей бесплатно: недельный рейтинг и подбадривания. Частные лиги — в Premium. Прогресс в реальном времени, кросс-платформа iOS + Android.</p>
+                        <div class="bi-meta"><time datetime="2026-04-07">7 апреля 2026</time><span aria-hidden="true">·</span><span>2 мин чтения</span></div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
 
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1E88E5,#42A5F5);color:white;">💧</div>
-            <div class="article-body">
-                <div class="article-tag">Гид</div>
-                <h3>Как избавиться от ночного жора: 7 решений</h3>
-                <p>Ночной жор редко идёт от голода — чаще от пропущенного завтрака, недосыпа и привычки. Причины и 7 решений, которые работают, с опорой на исследования.</p>
-                <a href="blog/ru/nochnoj-zhor.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1E88E5,#42A5F5);color:white;">💧</div>
-            <div class="article-body">
-                <div class="article-tag">Гид</div>
-                <h3>Почему я не худею? 7 причин и чек-лист</h3>
-                <p>Почему весы стоят при дефиците калорий? Неполные записи, напитки, выходные, калории тренировок, колебания воды и снижение потребности. Чек-лист на 4 недели.</p>
-                <a href="blog/ru/pochemu-ne-hudeyu.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1E88E5,#42A5F5);color:white;">💧</div>
-            <div class="article-body">
-                <div class="article-tag">Гид</div>
-                <h3>Почему я постоянно устаю? 8 частых причин</h3>
-                <p>Самые частые причины постоянной усталости: сон, стресс, малоподвижность, питание, недостаток воды, кофеин, дефицит железа и болезни. Когда идти к врачу.</p>
-                <a href="blog/ru/postoyannaya-ustalost.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#2E9E4F,#66BB6A);color:white;">🏃</div>
-            <div class="article-body">
-                <div class="article-tag">Тренировки</div>
-                <h3>Лень заниматься спортом: 7 способов начать</h3>
-                <p>Лень заниматься спортом — это не про силу воли, а про высокий порог старта. Начните с 10 минут ходьбы, заранее решите когда и где, подключите друга.</p>
-                <a href="blog/ru/len-zanimatsya-sportom.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#F57C00,#FFB74D);color:white;">🔥</div>
-            <div class="article-body">
-                <div class="article-tag">Калории</div>
-                <h3>Надоело считать калории: 7 способов не бросить</h3>
-                <p>Большинство бросает считать калории за пару недель. Важна регулярность, а не точность: записывайте примерно, начните с одного приёма пищи, смотрите на неделю.</p>
-                <a href="blog/ru/nadoelo-schitat-kalorii.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1E88E5,#42A5F5);color:white;">💧</div>
-            <div class="article-body">
-                <div class="article-tag">Гид</div>
-                <h3>Как бросить пить газировку: план на 4 недели</h3>
-                <p>Не бросайте резко — сокращайте газировку 4 недели: триггеры, кофеиновая головная боль, переход на минералку и реальный эффект одной банки в цифрах.</p>
-                <a href="blog/ru/kak-brosit-gazirovku.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1E88E5,#42A5F5);color:white;">💧</div>
-            <div class="article-body">
-                <div class="article-tag">Гид</div>
-                <h3>Стоит ли создавать приложение-трекер в 2026?</h3>
-                <p>Думаете создать счётчик калорий, трекер воды или приложение для тренировок? Разработчик, который сделал такое, показывает рынок 2026: MyFitnessPal с 200+ млн…</p>
-                <a href="blog/ru/stoit-li-sozdavat-prilozhenie-treker.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1E88E5,#42A5F5);color:white;">💧</div>
-            <div class="article-body">
-                <div class="article-tag">Гид</div>
-                <h3>Лучшее приложение для тренировок в 2026</h3>
-                <p>Сравнили приложения для тренировок по тому, что они делают с вашими данными: Strava, Nike Run Club, Samsung Health, Apple Fitness и Suu. Какое считает калории,…</p>
-                <a href="blog/ru/luchshee-prilozhenie-dlya-trenirovok.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1B5E20,#43A047);color:white;">🏆</div>
-            <div class="article-body">
-                <div class="article-tag">Сравнение</div>
-                <h3>Лучшее приложение для подсчёта калорий 2026: Suu против MyFitnessPal, Yazio, Lifesum, Cronometer</h3>
-                <p>Сравнение 5 популярных приложений. Вода + калории + тренировки в одном приложении, голосовой и фото-ввод — со ссылками.</p>
-                <a href="blog/ru/luchshee-prilozhenie-podscheta-kalorij.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#0072C6,#43A047);color:white;">⚖️</div>
-            <div class="article-body">
-                <div class="article-tag">Сравнение</div>
-                <h3>Suu против MyFitnessPal: что лучше?</h3>
-                <p>Лучший универсальный аналог MyFitnessPal? Голосовой ввод, наука о гидратации и цена в сравнении.</p>
-                <a href="blog/ru/suu-vs-myfitnesspal.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#FF7043,#43A047);color:white;">⚖️</div>
-            <div class="article-body">
-                <div class="article-tag">Сравнение</div>
-                <h3>Suu против Yazio: что лучше?</h3>
-                <p>Интервальное голодание против настоящей науки о гидратации. Голос/фото и вода + калории + тренировки в одном приложении.</p>
-                <a href="blog/ru/suu-vs-yazio.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1B5E20,#2E9E5B);color:white;">💡</div>
-            <div class="article-body">
-                <div class="article-tag">Гид</div>
-                <h3>Есть ли приложение, которое считает воду, калории И тренировки вместе?</h3>
-                <p>Почему важен совмещённый учёт и как Suu решает это в одном приложении голосом/по фото и с синхронизацией Health.</p>
-                <a href="blog/ru/voda-kalorii-trenirovki-odno-prilozhenie.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#4527A0,#7E57C2);color:white;">🎙️</div>
-            <div class="article-body">
-                <div class="article-tag">Функция ИИ</div>
-                <h3>Голосовой ввод калорий: как работает запись еды голосом</h3>
-                <p>Можно ли записывать еду голосом, насколько это точно и как защищена приватность? Учёт калорий голосом с Suu.</p>
-                <a href="blog/ru/golosovoj-vvod-kalorij.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#43A047,#66BB6A);color:white;">🍽️</div>
-            <div class="article-body">
-                <div class="article-tag">Питание</div>
-                <h3>Как рассчитать макросы: белки, углеводы и жиры</h3>
-                <p>Как задать макросы с нуля? Формула от калорий к макросам шаг за шагом, пример и лёгкий трекинг с ИИ.</p>
-                <a href="blog/ru/raschet-makrosov.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#FB8C00,#FFA726);color:white;">⚖️</div>
-            <div class="article-body">
-                <div class="article-tag">Похудение</div>
-                <h3>Что такое дефицит калорий и как его создать?</h3>
-                <p>Единственный реальный механизм похудения. Каким он должен быть, безопасный темп, частые ошибки и лёгкий трекинг калорий.</p>
-                <a href="blog/ru/deficit-kalorij.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#4A90D9,#29B6F6);color:white;">🏃</div>
-            <div class="article-body">
-                <div class="article-tag">Тренировки</div>
-                <h3>Сколько калорий сжигает тренировка?</h3>
-                <p>Рассчитайте своё число по формуле MET, таблица активностей для ходьбы/бега/велосипеда и автоматический трекинг с Apple Health.</p>
-                <a href="blog/ru/raskhod-kalorij.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#7E57C2,#9575CD);color:white;">🤖</div>
-            <div class="article-body">
-                <div class="article-tag">ИИ</div>
-                <h3>Подсчёт калорий по фото: ИИ-трекинг питания</h3>
-                <p>Как работает подсчёт калорий по фото еды, насколько это точно и как сделать точнее.</p>
-                <a href="blog/ru/kalorii-po-foto.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#4A90D9,#29B6F6);color:white;">🎚️</div>
-            <div class="article-body">
-                <div class="article-tag">Новая функция</div>
-                <h3>Простой и расширенный режим: отслеживайте воду по-своему</h3>
-                <p>Suu теперь работает в двух режимах: чистый Простой режим в одно касание и Расширенный режим с подробной статистикой и быстрым добавлением. Какой подойдёт вам и как переключаться?</p>
-                <a href="blog/ru/prostoy-rasshirennyy-rezhim.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#6B4FB8,#B26FFF);color:white;">🐾</div>
-            <div class="article-body">
-                <div class="article-tag">Новая функция</div>
-                <h3>Питомец в Suu: кошка/собака + 4 мини-игры + одевалка</h3>
-                <p>Стрик теперь ведёт ваш питомец. Лопни каплю, сложение, вычитание и найди пару дают капли — тратьте их на одежду для кошки или собаки.</p>
-                <a href="blog/ru/domashnij-pitomec-mini-igry.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#2E6FB8,#6FB3FF);color:white;">🌍</div>
-            <div class="article-body">
-                <div class="article-tag">Социальная ответственность</div>
-                <h3>Программа пожертвований Suu Premium 2%: прозрачные колодцы в Африке</h3>
-                <p>2% от каждой подписки Premium направляется на проекты колодцев с чистой водой в Африке. Все квитанции публичны, JSON открыт, git-отслеживание.</p>
-                <a href="blog/ru/programma-pozhertvovanij-kolodtsy-afrika.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#e3f2fd,#bbdefb);">💧</div>
-            <div class="article-body">
-                <div class="article-tag">Здоровье</div>
-                <h3>10 научно доказанных преимуществ ежедневного питья воды</h3>
-                <p>Как вода улучшает работу мозга, метаболизм, кожу и иммунитет — на основе рецензируемых исследований.</p>
-                <a href="blog/ru/polza-pitia-vody.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#e8f5e9,#c8e6c9);">🧮</div>
-            <div class="article-body">
-                <div class="article-tag">Руководство</div>
-                <h3>Сколько воды нужно пить в день?</h3>
-                <p>Научно обоснованная формула расчёта вашей дневной нормы воды — на основе веса, активности и климата.</p>
-                <a href="blog/ru/skolko-vody-pit-v-den.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#fff3e0,#ffe0b2);">⚠️</div>
-            <div class="article-body">
-                <div class="article-tag">Здоровье</div>
-                <h3>Признаки обезвоживания, которые нельзя игнорировать</h3>
-                <p>Головные боли, усталость, тёмная моча — научитесь распознавать обезвоживание до того, как оно повлияет на ваше здоровье.</p>
-                <a href="blog/ru/priznaki-obezvozhivaniya.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#fce4ec,#f8bbd0);">💪</div>
-            <div class="article-body">
-                <div class="article-tag">Спорт</div>
-                <h3>Спорт и гидратация: полное руководство</h3>
-                <p>Сколько пить до, во время и после тренировки. Потери с потом, электролиты и гидратация по видам спорта.</p>
-                <a href="blog/ru/sport-i-gidratatsiya.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#f3e5f5,#e1bee7);">🌅</div>
-            <div class="article-body">
-                <div class="article-tag">Утро</div>
-                <h3>Почему стоит пить воду первым делом утром</h3>
-                <p>Запуск метаболизма, окно гидратации и когнитивная польза утренней воды — и как закрепить эту привычку.</p>
-                <a href="blog/ru/voda-utrom.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#e0f2f1,#b2dfdb);">✅</div>
-            <div class="article-body">
-                <div class="article-tag">Привычки</div>
-                <h3>Как выработать ежедневную привычку пить воду</h3>
-                <p>7 стратегий поведенческой науки, чтобы сделать питьё воды автоматическим — стек привычек, умные напоминания, серии и социальная подотчётность.</p>
-                <a href="blog/ru/privychka-pit-vodu.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#fff8e1,#ffecb3);">📱</div>
-            <div class="article-body">
-                <div class="article-tag">Сравнение приложений</div>
-                <h3>Лучшее приложение для отслеживания воды в 2026: полное сравнение</h3>
-                <p>Честное сравнение топовых приложений для воды — функции, дизайн, цена и чем выделяется Suu.</p>
-                <a href="blog/ru/luchshee-prilozhenie-dlya-vody.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#fce4ec,#f8bbd0);">☕</div>
-            <div class="article-body">
-                <div class="article-tag">Напитки</div>
-                <h3>Считаются ли кофе и чай за воду?</h3>
-                <p>Понимание коэффициента обезвоживания — как кофе, чай, сок и другие напитки влияют на дневную гидратацию.</p>
-                <a href="blog/ru/kofe-chay-i-voda.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#e8eaf6,#c5cae9);">⚖️</div>
-            <div class="article-body">
-                <div class="article-tag">Похудение</div>
-                <h3>Помогает ли вода похудеть?</h3>
-                <p>Предзагрузка водой, термогенез и путаница голода и жажды — наука о воде и контроле веса.</p>
-                <a href="blog/ru/voda-i-pohudenie.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#fff3e0,#ffe0b2);">✨</div>
-            <div class="article-body">
-                <div class="article-tag">Кожа</div>
-                <h3>Улучшает ли вода состояние кожи?</h3>
-                <p>Наука о гидратации и здоровье кожи — упругость, старение, выработка коллагена и что вода действительно может сделать для вашей кожи.</p>
-                <a href="blog/ru/voda-i-zdorove-kozhi.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#e8f5e9,#c8e6c9);">🌙</div>
-            <div class="article-body">
-                <div class="article-tag">Сон</div>
-                <h3>Как обезвоживание влияет на сон</h3>
-                <p>Обезвоживание ухудшает качество сна — узнайте оптимальное время питья, сколько пить перед сном и стратегии утренней регидратации.</p>
-                <a href="blog/ru/voda-i-son.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#e0f7fa,#b2ebf2);">🫘</div>
-            <div class="article-body">
-                <div class="article-tag">Почки</div>
-                <h3>Как вода защищает ваши почки</h3>
-                <p>Камни в почках, профилактика инфекций мочевых путей и хроническая болезнь почек — как стабильная гидратация поддерживает функцию почек.</p>
-                <a href="blog/ru/voda-i-zdorove-pochek.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#fce4ec,#f8bbd0);">🤰</div>
-            <div class="article-body">
-                <div class="article-tag">Беременность</div>
-                <h3>Гидратация при беременности: руководство по триместрам</h3>
-                <p>Объём крови растёт на 50% при беременности. Сколько именно пить воды по триместрам — и новый режим беременности Suu автоматически подстраивает цель.</p>
-                <a href="blog/ru/voda-i-beremennost.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#e0f2f1,#b2dfdb);">🤱</div>
-            <div class="article-body">
-                <div class="article-tag">Кормление</div>
-                <h3>Гидратация при грудном вскармливании: сколько воды нужно молоку?</h3>
-                <p>Грудное молоко на 87% состоит из воды. Кормящие мамы нуждаются в ~700 мл больше в день. Научное руководство + режим кормления Suu.</p>
-                <a href="blog/ru/voda-i-kormlenie.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#fff3e0,#ffe0b2);">🏆</div>
-            <div class="article-body">
-                <div class="article-tag">Социальное</div>
-                <h3>Водный челлендж с друзьями: как работает недельная лига Suu</h3>
-                <p>Добавьте до 4 друзей бесплатно: недельный рейтинг и подбадривания. Частные лиги — в Premium. Прогресс в реальном времени, кросс-платформа iOS + Android.</p>
-                <a href="blog/ru/vodnyi-challenge-s-druzyami.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#e3f2fd,#1a1a2e);">⌚</div>
-            <div class="article-body">
-                <div class="article-tag">Apple Watch</div>
-                <h3>Apple Watch и отслеживание воды: полное руководство 2026</h3>
-                <p>Приложение Suu для Apple Watch уже доступно: вода и еда голосом с запястья, GPS-тренировки с пульсом, кольца «Движение» и «Питание».</p>
-                <a href="blog/ru/apple-watch-voda.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#f3e5f5,#2d1b69);">🎙️</div>
-            <div class="article-body">
-                <div class="article-tag">Голос и Siri</div>
-                <h3>Как отслеживать воду через Siri в 2026 (без рук)</h3>
-                <p>Настройте Siri Shortcuts в Suu для голосового добавления воды. Пошаговое руководство для iPhone, Apple Watch и Android.</p>
-                <a href="blog/ru/siri-voda.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#e8eaf6,#0f3460);">📊</div>
-            <div class="article-body">
-                <div class="article-tag">Аналитика</div>
-                <h3>Что такое оценка гидратации? Как Suu оценивает потребление воды (0-100)</h3>
-                <p>Оценка гидратации Suu измеряет четыре компонента — выполнение, регулярность, тайминг и другие. Вот как она рассчитывается и как её улучшить.</p>
-                <a href="blog/ru/otsenka-gidratatsii.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#fff8e1,#b8460b);">🏅</div>
-            <div class="article-body">
-                <div class="article-tag">Геймификация</div>
-                <h3>Почему геймификация заставляет вас пить больше воды (наука + Suu)</h3>
-                <p>Значки, серии, лиги друзей и испытания — система геймификации Suu построена на поведенческой науке. Вот почему это действительно работает.</p>
-                <a href="blog/ru/geymifikatsiya-vody.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#0f3a82,#00ACC1);">🏃</div>
-            <div class="article-body">
-                <div class="article-tag">Активность и гидратация</div>
-                <h3>Отслеживание воды по активности: ходьба, бег, плавание</h3>
-                <p>Suu теперь читает вашу активность из Apple Health и Google Fit и автоматически увеличивает дневную цель воды. Научно обоснованная математика для 30+ типов тренировок.</p>
-                <a href="blog/ru/voda-po-aktivnosti.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#5D2A1F,#BF360C);">🧪</div>
-            <div class="article-body">
-                <div class="article-tag">Кофеин и сахар</div>
-                <h3>Отслеживание кофеина и сахара: скрытые лимиты в напитках</h3>
-                <p>Suu теперь рассчитывает кофеин (мг) и сахар (г) для 91 напиток. Умные предупреждения о лимитах FDA 400 мг и ВОЗ 25 г в день.</p>
-                <a href="blog/ru/kofein-i-sahar.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#3E2723,#6D4C41);">☕</div>
-            <div class="article-body">
-                <div class="article-tag">Сокращение кофе</div>
-                <h3>Как сократить потребление кофе: 7 научных стратегий</h3>
-                <p>Для тех, кто ищет «я пью слишком много кофе, помогите». Руководство по преодолению зависимости, постепенное снижение и 7-дневный план с Suu.</p>
-                <a href="blog/ru/kak-sokratit-kofe.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#4E342E,#8D6E63);">📊</div>
-            <div class="article-body">
-                <div class="article-tag">Лимиты кофе</div>
-                <h3>Сколько чашек кофе в день безопасно? Лимиты FDA</h3>
-                <p>400 мг для здоровых взрослых, 200 мг для беременных, 100 мг для чувствительных. Фермент CYP1A2 и личная толерантность.</p>
-                <a href="blog/ru/skolko-kofe-v-den.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#4A148C,#7B1FA2);">🍷</div>
-            <div class="article-body">
-                <div class="article-tag">Алкоголь и гидратация</div>
-                <h3>Гидратация после алкоголя: научный путь предотвращения похмелья</h3>
-                <p>Компенсирующая вода для пива, вина, виски. Правило 1:1, 4-фазный план регидратации и трекинг алкоголя с Suu.</p>
-                <a href="blog/ru/gidratatsiya-posle-alkogolya.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1B5E20,#2E7D32);">⚡</div>
-            <div class="article-body">
-                <div class="article-tag">Энергетики</div>
-                <h3>Как контролировать потребление энергетиков? Red Bull, Monster</h3>
-                <p>Трекинг кофеина/сахара для Red Bull, Monster, Burn. Лимит FDA, здоровые альтернативы и 4-недельный план снижения.</p>
-                <a href="blog/ru/kontrol-energetikov.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#E65100,#FB8C00);">🍊</div>
-            <div class="article-body">
-                <div class="article-tag">Сок или вода</div>
-                <h3>Сок или вода? Что полезнее?</h3>
-                <p>Сравнение свежевыжатого с пакетированным, сок для детей, влияние на диету и трекинг сахара с Suu.</p>
-                <a href="blog/ru/sok-ili-voda.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#00695C,#00897B);">🍵</div>
-            <div class="article-body">
-                <div class="article-tag">Чай и гидратация</div>
-                <h3>Чай гидратирует? Коэффициент гидратации по типам</h3>
-                <p>Коэффициент гидратации и кофеин для 12+ видов чая. Травяные чаи 100% гидратация, научные ссылки Maughan 2016.</p>
-                <a href="blog/ru/chai-i-gidratatsiya.html" class="read-more">Читать статью <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
+    <div class="bi-empty" id="bi-empty" hidden>
+        <p>По вашему запросу статей не найдено.</p>
+        <button type="button" id="bi-reset">Сбросить поиск</button>
     </div>
 
     <div class="cta-banner">
-        <h2>Начните отслеживать воду сегодня</h2>
-        <p>Suu превращает эти советы в ежедневные привычки — персональные цели, умные напоминания и лиги друзей. Бесплатно на iOS и Android.</p>
+        <h2>Превратите прочитанное в ежедневную привычку</h2>
+        <p>Suu отслеживает воду, калории и тренировки в одном приложении. Бесплатно на iOS и Android.</p>
         <div class="cta-btns">
-            <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" class="cta-btn" target="_blank" rel="noopener">
-                <i class="fab fa-apple"></i> App Store
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro" class="cta-btn" target="_blank" rel="noopener">
-                <i class="fab fa-google-play"></i> Google Play
-            </a>
+            <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" class="cta-btn" target="_blank" rel="noopener"><i class="fab fa-apple"></i> App Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro" class="cta-btn" target="_blank" rel="noopener"><i class="fab fa-google-play"></i> Google Play</a>
         </div>
     </div>
-</div>
+</main>
+
+<footer class="bi-foot">
+    <div class="bi-foot-in">
+        <nav aria-label="Suu">
+            <a href="sravneniya.html">Сравнения</a>
+            <a href="faq-ru.html">Вопросы</a>
+            <a href="/hosgeldiniz-ru.html">Главная</a>
+            <a href="/feed-ru.xml">RSS-лента</a>
+            <a href="/llms-ru.txt">Сводка для ИИ-ассистентов (llms.txt)</a>
+        </nav>
+        <span>© 2026 Suu</span>
+    </div>
+</footer>
+
+<script>
+(function () {
+    'use strict';
+    var LANG = document.documentElement.lang || 'en';
+    var q = document.getElementById('bi-q');
+    var clearBtn = document.getElementById('bi-clear');
+    var status = document.getElementById('bi-status');
+    var empty = document.getElementById('bi-empty');
+    var latest = document.getElementById('latest');
+    var chips = [].slice.call(document.querySelectorAll('.bi-chip'));
+    var secs = [].slice.call(document.querySelectorAll('.bi-sec[data-cat]'));
+    var RESULTS = "Найдено: {n}";
+    var state = { cat: 'all', q: '' };
+
+    // Case/diacritic-insensitive matching (ı/i, ç/c, ş/s, Arabic hamza/taa marbuta …)
+    function norm(s) {
+        return (s || '').toLocaleLowerCase(LANG).normalize('NFD')
+            .replace(/[̀-ًͯ-ٰٟـ]/g, '')
+            .replace(/ı/g, 'i').replace(/[أإآ]/g, 'ا').replace(/ة/g, 'ه').replace(/ى/g, 'ي').replace(/ё/g, 'е');
+    }
+    secs.forEach(function (s) {
+        // Title + summary only: the category tag would make "coffee" match every drinks card.
+        [].forEach.call(s.querySelectorAll('.bi-card'), function (c) {
+            c._t = norm(c.querySelector('h3').textContent + ' ' + c.querySelector('p').textContent);
+        });
+    });
+
+    function apply(scroll) {
+        var toks = norm(state.q).split(/\s+/).filter(Boolean);
+        var shown = 0;
+        secs.forEach(function (s) {
+            var catOk = state.cat === 'all' || s.getAttribute('data-cat') === state.cat;
+            var n = 0;
+            [].forEach.call(s.querySelectorAll('.bi-card'), function (c) {
+                var ok = catOk && toks.every(function (t) { return c._t.indexOf(t) !== -1; });
+                c.hidden = !ok;
+                if (ok) n++;
+            });
+            s.hidden = n === 0;
+            shown += n;
+        });
+        latest.hidden = state.cat !== 'all' || toks.length > 0;
+        empty.hidden = shown > 0;
+        clearBtn.hidden = !state.q;
+        status.textContent = toks.length ? RESULTS.replace('{n}', shown) : '';
+        chips.forEach(function (ch) {
+            ch.setAttribute('aria-current', ch.getAttribute('data-cat') === state.cat ? 'true' : 'false');
+        });
+        if (scroll) {
+            var top = document.getElementById('top').getBoundingClientRect().top + window.pageYOffset - 130;
+            if (window.pageYOffset > top) window.scrollTo(0, Math.max(0, top));
+        }
+    }
+
+    chips.forEach(function (ch) {
+        ch.addEventListener('click', function (e) {
+            e.preventDefault();
+            state.cat = ch.getAttribute('data-cat');
+            var sec = state.cat === 'all' ? null : document.querySelector('.bi-sec[data-cat="' + state.cat + '"]');
+            try { history.replaceState(null, '', sec ? '#' + sec.id : location.pathname); } catch (err) {}
+            apply(true);
+            ch.scrollIntoView({ block: 'nearest', inline: 'center' });
+        });
+    });
+    q.addEventListener('input', function () { state.q = q.value; apply(false); });
+    function reset() { q.value = ''; state.q = ''; state.cat = 'all'; apply(true); q.focus(); }
+    clearBtn.addEventListener('click', reset);
+    document.getElementById('bi-reset').addEventListener('click', reset);
+
+    // A shared link like blog.html#cat-calories opens that category filtered.
+    var h = location.hash.slice(1);
+    var target = h && document.querySelector('.bi-sec[data-cat][id="' + h.replace(/"/g, '') + '"]');
+    if (target) { state.cat = target.getAttribute('data-cat'); apply(false); }
+})();
+</script>
 
 <script src="lang-switcher.js?v=3" defer></script>
 <link rel="stylesheet" href="donation-widget.css?v=6">

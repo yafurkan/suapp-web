@@ -151,7 +151,8 @@ python3 scripts/inject-analytics.py --apply         # ölçüm parçacığı
 python3 scripts/inject-special-days.py --apply      # özel gün kutlama katmanı
 python3 scripts/inject-theme-toggle.py --apply      # açık/koyu tema düğmesi (suu.css sayfaları; şablonlarda da var)
 python3 scripts/update-sitemap.py --apply           # sitemap (image blokları korunur)
-python3 scripts/sync-blog-index.py --apply          # blog indeksine eksik KARTLARI ekle
+python3 scripts/build-blog-index.py --apply         # blog indekslerini (blog*.html ×7) kategorili üret + kart küçük resimleri
+python3 scripts/sync-blog-index.py --apply          # eski elle bakılan indekslere eksik kart ekle (üretilmiş indeksi atlar)
 python3 scripts/sync-blog-schema.py --apply         # blog indeksinin Blog.blogPost ŞEMASINI eşitle
 python3 scripts/generate-og.py                      # blog OG görselleri
 
@@ -167,6 +168,8 @@ python3 scripts/check-screenshots.py --missing      # eksik ekran görüntüleri
 ```bash
 python3 scripts/build-homepages.py --apply && \
 python3 scripts/build-compare.py --apply && \
+python3 scripts/generate-og.py && \
+python3 scripts/build-blog-index.py --apply && \
 python3 scripts/build-i18n-map.py --apply && \
 python3 scripts/build-llms.py --apply && \
 python3 scripts/inject-hreflang.py --apply && \
@@ -180,6 +183,8 @@ python3 scripts/check-geo-coverage.py
 git push origin main
 # IndexNow bildirimi artık otomatik (deploy.yml → indexnow işi); elle gerekmez.
 ```
+
+**Blog indeksleri üretilir (2026-10-14):** `blog.html`, `blog-en.html` … elle düzenlenmez. Kategoriler, küme→kategori ataması ve 7 dilin arayüz metni `content/blog-index.json`'da, şablon `content/blog-index.html.j2`'de. Yazı başlığı/özeti/tarihi/görseli yazının kendi meta verisinden okunur; sayılar (yazı, kategori, son güncelleme) build anında hesaplanır. Yeni yazı eklerken kümesini `assign` altında bir kategoriye yaz; yazmazsan script slug'dan tahmin edip uyarır. Kart görselleri og:image PNG'sinden `assets/og/blog/thumb/*.webp` (600×315) olarak üretilir — bu yüzden `generate-og.py` ÖNCE çalışmalı.
 
 **Sıra önemli:** `inject-hreflang.py`, sayfa üreten her script'ten SONRA çalışmalı — `build-compare.py` ve `build-compare-hub.py` sayfayı baştan yazdığı için enjekte edilmiş hreflang bloğunu düşürür. `sync-blog-schema.py` de `sync-blog-index.py`'den sonra gelir (biri kart, diğeri `Blog.blogPost` şeması).
 

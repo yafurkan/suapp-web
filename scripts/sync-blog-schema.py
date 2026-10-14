@@ -110,6 +110,10 @@ def main() -> int:
             continue
 
         text = index_path.read_text(encoding="utf-8")
+        if "scripts/build-blog-index.py" in text:
+            # Üretilmiş indeks: Blog.blogPost'u build-blog-index.py tam yazıyor
+            print(f"  {index_file:<14} ⟳ build-blog-index.py üretiyor — atlandı")
+            continue
 
         target = None
         for m in RE_LD.finditer(text):

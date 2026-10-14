@@ -140,6 +140,10 @@ def main() -> int:
         if not index_path.exists():
             continue
         index = index_path.read_text(encoding="utf-8")
+        if "scripts/build-blog-index.py" in index:
+            # Üretilmiş indeks: kartları build-blog-index.py yazıyor (kategorili)
+            print(f"  {index_name:14s} ⟳ build-blog-index.py üretiyor — atlandı")
+            continue
 
         posts = sorted((ROOT / post_dir).glob("*.html"))
         missing = [p for p in posts

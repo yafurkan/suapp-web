@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- ÜRETİLMİŞ DOSYA — kaynak: scripts/build-blog-index.py + content/blog-index.json + content/blog-index.html.j2. Elle düzenlemeyin. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suu Blog — Calorie Counting, GPS Workouts &amp; Hydration Guides</title>
-    <meta name="description" content="Evidence-based guides on calorie counting, AI photo food logging, GPS workout tracking and hydration — plus comparisons with MyFitnessPal, Yazio and Strava.">
-    <meta name="keywords" content="calorie counting guide, macro calculation, ai photo calorie app, gps workout tracking, strava alternative, myfitnesspal alternative, hydration tips, how much water to drink">
+    <title>Suu Blog — Calorie, Exercise &amp; Hydration Guides</title>
+    <meta name="description" content="Evidence-based guides on calorie deficits, macros, exercise, hydration, coffee and tea — plus honest app comparisons. Browse by category or search.">
 
     <!-- Smart App Banner -->
     <meta name="apple-itunes-app" content="app-id=6757619920">
@@ -24,11 +24,10 @@
 
     <link rel="alternate" type="text/plain" href="/llms-en.txt" title="Suu — compact reference for AI assistants">
     <link rel="alternate" type="text/plain" href="/llms-full-en.txt" title="Suu — full reference corpus for AI assistants">
-
     <link rel="alternate" type="application/rss+xml" title="Suu Blog (English)" href="/feed-en.xml">
 
-    <meta property="og:title" content="Suu Blog — Calorie Counting, GPS Workouts &amp; Hydration Guides">
-    <meta property="og:description" content="Calories and macros, AI photo food logging, GPS workout tracking and hydration — plus honest app comparisons.">
+    <meta property="og:title" content="Suu Blog — Calorie, Exercise &amp; Hydration Guides">
+    <meta property="og:description" content="Evidence-based guides on calories, exercise and hydration, plus honest app comparisons — organised by category.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://suuapp.com/blog-en.html">
     <meta property="og:image" content="https://suuapp.com/assets/og-image.png">
@@ -38,8 +37,8 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@SuuTakip">
-    <meta name="twitter:title" content="Suu Blog — Calorie Counting, GPS Workouts &amp; Hydration Guides">
-    <meta name="twitter:description" content="Calories and macros, AI photo food logging, GPS workout tracking and hydration — plus honest app comparisons.">
+    <meta name="twitter:title" content="Suu Blog — Calorie, Exercise &amp; Hydration Guides">
+    <meta name="twitter:description" content="Evidence-based guides on calories, exercise and hydration, plus honest app comparisons — organised by category.">
     <meta name="twitter:image" content="https://suuapp.com/assets/og-image.png">
 
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data:; img-src 'self' https: data:; font-src 'self' https: data:;">
@@ -48,58 +47,144 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', -apple-system, sans-serif; color: #333; background: #f8f9fa; }
-        .blog-nav { background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
-        .nav-content { max-width: 1100px; margin: 0 auto; padding: 0 24px; height: 64px; display: flex; align-items: center; justify-content: space-between; }
-        .blog-logo { display: flex; align-items: center; gap: 8px; font-size: 1.4rem; font-weight: 700; color: #4A90D9; text-decoration: none; }
-        .nav-right { display: flex; align-items: center; gap: 16px; }
-        .back-btn { background: #4A90D9; color: white; padding: 8px 18px; border-radius: 8px; text-decoration: none; font-weight: 500; font-size: 14px; transition: all 0.2s; }
-        .back-btn:hover { background: #3a7bc8; }
-        .hamburger { display: none; }
+        :root { --ink:#111827; --ink-2:#374151; --muted:#6b7280; --line:#e5e9f0; --bg:#f5f7fb; --card:#fff; --brand:#4A90D9; --brand-2:#29B6F6; --nav-h:64px; }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        [hidden] { display:none !important; }
+        html { scroll-behavior:smooth; }
+        body { font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; color:var(--ink-2); background:var(--bg); line-height:1.55; -webkit-font-smoothing:antialiased; }
+        a { color:inherit; }
 
-        .blog-header { background: linear-gradient(135deg, #4A90D9 0%, #29B6F6 100%); color: white; padding: 60px 20px 40px; text-align: center; }
-        .blog-header h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 800; margin-bottom: 10px; }
-        .blog-header p { font-size: 1rem; opacity: 0.9; }
+        /* Nav */
+        .blog-nav { background:#fff; border-bottom:1px solid var(--line); position:sticky; top:0; z-index:100; }
+        .nav-content { max-width:1180px; margin:0 auto; padding:0 20px; height:var(--nav-h); display:flex; align-items:center; justify-content:space-between; gap:12px; }
+        .blog-logo { display:flex; align-items:center; gap:8px; font-size:1.35rem; font-weight:800; color:var(--brand); text-decoration:none; flex:none; }
+        .nav-right { display:flex; align-items:center; gap:8px; min-width:0; }
+        .nav-btn { display:inline-flex; align-items:center; gap:7px; padding:8px 12px; border-radius:10px; text-decoration:none; font-size:14px; font-weight:600; color:var(--ink-2); white-space:nowrap; transition:background .15s, color .15s; }
+        .nav-btn:hover { background:#eef4fc; color:var(--brand); }
+        .nav-btn i { color:var(--brand); font-size:13px; }
 
-        .container { max-width: 1100px; margin: 0 auto; padding: 50px 24px 80px; }
-        .articles-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 28px; }
-        .article-card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: transform 0.2s, box-shadow 0.2s; }
-        .article-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.12); }
-        .article-thumb { height: 160px; display: flex; align-items: center; justify-content: center; font-size: 3rem; }
-        .article-body { padding: 20px 22px; }
-        .article-tag { font-size: 11px; font-weight: 700; color: #4A90D9; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
-        .article-body h3 { font-size: 1rem; font-weight: 700; color: #1a1a2e; margin-bottom: 10px; line-height: 1.5; }
-        .article-body p { font-size: 0.875rem; color: #666; margin-bottom: 16px; line-height: 1.6; }
-        .read-more { display: inline-flex; align-items: center; gap: 6px; color: #4A90D9; font-size: 13px; font-weight: 600; text-decoration: none; }
-        .read-more:hover { text-decoration: underline; }
+        /* Hero */
+        .bi-hero { background:radial-gradient(1200px 400px at 85% -10%, rgba(255,255,255,.18), transparent 60%), linear-gradient(135deg,#2f6fd0 0%,var(--brand) 45%,var(--brand-2) 100%); color:#fff; padding:52px 20px 40px; }
+        .bi-hero-in { max-width:820px; margin:0 auto; text-align:center; }
+        .bi-hero h1 { font-size:clamp(2rem,5vw,2.9rem); font-weight:800; letter-spacing:-.02em; line-height:1.1; }
+        .bi-lead { margin:12px auto 0; max-width:640px; font-size:clamp(1rem,2.2vw,1.12rem); opacity:.95; }
+        .bi-search { position:relative; margin:26px auto 0; max-width:620px; }
+        .bi-search input { width:100%; height:56px; border:0; border-radius:16px; padding:0 52px; font:inherit; font-size:16px; color:var(--ink); background:#fff; box-shadow:0 12px 32px rgba(10,40,90,.22); }
+        .bi-search input:focus { outline:3px solid rgba(255,255,255,.75); outline-offset:3px; }
+        .bi-search .bi-ico { position:absolute; inset-inline-start:19px; top:50%; transform:translateY(-50%); color:#9aa6b8; font-size:17px; pointer-events:none; }
+        .bi-search button { position:absolute; inset-inline-end:10px; top:50%; transform:translateY(-50%); width:36px; height:36px; border:0; border-radius:10px; background:#f1f4f9; color:var(--muted); cursor:pointer; font-size:15px; }
+        .bi-stats { list-style:none; display:flex; flex-wrap:wrap; justify-content:center; gap:8px 22px; margin-top:20px; font-size:14px; opacity:.95; }
+        .bi-stats strong { font-weight:800; }
+        .bi-stats li { display:inline-flex; align-items:center; gap:6px; }
 
-        .cta-banner { background: linear-gradient(135deg, #4A90D9, #29B6F6); color: white; border-radius: 20px; padding: 40px; text-align: center; margin-top: 60px; }
-        .cta-banner h2 { font-size: 1.6rem; font-weight: 800; margin-bottom: 10px; }
-        .cta-banner p { opacity: 0.9; margin-bottom: 24px; }
-        .cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-        .cta-btn { background: white; color: #4A90D9; padding: 11px 24px; border-radius: 50px; font-weight: 700; text-decoration: none; font-size: 14px; display: inline-flex; align-items: center; gap: 8px; transition: transform 0.2s; }
-        .cta-btn:hover { transform: translateY(-2px); }
+        /* Category bar */
+        .bi-chips { position:sticky; top:var(--nav-h); z-index:90; background:rgba(255,255,255,.96); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
+        .bi-chips-in { max-width:1180px; margin:0 auto; padding:10px 20px; display:flex; gap:8px; overflow-x:auto; scrollbar-width:none; }
+        .bi-chips-in::-webkit-scrollbar { display:none; }
+        .bi-chip { --c:var(--ink); flex:none; display:inline-flex; align-items:center; gap:7px; padding:8px 14px; border-radius:999px; border:1px solid var(--line); background:#fff; color:var(--ink-2); text-decoration:none; font-size:14px; font-weight:600; white-space:nowrap; transition:background .15s, border-color .15s, color .15s; }
+        .bi-chip:hover { border-color:var(--c); color:var(--c); }
+        .bi-chip .n { font-size:12px; font-weight:700; color:var(--muted); background:#f1f4f9; border-radius:999px; padding:1px 8px; }
+        .bi-chip[aria-current="true"] { background:var(--c); border-color:var(--c); color:#fff; }
+        .bi-chip[aria-current="true"] .n { background:rgba(255,255,255,.22); color:#fff; }
 
-        @media (max-width: 600px) { .articles-grid { grid-template-columns: 1fr; } }
+        /* Layout */
+        .bi-main { max-width:1180px; margin:0 auto; padding:30px 20px 72px; }
+        .bi-status { font-size:14px; font-weight:600; color:var(--muted); margin-bottom:6px; }
+        .bi-status:empty { display:none; }
+        .bi-sec { margin-top:34px; scroll-margin-top:calc(var(--nav-h) + 70px); }
+        .bi-main > .bi-sec:first-of-type, .bi-status + .bi-sec:not([hidden]) { margin-top:0; }
+        .bi-sec-head { display:flex; align-items:flex-start; gap:14px; margin-bottom:18px; }
+        .bi-sec-ico { flex:none; width:46px; height:46px; border-radius:14px; display:grid; place-items:center; font-size:22px; background:var(--bg-c,#eef4fc); }
+        .bi-sec-head h2 { font-size:clamp(1.25rem,2.6vw,1.5rem); font-weight:800; color:var(--ink); letter-spacing:-.01em; display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+        .bi-sec-head h2 .n { font-size:13px; font-weight:700; color:var(--c,#4A90D9); background:var(--bg-c,#eef4fc); border-radius:999px; padding:2px 10px; }
+        .bi-sec-head p { color:var(--muted); font-size:.95rem; margin-top:3px; }
+        .bi-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(270px,1fr)); gap:22px; }
+        .bi-latest .bi-grid { grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); }
+
+        /* Card */
+        .bi-card { background:var(--card); border:1px solid var(--line); border-radius:18px; overflow:hidden; transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
+        .bi-card:hover { transform:translateY(-3px); box-shadow:0 14px 34px rgba(17,24,39,.10); border-color:#d6deea; }
+        .bi-card a { display:flex; flex-direction:column; height:100%; text-decoration:none; color:inherit; }
+        .bi-card a:focus-visible { outline:3px solid var(--brand); outline-offset:-3px; border-radius:18px; }
+        .bi-thumb { aspect-ratio:1200/630; background:var(--bg-c,#eef4fc); overflow:hidden; }
+        .bi-thumb img { width:100%; height:100%; object-fit:cover; display:block; }
+        .bi-body { padding:15px 18px 18px; display:flex; flex-direction:column; gap:7px; flex:1; }
+        .bi-tag { align-self:flex-start; font-size:11.5px; font-weight:700; color:var(--c,#4A90D9); background:var(--bg-c,#eef4fc); border-radius:999px; padding:3px 10px; }
+        .bi-card h3 { font-size:1.02rem; line-height:1.4; font-weight:700; color:var(--ink); display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
+        .bi-card p { font-size:.9rem; color:var(--muted); display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
+        .bi-meta { margin-top:auto; padding-top:6px; font-size:.8rem; color:#8a94a6; display:flex; flex-wrap:wrap; gap:4px 10px; }
+
+        /* Empty + CTA + footer */
+        .bi-empty { text-align:center; padding:56px 20px; color:var(--muted); }
+        .bi-empty p { font-size:1.05rem; margin-bottom:14px; }
+        .bi-empty button { border:1px solid var(--line); background:#fff; border-radius:12px; padding:10px 18px; font:inherit; font-weight:600; color:var(--brand); cursor:pointer; }
+        .cta-banner { background:linear-gradient(135deg,var(--brand),var(--brand-2)); color:#fff; border-radius:22px; padding:38px 24px; text-align:center; margin-top:64px; }
+        .cta-banner h2 { font-size:clamp(1.3rem,3vw,1.6rem); font-weight:800; margin-bottom:8px; }
+        .cta-banner p { opacity:.95; margin-bottom:22px; }
+        .cta-btns { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+        .cta-btn { background:#fff; color:var(--brand); padding:11px 24px; border-radius:50px; font-weight:700; text-decoration:none; font-size:14px; display:inline-flex; align-items:center; gap:8px; transition:transform .15s; }
+        .cta-btn:hover { transform:translateY(-2px); }
+        .bi-foot { border-top:1px solid var(--line); background:#fff; }
+        .bi-foot-in { max-width:1180px; margin:0 auto; padding:24px 20px; display:flex; flex-wrap:wrap; justify-content:space-between; gap:10px 20px; font-size:14px; color:var(--muted); }
+        .bi-foot nav { display:flex; flex-wrap:wrap; gap:8px 18px; }
+        .bi-foot a { text-decoration:none; color:var(--ink-2); }
+        .bi-foot a:hover { color:var(--brand); }
+
+        /* Sticky mobile download bar (styles.css is not loaded on blog pages) */
+        .sticky-download-bar { display:none; position:fixed; bottom:0; left:0; right:0; z-index:9999; background:rgba(255,255,255,.97); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); padding:10px 12px; padding-bottom:calc(10px + env(safe-area-inset-bottom,0px)); box-shadow:0 -2px 16px rgba(0,0,0,.12); gap:8px; justify-content:center; }
+        .sticky-btn { flex:1; display:flex; align-items:center; justify-content:center; gap:8px; padding:13px 14px; border-radius:12px; text-decoration:none; font-weight:600; font-size:14px; min-height:48px; max-width:200px; }
+        .sticky-btn-apple { background:#000; color:#fff; }
+        .sticky-btn-google { background:#01875f; color:#fff; }
+
+        @media (max-width:768px) {
+            .sticky-download-bar { display:flex; }
+            body { padding-bottom:72px; }
+        }
+        @media (max-width:720px) {
+            .nav-btn span { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+            .nav-btn { padding:9px; }
+            .bi-hero { padding:38px 16px 30px; }
+            .bi-main { padding:22px 16px 60px; }
+            .bi-chips-in { padding:10px 16px; }
+            .bi-grid, .bi-latest .bi-grid { grid-template-columns:1fr; gap:12px; }
+            /* Compact list rows on phones: 60 full-width cover images would be an endless scroll */
+            .bi-card { border-radius:14px; }
+            .bi-card a { flex-direction:row; align-items:flex-start; gap:12px; padding:12px; }
+            .bi-thumb { flex:none; width:112px; border-radius:10px; }
+            .bi-body { padding:0; gap:5px; min-width:0; }
+            .bi-card h3 { font-size:.95rem; }
+            .bi-card p { font-size:.84rem; -webkit-line-clamp:2; }
+            .bi-meta { padding-top:2px; font-size:.76rem; }
+            .bi-latest .bi-card:first-child a { flex-direction:column; padding:0; gap:0; }
+            .bi-latest .bi-card:first-child .bi-thumb { width:100%; border-radius:0; }
+            .bi-latest .bi-card:first-child .bi-body { padding:14px 16px 16px; gap:7px; }
+            .bi-latest .bi-card:first-child h3 { font-size:1.05rem; }
+            .bi-sec { margin-top:28px; }
+            .bi-sec-head { gap:12px; margin-bottom:14px; }
+            .bi-sec-ico { width:40px; height:40px; font-size:19px; border-radius:12px; }
+        }
+        @media (prefers-reduced-motion:reduce) {
+            html { scroll-behavior:auto; }
+            .bi-card, .bi-card:hover { transition:none; transform:none; }
+        }
     </style>
 
-    <!-- Schema.org: Blog + BreadcrumbList (GEO / AI search optimization) -->
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Blog",
   "@id": "https://suuapp.com/blog-en.html#blog",
   "url": "https://suuapp.com/blog-en.html",
-  "name": "Suu Blog — Hydration, Caffeine & Healthy Living",
-  "description": "Science-backed articles on hydration, dehydration, caffeine tracking, activity-based water intake, Apple Watch, hydration score and more.",
+  "name": "Suu Blog — Calories, Exercise & Hydration",
+  "description": "Evidence-based guides on calorie deficits, macros, exercise, hydration, coffee and tea — plus honest app comparisons. Browse by category or search.",
   "inLanguage": "en-US",
   "publisher": {
     "@type": "Organization",
@@ -111,25 +196,19 @@
       "url": "https://suuapp.com/assets/og-image.png"
     }
   },
-  "author": {
-    "@type": "Person",
-    "@id": "https://suuapp.com/#furkan",
-    "name": "Furkan Mert Fındıklı",
-    "url": "https://www.linkedin.com/in/furkanfindikli/"
-  },
   "blogPost": [
     {
       "@type": "BlogPosting",
-      "headline": "Cronometer vs Lifesum (2026): Which Is Better?",
-      "url": "https://suuapp.com/blog/en/cronometer-vs-lifesum.html",
+      "headline": "Lifesum vs MyFitnessPal: Which Calorie App Should You Pick?",
+      "url": "https://suuapp.com/blog/en/lifesum-vs-myfitnesspal.html",
       "datePublished": "2026-10-14",
       "dateModified": "2026-10-14",
       "inLanguage": "en-US",
-      "image": "https://suuapp.com/assets/og/blog/en-cronometer-vs-lifesum.png"
+      "image": "https://suuapp.com/assets/og/blog/en-lifesum-vs-myfitnesspal.png"
     },
     {
       "@type": "BlogPosting",
-      "headline": "Is Suu Safe? Company, Data Security and Privacy",
+      "headline": "Is Suu Safe? Who Is Behind It and How Your Data Is Protected",
       "url": "https://suuapp.com/blog/en/is-suu-safe.html",
       "datePublished": "2026-10-14",
       "dateModified": "2026-10-14",
@@ -138,12 +217,30 @@
     },
     {
       "@type": "BlogPosting",
-      "headline": "Lifesum vs MyFitnessPal (2026): Which Is Better?",
-      "url": "https://suuapp.com/blog/en/lifesum-vs-myfitnesspal.html",
+      "headline": "Cronometer vs Lifesum: Which Calorie App Should You Pick?",
+      "url": "https://suuapp.com/blog/en/cronometer-vs-lifesum.html",
       "datePublished": "2026-10-14",
       "dateModified": "2026-10-14",
       "inLanguage": "en-US",
-      "image": "https://suuapp.com/assets/og/blog/en-lifesum-vs-myfitnesspal.png"
+      "image": "https://suuapp.com/assets/og/blog/en-cronometer-vs-lifesum.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Why Did I Gain Weight After Starting to Exercise?",
+      "url": "https://suuapp.com/blog/en/weight-gain-after-starting-exercise.html",
+      "datePublished": "2026-10-13",
+      "dateModified": "2026-10-13",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-weight-gain-after-starting-exercise.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Walking vs Running for Weight Loss",
+      "url": "https://suuapp.com/blog/en/walking-vs-running-for-weight-loss.html",
+      "datePublished": "2026-10-13",
+      "dateModified": "2026-10-13",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-walking-vs-running-for-weight-loss.png"
     },
     {
       "@type": "BlogPosting",
@@ -156,75 +253,12 @@
     },
     {
       "@type": "BlogPosting",
-      "headline": "Walking vs Running for Weight Loss: Which Is Better?",
-      "url": "https://suuapp.com/blog/en/walking-vs-running-for-weight-loss.html",
-      "datePublished": "2026-10-13",
-      "dateModified": "2026-10-13",
-      "inLanguage": "en-US",
-      "image": "https://suuapp.com/assets/og/blog/en-walking-vs-running-for-weight-loss.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Gained Weight After Starting Exercise? 4 Reasons",
-      "url": "https://suuapp.com/blog/en/weight-gain-after-starting-exercise.html",
-      "datePublished": "2026-10-13",
-      "dateModified": "2026-10-13",
-      "inLanguage": "en-US",
-      "image": "https://suuapp.com/assets/og/blog/en-weight-gain-after-starting-exercise.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Best Yazio Alternatives in 2026: 5 Apps Compared",
+      "headline": "The Best Yazio Alternatives in 2026",
       "url": "https://suuapp.com/blog/en/yazio-alternatives.html",
       "datePublished": "2026-10-03",
       "dateModified": "2026-10-03",
       "inLanguage": "en-US",
-      "image": "https://suuapp.com/assets/og-image.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "How to Quit Soda: A 4-Week Step-Down Plan",
-      "url": "https://suuapp.com/blog/en/how-to-quit-soda.html",
-      "datePublished": "2026-09-27",
-      "dateModified": "2026-09-27",
-      "inLanguage": "en-US",
-      "image": "https://suuapp.com/assets/og/blog/en-how-to-quit-soda.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Too Lazy to Work Out? 7 Ways to Start Anyway",
-      "url": "https://suuapp.com/blog/en/no-motivation-to-exercise.html",
-      "datePublished": "2026-09-27",
-      "dateModified": "2026-09-27",
-      "inLanguage": "en-US",
-      "image": "https://suuapp.com/assets/og/blog/en-no-motivation-to-exercise.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Calorie Counting Too Tedious? 7 Ways to Stick With It",
-      "url": "https://suuapp.com/blog/en/stick-with-calorie-counting.html",
-      "datePublished": "2026-09-27",
-      "dateModified": "2026-09-27",
-      "inLanguage": "en-US",
-      "image": "https://suuapp.com/assets/og/blog/en-stick-with-calorie-counting.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "How to Stop Late-Night Snacking: 7 Fixes",
-      "url": "https://suuapp.com/blog/en/stop-late-night-snacking.html",
-      "datePublished": "2026-09-27",
-      "dateModified": "2026-09-27",
-      "inLanguage": "en-US",
-      "image": "https://suuapp.com/assets/og/blog/en-stop-late-night-snacking.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Why Am I Always Tired? 8 Causes + When to See a GP",
-      "url": "https://suuapp.com/blog/en/why-am-i-always-tired.html",
-      "datePublished": "2026-09-27",
-      "dateModified": "2026-09-27",
-      "inLanguage": "en-US",
-      "image": "https://suuapp.com/assets/og/blog/en-why-am-i-always-tired.png"
+      "image": "https://suuapp.com/assets/og/blog/en-yazio-alternatives.png"
     },
     {
       "@type": "BlogPosting",
@@ -237,210 +271,237 @@
     },
     {
       "@type": "BlogPosting",
-      "headline": "Should You Build a Calorie or Water Tracking App in 2026? The Market Reality",
+      "headline": "Why Am I Always Tired? The 8 Most Common Causes",
+      "url": "https://suuapp.com/blog/en/why-am-i-always-tired.html",
+      "datePublished": "2026-09-27",
+      "dateModified": "2026-09-27",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-why-am-i-always-tired.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Too Lazy to Work Out? 7 Ways to Start Anyway",
+      "url": "https://suuapp.com/blog/en/no-motivation-to-exercise.html",
+      "datePublished": "2026-09-27",
+      "dateModified": "2026-09-27",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-no-motivation-to-exercise.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Keep Quitting Calorie Counting? 7 Ways to Stick With It",
+      "url": "https://suuapp.com/blog/en/stick-with-calorie-counting.html",
+      "datePublished": "2026-09-27",
+      "dateModified": "2026-09-27",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-stick-with-calorie-counting.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "How to Stop Late-Night Snacking: 7 Fixes That Work",
+      "url": "https://suuapp.com/blog/en/stop-late-night-snacking.html",
+      "datePublished": "2026-09-27",
+      "dateModified": "2026-09-27",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-stop-late-night-snacking.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "How to Quit Soda: A 4-Week Step-Down Plan",
+      "url": "https://suuapp.com/blog/en/how-to-quit-soda.html",
+      "datePublished": "2026-09-27",
+      "dateModified": "2026-09-27",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-how-to-quit-soda.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Should You Build a Tracking App in 2026?",
       "url": "https://suuapp.com/blog/en/should-you-build-a-tracking-app.html",
       "datePublished": "2026-09-14",
       "dateModified": "2026-09-14",
       "inLanguage": "en-US",
-      "image": "https://suuapp.com/assets/og-image.png"
+      "image": "https://suuapp.com/assets/og/blog/en-should-you-build-a-tracking-app.png"
     },
     {
       "@type": "BlogPosting",
-      "headline": "MyFitnessPal vs Lose It! (2026) — Database, Free Tier and Barcode Compared",
-      "url": "https://suuapp.com/blog/en/myfitnesspal-vs-lose-it.html",
-      "datePublished": "2026-08-24",
-      "dateModified": "2026-08-24",
-      "inLanguage": "en-US",
-      "image": "https://suuapp.com/assets/og-image.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Strava vs Nike Run Club (2026) — Free Coaching or Deep Analytics?",
-      "url": "https://suuapp.com/blog/en/strava-vs-nike-run-club.html",
-      "datePublished": "2026-08-24",
-      "dateModified": "2026-08-24",
-      "inLanguage": "en-US",
-      "image": "https://suuapp.com/assets/og-image.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "WaterMinder vs Hydro Coach (2026) — Which Water Tracking App Wins?",
+      "headline": "WaterMinder vs Hydro Coach",
       "url": "https://suuapp.com/blog/en/waterminder-vs-hydro-coach.html",
       "datePublished": "2026-08-24",
       "dateModified": "2026-08-24",
       "inLanguage": "en-US",
-      "image": "https://suuapp.com/assets/og-image.png"
+      "image": "https://suuapp.com/assets/og/blog/en-waterminder-vs-hydro-coach.png"
     },
     {
       "@type": "BlogPosting",
-      "headline": "How Accurate Are AI Calorie Photo Apps? (2026 Research Review)",
+      "headline": "Strava vs Nike Run Club",
+      "url": "https://suuapp.com/blog/en/strava-vs-nike-run-club.html",
+      "datePublished": "2026-08-24",
+      "dateModified": "2026-08-24",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-strava-vs-nike-run-club.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "MyFitnessPal vs Lose It!",
+      "url": "https://suuapp.com/blog/en/myfitnesspal-vs-lose-it.html",
+      "datePublished": "2026-08-24",
+      "dateModified": "2026-08-24",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-myfitnesspal-vs-lose-it.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "How Accurate Are AI Calorie Photo Apps? What the Research Says",
       "url": "https://suuapp.com/blog/en/ai-calorie-accuracy.html",
       "datePublished": "2026-08-17",
       "dateModified": "2026-08-17",
       "inLanguage": "en-US",
-      "image": "https://suuapp.com/assets/og-image.png"
+      "image": "https://suuapp.com/assets/og/blog/en-ai-calorie-accuracy.png"
     },
     {
       "@type": "BlogPosting",
-      "headline": "GPS Run Tracker That Also Counts Calories Eaten (2026 Guide)",
+      "headline": "A GPS Run Tracker That Also Counts the Calories You Eat",
       "url": "https://suuapp.com/blog/en/gps-run-tracker-with-calorie-counter.html",
       "datePublished": "2026-08-17",
-      "dateModified": "2026-08-17",
+      "dateModified": "2026-09-29",
       "inLanguage": "en-US",
-      "image": "https://suuapp.com/assets/og-image.png"
+      "image": "https://suuapp.com/assets/og/blog/en-gps-run-tracker-with-calorie-counter.png"
     },
     {
       "@type": "BlogPosting",
-      "headline": "Suu vs Strava (2026): GPS Tracking, Calories and Hydration Compared",
+      "headline": "Suu vs Strava: GPS Workout Tracking, or Closing the Loop?",
       "url": "https://suuapp.com/blog/en/suu-vs-strava.html",
       "datePublished": "2026-08-15",
-      "dateModified": "2026-08-15",
+      "dateModified": "2026-09-14",
       "inLanguage": "en-US",
-      "image": "https://suuapp.com/assets/og-image.png"
+      "image": "https://suuapp.com/assets/og/blog/en-suu-vs-strava.png"
     },
     {
       "@type": "BlogPosting",
-      "headline": "Best Workout Tracker App 2026 — Compared (Strava, Nike Run Club, Suu)",
-      "url": "https://suuapp.com/blog/en/best-workout-tracker-app.html",
-      "datePublished": "2026-08-13",
-      "dateModified": "2026-08-13",
-      "inLanguage": "en-US",
-      "image": "https://suuapp.com/assets/og-image.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Best Calorie Counter With Exercise Tracker (2026)",
-      "url": "https://suuapp.com/blog/en/calorie-counter-with-exercise-tracker.html",
-      "datePublished": "2026-08-13",
-      "dateModified": "2026-08-13",
-      "inLanguage": "en-US",
-      "image": "https://suuapp.com/assets/og-image.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Cronometer vs Yazio (2026) — Which Should You Use?",
-      "url": "https://suuapp.com/blog/en/cronometer-vs-yazio.html",
-      "datePublished": "2026-08-13",
-      "dateModified": "2026-08-13",
-      "inLanguage": "en-US",
-      "image": "https://suuapp.com/assets/og-image.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Lifesum vs Yazio (2026): Which Is Better? Honest Comparison",
-      "url": "https://suuapp.com/blog/en/lifesum-vs-yazio.html",
-      "datePublished": "2026-08-13",
-      "dateModified": "2026-08-13",
-      "inLanguage": "en-US",
-      "image": "https://suuapp.com/assets/og-image.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Yazio vs MyFitnessPal (2026) — Honest Comparison",
+      "headline": "Yazio vs MyFitnessPal: Which Calorie Counter Wins in 2026?",
       "url": "https://suuapp.com/blog/en/yazio-vs-myfitnesspal.html",
       "datePublished": "2026-08-13",
       "dateModified": "2026-08-13",
       "inLanguage": "en-US",
-      "image": "https://suuapp.com/assets/og-image.png"
+      "image": "https://suuapp.com/assets/og/blog/en-yazio-vs-myfitnesspal.png"
     },
     {
       "@type": "BlogPosting",
-      "headline": "Best Photo Calorie Counting App (2026 Comparison)",
+      "headline": "The Best Workout Tracker App in 2026",
+      "url": "https://suuapp.com/blog/en/best-workout-tracker-app.html",
+      "datePublished": "2026-08-13",
+      "dateModified": "2026-09-14",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-best-workout-tracker-app.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Lifesum vs Yazio: Which Calorie App Should You Pick?",
+      "url": "https://suuapp.com/blog/en/lifesum-vs-yazio.html",
+      "datePublished": "2026-08-13",
+      "dateModified": "2026-08-13",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-lifesum-vs-yazio.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Cronometer vs Yazio: Precision or Practicality?",
+      "url": "https://suuapp.com/blog/en/cronometer-vs-yazio.html",
+      "datePublished": "2026-08-13",
+      "dateModified": "2026-08-13",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-cronometer-vs-yazio.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Calorie Counter With Exercise Tracker: Which Apps Connect the Two?",
+      "url": "https://suuapp.com/blog/en/calorie-counter-with-exercise-tracker.html",
+      "datePublished": "2026-08-13",
+      "dateModified": "2026-09-29",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-calorie-counter-with-exercise-tracker.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "The Best Photo Calorie App: 2026 Comparison",
       "url": "https://suuapp.com/blog/en/best-photo-calorie-app.html",
       "datePublished": "2026-08-12",
-      "dateModified": "2026-08-12",
+      "dateModified": "2026-09-29",
       "inLanguage": "en-US",
-      "image": "https://suuapp.com/assets/og-image.png"
+      "image": "https://suuapp.com/assets/og/blog/en-best-photo-calorie-app.png"
     },
     {
       "@type": "BlogPosting",
-      "headline": "Free Calorie Counter Apps — What's Actually Free (2026)",
-      "url": "https://suuapp.com/blog/en/free-calorie-counter-app.html",
-      "datePublished": "2026-08-12",
-      "dateModified": "2026-08-12",
-      "inLanguage": "en-US",
-      "image": "https://suuapp.com/assets/og-image.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Suu vs Cal AI (2026 Comparison) — Which Is Better?",
+      "headline": "Suu vs Cal AI: Which One Fits You?",
       "url": "https://suuapp.com/blog/en/suu-vs-cal-ai.html",
       "datePublished": "2026-08-12",
-      "dateModified": "2026-08-12",
+      "dateModified": "2026-09-29",
       "inLanguage": "en-US",
-      "image": "https://suuapp.com/assets/og-image.png"
+      "image": "https://suuapp.com/assets/og/blog/en-suu-vs-cal-ai.png"
     },
     {
       "@type": "BlogPosting",
-      "headline": "Best Calorie Counting App 2026: Suu vs MyFitnessPal, Yazio, Lifesum, Cronometer",
-      "url": "https://suuapp.com/blog/en/best-calorie-counting-app.html",
-      "datePublished": "2026-07-07",
-      "dateModified": "2026-07-07",
+      "headline": "Free Calorie Counter: The Apps That Are Genuinely Free",
+      "url": "https://suuapp.com/blog/en/free-calorie-counter-app.html",
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-10-06",
       "inLanguage": "en-US",
-      "image": "https://suuapp.com/assets/og/blog/en-best-calorie-counting-app.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Suu vs MyFitnessPal: Which Is Better? (2026 Comparison)",
-      "url": "https://suuapp.com/blog/en/suu-vs-myfitnesspal.html",
-      "datePublished": "2026-07-07",
-      "dateModified": "2026-07-07",
-      "inLanguage": "en-US",
-      "image": "https://suuapp.com/assets/og/blog/en-suu-vs-myfitnesspal.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Suu vs Yazio: Which Is Better? (2026 Comparison)",
-      "url": "https://suuapp.com/blog/en/suu-vs-yazio.html",
-      "datePublished": "2026-07-07",
-      "dateModified": "2026-07-07",
-      "inLanguage": "en-US",
-      "image": "https://suuapp.com/assets/og/blog/en-suu-vs-yazio.png"
+      "image": "https://suuapp.com/assets/og/blog/en-free-calorie-counter-app.png"
     },
     {
       "@type": "BlogPosting",
       "headline": "Voice Calorie Logging: How Logging Food by Voice Works",
       "url": "https://suuapp.com/blog/en/voice-calorie-logging.html",
       "datePublished": "2026-07-07",
-      "dateModified": "2026-07-07",
+      "dateModified": "2026-09-29",
       "inLanguage": "en-US",
       "image": "https://suuapp.com/assets/og/blog/en-voice-calorie-logging.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "The Best Calorie Counting App in 2026",
+      "url": "https://suuapp.com/blog/en/best-calorie-counting-app.html",
+      "datePublished": "2026-07-07",
+      "dateModified": "2026-10-06",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-best-calorie-counting-app.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Suu vs Yazio: Which Is Better? (2026)",
+      "url": "https://suuapp.com/blog/en/suu-vs-yazio.html",
+      "datePublished": "2026-07-07",
+      "dateModified": "2026-09-29",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-suu-vs-yazio.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Suu vs MyFitnessPal: Which Is Better? (2026)",
+      "url": "https://suuapp.com/blog/en/suu-vs-myfitnesspal.html",
+      "datePublished": "2026-07-07",
+      "dateModified": "2026-09-29",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-suu-vs-myfitnesspal.png"
     },
     {
       "@type": "BlogPosting",
       "headline": "Is There an App That Tracks Water, Calories AND Exercise Together?",
       "url": "https://suuapp.com/blog/en/water-calorie-exercise-one-app.html",
       "datePublished": "2026-07-07",
-      "dateModified": "2026-07-07",
+      "dateModified": "2026-09-29",
       "inLanguage": "en-US",
       "image": "https://suuapp.com/assets/og/blog/en-water-calorie-exercise-one-app.png"
     },
     {
       "@type": "BlogPosting",
-      "headline": "What Is a Calorie Deficit and How to Create One (Weight Loss Guide)",
+      "headline": "What Is a Calorie Deficit and How to Create One",
       "url": "https://suuapp.com/blog/en/calorie-deficit.html",
       "datePublished": "2026-07-03",
       "dateModified": "2026-07-03",
       "inLanguage": "en-US",
-      "image": "https://suuapp.com/assets/og-image.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "How Many Calories Does Exercise Burn? Activity Calorie Guide",
-      "url": "https://suuapp.com/blog/en/calories-burned-exercise.html",
-      "datePublished": "2026-07-03",
-      "dateModified": "2026-07-03",
-      "inLanguage": "en-US",
-      "image": "https://suuapp.com/assets/og-image.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "How to Calculate Macros: Protein, Carbs and Fat Explained",
-      "url": "https://suuapp.com/blog/en/macro-calculation.html",
-      "datePublished": "2026-07-03",
-      "dateModified": "2026-07-03",
-      "inLanguage": "en-US",
-      "image": "https://suuapp.com/assets/og-image.png"
+      "image": "https://suuapp.com/assets/og/blog/en-calorie-deficit.png"
     },
     {
       "@type": "BlogPosting",
@@ -449,7 +510,25 @@
       "datePublished": "2026-07-03",
       "dateModified": "2026-07-03",
       "inLanguage": "en-US",
-      "image": "https://suuapp.com/assets/og-image.png"
+      "image": "https://suuapp.com/assets/og/blog/en-photo-calorie-counting.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "How to Calculate Macros: Protein, Carbs and Fat Explained",
+      "url": "https://suuapp.com/blog/en/macro-calculation.html",
+      "datePublished": "2026-07-03",
+      "dateModified": "2026-10-03",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-macro-calculation.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "How Many Calories Does Exercise Burn?",
+      "url": "https://suuapp.com/blog/en/calories-burned-exercise.html",
+      "datePublished": "2026-07-03",
+      "dateModified": "2026-07-03",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-calories-burned-exercise.png"
     },
     {
       "@type": "BlogPosting",
@@ -458,224 +537,292 @@
       "datePublished": "2026-06-14",
       "dateModified": "2026-06-14",
       "inLanguage": "en-US",
-      "image": "https://suuapp.com/assets/og-image.png"
+      "image": "https://suuapp.com/assets/og/blog/en-simple-advanced-mode.png"
     },
     {
       "@type": "BlogPosting",
       "headline": "Suu Pet Companion: Cat/Dog + 4 Mini-Games + Dress-Up",
       "url": "https://suuapp.com/blog/en/pet-companion-mini-games.html",
       "datePublished": "2026-05-22",
-      "inLanguage": "en-US"
+      "dateModified": "2026-05-22",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-pet-companion-mini-games.png"
     },
     {
       "@type": "BlogPosting",
       "headline": "Suu Premium 2% Donation Program: Transparent Water Wells in Africa",
       "url": "https://suuapp.com/blog/en/africa-water-well-donation-program.html",
       "datePublished": "2026-05-11",
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "10 Science-Backed Benefits of Drinking Water Daily",
-      "url": "https://suuapp.com/blog/en/benefits-of-drinking-water.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "How Much Water Should I Drink Per Day?",
-      "url": "https://suuapp.com/blog/en/how-much-water-should-i-drink.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Signs of Dehydration You Shouldn't Ignore",
-      "url": "https://suuapp.com/blog/en/signs-of-dehydration.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Hydration and Exercise: The Complete Guide",
-      "url": "https://suuapp.com/blog/en/hydration-and-exercise.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Why You Should Drink Water First Thing in the Morning",
-      "url": "https://suuapp.com/blog/en/morning-water-benefits.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "How to Build a Daily Water Drinking Habit",
-      "url": "https://suuapp.com/blog/en/water-drinking-habits.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Best Water Tracking App in 2026: Full Comparison",
-      "url": "https://suuapp.com/blog/en/best-water-tracking-app.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Does Coffee and Tea Count as Water?",
-      "url": "https://suuapp.com/blog/en/coffee-tea-hydration.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Does Drinking Water Help You Lose Weight?",
-      "url": "https://suuapp.com/blog/en/water-and-weight-loss.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Does Drinking Water Improve Your Skin?",
-      "url": "https://suuapp.com/blog/en/water-and-skin-health.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "How Dehydration Affects Your Sleep",
-      "url": "https://suuapp.com/blog/en/water-and-sleep.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "How Drinking Water Protects Your Kidneys",
-      "url": "https://suuapp.com/blog/en/water-and-kidney-health.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Hydration During Pregnancy: Trimester-by-Trimester Guide",
-      "url": "https://suuapp.com/blog/en/hydration-during-pregnancy.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Hydration While Breastfeeding: How Much Water Does Milk Need?",
-      "url": "https://suuapp.com/blog/en/hydration-while-breastfeeding.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Water Drinking Challenge With Friends: How Suu's Weekly League Works",
-      "url": "https://suuapp.com/blog/en/water-challenge-with-friends.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Apple Watch Water Tracking: The Complete 2026 Guide",
-      "url": "https://suuapp.com/blog/en/apple-watch-water-tracking.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "How to Track Water Intake with Siri in 2026 (Hands-Free Guide)",
-      "url": "https://suuapp.com/blog/en/siri-water-tracking.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "What Is a Hydration Score? How Suu Rates Your Water Intake (0-100)",
-      "url": "https://suuapp.com/blog/en/hydration-score-explained.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Why Gamification Makes You Drink More Water",
-      "url": "https://suuapp.com/blog/en/water-tracking-gamification.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Activity-Based Water Tracking: Walking, Running & Swimming",
-      "url": "https://suuapp.com/blog/en/activity-based-water-tracking.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Caffeine and Sugar Tracking: The Hidden Limits in Your Drinks",
-      "url": "https://suuapp.com/blog/en/caffeine-sugar-tracking.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "How to Cut Down on Coffee: 7 Science-Backed Strategies",
-      "url": "https://suuapp.com/blog/en/quit-coffee-guide.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "How Many Cups of Coffee Per Day Are Healthy? FDA Limits Guide",
-      "url": "https://suuapp.com/blog/en/how-many-cups-coffee.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "en-US"
+      "dateModified": "2026-10-03",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-africa-water-well-donation-program.png"
     },
     {
       "@type": "BlogPosting",
       "headline": "Post-Alcohol Hydration: The Science of Preventing a Hangover",
       "url": "https://suuapp.com/blog/en/post-alcohol-hydration.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "How to Control Energy Drink Intake: Red Bull, Monster Limits",
-      "url": "https://suuapp.com/blog/en/energy-drink-control.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "en-US"
+      "datePublished": "2026-05-10",
+      "dateModified": "2026-05-10",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-post-alcohol-hydration.png"
     },
     {
       "@type": "BlogPosting",
       "headline": "Juice vs Water: Which Is Healthier?",
       "url": "https://suuapp.com/blog/en/juice-vs-water.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "en-US"
+      "datePublished": "2026-05-10",
+      "dateModified": "2026-05-10",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-juice-vs-water.png"
     },
     {
       "@type": "BlogPosting",
-      "headline": "Does Tea Hydrate You? Hydration Factor by Tea Type",
+      "headline": "How to Cut Down on Coffee: 7 Science-Backed Strategies",
+      "url": "https://suuapp.com/blog/en/quit-coffee-guide.html",
+      "datePublished": "2026-05-10",
+      "dateModified": "2026-10-03",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-quit-coffee-guide.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "How to Control Energy Drink Intake: Red Bull, Monster and Safe Limits",
+      "url": "https://suuapp.com/blog/en/energy-drink-control.html",
+      "datePublished": "2026-05-10",
+      "dateModified": "2026-05-10",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-energy-drink-control.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "How Many Cups of Coffee Per Day Are Healthy?",
+      "url": "https://suuapp.com/blog/en/how-many-cups-coffee.html",
+      "datePublished": "2026-05-10",
+      "dateModified": "2026-10-03",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-how-many-cups-coffee.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Does Tea Hydrate You? Hydration Guide by Tea Type",
       "url": "https://suuapp.com/blog/en/tea-hydration.html",
+      "datePublished": "2026-05-10",
+      "dateModified": "2026-05-10",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-tea-hydration.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Caffeine and Sugar Tracking: The Hidden Limits in Your Drinks",
+      "url": "https://suuapp.com/blog/en/caffeine-sugar-tracking.html",
+      "datePublished": "2026-04-30",
+      "dateModified": "2026-10-03",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-caffeine-sugar-tracking.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Activity-Based Water Tracking: Auto Hydration for Every Workout",
+      "url": "https://suuapp.com/blog/en/activity-based-water-tracking.html",
+      "datePublished": "2026-04-30",
+      "dateModified": "2026-10-03",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-activity-based-water-tracking.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Why Gamification Makes You Drink More Water (Science + Suu Features)",
+      "url": "https://suuapp.com/blog/en/water-tracking-gamification.html",
+      "datePublished": "2026-04-14",
+      "dateModified": "2026-04-14",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-water-tracking-gamification.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "What Is a Hydration Score? How Suu Rates Your Water Intake (0-100)",
+      "url": "https://suuapp.com/blog/en/hydration-score-explained.html",
+      "datePublished": "2026-04-14",
+      "dateModified": "2026-09-29",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-hydration-score-explained.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "How to Track Water Intake with Siri (Hands-Free 2026 Guide)",
+      "url": "https://suuapp.com/blog/en/siri-water-tracking.html",
+      "datePublished": "2026-04-14",
+      "dateModified": "2026-09-29",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-siri-water-tracking.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Apple Watch Water Tracking: The Complete 2026 Guide",
+      "url": "https://suuapp.com/blog/en/apple-watch-water-tracking.html",
+      "datePublished": "2026-04-14",
+      "dateModified": "2026-09-29",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-apple-watch-water-tracking.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Water Drinking Challenge With Friends: How Suu's Weekly League Works",
+      "url": "https://suuapp.com/blog/en/water-challenge-with-friends.html",
+      "datePublished": "2026-04-07",
+      "dateModified": "2026-10-06",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-water-challenge-with-friends.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Hydration While Breastfeeding: How Much Water Does Milk Need?",
+      "url": "https://suuapp.com/blog/en/hydration-while-breastfeeding.html",
+      "datePublished": "2026-04-07",
+      "dateModified": "2026-10-03",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-hydration-while-breastfeeding.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Hydration During Pregnancy: How Much Water Should You Drink?",
+      "url": "https://suuapp.com/blog/en/hydration-during-pregnancy.html",
+      "datePublished": "2026-04-07",
+      "dateModified": "2026-10-03",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-hydration-during-pregnancy.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "The Simplest Way to Protect Your Kidneys (Most People Don't Do It)",
+      "url": "https://suuapp.com/blog/en/water-and-kidney-health.html",
+      "datePublished": "2026-03-22",
+      "dateModified": "2026-03-22",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-water-and-kidney-health.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Forget Expensive Skincare: Can Drinking Water Actually Transform Your Skin?",
+      "url": "https://suuapp.com/blog/en/water-and-skin-health.html",
+      "datePublished": "2026-03-22",
+      "dateModified": "2026-03-22",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-water-and-skin-health.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Drink 2 Glasses Before Every Meal — The Weight Loss Trick Backed by Science",
+      "url": "https://suuapp.com/blog/en/water-and-weight-loss.html",
+      "datePublished": "2026-03-22",
+      "dateModified": "2026-03-22",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-water-and-weight-loss.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Does Coffee Count as Water Intake? Hydration by Drink",
+      "url": "https://suuapp.com/blog/en/coffee-tea-hydration.html",
+      "datePublished": "2026-03-22",
+      "dateModified": "2026-09-27",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-coffee-tea-hydration.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Can't Sleep Well? Your Water Intake Might Be the Problem",
+      "url": "https://suuapp.com/blog/en/water-and-sleep.html",
+      "datePublished": "2026-03-22",
+      "dateModified": "2026-03-22",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-water-and-sleep.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "What Happens When You Drink Water on an Empty Stomach Every Morning",
+      "url": "https://suuapp.com/blog/en/morning-water-benefits.html",
       "datePublished": "2026-03-15",
-      "inLanguage": "en-US"
+      "dateModified": "2026-03-15",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-morning-water-benefits.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "The Best Water Tracking Apps in 2026",
+      "url": "https://suuapp.com/blog/en/best-water-tracking-app.html",
+      "datePublished": "2026-03-15",
+      "dateModified": "2026-10-06",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-best-water-tracking-app.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "The \"8 Glasses a Day\" Rule Is Wrong — Here's What Science Says",
+      "url": "https://suuapp.com/blog/en/how-much-water-should-i-drink.html",
+      "datePublished": "2026-03-15",
+      "dateModified": "2026-10-03",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-how-much-water-should-i-drink.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Hydration and Exercise: How Much Water to Drink Before, During & After Workouts",
+      "url": "https://suuapp.com/blog/en/hydration-and-exercise.html",
+      "datePublished": "2026-03-15",
+      "dateModified": "2026-10-03",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-hydration-and-exercise.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Can't Remember to Drink Water? 7 Science-Backed Ways",
+      "url": "https://suuapp.com/blog/en/water-drinking-habits.html",
+      "datePublished": "2026-03-15",
+      "dateModified": "2026-09-27",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-water-drinking-habits.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "8 Warning Signs You're Dehydrated — Most People Ignore #3",
+      "url": "https://suuapp.com/blog/en/signs-of-dehydration.html",
+      "datePublished": "2026-03-15",
+      "dateModified": "2026-03-15",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-signs-of-dehydration.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "10 Things That Happen to Your Body When You Drink Enough Water",
+      "url": "https://suuapp.com/blog/en/benefits-of-drinking-water.html",
+      "datePublished": "2026-03-15",
+      "dateModified": "2026-03-15",
+      "inLanguage": "en-US",
+      "image": "https://suuapp.com/assets/og/blog/en-benefits-of-drinking-water.png"
     }
   ]
 }
     </script>
 
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
     {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {"@type":"ListItem","position":1,"name":"Home","item":"https://suuapp.com/hosgeldiniz-en.html"},
-        {"@type":"ListItem","position":2,"name":"Blog","item":"https://suuapp.com/blog-en.html"}
-      ]
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://suuapp.com/hosgeldiniz-en.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://suuapp.com/blog-en.html"
     }
+  ]
+}
     </script>
     <script src="/assets/js/analytics.js" defer></script>
     <script src="/assets/js/special-days.js" defer></script>
@@ -684,709 +831,1017 @@
 
 <nav class="blog-nav">
     <div class="nav-content">
-        <a href="hosgeldiniz-en.html" class="blog-logo"><img src="/assets/brand/suu-badge-128.png" alt="Suu" width="128" height="128" class="suu-logo-badge" style="height:1.6em;width:1.6em;border-radius:50%;vertical-align:-0.4em;box-shadow:0 0 0 1px rgba(255,255,255,.12),0 0 14px rgba(94,170,255,.45);"> Suu</a>
+        <a href="/hosgeldiniz-en.html" class="blog-logo"><img src="/assets/brand/suu-badge-128.png" alt="Suu" width="128" height="128" class="suu-logo-badge" style="height:1.6em;width:1.6em;border-radius:50%;display:block;"> Suu</a>
         <div class="nav-right">
-            <!-- lang-switcher.js injects buttons here -->
-            <a href="glossary.html" class="back-btn"><i class="fas fa-book"></i> Glossary</a>
-            <a href="comparisons.html" class="back-btn"><i class="fas fa-scale-balanced"></i> Comparisons</a>
-            <a href="hosgeldiniz-en.html" class="back-btn"><i class="fas fa-arrow-left"></i> Home</a>
-            <div class="hamburger"></div>
+            <span data-lang-slot></span>
+            <a href="comparisons.html" class="nav-btn" title="Comparisons"><i class="fas fa-scale-balanced" aria-hidden="true"></i><span>Comparisons</span></a>
+            <a href="glossary.html" class="nav-btn" title="Glossary"><i class="fas fa-book" aria-hidden="true"></i><span>Glossary</span></a>
+            <a href="faq-en.html" class="nav-btn" title="FAQ"><i class="fas fa-circle-question" aria-hidden="true"></i><span>FAQ</span></a>
+            <a href="/hosgeldiniz-en.html" class="nav-btn" title="Home"><i class="fas fa-house" aria-hidden="true"></i><span>Home</span></a>
         </div>
     </div>
 </nav>
 
-<div class="blog-header">
-    <h1>💧 Suu Blog</h1>
-    <p>Science-backed articles on calories and macros, AI photo food logging, GPS workout tracking and hydration — plus honest head-to-head app comparisons.</p>
-</div>
-
-<div class="container">
-    <div class="articles-grid">
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#0072C6,#43A047);color:white;">⚖️</div>
-            <div class="article-body">
-                <div class="article-tag">Comparison</div>
-                <h3>Cronometer vs Lifesum: Which Calorie App Should You Pick?</h3>
-                <p>Cronometer and Lifesum compared on database accuracy, vitamins and minerals, diet plans and free plan. Which suits detail-lovers, which suits beginners?</p>
-                <a href="blog/en/cronometer-vs-lifesum.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1E88E5,#42A5F5);color:white;">💧</div>
-            <div class="article-body">
-                <div class="article-tag">Guide</div>
-                <h3>Is Suu Safe? Who Is Behind It and How Your Data Is Protected</h3>
-                <p>Who builds Suu and how is your data protected? An app from a registered company that grew inside Istanbul&#x27;s BTM incubator: GDPR/KVKK, AES-256, no data sales.</p>
-                <a href="blog/en/is-suu-safe.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#0072C6,#43A047);color:white;">⚖️</div>
-            <div class="article-body">
-                <div class="article-tag">Comparison</div>
-                <h3>Lifesum vs MyFitnessPal: Which Calorie App Should You Pick?</h3>
-                <p>Lifesum and MyFitnessPal compared on database, barcode scanner, diet plans, free plan and ads. Which suits you — and what neither of them does.</p>
-                <a href="blog/en/lifesum-vs-myfitnesspal.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#2E9E4F,#66BB6A);color:white;">🏃</div>
-            <div class="article-body">
-                <div class="article-tag">Exercise</div>
-                <h3>Exercise During Ramadan: Before or After Iftar?</h3>
-                <p>Train light just before iftar and hard 1–3 hours after it. A fluid plan for iftar to suhoor, plus suhoor and sleep tips, based on the Aspetar guideline.</p>
-                <a href="blog/en/exercise-during-ramadan.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#0072C6,#43A047);color:white;">⚖️</div>
-            <div class="article-body">
-                <div class="article-tag">Comparison</div>
-                <h3>Walking vs Running for Weight Loss</h3>
-                <p>Minute for minute, running burns roughly 2.5–3 times what walking does; over the same distance only about 40% more. Calories, appetite and injury risk compared.</p>
-                <a href="blog/en/walking-vs-running-for-weight-loss.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#2E9E4F,#66BB6A);color:white;">🏃</div>
-            <div class="article-body">
-                <div class="article-tag">Exercise</div>
-                <h3>Why Did I Gain Weight After Starting to Exercise?</h3>
-                <p>The scale rising after you start exercising is usually not fat: water stored with glycogen, muscle repair and a quieter appetite boost. When to trust the scale.</p>
-                <a href="blog/en/weight-gain-after-starting-exercise.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#0072C6,#43A047);color:white;">⚖️</div>
-            <div class="article-body">
-                <div class="article-tag">Comparison</div>
-                <h3>The Best Yazio Alternatives in 2026</h3>
-                <p>Leaving Yazio? We compared Suu, MyFitnessPal, Lifesum, Cronometer and Lose It! on logging speed, free tier, fasting, recipes, hydration and GPS workouts.</p>
-                <a href="blog/en/yazio-alternatives.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1E88E5,#42A5F5);color:white;">💧</div>
-            <div class="article-body">
-                <div class="article-tag">Guide</div>
-                <h3>How to Stop Late-Night Snacking: 7 Fixes That Work</h3>
-                <p>Late-night snacking rarely comes from hunger; it comes from skipped breakfasts, short sleep and habit. The causes and 7 fixes that work, backed by research.</p>
-                <a href="blog/en/stop-late-night-snacking.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1E88E5,#42A5F5);color:white;">💧</div>
-            <div class="article-body">
-                <div class="article-tag">Guide</div>
-                <h3>Why Am I Always Tired? The 8 Most Common Causes</h3>
-                <p>The most common reasons you&#x27;re always tired: sleep, stress, inactivity, diet, dehydration, caffeine, iron deficiency and medical causes. When to see a doctor.</p>
-                <a href="blog/en/why-am-i-always-tired.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1E88E5,#42A5F5);color:white;">💧</div>
-            <div class="article-body">
-                <div class="article-tag">Guide</div>
-                <h3>Why Am I Not Losing Weight? 7 Reasons + a Checklist</h3>
-                <p>Why does the scale stall in a calorie deficit? Under-logging, drinks, weekends, exercise calories, water swings and falling energy needs. A 4-week checklist.</p>
-                <a href="blog/en/why-am-i-not-losing-weight.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#2E9E4F,#66BB6A);color:white;">🏃</div>
-            <div class="article-body">
-                <div class="article-tag">Exercise</div>
-                <h3>Too Lazy to Work Out? 7 Ways to Start Anyway</h3>
-                <p>Feeling too lazy to exercise isn&#x27;t a willpower problem — it&#x27;s a starting problem. Begin with 10-minute walks, plan when and where, and bring a friend in.</p>
-                <a href="blog/en/no-motivation-to-exercise.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#F57C00,#FFB74D);color:white;">🔥</div>
-            <div class="article-body">
-                <div class="article-tag">Calories</div>
-                <h3>Keep Quitting Calorie Counting? 7 Ways to Stick With It</h3>
-                <p>Most people quit calorie counting within weeks. Consistency beats precision: log roughly, start with one meal, look at the weekly average. Backed by research.</p>
-                <a href="blog/en/stick-with-calorie-counting.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1E88E5,#42A5F5);color:white;">💧</div>
-            <div class="article-body">
-                <div class="article-tag">Guide</div>
-                <h3>How to Quit Soda: A 4-Week Step-Down Plan</h3>
-                <p>Stop drinking soda without white-knuckling it: a 4-week plan for triggers, caffeine headaches and the switch to sparkling water, plus what one can really does.</p>
-                <a href="blog/en/how-to-quit-soda.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1E88E5,#42A5F5);color:white;">💧</div>
-            <div class="article-body">
-                <div class="article-tag">Guide</div>
-                <h3>Should You Build a Tracking App in 2026?</h3>
-                <p>Thinking of building a calorie counter, water tracker or workout app? A developer who built one maps the 2026 market: 200M-user MyFitnessPal, the Cal AI exit,…</p>
-                <a href="blog/en/should-you-build-a-tracking-app.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#0072C6,#43A047);color:white;">⚖️</div>
-            <div class="article-body">
-                <div class="article-tag">Comparison</div>
-                <h3>MyFitnessPal vs Lose It!</h3>
-                <p>MyFitnessPal has the bigger food database; Lose It! has the friendlier free tier and free barcode scanning. We compare both on logging speed, data quality, price…</p>
-                <a href="blog/en/myfitnesspal-vs-lose-it.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#0072C6,#43A047);color:white;">⚖️</div>
-            <div class="article-body">
-                <div class="article-tag">Comparison</div>
-                <h3>Strava vs Nike Run Club</h3>
-                <p>Nike Run Club is free and coaches you; Strava is social, multi-sport and analytical but paywalls its best features. We compare both on GPS accuracy, training…</p>
-                <a href="blog/en/strava-vs-nike-run-club.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#0072C6,#43A047);color:white;">⚖️</div>
-            <div class="article-body">
-                <div class="article-tag">Comparison</div>
-                <h3>WaterMinder vs Hydro Coach</h3>
-                <p>WaterMinder and Hydro Coach are the two most-installed water trackers, and they are built for opposite users. We compare price, Apple Watch and Wear OS support,…</p>
-                <a href="blog/en/waterminder-vs-hydro-coach.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#F57C00,#FFB74D);color:white;">🔥</div>
-            <div class="article-body">
-                <div class="article-tag">Calories</div>
-                <h3>How Accurate Are AI Calorie Photo Apps? What the Research Says</h3>
-                <p>A systematic review of 52 studies puts AI calorie estimation error between 0.10% and 38.3%. But self-reported food logs are off by up to 47%. Here is what that…</p>
-                <a href="blog/en/ai-calorie-accuracy.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#F57C00,#FFB74D);color:white;">🔥</div>
-            <div class="article-body">
-                <div class="article-tag">Calories</div>
-                <h3>A GPS Run Tracker That Also Counts the Calories You Eat</h3>
-                <p>Most running apps track the calories you burn but not the ones you eat, and most calorie apps do the reverse. Here is which apps close the loop — Strava, Nike…</p>
-                <a href="blog/en/gps-run-tracker-with-calorie-counter.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#0072C6,#43A047);color:white;">⚖️</div>
-            <div class="article-body">
-                <div class="article-tag">Comparison</div>
-                <h3>Suu vs Strava: GPS Workout Tracking, or Closing the Loop?</h3>
-                <p>We compared Strava and Suu on live GPS workout tracking, route maps, calories burned, calories eaten and hydration. Which suits whom — and where Suu does not…</p>
-                <a href="blog/en/suu-vs-strava.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#F57C00,#FFB74D);color:white;">🔥</div>
-            <div class="article-body">
-                <div class="article-tag">Calories</div>
-                <h3>The Best Photo Calorie App: 2026 Comparison</h3>
-                <p>We compared the apps that read calories and macros from a meal photo: Suu, Cal AI, MyFitnessPal, Yazio and Lifesum. Which suits whom, what the free limits are,…</p>
-                <a href="blog/en/best-photo-calorie-app.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#2E9E4F,#66BB6A);color:white;">🏃</div>
-            <div class="article-body">
-                <div class="article-tag">Exercise</div>
-                <h3>The Best Workout Tracker App in 2026</h3>
-                <p>We compared workout tracking apps by what they actually do with your data: Strava, Nike Run Club, Samsung Health, Apple Fitness and Suu. Which logs calories,…</p>
-                <a href="blog/en/best-workout-tracker-app.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#2E9E4F,#66BB6A);color:white;">🏃</div>
-            <div class="article-body">
-                <div class="article-tag">Exercise</div>
-                <h3>Calorie Counter With Exercise Tracker: Which Apps Connect the Two?</h3>
-                <p>Most apps log calories and workouts separately. We compared which ones actually connect them — so the run you record changes what you need to eat and drink. Suu,…</p>
-                <a href="blog/en/calorie-counter-with-exercise-tracker.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#0072C6,#43A047);color:white;">⚖️</div>
-            <div class="article-body">
-                <div class="article-tag">Comparison</div>
-                <h3>Cronometer vs Yazio: Precision or Practicality?</h3>
-                <p>Yazio vs Cronometer compared on micronutrient depth, data accuracy, recipes, free tier and daily usability. Which suits precision trackers, which suits everyday…</p>
-                <a href="blog/en/cronometer-vs-yazio.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#F57C00,#FFB74D);color:white;">🔥</div>
-            <div class="article-body">
-                <div class="article-tag">Calories</div>
-                <h3>Free Calorie Counter: The Apps That Are Genuinely Free</h3>
-                <p>Which calorie app is genuinely free? We compared the free tiers of Suu, MyFitnessPal, Lose It!, Cronometer and FatSecret line by line: barcode, macros, exercise…</p>
-                <a href="blog/en/free-calorie-counter-app.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#0072C6,#43A047);color:white;">⚖️</div>
-            <div class="article-body">
-                <div class="article-tag">Comparison</div>
-                <h3>Lifesum vs Yazio: Which Calorie App Should You Pick?</h3>
-                <p>Lifesum and Yazio compared on food database, recipes, macro tracking, free plan limits and price. Which suits beginners, which suits meal planners — and what…</p>
-                <a href="blog/en/lifesum-vs-yazio.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#0072C6,#43A047);color:white;">⚖️</div>
-            <div class="article-body">
-                <div class="article-tag">Comparison</div>
-                <h3>Suu vs Cal AI: Which One Fits You?</h3>
-                <p>We compared Cal AI and Suu on photo calorie analysis, free plan limits, hydration and exercise tracking. When Cal AI is the better pick, and when Suu is.</p>
-                <a href="blog/en/suu-vs-cal-ai.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#0072C6,#43A047);color:white;">⚖️</div>
-            <div class="article-body">
-                <div class="article-tag">Comparison</div>
-                <h3>Yazio vs MyFitnessPal: Which Calorie Counter Wins in 2026?</h3>
-                <p>MyFitnessPal vs Yazio compared on food database size, barcode scanning, recipes, macro tracking, free plan limits and price. Which one to pick, when to switch,…</p>
-                <a href="blog/en/yazio-vs-myfitnesspal.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1B5E20,#43A047);color:white;">🏆</div>
-            <div class="article-body">
-                <div class="article-tag">Comparison</div>
-                <h3>Best Calorie Counting App 2026: Suu vs MyFitnessPal, Yazio, Lifesum, Cronometer</h3>
-                <p>Five popular nutrition apps compared. Water + calories + exercise in one app, voice and photo logging — with sources.</p>
-                <a href="blog/en/best-calorie-counting-app.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#0072C6,#43A047);color:white;">⚖️</div>
-            <div class="article-body">
-                <div class="article-tag">Comparison</div>
-                <h3>Suu vs MyFitnessPal: Which Is Better?</h3>
-                <p>The best all-in-one MyFitnessPal alternative? Voice logging, hydration science and price compared.</p>
-                <a href="blog/en/suu-vs-myfitnesspal.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#FF7043,#43A047);color:white;">⚖️</div>
-            <div class="article-body">
-                <div class="article-tag">Comparison</div>
-                <h3>Suu vs Yazio: Which Is Better?</h3>
-                <p>Intermittent fasting vs real hydration science. Voice/photo logging and water + calories + exercise in one app.</p>
-                <a href="blog/en/suu-vs-yazio.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1B5E20,#2E9E5B);color:white;">💡</div>
-            <div class="article-body">
-                <div class="article-tag">Guide</div>
-                <h3>Is There an App That Tracks Water, Calories AND Exercise Together?</h3>
-                <p>Why combined tracking matters and how Suu solves it in one app with voice/photo logging and Health sync.</p>
-                <a href="blog/en/water-calorie-exercise-one-app.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#4527A0,#7E57C2);color:white;">🎙️</div>
-            <div class="article-body">
-                <div class="article-tag">AI Feature</div>
-                <h3>Voice Calorie Logging: How Logging Food by Voice Works</h3>
-                <p>Can you log meals by voice, how accurate is it, and how is privacy protected? Track calories by speaking with Suu.</p>
-                <a href="blog/en/voice-calorie-logging.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#43A047,#66BB6A);color:white;">🍽️</div>
-            <div class="article-body">
-                <div class="article-tag">Nutrition</div>
-                <h3>How to Calculate Macros: Protein, Carbs and Fat</h3>
-                <p>How do you set your macros from scratch? A step-by-step formula from calories to macros, a worked example, and easy AI tracking.</p>
-                <a href="blog/en/macro-calculation.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#FB8C00,#FFA726);color:white;">⚖️</div>
-            <div class="article-body">
-                <div class="article-tag">Weight Loss</div>
-                <h3>What Is a Calorie Deficit and How to Create One?</h3>
-                <p>The one real mechanism behind weight loss. How big it should be, the safe pace, common mistakes, and easy AI calorie tracking.</p>
-                <a href="blog/en/calorie-deficit.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#4A90D9,#29B6F6);color:white;">🏃</div>
-            <div class="article-body">
-                <div class="article-tag">Exercise</div>
-                <h3>How Many Calories Does Exercise Burn?</h3>
-                <p>Calculate your own number with the MET formula, an activity table for walking/running/cycling, and automatic Apple Health tracking.</p>
-                <a href="blog/en/calories-burned-exercise.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#7E57C2,#9575CD);color:white;">🤖</div>
-            <div class="article-body">
-                <div class="article-tag">AI</div>
-                <h3>Photo Calorie Counting: AI Nutrition Tracking</h3>
-                <p>How counting calories from a food photo works, how accurate it is, and tips to make it more precise.</p>
-                <a href="blog/en/photo-calorie-counting.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#4A90D9,#29B6F6);color:white;">🎚️</div>
-            <div class="article-body">
-                <div class="article-tag">New Feature</div>
-                <h3>Simple vs Advanced Mode: Track Water Your Way</h3>
-                <p>Suu now runs in two modes: a clean one-tap Simple Mode and a detailed statistics + quick-add Advanced Mode. Which one fits you, and how to switch?</p>
-                <a href="blog/en/simple-advanced-mode.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#6B4FB8,#B26FFF);color:white;">🐾</div>
-            <div class="article-body">
-                <div class="article-tag">New Feature</div>
-                <h3>Suu Pet Companion: Cat/Dog + 4 Mini-Games + Dress-Up</h3>
-                <p>Your pet now owns the streak. Bubble pop, addition, subtraction and memory match earn droplets — spend them to dress up your cat or dog.</p>
-                <a href="blog/en/pet-companion-mini-games.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#2E6FB8,#6FB3FF);color:white;">🌍</div>
-            <div class="article-body">
-                <div class="article-tag">Social Responsibility</div>
-                <h3>Suu Premium 2% Donation Program: Transparent Water Wells in Africa</h3>
-                <p>2% of every Premium subscription is donated to clean water well projects in Africa. All receipts public, JSON open, git-tracked.</p>
-                <a href="blog/en/africa-water-well-donation-program.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#e3f2fd,#bbdefb);">💧</div>
-            <div class="article-body">
-                <div class="article-tag">Health</div>
-                <h3>10 Science-Backed Benefits of Drinking Water Daily</h3>
-                <p>How water boosts brain function, metabolism, skin health, and immune system — backed by peer-reviewed research.</p>
-                <a href="blog/en/benefits-of-drinking-water.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#e8f5e9,#c8e6c9);">🧮</div>
-            <div class="article-body">
-                <div class="article-tag">Hydration Guide</div>
-                <h3>How Much Water Should I Drink Per Day?</h3>
-                <p>The science-based formula for calculating your personal daily water goal — based on weight, activity level, and climate.</p>
-                <a href="blog/en/how-much-water-should-i-drink.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#fff3e0,#ffe0b2);">⚠️</div>
-            <div class="article-body">
-                <div class="article-tag">Health</div>
-                <h3>Signs of Dehydration You Shouldn't Ignore</h3>
-                <p>Headaches, fatigue, dark urine — learn to recognize dehydration before it affects your performance and health.</p>
-                <a href="blog/en/signs-of-dehydration.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#fce4ec,#f8bbd0);">💪</div>
-            <div class="article-body">
-                <div class="article-tag">Sports</div>
-                <h3>Hydration and Exercise: The Complete Guide</h3>
-                <p>How much water to drink before, during, and after workouts. Sweat loss, electrolytes, and sport-specific hydration.</p>
-                <a href="blog/en/hydration-and-exercise.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#f3e5f5,#e1bee7);">🌅</div>
-            <div class="article-body">
-                <div class="article-tag">Morning Routine</div>
-                <h3>Why You Should Drink Water First Thing in the Morning</h3>
-                <p>The metabolism boost, hydration window, and cognitive benefits of morning water — and how to build the habit.</p>
-                <a href="blog/en/morning-water-benefits.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#e0f2f1,#b2dfdb);">✅</div>
-            <div class="article-body">
-                <div class="article-tag">Habits</div>
-                <h3>How to Build a Daily Water Drinking Habit</h3>
-                <p>7 behaviour-science strategies to make drinking water automatic — habit stacking, smart reminders, streaks, and social accountability.</p>
-                <a href="blog/en/water-drinking-habits.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#fff8e1,#ffecb3);">📱</div>
-            <div class="article-body">
-                <div class="article-tag">App Comparison</div>
-                <h3>Best Water Tracking App in 2026: Full Comparison</h3>
-                <p>An honest comparison of the top water tracking apps — features, design, pricing, and what makes Suu stand out.</p>
-                <a href="blog/en/best-water-tracking-app.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#fce4ec,#f8bbd0);">☕</div>
-            <div class="article-body">
-                <div class="article-tag">Beverages</div>
-                <h3>Does Coffee and Tea Count as Water?</h3>
-                <p>Understanding the hydration factor — how coffee, tea, juice, and other beverages contribute to your daily hydration.</p>
-                <a href="blog/en/coffee-tea-hydration.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#e8eaf6,#c5cae9);">⚖️</div>
-            <div class="article-body">
-                <div class="article-tag">Weight Management</div>
-                <h3>Does Drinking Water Help You Lose Weight?</h3>
-                <p>Water preloading, thermogenesis, and hunger-thirst confusion — the science of water and weight management.</p>
-                <a href="blog/en/water-and-weight-loss.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#fff3e0,#ffe0b2);">✨</div>
-            <div class="article-body">
-                <div class="article-tag">Skin Health</div>
-                <h3>Does Drinking Water Improve Your Skin?</h3>
-                <p>The science behind hydration and skin health — elasticity, aging, collagen production, and what water can really do for your skin.</p>
-                <a href="blog/en/water-and-skin-health.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#e8f5e9,#c8e6c9);">🌙</div>
-            <div class="article-body">
-                <div class="article-tag">Sleep</div>
-                <h3>How Dehydration Affects Your Sleep</h3>
-                <p>Dehydration disrupts sleep quality — learn optimal timing, how much to drink before bed, and morning rehydration strategies.</p>
-                <a href="blog/en/water-and-sleep.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#e0f7fa,#b2ebf2);">🫘</div>
-            <div class="article-body">
-                <div class="article-tag">Kidney Health</div>
-                <h3>How Drinking Water Protects Your Kidneys</h3>
-                <p>Kidney stones, UTI prevention, and chronic kidney disease — how consistent hydration supports kidney function.</p>
-                <a href="blog/en/water-and-kidney-health.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#fce4ec,#f8bbd0);">🤰</div>
-            <div class="article-body">
-                <div class="article-tag">Pregnancy</div>
-                <h3>Hydration During Pregnancy: Trimester-by-Trimester Guide</h3>
-                <p>Blood volume rises 50% in pregnancy. Exactly how much water to drink per trimester — and Suu's new pregnancy mode sets your target automatically.</p>
-                <a href="blog/en/hydration-during-pregnancy.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#e0f2f1,#b2dfdb);">🤱</div>
-            <div class="article-body">
-                <div class="article-tag">Breastfeeding</div>
-                <h3>Hydration While Breastfeeding: How Much Water Does Milk Need?</h3>
-                <p>Breast milk is 87% water. Nursing mothers need ~700ml more per day. Science-backed guide + Suu breastfeeding mode.</p>
-                <a href="blog/en/hydration-while-breastfeeding.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#fff3e0,#ffe0b2);">🏆</div>
-            <div class="article-body">
-                <div class="article-tag">Social</div>
-                <h3>Water Drinking Challenge With Friends: How Suu's Weekly League Works</h3>
-                <p>Turn hydration into a friendly competition: a free weekly leaderboard with up to 4 friends, private leagues with Premium, friend progress tracking, and nudges.</p>
-                <a href="blog/en/water-challenge-with-friends.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#e3f2fd,#1a1a2e);">⌚</div>
-            <div class="article-body">
-                <div class="article-tag">Apple Watch</div>
-                <h3>Apple Watch Water Tracking: The Complete 2026 Guide</h3>
-                <p>Suu's Apple Watch app is live: add water, log meals by voice and record GPS workouts with live heart rate from your wrist — plus how Apple Health raises your water goal.</p>
-                <a href="blog/en/apple-watch-water-tracking.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#f3e5f5,#2d1b69);">🎙️</div>
-            <div class="article-body">
-                <div class="article-tag">Voice & Siri</div>
-                <h3>How to Track Water Intake with Siri in 2026 (Hands-Free Guide)</h3>
-                <p>Set up Siri Shortcuts in Suu for voice-controlled water logging. Step-by-step guide for iPhone, Apple Watch, and Android voice commands.</p>
-                <a href="blog/en/siri-water-tracking.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#e8eaf6,#0f3460);">📊</div>
-            <div class="article-body">
-                <div class="article-tag">Analytics</div>
-                <h3>What Is a Hydration Score? How Suu Rates Your Water Intake (0-100)</h3>
-                <p>Suu's hydration score measures four components — completion, regularity, timing, and more. Here's how it's calculated and how to improve it.</p>
-                <a href="blog/en/hydration-score-explained.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#fff8e1,#b8460b);">🏅</div>
-            <div class="article-body">
-                <div class="article-tag">Gamification</div>
-                <h3>Why Gamification Makes You Drink More Water (Science + Suu Features)</h3>
-                <p>Badges, streaks, friend leagues, and challenges — Suu's gamification system is built on behavioral science. Here's why it actually works.</p>
-                <a href="blog/en/water-tracking-gamification.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#0f3a82,#00ACC1);">🏃</div>
-            <div class="article-body">
-                <div class="article-tag">Activity & Hydration</div>
-                <h3>Activity-Based Water Tracking: Walking, Running & Swimming</h3>
-                <p>Suu now reads your activity from Apple Health and Google Fit and automatically raises your daily water goal. Science-backed math for 30+ workout types.</p>
-                <a href="blog/en/activity-based-water-tracking.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#5D2A1F,#BF360C);">🧪</div>
-            <div class="article-body">
-                <div class="article-tag">Caffeine & Sugar</div>
-                <h3>Caffeine and Sugar Tracking: The Hidden Limits in Your Drinks</h3>
-                <p>Suu now calculates caffeine (mg) and sugar (g) for 91 beverages. Smart warnings against the FDA 400 mg and WHO 25 g daily ceilings.</p>
-                <a href="blog/en/caffeine-sugar-tracking.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#3E2723,#6D4C41);">☕</div>
-            <div class="article-body">
-                <div class="article-tag">Coffee Reduction</div>
-                <h3>How to Cut Down on Coffee: 7 Science-Backed Strategies</h3>
-                <p>For users searching "I drink too much coffee, help me." Caffeine addiction guide, gradual reduction, 7-day plan and Suu tracking.</p>
-                <a href="blog/en/quit-coffee-guide.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#4E342E,#8D6E63);">📊</div>
-            <div class="article-body">
-                <div class="article-tag">Coffee Limits</div>
-                <h3>How Many Cups of Coffee Per Day Are Healthy? FDA Limits Guide</h3>
-                <p>400mg for healthy adults, 200mg for pregnant women, 100mg for sensitive people. CYP1A2 enzyme and personal tolerance recommendations.</p>
-                <a href="blog/en/how-many-cups-coffee.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#4A148C,#7B1FA2);">🍷</div>
-            <div class="article-body">
-                <div class="article-tag">Alcohol & Hydration</div>
-                <h3>Post-Alcohol Hydration: The Science of Preventing a Hangover</h3>
-                <p>Compensation water for beer, wine, whiskey. The 1:1 rule, 4-phase rehydration plan and alcohol tracking with Suu.</p>
-                <a href="blog/en/post-alcohol-hydration.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1B5E20,#2E7D32);">⚡</div>
-            <div class="article-body">
-                <div class="article-tag">Energy Drinks</div>
-                <h3>How to Control Energy Drink Intake: Red Bull, Monster Limits</h3>
-                <p>Caffeine/sugar tracking for Red Bull, Monster, Burn. FDA limit, healthy alternatives and 4-week reduction plan.</p>
-                <a href="blog/en/energy-drink-control.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#E65100,#FB8C00);">🍊</div>
-            <div class="article-body">
-                <div class="article-tag">Juice vs Water</div>
-                <h3>Juice vs Water: Which Is Healthier?</h3>
-                <p>Fresh-squeezed vs packaged comparison, juice for kids, diet impact and sugar tracking with Suu.</p>
-                <a href="blog/en/juice-vs-water.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#00695C,#00897B);">🍵</div>
-            <div class="article-body">
-                <div class="article-tag">Tea & Hydration</div>
-                <h3>Does Tea Hydrate You? Hydration Factor by Tea Type</h3>
-                <p>Hydration factor and caffeine for 12+ tea types. Herbal teas 100% hydration, Maughan 2016 science references.</p>
-                <a href="blog/en/tea-hydration.html" class="read-more">Read article <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
+<header class="bi-hero">
+    <div class="bi-hero-in">
+        <h1>Suu Blog</h1>
+        <p class="bi-lead">Evidence-based guides on calories, exercise and hydration — plus honest, head-to-head app comparisons.</p>
+        <form class="bi-search" role="search" action="#" onsubmit="return false">
+            <i class="fas fa-magnifying-glass bi-ico" aria-hidden="true"></i>
+            <input type="search" id="bi-q" placeholder="Search: calorie deficit, coffee, Ramadan…" aria-label="Search blog articles" autocomplete="off" enterkeyhint="search">
+            <button type="button" id="bi-clear" aria-label="Clear search" hidden><i class="fas fa-xmark" aria-hidden="true"></i></button>
+        </form>
+        <ul class="bi-stats">
+            <li><strong>67</strong> articles</li>
+            <li><strong>7</strong> categories</li>
+            <li><i class="far fa-clock" aria-hidden="true"></i> Last updated: <time datetime="2026-10-14">October 14, 2026</time></li>
+        </ul>
+    </div>
+</header>
+
+<nav class="bi-chips" aria-label="Categories">
+    <div class="bi-chips-in">
+        <a href="#top" class="bi-chip" data-cat="all" aria-current="true">All <span class="n">67</span></a>
+        <a href="#cat-calories" class="bi-chip" data-cat="calories" style="--c:#E65100">🔥 Calories &amp; Nutrition <span class="n">8</span></a>
+        <a href="#cat-exercise" class="bi-chip" data-cat="exercise" style="--c:#2E7D32">🏃 Exercise &amp; Fitness <span class="n">6</span></a>
+        <a href="#cat-water" class="bi-chip" data-cat="water" style="--c:#0277BD">💧 Water &amp; Hydration <span class="n">8</span></a>
+        <a href="#cat-drinks" class="bi-chip" data-cat="drinks" style="--c:#6D4C41">☕ Coffee, Tea &amp; Drinks <span class="n">9</span></a>
+        <a href="#cat-health" class="bi-chip" data-cat="health" style="--c:#AD1457">🩺 Health &amp; Life Stages <span class="n">6</span></a>
+        <a href="#cat-compare" class="bi-chip" data-cat="compare" style="--c:#00796B">⚖️ App Comparisons <span class="n">20</span></a>
+        <a href="#cat-suu" class="bi-chip" data-cat="suu" style="--c:#5E35B1">📱 Suu: Features &amp; News <span class="n">10</span></a>
+    </div>
+</nav>
+
+<main class="bi-main" id="top">
+    <p class="bi-status" id="bi-status" role="status" aria-live="polite"></p>
+
+    <section class="bi-sec bi-latest" id="latest" aria-labelledby="latest-h">
+        <div class="bi-sec-head">
+            <div class="bi-sec-ico" aria-hidden="true">✨</div>
+            <div><h2 id="latest-h">Latest articles</h2></div>
+        </div>
+        <div class="bi-grid">
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/en/lifesum-vs-myfitnesspal.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-lifesum-vs-myfitnesspal.webp" alt="" width="600" height="315" fetchpriority="high" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ App Comparisons</span>
+                        <h3>Lifesum vs MyFitnessPal: Which Calorie App Should You Pick?</h3>
+                        <p>Lifesum and MyFitnessPal compared on database, barcode scanner, diet plans, free plan and ads. Which suits you — and what neither of them does.</p>
+                        <div class="bi-meta"><time datetime="2026-10-14">October 14, 2026</time><span aria-hidden="true">·</span><span>6 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#5E35B1;--bg-c:#EDE7F6">
+                <a href="/blog/en/is-suu-safe.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-is-suu-safe.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">📱 Suu: Features &amp; News</span>
+                        <h3>Is Suu Safe? Who Is Behind It and How Your Data Is Protected</h3>
+                        <p>Who builds Suu and how is your data protected? An app from a registered company that grew inside Istanbul&#39;s BTM incubator: GDPR/KVKK, AES-256, no data sales.</p>
+                        <div class="bi-meta"><time datetime="2026-10-14">October 14, 2026</time><span aria-hidden="true">·</span><span>6 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/en/cronometer-vs-lifesum.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-cronometer-vs-lifesum.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ App Comparisons</span>
+                        <h3>Cronometer vs Lifesum: Which Calorie App Should You Pick?</h3>
+                        <p>Cronometer and Lifesum compared on database accuracy, vitamins and minerals, diet plans and free plan. Which suits detail-lovers, which suits beginners?</p>
+                        <div class="bi-meta"><time datetime="2026-10-14">October 14, 2026</time><span aria-hidden="true">·</span><span>6 min read</span></div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <section class="bi-sec" id="cat-calories" data-cat="calories" aria-labelledby="cat-calories-h" style="--c:#E65100;--bg-c:#FFF3E0">
+        <div class="bi-sec-head">
+            <div class="bi-sec-ico" aria-hidden="true">🔥</div>
+            <div>
+                <h2 id="cat-calories-h">Calories &amp; Nutrition <span class="n">8</span></h2>
+                <p>Calorie deficits, macros, photo calorie counting and why weight loss stalls.</p>
+            </div>
+        </div>
+        <div class="bi-grid">
+<article class="bi-card" style="--c:#E65100;--bg-c:#FFF3E0">
+                <a href="/blog/en/why-am-i-not-losing-weight.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-why-am-i-not-losing-weight.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🔥 Calories &amp; Nutrition</span>
+                        <h3>Why Am I Not Losing Weight? 7 Reasons + a Checklist</h3>
+                        <p>Why does the scale stall in a calorie deficit? Under-logging, drinks, weekends, exercise calories, water swings and falling energy needs. A 4-week checklist.</p>
+                        <div class="bi-meta"><time datetime="2026-09-27">September 27, 2026</time><span aria-hidden="true">·</span><span>7 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#E65100;--bg-c:#FFF3E0">
+                <a href="/blog/en/stick-with-calorie-counting.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-stick-with-calorie-counting.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🔥 Calories &amp; Nutrition</span>
+                        <h3>Keep Quitting Calorie Counting? 7 Ways to Stick With It</h3>
+                        <p>Most people quit calorie counting within weeks. Consistency beats precision: log roughly, start with one meal, look at the weekly average. Backed by research.</p>
+                        <div class="bi-meta"><time datetime="2026-09-27">September 27, 2026</time><span aria-hidden="true">·</span><span>7 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#E65100;--bg-c:#FFF3E0">
+                <a href="/blog/en/stop-late-night-snacking.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-stop-late-night-snacking.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🔥 Calories &amp; Nutrition</span>
+                        <h3>How to Stop Late-Night Snacking: 7 Fixes That Work</h3>
+                        <p>Late-night snacking rarely comes from hunger; it comes from skipped breakfasts, short sleep and habit. The causes and 7 fixes that work, backed by research.</p>
+                        <div class="bi-meta"><time datetime="2026-09-27">September 27, 2026</time><span aria-hidden="true">·</span><span>7 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#E65100;--bg-c:#FFF3E0">
+                <a href="/blog/en/ai-calorie-accuracy.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-ai-calorie-accuracy.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🔥 Calories &amp; Nutrition</span>
+                        <h3>How Accurate Are AI Calorie Photo Apps? What the Research Says</h3>
+                        <p>A systematic review of 52 studies puts AI calorie estimation error between 0.10% and 38.3%. But self-reported food logs are off by up to 47%. Here is what that…</p>
+                        <div class="bi-meta"><time datetime="2026-08-17">August 17, 2026</time><span aria-hidden="true">·</span><span>11 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#E65100;--bg-c:#FFF3E0">
+                <a href="/blog/en/calorie-deficit.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-calorie-deficit.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🔥 Calories &amp; Nutrition</span>
+                        <h3>What Is a Calorie Deficit and How to Create One</h3>
+                        <p>What is a calorie deficit, how do you calculate it, and how big should it be to lose weight? Safe pace, the most common mistakes, and easy AI calorie tracking.</p>
+                        <div class="bi-meta"><time datetime="2026-07-03">July 3, 2026</time><span aria-hidden="true">·</span><span>5 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#E65100;--bg-c:#FFF3E0">
+                <a href="/blog/en/photo-calorie-counting.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-photo-calorie-counting.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🔥 Calories &amp; Nutrition</span>
+                        <h3>Photo Calorie Counting: AI Nutrition Tracking Explained</h3>
+                        <p>How does counting calories from a food photo work, and how accurate is it? The pros of AI nutrition tracking, accuracy tips, and photo analysis in Suu.</p>
+                        <div class="bi-meta"><time datetime="2026-07-03">July 3, 2026</time><span aria-hidden="true">·</span><span>4 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#E65100;--bg-c:#FFF3E0">
+                <a href="/blog/en/macro-calculation.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-macro-calculation.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🔥 Calories &amp; Nutrition</span>
+                        <h3>How to Calculate Macros: Protein, Carbs and Fat Explained</h3>
+                        <p>What are macros and how do you calculate your daily protein, carbs and fat? A step-by-step formula from calories to macros, worked example, and easy AI tracking.</p>
+                        <div class="bi-meta"><time datetime="2026-07-03">July 3, 2026</time><span aria-hidden="true">·</span><span>6 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#E65100;--bg-c:#FFF3E0">
+                <a href="/blog/en/water-and-weight-loss.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-water-and-weight-loss.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🔥 Calories &amp; Nutrition</span>
+                        <h3>Drink 2 Glasses Before Every Meal — The Weight Loss Trick Backed by Science</h3>
+                        <p>Studies show pre-meal water drinkers consume fewer calories and lose more weight. The science behind water and weight management — no diets required.</p>
+                        <div class="bi-meta"><time datetime="2026-03-22">March 22, 2026</time><span aria-hidden="true">·</span><span>6 min read</span></div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <section class="bi-sec" id="cat-exercise" data-cat="exercise" aria-labelledby="cat-exercise-h" style="--c:#2E7D32;--bg-c:#E8F5E9">
+        <div class="bi-sec-head">
+            <div class="bi-sec-ico" aria-hidden="true">🏃</div>
+            <div>
+                <h2 id="cat-exercise-h">Exercise &amp; Fitness <span class="n">6</span></h2>
+                <p>Calories burned in exercise, motivation, training while fasting and choosing the right workout.</p>
+            </div>
+        </div>
+        <div class="bi-grid">
+<article class="bi-card" style="--c:#2E7D32;--bg-c:#E8F5E9">
+                <a href="/blog/en/weight-gain-after-starting-exercise.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-weight-gain-after-starting-exercise.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🏃 Exercise &amp; Fitness</span>
+                        <h3>Why Did I Gain Weight After Starting to Exercise?</h3>
+                        <p>The scale rising after you start exercising is usually not fat: water stored with glycogen, muscle repair and a quieter appetite boost. When to trust the scale.</p>
+                        <div class="bi-meta"><time datetime="2026-10-13">October 13, 2026</time><span aria-hidden="true">·</span><span>8 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#2E7D32;--bg-c:#E8F5E9">
+                <a href="/blog/en/walking-vs-running-for-weight-loss.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-walking-vs-running-for-weight-loss.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🏃 Exercise &amp; Fitness</span>
+                        <h3>Walking vs Running for Weight Loss</h3>
+                        <p>Minute for minute, running burns roughly 2.5–3 times what walking does; over the same distance only about 40% more. Calories, appetite and injury risk compared.</p>
+                        <div class="bi-meta"><time datetime="2026-10-13">October 13, 2026</time><span aria-hidden="true">·</span><span>8 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#2E7D32;--bg-c:#E8F5E9">
+                <a href="/blog/en/exercise-during-ramadan.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-exercise-during-ramadan.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🏃 Exercise &amp; Fitness</span>
+                        <h3>Exercise During Ramadan: Before or After Iftar?</h3>
+                        <p>Train light just before iftar and hard 1–3 hours after it. A fluid plan for iftar to suhoor, plus suhoor and sleep tips, based on the Aspetar guideline.</p>
+                        <div class="bi-meta"><time datetime="2026-10-13">October 13, 2026</time><span aria-hidden="true">·</span><span>9 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#2E7D32;--bg-c:#E8F5E9">
+                <a href="/blog/en/no-motivation-to-exercise.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-no-motivation-to-exercise.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🏃 Exercise &amp; Fitness</span>
+                        <h3>Too Lazy to Work Out? 7 Ways to Start Anyway</h3>
+                        <p>Feeling too lazy to exercise isn&#39;t a willpower problem — it&#39;s a starting problem. Begin with 10-minute walks, plan when and where, and bring a friend in.</p>
+                        <div class="bi-meta"><time datetime="2026-09-27">September 27, 2026</time><span aria-hidden="true">·</span><span>8 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#2E7D32;--bg-c:#E8F5E9">
+                <a href="/blog/en/calories-burned-exercise.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-calories-burned-exercise.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🏃 Exercise &amp; Fitness</span>
+                        <h3>How Many Calories Does Exercise Burn?</h3>
+                        <p>How many calories do walking, running, cycling, swimming and HIIT burn? Personal calculation with the MET formula, an activity table, and automatic Apple Health…</p>
+                        <div class="bi-meta"><time datetime="2026-07-03">July 3, 2026</time><span aria-hidden="true">·</span><span>4 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#2E7D32;--bg-c:#E8F5E9">
+                <a href="/blog/en/hydration-and-exercise.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-hydration-and-exercise.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🏃 Exercise &amp; Fitness</span>
+                        <h3>Hydration and Exercise: How Much Water to Drink Before, During &amp; After Workouts</h3>
+                        <p>Even 2% dehydration cuts workout performance by 20%. Science-backed guide: exactly how much water to drink before, during, and after exercise. Free tracker inside.</p>
+                        <div class="bi-meta"><time datetime="2026-03-15">March 15, 2026</time><span aria-hidden="true">·</span><span>9 min read</span></div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <section class="bi-sec" id="cat-water" data-cat="water" aria-labelledby="cat-water-h" style="--c:#0277BD;--bg-c:#E1F5FE">
+        <div class="bi-sec-head">
+            <div class="bi-sec-ico" aria-hidden="true">💧</div>
+            <div>
+                <h2 id="cat-water-h">Water &amp; Hydration <span class="n">8</span></h2>
+                <p>How much water you need, signs of dehydration, building the habit and tracking it.</p>
+            </div>
+        </div>
+        <div class="bi-grid">
+<article class="bi-card" style="--c:#0277BD;--bg-c:#E1F5FE">
+                <a href="/blog/en/activity-based-water-tracking.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-activity-based-water-tracking.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">💧 Water &amp; Hydration</span>
+                        <h3>Activity-Based Water Tracking: Auto Hydration for Every Workout</h3>
+                        <p>Suu now reads your activity from Apple Health and Google Health Connect and automatically adjusts your daily water goal. Science-backed hydration for walking…</p>
+                        <div class="bi-meta"><time datetime="2026-04-30">April 30, 2026</time><span aria-hidden="true">·</span><span>6 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#0277BD;--bg-c:#E1F5FE">
+                <a href="/blog/en/water-tracking-gamification.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-water-tracking-gamification.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">💧 Water &amp; Hydration</span>
+                        <h3>Why Gamification Makes You Drink More Water (Science + Suu Features)</h3>
+                        <p>Badges, streaks, leagues, and challenges — Suu&#39;s gamification system is built on behavioral science. Here&#39;s why it works and how to use it to build lasting…</p>
+                        <div class="bi-meta"><time datetime="2026-04-14">April 14, 2026</time><span aria-hidden="true">·</span><span>5 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#0277BD;--bg-c:#E1F5FE">
+                <a href="/blog/en/morning-water-benefits.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-morning-water-benefits.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">💧 Water &amp; Hydration</span>
+                        <h3>What Happens When You Drink Water on an Empty Stomach Every Morning</h3>
+                        <p>The Japanese water therapy that&#39;s taking over wellness routines. How morning water boosts metabolism, flushes toxins, and jumpstarts your energy.</p>
+                        <div class="bi-meta"><time datetime="2026-03-15">March 15, 2026</time><span aria-hidden="true">·</span><span>8 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#0277BD;--bg-c:#E1F5FE">
+                <a href="/blog/en/best-water-tracking-app.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-best-water-tracking-app.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">💧 Water &amp; Hydration</span>
+                        <h3>The Best Water Tracking Apps in 2026</h3>
+                        <p>Which water tracking app actually gets you drinking? We compared Suu, WaterMinder, Waterllama, Hydro Coach and Plant Nanny on reminder quality, goal accuracy…</p>
+                        <div class="bi-meta"><time datetime="2026-03-15">March 15, 2026</time><span aria-hidden="true">·</span><span>10 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#0277BD;--bg-c:#E1F5FE">
+                <a href="/blog/en/how-much-water-should-i-drink.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-how-much-water-should-i-drink.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">💧 Water &amp; Hydration</span>
+                        <h3>The &#34;8 Glasses a Day&#34; Rule Is Wrong — Here&#39;s What Science Says</h3>
+                        <p>Everyone says 8 glasses, but your actual water needs depend on weight, activity, and climate. Calculate your real daily intake — the answer might surprise you.</p>
+                        <div class="bi-meta"><time datetime="2026-03-15">March 15, 2026</time><span aria-hidden="true">·</span><span>6 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#0277BD;--bg-c:#E1F5FE">
+                <a href="/blog/en/water-drinking-habits.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-water-drinking-habits.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">💧 Water &amp; Hydration</span>
+                        <h3>Can&#39;t Remember to Drink Water? 7 Science-Backed Ways</h3>
+                        <p>Forgetting to drink water isn&#39;t about willpower — it&#39;s missing cues. A morning glass, a visible bottle, a glass before meals and small goals: 7 ways that stick.</p>
+                        <div class="bi-meta"><time datetime="2026-03-15">March 15, 2026</time><span aria-hidden="true">·</span><span>6 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#0277BD;--bg-c:#E1F5FE">
+                <a href="/blog/en/signs-of-dehydration.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-signs-of-dehydration.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">💧 Water &amp; Hydration</span>
+                        <h3>8 Warning Signs You&#39;re Dehydrated — Most People Ignore #3</h3>
+                        <p>Dehydration isn&#39;t just thirst. Headaches, brain fog, dark urine, fatigue — your body sends signals you&#39;re probably missing. A urine color guide included.</p>
+                        <div class="bi-meta"><time datetime="2026-03-15">March 15, 2026</time><span aria-hidden="true">·</span><span>7 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#0277BD;--bg-c:#E1F5FE">
+                <a href="/blog/en/benefits-of-drinking-water.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-benefits-of-drinking-water.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">💧 Water &amp; Hydration</span>
+                        <h3>10 Things That Happen to Your Body When You Drink Enough Water</h3>
+                        <p>From faster metabolism to clearer skin, sharper focus to stronger immunity — here&#39;s what science says about staying hydrated. Track your intake with Suu.</p>
+                        <div class="bi-meta"><time datetime="2026-03-15">March 15, 2026</time><span aria-hidden="true">·</span><span>7 min read</span></div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <section class="bi-sec" id="cat-drinks" data-cat="drinks" aria-labelledby="cat-drinks-h" style="--c:#6D4C41;--bg-c:#EFEBE9">
+        <div class="bi-sec-head">
+            <div class="bi-sec-ico" aria-hidden="true">☕</div>
+            <div>
+                <h2 id="cat-drinks-h">Coffee, Tea &amp; Drinks <span class="n">9</span></h2>
+                <p>Caffeine limits, whether tea and coffee count as water, sugary and alcoholic drinks.</p>
+            </div>
+        </div>
+        <div class="bi-grid">
+<article class="bi-card" style="--c:#6D4C41;--bg-c:#EFEBE9">
+                <a href="/blog/en/how-to-quit-soda.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-how-to-quit-soda.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">☕ Coffee, Tea &amp; Drinks</span>
+                        <h3>How to Quit Soda: A 4-Week Step-Down Plan</h3>
+                        <p>Stop drinking soda without white-knuckling it: a 4-week plan for triggers, caffeine headaches and the switch to sparkling water, plus what one can really does.</p>
+                        <div class="bi-meta"><time datetime="2026-09-27">September 27, 2026</time><span aria-hidden="true">·</span><span>8 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#6D4C41;--bg-c:#EFEBE9">
+                <a href="/blog/en/post-alcohol-hydration.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-post-alcohol-hydration.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">☕ Coffee, Tea &amp; Drinks</span>
+                        <h3>Post-Alcohol Hydration: The Science of Preventing a Hangover</h3>
+                        <p>Beer, wine, whiskey — alcohol dehydrates your body. Compensation water by alcohol type, next-day rehydration plan and tracking with Suu.</p>
+                        <div class="bi-meta"><time datetime="2026-05-10">May 10, 2026</time><span aria-hidden="true">·</span><span>6 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#6D4C41;--bg-c:#EFEBE9">
+                <a href="/blog/en/juice-vs-water.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-juice-vs-water.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">☕ Coffee, Tea &amp; Drinks</span>
+                        <h3>Juice vs Water: Which Is Healthier?</h3>
+                        <p>Fresh-squeezed or packaged juice? Does it replace water? Sugar content, vitamin value, juice for kids and diabetes risk guide.</p>
+                        <div class="bi-meta"><time datetime="2026-05-10">May 10, 2026</time><span aria-hidden="true">·</span><span>6 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#6D4C41;--bg-c:#EFEBE9">
+                <a href="/blog/en/quit-coffee-guide.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-quit-coffee-guide.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">☕ Coffee, Tea &amp; Drinks</span>
+                        <h3>How to Cut Down on Coffee: 7 Science-Backed Strategies</h3>
+                        <p>Drinking too much coffee and want to cut down but can&#39;t? This guide covers the science of caffeine dependency, 7 reduction strategies, and a 7-day plan with the Suu app.</p>
+                        <div class="bi-meta"><time datetime="2026-05-10">May 10, 2026</time><span aria-hidden="true">·</span><span>9 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#6D4C41;--bg-c:#EFEBE9">
+                <a href="/blog/en/energy-drink-control.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-energy-drink-control.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">☕ Coffee, Tea &amp; Drinks</span>
+                        <h3>How to Control Energy Drink Intake: Red Bull, Monster and Safe Limits</h3>
+                        <p>How to cut down on Red Bull, Monster, Burn energy drinks? Caffeine/sugar content, FDA limit, risks for young users and Suu tracking guide.</p>
+                        <div class="bi-meta"><time datetime="2026-05-10">May 10, 2026</time><span aria-hidden="true">·</span><span>6 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#6D4C41;--bg-c:#EFEBE9">
+                <a href="/blog/en/how-many-cups-coffee.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-how-many-cups-coffee.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">☕ Coffee, Tea &amp; Drinks</span>
+                        <h3>How Many Cups of Coffee Per Day Are Healthy?</h3>
+                        <p>Are 2 coffees a day healthy or 4? FDA, EFSA and ACOG limits, caffeine metabolism rate, special limits for pregnant/athlete/heart patient and tracking with Suu.</p>
+                        <div class="bi-meta"><time datetime="2026-05-10">May 10, 2026</time><span aria-hidden="true">·</span><span>7 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#6D4C41;--bg-c:#EFEBE9">
+                <a href="/blog/en/tea-hydration.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-tea-hydration.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">☕ Coffee, Tea &amp; Drinks</span>
+                        <h3>Does Tea Hydrate You? Hydration Guide by Tea Type</h3>
+                        <p>Do green tea, black tea, herbal teas hydrate? Do they replace water? Hydration factor for 12+ tea types, caffeine content and health effects.</p>
+                        <div class="bi-meta"><time datetime="2026-05-10">May 10, 2026</time><span aria-hidden="true">·</span><span>7 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#6D4C41;--bg-c:#EFEBE9">
+                <a href="/blog/en/caffeine-sugar-tracking.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-caffeine-sugar-tracking.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">☕ Coffee, Tea &amp; Drinks</span>
+                        <h3>Caffeine and Sugar Tracking: The Hidden Limits in Your Drinks</h3>
+                        <p>Suu now calculates caffeine (mg) and sugar (g) for 91 beverages. Stay under the FDA 400 mg caffeine and WHO 25 g sugar daily limits with smart in-app warnings.</p>
+                        <div class="bi-meta"><time datetime="2026-04-30">April 30, 2026</time><span aria-hidden="true">·</span><span>6 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#6D4C41;--bg-c:#EFEBE9">
+                <a href="/blog/en/coffee-tea-hydration.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-coffee-tea-hydration.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">☕ Coffee, Tea &amp; Drinks</span>
+                        <h3>Does Coffee Count as Water Intake? Hydration by Drink</h3>
+                        <p>Moderate coffee and tea don&#39;t dehydrate you; they hydrate close to water. How filter coffee, espresso, tea and soda count, the caffeine limit and Suu&#39;s factors.</p>
+                        <div class="bi-meta"><time datetime="2026-03-22">March 22, 2026</time><span aria-hidden="true">·</span><span>6 min read</span></div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <section class="bi-sec" id="cat-health" data-cat="health" aria-labelledby="cat-health-h" style="--c:#AD1457;--bg-c:#FCE4EC">
+        <div class="bi-sec-head">
+            <div class="bi-sec-ico" aria-hidden="true">🩺</div>
+            <div>
+                <h2 id="cat-health-h">Health &amp; Life Stages <span class="n">6</span></h2>
+                <p>Pregnancy and breastfeeding, constant tiredness, and how water relates to kidneys, skin and sleep.</p>
+            </div>
+        </div>
+        <div class="bi-grid">
+<article class="bi-card" style="--c:#AD1457;--bg-c:#FCE4EC">
+                <a href="/blog/en/why-am-i-always-tired.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-why-am-i-always-tired.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🩺 Health &amp; Life Stages</span>
+                        <h3>Why Am I Always Tired? The 8 Most Common Causes</h3>
+                        <p>The most common reasons you&#39;re always tired: sleep, stress, inactivity, diet, dehydration, caffeine, iron deficiency and medical causes. When to see a doctor.</p>
+                        <div class="bi-meta"><time datetime="2026-09-27">September 27, 2026</time><span aria-hidden="true">·</span><span>7 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#AD1457;--bg-c:#FCE4EC">
+                <a href="/blog/en/hydration-while-breastfeeding.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-hydration-while-breastfeeding.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🩺 Health &amp; Life Stages</span>
+                        <h3>Hydration While Breastfeeding: How Much Water Does Milk Need?</h3>
+                        <p>Breast milk is 87% water. Breastfeeding mothers need ~700ml more water per day than the average adult. Science-backed guide + Suu breastfeeding mode.</p>
+                        <div class="bi-meta"><time datetime="2026-04-07">April 7, 2026</time><span aria-hidden="true">·</span><span>7 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#AD1457;--bg-c:#FCE4EC">
+                <a href="/blog/en/hydration-during-pregnancy.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-hydration-during-pregnancy.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🩺 Health &amp; Life Stages</span>
+                        <h3>Hydration During Pregnancy: How Much Water Should You Drink?</h3>
+                        <p>How much water should you drink during pregnancy? Science-backed guide by trimester — and how Suu&#39;s new pregnancy mode automatically sets your personal daily target.</p>
+                        <div class="bi-meta"><time datetime="2026-04-07">April 7, 2026</time><span aria-hidden="true">·</span><span>6 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#AD1457;--bg-c:#FCE4EC">
+                <a href="/blog/en/water-and-kidney-health.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-water-and-kidney-health.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🩺 Health &amp; Life Stages</span>
+                        <h3>The Simplest Way to Protect Your Kidneys (Most People Don&#39;t Do It)</h3>
+                        <p>Drinking enough water can reduce kidney stone risk by up to 50%. The easiest kidney health habit backed by science — and most people skip it.</p>
+                        <div class="bi-meta"><time datetime="2026-03-22">March 22, 2026</time><span aria-hidden="true">·</span><span>6 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#AD1457;--bg-c:#FCE4EC">
+                <a href="/blog/en/water-and-skin-health.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-water-and-skin-health.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🩺 Health &amp; Life Stages</span>
+                        <h3>Forget Expensive Skincare: Can Drinking Water Actually Transform Your Skin?</h3>
+                        <p>Your skin problems might not need expensive creams — just more water. The science behind hydration, collagen, elasticity, and anti-aging. Evidence-based analysis.</p>
+                        <div class="bi-meta"><time datetime="2026-03-22">March 22, 2026</time><span aria-hidden="true">·</span><span>5 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#AD1457;--bg-c:#FCE4EC">
+                <a href="/blog/en/water-and-sleep.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-water-and-sleep.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🩺 Health &amp; Life Stages</span>
+                        <h3>Can&#39;t Sleep Well? Your Water Intake Might Be the Problem</h3>
+                        <p>Poor sleep quality is often linked to dehydration. When to drink, when to stop, and how to wake up feeling actually refreshed. Science-backed tips.</p>
+                        <div class="bi-meta"><time datetime="2026-03-22">March 22, 2026</time><span aria-hidden="true">·</span><span>6 min read</span></div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <section class="bi-sec" id="cat-compare" data-cat="compare" aria-labelledby="cat-compare-h" style="--c:#00796B;--bg-c:#E0F2F1">
+        <div class="bi-sec-head">
+            <div class="bi-sec-ico" aria-hidden="true">⚖️</div>
+            <div>
+                <h2 id="cat-compare-h">App Comparisons <span class="n">20</span></h2>
+                <p>MyFitnessPal, Yazio, Lifesum, Cronometer, Strava and Suu: which one suits whom?</p>
+            </div>
+        </div>
+        <div class="bi-grid">
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/en/lifesum-vs-myfitnesspal.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-lifesum-vs-myfitnesspal.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ App Comparisons</span>
+                        <h3>Lifesum vs MyFitnessPal: Which Calorie App Should You Pick?</h3>
+                        <p>Lifesum and MyFitnessPal compared on database, barcode scanner, diet plans, free plan and ads. Which suits you — and what neither of them does.</p>
+                        <div class="bi-meta"><time datetime="2026-10-14">October 14, 2026</time><span aria-hidden="true">·</span><span>6 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/en/cronometer-vs-lifesum.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-cronometer-vs-lifesum.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ App Comparisons</span>
+                        <h3>Cronometer vs Lifesum: Which Calorie App Should You Pick?</h3>
+                        <p>Cronometer and Lifesum compared on database accuracy, vitamins and minerals, diet plans and free plan. Which suits detail-lovers, which suits beginners?</p>
+                        <div class="bi-meta"><time datetime="2026-10-14">October 14, 2026</time><span aria-hidden="true">·</span><span>6 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/en/yazio-alternatives.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-yazio-alternatives.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ App Comparisons</span>
+                        <h3>The Best Yazio Alternatives in 2026</h3>
+                        <p>Leaving Yazio? We compared Suu, MyFitnessPal, Lifesum, Cronometer and Lose It! on logging speed, free tier, fasting, recipes, hydration and GPS workouts.</p>
+                        <div class="bi-meta"><time datetime="2026-10-03">October 3, 2026</time><span aria-hidden="true">·</span><span>13 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/en/waterminder-vs-hydro-coach.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-waterminder-vs-hydro-coach.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ App Comparisons</span>
+                        <h3>WaterMinder vs Hydro Coach</h3>
+                        <p>WaterMinder and Hydro Coach are the two most-installed water trackers, and they are built for opposite users. We compare price, Apple Watch and Wear OS support…</p>
+                        <div class="bi-meta"><time datetime="2026-08-24">August 24, 2026</time><span aria-hidden="true">·</span><span>7 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/en/strava-vs-nike-run-club.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-strava-vs-nike-run-club.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ App Comparisons</span>
+                        <h3>Strava vs Nike Run Club</h3>
+                        <p>Nike Run Club is free and coaches you; Strava is social, multi-sport and analytical but paywalls its best features. We compare both on GPS accuracy, training plans…</p>
+                        <div class="bi-meta"><time datetime="2026-08-24">August 24, 2026</time><span aria-hidden="true">·</span><span>7 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/en/myfitnesspal-vs-lose-it.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-myfitnesspal-vs-lose-it.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ App Comparisons</span>
+                        <h3>MyFitnessPal vs Lose It!</h3>
+                        <p>MyFitnessPal has the bigger food database; Lose It! has the friendlier free tier and free barcode scanning. We compare both on logging speed, data quality, price…</p>
+                        <div class="bi-meta"><time datetime="2026-08-24">August 24, 2026</time><span aria-hidden="true">·</span><span>7 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/en/gps-run-tracker-with-calorie-counter.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-gps-run-tracker-with-calorie-counter.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ App Comparisons</span>
+                        <h3>A GPS Run Tracker That Also Counts the Calories You Eat</h3>
+                        <p>Most running apps track the calories you burn but not the ones you eat, and most calorie apps do the reverse. Here is which apps close the loop — Strava, Nike Run…</p>
+                        <div class="bi-meta"><time datetime="2026-08-17">August 17, 2026</time><span aria-hidden="true">·</span><span>10 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/en/suu-vs-strava.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-suu-vs-strava.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ App Comparisons</span>
+                        <h3>Suu vs Strava: GPS Workout Tracking, or Closing the Loop?</h3>
+                        <p>We compared Strava and Suu on live GPS workout tracking, route maps, calories burned, calories eaten and hydration. Which suits whom — and where Suu does not beat Strava.</p>
+                        <div class="bi-meta"><time datetime="2026-08-15">August 15, 2026</time><span aria-hidden="true">·</span><span>9 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/en/yazio-vs-myfitnesspal.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-yazio-vs-myfitnesspal.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ App Comparisons</span>
+                        <h3>Yazio vs MyFitnessPal: Which Calorie Counter Wins in 2026?</h3>
+                        <p>MyFitnessPal vs Yazio compared on food database size, barcode scanning, recipes, macro tracking, free plan limits and price. Which one to pick, when to switch, and…</p>
+                        <div class="bi-meta"><time datetime="2026-08-13">August 13, 2026</time><span aria-hidden="true">·</span><span>8 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/en/best-workout-tracker-app.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-best-workout-tracker-app.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ App Comparisons</span>
+                        <h3>The Best Workout Tracker App in 2026</h3>
+                        <p>We compared workout tracking apps by what they actually do with your data: Strava, Nike Run Club, Samsung Health, Apple Fitness and Suu. Which logs calories, which…</p>
+                        <div class="bi-meta"><time datetime="2026-08-13">August 13, 2026</time><span aria-hidden="true">·</span><span>7 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/en/lifesum-vs-yazio.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-lifesum-vs-yazio.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ App Comparisons</span>
+                        <h3>Lifesum vs Yazio: Which Calorie App Should You Pick?</h3>
+                        <p>Lifesum and Yazio compared on food database, recipes, macro tracking, free plan limits and price. Which suits beginners, which suits meal planners — and what…</p>
+                        <div class="bi-meta"><time datetime="2026-08-13">August 13, 2026</time><span aria-hidden="true">·</span><span>6 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/en/cronometer-vs-yazio.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-cronometer-vs-yazio.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ App Comparisons</span>
+                        <h3>Cronometer vs Yazio: Precision or Practicality?</h3>
+                        <p>Yazio vs Cronometer compared on micronutrient depth, data accuracy, recipes, free tier and daily usability. Which suits precision trackers, which suits everyday logging.</p>
+                        <div class="bi-meta"><time datetime="2026-08-13">August 13, 2026</time><span aria-hidden="true">·</span><span>6 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/en/calorie-counter-with-exercise-tracker.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-calorie-counter-with-exercise-tracker.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ App Comparisons</span>
+                        <h3>Calorie Counter With Exercise Tracker: Which Apps Connect the Two?</h3>
+                        <p>Most apps log calories and workouts separately. We compared which ones actually connect them — so the run you record changes what you need to eat and drink. Suu…</p>
+                        <div class="bi-meta"><time datetime="2026-08-13">August 13, 2026</time><span aria-hidden="true">·</span><span>8 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/en/best-photo-calorie-app.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-best-photo-calorie-app.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ App Comparisons</span>
+                        <h3>The Best Photo Calorie App: 2026 Comparison</h3>
+                        <p>We compared the apps that read calories and macros from a meal photo: Suu, Cal AI, MyFitnessPal, Yazio and Lifesum. Which suits whom, what the free limits are, and…</p>
+                        <div class="bi-meta"><time datetime="2026-08-12">August 12, 2026</time><span aria-hidden="true">·</span><span>7 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/en/suu-vs-cal-ai.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-suu-vs-cal-ai.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ App Comparisons</span>
+                        <h3>Suu vs Cal AI: Which One Fits You?</h3>
+                        <p>We compared Cal AI and Suu on photo calorie analysis, free plan limits, hydration and exercise tracking. When Cal AI is the better pick, and when Suu is.</p>
+                        <div class="bi-meta"><time datetime="2026-08-12">August 12, 2026</time><span aria-hidden="true">·</span><span>6 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/en/free-calorie-counter-app.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-free-calorie-counter-app.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ App Comparisons</span>
+                        <h3>Free Calorie Counter: The Apps That Are Genuinely Free</h3>
+                        <p>Which calorie app is genuinely free? We compared the free tiers of Suu, MyFitnessPal, Lose It!, Cronometer and FatSecret line by line: barcode, macros, exercise and…</p>
+                        <div class="bi-meta"><time datetime="2026-08-12">August 12, 2026</time><span aria-hidden="true">·</span><span>7 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/en/best-calorie-counting-app.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-best-calorie-counting-app.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ App Comparisons</span>
+                        <h3>The Best Calorie Counting App in 2026</h3>
+                        <p>We compared 2026&#39;s calorie counting apps on logging speed, database coverage, accuracy and free-tier limits: MyFitnessPal, Yazio, Lifesum, Cronometer, MacroFactor…</p>
+                        <div class="bi-meta"><time datetime="2026-07-07">July 7, 2026</time><span aria-hidden="true">·</span><span>11 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/en/suu-vs-yazio.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-suu-vs-yazio.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ App Comparisons</span>
+                        <h3>Suu vs Yazio: Which Is Better? (2026)</h3>
+                        <p>Suu vs Yazio compared for 2026. Voice logging, AI photo calories, water + calories + exercise in one app and real hydration science — vs Yazio&#39;s fasting tracker and…</p>
+                        <div class="bi-meta"><time datetime="2026-07-07">July 7, 2026</time><span aria-hidden="true">·</span><span>3 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/en/suu-vs-myfitnesspal.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-suu-vs-myfitnesspal.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ App Comparisons</span>
+                        <h3>Suu vs MyFitnessPal: Which Is Better? (2026)</h3>
+                        <p>Suu vs MyFitnessPal compared for 2026. Voice logging, AI photo calories, water + calories + exercise in one app, and a generous free tier — the best MyFitnessPal…</p>
+                        <div class="bi-meta"><time datetime="2026-07-07">July 7, 2026</time><span aria-hidden="true">·</span><span>4 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/en/water-calorie-exercise-one-app.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-water-calorie-exercise-one-app.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ App Comparisons</span>
+                        <h3>Is There an App That Tracks Water, Calories AND Exercise Together?</h3>
+                        <p>Looking for one app to track water, calories and exercise together? Why combined tracking matters, which apps do it, and how Suu solves it with voice logging, photo…</p>
+                        <div class="bi-meta"><time datetime="2026-07-07">July 7, 2026</time><span aria-hidden="true">·</span><span>4 min read</span></div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <section class="bi-sec" id="cat-suu" data-cat="suu" aria-labelledby="cat-suu-h" style="--c:#5E35B1;--bg-c:#EDE7F6">
+        <div class="bi-sec-head">
+            <div class="bi-sec-ico" aria-hidden="true">📱</div>
+            <div>
+                <h2 id="cat-suu-h">Suu: Features &amp; News <span class="n">10</span></h2>
+                <p>Suu&#39;s features and updates, the donation programme and how your data is protected.</p>
+            </div>
+        </div>
+        <div class="bi-grid">
+<article class="bi-card" style="--c:#5E35B1;--bg-c:#EDE7F6">
+                <a href="/blog/en/is-suu-safe.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-is-suu-safe.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">📱 Suu: Features &amp; News</span>
+                        <h3>Is Suu Safe? Who Is Behind It and How Your Data Is Protected</h3>
+                        <p>Who builds Suu and how is your data protected? An app from a registered company that grew inside Istanbul&#39;s BTM incubator: GDPR/KVKK, AES-256, no data sales.</p>
+                        <div class="bi-meta"><time datetime="2026-10-14">October 14, 2026</time><span aria-hidden="true">·</span><span>6 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#5E35B1;--bg-c:#EDE7F6">
+                <a href="/blog/en/should-you-build-a-tracking-app.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-should-you-build-a-tracking-app.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">📱 Suu: Features &amp; News</span>
+                        <h3>Should You Build a Tracking App in 2026?</h3>
+                        <p>Thinking of building a calorie counter, water tracker or workout app? A developer who built one maps the 2026 market: 200M-user MyFitnessPal, the Cal AI exit…</p>
+                        <div class="bi-meta"><time datetime="2026-09-14">September 14, 2026</time><span aria-hidden="true">·</span><span>11 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#5E35B1;--bg-c:#EDE7F6">
+                <a href="/blog/en/voice-calorie-logging.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-voice-calorie-logging.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">📱 Suu: Features &amp; News</span>
+                        <h3>Voice Calorie Logging: How Logging Food by Voice Works</h3>
+                        <p>Can you log calories and meals by voice? How voice food logging works, which app does it, how accurate it is and how privacy is protected. Track calories by…</p>
+                        <div class="bi-meta"><time datetime="2026-07-07">July 7, 2026</time><span aria-hidden="true">·</span><span>3 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#5E35B1;--bg-c:#EDE7F6">
+                <a href="/blog/en/simple-advanced-mode.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-simple-advanced-mode.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">📱 Suu: Features &amp; News</span>
+                        <h3>Simple vs Advanced Mode in Suu: Track Water Your Way</h3>
+                        <p>Suu now runs in two modes: a clean one-tap Simple Mode and a detailed statistics + quick-add Advanced Mode. Learn the difference, which one fits you, and how to…</p>
+                        <div class="bi-meta"><time datetime="2026-06-14">June 14, 2026</time><span aria-hidden="true">·</span><span>4 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#5E35B1;--bg-c:#EDE7F6">
+                <a href="/blog/en/pet-companion-mini-games.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-pet-companion-mini-games.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">📱 Suu: Features &amp; News</span>
+                        <h3>Suu Pet Companion: Cat/Dog + 4 Mini-Games + Dress-Up</h3>
+                        <p>Suu now has a pet companion! Pick a cat or dog and it tracks your streak. Play 4 mini-games (bubble pop, addition, subtraction, memory match), earn droplets, dress…</p>
+                        <div class="bi-meta"><time datetime="2026-05-22">May 22, 2026</time><span aria-hidden="true">·</span><span>6 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#5E35B1;--bg-c:#EDE7F6">
+                <a href="/blog/en/africa-water-well-donation-program.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-africa-water-well-donation-program.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">📱 Suu: Features &amp; News</span>
+                        <h3>Suu Premium 2% Donation Program: Transparent Water Wells in Africa</h3>
+                        <p>2% of every Suu Premium subscription is donated to clean water well projects in Africa. All receipts are public, JSON is open, git-tracked. The only water tracker…</p>
+                        <div class="bi-meta"><time datetime="2026-05-11">May 11, 2026</time><span aria-hidden="true">·</span><span>4 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#5E35B1;--bg-c:#EDE7F6">
+                <a href="/blog/en/hydration-score-explained.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-hydration-score-explained.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">📱 Suu: Features &amp; News</span>
+                        <h3>What Is a Hydration Score? How Suu Rates Your Water Intake (0-100)</h3>
+                        <p>Suu&#39;s hydration score (0-100) rates your daily water habits. Learn what it measures, how the score is calculated, and how to improve yours for better health.</p>
+                        <div class="bi-meta"><time datetime="2026-04-14">April 14, 2026</time><span aria-hidden="true">·</span><span>6 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#5E35B1;--bg-c:#EDE7F6">
+                <a href="/blog/en/siri-water-tracking.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-siri-water-tracking.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">📱 Suu: Features &amp; News</span>
+                        <h3>How to Track Water Intake with Siri (Hands-Free 2026 Guide)</h3>
+                        <p>Log water with Siri using Suu — set up custom Siri Shortcuts for hands-free hydration tracking. Works on iPhone, Apple Watch, and HomePod. Free to set up.</p>
+                        <div class="bi-meta"><time datetime="2026-04-14">April 14, 2026</time><span aria-hidden="true">·</span><span>6 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#5E35B1;--bg-c:#EDE7F6">
+                <a href="/blog/en/apple-watch-water-tracking.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-apple-watch-water-tracking.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">📱 Suu: Features &amp; News</span>
+                        <h3>Apple Watch Water Tracking: The Complete 2026 Guide</h3>
+                        <p>Suu&#39;s Apple Watch app is live: add water, log meals by voice and record GPS workouts with live heart rate from your wrist — plus how Apple Health raises your water…</p>
+                        <div class="bi-meta"><time datetime="2026-04-14">April 14, 2026</time><span aria-hidden="true">·</span><span>9 min read</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#5E35B1;--bg-c:#EDE7F6">
+                <a href="/blog/en/water-challenge-with-friends.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/en-water-challenge-with-friends.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">📱 Suu: Features &amp; News</span>
+                        <h3>Water Drinking Challenge With Friends: How Suu&#39;s Weekly League Works</h3>
+                        <p>Turn hydration into a friendly competition: a free weekly leaderboard with up to 4 friends, private leagues with Premium, friend progress tracking, and nudges.</p>
+                        <div class="bi-meta"><time datetime="2026-04-07">April 7, 2026</time><span aria-hidden="true">·</span><span>5 min read</span></div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <div class="bi-empty" id="bi-empty" hidden>
+        <p>No articles match your search.</p>
+        <button type="button" id="bi-reset">Clear search</button>
     </div>
 
     <div class="cta-banner">
-        <h2>Start Tracking Your Water Today</h2>
-        <p>Suu turns these tips into daily habits — personalized goals, smart reminders, and friend leagues. Free on iOS and Android.</p>
+        <h2>Turn what you read into a daily habit</h2>
+        <p>Suu tracks water, calories and exercise in one app. Free on iOS and Android.</p>
         <div class="cta-btns">
-            <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" class="cta-btn" target="_blank" rel="noopener">
-                <i class="fab fa-apple"></i> App Store
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro" class="cta-btn" target="_blank" rel="noopener">
-                <i class="fab fa-google-play"></i> Google Play
-            </a>
+            <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" class="cta-btn" target="_blank" rel="noopener"><i class="fab fa-apple"></i> App Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro" class="cta-btn" target="_blank" rel="noopener"><i class="fab fa-google-play"></i> Google Play</a>
         </div>
     </div>
-</div>
+</main>
+
+<footer class="bi-foot">
+    <div class="bi-foot-in">
+        <nav aria-label="Suu">
+            <a href="comparisons.html">Comparisons</a>
+            <a href="glossary.html">Glossary</a>
+            <a href="faq-en.html">FAQ</a>
+            <a href="/hosgeldiniz-en.html">Home</a>
+            <a href="/feed-en.xml">RSS feed</a>
+            <a href="/llms-en.txt">Summary for AI assistants (llms.txt)</a>
+        </nav>
+        <span>© 2026 Suu</span>
+    </div>
+</footer>
+
+<script>
+(function () {
+    'use strict';
+    var LANG = document.documentElement.lang || 'en';
+    var q = document.getElementById('bi-q');
+    var clearBtn = document.getElementById('bi-clear');
+    var status = document.getElementById('bi-status');
+    var empty = document.getElementById('bi-empty');
+    var latest = document.getElementById('latest');
+    var chips = [].slice.call(document.querySelectorAll('.bi-chip'));
+    var secs = [].slice.call(document.querySelectorAll('.bi-sec[data-cat]'));
+    var RESULTS = "Matching articles: {n}";
+    var state = { cat: 'all', q: '' };
+
+    // Case/diacritic-insensitive matching (ı/i, ç/c, ş/s, Arabic hamza/taa marbuta …)
+    function norm(s) {
+        return (s || '').toLocaleLowerCase(LANG).normalize('NFD')
+            .replace(/[̀-ًͯ-ٰٟـ]/g, '')
+            .replace(/ı/g, 'i').replace(/[أإآ]/g, 'ا').replace(/ة/g, 'ه').replace(/ى/g, 'ي').replace(/ё/g, 'е');
+    }
+    secs.forEach(function (s) {
+        // Title + summary only: the category tag would make "coffee" match every drinks card.
+        [].forEach.call(s.querySelectorAll('.bi-card'), function (c) {
+            c._t = norm(c.querySelector('h3').textContent + ' ' + c.querySelector('p').textContent);
+        });
+    });
+
+    function apply(scroll) {
+        var toks = norm(state.q).split(/\s+/).filter(Boolean);
+        var shown = 0;
+        secs.forEach(function (s) {
+            var catOk = state.cat === 'all' || s.getAttribute('data-cat') === state.cat;
+            var n = 0;
+            [].forEach.call(s.querySelectorAll('.bi-card'), function (c) {
+                var ok = catOk && toks.every(function (t) { return c._t.indexOf(t) !== -1; });
+                c.hidden = !ok;
+                if (ok) n++;
+            });
+            s.hidden = n === 0;
+            shown += n;
+        });
+        latest.hidden = state.cat !== 'all' || toks.length > 0;
+        empty.hidden = shown > 0;
+        clearBtn.hidden = !state.q;
+        status.textContent = toks.length ? RESULTS.replace('{n}', shown) : '';
+        chips.forEach(function (ch) {
+            ch.setAttribute('aria-current', ch.getAttribute('data-cat') === state.cat ? 'true' : 'false');
+        });
+        if (scroll) {
+            var top = document.getElementById('top').getBoundingClientRect().top + window.pageYOffset - 130;
+            if (window.pageYOffset > top) window.scrollTo(0, Math.max(0, top));
+        }
+    }
+
+    chips.forEach(function (ch) {
+        ch.addEventListener('click', function (e) {
+            e.preventDefault();
+            state.cat = ch.getAttribute('data-cat');
+            var sec = state.cat === 'all' ? null : document.querySelector('.bi-sec[data-cat="' + state.cat + '"]');
+            try { history.replaceState(null, '', sec ? '#' + sec.id : location.pathname); } catch (err) {}
+            apply(true);
+            ch.scrollIntoView({ block: 'nearest', inline: 'center' });
+        });
+    });
+    q.addEventListener('input', function () { state.q = q.value; apply(false); });
+    function reset() { q.value = ''; state.q = ''; state.cat = 'all'; apply(true); q.focus(); }
+    clearBtn.addEventListener('click', reset);
+    document.getElementById('bi-reset').addEventListener('click', reset);
+
+    // A shared link like blog.html#cat-calories opens that category filtered.
+    var h = location.hash.slice(1);
+    var target = h && document.querySelector('.bi-sec[data-cat][id="' + h.replace(/"/g, '') + '"]');
+    if (target) { state.cat = target.getAttribute('data-cat'); apply(false); }
+})();
+</script>
 
 <script src="lang-switcher.js?v=3" defer></script>
 <link rel="stylesheet" href="donation-widget.css?v=6">

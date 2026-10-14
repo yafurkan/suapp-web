@@ -2,6 +2,10 @@
 """
 Suu — yeni bir dil için blog indeksi kabuğu üret
 
+NOT (2026-10-14): indeksler artık scripts/build-blog-index.py ile üretiliyor.
+Yeni dil için content/blog-index.json → copy.<lang> ekleyip o script'i çalıştır;
+bu script yalnızca eski elle bakılan düzen için kaldı.
+
 Blog indeksleri (blog.html, blog-en.html …) ELLE bakılan dosyalar; kartları
 sync-blog-index.py, Blog.blogPost şemasını sync-blog-schema.py dolduruyor.
 Bu script yalnızca ilk kabuğu kuruyor: blog-en.html'i klonlar, kart gridini

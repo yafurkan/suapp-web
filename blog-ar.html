@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
+    <!-- ÜRETİLMİŞ DOSYA — kaynak: scripts/build-blog-index.py + content/blog-index.json + content/blog-index.html.j2. Elle düzenlemeyin. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ماذا يحدث لجسمك عندما لا تشرب كمية كافية من الماء؟ | مدونة Suu</title>
-    <meta name="description" content="الآثار الخفية للجفاف، فوائد الماء المذهلة، وحقائق علمية ستغيّر نظرتك للترطيب. اكتشف كل ذلك هنا.">
-    <meta name="keywords" content="نصائح الترطيب, كمية الماء اليومية, علامات الجفاف, عادة شرب الماء, ترطيب الرياضة">
+    <title>مدونة Suu — أدلة السعرات والرياضة وشرب الماء</title>
+    <meta name="description" content="أدلة مبنية على مصادر علمية حول العجز الحراري والمغذيات الكبرى والرياضة والترطيب والقهوة والشاي، مع مقارنات صادقة بين التطبيقات. تصفّح حسب التصنيف أو ابحث.">
 
     <!-- Smart App Banner -->
     <meta name="apple-itunes-app" content="app-id=6757619920">
@@ -22,13 +22,12 @@
     <link rel="alternate" hreflang="x-default" href="https://suuapp.com/blog-en.html">
 
 
-    <link rel="alternate" type="text/plain" href="/llms-ar.txt" title="Suu — مرجع مختصر لمساعدي الذكاء الاصطناعي">
-    <link rel="alternate" type="text/plain" href="/llms-full-ar.txt" title="Suu — المرجع الكامل لمساعدي الذكاء الاصطناعي">
-
+    <link rel="alternate" type="text/plain" href="/llms-ar.txt" title="Suu — compact reference for AI assistants">
+    <link rel="alternate" type="text/plain" href="/llms-full-ar.txt" title="Suu — full reference corpus for AI assistants">
     <link rel="alternate" type="application/rss+xml" title="مدونة Suu" href="/feed-ar.xml">
 
-    <meta property="og:title" content="ماذا يحدث لجسمك عندما لا تشرب كمية كافية من الماء؟">
-    <meta property="og:description" content="الآثار الخفية للجفاف، فوائد الماء المذهلة، وحقائق علمية ستغيّر نظرتك للترطيب.">
+    <meta property="og:title" content="مدونة Suu — أدلة السعرات والرياضة وشرب الماء">
+    <meta property="og:description" content="أدلة علمية عن السعرات والرياضة والترطيب ومقارنات صادقة بين التطبيقات — مرتّبة حسب التصنيف.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://suuapp.com/blog-ar.html">
     <meta property="og:image" content="https://suuapp.com/assets/og-image.png">
@@ -38,8 +37,8 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@SuuTakip">
-    <meta name="twitter:title" content="ماذا يحدث لجسمك عندما لا تشرب كمية كافية من الماء؟">
-    <meta name="twitter:description" content="الآثار الخفية للجفاف، فوائد الماء المذهلة، وحقائق علمية ستغيّر نظرتك للترطيب.">
+    <meta name="twitter:title" content="مدونة Suu — أدلة السعرات والرياضة وشرب الماء">
+    <meta name="twitter:description" content="أدلة علمية عن السعرات والرياضة والترطيب ومقارنات صادقة بين التطبيقات — مرتّبة حسب التصنيف.">
     <meta name="twitter:image" content="https://suuapp.com/assets/og-image.png">
 
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data:; img-src 'self' https: data:; font-src 'self' https: data:;">
@@ -48,58 +47,144 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Noto Sans Arabic', sans-serif; color: #333; background: #f8f9fa; direction: rtl; }
-        .blog-nav { background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
-        .nav-content { max-width: 1100px; margin: 0 auto; padding: 0 24px; height: 64px; display: flex; align-items: center; justify-content: space-between; }
-        .blog-logo { display: flex; align-items: center; gap: 8px; font-size: 1.4rem; font-weight: 700; color: #4A90D9; text-decoration: none; }
-        .nav-right { display: flex; align-items: center; gap: 16px; direction: ltr; }
-        .back-btn { background: #4A90D9; color: white; padding: 8px 18px; border-radius: 8px; text-decoration: none; font-weight: 500; font-size: 14px; transition: all 0.2s; }
-        .back-btn:hover { background: #3a7bc8; }
-        .hamburger { display: none; }
+        :root { --ink:#111827; --ink-2:#374151; --muted:#6b7280; --line:#e5e9f0; --bg:#f5f7fb; --card:#fff; --brand:#4A90D9; --brand-2:#29B6F6; --nav-h:64px; }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        [hidden] { display:none !important; }
+        html { scroll-behavior:smooth; }
+        body { font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; color:var(--ink-2); background:var(--bg); line-height:1.55; -webkit-font-smoothing:antialiased; }
+        a { color:inherit; }
 
-        .blog-header { background: linear-gradient(135deg, #4A90D9 0%, #29B6F6 100%); color: white; padding: 60px 20px 40px; text-align: center; }
-        .blog-header h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 800; margin-bottom: 10px; }
-        .blog-header p { font-size: 1rem; opacity: 0.9; }
+        /* Nav */
+        .blog-nav { background:#fff; border-bottom:1px solid var(--line); position:sticky; top:0; z-index:100; }
+        .nav-content { max-width:1180px; margin:0 auto; padding:0 20px; height:var(--nav-h); display:flex; align-items:center; justify-content:space-between; gap:12px; }
+        .blog-logo { display:flex; align-items:center; gap:8px; font-size:1.35rem; font-weight:800; color:var(--brand); text-decoration:none; flex:none; }
+        .nav-right { display:flex; align-items:center; gap:8px; min-width:0; }
+        .nav-btn { display:inline-flex; align-items:center; gap:7px; padding:8px 12px; border-radius:10px; text-decoration:none; font-size:14px; font-weight:600; color:var(--ink-2); white-space:nowrap; transition:background .15s, color .15s; }
+        .nav-btn:hover { background:#eef4fc; color:var(--brand); }
+        .nav-btn i { color:var(--brand); font-size:13px; }
 
-        .container { max-width: 1100px; margin: 0 auto; padding: 50px 24px 80px; }
-        .articles-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 28px; }
-        .article-card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: transform 0.2s, box-shadow 0.2s; }
-        .article-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.12); }
-        .article-thumb { height: 160px; display: flex; align-items: center; justify-content: center; font-size: 3rem; }
-        .article-body { padding: 20px 22px; }
-        .article-tag { font-size: 11px; font-weight: 700; color: #4A90D9; margin-bottom: 8px; }
-        .article-body h3 { font-size: 1rem; font-weight: 700; color: #1a1a2e; margin-bottom: 10px; line-height: 1.6; }
-        .article-body p { font-size: 0.875rem; color: #666; margin-bottom: 16px; line-height: 1.7; }
-        .read-more { display: inline-flex; align-items: center; gap: 6px; color: #4A90D9; font-size: 13px; font-weight: 600; text-decoration: none; }
-        .read-more:hover { text-decoration: underline; }
+        /* Hero */
+        .bi-hero { background:radial-gradient(1200px 400px at 85% -10%, rgba(255,255,255,.18), transparent 60%), linear-gradient(135deg,#2f6fd0 0%,var(--brand) 45%,var(--brand-2) 100%); color:#fff; padding:52px 20px 40px; }
+        .bi-hero-in { max-width:820px; margin:0 auto; text-align:center; }
+        .bi-hero h1 { font-size:clamp(2rem,5vw,2.9rem); font-weight:800; letter-spacing:-.02em; line-height:1.1; }
+        .bi-lead { margin:12px auto 0; max-width:640px; font-size:clamp(1rem,2.2vw,1.12rem); opacity:.95; }
+        .bi-search { position:relative; margin:26px auto 0; max-width:620px; }
+        .bi-search input { width:100%; height:56px; border:0; border-radius:16px; padding:0 52px; font:inherit; font-size:16px; color:var(--ink); background:#fff; box-shadow:0 12px 32px rgba(10,40,90,.22); }
+        .bi-search input:focus { outline:3px solid rgba(255,255,255,.75); outline-offset:3px; }
+        .bi-search .bi-ico { position:absolute; inset-inline-start:19px; top:50%; transform:translateY(-50%); color:#9aa6b8; font-size:17px; pointer-events:none; }
+        .bi-search button { position:absolute; inset-inline-end:10px; top:50%; transform:translateY(-50%); width:36px; height:36px; border:0; border-radius:10px; background:#f1f4f9; color:var(--muted); cursor:pointer; font-size:15px; }
+        .bi-stats { list-style:none; display:flex; flex-wrap:wrap; justify-content:center; gap:8px 22px; margin-top:20px; font-size:14px; opacity:.95; }
+        .bi-stats strong { font-weight:800; }
+        .bi-stats li { display:inline-flex; align-items:center; gap:6px; }
 
-        .cta-banner { background: linear-gradient(135deg, #4A90D9, #29B6F6); color: white; border-radius: 20px; padding: 40px; text-align: center; margin-top: 60px; }
-        .cta-banner h2 { font-size: 1.6rem; font-weight: 800; margin-bottom: 10px; }
-        .cta-banner p { opacity: 0.9; margin-bottom: 24px; }
-        .cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; direction: ltr; }
-        .cta-btn { background: white; color: #4A90D9; padding: 11px 24px; border-radius: 50px; font-weight: 700; text-decoration: none; font-size: 14px; display: inline-flex; align-items: center; gap: 8px; transition: transform 0.2s; }
-        .cta-btn:hover { transform: translateY(-2px); }
+        /* Category bar */
+        .bi-chips { position:sticky; top:var(--nav-h); z-index:90; background:rgba(255,255,255,.96); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
+        .bi-chips-in { max-width:1180px; margin:0 auto; padding:10px 20px; display:flex; gap:8px; overflow-x:auto; scrollbar-width:none; }
+        .bi-chips-in::-webkit-scrollbar { display:none; }
+        .bi-chip { --c:var(--ink); flex:none; display:inline-flex; align-items:center; gap:7px; padding:8px 14px; border-radius:999px; border:1px solid var(--line); background:#fff; color:var(--ink-2); text-decoration:none; font-size:14px; font-weight:600; white-space:nowrap; transition:background .15s, border-color .15s, color .15s; }
+        .bi-chip:hover { border-color:var(--c); color:var(--c); }
+        .bi-chip .n { font-size:12px; font-weight:700; color:var(--muted); background:#f1f4f9; border-radius:999px; padding:1px 8px; }
+        .bi-chip[aria-current="true"] { background:var(--c); border-color:var(--c); color:#fff; }
+        .bi-chip[aria-current="true"] .n { background:rgba(255,255,255,.22); color:#fff; }
 
-        @media (max-width: 600px) { .articles-grid { grid-template-columns: 1fr; } }
+        /* Layout */
+        .bi-main { max-width:1180px; margin:0 auto; padding:30px 20px 72px; }
+        .bi-status { font-size:14px; font-weight:600; color:var(--muted); margin-bottom:6px; }
+        .bi-status:empty { display:none; }
+        .bi-sec { margin-top:34px; scroll-margin-top:calc(var(--nav-h) + 70px); }
+        .bi-main > .bi-sec:first-of-type, .bi-status + .bi-sec:not([hidden]) { margin-top:0; }
+        .bi-sec-head { display:flex; align-items:flex-start; gap:14px; margin-bottom:18px; }
+        .bi-sec-ico { flex:none; width:46px; height:46px; border-radius:14px; display:grid; place-items:center; font-size:22px; background:var(--bg-c,#eef4fc); }
+        .bi-sec-head h2 { font-size:clamp(1.25rem,2.6vw,1.5rem); font-weight:800; color:var(--ink); letter-spacing:-.01em; display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+        .bi-sec-head h2 .n { font-size:13px; font-weight:700; color:var(--c,#4A90D9); background:var(--bg-c,#eef4fc); border-radius:999px; padding:2px 10px; }
+        .bi-sec-head p { color:var(--muted); font-size:.95rem; margin-top:3px; }
+        .bi-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(270px,1fr)); gap:22px; }
+        .bi-latest .bi-grid { grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); }
+
+        /* Card */
+        .bi-card { background:var(--card); border:1px solid var(--line); border-radius:18px; overflow:hidden; transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
+        .bi-card:hover { transform:translateY(-3px); box-shadow:0 14px 34px rgba(17,24,39,.10); border-color:#d6deea; }
+        .bi-card a { display:flex; flex-direction:column; height:100%; text-decoration:none; color:inherit; }
+        .bi-card a:focus-visible { outline:3px solid var(--brand); outline-offset:-3px; border-radius:18px; }
+        .bi-thumb { aspect-ratio:1200/630; background:var(--bg-c,#eef4fc); overflow:hidden; }
+        .bi-thumb img { width:100%; height:100%; object-fit:cover; display:block; }
+        .bi-body { padding:15px 18px 18px; display:flex; flex-direction:column; gap:7px; flex:1; }
+        .bi-tag { align-self:flex-start; font-size:11.5px; font-weight:700; color:var(--c,#4A90D9); background:var(--bg-c,#eef4fc); border-radius:999px; padding:3px 10px; }
+        .bi-card h3 { font-size:1.02rem; line-height:1.4; font-weight:700; color:var(--ink); display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
+        .bi-card p { font-size:.9rem; color:var(--muted); display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
+        .bi-meta { margin-top:auto; padding-top:6px; font-size:.8rem; color:#8a94a6; display:flex; flex-wrap:wrap; gap:4px 10px; }
+
+        /* Empty + CTA + footer */
+        .bi-empty { text-align:center; padding:56px 20px; color:var(--muted); }
+        .bi-empty p { font-size:1.05rem; margin-bottom:14px; }
+        .bi-empty button { border:1px solid var(--line); background:#fff; border-radius:12px; padding:10px 18px; font:inherit; font-weight:600; color:var(--brand); cursor:pointer; }
+        .cta-banner { background:linear-gradient(135deg,var(--brand),var(--brand-2)); color:#fff; border-radius:22px; padding:38px 24px; text-align:center; margin-top:64px; }
+        .cta-banner h2 { font-size:clamp(1.3rem,3vw,1.6rem); font-weight:800; margin-bottom:8px; }
+        .cta-banner p { opacity:.95; margin-bottom:22px; }
+        .cta-btns { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+        .cta-btn { background:#fff; color:var(--brand); padding:11px 24px; border-radius:50px; font-weight:700; text-decoration:none; font-size:14px; display:inline-flex; align-items:center; gap:8px; transition:transform .15s; }
+        .cta-btn:hover { transform:translateY(-2px); }
+        .bi-foot { border-top:1px solid var(--line); background:#fff; }
+        .bi-foot-in { max-width:1180px; margin:0 auto; padding:24px 20px; display:flex; flex-wrap:wrap; justify-content:space-between; gap:10px 20px; font-size:14px; color:var(--muted); }
+        .bi-foot nav { display:flex; flex-wrap:wrap; gap:8px 18px; }
+        .bi-foot a { text-decoration:none; color:var(--ink-2); }
+        .bi-foot a:hover { color:var(--brand); }
+
+        /* Sticky mobile download bar (styles.css is not loaded on blog pages) */
+        .sticky-download-bar { display:none; position:fixed; bottom:0; left:0; right:0; z-index:9999; background:rgba(255,255,255,.97); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); padding:10px 12px; padding-bottom:calc(10px + env(safe-area-inset-bottom,0px)); box-shadow:0 -2px 16px rgba(0,0,0,.12); gap:8px; justify-content:center; }
+        .sticky-btn { flex:1; display:flex; align-items:center; justify-content:center; gap:8px; padding:13px 14px; border-radius:12px; text-decoration:none; font-weight:600; font-size:14px; min-height:48px; max-width:200px; }
+        .sticky-btn-apple { background:#000; color:#fff; }
+        .sticky-btn-google { background:#01875f; color:#fff; }
+
+        @media (max-width:768px) {
+            .sticky-download-bar { display:flex; }
+            body { padding-bottom:72px; }
+        }
+        @media (max-width:720px) {
+            .nav-btn span { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+            .nav-btn { padding:9px; }
+            .bi-hero { padding:38px 16px 30px; }
+            .bi-main { padding:22px 16px 60px; }
+            .bi-chips-in { padding:10px 16px; }
+            .bi-grid, .bi-latest .bi-grid { grid-template-columns:1fr; gap:12px; }
+            /* Compact list rows on phones: 60 full-width cover images would be an endless scroll */
+            .bi-card { border-radius:14px; }
+            .bi-card a { flex-direction:row; align-items:flex-start; gap:12px; padding:12px; }
+            .bi-thumb { flex:none; width:112px; border-radius:10px; }
+            .bi-body { padding:0; gap:5px; min-width:0; }
+            .bi-card h3 { font-size:.95rem; }
+            .bi-card p { font-size:.84rem; -webkit-line-clamp:2; }
+            .bi-meta { padding-top:2px; font-size:.76rem; }
+            .bi-latest .bi-card:first-child a { flex-direction:column; padding:0; gap:0; }
+            .bi-latest .bi-card:first-child .bi-thumb { width:100%; border-radius:0; }
+            .bi-latest .bi-card:first-child .bi-body { padding:14px 16px 16px; gap:7px; }
+            .bi-latest .bi-card:first-child h3 { font-size:1.05rem; }
+            .bi-sec { margin-top:28px; }
+            .bi-sec-head { gap:12px; margin-bottom:14px; }
+            .bi-sec-ico { width:40px; height:40px; font-size:19px; border-radius:12px; }
+        }
+        @media (prefers-reduced-motion:reduce) {
+            html { scroll-behavior:auto; }
+            .bi-card, .bi-card:hover { transition:none; transform:none; }
+        }
     </style>
 
-    <!-- Schema.org: Blog + BreadcrumbList (GEO / AI search optimization) -->
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Blog",
   "@id": "https://suuapp.com/blog-ar.html#blog",
   "url": "https://suuapp.com/blog-ar.html",
-  "name": "مدونة Suu — الترطيب والكافيين وحياة صحية",
-  "description": "مقالات علمية حول الترطيب، الجفاف، تتبع الكافيين، شرب الماء حسب النشاط البدني، Apple Watch، ودرجة الترطيب.",
+  "name": "مدونة Suu — السعرات والرياضة والترطيب",
+  "description": "أدلة مبنية على مصادر علمية حول العجز الحراري والمغذيات الكبرى والرياضة والترطيب والقهوة والشاي، مع مقارنات صادقة بين التطبيقات. تصفّح حسب التصنيف أو ابحث.",
   "inLanguage": "ar",
   "publisher": {
     "@type": "Organization",
@@ -111,25 +196,10 @@
       "url": "https://suuapp.com/assets/og-image.png"
     }
   },
-  "author": {
-    "@type": "Person",
-    "@id": "https://suuapp.com/#furkan",
-    "name": "Furkan Mert Fındıklı",
-    "url": "https://www.linkedin.com/in/furkanfindikli/"
-  },
   "blogPost": [
     {
       "@type": "BlogPosting",
-      "headline": "Cronometer أم Lifesum (2026): أيهما أفضل؟",
-      "url": "https://suuapp.com/blog/ar/cronometer-vs-lifesum.html",
-      "datePublished": "2026-10-14",
-      "dateModified": "2026-10-14",
-      "inLanguage": "ar",
-      "image": "https://suuapp.com/assets/og/blog/ar-cronometer-vs-lifesum.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "هل تطبيق Suu آمن؟ الشركة وأمان البيانات والخصوصية",
+      "headline": "هل تطبيق Suu آمن؟ من يقف وراءه وكيف تُحمى بياناتك",
       "url": "https://suuapp.com/blog/ar/hal-tatbiq-suu-amin.html",
       "datePublished": "2026-10-14",
       "dateModified": "2026-10-14",
@@ -138,7 +208,7 @@
     },
     {
       "@type": "BlogPosting",
-      "headline": "Lifesum أم MyFitnessPal (2026): أيهما أفضل؟",
+      "headline": "Lifesum أم MyFitnessPal: أي تطبيق لحساب السعرات تختار؟",
       "url": "https://suuapp.com/blog/ar/lifesum-vs-myfitnesspal.html",
       "datePublished": "2026-10-14",
       "dateModified": "2026-10-14",
@@ -147,7 +217,25 @@
     },
     {
       "@type": "BlogPosting",
-      "headline": "المشي أم الجري لإنقاص الوزن؟ أيهما أفضل",
+      "headline": "Cronometer أم Lifesum: أي تطبيق لحساب السعرات تختار؟",
+      "url": "https://suuapp.com/blog/ar/cronometer-vs-lifesum.html",
+      "datePublished": "2026-10-14",
+      "dateModified": "2026-10-14",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-cronometer-vs-lifesum.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "بدأت الرياضة فلماذا زاد وزني؟",
+      "url": "https://suuapp.com/blog/ar/ziyadat-alwazn-baad-arriyada.html",
+      "datePublished": "2026-10-13",
+      "dateModified": "2026-10-13",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-ziyadat-alwazn-baad-arriyada.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "المشي أم الجري لإنقاص الوزن؟",
       "url": "https://suuapp.com/blog/ar/almashi-am-aljary.html",
       "datePublished": "2026-10-13",
       "dateModified": "2026-10-13",
@@ -165,66 +253,12 @@
     },
     {
       "@type": "BlogPosting",
-      "headline": "زاد وزني بعد بدء الرياضة: 4 أسباب وماذا أفعل",
-      "url": "https://suuapp.com/blog/ar/ziyadat-alwazn-baad-arriyada.html",
-      "datePublished": "2026-10-13",
-      "dateModified": "2026-10-13",
-      "inLanguage": "ar",
-      "image": "https://suuapp.com/assets/og/blog/ar-ziyadat-alwazn-baad-arriyada.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "أفضل بدائل Yazio في 2026: مقارنة 5 تطبيقات",
+      "headline": "أفضل بدائل Yazio في 2026: أيّها يناسبك؟",
       "url": "https://suuapp.com/blog/ar/badail-yazio.html",
       "datePublished": "2026-10-03",
       "dateModified": "2026-10-03",
       "inLanguage": "ar",
-      "image": "https://suuapp.com/assets/og-image.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "كيف أترك المشروبات الغازية؟ خطة 4 أسابيع",
-      "url": "https://suuapp.com/blog/ar/tark-almashroobat-alghaziya.html",
-      "datePublished": "2026-09-27",
-      "dateModified": "2026-09-27",
-      "inLanguage": "ar",
-      "image": "https://suuapp.com/assets/og/blog/ar-tark-almashroobat-alghaziya.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "الكسل عن الرياضة: 7 طرق لتبدأ رغم ذلك",
-      "url": "https://suuapp.com/blog/ar/alkasal-an-arriyada.html",
-      "datePublished": "2026-09-27",
-      "dateModified": "2026-09-27",
-      "inLanguage": "ar",
-      "image": "https://suuapp.com/assets/og/blog/ar-alkasal-an-arriyada.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "حساب السعرات ممل؟ 7 طرق للاستمرار دون توقف",
-      "url": "https://suuapp.com/blog/ar/malal-hisab-al-suerat.html",
-      "datePublished": "2026-09-27",
-      "dateModified": "2026-09-27",
-      "inLanguage": "ar",
-      "image": "https://suuapp.com/assets/og/blog/ar-malal-hisab-al-suerat.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "كيف أتوقف عن الأكل ليلًا؟ 7 حلول عملية",
-      "url": "https://suuapp.com/blog/ar/al-akl-laylan.html",
-      "datePublished": "2026-09-27",
-      "dateModified": "2026-09-27",
-      "inLanguage": "ar",
-      "image": "https://suuapp.com/assets/og/blog/ar-al-akl-laylan.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "لماذا أشعر بالتعب دائمًا؟ 8 أسباب ومتى تراجع الطبيب",
-      "url": "https://suuapp.com/blog/ar/limadha-ashur-bitaab-daiman.html",
-      "datePublished": "2026-09-27",
-      "dateModified": "2026-09-27",
-      "inLanguage": "ar",
-      "image": "https://suuapp.com/assets/og/blog/ar-limadha-ashur-bitaab-daiman.png"
+      "image": "https://suuapp.com/assets/og/blog/ar-badail-yazio.png"
     },
     {
       "@type": "BlogPosting",
@@ -237,66 +271,111 @@
     },
     {
       "@type": "BlogPosting",
-      "headline": "هل يستحق بناء تطبيق لحساب السعرات أو تتبع الماء في 2026؟ واقع السوق",
+      "headline": "لماذا أشعر بالتعب دائمًا؟ أشيع 8 أسباب",
+      "url": "https://suuapp.com/blog/ar/limadha-ashur-bitaab-daiman.html",
+      "datePublished": "2026-09-27",
+      "dateModified": "2026-09-27",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-limadha-ashur-bitaab-daiman.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "كيف أتوقف عن الأكل ليلًا؟ 7 حلول عملية",
+      "url": "https://suuapp.com/blog/ar/al-akl-laylan.html",
+      "datePublished": "2026-09-27",
+      "dateModified": "2026-09-27",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-al-akl-laylan.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "كيف أترك المشروبات الغازية؟ خطة تدريجية لأربعة أسابيع",
+      "url": "https://suuapp.com/blog/ar/tark-almashroobat-alghaziya.html",
+      "datePublished": "2026-09-27",
+      "dateModified": "2026-09-27",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-tark-almashroobat-alghaziya.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "أشعر بالكسل عن الرياضة: 7 طرق لتبدأ رغم ذلك",
+      "url": "https://suuapp.com/blog/ar/alkasal-an-arriyada.html",
+      "datePublished": "2026-09-27",
+      "dateModified": "2026-09-27",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-alkasal-an-arriyada.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "أتوقف دائمًا عن حساب السعرات: 7 طرق للاستمرار",
+      "url": "https://suuapp.com/blog/ar/malal-hisab-al-suerat.html",
+      "datePublished": "2026-09-27",
+      "dateModified": "2026-09-27",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-malal-hisab-al-suerat.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "هل يستحق بناء تطبيق تتبع في 2026؟",
       "url": "https://suuapp.com/blog/ar/hal-yastahiq-bina-tatbiq-tatabbu.html",
       "datePublished": "2026-09-14",
       "dateModified": "2026-09-14",
       "inLanguage": "ar",
-      "image": "https://suuapp.com/assets/og-image.png"
+      "image": "https://suuapp.com/assets/og/blog/ar-hal-yastahiq-bina-tatbiq-tatabbu.png"
     },
     {
       "@type": "BlogPosting",
-      "headline": "أفضل تطبيق لتتبع التمارين 2026 — Strava وNike Run Club وSuu",
+      "headline": "أفضل تطبيق لتتبع التمارين في 2026",
       "url": "https://suuapp.com/blog/ar/afdal-tatbiq-tamarin.html",
-      "datePublished": "2026-08-13",
-      "dateModified": "2026-08-24",
+      "datePublished": "2026-08-24",
+      "dateModified": "2026-09-14",
       "inLanguage": "ar",
-      "image": "https://suuapp.com/assets/og-image.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "أفضل تطبيق لحساب السعرات الحرارية 2026: Suu مقابل MyFitnessPal وYazio وLifesum وCronometer",
-      "url": "https://suuapp.com/blog/ar/afdal-tatbiq-hisab-suerat.html",
-      "datePublished": "2026-07-07",
-      "dateModified": "2026-07-07",
-      "inLanguage": "ar",
-      "image": "https://suuapp.com/assets/og/blog/ar-afdal-tatbiq-hisab-suerat.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Suu مقابل MyFitnessPal: أيّهما أفضل؟ (مقارنة 2026)",
-      "url": "https://suuapp.com/blog/ar/suu-vs-myfitnesspal.html",
-      "datePublished": "2026-07-07",
-      "dateModified": "2026-07-07",
-      "inLanguage": "ar",
-      "image": "https://suuapp.com/assets/og/blog/ar-suu-vs-myfitnesspal.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Suu مقابل Yazio: أيّهما أفضل؟ (مقارنة 2026)",
-      "url": "https://suuapp.com/blog/ar/suu-vs-yazio.html",
-      "datePublished": "2026-07-07",
-      "dateModified": "2026-07-07",
-      "inLanguage": "ar",
-      "image": "https://suuapp.com/assets/og/blog/ar-suu-vs-yazio.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "تسجيل السعرات بالصوت: كيف يعمل إدخال الوجبات بالكلام؟",
-      "url": "https://suuapp.com/blog/ar/tasjil-suerat-bil-sawt.html",
-      "datePublished": "2026-07-07",
-      "dateModified": "2026-07-07",
-      "inLanguage": "ar",
-      "image": "https://suuapp.com/assets/og/blog/ar-tasjil-suerat-bil-sawt.png"
+      "image": "https://suuapp.com/assets/og/blog/ar-afdal-tatbiq-tamarin.png"
     },
     {
       "@type": "BlogPosting",
       "headline": "هل يوجد تطبيق يتتبّع الماء والسعرات والتمارين معًا؟",
       "url": "https://suuapp.com/blog/ar/tatbiq-wahid-mae-suerat-tamarin.html",
       "datePublished": "2026-07-07",
-      "dateModified": "2026-07-07",
+      "dateModified": "2026-09-29",
       "inLanguage": "ar",
       "image": "https://suuapp.com/assets/og/blog/ar-tatbiq-wahid-mae-suerat-tamarin.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "تسجيل السعرات بالصوت: كيف يعمل إدخال الوجبات بالكلام؟",
+      "url": "https://suuapp.com/blog/ar/tasjil-suerat-bil-sawt.html",
+      "datePublished": "2026-07-07",
+      "dateModified": "2026-09-29",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-tasjil-suerat-bil-sawt.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "أفضل تطبيق لحساب السعرات الحرارية 2026: Suu مقابل MyFitnessPal وYazio وLifesum وCronometer",
+      "url": "https://suuapp.com/blog/ar/afdal-tatbiq-hisab-suerat.html",
+      "datePublished": "2026-07-07",
+      "dateModified": "2026-10-03",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-afdal-tatbiq-hisab-suerat.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Suu مقابل Yazio: أيّهما أفضل؟ (2026)",
+      "url": "https://suuapp.com/blog/ar/suu-vs-yazio.html",
+      "datePublished": "2026-07-07",
+      "dateModified": "2026-10-03",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-suu-vs-yazio.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Suu مقابل MyFitnessPal: أيّهما أفضل؟ (2026)",
+      "url": "https://suuapp.com/blog/ar/suu-vs-myfitnesspal.html",
+      "datePublished": "2026-07-07",
+      "dateModified": "2026-09-29",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-suu-vs-myfitnesspal.png"
     },
     {
       "@type": "BlogPosting",
@@ -305,25 +384,7 @@
       "datePublished": "2026-07-03",
       "dateModified": "2026-07-03",
       "inLanguage": "ar",
-      "image": "https://suuapp.com/assets/og-image.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "حساب الماكروز: كيف تحسب البروتين والكربوهيدرات والدهون؟",
-      "url": "https://suuapp.com/blog/ar/hisab-al-macro.html",
-      "datePublished": "2026-07-03",
-      "dateModified": "2026-07-03",
-      "inLanguage": "ar",
-      "image": "https://suuapp.com/assets/og-image.png"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "حساب السعرات بالصورة: تتبع التغذية بالذكاء الاصطناعي",
-      "url": "https://suuapp.com/blog/ar/hisab-al-suerat-bil-sura.html",
-      "datePublished": "2026-07-03",
-      "dateModified": "2026-07-03",
-      "inLanguage": "ar",
-      "image": "https://suuapp.com/assets/og-image.png"
+      "image": "https://suuapp.com/assets/og/blog/ar-al-ajz-al-harari.png"
     },
     {
       "@type": "BlogPosting",
@@ -332,7 +393,25 @@
       "datePublished": "2026-07-03",
       "dateModified": "2026-07-03",
       "inLanguage": "ar",
-      "image": "https://suuapp.com/assets/og-image.png"
+      "image": "https://suuapp.com/assets/og/blog/ar-hurq-al-suerat.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "حساب الماكروز: كيف تحسب البروتين والكربوهيدرات والدهون؟",
+      "url": "https://suuapp.com/blog/ar/hisab-al-macro.html",
+      "datePublished": "2026-07-03",
+      "dateModified": "2026-07-03",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-hisab-al-macro.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "حساب السعرات بالصورة: تتبع التغذية بالذكاء الاصطناعي",
+      "url": "https://suuapp.com/blog/ar/hisab-al-suerat-bil-sura.html",
+      "datePublished": "2026-07-03",
+      "dateModified": "2026-07-03",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-hisab-al-suerat-bil-sura.png"
     },
     {
       "@type": "BlogPosting",
@@ -341,196 +420,256 @@
       "datePublished": "2026-06-14",
       "dateModified": "2026-06-14",
       "inLanguage": "ar",
-      "image": "https://suuapp.com/assets/og-image.png"
+      "image": "https://suuapp.com/assets/og/blog/ar-alwade-albasit-walmutaqaddim.png"
     },
     {
       "@type": "BlogPosting",
-      "headline": "الحيوان الأليف في Suu: قطة/كلب + 4 ألعاب صغيرة + تلبيس",
+      "headline": "الحيوان الأليف في Suu: قطة/كلب + 4 ألعاب + تلبيس",
       "url": "https://suuapp.com/blog/ar/hayawan-aleef-aleab-mini.html",
       "datePublished": "2026-05-22",
-      "inLanguage": "ar"
+      "dateModified": "2026-05-22",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-hayawan-aleef-aleab-mini.png"
     },
     {
       "@type": "BlogPosting",
       "headline": "برنامج تبرع Suu Premium بنسبة 2%: آبار مياه شفافة في أفريقيا",
       "url": "https://suuapp.com/blog/ar/barnamaj-tabarru-abar-almae-afriqia.html",
       "datePublished": "2026-05-11",
-      "inLanguage": "ar"
+      "dateModified": "2026-10-03",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-barnamaj-tabarru-abar-almae-afriqia.png"
     },
     {
       "@type": "BlogPosting",
-      "headline": "10 فوائد علمية لشرب الماء يومياً",
-      "url": "https://suuapp.com/blog/ar/fawaid-shurb-almae.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ar"
+      "headline": "هل الشاي يرطب الجسم؟",
+      "url": "https://suuapp.com/blog/ar/tarteeb-asshay.html",
+      "datePublished": "2026-05-10",
+      "dateModified": "2026-05-10",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-tarteeb-asshay.png"
     },
     {
       "@type": "BlogPosting",
-      "headline": "كم لتراً من الماء يجب أن تشرب يومياً؟",
-      "url": "https://suuapp.com/blog/ar/kam-litr-mae-yawmiyan.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ar"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "7 طرق علمية لتكوين عادة شرب الماء بشكل دائم",
-      "url": "https://suuapp.com/blog/ar/adat-shurb-almae.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ar"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "أفضل تطبيق لتتبع شرب الماء في 2026",
-      "url": "https://suuapp.com/blog/ar/afdal-tatbiq-mae.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ar"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "كم يجب أن تشرب من الماء أثناء الرياضة؟",
-      "url": "https://suuapp.com/blog/ar/arriyada-waltartib.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ar"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "هل القهوة والشاي تعوّض عن الماء؟",
-      "url": "https://suuapp.com/blog/ar/alqahwa-walshay-walmae.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ar"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "علامات الجفاف: ماذا يحدث عندما يطلب جسمك الماء؟",
-      "url": "https://suuapp.com/blog/ar/alamat-aljafaf.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ar"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "7 فوائد لشرب الماء على معدة فارغة صباحاً",
-      "url": "https://suuapp.com/blog/ar/fawaid-shurb-almae-sabahan.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ar"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "هل شرب الماء يساعد على إنقاص الوزن؟",
-      "url": "https://suuapp.com/blog/ar/almae-walidara-alwazn.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ar"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "هل شرب الماء يحسّن البشرة؟",
-      "url": "https://suuapp.com/blog/ar/almae-walsihha-aljildiyya.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ar"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "كيف يؤثر الجفاف على نومك؟",
-      "url": "https://suuapp.com/blog/ar/almae-wannawm.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ar"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "كيف يحمي شرب الماء كليتيك؟",
-      "url": "https://suuapp.com/blog/ar/almae-wasihhat-alkulaa.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ar"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "كمية الماء الموصى بها أثناء الحمل: دليل كل مرحلة",
-      "url": "https://suuapp.com/blog/ar/almae-walhml.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ar"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "الترطيب أثناء الرضاعة: كم يحتاج حليب الثدي من الماء؟",
-      "url": "https://suuapp.com/blog/ar/almae-walrida.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ar"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "تحدي شرب الماء مع الأصدقاء: كيف يعمل الدوري الأسبوعي في Suu",
-      "url": "https://suuapp.com/blog/ar/nadhari-almae-maa-asdiqa.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ar"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "تتبع الماء حسب النشاط البدني: المشي، الجري، السباحة",
-      "url": "https://suuapp.com/blog/ar/almae-walnashat-aljasadi.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ar"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "تتبع الكافيين والسكر: الحدود الخفية في مشروباتك",
-      "url": "https://suuapp.com/blog/ar/alkafayin-walsukar.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ar"
+      "headline": "كيف تتحكم في استهلاك مشروبات الطاقة؟",
+      "url": "https://suuapp.com/blog/ar/tahakum-mashroob-attaqa.html",
+      "datePublished": "2026-05-10",
+      "dateModified": "2026-05-10",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-tahakum-mashroob-attaqa.png"
     },
     {
       "@type": "BlogPosting",
       "headline": "كيف أقلل من شرب القهوة: 7 استراتيجيات علمية",
       "url": "https://suuapp.com/blog/ar/taqlil-alqahwa.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ar"
+      "datePublished": "2026-05-10",
+      "dateModified": "2026-10-03",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-taqlil-alqahwa.png"
     },
     {
       "@type": "BlogPosting",
-      "headline": "كم فنجان قهوة في اليوم آمن؟ دليل حدود FDA",
+      "headline": "كم فنجان قهوة في اليوم آمن؟",
       "url": "https://suuapp.com/blog/ar/kam-fanjan-qahwa.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ar"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "الترطيب بعد الكحول: العلم وراء الوقاية من أعراض اليوم التالي",
-      "url": "https://suuapp.com/blog/ar/tarteeb-baad-alkohol.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ar"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "كيف تتحكم في استهلاك مشروبات الطاقة؟ Red Bull و Monster",
-      "url": "https://suuapp.com/blog/ar/tahakum-mashroob-attaqa.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ar"
+      "datePublished": "2026-05-10",
+      "dateModified": "2026-10-03",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-kam-fanjan-qahwa.png"
     },
     {
       "@type": "BlogPosting",
       "headline": "عصير أم ماء؟ أيهما أصح؟",
       "url": "https://suuapp.com/blog/ar/aaseer-am-mae.html",
-      "datePublished": "2026-03-15",
-      "inLanguage": "ar"
+      "datePublished": "2026-05-10",
+      "dateModified": "2026-05-10",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-aaseer-am-mae.png"
     },
     {
       "@type": "BlogPosting",
-      "headline": "هل الشاي يرطب الجسم؟ معامل الترطيب حسب نوع الشاي",
-      "url": "https://suuapp.com/blog/ar/tarteeb-asshay.html",
+      "headline": "الترطيب بعد الكحول: دليل علمي للوقاية من أعراض اليوم التالي",
+      "url": "https://suuapp.com/blog/ar/tarteeb-baad-alkohol.html",
+      "datePublished": "2026-05-10",
+      "dateModified": "2026-05-10",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-tarteeb-baad-alkohol.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "تتبع الماء حسب النشاط البدني: ترطيب تلقائي لكل تمرين",
+      "url": "https://suuapp.com/blog/ar/almae-walnashat-aljasadi.html",
+      "datePublished": "2026-04-30",
+      "dateModified": "2026-10-03",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-almae-walnashat-aljasadi.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "تتبع الكافيين والسكر: الحدود الخفية في مشروباتك",
+      "url": "https://suuapp.com/blog/ar/alkafayin-walsukar.html",
+      "datePublished": "2026-04-30",
+      "dateModified": "2026-10-03",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-alkafayin-walsukar.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "كمية الماء الموصى بها أثناء الحمل: دليل كل ثلاثة أشهر",
+      "url": "https://suuapp.com/blog/ar/almae-walhml.html",
+      "datePublished": "2026-04-07",
+      "dateModified": "2026-10-03",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-almae-walhml.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "تحدي شرب الماء مع الأصدقاء: كيف يعمل الدوري الأسبوعي في Suu",
+      "url": "https://suuapp.com/blog/ar/nadhari-almae-maa-asdiqa.html",
+      "datePublished": "2026-04-07",
+      "dateModified": "2026-10-06",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-nadhari-almae-maa-asdiqa.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "الترطيب أثناء الرضاعة الطبيعية: كم يحتاج حليب الثدي من الماء؟",
+      "url": "https://suuapp.com/blog/ar/almae-walrida.html",
+      "datePublished": "2026-04-07",
+      "dateModified": "2026-04-07",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-almae-walrida.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "هل تُحتسب القهوة من شرب الماء؟ جدول ترطيب المشروبات",
+      "url": "https://suuapp.com/blog/ar/alqahwa-walshay-walmae.html",
+      "datePublished": "2026-03-22",
+      "dateModified": "2026-09-27",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-alqahwa-walshay-walmae.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "ماذا يحدث عندما تشرب الماء على معدة فارغة كل صباح؟",
+      "url": "https://suuapp.com/blog/ar/fawaid-shurb-almae-sabahan.html",
+      "datePublished": "2026-03-22",
+      "dateModified": "2026-10-03",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-fawaid-shurb-almae-sabahan.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "لا تستطيع النوم جيداً؟ كمية الماء قد تكون المشكلة",
+      "url": "https://suuapp.com/blog/ar/almae-wannawm.html",
+      "datePublished": "2026-03-22",
+      "dateModified": "2026-10-03",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-almae-wannawm.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "انسَ الكريمات الغالية: هل شرب الماء يغيّر بشرتك فعلاً؟",
+      "url": "https://suuapp.com/blog/ar/almae-walsihha-aljildiyya.html",
+      "datePublished": "2026-03-22",
+      "dateModified": "2026-10-03",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-almae-walsihha-aljildiyya.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "الخطأ الأول في التمارين الذي يقتل أداءك (ليس نظامك الغذائي)",
+      "url": "https://suuapp.com/blog/ar/arriyada-waltartib.html",
+      "datePublished": "2026-03-22",
+      "dateModified": "2026-10-03",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-arriyada-waltartib.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "اشرب كوبين قبل كل وجبة — حيلة إنقاص الوزن المدعومة بالعلم",
+      "url": "https://suuapp.com/blog/ar/almae-walidara-alwazn.html",
+      "datePublished": "2026-03-22",
+      "dateModified": "2026-10-03",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-almae-walidara-alwazn.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "أبسط طريقة لحماية كليتيك (معظم الناس لا يفعلونها)",
+      "url": "https://suuapp.com/blog/ar/almae-wasihhat-alkulaa.html",
+      "datePublished": "2026-03-22",
+      "dateModified": "2026-10-03",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-almae-wasihhat-alkulaa.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "8 علامات تحذيرية على الجفاف — معظم الناس يتجاهلون العلامة رقم 3",
+      "url": "https://suuapp.com/blog/ar/alamat-aljafaf.html",
+      "datePublished": "2026-03-22",
+      "dateModified": "2026-10-03",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-alamat-aljafaf.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "ما أفضل تطبيق لتتبع شرب الماء في 2026؟ مقارنة Suu وWaterMinder وHydro Coach",
+      "url": "https://suuapp.com/blog/ar/afdal-tatbiq-mae.html",
       "datePublished": "2026-03-15",
-      "inLanguage": "ar"
+      "dateModified": "2026-10-03",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-afdal-tatbiq-mae.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "قاعدة \"8 أكواب يومياً\" خاطئة — إليك ما يقوله العلم فعلاً",
+      "url": "https://suuapp.com/blog/ar/kam-litr-mae-yawmiyan.html",
+      "datePublished": "2026-03-15",
+      "dateModified": "2026-10-03",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-kam-litr-mae-yawmiyan.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "أنسى شرب الماء دائمًا: 7 طرق علمية",
+      "url": "https://suuapp.com/blog/ar/adat-shurb-almae.html",
+      "datePublished": "2026-03-15",
+      "dateModified": "2026-09-27",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-adat-shurb-almae.png"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "10 أشياء تحدث لجسمك عندما تشرب كمية كافية من الماء",
+      "url": "https://suuapp.com/blog/ar/fawaid-shurb-almae.html",
+      "datePublished": "2026-03-15",
+      "dateModified": "2026-10-03",
+      "inLanguage": "ar",
+      "image": "https://suuapp.com/assets/og/blog/ar-fawaid-shurb-almae.png"
     }
   ]
 }
     </script>
 
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
     {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {"@type":"ListItem","position":1,"name":"الرئيسية","item":"https://suuapp.com/hosgeldiniz-ar.html"},
-        {"@type":"ListItem","position":2,"name":"المدونة","item":"https://suuapp.com/blog-ar.html"}
-      ]
+      "@type": "ListItem",
+      "position": 1,
+      "name": "الرئيسية",
+      "item": "https://suuapp.com/hosgeldiniz-ar.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "المدونة",
+      "item": "https://suuapp.com/blog-ar.html"
     }
+  ]
+}
     </script>
     <script src="/assets/js/analytics.js" defer></script>
     <script src="/assets/js/special-days.js" defer></script>
@@ -539,538 +678,828 @@
 
 <nav class="blog-nav">
     <div class="nav-content">
-        <a href="hosgeldiniz-ar.html" class="blog-logo"><img src="/assets/brand/suu-badge-128.png" alt="Suu" width="128" height="128" class="suu-logo-badge" style="height:1.6em;width:1.6em;border-radius:50%;vertical-align:-0.4em;box-shadow:0 0 0 1px rgba(255,255,255,.12),0 0 14px rgba(94,170,255,.45);"> Suu</a>
+        <a href="/hosgeldiniz-ar.html" class="blog-logo"><img src="/assets/brand/suu-badge-128.png" alt="Suu" width="128" height="128" class="suu-logo-badge" style="height:1.6em;width:1.6em;border-radius:50%;display:block;"> Suu</a>
         <div class="nav-right">
-            <!-- lang-switcher.js injects buttons here -->
-            <a href="muqaranat.html" class="back-btn"><i class="fas fa-scale-balanced"></i> المقارنات</a>
-            <a href="hosgeldiniz-ar.html" class="back-btn"><i class="fas fa-arrow-right"></i> الرئيسية</a>
-            <div class="hamburger"></div>
+            <span data-lang-slot></span>
+            <a href="muqaranat.html" class="nav-btn" title="المقارنات"><i class="fas fa-scale-balanced" aria-hidden="true"></i><span>المقارنات</span></a>
+            <a href="faq-ar.html" class="nav-btn" title="الأسئلة الشائعة"><i class="fas fa-circle-question" aria-hidden="true"></i><span>الأسئلة الشائعة</span></a>
+            <a href="/hosgeldiniz-ar.html" class="nav-btn" title="الرئيسية"><i class="fas fa-house" aria-hidden="true"></i><span>الرئيسية</span></a>
         </div>
     </div>
 </nav>
 
-<div class="blog-header">
-    <h1>💧 مدونة Suu</h1>
-    <p>مقالات علمية حول الترطيب والصحة وبناء عادات شرب الماء.</p>
-</div>
+<header class="bi-hero">
+    <div class="bi-hero-in">
+        <h1>مدونة Suu</h1>
+        <p class="bi-lead">أدلة مبنية على مصادر علمية حول السعرات والرياضة وشرب الماء، مع مقارنات صادقة بين التطبيقات.</p>
+        <form class="bi-search" role="search" action="#" onsubmit="return false">
+            <i class="fas fa-magnifying-glass bi-ico" aria-hidden="true"></i>
+            <input type="search" id="bi-q" placeholder="ابحث: العجز الحراري، القهوة، رمضان…" aria-label="ابحث في مقالات المدونة" autocomplete="off" enterkeyhint="search">
+            <button type="button" id="bi-clear" aria-label="مسح البحث" hidden><i class="fas fa-xmark" aria-hidden="true"></i></button>
+        </form>
+        <ul class="bi-stats">
+            <li><strong>50</strong> مقالًا</li>
+            <li><strong>7</strong> تصنيفات</li>
+            <li><i class="far fa-clock" aria-hidden="true"></i> آخر تحديث: <time datetime="2026-10-14">14 أكتوبر 2026</time></li>
+        </ul>
+    </div>
+</header>
 
-<div class="container">
-    <div class="articles-grid">
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#0072C6,#43A047);color:white;">⚖️</div>
-            <div class="article-body">
-                <div class="article-tag">مقارنة</div>
-                <h3>Cronometer أم Lifesum: أي تطبيق لحساب السعرات تختار؟</h3>
-                <p>قارنّا Cronometer وLifesum من حيث دقة قاعدة البيانات وتتبع الفيتامينات والمعادن والأنظمة الغذائية والنسخة المجانية والواجهة. أيهما يناسبك؟</p>
-                <a href="blog/ar/cronometer-vs-lifesum.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-right"></i></a>
+<nav class="bi-chips" aria-label="التصنيفات">
+    <div class="bi-chips-in">
+        <a href="#top" class="bi-chip" data-cat="all" aria-current="true">الكل <span class="n">50</span></a>
+        <a href="#cat-calories" class="bi-chip" data-cat="calories" style="--c:#E65100">🔥 السعرات والتغذية <span class="n">7</span></a>
+        <a href="#cat-exercise" class="bi-chip" data-cat="exercise" style="--c:#2E7D32">🏃 الرياضة واللياقة <span class="n">6</span></a>
+        <a href="#cat-water" class="bi-chip" data-cat="water" style="--c:#0277BD">💧 الماء والترطيب <span class="n">7</span></a>
+        <a href="#cat-drinks" class="bi-chip" data-cat="drinks" style="--c:#6D4C41">☕ القهوة والشاي والمشروبات <span class="n">9</span></a>
+        <a href="#cat-health" class="bi-chip" data-cat="health" style="--c:#AD1457">🩺 الصحة والمراحل الخاصة <span class="n">6</span></a>
+        <a href="#cat-compare" class="bi-chip" data-cat="compare" style="--c:#00796B">⚖️ مقارنات التطبيقات <span class="n">8</span></a>
+        <a href="#cat-suu" class="bi-chip" data-cat="suu" style="--c:#5E35B1">📱 Suu: الميزات والأخبار <span class="n">7</span></a>
+    </div>
+</nav>
+
+<main class="bi-main" id="top">
+    <p class="bi-status" id="bi-status" role="status" aria-live="polite"></p>
+
+    <section class="bi-sec bi-latest" id="latest" aria-labelledby="latest-h">
+        <div class="bi-sec-head">
+            <div class="bi-sec-ico" aria-hidden="true">✨</div>
+            <div><h2 id="latest-h">أحدث المقالات</h2></div>
+        </div>
+        <div class="bi-grid">
+<article class="bi-card" style="--c:#5E35B1;--bg-c:#EDE7F6">
+                <a href="/blog/ar/hal-tatbiq-suu-amin.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-hal-tatbiq-suu-amin.webp" alt="" width="600" height="315" fetchpriority="high" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">📱 Suu: الميزات والأخبار</span>
+                        <h3>هل تطبيق Suu آمن؟ من يقف وراءه وكيف تُحمى بياناتك</h3>
+                        <p>من يطوّر Suu وكيف تُحمى بياناتك؟ تطبيق شركة مسجّلة رسميًا نما داخل حاضنة BTM في إسطنبول: GDPR وKVKK وتشفير AES-256 ولا بيع للبيانات.</p>
+                        <div class="bi-meta"><time datetime="2026-10-14">14 أكتوبر 2026</time><span aria-hidden="true">·</span><span>قراءة: 6 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/ar/lifesum-vs-myfitnesspal.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-lifesum-vs-myfitnesspal.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ مقارنات التطبيقات</span>
+                        <h3>Lifesum أم MyFitnessPal: أي تطبيق لحساب السعرات تختار؟</h3>
+                        <p>قارنّا Lifesum وMyFitnessPal من حيث قاعدة البيانات وماسح الباركود والأنظمة الغذائية والنسخة المجانية والإعلانات. أيهما يناسبك؟</p>
+                        <div class="bi-meta"><time datetime="2026-10-14">14 أكتوبر 2026</time><span aria-hidden="true">·</span><span>قراءة: 5 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/ar/cronometer-vs-lifesum.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-cronometer-vs-lifesum.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ مقارنات التطبيقات</span>
+                        <h3>Cronometer أم Lifesum: أي تطبيق لحساب السعرات تختار؟</h3>
+                        <p>قارنّا Cronometer وLifesum من حيث دقة قاعدة البيانات وتتبع الفيتامينات والمعادن والأنظمة الغذائية والنسخة المجانية والواجهة. أيهما يناسبك؟</p>
+                        <div class="bi-meta"><time datetime="2026-10-14">14 أكتوبر 2026</time><span aria-hidden="true">·</span><span>قراءة: 5 د</span></div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <section class="bi-sec" id="cat-calories" data-cat="calories" aria-labelledby="cat-calories-h" style="--c:#E65100;--bg-c:#FFF3E0">
+        <div class="bi-sec-head">
+            <div class="bi-sec-ico" aria-hidden="true">🔥</div>
+            <div>
+                <h2 id="cat-calories-h">السعرات والتغذية <span class="n">7</span></h2>
+                <p>العجز الحراري، والمغذيات الكبرى، وحساب السعرات بالصور، ولماذا يتوقف نزول الوزن.</p>
             </div>
-        </article>
+        </div>
+        <div class="bi-grid">
+<article class="bi-card" style="--c:#E65100;--bg-c:#FFF3E0">
+                <a href="/blog/ar/limadha-la-yanqus-wazni.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-limadha-la-yanqus-wazni.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🔥 السعرات والتغذية</span>
+                        <h3>لماذا لا ينقص وزني؟ 7 أسباب وقائمة تحقق</h3>
+                        <p>لماذا يتوقف الميزان رغم العجز الحراري؟ تسجيل ناقص، مشروبات، عطلة نهاية الأسبوع، سعرات التمارين، تقلّب الماء، وانخفاض الاحتياج. قائمة تحقق لأربعة أسابيع.</p>
+                        <div class="bi-meta"><time datetime="2026-09-27">27 سبتمبر 2026</time><span aria-hidden="true">·</span><span>قراءة: 6 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#E65100;--bg-c:#FFF3E0">
+                <a href="/blog/ar/al-akl-laylan.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-al-akl-laylan.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🔥 السعرات والتغذية</span>
+                        <h3>كيف أتوقف عن الأكل ليلًا؟ 7 حلول عملية</h3>
+                        <p>الأكل الليلي نادرًا ما يكون من الجوع؛ غالبًا سببه تخطّي الفطور وقلة النوم والعادة. الأسباب و7 حلول مجرّبة، مع الأدلة العلمية.</p>
+                        <div class="bi-meta"><time datetime="2026-09-27">27 سبتمبر 2026</time><span aria-hidden="true">·</span><span>قراءة: 6 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#E65100;--bg-c:#FFF3E0">
+                <a href="/blog/ar/malal-hisab-al-suerat.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-malal-hisab-al-suerat.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🔥 السعرات والتغذية</span>
+                        <h3>أتوقف دائمًا عن حساب السعرات: 7 طرق للاستمرار</h3>
+                        <p>معظم الناس يتوقفون عن حساب السعرات خلال أسابيع. الاستمرارية أهم من الدقة: سجّل تقريبيًا، ابدأ بوجبة واحدة، وانظر إلى المتوسط الأسبوعي. مع الأدلة.</p>
+                        <div class="bi-meta"><time datetime="2026-09-27">27 سبتمبر 2026</time><span aria-hidden="true">·</span><span>قراءة: 6 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#E65100;--bg-c:#FFF3E0">
+                <a href="/blog/ar/al-ajz-al-harari.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-al-ajz-al-harari.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🔥 السعرات والتغذية</span>
+                        <h3>ما هو العجز الحراري وكيف تحققه؟ دليل خسارة الوزن</h3>
+                        <p>ما هو العجز الحراري، وكيف تحسبه، وكم يجب أن يكون لخسارة الوزن؟ الوتيرة الآمنة، أكثر الأخطاء شيوعًا، وتتبع سهل للسعرات بالذكاء الاصطناعي.</p>
+                        <div class="bi-meta"><time datetime="2026-07-03">3 يوليو 2026</time><span aria-hidden="true">·</span><span>قراءة: 4 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#E65100;--bg-c:#FFF3E0">
+                <a href="/blog/ar/hisab-al-macro.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-hisab-al-macro.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🔥 السعرات والتغذية</span>
+                        <h3>حساب الماكروز: كيف تحسب البروتين والكربوهيدرات والدهون؟</h3>
+                        <p>ما هي الماكروز وكيف تحسب احتياجك اليومي من البروتين والكربوهيدرات والدهون؟ صيغة خطوة بخطوة من السعرات إلى الماكروز، مثال محلول، وتتبع سهل بالذكاء الاصطناعي.</p>
+                        <div class="bi-meta"><time datetime="2026-07-03">3 يوليو 2026</time><span aria-hidden="true">·</span><span>قراءة: 5 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#E65100;--bg-c:#FFF3E0">
+                <a href="/blog/ar/hisab-al-suerat-bil-sura.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-hisab-al-suerat-bil-sura.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🔥 السعرات والتغذية</span>
+                        <h3>حساب السعرات بالصورة: تتبع التغذية بالذكاء الاصطناعي</h3>
+                        <p>كيف يعمل حساب السعرات من صورة الطعام، وما مدى دقته؟ مزايا تتبع التغذية بالذكاء الاصطناعي، نصائح للدقة، والتحليل المصوّر في Suu.</p>
+                        <div class="bi-meta"><time datetime="2026-07-03">3 يوليو 2026</time><span aria-hidden="true">·</span><span>قراءة: 3 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#E65100;--bg-c:#FFF3E0">
+                <a href="/blog/ar/almae-walidara-alwazn.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-almae-walidara-alwazn.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🔥 السعرات والتغذية</span>
+                        <h3>اشرب كوبين قبل كل وجبة — حيلة إنقاص الوزن المدعومة بالعلم</h3>
+                        <p>الدراسات تُظهر أن من يشربون الماء قبل الوجبات يستهلكون سعرات أقل ويخسرون وزناً أكثر. العلم وراء الماء وإدارة الوزن.</p>
+                        <div class="bi-meta"><time datetime="2026-03-22">22 مارس 2026</time><span aria-hidden="true">·</span><span>قراءة: 4 د</span></div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
 
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1E88E5,#42A5F5);color:white;">💧</div>
-            <div class="article-body">
-                <div class="article-tag">دليل</div>
-                <h3>هل تطبيق Suu آمن؟ من يقف وراءه وكيف تُحمى بياناتك</h3>
-                <p>من يطوّر Suu وكيف تُحمى بياناتك؟ تطبيق شركة مسجّلة رسميًا نما داخل حاضنة BTM في إسطنبول: GDPR وKVKK وتشفير AES-256 ولا بيع للبيانات.</p>
-                <a href="blog/ar/hal-tatbiq-suu-amin.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-right"></i></a>
+    <section class="bi-sec" id="cat-exercise" data-cat="exercise" aria-labelledby="cat-exercise-h" style="--c:#2E7D32;--bg-c:#E8F5E9">
+        <div class="bi-sec-head">
+            <div class="bi-sec-ico" aria-hidden="true">🏃</div>
+            <div>
+                <h2 id="cat-exercise-h">الرياضة واللياقة <span class="n">6</span></h2>
+                <p>السعرات المحروقة في التمارين، والتحفيز، والرياضة أثناء الصيام، واختيار التمرين المناسب.</p>
             </div>
-        </article>
+        </div>
+        <div class="bi-grid">
+<article class="bi-card" style="--c:#2E7D32;--bg-c:#E8F5E9">
+                <a href="/blog/ar/ziyadat-alwazn-baad-arriyada.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-ziyadat-alwazn-baad-arriyada.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🏃 الرياضة واللياقة</span>
+                        <h3>بدأت الرياضة فلماذا زاد وزني؟</h3>
+                        <p>ارتفاع الميزان بعد بدء الرياضة ليس دهونًا في الغالب: ماء يُخزَّن مع الجليكوجين في العضلات، وإصلاح العضلات، وشهية تزداد بهدوء. متى تثق بالميزان؟</p>
+                        <div class="bi-meta"><time datetime="2026-10-13">13 أكتوبر 2026</time><span aria-hidden="true">·</span><span>قراءة: 7 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#2E7D32;--bg-c:#E8F5E9">
+                <a href="/blog/ar/almashi-am-aljary.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-almashi-am-aljary.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🏃 الرياضة واللياقة</span>
+                        <h3>المشي أم الجري لإنقاص الوزن؟</h3>
+                        <p>في الوقت نفسه يحرق الجري نحو 2.5–3 أضعاف ما يحرقه المشي، وفي المسافة نفسها نحو 40% أكثر فقط. مقارنة السعرات والشهية وخطر الإصابة.</p>
+                        <div class="bi-meta"><time datetime="2026-10-13">13 أكتوبر 2026</time><span aria-hidden="true">·</span><span>قراءة: 7 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#2E7D32;--bg-c:#E8F5E9">
+                <a href="/blog/ar/arriyada-fi-ramadan.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-arriyada-fi-ramadan.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🏃 الرياضة واللياقة</span>
+                        <h3>الرياضة في رمضان: قبل الإفطار أم بعده؟</h3>
+                        <p>التمرين الخفيف قبيل الإفطار، والتمرين الشاق بعد الإفطار بساعة إلى ثلاث ساعات. خطة شرب الماء بين الإفطار والسحور ونصائح السحور والنوم وفق دليل أسبيتار.</p>
+                        <div class="bi-meta"><time datetime="2026-10-13">13 أكتوبر 2026</time><span aria-hidden="true">·</span><span>قراءة: 8 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#2E7D32;--bg-c:#E8F5E9">
+                <a href="/blog/ar/alkasal-an-arriyada.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-alkasal-an-arriyada.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🏃 الرياضة واللياقة</span>
+                        <h3>أشعر بالكسل عن الرياضة: 7 طرق لتبدأ رغم ذلك</h3>
+                        <p>الكسل عن الرياضة ليس مشكلة إرادة بل صعوبة في البدء. ابدأ بمشي 10 دقائق، حدّد الوقت والمكان مسبقًا، وأشرك صديقًا. مع الأدلة العلمية.</p>
+                        <div class="bi-meta"><time datetime="2026-09-27">27 سبتمبر 2026</time><span aria-hidden="true">·</span><span>قراءة: 7 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#2E7D32;--bg-c:#E8F5E9">
+                <a href="/blog/ar/hurq-al-suerat.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-hurq-al-suerat.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🏃 الرياضة واللياقة</span>
+                        <h3>كم سعرة حرارية تحرق التمارين؟ دليل السعرات حسب النشاط</h3>
+                        <p>كم سعرة يحرق المشي والجري والدراجة والسباحة وتمارين HIIT؟ حساب شخصي بصيغة MET، جدول أنشطة، وتتبع تلقائي للسعرات مع Apple Health.</p>
+                        <div class="bi-meta"><time datetime="2026-07-03">3 يوليو 2026</time><span aria-hidden="true">·</span><span>قراءة: 3 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#2E7D32;--bg-c:#E8F5E9">
+                <a href="/blog/ar/arriyada-waltartib.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-arriyada-waltartib.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🏃 الرياضة واللياقة</span>
+                        <h3>الخطأ الأول في التمارين الذي يقتل أداءك (ليس نظامك الغذائي)</h3>
+                        <p>معظم الرياضيين يعانون من الجفاف أثناء التمرين دون أن يعرفوا. تعلّم متى وكم تشرب قبل وأثناء وبعد التمرين.</p>
+                        <div class="bi-meta"><time datetime="2026-03-22">22 مارس 2026</time><span aria-hidden="true">·</span><span>قراءة: 5 د</span></div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
 
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#0072C6,#43A047);color:white;">⚖️</div>
-            <div class="article-body">
-                <div class="article-tag">مقارنة</div>
-                <h3>Lifesum أم MyFitnessPal: أي تطبيق لحساب السعرات تختار؟</h3>
-                <p>قارنّا Lifesum وMyFitnessPal من حيث قاعدة البيانات وماسح الباركود والأنظمة الغذائية والنسخة المجانية والإعلانات. أيهما يناسبك؟</p>
-                <a href="blog/ar/lifesum-vs-myfitnesspal.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-right"></i></a>
+    <section class="bi-sec" id="cat-water" data-cat="water" aria-labelledby="cat-water-h" style="--c:#0277BD;--bg-c:#E1F5FE">
+        <div class="bi-sec-head">
+            <div class="bi-sec-ico" aria-hidden="true">💧</div>
+            <div>
+                <h2 id="cat-water-h">الماء والترطيب <span class="n">7</span></h2>
+                <p>كم تحتاج من الماء، وعلامات الجفاف، وبناء عادة الشرب وتتبّعها.</p>
             </div>
-        </article>
+        </div>
+        <div class="bi-grid">
+<article class="bi-card" style="--c:#0277BD;--bg-c:#E1F5FE">
+                <a href="/blog/ar/almae-walnashat-aljasadi.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-almae-walnashat-aljasadi.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">💧 الماء والترطيب</span>
+                        <h3>تتبع الماء حسب النشاط البدني: ترطيب تلقائي لكل تمرين</h3>
+                        <p>Suu يقرأ الآن نشاطك من Apple Health و Google Health Connect ويعدّل هدف الماء اليومي تلقائياً. ترطيب علمي للمشي، الجري، السباحة، ركوب الدراجة.</p>
+                        <div class="bi-meta"><time datetime="2026-04-30">30 أبريل 2026</time><span aria-hidden="true">·</span><span>قراءة: 5 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#0277BD;--bg-c:#E1F5FE">
+                <a href="/blog/ar/fawaid-shurb-almae-sabahan.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-fawaid-shurb-almae-sabahan.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">💧 الماء والترطيب</span>
+                        <h3>ماذا يحدث عندما تشرب الماء على معدة فارغة كل صباح؟</h3>
+                        <p>العلاج الياباني بالماء الذي يجتاح عالم الصحة. كيف يعزز ماء الصباح الأيض ويطرد السموم ويشحن طاقتك.</p>
+                        <div class="bi-meta"><time datetime="2026-03-22">22 مارس 2026</time><span aria-hidden="true">·</span><span>قراءة: 4 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#0277BD;--bg-c:#E1F5FE">
+                <a href="/blog/ar/alamat-aljafaf.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-alamat-aljafaf.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">💧 الماء والترطيب</span>
+                        <h3>8 علامات تحذيرية على الجفاف — معظم الناس يتجاهلون العلامة رقم 3</h3>
+                        <p>الجفاف ليس مجرد عطش. الصداع، ضبابية الدماغ، البول الداكن — جسمك يرسل إشارات تتجاهلها على الأرجح. دليل ألوان البول مرفق.</p>
+                        <div class="bi-meta"><time datetime="2026-03-22">22 مارس 2026</time><span aria-hidden="true">·</span><span>قراءة: 3 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#0277BD;--bg-c:#E1F5FE">
+                <a href="/blog/ar/afdal-tatbiq-mae.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-afdal-tatbiq-mae.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">💧 الماء والترطيب</span>
+                        <h3>ما أفضل تطبيق لتتبع شرب الماء في 2026؟ مقارنة Suu وWaterMinder وHydro Coach</h3>
+                        <p>Suu مقابل WaterMinder مقابل Hydro Coach: قارنّا الميزات والتجربة ونقاط القوة لكل تطبيق — ومتى يكون كل منها الخيار الأنسب.</p>
+                        <div class="bi-meta"><time datetime="2026-03-15">15 مارس 2026</time><span aria-hidden="true">·</span><span>قراءة: 4 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#0277BD;--bg-c:#E1F5FE">
+                <a href="/blog/ar/kam-litr-mae-yawmiyan.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-kam-litr-mae-yawmiyan.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">💧 الماء والترطيب</span>
+                        <h3>قاعدة &#34;8 أكواب يومياً&#34; خاطئة — إليك ما يقوله العلم فعلاً</h3>
+                        <p>الجميع يقول 8 أكواب، لكن احتياجك الحقيقي يعتمد على وزنك ونشاطك والمناخ. احسب كميتك الفعلية — الجواب قد يفاجئك.</p>
+                        <div class="bi-meta"><time datetime="2026-03-15">15 مارس 2026</time><span aria-hidden="true">·</span><span>قراءة: 6 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#0277BD;--bg-c:#E1F5FE">
+                <a href="/blog/ar/adat-shurb-almae.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-adat-shurb-almae.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">💧 الماء والترطيب</span>
+                        <h3>أنسى شرب الماء دائمًا: 7 طرق علمية</h3>
+                        <p>نسيان شرب الماء ليس ضعف إرادة بل غياب المحفّز. كوب الصباح، والقارورة الظاهرة، وكوب قبل الوجبة، وأهداف صغيرة: 7 طرق تجعل الماء عادة.</p>
+                        <div class="bi-meta"><time datetime="2026-03-15">15 مارس 2026</time><span aria-hidden="true">·</span><span>قراءة: 5 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#0277BD;--bg-c:#E1F5FE">
+                <a href="/blog/ar/fawaid-shurb-almae.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-fawaid-shurb-almae.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">💧 الماء والترطيب</span>
+                        <h3>10 أشياء تحدث لجسمك عندما تشرب كمية كافية من الماء</h3>
+                        <p>من تسريع الأيض إلى بشرة أنقى وتركيز أقوى — إليك ما يقوله العلم عن فوائد شرب الماء الكافي يومياً.</p>
+                        <div class="bi-meta"><time datetime="2026-03-15">15 مارس 2026</time><span aria-hidden="true">·</span><span>قراءة: 6 د</span></div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
 
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1E88E5,#42A5F5);color:white;">💧</div>
-            <div class="article-body">
-                <div class="article-tag">دليل</div>
-                <h3>المشي أم الجري لإنقاص الوزن؟</h3>
-                <p>في الوقت نفسه يحرق الجري نحو 2.5–3 أضعاف ما يحرقه المشي، وفي المسافة نفسها نحو 40% أكثر فقط. مقارنة السعرات والشهية وخطر الإصابة.</p>
-                <a href="blog/ar/almashi-am-aljary.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-right"></i></a>
+    <section class="bi-sec" id="cat-drinks" data-cat="drinks" aria-labelledby="cat-drinks-h" style="--c:#6D4C41;--bg-c:#EFEBE9">
+        <div class="bi-sec-head">
+            <div class="bi-sec-ico" aria-hidden="true">☕</div>
+            <div>
+                <h2 id="cat-drinks-h">القهوة والشاي والمشروبات <span class="n">9</span></h2>
+                <p>حدود الكافيين، وهل يُحتسب الشاي والقهوة ماءً، والمشروبات المحلّاة والكحولية.</p>
             </div>
-        </article>
+        </div>
+        <div class="bi-grid">
+<article class="bi-card" style="--c:#6D4C41;--bg-c:#EFEBE9">
+                <a href="/blog/ar/tark-almashroobat-alghaziya.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-tark-almashroobat-alghaziya.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">☕ القهوة والشاي والمشروبات</span>
+                        <h3>كيف أترك المشروبات الغازية؟ خطة تدريجية لأربعة أسابيع</h3>
+                        <p>بدل التوقف المفاجئ، خفّف المشروبات الغازية خلال 4 أسابيع: المحفّزات، صداع الكافيين، والانتقال إلى الماء الفوّار، مع الأثر الحقيقي لعلبة واحدة.</p>
+                        <div class="bi-meta"><time datetime="2026-09-27">27 سبتمبر 2026</time><span aria-hidden="true">·</span><span>قراءة: 8 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#6D4C41;--bg-c:#EFEBE9">
+                <a href="/blog/ar/tarteeb-asshay.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-tarteeb-asshay.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">☕ القهوة والشاي والمشروبات</span>
+                        <h3>هل الشاي يرطب الجسم؟</h3>
+                        <p>هل الشاي الأخضر والأسود وأعشاب الترطيب يرطبون الجسم؟ هل يحلون محل الماء؟ معامل الترطيب لـ 12+ نوع شاي.</p>
+                        <div class="bi-meta"><time datetime="2026-05-10">10 مايو 2026</time><span aria-hidden="true">·</span><span>قراءة: 6 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#6D4C41;--bg-c:#EFEBE9">
+                <a href="/blog/ar/tahakum-mashroob-attaqa.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-tahakum-mashroob-attaqa.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">☕ القهوة والشاي والمشروبات</span>
+                        <h3>كيف تتحكم في استهلاك مشروبات الطاقة؟</h3>
+                        <p>كيف تقلل من Red Bull و Monster و Burn؟ محتوى الكافيين/السكر، حد FDA، مخاطر الشباب ودليل التتبع مع Suu.</p>
+                        <div class="bi-meta"><time datetime="2026-05-10">10 مايو 2026</time><span aria-hidden="true">·</span><span>قراءة: 6 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#6D4C41;--bg-c:#EFEBE9">
+                <a href="/blog/ar/taqlil-alqahwa.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-taqlil-alqahwa.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">☕ القهوة والشاي والمشروبات</span>
+                        <h3>كيف أقلل من شرب القهوة: 7 استراتيجيات علمية</h3>
+                        <p>هل تشرب الكثير من القهوة وتريد التقليل لكن لا تستطيع؟ هذا الدليل يشرح علم إدمان الكافيين، 7 استراتيجيات للتقليل، وخطة 7 أيام مع تطبيق Suu.</p>
+                        <div class="bi-meta"><time datetime="2026-05-10">10 مايو 2026</time><span aria-hidden="true">·</span><span>قراءة: 8 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#6D4C41;--bg-c:#EFEBE9">
+                <a href="/blog/ar/kam-fanjan-qahwa.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-kam-fanjan-qahwa.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">☕ القهوة والشاي والمشروبات</span>
+                        <h3>كم فنجان قهوة في اليوم آمن؟</h3>
+                        <p>هل فنجانان قهوة يومياً صحي أم 4؟ حدود FDA و EFSA و ACOG، سرعة استقلاب الكافيين، حدود خاصة للحوامل/الرياضيين/مرضى القلب والتتبع مع Suu.</p>
+                        <div class="bi-meta"><time datetime="2026-05-10">10 مايو 2026</time><span aria-hidden="true">·</span><span>قراءة: 6 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#6D4C41;--bg-c:#EFEBE9">
+                <a href="/blog/ar/aaseer-am-mae.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-aaseer-am-mae.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">☕ القهوة والشاي والمشروبات</span>
+                        <h3>عصير أم ماء؟ أيهما أصح؟</h3>
+                        <p>عصير طازج أم معلب؟ هل يحل محل الماء؟ محتوى السكر، قيمة الفيتامينات، عصير للأطفال وخطر السكري.</p>
+                        <div class="bi-meta"><time datetime="2026-05-10">10 مايو 2026</time><span aria-hidden="true">·</span><span>قراءة: 5 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#6D4C41;--bg-c:#EFEBE9">
+                <a href="/blog/ar/tarteeb-baad-alkohol.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-tarteeb-baad-alkohol.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">☕ القهوة والشاي والمشروبات</span>
+                        <h3>الترطيب بعد الكحول: دليل علمي للوقاية من أعراض اليوم التالي</h3>
+                        <p>البيرة والنبيذ والويسكي تسبب الجفاف. ماء التعويض حسب نوع الكحول، خطة الترطيب لليوم التالي والتتبع مع Suu.</p>
+                        <div class="bi-meta"><time datetime="2026-05-10">10 مايو 2026</time><span aria-hidden="true">·</span><span>قراءة: 5 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#6D4C41;--bg-c:#EFEBE9">
+                <a href="/blog/ar/alkafayin-walsukar.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-alkafayin-walsukar.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">☕ القهوة والشاي والمشروبات</span>
+                        <h3>تتبع الكافيين والسكر: الحدود الخفية في مشروباتك</h3>
+                        <p>Suu يحسب الآن الكافيين (مغ) والسكر (غ) ل91 مشروبًا. ابقَ ضمن حد FDA اليومي 400 مغ كافيين وحد WHO 25 غ سكر مع تنبيهات ذكية داخل التطبيق.</p>
+                        <div class="bi-meta"><time datetime="2026-04-30">30 أبريل 2026</time><span aria-hidden="true">·</span><span>قراءة: 5 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#6D4C41;--bg-c:#EFEBE9">
+                <a href="/blog/ar/alqahwa-walshay-walmae.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-alqahwa-walshay-walmae.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">☕ القهوة والشاي والمشروبات</span>
+                        <h3>هل تُحتسب القهوة من شرب الماء؟ جدول ترطيب المشروبات</h3>
+                        <p>القهوة والشاي باعتدال لا يسببان الجفاف بل يرطّبان قريبًا من الماء. كيف تُحسب القهوة المفلترة والإسبريسو والشاي والكولا، وحد الكافيين، ومعاملات Suu.</p>
+                        <div class="bi-meta"><time datetime="2026-03-22">22 مارس 2026</time><span aria-hidden="true">·</span><span>قراءة: 6 د</span></div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
 
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1E88E5,#42A5F5);color:white;">💧</div>
-            <div class="article-body">
-                <div class="article-tag">دليل</div>
-                <h3>الرياضة في رمضان: قبل الإفطار أم بعده؟</h3>
-                <p>التمرين الخفيف قبيل الإفطار، والتمرين الشاق بعد الإفطار بساعة إلى ثلاث ساعات. خطة شرب الماء بين الإفطار والسحور ونصائح السحور والنوم وفق دليل أسبيتار.</p>
-                <a href="blog/ar/arriyada-fi-ramadan.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-right"></i></a>
+    <section class="bi-sec" id="cat-health" data-cat="health" aria-labelledby="cat-health-h" style="--c:#AD1457;--bg-c:#FCE4EC">
+        <div class="bi-sec-head">
+            <div class="bi-sec-ico" aria-hidden="true">🩺</div>
+            <div>
+                <h2 id="cat-health-h">الصحة والمراحل الخاصة <span class="n">6</span></h2>
+                <p>الحمل والرضاعة، والتعب المستمر، وعلاقة الماء بالكلى والبشرة والنوم.</p>
             </div>
-        </article>
+        </div>
+        <div class="bi-grid">
+<article class="bi-card" style="--c:#AD1457;--bg-c:#FCE4EC">
+                <a href="/blog/ar/limadha-ashur-bitaab-daiman.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-limadha-ashur-bitaab-daiman.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🩺 الصحة والمراحل الخاصة</span>
+                        <h3>لماذا أشعر بالتعب دائمًا؟ أشيع 8 أسباب</h3>
+                        <p>أشيع أسباب التعب المستمر: النوم، التوتر، الخمول، التغذية، قلة الماء، الكافيين، نقص الحديد وأسباب طبية. ومتى يجب أن تراجع الطبيب.</p>
+                        <div class="bi-meta"><time datetime="2026-09-27">27 سبتمبر 2026</time><span aria-hidden="true">·</span><span>قراءة: 6 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#AD1457;--bg-c:#FCE4EC">
+                <a href="/blog/ar/almae-walhml.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-almae-walhml.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🩺 الصحة والمراحل الخاصة</span>
+                        <h3>كمية الماء الموصى بها أثناء الحمل: دليل كل ثلاثة أشهر</h3>
+                        <p>كم يجب أن تشربي من الماء أثناء الحمل؟ دليل علمي شامل لكل مرحلة من مراحل الحمل. وضع الحمل الجديد في تطبيق Suu يحسب هدفك اليومي تلقائياً.</p>
+                        <div class="bi-meta"><time datetime="2026-04-07">7 أبريل 2026</time><span aria-hidden="true">·</span><span>قراءة: 4 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#AD1457;--bg-c:#FCE4EC">
+                <a href="/blog/ar/almae-walrida.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-almae-walrida.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🩺 الصحة والمراحل الخاصة</span>
+                        <h3>الترطيب أثناء الرضاعة الطبيعية: كم يحتاج حليب الثدي من الماء؟</h3>
+                        <p>حليب الثدي مكوّن من 87% ماء. تحتاج الأم المرضعة إلى 700ml إضافية يومياً. دليل علمي شامل + وضع الرضاعة الجديد في تطبيق Suu.</p>
+                        <div class="bi-meta"><time datetime="2026-04-07">7 أبريل 2026</time><span aria-hidden="true">·</span><span>قراءة: 3 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#AD1457;--bg-c:#FCE4EC">
+                <a href="/blog/ar/almae-wannawm.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-almae-wannawm.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🩺 الصحة والمراحل الخاصة</span>
+                        <h3>لا تستطيع النوم جيداً؟ كمية الماء قد تكون المشكلة</h3>
+                        <p>جودة النوم السيئة غالباً مرتبطة بالجفاف. متى تشرب، متى تتوقف، وكيف تستيقظ منتعشاً فعلاً. نصائح مبنية على العلم.</p>
+                        <div class="bi-meta"><time datetime="2026-03-22">22 مارس 2026</time><span aria-hidden="true">·</span><span>قراءة: 4 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#AD1457;--bg-c:#FCE4EC">
+                <a href="/blog/ar/almae-walsihha-aljildiyya.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-almae-walsihha-aljildiyya.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🩺 الصحة والمراحل الخاصة</span>
+                        <h3>انسَ الكريمات الغالية: هل شرب الماء يغيّر بشرتك فعلاً؟</h3>
+                        <p>مشاكل بشرتك قد لا تحتاج كريمات باهظة — فقط المزيد من الماء. العلاقة بين الترطيب والكولاجين والمرونة ومكافحة الشيخوخة.</p>
+                        <div class="bi-meta"><time datetime="2026-03-22">22 مارس 2026</time><span aria-hidden="true">·</span><span>قراءة: 4 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#AD1457;--bg-c:#FCE4EC">
+                <a href="/blog/ar/almae-wasihhat-alkulaa.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-almae-wasihhat-alkulaa.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">🩺 الصحة والمراحل الخاصة</span>
+                        <h3>أبسط طريقة لحماية كليتيك (معظم الناس لا يفعلونها)</h3>
+                        <p>شرب الماء الكافي يمكن أن يقلل خطر حصوات الكلى بنسبة 50%. أسهل عادة لصحة الكلى مدعومة بالعلم — ومعظم الناس يتجاهلونها.</p>
+                        <div class="bi-meta"><time datetime="2026-03-22">22 مارس 2026</time><span aria-hidden="true">·</span><span>قراءة: 3 د</span></div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
 
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1E88E5,#42A5F5);color:white;">💧</div>
-            <div class="article-body">
-                <div class="article-tag">دليل</div>
-                <h3>بدأت الرياضة فلماذا زاد وزني؟</h3>
-                <p>ارتفاع الميزان بعد بدء الرياضة ليس دهونًا في الغالب: ماء يُخزَّن مع الجليكوجين في العضلات، وإصلاح العضلات، وشهية تزداد بهدوء. متى تثق بالميزان؟</p>
-                <a href="blog/ar/ziyadat-alwazn-baad-arriyada.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-right"></i></a>
+    <section class="bi-sec" id="cat-compare" data-cat="compare" aria-labelledby="cat-compare-h" style="--c:#00796B;--bg-c:#E0F2F1">
+        <div class="bi-sec-head">
+            <div class="bi-sec-ico" aria-hidden="true">⚖️</div>
+            <div>
+                <h2 id="cat-compare-h">مقارنات التطبيقات <span class="n">8</span></h2>
+                <p>MyFitnessPal وYazio وLifesum وCronometer وStrava وSuu: أيّها يناسب من؟</p>
             </div>
-        </article>
+        </div>
+        <div class="bi-grid">
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/ar/lifesum-vs-myfitnesspal.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-lifesum-vs-myfitnesspal.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ مقارنات التطبيقات</span>
+                        <h3>Lifesum أم MyFitnessPal: أي تطبيق لحساب السعرات تختار؟</h3>
+                        <p>قارنّا Lifesum وMyFitnessPal من حيث قاعدة البيانات وماسح الباركود والأنظمة الغذائية والنسخة المجانية والإعلانات. أيهما يناسبك؟</p>
+                        <div class="bi-meta"><time datetime="2026-10-14">14 أكتوبر 2026</time><span aria-hidden="true">·</span><span>قراءة: 5 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/ar/cronometer-vs-lifesum.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-cronometer-vs-lifesum.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ مقارنات التطبيقات</span>
+                        <h3>Cronometer أم Lifesum: أي تطبيق لحساب السعرات تختار؟</h3>
+                        <p>قارنّا Cronometer وLifesum من حيث دقة قاعدة البيانات وتتبع الفيتامينات والمعادن والأنظمة الغذائية والنسخة المجانية والواجهة. أيهما يناسبك؟</p>
+                        <div class="bi-meta"><time datetime="2026-10-14">14 أكتوبر 2026</time><span aria-hidden="true">·</span><span>قراءة: 5 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/ar/badail-yazio.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-badail-yazio.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ مقارنات التطبيقات</span>
+                        <h3>أفضل بدائل Yazio في 2026: أيّها يناسبك؟</h3>
+                        <p>تبحث عن بديل لتطبيق Yazio؟ قارنّا Suu وMyFitnessPal وLifesum وCronometer وCal AI في التسجيل والخطة المجانية والصيام والماء وتمارين GPS.</p>
+                        <div class="bi-meta"><time datetime="2026-10-03">3 أكتوبر 2026</time><span aria-hidden="true">·</span><span>قراءة: 11 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/ar/afdal-tatbiq-tamarin.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-afdal-tatbiq-tamarin.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ مقارنات التطبيقات</span>
+                        <h3>أفضل تطبيق لتتبع التمارين في 2026</h3>
+                        <p>قارنّا تطبيقات تتبع التمارين بما تفعله فعلاً ببياناتك: Strava وNike Run Club وSamsung Health وApple Fitness وSuu. أيها يحسب السعرات وأيها يحسب الماء.</p>
+                        <div class="bi-meta"><time datetime="2026-08-24">24 أغسطس 2026</time><span aria-hidden="true">·</span><span>قراءة: 6 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/ar/tatbiq-wahid-mae-suerat-tamarin.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-tatbiq-wahid-mae-suerat-tamarin.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ مقارنات التطبيقات</span>
+                        <h3>هل يوجد تطبيق يتتبّع الماء والسعرات والتمارين معًا؟</h3>
+                        <p>تبحث عن تطبيق واحد لتتبّع الماء والسعرات والتمارين معًا؟ لماذا يهمّ التتبّع المدمج، وأيّ التطبيقات تفعله، وكيف يحلّه Suu بالتسجيل الصوتي والسعرات بالصورة ومزامنة…</p>
+                        <div class="bi-meta"><time datetime="2026-07-07">7 يوليو 2026</time><span aria-hidden="true">·</span><span>قراءة: 3 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/ar/afdal-tatbiq-hisab-suerat.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-afdal-tatbiq-hisab-suerat.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ مقارنات التطبيقات</span>
+                        <h3>أفضل تطبيق لحساب السعرات الحرارية 2026: Suu مقابل MyFitnessPal وYazio وLifesum وCronometer</h3>
+                        <p>قارنّا أفضل تطبيقات حساب السعرات والتغذية لعام 2026: Suu مقابل MyFitnessPal وYazio وLifesum وCronometer — تسجيل صوتي، حساب سعرات بالصورة، وتتبّع الماء والسعرات…</p>
+                        <div class="bi-meta"><time datetime="2026-07-07">7 يوليو 2026</time><span aria-hidden="true">·</span><span>قراءة: 7 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/ar/suu-vs-yazio.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-suu-vs-yazio.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ مقارنات التطبيقات</span>
+                        <h3>Suu مقابل Yazio: أيّهما أفضل؟ (2026)</h3>
+                        <p>مقارنة Suu وYazio لعام 2026: تسجيل صوتي، سعرات بالصورة، تتبّع الماء والسعرات والتمارين في تطبيق واحد وعلم ترطيب حقيقي — مقابل مؤقّت الصيام والوصفات في Yazio.</p>
+                        <div class="bi-meta"><time datetime="2026-07-07">7 يوليو 2026</time><span aria-hidden="true">·</span><span>قراءة: 3 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#00796B;--bg-c:#E0F2F1">
+                <a href="/blog/ar/suu-vs-myfitnesspal.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-suu-vs-myfitnesspal.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">⚖️ مقارنات التطبيقات</span>
+                        <h3>Suu مقابل MyFitnessPal: أيّهما أفضل؟ (2026)</h3>
+                        <p>مقارنة Suu وMyFitnessPal لعام 2026: تسجيل صوتي، سعرات بالصورة، وتتبّع الماء والسعرات والتمارين في تطبيق واحد، وواجهة عربية كاملة وسعر مناسب — أفضل بديل مجاني لـ…</p>
+                        <div class="bi-meta"><time datetime="2026-07-07">7 يوليو 2026</time><span aria-hidden="true">·</span><span>قراءة: 4 د</span></div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
 
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#0072C6,#43A047);color:white;">⚖️</div>
-            <div class="article-body">
-                <div class="article-tag">مقارنة</div>
-                <h3>أفضل بدائل Yazio في 2026: أيّها يناسبك؟</h3>
-                <p>تبحث عن بديل لتطبيق Yazio؟ قارنّا Suu وMyFitnessPal وLifesum وCronometer وCal AI في التسجيل والخطة المجانية والصيام والماء وتمارين GPS.</p>
-                <a href="blog/ar/badail-yazio.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-right"></i></a>
+    <section class="bi-sec" id="cat-suu" data-cat="suu" aria-labelledby="cat-suu-h" style="--c:#5E35B1;--bg-c:#EDE7F6">
+        <div class="bi-sec-head">
+            <div class="bi-sec-ico" aria-hidden="true">📱</div>
+            <div>
+                <h2 id="cat-suu-h">Suu: الميزات والأخبار <span class="n">7</span></h2>
+                <p>ميزات Suu وتحديثاته، وبرنامج التبرع، وكيف تُحمى بياناتك.</p>
             </div>
-        </article>
+        </div>
+        <div class="bi-grid">
+<article class="bi-card" style="--c:#5E35B1;--bg-c:#EDE7F6">
+                <a href="/blog/ar/hal-tatbiq-suu-amin.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-hal-tatbiq-suu-amin.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">📱 Suu: الميزات والأخبار</span>
+                        <h3>هل تطبيق Suu آمن؟ من يقف وراءه وكيف تُحمى بياناتك</h3>
+                        <p>من يطوّر Suu وكيف تُحمى بياناتك؟ تطبيق شركة مسجّلة رسميًا نما داخل حاضنة BTM في إسطنبول: GDPR وKVKK وتشفير AES-256 ولا بيع للبيانات.</p>
+                        <div class="bi-meta"><time datetime="2026-10-14">14 أكتوبر 2026</time><span aria-hidden="true">·</span><span>قراءة: 6 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#5E35B1;--bg-c:#EDE7F6">
+                <a href="/blog/ar/hal-yastahiq-bina-tatbiq-tatabbu.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-hal-yastahiq-bina-tatbiq-tatabbu.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">📱 Suu: الميزات والأخبار</span>
+                        <h3>هل يستحق بناء تطبيق تتبع في 2026؟</h3>
+                        <p>تفكّر في بناء عدّاد سعرات أو تطبيق تذكير بشرب الماء أو تطبيق تمارين؟ مطوّر بنى واحدًا يرسم خريطة سوق 2026: MyFitnessPal بأكثر من 200 مليون مستخدم، استحواذه على Cal…</p>
+                        <div class="bi-meta"><time datetime="2026-09-14">14 سبتمبر 2026</time><span aria-hidden="true">·</span><span>قراءة: 10 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#5E35B1;--bg-c:#EDE7F6">
+                <a href="/blog/ar/tasjil-suerat-bil-sawt.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-tasjil-suerat-bil-sawt.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">📱 Suu: الميزات والأخبار</span>
+                        <h3>تسجيل السعرات بالصوت: كيف يعمل إدخال الوجبات بالكلام؟</h3>
+                        <p>هل يمكن تسجيل السعرات والوجبات بالكلام؟ كيف يعمل الإدخال الصوتي للوجبات، أيّ تطبيق يفعله، ما مدى دقّته وكيف تُحمى الخصوصية؟ تتبّع السعرات بالكلام مع Suu.</p>
+                        <div class="bi-meta"><time datetime="2026-07-07">7 يوليو 2026</time><span aria-hidden="true">·</span><span>قراءة: 3 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#5E35B1;--bg-c:#EDE7F6">
+                <a href="/blog/ar/alwade-albasit-walmutaqaddim.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-alwade-albasit-walmutaqaddim.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">📱 Suu: الميزات والأخبار</span>
+                        <h3>الوضع البسيط والمتقدم في Suu: تتبّع الماء على طريقتك</h3>
+                        <p>يعمل Suu الآن بوضعين: الوضع البسيط بإضافة الماء بنقرة واحدة، والوضع المتقدم بإحصائيات تفصيلية ولوحة إضافة سريعة. ما الفرق، وأيهما يناسبك، وكيف تبدّل بينهما — مجاناً…</p>
+                        <div class="bi-meta"><time datetime="2026-06-14">14 يونيو 2026</time><span aria-hidden="true">·</span><span>قراءة: 3 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#5E35B1;--bg-c:#EDE7F6">
+                <a href="/blog/ar/hayawan-aleef-aleab-mini.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-hayawan-aleef-aleab-mini.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">📱 Suu: الميزات والأخبار</span>
+                        <h3>الحيوان الأليف في Suu: قطة/كلب + 4 ألعاب + تلبيس</h3>
+                        <p>ميزة جديدة في Suu: اختر قطة أو كلباً ودع الحيوان الأليف يتولى عداد الـ streak. العب 4 ألعاب صغيرة (تفجير القطرات، الجمع، الطرح، تطابق الذاكرة)، اكسب قطرات وألبس…</p>
+                        <div class="bi-meta"><time datetime="2026-05-22">22 مايو 2026</time><span aria-hidden="true">·</span><span>قراءة: 5 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#5E35B1;--bg-c:#EDE7F6">
+                <a href="/blog/ar/barnamaj-tabarru-abar-almae-afriqia.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-barnamaj-tabarru-abar-almae-afriqia.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">📱 Suu: الميزات والأخبار</span>
+                        <h3>برنامج تبرع Suu Premium بنسبة 2%: آبار مياه شفافة في أفريقيا</h3>
+                        <p>يتم التبرع بنسبة 2% من كل اشتراك Suu Premium لمشاريع آبار المياه النظيفة في أفريقيا. جميع الإيصالات علنية، JSON مفتوح، يتم تتبعه عبر git.</p>
+                        <div class="bi-meta"><time datetime="2026-05-11">11 مايو 2026</time><span aria-hidden="true">·</span><span>قراءة: 3 د</span></div>
+                    </div>
+                </a>
+            </article>
+<article class="bi-card" style="--c:#5E35B1;--bg-c:#EDE7F6">
+                <a href="/blog/ar/nadhari-almae-maa-asdiqa.html">
+                    <div class="bi-thumb"><img src="/assets/og/blog/thumb/ar-nadhari-almae-maa-asdiqa.webp" alt="" width="600" height="315" loading="lazy" decoding="async"></div>
+                    <div class="bi-body">
+                        <span class="bi-tag">📱 Suu: الميزات والأخبار</span>
+                        <h3>تحدي شرب الماء مع الأصدقاء: كيف يعمل الدوري الأسبوعي في Suu</h3>
+                        <p>لوحة صدارة أسبوعية مع ما يصل إلى 4 أصدقاء (مجانًا) ودوريات خاصة (Premium): تابع تقدمهم وأرسل إشعارات التشجيع.</p>
+                        <div class="bi-meta"><time datetime="2026-04-07">7 أبريل 2026</time><span aria-hidden="true">·</span><span>قراءة: 4 د</span></div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
 
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1E88E5,#42A5F5);color:white;">💧</div>
-            <div class="article-body">
-                <div class="article-tag">دليل</div>
-                <h3>كيف أتوقف عن الأكل ليلًا؟ 7 حلول عملية</h3>
-                <p>الأكل الليلي نادرًا ما يكون من الجوع؛ غالبًا سببه تخطّي الفطور وقلة النوم والعادة. الأسباب و7 حلول مجرّبة، مع الأدلة العلمية.</p>
-                <a href="blog/ar/al-akl-laylan.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1E88E5,#42A5F5);color:white;">💧</div>
-            <div class="article-body">
-                <div class="article-tag">دليل</div>
-                <h3>لماذا أشعر بالتعب دائمًا؟ أشيع 8 أسباب</h3>
-                <p>أشيع أسباب التعب المستمر: النوم، التوتر، الخمول، التغذية، قلة الماء، الكافيين، نقص الحديد وأسباب طبية. ومتى يجب أن تراجع الطبيب.</p>
-                <a href="blog/ar/limadha-ashur-bitaab-daiman.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1E88E5,#42A5F5);color:white;">💧</div>
-            <div class="article-body">
-                <div class="article-tag">دليل</div>
-                <h3>لماذا لا ينقص وزني؟ 7 أسباب وقائمة تحقق</h3>
-                <p>لماذا يتوقف الميزان رغم العجز الحراري؟ تسجيل ناقص، مشروبات، عطلة نهاية الأسبوع، سعرات التمارين، تقلّب الماء، وانخفاض الاحتياج. قائمة تحقق لأربعة أسابيع.</p>
-                <a href="blog/ar/limadha-la-yanqus-wazni.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1E88E5,#42A5F5);color:white;">💧</div>
-            <div class="article-body">
-                <div class="article-tag">دليل</div>
-                <h3>أشعر بالكسل عن الرياضة: 7 طرق لتبدأ رغم ذلك</h3>
-                <p>الكسل عن الرياضة ليس مشكلة إرادة بل صعوبة في البدء. ابدأ بمشي 10 دقائق، حدّد الوقت والمكان مسبقًا، وأشرك صديقًا. مع الأدلة العلمية.</p>
-                <a href="blog/ar/alkasal-an-arriyada.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1E88E5,#42A5F5);color:white;">💧</div>
-            <div class="article-body">
-                <div class="article-tag">دليل</div>
-                <h3>أتوقف دائمًا عن حساب السعرات: 7 طرق للاستمرار</h3>
-                <p>معظم الناس يتوقفون عن حساب السعرات خلال أسابيع. الاستمرارية أهم من الدقة: سجّل تقريبيًا، ابدأ بوجبة واحدة، وانظر إلى المتوسط الأسبوعي. مع الأدلة.</p>
-                <a href="blog/ar/malal-hisab-al-suerat.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1E88E5,#42A5F5);color:white;">💧</div>
-            <div class="article-body">
-                <div class="article-tag">دليل</div>
-                <h3>كيف أترك المشروبات الغازية؟ خطة تدريجية لأربعة أسابيع</h3>
-                <p>بدل التوقف المفاجئ، خفّف المشروبات الغازية خلال 4 أسابيع: المحفّزات، صداع الكافيين، والانتقال إلى الماء الفوّار، مع الأثر الحقيقي لعلبة واحدة.</p>
-                <a href="blog/ar/tark-almashroobat-alghaziya.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1E88E5,#42A5F5);color:white;">💧</div>
-            <div class="article-body">
-                <div class="article-tag">دليل</div>
-                <h3>هل يستحق بناء تطبيق تتبع في 2026؟</h3>
-                <p>تفكّر في بناء عدّاد سعرات أو تطبيق تذكير بشرب الماء أو تطبيق تمارين؟ مطوّر بنى واحدًا يرسم خريطة سوق 2026: MyFitnessPal بأكثر من 200 مليون مستخدم، استحواذه على…</p>
-                <a href="blog/ar/hal-yastahiq-bina-tatbiq-tatabbu.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1E88E5,#42A5F5);color:white;">💧</div>
-            <div class="article-body">
-                <div class="article-tag">دليل</div>
-                <h3>أفضل تطبيق لتتبع التمارين في 2026</h3>
-                <p>قارنّا تطبيقات تتبع التمارين بما تفعله فعلاً ببياناتك: Strava وNike Run Club وSamsung Health وApple Fitness وSuu. أيها يحسب السعرات وأيها يحسب الماء.</p>
-                <a href="blog/ar/afdal-tatbiq-tamarin.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1B5E20,#43A047);color:white;">🏆</div>
-            <div class="article-body">
-                <div class="article-tag">مقارنة</div>
-                <h3>أفضل تطبيق لحساب السعرات 2026: Suu مقابل MyFitnessPal وYazio وLifesum وCronometer</h3>
-                <p>مقارنة 5 تطبيقات تغذية شائعة. الماء والسعرات والتمارين في تطبيق واحد، تسجيل صوتي وبالصورة — مع مصادر.</p>
-                <a href="blog/ar/afdal-tatbiq-hisab-suerat.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#0072C6,#43A047);color:white;">⚖️</div>
-            <div class="article-body">
-                <div class="article-tag">مقارنة</div>
-                <h3>Suu مقابل MyFitnessPal: أيّهما أفضل؟</h3>
-                <p>أفضل بديل شامل ومجاني لـ MyFitnessPal؟ التسجيل الصوتي وعلم الترطيب والسعر مقارنةً.</p>
-                <a href="blog/ar/suu-vs-myfitnesspal.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#FF7043,#43A047);color:white;">⚖️</div>
-            <div class="article-body">
-                <div class="article-tag">مقارنة</div>
-                <h3>Suu مقابل Yazio: أيّهما أفضل؟</h3>
-                <p>الصيام المتقطع مقابل علم الترطيب الحقيقي. تسجيل صوتي/بالصورة والماء والسعرات والتمارين في تطبيق واحد.</p>
-                <a href="blog/ar/suu-vs-yazio.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1B5E20,#2E9E5B);color:white;">💡</div>
-            <div class="article-body">
-                <div class="article-tag">دليل</div>
-                <h3>هل يوجد تطبيق يتتبّع الماء والسعرات والتمارين معًا؟</h3>
-                <p>لماذا يهمّ التتبّع المدمج، وكيف يحلّه Suu في تطبيق واحد بالتسجيل الصوتي/بالصورة ومزامنة Health.</p>
-                <a href="blog/ar/tatbiq-wahid-mae-suerat-tamarin.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#4527A0,#7E57C2);color:white;">🎙️</div>
-            <div class="article-body">
-                <div class="article-tag">ميزة الذكاء الاصطناعي</div>
-                <h3>تسجيل السعرات بالصوت: كيف يعمل إدخال الوجبات بالكلام؟</h3>
-                <p>هل يمكن تسجيل الوجبات بالكلام، ما دقّته وكيف تُحمى الخصوصية؟ تتبّع السعرات بالكلام مع Suu.</p>
-                <a href="blog/ar/tasjil-suerat-bil-sawt.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#43A047,#66BB6A);color:white;">🍽️</div>
-            <div class="article-body">
-                <div class="article-tag">تغذية</div>
-                <h3>حساب الماكروز: البروتين والكربوهيدرات والدهون</h3>
-                <p>كيف تحسب ماكروزك من الصفر؟ صيغة خطوة بخطوة من السعرات إلى الماكروز، مثال محلول، وتتبع سهل بالذكاء الاصطناعي.</p>
-                <a href="blog/ar/hisab-al-macro.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#FB8C00,#FFA726);color:white;">⚖️</div>
-            <div class="article-body">
-                <div class="article-tag">خسارة الوزن</div>
-                <h3>ما هو العجز الحراري وكيف تحققه؟</h3>
-                <p>الآلية الحقيقية الوحيدة وراء خسارة الوزن. كم يجب أن يكون، الوتيرة الآمنة، الأخطاء الشائعة، وتتبع سهل للسعرات.</p>
-                <a href="blog/ar/al-ajz-al-harari.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#4A90D9,#29B6F6);color:white;">🏃</div>
-            <div class="article-body">
-                <div class="article-tag">تمارين</div>
-                <h3>كم سعرة حرارية تحرق التمارين؟</h3>
-                <p>احسب رقمك الخاص بصيغة MET، مع جدول أنشطة للمشي والجري والدراجة، وتتبع تلقائي مع Apple Health.</p>
-                <a href="blog/ar/hurq-al-suerat.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#7E57C2,#9575CD);color:white;">🤖</div>
-            <div class="article-body">
-                <div class="article-tag">ذكاء اصطناعي</div>
-                <h3>حساب السعرات بالصورة: تتبع التغذية بالذكاء الاصطناعي</h3>
-                <p>كيف يعمل حساب السعرات من صورة الطعام، وما مدى دقته، ونصائح لجعله أدق.</p>
-                <a href="blog/ar/hisab-al-suerat-bil-sura.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#4A90D9,#29B6F6);color:white;">🎚️</div>
-            <div class="article-body">
-                <div class="article-tag">ميزة جديدة</div>
-                <h3>الوضع البسيط والمتقدم: تتبّع الماء على طريقتك</h3>
-                <p>يعمل Suu الآن بوضعين: الوضع البسيط بإضافة بنقرة واحدة، والوضع المتقدم بإحصائيات تفصيلية ولوحة إضافة سريعة. أيهما يناسبك، وكيف تبدّل بينهما؟</p>
-                <a href="blog/ar/alwade-albasit-walmutaqaddim.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#6B4FB8,#B26FFF);color:white;">🐾</div>
-            <div class="article-body">
-                <div class="article-tag">ميزة جديدة</div>
-                <h3>الحيوان الأليف في Suu: قطة/كلب + 4 ألعاب صغيرة + تلبيس</h3>
-                <p>عداد الستريك أصبح ملك حيوانك الأليف. ألعاب تفجير القطرات، الجمع، الطرح وتطابق الذاكرة تكسبك قطرات لتلبيس قطتك أو كلبك.</p>
-                <a href="blog/ar/hayawan-aleef-aleab-mini.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#2E6FB8,#6FB3FF);color:white;">🌍</div>
-            <div class="article-body">
-                <div class="article-tag">المسؤولية الاجتماعية</div>
-                <h3>برنامج تبرع Suu Premium بنسبة 2%: آبار مياه شفافة في أفريقيا</h3>
-                <p>يتم التبرع بنسبة 2% من كل اشتراك Premium لمشاريع آبار المياه النظيفة في أفريقيا. الإيصالات علنية، JSON مفتوح، git متتبع.</p>
-                <a href="blog/ar/barnamaj-tabarru-abar-almae-afriqia.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#e3f2fd,#bbdefb);">💧</div>
-            <div class="article-body">
-                <div class="article-tag">الصحة</div>
-                <h3>10 فوائد علمية لشرب الماء يومياً</h3>
-                <p>كيف يحسّن الماء وظائف المخ والأيض وصحة البشرة والمناعة — مدعوم بأبحاث علمية محكّمة.</p>
-                <a href="blog/ar/fawaid-shurb-almae.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#e8f5e9,#c8e6c9);">🧮</div>
-            <div class="article-body">
-                <div class="article-tag">دليل الترطيب</div>
-                <h3>كم لتراً من الماء يجب أن تشرب يومياً؟</h3>
-                <p>المعادلة العلمية لحساب هدفك اليومي من الماء بناءً على وزنك ومستوى نشاطك والمناخ.</p>
-                <a href="blog/ar/kam-litr-mae-yawmiyan.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#e0f2f1,#b2dfdb);">✅</div>
-            <div class="article-body">
-                <div class="article-tag">العادات</div>
-                <h3>7 طرق علمية لتكوين عادة شرب الماء بشكل دائم</h3>
-                <p>استراتيجيات علم السلوك لجعل شرب الماء تلقائياً — تكديس العادات، التذكيرات الذكية، السلاسل والمساءلة الاجتماعية.</p>
-                <a href="blog/ar/adat-shurb-almae.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#fff8e1,#ffecb3);">📱</div>
-            <div class="article-body">
-                <div class="article-tag">مقارنة التطبيقات</div>
-                <h3>أفضل تطبيق لتتبع شرب الماء في 2026</h3>
-                <p>مقارنة شاملة لأفضل تطبيقات تتبع شرب الماء — الميزات والتصميم والأسعار وما الذي يجعل Suu متميزاً.</p>
-                <a href="blog/ar/afdal-tatbiq-mae.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#fce4ec,#f8bbd0);">💪</div>
-            <div class="article-body">
-                <div class="article-tag">الرياضة</div>
-                <h3>كم يجب أن تشرب من الماء أثناء الرياضة؟</h3>
-                <p>كمية الماء المثلى قبل وأثناء وبعد التمرين. فقدان العرق والإلكتروليتات ودليل الترطيب الرياضي.</p>
-                <a href="blog/ar/arriyada-waltartib.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#efebe9,#d7ccc8);">☕</div>
-            <div class="article-body">
-                <div class="article-tag">التغذية</div>
-                <h3>هل القهوة والشاي تعوّض عن الماء؟</h3>
-                <p>ما هو عامل الجفاف؟ كيف تحسب المساهمة الحقيقية لكل مشروب في ترطيبك اليومي.</p>
-                <a href="blog/ar/alqahwa-walshay-walmae.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#fff3e0,#ffe0b2);">🔬</div>
-            <div class="article-body">
-                <div class="article-tag">الصحة</div>
-                <h3>علامات الجفاف: ماذا يحدث عندما يطلب جسمك الماء؟</h3>
-                <p>من فقدان 1% من الماء: صداع، تعب، دليل لون البول. تعرّف على علامات الجفاف قبل فوات الأوان.</p>
-                <a href="blog/ar/alamat-aljafaf.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#f3e5f5,#e1bee7);">🌅</div>
-            <div class="article-body">
-                <div class="article-tag">الروتين الصباحي</div>
-                <h3>7 فوائد لشرب الماء على معدة فارغة صباحاً</h3>
-                <p>تسريع الأيض وطرد السموم وتحسين الهضم — لماذا يجب أن يكون الماء أول شيء تشربه كل صباح.</p>
-                <a href="blog/ar/fawaid-shurb-almae-sabahan.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#e8eaf6,#c5cae9);">⚖️</div>
-            <div class="article-body">
-                <div class="article-tag">الوزن والصحة</div>
-                <h3>هل شرب الماء يساعد على إنقاص الوزن؟</h3>
-                <p>الماء قبل الوجبات، التأثير الحراري، والخلط بين الجوع والعطش — علاقة الماء بإدارة الوزن علمياً.</p>
-                <a href="blog/ar/almae-walidara-alwazn.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#fce4ec,#f8bbd0);">✨</div>
-            <div class="article-body">
-                <div class="article-tag">صحة البشرة</div>
-                <h3>هل شرب الماء يحسّن البشرة؟</h3>
-                <p>العلاقة العلمية بين الترطيب وصحة الجلد — المرونة والشيخوخة والكولاجين وما يمكن للماء فعله حقاً.</p>
-                <a href="blog/ar/almae-walsihha-aljildiyya.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#e8f5e9,#c8e6c9);">🌙</div>
-            <div class="article-body">
-                <div class="article-tag">النوم</div>
-                <h3>كيف يؤثر الجفاف على نومك؟</h3>
-                <p>الجفاف يضعف جودة النوم — تعلّم التوقيت المثالي وكمية الماء قبل النوم واستراتيجيات ترطيب الصباح.</p>
-                <a href="blog/ar/almae-wannawm.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#e0f7fa,#b2ebf2);">🫘</div>
-            <div class="article-body">
-                <div class="article-tag">صحة الكلى</div>
-                <h3>كيف يحمي شرب الماء كليتيك؟</h3>
-                <p>حصوات الكلى والتهابات المسالك البولية وأمراض الكلى المزمنة — كيف يدعم الترطيب المستمر وظائف الكلى.</p>
-                <a href="blog/ar/almae-wasihhat-alkulaa.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#fce4ec,#f8bbd0);">🤰</div>
-            <div class="article-body">
-                <div class="article-tag">الحمل</div>
-                <h3>كمية الماء الموصى بها أثناء الحمل: دليل كل مرحلة</h3>
-                <p>يزداد حجم الدم 50% أثناء الحمل. اعرفي بالضبط كم تشربين في كل مرحلة. وضع الحمل الجديد في Suu يحسب هدفك تلقائياً.</p>
-                <a href="blog/ar/almae-walhml.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#e0f7fa,#b2ebf2);">🤱</div>
-            <div class="article-body">
-                <div class="article-tag">الرضاعة</div>
-                <h3>الترطيب أثناء الرضاعة: كم يحتاج حليب الثدي من الماء؟</h3>
-                <p>حليب الثدي مكوّن من 87% ماء. الأم المرضعة تحتاج 700ml إضافية يومياً. وضع الرضاعة في Suu يضبط هدفك تلقائياً.</p>
-                <a href="blog/ar/almae-walrida.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#fff3e0,#ffe0b2);">🏆</div>
-            <div class="article-body">
-                <div class="article-tag">اجتماعي</div>
-                <h3>تحدي شرب الماء مع الأصدقاء: كيف يعمل الدوري الأسبوعي في Suu</h3>
-                <p>لوحة صدارة أسبوعية مع ما يصل إلى 4 أصدقاء (مجانًا) ودوريات خاصة (Premium): تابع تقدمهم وأرسل إشعارات التشجيع.</p>
-                <a href="blog/ar/nadhari-almae-maa-asdiqa.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#0f3a82,#00ACC1);color:#fff;">🏃</div>
-            <div class="article-body">
-                <div class="article-tag">النشاط البدني</div>
-                <h3>تتبع الماء حسب النشاط البدني: المشي، الجري، السباحة</h3>
-                <p>Suu يقرأ نشاطك من Apple Health و Google Fit ويرفع هدف الماء اليومي تلقائياً. حساب علمي لأكثر من 30 نوع تمرين مع دمج بيانات الطقس.</p>
-                <a href="blog/ar/almae-walnashat-aljasadi.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#5D2A1F,#BF360C);color:#fff;">🧪</div>
-            <div class="article-body">
-                <div class="article-tag">الكافيين والسكر</div>
-                <h3>تتبع الكافيين والسكر: الحدود الخفية في مشروباتك</h3>
-                <p>Suu يحسب الآن الكافيين (مغ) والسكر (غ) ل91 مشروبًا. تنبيهات ذكية وفقاً لحدود FDA اليومية 400 مغ كافيين و WHO 25 غ سكر.</p>
-                <a href="blog/ar/alkafayin-walsukar.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#3E2723,#6D4C41);color:#fff;">☕</div>
-            <div class="article-body">
-                <div class="article-tag">تقليل القهوة</div>
-                <h3>كيف أقلل من شرب القهوة: 7 استراتيجيات علمية</h3>
-                <p>للذين يبحثون عن "أشرب الكثير من القهوة، ساعدوني". دليل التخلص من إدمان الكافيين، التقليل التدريجي وخطة 7 أيام مع Suu.</p>
-                <a href="blog/ar/taqlil-alqahwa.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#4E342E,#8D6E63);color:#fff;">📊</div>
-            <div class="article-body">
-                <div class="article-tag">حدود القهوة</div>
-                <h3>كم فنجان قهوة في اليوم آمن؟ دليل حدود FDA</h3>
-                <p>400 مغ للبالغين الأصحاء، 200 مغ للحوامل، 100 مغ للحساسين. توصيات إنزيم CYP1A2 والتحمل الشخصي.</p>
-                <a href="blog/ar/kam-fanjan-qahwa.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#4A148C,#7B1FA2);color:#fff;">🍷</div>
-            <div class="article-body">
-                <div class="article-tag">الكحول والترطيب</div>
-                <h3>الترطيب بعد الكحول: العلم وراء الوقاية من أعراض اليوم التالي</h3>
-                <p>ماء التعويض للبيرة والنبيذ والويسكي. قاعدة 1:1، خطة الترطيب من 4 مراحل وتتبع مع Suu.</p>
-                <a href="blog/ar/tarteeb-baad-alkohol.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#1B5E20,#2E7D32);color:#fff;">⚡</div>
-            <div class="article-body">
-                <div class="article-tag">مشروبات الطاقة</div>
-                <h3>كيف تتحكم في استهلاك مشروبات الطاقة؟ Red Bull و Monster</h3>
-                <p>تتبع الكافيين/السكر لـ Red Bull و Monster و Burn. حد FDA، البدائل الصحية وخطة 4 أسابيع للتقليل.</p>
-                <a href="blog/ar/tahakum-mashroob-attaqa.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#E65100,#FB8C00);color:#fff;">🍊</div>
-            <div class="article-body">
-                <div class="article-tag">عصير أم ماء</div>
-                <h3>عصير أم ماء؟ أيهما أصح؟</h3>
-                <p>مقارنة الطازج مع المعلب، عصير للأطفال، تأثير الحمية وتتبع السكر مع Suu.</p>
-                <a href="blog/ar/aaseer-am-mae.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
-        <article class="article-card">
-            <div class="article-thumb" style="background:linear-gradient(135deg,#00695C,#00897B);color:#fff;">🍵</div>
-            <div class="article-body">
-                <div class="article-tag">الشاي والترطيب</div>
-                <h3>هل الشاي يرطب الجسم؟ معامل الترطيب حسب نوع الشاي</h3>
-                <p>معامل الترطيب والكافيين لـ 12+ نوع شاي. شاي الأعشاب 100% ترطيب، مراجع Maughan 2016 العلمية.</p>
-                <a href="blog/ar/tarteeb-asshay.html" class="read-more">اقرأ المقال <i class="fas fa-arrow-left"></i></a>
-            </div>
-        </article>
-
+    <div class="bi-empty" id="bi-empty" hidden>
+        <p>لا توجد مقالات تطابق بحثك.</p>
+        <button type="button" id="bi-reset">مسح البحث</button>
     </div>
 
     <div class="cta-banner">
-        <h2>ابدأ تتبع كميتك اليومية من الماء</h2>
-        <p>Suu يحوّل هذه النصائح إلى عادات يومية — أهداف شخصية، تذكيرات ذكية، ودوري الأصدقاء. مجاني على iOS وAndroid بالعربية.</p>
+        <h2>حوّل ما تقرؤه إلى عادة يومية</h2>
+        <p>يتتبّع Suu الماء والسعرات والرياضة في تطبيق واحد. مجاني على iOS وAndroid.</p>
         <div class="cta-btns">
-            <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" class="cta-btn" target="_blank" rel="noopener">
-                <i class="fab fa-apple"></i> App Store
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro" class="cta-btn" target="_blank" rel="noopener">
-                <i class="fab fa-google-play"></i> Google Play
-            </a>
+            <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" class="cta-btn" target="_blank" rel="noopener"><i class="fab fa-apple"></i> App Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro" class="cta-btn" target="_blank" rel="noopener"><i class="fab fa-google-play"></i> Google Play</a>
         </div>
     </div>
-</div>
+</main>
+
+<footer class="bi-foot">
+    <div class="bi-foot-in">
+        <nav aria-label="Suu">
+            <a href="muqaranat.html">المقارنات</a>
+            <a href="faq-ar.html">الأسئلة الشائعة</a>
+            <a href="/hosgeldiniz-ar.html">الرئيسية</a>
+            <a href="/feed-ar.xml">خلاصة RSS</a>
+            <a href="/llms-ar.txt">ملخص للمساعدات الذكية (llms.txt)</a>
+        </nav>
+        <span>© 2026 Suu</span>
+    </div>
+</footer>
+
+<script>
+(function () {
+    'use strict';
+    var LANG = document.documentElement.lang || 'en';
+    var q = document.getElementById('bi-q');
+    var clearBtn = document.getElementById('bi-clear');
+    var status = document.getElementById('bi-status');
+    var empty = document.getElementById('bi-empty');
+    var latest = document.getElementById('latest');
+    var chips = [].slice.call(document.querySelectorAll('.bi-chip'));
+    var secs = [].slice.call(document.querySelectorAll('.bi-sec[data-cat]'));
+    var RESULTS = "النتائج: {n}";
+    var state = { cat: 'all', q: '' };
+
+    // Case/diacritic-insensitive matching (ı/i, ç/c, ş/s, Arabic hamza/taa marbuta …)
+    function norm(s) {
+        return (s || '').toLocaleLowerCase(LANG).normalize('NFD')
+            .replace(/[̀-ًͯ-ٰٟـ]/g, '')
+            .replace(/ı/g, 'i').replace(/[أإآ]/g, 'ا').replace(/ة/g, 'ه').replace(/ى/g, 'ي').replace(/ё/g, 'е');
+    }
+    secs.forEach(function (s) {
+        // Title + summary only: the category tag would make "coffee" match every drinks card.
+        [].forEach.call(s.querySelectorAll('.bi-card'), function (c) {
+            c._t = norm(c.querySelector('h3').textContent + ' ' + c.querySelector('p').textContent);
+        });
+    });
+
+    function apply(scroll) {
+        var toks = norm(state.q).split(/\s+/).filter(Boolean);
+        var shown = 0;
+        secs.forEach(function (s) {
+            var catOk = state.cat === 'all' || s.getAttribute('data-cat') === state.cat;
+            var n = 0;
+            [].forEach.call(s.querySelectorAll('.bi-card'), function (c) {
+                var ok = catOk && toks.every(function (t) { return c._t.indexOf(t) !== -1; });
+                c.hidden = !ok;
+                if (ok) n++;
+            });
+            s.hidden = n === 0;
+            shown += n;
+        });
+        latest.hidden = state.cat !== 'all' || toks.length > 0;
+        empty.hidden = shown > 0;
+        clearBtn.hidden = !state.q;
+        status.textContent = toks.length ? RESULTS.replace('{n}', shown) : '';
+        chips.forEach(function (ch) {
+            ch.setAttribute('aria-current', ch.getAttribute('data-cat') === state.cat ? 'true' : 'false');
+        });
+        if (scroll) {
+            var top = document.getElementById('top').getBoundingClientRect().top + window.pageYOffset - 130;
+            if (window.pageYOffset > top) window.scrollTo(0, Math.max(0, top));
+        }
+    }
+
+    chips.forEach(function (ch) {
+        ch.addEventListener('click', function (e) {
+            e.preventDefault();
+            state.cat = ch.getAttribute('data-cat');
+            var sec = state.cat === 'all' ? null : document.querySelector('.bi-sec[data-cat="' + state.cat + '"]');
+            try { history.replaceState(null, '', sec ? '#' + sec.id : location.pathname); } catch (err) {}
+            apply(true);
+            ch.scrollIntoView({ block: 'nearest', inline: 'center' });
+        });
+    });
+    q.addEventListener('input', function () { state.q = q.value; apply(false); });
+    function reset() { q.value = ''; state.q = ''; state.cat = 'all'; apply(true); q.focus(); }
+    clearBtn.addEventListener('click', reset);
+    document.getElementById('bi-reset').addEventListener('click', reset);
+
+    // A shared link like blog.html#cat-calories opens that category filtered.
+    var h = location.hash.slice(1);
+    var target = h && document.querySelector('.bi-sec[data-cat][id="' + h.replace(/"/g, '') + '"]');
+    if (target) { state.cat = target.getAttribute('data-cat'); apply(false); }
+})();
+</script>
 
 <script src="lang-switcher.js?v=3" defer></script>
 <link rel="stylesheet" href="donation-widget.css?v=6">
