@@ -225,8 +225,8 @@
     <div class="container">
         <div class="header">
             <div class="logo">💧</div>
-            <h1>Suu - Kullanım Şartları</h1>
-            <p class="last-updated">Son Güncelleme: 8 Ekim 2026</p>
+            <h1 id="docTitle">Suu - Kullanım Şartları</h1>
+            <p class="last-updated" id="docUpdated">Son Güncelleme: 14 Ekim 2026</p>
         </div>
 
         <div class="language-switcher" role="group" aria-label="Dil Seçici">
@@ -234,6 +234,9 @@
             <button type="button" class="language-btn" data-lang="en" aria-pressed="false">English</button>
             <button type="button" class="language-btn" data-lang="ar" aria-pressed="false">العربية</button>
             <button type="button" class="language-btn" data-lang="ru" aria-pressed="false">Русский</button>
+            <button type="button" class="language-btn" data-lang="de" aria-pressed="false">Deutsch</button>
+            <button type="button" class="language-btn" data-lang="it" aria-pressed="false">Italiano</button>
+            <button type="button" class="language-btn" data-lang="uk" aria-pressed="false">Українська</button>
         </div>
 
         <!-- Turkish -->
@@ -657,7 +660,7 @@
             </ul>
 
             <h2>11. Privacy and Data Protection</h2>
-            <p>For detailed information on how your personal data is collected, used, and protected, please review our <a href="gizlilik-politikasi.html">Privacy Policy</a>. The Privacy Policy is an integral part of these terms of use.</p>
+            <p>For detailed information on how your personal data is collected, used, and protected, please review our <a href="gizlilik-politikasi.html?lang=en">Privacy Policy</a>. The Privacy Policy is an integral part of these terms of use.</p>
 
             <h2>12. Governing Law and Jurisdiction</h2>
             <h3>12.1 Governing Law</h3>
@@ -893,7 +896,7 @@
             </ul>
 
             <h2>11. الخصوصية وحماية البيانات</h2>
-            <p>للاطلاع على تفاصيل حول كيفية جمع بياناتك الشخصية واستخدامها وحمايتها، يُرجى مراجعة <a href="gizlilik-politikasi.html">سياسة الخصوصية</a>. تُعدّ سياسة الخصوصية جزءًا لا يتجزأ من شروط الاستخدام هذه.</p>
+            <p>للاطلاع على تفاصيل حول كيفية جمع بياناتك الشخصية واستخدامها وحمايتها، يُرجى مراجعة <a href="gizlilik-politikasi.html?lang=ar">سياسة الخصوصية</a>. تُعدّ سياسة الخصوصية جزءًا لا يتجزأ من شروط الاستخدام هذه.</p>
 
             <h2>12. القانون المطبق والاختصاص القضائي</h2>
             <h3>12.1 القانون المطبق</h3>
@@ -1129,7 +1132,7 @@
             </ul>
 
             <h2>11. Конфиденциальность и защита данных</h2>
-            <p>Подробную информацию о том, как собираются, используются и защищаются ваши персональные данные, см. в нашей <a href="gizlilik-politikasi.html">Политике конфиденциальности</a>. Политика конфиденциальности является неотъемлемой частью этих условий использования.</p>
+            <p>Подробную информацию о том, как собираются, используются и защищаются ваши персональные данные, см. в нашей <a href="gizlilik-politikasi.html?lang=ru">Политике конфиденциальности</a>. Политика конфиденциальности является неотъемлемой частью этих условий использования.</p>
 
             <h2>12. Применимое право и юрисдикция</h2>
             <h3>12.1 Применимое право</h3>
@@ -1180,52 +1183,819 @@
             </div>
         </div>
 
+        <!-- German -->
+        <div class="content terms-section" data-lang="de">
+            <div class="highlight">
+                <strong>Wichtig:</strong> Mit der Nutzung der Suu-Anwendung stimmen Sie diesen Bedingungen zu. Bitte lesen Sie sie sorgfältig.
+            </div>
+
+            <h2>1. Allgemeine Bestimmungen</h2>
+            <h3>1.1 Vertragsparteien</h3>
+            <p>Diese Vereinbarung wird geschlossen zwischen dem Anbieter der mobilen Anwendung Suu („Anwendung“) – <strong>Furkan Fındıklı</strong>, der die Anwendung unter der Marke <strong>Suu</strong> entwickelt und betreibt (im Folgenden „Suu“) – und der Person, die die Anwendung nutzt („Nutzer“, „Sie“).</p>
+            <ul>
+                <li><strong>Betreiber:</strong> Furkan Fındıklı</li>
+                <li><strong>Marke / App-Name:</strong> Suu</li>
+                <li><strong>Kontakt:</strong> <a href="mailto:info@suuapp.com">info@suuapp.com</a></li>
+                <li><strong>Web:</strong> <a href="https://suuapp.com">suuapp.com</a></li>
+            </ul>
+
+            <h3>1.2 Annahme</h3>
+            <p>Indem Sie die Anwendung herunterladen, installieren oder nutzen, gelten diese Nutzungsbedingungen als vollständig gelesen und angenommen. Wenn Sie diese Bedingungen nicht akzeptieren, dürfen Sie die Anwendung nicht nutzen.</p>
+
+            <h2>2. Leistungsbeschreibung</h2>
+            <h3>2.1 Was ist Suu?</h3>
+            <p>Suu ist eine mobile Anwendung, die Nutzern hilft, ihre tägliche Trinkmenge zu erfassen. Die Anwendung bietet folgende Funktionen:</p>
+            <ul>
+                <li>Erfassung der täglichen Trinkmenge</li>
+                <li>Persönliche Trinkziele</li>
+                <li>Erinnerungen und Benachrichtigungen</li>
+                <li>Fortschrittsverfolgung und Statistiken</li>
+                <li>Gesundheitsintegrationen (HealthKit, Google Fit)</li>
+            </ul>
+
+            <h3>2.2 Leistungsumfang</h3>
+            <p>Die Anwendung bietet kostenlose Grundfunktionen. In Zukunft können Premium-Funktionen eingeführt werden, die kostenpflichtig sein können. Nutzer werden informiert, bevor ein kostenpflichtiger Dienst beginnt.</p>
+
+            <h3>2.3 KI-Funktionen für Ernährung und Trinken</h3>
+            <p>Über einen Trink-Tracker hinaus bietet Suu KI-gestützte Assistenzfunktionen für Ernährung und Flüssigkeitszufuhr:</p>
+            <ul>
+                <li>Mahlzeiten/Getränke per Sprache oder Text hinzufügen, wobei die KI Festes und Flüssiges automatisch trennt</li>
+                <li>Fotoanalyse von Mahlzeiten für Schätzungen zu Lebensmitteln, Kalorien und Makronährstoffen (Premium)</li>
+                <li>Schätzungen von Nährwerten wie Kalorien, Eiweiß, Kohlenhydraten, Fett und Natrium sowie ein Ernährungswert von 1–100</li>
+                <li>Synchronisierung von Ernährungs- (Dietary) und Trinkdaten mit Apple HealthKit und Google Health Connect</li>
+            </ul>
+
+            <h2>3. Pflichten der Nutzer</h2>
+            <h3>3.1 Richtige Angaben</h3>
+            <p>Um die Anwendung sinnvoll zu nutzen, verpflichten Sie sich zu Folgendem:</p>
+            <ul>
+                <li>Ihre persönlichen Angaben korrekt und aktuell halten</li>
+                <li>Daten wie Alter, Gewicht und Größe wahrheitsgemäß angeben</li>
+                <li>Ihre Zugangsdaten sicher aufbewahren</li>
+                <li>Ihre Trinkmenge ordnungsgemäß erfassen</li>
+            </ul>
+
+            <h3>3.2 Bestimmungsgemäße Nutzung</h3>
+            <ul>
+                <li>Die Anwendung für ihren vorgesehenen Zweck nutzen</li>
+                <li>Anderen Nutzern oder dem System keinen Schaden zufügen</li>
+                <li>Keine rechtswidrigen Handlungen vornehmen</li>
+                <li>Die Anwendung nicht ohne Erlaubnis zu kommerziellen Zwecken nutzen</li>
+            </ul>
+
+            <h2>4. Verbotene Handlungen</h2>
+            <p>Folgende Handlungen sind streng verboten und können zur Schließung des Kontos führen:</p>
+
+            <h3>4.1 Technischer Missbrauch</h3>
+            <ul>
+                <li>Versuche, das System zu hacken oder zu beschädigen</li>
+                <li>Einsatz automatisierter Bots oder Skripte</li>
+                <li>Erstellen von Fake-Konten</li>
+                <li>Verbreitung von Viren, Malware oder Schadcode</li>
+            </ul>
+
+            <h3>4.2 Inhaltliche Verstöße</h3>
+            <ul>
+                <li>Verbreitung irreführender Gesundheitsinformationen</li>
+                <li>Verletzung geistiger Eigentumsrechte</li>
+                <li>Versand von Spam oder unerwünschten Inhalten</li>
+                <li>Belästigung anderer Nutzer</li>
+            </ul>
+
+            <h2>5. Geistiges Eigentum</h2>
+            <h3>5.1 Rechte an der Anwendung</h3>
+            <p>Alle geistigen Eigentumsrechte an der Suu-Anwendung, einschließlich Logo, Design, Code und aller Inhalte, liegen bei Suu (Furkan Fındıklı). Diese Rechte sind durch nationale und internationale Urheberrechtsgesetze geschützt.</p>
+
+            <h3>5.2 Nutzerinhalte</h3>
+            <p>Die personenbezogenen Daten und Trinkangaben, die Sie in die Anwendung eingeben, gehören Ihnen. Durch die Nutzung der Anwendung räumen Sie uns jedoch eine eingeschränkte Lizenz ein, diese Daten zur Verbesserung und Erbringung des Dienstes zu verwenden.</p>
+
+            <h2>6. Haftungsausschluss für Gesundheit und Sicherheit</h2>
+            <div class="highlight">
+                <strong>Wichtiger Warnhinweis:</strong> Suu erteilt keinen medizinischen Rat und ersetzt keine medizinische Fachkraft.
+            </div>
+
+            <h3>6.1 Keine medizinische Beratung</h3>
+            <ul>
+                <li>Die Anwendung bietet nur allgemeine Orientierung</li>
+                <li>Wenden Sie sich bei gesundheitlichen Problemen immer an einen Arzt</li>
+                <li>Teilen Sie besondere gesundheitliche Umstände Ihrem Arzt mit</li>
+                <li>Empfehlungen der App ersetzen keine ärztliche Beratung</li>
+            </ul>
+
+            <h3>6.2 Eigenverantwortung</h3>
+            <ul>
+                <li>Passen Sie Ihre Trinkmenge Ihrer persönlichen Situation an</li>
+                <li>Berücksichtigen Sie Ihren körperlichen Zustand und Ihre Krankengeschichte</li>
+                <li>Beachten Sie, dass übermäßiges Trinken schädlich sein kann</li>
+                <li>Beenden Sie die Nutzung der Anwendung, wenn Sie sich unwohl fühlen</li>
+            </ul>
+
+            <h3>6.3 Haftungsausschluss für KI-Analysen</h3>
+            <div class="highlight">
+                <strong>Wichtig:</strong> KI-gestützte Analysen zu Lebensmitteln, Kalorien, Makronährstoffen und Ernährungswert sind Schätzungen zu Informationszwecken; sie sind weder medizinischer Rat noch die Verordnung einer Ernährungsfachkraft.
+            </div>
+            <ul>
+                <li>Sprach-, Text- und Fotoanalysen werden von der KI <strong>automatisch und als Schätzung</strong> erstellt; Portionen, Zusammensetzung und Werte können falsch berechnet werden.</li>
+                <li>Diese Ergebnisse <strong>ersetzen keine medizinische Beratung, Diagnose, Behandlung oder Empfehlung einer Gesundheitsfachkraft</strong>.</li>
+                <li>Wenden Sie sich bei Fragen zu Ernährung, Allergien, Schwangerschaft, chronischen Erkrankungen oder Medikamenten immer an eine qualifizierte Gesundheitsfachkraft.</li>
+                <li>Suu haftet nicht für Entscheidungen, die im Vertrauen auf diese geschätzten Werte getroffen werden.</li>
+            </ul>
+
+            <h2>7. Unterbrechungen und Verfügbarkeit</h2>
+            <h3>7.1 Geplante Unterbrechungen</h3>
+            <p>Der Dienst kann für Wartung, Updates oder Verbesserungen vorübergehend ausgesetzt werden. Solche Unterbrechungen werden nach Möglichkeit vorab angekündigt.</p>
+
+            <h3>7.2 Ungeplante Unterbrechungen</h3>
+            <p>Durch technische Störungen, Sicherheitsbedrohungen oder höhere Gewalt kann es zu Unterbrechungen kommen. Hierfür übernehmen wir keine Haftung.</p>
+
+            <h2>8. Kostenloser Dienst und künftige Änderungen</h2>
+            <h3>8.1 Derzeit kostenlose Leistungen</h3>
+            <p>Die grundlegenden Wasser- und Trink-Tracking-Funktionen von Suu sind immer kostenlos. Ein optionales Premium-Abonnement bietet zusätzliche KI- und erweiterte Funktionen; Sie sind nicht verpflichtet, Premium zu nutzen.</p>
+
+            <h3>8.2 Künftige Premium-Funktionen</h3>
+            <p>In Zukunft können weitere Premium-Funktionen eingeführt werden. In diesem Fall gilt:</p>
+            <ul>
+                <li>Ankündigung 30 Tage im Voraus</li>
+                <li>Bestehende Grundfunktionen bleiben kostenlos</li>
+                <li>Sie sind nicht verpflichtet, Premium-Funktionen zu nutzen</li>
+                <li>Ihr Kündigungsrecht bleibt immer erhalten</li>
+            </ul>
+
+            <h3>8.3 Limit für KI-Analysen und Premium-Abonnement</h3>
+            <ul>
+                <li>KI-Analysen (Sprache und Text) sind in der kostenlosen Version auf <strong>3 Analysen pro Tag</strong> begrenzt.</li>
+                <li><strong>Fotoanalyse von Mahlzeiten</strong> und <strong>unbegrenzte Analysen</strong> sind nur im Premium-Abonnement enthalten.</li>
+                <li>Premium wird über den App Store oder Google Play abgerechnet und verlängert sich nach einer eventuellen kostenlosen Testphase automatisch, sofern es nicht gekündigt wird.</li>
+                <li>Sie können Ihr Abonnement jederzeit in den Abonnement-Einstellungen Ihres Stores verwalten oder kündigen.</li>
+                <li>Tageslimits und Premium-Umfang können nach vorheriger Ankündigung geändert werden.</li>
+            </ul>
+
+            <h2>9. Kontoverwaltung und Beendigung</h2>
+            <h3>9.1 Beendigung durch den Nutzer</h3>
+            <ul>
+                <li>Sie können Ihr Konto jederzeit löschen</li>
+                <li>Ihre Daten werden innerhalb von 30 Tagen dauerhaft gelöscht</li>
+                <li>Eine Wiederherstellung ist möglicherweise nicht möglich</li>
+                <li>Die Löschung ist unwiderruflich</li>
+            </ul>
+
+            <h3>9.2 Beendigung durch Suu</h3>
+            <p>Wir behalten uns vor, Ihr Konto in folgenden Fällen zu schließen:</p>
+            <ul>
+                <li>Bei Verstößen gegen diese Bedingungen</li>
+                <li>Wenn rechtswidrige Aktivitäten festgestellt werden</li>
+                <li>Bei Verhalten, das dem System schadet</li>
+                <li>Nach Möglichkeit mit einer Vorankündigung von 30 Tagen</li>
+            </ul>
+
+            <h2>10. Haftungsbeschränkungen</h2>
+            <h3>10.1 Dienstqualität</h3>
+            <p>Wir stellen die Anwendung „wie besehen“ bereit und können Folgendes nicht garantieren:</p>
+            <ul>
+                <li>Einen zu 100 % unterbrechungsfreien Dienst</li>
+                <li>Keinen Datenverlust</li>
+                <li>Einwandfreie Leistung auf allen Geräten</li>
+                <li>Fehler- und Störungsfreiheit</li>
+            </ul>
+
+            <h3>10.2 Schadensbegrenzung</h3>
+            <p>Wir haften nicht für:</p>
+            <ul>
+                <li>Indirekte oder Folgeschäden</li>
+                <li>Entgangenen Gewinn oder Geschäftsverluste</li>
+                <li>Durch Dritte verursachte Schäden</li>
+                <li>Schäden aus Datenverlust</li>
+            </ul>
+
+            <h2>11. Datenschutz</h2>
+            <p>Ausführliche Informationen darüber, wie Ihre personenbezogenen Daten erhoben, verwendet und geschützt werden, finden Sie in unserer <a href="gizlilik-politikasi.html?lang=de">Datenschutzerklärung</a>. Die Datenschutzerklärung ist fester Bestandteil dieser Nutzungsbedingungen.</p>
+
+            <h2>12. Anwendbares Recht und Gerichtsstand</h2>
+            <h3>12.1 Anwendbares Recht</h3>
+            <p>Diese Vereinbarung unterliegt dem Recht der Republik Türkei und wird nach diesem ausgelegt.</p>
+
+            <h3>12.2 Gerichtsstand</h3>
+            <p>Für Streitigkeiten aus dieser Vereinbarung sind ausschließlich die Gerichte und Vollstreckungsbehörden in Istanbul zuständig.</p>
+
+            <h3>12.3 Streitbeilegung</h3>
+            <p>Wir bemühen uns zunächst um eine gütliche Einigung. Ist das nicht möglich, folgt eine Mediation und danach der Rechtsweg.</p>
+
+            <h2>13. Änderungen und Aktualisierungen</h2>
+            <h3>13.1 Recht auf Aktualisierung</h3>
+            <p>Wir behalten uns vor, diese Nutzungsbedingungen bei Bedarf zu aktualisieren. Bei wesentlichen Änderungen gilt:</p>
+            <ul>
+                <li>Ankündigung 30 Tage im Voraus</li>
+                <li>Benachrichtigung in der App</li>
+                <li>Information per E-Mail</li>
+                <li>Mitteilung auf der Website</li>
+            </ul>
+
+            <h3>13.2 Annahme und Ablehnung</h3>
+            <p>Wenn Sie die aktualisierten Bedingungen nicht akzeptieren, können Sie Ihr Konto schließen. Die weitere Nutzung der Anwendung gilt als Annahme der neuen Bedingungen.</p>
+
+            <h2>14. Sonstige Bestimmungen</h2>
+            <h3>14.1 Salvatorische Klausel</h3>
+            <p>Sollte eine Bestimmung dieser Vereinbarung unwirksam sein, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt.</p>
+
+            <h3>14.2 Verzicht</h3>
+            <p>Die Nichtausübung eines Rechts gilt nicht als Verzicht auf dieses Recht.</p>
+
+            <h3>14.3 Abtretung</h3>
+            <p>Sie dürfen Rechte und Pflichten aus dieser Vereinbarung nicht auf Dritte übertragen. Wir behalten uns das Recht vor, unsere Rechte zu übertragen.</p>
+
+            <h3>14.4 Gesamte Vereinbarung</h3>
+            <p>Diese Nutzungsbedingungen und die Datenschutzerklärung bilden die gesamte Vereinbarung zwischen uns.</p>
+
+            <div class="contact-box">
+                <h3>15. Kontaktdaten</h3>
+                <p>Bei Fragen oder Anregungen zu diesen Nutzungsbedingungen wenden Sie sich bitte an uns:</p>
+                <ul>
+                    <li><strong>E-Mail:</strong> <a href="mailto:info@suuapp.com">info@suuapp.com</a></li>
+                    <li><strong>Web:</strong> <a href="https://suuapp.com">www.suuapp.com</a></li>
+                </ul>
+                <p style="margin-top: 15px;">
+                    <strong>Antwortzeit:</strong> Wir beantworten Anfragen spätestens innerhalb von 7 Werktagen.
+                </p>
+            </div>
+        </div>
+
+        <!-- Italian -->
+        <div class="content terms-section" data-lang="it">
+            <div class="highlight">
+                <strong>Importante:</strong> utilizzando l'applicazione Suu accetti questi termini. Ti invitiamo a leggerli con attenzione.
+            </div>
+
+            <h2>1. Disposizioni generali</h2>
+            <h3>1.1 Parti</h3>
+            <p>Il presente accordo è stipulato tra il fornitore dell'applicazione mobile Suu («Applicazione») — <strong>Furkan Fındıklı</strong>, che sviluppa e gestisce l'applicazione con il marchio <strong>Suu</strong> (di seguito «Suu») — e la persona che utilizza l'applicazione («Utente», «tu»).</p>
+            <ul>
+                <li><strong>Gestore:</strong> Furkan Fındıklı</li>
+                <li><strong>Marchio / Nome dell'app:</strong> Suu</li>
+                <li><strong>Contatto:</strong> <a href="mailto:info@suuapp.com">info@suuapp.com</a></li>
+                <li><strong>Web:</strong> <a href="https://suuapp.com">suuapp.com</a></li>
+            </ul>
+
+            <h3>1.2 Accettazione</h3>
+            <p>Scaricando, installando o utilizzando l'applicazione, si considera che tu abbia letto integralmente e accettato i presenti termini di utilizzo. Se non accetti questi termini, non devi utilizzare l'applicazione.</p>
+
+            <h2>2. Descrizione del servizio</h2>
+            <h3>2.1 Che cos'è Suu?</h3>
+            <p>Suu è un'applicazione mobile che aiuta gli utenti a monitorare l'acqua che bevono ogni giorno. L'applicazione offre le seguenti funzioni:</p>
+            <ul>
+                <li>Monitoraggio dell'acqua bevuta ogni giorno</li>
+                <li>Obiettivi di idratazione personalizzati</li>
+                <li>Promemoria e notifiche</li>
+                <li>Monitoraggio dei progressi e statistiche</li>
+                <li>Integrazioni sanitarie (HealthKit, Google Fit)</li>
+            </ul>
+
+            <h3>2.2 Ambito del servizio</h3>
+            <p>L'applicazione offre funzioni di base gratuite. In futuro potranno essere introdotte funzioni Premium, eventualmente a pagamento. Gli utenti saranno informati prima dell'avvio di qualsiasi servizio a pagamento.</p>
+
+            <h3>2.3 Funzioni IA per alimentazione e idratazione</h3>
+            <p>Oltre al monitoraggio dell'acqua, Suu offre funzioni di assistente per alimentazione e idratazione basate sull'IA:</p>
+            <ul>
+                <li>Aggiunta di pasti/bevande con la voce o il testo, con separazione automatica di solidi e liquidi tramite IA</li>
+                <li>Analisi delle foto dei pasti per stimare alimenti, calorie e macronutrienti (Premium)</li>
+                <li>Stime dei valori nutrizionali come calorie, proteine, carboidrati, grassi e sodio, più un punteggio nutrizionale da 1 a 100</li>
+                <li>Sincronizzazione dei dati alimentari (Dietary) e di idratazione con Apple HealthKit e Google Health Connect</li>
+            </ul>
+
+            <h2>3. Obblighi dell'utente</h2>
+            <h3>3.1 Informazioni corrette</h3>
+            <p>Per utilizzare l'applicazione in modo efficace, ti impegni a:</p>
+            <ul>
+                <li>Mantenere le tue informazioni personali corrette e aggiornate</li>
+                <li>Inserire in modo veritiero dati come età, peso e altezza</li>
+                <li>Custodire in modo sicuro le credenziali dell'account</li>
+                <li>Registrare correttamente l'acqua che bevi</li>
+            </ul>
+
+            <h3>3.2 Uso appropriato</h3>
+            <ul>
+                <li>Utilizzare l'applicazione per lo scopo previsto</li>
+                <li>Non arrecare danno ad altri utenti o al sistema</li>
+                <li>Non svolgere attività illecite</li>
+                <li>Non utilizzare l'applicazione a fini commerciali senza autorizzazione</li>
+            </ul>
+
+            <h2>4. Comportamenti vietati</h2>
+            <p>I seguenti comportamenti sono severamente vietati e possono comportare la chiusura dell'account:</p>
+
+            <h3>4.1 Abusi tecnici</h3>
+            <ul>
+                <li>Tentare di violare o danneggiare il sistema</li>
+                <li>Usare bot o script automatizzati</li>
+                <li>Creare account falsi</li>
+                <li>Diffondere virus, malware o codice dannoso</li>
+            </ul>
+
+            <h3>4.2 Violazioni relative ai contenuti</h3>
+            <ul>
+                <li>Condividere informazioni sanitarie fuorvianti</li>
+                <li>Violare diritti di proprietà intellettuale</li>
+                <li>Inviare spam o contenuti indesiderati</li>
+                <li>Molestare altri utenti</li>
+            </ul>
+
+            <h2>5. Diritti di proprietà intellettuale</h2>
+            <h3>5.1 Diritti sull'applicazione</h3>
+            <p>Tutti i diritti di proprietà intellettuale sull'applicazione Suu, inclusi logo, design, codice e tutti i contenuti, appartengono a Suu (Furkan Fındıklı). Tali diritti sono tutelati dalle leggi nazionali e internazionali sul diritto d'autore.</p>
+
+            <h3>5.2 Contenuti dell'utente</h3>
+            <p>I dati personali e le informazioni sull'acqua bevuta che inserisci nell'applicazione appartengono a te. Utilizzando l'applicazione, tuttavia, ci concedi una licenza limitata per usare tali dati al fine di migliorare ed erogare il servizio.</p>
+
+            <h2>6. Esclusione di responsabilità su salute e sicurezza</h2>
+            <div class="highlight">
+                <strong>Avvertenza importante:</strong> Suu non fornisce consigli medici e non sostituisce un professionista sanitario.
+            </div>
+
+            <h3>6.1 Non è un consiglio medico</h3>
+            <ul>
+                <li>L'applicazione fornisce solo indicazioni generali</li>
+                <li>Per problemi di salute consulta sempre un medico</li>
+                <li>Comunica al tuo medico eventuali condizioni di salute particolari</li>
+                <li>I suggerimenti dell'app non sostituiscono il parere medico</li>
+            </ul>
+
+            <h3>6.2 Responsabilità personale</h3>
+            <ul>
+                <li>Adatta l'assunzione di acqua alla tua situazione personale</li>
+                <li>Tieni conto delle tue condizioni fisiche e della tua storia clinica</li>
+                <li>Ricorda che un consumo eccessivo di acqua può essere dannoso</li>
+                <li>Smetti di usare l'applicazione se non ti senti bene</li>
+            </ul>
+
+            <h3>6.3 Esclusione di responsabilità per le analisi IA</h3>
+            <div class="highlight">
+                <strong>Importante:</strong> le analisi di alimenti, calorie, macronutrienti e punteggio nutrizionale fornite dall'IA sono stime a scopo informativo; non sono consigli medici né prescrizioni di un dietista.
+            </div>
+            <ul>
+                <li>Le analisi di voce, testo e foto sono generate dall'IA <strong>automaticamente e in forma di stima</strong>; porzioni, contenuti e valori possono essere calcolati in modo errato.</li>
+                <li>Questi risultati <strong>non sostituiscono il parere medico, la diagnosi, la terapia o la raccomandazione di un professionista sanitario</strong>.</li>
+                <li>Per qualsiasi questione legata ad alimentazione, allergie, gravidanza, malattie croniche o farmaci, rivolgiti sempre a un professionista sanitario qualificato.</li>
+                <li>Suu non può essere ritenuta responsabile delle decisioni prese facendo affidamento su questi valori stimati.</li>
+            </ul>
+
+            <h2>7. Interruzioni e disponibilità del servizio</h2>
+            <h3>7.1 Interruzioni programmate</h3>
+            <p>Il servizio può essere temporaneamente sospeso per manutenzione, aggiornamenti o miglioramenti. Quando possibile, tali interruzioni saranno annunciate in anticipo.</p>
+
+            <h3>7.2 Interruzioni non programmate</h3>
+            <p>Possono verificarsi interruzioni dovute a guasti tecnici, minacce alla sicurezza o cause di forza maggiore. Non ci assumiamo alcuna responsabilità per tali eventi.</p>
+
+            <h2>8. Servizio gratuito e modifiche future</h2>
+            <h3>8.1 Servizi attualmente gratuiti</h3>
+            <p>Le funzioni di base di Suu per il monitoraggio dell'acqua e dell'idratazione sono sempre gratuite. Un abbonamento Premium facoltativo aggiunge funzioni IA e avanzate; non sei obbligato a usare Premium.</p>
+
+            <h3>8.2 Future funzioni Premium</h3>
+            <p>In futuro potranno essere introdotte ulteriori funzioni Premium. In tal caso:</p>
+            <ul>
+                <li>Verrà dato un preavviso di 30 giorni</li>
+                <li>Le funzioni di base esistenti resteranno gratuite</li>
+                <li>Non sarai obbligato a usare le funzioni Premium</li>
+                <li>Il tuo diritto di recesso resta sempre garantito</li>
+            </ul>
+
+            <h3>8.3 Limite di analisi IA e abbonamento Premium</h3>
+            <ul>
+                <li>Nella versione gratuita l'analisi IA (voce e testo) è limitata a <strong>3 analisi al giorno</strong>.</li>
+                <li>L'<strong>analisi delle foto dei pasti</strong> e le <strong>analisi illimitate</strong> sono incluse solo con l'abbonamento Premium.</li>
+                <li>Premium viene addebitato tramite App Store o Google Play e si rinnova automaticamente al termine dell'eventuale prova gratuita, salvo disdetta.</li>
+                <li>Puoi gestire o disdire l'abbonamento in qualsiasi momento dalle impostazioni degli abbonamenti del tuo store.</li>
+                <li>I limiti giornalieri e il contenuto di Premium possono cambiare con preavviso.</li>
+            </ul>
+
+            <h2>9. Gestione e chiusura dell'account</h2>
+            <h3>9.1 Chiusura da parte dell'utente</h3>
+            <ul>
+                <li>Puoi eliminare il tuo account in qualsiasi momento</li>
+                <li>I tuoi dati saranno cancellati definitivamente entro 30 giorni</li>
+                <li>Il recupero potrebbe non essere possibile</li>
+                <li>L'eliminazione è irreversibile</li>
+            </ul>
+
+            <h3>9.2 Chiusura da parte di Suu</h3>
+            <p>Ci riserviamo il diritto di chiudere il tuo account nei seguenti casi:</p>
+            <ul>
+                <li>Se violi questi termini</li>
+                <li>Se viene rilevata un'attività illecita</li>
+                <li>Se tieni comportamenti che danneggiano il sistema</li>
+                <li>Con un preavviso di 30 giorni, ove possibile</li>
+            </ul>
+
+            <h2>10. Limitazioni di responsabilità</h2>
+            <h3>10.1 Qualità del servizio</h3>
+            <p>Forniamo l'applicazione «così com'è» e non possiamo garantire:</p>
+            <ul>
+                <li>Un servizio ininterrotto al 100%</li>
+                <li>L'assenza di perdita di dati</li>
+                <li>Prestazioni perfette su tutti i dispositivi</li>
+                <li>L'assenza di errori o malfunzionamenti</li>
+            </ul>
+
+            <h3>10.2 Limitazioni del risarcimento</h3>
+            <p>Non siamo responsabili per:</p>
+            <ul>
+                <li>Danni indiretti o consequenziali</li>
+                <li>Perdita di profitti o di affari</li>
+                <li>Danni causati da terzi</li>
+                <li>Danni derivanti dalla perdita di dati</li>
+            </ul>
+
+            <h2>11. Privacy e protezione dei dati</h2>
+            <p>Per informazioni dettagliate su come vengono raccolti, utilizzati e protetti i tuoi dati personali, consulta la nostra <a href="gizlilik-politikasi.html?lang=it">Informativa sulla privacy</a>. L'informativa sulla privacy è parte integrante dei presenti termini di utilizzo.</p>
+
+            <h2>12. Legge applicabile e foro competente</h2>
+            <h3>12.1 Legge applicabile</h3>
+            <p>Il presente accordo è regolato e interpretato secondo le leggi della Repubblica di Turchia.</p>
+
+            <h3>12.2 Foro competente</h3>
+            <p>Per le controversie derivanti dal presente accordo sono competenti in via esclusiva i tribunali e gli uffici esecutivi di Istanbul.</p>
+
+            <h3>12.3 Risoluzione delle controversie</h3>
+            <p>Cerchiamo innanzitutto di risolvere le controversie in via amichevole. Se ciò non è possibile, ricorriamo alla mediazione e poi alle vie giudiziarie.</p>
+
+            <h2>13. Modifiche e aggiornamenti</h2>
+            <h3>13.1 Diritto di aggiornamento</h3>
+            <p>Ci riserviamo il diritto di aggiornare questi termini di utilizzo quando necessario. In caso di modifiche significative:</p>
+            <ul>
+                <li>Verrà dato un preavviso di 30 giorni</li>
+                <li>Verrà inviata una notifica nell'app</li>
+                <li>Sarai informato via email</li>
+                <li>Verrà pubblicato un avviso sul sito</li>
+            </ul>
+
+            <h3>13.2 Accettazione e rifiuto</h3>
+            <p>Se non accetti i termini aggiornati, puoi chiudere il tuo account. Continuare a usare l'applicazione significa accettare i nuovi termini.</p>
+
+            <h2>14. Disposizioni varie</h2>
+            <h3>14.1 Clausola di salvaguardia</h3>
+            <p>Se una disposizione del presente accordo viene ritenuta non valida, la validità delle restanti disposizioni non ne è pregiudicata.</p>
+
+            <h3>14.2 Rinuncia</h3>
+            <p>Il mancato esercizio di un diritto non costituisce rinuncia allo stesso.</p>
+
+            <h3>14.3 Cessione</h3>
+            <p>Non puoi trasferire a terzi i diritti e gli obblighi derivanti dal presente accordo. Ci riserviamo il diritto di cedere i nostri diritti.</p>
+
+            <h3>14.4 Intero accordo</h3>
+            <p>I presenti termini di utilizzo e l'informativa sulla privacy costituiscono l'intero accordo tra noi.</p>
+
+            <div class="contact-box">
+                <h3>15. Contatti</h3>
+                <p>Per domande o suggerimenti sui presenti termini di utilizzo, contattaci:</p>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:info@suuapp.com">info@suuapp.com</a></li>
+                    <li><strong>Web:</strong> <a href="https://suuapp.com">www.suuapp.com</a></li>
+                </ul>
+                <p style="margin-top: 15px;">
+                    <strong>Tempi di risposta:</strong> rispondiamo alle richieste entro 7 giorni lavorativi al massimo.
+                </p>
+            </div>
+        </div>
+
+        <!-- Ukrainian -->
+        <div class="content terms-section" data-lang="uk">
+            <div class="highlight">
+                <strong>Важливо:</strong> користуючись застосунком Suu, ви погоджуєтеся з цими умовами. Будь ласка, уважно ознайомтеся з ними.
+            </div>
+
+            <h2>1. Загальні положення</h2>
+            <h3>1.1 Сторони</h3>
+            <p>Цю угоду укладено між постачальником мобільного застосунку Suu («Застосунок») — <strong>Furkan Fındıklı</strong>, який розробляє застосунок і керує ним під брендом <strong>Suu</strong> (далі — «Suu»), — та особою, яка користується застосунком («Користувач», «ви»).</p>
+            <ul>
+                <li><strong>Оператор:</strong> Furkan Fındıklı</li>
+                <li><strong>Бренд / назва застосунку:</strong> Suu</li>
+                <li><strong>Контакт:</strong> <a href="mailto:info@suuapp.com">info@suuapp.com</a></li>
+                <li><strong>Сайт:</strong> <a href="https://suuapp.com">suuapp.com</a></li>
+            </ul>
+
+            <h3>1.2 Прийняття умов</h3>
+            <p>Завантажуючи, встановлюючи або використовуючи застосунок, ви вважаєтеся такими, що повністю прочитали та прийняли ці умови використання. Якщо ви не приймаєте ці умови, ви не повинні користуватися застосунком.</p>
+
+            <h2>2. Опис сервісу</h2>
+            <h3>2.1 Що таке Suu?</h3>
+            <p>Suu — мобільний застосунок, який допомагає користувачам відстежувати щоденне споживання води. Застосунок пропонує такі функції:</p>
+            <ul>
+                <li>Відстеження щоденного споживання води</li>
+                <li>Персональні цілі з гідратації</li>
+                <li>Нагадування та сповіщення</li>
+                <li>Відстеження прогресу та статистика</li>
+                <li>Інтеграції зі здоров'ям (HealthKit, Google Fit)</li>
+            </ul>
+
+            <h3>2.2 Обсяг сервісу</h3>
+            <p>Застосунок пропонує безкоштовні основні функції. У майбутньому можуть з'явитися функції Premium, які можуть бути платними. Користувачів буде повідомлено до початку будь-якої платної послуги.</p>
+
+            <h3>2.3 Функції ШІ для харчування та гідратації</h3>
+            <p>Окрім відстеження води, Suu пропонує функції ШІ-асистента з харчування та гідратації:</p>
+            <ul>
+                <li>Додавання страв/напоїв голосом або текстом з автоматичним розділенням твердої їжі та рідин за допомогою ШІ</li>
+                <li>Аналіз фото страв для оцінки продуктів, калорій і макронутрієнтів (Premium)</li>
+                <li>Оцінка харчової цінності — калорій, білків, вуглеводів, жирів і натрію — та бал харчування від 1 до 100</li>
+                <li>Синхронізація даних про харчування (Dietary) і гідратацію з Apple HealthKit і Google Health Connect</li>
+            </ul>
+
+            <h2>3. Обов'язки користувача</h2>
+            <h3>3.1 Надання достовірної інформації</h3>
+            <p>Щоб ефективно користуватися застосунком, ви погоджуєтеся:</p>
+            <ul>
+                <li>Підтримувати свої персональні дані точними й актуальними</li>
+                <li>Правдиво вводити такі дані, як вік, вага та зріст</li>
+                <li>Надійно зберігати облікові дані</li>
+                <li>Належним чином записувати випиту воду</li>
+            </ul>
+
+            <h3>3.2 Належне використання</h3>
+            <ul>
+                <li>Використовувати застосунок за призначенням</li>
+                <li>Не завдавати шкоди іншим користувачам або системі</li>
+                <li>Не здійснювати незаконних дій</li>
+                <li>Не використовувати застосунок з комерційною метою без дозволу</li>
+            </ul>
+
+            <h2>4. Заборонені дії</h2>
+            <p>Наведені нижче дії суворо заборонені й можуть призвести до закриття облікового запису:</p>
+
+            <h3>4.1 Технічні зловживання</h3>
+            <ul>
+                <li>Спроби зламати або пошкодити систему</li>
+                <li>Використання автоматизованих ботів чи скриптів</li>
+                <li>Створення фейкових облікових записів</li>
+                <li>Поширення вірусів, шкідливих програм або шкідливого коду</li>
+            </ul>
+
+            <h3>4.2 Порушення щодо контенту</h3>
+            <ul>
+                <li>Поширення оманливої інформації про здоров'я</li>
+                <li>Порушення прав інтелектуальної власності</li>
+                <li>Надсилання спаму або небажаного контенту</li>
+                <li>Переслідування інших користувачів</li>
+            </ul>
+
+            <h2>5. Права інтелектуальної власності</h2>
+            <h3>5.1 Права на застосунок</h3>
+            <p>Усі права інтелектуальної власності на застосунок Suu, зокрема логотип, дизайн, код і весь контент, належать Suu (Furkan Fındıklı). Ці права захищені національним і міжнародним законодавством про авторське право.</p>
+
+            <h3>5.2 Контент користувача</h3>
+            <p>Персональні дані та інформація про споживання води, які ви вводите в застосунок, належать вам. Водночас, користуючись застосунком, ви надаєте нам обмежену ліцензію на використання цих даних для покращення та надання сервісу.</p>
+
+            <h2>6. Застереження щодо здоров'я та безпеки</h2>
+            <div class="highlight">
+                <strong>Критичне попередження:</strong> Suu не надає медичних порад і не замінює медичного фахівця.
+            </div>
+
+            <h3>6.1 Не є медичною порадою</h3>
+            <ul>
+                <li>Застосунок надає лише загальні орієнтири</li>
+                <li>З питань здоров'я завжди звертайтеся до лікаря</li>
+                <li>Повідомляйте лікаря про будь-які особливі стани здоров'я</li>
+                <li>Рекомендації застосунку не замінюють медичної поради</li>
+            </ul>
+
+            <h3>6.2 Особиста відповідальність</h3>
+            <ul>
+                <li>Коригуйте споживання води відповідно до свого стану</li>
+                <li>Враховуйте свій фізичний стан і медичну історію</li>
+                <li>Пам'ятайте, що надмірне споживання води може бути шкідливим</li>
+                <li>Припиніть користуватися застосунком, якщо почуваєтеся погано</li>
+            </ul>
+
+            <h3>6.3 Застереження щодо ШІ-аналізу</h3>
+            <div class="highlight">
+                <strong>Важливо:</strong> аналізи продуктів, калорій, макронутрієнтів і бал харчування, які надає ШІ, — це оцінки для інформаційних цілей; вони не є медичною порадою чи призначенням дієтолога.
+            </div>
+            <ul>
+                <li>Аналізи голосу, тексту й фото створюються ШІ <strong>автоматично та як оцінка</strong>; порції, склад і значення можуть бути розраховані неправильно.</li>
+                <li>Ці результати <strong>не замінюють медичної поради, діагностики, лікування чи рекомендації медичного фахівця</strong>.</li>
+                <li>З будь-яких питань щодо харчування, алергій, вагітності, хронічних захворювань або ліків завжди звертайтеся до кваліфікованого медичного фахівця.</li>
+                <li>Suu не несе відповідальності за рішення, ухвалені на основі цих оціночних значень.</li>
+            </ul>
+
+            <h2>7. Перерви в роботі та доступність</h2>
+            <h3>7.1 Планові перерви</h3>
+            <p>Робота сервісу може тимчасово призупинятися для технічного обслуговування, оновлень або вдосконалень. Про такі перерви, за можливості, буде оголошено заздалегідь.</p>
+
+            <h3>7.2 Непланові перерви</h3>
+            <p>Перерви в роботі можуть виникати через технічні збої, загрози безпеці або форс-мажорні обставини. Ми не несемо відповідальності за такі події.</p>
+
+            <h2>8. Безкоштовний сервіс і майбутні зміни</h2>
+            <h3>8.1 Поточні безкоштовні послуги</h3>
+            <p>Основні функції Suu для відстеження води й гідратації завжди безкоштовні. Необов'язкова підписка Premium додає ШІ та розширені функції; ви не зобов'язані користуватися Premium.</p>
+
+            <h3>8.2 Майбутні функції Premium</h3>
+            <p>У майбутньому можуть з'явитися додаткові функції Premium. У такому разі:</p>
+            <ul>
+                <li>Буде надано попередження за 30 днів</li>
+                <li>Наявні основні функції залишаться безкоштовними</li>
+                <li>Ви не зобов'язані користуватися функціями Premium</li>
+                <li>Ваше право на скасування завжди зберігається</li>
+            </ul>
+
+            <h3>8.3 Ліміт ШІ-аналізу та підписка Premium</h3>
+            <ul>
+                <li>У безкоштовній версії ШІ-аналіз (голос і текст) обмежено <strong>3 аналізами на день</strong>.</li>
+                <li><strong>Аналіз фото страв</strong> і <strong>необмежений аналіз</strong> доступні лише з підпискою Premium.</li>
+                <li>Premium оплачується через App Store або Google Play і автоматично поновлюється після безкоштовного пробного періоду, якщо його не скасовано.</li>
+                <li>Ви можете будь-коли керувати підпискою або скасувати її в налаштуваннях підписок свого магазину.</li>
+                <li>Денні ліміти та обсяг Premium можуть змінюватися з попереднім повідомленням.</li>
+            </ul>
+
+            <h2>9. Керування обліковим записом і припинення</h2>
+            <h3>9.1 Припинення користувачем</h3>
+            <ul>
+                <li>Ви можете будь-коли видалити свій обліковий запис</li>
+                <li>Ваші дані буде остаточно видалено протягом 30 днів</li>
+                <li>Відновлення може бути неможливим</li>
+                <li>Видалення є незворотним</li>
+            </ul>
+
+            <h3>9.2 Припинення з боку Suu</h3>
+            <p>Ми залишаємо за собою право закрити ваш обліковий запис у таких випадках:</p>
+            <ul>
+                <li>Якщо ви порушуєте ці умови</li>
+                <li>Якщо виявлено незаконну діяльність</li>
+                <li>Якщо ви вчиняєте дії, що шкодять системі</li>
+                <li>За можливості — з попередженням за 30 днів</li>
+            </ul>
+
+            <h2>10. Обмеження відповідальності</h2>
+            <h3>10.1 Якість сервісу</h3>
+            <p>Ми надаємо застосунок «як є» і не можемо гарантувати:</p>
+            <ul>
+                <li>100% безперебійну роботу</li>
+                <li>Відсутність втрати даних</li>
+                <li>Бездоганну роботу на всіх пристроях</li>
+                <li>Відсутність помилок чи збоїв</li>
+            </ul>
+
+            <h3>10.2 Обмеження збитків</h3>
+            <p>Ми не несемо відповідальності за:</p>
+            <ul>
+                <li>Непрямі або опосередковані збитки</li>
+                <li>Втрату прибутку чи бізнесу</li>
+                <li>Збитки, завдані третіми особами</li>
+                <li>Збитки внаслідок втрати даних</li>
+            </ul>
+
+            <h2>11. Конфіденційність і захист даних</h2>
+            <p>Докладну інформацію про те, як збираються, використовуються та захищаються ваші персональні дані, наведено в нашій <a href="gizlilik-politikasi.html?lang=uk">Політиці конфіденційності</a>. Політика конфіденційності є невід'ємною частиною цих умов використання.</p>
+
+            <h2>12. Застосовне право та підсудність</h2>
+            <h3>12.1 Застосовне право</h3>
+            <p>Ця угода регулюється та тлумачиться відповідно до законодавства Турецької Республіки.</p>
+
+            <h3>12.2 Підсудність</h3>
+            <p>Виключну юрисдикцію щодо спорів, що виникають з цієї угоди, мають суди та виконавчі органи Стамбула.</p>
+
+            <h3>12.3 Вирішення спорів</h3>
+            <p>Спершу ми намагаємося вирішити спори мирним шляхом. Якщо це неможливо, звертаємося до медіації, а потім — до суду.</p>
+
+            <h2>13. Зміни та оновлення</h2>
+            <h3>13.1 Право на оновлення</h3>
+            <p>Ми залишаємо за собою право за потреби оновлювати ці умови використання. У разі суттєвих змін:</p>
+            <ul>
+                <li>Буде надано попередження за 30 днів</li>
+                <li>Буде надіслано сповіщення в застосунку</li>
+                <li>Вас буде повідомлено електронною поштою</li>
+                <li>На сайті буде опубліковано оголошення</li>
+            </ul>
+
+            <h3>13.2 Прийняття та відмова</h3>
+            <p>Якщо ви не приймаєте оновлені умови, ви можете закрити свій обліковий запис. Подальше використання застосунку означає прийняття нових умов.</p>
+
+            <h2>14. Інші положення</h2>
+            <h3>14.1 Подільність</h3>
+            <p>Якщо будь-яке положення цієї угоди визнано недійсним, це не впливає на чинність інших положень.</p>
+
+            <h3>14.2 Відмова від прав</h3>
+            <p>Невикористання права не означає відмови від нього.</p>
+
+            <h3>14.3 Передача прав</h3>
+            <p>Ви не можете передавати права та обов'язки за цією угодою третім особам. Ми залишаємо за собою право передавати наші права.</p>
+
+            <h3>14.4 Повнота угоди</h3>
+            <p>Ці умови використання та політика конфіденційності становлять повну угоду між нами.</p>
+
+            <div class="contact-box">
+                <h3>15. Контактна інформація</h3>
+                <p>З питаннями чи пропозиціями щодо цих умов використання звертайтеся до нас:</p>
+                <ul>
+                    <li><strong>Ел. пошта:</strong> <a href="mailto:info@suuapp.com">info@suuapp.com</a></li>
+                    <li><strong>Сайт:</strong> <a href="https://suuapp.com">www.suuapp.com</a></li>
+                </ul>
+                <p style="margin-top: 15px;">
+                    <strong>Час відповіді:</strong> ми відповідаємо на запити не пізніше ніж протягом 7 робочих днів.
+                </p>
+            </div>
+        </div>
+
         <div class="footer" id="termsFooter">
             <p class="footer-text active" data-lang="tr">© 2026 Suu - Tüm hakları saklıdır.</p>
-            <p class="footer-text active" data-lang="tr">Bu kullanım şartları en son 8 Ekim 2026 tarihinde güncellenmiştir.</p>
+            <p class="footer-text active" data-lang="tr">Bu kullanım şartları en son 14 Ekim 2026 tarihinde güncellenmiştir.</p>
 
             <p class="footer-text" data-lang="en">© 2026 Suu - All rights reserved.</p>
-            <p class="footer-text" data-lang="en">These terms of use were last updated on 8 October 2026.</p>
+            <p class="footer-text" data-lang="en">These terms of use were last updated on 14 October 2026.</p>
 
             <p class="footer-text" data-lang="ar" dir="rtl">© 2026 Suu - جميع الحقوق محفوظة.</p>
-            <p class="footer-text" data-lang="ar" dir="rtl">تم تحديث شروط الاستخدام هذه آخر مرة في 8 أكتوبر 2026.</p>
+            <p class="footer-text" data-lang="ar" dir="rtl">تم تحديث شروط الاستخدام هذه آخر مرة في 14 أكتوبر 2026.</p>
 
             <p class="footer-text" data-lang="ru">© 2026 Suu — Все права защищены.</p>
-            <p class="footer-text" data-lang="ru">Эти условия использования последний раз обновлялись 8 октября 2026 года.</p>
+            <p class="footer-text" data-lang="ru">Эти условия использования последний раз обновлялись 14 октября 2026 года.</p>
+
+            <p class="footer-text" data-lang="de">© 2026 Suu – Alle Rechte vorbehalten.</p>
+            <p class="footer-text" data-lang="de">Diese Nutzungsbedingungen wurden zuletzt am 14. Oktober 2026 aktualisiert.</p>
+
+            <p class="footer-text" data-lang="it">© 2026 Suu – Tutti i diritti riservati.</p>
+            <p class="footer-text" data-lang="it">Questi termini di utilizzo sono stati aggiornati l'ultima volta il 14 ottobre 2026.</p>
+
+            <p class="footer-text" data-lang="uk">© 2026 Suu — Усі права захищено.</p>
+            <p class="footer-text" data-lang="uk">Ці умови використання востаннє оновлено 14 жовтня 2026 року.</p>
         </div>
     </div>
 
     <script>
-        const languageButtons = document.querySelectorAll('.language-btn');
-        const sections = document.querySelectorAll('.terms-section');
-        const footerTexts = document.querySelectorAll('.footer-text');
+        // Dil sırası: ?lang= → #xx → sitede seçilmiş dil (suu-lang) → tarayıcı dili → tr.
+        // Sitedeki bağlantılar dil belirtmeden geliyor; Almanca/İtalyanca/Ukraynaca
+        // okur Türkçe sekmeye düşmesin diye.
+        (function () {
+            const SUPPORTED = ['tr', 'en', 'ar', 'ru', 'de', 'it', 'uk'];
+            const TITLES = {"tr": "Suu - Kullanım Şartları", "en": "Suu - Terms of Use", "ar": "Suu - شروط الاستخدام", "ru": "Suu — Условия использования", "de": "Suu – Nutzungsbedingungen", "it": "Suu – Termini di utilizzo", "uk": "Suu — Умови використання"};
+            const UPDATED = {"tr": "Son Güncelleme: 14 Ekim 2026", "en": "Last updated: 14 October 2026", "ar": "آخر تحديث: 14 أكتوبر 2026", "ru": "Последнее обновление: 14 октября 2026", "de": "Zuletzt aktualisiert: 14. Oktober 2026", "it": "Ultimo aggiornamento: 14 ottobre 2026", "uk": "Останнє оновлення: 14 жовтня 2026"};
+            const languageButtons = document.querySelectorAll('.language-btn');
+            const sections = document.querySelectorAll('.terms-section');
+            const footerTexts = document.querySelectorAll('.footer-text');
+            const titleEl = document.getElementById('docTitle');
+            const updatedEl = document.getElementById('docUpdated');
 
-        function setLanguage(lang) {
-            document.documentElement.lang = lang;
-            document.body.dir = lang === 'ar' ? 'rtl' : 'ltr';
+            function setLanguage(lang, updateUrl) {
+                document.documentElement.lang = lang;
+                document.body.dir = lang === 'ar' ? 'rtl' : 'ltr';
 
-            sections.forEach(section => {
-                section.classList.toggle('active', section.dataset.lang === lang);
-            });
+                sections.forEach(section => {
+                    section.classList.toggle('active', section.dataset.lang === lang);
+                });
 
-            footerTexts.forEach(text => {
-                text.classList.toggle('active', text.dataset.lang === lang);
-            });
+                footerTexts.forEach(text => {
+                    text.classList.toggle('active', text.dataset.lang === lang);
+                });
+
+                languageButtons.forEach(button => {
+                    const isActive = button.dataset.lang === lang;
+                    button.classList.toggle('active', isActive);
+                    button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+                });
+
+                if (titleEl) titleEl.textContent = TITLES[lang];
+                if (updatedEl) updatedEl.textContent = UPDATED[lang];
+                document.title = TITLES[lang];
+
+                if (updateUrl) {
+                    try {
+                        const url = new URL(window.location.href);
+                        if (lang === 'tr') url.searchParams.delete('lang');
+                        else url.searchParams.set('lang', lang);
+                        url.hash = '';
+                        history.replaceState(null, '', url);
+                    } catch (e) {}
+                }
+            }
+
+            function pick(value) {
+                const code = (value || '').toLowerCase().slice(0, 2);
+                return SUPPORTED.indexOf(code) !== -1 ? code : null;
+            }
+
+            function initialLanguage() {
+                let lang = null;
+                try { lang = pick(new URLSearchParams(window.location.search).get('lang')); } catch (e) {}
+                if (lang) return lang;
+                if (window.location.hash.length === 3) {
+                    lang = pick(window.location.hash.slice(1));
+                    if (lang) return lang;
+                }
+                try { lang = pick(localStorage.getItem('suu-lang')); } catch (e) {}
+                if (lang) return lang;
+                const prefs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language];
+                for (let i = 0; i < prefs.length; i++) {
+                    lang = pick(prefs[i]);
+                    if (lang) return lang;
+                }
+                return 'tr';
+            }
 
             languageButtons.forEach(button => {
-                const isActive = button.dataset.lang === lang;
-                button.classList.toggle('active', isActive);
-                button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+                button.addEventListener('click', () => {
+                    if (!button.classList.contains('active')) {
+                        setLanguage(button.dataset.lang, true);
+                    }
+                });
             });
-        }
 
-        languageButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                if (!button.classList.contains('active')) {
-                    setLanguage(button.dataset.lang);
-                }
-            });
-        });
+            const first = initialLanguage();
+            if (first !== 'tr') setLanguage(first, false);
+        })();
     </script>
 <!-- Sticky Mobile Download Bar -->
 <div class="sticky-download-bar" id="stickyDownloadBar">
