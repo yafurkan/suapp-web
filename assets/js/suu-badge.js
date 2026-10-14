@@ -5,6 +5,8 @@
  * no-JS case still work; a plain click opens the donation panel instead.
  * Pages that don't ship donation-widget.js get it loaded on first click.
  * Footer logos are left alone — they stay plain home links.
+ * On blog pages it also adds a floating "home" pill (see initHome), since the
+ * logo no longer takes readers back to the homepage.
  */
 (function () {
     'use strict';
@@ -195,9 +197,110 @@
         }
     }
 
+    // ---------- Floating "home" button (blog pages only) ----------
+    // The header logo opens the donation panel now, so blog readers lost their
+    // one-click way back to the homepage. This pill brings it back. It sits in
+    // the corner opposite the donation FAB and lifts itself above whichever
+    // bottom bar the page family ships (.sticky-download-bar on hand-written
+    // posts, .sticky-cta on generated ones) — measured, because heights differ.
+    var HOME = {
+        tr: { href: '/', text: 'Ana Sayfa', aria: 'Ana sayfaya dön' },
+        en: { href: '/hosgeldiniz-en.html', text: 'Home', aria: 'Back to the homepage' },
+        ar: { href: '/hosgeldiniz-ar.html', text: 'الرئيسية', aria: 'العودة إلى الصفحة الرئيسية' },
+        ru: { href: '/hosgeldiniz-ru.html', text: 'Главная', aria: 'Вернуться на главную' },
+        de: { href: '/hosgeldiniz-de.html', text: 'Startseite', aria: 'Zurück zur Startseite' },
+        it: { href: '/hosgeldiniz-it.html', text: 'Home', aria: 'Torna alla home page' },
+        uk: { href: '/hosgeldiniz-uk.html', text: 'Головна', aria: 'Повернутися на головну' },
+        hi: { href: '/hosgeldiniz-hi.html', text: 'होम', aria: 'होमपेज पर वापस जाएँ' }
+    };
+
+    var HOME_CSS = [
+        '.suu-home-fab{position:fixed;left:20px;bottom:24px;z-index:9996;display:inline-flex;align-items:center;gap:8px;',
+        'height:48px;padding:0 18px 0 14px;border-radius:999px;background:#fff;color:#1a1a2e;',
+        'font:600 15px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;',
+        'text-decoration:none;border:1.5px solid rgba(74,144,217,.28);',
+        'box-shadow:0 8px 24px rgba(26,26,46,.16),0 0 0 4px rgba(74,144,217,.1);',
+        'opacity:0;transform:translateY(18px) scale(.85);pointer-events:none;',
+        'transition:opacity .35s ease,transform .45s cubic-bezier(.34,1.56,.64,1),bottom .25s ease,box-shadow .2s ease}',
+        '.suu-home-fab.suu-home-in{opacity:1;transform:none;pointer-events:auto}',
+        '.suu-home-fab:hover{box-shadow:0 10px 28px rgba(26,26,46,.22),0 0 0 6px rgba(74,144,217,.16)}',
+        '.suu-home-fab:focus-visible{outline:3px solid #4A90D9;outline-offset:3px}',
+        '.suu-home-fab svg{width:20px;height:20px;flex:none;fill:none;stroke:#4A90D9;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}',
+        'html[lang="ar"] .suu-home-fab,html[dir="rtl"] .suu-home-fab{left:auto;right:20px;padding:0 14px 0 18px}',
+        '@media (max-width:380px){.suu-home-fab{height:44px;font-size:14px;left:12px}',
+        'html[lang="ar"] .suu-home-fab,html[dir="rtl"] .suu-home-fab{left:auto;right:12px}}',
+        '@media (prefers-reduced-motion:reduce){.suu-home-fab{transition:opacity .2s ease;transform:none}}',
+        '@media print{.suu-home-fab{display:none}}'
+    ].join('');
+
+    var HOUSE = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">' +
+        '<path d="M3 10.5 12 3l9 7.5"/><path d="M5.5 9v11h13V9"/><path d="M10 20v-6h4v6"/></svg>';
+
+    function isBlogPage() {
+        var p = location.pathname;
+        return p.indexOf('/blog/') === 0 || /^\/blog(-[a-z]{2})?\.html$/.test(p);
+    }
+
+    function bottomBarHeight() {
+        var bars = document.querySelectorAll('.sticky-download-bar, .sticky-cta');
+        var h = 0;
+        for (var i = 0; i < bars.length; i++) {
+            var cs = window.getComputedStyle(bars[i]);
+            if (cs.position !== 'fixed' || cs.display === 'none' || cs.visibility === 'hidden') continue;
+            var r = bars[i].getBoundingClientRect();
+            // Only bars actually docked to the bottom edge and on screen count.
+            if (r.height > 0 && r.top < window.innerHeight && Math.abs(window.innerHeight - r.bottom) < 4) {
+                h = Math.max(h, r.height);
+            }
+        }
+        return h;
+    }
+
+    function initHome() {
+        if (!isBlogPage() || document.querySelector('.suu-home-fab')) return;
+        var code = (document.documentElement.getAttribute('lang') || 'tr').toLowerCase().slice(0, 2);
+        var cfg = HOME[code] || HOME.tr;
+
+        if (!document.getElementById('suu-home-style')) {
+            var st = document.createElement('style');
+            st.id = 'suu-home-style';
+            st.textContent = HOME_CSS;
+            document.head.appendChild(st);
+        }
+
+        var a = document.createElement('a');
+        a.className = 'suu-home-fab';
+        a.href = cfg.href;
+        a.setAttribute('aria-label', cfg.aria);
+        a.title = cfg.aria;
+        a.innerHTML = HOUSE + '<span>' + cfg.text + '</span>';
+        document.body.appendChild(a);
+
+        var pending = false;
+        function place() {
+            pending = false;
+            var bar = bottomBarHeight();
+            a.style.bottom = bar ? 'calc(' + Math.round(bar + 10) + 'px + env(safe-area-inset-bottom, 0px))'
+                                 : 'calc(24px + env(safe-area-inset-bottom, 0px))';
+        }
+        function schedule() {
+            if (pending) return;
+            pending = true;
+            (window.requestAnimationFrame || setTimeout)(place);
+        }
+        place();
+        window.addEventListener('resize', schedule);
+        window.addEventListener('scroll', schedule, { passive: true }); // some bars slide in on scroll
+
+        // "Pop" in a moment after load so it reads as a deliberate offer, not clutter.
+        setTimeout(function () { place(); a.classList.add('suu-home-in'); }, 700);
+    }
+
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);
+        document.addEventListener('DOMContentLoaded', initHome);
     } else {
         init();
+        initHome();
     }
 })();
