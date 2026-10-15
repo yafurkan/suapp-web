@@ -191,7 +191,7 @@
             "others": [{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
           { "label": "Macro tracking (protein/carbs/fat)", "suu": "✓", "suu_class": "yes",
             "others": [{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
-          { "label": "Barcode scanner", "suu": "✗", "suu_class": "no",
+          { "label": "Barcode scanner", "suu": "Limited", "suu_class": "partial",
             "others": [{"text":"Moved to Premium","cls":"no"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
           { "label": "Micronutrient breakdown", "suu": "Partial", "suu_class": "",
             "others": [{"text":"Limited","cls":"no"},{"text":"Limited","cls":"no"},{"text":"✓ Most detailed","cls":"yes"},{"text":"Partial","cls":"no"}] },

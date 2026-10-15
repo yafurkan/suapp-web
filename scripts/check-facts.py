@@ -343,6 +343,25 @@ def build_rules(facts: dict) -> list[dict]:
             "fix": "ana ekran widget'ı (küçük/orta/büyük; iOS 17+ tek dokunuşla su) — kilit ekranında Live Activity",
         })
 
+    # 2026-10-15: sahibi barkod taramasının VAR olduğunu teyit etti (ücretsizde
+    # günlük sınırla). Site 7 dilde "barkod yok" diyordu; bu kural geri dönüşü yakalar.
+    if facts["platform_matrix"].get("barcode_scanner", {}).get("ios") == "yes":
+        rules.append({
+            "id": "suu-no-barcode-claim",
+            "severity": ERROR,
+            "pattern": re.compile(
+                r"(?i)no barcode|does not scan barcodes|barcode scann(?:er|ing) yet|without barcode"
+                r"|barkod okum(?:az|uyor)|barkod tarayıcısı ve tarif kütüphanesi yok"
+                r"|не сканирует штрих|нет сканера штрих|без сканирования штрих|сканера штрихкодов и библиотеки рецептов нет"
+                r"|не сканує штрих|немає сканера штрих|сканера штрихкодів у Suu немає"
+                r"|لا يقرأ الباركود|دون قراءة باركود|ولا ماسح باركود|ولا يملك ماسح باركود"
+                r"|scannt aber keine Barcodes|kein(?:en)? Barcode-Scanner"
+                r"|non scansiona codici a barre|nessuno scanner di codici a barre|non ha uno scanner"
+            ),
+            "message": "Suu'da barkod tarama VAR (ücretsiz planda günlük sınırla) — 'barkod yok' denemez",
+            "fix": "barkod tarama var; ücretsiz planda günlük sınırlı (sınır sayısı yazılmaz)",
+        })
+
     return rules
 
 

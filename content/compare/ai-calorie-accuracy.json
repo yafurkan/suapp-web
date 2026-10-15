@@ -180,7 +180,7 @@
           "list": [
             "<strong>The drink is not lost.</strong> When you log \"a bowl of soup and a glass of ayran\", Suu separates the solids from the liquids: the soup becomes calories and macros, and the ayran also counts toward your hydration. Calorie-only apps discard the second half of that sentence.",
             "<strong>The meal changes your water target.</strong> Protein and sodium in a logged meal add a digestion-water requirement to your daily goal, and a recorded workout raises it further.",
-            "<strong>Honest limits:</strong> Suu's food database is smaller than MyFitnessPal's, there is no barcode scanning, and if you deliberately track micronutrients, Cronometer is the better tool. Three AI analyses per day are free; unlimited analysis and photo recognition are Premium."
+            "<strong>Honest limits:</strong> Suu's food database is smaller than MyFitnessPal's, barcode scanning is limited on the free plan, and if you deliberately track micronutrients, Cronometer is the better tool. Three AI analyses per day are free; unlimited analysis and photo recognition are Premium."
           ]
         }
       ],
@@ -220,7 +220,7 @@
         },
         {
           "q": "Does Suu publish its own accuracy figure?",
-          "a": "No. We have not run a validation study against ground truth, so we do not publish a number — quoting one without a study behind it would be inventing it. Suu's photo analysis carries the same portion-estimation limits the literature describes for the category. Suu's food database is also smaller than MyFitnessPal's and there is no barcode scanning."
+          "a": "No. We have not run a validation study against ground truth, so we do not publish a number — quoting one without a study behind it would be inventing it. Suu's photo analysis carries the same portion-estimation limits the literature describes for the category. Suu's food database is also smaller than MyFitnessPal's."
         },
         {
           "q": "Can I improve the accuracy of a photo calorie log?",

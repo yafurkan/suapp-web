@@ -197,8 +197,8 @@
                 "cls": "yes"
               },
               {
-                "text": "✗",
-                "cls": "no"
+                "text": "✓",
+                "cls": "yes"
               }
             ]
           },
@@ -348,7 +348,7 @@
             "<strong>No segments or leaderboards.</strong> If being ranked on a climb is the reason you run the route, Strava is the answer and nothing here replaces it.",
             "<strong>No social feed, clubs or kudos.</strong> Suu has weekly water-drinking leagues with up to 4 friends, which is not the same thing and is not meant to be.",
             "<strong>Shallower cycling analytics.</strong> No power-meter analysis, no external sensor ecosystem, no route planner.",
-            "<strong>No barcode scanning</strong>, and a food database smaller than MyFitnessPal's. If you eat a lot of packaged or restaurant food, that gap is real.",
+            "<strong>A smaller food database</strong> than MyFitnessPal's, and barcode scanning is limited on the free plan. If you eat a lot of packaged or restaurant food, that gap is real.",
             "<strong>Not a strength-training log.</strong> For set-and-rep tracking in the gym, Hevy or Strong remain better tools."
           ]
         },

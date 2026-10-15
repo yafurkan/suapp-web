@@ -276,6 +276,13 @@
   },
   "platform_matrix": {
     "_comment": "Değerler: 'yes' | 'no' | 'coming_soon'. Site, JSON-LD ve llms.txt bu tablodan üretilir. 'coming_soon' olan hiçbir özellik sitede 'var' gibi anlatılamaz.",
+    "barcode_scanner": {
+      "ios": "yes",
+      "android": "yes",
+      "free": "limited",
+      "label": {"tr": "Barkod tarama", "en": "Barcode scanning"},
+      "_note": "Sahibi 2026-10-15'te teyit etti: barkod tarama var; ücretsiz planda günlük sınırla (sınırın sayısı bilinmiyor, yazılmaz). Uygulama ekranında 'Scan · Barcode · Describe · Search' düğmeleri. Site daha önce 'barkod yok' diyordu; 7 dilde düzeltildi."
+    },
     "apple_health": {
       "ios": "yes",
       "android": "no",
@@ -605,7 +612,9 @@
       "x": "https://x.com/SuuTakip",
       "linkedin": "https://www.linkedin.com/company/suuapp/",
       "crunchbase": "https://www.crunchbase.com/organization/suu-1c8b",
-      "producthunt": "https://www.producthunt.com/products/suu-water-tracker"
+      "producthunt": "https://www.producthunt.com/products/suu-water-tracker",
+      "instagram": "https://www.instagram.com/suutakip/",
+      "facebook": "https://www.facebook.com/profile.php?id=61580176610557"
     }
   },
   "entities": {

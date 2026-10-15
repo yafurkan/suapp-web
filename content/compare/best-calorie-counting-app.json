@@ -151,8 +151,8 @@
             "label": "Barcode scanner",
             "cells": [
               {
-                "text": "✗",
-                "cls": "no"
+                "text": "✓ Limited free",
+                "cls": "partial"
               },
               {
                 "text": "Premium",
@@ -585,7 +585,7 @@
         },
         {
           "q": "What is the best MyFitnessPal alternative?",
-          "a": "It depends which part of MyFitnessPal you are replacing. For the database, nothing matches it — Lose It! is the closest with a friendlier free tier. For micronutrients, Cronometer. For an adaptive target, MacroFactor. For faster logging, Suu, which adds water and exercise tracking that MyFitnessPal does not do in the same depth — though it has no barcode scanner."
+          "a": "It depends which part of MyFitnessPal you are replacing. For the database, nothing matches it — Lose It! is the closest with a friendlier free tier. For micronutrients, Cronometer. For an adaptive target, MacroFactor. For faster logging, Suu, which adds water and exercise tracking that MyFitnessPal does not do in the same depth — and it scans barcodes too, with a daily limit on the free plan."
         },
         {
           "q": "Can an app count calories from a photo accurately?",
@@ -795,8 +795,8 @@
             "label": "Barcode-Scanner",
             "cells": [
               {
-                "text": "✗",
-                "cls": "no"
+                "text": "✓ Gratis begrenzt",
+                "cls": "partial"
               },
               {
                 "text": "✓",
@@ -1438,8 +1438,8 @@
             "label": "Scanner codice a barre",
             "cells": [
               {
-                "text": "✗",
-                "cls": "no"
+                "text": "✓ Gratis limitato",
+                "cls": "partial"
               },
               {
                 "text": "Premium",
@@ -1871,7 +1871,7 @@
         },
         {
           "q": "Qual è la migliore alternativa a MyFitnessPal?",
-          "a": "Dipende da quale parte di MyFitnessPal stai sostituendo. Per il database italiano, FatSecret. Per i micronutrienti, Cronometer. Per un obiettivo che si adatta, MacroFactor. Per velocizzare l'inserimento, Suu, che aggiunge idratazione e allenamenti che MyFitnessPal non copre con la stessa profondità, ma non ha uno scanner per codici a barre."
+          "a": "Dipende da quale parte di MyFitnessPal stai sostituendo. Per il database italiano, FatSecret. Per i micronutrienti, Cronometer. Per un obiettivo che si adatta, MacroFactor. Per velocizzare l'inserimento, Suu, che aggiunge idratazione e allenamenti che MyFitnessPal non copre con la stessa profondità, e scansiona anche i codici a barre, con un limite giornaliero nella versione gratuita."
         },
         {
           "q": "Un'app può contare le calorie da una foto in modo affidabile?",
@@ -2081,8 +2081,8 @@
             "label": "Сканер штрихкодів",
             "cells": [
               {
-                "text": "✗",
-                "cls": "no"
+                "text": "✓ Безкоштовно з лімітом",
+                "cls": "partial"
               },
               {
                 "text": "Premium",
@@ -2514,7 +2514,7 @@
         },
         {
           "q": "Яка найкраща альтернатива MyFitnessPal?",
-          "a": "Залежить від того, яку саме частину MyFitnessPal ти заміняєш. Для бази — FatSecret або Lose It!. Для мікронутрієнтів — Cronometer. Для норми, що підлаштовується, — MacroFactor. Щоб пришвидшити запис — Suu, який додає воду й тренування, чого MyFitnessPal з такою глибиною не робить; щоправда, сканера штрихкодів у Suu немає."
+          "a": "Залежить від того, яку саме частину MyFitnessPal ти заміняєш. Для бази — FatSecret або Lose It!. Для мікронутрієнтів — Cronometer. Для норми, що підлаштовується, — MacroFactor. Щоб пришвидшити запис — Suu, який додає воду й тренування, чого MyFitnessPal з такою глибиною не робить; Suu також сканує штрихкоди, у безкоштовній версії — з денним лімітом."
         },
         {
           "q": "Чи може застосунок надійно порахувати калорії за фотографією?",
