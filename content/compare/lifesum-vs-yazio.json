@@ -1,15 +1,335 @@
 {
   "_note": "RAKİP-vs-RAKİP. Search Console: 'lifesum vs yazio' 2 tıklama / 42 gösterim — Suu geçmediği hâlde sıralanıyoruz. Bu sorgu sınıfını gerçekten hedefliyoruz. Suu üçüncü seçenek olarak, dürüstçe ve sonda sunuluyor.",
   "published": "2026-08-13",
-
   "pages": {
+    "tr": {
+      "slug": "lifesum-vs-yazio",
+      "published_display": "15 Ekim 2026",
+      "read_minutes": 7,
+      "badge": "⚖️ Kafa kafaya 2026",
+      "h1": "Lifesum vs Yazio: 2026'da Hangi Kalori Uygulamasını Seçmeli?",
+      "meta": {
+        "title": "Lifesum vs Yazio (2026): Hangisi Daha İyi? Dürüst Karşılaştırma | Suu",
+        "description": "Lifesum ve Yazio'yu besin veritabanı, tarifler, makro takibi, ücretsiz plan sınırları ve fiyat açısından karşılaştırdık. Hangisi yeni başlayanlara, hangisi öğün planlayanlara uygun — ve ikisinin de yapmadığı şey.",
+        "keywords": "lifesum vs yazio, yazio vs lifesum, lifesum mı yazio mu, en iyi kalori uygulaması karşılaştırma, lifesum inceleme 2026, yazio inceleme 2026, kalori sayacı karşılaştırma, diyet uygulaması karşılaştırma",
+        "og_title": "Lifesum vs Yazio: Hangi Kalori Uygulamasını Seçmeli?",
+        "og_description": "Lifesum ve Yazio'nun dürüst bir yan yana karşılaştırması — veritabanı, tarifler, makrolar, ücretsiz sürüm ve fiyat — ve ikisinin de açık bıraktığı boşluk."
+      },
+      "answer": "Darboğazın öğün planlamaksa Yazio daha iyi seçim: tarif kütüphanesi ve yapılandırılmış diyet planları daha güçlü, ücretsiz sürümü de daha kullanışlı. Lifesum ise arayüz cilası ve alışkanlık koçluğunda kazanıyor; bu da onu ilk kez takip yapan biri için daha dostça kılıyor. İkisi de kaloriyi ve makroları yetkin biçimde yönetiyor; hiçbiri su ya da kaydettiğin egzersizle anlamlı bir şey yapmıyor.",
+      "disclosure": "Bu karşılaştırma, rakip bir uygulama yapan Suu tarafından yayımlanıyor. Bu bir çıkar çatışması; bu yüzden Lifesum ve Yazio bölümlerini Suu tanıtımından arındırdık ve kendi uygulamamızı sonda, açıkça ayrılmış ve atlayabileceğin bir bölüme koyduk. Özellik ayrıntıları Ağustos 2026 itibarıyla kamuya açık bilgilere dayanır ve sık değişir — güncel plan sınırlarını her uygulamanın mağaza sayfasından doğrula.",
+      "intro": [
+        "Lifesum ve Yazio, MyFitnessPal'ı fazla kalabalık bulan çoğu kişinin sonunda arasında seçim yaptığı iki Avrupalı kalori uygulaması. Benzer bir alanı kaplıyorlar: daha sade tasarım, makro takibi, diyet planları ve iyi kısımların kilidini açan bir abonelik.",
+        "Yine de vurguları gerçekten farklı ve doğru cevap, aslında hangi sorunu çözmeye çalıştığına bağlı — <em>ne yediğini bilmek</em> mi, <em>ne yiyeceğine karar vermek</em> mi?"
+      ],
+      "table": {
+        "head": "Lifesum vs Yazio",
+        "caption": "Lifesum ve Yazio özellik karşılaştırması",
+        "col_feature": "Özellik",
+        "columns": [
+          "Lifesum",
+          "Yazio"
+        ],
+        "suu_col": -1,
+        "rows": [
+          {
+            "label": "Kalori ve makro kaydı",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Besin veritabanı genişliği",
+            "cells": [
+              {
+                "text": "Büyük",
+                "cls": "yes"
+              },
+              {
+                "text": "Büyük",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Barkod tarayıcı",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Fotoğrafla yemek tanıma",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Tarif kütüphanesi",
+            "cells": [
+              {
+                "text": "✓ İyi",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Daha güçlü",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Yapılandırılmış diyet planları",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Daha kapsamlı",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Besin kalitesi puanı",
+            "cells": [
+              {
+                "text": "✓ Life Score",
+                "cls": "yes"
+              },
+              {
+                "text": "Kısmi",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Arayüz cilası / ilk kurulum",
+            "cells": [
+              {
+                "text": "✓ Daha güçlü",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ İyi",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Ücretsiz sürümün kullanılabilirliği",
+            "cells": [
+              {
+                "text": "Daha kısıtlı",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Daha kullanışlı",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Oruç takibi",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Uygulama içi egzersiz takibi",
+            "cells": [
+              {
+                "text": "Temel",
+                "cls": "no"
+              },
+              {
+                "text": "Temel",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Su modeli (içeceğe göre)",
+            "cells": [
+              {
+                "text": "Basit sayaç",
+                "cls": "no"
+              },
+              {
+                "text": "Basit sayaç",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Antrenman su hedefini güncelliyor mu?",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Apple Health / Health Connect senkronizasyonu",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          }
+        ]
+      },
+      "analysis": [
+        {
+          "head": "Yeni başlıyorsan Lifesum'u seç",
+          "body": [
+            "Lifesum'un gücü, sayıların etrafındaki deneyim. İlk kurulum nazik, arayüz kalabalık değil ve Life Score fikri — yediğinin yalnızca miktarını değil kalitesini puanlamak — yeni başlayanlara çıplak bir kalori sayısının vermediği bir geri bildirim sunuyor.",
+            "Bu, göründüğünden daha önemli. Kalori takibinde en yaygın başarısızlık hatalı veri değil, ikinci haftada bırakmak. İlk iki haftayı cesaretlendirici kılan bir uygulamanın gerçek bir avantajı var.",
+            "Karşılığında ücretsiz sürüm geliyor: insanların beklediği özelliklerin birçoğu Premium'da ve bunu Yazio'dakinden daha erken fark ediyorsun."
+          ]
+        },
+        {
+          "head": "Ne pişireceğine karar vermek zor kısımsa Yazio'yu seç",
+          "body": [
+            "Yazio'nun tarif ve diyet planı kütüphanesi ikisi arasında daha derin olanı. Bir takip uygulamasını açtığında asıl sorunun \"makrolarıma uyan ne yapacağımı bilmiyorum\" ise, Yazio bu soruya daha iyi cevap veriyor.",
+            "Ücretsiz sürümü de ikisi arasında daha kullanışlı olanı — aylarca ödeme yapmadan ciddi kayıt tutabilirsin; bu Lifesum için pek geçerli değil.",
+            "Geride kaldığı yer cila. Yazio gayet hoş ama Lifesum'un tasarımı ve koçluk katmanı bir adım önde hissettiriyor."
+          ],
+          "callout": "<strong>Pratik kural:</strong> Sorunun ne yediğini <em>kaydetmek</em>se ikisi de olur, Lifesum daha hoş. Sorunun ne yiyeceğini <em>planlamak</em>sa Yazio. Sorunun yemeğin resmin yalnızca bir parçası olmasıysa okumaya devam et."
+        },
+        {
+          "head": "İkisinin de masada bıraktığı şey",
+          "body": [
+            "Lifesum ve Yazio, en baştan üçü etrafında tasarlanmış uygulamalar değil; su sayacı ve hafif bir egzersiz kaydı eklenmiş beslenme uygulamaları. Pratikte bu, iki şeyin anlamlı hiçbir biçimde takip edilmediği anlamına geliyor.",
+            "<strong>Su bir model değil, bir sayaç.</strong> İkisi de bardak sayıyor. Hiçbiri ne içtiğini ayırt etmiyor — 250 ml kahve ile 250 ml su sıvı dengesi açısından aynı değil, ama iki uygulama da bunu yansıtmıyor. Hiçbiri sıcak bir gün için hedefini ayarlamıyor.",
+            "<strong>Egzersiz hiçbir şeyi beslemiyor.</strong> Bir antrenman kaydedebiliyorsun ve kaloriler hakkını telafi edebiliyor, ama terle kaybettiğin sıvı hiçbir yerde hesaba katılmıyor. Ağır bir antrenman gününde en çok değişen sayı, kimsenin takip etmediği sayı."
+          ]
+        },
+        {
+          "head": "Açıklama: kendi uygulamamızın yeri",
+          "body": [
+            "Bu karşılaştırmayı biz yayımlıyoruz ve rakip bir uygulama da yapıyoruz; bu bölümü reklam olarak değerlendir, istersen atla — yukarıdaki Lifesum ve Yazio kararı kendi başına geçerli.",
+            "Suu yukarıda anlatılan boşluk etrafında kuruldu: su, kalori ve egzersiz, üç ayrı kayıt yerine tek bir bağlı sistem. Kaydettiğin bir koşu, tahmini ter kaybından günlük su hedefini yükseltiyor; fotoğrafını çektiğin bir öğünün kalorisi ve makroları analiz ediliyor, protein ve sodyum içeriği de üstüne sindirim suyu ekliyor; 91 içeceğin her biri gerçek hidrasyon değeriyle katkı yapıyor.",
+            "Suu'nun geride kaldığı yerler: besin veritabanı Lifesum'un da Yazio'nun da veritabanından küçük ve hiç tarif kütüphanesi yok. Tarifler ya da veritabanı genişliği önceliğinse, yukarıdaki iki uygulama daha iyi seçim olmaya devam ediyor; aksini iddia etmektense bunu söylemeyi tercih ederiz."
+          ]
+        }
+      ],
+      "verdict": {
+        "head": "Karar",
+        "body": [
+          "<strong>Lifesum</strong> — daha iyi ilk kurulum, daha hoş arayüz, besin kalitesi puanı. İlk kez kalori takibi yapan biri için en iyisi.",
+          "<strong>Yazio</strong> — daha güçlü tarifler ve diyet planları, daha kullanışlı ücretsiz sürüm. Asıl darboğaz öğün planlamaksa en iyisi.",
+          "<strong>Hiçbiri</strong> — suyun düzgün modellenmesini ve antrenmanlarının günlük hedeflerini değiştirmesini istiyorsan, ikisi de tasarımları gereği yetersiz kalıyor; Suu'nun yapıldığı boşluk tam da bu.",
+          "Yalnızca bu ikisi arasında seçim yapıyorsan: önce Yazio'nun ücretsiz sürümünü dene, çünkü para istemeden önce seni daha ileri götürüyor."
+        ]
+      },
+      "cta": {
+        "head": "Su, kalori ve egzersiz tek bir bağlı uygulamada olsun mu?",
+        "sub": "İndirmesi ücretsiz · Premium 3 gün ücretsiz",
+        "button": "Suu'nun nasıl yaptığını gör"
+      },
+      "faq": [
+        {
+          "q": "Lifesum mu Yazio mu daha iyi?",
+          "a": "İlk kurulumu, daha sade arayüzü ve Life Score besin kalitesi puanı sayesinde Lifesum yeni başlayanlar için daha iyi. Tarifler ve yapılandırılmış diyet planları istiyorsan Yazio daha iyi; ücretsiz sürümü de uzun vadede daha kullanışlı. İkisi de kaloriyi ve makroları yetkin biçimde takip ediyor."
+        },
+        {
+          "q": "Hangisinin ücretsiz planı daha iyi, Lifesum mu Yazio mu?",
+          "a": "Genel olarak Yazio'nun ücretsiz sürümü ikisi arasında daha kullanışlı olanı — ödeme duvarı kısıtlayıcı hâle gelmeden aylarca ciddi biçimde kalori ve makro kaydedebilirsin. Lifesum ayırt edici özelliklerinin daha fazlasını Premium'a koyuyor."
+        },
+        {
+          "q": "Lifesum ve Yazio suyu takip ediyor mu?",
+          "a": "İkisinde de basit bir su sayacı var ama hiçbiri suyu düzgün modellemiyor: ne içtiğini ayırt etmeden bardak sayıyorlar ve hedefini egzersize ya da sıcak havaya göre ayarlamıyorlar. Kahve ve su aynı şekilde sayılıyor."
+        },
+        {
+          "q": "Lifesum ya da Yazio antrenmanları takip ediyor mu?",
+          "a": "İkisi de temel egzersiz kaydı sunuyor ve antrenmanları Apple Health'ten ya da Google Health Connect'ten okuyabiliyor, ama hiçbiri ciddi bir antrenman takipçisi değil ve kaydedilen egzersiz kalori hakkın dışında hiçbir şeyi etkilemiyor."
+        },
+        {
+          "q": "Lifesum ve Yazio'ya iyi bir alternatif hangisi?",
+          "a": "Daha büyük bir besin veritabanı için MyFitnessPal. Derin mikro besin ayrıntısı için Cronometer. Kaloriyi, egzersizi ve suyu tek uygulamada birbirine bağlamak istiyorsan — kaydettiğin antrenmanın su hedefini yükselttiği, yediğin öğünün de sindirim suyu eklediği — Suu tam da bu boşluk için yapıldı; ama besin veritabanı daha küçük ve tarif kütüphanesi yok."
+        }
+      ],
+      "references": [
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/",
+          "label": "Beslenmeyi kendi kendine izleme ve kilo yönetimi (PMC)"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5568610/",
+          "label": "Mobil beslenme takibi ve sürdürülebilirlik (PMC)"
+        },
+        {
+          "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459",
+          "label": "EFSA — su için diyet referans değerleri"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/lifesum-vs-myfitnesspal.html",
+          "title": "Lifesum vs MyFitnessPal: Hangi Kalori Uygulaması?",
+          "desc": "En geniş veritabanı mı, sade ve rehberli bir deneyim mi? Lifesum ve MyFitnessPal'ın dürüst…"
+        },
+        {
+          "href": "/blog/cronometer-vs-lifesum.html",
+          "title": "Cronometer vs Lifesum: Hangi Kalori Uygulaması?",
+          "desc": "Vitamin ve mineral derinliği mi, rehberli ve şık bir deneyim mi? Cronometer ve Lifesum'un dürüst…"
+        },
+        {
+          "href": "/blog/yazio-alternatifleri.html",
+          "title": "Yazio Alternatifleri: Hangisi Sana Uygun? (2026)",
+          "desc": "Yazio'nun güçlü olduğu yerleri kabul ettik, eksik kaldığı yerlerde 5 alternatifi karşılaştırdık: kalori…"
+        },
+        {
+          "href": "/blog/en-iyi-kalori-uygulamasi.html",
+          "title": "En İyi Kalori Sayma Uygulaması 2026: Suu vs MyFitnessPal, Yazio, Lifesum, Cronometer",
+          "desc": "Su, kalori ve egzersizi tek uygulamada takip etmek isteyenler için 2026'nın en iyi beslenme uygulamaları…"
+        }
+      ],
+      "published": "2026-10-15"
+    },
     "en": {
       "slug": "lifesum-vs-yazio",
       "published_display": "13 August 2026",
       "read_minutes": 7,
       "badge": "⚖️ Head-to-Head 2026",
       "h1": "Lifesum vs Yazio: Which Calorie App Should You Pick in 2026?",
-
       "meta": {
         "title": "Lifesum vs Yazio (2026): Which Is Better? Honest Comparison | Suu",
         "description": "Lifesum and Yazio compared on food database, recipes, macro tracking, free plan limits and price. Which suits beginners, which suits meal planners — and what neither of them does.",
@@ -17,40 +337,206 @@
         "og_title": "Lifesum vs Yazio: Which Calorie App Should You Pick?",
         "og_description": "An honest side-by-side of Lifesum and Yazio — database, recipes, macros, free tier and price — plus the gap both leave open."
       },
-
       "answer": "Yazio is the better pick if meal planning is your bottleneck: its recipe library and structured diet plans are stronger, and its free tier is more usable. Lifesum wins on interface polish and habit coaching, which makes it friendlier for a first-time tracker. Both handle calories and macros competently; neither does anything meaningful with hydration or with the exercise you log.",
-
       "disclosure": "This comparison is published by Suu, which makes a competing app. That is a conflict of interest, so we have kept the Lifesum and Yazio sections free of Suu marketing and put our own app in a clearly separated section at the end, where you can skip it. Feature details reflect publicly available information as of August 2026 and change frequently — verify current plan limits on each app's store page.",
-
       "intro": [
         "Lifesum and Yazio are the two European calorie apps that most people end up choosing between after deciding MyFitnessPal is too cluttered. They occupy similar ground: cleaner design, macro tracking, diet plans, and a subscription that unlocks the good parts.",
         "They are genuinely different in emphasis, though, and the right answer depends on which problem you are actually trying to solve — <em>knowing what you ate</em> or <em>deciding what to eat</em>."
       ],
-
       "table": {
         "head": "Lifesum vs Yazio",
         "caption": "Feature comparison between Lifesum and Yazio",
         "col_feature": "Feature",
-        "columns": ["Lifesum", "Yazio"],
+        "columns": [
+          "Lifesum",
+          "Yazio"
+        ],
         "suu_col": -1,
         "rows": [
-          { "label": "Calorie and macro logging", "cells": [{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
-          { "label": "Food database breadth", "cells": [{"text":"Large","cls":"yes"},{"text":"Large","cls":"yes"}] },
-          { "label": "Barcode scanner", "cells": [{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
-          { "label": "Photo food recognition", "cells": [{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
-          { "label": "Recipe library", "cells": [{"text":"✓ Good","cls":"yes"},{"text":"✓ Stronger","cls":"yes"}] },
-          { "label": "Structured diet plans", "cells": [{"text":"✓","cls":"yes"},{"text":"✓ More extensive","cls":"yes"}] },
-          { "label": "Food quality scoring", "cells": [{"text":"✓ Life Score","cls":"yes"},{"text":"Partial","cls":"no"}] },
-          { "label": "Interface polish / onboarding", "cells": [{"text":"✓ Stronger","cls":"yes"},{"text":"✓ Good","cls":"yes"}] },
-          { "label": "Free tier usability", "cells": [{"text":"More limited","cls":"no"},{"text":"✓ More usable","cls":"yes"}] },
-          { "label": "Fasting tracker", "cells": [{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
-          { "label": "Exercise tracking in-app", "cells": [{"text":"Basic","cls":"no"},{"text":"Basic","cls":"no"}] },
-          { "label": "Hydration modelling (per beverage)", "cells": [{"text":"Simple counter","cls":"no"},{"text":"Simple counter","cls":"no"}] },
-          { "label": "Workout updates hydration goal", "cells": [{"text":"✗","cls":"no"},{"text":"✗","cls":"no"}] },
-          { "label": "Apple Health / Health Connect sync", "cells": [{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] }
+          {
+            "label": "Calorie and macro logging",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Food database breadth",
+            "cells": [
+              {
+                "text": "Large",
+                "cls": "yes"
+              },
+              {
+                "text": "Large",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Barcode scanner",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Photo food recognition",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Recipe library",
+            "cells": [
+              {
+                "text": "✓ Good",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Stronger",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Structured diet plans",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ More extensive",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Food quality scoring",
+            "cells": [
+              {
+                "text": "✓ Life Score",
+                "cls": "yes"
+              },
+              {
+                "text": "Partial",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Interface polish / onboarding",
+            "cells": [
+              {
+                "text": "✓ Stronger",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Good",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Free tier usability",
+            "cells": [
+              {
+                "text": "More limited",
+                "cls": "no"
+              },
+              {
+                "text": "✓ More usable",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Fasting tracker",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Exercise tracking in-app",
+            "cells": [
+              {
+                "text": "Basic",
+                "cls": "no"
+              },
+              {
+                "text": "Basic",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Hydration modelling (per beverage)",
+            "cells": [
+              {
+                "text": "Simple counter",
+                "cls": "no"
+              },
+              {
+                "text": "Simple counter",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Workout updates hydration goal",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Apple Health / Health Connect sync",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          }
         ]
       },
-
       "analysis": [
         {
           "head": "Choose Lifesum if you are starting out",
@@ -86,7 +572,6 @@
           ]
         }
       ],
-
       "verdict": {
         "head": "Verdict",
         "body": [
@@ -96,38 +581,1679 @@
           "If you are choosing purely between these two: try Yazio's free tier first, since it lets you get further before asking for money."
         ]
       },
-
       "cta": {
         "head": "Want water, calories and exercise in one connected app?",
         "sub": "Free to download · Premium free for 3 days",
         "button": "See how Suu does it"
       },
-
       "faq": [
-        { "q": "Is Lifesum or Yazio better?",
-          "a": "Lifesum is better for beginners thanks to its onboarding, cleaner interface and Life Score food-quality rating. Yazio is better if you want recipes and structured diet plans, and its free tier is more usable long-term. Both track calories and macros competently." },
-        { "q": "Which has the better free plan, Lifesum or Yazio?",
-          "a": "Yazio's free tier is generally the more usable of the two — you can log calories and macros seriously for months before the paywall becomes limiting. Lifesum places more of its distinctive features behind Premium." },
-        { "q": "Do Lifesum and Yazio track water?",
-          "a": "Both include a basic water counter, but neither models hydration properly: they count glasses without distinguishing what you drank, and they do not adjust your target for exercise or hot weather. Coffee and water are counted the same way." },
-        { "q": "Do Lifesum or Yazio track workouts?",
-          "a": "Both offer basic exercise logging and can read workouts from Apple Health or Google Health Connect, but neither is a serious workout tracker, and logged exercise does not affect anything beyond your calorie allowance." },
-        { "q": "What is a good alternative to Lifesum and Yazio?",
-          "a": "For a larger food database, MyFitnessPal. For deep micronutrient detail, Cronometer. If you want calories, exercise and hydration connected in one app — where the workout you log raises your water goal and the meal you eat adds digestion water — Suu is built for that specific gap, though its food database is smaller and it has no recipe library." }
+        {
+          "q": "Is Lifesum or Yazio better?",
+          "a": "Lifesum is better for beginners thanks to its onboarding, cleaner interface and Life Score food-quality rating. Yazio is better if you want recipes and structured diet plans, and its free tier is more usable long-term. Both track calories and macros competently."
+        },
+        {
+          "q": "Which has the better free plan, Lifesum or Yazio?",
+          "a": "Yazio's free tier is generally the more usable of the two — you can log calories and macros seriously for months before the paywall becomes limiting. Lifesum places more of its distinctive features behind Premium."
+        },
+        {
+          "q": "Do Lifesum and Yazio track water?",
+          "a": "Both include a basic water counter, but neither models hydration properly: they count glasses without distinguishing what you drank, and they do not adjust your target for exercise or hot weather. Coffee and water are counted the same way."
+        },
+        {
+          "q": "Do Lifesum or Yazio track workouts?",
+          "a": "Both offer basic exercise logging and can read workouts from Apple Health or Google Health Connect, but neither is a serious workout tracker, and logged exercise does not affect anything beyond your calorie allowance."
+        },
+        {
+          "q": "What is a good alternative to Lifesum and Yazio?",
+          "a": "For a larger food database, MyFitnessPal. For deep micronutrient detail, Cronometer. If you want calories, exercise and hydration connected in one app — where the workout you log raises your water goal and the meal you eat adds digestion water — Suu is built for that specific gap, though its food database is smaller and it has no recipe library."
+        }
       ],
-
       "references": [
-        { "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/", "label": "Dietary self-monitoring and weight management (PMC)" },
-        { "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5568610/", "label": "Mobile dietary tracking and adherence (PMC)" },
-        { "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459", "label": "EFSA — dietary reference values for water" }
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/",
+          "label": "Dietary self-monitoring and weight management (PMC)"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5568610/",
+          "label": "Mobile dietary tracking and adherence (PMC)"
+        },
+        {
+          "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459",
+          "label": "EFSA — dietary reference values for water"
+        }
       ],
-
       "related": [
-        { "href": "/blog/en/best-calorie-counting-app.html", "title": "Best calorie counting app", "desc": "The wider five-app comparison." },
-        { "href": "/blog/en/suu-vs-yazio.html", "title": "Suu vs Yazio", "desc": "If you want the direct head-to-head." },
-        { "href": "/blog/en/free-calorie-counter-app.html", "title": "Free calorie counter apps", "desc": "What actually stays free on each plan." },
-        { "href": "/blog/en/water-calorie-exercise-one-app.html", "title": "Water + calories + exercise in one app", "desc": "The gap both of these leave open." }
+        {
+          "href": "/blog/en/best-calorie-counting-app.html",
+          "title": "Best calorie counting app",
+          "desc": "The wider five-app comparison."
+        },
+        {
+          "href": "/blog/en/suu-vs-yazio.html",
+          "title": "Suu vs Yazio",
+          "desc": "If you want the direct head-to-head."
+        },
+        {
+          "href": "/blog/en/free-calorie-counter-app.html",
+          "title": "Free calorie counter apps",
+          "desc": "What actually stays free on each plan."
+        },
+        {
+          "href": "/blog/en/water-calorie-exercise-one-app.html",
+          "title": "Water + calories + exercise in one app",
+          "desc": "The gap both of these leave open."
+        }
       ]
+    },
+    "ar": {
+      "slug": "lifesum-vs-yazio",
+      "published_display": "15 أكتوبر 2026",
+      "read_minutes": 7,
+      "badge": "⚖️ مواجهة مباشرة 2026",
+      "h1": "Lifesum أم Yazio: أي تطبيق سعرات تختار في 2026؟",
+      "meta": {
+        "title": "Lifesum أم Yazio (2026): أيهما أفضل؟ مقارنة صادقة | Suu",
+        "description": "نقارن Lifesum وYazio في قاعدة بيانات الأطعمة والوصفات وتتبع المغذيات الكبرى وحدود الخطة المجانية والسعر. أيهما يناسب المبتدئين، وأيهما يناسب من يخطط وجباته — وما الذي لا يفعله أيٌّ منهما.",
+        "keywords": "lifesum vs yazio، yazio vs lifesum، lifesum أم yazio، مقارنة أفضل تطبيقات السعرات، مراجعة lifesum 2026، مراجعة yazio 2026، مقارنة عدادات السعرات، مقارنة تطبيقات الحمية",
+        "og_title": "Lifesum أم Yazio: أي تطبيق سعرات تختار؟",
+        "og_description": "مقارنة صادقة بين Lifesum وYazio — قاعدة البيانات والوصفات والمغذيات الكبرى والنسخة المجانية والسعر — مع الفجوة التي يتركها الاثنان."
+      },
+      "answer": "Yazio هو الخيار الأفضل إن كان تخطيط الوجبات هو عقبتك: مكتبة وصفاته وخطط حميته المنظّمة أقوى، ونسخته المجانية أكثر قابلية للاستخدام. ويتفوق Lifesum في إتقان الواجهة وتدريب العادات، ما يجعله أودّ لمن يتتبع للمرة الأولى. كلاهما يتعامل مع السعرات والمغذيات الكبرى بكفاءة؛ ولا يفعل أيٌّ منهما شيئًا ذا معنى بالترطيب أو بالتمارين التي تسجّلها.",
+      "disclosure": "تنشر Suu هذه المقارنة، وهي تصنع تطبيقًا منافسًا. هذا تضارب مصالح، لذلك أبقينا قسمي Lifesum وYazio خاليين من أي ترويج لـSuu، ووضعنا تطبيقنا في قسم منفصل بوضوح في النهاية يمكنك تخطيه. تعكس تفاصيل الميزات المعلومات المتاحة للعامة حتى أغسطس 2026 وهي تتغير كثيرًا — تحقّق من حدود الخطط الحالية في صفحة كل تطبيق في المتجر.",
+      "intro": [
+        "Lifesum وYazio هما تطبيقا السعرات الأوروبيان اللذان ينتهي معظم الناس إلى الاختيار بينهما بعد أن يجدوا MyFitnessPal مزدحمًا أكثر من اللازم. يشغلان مجالًا متشابهًا: تصميم أنظف، وتتبع المغذيات الكبرى، وخطط حمية، واشتراك يفتح الأجزاء الجيدة.",
+        "لكن تركيز كلٍّ منهما مختلف فعلًا، والجواب الصحيح يعتمد على المشكلة التي تحاول حلها حقًا — <em>معرفة ما أكلته</em> أم <em>تحديد ما ستأكله</em>."
+      ],
+      "table": {
+        "head": "Lifesum vs Yazio",
+        "caption": "مقارنة ميزات Lifesum وYazio",
+        "col_feature": "الميزة",
+        "columns": [
+          "Lifesum",
+          "Yazio"
+        ],
+        "suu_col": -1,
+        "rows": [
+          {
+            "label": "تسجيل السعرات والمغذيات الكبرى",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "سعة قاعدة بيانات الأطعمة",
+            "cells": [
+              {
+                "text": "كبيرة",
+                "cls": "yes"
+              },
+              {
+                "text": "كبيرة",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "ماسح الباركود",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "التعرّف على الطعام بالصور",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "مكتبة الوصفات",
+            "cells": [
+              {
+                "text": "✓ جيدة",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ أقوى",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "خطط حمية منظّمة",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ أوسع",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "تقييم جودة الطعام",
+            "cells": [
+              {
+                "text": "✓ Life Score",
+                "cls": "yes"
+              },
+              {
+                "text": "جزئي",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "إتقان الواجهة / البداية",
+            "cells": [
+              {
+                "text": "✓ أقوى",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ جيد",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "قابلية استخدام النسخة المجانية",
+            "cells": [
+              {
+                "text": "أكثر محدودية",
+                "cls": "no"
+              },
+              {
+                "text": "✓ أكثر قابلية للاستخدام",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "متتبع الصيام",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "تتبع التمارين داخل التطبيق",
+            "cells": [
+              {
+                "text": "أساسي",
+                "cls": "no"
+              },
+              {
+                "text": "أساسي",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "نموذج الترطيب (لكل مشروب)",
+            "cells": [
+              {
+                "text": "عدّاد بسيط",
+                "cls": "no"
+              },
+              {
+                "text": "عدّاد بسيط",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "التمرين يحدّث هدف الماء",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "المزامنة مع Apple Health / Health Connect",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          }
+        ]
+      },
+      "analysis": [
+        {
+          "head": "اختر Lifesum إن كنت في البداية",
+          "body": [
+            "قوة Lifesum في التجربة المحيطة بالأرقام. البداية لطيفة، والواجهة غير مزدحمة، وفكرة Life Score — تقييم جودة ما أكلته لا كميته فقط — تمنح المبتدئين تغذية راجعة لا يقدّمها رقم سعرات مجرد.",
+            "هذا أهم مما يبدو. أكثر أسباب الفشل شيوعًا في عدّ السعرات ليس عدم الدقة، بل الاستسلام في الأسبوع الثاني. التطبيق الذي يجعل الأسبوعين الأولين مشجّعين يملك ميزة حقيقية.",
+            "المقابل هو النسخة المجانية: كثير من الميزات المتوقعة موجودة خلف Premium، وتلاحظ ذلك أبكر مما في Yazio."
+          ]
+        },
+        {
+          "head": "اختر Yazio إن كان الصعب هو تحديد ما تطبخ",
+          "body": [
+            "مكتبة الوصفات وخطط الحمية في Yazio هي الأعمق بين الاثنين. إن فتحت تطبيق تتبع وكانت المشكلة الحقيقية «لا أعرف ماذا أُعدّ مما يناسب مغذياتي الكبرى»، فإن Yazio يجيب عن هذا السؤال على نحو أفضل.",
+            "ونسخته المجانية الأكثر قابلية للاستخدام بين الاثنين أيضًا — يمكنك التسجيل بجدية لأشهر دون دفع، وهذا لا ينطبق تمامًا على Lifesum.",
+            "أما ما يتنازل عنه فهو الإتقان. Yazio لطيف تمامًا، لكن تصميم Lifesum وطبقة التدريب فيه تبدو متقدمة بخطوة."
+          ],
+          "callout": "<strong>قاعدة سريعة:</strong> إن كانت مشكلتك <em>تسجيل</em> ما أكلته، فكلاهما يفي بالغرض وLifesum أجمل. وإن كانت مشكلتك <em>تخطيط</em> ما ستأكله، فـYazio. وإن كانت مشكلتك أن الطعام ليس إلا جزءًا من الصورة، فتابع القراءة."
+        },
+        {
+          "head": "ما يتركه الاثنان على الطاولة",
+          "body": [
+            "Lifesum وYazio تطبيقا تغذية أُضيف إليهما عدّاد ماء وسجل تمارين خفيف، لا تطبيقان صُمّما منذ البداية حول الثلاثة. عمليًا يعني ذلك أن أمرين لا يُتتبَّعان بأي شكل ذي معنى.",
+            "<strong>الترطيب عدّاد لا نموذج.</strong> كلاهما يعدّ الأكواب. لا يميّز أيٌّ منهما ما شربته — 250 مل من القهوة و250 مل من الماء ليسا الشيء نفسه في توازن السوائل، ولا يعكس أيٌّ من التطبيقين ذلك. ولا يعدّل أيٌّ منهما هدفك في يوم حار.",
+            "<strong>التمرين لا يغذّي شيئًا.</strong> يمكنك تسجيل تمرين، وقد تعوّض السعرات حصتك، لكن السوائل التي فقدتها بالعرق لا تُحتسب في أي مكان. في يوم تمرين شاق، الرقم الذي يتغير أكثر هو الرقم الذي لا يتتبعه أحد."
+          ]
+        },
+        {
+          "head": "إفصاح: أين يقع تطبيقنا",
+          "body": [
+            "ننشر هذه المقارنة ونصنع أيضًا تطبيقًا منافسًا، فاعتبر هذا القسم إعلانًا وتخطَّه إن شئت — حكم Lifesum وYazio أعلاه قائم بذاته.",
+            "بُني Suu حول الفجوة الموصوفة أعلاه: الماء والسعرات والتمارين نظامًا واحدًا مترابطًا بدل ثلاثة سجلات متوازية. الجري الذي تسجّله يرفع هدف الماء اليومي بحسب تقدير فقدان العرق؛ والوجبة التي تصوّرها تُحلَّل سعراتها ومغذياتها الكبرى، ويضيف محتواها من البروتين والصوديوم ماءً للهضم؛ وكل واحد من 91 مشروبًا يُسهم بقيمته الحقيقية في الترطيب.",
+            "أين يتأخر Suu: قاعدة بيانات أطعمته أصغر من قاعدتي Lifesum وYazio، ولا يملك مكتبة وصفات إطلاقًا. إن كانت الوصفات أو سعة قاعدة البيانات أولويتك، فالتطبيقان أعلاه يبقيان الخيار الأفضل، ونفضّل أن نقول ذلك على أن ندّعي غيره."
+          ]
+        }
+      ],
+      "verdict": {
+        "head": "الخلاصة",
+        "body": [
+          "<strong>Lifesum</strong> — بداية أفضل، وواجهة أجمل، وتقييم لجودة الطعام. الأفضل لمن يعدّ السعرات للمرة الأولى.",
+          "<strong>Yazio</strong> — وصفات وخطط حمية أقوى، ونسخة مجانية أكثر قابلية للاستخدام. الأفضل إن كان تخطيط الوجبات هو العقبة الحقيقية.",
+          "<strong>لا أحد منهما</strong> — إن أردت ترطيبًا منمذجًا كما ينبغي وتمارين تغيّر أهدافك اليومية، فكلاهما يقصر بحكم تصميمه، وهذه بالضبط الفجوة التي بُني Suu من أجلها.",
+          "إن كنت تختار بين هذين فقط: جرّب نسخة Yazio المجانية أولًا، لأنها تتيح لك التقدّم أكثر قبل أن تطلب منك المال."
+        ]
+      },
+      "cta": {
+        "head": "تريد الماء والسعرات والتمارين في تطبيق واحد مترابط؟",
+        "sub": "تنزيل مجاني · Premium مجانًا لمدة 3 أيام",
+        "button": "شاهد كيف يفعل Suu ذلك"
+      },
+      "faq": [
+        {
+          "q": "أيهما أفضل: Lifesum أم Yazio؟",
+          "a": "Lifesum أفضل للمبتدئين بفضل بدايته وواجهته الأنظف وتقييم جودة الطعام Life Score. وYazio أفضل إن أردت وصفات وخطط حمية منظّمة، ونسخته المجانية أكثر قابلية للاستخدام على المدى الطويل. كلاهما يتتبع السعرات والمغذيات الكبرى بكفاءة."
+        },
+        {
+          "q": "أيهما خطته المجانية أفضل، Lifesum أم Yazio؟",
+          "a": "نسخة Yazio المجانية عمومًا الأكثر قابلية للاستخدام بين الاثنين — يمكنك تسجيل السعرات والمغذيات الكبرى بجدية لأشهر قبل أن يصبح الحاجز المدفوع مقيّدًا. ويضع Lifesum مزيدًا من ميزاته المميّزة خلف Premium."
+        },
+        {
+          "q": "هل يتتبع Lifesum وYazio الماء؟",
+          "a": "في كليهما عدّاد ماء بسيط، لكن لا أحد منهما يُنمذج الترطيب كما ينبغي: يعدّان الأكواب دون تمييز ما شربته، ولا يعدّلان هدفك بحسب التمرين أو الحر. تُحسب القهوة والماء بالطريقة نفسها."
+        },
+        {
+          "q": "هل يتتبع Lifesum أو Yazio التمارين؟",
+          "a": "كلاهما يقدّم تسجيلًا أساسيًا للتمارين ويمكنه قراءة التمارين من Apple Health أو Google Health Connect، لكن لا أحد منهما متتبع تمارين جاد، والتمرين المسجَّل لا يؤثر في شيء سوى حصة السعرات."
+        },
+        {
+          "q": "ما البديل الجيد لـLifesum وYazio؟",
+          "a": "لقاعدة بيانات أطعمة أكبر، MyFitnessPal. ولتفاصيل عميقة عن المغذيات الدقيقة، Cronometer. وإن أردت ربط السعرات والتمارين والترطيب في تطبيق واحد — حيث يرفع التمرين المسجَّل هدف الماء وتضيف الوجبة ماء الهضم — فإن Suu صُمّم لهذه الفجوة تحديدًا، مع أن قاعدة بيانات أطعمته أصغر ولا يملك مكتبة وصفات."
+        }
+      ],
+      "references": [
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/",
+          "label": "المراقبة الذاتية للنظام الغذائي وإدارة الوزن (PMC)"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5568610/",
+          "label": "تتبع النظام الغذائي عبر الهاتف والالتزام (PMC)"
+        },
+        {
+          "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459",
+          "label": "EFSA — القيم المرجعية الغذائية للماء"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/ar/lifesum-vs-myfitnesspal.html",
+          "title": "Lifesum أم MyFitnessPal: أي تطبيق لحساب السعرات تختار؟",
+          "desc": "أكبر قاعدة بيانات أم تجربة أبسط وموجَّهة؟ مقارنة صريحة بين Lifesum وMyFitnessPal — والفجوة التي يتركها…"
+        },
+        {
+          "href": "/blog/ar/cronometer-vs-lifesum.html",
+          "title": "Cronometer أم Lifesum: أي تطبيق لحساب السعرات تختار؟",
+          "desc": "عمق الفيتامينات والمعادن أم تجربة موجَّهة وأنيقة؟ مقارنة صريحة بين Cronometer وLifesum — والفجوة التي…"
+        },
+        {
+          "href": "/blog/ar/badail-yazio.html",
+          "title": "أفضل بدائل Yazio في 2026: أيّها يناسبك؟",
+          "desc": "أين يبقى Yazio الأفضل، وأين يقصر، وما التطبيقات الخمسة التي تستحق الانتقال إليها: السعرات والماء وتمارين…"
+        },
+        {
+          "href": "/blog/ar/afdal-tatbiq-hisab-suerat.html",
+          "title": "أفضل تطبيق لحساب السعرات الحرارية 2026: Suu مقابل MyFitnessPal وYazio وLifesum وCronometer",
+          "desc": "مقارنة أفضل تطبيقات التغذية لعام 2026 لمن يريد تتبّع الماء والسعرات والتمارين في تطبيق واحد — بالتسجيل…"
+        }
+      ],
+      "published": "2026-10-15"
+    },
+    "ru": {
+      "slug": "lifesum-vs-yazio",
+      "published_display": "15 октября 2026",
+      "read_minutes": 7,
+      "badge": "⚖️ Лицом к лицу 2026",
+      "h1": "Lifesum vs Yazio: какое приложение для калорий выбрать в 2026 году?",
+      "meta": {
+        "title": "Lifesum vs Yazio (2026): что лучше? Честное сравнение | Suu",
+        "description": "Сравнение Lifesum и Yazio: база продуктов, рецепты, учёт макросов, ограничения бесплатной версии и цена. Что подходит новичкам, что — тем, кто планирует питание, и чего не делает ни одно из них.",
+        "keywords": "lifesum vs yazio, yazio vs lifesum, lifesum или yazio, сравнение лучших приложений для калорий, lifesum обзор 2026, yazio обзор 2026, сравнение счётчиков калорий, сравнение приложений для диеты",
+        "og_title": "Lifesum vs Yazio: какое приложение для калорий выбрать?",
+        "og_description": "Честное сравнение Lifesum и Yazio — база, рецепты, макросы, бесплатная версия и цена — и пробел, который оставляют оба."
+      },
+      "answer": "Yazio лучше, если ваше узкое место — планирование питания: его библиотека рецептов и структурированные планы питания сильнее, а бесплатная версия пригоднее. Lifesum выигрывает в проработке интерфейса и коучинге привычек, что делает его дружелюбнее для тех, кто впервые ведёт учёт. Оба уверенно справляются с калориями и макросами; ни одно не делает ничего содержательного с водой или с тренировками, которые вы записываете.",
+      "disclosure": "Это сравнение опубликовано Suu — разработчиком конкурирующего приложения. Это конфликт интересов, поэтому разделы о Lifesum и Yazio свободны от рекламы Suu, а наше приложение вынесено в чётко отделённый раздел в конце, который можно пропустить. Сведения о функциях отражают общедоступную информацию на август 2026 года и часто меняются — уточняйте актуальные ограничения тарифов на странице каждого приложения в магазине.",
+      "intro": [
+        "Lifesum и Yazio — два европейских приложения для калорий, между которыми в итоге выбирает большинство тех, кому MyFitnessPal кажется перегруженным. Они занимают похожую нишу: более чистый дизайн, учёт макросов, планы питания и подписка, открывающая лучшее.",
+        "Но акценты у них действительно разные, и правильный ответ зависит от того, какую задачу вы на самом деле решаете — <em>знать, что вы съели</em> или <em>решать, что есть</em>."
+      ],
+      "table": {
+        "head": "Lifesum vs Yazio",
+        "caption": "Сравнение функций Lifesum и Yazio",
+        "col_feature": "Функция",
+        "columns": [
+          "Lifesum",
+          "Yazio"
+        ],
+        "suu_col": -1,
+        "rows": [
+          {
+            "label": "Учёт калорий и макросов",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Широта базы продуктов",
+            "cells": [
+              {
+                "text": "Большая",
+                "cls": "yes"
+              },
+              {
+                "text": "Большая",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Сканер штрихкодов",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Распознавание еды по фото",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Библиотека рецептов",
+            "cells": [
+              {
+                "text": "✓ Хорошая",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Сильнее",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Структурированные планы питания",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Обширнее",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Оценка качества еды",
+            "cells": [
+              {
+                "text": "✓ Life Score",
+                "cls": "yes"
+              },
+              {
+                "text": "Частично",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Проработка интерфейса / первый запуск",
+            "cells": [
+              {
+                "text": "✓ Сильнее",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Хорошо",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Пригодность бесплатной версии",
+            "cells": [
+              {
+                "text": "Скромнее",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Пригоднее",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Трекер голодания",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Учёт тренировок в приложении",
+            "cells": [
+              {
+                "text": "Базовый",
+                "cls": "no"
+              },
+              {
+                "text": "Базовый",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Модель гидратации (по напиткам)",
+            "cells": [
+              {
+                "text": "Простой счётчик",
+                "cls": "no"
+              },
+              {
+                "text": "Простой счётчик",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Тренировка обновляет цель по воде",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Синхронизация с Apple Health / Health Connect",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          }
+        ]
+      },
+      "analysis": [
+        {
+          "head": "Выбирайте Lifesum, если только начинаете",
+          "body": [
+            "Сила Lifesum — в опыте вокруг цифр. Первый запуск мягкий, интерфейс не перегружен, а идея Life Score — оценивать качество съеденного, а не только количество — даёт новичкам обратную связь, которой нет в голом подсчёте калорий.",
+            "Это важнее, чем кажется. Самый частый провал в подсчёте калорий — не неточность, а отказ на второй неделе. Приложение, которое делает первые две недели ободряющими, имеет реальное преимущество.",
+            "Обратная сторона — бесплатная версия: многие ожидаемые функции спрятаны в Premium, и вы замечаете это раньше, чем в Yazio."
+          ]
+        },
+        {
+          "head": "Выбирайте Yazio, если самое сложное — решить, что приготовить",
+          "body": [
+            "Библиотека рецептов и планов питания у Yazio глубже. Если вы открываете приложение для учёта, а настоящая проблема — «не знаю, что приготовить под мои макросы», Yazio отвечает на этот вопрос лучше.",
+            "Его бесплатная версия тоже пригоднее — можно месяцами всерьёз вести учёт без оплаты, что о Lifesum не совсем скажешь.",
+            "Уступает Yazio в проработке деталей. Он вполне приятен, но дизайн и коучинг Lifesum ощущаются на шаг впереди."
+          ],
+          "callout": "<strong>Простое правило:</strong> если ваша задача — <em>записывать</em> съеденное, подойдёт любое, и Lifesum приятнее. Если задача — <em>планировать</em> питание, Yazio. Если проблема в том, что еда — лишь часть картины, читайте дальше."
+        },
+        {
+          "head": "Что оба оставляют без внимания",
+          "body": [
+            "Lifesum и Yazio — приложения о питании, к которым добавили счётчик воды и лёгкий дневник тренировок, а не приложения, изначально построенные вокруг всех трёх. На практике две вещи не учитываются сколько-нибудь осмысленно.",
+            "<strong>Вода — это счётчик, а не модель.</strong> Оба считают стаканы. Ни одно не различает, что вы выпили: 250 мл кофе и 250 мл воды — не одно и то же для водного баланса, и ни одно приложение этого не отражает. Ни одно не корректирует цель в жаркий день.",
+            "<strong>Тренировки ни на что не влияют.</strong> Тренировку можно записать, и калории, возможно, увеличат вашу норму, но жидкость, потерянная с потом, нигде не учитывается. В тяжёлый тренировочный день сильнее всего меняется именно то число, которое никто не отслеживает."
+          ]
+        },
+        {
+          "head": "Раскрытие: где наше приложение",
+          "body": [
+            "Мы публикуем это сравнение и делаем конкурирующее приложение, поэтому считайте этот раздел рекламой и пропустите, если хотите, — вывод о Lifesum и Yazio выше самостоятелен.",
+            "Suu построен вокруг описанного выше пробела: вода, калории и тренировки как одна связанная система, а не три параллельных дневника. Записанная пробежка повышает дневную цель по воде на основе оценки потерь с потом; сфотографированное блюдо анализируется на калории и макросы, а белок и натрий в нём добавляют воду для пищеварения; каждый из 91 напитка учитывается по своему реальному вкладу в гидратацию.",
+            "В чём Suu уступает: база продуктов меньше, чем у Lifesum или Yazio, а библиотеки рецептов нет вовсе. Если для вас приоритет — рецепты или широта базы, два приложения выше остаются лучшим выбором, и мы предпочитаем сказать это прямо, а не делать вид, что это не так."
+          ]
+        }
+      ],
+      "verdict": {
+        "head": "Вывод",
+        "body": [
+          "<strong>Lifesum</strong> — лучший первый запуск, приятнее интерфейс, оценка качества еды. Лучше всего для тех, кто считает калории впервые.",
+          "<strong>Yazio</strong> — сильнее рецепты и планы питания, пригоднее бесплатная версия. Лучше всего, если узкое место — планирование питания.",
+          "<strong>Ни одно</strong> — если вам нужна нормальная модель гидратации и чтобы тренировки меняли дневные цели, оба не справляются по своему устройству, и именно для этого пробела создан Suu.",
+          "Если выбираете только между этими двумя: сначала попробуйте бесплатную версию Yazio — она позволяет продвинуться дальше, прежде чем попросит денег."
+        ]
+      },
+      "cta": {
+        "head": "Хотите воду, калории и тренировки в одном связанном приложении?",
+        "sub": "Бесплатная загрузка · Premium бесплатно 3 дня",
+        "button": "Посмотреть, как это делает Suu"
+      },
+      "faq": [
+        {
+          "q": "Что лучше: Lifesum или Yazio?",
+          "a": "Lifesum лучше для новичков благодаря первому запуску, более чистому интерфейсу и оценке качества еды Life Score. Yazio лучше, если вам нужны рецепты и структурированные планы питания, а его бесплатная версия пригоднее в долгосрочной перспективе. Оба уверенно учитывают калории и макросы."
+        },
+        {
+          "q": "У кого лучше бесплатная версия — у Lifesum или Yazio?",
+          "a": "Бесплатная версия Yazio обычно пригоднее — можно месяцами всерьёз считать калории и макросы, прежде чем платная стена начнёт ограничивать. Lifesum прячет за Premium больше своих отличительных функций."
+        },
+        {
+          "q": "Учитывают ли Lifesum и Yazio воду?",
+          "a": "В обоих есть простой счётчик воды, но ни одно не моделирует гидратацию как следует: они считают стаканы, не различая, что вы выпили, и не корректируют цель под тренировку или жару. Кофе и вода учитываются одинаково."
+        },
+        {
+          "q": "Учитывают ли Lifesum или Yazio тренировки?",
+          "a": "Оба предлагают базовый учёт тренировок и могут читать тренировки из Apple Health или Google Health Connect, но ни одно не является серьёзным трекером тренировок, а записанная тренировка влияет только на норму калорий."
+        },
+        {
+          "q": "Какая хорошая альтернатива Lifesum и Yazio?",
+          "a": "Для большей базы продуктов — MyFitnessPal. Для глубокой детализации микронутриентов — Cronometer. Если вы хотите связать калории, тренировки и воду в одном приложении — где записанная тренировка повышает цель по воде, а съеденное блюдо добавляет воду для пищеварения, — Suu создан именно для этого пробела, хотя его база продуктов меньше и библиотеки рецептов нет."
+        }
+      ],
+      "references": [
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/",
+          "label": "Самоконтроль питания и управление весом (PMC)"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5568610/",
+          "label": "Мобильный учёт питания и приверженность (PMC)"
+        },
+        {
+          "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459",
+          "label": "EFSA — референсные значения потребления воды"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/ru/lifesum-vs-myfitnesspal.html",
+          "title": "Lifesum или MyFitnessPal: какой счётчик калорий выбрать?",
+          "desc": "Самая большая база или более простой и понятный опыт? Честное сравнение Lifesum и MyFitnessPal — и…"
+        },
+        {
+          "href": "/blog/ru/cronometer-vs-lifesum.html",
+          "title": "Cronometer или Lifesum: какой счётчик калорий выбрать?",
+          "desc": "Глубина витаминов и минералов или понятный, красивый опыт? Честное сравнение Cronometer и Lifesum — и…"
+        },
+        {
+          "href": "/blog/ru/alternativy-yazio.html",
+          "title": "Альтернативы Yazio: какое приложение выбрать в 2026 году",
+          "desc": "Где Yazio по-прежнему лучший, где его не хватает — и пять приложений, на которые стоит перейти: калории…"
+        },
+        {
+          "href": "/blog/ru/luchshee-prilozhenie-podscheta-kalorij.html",
+          "title": "Лучшее приложение для подсчёта калорий 2026: Suu против MyFitnessPal, Yazio, Lifesum, Cronometer",
+          "desc": "Лучшие приложения для питания 2026 для тех, кто хочет считать воду, калории и тренировки в ОДНОМ…"
+        }
+      ],
+      "published": "2026-10-15"
+    },
+    "de": {
+      "slug": "lifesum-vs-yazio",
+      "published_display": "15. Oktober 2026",
+      "read_minutes": 7,
+      "badge": "⚖️ Direktvergleich 2026",
+      "h1": "Lifesum vs. Yazio: Welche Kalorien-App solltest du 2026 wählen?",
+      "meta": {
+        "title": "Lifesum vs. Yazio (2026): Welche ist besser? Ehrlicher Vergleich | Suu",
+        "description": "Lifesum und Yazio im Vergleich: Lebensmitteldatenbank, Rezepte, Makro-Tracking, Grenzen der Gratisversion und Preis. Was passt zu Einsteigern, was zu Essensplanern — und was keine der beiden kann.",
+        "keywords": "lifesum vs yazio, yazio vs lifesum, lifesum oder yazio, beste kalorien app vergleich, lifesum test 2026, yazio test 2026, kalorienzähler vergleich, diät app vergleich",
+        "og_title": "Lifesum vs. Yazio: Welche Kalorien-App solltest du wählen?",
+        "og_description": "Ein ehrlicher Vergleich von Lifesum und Yazio — Datenbank, Rezepte, Makros, Gratisversion und Preis — plus die Lücke, die beide offen lassen."
+      },
+      "answer": "Yazio ist die bessere Wahl, wenn die Essensplanung dein Engpass ist: Rezeptbibliothek und strukturierte Ernährungspläne sind stärker, und die Gratisversion ist besser nutzbar. Lifesum gewinnt bei der Feinarbeit der Oberfläche und beim Gewohnheits-Coaching, was die App für Tracking-Einsteiger freundlicher macht. Beide erfassen Kalorien und Makros kompetent; keine macht etwas Sinnvolles mit dem Trinken oder dem Training, das du einträgst.",
+      "disclosure": "Dieser Vergleich wird von Suu veröffentlicht, einem Anbieter einer konkurrierenden App. Das ist ein Interessenkonflikt; deshalb haben wir die Abschnitte zu Lifesum und Yazio frei von Suu-Werbung gehalten und unsere eigene App in einen klar abgetrennten Abschnitt am Ende gestellt, den du überspringen kannst. Die Funktionsangaben beruhen auf öffentlich verfügbaren Informationen mit Stand August 2026 und ändern sich häufig — prüfe die aktuellen Tarifgrenzen im jeweiligen Store.",
+      "intro": [
+        "Lifesum und Yazio sind die zwei europäischen Kalorien-Apps, zwischen denen sich die meisten entscheiden, wenn ihnen MyFitnessPal zu überladen ist. Sie besetzen ein ähnliches Feld: aufgeräumteres Design, Makro-Tracking, Ernährungspläne und ein Abo, das die guten Teile freischaltet.",
+        "Ihre Schwerpunkte sind aber wirklich verschieden, und die richtige Antwort hängt davon ab, welches Problem du eigentlich lösen willst — <em>wissen, was du gegessen hast</em>, oder <em>entscheiden, was du essen sollst</em>."
+      ],
+      "table": {
+        "head": "Lifesum vs Yazio",
+        "caption": "Funktionsvergleich von Lifesum und Yazio",
+        "col_feature": "Funktion",
+        "columns": [
+          "Lifesum",
+          "Yazio"
+        ],
+        "suu_col": -1,
+        "rows": [
+          {
+            "label": "Kalorien- und Makro-Tracking",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Breite der Lebensmitteldatenbank",
+            "cells": [
+              {
+                "text": "Groß",
+                "cls": "yes"
+              },
+              {
+                "text": "Groß",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Barcode-Scanner",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Lebensmittelerkennung per Foto",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Rezeptbibliothek",
+            "cells": [
+              {
+                "text": "✓ Gut",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Stärker",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Strukturierte Ernährungspläne",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Umfangreicher",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Bewertung der Lebensmittelqualität",
+            "cells": [
+              {
+                "text": "✓ Life Score",
+                "cls": "yes"
+              },
+              {
+                "text": "Teilweise",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Feinschliff der Oberfläche / Einstieg",
+            "cells": [
+              {
+                "text": "✓ Stärker",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Gut",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Nutzbarkeit der Gratisversion",
+            "cells": [
+              {
+                "text": "Eingeschränkter",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Besser nutzbar",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Fasten-Tracker",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Training in der App erfassen",
+            "cells": [
+              {
+                "text": "Einfach",
+                "cls": "no"
+              },
+              {
+                "text": "Einfach",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Trinkmodell (pro Getränk)",
+            "cells": [
+              {
+                "text": "Einfacher Zähler",
+                "cls": "no"
+              },
+              {
+                "text": "Einfacher Zähler",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Training passt das Trinkziel an",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Synchronisierung mit Apple Health / Health Connect",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          }
+        ]
+      },
+      "analysis": [
+        {
+          "head": "Wähle Lifesum, wenn du gerade anfängst",
+          "body": [
+            "Lifesums Stärke ist das Erlebnis rund um die Zahlen. Der Einstieg ist sanft, die Oberfläche aufgeräumt, und die Idee des Life Score — die Qualität dessen bewerten, was du isst, nicht nur die Menge — gibt Einsteigern ein Feedback, das eine nackte Kalorienzahl nicht liefert.",
+            "Das ist wichtiger, als es klingt. Das häufigste Scheitern beim Kalorienzählen ist nicht Ungenauigkeit, sondern Aufgeben in der zweiten Woche. Eine App, die die ersten zwei Wochen ermutigend gestaltet, hat einen echten Vorteil.",
+            "Der Haken ist die Gratisversion: Mehrere Funktionen, die man erwartet, liegen hinter Premium, und das merkst du früher als bei Yazio."
+          ]
+        },
+        {
+          "head": "Wähle Yazio, wenn die Entscheidung fürs Kochen der schwierige Teil ist",
+          "body": [
+            "Yazios Bibliothek an Rezepten und Ernährungsplänen ist die tiefere der beiden. Wenn du eine Tracking-App öffnest und das eigentliche Problem lautet: „Ich weiß nicht, was ich kochen soll, das zu meinen Makros passt“, beantwortet Yazio diese Frage besser.",
+            "Auch die Gratisversion ist die besser nutzbare der beiden — du kannst monatelang ernsthaft eintragen, ohne zu zahlen, was für Lifesum nicht ganz gilt.",
+            "Nachgeben muss Yazio beim Feinschliff. Yazio ist durchaus angenehm, aber Lifesums Design und Coaching-Ebene wirken einen Schritt voraus."
+          ],
+          "callout": "<strong>Faustregel:</strong> Wenn dein Problem das <em>Erfassen</em> dessen ist, was du gegessen hast, funktionieren beide, und Lifesum ist schöner. Wenn dein Problem das <em>Planen</em> dessen ist, was du isst: Yazio. Wenn dein Problem ist, dass Essen nur ein Teil des Bildes ist, lies weiter."
+        },
+        {
+          "head": "Was beide liegen lassen",
+          "body": [
+            "Lifesum und Yazio sind Ernährungs-Apps mit einem nachträglich ergänzten Wasserzähler und einem leichten Trainingstagebuch — keine Apps, die von Anfang an um alle drei herum entworfen wurden. Praktisch heißt das: Zwei Dinge werden nicht sinnvoll erfasst.",
+            "<strong>Trinken ist eine Strichliste, kein Modell.</strong> Beide zählen Gläser. Keine unterscheidet, was du getrunken hast — 250 ml Kaffee und 250 ml Wasser sind für den Flüssigkeitshaushalt nicht dasselbe, und keine der beiden bildet das ab. Keine passt dein Ziel an einen heißen Tag an.",
+            "<strong>Training fließt in nichts ein.</strong> Du kannst ein Workout eintragen, und die Kalorien verrechnen sich vielleicht mit deinem Budget, aber die beim Schwitzen verlorene Flüssigkeit wird nirgends berücksichtigt. An einem harten Trainingstag ist die Zahl, die sich am meisten ändert, genau die, die niemand erfasst."
+          ]
+        },
+        {
+          "head": "Offenlegung: wo unsere eigene App steht",
+          "body": [
+            "Wir veröffentlichen diesen Vergleich und machen auch eine konkurrierende App — betrachte diesen Abschnitt als Werbung und überspring ihn, wenn du willst. Das Fazit zu Lifesum und Yazio oben steht für sich.",
+            "Suu ist um die oben beschriebene Lücke herum gebaut: Wasser, Kalorien und Training als ein verbundenes System statt drei paralleler Tagebücher. Ein aufgezeichneter Lauf erhöht das tägliche Trinkziel anhand des geschätzten Schweißverlusts; eine fotografierte Mahlzeit wird auf Kalorien und Makros analysiert, und ihr Eiweiß- und Natriumgehalt fügt Verdauungswasser hinzu; jedes der 91 Getränke zählt mit seinem echten Hydrationswert.",
+            "Wo Suu zurückliegt: Die Lebensmitteldatenbank ist kleiner als die von Lifesum oder Yazio, und es gibt überhaupt keine Rezeptbibliothek. Wenn dir Rezepte oder Datenbankbreite am wichtigsten sind, bleiben die beiden Apps oben die bessere Wahl — das sagen wir lieber, als etwas anderes zu behaupten."
+          ]
+        }
+      ],
+      "verdict": {
+        "head": "Fazit",
+        "body": [
+          "<strong>Lifesum</strong> — besserer Einstieg, schönere Oberfläche, Bewertung der Lebensmittelqualität. Am besten für alle, die zum ersten Mal Kalorien zählen.",
+          "<strong>Yazio</strong> — stärkere Rezepte und Ernährungspläne, besser nutzbare Gratisversion. Am besten, wenn die Essensplanung der eigentliche Engpass ist.",
+          "<strong>Keine der beiden</strong> — wenn du das Trinken richtig modelliert haben willst und deine Workouts deine Tagesziele verändern sollen, greifen beide konstruktionsbedingt zu kurz; genau für diese Lücke ist Suu gebaut.",
+          "Wenn du nur zwischen diesen beiden wählst: Probier zuerst Yazios Gratisversion, denn damit kommst du weiter, bevor nach Geld gefragt wird."
+        ]
+      },
+      "cta": {
+        "head": "Wasser, Kalorien und Training in einer verbundenen App?",
+        "sub": "Kostenlos herunterladen · Premium 3 Tage gratis",
+        "button": "So macht es Suu"
+      },
+      "faq": [
+        {
+          "q": "Ist Lifesum oder Yazio besser?",
+          "a": "Lifesum ist dank Einstieg, aufgeräumterer Oberfläche und Life-Score-Bewertung der Lebensmittelqualität besser für Einsteiger. Yazio ist besser, wenn du Rezepte und strukturierte Ernährungspläne willst, und die Gratisversion ist langfristig besser nutzbar. Beide erfassen Kalorien und Makros kompetent."
+        },
+        {
+          "q": "Welche hat die bessere Gratisversion, Lifesum oder Yazio?",
+          "a": "Yazios Gratisversion ist in der Regel die besser nutzbare der beiden — du kannst monatelang ernsthaft Kalorien und Makros eintragen, bevor die Bezahlschranke bremst. Lifesum stellt mehr seiner besonderen Funktionen hinter Premium."
+        },
+        {
+          "q": "Erfassen Lifesum und Yazio das Trinken?",
+          "a": "Beide haben einen einfachen Wasserzähler, aber keine modelliert die Flüssigkeitszufuhr richtig: Sie zählen Gläser, ohne zu unterscheiden, was du getrunken hast, und passen dein Ziel nicht an Training oder Hitze an. Kaffee und Wasser zählen gleich."
+        },
+        {
+          "q": "Erfassen Lifesum oder Yazio Workouts?",
+          "a": "Beide bieten eine einfache Trainingserfassung und können Workouts aus Apple Health oder Google Health Connect lesen, aber keine ist ein ernsthafter Trainingstracker, und erfasstes Training beeinflusst nur dein Kalorienbudget."
+        },
+        {
+          "q": "Was ist eine gute Alternative zu Lifesum und Yazio?",
+          "a": "Für eine größere Lebensmitteldatenbank MyFitnessPal. Für tiefe Mikronährstoff-Details Cronometer. Wenn du Kalorien, Training und Trinken in einer App verbinden willst — wo das eingetragene Workout dein Trinkziel erhöht und die Mahlzeit Verdauungswasser hinzufügt —, ist Suu genau für diese Lücke gebaut; die Lebensmitteldatenbank ist aber kleiner, und es gibt keine Rezeptbibliothek."
+        }
+      ],
+      "references": [
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/",
+          "label": "Selbstbeobachtung der Ernährung und Gewichtsmanagement (PMC)"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5568610/",
+          "label": "Mobiles Ernährungstracking und Therapietreue (PMC)"
+        },
+        {
+          "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459",
+          "label": "EFSA — Ernährungsreferenzwerte für Wasser"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/de/lifesum-vs-myfitnesspal.html",
+          "title": "Lifesum oder MyFitnessPal: Welche Kalorien-App passt zu dir?",
+          "desc": "Die größte Datenbank oder ein aufgeräumtes, geführtes Erlebnis? Ein ehrlicher Vergleich von Lifesum und…"
+        },
+        {
+          "href": "/blog/de/cronometer-vs-lifesum.html",
+          "title": "Cronometer oder Lifesum: Welche Kalorien-App passt zu dir?",
+          "desc": "Mikronährstoff-Tiefe oder ein geführtes, schönes Erlebnis? Ein ehrlicher Vergleich von Cronometer und…"
+        },
+        {
+          "href": "/blog/de/yazio-alternativen.html",
+          "title": "Yazio-Alternativen 2026: Welche App passt zu dir?",
+          "desc": "Wo Yazio stark bleibt, wo es hakt — und welche fünf Apps sich als Alternative lohnen: Kalorien, Trinken…"
+        },
+        {
+          "href": "/blog/de/bester-kalorienzaehler-app.html",
+          "title": "Der beste Kalorienzähler 2026",
+          "desc": "Yazio, FDDB, MyFitnessPal, Lifesum, Cronometer und Suu — verglichen nach Eingabetempo, Datenbank und…"
+        }
+      ],
+      "published": "2026-10-15"
+    },
+    "it": {
+      "slug": "lifesum-vs-yazio",
+      "published_display": "15 ottobre 2026",
+      "read_minutes": 7,
+      "badge": "⚖️ Testa a testa 2026",
+      "h1": "Lifesum vs Yazio: quale app per le calorie scegliere nel 2026?",
+      "meta": {
+        "title": "Lifesum vs Yazio (2026): quale è migliore? Confronto onesto | Suu",
+        "description": "Lifesum e Yazio a confronto su database alimentare, ricette, monitoraggio dei macro, limiti del piano gratuito e prezzo. Quale fa per chi inizia, quale per chi pianifica i pasti, e cosa non fa nessuna delle due.",
+        "keywords": "lifesum vs yazio, yazio vs lifesum, lifesum o yazio, confronto migliore app calorie, lifesum recensione 2026, yazio recensione 2026, confronto contacalorie, confronto app dieta",
+        "og_title": "Lifesum vs Yazio: quale app per le calorie scegliere?",
+        "og_description": "Un confronto onesto tra Lifesum e Yazio — database, ricette, macro, versione gratuita e prezzo — più il vuoto che lasciano entrambe."
+      },
+      "answer": "Yazio è la scelta migliore se il tuo collo di bottiglia è pianificare i pasti: la sua libreria di ricette e i piani alimentari strutturati sono più forti, e la versione gratuita è più utilizzabile. Lifesum vince sulla cura dell'interfaccia e sul coaching delle abitudini, il che la rende più amichevole per chi monitora per la prima volta. Entrambe gestiscono bene calorie e macro; nessuna fa qualcosa di significativo con l'idratazione o con l'allenamento che registri.",
+      "disclosure": "Questo confronto è pubblicato da Suu, che realizza un'app concorrente. È un conflitto di interessi, quindi abbiamo tenuto le sezioni su Lifesum e Yazio libere dalla promozione di Suu e abbiamo messo la nostra app in una sezione chiaramente separata alla fine, che puoi saltare. I dettagli delle funzioni riflettono le informazioni pubbliche aggiornate ad agosto 2026 e cambiano spesso: verifica i limiti attuali dei piani sulla pagina dello store di ciascuna app.",
+      "intro": [
+        "Lifesum e Yazio sono le due app europee per le calorie tra cui finisce per scegliere la maggior parte di chi trova MyFitnessPal troppo affollata. Occupano un terreno simile: design più pulito, monitoraggio dei macro, piani alimentari e un abbonamento che sblocca le parti migliori.",
+        "Hanno però accenti davvero diversi, e la risposta giusta dipende dal problema che stai cercando di risolvere: <em>sapere cosa hai mangiato</em> o <em>decidere cosa mangiare</em>."
+      ],
+      "table": {
+        "head": "Lifesum vs Yazio",
+        "caption": "Confronto delle funzioni di Lifesum e Yazio",
+        "col_feature": "Funzione",
+        "columns": [
+          "Lifesum",
+          "Yazio"
+        ],
+        "suu_col": -1,
+        "rows": [
+          {
+            "label": "Registrazione di calorie e macro",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Ampiezza del database alimentare",
+            "cells": [
+              {
+                "text": "Ampio",
+                "cls": "yes"
+              },
+              {
+                "text": "Ampio",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Scanner di codici a barre",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Riconoscimento degli alimenti da foto",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Libreria di ricette",
+            "cells": [
+              {
+                "text": "✓ Buona",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Più forte",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Piani alimentari strutturati",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Più ampi",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Punteggio della qualità del cibo",
+            "cells": [
+              {
+                "text": "✓ Life Score",
+                "cls": "yes"
+              },
+              {
+                "text": "Parziale",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Cura dell'interfaccia / primo avvio",
+            "cells": [
+              {
+                "text": "✓ Più forte",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Buona",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Usabilità della versione gratuita",
+            "cells": [
+              {
+                "text": "Più limitata",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Più utilizzabile",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Monitoraggio del digiuno",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Monitoraggio degli allenamenti nell'app",
+            "cells": [
+              {
+                "text": "Di base",
+                "cls": "no"
+              },
+              {
+                "text": "Di base",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Modello di idratazione (per bevanda)",
+            "cells": [
+              {
+                "text": "Contatore semplice",
+                "cls": "no"
+              },
+              {
+                "text": "Contatore semplice",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "L'allenamento aggiorna l'obiettivo d'acqua",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Sincronizzazione con Apple Salute / Health Connect",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          }
+        ]
+      },
+      "analysis": [
+        {
+          "head": "Scegli Lifesum se stai iniziando",
+          "body": [
+            "La forza di Lifesum è l'esperienza attorno ai numeri. Il primo avvio è graduale, l'interfaccia è ordinata e l'idea del Life Score — valutare la qualità di ciò che hai mangiato, non solo la quantità — dà ai principianti un riscontro che un semplice conteggio delle calorie non offre.",
+            "Conta più di quanto sembri. Il modo più comune di fallire nel conteggio delle calorie non è l'imprecisione, è mollare alla seconda settimana. Un'app che rende incoraggianti le prime due settimane ha un vantaggio reale.",
+            "Il rovescio della medaglia è la versione gratuita: diverse funzioni che ci si aspetta sono dietro Premium, e te ne accorgi prima che con Yazio."
+          ]
+        },
+        {
+          "head": "Scegli Yazio se la parte difficile è decidere cosa cucinare",
+          "body": [
+            "La libreria di ricette e piani alimentari di Yazio è la più approfondita delle due. Se apri un'app di monitoraggio e il vero problema è «non so cosa preparare che rispetti i miei macro», Yazio risponde meglio a questa domanda.",
+            "Anche la sua versione gratuita è la più utilizzabile delle due: puoi registrare seriamente per mesi senza pagare, cosa non del tutto vera per Lifesum.",
+            "Dove cede terreno è la cura dei dettagli. Yazio è del tutto piacevole, ma il design e il livello di coaching di Lifesum sembrano un passo avanti."
+          ],
+          "callout": "<strong>Regola pratica:</strong> se il tuo problema è <em>registrare</em> ciò che hai mangiato, vanno bene entrambe e Lifesum è più gradevole. Se il tuo problema è <em>pianificare</em> cosa mangiare, Yazio. Se il tuo problema è che il cibo è solo una parte del quadro, continua a leggere."
+        },
+        {
+          "head": "Cosa lasciano sul tavolo entrambe",
+          "body": [
+            "Lifesum e Yazio sono app di nutrizione a cui sono stati aggiunti un contatore d'acqua e un leggero diario degli allenamenti, non app progettate fin dall'inizio attorno a tutte e tre le cose. In pratica, due aspetti non vengono monitorati in modo significativo.",
+            "<strong>L'idratazione è un conteggio, non un modello.</strong> Entrambe contano i bicchieri. Nessuna distingue cosa hai bevuto: 250 ml di caffè e 250 ml d'acqua non sono la stessa cosa per il bilancio dei liquidi, e nessuna delle due app lo riflette. Nessuna adatta il tuo obiettivo a una giornata calda.",
+            "<strong>L'allenamento non alimenta nulla.</strong> Puoi registrare un allenamento e le calorie forse compensano la tua quota, ma i liquidi persi con il sudore non vengono considerati da nessuna parte. In una giornata di allenamento intenso, il numero che cambia di più è quello che nessuno monitora."
+          ]
+        },
+        {
+          "head": "Trasparenza: dove si colloca la nostra app",
+          "body": [
+            "Pubblichiamo questo confronto e realizziamo anche un'app concorrente, quindi considera questa sezione una pubblicità e saltala se preferisci: il verdetto su Lifesum e Yazio qui sopra sta in piedi da solo.",
+            "Suu è stata costruita attorno al vuoto descritto sopra: acqua, calorie e allenamento come un unico sistema collegato invece di tre diari paralleli. Una corsa registrata aumenta l'obiettivo d'acqua giornaliero in base alla perdita di sudore stimata; un pasto fotografato viene analizzato per calorie e macro, e il suo contenuto di proteine e sodio aggiunge acqua per la digestione; ognuna delle 91 bevande contribuisce con il suo reale valore di idratazione.",
+            "Dove Suu è indietro: il suo database alimentare è più piccolo di quello di Lifesum o di Yazio, e non ha alcuna libreria di ricette. Se ricette o ampiezza del database sono la tua priorità, le due app qui sopra restano la scelta migliore: preferiamo dirlo piuttosto che fingere il contrario."
+          ]
+        }
+      ],
+      "verdict": {
+        "head": "Verdetto",
+        "body": [
+          "<strong>Lifesum</strong>: primo avvio migliore, interfaccia più gradevole, punteggio della qualità del cibo. Ideale per chi conta le calorie per la prima volta.",
+          "<strong>Yazio</strong>: ricette e piani alimentari più forti, versione gratuita più utilizzabile. Ideale se pianificare i pasti è il vero collo di bottiglia.",
+          "<strong>Nessuna delle due</strong>: se vuoi un'idratazione modellata correttamente e allenamenti che cambino i tuoi obiettivi giornalieri, entrambe sono insufficienti per come sono progettate, ed è proprio il vuoto per cui è costruita Suu.",
+          "Se scegli solo tra queste due: prova prima la versione gratuita di Yazio, perché ti permette di andare più avanti prima di chiederti dei soldi."
+        ]
+      },
+      "cta": {
+        "head": "Vuoi acqua, calorie e allenamento in un'unica app collegata?",
+        "sub": "Download gratuito · Premium gratis per 3 giorni",
+        "button": "Scopri come lo fa Suu"
+      },
+      "faq": [
+        {
+          "q": "È meglio Lifesum o Yazio?",
+          "a": "Lifesum è migliore per i principianti grazie al primo avvio, all'interfaccia più pulita e al punteggio Life Score sulla qualità del cibo. Yazio è migliore se vuoi ricette e piani alimentari strutturati, e la sua versione gratuita è più utilizzabile nel lungo periodo. Entrambe monitorano bene calorie e macro."
+        },
+        {
+          "q": "Quale ha il piano gratuito migliore, Lifesum o Yazio?",
+          "a": "In genere la versione gratuita di Yazio è la più utilizzabile delle due: puoi registrare seriamente calorie e macro per mesi prima che il paywall diventi limitante. Lifesum mette dietro Premium più funzioni distintive."
+        },
+        {
+          "q": "Lifesum e Yazio monitorano l'acqua?",
+          "a": "Entrambe hanno un semplice contatore d'acqua, ma nessuna modella correttamente l'idratazione: contano i bicchieri senza distinguere cosa hai bevuto e non adattano l'obiettivo ad allenamento o caldo. Caffè e acqua vengono contati allo stesso modo."
+        },
+        {
+          "q": "Lifesum o Yazio monitorano gli allenamenti?",
+          "a": "Entrambe offrono una registrazione di base degli allenamenti e possono leggere gli allenamenti da Apple Salute o Google Health Connect, ma nessuna è un vero tracker di allenamenti, e l'allenamento registrato influisce solo sulla tua quota di calorie."
+        },
+        {
+          "q": "Qual è una buona alternativa a Lifesum e Yazio?",
+          "a": "Per un database alimentare più grande, MyFitnessPal. Per un dettaglio approfondito sui micronutrienti, Cronometer. Se vuoi collegare calorie, allenamento e idratazione in un'unica app, dove l'allenamento registrato aumenta l'obiettivo d'acqua e il pasto aggiunge acqua per la digestione, Suu è costruita proprio per questo vuoto, anche se il suo database alimentare è più piccolo e non ha una libreria di ricette."
+        }
+      ],
+      "references": [
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/",
+          "label": "Automonitoraggio alimentare e gestione del peso (PMC)"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5568610/",
+          "label": "Monitoraggio alimentare da mobile e aderenza (PMC)"
+        },
+        {
+          "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459",
+          "label": "EFSA — valori dietetici di riferimento per l'acqua"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/it/lifesum-vs-myfitnesspal.html",
+          "title": "Lifesum o MyFitnessPal: quale app conta calorie scegliere?",
+          "desc": "Il database più grande o un'esperienza più ordinata e guidata? Un confronto onesto tra Lifesum e…"
+        },
+        {
+          "href": "/blog/it/cronometer-vs-lifesum.html",
+          "title": "Cronometer o Lifesum: quale app conta calorie scegliere?",
+          "desc": "Profondità su vitamine e minerali o un'esperienza guidata e curata? Un confronto onesto tra Cronometer e…"
+        },
+        {
+          "href": "/blog/it/alternative-a-yazio.html",
+          "title": "Alternative a Yazio: quale app fa per te? (2026)",
+          "desc": "Dove Yazio resta il migliore, dove non basta, e le cinque app che valgono il cambio: calorie, acqua…"
+        },
+        {
+          "href": "/blog/it/migliore-app-conta-calorie.html",
+          "title": "La migliore app conta calorie del 2026",
+          "desc": "MyFitnessPal, Yazio, FatSecret, Lifesum, Cronometer e Suu — su velocità di inserimento, copertura del…"
+        }
+      ],
+      "published": "2026-10-15"
+    },
+    "uk": {
+      "slug": "lifesum-vs-yazio",
+      "published_display": "15 жовтня 2026",
+      "read_minutes": 7,
+      "badge": "⚖️ Віч-на-віч 2026",
+      "h1": "Lifesum vs Yazio: який застосунок для калорій обрати у 2026 році?",
+      "meta": {
+        "title": "Lifesum vs Yazio (2026): що краще? Чесне порівняння | Suu",
+        "description": "Порівняння Lifesum і Yazio: база продуктів, рецепти, облік макросів, обмеження безкоштовної версії та ціна. Що підходить новачкам, що — тим, хто планує харчування, і чого не робить жоден із них.",
+        "keywords": "lifesum vs yazio, yazio vs lifesum, lifesum чи yazio, порівняння найкращих застосунків для калорій, lifesum огляд 2026, yazio огляд 2026, порівняння лічильників калорій, порівняння застосунків для дієти",
+        "og_title": "Lifesum vs Yazio: який застосунок для калорій обрати?",
+        "og_description": "Чесне порівняння Lifesum і Yazio — база, рецепти, макроси, безкоштовна версія й ціна — та прогалина, яку залишають обидва."
+      },
+      "answer": "Yazio кращий, якщо твоє вузьке місце — планування харчування: його бібліотека рецептів і структуровані плани харчування сильніші, а безкоштовна версія придатніша. Lifesum виграє в опрацюванні інтерфейсу й коучингу звичок, що робить його дружнішим для тих, хто вперше веде облік. Обидва впевнено справляються з калоріями й макросами; жоден не робить нічого змістовного з водою чи з тренуваннями, які ти записуєш.",
+      "disclosure": "Це порівняння опубліковане Suu — розробником конкурентного застосунку. Це конфлікт інтересів, тож розділи про Lifesum і Yazio вільні від реклами Suu, а наш застосунок винесено в чітко відокремлений розділ наприкінці, який можна пропустити. Відомості про функції відображають загальнодоступну інформацію станом на серпень 2026 року й часто змінюються — перевіряй актуальні обмеження тарифів на сторінці кожного застосунку в магазині.",
+      "intro": [
+        "Lifesum і Yazio — два європейські застосунки для калорій, між якими зрештою обирає більшість тих, кому MyFitnessPal здається перевантаженим. Вони займають схожу нішу: чистіший дизайн, облік макросів, плани харчування й підписка, що відкриває найкраще.",
+        "Але акценти в них справді різні, і правильна відповідь залежить від того, яке завдання ти насправді розв'язуєш — <em>знати, що ти з'їв</em>, чи <em>вирішувати, що їсти</em>."
+      ],
+      "table": {
+        "head": "Lifesum vs Yazio",
+        "caption": "Порівняння функцій Lifesum і Yazio",
+        "col_feature": "Функція",
+        "columns": [
+          "Lifesum",
+          "Yazio"
+        ],
+        "suu_col": -1,
+        "rows": [
+          {
+            "label": "Облік калорій і макросів",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Ширина бази продуктів",
+            "cells": [
+              {
+                "text": "Велика",
+                "cls": "yes"
+              },
+              {
+                "text": "Велика",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Сканер штрихкодів",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Розпізнавання їжі за фото",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Бібліотека рецептів",
+            "cells": [
+              {
+                "text": "✓ Добра",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Сильніша",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Структуровані плани харчування",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Ширші",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Оцінка якості їжі",
+            "cells": [
+              {
+                "text": "✓ Life Score",
+                "cls": "yes"
+              },
+              {
+                "text": "Частково",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Опрацювання інтерфейсу / перший запуск",
+            "cells": [
+              {
+                "text": "✓ Сильніше",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Добре",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Придатність безкоштовної версії",
+            "cells": [
+              {
+                "text": "Скромніша",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Придатніша",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Трекер голодування",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Облік тренувань у застосунку",
+            "cells": [
+              {
+                "text": "Базовий",
+                "cls": "no"
+              },
+              {
+                "text": "Базовий",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Модель гідратації (за напоями)",
+            "cells": [
+              {
+                "text": "Простий лічильник",
+                "cls": "no"
+              },
+              {
+                "text": "Простий лічильник",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Тренування оновлює ціль щодо води",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Синхронізація з Apple Health / Health Connect",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          }
+        ]
+      },
+      "analysis": [
+        {
+          "head": "Обирай Lifesum, якщо лише починаєш",
+          "body": [
+            "Сила Lifesum — у досвіді довкола цифр. Перший запуск м'який, інтерфейс не перевантажений, а ідея Life Score — оцінювати якість з'їденого, а не лише кількість — дає новачкам зворотний зв'язок, якого немає в голому підрахунку калорій.",
+            "Це важливіше, ніж здається. Найчастіший провал у підрахунку калорій — не неточність, а відмова на другому тижні. Застосунок, який робить перші два тижні підбадьорливими, має реальну перевагу.",
+            "Зворотний бік — безкоштовна версія: багато очікуваних функцій сховано в Premium, і ти помічаєш це раніше, ніж у Yazio."
+          ]
+        },
+        {
+          "head": "Обирай Yazio, якщо найважче — вирішити, що приготувати",
+          "body": [
+            "Бібліотека рецептів і планів харчування в Yazio глибша. Якщо ти відкриваєш застосунок для обліку, а справжня проблема — «не знаю, що приготувати під мої макроси», Yazio відповідає на це питання краще.",
+            "Його безкоштовна версія теж придатніша — можна місяцями серйозно вести облік без оплати, чого про Lifesum не скажеш.",
+            "Поступається Yazio в опрацюванні деталей. Він цілком приємний, але дизайн і коучинг Lifesum відчуваються на крок попереду."
+          ],
+          "callout": "<strong>Просте правило:</strong> якщо твоє завдання — <em>записувати</em> з'їдене, підійде будь-який, і Lifesum приємніший. Якщо завдання — <em>планувати</em> харчування, Yazio. Якщо проблема в тому, що їжа — лише частина картини, читай далі."
+        },
+        {
+          "head": "Що обидва залишають поза увагою",
+          "body": [
+            "Lifesum і Yazio — застосунки про харчування, до яких додали лічильник води й легкий щоденник тренувань, а не застосунки, від початку побудовані довкола всіх трьох. На практиці дві речі не враховуються бодай якось осмислено.",
+            "<strong>Вода — це лічильник, а не модель.</strong> Обидва рахують склянки. Жоден не розрізняє, що ти випив: 250 мл кави й 250 мл води — не одне й те саме для водного балансу, і жоден застосунок цього не відображає. Жоден не коригує ціль у спекотний день.",
+            "<strong>Тренування ні на що не впливають.</strong> Тренування можна записати, і калорії, можливо, збільшать твою норму, але рідину, втрачену з потом, ніде не враховують. У важкий тренувальний день найбільше змінюється саме те число, яке ніхто не відстежує."
+          ]
+        },
+        {
+          "head": "Розкриття: де наш застосунок",
+          "body": [
+            "Ми публікуємо це порівняння й робимо конкурентний застосунок, тож вважай цей розділ рекламою й пропусти, якщо хочеш, — висновок щодо Lifesum і Yazio вище самодостатній.",
+            "Suu побудований довкола описаної вище прогалини: вода, калорії й тренування як одна пов'язана система, а не три паралельні щоденники. Записана пробіжка підвищує денну ціль щодо води на основі оцінки втрат із потом; сфотографовану страву аналізують на калорії й макроси, а білок і натрій у ній додають воду для травлення; кожен із 91 напою враховується за своїм реальним внеском у гідратацію.",
+            "У чому Suu поступається: база продуктів менша, ніж у Lifesum чи Yazio, а бібліотеки рецептів немає зовсім. Якщо для тебе пріоритет — рецепти чи ширина бази, два застосунки вище лишаються кращим вибором, і ми воліємо сказати це прямо, ніж удавати, що це не так."
+          ]
+        }
+      ],
+      "verdict": {
+        "head": "Висновок",
+        "body": [
+          "<strong>Lifesum</strong> — кращий перший запуск, приємніший інтерфейс, оцінка якості їжі. Найкраще для тих, хто рахує калорії вперше.",
+          "<strong>Yazio</strong> — сильніші рецепти й плани харчування, придатніша безкоштовна версія. Найкраще, якщо вузьке місце — планування харчування.",
+          "<strong>Жоден</strong> — якщо тобі потрібна нормальна модель гідратації й щоб тренування змінювали денні цілі, обидва не впораються за своєю будовою, і саме для цієї прогалини створено Suu.",
+          "Якщо обираєш лише між цими двома: спершу спробуй безкоштовну версію Yazio — вона дає просунутися далі, перш ніж попросить грошей."
+        ]
+      },
+      "cta": {
+        "head": "Хочеш воду, калорії й тренування в одному пов'язаному застосунку?",
+        "sub": "Безкоштовне завантаження · Premium безкоштовно 3 дні",
+        "button": "Подивитися, як це робить Suu"
+      },
+      "faq": [
+        {
+          "q": "Що краще: Lifesum чи Yazio?",
+          "a": "Lifesum кращий для новачків завдяки першому запуску, чистішому інтерфейсу й оцінці якості їжі Life Score. Yazio кращий, якщо тобі потрібні рецепти й структуровані плани харчування, а його безкоштовна версія придатніша в довгостроковій перспективі. Обидва впевнено враховують калорії й макроси."
+        },
+        {
+          "q": "У кого краща безкоштовна версія — у Lifesum чи Yazio?",
+          "a": "Безкоштовна версія Yazio зазвичай придатніша — можна місяцями серйозно рахувати калорії й макроси, перш ніж платна стіна почне обмежувати. Lifesum ховає за Premium більше своїх відмітних функцій."
+        },
+        {
+          "q": "Чи враховують Lifesum і Yazio воду?",
+          "a": "В обох є простий лічильник води, але жоден не моделює гідратацію як слід: вони рахують склянки, не розрізняючи, що ти випив, і не коригують ціль під тренування чи спеку. Кава й вода враховуються однаково."
+        },
+        {
+          "q": "Чи враховують Lifesum або Yazio тренування?",
+          "a": "Обидва пропонують базовий облік тренувань і можуть читати тренування з Apple Health чи Google Health Connect, але жоден не є серйозним трекером тренувань, а записане тренування впливає лише на норму калорій."
+        },
+        {
+          "q": "Яка добра альтернатива Lifesum і Yazio?",
+          "a": "Для більшої бази продуктів — MyFitnessPal. Для глибокої деталізації мікронутрієнтів — Cronometer. Якщо хочеш пов'язати калорії, тренування й воду в одному застосунку — де записане тренування підвищує ціль щодо води, а з'їдена страва додає воду для травлення, — Suu створений саме для цієї прогалини, хоча його база продуктів менша й бібліотеки рецептів немає."
+        }
+      ],
+      "references": [
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/",
+          "label": "Самоконтроль харчування та керування вагою (PMC)"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5568610/",
+          "label": "Мобільний облік харчування та прихильність (PMC)"
+        },
+        {
+          "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459",
+          "label": "EFSA — референтні значення споживання води"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/uk/lifesum-vs-myfitnesspal.html",
+          "title": "Lifesum чи MyFitnessPal: який лічильник калорій обрати?",
+          "desc": "Найбільша база чи простіший і зрозуміліший досвід? Чесне порівняння Lifesum і MyFitnessPal — і…"
+        },
+        {
+          "href": "/blog/uk/cronometer-vs-lifesum.html",
+          "title": "Cronometer чи Lifesum: який лічильник калорій обрати?",
+          "desc": "Глибина вітамінів і мінералів чи зрозумілий, гарний досвід? Чесне порівняння Cronometer і Lifesum — і…"
+        },
+        {
+          "href": "/blog/uk/alternatyvy-yazio.html",
+          "title": "Альтернативи Yazio: який застосунок обрати у 2026 році",
+          "desc": "Де Yazio досі найкращий, де його бракує — і п'ять застосунків, на які варто перейти: калорії, вода…"
+        },
+        {
+          "href": "/blog/uk/najkrashchyj-lichylnyk-kalorij.html",
+          "title": "Найкращий лічильник калорій у 2026",
+          "desc": "MyFitnessPal, Yazio, FatSecret, Lifesum, Cronometer і Suu — за швидкістю запису, охопленням бази й тим…"
+        }
+      ],
+      "published": "2026-10-15"
     }
   }
 }

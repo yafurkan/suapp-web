@@ -2,6 +2,330 @@
   "_note": "RAKİP-vs-RAKİP — EGZERSİZ SÜTUNU. Suu tabloda ve kararda HİÇ geçmiyor (suu_col: -1). Egzersiz sütunu üç para sorgusu içinde en zayıfımız (project_geo_en_baseline: 'Strava alternative / GPS run tracker' sorgusunda YOK) — tarafsız bir kaynak olarak girmek satıcı sayfasından daha hızlı alıntı kazandırıyor. Hedef sorgular: strava vs nike run club, best free running app, nike run club alternative.",
   "published": "2026-08-24",
   "pages": {
+    "tr": {
+      "slug": "strava-vs-nike-run-club",
+      "published_display": "15 Ekim 2026",
+      "read_minutes": 7,
+      "badge": "🏃 Kafa kafaya",
+      "h1": "Strava vs Nike Run Club: Hangi Koşu Uygulamasıyla Koşmalısın?",
+      "meta": {
+        "title": "Strava vs Nike Run Club (2026) — Ücretsiz Koçluk mu, Derin Analiz mi? | Suu",
+        "description": "Nike Run Club ücretsiz ve sana koçluk yapar; Strava sosyal, çok sporlu ve analitik ama en iyi özelliklerini abonelikte tutar. İkisini GPS, antrenman planları, bisiklet desteği ve fiyat açısından karşılaştırdık.",
+        "keywords": "strava vs nike run club, nike run club mı strava mı, en iyi ücretsiz koşu uygulaması, strava alternatifi, nike run club inceleme 2026, strava aboneliğe değer mi, antrenman planlı koşu uygulaması",
+        "og_title": "Strava vs Nike Run Club",
+        "og_description": "Ücretsiz bir koşu koçu mu, sosyal ve çok sporlu bir analiz platformu mu? Aslında aynı koşucu için yarışmıyorlar."
+      },
+      "answer": "Yapı istiyor ve para ödemek istemiyorsan Nike Run Club daha iyi uygulama: rehberli koşular, sesli koçluk ve antrenman planları ücretsiz, koşu deneyimi de çok özenli. Koşmanın yanında bisiklet de sürüyorsan, segmentler ve sıralama tablolarıyla ilgileniyorsan ya da antrenmanını sosyal bir akışta görmek istiyorsan Strava daha iyi — ama derin analizleri ve rota araçları abonelik arkasında. Pek çok kişi ikisini birlikte kullanıyor: koşuyu kaydetmek ve koçluk için Nike Run Club, paylaşmak ve analiz etmek için Strava.",
+      "disclosure": "Bu karşılaştırma Suu ekibi tarafından yayımlanmıştır ve Suu, geniş takip uygulamaları kategorisinde rakip bir uygulamadır. Aşağıdaki iki uygulama da Suu ile karşılaştırılmıyor — bu sayfa, bu ikisinden hangisinin sana daha uygun olduğunu anlatıyor. Özellikler ve abonelik içerikleri Ağustos 2026 itibarıyla kamuya açık bilgilere dayanır ve sık değişir.",
+      "intro": [
+        "Bu ikisi sürekli karşılaştırılıyor ama aslında aynı kişi için yapılmamışlar. Nike Run Club, içinde koç olan bir koşu uygulaması. Strava ise aktivite de kaydeden bir sosyal ağ ve analiz platformu.",
+        "Bu ayrım aşağıdaki farkların çoğunu açıklıyor — pek çok kişinin ikisini aynı anda kullanması ve bunun son derece mantıklı bir cevap olması da dahil.",
+        "Sorulmaya değer soru hangisinin daha iyi olduğu değil, bu iki şeyden hangisinde eksiğin olduğu: <strong>yapı</strong> mı, <strong>bağlam</strong> mı?"
+      ],
+      "table": {
+        "head": "Strava vs Nike Run Club",
+        "caption": "Strava ve Nike Run Club özellik karşılaştırması",
+        "col_feature": "Özellik",
+        "columns": [
+          "Strava",
+          "Nike Run Club"
+        ],
+        "suu_col": -1,
+        "rows": [
+          {
+            "label": "Fiyat",
+            "cells": [
+              {
+                "text": "Ücretsiz sürüm + abonelik",
+                "cls": "soon"
+              },
+              {
+                "text": "✓ Ücretsiz",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "GPS ile koşu kaydı",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Bisiklet desteği",
+            "cells": [
+              {
+                "text": "✓ Kategorideki en derin",
+                "cls": "yes"
+              },
+              {
+                "text": "✗ Yalnızca koşu",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Diğer sporlar",
+            "cells": [
+              {
+                "text": "✓ 30+ aktivite türü",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Rehberli koşular / sesli koçluk",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓ En iyi özelliği",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Antrenman planları",
+            "cells": [
+              {
+                "text": "Abonelik",
+                "cls": "soon"
+              },
+              {
+                "text": "✓ Ücretsiz, uyarlanabilir",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Segmentler ve sıralama tabloları",
+            "cells": [
+              {
+                "text": "✓ Yalnızca Strava'da",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Sosyal akış ve kulüpler",
+            "cells": [
+              {
+                "text": "✓ Asıl cazibesi",
+                "cls": "yes"
+              },
+              {
+                "text": "Temel meydan okumalar",
+                "cls": "soon"
+              }
+            ]
+          },
+          {
+            "label": "Rota planlama",
+            "cells": [
+              {
+                "text": "Abonelik",
+                "cls": "soon"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Gelişmiş analizler (kondisyon, güç)",
+            "cells": [
+              {
+                "text": "Abonelik",
+                "cls": "soon"
+              },
+              {
+                "text": "Temel",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Nabız bölgeleri",
+            "cells": [
+              {
+                "text": "Abonelik",
+                "cls": "soon"
+              },
+              {
+                "text": "✓ Eşleştirilmiş cihazla",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Garmin, Coros, Polar uyumu",
+            "cells": [
+              {
+                "text": "✓ En geniş cihaz desteği",
+                "cls": "yes"
+              },
+              {
+                "text": "Sınırlı",
+                "cls": "soon"
+              }
+            ]
+          },
+          {
+            "label": "Apple Watch uygulaması",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Yediğin kaloriyi / beslenmeyi kaydetme",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Su takibi",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          }
+        ]
+      },
+      "analysis": [
+        {
+          "head": "Nike Run Club, koşudaki en iyi ücretsiz koç",
+          "body": [
+            "Uygulamayı yüklemenin sebebi rehberli koşular ve bunlar gerçekten sıra dışı: belirli bir antrenmanda seni konuşarak yönlendiren gerçek bir koç, koşarken temponu ve nedenini açıklıyor. Yeni başlayan biri ya da hiç yapılandırılmış bir plan izlememiş biri için bu, koşu sonrası her türlü analizden daha değerli.",
+            "Uyarlanabilir antrenman planları da ücretsiz; benzer planların neredeyse her yerde ücretli olduğu düşünülürse bu dikkat çekici. Sorunun her seferinde aynı orta-zor beş kilometreyi koşmaksa, Nike Run Club bunu ücretsiz çözüyor.",
+            "Sınırları da aynı netlikte. Yalnızca koşu var — bisiklet, salon ya da yüzme yok. Apple Watch dışındaki cihaz desteği zayıf. Kendi verisini didiklemek isteyen biri için de derinlik yok."
+          ]
+        },
+        {
+          "head": "Strava, antrenman hayatının yaşadığı en iyi yer",
+          "body": [
+            "Strava'nın temel fikri şuydu: aktiviteyi kaydetmek işin sıkıcı kısmı, karşılaştırmak ise ilginç kısmı. Segmentler herhangi bir yol ya da patika parçasını sıralama tablosu olan, tekrarlanabilir bir zamana karşı yarışa çeviriyor; akış, tek başına yaptığın antrenmanı arkadaşlarının gördüğü bir şeye, kulüpler de bir gruba dönüştürüyor.",
+            "Ayrıca gerçekten çok sporlu: bisiklet desteği Nike'ın sunduğu her şeyden çok daha derin ve piyasadaki neredeyse her saatten ve bisiklet bilgisayarından veri kabul ediyor. Garmin ya da Coros'un varsa, o dosyaların gittiği yer Strava.",
+            "İşin püf noktası abonelik. Rota planlama, anlamlı analizlerin çoğu, aynı parkurdaki koşuların karşılaştırması ve tam segment sıralamaları yıllar içinde abonelik arkasına taşındı. Ücretsiz sürüm aktivite kaydediyor ve bir akış gösteriyor; insanların Strava'yı önerirken anlattığı kısımlar büyük ölçüde ücretli."
+          ],
+          "callout": "Yaygın kurulum bir uzlaşma değil: Nike Run Club ile kaydet ve koçluk al, sonra sosyal akış ve segmentler için Strava'ya senkronize olsun. Bu kullanım seviyesinde ikisi de ücretsiz."
+        },
+        {
+          "head": "İkisinin de yapmadığı şey",
+          "body": [
+            "İki uygulama da antrenmanın sonunda duruyor. Sana yaklaşık 600 kalori yaktığını söylüyorlar ve sonra o sayı hiçbir yere gitmiyor — yediğinle karşılaştırılmıyor, kaybettiğin fazladan sıvı ise hiçbir yerde sayılmıyor.",
+            "Ayrı bir beslenme uygulaması ve koçu olan yarışmacı bir bisikletçi için bu ayrım sorun değil, hatta tercih edilir. Asıl hedefi performans değil kilo ya da genel sağlık olan biri içinse bu, birbiriyle konuşmayan iki üç uygulama kullanmak ve aradaki hesabı elle yapmak demek.",
+            "Rutinini bunlardan birinin etrafına kurmadan önce bunu bilmekte fayda var. İkisi de tüm sağlık tablon olmaya çalışmıyor ve öyleymiş gibi de yapmıyor."
+          ]
+        }
+      ],
+      "verdict": {
+        "head": "Karar",
+        "body": [
+          "<strong>Nike Run Club'ı seç</strong>: yapı isteyen ve para ödemek istemeyen bir koşucuysan. Rehberli koşuların ve ücretsiz uyarlanabilir antrenman planlarının bu fiyata gerçek bir karşılığı yok.",
+          "<strong>Strava'yı seç</strong>: koşunun yanında bisiklet de sürüyorsan, Garmin ya da benzeri bir cihazın varsa, segmentleri önemsiyorsan ya da antrenmanının sosyal olmasını istiyorsan. Sonunda abone olacağını varsay, çünkü ücretsiz sürüm bilerek ince tutuluyor.",
+          "<strong>İkisini birlikte kullan</strong>: sosyal tarafı da isteyen bir koşucuysan — Nike Run Club ile kaydet, Strava'ya senkronize et. Pek çok kişinin gerçekte yaptığı bu ve hiçbir maliyeti yok.",
+          "Koşunun yediğin ve içtiklerinle bağlantı kurmasını istiyorsan, iki uygulama da bunu yapmıyor. Bu bir koşu uygulaması sorusu değil, beslenme ve su sorusu."
+        ]
+      },
+      "cta": {
+        "head": "Koşu günün geri kalanını da değiştirsin mi?",
+        "sub": "Suu GPS antrenmanlarını kaydeder ve onları kaloriye ve suya bağlar — iOS ve Android'de ücretsiz",
+        "button": "Suu'nun nasıl yaptığını gör"
+      },
+      "faq": [
+        {
+          "q": "Strava mı Nike Run Club mı daha iyi?",
+          "a": "Farklı koşucular için yapılmışlar. Yalnızca koşuyorsan ve ücretsiz koçluk, rehberli koşular ve yapılandırılmış antrenman planları istiyorsan Nike Run Club daha iyi. Bisiklet de sürüyorsan, segment ve sıralama tabloları istiyorsan, Garmin ya da benzeri bir cihaz kullanıyorsan ya da sosyal bir akış istiyorsan Strava daha iyi — ama en iyi özellikleri abonelik gerektiriyor."
+        },
+        {
+          "q": "Nike Run Club tamamen ücretsiz mi?",
+          "a": "Evet. Rehberli koşular, sesli koçluk ve uyarlanabilir antrenman planlarının hepsi ücretsiz; bu alışılmadık bir durum, çünkü benzer planlar çoğu koşu uygulamasında ücretli. Karşılığında yalnızca koşuyu kapsıyor ve analiz derinliği sınırlı."
+        },
+        {
+          "q": "Strava aboneliği buna değer mi?",
+          "a": "Ne kullandığına bağlı. Rota planlıyorsan, ciddi bisiklet sürüyorsan ya da tam segment sıralamalarını ve kondisyon trendi analizlerini önemsiyorsan, bunlar abonelikte ve genelde buna değer bulunuyor. Yalnızca koşuları kaydetmek ve arkadaşlarının akışını görmek istiyorsan ücretsiz sürüm yeterli."
+        },
+        {
+          "q": "Strava ve Nike Run Club birlikte kullanılabilir mi?",
+          "a": "Evet, ve bu yaygın bir kurulum. Koçluk için koşuyu Nike Run Club'da kaydet; aktivite Strava'ya senkronize olsun ki akışında görünsün ve segmentlere ve meydan okumalara sayılsın. Bu kullanım seviyesinde ikisi de ücretsiz."
+        },
+        {
+          "q": "Strava ya da Nike Run Club yediğin kaloriyi sayar mı?",
+          "a": "Hayır. İkisi de aktivite sırasında yakılan kaloriyi tahmin ediyor ama besin alımını ya da suyu takip etmiyor ve yakılanı yediğinle karşılaştırmıyor. İnsanlar bu boşluğu ikisinden birini ayrı bir beslenme uygulamasıyla eşleştirerek — ya da üçünü birden yapan tek bir uygulama kullanarak — kapatıyor."
+        }
+      ],
+      "references": [
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6835337/",
+          "label": "Egzersiz sırasında ter oranı ve sıvı yerine koyma (PMC)"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7909433/",
+          "label": "Giyilebilir cihazların enerji harcaması tahminlerinin doğruluğu (PMC)"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/en-iyi-egzersiz-takip-uygulamasi.html",
+          "title": "En İyi Egzersiz Takip Uygulaması 2026",
+          "desc": "Strava, Nike Run Club, Samsung Health, Apple Fitness ve Suu — antrenman bittikten sonra veriyle ne…"
+        },
+        {
+          "href": "/blog/suu-vs-strava.html",
+          "title": "Suu vs Strava: GPS'li Antrenman Takibi mi, Kapanan Döngü mü?",
+          "desc": "İkisi de koşunu GPS ile kaydedip rotanı haritaya çiziyor. Fark, sen Bitir'e bastıktan sonra ne olduğunda."
+        },
+        {
+          "href": "/blog/egzersizde-kalori-yakimi.html",
+          "title": "Hangi Egzersiz Kaç Kalori Yakar? Aktivite Bazlı Rehber",
+          "desc": "MET formülüyle kişisel kalori hesabı, aktivite tablosu ve Apple Health ile otomatik takip."
+        },
+        {
+          "href": "/blog/yuruyus-mu-kosu-mu.html",
+          "title": "Kilo Vermek İçin Yürüyüş mü Koşu mu?",
+          "desc": "Aynı süre ve aynı mesafede kaç kalori, “afterburn” gerçek mi, iştah ve sakatlık riski nasıl değişiyor?…"
+        }
+      ],
+      "published": "2026-10-15"
+    },
     "en": {
       "slug": "strava-vs-nike-run-club",
       "published_display": "24 August 2026",
@@ -26,39 +350,207 @@
         "head": "Strava vs Nike Run Club",
         "caption": "Feature comparison of Strava and Nike Run Club",
         "col_feature": "Feature",
-        "columns": ["Strava", "Nike Run Club"],
+        "columns": [
+          "Strava",
+          "Nike Run Club"
+        ],
         "suu_col": -1,
         "rows": [
-          {"label": "Price", "cells": [
-            {"text": "Free tier + subscription", "cls": "soon"}, {"text": "✓ Free", "cls": "yes"}]},
-          {"label": "GPS run recording", "cells": [
-            {"text": "✓", "cls": "yes"}, {"text": "✓", "cls": "yes"}]},
-          {"label": "Cycling support", "cells": [
-            {"text": "✓ Deepest in the category", "cls": "yes"}, {"text": "✗ Running only", "cls": "no"}]},
-          {"label": "Other sports", "cells": [
-            {"text": "✓ 30+ activity types", "cls": "yes"}, {"text": "✗", "cls": "no"}]},
-          {"label": "Guided runs / audio coaching", "cells": [
-            {"text": "✗", "cls": "no"}, {"text": "✓ Its best feature", "cls": "yes"}]},
-          {"label": "Training plans", "cells": [
-            {"text": "Subscription", "cls": "soon"}, {"text": "✓ Free, adaptive", "cls": "yes"}]},
-          {"label": "Segments and leaderboards", "cells": [
-            {"text": "✓ Unique to Strava", "cls": "yes"}, {"text": "✗", "cls": "no"}]},
-          {"label": "Social feed and clubs", "cells": [
-            {"text": "✓ The main draw", "cls": "yes"}, {"text": "Basic challenges", "cls": "soon"}]},
-          {"label": "Route planning", "cells": [
-            {"text": "Subscription", "cls": "soon"}, {"text": "✗", "cls": "no"}]},
-          {"label": "Advanced analytics (fitness, power)", "cells": [
-            {"text": "Subscription", "cls": "soon"}, {"text": "Basic", "cls": "no"}]},
-          {"label": "Heart-rate zones", "cells": [
-            {"text": "Subscription", "cls": "soon"}, {"text": "✓ With a paired device", "cls": "yes"}]},
-          {"label": "Works with Garmin, Coros, Polar", "cells": [
-            {"text": "✓ Widest device support", "cls": "yes"}, {"text": "Limited", "cls": "soon"}]},
-          {"label": "Apple Watch app", "cells": [
-            {"text": "✓", "cls": "yes"}, {"text": "✓", "cls": "yes"}]},
-          {"label": "Calorie intake / nutrition logging", "cells": [
-            {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"}]},
-          {"label": "Hydration tracking", "cells": [
-            {"text": "✗", "cls": "no"}, {"text": "✗", "cls": "no"}]}
+          {
+            "label": "Price",
+            "cells": [
+              {
+                "text": "Free tier + subscription",
+                "cls": "soon"
+              },
+              {
+                "text": "✓ Free",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "GPS run recording",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Cycling support",
+            "cells": [
+              {
+                "text": "✓ Deepest in the category",
+                "cls": "yes"
+              },
+              {
+                "text": "✗ Running only",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Other sports",
+            "cells": [
+              {
+                "text": "✓ 30+ activity types",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Guided runs / audio coaching",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Its best feature",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Training plans",
+            "cells": [
+              {
+                "text": "Subscription",
+                "cls": "soon"
+              },
+              {
+                "text": "✓ Free, adaptive",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Segments and leaderboards",
+            "cells": [
+              {
+                "text": "✓ Unique to Strava",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Social feed and clubs",
+            "cells": [
+              {
+                "text": "✓ The main draw",
+                "cls": "yes"
+              },
+              {
+                "text": "Basic challenges",
+                "cls": "soon"
+              }
+            ]
+          },
+          {
+            "label": "Route planning",
+            "cells": [
+              {
+                "text": "Subscription",
+                "cls": "soon"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Advanced analytics (fitness, power)",
+            "cells": [
+              {
+                "text": "Subscription",
+                "cls": "soon"
+              },
+              {
+                "text": "Basic",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Heart-rate zones",
+            "cells": [
+              {
+                "text": "Subscription",
+                "cls": "soon"
+              },
+              {
+                "text": "✓ With a paired device",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Works with Garmin, Coros, Polar",
+            "cells": [
+              {
+                "text": "✓ Widest device support",
+                "cls": "yes"
+              },
+              {
+                "text": "Limited",
+                "cls": "soon"
+              }
+            ]
+          },
+          {
+            "label": "Apple Watch app",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Calorie intake / nutrition logging",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Hydration tracking",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          }
         ]
       },
       "analysis": [
@@ -125,15 +617,1657 @@
         }
       ],
       "references": [
-        {"href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6835337/", "label": "Sweat rate and fluid replacement during exercise (PMC)"},
-        {"href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7909433/", "label": "Accuracy of wearable energy expenditure estimates (PMC)"}
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6835337/",
+          "label": "Sweat rate and fluid replacement during exercise (PMC)"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7909433/",
+          "label": "Accuracy of wearable energy expenditure estimates (PMC)"
+        }
       ],
       "related": [
-        {"href": "/blog/en/best-workout-tracker-app.html", "title": "Best workout tracker app 2026", "desc": "Strava, Nike Run Club, Samsung Health and Apple Fitness compared."},
-        {"href": "/blog/en/suu-vs-strava.html", "title": "Suu vs Strava", "desc": "Where a GPS-first app ends and a health app begins."},
-        {"href": "/blog/en/gps-run-tracker-with-calorie-counter.html", "title": "GPS run tracker with a calorie counter", "desc": "Recording the route and the meal in one place."},
-        {"href": "/blog/en/calories-burned-exercise.html", "title": "How calories burned are calculated", "desc": "Why two apps give you two different numbers."}
+        {
+          "href": "/blog/en/best-workout-tracker-app.html",
+          "title": "Best workout tracker app 2026",
+          "desc": "Strava, Nike Run Club, Samsung Health and Apple Fitness compared."
+        },
+        {
+          "href": "/blog/en/suu-vs-strava.html",
+          "title": "Suu vs Strava",
+          "desc": "Where a GPS-first app ends and a health app begins."
+        },
+        {
+          "href": "/blog/en/gps-run-tracker-with-calorie-counter.html",
+          "title": "GPS run tracker with a calorie counter",
+          "desc": "Recording the route and the meal in one place."
+        },
+        {
+          "href": "/blog/en/calories-burned-exercise.html",
+          "title": "How calories burned are calculated",
+          "desc": "Why two apps give you two different numbers."
+        }
       ]
+    },
+    "ar": {
+      "slug": "strava-vs-nike-run-club",
+      "published_display": "15 أكتوبر 2026",
+      "read_minutes": 7,
+      "badge": "🏃 مواجهة مباشرة",
+      "h1": "Strava أم Nike Run Club: بأي تطبيق جري تركض؟",
+      "meta": {
+        "title": "Strava أم Nike Run Club (2026) — تدريب مجاني أم تحليلات عميقة؟ | Suu",
+        "description": "Nike Run Club مجاني ويدرّبك؛ وStrava اجتماعي ومتعدد الرياضات وتحليلي لكنه يضع أفضل ميزاته خلف اشتراك. نقارن بينهما في GPS وخطط التدريب ودعم الدراجات والسعر.",
+        "keywords": "strava vs nike run club، nike run club أم strava، أفضل تطبيق جري مجاني، بديل strava، مراجعة nike run club 2026، هل يستحق اشتراك strava، تطبيق جري بخطة تدريب",
+        "og_title": "Strava أم Nike Run Club",
+        "og_description": "مدرب جري مجاني أم منصة تحليلات اجتماعية متعددة الرياضات؟ في الحقيقة هما لا يتنافسان على العدّاء نفسه."
+      },
+      "answer": "Nike Run Club هو التطبيق الأفضل إن كنت عدّاءً يريد بنية واضحة ولا يريد أن يدفع: الجريات الموجَّهة والتدريب الصوتي وخطط التدريب مجانية، وتجربة الجري متقنة. وStrava هو الأفضل إن كنت تركب الدراجة إلى جانب الجري، أو تهتم بالمقاطع ولوحات الصدارة، أو تريد تدريبك في موجز اجتماعي — لكن تحليلاته الأعمق وأدوات المسارات خلف اشتراك. كثيرون يستخدمون الاثنين: Nike Run Club لتسجيل الجري والتدريب، وStrava للمشاركة والتحليل.",
+      "disclosure": "نشر فريق Suu هذه المقارنة، وSuu تطبيق منافس في فئة تطبيقات التتبع الأوسع. لا يُقارَن أيٌّ من التطبيقين أدناه بـSuu — هذه الصفحة عن أيهما يناسبك أكثر. تعكس الميزات ومحتويات الاشتراك المعلومات المتاحة للعامة حتى أغسطس 2026، وهي تتغير كثيرًا.",
+      "intro": [
+        "يُقارَن هذان التطبيقان باستمرار، لكنهما في الحقيقة لم يُصمَّما للشخص نفسه. Nike Run Club تطبيق جري بداخله مدرب. أما Strava فشبكة اجتماعية ومنصة تحليلات تسجّل الأنشطة أيضًا.",
+        "هذا الفرق يفسّر معظم الاختلافات أدناه — بما في ذلك الحقيقة الغريبة أن عددًا كبيرًا من الناس يستخدمون الاثنين معًا، وأن هذا جواب منطقي تمامًا.",
+        "السؤال الذي يستحق الطرح ليس أيهما أفضل، بل أي الأمرين ينقصك: <strong>البنية</strong> أم <strong>السياق</strong>."
+      ],
+      "table": {
+        "head": "Strava vs Nike Run Club",
+        "caption": "مقارنة ميزات Strava وNike Run Club",
+        "col_feature": "الميزة",
+        "columns": [
+          "Strava",
+          "Nike Run Club"
+        ],
+        "suu_col": -1,
+        "rows": [
+          {
+            "label": "السعر",
+            "cells": [
+              {
+                "text": "نسخة مجانية + اشتراك",
+                "cls": "soon"
+              },
+              {
+                "text": "✓ مجاني",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "تسجيل الجري عبر GPS",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "دعم ركوب الدراجات",
+            "cells": [
+              {
+                "text": "✓ الأعمق في الفئة",
+                "cls": "yes"
+              },
+              {
+                "text": "✗ الجري فقط",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "رياضات أخرى",
+            "cells": [
+              {
+                "text": "✓ أكثر من 30 نوع نشاط",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "جريات موجَّهة / تدريب صوتي",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓ أفضل ميزاته",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "خطط التدريب",
+            "cells": [
+              {
+                "text": "اشتراك",
+                "cls": "soon"
+              },
+              {
+                "text": "✓ مجانية وتكيّفية",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "المقاطع ولوحات الصدارة",
+            "cells": [
+              {
+                "text": "✓ حصرية لـStrava",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "الموجز الاجتماعي والأندية",
+            "cells": [
+              {
+                "text": "✓ عامل الجذب الأساسي",
+                "cls": "yes"
+              },
+              {
+                "text": "تحديات بسيطة",
+                "cls": "soon"
+              }
+            ]
+          },
+          {
+            "label": "تخطيط المسارات",
+            "cells": [
+              {
+                "text": "اشتراك",
+                "cls": "soon"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "تحليلات متقدمة (اللياقة، القدرة)",
+            "cells": [
+              {
+                "text": "اشتراك",
+                "cls": "soon"
+              },
+              {
+                "text": "أساسية",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "مناطق نبض القلب",
+            "cells": [
+              {
+                "text": "اشتراك",
+                "cls": "soon"
+              },
+              {
+                "text": "✓ مع جهاز مقترن",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "التوافق مع Garmin وCoros وPolar",
+            "cells": [
+              {
+                "text": "✓ أوسع دعم للأجهزة",
+                "cls": "yes"
+              },
+              {
+                "text": "محدود",
+                "cls": "soon"
+              }
+            ]
+          },
+          {
+            "label": "تطبيق Apple Watch",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "تسجيل السعرات المتناولة / التغذية",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "تتبع شرب الماء",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          }
+        ]
+      },
+      "analysis": [
+        {
+          "head": "Nike Run Club أفضل مدرب جري مجاني",
+          "body": [
+            "الجريات الموجَّهة هي سبب تثبيت التطبيق، وهي فعلًا غير مألوفة: مدرب حقيقي يرشدك خلال حصة محددة ويشرح لك الإيقاع والسبب وأنت تجري. للعدّاء المبتدئ، أو لمن لم يتبع خطة منظّمة من قبل، هذا أثمن من أي تحليلات بعد الجري.",
+            "خطط التدريب التكيّفية مجانية أيضًا، وهذا لافت لأن خططًا مماثلة مدفوعة في كل مكان تقريبًا. إن كانت مشكلتك أنك تخرج وتجري الكيلومترات الخمسة نفسها بشدة متوسطة كل مرة، فإن Nike Run Club يحلّها مجانًا.",
+            "والحدود واضحة بالقدر نفسه. الجري فقط — لا دراجة ولا صالة ولا سباحة. دعم الأجهزة خارج Apple Watch ضعيف. ولا عمق لمن يريد التدقيق في بياناته."
+          ]
+        },
+        {
+          "head": "Strava أفضل مكان لحياتك التدريبية",
+          "body": [
+            "الفكرة الجوهرية لـStrava أن تسجيل النشاط هو الجزء المملّ، وأن مقارنته هي الجزء الممتع. تحوّل المقاطعُ أيَّ جزء من طريق أو مسار إلى سباق ضد الزمن قابل للتكرار مع لوحة صدارة؛ ويجعل الموجزُ تدريبك الفردي شيئًا يراه أصدقاؤك؛ وتحوّله الأنديةُ إلى مجموعة.",
+            "وهو متعدد الرياضات فعلًا، بدعم لركوب الدراجات أعمق بكثير من أي شيء تقدّمه Nike، ويقبل البيانات من كل ساعة وجهاز دراجة تقريبًا في السوق. إن كانت لديك Garmin أو Coros، فإلى Strava تذهب تلك الملفات.",
+            "المشكلة في الاشتراك. تخطيط المسارات ومعظم التحليلات المفيدة ومقارنة الجريات على المسار نفسه ولوحات صدارة المقاطع الكاملة انتقلت خلف الاشتراك على مرّ السنين. النسخة المجانية تسجّل الأنشطة وتعرض موجزًا؛ أما الأجزاء التي يصفها الناس حين يوصون بـStrava فمعظمها مدفوع."
+          ],
+          "callout": "الإعداد الشائع ليس حلًّا وسطًا: سجّل وتدرّب مع Nike Run Club، ثم دعه يتزامن مع Strava للموجز الاجتماعي والمقاطع. عند هذا المستوى كلاهما مجاني."
+        },
+        {
+          "head": "ما لا يفعله أيٌّ منهما",
+          "body": [
+            "يتوقف التطبيقان عند نهاية التمرين. يخبرانك أنك أحرقت نحو 600 سعرة، ثم لا يذهب هذا الرقم إلى أي مكان — لا يُقارَن بما أكلت، والسوائل الإضافية التي فقدتها لا تُحسب في أي مكان.",
+            "بالنسبة لدرّاج منافس لديه تطبيق تغذية منفصل ومدرب، هذا الفصل مقبول بل مفضّل. أما لمن هدفه الوزن أو الصحة العامة لا الأداء، فهو يعني استخدام تطبيقين أو ثلاثة لا تتواصل فيما بينها، وإجراء الحسابات بينها يدويًا.",
+            "يستحق هذا أن تعرفه قبل أن تبني روتينك حول أيٍّ منهما. لا يحاول أيٌّ منهما أن يكون صورتك الصحية الكاملة، ولا يدّعي ذلك."
+          ]
+        }
+      ],
+      "verdict": {
+        "head": "الخلاصة",
+        "body": [
+          "<strong>اختر Nike Run Club</strong> إن كنت عدّاءً يريد بنية ولا يريد أن يدفع. لا مثيل حقيقيًا للجريات الموجَّهة وخطط التدريب التكيّفية المجانية بهذا السعر.",
+          "<strong>اختر Strava</strong> إن كنت تركب الدراجة إلى جانب الجري، أو تملك Garmin أو جهازًا مشابهًا، أو تهتم بالمقاطع، أو تريد تدريبًا اجتماعيًا. افترض أنك ستشترك في النهاية، لأن النسخة المجانية محدودة عمدًا.",
+          "<strong>استخدم الاثنين</strong> إن كنت عدّاءً يريد الجانب الاجتماعي أيضًا — سجّل بـNike Run Club وزامِن مع Strava. هذا ما يفعله كثيرون فعلًا، ولا يكلّف شيئًا.",
+          "إن أردت أن يرتبط الجري بما تأكله وتشربه، فلا يفعل أيٌّ من التطبيقين ذلك. هذا سؤال عن التغذية والترطيب، لا عن تطبيق الجري."
+        ]
+      },
+      "cta": {
+        "head": "تريد أن يغيّر الجريُ بقية يومك؟",
+        "sub": "يسجّل Suu تمارين GPS ويربطها بالسعرات والترطيب — مجانًا على iOS وAndroid",
+        "button": "شاهد كيف يفعل Suu ذلك"
+      },
+      "faq": [
+        {
+          "q": "أيهما أفضل: Strava أم Nike Run Club؟",
+          "a": "صُمّما لعدّائين مختلفين. Nike Run Club أفضل إن أردت تدريبًا مجانيًا وجريات موجَّهة وخطط تدريب منظّمة وكنت تجري فقط. وStrava أفضل إن كنت تركب الدراجة أيضًا، أو تريد المقاطع ولوحات الصدارة، أو تستخدم Garmin أو جهازًا مشابهًا، أو تريد موجزًا اجتماعيًا — لكن أفضل ميزاته تتطلب اشتراكًا."
+        },
+        {
+          "q": "هل Nike Run Club مجاني بالكامل؟",
+          "a": "نعم. الجريات الموجَّهة والتدريب الصوتي وخطط التدريب التكيّفية كلها مجانية، وهذا غير معتاد لأن خططًا مماثلة مدفوعة في معظم تطبيقات الجري. في المقابل يغطي الجري فقط ويقدّم عمقًا تحليليًا محدودًا."
+        },
+        {
+          "q": "هل يستحق اشتراك Strava؟",
+          "a": "يعتمد على ما تستخدمه. إن كنت تخطط المسارات أو تركب الدراجة بجدية أو تهتم بلوحات صدارة المقاطع الكاملة وتحليلات تطور اللياقة، فهذه موجودة في الاشتراك ويُعدّ عادةً مستحقًا. وإن أردت فقط تسجيل الجريات ورؤية موجز أصدقائك، فالنسخة المجانية تكفي."
+        },
+        {
+          "q": "هل يمكن استخدام Strava وNike Run Club معًا؟",
+          "a": "نعم، وهو إعداد شائع. سجّل الجري في Nike Run Club للحصول على التدريب، ودع النشاط يتزامن مع Strava ليظهر في موجزك ويُحتسب في المقاطع والتحديات. عند هذا المستوى من الاستخدام كلاهما مجاني."
+        },
+        {
+          "q": "هل يحسب Strava أو Nike Run Club السعرات التي تأكلها؟",
+          "a": "لا. كلاهما يقدّر السعرات المحروقة خلال النشاط، لكن لا أحد منهما يتتبع الطعام أو الماء، ولا يقارن ما أحرقته بما أكلته. يسدّ الناس هذه الفجوة بإقران أحدهما بتطبيق تغذية منفصل — أو باستخدام تطبيق واحد يجمع المهام الثلاث."
+        }
+      ],
+      "references": [
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6835337/",
+          "label": "معدل التعرّق وتعويض السوائل أثناء التمرين (PMC)"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7909433/",
+          "label": "دقة تقديرات الأجهزة القابلة للارتداء لاستهلاك الطاقة (PMC)"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/ar/afdal-tatbiq-tamarin.html",
+          "title": "أفضل تطبيق لتتبع التمارين في 2026",
+          "desc": "Strava وNike Run Club وSamsung Health وApple Fitness وSuu — بحسب ما يحدث بعد الضغط على «إنهاء»."
+        },
+        {
+          "href": "/blog/ar/hurq-al-suerat.html",
+          "title": "كم سعرة حرارية تحرق التمارين؟ دليل السعرات حسب النشاط",
+          "desc": "حساب شخصي بصيغة MET، جدول أنشطة، وتتبع تلقائي للسعرات."
+        },
+        {
+          "href": "/blog/ar/almashi-am-aljary.html",
+          "title": "المشي أم الجري لإنقاص الوزن؟",
+          "desc": "السعرات في الوقت نفسه والمسافة نفسها، وهل «الحرق اللاحق» حقيقي، وأثر كل منهما في الشهية وخطر الإصابة …"
+        },
+        {
+          "href": "/blog/ar/tatbiq-wahid-mae-suerat-tamarin.html",
+          "title": "هل يوجد تطبيق يتتبّع الماء والسعرات والتمارين معًا؟",
+          "desc": "لماذا يهمّ التتبّع المدمج، وكيف يحلّه Suu في تطبيق واحد بالتسجيل الصوتي والسعرات بالصورة."
+        }
+      ],
+      "published": "2026-10-15"
+    },
+    "ru": {
+      "slug": "strava-vs-nike-run-club",
+      "published_display": "15 октября 2026",
+      "read_minutes": 7,
+      "badge": "🏃 Лицом к лицу",
+      "h1": "Strava vs Nike Run Club: с каким приложением бегать?",
+      "meta": {
+        "title": "Strava vs Nike Run Club (2026) — бесплатный тренер или глубокая аналитика? | Suu",
+        "description": "Nike Run Club бесплатен и тренирует вас; Strava — социальная, мультиспортивная и аналитическая, но лучшие функции прячет за подпиской. Сравниваем их по GPS, планам тренировок, велоспорту и цене.",
+        "keywords": "strava vs nike run club, nike run club или strava, лучшее бесплатное приложение для бега, альтернатива strava, nike run club обзор 2026, стоит ли подписка strava, приложение для бега с планом тренировок",
+        "og_title": "Strava vs Nike Run Club",
+        "og_description": "Бесплатный тренер по бегу или социальная мультиспортивная платформа аналитики. На самом деле они борются не за одного и того же бегуна."
+      },
+      "answer": "Nike Run Club лучше, если вы бегун, которому нужна структура и не хочется платить: управляемые пробежки, аудиотренер и планы тренировок бесплатны, а сам процесс бега продуман до мелочей. Strava лучше, если вы не только бегаете, но и катаетесь на велосипеде, вам важны сегменты и рейтинги или хочется видеть тренировки в социальной ленте — но глубокая аналитика и инструменты маршрутов спрятаны за подпиской. Многие пользуются обоими: Nike Run Club — чтобы записать пробежку и получить тренерские подсказки, Strava — чтобы поделиться и проанализировать.",
+      "disclosure": "Это сравнение опубликовано командой Suu, а Suu — конкурирующее приложение в более широкой категории трекеров. Ни одно из двух приложений ниже не сравнивается с Suu — эта страница о том, какое из них подходит вам больше. Функции и состав подписок отражают общедоступную информацию на август 2026 года и часто меняются.",
+      "intro": [
+        "Их постоянно сравнивают, но на самом деле они созданы не для одного и того же человека. Nike Run Club — приложение для бега со встроенным тренером. Strava — социальная сеть и аналитическая платформа, которая заодно записывает активности.",
+        "Это различие объясняет большинство отличий ниже — включая странный факт, что очень многие пользуются обоими одновременно, и это вполне разумный ответ.",
+        "Стоит спрашивать не о том, что лучше, а о том, чего вам не хватает: <strong>структуры</strong> или <strong>контекста</strong>."
+      ],
+      "table": {
+        "head": "Strava vs Nike Run Club",
+        "caption": "Сравнение функций Strava и Nike Run Club",
+        "col_feature": "Функция",
+        "columns": [
+          "Strava",
+          "Nike Run Club"
+        ],
+        "suu_col": -1,
+        "rows": [
+          {
+            "label": "Цена",
+            "cells": [
+              {
+                "text": "Бесплатная версия + подписка",
+                "cls": "soon"
+              },
+              {
+                "text": "✓ Бесплатно",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Запись пробежки по GPS",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Поддержка велоспорта",
+            "cells": [
+              {
+                "text": "✓ Самая глубокая в категории",
+                "cls": "yes"
+              },
+              {
+                "text": "✗ Только бег",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Другие виды спорта",
+            "cells": [
+              {
+                "text": "✓ 30+ видов активности",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Управляемые пробежки / аудиотренер",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Лучшая функция",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Планы тренировок",
+            "cells": [
+              {
+                "text": "Подписка",
+                "cls": "soon"
+              },
+              {
+                "text": "✓ Бесплатно, адаптивные",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Сегменты и рейтинги",
+            "cells": [
+              {
+                "text": "✓ Только в Strava",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Социальная лента и клубы",
+            "cells": [
+              {
+                "text": "✓ Главная приманка",
+                "cls": "yes"
+              },
+              {
+                "text": "Простые челленджи",
+                "cls": "soon"
+              }
+            ]
+          },
+          {
+            "label": "Планирование маршрутов",
+            "cells": [
+              {
+                "text": "Подписка",
+                "cls": "soon"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Расширенная аналитика (форма, мощность)",
+            "cells": [
+              {
+                "text": "Подписка",
+                "cls": "soon"
+              },
+              {
+                "text": "Базовая",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Пульсовые зоны",
+            "cells": [
+              {
+                "text": "Подписка",
+                "cls": "soon"
+              },
+              {
+                "text": "✓ С подключённым устройством",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Работа с Garmin, Coros, Polar",
+            "cells": [
+              {
+                "text": "✓ Самая широкая поддержка устройств",
+                "cls": "yes"
+              },
+              {
+                "text": "Ограниченно",
+                "cls": "soon"
+              }
+            ]
+          },
+          {
+            "label": "Приложение для Apple Watch",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Учёт съеденных калорий / питания",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Учёт воды",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          }
+        ]
+      },
+      "analysis": [
+        {
+          "head": "Nike Run Club — лучший бесплатный тренер по бегу",
+          "body": [
+            "Управляемые пробежки — причина установить приложение, и они действительно необычны: настоящий тренер ведёт вас через конкретную тренировку, объясняя темп и смысл прямо во время бега. Для новичка или того, кто никогда не следовал структурированному плану, это ценнее любой аналитики после пробежки.",
+            "Адаптивные планы тренировок тоже бесплатны, что примечательно: подобные планы почти везде платные. Если ваша проблема в том, что вы каждый раз бегаете одни и те же пять километров в среднетяжёлом темпе, Nike Run Club решает её бесплатно.",
+            "Ограничения так же очевидны. Только бег — ни велосипеда, ни зала, ни плавания. Поддержка устройств, кроме Apple Watch, слабая. И глубины нет для тех, кто хочет разбирать свои данные."
+          ]
+        },
+        {
+          "head": "Strava — лучшее место для вашей тренировочной жизни",
+          "body": [
+            "Главная идея Strava: записать активность — скучная часть, а сравнить её — интересная. Сегменты превращают любой участок дороги или тропы в повторяемую гонку на время с рейтингом; лента делает одиночную тренировку видимой для друзей, а клубы — групповой.",
+            "К тому же Strava по-настоящему мультиспортивна: поддержка велоспорта намного глубже всего, что предлагает Nike, и она принимает данные практически с любых часов и велокомпьютеров на рынке. Если у вас Garmin или Coros, файлы уходят именно в Strava.",
+            "Подвох — подписка. Планирование маршрутов, большая часть содержательной аналитики, сравнение пробежек по одному маршруту и полные рейтинги сегментов за годы переехали за платную стену. Бесплатная версия записывает активности и показывает ленту; то, что люди описывают, когда советуют Strava, в основном платное."
+          ],
+          "callout": "Распространённая схема — не компромисс: записывайте и тренируйтесь с Nike Run Club, а затем синхронизируйте в Strava ради ленты и сегментов. На этом уровне оба бесплатны."
+        },
+        {
+          "head": "Чего не делает ни одно из них",
+          "body": [
+            "Оба приложения заканчиваются вместе с тренировкой. Они сообщают, что вы сожгли примерно 600 калорий, и дальше это число никуда не идёт — его не сопоставляют с тем, что вы съели, а потерянная дополнительная жидкость вообще нигде не учитывается.",
+            "Для соревнующегося велосипедиста с отдельным приложением для питания и тренером такое разделение нормально и даже предпочтительно. А для того, чья цель — вес или общее здоровье, а не результат, это означает два-три приложения, которые не общаются друг с другом, и ручные подсчёты между ними.",
+            "Это стоит знать, прежде чем строить распорядок вокруг одного из них. Ни одно не пытается быть полной картиной вашего здоровья и не делает вид, что является ею."
+          ]
+        }
+      ],
+      "verdict": {
+        "head": "Вывод",
+        "body": [
+          "<strong>Выбирайте Nike Run Club</strong>, если вы бегун, которому нужна структура и не хочется платить. Управляемым пробежкам и бесплатным адаптивным планам нет настоящего аналога по такой цене.",
+          "<strong>Выбирайте Strava</strong>, если вы не только бегаете, но и катаетесь, у вас Garmin или похожее устройство, вам важны сегменты или хочется, чтобы тренировки были социальными. Будьте готовы в итоге оформить подписку: бесплатная версия намеренно урезана.",
+          "<strong>Пользуйтесь обоими</strong>, если вы бегун, которому нужна и социальная сторона: записывайте в Nike Run Club, синхронизируйте в Strava. Так поступают очень многие, и это ничего не стоит.",
+          "Если вы хотите, чтобы пробежка была связана с тем, что вы едите и пьёте, ни одно из приложений этого не делает. Это вопрос питания и питьевого режима, а не выбора приложения для бега."
+        ]
+      },
+      "cta": {
+        "head": "Хотите, чтобы пробежка меняла весь ваш день?",
+        "sub": "Suu записывает GPS-тренировки и связывает их с калориями и водой — бесплатно на iOS и Android",
+        "button": "Посмотреть, как это делает Suu"
+      },
+      "faq": [
+        {
+          "q": "Что лучше: Strava или Nike Run Club?",
+          "a": "Они созданы для разных бегунов. Nike Run Club лучше, если вам нужны бесплатный тренер, управляемые пробежки и структурированные планы и вы только бегаете. Strava лучше, если вы ещё и катаетесь, хотите сегменты и рейтинги, пользуетесь Garmin или похожим устройством или хотите социальную ленту — но лучшие функции требуют подписки."
+        },
+        {
+          "q": "Nike Run Club полностью бесплатен?",
+          "a": "Да. Управляемые пробежки, аудиотренер и адаптивные планы тренировок включены бесплатно, что необычно: подобные планы в большинстве беговых приложений платные. Взамен приложение охватывает только бег и даёт ограниченную глубину аналитики."
+        },
+        {
+          "q": "Стоит ли подписка Strava своих денег?",
+          "a": "Зависит от того, чем вы пользуетесь. Если вы планируете маршруты, серьёзно катаетесь или вам важны полные рейтинги сегментов и аналитика динамики формы, всё это в подписке, и её обычно считают оправданной. Если нужно только записывать пробежки и видеть ленту друзей, бесплатной версии достаточно."
+        },
+        {
+          "q": "Можно ли пользоваться Strava и Nike Run Club вместе?",
+          "a": "Да, это распространённая схема. Записывайте пробежку в Nike Run Club ради тренерских подсказок, а активность пусть синхронизируется в Strava, чтобы появиться в ленте и засчитаться в сегментах и челленджах. На таком уровне использования оба бесплатны."
+        },
+        {
+          "q": "Считают ли Strava или Nike Run Club съеденные калории?",
+          "a": "Нет. Оба оценивают калории, сожжённые во время активности, но ни одно не учитывает питание или воду и не сопоставляет расход с тем, что вы съели. Этот разрыв закрывают, сочетая одно из них с отдельным приложением для питания — или используя одно приложение, которое объединяет все три задачи."
+        }
+      ],
+      "references": [
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6835337/",
+          "label": "Скорость потоотделения и восполнение жидкости при нагрузке (PMC)"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7909433/",
+          "label": "Точность оценок энергозатрат носимых устройств (PMC)"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/ru/luchshee-prilozhenie-dlya-trenirovok.html",
+          "title": "Лучшее приложение для тренировок в 2026",
+          "desc": "Strava, Nike Run Club, Samsung Health, Apple Fitness и Suu — по тому, что происходит после нажатия…"
+        },
+        {
+          "href": "/blog/ru/raskhod-kalorij.html",
+          "title": "Сколько калорий сжигает тренировка?",
+          "desc": "Персональный расчёт по формуле MET, таблица активностей и автоматический трекинг."
+        },
+        {
+          "href": "/blog/ru/hodba-ili-beg.html",
+          "title": "Ходьба или бег для похудения?",
+          "desc": "Калории за одно время и на одну дистанцию, реален ли «дожиг» после бега, аппетит и риск травм — цифры и…"
+        },
+        {
+          "href": "/blog/ru/voda-kalorii-trenirovki-odno-prilozhenie.html",
+          "title": "Есть ли приложение, которое считает воду, калории И тренировки вместе?",
+          "desc": "Почему важен совмещённый учёт, и как Suu решает это в одном приложении голосовым вводом и калориями по фото."
+        }
+      ],
+      "published": "2026-10-15"
+    },
+    "de": {
+      "slug": "strava-vs-nike-run-club",
+      "published_display": "15. Oktober 2026",
+      "read_minutes": 7,
+      "badge": "🏃 Direktvergleich",
+      "h1": "Strava vs. Nike Run Club: Mit welcher Lauf-App solltest du laufen?",
+      "meta": {
+        "title": "Strava vs. Nike Run Club (2026) — Kostenloses Coaching oder tiefe Analysen? | Suu",
+        "description": "Nike Run Club ist kostenlos und coacht dich; Strava ist sozial, multisportfähig und analytisch, stellt seine besten Funktionen aber hinter ein Abo. Wir vergleichen beide bei GPS, Trainingsplänen, Radsport und Preis.",
+        "keywords": "strava vs nike run club, nike run club oder strava, beste kostenlose lauf app, strava alternative, nike run club test 2026, lohnt sich strava abo, lauf app mit trainingsplan",
+        "og_title": "Strava vs. Nike Run Club",
+        "og_description": "Ein kostenloser Laufcoach oder eine soziale Multisport-Analyseplattform. Eigentlich konkurrieren sie gar nicht um denselben Läufer."
+      },
+      "answer": "Nike Run Club ist die bessere App, wenn du als Läufer Struktur willst und nichts bezahlen möchtest: Geführte Läufe, Audio-Coaching und Trainingspläne sind kostenlos, und das Lauferlebnis ist ausgereift. Strava ist die bessere App, wenn du neben dem Laufen auch Rad fährst, dich für Segmente und Bestenlisten interessierst oder dein Training in einem sozialen Feed sehen willst — die tieferen Analysen und Routen-Tools liegen allerdings hinter einem Abo. Viele nutzen beide: Nike Run Club zum Aufzeichnen und Coachen, Strava zum Teilen und Analysieren.",
+      "disclosure": "Dieser Direktvergleich wird vom Suu-Team veröffentlicht, und Suu ist in der breiteren Kategorie der Tracking-Apps ein Konkurrent. Keine der beiden Apps unten wird mit Suu verglichen — diese Seite zeigt, welche der beiden besser zu dir passt. Funktionen und Abo-Inhalte beruhen auf öffentlich verfügbaren Informationen mit Stand August 2026 und ändern sich häufig.",
+      "intro": [
+        "Die beiden werden ständig verglichen, sind aber eigentlich nicht für dieselbe Person gebaut. Nike Run Club ist eine Lauf-App mit eingebautem Coach. Strava ist ein soziales Netzwerk und eine Analyseplattform, die nebenbei Aktivitäten aufzeichnet.",
+        "Dieser Unterschied erklärt die meisten Unterschiede unten — auch die merkwürdige Tatsache, dass sehr viele Menschen beide gleichzeitig nutzen und dass das eine völlig vernünftige Antwort ist.",
+        "Die eigentliche Frage ist nicht, welche besser ist, sondern woran es dir fehlt: an <strong>Struktur</strong> oder an <strong>Kontext</strong>."
+      ],
+      "table": {
+        "head": "Strava vs Nike Run Club",
+        "caption": "Funktionsvergleich von Strava und Nike Run Club",
+        "col_feature": "Funktion",
+        "columns": [
+          "Strava",
+          "Nike Run Club"
+        ],
+        "suu_col": -1,
+        "rows": [
+          {
+            "label": "Preis",
+            "cells": [
+              {
+                "text": "Gratisversion + Abo",
+                "cls": "soon"
+              },
+              {
+                "text": "✓ Kostenlos",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "GPS-Laufaufzeichnung",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Radsport-Unterstützung",
+            "cells": [
+              {
+                "text": "✓ Die tiefste der Kategorie",
+                "cls": "yes"
+              },
+              {
+                "text": "✗ Nur Laufen",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Andere Sportarten",
+            "cells": [
+              {
+                "text": "✓ 30+ Aktivitätstypen",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Geführte Läufe / Audio-Coaching",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Die beste Funktion",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Trainingspläne",
+            "cells": [
+              {
+                "text": "Abo",
+                "cls": "soon"
+              },
+              {
+                "text": "✓ Kostenlos, adaptiv",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Segmente und Bestenlisten",
+            "cells": [
+              {
+                "text": "✓ Nur bei Strava",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Sozialer Feed und Clubs",
+            "cells": [
+              {
+                "text": "✓ Der Hauptgrund",
+                "cls": "yes"
+              },
+              {
+                "text": "Einfache Challenges",
+                "cls": "soon"
+              }
+            ]
+          },
+          {
+            "label": "Routenplanung",
+            "cells": [
+              {
+                "text": "Abo",
+                "cls": "soon"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Erweiterte Analysen (Fitness, Leistung)",
+            "cells": [
+              {
+                "text": "Abo",
+                "cls": "soon"
+              },
+              {
+                "text": "Einfach",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Herzfrequenzzonen",
+            "cells": [
+              {
+                "text": "Abo",
+                "cls": "soon"
+              },
+              {
+                "text": "✓ Mit gekoppeltem Gerät",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Kompatibel mit Garmin, Coros, Polar",
+            "cells": [
+              {
+                "text": "✓ Breiteste Geräteunterstützung",
+                "cls": "yes"
+              },
+              {
+                "text": "Eingeschränkt",
+                "cls": "soon"
+              }
+            ]
+          },
+          {
+            "label": "Apple-Watch-App",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Kalorienaufnahme / Ernährungstagebuch",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Trinktracking",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          }
+        ]
+      },
+      "analysis": [
+        {
+          "head": "Nike Run Club ist der beste kostenlose Laufcoach",
+          "body": [
+            "Die geführten Läufe sind der Grund, die App zu installieren, und sie sind wirklich außergewöhnlich: ein echter Coach, der dich durch eine bestimmte Einheit führt und dir Tempo und Sinn erklärt, während du läufst. Für Laufeinsteiger oder alle, die nie einem strukturierten Plan gefolgt sind, ist das mehr wert als jede Analyse nach dem Lauf.",
+            "Auch die adaptiven Trainingspläne sind kostenlos — bemerkenswert, denn vergleichbare Pläne kosten fast überall Geld. Wenn dein Problem ist, dass du jedes Mal dieselben mittelschweren fünf Kilometer läufst, löst Nike Run Club das gratis.",
+            "Die Grenzen sind genauso klar. Es geht nur ums Laufen — kein Radfahren, kein Gym, kein Schwimmen. Die Geräteunterstützung jenseits der Apple Watch ist dünn. Und wer seine Daten genau auswerten will, findet keine Tiefe."
+          ]
+        },
+        {
+          "head": "Strava ist der beste Ort für dein Trainingsleben",
+          "body": [
+            "Stravas Kernidee war, dass das Aufzeichnen einer Aktivität der langweilige Teil ist und das Vergleichen der interessante. Segmente machen jedes Stück Straße oder Trail zu einem wiederholbaren Zeitfahren mit Bestenliste; der Feed macht dein Solotraining für Freunde sichtbar, Clubs machen daraus eine Gruppe.",
+            "Strava ist außerdem wirklich multisportfähig, mit viel tieferer Radsport-Unterstützung als alles, was Nike bietet, und nimmt Daten von praktisch jeder Uhr und jedem Radcomputer auf dem Markt an. Wenn du eine Garmin oder Coros hast, landen diese Dateien bei Strava.",
+            "Der Haken ist das Abo. Routenplanung, die meisten aussagekräftigen Analysen, Vergleiche auf derselben Strecke und vollständige Segment-Bestenlisten sind über die Jahre hinter das Abo gewandert. Die Gratisversion zeichnet Aktivitäten auf und zeigt einen Feed; die Teile, die Leute beschreiben, wenn sie Strava empfehlen, sind größtenteils kostenpflichtig."
+          ],
+          "callout": "Die verbreitete Kombination ist kein Kompromiss: Mit Nike Run Club aufzeichnen und coachen lassen, dann zu Strava synchronisieren für Feed und Segmente. In diesem Umfang sind beide kostenlos."
+        },
+        {
+          "head": "Was keine der beiden kann",
+          "body": [
+            "Beide Apps hören am Ende des Workouts auf. Sie sagen dir, dass du rund 600 Kalorien verbrannt hast, und dann geht diese Zahl nirgendwohin — sie wird nicht mit dem verrechnet, was du gegessen hast, und die zusätzlich verlorene Flüssigkeit wird nirgends gezählt.",
+            "Für einen ambitionierten Radfahrer mit eigener Ernährungs-App und Coach ist diese Trennung in Ordnung, sogar wünschenswert. Wer aber Gewicht oder allgemeine Gesundheit statt Leistung als Ziel hat, nutzt so zwei oder drei Apps, die nicht miteinander reden, und rechnet zwischen ihnen von Hand.",
+            "Das solltest du wissen, bevor du eine Routine um eine der beiden aufbaust. Keine von beiden will dein ganzes Gesundheitsbild sein, und keine tut so."
+          ]
+        }
+      ],
+      "verdict": {
+        "head": "Fazit",
+        "body": [
+          "<strong>Wähle Nike Run Club</strong>, wenn du als Läufer Struktur willst und nichts bezahlen möchtest. Geführte Läufe und kostenlose adaptive Trainingspläne haben zu diesem Preis kein echtes Gegenstück.",
+          "<strong>Wähle Strava</strong>, wenn du neben dem Laufen Rad fährst, eine Garmin oder Ähnliches besitzt, dir Segmente wichtig sind oder dein Training sozial sein soll. Geh davon aus, dass du am Ende ein Abo abschließt, denn die Gratisversion ist bewusst dünn.",
+          "<strong>Nutze beide</strong>, wenn du als Läufer auch die soziale Seite willst — mit Nike Run Club aufzeichnen, zu Strava synchronisieren. Das machen sehr viele so, und es kostet nichts.",
+          "Wenn dein Lauf mit dem verbunden sein soll, was du isst und trinkst, kann das keine der beiden. Das ist eine Ernährungs- und Trinkfrage, keine Lauf-App-Frage."
+        ]
+      },
+      "cta": {
+        "head": "Soll dein Lauf den Rest deines Tages verändern?",
+        "sub": "Suu zeichnet GPS-Workouts auf und verbindet sie mit Kalorien und Flüssigkeit — kostenlos für iOS und Android",
+        "button": "So macht es Suu"
+      },
+      "faq": [
+        {
+          "q": "Ist Strava oder Nike Run Club besser?",
+          "a": "Sie sind für unterschiedliche Läufer gebaut. Nike Run Club ist besser, wenn du kostenloses Coaching, geführte Läufe und strukturierte Trainingspläne willst und nur läufst. Strava ist besser, wenn du auch Rad fährst, Segmente und Bestenlisten willst, eine Garmin oder ein ähnliches Gerät nutzt oder einen sozialen Feed möchtest — die besten Funktionen erfordern aber ein Abo."
+        },
+        {
+          "q": "Ist Nike Run Club komplett kostenlos?",
+          "a": "Ja. Geführte Läufe, Audio-Coaching und adaptive Trainingspläne sind alle kostenlos enthalten — ungewöhnlich, denn vergleichbare Pläne kosten in den meisten Lauf-Apps Geld. Der Preis dafür: Es deckt nur das Laufen ab und bietet wenig analytische Tiefe."
+        },
+        {
+          "q": "Lohnt sich ein Strava-Abo?",
+          "a": "Das hängt davon ab, was du nutzt. Wenn du Routen planst, ernsthaft Rad fährst oder dir vollständige Segment-Bestenlisten und Fitness-Trendanalysen wichtig sind, findest du das im Abo, und es gilt allgemein als lohnend. Wenn du nur Läufe aufzeichnen und einen Feed deiner Freunde sehen willst, reicht die Gratisversion."
+        },
+        {
+          "q": "Kann man Strava und Nike Run Club zusammen nutzen?",
+          "a": "Ja, und das ist eine verbreitete Kombination. Zeichne den Lauf für das Coaching in Nike Run Club auf und lass die Aktivität zu Strava synchronisieren, damit sie in deinem Feed erscheint und für Segmente und Challenges zählt. In diesem Umfang sind beide kostenlos."
+        },
+        {
+          "q": "Zählen Strava oder Nike Run Club die Kalorien, die du isst?",
+          "a": "Nein. Beide schätzen die bei einer Aktivität verbrannten Kalorien, aber keine erfasst Ernährung oder Flüssigkeit, und keine verrechnet den Verbrauch mit dem, was du gegessen hast. Diese Lücke schließen Leute, indem sie eine der beiden mit einer separaten Ernährungs-App kombinieren — oder eine App nutzen, die alle drei Bereiche abdeckt."
+        }
+      ],
+      "references": [
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6835337/",
+          "label": "Schweißrate und Flüssigkeitsersatz beim Sport (PMC)"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7909433/",
+          "label": "Genauigkeit der Energieverbrauchsschätzungen von Wearables (PMC)"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/de/beste-workout-tracker-app.html",
+          "title": "Die beste Workout-Tracking-App 2026",
+          "desc": "Strava, Komoot, adidas Running, Nike Run Club und Suu — verglichen an dem, was nach dem Antippen von…"
+        },
+        {
+          "href": "/blog/de/kalorienverbrauch-beim-sport.html",
+          "title": "Wie viele Kalorien verbrennt Sport?",
+          "desc": "Persönliche Kalorienrechnung mit der MET-Formel, eine Aktivitätstabelle und automatisches Tracking."
+        },
+        {
+          "href": "/blog/de/gehen-oder-laufen-abnehmen.html",
+          "title": "Gehen oder Laufen zum Abnehmen?",
+          "desc": "Kalorien in gleicher Zeit und auf gleicher Strecke, ob der Nachbrenneffekt echt ist, Appetit und…"
+        },
+        {
+          "href": "/blog/de/wasser-kalorien-sport-eine-app.html",
+          "title": "Wasser, Kalorien und Sport in einer App",
+          "desc": "Was es konkret ändert, wenn die drei miteinander rechnen statt nebeneinander zu laufen."
+        }
+      ],
+      "published": "2026-10-15"
+    },
+    "it": {
+      "slug": "strava-vs-nike-run-club",
+      "published_display": "15 ottobre 2026",
+      "read_minutes": 7,
+      "badge": "🏃 Testa a testa",
+      "h1": "Strava vs Nike Run Club: con quale app di corsa dovresti correre?",
+      "meta": {
+        "title": "Strava vs Nike Run Club (2026) — Coaching gratuito o analisi approfondite? | Suu",
+        "description": "Nike Run Club è gratis e ti allena; Strava è social, multisport e analitica, ma tiene le funzioni migliori dietro un abbonamento. Le confrontiamo su GPS, piani di allenamento, ciclismo e prezzo.",
+        "keywords": "strava vs nike run club, nike run club o strava, migliore app di corsa gratis, alternativa a strava, nike run club recensione 2026, abbonamento strava conviene, app di corsa con piano di allenamento",
+        "og_title": "Strava vs Nike Run Club",
+        "og_description": "Un coach di corsa gratuito o una piattaforma social di analisi multisport. In realtà non si contendono lo stesso runner."
+      },
+      "answer": "Nike Run Club è l'app migliore se sei un runner che vuole struttura e non vuole pagare: corse guidate, coaching audio e piani di allenamento sono gratuiti e l'esperienza di corsa è curata. Strava è l'app migliore se oltre a correre vai in bici, ti interessano segmenti e classifiche o vuoi il tuo allenamento in un feed social, ma le analisi più approfondite e gli strumenti per i percorsi sono dietro un abbonamento. Molti usano entrambe: Nike Run Club per registrare e allenarsi, Strava per condividere e analizzare.",
+      "disclosure": "Questo confronto è pubblicato dal team di Suu, e Suu è un'app concorrente nella più ampia categoria delle app di monitoraggio. Nessuna delle due app qui sotto viene confrontata con Suu: questa pagina parla di quale delle due fa più per te. Funzioni e contenuti degli abbonamenti riflettono le informazioni pubbliche aggiornate ad agosto 2026 e cambiano spesso.",
+      "intro": [
+        "Queste due vengono confrontate di continuo, ma in realtà non sono pensate per la stessa persona. Nike Run Club è un'app di corsa con un coach al suo interno. Strava è un social network e una piattaforma di analisi che, tra l'altro, registra le attività.",
+        "Questa distinzione spiega la maggior parte delle differenze qui sotto, compreso il fatto curioso che moltissime persone usano entrambe contemporaneamente, e che farlo è una risposta del tutto sensata.",
+        "La domanda giusta non è quale sia migliore, ma quale delle due cose ti manca: <strong>struttura</strong> o <strong>contesto</strong>."
+      ],
+      "table": {
+        "head": "Strava vs Nike Run Club",
+        "caption": "Confronto delle funzioni di Strava e Nike Run Club",
+        "col_feature": "Funzione",
+        "columns": [
+          "Strava",
+          "Nike Run Club"
+        ],
+        "suu_col": -1,
+        "rows": [
+          {
+            "label": "Prezzo",
+            "cells": [
+              {
+                "text": "Versione gratuita + abbonamento",
+                "cls": "soon"
+              },
+              {
+                "text": "✓ Gratis",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Registrazione GPS della corsa",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Supporto per il ciclismo",
+            "cells": [
+              {
+                "text": "✓ Il più completo della categoria",
+                "cls": "yes"
+              },
+              {
+                "text": "✗ Solo corsa",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Altri sport",
+            "cells": [
+              {
+                "text": "✓ Oltre 30 tipi di attività",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Corse guidate / coaching audio",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓ La sua funzione migliore",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Piani di allenamento",
+            "cells": [
+              {
+                "text": "Abbonamento",
+                "cls": "soon"
+              },
+              {
+                "text": "✓ Gratis, adattivi",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Segmenti e classifiche",
+            "cells": [
+              {
+                "text": "✓ Esclusivi di Strava",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Feed social e club",
+            "cells": [
+              {
+                "text": "✓ L'attrattiva principale",
+                "cls": "yes"
+              },
+              {
+                "text": "Sfide di base",
+                "cls": "soon"
+              }
+            ]
+          },
+          {
+            "label": "Pianificazione dei percorsi",
+            "cells": [
+              {
+                "text": "Abbonamento",
+                "cls": "soon"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Analisi avanzate (forma fisica, potenza)",
+            "cells": [
+              {
+                "text": "Abbonamento",
+                "cls": "soon"
+              },
+              {
+                "text": "Di base",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Zone di frequenza cardiaca",
+            "cells": [
+              {
+                "text": "Abbonamento",
+                "cls": "soon"
+              },
+              {
+                "text": "✓ Con un dispositivo associato",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Compatibile con Garmin, Coros, Polar",
+            "cells": [
+              {
+                "text": "✓ Il più ampio supporto dispositivi",
+                "cls": "yes"
+              },
+              {
+                "text": "Limitato",
+                "cls": "soon"
+              }
+            ]
+          },
+          {
+            "label": "App per Apple Watch",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Calorie assunte / diario alimentare",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Monitoraggio dell'idratazione",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          }
+        ]
+      },
+      "analysis": [
+        {
+          "head": "Nike Run Club è il miglior coach gratuito della corsa",
+          "body": [
+            "Le corse guidate sono il motivo per installarla, e sono davvero insolite: un vero coach che ti accompagna in una seduta specifica, spiegandoti il ritmo e il perché mentre corri. Per chi inizia, o per chi non ha mai seguito un piano strutturato, vale più di qualsiasi analisi dopo la corsa.",
+            "Anche i piani di allenamento adattivi sono gratuiti, cosa notevole visto che piani simili sono a pagamento quasi ovunque. Se il tuo problema è che esci e corri ogni volta gli stessi cinque chilometri a ritmo medio-duro, Nike Run Club lo risolve gratis.",
+            "I limiti sono altrettanto chiari. C'è solo la corsa: niente bici, palestra o nuoto. Il supporto per dispositivi diversi da Apple Watch è scarso. E non c'è profondità per chi vuole analizzare a fondo i propri dati."
+          ]
+        },
+        {
+          "head": "Strava è il posto migliore in cui far vivere i tuoi allenamenti",
+          "body": [
+            "L'intuizione di base di Strava è che registrare un'attività è la parte noiosa, mentre confrontarla è quella interessante. I segmenti trasformano qualsiasi tratto di strada o sentiero in una cronometro ripetibile con classifica; il feed rende visibile agli amici il tuo allenamento in solitaria; i club lo trasformano in un gruppo.",
+            "È anche davvero multisport, con un supporto per il ciclismo molto più profondo di qualsiasi cosa offra Nike, e accetta dati praticamente da ogni orologio e ciclocomputer sul mercato. Se hai un Garmin o un Coros, quei file finiscono su Strava.",
+            "Il problema è l'abbonamento. Pianificazione dei percorsi, gran parte delle analisi significative, confronti tra corse sullo stesso tracciato e classifiche complete dei segmenti sono passati negli anni dietro l'abbonamento. La versione gratuita registra le attività e mostra un feed; le parti di Strava che le persone descrivono quando la consigliano sono in gran parte a pagamento."
+          ],
+          "callout": "La combinazione più diffusa non è un compromesso: registra e allenati con Nike Run Club, poi lascia che si sincronizzi con Strava per il feed social e i segmenti. A questo livello sono entrambe gratuite."
+        },
+        {
+          "head": "Cosa non fa nessuna delle due",
+          "body": [
+            "Entrambe le app si fermano alla fine dell'allenamento. Ti dicono che hai bruciato circa 600 calorie, e poi quel numero non va da nessuna parte: non viene confrontato con ciò che hai mangiato, e i liquidi in più che hai perso non vengono contati da nessuna parte.",
+            "Per un ciclista agonista con un'app nutrizionale separata e un coach, questa separazione va bene, anzi è preferibile. Per chi ha come obiettivo il peso o la salute in generale, più che la prestazione, significa usare due o tre app che non comunicano tra loro e fare i conti a mano.",
+            "Vale la pena saperlo prima di costruire una routine attorno a una delle due. Nessuna delle due cerca di essere il tuo quadro completo della salute, e nessuna finge di esserlo."
+          ]
+        }
+      ],
+      "verdict": {
+        "head": "Verdetto",
+        "body": [
+          "<strong>Scegli Nike Run Club</strong> se sei un runner che vuole struttura e non vuole pagare. Le corse guidate e i piani di allenamento adattivi gratuiti non hanno un vero equivalente a quel prezzo.",
+          "<strong>Scegli Strava</strong> se oltre a correre vai in bici, hai un Garmin o simili, ti interessano i segmenti o vuoi che il tuo allenamento sia social. Metti in conto che finirai per abbonarti, perché la versione gratuita è volutamente essenziale.",
+          "<strong>Usale entrambe</strong> se sei un runner che vuole anche il lato social: registra con Nike Run Club, sincronizza con Strava. È quello che fanno moltissime persone e non costa nulla.",
+          "Se vuoi che la corsa si colleghi a ciò che mangi e bevi, nessuna delle due lo fa. È una questione di alimentazione e idratazione, non di app di corsa."
+        ]
+      },
+      "cta": {
+        "head": "Vuoi che la corsa cambi il resto della tua giornata?",
+        "sub": "Suu registra gli allenamenti GPS e li collega a calorie e idratazione: gratis su iOS e Android",
+        "button": "Scopri come lo fa Suu"
+      },
+      "faq": [
+        {
+          "q": "È meglio Strava o Nike Run Club?",
+          "a": "Sono pensate per runner diversi. Nike Run Club è migliore se vuoi coaching gratuito, corse guidate e piani di allenamento strutturati e corri soltanto. Strava è migliore se vai anche in bici, vuoi segmenti e classifiche, usi un Garmin o un dispositivo simile o vuoi un feed social, ma le sue funzioni migliori richiedono un abbonamento."
+        },
+        {
+          "q": "Nike Run Club è completamente gratuita?",
+          "a": "Sì. Corse guidate, coaching audio e piani di allenamento adattivi sono tutti inclusi gratis, cosa insolita: piani simili sono a pagamento nella maggior parte delle app di corsa. In cambio copre solo la corsa e offre una profondità di analisi limitata."
+        },
+        {
+          "q": "L'abbonamento a Strava conviene?",
+          "a": "Dipende da cosa usi. Se pianifichi percorsi, vai in bici seriamente o ti interessano le classifiche complete dei segmenti e le analisi dell'andamento della forma, è nell'abbonamento che si trovano ed è generalmente considerato utile. Se vuoi solo registrare le corse e vedere un feed di amici, la versione gratuita basta."
+        },
+        {
+          "q": "Si possono usare Strava e Nike Run Club insieme?",
+          "a": "Sì, ed è una combinazione diffusa. Registra la corsa su Nike Run Club per il coaching e lascia che l'attività si sincronizzi con Strava, così compare nel tuo feed e conta per segmenti e sfide. A questo livello di utilizzo sono entrambe gratuite."
+        },
+        {
+          "q": "Strava o Nike Run Club contano le calorie che mangi?",
+          "a": "No. Entrambe stimano le calorie bruciate durante un'attività, ma nessuna registra cibo o idratazione, e nessuna confronta il consumo con ciò che hai mangiato. Per colmare questo vuoto si abbina una delle due a un'app nutrizionale separata, oppure si usa un'unica app che fa tutte e tre le cose."
+        }
+      ],
+      "references": [
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6835337/",
+          "label": "Tasso di sudorazione e reintegro dei liquidi durante l'esercizio (PMC)"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7909433/",
+          "label": "Accuratezza delle stime del dispendio energetico dei dispositivi indossabili (PMC)"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/it/migliore-app-allenamento.html",
+          "title": "La migliore app per allenamento del 2026",
+          "desc": "Strava, Nike Run Club, adidas Running, Apple Fitness e Suu — confrontate su cosa succede dopo che premi…"
+        },
+        {
+          "href": "/blog/it/calorie-bruciate-allenamento.html",
+          "title": "Quante Calorie Brucia l'Allenamento?",
+          "desc": "Calcolo personale con la formula MET, tabella attività e tracciamento automatico."
+        },
+        {
+          "href": "/blog/it/camminare-o-correre-per-dimagrire.html",
+          "title": "Camminare o correre per dimagrire?",
+          "desc": "Calorie a parità di tempo e di distanza, se l'«afterburn» esiste davvero, appetito e rischio di…"
+        },
+        {
+          "href": "/blog/it/acqua-calorie-allenamento-una-app.html",
+          "title": "Acqua, calorie e allenamento in un'unica app",
+          "desc": "Cosa cambia quando i tre si parlano invece di correre in parallelo."
+        }
+      ],
+      "published": "2026-10-15"
+    },
+    "uk": {
+      "slug": "strava-vs-nike-run-club",
+      "published_display": "15 жовтня 2026",
+      "read_minutes": 7,
+      "badge": "🏃 Віч-на-віч",
+      "h1": "Strava vs Nike Run Club: з яким застосунком бігати?",
+      "meta": {
+        "title": "Strava vs Nike Run Club (2026) — безкоштовний тренер чи глибока аналітика? | Suu",
+        "description": "Nike Run Club безкоштовний і тренує тебе; Strava — соціальна, мультиспортивна й аналітична, але найкращі функції ховає за підпискою. Порівнюємо їх за GPS, планами тренувань, велоспортом і ціною.",
+        "keywords": "strava vs nike run club, nike run club чи strava, найкращий безкоштовний застосунок для бігу, альтернатива strava, nike run club огляд 2026, чи варта підписка strava, застосунок для бігу з планом тренувань",
+        "og_title": "Strava vs Nike Run Club",
+        "og_description": "Безкоштовний тренер з бігу чи соціальна мультиспортивна платформа аналітики. Насправді вони змагаються не за одного й того самого бігуна."
+      },
+      "answer": "Nike Run Club кращий, якщо ти бігун, якому потрібна структура і не хочеться платити: керовані пробіжки, аудіотренер і плани тренувань безкоштовні, а сам біг продуманий до дрібниць. Strava краща, якщо ти не лише бігаєш, а й катаєшся на велосипеді, тобі важливі сегменти й рейтинги або хочеш бачити тренування в соціальній стрічці — але глибока аналітика й інструменти маршрутів сховані за підпискою. Багато хто користується обома: Nike Run Club — щоб записати пробіжку й отримати тренерські підказки, Strava — щоб поділитися й проаналізувати.",
+      "disclosure": "Це порівняння опубліковане командою Suu, а Suu — конкурентний застосунок у ширшій категорії трекерів. Жоден із двох застосунків нижче не порівнюється з Suu — ця сторінка про те, який із них підходить тобі більше. Функції та склад підписок відображають загальнодоступну інформацію станом на серпень 2026 року й часто змінюються.",
+      "intro": [
+        "Їх постійно порівнюють, але насправді вони створені не для однієї й тієї самої людини. Nike Run Club — застосунок для бігу з тренером усередині. Strava — соціальна мережа й аналітична платформа, яка заодно записує активності.",
+        "Ця різниця пояснює більшість відмінностей нижче — зокрема й дивний факт, що дуже багато людей користуються обома водночас, і це цілком розумна відповідь.",
+        "Варто питати не про те, що краще, а про те, чого тобі бракує: <strong>структури</strong> чи <strong>контексту</strong>."
+      ],
+      "table": {
+        "head": "Strava vs Nike Run Club",
+        "caption": "Порівняння функцій Strava і Nike Run Club",
+        "col_feature": "Функція",
+        "columns": [
+          "Strava",
+          "Nike Run Club"
+        ],
+        "suu_col": -1,
+        "rows": [
+          {
+            "label": "Ціна",
+            "cells": [
+              {
+                "text": "Безкоштовна версія + підписка",
+                "cls": "soon"
+              },
+              {
+                "text": "✓ Безкоштовно",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Запис пробіжки з GPS",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Підтримка велоспорту",
+            "cells": [
+              {
+                "text": "✓ Найглибша в категорії",
+                "cls": "yes"
+              },
+              {
+                "text": "✗ Лише біг",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Інші види спорту",
+            "cells": [
+              {
+                "text": "✓ 30+ видів активності",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Керовані пробіжки / аудіотренер",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Найкраща функція",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Плани тренувань",
+            "cells": [
+              {
+                "text": "Підписка",
+                "cls": "soon"
+              },
+              {
+                "text": "✓ Безкоштовно, адаптивні",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Сегменти й рейтинги",
+            "cells": [
+              {
+                "text": "✓ Лише в Strava",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Соціальна стрічка й клуби",
+            "cells": [
+              {
+                "text": "✓ Головна принада",
+                "cls": "yes"
+              },
+              {
+                "text": "Прості челенджі",
+                "cls": "soon"
+              }
+            ]
+          },
+          {
+            "label": "Планування маршрутів",
+            "cells": [
+              {
+                "text": "Підписка",
+                "cls": "soon"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Розширена аналітика (форма, потужність)",
+            "cells": [
+              {
+                "text": "Підписка",
+                "cls": "soon"
+              },
+              {
+                "text": "Базова",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Пульсові зони",
+            "cells": [
+              {
+                "text": "Підписка",
+                "cls": "soon"
+              },
+              {
+                "text": "✓ З підключеним пристроєм",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Робота з Garmin, Coros, Polar",
+            "cells": [
+              {
+                "text": "✓ Найширша підтримка пристроїв",
+                "cls": "yes"
+              },
+              {
+                "text": "Обмежено",
+                "cls": "soon"
+              }
+            ]
+          },
+          {
+            "label": "Застосунок для Apple Watch",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Облік з'їдених калорій / харчування",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Облік води",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          }
+        ]
+      },
+      "analysis": [
+        {
+          "head": "Nike Run Club — найкращий безкоштовний тренер з бігу",
+          "body": [
+            "Керовані пробіжки — причина встановити застосунок, і вони справді незвичні: справжній тренер веде тебе через конкретне тренування, пояснюючи темп і сенс просто під час бігу. Для новачка чи того, хто ніколи не дотримувався структурованого плану, це цінніше за будь-яку аналітику після пробіжки.",
+            "Адаптивні плани тренувань теж безкоштовні, що примітно: подібні плани майже всюди платні. Якщо твоя проблема в тому, що ти щоразу біжиш ті самі п'ять кілометрів у середньо-важкому темпі, Nike Run Club розв'язує її безкоштовно.",
+            "Обмеження так само очевидні. Лише біг — ні велосипеда, ні залу, ні плавання. Підтримка пристроїв, окрім Apple Watch, слабка. І глибини немає для тих, хто хоче розбиратися у власних даних."
+          ]
+        },
+        {
+          "head": "Strava — найкраще місце для твого тренувального життя",
+          "body": [
+            "Головна ідея Strava: записати активність — нудна частина, а порівняти її — цікава. Сегменти перетворюють будь-яку ділянку дороги чи стежки на повторювану гонку на час із рейтингом; стрічка робить одиночне тренування видимим для друзів, а клуби — груповим.",
+            "До того ж Strava справді мультиспортивна: підтримка велоспорту значно глибша за все, що пропонує Nike, і вона приймає дані практично з будь-яких годинників і велокомп'ютерів на ринку. Якщо в тебе Garmin чи Coros, файли йдуть саме в Strava.",
+            "Підступ — підписка. Планування маршрутів, більша частина змістовної аналітики, порівняння пробіжок одним маршрутом і повні рейтинги сегментів за роки переїхали за платну стіну. Безкоштовна версія записує активності й показує стрічку; те, що люди описують, коли радять Strava, здебільшого платне."
+          ],
+          "callout": "Поширена схема — не компроміс: записуй і тренуйся з Nike Run Club, а потім синхронізуй у Strava заради стрічки й сегментів. На цьому рівні обидва безкоштовні."
+        },
+        {
+          "head": "Чого не робить жоден із них",
+          "body": [
+            "Обидва застосунки закінчуються разом із тренуванням. Вони повідомляють, що ти спалив приблизно 600 калорій, і далі це число нікуди не йде — його не зіставляють із тим, що ти з'їв, а втрачену додаткову рідину взагалі ніде не враховують.",
+            "Для велосипедиста-змагальника з окремим застосунком для харчування й тренером такий поділ нормальний і навіть бажаний. А для того, чия мета — вага чи загальне здоров'я, а не результат, це означає два-три застосунки, які не спілкуються між собою, і ручні підрахунки між ними.",
+            "Це варто знати, перш ніж будувати розпорядок навколо одного з них. Жоден не намагається бути повною картиною твого здоров'я і не вдає, що є нею."
+          ]
+        }
+      ],
+      "verdict": {
+        "head": "Висновок",
+        "body": [
+          "<strong>Обирай Nike Run Club</strong>, якщо ти бігун, якому потрібна структура і не хочеться платити. Керованим пробіжкам і безкоштовним адаптивним планам немає справжнього аналога за такою ціною.",
+          "<strong>Обирай Strava</strong>, якщо ти не лише бігаєш, а й катаєшся, маєш Garmin чи схожий пристрій, тобі важливі сегменти або хочеш, щоб тренування були соціальними. Будь готовий зрештою оформити підписку: безкоштовна версія навмисно урізана.",
+          "<strong>Користуйся обома</strong>, якщо ти бігун, якому потрібна й соціальна складова: записуй у Nike Run Club, синхронізуй у Strava. Так роблять дуже багато людей, і це нічого не коштує.",
+          "Якщо хочеш, щоб пробіжка була пов'язана з тим, що ти їси й п'єш, жоден із застосунків цього не робить. Це питання харчування й питного режиму, а не вибору застосунку для бігу."
+        ]
+      },
+      "cta": {
+        "head": "Хочеш, щоб пробіжка змінювала весь твій день?",
+        "sub": "Suu записує GPS-тренування й пов'язує їх із калоріями та водою — безкоштовно на iOS і Android",
+        "button": "Подивитися, як це робить Suu"
+      },
+      "faq": [
+        {
+          "q": "Що краще: Strava чи Nike Run Club?",
+          "a": "Вони створені для різних бігунів. Nike Run Club кращий, якщо тобі потрібні безкоштовний тренер, керовані пробіжки та структуровані плани і ти лише бігаєш. Strava краща, якщо ти ще й катаєшся, хочеш сегменти й рейтинги, користуєшся Garmin чи схожим пристроєм або хочеш соціальну стрічку — але найкращі функції потребують підписки."
+        },
+        {
+          "q": "Nike Run Club повністю безкоштовний?",
+          "a": "Так. Керовані пробіжки, аудіотренер і адаптивні плани тренувань включені безкоштовно, що незвично: подібні плани в більшості бігових застосунків платні. Натомість застосунок охоплює лише біг і дає обмежену глибину аналітики."
+        },
+        {
+          "q": "Чи варта підписка Strava своїх грошей?",
+          "a": "Залежить від того, чим ти користуєшся. Якщо плануєш маршрути, серйозно катаєшся або тобі важливі повні рейтинги сегментів і аналітика динаміки форми, усе це в підписці, і її зазвичай вважають виправданою. Якщо потрібно лише записувати пробіжки й бачити стрічку друзів, безкоштовної версії досить."
+        },
+        {
+          "q": "Чи можна користуватися Strava і Nike Run Club разом?",
+          "a": "Так, це поширена схема. Записуй пробіжку в Nike Run Club заради тренерських підказок, а активність хай синхронізується в Strava, щоб з'явитися в стрічці й зарахуватися в сегментах і челенджах. На такому рівні використання обидва безкоштовні."
+        },
+        {
+          "q": "Чи рахують Strava або Nike Run Club з'їдені калорії?",
+          "a": "Ні. Обидва оцінюють калорії, спалені під час активності, але жоден не враховує харчування чи воду й не зіставляє витрату з тим, що ти з'їв. Цей розрив закривають, поєднуючи один із них з окремим застосунком для харчування — або користуючись одним застосунком, що об'єднує всі три завдання."
+        }
+      ],
+      "references": [
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6835337/",
+          "label": "Швидкість потовиділення та відновлення рідини під час навантаження (PMC)"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7909433/",
+          "label": "Точність оцінок енерговитрат носимих пристроїв (PMC)"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/uk/najkrashchyj-zastosunok-dlya-trenuvan.html",
+          "title": "Найкращий застосунок для тренувань у 2026",
+          "desc": "Strava, Nike Run Club, adidas Running, Apple Fitness і Suu — за тим, що відбувається після натискання…"
+        },
+        {
+          "href": "/blog/uk/spalyuvannya-kaloriy-pid-chas-trenuvannya.html",
+          "title": "Скільки калорій спалює тренування?",
+          "desc": "Персональний розрахунок за формулою MET, таблиця активностей і автоматичний облік."
+        },
+        {
+          "href": "/blog/uk/khodba-chy-bih.html",
+          "title": "Ходьба чи біг для схуднення?",
+          "desc": "Калорії за той самий час і на ту саму дистанцію, чи реальний «допал» після бігу, апетит і ризик травм …"
+        },
+        {
+          "href": "/blog/uk/voda-kalorii-trenuvannya-odyn-zastosunok.html",
+          "title": "Вода, калорії та тренування в одному застосунку",
+          "desc": "Що змінюється, коли три речі рахують разом, а не паралельно."
+        }
+      ],
+      "published": "2026-10-15"
     }
   }
 }

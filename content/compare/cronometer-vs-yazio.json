@@ -1,15 +1,339 @@
 {
   "_note": "RAKİP-vs-RAKİP — 3. fırsat. Search Console: 'cronometer vs yazio' 51 + 'yazio vs cronometer' 29 = 80 gösterim, 1 tıklama. Her iki yazım hedefleniyor.",
   "published": "2026-08-13",
-
   "pages": {
+    "tr": {
+      "slug": "cronometer-vs-yazio",
+      "published_display": "15 Ekim 2026",
+      "read_minutes": 7,
+      "badge": "⚖️ Kafa kafaya 2026",
+      "h1": "Cronometer vs Yazio: Hassasiyet mi, Pratiklik mi?",
+      "meta": {
+        "title": "Cronometer vs Yazio (2026) — Hangisini Kullanmalısın? | Suu",
+        "description": "Yazio ve Cronometer'ı mikro besin derinliği, veri doğruluğu, tarifler, ücretsiz sürüm ve günlük kullanım kolaylığı açısından karşılaştırdık. Hangisi hassas takip yapanlara, hangisi günlük kayda uygun?",
+        "keywords": "cronometer vs yazio, yazio vs cronometer, cronometer mı yazio mu, cronometer inceleme 2026, yazio inceleme 2026, mikro besin takip uygulaması, en iyi makro takip karşılaştırma, kalori uygulaması karşılaştırma",
+        "og_title": "Cronometer vs Yazio: Hassasiyet mi, Pratiklik mi?",
+        "og_description": "Cronometer'ın doğrulanmış mikro besin verisi ile Yazio'nun tarifleri ve günlük kullanım kolaylığı — dürüst bir yan yana karşılaştırma."
+      },
+      "answer": "Cronometer daha doğru uygulama: veritabanı kitle kaynaklı değil, derlenmiş; ve Yazio'nun hiç göstermediği 80'den fazla mikro besini takip ediyor. Yazio ise günlük kullanım için daha pratik; tarifleri ve diyet planları daha güçlü, arayüzü daha dostça. Vitamin ve mineralleri bilinçli olarak takip ediyorsan Cronometer'ı; ekstra ayrıntılar seni yavaşlatmadan öğünlerini düzenli kaydetmek istiyorsan Yazio'yu seç.",
+      "disclosure": "Bu karşılaştırma, rakip bir uygulama yapan Suu tarafından yayımlanıyor. Aşağıdaki Cronometer ve Yazio bölümlerinde Suu tanıtımı yok; kendi uygulamamız yalnızca sonda, ayrılmış ve atlayabileceğin bir bölümde geçiyor. Ayrıntılar Ağustos 2026 itibarıyla kamuya açık bilgilere dayanır.",
+      "intro": [
+        "Bu iki uygulama çok farklı insanları çekiyor; karşılaştırmanın ilk bakışta göründüğünden daha faydalı olmasının sebebi de bu.",
+        "Cronometer itibarını <strong>veri kalitesi</strong> üzerine kurdu — kitle kaynaklı tahminler yerine USDA ve NCCDB gibi doğrulanmış kaynaklardan derlenmiş kayıtlar ve kalori ile makroların çok ötesine geçen mikro besin takibi. Yazio ise itibarını <strong>günlük kullanım kolaylığı</strong> üzerine kurdu — tarifler, planlar ve göz korkutmayan bir arayüz.",
+        "İki yaklaşım da yanlış değil. Farklı başarısızlık türlerine karşı optimize ediliyorlar: hatalı veri ile bırakılan takip."
+      ],
+      "table": {
+        "head": "Cronometer vs Yazio",
+        "caption": "Cronometer ve Yazio özellik karşılaştırması",
+        "col_feature": "Özellik",
+        "columns": [
+          "Cronometer",
+          "Yazio"
+        ],
+        "suu_col": -1,
+        "rows": [
+          {
+            "label": "Kalori ve makro kaydı",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Mikro besin takibi (vitamin/mineral)",
+            "cells": [
+              {
+                "text": "✓ 80+, sınıfının en iyisi",
+                "cls": "yes"
+              },
+              {
+                "text": "Sınırlı",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Veritabanı derleme / doğruluk",
+            "cells": [
+              {
+                "text": "✓ Doğrulanmış kaynaklar",
+                "cls": "yes"
+              },
+              {
+                "text": "Karışık",
+                "cls": ""
+              }
+            ]
+          },
+          {
+            "label": "Veritabanı genişliği (markalı ürünler)",
+            "cells": [
+              {
+                "text": "Daha küçük",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Büyük",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Ücretsiz planda barkod tarayıcı",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Tarif kütüphanesi",
+            "cells": [
+              {
+                "text": "Minimal",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Güçlü",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Yapılandırılmış diyet planları",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Arayüz dostluğu",
+            "cells": [
+              {
+                "text": "Yoğun, önce veri",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Daha sade",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Ücretsiz sürümün derinliği",
+            "cells": [
+              {
+                "text": "✓ Çok cömert",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Kullanışlı",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Oruç takibi",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Biyometrik / tahlil verisi kaydı",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Uygulama içi egzersiz takibi",
+            "cells": [
+              {
+                "text": "Temel",
+                "cls": "no"
+              },
+              {
+                "text": "Temel",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Su modeli (içeceğe göre)",
+            "cells": [
+              {
+                "text": "Basit sayaç",
+                "cls": "no"
+              },
+              {
+                "text": "Basit sayaç",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Antrenman su hedefini güncelliyor mu?",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          }
+        ]
+      },
+      "analysis": [
+        {
+          "head": "Doğrulukta Cronometer kazanıyor, hem de açık farkla",
+          "body": [
+            "Çoğu kalori uygulaması kullanıcıların kayıt eklemesine izin veriyor; devasa veritabanı boyutlarına böyle ulaşıyorlar — ve yanlış sayıları da böyle biriktiriyorlar. Cronometer ise derliyor, doğrulanmış besin veritabanlarından yararlanıyor. Cronometer sana bir yiyeceğin 12 g protein içerdiğini söylediğinde, bu sayının doğru olma ihtimali çok daha yüksek.",
+            "Üstelik 80'den fazla mikro besini takip ediyor. Demiri, B12'yi, magnezyumu ya da sodyumu bilinçli olarak yönetiyorsan — tıbbi bir nedenle, kısıtlayıcı bir diyetle ya da ciddi antrenmanla — yaygın rakiplerin hiçbiri yaklaşamıyor.",
+            "Biyometrik verileri ve tahlil sonuçlarını da kaydediyor; bu da bir diyetisyen ya da hekimle çalışıyorsan onu doğal seçim yapıyor."
+          ]
+        },
+        {
+          "head": "Kullanmaya devam etme ihtimalinde Yazio kazanıyor",
+          "body": [
+            "Cronometer'ın yoğunluğu, bazılarının tam olarak istediği ve bazılarının tam olarak bu yüzden bıraktığı şey. Yazio senden daha azını istiyor: öğünü kaydet, kaloriyi ve makroları gör, bir tarif önerisi al, devam et.",
+            "Tarif kütüphanesi ve diyet planları, Cronometer'ın hiç denemediği bir sorunu da çözüyor. Cronometer sana tam olarak ne yediğini söylüyor; Yazio ise bir sonraki öğünde ne yiyeceğine karar vermene yardım ediyor.",
+            "Markalı ve paketli ürünlerde Yazio'nun veritabanı ikisi arasında daha geniş olanı — Cronometer'ın derleme yaklaşımı daha az kayıt demek."
+          ],
+          "callout": "<strong>Dürüst takas:</strong> Cronometer her kaydın doğruluğunu optimize ediyor. Yazio ise gerçekten yapacağın kayıt sayısını. İkisi de önemli; hangisinin daha önemli olduğu, riskinin kötü veri mi yoksa bırakılmış bir kayıt defteri mi olduğuna bağlı."
+        },
+        {
+          "head": "Kim hangisini seçmeli?",
+          "body": [
+            "Bazı net durumlar:"
+          ],
+          "list": [
+            "<strong>Cronometer'ı seç</strong>: belirli mikro besinleri izlemek için tıbbi bir nedenin varsa, eksikliklerin gerçek bir risk olduğu kısıtlayıcı bir diyet (vegan, keto, düşük FODMAP) uyguluyorsan ya da alımını hassas biçimde yöneten bir sporcuysan.",
+            "<strong>Yazio'yu seç</strong>: bu senin ilk ciddi takip denemense, yemek yapıyor ve öğün fikirleri istiyorsan ya da yoğun arayüzlerin seni bıraktırdığını deneyimle biliyorsan.",
+            "<strong>İkisi de olur</strong>: yalnızca kaloriyi ve üç makroyu önemsiyorsan — o noktada hangi arayüzü seviyorsan onu seç, çünkü ikisi de bu işi iyi yapıyor."
+          ]
+        },
+        {
+          "head": "Açıklama: kendi uygulamamızın yeri",
+          "body": [
+            "Bunu biz yayımlıyoruz ve rakip bir uygulama da yapıyoruz; bu bölümü reklam olarak değerlendir — yukarıdaki karar bu bölüm olmadan da geçerli.",
+            "Suu mikro besin derinliğinde Cronometer'la yarışmıyor ve yarışmaya da çalışmıyor. Başka bir boşluğu hedefliyor: su, kalori ve egzersiz tek bir bağlı sistem olarak. Kaydettiğin koşu, tahmini ter kaybından günlük su hedefini yükseltiyor; fotoğrafını çektiğin öğünün kalorisi ve makroları analiz ediliyor, protein ve sodyum içeriği de üstüne sindirim suyu ekliyor; 91 içeceğin her biri gerçek hidrasyon değeriyle katkı yapıyor.",
+            "Suu'nun geride kaldığı yerler: Cronometer'a yakın bir mikro besin derinliği yok, besin veritabanı Yazio'nunkinden küçük, barkod tarayıcısı ve tarif kütüphanesi yok. İhtiyacın doğrulanmış mikro besin verisiyse doğru cevap Cronometer ve aksini iddia etmeyeceğiz."
+          ]
+        }
+      ],
+      "verdict": {
+        "head": "Karar",
+        "body": [
+          "<strong>Cronometer</strong> — daha doğru uygulama ve ikisi arasında mikro besinleri ciddiye alan tek uygulama. Tıbbi, kısıtlayıcı diyet ya da hassas sporcu kullanımı için en iyisi.",
+          "<strong>Yazio</strong> — günlük kayıt için daha pratik uygulama; Cronometer'ın denemediği tarifler ve planlarla. İlk ciddi takip denemesi için en iyisi.",
+          "<strong>İkisi de</strong> suyu bir bardak sayacının ötesinde modellemiyor ve egzersizin günlük hedeflerini değiştirmesine izin vermiyor.",
+          "Karar veremiyorsan: alışkanlığı oturtmak için bir ay Yazio ile başla, daha derin sayılar istediğini fark edersen sonra Cronometer'a geç. Önce alışkanlık, sonra hassasiyet."
+        ]
+      },
+      "cta": {
+        "head": "Kalori, egzersiz ve su birbirine bağlı olsun mu?",
+        "sub": "İndirmesi ücretsiz · Premium 3 gün ücretsiz",
+        "button": "Suu'nun nasıl yaptığını gör"
+      },
+      "faq": [
+        {
+          "q": "Cronometer, Yazio'dan daha mı iyi?",
+          "a": "Doğruluk açısından evet — Cronometer'ın veritabanı kitle kaynaklı değil, doğrulanmış kaynaklardan derleniyor ve Yazio'nun göstermediği 80'den fazla mikro besini takip ediyor. Günlük pratiklik açısından ise Yazio daha iyi: daha sade arayüz, daha güçlü tarifler ve diyet planları ve markalı ürünlerde daha geniş bir veritabanı."
+        },
+        {
+          "q": "Cronometer'ın ücretsiz planı yeterli mi?",
+          "a": "Cronometer'ın ücretsiz sürümü alışılmadık derecede cömert; tam mikro besin takibi ve barkod taraması dahil. Çoğu kullanıcı uzun süre ödeme yapmadan ciddi kayıt tutabilir; Gold esas olarak özel grafikler, daha fazla biyometrik veri ve reklamsız deneyim ekliyor."
+        },
+        {
+          "q": "Hangisi daha doğru, Cronometer mı Yazio mu?",
+          "a": "Cronometer. Kayıtları kullanıcı girişlerinden değil, derlenmiş besin veritabanlarından geliyor; bu da kitle kaynaklı kalori uygulamalarındaki ana hata kaynağını ortadan kaldırıyor. Yazio'nun verisi kalori ve makrolar için yeterli ama mikro besin düzeyinde daha az güvenilir."
+        },
+        {
+          "q": "Yazio vitamin ve mineralleri takip ediyor mu?",
+          "a": "Yalnızca sınırlı biçimde. Mikro besin takibi öncelikse — tıbbi bir nedenle ya da kısıtlayıcı bir diyet yüzünden — uygun araç Cronometer ve Yazio onun yerini tutmuyor."
+        },
+        {
+          "q": "Cronometer ya da Yazio suyu ve egzersizi düzgün takip ediyor mu?",
+          "a": "Hiçbiri. İkisinde de her içeceği aynı sayan basit bir su sayacı ve kalori hakkın dışında hiçbir şeyi etkilemeyen temel bir egzersiz kaydı var. Suu tam da bu boşluk için yapıldı; suyu, kaloriyi ve yaklaşık 50 egzersiz aktivitesini birbirine bağlıyor — ama Cronometer'ın mikro besin derinliği onda yok."
+        }
+      ],
+      "references": [
+        {
+          "href": "https://fdc.nal.usda.gov/",
+          "label": "USDA FoodData Central — referans besin veritabanı"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/",
+          "label": "Beslenmeyi kendi kendine izleme ve kilo yönetimi (PMC)"
+        },
+        {
+          "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459",
+          "label": "EFSA — su için diyet referans değerleri"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/cronometer-vs-lifesum.html",
+          "title": "Cronometer vs Lifesum: Hangi Kalori Uygulaması?",
+          "desc": "Vitamin ve mineral derinliği mi, rehberli ve şık bir deneyim mi? Cronometer ve Lifesum'un dürüst…"
+        },
+        {
+          "href": "/blog/yazio-alternatifleri.html",
+          "title": "Yazio Alternatifleri: Hangisi Sana Uygun? (2026)",
+          "desc": "Yazio'nun güçlü olduğu yerleri kabul ettik, eksik kaldığı yerlerde 5 alternatifi karşılaştırdık: kalori…"
+        },
+        {
+          "href": "/blog/en-iyi-kalori-uygulamasi.html",
+          "title": "En İyi Kalori Sayma Uygulaması 2026: Suu vs MyFitnessPal, Yazio, Lifesum, Cronometer",
+          "desc": "Su, kalori ve egzersizi tek uygulamada takip etmek isteyenler için 2026'nın en iyi beslenme uygulamaları…"
+        },
+        {
+          "href": "/blog/makro-hesaplama.html",
+          "title": "Makro Hesaplama: Protein, Karbonhidrat ve Yağ Nasıl Hesaplanır?",
+          "desc": "Kaloriden makroya adım adım: günlük protein/karbonhidrat/yağ ihtiyacını hesapla, örnekle öğren, yapay…"
+        }
+      ],
+      "published": "2026-10-15"
+    },
     "en": {
       "slug": "cronometer-vs-yazio",
       "published_display": "13 August 2026",
       "read_minutes": 7,
       "badge": "⚖️ Head-to-Head 2026",
       "h1": "Cronometer vs Yazio: Precision or Practicality?",
-
       "meta": {
         "title": "Cronometer vs Yazio (2026) — Which Should You Use? | Suu",
         "description": "Yazio vs Cronometer compared on micronutrient depth, data accuracy, recipes, free tier and daily usability. Which suits precision trackers, which suits everyday logging.",
@@ -17,41 +341,207 @@
         "og_title": "Cronometer vs Yazio: Precision or Practicality?",
         "og_description": "Cronometer's verified micronutrient data against Yazio's recipes and everyday usability — an honest side-by-side."
       },
-
       "answer": "Cronometer is the more accurate app: its database is curated rather than crowd-sourced, and it tracks 80+ micronutrients that Yazio simply does not surface. Yazio is the more practical one for daily use, with stronger recipes, diet plans and a friendlier interface. Choose Cronometer if you track vitamins and minerals deliberately; choose Yazio if you want to log meals consistently without the extra detail slowing you down.",
-
       "disclosure": "This comparison is published by Suu, which makes a competing app. The Cronometer and Yazio sections below contain no Suu marketing; our own app appears only in a separated section at the end that you can skip. Details reflect publicly available information as of August 2026.",
-
       "intro": [
         "These two apps attract very different people, which is why the comparison is more useful than it first looks.",
         "Cronometer built its reputation on <strong>data quality</strong> — curated entries from verified sources like the USDA and NCCDB rather than crowd-sourced guesses, plus micronutrient tracking that goes far past calories and macros. Yazio built its reputation on <strong>everyday usability</strong> — recipes, plans, and an interface that does not intimidate.",
         "Neither approach is wrong. They are optimising for different failure modes: inaccurate data versus abandoned tracking."
       ],
-
       "table": {
         "head": "Cronometer vs Yazio",
         "caption": "Feature comparison between Cronometer and Yazio",
         "col_feature": "Feature",
-        "columns": ["Cronometer", "Yazio"],
+        "columns": [
+          "Cronometer",
+          "Yazio"
+        ],
         "suu_col": -1,
         "rows": [
-          { "label": "Calorie and macro logging", "cells": [{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
-          { "label": "Micronutrient tracking (vitamins/minerals)", "cells": [{"text":"✓ 80+, best in class","cls":"yes"},{"text":"Limited","cls":"no"}] },
-          { "label": "Database curation / accuracy", "cells": [{"text":"✓ Verified sources","cls":"yes"},{"text":"Mixed","cls":""}] },
-          { "label": "Database breadth (branded products)", "cells": [{"text":"Smaller","cls":"no"},{"text":"✓ Large","cls":"yes"}] },
-          { "label": "Barcode scanner on free plan", "cells": [{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
-          { "label": "Recipe library", "cells": [{"text":"Minimal","cls":"no"},{"text":"✓ Strong","cls":"yes"}] },
-          { "label": "Structured diet plans", "cells": [{"text":"✗","cls":"no"},{"text":"✓","cls":"yes"}] },
-          { "label": "Interface friendliness", "cells": [{"text":"Dense, data-first","cls":"no"},{"text":"✓ Cleaner","cls":"yes"}] },
-          { "label": "Free tier depth", "cells": [{"text":"✓ Very generous","cls":"yes"},{"text":"✓ Usable","cls":"yes"}] },
-          { "label": "Fasting tracker", "cells": [{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
-          { "label": "Biometric / lab data logging", "cells": [{"text":"✓","cls":"yes"},{"text":"✗","cls":"no"}] },
-          { "label": "Exercise tracking in-app", "cells": [{"text":"Basic","cls":"no"},{"text":"Basic","cls":"no"}] },
-          { "label": "Hydration modelling (per beverage)", "cells": [{"text":"Simple counter","cls":"no"},{"text":"Simple counter","cls":"no"}] },
-          { "label": "Workout updates hydration goal", "cells": [{"text":"✗","cls":"no"},{"text":"✗","cls":"no"}] }
+          {
+            "label": "Calorie and macro logging",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Micronutrient tracking (vitamins/minerals)",
+            "cells": [
+              {
+                "text": "✓ 80+, best in class",
+                "cls": "yes"
+              },
+              {
+                "text": "Limited",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Database curation / accuracy",
+            "cells": [
+              {
+                "text": "✓ Verified sources",
+                "cls": "yes"
+              },
+              {
+                "text": "Mixed",
+                "cls": ""
+              }
+            ]
+          },
+          {
+            "label": "Database breadth (branded products)",
+            "cells": [
+              {
+                "text": "Smaller",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Large",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Barcode scanner on free plan",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Recipe library",
+            "cells": [
+              {
+                "text": "Minimal",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Strong",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Structured diet plans",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Interface friendliness",
+            "cells": [
+              {
+                "text": "Dense, data-first",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Cleaner",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Free tier depth",
+            "cells": [
+              {
+                "text": "✓ Very generous",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Usable",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Fasting tracker",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Biometric / lab data logging",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Exercise tracking in-app",
+            "cells": [
+              {
+                "text": "Basic",
+                "cls": "no"
+              },
+              {
+                "text": "Basic",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Hydration modelling (per beverage)",
+            "cells": [
+              {
+                "text": "Simple counter",
+                "cls": "no"
+              },
+              {
+                "text": "Simple counter",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Workout updates hydration goal",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          }
         ]
       },
-
       "analysis": [
         {
           "head": "Cronometer wins on accuracy, and it is not close",
@@ -90,7 +580,6 @@
           ]
         }
       ],
-
       "verdict": {
         "head": "Verdict",
         "body": [
@@ -100,38 +589,1699 @@
           "If you cannot decide: start with Yazio for a month to build the habit, and move to Cronometer later if you find yourself wanting the deeper numbers. Habit first, precision second."
         ]
       },
-
       "cta": {
         "head": "Want calories, exercise and hydration connected?",
         "sub": "Free to download · Premium free for 3 days",
         "button": "See how Suu does it"
       },
-
       "faq": [
-        { "q": "Is Cronometer better than Yazio?",
-          "a": "For accuracy, yes — Cronometer's database is curated from verified sources rather than crowd-sourced, and it tracks over 80 micronutrients that Yazio does not surface. For daily practicality, Yazio is better: cleaner interface, stronger recipes and diet plans, and a broader database of branded products." },
-        { "q": "Is Cronometer's free plan good enough?",
-          "a": "Cronometer's free tier is unusually generous, including full micronutrient tracking and barcode scanning. Most users can log seriously for a long time without paying; Gold mainly adds custom charts, more biometrics and an ad-free experience." },
-        { "q": "Which is more accurate, Cronometer or Yazio?",
-          "a": "Cronometer. Its entries come from curated nutritional databases rather than user submissions, which removes the main source of error in crowd-sourced calorie apps. Yazio's data is adequate for calories and macros but less reliable at the micronutrient level." },
-        { "q": "Does Yazio track vitamins and minerals?",
-          "a": "Only in a limited way. If micronutrient tracking is a priority — for a medical reason or a restrictive diet — Cronometer is the appropriate tool and Yazio is not a substitute." },
-        { "q": "Do Cronometer or Yazio track water and exercise properly?",
-          "a": "Neither. Both include a basic water counter that treats every drink the same, and basic exercise logging that does not affect anything beyond your calorie allowance. Suu is built for that specific gap, connecting hydration, calories and around 50 exercise activities — though it lacks Cronometer's micronutrient depth." }
+        {
+          "q": "Is Cronometer better than Yazio?",
+          "a": "For accuracy, yes — Cronometer's database is curated from verified sources rather than crowd-sourced, and it tracks over 80 micronutrients that Yazio does not surface. For daily practicality, Yazio is better: cleaner interface, stronger recipes and diet plans, and a broader database of branded products."
+        },
+        {
+          "q": "Is Cronometer's free plan good enough?",
+          "a": "Cronometer's free tier is unusually generous, including full micronutrient tracking and barcode scanning. Most users can log seriously for a long time without paying; Gold mainly adds custom charts, more biometrics and an ad-free experience."
+        },
+        {
+          "q": "Which is more accurate, Cronometer or Yazio?",
+          "a": "Cronometer. Its entries come from curated nutritional databases rather than user submissions, which removes the main source of error in crowd-sourced calorie apps. Yazio's data is adequate for calories and macros but less reliable at the micronutrient level."
+        },
+        {
+          "q": "Does Yazio track vitamins and minerals?",
+          "a": "Only in a limited way. If micronutrient tracking is a priority — for a medical reason or a restrictive diet — Cronometer is the appropriate tool and Yazio is not a substitute."
+        },
+        {
+          "q": "Do Cronometer or Yazio track water and exercise properly?",
+          "a": "Neither. Both include a basic water counter that treats every drink the same, and basic exercise logging that does not affect anything beyond your calorie allowance. Suu is built for that specific gap, connecting hydration, calories and around 50 exercise activities — though it lacks Cronometer's micronutrient depth."
+        }
       ],
-
       "references": [
-        { "href": "https://fdc.nal.usda.gov/", "label": "USDA FoodData Central — reference nutrient database" },
-        { "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/", "label": "Dietary self-monitoring and weight management (PMC)" },
-        { "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459", "label": "EFSA — dietary reference values for water" }
+        {
+          "href": "https://fdc.nal.usda.gov/",
+          "label": "USDA FoodData Central — reference nutrient database"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/",
+          "label": "Dietary self-monitoring and weight management (PMC)"
+        },
+        {
+          "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459",
+          "label": "EFSA — dietary reference values for water"
+        }
       ],
-
       "related": [
-        { "href": "/blog/en/yazio-vs-myfitnesspal.html", "title": "Yazio vs MyFitnessPal", "desc": "The other comparison Yazio users run." },
-        { "href": "/blog/en/lifesum-vs-yazio.html", "title": "Lifesum vs Yazio", "desc": "Beginner-friendly versus meal planning." },
-        { "href": "/blog/en/best-calorie-counting-app.html", "title": "Best calorie counting app", "desc": "The wider five-app comparison." },
-        { "href": "/blog/en/macro-calculation.html", "title": "How to calculate macros", "desc": "Setting your split before you pick an app." }
+        {
+          "href": "/blog/en/yazio-vs-myfitnesspal.html",
+          "title": "Yazio vs MyFitnessPal",
+          "desc": "The other comparison Yazio users run."
+        },
+        {
+          "href": "/blog/en/lifesum-vs-yazio.html",
+          "title": "Lifesum vs Yazio",
+          "desc": "Beginner-friendly versus meal planning."
+        },
+        {
+          "href": "/blog/en/best-calorie-counting-app.html",
+          "title": "Best calorie counting app",
+          "desc": "The wider five-app comparison."
+        },
+        {
+          "href": "/blog/en/macro-calculation.html",
+          "title": "How to calculate macros",
+          "desc": "Setting your split before you pick an app."
+        }
       ]
+    },
+    "ar": {
+      "slug": "cronometer-vs-yazio",
+      "published_display": "15 أكتوبر 2026",
+      "read_minutes": 7,
+      "badge": "⚖️ مواجهة مباشرة 2026",
+      "h1": "Cronometer أم Yazio: الدقة أم العملية؟",
+      "meta": {
+        "title": "Cronometer أم Yazio (2026) — أيهما تستخدم؟ | Suu",
+        "description": "نقارن Yazio وCronometer في عمق المغذيات الدقيقة، ودقة البيانات، والوصفات، والنسخة المجانية، وسهولة الاستخدام اليومي. أيهما يناسب من يتتبع بدقة، وأيهما يناسب التسجيل اليومي.",
+        "keywords": "cronometer vs yazio، yazio vs cronometer، cronometer أم yazio، مراجعة cronometer 2026، مراجعة yazio 2026، تطبيق لتتبع المغذيات الدقيقة، مقارنة تطبيقات المغذيات الكبرى، مقارنة تطبيقات السعرات",
+        "og_title": "Cronometer أم Yazio: الدقة أم العملية؟",
+        "og_description": "بيانات Cronometer الموثّقة عن المغذيات الدقيقة مقابل وصفات Yazio وسهولة استخدامه اليومي — مقارنة صادقة."
+      },
+      "answer": "Cronometer هو التطبيق الأدق: قاعدة بياناته منتقاة لا يجمعها المستخدمون، ويتتبع أكثر من 80 مغذيًا دقيقًا لا يعرضها Yazio أصلًا. أما Yazio فهو الأكثر عملية للاستخدام اليومي، بوصفات وخطط حمية أقوى وواجهة أودّ. اختر Cronometer إن كنت تتتبع الفيتامينات والمعادن عن قصد؛ واختر Yazio إن أردت تسجيل وجباتك بانتظام دون أن تبطئك التفاصيل الإضافية.",
+      "disclosure": "تنشر Suu هذه المقارنة، وهي تصنع تطبيقًا منافسًا. لا تتضمن أقسام Cronometer وYazio أدناه أي ترويج لـSuu؛ ولا يظهر تطبيقنا إلا في قسم منفصل في النهاية يمكنك تخطيه. تعكس التفاصيل المعلومات المتاحة للعامة حتى أغسطس 2026.",
+      "intro": [
+        "يجذب هذان التطبيقان أناسًا مختلفين جدًا، ولهذا فالمقارنة أنفع مما تبدو للوهلة الأولى.",
+        "بنى Cronometer سمعته على <strong>جودة البيانات</strong> — إدخالات منتقاة من مصادر موثّقة مثل USDA وNCCDB بدل تقديرات المستخدمين، إضافة إلى تتبع للمغذيات الدقيقة يتجاوز السعرات والمغذيات الكبرى بكثير. وبنى Yazio سمعته على <strong>سهولة الاستخدام اليومي</strong> — وصفات وخطط وواجهة لا ترهبك.",
+        "لا أحد من النهجين خاطئ. كلٌّ منهما يحمي من نوع مختلف من الفشل: بيانات غير دقيقة مقابل تتبع متروك."
+      ],
+      "table": {
+        "head": "Cronometer vs Yazio",
+        "caption": "مقارنة ميزات Cronometer وYazio",
+        "col_feature": "الميزة",
+        "columns": [
+          "Cronometer",
+          "Yazio"
+        ],
+        "suu_col": -1,
+        "rows": [
+          {
+            "label": "تسجيل السعرات والمغذيات الكبرى",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "تتبع المغذيات الدقيقة (فيتامينات/معادن)",
+            "cells": [
+              {
+                "text": "✓ أكثر من 80، الأفضل في فئته",
+                "cls": "yes"
+              },
+              {
+                "text": "محدود",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "انتقاء / دقة قاعدة البيانات",
+            "cells": [
+              {
+                "text": "✓ مصادر موثّقة",
+                "cls": "yes"
+              },
+              {
+                "text": "متفاوتة",
+                "cls": ""
+              }
+            ]
+          },
+          {
+            "label": "سعة قاعدة البيانات (منتجات تجارية)",
+            "cells": [
+              {
+                "text": "أصغر",
+                "cls": "no"
+              },
+              {
+                "text": "✓ كبيرة",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "ماسح الباركود في الخطة المجانية",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "مكتبة الوصفات",
+            "cells": [
+              {
+                "text": "ضئيلة",
+                "cls": "no"
+              },
+              {
+                "text": "✓ قوية",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "خطط حمية منظّمة",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "ودّية الواجهة",
+            "cells": [
+              {
+                "text": "كثيفة، البيانات أولًا",
+                "cls": "no"
+              },
+              {
+                "text": "✓ أنظف",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "عمق النسخة المجانية",
+            "cells": [
+              {
+                "text": "✓ سخية جدًا",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ قابلة للاستخدام",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "متتبع الصيام",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "تسجيل البيانات الحيوية / نتائج التحاليل",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "تتبع التمارين داخل التطبيق",
+            "cells": [
+              {
+                "text": "أساسي",
+                "cls": "no"
+              },
+              {
+                "text": "أساسي",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "نموذج الترطيب (لكل مشروب)",
+            "cells": [
+              {
+                "text": "عدّاد بسيط",
+                "cls": "no"
+              },
+              {
+                "text": "عدّاد بسيط",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "التمرين يحدّث هدف الماء",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          }
+        ]
+      },
+      "analysis": [
+        {
+          "head": "Cronometer يفوز بالدقة، وبفارق واضح",
+          "body": [
+            "تسمح معظم تطبيقات السعرات للمستخدمين بإضافة الإدخالات — هكذا تصل إلى قواعد بيانات ضخمة، وهكذا أيضًا تتراكم فيها أرقام خاطئة. أما Cronometer فينتقي، معتمدًا على قواعد بيانات غذائية موثّقة. حين يخبرك Cronometer أن طعامًا يحتوي 12 غ من البروتين، فاحتمال صحة هذا الرقم أعلى بكثير.",
+            "وفوق ذلك يتتبع أكثر من 80 مغذيًا دقيقًا. إن كنت تدير الحديد أو B12 أو المغنيسيوم أو الصوديوم عن قصد — لسبب طبي أو حمية مقيّدة أو تدريب جاد — فلا يقترب منه أي منافس شائع.",
+            "ويسجّل أيضًا البيانات الحيوية ونتائج التحاليل، ما يجعله الخيار الطبيعي إن كنت تعمل مع أخصائي تغذية أو طبيب."
+          ]
+        },
+        {
+          "head": "Yazio يفوز باحتمال أن تستمر في استخدامه",
+          "body": [
+            "كثافة Cronometer هي بالضبط ما يريده بعضهم، وهي بالضبط ما يجعل آخرين يتوقفون. يطلب Yazio منك أقل: سجّل الوجبة، شاهد السعرات والمغذيات الكبرى، خذ اقتراح وصفة، وتابع.",
+            "وتحل مكتبة وصفاته وخطط حميته مشكلة لا يحاول Cronometer معالجتها. يخبرك Cronometer بدقة بما أكلته؛ ويساعدك Yazio على تحديد ما ستأكله بعد ذلك.",
+            "في المنتجات التجارية والمغلّفة، قاعدة بيانات Yazio هي الأوسع بين الاثنين — فانتقاء Cronometer يعني إدخالات أقل."
+          ],
+          "callout": "<strong>المقايضة الصادقة:</strong> يحسّن Cronometer دقة كل إدخال. ويحسّن Yazio عدد الإدخالات التي ستسجّلها فعلًا. كلاهما مهم، وأيهما أهم يعتمد على ما إذا كان خطرك بيانات سيئة أم سجلًّا متروكًا."
+        },
+        {
+          "head": "من يختار أيهما",
+          "body": [
+            "بعض الحالات الواضحة:"
+          ],
+          "list": [
+            "<strong>اختر Cronometer</strong> إن كان لديك سبب طبي لمراقبة مغذيات دقيقة بعينها، أو تتبع حمية مقيّدة (نباتية، كيتو، منخفضة FODMAP) يكون فيها النقص خطرًا حقيقيًا، أو كنت رياضيًا يدير مدخوله بدقة.",
+            "<strong>اختر Yazio</strong> إن كانت هذه أول محاولة جادة لك للتتبع، أو كنت تطبخ وتريد أفكار وجبات، أو تعرف من تجربتك أن الواجهات الكثيفة تجعلك تستسلم.",
+            "<strong>أيٌّ منهما يفي بالغرض</strong> إن كان كل ما يهمك السعرات والمغذيات الكبرى الثلاثة — وحينها اختر الواجهة التي تفضّلها، فكلاهما يؤدي هذه المهمة جيدًا."
+          ]
+        },
+        {
+          "head": "إفصاح: أين يقع تطبيقنا",
+          "body": [
+            "ننشر هذا ونصنع أيضًا تطبيقًا منافسًا، فاعتبر هذا القسم إعلانًا — الحكم أعلاه قائم من دونه.",
+            "لا ينافس Suu تطبيق Cronometer في عمق المغذيات الدقيقة ولا يحاول ذلك. إنه يستهدف فجوة مختلفة: الماء والسعرات والتمارين نظامًا واحدًا مترابطًا. الجري الذي تسجّله يرفع هدف الماء اليومي بحسب تقدير فقدان العرق؛ والوجبة التي تصوّرها تُحلَّل سعراتها ومغذياتها الكبرى، ويضيف محتواها من البروتين والصوديوم ماءً للهضم؛ وكل واحد من 91 مشروبًا يُسهم بقيمته الحقيقية في الترطيب.",
+            "أين يتأخر Suu: لا عمق في المغذيات الدقيقة يضاهي Cronometer، وقاعدة بيانات أطعمة أصغر من Yazio، ولا ماسح باركود ولا مكتبة وصفات. إن كنت تحتاج بيانات موثّقة عن المغذيات الدقيقة، فالجواب الصحيح هو Cronometer ولن ندّعي غير ذلك."
+          ]
+        }
+      ],
+      "verdict": {
+        "head": "الخلاصة",
+        "body": [
+          "<strong>Cronometer</strong> — التطبيق الأدق، والوحيد بين الاثنين الذي يأخذ المغذيات الدقيقة بجدية. الأفضل للاستخدام الطبي أو الحميات المقيّدة أو الرياضيين الباحثين عن الدقة.",
+          "<strong>Yazio</strong> — التطبيق الأكثر عملية للتسجيل اليومي، مع وصفات وخطط لا يقدّمها Cronometer. الأفضل لأول محاولة جادة للتتبع.",
+          "<strong>لا أحد منهما</strong> يُنمذج الترطيب أبعد من عدّاد أكواب، ولا يسمح للتمرين بتغيير أهدافك اليومية.",
+          "إن لم تستطع الحسم: ابدأ بـYazio لمدة شهر لتبني العادة، ثم انتقل إلى Cronometer لاحقًا إن وجدت نفسك تريد أرقامًا أعمق. العادة أولًا، ثم الدقة."
+        ]
+      },
+      "cta": {
+        "head": "تريد أن تترابط السعرات والتمارين والترطيب؟",
+        "sub": "تنزيل مجاني · Premium مجانًا لمدة 3 أيام",
+        "button": "شاهد كيف يفعل Suu ذلك"
+      },
+      "faq": [
+        {
+          "q": "هل Cronometer أفضل من Yazio؟",
+          "a": "من حيث الدقة، نعم — قاعدة بيانات Cronometer منتقاة من مصادر موثّقة لا يجمعها المستخدمون، ويتتبع أكثر من 80 مغذيًا دقيقًا لا يعرضها Yazio. ومن حيث العملية اليومية، Yazio أفضل: واجهة أنظف، ووصفات وخطط حمية أقوى، وقاعدة بيانات أوسع للمنتجات التجارية."
+        },
+        {
+          "q": "هل الخطة المجانية في Cronometer كافية؟",
+          "a": "النسخة المجانية من Cronometer سخية على نحو غير معتاد، وتشمل تتبعًا كاملًا للمغذيات الدقيقة ومسح الباركود. يستطيع معظم المستخدمين التسجيل بجدية مدة طويلة دون دفع؛ ويضيف Gold أساسًا رسومًا بيانية مخصصة ومزيدًا من البيانات الحيوية وتجربة بلا إعلانات."
+        },
+        {
+          "q": "أيهما أدق، Cronometer أم Yazio؟",
+          "a": "Cronometer. تأتي إدخالاته من قواعد بيانات غذائية منتقاة لا من إضافات المستخدمين، ما يزيل المصدر الرئيسي للخطأ في تطبيقات السعرات التي يجمعها المستخدمون. بيانات Yazio كافية للسعرات والمغذيات الكبرى لكنها أقل موثوقية على مستوى المغذيات الدقيقة."
+        },
+        {
+          "q": "هل يتتبع Yazio الفيتامينات والمعادن؟",
+          "a": "بشكل محدود فقط. إن كان تتبع المغذيات الدقيقة أولوية — لسبب طبي أو حمية مقيّدة — فالأداة المناسبة هي Cronometer، وYazio ليس بديلًا عنه."
+        },
+        {
+          "q": "هل يتتبع Cronometer أو Yazio الماء والتمارين كما ينبغي؟",
+          "a": "لا أحد منهما. في كليهما عدّاد ماء بسيط يعامل كل المشروبات بالمثل، وتسجيل أساسي للتمارين لا يؤثر في شيء سوى حصة السعرات. صُمّم Suu لهذه الفجوة تحديدًا، فيربط بين الترطيب والسعرات ونحو 50 نشاطًا رياضيًا — لكنه يفتقر إلى عمق Cronometer في المغذيات الدقيقة."
+        }
+      ],
+      "references": [
+        {
+          "href": "https://fdc.nal.usda.gov/",
+          "label": "USDA FoodData Central — قاعدة بيانات مرجعية للمغذيات"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/",
+          "label": "المراقبة الذاتية للنظام الغذائي وإدارة الوزن (PMC)"
+        },
+        {
+          "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459",
+          "label": "EFSA — القيم المرجعية الغذائية للماء"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/ar/cronometer-vs-lifesum.html",
+          "title": "Cronometer أم Lifesum: أي تطبيق لحساب السعرات تختار؟",
+          "desc": "عمق الفيتامينات والمعادن أم تجربة موجَّهة وأنيقة؟ مقارنة صريحة بين Cronometer وLifesum — والفجوة التي…"
+        },
+        {
+          "href": "/blog/ar/badail-yazio.html",
+          "title": "أفضل بدائل Yazio في 2026: أيّها يناسبك؟",
+          "desc": "أين يبقى Yazio الأفضل، وأين يقصر، وما التطبيقات الخمسة التي تستحق الانتقال إليها: السعرات والماء وتمارين…"
+        },
+        {
+          "href": "/blog/ar/afdal-tatbiq-hisab-suerat.html",
+          "title": "أفضل تطبيق لحساب السعرات الحرارية 2026: Suu مقابل MyFitnessPal وYazio وLifesum وCronometer",
+          "desc": "مقارنة أفضل تطبيقات التغذية لعام 2026 لمن يريد تتبّع الماء والسعرات والتمارين في تطبيق واحد — بالتسجيل…"
+        },
+        {
+          "href": "/blog/ar/hisab-al-macro.html",
+          "title": "حساب الماكروز: كيف تحسب البروتين والكربوهيدرات والدهون؟",
+          "desc": "من السعرات إلى الماكروز خطوة بخطوة: احسب احتياجك اليومي من البروتين والكربوهيدرات والدهون، وتعلّم بمثال،…"
+        }
+      ],
+      "published": "2026-10-15"
+    },
+    "ru": {
+      "slug": "cronometer-vs-yazio",
+      "published_display": "15 октября 2026",
+      "read_minutes": 7,
+      "badge": "⚖️ Лицом к лицу 2026",
+      "h1": "Cronometer vs Yazio: точность или практичность?",
+      "meta": {
+        "title": "Cronometer vs Yazio (2026) — что выбрать? | Suu",
+        "description": "Сравнение Yazio и Cronometer: глубина учёта микронутриентов, точность данных, рецепты, бесплатная версия и удобство на каждый день. Что подходит для точного учёта, а что — для ежедневных записей.",
+        "keywords": "cronometer vs yazio, yazio vs cronometer, cronometer или yazio, cronometer обзор 2026, yazio обзор 2026, приложение для учёта микронутриентов, сравнение трекеров макросов, сравнение приложений для калорий",
+        "og_title": "Cronometer vs Yazio: точность или практичность?",
+        "og_description": "Проверенные данные Cronometer о микронутриентах против рецептов и повседневного удобства Yazio — честное сравнение."
+      },
+      "answer": "Cronometer точнее: его база составлена вручную, а не пользователями, и он учитывает более 80 микронутриентов, которые Yazio просто не показывает. Yazio практичнее на каждый день — с более сильными рецептами, планами питания и дружелюбным интерфейсом. Выбирайте Cronometer, если целенаправленно следите за витаминами и минералами; выбирайте Yazio, если хотите регулярно записывать еду, не отвлекаясь на лишние детали.",
+      "disclosure": "Это сравнение опубликовано Suu — разработчиком конкурирующего приложения. В разделах о Cronometer и Yazio ниже нет рекламы Suu; наше приложение упоминается только в отдельном разделе в конце, который можно пропустить. Сведения отражают общедоступную информацию на август 2026 года.",
+      "intro": [
+        "Эти два приложения привлекают очень разных людей — поэтому сравнение полезнее, чем кажется на первый взгляд.",
+        "Cronometer построил репутацию на <strong>качестве данных</strong> — отобранных записях из проверенных источников вроде USDA и NCCDB вместо пользовательских догадок, плюс учёте микронутриентов далеко за пределами калорий и макросов. Yazio — на <strong>повседневном удобстве</strong>: рецептах, планах и интерфейсе, который не пугает.",
+        "Ни один подход не ошибочен. Они защищают от разных провалов: неточных данных и брошенного учёта."
+      ],
+      "table": {
+        "head": "Cronometer vs Yazio",
+        "caption": "Сравнение функций Cronometer и Yazio",
+        "col_feature": "Функция",
+        "columns": [
+          "Cronometer",
+          "Yazio"
+        ],
+        "suu_col": -1,
+        "rows": [
+          {
+            "label": "Учёт калорий и макросов",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Учёт микронутриентов (витамины/минералы)",
+            "cells": [
+              {
+                "text": "✓ 80+, лучший в классе",
+                "cls": "yes"
+              },
+              {
+                "text": "Ограниченно",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Отбор / точность базы",
+            "cells": [
+              {
+                "text": "✓ Проверенные источники",
+                "cls": "yes"
+              },
+              {
+                "text": "Смешанная",
+                "cls": ""
+              }
+            ]
+          },
+          {
+            "label": "Широта базы (фирменные продукты)",
+            "cells": [
+              {
+                "text": "Меньше",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Большая",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Сканер штрихкодов в бесплатной версии",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Библиотека рецептов",
+            "cells": [
+              {
+                "text": "Минимальная",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Сильная",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Структурированные планы питания",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Дружелюбность интерфейса",
+            "cells": [
+              {
+                "text": "Плотный, данные прежде всего",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Чище",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Глубина бесплатной версии",
+            "cells": [
+              {
+                "text": "✓ Очень щедрая",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Пригодная",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Трекер голодания",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Учёт биометрии / анализов",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Учёт тренировок в приложении",
+            "cells": [
+              {
+                "text": "Базовый",
+                "cls": "no"
+              },
+              {
+                "text": "Базовый",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Модель гидратации (по напиткам)",
+            "cells": [
+              {
+                "text": "Простой счётчик",
+                "cls": "no"
+              },
+              {
+                "text": "Простой счётчик",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Тренировка обновляет цель по воде",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          }
+        ]
+      },
+      "analysis": [
+        {
+          "head": "В точности побеждает Cronometer — и с большим отрывом",
+          "body": [
+            "Большинство приложений для калорий позволяют пользователям добавлять записи — так они и достигают огромных размеров базы, и так же накапливают неверные цифры. Cronometer вместо этого отбирает данные, опираясь на проверенные нутриентные базы. Если Cronometer говорит, что продукт содержит 12 г белка, эта цифра с гораздо большей вероятностью верна.",
+            "Вдобавок он учитывает более 80 микронутриентов. Если вы целенаправленно контролируете железо, B12, магний или натрий — по медицинским причинам, из-за ограничительной диеты или серьёзных тренировок, — ни один массовый конкурент и близко не подходит.",
+            "Он также записывает биометрию и результаты анализов, что делает его естественным выбором, если вы работаете с диетологом или врачом."
+          ]
+        },
+        {
+          "head": "Yazio выигрывает по шансу, что вы продолжите им пользоваться",
+          "body": [
+            "Плотность Cronometer — ровно то, чего хотят одни, и ровно то, из-за чего бросают другие. Yazio просит меньше: записали блюдо, увидели калории и макросы, получили идею рецепта — и дальше.",
+            "Его библиотека рецептов и планы питания к тому же решают задачу, за которую Cronometer не берётся. Cronometer точно говорит, что вы съели; Yazio помогает решить, что есть дальше.",
+            "Для фирменных и упакованных продуктов база Yazio шире — отбор Cronometer означает меньше записей."
+          ],
+          "callout": "<strong>Честный компромисс:</strong> Cronometer оптимизирует точность каждой записи. Yazio — число записей, которые вы действительно сделаете. Важно и то и другое, а что важнее — зависит от того, в чём ваш риск: в плохих данных или в брошенном дневнике."
+        },
+        {
+          "head": "Кому что выбрать",
+          "body": [
+            "Несколько очевидных случаев:"
+          ],
+          "list": [
+            "<strong>Выбирайте Cronometer</strong>, если у вас есть медицинская причина следить за определёнными микронутриентами, вы придерживаетесь ограничительной диеты (веганство, кето, low-FODMAP), где дефициты — реальный риск, или вы спортсмен, точно управляющий рационом.",
+            "<strong>Выбирайте Yazio</strong>, если это ваша первая серьёзная попытка вести учёт, если вы готовите и хотите идеи блюд или знаете по опыту, что плотные интерфейсы заставляют вас бросать.",
+            "<strong>Подойдёт любое</strong>, если вам важны только калории и три макроса: тогда выбирайте интерфейс, который больше нравится, — оба справляются с этим хорошо."
+          ]
+        },
+        {
+          "head": "Раскрытие: где наше приложение",
+          "body": [
+            "Мы публикуем это и делаем конкурирующее приложение, поэтому считайте этот раздел рекламой — вывод выше верен и без него.",
+            "Suu не соревнуется с Cronometer в глубине учёта микронутриентов и не пытается. Он закрывает другой пробел: вода, калории и тренировки как одна связанная система. Записанная пробежка повышает дневную цель по воде на основе оценки потерь с потом; сфотографированное блюдо анализируется на калории и макросы, а белок и натрий в нём добавляют воду для пищеварения; каждый из 91 напитка учитывается по своему реальному вкладу в гидратацию.",
+            "В чём Suu уступает: нет глубины микронутриентов, сравнимой с Cronometer, база продуктов меньше, чем у Yazio, нет сканера штрихкодов и библиотеки рецептов. Если вам нужны проверенные данные о микронутриентах, правильный ответ — Cronometer, и мы не будем делать вид, что это не так."
+          ]
+        }
+      ],
+      "verdict": {
+        "head": "Вывод",
+        "body": [
+          "<strong>Cronometer</strong> — более точное приложение и единственное из двух, которое всерьёз относится к микронутриентам. Лучше всего для медицинских целей, ограничительных диет и спортсменов, которым нужна точность.",
+          "<strong>Yazio</strong> — более практичное приложение для ежедневных записей, с рецептами и планами, за которые Cronometer не берётся. Лучше всего для первой серьёзной попытки вести учёт.",
+          "<strong>Ни одно</strong> не моделирует воду дальше счётчика стаканов и не позволяет тренировкам менять дневные цели.",
+          "Если не можете решить: начните с Yazio на месяц, чтобы выработать привычку, и переходите на Cronometer позже, если захотите более глубоких цифр. Сначала привычка, потом точность."
+        ]
+      },
+      "cta": {
+        "head": "Хотите, чтобы калории, тренировки и вода были связаны?",
+        "sub": "Бесплатная загрузка · Premium бесплатно 3 дня",
+        "button": "Посмотреть, как это делает Suu"
+      },
+      "faq": [
+        {
+          "q": "Cronometer лучше, чем Yazio?",
+          "a": "По точности — да: база Cronometer отобрана из проверенных источников, а не составлена пользователями, и он учитывает более 80 микронутриентов, которые Yazio не показывает. По повседневной практичности лучше Yazio: чище интерфейс, сильнее рецепты и планы питания и шире база фирменных продуктов."
+        },
+        {
+          "q": "Хватит ли бесплатной версии Cronometer?",
+          "a": "Бесплатная версия Cronometer необычно щедрая и включает полный учёт микронутриентов и сканер штрихкодов. Большинство пользователей могут долго всерьёз вести учёт без оплаты; Gold в основном добавляет собственные графики, больше биометрии и работу без рекламы."
+        },
+        {
+          "q": "Что точнее — Cronometer или Yazio?",
+          "a": "Cronometer. Его записи берутся из отобранных нутриентных баз, а не из пользовательских добавлений, что устраняет главный источник ошибок в приложениях с пользовательскими данными. Данных Yazio достаточно для калорий и макросов, но на уровне микронутриентов они менее надёжны."
+        },
+        {
+          "q": "Учитывает ли Yazio витамины и минералы?",
+          "a": "Лишь ограниченно. Если учёт микронутриентов в приоритете — по медицинской причине или из-за ограничительной диеты, — подходящий инструмент Cronometer, и Yazio ему не замена."
+        },
+        {
+          "q": "Учитывают ли Cronometer или Yazio воду и тренировки как следует?",
+          "a": "Ни одно. В обоих есть простой счётчик воды, который считает все напитки одинаково, и базовый учёт тренировок, влияющий только на норму калорий. Suu создан именно для этого пробела и связывает гидратацию, калории и около 50 видов спорта — но глубины микронутриентов Cronometer у него нет."
+        }
+      ],
+      "references": [
+        {
+          "href": "https://fdc.nal.usda.gov/",
+          "label": "USDA FoodData Central — справочная база нутриентов"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/",
+          "label": "Самоконтроль питания и управление весом (PMC)"
+        },
+        {
+          "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459",
+          "label": "EFSA — референсные значения потребления воды"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/ru/cronometer-vs-lifesum.html",
+          "title": "Cronometer или Lifesum: какой счётчик калорий выбрать?",
+          "desc": "Глубина витаминов и минералов или понятный, красивый опыт? Честное сравнение Cronometer и Lifesum — и…"
+        },
+        {
+          "href": "/blog/ru/alternativy-yazio.html",
+          "title": "Альтернативы Yazio: какое приложение выбрать в 2026 году",
+          "desc": "Где Yazio по-прежнему лучший, где его не хватает — и пять приложений, на которые стоит перейти: калории…"
+        },
+        {
+          "href": "/blog/ru/luchshee-prilozhenie-podscheta-kalorij.html",
+          "title": "Лучшее приложение для подсчёта калорий 2026: Suu против MyFitnessPal, Yazio, Lifesum, Cronometer",
+          "desc": "Лучшие приложения для питания 2026 для тех, кто хочет считать воду, калории и тренировки в ОДНОМ…"
+        },
+        {
+          "href": "/blog/ru/raschet-makrosov.html",
+          "title": "Как рассчитать макросы: белки, углеводы и жиры",
+          "desc": "От калорий к макросам шаг за шагом: рассчитайте суточную норму белков, углеводов и жиров, разберите на…"
+        }
+      ],
+      "published": "2026-10-15"
+    },
+    "de": {
+      "slug": "cronometer-vs-yazio",
+      "published_display": "15. Oktober 2026",
+      "read_minutes": 7,
+      "badge": "⚖️ Direktvergleich 2026",
+      "h1": "Cronometer vs. Yazio: Präzision oder Alltagstauglichkeit?",
+      "meta": {
+        "title": "Cronometer vs. Yazio (2026) — Welche App solltest du nutzen? | Suu",
+        "description": "Yazio und Cronometer im Vergleich: Tiefe bei Mikronährstoffen, Datenqualität, Rezepte, Gratisversion und Alltagstauglichkeit. Was passt zu präzisen Trackern, was zum täglichen Eintragen?",
+        "keywords": "cronometer vs yazio, yazio vs cronometer, cronometer oder yazio, cronometer test 2026, yazio test 2026, mikronährstoffe tracken app, makro tracker vergleich, kalorien app vergleich",
+        "og_title": "Cronometer vs. Yazio: Präzision oder Alltagstauglichkeit?",
+        "og_description": "Cronometers geprüfte Mikronährstoffdaten gegen Yazios Rezepte und Alltagstauglichkeit — ein ehrlicher Vergleich."
+      },
+      "answer": "Cronometer ist die genauere App: Ihre Datenbank ist kuratiert statt nutzergeneriert, und sie erfasst über 80 Mikronährstoffe, die Yazio gar nicht anzeigt. Yazio ist im Alltag praktischer, mit stärkeren Rezepten, Ernährungsplänen und einer freundlicheren Oberfläche. Nimm Cronometer, wenn du Vitamine und Mineralstoffe gezielt verfolgst; nimm Yazio, wenn du Mahlzeiten regelmäßig erfassen willst, ohne dass dich zusätzliche Details ausbremsen.",
+      "disclosure": "Dieser Vergleich wird von Suu veröffentlicht, einem Anbieter einer konkurrierenden App. Die Abschnitte zu Cronometer und Yazio unten enthalten keine Suu-Werbung; unsere eigene App erscheint nur in einem abgetrennten Abschnitt am Ende, den du überspringen kannst. Die Angaben beruhen auf öffentlich verfügbaren Informationen mit Stand August 2026.",
+      "intro": [
+        "Diese beiden Apps ziehen sehr unterschiedliche Menschen an — genau deshalb ist der Vergleich nützlicher, als er zunächst wirkt.",
+        "Cronometer hat seinen Ruf auf <strong>Datenqualität</strong> aufgebaut — kuratierte Einträge aus geprüften Quellen wie USDA und NCCDB statt nutzergenerierter Schätzungen, dazu Mikronährstoff-Tracking weit über Kalorien und Makros hinaus. Yazio hat seinen Ruf auf <strong>Alltagstauglichkeit</strong> aufgebaut — Rezepte, Pläne und eine Oberfläche, die nicht einschüchtert.",
+        "Keiner der beiden Ansätze ist falsch. Sie optimieren gegen unterschiedliche Arten des Scheiterns: falsche Daten gegen abgebrochenes Tracking."
+      ],
+      "table": {
+        "head": "Cronometer vs Yazio",
+        "caption": "Funktionsvergleich von Cronometer und Yazio",
+        "col_feature": "Funktion",
+        "columns": [
+          "Cronometer",
+          "Yazio"
+        ],
+        "suu_col": -1,
+        "rows": [
+          {
+            "label": "Kalorien- und Makro-Tracking",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Mikronährstoff-Tracking (Vitamine/Mineralstoffe)",
+            "cells": [
+              {
+                "text": "✓ 80+, klassenbeste",
+                "cls": "yes"
+              },
+              {
+                "text": "Eingeschränkt",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Kuratierung / Genauigkeit der Datenbank",
+            "cells": [
+              {
+                "text": "✓ Geprüfte Quellen",
+                "cls": "yes"
+              },
+              {
+                "text": "Gemischt",
+                "cls": ""
+              }
+            ]
+          },
+          {
+            "label": "Breite der Datenbank (Markenprodukte)",
+            "cells": [
+              {
+                "text": "Kleiner",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Groß",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Barcode-Scanner in der Gratisversion",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Rezeptbibliothek",
+            "cells": [
+              {
+                "text": "Minimal",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Stark",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Strukturierte Ernährungspläne",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Freundlichkeit der Oberfläche",
+            "cells": [
+              {
+                "text": "Dicht, datenorientiert",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Aufgeräumter",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Umfang der Gratisversion",
+            "cells": [
+              {
+                "text": "✓ Sehr großzügig",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Brauchbar",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Fasten-Tracker",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Erfassung von Biometrie- / Labordaten",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Training in der App erfassen",
+            "cells": [
+              {
+                "text": "Einfach",
+                "cls": "no"
+              },
+              {
+                "text": "Einfach",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Trinkmodell (pro Getränk)",
+            "cells": [
+              {
+                "text": "Einfacher Zähler",
+                "cls": "no"
+              },
+              {
+                "text": "Einfacher Zähler",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Training passt das Trinkziel an",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          }
+        ]
+      },
+      "analysis": [
+        {
+          "head": "Bei der Genauigkeit gewinnt Cronometer — und zwar deutlich",
+          "body": [
+            "Die meisten Kalorien-Apps lassen Nutzer Einträge anlegen — so erreichen sie riesige Datenbanken, und so sammeln sie auch falsche Zahlen an. Cronometer kuratiert stattdessen und greift auf geprüfte Nährwertdatenbanken zurück. Wenn Cronometer dir sagt, dass ein Lebensmittel 12 g Eiweiß enthält, stimmt die Zahl mit viel höherer Wahrscheinlichkeit.",
+            "Obendrein erfasst die App über 80 Mikronährstoffe. Wenn du Eisen, B12, Magnesium oder Natrium gezielt steuerst — aus medizinischen Gründen, wegen einer restriktiven Ernährung oder ernsthaften Trainings —, kommt kein gängiger Konkurrent heran.",
+            "Sie erfasst außerdem Biometrie- und Laborwerte, was sie zur naheliegenden Wahl macht, wenn du mit Ernährungsfachkraft oder Arzt arbeitest."
+          ]
+        },
+        {
+          "head": "Yazio gewinnt bei der Chance, dass du dranbleibst",
+          "body": [
+            "Cronometers Dichte ist genau das, was manche wollen — und genau das, weshalb andere aufhören. Yazio verlangt weniger von dir: Mahlzeit eintragen, Kalorien und Makros sehen, Rezeptvorschlag bekommen, weiter.",
+            "Rezeptbibliothek und Ernährungspläne lösen außerdem ein Problem, das Cronometer gar nicht angeht. Cronometer sagt dir genau, was du gegessen hast; Yazio hilft dir zu entscheiden, was du als Nächstes isst.",
+            "Bei Marken- und verpackten Produkten ist Yazios Datenbank die breitere der beiden — Cronometers Kuratierung bedeutet weniger Einträge."
+          ],
+          "callout": "<strong>Der ehrliche Kompromiss:</strong> Cronometer optimiert die Genauigkeit jedes Eintrags. Yazio optimiert die Zahl der Einträge, die du tatsächlich machst. Beides zählt — was mehr zählt, hängt davon ab, ob dein Risiko schlechte Daten oder ein abgebrochenes Tagebuch sind."
+        },
+        {
+          "head": "Wer sollte welche App wählen?",
+          "body": [
+            "Einige klare Fälle:"
+          ],
+          "list": [
+            "<strong>Nimm Cronometer</strong>, wenn du einen medizinischen Grund hast, bestimmte Mikronährstoffe zu beobachten, dich restriktiv ernährst (vegan, keto, Low-FODMAP), wo Mängel ein echtes Risiko sind, oder als Sportler deine Zufuhr präzise steuerst.",
+            "<strong>Nimm Yazio</strong>, wenn das dein erster ernsthafter Tracking-Versuch ist, wenn du kochst und Essensideen willst oder aus Erfahrung weißt, dass dichte Oberflächen dich aufgeben lassen.",
+            "<strong>Beide funktionieren</strong>, wenn dir nur Kalorien und die drei Makros wichtig sind — dann nimm die Oberfläche, die dir besser gefällt, denn beide erledigen das gut."
+          ]
+        },
+        {
+          "head": "Offenlegung: wo unsere eigene App steht",
+          "body": [
+            "Wir veröffentlichen das und machen auch eine konkurrierende App — betrachte diesen Abschnitt deshalb als Werbung. Das Fazit oben gilt auch ohne ihn.",
+            "Suu konkurriert bei der Mikronährstoff-Tiefe nicht mit Cronometer und versucht es auch nicht. Die App zielt auf eine andere Lücke: Wasser, Kalorien und Training als ein verbundenes System. Der aufgezeichnete Lauf erhöht dein tägliches Trinkziel anhand des geschätzten Schweißverlusts; die fotografierte Mahlzeit wird auf Kalorien und Makros analysiert, und ihr Eiweiß- und Natriumgehalt fügt Verdauungswasser hinzu; 91 Getränke zählen jeweils mit ihrem echten Hydrationswert.",
+            "Wo Suu zurückliegt: keine mit Cronometer vergleichbare Mikronährstoff-Tiefe, eine kleinere Lebensmitteldatenbank als Yazio, kein Barcode-Scanner und keine Rezeptbibliothek. Wenn du geprüfte Mikronährstoffdaten brauchst, ist Cronometer die richtige Antwort, und wir tun nicht so, als wäre es anders."
+          ]
+        }
+      ],
+      "verdict": {
+        "head": "Fazit",
+        "body": [
+          "<strong>Cronometer</strong> — die genauere App und die einzige der beiden, die Mikronährstoffe ernst nimmt. Am besten für medizinische Zwecke, restriktive Ernährung oder präzise Sportler.",
+          "<strong>Yazio</strong> — die praktischere App fürs tägliche Eintragen, mit Rezepten und Plänen, die Cronometer gar nicht anbietet. Am besten für den ersten ernsthaften Tracking-Versuch.",
+          "<strong>Keine der beiden</strong> modelliert das Trinken über einen Gläserzähler hinaus oder lässt Training deine Tagesziele verändern.",
+          "Wenn du dich nicht entscheiden kannst: Starte einen Monat mit Yazio, um die Gewohnheit aufzubauen, und wechsle später zu Cronometer, wenn du die tieferen Zahlen willst. Erst Gewohnheit, dann Präzision."
+        ]
+      },
+      "cta": {
+        "head": "Kalorien, Training und Trinken miteinander verbunden?",
+        "sub": "Kostenlos herunterladen · Premium 3 Tage gratis",
+        "button": "So macht es Suu"
+      },
+      "faq": [
+        {
+          "q": "Ist Cronometer besser als Yazio?",
+          "a": "Bei der Genauigkeit ja — Cronometers Datenbank ist aus geprüften Quellen kuratiert statt nutzergeneriert, und die App erfasst über 80 Mikronährstoffe, die Yazio nicht anzeigt. Im Alltag ist Yazio besser: aufgeräumtere Oberfläche, stärkere Rezepte und Ernährungspläne und eine breitere Datenbank mit Markenprodukten."
+        },
+        {
+          "q": "Reicht die Gratisversion von Cronometer?",
+          "a": "Die Gratisversion von Cronometer ist ungewöhnlich großzügig, inklusive vollständigem Mikronährstoff-Tracking und Barcode-Scanner. Die meisten können lange ernsthaft eintragen, ohne zu zahlen; Gold bringt vor allem eigene Diagramme, mehr Biometrie und ein werbefreies Erlebnis."
+        },
+        {
+          "q": "Was ist genauer, Cronometer oder Yazio?",
+          "a": "Cronometer. Die Einträge stammen aus kuratierten Nährwertdatenbanken statt aus Nutzereinreichungen, was die Hauptfehlerquelle nutzergenerierter Kalorien-Apps beseitigt. Yazios Daten reichen für Kalorien und Makros, sind auf Mikronährstoffebene aber weniger verlässlich."
+        },
+        {
+          "q": "Erfasst Yazio Vitamine und Mineralstoffe?",
+          "a": "Nur eingeschränkt. Wenn Mikronährstoff-Tracking Priorität hat — aus medizinischen Gründen oder wegen einer restriktiven Ernährung —, ist Cronometer das passende Werkzeug, und Yazio ist kein Ersatz."
+        },
+        {
+          "q": "Erfassen Cronometer oder Yazio Wasser und Training richtig?",
+          "a": "Keine der beiden. Beide haben einen einfachen Wasserzähler, der jedes Getränk gleich behandelt, und eine einfache Trainingserfassung, die nur dein Kalorienbudget beeinflusst. Suu ist genau für diese Lücke gebaut und verbindet Trinken, Kalorien und rund 50 Sportarten — hat aber nicht Cronometers Mikronährstoff-Tiefe."
+        }
+      ],
+      "references": [
+        {
+          "href": "https://fdc.nal.usda.gov/",
+          "label": "USDA FoodData Central — Referenz-Nährwertdatenbank"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/",
+          "label": "Selbstbeobachtung der Ernährung und Gewichtsmanagement (PMC)"
+        },
+        {
+          "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459",
+          "label": "EFSA — Ernährungsreferenzwerte für Wasser"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/de/cronometer-vs-lifesum.html",
+          "title": "Cronometer oder Lifesum: Welche Kalorien-App passt zu dir?",
+          "desc": "Mikronährstoff-Tiefe oder ein geführtes, schönes Erlebnis? Ein ehrlicher Vergleich von Cronometer und…"
+        },
+        {
+          "href": "/blog/de/yazio-alternativen.html",
+          "title": "Yazio-Alternativen 2026: Welche App passt zu dir?",
+          "desc": "Wo Yazio stark bleibt, wo es hakt — und welche fünf Apps sich als Alternative lohnen: Kalorien, Trinken…"
+        },
+        {
+          "href": "/blog/de/bester-kalorienzaehler-app.html",
+          "title": "Der beste Kalorienzähler 2026",
+          "desc": "Yazio, FDDB, MyFitnessPal, Lifesum, Cronometer und Suu — verglichen nach Eingabetempo, Datenbank und…"
+        },
+        {
+          "href": "/blog/de/makroberechnung.html",
+          "title": "Makros berechnen: Protein, Kohlenhydrate und Fett erklärt",
+          "desc": "Von Kalorien zu Makros, Schritt für Schritt: täglichen Protein-, Kohlenhydrat- und Fettbedarf berechnen…"
+        }
+      ],
+      "published": "2026-10-15"
+    },
+    "it": {
+      "slug": "cronometer-vs-yazio",
+      "published_display": "15 ottobre 2026",
+      "read_minutes": 7,
+      "badge": "⚖️ Testa a testa 2026",
+      "h1": "Cronometer vs Yazio: precisione o praticità?",
+      "meta": {
+        "title": "Cronometer vs Yazio (2026) — Quale usare? | Suu",
+        "description": "Yazio e Cronometer a confronto su profondità dei micronutrienti, accuratezza dei dati, ricette, versione gratuita e praticità quotidiana. Quale fa per chi monitora con precisione, quale per la registrazione di tutti i giorni.",
+        "keywords": "cronometer vs yazio, yazio vs cronometer, cronometer o yazio, cronometer recensione 2026, yazio recensione 2026, app per monitorare i micronutrienti, confronto app macro, confronto app calorie",
+        "og_title": "Cronometer vs Yazio: precisione o praticità?",
+        "og_description": "I dati verificati sui micronutrienti di Cronometer contro le ricette e la praticità quotidiana di Yazio: un confronto onesto."
+      },
+      "answer": "Cronometer è l'app più accurata: il suo database è curato invece che inserito dagli utenti, e monitora oltre 80 micronutrienti che Yazio semplicemente non mostra. Yazio è la più pratica nell'uso quotidiano, con ricette e piani alimentari più forti e un'interfaccia più amichevole. Scegli Cronometer se monitori di proposito vitamine e minerali; scegli Yazio se vuoi registrare i pasti con costanza senza che i dettagli in più ti rallentino.",
+      "disclosure": "Questo confronto è pubblicato da Suu, che realizza un'app concorrente. Le sezioni su Cronometer e Yazio qui sotto non contengono promozione di Suu; la nostra app compare solo in una sezione separata alla fine, che puoi saltare. I dettagli riflettono le informazioni pubbliche aggiornate ad agosto 2026.",
+      "intro": [
+        "Queste due app attirano persone molto diverse, ed è per questo che il confronto è più utile di quanto sembri a prima vista.",
+        "Cronometer ha costruito la sua reputazione sulla <strong>qualità dei dati</strong>: voci curate da fonti verificate come USDA e NCCDB invece di stime inserite dagli utenti, più un monitoraggio dei micronutrienti che va ben oltre calorie e macro. Yazio ha costruito la sua sulla <strong>praticità quotidiana</strong>: ricette, piani e un'interfaccia che non intimidisce.",
+        "Nessuno dei due approcci è sbagliato. Ottimizzano contro modi diversi di fallire: dati inesatti contro monitoraggio abbandonato."
+      ],
+      "table": {
+        "head": "Cronometer vs Yazio",
+        "caption": "Confronto delle funzioni di Cronometer e Yazio",
+        "col_feature": "Funzione",
+        "columns": [
+          "Cronometer",
+          "Yazio"
+        ],
+        "suu_col": -1,
+        "rows": [
+          {
+            "label": "Registrazione di calorie e macro",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Monitoraggio dei micronutrienti (vitamine/minerali)",
+            "cells": [
+              {
+                "text": "✓ Oltre 80, il migliore della categoria",
+                "cls": "yes"
+              },
+              {
+                "text": "Limitato",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Cura / accuratezza del database",
+            "cells": [
+              {
+                "text": "✓ Fonti verificate",
+                "cls": "yes"
+              },
+              {
+                "text": "Misto",
+                "cls": ""
+              }
+            ]
+          },
+          {
+            "label": "Ampiezza del database (prodotti di marca)",
+            "cells": [
+              {
+                "text": "Più piccolo",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Ampio",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Scanner di codici a barre nel piano gratuito",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Libreria di ricette",
+            "cells": [
+              {
+                "text": "Minima",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Forte",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Piani alimentari strutturati",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Facilità dell'interfaccia",
+            "cells": [
+              {
+                "text": "Densa, orientata ai dati",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Più pulita",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Profondità della versione gratuita",
+            "cells": [
+              {
+                "text": "✓ Molto generosa",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Utilizzabile",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Monitoraggio del digiuno",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Registrazione di dati biometrici / esami",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Monitoraggio degli allenamenti nell'app",
+            "cells": [
+              {
+                "text": "Di base",
+                "cls": "no"
+              },
+              {
+                "text": "Di base",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Modello di idratazione (per bevanda)",
+            "cells": [
+              {
+                "text": "Contatore semplice",
+                "cls": "no"
+              },
+              {
+                "text": "Contatore semplice",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "L'allenamento aggiorna l'obiettivo d'acqua",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          }
+        ]
+      },
+      "analysis": [
+        {
+          "head": "Cronometer vince sull'accuratezza, e con distacco",
+          "body": [
+            "La maggior parte delle app per le calorie lascia agli utenti l'inserimento delle voci: è così che raggiungono database enormi, ed è anche così che accumulano numeri sbagliati. Cronometer invece cura le voci, attingendo a database nutrizionali verificati. Quando Cronometer ti dice che un alimento contiene 12 g di proteine, quel numero ha molte più probabilità di essere giusto.",
+            "In più monitora oltre 80 micronutrienti. Se gestisci di proposito ferro, B12, magnesio o sodio, per un motivo medico, una dieta restrittiva o un allenamento serio, nessun concorrente diffuso si avvicina.",
+            "Registra anche dati biometrici e risultati di esami, il che la rende la scelta naturale se lavori con un dietista o un medico."
+          ]
+        },
+        {
+          "head": "Yazio vince sulla probabilità che tu continui a usarla",
+          "body": [
+            "La densità di Cronometer è esattamente ciò che alcuni vogliono ed esattamente ciò che fa smettere altri. Yazio ti chiede meno: registra il pasto, vedi calorie e macro, ricevi un suggerimento di ricetta, vai avanti.",
+            "La sua libreria di ricette e i piani alimentari risolvono anche un problema che Cronometer non affronta. Cronometer ti dice con precisione cosa hai mangiato; Yazio ti aiuta a decidere cosa mangiare dopo.",
+            "Per i prodotti di marca e confezionati, il database di Yazio è il più ampio dei due: la cura di Cronometer significa meno voci."
+          ],
+          "callout": "<strong>Il compromesso onesto:</strong> Cronometer ottimizza l'accuratezza di ogni voce. Yazio ottimizza il numero di voci che registrerai davvero. Contano entrambe, e quale conti di più dipende dal fatto che il tuo rischio siano dati sbagliati o un diario abbandonato."
+        },
+        {
+          "head": "Chi dovrebbe scegliere cosa",
+          "body": [
+            "Alcuni casi chiari:"
+          ],
+          "list": [
+            "<strong>Scegli Cronometer</strong> se hai un motivo medico per tenere d'occhio specifici micronutrienti, segui una dieta restrittiva (vegana, chetogenica, low-FODMAP) in cui le carenze sono un rischio reale, o sei un atleta che gestisce l'apporto con precisione.",
+            "<strong>Scegli Yazio</strong> se è il tuo primo tentativo serio di monitoraggio, se cucini e vuoi idee per i pasti, o se sai per esperienza che le interfacce dense ti fanno mollare.",
+            "<strong>Vanno bene entrambe</strong> se ti interessano solo le calorie e i tre macro: a quel punto scegli l'interfaccia che preferisci, perché entrambe fanno bene questo lavoro."
+          ]
+        },
+        {
+          "head": "Trasparenza: dove si colloca la nostra app",
+          "body": [
+            "Pubblichiamo questo confronto e realizziamo anche un'app concorrente, quindi considera questa sezione una pubblicità: il verdetto qui sopra vale anche senza di essa.",
+            "Suu non compete con Cronometer sulla profondità dei micronutrienti e non ci prova. Punta a un vuoto diverso: acqua, calorie e allenamento come un unico sistema collegato. La corsa che registri aumenta l'obiettivo d'acqua giornaliero in base alla perdita di sudore stimata; il pasto che fotografi viene analizzato per calorie e macro, e il suo contenuto di proteine e sodio aggiunge acqua per la digestione; ognuna delle 91 bevande contribuisce con il suo reale valore di idratazione.",
+            "Dove Suu è indietro: nessuna profondità sui micronutrienti paragonabile a Cronometer, un database alimentare più piccolo di quello di Yazio, nessuno scanner di codici a barre e nessuna libreria di ricette. Se ti servono dati verificati sui micronutrienti, la risposta giusta è Cronometer e non fingeremo il contrario."
+          ]
+        }
+      ],
+      "verdict": {
+        "head": "Verdetto",
+        "body": [
+          "<strong>Cronometer</strong>: l'app più accurata e l'unica delle due che prende sul serio i micronutrienti. Ideale per uso medico, diete restrittive o atleti che cercano precisione.",
+          "<strong>Yazio</strong>: l'app più pratica per la registrazione quotidiana, con ricette e piani che Cronometer non offre. Ideale per un primo tentativo serio di monitoraggio.",
+          "<strong>Nessuna delle due</strong> modella l'idratazione oltre un contatore di bicchieri o lascia che l'allenamento cambi i tuoi obiettivi giornalieri.",
+          "Se non riesci a decidere: inizia con Yazio per un mese per costruire l'abitudine, e passa a Cronometer più avanti se ti accorgi di volere numeri più approfonditi. Prima l'abitudine, poi la precisione."
+        ]
+      },
+      "cta": {
+        "head": "Vuoi calorie, allenamento e idratazione collegati?",
+        "sub": "Download gratuito · Premium gratis per 3 giorni",
+        "button": "Scopri come lo fa Suu"
+      },
+      "faq": [
+        {
+          "q": "Cronometer è meglio di Yazio?",
+          "a": "Per l'accuratezza sì: il database di Cronometer è curato da fonti verificate invece di essere inserito dagli utenti, e monitora oltre 80 micronutrienti che Yazio non mostra. Per la praticità quotidiana è meglio Yazio: interfaccia più pulita, ricette e piani alimentari più forti e un database di prodotti di marca più ampio."
+        },
+        {
+          "q": "Il piano gratuito di Cronometer basta?",
+          "a": "La versione gratuita di Cronometer è insolitamente generosa e include il monitoraggio completo dei micronutrienti e lo scanner di codici a barre. La maggior parte degli utenti può registrare seriamente a lungo senza pagare; Gold aggiunge soprattutto grafici personalizzati, più dati biometrici e un'esperienza senza pubblicità."
+        },
+        {
+          "q": "Quale è più accurata, Cronometer o Yazio?",
+          "a": "Cronometer. Le sue voci provengono da database nutrizionali curati invece che da inserimenti degli utenti, eliminando la principale fonte di errore delle app per le calorie basate sugli utenti. I dati di Yazio sono adeguati per calorie e macro ma meno affidabili a livello di micronutrienti."
+        },
+        {
+          "q": "Yazio monitora vitamine e minerali?",
+          "a": "Solo in modo limitato. Se il monitoraggio dei micronutrienti è una priorità, per un motivo medico o una dieta restrittiva, lo strumento adatto è Cronometer e Yazio non lo sostituisce."
+        },
+        {
+          "q": "Cronometer o Yazio monitorano bene acqua e allenamento?",
+          "a": "Nessuna delle due. Entrambe hanno un semplice contatore d'acqua che tratta ogni bevanda allo stesso modo e una registrazione di base degli allenamenti che influisce solo sulla tua quota di calorie. Suu è costruita proprio per questo vuoto e collega idratazione, calorie e circa 50 attività sportive, ma non ha la profondità sui micronutrienti di Cronometer."
+        }
+      ],
+      "references": [
+        {
+          "href": "https://fdc.nal.usda.gov/",
+          "label": "USDA FoodData Central — database nutrizionale di riferimento"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/",
+          "label": "Automonitoraggio alimentare e gestione del peso (PMC)"
+        },
+        {
+          "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459",
+          "label": "EFSA — valori dietetici di riferimento per l'acqua"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/it/cronometer-vs-lifesum.html",
+          "title": "Cronometer o Lifesum: quale app conta calorie scegliere?",
+          "desc": "Profondità su vitamine e minerali o un'esperienza guidata e curata? Un confronto onesto tra Cronometer e…"
+        },
+        {
+          "href": "/blog/it/alternative-a-yazio.html",
+          "title": "Alternative a Yazio: quale app fa per te? (2026)",
+          "desc": "Dove Yazio resta il migliore, dove non basta, e le cinque app che valgono il cambio: calorie, acqua…"
+        },
+        {
+          "href": "/blog/it/migliore-app-conta-calorie.html",
+          "title": "La migliore app conta calorie del 2026",
+          "desc": "MyFitnessPal, Yazio, FatSecret, Lifesum, Cronometer e Suu — su velocità di inserimento, copertura del…"
+        },
+        {
+          "href": "/blog/it/calcolo-macro.html",
+          "title": "Come Calcolare i Macro: Proteine, Carboidrati e Grassi",
+          "desc": "Dalle calorie ai macro, passo dopo passo: calcola proteine, carboidrati e grassi giornalieri, un esempio…"
+        }
+      ],
+      "published": "2026-10-15"
+    },
+    "uk": {
+      "slug": "cronometer-vs-yazio",
+      "published_display": "15 жовтня 2026",
+      "read_minutes": 7,
+      "badge": "⚖️ Віч-на-віч 2026",
+      "h1": "Cronometer vs Yazio: точність чи практичність?",
+      "meta": {
+        "title": "Cronometer vs Yazio (2026) — що обрати? | Suu",
+        "description": "Порівняння Yazio і Cronometer: глибина обліку мікронутрієнтів, точність даних, рецепти, безкоштовна версія та зручність на щодень. Що підходить для точного обліку, а що — для щоденних записів.",
+        "keywords": "cronometer vs yazio, yazio vs cronometer, cronometer чи yazio, cronometer огляд 2026, yazio огляд 2026, застосунок для обліку мікронутрієнтів, порівняння трекерів макросів, порівняння застосунків для калорій",
+        "og_title": "Cronometer vs Yazio: точність чи практичність?",
+        "og_description": "Перевірені дані Cronometer про мікронутрієнти проти рецептів і повсякденної зручності Yazio — чесне порівняння."
+      },
+      "answer": "Cronometer точніший: його база складена вручну, а не користувачами, і він враховує понад 80 мікронутрієнтів, які Yazio просто не показує. Yazio практичніший на щодень — із сильнішими рецептами, планами харчування й дружнім інтерфейсом. Обирай Cronometer, якщо цілеспрямовано стежиш за вітамінами й мінералами; обирай Yazio, якщо хочеш регулярно записувати їжу, не відволікаючись на зайві деталі.",
+      "disclosure": "Це порівняння опубліковане Suu — розробником конкурентного застосунку. У розділах про Cronometer і Yazio нижче немає реклами Suu; наш застосунок згадується лише в окремому розділі наприкінці, який можна пропустити. Відомості відображають загальнодоступну інформацію станом на серпень 2026 року.",
+      "intro": [
+        "Ці два застосунки приваблюють дуже різних людей — тому порівняння корисніше, ніж здається на перший погляд.",
+        "Cronometer побудував репутацію на <strong>якості даних</strong> — відібраних записах із перевірених джерел на кшталт USDA і NCCDB замість користувацьких здогадок, плюс обліку мікронутрієнтів далеко за межами калорій і макросів. Yazio — на <strong>повсякденній зручності</strong>: рецептах, планах і інтерфейсі, який не лякає.",
+        "Жоден підхід не хибний. Вони захищають від різних провалів: неточних даних і покинутого обліку."
+      ],
+      "table": {
+        "head": "Cronometer vs Yazio",
+        "caption": "Порівняння функцій Cronometer і Yazio",
+        "col_feature": "Функція",
+        "columns": [
+          "Cronometer",
+          "Yazio"
+        ],
+        "suu_col": -1,
+        "rows": [
+          {
+            "label": "Облік калорій і макросів",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Облік мікронутрієнтів (вітаміни/мінерали)",
+            "cells": [
+              {
+                "text": "✓ 80+, найкращий у класі",
+                "cls": "yes"
+              },
+              {
+                "text": "Обмежено",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Відбір / точність бази",
+            "cells": [
+              {
+                "text": "✓ Перевірені джерела",
+                "cls": "yes"
+              },
+              {
+                "text": "Змішана",
+                "cls": ""
+              }
+            ]
+          },
+          {
+            "label": "Ширина бази (фірмові продукти)",
+            "cells": [
+              {
+                "text": "Менша",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Велика",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Сканер штрихкодів у безкоштовній версії",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Бібліотека рецептів",
+            "cells": [
+              {
+                "text": "Мінімальна",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Сильна",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Структуровані плани харчування",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Дружність інтерфейсу",
+            "cells": [
+              {
+                "text": "Щільний, дані понад усе",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Чистіший",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Глибина безкоштовної версії",
+            "cells": [
+              {
+                "text": "✓ Дуже щедра",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Придатна",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Трекер голодування",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Облік біометрії / аналізів",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Облік тренувань у застосунку",
+            "cells": [
+              {
+                "text": "Базовий",
+                "cls": "no"
+              },
+              {
+                "text": "Базовий",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Модель гідратації (за напоями)",
+            "cells": [
+              {
+                "text": "Простий лічильник",
+                "cls": "no"
+              },
+              {
+                "text": "Простий лічильник",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Тренування оновлює ціль щодо води",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          }
+        ]
+      },
+      "analysis": [
+        {
+          "head": "У точності перемагає Cronometer — і з великим відривом",
+          "body": [
+            "Більшість застосунків для калорій дозволяють користувачам додавати записи — так вони й досягають величезних розмірів бази, і так само накопичують хибні цифри. Cronometer натомість відбирає дані, спираючись на перевірені нутрієнтні бази. Якщо Cronometer каже, що продукт містить 12 г білка, ця цифра з набагато більшою ймовірністю правильна.",
+            "До того ж він враховує понад 80 мікронутрієнтів. Якщо ти цілеспрямовано контролюєш залізо, B12, магній чи натрій — з медичних причин, через обмежувальну дієту чи серйозні тренування, — жоден масовий конкурент і близько не підходить.",
+            "Він також записує біометрію й результати аналізів, що робить його природним вибором, якщо працюєш із дієтологом чи лікарем."
+          ]
+        },
+        {
+          "head": "Yazio виграє за шансом, що ти продовжиш ним користуватися",
+          "body": [
+            "Щільність Cronometer — саме те, чого хочуть одні, і саме те, через що кидають інші. Yazio просить менше: записав страву, побачив калорії й макроси, отримав ідею рецепта — і далі.",
+            "Його бібліотека рецептів і плани харчування до того ж розв'язують завдання, за яке Cronometer не береться. Cronometer точно каже, що ти з'їв; Yazio допомагає вирішити, що їсти далі.",
+            "Для фірмових і упакованих продуктів база Yazio ширша — відбір Cronometer означає менше записів."
+          ],
+          "callout": "<strong>Чесний компроміс:</strong> Cronometer оптимізує точність кожного запису. Yazio — кількість записів, які ти справді зробиш. Важливе й те, й інше, а що важливіше — залежить від того, у чому твій ризик: у поганих даних чи в покинутому щоденнику."
+        },
+        {
+          "head": "Кому що обрати",
+          "body": [
+            "Кілька очевидних випадків:"
+          ],
+          "list": [
+            "<strong>Обирай Cronometer</strong>, якщо маєш медичну причину стежити за певними мікронутрієнтами, дотримуєшся обмежувальної дієти (веганство, кето, low-FODMAP), де дефіцити — реальний ризик, або ти спортсмен, що точно керує раціоном.",
+            "<strong>Обирай Yazio</strong>, якщо це твоя перша серйозна спроба вести облік, якщо готуєш і хочеш ідей страв або знаєш із досвіду, що щільні інтерфейси змушують тебе кидати.",
+            "<strong>Підійде будь-який</strong>, якщо тобі важливі лише калорії й три макроси: тоді обирай інтерфейс, який більше подобається, — обидва з цим добре справляються."
+          ]
+        },
+        {
+          "head": "Розкриття: де наш застосунок",
+          "body": [
+            "Ми публікуємо це й робимо конкурентний застосунок, тож вважай цей розділ рекламою — висновок вище правильний і без нього.",
+            "Suu не змагається з Cronometer у глибині обліку мікронутрієнтів і не намагається. Він закриває іншу прогалину: вода, калорії й тренування як одна пов'язана система. Записана пробіжка підвищує денну ціль щодо води на основі оцінки втрат із потом; сфотографовану страву аналізують на калорії й макроси, а білок і натрій у ній додають воду для травлення; кожен із 91 напою враховується за своїм реальним внеском у гідратацію.",
+            "У чому Suu поступається: немає глибини мікронутрієнтів, порівнянної з Cronometer, база продуктів менша, ніж у Yazio, немає сканера штрихкодів і бібліотеки рецептів. Якщо тобі потрібні перевірені дані про мікронутрієнти, правильна відповідь — Cronometer, і ми не вдаватимемо, що це не так."
+          ]
+        }
+      ],
+      "verdict": {
+        "head": "Висновок",
+        "body": [
+          "<strong>Cronometer</strong> — точніший застосунок і єдиний із двох, що серйозно ставиться до мікронутрієнтів. Найкраще для медичних цілей, обмежувальних дієт і спортсменів, яким потрібна точність.",
+          "<strong>Yazio</strong> — практичніший застосунок для щоденних записів, із рецептами й планами, за які Cronometer не береться. Найкраще для першої серйозної спроби вести облік.",
+          "<strong>Жоден</strong> не моделює воду далі за лічильник склянок і не дозволяє тренуванням змінювати денні цілі.",
+          "Якщо не можеш вирішити: почни з Yazio на місяць, щоб виробити звичку, і переходь на Cronometer пізніше, якщо захочеш глибших цифр. Спершу звичка, потім точність."
+        ]
+      },
+      "cta": {
+        "head": "Хочеш, щоб калорії, тренування й вода були пов'язані?",
+        "sub": "Безкоштовне завантаження · Premium безкоштовно 3 дні",
+        "button": "Подивитися, як це робить Suu"
+      },
+      "faq": [
+        {
+          "q": "Cronometer кращий за Yazio?",
+          "a": "За точністю — так: база Cronometer відібрана з перевірених джерел, а не складена користувачами, і він враховує понад 80 мікронутрієнтів, які Yazio не показує. За повсякденною практичністю кращий Yazio: чистіший інтерфейс, сильніші рецепти й плани харчування та ширша база фірмових продуктів."
+        },
+        {
+          "q": "Чи вистачить безкоштовної версії Cronometer?",
+          "a": "Безкоштовна версія Cronometer незвично щедра й містить повний облік мікронутрієнтів і сканер штрихкодів. Більшість користувачів можуть довго серйозно вести облік без оплати; Gold здебільшого додає власні графіки, більше біометрії й роботу без реклами."
+        },
+        {
+          "q": "Що точніше — Cronometer чи Yazio?",
+          "a": "Cronometer. Його записи беруться з відібраних нутрієнтних баз, а не з користувацьких додавань, що усуває головне джерело помилок у застосунках із користувацькими даними. Даних Yazio досить для калорій і макросів, але на рівні мікронутрієнтів вони менш надійні."
+        },
+        {
+          "q": "Чи враховує Yazio вітаміни й мінерали?",
+          "a": "Лише обмежено. Якщо облік мікронутрієнтів у пріоритеті — з медичної причини чи через обмежувальну дієту, — відповідний інструмент Cronometer, і Yazio йому не заміна."
+        },
+        {
+          "q": "Чи враховують Cronometer або Yazio воду й тренування як слід?",
+          "a": "Жоден. В обох є простий лічильник води, що рахує всі напої однаково, і базовий облік тренувань, який впливає лише на норму калорій. Suu створений саме для цієї прогалини й пов'язує гідратацію, калорії та близько 50 видів спорту — але глибини мікронутрієнтів Cronometer у нього немає."
+        }
+      ],
+      "references": [
+        {
+          "href": "https://fdc.nal.usda.gov/",
+          "label": "USDA FoodData Central — довідкова база нутрієнтів"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/",
+          "label": "Самоконтроль харчування та керування вагою (PMC)"
+        },
+        {
+          "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459",
+          "label": "EFSA — референтні значення споживання води"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/uk/cronometer-vs-lifesum.html",
+          "title": "Cronometer чи Lifesum: який лічильник калорій обрати?",
+          "desc": "Глибина вітамінів і мінералів чи зрозумілий, гарний досвід? Чесне порівняння Cronometer і Lifesum — і…"
+        },
+        {
+          "href": "/blog/uk/alternatyvy-yazio.html",
+          "title": "Альтернативи Yazio: який застосунок обрати у 2026 році",
+          "desc": "Де Yazio досі найкращий, де його бракує — і п'ять застосунків, на які варто перейти: калорії, вода…"
+        },
+        {
+          "href": "/blog/uk/najkrashchyj-lichylnyk-kalorij.html",
+          "title": "Найкращий лічильник калорій у 2026",
+          "desc": "MyFitnessPal, Yazio, FatSecret, Lifesum, Cronometer і Suu — за швидкістю запису, охопленням бази й тим…"
+        },
+        {
+          "href": "/blog/uk/rozrakhunok-makrosiv.html",
+          "title": "Як розрахувати макроси: білки, вуглеводи і жири",
+          "desc": "Від калорій до макросів крок за кроком: розрахуй денну норму білків, вуглеводів і жирів, приклад і…"
+        }
+      ],
+      "published": "2026-10-15"
     }
   }
 }

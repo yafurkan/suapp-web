@@ -1,15 +1,361 @@
 {
   "_note": "RAKİP-vs-RAKİP — 1 NUMARALI FIRSAT. Search Console: 'yazio vs myfitnesspal' 246 gösterim/1 tıklama, 'myfitnesspal vs yazio' 60, 'my fitness pal vs yazio' 14 → toplam ~320 gösterim, adanmış sayfa yok. Her iki yazım da hedefleniyor. Suu nötr, sonda, atlanabilir bölümde.",
   "published": "2026-08-13",
-
   "pages": {
+    "tr": {
+      "slug": "yazio-vs-myfitnesspal",
+      "published_display": "15 Ekim 2026",
+      "read_minutes": 8,
+      "badge": "⚖️ Kafa kafaya 2026",
+      "h1": "Yazio vs MyFitnessPal: 2026'da Hangi Kalori Sayacı Kazanır?",
+      "meta": {
+        "title": "Yazio vs MyFitnessPal (2026) — Dürüst Karşılaştırma | Suu",
+        "description": "MyFitnessPal ve Yazio'yu besin veritabanı büyüklüğü, barkod tarama, tarifler, makro takibi, ücretsiz plan sınırları ve fiyat açısından karşılaştırdık. Hangisini seçmeli, ne zaman geçmeli ve ikisinin de eksik bıraktığı şey.",
+        "keywords": "yazio vs myfitnesspal, myfitnesspal vs yazio, yazio mu myfitnesspal mı, myfitnesspal alternatifi, yazio inceleme 2026, myfitnesspal inceleme 2026, en iyi kalori sayacı karşılaştırma, kalori uygulaması karşılaştırma 2026",
+        "og_title": "Yazio vs MyFitnessPal: 2026'da Hangi Kalori Sayacı Kazanır?",
+        "og_description": "Veritabanı büyüklüğü, barkod, tarifler, ücretsiz sürüm ve fiyat — MyFitnessPal ve Yazio'nun dürüst bir yan yana karşılaştırması ve ikisinin de açık bıraktığı boşluk."
+      },
+      "answer": "MyFitnessPal'ın besin veritabanı daha büyük ve markalı bir ürünü barkodla bulma şansı daha yüksek — ama barkod taraması artık Premium'da. Yazio'nun tarifleri ve diyet planları daha güçlü, arayüzü daha sade ve ücretsiz sürümü daha uzun süre kullanılabilir kalıyor. Market ürünlerini paketten kaydediyorsan MyFitnessPal'ı; yemek yapıyor ve makrolarına uyan öğün fikirleri istiyorsan Yazio'yu seç.",
+      "disclosure": "Bu karşılaştırma, rakip bir uygulama yapan Suu tarafından yayımlanıyor. Bu bir çıkar çatışması; bu yüzden aşağıdaki MyFitnessPal ve Yazio bölümlerinde Suu tanıtımı yok, kendi uygulamamız yalnızca sonda, açıkça ayrılmış ve atlayabileceğin bir bölümde geçiyor. Özellik ayrıntıları Ağustos 2026 itibarıyla kamuya açık bilgilere dayanır; iki uygulama da plan sınırlarını sık değiştiriyor, güncel koşulları mağaza sayfalarından doğrula.",
+      "intro": [
+        "MyFitnessPal ve Yazio, kalori saymaya ciddi biçimde başlamaya karar veren çoğu kişinin sonunda arasında seçim yaptığı iki uygulama. MyFitnessPal en derin veriye sahip köklü oyuncu; Yazio ise tariflere ve planlara yaslanan, daha sade Avrupalı rakip.",
+        "Karar genellikle, insanların kendine yeterince erken sormadığı tek bir soruya dayanıyor: <strong>Senin sorunun ne yediğini kaydetmek mi, yoksa ne yiyeceğine karar vermek mi?</strong> Bu ikisi zıt yönlere çekiyor."
+      ],
+      "table": {
+        "head": "MyFitnessPal vs Yazio",
+        "caption": "MyFitnessPal ve Yazio özellik karşılaştırması",
+        "col_feature": "Özellik",
+        "columns": [
+          "MyFitnessPal",
+          "Yazio"
+        ],
+        "suu_col": -1,
+        "rows": [
+          {
+            "label": "Besin veritabanı büyüklüğü",
+            "cells": [
+              {
+                "text": "✓ Kategorinin en büyüğü",
+                "cls": "yes"
+              },
+              {
+                "text": "Büyük",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Markalı bir ürünü bulma ihtimali",
+            "cells": [
+              {
+                "text": "✓ En yüksek",
+                "cls": "yes"
+              },
+              {
+                "text": "İyi",
+                "cls": ""
+              }
+            ]
+          },
+          {
+            "label": "Ücretsiz planda barkod tarayıcı",
+            "cells": [
+              {
+                "text": "✗ Premium'a taşındı",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Kalori ve makro kaydı",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Fotoğrafla yemek tanıma",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Tarif kütüphanesi",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Daha güçlü",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Yapılandırılmış diyet planları",
+            "cells": [
+              {
+                "text": "Sınırlı",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Kapsamlı",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Arayüz / kalabalık",
+            "cells": [
+              {
+                "text": "Daha kalabalık, daha çok reklam",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Daha sade",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Ücretsiz sürümün kullanılabilirliği",
+            "cells": [
+              {
+                "text": "Barkod taşındığından beri daha kısıtlı",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Daha kullanışlı",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Topluluk / tarif içe aktarma",
+            "cells": [
+              {
+                "text": "✓ Devasa kullanıcı tabanı",
+                "cls": "yes"
+              },
+              {
+                "text": "Daha küçük",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Oruç takibi",
+            "cells": [
+              {
+                "text": "Kısmi",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Uygulama içi egzersiz takibi",
+            "cells": [
+              {
+                "text": "Temel",
+                "cls": "no"
+              },
+              {
+                "text": "Temel",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Su modeli (içeceğe göre)",
+            "cells": [
+              {
+                "text": "Basit sayaç",
+                "cls": "no"
+              },
+              {
+                "text": "Basit sayaç",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Antrenman su hedefini güncelliyor mu?",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Apple Health / Health Connect senkronizasyonu",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          }
+        ]
+      },
+      "analysis": [
+        {
+          "head": "Veride MyFitnessPal kazanıyor — büyük bir dipnotla",
+          "body": [
+            "Hiçbir uygulama MyFitnessPal'ın besin veritabanına yaklaşamıyor. Yirmi yıllık kullanıcı girişleri, elindeki en bilinmedik markalı atıştırmalığı bile muhtemelen birinin çoktan kaydettiği anlamına geliyor. Yediklerinin çoğu paketten çıkıyorsa, bu gerçek ve kopyalanması zor bir avantaj.",
+            "Dipnot şu: <strong>barkod taraması Premium'a taşındı</strong>. Pek çok kişinin uygulamayı indirme sebebi bu özellikti ve ücretsiz sürümden kaldırılması, kullanıcıların uygulamadan göç etmesinin tek en büyük nedeni. Ücretsiz planda veritabanı hâlâ senin — sadece taramak yerine adla aramak zorundasın.",
+            "Arayüz de ikisi arasında daha kalabalık olanı; Yazio'dan daha fazla satın alma teklifi gösteriyor."
+          ]
+        },
+        {
+          "head": "Kaydın etrafındaki her şeyde Yazio kazanıyor",
+          "body": [
+            "Yazio'nun tarif kütüphanesi ve yapılandırılmış diyet planları ikisi arasında daha derin olanı. Asıl darboğazın \"makrolarıma uyan ne pişireceğimi bilmiyorum\" ise Yazio buna cevap veriyor; MyFitnessPal ise çoğunlukla kararı çoktan verdiğini varsayıyor.",
+            "Ücretsiz sürümü de daha kullanışlı. Ödeme duvarı gerçek bir engel olmadan önce, barkod taraması dahil, aylarca ciddi biçimde kalori ve makro takibi yapabilirsin.",
+            "Geride kaldığı yer ham kapsam. Niş bir yerel marka için MyFitnessPal'da kayıt bulunma ihtimali daha yüksek — ama Yazio'nun veritabanı işlenmemiş gıdalar ve yaygın ürünler için fazlasıyla yeterli."
+          ],
+          "callout": "<strong>Pratik kural:</strong> Paketli gıda ve barkodla alışveriş → MyFitnessPal. Yemek yapmak, öğün planlamak ve uzun süre dayanan ücretsiz sürüm → Yazio."
+        },
+        {
+          "head": "MyFitnessPal'dan Yazio'ya geçmeli misin?",
+          "body": [
+            "Geçişi maliyetli kılan iki şey var ve ikisini de dürüstçe tartmakta fayda var.",
+            "Birincisi, <strong>geçmişin</strong>. Yıllarca kaydedilmiş veri ve kayıtlı öğünler kolayca taşınmıyor. Uzun süredir MyFitnessPal'da takip yapıyor ve trend çizgilerini önemsiyorsan, kalmanın gerçek bir değeri var.",
+            "İkincisi, <strong>kayıtlı tariflerin ve sık yediklerin</strong>. Bunları yeni bir uygulamada yeniden oluşturmak birkaç haftalık sürtünme demek ve insanlar takibi tam da bu sürtünme döneminde bırakıyor.",
+            "Seni iten şey barkod ödeme duvarıysa, öğünlerinin çoğunu kendin pişiriyorsan ya da arayüz kalabalığı seni daha seyrek kayıt yapacak kadar rahatsız etmeye başladıysa geçiş mantıklı. Aksi halde köklü oyuncunun avantajı gerçek."
+          ]
+        },
+        {
+          "head": "İkisinin de masada bıraktığı şey",
+          "body": [
+            "MyFitnessPal ve Yazio önce birer beslenme uygulaması. Su ve egzersiz sonradan yanlarına eklenmiş ve ikisinin de ne kadar yüzeysel olduğunda bu belli oluyor.",
+            "<strong>Su bir model değil, bir sayaç.</strong> İkisi de bardak sayıyor. Hiçbiri ne içtiğini ayırt etmiyor — 250 ml kahve ile 250 ml su sıvı dengesi açısından aynı sayılıyor, oysa vücut böyle çalışmıyor. Hiçbiri sıcak bir günde hedefini yükseltmiyor.",
+            "<strong>Egzersiz anlamlı hiçbir şeyi beslemiyor.</strong> Bir antrenman kaydedebiliyorsun ve kaloriler hakkını telafi edebiliyor, ama terle kaybedilen sıvı hiçbir yerde hesaba katılmıyor. Zor bir antrenman gününde en çok değişen sayı, iki uygulamanın da takip etmediği sayı."
+          ]
+        },
+        {
+          "head": "Açıklama: kendi uygulamamızın yeri",
+          "body": [
+            "Bu karşılaştırmayı biz yayımlıyoruz ve rakip bir uygulama da yapıyoruz; bu bölümü reklam olarak değerlendir — yukarıdaki MyFitnessPal vs Yazio kararı bu bölüm olmadan da geçerli.",
+            "Suu yukarıda anlatılan boşluk etrafında kuruldu: su, kalori ve egzersiz, üç ayrı kayıt yerine tek bir bağlı sistem. Kaydettiğin bir koşu, tahmini ter kaybından günlük su hedefini yükseltiyor; fotoğrafını çektiğin bir öğünün kalorisi ve makroları analiz ediliyor, protein ve sodyum içeriği de üstüne sindirim suyu ekliyor; 91 içeceğin her biri genel bir bardak gibi değil, gerçek hidrasyon değeriyle katkı yapıyor.",
+            "Suu'nun buradaki iki uygulamanın da gerisinde kaldığı yerler: besin veritabanı MyFitnessPal'ınkinden ve Yazio'nunkinden küçük, barkod tarayıcısı ve tarif kütüphanesi yok. Önceliğin veritabanı genişliği ya da tariflerse, yukarıda karşılaştırılan iki uygulama daha iyi seçim olmaya devam ediyor — aksini iddia etmektense bunu söylemeyi tercih ederiz."
+          ]
+        }
+      ],
+      "verdict": {
+        "head": "Karar",
+        "body": [
+          "<strong>MyFitnessPal'ı seç</strong>: çok paketli gıda yiyorsan ve tam ürünü bulma ihtimalinin en yüksek olmasını istiyorsan — barkod taramasının artık Premium gerektirdiğini kabul ederek.",
+          "<strong>Yazio'yu seç</strong>: yemek yapıyorsan, tarifler ve diyet planları istiyorsan, daha sade bir arayüzü tercih ediyorsan ya da daha uzun süre kullanılabilir kalan bir ücretsiz sürüm istiyorsan. 2026'da sıfırdan başlayan çoğu kişi için daha pratik seçim bu.",
+          "<strong>İkisi de</strong> su ve egzersizi sonradan akla gelmiş bir şeyden öteye taşımıyor. Antrenmanının su hedefini değiştirmesini ve öğününün aynı hesabın parçası olmasını istiyorsan, ikisi de tasarımları gereği yetersiz kalıyor.",
+          "Karar vermenin en ucuz yolu: Yazio'nun ücretsiz sürümünü iki hafta kullan. Sürekli eksik ürünlere takılıyorsan, MyFitnessPal'ın veritabanı geçişe değer."
+        ]
+      },
+      "cta": {
+        "head": "Kalori, egzersiz ve su tek bir bağlı uygulamada olsun mu?",
+        "sub": "İndirmesi ücretsiz · Premium 3 gün ücretsiz",
+        "button": "Suu'nun nasıl yaptığını gör"
+      },
+      "faq": [
+        {
+          "q": "Yazio, MyFitnessPal'dan daha mı iyi?",
+          "a": "2026'da başlayan çoğu kişi için evet — Yazio'nun arayüzü daha sade, tarifleri ve diyet planları daha güçlü ve ücretsiz sürümü, MyFitnessPal'ın Premium'a taşıdığı barkod taramasını içeriyor. Bilinmedik markalı ürünleri bulmaya güveniyorsan MyFitnessPal daha iyi olmaya devam ediyor, çünkü besin veritabanı kategorinin en büyüğü."
+        },
+        {
+          "q": "MyFitnessPal hâlâ ücretsiz mi?",
+          "a": "MyFitnessPal'ı indirmek ücretsiz ve kalori ile makro kaydı ücretsiz planda kalıyor, ama barkod taraması Premium'a taşındı. Tüm veritabanında adla aramayı hâlâ ücretsiz yapabiliyorsun."
+        },
+        {
+          "q": "Hangisinin besin veritabanı daha büyük, MyFitnessPal mı Yazio mu?",
+          "a": "Açık ara MyFitnessPal. Yirmi yıllık kullanıcı girişleri, niş ve bölgesel markalı ürünlerin orada bulunma ihtimalinin çok daha yüksek olduğu anlamına geliyor. Yazio'nun veritabanı daha küçük ama işlenmemiş gıdalar ve yaygın ürünler için yeterli."
+        },
+        {
+          "q": "MyFitnessPal'dan Yazio'ya geçmeli miyim?",
+          "a": "Seni barkod ödeme duvarı ittiyse, öğünlerinin çoğunu pişiriyor ve tarif istiyorsan ya da arayüz kalabalığı seni daha seyrek kayıt yapmaya itiyorsa geç. Değer verdiğin yılların geçmişi varsa ya da sık sık bilinmedik markalı ürünler kaydediyorsan kal. Geçişin asıl maliyeti, kayıtlı öğünlerini ve sık yediklerini yeniden oluşturmak."
+        },
+        {
+          "q": "Kaloriyi, egzersizi ve suyu birlikte takip eden bir uygulama var mı?",
+          "a": "Ne MyFitnessPal ne de Yazio suyu bir bardak sayacının ötesinde modelliyor ve kaydedilen egzersiz kalori hakkın dışında hiçbir şeyi etkilemiyor. Suu bu üçünü birbirine bağlıyor: kaydettiğin antrenman tahmini ter kaybından su hedefini yükseltiyor, kaydettiğin öğün de proteininin ve sodyumunun gerektirdiği sindirim suyunu ekliyor. Besin veritabanı daha küçük; barkod tarayıcısı ve tarif kütüphanesi yok."
+        },
+        {
+          "q": "Hangisi daha ucuz, Yazio mu MyFitnessPal mı?",
+          "a": "İkisi de benzer yıllık abonelik modelleri kullanıyor ve sık kampanya yapıyor; bu yüzden liste fiyatı bölgeye ve mevsime göre değişiyor. Daha anlamlı fark, ödeme yapmadan ne aldığın: Yazio'nun ücretsiz sürümü barkod taramasını içeriyor, MyFitnessPal'ınki artık içermiyor."
+        }
+      ],
+      "references": [
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/",
+          "label": "Beslenmeyi kendi kendine izleme ve kilo yönetimi (PMC)"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5568610/",
+          "label": "Mobil beslenme takibi ve sürdürülebilirlik (PMC)"
+        },
+        {
+          "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459",
+          "label": "EFSA — su için diyet referans değerleri"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/en-iyi-kalori-uygulamasi.html",
+          "title": "En İyi Kalori Sayma Uygulaması 2026: Suu vs MyFitnessPal, Yazio, Lifesum, Cronometer",
+          "desc": "Su, kalori ve egzersizi tek uygulamada takip etmek isteyenler için 2026'nın en iyi beslenme uygulamaları…"
+        },
+        {
+          "href": "/blog/yazio-alternatifleri.html",
+          "title": "Yazio Alternatifleri: Hangisi Sana Uygun? (2026)",
+          "desc": "Yazio'nun güçlü olduğu yerleri kabul ettik, eksik kaldığı yerlerde 5 alternatifi karşılaştırdık: kalori…"
+        },
+        {
+          "href": "/blog/lifesum-vs-myfitnesspal.html",
+          "title": "Lifesum vs MyFitnessPal: Hangi Kalori Uygulaması?",
+          "desc": "En geniş veritabanı mı, sade ve rehberli bir deneyim mi? Lifesum ve MyFitnessPal'ın dürüst…"
+        },
+        {
+          "href": "/blog/suu-vs-yazio.html",
+          "title": "Suu vs Yazio: Hangisi Daha İyi? (2026)",
+          "desc": "Sesli giriş, fotoğrafla kalori ve hidrasyon bilimi — su+kalori+egzersiz tek uygulamada Yazio alternatifi."
+        }
+      ],
+      "published": "2026-10-15"
+    },
     "en": {
       "slug": "yazio-vs-myfitnesspal",
       "published_display": "13 August 2026",
       "read_minutes": 8,
       "badge": "⚖️ Head-to-Head 2026",
       "h1": "Yazio vs MyFitnessPal: Which Calorie Counter Wins in 2026?",
-
       "meta": {
         "title": "Yazio vs MyFitnessPal (2026) — Honest Comparison | Suu",
         "description": "MyFitnessPal vs Yazio compared on food database size, barcode scanning, recipes, macro tracking, free plan limits and price. Which one to pick, when to switch, and what both leave out.",
@@ -17,41 +363,219 @@
         "og_title": "Yazio vs MyFitnessPal: Which Calorie Counter Wins in 2026?",
         "og_description": "Database size, barcode, recipes, free tier and price — an honest side-by-side of MyFitnessPal and Yazio, plus the gap both leave open."
       },
-
       "answer": "MyFitnessPal has the larger food database and better odds of finding a branded product by barcode — but barcode scanning now sits behind Premium. Yazio has stronger recipes and diet plans, a cleaner interface, and a free tier that stays usable for longer. If you log packaged supermarket food, pick MyFitnessPal; if you cook and want meal ideas that fit your macros, pick Yazio.",
-
       "disclosure": "This comparison is published by Suu, which makes a competing app. That is a conflict of interest, so the MyFitnessPal and Yazio sections below contain no Suu marketing, and our own app appears only in a clearly separated section at the end that you can skip. Feature details reflect publicly available information as of August 2026; both apps change plan limits frequently, so confirm current terms on their store pages.",
-
       "intro": [
         "MyFitnessPal and Yazio are the two apps most people end up choosing between when they decide to start counting calories seriously. MyFitnessPal is the incumbent with the deepest data; Yazio is the cleaner European challenger that leans on recipes and plans.",
         "The decision usually comes down to one question that people don't ask themselves early enough: <strong>is your problem recording what you ate, or deciding what to eat?</strong> Those pull in opposite directions."
       ],
-
       "table": {
         "head": "MyFitnessPal vs Yazio",
         "caption": "Feature comparison between MyFitnessPal and Yazio",
         "col_feature": "Feature",
-        "columns": ["MyFitnessPal", "Yazio"],
+        "columns": [
+          "MyFitnessPal",
+          "Yazio"
+        ],
         "suu_col": -1,
         "rows": [
-          { "label": "Food database size", "cells": [{"text":"✓ Largest in category","cls":"yes"},{"text":"Large","cls":"yes"}] },
-          { "label": "Odds of finding a branded product", "cells": [{"text":"✓ Highest","cls":"yes"},{"text":"Good","cls":""}] },
-          { "label": "Barcode scanner on free plan", "cells": [{"text":"✗ Moved to Premium","cls":"no"},{"text":"✓","cls":"yes"}] },
-          { "label": "Calorie and macro logging", "cells": [{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
-          { "label": "Photo food recognition", "cells": [{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] },
-          { "label": "Recipe library", "cells": [{"text":"✓","cls":"yes"},{"text":"✓ Stronger","cls":"yes"}] },
-          { "label": "Structured diet plans", "cells": [{"text":"Limited","cls":"no"},{"text":"✓ Extensive","cls":"yes"}] },
-          { "label": "Interface / clutter", "cells": [{"text":"Busier, more ads","cls":"no"},{"text":"✓ Cleaner","cls":"yes"}] },
-          { "label": "Free tier usability", "cells": [{"text":"More limited since barcode moved","cls":"no"},{"text":"✓ More usable","cls":"yes"}] },
-          { "label": "Community / recipe imports", "cells": [{"text":"✓ Huge user base","cls":"yes"},{"text":"Smaller","cls":"no"}] },
-          { "label": "Fasting tracker", "cells": [{"text":"Partial","cls":"no"},{"text":"✓","cls":"yes"}] },
-          { "label": "Exercise tracking in-app", "cells": [{"text":"Basic","cls":"no"},{"text":"Basic","cls":"no"}] },
-          { "label": "Hydration modelling (per beverage)", "cells": [{"text":"Simple counter","cls":"no"},{"text":"Simple counter","cls":"no"}] },
-          { "label": "Workout updates hydration goal", "cells": [{"text":"✗","cls":"no"},{"text":"✗","cls":"no"}] },
-          { "label": "Apple Health / Health Connect sync", "cells": [{"text":"✓","cls":"yes"},{"text":"✓","cls":"yes"}] }
+          {
+            "label": "Food database size",
+            "cells": [
+              {
+                "text": "✓ Largest in category",
+                "cls": "yes"
+              },
+              {
+                "text": "Large",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Odds of finding a branded product",
+            "cells": [
+              {
+                "text": "✓ Highest",
+                "cls": "yes"
+              },
+              {
+                "text": "Good",
+                "cls": ""
+              }
+            ]
+          },
+          {
+            "label": "Barcode scanner on free plan",
+            "cells": [
+              {
+                "text": "✗ Moved to Premium",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Calorie and macro logging",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Photo food recognition",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Recipe library",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Stronger",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Structured diet plans",
+            "cells": [
+              {
+                "text": "Limited",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Extensive",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Interface / clutter",
+            "cells": [
+              {
+                "text": "Busier, more ads",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Cleaner",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Free tier usability",
+            "cells": [
+              {
+                "text": "More limited since barcode moved",
+                "cls": "no"
+              },
+              {
+                "text": "✓ More usable",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Community / recipe imports",
+            "cells": [
+              {
+                "text": "✓ Huge user base",
+                "cls": "yes"
+              },
+              {
+                "text": "Smaller",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Fasting tracker",
+            "cells": [
+              {
+                "text": "Partial",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Exercise tracking in-app",
+            "cells": [
+              {
+                "text": "Basic",
+                "cls": "no"
+              },
+              {
+                "text": "Basic",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Hydration modelling (per beverage)",
+            "cells": [
+              {
+                "text": "Simple counter",
+                "cls": "no"
+              },
+              {
+                "text": "Simple counter",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Workout updates hydration goal",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Apple Health / Health Connect sync",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          }
         ]
       },
-
       "analysis": [
         {
           "head": "MyFitnessPal wins on data — with one large asterisk",
@@ -96,7 +620,6 @@
           ]
         }
       ],
-
       "verdict": {
         "head": "Verdict",
         "body": [
@@ -106,40 +629,1813 @@
           "Cheapest way to decide: run Yazio's free tier for two weeks. If you keep hitting missing products, MyFitnessPal's database is worth the switch."
         ]
       },
-
       "cta": {
         "head": "Want calories, exercise and hydration in one connected app?",
         "sub": "Free to download · Premium free for 3 days",
         "button": "See how Suu does it"
       },
-
       "faq": [
-        { "q": "Is Yazio better than MyFitnessPal?",
-          "a": "For most people starting in 2026, yes — Yazio has a cleaner interface, stronger recipes and diet plans, and a free tier that includes barcode scanning, which MyFitnessPal moved to Premium. MyFitnessPal remains better if you rely on finding obscure branded products, because its food database is the largest in the category." },
-        { "q": "Is MyFitnessPal still free?",
-          "a": "MyFitnessPal is free to download and calorie plus macro logging remains on the free plan, but barcode scanning was moved to Premium. You can still search the full database by name without paying." },
-        { "q": "Which has the bigger food database, MyFitnessPal or Yazio?",
-          "a": "MyFitnessPal, by a wide margin. Two decades of user-submitted entries mean niche and regional branded products are far more likely to be found there. Yazio's database is smaller but sufficient for whole foods and mainstream products." },
-        { "q": "Should I switch from MyFitnessPal to Yazio?",
-          "a": "Switch if the barcode paywall pushed you, if you cook most meals and want recipes, or if interface clutter is making you log less often. Stay if you have years of history you value or frequently log obscure branded products. The main cost of switching is rebuilding your saved meals and frequent foods." },
-        { "q": "Is there an app that tracks calories, exercise and water together?",
-          "a": "Neither MyFitnessPal nor Yazio models hydration beyond a glass counter, and logged exercise does not affect anything except your calorie allowance. Suu connects the three: the workout you record raises your water goal from estimated sweat loss and the meal you log adds the digestion water its protein and sodium require. Its food database is smaller and it has no barcode scanner or recipe library." },
-        { "q": "Which is cheaper, Yazio or MyFitnessPal?",
-          "a": "Both use similar annual subscription models and run frequent promotions, so the headline price varies by region and season. The more meaningful difference is what you get without paying: Yazio's free tier includes barcode scanning, MyFitnessPal's no longer does." }
+        {
+          "q": "Is Yazio better than MyFitnessPal?",
+          "a": "For most people starting in 2026, yes — Yazio has a cleaner interface, stronger recipes and diet plans, and a free tier that includes barcode scanning, which MyFitnessPal moved to Premium. MyFitnessPal remains better if you rely on finding obscure branded products, because its food database is the largest in the category."
+        },
+        {
+          "q": "Is MyFitnessPal still free?",
+          "a": "MyFitnessPal is free to download and calorie plus macro logging remains on the free plan, but barcode scanning was moved to Premium. You can still search the full database by name without paying."
+        },
+        {
+          "q": "Which has the bigger food database, MyFitnessPal or Yazio?",
+          "a": "MyFitnessPal, by a wide margin. Two decades of user-submitted entries mean niche and regional branded products are far more likely to be found there. Yazio's database is smaller but sufficient for whole foods and mainstream products."
+        },
+        {
+          "q": "Should I switch from MyFitnessPal to Yazio?",
+          "a": "Switch if the barcode paywall pushed you, if you cook most meals and want recipes, or if interface clutter is making you log less often. Stay if you have years of history you value or frequently log obscure branded products. The main cost of switching is rebuilding your saved meals and frequent foods."
+        },
+        {
+          "q": "Is there an app that tracks calories, exercise and water together?",
+          "a": "Neither MyFitnessPal nor Yazio models hydration beyond a glass counter, and logged exercise does not affect anything except your calorie allowance. Suu connects the three: the workout you record raises your water goal from estimated sweat loss and the meal you log adds the digestion water its protein and sodium require. Its food database is smaller and it has no barcode scanner or recipe library."
+        },
+        {
+          "q": "Which is cheaper, Yazio or MyFitnessPal?",
+          "a": "Both use similar annual subscription models and run frequent promotions, so the headline price varies by region and season. The more meaningful difference is what you get without paying: Yazio's free tier includes barcode scanning, MyFitnessPal's no longer does."
+        }
       ],
-
       "references": [
-        { "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/", "label": "Dietary self-monitoring and weight management (PMC)" },
-        { "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5568610/", "label": "Mobile dietary tracking and adherence (PMC)" },
-        { "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459", "label": "EFSA — dietary reference values for water" }
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/",
+          "label": "Dietary self-monitoring and weight management (PMC)"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5568610/",
+          "label": "Mobile dietary tracking and adherence (PMC)"
+        },
+        {
+          "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459",
+          "label": "EFSA — dietary reference values for water"
+        }
       ],
-
       "related": [
-        { "href": "/blog/en/lifesum-vs-yazio.html", "title": "Lifesum vs Yazio", "desc": "The other comparison people run before deciding." },
-        { "href": "/blog/en/best-calorie-counting-app.html", "title": "Best calorie counting app", "desc": "The wider five-app comparison." },
-        { "href": "/blog/en/free-calorie-counter-app.html", "title": "Free calorie counter apps", "desc": "What actually stays free on each plan." },
-        { "href": "/blog/en/best-workout-tracker-app.html", "title": "Best workout tracker app", "desc": "The exercise side of the picture." }
+        {
+          "href": "/blog/en/lifesum-vs-yazio.html",
+          "title": "Lifesum vs Yazio",
+          "desc": "The other comparison people run before deciding."
+        },
+        {
+          "href": "/blog/en/best-calorie-counting-app.html",
+          "title": "Best calorie counting app",
+          "desc": "The wider five-app comparison."
+        },
+        {
+          "href": "/blog/en/free-calorie-counter-app.html",
+          "title": "Free calorie counter apps",
+          "desc": "What actually stays free on each plan."
+        },
+        {
+          "href": "/blog/en/best-workout-tracker-app.html",
+          "title": "Best workout tracker app",
+          "desc": "The exercise side of the picture."
+        }
       ]
+    },
+    "ar": {
+      "slug": "yazio-vs-myfitnesspal",
+      "published_display": "15 أكتوبر 2026",
+      "read_minutes": 8,
+      "badge": "⚖️ مواجهة مباشرة 2026",
+      "h1": "Yazio أم MyFitnessPal: أي عدّاد سعرات يفوز في 2026؟",
+      "meta": {
+        "title": "Yazio أم MyFitnessPal (2026) — مقارنة صادقة | Suu",
+        "description": "نقارن MyFitnessPal وYazio في حجم قاعدة بيانات الأطعمة، ومسح الباركود، والوصفات، وتتبع المغذيات الكبرى، وحدود الخطة المجانية، والسعر. أيهما تختار، ومتى تنتقل، وما الذي يغفله الاثنان.",
+        "keywords": "yazio vs myfitnesspal، myfitnesspal vs yazio، yazio أم myfitnesspal، بديل myfitnesspal، مراجعة yazio 2026، مراجعة myfitnesspal 2026، مقارنة عدادات السعرات، مقارنة تطبيقات السعرات 2026",
+        "og_title": "Yazio أم MyFitnessPal: أي عدّاد سعرات يفوز في 2026؟",
+        "og_description": "حجم قاعدة البيانات، والباركود، والوصفات، والنسخة المجانية، والسعر — مقارنة صادقة بين MyFitnessPal وYazio، مع الفجوة التي يتركها الاثنان."
+      },
+      "answer": "لدى MyFitnessPal قاعدة بيانات أطعمة أكبر وفرص أعلى للعثور على منتج تجاري بالباركود — لكن مسح الباركود أصبح الآن ضمن Premium. أما Yazio فوصفاته وخطط حميته أقوى، وواجهته أنظف، ونسخته المجانية تبقى قابلة للاستخدام مدة أطول. إن كنت تسجّل أطعمة مغلّفة من السوبرماركت فاختر MyFitnessPal؛ وإن كنت تطبخ وتريد أفكار وجبات تناسب مغذياتك الكبرى فاختر Yazio.",
+      "disclosure": "تنشر Suu هذه المقارنة، وهي تصنع تطبيقًا منافسًا. هذا تضارب مصالح، لذلك لا تتضمن أقسام MyFitnessPal وYazio أدناه أي ترويج لـSuu، ولا يظهر تطبيقنا إلا في قسم منفصل بوضوح في النهاية يمكنك تخطيه. تعكس تفاصيل الميزات المعلومات المتاحة للعامة حتى أغسطس 2026؛ يغيّر التطبيقان حدود خططهما كثيرًا، فتحقّق من الشروط الحالية في صفحات المتجر.",
+      "intro": [
+        "MyFitnessPal وYazio هما التطبيقان اللذان ينتهي معظم الناس إلى الاختيار بينهما حين يقررون البدء في عدّ السعرات بجدية. MyFitnessPal اللاعب الراسخ صاحب أعمق البيانات؛ وYazio المنافس الأوروبي الأنظف الذي يعتمد على الوصفات والخطط.",
+        "عادةً ما يتوقف القرار على سؤال لا يطرحه الناس على أنفسهم مبكرًا بما يكفي: <strong>هل مشكلتك تسجيل ما أكلته، أم تحديد ما ستأكله؟</strong> هذان الأمران يشدّان في اتجاهين متعاكسين."
+      ],
+      "table": {
+        "head": "MyFitnessPal vs Yazio",
+        "caption": "مقارنة ميزات MyFitnessPal وYazio",
+        "col_feature": "الميزة",
+        "columns": [
+          "MyFitnessPal",
+          "Yazio"
+        ],
+        "suu_col": -1,
+        "rows": [
+          {
+            "label": "حجم قاعدة بيانات الأطعمة",
+            "cells": [
+              {
+                "text": "✓ الأكبر في الفئة",
+                "cls": "yes"
+              },
+              {
+                "text": "كبيرة",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "فرص العثور على منتج تجاري",
+            "cells": [
+              {
+                "text": "✓ الأعلى",
+                "cls": "yes"
+              },
+              {
+                "text": "جيدة",
+                "cls": ""
+              }
+            ]
+          },
+          {
+            "label": "ماسح الباركود في الخطة المجانية",
+            "cells": [
+              {
+                "text": "✗ نُقل إلى Premium",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "تسجيل السعرات والمغذيات الكبرى",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "التعرّف على الطعام بالصور",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "مكتبة الوصفات",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ أقوى",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "خطط حمية منظّمة",
+            "cells": [
+              {
+                "text": "محدودة",
+                "cls": "no"
+              },
+              {
+                "text": "✓ واسعة",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "الواجهة / الازدحام",
+            "cells": [
+              {
+                "text": "أكثر ازدحامًا وإعلانات",
+                "cls": "no"
+              },
+              {
+                "text": "✓ أنظف",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "قابلية استخدام النسخة المجانية",
+            "cells": [
+              {
+                "text": "أكثر محدودية منذ نقل الباركود",
+                "cls": "no"
+              },
+              {
+                "text": "✓ أكثر قابلية للاستخدام",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "المجتمع / استيراد الوصفات",
+            "cells": [
+              {
+                "text": "✓ قاعدة مستخدمين ضخمة",
+                "cls": "yes"
+              },
+              {
+                "text": "أصغر",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "متتبع الصيام",
+            "cells": [
+              {
+                "text": "جزئي",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "تتبع التمارين داخل التطبيق",
+            "cells": [
+              {
+                "text": "أساسي",
+                "cls": "no"
+              },
+              {
+                "text": "أساسي",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "نموذج الترطيب (لكل مشروب)",
+            "cells": [
+              {
+                "text": "عدّاد بسيط",
+                "cls": "no"
+              },
+              {
+                "text": "عدّاد بسيط",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "التمرين يحدّث هدف الماء",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "المزامنة مع Apple Health / Health Connect",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          }
+        ]
+      },
+      "analysis": [
+        {
+          "head": "MyFitnessPal يفوز بالبيانات — مع تحفّظ كبير",
+          "body": [
+            "لا يقترب أي تطبيق من قاعدة بيانات الأطعمة في MyFitnessPal. عشرون عامًا من إدخالات المستخدمين تعني أن أي وجبة خفيفة تجارية غير معروفة تحملها، سجّلها أحدهم على الأرجح. إن كان معظم ما تأكله يخرج من عبوة، فهذه ميزة حقيقية يصعب تكرارها.",
+            "التحفّظ أن <strong>مسح الباركود انتقل إلى Premium</strong>. كانت هذه الميزة سبب تنزيل كثيرين للتطبيق، وإزالتها من النسخة المجانية هي أكبر سبب لهجرة المستخدمين. تبقى قاعدة البيانات متاحة لك في الخطة المجانية — عليك فقط البحث بالاسم بدل المسح.",
+            "والواجهة أيضًا الأكثر ازدحامًا بين الاثنين، مع عروض ترقية أكثر من Yazio."
+          ]
+        },
+        {
+          "head": "Yazio يفوز في كل ما يحيط بالسجل",
+          "body": [
+            "مكتبة الوصفات وخطط الحمية المنظّمة في Yazio هي الأعمق بين الاثنين. إن كانت عقبتك الحقيقية «لا أعرف ماذا أطبخ مما يناسب مغذياتي الكبرى»، فإن Yazio يجيبك؛ أما MyFitnessPal فيفترض غالبًا أنك قررت مسبقًا.",
+            "ونسخته المجانية أكثر قابلية للاستخدام أيضًا. يمكنك تتبع السعرات والمغذيات الكبرى بجدية لأشهر، بما في ذلك مسح الباركود، قبل أن يصبح الحاجز المدفوع قيدًا حقيقيًا.",
+            "أما ما يتنازل عنه فهو التغطية الخام. لعلامة محلية متخصصة، يُرجَّح أن تجد إدخالًا في MyFitnessPal — مع أن قاعدة بيانات Yazio أكثر من كافية للأطعمة الكاملة والمنتجات الشائعة."
+          ],
+          "callout": "<strong>قاعدة سريعة:</strong> الأطعمة المغلّفة والتسوّق بالباركود → MyFitnessPal. الطبخ وتخطيط الوجبات ونسخة مجانية تدوم → Yazio."
+        },
+        {
+          "head": "هل تنتقل من MyFitnessPal إلى Yazio؟",
+          "body": [
+            "أمران يجعلان الانتقال مكلفًا، ويستحق كلاهما أن يُوزَن بصدق.",
+            "الأول <strong>سجلّك السابق</strong>. سنوات من البيانات المسجّلة والوجبات المحفوظة لا تنتقل بسهولة. إن كنت تتتبع في MyFitnessPal منذ مدة طويلة وتقدّر خطوط الاتجاه، فللبقاء قيمة حقيقية.",
+            "والثاني <strong>وصفاتك المحفوظة وأطعمتك المتكررة</strong>. إعادة بنائها في تطبيق جديد تعني أسابيع من الاحتكاك، وفي هذه الفترة بالذات يتوقف الناس عن التتبع.",
+            "يكون الانتقال منطقيًا إن كان حاجز الباركود المدفوع هو ما دفعك، أو إن كنت تطبخ معظم وجباتك، أو إن بدأ ازدحام الواجهة يزعجك إلى حد أنك صرت تسجّل أقل. وإلا فميزة اللاعب الراسخ حقيقية."
+          ]
+        },
+        {
+          "head": "ما يتركه الاثنان على الطاولة",
+          "body": [
+            "MyFitnessPal وYazio تطبيقا تغذية أولًا. أُضيف الماء والتمارين إلى جانبهما، ويظهر ذلك في مدى سطحية الاثنين فيهما.",
+            "<strong>الترطيب عدّاد لا نموذج.</strong> كلاهما يعدّ الأكواب. لا يميّز أيٌّ منهما ما شربته — 250 مل من القهوة و250 مل من الماء يُعاملان بالمثل في توازن السوائل، وليس هكذا يعمل الجسم. ولا يرفع أيٌّ منهما هدفك في يوم حار.",
+            "<strong>التمرين لا يغذّي أي شيء ذي معنى.</strong> يمكنك تسجيل تمرين، وقد تعوّض السعرات حصتك، لكن السوائل المفقودة بالعرق لا تُحتسب في أي مكان. في يوم تمرين شاق، الرقم الذي يتغير أكثر هو بالذات الرقم الذي لا يتتبعه أيٌّ من التطبيقين."
+          ]
+        },
+        {
+          "head": "إفصاح: أين يقع تطبيقنا",
+          "body": [
+            "ننشر هذه المقارنة ونصنع أيضًا تطبيقًا منافسًا، فاعتبر هذا القسم إعلانًا — حكم MyFitnessPal مقابل Yazio أعلاه قائم من دونه.",
+            "بُني Suu حول الفجوة الموصوفة أعلاه: الماء والسعرات والتمارين نظامًا واحدًا مترابطًا بدل ثلاثة سجلات متوازية. الجري الذي تسجّله يرفع هدف الماء اليومي بحسب تقدير فقدان العرق؛ والوجبة التي تصوّرها تُحلَّل سعراتها ومغذياتها الكبرى، ويضيف محتواها من البروتين والصوديوم ماءً للهضم؛ وكل واحد من 91 مشروبًا يُسهم بقيمته الحقيقية في الترطيب بدل أن يُحسب كوبًا عامًا.",
+            "أين يتأخر Suu عن التطبيقين هنا: قاعدة بيانات أطعمته أصغر من قاعدتي MyFitnessPal وYazio، ولا يملك ماسح باركود ولا مكتبة وصفات. إن كانت أولويتك سعة قاعدة البيانات أو الوصفات، فالتطبيقان المقارَنان أعلاه يبقيان الخيار الأفضل — نفضّل أن نقول ذلك على أن ندّعي غيره."
+          ]
+        }
+      ],
+      "verdict": {
+        "head": "الخلاصة",
+        "body": [
+          "<strong>اختر MyFitnessPal</strong> إن كنت تأكل كثيرًا من الأطعمة المغلّفة وتريد أعلى فرصة للعثور على المنتج نفسه — مع قبول أن مسح الباركود يتطلب الآن Premium.",
+          "<strong>اختر Yazio</strong> إن كنت تطبخ، وتريد وصفات وخطط حمية، وتفضّل واجهة أنظف، أو تريد نسخة مجانية تبقى قابلة للاستخدام مدة أطول. لمعظم من يبدؤون من الصفر في 2026، هذا الخيار الأكثر عملية.",
+          "<strong>لا أحد منهما</strong> يتعامل مع الترطيب أو التمارين كأكثر من فكرة لاحقة. إن أردت أن يغيّر تمرينك هدف الماء وأن تكون وجبتك جزءًا من الحساب نفسه، فكلاهما يقصر عن ذلك بحكم تصميمه.",
+          "أرخص طريقة للحسم: استخدم نسخة Yazio المجانية لأسبوعين. إن ظللت تصطدم بمنتجات مفقودة، فقاعدة بيانات MyFitnessPal تستحق الانتقال."
+        ]
+      },
+      "cta": {
+        "head": "تريد السعرات والتمارين والترطيب في تطبيق واحد مترابط؟",
+        "sub": "تنزيل مجاني · Premium مجانًا لمدة 3 أيام",
+        "button": "شاهد كيف يفعل Suu ذلك"
+      },
+      "faq": [
+        {
+          "q": "هل Yazio أفضل من MyFitnessPal؟",
+          "a": "لمعظم من يبدؤون في 2026، نعم — لدى Yazio واجهة أنظف ووصفات وخطط حمية أقوى، ونسخة مجانية تتضمن مسح الباركود الذي نقله MyFitnessPal إلى Premium. ويبقى MyFitnessPal أفضل إن كنت تعتمد على العثور على منتجات تجارية غير معروفة، لأن قاعدة بيانات أطعمته الأكبر في الفئة."
+        },
+        {
+          "q": "هل لا يزال MyFitnessPal مجانيًا؟",
+          "a": "تنزيل MyFitnessPal مجاني، ويبقى تسجيل السعرات والمغذيات الكبرى في الخطة المجانية، لكن مسح الباركود نُقل إلى Premium. لا يزال بإمكانك البحث بالاسم في قاعدة البيانات كاملة دون دفع."
+        },
+        {
+          "q": "أيهما قاعدة بيانات أطعمته أكبر، MyFitnessPal أم Yazio؟",
+          "a": "MyFitnessPal، وبفارق كبير. عشرون عامًا من إدخالات المستخدمين تعني أن المنتجات التجارية المتخصصة والإقليمية أرجح وجودًا هناك بكثير. قاعدة بيانات Yazio أصغر لكنها كافية للأطعمة الكاملة والمنتجات الشائعة."
+        },
+        {
+          "q": "هل أنتقل من MyFitnessPal إلى Yazio؟",
+          "a": "انتقل إن كان حاجز الباركود المدفوع هو ما دفعك، أو إن كنت تطبخ معظم وجباتك وتريد وصفات، أو إن كان ازدحام الواجهة يجعلك تسجّل أقل. وابقَ إن كان لديك سجل سنوات تقدّره أو كنت تسجّل كثيرًا منتجات تجارية غير معروفة. الكلفة الأساسية للانتقال هي إعادة بناء وجباتك المحفوظة وأطعمتك المتكررة."
+        },
+        {
+          "q": "هل يوجد تطبيق يتتبع السعرات والتمارين والماء معًا؟",
+          "a": "لا يُنمذج MyFitnessPal ولا Yazio الترطيب أبعد من عدّاد أكواب، والتمرين المسجَّل لا يؤثر في شيء سوى حصة السعرات. يربط Suu بين الثلاثة: التمرين الذي تسجّله يرفع هدف الماء بحسب تقدير فقدان العرق، والوجبة التي تسجّلها تضيف ماء الهضم الذي يتطلبه بروتينها وصوديومها. قاعدة بيانات أطعمته أصغر، ولا يملك ماسح باركود ولا مكتبة وصفات."
+        },
+        {
+          "q": "أيهما أرخص، Yazio أم MyFitnessPal؟",
+          "a": "يستخدم الاثنان نماذج اشتراك سنوي متشابهة ويقدّمان عروضًا متكررة، لذلك يختلف السعر المعلن بحسب المنطقة والموسم. والفرق الأهم هو ما تحصل عليه دون دفع: نسخة Yazio المجانية تتضمن مسح الباركود، ونسخة MyFitnessPal لم تعد كذلك."
+        }
+      ],
+      "references": [
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/",
+          "label": "المراقبة الذاتية للنظام الغذائي وإدارة الوزن (PMC)"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5568610/",
+          "label": "تتبع النظام الغذائي عبر الهاتف والالتزام (PMC)"
+        },
+        {
+          "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459",
+          "label": "EFSA — القيم المرجعية الغذائية للماء"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/ar/afdal-tatbiq-hisab-suerat.html",
+          "title": "أفضل تطبيق لحساب السعرات الحرارية 2026: Suu مقابل MyFitnessPal وYazio وLifesum وCronometer",
+          "desc": "مقارنة أفضل تطبيقات التغذية لعام 2026 لمن يريد تتبّع الماء والسعرات والتمارين في تطبيق واحد — بالتسجيل…"
+        },
+        {
+          "href": "/blog/ar/badail-yazio.html",
+          "title": "أفضل بدائل Yazio في 2026: أيّها يناسبك؟",
+          "desc": "أين يبقى Yazio الأفضل، وأين يقصر، وما التطبيقات الخمسة التي تستحق الانتقال إليها: السعرات والماء وتمارين…"
+        },
+        {
+          "href": "/blog/ar/lifesum-vs-myfitnesspal.html",
+          "title": "Lifesum أم MyFitnessPal: أي تطبيق لحساب السعرات تختار؟",
+          "desc": "أكبر قاعدة بيانات أم تجربة أبسط وموجَّهة؟ مقارنة صريحة بين Lifesum وMyFitnessPal — والفجوة التي يتركها…"
+        },
+        {
+          "href": "/blog/ar/suu-vs-yazio.html",
+          "title": "Suu مقابل Yazio: أيّهما أفضل؟ (2026)",
+          "desc": "تسجيل صوتي وسعرات بالصورة وعلم ترطيب حقيقي في تطبيق واحد — مقابل صيام ووصفات Yazio."
+        }
+      ],
+      "published": "2026-10-15"
+    },
+    "ru": {
+      "slug": "yazio-vs-myfitnesspal",
+      "published_display": "15 октября 2026",
+      "read_minutes": 8,
+      "badge": "⚖️ Лицом к лицу 2026",
+      "h1": "Yazio vs MyFitnessPal: какой счётчик калорий лучше в 2026 году?",
+      "meta": {
+        "title": "Yazio vs MyFitnessPal (2026) — честное сравнение | Suu",
+        "description": "Сравнение MyFitnessPal и Yazio: размер базы продуктов, сканер штрихкодов, рецепты, учёт макросов, ограничения бесплатной версии и цена. Что выбрать, когда переходить и чего не хватает обоим.",
+        "keywords": "yazio vs myfitnesspal, myfitnesspal vs yazio, yazio или myfitnesspal, альтернатива myfitnesspal, yazio обзор 2026, myfitnesspal обзор 2026, сравнение счётчиков калорий, сравнение приложений для калорий 2026",
+        "og_title": "Yazio vs MyFitnessPal: какой счётчик калорий лучше в 2026 году?",
+        "og_description": "Размер базы, штрихкоды, рецепты, бесплатная версия и цена — честное сравнение MyFitnessPal и Yazio и пробел, который оставляют оба."
+      },
+      "answer": "У MyFitnessPal база продуктов больше, и шансы найти фирменный продукт по штрихкоду выше — но сканер штрихкодов теперь доступен только в Premium. У Yazio сильнее рецепты и планы питания, чище интерфейс, а бесплатная версия дольше остаётся пригодной. Если вы записываете упакованные продукты из супермаркета, выбирайте MyFitnessPal; если готовите сами и хотите идеи блюд под свои макросы — Yazio.",
+      "disclosure": "Это сравнение опубликовано Suu — разработчиком конкурирующего приложения. Это конфликт интересов, поэтому в разделах о MyFitnessPal и Yazio ниже нет рекламы Suu, а наше приложение упоминается только в чётко отделённом разделе в конце, который можно пропустить. Сведения о функциях отражают общедоступную информацию на август 2026 года; оба приложения часто меняют ограничения тарифов, поэтому уточняйте актуальные условия на страницах магазинов.",
+      "intro": [
+        "MyFitnessPal и Yazio — два приложения, между которыми в итоге выбирает большинство тех, кто решил всерьёз считать калории. MyFitnessPal — старожил с самой глубокой базой; Yazio — более аккуратный европейский соперник с упором на рецепты и планы.",
+        "Обычно выбор сводится к вопросу, который люди задают себе слишком поздно: <strong>ваша проблема — записывать, что вы съели, или решать, что есть?</strong> Эти задачи тянут в разные стороны."
+      ],
+      "table": {
+        "head": "MyFitnessPal vs Yazio",
+        "caption": "Сравнение функций MyFitnessPal и Yazio",
+        "col_feature": "Функция",
+        "columns": [
+          "MyFitnessPal",
+          "Yazio"
+        ],
+        "suu_col": -1,
+        "rows": [
+          {
+            "label": "Размер базы продуктов",
+            "cells": [
+              {
+                "text": "✓ Крупнейшая в категории",
+                "cls": "yes"
+              },
+              {
+                "text": "Большая",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Шанс найти фирменный продукт",
+            "cells": [
+              {
+                "text": "✓ Самый высокий",
+                "cls": "yes"
+              },
+              {
+                "text": "Хороший",
+                "cls": ""
+              }
+            ]
+          },
+          {
+            "label": "Сканер штрихкодов в бесплатной версии",
+            "cells": [
+              {
+                "text": "✗ Перенесён в Premium",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Учёт калорий и макросов",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Распознавание еды по фото",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Библиотека рецептов",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Сильнее",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Структурированные планы питания",
+            "cells": [
+              {
+                "text": "Ограниченно",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Обширные",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Интерфейс / перегруженность",
+            "cells": [
+              {
+                "text": "Загруженнее, больше рекламы",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Чище",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Пригодность бесплатной версии",
+            "cells": [
+              {
+                "text": "Скромнее с тех пор, как убрали сканер",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Пригоднее",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Сообщество / импорт рецептов",
+            "cells": [
+              {
+                "text": "✓ Огромная база пользователей",
+                "cls": "yes"
+              },
+              {
+                "text": "Меньше",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Трекер голодания",
+            "cells": [
+              {
+                "text": "Частично",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Учёт тренировок в приложении",
+            "cells": [
+              {
+                "text": "Базовый",
+                "cls": "no"
+              },
+              {
+                "text": "Базовый",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Модель гидратации (по напиткам)",
+            "cells": [
+              {
+                "text": "Простой счётчик",
+                "cls": "no"
+              },
+              {
+                "text": "Простой счётчик",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Тренировка обновляет цель по воде",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Синхронизация с Apple Health / Health Connect",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          }
+        ]
+      },
+      "analysis": [
+        {
+          "head": "MyFitnessPal выигрывает по данным — с большой оговоркой",
+          "body": [
+            "Ни одно приложение не приближается к базе продуктов MyFitnessPal. Двадцать лет пользовательских записей означают: какой бы малоизвестный фирменный снек вы ни держали в руках, кто-то, скорее всего, уже его внёс. Если большая часть вашей еды — из упаковки, это настоящее и трудновоспроизводимое преимущество.",
+            "Оговорка в том, что <strong>сканер штрихкодов переехал в Premium</strong>. Ради этой функции многие и скачивали приложение, и её удаление из бесплатной версии — главная причина, по которой пользователи уходят. База продуктов в бесплатном тарифе по-прежнему ваша — просто искать придётся по названию, а не сканировать.",
+            "Интерфейс тоже загруженнее из двух, с бо́льшим числом предложений купить подписку, чем у Yazio."
+          ]
+        },
+        {
+          "head": "Yazio выигрывает во всём, что вокруг дневника",
+          "body": [
+            "Библиотека рецептов и структурированные планы питания у Yazio глубже. Если ваше настоящее узкое место — «не знаю, что приготовить под мои макросы», Yazio на это отвечает; MyFitnessPal в основном исходит из того, что вы уже решили.",
+            "Его бесплатная версия тоже пригоднее. Можно месяцами всерьёз считать калории и макросы, включая сканер штрихкодов, прежде чем платная стена станет реальным ограничением.",
+            "Уступает Yazio в чистом охвате. Для нишевого местного бренда запись скорее найдётся в MyFitnessPal — хотя базы Yazio более чем достаточно для цельных продуктов и массовых товаров."
+          ],
+          "callout": "<strong>Простое правило:</strong> упакованная еда и покупки со штрихкодами → MyFitnessPal. Готовка, планирование питания и долгоживущая бесплатная версия → Yazio."
+        },
+        {
+          "head": "Стоит ли переходить с MyFitnessPal на Yazio?",
+          "body": [
+            "Две вещи делают переход дорогим, и обе стоит честно взвесить.",
+            "Во-первых, <strong>ваша история</strong>. Годы записанных данных и сохранённые блюда непросто перенести. Если вы давно ведёте учёт в MyFitnessPal и цените графики динамики, остаться — реальная ценность.",
+            "Во-вторых, <strong>сохранённые рецепты и частые продукты</strong>. Воссоздание их в новом приложении — несколько недель трения, а именно в этот период люди бросают учёт.",
+            "Переход оправдан, если вас вытолкнула платная стена сканера, если вы сами готовите большую часть блюд или если перегруженный интерфейс раздражает настолько, что вы стали записывать реже. Иначе преимущество старожила реально."
+          ]
+        },
+        {
+          "head": "Что оба оставляют без внимания",
+          "body": [
+            "MyFitnessPal и Yazio — прежде всего приложения о питании. Вода и тренировки добавлены сбоку, и это видно по тому, насколько поверхностно они реализованы в обоих.",
+            "<strong>Вода — это счётчик, а не модель.</strong> Оба считают стаканы. Ни одно не различает, что вы выпили: 250 мл кофе и 250 мл воды для водного баланса считаются одинаково, хотя организм работает не так. Ни одно не повышает цель в жаркий день.",
+            "<strong>Тренировки ни на что существенное не влияют.</strong> Тренировку можно записать, и калории, возможно, увеличат вашу норму, но жидкость, потерянная с потом, нигде не учитывается. В тяжёлый тренировочный день сильнее всего меняется именно то число, которое не отслеживает ни одно из приложений."
+          ]
+        },
+        {
+          "head": "Раскрытие: где наше приложение",
+          "body": [
+            "Мы публикуем это сравнение и делаем конкурирующее приложение, поэтому считайте этот раздел рекламой — вывод о MyFitnessPal и Yazio выше верен и без него.",
+            "Suu построен вокруг описанного выше пробела: вода, калории и тренировки как одна связанная система, а не три параллельных дневника. Записанная пробежка повышает дневную цель по воде на основе оценки потерь с потом; сфотографированное блюдо анализируется на калории и макросы, а белок и натрий в нём добавляют воду для пищеварения; каждый из 91 напитка учитывается по своему реальному вкладу в гидратацию, а не как обобщённый стакан.",
+            "В чём Suu уступает обоим приложениям: база продуктов меньше, чем у MyFitnessPal или Yazio, нет сканера штрихкодов и библиотеки рецептов. Если для вас главное — широта базы или рецепты, два сравниваемых выше приложения остаются лучшим выбором; мы предпочитаем сказать это прямо, а не делать вид, что это не так."
+          ]
+        }
+      ],
+      "verdict": {
+        "head": "Вывод",
+        "body": [
+          "<strong>Выбирайте MyFitnessPal</strong>, если едите много упакованной еды и хотите максимальный шанс найти точный продукт — смирившись с тем, что сканер штрихкодов теперь требует Premium.",
+          "<strong>Выбирайте Yazio</strong>, если готовите, хотите рецепты и планы питания, предпочитаете более чистый интерфейс или хотите бесплатную версию, которая дольше остаётся пригодной. Для большинства начинающих в 2026 году это более практичный выбор.",
+          "<strong>Ни одно</strong> не уделяет воде или тренировкам больше, чем остаточное внимание. Если вы хотите, чтобы тренировка меняла цель по воде, а еда была частью того же расчёта, оба не справляются по своему устройству.",
+          "Самый дешёвый способ решить: две недели пользуйтесь бесплатной версией Yazio. Если постоянно не находите продукты, база MyFitnessPal стоит перехода."
+        ]
+      },
+      "cta": {
+        "head": "Хотите калории, тренировки и воду в одном связанном приложении?",
+        "sub": "Бесплатная загрузка · Premium бесплатно 3 дня",
+        "button": "Посмотреть, как это делает Suu"
+      },
+      "faq": [
+        {
+          "q": "Yazio лучше, чем MyFitnessPal?",
+          "a": "Для большинства начинающих в 2026 году — да: у Yazio чище интерфейс, сильнее рецепты и планы питания, а бесплатная версия включает сканер штрихкодов, который MyFitnessPal перенёс в Premium. MyFitnessPal остаётся лучше, если вам важно находить малоизвестные фирменные продукты: его база — крупнейшая в категории."
+        },
+        {
+          "q": "MyFitnessPal всё ещё бесплатен?",
+          "a": "MyFitnessPal можно скачать бесплатно, и учёт калорий и макросов остаётся в бесплатном тарифе, но сканер штрихкодов перенесён в Premium. Искать по названию во всей базе по-прежнему можно бесплатно."
+        },
+        {
+          "q": "У кого база продуктов больше — у MyFitnessPal или Yazio?",
+          "a": "У MyFitnessPal, с большим отрывом. Двадцать лет пользовательских записей означают, что нишевые и региональные фирменные продукты там найти гораздо вероятнее. База Yazio меньше, но её достаточно для цельных продуктов и массовых товаров."
+        },
+        {
+          "q": "Стоит ли мне переходить с MyFitnessPal на Yazio?",
+          "a": "Переходите, если вас вытолкнула платная стена сканера, если вы готовите большую часть блюд и хотите рецепты или если перегруженный интерфейс заставляет вас записывать реже. Оставайтесь, если у вас годы ценной истории или вы часто записываете малоизвестные фирменные продукты. Главная цена перехода — заново создать сохранённые блюда и частые продукты."
+        },
+        {
+          "q": "Есть ли приложение, которое учитывает калории, тренировки и воду вместе?",
+          "a": "Ни MyFitnessPal, ни Yazio не моделируют воду дальше счётчика стаканов, а записанная тренировка влияет только на норму калорий. Suu связывает все три: записанная тренировка повышает цель по воде на основе оценки потерь с потом, а записанное блюдо добавляет воду для пищеварения, которой требуют его белок и натрий. База продуктов меньше, сканера штрихкодов и библиотеки рецептов нет."
+        },
+        {
+          "q": "Что дешевле — Yazio или MyFitnessPal?",
+          "a": "Оба используют похожие модели годовой подписки и часто проводят акции, поэтому базовая цена зависит от региона и сезона. Существеннее разница в том, что вы получаете бесплатно: бесплатная версия Yazio включает сканер штрихкодов, у MyFitnessPal — уже нет."
+        }
+      ],
+      "references": [
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/",
+          "label": "Самоконтроль питания и управление весом (PMC)"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5568610/",
+          "label": "Мобильный учёт питания и приверженность (PMC)"
+        },
+        {
+          "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459",
+          "label": "EFSA — референсные значения потребления воды"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/ru/luchshee-prilozhenie-podscheta-kalorij.html",
+          "title": "Лучшее приложение для подсчёта калорий 2026: Suu против MyFitnessPal, Yazio, Lifesum, Cronometer",
+          "desc": "Лучшие приложения для питания 2026 для тех, кто хочет считать воду, калории и тренировки в ОДНОМ…"
+        },
+        {
+          "href": "/blog/ru/alternativy-yazio.html",
+          "title": "Альтернативы Yazio: какое приложение выбрать в 2026 году",
+          "desc": "Где Yazio по-прежнему лучший, где его не хватает — и пять приложений, на которые стоит перейти: калории…"
+        },
+        {
+          "href": "/blog/ru/lifesum-vs-myfitnesspal.html",
+          "title": "Lifesum или MyFitnessPal: какой счётчик калорий выбрать?",
+          "desc": "Самая большая база или более простой и понятный опыт? Честное сравнение Lifesum и MyFitnessPal — и…"
+        },
+        {
+          "href": "/blog/ru/suu-vs-yazio.html",
+          "title": "Suu против Yazio: что лучше? (2026)",
+          "desc": "Голосовой ввод, калории по фото и настоящая наука о гидратации в одном приложении — против голодания и…"
+        }
+      ],
+      "published": "2026-10-15"
+    },
+    "de": {
+      "slug": "yazio-vs-myfitnesspal",
+      "published_display": "15. Oktober 2026",
+      "read_minutes": 8,
+      "badge": "⚖️ Direktvergleich 2026",
+      "h1": "Yazio vs. MyFitnessPal: Welcher Kalorienzähler gewinnt 2026?",
+      "meta": {
+        "title": "Yazio vs. MyFitnessPal (2026) — Der ehrliche Vergleich | Suu",
+        "description": "MyFitnessPal und Yazio im Vergleich: Größe der Lebensmitteldatenbank, Barcode-Scanner, Rezepte, Makro-Tracking, Grenzen der Gratisversion und Preis. Welche App passt, wann sich ein Wechsel lohnt und was beiden fehlt.",
+        "keywords": "yazio vs myfitnesspal, myfitnesspal vs yazio, yazio oder myfitnesspal, myfitnesspal alternative, yazio test 2026, myfitnesspal test 2026, kalorienzähler vergleich, kalorien app vergleich 2026",
+        "og_title": "Yazio vs. MyFitnessPal: Welcher Kalorienzähler gewinnt 2026?",
+        "og_description": "Datenbankgröße, Barcode, Rezepte, Gratisversion und Preis — ein ehrlicher Vergleich von MyFitnessPal und Yazio, plus die Lücke, die beide offen lassen."
+      },
+      "answer": "MyFitnessPal hat die größere Lebensmitteldatenbank und bessere Chancen, ein Markenprodukt per Barcode zu finden — aber der Barcode-Scanner liegt inzwischen hinter Premium. Yazio hat die stärkeren Rezepte und Ernährungspläne, eine aufgeräumtere Oberfläche und eine Gratisversion, die länger brauchbar bleibt. Wenn du verpackte Supermarkt-Lebensmittel erfasst, nimm MyFitnessPal; wenn du kochst und Essensideen willst, die zu deinen Makros passen, nimm Yazio.",
+      "disclosure": "Dieser Vergleich wird von Suu veröffentlicht, einem Anbieter einer konkurrierenden App. Das ist ein Interessenkonflikt; deshalb enthalten die Abschnitte zu MyFitnessPal und Yazio unten keine Suu-Werbung, und unsere eigene App taucht nur in einem klar abgetrennten Abschnitt am Ende auf, den du überspringen kannst. Die Funktionsangaben beruhen auf öffentlich verfügbaren Informationen mit Stand August 2026; beide Apps ändern ihre Tarifgrenzen häufig, prüfe die aktuellen Bedingungen deshalb im jeweiligen Store.",
+      "intro": [
+        "MyFitnessPal und Yazio sind die zwei Apps, zwischen denen sich die meisten am Ende entscheiden, wenn sie ernsthaft mit dem Kalorienzählen anfangen. MyFitnessPal ist der etablierte Platzhirsch mit den meisten Daten; Yazio der aufgeräumtere europäische Herausforderer, der auf Rezepte und Pläne setzt.",
+        "Die Entscheidung hängt meist an einer Frage, die man sich zu spät stellt: <strong>Ist dein Problem, festzuhalten, was du gegessen hast — oder zu entscheiden, was du essen sollst?</strong> Das zieht in entgegengesetzte Richtungen."
+      ],
+      "table": {
+        "head": "MyFitnessPal vs Yazio",
+        "caption": "Funktionsvergleich von MyFitnessPal und Yazio",
+        "col_feature": "Funktion",
+        "columns": [
+          "MyFitnessPal",
+          "Yazio"
+        ],
+        "suu_col": -1,
+        "rows": [
+          {
+            "label": "Größe der Lebensmitteldatenbank",
+            "cells": [
+              {
+                "text": "✓ Die größte der Kategorie",
+                "cls": "yes"
+              },
+              {
+                "text": "Groß",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Chance, ein Markenprodukt zu finden",
+            "cells": [
+              {
+                "text": "✓ Am höchsten",
+                "cls": "yes"
+              },
+              {
+                "text": "Gut",
+                "cls": ""
+              }
+            ]
+          },
+          {
+            "label": "Barcode-Scanner in der Gratisversion",
+            "cells": [
+              {
+                "text": "✗ Zu Premium verschoben",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Kalorien- und Makro-Tracking",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Lebensmittelerkennung per Foto",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Rezeptbibliothek",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Stärker",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Strukturierte Ernährungspläne",
+            "cells": [
+              {
+                "text": "Eingeschränkt",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Umfangreich",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Oberfläche / Überladenheit",
+            "cells": [
+              {
+                "text": "Unruhiger, mehr Werbung",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Aufgeräumter",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Nutzbarkeit der Gratisversion",
+            "cells": [
+              {
+                "text": "Eingeschränkter, seit der Barcode-Scanner wanderte",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Besser nutzbar",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Community / Rezeptimporte",
+            "cells": [
+              {
+                "text": "✓ Riesige Nutzerbasis",
+                "cls": "yes"
+              },
+              {
+                "text": "Kleiner",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Fasten-Tracker",
+            "cells": [
+              {
+                "text": "Teilweise",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Training in der App erfassen",
+            "cells": [
+              {
+                "text": "Einfach",
+                "cls": "no"
+              },
+              {
+                "text": "Einfach",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Trinkmodell (pro Getränk)",
+            "cells": [
+              {
+                "text": "Einfacher Zähler",
+                "cls": "no"
+              },
+              {
+                "text": "Einfacher Zähler",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Training passt das Trinkziel an",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Synchronisierung mit Apple Health / Health Connect",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          }
+        ]
+      },
+      "analysis": [
+        {
+          "head": "MyFitnessPal gewinnt bei den Daten — mit einem großen Sternchen",
+          "body": [
+            "Keine App kommt an die Lebensmitteldatenbank von MyFitnessPal heran. Zwei Jahrzehnte nutzergenerierter Einträge bedeuten: Welchen obskuren Marken-Snack du auch in der Hand hältst, irgendwer hat ihn wahrscheinlich schon erfasst. Wenn das meiste, was du isst, aus einer Packung kommt, ist das ein echter und schwer nachzubauender Vorteil.",
+            "Das Sternchen: <strong>Der Barcode-Scanner ist zu Premium gewandert</strong>. Für viele war das der Grund, die App herunterzuladen, und dass er aus der Gratisversion verschwunden ist, ist der wichtigste Grund, warum Nutzer abwandern. Die Datenbank bleibt dir in der Gratisversion — du musst nur nach Namen suchen statt zu scannen.",
+            "Die Oberfläche ist außerdem die unruhigere der beiden, mit mehr Upgrade-Hinweisen als bei Yazio."
+          ]
+        },
+        {
+          "head": "Yazio gewinnt bei allem rund ums Tagebuch",
+          "body": [
+            "Yazios Rezeptbibliothek und strukturierte Ernährungspläne sind die tieferen der beiden. Wenn dein eigentlicher Engpass lautet: „Ich weiß nicht, was ich kochen soll, das zu meinen Makros passt“, beantwortet Yazio das; MyFitnessPal geht meist davon aus, dass du dich schon entschieden hast.",
+            "Auch die Gratisversion ist besser nutzbar. Du kannst monatelang ernsthaft Kalorien und Makros erfassen, Barcode-Scanner inklusive, bevor die Bezahlschranke wirklich bremst.",
+            "Nachgeben muss Yazio bei der reinen Abdeckung. Bei einer kleinen regionalen Marke hat MyFitnessPal eher einen Eintrag — für unverarbeitete Lebensmittel und gängige Produkte ist Yazios Datenbank aber mehr als ausreichend."
+          ],
+          "callout": "<strong>Faustregel:</strong> Verpackte Lebensmittel und viel Einkauf per Barcode → MyFitnessPal. Kochen, Essensplanung und eine Gratisversion, die lange hält → Yazio."
+        },
+        {
+          "head": "Solltest du von MyFitnessPal zu Yazio wechseln?",
+          "body": [
+            "Zwei Dinge machen einen Wechsel teuer, und beide solltest du ehrlich abwägen.",
+            "Erstens <strong>deine Historie</strong>. Jahre an erfassten Daten und gespeicherten Mahlzeiten lassen sich nicht einfach umziehen. Wenn du schon lange in MyFitnessPal trackst und die Trendlinien schätzt, hat das Bleiben echten Wert.",
+            "Zweitens <strong>deine gespeicherten Rezepte und häufigen Lebensmittel</strong>. Sie in einer neuen App neu anzulegen, bedeutet ein paar Wochen Reibung — und genau in dieser Phase hören viele mit dem Tracken auf.",
+            "Ein Wechsel ist sinnvoll, wenn dich die Barcode-Bezahlschranke vertrieben hat, wenn du die meisten Mahlzeiten selbst kochst oder wenn dich die überladene Oberfläche so nervt, dass du seltener einträgst. Sonst ist der Vorteil des Platzhirschs real."
+          ]
+        },
+        {
+          "head": "Was beide liegen lassen",
+          "body": [
+            "MyFitnessPal und Yazio sind zuerst Ernährungs-Apps. Wasser und Training kamen nebenbei dazu, und das merkt man daran, wie oberflächlich beides ist.",
+            "<strong>Trinken ist eine Strichliste, kein Modell.</strong> Beide zählen Gläser. Keine unterscheidet, was du getrunken hast — 250 ml Kaffee und 250 ml Wasser zählen für den Flüssigkeitshaushalt gleich, so funktioniert der Körper aber nicht. Keine erhöht dein Ziel an einem heißen Tag.",
+            "<strong>Training fließt in nichts Sinnvolles ein.</strong> Du kannst ein Workout eintragen, und die Kalorien verrechnen sich vielleicht mit deinem Budget, aber die beim Schwitzen verlorene Flüssigkeit wird nirgends berücksichtigt. An einem harten Trainingstag ist die Zahl, die sich am stärksten ändert, genau die, die keine der beiden erfasst."
+          ]
+        },
+        {
+          "head": "Offenlegung: wo unsere eigene App steht",
+          "body": [
+            "Wir veröffentlichen diesen Vergleich und machen auch eine konkurrierende App — betrachte diesen Abschnitt deshalb als Werbung. Das Fazit zu MyFitnessPal vs. Yazio oben gilt auch ohne ihn.",
+            "Suu ist um die oben beschriebene Lücke herum gebaut: Wasser, Kalorien und Training als ein verbundenes System statt drei paralleler Tagebücher. Ein aufgezeichneter Lauf erhöht das tägliche Trinkziel anhand des geschätzten Schweißverlusts; eine fotografierte Mahlzeit wird auf Kalorien und Makros analysiert, und ihr Eiweiß- und Natriumgehalt fügt Verdauungswasser hinzu; jedes der 91 Getränke zählt mit seinem echten Hydrationswert statt als pauschales Glas.",
+            "Wo Suu hier hinter beiden Apps liegt: Die Lebensmitteldatenbank ist kleiner als die von MyFitnessPal oder Yazio, es gibt keinen Barcode-Scanner und keine Rezeptbibliothek. Wenn dir Datenbankbreite oder Rezepte am wichtigsten sind, bleiben die beiden oben verglichenen Apps die bessere Wahl — das sagen wir lieber, als etwas anderes zu behaupten."
+          ]
+        }
+      ],
+      "verdict": {
+        "head": "Fazit",
+        "body": [
+          "<strong>Nimm MyFitnessPal</strong>, wenn du viele verpackte Lebensmittel isst und die höchste Chance willst, genau dein Produkt zu finden — und akzeptierst, dass der Barcode-Scanner inzwischen Premium erfordert.",
+          "<strong>Nimm Yazio</strong>, wenn du kochst, Rezepte und Ernährungspläne willst, eine aufgeräumtere Oberfläche bevorzugst oder eine Gratisversion suchst, die länger brauchbar bleibt. Für die meisten, die 2026 neu anfangen, ist das die praktischere Wahl.",
+          "<strong>Keine der beiden</strong> behandelt Trinken oder Training als mehr als eine Nebensache. Wenn dein Workout dein Trinkziel verändern und deine Mahlzeit Teil derselben Rechnung sein soll, greifen beide konstruktionsbedingt zu kurz.",
+          "Der günstigste Weg zur Entscheidung: Nutze zwei Wochen lang Yazios Gratisversion. Wenn dir ständig Produkte fehlen, ist MyFitnessPals Datenbank den Wechsel wert."
+        ]
+      },
+      "cta": {
+        "head": "Kalorien, Training und Trinken in einer verbundenen App?",
+        "sub": "Kostenlos herunterladen · Premium 3 Tage gratis",
+        "button": "So macht es Suu"
+      },
+      "faq": [
+        {
+          "q": "Ist Yazio besser als MyFitnessPal?",
+          "a": "Für die meisten, die 2026 anfangen, ja — Yazio hat eine aufgeräumtere Oberfläche, stärkere Rezepte und Ernährungspläne und eine Gratisversion mit Barcode-Scanner, den MyFitnessPal zu Premium verschoben hat. MyFitnessPal bleibt besser, wenn du darauf angewiesen bist, obskure Markenprodukte zu finden, denn seine Lebensmitteldatenbank ist die größte der Kategorie."
+        },
+        {
+          "q": "Ist MyFitnessPal noch kostenlos?",
+          "a": "MyFitnessPal ist kostenlos herunterladbar, und Kalorien- sowie Makro-Tracking bleiben in der Gratisversion, aber der Barcode-Scanner wurde zu Premium verschoben. Die komplette Datenbank kannst du weiterhin kostenlos nach Namen durchsuchen."
+        },
+        {
+          "q": "Wer hat die größere Lebensmitteldatenbank, MyFitnessPal oder Yazio?",
+          "a": "MyFitnessPal, mit großem Abstand. Zwei Jahrzehnte nutzergenerierter Einträge bedeuten, dass Nischen- und regionale Markenprodukte dort viel eher zu finden sind. Yazios Datenbank ist kleiner, reicht aber für unverarbeitete Lebensmittel und gängige Produkte."
+        },
+        {
+          "q": "Soll ich von MyFitnessPal zu Yazio wechseln?",
+          "a": "Wechsle, wenn dich die Barcode-Bezahlschranke vertrieben hat, wenn du die meisten Mahlzeiten kochst und Rezepte willst oder wenn dich die überladene Oberfläche seltener eintragen lässt. Bleib, wenn du jahrelange Historie hast, die dir wichtig ist, oder häufig obskure Markenprodukte erfasst. Der Hauptaufwand eines Wechsels ist, gespeicherte Mahlzeiten und häufige Lebensmittel neu anzulegen."
+        },
+        {
+          "q": "Gibt es eine App, die Kalorien, Training und Wasser zusammen erfasst?",
+          "a": "Weder MyFitnessPal noch Yazio modellieren das Trinken über einen Gläserzähler hinaus, und erfasstes Training beeinflusst nur dein Kalorienbudget. Suu verbindet die drei: Das aufgezeichnete Workout erhöht dein Trinkziel anhand des geschätzten Schweißverlusts, und die eingetragene Mahlzeit fügt das Verdauungswasser hinzu, das ihr Eiweiß und Natrium erfordern. Die Lebensmitteldatenbank ist kleiner, und es gibt keinen Barcode-Scanner und keine Rezeptbibliothek."
+        },
+        {
+          "q": "Was ist günstiger, Yazio oder MyFitnessPal?",
+          "a": "Beide nutzen ähnliche Jahresabo-Modelle und haben häufig Aktionen, daher schwankt der Listenpreis je nach Region und Jahreszeit. Der aussagekräftigere Unterschied ist, was du ohne Bezahlung bekommst: Yazios Gratisversion enthält den Barcode-Scanner, die von MyFitnessPal nicht mehr."
+        }
+      ],
+      "references": [
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/",
+          "label": "Selbstbeobachtung der Ernährung und Gewichtsmanagement (PMC)"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5568610/",
+          "label": "Mobiles Ernährungstracking und Therapietreue (PMC)"
+        },
+        {
+          "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459",
+          "label": "EFSA — Ernährungsreferenzwerte für Wasser"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/de/bester-kalorienzaehler-app.html",
+          "title": "Der beste Kalorienzähler 2026",
+          "desc": "Yazio, FDDB, MyFitnessPal, Lifesum, Cronometer und Suu — verglichen nach Eingabetempo, Datenbank und…"
+        },
+        {
+          "href": "/blog/de/yazio-alternativen.html",
+          "title": "Yazio-Alternativen 2026: Welche App passt zu dir?",
+          "desc": "Wo Yazio stark bleibt, wo es hakt — und welche fünf Apps sich als Alternative lohnen: Kalorien, Trinken…"
+        },
+        {
+          "href": "/blog/de/lifesum-vs-myfitnesspal.html",
+          "title": "Lifesum oder MyFitnessPal: Welche Kalorien-App passt zu dir?",
+          "desc": "Die größte Datenbank oder ein aufgeräumtes, geführtes Erlebnis? Ein ehrlicher Vergleich von Lifesum und…"
+        },
+        {
+          "href": "/blog/de/cronometer-vs-lifesum.html",
+          "title": "Cronometer oder Lifesum: Welche Kalorien-App passt zu dir?",
+          "desc": "Mikronährstoff-Tiefe oder ein geführtes, schönes Erlebnis? Ein ehrlicher Vergleich von Cronometer und…"
+        }
+      ],
+      "published": "2026-10-15"
+    },
+    "it": {
+      "slug": "yazio-vs-myfitnesspal",
+      "published_display": "15 ottobre 2026",
+      "read_minutes": 8,
+      "badge": "⚖️ Testa a testa 2026",
+      "h1": "Yazio vs MyFitnessPal: quale contacalorie vince nel 2026?",
+      "meta": {
+        "title": "Yazio vs MyFitnessPal (2026) — Il confronto onesto | Suu",
+        "description": "MyFitnessPal e Yazio a confronto su dimensione del database alimentare, scanner di codici a barre, ricette, monitoraggio dei macro, limiti del piano gratuito e prezzo. Quale scegliere, quando cambiare e cosa manca a entrambe.",
+        "keywords": "yazio vs myfitnesspal, myfitnesspal vs yazio, yazio o myfitnesspal, alternativa a myfitnesspal, yazio recensione 2026, myfitnesspal recensione 2026, confronto contacalorie, confronto app calorie 2026",
+        "og_title": "Yazio vs MyFitnessPal: quale contacalorie vince nel 2026?",
+        "og_description": "Dimensione del database, codice a barre, ricette, versione gratuita e prezzo: un confronto onesto tra MyFitnessPal e Yazio, più il vuoto che lasciano entrambe."
+      },
+      "answer": "MyFitnessPal ha il database alimentare più grande e più probabilità di trovare un prodotto di marca tramite codice a barre, ma lo scanner ora è dietro Premium. Yazio ha ricette e piani alimentari più forti, un'interfaccia più pulita e una versione gratuita che resta utilizzabile più a lungo. Se registri cibo confezionato del supermercato, scegli MyFitnessPal; se cucini e vuoi idee per i pasti adatte ai tuoi macro, scegli Yazio.",
+      "disclosure": "Questo confronto è pubblicato da Suu, che realizza un'app concorrente. È un conflitto di interessi, quindi le sezioni su MyFitnessPal e Yazio qui sotto non contengono promozione di Suu, e la nostra app compare solo in una sezione chiaramente separata alla fine, che puoi saltare. I dettagli delle funzioni riflettono le informazioni pubbliche aggiornate ad agosto 2026; entrambe le app cambiano spesso i limiti dei piani, quindi verifica le condizioni attuali sulle pagine degli store.",
+      "intro": [
+        "MyFitnessPal e Yazio sono le due app tra cui finisce per scegliere la maggior parte delle persone quando decide di iniziare a contare le calorie sul serio. MyFitnessPal è il leader storico con i dati più completi; Yazio è lo sfidante europeo più pulito, che punta su ricette e piani.",
+        "La scelta di solito dipende da una domanda che le persone non si fanno abbastanza presto: <strong>il tuo problema è registrare ciò che hai mangiato o decidere cosa mangiare?</strong> Le due cose tirano in direzioni opposte."
+      ],
+      "table": {
+        "head": "MyFitnessPal vs Yazio",
+        "caption": "Confronto delle funzioni di MyFitnessPal e Yazio",
+        "col_feature": "Funzione",
+        "columns": [
+          "MyFitnessPal",
+          "Yazio"
+        ],
+        "suu_col": -1,
+        "rows": [
+          {
+            "label": "Dimensione del database alimentare",
+            "cells": [
+              {
+                "text": "✓ Il più grande della categoria",
+                "cls": "yes"
+              },
+              {
+                "text": "Grande",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Probabilità di trovare un prodotto di marca",
+            "cells": [
+              {
+                "text": "✓ La più alta",
+                "cls": "yes"
+              },
+              {
+                "text": "Buona",
+                "cls": ""
+              }
+            ]
+          },
+          {
+            "label": "Scanner di codici a barre nel piano gratuito",
+            "cells": [
+              {
+                "text": "✗ Passato a Premium",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Registrazione di calorie e macro",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Riconoscimento degli alimenti da foto",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Libreria di ricette",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Più forte",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Piani alimentari strutturati",
+            "cells": [
+              {
+                "text": "Limitati",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Ampi",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Interfaccia / affollamento",
+            "cells": [
+              {
+                "text": "Più affollata, più pubblicità",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Più pulita",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Usabilità della versione gratuita",
+            "cells": [
+              {
+                "text": "Più limitata da quando lo scanner è passato a Premium",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Più utilizzabile",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Community / importazione ricette",
+            "cells": [
+              {
+                "text": "✓ Enorme base di utenti",
+                "cls": "yes"
+              },
+              {
+                "text": "Più piccola",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Monitoraggio del digiuno",
+            "cells": [
+              {
+                "text": "Parziale",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Monitoraggio degli allenamenti nell'app",
+            "cells": [
+              {
+                "text": "Di base",
+                "cls": "no"
+              },
+              {
+                "text": "Di base",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Modello di idratazione (per bevanda)",
+            "cells": [
+              {
+                "text": "Contatore semplice",
+                "cls": "no"
+              },
+              {
+                "text": "Contatore semplice",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "L'allenamento aggiorna l'obiettivo d'acqua",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Sincronizzazione con Apple Salute / Health Connect",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          }
+        ]
+      },
+      "analysis": [
+        {
+          "head": "MyFitnessPal vince sui dati, con un grosso asterisco",
+          "body": [
+            "Nessuna app si avvicina al database alimentare di MyFitnessPal. Vent'anni di voci inserite dagli utenti significano che qualunque snack di marca poco noto tu abbia in mano, probabilmente qualcuno l'ha già registrato. Se la maggior parte di ciò che mangi esce da una confezione, è un vantaggio reale e difficile da replicare.",
+            "L'asterisco è che <strong>lo scanner di codici a barre è passato a Premium</strong>. Era la funzione per cui molti avevano scaricato l'app, e la sua rimozione dalla versione gratuita è il motivo principale per cui gli utenti se ne stanno andando. Il database resta disponibile nel piano gratuito: devi solo cercare per nome invece di scansionare.",
+            "Anche l'interfaccia è la più affollata delle due, con più inviti all'acquisto rispetto a Yazio."
+          ]
+        },
+        {
+          "head": "Yazio vince su tutto ciò che sta attorno al diario",
+          "body": [
+            "La libreria di ricette e i piani alimentari strutturati di Yazio sono i più approfonditi dei due. Se il tuo vero ostacolo è «non so cosa cucinare che rispetti i miei macro», Yazio ti risponde; MyFitnessPal per lo più presume che tu abbia già deciso.",
+            "Anche la sua versione gratuita è più utilizzabile. Puoi monitorare seriamente calorie e macro per mesi, scanner di codici a barre incluso, prima che il paywall diventi un vero limite.",
+            "Dove cede terreno è la copertura pura. Per un marchio locale di nicchia è più probabile trovare una voce su MyFitnessPal, anche se il database di Yazio è più che sufficiente per alimenti freschi e prodotti diffusi."
+          ],
+          "callout": "<strong>Regola pratica:</strong> cibo confezionato e spesa con molti codici a barre → MyFitnessPal. Cucinare, pianificare i pasti e una versione gratuita che dura → Yazio."
+        },
+        {
+          "head": "Dovresti passare da MyFitnessPal a Yazio?",
+          "body": [
+            "Due cose rendono il cambio costoso, ed entrambe vanno valutate con onestà.",
+            "La prima è <strong>la tua cronologia</strong>. Anni di dati registrati e pasti salvati non si trasferiscono facilmente. Se monitori su MyFitnessPal da molto tempo e tieni alle linee di tendenza, restare ha un valore reale.",
+            "La seconda sono <strong>le tue ricette salvate e gli alimenti frequenti</strong>. Ricrearli in una nuova app comporta qualche settimana di attrito, ed è proprio in quel periodo che le persone abbandonano il monitoraggio.",
+            "Cambiare ha senso se è stato il paywall dello scanner a spingerti, se cucini la maggior parte dei pasti o se l'interfaccia affollata ha iniziato a infastidirti al punto da farti registrare meno spesso. Altrimenti il vantaggio del leader è reale."
+          ]
+        },
+        {
+          "head": "Cosa lasciano sul tavolo entrambe",
+          "body": [
+            "MyFitnessPal e Yazio sono prima di tutto app di nutrizione. Acqua e allenamento sono stati aggiunti a lato, e si vede da quanto siano superficiali in entrambe.",
+            "<strong>L'idratazione è un conteggio, non un modello.</strong> Entrambe contano i bicchieri. Nessuna distingue cosa hai bevuto: 250 ml di caffè e 250 ml d'acqua valgono lo stesso per il bilancio dei liquidi, ma il corpo non funziona così. Nessuna aumenta il tuo obiettivo in una giornata calda.",
+            "<strong>L'allenamento non alimenta nulla di significativo.</strong> Puoi registrare un allenamento e le calorie forse compensano la tua quota, ma i liquidi persi con il sudore non vengono considerati da nessuna parte. In una giornata di allenamento intenso, il numero che cambia di più è proprio quello che nessuna delle due monitora."
+          ]
+        },
+        {
+          "head": "Trasparenza: dove si colloca la nostra app",
+          "body": [
+            "Pubblichiamo questo confronto e realizziamo anche un'app concorrente, quindi considera questa sezione una pubblicità: il verdetto su MyFitnessPal vs Yazio qui sopra vale anche senza di essa.",
+            "Suu è costruita attorno al vuoto descritto sopra: acqua, calorie e allenamento come un unico sistema collegato invece di tre diari paralleli. Una corsa registrata aumenta l'obiettivo d'acqua giornaliero in base alla perdita di sudore stimata; un pasto fotografato viene analizzato per calorie e macro, e il suo contenuto di proteine e sodio aggiunge acqua per la digestione; ognuna delle 91 bevande contribuisce con il suo reale valore di idratazione invece di contare come un bicchiere generico.",
+            "Dove Suu è indietro rispetto a entrambe le app: il suo database alimentare è più piccolo di quello di MyFitnessPal o Yazio, non ha uno scanner di codici a barre né una libreria di ricette. Se la tua priorità è l'ampiezza del database o le ricette, le due app confrontate sopra restano la scelta migliore: preferiamo dirlo piuttosto che fingere il contrario."
+          ]
+        }
+      ],
+      "verdict": {
+        "head": "Verdetto",
+        "body": [
+          "<strong>Scegli MyFitnessPal</strong> se mangi molto cibo confezionato e vuoi la massima probabilità di trovare il prodotto esatto, accettando che lo scanner di codici a barre ora richiede Premium.",
+          "<strong>Scegli Yazio</strong> se cucini, vuoi ricette e piani alimentari, preferisci un'interfaccia più pulita o vuoi una versione gratuita che resti utilizzabile più a lungo. Per la maggior parte di chi parte da zero nel 2026, è la scelta più pratica.",
+          "<strong>Nessuna delle due</strong> tratta idratazione o allenamento come qualcosa di più di un ripensamento. Se vuoi che l'allenamento cambi il tuo obiettivo d'acqua e che il pasto faccia parte dello stesso calcolo, entrambe sono insufficienti per come sono progettate.",
+          "Il modo più economico per decidere: usa la versione gratuita di Yazio per due settimane. Se continui a trovare prodotti mancanti, il database di MyFitnessPal vale il cambio."
+        ]
+      },
+      "cta": {
+        "head": "Vuoi calorie, allenamento e idratazione in un'unica app collegata?",
+        "sub": "Download gratuito · Premium gratis per 3 giorni",
+        "button": "Scopri come lo fa Suu"
+      },
+      "faq": [
+        {
+          "q": "Yazio è meglio di MyFitnessPal?",
+          "a": "Per la maggior parte di chi inizia nel 2026 sì: Yazio ha un'interfaccia più pulita, ricette e piani alimentari più forti e una versione gratuita che include lo scanner di codici a barre, che MyFitnessPal ha spostato in Premium. MyFitnessPal resta migliore se ti serve trovare prodotti di marca poco noti, perché il suo database alimentare è il più grande della categoria."
+        },
+        {
+          "q": "MyFitnessPal è ancora gratuita?",
+          "a": "MyFitnessPal si scarica gratis e la registrazione di calorie e macro resta nel piano gratuito, ma lo scanner di codici a barre è stato spostato in Premium. Puoi ancora cercare per nome in tutto il database senza pagare."
+        },
+        {
+          "q": "Quale ha il database alimentare più grande, MyFitnessPal o Yazio?",
+          "a": "MyFitnessPal, con ampio margine. Vent'anni di voci inserite dagli utenti fanno sì che i prodotti di marca di nicchia e regionali siano molto più facili da trovare lì. Il database di Yazio è più piccolo ma sufficiente per alimenti freschi e prodotti diffusi."
+        },
+        {
+          "q": "Dovrei passare da MyFitnessPal a Yazio?",
+          "a": "Cambia se è stato il paywall dello scanner a spingerti, se cucini la maggior parte dei pasti e vuoi ricette, o se l'interfaccia affollata ti fa registrare meno spesso. Resta se hai anni di cronologia a cui tieni o registri spesso prodotti di marca poco noti. Il costo principale del cambio è ricreare i pasti salvati e gli alimenti frequenti."
+        },
+        {
+          "q": "Esiste un'app che monitora calorie, allenamento e acqua insieme?",
+          "a": "Né MyFitnessPal né Yazio modellano l'idratazione oltre un contatore di bicchieri, e l'allenamento registrato influisce solo sulla tua quota di calorie. Suu collega le tre cose: l'allenamento registrato aumenta l'obiettivo d'acqua in base alla perdita di sudore stimata e il pasto registrato aggiunge l'acqua per la digestione richiesta da proteine e sodio. Il suo database alimentare è più piccolo e non ha scanner di codici a barre né libreria di ricette."
+        },
+        {
+          "q": "Cosa costa meno, Yazio o MyFitnessPal?",
+          "a": "Entrambe usano modelli di abbonamento annuale simili e fanno spesso promozioni, quindi il prezzo di listino varia per Paese e stagione. La differenza più significativa è cosa ottieni senza pagare: la versione gratuita di Yazio include lo scanner di codici a barre, quella di MyFitnessPal non più."
+        }
+      ],
+      "references": [
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/",
+          "label": "Automonitoraggio alimentare e gestione del peso (PMC)"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5568610/",
+          "label": "Monitoraggio alimentare da mobile e aderenza (PMC)"
+        },
+        {
+          "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459",
+          "label": "EFSA — valori dietetici di riferimento per l'acqua"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/it/migliore-app-conta-calorie.html",
+          "title": "La migliore app conta calorie del 2026",
+          "desc": "MyFitnessPal, Yazio, FatSecret, Lifesum, Cronometer e Suu — su velocità di inserimento, copertura del…"
+        },
+        {
+          "href": "/blog/it/alternative-a-yazio.html",
+          "title": "Alternative a Yazio: quale app fa per te? (2026)",
+          "desc": "Dove Yazio resta il migliore, dove non basta, e le cinque app che valgono il cambio: calorie, acqua…"
+        },
+        {
+          "href": "/blog/it/lifesum-vs-myfitnesspal.html",
+          "title": "Lifesum o MyFitnessPal: quale app conta calorie scegliere?",
+          "desc": "Il database più grande o un'esperienza più ordinata e guidata? Un confronto onesto tra Lifesum e…"
+        },
+        {
+          "href": "/blog/it/cronometer-vs-lifesum.html",
+          "title": "Cronometer o Lifesum: quale app conta calorie scegliere?",
+          "desc": "Profondità su vitamine e minerali o un'esperienza guidata e curata? Un confronto onesto tra Cronometer e…"
+        }
+      ],
+      "published": "2026-10-15"
+    },
+    "uk": {
+      "slug": "yazio-vs-myfitnesspal",
+      "published_display": "15 жовтня 2026",
+      "read_minutes": 8,
+      "badge": "⚖️ Віч-на-віч 2026",
+      "h1": "Yazio vs MyFitnessPal: який лічильник калорій кращий у 2026 році?",
+      "meta": {
+        "title": "Yazio vs MyFitnessPal (2026) — чесне порівняння | Suu",
+        "description": "Порівняння MyFitnessPal і Yazio: розмір бази продуктів, сканер штрихкодів, рецепти, облік макросів, обмеження безкоштовної версії та ціна. Що обрати, коли переходити й чого бракує обом.",
+        "keywords": "yazio vs myfitnesspal, myfitnesspal vs yazio, yazio чи myfitnesspal, альтернатива myfitnesspal, yazio огляд 2026, myfitnesspal огляд 2026, порівняння лічильників калорій, порівняння застосунків для калорій 2026",
+        "og_title": "Yazio vs MyFitnessPal: який лічильник калорій кращий у 2026 році?",
+        "og_description": "Розмір бази, штрихкоди, рецепти, безкоштовна версія й ціна — чесне порівняння MyFitnessPal і Yazio та прогалина, яку залишають обидва."
+      },
+      "answer": "У MyFitnessPal база продуктів більша, а шанси знайти фірмовий продукт за штрихкодом вищі — але сканер штрихкодів тепер доступний лише в Premium. У Yazio сильніші рецепти й плани харчування, чистіший інтерфейс, а безкоштовна версія довше лишається придатною. Якщо записуєш упаковані продукти із супермаркету, обирай MyFitnessPal; якщо готуєш сам і хочеш ідей страв під свої макроси — Yazio.",
+      "disclosure": "Це порівняння опубліковане Suu — розробником конкурентного застосунку. Це конфлікт інтересів, тому в розділах про MyFitnessPal і Yazio нижче немає реклами Suu, а наш застосунок згадується лише в чітко відокремленому розділі наприкінці, який можна пропустити. Відомості про функції відображають загальнодоступну інформацію станом на серпень 2026 року; обидва застосунки часто змінюють обмеження тарифів, тож перевіряй актуальні умови на сторінках магазинів.",
+      "intro": [
+        "MyFitnessPal і Yazio — два застосунки, між якими зрештою обирає більшість тих, хто вирішив серйозно рахувати калорії. MyFitnessPal — старожил із найглибшою базою; Yazio — охайніший європейський суперник з акцентом на рецепти й плани.",
+        "Зазвичай вибір зводиться до питання, яке люди ставлять собі надто пізно: <strong>твоя проблема — записувати, що ти з'їв, чи вирішувати, що їсти?</strong> Ці завдання тягнуть у різні боки."
+      ],
+      "table": {
+        "head": "MyFitnessPal vs Yazio",
+        "caption": "Порівняння функцій MyFitnessPal і Yazio",
+        "col_feature": "Функція",
+        "columns": [
+          "MyFitnessPal",
+          "Yazio"
+        ],
+        "suu_col": -1,
+        "rows": [
+          {
+            "label": "Розмір бази продуктів",
+            "cells": [
+              {
+                "text": "✓ Найбільша в категорії",
+                "cls": "yes"
+              },
+              {
+                "text": "Велика",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Шанс знайти фірмовий продукт",
+            "cells": [
+              {
+                "text": "✓ Найвищий",
+                "cls": "yes"
+              },
+              {
+                "text": "Добрий",
+                "cls": ""
+              }
+            ]
+          },
+          {
+            "label": "Сканер штрихкодів у безкоштовній версії",
+            "cells": [
+              {
+                "text": "✗ Перенесено в Premium",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Облік калорій і макросів",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Розпізнавання їжі за фото",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Бібліотека рецептів",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓ Сильніша",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Структуровані плани харчування",
+            "cells": [
+              {
+                "text": "Обмежено",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Широкі",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Інтерфейс / перевантаженість",
+            "cells": [
+              {
+                "text": "Завантаженіший, більше реклами",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Чистіший",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Придатність безкоштовної версії",
+            "cells": [
+              {
+                "text": "Скромніша, відколи прибрали сканер",
+                "cls": "no"
+              },
+              {
+                "text": "✓ Придатніша",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Спільнота / імпорт рецептів",
+            "cells": [
+              {
+                "text": "✓ Величезна база користувачів",
+                "cls": "yes"
+              },
+              {
+                "text": "Менша",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Трекер голодування",
+            "cells": [
+              {
+                "text": "Частково",
+                "cls": "no"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          },
+          {
+            "label": "Облік тренувань у застосунку",
+            "cells": [
+              {
+                "text": "Базовий",
+                "cls": "no"
+              },
+              {
+                "text": "Базовий",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Модель гідратації (за напоями)",
+            "cells": [
+              {
+                "text": "Простий лічильник",
+                "cls": "no"
+              },
+              {
+                "text": "Простий лічильник",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Тренування оновлює ціль щодо води",
+            "cells": [
+              {
+                "text": "✗",
+                "cls": "no"
+              },
+              {
+                "text": "✗",
+                "cls": "no"
+              }
+            ]
+          },
+          {
+            "label": "Синхронізація з Apple Health / Health Connect",
+            "cells": [
+              {
+                "text": "✓",
+                "cls": "yes"
+              },
+              {
+                "text": "✓",
+                "cls": "yes"
+              }
+            ]
+          }
+        ]
+      },
+      "analysis": [
+        {
+          "head": "MyFitnessPal виграє за даними — з великим застереженням",
+          "body": [
+            "Жоден застосунок не наближається до бази продуктів MyFitnessPal. Двадцять років записів користувачів означають: хоч би який маловідомий фірмовий снек ти тримав у руках, хтось, найімовірніше, уже його вніс. Якщо більша частина твоєї їжі — з упаковки, це справжня й важко відтворювана перевага.",
+            "Застереження в тому, що <strong>сканер штрихкодів переїхав у Premium</strong>. Саме заради цієї функції багато хто й завантажував застосунок, і її вилучення з безкоштовної версії — головна причина, через яку користувачі йдуть. База продуктів у безкоштовному тарифі й далі твоя — просто шукати доведеться за назвою, а не сканувати.",
+            "Інтерфейс теж завантаженіший із двох, з більшою кількістю пропозицій купити підписку, ніж у Yazio."
+          ]
+        },
+        {
+          "head": "Yazio виграє в усьому, що довкола щоденника",
+          "body": [
+            "Бібліотека рецептів і структуровані плани харчування в Yazio глибші. Якщо твоє справжнє вузьке місце — «не знаю, що приготувати під мої макроси», Yazio на це відповідає; MyFitnessPal здебільшого виходить із того, що ти вже вирішив.",
+            "Його безкоштовна версія теж придатніша. Можна місяцями серйозно рахувати калорії й макроси, разом зі сканером штрихкодів, перш ніж платна стіна стане реальним обмеженням.",
+            "Поступається Yazio чистим охопленням. Для нішевого місцевого бренду запис імовірніше знайдеться в MyFitnessPal — хоча бази Yazio більш ніж досить для цільних продуктів і масових товарів."
+          ],
+          "callout": "<strong>Просте правило:</strong> упакована їжа й покупки зі штрихкодами → MyFitnessPal. Готування, планування харчування й довговічна безкоштовна версія → Yazio."
+        },
+        {
+          "head": "Чи варто переходити з MyFitnessPal на Yazio?",
+          "body": [
+            "Дві речі роблять перехід дорогим, і обидві варто чесно зважити.",
+            "По-перше, <strong>твоя історія</strong>. Роки записаних даних і збережені страви непросто перенести. Якщо ти давно ведеш облік у MyFitnessPal і цінуєш графіки динаміки, залишитися — реальна цінність.",
+            "По-друге, <strong>збережені рецепти й часті продукти</strong>. Відтворення їх у новому застосунку — кілька тижнів тертя, а саме в цей період люди кидають облік.",
+            "Перехід виправданий, якщо тебе виштовхнула платна стіна сканера, якщо ти сам готуєш більшість страв або якщо перевантажений інтерфейс дратує настільки, що ти став записувати рідше. Інакше перевага старожила реальна."
+          ]
+        },
+        {
+          "head": "Що обидва залишають поза увагою",
+          "body": [
+            "MyFitnessPal і Yazio — насамперед застосунки про харчування. Воду й тренування додано збоку, і це видно з того, наскільки поверхово вони реалізовані в обох.",
+            "<strong>Вода — це лічильник, а не модель.</strong> Обидва рахують склянки. Жоден не розрізняє, що ти випив: 250 мл кави й 250 мл води для водного балансу рахуються однаково, хоча організм працює не так. Жоден не підвищує ціль у спекотний день.",
+            "<strong>Тренування ні на що суттєве не впливають.</strong> Тренування можна записати, і калорії, можливо, збільшать твою норму, але рідину, втрачену з потом, ніде не враховують. У важкий тренувальний день найбільше змінюється саме те число, яке не відстежує жоден із застосунків."
+          ]
+        },
+        {
+          "head": "Розкриття: де наш застосунок",
+          "body": [
+            "Ми публікуємо це порівняння й робимо конкурентний застосунок, тож вважай цей розділ рекламою — висновок щодо MyFitnessPal і Yazio вище правильний і без нього.",
+            "Suu побудований навколо описаної вище прогалини: вода, калорії й тренування як одна пов'язана система, а не три паралельні щоденники. Записана пробіжка підвищує денну ціль щодо води на основі оцінки втрат із потом; сфотографовану страву аналізують на калорії й макроси, а білок і натрій у ній додають воду для травлення; кожен із 91 напою враховується за своїм реальним внеском у гідратацію, а не як узагальнена склянка.",
+            "У чому Suu поступається обом застосункам: база продуктів менша, ніж у MyFitnessPal чи Yazio, немає сканера штрихкодів і бібліотеки рецептів. Якщо для тебе головне — широта бази чи рецепти, два порівняні вище застосунки лишаються кращим вибором; ми воліємо сказати це прямо, ніж удавати, що це не так."
+          ]
+        }
+      ],
+      "verdict": {
+        "head": "Висновок",
+        "body": [
+          "<strong>Обирай MyFitnessPal</strong>, якщо їси багато упакованої їжі й хочеш максимальний шанс знайти точний продукт — змирившись із тим, що сканер штрихкодів тепер потребує Premium.",
+          "<strong>Обирай Yazio</strong>, якщо готуєш, хочеш рецепти й плани харчування, віддаєш перевагу чистішому інтерфейсу або хочеш безкоштовну версію, яка довше лишається придатною. Для більшості тих, хто починає у 2026 році, це практичніший вибір.",
+          "<strong>Жоден</strong> не приділяє воді чи тренуванням більше, ніж залишкову увагу. Якщо хочеш, щоб тренування змінювало ціль щодо води, а їжа була частиною того самого розрахунку, обидва не впораються за своєю будовою.",
+          "Найдешевший спосіб вирішити: два тижні користуйся безкоштовною версією Yazio. Якщо постійно не знаходиш продукти, база MyFitnessPal варта переходу."
+        ]
+      },
+      "cta": {
+        "head": "Хочеш калорії, тренування й воду в одному пов'язаному застосунку?",
+        "sub": "Безкоштовне завантаження · Premium безкоштовно 3 дні",
+        "button": "Подивитися, як це робить Suu"
+      },
+      "faq": [
+        {
+          "q": "Yazio кращий за MyFitnessPal?",
+          "a": "Для більшості тих, хто починає у 2026 році, — так: у Yazio чистіший інтерфейс, сильніші рецепти й плани харчування, а безкоштовна версія містить сканер штрихкодів, який MyFitnessPal переніс у Premium. MyFitnessPal лишається кращим, якщо тобі важливо знаходити маловідомі фірмові продукти: його база — найбільша в категорії."
+        },
+        {
+          "q": "MyFitnessPal досі безкоштовний?",
+          "a": "MyFitnessPal можна завантажити безкоштовно, і облік калорій і макросів лишається в безкоштовному тарифі, але сканер штрихкодів перенесено в Premium. Шукати за назвою в усій базі й далі можна безкоштовно."
+        },
+        {
+          "q": "У кого база продуктів більша — у MyFitnessPal чи Yazio?",
+          "a": "У MyFitnessPal, із великим відривом. Двадцять років записів користувачів означають, що нішеві й регіональні фірмові продукти там знайти значно ймовірніше. База Yazio менша, але її досить для цільних продуктів і масових товарів."
+        },
+        {
+          "q": "Чи варто мені переходити з MyFitnessPal на Yazio?",
+          "a": "Переходь, якщо тебе виштовхнула платна стіна сканера, якщо готуєш більшість страв і хочеш рецепти або якщо перевантажений інтерфейс змушує тебе записувати рідше. Залишайся, якщо маєш роки цінної історії чи часто записуєш маловідомі фірмові продукти. Головна ціна переходу — заново створити збережені страви й часті продукти."
+        },
+        {
+          "q": "Чи є застосунок, що враховує калорії, тренування й воду разом?",
+          "a": "Ні MyFitnessPal, ні Yazio не моделюють воду далі за лічильник склянок, а записане тренування впливає лише на норму калорій. Suu пов'язує всі три: записане тренування підвищує ціль щодо води на основі оцінки втрат із потом, а записана страва додає воду для травлення, якої потребують її білок і натрій. База продуктів менша, сканера штрихкодів і бібліотеки рецептів немає."
+        },
+        {
+          "q": "Що дешевше — Yazio чи MyFitnessPal?",
+          "a": "Обидва використовують схожі моделі річної підписки й часто проводять акції, тож базова ціна залежить від регіону й сезону. Суттєвіша різниця в тому, що ти отримуєш безкоштовно: безкоштовна версія Yazio містить сканер штрихкодів, у MyFitnessPal — уже ні."
+        }
+      ],
+      "references": [
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858984/",
+          "label": "Самоконтроль харчування та керування вагою (PMC)"
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5568610/",
+          "label": "Мобільний облік харчування та прихильність (PMC)"
+        },
+        {
+          "href": "https://www.efsa.europa.eu/en/efsajournal/pub/1459",
+          "label": "EFSA — референтні значення споживання води"
+        }
+      ],
+      "related": [
+        {
+          "href": "/blog/uk/najkrashchyj-lichylnyk-kalorij.html",
+          "title": "Найкращий лічильник калорій у 2026",
+          "desc": "MyFitnessPal, Yazio, FatSecret, Lifesum, Cronometer і Suu — за швидкістю запису, охопленням бази й тим…"
+        },
+        {
+          "href": "/blog/uk/alternatyvy-yazio.html",
+          "title": "Альтернативи Yazio: який застосунок обрати у 2026 році",
+          "desc": "Де Yazio досі найкращий, де його бракує — і п'ять застосунків, на які варто перейти: калорії, вода…"
+        },
+        {
+          "href": "/blog/uk/lifesum-vs-myfitnesspal.html",
+          "title": "Lifesum чи MyFitnessPal: який лічильник калорій обрати?",
+          "desc": "Найбільша база чи простіший і зрозуміліший досвід? Чесне порівняння Lifesum і MyFitnessPal — і…"
+        },
+        {
+          "href": "/blog/uk/cronometer-vs-lifesum.html",
+          "title": "Cronometer чи Lifesum: який лічильник калорій обрати?",
+          "desc": "Глибина вітамінів і мінералів чи зрозумілий, гарний досвід? Чесне порівняння Cronometer і Lifesum — і…"
+        }
+      ],
+      "published": "2026-10-15"
     }
   }
 }

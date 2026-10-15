@@ -5,8 +5,56 @@
     <link>https://suuapp.com/blog.html</link>
     <description>Su takibi, kalori sayma ve egzersiz üzerine yazılar.</description>
     <language>tr-TR</language>
-    <lastBuildDate>Wed, 14 Oct 2026 05:59:08 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 10:44:37 +0000</lastBuildDate>
     <atom:link href="https://suuapp.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Yazio vs MyFitnessPal: 2026'da Hangi Kalori Sayacı Kazanır?</title>
+      <link>https://suuapp.com/blog/yazio-vs-myfitnesspal.html</link>
+      <guid isPermaLink="true">https://suuapp.com/blog/yazio-vs-myfitnesspal.html</guid>
+      <description>MyFitnessPal ve Yazio'yu besin veritabanı büyüklüğü, barkod tarama, tarifler, makro takibi, ücretsiz plan sınırları ve fiyat açısından karşılaştırdık. Hangisini seçmeli, ne zaman geçmeli ve ikisinin de eksik bıraktığı şey.</description>
+      <dc:creator>Furkan Mert Fındıklı</dc:creator>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Cronometer vs Yazio: Hassasiyet mi, Pratiklik mi?</title>
+      <link>https://suuapp.com/blog/cronometer-vs-yazio.html</link>
+      <guid isPermaLink="true">https://suuapp.com/blog/cronometer-vs-yazio.html</guid>
+      <description>Yazio ve Cronometer'ı mikro besin derinliği, veri doğruluğu, tarifler, ücretsiz sürüm ve günlük kullanım kolaylığı açısından karşılaştırdık. Hangisi hassas takip yapanlara, hangisi günlük kayda uygun?</description>
+      <dc:creator>Furkan Mert Fındıklı</dc:creator>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>MyFitnessPal vs Lose It!</title>
+      <link>https://suuapp.com/blog/myfitnesspal-vs-lose-it.html</link>
+      <guid isPermaLink="true">https://suuapp.com/blog/myfitnesspal-vs-lose-it.html</guid>
+      <description>MyFitnessPal'ın besin veritabanı daha büyük; Lose It!'in ücretsiz planı daha cömert ve barkod taraması ücretsiz. İkisini kayıt hızı, veri kalitesi, fiyat ve her ödeme duvarının gerçekte neyi kilitlediği açısından karşılaştırdık.</description>
+      <dc:creator>Furkan Mert Fındıklı</dc:creator>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>WaterMinder vs Hydro Coach</title>
+      <link>https://suuapp.com/blog/waterminder-vs-hydro-coach.html</link>
+      <guid isPermaLink="true">https://suuapp.com/blog/waterminder-vs-hydro-coach.html</guid>
+      <description>WaterMinder ve Hydro Coach en çok yüklenen iki su takip uygulaması ve birbirinin tam tersi kullanıcılar için yapılmışlar. Fiyatı, Apple Watch ve Wear OS desteğini, hedef hesaplamayı ve ücretsiz sürüm sınırlarını karşılaştırdık.</description>
+      <dc:creator>Furkan Mert Fındıklı</dc:creator>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Lifesum vs Yazio: Hangi Kalori Uygulamasını Seçmeli?</title>
+      <link>https://suuapp.com/blog/lifesum-vs-yazio.html</link>
+      <guid isPermaLink="true">https://suuapp.com/blog/lifesum-vs-yazio.html</guid>
+      <description>Lifesum ve Yazio'yu besin veritabanı, tarifler, makro takibi, ücretsiz plan sınırları ve fiyat açısından karşılaştırdık. Hangisi yeni başlayanlara, hangisi öğün planlayanlara uygun — ve ikisinin de yapmadığı şey.</description>
+      <dc:creator>Furkan Mert Fındıklı</dc:creator>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Strava vs Nike Run Club</title>
+      <link>https://suuapp.com/blog/strava-vs-nike-run-club.html</link>
+      <guid isPermaLink="true">https://suuapp.com/blog/strava-vs-nike-run-club.html</guid>
+      <description>Nike Run Club ücretsiz ve sana koçluk yapar; Strava sosyal, çok sporlu ve analitik ama en iyi özelliklerini abonelikte tutar. İkisini GPS, antrenman planları, bisiklet desteği ve fiyat açısından karşılaştırdık.</description>
+      <dc:creator>Furkan Mert Fındıklı</dc:creator>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Suu Güvenli mi? Kim Geliştiriyor, Verilerin Nasıl Korunuyor</title>
       <link>https://suuapp.com/blog/suu-guvenli-mi.html</link>
@@ -278,54 +326,6 @@
       <description>Suu Premium üyeliklerinin %2'si Afrika'da temiz su kuyusu projelerine bağışlanıyor. Tüm dekontlar publik, JSON şeffaf, git ile takip ediliyor. Tek indie uygulama.</description>
       <dc:creator>Furkan Mert Fındıklı</dc:creator>
       <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Çay Susuzluk Giderir mi? Hidrasyon Rehberi</title>
-      <link>https://suuapp.com/blog/cay-hidrasyon.html</link>
-      <guid isPermaLink="true">https://suuapp.com/blog/cay-hidrasyon.html</guid>
-      <description>Yeşil çay, siyah çay, bitki çayları susuzluk giderir mi? Su yerine geçer mi? 12+ çay türü için hidrasyon faktörü, kafein ve sağlık etkileri.</description>
-      <dc:creator>Furkan Mert Fındıklı</dc:creator>
-      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Günde Kaç Fincan Kahve Sağlıklı? FDA ve Kişisel Tolerans Rehberi</title>
-      <link>https://suuapp.com/blog/gunde-kac-kahve.html</link>
-      <guid isPermaLink="true">https://suuapp.com/blog/gunde-kac-kahve.html</guid>
-      <description>Günde 2 kahve sağlıklı mı yoksa 4 mü? FDA, EFSA ve ACOG limitleri, kafein metabolizma hızı, hamile/sporcu/kalp hastası özel limitleri ve Suu ile günlük takip.</description>
-      <dc:creator>Furkan Mert Fındıklı</dc:creator>
-      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Kahveyi Azaltmak İçin 7 Bilimsel Strateji</title>
-      <link>https://suuapp.com/blog/kahveyi-azaltmak.html</link>
-      <guid isPermaLink="true">https://suuapp.com/blog/kahveyi-azaltmak.html</guid>
-      <description>Çok kahve içiyorsunuz ve azaltmak istiyorsunuz ama yapamıyor musunuz? Bu rehberde kafein bağımlılığının bilimsel arka planı + 7 günlük azaltma planı + Suu ile takip stratejisi.</description>
-      <dc:creator>Furkan Mert Fındıklı</dc:creator>
-      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Meyve Suyu mu Su mu? Sağlık Karşılaştırması</title>
-      <link>https://suuapp.com/blog/meyve-suyu-vs-su.html</link>
-      <guid isPermaLink="true">https://suuapp.com/blog/meyve-suyu-vs-su.html</guid>
-      <description>Taze sıkılmış meyve suyu mu paketli mi? Su yerine geçer mi? Şeker içeriği, vitamin değeri, çocukta meyve suyu ve diyabet riski rehberi.</description>
-      <dc:creator>Furkan Mert Fındıklı</dc:creator>
-      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Enerji İçeceği Tüketimini Nasıl Kontrol Edersiniz?</title>
-      <link>https://suuapp.com/blog/enerji-icecegi-kontrolu.html</link>
-      <guid isPermaLink="true">https://suuapp.com/blog/enerji-icecegi-kontrolu.html</guid>
-      <description>Red Bull, Monster, Burn enerji içeceği tüketimini nasıl azaltırsınız? Kafein/şeker içeriği, FDA limit, gençlerde risk ve Suu ile takip rehberi.</description>
-      <dc:creator>Furkan Mert Fındıklı</dc:creator>
-      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Alkol Sonrası Hidrasyon: Hangover Önlemenin Bilimsel Yolu</title>
-      <link>https://suuapp.com/blog/alkol-sonrasi-hidrasyon.html</link>
-      <guid isPermaLink="true">https://suuapp.com/blog/alkol-sonrasi-hidrasyon.html</guid>
-      <description>Bira, şarap, viski içtiğinizde vücudunuz su kaybediyor. Alkol türüne göre telafi suyu, ertesi gün rehidrasyon planı ve Suu ile akıllı takip rehberi.</description>
-      <dc:creator>Furkan Mert Fındıklı</dc:creator>
-      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>

@@ -8,10 +8,10 @@
       "h1": "Uygulama Karşılaştırmaları: Kalori, Egzersiz ve Su Takibi",
       "meta": {
         "title": "Kalori, Egzersiz ve Su Takip Uygulaması Karşılaştırmaları (2026) | Suu",
-        "description": "Kalori sayma, egzersiz takibi ve su takibi uygulamalarının tek tek karşılaştırıldığı 15 inceleme: MyFitnessPal, Yazio, Cal AI, Lifesum, Cronometer, Strava ve Suu. Hangisi kime uygun?",
+        "description": "Kalori sayma, egzersiz takibi ve su takibi uygulamalarının tek tek karşılaştırıldığı 21 inceleme: MyFitnessPal, Yazio, Cal AI, Lifesum, Cronometer, Strava ve Suu. Hangisi kime uygun?",
         "keywords": "kalori uygulaması karşılaştırma, en iyi kalori sayma uygulaması, egzersiz takip uygulaması, su takip uygulaması, MyFitnessPal alternatifi, Yazio alternatifi, Cal AI alternatifi",
         "og_title": "Kalori, Egzersiz ve Su Takip Uygulaması Karşılaştırmaları (2026)",
-        "og_description": "15 karşılaştırma tek sayfada: MyFitnessPal, Yazio, Cal AI, Lifesum, Cronometer, Strava ve Suu. Hangisi kime uygun?"
+        "og_description": "21 karşılaştırma tek sayfada: MyFitnessPal, Yazio, Cal AI, Lifesum, Cronometer, Strava ve Suu. Hangisi kime uygun?"
       },
       "answer": "Kalori sayacı seçerken üç şey belirleyici: yemek girişinin ne kadar hızlı olduğu, ücretsiz katmanın gerçekten işe yarayıp yaramadığı ve egzersizin günlük hedefini güncelleyip güncellemediği. Aşağıdaki karşılaştırmalar bu üç ölçütü uygulama uygulama inceliyor.",
       "intro": [
@@ -31,7 +31,20 @@
             "blog/ucretsiz-kalori-sayaci.html",
             "blog/suu-vs-myfitnesspal.html",
             "blog/suu-vs-yazio.html",
-            "blog/suu-vs-cal-ai.html",
+            "blog/suu-vs-cal-ai.html"
+          ]
+        },
+        {
+          "title": "Rakip vs rakip",
+          "blurb": "Diğer uygulamalar arasında tarafsız kafa kafaya karşılaştırmalar; Suu bu yarışta yok.",
+          "accent": "neutral",
+          "pages": [
+            "blog/lifesum-vs-yazio.html",
+            "blog/yazio-vs-myfitnesspal.html",
+            "blog/cronometer-vs-yazio.html",
+            "blog/myfitnesspal-vs-lose-it.html",
+            "blog/strava-vs-nike-run-club.html",
+            "blog/waterminder-vs-hydro-coach.html",
             "blog/cronometer-vs-lifesum.html",
             "blog/lifesum-vs-myfitnesspal.html"
           ]
@@ -153,7 +166,20 @@
             "blog/ar/afdal-tatbiq-hisab-suerat.html",
             "blog/ar/badail-yazio.html",
             "blog/ar/suu-vs-myfitnesspal.html",
-            "blog/ar/suu-vs-yazio.html",
+            "blog/ar/suu-vs-yazio.html"
+          ]
+        },
+        {
+          "title": "منافس أمام منافس",
+          "blurb": "مقارنات محايدة مباشرة بين تطبيقات أخرى، لا ناقة لنا فيها ولا جمل.",
+          "accent": "neutral",
+          "pages": [
+            "blog/ar/lifesum-vs-yazio.html",
+            "blog/ar/yazio-vs-myfitnesspal.html",
+            "blog/ar/cronometer-vs-yazio.html",
+            "blog/ar/myfitnesspal-vs-lose-it.html",
+            "blog/ar/strava-vs-nike-run-club.html",
+            "blog/ar/waterminder-vs-hydro-coach.html",
             "blog/ar/cronometer-vs-lifesum.html",
             "blog/ar/lifesum-vs-myfitnesspal.html"
           ]
@@ -203,7 +229,20 @@
             "blog/ru/luchshee-prilozhenie-podscheta-kalorij.html",
             "blog/ru/alternativy-yazio.html",
             "blog/ru/suu-vs-myfitnesspal.html",
-            "blog/ru/suu-vs-yazio.html",
+            "blog/ru/suu-vs-yazio.html"
+          ]
+        },
+        {
+          "title": "Конкурент против конкурента",
+          "blurb": "Нейтральные сравнения других приложений между собой — Suu в этом споре не участвует.",
+          "accent": "neutral",
+          "pages": [
+            "blog/ru/lifesum-vs-yazio.html",
+            "blog/ru/yazio-vs-myfitnesspal.html",
+            "blog/ru/cronometer-vs-yazio.html",
+            "blog/ru/myfitnesspal-vs-lose-it.html",
+            "blog/ru/strava-vs-nike-run-club.html",
+            "blog/ru/waterminder-vs-hydro-coach.html",
             "blog/ru/cronometer-vs-lifesum.html",
             "blog/ru/lifesum-vs-myfitnesspal.html"
           ]
@@ -251,7 +290,20 @@
           "accent": "calories",
           "pages": [
             "blog/de/bester-kalorienzaehler-app.html",
-            "blog/de/yazio-alternativen.html",
+            "blog/de/yazio-alternativen.html"
+          ]
+        },
+        {
+          "title": "Konkurrent gegen Konkurrent",
+          "blurb": "Neutrale Direktvergleiche zwischen anderen Apps — Suu ist hier nicht im Rennen.",
+          "accent": "neutral",
+          "pages": [
+            "blog/de/lifesum-vs-yazio.html",
+            "blog/de/yazio-vs-myfitnesspal.html",
+            "blog/de/cronometer-vs-yazio.html",
+            "blog/de/myfitnesspal-vs-lose-it.html",
+            "blog/de/strava-vs-nike-run-club.html",
+            "blog/de/waterminder-vs-hydro-coach.html",
             "blog/de/cronometer-vs-lifesum.html",
             "blog/de/lifesum-vs-myfitnesspal.html"
           ]
@@ -299,7 +351,20 @@
           "accent": "calories",
           "pages": [
             "blog/it/migliore-app-conta-calorie.html",
-            "blog/it/alternative-a-yazio.html",
+            "blog/it/alternative-a-yazio.html"
+          ]
+        },
+        {
+          "title": "Concorrente contro concorrente",
+          "blurb": "Confronti neutrali tra altre app, senza Suu in gara.",
+          "accent": "neutral",
+          "pages": [
+            "blog/it/lifesum-vs-yazio.html",
+            "blog/it/yazio-vs-myfitnesspal.html",
+            "blog/it/cronometer-vs-yazio.html",
+            "blog/it/myfitnesspal-vs-lose-it.html",
+            "blog/it/strava-vs-nike-run-club.html",
+            "blog/it/waterminder-vs-hydro-coach.html",
             "blog/it/cronometer-vs-lifesum.html",
             "blog/it/lifesum-vs-myfitnesspal.html"
           ]
@@ -347,7 +412,20 @@
           "accent": "calories",
           "pages": [
             "blog/uk/najkrashchyj-lichylnyk-kalorij.html",
-            "blog/uk/alternatyvy-yazio.html",
+            "blog/uk/alternatyvy-yazio.html"
+          ]
+        },
+        {
+          "title": "Конкурент проти конкурента",
+          "blurb": "Нейтральні порівняння інших застосунків між собою — Suu в цій суперечці не бере участі.",
+          "accent": "neutral",
+          "pages": [
+            "blog/uk/lifesum-vs-yazio.html",
+            "blog/uk/yazio-vs-myfitnesspal.html",
+            "blog/uk/cronometer-vs-yazio.html",
+            "blog/uk/myfitnesspal-vs-lose-it.html",
+            "blog/uk/strava-vs-nike-run-club.html",
+            "blog/uk/waterminder-vs-hydro-coach.html",
             "blog/uk/cronometer-vs-lifesum.html",
             "blog/uk/lifesum-vs-myfitnesspal.html"
           ]
