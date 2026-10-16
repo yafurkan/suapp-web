@@ -1,0 +1,298 @@
+{
+  "_note": "Suu'nun suuapp.com DIŞINDAKİ varlığı (bağımsız kaynaklar). Yeni bir haber/profil eklemek için 'sources' listesine bir giriş ekleyip python3 scripts/build-independent-sources.py --apply çalıştır. Basın girişleri (group: press) için: outlet, title, date (YYYY-MM-DD), lang. Yalnızca GERÇEKTEN yayımlanmış ve bağlantısı çalışan kaynaklar eklenir; kendi yazdığımız yazılar (ör. HackerNoon) 'own: true' ile işaretlenir.",
+  "checked": "2026-10-16",
+  "sources": [
+    {"id": "crunchbase", "group": "business", "name": "Crunchbase", "url": "https://www.crunchbase.com/organization/suu-1c8b"},
+    {"id": "linkedin", "group": "business", "name": "LinkedIn", "url": "https://www.linkedin.com/company/suuapp/"},
+    {"id": "producthunt", "group": "directories", "name": "Product Hunt", "url": "https://www.producthunt.com/products/suu-water-tracker"},
+    {"id": "alternativeto", "group": "directories", "name": "AlternativeTo", "url": "https://alternativeto.net/software/suu--su-takip/about/"},
+    {"id": "appstore", "group": "stores", "name": "App Store", "url": "https://apps.apple.com/us/app/suu-su-takip/id6757619920"},
+    {"id": "googleplay", "group": "stores", "name": "Google Play", "url": "https://play.google.com/store/apps/details?id=com.sutakip.suutakippro"},
+    {"id": "x", "group": "social", "name": "X (@SuuTakip)", "url": "https://x.com/SuuTakip"},
+    {"id": "instagram", "group": "social", "name": "Instagram (@suutakip)", "url": "https://www.instagram.com/suutakip/"},
+    {"id": "facebook", "group": "social", "name": "Facebook", "url": "https://www.facebook.com/profile.php?id=61580176610557"}
+  ],
+  "group_order": ["press", "business", "directories", "stores", "social"],
+  "pages": {
+    "tr": {
+      "badge": "🔎 Bağımsız kaynaklar",
+      "h1": "Suu bağımsız kaynaklarda",
+      "meta": {
+        "title": "Suu Hakkında Bağımsız Kaynaklar: Haberler, Profiller ve Mağaza Sayfaları | Suu",
+        "description": "Suu'nun suuapp.com dışında yer aldığı bağımsız kaynaklar: Crunchbase ve LinkedIn şirket profilleri, Product Hunt ve AlternativeTo ürün sayfaları, App Store ve Google Play. Basında çıkan yazılar burada listelenir.",
+        "keywords": "suu uygulaması haberleri, suu app hakkında, suu crunchbase, suu product hunt, suu linkedin, suu kalori su fitness uygulaması, suu bağımsız kaynaklar",
+        "og_title": "Suu bağımsız kaynaklarda",
+        "og_description": "Suu'nun suuapp.com dışındaki şirket profilleri, ürün sayfaları, mağaza sayfaları ve basın yazıları tek listede."
+      },
+      "answer": "Suu, suuapp.com dışında şu bağımsız kaynaklarda yer alıyor: Crunchbase ve LinkedIn'deki şirket profilleri, Product Hunt ve AlternativeTo'daki ürün sayfaları ve App Store ile Google Play'deki mağaza sayfaları. Suu hakkında basında yayımlanan yazılar çıktıkça bu sayfaya tarihleriyle eklenir.",
+      "intro": [
+        "Bu sayfa, Suu'nun resmi sitesi dışındaki varlığını tek yerde toplar: şirket veritabanları, ürün dizinleri, uygulama mağazaları, resmi sosyal hesaplar ve basın yazıları. Her bağlantı başka bir siteye gider; içerikleri o sitelerin sorumluluğundadır.",
+        "<strong>Ad ayrımı:</strong> Suu, İstanbul'da geliştirilen ve egzersiz, kalori ve suyu birbirine bağlayan bir fitness uygulamasıdır (tam adı: Suu — Calorie, Water &amp; Fitness). Southern Utah University (SUU) ya da benzer adlı su ve içecek teslimat uygulamalarıyla bir ilgisi yoktur."
+      ],
+      "disclosure": "Bu listeyi Suu ekibi tutar ve düzenli olarak kontrol eder. AlternativeTo gibi bazı sayfalar topluluk tarafından düzenlenir; oradaki bilgiler gecikmeli güncellenebilir. Güncel ve doğru bilgi için resmi kaynak suuapp.com'dur.",
+      "groups": {
+        "press": {"title": "Haberler ve yazılar", "blurb": "Suu hakkında bağımsız yayınlarda çıkan haber, röportaj ve incelemeler.", "empty": "Henüz listelenecek bağımsız bir haber yok. Yayımlanan yazılar yayın adı ve tarihiyle buraya eklenecek. Gazeteciler için iletişim: info@suuapp.com."},
+        "business": {"title": "Şirket profilleri", "blurb": "Girişim ve iş veritabanlarındaki resmi profiller."},
+        "directories": {"title": "Ürün dizinleri", "blurb": "Uygulamaların tanıtıldığı, karşılaştırıldığı ve oylandığı platformlar."},
+        "stores": {"title": "Uygulama mağazaları", "blurb": "Suu'yu indirebileceğin resmi mağaza sayfaları; kullanıcı puanları ve yorumları burada."},
+        "social": {"title": "Resmi sosyal hesaplar", "blurb": "Suu ekibinin duyuru yaptığı hesaplar."}
+      },
+      "items": {
+        "crunchbase": "Şirket profili: 2024'te İstanbul'da kuruldu; sektörler, ekip büyüklüğü ve bağlantılar.",
+        "linkedin": "Şirket sayfası: kuruluş hikâyesi, ekip ve duyurular (Türkçe ve İngilizce).",
+        "producthunt": "Ürün sayfası: Suu'nun Product Hunt yayınları ve topluluk yorumları.",
+        "alternativeto": "Topluluk tarafından düzenlenen uygulama dizini: Suu'nun özellikleri ve alternatifleri.",
+        "appstore": "iPhone ve Apple Watch için resmi mağaza sayfası.",
+        "googleplay": "Android için resmi mağaza sayfası; kullanıcı puanları ve yorumları.",
+        "x": "Resmi X hesabı.",
+        "instagram": "Resmi Instagram hesabı.",
+        "facebook": "Resmi Facebook sayfası."
+      },
+      "checked_label": "Son kontrol",
+      "own_label": "Suu ekibinin kendi yazısı",
+      "press_cta": "Gazeteci misin? Logo, ekran görüntüleri ve temel bilgiler basın kitinde:",
+      "press_cta_link": "Basın kiti (İngilizce)",
+      "sources_word": "kaynak"
+    },
+    "en": {
+      "badge": "🔎 Independent sources",
+      "h1": "Suu in independent sources",
+      "meta": {
+        "title": "Independent Sources About Suu: Press, Profiles and Store Pages | Suu",
+        "description": "Where Suu appears outside suuapp.com: company profiles on Crunchbase and LinkedIn, product pages on Product Hunt and AlternativeTo, and the App Store and Google Play. Press coverage is listed here as it is published.",
+        "keywords": "suu app news, about suu app, suu crunchbase, suu product hunt, suu linkedin, suu calorie water fitness app, suu independent sources",
+        "og_title": "Suu in independent sources",
+        "og_description": "Suu's company profiles, product pages, store listings and press coverage outside suuapp.com, in one list."
+      },
+      "answer": "Outside suuapp.com, Suu appears in these independent sources: company profiles on Crunchbase and LinkedIn, product pages on Product Hunt and AlternativeTo, and store listings on the App Store and Google Play. Press coverage of Suu is added to this page, with dates, as it is published.",
+      "intro": [
+        "This page collects Suu's presence outside its official website: company databases, product directories, app stores, official social accounts and press coverage. Every link goes to another site, and its content is that site's responsibility.",
+        "<strong>Name disambiguation:</strong> Suu is a fitness app built in Istanbul that connects exercise, calories and water (full name: Suu — Calorie, Water &amp; Fitness). It is not related to Southern Utah University (SUU) or to similarly named water and drink delivery apps."
+      ],
+      "disclosure": "The Suu team maintains this list and checks it regularly. Some pages, such as AlternativeTo, are edited by the community and may update with a delay. The official source for current information is suuapp.com.",
+      "groups": {
+        "press": {"title": "Press and articles", "blurb": "News stories, interviews and reviews about Suu in independent publications.", "empty": "There is no independent press coverage to list yet. Published articles will be added here with the outlet name and date. Journalists can reach us at info@suuapp.com."},
+        "business": {"title": "Company profiles", "blurb": "Official profiles in startup and business databases."},
+        "directories": {"title": "Product directories", "blurb": "Platforms where apps are launched, compared and voted on."},
+        "stores": {"title": "App stores", "blurb": "Official store pages to download Suu, with user ratings and reviews."},
+        "social": {"title": "Official social accounts", "blurb": "Accounts where the Suu team posts announcements."}
+      },
+      "items": {
+        "crunchbase": "Company profile: founded in Istanbul in 2024; industries, team size and links.",
+        "linkedin": "Company page: founding story, team and announcements (in Turkish and English).",
+        "producthunt": "Product page: Suu's Product Hunt launches and community comments.",
+        "alternativeto": "Community-edited app directory: Suu's features and alternatives.",
+        "appstore": "Official store page for iPhone and Apple Watch.",
+        "googleplay": "Official store page for Android, with user ratings and reviews.",
+        "x": "Official X account.",
+        "instagram": "Official Instagram account.",
+        "facebook": "Official Facebook page."
+      },
+      "checked_label": "Last checked",
+      "own_label": "Written by the Suu team",
+      "press_cta": "Journalist? Logos, screenshots and key facts are in the press kit:",
+      "press_cta_link": "Press kit",
+      "sources_word": "sources"
+    },
+    "ar": {
+      "badge": "🔎 مصادر مستقلة",
+      "h1": "Suu في المصادر المستقلة",
+      "meta": {
+        "title": "مصادر مستقلة عن Suu: أخبار وملفات تعريفية وصفحات المتاجر | Suu",
+        "description": "أين يظهر Suu خارج suuapp.com: ملفات الشركة على Crunchbase وLinkedIn، وصفحات المنتج على Product Hunt وAlternativeTo، وصفحتا App Store وGoogle Play. تُضاف التغطية الصحفية هنا فور نشرها.",
+        "keywords": "أخبار تطبيق suu, عن تطبيق suu, suu crunchbase, suu product hunt, suu linkedin, تطبيق suu للسعرات والماء واللياقة, مصادر مستقلة عن suu",
+        "og_title": "Suu في المصادر المستقلة",
+        "og_description": "ملفات Suu التعريفية وصفحات المنتج والمتاجر والتغطية الصحفية خارج suuapp.com في قائمة واحدة."
+      },
+      "answer": "خارج suuapp.com يظهر Suu في هذه المصادر المستقلة: ملفات الشركة على Crunchbase وLinkedIn، وصفحات المنتج على Product Hunt وAlternativeTo، وصفحتا المتجر على App Store وGoogle Play. وتُضاف التغطية الصحفية عن Suu إلى هذه الصفحة مع تواريخها فور نشرها.",
+      "intro": [
+        "تجمع هذه الصفحة حضور Suu خارج موقعه الرسمي: قواعد بيانات الشركات، وأدلة المنتجات، ومتاجر التطبيقات، والحسابات الاجتماعية الرسمية، والتغطية الصحفية. كل رابط يقود إلى موقع آخر، ومحتواه مسؤولية ذلك الموقع.",
+        "<strong>توضيح الاسم:</strong> Suu تطبيق لياقة يُطوَّر في إسطنبول ويربط التمارين والسعرات والماء (الاسم الكامل: Suu — Calorie, Water &amp; Fitness). لا علاقة له بجامعة جنوب يوتا (SUU) ولا بتطبيقات توصيل المياه والمشروبات ذات الأسماء المشابهة."
+      ],
+      "disclosure": "يتولى فريق Suu هذه القائمة ويراجعها بانتظام. بعض الصفحات مثل AlternativeTo يحرّرها المجتمع وقد تتأخر في التحديث. المصدر الرسمي للمعلومات الحديثة هو suuapp.com.",
+      "groups": {
+        "press": {"title": "الأخبار والمقالات", "blurb": "أخبار ومقابلات ومراجعات عن Suu في منشورات مستقلة.", "empty": "لا توجد بعد تغطية صحفية مستقلة لإدراجها. ستُضاف المقالات المنشورة هنا مع اسم المنشور وتاريخه. يمكن للصحفيين التواصل عبر info@suuapp.com."},
+        "business": {"title": "ملفات الشركة", "blurb": "ملفات رسمية في قواعد بيانات الشركات الناشئة والأعمال."},
+        "directories": {"title": "أدلة المنتجات", "blurb": "منصات تُطلَق فيها التطبيقات وتُقارَن ويُصوَّت عليها."},
+        "stores": {"title": "متاجر التطبيقات", "blurb": "صفحات المتاجر الرسمية لتنزيل Suu، مع تقييمات المستخدمين ومراجعاتهم."},
+        "social": {"title": "الحسابات الاجتماعية الرسمية", "blurb": "حسابات ينشر فيها فريق Suu إعلاناته."}
+      },
+      "items": {
+        "crunchbase": "ملف الشركة: تأسست في إسطنبول عام 2024، مع القطاعات وحجم الفريق والروابط.",
+        "linkedin": "صفحة الشركة: قصة التأسيس والفريق والإعلانات (بالتركية والإنجليزية).",
+        "producthunt": "صفحة المنتج: إطلاقات Suu على Product Hunt وتعليقات المجتمع.",
+        "alternativeto": "دليل تطبيقات يحرّره المجتمع: ميزات Suu وبدائله.",
+        "appstore": "صفحة المتجر الرسمية لـiPhone وApple Watch.",
+        "googleplay": "صفحة المتجر الرسمية لـAndroid، مع تقييمات المستخدمين ومراجعاتهم.",
+        "x": "حساب X الرسمي.",
+        "instagram": "حساب Instagram الرسمي.",
+        "facebook": "صفحة Facebook الرسمية."
+      },
+      "checked_label": "آخر تحقق",
+      "own_label": "مقال كتبه فريق Suu",
+      "press_cta": "هل أنت صحفي؟ الشعارات ولقطات الشاشة والمعلومات الأساسية في الحزمة الإعلامية:",
+      "press_cta_link": "الحزمة الإعلامية (بالإنجليزية)",
+      "sources_word": "مصادر"
+    },
+    "ru": {
+      "badge": "🔎 Независимые источники",
+      "h1": "Suu в независимых источниках",
+      "meta": {
+        "title": "Независимые источники о Suu: пресса, профили и страницы магазинов | Suu",
+        "description": "Где Suu упоминается за пределами suuapp.com: профили компании на Crunchbase и LinkedIn, страницы продукта на Product Hunt и AlternativeTo, App Store и Google Play. Публикации в прессе добавляются сюда по мере выхода.",
+        "keywords": "новости приложения suu, о приложении suu, suu crunchbase, suu product hunt, suu linkedin, приложение suu калории вода фитнес, независимые источники о suu",
+        "og_title": "Suu в независимых источниках",
+        "og_description": "Профили компании, страницы продукта, страницы в магазинах и публикации о Suu за пределами suuapp.com — в одном списке."
+      },
+      "answer": "За пределами suuapp.com Suu представлен в этих независимых источниках: профили компании на Crunchbase и LinkedIn, страницы продукта на Product Hunt и AlternativeTo и страницы в App Store и Google Play. Публикации о Suu в прессе добавляются на эту страницу с датами по мере выхода.",
+      "intro": [
+        "Эта страница собирает присутствие Suu вне официального сайта: базы данных компаний, каталоги продуктов, магазины приложений, официальные аккаунты в соцсетях и публикации в прессе. Каждая ссылка ведёт на другой сайт, и за его содержание отвечает этот сайт.",
+        "<strong>Уточнение названия:</strong> Suu — фитнес-приложение из Стамбула, которое связывает тренировки, калории и воду (полное название: Suu — Calorie, Water &amp; Fitness). Оно не связано с Southern Utah University (SUU) и с похожими по названию сервисами доставки воды и напитков."
+      ],
+      "disclosure": "Этот список ведёт и регулярно проверяет команда Suu. Некоторые страницы, например AlternativeTo, редактирует сообщество, и они могут обновляться с задержкой. Официальный источник актуальной информации — suuapp.com.",
+      "groups": {
+        "press": {"title": "Пресса и статьи", "blurb": "Новости, интервью и обзоры о Suu в независимых изданиях.", "empty": "Независимых публикаций для списка пока нет. Вышедшие статьи будут добавлены сюда с названием издания и датой. Журналисты могут написать нам на info@suuapp.com."},
+        "business": {"title": "Профили компании", "blurb": "Официальные профили в базах данных стартапов и компаний."},
+        "directories": {"title": "Каталоги продуктов", "blurb": "Платформы, где приложения запускают, сравнивают и за них голосуют."},
+        "stores": {"title": "Магазины приложений", "blurb": "Официальные страницы магазинов для загрузки Suu с оценками и отзывами пользователей."},
+        "social": {"title": "Официальные аккаунты", "blurb": "Аккаунты, где команда Suu публикует новости."}
+      },
+      "items": {
+        "crunchbase": "Профиль компании: основана в Стамбуле в 2024 году; отрасли, размер команды и ссылки.",
+        "linkedin": "Страница компании: история основания, команда и новости (на турецком и английском).",
+        "producthunt": "Страница продукта: запуски Suu на Product Hunt и комментарии сообщества.",
+        "alternativeto": "Каталог приложений, который редактирует сообщество: функции Suu и альтернативы.",
+        "appstore": "Официальная страница в магазине для iPhone и Apple Watch.",
+        "googleplay": "Официальная страница в магазине для Android с оценками и отзывами пользователей.",
+        "x": "Официальный аккаунт в X.",
+        "instagram": "Официальный аккаунт в Instagram.",
+        "facebook": "Официальная страница в Facebook."
+      },
+      "checked_label": "Последняя проверка",
+      "own_label": "Статья команды Suu",
+      "press_cta": "Вы журналист? Логотипы, скриншоты и основные факты — в пресс-ките:",
+      "press_cta_link": "Пресс-кит (на английском)",
+      "sources_word": "источников"
+    },
+    "de": {
+      "badge": "🔎 Unabhängige Quellen",
+      "h1": "Suu in unabhängigen Quellen",
+      "meta": {
+        "title": "Unabhängige Quellen über Suu: Presse, Profile und Store-Seiten | Suu",
+        "description": "Wo Suu außerhalb von suuapp.com auftaucht: Unternehmensprofile auf Crunchbase und LinkedIn, Produktseiten auf Product Hunt und AlternativeTo sowie App Store und Google Play. Presseberichte werden hier ergänzt, sobald sie erscheinen.",
+        "keywords": "suu app news, über suu app, suu crunchbase, suu product hunt, suu linkedin, suu kalorien wasser fitness app, unabhängige quellen suu",
+        "og_title": "Suu in unabhängigen Quellen",
+        "og_description": "Unternehmensprofile, Produktseiten, Store-Einträge und Presseberichte über Suu außerhalb von suuapp.com – in einer Liste."
+      },
+      "answer": "Außerhalb von suuapp.com ist Suu in diesen unabhängigen Quellen zu finden: Unternehmensprofile auf Crunchbase und LinkedIn, Produktseiten auf Product Hunt und AlternativeTo sowie Store-Seiten im App Store und bei Google Play. Presseberichte über Suu werden mit Datum auf dieser Seite ergänzt, sobald sie erscheinen.",
+      "intro": [
+        "Diese Seite bündelt die Präsenz von Suu außerhalb der offiziellen Website: Unternehmensdatenbanken, Produktverzeichnisse, App-Stores, offizielle Social-Media-Konten und Presseberichte. Jeder Link führt auf eine andere Website; für deren Inhalte ist die jeweilige Website verantwortlich.",
+        "<strong>Namensabgrenzung:</strong> Suu ist eine in Istanbul entwickelte Fitness-App, die Training, Kalorien und Wasser verbindet (vollständiger Name: Suu — Calorie, Water &amp; Fitness). Sie hat nichts mit der Southern Utah University (SUU) oder mit ähnlich benannten Wasser- und Getränkelieferdiensten zu tun."
+      ],
+      "disclosure": "Das Suu-Team pflegt diese Liste und prüft sie regelmäßig. Einige Seiten wie AlternativeTo werden von der Community bearbeitet und können verzögert aktualisiert werden. Offizielle Quelle für aktuelle Informationen ist suuapp.com.",
+      "groups": {
+        "press": {"title": "Presse und Artikel", "blurb": "Berichte, Interviews und Rezensionen über Suu in unabhängigen Medien.", "empty": "Noch gibt es keine unabhängigen Presseberichte für diese Liste. Veröffentlichte Artikel werden hier mit Medium und Datum ergänzt. Journalisten erreichen uns unter info@suuapp.com."},
+        "business": {"title": "Unternehmensprofile", "blurb": "Offizielle Profile in Startup- und Unternehmensdatenbanken."},
+        "directories": {"title": "Produktverzeichnisse", "blurb": "Plattformen, auf denen Apps vorgestellt, verglichen und bewertet werden."},
+        "stores": {"title": "App-Stores", "blurb": "Offizielle Store-Seiten zum Herunterladen von Suu, mit Bewertungen und Rezensionen."},
+        "social": {"title": "Offizielle Social-Media-Konten", "blurb": "Konten, auf denen das Suu-Team Neuigkeiten veröffentlicht."}
+      },
+      "items": {
+        "crunchbase": "Unternehmensprofil: 2024 in Istanbul gegründet; Branchen, Teamgröße und Links.",
+        "linkedin": "Unternehmensseite: Gründungsgeschichte, Team und Neuigkeiten (auf Türkisch und Englisch).",
+        "producthunt": "Produktseite: die Product-Hunt-Launches von Suu und Kommentare der Community.",
+        "alternativeto": "Von der Community gepflegtes App-Verzeichnis: Funktionen und Alternativen von Suu.",
+        "appstore": "Offizielle Store-Seite für iPhone und Apple Watch.",
+        "googleplay": "Offizielle Store-Seite für Android, mit Bewertungen und Rezensionen.",
+        "x": "Offizielles X-Konto.",
+        "instagram": "Offizielles Instagram-Konto.",
+        "facebook": "Offizielle Facebook-Seite."
+      },
+      "checked_label": "Zuletzt geprüft",
+      "own_label": "Vom Suu-Team verfasst",
+      "press_cta": "Du bist Journalist? Logos, Screenshots und die wichtigsten Fakten findest du im Pressekit:",
+      "press_cta_link": "Pressekit (Englisch)",
+      "sources_word": "Quellen"
+    },
+    "it": {
+      "badge": "🔎 Fonti indipendenti",
+      "h1": "Suu nelle fonti indipendenti",
+      "meta": {
+        "title": "Fonti indipendenti su Suu: stampa, profili e pagine degli store | Suu",
+        "description": "Dove compare Suu al di fuori di suuapp.com: profili aziendali su Crunchbase e LinkedIn, pagine prodotto su Product Hunt e AlternativeTo, App Store e Google Play. Gli articoli di stampa vengono aggiunti qui man mano che escono.",
+        "keywords": "notizie app suu, informazioni su suu app, suu crunchbase, suu product hunt, suu linkedin, app suu calorie acqua fitness, fonti indipendenti su suu",
+        "og_title": "Suu nelle fonti indipendenti",
+        "og_description": "Profili aziendali, pagine prodotto, pagine degli store e articoli su Suu al di fuori di suuapp.com, in un'unica lista."
+      },
+      "answer": "Al di fuori di suuapp.com, Suu è presente in queste fonti indipendenti: profili aziendali su Crunchbase e LinkedIn, pagine prodotto su Product Hunt e AlternativeTo e pagine degli store su App Store e Google Play. Gli articoli di stampa su Suu vengono aggiunti a questa pagina, con la data, man mano che vengono pubblicati.",
+      "intro": [
+        "Questa pagina raccoglie la presenza di Suu al di fuori del sito ufficiale: database di aziende, directory di prodotti, app store, account social ufficiali e articoli di stampa. Ogni link porta a un altro sito, il cui contenuto è responsabilità di quel sito.",
+        "<strong>Chiarimento sul nome:</strong> Suu è un'app di fitness sviluppata a Istanbul che collega allenamento, calorie e acqua (nome completo: Suu — Calorie, Water &amp; Fitness). Non ha alcun legame con la Southern Utah University (SUU) né con servizi di consegna di acqua e bevande dal nome simile."
+      ],
+      "disclosure": "Questa lista è curata e verificata regolarmente dal team di Suu. Alcune pagine, come AlternativeTo, sono modificate dalla community e possono aggiornarsi in ritardo. La fonte ufficiale per le informazioni aggiornate è suuapp.com.",
+      "groups": {
+        "press": {"title": "Stampa e articoli", "blurb": "Notizie, interviste e recensioni su Suu in pubblicazioni indipendenti.", "empty": "Non ci sono ancora articoli indipendenti da elencare. Gli articoli pubblicati verranno aggiunti qui con il nome della testata e la data. I giornalisti possono scriverci a info@suuapp.com."},
+        "business": {"title": "Profili aziendali", "blurb": "Profili ufficiali nei database di startup e aziende."},
+        "directories": {"title": "Directory di prodotti", "blurb": "Piattaforme dove le app vengono lanciate, confrontate e votate."},
+        "stores": {"title": "App store", "blurb": "Pagine ufficiali degli store per scaricare Suu, con valutazioni e recensioni degli utenti."},
+        "social": {"title": "Account social ufficiali", "blurb": "Account dove il team di Suu pubblica gli annunci."}
+      },
+      "items": {
+        "crunchbase": "Profilo aziendale: fondata a Istanbul nel 2024; settori, dimensioni del team e link.",
+        "linkedin": "Pagina aziendale: storia della fondazione, team e annunci (in turco e inglese).",
+        "producthunt": "Pagina prodotto: i lanci di Suu su Product Hunt e i commenti della community.",
+        "alternativeto": "Directory di app curata dalla community: funzioni e alternative di Suu.",
+        "appstore": "Pagina ufficiale dello store per iPhone e Apple Watch.",
+        "googleplay": "Pagina ufficiale dello store per Android, con valutazioni e recensioni degli utenti.",
+        "x": "Account X ufficiale.",
+        "instagram": "Account Instagram ufficiale.",
+        "facebook": "Pagina Facebook ufficiale."
+      },
+      "checked_label": "Ultimo controllo",
+      "own_label": "Scritto dal team di Suu",
+      "press_cta": "Sei un giornalista? Loghi, screenshot e informazioni principali sono nel press kit:",
+      "press_cta_link": "Press kit (in inglese)",
+      "sources_word": "fonti"
+    },
+    "uk": {
+      "badge": "🔎 Незалежні джерела",
+      "h1": "Suu в незалежних джерелах",
+      "meta": {
+        "title": "Незалежні джерела про Suu: преса, профілі та сторінки магазинів | Suu",
+        "description": "Де Suu згадується за межами suuapp.com: профілі компанії на Crunchbase і LinkedIn, сторінки продукту на Product Hunt і AlternativeTo, App Store і Google Play. Публікації в пресі додаються сюди в міру виходу.",
+        "keywords": "новини застосунку suu, про застосунок suu, suu crunchbase, suu product hunt, suu linkedin, застосунок suu калорії вода фітнес, незалежні джерела про suu",
+        "og_title": "Suu в незалежних джерелах",
+        "og_description": "Профілі компанії, сторінки продукту, сторінки в магазинах і публікації про Suu за межами suuapp.com — в одному списку."
+      },
+      "answer": "За межами suuapp.com Suu представлений у цих незалежних джерелах: профілі компанії на Crunchbase і LinkedIn, сторінки продукту на Product Hunt і AlternativeTo та сторінки в App Store і Google Play. Публікації про Suu в пресі додаються на цю сторінку з датами в міру виходу.",
+      "intro": [
+        "Ця сторінка збирає присутність Suu поза офіційним сайтом: бази даних компаній, каталоги продуктів, магазини застосунків, офіційні акаунти в соцмережах і публікації в пресі. Кожне посилання веде на інший сайт, і за його вміст відповідає цей сайт.",
+        "<strong>Уточнення назви:</strong> Suu — фітнес-застосунок зі Стамбула, який поєднує тренування, калорії й воду (повна назва: Suu — Calorie, Water &amp; Fitness). Він не пов'язаний із Southern Utah University (SUU) і зі схожими за назвою сервісами доставки води та напоїв."
+      ],
+      "disclosure": "Цей список веде й регулярно перевіряє команда Suu. Деякі сторінки, як-от AlternativeTo, редагує спільнота, тож вони можуть оновлюватися із затримкою. Офіційне джерело актуальної інформації — suuapp.com.",
+      "groups": {
+        "press": {"title": "Преса та статті", "blurb": "Новини, інтерв'ю та огляди про Suu в незалежних виданнях.", "empty": "Незалежних публікацій для списку поки немає. Опубліковані статті буде додано сюди з назвою видання й датою. Журналісти можуть написати нам на info@suuapp.com."},
+        "business": {"title": "Профілі компанії", "blurb": "Офіційні профілі в базах даних стартапів і компаній."},
+        "directories": {"title": "Каталоги продуктів", "blurb": "Платформи, де застосунки запускають, порівнюють і за них голосують."},
+        "stores": {"title": "Магазини застосунків", "blurb": "Офіційні сторінки магазинів для завантаження Suu з оцінками й відгуками користувачів."},
+        "social": {"title": "Офіційні акаунти", "blurb": "Акаунти, де команда Suu публікує новини."}
+      },
+      "items": {
+        "crunchbase": "Профіль компанії: заснована в Стамбулі у 2024 році; галузі, розмір команди й посилання.",
+        "linkedin": "Сторінка компанії: історія заснування, команда й новини (турецькою та англійською).",
+        "producthunt": "Сторінка продукту: запуски Suu на Product Hunt і коментарі спільноти.",
+        "alternativeto": "Каталог застосунків, який редагує спільнота: функції Suu та альтернативи.",
+        "appstore": "Офіційна сторінка в магазині для iPhone і Apple Watch.",
+        "googleplay": "Офіційна сторінка в магазині для Android з оцінками й відгуками користувачів.",
+        "x": "Офіційний акаунт в X.",
+        "instagram": "Офіційний акаунт в Instagram.",
+        "facebook": "Офіційна сторінка у Facebook."
+      },
+      "checked_label": "Остання перевірка",
+      "own_label": "Стаття команди Suu",
+      "press_cta": "Ти журналіст? Логотипи, скриншоти й основні факти — у прес-кіті:",
+      "press_cta_link": "Прес-кіт (англійською)",
+      "sources_word": "джерел"
+    }
+  }
+}
