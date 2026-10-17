@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+    <script>(function(){try{var t=localStorage.getItem('suu-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-itunes-app" content="app-id=6757619920">
@@ -10,237 +11,71 @@
     <meta name="robots" content="index, follow">
     <link rel="alternate" hreflang="tr" href="https://suuapp.com/kullanim-sartlari.html">
     <link rel="alternate" hreflang="x-default" href="https://suuapp.com/kullanim-sartlari.html">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-            transition: all 0.3s ease;
-        }
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-            overflow: hidden;
-        }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/suu.css">
+    <link rel="stylesheet" href="/assets/css/legal.css?v=1">
 
-        .header {
-            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
-            color: white;
-            padding: 40px 30px;
-            text-align: center;
-        }
-
-        .logo {
-            width: 80px;
-            height: 80px;
-            background: white;
-            border-radius: 50%;
-            margin: 0 auto 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 40px;
-        }
-
-        h1 {
-            font-size: 32px;
-            margin-bottom: 10px;
-            font-weight: 700;
-        }
-
-        .last-updated {
-            font-size: 14px;
-            opacity: 0.9;
-        }
-
-        .language-switcher {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 12px;
-            padding: 24px;
-            background: #f8fafc;
-            border-bottom: 1px solid #e2e8f0;
-        }
-
-        .language-btn {
-            border: 1px solid #cbd5e1;
-            background: white;
-            color: #1f2933;
-            padding: 10px 18px;
-            border-radius: 999px;
-            font-size: 15px;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            font-weight: 600;
-        }
-
-        .language-btn:hover {
-            border-color: #e74c3c;
-            color: #c0392b;
-        }
-
-        .language-btn.active {
-            background: linear-gradient(135deg, #e74c3c, #c0392b);
-            color: white;
-            border-color: transparent;
-            box-shadow: 0 10px 25px rgba(231, 76, 60, 0.3);
-        }
-
-        .content {
-            padding: 40px 30px;
-        }
-
-        h2 {
-            color: #e74c3c;
-            margin: 30px 0 15px;
-            font-size: 24px;
-            border-bottom: 2px solid #fadbd8;
-            padding-bottom: 10px;
-        }
-
-        h3 {
-            color: #c0392b;
-            margin: 20px 0 10px;
-            font-size: 18px;
-        }
-
-        p {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-
-        ul {
-            margin: 15px 0;
-            padding-left: 30px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        .highlight {
-            background: #fadbd8;
-            padding: 20px;
-            border-left: 4px solid #e74c3c;
-            margin: 20px 0;
-            border-radius: 8px;
-        }
-
-        .contact-box {
-            background: #F5F5F5;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 30px 0;
-        }
-
-        .contact-box h3 {
-            margin-top: 0;
-        }
-
-        a {
-            color: #e74c3c;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .footer {
-            background: #F5F5F5;
-            padding: 20px;
-            text-align: center;
-            color: #666;
-            font-size: 14px;
-        }
-
-        .terms-section {
-            display: none;
-        }
-
-        .terms-section.active {
-            display: block;
-        }
-
-        .terms-section[dir="rtl"] {
-            direction: rtl;
-        }
-
-        .terms-section[dir="rtl"] ul {
-            padding-left: 0;
-            padding-right: 30px;
-        }
-
-        .terms-section[dir="rtl"] p,
-        .terms-section[dir="rtl"] li {
-            text-align: justify;
-        }
-
-        .terms-section[dir="rtl"] .highlight {
-            border-left: none;
-            border-right: 4px solid #e74c3c;
-        }
-
-        .footer-text {
-            display: none;
-            margin-bottom: 6px;
-        }
-
-        .footer-text.active {
-            display: block;
-        }
-
-        @media (max-width: 600px) {
-            .content {
-                padding: 20px;
-            }
-
-            h1 {
-                font-size: 24px;
-            }
-
-            h2 {
-                font-size: 20px;
-            }
-        }
-    </style>
     <script src="/assets/js/analytics.js" defer></script>
     <script src="/assets/js/special-days.js" defer></script>
+    <!-- legal.js önce: dili seçer, theme.js düğme etiketini o dilde yazar -->
+    <script src="/assets/js/legal.js?v=1" defer></script>
+    <script src="/assets/js/theme.js?v=1" defer></script>
 </head>
 <body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-apple" viewBox="0 0 24 24" fill="currentColor"><path d="M17.56 12.3c-.03-3.06 2.5-4.53 2.61-4.6-1.42-2.08-3.63-2.37-4.42-2.4-1.88-.19-3.67 1.11-4.63 1.11-.95 0-2.42-1.08-3.98-1.05-2.05.03-3.94 1.19-4.99 3.03-2.13 3.69-.54 9.15 1.53 12.14 1.01 1.46 2.21 3.1 3.79 3.04 1.52-.06 2.09-.98 3.93-.98 1.83 0 2.36.98 3.97.95 1.64-.03 2.68-1.49 3.68-2.96 1.16-1.7 1.64-3.35 1.67-3.43-.04-.02-3.2-1.23-3.23-4.87M14.5 3.7c.84-1.02 1.4-2.43 1.25-3.84-1.21.05-2.67.81-3.53 1.82-.77.9-1.45 2.34-1.27 3.72 1.35.1 2.72-.69 3.55-1.7"/></symbol>
+    <symbol id="i-gplay" viewBox="0 0 24 24"><path fill="#00A0FF" d="M3.6 1.8 13.8 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1z"/><path fill="#34A853" d="M3.6 1.8c.4-.2.8-.2 1.2 0l12.1 7L13.8 12z"/><path fill="#EA4335" d="M3.6 22.2 13.8 12l3.1 3.2-12.1 7c-.4.2-.8.2-1.2 0z"/><path fill="#FBBC04" d="m16.9 8.8 3.5 2c.9.5.9 1.9 0 2.4l-3.5 2-3.1-3.2z"/></symbol>
+</svg>
+
+<a class="skip-link" href="#main" data-ui="skip">İçeriğe geç</a>
+
+<nav class="nav">
+    <div class="container nav__inner">
+        <a href="/" class="nav__logo" data-home><img src="/assets/brand/suu-badge-128.png" alt="Suu" width="128" height="128" style="height:1.6em;width:1.6em;border-radius:50%;box-shadow:0 0 0 1px rgba(255,255,255,.12),0 0 14px rgba(94,170,255,.45);"> Suu</a>
+        <div class="nav__actions" style="margin-inline-start:auto">
+            <a href="/app?src=legal-nav" class="btn btn--primary" data-cta="nav" data-ui="cta"
+               style="min-height:40px;padding:var(--sp-2) var(--sp-5);font-size:var(--fs-sm)">Ücretsiz İndir</a>
+        </div>
+    </div>
+</nav>
+
+<header class="legal-hero">
     <div class="container">
-        <div class="header">
-            <div class="logo">💧</div>
-            <h1 id="docTitle">Suu - Kullanım Şartları</h1>
-            <p class="last-updated" id="docUpdated">Son Güncelleme: 14 Ekim 2026</p>
+        <span class="legal-hero__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2.5H7A2.5 2.5 0 0 0 4.5 5v14A2.5 2.5 0 0 0 7 21.5h10a2.5 2.5 0 0 0 2.5-2.5V8z"/><path d="M14 2.5V8h5.5M8.5 13h7M8.5 17h5"/></svg></span>
+        <h1 id="docTitle">Kullanım Şartları</h1>
+        <p class="legal-updated"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span id="docUpdated">Son Güncelleme: 14 Ekim 2026</span></p>
+        <div class="legal-langs" role="group" aria-label="Dil seçimi" data-ui-label="langs">
+                <button type="button" class="active" data-lang="tr" lang="tr" aria-pressed="true">Türkçe</button>
+                <button type="button" data-lang="en" lang="en" aria-pressed="false">English</button>
+                <button type="button" data-lang="ar" lang="ar" aria-pressed="false">العربية</button>
+                <button type="button" data-lang="ru" lang="ru" aria-pressed="false">Русский</button>
+                <button type="button" data-lang="de" lang="de" aria-pressed="false">Deutsch</button>
+                <button type="button" data-lang="it" lang="it" aria-pressed="false">Italiano</button>
+                <button type="button" data-lang="uk" lang="uk" aria-pressed="false">Українська</button>
         </div>
+    </div>
+</header>
 
-        <div class="language-switcher" role="group" aria-label="Dil Seçici">
-            <button type="button" class="language-btn active" data-lang="tr" aria-pressed="true">Türkçe</button>
-            <button type="button" class="language-btn" data-lang="en" aria-pressed="false">English</button>
-            <button type="button" class="language-btn" data-lang="ar" aria-pressed="false">العربية</button>
-            <button type="button" class="language-btn" data-lang="ru" aria-pressed="false">Русский</button>
-            <button type="button" class="language-btn" data-lang="de" aria-pressed="false">Deutsch</button>
-            <button type="button" class="language-btn" data-lang="it" aria-pressed="false">Italiano</button>
-            <button type="button" class="language-btn" data-lang="uk" aria-pressed="false">Українська</button>
-        </div>
+<main id="main" class="legal">
+<div class="container legal__grid">
+    <details class="legal-toc" id="legalToc" hidden>
+        <summary><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01"/></svg><span data-ui="toc">İçindekiler</span><span class="legal-toc__count" id="legalTocCount"></span></summary>
+        <ol id="legalTocList"></ol>
+    </details>
 
-        <!-- Turkish -->
-        <div class="content terms-section active" data-lang="tr">
+    <article class="legal-body">
+
+        <div class="legal-doc active" data-lang="tr" lang="tr"
+             data-title="Suu - Kullanım Şartları"
+             data-updated="Son Güncelleme: 14 Ekim 2026">
             <div class="highlight">
                 <strong>Önemli:</strong> Suu uygulamasını kullanarak bu şartları kabul etmiş sayılırsınız. Lütfen dikkatlice okuyunuz.
             </div>
@@ -475,8 +310,9 @@
             </div>
         </div>
 
-        <!-- English -->
-        <div class="content terms-section" data-lang="en">
+        <div class="legal-doc" data-lang="en" lang="en"
+             data-title="Suu - Terms of Use"
+             data-updated="Last updated: 14 October 2026">
             <div class="highlight">
                 <strong>Important:</strong> By using the Suu application, you agree to these terms. Please read them carefully.
             </div>
@@ -711,8 +547,9 @@
             </div>
         </div>
 
-        <!-- Arabic -->
-        <div class="content terms-section" data-lang="ar" dir="rtl">
+        <div class="legal-doc" data-lang="ar" lang="ar" dir="rtl"
+             data-title="Suu - شروط الاستخدام"
+             data-updated="آخر تحديث: 14 أكتوبر 2026">
             <div class="highlight">
                 <strong>مهم:</strong> باستخدامك تطبيق Suu، يُعدّ ذلك قبولًا منك لهذه الشروط. يُرجى قراءتها بعناية.
             </div>
@@ -947,8 +784,9 @@
             </div>
         </div>
 
-        <!-- Russian -->
-        <div class="content terms-section" data-lang="ru">
+        <div class="legal-doc" data-lang="ru" lang="ru"
+             data-title="Suu — Условия использования"
+             data-updated="Последнее обновление: 14 октября 2026">
             <div class="highlight">
                 <strong>Важно:</strong> Используя приложение Suu, вы соглашаетесь с этими условиями. Пожалуйста, внимательно прочитайте их.
             </div>
@@ -1183,8 +1021,9 @@
             </div>
         </div>
 
-        <!-- German -->
-        <div class="content terms-section" data-lang="de">
+        <div class="legal-doc" data-lang="de" lang="de"
+             data-title="Suu – Nutzungsbedingungen"
+             data-updated="Zuletzt aktualisiert: 14. Oktober 2026">
             <div class="highlight">
                 <strong>Wichtig:</strong> Mit der Nutzung der Suu-Anwendung stimmen Sie diesen Bedingungen zu. Bitte lesen Sie sie sorgfältig.
             </div>
@@ -1419,8 +1258,9 @@
             </div>
         </div>
 
-        <!-- Italian -->
-        <div class="content terms-section" data-lang="it">
+        <div class="legal-doc" data-lang="it" lang="it"
+             data-title="Suu – Termini di utilizzo"
+             data-updated="Ultimo aggiornamento: 14 ottobre 2026">
             <div class="highlight">
                 <strong>Importante:</strong> utilizzando l'applicazione Suu accetti questi termini. Ti invitiamo a leggerli con attenzione.
             </div>
@@ -1655,8 +1495,9 @@
             </div>
         </div>
 
-        <!-- Ukrainian -->
-        <div class="content terms-section" data-lang="uk">
+        <div class="legal-doc" data-lang="uk" lang="uk"
+             data-title="Suu — Умови використання"
+             data-updated="Останнє оновлення: 14 жовтня 2026">
             <div class="highlight">
                 <strong>Важливо:</strong> користуючись застосунком Suu, ви погоджуєтеся з цими умовами. Будь ласка, уважно ознайомтеся з ними.
             </div>
@@ -1891,120 +1732,45 @@
             </div>
         </div>
 
-        <div class="footer" id="termsFooter">
-            <p class="footer-text active" data-lang="tr">© 2026 Suu - Tüm hakları saklıdır.</p>
-            <p class="footer-text active" data-lang="tr">Bu kullanım şartları en son 14 Ekim 2026 tarihinde güncellenmiştir.</p>
+    </article>
+</div>
+</main>
 
-            <p class="footer-text" data-lang="en">© 2026 Suu - All rights reserved.</p>
-            <p class="footer-text" data-lang="en">These terms of use were last updated on 14 October 2026.</p>
-
-            <p class="footer-text" data-lang="ar" dir="rtl">© 2026 Suu - جميع الحقوق محفوظة.</p>
-            <p class="footer-text" data-lang="ar" dir="rtl">تم تحديث شروط الاستخدام هذه آخر مرة في 14 أكتوبر 2026.</p>
-
-            <p class="footer-text" data-lang="ru">© 2026 Suu — Все права защищены.</p>
-            <p class="footer-text" data-lang="ru">Эти условия использования последний раз обновлялись 14 октября 2026 года.</p>
-
-            <p class="footer-text" data-lang="de">© 2026 Suu – Alle Rechte vorbehalten.</p>
-            <p class="footer-text" data-lang="de">Diese Nutzungsbedingungen wurden zuletzt am 14. Oktober 2026 aktualisiert.</p>
-
-            <p class="footer-text" data-lang="it">© 2026 Suu – Tutti i diritti riservati.</p>
-            <p class="footer-text" data-lang="it">Questi termini di utilizzo sono stati aggiornati l'ultima volta il 14 ottobre 2026.</p>
-
-            <p class="footer-text" data-lang="uk">© 2026 Suu — Усі права захищено.</p>
-            <p class="footer-text" data-lang="uk">Ці умови використання востаннє оновлено 14 жовтня 2026 року.</p>
+<footer class="footer legal-footer">
+    <div class="container">
+        <nav class="legal-footer__docs" aria-label="Yasal belgeler" data-ui-label="docs">
+            <a href="/gizlilik-politikasi.html" data-doc="privacy">Gizlilik Politikası</a>
+            <a href="/kullanim-sartlari.html" data-doc="terms" aria-current="page">Kullanım Şartları</a>
+            <a href="/delete-account.html" data-doc="deletion">Hesap Silme</a>
+        </nav>
+        <div class="footer__bottom">
+            <div>
+                    <p class="footer-text active" data-lang="tr" lang="tr">© 2026 Suu - Tüm hakları saklıdır.</p>
+                    <p class="footer-text active" data-lang="tr" lang="tr">Bu kullanım şartları en son 14 Ekim 2026 tarihinde güncellenmiştir.</p>
+                    <p class="footer-text" data-lang="en" lang="en">© 2026 Suu - All rights reserved.</p>
+                    <p class="footer-text" data-lang="en" lang="en">These terms of use were last updated on 14 October 2026.</p>
+                    <p class="footer-text" data-lang="ar" lang="ar" dir="rtl">© 2026 Suu - جميع الحقوق محفوظة.</p>
+                    <p class="footer-text" data-lang="ar" lang="ar" dir="rtl">تم تحديث شروط الاستخدام هذه آخر مرة في 14 أكتوبر 2026.</p>
+                    <p class="footer-text" data-lang="ru" lang="ru">© 2026 Suu — Все права защищены.</p>
+                    <p class="footer-text" data-lang="ru" lang="ru">Эти условия использования последний раз обновлялись 14 октября 2026 года.</p>
+                    <p class="footer-text" data-lang="de" lang="de">© 2026 Suu – Alle Rechte vorbehalten.</p>
+                    <p class="footer-text" data-lang="de" lang="de">Diese Nutzungsbedingungen wurden zuletzt am 14. Oktober 2026 aktualisiert.</p>
+                    <p class="footer-text" data-lang="it" lang="it">© 2026 Suu – Tutti i diritti riservati.</p>
+                    <p class="footer-text" data-lang="it" lang="it">Questi termini di utilizzo sono stati aggiornati l'ultima volta il 14 ottobre 2026.</p>
+                    <p class="footer-text" data-lang="uk" lang="uk">© 2026 Suu — Усі права захищено.</p>
+                    <p class="footer-text" data-lang="uk" lang="uk">Ці умови використання востаннє оновлено 14 жовтня 2026 року.</p>
+            </div>
+            <p class="small mb-0"><a href="/" data-home>suuapp.com</a></p>
         </div>
     </div>
+</footer>
 
-    <script>
-        // Dil sırası: ?lang= → #xx → sitede seçilmiş dil (suu-lang) → tarayıcı dili → tr.
-        // Sitedeki bağlantılar dil belirtmeden geliyor; Almanca/İtalyanca/Ukraynaca
-        // okur Türkçe sekmeye düşmesin diye.
-        (function () {
-            const SUPPORTED = ['tr', 'en', 'ar', 'ru', 'de', 'it', 'uk'];
-            const TITLES = {"tr": "Suu - Kullanım Şartları", "en": "Suu - Terms of Use", "ar": "Suu - شروط الاستخدام", "ru": "Suu — Условия использования", "de": "Suu – Nutzungsbedingungen", "it": "Suu – Termini di utilizzo", "uk": "Suu — Умови використання"};
-            const UPDATED = {"tr": "Son Güncelleme: 14 Ekim 2026", "en": "Last updated: 14 October 2026", "ar": "آخر تحديث: 14 أكتوبر 2026", "ru": "Последнее обновление: 14 октября 2026", "de": "Zuletzt aktualisiert: 14. Oktober 2026", "it": "Ultimo aggiornamento: 14 ottobre 2026", "uk": "Останнє оновлення: 14 жовтня 2026"};
-            const languageButtons = document.querySelectorAll('.language-btn');
-            const sections = document.querySelectorAll('.terms-section');
-            const footerTexts = document.querySelectorAll('.footer-text');
-            const titleEl = document.getElementById('docTitle');
-            const updatedEl = document.getElementById('docUpdated');
+<button type="button" class="legal-top" id="legalTop" aria-label="Başa dön" title="Başa dön"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
 
-            function setLanguage(lang, updateUrl) {
-                document.documentElement.lang = lang;
-                document.body.dir = lang === 'ar' ? 'rtl' : 'ltr';
-
-                sections.forEach(section => {
-                    section.classList.toggle('active', section.dataset.lang === lang);
-                });
-
-                footerTexts.forEach(text => {
-                    text.classList.toggle('active', text.dataset.lang === lang);
-                });
-
-                languageButtons.forEach(button => {
-                    const isActive = button.dataset.lang === lang;
-                    button.classList.toggle('active', isActive);
-                    button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
-                });
-
-                if (titleEl) titleEl.textContent = TITLES[lang];
-                if (updatedEl) updatedEl.textContent = UPDATED[lang];
-                document.title = TITLES[lang];
-
-                if (updateUrl) {
-                    try {
-                        const url = new URL(window.location.href);
-                        if (lang === 'tr') url.searchParams.delete('lang');
-                        else url.searchParams.set('lang', lang);
-                        url.hash = '';
-                        history.replaceState(null, '', url);
-                    } catch (e) {}
-                }
-            }
-
-            function pick(value) {
-                const code = (value || '').toLowerCase().slice(0, 2);
-                return SUPPORTED.indexOf(code) !== -1 ? code : null;
-            }
-
-            function initialLanguage() {
-                let lang = null;
-                try { lang = pick(new URLSearchParams(window.location.search).get('lang')); } catch (e) {}
-                if (lang) return lang;
-                if (window.location.hash.length === 3) {
-                    lang = pick(window.location.hash.slice(1));
-                    if (lang) return lang;
-                }
-                try { lang = pick(localStorage.getItem('suu-lang')); } catch (e) {}
-                if (lang) return lang;
-                const prefs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language];
-                for (let i = 0; i < prefs.length; i++) {
-                    lang = pick(prefs[i]);
-                    if (lang) return lang;
-                }
-                return 'tr';
-            }
-
-            languageButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    if (!button.classList.contains('active')) {
-                        setLanguage(button.dataset.lang, true);
-                    }
-                });
-            });
-
-            const first = initialLanguage();
-            if (first !== 'tr') setLanguage(first, false);
-        })();
-    </script>
-<!-- Sticky Mobile Download Bar -->
-<div class="sticky-download-bar" id="stickyDownloadBar">
-    <a href="https://apps.apple.com/us/app/suu-su-takip/id6757619920" class="sticky-btn sticky-btn-apple" target="_blank" rel="noopener">
-        <i class="fab fa-apple"></i> App Store
-    </a>
-    <a href="https://play.google.com/store/apps/details?id=com.sutakip.suutakippro" class="sticky-btn sticky-btn-google" target="_blank" rel="noopener">
-        <i class="fab fa-google-play"></i> Google Play
-    </a>
+<div class="sticky-cta" data-cta="sticky">
+    <a href="/app?src=sticky" class="btn btn--secondary"><svg class="sticky-cta__logo" width="20" height="20" aria-hidden="true"><use href="#i-apple"></use></svg>App Store</a>
+    <a href="/app?src=sticky" class="btn btn--primary"><span class="sticky-cta__logo sticky-cta__logo--play"><svg width="16" height="16" aria-hidden="true"><use href="#i-gplay"></use></svg></span>Google Play</a>
 </div>
+
 </body>
 </html>

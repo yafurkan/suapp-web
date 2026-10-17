@@ -280,6 +280,32 @@ rastgele trafiğin sınırlı havuzu tüketmesini istemiyoruz. Koruma
 zaman damgasıyla birlikte saklanır (KVKK/İYS ispatı). Panelin "Duyuru listesi
 (CSV)" çıktısında **yalnızca** izin verenler bulunur.
 
+## Yasal Sayfalar
+
+`gizlilik-politikasi.html` ve `kullanim-sartlari.html` yedi dili (tr, en, ar, ru,
+de, it, uk) **tek URL'de** taşır — App Store ve Google Play kayıtlarındaki adres
+bu, değişmez. Sitenin ortak menüsü, alt bilgisi ve koyu teması kullanılır.
+
+| Dosya | Rolü |
+|---|---|
+| `assets/css/legal.css` | görünüm — `suu.css` token'larının üstüne |
+| `assets/js/legal.js` | dil seçimi, içindekiler, okunan bölüm, kabuk metinlerinin çevirisi |
+
+**Metni güncellemek:** her dil bir blok, hukuki metin olduğu gibi içinde durur:
+
+```html
+<div class="legal-doc" data-lang="en" lang="en"
+     data-title="Suu - Privacy Policy"
+     data-updated="Last updated: 14 October 2026">
+    … <h2>1. Data Controller</h2> …
+</div>
+```
+
+- Bölüm başlığı `<h2>N. Başlık</h2>` biçiminde kalmalı: numara rozete, başlık
+  içindekiler listesine dönüşür. İletişim kutusundaki `<h3>` de listeye girer.
+- Tarih değişince hem `data-updated` hem alt bilgideki `.footer-text` satırı güncellenir.
+- Dil sırası: `?lang=` → `#xx` (eski bağlantılar) → sitede seçilen dil → tarayıcı dili → tr.
+
 ## Özel Gün Kutlamaları
 
 Belirli tarihlerde, belirli dillerde tam ekran bir kutlama animasyonu ve gün
