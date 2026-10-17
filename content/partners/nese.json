@@ -1,0 +1,64 @@
+{
+  "_comment": "Sponsorluk sayfası — Neşe (@itssnesse) kişisel Instagram hesabı. Yalnızca DEĞİŞEN metinler yazılır; gerisi content/gift/<lang>.json'dan gelir. Rozet, Instagram profil fotoğrafından kırpıldı; asıl fotoğraf gelirse aynı adla değiştirilir.",
+  "slug": "nese",
+  "name": "Neşe",
+  "short": "Neşe",
+  "logo": "/assets/brand/nese-badge-256.webp",
+  "langs": [
+    "tr"
+  ],
+  "theme": {
+    "skin": "dark",
+    "from": "#01A5F7",
+    "mid": "#0B6FD0",
+    "to": "#111418"
+  },
+  "copy": {
+    "tr": {
+      "meta": {
+        "title": "Neşe × Suu — Takipçilere Özel 1 Ay Premium",
+        "desc": "Neşe'nin takipçilerine özel: 1 ay Suu Premium ücretsiz. Su, beslenme ve egzersiz takibi tek uygulamada. E-postanı yaz, kodun anında ekranda.",
+        "ogTitle": "Neşe × Suu — sana özel 1 ay Premium",
+        "ogDesc": "Suyunu, öğününü ve hareketini tek yerden takip et. Neşe'nin takipçilerine özel 1 aylık Suu Premium kodu."
+      },
+      "splash": {
+        "tagline": "Su iç · Beslen · Hareket et",
+        "skip": "Geç"
+      },
+      "hero": {
+        "together": "İyi alışkanlıklar bir bardak suyla başlar",
+        "titleTop": "Neşe'nin takipçilerine özel",
+        "titleMain": "1 ay Suu Premium",
+        "greeting": "Neşe'nin hesabından geldiysen doğru yerdesin. Ekran başında geçen uzun günlerde suyu, öğünleri ve hareketi akılda tutmak zor — Suu Premium bir ay boyunca bizden.",
+        "subtitle": "Su, beslenme ve egzersiz tek uygulamada. Aşağıdan e-postanı bırak, kodun anında ekranda çıksın ve hesabına tanımla."
+      },
+      "faq": [
+        {
+          "q": "Bu iş birliği tam olarak ne?",
+          "a": "Neşe (@itssnesse) ile Suu'nun iş birliği. Neşe'nin takipçilerine 1 ay Suu Premium ücretsiz veriliyor; senden tek istediğimiz, kodu göndereceğimiz e-posta adresi."
+        },
+        {
+          "q": "Kod ne kadar sürüyor?",
+          "a": "1 ay boyunca Suu Premium'un tamamı açık. Süre dolduğunda abonelik normal fiyatından otomatik yenilenir — ücret ödemek istemiyorsan süre bitmeden App Store (Android'de Google Play) ayarlarından aboneliği iptal et; kalan günleri yine sonuna kadar kullanırsın."
+        },
+        {
+          "q": "Gün boyu masa başındayım, Suu bana ne katar?",
+          "a": "Su hedefin yaşına, kilona, hareketine ve hava sıcaklığına göre gün içinde güncellenir; akıllı hatırlatıcılar sabah ilk yudumu ve öğün sonrasını sana hatırlatır. Fotoğrafını çektiğin öğünün kalorisini ve makrolarını yapay zekâ çıkarır, istersen konuşarak da kaydedersin. Yürüyüş ve antrenmanların Apple Health / Health Connect üzerinden kendiliğinden gelir."
+        },
+        {
+          "q": "Premium'da ne var?",
+          "a": "Sınırsız yapay zekâ analizi, fotoğraftan yemek tanıma ve kalori, gelişmiş makro istatistikleri, dinamik hatırlatmalar ve reklamsız kullanım."
+        },
+        {
+          "q": "Neden kişi başına tek kod?",
+          "a": "Kod sayısı sınırlı; Neşe'nin takipçilerinin olabildiğince fazlasına yetmesi için kişi başına tek kod veriyoruz. Aynı e-posta ve aynı bağlantı ikinci kez kod alamaz."
+        },
+        {
+          "q": "Kod gelmedi, ne yapmalıyım?",
+          "a": "Önce spam klasörüne bak. Aynı adresle formu tekrar gönderirsen kodu yeniden yollarız."
+        }
+      ],
+      "footerNote": "Neşe (@itssnesse) × Suu iş birliği. Kodlar tek kullanımlıktır ve stoklarla sınırlıdır."
+    }
+  }
+}
