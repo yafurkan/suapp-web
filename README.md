@@ -280,6 +280,45 @@ rastgele trafiğin sınırlı havuzu tüketmesini istemiyoruz. Koruma
 zaman damgasıyla birlikte saklanır (KVKK/İYS ispatı). Panelin "Duyuru listesi
 (CSV)" çıktısında **yalnızca** izin verenler bulunur.
 
+## Kişisel Profil Sayfaları (suuapp.com/furkan)
+
+Instagram bio'suna konan, kişiyi tanıtan bağlantı sayfası. Panelden düzenlenir:
+**suuapp.com/furkan/admin/**. Site statik olduğu için panelin sunucusu yok —
+değişiklikleri doğrudan bu depoya commit'ler, `deploy.yml` 1–2 dakikada yayına alır.
+
+| Dosya | Rolü |
+|---|---|
+| `furkan/index.html` | sayfa **ve** verisi (`<script id="profile-data">` JSON'u — tek kaynak) |
+| `furkan/media/` | panelden yüklenen fotoğraflar (tarayıcıda küçültülür) |
+| `furkan/admin/index.html` | panel (noindex, sıkı CSP) |
+| `assets/js/profile-render.js` | veri → sayfa çizicisi; panel ve `build-profile.mjs` aynı kodu kullanır |
+| `assets/js/profile.js` · `assets/css/profile.css` | sayfanın davranışı ve görünümü |
+| `assets/js/profile-admin.js` · `assets/css/profile-admin.css` | panel |
+| `scripts/build-profile.mjs` | veriyi elle değiştirince sayfayı yeniden basar |
+
+**Panele giriş — bir kez:** GitHub → Settings → Developer settings → Fine-grained
+tokens → *Generate new token*. Repository access: **Only select repositories →
+yafurkan/suapp-web**; Repository permissions: **Contents → Read and write**. Oluşan
+`github_pat_…` anahtarını panele yapıştır. Anahtar yalnızca o tarayıcıda saklanır ve
+yalnızca `api.github.com`'a gider; panel sayfasının CSP'si başka hiçbir yere istek
+atılmasına ve dışarıdan script yüklenmesine izin vermez. Bu yüzden `inject-analytics.py`
+ve `inject-special-days.py` `admin/` klasörlerini atlar — panele script eklemeyin.
+
+**Yayın:** sayfa + yeni fotoğraflar tek commit (`profil(furkan): panelden güncellendi`).
+Artık kullanılmayan fotoğraflar `furkan/media/` altındaysa aynı commit'te silinir;
+`assets/` altındaki dosyalara asla dokunulmaz. Bu sırada sayfa başka yerden
+değiştiyse panel üzerine yazmaz, uyarır. Yayınlanmamış düzenlemeler tarayıcıda taslak
+olarak durur. Bir değişikliği geri almak = o commit'i GitHub'da geri almak.
+
+**Elle düzenleme:** `furkan/index.html` içindeki JSON'u değiştir, sonra
+`node scripts/build-profile.mjs furkan --apply`. İşaretler (`<!--profile:head-->`,
+`<!--profile:body-->`) arasını elle düzenleme — bir sonraki basımda silinir.
+
+**Yeni kişi (ör. suuapp.com/mert):** `furkan/` klasörünü `mert/` olarak kopyala
+(`media/` boş), JSON'da `slug`'ı `mert`, `personId`'yi `https://suuapp.com/#mert` yap,
+`node scripts/build-profile.mjs mert --apply`, `sitemap.xml`'e ekle. Panel adresten
+slug'ı okur: suuapp.com/mert/admin/.
+
 ## Yasal Sayfalar
 
 `gizlilik-politikasi.html` ve `kullanim-sartlari.html` yedi dili (tr, en, ar, ru,

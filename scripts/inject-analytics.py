@@ -23,7 +23,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
-SKIP_DIRS = {".git", ".github", ".claude", "node_modules", ".qodo", "scripts"}
+# <slug>/admin/ profil panelleri GitHub anahtarı tutar — üçüncü taraf script girmez (sayfanın CSP'si de engeller)
+SKIP_DIRS = {".git", ".github", ".claude", "node_modules", ".qodo", "scripts", "admin"}
 # admin.html yönetim arayüzü, og-image-template render şablonu, yandex doğrulama dosyası,
 # x9f4c2e7b.html hediye kod paneli (iç kullanım — ölçüme girmez)
 SKIP_FILES = {"admin.html", "og-image-template.html", "yandex_d8f56999642a8d54.html",
