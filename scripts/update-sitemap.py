@@ -38,7 +38,7 @@ EXCLUDE_PARTS = ("/404", "/admin.html", "/app/", "/makale.html",
                  # Aramadan gelen rastgele trafik sınırlı kod havuzunu tüketmesin.
                  "/hediye-kod", "/gift-code", "/x9f4c2e7b",
                  # Sponsorluk sayfaları (content/partners/*.json → <slug>/)
-                 "/dahacommunity")
+                 "/dahacommunity", "/nese/")
 
 RE_URL_BLOCK = re.compile(r"[ \t]*<url>(.*?)</url>\s*\n?", re.DOTALL)
 
