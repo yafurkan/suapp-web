@@ -1,0 +1,1701 @@
+{
+ "_comment": "scripts/stamp-freshness.py tarafından tutulur — elle düzenlemeyin. Her yazı: son tarihlenmiş metnin özeti (text), o hâlin git blob'u (blob) ve güncelleme tarihi (modified). Üretilmiş yazılarda build-compare.py bu tarihi okur.",
+ "rules": 2,
+ "pages": {
+  "blog/afrika-su-kuyusu-bagis-programi.html": {
+   "text": "8ad75bbf92729ab54d36f71a06a376836b42eb62",
+   "blob": "ce18d724d5502b166b5b2c85514cec5fede60293",
+   "modified": "2026-10-03"
+  },
+  "blog/aktivite-bazli-su-takibi.html": {
+   "text": "b295fee5eb284018bc9365f01161fd69f2f41c5d",
+   "blob": "41d56a99084f3406180070dc8ebf0c9ba5be4e8f",
+   "modified": "2026-10-03"
+  },
+  "blog/alkol-sonrasi-hidrasyon.html": {
+   "text": "8165ea1be86e2e3e7353c51dbd8270b36aedb4e5",
+   "blob": "1d6f48c0d0ff48231e429b5f1c3f227b6bf0db6c",
+   "modified": "2026-05-10"
+  },
+  "blog/apple-watch-su-takibi.html": {
+   "text": "345f84ae2489a6cad592c2917115f94196c034f0",
+   "blob": "4d3514e2cb5d14c62b23b9ba95571794e5f7f567",
+   "modified": "2026-09-29"
+  },
+  "blog/ar/aaseer-am-mae.html": {
+   "text": "eac265c8030e2d646bcfa7b50893c8fdec893e3a",
+   "blob": "27ef4f82f2201285d75644838208e21896c90fed",
+   "modified": "2026-05-10"
+  },
+  "blog/ar/adat-shurb-almae.html": {
+   "text": "414c994611e3092e6064a2aaf9fbd9b29860a1e5",
+   "blob": "65f91b4dde979929e0c2119000db1c4dedc5c8c9",
+   "modified": "2026-09-27"
+  },
+  "blog/ar/afdal-tatbiq-hisab-suerat.html": {
+   "text": "d999c88fc34977ffd8d14f9a15cc478ad9ff460b",
+   "blob": "d74d64e0b2ee4355aecd5343a3ae5c9aadd8491a",
+   "modified": "2026-10-03"
+  },
+  "blog/ar/afdal-tatbiq-mae.html": {
+   "text": "24abdc5dce3224af116a241c992eb638edba5ff8",
+   "blob": "80182030ae01260cb0c99cc4b0441033d85b2a66",
+   "modified": "2026-10-03"
+  },
+  "blog/ar/afdal-tatbiq-tamarin.html": {
+   "text": "95b76a6a4ca641eb32ad85dd3caf6eea5c224791",
+   "blob": "0b9684a6715a76408998bdb8f5e0ff2b87fed956",
+   "modified": "2026-09-14"
+  },
+  "blog/ar/al-ajz-al-harari.html": {
+   "text": "b00a0882e9827249e2f2402c70a769dc7979260c",
+   "blob": "2f9ab0034d449828cc24541832f4cdfa3acecba5",
+   "modified": "2026-07-03"
+  },
+  "blog/ar/al-akl-laylan.html": {
+   "text": "1b7a629b4569b7c32cd107cea0e6516579aa04c5",
+   "blob": "bc1d92149243d19920b9bbbe6c9045f7e0ae90e3",
+   "modified": "2026-09-27"
+  },
+  "blog/ar/alamat-aljafaf.html": {
+   "text": "f8b552c68ac9bb5c6eca5ad83ba2f1b4f3c14edd",
+   "blob": "fb0b1aabd98bf74abdba350953e1a4ee94393273",
+   "modified": "2026-10-03"
+  },
+  "blog/ar/alkafayin-walsukar.html": {
+   "text": "95cd90ede5b1d277e43f6881a2d829736688d7da",
+   "blob": "e87ba78c640f3649911bc6596ff9340d4b8fba90",
+   "modified": "2026-10-03"
+  },
+  "blog/ar/alkasal-an-arriyada.html": {
+   "text": "294f2180eb0cc3a3b24988684eb755b8bf5c32bd",
+   "blob": "284346d6593e3db96db2f89a78b9d1cebc665725",
+   "modified": "2026-09-27"
+  },
+  "blog/ar/almae-walhml.html": {
+   "text": "e1c41049b4907f6f349fc10608511ee5ae4363a4",
+   "blob": "aadbc6a0fd5c3b38b54b2af0acb7df0ea428b1ce",
+   "modified": "2026-10-03"
+  },
+  "blog/ar/almae-walidara-alwazn.html": {
+   "text": "f831f6a3319ccba210017d23764890d036045821",
+   "blob": "22b838e4a5691dd4e28dac48e79a00f2e20f3ac7",
+   "modified": "2026-10-03"
+  },
+  "blog/ar/almae-walnashat-aljasadi.html": {
+   "text": "6739bca078ca68ee00a9b82a1549f185d1f622ef",
+   "blob": "71827bb436886ce17383a37cd1c486a9d53267eb",
+   "modified": "2026-10-03"
+  },
+  "blog/ar/almae-walrida.html": {
+   "text": "22bba93294e6ae53333e0dc1103f1ad3494e0160",
+   "blob": "2cbcae2ace6678745f7ec6a5e477c7471c595555",
+   "modified": "2026-04-07"
+  },
+  "blog/ar/almae-walsihha-aljildiyya.html": {
+   "text": "7cbe4f16f49d6c0d4758284c44e5ad19c615663d",
+   "blob": "03d5b773c299076651df4851f6d0d43cb1d14730",
+   "modified": "2026-10-03"
+  },
+  "blog/ar/almae-wannawm.html": {
+   "text": "4a2b66cdf559a3dd5112b349451d6ab3919f38bb",
+   "blob": "af84c5fd5248bc8e87d623f61aae8f49e3e4b3c3",
+   "modified": "2026-10-03"
+  },
+  "blog/ar/almae-wasihhat-alkulaa.html": {
+   "text": "0d76f49a8295988aa738299f2ce9806de652515e",
+   "blob": "6850353a08b1695880c9481b538b40677ce3e387",
+   "modified": "2026-10-03"
+  },
+  "blog/ar/almashi-am-aljary.html": {
+   "text": "1ee9f525ccdf429cbd03bc93174f5ae2e0039514",
+   "blob": "3d1594adc786d11692383d8c5bbbde4d28e2b0f7",
+   "modified": "2026-10-13"
+  },
+  "blog/ar/alqahwa-walshay-walmae.html": {
+   "text": "4ea774caca2167c7415f6f6629e5c755a49db3e6",
+   "blob": "0a6e2c15903cc27281b68c06817cd823ce0a23c2",
+   "modified": "2026-09-27"
+  },
+  "blog/ar/alwade-albasit-walmutaqaddim.html": {
+   "text": "4d677e995345a97d48bd7cc54c18d3bc2cee3c5c",
+   "blob": "a112ac5cd7127a611123ccb23e392816eb35c56a",
+   "modified": "2026-06-14"
+  },
+  "blog/ar/arriyada-fi-ramadan.html": {
+   "text": "fda7bc413547aa9c7c26921b97b40828330627fd",
+   "blob": "d0c36ef0bb6a3f18bcf3c189a0f5aaa88f46a7af",
+   "modified": "2026-10-13"
+  },
+  "blog/ar/arriyada-waltartib.html": {
+   "text": "cfc071f4ec8c3d8484d40e6e13896af6cd5d61a0",
+   "blob": "2dec845c033d3cad873373030d9e7517e4b9117e",
+   "modified": "2026-10-03"
+  },
+  "blog/ar/badail-yazio.html": {
+   "text": "7f33f1a2007a53ff2d318a9f07510cf8d82dfabc",
+   "blob": "cf7d6224abec996071b4785064f88a18941b5b5f",
+   "modified": "2026-10-03"
+  },
+  "blog/ar/barnamaj-tabarru-abar-almae-afriqia.html": {
+   "text": "b919484a1aaa849bf34f2dd3cc1e93ad646e5862",
+   "blob": "c804e7eb939eea5c19e828debfce842398b4191f",
+   "modified": "2026-10-03"
+  },
+  "blog/ar/cronometer-vs-lifesum.html": {
+   "text": "9ea58ce7ba7eeb6552b15ed55a3381451d0fe8dc",
+   "blob": "2eb984a9213b8a1fb571be404500d17fba3cf805",
+   "modified": "2026-10-14"
+  },
+  "blog/ar/cronometer-vs-yazio.html": {
+   "text": "b43f44db4e88122501af73fe186f5843fe20f7b5",
+   "blob": "9ece5bf0a71d50ce8f2391c473cb988bcbf7f690",
+   "modified": "2026-10-15"
+  },
+  "blog/ar/fawaid-shurb-almae-sabahan.html": {
+   "text": "0075c30f9927ab1392091d19ccdbc7ffb1f9c989",
+   "blob": "833232308cec018587e914eda41081948af3658a",
+   "modified": "2026-10-03"
+  },
+  "blog/ar/fawaid-shurb-almae.html": {
+   "text": "cb1e5bd5458d5b2c60e991f62a8395eb847023df",
+   "blob": "f762618461f4848c89f4e278efb008e10df87b9c",
+   "modified": "2026-10-03"
+  },
+  "blog/ar/hal-tatbiq-suu-amin.html": {
+   "text": "2b4f68d5c14e80bcf4f9cae937b8975dc975a8bc",
+   "blob": "eed8d1737dd87064dd351b687ce17ea880804dab",
+   "modified": "2026-10-14"
+  },
+  "blog/ar/hal-yastahiq-bina-tatbiq-tatabbu.html": {
+   "text": "9b777a163fffced62f4d68df7975a346b4e05ae9",
+   "blob": "b35e5d018227557567f5b9419a51430b186a328a",
+   "modified": "2026-09-14"
+  },
+  "blog/ar/hayawan-aleef-aleab-mini.html": {
+   "text": "a59eb146dc9537dca21936f1dc734180a4bf3f30",
+   "blob": "de1df7e3a1fc2cbb1645a59ddaafe4fffb91c84c",
+   "modified": "2026-05-22"
+  },
+  "blog/ar/hisab-al-macro.html": {
+   "text": "e8998a1d088d68969d5cff51de190c800f95e335",
+   "blob": "54053e505c5af7a756f0f8149a66666f075accd1",
+   "modified": "2026-07-03"
+  },
+  "blog/ar/hisab-al-suerat-bil-sura.html": {
+   "text": "78bd813ed254f022fce1607750851f5b8b821fff",
+   "blob": "8558f4eb76d225e7e8262952aac534765f813f1c",
+   "modified": "2026-07-03"
+  },
+  "blog/ar/hurq-al-suerat.html": {
+   "text": "8e95cf31cb4598c137f6d775291c569242f3ced9",
+   "blob": "d8b44351c51fce0240494c26bae32d2b65fa9e79",
+   "modified": "2026-07-03"
+  },
+  "blog/ar/kam-fanjan-qahwa.html": {
+   "text": "135bbf7470c6f8fdc929294a4256e2121039c0c8",
+   "blob": "2c28e988010947b7f323d5d0618900e280abbae0",
+   "modified": "2026-10-03"
+  },
+  "blog/ar/kam-litr-mae-yawmiyan.html": {
+   "text": "0732529b906b01c1c61f0cabecc6fb1188a95af8",
+   "blob": "892141d30636be046ad040bf6b64b6c1f3a825cf",
+   "modified": "2026-10-03"
+  },
+  "blog/ar/lifesum-vs-myfitnesspal.html": {
+   "text": "c7dee06e9f5d8a97e224956132900e7bcb5f9fb1",
+   "blob": "3a2334df0c3d5246e8e3017974562933f6fd93be",
+   "modified": "2026-10-14"
+  },
+  "blog/ar/lifesum-vs-yazio.html": {
+   "text": "dbd13b54f6c46c4a86b67712162d6f22d4e756b5",
+   "blob": "ef35ec851a66d4c55ed7202778873842dab52c71",
+   "modified": "2026-10-15"
+  },
+  "blog/ar/limadha-ashur-bitaab-daiman.html": {
+   "text": "ac1ce9e701855d114339e6276e98882920c2746b",
+   "blob": "72929d7e7c1ae61abd3b2e770f1cbae8943a8c51",
+   "modified": "2026-09-27"
+  },
+  "blog/ar/limadha-la-yanqus-wazni.html": {
+   "text": "a19e93374ed3750064b55a4a1005df487cfe6eb0",
+   "blob": "dac67cff5f230361fb05e96992fbb7f8764d8ed6",
+   "modified": "2026-09-27"
+  },
+  "blog/ar/malal-hisab-al-suerat.html": {
+   "text": "df578c597c807ea5c06022c7a4c5d1a5bf79af44",
+   "blob": "bce56397198f3e8f70ab725653fc143315fd7b1e",
+   "modified": "2026-09-27"
+  },
+  "blog/ar/myfitnesspal-vs-lose-it.html": {
+   "text": "827e070d9b7515a6aa8dc85896882c2eed53964d",
+   "blob": "0f8778bc9817963613b323213911673c7ad223c8",
+   "modified": "2026-10-15"
+  },
+  "blog/ar/nadhari-almae-maa-asdiqa.html": {
+   "text": "f6d262b3b469b225dca003617fc92bfcf431d468",
+   "blob": "c675c85087e455e56682a4ed27bccdc0c8b7567b",
+   "modified": "2026-10-06"
+  },
+  "blog/ar/strava-vs-nike-run-club.html": {
+   "text": "26380fdb54bf9523ad63f17ea537cbcf16d268e7",
+   "blob": "09fd04dbb6f478374a6c95ab9aa79e47013ea2de",
+   "modified": "2026-10-15"
+  },
+  "blog/ar/suu-vs-myfitnesspal.html": {
+   "text": "e680ffc259ff89d5aa377cc73c836e4bb29c05c7",
+   "blob": "ccacd3f5b40586bb2a269550082b26942242a829",
+   "modified": "2026-09-29"
+  },
+  "blog/ar/suu-vs-yazio.html": {
+   "text": "2d5916ab9daf59dcfe7f3100d6e78593900f5115",
+   "blob": "a7177d063f560b8655a7ff3e8782aace6e2e496f",
+   "modified": "2026-10-03"
+  },
+  "blog/ar/tahakum-mashroob-attaqa.html": {
+   "text": "5bdba67da5b7444ae30ac29da2db62db835c0c8c",
+   "blob": "992069dd1f513ea98c69c74a168e2a316974b544",
+   "modified": "2026-05-10"
+  },
+  "blog/ar/taqlil-alqahwa.html": {
+   "text": "1249ce0895ef27e6dc69e3eae6957da210b96efe",
+   "blob": "4e69eecc7c1d8eaf21227312e50ba5bdec0117e1",
+   "modified": "2026-10-03"
+  },
+  "blog/ar/tark-almashroobat-alghaziya.html": {
+   "text": "bac950b965ce195ab1bf17a651a2974bf8fc0f9a",
+   "blob": "3acb75dca9812c3ac027d9e85528625d0d313452",
+   "modified": "2026-09-27"
+  },
+  "blog/ar/tarteeb-asshay.html": {
+   "text": "9ab5e7fd6b63099ee7ee4e51a7979ec70b7f71a3",
+   "blob": "d251a0422ba825801cad0f1d318ea37cdc407d9a",
+   "modified": "2026-05-10"
+  },
+  "blog/ar/tarteeb-baad-alkohol.html": {
+   "text": "b77d5eea848eb26d5a4ff89c8f00d0920ac8dc6f",
+   "blob": "ff4d68f98776ce38fea261b08cd438148a3c8fa5",
+   "modified": "2026-05-10"
+  },
+  "blog/ar/tasjil-suerat-bil-sawt.html": {
+   "text": "2647641c13f29e8f08ab27a0a19af3042f5b5939",
+   "blob": "d1700c737b7c5c78abab67927e9c5fb972647759",
+   "modified": "2026-09-29"
+  },
+  "blog/ar/tatbiq-wahid-mae-suerat-tamarin.html": {
+   "text": "87a272f51879c2c214988c45135900bcc3a8dc8c",
+   "blob": "19863ea919689f3ba9532f551bccbf6d238efb6c",
+   "modified": "2026-09-29"
+  },
+  "blog/ar/waterminder-vs-hydro-coach.html": {
+   "text": "b0967550b083126a393cb439fc089aaeebc25f61",
+   "blob": "2962d92e9622680f472322396694844a4cc40e5b",
+   "modified": "2026-10-15"
+  },
+  "blog/ar/yazio-vs-myfitnesspal.html": {
+   "text": "d32bcf9d6d48dbf0d2a3fc78645a76c9d15a2616",
+   "blob": "789c73dfbe20ba35f8e120c564eab2be41b746c0",
+   "modified": "2026-10-15"
+  },
+  "blog/ar/ziyadat-alwazn-baad-arriyada.html": {
+   "text": "e21f7503ec1d5bc0ab14cb9b2cbf037b6c1ccf37",
+   "blob": "f072283f64869356026aeb361718ef20a6dacbe8",
+   "modified": "2026-10-13"
+  },
+  "blog/basit-gelismis-mod.html": {
+   "text": "65f2366d0fa7b9d487cb9be1cbf28cf6422fe571",
+   "blob": "2864fdd5375543e1f838a86603684c8bf0fa4480",
+   "modified": "2026-06-14"
+  },
+  "blog/cay-hidrasyon.html": {
+   "text": "7158e994f8e6e7381f7b763c82e67d3a6dbdadc6",
+   "blob": "a784d3001648142719cb8093394bbcef12ba5157",
+   "modified": "2026-05-10"
+  },
+  "blog/cronometer-vs-lifesum.html": {
+   "text": "287a43ff8412ffc25c99718f0f07bee1c5d757e0",
+   "blob": "f78991908e1930e4b632448c429e477e2bb3af23",
+   "modified": "2026-10-14"
+  },
+  "blog/cronometer-vs-yazio.html": {
+   "text": "c5f5f2930eb0b734a84ed627e793677e5a4042df",
+   "blob": "bec3edb86adce0dcc6dc6e2f583e73488ac0ef83",
+   "modified": "2026-10-15"
+  },
+  "blog/de/beste-wasser-tracking-app.html": {
+   "text": "c42a1b378aed0cd37d386602092600f49fc2f2ab",
+   "blob": "9351a95b2bda84bf0c232d80c31220e662b72c3c",
+   "modified": "2026-10-06"
+  },
+  "blog/de/beste-workout-tracker-app.html": {
+   "text": "c213ddd9f9f57de3d79a63b9c3a8a75dbe423d25",
+   "blob": "82af0c7faeab4c59e2b10c6edc711132502beb88",
+   "modified": "2026-09-14"
+  },
+  "blog/de/bester-kalorienzaehler-app.html": {
+   "text": "6f81cd4cfda4bf636fdd2d986cdf64e5eb863b54",
+   "blob": "b302238feef150ca0eb553c4cda806f6ffe03816",
+   "modified": "2026-10-06"
+  },
+  "blog/de/cola-abgewoehnen.html": {
+   "text": "2aa0f253ebcaf55e4f3695095d8fe5bbbfe1af59",
+   "blob": "0436f3c192e48f85e91a275453ebb08ad5f62972",
+   "modified": "2026-09-27"
+  },
+  "blog/de/cronometer-vs-lifesum.html": {
+   "text": "2750a4a5bfe51d07f08f647c2d625facbec20690",
+   "blob": "ba39c31c4d781b1e79e4445e1e265649bcb3a4d6",
+   "modified": "2026-10-14"
+  },
+  "blog/de/cronometer-vs-yazio.html": {
+   "text": "2d0508f55c5bf25916826ff7a516a62cf76b003c",
+   "blob": "97c669bd2eed24542fe35590ed3d5da93886ce12",
+   "modified": "2026-10-15"
+  },
+  "blog/de/gehen-oder-laufen-abnehmen.html": {
+   "text": "b1c1ebb5bb70a2ffa0584a564996524d341a12e7",
+   "blob": "9e004d72345fc69cfb252f64d3568e989144a357",
+   "modified": "2026-10-13"
+  },
+  "blog/de/heisshunger-am-abend.html": {
+   "text": "c541eaa944468dc5b32a8268173e1c3c1b48c2f5",
+   "blob": "32a2f7ff34a82432a2ce2c3bbec5398cf27b627b",
+   "modified": "2026-09-27"
+  },
+  "blog/de/ist-suu-sicher.html": {
+   "text": "c7e75a0d2e7cdd12f1c50f24e18e1b68473da06f",
+   "blob": "e122e6598dc1c842b53d03aa3f4ff76036394674",
+   "modified": "2026-10-14"
+  },
+  "blog/de/kaloriendefizit.html": {
+   "text": "611ae1165430fd336e74f16a3a78830d02f7c3d6",
+   "blob": "cb3b6432e4039be52cef92d9131fcd36d85cd32c",
+   "modified": "2026-09-05"
+  },
+  "blog/de/kalorienverbrauch-beim-sport.html": {
+   "text": "2e65809be5b7314fb81f638b6103d4696a08f240",
+   "blob": "22305ee9a48c4c1b568a82813debdf4f05ad9be0",
+   "modified": "2026-09-05"
+  },
+  "blog/de/kalorienzaehlen-durchhalten.html": {
+   "text": "8b58a9a68636df31fd289dc39f162e08bdfcb1d1",
+   "blob": "90991873b5ab89b05415951e8867854853f5b9ee",
+   "modified": "2026-09-27"
+  },
+  "blog/de/kalorienzaehlen-per-foto.html": {
+   "text": "e75ece8b5f640ac32235029f3ff52b2962dac4f8",
+   "blob": "ff99d2936e41dcb49d89f6c232bda43a1475549e",
+   "modified": "2026-09-05"
+  },
+  "blog/de/keine-lust-auf-sport.html": {
+   "text": "6567a480bc50712a6515eff848773a77a52fe5fa",
+   "blob": "8fd74fafd885979f4698563c55ee4e6b9404b956",
+   "modified": "2026-09-27"
+  },
+  "blog/de/lifesum-vs-myfitnesspal.html": {
+   "text": "0a1f547fc29b314eda4704ba6d21809838fd4b6c",
+   "blob": "7d8b97cd37535136eb8ba4eb18d3bcf3ec4cae51",
+   "modified": "2026-10-14"
+  },
+  "blog/de/lifesum-vs-yazio.html": {
+   "text": "a9e8d122a0ddf1dfe2c2c4b226907e04f4800187",
+   "blob": "d03ca53b29192b16a46661c91f2338cdd55823eb",
+   "modified": "2026-10-15"
+  },
+  "blog/de/lohnt-sich-eine-tracking-app.html": {
+   "text": "da181d674986d71fb491e0d5207ba81f3131718e",
+   "blob": "40d006e97bb310cdb7c0953ed9d2ac38cfe3fef6",
+   "modified": "2026-09-14"
+  },
+  "blog/de/makroberechnung.html": {
+   "text": "4db2ab036f3cc068b5dfb95254eb92c042f0d540",
+   "blob": "4a8b6d2f4b2a0098e940af7ebebbd92c217505ca",
+   "modified": "2026-09-05"
+  },
+  "blog/de/myfitnesspal-vs-lose-it.html": {
+   "text": "978988ae1ce2afc3634dddb30155e40856fa5af3",
+   "blob": "52f00f50f826855f49b8428c2a5fddf3f8696da1",
+   "modified": "2026-10-15"
+  },
+  "blog/de/sport-im-ramadan.html": {
+   "text": "5619428dae66abe928f3bfe9b1f12e00d686b077",
+   "blob": "68b6d10a728801ea4c9b4842e08ca7c9e520eb88",
+   "modified": "2026-10-13"
+  },
+  "blog/de/strava-vs-nike-run-club.html": {
+   "text": "3b317f5e9e52eb6334adea3295b045082fb2bda8",
+   "blob": "62362406f2549b545a115612a68306fa6aed7ec5",
+   "modified": "2026-10-15"
+  },
+  "blog/de/warum-bin-ich-immer-muede.html": {
+   "text": "57901e125ba8b02451bb5343742b227bacb5423a",
+   "blob": "c2c1a65f75bf9a7dd7b095a3914f7b209e9297a7",
+   "modified": "2026-09-27"
+  },
+  "blog/de/warum-nehme-ich-nicht-ab.html": {
+   "text": "69ba77956b1248efd5944863d5091976c4872e34",
+   "blob": "1cf50764e094dd77280774d4ab0256c4e39e235b",
+   "modified": "2026-09-27"
+  },
+  "blog/de/wasser-kalorien-sport-eine-app.html": {
+   "text": "89db874efb4514a7fe7724e257aa0df1e5282abd",
+   "blob": "700b435a908b6b83b271557ef91fa095d6a36416",
+   "modified": "2026-09-29"
+  },
+  "blog/de/wasser-trinken-vergessen.html": {
+   "text": "6a0615aa53776f97c56c6cd31e0ce5f97153d6f7",
+   "blob": "9aa9ec9478da62f3be9d517d3e24289d0feeb5ad",
+   "modified": "2026-09-27"
+  },
+  "blog/de/waterminder-vs-hydro-coach.html": {
+   "text": "e3531b3e3a2a08a7b6998c281f5e0148e702e721",
+   "blob": "56dfe7e3e1dc439d5a2bcf085ab5ffb4b89c63d2",
+   "modified": "2026-10-15"
+  },
+  "blog/de/yazio-alternativen.html": {
+   "text": "120aa2b81e269aa1a616103fe392cdc8e0ff6f77",
+   "blob": "70eaede189909c151940c0d81a97987e8ad042a9",
+   "modified": "2026-10-03"
+  },
+  "blog/de/yazio-vs-myfitnesspal.html": {
+   "text": "9393ae1ebb22ace01a95217d3f3ff5d29f7d0eba",
+   "blob": "f22b8f1a66e34a9fc24bf8929e8aa8364ee80b0c",
+   "modified": "2026-10-15"
+  },
+  "blog/de/zaehlt-kaffee-zur-trinkmenge.html": {
+   "text": "7e6e2a7d7ad7025fd41c3938a1ebcae5c9370f6e",
+   "blob": "6a37ad0535e9e793567bc5661c371abbeff77600",
+   "modified": "2026-09-27"
+  },
+  "blog/de/zunehmen-trotz-sport.html": {
+   "text": "81a676e64d25127ad72c37a535054388547c1baf",
+   "blob": "f5a4fb992867b1884b51f6cd46c47d70212598e4",
+   "modified": "2026-10-13"
+  },
+  "blog/egzersizde-kalori-yakimi.html": {
+   "text": "7b6e3c6fb27a1fa5a723078dc35a5ec0bcd378dd",
+   "blob": "564356e076f114043af0f8442280b349d5b0c7d2",
+   "modified": "2026-07-03"
+  },
+  "blog/emzirmede-su-ihtiyaci.html": {
+   "text": "bf36a4c05f22401a169208ef1eb98db976f4049f",
+   "blob": "d437e2598eac059f9788320265c33810a2480526",
+   "modified": "2026-10-03"
+  },
+  "blog/en-iyi-egzersiz-takip-uygulamasi.html": {
+   "text": "2cb12dd207dac10185b8ae7f2e2c999c763bf524",
+   "blob": "c46a2d37128f720869b0b7bed02c3e4eddbe8cbb",
+   "modified": "2026-09-14"
+  },
+  "blog/en-iyi-fotografla-kalori-uygulamasi.html": {
+   "text": "b70ab5f02359d99d8bc7217d05cd35bd40e63e38",
+   "blob": "1aa29210abd36d2e5fc6c58f59ed57cf990fdac8",
+   "modified": "2026-09-29"
+  },
+  "blog/en-iyi-kalori-uygulamasi.html": {
+   "text": "5d2019f2bfadf4f3d095a0ade4b06884a57fe64c",
+   "blob": "716bb7c3c2cb41fd16d31cd02ee92a44568eca97",
+   "modified": "2026-10-03"
+  },
+  "blog/en/activity-based-water-tracking.html": {
+   "text": "b5babbef41c1e4989431fdb81ce27974c0babbdc",
+   "blob": "ffcbbe3627a22f04f3f7e71892cf204f63632d5b",
+   "modified": "2026-10-03"
+  },
+  "blog/en/africa-water-well-donation-program.html": {
+   "text": "a6ab22bfb4ca9dbd33728396ef2c61f77f57d3d9",
+   "blob": "9cf2f685ef06a2a0f713baa9f898f60591cc6275",
+   "modified": "2026-10-03"
+  },
+  "blog/en/ai-calorie-accuracy.html": {
+   "text": "ff036f6c80c6ceb9d09165cdbc43d3c9cd7620e0",
+   "blob": "786b2d9cf89756064a4e192b428301597cdc3254",
+   "modified": "2026-08-17"
+  },
+  "blog/en/apple-watch-water-tracking.html": {
+   "text": "d32cd4e90247698b43781073abc76b8638c0546b",
+   "blob": "fa09184592555c7f8c5b38f47594cd347de0c262",
+   "modified": "2026-09-29"
+  },
+  "blog/en/benefits-of-drinking-water.html": {
+   "text": "9c7c7440655e63b4286bf04a4c760b94639c9173",
+   "blob": "6a19c787a23083424d48df32aee13716df2d5515",
+   "modified": "2026-03-15"
+  },
+  "blog/en/best-calorie-counting-app.html": {
+   "text": "6186e689f792c66dcdfb08f51c37481c8939346a",
+   "blob": "42aa5705073987754c0b5b594355d1bb2a9049d6",
+   "modified": "2026-10-06"
+  },
+  "blog/en/best-photo-calorie-app.html": {
+   "text": "ae56b47dc6a00254ef494465229125d0c36a4040",
+   "blob": "51424460efa026fb23152f66234eb735f3c6f8d7",
+   "modified": "2026-09-29"
+  },
+  "blog/en/best-water-tracking-app.html": {
+   "text": "f9603423cc253ffdb2d3905ad53a939d257cdfb5",
+   "blob": "34f804b7364079b3cea79b51ac7642ba51cbed17",
+   "modified": "2026-10-06"
+  },
+  "blog/en/best-workout-tracker-app.html": {
+   "text": "6b79f47b45bf2b7daeee14c5c206962642c7f018",
+   "blob": "985c2bbf5231045b53dcd0ce25605f90e8a3d137",
+   "modified": "2026-09-14"
+  },
+  "blog/en/caffeine-sugar-tracking.html": {
+   "text": "dda7d4b33e6ac5ad9d74b65195ea934c2942380f",
+   "blob": "abb051aae3979742dfe640a15ae78250db23ccff",
+   "modified": "2026-10-03"
+  },
+  "blog/en/calorie-counter-with-exercise-tracker.html": {
+   "text": "d767cda5d1d78e48e1a4436fa2e74d0d11a5bb13",
+   "blob": "2c67dd70f614ebe890dce2e5c88d342dcf72648d",
+   "modified": "2026-09-29"
+  },
+  "blog/en/calorie-deficit.html": {
+   "text": "56070301aeaba69c4533f37f2413fd425b02959c",
+   "blob": "9b5866b04b87524fdc56516f23445f7f71b45d78",
+   "modified": "2026-07-03"
+  },
+  "blog/en/calories-burned-exercise.html": {
+   "text": "736e20e8c26b38faa1fb82767c50954c86645eac",
+   "blob": "44a4890172e8f1be978bfa84087e2eed7f70c58a",
+   "modified": "2026-07-03"
+  },
+  "blog/en/coffee-tea-hydration.html": {
+   "text": "6544ecf05ea181b6481cdafe35017e8499084819",
+   "blob": "30dec674b83879aec8d57b565a9e3decdbd101d9",
+   "modified": "2026-09-27"
+  },
+  "blog/en/cronometer-vs-lifesum.html": {
+   "text": "7484629e83f3430d2fecf1698cb5d1fe85e56a2e",
+   "blob": "ef3283983c64994d679fce7229e29804f792463b",
+   "modified": "2026-10-14"
+  },
+  "blog/en/cronometer-vs-yazio.html": {
+   "text": "bbbaabfe1c046ab47b448518decb086eff65d40b",
+   "blob": "15a94c60287bb1c6e007d02c9bc60ae24e7b8ea4",
+   "modified": "2026-08-13"
+  },
+  "blog/en/energy-drink-control.html": {
+   "text": "881cadb182d4d2da48c725f4ccebb10a74458dcd",
+   "blob": "d2a5ef2d71f623ca8da5e394766539116d89f863",
+   "modified": "2026-05-10"
+  },
+  "blog/en/exercise-during-ramadan.html": {
+   "text": "1bd0c0a9dfc7f9465d339a38a46965de386625db",
+   "blob": "ea1cbf12b059a23bdeb5fb1345db719598020585",
+   "modified": "2026-10-13"
+  },
+  "blog/en/free-calorie-counter-app.html": {
+   "text": "d6b7854cf95d39a1e09cb7366b14bc2a2e436178",
+   "blob": "c6282d9fb840a385fbfd7c172ddc2cecb7d3a321",
+   "modified": "2026-10-06"
+  },
+  "blog/en/gps-run-tracker-with-calorie-counter.html": {
+   "text": "aae6fa32bb02f2bb3e68cfa23abf7f136a531623",
+   "blob": "c97e8d62896895231249d8dc6c0eed9192d848c7",
+   "modified": "2026-09-29"
+  },
+  "blog/en/how-many-cups-coffee.html": {
+   "text": "9d9c0cc8ab6b19cb3d4e26fa0442689903de41af",
+   "blob": "a44d1ac3cbf60d7a6f12577030d66445ed8f75f5",
+   "modified": "2026-10-03"
+  },
+  "blog/en/how-much-water-should-i-drink.html": {
+   "text": "0f4edb2afb9a15cc9e0f53978dcd7b81a65fb36f",
+   "blob": "a8311836e388857bf4273f7a3e6881e4214ed451",
+   "modified": "2026-10-03"
+  },
+  "blog/en/how-to-quit-soda.html": {
+   "text": "a4633f3471a273ba9825c9d97a4d7587e3ba1f5b",
+   "blob": "336b0bc41b6f19a6ff244a66f096255c799a86c6",
+   "modified": "2026-09-27"
+  },
+  "blog/en/hydration-and-exercise.html": {
+   "text": "cb730244e6972fc5ed1346e05517ae989deb7a28",
+   "blob": "863c91e27bcaa4a725d2bbe5961ac83f2d17fd3f",
+   "modified": "2026-10-03"
+  },
+  "blog/en/hydration-during-pregnancy.html": {
+   "text": "21b46fd28eaba8e9cdec6564cb2389f560f2af84",
+   "blob": "fe51f22784039fcb74a9548b7a569ff9e92121e4",
+   "modified": "2026-10-03"
+  },
+  "blog/en/hydration-score-explained.html": {
+   "text": "b17f18e6b80adc26290b9237ee42ad61fe4e92bb",
+   "blob": "f782a8f12a91965edced943ec919d693098d7116",
+   "modified": "2026-09-29"
+  },
+  "blog/en/hydration-while-breastfeeding.html": {
+   "text": "98b4a00fe309d442e9a72bfd9604ebb3293a0022",
+   "blob": "18d36bf1e276ce76da325ffe7664331a70dd41aa",
+   "modified": "2026-10-03"
+  },
+  "blog/en/is-suu-safe.html": {
+   "text": "9e10aaa9d50c4ba55d24a39d317dc0f5f1001684",
+   "blob": "c1a3fc8248c4ab1b2bf34ab243865788f8d8e042",
+   "modified": "2026-10-14"
+  },
+  "blog/en/juice-vs-water.html": {
+   "text": "e580384fc6300759473642f3fcfe48b66ca4f285",
+   "blob": "d1fdf8c88475183a5093b78c466c5980782816e4",
+   "modified": "2026-05-10"
+  },
+  "blog/en/lifesum-vs-myfitnesspal.html": {
+   "text": "169d9d3d113e10d7e87ca68ff803f0ff79886501",
+   "blob": "21b8260f27015a32b3949e9c08d9d34d0bdb0156",
+   "modified": "2026-10-14"
+  },
+  "blog/en/lifesum-vs-yazio.html": {
+   "text": "33cea2f483fba9726018e875879f0f25cb5307f0",
+   "blob": "777437001aa819ce299376c69e677af5911a3d4c",
+   "modified": "2026-08-13"
+  },
+  "blog/en/macro-calculation.html": {
+   "text": "b28637d1757891a1fc8501c3fd3d23ca9fef2334",
+   "blob": "c90b2f17f8315a462bdbb63d68474cf6666a9c2b",
+   "modified": "2026-10-03"
+  },
+  "blog/en/morning-water-benefits.html": {
+   "text": "41f964cc02aa597c1e4d3249de8d6509b5c7fc79",
+   "blob": "6ec36cdb09c2d0631bfe8090419fdf218a8d6a61",
+   "modified": "2026-03-15"
+  },
+  "blog/en/myfitnesspal-vs-lose-it.html": {
+   "text": "93f110745e64cf611f5a31ec8d175fc322423f0a",
+   "blob": "b58a3a329275869b67f5529c096cf00fae8df5d7",
+   "modified": "2026-08-24"
+  },
+  "blog/en/no-motivation-to-exercise.html": {
+   "text": "76fdd9c001c35f8dd0c0c7f3218bf552d9677dc7",
+   "blob": "b1724c690aaf6851e2e17dc8bcbecf188dff79ec",
+   "modified": "2026-09-27"
+  },
+  "blog/en/pet-companion-mini-games.html": {
+   "text": "33bc93c2f60d959680add62fc35ba7d77846b57f",
+   "blob": "45e603bc5a1493b3613306aa17c171ffebbbae16",
+   "modified": "2026-05-22"
+  },
+  "blog/en/photo-calorie-counting.html": {
+   "text": "b3fa27dd5bbaacb460fe25dfebcdfa978d3bb26c",
+   "blob": "c9f73abd52b34720fd8a30cb9ca0ac488e7acb56",
+   "modified": "2026-07-03"
+  },
+  "blog/en/post-alcohol-hydration.html": {
+   "text": "a8f13644909d9acef1e622a4a8ee7fb6f306927b",
+   "blob": "399bdcf0e95ff82cb17c002430d3628f02995dc4",
+   "modified": "2026-05-10"
+  },
+  "blog/en/quit-coffee-guide.html": {
+   "text": "8aa6b4ad303a92a1d405c733647b122c2499518a",
+   "blob": "9d792d42582c4675a9701b63e0e9bc64c5eecc90",
+   "modified": "2026-10-03"
+  },
+  "blog/en/should-you-build-a-tracking-app.html": {
+   "text": "f87df81d76b3beb73fa896f145188b133dd91534",
+   "blob": "6e65a4bfc48810d3ab95dd10fcfccf120b849b6b",
+   "modified": "2026-09-14"
+  },
+  "blog/en/signs-of-dehydration.html": {
+   "text": "3e02e420d5e582c3ad9abc6a2c8540d2a5a17e82",
+   "blob": "e6b841a1bedc691b89a66492e3e9be1eba22c45e",
+   "modified": "2026-03-15"
+  },
+  "blog/en/simple-advanced-mode.html": {
+   "text": "cd61ff2ec4a1ec44297d3b4f3eb1583e182db76e",
+   "blob": "d6c3c05f8ac188ce17650ad9963ef60939349279",
+   "modified": "2026-06-14"
+  },
+  "blog/en/siri-water-tracking.html": {
+   "text": "4c914e8606c70af95194ee37ec50545a30bc7fb6",
+   "blob": "db21ede6d6a89b4cf4b057c7e366a34acf5f14ef",
+   "modified": "2026-09-29"
+  },
+  "blog/en/stick-with-calorie-counting.html": {
+   "text": "4c2692beba60b4cfcf7c307b37dd5f0230227d17",
+   "blob": "03b88e28d1c896be841f2e4538621ef82ada9298",
+   "modified": "2026-09-27"
+  },
+  "blog/en/stop-late-night-snacking.html": {
+   "text": "99c3f3ddd063c6250ffa10dff1559796a181b6ea",
+   "blob": "6256dbf002a9a99b736df1142e0f25aaa89f056e",
+   "modified": "2026-09-27"
+  },
+  "blog/en/strava-vs-nike-run-club.html": {
+   "text": "fc21d0b1058769a446f0134444953b41b9e261fe",
+   "blob": "6a7032028bd3b4214d46ab851e95a1a135570935",
+   "modified": "2026-08-24"
+  },
+  "blog/en/suu-vs-cal-ai.html": {
+   "text": "3996b7fe8a6d3f0edf41276c69308a486d6c7696",
+   "blob": "0bc961cffd2ceda850da2d2b67e2abb54ff49a0d",
+   "modified": "2026-09-29"
+  },
+  "blog/en/suu-vs-myfitnesspal.html": {
+   "text": "0a0327901e8f825835d9434f3e471c00ba298ecf",
+   "blob": "919cadb3a4f84da000c56dd90b3851ab18f5914b",
+   "modified": "2026-09-29"
+  },
+  "blog/en/suu-vs-strava.html": {
+   "text": "5d0f655a4cbecb704d0c7b940ac56f914de8f6ca",
+   "blob": "791e6fc0d9beb05665b5437051bbae60a1e6b0d2",
+   "modified": "2026-09-14"
+  },
+  "blog/en/suu-vs-yazio.html": {
+   "text": "d583a44673b6e76dc4a9f42d96ac8a674a0d6fd6",
+   "blob": "926b479667969dc2c34f5979c61f3bad3be2b39f",
+   "modified": "2026-09-29"
+  },
+  "blog/en/tea-hydration.html": {
+   "text": "0a9543363fef8a961fb480dde1cfd1f656e99e73",
+   "blob": "9f0b0aa16394d83447a2893a96799f1a16826f57",
+   "modified": "2026-05-10"
+  },
+  "blog/en/voice-calorie-logging.html": {
+   "text": "7821e09e2ec59da9f4643274662ac4d36313300e",
+   "blob": "1c7168a38766e4bcc6ea40b12ba6a7219cc5164f",
+   "modified": "2026-09-29"
+  },
+  "blog/en/walking-vs-running-for-weight-loss.html": {
+   "text": "fe2f02b54a684a6bcb8ac1ffc1adb031bfbad1ac",
+   "blob": "45e44de2cfad43e217154869145f59596c699978",
+   "modified": "2026-10-13"
+  },
+  "blog/en/water-and-kidney-health.html": {
+   "text": "94d010797a7490b8b237ff4e052b623fac8ea21a",
+   "blob": "22ef8560f3ee99e0680ec27b4c89719c8b3c117a",
+   "modified": "2026-03-22"
+  },
+  "blog/en/water-and-skin-health.html": {
+   "text": "9b8c96bc6f35833e9487b6bb0a0a5d87c0a8fdb8",
+   "blob": "04338bc74e01343d6ac5f6297a81220adb7aba70",
+   "modified": "2026-03-22"
+  },
+  "blog/en/water-and-sleep.html": {
+   "text": "54fd6a288efb3ba99189255aeb35891bbf4ed906",
+   "blob": "2b03f7b3e309fe05197a50c2cb41304fa0ed36e6",
+   "modified": "2026-03-22"
+  },
+  "blog/en/water-and-weight-loss.html": {
+   "text": "19e8cf7b191709826839130e50395565eae3f07d",
+   "blob": "b6ec811a4b47c3101613e4a611b5f0835ab465c9",
+   "modified": "2026-03-22"
+  },
+  "blog/en/water-calorie-exercise-one-app.html": {
+   "text": "f523777fb145b9832055e3f6fa8e0913f1efd638",
+   "blob": "0c39b71c3aacd0481742837bd9e883e831698b3b",
+   "modified": "2026-09-29"
+  },
+  "blog/en/water-challenge-with-friends.html": {
+   "text": "f6e80556e4368ac0c5e2c862a8ca93338ce2da58",
+   "blob": "ea6b1b2707763b900b6ca91c9488f5ea1615f3da",
+   "modified": "2026-10-06"
+  },
+  "blog/en/water-drinking-habits.html": {
+   "text": "36edbb34e6eb3dc57905d653fe6cb0db7cfa479c",
+   "blob": "ba5d4a7603f9cebbf20075bd40be7063dd8416a2",
+   "modified": "2026-09-27"
+  },
+  "blog/en/water-tracking-gamification.html": {
+   "text": "e1ce7ed93e61ba7b24731ebaf2ba026e7be2c3fc",
+   "blob": "a1c54adce4528f5d2f18c4ee3b816a85d85856a3",
+   "modified": "2026-04-14"
+  },
+  "blog/en/waterminder-vs-hydro-coach.html": {
+   "text": "4b2e8a47cb1a448d597832b38f827f3ee797c362",
+   "blob": "e44bcbe35d3eb6f43fe2427012e848fc2d703d59",
+   "modified": "2026-08-24"
+  },
+  "blog/en/weight-gain-after-starting-exercise.html": {
+   "text": "d4883174d2a051d1c8f1a8f4858eaaa013f867c1",
+   "blob": "0e547b214c247cf34e825c7302233d7a5da7e993",
+   "modified": "2026-10-13"
+  },
+  "blog/en/why-am-i-always-tired.html": {
+   "text": "3d76396e0b70a91923c134768f4756fa80217f5a",
+   "blob": "233c8178df3d938774264e5e4433937e2e8174e8",
+   "modified": "2026-09-27"
+  },
+  "blog/en/why-am-i-not-losing-weight.html": {
+   "text": "bc5a88a6374ceaf9ea26be8bbf78ff753e44ff14",
+   "blob": "962acc37f3d9f6159efcb8b1b750eda43a7e8427",
+   "modified": "2026-09-27"
+  },
+  "blog/en/yazio-alternatives.html": {
+   "text": "520e83e983716c3d6285773f3eec57cc2371593a",
+   "blob": "f73544e1a27a6920029ba0fd62db4433f02f03b6",
+   "modified": "2026-10-03"
+  },
+  "blog/en/yazio-vs-myfitnesspal.html": {
+   "text": "6b10e6e38bf37af83f25e9dc9b654d0ec851fc53",
+   "blob": "e4b79a0c098da352f2bb4159601bda17cf5fd466",
+   "modified": "2026-08-13"
+  },
+  "blog/enerji-icecegi-kontrolu.html": {
+   "text": "fb8998861135882f4ef9eb14f5561828a66c1f9f",
+   "blob": "03ae7559c06fa867f711d34ce24d8b1412a89b12",
+   "modified": "2026-05-10"
+  },
+  "blog/fotografla-kalori-sayma.html": {
+   "text": "f8cf7baae40391c4ac5b440cc23b328da74eb6cd",
+   "blob": "67fb435cd08fce6e2e9b1a9852d10546493d19a1",
+   "modified": "2026-07-03"
+  },
+  "blog/gece-atistirmasini-birakmak.html": {
+   "text": "230020e92c1d9b858db42812d3b3345ccc87be20",
+   "blob": "38628308a52a25b3180a3b637b713d828977a339",
+   "modified": "2026-09-27"
+  },
+  "blog/gps-kosu-takibi-kalori-sayaci.html": {
+   "text": "1b96b3b268e55c31a048c13b7585c152f7c5cfd1",
+   "blob": "bad07816fe79efec5f4cfc1582d557536056fef1",
+   "modified": "2026-09-29"
+  },
+  "blog/gunde-kac-kahve.html": {
+   "text": "445f98b27d2a01c054abd6c174310f28840cc6eb",
+   "blob": "03c377abd578364fe1df89a1435289e9980d30ea",
+   "modified": "2026-10-03"
+  },
+  "blog/gunluk-ne-kadar-su-icmeli.html": {
+   "text": "0ed63ff9693fc4340db21f13d0fa123f8da412ad",
+   "blob": "74433eab7b95b23f04d2747b778661a35c5bd2d2",
+   "modified": "2026-10-03"
+  },
+  "blog/hamilelikte-su-ihtiyaci.html": {
+   "text": "cd53942697df7e090d604e31c12631ef8eb032f1",
+   "blob": "7a0f51c47c74bf4258e0e38a388683cc3c20d4fc",
+   "modified": "2026-10-03"
+  },
+  "blog/hidrasyon-skoru-nedir.html": {
+   "text": "f9f95cbd1a8edc3c2244aca5dbd18564538ecfaf",
+   "blob": "549df1c3e40ac0e56d48e001e93e1ea195fbc213",
+   "modified": "2026-04-14"
+  },
+  "blog/it/acqua-calorie-allenamento-una-app.html": {
+   "text": "a05b4d197d63edd9f850e01a20ebf2b46c33c4dd",
+   "blob": "45b536d5e061c4ea4f48642e4c1cfc12571c0595",
+   "modified": "2026-09-29"
+  },
+  "blog/it/alternative-a-yazio.html": {
+   "text": "f096489411b9b84125349e806ecfc4cb9eaf49a9",
+   "blob": "cce885479d3962e5d30115a51ec86d7eeb7b518b",
+   "modified": "2026-10-03"
+  },
+  "blog/it/calcolo-macro.html": {
+   "text": "8f70cd01b6f50298788600274bfcb50df2f89a98",
+   "blob": "7a1ae740c89955ff098855c86684f9651a0adae5",
+   "modified": "2026-09-05"
+  },
+  "blog/it/calorie-bruciate-allenamento.html": {
+   "text": "0315daa2e8cea65c765b4aa51e48fb0c3eeddeb0",
+   "blob": "6a8462dcc1c23610676e28bc02d5b8787eb1d29b",
+   "modified": "2026-09-05"
+  },
+  "blog/it/camminare-o-correre-per-dimagrire.html": {
+   "text": "84e1d200ae84f47ac5ff92903824dba36a55cb4d",
+   "blob": "8493fa2b0496c3caf95d70451b3b1188f9152808",
+   "modified": "2026-10-13"
+  },
+  "blog/it/contare-calorie-senza-stress.html": {
+   "text": "b0a608d127aeb5bc01878b2c6a86fb462511b9f8",
+   "blob": "483abc9967075875b2a2c18b0f28ccfa37f74a34",
+   "modified": "2026-09-27"
+  },
+  "blog/it/conteggio-calorie-con-foto.html": {
+   "text": "61354ea2630f215a45b3bd4ce4935a3d6e798e46",
+   "blob": "98391498e6e5768559db0c7f03aa42c6b61602b1",
+   "modified": "2026-09-05"
+  },
+  "blog/it/conviene-creare-app-di-tracking.html": {
+   "text": "c154a7d58750bc567f7e0d3bde3ebaef4811ff6a",
+   "blob": "3bb529c0b0fe39b2369cbe2b5cb279ec84859974",
+   "modified": "2026-09-14"
+  },
+  "blog/it/cronometer-vs-lifesum.html": {
+   "text": "a9f3f09081e35a9ef0d60fe45c324e5e551d8d02",
+   "blob": "eca138258b151e4e01fbcc124e4e5f3e926f2336",
+   "modified": "2026-10-14"
+  },
+  "blog/it/cronometer-vs-yazio.html": {
+   "text": "b6c987e4c720335e048792c1ff9be2bcda35eef4",
+   "blob": "6034cafd06bfd0a27f15aab3464f15f5d60f33f5",
+   "modified": "2026-10-15"
+  },
+  "blog/it/deficit-calorico.html": {
+   "text": "767d956f52ab05af47143416a41bb298635b829a",
+   "blob": "bc091138cb6c60e5b8fa3da7820f4ed94cc2ed4b",
+   "modified": "2026-09-05"
+  },
+  "blog/it/dimentico-di-bere-acqua.html": {
+   "text": "141ba94d7a24198f2f973ea2b64600504ed47a05",
+   "blob": "cd53cc1946b772f8fd666c4d6c47bc720e779dbd",
+   "modified": "2026-09-27"
+  },
+  "blog/it/fame-notturna.html": {
+   "text": "27c05166553de9d9d640c347fa29259e503bd413",
+   "blob": "ead4b24bf800a63aff9f195316c90cebadfc268f",
+   "modified": "2026-09-27"
+  },
+  "blog/it/il-caffe-conta-come-acqua.html": {
+   "text": "ab1e2048b99978207972dca167acdcc810a499d7",
+   "blob": "b168f18b5a8ed1613dc14ee4537889fd0c93838f",
+   "modified": "2026-09-27"
+  },
+  "blog/it/lifesum-vs-myfitnesspal.html": {
+   "text": "747dc4d924527614fafa9f340436629ec45eae4b",
+   "blob": "20dd85f86ff88c6ff3bdc69dad852b6a124d9a3f",
+   "modified": "2026-10-14"
+  },
+  "blog/it/lifesum-vs-yazio.html": {
+   "text": "5f7adb25125a0fe33ee55f3e9f88fc0d3e91af02",
+   "blob": "e94d6ec1fe32a441d25a43b1aacb33f83bdf55c2",
+   "modified": "2026-10-15"
+  },
+  "blog/it/migliore-app-allenamento.html": {
+   "text": "7fb2ffa664845ec85a7e11ff2e92579103cb9778",
+   "blob": "de3d8c96cf73f54e89512507fd4c605f16317264",
+   "modified": "2026-09-14"
+  },
+  "blog/it/migliore-app-conta-calorie.html": {
+   "text": "f927591e204c49e296a7c5c633775a4350323ea9",
+   "blob": "cb18936a48e33735b7ff2b645170de2c8c7a1291",
+   "modified": "2026-10-06"
+  },
+  "blog/it/migliore-app-per-bere-acqua.html": {
+   "text": "fcd268816a01fa41a376e51e99e37e97cdd2e358",
+   "blob": "d7c63cc3b2cf7922d14a9b74213cde14114239de",
+   "modified": "2026-10-06"
+  },
+  "blog/it/myfitnesspal-vs-lose-it.html": {
+   "text": "2e259f32185752be44aa46920327f625d2125564",
+   "blob": "1ccaadc105f3a671b56580c02787d34c1931e706",
+   "modified": "2026-10-15"
+  },
+  "blog/it/non-ho-voglia-di-allenarmi.html": {
+   "text": "514f5225428057f92cf26753b5cb2f489d8fd822",
+   "blob": "771800a7898bd739999cc975adcc82f5a29e5f87",
+   "modified": "2026-09-27"
+  },
+  "blog/it/perche-non-dimagrisco.html": {
+   "text": "551a5bd9acf0b339a09ee3168978f7bf99f24cf2",
+   "blob": "49f56c8320d5cff918a5b1cd72a91224dc7b983e",
+   "modified": "2026-09-27"
+  },
+  "blog/it/perche-sono-sempre-stanco.html": {
+   "text": "8174c6c4206c52efcbc5533ffbea6125bb8c62d6",
+   "blob": "4d6b6d119a955f4ddd1c8c63232db68f22ec61ce",
+   "modified": "2026-09-27"
+  },
+  "blog/it/peso-aumentato-con-allenamento.html": {
+   "text": "0bc4bdb19b3b8c03807cc6cb6160eb4c1c07a2f5",
+   "blob": "77d01bed0c5e2e9fdc59622909dce842836e9be0",
+   "modified": "2026-10-13"
+  },
+  "blog/it/smettere-bibite-gassate.html": {
+   "text": "8f77d6f5638ae8dce7a13480c9a51a1407e59bac",
+   "blob": "b02dbc17f3c76f16f4f63259739493176c895162",
+   "modified": "2026-09-27"
+  },
+  "blog/it/sport-durante-il-ramadan.html": {
+   "text": "20705dff4df3fff2031fb262c60aa0b5363145c0",
+   "blob": "e6bda2efc300fae5d91fee3ec83d67da099749e5",
+   "modified": "2026-10-13"
+  },
+  "blog/it/strava-vs-nike-run-club.html": {
+   "text": "c112f304245295eb242df5b98be9754132e1fd35",
+   "blob": "6928fb0f3a803e77f5ccdc5011521e5430829a91",
+   "modified": "2026-10-15"
+  },
+  "blog/it/suu-e-sicura.html": {
+   "text": "230c27599317d31ffad0ff9ab64b67f09f6bb28f",
+   "blob": "a4a6dec83f48b05bdad81cebf24e9b8dce5515ef",
+   "modified": "2026-10-14"
+  },
+  "blog/it/waterminder-vs-hydro-coach.html": {
+   "text": "dfa93068e72f198da5c1f2b67473dd00656190dd",
+   "blob": "168ed95c9f32e07c26a6f2f87442b0ce8df0e83d",
+   "modified": "2026-10-15"
+  },
+  "blog/it/yazio-vs-myfitnesspal.html": {
+   "text": "69f2fb18cd49fcc37cb6048d3392cc96a72465c0",
+   "blob": "7a3014b3a48ed85db5447c1a0841c9d6823fab95",
+   "modified": "2026-10-15"
+  },
+  "blog/kafein-seker-takibi.html": {
+   "text": "d583515b35c87a486418ddb80e1419f2c5084c13",
+   "blob": "ece2cbac231bc75f3bbb0b649bec2e5451d956ab",
+   "modified": "2026-10-03"
+  },
+  "blog/kahve-cay-su-sayar-mi.html": {
+   "text": "15a25d291b53eaf37ed9a2ed4fd0263d36ec4ec7",
+   "blob": "e628abb6301589fde324281a2574538230ae970e",
+   "modified": "2026-09-27"
+  },
+  "blog/kahveyi-azaltmak.html": {
+   "text": "1abe283bce6df66f3bb18ce10de1589669ae5a47",
+   "blob": "7f4eea7d33695f63ecf69e24091867c331f1bcee",
+   "modified": "2026-10-03"
+  },
+  "blog/kalori-acigi.html": {
+   "text": "bbc588815ae5e1cff65f35c20af1d51d00877dd2",
+   "blob": "03a069132323507329ed8a32bafe4ca05a6b47d1",
+   "modified": "2026-07-03"
+  },
+  "blog/kalori-saymak-sikici.html": {
+   "text": "b93340a261092a8f2bb81e8e6e8df593ae21c54e",
+   "blob": "0002d251557a08b5c52df510f9678922c9c82d5b",
+   "modified": "2026-09-27"
+  },
+  "blog/kalori-ve-egzersiz-takibi-bir-arada.html": {
+   "text": "629bbe53959c87637901487a4c1b6ac1902765e6",
+   "blob": "76abd650feb80837fdb490bd7218fb05a2775e2e",
+   "modified": "2026-09-29"
+  },
+  "blog/kilo-ve-su.html": {
+   "text": "cf0293cf698d3ad9f611eb5e9e3f57363f1195dc",
+   "blob": "93aee4ccb3013d7ea1285e931dc772f6d41e5c95",
+   "modified": "2026-03-15"
+  },
+  "blog/kolayi-birakmak.html": {
+   "text": "573bd80ee649b6cbcf2cc2117a109889b6cd3598",
+   "blob": "cdb98798634be4b04c83aa6030de9d9001efb5c5",
+   "modified": "2026-09-27"
+  },
+  "blog/lifesum-vs-myfitnesspal.html": {
+   "text": "e931b6e0bdebcf2210290528ed2e5b20fee80660",
+   "blob": "919ca65d53f2cce6a16e34f6dc655cfb7139774a",
+   "modified": "2026-10-14"
+  },
+  "blog/lifesum-vs-yazio.html": {
+   "text": "39645f7a51aa4280863eb194c5d2c56c881b2e74",
+   "blob": "9b2ebd1a27955dc72ed4cdae07ac9e3d28470917",
+   "modified": "2026-10-15"
+  },
+  "blog/makro-hesaplama.html": {
+   "text": "fab3e79d350c1f6f2cf5fa1d2060aa580ff16744",
+   "blob": "c7d18ab18d0ef4b5df02c7ba10d04090bc311bea",
+   "modified": "2026-10-03"
+  },
+  "blog/meyve-suyu-vs-su.html": {
+   "text": "0d3ddf3bb613f2d996e94e68d9cdc1cbaf6d16e0",
+   "blob": "05cf6e111eef87e2d096cc1577e23eb70d163bc2",
+   "modified": "2026-05-10"
+  },
+  "blog/myfitnesspal-vs-lose-it.html": {
+   "text": "7779b793d4e5c03331373d42f591ad5ceb857bf9",
+   "blob": "a9563b74938f8a19f8954fc36eec82477525e6dd",
+   "modified": "2026-10-15"
+  },
+  "blog/neden-hep-yorgunum.html": {
+   "text": "1ffe785725f73aa4f2522c27435adcd02f16317c",
+   "blob": "61b1e57420fe7ec026aeb1da87f5da2e2f61f981",
+   "modified": "2026-09-27"
+  },
+  "blog/neden-kilo-veremiyorum.html": {
+   "text": "31a7b048065c89aaaf4ab7702424bf6d3f2a23e4",
+   "blob": "9db6cf55c62581881a0b5963b9c47d6c809c9586",
+   "modified": "2026-09-27"
+  },
+  "blog/ramazanda-spor.html": {
+   "text": "936ceae4cf78b9af7f78411f07dcb6243506b6fb",
+   "blob": "28fdf896b9cd958590f01f0fe4d4d4973529ffc1",
+   "modified": "2026-10-13"
+  },
+  "blog/ru/alternativy-yazio.html": {
+   "text": "781117f8916924bc07907dc98a4e152fe09cf854",
+   "blob": "202ef3c26eab75cdaa3346e036806faac04923a4",
+   "modified": "2026-10-03"
+  },
+  "blog/ru/apple-watch-voda.html": {
+   "text": "c2fc1fa580a9811fbfa6d5fb329a5390125dba78",
+   "blob": "be0f028752aedd37b48ee42a29568fb6081b8609",
+   "modified": "2026-09-29"
+  },
+  "blog/ru/bezopasno-li-suu.html": {
+   "text": "6f8fa5cdaf50c8df4dda3f99590aeedcdc77e17d",
+   "blob": "f32204b2a8058262c4e52f4288b604db88b064d9",
+   "modified": "2026-10-14"
+  },
+  "blog/ru/chai-i-gidratatsiya.html": {
+   "text": "a5916870e9eaa9e09a0b132b9864803a5406e131",
+   "blob": "b03078c16113ca60db00a7e8878643484217f13f",
+   "modified": "2026-05-10"
+  },
+  "blog/ru/cronometer-vs-lifesum.html": {
+   "text": "6e1d4a0fa0a8d89a152c749fc551dc429901504e",
+   "blob": "dde1e41e9efa73dfa566fb1ea12b2917ee172898",
+   "modified": "2026-10-14"
+  },
+  "blog/ru/cronometer-vs-yazio.html": {
+   "text": "5fc1a192dac12db3f4f0d0fc0cc77fc4694f2e63",
+   "blob": "2f1e530de2b2ab27a9e9576eaa571d7c05daf1e3",
+   "modified": "2026-10-15"
+  },
+  "blog/ru/deficit-kalorij.html": {
+   "text": "f1912e48aa799951f8934f106d053e8c399b71b1",
+   "blob": "5091d82914e8304d35241cc7f34502e7be323fa1",
+   "modified": "2026-07-03"
+  },
+  "blog/ru/domashnij-pitomec-mini-igry.html": {
+   "text": "8813ad9f52660fc51bf00b50aa6741681c49ae55",
+   "blob": "a287911516e23be525effc425295529851e7a263",
+   "modified": "2026-05-22"
+  },
+  "blog/ru/geymifikatsiya-vody.html": {
+   "text": "379c5ec0df86c335dd827ccaf6406091e38643fb",
+   "blob": "838f59b7a18230f60a3a23a444a59913eb399194",
+   "modified": "2026-04-14"
+  },
+  "blog/ru/gidratatsiya-posle-alkogolya.html": {
+   "text": "e3b40fcfc90c2d700a10e46676a4b4a38c1d66aa",
+   "blob": "abf4eeb1dde2af86197a023bf2cc074adad90f86",
+   "modified": "2026-05-10"
+  },
+  "blog/ru/golosovoj-vvod-kalorij.html": {
+   "text": "899fd3a659913c1be82a87aea8a6f70c74616f0a",
+   "blob": "0ece16ca93c9d058e7285783fd5c580f4de18841",
+   "modified": "2026-09-29"
+  },
+  "blog/ru/hodba-ili-beg.html": {
+   "text": "95f0bcce839986d70b13d07e944decc37fe526a1",
+   "blob": "19969f20c2ee555166cd4d89650b92c06e1f433b",
+   "modified": "2026-10-13"
+  },
+  "blog/ru/kak-brosit-gazirovku.html": {
+   "text": "d2e2b7d14e4d23566ddfdaa333e6403c94ca9942",
+   "blob": "f7a4d45ec5cb2e0bc8bf67232ee10f49be399161",
+   "modified": "2026-09-27"
+  },
+  "blog/ru/kak-sokratit-kofe.html": {
+   "text": "d4abdc167bb8db160648209e8e8ecdc5fa8f67f9",
+   "blob": "214a326edc241c1b36d070bd7655a59e2c3e1d63",
+   "modified": "2026-10-03"
+  },
+  "blog/ru/kalorii-po-foto.html": {
+   "text": "2927f1bc8d5ba543fbeb546f91c2d716d956ecd9",
+   "blob": "4d403469f35e9a27e634a809c677f45f27a85bc4",
+   "modified": "2026-07-03"
+  },
+  "blog/ru/kofe-chay-i-voda.html": {
+   "text": "d66acb0fbfdb76ddc50eb6bc4bf12b6c49532566",
+   "blob": "00d9f4a68e276f3e13189a917e6c6c313ec1041e",
+   "modified": "2026-09-27"
+  },
+  "blog/ru/kofein-i-sahar.html": {
+   "text": "dfbd269506eb6df7a4f377fac99f454116e5ce9e",
+   "blob": "1ca0388dc2d264dbfdfa2552c4a21c5aad63c119",
+   "modified": "2026-05-07"
+  },
+  "blog/ru/kontrol-energetikov.html": {
+   "text": "52d85a19bb6ee861a89ce8cd9e8fe47e3810bf76",
+   "blob": "b863acd5d3dd1b9826c5b36aed82b909caabcd12",
+   "modified": "2026-05-10"
+  },
+  "blog/ru/len-zanimatsya-sportom.html": {
+   "text": "ea857f67f2d4b02dcf006e3c5621d271f065a28b",
+   "blob": "9781847d46614862eebc66f30a79f3e24e908b58",
+   "modified": "2026-09-27"
+  },
+  "blog/ru/lifesum-vs-myfitnesspal.html": {
+   "text": "6f20362da014c1c35a0de11f2d640395c1104f61",
+   "blob": "980e38dce7c722e6ff0c5feefc7259776f255a6e",
+   "modified": "2026-10-14"
+  },
+  "blog/ru/lifesum-vs-yazio.html": {
+   "text": "27c902d8fa097c1ddabbcae3e2a17ecd754e85e1",
+   "blob": "34448c75906737cbc16f933ace82041bfd12e19e",
+   "modified": "2026-10-15"
+  },
+  "blog/ru/luchshee-prilozhenie-dlya-trenirovok.html": {
+   "text": "a86f5bc557ef2a4e9d7915b477cecaa0c63822f5",
+   "blob": "5bbe344025e1dab7d01fadac6665bb52658092bf",
+   "modified": "2026-09-14"
+  },
+  "blog/ru/luchshee-prilozhenie-dlya-vody.html": {
+   "text": "5a72006c5b8210ff03f0429bf4453569eeeb8db7",
+   "blob": "1d3b5b1f21aaa5bb837da87e16288ef198cb0fc2",
+   "modified": "2026-10-03"
+  },
+  "blog/ru/luchshee-prilozhenie-podscheta-kalorij.html": {
+   "text": "eaf4ed9e27e20ab23a02ccef59bb314a46567dbb",
+   "blob": "6fda2b25a95c55e9288f245dbc33b410737fa47a",
+   "modified": "2026-10-03"
+  },
+  "blog/ru/myfitnesspal-vs-lose-it.html": {
+   "text": "f25579609ab036085065bbb0abf38a8e7c4dd268",
+   "blob": "a06378407aaf1551d3fa6c94e0811e49e9905360",
+   "modified": "2026-10-15"
+  },
+  "blog/ru/nadoelo-schitat-kalorii.html": {
+   "text": "2db4174476bf3de5690a4f3f5530fe2c26eddba4",
+   "blob": "673f89c9238654c0100aac259bc50a1c2b512afc",
+   "modified": "2026-09-27"
+  },
+  "blog/ru/nochnoj-zhor.html": {
+   "text": "872d44eb9b6777385f0e520aa02b71891042de11",
+   "blob": "936f9402a801d6e4faaa407068ae747240f82dd6",
+   "modified": "2026-09-27"
+  },
+  "blog/ru/otsenka-gidratatsii.html": {
+   "text": "2278ca69a1af257f573df7d8ea32f5ea90dc84fe",
+   "blob": "b125088e71ec0bbc957e548a0ed63091508c850d",
+   "modified": "2026-05-07"
+  },
+  "blog/ru/pochemu-ne-hudeyu.html": {
+   "text": "e80a125e189d03b880596f08fb2f0901f5fccc77",
+   "blob": "91e4aad0db49dd693c43d92f67c5d4c3c0343524",
+   "modified": "2026-09-27"
+  },
+  "blog/ru/polza-pitia-vody.html": {
+   "text": "5624ea18ebfb0f2efbaf694eae1dd204d9a9264c",
+   "blob": "d43f801f2b5266682fee43d9a61dcd59c859ad8a",
+   "modified": "2026-05-07"
+  },
+  "blog/ru/postoyannaya-ustalost.html": {
+   "text": "7eace69733e4e953337402ccceb6c38fbfedef26",
+   "blob": "afce3488f80b56f979e9e7169bebda4164ada224",
+   "modified": "2026-09-27"
+  },
+  "blog/ru/privychka-pit-vodu.html": {
+   "text": "0d5c35917caa9db64a573eeef8c9e98bf4f6535e",
+   "blob": "be609f5e4286e44946517e1b8e6a316a73167f1d",
+   "modified": "2026-09-27"
+  },
+  "blog/ru/priznaki-obezvozhivaniya.html": {
+   "text": "f1fd2dc8800f1590eec5c7a0c2d5e1fd74579840",
+   "blob": "aaf6d396c08dd8d68a1a3390db9f1343d232a833",
+   "modified": "2026-05-07"
+  },
+  "blog/ru/programma-pozhertvovanij-kolodtsy-afrika.html": {
+   "text": "9e0db26de1cb42f52549307c51dccd9e1b2236c4",
+   "blob": "9ec9a4c6ae1141fe67197eeeb752b7130a198293",
+   "modified": "2026-10-03"
+  },
+  "blog/ru/prostoy-rasshirennyy-rezhim.html": {
+   "text": "8c363befd58fd3fa19e0936de6d916238f6fb312",
+   "blob": "20f5a291b88e8bfb914c5a6000793e0df1fbad49",
+   "modified": "2026-06-14"
+  },
+  "blog/ru/raschet-makrosov.html": {
+   "text": "e6efec6b81b15165df2c3d074f69064957371551",
+   "blob": "9486ecdaef052ab2aa574712fa4772d53807128b",
+   "modified": "2026-07-03"
+  },
+  "blog/ru/raskhod-kalorij.html": {
+   "text": "33800de80c378423486b3c9bbcc65cb37242a80f",
+   "blob": "e428494c77a1786e798d7c0ca40d8c5c9d1e1a60",
+   "modified": "2026-07-03"
+  },
+  "blog/ru/siri-voda.html": {
+   "text": "4d76e62f970860e2241694108b6781bb5e0f4949",
+   "blob": "6fba62865bfd8708919a173430a3a6f128085902",
+   "modified": "2026-09-29"
+  },
+  "blog/ru/skolko-kofe-v-den.html": {
+   "text": "1e85ab18cf5dd47c2a9390b06652c83fc52d7745",
+   "blob": "dc3365f472bad2e3821c0acbb33b89f6cfe37652",
+   "modified": "2026-10-03"
+  },
+  "blog/ru/skolko-vody-pit-v-den.html": {
+   "text": "50258dac669bee93fb93abb13ce011458ea624fb",
+   "blob": "ef0841c880f376ddf87e42b70b651d7135594609",
+   "modified": "2026-10-03"
+  },
+  "blog/ru/sok-ili-voda.html": {
+   "text": "5c9b11253eedbbbac9a9172ecf1e6d975658d56d",
+   "blob": "bf7982d2d8124d3cfe591e205051bed30b8a2a58",
+   "modified": "2026-05-10"
+  },
+  "blog/ru/sport-i-gidratatsiya.html": {
+   "text": "a22780fdc3e62e932b4960abf02645a3c5e05d2f",
+   "blob": "a5d810c3210c2b5a5e155d9bad9cf3e2b2521806",
+   "modified": "2026-10-03"
+  },
+  "blog/ru/sport-v-ramadan.html": {
+   "text": "c71ae21abf0339558938224041fdd1f87c6d39a2",
+   "blob": "04239b84376ead383e6cf9f056b131769e1f1e63",
+   "modified": "2026-10-13"
+  },
+  "blog/ru/stoit-li-sozdavat-prilozhenie-treker.html": {
+   "text": "91cce9b119b811a061c47308337a41e469d50b47",
+   "blob": "f0e8e0d87c7d130589e29c66eb78ccd7ce1c33c7",
+   "modified": "2026-09-14"
+  },
+  "blog/ru/strava-vs-nike-run-club.html": {
+   "text": "d2b2c3909203ec9204e977b115e5357f11eaa2ad",
+   "blob": "2809bfc765aa2b791d033ab5450aafb6e6cd6d60",
+   "modified": "2026-10-15"
+  },
+  "blog/ru/suu-vs-myfitnesspal.html": {
+   "text": "47641b7ec54c51243f20a52b38ee11cb57da4ea7",
+   "blob": "6705973cf7a3a84f5787f20a0f05fee8eefbe31a",
+   "modified": "2026-09-29"
+  },
+  "blog/ru/suu-vs-yazio.html": {
+   "text": "a3d0719ec25a748dfd55755aacb63e953484ea2f",
+   "blob": "6e96a4c67f46d01e6b989f0ac41a876d72c720d7",
+   "modified": "2026-10-03"
+  },
+  "blog/ru/ves-vyros-posle-trenirovok.html": {
+   "text": "9301a74f1f06f6fa6979e694943d0c39cdc18c9c",
+   "blob": "58aef60942f7621656ac4dc9dcb6c88f820d8ba3",
+   "modified": "2026-10-13"
+  },
+  "blog/ru/voda-i-beremennost.html": {
+   "text": "ad0ba136a956752ff21071f4a8ba5263ab9ba7c8",
+   "blob": "f606634dcbc061d179dde1e114e337a8c247f103",
+   "modified": "2026-05-07"
+  },
+  "blog/ru/voda-i-kormlenie.html": {
+   "text": "3f449ae15496378a4c17b772a80ce43f8578f092",
+   "blob": "2251ec7ae3e8034d8fa11a1f122b6fbcad0fc066",
+   "modified": "2026-05-07"
+  },
+  "blog/ru/voda-i-pohudenie.html": {
+   "text": "e56d7c27057ff1a18f6ccb76fe0537e0a26febf8",
+   "blob": "e27a9efcd651295e47265606ecdd145a4ab2f2d3",
+   "modified": "2026-05-07"
+  },
+  "blog/ru/voda-i-son.html": {
+   "text": "6b357e3ec30c1102db7071ad0ce00971baaa1e04",
+   "blob": "356148571f464249cecccf08b28ec4444fe7b02c",
+   "modified": "2026-05-07"
+  },
+  "blog/ru/voda-i-zdorove-kozhi.html": {
+   "text": "439a53fbb34f63188a5e98ef7c4f4ffa62ba6177",
+   "blob": "741df636de47a368f36c995328aeb0c4ed079374",
+   "modified": "2026-05-07"
+  },
+  "blog/ru/voda-i-zdorove-pochek.html": {
+   "text": "a66833614747192e3846ba209fff0f4e9c25333d",
+   "blob": "9cdbd3c0ab4658189b529aadb0f7bc59097b475f",
+   "modified": "2026-05-07"
+  },
+  "blog/ru/voda-kalorii-trenirovki-odno-prilozhenie.html": {
+   "text": "4e042d74412827dd2c1033797e5bfd7412118882",
+   "blob": "4001524d955a8dae2edbffa87d75e26c557b9da9",
+   "modified": "2026-09-29"
+  },
+  "blog/ru/voda-po-aktivnosti.html": {
+   "text": "60642fcdbe7f22cb10a926a3a4b370d2cc170210",
+   "blob": "266d2db74c156f77580acdae7965b577a7e5d911",
+   "modified": "2026-10-03"
+  },
+  "blog/ru/voda-utrom.html": {
+   "text": "ed610e522713ebad3b2841cc6a009df070de001f",
+   "blob": "93406d2981f6b849b277ec248737c633823b4987",
+   "modified": "2026-05-07"
+  },
+  "blog/ru/vodnyi-challenge-s-druzyami.html": {
+   "text": "b31dbf09800b2376dbac0ddd6b0f678666a1d471",
+   "blob": "f867a9e821233eda79d2cb2065acf41447335c5c",
+   "modified": "2026-10-06"
+  },
+  "blog/ru/waterminder-vs-hydro-coach.html": {
+   "text": "1db1979c3217d7354c7e7207d2ac67002f96ea52",
+   "blob": "5543e962f2eb670297ec9a28894e913e4f480413",
+   "modified": "2026-10-15"
+  },
+  "blog/ru/yazio-vs-myfitnesspal.html": {
+   "text": "0256a8224f0f069d09de0d577515efdd2e2e33a2",
+   "blob": "78be558d03e39da9153a4d5274f1fa57c38c3536",
+   "modified": "2026-10-15"
+  },
+  "blog/sabah-su-icmenin-faydalari.html": {
+   "text": "44fb2c3e0d4b0ce74a6d4f3a8fb994b92a713fdc",
+   "blob": "96ef600c6edb2e5036ece9f94c59f4a7ce7cb7eb",
+   "modified": "2026-03-15"
+  },
+  "blog/sesli-kalori-girisi.html": {
+   "text": "5677eae9128080769ac8b7604bddbebbf78e78bd",
+   "blob": "91365f4b46b05cb11b71ef6223d3b9f9a833a2c5",
+   "modified": "2026-09-29"
+  },
+  "blog/sesli-komutla-su-ekleme.html": {
+   "text": "6f83ca082d0ff159a68e373e9575c66abe6d293a",
+   "blob": "24c521726950ee60b086d8fd32f57621dcfdd95b",
+   "modified": "2026-09-29"
+  },
+  "blog/spor-ve-hidrasyon.html": {
+   "text": "5e8c4b91d70630e065dc8c4cbe38cada60446630",
+   "blob": "232cabbf1f7ba7851f6422922c8b4b67a3e2058f",
+   "modified": "2026-10-03"
+  },
+  "blog/spora-baslayinca-kilo-artisi.html": {
+   "text": "ebddacfac73a9572b325c2b9698147dedcb68c6d",
+   "blob": "86d287500537aabf35b70cfb2b81b13ab7601051",
+   "modified": "2026-10-13"
+  },
+  "blog/spora-usenmek.html": {
+   "text": "0d69fe83d91e3b615ba724c56ddbbc199cb83d5c",
+   "blob": "d35d8b5fae7f4576e5bd06b6632e53e9a4b5ebce",
+   "modified": "2026-09-27"
+  },
+  "blog/strava-vs-nike-run-club.html": {
+   "text": "50febe7730668b645e29b81612ae99fd80e9b6f8",
+   "blob": "940585d76d0afc00088592978c072449d2dd85bd",
+   "modified": "2026-10-15"
+  },
+  "blog/su-icme-aliskanlik.html": {
+   "text": "12a372819610791217e57c7c19d3b0b0ea4eb1c0",
+   "blob": "dcfd8704808adb6bf097d6c479b09216bfc9e691",
+   "modified": "2026-09-27"
+  },
+  "blog/su-icme-lig-sistemi.html": {
+   "text": "f1f4b7982531d6a9aee760350abba0b526a52a9e",
+   "blob": "53fe5bda03d95953807081fbaebf70cde8252d77",
+   "modified": "2026-10-06"
+  },
+  "blog/su-icmenin-faydalari.html": {
+   "text": "71f18897cecf6cb2e630f34abf4c6040bd9563af",
+   "blob": "44ca8e0dfdb842213ea0f61e30423d179e677538",
+   "modified": "2026-03-15"
+  },
+  "blog/su-kalori-egzersiz-tek-uygulama.html": {
+   "text": "f7d740f796891ba5f4a365d52d7fc42ef82c95d9",
+   "blob": "675e4822e84eb2f38699b42d5d3c10bed2efa3d0",
+   "modified": "2026-09-29"
+  },
+  "blog/su-takip-uygulamasi-neden-kullanmaliyim.html": {
+   "text": "59f87edfa05c1edd810e4e3f70cc7cca38b32418",
+   "blob": "80d5367d4453a31504ade566d9ccdabaa5967092",
+   "modified": "2026-10-03"
+  },
+  "blog/su-ve-bobrek-sagligi.html": {
+   "text": "6a9857ddb3a1b7fa928ca538073a9a320074d346",
+   "blob": "28ed5b0e47ad2e87dc1222a749456adb99a3a1d4",
+   "modified": "2026-03-22"
+  },
+  "blog/su-ve-cilt-sagligi.html": {
+   "text": "d6486b7c82d6754132de1e4ac9fb767093c54d16",
+   "blob": "ff413a1fce9b487929c757af65d9b5aa2d617fa3",
+   "modified": "2026-03-22"
+  },
+  "blog/su-ve-uyku-kalitesi.html": {
+   "text": "7be22b6d8be0abb5ef13f7297882f347027763cc",
+   "blob": "87f143e63e2015922d0ab9c0d16f283f673facd5",
+   "modified": "2026-03-22"
+  },
+  "blog/susuzluk-belirtileri.html": {
+   "text": "0aa21db6661a24f4396d6e8d3237208705eee6e3",
+   "blob": "e554e12b906d6c6486920b78f0065641fcc5058e",
+   "modified": "2026-03-15"
+  },
+  "blog/suu-evcil-hayvan-mini-oyunlar.html": {
+   "text": "edded92daf6cd3d28cb8c0c765efa271d6d55cba",
+   "blob": "4a49295aa1d90cc3ddc2f5660a62343d7a5d85e0",
+   "modified": "2026-05-22"
+  },
+  "blog/suu-guvenli-mi.html": {
+   "text": "87ee7365791597d426385685bb6054b70609b216",
+   "blob": "13084fcc66af6b7439835843460bdeb3ffff1825",
+   "modified": "2026-10-14"
+  },
+  "blog/suu-vs-cal-ai.html": {
+   "text": "fe298872615a64c1f82aa75c8c9a06b0c58e6a35",
+   "blob": "bcd39d2515430d873307df876eab7d0dc7d5ec09",
+   "modified": "2026-09-29"
+  },
+  "blog/suu-vs-myfitnesspal.html": {
+   "text": "93eebb5b41f5c755873223bfe7d4a9031f16a279",
+   "blob": "12bd2b99db3e9310ce99a454fa9cebce50eab3a1",
+   "modified": "2026-10-03"
+  },
+  "blog/suu-vs-strava.html": {
+   "text": "d6a28b2f9c13934b428e98aa3ad628d004fe51e8",
+   "blob": "b76df6635118fc638d6c2d2d87898b10eed22f14",
+   "modified": "2026-09-14"
+  },
+  "blog/suu-vs-yazio.html": {
+   "text": "94a3a2aeb96382f8da6be7c2f3f48552497d8f49",
+   "blob": "f42df3d31c9a3286fe2ee14934133cf1cef91cc2",
+   "modified": "2026-09-29"
+  },
+  "blog/takip-uygulamasi-yapmak-mantikli-mi.html": {
+   "text": "25381cb9a785dc939b630b75cd4bc28247ad2f48",
+   "blob": "89641374bb3d081a8ebc07aa9004e422c6a39d12",
+   "modified": "2026-09-14"
+  },
+  "blog/ucretsiz-kalori-sayaci.html": {
+   "text": "5ac02600f2e4eb04b0ebb520bda7c8cb45963376",
+   "blob": "39aba6b9428c596dd2a57ab644b8d3a386682d5c",
+   "modified": "2026-10-06"
+  },
+  "blog/uk/alternatyvy-yazio.html": {
+   "text": "1b4164b0da686928323ba8aa33c734333d355d52",
+   "blob": "d84d6f297c8d165fcba9227008bf702e5661c021",
+   "modified": "2026-10-03"
+  },
+  "blog/uk/chomu-ya-ne-khudnu.html": {
+   "text": "d143204145951127c12d392ad6eca5290a2e8ec6",
+   "blob": "d79da49e6361371aa8d2b990d123d566b9f22943",
+   "modified": "2026-09-27"
+  },
+  "blog/uk/chomu-ya-postiyno-vtomlenyi.html": {
+   "text": "1671f5ac6298c3342cf47544f27faa662f63624d",
+   "blob": "126d52c0755da3628a02cadf630b7674a9cc3aa7",
+   "modified": "2026-09-27"
+  },
+  "blog/uk/chy-bezpechnyi-suu.html": {
+   "text": "d8e7d9b02a90ccdf0126e38a9ca53a52ee27b07f",
+   "blob": "49ce253a6e204aab5cd5e02b134995fc717694d1",
+   "modified": "2026-10-14"
+  },
+  "blog/uk/chy-rakhuyetsya-kava-yak-voda.html": {
+   "text": "c7d5d555c565f117a12829d85dc48f09e492f817",
+   "blob": "d3ff6fc83d46ae935bfb2f69f7e9e5bcb9880be4",
+   "modified": "2026-09-27"
+  },
+  "blog/uk/chy-varto-stvoryuvaty-zastosunok-treker.html": {
+   "text": "c031d498d6e791ab4807a3b659d3fa18257bba6d",
+   "blob": "8618ec8240dc58c64b49f4615c0bfcc1b89b84a8",
+   "modified": "2026-09-14"
+  },
+  "blog/uk/cronometer-vs-lifesum.html": {
+   "text": "77722014b2442b2b909a70de52204f85acdcc823",
+   "blob": "1885453568af5ce007b5b80020c0a24132f6e8fa",
+   "modified": "2026-10-14"
+  },
+  "blog/uk/cronometer-vs-yazio.html": {
+   "text": "3ff07a0f5c68910ece9780aafbc8b45a41fec9b1",
+   "blob": "f18e89bff79b3f6c951f5be62b93f8e3ab837819",
+   "modified": "2026-10-15"
+  },
+  "blog/uk/defitsyt-kaloriy.html": {
+   "text": "98198c692c9022bb5eac0f94e2dc8c8fe62bfc3c",
+   "blob": "4aa062ef6b4af1477b750f9972bc899e497ab44c",
+   "modified": "2026-09-05"
+  },
+  "blog/uk/khodba-chy-bih.html": {
+   "text": "2eb52bd86659fee6fb69675019ae98776d55a265",
+   "blob": "e47ac4995d7a388483e62324c1c8c9fb1ac86ddd",
+   "modified": "2026-10-13"
+  },
+  "blog/uk/lifesum-vs-myfitnesspal.html": {
+   "text": "efd9330e32cd45ef6bc0ff79c16578756b8371f1",
+   "blob": "fd746ab5e5509beecc0af3c9a263be624bf07466",
+   "modified": "2026-10-14"
+  },
+  "blog/uk/lifesum-vs-yazio.html": {
+   "text": "bdf2d9a3e6bf52f74dcaa78da43823d47e551f9f",
+   "blob": "31bc2bbae293a65fda5d42541b0f3671fb233e26",
+   "modified": "2026-10-15"
+  },
+  "blog/uk/motyvatsiya-do-sportu.html": {
+   "text": "05b2c90603622514d08740b7e51789e9d074932e",
+   "blob": "dd59c514a071e584faa3cc0a7c9c2d1e500e5bb4",
+   "modified": "2026-09-27"
+  },
+  "blog/uk/myfitnesspal-vs-lose-it.html": {
+   "text": "fba88bb77f4ea884b3de4d79089bdf2275604c4c",
+   "blob": "100e71a5ec520fa132fe494bee1ab0c57963884b",
+   "modified": "2026-10-15"
+  },
+  "blog/uk/nabrydlo-rakhuvaty-kalorii.html": {
+   "text": "171f0e4ba24fb94fe1a429a37bdf3d73326f9dd0",
+   "blob": "f2b00e2798cf603adf0e7b5c0efdad0ca3262dad",
+   "modified": "2026-09-27"
+  },
+  "blog/uk/najkrashchyj-lichylnyk-kalorij.html": {
+   "text": "4e38113652fb652d760f6943b16045ab80ec0fcf",
+   "blob": "faf8359043cdf451ed1b77abdf778db9a5f24188",
+   "modified": "2026-10-06"
+  },
+  "blog/uk/najkrashchyj-zastosunok-dlya-trenuvan.html": {
+   "text": "e07fedc8bbfbc440c68b3bc2068c094e4d91e9c9",
+   "blob": "47f1ca6ae2f5a6213d3497109c084508f12564b2",
+   "modified": "2026-09-14"
+  },
+  "blog/uk/najkrashchyj-zastosunok-dlya-vody.html": {
+   "text": "8b5b2964ab31a8dcb77182cba954642463c0abfa",
+   "blob": "ba55e46f7818b8ec13487e90721bf316a257dad2",
+   "modified": "2026-10-06"
+  },
+  "blog/uk/pidrakhunok-kaloriy-za-foto.html": {
+   "text": "d2ce0a1af4e58eb079cfdff0c3687229f9f8b9d9",
+   "blob": "c859f839cd5929cdc1c4e2fb13bc4233c4654bc1",
+   "modified": "2026-09-05"
+  },
+  "blog/uk/rozrakhunok-makrosiv.html": {
+   "text": "b6fa544013f1ac07943966914fc6216e094548e3",
+   "blob": "62ed7d201655cf12e0ab7adc5e658bce7e98bab5",
+   "modified": "2026-09-05"
+  },
+  "blog/uk/spalyuvannya-kaloriy-pid-chas-trenuvannya.html": {
+   "text": "11eecc96eff99568a8a6eb62f41ca150a0ed7f16",
+   "blob": "9145ffa0716430e2dd5f5ff9098601e04a67a63d",
+   "modified": "2026-09-05"
+  },
+  "blog/uk/sport-u-ramadan.html": {
+   "text": "2db93585255b8ef78985fe94163759f31d5f3bee",
+   "blob": "48c7315117d4f6bbc7bb23b2909adf530801aae6",
+   "modified": "2026-10-13"
+  },
+  "blog/uk/strava-vs-nike-run-club.html": {
+   "text": "e311faa58f7731c1500dde1ef7f68e34692654d2",
+   "blob": "97d9c75b9cd5c002bfd87bca16bc8eeab7dfb496",
+   "modified": "2026-10-15"
+  },
+  "blog/uk/vaha-zrosla-pislya-trenuvan.html": {
+   "text": "5440e7a4e5156d31483a6c50b8a3e567506608c6",
+   "blob": "e881b89093bc0d8c4fd29069465f531eba02082f",
+   "modified": "2026-10-13"
+  },
+  "blog/uk/voda-kalorii-trenuvannya-odyn-zastosunok.html": {
+   "text": "e4d38eec52e997ce21bca6f94d8868a1d752a3c1",
+   "blob": "a5da3c5876e43cf51184e324e3aca3aafe9fee71",
+   "modified": "2026-09-29"
+  },
+  "blog/uk/waterminder-vs-hydro-coach.html": {
+   "text": "1dae707eafc89852cd0757d142d727f9cf811988",
+   "blob": "be8233bf43155c8bdfb7cff58a14ad1509de1491",
+   "modified": "2026-10-15"
+  },
+  "blog/uk/yak-kynuty-hazovani-napoi.html": {
+   "text": "c7e281f575bdc5bbdd5bfa300cec30731b28115f",
+   "blob": "67df712875d002609210228d61ecba8af2f5abd4",
+   "modified": "2026-09-27"
+  },
+  "blog/uk/yak-ne-yisty-vnochi.html": {
+   "text": "b43ea114628f27a9a44643a29f57ea2e33094aaa",
+   "blob": "c9faf3845e60ebba93acdad275edd01e46f21555",
+   "modified": "2026-09-27"
+  },
+  "blog/uk/yazio-vs-myfitnesspal.html": {
+   "text": "0313fbfdce9ddb7651aaa94758c4d2dabb8659f9",
+   "blob": "892c1b3c2c63d6ffd2ec1473eafea4aefa22f79c",
+   "modified": "2026-10-15"
+  },
+  "blog/uk/zabuvayu-pyty-vodu.html": {
+   "text": "aa1e7c6aae264e408dabdd56ba71cd22f8400868",
+   "blob": "694eb862ea1e6b524c4115c54731f1ddaa6ce1db",
+   "modified": "2026-09-27"
+  },
+  "blog/waterminder-vs-hydro-coach.html": {
+   "text": "aba92ce0ede7363da592ddde03314077b584f1db",
+   "blob": "45047a7945a9fb780e0c2dd07fa139239c37d163",
+   "modified": "2026-10-15"
+  },
+  "blog/yapay-zeka-kalori-dogrulugu.html": {
+   "text": "52fedabfa887bc3254159533a993dc8600583899",
+   "blob": "52918097fbebd212ae94f472fc631b01332f2da6",
+   "modified": "2026-08-17"
+  },
+  "blog/yazio-alternatifleri.html": {
+   "text": "304cd2e59fd0b9ff6ea8d62b78edde1cf863546b",
+   "blob": "1e7a03399f03e7ddcc3dee5a1f13018971cbf135",
+   "modified": "2026-10-03"
+  },
+  "blog/yazio-vs-myfitnesspal.html": {
+   "text": "63fd6f5cb66d65ebc6f90b3fbd17f7a1aa24d9ce",
+   "blob": "a1855ccd3e4051f923e6572d0ce633cb976e08be",
+   "modified": "2026-10-15"
+  },
+  "blog/yuruyus-mu-kosu-mu.html": {
+   "text": "33a323a620247938f84ea2c870c9c75777c8104c",
+   "blob": "23aaef8ee2d9b0d3ac639540238585b91aa4d396",
+   "modified": "2026-10-13"
+  }
+ }
+}
