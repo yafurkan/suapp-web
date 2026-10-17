@@ -60,6 +60,12 @@ COMPARE = ROOT / "content" / "compare"
 SOURCES = {"compare": COMPARE, "guide": ROOT / "content" / "guides"}
 FACTS = ROOT / "content" / "suu-facts.json"
 REGISTRY = ROOT / "content" / "page-registry.json"
+# Tazelik kaydı (scripts/stamp-freshness.py): sayfanın okunan metni en son ne
+# zaman ANLAMLI ölçüde değiştiyse o tarih. JSON'daki `modified`dan yeniyse o
+# kullanılır — yoksa yeniden üretim, içerik değişikliğiyle ilerlemiş tarihi geri alırdı.
+FRESHNESS = ROOT / "content" / "freshness.json"
+FRESH = (json.loads(FRESHNESS.read_text(encoding="utf-8")).get("pages", {})
+         if FRESHNESS.exists() else {})
 BASE = "https://suuapp.com"
 DEFAULT = "tr"
 
@@ -124,14 +130,20 @@ def display_date(lang: str, iso: str) -> str:
     return DATE_FMT[lang].format(d=int(d), month=MONTHS[lang][int(m) - 1], y=y)
 
 
-def page_dates(data: dict, page: dict) -> tuple[str, str]:
+def fresh_date(lang: str, page: dict) -> str:
+    """Tazelik kaydındaki güncelleme tarihi (yoksa boş)."""
+    return (FRESH.get(rel_path(lang, page["slug"])) or {}).get("modified") or ""
+
+
+def page_dates(data: dict, page: dict, lang: str) -> tuple[str, str]:
     """(yayın, güncelleme) ISO tarihleri — iki tür için ortak.
 
     Sayfa düzeyinde `published`: boru hattına taşınan ya da sonradan çevrilen
     bir sayfa kendi ASIL yayın tarihini korur (ör. EN 03-22, DE 08-24).
-    Güncelleme tarihi yayından önce olamaz; `modified` yoksa yayın tarihidir."""
+    Güncelleme tarihi yayından önce olamaz; `modified` yoksa yayın tarihidir.
+    Tazelik kaydı daha yeni bir tarih taşıyorsa (içerik sonradan değişti) o geçerli."""
     published = page.get("published", data["published"])
-    modified = max(data.get("modified", data["published"]), published)
+    modified = max(data.get("modified", data["published"]), published, fresh_date(lang, page))
     return published, modified
 
 
@@ -253,7 +265,7 @@ def build_jsonld(lang: str, topic: str, data: dict, page: dict, facts: dict, url
     founder = facts["entities"]["founder"]
     if kind == "guide":
         return _guide_jsonld(lang, data, page, facts, url, image)
-    published, modified = page_dates(data, page)
+    published, modified = page_dates(data, page, lang)
     # Tablo iki biçimden birinde olabilir:
     #   klasik  → Suu ilk sütun + competitors listesi
     #   genel   → columns listesi (rakip-vs-rakip; Suu sonda olabilir)
@@ -391,7 +403,7 @@ def _guide_jsonld(lang: str, data: dict, page: dict, facts: dict, url: str, imag
     işaretlemek yanıltıcı yapılandırılmış veri olurdu. Uygulama, `mentions`
     ile iki mağaza düğümüne bağlanır (asıl tanımları ana sayfada)."""
     founder = facts["entities"]["founder"]
-    published, modified = page_dates(data, page)
+    published, modified = page_dates(data, page, lang)
     graph = [
         {
             "@type": "Organization",
@@ -532,7 +544,7 @@ def main() -> int:
             # aynı kaynaktan. Karşılaştırma sayfaları görünür yayın tarihini
             # `published_display` ile elle yazabilir; o metin tarihi
             # göstermiyorsa <time> basılmaz (çelişen makine tarihi olmasın).
-            page_published, modified_iso = page_dates(data, page)
+            page_published, modified_iso = page_dates(data, page, lang)
             shown = page.get("published_display") or display_date(lang, page_published)
             published_iso = page_published if display_shows(lang, shown, page_published) else ""
             if published_iso:
@@ -554,7 +566,8 @@ def main() -> int:
                 "published_iso": published_iso,
                 "modified_iso": modified_iso,
                 "modified_display": (display_date(lang, modified_iso)
-                                     if data.get("modified") and modified_iso != page_published
+                                     if (data.get("modified") or fresh_date(lang, page))
+                                     and modified_iso != page_published
                                      else ""),
                 "read_minutes": 6,
                 "hreflang": hreflang,

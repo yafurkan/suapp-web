@@ -24,13 +24,56 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    # contents: write — tazelik tarihleri depoya geri yazılır (aşağıda)
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        
+        with:
+          # Tazelik: bir yazının metni en son hangi commit'te değişti — tam geçmiş gerekir
+          fetch-depth: 0
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
+
+      # Ubuntu 24.04'te sistem Python'una pip kurulamıyor (PEP 668)
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # İçeriği ANLAMLI ölçüde değişen blog yazılarının güncelleme tarihi
+      # (JSON-LD, article:modified_time, görünür "Güncelleme" satırı, sitemap,
+      # blog indeksi) metni değiştiren commit'in tarihine çekilir. İçerik
+      # değişmeden tarih ilerlemez; hreflang/analitik/şema gibi toplu
+      # enjeksiyonlar sayılmaz. Ayrıntı: scripts/stamp-freshness.py
+      - name: Blog tazelik tarihleri
+        run: |
+          pip install --quiet --disable-pip-version-check jinja2
+          python scripts/stamp-freshness.py --apply
+
+      # Kaynak ile yayın aynı kalsın diye sonuç depoya geri yazılır. GITHUB_TOKEN
+      # ile yapılan push yeni bir yayın tetiklemez — döngü yok. Push başarısız
+      # olsa da yayın bu tarihlerle çıkar; tarih "bugün"den değil commit'ten
+      # hesaplandığı için bir sonraki yayın aynı sonucu bulur, kayma olmaz.
+      - name: Tarihleri depoya yaz
+        continue-on-error: true
+        run: |
+          if git diff --quiet; then echo "Tarihi değişen yazı yok."; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -u
+          git commit -q -m "chore(tazelik): içeriği değişen yazıların güncelleme tarihi" \
+                        -m "scripts/stamp-freshness.py — yayın akışı, $GITHUB_SHA"
+          for i in 1 2 3; do
+            if git pull --rebase --quiet origin main && git push --quiet origin HEAD:main; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 5))
+          done
+          echo "::warning::Tarihler depoya yazılamadı; yayın bu tarihlerle çıktı, bir sonraki yayında yeniden hesaplanır."
 
       # Build girdileri siteye YAYINLANMAZ. GitHub Pages repo kökünü olduğu gibi
       # sunuyor; bu klasörler kalırsa worker/SETUP.md, content/gift/config.json

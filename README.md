@@ -280,6 +280,51 @@ rastgele trafiğin sınırlı havuzu tüketmesini istemiyoruz. Koruma
 zaman damgasıyla birlikte saklanır (KVKK/İYS ispatı). Panelin "Duyuru listesi
 (CSV)" çıktısında **yalnızca** izin verenler bulunur.
 
+## Blog Tazelik Tarihleri (otomatik)
+
+Yapay zekâ aramaları ve Google güncel içeriği öne çıkarır ve tarihi yazının
+JSON-LD `dateModified`'ından, `article:modified_time`'dan, görünür "Güncelleme"
+satırından ve sitemap `lastmod`'undan okur. Bu tarihler artık **elle tutulmaz**:
+her push'ta yayın akışı (`deploy.yml`) `scripts/stamp-freshness.py --apply`
+çalıştırır ve sonucu depoya geri yazar (`chore(tazelik): …` commit'i).
+
+**Kural: içerik değişmeden tarih ilerlemez.**
+
+- Ölçülen şey yazının **okunan metni**. Menü, alt bilgi, tarih satırı,
+  script/stil ve toplu script'lerin eklediği bloklar (`related*`, `cards`,
+  sütunlar arası bağlantı, CTA) sayılmaz. Bu yüzden hreflang, analitik, şema,
+  OG görseli ya da "ilgili yazılar" eklemek hiçbir tarihi oynatmaz.
+- Metin, `content/freshness.json`'daki son tarihlenmiş hâliyle karşılaştırılır.
+  **En az 25 kelime ya da metnin %2'si** değiştiyse yazı güncellenmiş sayılır.
+  Küçük düzeltmeler tarih ilerletmez ama birikir.
+- Yeni tarih = metni bugünkü hâline getiren **commit'in tarihi** (İstanbul) —
+  "bugün" değil. Hesap ne zaman yapılırsa yapılsın aynı sonucu verir.
+- Elle yazılmış yazıda JSON-LD + `article:modified_time` + görünür satır
+  (`<span class="meta-updated" data-freshness>Güncelleme: …</span>`) yazılır.
+  Üretilmiş yazıda (`build-compare.py`) tarih kayıt defterine yazılır, üretici
+  sayfayı yeniden basar — üretici bu tarihi okur, yeniden üretim geri almaz.
+- Ardından sitemap `lastmod` ve blog indekslerinin şemasındaki tarih eşitlenir.
+- Elle ileri alınmış tarihe dokunulmaz; geri düşmüş tarih kayıttakine döner.
+
+Bilerek **yapılmayan**: tarihi takvime göre otomatik ileri almak. Google
+`lastmod` değerlerini tutarsız bulursa sinyali **tüm site için** yok sayıyor;
+içerik aynıyken yenilenen tarih tazelik taklidi olarak okunur. 2026-08-17'deki
+"235 URL'nin 228'i aynı lastmod" sorunu tam olarak buydu.
+
+```
+python3 scripts/stamp-freshness.py                      # önizleme
+python3 scripts/stamp-freshness.py --explain blog/x.html   # neden ilerledi / ilerlemedi
+python3 scripts/stamp-freshness.py --report --days 180  # eskiyen yazılar
+```
+
+**Aylık rapor** (`freshness-report.yml`, her ayın 1'i): 180 gündür içeriği
+değişmemiş yazılar + `check-facts.py` sonucu, "Aylık içerik tazelik raporu"
+konusuna yorum olarak düşer. Tarihleri değiştirmez; neyin gerçekten
+güncellenmesi gerektiğini gösterir. Elle: Actions → İçerik tazelik raporu → Run.
+
+**Metin kuralı değişirse** (`SKIP_CLASSES` vb.) `RULES`'u artır: kayıttaki
+özetler önceki hâllerden yeniden hesaplanır, tarihlere dokunulmaz.
+
 ## Kişisel Profil Sayfaları (suuapp.com/furkan)
 
 Instagram bio'suna konan, kişiyi tanıtan bağlantı sayfası. Panelden düzenlenir:

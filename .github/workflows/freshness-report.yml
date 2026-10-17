@@ -1,0 +1,63 @@
+name: İçerik tazelik raporu
+
+# Ayda bir: uzun süredir içeriği değişmemiş blog yazıları + suu-facts.json ile
+# çelişen sayfalar. Tarihleri DEĞİŞTİRMEZ — yalnızca neyin gerçekten
+# güncellenmesi gerektiğini listeler. Sonuç tek bir açık konuya yorum olarak
+# düşer (yoksa konu açılır); iş özetinde de görünür.
+
+on:
+  schedule:
+    - cron: "17 6 1 * *"        # her ayın 1'i, 09:17 (İstanbul)
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "Kaç gündür değişmemiş yazılar listelensin"
+        default: "180"
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Raporu hazırla
+        env:
+          DAYS: ${{ github.event.inputs.days || '180' }}
+        run: |
+          {
+            echo "# İçerik tazelik raporu — $(TZ=Europe/Istanbul date +%Y-%m-%d)"
+            echo
+            python3 scripts/stamp-freshness.py --report --days "$DAYS"
+            echo
+            echo "## Gerçekler kontrolü (scripts/check-facts.py)"
+            echo
+            python3 scripts/check-facts.py > facts.txt 2>&1 || true
+            echo "**$(grep -m1 '^Özet' facts.txt || echo 'özet satırı yok')**"
+            echo
+            echo "<details><summary>Tam çıktı</summary>"
+            echo
+            echo '```'
+            cat facts.txt
+            echo '```'
+            echo
+            echo "</details>"
+          } > report.md
+          cat report.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Konuya yaz
+        continue-on-error: true      # konular kapalıysa rapor iş özetinde kalır
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TITLE: Aylık içerik tazelik raporu
+        run: |
+          num=$(gh issue list --state open --search "in:title $TITLE" --json number,title \
+                  -q ".[] | select(.title == \"$TITLE\") | .number" | head -1)
+          if [ -n "$num" ]; then
+            gh issue comment "$num" --body-file report.md
+          else
+            gh issue create --title "$TITLE" --body-file report.md
+          fi
