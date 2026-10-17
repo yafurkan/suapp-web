@@ -131,6 +131,12 @@
             else root.removeAttribute('data-theme');
             render(btn);
         });
+
+        // Yasal sayfalar dili tek URL'de değiştirir (<html lang>) — etiket de o dile geçsin
+        if (window.MutationObserver) {
+            new MutationObserver(function () { render(btn); })
+                .observe(root, { attributes: true, attributeFilter: ['lang'] });
+        }
     }
 
     if (document.readyState === 'loading') {

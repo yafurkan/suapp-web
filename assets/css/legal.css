@@ -1,0 +1,376 @@
+/* ============================================================
+   Suu — Yasal sayfalar (gizlilik politikası, kullanım şartları)
+
+   suu.css'in üstüne oturur; renk, boşluk, tipografi token'ları oradan.
+   Hukuki metin sayfada olduğu gibi durur — bu dosya yalnızca kabuğu ve
+   okunabilirliği çizer. Davranış: assets/js/legal.js.
+
+   Yapı:
+     .legal-hero      başlık, güncelleme etiketi, dil seçici
+     .legal__grid     masaüstünde içindekiler + metin, mobilde alt alta
+     .legal-toc       <details>: mobilde açılır kutu, masaüstünde yapışkan liste
+     .legal-doc       dil başına bir belge; yalnızca .active görünür
+   ============================================================ */
+
+/* ── Başlık alanı ───────────────────────────────────────── */
+.legal-hero {
+    padding-block: clamp(2.25rem, 6vw, 4.5rem) var(--sp-8);
+    background:
+        radial-gradient(55% 90% at 8% 0%, color-mix(in srgb, var(--su-500) 13%, transparent), transparent 72%),
+        radial-gradient(45% 80% at 100% 0%, color-mix(in srgb, var(--accent-cyan) 9%, transparent), transparent 70%),
+        var(--bg);
+    border-block-end: 1px solid var(--border);
+}
+
+.legal-hero__icon {
+    display: inline-grid;
+    place-items: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+    background: linear-gradient(145deg, var(--su-400), var(--su-600));
+    color: #fff;
+    box-shadow: var(--shadow-brand);
+}
+.legal-hero__icon svg { width: 26px; height: 26px; }
+
+.legal-hero h1 {
+    margin: var(--sp-5) 0 var(--sp-4);
+    font-size: clamp(2rem, 3.6vw + 1rem, 3.25rem);
+}
+
+.legal-updated {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-2);
+    margin: 0;
+    padding: var(--sp-1) var(--sp-3);
+    border: 1px solid var(--border);
+    border-radius: var(--r-full);
+    background: var(--surface);
+    font-size: var(--fs-sm);
+    color: var(--text-muted);
+}
+.legal-updated svg { width: 15px; height: 15px; color: var(--text-brand); flex: none; }
+
+/* Dil seçici — suu.css'teki .lang-switcher ile aynı hap biçimi.
+   Yedi dil mobile sığmaz; satır kırılmaz, yana kayar. */
+.legal-langs {
+    display: flex;
+    gap: 2px;
+    width: max-content;
+    max-width: 100%;
+    margin-block-start: var(--sp-6);
+    padding: 4px;
+    overflow-x: auto;
+    border-radius: var(--r-full);
+    background: var(--bg-sunken);
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+}
+.legal-langs::-webkit-scrollbar { display: none; }
+.legal-langs button {
+    flex: none;
+    min-height: 38px;
+    padding-inline: var(--sp-4);
+    border: 0;
+    border-radius: var(--r-full);
+    background: transparent;
+    font: inherit;
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-semibold);
+    color: var(--text-muted);
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background-color var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease);
+}
+.legal-langs button:hover { color: var(--text); }
+.legal-langs button.active {
+    background: var(--surface);
+    color: var(--text-brand);
+    box-shadow: var(--shadow-sm);
+}
+
+/* ── Yerleşim ───────────────────────────────────────────── */
+.legal { padding-block: var(--sp-8) var(--sp-16); }
+
+.legal__grid {
+    display: grid;
+    gap: var(--sp-6);
+}
+
+@media (min-width: 1024px) {
+    .legal { padding-block-start: var(--sp-12); }
+    .legal__grid {
+        grid-template-columns: 240px minmax(0, 1fr);
+        gap: var(--sp-16);
+        align-items: start;
+    }
+}
+
+/* ── İçindekiler ────────────────────────────────────────── */
+.legal-toc {
+    border: 1px solid var(--border);
+    border-radius: var(--r-lg);
+    background: var(--surface);
+}
+.legal-toc > summary {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-3);
+    padding: var(--sp-4) var(--sp-5);
+    font-weight: var(--fw-bold);
+    color: var(--text);
+    list-style: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+.legal-toc > summary::-webkit-details-marker { display: none; }
+.legal-toc > summary svg { width: 18px; height: 18px; color: var(--text-brand); flex: none; }
+.legal-toc__count {
+    margin-inline-start: auto;
+    min-width: 1.75rem;
+    padding: 0 var(--sp-2);
+    border-radius: var(--r-full);
+    background: var(--bg-sunken);
+    font-size: var(--fs-xs);
+    line-height: 1.75rem;
+    text-align: center;
+    color: var(--text-muted);
+}
+.legal-toc > summary::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    /* fiziksel kenarlar: ok RTL'de de aşağıyı göstersin */
+    border-right: 2px solid var(--text-subtle);
+    border-bottom: 2px solid var(--text-subtle);
+    transform: translateY(-2px) rotate(45deg);
+    transition: transform var(--dur-base) var(--ease);
+}
+.legal-toc[open] > summary::after { transform: translateY(2px) rotate(-135deg); }
+
+.legal-toc ol {
+    margin: 0;
+    padding: 0 var(--sp-3) var(--sp-3);
+    list-style: none;
+}
+.legal-toc li { margin: 0; }
+.legal-toc a {
+    display: grid;
+    grid-template-columns: 1.9em minmax(0, 1fr);
+    gap: var(--sp-1);
+    padding: var(--sp-2) var(--sp-3);
+    border-radius: var(--r-md);
+    font-size: var(--fs-sm);
+    line-height: var(--lh-snug);
+    color: var(--text-muted);
+}
+.legal-toc a:hover { background: var(--bg-subtle); color: var(--text); }
+.legal-toc a[aria-current="true"] {
+    background: color-mix(in srgb, var(--su-500) 11%, transparent);
+    color: var(--text-brand);
+    font-weight: var(--fw-semibold);
+}
+.legal-toc__num {
+    font-weight: var(--fw-semibold);
+    font-variant-numeric: tabular-nums;
+    color: var(--text-subtle);
+}
+.legal-toc a[aria-current="true"] .legal-toc__num { color: inherit; }
+
+@media (min-width: 1024px) {
+    .legal-toc {
+        position: sticky;
+        top: calc(var(--nav-h) + var(--sp-6));
+        max-height: calc(100vh - var(--nav-h) - var(--sp-12));
+        overflow-y: auto;
+        border: 0;
+        background: transparent;
+        scrollbar-width: thin;
+    }
+    /* Masaüstünde hep açık — başlık yalnızca etiket */
+    .legal-toc > summary {
+        padding: 0 var(--sp-3) var(--sp-3);
+        font-size: var(--fs-xs);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--text-subtle);
+        pointer-events: none;
+    }
+    .legal-toc > summary::after,
+    .legal-toc__count { display: none; }
+    .legal-toc ol { padding: 0; }
+}
+
+/* ── Metin ──────────────────────────────────────────────── */
+.legal-body {
+    min-width: 0;
+    max-width: 46rem;
+    font-size: var(--fs-md);
+    line-height: 1.75;
+}
+
+.legal-doc { display: none; }
+.legal-doc.active { display: block; }
+
+.legal-doc p,
+.legal-doc li {
+    color: var(--text-muted);
+    text-align: start;           /* eski sayfa iki yana yaslıydı — mobilde boşluk açıyordu */
+}
+.legal-doc p { margin: 0 0 var(--sp-4); }
+.legal-doc strong { color: var(--text); font-weight: var(--fw-semibold); }
+
+.legal-doc h2,
+.legal-doc .contact-box > h3 {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--sp-3);
+    font-size: var(--fs-2xl);
+    font-weight: var(--fw-black);
+    letter-spacing: -0.015em;
+    line-height: 1.25;
+}
+.legal-doc h2 {
+    margin: var(--sp-12) 0 var(--sp-5);
+    padding-block-start: var(--sp-10);
+    border-block-start: 1px solid var(--border);
+}
+.legal-doc .contact-box > h3 { margin: 0 0 var(--sp-4); }
+
+/* "1." → numara rozeti (legal.js sarıyor; JS yoksa düz metin kalır) */
+.legal-num {
+    flex: none;
+    display: inline-grid;
+    place-items: center;
+    min-width: 2.25rem;
+    height: 2.25rem;
+    margin-block-start: calc((1.25em - 2.25rem) / 2);
+    padding-inline: var(--sp-2);
+    border-radius: 11px;
+    background: var(--pillar-water-soft);
+    font-size: var(--fs-base);
+    font-weight: var(--fw-black);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0;
+    color: var(--text-brand);
+}
+
+.legal-doc h3 {
+    margin: var(--sp-8) 0 var(--sp-3);
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-snug);
+}
+.legal-subnum {
+    margin-inline-end: 0.4em;
+    font-variant-numeric: tabular-nums;
+    color: var(--text-brand);
+}
+
+.legal-doc ul,
+.legal-doc ol {
+    margin: 0 0 var(--sp-5);
+    padding-inline-start: 1.35em;
+}
+.legal-doc li { margin-bottom: var(--sp-2); padding-inline-start: 0.3em; }
+.legal-doc ul > li::marker { color: var(--su-400); }
+.legal-doc ol > li::marker { color: var(--text-brand); font-weight: var(--fw-bold); }
+
+.legal-doc a {
+    color: var(--link);
+    text-decoration: underline;
+    text-decoration-color: color-mix(in srgb, currentColor 35%, transparent);
+    text-underline-offset: 3px;
+    overflow-wrap: anywhere;     /* uzun adresler (…/donations/receipts/) taşmasın */
+}
+.legal-doc a:hover { color: var(--link-hover); text-decoration-color: currentColor; }
+
+/* Bilgi kutusu */
+.legal-doc .highlight {
+    margin: var(--sp-6) 0;
+    padding: var(--sp-5) var(--sp-6);
+    border: 1px solid color-mix(in srgb, var(--su-500) 22%, transparent);
+    border-inline-start: 4px solid var(--su-500);
+    border-radius: var(--r-lg);
+    background: color-mix(in srgb, var(--su-500) 7%, var(--surface));
+    color: var(--text);
+}
+.legal-doc .highlight ul { margin-block-end: var(--sp-3); }
+.legal-doc .highlight li { color: var(--text-muted); }
+
+/* İletişim kartı */
+.legal-doc .contact-box {
+    margin: var(--sp-12) 0;
+    padding: clamp(var(--sp-6), 4vw, var(--sp-8));
+    border: 1px solid var(--border);
+    border-radius: var(--r-xl);
+    background: var(--bg-subtle);
+}
+.legal-doc .contact-box ul { margin-block-end: var(--sp-2); }
+.legal-doc .contact-box a[href^="mailto:"] { font-weight: var(--fw-semibold); }
+
+@media (max-width: 600px) {
+    .legal-body { font-size: var(--fs-base); line-height: 1.7; }
+    .legal-doc h2,
+    .legal-doc .contact-box > h3 { font-size: var(--fs-xl); }
+    .legal-doc h2 { margin-block-start: var(--sp-10); padding-block-start: var(--sp-8); }
+    .legal-num { min-width: 2rem; height: 2rem; margin-block-start: calc((1.25em - 2rem) / 2); font-size: var(--fs-sm); border-radius: 9px; }
+    .legal-doc .highlight { padding: var(--sp-4) var(--sp-5); }
+}
+
+/* ── Alt bilgi ──────────────────────────────────────────── */
+.legal-footer { padding-block: var(--sp-10) var(--sp-8); }
+.legal-footer__docs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-2) var(--sp-6);
+    font-weight: var(--fw-medium);
+}
+.legal-footer__docs a[aria-current="page"] { color: var(--text); font-weight: var(--fw-semibold); }
+.legal-footer .footer__bottom { margin-block-start: var(--sp-6); border-block-start: 1px solid var(--border); }
+.footer-text { display: none; margin: 0; }
+.footer-text.active { display: block; }
+
+/* ── Başa dön ───────────────────────────────────────────── */
+.legal-top {
+    position: fixed;
+    inset-inline-end: var(--sp-5);
+    inset-block-end: var(--sp-5);
+    z-index: 80;
+    display: grid;
+    place-items: center;
+    width: 46px;
+    height: 46px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    background: var(--surface);
+    color: var(--text);
+    box-shadow: var(--shadow-md);
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: opacity var(--dur-base) var(--ease), transform var(--dur-base) var(--ease), visibility var(--dur-base);
+}
+.legal-top svg { width: 20px; height: 20px; }
+.legal-top.is-visible { opacity: 1; visibility: visible; transform: none; }
+@media (max-width: 768px) {
+    /* alttaki sabit indirme çubuğunun üstünde dursun */
+    .legal-top { inset-block-end: calc(76px + var(--sp-4) + env(safe-area-inset-bottom, 0px)); }
+}
+
+/* ── Yazdırma — yalnızca seçili dildeki metin ───────────── */
+@media print {
+    .nav, .skip-link, .legal-hero__icon, .legal-langs, .legal-toc,
+    .legal-top, .sticky-cta, .legal-footer__docs { display: none !important; }
+    body { padding: 0 !important; background: #fff; }
+    .legal-hero { padding: 0 0 12pt; background: none; border: 0; }
+    .legal { padding: 0; }
+    .legal__grid { display: block; }
+    .legal-body { max-width: none; font-size: 11pt; }
+    .legal-doc h2 { break-after: avoid; border: 0; padding-block-start: 0; margin-block-start: 18pt; }
+    .legal-doc .highlight, .legal-doc .contact-box { break-inside: avoid; }
+    .legal-footer { padding: 12pt 0 0; background: none; }
+}
