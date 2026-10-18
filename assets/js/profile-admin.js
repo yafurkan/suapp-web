@@ -29,7 +29,9 @@
 
     // Görsel boyutları — tarayıcıda küçültülür, depoya hafif dosya gider
     var IMG = {
-        avatar:  { max: 640, square: true },
+        // JPEG: profil fotoğrafı aynı zamanda paylaşım önizlemesi (og:image) —
+        // LinkedIn gibi bazı platformlar önizlemede WebP göstermiyor
+        avatar:  { max: 640, square: true, jpeg: true },
         photo:   { max: 1600 },
         project: { max: 320, square: true }
     };
@@ -381,7 +383,7 @@
                     ctx.imageSmoothingQuality = 'high';
                     ctx.drawImage(img, sx, sy, sw, sh, 0, 0, c.width, c.height);
                     // WebP'yi kodlayamayan tarayıcıda (eski Safari) JPEG
-                    var webp = c.toDataURL('image/webp', 0.84);
+                    var webp = spec.jpeg ? '' : c.toDataURL('image/webp', 0.84);
                     var dataUrl = /^data:image\/webp/.test(webp) ? webp : c.toDataURL('image/jpeg', 0.86);
                     var ext = /^data:image\/webp/.test(dataUrl) ? 'webp' : 'jpg';
                     var path = '/' + MEDIA + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 6) + '.' + ext;
