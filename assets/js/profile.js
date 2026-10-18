@@ -431,6 +431,23 @@
         f.setAttribute('role', 'button');
     });
 
+    // Instagram'daki gibi: profil fotoğrafına dokununca halka kesik kesik döner,
+    // ilk fotoğraf hazır olunca hikâye açılır. Kısa bir an hep döner ki dokunuşun
+    // karşılığı görünsün; yavaş bağlantıda da en geç 4 sn'de açılır.
+    function openFromAvatar(av) {
+        if (isOpen() || av.classList.contains('is-loading')) return;
+        if (calm) return openStory(0, av);
+        av.classList.add('is-loading');
+        var first = new Image();
+        first.src = stories[0].src;
+        var ready = first.decode ? first.decode().catch(function () {}) : Promise.resolve();
+        var at = function (ms) { return new Promise(function (r) { setTimeout(r, ms); }); };
+        Promise.race([Promise.all([ready, at(450)]), at(4000)]).then(function () {
+            av.classList.remove('is-loading');
+            openStory(0, av);
+        });
+    }
+
     function photoIndex(ph) {
         // kopya şeritteki fotoğraf: sıra numarası görünür kopyasından
         return ph.hasAttribute('data-index') ? +ph.getAttribute('data-index')
@@ -446,7 +463,7 @@
             return;
         }
         var av = e.target.closest('.pf-avatar--story');
-        if (av) return openStory(0, av);
+        if (av) return openFromAvatar(av);
         var ph = e.target.closest('.pf-photo');
         if (ph) openStory(photoIndex(ph), ph);
     });
@@ -455,7 +472,8 @@
         var t = e.target;
         if (t.matches && t.matches('.pf-avatar--story, .pf-photo[data-index]')) {
             e.preventDefault();
-            openStory(t.classList.contains('pf-avatar--story') ? 0 : photoIndex(t), t);
+            if (t.classList.contains('pf-avatar--story')) openFromAvatar(t);
+            else openStory(photoIndex(t), t);
         }
     });
 

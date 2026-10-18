@@ -123,12 +123,13 @@ img { display: block; max-width: 100%; }
     content: "";
     position: absolute;
     border-radius: 50%;
-    /* Suu'nun üç sütunu: su, egzersiz, kalori */
-    background: conic-gradient(from 0deg, var(--pf-blue), var(--pf-cyan), var(--pf-green), var(--pf-amber), var(--pf-blue));
-    animation: pf-spin 7s linear infinite;
+    /* Instagram hikâye halkası: sarı → turuncu → pembe → mor → mavi ve geri —
+       simetrik, dönerken dikiş görünmesin */
+    background: conic-gradient(from 200deg, #FEDA75, #FA7E1E, #D62976, #962FBF, #4F5BD5, #962FBF, #D62976, #FA7E1E, #FEDA75);
+    animation: pf-spin 5s linear infinite;
 }
-.pf-avatar__ring { inset: -5px; }
-.pf-avatar::before { inset: -14px; filter: blur(22px); opacity: 0.5; }
+.pf-avatar__ring { inset: -6px; }
+.pf-avatar::before { inset: -14px; filter: blur(22px); opacity: 0.45; }
 .pf-avatar img {
     position: relative;
     z-index: 1;
@@ -140,6 +141,15 @@ img { display: block; max-width: 100%; }
     background: #0D1520;
 }
 @keyframes pf-spin { to { transform: rotate(1turn); } }
+
+/* Dokununca Instagram'daki gibi halka kesik kesik hızla döner (hikâye
+   yüklenirken). Ayrı "rotate" özelliği: süregiden dönüş sıçramadan devam eder. */
+.pf-avatar.is-loading .pf-avatar__ring {
+    -webkit-mask: repeating-conic-gradient(#000 0 11deg, transparent 11deg 15deg);
+    mask: repeating-conic-gradient(#000 0 11deg, transparent 11deg 15deg);
+    animation: pf-spin 5s linear infinite, pf-turn 0.8s linear infinite;
+}
+@keyframes pf-turn { to { rotate: 1turn; } }
 
 /* Fotoğraf varsa profil fotoğrafı hikâyeyi açar (profile.js işaretler) */
 .pf-avatar--story { cursor: pointer; -webkit-tap-highlight-color: transparent; }

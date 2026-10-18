@@ -206,6 +206,84 @@
         });
     }
 
+    // ── Android ekranındaki kodlu tur ───────────────────────
+    // suu-android-tour.js, iOS turunun sokak haritasını (SuuPhoneTour.streetMap)
+    // kullanır. Metinleri ve görselleri yalnız Türkçe: diğer dillerde Android
+    // yüzünde sabit ekran görüntüsü kalır. Android ilk kez gösterildiğinde
+    // yüklenir — iOS'ta kalan ziyaretçi turu indirmez. Hareket azaltmada
+    // kurulmaz; sabit ana ekran görüntüsü yeterli.
+    var ANDROID_TOUR = {
+        js:     '/assets/js/suu-android-tour.js?v=1',
+        assets: '/assets/tour/android/',
+        font:   'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap'
+    };
+    var androidReady = null;
+
+    function androidTourOn() {
+        return (document.documentElement.lang || 'tr').slice(0, 2).toLowerCase() === 'tr' &&
+            !reducedMotion() && !!(window.SuuPhoneTour && window.SuuPhoneTour.streetMap);
+    }
+
+    // Script + Roboto + ilk karenin görseli: tur ekran görüntüsünün yerine
+    // ancak ilk karesi hazırken geçsin, arada boş ekran görünmesin.
+    function loadAndroidTour() {
+        if (!androidReady) androidReady = new Promise(function (resolve, reject) {
+            var font = document.createElement('link');
+            font.rel = 'stylesheet';
+            font.href = ANDROID_TOUR.font;
+            document.head.appendChild(font);
+            var home = new Image();
+            home.src = ANDROID_TOUR.assets + 'home.jpg';
+            var s = document.createElement('script');
+            s.src = ANDROID_TOUR.js;
+            s.onerror = reject;
+            s.onload = function () {
+                if (!window.SuuAndroidTour) return reject();
+                (home.decode ? home.decode() : Promise.resolve()).then(resolve, resolve);
+            };
+            document.head.appendChild(s);
+        });
+        return androidReady;
+    }
+
+    function mountAndroidTour(phone) {
+        var host = document.createElement('div');
+        host.className = 'phone__tour';
+        host.style.background = '#101318';
+        host.setAttribute('aria-hidden', 'true');
+        phone.appendChild(host);
+        return { host: host, tour: window.SuuAndroidTour.mount(host, { assets: ANDROID_TOUR.assets }) };
+    }
+
+    function initAndroidTour(root) {
+        var shot = root.querySelector('img[data-platform="android"]');
+        var phone = shot && shot.closest('.phone');
+        if (!phone || !androidTourOn()) return;
+        var host = null, started = false, timer = null;
+
+        function show() {
+            if (host) { host.style.display = ''; return; }
+            if (started) return;
+            started = true;
+            loadAndroidTour().then(function () {
+                host = mountAndroidTour(phone).host;
+                root.dataset.androidTour = '1';
+                if (root.dataset.face !== 'android') host.style.display = 'none';
+            }, function () { /* yüklenemezse ekran görüntüsü kalır */ });
+        }
+
+        // iOS turuyla aynı: iOS seçilince çevirmenin ortasında gizlenir,
+        // display:none olunca turun IntersectionObserver'ı onu duraklatır.
+        if (root.dataset.face === 'android') show();
+        painters.push(function (platform) {
+            clearTimeout(timer);
+            if (platform === 'android') { show(); return; }
+            if (!host) return;
+            if (reducedMotion()) { host.style.display = 'none'; return; }
+            timer = setTimeout(function () { host.style.display = 'none'; }, 480);
+        });
+    }
+
     // ── Maketi büyütme ──────────────────────────────────────
     // Küçük telefonlarda hero maketi ekranı kaplamasın diye küçültüldü;
     // detayı görmek isteyen üstüne dokununca maket büyüyerek açılır.
@@ -243,6 +321,8 @@
             host.setAttribute('aria-hidden', 'true');
             frame.appendChild(host);
             tour = mountTour(host);
+        } else if (platform === 'android' && root.dataset.androidTour) {
+            tour = mountAndroidTour(frame).tour;
         }
 
         lb.appendChild(close);
@@ -332,6 +412,7 @@
         // kurulur.
         whenTourLoaded(function () {
             document.querySelectorAll('[data-device]').forEach(initTour);
+            document.querySelectorAll('[data-device]').forEach(initAndroidTour);
         });
     }
 
