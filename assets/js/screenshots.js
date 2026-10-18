@@ -208,20 +208,19 @@
 
     // ── Android ekranındaki kodlu tur ───────────────────────
     // suu-android-tour.js, iOS turunun sokak haritasını (SuuPhoneTour.streetMap)
-    // kullanır. Metinleri ve görselleri yalnız Türkçe: diğer dillerde Android
-    // yüzünde sabit ekran görüntüsü kalır. Android ilk kez gösterildiğinde
-    // yüklenir — iOS'ta kalan ziyaretçi turu indirmez. Hareket azaltmada
-    // kurulmaz; sabit ana ekran görüntüsü yeterli.
+    // kullanır. iOS turu gibi TR ve EN: Türkçe dışındaki her sayfa EN görür
+    // (görseller ortak, İngilizce metinleri tur kendisi üstüne yazar).
+    // Android ilk kez gösterildiğinde yüklenir — iOS'ta kalan ziyaretçi turu
+    // indirmez. Hareket azaltmada kurulmaz; sabit ana ekran görüntüsü yeterli.
     var ANDROID_TOUR = {
-        js:     '/assets/js/suu-android-tour.js?v=1',
+        js:     '/assets/js/suu-android-tour.js?v=2',
         assets: '/assets/tour/android/',
         font:   'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap'
     };
     var androidReady = null;
 
     function androidTourOn() {
-        return (document.documentElement.lang || 'tr').slice(0, 2).toLowerCase() === 'tr' &&
-            !reducedMotion() && !!(window.SuuPhoneTour && window.SuuPhoneTour.streetMap);
+        return !reducedMotion() && !!(window.SuuPhoneTour && window.SuuPhoneTour.streetMap);
     }
 
     // Script + Roboto + ilk karenin görseli: tur ekran görüntüsünün yerine
@@ -252,7 +251,8 @@
         host.style.background = '#101318';
         host.setAttribute('aria-hidden', 'true');
         phone.appendChild(host);
-        return { host: host, tour: window.SuuAndroidTour.mount(host, { assets: ANDROID_TOUR.assets }) };
+        var lang = (document.documentElement.lang || 'tr').slice(0, 2).toLowerCase();
+        return { host: host, tour: window.SuuAndroidTour.mount(host, { assets: ANDROID_TOUR.assets, lang: lang === 'tr' ? 'tr' : 'en' }) };
     }
 
     function initAndroidTour(root) {
