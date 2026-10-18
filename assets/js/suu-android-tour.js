@@ -33,10 +33,25 @@
   function eo(p) { return 1 - Math.pow(1 - p, 3); }
   function mmss(s) { s = Math.round(s); return String(Math.floor(s / 60)).padStart(2, '0') + ':' + String(s % 60).padStart(2, '0'); }
   function pace(s) { s = Math.round(s); return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0'); }
-  function fmt(n) { return Math.round(n).toLocaleString('tr-TR'); }
+  var TX = {
+    tr: { loc: 'tr-TR', dec: ',', ml: ' / 1900 ml', kcalG: ' / 2058 kcal', min: 'dk', menu: ['Besin Ekle', 'Egzersiz Ekle', 'Hedefe Yaklaştır', 'Pet Dostum', 'Story Paylaş'],
+      recent: 'Son öğünler', free: 'Son ücretsiz analizin', camB: ['Tara', 'Barkod', 'Tanımla', 'Arama'], gallery: 'Galeri', cola: 'Kola', pizza: 'Pepperoni pizza', analyzing: 'ANALİZ EDİLİYOR',
+      mealA: 'ÖĞÜN ANALİZİ', meal: 'Pepperoni pizza + Kola', mac: ['Karb', 'Protein', 'Yağ'], addMeal: 'Öğüne ekle', gps: 'GPS Alındı', st: ['Süre', 'Ort. tempo', 'Mesafe'], pause: 'Duraklat', finish: 'Bitir',
+      great: 'Harikasın, furkan!', done: 'Görev tamam!', quest: '30 dakikalık hareket hedefini tamamla', rows: ['Günlük görev', 'Egzersiz', 'Hareket hedefi'], total: 'Toplam', lv: 'Seviye', tier: 'Demir', next: function (n) { return 'Sonraki seviyeye ' + n + ' XP'; },
+      cont: 'Devam', lvUp: 'Seviye 6!', unlock: 'Açıldı: Sosyal', next230: 'Sonraki seviyeye 230 XP' },
+    en: { loc: 'en-US', dec: '.', ml: ' / 1900 ml', kcalG: ' / 2058 kcal', min: 'min', menu: ['Add Food', 'Add Exercise', 'Boost Goal', 'Pet Buddy', 'Share Story'],
+      recent: 'Recent meals', free: 'Last free analysis', camB: ['Scan', 'Barcode', 'Describe', 'Search'], gallery: 'Gallery', cola: 'Cola', pizza: 'Pepperoni pizza', analyzing: 'ANALYZING',
+      mealA: 'MEAL ANALYSIS', meal: 'Pepperoni pizza + Cola', mac: ['Carbs', 'Protein', 'Fat'], addMeal: 'Add to meal', gps: 'GPS Ready', st: ['Time', 'Avg. pace', 'Distance'], pause: 'Pause', finish: 'Finish',
+      great: "You're amazing, furkan!", done: 'Quest complete!', quest: 'Complete your 30-minute move goal', rows: ['Daily quest', 'Exercise', 'Move goal'], total: 'Total', lv: 'Level', tier: 'Iron', next: function (n) { return n + ' XP to next level'; },
+      cont: 'Continue', lvUp: 'Level 6!', unlock: 'Unlocked: Social', next230: '230 XP to next level' }
+  };
+  var T = TX.tr;
+  function fmt(n) { return Math.round(n).toLocaleString(T.loc); }
 
   function mount(container, o) {
     o = o || {};
+    T = TX[o.lang === 'en' ? 'en' : 'tr'];
+    var EN = T === TX.en;
     var A = o.assets || 'assets/android/';
     var IMG = { home: A + 'home.jpg', levels: A + 'levels.jpg', map: A + 'map.jpg', food: A + 'food.jpg', petCard: A + 'pet-card.png', petLvl: A + 'pet-lvl.png', mbtn: A + 'mascot-btn.png' };
     Object.keys(IMG).forEach(function (k) { var i = new Image(); i.src = IMG[k]; });
@@ -79,6 +94,7 @@
       if (stage) stage.remove();
       stage = el(root, 'position:absolute;inset:0;');
       u = {};
+      var P = function (p, x, y, w, h, bg, css, t) { return el(p, abs(x, y, w, h) + 'background:' + bg + ';' + (css || ''), t == null ? '' : t); };
       /* ---------- HOME ---------- */
       var H = u.home = layer(1, IMG.home);
       var R = [[57, 11, C.blue, .26], [43, 10, C.green, .24], [29, 9, C.orange, 0]];
@@ -92,21 +108,34 @@
       u.arc = [0, 1, 2].map(function (i) { return H.querySelector('[data-a="' + i + '"]'); });
       u.arcV = R.map(function (r) { return r[3]; });
       el(H, abs(14, 339, 332, 23) + 'background:' + C.bg + ';');
-      u.vWater = txt(H, 26, 341, 110, 'font-weight:700;font-size:12.5px;', '500 / 1900 ml');
-      u.vFood = txt(H, 125, 341, 110, 'font-weight:700;font-size:12.5px;', '495 / 2058 kcal');
-      u.vEx = txt(H, 224, 341, 110, 'font-weight:700;font-size:12.5px;color:' + C.orange + ';', '0 dk');
+      u.vWater = txt(H, 26, 341, 110, 'font-weight:700;font-size:12.5px;', '500' + T.ml);
+      u.vFood = txt(H, 125, 341, 110, 'font-weight:700;font-size:12.5px;', '495' + T.kcalG);
+      u.vEx = txt(H, 224, 341, 110, 'font-weight:700;font-size:12.5px;color:' + C.orange + ';', '0 ' + T.min);
       u.mac = [[72.5, '495', '/2058'], [144, '39', '/257g'], [215.5, '29', '/103g']].map(function (m) {
         var w = el(H, circ(m[0], 671, 21) + 'background:' + C.card + ';display:flex;flex-direction:column;align-items:center;justify-content:center;');
         var n = el(w, 'font-weight:700;font-size:11.5px;line-height:1.1;', m[1]);
         el(w, 'font-size:8px;color:#8c8e93;', m[2]);
         return n;
       });
+      if (EN) {
+        P(H, 22, 123, 200, 25, C.bg, 'font-size:15px;color:#a8acb3;line-height:25px;', 'How much water today?');
+        P(H, 14, 320, 332, 19, C.bg);
+        [[87, C.blue, 'Water'], [180, C.green, 'Food'], [277, C.orange, 'Exercise']].forEach(function (l) { el(H, abs(l[0] - 60, 320, 120, 19) + 'display:flex;align-items:center;justify-content:center;gap:6px;font-size:12.5px;color:#e5e7eb;', '<i style="width:7px;height:7px;border-radius:50%;background:' + l[1] + '"></i>' + l[2]); });
+        [[57, '#742b3c', 'run', 'Add exercise', -8], [303, '#155c32', 'fork', 'Add food', 8]].forEach(function (b) {
+          var c = el(H, circ(b[0], 485, 53) + 'background:' + b[1] + ';filter:blur(1.2px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;color:rgba(255,255,255,.35);font-weight:700;font-size:12px;', icon(b[2], 20, 'rgba(255,255,255,.4)', 2.4) + '<span style="transform:rotate(' + b[4] + 'deg)">' + b[3] + '</span>');
+        });
+        P(H, 50, 585, 260, 24, C.bg, 'font-size:14px;color:#c5c8cc;text-align:center;line-height:24px;', 'Tap to add · Hold for more');
+        P(H, 40, 703, 210, 19, C.card);
+        [[72.5, 'kcal'], [144, 'Carbs'], [215.5, 'Protein']].forEach(function (l) { txt(H, l[0] - 40, 704, 80, 'font-size:12.5px;color:#e5e7eb;', l[1]); });
+        P(H, 268, 703, 24, 19, C.card, 'font-size:12.5px;color:#e5e7eb;text-align:center;', 'Fat');
+        P(H, 70, 766, 90, 14, C.card, 'font-size:14px;color:#9aa0a6;line-height:14px;', 'Today : 2');
+      }
       u.water = el(H, circ(180, 455, 66) + 'background:radial-gradient(circle at 40% 30%,#2ad6f7,#2a7ef2 60%,#2a5fe8);box-shadow:0 0 40px rgba(40,140,250,.55);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;',
         icon('drop', 22, '#fff', 0, true) + '<div style="font-weight:700;font-size:17px">250 ml</div>');
       u.badge = el(H, circ(165.5, 63.5, 21) + 'background:radial-gradient(circle at 40% 30%,#f1f3f6,#a7adb6 70%,#7d838c);box-shadow:0 0 0 3px #3a2c17, 0 0 0 4px #6b5326;display:grid;place-items:center;font-weight:800;font-size:20px;color:#1d2128;opacity:0;', '6');
       u.badgeHit = el(H, circ(165.5, 63.5, 21));
       u.dim = el(H, 'position:absolute;inset:0;background:rgba(10,12,16,.55);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);opacity:0;z-index:5;');
-      u.menu = [['fork', '#66bb6a', 'Besin Ekle'], ['run', '#ff9800', 'Egzersiz Ekle'], ['target', '#7e57c2', 'Hedefe Yaklaştır'], ['paw', '#ec407a', 'Pet Dostum'], ['share', '#8b5cf6', 'Story Paylaş']].map(function (m, i) {
+      u.menu = [['fork', '#66bb6a', T.menu[0]], ['run', '#ff9800', T.menu[1]], ['target', '#7e57c2', T.menu[2]], ['paw', '#ec407a', T.menu[3]], ['share', '#8b5cf6', T.menu[4]]].map(function (m, i) {
         var y = 336.5 + i * 58.2;
         var pill = el(H, 'position:absolute;right:72px;top:' + (y - 18) + 'px;height:36px;padding:0 13px;border-radius:10px;background:#1f2737;display:flex;align-items:center;font-size:14px;font-weight:700;white-space:nowrap;opacity:0;z-index:6;', m[2]);
         var dot = el(H, circ(321, y, 22.5) + 'background:' + m[1] + ';box-shadow:0 4px 16px ' + m[1] + '77;display:grid;place-items:center;opacity:0;z-index:6;', icon(m[0], 22, '#fff', 2.4, m[0] === 'paw'));
@@ -120,12 +149,12 @@
       el(K, abs(0, 0, 360, 150) + 'background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,0));');
       el(K, abs(0, 560, 360, 220) + 'background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.55));');
       txt(K, 16, 9, 40, 'font-size:13px;font-weight:600;text-align:left;', '07:49');
-      el(K, abs(102, 48, 157, 37) + 'border-radius:19px;background:#fff;color:#111;display:flex;align-items:center;justify-content:center;gap:7px;font-weight:700;font-size:14px;', icon('fork', 14, '#777', 2) + 'Son öğünler' + icon('chev', 13, '#111', 2.6));
+      el(K, abs(EN ? 96 : 102, 48, EN ? 169 : 157, 37) + 'border-radius:19px;background:#fff;color:#111;display:flex;align-items:center;justify-content:center;gap:7px;font-weight:700;font-size:14px;', icon('fork', 14, '#777', 2) + T.recent + icon('chev', 13, '#111', 2.6));
       el(K, circ(326, 66, 22) + 'background:rgba(60,60,60,.72);display:grid;place-items:center;', icon('x', 20, '#fff', 2.4));
-      el(K, abs(100, 96, 160, 31) + 'border-radius:16px;background:rgba(60,60,60,.72);display:flex;align-items:center;justify-content:center;gap:6px;font-weight:600;font-size:12px;', icon('sparkle', 13, '#fff', 0, true) + 'Son ücretsiz analizin');
+      el(K, abs(100, 96, 160, 31) + 'border-radius:16px;background:rgba(60,60,60,.72);display:flex;align-items:center;justify-content:center;gap:6px;font-weight:600;font-size:12px;', icon('sparkle', 13, '#fff', 0, true) + T.free);
       el(K, 'position:absolute;inset:0;', '<svg width="360" height="820" style="position:absolute;inset:0"><g fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round"><path d="M50 330V292q0-12 12-12h38"/><path d="M260 280h38q12 0 12 12v38"/><path d="M50 492v37q0 12 12 12h38"/><path d="M260 541h38q12 0 12-12v-37"/></g></svg>');
       u.scanL = el(K, abs(56, 286, 248, 3) + 'background:#ef4444;box-shadow:0 0 14px 3px rgba(239,68,68,.7);opacity:0;');
-      u.camBtns = [[55, 'scan', 'Tara', true], [138, 'barcode', 'Barkod'], [221, 'mic', 'Tanımla'], [304, 'search', 'Arama']].map(function (b) {
+      u.camBtns = [[55, 'scan', T.camB[0], true], [138, 'barcode', T.camB[1]], [221, 'mic', T.camB[2]], [304, 'search', T.camB[3]]].map(function (b) {
         var c = el(K, circ(b[0], 612, 25.5) + 'background:' + (b[3] ? '#fff' : 'rgba(70,64,60,.72)') + ';box-shadow:inset 0 0 0 1px rgba(255,255,255,.18);display:grid;place-items:center;', icon(b[1], 22, b[3] ? '#ef4444' : '#fff', 2.2));
         txt(K, b[0] - 40, 643, 80, 'font-weight:700;font-size:12px;text-shadow:0 1px 4px rgba(0,0,0,.5);', b[2]);
         return c;
@@ -133,18 +162,18 @@
       el(K, circ(58, 711, 22) + 'background:rgba(40,40,40,.7);display:grid;place-items:center;', icon('flashOff', 20, '#fff', 2.2));
       el(K, circ(302, 711, 22) + 'background:rgba(40,40,40,.7);display:grid;place-items:center;', icon('gallery', 20, '#fff', 2));
       u.shutter = el(K, circ(180, 711, 37) + 'box-shadow:inset 0 0 0 4px #fff;display:grid;place-items:center;', '<div style="width:56px;height:56px;border-radius:50%;background:#fff"></div>');
-      txt(K, 140, 757, 80, 'font-size:12px;color:rgba(255,255,255,.7);', 'Galeri');
+      txt(K, 140, 757, 80, 'font-size:12px;color:rgba(255,255,255,.7);', T.gallery);
       u.flash = el(K, 'position:absolute;inset:0;background:radial-gradient(circle at 50% 50%,#fff 0,rgba(255,255,255,.92) 30%,rgba(255,255,255,0) 72%);opacity:0;z-index:4;');
-      u.tags = [[22, 238, 'Kola', '#e11d48'], [150, 560, 'Pepperoni pizza', '#f59e0b']].map(function (t) {
+      u.tags = [[22, 238, T.cola, '#e11d48'], [150, 560, T.pizza, '#f59e0b']].map(function (t) {
         return el(K, abs(t[0], t[1]) + 'height:28px;padding:0 11px 0 9px;border-radius:14px;background:rgba(17,20,27,.86);display:flex;align-items:center;gap:7px;font-size:12.5px;font-weight:700;white-space:nowrap;opacity:0;z-index:3;', '<i style="width:8px;height:8px;border-radius:50%;background:' + t[3] + '"></i>' + t[2]);
       });
-      u.anl = el(K, abs(110, 504, 140, 28) + 'border-radius:14px;background:rgba(17,20,27,.86);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;letter-spacing:.06em;opacity:0;z-index:3;', 'ANALİZ EDİLİYOR');
+      u.anl = el(K, abs(110, 504, 140, 28) + 'border-radius:14px;background:rgba(17,20,27,.86);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;letter-spacing:.06em;opacity:0;z-index:3;', T.analyzing);
       var S = u.sheet = el(K, abs(0, 820, 360, 400) + 'border-radius:26px 26px 0 0;background:' + C.panel + ';box-shadow:0 -10px 40px rgba(0,0,0,.5);z-index:6;');
       el(S, abs(160, 9, 40, 4) + 'border-radius:2px;background:#475569;');
-      el(S, abs(22, 28) + 'font-size:11px;font-weight:700;letter-spacing:.16em;color:#94a3b8;', 'ÖĞÜN ANALİZİ');
-      el(S, abs(22, 48) + 'font-size:19px;font-weight:800;', 'Pepperoni pizza + Kola');
+      el(S, abs(22, 28) + 'font-size:11px;font-weight:700;letter-spacing:.16em;color:#94a3b8;', T.mealA);
+      el(S, abs(22, 48) + 'font-size:19px;font-weight:800;', T.meal);
       u.kc = el(S, abs(22, 82) + 'font-size:40px;font-weight:800;letter-spacing:-.02em;', '0<span style="font-size:16px;color:#94a3b8;font-weight:700"> kcal</span>');
-      u.bars = [['Karb', 82, 257, C.orange], ['Protein', 26, 103, C.pink], ['Yağ', 27, 69, '#a855f7']].map(function (m, i) {
+      u.bars = [[T.mac[0], 82, 257, C.orange], [T.mac[1], 26, 103, C.pink], [T.mac[2], 27, 69, '#a855f7']].map(function (m, i) {
         var y = 150 + i * 44;
         el(S, abs(22, y) + 'font-size:13.5px;font-weight:600;color:#cbd5e1;', m[0]);
         var v = el(S, 'position:absolute;right:22px;top:' + y + 'px;font-size:13.5px;font-weight:800;', '0 g');
@@ -152,44 +181,76 @@
         var f = el(S, abs(22, y + 22, 0, 7) + 'border-radius:4px;background:' + m[3] + ';');
         return { v: v, f: f, g: m[1], w: 316 * Math.min(1, m[1] / m[2] * 2.2) };
       });
-      u.add = el(S, abs(22, 300, 316, 50) + 'border-radius:25px;background:' + C.btn + ';display:grid;place-items:center;font-weight:800;font-size:16px;color:' + C.btnTx + ';', 'Öğüne ekle');
+      u.add = el(S, abs(22, 300, 316, 50) + 'border-radius:25px;background:' + C.btn + ';display:grid;place-items:center;font-weight:800;font-size:16px;color:' + C.btnTx + ';', T.addMeal);
       /* ---------- LEVELS ---------- */
       var L = u.lv = layer(3, IMG.levels); L.style.opacity = 0;
       el(L, abs(35, 291, 291, 14) + 'border-radius:7px;background:#363f50;');
       u.lvBar = el(L, abs(35, 291, 0, 14) + 'border-radius:7px;background:linear-gradient(90deg,#e7a40f,#fbd96b);box-shadow:0 0 12px rgba(245,196,90,.4);');
       u.git = el(L, abs(252, 717, 64, 30));
+      if (EN) {
+        var CB = '#1e293b';
+        P(L, 90, 52, 180, 26, C.bg, 'font-weight:700;font-size:16.5px;text-align:center;line-height:26px;', 'Level & Quests');
+        P(L, 152, 189, 150, 25, CB, 'font-weight:700;font-size:16.5px;line-height:25px;', 'Level 5 · Iron');
+        P(L, 154, 218, 130, 34, CB);
+        el(L, abs(156, 220, null, 30) + 'padding:0 14px 0 11px;border-radius:15px;background:#3b2a10;display:flex;align-items:center;gap:6px;font-weight:700;font-size:13.5px;color:#f5a524;white-space:nowrap;', '<svg width="13" height="13" viewBox="0 0 24 24" fill="#f5a524"><path d="M12 2c1 4 6 6 6 12a6 6 0 0 1-12 0c0-3 2-5 3-6 0 2 1 3 2 3 0-4-1-6 1-9z"/></svg>1-day streak');
+        P(L, 66, 263, 120, 22, CB, 'font-weight:700;font-size:14.5px;line-height:22px;', 'Level 5 · Iron');
+        P(L, 34, 313, 150, 22, CB, 'font-weight:600;font-size:13px;color:' + C.gold + ';line-height:22px;', '5 XP to next level');
+        P(L, 34, 380, 90, 26, CB, 'font-weight:700;font-size:16.5px;line-height:26px;', 'Growth');
+        P(L, 190, 382, 136, 24, CB, 'font-weight:600;font-size:13.5px;color:' + C.gold + ';text-align:right;line-height:24px;', '10 levels to grow');
+        P(L, 26, 484, 308, 36, CB);
+        [[64, 'Baby', 'Lv 1', 1], [141.5, 'Young', 'Lv 5', 1], [218.5, 'Adult', 'Lv 15', 0], [295.5, 'Wise', 'Lv 30', 0]].forEach(function (g) {
+          txt(L, g[0] - 40, 485, 80, 'font-weight:600;font-size:13px;color:' + (g[3] ? '#fff' : '#64748b') + ';', g[1]);
+          txt(L, g[0] - 40, 502, 80, 'font-size:11.5px;color:' + (g[3] ? '#94a3b8' : '#475569') + ';', g[2]);
+        });
+        P(L, 34, 564, 294, 30, CB);
+        el(L, abs(36, 567) + 'font-weight:700;font-size:16.5px;', "Today's quests");
+        el(L, 'position:absolute;right:36px;top:571px;font-size:12px;color:#94a3b8;', 'New quests in 16:11');
+        P(L, 86, 612, 160, 25, CB, 'font-weight:700;font-size:15px;line-height:25px;', 'Complete water goal');
+        P(L, 86, 671, 160, 54, CB, 'font-weight:700;font-size:15px;line-height:21px;padding-top:4px;box-sizing:border-box;', 'Complete 30-minute<br>move goal');
+        P(L, 256, 647, 56, 20, '#2563eb', 'font-weight:700;font-size:15px;color:#0b2a6b;text-align:center;line-height:20px;', 'Go');
+        P(L, 256, 722, 56, 20, '#2563eb', 'font-weight:700;font-size:15px;color:#0b2a6b;text-align:center;line-height:20px;', 'Go');
+        P(L, 86, 763, 150, 17, CB, 'font-weight:700;font-size:15px;line-height:17px;overflow:hidden;', 'Feed your pet or');
+      }
       /* ---------- MAP ---------- */
       var M = u.map = layer(3); M.style.opacity = 0;
       u.mapImg = el(M, 'position:absolute;inset:0;background:url(' + IMG.map + ') 0 0/360px 820px no-repeat;transform-origin:188px 411px;z-index:2;');
-      u.st = window.SuuPhoneTour.streetMap(M, window.SuuPhoneTour.TXT.tr);
+      if (EN) {
+        var MP = '#24292d', MI = u.mapImg;
+        P(MI, 150, 541, 90, 20, MP, 'font-weight:700;font-size:14px;color:#22c55e;line-height:20px;', 'GPS Ready');
+        P(MI, 240, 578, 92, 30, MP, 'font-weight:800;font-size:22px;text-align:center;line-height:30px;', '0.00 km');
+        P(MI, 30, 607, 300, 18, MP);
+        [[79, 'Time'], [180, 'Avg. pace'], [281, 'Distance']].forEach(function (l) { txt(MI, l[0] - 50, 608, 100, 'font-size:11px;color:#9aa0a6;', l[1]); });
+        [[77, 'Walk', '#fff'], [180, 'Start', '#3b82f6'], [282, 'Profile', '#fff']].forEach(function (l) { P(MI, l[0] - 40, 747, 80, 20, '#121a1a', 'font-weight:700;font-size:13.5px;color:' + l[2] + ';text-align:center;line-height:20px;', l[1]); });
+      }
+      u.st = window.SuuPhoneTour.streetMap(M, window.SuuPhoneTour.TXT[EN ? 'en' : 'tr']);
       u.st.layer.style.zIndex = 1;
       u.live = el(M, 'position:absolute;inset:0;z-index:3;opacity:0;');
       el(u.live, abs(0, 0, 360, 90) + 'background:linear-gradient(rgba(16,19,24,.7),rgba(16,19,24,0));');
       txt(u.live, 16, 9, 40, 'font-size:13px;font-weight:600;text-align:left;', '07:50');
       el(u.live, abs(0, 640, 360, 180) + 'background:linear-gradient(rgba(16,19,24,0),' + C.bg + ' 45%);');
       var pn = el(u.live, abs(16, 525, 328, 114) + 'border-radius:26px;background:rgba(34,39,43,.96);box-shadow:0 8px 30px rgba(0,0,0,.45);');
-      el(pn, abs(0, 15, 328) + 'display:flex;justify-content:center;align-items:center;gap:8px;font-weight:700;font-size:14px;color:#22c55e;', icon('gps', 17, '#22c55e', 2) + 'GPS Alındı');
-      u.stat = [[63, 'Süre', '00:00'], [164, 'Ort. tempo', '-:--'], [265, 'Mesafe', '0,00 km']].map(function (m) {
+      el(pn, abs(0, 15, 328) + 'display:flex;justify-content:center;align-items:center;gap:8px;font-weight:700;font-size:14px;color:#22c55e;', icon('gps', 17, '#22c55e', 2) + T.gps);
+      u.stat = [[63, T.st[0], '00:00'], [164, T.st[1], '-:--'], [265, T.st[2], '0' + T.dec + '00 km']].map(function (m) {
         var v = txt(pn, m[0] - 60, 50, 120, 'font-weight:800;font-size:22px;letter-spacing:-.01em;font-variant-numeric:tabular-nums;', m[2]);
         txt(pn, m[0] - 60, 82, 120, 'font-size:11px;color:#9aa0a6;', m[1]);
         return v;
       });
       el(pn, abs(113, 54, 1, 44) + 'background:#3a3f44;'); el(pn, abs(214, 54, 1, 44) + 'background:#3a3f44;');
       u.pauseB = el(u.live, circ(77, 708, 28) + 'background:#2a2f35;display:grid;place-items:center;', icon('pause', 22, '#fff', 2.6));
-      txt(u.live, 37, 746, 80, 'font-weight:700;font-size:13px;', 'Duraklat');
+      txt(u.live, 37, 746, 80, 'font-weight:700;font-size:13px;', T.pause);
       u.stopB = el(u.live, circ(180, 699, 40) + 'background:#ef4444;box-shadow:0 0 30px rgba(239,68,68,.5);display:grid;place-items:center;', icon('stop', 30, '#fff', 0, true));
-      txt(u.live, 140, 746, 80, 'font-weight:700;font-size:14px;color:#f87171;', 'Bitir');
+      txt(u.live, 140, 746, 80, 'font-weight:700;font-size:14px;color:#f87171;', T.finish);
       u.startHit = el(M, circ(180, 699, 40) + 'z-index:4;');
       /* ---------- QUEST DONE ---------- */
       var Q = u.qd = layer(4); Q.style.opacity = 0;
       el(Q, 'position:absolute;inset:0;background:rgba(5,7,10,.62);');
       var cd = u.qCard = el(Q, abs(22, 74, 316, 674) + 'border-radius:30px;background:' + C.panel + ';box-shadow:0 20px 60px rgba(0,0,0,.5);');
-      el(cd, 'position:absolute;right:20px;top:18px;height:36px;padding:0 15px;border-radius:18px;background:#3d3a33;display:flex;align-items:center;color:#f5d27a;font-weight:700;font-size:13.5px;', 'Harikasın, furkan!');
+      el(cd, 'position:absolute;right:20px;top:18px;height:36px;padding:0 15px;border-radius:18px;background:#3d3a33;display:flex;align-items:center;color:#f5d27a;font-weight:700;font-size:13.5px;', T.great);
       u.qPet = el(cd, abs(83, 64, 150, 150) + 'background:url(' + IMG.petCard + ') center/contain no-repeat;');
-      txt(cd, 0, 228, 316, 'font-weight:800;font-size:23px;', 'Görev tamam!');
+      txt(cd, 0, 228, 316, 'font-weight:800;font-size:23px;', T.done);
       el(cd, abs(30, 268, 14, 14), icon('run', 14, C.pink, 2.4));
-      el(cd, abs(48, 262, 240) + 'text-align:center;font-size:14px;line-height:1.45;color:#cbd5e1;', '30 dakikalık hareket hedefini tamamla');
-      u.rows = [['sparkle', C.gold, '#3a3a2e', 'Günlük görev', 30], ['run', C.pink, '#3b2a35', 'Egzersiz', 20], ['run', C.pink, '#3b2a35', 'Hareket hedefi', 25]].map(function (r, i) {
+      el(cd, abs(48, 262, 240) + 'text-align:center;font-size:14px;line-height:1.45;color:#cbd5e1;', T.quest);
+      u.rows = [['sparkle', C.gold, '#3a3a2e', T.rows[0], 30], ['run', C.pink, '#3b2a35', T.rows[1], 20], ['run', C.pink, '#3b2a35', T.rows[2], 25]].map(function (r, i) {
         var w = el(cd, abs(20, 318 + i * 40, 276, 34) + 'display:flex;align-items:center;gap:14px;opacity:0;');
         el(w, 'width:30px;height:30px;border-radius:50%;background:' + r[2] + ';display:grid;place-items:center;flex:0 0 auto;', icon(r[0], 15, r[1], 2.4, r[0] === 'sparkle'));
         el(w, 'flex:1;font-size:15px;', r[3]);
@@ -197,15 +258,15 @@
         return w;
       });
       el(cd, abs(20, 446, 276, 1) + 'background:#334155;');
-      el(cd, abs(20, 466) + 'font-weight:700;font-size:16px;', 'Toplam');
+      el(cd, abs(20, 466) + 'font-weight:700;font-size:16px;', T.total);
       u.total = el(cd, 'position:absolute;right:20px;top:458px;font-weight:800;font-size:25px;color:' + C.gold + ';font-variant-numeric:tabular-nums;', '+0 XP');
       u.qBadge = el(cd, circ(31, 524, 11) + 'background:radial-gradient(circle at 40% 30%,#f1f3f6,#a7adb6 70%,#7d838c);box-shadow:0 0 0 2px #5b6470;display:grid;place-items:center;font-weight:800;font-size:11px;color:#1d2128;', '5');
-      u.qLv = el(cd, abs(52, 514) + 'font-weight:700;font-size:14.5px;', 'Seviye 5 · Demir');
+      u.qLv = el(cd, abs(52, 514) + 'font-weight:700;font-size:14.5px;', T.lv + ' 5 · ' + T.tier);
       u.qXp = el(cd, 'position:absolute;right:20px;top:514px;font-weight:700;font-size:14px;font-variant-numeric:tabular-nums;', '245 / 250 XP');
       el(cd, abs(20, 546, 276, 11) + 'border-radius:6px;background:#45505f;');
       u.qBar = el(cd, abs(20, 546, 270, 11) + 'border-radius:6px;background:linear-gradient(90deg,#e7a40f,#fbd96b);');
-      u.qNext = el(cd, abs(20, 566) + 'font-weight:600;font-size:13px;color:' + C.gold + ';', 'Sonraki seviyeye 5 XP');
-      u.qBtn = el(cd, abs(20, 600, 276, 50) + 'border-radius:25px;background:' + C.btn + ';display:grid;place-items:center;font-weight:800;font-size:17px;color:' + C.btnTx + ';', 'Devam');
+      u.qNext = el(cd, abs(20, 566) + 'font-weight:600;font-size:13px;color:' + C.gold + ';', T.next(5));
+      u.qBtn = el(cd, abs(20, 600, 276, 50) + 'border-radius:25px;background:' + C.btn + ';display:grid;place-items:center;font-weight:800;font-size:17px;color:' + C.btnTx + ';', T.cont);
       /* ---------- LEVEL UP ---------- */
       var V = u.lu = layer(5); V.style.opacity = 0;
       V.style.background = 'radial-gradient(40% 25% at 8% 58%,rgba(40,90,140,.35),transparent),radial-gradient(35% 22% at 88% 76%,rgba(150,40,30,.35),transparent),radial-gradient(45% 30% at 50% 45%,rgba(60,70,90,.35),transparent),#0b0e12';
@@ -217,12 +278,12 @@
       el(u.luBadge, abs(18, 12, 60, 26) + 'border-radius:50%;background:rgba(255,255,255,.55);');
       u.luNum = el(u.luBadge, 'position:absolute;inset:0;display:grid;place-items:center;font-weight:900;font-size:66px;color:#1f242c;', '5');
       el(u.luBadge, abs(41, 94, 30, 6), '<i style="position:absolute;left:0;width:6px;height:6px;border-radius:50%;background:#5b616b"></i><i style="position:absolute;right:0;width:6px;height:6px;border-radius:50%;background:#5b616b"></i>');
-      u.luTitle = txt(V, 0, 294, 360, 'font-weight:800;font-size:33px;opacity:0;', 'Seviye 6!');
+      u.luTitle = txt(V, 0, 294, 360, 'font-weight:800;font-size:33px;opacity:0;', T.lvUp);
       el(V, circ(180, 478, 85) + 'background:radial-gradient(closest-side,rgba(255,150,120,.28),rgba(255,150,120,0));');
       u.luPet = el(V, abs(105, 400, 150, 150) + 'background:url(' + IMG.petLvl + ') center/contain no-repeat;opacity:0;');
-      u.luPill = el(V, abs(106, 553, 148, 34) + 'border-radius:17px;background:#2a2d33;display:grid;place-items:center;color:#f2d78a;font-weight:700;font-size:14px;opacity:0;', 'Açıldı: Sosyal');
-      u.luNext = txt(V, 0, 596, 360, 'font-weight:600;font-size:13px;color:#cbd5e1;opacity:0;', 'Sonraki seviyeye 230 XP');
-      u.luBtn = el(V, abs(24, 706, 312, 50) + 'border-radius:25px;background:' + C.btn + ';display:grid;place-items:center;font-weight:800;font-size:17px;color:' + C.btnTx + ';opacity:0;', 'Devam');
+      u.luPill = el(V, abs(EN ? 96 : 106, 553, EN ? 168 : 148, 34) + 'border-radius:17px;background:#2a2d33;display:grid;place-items:center;color:#f2d78a;font-weight:700;font-size:14px;opacity:0;', T.unlock);
+      u.luNext = txt(V, 0, 596, 360, 'font-weight:600;font-size:13px;color:#cbd5e1;opacity:0;', T.next230);
+      u.luBtn = el(V, abs(24, 706, 312, 50) + 'border-radius:25px;background:' + C.btn + ';display:grid;place-items:center;font-weight:800;font-size:17px;color:' + C.btnTx + ';opacity:0;', T.cont);
       /* ---------- finger ---------- */
       u.fg = el(stage, abs(0, 0, 44, 44) + 'margin:-22px 0 0 -22px;z-index:50;pointer-events:none;opacity:0;');
       u.fdot = el(u.fg, 'position:absolute;inset:7px;border-radius:50%;background:rgba(255,255,255,.82);box-shadow:0 3px 12px rgba(0,0,0,.45);');
@@ -262,7 +323,7 @@
       showF(true); await fingerTo(196, 470, 600); await tap(u.water);
       u.water.animate([{ boxShadow: '0 0 40px rgba(40,140,250,.55)' }, { boxShadow: '0 0 70px rgba(40,180,255,.95)' }, { boxShadow: '0 0 40px rgba(40,140,250,.55)' }], { duration: 900 });
       floatText(180, 370, '+250 ml', '#7cc4ff');
-      setArc(0, .39); count(u.vWater, 500, 750, 900, function (v) { return fmt(v) + ' / 1900 ml'; });
+      setArc(0, .39); count(u.vWater, 500, 750, 900, function (v) { return fmt(v) + T.ml; });
       await wait(1300);
       /* + → Besin Ekle */
       await fingerTo(318, 648, 600); await tap(u.fab);
@@ -290,7 +351,7 @@
       await (ani(u.cam, [{ transform: 'none', opacity: 1 }, { transform: 'translateY(60px)', opacity: 0 }], { duration: 460, easing: IO }).finished);
       floatText(180, 290, '+680 kcal', '#5fe0a8');
       setArc(1, .57);
-      count(u.vFood, 495, 1175, 900, function (v) { return fmt(v) + ' / 2058 kcal'; });
+      count(u.vFood, 495, 1175, 900, function (v) { return fmt(v) + T.kcalG; });
       count(u.mac[0], 495, 1175, 900, function (v) { return fmt(v); });
       count(u.mac[1], 39, 121, 900, function (v) { return Math.round(v); });
       count(u.mac[2], 29, 55, 900, function (v) { return Math.round(v); });
@@ -324,7 +385,7 @@
         cam.x += (pt.x - cam.x) * .1; cam.y += (pt.y - cam.y) * .1; cam.z += (1 - cam.z) * .03; applyCam();
         u.stat[0].textContent = mmss(1634 * e);
         u.stat[1].textContent = e > .03 ? pace(348 - 43 * e) : '-:--';
-        u.stat[2].textContent = (4.82 * e).toFixed(2).replace('.', ',') + ' km';
+        u.stat[2].textContent = (4.82 * e).toFixed(2).replace('.', T.dec) + ' km';
         while (shown < SPL.length && e >= SPL[shown][0] / 4.82) { var q = P.getPointAtLength(Ln * SPL[shown][0] / 4.82); St.addMark(q, SPL[shown][0], SPL[shown][1], q.x > 560); shown++; }
       });
       showF(true); await fingerTo(184, 703, 600); await tap(u.stopB);
@@ -335,7 +396,7 @@
       /* quest done */
       u.home.getAnimations().forEach(function (a) { a.cancel(); });
       u.lv.style.opacity = 0;
-      u.vEx.textContent = '27 dk'; u.arc[2].setAttribute('stroke-dasharray', '90 100'); u.arcV[2] = .9;
+      u.vEx.textContent = '27 ' + T.min; u.arc[2].setAttribute('stroke-dasharray', '90 100'); u.arcV[2] = .9;
       fadeOut(u.map, 450);
       u.qd.style.opacity = 1; fadeIn(u.qd, 300);
       ani(u.qCard, [{ opacity: 0, transform: 'translateY(30px) scale(.94)' }, { opacity: 1, transform: 'none' }], { duration: 520, easing: SPRING });
@@ -348,8 +409,8 @@
       ani(u.qBar, [{ width: '270px' }, { width: '276px' }], { duration: 600 });
       u.qBar.animate([{ boxShadow: '0 0 0 rgba(245,196,90,0)' }, { boxShadow: '0 0 18px rgba(245,196,90,.9)' }, { boxShadow: '0 0 0 rgba(245,196,90,0)' }], { duration: 900, delay: 400 });
       await count(u.qXp, 245, 250, 600, function (v) { return Math.round(v) + ' / 250 XP'; });
-      u.qNext.textContent = 'Sonraki seviyeye 0 XP';
-      u.qBadge.textContent = '6'; pop(u.qBadge); u.qLv.textContent = 'Seviye 6 · Demir';
+      u.qNext.textContent = T.next(0);
+      u.qBadge.textContent = '6'; pop(u.qBadge); u.qLv.textContent = T.lv + ' 6 · ' + T.tier;
       await wait(900);
       showF(true); await fingerTo(186, 700, 650); await tap(u.qBtn);
       showF(false);
