@@ -2,7 +2,7 @@
  * Suu — Kişisel profil sayfası davranışı (suuapp.com/<slug>/)
  *
  * İçerik HTML'de basılı gelir; bu dosya yalnızca etkileşim ekler:
- *   - fotoğrafa dokununca büyük görünüm (ok tuşları, kaydırma, Esc)
+ *   - profil fotoğrafına ya da bir fotoğrafa dokununca Instagram tarzı hikâye
  *   - kayan şerit dokunurken durur
  *   - "Kişiyi kaydet" → rehbere eklenebilen .vcf (fotoğraf gömülü)
  *   - "Paylaş" → sistem paylaşımı, yoksa bağlantıyı kopyalar
@@ -18,7 +18,11 @@
     try { data = JSON.parse(document.getElementById('profile-data').textContent); } catch (e) {}
 
     var PAGE = 'https://suuapp.com/' + (data.slug || '') + '/';
-    var UI = { copied: 'Bağlantı kopyalandı', saved: 'Kişi kartı indirildi', close: 'Kapat', prev: 'Önceki', next: 'Sonraki' };
+    var UI = {
+        copied: 'Bağlantı kopyalandı', saved: 'Kişi kartı indirildi',
+        story: 'Fotoğraflar', watch: 'Fotoğrafları hikâye olarak izle', photo: 'Fotoğraf',
+        close: 'Kapat', prev: 'Önceki', next: 'Sonraki', pause: 'Duraklat', play: 'Devam ettir', like: 'Beğen'
+    };
 
     // ── küçük bildirim ──
     var toastEl = null, toastTimer = 0;
@@ -127,78 +131,311 @@
         });
     }
 
-    // ── büyük fotoğraf ──
-    var photos = (data.photos || []).filter(function (p) { return p && p.src; });
-    var lb = null, lbIndex = 0, lastFocus = null;
+    // ── hikâye: profil fotoğrafına ya da bir fotoğrafa dokununca ──
+    // Instagram hikâyesi gibi: üstte dolan çubuklar, 10 sn sonra sıradaki;
+    // sağa dokun ileri, sola dokun geri, basılı tut dur, aşağı çek kapat.
+    // Sağ altta beğeni: canlı yayındaki gibi alttan kalpler yükselir.
+    // Fotoğraf listesi sayfadaki şeritten okunur — çizicinin süzdüğü adresler
+    // ve data-index sırası birebir aynı kalır.
+    var STORY_MS = 10000;
+    var stories = Array.prototype.map.call(root.querySelectorAll('.pf-photo[data-index] img'), function (img) {
+        return { src: img.getAttribute('src'), alt: img.getAttribute('alt') || '' };
+    });
+    var calm = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var st = null, frame, img, bg, bars, live, caption, pauseBtn, likeBtn, heartsEl;
+    var stIndex = 0, stElapsed = 0, stLast = 0, stRaf = 0, stReady = false, stBursts = [], liked = {};
+    var stPaused = false, stHolding = false, stPushed = false, lastFocus = null;
 
-    function buildLightbox() {
-        lb = document.createElement('div');
-        lb.className = 'pf-lightbox';
-        lb.setAttribute('role', 'dialog');
-        lb.setAttribute('aria-modal', 'true');
-        var btn = function (kind, label, path) {
-            return '<button type="button" data-lb="' + kind + '" aria-label="' + label + '"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + path + '</svg></button>';
-        };
-        lb.innerHTML = '<figure><img alt=""><figcaption></figcaption></figure>' +
-            btn('close', UI.close, '<path d="M18 6 6 18"/><path d="m6 6 12 12"/>') +
-            (photos.length > 1 ? btn('prev', UI.prev, '<path d="m15 18-6-6 6-6"/>') + btn('next', UI.next, '<path d="m9 18 6-6-6-6"/>') : '');
-        document.body.appendChild(lb);
-        lb.addEventListener('click', function (e) {
-            var b = e.target.closest('[data-lb]');
-            if (b) {
-                var k = b.getAttribute('data-lb');
-                if (k === 'close') closeLb();
-                else showLb(lbIndex + (k === 'next' ? 1 : -1));
-            } else if (e.target === lb) closeLb();
+    var ICON = {
+        close: '<path d="M18 6 6 18"/><path d="m6 6 12 12"/>',
+        pause: '<rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/>',
+        play: '<polygon points="6 3 20 12 6 21 6 3"/>',
+        prev: '<path d="m15 18-6-6 6-6"/>',
+        next: '<path d="m9 18 6-6-6-6"/>',
+        heart: '<path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>'
+    };
+    var HEART_COLORS = ['#FF3040', '#FF5C7A', '#FF8FA3', '#E1306C', '#FF7A45'];
+    function svg(path) {
+        return '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + path + '</svg>';
+    }
+
+    function isOpen() { return !!st && st.classList.contains('is-open'); }
+
+    function buildStory() {
+        st = document.createElement('div');
+        st.className = 'pf-story';
+        st.setAttribute('role', 'dialog');
+        st.setAttribute('aria-modal', 'true');
+        st.setAttribute('aria-label', UI.story);
+        st.tabIndex = -1;
+        st.innerHTML = '<div class="pf-story__frame">' +
+            '<img class="pf-story__bg" alt="" aria-hidden="true">' +
+            '<img class="pf-story__img" alt="" draggable="false">' +
+            '<span class="pf-story__spin" aria-hidden="true"></span>' +
+            '<div class="pf-story__top">' +
+                '<div class="pf-story__bars">' + stories.map(function () { return '<span><i></i></span>'; }).join('') + '</div>' +
+                '<div class="pf-story__head"><img class="pf-story__avatar" alt=""><span class="pf-story__who"><b></b><small></small></span>' +
+                    '<button type="button" data-st="pause">' + svg(ICON.pause) + '</button>' +
+                    '<button type="button" data-st="close" aria-label="' + UI.close + '">' + svg(ICON.close) + '</button></div>' +
+            '</div>' +
+            '<button type="button" class="pf-story__zone pf-story__zone--prev" data-st="prev" aria-label="' + UI.prev + '">' + svg(ICON.prev) + '</button>' +
+            '<button type="button" class="pf-story__zone pf-story__zone--next" data-st="next" aria-label="' + UI.next + '">' + svg(ICON.next) + '</button>' +
+            '<div class="pf-story__foot"><p class="pf-story__caption"></p>' +
+                '<span class="pf-story__likewrap"><span class="pf-story__hearts" aria-hidden="true"></span>' +
+                '<button type="button" class="pf-story__like" data-st="like" aria-pressed="false" aria-label="' + UI.like + '">' + svg(ICON.heart) + '</button></span></div>' +
+            '<p class="pf-story__live" aria-live="polite"></p>' +
+            '</div>';
+        document.body.appendChild(st);
+
+        frame = st.querySelector('.pf-story__frame');
+        img = st.querySelector('.pf-story__img');
+        bg = st.querySelector('.pf-story__bg');
+        bars = st.querySelectorAll('.pf-story__bars i');
+        live = st.querySelector('.pf-story__live');
+        caption = st.querySelector('.pf-story__caption');
+        pauseBtn = st.querySelector('[data-st="pause"]');
+        likeBtn = st.querySelector('[data-st="like"]');
+        heartsEl = st.querySelector('.pf-story__hearts');
+        likeBtn.addEventListener('animationend', function () { likeBtn.classList.remove('is-pop'); });
+        var av = root.querySelector('.pf-avatar img');
+        if (av) st.querySelector('.pf-story__avatar').src = av.getAttribute('src');
+        else st.querySelector('.pf-story__avatar').remove();
+        st.querySelector('.pf-story__who b').textContent = data.name || '';
+        st.querySelector('.pf-story__who small').textContent = data.headline || '';
+        setPaused(false);
+
+        img.onload = img.onerror = loaded;
+        window.addEventListener('resize', function () { if (isOpen()) fit(); });
+
+        // Dokunma: kısa dokunuş bölgeye göre ileri/geri (click), basılı tutmak
+        // durdurur, yana kaydırmak geçer, aşağı çekmek kapatır.
+        var down = null, holdTimer = 0, suppress = false;
+        frame.addEventListener('pointerdown', function (e) {
+            if (e.button > 0 || e.target.closest('.pf-story__head button, .pf-story__like')) return;
+            suppress = false;
+            down = { x: e.clientX, y: e.clientY, t: Date.now() };
+            stHolding = true;
+            holdTimer = setTimeout(function () { st.classList.add('is-holding'); }, 200);
         });
-        // kaydırarak geçiş
-        var x0 = null;
-        lb.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; }, { passive: true });
-        lb.addEventListener('touchend', function (e) {
-            if (x0 === null) return;
-            var dx = e.changedTouches[0].clientX - x0;
-            if (Math.abs(dx) > 50 && photos.length > 1) showLb(lbIndex + (dx < 0 ? 1 : -1));
-            x0 = null;
+        st.addEventListener('pointermove', function (e) {
+            if (!down) return;
+            var dx = e.clientX - down.x, dy = e.clientY - down.y;
+            if (dy > 0 && dy > Math.abs(dx)) {
+                frame.style.transition = 'none';
+                frame.style.transform = 'translateY(' + dy + 'px) scale(' + Math.max(0.85, 1 - dy / 1500) + ')';
+            }
+        });
+        function up(e) {
+            if (!down) return;
+            var dx = e.clientX - down.x, dy = e.clientY - down.y;
+            clearTimeout(holdTimer);
+            suppress = Date.now() - down.t > 250 || Math.abs(dx) > 10 || Math.abs(dy) > 10;
+            down = null;
+            stHolding = false;
+            st.classList.remove('is-holding');
+            frame.style.transition = '';
+            if (e.type === 'pointerup' && dy > 90 && dy > Math.abs(dx)) {
+                frame.style.transform = 'translateY(' + (dy + 140) + 'px) scale(0.8)';
+                closeStory();
+                return;
+            }
+            frame.style.transform = '';
+            if (e.type === 'pointerup' && Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) go(stIndex + (dx < 0 ? 1 : -1));
+        }
+        st.addEventListener('pointerup', up);
+        st.addEventListener('pointercancel', up);
+        st.addEventListener('pointerleave', up);
+        // Uzun basışta görsel menüsü / seçim açılmasın
+        st.addEventListener('contextmenu', function (e) { e.preventDefault(); });
+        // Fareyle tıklanan bölge odağı almasın — yoksa Boşluk duraklatmak yerine onu tetikler
+        frame.addEventListener('mousedown', function (e) {
+            if (e.target.closest('.pf-story__zone')) e.preventDefault();
+        });
+
+        st.addEventListener('click', function (e) {
+            var b = e.target.closest('[data-st]');
+            if (!b) {
+                if (e.target === st) closeStory();          // masaüstünde çerçevenin dışı
+                return;
+            }
+            var k = b.getAttribute('data-st');
+            if (k === 'close') closeStory();
+            else if (k === 'pause') setPaused(!stPaused);
+            else if (k === 'like') toggleLike();
+            // basılı tutma / kaydırma sonrası gelen click geçiş sayılmaz; klavye (detail 0) her zaman geçer
+            else if (!(suppress && e.detail)) go(stIndex + (k === 'next' ? 1 : -1));
         });
     }
 
-    function showLb(i) {
-        if (!photos.length) return;
-        lbIndex = (i + photos.length) % photos.length;
-        var p = photos[lbIndex];
-        var img = lb.querySelector('img');
-        img.src = p.src;
-        img.alt = p.alt || '';
-        lb.querySelector('figcaption').textContent = p.alt || '';
+    function setPaused(p) {
+        stPaused = p;
+        st.classList.toggle('is-paused', p);
+        pauseBtn.setAttribute('aria-label', p ? UI.play : UI.pause);
+        pauseBtn.innerHTML = svg(p ? ICON.play : ICON.pause);
     }
 
-    function openLb(i) {
-        if (!lb) buildLightbox();
+    // Alttan yükselen kalpler — her biri farklı boy, renk, salınım ve hızda
+    function hearts(n) {
+        if (calm) return;
+        for (var i = 0; i < n; i++) {
+            var h = document.createElement('span');
+            h.className = 'pf-heart';
+            h.style.setProperty('--dx', Math.round(Math.random() * 56 - 36) + 'px');   // sağ kenara taşmasın diye sola yatkın
+            h.style.setProperty('--rise', Math.round(frame.clientHeight * (0.3 + Math.random() * 0.22)) + 'px');
+            h.style.setProperty('--s', (0.7 + Math.random() * 0.6).toFixed(2));
+            h.style.setProperty('--rot', Math.round(Math.random() * 30 - 15) + 'deg');
+            h.style.color = HEART_COLORS[Math.floor(Math.random() * HEART_COLORS.length)];
+            h.style.animationDuration = (1.7 + Math.random() * 0.9).toFixed(2) + 's';
+            h.style.animationDelay = (i * 0.16 + Math.random() * 0.08).toFixed(2) + 's';
+            h.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>';
+            h.addEventListener('animationend', function () { this.remove(); });
+            heartsEl.appendChild(h);
+        }
+    }
+
+    function showLike() {
+        var on = !!liked[stIndex];
+        likeBtn.classList.toggle('is-liked', on);
+        likeBtn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    }
+
+    // Yalnızca görsel — hiçbir yere gönderilmez, sayılmaz
+    function toggleLike() {
+        liked[stIndex] = !liked[stIndex];
+        showLike();
+        if (!liked[stIndex]) return;
+        likeBtn.classList.remove('is-pop');
+        void likeBtn.offsetWidth;
+        likeBtn.classList.add('is-pop');
+        hearts(8);
+    }
+
+    // Dikey fotoğraf ekranı doldurur; yatay/kare fotoğrafta ya da yatay
+    // ekranda kırpmak yerine sığdırılır, boşluğu aynı fotoğrafın bulanığı doldurur
+    function fit() {
+        var wide = img.naturalWidth / (img.naturalHeight || 1) > 0.9 || frame.clientWidth > frame.clientHeight;
+        st.classList.toggle('is-fit', wide);
+    }
+
+    function loaded() {
+        stReady = true;
+        st.classList.remove('is-loading');
+        fit();
+    }
+
+    function go(i) {
+        if (i >= stories.length) return closeStory();
+        stIndex = Math.max(0, i);                         // ilk hikâyede geri = baştan
+        stElapsed = 0;
+        Array.prototype.forEach.call(bars, function (b, k) { b.style.transform = 'scaleX(' + (k < stIndex ? 1 : 0) + ')'; });
+        var p = stories[stIndex];
+        img.alt = p.alt;
+        caption.textContent = p.alt && p.alt !== data.name ? p.alt : '';
+        live.textContent = UI.photo + ' ' + (stIndex + 1) + ' / ' + stories.length;
+        showLike();
+        // "beğeni geliyor": her hikâyede bir, çoğunda iki kalp dalgası
+        stBursts = [1200 + Math.random() * 2300];
+        if (Math.random() < 0.6) stBursts.push(5500 + Math.random() * 2500);
+        img.style.transform = '';
+        if (img.getAttribute('src') === p.src && img.complete) {
+            loaded();
+        } else {
+            stReady = false;
+            st.classList.add('is-loading');
+            img.src = p.src;
+            bg.src = p.src;
+        }
+        if (stories[stIndex + 1]) new Image().src = stories[stIndex + 1].src;
+    }
+
+    function tick(t) {
+        var dt = stLast ? Math.min(t - stLast, 100) : 0;   // sekme arkadayken süre birikmesin
+        stLast = t;
+        if (stReady && !stPaused && !stHolding) stElapsed += dt;
+        var k = Math.min(stElapsed / STORY_MS, 1);
+        bars[stIndex].style.transform = 'scaleX(' + k + ')';
+        if (!calm) img.style.transform = 'scale(' + (1 + 0.05 * k) + ')';
+        if (stBursts.length && stElapsed >= stBursts[0]) { stBursts.shift(); hearts(4 + Math.floor(Math.random() * 4)); }
+        if (stElapsed >= STORY_MS) go(stIndex + 1);
+        if (isOpen()) stRaf = requestAnimationFrame(tick);
+    }
+
+    function openStory(i, from) {
+        if (!stories.length || isOpen()) return;
+        if (!st) buildStory();
         lastFocus = document.activeElement;
-        showLb(i);
-        lb.classList.add('is-open');
+        // Dokunulan yerden büyüyerek açılsın (kapanırken oraya küçülür)
+        frame.style.transition = 'none';
+        frame.style.transform = '';
+        var r = from && from.getBoundingClientRect(), f = frame.getBoundingClientRect();
+        frame.style.transformOrigin = r ? (r.left + r.width / 2 - f.left) + 'px ' + (r.top + r.height / 2 - f.top) + 'px' : '';
+        void frame.offsetWidth;
+        frame.style.transition = '';
+        setPaused(false);
+        go(i);
+        st.classList.add('is-open');
         document.documentElement.style.overflow = 'hidden';
-        lb.querySelector('[data-lb="close"]').focus();
+        // Telefonda geri tuşu/hareketi sayfadan çıkmasın, hikâyeyi kapatsın
+        history.pushState({ pfStory: 1 }, '');
+        stPushed = true;
+        st.focus({ preventScroll: true });
+        cancelAnimationFrame(stRaf);
+        stLast = 0;
+        stRaf = requestAnimationFrame(tick);
     }
 
-    function closeLb() {
-        lb.classList.remove('is-open');
+    function closeStory() {
+        if (!isOpen()) return;
+        st.classList.remove('is-open', 'is-holding');
+        cancelAnimationFrame(stRaf);
+        heartsEl.textContent = '';
         document.documentElement.style.overflow = '';
-        if (lastFocus && lastFocus.focus) lastFocus.focus();
+        if (stPushed) { stPushed = false; history.back(); }
+        if (lastFocus && lastFocus.focus) lastFocus.focus({ preventScroll: true });
     }
+
+    window.addEventListener('popstate', function () {
+        if (!isOpen()) return;
+        stPushed = false;
+        closeStory();
+    });
+    // Hikâye açıkken sayfa yenilendiyse kalan geçmiş kaydı temizlensin
+    if (history.state && history.state.pfStory) history.replaceState(null, '');
 
     document.addEventListener('keydown', function (e) {
-        if (!lb || !lb.classList.contains('is-open')) return;
-        if (e.key === 'Escape') closeLb();
-        else if (e.key === 'ArrowRight') showLb(lbIndex + 1);
-        else if (e.key === 'ArrowLeft') showLb(lbIndex - 1);
+        if (!isOpen()) return;
+        if (e.key === 'Escape') closeStory();
+        else if (e.key === 'ArrowRight') go(stIndex + 1);
+        else if (e.key === 'ArrowLeft') go(stIndex - 1);
+        else if (e.key === ' ' && !e.target.closest('button')) { e.preventDefault(); setPaused(!stPaused); }
+        else if (e.key === 'Tab') {
+            // odak hikâyenin içinde kalsın
+            var f = st.querySelectorAll('button'), first = f[0], last = f[f.length - 1];
+            if (e.shiftKey ? (document.activeElement === first || document.activeElement === st) : document.activeElement === last) {
+                e.preventDefault();
+                (e.shiftKey ? last : first).focus();
+            }
+        }
     });
 
-    // Fotoğraflar klavyeyle de açılsın
+    // Profil fotoğrafı hikâyeyi açar; şeritteki fotoğraflar klavyeyle de açılsın
+    var avatarEl = root.querySelector('.pf-avatar');
+    if (avatarEl && stories.length) {
+        avatarEl.classList.add('pf-avatar--story');
+        avatarEl.setAttribute('role', 'button');
+        avatarEl.setAttribute('tabindex', '0');
+        avatarEl.setAttribute('aria-label', UI.watch);
+    }
     Array.prototype.forEach.call(root.querySelectorAll('.pf-photo[data-index]'), function (f) {
         f.setAttribute('tabindex', '0');
         f.setAttribute('role', 'button');
     });
+
+    function photoIndex(ph) {
+        // kopya şeritteki fotoğraf: sıra numarası görünür kopyasından
+        return ph.hasAttribute('data-index') ? +ph.getAttribute('data-index')
+            : Array.prototype.indexOf.call(ph.parentNode.children, ph);
+    }
 
     root.addEventListener('click', function (e) {
         var act = e.target.closest('[data-action]');
@@ -208,18 +445,17 @@
             else if (a === 'vcard') vcard();
             return;
         }
+        var av = e.target.closest('.pf-avatar--story');
+        if (av) return openStory(0, av);
         var ph = e.target.closest('.pf-photo');
-        if (ph) {
-            // kopya şeritteki fotoğraf: sıra numarası görünür kopyasından
-            var idx = ph.hasAttribute('data-index') ? +ph.getAttribute('data-index')
-                : Array.prototype.indexOf.call(ph.parentNode.children, ph);
-            openLb(idx);
-        }
+        if (ph) openStory(photoIndex(ph), ph);
     });
     root.addEventListener('keydown', function (e) {
-        if ((e.key === 'Enter' || e.key === ' ') && e.target.matches && e.target.matches('.pf-photo[data-index]')) {
+        if (e.key !== 'Enter' && e.key !== ' ') return;
+        var t = e.target;
+        if (t.matches && t.matches('.pf-avatar--story, .pf-photo[data-index]')) {
             e.preventDefault();
-            openLb(+e.target.getAttribute('data-index'));
+            openStory(t.classList.contains('pf-avatar--story') ? 0 : photoIndex(t), t);
         }
     });
 

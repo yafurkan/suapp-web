@@ -260,7 +260,7 @@
             fields: function (i) {
                 return [
                     imageField('photos.' + i + '.src', 'photo', 'Fotoğraf'),
-                    field('photos.' + i + '.alt', { label: 'Açıklama (ekran okuyucu ve büyük görünüm için)', ph: 'örn. Suu lansmanında' })
+                    field('photos.' + i + '.alt', { label: 'Açıklama (ekran okuyucu ve hikâyede alt yazı)', ph: 'örn. Suu lansmanında' })
                 ];
             }
         },

@@ -337,7 +337,7 @@ değişiklikleri doğrudan bu depoya commit'ler, `deploy.yml` 1–2 dakikada yay
 | `furkan/media/` | panelden yüklenen fotoğraflar (tarayıcıda küçültülür) |
 | `furkan/admin/index.html` | panel (noindex, sıkı CSP) |
 | `assets/js/profile-render.js` | veri → sayfa çizicisi; panel ve `build-profile.mjs` aynı kodu kullanır |
-| `assets/js/profile.js` · `assets/css/profile.css` | sayfanın davranışı ve görünümü |
+| `assets/js/profile.js` · `assets/css/profile.css` | sayfanın davranışı ve görünümü; profil fotoğrafına ya da bir fotoğrafa dokununca Instagram tarzı hikâye (10 sn, dokun ileri/geri, basılı tut dur, aşağı çek kapat, alttan yükselen kalpler — beğeni yalnızca görsel, hiçbir yere gitmez) |
 | `assets/js/profile-admin.js` · `assets/css/profile-admin.css` | panel |
 | `scripts/build-profile.mjs` | veriyi elle değiştirince sayfayı yeniden basar |
 
