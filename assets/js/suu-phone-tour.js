@@ -279,8 +279,8 @@
         var top = el(cam, abs(0, 104, 390, 56) + '-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);background:rgba(34,34,30,.3);');
         el(top, abs(15, 6) + 'font-size:12.5px;font-weight:700;color:rgba(255,255,255,.72);', 'Recent meals');
         var chipCss = 'height:25px;border-radius:13px;background:rgba(70,70,66,.72);box-shadow:inset 0 0 0 1px rgba(255,255,255,.12);display:flex;align-items:center;gap:6px;padding:0 10px;font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;box-sizing:border-box;';
-        el(top, abs(15, 26, 62) + chipCss, icon('history', 13, '#fff', false, 2.4) + 'Cola');
-        el(top, abs(84, 26, 330) + chipCss, icon('history', 13, '#fff', false, 2.4) + "This meal is one McDonald's Big Mac");
+        el(top, abs(15, 26, 68) + chipCss, icon('history', 13, '#fff', false, 2.4) + 'Cola');
+        el(top, abs(90, 26, 330) + chipCss, icon('history', 13, '#fff', false, 2.4) + "This meal is one McDonald's Big Mac");
         [[120, 'Barcode'], [193, 'Search'], [268, 'Describe']].forEach(function (b) {
           el(cam, abs(b[0] - 32, 681, 64, 18) + 'border-radius:6px;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);background:rgba(62,50,42,.88);display:grid;place-items:center;font-size:12.5px;font-weight:600;', b[1]);
         });
@@ -502,6 +502,5 @@
     return { destroy: function () { dead = true; ro && ro.disconnect(); io && io.disconnect(); stage.remove(); } };
   }
 
-  window.SuuPhoneTour = { mount: mount };
+  window.SuuPhoneTour = { mount: mount, streetMap: streetMap, TXT: TXT };
 })();
-
