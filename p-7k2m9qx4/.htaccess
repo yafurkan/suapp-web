@@ -1,0 +1,11 @@
+# Arama motorlarında çıkmasın
+<IfModule mod_headers.c>
+Header set X-Robots-Tag "noindex, nofollow"
+</IfModule>
+Options -Indexes
+# sw.js her zaman güncel gelsin
+<Files "sw.js">
+<IfModule mod_headers.c>
+Header set Cache-Control "no-cache"
+</IfModule>
+</Files>
