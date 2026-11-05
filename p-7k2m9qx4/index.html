@@ -120,6 +120,7 @@ input[type=file]{display:none}
       <input id="q" type="search" inputmode="search" placeholder="TC, ad soyad veya telefon" autocomplete="off">
     </div>
     <button class="btn" id="searchBtn">Sorgula</button>
+    <button class="btn ghost" id="clearAllBtn" style="margin-top:8px">Temizle</button>
     <button class="btn ghost" id="scanBtn" style="margin-top:8px">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-2px;margin-right:6px"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
       Kart tara (foto)
@@ -172,6 +173,7 @@ input[type=file]{display:none}
     addLink: document.getElementById('addLink'),
     addForm: document.getElementById('addForm'),
     scanBtn: document.getElementById('scanBtn'),
+    clearAllBtn: document.getElementById('clearAllBtn'),
     cardInput: document.getElementById('cardInput'),
     scanWrap: document.getElementById('scanWrap'),
     fileInput: document.getElementById('fileInput'),
@@ -747,6 +749,7 @@ input[type=file]{display:none}
   }
 
   els.searchBtn.addEventListener('click', doSearch);
+  els.clearAllBtn.addEventListener('click', clearScanAndSearch);
   els.q.addEventListener('keydown', function(e){ if (e.key === 'Enter') doSearch(); });
   els.uploadLink.addEventListener('click', function(){ els.fileInput.click(); });
   els.fileInput.addEventListener('change', function(){
