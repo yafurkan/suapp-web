@@ -63,10 +63,20 @@ html,body{margin:0;background:var(--bg);color:var(--text-1);
 .msg{font-size:13px;margin-top:10px;color:var(--text-2)}
 .msg.err{color:var(--bad)}
 .msg.ok{color:var(--ok)}
-.results{display:flex;flex-direction:column;gap:10px}
-.result{background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:13px 14px}
-.result .primary{font-size:15px;font-weight:600;margin-bottom:4px}
-.result .sub{font-size:13px;color:var(--text-2)}
+.results{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table.rtable{width:100%;border-collapse:collapse;font-size:13.5px;white-space:nowrap}
+table.rtable th{text-align:left;font-size:11px;letter-spacing:.06em;color:var(--text-2);
+  font-weight:600;padding:10px 14px;border-bottom:1px solid var(--line);background:var(--surface-2)}
+table.rtable td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--text-1)}
+table.rtable tbody tr:last-child td{border-bottom:none}
+table.rtable tbody tr:nth-child(even) td{background:rgba(255,255,255,.015)}
+table.rtable tbody tr{cursor:pointer}
+table.rtable tbody tr:active td{background:rgba(201,160,74,.08)}
+.detail-row td{white-space:normal;background:var(--surface-2) !important;cursor:default;padding:12px 14px}
+.detail-grid{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:13px}
+.detail-grid dt{color:var(--text-2);white-space:nowrap}
+.detail-grid dd{margin:0;color:var(--text-1);word-break:break-word}
 .hint{color:var(--text-3);font-size:13px;text-align:center;padding:18px 0}
 input[type=file]{display:none}
 </style>
@@ -135,7 +145,44 @@ input[type=file]{display:none}
 
   var memRecords = [];   // [{c:[cell,...], s:'lowercased joined cells'}]
   var headers = [];
+  var cols = { tc: -1, name: -1, phone: -1 };
   var db = null;
+
+  // CSV'de "şirket çalışanlarının hepsi" gibi onlarca sütun olsa da, sonuçlarda
+  // sadece bu 3 alan gösterilir — arama yine tüm hücrelerde yapılır.
+  var ALIASES = {
+    tc: ['tc', 'tckn', 'tcno', 'tckimlikno', 'tckimliknumarasi', 'kimlikno'],
+    name: ['adsoyad', 'adisoyadi', 'adsoyadi', 'isim', 'ad', 'adi', 'personel', 'personeladi'],
+    surname: ['soyad', 'soyadi', 'soyisim'],
+    phone: ['telefon', 'tel', 'tlf', 'gsm', 'ceptelefonu', 'cepno', 'cep', 'telefonno']
+  };
+
+  function normalizeHeader(h){
+    // Türkçe İ/I/ı/i tutarsızlığı (kaynak CSV'ler genelde ASCII I/i kullanıyor):
+    // eşleştirme için ı'yı i'ye katla, böylece "ADI"/"Adı" ikisi de "adi" olur.
+    return trLower(String(h || '')).replace(/ı/g, 'i').replace(/[^a-z0-9]/g, '');
+  }
+
+  function detectColumns(hdrs){
+    var out = { tc: -1, name: -1, surname: -1, phone: -1 };
+    hdrs.forEach(function(h, i){
+      var n = normalizeHeader(h);
+      Object.keys(ALIASES).forEach(function(key){
+        if (out[key] === -1 && ALIASES[key].indexOf(n) !== -1) out[key] = i;
+      });
+    });
+    // Bilinen başlık yoksa (düzensiz CSV), ilk üç sütunu sırayla varsay.
+    if (out.tc === -1 && out.name === -1 && out.phone === -1 && hdrs.length) {
+      out.tc = 0; out.name = Math.min(1, hdrs.length - 1); out.phone = Math.min(2, hdrs.length - 1);
+    }
+    return out;
+  }
+
+  function displayName(rec){
+    var first = cols.name >= 0 ? (rec.c[cols.name] || '') : '';
+    var last = cols.surname >= 0 ? (rec.c[cols.surname] || '') : '';
+    return (first + ' ' + last).trim();
+  }
 
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js').catch(function(){});
@@ -349,9 +396,35 @@ input[type=file]{display:none}
   }
 
   function updateSearchLabel(){
-    if (headers && headers.length) {
-      els.searchLabel.textContent = headers.join(' / ').toUpperCase();
+    cols = detectColumns(headers || []);
+    els.searchLabel.textContent = 'TC, AD SOYAD VEYA TELEFON';
+  }
+
+  function toggleDetail(tr, rec){
+    var next = tr.nextElementSibling;
+    if (next && next.classList.contains('detail-row')) {
+      next.remove();
+      return;
     }
+    var old = tr.parentNode.querySelector('.detail-row');
+    if (old) old.remove();
+
+    var detailTr = document.createElement('tr');
+    detailTr.className = 'detail-row';
+    var td = document.createElement('td');
+    td.colSpan = 3;
+    var dl = document.createElement('dl');
+    dl.className = 'detail-grid';
+    (headers.length ? headers : rec.c.map(function(_, i){ return 'Alan ' + (i + 1); })).forEach(function(h, i){
+      var val = rec.c[i];
+      if (!val) return;
+      var dt = document.createElement('dt'); dt.textContent = h;
+      var dd = document.createElement('dd'); dd.textContent = val;
+      dl.appendChild(dt); dl.appendChild(dd);
+    });
+    td.appendChild(dl);
+    detailTr.appendChild(td);
+    tr.parentNode.insertBefore(detailTr, tr.nextSibling);
   }
 
   // ---- Search ----
@@ -381,18 +454,31 @@ input[type=file]{display:none}
     }
 
     var shown = matches.slice(0, MAX_RESULTS);
-    var frag = document.createDocumentFragment();
-    shown.forEach(function(rec){
-      var div = document.createElement('div');
-      div.className = 'result';
-      var primary = rec.c.slice(0, 2).filter(Boolean).join(' · ');
-      var sub = rec.c.slice(2).filter(Boolean).join(' · ');
-      var p = document.createElement('div'); p.className = 'primary'; p.textContent = primary || '(boş)';
-      div.appendChild(p);
-      if (sub) { var s = document.createElement('div'); s.className = 'sub'; s.textContent = sub; div.appendChild(s); }
-      frag.appendChild(div);
+    var wrap = document.createElement('div');
+    wrap.className = 'table-scroll';
+    var table = document.createElement('table');
+    table.className = 'rtable';
+    var theadRow = document.createElement('tr');
+    ['TC Kimlik No', 'Ad Soyad', 'Telefon'].forEach(function(h){
+      var th = document.createElement('th'); th.textContent = h; theadRow.appendChild(th);
     });
-    els.results.appendChild(frag);
+    var thead = document.createElement('thead');
+    thead.appendChild(theadRow);
+    table.appendChild(thead);
+
+    var tbody = document.createElement('tbody');
+    shown.forEach(function(rec){
+      var tr = document.createElement('tr');
+      [cols.tc >= 0 ? rec.c[cols.tc] : '', displayName(rec), cols.phone >= 0 ? rec.c[cols.phone] : '']
+        .forEach(function(val){
+          var td = document.createElement('td'); td.textContent = val || '-'; tr.appendChild(td);
+        });
+      tr.addEventListener('click', function(){ toggleDetail(tr, rec); });
+      tbody.appendChild(tr);
+    });
+    table.appendChild(tbody);
+    wrap.appendChild(table);
+    els.results.appendChild(wrap);
 
     if (matches.length > MAX_RESULTS) {
       var more = document.createElement('div');
