@@ -372,6 +372,15 @@ input[type=file]{display:none}
     try { return s.toLocaleLowerCase('tr'); } catch(e) { return s.toLowerCase(); }
   }
 
+  // Arama index'i ve sorgu için: Türkçe dotless ı/dotted i tutarsızlığını
+  // katla (klavye/otomatik düzeltme "Yılmaz" yerine "Yilmaz" yazdırabiliyor —
+  // trLower ikisini de AYNI karaktere çevirmiyor çünkü ikisi de zaten küçük
+  // harf, sadece büyük harften küçülme sırasında İ/I ayrışıyor). Bu yüzden
+  // hem kayıt yazılırken hem arama sorgusunda aynı katlama uygulanmalı.
+  function foldTr(s){
+    return trLower(s).replace(/ı/g, 'i');
+  }
+
   function updateCount(){
     els.countLabel.textContent = memRecords.length.toLocaleString('tr') + ' personel';
   }
@@ -437,7 +446,7 @@ input[type=file]{display:none}
         return;
       }
       var cells = splitCsvLine(line, delim);
-      var joined = trLower(cells.join(' ␟ '));
+      var joined = foldTr(cells.join(' ␟ '));
       var rec = { c: cells, s: joined };
       pendingBatch.push(rec);
       totalParsed++;
@@ -575,7 +584,7 @@ input[type=file]{display:none}
       var newCells = inputs.map(function(inp){ return inp.value.trim(); });
       var oldCells = rec.c;
       rec.c = newCells;
-      rec.s = trLower(newCells.join(' ␟ '));
+      rec.s = foldTr(newCells.join(' ␟ '));
       idbPutRecord(rec).then(function(){
         var vals = [cols.tc >= 0 ? rec.c[cols.tc] : '', displayName(rec), cols.phone >= 0 ? rec.c[cols.phone] : ''];
         Array.prototype.forEach.call(tr.children, function(tdEl, i){ tdEl.textContent = vals[i] || '-'; });
@@ -706,7 +715,7 @@ input[type=file]{display:none}
     var raw = els.q.value.trim();
     els.results.innerHTML = '';
     if (!raw) return;
-    var query = trLower(raw);
+    var query = foldTr(raw);
     var digits = raw.replace(/\s+/g, '');
     var isDigitQuery = /^\d+$/.test(digits);
 
@@ -776,7 +785,7 @@ input[type=file]{display:none}
     saveBtn.addEventListener('click', function(){
       var cells = inputs.map(function(inp){ return inp.value.trim(); });
       if (!cells.some(Boolean)) { setMsg('En az bir alan dolu olmalı.', 'err'); return; }
-      var rec = { c: cells, s: trLower(cells.join(' ␟ ')) };
+      var rec = { c: cells, s: foldTr(cells.join(' ␟ ')) };
       idbAddBatch([rec]).then(function(){
         memRecords.push(rec);
         updateCount();
@@ -835,35 +844,51 @@ input[type=file]{display:none}
     });
   }
 
-  var STOPWORDS = { 'TC': 1, 'KART': 1, 'NO': 1, 'KİMLİK': 1, 'PERSONEL': 1, 'ADI': 1, 'SOYADI': 1,
-    'AK': 1, 'PARTİ': 1, 'VE': 1, 'ÜYE': 1, 'KARTI': 1, 'ÇALIŞAN': 1, 'ŞİRKET': 1 };
-
+  // Karttaki "AK PARTİ", "PERSONEL KARTI" gibi diğer baskı metninin aramada
+  // bir anlamı yok — sadece TC/kart no (öncelik: 11 hane) ve "Adı"/"Soyadı"
+  // etiketlerinden birleştirilen tam ad soyad önemli.
   function extractCandidates(text){
+    var lines = text.split(/\r?\n/).map(function(l){ return l.trim(); }).filter(Boolean);
+
     var numbers = Array.from(new Set((text.match(/\d{4,}/g) || [])));
-    var words = Array.from(new Set((text.match(/[A-Za-zÇĞİÖŞÜçğıöşü]{2,}/g) || [])))
-      .map(function(w){ return w.toUpperCase(); })
-      .filter(function(w){ return !STOPWORDS[w]; });
-    return { numbers: numbers, words: words };
+    var elevenDigit = numbers.find(function(n){ return n.length === 11; });
+    var number = elevenDigit || numbers.sort(function(a, b){ return b.length - a.length; })[0] || null;
+
+    var adi = null, soyadi = null;
+    lines.forEach(function(line){
+      var m;
+      if (!soyadi && (m = line.match(/\bSOYAD[Iİıi]\s*[:\-]?\s*(.+)$/i))) { soyadi = m[1].trim(); return; }
+      if (!adi && (m = line.match(/\bAD[Iİıi]\s*[:\-]?\s*(.+)$/i))) { adi = m[1].trim(); }
+    });
+    var name = [adi, soyadi].filter(Boolean).join(' ').replace(/\s+/g, ' ').trim() || null;
+
+    return { number: number, name: name };
   }
 
-  function searchByCandidates(numbers, words){
+  function searchByCandidates(number, name){
     var matches = [];
+    var nameFold = name ? foldTr(name) : null;
     for (var i = 0; i < memRecords.length; i++) {
       var rec = memRecords[i];
       var score = 0;
-      for (var n = 0; n < numbers.length; n++) {
-        var digits = numbers[n];
+      if (number) {
         for (var j = 0; j < rec.c.length; j++) {
-          if (rec.c[j].replace(/\s+/g, '') === digits) { score += 5; break; }
+          if (rec.c[j].replace(/\s+/g, '') === number) { score += 10; break; }
         }
       }
-      for (var w = 0; w < words.length; w++) {
-        if (rec.s.indexOf(trLower(words[w])) !== -1) score += 1;
-      }
+      if (nameFold && rec.s.indexOf(nameFold) !== -1) score += 5;
       if (score > 0) matches.push({ rec: rec, score: score });
     }
     matches.sort(function(a, b){ return b.score - a.score; });
     return matches.map(function(m){ return m.rec; });
+  }
+
+  function clearScanAndSearch(){
+    els.scanWrap.innerHTML = '';
+    els.q.value = '';
+    els.results.innerHTML = '';
+    setMsg('');
+    searchState = { pages: [], pageIndex: 0, total: 0 };
   }
 
   function runCardScan(file){
@@ -893,14 +918,21 @@ input[type=file]{display:none}
         textBox.textContent = 'Okunan metin:\n' + (text.trim() || '(okunamadı)');
         els.scanWrap.appendChild(textBox);
 
-        if (!cand.numbers.length && !cand.words.length) {
-          setMsg('Karttan okunabilir bir şey bulunamadı.', 'err');
+        var clearBtn = document.createElement('button');
+        clearBtn.className = 'btn ghost';
+        clearBtn.style.marginTop = '8px';
+        clearBtn.textContent = 'Temizle';
+        clearBtn.addEventListener('click', clearScanAndSearch);
+        els.scanWrap.appendChild(clearBtn);
+
+        if (!cand.number && !cand.name) {
+          setMsg('Karttan TC/kart no veya ad soyad okunamadı.', 'err');
           return;
         }
 
         var chips = document.createElement('div');
         chips.className = 'chips';
-        cand.numbers.concat(cand.words.slice(0, 6)).forEach(function(tok){
+        [cand.number, cand.name].filter(Boolean).forEach(function(tok){
           var chip = document.createElement('button');
           chip.className = 'chip'; chip.textContent = tok;
           chip.addEventListener('click', function(){ els.q.value = tok; doSearch(); });
@@ -908,7 +940,7 @@ input[type=file]{display:none}
         });
         els.scanWrap.appendChild(chips);
 
-        var found = searchByCandidates(cand.numbers, cand.words);
+        var found = searchByCandidates(cand.number, cand.name);
         if (found.length) {
           setMsg('Kart bilgileriyle ' + found.length.toLocaleString('tr') + ' eşleşme bulundu.', 'ok');
           showMatches(found);
