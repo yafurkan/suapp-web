@@ -50,6 +50,14 @@ html,body{margin:0;background:var(--bg);color:var(--text-1);
   cursor:pointer;text-align:center;border:1.5px solid var(--accent);background:transparent;color:var(--accent)}
 .btn:disabled{opacity:.4;cursor:not-allowed}
 .btn:active:not(:disabled){background:rgba(201,160,74,.12)}
+.btn.ghost{border-color:var(--line);color:var(--text-2);font-weight:600}
+.btn.ghost:active:not(:disabled){background:rgba(255,255,255,.04)}
+.scan-wrap{margin-top:10px}
+.scan-text{background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:10px 12px;
+  font-size:12.5px;color:var(--text-2);white-space:pre-wrap;word-break:break-word;margin-top:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.chip{padding:7px 12px;border-radius:999px;border:1px solid var(--accent);color:var(--accent);
+  background:rgba(201,160,74,.08);font:inherit;font-size:13px;cursor:pointer}
 .hr{border:none;border-top:1px solid var(--line);margin:16px 0}
 .row-between{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:13.5px}
 .upload-link{display:inline-flex;align-items:center;gap:8px;color:var(--accent);background:none;border:none;
@@ -112,6 +120,12 @@ input[type=file]{display:none}
       <input id="q" type="search" inputmode="search" placeholder="TC, ad soyad veya telefon" autocomplete="off">
     </div>
     <button class="btn" id="searchBtn">Sorgula</button>
+    <button class="btn ghost" id="scanBtn" style="margin-top:8px">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-2px;margin-right:6px"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+      Kart tara (foto)
+    </button>
+    <input type="file" id="cardInput" accept="image/*" capture="environment">
+    <div class="scan-wrap" id="scanWrap"></div>
 
     <hr class="hr">
     <div class="row-between">
@@ -157,6 +171,9 @@ input[type=file]{display:none}
     uploadLink: document.getElementById('uploadLink'),
     addLink: document.getElementById('addLink'),
     addForm: document.getElementById('addForm'),
+    scanBtn: document.getElementById('scanBtn'),
+    cardInput: document.getElementById('cardInput'),
+    scanWrap: document.getElementById('scanWrap'),
     fileInput: document.getElementById('fileInput'),
     countLabel: document.getElementById('countLabel'),
     progressWrap: document.getElementById('progressWrap'),
@@ -705,11 +722,14 @@ input[type=file]{display:none}
       if (hit) matches.push(rec);
     }
 
+    showMatches(matches);
+  }
+
+  function showMatches(matches){
     if (!matches.length) {
       els.results.innerHTML = '<div class="hint">Eşleşme bulunamadı.</div>';
       return;
     }
-
     var groups = groupByAddress(matches);
     searchState.pages = paginateGroups(groups);
     searchState.pageIndex = 0;
@@ -774,6 +794,142 @@ input[type=file]{display:none}
   els.addLink.addEventListener('click', function(){
     if (els.addForm.style.display === 'block') closeAddForm();
     else openAddForm();
+  });
+
+  // ---- Kart tarama (foto + OCR) ----
+  // Tesseract.js: ücretsiz, tarayıcı içinde (WASM) çalışan OCR. İlk taramada
+  // motor+dil verisi CDN'den iniyor (~10-15MB, internet gerekir); sonraki
+  // taramalarda tarayıcının kendi HTTP cache'i hızlandırır ama bu servis
+  // çalışanımızın garanti ettiği "her zaman çevrimdışı" kapsamında DEĞİL —
+  // CDN farklı origin olduğu için sw.js bunu önbelleklemiyor.
+  var TESSERACT_SRC = 'https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js';
+  var tesseractPromise = null;
+
+  function loadTesseract(){
+    if (window.Tesseract) return Promise.resolve();
+    if (tesseractPromise) return tesseractPromise;
+    tesseractPromise = new Promise(function(resolve, reject){
+      var s = document.createElement('script');
+      s.src = TESSERACT_SRC;
+      s.onload = resolve;
+      s.onerror = function(){ tesseractPromise = null; reject(new Error('OCR motoru indirilemedi (internet gerekli).')); };
+      document.head.appendChild(s);
+    });
+    return tesseractPromise;
+  }
+
+  function resizeForOcr(file, maxDim){
+    return new Promise(function(resolve, reject){
+      var img = new Image();
+      img.onload = function(){
+        var scale = Math.min(1, maxDim / Math.max(img.width, img.height));
+        var w = Math.round(img.width * scale), h = Math.round(img.height * scale);
+        var canvas = document.createElement('canvas');
+        canvas.width = w; canvas.height = h;
+        canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+        URL.revokeObjectURL(img.src);
+        resolve(canvas);
+      };
+      img.onerror = function(){ reject(new Error('Fotoğraf okunamadı.')); };
+      img.src = URL.createObjectURL(file);
+    });
+  }
+
+  var STOPWORDS = { 'TC': 1, 'KART': 1, 'NO': 1, 'KİMLİK': 1, 'PERSONEL': 1, 'ADI': 1, 'SOYADI': 1,
+    'AK': 1, 'PARTİ': 1, 'VE': 1, 'ÜYE': 1, 'KARTI': 1, 'ÇALIŞAN': 1, 'ŞİRKET': 1 };
+
+  function extractCandidates(text){
+    var numbers = Array.from(new Set((text.match(/\d{4,}/g) || [])));
+    var words = Array.from(new Set((text.match(/[A-Za-zÇĞİÖŞÜçğıöşü]{2,}/g) || [])))
+      .map(function(w){ return w.toUpperCase(); })
+      .filter(function(w){ return !STOPWORDS[w]; });
+    return { numbers: numbers, words: words };
+  }
+
+  function searchByCandidates(numbers, words){
+    var matches = [];
+    for (var i = 0; i < memRecords.length; i++) {
+      var rec = memRecords[i];
+      var score = 0;
+      for (var n = 0; n < numbers.length; n++) {
+        var digits = numbers[n];
+        for (var j = 0; j < rec.c.length; j++) {
+          if (rec.c[j].replace(/\s+/g, '') === digits) { score += 5; break; }
+        }
+      }
+      for (var w = 0; w < words.length; w++) {
+        if (rec.s.indexOf(trLower(words[w])) !== -1) score += 1;
+      }
+      if (score > 0) matches.push({ rec: rec, score: score });
+    }
+    matches.sort(function(a, b){ return b.score - a.score; });
+    return matches.map(function(m){ return m.rec; });
+  }
+
+  function runCardScan(file){
+    els.scanWrap.innerHTML = '';
+    var status = document.createElement('div');
+    status.className = 'msg';
+    status.textContent = 'OCR motoru hazırlanıyor...';
+    els.scanWrap.appendChild(status);
+    els.scanBtn.disabled = true;
+
+    loadTesseract()
+      .then(function(){
+        status.textContent = 'Fotoğraf hazırlanıyor...';
+        return resizeForOcr(file, 1600);
+      })
+      .then(function(canvas){
+        status.textContent = 'Kart okunuyor (ilk seferde dil verisi iniyor, biraz sürebilir)...';
+        return Tesseract.recognize(canvas, 'tur');
+      })
+      .then(function(result){
+        var text = result.data.text || '';
+        var cand = extractCandidates(text);
+        els.scanWrap.innerHTML = '';
+
+        var textBox = document.createElement('div');
+        textBox.className = 'scan-text';
+        textBox.textContent = 'Okunan metin:\n' + (text.trim() || '(okunamadı)');
+        els.scanWrap.appendChild(textBox);
+
+        if (!cand.numbers.length && !cand.words.length) {
+          setMsg('Karttan okunabilir bir şey bulunamadı.', 'err');
+          return;
+        }
+
+        var chips = document.createElement('div');
+        chips.className = 'chips';
+        cand.numbers.concat(cand.words.slice(0, 6)).forEach(function(tok){
+          var chip = document.createElement('button');
+          chip.className = 'chip'; chip.textContent = tok;
+          chip.addEventListener('click', function(){ els.q.value = tok; doSearch(); });
+          chips.appendChild(chip);
+        });
+        els.scanWrap.appendChild(chips);
+
+        var found = searchByCandidates(cand.numbers, cand.words);
+        if (found.length) {
+          setMsg('Kart bilgileriyle ' + found.length.toLocaleString('tr') + ' eşleşme bulundu.', 'ok');
+          showMatches(found);
+        } else {
+          setMsg('Okunan bilgilerle eşleşme bulunamadı — yukarıdaki değerlerden birine dokunup elle arayabilirsin.', 'err');
+        }
+      })
+      .catch(function(err){
+        els.scanWrap.innerHTML = '';
+        setMsg('Tarama başarısız: ' + (err && err.message ? err.message : err), 'err');
+      })
+      .then(function(){
+        els.scanBtn.disabled = false;
+      });
+  }
+
+  els.scanBtn.addEventListener('click', function(){ els.cardInput.click(); });
+  els.cardInput.addEventListener('change', function(){
+    var f = els.cardInput.files && els.cardInput.files[0];
+    els.cardInput.value = '';
+    if (f) runCardScan(f);
   });
 
   els.searchBtn.disabled = true;
