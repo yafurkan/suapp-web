@@ -446,7 +446,7 @@ input[type=file]{display:none}
         return;
       }
       var cells = splitCsvLine(line, delim);
-      var joined = foldTr(cells.join(' ␟ '));
+      var joined = foldTr(cells.join(' '));
       var rec = { c: cells, s: joined };
       pendingBatch.push(rec);
       totalParsed++;
@@ -584,7 +584,7 @@ input[type=file]{display:none}
       var newCells = inputs.map(function(inp){ return inp.value.trim(); });
       var oldCells = rec.c;
       rec.c = newCells;
-      rec.s = foldTr(newCells.join(' ␟ '));
+      rec.s = foldTr(newCells.join(' '));
       idbPutRecord(rec).then(function(){
         var vals = [cols.tc >= 0 ? rec.c[cols.tc] : '', displayName(rec), cols.phone >= 0 ? rec.c[cols.phone] : ''];
         Array.prototype.forEach.call(tr.children, function(tdEl, i){ tdEl.textContent = vals[i] || '-'; });
@@ -785,7 +785,7 @@ input[type=file]{display:none}
     saveBtn.addEventListener('click', function(){
       var cells = inputs.map(function(inp){ return inp.value.trim(); });
       if (!cells.some(Boolean)) { setMsg('En az bir alan dolu olmalı.', 'err'); return; }
-      var rec = { c: cells, s: foldTr(cells.join(' ␟ ')) };
+      var rec = { c: cells, s: foldTr(cells.join(' ')) };
       idbAddBatch([rec]).then(function(){
         memRecords.push(rec);
         updateCount();
