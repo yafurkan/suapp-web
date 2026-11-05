@@ -859,12 +859,40 @@ input[type=file]{display:none}
     var elevenDigit = numbers.find(function(n){ return n.length === 11; });
     var number = tcNumber || elevenDigit || numbers.sort(function(a, b){ return b.length - a.length; })[0] || null;
 
-    var adi = null, soyadi = null;
-    lines.forEach(function(line){
-      var m;
-      if (!soyadi && (m = line.match(/\bSOYAD[Iİıi]\s*[:\-]?\s*(.+)$/i))) { soyadi = m[1].trim(); return; }
-      if (!adi && (m = line.match(/\bAD[Iİıi]\s*[:\-]?\s*(.+)$/i))) { adi = m[1].trim(); }
-    });
+    // Kimlik kartında etiket ("Soyadı/Surname") bir satırda, büyük siyah
+    // değer ("FINDIKLI") ayrı, ALT satırda duruyor. Aynı satırda etiketten
+    // sonra anlamlı bir şey yoksa (sadece "/Surname" İngilizce karşılığı
+    // kalmışsa), bir sonraki dolu satırı değer kabul et.
+    // Sondaki \b bilerek yok: "ı" (Türkçe dotless) bir sonraki "/" veya
+    // boşlukla \w/non-\w sınırı oluşturmuyor (JS \w Unicode farkında değil),
+    // o yüzden "Soyadı/" gibi bir dizide \b hiç tetiklenmiyordu.
+    var SOYADI_LABEL = /\bSOYAD[Iİıi]/i;
+    var ADI_LABEL = /\bAD[Iİıi]/i;
+    // Noktalama/parantez OCR'da ne şekilde çıkarsa çıksın ("Given Name(s)",
+    // "Given Names", "/ Surname" vb.) tüm harf dışı karakterleri atıp
+    // karşılaştır — sadece bu İngilizce etiket kalıntısı mı diye bak.
+    function isEnglishColabel(s){
+      var letters = s.toUpperCase().replace(/[^A-Z]/g, '');
+      return letters === 'SURNAME' || letters === 'GIVENNAME' || letters === 'GIVENNAMES';
+    }
+
+    function labelValue(labelRe){
+      for (var i = 0; i < lines.length; i++) {
+        var m = labelRe.exec(lines[i]);
+        if (!m) continue;
+        var rest = lines[i].slice(m.index + m[0].length).replace(/^[\s:\-\/]+/, '').trim();
+        if (rest && !isEnglishColabel(rest)) return rest;
+        for (var j = i + 1; j < lines.length; j++) {
+          if (!lines[j]) continue;
+          if (SOYADI_LABEL.test(lines[j]) || ADI_LABEL.test(lines[j])) break;
+          return lines[j];
+        }
+      }
+      return null;
+    }
+
+    var soyadi = labelValue(SOYADI_LABEL);
+    var adi = labelValue(ADI_LABEL);
     var name = [adi, soyadi].filter(Boolean).join(' ').replace(/\s+/g, ' ').trim() || null;
 
     return { number: number, name: name };
