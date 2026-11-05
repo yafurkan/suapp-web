@@ -850,9 +850,14 @@ input[type=file]{display:none}
   function extractCandidates(text){
     var lines = text.split(/\r?\n/).map(function(l){ return l.trim(); }).filter(Boolean);
 
+    // Önce "TC" etiketli satırdaki sayıyı tercih et (kartta başka bir 11 haneli
+    // sayı — ör. bir reklam/slogan numarası — olsa bile karışmasın).
+    var tcLine = lines.find(function(line){ return /\bT\.?C\b/i.test(line) && /\d{4,}/.test(line); });
+    var tcNumber = tcLine ? (tcLine.match(/\d{4,}/) || [])[0] : null;
+
     var numbers = Array.from(new Set((text.match(/\d{4,}/g) || [])));
     var elevenDigit = numbers.find(function(n){ return n.length === 11; });
-    var number = elevenDigit || numbers.sort(function(a, b){ return b.length - a.length; })[0] || null;
+    var number = tcNumber || elevenDigit || numbers.sort(function(a, b){ return b.length - a.length; })[0] || null;
 
     var adi = null, soyadi = null;
     lines.forEach(function(line){
@@ -913,14 +918,42 @@ input[type=file]{display:none}
         var cand = extractCandidates(text);
         els.scanWrap.innerHTML = '';
 
+        if (cand.number || cand.name) {
+          var summary = document.createElement('dl');
+          summary.className = 'detail-grid';
+          if (cand.name) {
+            var dt1 = document.createElement('dt'); dt1.textContent = 'Ad Soyad';
+            var dd1 = document.createElement('dd'); dd1.textContent = cand.name;
+            summary.appendChild(dt1); summary.appendChild(dd1);
+          }
+          if (cand.number) {
+            var dt2 = document.createElement('dt'); dt2.textContent = 'TC';
+            var dd2 = document.createElement('dd'); dd2.textContent = cand.number;
+            summary.appendChild(dt2); summary.appendChild(dd2);
+          }
+          els.scanWrap.appendChild(summary);
+        }
+
+        var toggleRaw = document.createElement('button');
+        toggleRaw.className = 'upload-link';
+        toggleRaw.style.marginTop = '10px';
+        toggleRaw.style.fontSize = '12px';
+        toggleRaw.textContent = 'Ham okunan metni göster';
         var textBox = document.createElement('div');
         textBox.className = 'scan-text';
-        textBox.textContent = 'Okunan metin:\n' + (text.trim() || '(okunamadı)');
+        textBox.style.display = 'none';
+        textBox.textContent = text.trim() || '(okunamadı)';
+        toggleRaw.addEventListener('click', function(){
+          var showing = textBox.style.display !== 'none';
+          textBox.style.display = showing ? 'none' : 'block';
+          toggleRaw.textContent = showing ? 'Ham okunan metni göster' : 'Ham okunan metni gizle';
+        });
+        els.scanWrap.appendChild(toggleRaw);
         els.scanWrap.appendChild(textBox);
 
         var clearBtn = document.createElement('button');
         clearBtn.className = 'btn ghost';
-        clearBtn.style.marginTop = '8px';
+        clearBtn.style.marginTop = '10px';
         clearBtn.textContent = 'Temizle';
         clearBtn.addEventListener('click', clearScanAndSearch);
         els.scanWrap.appendChild(clearBtn);
