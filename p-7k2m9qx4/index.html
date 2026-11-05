@@ -77,10 +77,23 @@ table.rtable tbody tr:active td{background:rgba(201,160,74,.08)}
 tr.group-row td{background:rgba(201,160,74,.1) !important;color:var(--accent);font-size:12px;
   font-weight:600;padding:8px 14px;cursor:default;border-left:2px solid var(--accent)}
 tr.grouped td{border-left:2px solid var(--line)}
-.detail-grid{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:13px}
+.detail-grid{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:13px;align-items:center}
 .detail-grid dt{color:var(--text-2);white-space:nowrap}
 .detail-grid dd{margin:0;color:var(--text-1);word-break:break-word}
+.detail-input{width:100%;padding:7px 9px;border:1px solid var(--line);border-radius:7px;
+  background:#0e0f13;color:var(--text-1);font:inherit;font-size:13px}
+.detail-actions{display:flex;gap:8px;margin-top:14px}
+.detail-btn{flex:1;padding:9px 10px;border-radius:8px;border:1px solid var(--line);background:none;
+  color:var(--text-2);font:inherit;font-size:13px;font-weight:600;cursor:pointer}
+.detail-btn.accent{border-color:var(--accent);color:var(--accent)}
+.detail-btn.danger{border-color:var(--bad);color:var(--bad)}
 .hint{color:var(--text-3);font-size:13px;text-align:center;padding:18px 0}
+.pager{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 14px;
+  border-top:1px solid var(--line)}
+.pager-btn{background:none;border:1px solid var(--line);color:var(--accent);border-radius:8px;
+  padding:8px 12px;font:inherit;font-size:13px;cursor:pointer}
+.pager-btn:disabled{opacity:.35;cursor:not-allowed}
+.pager-label{color:var(--text-2);font-size:12px;text-align:center;flex:1}
 input[type=file]{display:none}
 </style>
 </head>
@@ -110,6 +123,12 @@ input[type=file]{display:none}
     </div>
     <input type="file" id="fileInput" accept=".csv,text/csv,.txt">
 
+    <button class="upload-link" id="addLink" style="margin-top:12px">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v8M8 12h8"></path></svg>
+      Yeni kişi ekle
+    </button>
+    <div id="addForm" style="display:none;margin-top:12px"></div>
+
     <div class="progress-wrap" id="progressWrap">
       <div class="progress-bar"><div id="progressBar"></div></div>
       <div class="progress-label" id="progressLabel">İşleniyor...</div>
@@ -136,6 +155,8 @@ input[type=file]{display:none}
     q: document.getElementById('q'),
     searchBtn: document.getElementById('searchBtn'),
     uploadLink: document.getElementById('uploadLink'),
+    addLink: document.getElementById('addLink'),
+    addForm: document.getElementById('addForm'),
     fileInput: document.getElementById('fileInput'),
     countLabel: document.getElementById('countLabel'),
     progressWrap: document.getElementById('progressWrap'),
@@ -284,18 +305,49 @@ input[type=file]{display:none}
     return new Promise(function(resolve, reject){
       var tx = db.transaction(STORE, 'readwrite');
       var store = tx.objectStore(STORE);
-      for (var i = 0; i < rows.length; i++) store.add(rows[i]);
+      rows.forEach(function(row){
+        var req = store.add(row);
+        req.onsuccess = function(){ row._key = req.result; };
+      });
       tx.oncomplete = resolve;
       tx.onerror = function(){ reject(tx.error); };
+    });
+  }
+
+  function idbPutRecord(rec){
+    return new Promise(function(resolve, reject){
+      var tx = db.transaction(STORE, 'readwrite');
+      var plain = { c: rec.c, s: rec.s };
+      var req = tx.objectStore(STORE).put(plain, rec._key);
+      req.onsuccess = resolve;
+      req.onerror = function(){ reject(req.error); };
+    });
+  }
+
+  function idbDeleteRecord(key){
+    return new Promise(function(resolve, reject){
+      var tx = db.transaction(STORE, 'readwrite');
+      var req = tx.objectStore(STORE).delete(key);
+      req.onsuccess = resolve;
+      req.onerror = function(){ reject(req.error); };
     });
   }
 
   function idbLoadAll(){
     return new Promise(function(resolve, reject){
       var tx = db.transaction(STORE, 'readonly');
-      var req = tx.objectStore(STORE).getAll();
-      req.onsuccess = function(){ resolve(req.result); };
-      req.onerror = function(){ reject(req.error); };
+      var store = tx.objectStore(STORE);
+      var valReq = store.getAll();
+      var keyReq = store.getAllKeys();
+      var vals, keys;
+      valReq.onsuccess = function(){ vals = valReq.result; done(); };
+      keyReq.onsuccess = function(){ keys = keyReq.result; done(); };
+      valReq.onerror = keyReq.onerror = function(e){ reject(e.target.error); };
+      function done(){
+        if (!vals || !keys) return;
+        vals.forEach(function(v, i){ v._key = keys[i]; });
+        resolve(vals);
+      }
     });
   }
 
@@ -442,6 +494,88 @@ input[type=file]{display:none}
     els.searchLabel.textContent = 'TC, AD SOYAD VEYA TELEFON';
   }
 
+  function fieldLabels(rec){
+    return headers.length ? headers : rec.c.map(function(_, i){ return 'Alan ' + (i + 1); });
+  }
+
+  function renderDetailRead(td, tr, rec){
+    td.innerHTML = '';
+    var dl = document.createElement('dl');
+    dl.className = 'detail-grid';
+    fieldLabels(rec).forEach(function(h, i){
+      var val = rec.c[i];
+      if (!val) return;
+      var dt = document.createElement('dt'); dt.textContent = h;
+      var dd = document.createElement('dd'); dd.textContent = val;
+      dl.appendChild(dt); dl.appendChild(dd);
+    });
+    td.appendChild(dl);
+
+    var actions = document.createElement('div');
+    actions.className = 'detail-actions';
+    var editBtn = document.createElement('button');
+    editBtn.className = 'detail-btn'; editBtn.textContent = 'Düzenle';
+    editBtn.addEventListener('click', function(){ renderDetailEdit(td, tr, rec); });
+    var delBtn = document.createElement('button');
+    delBtn.className = 'detail-btn danger'; delBtn.textContent = 'Sil';
+    delBtn.addEventListener('click', function(){
+      if (!confirm('Bu kaydı silmek istediğine emin misin?')) return;
+      idbDeleteRecord(rec._key).then(function(){
+        var idx = memRecords.indexOf(rec);
+        if (idx !== -1) memRecords.splice(idx, 1);
+        updateCount();
+        var detailTr = tr.nextElementSibling;
+        if (detailTr && detailTr.classList.contains('detail-row')) detailTr.remove();
+        tr.remove();
+      }).catch(function(err){ alert('Silinemedi: ' + (err && err.message ? err.message : err)); });
+    });
+    actions.appendChild(editBtn);
+    actions.appendChild(delBtn);
+    td.appendChild(actions);
+  }
+
+  function renderDetailEdit(td, tr, rec){
+    td.innerHTML = '';
+    var form = document.createElement('div');
+    form.className = 'detail-grid edit';
+    var inputs = [];
+    fieldLabels(rec).forEach(function(h, i){
+      var dt = document.createElement('dt'); dt.textContent = h;
+      var input = document.createElement('input');
+      input.className = 'detail-input';
+      input.value = rec.c[i] || '';
+      inputs[i] = input;
+      var dd = document.createElement('dd'); dd.appendChild(input);
+      form.appendChild(dt); form.appendChild(dd);
+    });
+    td.appendChild(form);
+
+    var actions = document.createElement('div');
+    actions.className = 'detail-actions';
+    var saveBtn = document.createElement('button');
+    saveBtn.className = 'detail-btn accent'; saveBtn.textContent = 'Kaydet';
+    saveBtn.addEventListener('click', function(){
+      var newCells = inputs.map(function(inp){ return inp.value.trim(); });
+      var oldCells = rec.c;
+      rec.c = newCells;
+      rec.s = trLower(newCells.join(' ␟ '));
+      idbPutRecord(rec).then(function(){
+        var vals = [cols.tc >= 0 ? rec.c[cols.tc] : '', displayName(rec), cols.phone >= 0 ? rec.c[cols.phone] : ''];
+        Array.prototype.forEach.call(tr.children, function(tdEl, i){ tdEl.textContent = vals[i] || '-'; });
+        renderDetailRead(td, tr, rec);
+      }).catch(function(err){
+        rec.c = oldCells;
+        alert('Kaydedilemedi: ' + (err && err.message ? err.message : err));
+      });
+    });
+    var cancelBtn = document.createElement('button');
+    cancelBtn.className = 'detail-btn'; cancelBtn.textContent = 'İptal';
+    cancelBtn.addEventListener('click', function(){ renderDetailRead(td, tr, rec); });
+    actions.appendChild(saveBtn);
+    actions.appendChild(cancelBtn);
+    td.appendChild(actions);
+  }
+
   function toggleDetail(tr, rec){
     var next = tr.nextElementSibling;
     if (next && next.classList.contains('detail-row')) {
@@ -455,21 +589,102 @@ input[type=file]{display:none}
     detailTr.className = 'detail-row';
     var td = document.createElement('td');
     td.colSpan = 3;
-    var dl = document.createElement('dl');
-    dl.className = 'detail-grid';
-    (headers.length ? headers : rec.c.map(function(_, i){ return 'Alan ' + (i + 1); })).forEach(function(h, i){
-      var val = rec.c[i];
-      if (!val) return;
-      var dt = document.createElement('dt'); dt.textContent = h;
-      var dd = document.createElement('dd'); dd.textContent = val;
-      dl.appendChild(dt); dl.appendChild(dd);
-    });
-    td.appendChild(dl);
+    renderDetailRead(td, tr, rec);
     detailTr.appendChild(td);
     tr.parentNode.insertBefore(detailTr, tr.nextSibling);
   }
 
-  // ---- Search ----
+  // ---- Search (sayfalanmış) ----
+  var searchState = { pages: [], pageIndex: 0, total: 0 };
+
+  // Grupları MAX_RESULTS kişilik sayfalara böler; bir "aynı evde" grubu
+  // sayfa sınırında bölünmez (yarım hane görünmesin diye).
+  function paginateGroups(groups){
+    var pages = [];
+    var cur = [];
+    var curCount = 0;
+    groups.forEach(function(group){
+      if (curCount > 0 && curCount + group.members.length > MAX_RESULTS) {
+        pages.push(cur);
+        cur = [];
+        curCount = 0;
+      }
+      cur.push(group);
+      curCount += group.members.length;
+    });
+    if (cur.length) pages.push(cur);
+    return pages;
+  }
+
+  function renderResultsPage(){
+    els.results.innerHTML = '';
+    var pageGroups = searchState.pages[searchState.pageIndex] || [];
+    if (!pageGroups.length) { els.results.innerHTML = '<div class="hint">Eşleşme bulunamadı.</div>'; return; }
+
+    var wrap = document.createElement('div');
+    wrap.className = 'table-scroll';
+    var table = document.createElement('table');
+    table.className = 'rtable';
+    var theadRow = document.createElement('tr');
+    ['TC Kimlik No', 'Ad Soyad', 'Telefon'].forEach(function(h){
+      var th = document.createElement('th'); th.textContent = h; theadRow.appendChild(th);
+    });
+    var thead = document.createElement('thead');
+    thead.appendChild(theadRow);
+    table.appendChild(thead);
+
+    var tbody = document.createElement('tbody');
+    pageGroups.forEach(function(group){
+      if (group.members.length > 1) {
+        var hdr = document.createElement('tr');
+        hdr.className = 'group-row';
+        var hdrTd = document.createElement('td');
+        hdrTd.colSpan = 3;
+        hdrTd.textContent = 'Aynı evde ' + group.members.length + ' kişi · ' + addressLabel(group.members[0]);
+        hdr.appendChild(hdrTd);
+        tbody.appendChild(hdr);
+      }
+      group.members.forEach(function(rec){
+        var tr = document.createElement('tr');
+        if (group.members.length > 1) tr.className = 'grouped';
+        [cols.tc >= 0 ? rec.c[cols.tc] : '', displayName(rec), cols.phone >= 0 ? rec.c[cols.phone] : '']
+          .forEach(function(val){
+            var td = document.createElement('td'); td.textContent = val || '-'; tr.appendChild(td);
+          });
+        tr.addEventListener('click', function(){ toggleDetail(tr, rec); });
+        tbody.appendChild(tr);
+      });
+    });
+    table.appendChild(tbody);
+    wrap.appendChild(table);
+    els.results.appendChild(wrap);
+
+    var totalPages = searchState.pages.length;
+    if (totalPages > 1) {
+      var pager = document.createElement('div');
+      pager.className = 'pager';
+      var prev = document.createElement('button');
+      prev.className = 'pager-btn'; prev.textContent = '‹ Önceki';
+      prev.disabled = searchState.pageIndex === 0;
+      prev.addEventListener('click', function(){ searchState.pageIndex--; renderResultsPage(); });
+      var label = document.createElement('span');
+      label.className = 'pager-label';
+      label.textContent = 'Sayfa ' + (searchState.pageIndex + 1) + ' / ' + totalPages +
+        ' · ' + searchState.total.toLocaleString('tr') + ' eşleşme';
+      var next = document.createElement('button');
+      next.className = 'pager-btn'; next.textContent = 'Sonraki ›';
+      next.disabled = searchState.pageIndex >= totalPages - 1;
+      next.addEventListener('click', function(){ searchState.pageIndex++; renderResultsPage(); });
+      pager.appendChild(prev); pager.appendChild(label); pager.appendChild(next);
+      els.results.appendChild(pager);
+    } else {
+      var hint = document.createElement('div');
+      hint.className = 'hint';
+      hint.textContent = searchState.total.toLocaleString('tr') + ' eşleşme';
+      els.results.appendChild(hint);
+    }
+  }
+
   function doSearch(){
     var raw = els.q.value.trim();
     els.results.innerHTML = '';
@@ -479,7 +694,7 @@ input[type=file]{display:none}
     var isDigitQuery = /^\d+$/.test(digits);
 
     var matches = [];
-    for (var i = 0; i < memRecords.length && matches.length < 5000; i++) {
+    for (var i = 0; i < memRecords.length && matches.length < 20000; i++) {
       var rec = memRecords[i];
       var hit = rec.s.indexOf(query) !== -1;
       if (!hit && isDigitQuery) {
@@ -496,54 +711,10 @@ input[type=file]{display:none}
     }
 
     var groups = groupByAddress(matches);
-    var wrap = document.createElement('div');
-    wrap.className = 'table-scroll';
-    var table = document.createElement('table');
-    table.className = 'rtable';
-    var theadRow = document.createElement('tr');
-    ['TC Kimlik No', 'Ad Soyad', 'Telefon'].forEach(function(h){
-      var th = document.createElement('th'); th.textContent = h; theadRow.appendChild(th);
-    });
-    var thead = document.createElement('thead');
-    thead.appendChild(theadRow);
-    table.appendChild(thead);
-
-    var tbody = document.createElement('tbody');
-    var shownCount = 0;
-    for (var g = 0; g < groups.length && shownCount < MAX_RESULTS; g++) {
-      var group = groups[g];
-      if (group.members.length > 1) {
-        var hdr = document.createElement('tr');
-        hdr.className = 'group-row';
-        var hdrTd = document.createElement('td');
-        hdrTd.colSpan = 3;
-        hdrTd.textContent = 'Aynı evde ' + group.members.length + ' kişi · ' + addressLabel(group.members[0]);
-        hdr.appendChild(hdrTd);
-        tbody.appendChild(hdr);
-      }
-      for (var m = 0; m < group.members.length && shownCount < MAX_RESULTS; m++) {
-        var rec = group.members[m];
-        var tr = document.createElement('tr');
-        if (group.members.length > 1) tr.className = 'grouped';
-        [cols.tc >= 0 ? rec.c[cols.tc] : '', displayName(rec), cols.phone >= 0 ? rec.c[cols.phone] : '']
-          .forEach(function(val){
-            var td = document.createElement('td'); td.textContent = val || '-'; tr.appendChild(td);
-          });
-        tr.addEventListener('click', function(rec){ return function(){ toggleDetail(tr, rec); }; }(rec));
-        tbody.appendChild(tr);
-        shownCount++;
-      }
-    }
-    table.appendChild(tbody);
-    wrap.appendChild(table);
-    els.results.appendChild(wrap);
-
-    if (matches.length > MAX_RESULTS) {
-      var more = document.createElement('div');
-      more.className = 'hint';
-      more.textContent = 'İlk ' + MAX_RESULTS + ' / ' + matches.length.toLocaleString('tr') + ' eşleşme';
-      els.results.appendChild(more);
-    }
+    searchState.pages = paginateGroups(groups);
+    searchState.pageIndex = 0;
+    searchState.total = matches.length;
+    renderResultsPage();
   }
 
   els.searchBtn.addEventListener('click', doSearch);
@@ -553,6 +724,56 @@ input[type=file]{display:none}
     var f = els.fileInput.files && els.fileInput.files[0];
     els.fileInput.value = '';
     if (f) startImport(f);
+  });
+
+  function closeAddForm(){
+    els.addForm.style.display = 'none';
+    els.addForm.innerHTML = '';
+  }
+
+  function openAddForm(){
+    if (!headers.length) {
+      setMsg('Önce bir CSV/Excel yükleyin — sütunlar ondan alınıyor.', 'err');
+      return;
+    }
+    els.addForm.innerHTML = '';
+    els.addForm.style.display = 'block';
+    var dl = document.createElement('dl');
+    dl.className = 'detail-grid edit';
+    var inputs = headers.map(function(h){
+      var dt = document.createElement('dt'); dt.textContent = h;
+      var input = document.createElement('input'); input.className = 'detail-input';
+      var dd = document.createElement('dd'); dd.appendChild(input);
+      dl.appendChild(dt); dl.appendChild(dd);
+      return input;
+    });
+    els.addForm.appendChild(dl);
+
+    var actions = document.createElement('div');
+    actions.className = 'detail-actions';
+    var saveBtn = document.createElement('button');
+    saveBtn.className = 'detail-btn accent'; saveBtn.textContent = 'Kaydet';
+    saveBtn.addEventListener('click', function(){
+      var cells = inputs.map(function(inp){ return inp.value.trim(); });
+      if (!cells.some(Boolean)) { setMsg('En az bir alan dolu olmalı.', 'err'); return; }
+      var rec = { c: cells, s: trLower(cells.join(' ␟ ')) };
+      idbAddBatch([rec]).then(function(){
+        memRecords.push(rec);
+        updateCount();
+        closeAddForm();
+        setMsg('Kişi eklendi.', 'ok');
+      }).catch(function(err){ setMsg('Eklenemedi: ' + (err && err.message ? err.message : err), 'err'); });
+    });
+    var cancelBtn = document.createElement('button');
+    cancelBtn.className = 'detail-btn'; cancelBtn.textContent = 'İptal';
+    cancelBtn.addEventListener('click', closeAddForm);
+    actions.appendChild(saveBtn); actions.appendChild(cancelBtn);
+    els.addForm.appendChild(actions);
+  }
+
+  els.addLink.addEventListener('click', function(){
+    if (els.addForm.style.display === 'block') closeAddForm();
+    else openAddForm();
   });
 
   els.searchBtn.disabled = true;
