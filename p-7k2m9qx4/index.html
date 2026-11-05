@@ -74,6 +74,9 @@ table.rtable tbody tr:nth-child(even) td{background:rgba(255,255,255,.015)}
 table.rtable tbody tr{cursor:pointer}
 table.rtable tbody tr:active td{background:rgba(201,160,74,.08)}
 .detail-row td{white-space:normal;background:var(--surface-2) !important;cursor:default;padding:12px 14px}
+tr.group-row td{background:rgba(201,160,74,.1) !important;color:var(--accent);font-size:12px;
+  font-weight:600;padding:8px 14px;cursor:default;border-left:2px solid var(--accent)}
+tr.grouped td{border-left:2px solid var(--line)}
 .detail-grid{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:13px}
 .detail-grid dt{color:var(--text-2);white-space:nowrap}
 .detail-grid dd{margin:0;color:var(--text-1);word-break:break-word}
@@ -154,7 +157,11 @@ input[type=file]{display:none}
     tc: ['tc', 'tckn', 'tcno', 'tckimlikno', 'tckimliknumarasi', 'kimlikno'],
     name: ['adsoyad', 'adisoyadi', 'adsoyadi', 'isim', 'ad', 'adi', 'personel', 'personeladi'],
     surname: ['soyad', 'soyadi', 'soyisim'],
-    phone: ['telefon', 'tel', 'tlf', 'gsm', 'ceptelefonu', 'cepno', 'cep', 'telefonno']
+    phone: ['telefon', 'tel', 'tlf', 'gsm', 'ceptelefonu', 'cepno', 'cep', 'telefonno'],
+    mahalle: ['adresmuhtarlikadi', 'mahalle', 'muhtarlikadi', 'mahalleadi'],
+    sokak: ['adrescaddeskadi', 'cadde', 'sokak', 'caddesokakadi', 'caddesk', 'caddeskadi'],
+    kapino: ['kapino', 'kapinumarasi', 'kapi'],
+    daireno: ['daireno', 'dairenumarasi', 'daire']
   };
 
   function normalizeHeader(h){
@@ -164,7 +171,7 @@ input[type=file]{display:none}
   }
 
   function detectColumns(hdrs){
-    var out = { tc: -1, name: -1, surname: -1, phone: -1 };
+    var out = { tc: -1, name: -1, surname: -1, phone: -1, mahalle: -1, sokak: -1, kapino: -1, daireno: -1 };
     hdrs.forEach(function(h, i){
       var n = normalizeHeader(h);
       Object.keys(ALIASES).forEach(function(key){
@@ -182,6 +189,41 @@ input[type=file]{display:none}
     var first = cols.name >= 0 ? (rec.c[cols.name] || '') : '';
     var last = cols.surname >= 0 ? (rec.c[cols.surname] || '') : '';
     return (first + ' ' + last).trim();
+  }
+
+  // Aynı mahalle + sokak + kapı no + daire no → aynı ev. Daire boşsa (müstakil
+  // ev) yine de gruplanır; mahalle/sokak/kapı boşsa adres bilgisi yetersiz
+  // sayılır, gruplanmaz.
+  function addressKey(rec){
+    if (cols.mahalle < 0 || cols.sokak < 0 || cols.kapino < 0) return null;
+    var m = (rec.c[cols.mahalle] || '').trim();
+    var s = (rec.c[cols.sokak] || '').trim();
+    var k = (rec.c[cols.kapino] || '').trim();
+    var d = cols.daireno >= 0 ? (rec.c[cols.daireno] || '').trim() : '';
+    if (!m || !s || !k) return null;
+    return trLower([m, s, k, d].join('§'));
+  }
+
+  function addressLabel(rec){
+    var m = cols.mahalle >= 0 ? (rec.c[cols.mahalle] || '') : '';
+    var s = cols.sokak >= 0 ? (rec.c[cols.sokak] || '') : '';
+    var k = cols.kapino >= 0 ? (rec.c[cols.kapino] || '') : '';
+    var d = cols.daireno >= 0 ? (rec.c[cols.daireno] || '') : '';
+    var street = [m, s].filter(Boolean).join(' ');
+    var no = k ? ('No:' + k + (d ? '/' + d : '')) : '';
+    return [street, no].filter(Boolean).join(' ');
+  }
+
+  function groupByAddress(list){
+    var groups = [];
+    var byKey = {};
+    list.forEach(function(rec){
+      var key = addressKey(rec);
+      if (key === null) { groups.push({ key: null, members: [rec] }); return; }
+      if (byKey[key]) { byKey[key].members.push(rec); }
+      else { var g = { key: key, members: [rec] }; byKey[key] = g; groups.push(g); }
+    });
+    return groups;
   }
 
   if ('serviceWorker' in navigator) {
@@ -453,7 +495,7 @@ input[type=file]{display:none}
       return;
     }
 
-    var shown = matches.slice(0, MAX_RESULTS);
+    var groups = groupByAddress(matches);
     var wrap = document.createElement('div');
     wrap.className = 'table-scroll';
     var table = document.createElement('table');
@@ -467,15 +509,31 @@ input[type=file]{display:none}
     table.appendChild(thead);
 
     var tbody = document.createElement('tbody');
-    shown.forEach(function(rec){
-      var tr = document.createElement('tr');
-      [cols.tc >= 0 ? rec.c[cols.tc] : '', displayName(rec), cols.phone >= 0 ? rec.c[cols.phone] : '']
-        .forEach(function(val){
-          var td = document.createElement('td'); td.textContent = val || '-'; tr.appendChild(td);
-        });
-      tr.addEventListener('click', function(){ toggleDetail(tr, rec); });
-      tbody.appendChild(tr);
-    });
+    var shownCount = 0;
+    for (var g = 0; g < groups.length && shownCount < MAX_RESULTS; g++) {
+      var group = groups[g];
+      if (group.members.length > 1) {
+        var hdr = document.createElement('tr');
+        hdr.className = 'group-row';
+        var hdrTd = document.createElement('td');
+        hdrTd.colSpan = 3;
+        hdrTd.textContent = 'Aynı evde ' + group.members.length + ' kişi · ' + addressLabel(group.members[0]);
+        hdr.appendChild(hdrTd);
+        tbody.appendChild(hdr);
+      }
+      for (var m = 0; m < group.members.length && shownCount < MAX_RESULTS; m++) {
+        var rec = group.members[m];
+        var tr = document.createElement('tr');
+        if (group.members.length > 1) tr.className = 'grouped';
+        [cols.tc >= 0 ? rec.c[cols.tc] : '', displayName(rec), cols.phone >= 0 ? rec.c[cols.phone] : '']
+          .forEach(function(val){
+            var td = document.createElement('td'); td.textContent = val || '-'; tr.appendChild(td);
+          });
+        tr.addEventListener('click', function(rec){ return function(){ toggleDetail(tr, rec); }; }(rec));
+        tbody.appendChild(tr);
+        shownCount++;
+      }
+    }
     table.appendChild(tbody);
     wrap.appendChild(table);
     els.results.appendChild(wrap);
